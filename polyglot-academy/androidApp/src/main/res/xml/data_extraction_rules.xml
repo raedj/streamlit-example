@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="sharedpref" path="polyglot_secrets.xml" />
+        <exclude domain="database" path="." />
+        <include domain="file" path="backup/" />
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="sharedpref" path="polyglot_secrets.xml" />
+        <exclude domain="database" path="." />
+        <include domain="file" path="backup/" />
+    </device-transfer>
+</data-extraction-rules>

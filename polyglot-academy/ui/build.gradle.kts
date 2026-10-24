@@ -39,6 +39,9 @@ kotlin {
                 implementation(libs.kotlinx.coroutines.swing)
             }
         }
+        if (androidEnabled) {
+            getByName("androidMain").dependencies { implementation(libs.androidx.activity.compose) }
+        }
         val desktopTest by getting {
             dependencies {
                 implementation(libs.sqldelight.sqlite.driver)

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">أكاديمية بوليغلوت</string>
+    <string name="reminder_channel">تذكيرات الدراسة</string>
+    <string name="reminder_title">هل لديك وقت لتدريب قصير؟</string>
+    <string name="reminder_body">دقائق قليلة اليوم تحافظ على كلماتك حاضرة.</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- In-app strings live in ui/strings/*.strings; these are only what the system shows. -->
+    <string name="app_name">Polyglot Academy</string>
+    <string name="reminder_channel">Study reminders</string>
+    <string name="reminder_title">Time for a short practice?</string>
+    <string name="reminder_body">A few minutes today keeps your words fresh.</string>
+</resources>
