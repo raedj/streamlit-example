@@ -24,8 +24,12 @@ CREATE TABLE conversation_turn (
 );
 CREATE INDEX conversation_turn_conv_time ON conversation_turn(conversation_id, created_at);
 
-upsertConversation:
-INSERT OR REPLACE INTO conversation VALUES (?, ?, ?, ?, ?, ?, ?);
+-- Never use INSERT OR REPLACE here: REPLACE deletes the row first and ON DELETE CASCADE would erase its turns.
+-- (UPSERT syntax needs SQLite 3.24, newer than Android API 26.)
+insertConversationIfAbsent:
+INSERT OR IGNORE INTO conversation VALUES (?, ?, ?, ?, ?, ?, ?);
+updateConversation:
+UPDATE conversation SET language = ?, tutor_id = ?, scenario_id = ?, started_at = ?, ended_at = ?, summary = ? WHERE id = ?;
 conversationsForLanguage:
 SELECT * FROM conversation WHERE language = ? ORDER BY started_at DESC;
 insertTurn:

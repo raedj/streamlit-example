@@ -37,7 +37,7 @@ import com.polyglot.academy.core.model.StudySession
 import com.polyglot.academy.core.model.VocabularyItem
 import com.polyglot.academy.core.planner.DailyPlan
 import com.polyglot.academy.core.repo.ConversationRepository
-import com.polyglot.academy.core.repo.DataLifecycle
+import com.polyglot.academy.core.repo.LearningStore
 import com.polyglot.academy.core.repo.LibraryRepository
 import com.polyglot.academy.core.repo.PlanRepository
 import com.polyglot.academy.core.repo.ProfileRepository
@@ -80,8 +80,7 @@ class SqlStore(
     private val io: CoroutineContext,
     private val zone: TimeZone = TimeZone.currentSystemDefault(),
     private val clock: com.polyglot.academy.core.util.TimeSource = com.polyglot.academy.core.util.TimeSource.System,
-) : ProfileRepository, ProgressRepository, ReviewRepository, VocabularyRepository, ConversationRepository,
-    LibraryRepository, ProviderConfigRepository, PlanRepository, DataLifecycle {
+) : LearningStore {
 
     val db = PolyglotDatabase(driver)
     private val kv = db.storeQueries
@@ -274,7 +273,12 @@ class SqlStore(
         cq.turnsFor(conversationId).asFlow().mapToList(io).map { l -> l.map(::mapTurn) }
 
     override suspend fun upsertConversation(conversation: Conversation) = withContext(io) {
-        with(conversation) { cq.upsertConversation(id, language.name, tutorId, scenarioId, startedAtMillis, endedAtMillis, summary) }
+        with(conversation) {
+            db.transaction {
+                cq.insertConversationIfAbsent(id, language.name, tutorId, scenarioId, startedAtMillis, endedAtMillis, summary)
+                cq.updateConversation(language.name, tutorId, scenarioId, startedAtMillis, endedAtMillis, summary, id)
+            }
+        }
     }
 
     override suspend fun addTurn(turn: ConversationTurn) = withContext(io) {

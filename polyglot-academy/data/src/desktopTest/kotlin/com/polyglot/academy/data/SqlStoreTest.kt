@@ -44,7 +44,7 @@ import kotlin.test.assertTrue
 class SqlStoreTest {
     private fun store() = SqlStore(createJvmDriver(), Dispatchers.IO, TimeZone.UTC)
 
-    @Test fun profileAndSettingsDefaultsAndUpdates() = runBlocking {
+    @Test fun profileAndSettingsDefaultsAndUpdates() = runBlocking<Unit> {
         val s = store()
         assertFalse(s.currentProfile().onboardingCompleted)
         s.updateProfile { it.copy(displayName = "Laila", interfaceLanguage = LanguageCode.ARABIC, onboardingCompleted = true) }
@@ -54,7 +54,7 @@ class SqlStoreTest {
         assertTrue(s.settings.first().privacy.cloudAiEnabled)
     }
 
-    @Test fun attemptsSessionsAndProgressRoundTrip() = runBlocking {
+    @Test fun attemptsSessionsAndProgressRoundTrip() = runBlocking<Unit> {
         val s = store()
         repeat(3) { i ->
             s.recordAttempt(ExerciseAttempt("a$i", "l1", "e$i", LanguageCode.SPANISH, Skill.GRAMMAR, 2, i != 1, if (i != 1) 1.0 else 0.0, 4000, 0, 1000L + i, "x"))
@@ -66,7 +66,7 @@ class SqlStoreTest {
         assertTrue(s.lessonProgress(LanguageCode.SPANISH).first().getValue("es_l_cafe").mastered)
     }
 
-    @Test fun repeatedMistakesAreCountedNotDuplicated() = runBlocking {
+    @Test fun repeatedMistakesAreCountedNotDuplicated() = runBlocking<Unit> {
         val s = store()
         val m = Mistake("m1", LanguageCode.ENGLISH, Skill.GRAMMAR, "ex1", "I ___ a student", "is", "am", null, ErrorSeverity.MODERATE, "to_be", 1L)
         s.recordMistake(m)
@@ -82,7 +82,7 @@ class SqlStoreTest {
         assertEquals(2, s.mistakes(LanguageCode.ENGLISH).first().size)
     }
 
-    @Test fun reviewStatesAndLogs() = runBlocking {
+    @Test fun reviewStatesAndLogs() = runBlocking<Unit> {
         val s = store()
         val sch = SpacedRepetitionScheduler()
         val r = sch.review(sch.newState("en_hello", LanguageCode.ENGLISH, 0), RecallRating.GOOD, 0)
@@ -92,7 +92,7 @@ class SqlStoreTest {
         assertEquals(1, s.reviewCount(LanguageCode.ENGLISH))
     }
 
-    @Test fun assessmentsAchievementsAndPlans() = runBlocking {
+    @Test fun assessmentsAchievementsAndPlans() = runBlocking<Unit> {
         val s = store()
         s.saveAssessment(AssessmentResult("as1", LanguageCode.MANDARIN, AssessmentKind.DIAGNOSTIC, 10L, CefrLevel.A1, CefrLevel.PRE_A1, CefrLevel.A2,
             mapOf(Skill.GRAMMAR to 0.5), 10, 6))
@@ -105,7 +105,7 @@ class SqlStoreTest {
         assertNull(s.plan(LanguageCode.ENGLISH, LocalDate(2026, 10, 25)).first())
     }
 
-    @Test fun conversationsAndTurns() = runBlocking {
+    @Test fun conversationsAndTurns() = runBlocking<Unit> {
         val s = store()
         s.upsertConversation(Conversation("c1", LanguageCode.ENGLISH, "emma", null, 1L))
         s.addTurn(ConversationTurn("t1", "c1", Speaker.LEARNER, "I am work", createdAtMillis = 2L))
@@ -117,7 +117,7 @@ class SqlStoreTest {
         assertEquals(1, s.learnerTurnCount(LanguageCode.ENGLISH))
     }
 
-    @Test fun libraryVocabularyBookmarksNotesProviders() = runBlocking {
+    @Test fun libraryVocabularyBookmarksNotesProviders() = runBlocking<Unit> {
         val s = store()
         val v = Curriculum.of(LanguageCode.FRENCH).vocabulary.first().copy(id = "user_1")
         s.addVocabulary(v)
@@ -135,7 +135,7 @@ class SqlStoreTest {
         assertEquals(ProviderId.GEMINI, s.preferredProvider.first())
     }
 
-    @Test fun exportRespectsOptionsAndDeleteAllClearsEverything() = runBlocking {
+    @Test fun exportRespectsOptionsAndDeleteAllClearsEverything() = runBlocking<Unit> {
         val s = store()
         s.updateProfile { it.copy(displayName = "Omar") }
         s.upsertConversation(Conversation("c1", LanguageCode.ENGLISH, "emma", null, 1L))
@@ -175,5 +175,16 @@ class SqlStoreTest {
         assertEquals(2L, PolyglotDatabase.Schema.version)
         driver.close()
         tmp.delete()
+    }
+}
+
+class ConversationIntegrityTest {
+    @Test fun updatingAConversationKeepsItsTurns() = runBlocking<Unit> {
+        val s = SqlStore(createJvmDriver(), Dispatchers.IO, TimeZone.UTC)
+        s.upsertConversation(Conversation("c1", LanguageCode.ENGLISH, "emma", null, 1L))
+        s.addTurn(ConversationTurn("t1", "c1", Speaker.LEARNER, "hello", createdAtMillis = 2L))
+        s.upsertConversation(Conversation("c1", LanguageCode.ENGLISH, "emma", null, 1L, endedAtMillis = 9L, summary = "done"))
+        assertEquals(1, s.turns("c1").first().size)
+        assertEquals("done", s.conversations(LanguageCode.ENGLISH).first().single().summary)
     }
 }

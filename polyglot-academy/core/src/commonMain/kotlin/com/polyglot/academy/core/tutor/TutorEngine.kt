@@ -99,27 +99,30 @@ object TutorResponseParser {
         }
         fun s(key: String) = (obj[key] as? JsonPrimitive)?.takeIf { it.isString }?.content?.trim()
         fun list(key: String) = (obj[key] as? JsonArray)?.mapNotNull { (it as? JsonPrimitive)?.content?.trim() }?.filter { it.isNotEmpty() } ?: emptyList()
-        val corrections = (obj["corrections"] as? JsonArray)?.mapNotNull { el ->
-            val c = el as? JsonObject ?: return@mapNotNull null
-            fun cs(k: String) = (c[k] as? JsonPrimitive)?.content?.trim().orEmpty()
-            val original = cs("original"); val corrected = cs("corrected")
-            if (original.isEmpty() || corrected.isEmpty() || TextNormalizer.basic(original) == TextNormalizer.basic(corrected)) return@mapNotNull null
-            Correction(
-                original = original, corrected = corrected, explanation = cs("explanation"),
-                severity = when (cs("severity").lowercase()) {
-                    "meaning", "meaning_changing", "major" -> ErrorSeverity.MEANING_CHANGING
-                    "minor" -> ErrorSeverity.MINOR
-                    else -> ErrorSeverity.MODERATE
-                },
-                isStylistic = (c["stylistic"] as? JsonPrimitive)?.content == "true",
-            )
-        } ?: emptyList()
+        val corrections = corrections(obj)
         val reply = s("reply")?.takeIf { it.isNotEmpty() } ?: return TutorReply(raw.trim(), null, emptyList(), emptyList(), emptyList(), false, producedBy, false)
         return TutorReply(reply, s("reply_translation")?.takeIf { it.isNotEmpty() }, corrections, list("alternatives"), list("vocabulary"),
             finished = false, producedBy = producedBy, scripted = false)
     }
 
-    internal fun extractJsonObject(raw: String): JsonObject? {
+    /** Reads a "corrections" array, dropping entries where nothing actually changed. */
+    fun corrections(obj: JsonObject): List<Correction> = (obj["corrections"] as? JsonArray)?.mapNotNull { el ->
+        val c = el as? JsonObject ?: return@mapNotNull null
+        fun cs(k: String) = (c[k] as? JsonPrimitive)?.content?.trim().orEmpty()
+        val original = cs("original"); val corrected = cs("corrected")
+        if (original.isEmpty() || corrected.isEmpty() || original == corrected) return@mapNotNull null
+        Correction(
+            original = original, corrected = corrected, explanation = cs("explanation"),
+            severity = when (cs("severity").lowercase()) {
+                "meaning", "meaning_changing", "major" -> ErrorSeverity.MEANING_CHANGING
+                "minor" -> ErrorSeverity.MINOR
+                else -> ErrorSeverity.MODERATE
+            },
+            isStylistic = (c["stylistic"] as? JsonPrimitive)?.content == "true",
+        )
+    } ?: emptyList()
+
+    fun extractJsonObject(raw: String): JsonObject? {
         val start = raw.indexOf('{')
         if (start < 0) return null
         var depth = 0; var inString = false; var escape = false

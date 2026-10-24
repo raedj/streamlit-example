@@ -122,3 +122,17 @@ interface DataLifecycle {
     suspend fun deleteConversations()
     suspend fun deleteImportedMaterials()
 }
+
+/** Every repository in one place; implemented by the data layer. */
+interface LearningStore : ProfileRepository, ProgressRepository, ReviewRepository, VocabularyRepository, ConversationRepository,
+    LibraryRepository, ProviderConfigRepository, PlanRepository, DataLifecycle
+
+/** Volatile secret store for tests and the desktop harness. Never use for real credentials on a device. */
+class InMemorySecretStore : SecretStore {
+    private val map = mutableMapOf<String, String>()
+    override suspend fun get(key: String) = map[key]
+    override suspend fun put(key: String, value: String) { map[key] = value }
+    override suspend fun remove(key: String) { map.remove(key) }
+    override suspend fun keys() = map.keys.toSet()
+    override val protectionDescription = "In memory only (not persisted)"
+}
