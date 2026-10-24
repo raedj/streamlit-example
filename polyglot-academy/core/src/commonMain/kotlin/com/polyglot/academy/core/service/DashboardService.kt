@@ -35,6 +35,7 @@ data class DashboardSnapshot(
     val profile: LearnerProfile,
     val language: LanguageCode,
     val level: CefrLevel?,
+    /** True when the level came from the placement test (an estimate); false when self-selected. */
     val levelIsEstimate: Boolean,
     val recommendation: Recommendation,
     val nextLesson: Lesson?,
@@ -93,7 +94,7 @@ class DashboardService(
         val summary = analytics.summarize(sessions, attempts, states, reviews.reviewCount(lang), lessonProgress.values.count { it.completions > 0 },
             conversations.learnerTurnCount(lang), now)
         return DashboardSnapshot(
-            profile, lang, enrollment?.startingLevel, enrollment?.levelFromAssessment != true, rec, next, interrupted, due, mistakes.size,
+            profile, lang, enrollment?.startingLevel, enrollment?.levelFromAssessment == true, rec, next, interrupted, due, mistakes.size,
             minutesToday, profile.dailyMinutes, estimates, summary,
             progress.achievements.first().sortedByDescending { it.unlockedAtMillis }.take(3), assessments.lastOrNull(),
             isNewLearner = attempts.isEmpty() && sessions.isEmpty(),

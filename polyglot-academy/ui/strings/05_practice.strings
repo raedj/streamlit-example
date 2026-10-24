@@ -1,0 +1,108 @@
+PRACTICE_TITLE ¦ Practice ¦ التدريب
+PRACTICE_REVIEW ¦ Spaced review ¦ المراجعة المتباعدة
+PRACTICE_REVIEW_SUB ¦ Words and phrases that are due ¦ الكلمات والعبارات المستحقة
+PRACTICE_MISTAKES ¦ Mistake review ¦ مراجعة الأخطاء
+PRACTICE_MISTAKES_SUB ¦ Learn from what went wrong ¦ تعلّم مما أخطأت فيه
+PRACTICE_GRAMMAR ¦ Grammar ¦ القواعد
+PRACTICE_GRAMMAR_SUB ¦ Rules, examples and common mistakes ¦ القواعد والأمثلة والأخطاء الشائعة
+PRACTICE_READING ¦ Reading ¦ القراءة
+PRACTICE_READING_SUB ¦ Graded texts with audio and questions ¦ نصوص متدرجة مع الصوت والأسئلة
+PRACTICE_LISTENING ¦ Listening and dictation ¦ الاستماع والإملاء
+PRACTICE_LISTENING_SUB ¦ Hear it, type it ¦ استمع واكتب
+PRACTICE_WRITING ¦ Writing ¦ الكتابة
+PRACTICE_WRITING_SUB ¦ Guided and free writing with feedback ¦ كتابة موجّهة وحرّة مع ملاحظات
+PRACTICE_PRONUNCIATION ¦ Pronunciation ¦ النطق
+PRACTICE_PRONUNCIATION_SUB ¦ Listen and repeat ¦ استمع وكرّر
+PRACTICE_TONES ¦ Tone trainer ¦ مدرّب النغمات
+PRACTICE_TONES_SUB ¦ Hear and tell apart Mandarin tones ¦ استمع وميّز نغمات الصينية
+PRACTICE_RELAX ¦ Relax and focus ¦ استرخِ وركّز
+PRACTICE_RELAX_SUB ¦ Optional breathing before you practise ¦ تنفّس اختياري قبل التدريب
+PRACTICE_VOCAB ¦ My vocabulary ¦ مفرداتي
+PRACTICE_VOCAB_SUB ¦ Saved words and your phrasebook ¦ الكلمات المحفوظة ودفتر عباراتك
+PRACTICE_SCENARIOS ¦ Role-play scenarios ¦ مواقف تمثيل الأدوار
+PRACTICE_SCENARIOS_SUB ¦ Rehearse real situations ¦ تدرّب على مواقف حقيقية
+REVIEW_TITLE ¦ Review ¦ المراجعة
+REVIEW_DUE_COUNT ¦ {0} card to review|{0} cards to review ¦ لا بطاقات للمراجعة|بطاقة واحدة للمراجعة|بطاقتان للمراجعة|{0} بطاقات للمراجعة|{0} بطاقة للمراجعة|{0} بطاقة للمراجعة
+REVIEW_EMPTY_TITLE ¦ All caught up ¦ لا شيء متأخر
+REVIEW_EMPTY_BODY ¦ Nothing is due. Words from your lessons will come back here just before you're likely to forget them. ¦ لا شيء مستحق الآن. ستعود كلمات دروسك إلى هنا قبيل الوقت الذي يُحتمل أن تنساها فيه.
+REVIEW_SHOW ¦ Show answer ¦ إظهار الإجابة
+REVIEW_RATE ¦ How well did you remember? ¦ إلى أي حد تذكّرتها؟
+RATING_AGAIN ¦ Again ¦ مجددًا
+RATING_HARD ¦ Hard ¦ صعب
+RATING_GOOD ¦ Good ¦ جيد
+RATING_EASY ¦ Easy ¦ سهل
+RATING_DESC ¦ {0}, next review {1} ¦ {0}، المراجعة التالية {1}
+REVIEW_DONE_TITLE ¦ Session complete ¦ اكتملت الجلسة
+REVIEW_DONE_BODY ¦ {0} card reviewed|{0} cards reviewed ¦ لم تُراجَع بطاقات|رُوجعت بطاقة واحدة|رُوجعت بطاقتان|رُوجعت {0} بطاقات|رُوجعت {0} بطاقة|رُوجعت {0} بطاقة
+REVIEW_HOW ¦ Spaced repetition brings each item back just before you are likely to forget it, so a few minutes a day goes a long way. ¦ تعيد المراجعة المتباعدة كل عنصر قبيل احتمال نسيانه، لذا تُحدث دقائق قليلة يوميًا فرقًا كبيرًا.
+REVIEW_LEECH ¦ This one keeps slipping away. Try writing your own example sentence for it. ¦ هذه الكلمة تتفلّت منك مرارًا، جرّب أن تكتب لها جملة مثال من عندك.
+MISTAKES_TITLE ¦ Mistake review ¦ مراجعة الأخطاء
+MISTAKES_EMPTY_TITLE ¦ No open mistakes ¦ لا أخطاء مفتوحة
+MISTAKES_EMPTY_BODY ¦ When you get an exercise wrong it appears here, so you can see the pattern and fix it. ¦ عندما تخطئ في تمرين يظهر هنا، لترى النمط وتصحّحه.
+MISTAKE_YOURS ¦ You wrote: {0} ¦ كتبت: {0}
+MISTAKE_CORRECT ¦ Correct: {0} ¦ الصحيح: {0}
+MISTAKE_TIMES ¦ Seen {0} time|Seen {0} times ¦ لم يتكرر|تكرر مرة واحدة|تكرر مرتين|تكرر {0} مرات|تكرر {0} مرة|تكرر {0} مرة
+MISTAKE_RESOLVE ¦ I've got it now ¦ فهمتها الآن
+MISTAKE_RESOLVED ¦ Resolved ¦ تمت المعالجة
+MISTAKES_SHOW_RESOLVED ¦ Show resolved ¦ إظهار ما عولج
+GRAMMAR_TITLE ¦ Grammar ¦ القواعد
+GRAMMAR_RULE ¦ The rule ¦ القاعدة
+GRAMMAR_EXAMPLES ¦ Examples ¦ أمثلة
+GRAMMAR_MISTAKES ¦ Common mistakes ¦ أخطاء شائعة
+GRAMMAR_INCORRECT ¦ Incorrect ¦ غير صحيح
+GRAMMAR_PRACTISE ¦ Practise in a lesson ¦ تدرّب عليها في درس
+READING_TITLE ¦ Reading ¦ القراءة
+READING_TAP_HINT ¦ Tap a sentence to hear it and see its translation. Highlighted words are in your course. ¦ اضغط على جملة لسماعها ورؤية ترجمتها. الكلمات المظلّلة موجودة في دورتك.
+READING_QUESTIONS ¦ Check your understanding ¦ اختبر فهمك
+READING_SAVE_WORDS ¦ Add highlighted words to review ¦ أضف الكلمات المظلّلة إلى المراجعة
+READING_WORDS_ADDED ¦ Words added to your reviews ¦ أُضيفت الكلمات إلى مراجعاتك
+READING_RESULT ¦ {0} of {1} answered correctly ¦ أجبت عن {0} من {1} إجابة صحيحة
+READING_PLAY_ALL ¦ Play whole text ¦ تشغيل النص كاملًا
+LISTENING_TITLE ¦ Listening and dictation ¦ الاستماع والإملاء
+LISTENING_SPEED ¦ Playback speed ¦ سرعة التشغيل
+LISTENING_REVEAL ¦ Show the sentence ¦ إظهار الجملة
+LISTENING_NEXT ¦ Next sentence ¦ الجملة التالية
+LISTENING_INTRO ¦ Listen as many times as you like, then type what you hear. Small spelling slips are pointed out but not penalised heavily. ¦ استمع كما تشاء ثم اكتب ما تسمعه. نشير إلى أخطاء الإملاء البسيطة دون معاقبة شديدة.
+WRITING_TITLE ¦ Writing ¦ الكتابة
+WRITING_CHOOSE ¦ Choose a prompt ¦ اختر موضوعًا
+WRITING_MIN ¦ At least {0} words ¦ {0} كلمة على الأقل
+WRITING_PLACEHOLDER ¦ Write your text here ¦ اكتب نصك هنا
+WRITING_CHECK_BASIC ¦ Check basics ¦ فحص الأساسيات
+WRITING_CHECK_AI ¦ Get AI feedback ¦ احصل على ملاحظات الذكاء الاصطناعي
+WRITING_AI_BLOCKED ¦ AI feedback isn't available: your privacy settings don't allow sending writing to cloud AI, or no provider is set up. Basic checks still work. ¦ ملاحظات الذكاء الاصطناعي غير متاحة: إعدادات الخصوصية لا تسمح بإرسال الكتابة إلى الذكاء الاصطناعي السحابي، أو لم يُهيأ مزوّد. ما زالت الفحوص الأساسية تعمل.
+WRITING_AI_FAILED ¦ AI feedback failed: {0} ¦ تعذّر الحصول على ملاحظات الذكاء الاصطناعي: {0}
+WRITING_SOURCE_OFFLINE ¦ Basic checks done on this device. They don't judge grammar. ¦ فحوص أساسية على هذا الجهاز، ولا تقيّم القواعد.
+WRITING_SOURCE_AI ¦ Feedback from {0}. AI can be wrong — double-check anything surprising. ¦ ملاحظات من {0}. قد يخطئ الذكاء الاصطناعي، فتحقّق من أي شيء يثير الاستغراب.
+WRITING_CORRECTIONS ¦ Corrections ¦ التصحيحات
+WRITING_OPTIONAL_STYLE ¦ Optional style suggestion ¦ اقتراح أسلوبي اختياري
+WRITING_IMPROVED ¦ A polished version ¦ نسخة منقّحة
+WRITING_DRAFTS ¦ Drafts this session ¦ مسودات هذه الجلسة
+WRITING_DRAFT_N ¦ Draft {0} · {1} ¦ المسودة {0} · {1}
+WCHECK_TOO_SHORT ¦ A bit short — aim for the suggested length. ¦ قصير قليلًا، حاول الوصول إلى الطول المقترح.
+WCHECK_GOOD_LENGTH ¦ Good length. ¦ طول مناسب.
+WCHECK_SUGGESTED_WORDS_MISSING ¦ Try to include some of the suggested words. ¦ حاول تضمين بعض الكلمات المقترحة.
+WCHECK_USED_SUGGESTED_WORDS ¦ You used suggested words: {0} ¦ استخدمت كلمات مقترحة: {0}
+WCHECK_REPEATED_WORDS ¦ Repeated words: {0}. Can you vary them? ¦ كلمات مكررة: {0}. هل يمكنك تنويعها؟
+WCHECK_MISSING_CAPITAL ¦ Start the text with a capital letter. ¦ ابدأ النص بحرف كبير.
+WCHECK_MISSING_END_PUNCTUATION ¦ End with punctuation. ¦ اختم بعلامة ترقيم.
+PRON_TITLE ¦ Pronunciation ¦ النطق
+PRON_BODY ¦ Listen to a model sentence, then say it yourself. Slow the audio down if it helps. ¦ استمع إلى الجملة النموذجية ثم قلها بنفسك، وأبطئ الصوت إن كان ذلك يساعدك.
+TONES_TITLE ¦ Tone trainer ¦ مدرّب النغمات
+TONES_BODY ¦ Mandarin has four tones plus a neutral tone. The same syllable with a different tone is a different word. ¦ للصينية أربع نغمات ونغمة محايدة، والمقطع نفسه بنغمة مختلفة كلمة مختلفة.
+TONES_SANDHI ¦ When two 3rd tones meet, the first is said as a 2nd tone: nǐ hǎo sounds like ní hǎo. ¦ عند تتابع نغمتين ثالثتين تُنطق الأولى كنغمة ثانية: nǐ hǎo تُنطق ní hǎo.
+TONES_SCORE ¦ {0} of {1} correct ¦ {0} من {1} صحيحة
+TONES_NOT_MANDARIN ¦ The tone trainer is for Mandarin. Switch your active language to Mandarin to use it. ¦ مدرّب النغمات مخصّص للصينية، فبدّل لغتك النشطة إلى الصينية لاستخدامه.
+TONES_CHARACTERS ¦ Show traditional characters ¦ إظهار الحروف التقليدية
+RELAX_TITLE ¦ Relax and focus ¦ استرخِ وركّز
+RELAX_BODY ¦ A short, optional breathing exercise. Stop whenever you like. ¦ تمرين تنفّس قصير واختياري، يمكنك التوقف متى شئت.
+RELAX_START ¦ Begin ¦ ابدأ
+RELAX_STOP ¦ Stop ¦ توقّف
+RELAX_INHALE ¦ Breathe in ¦ شهيق
+RELAX_HOLD ¦ Hold ¦ احبس
+RELAX_EXHALE ¦ Breathe out ¦ زفير
+RELAX_HOLD_EMPTY ¦ Rest ¦ استرح
+RELAX_CYCLE ¦ Round {0} of {1} ¦ الجولة {0} من {1}
+RELAX_DONE ¦ Nicely done. Ready when you are. ¦ أحسنت. ابدأ متى كنت مستعدًا.
+RELAX_REFLECT ¦ Reflection: what is one thing you learned today? ¦ تأمّل: ما الشيء الذي تعلّمته اليوم؟
+RELAX_ROUNDS ¦ Rounds ¦ الجولات
+RELAX_SECONDS ¦ {0} seconds ¦ {0} ثانية

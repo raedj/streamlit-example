@@ -14,6 +14,7 @@ java {
 
 dependencies {
     implementation(project(":ui"))
+    implementation(libs.sqldelight.sqlite.driver)
     implementation(compose.desktop.currentOs)
     implementation(libs.kotlinx.coroutines.swing)
 }

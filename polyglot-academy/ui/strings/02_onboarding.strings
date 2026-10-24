@@ -1,0 +1,65 @@
+ONB_STEP ¦ Step {0} of {1} ¦ الخطوة {0} من {1}
+ONB_WELCOME_TITLE ¦ Learn a language with a tutor who adapts to you ¦ تعلّم لغة مع معلّم يتكيّف معك
+ONB_WELCOME_BODY ¦ Short lessons, real conversations and smart reviews in English, Mandarin, Spanish, French and Arabic. ¦ دروس قصيرة ومحادثات حقيقية ومراجعات ذكية بالإنجليزية والصينية والإسبانية والفرنسية والعربية.
+ONB_GET_STARTED ¦ Get started ¦ لنبدأ
+ONB_WELCOME_POINT_1 ¦ Practise speaking with patient virtual tutors ¦ تدرّب على التحدث مع معلّمين افتراضيين صبورين
+ONB_WELCOME_POINT_2 ¦ Reviews timed to help you remember ¦ مراجعات في أوقات تساعدك على التذكّر
+ONB_WELCOME_POINT_3 ¦ Your data stays on your device unless you choose otherwise ¦ تبقى بياناتك على جهازك ما لم تختر غير ذلك
+ONB_INTERFACE_TITLE ¦ Choose the app language ¦ اختر لغة التطبيق
+ONB_INTERFACE_BODY ¦ Menus and explanations will appear in this language. You can change it later. ¦ ستظهر القوائم والشروح بهذه اللغة، ويمكنك تغييرها لاحقًا.
+ONB_NATIVE_TITLE ¦ What is your native language? ¦ ما لغتك الأم؟
+ONB_NATIVE_BODY ¦ We use it to explain grammar and compare sounds. ¦ نستخدمها لشرح القواعد ومقارنة الأصوات.
+ONB_LEARN_TITLE ¦ Which language do you want to learn? ¦ أي لغة تريد أن تتعلّم؟
+ONB_LEARN_BODY ¦ You can add more languages later. ¦ يمكنك إضافة لغات أخرى لاحقًا.
+ONB_VARIANT_TITLE ¦ Preferred variety ¦ اللهجة أو النوع المفضّل
+ONB_VARIANT_BODY ¦ Other varieties are still accepted and explained. ¦ ما زالت الأنواع الأخرى مقبولة ومشروحة.
+ONB_LEVEL_TITLE ¦ How well do you know {0}? ¦ ما مدى معرفتك بـ{0}؟
+ONB_LEVEL_BODY ¦ A short placement test gives a better starting point than a guess. ¦ يعطيك اختبار تحديد المستوى القصير نقطة بداية أفضل من التخمين.
+ONB_LEVEL_TEST ¦ Take a placement test ¦ خُض اختبار تحديد المستوى
+ONB_LEVEL_TEST_SUB ¦ About 5 minutes · up to 14 questions ¦ نحو 5 دقائق · حتى 14 سؤالًا
+ONB_LEVEL_SELF ¦ Choose my level myself ¦ سأختار مستواي بنفسي
+ONB_LEVEL_NOTE ¦ You can change your level at any time. ¦ يمكنك تغيير مستواك في أي وقت.
+ONB_GOALS_TITLE ¦ Why are you learning? ¦ لماذا تتعلّم؟
+ONB_GOALS_BODY ¦ Choose all that apply. We use this to pick topics. ¦ اختر كل ما ينطبق. نستخدم ذلك لاختيار المواضيع.
+ONB_TIME_TITLE ¦ How much time per day? ¦ كم من الوقت يوميًا؟
+ONB_TIME_BODY ¦ A little every day works better than a lot once a week. ¦ القليل كل يوم أنفع من الكثير مرة في الأسبوع.
+ONB_TIME_5 ¦ Light ¦ خفيف
+ONB_TIME_10 ¦ Steady ¦ منتظم
+ONB_TIME_15 ¦ Regular ¦ معتاد
+ONB_TIME_30 ¦ Serious ¦ جادّ
+ONB_TIME_60 ¦ Intensive ¦ مكثّف
+ONB_TIME_OPTION ¦ {0} minutes a day ¦ {0} دقيقة يوميًا
+ONB_STYLE_TITLE ¦ How do you like to learn? ¦ كيف تحب أن تتعلّم؟
+ONB_STYLE_BODY ¦ This shapes the mix of activities. Every plan still includes all skills. ¦ يحدّد هذا مزيج الأنشطة، وتبقى جميع المهارات ضمن كل خطة.
+ONB_CORRECTION_TITLE ¦ How should tutors correct you? ¦ كيف تريد أن يصحّح لك المعلّمون؟
+ONB_VOICE_TITLE ¦ Speaking practice ¦ التدرّب على التحدث
+ONB_VOICE_BODY ¦ Tutors can listen and reply out loud. Here is how voice works: ¦ يمكن للمعلّمين الاستماع والرد بصوت مسموع. إليك كيف يعمل الصوت:
+ONB_VOICE_POINT_1 ¦ The microphone is only on while you hold the conversation — a red indicator always shows when it is listening. ¦ لا يعمل الميكروفون إلا أثناء المحادثة، ويظهر مؤشر أحمر دائمًا عند الاستماع.
+ONB_VOICE_POINT_2 ¦ Speech is converted to text by your device's speech service. This app does not save recordings. ¦ تحوّل خدمة الكلام في جهازك الكلام إلى نص، ولا يحفظ هذا التطبيق التسجيلات.
+ONB_VOICE_POINT_3 ¦ You can always type instead of speaking. ¦ يمكنك دائمًا الكتابة بدلًا من التحدث.
+ONB_VOICE_LATER ¦ We'll ask for microphone access the first time you tap the microphone. ¦ سنطلب إذن الميكروفون في أول مرة تضغط فيها على زر الميكروفون.
+ONB_PRIVACY_TITLE ¦ Your privacy and AI ¦ خصوصيتك والذكاء الاصطناعي
+ONB_PRIVACY_BODY ¦ Lessons, reviews and the offline practice partner work entirely on this device. Cloud AI tutors are optional. ¦ تعمل الدروس والمراجعات وشريك التدريب دون اتصال بالكامل على هذا الجهاز، أما المعلّمون السحابيون بالذكاء الاصطناعي فهم اختياريون.
+ONB_PRIVACY_LOCAL ¦ Keep everything on this device ¦ أبقِ كل شيء على هذا الجهاز
+ONB_PRIVACY_LOCAL_SUB ¦ Recommended to start. You can connect an AI provider later. ¦ موصى به للبدء، ويمكنك ربط مزوّد ذكاء اصطناعي لاحقًا.
+ONB_PRIVACY_CLOUD ¦ Allow cloud AI for conversations ¦ السماح بالذكاء الاصطناعي السحابي للمحادثات
+ONB_PRIVACY_CLOUD_SUB ¦ Only conversation and writing text you send are shared, with the provider you configure. Notes, imported files and recordings stay private. ¦ لا يُشارك إلا نص المحادثة والكتابة الذي ترسله، ومع المزوّد الذي تهيّئه فقط. تبقى الملاحظات والملفات المستوردة والتسجيلات خاصة.
+ONB_PRIVACY_NOTE ¦ You need your own API key from a provider such as OpenAI, Google, Anthropic, Microsoft Azure or DeepSeek. ¦ تحتاج إلى مفتاح API خاص بك من مزوّد مثل OpenAI أو Google أو Anthropic أو Microsoft Azure أو DeepSeek.
+ONB_NOTIF_TITLE ¦ A gentle daily reminder? ¦ تذكير يومي لطيف؟
+ONB_NOTIF_BODY ¦ One reminder at a time you choose. No guilt messages, and you can turn it off at any time. ¦ تذكير واحد في الوقت الذي تختاره، دون رسائل لوم، ويمكنك إيقافه في أي وقت.
+ONB_NOTIF_ENABLE ¦ Remind me every day ¦ ذكّرني كل يوم
+ONB_NOTIF_TIME ¦ Reminder time ¦ وقت التذكير
+ONB_NOTIF_NO ¦ No reminders ¦ بلا تذكيرات
+ONB_PLAN_TITLE ¦ Your plan ¦ خطتك
+ONB_PLAN_BODY ¦ Here is how we'll start. The plan adapts as you learn. ¦ هكذا سنبدأ، وستتكيّف الخطة مع تقدّمك.
+ONB_PLAN_LANGUAGE ¦ Learning {0} ¦ تتعلّم {0}
+ONB_PLAN_LEVEL ¦ Starting level: {0} ¦ مستوى البداية: {0}
+ONB_PLAN_LEVEL_PENDING ¦ Starting level: after the placement test ¦ مستوى البداية: بعد اختبار تحديد المستوى
+ONB_PLAN_DAILY ¦ Daily time: {0} ¦ الوقت اليومي: {0}
+ONB_PLAN_TUTOR ¦ Your tutor: {0} ¦ معلّمك: {0}
+ONB_PLAN_ESTIMATE ¦ At this pace, moving up one level often takes about {0} weeks. This is a rough guide, not a promise. ¦ بهذه الوتيرة، يستغرق الانتقال إلى المستوى التالي غالبًا نحو {0} أسبوعًا. هذا تقدير تقريبي وليس وعدًا.
+ONB_NAME_LABEL ¦ What should we call you? (optional) ¦ بماذا نناديك؟ (اختياري)
+ONB_DONE_TITLE ¦ You're all set ¦ كل شيء جاهز
+ONB_DONE_BODY ¦ Start with the placement test or jump straight into your first lesson. ¦ ابدأ باختبار تحديد المستوى أو انتقل مباشرة إلى درسك الأول.
+ONB_START_TEST ¦ Start placement test ¦ ابدأ اختبار تحديد المستوى
+ONB_START_LEARNING ¦ Start learning ¦ ابدأ التعلّم

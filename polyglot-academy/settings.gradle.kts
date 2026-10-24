@@ -23,6 +23,7 @@ val androidEnabled = providers.gradleProperty("polyglot.android").orNull == "tru
 
 include(":core")
 include(":data")
+include(":uicore")
 include(":ui")
 include(":desktopApp")
 if (androidEnabled) include(":androidApp")

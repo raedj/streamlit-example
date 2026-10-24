@@ -1,0 +1,87 @@
+TUTORS_TITLE ¦ Tutors ¦ المعلّمون
+TUTORS_FOR ¦ Tutors for {0} ¦ معلّمون لـ{0}
+TUTORS_ALL_LANGUAGES ¦ Teaches any language ¦ يعلّم أي لغة
+TUTOR_LEVELS ¦ Levels {0}–{1} ¦ المستويات {0}–{1}
+TUTOR_STYLE_SUPPORTIVE ¦ Supportive ¦ داعم
+TUTOR_STYLE_STRUCTURED ¦ Structured ¦ منهجي
+TUTOR_STYLE_ROLE_PLAY ¦ Role-play ¦ تمثيل أدوار
+TUTOR_STYLE_SOCRATIC ¦ Guiding questions ¦ أسئلة موجّهة
+TUTOR_STYLE_STORYTELLING ¦ Storytelling ¦ سرد القصص
+TUTOR_STYLE_PROFESSIONAL ¦ Professional ¦ مهني
+TUTOR_STYLE_CONFIDENCE_COACH ¦ Confidence coach ¦ مدرّب ثقة
+TUTOR_CORR_RECAST ¦ Corrects by rephrasing naturally ¦ يصحّح بإعادة الصياغة بشكل طبيعي
+TUTOR_CORR_PROMPT_SELF_CORRECTION ¦ Lets you find the error first ¦ يتيح لك اكتشاف الخطأ أولًا
+TUTOR_CORR_EXPLICIT_WITH_RULE ¦ Explains the rule behind each correction ¦ يشرح القاعدة وراء كل تصحيح
+TUTOR_FOCUS ¦ Focus ¦ التركيز
+TUTOR_SELECT ¦ Choose {0} ¦ اختر {0}
+TUTOR_SELECTED ¦ Your tutor ¦ معلّمك
+TUTOR_START ¦ Free conversation ¦ محادثة حرّة
+TUTOR_SCENARIOS ¦ Role-play scenarios ¦ مواقف تمثيل الأدوار
+TUTOR_SCENARIO_GOAL ¦ Your goal: {0} ¦ هدفك: {0}
+TUTOR_SETTINGS ¦ Tutor settings ¦ إعدادات المعلّم
+TUTOR_CORRECTION_LEVEL ¦ Correction intensity ¦ شدة التصحيح
+TUTOR_SHOW_TRANSLATIONS ¦ Show translations by default ¦ إظهار الترجمات افتراضيًا
+TUTOR_AVATAR_NOTE ¦ Tutors are original characters with animated 2D portraits. ¦ المعلّمون شخصيات أصلية بصور ثنائية الأبعاد متحركة.
+CONV_TITLE ¦ Conversation with {0} ¦ محادثة مع {0}
+CONV_ENGINE_AI ¦ AI tutor via {0} ¦ معلّم ذكاء اصطناعي عبر {0}
+CONV_ENGINE_AI_CLOUD ¦ Cloud: your messages are sent to {0}. ¦ سحابي: تُرسل رسائلك إلى {0}.
+CONV_ENGINE_AI_LOCAL ¦ Runs on your own server or device. ¦ يعمل على خادمك أو جهازك.
+CONV_ENGINE_OFFLINE ¦ Offline practice partner — scripted, not AI ¦ شريك تدريب دون اتصال — نص مُعدّ مسبقًا وليس ذكاءً اصطناعيًا
+OFFLINE_REASON_NO_PROVIDER_CONFIGURED ¦ No AI provider is set up. ¦ لم يُهيأ أي مزوّد للذكاء الاصطناعي.
+OFFLINE_REASON_CLOUD_DISABLED_BY_PRIVACY ¦ Cloud AI is off in your privacy settings. ¦ الذكاء الاصطناعي السحابي متوقف في إعدادات خصوصيتك.
+OFFLINE_REASON_OFFLINE_NETWORK ¦ You're offline. ¦ أنت غير متصل.
+OFFLINE_REASON_PROVIDER_FAILED ¦ The AI provider didn't respond. ¦ لم يستجب مزوّد الذكاء الاصطناعي.
+OFFLINE_REASON_USER_CHOSE_OFFLINE ¦ You chose offline practice. ¦ اخترت التدريب دون اتصال.
+CONV_SET_UP_AI ¦ Set up AI ¦ إعداد الذكاء الاصطناعي
+CONV_TRY_AI_AGAIN ¦ Try AI again ¦ جرّب الذكاء الاصطناعي مجددًا
+CONV_STATE_READY ¦ Your turn ¦ دورك
+CONV_STATE_LISTENING ¦ Listening — microphone on ¦ يستمع — الميكروفون يعمل
+CONV_STATE_PROCESSING ¦ {0} is thinking… ¦ {0} يفكّر…
+CONV_STATE_SPEAKING ¦ {0} is speaking ¦ {0} يتحدث
+CONV_STATE_PAUSED ¦ Paused ¦ متوقف مؤقتًا
+CONV_STATE_COMPLETED ¦ Conversation ended ¦ انتهت المحادثة
+CONV_MIC_START ¦ Start speaking ¦ ابدأ التحدث
+CONV_MIC_STOP ¦ Stop and send ¦ توقف وأرسل
+CONV_MIC_UNAVAILABLE ¦ Microphone unavailable ¦ الميكروفون غير متاح
+CONV_CANCEL_RECORDING ¦ Cancel recording ¦ إلغاء التسجيل
+CONV_STOP_SPEAKING ¦ Stop audio ¦ إيقاف الصوت
+CONV_TYPE ¦ Type your reply ¦ اكتب ردّك
+CONV_SEND ¦ Send ¦ إرسال
+CONV_HINT ¦ Hint: {0} ¦ تلميح: {0}
+CONV_SHOW_EXAMPLE ¦ Show an example answer ¦ أظهر إجابة نموذجية
+CONV_EXAMPLE ¦ Example: {0} ¦ مثال: {0}
+CONV_YOU ¦ You ¦ أنت
+CONV_CORRECTION ¦ Correction ¦ تصحيح
+CONV_STYLISTIC ¦ Optional alternative ¦ بديل اختياري
+CONV_ALTERNATIVE ¦ Another way to say it ¦ طريقة أخرى للقول
+CONV_VOCAB ¦ Useful words ¦ كلمات مفيدة
+CONV_REPLAY ¦ Replay ¦ إعادة التشغيل
+CONV_SAVE ¦ Save phrase ¦ حفظ العبارة
+CONV_SAVE_TITLE ¦ Save to your phrasebook ¦ احفظ في دفتر عباراتك
+CONV_SAVE_PHRASE ¦ Phrase ¦ العبارة
+CONV_SAVE_MEANING ¦ Meaning (in your words) ¦ المعنى (بكلماتك)
+CONV_SPOKEN ¦ spoken ¦ منطوق
+CONV_SPEED ¦ Voice speed ¦ سرعة الصوت
+CONV_END ¦ End ¦ إنهاء
+CONV_END_TITLE ¦ End this conversation? ¦ هل تريد إنهاء هذه المحادثة؟
+CONV_END_BODY ¦ You'll see a summary with corrections to review. ¦ سترى ملخصًا يتضمن التصحيحات للمراجعة.
+CONV_SUMMARY_TITLE ¦ Conversation summary ¦ ملخّص المحادثة
+CONV_SUMMARY_TURNS ¦ You replied {0} time|You replied {0} times ¦ لم ترد|رددت مرة واحدة|رددت مرتين|رددت {0} مرات|رددت {0} مرة|رددت {0} مرة
+CONV_SUMMARY_DURATION ¦ Duration: {0} ¦ المدة: {0}
+CONV_SUMMARY_CORRECTIONS ¦ Corrections to review ¦ تصحيحات للمراجعة
+CONV_SUMMARY_NO_CORRECTIONS ¦ No corrections this time. ¦ لا تصحيحات هذه المرة.
+CONV_SUMMARY_SAVED ¦ {0} phrase saved|{0} phrases saved ¦ لم تُحفظ عبارات|حُفظت عبارة واحدة|حُفظت عبارتان|حُفظت {0} عبارات|حُفظت {0} عبارة|حُفظت {0} عبارة
+CONV_SUMMARY_SCENARIO_DONE ¦ Scenario completed ¦ اكتمل الموقف
+CONV_SUMMARY_NEW ¦ New conversation ¦ محادثة جديدة
+CONV_NOTICE_FELL_BACK_TO_OFFLINE ¦ The AI provider didn't answer, so the offline practice partner continues. Nothing was sent to another provider. ¦ لم يجب مزوّد الذكاء الاصطناعي، فيتابع شريك التدريب دون اتصال. لم يُرسل أي شيء إلى مزوّد آخر.
+CONV_NOTICE_USED_FALLBACK_PROVIDER ¦ Your preferred provider failed; a fallback provider you allowed answered instead. ¦ فشل مزوّدك المفضّل، فأجاب مزوّد احتياطي سمحت به.
+CONV_NOTICE_SPEECH_UNAVAILABLE ¦ Speech recognition isn't available right now. You can type instead. ¦ التعرّف على الكلام غير متاح الآن، ويمكنك الكتابة بدلًا من ذلك.
+CONV_NOTICE_TTS_UNAVAILABLE ¦ Spoken replies aren't available for this language on this device. ¦ الردود المنطوقة غير متاحة لهذه اللغة على هذا الجهاز.
+CONV_NOTICE_PHRASE_SAVED ¦ Saved to your phrasebook and review deck. ¦ حُفظت في دفتر عباراتك ومجموعة المراجعة.
+CONV_NOTICE_AI_ERROR_RETRYABLE ¦ The AI is having trouble. Please try again. ¦ يواجه الذكاء الاصطناعي مشكلة، يُرجى المحاولة مرة أخرى.
+CONV_PRIVACY_NOTE ¦ The microphone is on only while the red indicator shows. Recordings are not stored by this app. ¦ لا يعمل الميكروفون إلا أثناء ظهور المؤشر الأحمر، ولا يخزّن هذا التطبيق التسجيلات.
+CONV_AI_MAY_ERR ¦ AI tutors can make mistakes. Ask "why?" if something looks wrong. ¦ قد يخطئ معلّمو الذكاء الاصطناعي. اسأل «لماذا؟» إذا بدا لك شيء خاطئ.
+SCENARIOS_TITLE ¦ Role-play scenarios ¦ مواقف تمثيل الأدوار
+SCENARIO_LEVEL ¦ Level {0} ¦ المستوى {0}
+SCENARIO_START ¦ Start scenario ¦ ابدأ الموقف
+SCENARIO_PHRASES ¦ Useful phrases ¦ عبارات مفيدة

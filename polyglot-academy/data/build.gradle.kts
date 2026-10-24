@@ -22,7 +22,7 @@ kotlin {
     sourceSets {
         commonMain.dependencies {
             api(project(":core"))
-            implementation(libs.sqldelight.runtime)
+            api(libs.sqldelight.runtime)
             implementation(libs.sqldelight.coroutines)
         }
         commonTest.dependencies {

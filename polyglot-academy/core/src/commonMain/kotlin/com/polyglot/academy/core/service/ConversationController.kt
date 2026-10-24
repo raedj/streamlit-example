@@ -275,6 +275,13 @@ class ConversationController(
 
     fun stopListening() = recognizer.stopListening()
 
+    /** Re-checks recognizer availability, e.g. after the learner granted microphone permission. */
+    suspend fun refreshSpeechAvailability(): SpeechAvailability {
+        val r = recognizer.availability(localeTag)
+        _state.update { it.copy(recognitionAvailable = r) }
+        return r
+    }
+
     /** Cancel recording immediately (no transcript is sent). */
     fun cancelVoice() {
         listenJob?.cancel(); listenJob = null

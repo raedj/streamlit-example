@@ -22,6 +22,7 @@ kotlin {
     sourceSets {
         commonMain.dependencies {
             api(project(":data"))
+            api(project(":uicore"))
             api(compose.runtime)
             api(compose.foundation)
             api(compose.material3)
@@ -40,10 +41,17 @@ kotlin {
         }
         val desktopTest by getting {
             dependencies {
+                implementation(libs.sqldelight.sqlite.driver)
                 implementation(compose.desktop.currentOs)
                 implementation(compose.desktop.uiTestJUnit4)
                 implementation(libs.junit)
             }
         }
     }
+}
+
+tasks.withType<Test>().configureEach {
+    // Screenshots are written to docs/screenshots so they can be reviewed with the documentation.
+    systemProperty("screenshotDir", rootProject.file("docs/screenshots").absolutePath)
+    maxHeapSize = "3g"
 }

@@ -1,0 +1,152 @@
+ASSESS_TITLE ¦ Placement test ¦ اختبار تحديد المستوى
+ASSESS_INTRO_TITLE ¦ Let's find your level in {0} ¦ لنحدّد مستواك في {0}
+ASSESS_INTRO_BODY ¦ Questions adapt to your answers: they get harder when you're right and easier when you're not. It's fine to say "I don't know" — guessing makes the estimate less accurate. ¦ تتكيّف الأسئلة مع إجاباتك: تصعب عندما تصيب وتسهل عندما تخطئ. لا بأس أن تقول «لا أعرف»، فالتخمين يجعل التقدير أقل دقة.
+ASSESS_START ¦ Start test ¦ ابدأ الاختبار
+ASSESS_QUESTION ¦ Question {0} · up to {1} ¦ السؤال {0} · حتى {1}
+ASSESS_DONT_KNOW ¦ I don't know ¦ لا أعرف
+ASSESS_RESULT_TITLE ¦ Your estimated level ¦ مستواك التقديري
+ASSESS_RANGE ¦ Most likely between {0} and {1} ¦ على الأرجح بين {0} و{1}
+ASSESS_DISCLAIMER ¦ This is an estimate from a short test, not an official CEFR certificate. ¦ هذا تقدير من اختبار قصير، وليس شهادة رسمية وفق الإطار الأوروبي المرجعي.
+ASSESS_ACCEPT ¦ Start at {0} ¦ ابدأ من {0}
+ASSESS_CHOOSE_OTHER ¦ Choose a different level ¦ اختر مستوى آخر
+ASSESS_BY_SKILL ¦ By skill ¦ حسب المهارة
+ASSESS_SCORE ¦ {0} of {1} correct ¦ {0} من {1} صحيحة
+ASSESS_HISTORY ¦ Previous results ¦ نتائج سابقة
+ASSESS_RETAKE ¦ Retake the test ¦ أعد الاختبار
+PROGRESS_TITLE ¦ Progress ¦ التقدّم
+PROGRESS_RANGE_7 ¦ 7 days ¦ 7 أيام
+PROGRESS_RANGE_28 ¦ 28 days ¦ 28 يومًا
+PROGRESS_TIME ¦ Study time (minutes) ¦ وقت الدراسة (بالدقائق)
+PROGRESS_TIME_DESC ¦ Minutes studied per day: {0} ¦ دقائق الدراسة يوميًا: {0}
+PROGRESS_ACCURACY ¦ Exercise accuracy by week ¦ دقة التمارين أسبوعيًا
+PROGRESS_ACCURACY_DESC ¦ Weekly share of exercises answered correctly: {0} ¦ نسبة التمارين المُجاب عنها بشكل صحيح أسبوعيًا: {0}
+PROGRESS_RETENTION ¦ Vocabulary memory (estimate) ¦ تذكّر المفردات (تقدير)
+RETENTION_STRONG ¦ Strong ¦ قوي
+RETENTION_FADING ¦ Fading ¦ يضعف
+RETENTION_WEAK ¦ Needs review ¦ يحتاج مراجعة
+RETENTION_NOT_STARTED ¦ New ¦ جديد
+PROGRESS_RETENTION_NOTE ¦ Estimated from your review history with a forgetting-curve model. It is not a test result. ¦ مقدّر من سجل مراجعاتك باستخدام نموذج منحنى النسيان، وليس نتيجة اختبار.
+PROGRESS_FORECAST ¦ Reviews in the next 7 days ¦ المراجعات في الأيام السبعة القادمة
+PROGRESS_FORECAST_DESC ¦ Reviews due per day: {0} ¦ المراجعات المستحقة يوميًا: {0}
+PROGRESS_SKILLS ¦ Accuracy by skill (observed) ¦ الدقة حسب المهارة (ملاحَظة)
+PROGRESS_SKILL_VALUE ¦ {0}% · {1} answers ¦ ‎{0}٪ · {1} إجابة
+PROGRESS_CONSISTENCY ¦ Study days ¦ أيام الدراسة
+PROGRESS_CONSISTENCY_DESC ¦ Days with study activity in the last 28 days: {0} ¦ الأيام التي فيها نشاط دراسي خلال آخر 28 يومًا: {0}
+PROGRESS_TOTALS ¦ Totals ¦ الإجماليات
+TOTAL_LESSONS ¦ Lessons completed ¦ دروس مكتملة
+TOTAL_REVIEWS ¦ Reviews done ¦ مراجعات منجزة
+TOTAL_SPEAKING ¦ Conversation replies ¦ ردود في المحادثات
+TOTAL_STREAK ¦ Longest streak ¦ أطول سلسلة
+PROGRESS_EMPTY_TITLE ¦ Your charts will appear here ¦ ستظهر رسومك البيانية هنا
+PROGRESS_EMPTY_BODY ¦ Complete a lesson or a review to see real progress. We never show sample numbers as if they were yours. ¦ أكمل درسًا أو مراجعة لترى تقدّمًا حقيقيًا، فنحن لا نعرض أرقامًا تجريبية على أنها أرقامك.
+PROGRESS_DEFINITIONS ¦ What these numbers mean ¦ ماذا تعني هذه الأرقام
+PROGRESS_DEFINITIONS_BODY ¦ Study time counts active time in lessons, reviews and conversations (capped per item so an idle screen doesn't count). Accuracy is the share of exercises answered correctly. Memory estimates are model predictions. App activity alone doesn't prove fluency. ¦ يحسب وقت الدراسة الوقت النشط في الدروس والمراجعات والمحادثات (بحدّ أقصى لكل عنصر حتى لا تُحتسب الشاشة الخاملة). والدقة هي نسبة التمارين المُجاب عنها بشكل صحيح. أما تقديرات التذكّر فهي تنبؤات نموذج. ونشاط التطبيق وحده لا يثبت الطلاقة.
+PROGRESS_ASSESSMENTS ¦ Placement history ¦ سجل تحديد المستوى
+VOCAB_TITLE ¦ My vocabulary ¦ مفرداتي
+VOCAB_TAB_WORDS ¦ Words ¦ الكلمات
+VOCAB_TAB_PHRASES ¦ Phrasebook ¦ دفتر العبارات
+VOCAB_SEARCH ¦ Search your words ¦ ابحث في كلماتك
+VOCAB_EMPTY_TITLE ¦ No words yet ¦ لا كلمات بعد
+VOCAB_EMPTY_BODY ¦ Words from lessons, conversations and your own material appear here. ¦ تظهر هنا الكلمات من الدروس والمحادثات وموادك الخاصة.
+PHRASES_EMPTY ¦ Save useful phrases from conversations to build your phrasebook. ¦ احفظ العبارات المفيدة من المحادثات لتبني دفتر عباراتك.
+VOCAB_ADD ¦ Add a word ¦ أضف كلمة
+VOCAB_TERM ¦ Word or phrase ¦ الكلمة أو العبارة
+VOCAB_MEANING ¦ Meaning ¦ المعنى
+VOCAB_EXAMPLE ¦ Example sentence (optional) ¦ جملة مثال (اختيارية)
+VOCAB_NEXT_REVIEW ¦ Next review {0} ¦ المراجعة التالية {0}
+VOCAB_DUE_NOW ¦ Due now ¦ مستحقة الآن
+VOCAB_STATUS_NEW ¦ New ¦ جديدة
+VOCAB_STATUS_LEARNING ¦ Learning ¦ قيد التعلّم
+VOCAB_STATUS_REVIEW ¦ Reviewing ¦ قيد المراجعة
+VOCAB_FILTER_ALL ¦ All ¦ الكل
+VOCAB_FILTER_DUE ¦ Due ¦ مستحقة
+LIBRARY_TITLE ¦ Library ¦ المكتبة
+LIBRARY_TAB_MATERIALS ¦ My material ¦ موادّي
+LIBRARY_TAB_NOTES ¦ Notes ¦ الملاحظات
+LIBRARY_TAB_BOOKMARKS ¦ Bookmarks ¦ المفضلة
+LIBRARY_IMPORT_FILE ¦ Import a file ¦ استيراد ملف
+LIBRARY_PASTE ¦ Paste text ¦ لصق نص
+LIBRARY_EMPTY_TITLE ¦ Learn from things you love ¦ تعلّم مما تحب
+LIBRARY_EMPTY_BODY ¦ Import an article, subtitles or your own notes. We'll find useful words and turn them into reviews. ¦ استورد مقالًا أو ترجمة أفلام أو ملاحظاتك، وسنستخرج الكلمات المفيدة ونحوّلها إلى مراجعات.
+LIBRARY_RIGHTS ¦ Only import material you have the right to use. Imported files are processed on this device and nothing is uploaded unless you allow it. ¦ لا تستورد إلا مواد يحق لك استخدامها. تُعالج الملفات المستوردة على هذا الجهاز ولا يُرفع شيء ما لم تسمح بذلك.
+LIBRARY_SUPPORT ¦ What can be processed in this version ¦ ما الذي يمكن معالجته في هذا الإصدار
+SUPPORT_SUPPORTED ¦ Supported ¦ مدعوم
+SUPPORT_PLATFORM_DEPENDENT ¦ Depends on your device ¦ يعتمد على جهازك
+SUPPORT_NOT_IMPLEMENTED ¦ Not yet supported ¦ غير مدعوم بعد
+MTYPE_TEXT ¦ Text (.txt, .md) ¦ نص (.txt و.md)
+MTYPE_CAPTIONS ¦ Subtitles (.srt, .vtt) ¦ ترجمات (.srt و.vtt)
+MTYPE_PDF ¦ PDF ¦ PDF
+MTYPE_IMAGE ¦ Image / camera (text recognition) ¦ صورة / كاميرا (التعرّف على النص)
+MTYPE_AUDIO ¦ Audio (transcription) ¦ صوت (تفريغ نصي)
+MTYPE_VIDEO ¦ Video (transcription) ¦ فيديو (تفريغ نصي)
+MTYPE_DOCUMENT ¦ Word document ¦ مستند Word
+MSTATUS_IMPORTED ¦ Imported ¦ مستورد
+MSTATUS_EXTRACTING ¦ Extracting text… ¦ جارٍ استخراج النص…
+MSTATUS_READY_FOR_REVIEW ¦ Ready to review ¦ جاهز للمراجعة
+MSTATUS_PROCESSED ¦ Words added ¦ أُضيفت الكلمات
+MSTATUS_FAILED ¦ No text found ¦ لم يُعثر على نص
+MSTATUS_UNSUPPORTED ¦ Can't be processed yet ¦ لا يمكن معالجته بعد
+MATERIAL_PROCESSING ¦ Processing… {0}% ¦ جارٍ المعالجة… {0}٪
+MATERIAL_TEXT_REVIEW ¦ Check the extracted text ¦ راجِع النص المستخرج
+MATERIAL_TEXT_EDIT_NOTE ¦ You can correct the text before we look for words. ¦ يمكنك تصحيح النص قبل أن نبحث عن الكلمات.
+MATERIAL_CANDIDATES ¦ Suggested words ¦ كلمات مقترحة
+MATERIAL_CANDIDATE_INFO ¦ Appears {0} times ¦ تتكرر {0} مرة
+MATERIAL_IN_COURSE ¦ In your course ¦ في دورتك
+MATERIAL_ADD_MEANING ¦ Meaning (needed for new words) ¦ المعنى (مطلوب للكلمات الجديدة)
+MATERIAL_ADD_SELECTED ¦ Add {0} word to reviews|Add {0} words to reviews ¦ لم تُحدّد كلمات|أضف كلمة واحدة إلى المراجعات|أضف كلمتين إلى المراجعات|أضف {0} كلمات إلى المراجعات|أضف {0} كلمة إلى المراجعات|أضف {0} كلمة إلى المراجعات
+MATERIAL_ADDED ¦ Added to your reviews ¦ أُضيفت إلى مراجعاتك
+MATERIAL_DELETE_TITLE ¦ Delete this material? ¦ حذف هذه المادة؟
+MATERIAL_DELETE_BODY ¦ The text and any new words created only from it will be removed. ¦ سيُحذف النص وأي كلمات جديدة أُنشئت منه فقط.
+MATERIAL_UNSUPPORTED_BODY ¦ This type of file can be stored but its text can't be extracted in this version. You can paste the text instead. ¦ يمكن تخزين هذا النوع من الملفات لكن لا يمكن استخراج نصه في هذا الإصدار، ويمكنك لصق النص بدلًا من ذلك.
+MATERIAL_TOO_LARGE ¦ This file is larger than the {0} MB limit. ¦ هذا الملف أكبر من الحد المسموح ({0} ميغابايت).
+MATERIAL_UNSUPPORTED_TYPE ¦ This file type isn't supported. ¦ نوع الملف هذا غير مدعوم.
+MATERIAL_EMPTY_FILE ¦ The file is empty. ¦ الملف فارغ.
+MATERIAL_TITLE_LABEL ¦ Title ¦ العنوان
+MATERIAL_TEXT_LABEL ¦ Text ¦ النص
+MATERIAL_IMPORT ¦ Import ¦ استيراد
+MATERIAL_READ ¦ Read with audio ¦ اقرأ مع الصوت
+MATERIAL_PICKER_UNAVAILABLE ¦ File import isn't available on this platform. Paste the text instead. ¦ استيراد الملفات غير متاح على هذه المنصة، فالصق النص بدلًا من ذلك.
+NOTES_EMPTY ¦ Keep grammar tips, mnemonics and ideas here. Notes stay on this device. ¦ احتفظ هنا بنصائح القواعد ووسائل التذكّر والأفكار. تبقى الملاحظات على هذا الجهاز.
+NOTE_NEW ¦ New note ¦ ملاحظة جديدة
+NOTE_TITLE ¦ Title ¦ العنوان
+NOTE_BODY ¦ Note ¦ الملاحظة
+BOOKMARKS_EMPTY ¦ Bookmark lessons, grammar topics and readings to find them quickly. ¦ احفظ الدروس وموضوعات القواعد والقراءات في المفضلة للوصول إليها بسرعة.
+SEARCH_TITLE ¦ Search ¦ بحث
+SEARCH_HINT ¦ Search words, lessons, grammar, notes ¦ ابحث في الكلمات والدروس والقواعد والملاحظات
+SEARCH_EMPTY ¦ No results for "{0}" ¦ لا نتائج لـ«{0}»
+SEARCH_START ¦ Type at least two characters. ¦ اكتب حرفين على الأقل.
+SEARCH_WORDS ¦ Words ¦ الكلمات
+SEARCH_LESSONS ¦ Lessons ¦ الدروس
+SEARCH_GRAMMAR ¦ Grammar ¦ القواعد
+SEARCH_READINGS ¦ Readings ¦ القراءات
+SEARCH_NOTES ¦ Notes ¦ الملاحظات
+ME_TITLE ¦ Me ¦ حسابي
+ME_PROGRESS ¦ Progress and charts ¦ التقدّم والرسوم البيانية
+ME_VOCAB ¦ My vocabulary ¦ مفرداتي
+ME_LIBRARY ¦ Library and notes ¦ المكتبة والملاحظات
+ME_ASSESS ¦ Placement test ¦ اختبار تحديد المستوى
+ME_PLAN ¦ Study plan ¦ خطة الدراسة
+ME_SETTINGS ¦ Settings ¦ الإعدادات
+ME_SEARCH ¦ Search ¦ بحث
+ME_HISTORY ¦ Learning history ¦ سجل التعلّم
+ME_HELP ¦ Help ¦ المساعدة
+PROFILE_LANGUAGES ¦ My languages ¦ لغاتي
+PROFILE_ACTIVE ¦ Active ¦ نشطة
+PROFILE_MAKE_ACTIVE ¦ Switch to {0} ¦ التبديل إلى {0}
+PROFILE_ADD_LANGUAGE ¦ Add a language ¦ إضافة لغة
+PROFILE_GOALS ¦ Goals ¦ الأهداف
+PROFILE_NAME ¦ Name ¦ الاسم
+PROFILE_ANONYMOUS ¦ Learner ¦ متعلّم
+HISTORY_EMPTY ¦ Your completed sessions will be listed here. ¦ ستظهر هنا جلساتك المكتملة.
+SESSION_LESSON ¦ Lesson ¦ درس
+SESSION_REVIEW ¦ Review ¦ مراجعة
+SESSION_CONVERSATION ¦ Conversation ¦ محادثة
+SESSION_READING ¦ Reading ¦ قراءة
+SESSION_LISTENING ¦ Listening ¦ استماع
+SESSION_WRITING ¦ Writing ¦ كتابة
+SESSION_PRONUNCIATION ¦ Pronunciation ¦ نطق
+SESSION_ASSESSMENT ¦ Placement test ¦ اختبار تحديد مستوى
+SESSION_RELAXATION ¦ Relaxation ¦ استرخاء
+SESSION_MEDIA ¦ Own material ¦ مواد خاصة
+SESSION_ITEMS ¦ {0} of {1} correct · {2} ¦ {0} من {1} صحيحة · {2}
+MATERIAL_CLOUD_ALLOW ¦ Allow cloud AI to explain this material ¦ السماح للذكاء الاصطناعي السحابي بشرح هذه المادة
