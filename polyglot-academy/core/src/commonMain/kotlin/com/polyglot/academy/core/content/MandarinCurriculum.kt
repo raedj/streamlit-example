@@ -1,0 +1,301 @@
+package com.polyglot.academy.core.content
+
+import com.polyglot.academy.core.assessment.AssessmentItem
+import com.polyglot.academy.core.model.CefrLevel
+import com.polyglot.academy.core.model.CefrLevel.A1
+import com.polyglot.academy.core.model.CefrLevel.A2
+import com.polyglot.academy.core.model.CefrLevel.B1
+import com.polyglot.academy.core.model.CefrLevel.B2
+import com.polyglot.academy.core.model.CefrLevel.PRE_A1
+import com.polyglot.academy.core.model.CourseUnit
+import com.polyglot.academy.core.model.Exercise
+import com.polyglot.academy.core.model.LanguageCode
+import com.polyglot.academy.core.model.PartOfSpeech.ADJECTIVE
+import com.polyglot.academy.core.model.PartOfSpeech.ADVERB
+import com.polyglot.academy.core.model.PartOfSpeech.MEASURE_WORD
+import com.polyglot.academy.core.model.PartOfSpeech.NOUN
+import com.polyglot.academy.core.model.PartOfSpeech.NUMERAL
+import com.polyglot.academy.core.model.PartOfSpeech.PARTICLE
+import com.polyglot.academy.core.model.PartOfSpeech.PHRASE
+import com.polyglot.academy.core.model.PartOfSpeech.PRONOUN
+import com.polyglot.academy.core.model.PartOfSpeech.VERB
+import com.polyglot.academy.core.model.ReadingPassage
+import com.polyglot.academy.core.model.RolePlayScenario
+import com.polyglot.academy.core.model.ScenarioBeat
+import com.polyglot.academy.core.model.Skill
+
+/**
+ * Mandarin content. Terms are simplified characters; [com.polyglot.academy.core.model.VocabularyItem.traditional]
+ * holds the traditional form where it differs; pronunciation is Hanyu Pinyin with tone marks.
+ */
+internal object MandarinCurriculum {
+    private val L = LanguageCode.MANDARIN
+
+    fun build(): LanguageCurriculum {
+        val vb = VocabBuilder(L)
+        with(vb) {
+            // Greetings
+            v("nihao", "你好", "hello", "مرحبًا", PHRASE, PRE_A1, "greetings", "nǐ hǎo",
+                ex = "你好，我叫明明。", exEn = "Hello, my name is Mingming.", exAr = "مرحبًا، اسمي مينغ مينغ.")
+            v("xiexie", "谢谢", "thank you", "شكرًا", PHRASE, PRE_A1, "greetings", "xièxie", trad = "謝謝",
+                ex = "谢谢你！", exEn = "Thank you!", exAr = "شكرًا لك!")
+            v("bukeqi", "不客气", "you're welcome", "عفوًا", PHRASE, PRE_A1, "greetings", "bú kèqi", trad = "不客氣")
+            v("duibuqi", "对不起", "sorry", "آسف", PHRASE, PRE_A1, "greetings", "duìbuqǐ", trad = "對不起")
+            v("zaijian", "再见", "goodbye", "مع السلامة", PHRASE, PRE_A1, "greetings", "zàijiàn", trad = "再見")
+            v("jiao", "叫", "to be called", "يُدعى / اسمه", VERB, A1, "greetings", "jiào",
+                ex = "你叫什么名字？", exEn = "What is your name?", exAr = "ما اسمك؟")
+            v("mingzi", "名字", "name", "اسم", NOUN, A1, "greetings", "míngzi")
+            // Pronouns & people
+            v("wo", "我", "I, me", "أنا", PRONOUN, PRE_A1, "people", "wǒ")
+            v("ni", "你", "you", "أنت", PRONOUN, PRE_A1, "people", "nǐ")
+            v("ta_m", "他", "he, him", "هو", PRONOUN, PRE_A1, "people", "tā")
+            v("ta_f", "她", "she, her", "هي", PRONOUN, PRE_A1, "people", "tā")
+            v("pengyou", "朋友", "friend", "صديق", NOUN, A1, "people", "péngyou")
+            v("laoshi", "老师", "teacher", "معلّم", NOUN, A1, "people", "lǎoshī", trad = "老師")
+            v("xuesheng", "学生", "student", "طالب", NOUN, A1, "people", "xuésheng", trad = "學生",
+                ex = "我是学生。", exEn = "I am a student.", exAr = "أنا طالب.")
+            v("mama", "妈妈", "mum, mother", "أم", NOUN, PRE_A1, "people", "māma", trad = "媽媽")
+            v("baba", "爸爸", "dad, father", "أب", NOUN, PRE_A1, "people", "bàba")
+            v("shi", "是", "to be (is/am/are)", "يكون (هو/هي)", VERB, PRE_A1, "people", "shì")
+            v("ren", "人", "person", "شخص", NOUN, PRE_A1, "people", "rén")
+            // Numbers
+            v("yi", "一", "one", "واحد", NUMERAL, PRE_A1, "numbers", "yī")
+            v("er", "二", "two", "اثنان", NUMERAL, PRE_A1, "numbers", "èr")
+            v("san", "三", "three", "ثلاثة", NUMERAL, PRE_A1, "numbers", "sān")
+            v("si", "四", "four", "أربعة", NUMERAL, PRE_A1, "numbers", "sì")
+            v("wu", "五", "five", "خمسة", NUMERAL, PRE_A1, "numbers", "wǔ")
+            v("shi_ten", "十", "ten", "عشرة", NUMERAL, PRE_A1, "numbers", "shí")
+            v("ge", "个", "general measure word", "مُميِّز عام (كلمة عدّ)", MEASURE_WORD, A1, "numbers", "gè", trad = "個",
+                ex = "三个人", exEn = "three people", exAr = "ثلاثة أشخاص")
+            v("duoshao", "多少", "how many / how much", "كم", PRONOUN, A1, "numbers", "duōshao")
+            // Food & drink
+            v("cha", "茶", "tea", "شاي", NOUN, A1, "food", "chá")
+            v("shui", "水", "water", "ماء", NOUN, A1, "food", "shuǐ")
+            v("kafei", "咖啡", "coffee", "قهوة", NOUN, A1, "food", "kāfēi")
+            v("mifan", "米饭", "cooked rice", "أرز مطبوخ", NOUN, A1, "food", "mǐfàn", trad = "米飯")
+            v("he", "喝", "to drink", "يشرب", VERB, A1, "food", "hē",
+                ex = "我喝茶。", exEn = "I drink tea.", exAr = "أنا أشرب الشاي.")
+            v("chi", "吃", "to eat", "يأكل", VERB, A1, "food", "chī")
+            v("yao", "要", "to want (to order)", "يريد", VERB, A1, "food", "yào",
+                ex = "我要一杯咖啡。", exEn = "I want a cup of coffee.", exAr = "أريد كوبًا من القهوة.")
+            v("bei", "杯", "cup (measure word)", "كوب (كلمة عدّ)", MEASURE_WORD, A1, "food", "bēi")
+            v("hao_chi", "好吃", "tasty, delicious", "لذيذ", ADJECTIVE, A1, "food", "hǎochī")
+            // Places & travel
+            v("zhongguo", "中国", "China", "الصين", NOUN, A1, "places", "Zhōngguó", trad = "中國")
+            v("nali", "哪里", "where", "أين", PRONOUN, A1, "places", "nǎlǐ", trad = "哪裡",
+                ex = "你是哪里人？", exEn = "Where are you from?", exAr = "من أين أنت؟")
+            v("qu", "去", "to go", "يذهب", VERB, A1, "places", "qù")
+            v("zai", "在", "to be at / in", "في / يوجد في", VERB, A1, "places", "zài",
+                ex = "我在北京。", exEn = "I am in Beijing.", exAr = "أنا في بكين.")
+            v("shangdian", "商店", "shop", "متجر", NOUN, A1, "places", "shāngdiàn")
+            v("huochezhan", "火车站", "train station", "محطة القطار", NOUN, A2, "places", "huǒchēzhàn", trad = "火車站")
+            v("ditie", "地铁", "subway, metro", "مترو الأنفاق", NOUN, A2, "places", "dìtiě", trad = "地鐵")
+            // Time & daily life
+            v("jintian", "今天", "today", "اليوم", NOUN, A1, "time", "jīntiān")
+            v("mingtian", "明天", "tomorrow", "غدًا", NOUN, A1, "time", "míngtiān")
+            v("xianzai", "现在", "now", "الآن", NOUN, A1, "time", "xiànzài", trad = "現在")
+            v("dian", "点", "o'clock", "الساعة (للوقت)", MEASURE_WORD, A1, "time", "diǎn", trad = "點",
+                ex = "现在三点。", exEn = "It is three o'clock now.", exAr = "الساعة الآن الثالثة.")
+            v("xuexi", "学习", "to study", "يدرس", VERB, A1, "time", "xuéxí", trad = "學習",
+                ex = "我每天学习中文。", exEn = "I study Chinese every day.", exAr = "أدرس الصينية كل يوم.")
+            v("gongzuo", "工作", "to work; job", "يعمل؛ عمل", VERB, A1, "time", "gōngzuò")
+            // Particles & descriptions
+            v("ma", "吗", "question particle (yes/no)", "أداة استفهام (نعم/لا)", PARTICLE, PRE_A1, "grammar", "ma", trad = "嗎")
+            v("bu", "不", "not", "لا / ليس", ADVERB, PRE_A1, "grammar", "bù")
+            v("hen", "很", "very", "جدًا", ADVERB, A1, "grammar", "hěn")
+            v("hao", "好", "good", "جيد", ADJECTIVE, PRE_A1, "grammar", "hǎo")
+            v("gui", "贵", "expensive", "غالٍ", ADJECTIVE, A2, "shopping", "guì", trad = "貴",
+                ex = "这个太贵了。", exEn = "This one is too expensive.", exAr = "هذا غالٍ جدًا.")
+            v("pianyi", "便宜", "cheap", "رخيص", ADJECTIVE, A2, "shopping", "piányi")
+            v("yinwei", "因为", "because", "لأنّ", PHRASE, B1, "grammar", "yīnwèi", trad = "因為")
+            v("suoyi", "所以", "so, therefore", "لذلك", PHRASE, B1, "grammar", "suǒyǐ")
+        }
+        val vocabulary = vb.items
+        val f = LessonFactory(L, vocabulary)
+
+        val lessons = listOf(
+            f.lesson("tones_intro", PRE_A1, "sounds", g("The four tones", "النغمات الأربع"),
+                g("Hear and tell apart the four tones plus the neutral tone.", "استمع إلى النغمات الأربع والنغمة المحايدة وميّز بينها."),
+                Skill.PRONUNCIATION, listOf("ma", "wo", "ni", "hao", "shi", "bu"),
+                extra = listOf(
+                    Exercise.ToneChoice("zh_x_tone_ma1", Skill.PRONUNCIATION, Instr.tone, "ma", 1, "妈", g("mum (first character of 妈妈)", "أم (الحرف الأول من 妈妈)")),
+                    Exercise.ToneChoice("zh_x_tone_ma2", Skill.PRONUNCIATION, Instr.tone, "ma", 2, "麻", g("hemp; numb", "قنّب؛ خَدَر")),
+                    Exercise.ToneChoice("zh_x_tone_ma3", Skill.PRONUNCIATION, Instr.tone, "ma", 3, "马", g("horse", "حصان")),
+                    Exercise.ToneChoice("zh_x_tone_ma4", Skill.PRONUNCIATION, Instr.tone, "ma", 4, "骂", g("to scold", "يوبّخ")),
+                    choice("tone_sandhi", L, "你好 is written nǐ hǎo. How is 你 actually pronounced?", listOf("ní (2nd tone)", "nǐ (3rd tone)", "nì (4th tone)"), 0, Skill.PRONUNCIATION,
+                        g("Two 3rd tones in a row: the first becomes a 2nd tone.", "عند تتابع نغمتين ثالثتين تتحول الأولى إلى نغمة ثانية.")),
+                ), minutes = 7),
+            f.lesson("greetings", PRE_A1, "sounds", g("Greetings", "التحيات"), g("Say hello, thank you and goodbye.", "قل مرحبًا وشكرًا ومع السلامة."),
+                Skill.SPEAKING, listOf("nihao", "xiexie", "bukeqi", "duibuqi", "zaijian"),
+                extra = listOf(choice("gr1", L, "Someone says 谢谢. You reply…", listOf("不客气", "对不起", "再见"), 0, Skill.FUNCTIONAL)),
+                prerequisites = listOf("tones_intro")),
+            f.lesson("intro", A1, "people", g("Who are you?", "من أنت؟"), g("Use 是 and 叫 to introduce people.", "استخدم 是 و叫 للتعريف بالأشخاص."),
+                Skill.GRAMMAR, listOf("wo", "ni", "ta_m", "ta_f", "shi", "jiao", "mingzi", "xuesheng", "laoshi"), "shi",
+                extra = listOf(
+                    order("in1", L, listOf("我", "是", "学生"), g("I am a student.", "أنا طالب."), separator = ""),
+                    order("in2", L, listOf("你", "叫", "什么", "名字"), g("What is your name?", "ما اسمك؟"), separator = ""),
+                    fill("in3", L, "她___老师。", listOf("是"), g("Use 是 to link two nouns.", "استخدم 是 للربط بين اسمين.")),
+                ), prerequisites = listOf("greetings")),
+            f.lesson("questions", A1, "people", g("Yes/no questions with 吗", "أسئلة نعم/لا مع 吗"), g("Turn statements into questions and say 'not'.", "حوّل الجمل إلى أسئلة واستخدم النفي."),
+                Skill.GRAMMAR, listOf("ma", "bu", "hen", "hao", "pengyou", "ren"), "ma",
+                extra = listOf(
+                    fill("q1", L, "你是学生___？", listOf("吗")),
+                    fill("q2", L, "我___是老师。", listOf("不"), g("不 goes before the verb.", "تأتي 不 قبل الفعل.")),
+                    order("q3", L, listOf("你", "好", "吗"), g("How are you?", "كيف حالك؟"), separator = ""),
+                ), prerequisites = listOf("intro")),
+            f.lesson("numbers", A1, "daily", g("Numbers and measure words", "الأعداد وكلمات العدّ"), g("Count things with 个 and 杯.", "عُدّ الأشياء باستخدام 个 و杯."),
+                Skill.VOCABULARY, listOf("yi", "er", "san", "si", "wu", "shi_ten", "ge", "duoshao"), "measure",
+                extra = listOf(
+                    fill("n1", L, "三___朋友", listOf("个")),
+                    choice("n2", L, "How do you say 'two cups of tea'?", listOf("两杯茶", "二杯茶", "两个茶"), 0, explanation = g("Before measure words, 'two' is 两 (liǎng), not 二.", "قبل كلمات العدّ تُستخدم 两 للعدد اثنين وليس 二.")),
+                ), prerequisites = listOf("questions")),
+            f.lesson("food", A1, "daily", g("Ordering food and drinks", "طلب الطعام والمشروبات"), g("Use 要, 喝 and 吃 to order.", "استخدم 要 و喝 و吃 للطلب."),
+                Skill.SPEAKING, listOf("cha", "shui", "kafei", "mifan", "he", "chi", "yao", "bei", "hao_chi"), "measure",
+                extra = listOf(
+                    order("f1", L, listOf("我", "要", "一", "杯", "咖啡"), g("I want a cup of coffee.", "أريد كوبًا من القهوة."), separator = ""),
+                    dictation("f2", L, "我喝茶", listOf("我喝茶。")),
+                ), prerequisites = listOf("numbers")),
+            f.lesson("places", A2, "travel", g("Where is it?", "أين يقع؟"), g("Ask where places are and say where you're going.", "اسأل عن أماكن الأشياء وقل إلى أين تذهب."),
+                Skill.LISTENING, listOf("nali", "qu", "zai", "shangdian", "huochezhan", "ditie", "zhongguo"), "zai",
+                extra = listOf(
+                    fill("p1", L, "火车站___哪里？", listOf("在")),
+                    order("p2", L, listOf("我", "去", "商店"), g("I'm going to the shop.", "أنا ذاهب إلى المتجر."), separator = ""),
+                ), prerequisites = listOf("food")),
+            f.lesson("time_daily", A2, "travel", g("Time and daily life", "الوقت والحياة اليومية"), g("Say what time it is and what you do each day.", "قل كم الساعة وماذا تفعل كل يوم."),
+                Skill.READING, listOf("jintian", "mingtian", "xianzai", "dian", "xuexi", "gongzuo", "gui", "pianyi"), "time_order",
+                extra = listOf(
+                    order("t1", L, listOf("我", "明天", "去", "北京"), g("I'm going to Beijing tomorrow.", "سأذهب إلى بكين غدًا."), separator = ""),
+                    choice("t2", L, "Where does the time word usually go?", listOf("Before the verb", "At the very end", "After the object"), 0,
+                        explanation = g("Time words come before the verb: 我明天去.", "تأتي كلمات الزمن قبل الفعل: 我明天去.")),
+                ), prerequisites = listOf("places")),
+            f.lesson("reasons", B1, "travel", g("Giving reasons", "ذكر الأسباب"), g("Link ideas with 因为…所以….", "اربط الأفكار باستخدام 因为…所以…."),
+                Skill.WRITING, listOf("yinwei", "suoyi", "xuexi", "gongzuo", "hen"), "yinwei",
+                extra = listOf(
+                    fill("r1", L, "因为下雨，___我不去。", listOf("所以")),
+                    writing("r2", L, g("Write two sentences explaining why you study Chinese (use 因为…所以…).", "اكتب جملتين تشرح فيهما سبب دراستك للصينية (استخدم 因为…所以…)."), 10, listOf("因为", "所以", "学习")),
+                ), prerequisites = listOf("time_daily")),
+        )
+
+        val grammar = listOf(
+            grammar("shi", L, A1, g("是 (shì) — 'to be' with nouns", "‏是 — فعل الكينونة مع الأسماء"),
+                g("Use 是 to link a subject with a noun: 我是学生. Do not use 是 before adjectives — use 很 instead: 我很好.",
+                    "يُستخدم 是 لربط المبتدأ باسم: 我是学生. لا تستخدم 是 قبل الصفات، بل استخدم 很: 我很好."),
+                listOf(ex("我是老师。", "I am a teacher.", "أنا معلّم."), ex("她很好。", "She is well.", "هي بخير."), ex("我是好。", "Wrong: 是 before an adjective", "خطأ: 是 قبل صفة", wrong = true)),
+                listOf(g("✗ 我是很忙 → ✓ 我很忙 (I'm busy).", "✗ 我是很忙 ← ✓ 我很忙 (أنا مشغول)."))),
+            grammar("ma", L, A1, g("Questions with 吗 and negation with 不", "الاستفهام بـ 吗 والنفي بـ 不"),
+                g("Add 吗 to the end of a statement to make a yes/no question. Put 不 before a verb or adjective to negate it.",
+                    "أضف 吗 في نهاية الجملة لتصبح سؤال نعم/لا. وضع 不 قبل الفعل أو الصفة للنفي."),
+                listOf(ex("你是学生吗？", "Are you a student?", "هل أنت طالب؟"), ex("我不是老师。", "I am not a teacher.", "لست معلّمًا.")),
+                listOf(g("Don't add 吗 to questions that already have a question word: ✗ 你叫什么名字吗？", "لا تضف 吗 إلى سؤال فيه أداة استفهام: ✗ 你叫什么名字吗؟"))),
+            grammar("measure", L, A1, g("Measure words", "كلمات العدّ (المُميِّزات)"),
+                g("Between a number and a noun you need a measure word: 三个人, 一杯茶. 个 is the most general one. 'Two' before a measure word is 两.",
+                    "بين العدد والاسم تحتاج كلمة عدّ: 三个人 و一杯茶. و个 هي الأعمّ. ويُقال 两 للعدد اثنين قبل كلمة العدّ."),
+                listOf(ex("一个朋友", "one friend", "صديق واحد"), ex("两杯咖啡", "two cups of coffee", "كوبان من القهوة"), ex("三人", "Missing measure word (in everyday speech)", "تنقصها كلمة العدّ (في الكلام اليومي)", wrong = true)),
+                listOf(g("✗ 二个人 → ✓ 两个人.", "✗ 二个人 ← ✓ 两个人."))),
+            grammar("zai", L, A2, g("在 for location", "‏在 للمكان"),
+                g("Subject + 在 + place says where someone or something is: 我在家. Ask with 在哪里.",
+                    "المبتدأ + 在 + المكان يحدد مكان الشخص أو الشيء: 我在家. واسأل بـ 在哪里."),
+                listOf(ex("商店在哪里？", "Where is the shop?", "أين المتجر؟"), ex("我在火车站。", "I'm at the train station.", "أنا في محطة القطار.")),
+                listOf(g("✗ 我是在家 is unnecessary in simple statements; say 我在家.", "‏✗ 我是在家 غير ضروري في الجمل البسيطة؛ قل 我在家."))),
+            grammar("time_order", L, A2, g("Word order with time", "ترتيب الكلمات مع الزمن"),
+                g("Time words come before the verb, usually right after the subject: 我今天工作. Mandarin verbs do not change for tense.",
+                    "تأتي كلمات الزمن قبل الفعل، غالبًا بعد المبتدأ مباشرة: 我今天工作. ولا يتغير الفعل الصيني بحسب الزمن."),
+                listOf(ex("我明天去北京。", "I'm going to Beijing tomorrow.", "سأذهب إلى بكين غدًا."), ex("我去北京明天。", "Time word in the wrong place", "كلمة الزمن في غير موضعها", wrong = true)),
+                listOf(g("Putting the time at the end, as in English.", "وضع الزمن في آخر الجملة كما في الإنجليزية."))),
+            grammar("yinwei", L, B1, g("因为…所以… (because… so…)", "‏因为…所以… (لأنّ… لذلك…)"),
+                g("Mandarin often uses both 因为 (because) and 所以 (so) in the same sentence: 因为很贵，所以我不买.",
+                    "تستخدم الصينية غالبًا 因为 و所以 معًا في الجملة نفسها: 因为很贵，所以我不买."),
+                listOf(ex("因为我喜欢中国，所以我学习中文。", "Because I like China, I study Chinese.", "لأنني أحب الصين، أدرس الصينية.")),
+                listOf(g("Using both is normal in Mandarin even though English uses only one.", "استخدام الاثنين معًا أمر طبيعي في الصينية رغم أن الإنجليزية تكتفي بواحدة."))),
+        )
+
+        val units = listOf(
+            CourseUnit("zh_u_sounds", L, PRE_A1, g("Sounds and greetings", "الأصوات والتحيات"), g("Tones, pinyin and first words", "النغمات والبينيين والكلمات الأولى"), listOf("zh_l_tones_intro", "zh_l_greetings")),
+            CourseUnit("zh_u_people", L, A1, g("People", "الأشخاص"), g("Introductions and questions", "التعارف والأسئلة"), listOf("zh_l_intro", "zh_l_questions")),
+            CourseUnit("zh_u_daily", L, A1, g("Numbers and food", "الأعداد والطعام"), g("Counting and ordering", "العدّ والطلب"), listOf("zh_l_numbers", "zh_l_food")),
+            CourseUnit("zh_u_travel", L, A2, g("Getting around", "التنقّل"), g("Places, time and reasons", "الأماكن والوقت والأسباب"), listOf("zh_l_places", "zh_l_time_daily", "zh_l_reasons")),
+        )
+
+        val readings = listOf(
+            ReadingPassage(
+                "zh_r_mingming", L, A1, "我的朋友明明", g("My friend Mingming", "صديقي مينغ مينغ"),
+                listOf("我有一个朋友。", "他叫明明。", "他是学生。", "他很喜欢喝茶。", "明天我们去商店。"),
+                listOf(g("I have a friend.", "لديّ صديق."), g("His name is Mingming.", "اسمه مينغ مينغ."), g("He is a student.", "هو طالب."),
+                    g("He really likes drinking tea.", "هو يحب شرب الشاي كثيرًا."), g("Tomorrow we are going to the shop.", "غدًا سنذهب إلى المتجر.")),
+                listOf("zh_pengyou", "zh_jiao", "zh_xuesheng", "zh_he", "zh_cha", "zh_mingtian", "zh_shangdian"),
+                listOf(
+                    Exercise.MultipleChoice("zh_r_mingming_q1", Skill.READING, Instr.choose, "明明是谁？", listOf("老师", "学生", "妈妈"), 1,
+                        promptGloss = g("Who is Mingming?", "من هو مينغ مينغ؟"), optionGlosses = listOf(g("a teacher", "معلّم"), g("a student", "طالب"), g("a mother", "أم"))),
+                    Exercise.MultipleChoice("zh_r_mingming_q2", Skill.READING, Instr.choose, "明明喜欢喝什么？", listOf("咖啡", "水", "茶"), 2,
+                        promptGloss = g("What does Mingming like to drink?", "ماذا يحب مينغ مينغ أن يشرب؟"), optionGlosses = listOf(g("coffee", "قهوة"), g("water", "ماء"), g("tea", "شاي"))),
+                    Exercise.MultipleChoice("zh_r_mingming_q3", Skill.READING, Instr.choose, "他们明天去哪里？", listOf("商店", "火车站", "中国"), 0,
+                        promptGloss = g("Where are they going tomorrow?", "إلى أين سيذهبون غدًا؟"), optionGlosses = listOf(g("the shop", "المتجر"), g("the train station", "محطة القطار"), g("China", "الصين"))),
+                ),
+            ),
+        )
+
+        val scenarios = listOf(
+            RolePlayScenario(
+                "zh_s_tea", L, A1, g("Ordering at a tea shop", "الطلب في محل شاي"), g("A small tea shop in Beijing.", "محل شاي صغير في بكين."),
+                g("Order a drink and ask the price.", "اطلب مشروبًا واسأل عن السعر."),
+                "你好！你要喝什么？(Nǐ hǎo! Nǐ yào hē shénme?)", g("Hello! What would you like to drink?", "مرحبًا! ماذا تريد أن تشرب؟"),
+                listOf(
+                    ScenarioBeat(listOf("茶", "咖啡", "水", "要"), g("Say what you want: 我要一杯茶。(Wǒ yào yì bēi chá.)", "قل ما تريد: 我要一杯茶。"),
+                        "我要一杯茶。", "好的。还要别的吗？(Hǎo de. Hái yào bié de ma?)", g("OK. Anything else?", "حسنًا. هل تريد شيئًا آخر؟")),
+                    ScenarioBeat(listOf("不要", "不", "谢谢", "米饭", "要"), g("Say 不要，谢谢。(Bú yào, xièxie.) — No, thanks.", "قل 不要，谢谢。أي: لا، شكرًا."),
+                        "不要，谢谢。", "好。(Hǎo.)", g("Fine.", "حسنًا.")),
+                    ScenarioBeat(listOf("多少", "钱"), g("Ask the price: 多少钱？(Duōshao qián?)", "اسأل عن السعر: 多少钱？"),
+                        "多少钱？", "十五块。(Shíwǔ kuài.)", g("Fifteen yuan.", "خمسة عشر يوانًا.")),
+                    ScenarioBeat(listOf("谢谢", "再见"), g("Thank them and say goodbye.", "اشكرهم وودّعهم."),
+                        "谢谢，再见！", "不客气，再见！(Bú kèqi, zàijiàn!)", g("You're welcome, goodbye!", "عفوًا، مع السلامة!")),
+                ),
+                listOf("我要…", "多少钱？", "谢谢", "再见"),
+            ),
+            RolePlayScenario(
+                "zh_s_meet", L, PRE_A1, g("Meeting a classmate", "التعرّف على زميل"), g("First day of a Chinese class.", "اليوم الأول في صف اللغة الصينية."),
+                g("Say hello, give your name and say you are a student.", "ألقِ التحية وقل اسمك وأنك طالب."),
+                "你好！我叫明明。你叫什么名字？(Nǐ hǎo! Wǒ jiào Míngming. Nǐ jiào shénme míngzi?)", g("Hi! I'm Mingming. What's your name?", "مرحبًا! أنا مينغ مينغ. ما اسمك؟"),
+                listOf(
+                    ScenarioBeat(listOf("我叫", "叫"), g("Say 我叫… (Wǒ jiào…) and your name.", "قل 我叫… ثم اسمك."),
+                        "我叫萨拉。", "很高兴认识你！你是学生吗？(Hěn gāoxìng rènshi nǐ! Nǐ shì xuésheng ma?)", g("Nice to meet you! Are you a student?", "سعيد بمعرفتك! هل أنت طالب؟")),
+                    ScenarioBeat(listOf("是", "学生", "不是"), g("Answer 是，我是学生。(Shì, wǒ shì xuésheng.)", "أجب: 是，我是学生。"),
+                        "是，我是学生。", "我也是学生！(Wǒ yě shì xuésheng!)", g("I'm a student too!", "أنا طالب أيضًا!")),
+                ),
+                listOf("我叫…", "我是学生", "很高兴认识你"),
+            ),
+        )
+
+        fun item(id: String, level: CefrLevel, skill: Skill, prompt: String, options: List<String>, correct: Int, promptEn: String, promptAr: String) =
+            AssessmentItem("zh_a_$id", L, level, skill, Exercise.MultipleChoice("zh_a_$id", skill, Instr.choose, prompt, options, correct, promptGloss = g(promptEn, promptAr)))
+
+        val assessment = listOf(
+            item("p1", PRE_A1, Skill.VOCABULARY, "你好", listOf("hello", "goodbye", "thank you"), 0, "What does 你好 mean?", "ما معنى 你好؟"),
+            item("p2", PRE_A1, Skill.PRONUNCIATION, "谢谢", listOf("xièxie", "zàijiàn", "nǐ hǎo"), 0, "Which pinyin matches 谢谢?", "أي بينيين يطابق 谢谢؟"),
+            item("p3", PRE_A1, Skill.VOCABULARY, "三", listOf("2", "3", "10"), 1, "Which number is 三?", "أي عدد هو 三؟"),
+            item("a1_1", A1, Skill.GRAMMAR, "你是学生___？", listOf("吗", "不", "很"), 0, "Complete the question.", "أكمل السؤال."),
+            item("a1_2", A1, Skill.GRAMMAR, "我___好。", listOf("是", "很", "吗"), 1, "Complete: 'I am well.'", "أكمل: أنا بخير."),
+            item("a1_3", A1, Skill.GRAMMAR, "三___人", listOf("个", "杯", "点"), 0, "Choose the measure word.", "اختر كلمة العدّ."),
+            item("a2_1", A2, Skill.GRAMMAR, "火车站___哪里？", listOf("是", "在", "去"), 1, "Complete: 'Where is the train station?'", "أكمل: أين محطة القطار؟"),
+            item("a2_2", A2, Skill.GRAMMAR, "Which sentence is correct?", listOf("我去北京明天。", "我明天去北京。", "明天北京我去。"), 1, "Which sentence is correct?", "أي جملة صحيحة؟"),
+            item("a2_3", A2, Skill.VOCABULARY, "这个太___了，我不买。", listOf("便宜", "贵", "好吃"), 1, "'This is too ___, I won't buy it.'", "هذا ___ جدًا، لن أشتريه."),
+            item("b1_1", B1, Skill.GRAMMAR, "因为下雨，___我们不去公园。", listOf("所以", "但是", "和"), 0, "Complete the sentence.", "أكمل الجملة."),
+            item("b1_2", B1, Skill.GRAMMAR, "我___过长城。", listOf("去", "在", "是"), 0, "'I have been to the Great Wall.'", "لقد زرت سور الصين العظيم."),
+            item("b1_3", B1, Skill.GRAMMAR, "他说中文说___很好。", listOf("的", "得", "地"), 1, "Choose the correct particle.", "اختر الأداة الصحيحة."),
+            item("b2_1", B2, Skill.GRAMMAR, "我把作业___完了。", listOf("做", "是", "在"), 0, "Complete the 把 sentence.", "أكمل جملة 把."),
+            item("b2_2", B2, Skill.VOCABULARY, "虽然很累，___他还是去上班了。", listOf("但是", "所以", "因为"), 0, "'Although tired, he still went to work.'", "رغم تعبه، ذهب إلى العمل."),
+        )
+
+        return LanguageCurriculum(
+            language = L, vocabulary = vocabulary, grammar = grammar, units = units, lessons = lessons, readings = readings,
+            scenarios = scenarios, assessment = assessment,
+            dictations = listOf(
+                dictation("d1", L, "我是学生", listOf("我是学生。")),
+                dictation("d2", L, "你好吗", listOf("你好吗？")),
+                dictation("d3", L, "我要一杯咖啡", listOf("我要一杯咖啡。")),
+            ),
+            writingPrompts = listOf(
+                writing("wp1", L, g("Introduce yourself in Chinese: name and whether you are a student.", "عرّف بنفسك بالصينية: اسمك وهل أنت طالب."), 5, listOf("我叫", "我是")),
+            ),
+        )
+    }
+}

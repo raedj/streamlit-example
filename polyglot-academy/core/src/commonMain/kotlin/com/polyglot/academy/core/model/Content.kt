@@ -98,6 +98,10 @@ sealed interface Exercise {
         override val explanation: Gloss? = null,
         /** Optional text to synthesize before showing options (listening comprehension). */
         val audioText: String? = null,
+        /** When set, shown instead of [prompt] in the learner's explanation language. */
+        val promptGloss: Gloss? = null,
+        /** When set, shown instead of [options] in the learner's explanation language. */
+        val optionGlosses: List<Gloss>? = null,
     ) : Exercise
 
     @Serializable
