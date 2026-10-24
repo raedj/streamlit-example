@@ -1,0 +1,13 @@
+// Applied only when -Ppolyglot.android=true. Groovy keeps this file dynamically typed so the
+// Kotlin build scripts compile even when the Android Gradle Plugin is absent.
+android {
+    namespace project.ext.androidNamespace
+    compileSdk 35
+    defaultConfig {
+        minSdk 26
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
