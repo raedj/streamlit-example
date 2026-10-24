@@ -1,0 +1,3 @@
+-- v1 -> v2: optional learner-written label on bookmarks; index for mistake de-duplication by source.
+ALTER TABLE bookmark ADD COLUMN label TEXT;
+CREATE INDEX mistake_lang_source ON mistake(language, source_id);

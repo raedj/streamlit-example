@@ -1,0 +1,14 @@
+-- Small JSON documents (learner profile, app settings, preferred provider).
+CREATE TABLE kv_store (
+    key TEXT NOT NULL PRIMARY KEY,
+    value TEXT NOT NULL
+);
+
+getValue:
+SELECT value FROM kv_store WHERE key = ?;
+
+putValue:
+INSERT OR REPLACE INTO kv_store(key, value) VALUES (?, ?);
+
+deleteAllValues:
+DELETE FROM kv_store;

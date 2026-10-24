@@ -1,0 +1,112 @@
+CREATE TABLE user_vocabulary (
+    id TEXT NOT NULL PRIMARY KEY,
+    language TEXT NOT NULL,
+    item_json TEXT NOT NULL,
+    created_at INTEGER NOT NULL
+);
+CREATE INDEX user_vocabulary_lang ON user_vocabulary(language);
+
+CREATE TABLE saved_phrase (
+    id TEXT NOT NULL PRIMARY KEY,
+    language TEXT NOT NULL,
+    text TEXT NOT NULL,
+    meaning TEXT NOT NULL,
+    note TEXT,
+    source_conversation_id TEXT,
+    created_at INTEGER NOT NULL
+);
+CREATE INDEX saved_phrase_lang ON saved_phrase(language);
+
+CREATE TABLE imported_material (
+    id TEXT NOT NULL PRIMARY KEY,
+    language TEXT NOT NULL,
+    title TEXT NOT NULL,
+    type TEXT NOT NULL,
+    mime_type TEXT NOT NULL,
+    size_bytes INTEGER NOT NULL,
+    imported_at INTEGER NOT NULL,
+    status TEXT NOT NULL,
+    extracted_text TEXT,
+    error_message TEXT,
+    generated_vocabulary_json TEXT NOT NULL,
+    cloud_processing_allowed INTEGER NOT NULL
+);
+CREATE INDEX imported_material_lang ON imported_material(language);
+
+CREATE TABLE note (
+    id TEXT NOT NULL PRIMARY KEY,
+    language TEXT,
+    title TEXT NOT NULL,
+    body TEXT NOT NULL,
+    created_at INTEGER NOT NULL,
+    updated_at INTEGER NOT NULL
+);
+
+CREATE TABLE bookmark (
+    id TEXT NOT NULL PRIMARY KEY,
+    kind TEXT NOT NULL,
+    reference_id TEXT NOT NULL,
+    created_at INTEGER NOT NULL,
+    label TEXT,
+    UNIQUE (kind, reference_id)
+);
+
+CREATE TABLE provider_config (
+    id TEXT NOT NULL PRIMARY KEY,
+    config_json TEXT NOT NULL
+);
+
+upsertVocabulary:
+INSERT OR REPLACE INTO user_vocabulary VALUES (?, ?, ?, ?);
+vocabularyForLanguage:
+SELECT * FROM user_vocabulary WHERE language = ? ORDER BY created_at DESC;
+deleteVocabulary:
+DELETE FROM user_vocabulary WHERE id = ?;
+
+upsertPhrase:
+INSERT OR REPLACE INTO saved_phrase VALUES (?, ?, ?, ?, ?, ?, ?);
+phrasesForLanguage:
+SELECT * FROM saved_phrase WHERE language = ? ORDER BY created_at DESC;
+deletePhrase:
+DELETE FROM saved_phrase WHERE id = ?;
+
+upsertMaterial:
+INSERT OR REPLACE INTO imported_material VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+allMaterials:
+SELECT * FROM imported_material ORDER BY imported_at DESC;
+materialsForLanguage:
+SELECT * FROM imported_material WHERE language = ? ORDER BY imported_at DESC;
+deleteMaterial:
+DELETE FROM imported_material WHERE id = ?;
+deleteAllMaterials:
+DELETE FROM imported_material;
+
+upsertNote:
+INSERT OR REPLACE INTO note VALUES (?, ?, ?, ?, ?, ?);
+allNotes:
+SELECT * FROM note ORDER BY updated_at DESC;
+deleteNote:
+DELETE FROM note WHERE id = ?;
+
+insertBookmark:
+INSERT OR IGNORE INTO bookmark(id, kind, reference_id, created_at, label) VALUES (?, ?, ?, ?, ?);
+bookmarkExists:
+SELECT COUNT(*) FROM bookmark WHERE kind = ? AND reference_id = ?;
+deleteBookmark:
+DELETE FROM bookmark WHERE kind = ? AND reference_id = ?;
+allBookmarks:
+SELECT * FROM bookmark ORDER BY created_at DESC;
+
+upsertProviderConfig:
+INSERT OR REPLACE INTO provider_config VALUES (?, ?);
+allProviderConfigs:
+SELECT * FROM provider_config;
+
+deleteAllLibrary {
+    DELETE FROM user_vocabulary;
+    DELETE FROM saved_phrase;
+    DELETE FROM imported_material;
+    DELETE FROM note;
+    DELETE FROM bookmark;
+    DELETE FROM provider_config;
+}
