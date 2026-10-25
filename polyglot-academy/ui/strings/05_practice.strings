@@ -14,6 +14,8 @@ PRACTICE_WRITING_SUB ¦ Guided and free writing with feedback ¦ كتابة مو
 PRACTICE_PRONUNCIATION ¦ Pronunciation ¦ النطق
 PRACTICE_PRONUNCIATION_SUB ¦ Listen and repeat ¦ استمع وكرّر
 PRACTICE_TONES ¦ Tone trainer ¦ مدرّب النغمات
+PRACTICE_CHARS ¦ Character writing ¦ كتابة الحروف الصينية
+PRACTICE_CHARS_SUB ¦ Trace and write Chinese characters ¦ تتبّع الحروف الصينية واكتبها
 PRACTICE_TONES_SUB ¦ Hear and tell apart Mandarin tones ¦ استمع وميّز نغمات الصينية
 PRACTICE_RELAX ¦ Relax and focus ¦ استرخِ وركّز
 PRACTICE_RELAX_SUB ¦ Optional breathing before you practise ¦ تنفّس اختياري قبل التدريب
@@ -87,6 +89,28 @@ WCHECK_MISSING_CAPITAL ¦ Start the text with a capital letter. ¦ ابدأ ال
 WCHECK_MISSING_END_PUNCTUATION ¦ End with punctuation. ¦ اختم بعلامة ترقيم.
 PRON_TITLE ¦ Pronunciation ¦ النطق
 PRON_BODY ¦ Listen to a model sentence, then say it yourself. Slow the audio down if it helps. ¦ استمع إلى الجملة النموذجية ثم قلها بنفسك، وأبطئ الصوت إن كان ذلك يساعدك.
+CHARS_TITLE ¦ Character writing ¦ كتابة الحروف الصينية
+CHARS_BODY ¦ Write each character in the box with your finger. Start by tracing the faded guide, then turn it off and write from memory. ¦ اكتب كل حرف في المربع بإصبعك. ابدأ بتتبّع الحرف الباهت ثم أخفِه واكتب من الذاكرة.
+CHARS_NOT_MANDARIN ¦ Character writing is for Mandarin. Switch your active language to Mandarin to track progress there. ¦ كتابة الحروف مخصّصة للصينية، فبدّل لغتك النشطة إلى الصينية لتتابع تقدّمك فيها.
+CHARS_STROKES ¦ {0} strokes ¦ عدد الضربات: {0}
+CHARS_ROLE_MEANING ¦ meaning ¦ معنى
+CHARS_ROLE_SOUND ¦ sound ¦ صوت
+CHARS_ROLE_PART ¦ part ¦ جزء
+CHARS_GUIDE ¦ Show guide ¦ إظهار الحرف الإرشادي
+CHARS_GUIDE_SUB ¦ Turn off to write from memory ¦ أخفِه لتكتب من الذاكرة
+CHARS_BOX_DESC ¦ Writing box for {0}. {1} strokes drawn. ¦ مربع كتابة الحرف {0}. عدد الضربات المرسومة: {1}.
+CHARS_UNDO ¦ Undo stroke ¦ تراجع عن ضربة
+CHARS_CLEAR ¦ Clear ¦ مسح
+CHARS_CHECK ¦ Check ¦ تحقّق
+CHARS_GOOD ¦ Well written — the shape matches. ¦ أحسنت، الشكل مطابق.
+CHARS_CLOSE ¦ Close. Compare with the guide: a stroke may be missing or out of place. ¦ قريب. قارن بالحرف الإرشادي، فقد تكون هناك ضربة ناقصة أو في غير مكانها.
+CHARS_TRY_AGAIN ¦ Not quite. Turn on the guide and trace it once more. ¦ ليس تمامًا. أظهر الحرف الإرشادي وتتبّعه مرة أخرى.
+CHARS_EMPTY ¦ Draw the character first. ¦ ارسم الحرف أولًا.
+CHARS_SCORES ¦ Shape covered: {0}% · ink on the character: {1}% ¦ نسبة تغطية الشكل: {0}% · الحبر على الحرف: {1}%
+CHARS_STROKES_MORE ¦ You drew {0} strokes; this character has {1}. ¦ رسمت {0} ضربات، وهذا الحرف فيه {1}.
+CHARS_STROKES_FEWER ¦ You drew {0} strokes; this character has {1}. Some strokes may be joined. ¦ رسمت {0} ضربات، وهذا الحرف فيه {1}، وربما وصلت بعض الضربات ببعضها.
+CHARS_ABOUT_TITLE ¦ How checking works ¦ كيف يتم التحقق
+CHARS_ABOUT ¦ Your writing is compared with the character's shape on this device. It checks shape and coverage only, not stroke order or direction. Stroke counts and parts are for simplified characters. ¦ تُقارن كتابتك بشكل الحرف على هذا الجهاز. يتحقق ذلك من الشكل والتغطية فقط، لا من ترتيب الضربات أو اتجاهها. أعداد الضربات والأجزاء خاصة بالحروف المبسّطة.
 TONES_TITLE ¦ Tone trainer ¦ مدرّب النغمات
 TONES_BODY ¦ Mandarin has four tones plus a neutral tone. The same syllable with a different tone is a different word. ¦ للصينية أربع نغمات ونغمة محايدة، والمقطع نفسه بنغمة مختلفة كلمة مختلفة.
 TONES_SANDHI ¦ When two 3rd tones meet, the first is said as a 2nd tone: nǐ hǎo sounds like ní hǎo. ¦ عند تتابع نغمتين ثالثتين تُنطق الأولى كنغمة ثانية: nǐ hǎo تُنطق ní hǎo.

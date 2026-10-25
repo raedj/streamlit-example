@@ -14,6 +14,7 @@ import androidx.compose.material.icons.filled.Hearing
 import androidx.compose.material.icons.automirrored.filled.MenuBook
 import androidx.compose.material.icons.filled.Mic
 import androidx.compose.material.icons.filled.MusicNote
+import androidx.compose.material.icons.filled.Draw
 import androidx.compose.material.icons.filled.Replay
 import androidx.compose.material.icons.filled.ReportProblem
 import androidx.compose.material.icons.filled.SelfImprovement
@@ -88,6 +89,7 @@ fun PracticeScreen() {
             add(Triple(K.PRACTICE_WRITING to K.PRACTICE_WRITING_SUB, Icons.Filled.Edit, Route.Writing))
             add(Triple(K.PRACTICE_PRONUNCIATION to K.PRACTICE_PRONUNCIATION_SUB, Icons.Filled.Mic, Route.Pronunciation))
             if (isMandarin) add(Triple(K.PRACTICE_TONES to K.PRACTICE_TONES_SUB, Icons.Filled.MusicNote, Route.Tones))
+            if (isMandarin) add(Triple(K.PRACTICE_CHARS to K.PRACTICE_CHARS_SUB, Icons.Filled.Draw, Route.Characters))
             add(Triple(K.PRACTICE_VOCAB to K.PRACTICE_VOCAB_SUB, Icons.Filled.AutoStories, Route.Vocabulary))
             add(Triple(K.PRACTICE_RELAX to K.PRACTICE_RELAX_SUB, Icons.Filled.SelfImprovement, Route.Relax))
         }

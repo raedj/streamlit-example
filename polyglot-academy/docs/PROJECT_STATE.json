@@ -50,10 +50,10 @@
     }
   },
   "last_tests": {
-    "total": 153,
+    "total": 159,
     "failed": 0,
     "modules": {
-      "core": 110,
+      "core": 116,
       "data": 31,
       "uicore": 12
     },
@@ -89,6 +89,7 @@
     "Restore re-schedules the restored reminder (AppServices.restore)",
     "Mandarin 'for work' track: 10 words, polite-request grammar, lesson, client role-play",
     "On-device PDF text extraction (K-04 partly addressed); scanned/encrypted PDFs reported with specific messages",
-    "PDF: glyph-position layout for Arabic lines (correct punctuation, numbers, Latin runs, ActualText), standard-14 font widths"
+    "PDF: glyph-position layout for Arabic lines (correct punctuation, numbers, Latin runs, ActualText), standard-14 font widths",
+    "Mandarin character writing practice: HanziData (79 characters), HandwritingScorer, Characters screen — K-09 partly addressed"
   ]
 }

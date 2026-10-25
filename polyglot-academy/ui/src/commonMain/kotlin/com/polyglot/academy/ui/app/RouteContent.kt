@@ -58,6 +58,7 @@ fun RouteContent(route: Route) {
         Route.Listening -> ListeningScreen()
         Route.Writing -> WritingScreen()
         Route.Pronunciation -> PronunciationScreen()
+        Route.Characters -> com.polyglot.academy.ui.feature.practice.CharactersScreen()
         Route.Tones -> TonesScreen()
         Route.Relax -> RelaxScreen()
         Route.Vocabulary -> VocabularyScreen()

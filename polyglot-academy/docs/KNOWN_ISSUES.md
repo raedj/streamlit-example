@@ -10,7 +10,7 @@
 | K-06 | Low | Restore implemented (Settings → Your data); the restored reminder is re-scheduled (asking for notification permission if it is on). Version 1 exports restore profile, settings, lessons, reviews, vocabulary and mistakes only; reduced v1 phrase/assessment/note records are skipped and counted | Fixed 2026-10-25 (partial for v1 files) |
 | K-07 | Low | Built-in content is still modest (roughly 55–90 words and 8–14 lessons per language). Every language now has at least one professional track; Spanish, French, Mandarin and Arabic have only a single "for work" lesson and role-play, at B1 | Partly addressed 2026-10-25; content packs can be added without engine changes |
 | K-08 | Low | Pronunciation feedback is recognizer text similarity, not phonetic/tone analysis (disclosed in UI) | — |
-| K-09 | Low | Chinese stroke order, handwriting practice and character components not implemented | — |
+| K-09 | Low | Character writing practice exists (trace/from memory, shape-overlap check against the font glyph, stroke counts and components for 79 course characters). Stroke order and direction are not checked, and there is no animated stroke-order demo (no licence-compatible stroke data bundled); traditional characters have no breakdowns | Partly addressed 2026-10-25 |
 | K-10 | Low | Avatars are level 2 (2D animated); no lip-sync | — |
 | K-11 | Low | Reminder notification text is fixed (no per-language variety beyond EN/AR) | — |
 | K-12 | Low | Charts are custom Canvas drawings without zoom/tooltips | Values are labelled and described for screen readers |

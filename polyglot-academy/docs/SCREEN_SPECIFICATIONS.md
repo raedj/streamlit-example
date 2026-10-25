@@ -22,6 +22,7 @@ Common behaviour: loading → `LoadingPlaceholder`; failure → `StateMessage` w
 | Writing | Prompt choice, editor with word count, basic checks, AI feedback | AI blocked/failed banners, corrections vs optional style, drafts | |
 | Pronunciation | Speak-and-repeat with recognizer match % | Recognizer unavailable → self-rating | Disclaimer: not phonetic scoring |
 | Tone trainer | Tone-choice drills, two-syllable words with tone numbers, traditional toggle | Not-Mandarin note | Sandhi note |
+| Character writing | 田字格 writing box (finger/mouse), faded guide toggle, undo/clear/check, stroke count, components with meaning/sound roles, mnemonic hint, word + audio | Not-Mandarin note; "draw first" | Shape-only checking disclosed; stroke-count hint |
 | Relax | Choose breathing pattern and rounds, guided circle | Running, done, reflection | Disclaimer; stop any time |
 | Tutors / tutor detail | Persona cards; bio, correction style, focus, select, customise, scenarios | Selected | |
 | Scenarios | Role-play list sorted by closeness to level | | |
