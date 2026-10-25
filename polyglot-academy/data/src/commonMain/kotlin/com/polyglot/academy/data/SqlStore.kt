@@ -21,6 +21,7 @@ import com.polyglot.academy.core.model.ExerciseAttempt
 import com.polyglot.academy.core.model.ImportedMaterial
 import com.polyglot.academy.core.model.LanguageCode
 import com.polyglot.academy.core.model.LearnerProfile
+import com.polyglot.academy.core.model.ReadingPassage
 import com.polyglot.academy.core.model.LessonProgress
 import com.polyglot.academy.core.model.MaterialStatus
 import com.polyglot.academy.core.model.MaterialType
@@ -70,6 +71,7 @@ import kotlin.coroutines.CoroutineContext
 private const val KEY_PROFILE = "profile"
 private const val KEY_SETTINGS = "settings"
 private const val KEY_PREFERRED_PROVIDER = "preferred_provider"
+private const val KEY_STORIES = "stories"
 const val EXPORT_FORMAT = "polyglot-academy-export"
 const val EXPORT_VERSION = 2
 private const val MAX_IMPORT_CHARS = 50_000_000
@@ -370,6 +372,21 @@ class SqlStore(
         pq.activeSessionDays(language.name).executeAsList().map { it.toLocalDate(zone) }.toSet()
     }
 
+    // ---------------- Stories ----------------
+    private val storyList = kotlinx.serialization.builtins.ListSerializer(ReadingPassage.serializer())
+    private fun allStoriesSync(): List<ReadingPassage> = kv.getValue(KEY_STORIES).executeAsOneOrNull()?.let { runCatching { storeJson.decodeFromString(storyList, it) }.getOrDefault(emptyList()) } ?: emptyList()
+
+    override fun stories(language: LanguageCode): Flow<List<ReadingPassage>> =
+        kv.getValue(KEY_STORIES).asFlow().mapToOneOrNull(io).map { v -> (v?.let { runCatching { storeJson.decodeFromString(storyList, it) }.getOrDefault(emptyList()) } ?: emptyList()).filter { it.language == language }.sortedByDescending { it.createdAtMillis } }
+
+    override suspend fun saveStory(story: ReadingPassage) = withContext(io) {
+        db.transaction { kv.putValue(KEY_STORIES, storeJson.encodeToString(storyList, allStoriesSync().filter { it.id != story.id } + story)) }
+    }
+
+    override suspend fun deleteStory(id: String) = withContext(io) {
+        db.transaction { kv.putValue(KEY_STORIES, storeJson.encodeToString(storyList, allStoriesSync().filter { it.id != id })) }
+    }
+
     // ---------------- Lifecycle ----------------
     override suspend fun exportJson(includeConversations: Boolean, includeNotes: Boolean): String = withContext(io) {
         fun <T> arr(items: List<T>, ser: kotlinx.serialization.KSerializer<T>) = JsonArray(items.map { storeJson.encodeToJsonElement(ser, it) })
@@ -396,6 +413,7 @@ class SqlStore(
                 SavedPhrase(it.id, LanguageCode.valueOf(it.language), it.text, it.meaning, it.note, it.source_conversation_id, it.created_at)
             }, SavedPhrase.serializer()))
             put("mistakes", arr(LanguageCode.entries.flatMap { l -> pq.mistakesForLanguage(l.name).executeAsList().map(::mapMistake) }, Mistake.serializer()))
+            put("stories", arr(allStoriesSync(), ReadingPassage.serializer()))
             put("bookmarks", arr(lq.allBookmarks().executeAsList().map { Bookmark(it.id, BookmarkKind.valueOf(it.kind), it.reference_id, it.created_at) }, Bookmark.serializer()))
             if (includeConversations) {
                 put("conversations", arr(cq.allConversations().executeAsList().map(::mapConversation), Conversation.serializer()))
@@ -438,6 +456,7 @@ class SqlStore(
         val sessions = list("sessions", StudySession.serializer())
         val achievements = list("achievements", Achievement.serializer())
         val bookmarks = list("bookmarks", Bookmark.serializer())
+        val stories = list("stories", ReadingPassage.serializer())
         val conversations = list("conversations", Conversation.serializer())
         val turns = list("conversationTurns", ConversationTurn.serializer())
         val logs = (root["reviewLogs"] as? JsonArray).orEmpty().mapNotNull { el ->
@@ -451,6 +470,7 @@ class SqlStore(
             profile?.let { kv.putValue(KEY_PROFILE, storeJson.encodeToString(LearnerProfile.serializer(), it)) }
             val restoredSettings = (settings ?: AppSettings()).let { it.copy(privacy = it.privacy.copy(cloudAiEnabled = false, consentVersionAccepted = 0)) }
             kv.putValue(KEY_SETTINGS, storeJson.encodeToString(AppSettings.serializer(), restoredSettings))
+            if (stories.isNotEmpty()) kv.putValue(KEY_STORIES, storeJson.encodeToString(storyList, stories))
             lessons.forEach { with(it) { pq.upsertLessonProgress(lessonId, language.name, bestScore, completions.toLong(), lastCompletedAtMillis, resumeIndex.toLong()) } }
             reviews.forEach { with(it) {
                 rq.upsertState(itemId, language.name, phase.name, ease, intervalDays, learningStep.toLong(), repetitions.toLong(), lapses.toLong(), lastReviewedAtMillis, dueAtMillis, totalReviews.toLong(), correctReviews.toLong())

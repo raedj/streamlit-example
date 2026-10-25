@@ -169,3 +169,34 @@ RELAX_DONE ¦ Nicely done. Ready when you are. ¦ أحسنت. ابدأ متى ك
 RELAX_REFLECT ¦ Reflection: what is one thing you learned today? ¦ تأمّل: ما الشيء الذي تعلّمته اليوم؟
 RELAX_ROUNDS ¦ Rounds ¦ الجولات
 RELAX_SECONDS ¦ {0} seconds ¦ {0} ثانية
+STORY_INTRO ¦ Short graded stories with audio. Tap any word to see its meaning and save it to your reviews. ¦ قصص قصيرة متدرّجة مع الصوت. اضغط على أي كلمة لترى معناها وتحفظها في مراجعاتك.
+STORY_CREATE ¦ A story about what you like ¦ قصة عمّا تحبّه
+STORY_CREATE_BODY ¦ Tell the AI tutor a topic and it writes a new story at your level, with translations, a glossary and questions. ¦ اكتب موضوعًا وسيكتب المدرّب الذكي قصة جديدة بمستواك، مع الترجمة ومسرد للكلمات وأسئلة.
+STORY_INTEREST ¦ Topic (e.g. football, cooking) ¦ الموضوع (مثل: كرة القدم، الطبخ)
+STORY_LEVEL ¦ Level ¦ المستوى
+STORY_WRITE ¦ Write my story ¦ اكتب قصتي
+STORY_NEEDS_AI ¦ Writing new stories needs an AI provider. The built-in stories below work offline. ¦ كتابة قصص جديدة تحتاج إلى مزوّد ذكاء اصطناعي. القصص المدمجة أدناه تعمل دون اتصال.
+STORY_FAILED ¦ The story could not be written: {0} ¦ تعذّرت كتابة القصة: {0}
+STORY_AI_NOTE ¦ Only the topic and your level are sent to the AI provider. ¦ يُرسل الموضوع ومستواك فقط إلى مزوّد الذكاء الاصطناعي.
+STORY_MINE ¦ Your stories ¦ قصصك
+STORY_BUILT_IN ¦ Course stories ¦ قصص الدورة
+STORY_AI_WRITTEN ¦ Written by AI ¦ كتبها الذكاء الاصطناعي
+STORY_TAPPABLE ¦ Tap words ¦ كلمات قابلة للضغط
+STORY_DELETE ¦ Delete story? ¦ حذف القصة؟
+STORY_DELETE_BODY ¦ “{0}” will be removed. Words you saved stay in your reviews. ¦ ستُحذف «{0}». الكلمات التي حفظتها تبقى في مراجعاتك.
+STORY_AI_CHECK ¦ This story was written by AI. It is usually correct, but it may contain mistakes. ¦ كتب هذه القصةَ الذكاءُ الاصطناعي. هي صحيحة عادةً لكنها قد تحتوي على أخطاء.
+STORY_TAP_HINT ¦ Tap a word for its meaning. Use the buttons under each sentence to hear it or see its translation. ¦ اضغط على كلمة لمعرفة معناها. استخدم الأزرار تحت كل جملة لسماعها أو رؤية ترجمتها.
+STORY_TRANSLATE ¦ Show translation ¦ أظهر الترجمة
+STORY_NO_MEANING ¦ No meaning is saved for this word yet. Try the sentence translation. ¦ لا يوجد معنى محفوظ لهذه الكلمة بعد. جرّب ترجمة الجملة.
+STORY_SAVE_WORD ¦ Add to my reviews ¦ أضف إلى مراجعاتي
+STORY_WORD_SAVED ¦ Added to your reviews ¦ أُضيفت إلى مراجعاتك
+STORY_MARK_READ ¦ I've read it ¦ قرأتها
+STORY_DONE ¦ Story finished — well done! ¦ أنهيت القصة. أحسنت!
+STORY_TOPIC_FOOTBALL ¦ football ¦ كرة القدم
+STORY_TOPIC_COOKING ¦ cooking ¦ الطبخ
+STORY_TOPIC_TRAVEL ¦ travel ¦ السفر
+STORY_TOPIC_MUSIC ¦ music ¦ الموسيقى
+STORY_TOPIC_TECHNOLOGY ¦ technology ¦ التقنية
+STORY_TOPIC_FAMILY ¦ family ¦ العائلة
+STORY_TOPIC_ANIMALS ¦ animals ¦ الحيوانات
+STORY_TOPIC_HISTORY ¦ history ¦ التاريخ

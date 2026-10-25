@@ -52,6 +52,8 @@ class LanguageCurriculum(
             if (r.sentences.size != r.sentenceTranslations.size) add("reading ${r.id} sentence/translation count mismatch")
             r.highlightedVocabulary.filter { it !in vocabIds }.forEach { add("reading ${r.id} missing vocab $it") }
             r.questions.forEach { q -> validateExercise(q)?.let { add("${r.id}/${q.id}: $it") } }
+            val text = com.polyglot.academy.core.stories.StoryText.normalize(r.sentences.joinToString(" "))
+            r.glossary.filter { com.polyglot.academy.core.stories.StoryText.normalize(it.term) !in text }.forEach { add("reading ${r.id} glossary term not in text: ${it.term}") }
         }
         scenarios.forEach { s -> if (s.beats.isEmpty()) add("scenario ${s.id} has no beats") }
         val trackIds = tracks.map { it.id }.toSet() + CourseUnit.GENERAL_TRACK
@@ -89,6 +91,8 @@ object Curriculum {
 
     val all: Map<LanguageCode, LanguageCurriculum> by lazy {
         listOf(EnglishCurriculum.build(), MandarinCurriculum.build(), SpanishCurriculum.build(), FrenchCurriculum.build(), ArabicCurriculum.build())
+            .map { c -> LanguageCurriculum(c.language, c.vocabulary, c.grammar, c.units, c.lessons, c.readings + GradedStories.of(c.language), c.scenarios,
+                c.assessment, c.tracks, c.dictations, c.writingPrompts) }
             .associateBy { it.language }
     }
 

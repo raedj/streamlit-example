@@ -74,7 +74,18 @@ data class ReadingPassage(
     /** Built-in vocabulary ids highlighted in this passage. */
     val highlightedVocabulary: List<String>,
     val questions: List<Exercise.MultipleChoice>,
+    /** Meanings of other words and forms in the text, so any of them can be tapped. */
+    val glossary: List<GlossaryEntry> = emptyList(),
+    /** True for stories written by an AI provider at the learner's request. */
+    val generated: Boolean = false,
+    /** The interest a generated story was written about. */
+    val interest: String? = null,
+    val createdAtMillis: Long = 0,
 )
+
+/** One word or phrase in a story with its meaning (and reading, e.g. pinyin). */
+@Serializable
+data class GlossaryEntry(val term: String, val meaning: Gloss, val reading: String? = null)
 
 /** One learning activity. Every exercise has an instruction, an answer mechanism and feedback. */
 @Serializable

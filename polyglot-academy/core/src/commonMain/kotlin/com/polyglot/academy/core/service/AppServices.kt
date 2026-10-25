@@ -68,6 +68,7 @@ class AppServices(
     val speaking = SpeakingService(store, clock)
     val coach = CoachService(store, store, store, store, clock, ids)
     val gamification = GamificationService(store, store, store, clock)
+    val stories = StoryService(store, store, store, reviews, providers, clock, ids)
 
     fun conversation(
         scope: CoroutineScope, language: LanguageCode, tutor: TutorPersona, scenario: RolePlayScenario?, forceOffline: Boolean = false,

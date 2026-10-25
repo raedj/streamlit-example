@@ -93,6 +93,13 @@ interface LibraryRepository {
     suspend fun toggleBookmark(bookmark: Bookmark): Boolean
 }
 
+/** Stories the learner had an AI write; built-in stories live in the curriculum. */
+interface StoryRepository {
+    fun stories(language: LanguageCode): Flow<List<com.polyglot.academy.core.model.ReadingPassage>>
+    suspend fun saveStory(story: com.polyglot.academy.core.model.ReadingPassage)
+    suspend fun deleteStory(id: String)
+}
+
 interface ProviderConfigRepository {
     val configs: Flow<Map<ProviderId, ProviderConfig>>
     suspend fun current(): Map<ProviderId, ProviderConfig>
@@ -138,7 +145,7 @@ interface DataLifecycle {
 
 /** Every repository in one place; implemented by the data layer. */
 interface LearningStore : ProfileRepository, ProgressRepository, ReviewRepository, VocabularyRepository, ConversationRepository,
-    LibraryRepository, ProviderConfigRepository, PlanRepository, DataLifecycle
+    LibraryRepository, ProviderConfigRepository, PlanRepository, StoryRepository, DataLifecycle
 
 /** Volatile secret store for tests and the desktop harness. Never use for real credentials on a device. */
 class InMemorySecretStore : SecretStore {

@@ -89,7 +89,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
 
-private fun explainFor(lang: LanguageCode, preferred: LanguageCode) =
+internal fun explainFor(lang: LanguageCode, preferred: LanguageCode) =
     preferred.takeIf { it != lang } ?: if (lang == LanguageCode.ENGLISH) LanguageCode.ARABIC else LanguageCode.ENGLISH
 
 // ---------------- Grammar ----------------
@@ -145,92 +145,6 @@ fun GrammarTopicScreen(topicId: String) {
         }
         Curriculum.of(topic.language).lessons.firstOrNull { it.grammarTopicId == topic.id }?.let { l ->
             PrimaryButton(s[K.GRAMMAR_PRACTISE], { app.nav.push(Route.LessonOverview(l.id)) }, Modifier.fillMaxWidth())
-        }
-    }
-}
-
-// ---------------- Reading ----------------
-
-@Composable
-fun ReadingListScreen() {
-    val app = LocalApp.current
-    val s = LocalStrings.current
-    val lang = app.profile.activeLearningLanguage
-    ScrollScreen(s[K.READING_TITLE]) {
-        Curriculum.of(lang).readings.forEach { r ->
-            PolyCard(onClick = { app.nav.push(Route.ReadingPassage(r.id)) }) {
-                Row(verticalAlignment = Alignment.CenterVertically) {
-                    Column(Modifier.weight(1f)) {
-                        LearningText(r.title, lang, style = MaterialTheme.typography.titleMedium)
-                        Text(s.gloss(r.titleTranslation), style = MaterialTheme.typography.bodySmall, color = PolyglotTheme.colors.textSecondary)
-                    }
-                    LevelBadge(r.level, null)
-                }
-            }
-        }
-    }
-}
-
-@Composable
-fun ReadingPassageScreen(passageId: String) {
-    val app = LocalApp.current
-    val s = LocalStrings.current
-    val c = PolyglotTheme.colors
-    val scope = rememberCoroutineScope()
-    val passage = Curriculum.all.values.firstNotNullOfOrNull { cur -> cur.readings.firstOrNull { it.id == passageId } }
-    val speaker = rememberSpeaker(s)
-    var openSentence by remember { mutableIntStateOf(-1) }
-    val answers = remember { mutableStateMapOf<String, Boolean>() }
-    var wordsAdded by remember { mutableStateOf(false) }
-    ScrollScreen(passage?.title ?: s[K.READING_TITLE]) {
-        if (passage == null) { StateMessage(s[K.ERROR_TITLE], s[K.LESSON_NOT_FOUND]); return@ScrollScreen }
-        val lang = passage.language
-        val vocab = Curriculum.of(lang).vocabularyById
-        val explain = explainFor(lang, app.profile.explanationLanguage)
-        Text(passage.titleTranslation.forLanguage(explain), style = MaterialTheme.typography.bodyLarge, color = c.textSecondary)
-        Banner(BannerKind.INFO, s[K.READING_TAP_HINT])
-        SecondaryButton(s[K.READING_PLAY_ALL], { speaker.toggle(passage.sentences.joinToString(" "), lang) })
-        PolyCard {
-            passage.sentences.forEachIndexed { i, sentence ->
-                Column(
-                    Modifier.fillMaxWidth().clip(RoundedCornerShape(8.dp)).background(if (openSentence == i) c.selection else c.card)
-                        .clickable(role = Role.Button) { openSentence = if (openSentence == i) -1 else i; speaker.play(sentence, lang) }
-                        .padding(8.dp),
-                ) {
-                    LearningText(sentence, lang, style = PolyglotTheme.learning.sentence)
-                    if (openSentence == i) Text(passage.sentenceTranslations[i].forLanguage(explain), style = MaterialTheme.typography.bodyMedium, color = c.textSecondary,
-                        modifier = Modifier.semantics { liveRegion = LiveRegionMode.Polite })
-                }
-            }
-        }
-        SectionHeader(s[K.LESSON_VOCAB])
-        PolyCard {
-            passage.highlightedVocabulary.mapNotNull { vocab[it] }.forEach { v ->
-                Row(verticalAlignment = Alignment.CenterVertically) {
-                    LearningText(v.term, lang, style = MaterialTheme.typography.titleSmall, modifier = Modifier.weight(1f))
-                    Text(v.meaning.forLanguage(explain), style = MaterialTheme.typography.bodySmall, color = c.textSecondary, modifier = Modifier.weight(1f))
-                }
-            }
-            if (!wordsAdded) QuietButton(s[K.READING_SAVE_WORDS], {
-                scope.launch { app.services.study.introduceVocabulary(lang, passage.highlightedVocabulary); wordsAdded = true }
-            }) else Text(s[K.READING_WORDS_ADDED], color = c.success, style = MaterialTheme.typography.labelLarge)
-        }
-        SectionHeader(s[K.READING_QUESTIONS])
-        val ctx = ExerciseContext(lang, explain, speaker, hintsAvailable = false, showReading = false, traditional = false)
-        passage.questions.forEach { q ->
-            PolyCard {
-                ExerciseView(q, ctx, answered = q.id in answers) { a ->
-                    answers[q.id] = a.outcome.correct
-                    scope.launch { app.services.study.recordExercise(lang, null, q, a.outcome, a.userAnswer, 0, 0, a.promptText) }
-                }
-            }
-        }
-        if (answers.size == passage.questions.size) {
-            Banner(BannerKind.SUCCESS, s.f(K.READING_RESULT, answers.values.count { it }, passage.questions.size))
-            LaunchedEffect(Unit) {
-                val sess = app.services.study.startSession(lang, SessionKind.READING, passage.id)
-                app.services.study.updateSession(sess, answers.size, answers.values.count { it }, true, 60 * passage.sentences.size / 2)
-            }
         }
     }
 }

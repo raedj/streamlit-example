@@ -312,6 +312,32 @@ class ServicesIntegrationTest {
         assertEquals(1, store.currentProfile().streaks.getValue(LanguageCode.ENGLISH).freezes)
     }
 
+    @Test fun aiStoryIsWrittenStoredAndItsWordsCanBeSaved() = runBlocking<Unit> {
+        enroll(LanguageCode.SPANISH)
+        assertTrue(app.stories.generate(LanguageCode.SPANISH, LanguageCode.ARABIC, CefrLevel.A1, "gatos").isFailure, "no provider: nothing is invented")
+        enableCloud()
+        openai.replies += Result.success("""{"title":"Mi gato","title_en":"My cat","title_ar":"قطّي","sentences":[{"text":"Tengo un gato.","en":"I have a cat.","ar":"لديّ قط."},
+            {"text":"Mi gato se llama Sol.","en":"My cat is called Sol.","ar":"اسم قطي سول."},{"text":"Sol duerme en el sofá.","en":"Sol sleeps on the sofa.","ar":"ينام سول على الأريكة."}],
+            "glossary":[{"term":"gato","en":"cat","ar":"قط"},{"term":"duerme","en":"sleeps","ar":"ينام"}],"questions":[{"question":"¿Dónde duerme Sol?","options":["En el sofá","En la cama"],"answer":0}]}""")
+        val story = app.stories.generate(LanguageCode.SPANISH, LanguageCode.ARABIC, CefrLevel.A1, "gatos\n").getOrThrow()
+        assertTrue("\"gatos\"" in openai.requests.single().system)
+        assertEquals(setOf(com.polyglot.academy.core.model.DataCategory.LESSON_CONTENT), openai.requests.single().dataCategories)
+        assertEquals(story, app.stories.find(story.id))
+        assertTrue(app.stories.all(LanguageCode.SPANISH).first().any { it.id == story.id })
+        assertTrue(app.stories.all(LanguageCode.FRENCH).first().none { it.generated })
+        val info = com.polyglot.academy.core.stories.StoryText.lookup("duerme", story, app.stories.lookupVocabulary(LanguageCode.SPANISH))!!
+        val id = app.stories.saveWord(story, info, story.sentences[2])
+        assertEquals(id, app.stories.saveWord(story, info, null), "saving twice does not duplicate")
+        assertEquals("duerme", store.userVocabulary(LanguageCode.SPANISH).first().single().term)
+        assertNotNull(store.state(id))
+        // Generated stories are part of backups.
+        val json = store.exportJson(includeConversations = false, includeNotes = false)
+        app.stories.delete(story)
+        assertNull(app.stories.find(story.id))
+        store.importJson(json)
+        assertEquals("Mi gato", app.stories.find(story.id)?.title)
+    }
+
     @Test fun speechUnavailableShowsNoticeInsteadOfHanging() = runBlocking<Unit> {
         enroll()
         platform.recognizer.available = SpeechAvailability.PERMISSION_DENIED
