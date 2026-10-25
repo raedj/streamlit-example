@@ -21,11 +21,15 @@ import com.polyglot.academy.core.repo.VocabularyRepository
 import com.polyglot.academy.core.util.IdGenerator
 import com.polyglot.academy.core.util.TextNormalizer
 import com.polyglot.academy.core.util.TimeSource
+import com.polyglot.academy.core.media.PdfTextExtractor
+import com.polyglot.academy.core.media.PdfTextResult
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.withContext
 
-/** Raw content handed over by the platform file picker or a paste. Binary types carry no text. */
-data class ImportInput(val title: String, val mimeType: String, val fileName: String, val sizeBytes: Long, val text: String?)
+/** Raw content handed over by the platform file picker or a paste. Binary types carry [bytes] instead of text. */
+class ImportInput(val title: String, val mimeType: String, val fileName: String, val sizeBytes: Long, val text: String?, val bytes: ByteArray? = null)
 
 sealed interface ImportProgress {
     data class Processing(val fraction: Float) : ImportProgress
@@ -35,8 +39,8 @@ sealed interface ImportProgress {
 
 /**
  * Turns learner-provided material into study content. Text and caption files are processed on
- * device in chunks. Formats that need platform extractors (PDF text, OCR, audio/video
- * transcription) are reported as such rather than faked.
+ * device in chunks; PDFs with real text are extracted on device ([PdfTextExtractor]). Scanned
+ * PDFs (OCR), images and audio/video transcription are reported as unsupported rather than faked.
  */
 class MaterialService(
     private val library: LibraryRepository,
@@ -48,7 +52,7 @@ class MaterialService(
     private val platformSupport: Map<MaterialType, ExtractionSupport> = emptyMap(),
 ) {
     fun support(type: MaterialType): ExtractionSupport = when (type) {
-        MaterialType.TEXT, MaterialType.CAPTIONS -> ExtractionSupport.SUPPORTED
+        MaterialType.TEXT, MaterialType.CAPTIONS, MaterialType.PDF -> ExtractionSupport.SUPPORTED
         else -> platformSupport[type] ?: ExtractionSupport.NOT_IMPLEMENTED
     }
 
@@ -60,7 +64,17 @@ class MaterialService(
         var material = ImportedMaterial(ids.newId("mat"), language, input.title.ifBlank { input.fileName }, type, input.mimeType, input.sizeBytes,
             clock.nowMillis(), MaterialStatus.EXTRACTING, cloudProcessingAllowed = cloudAllowed)
         library.upsertMaterial(material)
-        val raw = input.text
+        val raw = if (type == MaterialType.PDF && input.bytes != null) {
+            when (val r = withContext(Dispatchers.Default) { PdfTextExtractor.extract(input.bytes) }) {
+                is PdfTextResult.Text -> r.text
+                else -> {
+                    val reason = when (r) { PdfTextResult.Encrypted -> "pdf_encrypted"; PdfTextResult.NoText -> "pdf_no_text"; else -> "pdf_invalid" }
+                    material = material.copy(status = MaterialStatus.FAILED, errorMessage = reason)
+                    library.upsertMaterial(material)
+                    emit(ImportProgress.Done(material)); return@flow
+                }
+            }
+        } else input.text
         if (support(type) == ExtractionSupport.NOT_IMPLEMENTED || raw == null) {
             material = material.copy(status = MaterialStatus.UNSUPPORTED, errorMessage = "extraction_not_available")
             library.upsertMaterial(material)

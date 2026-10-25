@@ -1,7 +1,7 @@
 # Test Results
 
 Run on 2026-10-25 in the cloud build container (JDK 21, Gradle 8.14.3, Linux x64) with
-`./gradlew build -x :ui:desktopTest`. **Result: BUILD SUCCESSFUL, 143 tests, 0 failures.**
+`./gradlew build -x :ui:desktopTest`. **Result: BUILD SUCCESSFUL, 151 tests, 0 failures.**
 
 | Module | Test class | Tests | Failures |
 |---|---|---|---|
@@ -11,16 +11,17 @@ Run on 2026-10-25 in the cloud build container (JDK 21, Gradle 8.14.3, Linux x64
 | core | CurriculumIntegrityTest (all 5 curricula, incl. track integrity) | 7 | 0 |
 | core | LearningEngineTest | 13 | 0 |
 | core | MiscCoreTest (pinyin, captions, extraction, import policy, breathing, device/local models) | 12 | 0 |
+| core | PdfTextTest (reportlab and LibreOffice fixtures in Latin, Chinese and Arabic; object streams; CID fonts; Differences; form XObjects; encrypted/scanned/non-PDF; truncated files) | 7 | 0 |
 | core | SchedulerTest | 9 | 0 |
 | core | TextAndAnswersTest | 9 | 0 |
 | core | TutorAndVoiceTest | 10 | 0 |
 | data | SqlStoreTest (incl. real v1→v2 migration) | 9 | 0 |
-| data | ServicesIntegrationTest (lesson, review, plan, assessment, providers, offline/AI conversation, privacy, writing, materials, delete-all, restore re-applies reminder) | 16 | 0 |
+| data | ServicesIntegrationTest (lesson, review, plan, assessment, providers, offline/AI conversation, privacy, writing, materials, delete-all, restore re-applies reminder, PDF import) | 17 | 0 |
 | data | ConversationIntegrityTest | 1 | 0 |
 | data | RestoreTest (v2 round trip of every record type, cloud AI forced off, invalid/newer files rejected without changes, v1 best-effort) | 4 | 0 |
 | uicore | LocalizationTest | 8 | 0 |
 | uicore | ContrastTest | 4 | 0 |
-| **Total** | | **143** | **0** |
+| **Total** | | **151** | **0** |
 
 Also executed: SQLDelight `verifyCommonMainPolyglotDatabaseMigration` (pass); compilation of
 `ui` and `desktopApp` for the JVM (pass, no warnings after fixes).

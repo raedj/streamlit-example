@@ -312,9 +312,23 @@ class ServicesIntegrationTest {
         assertTrue(store.userVocabulary(LanguageCode.ENGLISH).first().isEmpty())
 
         val pdf = app.materials.import(LanguageCode.ENGLISH, ImportInput("Doc", "application/pdf", "a.pdf", 1000, null), false).toList().last() as ImportProgress.Done
-        assertEquals(MaterialStatus.UNSUPPORTED, pdf.material.status)
+        assertEquals(MaterialStatus.UNSUPPORTED, pdf.material.status, "no bytes handed over")
+        val img = app.materials.import(LanguageCode.ENGLISH, ImportInput("Pic", "image/png", "a.png", 1000, null), false).toList().last() as ImportProgress.Done
+        assertEquals(MaterialStatus.UNSUPPORTED, img.material.status)
         val rejected = app.materials.import(LanguageCode.ENGLISH, ImportInput("Zip", "application/zip", "a.zip", 10, null), false).toList().single()
         assertIs<ImportProgress.Rejected>(rejected)
+    }
+
+    @Test fun pdfImportExtractsTextOnDeviceAndReportsUnreadableFiles() = runBlocking<Unit> {
+        val bytes = javaClass.getResourceAsStream("/pdf/reportlab_winansi.pdf")!!.readBytes()
+        val done = app.materials.import(LanguageCode.FRENCH, ImportInput("Gare", "application/pdf", "gare.pdf", bytes.size.toLong(), null, bytes), false).toList().last() as ImportProgress.Done
+        assertEquals(MaterialStatus.READY_FOR_REVIEW, done.material.status)
+        assertTrue("Café crème à côté de la gare." in done.material.extractedText.orEmpty())
+        assertTrue(app.materials.candidates(done.material).isNotEmpty())
+        val junk = "%PDF-1.4\n1 0 obj << /Type /Catalog >> endobj\n".encodeToByteArray()
+        val failed = app.materials.import(LanguageCode.FRENCH, ImportInput("X", "application/pdf", "x.pdf", junk.size.toLong(), null, junk), false).toList().last() as ImportProgress.Done
+        assertEquals(MaterialStatus.FAILED, failed.material.status)
+        assertEquals("pdf_no_text", failed.material.errorMessage)
     }
 
     @Test fun captionsImport() = runBlocking<Unit> {

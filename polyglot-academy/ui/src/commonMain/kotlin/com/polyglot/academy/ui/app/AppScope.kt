@@ -17,7 +17,8 @@ import com.polyglot.academy.ui.navigation.Navigator
 import kotlinx.coroutines.CancellationException
 
 /** A file chosen through the platform picker. Text is decoded by the platform when the type is textual. */
-data class PickedFile(val name: String, val mimeType: String, val sizeBytes: Long, val text: String?)
+/** A picked file: [text] for text formats, [bytes] for PDFs (other binaries carry neither). */
+class PickedFile(val name: String, val mimeType: String, val sizeBytes: Long, val text: String?, val bytes: ByteArray? = null)
 
 /** UI-side platform hooks (permission dialogs, file picker, saving exports). */
 interface PlatformUi {

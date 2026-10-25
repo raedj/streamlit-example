@@ -23,6 +23,7 @@ conversations / imported material / everything (incl. keys and reminder).
 - `SecretRedactor` strips key-like strings; error messages never include keys or user content (tested).
 - HTTPS only (network security config); cleartext allowed only for 127.0.0.1/localhost/10.0.2.2 (own local server).
 - No `followRedirects` for provider calls; timeouts on every request.
+- Imported PDFs are parsed on the device; their bytes are never sent anywhere, and only the extracted text is stored.
 - Backup rules exclude the secrets file and the raw database; optional backup uses a secret-free export.
 - Restore (`SqlStore.importJson`) checks the format and version, runs in one transaction (a bad file changes nothing),
   never reads or writes secrets, and always switches cloud AI off and resets the accepted consent version,

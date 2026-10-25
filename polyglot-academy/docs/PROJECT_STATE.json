@@ -50,11 +50,11 @@
     }
   },
   "last_tests": {
-    "total": 143,
+    "total": 151,
     "failed": 0,
     "modules": {
-      "core": 101,
-      "data": 30,
+      "core": 108,
+      "data": 31,
       "uicore": 12
     },
     "not_run": [
@@ -87,6 +87,7 @@
     "Android type-check module; fixed 3 null-dereference crashes (D-06..D-08)",
     "Spanish/French/Arabic: +24 words, +3 lessons (home & weather, health, work), +2 role-plays and a 'for work' track each; track integrity validated — K-07 partly addressed",
     "Restore re-schedules the restored reminder (AppServices.restore)",
-    "Mandarin 'for work' track: 10 words, polite-request grammar, lesson, client role-play"
+    "Mandarin 'for work' track: 10 words, polite-request grammar, lesson, client role-play",
+    "On-device PDF text extraction (K-04 partly addressed); scanned/encrypted PDFs reported with specific messages"
   ]
 }

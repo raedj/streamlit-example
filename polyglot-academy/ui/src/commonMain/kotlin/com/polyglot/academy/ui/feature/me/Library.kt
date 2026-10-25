@@ -215,7 +215,7 @@ fun LibraryScreen() {
                 Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                     SecondaryButton(s[K.LIBRARY_IMPORT_FILE], {
                         if (!app.platformUi.canPickFiles) toast(s[K.MATERIAL_PICKER_UNAVAILABLE])
-                        else scope.launch { app.platformUi.pickFile()?.let { f -> runImport(ImportInput(f.name, f.mimeType, f.name, f.sizeBytes, f.text), false) } }
+                        else scope.launch { app.platformUi.pickFile()?.let { f -> runImport(ImportInput(f.name, f.mimeType, f.name, f.sizeBytes, f.text, f.bytes), false) } }
                     }, Modifier.weight(1f), icon = Icons.Filled.UploadFile)
                     PrimaryButton(s[K.LIBRARY_PASTE], { pasting = true }, Modifier.weight(1f), icon = Icons.Filled.ContentPaste)
                 }
@@ -324,8 +324,15 @@ fun MaterialScreen(materialId: String) {
         if (material == null) { StateMessage(s[K.ERROR_TITLE], s[K.LESSON_NOT_FOUND]); return@ScrollScreen }
         Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) { Pill(Labels.materialType(s, material.type)); Pill(Labels.materialStatus(s, material.status)) }
         when (material.status) {
-            MaterialStatus.UNSUPPORTED, MaterialStatus.FAILED -> Banner(BannerKind.WARNING, s[K.MATERIAL_UNSUPPORTED_BODY])
+            MaterialStatus.UNSUPPORTED, MaterialStatus.FAILED -> Banner(BannerKind.WARNING, s[when (material.errorMessage) {
+                "pdf_encrypted" -> K.MATERIAL_PDF_ENCRYPTED
+                "pdf_no_text" -> K.MATERIAL_PDF_NO_TEXT
+                "pdf_invalid" -> K.MATERIAL_PDF_INVALID
+                "no_text_found" -> K.MATERIAL_NO_TEXT
+                else -> K.MATERIAL_UNSUPPORTED_BODY
+            }])
             else -> {
+                if (material.type == MaterialType.PDF) Banner(BannerKind.INFO, s[K.MATERIAL_PDF_CHECK])
                 SectionHeader(s[K.MATERIAL_TEXT_REVIEW])
                 Text(s[K.MATERIAL_TEXT_EDIT_NOTE], style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
                 AppTextField(editText, { editText = it }, s[K.MATERIAL_TEXT_LABEL], singleLine = false, minLines = 6,

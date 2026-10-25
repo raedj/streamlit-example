@@ -64,7 +64,9 @@ class MainActivity : ComponentActivity(), PlatformUi {
             // Read text in a bounded way; binary formats are not loaded into memory.
             val limit = if (json) 50L * 1024 * 1024 else 5L * 1024 * 1024
             val text = if (textual && size in 1..limit) contentResolver.openInputStream(uri)?.use { it.readBytes().decodeToString() } else null
-            PickedFile(name, mime, size, text)
+            val pdf = mime == "application/pdf" || lower.endsWith(".pdf")
+            val bytes = if (pdf && size in 1..(50L * 1024 * 1024)) contentResolver.openInputStream(uri)?.use { it.readBytes() } else null
+            PickedFile(name, mime, size, text, bytes)
         }
     }
 

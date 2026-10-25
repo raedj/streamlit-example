@@ -30,7 +30,7 @@ Status key: **V** implemented and verified by automated tests · **I** implement
 | PR-13 Writing feedback | `WritingService`, `WritingScreen` | ServicesIntegrationTest | V (logic) / I (UI) |
 | PR-15 Mandarin | `mandarin/Pinyin`, tone exercises, Tones screen | MiscCoreTest, CurriculumIntegrityTest | V (logic) / I (UI) |
 | PR-18 Professional tracks | Curriculum tracks (all five languages) | CurriculumIntegrityTest | V (content) / I (UI) |
-| PR-19 Own material | `MaterialService`, Library | ServicesIntegrationTest | P (text/subtitles only) |
+| PR-19 Own material | `MaterialService`, `PdfTextExtractor`, Library | ServicesIntegrationTest, PdfTextTest | P (text, subtitles, text-based PDF; no OCR/transcription) |
 | PR-20 Relaxation | `relax/Relaxation`, RelaxScreen | MiscCoreTest | V (logic) / I (UI) |
 | PR-23 Export/restore/delete | `SqlStore.exportJson/importJson`, `AppServices.deleteEverything`, Settings → Your data | SqlStoreTest, RestoreTest, ServicesIntegrationTest | V (logic); UI not run |
 | PR-24 Reminders | `Reminders.kt` (Android) | — | B |

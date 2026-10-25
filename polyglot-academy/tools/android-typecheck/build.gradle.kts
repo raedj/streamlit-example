@@ -27,5 +27,7 @@ dependencies {
 }
 
 // `actual` declarations need their `expect` in the same compilation, which only exists inside the
-// multiplatform modules; these two one-line files are therefore excluded here.
-sourceSets["main"].kotlin.exclude("**/HttpClientFactory.android.kt", "**/PlatformBackHandler.android.kt")
+// multiplatform modules; these small files are therefore excluded here.
+sourceSets["main"].kotlin.exclude("**/HttpClientFactory.android.kt", "**/PlatformBackHandler.android.kt",
+    // Same body as the desktop actual (java.util.zip), which the JVM build compiles.
+    "**/Inflate.android.kt")
