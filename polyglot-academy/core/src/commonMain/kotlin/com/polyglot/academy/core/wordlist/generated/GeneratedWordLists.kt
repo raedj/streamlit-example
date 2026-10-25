@@ -8,7 +8,7 @@ internal object GeneratedWordLists {
         "zh" -> listOf({ ZhLevel01.words to ZhLevel01.examples }, { ZhLevel02.words to ZhLevel02.examples })
         "es" -> listOf({ EsLevel01.words to EsLevel01.examples }, { EsLevel02.words to EsLevel02.examples })
         "fr" -> listOf({ FrLevel01.words to FrLevel01.examples }, { FrLevel02.words to FrLevel02.examples })
-        "ar" -> listOf({ ArLevel01.words to ArLevel01.examples })
+        "ar" -> listOf({ ArLevel01.words to ArLevel01.examples }, { ArLevel02.words to ArLevel02.examples })
         "tr" -> listOf({ TrLevel01.words to TrLevel01.examples })
         "ur" -> listOf({ UrLevel01.words to UrLevel01.examples })
         "ms" -> listOf({ MsLevel01.words to MsLevel01.examples })
