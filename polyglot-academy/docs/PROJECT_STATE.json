@@ -94,6 +94,8 @@
     "'Next steps' unit in all five languages: future and conditionals (EN), future and subjunctive (ES, FR), past and future (AR), 了 and 比 (ZH); Arabic now reaches B1; HanziData 98 characters",
     "Speaking path: 30 missions A1–C1, AI mission prompts with completion flag, mission evaluation, fluency report, speaking time per turn (DB v3)",
     "Vision OCR for photos and scanned PDFs (Android PdfRenderer) with confirmation and privacy gate",
-    "Charts: tap-to-inspect tooltips; avatar mouth shapes driven by TTS word progress"
+    "Charts: tap-to-inspect tooltips; avatar mouth shapes driven by TTS word progress",
+    "Banking and finance track (8 words, lesson, disclaimer) for Spanish, French, Arabic, Mandarin",
+    "Android targets aligned to JVM 17; local build guide"
   ]
 }

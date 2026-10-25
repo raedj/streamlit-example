@@ -145,6 +145,17 @@ internal object MandarinCurriculum {
             v("yiyang", "一样", "the same", "مثل، نفس الشيء", ADJECTIVE, B1, "compare", "yíyàng", trad = "一樣")
             v("leng", "冷", "cold", "بارد", ADJECTIVE, A1, "compare", "lěng")
             v("re", "热", "hot", "حار", ADJECTIVE, A1, "compare", "rè", trad = "熱")
+
+            // Banking and finance (professional track)
+            v("fin_zhanghu", "银行账户", "bank account", "حساب مصرفي", NOUN, A2, "finance", "yínháng zhànghù", trad = "銀行賬戶", tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("fin_daikuan", "贷款", "loan", "قرض", NOUN, B1, "finance", "dàikuǎn", trad = "貸款",
+                ex = "银行批准了贷款。", exEn = "The bank approved the loan.", exAr = "وافق البنك على القرض.", tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("fin_lilv", "利率", "interest rate", "سعر الفائدة", NOUN, B1, "finance", "lìlǜ", tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("fin_huankuan", "还款", "repayment; to repay", "سداد", VERB, B1, "finance", "huánkuǎn", trad = "還款", tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("fin_diya", "抵押", "collateral; to pledge", "رهن، ضمان", NOUN, B2, "finance", "dǐyā", tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("fin_weiyue", "违约", "default; breach of contract", "تعثّر، إخلال بالعقد", NOUN, B2, "finance", "wéiyuē", trad = "違約", tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("fin_fuzhaibiao", "资产负债表", "balance sheet", "الميزانية العمومية", NOUN, B2, "finance", "zīchǎn fùzhài biǎo", trad = "資產負債表", tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("fin_liudongxing", "流动性", "liquidity", "السيولة", NOUN, B2, "finance", "liúdòngxìng", trad = "流動性", tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
         }
         val vocabulary = vb.items
         val f = LessonFactory(L, vocabulary)
@@ -234,6 +245,13 @@ internal object MandarinCurriculum {
                     fill("bi2", L, "今天___昨天冷。", listOf("比")),
                     order("bi3", L, listOf("北京", "比", "上海", "冷"), g("Beijing is colder than Shanghai.", "بكين أبرد من شنغهاي."), separator = ""),
                 ), prerequisites = listOf("completed")),
+            f.lesson("finance", B1, "pro_finance", g("Banking basics", "أساسيات البنوك"), g("Accounts, loans, interest and repayments.", "الحسابات والقروض والفوائد والسداد."),
+                Skill.VOCABULARY, listOf("fin_zhanghu", "fin_daikuan", "fin_lilv", "fin_huankuan", "fin_diya", "fin_weiyue", "fin_fuzhaibiao", "fin_liudongxing"),
+                extra = listOf(
+                    fill("fi1", L, "银行批准了这笔___。", listOf("贷款")),
+                    choice("fi2", L, "利率 means…", listOf("interest rate", "exchange rate", "tax rate"), 0, Skill.VOCABULARY),
+                    order("fi3", L, listOf("我们", "每个月", "还款"), g("We make a repayment every month.", "نسدّد كل شهر."), separator = ""),
+                )),
         )
 
         val grammar = listOf(
@@ -299,6 +317,7 @@ internal object MandarinCurriculum {
 
             CourseUnit("zh_u_pro_business", L, B1, g("Chinese for work", "الصينية للعمل"), g("Meetings and formal emails", "الاجتماعات والرسائل الرسمية"), listOf("zh_l_work"), trackId = "business"),
             CourseUnit("zh_u_next", L, B1, g("Next steps", "الخطوة التالية"), g("Completed actions and comparisons", "الأفعال المكتملة والمقارنة"), listOf("zh_l_completed", "zh_l_compare")),
+            CourseUnit("zh_u_pro_finance", L, B1, g("Banking and finance", "البنوك والتمويل"), g("Core banking vocabulary", "مفردات البنوك الأساسية"), listOf("zh_l_finance"), trackId = "finance"),
         )
 
         val readings = listOf(
@@ -390,7 +409,9 @@ internal object MandarinCurriculum {
         return LanguageCurriculum(
             language = L, vocabulary = vocabulary, grammar = grammar, units = units, lessons = lessons, readings = readings,
             scenarios = scenarios, assessment = assessment,
-            tracks = listOf(LearningTrack("business", L, g("Chinese for work", "الصينية للعمل"), g("Meetings, formal emails, budgets and deadlines.", "الاجتماعات والرسائل الرسمية والميزانيات والمواعيد النهائية."), A2, null)),
+            tracks = listOf(LearningTrack("business", L, g("Chinese for work", "الصينية للعمل"), g("Meetings, formal emails, budgets and deadlines.", "الاجتماعات والرسائل الرسمية والميزانيات والمواعيد النهائية."), A2, null),
+                LearningTrack("finance", L, g("Chinese for banking and finance", "الصينية للبنوك والتمويل"), g("Accounts, loans, interest, collateral and financial statements.", "الحسابات والقروض والفوائد والضمانات والقوائم المالية."), B1,
+                    g("This track teaches Chinese vocabulary used in this field. It is not financial, legal or professional advice.", "يعلّم هذا المسار مفردات الصينية المستخدمة في هذا المجال، ولا يُعدّ استشارة مالية أو قانونية أو مهنية."))),
             dictations = listOf(
                 dictation("d1", L, "我是学生", listOf("我是学生。")),
                 dictation("d2", L, "你好吗", listOf("你好吗？")),

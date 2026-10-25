@@ -14,6 +14,6 @@
 | K-10 | Low | Avatars are 2D. While the tutor speaks, mouth shapes follow the spelling of the word the TTS engine reports (Android range events); this is an approximation, not phoneme-accurate lip-sync. Engines without progress events fall back to a simple rhythm | — |
 | K-11 | Low | Reminder notification text is fixed (no per-language variety beyond EN/AR) | — |
 | K-12 | Low | Bar and line charts support tap-to-inspect (tooltip with label and value); there is no pinch-zoom | Values are labelled and described for screen readers |
-| K-13 | Low | Professional-track role-plays exist for all five languages, but finance, credit-risk and legal tracks are English only | — |
+| K-13 | Low | Business and finance tracks exist in all five languages; credit-risk and legal tracks are English only | — |
 | K-14 | Low | Compose Multiplatform 1.7.3 / Kotlin 2.1.21 chosen for offline resolution; newer versions exist | Upgrade once Google Maven is reachable |
 | K-15 | Medium | Speaking path (30 missions, A1–C1): missions without a built-in role-play need an AI tutor; pass criteria (turns, median turn length, tutor confirmation) are practice targets, not a certified level. Speaking rate uses recognizer timing and is approximate; Mandarin word counts are estimated from characters | — |

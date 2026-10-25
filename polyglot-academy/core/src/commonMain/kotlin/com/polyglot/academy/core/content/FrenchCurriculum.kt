@@ -129,6 +129,17 @@ internal object FrenchCurriculum {
             v("chance", "la chance", "luck", "الحظ", NOUN, B1, "wishes", gender = FEMININE)
             v("reussir", "réussir", "to succeed; to pass (an exam)", "ينجح", VERB, B1, "wishes")
             v("examen", "l'examen", "exam", "الامتحان", NOUN, A2, "wishes", gender = MASCULINE)
+
+            // Banking and finance (professional track)
+            v("fin_compte", "le compte bancaire", "bank account", "الحساب المصرفي", NOUN, A2, "finance", gender = MASCULINE, tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("fin_pret", "le prêt", "loan", "القرض", NOUN, B1, "finance", gender = MASCULINE,
+                ex = "La banque a accordé le prêt.", exEn = "The bank granted the loan.", exAr = "منح البنك القرض.", tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("fin_taux", "le taux d'intérêt", "interest rate", "سعر الفائدة", NOUN, B1, "finance", gender = MASCULINE, tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("fin_mensualite", "la mensualité", "monthly instalment", "القسط الشهري", NOUN, B1, "finance", gender = FEMININE, tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("fin_garantie", "la garantie", "collateral, guarantee", "الضمان", NOUN, B2, "finance", gender = FEMININE, tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("fin_defaut", "le défaut de paiement", "default (failure to pay)", "التعثّر عن السداد", NOUN, B2, "finance", gender = MASCULINE, tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("fin_bilan", "le bilan", "balance sheet", "الميزانية العمومية", NOUN, B2, "finance", gender = MASCULINE, tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("fin_liquidite", "la liquidité", "liquidity", "السيولة", NOUN, B2, "finance", gender = FEMININE, tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
         }
         val vocabulary = vb.items
         val f = LessonFactory(L, vocabulary)
@@ -268,6 +279,13 @@ internal object FrenchCurriculum {
                         explanation = g("Espérer que takes the indicative (here the future).", "يأتي بعد espérer que الفعل في صيغة الإخبار (هنا المستقبل).")),
                     translate("so4", L, g("I want you to succeed.", "أريدك أن تنجح."), listOf("Je veux que tu réussisses", "Je veux que vous réussissiez")),
                 ), prerequisites = listOf("projets")),
+            f.lesson("finance", B1, "pro_finance", g("Banking basics", "أساسيات البنوك"), g("Accounts, loans, interest and instalments.", "الحسابات والقروض والفوائد والأقساط."),
+                Skill.VOCABULARY, listOf("fin_compte", "fin_pret", "fin_taux", "fin_mensualite", "fin_garantie", "fin_defaut", "fin_bilan", "fin_liquidite"),
+                extra = listOf(
+                    fill("fi1", L, "La banque a accordé un ___ à l'entreprise.", listOf("prêt", "pret")),
+                    fill("fi2", L, "Le ___ d'intérêt est de 5 %.", listOf("taux")),
+                    choice("fi3", L, "Which document shows assets and liabilities?", listOf("le bilan", "le devis", "le reçu"), 0, Skill.VOCABULARY),
+                )),
         )
         val units = listOf(
             CourseUnit("fr_u_basics", L, A1, g("First steps", "الخطوات الأولى"), g("Greetings and family", "التحيات والعائلة"), listOf("fr_l_salutations", "fr_l_famille")),
@@ -277,6 +295,7 @@ internal object FrenchCurriculum {
             CourseUnit("fr_u_home", L, A2, g("Home and health", "البيت والصحة"), g("Your home, the weather and the doctor", "بيتك والطقس والطبيب"), listOf("fr_l_maison", "fr_l_sante")),
             CourseUnit("fr_u_pro_business", L, B1, g("French for work", "الفرنسية للعمل"), g("Meetings and formal emails", "الاجتماعات والرسائل الرسمية"), listOf("fr_l_travail"), trackId = "business"),
             CourseUnit("fr_u_next", L, B1, g("Next steps", "الخطوة التالية"), g("Plans, needs and wishes", "الخطط والضرورات والأمنيات"), listOf("fr_l_projets", "fr_l_souhaits")),
+            CourseUnit("fr_u_pro_finance", L, B1, g("Banking and finance", "البنوك والتمويل"), g("Core banking vocabulary", "مفردات البنوك الأساسية"), listOf("fr_l_finance"), trackId = "finance"),
         )
         val readings = listOf(
             ReadingPassage(
@@ -354,7 +373,9 @@ internal object FrenchCurriculum {
             item("b2_3", B2, Skill.GRAMMAR, "Bien qu'il ___ tard, il continue.", listOf("est", "soit", "sera"), 1),
         )
         return LanguageCurriculum(L, vocabulary, grammar, units, lessons, readings, scenarios, assessment,
-            tracks = listOf(LearningTrack("business", L, g("French for work", "الفرنسية للعمل"), g("Meetings, formal emails, quotes and deadlines.", "الاجتماعات والرسائل الرسمية وعروض الأسعار والمواعيد النهائية."), A2, null)),
+            tracks = listOf(LearningTrack("business", L, g("French for work", "الفرنسية للعمل"), g("Meetings, formal emails, quotes and deadlines.", "الاجتماعات والرسائل الرسمية وعروض الأسعار والمواعيد النهائية."), A2, null),
+                LearningTrack("finance", L, g("French for banking and finance", "الفرنسية للبنوك والتمويل"), g("Accounts, loans, interest, collateral and financial statements.", "الحسابات والقروض والفوائد والضمانات والقوائم المالية."), B1,
+                    g("This track teaches French vocabulary used in this field. It is not financial, legal or professional advice.", "يعلّم هذا المسار مفردات الفرنسية المستخدمة في هذا المجال، ولا يُعدّ استشارة مالية أو قانونية أو مهنية."))),
             dictations = listOf(
                 dictation("d1", L, "Je m'appelle Karim.", listOf("Je m'appelle Karim")),
                 dictation("d2", L, "Où est la gare ?", listOf("Où est la gare")),

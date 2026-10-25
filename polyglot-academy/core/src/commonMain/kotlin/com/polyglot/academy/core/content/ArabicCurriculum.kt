@@ -5,6 +5,7 @@ import com.polyglot.academy.core.model.CefrLevel
 import com.polyglot.academy.core.model.CefrLevel.A1
 import com.polyglot.academy.core.model.CefrLevel.A2
 import com.polyglot.academy.core.model.CefrLevel.B1
+import com.polyglot.academy.core.model.CefrLevel.B2
 import com.polyglot.academy.core.model.CefrLevel.PRE_A1
 import com.polyglot.academy.core.model.CourseUnit
 import com.polyglot.academy.core.model.Exercise
@@ -126,6 +127,17 @@ internal object ArabicCurriculum {
             v("khutta", "خطة", "plan", "ما يُعَدّ لعمل في المستقبل", NOUN, B1, "future", translit = "khiṭṭa", gender = FEMININE)
             v("inshallah", "إن شاء الله", "God willing (common when speaking of plans)", "عبارة تقال عن المستقبل", PHRASE, A2, "future", translit = "in shāʾa llāh")
             v("lan", "لن", "will not (+ subjunctive verb)", "حرف نفي المستقبل", PHRASE, B1, "future", translit = "lan")
+
+            // Banking and finance (professional track)
+            v("fin_hisab", "حساب مصرفي", "bank account", "حساب في البنك", NOUN, A2, "finance", translit = "ḥisāb maṣrifī", gender = MASCULINE, tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("fin_qard", "قرض", "loan", "مال يُستدان ويُردّ", NOUN, B1, "finance", translit = "qarḍ", gender = MASCULINE,
+                ex = "وافق البنك على القرض.", exEn = "The bank approved the loan.", exAr = "وافق البنك على القرض.", tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("fin_faida", "سعر الفائدة", "interest rate", "نسبة الفائدة على المال", NOUN, B1, "finance", translit = "siʿr al-fāʾida", gender = MASCULINE, tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("fin_qist", "قسط", "instalment", "جزء من الدين يُدفع دوريًا", NOUN, B1, "finance", translit = "qisṭ", gender = MASCULINE, tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("fin_daman", "ضمان", "collateral, guarantee", "ما يُقدَّم لتوثيق الدين", NOUN, B2, "finance", translit = "ḍamān", gender = MASCULINE, tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("fin_taathur", "تعثّر عن السداد", "default (failure to repay)", "العجز عن دفع الدين", PHRASE, B2, "finance", translit = "taʿaththur ʿan as-sadād", tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("fin_mizaniyya_umumiyya", "الميزانية العمومية", "balance sheet", "قائمة الأصول والخصوم", NOUN, B2, "finance", translit = "al-mīzāniyya al-ʿumūmiyya", gender = FEMININE, tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("fin_suyula", "السيولة", "liquidity", "توفر النقد", NOUN, B2, "finance", translit = "as-suyūla", gender = FEMININE, tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
         }
         val vocabulary = vb.items
         val f = LessonFactory(L, vocabulary)
@@ -228,6 +240,13 @@ internal object ArabicCurriculum {
                     choice("fu3", L, "I will not travel: ___ أسافر.", listOf("لن", "لم", "ما"), 0),
                     writing("fu4", L, g("Write two sentences about your plans (use سـ or سوف).", "اكتب جملتين عن خططك (استخدم سـ أو سوف)."), 6, listOf("سأ", "سوف", "غدًا")),
                 ), prerequisites = listOf("past")),
+            f.lesson("finance", B1, "pro_finance", g("Banking basics", "أساسيات البنوك"), g("Accounts, loans, interest and instalments.", "الحسابات والقروض والفوائد والأقساط."),
+                Skill.VOCABULARY, listOf("fin_hisab", "fin_qard", "fin_faida", "fin_qist", "fin_daman", "fin_taathur", "fin_mizaniyya_umumiyya", "fin_suyula"),
+                extra = listOf(
+                    choice("fi1", L, "The bank approved the loan: وافق البنك على ___", listOf("القرض", "القسط", "الحساب"), 0),
+                    order("fi2", L, listOf("دفعتُ", "القسط", "الشهري"), g("I paid the monthly instalment.", "دفعتُ القسط الشهري.")),
+                    choice("fi3", L, "Interest rate:", listOf("سعر الفائدة", "سعر الصرف", "سعر السوق"), 0, Skill.VOCABULARY),
+                )),
         )
         val units = listOf(
             CourseUnit("ar_u_basics", L, PRE_A1, g("First steps", "الخطوات الأولى"), g("Greetings and pronouns", "التحيات والضمائر"), listOf("ar_l_greetings", "ar_l_people")),
@@ -236,6 +255,7 @@ internal object ArabicCurriculum {
             CourseUnit("ar_u_home", L, A2, g("Home and health", "البيت والصحة"), g("Your home, the weather and the doctor", "بيتك والطقس والطبيب"), listOf("ar_l_home", "ar_l_health")),
             CourseUnit("ar_u_pro_business", L, B1, g("Arabic for work", "العربية للعمل"), g("Meetings and formal emails", "الاجتماعات والرسائل الرسمية"), listOf("ar_l_work"), trackId = "business"),
             CourseUnit("ar_u_next", L, B1, g("Next steps", "الخطوة التالية"), g("The past and the future", "الماضي والمستقبل"), listOf("ar_l_past", "ar_l_future")),
+            CourseUnit("ar_u_pro_finance", L, B1, g("Banking and finance", "البنوك والتمويل"), g("Core banking vocabulary", "مفردات البنوك الأساسية"), listOf("ar_l_finance"), trackId = "finance"),
         )
         val readings = listOf(
             ReadingPassage(
@@ -312,7 +332,9 @@ internal object ArabicCurriculum {
             item("b1_2", B1, Skill.GRAMMAR, "الطلاب ___ في المكتبة.", listOf("يدرسون", "يدرس", "تدرس"), 0, "The students study in the library."),
         )
         return LanguageCurriculum(L, vocabulary, grammar, units, lessons, readings, scenarios, assessment,
-            tracks = listOf(LearningTrack("business", L, g("Arabic for work", "العربية للعمل"), g("Meetings, formal emails, budgets and deadlines in Modern Standard Arabic.", "الاجتماعات والرسائل الرسمية والميزانيات والمواعيد النهائية بالعربية الفصحى."), A2, null)),
+            tracks = listOf(LearningTrack("business", L, g("Arabic for work", "العربية للعمل"), g("Meetings, formal emails, budgets and deadlines in Modern Standard Arabic.", "الاجتماعات والرسائل الرسمية والميزانيات والمواعيد النهائية بالعربية الفصحى."), A2, null),
+                LearningTrack("finance", L, g("Arabic for banking and finance", "العربية للبنوك والتمويل"), g("Accounts, loans, interest, collateral and financial statements in Modern Standard Arabic.", "الحسابات والقروض والفوائد والضمانات والقوائم المالية بالعربية الفصحى."), B1,
+                    g("This track teaches Arabic vocabulary used in this field. It is not financial, legal or professional advice.", "يعلّم هذا المسار مفردات العربية المستخدمة في هذا المجال، ولا يُعدّ استشارة مالية أو قانونية أو مهنية."))),
             dictations = listOf(dictation("d1", L, "أنا طالب", listOf("انا طالب")), dictation("d2", L, "أين المحطة؟", listOf("اين المحطة"))),
             writingPrompts = listOf(writing("wp1", L, g("Introduce yourself in Arabic (name, job or study).", "عرّف بنفسك بالعربية."), 5, listOf("اسمي", "أنا"))),
         )

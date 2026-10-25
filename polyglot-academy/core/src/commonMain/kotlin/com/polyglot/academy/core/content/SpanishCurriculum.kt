@@ -135,6 +135,17 @@ internal object SpanishCurriculum {
             v("suerte", "la suerte", "luck", "الحظ", NOUN, B1, "wishes", gender = FEMININE)
             v("aprobar", "aprobar", "to pass (an exam)", "ينجح (في امتحان)", VERB, B1, "wishes")
             v("examen", "el examen", "exam", "الامتحان", NOUN, A2, "wishes", gender = MASCULINE)
+
+            // Banking and finance (professional track)
+            v("fin_cuenta", "la cuenta bancaria", "bank account", "الحساب المصرفي", NOUN, A2, "finance", gender = FEMININE, tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("fin_prestamo", "el préstamo", "loan", "القرض", NOUN, B1, "finance", gender = MASCULINE,
+                ex = "El banco aprobó el préstamo.", exEn = "The bank approved the loan.", exAr = "وافق البنك على القرض.", tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("fin_interes", "el tipo de interés (Esp.) / la tasa de interés (LatAm)", "interest rate", "سعر الفائدة", NOUN, B1, "finance", tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("fin_cuota", "la cuota", "instalment, repayment", "القسط", NOUN, B1, "finance", gender = FEMININE, tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("fin_garantia", "la garantía", "collateral, guarantee", "الضمان", NOUN, B2, "finance", gender = FEMININE, tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("fin_moroso", "el préstamo moroso", "loan in arrears (non-performing)", "القرض المتعثّر", NOUN, B2, "finance", gender = MASCULINE, tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("fin_balance", "el balance", "balance sheet", "الميزانية العمومية", NOUN, B2, "finance", gender = MASCULINE, tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("fin_liquidez", "la liquidez", "liquidity", "السيولة", NOUN, B2, "finance", gender = FEMININE, tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
         }
         val vocabulary = vb.items
         val f = LessonFactory(L, vocabulary)
@@ -278,6 +289,13 @@ internal object SpanishCurriculum {
                     choice("de3", L, "Ojalá ___ buen tiempo mañana.", listOf("hace", "haga", "hará"), 1),
                     translate("de4", L, g("I hope you pass the exam.", "أتمنى أن تنجح في الامتحان."), listOf("Espero que apruebes el examen", "Ojalá apruebes el examen")),
                 ), prerequisites = listOf("planes")),
+            f.lesson("finanzas", B1, "pro_finance", g("Banking basics", "أساسيات البنوك"), g("Accounts, loans, interest and repayments.", "الحسابات والقروض والفوائد والأقساط."),
+                Skill.VOCABULARY, listOf("fin_cuenta", "fin_prestamo", "fin_interes", "fin_cuota", "fin_garantia", "fin_moroso", "fin_balance", "fin_liquidez"),
+                extra = listOf(
+                    fill("fi1", L, "El banco aprobó el ___ para la empresa.", listOf("préstamo", "prestamo")),
+                    fill("fi2", L, "El ___ de interés es del 5 %.", listOf("tipo", "tasa")),
+                    choice("fi3", L, "Which document shows assets and liabilities?", listOf("el balance", "el presupuesto", "el recibo"), 0, Skill.VOCABULARY),
+                )),
         )
         val units = listOf(
             CourseUnit("es_u_basics", L, A1, g("First steps", "الخطوات الأولى"), g("Greetings and family", "التحيات والعائلة"), listOf("es_l_saludos", "es_l_familia")),
@@ -287,6 +305,7 @@ internal object SpanishCurriculum {
             CourseUnit("es_u_home", L, A2, g("Home and health", "البيت والصحة"), g("Your home, the weather and the doctor", "بيتك والطقس والطبيب"), listOf("es_l_casa", "es_l_salud")),
             CourseUnit("es_u_pro_business", L, B1, g("Spanish for work", "الإسبانية للعمل"), g("Meetings and formal emails", "الاجتماعات والرسائل الرسمية"), listOf("es_l_trabajo"), trackId = "business"),
             CourseUnit("es_u_next", L, B1, g("Next steps", "الخطوة التالية"), g("Plans, hopes and wishes", "الخطط والآمال والأمنيات"), listOf("es_l_planes", "es_l_deseos")),
+            CourseUnit("es_u_pro_finance", L, B1, g("Banking and finance", "البنوك والتمويل"), g("Core banking vocabulary", "مفردات البنوك الأساسية"), listOf("es_l_finanzas"), trackId = "finance"),
         )
         val readings = listOf(
             ReadingPassage(
@@ -380,7 +399,9 @@ internal object SpanishCurriculum {
             item("b2_3", B2, Skill.VOCABULARY, "'Echar de menos' significa…", listOf("to miss someone", "to throw away", "to be late"), 0),
         )
         return LanguageCurriculum(L, vocabulary, grammar, units, lessons, readings, scenarios, assessment,
-            tracks = listOf(LearningTrack("business", L, g("Spanish for work", "الإسبانية للعمل"), g("Meetings, formal emails, budgets and deadlines.", "الاجتماعات والرسائل الرسمية والميزانيات والمواعيد النهائية."), A2, null)),
+            tracks = listOf(LearningTrack("business", L, g("Spanish for work", "الإسبانية للعمل"), g("Meetings, formal emails, budgets and deadlines.", "الاجتماعات والرسائل الرسمية والميزانيات والمواعيد النهائية."), A2, null),
+                LearningTrack("finance", L, g("Spanish for banking and finance", "الإسبانية للبنوك والتمويل"), g("Accounts, loans, interest, collateral and financial statements.", "الحسابات والقروض والفوائد والضمانات والقوائم المالية."), B1,
+                    g("This track teaches Spanish vocabulary used in this field. It is not financial, legal or professional advice.", "يعلّم هذا المسار مفردات الإسبانية المستخدمة في هذا المجال، ولا يُعدّ استشارة مالية أو قانونية أو مهنية."))),
             dictations = listOf(
                 dictation("d1", L, "Me llamo Laila y soy estudiante.", listOf("Me llamo Laila y soy estudiante")),
                 dictation("d2", L, "¿Dónde está la estación?", listOf("Dónde está la estación")),
