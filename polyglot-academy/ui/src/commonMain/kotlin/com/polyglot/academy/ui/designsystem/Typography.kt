@@ -8,6 +8,10 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.intl.LocaleList
 import androidx.compose.ui.text.style.LineHeightStyle
+import androidx.compose.ui.text.style.TextDirection
+import com.polyglot.academy.core.model.LanguageCode
+import com.polyglot.academy.core.model.Languages
+import com.polyglot.academy.core.model.TextDirection as ScriptDirection
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.em
 import androidx.compose.ui.unit.sp
@@ -66,3 +70,10 @@ val LocalLearningTypography = staticCompositionLocalOf { learningTypography() }
 
 /** Locale hint so Han characters use Chinese (not Japanese) glyph variants, and Arabic shapes correctly. */
 fun localeFor(tag: String): LocaleList = LocaleList(tag)
+
+/**
+ * Paragraph direction of the learned language. Without it Compose uses the interface direction,
+ * so an English sentence in the Arabic interface would show its final full stop on the left.
+ */
+fun textDirectionFor(language: LanguageCode): TextDirection =
+    if (Languages.of(language).direction == ScriptDirection.RTL) TextDirection.Rtl else TextDirection.Ltr

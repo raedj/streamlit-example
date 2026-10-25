@@ -13,7 +13,7 @@ ONB_LEARN_TITLE ¦ Which language do you want to learn? ¦ أي لغة تريد 
 ONB_LEARN_BODY ¦ You can add more languages later. ¦ يمكنك إضافة لغات أخرى لاحقًا.
 ONB_VARIANT_TITLE ¦ Preferred variety ¦ اللهجة أو النوع المفضّل
 ONB_VARIANT_BODY ¦ Other varieties are still accepted and explained. ¦ ما زالت الأنواع الأخرى مقبولة ومشروحة.
-ONB_LEVEL_TITLE ¦ How well do you know {0}? ¦ ما مدى معرفتك بـ{0}؟
+ONB_LEVEL_TITLE ¦ How well do you know {0}? ¦ ما مدى معرفتك باللغة {0}؟
 ONB_LEVEL_BODY ¦ A short placement test gives a better starting point than a guess. ¦ يعطيك اختبار تحديد المستوى القصير نقطة بداية أفضل من التخمين.
 ONB_LEVEL_TEST ¦ Take a placement test ¦ خُض اختبار تحديد المستوى
 ONB_LEVEL_TEST_SUB ¦ About 5 minutes · up to 14 questions ¦ نحو 5 دقائق · حتى 14 سؤالًا
@@ -28,7 +28,7 @@ ONB_TIME_10 ¦ Steady ¦ منتظم
 ONB_TIME_15 ¦ Regular ¦ معتاد
 ONB_TIME_30 ¦ Serious ¦ جادّ
 ONB_TIME_60 ¦ Intensive ¦ مكثّف
-ONB_TIME_OPTION ¦ {0} minutes a day ¦ {0} دقيقة يوميًا
+ONB_TIME_OPTION ¦ {0} minute a day|{0} minutes a day ¦ {0} دقيقة يوميًا|دقيقة واحدة يوميًا|دقيقتان يوميًا|{0} دقائق يوميًا|{0} دقيقة يوميًا|{0} دقيقة يوميًا
 ONB_STYLE_TITLE ¦ How do you like to learn? ¦ كيف تحب أن تتعلّم؟
 ONB_STYLE_BODY ¦ This shapes the mix of activities. Every plan still includes all skills. ¦ يحدّد هذا مزيج الأنشطة، وتبقى جميع المهارات ضمن كل خطة.
 ONB_CORRECTION_TITLE ¦ How should tutors correct you? ¦ كيف تريد أن يصحّح لك المعلّمون؟

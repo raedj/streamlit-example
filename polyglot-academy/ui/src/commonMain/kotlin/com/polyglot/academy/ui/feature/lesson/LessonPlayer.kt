@@ -24,6 +24,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.key
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateMapOf
 import androidx.compose.runtime.mutableStateOf
@@ -74,6 +75,13 @@ private data class Summary(val score: Double, val correct: Int, val total: Int, 
 
 @Composable
 fun LessonPlayerScreen(lessonId: String, restart: Boolean) {
+    // "Practice again" keeps the same route, so a fresh key is what resets every piece of player state.
+    var attempt by rememberSaveable(lessonId) { mutableIntStateOf(0) }
+    key(attempt) { LessonPlayer(lessonId, restart || attempt > 0, onRetry = { attempt++ }) }
+}
+
+@Composable
+private fun LessonPlayer(lessonId: String, restart: Boolean, onRetry: () -> Unit) {
     val app = LocalApp.current
     val s = LocalStrings.current
     val lesson = remember(lessonId) { Curriculum.all.values.firstNotNullOfOrNull { it.lessonsById[lessonId] } }
@@ -171,7 +179,7 @@ fun LessonPlayerScreen(lessonId: String, restart: Boolean) {
         Column(Modifier.fillMaxSize().padding(padding).verticalScroll(rememberScrollState()).navigationBarsPadding()) {
             ContentColumn(padding = PaddingValues(vertical = 12.dp)) {
                 val sum = summary
-                if (sum != null) SummaryView(lesson, sum, onRetry = { app.nav.replace(Route.LessonPlayer(lesson.id, restart = true)) })
+                if (sum != null) SummaryView(lesson, sum, onRetry = onRetry)
                 else if (index >= 0) {
                     val ex = lesson.exercises[index]
                     adaptMessage?.let { Banner(BannerKind.INFO, s[it]) }

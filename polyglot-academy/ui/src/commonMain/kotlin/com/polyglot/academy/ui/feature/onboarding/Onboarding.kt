@@ -194,7 +194,7 @@ fun OnboardingFlow() {
                     Step.TIME -> {
                         Header(s[K.ONB_TIME_TITLE], s[K.ONB_TIME_BODY])
                         listOf(5 to K.ONB_TIME_5, 10 to K.ONB_TIME_10, 15 to K.ONB_TIME_15, 30 to K.ONB_TIME_30, 60 to K.ONB_TIME_60).forEach { (m, k) ->
-                            ChoiceCard(s.f(K.ONB_TIME_OPTION, m), minutes == m, onClick = { minutes = m }, subtitle = s[k])
+                            ChoiceCard(s.plural(K.ONB_TIME_OPTION, m),minutes == m, onClick = { minutes = m }, subtitle = s[k])
                         }
                     }
                     Step.STYLE -> {

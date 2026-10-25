@@ -166,7 +166,7 @@ internal object EnglishStrings {
         K.ONB_TIME_15 to "Regular",
         K.ONB_TIME_30 to "Serious",
         K.ONB_TIME_60 to "Intensive",
-        K.ONB_TIME_OPTION to "{0} minutes a day",
+        K.ONB_TIME_OPTION to "{0} minute a day|{0} minutes a day",
         K.ONB_STYLE_TITLE to "How do you like to learn?",
         K.ONB_STYLE_BODY to "This shapes the mix of activities. Every plan still includes all skills.",
         K.ONB_CORRECTION_TITLE to "How should tutors correct you?",

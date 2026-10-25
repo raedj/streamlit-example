@@ -62,7 +62,7 @@ WRITE_SUGGESTED ¦ Try using: {0} ¦ حاول استخدام: {0}
 WRITE_SUBMIT ¦ Submit ¦ إرسال
 LISTEN_AGAIN ¦ Listen again ¦ استمع مرة أخرى
 LISTEN_SLOW ¦ Slow ¦ بطيء
-TTS_MISSING ¦ Audio isn't available for {0} on this device. You can install a voice for it in the system text-to-speech settings. ¦ الصوت غير متاح لـ{0} على هذا الجهاز. يمكنك تثبيت صوت لها من إعدادات تحويل النص إلى كلام في النظام.
+TTS_MISSING ¦ Audio isn't available for {0} on this device. You can install a voice for it in the system text-to-speech settings. ¦ الصوت غير متاح للغة {0} على هذا الجهاز. يمكنك تثبيت صوت لها من إعدادات تحويل النص إلى كلام في النظام.
 HINT_SHOW ¦ Show a hint ¦ أظهر تلميحًا
 HINT_FIRST_LETTERS ¦ Starts with: {0} ¦ تبدأ بـ: {0}
 EXPLANATION ¦ Why? ¦ لماذا؟

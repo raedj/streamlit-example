@@ -128,7 +128,7 @@ private fun UnitCard(unit: CourseUnit, lessons: Map<String, Lesson>, progress: M
             val (icon, tint, state) = when {
                 p?.mastered == true -> Triple(Icons.Filled.CheckCircle, c.success, s[K.LESSON_MASTERED])
                 !unlocked -> Triple(Icons.Filled.Lock, c.textMuted, s[K.LOCKED])
-                else -> Triple(Icons.Filled.PlayCircle, c.primary, if (p != null) s.f(K.LESSON_BEST, (p.bestScore * 100).toInt()) else s[K.NOT_STARTED])
+                else -> Triple(Icons.Filled.PlayCircle, c.primary, lessonState(s, p))
             }
             Row(
                 Modifier.fillMaxWidth().semantics(mergeDescendants = true) { stateDescription = state }
@@ -147,6 +147,14 @@ private fun UnitCard(unit: CourseUnit, lessons: Map<String, Lesson>, progress: M
             }
         }
     }
+}
+
+/** A progress row also exists for a lesson that was only started (its resume point), so a best score needs a completion. */
+private fun lessonState(s: com.polyglot.academy.ui.i18n.Localizer, p: LessonProgress?): String = when {
+    p == null -> s[K.NOT_STARTED]
+    p.completions > 0 -> s.f(K.LESSON_BEST, (p.bestScore * 100).toInt())
+    p.resumeIndex > 0 -> s.f(K.LESSON_RESUME, p.resumeIndex + 1)
+    else -> s[K.NOT_STARTED]
 }
 
 @OptIn(ExperimentalLayoutApi::class)
