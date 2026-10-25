@@ -16,6 +16,7 @@ import androidx.compose.material.icons.filled.Mic
 import androidx.compose.material.icons.filled.MusicNote
 import androidx.compose.material.icons.filled.Draw
 import androidx.compose.material.icons.filled.RecordVoiceOver
+import androidx.compose.material.icons.filled.Luggage
 import androidx.compose.material.icons.filled.Replay
 import androidx.compose.material.icons.filled.ReportProblem
 import androidx.compose.material.icons.filled.SelfImprovement
@@ -82,6 +83,7 @@ fun PracticeScreen() {
         Text(Labels.language(s, app.profile.activeLearningLanguage), style = MaterialTheme.typography.bodyLarge, color = c.textSecondary)
         val items = buildList {
             add(Triple(K.PRACTICE_SPEAKING to K.PRACTICE_SPEAKING_SUB, Icons.Filled.RecordVoiceOver, Route.SpeakingPath))
+            add(Triple(K.PRACTICE_PHRASEBOOK to K.PRACTICE_PHRASEBOOK_SUB, Icons.Filled.Luggage, Route.Phrasebook))
             add(Triple(K.PRACTICE_REVIEW to K.PRACTICE_REVIEW_SUB, Icons.Filled.Replay, Route.Review))
             add(Triple(K.PRACTICE_MISTAKES to K.PRACTICE_MISTAKES_SUB, Icons.Filled.ReportProblem, Route.Mistakes))
             add(Triple(K.PRACTICE_SCENARIOS to K.PRACTICE_SCENARIOS_SUB, Icons.Filled.TheaterComedy, Route.Scenarios))

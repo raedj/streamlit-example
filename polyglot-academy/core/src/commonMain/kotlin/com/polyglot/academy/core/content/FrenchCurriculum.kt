@@ -140,6 +140,55 @@ internal object FrenchCurriculum {
             v("fin_defaut", "le défaut de paiement", "default (failure to pay)", "التعثّر عن السداد", NOUN, B2, "finance", gender = MASCULINE, tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
             v("fin_bilan", "le bilan", "balance sheet", "الميزانية العمومية", NOUN, B2, "finance", gender = MASCULINE, tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
             v("fin_liquidite", "la liquidité", "liquidity", "السيولة", NOUN, B2, "finance", gender = FEMININE, tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            // Daily life and travel
+            v("ev_excusez_moi", "excusez-moi", "excuse me", "عفوًا", PHRASE, A1, "essentials", ex = "Excusez-moi, cette place est libre ?", exEn = "Excuse me, is this seat free?", exAr = "عفوًا، هل هذا المقعد شاغر؟")
+            v("ev_comprends_pas", "je ne comprends pas", "I don't understand", "لا أفهم", PHRASE, A1, "essentials")
+            v("ev_lentement", "Pouvez-vous parler plus lentement, s'il vous plaît ?", "Could you speak more slowly, please?", "هل يمكنك التحدث ببطء أكثر من فضلك؟", PHRASE, A1, "essentials")
+            v("ev_repeter", "Pouvez-vous répéter, s'il vous plaît ?", "Could you repeat that, please?", "هل يمكنك أن تعيد من فضلك؟", PHRASE, A1, "essentials")
+            v("ev_toilettes", "Où sont les toilettes ?", "Where are the toilets?", "أين دورات المياه؟", PHRASE, A1, "essentials")
+            v("ev_aider", "Pouvez-vous m'aider ?", "Can you help me?", "هل يمكنك مساعدتي؟", PHRASE, A1, "essentials")
+            v("ev_sais_pas", "je ne sais pas", "I don't know", "لا أعرف", PHRASE, A1, "essentials")
+            v("ev_de_rien", "de rien", "you're welcome", "عفوًا (ردًّا على الشكر)", PHRASE, A1, "essentials")
+            v("ev_au_secours", "Au secours !", "Help!", "النجدة!", PHRASE, A1, "emergency")
+            v("ev_police", "la police", "the police", "الشرطة", NOUN, A1, "emergency")
+            v("ev_ambulance", "Appelez une ambulance !", "Call an ambulance!", "اتصل بالإسعاف!", PHRASE, A2, "emergency", ex = "Appelez une ambulance, s'il vous plaît !", exEn = "Call an ambulance, please!", exAr = "اتصل بالإسعاف من فضلك!")
+            v("ev_passeport", "J'ai perdu mon passeport.", "I've lost my passport.", "أضعتُ جواز سفري.", PHRASE, A2, "emergency")
+            v("ev_vole", "On m'a volé mon sac.", "My bag has been stolen.", "سُرقت حقيبتي.", PHRASE, A2, "emergency")
+            v("ev_ambassade", "l'ambassade", "the embassy", "السفارة", NOUN, A2, "emergency")
+            v("ev_hopital", "l'hôpital", "hospital", "المستشفى", NOUN, A1, "emergency")
+            v("ev_urgence", "le numéro d'urgence", "emergency number", "رقم الطوارئ", NOUN, A2, "emergency")
+            v("ev_table_pour", "une table pour deux, s'il vous plaît", "a table for two, please", "طاولة لشخصين من فضلك", PHRASE, A1, "restaurant", ex = "Bonsoir, une table pour deux, s'il vous plaît.", exEn = "Good evening, a table for two, please.", exAr = "مساء الخير، طاولة لشخصين من فضلك.")
+            v("ev_conseillez", "Qu'est-ce que vous me conseillez ?", "What do you recommend?", "بماذا تنصحني؟", PHRASE, A2, "restaurant")
+            v("ev_allergique", "je suis allergique à…", "I'm allergic to…", "عندي حساسية من…", PHRASE, A2, "restaurant")
+            v("ev_vegetarien", "végétarien / végétarienne", "vegetarian", "نباتي / نباتية", ADJECTIVE, A2, "restaurant")
+            v("ev_entree", "l'entrée", "starter (in France; 'entrée' is not the main course)", "المقبّلات (في فرنسا)", NOUN, A2, "restaurant")
+            v("ev_plat", "le plat principal", "main course", "الطبق الرئيسي", NOUN, A2, "restaurant")
+            v("ev_dessert", "le dessert", "dessert", "الحلوى", NOUN, A1, "restaurant")
+            v("ev_pourboire", "le pourboire", "tip", "البقشيش", NOUN, A2, "restaurant")
+            v("ev_reservation", "la réservation", "reservation", "الحجز", NOUN, A2, "hotel", ex = "J'ai une réservation au nom de Hassan.", exEn = "I have a reservation under the name Hassan.", exAr = "لديّ حجز باسم حسن.")
+            v("ev_chambre_simple", "la chambre simple", "single room", "غرفة لشخص واحد", NOUN, A2, "hotel")
+            v("ev_chambre_double", "la chambre double", "double room", "غرفة مزدوجة", NOUN, A2, "hotel")
+            v("ev_cle", "la clé", "key", "المفتاح", NOUN, A1, "hotel")
+            v("ev_petit_dej", "Le petit-déjeuner est compris ?", "Is breakfast included?", "هل الفطور مشمول؟", PHRASE, A2, "hotel")
+            v("ev_wifi", "Quel est le mot de passe du wifi ?", "What's the Wi-Fi password?", "ما كلمة مرور الواي فاي؟", PHRASE, A2, "hotel")
+            v("ev_accueil", "l'accueil", "reception", "الاستقبال", NOUN, A2, "hotel")
+            v("ev_liberer", "libérer la chambre", "to check out (vacate the room)", "مغادرة الغرفة", VERB, A2, "hotel")
+            v("ev_quai", "le quai", "platform", "الرصيف", NOUN, A2, "transport", ex = "Le train part du quai quatre.", exEn = "The train leaves from platform four.", exAr = "يغادر القطار من الرصيف رقم أربعة.")
+            v("ev_aller_retour", "un aller-retour", "a return ticket", "تذكرة ذهاب وعودة", NOUN, A2, "transport")
+            v("ev_aller_simple", "un aller simple", "a single (one-way) ticket", "تذكرة ذهاب فقط", NOUN, A2, "transport")
+            v("ev_depart", "le départ", "departure", "المغادرة", NOUN, A2, "transport")
+            v("ev_retard", "le retard", "delay", "التأخير", NOUN, A2, "transport")
+            v("ev_embarquement", "la carte d'embarquement", "boarding pass", "بطاقة الصعود إلى الطائرة", NOUN, A2, "transport")
+            v("ev_bagages", "les bagages", "luggage", "الأمتعة", NOUN, A2, "transport")
+            v("ev_arret", "l'arrêt de bus", "bus stop", "موقف الحافلات", NOUN, A1, "transport")
+            v("ev_musee", "le musée", "museum", "المتحف", NOUN, A1, "sightseeing", ex = "Le musée ouvre à quelle heure ?", exEn = "What time does the museum open?", exAr = "متى يفتح المتحف؟")
+            v("ev_horaires", "les horaires d'ouverture", "opening hours", "مواعيد العمل", NOUN, A2, "sightseeing")
+            v("ev_billet_entree", "le billet d'entrée", "entrance ticket", "تذكرة الدخول", NOUN, A2, "sightseeing")
+            v("ev_visite_guidee", "la visite guidée", "guided tour", "جولة مع مرشد", NOUN, A2, "sightseeing")
+            v("ev_plan", "le plan", "street map", "خريطة المدينة", NOUN, A1, "sightseeing")
+            v("ev_photo", "Pouvez-vous nous prendre en photo ?", "Could you take a photo of us?", "هل يمكنك أن تلتقط لنا صورة؟", PHRASE, A2, "sightseeing")
+            v("ev_vieille_ville", "la vieille ville", "old town", "المدينة القديمة", NOUN, A2, "sightseeing")
+            v("ev_souvenir", "le souvenir", "souvenir; memory", "تذكار؛ ذكرى", NOUN, A2, "sightseeing")
         }
         val vocabulary = vb.items
         val f = LessonFactory(L, vocabulary)
@@ -286,6 +335,42 @@ internal object FrenchCurriculum {
                     fill("fi2", L, "Le ___ d'intérêt est de 5 %.", listOf("taux")),
                     choice("fi3", L, "Which document shows assets and liabilities?", listOf("le bilan", "le devis", "le reçu"), 0, Skill.VOCABULARY),
                 )),
+            f.lesson("ev_essentials", A1, "survival", g("Most useful phrases", "العبارات الأكثر استخدامًا"), g("Phrases you will use every day and when travelling.", "عبارات تستخدمها كل يوم وفي السفر."),
+                Skill.SPEAKING, listOf("ev_excusez_moi", "ev_comprends_pas", "ev_lentement", "ev_repeter", "ev_toilettes", "ev_aider", "ev_sais_pas", "ev_de_rien"),
+                extra = listOf(
+                    fill("ev1", L, "Pouvez-vous parler plus ___, s'il vous plaît ?", listOf("lentement")),
+                    choice("ev2", L, "Someone thanks you. You reply…", listOf("De rien.", "Je ne sais pas.", "Excusez-moi."), 0, Skill.FUNCTIONAL),
+                )),
+            f.lesson("ev_emergency", A2, "survival", g("Emergencies and help", "الطوارئ وطلب المساعدة"), g("Ask for help, report a loss and find the police or a hospital.", "اطلب المساعدة وأبلغ عن فقدان شيء واعثر على الشرطة أو المستشفى."),
+                Skill.SPEAKING, listOf("ev_au_secours", "ev_police", "ev_ambulance", "ev_passeport", "ev_vole", "ev_ambassade", "ev_hopital", "ev_urgence"),
+                extra = listOf(
+                    fill("ev3", L, "J'ai ___ mon passeport. (perdre)", listOf("perdu")),
+                    choice("ev4", L, "Your bag was stolen:", listOf("On m'a volé mon sac.", "J'aime mon sac.", "Mon sac est cher."), 0, Skill.FUNCTIONAL),
+                )),
+            f.lesson("ev_restaurant", A2, "tourism", g("At the restaurant", "في المطعم"), g("Ask for a table, order a meal, mention allergies and pay.", "اطلب طاولة واطلب وجبة واذكر الحساسية وادفع."),
+                Skill.SPEAKING, listOf("ev_table_pour", "ev_conseillez", "ev_allergique", "ev_vegetarien", "ev_entree", "ev_plat", "ev_dessert", "ev_pourboire"),
+                extra = listOf(
+                    fill("ev5", L, "Une table ___ deux, s'il vous plaît.", listOf("pour")),
+                    choice("ev6", L, "In France, 'l'entrée' on a menu is…", listOf("the starter", "the main course", "the dessert"), 0, Skill.VOCABULARY),
+                )),
+            f.lesson("ev_hotel", A2, "tourism", g("At the hotel", "في الفندق"), g("Check in, ask about breakfast and Wi-Fi, check out.", "سجّل وصولك واسأل عن الفطور والواي فاي وسجّل المغادرة."),
+                Skill.LISTENING, listOf("ev_reservation", "ev_chambre_simple", "ev_chambre_double", "ev_cle", "ev_petit_dej", "ev_wifi", "ev_accueil", "ev_liberer"),
+                extra = listOf(
+                    fill("ev7", L, "Le petit-déjeuner est ___ ?", listOf("compris")),
+                    dictation("ev8", L, "J'ai une réservation pour deux nuits.", listOf("J'ai une réservation pour deux nuits")),
+                )),
+            f.lesson("ev_transport", A2, "tourism", g("Trains, buses and flights", "القطارات والحافلات والطائرات"), g("Buy tickets, find your platform and handle delays.", "اشترِ التذاكر واعثر على رصيفك وتعامل مع التأخير."),
+                Skill.LISTENING, listOf("ev_quai", "ev_aller_retour", "ev_aller_simple", "ev_depart", "ev_retard", "ev_embarquement", "ev_bagages", "ev_arret"),
+                extra = listOf(
+                    choice("ev9", L, "A return ticket is…", listOf("un aller-retour", "un aller simple", "un quai"), 0, Skill.VOCABULARY),
+                    dictation("ev10", L, "Le train a du retard.", listOf("Le train a du retard")),
+                )),
+            f.lesson("ev_sightseeing", A2, "tourism", g("Sightseeing", "السياحة والمعالم"), g("Museums, tickets, tours and photos.", "المتاحف والتذاكر والجولات والصور."),
+                Skill.READING, listOf("ev_musee", "ev_horaires", "ev_billet_entree", "ev_visite_guidee", "ev_plan", "ev_photo", "ev_vieille_ville", "ev_souvenir"),
+                extra = listOf(
+                    fill("ev11", L, "Le musée ___ à quelle heure ? (ouvrir)", listOf("ouvre")),
+                    choice("ev12", L, "A guided tour is…", listOf("la visite guidée", "la vieille ville", "le souvenir"), 0, Skill.VOCABULARY),
+                )),
         )
         val units = listOf(
             CourseUnit("fr_u_basics", L, A1, g("First steps", "الخطوات الأولى"), g("Greetings and family", "التحيات والعائلة"), listOf("fr_l_salutations", "fr_l_famille")),
@@ -296,6 +381,8 @@ internal object FrenchCurriculum {
             CourseUnit("fr_u_pro_business", L, B1, g("French for work", "الفرنسية للعمل"), g("Meetings and formal emails", "الاجتماعات والرسائل الرسمية"), listOf("fr_l_travail"), trackId = "business"),
             CourseUnit("fr_u_next", L, B1, g("Next steps", "الخطوة التالية"), g("Plans, needs and wishes", "الخطط والضرورات والأمنيات"), listOf("fr_l_projets", "fr_l_souhaits")),
             CourseUnit("fr_u_pro_finance", L, B1, g("Banking and finance", "البنوك والتمويل"), g("Core banking vocabulary", "مفردات البنوك الأساسية"), listOf("fr_l_finance"), trackId = "finance"),
+            CourseUnit("fr_u_survival", L, A1, g("Essential phrases", "العبارات الأساسية"), g("Everyday phrases and emergencies", "العبارات اليومية والطوارئ"), listOf("fr_l_ev_essentials", "fr_l_ev_emergency")),
+            CourseUnit("fr_u_tourism", L, A2, g("Travel and tourism", "السفر والسياحة"), g("Restaurants, hotels, transport and sightseeing", "المطاعم والفنادق والمواصلات والمعالم"), listOf("fr_l_ev_restaurant", "fr_l_ev_hotel", "fr_l_ev_transport", "fr_l_ev_sightseeing")),
         )
         val readings = listOf(
             ReadingPassage(
@@ -354,6 +441,48 @@ internal object FrenchCurriculum {
                 ),
                 listOf("Le devis s'élève à…", "Nous pouvons livrer dans…", "Je vous envoie…"),
                 trackId = "business",
+            ),
+            RolePlayScenario(
+                "fr_s_hotel", L, A2, g("Checking in at a hotel", "تسجيل الوصول في فندق"), g("A hotel reception in Lyon.", "مكتب استقبال فندق في ليون."),
+                g("Check in, show your passport and ask for the Wi-Fi password.", "سجّل وصولك وأظهر جواز سفرك واسأل عن كلمة مرور الواي فاي."),
+                "Bonsoir, bienvenue. Je peux vous aider ?", g("Good evening, welcome. Can I help you?", "مساء الخير، أهلًا بك. هل أساعدك؟"),
+                listOf(
+                    ScenarioBeat(listOf("réservation", "reservation", "nom", "chambre"), g("Say: 'J'ai une réservation au nom de…'", "قل: J'ai une réservation au nom de…"),
+                        "J'ai une réservation au nom de Hassan.", "Oui, une chambre double pour deux nuits. Votre passeport, s'il vous plaît ?", g("Yes, a double room for two nights. Your passport, please?", "نعم، غرفة مزدوجة لليلتين. جواز سفرك من فضلك؟")),
+                    ScenarioBeat(listOf("voici", "voilà", "voila", "passeport"), g("Hand it over: 'Voici mon passeport.'", "قدّمه: Voici mon passeport."),
+                        "Voici mon passeport.", "Merci. Le petit-déjeuner est servi de sept à dix heures.", g("Thank you. Breakfast is served from seven to ten.", "شكرًا. يُقدَّم الفطور من السابعة إلى العاشرة.")),
+                    ScenarioBeat(listOf("wifi", "mot de passe", "internet"), g("Ask for the Wi-Fi password.", "اسأل عن كلمة مرور الواي فاي."),
+                        "Quel est le mot de passe du wifi ?", "Il est sur votre carte. Bon séjour !", g("It's on your card. Enjoy your stay!", "إنها على بطاقتك. إقامة سعيدة!")),
+                ),
+                listOf("J'ai une réservation au nom de…", "Voici mon passeport.", "Le petit-déjeuner est compris ?"),
+            ),
+            RolePlayScenario(
+                "fr_s_restaurant", L, A2, g("Dinner at a restaurant", "العشاء في مطعم"), g("A bistro in Paris.", "مطعم صغير في باريس."),
+                g("Get a table, mention an allergy and order a main course.", "احصل على طاولة واذكر حساسيتك واطلب طبقًا رئيسيًا."),
+                "Bonjour ! Vous avez réservé ?", g("Hello! Have you booked?", "مرحبًا! هل حجزتم؟"),
+                listOf(
+                    ScenarioBeat(listOf("table", "deux", "non"), g("Say no and ask for a table for two.", "قل لا واطلب طاولة لشخصين."),
+                        "Non, vous avez une table pour deux ?", "Bien sûr. Voici la carte. Des allergies ?", g("Of course. Here's the menu. Any allergies?", "بالتأكيد. هذه القائمة. هل لديكم حساسية؟")),
+                    ScenarioBeat(listOf("allergique", "allergie", "non"), g("Mention an allergy: 'Je suis allergique aux fruits à coque.'", "اذكر حساسيتك: Je suis allergique aux fruits à coque."),
+                        "Je suis allergique aux fruits à coque.", "D'accord, je préviens le chef. Qu'est-ce que vous prenez ?", g("All right, I'll let the chef know. What will you have?", "حسنًا، سأُعلم الطاهي. ماذا تطلبون؟")),
+                    ScenarioBeat(listOf("prends", "voudrais", "plat", "poisson", "viande", "poulet"), g("Order: 'Comme plat, je voudrais le poisson.'", "اطلب: Comme plat, je voudrais le poisson."),
+                        "Comme plat, je voudrais le poisson, s'il vous plaît.", "Très bien, c'est noté.", g("Very good, noted.", "جيد جدًا، سُجّل الطلب.")),
+                ),
+                listOf("Une table pour deux, s'il vous plaît.", "Je suis allergique à…", "Je voudrais…", "L'addition, s'il vous plaît."),
+            ),
+            RolePlayScenario(
+                "fr_s_gare", L, A2, g("Buying a train ticket", "شراء تذكرة قطار"), g("The ticket office at the Gare de Lyon in Paris.", "شبّاك التذاكر في محطة ليون بباريس."),
+                g("Buy a return ticket and find out the platform.", "اشترِ تذكرة ذهاب وعودة واعرف رقم الرصيف."),
+                "Bonjour, je vous écoute.", g("Hello, how can I help?", "مرحبًا، تفضّل."),
+                listOf(
+                    ScenarioBeat(listOf("aller-retour", "aller", "billet", "lyon"), g("Ask for a return ticket to Lyon.", "اطلب تذكرة ذهاب وعودة إلى ليون."),
+                        "Un aller-retour pour Lyon, s'il vous plaît.", "Ça fait quarante euros. Le prochain train part à dix heures quinze.", g("That's forty euros. The next train leaves at ten fifteen.", "المبلغ أربعون يورو. يغادر القطار التالي في العاشرة والربع.")),
+                    ScenarioBeat(listOf("quai", "quel"), g("Ask which platform: 'Il part de quel quai ?'", "اسأل عن الرصيف: Il part de quel quai ?"),
+                        "Il part de quel quai ?", "Du quai trois. Il a environ dix minutes de retard.", g("From platform three. It's about ten minutes late.", "من الرصيف رقم ثلاثة. إنه متأخر نحو عشر دقائق.")),
+                    ScenarioBeat(listOf("merci"), g("Thank them.", "اشكره."),
+                        "Merci beaucoup.", "Je vous en prie. Bon voyage !", g("You're welcome. Have a good trip!", "عفوًا. رحلة سعيدة!")),
+                ),
+                listOf("Un aller-retour pour…", "Il part de quel quai ?", "Le train est à l'heure ?"),
             ),
         )
         fun item(id: String, level: CefrLevel, skill: Skill, prompt: String, options: List<String>, correct: Int) =

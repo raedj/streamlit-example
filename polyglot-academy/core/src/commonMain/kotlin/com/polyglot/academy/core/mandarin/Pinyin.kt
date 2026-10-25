@@ -58,7 +58,8 @@ object Pinyin {
      * tone-mark positions plus a greedy initial/final scan; adequate for curriculum words.
      */
     fun syllables(word: String): List<PinyinSyllable> {
-        val cleaned = word.replace("'", " ").replace("’", " ").replace("-", " ")
+        // Apostrophes and hyphens separate syllables; punctuation (?, !, …) is not part of any syllable.
+        val cleaned = word.map { if (it.isLetter()) it else ' ' }.joinToString("")
         return cleaned.split(' ').filter { it.isNotBlank() }.flatMap { splitWord(it) }.map { parseSyllable(it) }
     }
 

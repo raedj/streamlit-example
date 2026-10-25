@@ -141,3 +141,12 @@ class MiscCoreTest {
         assertEquals(LanguageCode.MANDARIN, LanguageCode.fromTag("ZH"))
     }
 }
+
+class PinyinPunctuationTest {
+    @kotlin.test.Test fun punctuationIsNotASyllable() {
+        kotlin.test.assertEquals(listOf("xi", "shou", "jian", "zai", "na", "li"),
+            com.polyglot.academy.core.mandarin.Pinyin.syllables("xǐshǒujiān zài nǎlǐ?").map { it.base })
+        kotlin.test.assertEquals(4, com.polyglot.academy.core.mandarin.Pinyin.syllables("wǒ duì … guòmǐn").size)
+        kotlin.test.assertEquals(2, com.polyglot.academy.core.mandarin.Pinyin.syllables("Xi'an").size)
+    }
+}

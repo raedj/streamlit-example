@@ -82,6 +82,11 @@ class LanguageCurriculum(
 }
 
 object Curriculum {
+    /** Topics of the everyday and travel lessons, shown together as a phrasebook. */
+    val phrasebookTopics = listOf("essentials", "emergency", "restaurant", "hotel", "transport", "sightseeing")
+
+    fun phrasebook(code: LanguageCode, topic: String) = of(code).vocabulary.filter { it.topic == topic && it.id.removePrefix(code.tag + "_").startsWith("ev_") }
+
     val all: Map<LanguageCode, LanguageCurriculum> by lazy {
         listOf(EnglishCurriculum.build(), MandarinCurriculum.build(), SpanishCurriculum.build(), FrenchCurriculum.build(), ArabicCurriculum.build())
             .associateBy { it.language }

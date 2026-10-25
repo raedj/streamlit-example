@@ -156,6 +156,55 @@ internal object MandarinCurriculum {
             v("fin_weiyue", "违约", "default; breach of contract", "تعثّر، إخلال بالعقد", NOUN, B2, "finance", "wéiyuē", trad = "違約", tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
             v("fin_fuzhaibiao", "资产负债表", "balance sheet", "الميزانية العمومية", NOUN, B2, "finance", "zīchǎn fùzhài biǎo", trad = "資產負債表", tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
             v("fin_liudongxing", "流动性", "liquidity", "السيولة", NOUN, B2, "finance", "liúdòngxìng", trad = "流動性", tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            // Daily life and travel
+            v("ev_qingwen", "请问", "excuse me, may I ask…", "عفوًا، هل لي أن أسأل…", PHRASE, A1, "essentials", "qǐngwèn", trad = "請問", ex = "请问，这个座位有人吗？", exEn = "Excuse me, is this seat taken?", exAr = "عفوًا، هل هذا المقعد محجوز؟")
+            v("ev_ting_bu_dong", "我听不懂", "I don't understand (what I hear)", "لا أفهم (ما أسمعه)", PHRASE, A1, "essentials", "wǒ tīng bu dǒng", trad = "我聽不懂")
+            v("ev_man_yidian", "请说慢一点", "please speak more slowly", "تكلّم ببطء أكثر من فضلك", PHRASE, A1, "essentials", "qǐng shuō màn yìdiǎn", trad = "請說慢一點")
+            v("ev_zai_shuo", "请再说一遍", "please say it again", "أعد من فضلك", PHRASE, A1, "essentials", "qǐng zài shuō yí biàn", trad = "請再說一遍")
+            v("ev_xishoujian", "洗手间在哪里？", "Where is the toilet?", "أين دورة المياه؟", PHRASE, A1, "essentials", "xǐshǒujiān zài nǎlǐ?", trad = "洗手間在哪裡？")
+            v("ev_bang_wo", "你能帮我吗？", "Can you help me?", "هل يمكنك مساعدتي؟", PHRASE, A1, "essentials", "nǐ néng bāng wǒ ma?", trad = "你能幫我嗎？")
+            v("ev_bu_zhidao", "我不知道", "I don't know", "لا أعرف", PHRASE, A1, "essentials", "wǒ bù zhīdào")
+            v("ev_mei_guanxi", "没关系", "it doesn't matter; that's OK", "لا بأس", PHRASE, A1, "essentials", "méi guānxi", trad = "沒關係")
+            v("ev_jiuming", "救命！", "Help!", "النجدة!", PHRASE, A1, "emergency", "jiùmìng!")
+            v("ev_jingcha", "警察", "police", "الشرطة", NOUN, A1, "emergency", "jǐngchá")
+            v("ev_jiuhuche", "叫救护车！", "Call an ambulance!", "اتصل بالإسعاف!", PHRASE, A2, "emergency", "jiào jiùhùchē!", trad = "叫救護車！", ex = "快叫救护车！", exEn = "Call an ambulance, quickly!", exAr = "اتصل بالإسعاف بسرعة!")
+            v("ev_huzhao", "我的护照丢了", "I've lost my passport", "أضعتُ جواز سفري", PHRASE, A2, "emergency", "wǒ de hùzhào diū le", trad = "我的護照丟了")
+            v("ev_bei_tou", "我的包被偷了", "My bag has been stolen", "سُرقت حقيبتي", PHRASE, A2, "emergency", "wǒ de bāo bèi tōu le")
+            v("ev_dashiguan", "大使馆", "embassy", "السفارة", NOUN, A2, "emergency", "dàshǐguǎn", trad = "大使館")
+            v("ev_yiyuan", "医院", "hospital", "المستشفى", NOUN, A1, "emergency", "yīyuàn", trad = "醫院")
+            v("ev_jizhen", "急诊", "emergency room", "قسم الطوارئ", NOUN, A2, "emergency", "jízhěn", trad = "急診")
+            v("ev_liang_wei", "两位", "two people (for a table)", "شخصان (عند طلب طاولة)", PHRASE, A1, "restaurant", "liǎng wèi", trad = "兩位", ex = "你好，两位。", exEn = "Hello, a table for two.", exAr = "مرحبًا، لشخصين.")
+            v("ev_tuijian", "你推荐什么？", "What do you recommend?", "بماذا تنصح؟", PHRASE, A2, "restaurant", "nǐ tuījiàn shénme?", trad = "你推薦什麼？")
+            v("ev_guomin", "我对…过敏", "I'm allergic to…", "عندي حساسية من…", PHRASE, A2, "restaurant", "wǒ duì … guòmǐn", trad = "我對…過敏")
+            v("ev_sushi", "素食", "vegetarian food", "طعام نباتي", NOUN, A2, "restaurant", "sùshí")
+            v("ev_caidan", "菜单", "menu", "قائمة الطعام", NOUN, A1, "restaurant", "càidān", trad = "菜單")
+            v("ev_bu_yao_la", "不要辣", "not spicy, please", "بلا توابل حارة", PHRASE, A2, "restaurant", "bú yào là")
+            v("ev_maidan", "买单", "the bill, please", "الحساب من فضلك", PHRASE, A1, "restaurant", "mǎidān", trad = "買單")
+            v("ev_kuaizi", "筷子", "chopsticks", "عيدان الأكل", NOUN, A1, "restaurant", "kuàizi")
+            v("ev_yuding", "预订", "reservation; to book", "حجز؛ يحجز", VERB, A2, "hotel", "yùdìng", trad = "預訂", ex = "我预订了一个房间。", exEn = "I booked a room.", exAr = "حجزتُ غرفة.")
+            v("ev_danrenjian", "单人间", "single room", "غرفة لشخص واحد", NOUN, A2, "hotel", "dānrénjiān", trad = "單人間")
+            v("ev_shuangrenjian", "双人间", "double room", "غرفة مزدوجة", NOUN, A2, "hotel", "shuāngrénjiān", trad = "雙人間")
+            v("ev_fangka", "房卡", "room key card", "بطاقة الغرفة", NOUN, A2, "hotel", "fángkǎ")
+            v("ev_zaocan", "含早餐吗？", "Is breakfast included?", "هل الفطور مشمول؟", PHRASE, A2, "hotel", "hán zǎocān ma?", trad = "含早餐嗎？")
+            v("ev_wifi_mima", "无线网密码是多少？", "What's the Wi-Fi password?", "ما كلمة مرور الواي فاي؟", PHRASE, A2, "hotel", "wúxiànwǎng mìmǎ shì duōshao?", trad = "無線網密碼是多少？")
+            v("ev_qiantai", "前台", "reception", "الاستقبال", NOUN, A2, "hotel", "qiántái", trad = "前檯")
+            v("ev_tuifang", "退房", "to check out", "يغادر الفندق", VERB, A2, "hotel", "tuìfáng")
+            v("ev_zhantai", "站台", "platform", "الرصيف", NOUN, A2, "transport", "zhàntái", trad = "站檯", ex = "火车从四号站台出发。", exEn = "The train leaves from platform four.", exAr = "يغادر القطار من الرصيف رقم أربعة.")
+            v("ev_wangfanpiao", "往返票", "return ticket", "تذكرة ذهاب وعودة", NOUN, A2, "transport", "wǎngfǎn piào")
+            v("ev_danchengpiao", "单程票", "single (one-way) ticket", "تذكرة ذهاب فقط", NOUN, A2, "transport", "dānchéng piào", trad = "單程票")
+            v("ev_chufa", "出发", "to depart; departure", "يغادر؛ المغادرة", VERB, A2, "transport", "chūfā", trad = "出發")
+            v("ev_wandian", "晚点", "delayed", "متأخر", ADJECTIVE, A2, "transport", "wǎndiǎn", trad = "晚點")
+            v("ev_dengjipai", "登机牌", "boarding pass", "بطاقة الصعود إلى الطائرة", NOUN, A2, "transport", "dēngjīpái", trad = "登機牌")
+            v("ev_xingli", "行李", "luggage", "الأمتعة", NOUN, A2, "transport", "xíngli")
+            v("ev_jichang", "机场", "airport", "المطار", NOUN, A1, "transport", "jīchǎng", trad = "機場")
+            v("ev_bowuguan", "博物馆", "museum", "المتحف", NOUN, A1, "sightseeing", "bówùguǎn", trad = "博物館", ex = "博物馆几点开门？", exEn = "What time does the museum open?", exAr = "متى يفتح المتحف؟")
+            v("ev_kaifang_shijian", "开放时间", "opening hours", "مواعيد العمل", NOUN, A2, "sightseeing", "kāifàng shíjiān", trad = "開放時間")
+            v("ev_menpiao", "门票", "entrance ticket", "تذكرة الدخول", NOUN, A2, "sightseeing", "ménpiào", trad = "門票")
+            v("ev_daoyou", "导游", "tour guide", "المرشد السياحي", NOUN, A2, "sightseeing", "dǎoyóu", trad = "導遊")
+            v("ev_ditu", "地图", "map", "الخريطة", NOUN, A1, "sightseeing", "dìtú", trad = "地圖")
+            v("ev_paizhao", "可以帮我们拍张照吗？", "Could you take a photo of us?", "هل يمكنك أن تلتقط لنا صورة؟", PHRASE, A2, "sightseeing", "kěyǐ bāng wǒmen pāi zhāng zhào ma?", trad = "可以幫我們拍張照嗎？")
+            v("ev_gucheng", "古城", "old town", "المدينة القديمة", NOUN, A2, "sightseeing", "gǔchéng")
+            v("ev_jinianpin", "纪念品", "souvenir", "تذكار", NOUN, A2, "sightseeing", "jìniànpǐn", trad = "紀念品")
         }
         val vocabulary = vb.items
         val f = LessonFactory(L, vocabulary)
@@ -252,6 +301,42 @@ internal object MandarinCurriculum {
                     choice("fi2", L, "利率 means…", listOf("interest rate", "exchange rate", "tax rate"), 0, Skill.VOCABULARY),
                     order("fi3", L, listOf("我们", "每个月", "还款"), g("We make a repayment every month.", "نسدّد كل شهر."), separator = ""),
                 )),
+            f.lesson("ev_essentials", A1, "survival", g("Most useful phrases", "العبارات الأكثر استخدامًا"), g("Phrases you will use every day and when travelling.", "عبارات تستخدمها كل يوم وفي السفر."),
+                Skill.SPEAKING, listOf("ev_qingwen", "ev_ting_bu_dong", "ev_man_yidian", "ev_zai_shuo", "ev_xishoujian", "ev_bang_wo", "ev_bu_zhidao", "ev_mei_guanxi"),
+                extra = listOf(
+                    fill("ev1", L, "请说___一点。", listOf("慢")),
+                    choice("ev2", L, "Someone says 谢谢. A natural reply:", listOf("不客气", "我不知道", "请问"), 0, Skill.FUNCTIONAL),
+                )),
+            f.lesson("ev_emergency", A2, "survival", g("Emergencies and help", "الطوارئ وطلب المساعدة"), g("Ask for help, report a loss and find the police or a hospital.", "اطلب المساعدة وأبلغ عن فقدان شيء واعثر على الشرطة أو المستشفى."),
+                Skill.SPEAKING, listOf("ev_jiuming", "ev_jingcha", "ev_jiuhuche", "ev_huzhao", "ev_bei_tou", "ev_dashiguan", "ev_yiyuan", "ev_jizhen"),
+                extra = listOf(
+                    fill("ev3", L, "快叫___车！", listOf("救护")),
+                    choice("ev4", L, "I've lost my passport:", listOf("我的护照丢了", "我的护照很好", "我买了护照"), 0, Skill.FUNCTIONAL),
+                )),
+            f.lesson("ev_restaurant", A2, "tourism", g("At the restaurant", "في المطعم"), g("Ask for a table, order a meal, mention allergies and pay.", "اطلب طاولة واطلب وجبة واذكر الحساسية وادفع."),
+                Skill.SPEAKING, listOf("ev_liang_wei", "ev_tuijian", "ev_guomin", "ev_sushi", "ev_caidan", "ev_bu_yao_la", "ev_maidan", "ev_kuaizi"),
+                extra = listOf(
+                    choice("ev5", L, "To ask for the bill you say…", listOf("买单", "菜单", "两位"), 0, Skill.FUNCTIONAL),
+                    order("ev6", L, listOf("你", "推荐", "什么"), g("What do you recommend?", "بماذا تنصح؟"), separator = ""),
+                )),
+            f.lesson("ev_hotel", A2, "tourism", g("At the hotel", "في الفندق"), g("Check in, ask about breakfast and Wi-Fi, check out.", "سجّل وصولك واسأل عن الفطور والواي فاي وسجّل المغادرة."),
+                Skill.LISTENING, listOf("ev_yuding", "ev_danrenjian", "ev_shuangrenjian", "ev_fangka", "ev_zaocan", "ev_wifi_mima", "ev_qiantai", "ev_tuifang"),
+                extra = listOf(
+                    fill("ev7", L, "含___吗？", listOf("早餐")),
+                    dictation("ev8", L, "我预订了一个房间", listOf("我预订了一个房间。")),
+                )),
+            f.lesson("ev_transport", A2, "tourism", g("Trains, buses and flights", "القطارات والحافلات والطائرات"), g("Buy tickets, find your platform and handle delays.", "اشترِ التذاكر واعثر على رصيفك وتعامل مع التأخير."),
+                Skill.LISTENING, listOf("ev_zhantai", "ev_wangfanpiao", "ev_danchengpiao", "ev_chufa", "ev_wandian", "ev_dengjipai", "ev_xingli", "ev_jichang"),
+                extra = listOf(
+                    choice("ev9", L, "往返票 is…", listOf("a return ticket", "a single ticket", "a boarding pass"), 0, Skill.VOCABULARY),
+                    dictation("ev10", L, "火车晚点了", listOf("火车晚点了。")),
+                )),
+            f.lesson("ev_sightseeing", A2, "tourism", g("Sightseeing", "السياحة والمعالم"), g("Museums, tickets, tours and photos.", "المتاحف والتذاكر والجولات والصور."),
+                Skill.READING, listOf("ev_bowuguan", "ev_kaifang_shijian", "ev_menpiao", "ev_daoyou", "ev_ditu", "ev_paizhao", "ev_gucheng", "ev_jinianpin"),
+                extra = listOf(
+                    fill("ev11", L, "博物馆几点___门？", listOf("开")),
+                    choice("ev12", L, "门票 means…", listOf("entrance ticket", "tour guide", "souvenir"), 0, Skill.VOCABULARY),
+                )),
         )
 
         val grammar = listOf(
@@ -318,6 +403,8 @@ internal object MandarinCurriculum {
             CourseUnit("zh_u_pro_business", L, B1, g("Chinese for work", "الصينية للعمل"), g("Meetings and formal emails", "الاجتماعات والرسائل الرسمية"), listOf("zh_l_work"), trackId = "business"),
             CourseUnit("zh_u_next", L, B1, g("Next steps", "الخطوة التالية"), g("Completed actions and comparisons", "الأفعال المكتملة والمقارنة"), listOf("zh_l_completed", "zh_l_compare")),
             CourseUnit("zh_u_pro_finance", L, B1, g("Banking and finance", "البنوك والتمويل"), g("Core banking vocabulary", "مفردات البنوك الأساسية"), listOf("zh_l_finance"), trackId = "finance"),
+            CourseUnit("zh_u_survival", L, A1, g("Essential phrases", "العبارات الأساسية"), g("Everyday phrases and emergencies", "العبارات اليومية والطوارئ"), listOf("zh_l_ev_essentials", "zh_l_ev_emergency")),
+            CourseUnit("zh_u_tourism", L, A2, g("Travel and tourism", "السفر والسياحة"), g("Restaurants, hotels, transport and sightseeing", "المطاعم والفنادق والمواصلات والمعالم"), listOf("zh_l_ev_restaurant", "zh_l_ev_hotel", "zh_l_ev_transport", "zh_l_ev_sightseeing")),
         )
 
         val readings = listOf(
@@ -383,6 +470,48 @@ internal object MandarinCurriculum {
                 ),
                 listOf("预算是…", "…以后能完成", "我给您发邮件", "请看附件"),
                 trackId = "business",
+            ),
+            RolePlayScenario(
+                "zh_s_hotel", L, A2, g("Checking in at a hotel", "تسجيل الوصول في فندق"), g("A hotel reception in Hangzhou.", "مكتب استقبال فندق في هانغتشو."),
+                g("Check in, show your passport and ask for the Wi-Fi password.", "سجّل وصولك وأظهر جواز سفرك واسأل عن كلمة مرور الواي فاي."),
+                "晚上好！欢迎光临。(Wǎnshang hǎo! Huānyíng guānglín.)", g("Good evening! Welcome.", "مساء الخير! أهلًا بك."),
+                listOf(
+                    ScenarioBeat(listOf("预订", "订", "房间", "名字", "叫"), g("Say: 我预订了一个房间，我叫… (Wǒ yùdìng le yí ge fángjiān, wǒ jiào…)", "قل: 我预订了一个房间，我叫…"),
+                        "我预订了一个房间，我叫哈桑。", "好的，双人间，住两晚。请给我您的护照。(Hǎo de, shuāngrénjiān, zhù liǎng wǎn. Qǐng gěi wǒ nín de hùzhào.)", g("OK, a double room for two nights. Your passport, please.", "حسنًا، غرفة مزدوجة لليلتين. جواز سفرك من فضلك.")),
+                    ScenarioBeat(listOf("给", "好", "护照"), g("Hand it over: 给您。(Gěi nín.)", "قدّمه: 给您。"),
+                        "给您。", "谢谢。早餐七点到十点。(Xièxie. Zǎocān qī diǎn dào shí diǎn.)", g("Thank you. Breakfast is from seven to ten.", "شكرًا. الفطور من السابعة إلى العاشرة.")),
+                    ScenarioBeat(listOf("无线网", "密码", "wifi", "WiFi"), g("Ask for the Wi-Fi password: 无线网密码是多少？", "اسأل عن كلمة مرور الواي فاي: 无线网密码是多少？"),
+                        "无线网密码是多少？", "在房卡上。祝您入住愉快！(Zài fángkǎ shang. Zhù nín rùzhù yúkuài!)", g("It's on the room card. Enjoy your stay!", "إنها على بطاقة الغرفة. إقامة سعيدة!")),
+                ),
+                listOf("我预订了…", "给您。", "含早餐吗？", "无线网密码是多少？"),
+            ),
+            RolePlayScenario(
+                "zh_s_restaurant", L, A2, g("Dinner at a restaurant", "العشاء في مطعم"), g("A restaurant in Chengdu.", "مطعم في تشنغدو."),
+                g("Get a table, ask for a recommendation and order a dish that is not spicy.", "احصل على طاولة واطلب اقتراحًا واطلب طبقًا غير حار."),
+                "你好！几位？(Nǐ hǎo! Jǐ wèi?)", g("Hello! How many people?", "مرحبًا! كم شخصًا؟"),
+                listOf(
+                    ScenarioBeat(listOf("两位", "两", "一位", "三位", "位"), g("Say how many: 两位。(Liǎng wèi.)", "قل العدد: 两位。"),
+                        "两位。", "这边请。这是菜单。(Zhè biān qǐng. Zhè shì càidān.)", g("This way, please. Here is the menu.", "من هنا من فضلك. هذه القائمة.")),
+                    ScenarioBeat(listOf("推荐", "什么"), g("Ask: 你推荐什么？(Nǐ tuījiàn shénme?)", "اسأل: 你推荐什么？"),
+                        "你推荐什么？", "宫保鸡丁很好吃，有一点辣。(Gōngbǎo jīdīng hěn hǎochī, yǒu yìdiǎn là.)", g("The kung pao chicken is delicious; it's a little spicy.", "دجاج الكونغ باو لذيذ، وهو حار قليلًا.")),
+                    ScenarioBeat(listOf("不要辣", "不辣", "辣", "好", "要"), g("Order it but not spicy: 好，但是不要辣。", "اطلبه دون حرارة: 好，但是不要辣。"),
+                        "好，但是不要辣。", "没问题。(Méi wèntí.)", g("No problem.", "لا مشكلة.")),
+                ),
+                listOf("两位", "你推荐什么？", "不要辣", "买单"),
+            ),
+            RolePlayScenario(
+                "zh_s_station", L, A2, g("Buying a train ticket", "شراء تذكرة قطار"), g("A ticket window at Beijing South station.", "شبّاك تذاكر في محطة بكين الجنوبية."),
+                g("Buy a return ticket and find out the platform.", "اشترِ تذكرة ذهاب وعودة واعرف رقم الرصيف."),
+                "你好，去哪儿？(Nǐ hǎo, qù nǎr?)", g("Hello, where are you going?", "مرحبًا، إلى أين؟"),
+                listOf(
+                    ScenarioBeat(listOf("去", "上海", "票", "往返"), g("Ask for a return ticket to Shanghai: 我要一张去上海的往返票。", "اطلب تذكرة ذهاب وعودة إلى شنغهاي: 我要一张去上海的往返票。"),
+                        "我要一张去上海的往返票。", "好的，一千一百块。火车十点十五分出发。(Hǎo de, yìqiān yìbǎi kuài. Huǒchē shí diǎn shíwǔ fēn chūfā.)", g("OK, that's 1,100 yuan. The train leaves at 10:15.", "حسنًا، المبلغ ألف ومئة يوان. يغادر القطار في العاشرة والربع.")),
+                    ScenarioBeat(listOf("站台", "几号", "哪个"), g("Ask which platform: 在几号站台？", "اسأل عن الرصيف: 在几号站台？"),
+                        "在几号站台？", "三号站台。火车晚点十分钟。(Sān hào zhàntái. Huǒchē wǎndiǎn shí fēnzhōng.)", g("Platform three. The train is ten minutes late.", "الرصيف رقم ثلاثة. القطار متأخر عشر دقائق.")),
+                    ScenarioBeat(listOf("谢谢"), g("Thank them: 谢谢！", "اشكره: 谢谢！"),
+                        "谢谢！", "不客气，一路平安！(Bú kèqi, yílù píng'ān!)", g("You're welcome, have a safe trip!", "عفوًا، رحلة آمنة!")),
+                ),
+                listOf("我要一张去…的往返票", "在几号站台？", "晚点了吗？"),
             ),
         )
 

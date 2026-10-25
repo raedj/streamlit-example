@@ -138,6 +138,55 @@ internal object ArabicCurriculum {
             v("fin_taathur", "تعثّر عن السداد", "default (failure to repay)", "العجز عن دفع الدين", PHRASE, B2, "finance", translit = "taʿaththur ʿan as-sadād", tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
             v("fin_mizaniyya_umumiyya", "الميزانية العمومية", "balance sheet", "قائمة الأصول والخصوم", NOUN, B2, "finance", translit = "al-mīzāniyya al-ʿumūmiyya", gender = FEMININE, tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
             v("fin_suyula", "السيولة", "liquidity", "توفر النقد", NOUN, B2, "finance", translit = "as-suyūla", gender = FEMININE, tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            // Daily life and travel
+            v("ev_law_samaht", "لو سمحت", "excuse me / please (to get attention)", "عبارة لطلب الانتباه بأدب", PHRASE, A1, "essentials", translit = "law samaḥt", ex = "لو سمحت، هل هذا المقعد شاغر؟", exEn = "Excuse me, is this seat free?", exAr = "لو سمحت، هل هذا المقعد شاغر؟")
+            v("ev_la_afham", "لا أفهم", "I don't understand", "عبارة عند عدم الفهم", PHRASE, A1, "essentials", translit = "lā afham")
+            v("ev_bibut", "تكلّم ببطء من فضلك", "speak slowly, please", "طلب الإبطاء في الكلام", PHRASE, A1, "essentials", translit = "takallam bi-buṭʾ min faḍlik")
+            v("ev_karrir", "هل يمكنك أن تكرّر؟", "Could you repeat that?", "طلب الإعادة", PHRASE, A1, "essentials", translit = "hal yumkinuka an tukarrir?")
+            v("ev_dawrat_miyah", "أين دورة المياه؟", "Where is the toilet?", "سؤال عن مكان الحمّام", PHRASE, A1, "essentials", translit = "ayna dawrat al-miyāh?")
+            v("ev_musaada", "هل يمكنك مساعدتي؟", "Can you help me?", "طلب المساعدة", PHRASE, A1, "essentials", translit = "hal yumkinuka musāʿadatī?")
+            v("ev_la_aarif", "لا أعرف", "I don't know", "عبارة عند عدم المعرفة", PHRASE, A1, "essentials", translit = "lā aʿrif")
+            v("ev_la_mushkila", "لا مشكلة", "no problem", "عبارة تعني لا بأس", PHRASE, A1, "essentials", translit = "lā mushkila")
+            v("ev_najda", "النجدة!", "Help!", "صيحة طلب العون", PHRASE, A1, "emergency", translit = "an-najda!")
+            v("ev_shurta", "الشرطة", "the police", "جهاز حفظ الأمن", NOUN, A1, "emergency", translit = "ash-shurṭa")
+            v("ev_isaaf", "اتصل بالإسعاف!", "Call an ambulance!", "طلب سيارة الإسعاف", PHRASE, A2, "emergency", translit = "ittaṣil bil-isʿāf!", ex = "اتصل بالإسعاف من فضلك!", exEn = "Call an ambulance, please!", exAr = "اتصل بالإسعاف من فضلك!")
+            v("ev_jawaz", "أضعتُ جواز سفري", "I've lost my passport", "الإبلاغ عن فقد الجواز", PHRASE, A2, "emergency", translit = "aḍaʿtu jawāza safarī")
+            v("ev_suriqa", "سُرقت حقيبتي", "My bag has been stolen", "الإبلاغ عن سرقة", PHRASE, A2, "emergency", translit = "suriqat ḥaqībatī")
+            v("ev_sifara", "السفارة", "the embassy", "مكتب الدولة في الخارج", NOUN, A2, "emergency", translit = "as-sifāra")
+            v("ev_mustashfa", "المستشفى", "the hospital", "مكان علاج المرضى", NOUN, A1, "emergency", translit = "al-mustashfā")
+            v("ev_raqm_tawari", "رقم الطوارئ", "emergency number", "رقم الاتصال عند الخطر", NOUN, A2, "emergency", translit = "raqm aṭ-ṭawāriʾ")
+            v("ev_tawila", "طاولة لشخصين من فضلك", "a table for two, please", "طلب طاولة", PHRASE, A1, "restaurant", translit = "ṭāwila li-shakhṣayn min faḍlik", ex = "مساء الخير، طاولة لشخصين من فضلك.", exEn = "Good evening, a table for two, please.", exAr = "مساء الخير، طاولة لشخصين من فضلك.")
+            v("ev_tansah", "بماذا تنصحني؟", "What do you recommend?", "طلب اقتراح", PHRASE, A2, "restaurant", translit = "bi-mādhā tanṣaḥunī?")
+            v("ev_hassasiyya", "عندي حساسية من…", "I'm allergic to…", "الإخبار بحساسية من طعام", PHRASE, A2, "restaurant", translit = "ʿindī ḥassāsiyya min…")
+            v("ev_nabati", "نباتي", "vegetarian", "لا يأكل اللحم", ADJECTIVE, A2, "restaurant", translit = "nabātī")
+            v("ev_qaimat_taam", "قائمة الطعام", "the menu", "قائمة الأطباق", NOUN, A1, "restaurant", translit = "qāʾimat aṭ-ṭaʿām")
+            v("ev_tabaq_raisi", "الطبق الرئيسي", "main course", "الطبق الأساسي في الوجبة", NOUN, A2, "restaurant", translit = "aṭ-ṭabaq ar-raʾīsī")
+            v("ev_halwa", "الحلوى", "dessert", "طعام حلو بعد الوجبة", NOUN, A1, "restaurant", translit = "al-ḥalwā")
+            v("ev_hisab", "الحساب من فضلك", "the bill, please", "طلب الفاتورة", PHRASE, A1, "restaurant", translit = "al-ḥisāb min faḍlik")
+            v("ev_hajz", "حجز", "reservation", "ترتيب مسبق لغرفة أو طاولة", NOUN, A2, "hotel", translit = "ḥajz", ex = "عندي حجز باسم حسن.", exEn = "I have a reservation under the name Hassan.", exAr = "عندي حجز باسم حسن.")
+            v("ev_ghurfa_fardiyya", "غرفة لشخص واحد", "single room", "غرفة لفرد", NOUN, A2, "hotel", translit = "ghurfa li-shakhṣ wāḥid")
+            v("ev_ghurfa_muzdawaja", "غرفة مزدوجة", "double room", "غرفة لشخصين", NOUN, A2, "hotel", translit = "ghurfa muzdawaja")
+            v("ev_miftah", "مفتاح", "key", "أداة فتح الباب", NOUN, A1, "hotel", translit = "miftāḥ")
+            v("ev_futur", "هل الفطور مشمول؟", "Is breakfast included?", "سؤال عن الفطور في السعر", PHRASE, A2, "hotel", translit = "hal al-fuṭūr mashmūl?")
+            v("ev_kalimat_murur", "ما كلمة مرور الواي فاي؟", "What's the Wi-Fi password?", "سؤال عن الاتصال بالإنترنت", PHRASE, A2, "hotel", translit = "mā kalimat murūr al-wāy fāy?")
+            v("ev_istiqbal", "الاستقبال", "reception", "مكتب استقبال النزلاء", NOUN, A2, "hotel", translit = "al-istiqbāl")
+            v("ev_mughadara", "موعد المغادرة", "check-out time", "وقت ترك الفندق", NOUN, A2, "hotel", translit = "mawʿid al-mughādara")
+            v("ev_rasif", "الرصيف", "the platform", "مكان ركوب القطار", NOUN, A2, "transport", translit = "ar-raṣīf", ex = "يغادر القطار من الرصيف رقم أربعة.", exEn = "The train leaves from platform four.", exAr = "يغادر القطار من الرصيف رقم أربعة.")
+            v("ev_dhahab_awda", "تذكرة ذهاب وعودة", "a return ticket", "تذكرة للاتجاهين", NOUN, A2, "transport", translit = "tadhkarat dhahāb wa-ʿawda")
+            v("ev_dhahab_faqat", "تذكرة ذهاب فقط", "a single (one-way) ticket", "تذكرة لاتجاه واحد", NOUN, A2, "transport", translit = "tadhkarat dhahāb faqaṭ")
+            v("ev_qitar", "القطار", "the train", "وسيلة نقل على سكة", NOUN, A1, "transport", translit = "al-qiṭār")
+            v("ev_taakhir", "تأخير", "delay", "وصول بعد الموعد", NOUN, A2, "transport", translit = "taʾkhīr")
+            v("ev_bitaqat_suud", "بطاقة الصعود إلى الطائرة", "boarding pass", "بطاقة ركوب الطائرة", NOUN, A2, "transport", translit = "biṭāqat aṣ-ṣuʿūd ilā ṭ-ṭāʾira")
+            v("ev_amtia", "الأمتعة", "luggage", "حقائب السفر", NOUN, A2, "transport", translit = "al-amtiʿa")
+            v("ev_mataar", "المطار", "the airport", "مكان هبوط الطائرات وإقلاعها", NOUN, A1, "transport", translit = "al-maṭār")
+            v("ev_mathaf", "المتحف", "the museum", "مكان عرض الآثار والفنون", NOUN, A1, "sightseeing", translit = "al-matḥaf", ex = "متى يفتح المتحف؟", exEn = "What time does the museum open?", exAr = "متى يفتح المتحف؟")
+            v("ev_mawaid_amal", "مواعيد العمل", "opening hours", "أوقات الفتح", NOUN, A2, "sightseeing", translit = "mawāʿīd al-ʿamal")
+            v("ev_rasm_dukhul", "رسم الدخول", "entrance fee", "ثمن الدخول", NOUN, A2, "sightseeing", translit = "rasm ad-dukhūl")
+            v("ev_jawla", "جولة سياحية", "sightseeing tour", "زيارة لأماكن سياحية", NOUN, A2, "sightseeing", translit = "jawla siyāḥiyya")
+            v("ev_kharita", "خريطة", "map", "رسم يبيّن الطرق والأماكن", NOUN, A1, "sightseeing", translit = "kharīṭa")
+            v("ev_sura", "هل يمكنك أن تلتقط لنا صورة؟", "Could you take a photo of us?", "طلب التصوير", PHRASE, A2, "sightseeing", translit = "hal yumkinuka an taltaqiṭa lanā ṣūra?")
+            v("ev_madina_qadima", "المدينة القديمة", "the old town", "الحيّ التاريخي", NOUN, A2, "sightseeing", translit = "al-madīna al-qadīma")
+            v("ev_tidhkar", "تذكار", "souvenir", "شيء يُشترى للذكرى", NOUN, A2, "sightseeing", translit = "tidhkār")
         }
         val vocabulary = vb.items
         val f = LessonFactory(L, vocabulary)
@@ -247,6 +296,42 @@ internal object ArabicCurriculum {
                     order("fi2", L, listOf("دفعتُ", "القسط", "الشهري"), g("I paid the monthly instalment.", "دفعتُ القسط الشهري.")),
                     choice("fi3", L, "Interest rate:", listOf("سعر الفائدة", "سعر الصرف", "سعر السوق"), 0, Skill.VOCABULARY),
                 )),
+            f.lesson("ev_essentials", A1, "survival", g("Most useful phrases", "العبارات الأكثر استخدامًا"), g("Phrases you will use every day and when travelling.", "عبارات تستخدمها كل يوم وفي السفر."),
+                Skill.SPEAKING, listOf("ev_law_samaht", "ev_la_afham", "ev_bibut", "ev_karrir", "ev_dawrat_miyah", "ev_musaada", "ev_la_aarif", "ev_la_mushkila"),
+                extra = listOf(
+                    choice("ev1", L, "You don't understand. You say…", listOf("لا أفهم", "لا مشكلة", "إلى اللقاء"), 0, Skill.FUNCTIONAL),
+                    order("ev2", L, listOf("تكلّم", "ببطء", "من", "فضلك"), g("Speak slowly, please.", "تكلّم ببطء من فضلك.")),
+                )),
+            f.lesson("ev_emergency", A2, "survival", g("Emergencies and help", "الطوارئ وطلب المساعدة"), g("Ask for help, report a loss and find the police or a hospital.", "اطلب المساعدة وأبلغ عن فقدان شيء واعثر على الشرطة أو المستشفى."),
+                Skill.SPEAKING, listOf("ev_najda", "ev_shurta", "ev_isaaf", "ev_jawaz", "ev_suriqa", "ev_sifara", "ev_mustashfa", "ev_raqm_tawari"),
+                extra = listOf(
+                    choice("ev3", L, "Call an ambulance!", listOf("اتصل بالإسعاف!", "اتصل بالفندق!", "اتصل بالمطعم!"), 0),
+                    order("ev4", L, listOf("أضعتُ", "جواز", "سفري"), g("I've lost my passport.", "أضعتُ جواز سفري.")),
+                )),
+            f.lesson("ev_restaurant", A2, "tourism", g("At the restaurant", "في المطعم"), g("Ask for a table, order a meal, mention allergies and pay.", "اطلب طاولة واطلب وجبة واذكر الحساسية وادفع."),
+                Skill.SPEAKING, listOf("ev_tawila", "ev_tansah", "ev_hassasiyya", "ev_nabati", "ev_qaimat_taam", "ev_tabaq_raisi", "ev_halwa", "ev_hisab"),
+                extra = listOf(
+                    order("ev5", L, listOf("طاولة", "لشخصين", "من", "فضلك"), g("A table for two, please.", "طاولة لشخصين من فضلك.")),
+                    choice("ev6", L, "The bill, please:", listOf("الحساب من فضلك", "القائمة من فضلك", "الماء من فضلك"), 0),
+                )),
+            f.lesson("ev_hotel", A2, "tourism", g("At the hotel", "في الفندق"), g("Check in, ask about breakfast and Wi-Fi, check out.", "سجّل وصولك واسأل عن الفطور والواي فاي وسجّل المغادرة."),
+                Skill.LISTENING, listOf("ev_hajz", "ev_ghurfa_fardiyya", "ev_ghurfa_muzdawaja", "ev_miftah", "ev_futur", "ev_kalimat_murur", "ev_istiqbal", "ev_mughadara"),
+                extra = listOf(
+                    choice("ev7", L, "Is breakfast included?", listOf("هل الفطور مشمول؟", "هل الغرفة كبيرة؟", "أين المفتاح؟"), 0),
+                    dictation("ev8", L, "عندي حجز باسم حسن", listOf("عندي حجز باسم حسن.")),
+                )),
+            f.lesson("ev_transport", A2, "tourism", g("Trains, buses and flights", "القطارات والحافلات والطائرات"), g("Buy tickets, find your platform and handle delays.", "اشترِ التذاكر واعثر على رصيفك وتعامل مع التأخير."),
+                Skill.LISTENING, listOf("ev_rasif", "ev_dhahab_awda", "ev_dhahab_faqat", "ev_qitar", "ev_taakhir", "ev_bitaqat_suud", "ev_amtia", "ev_mataar"),
+                extra = listOf(
+                    choice("ev9", L, "A return ticket:", listOf("تذكرة ذهاب وعودة", "تذكرة ذهاب فقط", "بطاقة الصعود إلى الطائرة"), 0, Skill.VOCABULARY),
+                    dictation("ev10", L, "القطار متأخر", listOf("القطار متأخر.")),
+                )),
+            f.lesson("ev_sightseeing", A2, "tourism", g("Sightseeing", "السياحة والمعالم"), g("Museums, tickets, tours and photos.", "المتاحف والتذاكر والجولات والصور."),
+                Skill.READING, listOf("ev_mathaf", "ev_mawaid_amal", "ev_rasm_dukhul", "ev_jawla", "ev_kharita", "ev_sura", "ev_madina_qadima", "ev_tidhkar"),
+                extra = listOf(
+                    choice("ev11", L, "What time does the museum open? ___ يفتح المتحف؟", listOf("متى", "أين", "كم"), 0),
+                    choice("ev12", L, "Entrance fee:", listOf("رسم الدخول", "مواعيد العمل", "المدينة القديمة"), 0, Skill.VOCABULARY),
+                )),
         )
         val units = listOf(
             CourseUnit("ar_u_basics", L, PRE_A1, g("First steps", "الخطوات الأولى"), g("Greetings and pronouns", "التحيات والضمائر"), listOf("ar_l_greetings", "ar_l_people")),
@@ -256,6 +341,8 @@ internal object ArabicCurriculum {
             CourseUnit("ar_u_pro_business", L, B1, g("Arabic for work", "العربية للعمل"), g("Meetings and formal emails", "الاجتماعات والرسائل الرسمية"), listOf("ar_l_work"), trackId = "business"),
             CourseUnit("ar_u_next", L, B1, g("Next steps", "الخطوة التالية"), g("The past and the future", "الماضي والمستقبل"), listOf("ar_l_past", "ar_l_future")),
             CourseUnit("ar_u_pro_finance", L, B1, g("Banking and finance", "البنوك والتمويل"), g("Core banking vocabulary", "مفردات البنوك الأساسية"), listOf("ar_l_finance"), trackId = "finance"),
+            CourseUnit("ar_u_survival", L, A1, g("Essential phrases", "العبارات الأساسية"), g("Everyday phrases and emergencies", "العبارات اليومية والطوارئ"), listOf("ar_l_ev_essentials", "ar_l_ev_emergency")),
+            CourseUnit("ar_u_tourism", L, A2, g("Travel and tourism", "السفر والسياحة"), g("Restaurants, hotels, transport and sightseeing", "المطاعم والفنادق والمواصلات والمعالم"), listOf("ar_l_ev_restaurant", "ar_l_ev_hotel", "ar_l_ev_transport", "ar_l_ev_sightseeing")),
         )
         val readings = listOf(
             ReadingPassage(
@@ -314,6 +401,48 @@ internal object ArabicCurriculum {
                 ),
                 listOf("الميزانية…", "نستطيع التسليم بعد…", "سأرسل لكم…"),
                 trackId = "business",
+            ),
+            RolePlayScenario(
+                "ar_s_hotel", L, A2, g("Checking in at a hotel", "تسجيل الوصول في فندق"), g("A hotel reception in Marrakesh.", "مكتب استقبال فندق في مراكش."),
+                g("Check in, show your passport and ask for the Wi-Fi password.", "سجّل وصولك وأظهر جواز سفرك واسأل عن كلمة مرور الواي فاي."),
+                "مساء الخير، أهلًا بك. كيف أستطيع مساعدتك؟ (masāʾ al-khayr, ahlan bik. kayfa astaṭīʿu musāʿadatak?)", g("Good evening, welcome. How can I help you?", "مساء الخير، أهلًا بك. كيف أستطيع مساعدتك؟"),
+                listOf(
+                    ScenarioBeat(listOf("حجز", "باسم", "غرفة"), g("Say: عندي حجز باسم… (ʿindī ḥajz bi-ism…)", "قل: عندي حجز باسم…"),
+                        "عندي حجز باسم حسن.", "نعم، غرفة مزدوجة لليلتين. جواز السفر من فضلك. (naʿam, ghurfa muzdawaja li-laylatayn. jawāz as-safar min faḍlik.)", g("Yes, a double room for two nights. Your passport, please.", "نعم، غرفة مزدوجة لليلتين. جواز السفر من فضلك.")),
+                    ScenarioBeat(listOf("تفضل", "تفضّل", "جواز", "نعم"), g("Hand it over: تفضّل (tafaḍḍal).", "قدّمه: تفضّل."),
+                        "تفضّل.", "شكرًا. الفطور من السابعة إلى العاشرة. (shukran. al-fuṭūr min as-sābiʿa ilā l-ʿāshira.)", g("Thank you. Breakfast is from seven to ten.", "شكرًا. الفطور من السابعة إلى العاشرة.")),
+                    ScenarioBeat(listOf("واي", "فاي", "كلمة", "مرور", "الإنترنت"), g("Ask for the Wi-Fi password.", "اسأل عن كلمة مرور الواي فاي."),
+                        "ما كلمة مرور الواي فاي؟", "مكتوبة على بطاقة الغرفة. إقامة سعيدة! (maktūba ʿalā biṭāqat al-ghurfa. iqāma saʿīda!)", g("It's written on the room card. Enjoy your stay!", "مكتوبة على بطاقة الغرفة. إقامة سعيدة!")),
+                ),
+                listOf("عندي حجز باسم…", "تفضّل", "هل الفطور مشمول؟"),
+            ),
+            RolePlayScenario(
+                "ar_s_restaurant", L, A2, g("Dinner at a restaurant", "العشاء في مطعم"), g("A restaurant in Beirut.", "مطعم في بيروت."),
+                g("Get a table, mention an allergy and order a main course.", "احصل على طاولة واذكر حساسيتك واطلب طبقًا رئيسيًا."),
+                "أهلًا وسهلًا! هل عندكم حجز؟ (ahlan wa-sahlan! hal ʿindakum ḥajz?)", g("Welcome! Do you have a reservation?", "أهلًا وسهلًا! هل عندكم حجز؟"),
+                listOf(
+                    ScenarioBeat(listOf("طاولة", "لشخصين", "لا"), g("Say: لا، طاولة لشخصين من فضلك.", "قل: لا، طاولة لشخصين من فضلك."),
+                        "لا، طاولة لشخصين من فضلك.", "تفضّلوا. هذه قائمة الطعام. هل عندكم حساسية من شيء؟ (tafaḍḍalū. hādhihi qāʾimat aṭ-ṭaʿām. hal ʿindakum ḥassāsiyya min shayʾ?)", g("Please come in. Here is the menu. Are you allergic to anything?", "تفضّلوا. هذه قائمة الطعام. هل عندكم حساسية من شيء؟")),
+                    ScenarioBeat(listOf("حساسية", "لا"), g("Say: عندي حساسية من المكسرات.", "قل: عندي حساسية من المكسرات."),
+                        "عندي حساسية من المكسرات.", "حسنًا، سأخبر الطاهي. ماذا تطلبون؟ (ḥasanan, sa-ukhbiru ṭ-ṭāhī. mādhā taṭlubūn?)", g("All right, I'll tell the chef. What would you like?", "حسنًا، سأخبر الطاهي. ماذا تطلبون؟")),
+                    ScenarioBeat(listOf("أريد", "اريد", "سمك", "دجاج", "لحم"), g("Order: أريد السمك من فضلك.", "اطلب: أريد السمك من فضلك."),
+                        "أريد السمك من فضلك.", "اختيار ممتاز. (ikhtiyār mumtāz.)", g("Excellent choice.", "اختيار ممتاز.")),
+                ),
+                listOf("طاولة لشخصين من فضلك", "عندي حساسية من…", "أريد…", "الحساب من فضلك"),
+            ),
+            RolePlayScenario(
+                "ar_s_airport", L, A2, g("Checking in at the airport", "تسجيل الدخول في المطار"), g("A check-in desk at Dubai airport.", "مكتب تسجيل في مطار دبي."),
+                g("Hand over your documents, check your luggage and ask about boarding time.", "سلّم وثائقك وسجّل أمتعتك واسأل عن موعد الصعود."),
+                "صباح الخير. جواز السفر والتذكرة من فضلك. (ṣabāḥ al-khayr. jawāz as-safar wa-t-tadhkara min faḍlik.)", g("Good morning. Your passport and ticket, please.", "صباح الخير. جواز السفر والتذكرة من فضلك."),
+                listOf(
+                    ScenarioBeat(listOf("تفضل", "تفضّل", "نعم", "هذا"), g("Hand them over: تفضّل.", "قدّمها: تفضّل."),
+                        "تفضّل.", "هل عندك أمتعة؟ (hal ʿindaka amtiʿa?)", g("Do you have any luggage?", "هل عندك أمتعة؟")),
+                    ScenarioBeat(listOf("حقيبة", "أمتعة", "امتعة", "نعم", "لا"), g("Say: نعم، حقيبة واحدة.", "قل: نعم، حقيبة واحدة."),
+                        "نعم، حقيبة واحدة.", "هذه بطاقة الصعود. البوابة رقم اثني عشر. (hādhihi biṭāqat aṣ-ṣuʿūd. al-bawwāba raqm ithnay ʿashar.)", g("Here is your boarding pass. Gate number twelve.", "هذه بطاقة الصعود. البوابة رقم اثني عشر.")),
+                    ScenarioBeat(listOf("متى", "موعد", "الصعود"), g("Ask: متى موعد الصعود؟", "اسأل: متى موعد الصعود؟"),
+                        "متى موعد الصعود؟", "في الساعة العاشرة والنصف. رحلة سعيدة! (fī s-sāʿa al-ʿāshira wa-n-niṣf. riḥla saʿīda!)", g("At half past ten. Have a good flight!", "في الساعة العاشرة والنصف. رحلة سعيدة!")),
+                ),
+                listOf("تفضّل", "حقيبة واحدة", "متى موعد الصعود؟"),
             ),
         )
         fun item(id: String, level: CefrLevel, skill: Skill, prompt: String, options: List<String>, correct: Int, en: String) =

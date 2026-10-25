@@ -73,6 +73,18 @@ class CurriculumIntegrityTest {
         }
     }
 
+    @Test fun everyLanguageHasDailyLifeAndTravelLessonsAndPhrasebook() {
+        for ((lang, c) in Curriculum.all) {
+            Curriculum.phrasebookTopics.forEach { topic ->
+                assertTrue(Curriculum.phrasebook(lang, topic).size >= 8, "$lang phrasebook $topic")
+                assertTrue("${lang.tag}_l_ev_$topic" in c.lessonsById, "$lang lesson for $topic")
+            }
+            val general = c.sequencer.orderedLessons().map { it.id }
+            assertTrue("${lang.tag}_l_ev_essentials" in general, "$lang essentials lesson is on the main path")
+            assertTrue(c.scenarios.count { it.id.endsWith("_hotel") } == 1, "$lang hotel role-play")
+        }
+    }
+
     @Test fun mandarinHasToneExercises() {
         val zh = Curriculum.of(LanguageCode.MANDARIN)
         assertTrue(zh.lessons.flatMap { it.exercises }.count { it is Exercise.ToneChoice } >= 6)

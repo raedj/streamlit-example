@@ -1,7 +1,7 @@
 # Test Results
 
 Run on 2026-10-25 in the cloud build container (JDK 21, Gradle 8.14.3, Linux x64) with
-`./gradlew build -x :ui:desktopTest`. **Result: BUILD SUCCESSFUL, 172 tests, 0 failures.**
+`./gradlew build -x :ui:desktopTest`. **Result: BUILD SUCCESSFUL, 174 tests, 0 failures.**
 
 | Module | Test class | Tests | Failures |
 |---|---|---|---|
@@ -25,7 +25,7 @@ Run on 2026-10-25 in the cloud build container (JDK 21, Gradle 8.14.3, Linux x64
 | data | RestoreTest (v2 round trip of every record type, cloud AI forced off, invalid/newer files rejected without changes, v1 best-effort) | 4 | 0 |
 | uicore | LocalizationTest | 8 | 0 |
 | uicore | ContrastTest | 4 | 0 |
-| **Total** | | **172** | **0** |
+| **Total** | | **174** | **0** |
 
 Also executed: SQLDelight `verifyCommonMainPolyglotDatabaseMigration` (pass); compilation of
 `ui` and `desktopApp` for the JVM (pass, no warnings after fixes).
@@ -52,6 +52,7 @@ This is not an Android build: resources, manifest, AndroidX behaviour and runtim
 | D-06 | High (crash) | `getSystemService(ActivityManager)` dereferenced without null check (device info) | Safe call; found by Android type-check |
 | D-07 | High (crash) | `NotificationManager` dereferenced without null check (reminder channel) | Safe call; found by Android type-check |
 | D-08 | Medium (crash) | Nullable `AlarmManager` used directly when scheduling reminders | Early return; found by Android type-check |
+| D-09 | Low | Pinyin splitter counted punctuation (?, !) as syllables | Letters only; `PinyinPunctuationTest` |
 | D-06 | Medium (a11y) | Light success colour 4.36:1 on its container | Darkened to #116A31; `ContrastTest` |
 | D-07 | Low | Home showed "self-selected" for test-based levels (flag inverted) | Flag semantics fixed |
 | D-08 | Medium | Lesson player could lose its Continue button after process death | Answer state no longer saveable on its own |

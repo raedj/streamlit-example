@@ -25,6 +25,7 @@ sealed interface Route {
     data object Tones : Route
     data object Characters : Route
     data object SpeakingPath : Route
+    data object Phrasebook : Route
     data object Relax : Route
     data object Vocabulary : Route
     data object Library : Route
@@ -52,7 +53,7 @@ sealed interface Route {
             Reading -> "reading"
             is ReadingPassage -> "passage|${r.passageId}"
             Listening -> "listening"; Writing -> "writing"; Pronunciation -> "pronunciation"; Tones -> "tones"; Characters -> "characters"; Relax -> "relax"
-            SpeakingPath -> "speaking"
+            SpeakingPath -> "speaking"; Phrasebook -> "phrasebook"
             Vocabulary -> "vocab"; Library -> "library"
             is Material -> "material|${r.materialId}"
             Search -> "search"; Plan -> "plan"; Progress -> "progress"
@@ -78,7 +79,7 @@ sealed interface Route {
                 "reading" -> Reading
                 "passage" -> ReadingPassage(arg(1))
                 "listening" -> Listening; "writing" -> Writing; "pronunciation" -> Pronunciation; "tones" -> Tones; "characters" -> Characters; "relax" -> Relax
-                "speaking" -> SpeakingPath
+                "speaking" -> SpeakingPath; "phrasebook" -> Phrasebook
                 "vocab" -> Vocabulary; "library" -> Library
                 "material" -> Material(arg(1))
                 "search" -> Search; "plan" -> Plan; "progress" -> Progress
