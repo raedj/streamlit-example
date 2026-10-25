@@ -52,6 +52,9 @@ object CoachProtocol {
         LanguageCode.FRENCH -> "DELF or DALF"
         LanguageCode.MANDARIN -> "HSK"
         LanguageCode.ARABIC -> "an Arabic proficiency exam"
+        LanguageCode.TURKISH -> "a Turkish proficiency exam such as TYS"
+        LanguageCode.URDU -> "an Urdu proficiency exam"
+        LanguageCode.MALAY -> "a Malay proficiency exam"
     }
 
     fun trackQuestion(language: LanguageCode): String =

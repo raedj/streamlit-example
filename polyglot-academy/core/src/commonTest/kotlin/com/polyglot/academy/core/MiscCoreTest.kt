@@ -135,8 +135,15 @@ class MiscCoreTest {
     }
 
     @Test fun languagesConfigured() {
-        assertEquals(5, Languages.all.size)
+        assertEquals(8, Languages.all.size)
         assertTrue(Languages.ARABIC.direction == com.polyglot.academy.core.model.TextDirection.RTL)
+        assertTrue(Languages.URDU.direction == com.polyglot.academy.core.model.TextDirection.RTL)
+        assertTrue(Languages.TURKISH.direction == com.polyglot.academy.core.model.TextDirection.LTR && Languages.MALAY.direction == com.polyglot.academy.core.model.TextDirection.LTR)
+        assertEquals(listOf(LanguageCode.TURKISH, LanguageCode.URDU, LanguageCode.MALAY), listOf("tr", "ur", "ms").map { LanguageCode.fromTag(it) })
+        // No pronunciation-assessment locale has been confirmed for these yet, so scoring reports it instead of guessing.
+        listOf(LanguageCode.TURKISH, LanguageCode.URDU, LanguageCode.MALAY).forEach {
+            assertEquals(null, com.polyglot.academy.core.pronunciation.AzurePronunciationAssessor.locale(it, null))
+        }
         assertEquals(listOf(LanguageCode.ARABIC, LanguageCode.ENGLISH), Languages.interfaceLanguages.map { it.code })
         assertEquals(LanguageCode.MANDARIN, LanguageCode.fromTag("ZH"))
     }

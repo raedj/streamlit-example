@@ -90,7 +90,8 @@ object Curriculum {
     fun phrasebook(code: LanguageCode, topic: String) = of(code).vocabulary.filter { it.topic == topic && it.id.removePrefix(code.tag + "_").startsWith("ev_") }
 
     val all: Map<LanguageCode, LanguageCurriculum> by lazy {
-        listOf(EnglishCurriculum.build(), MandarinCurriculum.build(), SpanishCurriculum.build(), FrenchCurriculum.build(), ArabicCurriculum.build())
+        listOf(EnglishCurriculum.build(), MandarinCurriculum.build(), SpanishCurriculum.build(), FrenchCurriculum.build(), ArabicCurriculum.build(),
+            TurkishCurriculum.build(), UrduCurriculum.build(), MalayCurriculum.build())
             .map { c -> LanguageCurriculum(c.language, c.vocabulary, c.grammar, c.units, c.lessons, c.readings + GradedStories.of(c.language), c.scenarios,
                 c.assessment, c.tracks, c.dictations, c.writingPrompts) }
             .associateBy { it.language }

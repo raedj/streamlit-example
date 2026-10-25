@@ -32,6 +32,9 @@ internal object GradedStories {
         LanguageCode.FRENCH -> french
         LanguageCode.MANDARIN -> mandarin
         LanguageCode.ARABIC -> arabic
+        LanguageCode.TURKISH -> GradedStoriesExtra.turkish
+        LanguageCode.URDU -> GradedStoriesExtra.urdu
+        LanguageCode.MALAY -> GradedStoriesExtra.malay
     }
 
     private val english by lazy {

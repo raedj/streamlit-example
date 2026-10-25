@@ -213,6 +213,7 @@ PRON_ERR_MIC ¦ The microphone could not be used. ¦ تعذّر استخدام �
 PRON_ERR_QUOTA ¦ The speech service limit was reached. Try again later. ¦ بلغت حدّ خدمة الصوت. حاول لاحقًا.
 PRON_ERR_NO_SPEECH ¦ No speech was heard. Speak a little louder and closer to the microphone. ¦ لم يُسمع كلام. تحدّث بصوت أعلى قليلًا وأقرب إلى الميكروفون.
 PRON_ERR_TOO_SHORT ¦ The recording was too short. ¦ التسجيل قصير جدًا.
+PRON_ERR_LANGUAGE ¦ Detailed pronunciation scoring isn't available for this language yet. You can still practise by listening and repeating. ¦ التقييم التفصيلي للنطق غير متاح لهذه اللغة بعد. يمكنك مواصلة التدرّب بالاستماع والتكرار.
 PRON_ERR_OTHER ¦ Scoring failed: {0} ¦ فشل التقييم: {0}
 PRON_SCORE_OVERALL ¦ Overall ¦ الإجمالي
 PRON_SCORE_ACCURACY ¦ Accuracy ¦ الدقة

@@ -127,6 +127,12 @@ object StopWords {
             "est", "sont", "que", "qui", "se", "ne", "pas", "son", "sa", "ses", "je", "tu", "il", "elle", "nous", "vous", "ils", "elles", "mais", "ce", "l", "d")
         LanguageCode.ARABIC -> setOf("في", "من", "على", "الى", "إلى", "عن", "مع", "و", "او", "أو", "ثم", "هذا", "هذه", "ذلك", "التي", "الذي", "هو", "هي", "ان", "أن", "لا", "ما", "كان")
         LanguageCode.MANDARIN -> setOf("的", "了", "是", "在", "和", "也", "就", "都", "吗", "呢", "吧", "啊", "我", "你", "他", "她", "们", "这", "那", "有", "不")
+        LanguageCode.TURKISH -> setOf("ve", "ile", "bir", "bu", "şu", "o", "da", "de", "mi", "mı", "mu", "mü", "için", "gibi", "ama", "çok", "daha",
+            "ben", "sen", "biz", "siz", "onlar", "ne", "var", "yok", "değil", "her", "kadar", "sonra", "önce")
+        LanguageCode.URDU -> setOf("کا", "کی", "کے", "میں", "پر", "سے", "کو", "نے", "اور", "یا", "ہے", "ہیں", "تھا", "تھی", "تھے", "یہ", "وہ",
+            "نہیں", "بھی", "تو", "کہ", "جو", "ایک", "ہو", "اس", "ان")
+        LanguageCode.MALAY -> setOf("dan", "yang", "di", "ke", "dari", "ini", "itu", "dengan", "untuk", "pada", "ada", "tidak", "saya", "awak", "dia",
+            "kami", "kita", "mereka", "ialah", "adalah", "juga", "akan", "sudah", "telah", "atau", "tetapi", "sangat", "lebih")
     }
 }
 

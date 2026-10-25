@@ -162,6 +162,7 @@ private fun failureState(e: Throwable, s: com.polyglot.academy.ui.i18n.Localizer
     PronunciationError.Quota -> ScoringState.Failed(s[K.PRON_ERR_QUOTA])
     PronunciationError.NoSpeech -> ScoringState.Failed(s[K.PRON_ERR_NO_SPEECH])
     PronunciationError.TooShort -> ScoringState.Failed(s[K.PRON_ERR_TOO_SHORT])
+    PronunciationError.UnsupportedLanguage -> ScoringState.Failed(s[K.PRON_ERR_LANGUAGE])
     PronunciationError.Offline -> ScoringState.Failed(s[K.OFFLINE_BANNER])
     else -> ScoringState.Failed(s.f(K.PRON_ERR_OTHER, e.message ?: ""))
 }

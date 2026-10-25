@@ -266,6 +266,9 @@ class OfflineTutorEngine(private val scenario: RolePlayScenario, private val exp
         LanguageCode.FRENCH -> "Très bien ! Ce scénario est terminé."
         LanguageCode.MANDARIN -> "很好！这个情景练习结束了。(Hěn hǎo! Zhège qíngjǐng liànxí jiéshù le.)"
         LanguageCode.ARABIC -> "أحسنت! انتهى هذا الموقف."
+        LanguageCode.TURKISH -> "Harika! Bu senaryo bitti."
+        LanguageCode.URDU -> "بہت خوب! یہ منظر یہاں ختم ہوتا ہے۔"
+        LanguageCode.MALAY -> "Bagus sekali! Situasi ini sudah tamat."
     }
 
     companion object { const val OFFLINE = "offline" }

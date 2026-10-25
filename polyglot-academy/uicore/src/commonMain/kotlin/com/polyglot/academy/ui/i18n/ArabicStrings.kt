@@ -589,6 +589,7 @@ internal object ArabicStrings {
         K.PRON_ERR_QUOTA to "بلغت حدّ خدمة الصوت. حاول لاحقًا.",
         K.PRON_ERR_NO_SPEECH to "لم يُسمع كلام. تحدّث بصوت أعلى قليلًا وأقرب إلى الميكروفون.",
         K.PRON_ERR_TOO_SHORT to "التسجيل قصير جدًا.",
+        K.PRON_ERR_LANGUAGE to "التقييم التفصيلي للنطق غير متاح لهذه اللغة بعد. يمكنك مواصلة التدرّب بالاستماع والتكرار.",
         K.PRON_ERR_OTHER to "فشل التقييم: {0}",
         K.PRON_SCORE_OVERALL to "الإجمالي",
         K.PRON_SCORE_ACCURACY to "الدقة",

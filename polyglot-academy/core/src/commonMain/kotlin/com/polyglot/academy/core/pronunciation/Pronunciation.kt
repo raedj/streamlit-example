@@ -56,6 +56,8 @@ sealed class PronunciationError(message: String) : Exception(message) {
     object Quota : PronunciationError("quota")
     object NoSpeech : PronunciationError("no_speech")
     object TooShort : PronunciationError("too_short")
+    /** The assessment service has no confirmed locale for this course language. */
+    object UnsupportedLanguage : PronunciationError("unsupported_language")
     class Network(detail: String) : PronunciationError("network: $detail")
     class Server(val status: Int) : PronunciationError("server: HTTP $status")
     class Invalid(detail: String) : PronunciationError("invalid: $detail")
@@ -139,14 +141,18 @@ class AzurePronunciationAssessor(
         fun isValidRegion(region: String) = region.matches(Regex("[a-z0-9]{3,30}"))
         private fun host(region: String): String { require(isValidRegion(region)) { "invalid region" }; return region }
 
-        /** Locales the assessment supports for each course language; the course's regional variant is used when it is one of them. */
-        fun locale(language: LanguageCode, variantLocale: String?): String {
+        /**
+         * Locales the assessment supports for each course language; the course's regional variant is used when it is one of them.
+         * Null when no locale has been confirmed for the language (Turkish, Urdu and Malay are not listed until verified).
+         */
+        fun locale(language: LanguageCode, variantLocale: String?): String? {
             val supported = when (language) {
                 LanguageCode.ENGLISH -> listOf("en-US", "en-GB", "en-AU")
                 LanguageCode.SPANISH -> listOf("es-ES", "es-MX")
                 LanguageCode.FRENCH -> listOf("fr-FR", "fr-CA")
                 LanguageCode.MANDARIN -> listOf("zh-CN")
                 LanguageCode.ARABIC -> listOf("ar-SA", "ar-EG")
+                LanguageCode.TURKISH, LanguageCode.URDU, LanguageCode.MALAY -> return null
             }
             return variantLocale?.takeIf { it in supported } ?: supported.first()
         }

@@ -8,3 +8,5 @@
 | B-04 | No AI provider API keys; provider hosts not in allow-list | Adapters verified only with mocked HTTP | MockEngine tests of request/response formats and error classification | Learner/QA supplies keys; run connection tests in-app |
 | B-05 | Maven Central through the proxy returns spurious 404/429 | Flaky dependency resolution | Local retrying cache proxy + Gradle init script **outside the repository** (`~/.gradle/init.d`) | None for the repo; environment-only |
 | B-06 | No release signing keystore | Release APK cannot be signed | — | Owner creates a keystore and configures signing via environment (BUILD_AND_RELEASE.md) |
+
+**Update 2026-10-25:** B-01 and B-03 do not apply on the owner's Windows machine: Google Maven, the Android SDK and an emulator are available there, and the debug APK was built and run (see TEST_RESULTS.md). On that machine SQLDelight's worker process gets no TMP variable, so sqlite-jdbc cannot unpack its native library; placing `sqlitejdbc.dll` (from the cached `migration-env-2.0.2.jar`) in `~/.gradle/workers` works around it (environment only).

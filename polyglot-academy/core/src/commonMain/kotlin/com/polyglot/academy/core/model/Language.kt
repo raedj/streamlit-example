@@ -16,7 +16,10 @@ enum class LanguageCode(val tag: String) {
     ENGLISH("en"),
     MANDARIN("zh"),
     SPANISH("es"),
-    FRENCH("fr");
+    FRENCH("fr"),
+    TURKISH("tr"),
+    URDU("ur"),
+    MALAY("ms");
 
     companion object {
         fun fromTag(tag: String): LanguageCode? = entries.firstOrNull { it.tag.equals(tag, ignoreCase = true) }
@@ -155,7 +158,49 @@ object Languages {
         hasInterfaceTranslation = false,
     )
 
-    val all: List<LanguageProfile> = listOf(ARABIC, ENGLISH, MANDARIN, SPANISH, FRENCH)
+    val TURKISH = LanguageProfile(
+        code = LanguageCode.TURKISH,
+        englishName = "Turkish",
+        arabicName = "التركية",
+        nativeName = "Türkçe",
+        direction = TextDirection.LTR,
+        features = emptySet(),
+        variants = listOf(RegionalVariant("tr-tr", "tr-TR", "Turkey", "تركيا")),
+        defaultVariantId = "tr-tr",
+        defaultSpeechRate = 0.95f,
+        supportedLevels = allLevels,
+        hasInterfaceTranslation = false,
+    )
+
+    val URDU = LanguageProfile(
+        code = LanguageCode.URDU,
+        englishName = "Urdu",
+        arabicName = "الأردية",
+        nativeName = "اردو",
+        direction = TextDirection.RTL,
+        features = setOf(LanguageFeature.RIGHT_TO_LEFT_SCRIPT, LanguageFeature.TRANSLITERATION, LanguageFeature.GRAMMATICAL_GENDER),
+        variants = listOf(RegionalVariant("ur-pk", "ur-PK", "Pakistan", "باكستان")),
+        defaultVariantId = "ur-pk",
+        defaultSpeechRate = 0.9f,
+        supportedLevels = allLevels,
+        hasInterfaceTranslation = false,
+    )
+
+    val MALAY = LanguageProfile(
+        code = LanguageCode.MALAY,
+        englishName = "Malay",
+        arabicName = "الملايوية",
+        nativeName = "Bahasa Melayu",
+        direction = TextDirection.LTR,
+        features = emptySet(),
+        variants = listOf(RegionalVariant("ms-my", "ms-MY", "Malaysia", "ماليزيا")),
+        defaultVariantId = "ms-my",
+        defaultSpeechRate = 0.95f,
+        supportedLevels = allLevels,
+        hasInterfaceTranslation = false,
+    )
+
+    val all: List<LanguageProfile> = listOf(ARABIC, ENGLISH, MANDARIN, SPANISH, FRENCH, TURKISH, URDU, MALAY)
 
     fun of(code: LanguageCode): LanguageProfile = all.first { it.code == code }
 

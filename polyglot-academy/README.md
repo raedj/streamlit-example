@@ -1,21 +1,23 @@
 # Polyglot Academy
 
 An original AI-assisted language-learning app for Android: English, Mandarin Chinese, Spanish,
-French and Arabic, with an Arabic (RTL) and English interface. Built with Kotlin Multiplatform
+French, Arabic, Turkish, Urdu and Malay, with an Arabic (RTL) and English interface. Built with Kotlin Multiplatform
 and Compose Multiplatform, so the learning engine, data layer and UI are shared between the
 Android app and a desktop verification harness.
 
 > **Status (honest summary).** The learning engine, AI provider layer, data layer and
-> presentation logic are implemented and covered by **217 passing automated tests**. The Compose
-> UI (≈40 screens) **compiles**. The Android sources are **type-checked against the Android 15
-> framework** but have **not been built** with the Android Gradle Plugin, and the UI **has not been run or screenshotted**: the build environment used so
-> far blocks Google Maven (`dl.google.com`), which hosts the Android Gradle Plugin, AndroidX and
-> parts of the Compose runtime. See [`docs/BLOCKERS_REGISTER.md`](docs/BLOCKERS_REGISTER.md)
-> and [`docs/PROJECT_STATE.json`](docs/PROJECT_STATE.json).
+> presentation logic are implemented and covered by **217 passing automated tests**. On
+> 2026-10-25 the debug APK was **built with the Android Gradle Plugin** (Windows, JDK 17) and
+> **run on an Android 15 emulator**: onboarding, home, a full lesson, all five tabs and the
+> offline tutor were exercised in the Arabic interface, and four bugs found there were fixed
+> (see [`docs/TEST_RESULTS.md`](docs/TEST_RESULTS.md)). Not yet verified: TalkBack, physical
+> devices, real speech recognition/TTS voices, live AI keys, release signing. Turkish, Urdu and
+> Malay content is new and **not yet reviewed by native speakers**
+> ([`docs/CONTENT_SOURCES.md`](docs/CONTENT_SOURCES.md)).
 
 ## What the app does
 
-- Courses in five languages from A1, everyday-life and travel packs, phrasebook, professional tracks, placement test, study planner and analytics.
+- Courses in eight languages from A1, everyday-life and travel packs, phrasebook, professional tracks, placement test, study planner and analytics.
 - Spaced-repetition reviews, adaptive recommendations, an error log, and daily XP with a goal, three daily quests, levels and streak freezes.
 - Ten tutors: typed or spoken conversations on any topic with four-part corrections (AI coach protocol), role-plays and a speaking path A1–C1.
 - Graded stories with tap-to-translate words, and AI-written stories about the learner's interests.
@@ -27,7 +29,7 @@ Android app and a desktop verification harness.
 
 | Module | What it contains | Verified here |
 |---|---|---|
-| `core` | Domain model, curricula (5 languages), spaced repetition, adaptive engine, placement test, planner, analytics, AI providers + privacy-aware routing, tutors, offline scripted tutor, speech state machine, Mandarin pinyin tools, media/text extraction, application services | Compiled, 161 unit tests |
+| `core` | Domain model, curricula (8 languages), spaced repetition, adaptive engine, placement test, planner, analytics, AI providers + privacy-aware routing, tutors, offline scripted tutor, speech state machine, Mandarin pinyin tools, media/text extraction, application services | Compiled, 161 unit tests |
 | `data` | SQLDelight schema (v2 with a tested v1→v2 migration), repositories, export, restore, deletion | Compiled, 44 tests (incl. service integration tests) |
 | `uicore` | Localized strings (1,228 keys, EN/AR, CLDR plurals), enum labels, routes, colour tokens + WCAG contrast | Compiled, 12 tests |
 | `ui` | Compose design system, components, illustrations, charts, navigation, all screens | Compiled; UI tests written, **not run** |

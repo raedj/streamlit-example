@@ -1,7 +1,7 @@
 {
-  "updated": "2026-10-25T00:00:00Z",
+  "updated": "2026-10-25T17:10:00Z",
   "branch": "ccr-e06ebaa4-5wjvye",
-  "current_phase": "Phase 29/30 boundary — regression on JVM modules done; Android build blocked",
+  "current_phase": "Android debug build verified on an emulator; languages extended to 8; word-list programme (3000 words x 10 levels) not started",
   "completed_phases": [
     "0 Environment audit",
     "1 Requirements",
@@ -47,6 +47,11 @@
       "command": "./gradlew -Ppolyglot.androidTypecheck=<android-all-15.jar> :android-typecheck:compileKotlin",
       "result": "SUCCESS",
       "scope": "Android framework API usage only; no AGP, resources or APK"
+    },
+    "android_debug_apk": {
+      "command": "./gradlew -Ppolyglot.android=true :androidApp:assembleDebug",
+      "result": "SUCCESS (Windows 11, JDK 17, Android SDK 35)",
+      "device_test": "Android 15 emulator, manual: onboarding, home, full lesson, tabs, offline tutor (ar UI); tr/ur/ms onboarding + lesson"
     }
   },
   "last_tests": {
@@ -64,26 +69,25 @@
   },
   "critical_defects_open": [],
   "blockers": [
-    "B-01 dl.google.com blocked (AGP/AndroidX/SDK)",
-    "B-02 Compose runtime needs Google-only androidx artifacts",
-    "B-03 no emulator",
     "B-04 no AI API keys",
-    "B-06 no signing keystore"
+    "B-06 no signing keystore",
+    "B-01/B-03 resolved on the owner's Windows machine (Google Maven, SDK and emulator available)"
   ],
   "pending_external_credentials": [
     "AI provider API keys (optional)",
     "release signing keystore"
   ],
   "next_actions": [
-    "Allow dl.google.com and maven.google.com in the environment network settings",
-    "Create local.properties with sdk.dir (or install Android SDK 35)",
-    "./gradlew :ui:desktopTest and fix failures",
-    "./gradlew -Ppolyglot.android=true :androidApp:assembleDebug and fix compile errors",
-    "Add screenshot tests (EN/AR, light/dark) and review visuals",
-    "Device test: microphone flow, TTS voices for zh/ar, reminders, TalkBack",
-    "Verify Azure pronunciation scoring, OpenAI Realtime calls and WebDAV sync with real accounts on a device (K-17..K-19)"
+    "Native-speaker review of Turkish, Urdu and Malay content (docs/CONTENT_SOURCES.md)",
+    "Word-list programme phase 1: file format, tools/gen_wordlists.py, validation tests, then level 1 for each language",
+    "Device test: TTS voices and speech recognition on a phone with Google services; TalkBack; reminders",
+    "Release build with R8 and a signing keystore; test the shrunk APK",
+    "Verify Azure pronunciation scoring, OpenAI Realtime calls and WebDAV sync with real accounts (K-17..K-19); check Azure locales for tr/ur/ms"
   ],
   "recent_changes": [
+    "Added Turkish, Urdu and Malay as learning languages: starter course (A1-B2), business and finance tracks, travel phrasebook, 6 role-plays, 3 graded stories and placement bank each; offline tutor greetings; Urdu right-to-left with transliteration",
+    "Pronunciation scoring reports an unsupported language instead of guessing an Azure locale",
+    "Fixed after the first emulator run: Practice again, RTL punctuation in learned text, Arabic plural and preposition strings, 0% best score for started lessons",
     "AI providers: added Mistral, Groq, xAI Grok, OpenRouter, Qwen and a custom OpenAI-compatible endpoint; suggested models and loading the model list from the learner's account; a provider per feature; OpenAI reasoning-model parameters",
     "Daily XP loop: XP derived from stored activity, daily XP goal, three daily quests, levels, streak freezes (earned every 7 days, max 2)",
     "Graded stories: 15 original stories (A1/A2/B1 x 5 languages) with tap-to-translate words and save-to-review; AI-written stories by interest, validated, stored and backed up",
@@ -108,5 +112,40 @@
     "Android targets aligned to JVM 17; local build guide",
     "Daily-life and travel pack for all five languages: 6 lessons, 48 phrases and 3 role-plays each; travel phrasebook screen; pinyin punctuation fix",
     "Free conversation on any topic with the AI tutor (topic card, AI opens on the topic, correction in every reply, honest offline notice)"
-  ]
+  ],
+  "languages": {
+    "learning": [
+      "en",
+      "zh",
+      "es",
+      "fr",
+      "ar",
+      "tr",
+      "ur",
+      "ms"
+    ],
+    "interface": [
+      "ar",
+      "en"
+    ],
+    "native_review": {
+      "en": "not reviewed",
+      "zh": "not reviewed",
+      "es": "not reviewed",
+      "fr": "not reviewed",
+      "ar": "not reviewed",
+      "tr": "not reviewed (AI-written 2026-10-25)",
+      "ur": "not reviewed (AI-written 2026-10-25)",
+      "ms": "not reviewed (AI-written 2026-10-25)"
+    }
+  },
+  "wordlist_programme": {
+    "status": "not started",
+    "resume_at": {
+      "language": "en",
+      "level": 1,
+      "last_rank": 0
+    },
+    "notes": "Requested: 3000 lemmas per language in 10 levels of 300, with examples, generator script and validation tests. Now 8 languages (24,000 entries). Format, generator and loader still to be designed; see docs/CONTENT_SOURCES.md for sourcing rules."
+  }
 }

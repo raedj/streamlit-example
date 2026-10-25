@@ -75,6 +75,7 @@ class PronunciationService(
         if (Wav.durationMillis(pcm.size, sampleRate) < MIN_MILLIS) throw PronunciationError.TooShort
         if (Wav.level(pcm) < SILENCE_LEVEL) throw PronunciationError.NoSpeech
         val locale = AzurePronunciationAssessor.locale(language, Languages.of(language).defaultVariant.localeTag)
+            ?: throw PronunciationError.UnsupportedLanguage
         val report = assessorFactory(region()) { secrets.get(KEY) }.assess(Wav.encode(pcm, sampleRate), referenceText, locale)
         record(language, referenceText, report, Wav.durationMillis(pcm.size, sampleRate))
         report

@@ -49,10 +49,10 @@ class WritingService(private val providers: ProviderService) {
             if (missing.isNotEmpty() && used.isEmpty()) add(WritingCheck.SUGGESTED_WORDS_MISSING)
             if (used.isNotEmpty()) add(WritingCheck.USED_SUGGESTED_WORDS)
             if (repeated.isNotEmpty()) add(WritingCheck.REPEATED_WORDS)
-            val latin = language in setOf(LanguageCode.ENGLISH, LanguageCode.SPANISH, LanguageCode.FRENCH)
+            val latin = language in setOf(LanguageCode.ENGLISH, LanguageCode.SPANISH, LanguageCode.FRENCH, LanguageCode.TURKISH, LanguageCode.MALAY)
             val trimmed = text.trim()
             if (latin && trimmed.firstOrNull()?.let { it.isLetter() && it.isLowerCase() } == true) add(WritingCheck.MISSING_CAPITAL)
-            if (trimmed.isNotEmpty() && trimmed.last() !in ".!?。！？؟…") add(WritingCheck.MISSING_END_PUNCTUATION)
+            if (trimmed.isNotEmpty() && trimmed.last() !in ".!?。！？؟…۔") add(WritingCheck.MISSING_END_PUNCTUATION)
         }
         return WritingFeedback(words, checks, used, missing, repeated, emptyList(), null, null, "offline")
     }

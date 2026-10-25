@@ -217,6 +217,9 @@ class ConversationController(
         LanguageCode.FRENCH -> "Bonjour ! Je suis ${tutor.name}. De quoi aimerais-tu parler aujourd'hui ?"
         LanguageCode.MANDARIN -> "你好！我是${tutor.name}。今天你想聊什么？(Nǐ hǎo! Jīntiān nǐ xiǎng liáo shénme?)"
         LanguageCode.ARABIC -> "مرحبًا! أنا ${tutor.name}. عمّ تحب أن نتحدث اليوم؟"
+        LanguageCode.TURKISH -> "Merhaba! Ben ${tutor.name}. Bugün ne hakkında konuşmak istersin?"
+        LanguageCode.URDU -> "السلام علیکم! میں ${tutor.name} ہوں۔ آج آپ کس بارے میں بات کرنا چاہیں گے؟"
+        LanguageCode.MALAY -> "Hai! Saya ${tutor.name}. Awak mahu berbual tentang apa hari ini?"
     }
 
     fun toggleTranslations() = _state.update { it.copy(showTranslations = !it.showTranslations) }

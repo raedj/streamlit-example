@@ -589,6 +589,7 @@ internal object EnglishStrings {
         K.PRON_ERR_QUOTA to "The speech service limit was reached. Try again later.",
         K.PRON_ERR_NO_SPEECH to "No speech was heard. Speak a little louder and closer to the microphone.",
         K.PRON_ERR_TOO_SHORT to "The recording was too short.",
+        K.PRON_ERR_LANGUAGE to "Detailed pronunciation scoring isn't available for this language yet. You can still practise by listening and repeating.",
         K.PRON_ERR_OTHER to "Scoring failed: {0}",
         K.PRON_SCORE_OVERALL to "Overall",
         K.PRON_SCORE_ACCURACY to "Accuracy",
