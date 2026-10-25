@@ -323,6 +323,16 @@ class ServicesIntegrationTest {
         assertEquals("Where is the station?\nGo straight on.", done.material.extractedText)
     }
 
+    @Test fun restoreReappliesTheRestoredReminder() = runBlocking<Unit> {
+        store.updateSettings { it.copy(reminders = it.reminders.copy(enabled = true, hour = 7, minute = 30)) }
+        val json = store.exportJson(includeConversations = false, includeNotes = false)
+        platform.reminder = null
+        app.restore(json) { true }
+        assertEquals(Triple(true, 7, 30), platform.reminder)
+        app.restore(json) { false }
+        assertEquals(false, platform.reminder?.first, "no permission means no alarm")
+    }
+
     @Test fun deleteEverythingRemovesDataSecretsAndReminder() = runBlocking<Unit> {
         enroll(); enableCloud()
         app.deleteEverything()

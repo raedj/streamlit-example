@@ -1,5 +1,7 @@
 package com.polyglot.academy.core.service
 
+import kotlinx.coroutines.flow.first
+import com.polyglot.academy.core.repo.RestoreReport
 import com.polyglot.academy.core.ai.AiProvider
 import com.polyglot.academy.core.ai.CredentialSource
 import com.polyglot.academy.core.ai.NetworkState
@@ -62,6 +64,17 @@ class AppServices(
     fun conversation(scope: CoroutineScope, language: LanguageCode, tutor: TutorPersona, scenario: RolePlayScenario?, forceOffline: Boolean = false) =
         ConversationController(scope, language, tutor, scenario, store, store, store, reviews, providers, study, achievements,
             platform.recognizer, platform.synthesizer, clock, ids, forceOffline)
+
+    /**
+     * Restores an export, then re-applies the restored reminder schedule (the alarm itself is not
+     * part of the export). [allowNotifications] is asked only when the restored reminder is on.
+     */
+    suspend fun restore(json: String, allowNotifications: suspend () -> Boolean): RestoreReport {
+        val report = store.importJson(json)
+        val r = store.settings.first().reminders
+        platform.scheduleReminder(r.enabled && allowNotifications(), r.hour, r.minute, r.days)
+        return report
+    }
 
     /** Erases all stored data, credentials and the reminder schedule. */
     suspend fun deleteEverything() {

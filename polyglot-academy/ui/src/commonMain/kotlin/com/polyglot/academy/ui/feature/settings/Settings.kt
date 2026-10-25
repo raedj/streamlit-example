@@ -467,7 +467,7 @@ private fun DataPage() {
                     val file = app.platformUi.pickFile() ?: return@launch
                     val text = file.text ?: return@launch toast(s[K.SET_RESTORE_INVALID])
                     toast(try {
-                        val r = app.services.store.importJson(text)
+                        val r = app.services.restore(text) { app.platformUi.requestNotificationPermission() }
                         val n = r.counts.values.sum()
                         if (r.skipped == 0) s.f(K.SET_RESTORE_DONE, n) else s.f(K.SET_RESTORE_SKIPPED, n, r.skipped)
                     } catch (e: RestoreException) {

@@ -60,8 +60,8 @@ class CurriculumIntegrityTest {
         assertTrue(en.tracks.filter { it.id in setOf("finance", "credit_risk", "legal") }.all { it.disclaimer != null })
     }
 
-    @Test fun spanishFrenchAndArabicHaveAWorkTrackOutsideTheGeneralSequence() {
-        for (lang in listOf(LanguageCode.SPANISH, LanguageCode.FRENCH, LanguageCode.ARABIC)) {
+    @Test fun nonEnglishLanguagesHaveAWorkTrackOutsideTheGeneralSequence() {
+        for (lang in LanguageCode.entries - LanguageCode.ENGLISH) {
             val c = Curriculum.of(lang)
             assertEquals(listOf("business"), c.tracks.map { it.id }, "$lang tracks")
             val trackLessons = c.unitsForTrack("business").flatMap { it.lessonIds }.toSet()

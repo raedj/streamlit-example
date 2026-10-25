@@ -10,6 +10,8 @@ import com.polyglot.academy.core.model.CefrLevel.PRE_A1
 import com.polyglot.academy.core.model.CourseUnit
 import com.polyglot.academy.core.model.Exercise
 import com.polyglot.academy.core.model.LanguageCode
+import com.polyglot.academy.core.model.VocabularySource
+import com.polyglot.academy.core.model.LearningTrack
 import com.polyglot.academy.core.model.PartOfSpeech.ADJECTIVE
 import com.polyglot.academy.core.model.PartOfSpeech.ADVERB
 import com.polyglot.academy.core.model.PartOfSpeech.MEASURE_WORD
@@ -109,6 +111,20 @@ internal object MandarinCurriculum {
             v("pianyi", "便宜", "cheap", "رخيص", ADJECTIVE, A2, "shopping", "piányi")
             v("yinwei", "因为", "because", "لأنّ", PHRASE, B1, "grammar", "yīnwèi", trad = "因為")
             v("suoyi", "所以", "so, therefore", "لذلك", PHRASE, B1, "grammar", "suǒyǐ")
+
+            // Work (professional track)
+            v("huiyi", "会议", "meeting", "الاجتماع", NOUN, A2, "business", "huìyì", trad = "會議",
+                ex = "会议九点开始。", exEn = "The meeting starts at nine.", exAr = "يبدأ الاجتماع في التاسعة.", tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("gongsi", "公司", "company", "الشركة", NOUN, A2, "business", "gōngsī", tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("kehu", "客户", "client, customer", "العميل", NOUN, A2, "business", "kèhù", trad = "客戶", tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("yusuan", "预算", "budget", "الميزانية", NOUN, B1, "business", "yùsuàn", trad = "預算", tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("jiezhi_riqi", "截止日期", "deadline", "الموعد النهائي", NOUN, B1, "business", "jiézhǐ rìqī", tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("fangan", "方案", "proposal, plan", "المقترح، الخطة", NOUN, B1, "business", "fāng'àn", tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("fujian", "附件", "attachment", "المرفق", NOUN, B1, "business", "fùjiàn",
+                ex = "请看附件。", exEn = "Please see the attachment.", exAr = "يرجى الاطلاع على المرفق.", tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("fasong", "发送", "to send", "يرسل", VERB, B1, "business", "fāsòng", trad = "發送", tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("zunjing", "尊敬的…", "Dear… (formal letter opening)", "حضرة… المحترم", PHRASE, B1, "business", "zūnjìng de", tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("qing", "请", "please (polite request)", "من فضلك (طلب مهذب)", VERB, A2, "business", "qǐng", trad = "請", tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
         }
         val vocabulary = vb.items
         val f = LessonFactory(L, vocabulary)
@@ -174,6 +190,16 @@ internal object MandarinCurriculum {
                     fill("r1", L, "因为下雨，___我不去。", listOf("所以")),
                     writing("r2", L, g("Write two sentences explaining why you study Chinese (use 因为…所以…).", "اكتب جملتين تشرح فيهما سبب دراستك للصينية (استخدم 因为…所以…)."), 10, listOf("因为", "所以", "学习")),
                 ), prerequisites = listOf("time_daily")),
+
+            f.lesson("work", B1, "pro_business", g("Meetings and formal emails", "الاجتماعات والرسائل الرسمية"), g("Budgets, deadlines and polite requests.", "الميزانيات والمواعيد النهائية والطلبات المهذبة."),
+                Skill.WRITING, listOf("huiyi", "gongsi", "kehu", "yusuan", "jiezhi_riqi", "fangan", "fujian", "fasong", "zunjing", "qing"), "qing",
+                extra = listOf(
+                    fill("w1", L, "___问，会议几点开始？", listOf("请")),
+                    order("w2", L, listOf("我们", "明天", "开会"), g("We have a meeting tomorrow.", "لدينا اجتماع غدًا."), separator = ""),
+                    choice("w3", L, "Which is the right way to start a formal email?", listOf("尊敬的王先生：", "嗨，老王！", "再见！"), 0, Skill.FUNCTIONAL),
+                    writing("w4", L, g("Write a short email to a client proposing a meeting (use 尊敬的 and 附件).", "اكتب رسالة قصيرة إلى عميل تقترح فيها اجتماعًا (استخدم 尊敬的 و附件)."), 15,
+                        listOf("尊敬的", "会议", "附件")),
+                )),
         )
 
         val grammar = listOf(
@@ -207,6 +233,14 @@ internal object MandarinCurriculum {
                     "تستخدم الصينية غالبًا 因为 و所以 معًا في الجملة نفسها: 因为很贵，所以我不买."),
                 listOf(ex("因为我喜欢中国，所以我学习中文。", "Because I like China, I study Chinese.", "لأنني أحب الصين، أدرس الصينية.")),
                 listOf(g("Using both is normal in Mandarin even though English uses only one.", "استخدام الاثنين معًا أمر طبيعي في الصينية رغم أن الإنجليزية تكتفي بواحدة."))),
+
+            grammar("qing", L, A2, g("Polite requests: 请 and 能不能", "الطلب المهذب: 请 و能不能"),
+                g("Put 请 (please) before the verb for polite requests: 请发送附件. Ask permission or a favour with 能不能 + verb: 您能不能明天发给我？ Use 您 instead of 你 with clients.",
+                    "ضع 请 قبل الفعل للطلب المهذب: 请发送附件. واطلب إذنًا أو خدمة بـ 能不能 + الفعل: 您能不能明天发给我？ واستخدم 您 بدل 你 مع العملاء."),
+                listOf(ex("请您看一下附件。", "Please take a look at the attachment.", "يرجى الاطلاع على المرفق."),
+                    ex("您能不能下午开会？", "Could you meet in the afternoon?", "هل يمكنكم الاجتماع بعد الظهر؟"),
+                    ex("发送请附件。", "请 goes before the verb", "يأتي 请 قبل الفعل", wrong = true)),
+                listOf(g("Using 你 with a new client can sound too casual; 您 is safer.", "استخدام 你 مع عميل جديد قد يبدو غير رسمي، و您 أنسب."))),
         )
 
         val units = listOf(
@@ -214,6 +248,8 @@ internal object MandarinCurriculum {
             CourseUnit("zh_u_people", L, A1, g("People", "الأشخاص"), g("Introductions and questions", "التعارف والأسئلة"), listOf("zh_l_intro", "zh_l_questions")),
             CourseUnit("zh_u_daily", L, A1, g("Numbers and food", "الأعداد والطعام"), g("Counting and ordering", "العدّ والطلب"), listOf("zh_l_numbers", "zh_l_food")),
             CourseUnit("zh_u_travel", L, A2, g("Getting around", "التنقّل"), g("Places, time and reasons", "الأماكن والوقت والأسباب"), listOf("zh_l_places", "zh_l_time_daily", "zh_l_reasons")),
+
+            CourseUnit("zh_u_pro_business", L, B1, g("Chinese for work", "الصينية للعمل"), g("Meetings and formal emails", "الاجتماعات والرسائل الرسمية"), listOf("zh_l_work"), trackId = "business"),
         )
 
         val readings = listOf(
@@ -263,6 +299,23 @@ internal object MandarinCurriculum {
                 ),
                 listOf("我叫…", "我是学生", "很高兴认识你"),
             ),
+
+            RolePlayScenario(
+                "zh_s_client", L, B1, g("Planning a project with a client", "التخطيط لمشروع مع عميل"), g("A video call with a client in Shanghai.", "مكالمة فيديو مع عميل في شنغهاي."),
+                g("Agree on the budget and the deadline, then promise an email.", "اتفق على الميزانية والموعد النهائي، ثم عِد برسالة."),
+                "您好！谢谢您的方案。我们先谈谈预算吧？(Nín hǎo! Xièxie nín de fāng'àn. Wǒmen xiān tántan yùsuàn ba?)",
+                g("Hello! Thank you for the proposal. Shall we talk about the budget first?", "مرحبًا! شكرًا على المقترح. هل نتحدث عن الميزانية أولًا؟"),
+                listOf(
+                    ScenarioBeat(listOf("预算", "万", "元", "块", "美元"), g("State the budget: 预算是五万元。(Yùsuàn shì wǔ wàn yuán.)", "اذكر الميزانية: 预算是五万元。"),
+                        "预算是五万元。", "好的。什么时候能完成？(Hǎo de. Shénme shíhou néng wánchéng?)", g("OK. When can it be finished?", "حسنًا. متى يمكن إنجازه؟")),
+                    ScenarioBeat(listOf("星期", "月", "周", "以后"), g("Give a deadline: 六个星期以后。(Liù ge xīngqī yǐhòu.)", "حدّد موعدًا: 六个星期以后。"),
+                        "六个星期以后能完成。", "没问题。(Méi wèntí.)", g("No problem.", "لا مشكلة.")),
+                    ScenarioBeat(listOf("邮件", "发", "附件"), g("Say you'll send an email today: 我今天给您发邮件。", "قل إنك سترسل رسالة اليوم: 我今天给您发邮件。"),
+                        "我今天给您发邮件。", "谢谢，再见！(Xièxie, zàijiàn!)", g("Thank you, goodbye!", "شكرًا، مع السلامة!")),
+                ),
+                listOf("预算是…", "…以后能完成", "我给您发邮件", "请看附件"),
+                trackId = "business",
+            ),
         )
 
         fun item(id: String, level: CefrLevel, skill: Skill, prompt: String, options: List<String>, correct: Int, promptEn: String, promptAr: String) =
@@ -288,6 +341,7 @@ internal object MandarinCurriculum {
         return LanguageCurriculum(
             language = L, vocabulary = vocabulary, grammar = grammar, units = units, lessons = lessons, readings = readings,
             scenarios = scenarios, assessment = assessment,
+            tracks = listOf(LearningTrack("business", L, g("Chinese for work", "الصينية للعمل"), g("Meetings, formal emails, budgets and deadlines.", "الاجتماعات والرسائل الرسمية والميزانيات والمواعيد النهائية."), A2, null)),
             dictations = listOf(
                 dictation("d1", L, "我是学生", listOf("我是学生。")),
                 dictation("d2", L, "你好吗", listOf("你好吗？")),
