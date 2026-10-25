@@ -13,6 +13,28 @@ succeeds. `WordListTest` was also shown to reject words outside the list on the 
 After Spanish level 1, French level 1, Mandarin level 1, Arabic level 1, Turkish level 1, Urdu level 1 and again after Malay level 1 the same build passes (227 tests, 0 failures); for Malay the matcher gained plain me- (memasak), the be- form of ber- (bekerja) and the -ku/-mu clitics; a mirroring script found no unknown word in the 600 examples (one, "biru", was found and the example rewritten), and the 42 forms accepted through affix rules were checked by hand; for Urdu the matcher gained gender/number endings and verb stems from the infinitive (before, Urdu had no inflection rules at all); a mirroring script found no unknown word in the 600 examples, and the 197 forms accepted only through rules were listed and checked by hand (one, گئیں, had matched the wrong word and was added as a form of جانا); for Turkish the matcher was made stricter: a word now counts as a list word only if it is a list stem followed by a complete chain of known suffixes (before, any word starting with a list word of two letters counted, e.g. "bulmak" via "bu"); a mirroring script found no unknown word in the 600 examples, and the 512 forms accepted only through suffix rules were listed and checked by hand; for Arabic, a separate script mirroring the matcher found no unknown word in the 600 examples, and every word accepted only through an inflection rule (433 distinct forms) was listed and checked by hand; the Arabic matcher gained present-tense prefixes (أ/ت/ن → يـ), stacked endings, the feminine ـة and broken plurals from the plural field, covered by a test; for Mandarin, a separate script also confirmed that every Han character of all 600 examples segments into list words (the test alone allows up to 15% unknown words); writing it fixed name removal in unspaced Chinese text (now covered by a test); for French, every example word accepted only through an inflection rule (not an exact term or form) was listed and checked by hand — all were real plurals or feminine forms; writing it exposed and fixed a matcher bug (a proper name was also removed from inside longer words, e.g. "Ana" in "hermana"), now covered by a test. `tools/gen_wordlists.py` was run on a deliberately broken copy (wrong rank, invalid part of
 speech, missing example) and refused to generate, naming each line.
 
+Level 2 (ranks 301–600) was then added for all eight languages, one commit each. After each one
+the same build passed (227 tests, 0 failures: core 171, data 44, uicore 12). `tools/scan_wordlist.py`
+mirrors the app's word matcher for all eight languages. For every language it reports
+0 unknown tokens, 0 tokens beyond rank+300 and 0 examples missing their own word, for both level 1
+and level 2. Each language's forms that were accepted only through inflection or affix rules were
+listed and checked by hand. Level 2 counts:
+
+| Language | Accepted via rules | Links to curriculum vocab |
+|---|---|---|
+| en | 119 | 23 |
+| es | 112 | 26 |
+| fr | 72 | 24 |
+| zh | 0 (segmentation only) | 10 |
+| ar | 628 | 14 |
+| tr | 763 | 23 |
+| ur | 266 | 27 |
+| ms | 70 | 33 |
+
+To keep level 1 clean, one Mandarin level-1 example (rank 57) had to be rewritten. The new
+level-2 word 早饭 segmented as a single word, and it was more than 300 ranks beyond that example.
+These are checks on the word lists, not language review: no native speaker has reviewed levels 1–2.
+
 | Module | Test class | Tests | Failures |
 |---|---|---|---|
 | core | AdapterTest (OpenAI, Azure, Gemini, Anthropic, DeepSeek, local; image parts per vendor; error classification; timeouts; no key leakage; Mistral, Groq, xAI, OpenRouter, Qwen and custom OpenAI-compatible endpoints; GPT-5/o-series parameters; model lists from OpenAI-compatible, Anthropic and Gemini) | 14 | 0 |
