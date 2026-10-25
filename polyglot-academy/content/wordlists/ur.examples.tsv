@@ -599,3 +599,603 @@ rank	sentence	en	ar	names
 299	آپ کو کیا پسند ہے؟	What do you like?	ماذا تحب؟
 300	آپ سے مل کر خوشی ہوئی۔	Pleased to meet you.	سررت بلقائك.
 300	مجھے بہت خوشی ہوئی۔	I was very pleased.	سررت كثيرًا.
+301	بچہ رات بھر روتا رہا۔	The baby cried all night.	ظلّ الطفل يبكي طوال الليل.
+301	ابھی رونا نہیں، سب ٹھیک ہے۔	Don't cry now, everything is fine.	لا تبكِ الآن، كل شيء بخير.
+302	بچے پارٹی میں بہت ہنسے۔	The children laughed a lot at the party.	ضحك الأطفال كثيرًا في الحفلة.
+302	تم کیوں ہنس رہے ہو؟	Why are you laughing?	لماذا تضحك؟
+303	تصویر میں سب مسکرا رہے ہیں۔	Everyone is smiling in the photo.	الجميع يبتسم في الصورة.
+303	وہ لڑکی مجھے دیکھ کر مسکرائی۔	The girl smiled when she saw me.	ابتسمت البنت عندما رأتني.
+304	میری بہن بہت اچھا گاتی ہے۔	My sister sings very well.	أختي تغنّي جيدًا جدًا.
+304	ہم نے سالگرہ پر مل کر گایا۔	We sang together at the birthday.	غنّينا معًا في عيد الميلاد.
+305	شادی میں سب نے ناچا۔	Everyone danced at the wedding.	رقص الجميع في العرس.
+305	میری بیٹی گانے پر ناچتی ہے۔	My daughter dances to songs.	ابنتي ترقص على الأغاني.
+306	پرندے آسمان میں اڑ رہے ہیں۔	The birds are flying in the sky.	الطيور تطير في السماء.
+306	جہاز سمندر کے اوپر اڑا۔	The plane flew over the sea.	طارت الطائرة فوق البحر.
+307	گلاس میز سے نیچے گرا۔	The glass fell off the table.	سقط الكوب من الطاولة.
+307	بچہ باغ میں گر گیا۔	The child fell over in the garden.	سقط الطفل في الحديقة.
+308	آپ نے کون سا رنگ چنا؟	Which colour did you choose?	أيّ لون اخترت؟
+308	میں نے امی کے لیے یہ قمیض چنی۔	I chose this shirt for Mum.	اخترت هذا القميص لأمي.
+309	بچے نے گیند سے کھڑکی توڑ دی۔	The child broke the window with the ball.	كسر الطفل النافذة بالكرة.
+309	مہربانی کر کے پلیٹیں نہیں توڑنا۔	Please don't break the plates.	من فضلك لا تكسر الصحون.
+310	میرا فون ٹوٹ گیا ہے۔	My phone is broken.	انكسر هاتفي.
+310	گلاس گر کر ٹوٹ گیا۔	The glass fell and broke.	سقط الكوب وانكسر.
+311	امی نے چھری سے روٹی کاٹی۔	Mum cut the bread with a knife.	قطعت أمي الخبز بالسكين.
+311	ہم ابھی سالگرہ کا کیک کاٹیں گے۔	We'll cut the birthday cake now.	سنقطع كعكة عيد الميلاد الآن.
+312	ہماری ٹیم آج جیت گئی۔	Our team won today.	فاز فريقنا اليوم.
+312	کون جیتا، تم یا تمہارا بھائی؟	Who won, you or your brother?	من فاز، أنت أم أخوك؟
+313	ہماری ٹیم کل ہار گئی۔	Our team lost yesterday.	خسر فريقنا أمس.
+313	میں کبھی نہیں ہارتا!	I never lose!	أنا لا أخسر أبدًا!
+314	میری چابی بس میں کھو گئی۔	I lost my key on the bus.	ضاع مفتاحي في الحافلة.
+314	بچہ بازار میں کھو گیا تھا۔	The child got lost in the market.	ضاع الطفل في السوق.
+315	ہمارا پرانا کتا کل مر گیا۔	Our old dog died yesterday.	مات كلبنا العجوز أمس.
+315	پانی کے بغیر پھول مر جاتے ہیں۔	Flowers die without water.	تموت الأزهار بلا ماء.
+316	کیا آپ نے یہ سوپ چکھا؟	Have you tasted this soup?	هل تذوّقت هذا الحساء؟
+316	امی کھانا چکھ کر نمک ڈالتی ہیں۔	Mum tastes the food and then adds salt.	أمي تتذوّق الطعام ثم تضيف الملح.
+317	میں اپنا کمرہ بھائی کے ساتھ بانٹتا ہوں۔	I share my room with my brother.	أتقاسم غرفتي مع أخي.
+317	بچوں نے کیک دوستوں میں بانٹا۔	The children shared the cake among their friends.	تقاسم الأطفال الكعكة مع أصدقائهم.
+318	بلی میز پر کود گئی۔	The cat jumped onto the table.	قفزت القطة على الطاولة.
+318	بچے پانی میں کود رہے ہیں۔	The children are jumping into the water.	الأطفال يقفزون في الماء.
+319	ابو نے مجھے تیرنا سکھایا۔	Dad taught me to swim.	علّمني أبي السباحة.
+319	وہ اسکول میں اردو سکھاتی ہیں۔	She teaches Urdu at school.	تعلّم الأردية في المدرسة.
+320	ہم نے عید خاندان کے ساتھ منائی۔	We celebrated Eid with the family.	احتفلنا بالعيد مع العائلة.
+320	تم اپنی سالگرہ کیسے مناؤ گے؟	How will you celebrate your birthday?	كيف ستحتفل بعيد ميلادك؟
+321	میں یہ قمیض بدلنا چاہتا ہوں۔	I'd like to change this shirt.	أريد أن أغيّر هذا القميص.
+321	ہم نے اپنا منصوبہ بدل دیا۔	We changed our plan.	غيّرنا خطتنا.
+322	مجھے اپنی تصویریں دکھاؤ۔	Show me your photos.	أرني صورك.
+322	پولیس نے ہمیں راستہ دکھایا۔	The police showed us the way.	أرتنا الشرطة الطريق.
+323	شادی میں لوگوں نے بہت گانے بجائے۔	At the wedding people played a lot of songs.	في العرس شغّل الناس أغاني كثيرة.
+323	فون بجا لیکن میں نے نہیں سنا۔	The phone rang but I didn't hear it.	رنّ الهاتف لكني لم أسمعه.
+324	میں نے اپنا بیگ گاڑی میں چھوڑ دیا۔	I left my bag in the car.	تركت حقيبتي في السيارة.
+324	مجھے اسٹیشن پر چھوڑ دو۔	Drop me at the station.	اتركني في المحطة.
+325	میں اس کی بات نہیں مانتا۔	I don't believe what he says.	لا أصدّق كلامه.
+325	ٹھیک ہے، میں مان گیا۔	All right, I agree.	حسنًا، وافقت.
+326	چھوٹی لڑکی کتے سے ڈرتی ہے۔	The little girl is afraid of the dog.	البنت الصغيرة تخاف من الكلب.
+326	ڈرو نہیں، یہاں سب محفوظ ہے۔	Don't be afraid, everything is safe here.	لا تخف، كل شيء آمن هنا.
+327	میں نئی سائیکل کے لیے پیسے بچا رہا ہوں۔	I'm saving money for a new bike.	أدّخر المال لدراجة جديدة.
+327	ڈاکٹر نے اس کی جان بچائی۔	The doctor saved his life.	أنقذ الطبيب حياته.
+328	مہربانی کر کے ٹیکسی بلائیں۔	Please call a taxi.	من فضلك اطلب سيارة أجرة.
+328	امی نے ہمیں کھانے پر بلایا۔	Mum called us to eat.	نادتنا أمي إلى الطعام.
+329	بینک کے پاس دائیں مڑیں۔	Turn right by the bank.	انعطف يمينًا عند المصرف.
+329	ٹیکسی ہوٹل کی طرف مڑ گئی۔	The taxi turned towards the hotel.	انعطفت سيارة الأجرة نحو الفندق.
+330	میں نے گلاس پانی سے بھرا۔	I filled the glass with water.	ملأت الكوب بالماء.
+330	وہ اپنا بیگ کتابوں سے بھر رہا ہے۔	He's filling his bag with books.	يملأ حقيبته بالكتب.
+331	کیا تم یہ بھاری ڈبہ اٹھا سکتے ہو؟	Can you lift this heavy box?	هل تستطيع رفع هذا الصندوق الثقيل؟
+331	ابو نے بچے کو اٹھایا۔	Dad picked up the child.	حمل أبي الطفل.
+332	بچے نے ایک سے دس تک گنا۔	The child counted from one to ten.	عدّ الطفل من واحد إلى عشرة.
+332	مہربانی کر کے پیسے دوبارہ گنیں۔	Please count the money again.	من فضلك عُدّ المال مرة أخرى.
+333	بچے نے کھلونا بستر کے نیچے چھپایا۔	The child hid the toy under the bed.	خبّأ الطفل اللعبة تحت السرير.
+333	تم کیا چھپا رہے ہو؟	What are you hiding?	ماذا تخبّئ؟
+334	میں آج کام سے بہت تھک گیا۔	I got very tired from work today.	تعبت كثيرًا من العمل اليوم.
+334	دادا جلدی تھک جاتے ہیں۔	Grandad gets tired quickly.	جدي يتعب بسرعة.
+335	دیوار پر تصویر لگاؤ۔	Put the picture up on the wall.	علّق الصورة على الجدار.
+335	ابو نے کمرے میں نئی روشنی لگائی۔	Dad put a new light in the room.	ركّب أبي ضوءًا جديدًا في الغرفة.
+336	چائے میں چینی ڈالو۔	Put sugar in the tea.	ضع السكر في الشاي.
+336	میں نے دودھ فریج میں ڈال دیا۔	I put the milk in the fridge.	وضعت الحليب في الثلاجة.
+337	بچے نے امی کا ہاتھ پکڑا۔	The child held Mum's hand.	أمسك الطفل يد أمه.
+337	یہ گیند پکڑو، جلدی!	Catch this ball, quick!	أمسك هذه الكرة، بسرعة!
+338	کیا آپ ہماری تصویر کھینچ سکتے ہیں؟	Can you take our photo?	هل تستطيع أن تلتقط صورتنا؟
+338	اس نے دروازہ کھینچ کر کھولا۔	He pulled the door open.	سحب الباب وفتحه.
+339	کیا میں یہ جیکٹ آزما سکتا ہوں؟	May I try this jacket on?	هل أستطيع تجربة هذه السترة؟
+339	ہم نے نیا ہوٹل آزمایا۔	We tried the new hotel.	جرّبنا الفندق الجديد.
+340	استاد نے سوال دوبارہ دہرایا۔	The teacher repeated the question.	كرّر المعلم السؤال.
+340	مہربانی کر کے یہ لفظ دہرائیں۔	Please repeat this word.	من فضلك كرّر هذه الكلمة.
+341	استاد نے سبق بہت اچھا سمجھایا۔	The teacher explained the lesson very well.	شرح المعلم الدرس جيدًا جدًا.
+341	کیا آپ یہ لفظ سمجھا سکتے ہیں؟	Can you explain this word?	هل تستطيع شرح هذه الكلمة؟
+342	ابو روز گاڑی چلاتے ہیں۔	Dad drives the car every day.	أبي يقود السيارة كل يوم.
+342	میرا بھائی بس چلاتا ہے۔	My brother drives a bus.	أخي يقود حافلة.
+343	بچے بہت جلدی بڑھتے ہیں۔	Children grow very fast.	الأطفال يكبرون بسرعة كبيرة.
+343	اس سال قیمتیں بہت بڑھ گئیں۔	Prices went up a lot this year.	ارتفعت الأسعار كثيرًا هذا العام.
+344	بس ہمارے گھر کے سامنے سے گزرتی ہے۔	The bus passes in front of our house.	تمرّ الحافلة أمام بيتنا.
+344	وقت بہت جلدی گزر گیا۔	Time passed very quickly.	مرّ الوقت بسرعة كبيرة.
+345	میری بہن بہت پیسے کماتی ہے۔	My sister earns a lot of money.	أختي تكسب مالًا كثيرًا.
+345	وہ دکان سے اچھا کماتا ہے۔	He earns well from the shop.	يكسب جيدًا من المتجر.
+346	ہم شام کو پارک میں گھومے۔	We strolled in the park in the evening.	تجوّلنا في الحديقة مساءً.
+346	چھٹیوں میں ہم شہر گھومیں گے۔	In the holidays we'll tour the city.	في العطلة سنتجوّل في المدينة.
+347	میں ہر صبح نہاتا ہوں۔	I have a shower every morning.	أستحمّ كل صباح.
+347	بچے سمندر میں نہا رہے ہیں۔	The children are bathing in the sea.	الأطفال يستحمّون في البحر.
+348	دادی ہمیں ہر رات کہانی سناتی ہیں۔	Grandma tells us a story every night.	تحكي لنا جدتي قصة كل ليلة.
+348	مجھے اپنے سفر کے بارے میں سناؤ۔	Tell me about your trip.	احكِ لي عن رحلتك.
+349	کمرے میں روشنی جل رہی ہے۔	The light is on in the room.	الضوء مشتعل في الغرفة.
+349	آگ سے بچو، ہاتھ جل جائے گا۔	Keep away from the fire, your hand will burn.	ابتعد عن النار، ستحترق يدك.
+350	دکان دس بجے کھلتی ہے۔	The shop opens at ten.	يفتح المتجر في العاشرة.
+350	ہوا سے دروازہ کھل گیا۔	The door blew open in the wind.	انفتح الباب بسبب الريح.
+351	گیند میری طرف پھینکو!	Throw the ball to me!	ارمِ الكرة نحوي!
+351	پرانی چیزیں نہیں پھینکنا۔	Don't throw away old things.	لا ترمِ الأشياء القديمة.
+352	کتا باغ میں بھاگ رہا ہے۔	The dog is running in the garden.	الكلب يركض في الحديقة.
+352	بارش آئی تو ہم گھر بھاگے۔	When the rain came, we ran home.	عندما جاء المطر ركضنا إلى البيت.
+353	ہم صبح پہاڑ پر چڑھے۔	We climbed the mountain in the morning.	صعدنا الجبل في الصباح.
+353	بچہ سیڑھی پر چڑھ رہا ہے۔	The child is climbing the stairs.	الطفل يصعد الدرج.
+354	پولیس نے گاڑی روکی۔	The police stopped the car.	أوقفت الشرطة السيارة.
+354	مہربانی کر کے بس یہاں روکیں۔	Please stop the bus here.	من فضلك أوقف الحافلة هنا.
+355	امی مجھے روز سات بجے جگاتی ہیں۔	Mum wakes me at seven every day.	توقظني أمي في السابعة كل يوم.
+355	بچے کو نہیں جگانا، وہ سو رہا ہے۔	Don't wake the baby, he's sleeping.	لا توقظ الطفل، إنه نائم.
+356	میں ڈاکٹر بننا چاہتا ہوں۔	I want to become a doctor.	أريد أن أصبح طبيبًا.
+356	یہ کیک کس چیز سے بنا ہے؟	What is this cake made of?	ممّ صُنعت هذه الكعكة؟
+357	مہربانی کر کے اس تصویر کو نہیں چھونا۔	Please don't touch this picture.	من فضلك لا تلمس هذه الصورة.
+357	بچے نے بلی کو چھوا اور ہنسا۔	The child touched the cat and laughed.	لمس الطفل القطة وضحك.
+358	اسکول پیر کو شروع ہو گا۔	School starts on Monday.	تبدأ المدرسة يوم الاثنين.
+358	پیر کی صبح میری میٹنگ ہے۔	I have a meeting on Monday morning.	عندي اجتماع صباح الاثنين.
+359	میں منگل کو ڈاکٹر کے پاس جاؤں گا۔	I'll go to the doctor on Tuesday.	سأذهب إلى الطبيب يوم الثلاثاء.
+359	امتحان منگل کو ہے یا بدھ کو؟	Is the exam on Tuesday or Wednesday?	هل الامتحان يوم الثلاثاء أم الأربعاء؟
+360	بدھ کی شام سینما چلیں؟	Shall we go to the cinema on Wednesday evening?	هل نذهب إلى السينما مساء الأربعاء؟
+360	عجائب گھر بدھ کو بند ہوتا ہے۔	The museum is closed on Wednesdays.	المتحف مغلق يوم الأربعاء.
+361	ہم جمعرات کو نانی سے ملے۔	We saw Grandma on Thursday.	التقينا بجدتي يوم الخميس.
+361	میٹنگ جمعرات کو ہو گی۔	The meeting will be on Thursday.	سيكون الاجتماع يوم الخميس.
+362	اتوار کو ہم دس بجے اٹھتے ہیں۔	On Sunday we get up at ten.	يوم الأحد نستيقظ في العاشرة.
+362	اتوار کو دفتر بند ہوتا ہے۔	The office is closed on Sundays.	المكتب مغلق يوم الأحد.
+363	بہار میں باغ بہت خوبصورت ہوتا ہے۔	The garden is very beautiful in spring.	تكون الحديقة جميلة جدًا في الربيع.
+363	بہار میں درخت ہرے ہو جاتے ہیں۔	In spring the trees turn green.	تخضرّ الأشجار في الربيع.
+364	خزاں میں موسم ٹھنڈا ہو جاتا ہے۔	In autumn the weather gets cold.	يصبح الطقس باردًا في الخريف.
+364	مجھے خزاں کا موسم بہت پسند ہے۔	I really like the autumn season.	أحب فصل الخريف كثيرًا.
+365	میرے چچا گاؤں میں رہتے ہیں۔	My uncle lives in the village.	يعيش عمي في القرية.
+365	چچا کے دو بیٹے ہیں۔	My uncle has two sons.	لعمي ولدان.
+366	میری خالہ بہت اچھا کھانا پکاتی ہیں۔	My aunt cooks really well.	خالتي تطبخ طعامًا لذيذًا جدًا.
+366	ہم اتوار کو خالہ کے گھر گئے۔	We went to my aunt's house on Sunday.	ذهبنا إلى بيت خالتي يوم الأحد.
+367	میرے ماموں ہسپتال میں ڈاکٹر ہیں۔	My uncle is a doctor at the hospital.	خالي طبيب في المستشفى.
+367	ہم ماموں کے ساتھ سمندر پر گئے۔	We went to the sea with my uncle.	ذهبنا إلى البحر مع خالي.
+368	میری پھوپھی اسکول میں استاد ہیں۔	My aunt is a teacher at a school.	عمتي معلمة في مدرسة.
+368	پھوپھی عید پر تحفے لائیں۔	My aunt brought presents at Eid.	أحضرت عمتي هدايا في العيد.
+369	دادا ہر صبح پارک میں چلتے ہیں۔	Grandad walks in the park every morning.	يمشي جدي في الحديقة كل صباح.
+369	دادا ہمیں پرانی کہانیاں سناتے ہیں۔	Grandad tells us old stories.	يحكي لنا جدي قصصًا قديمة.
+370	دادی بہت مزیدار سوپ بناتی ہیں۔	Grandma makes very tasty soup.	تصنع جدتي حساءً لذيذًا جدًا.
+370	میں ہر ہفتے دادی کو فون کرتا ہوں۔	I phone Grandma every week.	أتصل بجدتي كل أسبوع.
+371	نانا گاؤں میں ایک بڑے گھر میں رہتے ہیں۔	Grandad lives in a big house in the village.	يعيش جدي في بيت كبير في القرية.
+371	نانا روز اخبار پڑھتے ہیں۔	Grandad reads the newspaper every day.	يقرأ جدي الجريدة كل يوم.
+372	نانی ہمارے ساتھ رہتی ہیں۔	Grandma lives with us.	تعيش جدتي معنا.
+372	نانی نے میرے لیے قمیض بنائی۔	Grandma made a shirt for me.	خاطت جدتي قميصًا لي.
+373	ہمارا پڑوسی بہت مہربان آدمی ہے۔	Our neighbour is a very kind man.	جارنا رجل لطيف جدًا.
+373	پڑوسی ہمیشہ ہماری مدد کرتے ہیں۔	The neighbours always help us.	الجيران يساعدوننا دائمًا.
+374	آج رات ہمارے گھر مہمان آ رہے ہیں۔	Guests are coming to our house tonight.	يأتي ضيوف إلى بيتنا الليلة.
+374	مہمان کمرے میں انتظار کر رہے ہیں۔	The guests are waiting in the room.	الضيوف ينتظرون في الغرفة.
+375	منیجر ابھی میٹنگ میں ہیں۔	The manager is in a meeting right now.	المدير في اجتماع الآن.
+375	میں نے منیجر سے بات کی۔	I spoke to the manager.	تكلمت مع المدير.
+376	ڈرائیور ہوٹل کے باہر انتظار کر رہا ہے۔	The driver is waiting outside the hotel.	السائق ينتظر خارج الفندق.
+376	میرا بھائی بس کا ڈرائیور ہے۔	My brother is a bus driver.	أخي سائق حافلة.
+377	پولیس سڑک پر انتظار کر رہی ہے۔	The police are waiting on the road.	الشرطة تنتظر في الشارع.
+377	میں نے جلدی سے پولیس کو فون کیا۔	I quickly phoned the police.	اتصلت بالشرطة بسرعة.
+378	گاہک دودھ کے ساتھ چائے چاہتا ہے۔	The customer wants tea with milk.	الزبون يريد شايًا بالحليب.
+378	آج دکان میں بہت گاہک ہیں۔	There are a lot of customers in the shop today.	في المتجر زبائن كثيرون اليوم.
+379	ہماری ٹیم آج بہت اچھا کھیلی۔	Our team played very well today.	لعب فريقنا جيدًا جدًا اليوم.
+379	تمہاری پسند کی ٹیم کون سی ہے؟	Which team do you like?	ما الفريق الذي تحبه؟
+380	نرس ڈاکٹر کی مدد کر رہی ہے۔	The nurse is helping the doctor.	الممرضة تساعد الطبيب.
+380	میری بہن ہسپتال میں نرس ہے۔	My sister is a nurse at the hospital.	أختي ممرضة في المستشفى.
+381	میرا بھائی ایک کمپنی میں انجینئر ہے۔	My brother is an engineer at a company.	أخي مهندس في شركة.
+381	میں بھی انجینئر بننا چاہتا ہوں۔	I want to become an engineer too.	أريد أن أصبح مهندسًا أيضًا.
+382	ویٹر نے ہمیں دو چائے دیں۔	The waiter gave us two teas.	أعطانا النادل كوبين من الشاي.
+382	ویٹر بل لے کر آیا۔	The waiter brought the bill.	أحضر النادل الفاتورة.
+383	میرے ابو ایک بینک میں ملازم ہیں۔	My dad is an employee at a bank.	أبي موظف في مصرف.
+383	اس کمپنی میں سو ملازم ہیں۔	There are a hundred employees in this company.	في هذه الشركة مئة موظف.
+384	میں ہر صبح ٹھنڈے پانی سے چہرہ دھوتا ہوں۔	I wash my face with cold water every morning.	أغسل وجهي بالماء البارد كل صباح.
+384	بچے کا چہرہ بہت پیارا ہے۔	The baby's face is very sweet.	وجه الطفل لطيف جدًا.
+385	میری بہن کے بال لمبے اور کالے ہیں۔	My sister's hair is long and black.	شعر أختي طويل وأسود.
+385	میں نے آج بال دھوئے۔	I washed my hair today.	غسلت شعري اليوم.
+386	منہ میں کھانا ہو تو نہیں بولنا۔	Don't talk with food in your mouth.	لا تتكلم وفي فمك طعام.
+386	بچہ ہر چیز منہ میں ڈالتا ہے۔	The baby puts everything in its mouth.	الطفل يضع كل شيء في فمه.
+387	میرے کان میں درد ہے۔	I have a pain in my ear.	عندي ألم في أذني.
+387	بلی کے کان چھوٹے ہیں۔	The cat's ears are small.	أذنا القطة صغيرتان.
+388	میں گرا اور میرا بازو ٹوٹ گیا۔	I fell and broke my arm.	سقطت وانكسر ذراعي.
+388	ابو کے بازو بہت مضبوط ہیں۔	Dad's arms are very strong.	ذراعا أبي قويتان جدًا.
+389	لمبے سفر کے بعد میری ٹانگوں میں درد ہے۔	My legs hurt after the long journey.	رجلاي تؤلمانني بعد السفر الطويل.
+389	میرے بھائی کی ٹانگ ٹوٹ گئی۔	My brother's leg got broken.	انكسرت رجل أخي.
+390	یہ جوتا میرے پاؤں کے لیے چھوٹا ہے۔	This shoe is too small for my foot.	هذا الحذاء صغير على قدمي.
+390	بچے کے پاؤں بہت چھوٹے ہیں۔	The baby's feet are very small.	قدما الطفل صغيرتان جدًا.
+391	میں تم سے دل سے پیار کرتا ہوں۔	I love you with all my heart.	أحبك من قلبي.
+391	ڈاکٹر نے میرے دل کو سنا۔	The doctor listened to my heart.	استمع الطبيب إلى قلبي.
+392	میں کھانے کے بعد دانت صاف کرتا ہوں۔	I clean my teeth after eating.	أنظّف أسناني بعد الأكل.
+392	بچے کا پہلا دانت نکلا ہے۔	The baby's first tooth has come through.	ظهرت أول سنّ للطفل.
+393	میری کمر میں بہت درد ہے۔	My back hurts a lot.	ظهري يؤلمني كثيرًا.
+393	وہ بیگ کمر پر اٹھاتا ہے۔	He carries the bag on his back.	يحمل الحقيبة على ظهره.
+394	کتے کی ناک ٹھنڈی ہے۔	The dog's nose is cold.	أنف الكلب بارد.
+394	سردی میں میری ناک لال ہو جاتی ہے۔	My nose goes red in the cold.	يحمرّ أنفي في البرد.
+395	میں نے بہت کھایا، پیٹ میں درد ہے۔	I ate too much; my stomach hurts.	أكلت كثيرًا وبطني يؤلمني.
+395	میرا پیٹ خالی ہے، میں بھوکا ہوں۔	My stomach is empty; I'm hungry.	بطني فارغ، أنا جائع.
+396	میں نے چھری سے انگلی کاٹ لی۔	I cut my finger with a knife.	جرحت إصبعي بالسكين.
+396	ہاتھ میں پانچ انگلیاں ہوتی ہیں۔	A hand has five fingers.	في اليد خمس أصابع.
+397	میرے سر میں درد ہے۔	I have a headache.	عندي صداع.
+397	یہ دوا درد کے لیے اچھی ہے۔	This medicine is good for pain.	هذا الدواء جيد للألم.
+398	میرے بیٹے کو بخار ہے۔	My son has a fever.	ابني عنده حمّى.
+398	بخار ہو تو ڈاکٹر کے پاس جاؤ۔	If you have a fever, go to the doctor.	إذا كانت عندك حمّى فاذهب إلى الطبيب.
+399	یہ دوا صبح اور شام کھائیں۔	Take this medicine morning and evening.	تناول هذا الدواء صباحًا ومساءً.
+399	میں نے میڈیکل اسٹور سے دوا لی۔	I got medicine from the pharmacy.	أخذت دواءً من الصيدلية.
+400	میڈیکل اسٹور ہسپتال کے پاس ہے۔	The pharmacy is near the hospital.	الصيدلية قرب المستشفى.
+400	کیا یہاں کوئی میڈیکل اسٹور ہے؟	Is there a pharmacy here?	هل توجد صيدلية هنا؟
+401	کل ڈاکٹر کے ساتھ میری اپوائنٹمنٹ ہے۔	I have an appointment with the doctor tomorrow.	عندي موعد مع الطبيب غدًا.
+401	کیا مجھے آج اپوائنٹمنٹ مل سکتی ہے؟	Can I get an appointment today?	هل يمكنني أن أحصل على موعد اليوم؟
+402	کھیل صحت کے لیے بہت ضروری ہے۔	Sport is very important for health.	الرياضة مهمة جدًا للصحة.
+402	آپ کے دادا کی صحت کیسی ہے؟	How is your grandfather's health?	كيف صحة جدك؟
+403	ہمارے گھر کا باغ چھوٹا ہے۔	Our house's garden is small.	حديقة بيتنا صغيرة.
+403	بچے باغ میں کھیل رہے ہیں۔	The children are playing in the garden.	الأطفال يلعبون في الحديقة.
+404	تصویر دیوار پر لگی ہے۔	The picture is on the wall.	الصورة معلّقة على الجدار.
+404	میرے کمرے کی دیواریں سفید ہیں۔	The walls of my room are white.	جدران غرفتي بيضاء.
+405	گلاس فرش پر گر گیا۔	The glass fell on the floor.	سقط الكوب على الأرض.
+405	امی نے فرش صاف کیا۔	Mum cleaned the floor.	نظّفت أمي الأرضية.
+406	میں نے کتابیں ایک بڑے ڈبے میں رکھیں۔	I put the books in a big box.	وضعت الكتب في صندوق كبير.
+406	یہ ڈبہ بہت بھاری ہے۔	This box is very heavy.	هذا الصندوق ثقيل جدًا.
+407	کمرے میں روشنی بہت کم ہے۔	There's very little light in the room.	الضوء قليل جدًا في الغرفة.
+407	صبح کی روشنی بہت خوبصورت ہے۔	The morning light is very beautiful.	ضوء الصباح جميل جدًا.
+408	پلیٹیں میز پر رکھ دو۔	Put the plates on the table.	ضع الصحون على الطاولة.
+408	میں نے کھانے کے بعد سب پلیٹیں دھوئیں۔	I washed all the plates after the meal.	غسلت كل الصحون بعد الطعام.
+409	کیا مجھے ایک گلاس پانی مل سکتا ہے؟	Can I have a glass of water?	هل يمكنني أن أحصل على كوب ماء؟
+409	بچے نے گلاس توڑ دیا۔	The child broke the glass.	كسر الطفل الكوب.
+410	میں نے صبح ایک کپ چائے پی۔	I drank a cup of tea in the morning.	شربت كوب شاي في الصباح.
+410	یہ کپ بہت خوبصورت ہے۔	This cup is very pretty.	هذا الفنجان جميل جدًا.
+411	چھری باورچی خانے میں ہے۔	The knife is in the kitchen.	السكين في المطبخ.
+411	یہ چھری بچوں کے لیے خطرناک ہے۔	This knife is dangerous for children.	هذه السكين خطيرة على الأطفال.
+412	سوپ کے لیے ایک چمچ چاہیے۔	I need a spoon for the soup.	أحتاج ملعقة للحساء.
+412	میں نے چائے میں دو چمچ چینی ڈالی۔	I put two spoons of sugar in the tea.	وضعت ملعقتين من السكر في الشاي.
+413	ہم چھری اور کانٹے سے کھاتے ہیں۔	We eat with a knife and fork.	نأكل بالسكين والشوكة.
+413	میرا کانٹا فرش پر گر گیا۔	My fork fell on the floor.	سقطت شوكتي على الأرض.
+414	دودھ فریج میں ہے۔	The milk is in the fridge.	الحليب في الثلاجة.
+414	فریج خالی ہے، بازار جانا ہے۔	The fridge is empty; we have to go to the market.	الثلاجة فارغة، يجب الذهاب إلى السوق.
+415	غسل خانہ دوسری منزل پر ہے۔	The bathroom is on the second floor.	الحمّام في الطابق الثاني.
+415	سنیے، غسل خانہ کہاں ہے؟	Excuse me, where is the bathroom?	عفوًا، أين الحمّام؟
+416	ابو صوفے پر بیٹھے ہیں۔	Dad is sitting on the sofa.	أبي جالس على الأريكة.
+416	اس صوفے پر بیٹھ کر آرام کرو۔	Sit on this sofa and rest.	اجلس على هذه الأريكة وارتح.
+417	ہمارا فلیٹ تیسری منزل پر ہے۔	Our flat is on the third floor.	شقتنا في الطابق الثالث.
+417	یہ فلیٹ چھوٹا لیکن اچھا ہے۔	This flat is small but nice.	هذه الشقة صغيرة لكنها جيدة.
+418	میرا دفتر دوسری منزل پر ہے۔	My office is on the second floor.	مكتبي في الطابق الثاني.
+418	اس گھر کی دو منزلیں ہیں۔	This house has two floors.	لهذا البيت طابقان.
+419	ہم جمعہ کو مچھلی کھاتے ہیں۔	We eat fish on Fridays.	نأكل السمك يوم الجمعة.
+419	یہ مچھلی بہت تازہ ہے۔	This fish is very fresh.	هذا السمك طازج جدًا.
+420	میں نے بازار سے سبزی اور پھل خریدے۔	I bought vegetables and fruit at the market.	اشتريت خضارًا وفاكهة من السوق.
+420	سبزیاں صحت کے لیے اچھی ہیں۔	Vegetables are good for your health.	الخضار مفيدة للصحة.
+421	کھانے میں بہت زیادہ نمک ہے۔	There's too much salt in the food.	في الطعام ملح كثير جدًا.
+421	مہربانی کر کے نمک دے دیں۔	Please pass the salt.	من فضلك أعطني الملح.
+422	امی نے میری سالگرہ کے لیے کیک بنایا۔	Mum made a cake for my birthday.	صنعت أمي كعكة لعيد ميلادي.
+422	یہ کیک بہت میٹھا اور مزیدار ہے۔	This cake is very sweet and tasty.	هذه الكعكة حلوة ولذيذة جدًا.
+423	سردی میں ہم روز سوپ پیتے ہیں۔	In winter we have soup every day.	نتناول الحساء كل يوم في الشتاء.
+423	سوپ بہت گرم ہے، تھوڑا انتظار کرو۔	The soup is very hot, wait a little.	الحساء ساخن جدًا، انتظر قليلًا.
+424	میں ہر صبح سنگترے کا جوس پیتا ہوں۔	I drink orange juice every morning.	أشرب عصير البرتقال كل صباح.
+424	یہ جوس ٹھنڈا اور مزیدار ہے۔	This juice is cold and tasty.	هذا العصير بارد ولذيذ.
+425	میں نے ناشتے میں ایک کیلا کھایا۔	I ate a banana at breakfast.	أكلت موزة في الفطور.
+425	کیلے پیلے اور میٹھے ہیں۔	The bananas are yellow and sweet.	الموز أصفر وحلو.
+426	سردی میں سنگترے بہت سستے ہوتے ہیں۔	Oranges are very cheap in winter.	البرتقال رخيص جدًا في الشتاء.
+426	مجھے ایک سنگترہ دے دو۔	Give me an orange.	أعطني برتقالة.
+427	میں نے سلاد کے لیے ٹماٹر خریدے۔	I bought tomatoes for the salad.	اشتريت طماطم للسلطة.
+427	گرمی کے ٹماٹر بہت مزیدار ہوتے ہیں۔	Summer tomatoes are very tasty.	طماطم الصيف لذيذة جدًا.
+428	امی آلو اور گوشت پکا رہی ہیں۔	Mum is cooking potatoes and meat.	أمي تطبخ البطاطا واللحم.
+428	بچوں کو آلو بہت پسند ہیں۔	Children really like potatoes.	يحب الأطفال البطاطا كثيرًا.
+429	ہم نے رات کے کھانے میں سلاد کھایا۔	We had salad for dinner.	أكلنا سلطة في العشاء.
+429	اس سلاد میں بہت ٹماٹر ہیں۔	There are a lot of tomatoes in this salad.	في هذه السلطة طماطم كثيرة.
+430	گرمی میں بچے آئس کریم کھاتے ہیں۔	In summer children eat ice cream.	في الصيف يأكل الأطفال البوظة.
+430	کیا ہمیں دو آئس کریم مل سکتی ہیں؟	Can we have two ice creams?	هل يمكن أن نأخذ بوظتين؟
+431	مہربانی کر کے بل لے آئیں۔	Please bring the bill.	من فضلك أحضر الفاتورة.
+431	ابو نے ہوٹل کا بل دیا۔	Dad paid the hotel bill.	دفع أبي فاتورة الفندق.
+432	میرے نانا ایک چھوٹے گاؤں میں رہتے ہیں۔	My grandfather lives in a small village.	يعيش جدي في قرية صغيرة.
+432	گاؤں شہر سے بہت دور ہے۔	The village is very far from the city.	القرية بعيدة جدًا عن المدينة.
+433	ہم گرمی میں دریا میں تیرے۔	We swam in the river in summer.	سبحنا في النهر في الصيف.
+433	شہر کے بیچ سے ایک دریا گزرتا ہے۔	A river runs through the middle of the city.	يمرّ نهر في وسط المدينة.
+434	سردی میں پہاڑوں پر برف ہوتی ہے۔	There's snow on the mountains in winter.	يكون الثلج على الجبال في الشتاء.
+434	مجھے پہاڑوں میں چلنا بہت پسند ہے۔	I love walking in the mountains.	أحب المشي في الجبال كثيرًا.
+435	ہم گاڑی سے پل پر سے گزرے۔	We drove over the bridge.	مررنا فوق الجسر بالسيارة.
+435	یہ پل بہت پرانا ہے۔	This bridge is very old.	هذا الجسر قديم جدًا.
+436	ہوٹل شہر کے مرکز میں ہے۔	The hotel is in the city centre.	الفندق في وسط المدينة.
+436	میں بس سے شہر کے مرکز جاتا ہوں۔	I go to the city centre by bus.	أذهب إلى وسط المدينة بالحافلة.
+437	ہم ہفتے کو عجائب گھر گئے۔	We went to the museum on Saturday.	ذهبنا إلى المتحف يوم السبت.
+437	عجائب گھر پانچ بجے بند ہوتا ہے۔	The museum closes at five.	يغلق المتحف في الخامسة.
+438	بچے پارک میں کھیل رہے ہیں۔	The children are playing in the park.	الأطفال يلعبون في الحديقة العامة.
+438	ہمارے گھر کے پاس ایک بڑا پارک ہے۔	There's a big park near our house.	قرب بيتنا حديقة عامة كبيرة.
+439	بینک پانچ بجے بند ہو جاتا ہے۔	The bank closes at five.	يغلق المصرف في الخامسة.
+439	میں نے پیسے بینک میں رکھے۔	I put the money in the bank.	وضعت المال في المصرف.
+440	گرمی میں ہم ہر روز ساحل پر جاتے ہیں۔	In summer we go to the beach every day.	نذهب إلى الشاطئ كل يوم في الصيف.
+440	آج ساحل پر بہت لوگ ہیں۔	There are a lot of people on the beach today.	في الشاطئ ناس كثيرون اليوم.
+441	جنگل میں بہت سے پرندے ہیں۔	There are many birds in the forest.	في الغابة طيور كثيرة.
+441	ہم اتوار کو جنگل میں چلے۔	We walked in the forest on Sunday.	مشينا في الغابة يوم الأحد.
+442	جھیل کے پاس ایک ہوٹل ہے۔	There's a hotel by the lake.	هناك فندق بجانب البحيرة.
+442	سردی میں جھیل کا پانی بہت ٹھنڈا ہوتا ہے۔	In winter the lake water is very cold.	في الشتاء يكون ماء البحيرة باردًا جدًا.
+443	ابو جمعہ کو مسجد جاتے ہیں۔	Dad goes to the mosque on Fridays.	يذهب أبي إلى المسجد يوم الجمعة.
+443	یہ مسجد بہت پرانی اور خوبصورت ہے۔	This mosque is very old and beautiful.	هذا المسجد قديم وجميل جدًا.
+444	لائبریری میں خاموش رہنا ضروری ہے۔	You must keep quiet in the library.	يجب أن تبقى صامتًا في المكتبة.
+444	میں نے لائبریری سے دو کتابیں لیں۔	I took two books from the library.	أخذت كتابين من المكتبة.
+445	کیا ہم آج شام سینما چلیں؟	Shall we go to the cinema this evening?	هل نذهب إلى السينما هذا المساء؟
+445	سینما ہمارے گھر کے بہت قریب ہے۔	The cinema is very close to our house.	السينما قريبة جدًا من بيتنا.
+446	میں سائیکل پر اسکول جاتا ہوں۔	I go to school by bike.	أذهب إلى المدرسة بالدراجة.
+446	ابو نے میرے لیے نئی سائیکل خریدی۔	Dad bought a new bike for me.	اشترى لي أبي دراجة جديدة.
+447	ہم نے دریا میں کشتی چلائی۔	We rowed a boat on the river.	قدنا قاربًا في النهر.
+447	کشتی پل کے نیچے سے گزری۔	The boat went under the bridge.	مرّ القارب تحت الجسر.
+448	کیا آپ کے پاس شہر کا نقشہ ہے؟	Do you have a map of the city?	هل عندك خريطة للمدينة؟
+448	آؤ نقشہ دیکھیں، عجائب گھر کہاں ہے؟	Let's look at the map; where's the museum?	تعال ننظر إلى الخريطة، أين المتحف؟
+449	میں نے اپنا سامان ہوٹل میں چھوڑا۔	I left my luggage at the hotel.	تركت أمتعتي في الفندق.
+449	آپ کا سامان بہت بھاری ہے۔	Your luggage is very heavy.	أمتعتك ثقيلة جدًا.
+450	میں نے پاسپورٹ اپنے بیگ میں رکھا۔	I put my passport in my bag.	وضعت جواز سفري في حقيبتي.
+450	کیا میں آپ کا پاسپورٹ دیکھ سکتا ہوں؟	May I see your passport?	هل يمكنني أن أرى جواز سفرك؟
+451	ہوٹل میں ہماری بکنگ ہے۔	We have a booking at the hotel.	لدينا حجز في الفندق.
+451	میں نے دو لوگوں کے لیے بکنگ کی۔	I made a booking for two people.	حجزت لشخصين.
+452	ہم ٹیکسی سے ہوائی اڈے گئے۔	We went to the airport by taxi.	ذهبنا إلى المطار بسيارة أجرة.
+452	یہاں ٹیکسی ملنا مشکل ہے۔	It's hard to get a taxi here.	من الصعب أن تجد سيارة أجرة هنا.
+453	ٹرین کس پلیٹ فارم سے جائے گی؟	Which platform will the train leave from?	من أيّ رصيف سيغادر القطار؟
+453	ہم پلیٹ فارم پر ٹرین کا انتظار کر رہے ہیں۔	We're waiting for the train on the platform.	ننتظر القطار على الرصيف.
+454	میں نے نانی کو ایک لمبا خط لکھا۔	I wrote a long letter to Grandma.	كتبت رسالة طويلة إلى جدتي.
+454	آج آپ کا ایک خط آیا ہے۔	A letter came for you today.	وصلتك رسالة اليوم.
+455	میرے پاس ایک اچھی خبر ہے!	I have some good news!	عندي خبر جيد!
+455	میں نے یہ خبر اخبار میں پڑھی۔	I read this news in the newspaper.	قرأت هذا الخبر في الجريدة.
+456	ابو ہر صبح اخبار پڑھتے ہیں۔	Dad reads the newspaper every morning.	يقرأ أبي الجريدة كل صباح.
+456	میں نے اسٹیشن پر ایک اخبار خریدا۔	I bought a newspaper at the station.	اشتريت جريدة في المحطة.
+457	مجھے یہ گانا بہت پسند ہے۔	I love this song.	أحب هذه الأغنية كثيرًا.
+457	بچے نیا گانا سیکھ رہے ہیں۔	The children are learning a new song.	الأطفال يتعلّمون أغنية جديدة.
+458	مجھے اپنا فون نمبر دے دیں۔	Give me your phone number.	أعطني رقم هاتفك.
+458	میرے کمرے کا نمبر سو ہے۔	My room number is a hundred.	رقم غرفتي مئة.
+459	میں نے دوست کو پیغام بھیجا۔	I sent my friend a message.	أرسلت رسالة إلى صديقي.
+459	کیا میرے لیے کوئی پیغام ہے؟	Is there a message for me?	هل توجد رسالة لي؟
+460	میں نے ایک سفید قمیض خریدی۔	I bought a white shirt.	اشتريت قميصًا أبيض.
+460	یہ قمیض مجھے تھوڑی بڑی ہے۔	This shirt is a bit big for me.	هذا القميص كبير عليّ قليلًا.
+461	باہر سردی ہے، جیکٹ پہن لو۔	It's cold outside, put on a jacket.	الجو بارد في الخارج، البس سترة.
+461	میں اپنی جیکٹ بس میں بھول گیا۔	I left my jacket on the bus.	نسيت سترتي في الحافلة.
+462	دادا پڑھنے کے لیے عینک لگاتے ہیں۔	Grandad wears glasses for reading.	يلبس جدي نظارة للقراءة.
+462	میں اپنی عینک گھر پر بھول گئی۔	I left my glasses at home.	نسيت نظارتي في البيت.
+463	دھوپ میں ٹوپی پہننا ضروری ہے۔	It's important to wear a cap in the sun.	من المهم لبس قبعة في الشمس.
+463	یہ ٹوپی بہت خوبصورت ہے۔	This cap is very nice.	هذه القبعة جميلة جدًا.
+464	میں ایک نیلی پتلون ڈھونڈ رہا ہوں۔	I'm looking for blue trousers.	أبحث عن بنطال أزرق.
+464	یہ پتلون مجھے چھوٹی ہے۔	These trousers are too small for me.	هذا البنطال صغير عليّ.
+465	کیا اس قمیض کا بڑا سائز ہے؟	Is there a bigger size of this shirt?	هل يوجد مقاس أكبر من هذا القميص؟
+465	آپ کا سائز کیا ہے؟	What's your size?	ما مقاسك؟
+466	کیا میں کارڈ سے پیسے دے سکتا ہوں؟	Can I pay by card?	هل أستطيع الدفع بالبطاقة؟
+466	میں نے عید پر نانی کو کارڈ بھیجا۔	I sent Grandma a card at Eid.	أرسلت لجدتي بطاقة في العيد.
+467	بچے سڑک پر گیند سے کھیل رہے ہیں۔	The children are playing with a ball in the street.	الأطفال يلعبون بالكرة في الشارع.
+467	گیند میری طرف پھینکو۔	Throw the ball to me.	ارمِ الكرة نحوي.
+468	میں نے امی کے لیے پھول خریدے۔	I bought flowers for Mum.	اشتريت زهورًا لأمي.
+468	باغ میں بہت خوبصورت پھول ہیں۔	There are very beautiful flowers in the garden.	في الحديقة زهور جميلة جدًا.
+469	پرندہ درخت پر بیٹھا ہے۔	The bird is sitting in the tree.	الطائر جالس على الشجرة.
+469	پارک میں بہت بڑے درخت ہیں۔	There are very big trees in the park.	في الحديقة العامة أشجار كبيرة جدًا.
+470	مجھے جانور بہت پسند ہیں۔	I really like animals.	أحب الحيوانات كثيرًا.
+470	گھوڑا ایک خوبصورت جانور ہے۔	The horse is a beautiful animal.	الحصان حيوان جميل.
+471	صبح پرندے درختوں پر گاتے ہیں۔	In the morning birds sing in the trees.	في الصباح تغنّي الطيور على الأشجار.
+471	ہمارے گھر میں ایک چھوٹا پرندہ ہے۔	We have a little bird at home.	عندنا طائر صغير في البيت.
+472	میں گاؤں میں گھوڑے پر بیٹھا۔	I rode a horse in the village.	ركبت حصانًا في القرية.
+472	یہ گھوڑا بہت تیز دوڑتا ہے۔	This horse runs very fast.	هذا الحصان يركض بسرعة كبيرة.
+473	آج آسمان بہت نیلا ہے۔	The sky is very blue today.	السماء زرقاء جدًا اليوم.
+473	رات کو ہم نے آسمان میں ستارے دیکھے۔	At night we saw stars in the sky.	في الليل رأينا النجوم في السماء.
+474	آج ہوا بہت تیز ہے۔	The wind is very strong today.	الريح قوية جدًا اليوم.
+474	گاؤں کی ہوا صاف ہوتی ہے۔	The air in the village is clean.	هواء القرية نقيّ.
+475	کل رات بہت برف گری۔	It snowed a lot last night.	تساقط ثلج كثير ليلة أمس.
+475	بچے برف میں کھیل رہے ہیں۔	The children are playing in the snow.	الأطفال يلعبون في الثلج.
+476	شام کو ہم آگ کے پاس بیٹھے۔	In the evening we sat by the fire.	جلسنا قرب النار في المساء.
+476	آگ بچوں کے لیے خطرناک ہے۔	Fire is dangerous for children.	النار خطيرة على الأطفال.
+477	اس کی وجہ کیا ہے؟	What's the reason for this?	ما سبب هذا؟
+477	مجھے ابھی تک وجہ معلوم نہیں۔	I still don't know the reason.	ما زلت لا أعرف السبب.
+478	اس قمیض کی قیمت کیا ہے؟	What is the price of this shirt?	ما سعر هذا القميص؟
+478	اس دکان میں قیمتیں بہت کم ہیں۔	Prices are very low in this shop.	الأسعار منخفضة جدًا في هذا المتجر.
+479	اس ہفتے کا کیا منصوبہ ہے؟	What's the plan for this week?	ما خطة هذا الأسبوع؟
+479	ہمارے پاس ایک نیا منصوبہ ہے۔	We have a new plan.	عندنا خطة جديدة.
+480	ہوم ورک میں ایک چھوٹی غلطی ہے۔	There's a small mistake in the homework.	في الواجب خطأ صغير.
+480	معاف کیجیے، یہ میری غلطی تھی۔	Sorry, it was my mistake.	آسف، كان هذا خطئي.
+481	کل میری ایک ضروری میٹنگ ہے۔	I have an important meeting tomorrow.	عندي اجتماع مهم غدًا.
+481	میٹنگ دس بجے شروع ہو گی۔	The meeting will start at ten.	سيبدأ الاجتماع في العاشرة.
+482	ہماری کلاس میں بیس طالب علم ہیں۔	There are twenty students in our class.	في صفنا عشرون طالبًا.
+482	کلاس صاف اور بڑی ہے۔	The classroom is clean and big.	الصف نظيف وكبير.
+483	آج میرے پاس بہت ہوم ورک ہے۔	I have a lot of homework today.	عندي واجب كثير اليوم.
+483	کیا تم نے ہوم ورک ختم کیا؟	Have you finished your homework?	هل أنهيت واجبك؟
+484	یہ بہت اچھا خیال ہے!	That's a very good idea!	هذه فكرة جيدة جدًا!
+484	میرے پاس ایک خیال ہے، سمندر پر چلیں۔	I have an idea: let's go to the sea.	عندي فكرة، لنذهب إلى البحر.
+485	یہ کہانی بہت لمبی ہے۔	This story is very long.	هذه القصة طويلة جدًا.
+485	میں نے کل ایک اچھی کہانی پڑھی۔	I read a good story yesterday.	قرأت قصة جيدة أمس.
+486	بچے نئے کھلونے سے کھیل رہے ہیں۔	The children are playing with a new toy.	الأطفال يلعبون بلعبة جديدة.
+486	یہ میرے چھوٹے بھائی کا کھلونا ہے۔	This is my little brother's toy.	هذه لعبة أخي الصغير.
+487	ہفتے کی شام ہمارے گھر پارٹی ہے۔	There's a party at our house on Saturday evening.	هناك حفلة في بيتنا مساء السبت.
+487	پارٹی میں کون کون آ رہا ہے؟	Who's coming to the party?	من سيأتي إلى الحفلة؟
+488	عید پر ہم دادی کے گھر جاتے ہیں۔	At Eid we go to Grandma's house.	في العيد نذهب إلى بيت جدتي.
+488	آپ سب کو عید مبارک ہو!	Happy Eid to you all!	عيد مبارك لكم جميعًا!
+489	آج میری سالگرہ ہے!	Today is my birthday!	اليوم عيد ميلادي!
+489	ہم نے امی کی سالگرہ پر کیک بنایا۔	We made a cake for Mum's birthday.	صنعنا كعكة لعيد ميلاد أمي.
+490	میں مستقبل میں ڈاکٹر بننا چاہتا ہوں۔	I want to become a doctor in the future.	أريد أن أصبح طبيبًا في المستقبل.
+490	بچوں کا مستقبل بہت ضروری ہے۔	Children's future is very important.	مستقبل الأطفال مهم جدًا.
+491	آج کیا تاریخ ہے؟	What's the date today?	ما تاريخ اليوم؟
+491	مجھے اس شہر کی تاریخ پسند ہے۔	I like this city's history.	أحب تاريخ هذه المدينة.
+492	آپ کو کون سا رنگ پسند ہے؟	Which colour do you like?	أيّ لون تحب؟
+492	اس قمیض کا رنگ بہت اچھا ہے۔	The colour of this shirt is very nice.	لون هذا القميص جميل جدًا.
+493	میں ایک بڑی کمپنی میں کام کرتا ہوں۔	I work at a big company.	أعمل في شركة كبيرة.
+493	کمپنی نے نئے ملازم لیے۔	The company took on new employees.	وظّفت الشركة موظفين جددًا.
+494	میری ایک تجویز ہے۔	I have a suggestion.	عندي اقتراح.
+494	منیجر نے میری تجویز مان لی۔	The manager accepted my proposal.	قبل المدير اقتراحي.
+495	مجھے امید ہے کل موسم اچھا ہو گا۔	I hope the weather will be nice tomorrow.	آمل أن يكون الطقس جميلًا غدًا.
+495	امید ہے تم امتحان میں کامیاب ہو گے۔	I hope you'll pass the exam.	آمل أن تنجح في الامتحان.
+496	امتحان کے لیے آپ کی اچھی قسمت!	Good luck for the exam!	بالتوفيق في الامتحان!
+496	آج میری قسمت اچھی نہیں تھی۔	I wasn't lucky today.	لم يحالفني الحظّ اليوم.
+497	میری بہن کی شادی گرمی میں ہوئی۔	My sister got married in the summer.	تزوجت أختي في الصيف.
+497	ہم شادی میں بہت خوش تھے۔	We were very happy at the wedding.	كنا سعداء جدًا في العرس.
+498	اس فلیٹ کا کرایہ کتنا ہے؟	How much is the rent for this flat?	كم إيجار هذه الشقة؟
+498	بس کا کرایہ بہت کم ہے۔	The bus fare is very low.	أجرة الحافلة قليلة جدًا.
+499	ہوٹل دریا کی طرف ہے۔	The hotel is towards the river.	الفندق باتجاه النهر.
+499	ہم سمندر کی طرف چلے۔	We walked towards the sea.	مشينا نحو البحر.
+500	کمرے میں بہت اندھیرا ہے۔	It's very dark in the room.	الغرفة مظلمة جدًا.
+500	سردی میں جلدی اندھیرا ہو جاتا ہے۔	In winter it gets dark early.	في الشتاء يحلّ الظلام مبكرًا.
+501	آپ کو آرام کرنا چاہیے۔	You should rest.	يجب أن ترتاح.
+501	میں نے اتوار کو گھر پر آرام کیا۔	I rested at home on Sunday.	ارتحت في البيت يوم الأحد.
+502	پارک بینک اور ہوٹل کے درمیان ہے۔	The park is between the bank and the hotel.	الحديقة بين المصرف والفندق.
+502	میز کمرے کے درمیان میں ہے۔	The table is in the middle of the room.	الطاولة في وسط الغرفة.
+503	مجھے ہرا رنگ بہت پسند ہے۔	I really like the colour green.	أحب اللون الأخضر كثيرًا.
+503	بہار میں سب کچھ ہرا ہو جاتا ہے۔	In spring everything turns green.	في الربيع يخضرّ كل شيء.
+504	میرے بھائی نے پیلی قمیض پہنی۔	My brother wore a yellow shirt.	لبس أخي قميصًا أصفر.
+504	میں نے پیلے پھول خریدے۔	I bought yellow flowers.	اشتريت زهورًا صفراء.
+505	ہمارا ایک بھورا کتا ہے۔	We have a brown dog.	عندنا كلب بنّي.
+505	میں نے بھورے جوتے پہنے۔	I put on brown shoes.	لبست حذاءً بنّيًّا.
+506	میرے ابو بہت مضبوط آدمی ہیں۔	My father is a very strong man.	أبي رجل قوي جدًا.
+506	یہ میز بہت مضبوط ہے۔	This table is very sturdy.	هذه الطاولة متينة جدًا.
+507	دادا بیماری کے بعد بہت کمزور ہیں۔	Grandad is very weak after his illness.	جدي ضعيف جدًا بعد المرض.
+507	کمرے میں روشنی بہت کمزور ہے۔	The light in the room is very weak.	الضوء في الغرفة ضعيف جدًا.
+508	ہم نے غریب لوگوں کی مدد کی۔	We helped poor people.	ساعدنا الفقراء.
+508	وہ غریب ہے لیکن بہت خوش ہے۔	He's poor but very happy.	إنه فقير لكنه سعيد جدًا.
+509	ہمارا پڑوسی بہت امیر آدمی ہے۔	Our neighbour is a very rich man.	جارنا رجل غني جدًا.
+509	امیر ہونا سب کچھ نہیں ہے۔	Being rich isn't everything.	الغنى ليس كل شيء.
+510	یہ بیگ بہت بھاری ہے۔	This bag is very heavy.	هذه الحقيبة ثقيلة جدًا.
+510	میں یہ بھاری ڈبے نہیں اٹھا سکتا۔	I can't lift these heavy boxes.	لا أستطيع رفع هذه الصناديق الثقيلة.
+511	یہ جیکٹ بہت ہلکی ہے۔	This jacket is very light.	هذه السترة خفيفة جدًا.
+511	ہم نے رات کو ہلکا کھانا کھایا۔	We had a light meal at night.	أكلنا طعامًا خفيفًا في الليل.
+512	یہ سڑک رات کو خطرناک ہے۔	This road is dangerous at night.	هذا الطريق خطير في الليل.
+512	سمندر آج بہت خطرناک ہے۔	The sea is very dangerous today.	البحر خطير جدًا اليوم.
+513	یہ پارک بچوں کے لیے محفوظ ہے۔	This park is safe for children.	هذه الحديقة آمنة للأطفال.
+513	اپنا پاسپورٹ محفوظ جگہ پر رکھو۔	Keep your passport in a safe place.	احفظ جواز سفرك في مكان آمن.
+514	ابو مجھ سے بہت ناراض ہیں۔	Dad is very angry with me.	أبي غاضب مني جدًا.
+514	تم کیوں ناراض ہو؟	Why are you upset?	لماذا أنت زعلان؟
+515	میں آج تھوڑا اداس ہوں۔	I'm a bit sad today.	أنا حزين قليلًا اليوم.
+515	دوست کے جانے کے بعد وہ بہت اداس ہے۔	He's very sad since his friend left.	هو حزين جدًا بعد ذهاب صديقه.
+516	یہ فلم بہت بور ہے۔	This film is very boring.	هذا الفيلم مملّ جدًا.
+516	میں گھر پر بور ہو رہا ہوں۔	I'm getting bored at home.	أشعر بالملل في البيت.
+517	یہ کتاب بہت دلچسپ ہے۔	This book is very interesting.	هذا الكتاب ممتع جدًا.
+517	عجائب گھر بہت دلچسپ تھا۔	The museum was very interesting.	كان المتحف ممتعًا جدًا.
+518	میرا چھوٹا بھائی بہت مزاحیہ ہے۔	My little brother is very funny.	أخي الصغير مضحك جدًا.
+518	ہم نے ایک مزاحیہ فلم دیکھی۔	We watched a funny film.	شاهدنا فيلمًا مضحكًا.
+519	یہ بہت عجیب سوال ہے۔	That's a very strange question.	هذا سؤال غريب جدًا.
+519	کل رات میں نے ایک عجیب چیز دیکھی۔	Last night I saw something strange.	ليلة أمس رأيت شيئًا غريبًا.
+520	یہ سوال بہت سادہ ہے۔	This question is very simple.	هذا السؤال بسيط جدًا.
+520	ہمارا گھر سادہ لیکن خوبصورت ہے۔	Our house is simple but beautiful.	بيتنا بسيط لكنه جميل.
+521	آج ہمارے لیے ایک خاص دن ہے۔	Today is a special day for us.	اليوم يوم خاص لنا.
+521	یہ کمرہ مہمانوں کے لیے خاص ہے۔	This room is especially for guests.	هذه الغرفة خاصة بالضيوف.
+522	یہ ہوٹل بہت مشہور ہے۔	This hotel is very famous.	هذا الفندق مشهور جدًا.
+522	وہ ایک مشہور ڈاکٹر ہیں۔	She's a famous doctor.	إنها طبيبة مشهورة.
+523	کل کی فلم شاندار تھی!	Yesterday's film was wonderful!	كان فيلم الأمس رائعًا!
+523	ہماری چھٹیاں شاندار تھیں۔	Our holidays were wonderful.	كانت عطلتنا رائعة.
+524	گھر اب بہت صاف ہے۔	The house is very clean now.	البيت نظيف جدًا الآن.
+524	کیا یہ گلاس صاف ہے؟	Is this glass clean?	هل هذا الكوب نظيف؟
+525	کھیل کے بعد میری قمیض گندی ہو گئی۔	My shirt got dirty after the game.	اتّسخ قميصي بعد اللعب.
+525	گندی پلیٹیں باورچی خانے میں لے جاؤ۔	Take the dirty plates to the kitchen.	خذ الصحون الوسخة إلى المطبخ.
+526	میرا بڑا بھائی شادی شدہ ہے۔	My older brother is married.	أخي الأكبر متزوّج.
+526	کیا آپ شادی شدہ ہیں؟	Are you married?	هل أنت متزوّج؟
+527	ہمارے استاد بہت مہربان ہیں۔	Our teacher is very kind.	معلمنا لطيف جدًا.
+527	ویٹر ہمارے ساتھ بہت مہربان تھا۔	The waiter was very kind to us.	كان النادل لطيفًا جدًا معنا.
+528	میں امتحان کے لیے پریشان ہوں۔	I'm worried about the exam.	أنا قلق من الامتحان.
+528	امی پریشان ہیں کیونکہ رات ہو گئی۔	Mum is worried because night has fallen.	أمي قلقة لأن الليل حلّ.
+529	لائبریری ہمیشہ خاموش ہوتی ہے۔	The library is always quiet.	المكتبة هادئة دائمًا.
+529	خاموش رہو، بچہ سو رہا ہے۔	Be quiet, the baby is sleeping.	اهدأ، الطفل نائم.
+530	یہ روٹی بہت تازہ ہے۔	This bread is very fresh.	هذا الخبز طازج جدًا.
+530	ہم نے بازار سے تازہ مچھلی خریدی۔	We bought fresh fish at the market.	اشترينا سمكًا طازجًا من السوق.
+531	کھانا تیار ہے، آ جاؤ!	Food is ready, come!	الطعام جاهز، تعالوا!
+531	کیا تم امتحان کے لیے تیار ہو؟	Are you ready for the exam?	هل أنت جاهز للامتحان؟
+532	دروازہ کھلا ہے، اندر آ جائیں۔	The door is open, come in.	الباب مفتوح، تفضّل بالدخول.
+532	کیا دکان اتوار کو کھلی ہوتی ہے؟	Is the shop open on Sundays?	هل المتجر مفتوح يوم الأحد؟
+533	جوان لوگوں کو کھیل پسند ہے۔	Young people like sport.	الشباب يحبون الرياضة.
+533	ہمارے استاد بہت جوان ہیں۔	Our teacher is very young.	معلمنا شابّ جدًا.
+534	ہمارا پڑوسی ایک بوڑھا آدمی ہے۔	Our neighbour is an old man.	جارنا رجل مسنّ.
+534	میں نے بس میں ایک بوڑھی عورت کو جگہ دی۔	I gave my seat to an old woman on the bus.	أعطيت مكاني لامرأة مسنّة في الحافلة.
+535	اردو اور عربی بہت مختلف ہیں۔	Urdu and Arabic are very different.	الأردية والعربية مختلفتان جدًا.	عربی
+535	کام پر ہر دن مختلف ہوتا ہے۔	Every day is different at work.	كل يوم مختلف في العمل.
+536	آپ کا بیٹا بہت ہوشیار ہے۔	Your son is very clever.	ابنك ذكي جدًا.
+536	وہ کلاس کی سب سے ہوشیار لڑکی ہے۔	She's the cleverest girl in the class.	إنها أذكى بنت في الصف.
+537	ہماری بلی بہت موٹی ہے۔	Our cat is very fat.	قطتنا سمينة جدًا.
+537	اس نے بہت کھایا اور موٹا ہو گیا۔	He ate a lot and got fat.	أكل كثيرًا وأصبح سمينًا.
+538	میرا بھائی لمبا اور پتلا ہے۔	My brother is tall and thin.	أخي طويل ونحيف.
+538	دادا پہلے بہت پتلے تھے۔	Grandad used to be very thin.	كان جدي نحيفًا جدًا من قبل.
+539	کیا آج شام آنا ممکن ہے؟	Is it possible to come this evening?	هل من الممكن المجيء هذا المساء؟
+539	معاف کیجیے، یہ ممکن نہیں ہے۔	Sorry, that isn't possible.	آسف، هذا غير ممكن.
+540	وہ بہت کامیاب ڈاکٹر ہے۔	He's a very successful doctor.	إنه طبيب ناجح جدًا.
+540	میں امتحان میں کامیاب ہو گیا!	I passed the exam!	نجحت في الامتحان!
+541	مجھے نہیں معلوم وہ کہاں ہے۔	I don't know where he is.	لا أعرف أين هو.
+541	کیا آپ کو معلوم ہے ٹرین کب آئے گی؟	Do you know when the train will come?	هل تعرف متى سيأتي القطار؟
+542	میں اس شہر میں پیدا ہوا۔	I was born in this city.	وُلدت في هذه المدينة.
+542	میرا بھائی سردی میں پیدا ہوا تھا۔	My brother was born in winter.	وُلد أخي في الشتاء.
+543	کھانے کے بعد میٹھا کیا ہے؟	What's for dessert after the meal?	ما الحلوى بعد الطعام؟
+543	یہ چائے بہت میٹھی ہے۔	This tea is very sweet.	هذا الشاي حلو جدًا.
+544	سیدھا جائیں، پھر بائیں مڑیں۔	Go straight, then turn left.	امشِ مستقيمًا ثم انعطف يسارًا.
+544	اسٹیشن یہاں سے سیدھا ہے۔	The station is straight on from here.	المحطة مستقيمة من هنا.
+545	یہ آج ہمارا تیسرا سبق ہے۔	This is our third lesson today.	هذا درسنا الثالث اليوم.
+545	میری بہن تیسری کلاس میں ہے۔	My sister is in the third class.	أختي في الصف الثالث.
+546	کیا یہ پیسے کافی ہیں؟	Is this money enough?	هل هذا المال كافٍ؟
+546	دو گھنٹے کافی نہیں ہیں۔	Two hours isn't enough.	ساعتان لا تكفيان.
+547	میری بہن بیس سال کی ہے۔	My sister is twenty years old.	أختي عمرها عشرون سنة.
+547	بس میں بیس لوگ ہیں۔	There are twenty people on the bus.	في الحافلة عشرون شخصًا.
+548	ایک مہینے میں تیس دن ہوتے ہیں۔	There are thirty days in a month.	في الشهر ثلاثون يومًا.
+548	پارٹی میں تیس لوگ آئے۔	Thirty people came to the party.	جاء ثلاثون شخصًا إلى الحفلة.
+549	کلاس میں چالیس طالب علم ہیں۔	There are forty students in the class.	في الصف أربعون طالبًا.
+549	امی کی عمر چالیس سال ہے۔	Mum is forty years old.	عمر أمي أربعون سنة.
+550	لائبریری میں پچاس نئی کتابیں آئیں۔	Fifty new books came to the library.	وصلت خمسون كتابًا جديدًا إلى المكتبة.
+550	ہم نے بس کا پچاس منٹ انتظار کیا۔	We waited fifty minutes for the bus.	انتظرنا الحافلة خمسين دقيقة.
+551	ابھی سوا دو بجے ہیں۔	It's quarter past two now.	الساعة الآن الثانية والربع.
+551	میٹنگ سوا دس بجے شروع ہو گی۔	The meeting will start at quarter past ten.	سيبدأ الاجتماع في العاشرة والربع.
+552	ساڑھے تین بجے ملتے ہیں۔	Let's meet at half past three.	لنلتقِ في الثالثة والنصف.
+552	سفر ساڑھے چار گھنٹے کا تھا۔	The journey was four and a half hours long.	كانت الرحلة أربع ساعات ونصف.
+553	بینک کے بعد بائیں مڑیں۔	Turn left after the bank.	انعطف يسارًا بعد المصرف.
+553	عجائب گھر بائیں طرف ہے۔	The museum is on the left.	المتحف على اليسار.
+554	دوسری سڑک سے دائیں مڑیں۔	Turn right at the second road.	انعطف يمينًا عند الشارع الثاني.
+554	میڈیکل اسٹور دائیں طرف ہے۔	The pharmacy is on the right.	الصيدلية على اليمين.
+555	ہوٹل کے سامنے ٹیکسی انتظار کر رہی ہے۔	A taxi is waiting in front of the hotel.	سيارة أجرة تنتظر أمام الفندق.
+555	بینک کے سامنے میڈیکل اسٹور ہے۔	There's a pharmacy opposite the bank.	هناك صيدلية مقابل المصرف.
+556	باغ گھر کے پیچھے ہے۔	The garden is behind the house.	الحديقة خلف البيت.
+556	میں گاڑی میں پیچھے بیٹھا۔	I sat in the back of the car.	جلست في الخلف في السيارة.
+557	بلی میز کے اوپر سو رہی ہے۔	The cat is sleeping on top of the table.	القطة نائمة فوق الطاولة.
+557	میرا کمرہ اوپر ہے۔	My room is upstairs.	غرفتي في الأعلى.
+558	جوتے بستر کے نیچے ہیں۔	The shoes are under the bed.	الحذاء تحت السرير.
+558	امی نیچے باورچی خانے میں ہیں۔	Mum is downstairs in the kitchen.	أمي في المطبخ في الأسفل.
+559	آخرکار ہم گھر پہنچ گئے۔	At last we got home.	وصلنا إلى البيت أخيرًا.
+559	آخرکار گرمی کی چھٹیاں آ گئیں!	The summer holidays have finally come!	جاءت عطلة الصيف أخيرًا!
+560	مہربانی کر کے دوبارہ بولیں۔	Please say it again.	من فضلك قلها مرة أخرى.
+560	آپ سے دوبارہ مل کر خوشی ہوئی۔	It was nice to see you again.	سعدت برؤيتك مرة أخرى.
+561	یہ کھانا واقعی بہت مزیدار ہے۔	This food is really delicious.	هذا الطعام لذيذ حقًّا.
+561	کیا واقعی؟ مجھے نہیں معلوم تھا۔	Really? I didn't know.	حقًّا؟ لم أكن أعرف.
+562	میں کل ضرور آؤں گا۔	I'll definitely come tomorrow.	سآتي غدًا بالتأكيد.
+562	آپ یہ عجائب گھر ضرور دیکھیں۔	You must see this museum.	يجب أن ترى هذا المتحف بالتأكيد.
+563	میں تقریباً روز تیرتا ہوں۔	I swim almost every day.	أسبح كل يوم تقريبًا.
+563	ٹرین تقریباً خالی ہے۔	The train is almost empty.	القطار فارغ تقريبًا.
+564	میں ابھی تک تمہارا انتظار کر رہا ہوں۔	I'm still waiting for you.	ما زلت أنتظرك.
+564	ٹرین ابھی تک نہیں آئی۔	The train hasn't come yet.	لم يصل القطار بعد.
+565	اگرچہ وہ بیمار تھا، وہ کام پر گیا۔	Although he was ill, he went to work.	مع أنه كان مريضًا ذهب إلى العمل.
+565	اگرچہ بارش ہو رہی تھی، ہم پارک گئے۔	Although it was raining, we went to the park.	مع أن المطر كان يهطل ذهبنا إلى الحديقة.
+566	جلدی کرو، ورنہ ٹرین چلی جائے گی۔	Hurry, or the train will leave.	أسرع وإلّا سيغادر القطار.
+566	دوا لو، ورنہ بخار بڑھ جائے گا۔	Take the medicine, otherwise the fever will go up.	خذ الدواء وإلّا ستزداد الحمّى.
+567	میں پیسے بچا رہا ہوں تاکہ سفر کر سکوں۔	I'm saving money so that I can travel.	أدّخر المال لكي أستطيع السفر.
+567	آہستہ بولیں تاکہ میں سمجھ سکوں۔	Speak slowly so that I can understand.	تكلّم ببطء لكي أفهم.
+568	وہ ڈاکٹر نہیں بلکہ نرس ہے۔	She isn't a doctor but a nurse.	هي ليست طبيبة بل ممرّضة.
+568	میں چائے نہیں بلکہ کافی پیتا ہوں۔	I don't drink tea but coffee.	لا أشرب الشاي بل القهوة.
+569	یہ کتاب پاکستان کے بارے میں ہے۔	This book is about Pakistan.	هذا الكتاب عن باكستان.	پاکستان
+569	ہم نے میٹنگ میں نئے منصوبے کے بارے میں بات کی۔	We talked about the new plan in the meeting.	تكلمنا عن الخطة الجديدة في الاجتماع.
+570	ہماری ٹیم ایک مضبوط ٹیم کے خلاف کھیلی۔	Our team played against a strong team.	لعب فريقنا ضد فريق قوي.
+570	میں اس خیال کے خلاف ہوں۔	I'm against this idea.	أنا ضد هذه الفكرة.
+571	گرمی کے دوران ہم نے بہت سفر کیا۔	We travelled a lot during the summer.	سافرنا كثيرًا خلال الصيف.
+571	سبق کے دوران فون پر بات نہیں کرنا۔	Don't talk on the phone during the lesson.	لا تتكلم بالهاتف خلال الدرس.
+572	نقشے کے مطابق عجائب گھر قریب ہے۔	According to the map, the museum is close.	حسب الخريطة المتحف قريب.
+572	ہم منصوبے کے مطابق کام کر رہے ہیں۔	We're working according to the plan.	نعمل حسب الخطة.
+573	میں چینی کے بغیر چائے پیتا ہوں۔	I drink tea without sugar.	أشرب الشاي بدون سكر.
+573	پاسپورٹ کے بغیر سفر ممکن نہیں۔	Travelling without a passport isn't possible.	السفر بدون جواز سفر غير ممكن.
+574	اردو کے علاوہ میں عربی بھی سیکھ رہا ہوں۔	Besides Urdu, I'm also learning Arabic.	إضافة إلى الأردية أتعلم العربية أيضًا.	عربی
+574	آپ کے علاوہ سب آ گئے۔	Everyone has come except you.	جاء الجميع ما عداك.
+575	آپ کون سی کتاب پڑھنا چاہتے ہیں؟	Which book do you want to read?	أيّ كتاب تريد أن تقرأ؟
+575	آپ کون سی منزل پر رہتے ہیں؟	Which floor do you live on?	في أيّ طابق تسكن؟
+576	میرے کئی سوال ہیں۔	I have several questions.	عندي عدة أسئلة.
+576	میں کئی دن بعد واپس آؤں گا۔	I'll come back after several days.	سأعود بعد عدة أيام.
+577	میرے دونوں بھائی ڈاکٹر ہیں۔	Both my brothers are doctors.	أخواي كلاهما طبيبان.
+577	ہم دونوں اسکول اکٹھے جاتے ہیں۔	We both go to school together.	نذهب كلانا إلى المدرسة معًا.
+578	ہر کوئی پارٹی میں آیا۔	Everyone came to the party.	جاء الجميع إلى الحفلة.
+578	کلاس میں ہر کوئی اردو بولتا ہے۔	Everyone in the class speaks Urdu.	الجميع في الصف يتكلم الأردية.
+579	شب بخیر، کل ملتے ہیں۔	Good night, see you tomorrow.	تصبح على خير، نلتقي غدًا.
+579	میں نے بچوں کو شب بخیر کہا۔	I said good night to the children.	قلت للأطفال تصبحون على خير.
+580	آپ کامیاب ہو گئے؟ مبارک ہو!	You passed? Congratulations!	نجحت؟ مبروك!
+580	نئے گھر کی مبارک ہو!	Congratulations on the new house!	مبروك على البيت الجديد!
+581	ان شاء اللہ کل موسم اچھا ہو گا۔	God willing, the weather will be nice tomorrow.	إن شاء الله يكون الطقس جميلًا غدًا.
+581	ان شاء اللہ تم امتحان میں کامیاب ہو گے۔	God willing, you'll pass the exam.	إن شاء الله تنجح في الامتحان.
+582	ہمارے گھر میں خوش آمدید!	Welcome to our home!	أهلًا وسهلًا في بيتنا!
+582	پاکستان میں آپ کو خوش آمدید!	Welcome to Pakistan!	أهلًا بك في باكستان!	پاکستان
+583	سنیے، اسٹیشن کہاں ہے؟	Excuse me, where is the station?	عفوًا، أين المحطة؟
+583	سنیے، کیا یہ بس شہر جاتی ہے؟	Excuse me, does this bus go to the city?	عفوًا، هل تذهب هذه الحافلة إلى المدينة؟
+584	چلو، جلدی کرو، بس آ گئی!	Come on, hurry, the bus is here!	هيّا أسرع، جاءت الحافلة!
+584	چلو پارک چلتے ہیں۔	Let's go to the park.	هيّا نذهب إلى الحديقة.
+585	ہم نے عید کے لیے گھر سجایا۔	We decorated the house for Eid.	زيّنّا البيت للعيد.
+585	بچے کمرہ پھولوں سے سجا رہے ہیں۔	The children are decorating the room with flowers.	الأطفال يزيّنون الغرفة بالزهور.
+586	آج آسمان میں بہت بادل ہیں۔	There are a lot of clouds in the sky today.	في السماء غيوم كثيرة اليوم.
+586	کالے بادل آئے، بارش ہو گی۔	Dark clouds have come; it will rain.	جاءت غيوم سوداء، ستمطر.
+587	آج رات چاند بہت خوبصورت ہے۔	The moon is very beautiful tonight.	القمر جميل جدًا الليلة.
+587	ہم نے عید کا چاند دیکھا۔	We saw the Eid moon.	رأينا هلال العيد.
+588	رات کو آسمان میں بہت ستارے ہوتے ہیں۔	At night there are many stars in the sky.	في الليل نجوم كثيرة في السماء.
+588	بچے ستارے گن رہے ہیں۔	The children are counting the stars.	الأطفال يعدّون النجوم.
+589	گاؤں میں ہماری دو گائیں ہیں۔	We have two cows in the village.	عندنا بقرتان في القرية.
+589	گائے کھیت میں ہے۔	The cow is in the field.	البقرة في الحقل.
+590	میرے نانا کھیت میں کام کرتے ہیں۔	My grandfather works in the field.	يعمل جدي في الحقل.
+590	گاؤں کے پاس بڑے بڑے کھیت ہیں۔	There are big fields near the village.	قرب القرية حقول كبيرة.
+591	شہر کی زندگی بہت مصروف ہے۔	City life is very busy.	حياة المدينة مزدحمة جدًا.
+591	گاؤں میں زندگی آسان ہے۔	Life is easy in the village.	الحياة سهلة في القرية.
+592	میں دنیا گھومنا چاہتا ہوں۔	I want to travel around the world.	أريد أن أتجوّل في العالم.
+592	دنیا میں بہت سی زبانیں ہیں۔	There are many languages in the world.	في العالم لغات كثيرة.
+593	امی بچوں سے بہت پیار کرتی ہیں۔	Mum loves the children very much.	أمي تحب الأطفال كثيرًا.
+593	اس کے دل میں سب کے لیے پیار ہے۔	He has love in his heart for everyone.	في قلبه حبّ للجميع.
+594	میری بہن کو نئی نوکری ملی۔	My sister got a new job.	حصلت أختي على وظيفة جديدة.
+594	میں ایک اچھی نوکری ڈھونڈ رہا ہوں۔	I'm looking for a good job.	أبحث عن وظيفة جيدة.
+595	اس نوکری کی تنخواہ اچھی ہے۔	The salary for this job is good.	راتب هذه الوظيفة جيد.
+595	مجھے ہر مہینے تنخواہ ملتی ہے۔	I get a salary every month.	أحصل على راتب كل شهر.
+596	گرمی میں ہم چھت پر سوتے ہیں۔	In summer we sleep on the roof.	في الصيف ننام على السطح.
+596	بلی چھت پر بیٹھی ہے۔	The cat is sitting on the roof.	القطة جالسة على السطح.
+597	دادی سیڑھی آہستہ آہستہ چڑھتی ہیں۔	Grandma climbs the stairs slowly.	تصعد جدتي الدرج ببطء.
+597	سیڑھی کے پاس انتظار کرو۔	Wait by the stairs.	انتظر قرب الدرج.
+598	میرا بچپن گاؤں میں گزرا۔	I spent my childhood in the village.	قضيت طفولتي في القرية.
+598	بچپن کی یادیں بہت پیاری ہوتی ہیں۔	Childhood memories are very dear.	ذكريات الطفولة عزيزة جدًا.
+599	میں بہت خوش قسمت ہوں۔	I'm very lucky.	أنا محظوظ جدًا.
+599	تم خوش قسمت ہو کہ تمہیں یہ نوکری ملی۔	You're lucky you got this job.	أنت محظوظ لأنك حصلت على هذه الوظيفة.
+600	دادی گاؤں میں اکیلی رہتی ہیں۔	Grandma lives alone in the village.	تعيش جدتي وحدها في القرية.
+600	میں اکیلا سفر نہیں کرنا چاہتا۔	I don't want to travel alone.	لا أريد أن أسافر وحدي.
