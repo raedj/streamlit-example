@@ -60,6 +60,17 @@ class CurriculumIntegrityTest {
         assertTrue(en.tracks.filter { it.id in setOf("finance", "credit_risk", "legal") }.all { it.disclaimer != null })
     }
 
+    @Test fun spanishFrenchAndArabicHaveAWorkTrackOutsideTheGeneralSequence() {
+        for (lang in listOf(LanguageCode.SPANISH, LanguageCode.FRENCH, LanguageCode.ARABIC)) {
+            val c = Curriculum.of(lang)
+            assertEquals(listOf("business"), c.tracks.map { it.id }, "$lang tracks")
+            val trackLessons = c.unitsForTrack("business").flatMap { it.lessonIds }.toSet()
+            assertTrue(trackLessons.isNotEmpty(), "$lang business track has no lessons")
+            assertTrue(c.sequencer.orderedLessons().none { it.id in trackLessons }, "$lang track lessons leak into the general path")
+            assertTrue(c.scenariosForTrack("business").isNotEmpty(), "$lang business track has no role-play")
+        }
+    }
+
     @Test fun mandarinHasToneExercises() {
         val zh = Curriculum.of(LanguageCode.MANDARIN)
         assertTrue(zh.lessons.flatMap { it.exercises }.count { it is Exercise.ToneChoice } >= 6)

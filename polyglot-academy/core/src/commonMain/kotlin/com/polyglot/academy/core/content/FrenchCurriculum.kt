@@ -11,6 +11,8 @@ import com.polyglot.academy.core.model.Exercise
 import com.polyglot.academy.core.model.Gender.FEMININE
 import com.polyglot.academy.core.model.Gender.MASCULINE
 import com.polyglot.academy.core.model.LanguageCode
+import com.polyglot.academy.core.model.VocabularySource
+import com.polyglot.academy.core.model.LearningTrack
 import com.polyglot.academy.core.model.PartOfSpeech.ADJECTIVE
 import com.polyglot.academy.core.model.PartOfSpeech.ADVERB
 import com.polyglot.academy.core.model.PartOfSpeech.NOUN
@@ -76,6 +78,40 @@ internal object FrenchCurriculum {
             v("combien", "c'est combien ?", "how much is it?", "بكم؟", PHRASE, A1, "shopping", "/sɛ kɔ̃.bjɛ̃/")
             v("cher", "cher / chère", "expensive; dear", "غالٍ؛ عزيز", ADJECTIVE, A1, "shopping", "/ʃɛʁ/")
             v("pas_cher", "pas cher", "cheap (lit. not expensive)", "رخيص (حرفيًا: ليس غاليًا)", PHRASE, A1, "shopping", "/pa ʃɛʁ/")
+
+            // Home and weather
+            v("maison", "la maison", "house, home", "البيت", NOUN, A1, "home", gender = FEMININE,
+                ex = "Ma maison est petite mais jolie.", exEn = "My house is small but pretty.", exAr = "بيتي صغير لكنه جميل.")
+            v("cuisine", "la cuisine", "kitchen; cooking", "المطبخ؛ الطبخ", NOUN, A1, "home", gender = FEMININE)
+            v("chambre", "la chambre", "bedroom", "غرفة النوم", NOUN, A1, "home", gender = FEMININE)
+            v("j_aime", "j'aime", "I like, I love", "أحبّ", VERB, A1, "home",
+                ex = "J'aime beaucoup les jours de soleil.", exEn = "I really like sunny days.", exAr = "أحبّ الأيام المشمسة كثيرًا.")
+            v("meteo", "la météo", "weather forecast", "النشرة الجوية", NOUN, A2, "weather", gender = FEMININE)
+            v("il_fait_chaud", "il fait chaud", "it's hot", "الجو حار", PHRASE, A1, "weather")
+            v("il_fait_froid", "il fait froid", "it's cold", "الجو بارد", PHRASE, A1, "weather",
+                ex = "En janvier, il fait très froid.", exEn = "In January it's very cold.", exAr = "في يناير يكون الجو باردًا جدًا.")
+            v("il_pleut", "il pleut", "it's raining", "إنها تمطر", PHRASE, A1, "weather")
+            // Health
+            v("medecin", "le médecin", "doctor", "الطبيب", NOUN, A1, "health", gender = MASCULINE)
+            v("j_ai_mal", "j'ai mal à…", "my … hurts", "يؤلمني…", PHRASE, A2, "health",
+                ex = "J'ai mal à la tête.", exEn = "I have a headache.", exAr = "رأسي يؤلمني.")
+            v("tete", "la tête", "head", "الرأس", NOUN, A1, "health", gender = FEMININE)
+            v("fievre", "la fièvre", "fever", "الحمّى", NOUN, A2, "health", gender = FEMININE)
+            v("pharmacie", "la pharmacie", "pharmacy", "الصيدلية", NOUN, A1, "health", gender = FEMININE)
+            v("rendez_vous", "le rendez-vous", "appointment", "الموعد", NOUN, A2, "health", gender = MASCULINE,
+                ex = "Je voudrais prendre rendez-vous avec le médecin.", exEn = "I'd like to make an appointment with the doctor.", exAr = "أودّ حجز موعد مع الطبيب.")
+            v("malade", "malade", "ill, sick", "مريض", ADJECTIVE, A1, "health")
+            // Work (professional track)
+            v("reunion", "la réunion", "meeting", "الاجتماع", NOUN, A2, "business", gender = FEMININE,
+                ex = "La réunion commence à dix heures.", exEn = "The meeting starts at ten.", exAr = "يبدأ الاجتماع في العاشرة.", tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("entreprise", "l'entreprise", "company", "الشركة", NOUN, A2, "business", gender = FEMININE, tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("client", "le client / la cliente", "client, customer", "العميل / العميلة", NOUN, A2, "business", tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("devis", "le devis", "quote, estimate", "عرض السعر", NOUN, B1, "business", gender = MASCULINE, tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("delai", "le délai", "deadline; time allowed", "المهلة", NOUN, B1, "business", gender = MASCULINE,
+                ex = "Le délai est très court.", exEn = "The deadline is very tight.", exAr = "المهلة قصيرة جدًا.", tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("proposition", "la proposition", "proposal", "المقترح", NOUN, B1, "business", gender = FEMININE, tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("ci_joint", "veuillez trouver ci-joint…", "please find attached… (formal email)", "تجدون مرفقًا…", PHRASE, B1, "business", tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("madame_monsieur", "Madame, Monsieur,", "Dear Sir or Madam, (formal letter opening)", "سيدتي، سيدي، (افتتاحية رسمية)", PHRASE, B1, "business", tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
         }
         val vocabulary = vb.items
         val f = LessonFactory(L, vocabulary)
@@ -108,6 +144,19 @@ internal object FrenchCurriculum {
                 listOf(ex("Hier, j'ai travaillé.", "Yesterday I worked.", "أمس عملت."), ex("Elle est partie à huit heures.", "She left at eight.", "غادرت في الثامنة."),
                     ex("J'ai allé au cinéma.", "aller uses être", "الفعل aller يُستخدم مع être", wrong = true)),
                 listOf(g("✗ J'ai allé → ✓ Je suis allé(e).", "✗ J'ai allé ← ✓ Je suis allé(e)."))),
+
+            grammar("il_fait", L, A1, g("Weather: il fait, il pleut", "الطقس: il fait وil pleut"),
+                g("French uses the impersonal il for weather: il fait chaud / froid / beau, il pleut, il neige. The il does not refer to a person.",
+                    "تستخدم الفرنسية الضمير il غير الشخصي للطقس: il fait chaud / froid / beau وil pleut وil neige، ولا يشير il إلى شخص."),
+                listOf(ex("Il fait beau aujourd'hui.", "The weather is nice today.", "الجو جميل اليوم."), ex("Il pleut depuis ce matin.", "It's been raining since this morning.", "إنها تمطر منذ الصباح."),
+                    ex("C'est froid aujourd'hui.", "For the weather say 'il fait froid'", "للطقس قل il fait froid", wrong = true)),
+                listOf(g("✗ Il est chaud (about the weather) → ✓ Il fait chaud.", "✗ Il est chaud (عن الطقس) ← ✓ Il fait chaud."))),
+            grammar("vous", L, A2, g("Formal 'you': vous", "المخاطبة الرسمية: vous"),
+                g("Use vous with clients, officials and people you don't know, even for one person. Verbs take the vous form: Pouvez-vous m'envoyer le devis ?",
+                    "استخدم vous مع العملاء والموظفين ومن لا تعرفهم، حتى لو كان شخصًا واحدًا. ويُصرَّف الفعل مع vous: Pouvez-vous m'envoyer le devis ?"),
+                listOf(ex("Pourriez-vous confirmer la date ?", "Could you confirm the date?", "هل يمكنكم تأكيد الموعد؟"),
+                    ex("Vous peux venir ?", "vous takes 'pouvez'", "vous يأخذ pouvez", wrong = true)),
+                listOf(g("Switching from vous to tu with a client can seem too familiar.", "الانتقال من vous إلى tu مع عميل قد يبدو تبسّطًا زائدًا."))),
         )
 
         val lessons = listOf(
@@ -147,11 +196,38 @@ internal object FrenchCurriculum {
                     fill("p1", L, "Hier, je ___ allée au cinéma.", listOf("suis")),
                     fill("p2", L, "Nous ___ mangé au restaurant.", listOf("avons")),
                 ), prerequisites = listOf("achats")),
+
+            f.lesson("maison", A2, "home", g("Home and weather", "البيت والطقس"), g("Describe your home and talk about the weather.", "صِف بيتك وتحدّث عن الطقس."),
+                Skill.VOCABULARY, listOf("maison", "cuisine", "chambre", "j_aime", "meteo", "il_fait_chaud", "il_fait_froid", "il_pleut"), "il_fait",
+                extra = listOf(
+                    fill("m1", L, "En hiver, il fait ___.", listOf("froid")),
+                    fill("m2", L, "Prends ton parapluie, il ___ !", listOf("pleut")),
+                    order("m3", L, listOf("J'aime", "beaucoup", "ma", "maison"), g("I really like my house.", "أحبّ بيتي كثيرًا.")),
+                ), prerequisites = listOf("passe")),
+            f.lesson("sante", A2, "home", g("At the doctor's", "عند الطبيب"), g("Say what hurts and make an appointment.", "قل ما يؤلمك واحجز موعدًا."),
+                Skill.SPEAKING, listOf("medecin", "j_ai_mal", "tete", "fievre", "pharmacie", "rendez_vous", "malade"), "vous",
+                extra = listOf(
+                    fill("sa1", L, "J'ai mal à la ___.", listOf("tête", "tete")),
+                    fill("sa2", L, "Je voudrais prendre ___ avec le médecin.", listOf("rendez-vous")),
+                    dictation("sa3", L, "J'ai de la fièvre depuis hier.", listOf("J'ai de la fièvre depuis hier")),
+                ), prerequisites = listOf("maison")),
+            f.lesson("travail", B1, "pro_business", g("Meetings and formal emails", "الاجتماعات والرسائل الرسمية"), g("Quotes, deadlines and polite requests with vous.", "عروض الأسعار والمواعيد النهائية والطلبات المهذبة بصيغة vous."),
+                Skill.WRITING, listOf("reunion", "entreprise", "client", "devis", "delai", "proposition", "ci_joint", "madame_monsieur"), "vous",
+                extra = listOf(
+                    fill("t1", L, "Veuillez trouver ___ le devis.", listOf("ci-joint")),
+                    choice("t2", L, "Which is the right way to start a formal email?", listOf("Salut !", "Madame, Monsieur,", "Coucou !"), 1, Skill.FUNCTIONAL),
+                    fill("t3", L, "___-vous confirmer la date de la réunion ? (pouvoir)", listOf("Pouvez", "Pourriez")),
+                    writing("t4", L, g("Write a short email to a client proposing a meeting next week.", "اكتب رسالة قصيرة إلى عميل تقترح فيها اجتماعًا الأسبوع القادم."), 40,
+                        listOf("Madame, Monsieur", "réunion", "proposition", "Cordialement")),
+                )),
         )
         val units = listOf(
             CourseUnit("fr_u_basics", L, A1, g("First steps", "الخطوات الأولى"), g("Greetings and family", "التحيات والعائلة"), listOf("fr_l_salutations", "fr_l_famille")),
             CourseUnit("fr_u_everyday", L, A1, g("Everyday life", "الحياة اليومية"), g("Café and routines", "المقهى والروتين"), listOf("fr_l_cafe", "fr_l_routine")),
             CourseUnit("fr_u_travel", L, A2, g("Out and about", "في الخارج"), g("Travel, shopping and the past", "السفر والتسوق والماضي"), listOf("fr_l_voyage", "fr_l_achats", "fr_l_passe")),
+
+            CourseUnit("fr_u_home", L, A2, g("Home and health", "البيت والصحة"), g("Your home, the weather and the doctor", "بيتك والطقس والطبيب"), listOf("fr_l_maison", "fr_l_sante")),
+            CourseUnit("fr_u_pro_business", L, B1, g("French for work", "الفرنسية للعمل"), g("Meetings and formal emails", "الاجتماعات والرسائل الرسمية"), listOf("fr_l_travail"), trackId = "business"),
         )
         val readings = listOf(
             ReadingPassage(
@@ -181,6 +257,36 @@ internal object FrenchCurriculum {
                 ),
                 listOf("Je voudrais…", "C'est tout, merci.", "Ça fait combien ?"),
             ),
+
+            RolePlayScenario(
+                "fr_s_medecin", L, A2, g("At the doctor's", "عند الطبيب"), g("A GP's surgery in Lyon. Language practice only — not medical advice.", "عيادة طبيب في ليون. للتدرّب اللغوي فقط، وليس استشارة طبية."),
+                g("Explain what hurts, say since when, and ask about the pharmacy.", "اشرح ما يؤلمك ومنذ متى، واسأل عن الصيدلية."),
+                "Bonjour, asseyez-vous. Qu'est-ce qui ne va pas ?", g("Hello, please sit down. What's wrong?", "مرحبًا، تفضّل بالجلوس. ما المشكلة؟"),
+                listOf(
+                    ScenarioBeat(listOf("mal", "tête", "tete", "fièvre", "fievre", "malade"), g("Say what hurts: 'J'ai mal à la tête.'", "قل ما يؤلمك: J'ai mal à la tête."),
+                        "J'ai mal à la tête et j'ai de la fièvre.", "Depuis quand ?", g("Since when?", "منذ متى؟")),
+                    ScenarioBeat(listOf("depuis", "hier", "jours", "semaine"), g("Say since when: 'Depuis hier.'", "قل منذ متى: Depuis hier."),
+                        "Depuis hier soir.", "D'accord. Reposez-vous et buvez beaucoup d'eau.", g("All right. Rest and drink plenty of water.", "حسنًا. استرح واشرب الكثير من الماء.")),
+                    ScenarioBeat(listOf("pharmacie", "où", "ou", "ordonnance"), g("Ask where the pharmacy is.", "اسأل أين الصيدلية."),
+                        "Où est la pharmacie la plus proche ?", "Juste à côté, sur la droite.", g("Right next door, on the right.", "بجانبنا مباشرة، على اليمين.")),
+                ),
+                listOf("J'ai mal à…", "J'ai de la fièvre.", "Depuis quand ?", "Où est la pharmacie ?"),
+            ),
+            RolePlayScenario(
+                "fr_s_reunion", L, B1, g("Planning a project with a client", "التخطيط لمشروع مع عميل"), g("A video call with a client in Montréal.", "مكالمة فيديو مع عميل في مونتريال."),
+                g("Agree on the quote, the deadline and the next step.", "اتفق على عرض السعر والموعد النهائي والخطوة التالية."),
+                "Bonjour. Merci pour votre proposition. On parle du devis ?", g("Hello. Thank you for your proposal. Shall we discuss the quote?", "مرحبًا. شكرًا على مقترحكم. هل نناقش عرض السعر؟"),
+                listOf(
+                    ScenarioBeat(listOf("devis", "prix", "euros", "dollars", "coût", "cout"), g("Explain the quote.", "اشرح عرض السعر."),
+                        "Bien sûr. Le devis s'élève à cinq mille dollars.", "Très bien. Et le délai ?", g("Very good. And the deadline?", "جيد جدًا. وماذا عن المهلة؟")),
+                    ScenarioBeat(listOf("délai", "delai", "semaines", "mois", "date", "vendredi"), g("Give a deadline: 'dans six semaines'.", "حدّد موعدًا: dans six semaines."),
+                        "Nous pouvons livrer dans six semaines.", "Cela nous convient.", g("That works for us.", "يناسبنا ذلك.")),
+                    ScenarioBeat(listOf("e-mail", "mail", "courriel", "envoyer", "envoie", "ci-joint", "contrat"), g("Say you will send a summary by email.", "قل إنك سترسل ملخصًا بالبريد الإلكتروني."),
+                        "Je vous envoie un résumé par e-mail aujourd'hui.", "Merci beaucoup. À bientôt.", g("Thank you very much. Speak soon.", "شكرًا جزيلًا. إلى اللقاء قريبًا.")),
+                ),
+                listOf("Le devis s'élève à…", "Nous pouvons livrer dans…", "Je vous envoie…"),
+                trackId = "business",
+            ),
         )
         fun item(id: String, level: CefrLevel, skill: Skill, prompt: String, options: List<String>, correct: Int) =
             AssessmentItem("fr_a_$id", L, level, skill, Exercise.MultipleChoice("fr_a_$id", skill, Instr.choose, prompt, options, correct))
@@ -199,6 +305,7 @@ internal object FrenchCurriculum {
             item("b2_3", B2, Skill.GRAMMAR, "Bien qu'il ___ tard, il continue.", listOf("est", "soit", "sera"), 1),
         )
         return LanguageCurriculum(L, vocabulary, grammar, units, lessons, readings, scenarios, assessment,
+            tracks = listOf(LearningTrack("business", L, g("French for work", "الفرنسية للعمل"), g("Meetings, formal emails, quotes and deadlines.", "الاجتماعات والرسائل الرسمية وعروض الأسعار والمواعيد النهائية."), A2, null)),
             dictations = listOf(
                 dictation("d1", L, "Je m'appelle Karim.", listOf("Je m'appelle Karim")),
                 dictation("d2", L, "Où est la gare ?", listOf("Où est la gare")),

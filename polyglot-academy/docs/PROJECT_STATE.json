@@ -50,10 +50,10 @@
     }
   },
   "last_tests": {
-    "total": 141,
+    "total": 142,
     "failed": 0,
     "modules": {
-      "core": 100,
+      "core": 101,
       "data": 29,
       "uicore": 12
     },
@@ -84,6 +84,7 @@
   ],
   "recent_changes": [
     "Backup restore (export format v2, transactional import, cloud AI forced off) — K-06",
-    "Android type-check module; fixed 3 null-dereference crashes (D-06..D-08)"
+    "Android type-check module; fixed 3 null-dereference crashes (D-06..D-08)",
+    "Spanish/French/Arabic: +24 words, +3 lessons (home & weather, health, work), +2 role-plays and a 'for work' track each; track integrity validated — K-07 partly addressed"
   ]
 }

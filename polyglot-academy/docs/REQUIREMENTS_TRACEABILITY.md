@@ -29,7 +29,7 @@ Status key: **V** implemented and verified by automated tests · **I** implement
 | PR-08/09 Conversation & scenarios | `ConversationController`, `OfflineTutorEngine`, `feature/tutor` | TutorAndVoiceTest, ServicesIntegrationTest | V (logic) / I (UI) |
 | PR-13 Writing feedback | `WritingService`, `WritingScreen` | ServicesIntegrationTest | V (logic) / I (UI) |
 | PR-15 Mandarin | `mandarin/Pinyin`, tone exercises, Tones screen | MiscCoreTest, CurriculumIntegrityTest | V (logic) / I (UI) |
-| PR-18 Professional tracks | English curriculum tracks | CurriculumIntegrityTest | V (content) / I (UI) |
+| PR-18 Professional tracks | English, Spanish, French, Arabic curriculum tracks | CurriculumIntegrityTest | V (content) / I (UI) |
 | PR-19 Own material | `MaterialService`, Library | ServicesIntegrationTest | P (text/subtitles only) |
 | PR-20 Relaxation | `relax/Relaxation`, RelaxScreen | MiscCoreTest | V (logic) / I (UI) |
 | PR-23 Export/restore/delete | `SqlStore.exportJson/importJson`, `AppServices.deleteEverything`, Settings → Your data | SqlStoreTest, RestoreTest, ServicesIntegrationTest | V (logic); UI not run |

@@ -11,6 +11,8 @@ import com.polyglot.academy.core.model.Exercise
 import com.polyglot.academy.core.model.Gender.FEMININE
 import com.polyglot.academy.core.model.Gender.MASCULINE
 import com.polyglot.academy.core.model.LanguageCode
+import com.polyglot.academy.core.model.VocabularySource
+import com.polyglot.academy.core.model.LearningTrack
 import com.polyglot.academy.core.model.PartOfSpeech.ADJECTIVE
 import com.polyglot.academy.core.model.PartOfSpeech.NOUN
 import com.polyglot.academy.core.model.PartOfSpeech.PHRASE
@@ -73,6 +75,39 @@ internal object ArabicCurriculum {
             v("yamal", "يعمل", "he works", "يشتغل", VERB, A2, "routine", translit = "yaʿmal")
             v("alyawm", "اليوم", "today", "هذا اليوم", NOUN, A1, "routine", translit = "al-yawm")
             v("ghadan", "غدًا", "tomorrow", "اليوم التالي", NOUN, A1, "routine", translit = "ghadan")
+
+            // Home and weather
+            v("ghurfa", "غرفة", "room", "حجرة في البيت", NOUN, A1, "home", translit = "ghurfa", gender = FEMININE,
+                ex = "غرفتي صغيرة وجميلة.", exEn = "My room is small and beautiful.", exAr = "غرفتي صغيرة وجميلة.")
+            v("matbakh", "مطبخ", "kitchen", "مكان الطبخ", NOUN, A1, "home", translit = "maṭbakh", gender = MASCULINE)
+            v("uhibb", "أحبّ", "I love, I like", "أميل إلى الشيء", VERB, A1, "home", translit = "uḥibb",
+                ex = "أحبّ الشاي في الصباح.", exEn = "I like tea in the morning.", exAr = "أحبّ الشاي في الصباح.")
+            v("taqs", "الطقس", "the weather", "حالة الجو", NOUN, A1, "weather", translit = "aṭ-ṭaqs", gender = MASCULINE)
+            v("harr", "حارّ", "hot", "شديد الحرارة", ADJECTIVE, A1, "weather", translit = "ḥārr")
+            v("barid", "بارد", "cold", "قليل الحرارة", ADJECTIVE, A1, "weather", translit = "bārid",
+                ex = "الطقس بارد اليوم.", exEn = "The weather is cold today.", exAr = "الطقس بارد اليوم.")
+            v("matar", "مطر", "rain", "ماء ينزل من السحاب", NOUN, A1, "weather", translit = "maṭar", gender = MASCULINE)
+            v("shita", "الشتاء", "winter", "فصل البرد", NOUN, A1, "weather", translit = "ash-shitāʾ", gender = MASCULINE)
+            // Health
+            v("tabib", "طبيب / طبيبة", "doctor (m./f.)", "من يعالج المرضى", NOUN, A1, "health", translit = "ṭabīb / ṭabība")
+            v("yulimuni", "يؤلمني…", "my … hurts", "أشعر بألم في…", PHRASE, A2, "health", translit = "yuʾlimunī",
+                ex = "يؤلمني رأسي.", exEn = "My head hurts.", exAr = "يؤلمني رأسي.")
+            v("ras", "رأس", "head", "أعلى الجسم", NOUN, A1, "health", translit = "raʾs", gender = MASCULINE)
+            v("marid", "مريض / مريضة", "ill, sick (m./f.)", "غير صحيح الجسم", ADJECTIVE, A1, "health", translit = "marīḍ / marīḍa")
+            v("saydaliyya", "صيدلية", "pharmacy", "مكان بيع الدواء", NOUN, A1, "health", translit = "ṣaydaliyya", gender = FEMININE)
+            v("dawa", "دواء", "medicine", "ما يُعالَج به المريض", NOUN, A2, "health", translit = "dawāʾ", gender = MASCULINE)
+            v("mawid", "موعد", "appointment", "وقت متّفق عليه", NOUN, A2, "health", translit = "mawʿid", gender = MASCULINE,
+                ex = "أريد موعدًا مع الطبيب.", exEn = "I want an appointment with the doctor.", exAr = "أريد موعدًا مع الطبيب.")
+            // Work (professional track)
+            v("ijtima", "اجتماع", "meeting", "لقاء للعمل", NOUN, A2, "business", translit = "ijtimāʿ", gender = MASCULINE,
+                ex = "يبدأ الاجتماع في الساعة العاشرة.", exEn = "The meeting starts at ten o'clock.", exAr = "يبدأ الاجتماع في الساعة العاشرة.", tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("sharika", "شركة", "company", "مؤسسة تجارية", NOUN, A2, "business", translit = "sharika", gender = FEMININE, tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("amil", "عميل / عميلة", "client (m./f.)", "من يتعامل مع الشركة", NOUN, A2, "business", translit = "ʿamīl / ʿamīla", tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("mizaniyya", "ميزانية", "budget", "المال المخصّص لعمل", NOUN, B1, "business", translit = "mīzāniyya", gender = FEMININE, tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("mawid_nihai", "الموعد النهائي", "deadline", "آخر وقت للتسليم", NOUN, B1, "business", translit = "al-mawʿid an-nihāʾī", gender = MASCULINE, tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("iqtirah", "اقتراح", "proposal, suggestion", "رأي يُعرض للنقاش", NOUN, B1, "business", translit = "iqtirāḥ", gender = MASCULINE, tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("murfaq", "تجدون مرفقًا…", "please find attached… (formal email)", "عبارة لإرسال ملف", PHRASE, B1, "business", translit = "tajidūna murfaqan", tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("tahiyya", "تحية طيبة وبعد،", "formal letter opening (≈ 'Dear…')", "افتتاحية الرسائل الرسمية", PHRASE, B1, "business", translit = "taḥiyya ṭayyiba wa-baʿd", tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
         }
         val vocabulary = vb.items
         val f = LessonFactory(L, vocabulary)
@@ -92,6 +127,13 @@ internal object ArabicCurriculum {
                     "تعرّف «ال» الاسم: بيت ← البيت. إذا عُرّفت الصفة أيضًا كانت نعتًا (البيت الكبير)، وإذا نُكّرت كوّنت جملة (البيت كبير)."),
                 listOf(ex("البيت الكبير", "the big house", "البيت الكبير"), ex("البيت كبير.", "The house is big.", "البيت كبير.")),
                 listOf(g("Mixing up 'the big house' and 'the house is big'.", "الخلط بين النعت والخبر."))),
+
+            grammar("idafa", L, A2, g("Possession: the iḍāfa", "الإضافة"),
+                g("Put two nouns side by side to show possession. The first noun never takes ال; the second is definite: بيت الطالب (the student's house), غرفة المدرّس (the teacher's room).",
+                    "تُضمّ كلمتان للدلالة على الملكية: الأولى (المضاف) لا تأخذ (ال)، والثانية (المضاف إليه) معرّفة: بيت الطالب، غرفة المدرّس."),
+                listOf(ex("بيت الطالب", "the student's house", "بيت الطالب"), ex("موعد الطبيب", "the doctor's appointment", "موعد الطبيب"),
+                    ex("البيت الطالب", "The first noun takes no ال", "المضاف لا يأخذ (ال)", wrong = true)),
+                listOf(g("✗ الغرفة المدرّس → ✓ غرفة المدرّس.", "✗ الغرفة المدرّس ← ✓ غرفة المدرّس."))),
         )
         val lessons = listOf(
             f.lesson("greetings", PRE_A1, "basics", g("Greetings", "التحيات"), g("Greet people and introduce yourself.", "التحية والتعريف بالنفس."),
@@ -115,10 +157,37 @@ internal object ArabicCurriculum {
             f.lesson("routine", A2, "everyday", g("Work and study", "العمل والدراسة"), g("Talk about what people do.", "تحدّث عمّا يفعله الناس."),
                 Skill.READING, listOf("yadrus", "yamal", "alyawm", "ghadan", "usra", "sadiq", "mahatta"), "gender",
                 prerequisites = listOf("places")),
+
+            f.lesson("home", A2, "home", g("Home and weather", "البيت والطقس"), g("Describe your home and the weather.", "صِف بيتك والطقس."),
+                Skill.VOCABULARY, listOf("ghurfa", "matbakh", "uhibb", "taqs", "harr", "barid", "matar", "shita"), "idafa",
+                extra = listOf(
+                    choice("ho1", L, "In winter the weather is cold: في الشتاء الطقس ___", listOf("بارد", "حارّ", "مطر"), 0),
+                    order("ho2", L, listOf("غرفة", "الطالب", "كبيرة"), g("The student's room is big.", "غرفة الطالب كبيرة.")),
+                    choice("ho3", L, "the teacher's house:", listOf("بيت المدرّس", "البيت المدرّس", "بيت مدرّس ال"), 0),
+                ), prerequisites = listOf("routine")),
+            f.lesson("health", A2, "home", g("At the doctor's", "عند الطبيب"), g("Say what hurts and ask for an appointment.", "قل ما يؤلمك واطلب موعدًا."),
+                Skill.SPEAKING, listOf("tabib", "yulimuni", "ras", "marid", "saydaliyya", "dawa", "mawid"), "idafa",
+                extra = listOf(
+                    choice("h1", L, "My head hurts:", listOf("يؤلمني رأسي", "رأسي طبيب", "أريد رأس"), 0),
+                    order("h2", L, listOf("أريد", "موعدًا", "مع", "الطبيب"), g("I want an appointment with the doctor.", "أريد موعدًا مع الطبيب.")),
+                    choice("h3", L, "Where do you buy medicine?", listOf("في الصيدلية", "في المطبخ", "في المدرسة"), 0, Skill.VOCABULARY),
+                ), prerequisites = listOf("home")),
+            f.lesson("work", B1, "pro_business", g("Meetings and formal emails", "الاجتماعات والرسائل الرسمية"), g("Budgets, deadlines and formal openings.", "الميزانيات والمواعيد النهائية والافتتاحيات الرسمية."),
+                Skill.WRITING, listOf("ijtima", "sharika", "amil", "mizaniyya", "mawid_nihai", "iqtirah", "murfaq", "tahiyya"), "idafa",
+                extra = listOf(
+                    choice("w1", L, "A formal email opening:", listOf("تحية طيبة وبعد،", "أهلًا يا صديقي!", "مع السلامة"), 0, Skill.FUNCTIONAL),
+                    order("w2", L, listOf("تجدون", "مرفقًا", "الاقتراح"), g("Please find the proposal attached.", "تجدون مرفقًا الاقتراح.")),
+                    choice("w3", L, "the company's budget:", listOf("ميزانية الشركة", "الميزانية الشركة", "ميزانية شركة ال"), 0),
+                    writing("w4", L, g("Write a short email to a client proposing a meeting.", "اكتب رسالة قصيرة إلى عميل تقترح فيها اجتماعًا."), 15,
+                        listOf("تحية طيبة وبعد", "اجتماع", "اقتراح")),
+                )),
         )
         val units = listOf(
             CourseUnit("ar_u_basics", L, PRE_A1, g("First steps", "الخطوات الأولى"), g("Greetings and pronouns", "التحيات والضمائر"), listOf("ar_l_greetings", "ar_l_people")),
             CourseUnit("ar_u_everyday", L, A1, g("Everyday Arabic", "العربية اليومية"), g("Café, places and routines", "المقهى والأماكن والروتين"), listOf("ar_l_cafe", "ar_l_places", "ar_l_routine")),
+
+            CourseUnit("ar_u_home", L, A2, g("Home and health", "البيت والصحة"), g("Your home, the weather and the doctor", "بيتك والطقس والطبيب"), listOf("ar_l_home", "ar_l_health")),
+            CourseUnit("ar_u_pro_business", L, B1, g("Arabic for work", "العربية للعمل"), g("Meetings and formal emails", "الاجتماعات والرسائل الرسمية"), listOf("ar_l_work"), trackId = "business"),
         )
         val readings = listOf(
             ReadingPassage(
@@ -148,6 +217,36 @@ internal object ArabicCurriculum {
                 ),
                 listOf("أريد…", "من فضلك", "شكرًا"),
             ),
+
+            RolePlayScenario(
+                "ar_s_doctor", L, A2, g("At the doctor's", "عند الطبيب"), g("A clinic in Cairo. Language practice only — not medical advice.", "عيادة في القاهرة. للتدرّب اللغوي فقط، وليس استشارة طبية."),
+                g("Say what hurts and ask where the pharmacy is.", "قل ما يؤلمك واسأل أين الصيدلية."),
+                "أهلًا، تفضّل بالجلوس. ممّ تشكو؟ (ahlan, tafaḍḍal bil-julūs. mimma tashkū?)", g("Hello, please sit down. What's the problem?", "أهلًا، تفضّل بالجلوس. ممّ تشكو؟"),
+                listOf(
+                    ScenarioBeat(listOf("يؤلمني", "رأسي", "رأس", "مريض", "مريضة", "ألم"), g("Say: يؤلمني رأسي (yuʾlimunī raʾsī) — my head hurts.", "قل: يؤلمني رأسي."),
+                        "يؤلمني رأسي.", "منذ متى؟ (mundhu matā?)", g("Since when?", "منذ متى؟")),
+                    ScenarioBeat(listOf("أمس", "امس", "منذ", "يوم", "يومين"), g("Say: منذ أمس (mundhu ams) — since yesterday.", "قل: منذ أمس."),
+                        "منذ أمس.", "خذ هذا الدواء واسترح. (khudh hādhā d-dawāʾ wa-istariḥ.)", g("Take this medicine and rest.", "خذ هذا الدواء واسترح.")),
+                    ScenarioBeat(listOf("أين", "اين", "صيدلية", "الصيدلية"), g("Ask: أين الصيدلية؟ (ayna ṣ-ṣaydaliyya?)", "اسأل: أين الصيدلية؟"),
+                        "أين الصيدلية؟", "الصيدلية بجانب العيادة. (aṣ-ṣaydaliyya bi-jānib al-ʿiyāda.)", g("The pharmacy is next to the clinic.", "الصيدلية بجانب العيادة.")),
+                ),
+                listOf("يؤلمني…", "منذ أمس", "أين الصيدلية؟"),
+            ),
+            RolePlayScenario(
+                "ar_s_meeting", L, B1, g("A meeting with a client", "اجتماع مع عميل"), g("An office in Dubai.", "مكتب في دبي."),
+                g("Discuss the budget and the deadline, then promise a follow-up email.", "ناقش الميزانية والموعد النهائي، ثم وعد برسالة متابعة."),
+                "أهلًا وسهلًا. شكرًا على الاقتراح. ما الميزانية؟ (mā l-mīzāniyya?)", g("Welcome. Thank you for the proposal. What is the budget?", "أهلًا وسهلًا. شكرًا على الاقتراح. ما الميزانية؟"),
+                listOf(
+                    ScenarioBeat(listOf("ميزانية", "الميزانية", "دولار", "درهم", "ألف", "الف"), g("State the budget: الميزانية خمسة آلاف دولار.", "اذكر الميزانية: الميزانية خمسة آلاف دولار."),
+                        "الميزانية خمسة آلاف دولار.", "جيد. وما الموعد النهائي؟", g("Good. And what is the deadline?", "جيد. وما الموعد النهائي؟")),
+                    ScenarioBeat(listOf("أسابيع", "اسابيع", "شهر", "الموعد", "أسبوع", "اسبوع"), g("Give a deadline: بعد ستة أسابيع (after six weeks).", "حدّد موعدًا: بعد ستة أسابيع."),
+                        "نستطيع التسليم بعد ستة أسابيع.", "هذا مناسب لنا.", g("That suits us.", "هذا مناسب لنا.")),
+                    ScenarioBeat(listOf("رسالة", "بريد", "أرسل", "ارسل", "مرفق"), g("Say you will send an email today.", "قل إنك سترسل رسالة اليوم."),
+                        "سأرسل لكم رسالة بالتفاصيل اليوم.", "شكرًا جزيلًا.", g("Thank you very much.", "شكرًا جزيلًا.")),
+                ),
+                listOf("الميزانية…", "نستطيع التسليم بعد…", "سأرسل لكم…"),
+                trackId = "business",
+            ),
         )
         fun item(id: String, level: CefrLevel, skill: Skill, prompt: String, options: List<String>, correct: Int, en: String) =
             AssessmentItem("ar_a_$id", L, level, skill, Exercise.MultipleChoice("ar_a_$id", skill, Instr.choose, prompt, options, correct, promptGloss = g(en, prompt)))
@@ -165,6 +264,7 @@ internal object ArabicCurriculum {
             item("b1_2", B1, Skill.GRAMMAR, "الطلاب ___ في المكتبة.", listOf("يدرسون", "يدرس", "تدرس"), 0, "The students study in the library."),
         )
         return LanguageCurriculum(L, vocabulary, grammar, units, lessons, readings, scenarios, assessment,
+            tracks = listOf(LearningTrack("business", L, g("Arabic for work", "العربية للعمل"), g("Meetings, formal emails, budgets and deadlines in Modern Standard Arabic.", "الاجتماعات والرسائل الرسمية والميزانيات والمواعيد النهائية بالعربية الفصحى."), A2, null)),
             dictations = listOf(dictation("d1", L, "أنا طالب", listOf("انا طالب")), dictation("d2", L, "أين المحطة؟", listOf("اين المحطة"))),
             writingPrompts = listOf(writing("wp1", L, g("Introduce yourself in Arabic (name, job or study).", "عرّف بنفسك بالعربية."), 5, listOf("اسمي", "أنا"))),
         )

@@ -54,6 +54,10 @@ class LanguageCurriculum(
             r.questions.forEach { q -> validateExercise(q)?.let { add("${r.id}/${q.id}: $it") } }
         }
         scenarios.forEach { s -> if (s.beats.isEmpty()) add("scenario ${s.id} has no beats") }
+        val trackIds = tracks.map { it.id }.toSet() + CourseUnit.GENERAL_TRACK
+        units.filter { it.trackId !in trackIds }.forEach { add("unit ${it.id} references unknown track ${it.trackId}") }
+        scenarios.filter { it.trackId !in trackIds }.forEach { add("scenario ${it.id} references unknown track ${it.trackId}") }
+        tracks.filter { unitsForTrack(it.id).isEmpty() }.forEach { add("track ${it.id} has no units") }
         assessment.forEach { a -> validateExercise(a.question)?.let { add("assessment ${a.id}: $it") } }
         if (assessment.map { it.level }.distinct().size < 3) add("assessment bank should span at least 3 levels")
     }

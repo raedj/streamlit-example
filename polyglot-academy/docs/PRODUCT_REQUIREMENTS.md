@@ -32,7 +32,7 @@ English, Mandarin Chinese, Spanish, French, Arabic.
 | PR-15 | Mandarin: pinyin with tone marks, tone drills, tone sandhi note, simplified/traditional toggle | Implemented + tested (pinyin) |
 | PR-16 | Daily plan that fits the learner's time budget and does not grow after a missed day | Implemented + tested |
 | PR-17 | Progress analytics from real events, separating observed metrics from estimates; no fabricated data | Implemented + tested |
-| PR-18 | Optional professional tracks (business, banking/finance, credit risk & NPL, legal, career) with "not professional advice" disclaimers | Implemented (English) |
+| PR-18 | Optional professional tracks (business, banking/finance, credit risk & NPL, legal, career) with "not professional advice" disclaimers | Implemented: English (5 tracks); Spanish, French, Arabic ("for work" track) |
 | PR-19 | Import of own material (text, subtitles) → extracted text review → word candidates → review deck | Implemented + tested; PDF/OCR/audio transcription not implemented |
 | PR-20 | Optional relaxation/breathing with evidence-conscious disclaimer | Implemented |
 | PR-21 | AI provider management with own API keys, verified connection tests, preferred provider | Implemented + tested (mocked HTTP) |
