@@ -33,6 +33,24 @@ echo "sdk.dir=/path/to/Android/sdk" > local.properties
 ```
 Expect some first-compile issues in `androidApp` and `androidMain` (type-checked against the framework, never built with AGP/AndroidX).
 
+## Building on your own computer
+1. Install JDK 17+ and the Android SDK (platform 35, build-tools 35), e.g. through Android Studio.
+2. Create `polyglot-academy/local.properties`:
+   - Windows: `sdk.dir=C\:\\Users\\<you>\\AppData\\Local\\Android\\Sdk`
+   - macOS: `sdk.dir=/Users/<you>/Library/Android/sdk` · Linux: `sdk.dir=/home/<you>/Android/Sdk`
+3. Command line: `./gradlew -Ppolyglot.android=true :androidApp:assembleDebug` (Windows: `gradlew.bat ...`).
+4. Android Studio: set `polyglot.android=true` in `gradle.properties` before syncing, otherwise the
+   `androidApp` module is not included (the default `false` keeps JVM-only builds working without Google Maven).
+
+### First-build troubleshooting
+- *Inconsistent JVM-target*: every Android target is set to JVM 17; use JDK 17 or newer as the Gradle JDK.
+- *SDK location not found*: `local.properties` is missing or `sdk.dir` is wrong.
+- *Could not resolve com.android.tools.build:gradle*: Google Maven is not reachable from that machine.
+- Compile errors in `androidApp` or `androidMain`: these sources were type-checked against Android 15
+  framework classes but never compiled with AGP/AndroidX; report the error text so it can be fixed.
+- A local AI server on another computer in your network needs HTTPS (cleartext is allowed only for
+  `127.0.0.1`, `localhost` and the emulator host `10.0.2.2`, see `network_security_config.xml`).
+
 ## Install
 ```bash
 adb install -r androidApp/build/outputs/apk/debug/androidApp-debug.apk

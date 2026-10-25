@@ -15,7 +15,7 @@ if (androidEnabled) {
 
 kotlin {
     jvm("desktop") { compilerOptions { jvmTarget.set(JvmTarget.JVM_17) } }
-    if (androidEnabled) androidTarget()
+    if (androidEnabled) androidTarget { compilerOptions { jvmTarget.set(JvmTarget.JVM_17) } }
     sourceSets {
         commonMain.dependencies { api(project(":core")) }
         commonTest.dependencies { implementation(kotlin("test")) }
