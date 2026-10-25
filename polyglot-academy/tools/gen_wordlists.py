@@ -115,8 +115,9 @@ def check_language(lang):
         seen.add(key)
         if lang in PRON_REQUIRED and not w['pron']:
             fail(wpath, n, 'pronunciation is required for this language')
-        if lang == 'zh' and w['pron'] and not (set(w['pron']) & TONE_MARKS):
-            fail(wpath, n, f"pinyin needs tone marks, got {w['pron']!r}")
+        # Neutral-tone syllables are written with a leading middle dot (的 ·de), as in many dictionaries.
+        if lang == 'zh' and w['pron'] and not (set(w['pron']) & TONE_MARKS) and '·' not in w['pron']:
+            fail(wpath, n, f"pinyin needs tone marks (write a neutral tone as ·de), got {w['pron']!r}")
         if lang == 'en' and w['pron'] and not (w['pron'].startswith('/') and w['pron'].endswith('/')):
             fail(wpath, n, f"IPA must be written between slashes, got {w['pron']!r}")
         if lang == 'ar' and len(ARABIC_LETTERS.findall(w['term'])) > 1 and not ARABIC_MARKS.search(w['term']):

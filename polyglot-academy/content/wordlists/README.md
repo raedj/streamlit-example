@@ -15,7 +15,7 @@ Tab-separated, UTF-8, one entry per line, header required. Trailing empty column
 | `pos` | `noun verb adj adv pron prep conj interj num phrase part measure det` |
 | `topic` | Lowercase topic code (`food`, `time`, `function`, …) |
 | `en`, `ar` | Meaning in English and Arabic |
-| `pron` | English: IPA between slashes. Mandarin: pinyin with tone marks. Arabic, Urdu: Latin transliteration. Others: optional IPA |
+| `pron` | English: IPA between slashes. Mandarin: pinyin with tone marks (a neutral tone is written with a leading middle dot: 的 ·de, 妈妈 māma). Arabic, Urdu: Latin transliteration. Others: optional IPA |
 | `forms` | Comma-separated inflected or irregular forms (`went, gone`; `fue`; `l'`). Also used to find the word in example sentences |
 | `extra` | `key=value; key=value` — language-specific fields (below) |
 | `vocab_id` | Id of the same word in the hand-written curriculum (keeps learners' review state) |

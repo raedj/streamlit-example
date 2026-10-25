@@ -45,13 +45,16 @@ Wiktionary, or HSK lists for Mandarin), record here its source, version, licence
 any share-alike obligations, and re-rank.
 
 All meanings, translations and example sentences in the word lists are original and AI-written.
+Mandarin pinyin, measure words (classifiers), traditional forms and HSK levels are also written from
+general knowledge, not copied from an HSK syllabus file; the HSK levels follow the older 6-level
+scheme and are approximate. A neutral tone is written with a leading middle dot (的 ·de).
 CEFR equivalents of the 10 levels are approximate (1–2 ≈ A1, 3–4 ≈ A2, 5–6 ≈ B1, 7–8 ≈ B2,
 9–10 ≈ B2+ to C1). No claim is made about how much of real text these words cover.
 
 | Language | Levels written | Entries | Examples | Native-speaker review |
 |---|---|---|---|---|
 | English | 1 | 300 / 3000 | 600 | Not reviewed |
-| Mandarin Chinese | — | 0 / 3000 | — | — |
+| Mandarin Chinese | 1 | 300 / 3000 | 600 | Not reviewed |
 | Spanish | 1 | 300 / 3000 | 600 | Not reviewed |
 | French | 1 | 300 / 3000 | 600 | Not reviewed |
 | Arabic | — | 0 / 3000 | — | — |

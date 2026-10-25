@@ -39,7 +39,8 @@ class WordListTest {
                 val need = if (e.level <= 3) 2 else 1
                 if (e.examples.size < need) add("${e.id}: ${e.examples.size} example(s), needs $need")
                 e.examples.filter { it.sentence.isBlank() || it.translation.en.isBlank() || it.translation.ar.isBlank() }.forEach { add("${e.id}: example without both translations: ${it.sentence}") }
-                if (e.language == LanguageCode.MANDARIN && e.pronunciation?.any { it in "āáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ" } != true) add("${e.id}: pinyin without tone marks")
+                // A neutral tone is written with a leading middle dot (的 ·de).
+                if (e.language == LanguageCode.MANDARIN && e.pronunciation?.any { it in "āáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ·" } != true) add("${e.id}: pinyin without tone marks")
                 if (e.language == LanguageCode.ARABIC && e.term.count { it in 'ء'..'ي' } > 1 && e.term.none { it in 'ً'..'ْ' }) add("${e.id}: Arabic term without vowel marks")
             }
         }
@@ -121,6 +122,7 @@ class WordListTest {
         val mz = WordMatcher(LanguageCode.MANDARIN, zh)
         assertEquals(listOf("我", "喜欢", "中国"), mz.tokens("我喜欢中国。"))
         assertFalse(mz.contains(zh[2], "我喜欢你。"))
+        assertEquals(listOf("我", "喜欢"), mz.tokens("我喜欢小明。", listOf("小明")), "names are removed inside unspaced Chinese text")
         assertEquals(listOf("你"), mz.outOfRange(zh[0], WordExample("我喜欢你。", Gloss("", ""))))
     }
 }

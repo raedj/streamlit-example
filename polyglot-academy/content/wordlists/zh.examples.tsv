@@ -1,0 +1,601 @@
+rank	sentence	en	ar	names
+1	这是我的书。	This is my book.	هذا كتابي.
+1	她的名字叫什么？	What is her name?	ما اسمها؟
+2	他是我的老师。	He is my teacher.	هو أستاذي.
+2	这是我哥哥。	This is my older brother.	هذا أخي الأكبر.
+3	我有两个姐姐。	I have two older sisters.	لديّ أختان أكبر مني.
+3	我每天都走路去学校。	I walk to school every day.	أذهب إلى المدرسة مشيًا كل يوم.
+4	你今天去学校吗？	Are you going to school today?	هل تذهب إلى المدرسة اليوم؟
+4	你会做饭吗？	Can you cook?	هل تعرف الطبخ؟
+5	我不喝咖啡。	I don't drink coffee.	لا أشرب القهوة.
+5	今天不冷。	It isn't cold today.	الجو ليس باردًا اليوم.
+6	我买了一本书。	I bought a book.	اشتريت كتابًا.
+6	我吃了饭就走。	I'll leave as soon as I've eaten.	سأذهب بعد أن آكل مباشرة.
+7	我在家看电视。	I'm at home watching TV.	أنا في البيت أشاهد التلفاز.
+7	我妈妈在商店。	My mother is at the shop.	أمي في المتجر.
+8	他是我哥哥。	He is my older brother.	هو أخي الأكبر.
+8	他每天早上喝咖啡。	He drinks coffee every morning.	يشرب القهوة كل صباح.
+9	她是我姐姐。	She is my older sister.	هي أختي الكبرى.
+9	她会说汉语。	She can speak Chinese.	تستطيع أن تتكلم الصينية.
+10	我们是好朋友。	We are good friends.	نحن صديقان حميمان.
+10	我们都喜欢喝茶。	We all like drinking tea.	كلنا نحب شرب الشاي.
+11	我有一个哥哥。	I have an older brother.	لديّ أخ أكبر.
+11	你有时间吗？	Do you have time?	هل لديك وقت؟
+12	这是什么？	What is this?	ما هذا؟
+12	这是我的房间。	This is my room.	هذه غرفتي.
+13	那是什么？	What is that?	ما ذلك؟
+13	那个菜很贵。	That dish is expensive.	ذلك الطبق غالٍ.
+14	我有一个妹妹。	I have a younger sister.	لديّ أخت صغرى.
+14	一年有十二个月。	A year has twelve months.	في السنة اثنا عشر شهرًا.
+15	你要几个苹果？	How many apples do you want?	كم تفاحة تريد؟
+15	他有两个儿子。	He has two sons.	لديه ابنان.
+16	这个人是我的朋友。	This person is my friend.	هذا الشخص صديقي.
+16	那儿有三个人。	There are three people over there.	هناك ثلاثة أشخاص.
+17	我也是学生。	I'm a student too.	أنا طالب أيضًا.
+17	他也喜欢喝咖啡。	He likes coffee too.	هو أيضًا يحب شرب القهوة.
+18	我们都是中国人。	We are all Chinese.	كلنا صينيون.
+18	他们都去北京了。	They have all gone to Beijing.	ذهبوا كلهم إلى بكين.
+19	他的汉语很好。	His Chinese is very good.	لغته الصينية جيدة جدًا.
+19	我很高兴。	I'm very happy.	أنا سعيد جدًا.
+20	你是老师吗？	Are you a teacher?	هل أنت معلم؟
+20	你有手机吗？	Do you have a mobile phone?	هل عندك هاتف محمول؟
+21	我很好，你呢？	I'm fine, and you?	أنا بخير، وأنت؟
+21	你的哥哥呢？	What about your older brother?	وماذا عن أخيك الأكبر؟
+22	你是王先生吧？	You must be Mr Wang?	أنت السيد وانغ، أليس كذلك؟	王
+22	我们一起去吧。	Let's go together.	لنذهب معًا.
+23	我喜欢茶和咖啡。	I like tea and coffee.	أحب الشاي والقهوة.
+23	我和他是朋友。	He and I are friends.	أنا وهو صديقان.
+24	你明天去哪儿？	Where are you going tomorrow?	إلى أين تذهب غدًا؟
+24	我想去中国。	I want to go to China.	أريد أن أذهب إلى الصين.
+25	你什么时候来？	When are you coming?	متى ستأتي؟
+25	他明天来我家。	He is coming to my home tomorrow.	سيأتي إلى بيتي غدًا.
+26	他说汉语。	He speaks Chinese.	هو يتكلم الصينية.
+26	你说什么？	What did you say?	ماذا قلت؟
+27	你看，下雨了！	Look, it's raining!	انظر، إنها تمطر!
+27	你在看什么？	What are you looking at?	إلى ماذا تنظر؟
+28	我想喝水。	I want to drink water.	أريد أن أشرب ماءً.
+28	你想吃什么？	What would you like to eat?	ماذا تريد أن تأكل؟
+29	我要去北京。	I'm going to Beijing.	سأذهب إلى بكين.
+29	你要什么？	What do you want?	ماذا تريد؟
+30	明天你会来吗？	Will you come tomorrow?	هل ستأتي غدًا؟
+30	我不会说中文。	I can't speak Chinese.	لا أعرف التكلم بالصينية.
+31	我今天不能来。	I can't come today.	لا أستطيع أن آتي اليوم.
+31	你能帮我吗？	Can you help me?	هل يمكنك مساعدتي؟
+32	我可以坐这儿吗？	May I sit here?	هل يمكنني الجلوس هنا؟
+32	你可以用我的电脑。	You can use my computer.	يمكنك استخدام حاسوبي.
+33	天气很好。	The weather is good.	الطقس جميل.
+33	好，我们走吧。	OK, let's go.	حسنًا، لنذهب.
+34	你多大了？	How old are you?	كم عمرك؟
+34	我家很大。	My home is big.	بيتي كبير.
+35	我弟弟很小。	My younger brother is very little.	أخي الأصغر صغير جدًا.
+35	这个房间太小了。	This room is too small.	هذه الغرفة صغيرة جدًا.
+36	他有很多朋友。	He has a lot of friends.	لديه أصدقاء كثيرون.
+36	这儿的人太多了。	There are too many people here.	الناس هنا كثيرون جدًا.
+37	今天学生很少。	There are few students today.	الطلاب قليلون اليوم.
+37	这儿的人很少。	There are few people here.	الناس هنا قليلون.
+38	你们是学生吗？	Are you (all) students?	هل أنتم طلاب؟
+38	你们什么时候回家？	When are you going home?	متى تعودون إلى البيت؟
+39	他们在学校学习。	They study at school.	هم يدرسون في المدرسة.
+39	她们都很漂亮。	They are all very pretty.	كلهن جميلات جدًا.
+40	你在看什么书？	What book are you reading?	أي كتاب تقرأ؟
+40	他说什么？	What did he say?	ماذا قال؟
+41	这是谁的书？	Whose book is this?	كتاب من هذا؟
+41	谁想喝茶？	Who wants tea?	من يريد شايًا؟
+42	你是哪里人？	Where are you from?	من أين أنت؟
+42	我的书在哪儿？	Where is my book?	أين كتابي؟
+43	你怎么不吃饭？	Why aren't you eating?	لماذا لا تأكل؟
+43	这个怎么用？	How do you use this?	كيف يُستعمل هذا؟
+44	你为什么不来？	Why aren't you coming?	لماذا لا تأتي؟
+44	你为什么学习汉语？	Why are you learning Chinese?	لماذا تتعلم الصينية؟
+45	你家有几个人？	How many people are in your family?	كم شخصًا في عائلتك؟
+45	你几点回家？	What time are you going home?	متى تعود إلى البيت؟
+46	你们学校有多少学生？	How many students does your school have?	كم طالبًا في مدرستكم؟
+46	一杯咖啡多少钱？	How much is a cup of coffee?	بكم فنجان القهوة؟
+47	我在这里等你。	I'll wait for you here.	سأنتظرك هنا.
+47	这儿的菜很好吃。	The food here is delicious.	الطعام هنا لذيذ.
+48	那里有一个商店。	There is a shop over there.	هناك متجر.
+48	我的书在那儿。	My book is over there.	كتابي هناك.
+49	现在几点了？	What time is it now?	كم الساعة الآن؟
+49	他现在不在家。	He isn't at home now.	هو ليس في البيت الآن.
+50	今天我不想工作。	I don't want to work today.	لا أريد أن أعمل اليوم.
+50	今天很冷。	It's cold today.	الجو بارد اليوم.
+51	我们明天去北京。	We are going to Beijing tomorrow.	سنذهب إلى بكين غدًا.
+51	明天你有时间吗？	Do you have time tomorrow?	هل لديك وقت غدًا؟
+52	昨天下雨了。	It rained yesterday.	أمطرت أمس.
+52	昨天我很忙。	I was very busy yesterday.	كنت مشغولًا جدًا أمس.
+53	你什么时候回家？	When are you going home?	متى ستعود إلى البيت؟
+53	我在家的时候常常看书。	When I'm at home I often read.	عندما أكون في البيت أقرأ كثيرًا.
+54	我今天没有时间。	I don't have time today.	ليس لديّ وقت اليوم.
+54	时间不早了，我们走吧。	It's getting late, let's go.	تأخر الوقت، لنذهب.
+55	我在北京住了三年。	I lived in Beijing for three years.	عشت في بكين ثلاث سنوات.
+55	我学习了两年汉语。	I studied Chinese for two years.	درست الصينية سنتين.
+56	我们在北京玩了五天。	We spent five days in Beijing.	قضينا خمسة أيام في بكين.
+56	我想休息几天。	I want to rest for a few days.	أريد أن أرتاح بضعة أيام.
+57	现在八点。	It's eight o'clock now.	الساعة الآن الثامنة.
+57	我每天早上七点吃早饭。	I have breakfast at seven every morning.	أتناول الفطور في السابعة كل صباح.
+58	请等我五分钟。	Please wait five minutes for me.	انتظرني خمس دقائق من فضلك.
+58	从我家到学校走十分钟。	It's a ten-minute walk from my home to school.	من بيتي إلى المدرسة عشر دقائق مشيًا.
+59	明天上午我们去商店。	Tomorrow morning we're going to the shop.	صباح الغد سنذهب إلى المتجر.
+59	我上午不在家。	I'm not at home in the morning.	لست في البيت قبل الظهر.
+60	她下午三点来。	She is coming at three in the afternoon.	ستأتي في الساعة الثالثة بعد الظهر.
+60	下午我们去商店吧。	Let's go to the shop in the afternoon.	لنذهب إلى المتجر بعد الظهر.
+61	你今天晚上做什么？	What are you doing this evening?	ماذا ستفعل هذا المساء؟
+61	晚上我常常在家。	I'm usually at home in the evening.	أكون في البيت غالبًا في المساء.
+62	早上我不吃东西。	I don't eat anything in the morning.	لا آكل شيئًا في الصباح.
+62	他早上很忙。	He is very busy in the morning.	هو مشغول جدًا في الصباح.
+63	今天星期几？	What day of the week is it today?	ما اليوم؟
+63	我们下个星期去北京。	We are going to Beijing next week.	سنذهب إلى بكين الأسبوع القادم.
+64	这个月我很忙。	I'm very busy this month.	أنا مشغول جدًا هذا الشهر.
+64	北京的一月很冷。	January in Beijing is very cold.	شهر يناير في بكين بارد جدًا.
+65	他不在家。	He isn't at home.	هو ليس في البيت.
+65	我家离这儿不远。	My home isn't far from here.	بيتي ليس بعيدًا عن هنا.
+66	我爸爸是医生。	My father is a doctor.	أبي طبيب.
+66	爸爸在公司工作。	Dad works at a company.	أبي يعمل في شركة.
+67	我给妈妈打电话。	I'm calling my mother.	أتصل بأمي.
+67	我妈妈是老师。	My mother is a teacher.	أمي معلمة.
+68	哥哥在北京工作。	My older brother works in Beijing.	أخي الأكبر يعمل في بكين.
+68	我哥哥有一个女儿。	My older brother has a daughter.	أخي الأكبر لديه بنت.
+69	我姐姐是医生。	My older sister is a doctor.	أختي الكبرى طبيبة.
+69	姐姐喜欢喝咖啡。	My older sister likes coffee.	أختي الكبرى تحب القهوة.
+70	弟弟喜欢玩电脑。	My younger brother likes playing on the computer.	أخي الأصغر يحب اللعب على الحاسوب.
+70	我有一个弟弟。	I have a younger brother.	لديّ أخ أصغر.
+71	我妹妹是学生。	My younger sister is a student.	أختي الصغرى طالبة.
+71	妹妹喜欢小狗。	My younger sister likes puppies.	أختي الصغرى تحب الجراء.
+72	他的儿子是医生。	His son is a doctor.	ابنه طبيب.
+72	我有两个儿子。	I have two sons.	لديّ ابنان.
+73	她有一个女儿。	She has a daughter.	لديها بنت.
+73	我女儿喜欢唱歌。	My daughter likes singing.	ابنتي تحب الغناء.
+74	你有孩子吗？	Do you have children?	هل لديك أطفال؟
+74	这个孩子很高兴。	This child is very happy.	هذا الطفل سعيد جدًا.
+75	他是我的好朋友。	He is my good friend.	هو صديقي العزيز.
+75	我和朋友一起吃饭。	I eat with my friends.	آكل مع أصدقائي.
+76	我们的老师很好。	Our teacher is very good.	معلمنا جيد جدًا.
+76	老师在问问题。	The teacher is asking questions.	المعلم يطرح أسئلة.
+77	我是学生。	I am a student.	أنا طالب.
+77	这个学校有很多学生。	This school has a lot of students.	في هذه المدرسة طلاب كثيرون.
+78	她是医生。	She is a doctor.	هي طبيبة.
+78	医生说我要多休息。	The doctor says I need to rest more.	يقول الطبيب إنني أحتاج إلى راحة أكثر.
+79	王先生是我的老师。	Mr Wang is my teacher.	السيد وانغ معلمي.	王
+79	先生，你要买什么？	Sir, what would you like to buy?	ماذا تريد أن تشتري يا سيدي؟
+80	李小姐在公司工作。	Miss Li works at a company.	الآنسة لي تعمل في شركة.	李
+80	小姐，你要喝什么？	Miss, what would you like to drink?	ماذا تريدين أن تشربي يا آنسة؟
+81	你叫什么名字？	What's your name?	ما اسمك؟
+81	我不知道他的名字。	I don't know his name.	لا أعرف اسمه.
+82	我叫小明。	My name is Xiaoming.	اسمي شياومينغ.	小明
+82	他叫什么名字？	What's his name?	ما اسمه؟
+83	他吃了很多。	He ate a lot.	أكل كثيرًا.
+83	我们去吃中国菜吧。	Let's go and eat Chinese food.	لنذهب لنأكل طعامًا صينيًا.
+84	你想喝什么？	What would you like to drink?	ماذا تريد أن تشرب؟
+84	他喝了很多咖啡。	He drank a lot of coffee.	شرب كثيرًا من القهوة.
+85	你在做什么？	What are you doing?	ماذا تفعل؟
+85	我不会做饭。	I can't cook.	لا أعرف الطبخ.
+86	我想买一本书。	I want to buy a book.	أريد أن أشتري كتابًا.
+86	你在哪儿买的？	Where did you buy it?	من أين اشتريته؟
+87	这个商店卖什么？	What does this shop sell?	ماذا يبيع هذا المتجر؟
+87	这儿卖中国茶。	Chinese tea is sold here.	يُباع الشاي الصيني هنا.
+88	我在北京学习汉语。	I'm studying Chinese in Beijing.	أدرس الصينية في بكين.
+88	他每天晚上学习。	He studies every evening.	يدرس كل مساء.
+89	你在哪儿工作？	Where do you work?	أين تعمل؟
+89	她的工作很忙。	Her job is very busy.	عملها مزدحم جدًا.
+90	我晚上十点睡觉。	I go to bed at ten at night.	أنام في العاشرة ليلًا.
+90	孩子在睡觉。	The child is sleeping.	الطفل نائم.
+91	我想回家。	I want to go home.	أريد أن أعود إلى البيت.
+91	他明天回北京。	He goes back to Beijing tomorrow.	سيعود إلى بكين غدًا.
+92	商店几点开门？	What time does the shop open?	متى يفتح المتجر؟
+92	请你开门。	Please open the door.	افتح الباب من فضلك.
+93	请坐这儿。	Please sit here.	اجلس هنا من فضلك.
+93	你坐这个椅子吧。	Sit on this chair.	اجلس على هذا الكرسي.
+94	你住在哪儿？	Where do you live?	أين تسكن؟
+94	我们住在一起。	We live together.	نحن نسكن معًا.
+95	我喜欢听歌。	I like listening to songs.	أحب الاستماع إلى الأغاني.
+95	你听，有人在唱歌。	Listen, someone is singing.	اسمع، هناك من يغني.
+96	请读这个字。	Please read this character.	اقرأ هذا الحرف من فضلك.
+96	我每天晚上读书。	I read every evening.	أقرأ كل مساء.
+97	这个字怎么写？	How do you write this character?	كيف يُكتب هذا الحرف؟
+97	请写你的名字。	Please write your name.	اكتب اسمك من فضلك.
+98	我晚上给你打电话。	I'll call you this evening.	سأتصل بك في المساء.
+98	他在打电话。	He is on the phone.	هو يتكلم في الهاتف.
+99	你认识他吗？	Do you know him?	هل تعرفه؟
+99	我不认识这个字。	I don't know this character.	لا أعرف هذا الحرف.
+100	我不知道。	I don't know.	لا أعرف.
+100	你知道他的名字吗？	Do you know his name?	هل تعرف اسمه؟
+101	我喜欢喝茶。	I like drinking tea.	أحب شرب الشاي.
+101	你喜欢北京吗？	Do you like Beijing?	هل تحب بكين؟
+102	我爱我的家。	I love my family.	أحب عائلتي.
+102	妈妈很爱我们。	Mum loves us very much.	أمي تحبنا كثيرًا.
+103	我觉得很累。	I feel very tired.	أشعر بتعب شديد.
+103	你觉得这本书好不好？	Do you think this book is good?	هل تظن أن هذا الكتاب جيد؟
+104	请给我一杯水。	Please give me a glass of water.	أعطني كوب ماء من فضلك.
+104	他给了我一本书。	He gave me a book.	أعطاني كتابًا.
+105	你在找什么？	What are you looking for?	عمّ تبحث؟
+105	我在找我的书。	I'm looking for my book.	أبحث عن كتابي.
+106	我在火车站等你。	I'll wait for you at the train station.	سأنتظرك في محطة القطار.
+106	我等了他一个小时。	I waited for him for an hour.	انتظرته ساعة.
+107	我可以用你的手机吗？	May I use your phone?	هل يمكنني استخدام هاتفك؟
+107	我不会用这个。	I don't know how to use this.	لا أعرف كيف أستخدم هذا.
+108	我们走吧。	Let's go.	لنذهب.
+108	我们走路去学校。	We walk to school.	نذهب إلى المدرسة مشيًا.
+109	小狗跑到我这儿来了。	The puppy ran over to me.	ركض الجرو نحوي.
+109	他跑到学校去了。	He ran to school.	ركض إلى المدرسة.
+110	我们去北京玩吧。	Let's go to Beijing for fun.	لنذهب إلى بكين للنزهة.
+110	星期天我们去哪儿玩？	Where shall we go on Sunday?	إلى أين نذهب للنزهة يوم الأحد؟
+111	我能帮你吗？	Can I help you?	هل يمكنني مساعدتك؟
+111	他帮助我学习汉语。	He helps me learn Chinese.	يساعدني في تعلم الصينية.
+112	妈妈不让我看电视。	Mum doesn't let me watch TV.	أمي لا تسمح لي بمشاهدة التلفاز.
+112	让我想一想。	Let me think.	دعني أفكر.
+113	我可以问你一个问题吗？	May I ask you a question?	هل يمكنني أن أسألك سؤالًا؟
+113	你问老师吧。	Ask the teacher.	اسأل المعلم.
+114	请告诉我你的名字。	Please tell me your name.	أخبرني باسمك من فضلك.
+114	他没告诉我。	He didn't tell me.	لم يخبرني.
+115	请回答我的问题。	Please answer my question.	أجب عن سؤالي من فضلك.
+115	他回答得很好。	He answered very well.	أجاب إجابة جيدة جدًا.
+116	我们开始上课吧。	Let's start the class.	لنبدأ الدرس.
+116	考试八点开始。	The exam starts at eight.	يبدأ الامتحان في الثامنة.
+117	我吃完了。	I've finished eating.	انتهيت من الأكل.
+117	你看完这本书了吗？	Have you finished reading this book?	هل أنهيت قراءة هذا الكتاب؟
+118	我们到北京了。	We've arrived in Beijing.	وصلنا إلى بكين.
+118	你什么时候到？	When will you arrive?	متى ستصل؟
+119	他出去了。	He has gone out.	لقد خرج.
+119	我们出去吃饭吧。	Let's go out to eat.	لنخرج لنأكل.
+120	他走进了房间。	He walked into the room.	دخل الغرفة.
+120	你进来吧。	Come in.	تفضل بالدخول.
+121	明天会下雨吗？	Will it rain tomorrow?	هل ستمطر غدًا؟
+121	下雨了，我们回家吧。	It's raining, let's go home.	إنها تمطر، لنعد إلى البيت.
+122	你今天穿得很漂亮。	You're dressed very nicely today.	ملابسك جميلة جدًا اليوم.
+122	他穿了一件新衣服。	He put on new clothes.	لبس ثيابًا جديدة.
+123	吃饭以前要洗手。	Wash your hands before eating.	يجب غسل اليدين قبل الأكل.
+123	我去洗一下手。	I'm going to wash my hands.	سأذهب لأغسل يديّ.
+124	她很喜欢唱歌。	She really likes singing.	تحب الغناء كثيرًا.
+124	我们一起去唱歌吧。	Let's go singing together.	لنذهب للغناء معًا.
+125	你会跳舞吗？	Can you dance?	هل تعرف الرقص؟
+125	姐姐喜欢跳舞。	My older sister likes dancing.	أختي الكبرى تحب الرقص.
+126	我会游泳。	I can swim.	أعرف السباحة.
+126	我们明天去游泳吧。	Let's go swimming tomorrow.	لنذهب للسباحة غدًا.
+127	我送你一个礼物。	I'm giving you a present.	أهديك هدية.
+127	我送你回家吧。	Let me take you home.	دعني أوصلك إلى البيت.
+128	晚饭准备好了。	Dinner is ready.	العشاء جاهز.
+128	你准备好了吗？	Are you ready?	هل أنت مستعد؟
+129	你累了，休息一下吧。	You're tired, have a rest.	أنت متعب، استرح قليلًا.
+129	星期天我在家休息。	On Sunday I rest at home.	يوم الأحد أرتاح في البيت.
+130	他生病了。	He is ill.	هو مريض.
+130	我生病了，今天不能去学校。	I'm ill and can't go to school today.	أنا مريض ولا أستطيع الذهاب إلى المدرسة اليوم.
+131	我想去商店买东西。	I want to go to the shop to buy some things.	أريد أن أذهب إلى المتجر لأشتري أشياء.
+131	这是什么东西？	What is this thing?	ما هذا الشيء؟
+132	这个多少钱？	How much is this?	بكم هذا؟
+132	我的钱不多了。	I don't have much money left.	لم يبقَ معي مال كثير.
+133	这本书三十块钱。	This book costs thirty yuan.	هذا الكتاب بثلاثين يوانًا.
+133	一块钱可以买什么？	What can you buy for one yuan?	ماذا يمكن أن تشتري بيوان واحد؟
+134	我喜欢看书。	I like reading.	أحب القراءة.
+134	这本书很好。	This book is very good.	هذا الكتاب جيد جدًا.
+135	这本书是谁的？	Whose book is this?	لمن هذا الكتاب؟
+135	他每个月读三本书。	He reads three books a month.	يقرأ ثلاثة كتب كل شهر.
+136	我要一杯咖啡。	I'd like a cup of coffee.	أريد فنجان قهوة.
+136	他喝了两杯茶。	He drank two cups of tea.	شرب كوبين من الشاي.
+137	这儿的水很冷。	The water here is very cold.	الماء هنا بارد جدًا.
+137	天气很热，多喝水。	It's hot, drink plenty of water.	الجو حار، اشرب ماءً كثيرًا.
+138	中国的茶很好喝。	Chinese tea tastes good.	الشاي الصيني لذيذ.
+138	我每天喝茶。	I drink tea every day.	أشرب الشاي كل يوم.
+139	我早上喝一杯咖啡。	I have a cup of coffee in the morning.	أشرب فنجان قهوة في الصباح.
+139	你喜欢喝咖啡吗？	Do you like coffee?	هل تحب القهوة؟
+140	你喜欢吃米饭吗？	Do you like rice?	هل تحب الأرز؟
+140	我要一些米饭。	I'd like some rice.	أريد بعض الأرز.
+141	你吃饭了吗？	Have you eaten?	هل أكلت؟
+141	妈妈在做饭。	Mum is cooking.	أمي تطبخ.
+142	这个菜很好吃。	This dish is delicious.	هذا الطبق لذيذ.
+142	我们点菜吧。	Let's order.	لنطلب الطعام.
+143	我喜欢吃水果。	I like eating fruit.	أحب أكل الفاكهة.
+143	他在火车站卖水果。	He sells fruit at the train station.	يبيع الفاكهة في محطة القطار.
+144	我吃了两个苹果。	I ate two apples.	أكلت تفاحتين.
+144	这个苹果很大。	This apple is big.	هذه التفاحة كبيرة.
+145	我不吃鸡蛋。	I don't eat eggs.	لا آكل البيض.
+145	早上我吃了两个鸡蛋。	I ate two eggs this morning.	أكلت بيضتين في الصباح.
+146	我喜欢吃面条。	I like noodles.	أحب المعكرونة الصينية.
+146	我们晚上吃面条吧。	Let's have noodles tonight.	لنأكل المعكرونة في المساء.
+147	他的房子很大。	His house is big.	بيته كبير.
+147	他们的房子很旧。	Their house is old.	بيتهم قديم.
+148	我的房间很小。	My room is small.	غرفتي صغيرة.
+148	弟弟在房间里睡觉。	My younger brother is sleeping in his room.	أخي الأصغر نائم في الغرفة.
+149	请开一下门。	Please open the door.	افتح الباب من فضلك.
+149	我家的门是新的。	The door of my home is new.	باب بيتي جديد.
+150	我们的桌子很大。	Our table is big.	طاولتنا كبيرة.
+150	我想买一张新桌子。	I want to buy a new table.	أريد أن أشتري طاولة جديدة.
+151	这个椅子很旧。	This chair is old.	هذا الكرسي قديم.
+151	我们家的椅子都很旧。	All the chairs in our home are old.	كل الكراسي في بيتنا قديمة.
+152	我的床太小了。	My bed is too small.	سريري صغير جدًا.
+152	我想要一张大床。	I want a big bed.	أريد سريرًا كبيرًا.
+153	我在看电视。	I'm watching TV.	أشاهد التلفاز.
+153	这个电视是新的。	This TV is new.	هذا التلفاز جديد.
+154	你会用电脑吗？	Can you use a computer?	هل تعرف استخدام الحاسوب؟
+154	我的电脑是新的。	My computer is new.	حاسوبي جديد.
+155	我的手机呢？	Where's my phone?	أين هاتفي؟
+155	他的手机是新的。	His phone is new.	هاتفه جديد.
+156	电影几点开始？	What time does the film start?	متى يبدأ الفيلم؟
+156	我们晚上去看电影吧。	Let's go to the cinema tonight.	لنذهب لمشاهدة فيلم في المساء.
+157	我们的学校很大。	Our school is big.	مدرستنا كبيرة.
+157	我昨天没去学校。	I didn't go to school yesterday.	لم أذهب إلى المدرسة أمس.
+158	她在医院工作。	She works at a hospital.	تعمل في مستشفى.
+158	他生病了，在医院。	He is ill and in hospital.	هو مريض وفي المستشفى.
+159	我和妈妈去商店。	I'm going to the shop with Mum.	أذهب مع أمي إلى المتجر.
+159	这个商店的东西很便宜。	Things in this shop are cheap.	الأشياء في هذا المتجر رخيصة.
+160	我们去饭店吃饭吧。	Let's eat at a restaurant.	لنأكل في مطعم.
+160	这个饭店的菜很好吃。	The food in this restaurant is delicious.	طعام هذا المطعم لذيذ.
+161	他在公司工作。	He works at a company.	يعمل في شركة.
+161	他每天八点到公司。	He gets to the office at eight every day.	يصل إلى الشركة في الثامنة كل يوم.
+162	我是中国人。	I'm Chinese.	أنا صيني.
+162	中国很大。	China is very big.	الصين كبيرة جدًا.
+163	我住在北京。	I live in Beijing.	أسكن في بكين.
+163	北京有很多人。	Beijing has a lot of people.	في بكين ناس كثيرون.
+164	中国是一个很大的国家。	China is a very big country.	الصين بلد كبير جدًا.
+164	我想去很多国家。	I want to go to many countries.	أريد أن أذهب إلى بلدان كثيرة.
+165	这个城市很大。	This city is big.	هذه المدينة كبيرة.
+165	北京是一个大城市。	Beijing is a big city.	بكين مدينة كبيرة.
+166	我不认识路。	I don't know the way.	لا أعرف الطريق.
+166	路上车很多。	There are a lot of cars on the road.	في الطريق سيارات كثيرة.
+167	那是我的车。	That's my car.	تلك سيارتي.
+167	你会开车吗？	Can you drive?	هل تعرف القيادة؟
+168	我们坐出租车去吧。	Let's take a taxi.	لنذهب بسيارة أجرة.
+168	出租车来了。	The taxi is here.	وصلت سيارة الأجرة.
+169	我坐飞机去北京。	I'm flying to Beijing.	سأسافر إلى بكين بالطائرة.
+169	飞机几点到？	What time does the plane arrive?	متى تصل الطائرة؟
+170	我们坐火车去北京。	We're taking the train to Beijing.	سنذهب إلى بكين بالقطار.
+170	去火车站怎么走？	How do I get to the train station?	كيف أذهب إلى محطة القطار؟
+171	我每天坐地铁去公司。	I take the subway to work every day.	أذهب إلى الشركة بالمترو كل يوم.
+171	地铁上人很多。	There are a lot of people on the subway.	في المترو ناس كثيرون.
+172	今天天气很好。	The weather is nice today.	الطقس جميل اليوم.
+172	昨天天气不好。	The weather was bad yesterday.	كان الطقس سيئًا أمس.
+173	雨太大了。	The rain is too heavy.	المطر غزير جدًا.
+173	昨天的雨很大。	Yesterday's rain was heavy.	كان مطر الأمس غزيرًا.
+174	今天太阳很大。	The sun is strong today.	الشمس قوية اليوم.
+174	太阳出来了。	The sun has come out.	طلعت الشمس.
+175	我家有一只狗。	We have a dog at home.	عندنا كلب في البيت.
+175	我的狗很喜欢跑。	My dog loves running.	كلبي يحب الركض كثيرًا.
+176	她有一只小猫。	She has a kitten.	لديها قطة صغيرة.
+176	猫在床上睡觉。	The cat is sleeping on the bed.	القطة نائمة على السرير.
+177	我在洗衣服。	I'm washing clothes.	أغسل الملابس.
+177	我想买新衣服。	I want to buy new clothes.	أريد أن أشتري ملابس جديدة.
+178	你喜欢什么颜色？	What colour do you like?	ما اللون الذي تحبه؟
+178	这个颜色很漂亮。	This colour is very pretty.	هذا اللون جميل جدًا.
+179	这个字怎么读？	How do you read this character?	كيف يُقرأ هذا الحرف؟
+179	他的字很漂亮。	His handwriting is beautiful.	خطه جميل.
+180	你会说汉语吗？	Can you speak Chinese?	هل تتكلم الصينية؟
+180	我觉得汉语不难。	I don't think Chinese is hard.	لا أظن أن الصينية صعبة.
+181	你有问题吗？	Do you have any questions?	هل لديك أسئلة؟
+181	这是一个好问题。	That's a good question.	هذا سؤال جيد.
+182	你有什么事？	What can I do for you?	ماذا تريد؟
+182	我今天有很多事情。	I have a lot to do today.	لديّ أمور كثيرة اليوم.
+183	你身体好吗？	Are you well?	كيف صحتك؟
+183	我爸爸身体很好。	My father is in good health.	صحة أبي جيدة.
+184	她的眼睛很大。	She has big eyes.	عيناها كبيرتان.
+184	我的眼睛有点儿累。	My eyes are a bit tired.	عيناي متعبتان قليلًا.
+185	你的手很冷。	Your hands are cold.	يداك باردتان.
+185	他的手很大。	He has big hands.	يداه كبيرتان.
+186	我觉得头很热，可能生病了。	My head feels hot, I may be ill.	أشعر أن رأسي ساخن، ربما أنا مريض.
+186	他听了以后点了点头。	After listening, he nodded.	بعد أن استمع هزّ رأسه موافقًا.
+187	今天是我的生日。	Today is my birthday.	اليوم عيد ميلادي.
+187	你的生日是几月几号？	When is your birthday?	متى عيد ميلادك؟
+188	我给他买了一个礼物。	I bought him a present.	اشتريت له هدية.
+188	谢谢你的礼物！	Thank you for the present!	شكرًا على هديتك!
+189	请给我菜单。	Please give me the menu.	أعطني قائمة الطعام من فضلك.
+189	我可以看一下菜单吗？	May I have a look at the menu?	هل يمكنني أن ألقي نظرة على قائمة الطعام؟
+190	火车票贵吗？	Are train tickets expensive?	هل تذاكر القطار غالية؟
+190	我们买票吧。	Let's buy tickets.	لنشترِ التذاكر.
+191	这是我的新手机。	This is my new phone.	هذا هاتفي الجديد.
+191	我想买一个新房子。	I want to buy a new house.	أريد أن أشتري بيتًا جديدًا.
+192	这件衣服很旧。	This piece of clothing is old.	هذا الثوب قديم.
+192	我的电脑太旧了。	My computer is too old.	حاسوبي قديم جدًا.
+193	这儿的咖啡很贵。	The coffee here is expensive.	القهوة هنا غالية.
+193	北京的房子很贵。	Houses in Beijing are expensive.	البيوت في بكين غالية.
+194	这个手机很便宜。	This phone is cheap.	هذا الهاتف رخيص.
+194	便宜一点儿，可以吗？	Could you make it a bit cheaper?	هل يمكن أن تخفّض السعر قليلًا؟
+195	今天很冷。	It's very cold today.	الجو بارد جدًا اليوم.
+195	你冷不冷？	Are you cold?	هل تشعر بالبرد؟
+196	今天很热。	It's very hot today.	الجو حار جدًا اليوم.
+196	我要一杯热茶。	I'd like a cup of hot tea.	أريد كوب شاي ساخن.
+197	认识你很高兴。	Nice to meet you.	سعيد بالتعرف إليك.
+197	他今天很高兴。	He is very happy today.	هو سعيد جدًا اليوم.
+198	生日快乐！	Happy birthday!	عيد ميلاد سعيد!
+198	我们玩得很快乐。	We had a lot of fun.	استمتعنا كثيرًا.
+199	我今天很累。	I'm very tired today.	أنا متعب جدًا اليوم.
+199	你累了吧？	You must be tired?	لا بد أنك متعب؟
+200	我今天很忙。	I'm very busy today.	أنا مشغول جدًا اليوم.
+200	妈妈每天都很忙。	Mum is busy every day.	أمي مشغولة كل يوم.
+201	我很饿，我们去吃饭吧。	I'm hungry, let's go and eat.	أنا جائع، لنذهب لنأكل.
+201	你饿不饿？	Are you hungry?	هل أنت جائع؟
+202	我很渴，我想喝水。	I'm thirsty, I want some water.	أنا عطشان، أريد أن أشرب ماءً.
+202	天气太热，我有点儿渴。	It's too hot, I'm a bit thirsty.	الجو حار جدًا، أنا عطشان قليلًا.
+203	我姐姐很漂亮。	My older sister is very pretty.	أختي الكبرى جميلة جدًا.
+203	这件衣服很漂亮。	This piece of clothing is very pretty.	هذا الثوب جميل جدًا.
+204	妈妈做的菜很好吃。	The food Mum makes is delicious.	الطعام الذي تطبخه أمي لذيذ.
+204	这儿的面条很好吃。	The noodles here are delicious.	المعكرونة هنا لذيذة.
+205	我哥哥很高。	My older brother is tall.	أخي الأكبر طويل.
+205	爸爸比我高。	Dad is taller than me.	أبي أطول مني.
+206	去火车站远吗？	Is it far to the train station?	هل محطة القطار بعيدة؟
+206	北京离这儿很远。	Beijing is far from here.	بكين بعيدة عن هنا.
+207	医院离这儿很近。	The hospital is close to here.	المستشفى قريب من هنا.
+207	商店很近，我们走路去吧。	The shop is close, let's walk.	المتجر قريب، لنذهب مشيًا.
+208	他跑得很快。	He runs fast.	يركض بسرعة.
+208	快走吧，电影开始了。	Hurry up, the film has started.	أسرع، بدأ الفيلم.
+209	他走得很慢。	He walks slowly.	يمشي ببطء.
+209	你开车开得太慢了。	You drive too slowly.	تقود السيارة ببطء شديد.
+210	你来得很早。	You've come very early.	جئت مبكرًا جدًا.
+210	现在还早。	It's still early.	ما زال الوقت مبكرًا.
+211	太晚了，我要睡觉了。	It's too late, I'm going to bed.	تأخر الوقت كثيرًا، سأنام.
+211	现在太晚了，我们明天再去吧。	It's too late now, let's go tomorrow.	الوقت متأخر الآن، لنذهب غدًا.
+212	你说得对。	You're right.	كلامك صحيح.
+212	这个回答是对的。	This answer is correct.	هذه الإجابة صحيحة.
+213	这个字你写错了。	You wrote this character wrong.	كتبت هذا الحرف خطأً.
+213	你说错了。	You said it wrong.	أخطأت في كلامك.
+214	这个问题很容易。	This question is easy.	هذا السؤال سهل.
+214	学习汉语不容易。	Learning Chinese isn't easy.	تعلم الصينية ليس سهلًا.
+215	这个问题很难。	This question is hard.	هذا السؤال صعب.
+215	考试难不难？	Was the exam hard?	هل كان الامتحان صعبًا؟
+216	身体最重要。	Health comes first.	الصحة أهم شيء.
+216	学习很重要。	Studying is important.	الدراسة مهمة.
+217	我们的手机一样。	Our phones are the same.	هاتفانا متشابهان.
+217	我和你一样高。	I'm as tall as you.	أنا بطولك.
+218	我们去别的饭店吧。	Let's go to another restaurant.	لنذهب إلى مطعم آخر.
+218	你有别的问题吗？	Do you have any other questions?	هل لديك أسئلة أخرى؟
+219	这个太贵了！	This is too expensive!	هذا غالٍ جدًا!
+219	今天太热了。	It's too hot today.	الجو حار جدًا اليوم.
+220	你的汉语真好！	Your Chinese is really good!	لغتك الصينية ممتازة حقًا!
+220	今天真冷。	It's really cold today.	الجو بارد حقًا اليوم.
+221	我非常喜欢这个城市。	I like this city very much.	أحب هذه المدينة كثيرًا.
+221	今天的考试非常难。	Today's exam was very hard.	كان امتحان اليوم صعبًا جدًا.
+222	我最喜欢吃面条。	I like noodles best.	أحب المعكرونة أكثر من أي شيء.
+222	他是我们学校最高的学生。	He is the tallest student in our school.	هو أطول طالب في مدرستنا.
+223	他还在睡觉。	He is still sleeping.	ما زال نائمًا.
+223	你还要别的吗？	Would you like anything else?	هل تريد شيئًا آخر؟
+224	请你再说一次。	Please say it again.	قلها مرة أخرى من فضلك.
+224	我们明天再来吧。	Let's come again tomorrow.	لنأتِ مرة أخرى غدًا.
+225	我现在就去。	I'll go right now.	سأذهب الآن حالًا.
+225	他八点就来了。	He came as early as eight.	جاء منذ الثامنة.
+226	你怎么现在才来？	Why are you only coming now?	لماذا لم تأتِ إلا الآن؟
+226	我昨天晚上十二点才睡觉。	I didn't go to bed until midnight last night.	لم أنم أمس إلا في الثانية عشرة ليلًا.
+227	他已经走了。	He has already left.	لقد غادر بالفعل.
+227	我已经吃饭了。	I've already eaten.	أكلت بالفعل.
+228	我们一起去吃饭吧。	Let's go and eat together.	لنذهب لنأكل معًا.
+228	你和我一起去吧。	Come with me.	تعالَ معي.
+229	请说慢一点儿。	Please speak a little more slowly.	تكلم ببطء أكثر قليلًا من فضلك.
+229	今天天气冷，多穿一点儿衣服。	It's cold today, wear a few more clothes.	الجو بارد اليوم، البس ملابس أكثر قليلًا.
+230	请等一下。	Please wait a moment.	انتظر لحظة من فضلك.
+230	让我看一下。	Let me have a look.	دعني ألقي نظرة.
+231	我常常去那儿。	I often go there.	أذهب إلى هناك كثيرًا.
+231	他常常给我打电话。	He often calls me.	يتصل بي كثيرًا.
+232	我没有钱了。	I've run out of money.	نفد مالي.
+232	他昨天没来。	He didn't come yesterday.	لم يأتِ أمس.
+233	你别跑那么快！	Don't run so fast!	لا تركض بهذه السرعة!
+233	别告诉他。	Don't tell him.	لا تخبره.
+234	我只有一个哥哥。	I only have one older brother.	ليس لي إلا أخ أكبر واحد.
+234	我们家只有一个孩子。	There is only one child in our family.	في عائلتنا طفل واحد فقط.
+235	因为下雨，我没去。	Because it was raining, I didn't go.	لم أذهب لأنها كانت تمطر.
+235	我很累，因为昨天工作到很晚。	I'm tired because I worked late yesterday.	أنا متعب لأنني عملت حتى وقت متأخر أمس.
+236	他生病了，所以没来。	He is ill, so he didn't come.	هو مريض، لذلك لم يأتِ.
+236	我饿了，所以想吃饭。	I'm hungry, so I want to eat.	أنا جائع، لذلك أريد أن آكل.
+237	这个很好，但是太贵了。	This is very good, but too expensive.	هذا جيد جدًا، لكنه غالٍ جدًا.
+237	我想去，但是没有时间。	I want to go, but I don't have time.	أريد أن أذهب، لكن ليس لديّ وقت.
+238	如果明天下雨，我们就不去了。	If it rains tomorrow, we won't go.	إذا أمطرت غدًا فلن نذهب.
+238	如果你有时间，来我家玩吧。	If you have time, come over to my place.	إذا كان لديك وقت فتعال إلى بيتي.
+239	你要茶还是咖啡？	Would you like tea or coffee?	هل تريد شايًا أم قهوة؟
+239	你想吃面条还是米饭？	Do you want noodles or rice?	هل تريد المعكرونة أم الأرز؟
+240	我们坐地铁或者坐出租车去。	We'll go by subway or by taxi.	سنذهب بالمترو أو بسيارة أجرة.
+240	我明天或者后天去北京。	I'm going to Beijing tomorrow or the day after.	سأذهب إلى بكين غدًا أو بعد غد.
+241	他是从北京来的。	He comes from Beijing.	هو قادم من بكين.
+241	你从哪儿来？	Where do you come from?	من أين أتيت؟
+242	我跟朋友一起去。	I'm going with a friend.	سأذهب مع صديق.
+242	孩子喜欢跟小狗玩。	The child likes playing with the puppy.	الطفل يحب اللعب مع الجرو.
+243	他比我大三岁。	He is three years older than me.	هو أكبر مني بثلاث سنوات.
+243	今天比昨天冷。	Today is colder than yesterday.	اليوم أبرد من أمس.
+244	请往前走。	Please go straight ahead.	تقدّم إلى الأمام من فضلك.
+244	去火车站往哪儿走？	Which way is the train station?	في أي اتجاه محطة القطار؟
+245	我家离学校很远。	My home is far from school.	بيتي بعيد عن المدرسة.
+245	商店离这儿远不远？	Is the shop far from here?	هل المتجر بعيد عن هنا؟
+246	书在桌子上。	The book is on the table.	الكتاب على الطاولة.
+246	菜单上有很多菜。	There are many dishes on the menu.	في قائمة الطعام أطباق كثيرة.
+247	下个月我去中国。	I'm going to China next month.	سأذهب إلى الصين الشهر القادم.
+247	下课以后我们去吃饭吧。	Let's go and eat after class.	لنذهب لنأكل بعد الدرس.
+248	房间里有一张床。	There is a bed in the room.	في الغرفة سرير.
+248	家里没有人。	There's nobody at home.	لا أحد في البيت.
+249	学校前面有一个商店。	There is a shop in front of the school.	أمام المدرسة متجر.
+249	我在医院前面等你。	I'll wait for you in front of the hospital.	سأنتظرك أمام المستشفى.
+250	我坐在你后面。	I'm sitting behind you.	أجلس خلفك.
+250	学校后面有一个饭店。	There is a restaurant behind the school.	خلف المدرسة مطعم.
+251	我住在学校旁边。	I live next to the school.	أسكن بجانب المدرسة.
+251	椅子在桌子旁边。	The chair is next to the table.	الكرسي بجانب الطاولة.
+252	我买了两本书。	I bought two books.	اشتريت كتابين.
+252	他有两个孩子。	He has two children.	لديه طفلان.
+253	我们学校有二十个老师。	Our school has twenty teachers.	في مدرستنا عشرون معلمًا.
+253	北京的二月很冷。	February in Beijing is very cold.	شهر فبراير في بكين بارد جدًا.
+254	我们三个人一起去吧。	Let's go, the three of us together.	لنذهب نحن الثلاثة معًا.
+254	星期三我有课。	I have class on Wednesday.	عندي درس يوم الأربعاء.
+255	我家有四个人。	There are four people in my family.	عائلتي أربعة أشخاص.
+255	我四点下课。	My class ends at four.	ينتهي درسي في الرابعة.
+256	我们家有五个人。	There are five people in our family.	عائلتنا خمسة أشخاص.
+256	五块钱一杯。	Five yuan a cup.	الكوب بخمسة يوانات.
+257	我六点回家。	I go home at six.	أعود إلى البيت في السادسة.
+257	星期六你有时间吗？	Are you free on Saturday?	هل لديك وقت يوم السبت؟
+258	一个星期有七天。	A week has seven days.	في الأسبوع سبعة أيام.
+258	我早上七点吃饭。	I eat at seven in the morning.	آكل في السابعة صباحًا.
+259	我弟弟八岁。	My younger brother is eight.	عمر أخي الأصغر ثماني سنوات.
+259	我的生日在八月。	My birthday is in August.	عيد ميلادي في أغسطس.
+260	我九点到公司。	I get to the office at nine.	أصل إلى الشركة في التاسعة.
+260	九月一号开始上课。	Classes start on the first of September.	تبدأ الدروس في الأول من سبتمبر.
+261	我等了你十分钟。	I waited ten minutes for you.	انتظرتك عشر دقائق.
+261	这个苹果十块钱。	This apple costs ten yuan.	هذه التفاحة بعشرة يوانات.
+262	这件衣服两百块。	This piece of clothing costs two hundred yuan.	هذا الثوب بمئتي يوان.
+262	我们学校有五百个学生。	Our school has five hundred students.	في مدرستنا خمسمئة طالب.
+263	他是第一个到的。	He was the first to arrive.	كان أول من وصل.
+263	第一个问题很容易。	The first question is easy.	السؤال الأول سهل.
+264	你好，我叫小明。	Hello, my name is Xiaoming.	مرحبًا، اسمي شياومينغ.	小明
+264	老师，你好！	Hello, teacher!	مرحبًا يا أستاذ!
+265	谢谢你的帮助。	Thank you for your help.	شكرًا على مساعدتك.
+265	谢谢，我不喝咖啡。	Thanks, but I don't drink coffee.	شكرًا، لا أشرب القهوة.
+266	不客气，这是我应该做的。	You're welcome, it was the least I could do.	عفوًا، هذا واجبي.
+266	不客气，欢迎再来！	You're welcome, come again!	عفوًا، أهلًا بك مرة أخرى!
+267	对不起，我来晚了。	Sorry I'm late.	آسف، تأخرت.
+267	对不起，我不知道。	Sorry, I don't know.	آسف، لا أعرف.
+268	没关系，我等你。	It doesn't matter, I'll wait for you.	لا بأس، سأنتظرك.
+268	对不起！没关系。	Sorry! — That's all right.	آسف! — لا بأس.
+269	老师，再见！	Goodbye, teacher!	مع السلامة يا أستاذ!
+269	我走了，再见！	I'm off, goodbye!	سأذهب الآن، مع السلامة!
+270	请你喝茶。	Please have some tea.	تفضل اشرب الشاي.
+270	请问，火车站在哪儿？	Excuse me, where is the train station?	من فضلك، أين محطة القطار؟
+271	欢迎你来北京！	Welcome to Beijing!	أهلًا بك في بكين!
+271	欢迎来我家！	Welcome to my home!	أهلًا بك في بيتي!
+272	他汉语说得很好。	He speaks Chinese very well.	يتكلم الصينية جيدًا جدًا.
+272	你写得太快了。	You write too fast.	تكتب بسرعة كبيرة.
+273	是的，我是学生。	Yes, I'm a student.	نعم، أنا طالب.
+273	你是老师吗？是的。	Are you a teacher? — Yes.	هل أنت معلم؟ — نعم.
+274	当然可以。	Of course you can.	بالطبع يمكنك.
+274	我当然知道。	Of course I know.	بالطبع أعرف.
+275	明天可能会下雨。	It may rain tomorrow.	قد تمطر غدًا.
+275	他可能不来了。	He may not come.	ربما لن يأتي.
+276	你应该去看医生。	You should see a doctor.	يجب أن تذهب إلى الطبيب.
+276	我们应该早一点儿走。	We should leave a bit earlier.	يجب أن نغادر أبكر قليلًا.
+277	我一定来。	I'll definitely come.	سآتي بالتأكيد.
+277	你一定很累了。	You must be very tired.	لا بد أنك متعب جدًا.
+278	我每天喝很多水。	I drink a lot of water every day.	أشرب ماءً كثيرًا كل يوم.
+278	每个星期我都给妈妈打电话。	I call my mother every week.	أتصل بأمي كل أسبوع.
+279	这些是我的书。	These are my books.	هذه كتبي.
+279	我想买一些水果。	I want to buy some fruit.	أريد أن أشتري بعض الفاكهة.
+280	明天天气怎么样？	What will the weather be like tomorrow?	كيف سيكون الطقس غدًا؟
+280	你觉得这个菜怎么样？	What do you think of this dish?	ما رأيك في هذا الطبق؟
+281	这是我第一次来北京。	This is my first time in Beijing.	هذه أول مرة آتي فيها إلى بكين.
+281	我一个星期运动三次。	I exercise three times a week.	أمارس الرياضة ثلاث مرات في الأسبوع.
+282	我买了两件衣服。	I bought two items of clothing.	اشتريت قطعتين من الملابس.
+282	这件事很重要。	This matter is important.	هذا الأمر مهم.
+283	我买了两张电影票。	I bought two cinema tickets.	اشتريت تذكرتين للسينما.
+283	这张桌子很贵。	This table is expensive.	هذه الطاولة غالية.
+284	这只猫很漂亮。	This cat is very pretty.	هذه القطة جميلة جدًا.
+284	她有两只小狗。	She has two puppies.	لديها جروان.
+285	你几岁了？	How old are you? (to a child)	كم عمرك؟ (لطفل)
+285	我儿子三岁了。	My son is three.	ابني عمره ثلاث سنوات.
+286	这本书三十元。	This book costs thirty yuan.	هذا الكتاب بثلاثين يوانًا.
+286	一张票五十元。	One ticket costs fifty yuan.	التذكرة الواحدة بخمسين يوانًا.
+287	今天几月几号？	What's the date today?	ما تاريخ اليوم؟
+287	我的生日是五月十号。	My birthday is on the tenth of May.	عيد ميلادي في العاشر من مايو.
+288	我们等了两个小时。	We waited for two hours.	انتظرنا ساعتين.
+288	我每天学习一个小时汉语。	I study Chinese for an hour every day.	أدرس الصينية ساعة كل يوم.
+289	刚才谁来了？	Who came just now?	من جاء قبل قليل؟
+289	他刚才给你打电话了。	He called you just now.	اتصل بك قبل قليل.
+290	以前我住在北京。	I used to live in Beijing.	كنت أسكن في بكين سابقًا.
+290	我以前不喜欢喝茶。	I didn't use to like tea.	لم أكن أحب الشاي من قبل.
+291	吃饭以后我们去看电影。	After eating we'll go to see a film.	بعد الأكل سنذهب لمشاهدة فيلم.
+291	以后你常常来玩吧。	Come and visit often from now on.	تعالَ لزيارتنا كثيرًا من الآن فصاعدًا.
+292	我有点儿累。	I'm a bit tired.	أنا متعب قليلًا.
+292	这个菜有点儿贵。	This dish is a bit expensive.	هذا الطبق غالٍ قليلًا.
+293	大家好，我叫小明。	Hello everyone, my name is Xiaoming.	مرحبًا بالجميع، اسمي شياومينغ.	小明
+293	大家一起唱歌吧。	Let's all sing together.	لنغنِّ جميعًا معًا.
+294	我自己做饭。	I cook for myself.	أطبخ لنفسي.
+294	你自己去吧。	Go by yourself.	اذهب وحدك.
+295	你怎么那么高兴？	Why are you so happy?	لماذا أنت سعيد إلى هذا الحد؟
+295	这儿没有那么冷。	It isn't that cold here.	الجو هنا ليس باردًا إلى هذا الحد.
+296	你喜欢什么运动？	What sports do you like?	ما الرياضة التي تحبها؟
+296	运动对身体很好。	Exercise is good for your health.	الرياضة مفيدة للصحة.
+297	我在准备考试。	I'm preparing for an exam.	أستعد للامتحان.
+297	明天的考试难吗？	Is tomorrow's exam hard?	هل امتحان الغد صعب؟
+298	我上午有课。	I have class in the morning.	عندي درس قبل الظهر.
+298	今天的课很容易。	Today's lesson was easy.	كان درس اليوم سهلًا.
+299	我希望你每天都快乐。	I hope you're happy every day.	أتمنى أن تكون سعيدًا كل يوم.
+299	我希望明天不下雨。	I hope it doesn't rain tomorrow.	أتمنى ألا تمطر غدًا.
+300	我很喜欢北京的生活。	I really like life in Beijing.	أحب الحياة في بكين كثيرًا.
+300	他的生活很忙。	His life is very busy.	حياته مزدحمة جدًا.

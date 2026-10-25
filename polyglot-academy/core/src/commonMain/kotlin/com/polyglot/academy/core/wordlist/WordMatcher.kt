@@ -102,8 +102,10 @@ class WordMatcher(private val language: LanguageCode, entries: List<WordEntry>) 
     private fun stripNames(normalizedSentence: String, names: List<String>): String {
         var s = normalizedSentence
         for (n in names.map { normalize(it) }.filter { it.isNotBlank() }.sortedByDescending { it.length }) {
-            // Whole words only: removing "Ana" must not cut it out of "hermana".
-            s = s.replace(Regex("(?<![\\p{L}\\p{M}])" + Regex.escape(n) + "(['’][\\p{L}]+)?(?![\\p{L}\\p{M}])"), " ")
+            // Whole words only: removing "Ana" must not cut it out of "hermana". Chinese has no spaces, so a name
+            // (王 in 王先生) is removed wherever it occurs.
+            s = if (language == LanguageCode.MANDARIN) s.replace(n, " ")
+            else s.replace(Regex("(?<![\\p{L}\\p{M}])" + Regex.escape(n) + "(['’][\\p{L}]+)?(?![\\p{L}\\p{M}])"), " ")
         }
         return s
     }
