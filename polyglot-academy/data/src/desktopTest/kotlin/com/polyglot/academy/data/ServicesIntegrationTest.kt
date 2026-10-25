@@ -298,6 +298,20 @@ class ServicesIntegrationTest {
         assertIs<TutorEngineMode.Offline>(c.state.value.engine)
     }
 
+    @Test fun dailyLoopEarnsAndStoresAStreakFreeze() = runBlocking<Unit> {
+        enroll()
+        val day = 86_400_000L
+        (0..6).forEach { back ->
+            store.upsertSession(com.polyglot.academy.core.model.StudySession("rev$back", LanguageCode.ENGLISH, com.polyglot.academy.core.model.SessionKind.REVIEW, null,
+                clock.nowMillis() - back * day, null, 300, 10, 9, true))
+        }
+        val loop = app.gamification.today(LanguageCode.ENGLISH)
+        assertEquals(7, loop.streakDays)
+        assertEquals(1, loop.freezes)
+        assertEquals(10 * com.polyglot.academy.core.gamification.XpRules.REVIEW, loop.today.baseXp)
+        assertEquals(1, store.currentProfile().streaks.getValue(LanguageCode.ENGLISH).freezes)
+    }
+
     @Test fun speechUnavailableShowsNoticeInsteadOfHanging() = runBlocking<Unit> {
         enroll()
         platform.recognizer.available = SpeechAvailability.PERMISSION_DENIED

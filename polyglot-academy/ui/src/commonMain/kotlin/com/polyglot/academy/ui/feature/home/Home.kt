@@ -79,14 +79,14 @@ import kotlinx.datetime.Instant
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toLocalDateTime
 
-data class HomeData(val snapshot: DashboardSnapshot, val plan: DailyPlan)
+data class HomeData(val snapshot: DashboardSnapshot, val plan: DailyPlan, val loop: com.polyglot.academy.core.gamification.DailyLoop)
 
 @Composable
 fun HomeScreen() {
     val app = LocalApp.current
     val s = LocalStrings.current
-    val loader = rememberLoader(app.profile.activeLearningLanguage, app.profile.dailyMinutes, app.profile.learningLanguages) {
-        HomeData(app.services.dashboard.snapshot(), app.services.plans.today())
+    val loader = rememberLoader(app.profile.activeLearningLanguage, app.profile.dailyMinutes, app.profile.dailyXpGoal, app.profile.learningLanguages) {
+        HomeData(app.services.dashboard.snapshot(), app.services.plans.today(), app.services.gamification.today(app.profile.activeLearningLanguage))
     }
     var offline by remember { mutableStateOf(false) }
     LaunchedEffect(Unit) { while (true) { offline = app.services.platform.network() == NetworkState.OFFLINE; delay(15_000) } }
@@ -151,6 +151,7 @@ private fun HomeContent(data: HomeData) {
     }
 
     RecommendationCard(snap.recommendation, snap)
+    DailyLoopCard(data.loop)
 
     // Daily goal + reviews + streak.
     PolyCard {
@@ -172,7 +173,7 @@ private fun HomeContent(data: HomeData) {
 
     Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
         StatTile(if (snap.dueReviews > 0) s.plural(K.HOME_REVIEWS_DUE, snap.dueReviews) else s[K.HOME_NO_REVIEWS], s[K.PRACTICE_REVIEW], Icons.Filled.Replay, c.secondary, Modifier.weight(1f))
-        StatTile(s.plural(K.HOME_STREAK, snap.summary.currentStreakDays), s[K.PROGRESS_CONSISTENCY], Icons.Filled.LocalFireDepartment, c.accent, Modifier.weight(1f))
+        StatTile(s.plural(K.HOME_STREAK, data.loop.streakDays), s.plural(K.GAME_FREEZES, data.loop.freezes), Icons.Filled.LocalFireDepartment, c.accent, Modifier.weight(1f))
     }
 
     SectionHeader(s[K.HOME_QUICK])
@@ -305,4 +306,33 @@ internal fun skillRoute(skill: Skill?): Route = when (skill) {
     Skill.GRAMMAR -> Route.Grammar
     Skill.SPEAKING, Skill.FLUENCY, Skill.FUNCTIONAL -> Route.Scenarios
     else -> Route.Review
+}
+
+/** XP toward the daily goal, level, and today's three quests. */
+@Composable
+internal fun DailyLoopCard(loop: com.polyglot.academy.core.gamification.DailyLoop) {
+    val s = LocalStrings.current
+    val c = PolyglotTheme.colors
+    PolyCard {
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            val fraction = loop.xpToday.toFloat() / loop.goalXp.coerceAtLeast(1)
+            ProgressRing(fraction, description = s.f(K.GAME_XP_RING_DESC, loop.xpToday, loop.goalXp), size = 84.dp) {
+                Text("${loop.xpToday}", style = MaterialTheme.typography.titleMedium)
+            }
+            Spacer(Modifier.width(16.dp))
+            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                Text(s[K.GAME_TODAY_XP], style = MaterialTheme.typography.titleMedium)
+                Text(if (loop.xpToday >= loop.goalXp) s[K.GAME_GOAL_REACHED] else s.f(K.GAME_XP_PROGRESS, loop.xpToday, loop.goalXp),
+                    style = MaterialTheme.typography.bodyMedium, color = if (loop.xpToday >= loop.goalXp) c.success else c.textSecondary)
+                Text(s.f(K.GAME_LEVEL, loop.level, loop.xpIntoLevel, loop.xpForLevel), style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
+            }
+        }
+        if (loop.freezeUsedRecently) Text(s[K.GAME_FREEZE_USED], style = MaterialTheme.typography.bodySmall, color = c.accent)
+        Text(s[K.GAME_QUESTS], style = MaterialTheme.typography.titleSmall)
+        loop.quests.forEach { q ->
+            LabeledProgress((if (q.done) "✓ " else "") + s.f(K.valueOf("QUEST_${q.kind.name}"), q.target), "${q.progress.coerceAtMost(q.target)}/${q.target}", q.fraction,
+                color = if (q.done) c.success else c.primary)
+        }
+        Text(s.f(K.GAME_QUEST_BONUS, com.polyglot.academy.core.gamification.XpRules.QUEST_BONUS), style = MaterialTheme.typography.bodySmall, color = c.textMuted)
+    }
 }

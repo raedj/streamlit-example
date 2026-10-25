@@ -70,3 +70,22 @@ PLAN_REBUILD ¦ Rebuild today's plan ¦ إعادة بناء خطة اليوم
 PLAN_HOW_TITLE ¦ How this plan is built ¦ كيف تُبنى هذه الخطة
 PLAN_HOW_BODY ¦ Reviews that are due come first (up to 40% of your time), then the next lesson, a short conversation when you have 15 minutes or more, and practice for your weakest skill. You can mark items done or change your daily time. ¦ تأتي المراجعات المستحقة أولًا (حتى 40٪ من وقتك)، ثم الدرس التالي، ثم محادثة قصيرة إذا كان لديك 15 دقيقة أو أكثر، ثم تدريب على أضعف مهاراتك. يمكنك وضع علامة على ما أنجزته أو تغيير وقتك اليومي.
 PLAN_EMPTY ¦ No plan yet. Choose a language to start. ¦ لا توجد خطة بعد. اختر لغة للبدء.
+GAME_TODAY_XP ¦ Today's XP ¦ نقاط اليوم
+GAME_XP ¦ {0} XP ¦ {0} نقطة
+GAME_XP_PROGRESS ¦ {0} of {1} XP ¦ {0} من {1} نقطة
+GAME_XP_RING_DESC ¦ Daily XP goal: {0} of {1} ¦ هدف النقاط اليومي: {0} من {1}
+GAME_GOAL_REACHED ¦ Daily goal reached. Well done! ¦ حقّقت هدفك اليومي. أحسنت!
+GAME_LEVEL ¦ Level {0} · {1}/{2} XP to the next level ¦ المستوى {0} · {1}/{2} نقطة للمستوى التالي
+GAME_FREEZES ¦ {0} streak freeze|{0} streak freezes ¦ لا حماية للسلسلة|حماية واحدة للسلسلة|حمايتان للسلسلة|{0} حمايات للسلسلة|{0} حماية للسلسلة|{0} حماية للسلسلة
+GAME_FREEZE_USED ¦ A streak freeze kept your streak alive. ¦ حافظت حماية السلسلة على سلسلتك.
+GAME_QUESTS ¦ Daily quests ¦ مهام اليوم
+GAME_QUEST_BONUS ¦ Each finished quest gives +{0} XP. You earn a streak freeze every 7 days in a row (up to 2). ¦ كل مهمة منجزة تمنحك {0}+ نقطة. وتحصل على حماية للسلسلة كل 7 أيام متتالية (حتى 2).
+GAME_SET_GOAL ¦ Daily XP goal ¦ هدف النقاط اليومي
+QUEST_EARN_XP ¦ Earn {0} XP ¦ اجمع {0} نقطة
+QUEST_COMPLETE_LESSON ¦ Complete {0} lesson ¦ أكمل درسًا واحدًا
+QUEST_REVIEW_WORDS ¦ Review {0} words ¦ راجع {0} كلمة
+QUEST_CORRECT_ANSWERS ¦ Get {0} answers right ¦ أجب {0} إجابات صحيحة
+QUEST_CONVERSATION_TURNS ¦ Send {0} messages to a tutor ¦ أرسل {0} رسائل إلى مدرّب
+QUEST_SPEAK_ALOUD ¦ Speak {0} times in a conversation ¦ تحدّث {0} مرات في محادثة
+QUEST_READ_STORY ¦ Read {0} story ¦ اقرأ قصة واحدة
+QUEST_PRONUNCIATION ¦ Do {0} pronunciation checks ¦ أجرِ {0} اختبارات نطق

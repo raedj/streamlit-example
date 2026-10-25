@@ -201,6 +201,8 @@ private fun LearningPage() {
     fun up(t: (com.polyglot.academy.core.model.LearnerProfile) -> com.polyglot.academy.core.model.LearnerProfile) = scope.launch { app.services.store.updateProfile(t) }
     SectionHeader(s[K.SET_DAILY_MINUTES])
     ChipGroup(listOf(5, 10, 15, 20, 30, 45, 60), setOf(p.dailyMinutes), { s.plural(K.MINUTES, it) }, { m -> up { it.copy(dailyMinutes = m) } })
+    SectionHeader(s[K.GAME_SET_GOAL])
+    ChipGroup(com.polyglot.academy.core.gamification.XpRules.goalChoices, setOf(p.dailyXpGoal), { s.f(K.GAME_XP, it) }, { x -> up { it.copy(dailyXpGoal = x) } })
     SectionHeader(s[K.SET_GOALS])
     ChipGroup(LearningGoal.entries, p.goals, { Labels.goal(s, it) }, { g -> up { it.copy(goals = if (g in it.goals) it.goals - g else it.goals + g) } })
     SectionHeader(s[K.SET_STYLE])

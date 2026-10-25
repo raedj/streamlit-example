@@ -45,6 +45,12 @@ data class LearnerProfile(
     val skippedOnboardingSteps: Set<String> = emptySet(),
     /** Null until the learner picks a coaching track (on screen or in the first coaching session). */
     val coachTrack: CoachTrack? = null,
+    /** Daily XP goal (see [com.polyglot.academy.core.gamification.XpRules.goalChoices]). */
+    val dailyXpGoal: Int = 50,
+    /** Streak freezes per learning language. */
+    val streaks: Map<LanguageCode, com.polyglot.academy.core.gamification.StreakState> = emptyMap(),
+    /** Interests used for AI-generated stories and conversation topics. */
+    val interests: List<String> = emptyList(),
 ) {
     fun enrollment(code: LanguageCode): LanguageEnrollment? = learningLanguages.firstOrNull { it.language == code }
     val activeEnrollment: LanguageEnrollment? get() = enrollment(activeLearningLanguage)
