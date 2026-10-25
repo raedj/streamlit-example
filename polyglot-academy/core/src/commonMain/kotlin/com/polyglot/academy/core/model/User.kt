@@ -2,6 +2,10 @@ package com.polyglot.academy.core.model
 
 import kotlinx.serialization.Serializable
 
+/** The coaching focus the learner chose for AI conversations. */
+@Serializable
+enum class CoachTrack { FLUENCY, BUSINESS, TRAVEL, EXAM }
+
 @Serializable
 enum class LearningGoal { TRAVEL, WORK, STUDY, EXAM, CONVERSATION, CULTURE, FAMILY, PERSONAL_GROWTH }
 
@@ -39,6 +43,8 @@ data class LearnerProfile(
     val includeRelaxation: Boolean = false,
     val onboardingCompleted: Boolean = false,
     val skippedOnboardingSteps: Set<String> = emptySet(),
+    /** Null until the learner picks a coaching track (on screen or in the first coaching session). */
+    val coachTrack: CoachTrack? = null,
 ) {
     fun enrollment(code: LanguageCode): LanguageEnrollment? = learningLanguages.firstOrNull { it.language == code }
     val activeEnrollment: LanguageEnrollment? get() = enrollment(activeLearningLanguage)

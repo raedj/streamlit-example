@@ -1,7 +1,7 @@
 # Test Results
 
 Run on 2026-10-25 in the cloud build container (JDK 21, Gradle 8.14.3, Linux x64) with
-`./gradlew build -x :ui:desktopTest`. **Result: BUILD SUCCESSFUL, 178 tests, 0 failures.**
+`./gradlew build -x :ui:desktopTest`. **Result: BUILD SUCCESSFUL, 187 tests, 0 failures.**
 
 | Module | Test class | Tests | Failures |
 |---|---|---|---|
@@ -17,16 +17,17 @@ Run on 2026-10-25 in the cloud build container (JDK 21, Gradle 8.14.3, Linux x64
 | core | SpeakingPathTest (mission ladder A1–C1, prompt and completion flag, word counts, pass criteria, fluency report, progress) | 6 | 0 |
 | core | VisemesTest (mouth shapes from spelling; TTS offsets to words) | 2 | 0 |
 | core | FreeTalkTest (free-topic prompt, correction instruction, topic sanitising) | 2 | 0 |
+| core | CoachTest (coach protocol in the prompt, track question and exam names, warm-up/error log/frustration, four-part correction parsing, frustration detection, error-log grouping, warm-up item choice, ordered titles) | 8 | 0 |
 | core | SchedulerTest | 9 | 0 |
 | core | TextAndAnswersTest | 9 | 0 |
 | core | TutorAndVoiceTest | 10 | 0 |
 | data | SqlStoreTest (incl. real v1→v2 and v2→v3 migrations) | 10 | 0 |
-| data | ServicesIntegrationTest (lesson, review, plan, assessment, providers, offline/AI conversation, privacy, writing, materials, delete-all, restore re-applies reminder, PDF import, AI and offline speaking missions, vision OCR with privacy gate, chosen-topic AI conversation with corrections, free talk offline notice) | 22 | 0 |
+| data | ServicesIntegrationTest (lesson, review, plan, assessment, providers, offline/AI conversation, privacy, writing, materials, delete-all, restore re-applies reminder, PDF import, AI and offline speaking missions, vision OCR with privacy gate, chosen-topic AI conversation with corrections, free talk offline notice, coach asks for and saves the track, error log, warm-up once per session) | 23 | 0 |
 | data | ConversationIntegrityTest | 1 | 0 |
 | data | RestoreTest (v2 round trip of every record type, cloud AI forced off, invalid/newer files rejected without changes, v1 best-effort) | 4 | 0 |
 | uicore | LocalizationTest | 8 | 0 |
 | uicore | ContrastTest | 4 | 0 |
-| **Total** | | **178** | **0** |
+| **Total** | | **187** | **0** |
 
 Also executed: SQLDelight `verifyCommonMainPolyglotDatabaseMigration` (pass); compilation of
 `ui` and `desktopApp` for the JVM (pass, no warnings after fixes).

@@ -21,6 +21,8 @@ import com.polyglot.academy.core.speaking.LevelProgress
 import com.polyglot.academy.core.speaking.MissionStatus
 import com.polyglot.academy.core.speaking.SpeakingMission
 import com.polyglot.academy.core.speaking.SpeakingProgressCalculator
+import com.polyglot.academy.core.tutor.CoachStats
+import com.polyglot.academy.core.tutor.CoachTitles
 import com.polyglot.academy.core.tutor.TutorPersona
 import com.polyglot.academy.core.tutor.TutorRoster
 import com.polyglot.academy.ui.app.LoadContent
@@ -41,7 +43,7 @@ import com.polyglot.academy.ui.i18n.Labels
 import com.polyglot.academy.ui.i18n.LocalStrings
 import com.polyglot.academy.ui.navigation.Route
 
-private class SpeakingData(val levels: List<LevelProgress>, val fluency: FluencyReport)
+private class SpeakingData(val levels: List<LevelProgress>, val fluency: FluencyReport, val stats: CoachStats)
 
 /** The tutor who teaches [language] and suits the mission level, falling back to any tutor for the language. */
 internal fun tutorFor(language: LanguageCode, level: CefrLevel): TutorPersona =
@@ -54,13 +56,14 @@ fun SpeakingPathScreen() {
     val s = LocalStrings.current
     val c = PolyglotTheme.colors
     val lang = app.profile.activeLearningLanguage
-    val loader = rememberLoader(lang) { SpeakingData(app.services.speaking.progress(lang), app.services.speaking.fluency(lang)) }
+    val loader = rememberLoader(lang) { SpeakingData(app.services.speaking.progress(lang), app.services.speaking.fluency(lang), app.services.coach.stats(lang)) }
     fun start(m: SpeakingMission) = app.nav.push(Route.Conversation(tutorFor(lang, m.level).id, m.conversationKey))
 
     ScrollScreen(s[K.SPEAKING_TITLE]) {
         Text(Labels.language(s, lang), style = MaterialTheme.typography.bodyLarge, color = c.textSecondary)
         Text(s[K.SPEAKING_BODY], style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
         LoadContent(loader) { data ->
+            CoachTitleCard(data.stats)
             SpeakingStats(data.fluency)
             SpeakingProgressCalculator.next(data.levels)?.let { m ->
                 SectionHeader(s[K.SPEAKING_NEXT])
@@ -81,6 +84,21 @@ fun SpeakingPathScreen() {
             SectionHeader(s[K.SPEAKING_ABOUT_TITLE])
             Text(s[K.SPEAKING_ABOUT], style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
         }
+    }
+}
+
+/** The learner's current encouragement title and what the next one needs. */
+@Composable
+internal fun CoachTitleCard(stats: CoachStats) {
+    val s = LocalStrings.current
+    val c = PolyglotTheme.colors
+    val current = CoachTitles.current(stats)
+    PolyCard {
+        Text(s[K.COACH_TITLE_LABEL], style = MaterialTheme.typography.labelMedium, color = c.textMuted)
+        Text(Labels.coachTitle(s, current), style = MaterialTheme.typography.titleLarge, color = c.primary)
+        CoachTitles.next(stats)?.let { next ->
+            Text(s.f(K.COACH_TITLE_NEXT, Labels.coachTitle(s, next), s[K.valueOf("COACH_NEED_" + next.name)]), style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
+        } ?: Text(s[K.COACH_TITLE_TOP], style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
     }
 }
 

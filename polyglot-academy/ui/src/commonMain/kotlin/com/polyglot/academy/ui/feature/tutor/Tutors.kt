@@ -71,10 +71,15 @@ private fun FreeTalkCard() {
     val c = PolyglotTheme.colors
     val lang = app.profile.activeLearningLanguage
     var topic by rememberSaveable { mutableStateOf("") }
+    val scope = rememberCoroutineScope()
     val suggestions = (1..8).map { s[K.valueOf("FREE_TOPIC_$it")] }
     PolyCard {
         Text(s[K.FREE_TALK_TITLE], style = MaterialTheme.typography.titleMedium)
         Text(s[K.FREE_TALK_BODY], style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
+        Text(s[K.COACH_TRACK_LABEL], style = MaterialTheme.typography.titleSmall)
+        ChipGroup(com.polyglot.academy.core.model.CoachTrack.entries, setOfNotNull(app.profile.coachTrack), { Labels.coachTrack(s, it, lang) }, { t ->
+            scope.launch { app.services.store.updateProfile { it.copy(coachTrack = if (it.coachTrack == t) null else t) } }
+        })
         AppTextField(topic, { topic = it.take(120) }, s[K.FREE_TALK_TOPIC_LABEL])
         ChipGroup(suggestions, setOf(topic), { it }, { topic = it })
         PrimaryButton(s[K.FREE_TALK_START], {

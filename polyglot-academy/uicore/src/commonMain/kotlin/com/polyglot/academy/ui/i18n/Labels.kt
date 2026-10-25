@@ -35,6 +35,13 @@ object Labels {
     fun correctionDesc(s: Localizer, c: CorrectionIntensity) = s[K.valueOf("CORRECTION_${c.name}_DESC")]
     fun theme(s: Localizer, t: ThemeMode) = s[K.valueOf("THEME_${t.name}")]
     fun severity(s: Localizer, e: ErrorSeverity) = s[K.valueOf("SEVERITY_${e.name}")]
+    fun errorCategory(s: Localizer, category: String) =
+        s[K.valueOf("ERR_CAT_" + (category.takeIf { it in com.polyglot.academy.core.tutor.CoachProtocol.errorCategories } ?: "other").uppercase())]
+    fun register(s: Localizer, r: com.polyglot.academy.core.model.Register) = s[K.valueOf("REGISTER_${r.name}")]
+    fun coachTrack(s: Localizer, t: com.polyglot.academy.core.model.CoachTrack, language: LanguageCode) =
+        if (t == com.polyglot.academy.core.model.CoachTrack.EXAM) s.f(K.COACH_TRACK_EXAM, com.polyglot.academy.core.tutor.CoachProtocol.examName(language).replace("an Arabic proficiency exam", s[K.COACH_EXAM_ARABIC]).replace(" or ", " / "))
+        else s[K.valueOf("COACH_TRACK_${t.name}")]
+    fun coachTitle(s: Localizer, t: com.polyglot.academy.core.tutor.CoachTitle) = s[K.valueOf("COACH_TITLE_${t.name}")]
     fun speechError(s: Localizer, e: SpeechErrorKind) = s[K.valueOf("SPEECH_ERR_${e.name}")]
     fun offlineReason(s: Localizer, r: OfflineReason) = s[K.valueOf("OFFLINE_REASON_${r.name}")]
     fun reason(s: Localizer, r: RecommendationReason) = s[K.valueOf("REASON_${r.name}")]

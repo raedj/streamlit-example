@@ -6,7 +6,7 @@ and Compose Multiplatform, so the learning engine, data layer and UI are shared 
 Android app and a desktop verification harness.
 
 > **Status (honest summary).** The learning engine, AI provider layer, data layer and
-> presentation logic are implemented and covered by **178 passing automated tests**. The Compose
+> presentation logic are implemented and covered by **187 passing automated tests**. The Compose
 > UI (≈40 screens) **compiles**. The Android sources are **type-checked against the Android 15
 > framework** but have **not been built** with the Android Gradle Plugin, and the UI **has not been run or screenshotted**: the build environment used so
 > far blocks Google Maven (`dl.google.com`), which hosts the Android Gradle Plugin, AndroidX and

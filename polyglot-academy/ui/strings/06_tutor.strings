@@ -108,3 +108,42 @@ SCENARIOS_TITLE ¦ Role-play scenarios ¦ مواقف تمثيل الأدوار
 SCENARIO_LEVEL ¦ Level {0} ¦ المستوى {0}
 SCENARIO_START ¦ Start scenario ¦ ابدأ الموقف
 SCENARIO_PHRASES ¦ Useful phrases ¦ عبارات مفيدة
+CORR_ERROR ¦ Your sentence ¦ الخطأ
+CORR_FIX ¦ Correction ¦ التصحيح
+CORR_REASON ¦ Why ¦ السبب
+CORR_CONTEXT ¦ Register ¦ السياق
+CORR_TRY_YOURSELF ¦ Try to fix it yourself: ¦ حاول أن تصحّحه بنفسك:
+CORR_SHOW_ANSWER ¦ Show the correction ¦ أظهر التصحيح
+REGISTER_FORMAL ¦ Formal ¦ رسمي
+REGISTER_INFORMAL ¦ Informal ¦ عامّي / غير رسمي
+REGISTER_NEUTRAL ¦ Neutral (fine in most situations) ¦ محايد (مناسب لمعظم المواقف)
+ERR_CAT_TENSE ¦ tense ¦ الأزمنة
+ERR_CAT_AGREEMENT ¦ agreement ¦ المطابقة
+ERR_CAT_WORD_ORDER ¦ word order ¦ ترتيب الكلمات
+ERR_CAT_SPELLING ¦ spelling ¦ الإملاء
+ERR_CAT_VOCABULARY ¦ vocabulary ¦ المفردات
+ERR_CAT_PREPOSITION ¦ preposition ¦ حروف الجر
+ERR_CAT_ARTICLE ¦ article ¦ أدوات التعريف والتنكير
+ERR_CAT_REGISTER ¦ register ¦ مستوى اللغة
+ERR_CAT_OTHER ¦ other ¦ أخرى
+COACH_TRACK_LABEL ¦ Your coaching track ¦ مسار التدريب
+COACH_TRACK_FLUENCY ¦ Everyday fluency ¦ المحادثة والطلاقة اليومية
+COACH_TRACK_BUSINESS ¦ Business and emails ¦ لغة الأعمال والإيميلات
+COACH_TRACK_TRAVEL ¦ Travel and hospitality ¦ السفر والسياحة والضيافة
+COACH_TRACK_EXAM ¦ Exam preparation ({0}) ¦ التحضير للاختبارات ({0})
+COACH_EXAM_ARABIC ¦ Arabic proficiency exams ¦ اختبارات الكفاءة في العربية
+COACH_TITLE_LABEL ¦ Your title ¦ لقبك
+COACH_TITLE_FIRST_STEPS ¦ First Steps ¦ الخطوات الأولى
+COACH_TITLE_WORD_EXPLORER ¦ Word Explorer ¦ مستكشف الكلمات
+COACH_TITLE_CONVERSATION_STARTER ¦ Conversation Starter ¦ مُبادر المحادثة
+COACH_TITLE_PHRASING_PRO ¦ Phrasing Pro ¦ محترف الصياغة
+COACH_TITLE_MISSION_MASTER ¦ Mission Master ¦ سيّد المهام
+COACH_TITLE_FLUENT_VOICE ¦ Fluent Voice ¦ الصوت الطليق
+COACH_TITLE_NEXT ¦ Next: {0}. {1} ¦ التالي: {0}. {1}
+COACH_TITLE_TOP ¦ You have earned every title. Keep talking to stay in shape! ¦ حصلت على كل الألقاب. واصل الحديث لتحافظ على مستواك!
+COACH_NEED_FIRST_STEPS ¦ Start learning. ¦ ابدأ التعلّم.
+COACH_NEED_WORD_EXPLORER ¦ Have 25 words in your reviews. ¦ أضف 25 كلمة إلى مراجعاتك.
+COACH_NEED_CONVERSATION_STARTER ¦ Have 5 conversations of at least 4 turns. ¦ أجرِ 5 محادثات من 4 أدوار على الأقل.
+COACH_NEED_PHRASING_PRO ¦ Have 10 conversations, with at most 3 corrections per 10 of your recent turns. ¦ أجرِ 10 محادثات، بثلاثة تصحيحات على الأكثر لكل 10 من أدوارك الأخيرة.
+COACH_NEED_MISSION_MASTER ¦ Pass 10 speaking missions. ¦ أنجز 10 مهام محادثة.
+COACH_NEED_FLUENT_VOICE ¦ Pass 20 speaking missions with about 12+ words per turn. ¦ أنجز 20 مهمة محادثة بنحو 12 كلمة أو أكثر في كل دور.

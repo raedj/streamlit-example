@@ -3,6 +3,8 @@ package com.polyglot.academy.core.tutor
 import com.polyglot.academy.core.ai.ChatMessage
 import com.polyglot.academy.core.ai.ChatRole
 import com.polyglot.academy.core.model.CefrLevel
+import com.polyglot.academy.core.model.CoachTrack
+import com.polyglot.academy.core.model.Register
 import com.polyglot.academy.core.model.CorrectionIntensity
 import com.polyglot.academy.core.model.Correction
 import com.polyglot.academy.core.model.ErrorSeverity
@@ -31,6 +33,8 @@ data class TutorReply(
     val scripted: Boolean,
     /** The AI tutor judged that the learner completed the speaking mission's tasks. */
     val missionComplete: Boolean = false,
+    /** The coaching track the learner chose during the conversation, as reported by the AI. */
+    val track: CoachTrack? = null,
 )
 
 data class TutorContext(
@@ -46,6 +50,13 @@ data class TutorContext(
     val mission: SpeakingMission? = null,
     /** A topic the learner typed for a free conversation (already sanitised by [TutorPromptBuilder.cleanTopic]). */
     val topic: String? = null,
+    val coachTrack: CoachTrack? = null,
+    /** First coaching session without a chosen track: the coach asks for one. */
+    val askTrack: Boolean = false,
+    /** Items for the opening review quiz (only on the session's first request). */
+    val warmUp: List<String> = emptyList(),
+    /** The learner's last turns suggest frustration or repeated errors. */
+    val struggling: Boolean = false,
 )
 
 /** Builds the system prompt sent to cloud/local models. Personality changes instructions, not just the name. */
@@ -100,14 +111,21 @@ object TutorPromptBuilder {
                 ctx.topic?.let {
                     appendLine("The learner chose this topic: \"$it\". If the first learner message is exactly \"$START_SIGNAL\", it is a signal from the app: " +
                         "open the conversation about this topic yourself in $target, with a question.")
-                }
+                } ?: appendLine("If the first learner message is exactly \"$START_SIGNAL\", it is a signal from the app: open the session yourself in $target " +
+                    "with a short warm welcome, then do the warm-up or ask what the learner would like to talk about.")
             }
             appendLine("In every reply, first report the learner's errors in the corrections field as described above, then continue the conversation naturally in $target.")
+            append(CoachProtocol.rules(target, explain))
+            ctx.coachTrack?.let { appendLine(CoachProtocol.track(it, ctx.targetLanguage)) }
+            if (ctx.askTrack) appendLine(CoachProtocol.trackQuestion(ctx.targetLanguage))
+            if (ctx.warmUp.isNotEmpty()) appendLine(CoachProtocol.warmUp(ctx.warmUp))
             if (ctx.recentVocabulary.isNotEmpty()) appendLine("Try to reuse some recently studied words: ${ctx.recentVocabulary.take(10).joinToString()}.")
-            if (ctx.recurringDifficulties.isNotEmpty()) appendLine("The learner often struggles with: ${ctx.recurringDifficulties.take(5).joinToString()}.")
+            if (ctx.recurringDifficulties.isNotEmpty()) appendLine(CoachProtocol.recurring(ctx.recurringDifficulties.take(5)))
+            if (ctx.struggling) appendLine(CoachProtocol.STRUGGLING)
             appendLine("Respond ONLY with a JSON object of this shape:")
-            appendLine("""{"reply": "<your reply in $target>", "reply_translation": "<translation in $explain or empty>", "corrections": [{"original": "...", "corrected": "...", "explanation": "<in $explain>", "severity": "minor|moderate|meaning", "stylistic": false}], "alternatives": ["<optional more natural phrasing>"], "vocabulary": ["<word — meaning in $explain>"]""" +
-                (if (ctx.mission != null) """, "mission_complete": false""" else "") + "}")
+            appendLine("""{"reply": "<your reply in $target>", "reply_translation": "<translation in $explain or empty>", "corrections": [{"original": "...", "corrected": "...", "explanation": "<in $explain>", "severity": "minor|moderate|meaning", "stylistic": false, "hint": "<guiding question for a minor error, or empty>", "register": "formal|informal|neutral", "category": "<one error type>"}], "alternatives": ["<optional more natural phrasing>"], "vocabulary": ["<word — meaning in $explain>"]""" +
+                (if (ctx.mission != null) """, "mission_complete": false""" else "") +
+                (if (ctx.askTrack) """, "track": "<fluency|business|travel|exam once chosen, else empty>"""" else "") + "}")
         }
     }
 
@@ -137,7 +155,8 @@ object TutorResponseParser {
         val reply = s("reply")?.takeIf { it.isNotEmpty() } ?: return TutorReply(raw.trim(), null, emptyList(), emptyList(), emptyList(), false, producedBy, false)
         return TutorReply(reply, s("reply_translation")?.takeIf { it.isNotEmpty() }, corrections, list("alternatives"), list("vocabulary"),
             finished = false, producedBy = producedBy, scripted = false,
-            missionComplete = (obj["mission_complete"] as? JsonPrimitive)?.content == "true")
+            missionComplete = (obj["mission_complete"] as? JsonPrimitive)?.content == "true",
+            track = CoachProtocol.parseTrack(s("track")))
     }
 
     /** Reads a "corrections" array, dropping entries where nothing actually changed. */
@@ -154,6 +173,11 @@ object TutorResponseParser {
                 else -> ErrorSeverity.MODERATE
             },
             isStylistic = (c["stylistic"] as? JsonPrimitive)?.content == "true",
+            hint = cs("hint").ifBlank { null },
+            register = when (cs("register").lowercase()) {
+                "formal" -> Register.FORMAL; "informal" -> Register.INFORMAL; "neutral" -> Register.NEUTRAL; else -> null
+            },
+            category = cs("category").lowercase().ifBlank { null },
         )
     } ?: emptyList()
 

@@ -21,7 +21,7 @@ class FreeTalkTest {
         val free = prompt()
         assertTrue("talk about any topic the learner raises" in free, free)
         assertTrue("first report the learner's errors in the corrections field" in free)
-        assertFalse(TutorPromptBuilder.START_SIGNAL in free, "no self-opening without a chosen topic")
+        assertTrue("open the session yourself" in free, "the coach opens and welcomes the learner even without a topic")
         val withTopic = prompt(topic = "la cuisine marocaine")
         assertTrue("\"la cuisine marocaine\"" in withTopic && TutorPromptBuilder.START_SIGNAL in withTopic)
         // Role-plays keep their own scope.

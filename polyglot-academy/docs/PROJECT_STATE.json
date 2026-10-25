@@ -50,11 +50,11 @@
     }
   },
   "last_tests": {
-    "total": 178,
+    "total": 187,
     "failed": 0,
     "modules": {
-      "core": 129,
-      "data": 37,
+      "core": 137,
+      "data": 38,
       "uicore": 12
     },
     "not_run": [
@@ -83,6 +83,7 @@
     "Device test: microphone flow, TTS voices for zh/ar, reminders, TalkBack"
   ],
   "recent_changes": [
+    "AI language-coach protocol: first-session welcome and track choice (fluency, business, travel, exam prep with language-specific exams), adaptive warm-up from review items, micro-learning and role-play rules, Socratic four-part corrections (error, fix, reason, register + hint for minor errors), hidden error log grouped by error type and fed back for re-tests, frustration handling, ordered encouragement titles; 9 new tests",
     "Backup restore (export format v2, transactional import, cloud AI forced off) — K-06",
     "Android type-check module; fixed 3 null-dereference crashes (D-06..D-08)",
     "Spanish/French/Arabic: +24 words, +3 lessons (home & weather, health, work), +2 role-plays and a 'for work' track each; track integrity validated — K-07 partly addressed",

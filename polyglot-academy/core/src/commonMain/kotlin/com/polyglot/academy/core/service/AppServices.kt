@@ -66,13 +66,14 @@ class AppServices(
     val materials = MaterialService(store, store, reviews, clock, ids, platform.extractionSupport, ocr)
 
     val speaking = SpeakingService(store, clock)
+    val coach = CoachService(store, store, store, store, clock, ids)
 
     fun conversation(
         scope: CoroutineScope, language: LanguageCode, tutor: TutorPersona, scenario: RolePlayScenario?, forceOffline: Boolean = false,
         mission: com.polyglot.academy.core.speaking.SpeakingMission? = null,
         topic: String? = null,
     ) = ConversationController(scope, language, tutor, scenario, store, store, store, reviews, providers, study, achievements,
-        platform.recognizer, platform.synthesizer, clock, ids, forceOffline, mission, topic)
+        platform.recognizer, platform.synthesizer, clock, ids, forceOffline, mission, topic, coach)
 
     /**
      * Restores an export, then re-applies the restored reminder schedule (the alarm itself is not

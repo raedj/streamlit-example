@@ -36,6 +36,7 @@ import com.polyglot.academy.core.speech.VoiceState
 import com.polyglot.academy.core.speech.VoiceStateMachine
 import com.polyglot.academy.core.speech.Visemes
 import com.polyglot.academy.core.tutor.OfflineTutorEngine
+import com.polyglot.academy.core.tutor.CoachProtocol
 import com.polyglot.academy.core.tutor.TutorContext
 import com.polyglot.academy.core.tutor.TutorPersona
 import com.polyglot.academy.core.tutor.TutorPromptBuilder
@@ -130,15 +131,20 @@ class ConversationController(
     private val mission: SpeakingMission? = null,
     /** Free conversation on a topic the learner chose; the AI opens the conversation on it. */
     topic: String? = null,
+    /** Coach memory and error log; null in tests that do not need it. */
+    private val coach: CoachService? = null,
 ) {
+    private var memory = com.polyglot.academy.core.tutor.CoachMemory()
+    /** The warm-up quiz is requested only in the session's first AI request. */
+    private var warmUpPending = true
     private val topic: String? = topic?.let { TutorPromptBuilder.cleanTopic(it) }
     private val _state = MutableStateFlow(ConversationState(ids.newId("conv"), tutor, language, scenario, mission = mission, topic = this.topic))
     val state: StateFlow<ConversationState> = _state.asStateFlow()
 
     /** Stored with the conversation so progress (missions, scenarios) can be derived later. */
     private val conversationKey: String? = mission?.conversationKey ?: scenario?.id ?: this.topic?.let { TOPIC_PREFIX + it }
-    /** Missions and chosen topics are opened by the AI itself, prompted by the start signal. */
-    private val aiOpensItself = mission != null || this.topic != null
+    /** Except in scripted role-plays, the AI opens the session itself (greeting, warm-up), prompted by the start signal. */
+    private val aiOpensItself = scenario == null
     private val missionScenario: RolePlayScenario? = mission?.offlineScenario(language)
     private var speechStartedAt: Long? = null
     private var listenStartedAt: Long = 0
@@ -163,6 +169,7 @@ class ConversationController(
         level = profile.enrollment(language)?.startingLevel ?: CefrLevel.A1
         offline = OfflineTutorEngine(effectiveScenario, explanationLanguage)
         val engine = if (forceOffline) TutorEngineMode.Offline(OfflineReason.USER_CHOSE_OFFLINE) else chooseEngine()
+        if (engine is TutorEngineMode.Ai) coach?.let { memory = it.memory(language) }
         val recognition = recognizer.availability(localeTag)
         val tts = synthesizer.isLanguageAvailable(localeTag)
         _state.update {
@@ -232,6 +239,8 @@ class ConversationController(
                 is TutorEngineMode.Offline -> offline.respond(trimmed)
                 is TutorEngineMode.Ai -> aiReply() ?: offline.respond(trimmed)
             }
+            coach?.record(language, reply.corrections)
+            reply.track?.let { t -> if (profiles.currentProfile().coachTrack == null) profiles.updateProfile { it.copy(coachTrack = t) } }
             val confirmed = reply.missionComplete || (missionScenario != null && offline.isFinished && _state.value.engine is TutorEngineMode.Offline)
             if (mission != null && confirmed) _state.update { it.copy(missionConfirmed = true) }
             // Attach corrections to the learner turn they refer to.
@@ -248,13 +257,20 @@ class ConversationController(
 
     private suspend fun aiReply(override: List<com.polyglot.academy.core.ai.ChatMessage>? = null): TutorReply? {
         val s = _state.value
-        val ctx = TutorContext(tutor, language, explanationLanguage, level, profiles.currentProfile().correctionIntensity, scenario, s.showTranslations, mission = mission, topic = topic)
+        val profile = profiles.currentProfile()
+        val learnerTurns = s.turns.filter { it.speaker == Speaker.LEARNER }
+        val ctx = TutorContext(tutor, language, explanationLanguage, level, profile.correctionIntensity, scenario, s.showTranslations, mission = mission, topic = topic,
+            recurringDifficulties = memory.recurringErrors, coachTrack = profile.coachTrack,
+            askTrack = profile.coachTrack == null && scenario == null && mission == null,
+            warmUp = if (warmUpPending && scenario == null) memory.warmUp else emptyList(),
+            struggling = CoachProtocol.isStruggling(learnerTurns))
         val turns = TutorPromptBuilder.history(s.turns.filter { it.speaker != Speaker.SYSTEM }.map { (it.speaker == Speaker.LEARNER) to it.text })
         // A mission conversation always begins with the start signal, so the model sees why it spoke first.
         val history = override ?: if (aiOpensItself) listOf(com.polyglot.academy.core.ai.ChatMessage(com.polyglot.academy.core.ai.ChatRole.USER, TutorPromptBuilder.START_SIGNAL)) + turns else turns
         val outcome = providers.execute(AiCapability.CHAT, ChatRequest(TutorPromptBuilder.systemPrompt(ctx), history, setOf(DataCategory.CONVERSATION_TEXT), expectJson = true))
         return when (outcome) {
             is AiOutcome.Success -> {
+                warmUpPending = false
                 if (outcome.usedFallback) _state.update { it.copy(notice = ConversationNotice.USED_FALLBACK_PROVIDER) }
                 TutorResponseParser.parse(outcome.response.text, outcome.response.providerId.name)
             }

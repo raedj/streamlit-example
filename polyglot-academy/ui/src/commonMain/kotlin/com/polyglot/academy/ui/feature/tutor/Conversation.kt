@@ -295,13 +295,41 @@ private fun LearnerBubble(turn: ConversationTurn, lang: LanguageCode) {
         ) {
             Text(s[K.CONV_YOU] + if (turn.wasSpoken) " · ${s[K.CONV_SPOKEN]}" else "", style = MaterialTheme.typography.labelMedium, color = c.onPrimaryContainer)
             LearningText(turn.text, lang, style = MaterialTheme.typography.bodyLarge, color = c.onPrimaryContainer)
-            turn.corrections.forEach { cr ->
-                Column(Modifier.fillMaxWidth().clip(RoundedCornerShape(10.dp)).background(c.card).padding(8.dp)) {
-                    Text(if (cr.isStylistic) s[K.CONV_STYLISTIC] else "${s[K.CONV_CORRECTION]} · ${Labels.severity(s, cr.severity)}",
-                        style = MaterialTheme.typography.labelMedium, color = if (cr.isStylistic) c.info else c.warning)
-                    LearningText(cr.corrected, lang, style = MaterialTheme.typography.bodyMedium, color = c.success)
-                    if (cr.explanation.isNotBlank()) Text(cr.explanation, style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
-                }
+            turn.corrections.forEach { cr -> CorrectionCard(cr, lang) }
+        }
+    }
+}
+
+/**
+ * One correction in four parts: the error, the fix, the reason and the register. For a minor
+ * error with a guiding question, the fix stays hidden until the learner asks, so they can try first.
+ */
+@Composable
+private fun CorrectionCard(cr: com.polyglot.academy.core.model.Correction, lang: LanguageCode) {
+    val s = LocalStrings.current
+    val c = PolyglotTheme.colors
+    val socratic = cr.hint != null && cr.severity == com.polyglot.academy.core.model.ErrorSeverity.MINOR && !cr.isStylistic
+    var revealed by rememberSaveable(cr.original, cr.corrected) { mutableStateOf(!socratic) }
+    Column(Modifier.fillMaxWidth().clip(RoundedCornerShape(10.dp)).background(c.card).padding(8.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+        Text(if (cr.isStylistic) s[K.CONV_STYLISTIC] else "${s[K.CONV_CORRECTION]} · ${Labels.severity(s, cr.severity)}" +
+            (cr.category?.let { " · " + Labels.errorCategory(s, it) } ?: ""),
+            style = MaterialTheme.typography.labelMedium, color = if (cr.isStylistic) c.info else c.warning)
+        Text(s[K.CORR_ERROR], style = MaterialTheme.typography.labelSmall, color = c.textMuted)
+        LearningText(cr.original, lang, style = MaterialTheme.typography.bodyMedium, color = c.error)
+        if (!revealed) {
+            Text(s[K.CORR_TRY_YOURSELF], style = MaterialTheme.typography.labelSmall, color = c.textMuted)
+            LearningText(cr.hint.orEmpty(), lang, style = MaterialTheme.typography.bodyMedium)
+            QuietButton(s[K.CORR_SHOW_ANSWER], { revealed = true })
+        } else {
+            Text(s[K.CORR_FIX], style = MaterialTheme.typography.labelSmall, color = c.textMuted)
+            LearningText(cr.corrected, lang, style = MaterialTheme.typography.bodyMedium, color = c.success)
+            if (cr.explanation.isNotBlank()) {
+                Text(s[K.CORR_REASON], style = MaterialTheme.typography.labelSmall, color = c.textMuted)
+                Text(cr.explanation, style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
+            }
+            cr.register?.let {
+                Text(s[K.CORR_CONTEXT], style = MaterialTheme.typography.labelSmall, color = c.textMuted)
+                Text(Labels.register(s, it), style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
             }
         }
     }

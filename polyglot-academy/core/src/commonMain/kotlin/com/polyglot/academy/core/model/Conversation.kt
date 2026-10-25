@@ -14,7 +14,16 @@ data class Correction(
     val severity: ErrorSeverity,
     /** True for optional stylistic alternatives that are not errors. */
     val isStylistic: Boolean = false,
+    /** A guiding question for a minor error, so the learner can find the fix before seeing it. */
+    val hint: String? = null,
+    /** Register of the corrected form. */
+    val register: Register? = null,
+    /** Error type used by the coach's error log (tense, spelling, …). */
+    val category: String? = null,
 )
+
+@Serializable
+enum class Register { FORMAL, INFORMAL, NEUTRAL }
 
 @Serializable
 data class ConversationTurn(

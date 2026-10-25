@@ -310,19 +310,47 @@ class ServicesIntegrationTest {
 
     @Test fun aiConversationParsesCorrectionsAndSendsOnlyConversationText() = runBlocking<Unit> {
         enroll(); enableCloud()
-        openai.replies += Result.success("""{"reply":"Great! Where do you work?","reply_translation":"رائع! أين تعمل؟","corrections":[{"original":"I am work in bank","corrected":"I work in a bank","explanation":"لا نستخدم am مع فعل آخر","severity":"moderate"}],"alternatives":[],"vocabulary":["bank — بنك"]}""")
+        openai.replies += Result.success("""{"reply":"Welcome! Which track would you like: everyday fluency, business, travel or IELTS/TOEFL?"}""")
+        openai.replies += Result.success("""{"reply":"Great! Where do you work?","reply_translation":"رائع! أين تعمل؟","track":"business","corrections":[{"original":"I am work in bank","corrected":"I work in a bank","explanation":"لا نستخدم am مع فعل آخر","severity":"moderate","register":"neutral","category":"tense"}],"alternatives":[],"vocabulary":["bank — بنك"]}""")
         val c = app.conversation(scope, LanguageCode.ENGLISH, TutorRoster.byId("oliver")!!, null)
         c.start(); waitFor { c.state.value.turns.isNotEmpty() }
         assertIs<TutorEngineMode.Ai>(c.state.value.engine)
-        c.sendText("I am work in bank")
+        // The coach opens the first session itself and asks for a track.
+        assertTrue("Which track" in c.state.value.turns.single().text)
+        assertTrue("ask which track" in openai.requests.first().system)
+        c.sendText("Business, please. I am work in bank")
         waitFor { c.state.value.turns.size >= 3 }
         val turns = c.state.value.turns
         assertEquals("I work in a bank", turns[1].corrections.single().corrected)
+        assertEquals(com.polyglot.academy.core.model.Register.NEUTRAL, turns[1].corrections.single().register)
         assertEquals("Great! Where do you work?", turns[2].text)
         assertEquals("رائع! أين تعمل؟", turns[2].translation)
-        val req = openai.requests.single()
+        val req = openai.requests.last()
         assertEquals(setOf(com.polyglot.academy.core.model.DataCategory.CONVERSATION_TEXT), req.dataCategories)
         assertTrue("Oliver" in req.system)
+        // The chosen track is remembered, and the error goes into the hidden error log.
+        assertEquals(com.polyglot.academy.core.model.CoachTrack.BUSINESS, store.currentProfile().coachTrack)
+        assertEquals("conversation:tense", store.mistakes(LanguageCode.ENGLISH).first().single().sourceId)
+    }
+
+    @Test fun coachWarmsUpWithReviewItemsAndRetestsRecurringErrors() = runBlocking<Unit> {
+        enroll(); enableCloud()
+        store.updateProfile { it.copy(coachTrack = com.polyglot.academy.core.model.CoachTrack.TRAVEL) }
+        val word = Curriculum.of(LanguageCode.ENGLISH).vocabulary.first()
+        store.save(com.polyglot.academy.core.model.ReviewState(word.id, LanguageCode.ENGLISH, lastReviewedAtMillis = 1, dueAtMillis = 0), null)
+        repeat(2) { app.coach.record(LanguageCode.ENGLISH, listOf(com.polyglot.academy.core.model.Correction("I goed", "I went", "", com.polyglot.academy.core.model.ErrorSeverity.MINOR, category = "tense"))) }
+        assertEquals(2, store.mistakes(LanguageCode.ENGLISH).first().single().occurrences)
+        openai.replies += Result.success("""{"reply":"Welcome back! Quick quiz: what does '${word.term}' mean?"}""")
+        openai.replies += Result.success("""{"reply":"Well done! Where are you travelling next?"}""")
+        val c = app.conversation(scope, LanguageCode.ENGLISH, TutorRoster.byId("oliver")!!, null)
+        c.start(); waitFor { c.state.value.turns.isNotEmpty() }
+        val first = openai.requests.first().system
+        assertTrue("${word.term} — ${word.meaning.en}" in first, first)
+        assertTrue("Error log (recurring mistakes): tense (2×)" in first)
+        assertTrue("Track: travel" in first && "ask which track" !in first)
+        c.sendText("I know it")
+        waitFor { c.state.value.turns.size >= 3 }
+        assertFalse("short quiz questions" in openai.requests.last().system, "the warm-up happens once per session")
     }
 
     @Test fun aiFailureFallsBackToOfflineWithNotice() = runBlocking<Unit> {
