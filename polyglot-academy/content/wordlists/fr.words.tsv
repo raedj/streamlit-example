@@ -1,0 +1,301 @@
+rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
+1	fr_w_le	le	det	function	the	أداة التعريف (الـ)		la, l', les
+2	fr_w_de	de	prep	function	of, from	من، لـ (للإضافة)		d', du, des
+3	fr_w_un	un	det	function	a, an; one	أداة نكرة؛ واحد		une
+4	fr_w_etre	être	verb	function	to be	يكون		suis, es, est, sommes, êtes, sont, étais, était, étions, étaient, été, serai, sera, serons, seront, serait, sois, soit	irregular=yes
+5	fr_w_et	et	conj	function	and	و
+6	fr_w_a	à	prep	function	to, at, in	إلى، في		au, aux
+7	fr_w_il	il	pron	function	he, it	هو		ils, lui, eux
+8	fr_w_avoir	avoir	verb	function	to have	يملك، لديه		ai, as, a, avons, avez, ont, avais, avait, avions, avaient, eu, aurai, aura, aurait, aie, ait	irregular=yes
+9	fr_w_ne	ne	part	function	not (ne … pas)	لا (للنفي مع pas)		n'
+10	fr_w_je	je	pron	function	I	أنا		j', me, m', moi, mon, ma, mes
+11	fr_w_pas	pas	adv	function	not (ne … pas)	لا، ليس
+12	fr_w_ce	ce	det	function	this, that; it	هذا، ذلك		c', cet, cette, ces, ça, cela
+13	fr_w_que	que	conj	function	that, which; than	أنّ؛ الذي؛ من (للمقارنة)		qu'
+14	fr_w_vous	vous	pron	function	you (formal or plural)	أنتم، حضرتك		votre, vos
+15	fr_w_on	on	pron	function	we, one, people	نحن؛ المرء
+16	fr_w_qui	qui	pron	question	who, which	مَن؛ الذي
+17	fr_w_en	en	prep	function	in, by; some of it	في، بـ؛ منه
+18	fr_w_pour	pour	prep	function	for, in order to	لـ، من أجل
+19	fr_w_dans	dans	prep	function	in, inside	في، داخل
+20	fr_w_tu	tu	pron	function	you (informal)	أنت		te, t', toi, ton, ta, tes
+21	fr_w_elle	elle	pron	function	she, it	هي		elles
+22	fr_w_nous	nous	pron	function	we, us	نحن		notre, nos
+23	fr_w_faire	faire	verb	actions	to do, to make	يفعل، يصنع		fais, fait, faisons, faites, font, faisais, faisait, ferai, fera, fasse	irregular=yes
+24	fr_w_aller	aller	verb	actions	to go	يذهب		vais, vas, va, allons, allez, vont, allé, allée, allés, allais, allait, irai, ira, irons, aille	irregular=yes
+25	fr_w_pouvoir	pouvoir	verb	function	can, to be able to	يستطيع		peux, peut, pouvons, pouvez, peuvent, pu, pouvais, pouvait, pourrai, pourra, pourrais, pourrait, pourriez	irregular=yes
+26	fr_w_mais	mais	conj	function	but	لكن
+27	fr_w_sur	sur	prep	function	on; about	على؛ عن
+28	fr_w_avec	avec	prep	function	with	مع
+29	fr_w_se	se	pron	function	oneself, himself, herself (reflexive)	ضمير انعكاسي (نفسه)		s'
+30	fr_w_plus	plus	adv	quantity	more; ne … plus = no longer	أكثر؛ لم يعد
+31	fr_w_tout	tout	det	quantity	all, everything	كل		toute, tous, toutes
+32	fr_w_bien	bien	adv	describe	well, fine	جيدًا، بخير
+33	fr_w_dire	dire	verb	actions	to say, to tell	يقول		dis, dit, disons, dites, disent, disait, dira	irregular=yes
+34	fr_w_vouloir	vouloir	verb	actions	to want	يريد		veux, veut, voulons, voulez, veulent, voulu, voulais, voulait, voudrais, voudrait, voudriez	irregular=yes
+35	fr_w_oui	oui	interj	social	yes	نعم
+36	fr_w_non	non	adv	social	no	لا
+37	fr_w_y	y	pron	places	there; il y a = there is	هناك؛ il y a = يوجد
+38	fr_w_ou_where	où	adv	question	where	أين
+39	fr_w_comme	comme	conj	function	like, as	مثل، كـ
+40	fr_w_tres	très	adv	describe	very	جدًا
+41	fr_w_voir	voir	verb	actions	to see	يرى		vois, voit, voyons, voyez, voient, vu, vue, voyais, verrai, verra	irregular=yes
+42	fr_w_savoir	savoir	verb	actions	to know (facts)	يعرف		sais, sait, savons, savez, savent, su, savais, saura, sache	irregular=yes
+43	fr_w_venir	venir	verb	actions	to come	يأتي		viens, vient, venons, venez, viennent, venu, venue, venait, viendrai, viendra	irregular=yes
+44	fr_w_ici	ici	adv	places	here	هنا
+45	fr_w_alors	alors	adv	function	so, then	إذن، لذلك
+46	fr_w_quoi	quoi	pron	question	what	ماذا
+47	fr_w_comment	comment	adv	question	how	كيف
+48	fr_w_quand	quand	conj	time	when	متى؛ عندما
+49	fr_w_bon	bon	adj	describe	good	جيد		bonne, bons, bonnes, meilleur, meilleure
+50	fr_w_rien	rien	pron	things	nothing	لا شيء
+51	fr_w_si	si	conj	function	if; so	إذا؛ جدًا		s'
+52	fr_w_aussi	aussi	adv	function	also, too	أيضًا
+53	fr_w_merci	merci	interj	social	thank you	شكرًا				fr_merci
+54	fr_w_bonjour	bonjour	interj	social	hello, good morning	مرحبًا، صباح الخير				fr_bonjour
+55	fr_w_petit	petit	adj	describe	small, little	صغير
+56	fr_w_grand	grand	adj	describe	big, tall	كبير، طويل
+57	fr_w_nouveau	nouveau	adj	describe	new	جديد		nouvel, nouvelle, nouveaux, nouvelles
+58	fr_w_vieux	vieux	adj	describe	old	قديم؛ مسنّ		vieil, vieille, vieilles
+59	fr_w_beau	beau	adj	describe	beautiful; il fait beau = the weather is nice	جميل		bel, belle, beaux, belles
+60	fr_w_autre	autre	adj	describe	other, another	آخر
+61	fr_w_meme	même	adj	describe	same; even	نفس؛ حتى
+62	fr_w_jour	jour	noun	time	day	يوم			gender=m; article=le
+63	fr_w_temps	temps	noun	time	time; weather	وقت؛ طقس			gender=m; article=le
+64	fr_w_an	an	noun	time	year (counting: dix ans)	سنة (في العدّ والعمر)			gender=m; article=l'
+65	fr_w_annee	année	noun	time	year	سنة			gender=f; article=l'
+66	fr_w_fois	fois	noun	time	time (occasion)	مرة			gender=f; article=la
+67	fr_w_heure	heure	noun	time	hour; o'clock	ساعة			gender=f; article=l'
+68	fr_w_minute	minute	noun	time	minute	دقيقة			gender=f; article=la
+69	fr_w_semaine	semaine	noun	time	week	أسبوع			gender=f; article=la	fr_semaine
+70	fr_w_mois	mois	noun	time	month	شهر			gender=m; article=le
+71	fr_w_matin	matin	noun	time	morning	صباح			gender=m; article=le
+72	fr_w_soir	soir	noun	time	evening	مساء			gender=m; article=le
+73	fr_w_nuit	nuit	noun	time	night	ليل، ليلة			gender=f; article=la
+74	fr_w_aujourdhui	aujourd'hui	adv	time	today	اليوم				fr_aujourdhui
+75	fr_w_demain	demain	adv	time	tomorrow	غدًا				fr_demain
+76	fr_w_hier	hier	adv	time	yesterday	أمس				fr_hier
+77	fr_w_maintenant	maintenant	adv	time	now	الآن
+78	fr_w_toujours	toujours	adv	time	always; still	دائمًا؛ ما زال
+79	fr_w_jamais	jamais	adv	time	never	أبدًا
+80	fr_w_deja	déjà	adv	time	already	بالفعل
+81	fr_w_encore	encore	adv	time	again; still; more	مرة أخرى؛ ما زال؛ المزيد
+82	fr_w_apres	après	prep	time	after	بعد
+83	fr_w_avant	avant	prep	time	before	قبل
+84	fr_w_chez	chez	prep	places	at (someone's place)	عند، في بيت
+85	fr_w_sans	sans	prep	function	without	بدون
+86	fr_w_sous	sous	prep	places	under	تحت
+87	fr_w_entre	entre	prep	places	between	بين
+88	fr_w_depuis	depuis	prep	time	since, for	منذ
+89	fr_w_parce_que	parce que	conj	function	because	لأنّ		parce qu'
+90	fr_w_pourquoi	pourquoi	adv	question	why	لماذا
+91	fr_w_combien	combien	adv	question	how much, how many	كم				fr_combien
+92	fr_w_quel	quel	det	question	which, what	أيّ، ما		quelle, quels, quelles
+93	fr_w_beaucoup	beaucoup	adv	quantity	a lot, much	كثيرًا
+94	fr_w_peu	peu	adv	quantity	little, few; un peu = a bit	قليل
+95	fr_w_trop	trop	adv	quantity	too, too much	أكثر من اللازم
+96	fr_w_assez	assez	adv	quantity	enough; quite	كافٍ؛ إلى حدّ ما
+97	fr_w_chose	chose	noun	things	thing	شيء			gender=f; article=la
+98	fr_w_homme	homme	noun	people	man	رجل			gender=m; article=l'
+99	fr_w_femme	femme	noun	people	woman; wife	امرأة؛ زوجة			gender=f; article=la
+100	fr_w_enfant	enfant	noun	family	child	طفل			gender=mf; article=l'
+101	fr_w_fille	fille	noun	family	girl; daughter	بنت؛ ابنة			gender=f; article=la
+102	fr_w_garcon	garçon	noun	family	boy	ولد			gender=m; article=le
+103	fr_w_pere	père	noun	family	father	أب		papa	gender=m; article=le	fr_pere
+104	fr_w_mere	mère	noun	family	mother	أم		maman	gender=f; article=la	fr_mere
+105	fr_w_frere	frère	noun	family	brother	أخ			gender=m; article=le	fr_frere
+106	fr_w_soeur	sœur	noun	family	sister	أخت			gender=f; article=la	fr_soeur
+107	fr_w_ami	ami	noun	people	friend	صديق		amie, amis, amies	gender=mf; article=l'	fr_ami
+108	fr_w_famille	famille	noun	family	family	عائلة			gender=f; article=la	fr_famille
+109	fr_w_fils	fils	noun	family	son	ابن			gender=m; article=le
+110	fr_w_mari	mari	noun	family	husband	زوج			gender=m; article=le
+111	fr_w_bebe	bébé	noun	family	baby	طفل رضيع			gender=m; article=le
+112	fr_w_gens	gens	noun	people	people	ناس			gender=m; article=les
+113	fr_w_monsieur	monsieur	noun	people	sir, Mr, gentleman	سيد		messieurs	gender=m; article=le
+114	fr_w_madame	madame	noun	people	madam, Mrs	سيدة		mesdames	gender=f; article=(sans article)
+115	fr_w_nom	nom	noun	people	name	اسم			gender=m; article=le
+116	fr_w_maison	maison	noun	home	house, home	بيت			gender=f; article=la	fr_maison
+117	fr_w_chambre	chambre	noun	home	bedroom, room	غرفة نوم			gender=f; article=la	fr_chambre
+118	fr_w_cuisine	cuisine	noun	home	kitchen; cooking	مطبخ؛ طبخ			gender=f; article=la	fr_cuisine
+119	fr_w_porte	porte	noun	home	door	باب			gender=f; article=la
+120	fr_w_table	table	noun	home	table	طاولة			gender=f; article=la
+121	fr_w_lit	lit	noun	home	bed	سرير			gender=m; article=le
+122	fr_w_fenetre	fenêtre	noun	home	window	نافذة			gender=f; article=la
+123	fr_w_eau	eau	noun	food	water	ماء		eaux	gender=f; article=l'	fr_eau
+124	fr_w_cafe	café	noun	food	coffee; café	قهوة؛ مقهى			gender=m; article=le	fr_cafe
+125	fr_w_pain	pain	noun	food	bread	خبز			gender=m; article=le	fr_pain
+126	fr_w_the	thé	noun	food	tea	شاي			gender=m; article=le
+127	fr_w_lait	lait	noun	food	milk	حليب			gender=m; article=le
+128	fr_w_repas	repas	noun	food	meal	وجبة			gender=m; article=le
+129	fr_w_diner	dîner	noun	food	dinner	عشاء			gender=m; article=le
+130	fr_w_petit_dejeuner	petit-déjeuner	noun	food	breakfast	فطور			gender=m; article=le
+131	fr_w_dejeuner	déjeuner	noun	food	lunch	غداء			gender=m; article=le
+132	fr_w_ville	ville	noun	places	town, city	مدينة			gender=f; article=la
+133	fr_w_pays	pays	noun	places	country	بلد			gender=m; article=le
+134	fr_w_rue	rue	noun	places	street	شارع			gender=f; article=la
+135	fr_w_magasin	magasin	noun	shopping	shop	متجر			gender=m; article=le
+136	fr_w_ecole	école	noun	places	school	مدرسة			gender=f; article=l'
+137	fr_w_travail	travail	noun	work	work, job	عمل		travaux	gender=m; article=le; plural=travaux
+138	fr_w_argent	argent	noun	shopping	money	مال			gender=m; article=l'
+139	fr_w_voiture	voiture	noun	travel	car	سيارة			gender=f; article=la
+140	fr_w_bus	bus	noun	travel	bus	حافلة			gender=m; article=le
+141	fr_w_train	train	noun	travel	train	قطار			gender=m; article=le
+142	fr_w_telephone	téléphone	noun	things	phone	هاتف			gender=m; article=le
+143	fr_w_livre	livre	noun	things	book	كتاب			gender=m; article=le
+144	fr_w_mot	mot	noun	things	word	كلمة			gender=m; article=le
+145	fr_w_question	question	noun	things	question	سؤال			gender=f; article=la
+146	fr_w_probleme	problème	noun	things	problem	مشكلة			gender=m; article=le
+147	fr_w_idee	idée	noun	things	idea	فكرة			gender=f; article=l'
+148	fr_w_histoire	histoire	noun	things	story; history	قصة؛ تاريخ			gender=f; article=l'
+149	fr_w_jeu	jeu	noun	things	game	لعبة		jeux	gender=m; article=le; plural=jeux
+150	fr_w_musique	musique	noun	things	music	موسيقى			gender=f; article=la
+151	fr_w_film	film	noun	things	film	فيلم			gender=m; article=le
+152	fr_w_monde	monde	noun	places	world; tout le monde = everyone	عالم؛ tout le monde = الجميع			gender=m; article=le
+153	fr_w_vie	vie	noun	people	life	حياة			gender=f; article=la
+154	fr_w_tete	tête	noun	body	head	رأس			gender=f; article=la	fr_tete
+155	fr_w_main	main	noun	body	hand	يد			gender=f; article=la
+156	fr_w_oeil	œil	noun	body	eye	عين		yeux	gender=m; article=l'; plural=yeux
+157	fr_w_chien	chien	noun	nature	dog	كلب			gender=m; article=le
+158	fr_w_chat	chat	noun	nature	cat	قطة			gender=m; article=le
+159	fr_w_soleil	soleil	noun	nature	sun	شمس			gender=m; article=le
+160	fr_w_pluie	pluie	noun	nature	rain	مطر			gender=f; article=la
+161	fr_w_medecin	médecin	noun	people	doctor	طبيب			gender=m; article=le	fr_medecin
+162	fr_w_professeur	professeur	noun	people	teacher	معلّم		prof, profs	gender=mf; article=le/la
+163	fr_w_anniversaire	anniversaire	noun	time	birthday	عيد ميلاد			gender=m; article=l'
+164	fr_w_fete	fête	noun	social	party; celebration	حفلة؛ عيد			gender=f; article=la
+165	fr_w_place	place	noun	places	seat, room, space; square	مقعد، مكان؛ ساحة			gender=f; article=la
+166	fr_w_chemin	chemin	noun	travel	way, path	طريق			gender=m; article=le
+167	fr_w_fin	fin	noun	time	end	نهاية			gender=f; article=la
+168	fr_w_week_end	week-end	noun	time	weekend	عطلة نهاية الأسبوع			gender=m; article=le
+169	fr_w_mer	mer	noun	nature	sea	بحر			gender=f; article=la
+170	fr_w_plage	plage	noun	places	beach	شاطئ			gender=f; article=la
+171	fr_w_cadeau	cadeau	noun	things	present, gift	هدية		cadeaux	gender=m; article=le; plural=cadeaux
+172	fr_w_vetement	vêtement	noun	things	piece of clothing; vêtements = clothes	ثوب؛ vêtements = ملابس			gender=m; article=le
+173	fr_w_couleur	couleur	noun	describe	colour	لون			gender=f; article=la
+174	fr_w_classe	classe	noun	places	class	صف			gender=f; article=la
+175	fr_w_examen	examen	noun	things	exam	امتحان			gender=m; article=l'	fr_examen
+176	fr_w_voyage	voyage	noun	travel	trip, journey	رحلة			gender=m; article=le
+177	fr_w_prendre	prendre	verb	actions	to take; to have (food, drink)	يأخذ؛ يتناول		prends, prend, prenons, prenez, prennent, pris, prise, prenais, prendrai, prendra, prenne	irregular=yes
+178	fr_w_mettre	mettre	verb	actions	to put	يضع		mets, met, mettons, mettez, mettent, mis, mise, mettais	irregular=yes
+179	fr_w_donner	donner	verb	actions	to give	يعطي		donne, donnes, donnons, donnez, donnent, donné, donnais, donnera
+180	fr_w_parler	parler	verb	actions	to speak, to talk	يتكلم		parle, parles, parlons, parlez, parlent, parlé, parlais, parlait
+181	fr_w_aimer	aimer	verb	feelings	to like, to love	يحب		aime, aimes, aimons, aimez, aiment, aimé, aimais, aimait, aimerais
+182	fr_w_passer	passer	verb	actions	to pass; to spend (time)	يمرّ؛ يقضي		passe, passes, passons, passez, passent, passé, passais
+183	fr_w_trouver	trouver	verb	actions	to find	يجد		trouve, trouves, trouvons, trouvez, trouvent, trouvé
+184	fr_w_penser	penser	verb	actions	to think	يفكر		pense, penses, pensons, pensez, pensent, pensé
+185	fr_w_croire	croire	verb	actions	to believe, to think	يعتقد، يصدّق		crois, croit, croyons, croyez, croient, cru	irregular=yes
+186	fr_w_attendre	attendre	verb	actions	to wait (for)	ينتظر		attends, attend, attendons, attendez, attendent, attendu
+187	fr_w_partir	partir	verb	actions	to leave	يغادر		pars, part, partons, partez, partent, parti, partie	irregular=yes
+188	fr_w_sortir	sortir	verb	actions	to go out	يخرج		sors, sort, sortons, sortez, sortent, sorti, sortie	irregular=yes
+189	fr_w_manger	manger	verb	food	to eat	يأكل		mange, manges, mangeons, mangez, mangent, mangé
+190	fr_w_boire	boire	verb	food	to drink	يشرب		bois, boit, buvons, buvez, boivent, bu	irregular=yes
+191	fr_w_dormir	dormir	verb	actions	to sleep	ينام		dors, dort, dormons, dormez, dorment, dormi	irregular=yes
+192	fr_w_lire	lire	verb	actions	to read	يقرأ		lis, lit, lisons, lisez, lisent, lu	irregular=yes
+193	fr_w_ecrire	écrire	verb	actions	to write	يكتب		écris, écrit, écrivons, écrivez, écrivent	irregular=yes
+194	fr_w_travailler	travailler	verb	actions	to work	يعمل		travaille, travailles, travaillons, travaillez, travaillent, travaillé		fr_travailler
+195	fr_w_habiter	habiter	verb	home	to live (somewhere)	يسكن		habite, habites, habitons, habitez, habitent, habité, habitais
+196	fr_w_vivre	vivre	verb	home	to live	يعيش		vis, vit, vivons, vivez, vivent, vécu	irregular=yes
+197	fr_w_acheter	acheter	verb	shopping	to buy	يشتري		achète, achètes, achetons, achetez, achètent, acheté
+198	fr_w_payer	payer	verb	shopping	to pay	يدفع		paie, paies, payons, payez, paient, payé, paye
+199	fr_w_chercher	chercher	verb	actions	to look for	يبحث عن		cherche, cherches, cherchons, cherchez, cherchent, cherché
+200	fr_w_comprendre	comprendre	verb	actions	to understand	يفهم		comprends, comprend, comprenons, comprenez, comprennent, compris	irregular=yes
+201	fr_w_apprendre	apprendre	verb	actions	to learn	يتعلم		apprends, apprend, apprenons, apprenez, apprennent, appris	irregular=yes
+202	fr_w_connaitre	connaître	verb	actions	to know (people, places)	يعرف (شخصًا أو مكانًا)		connais, connaît, connaissons, connaissez, connaissent, connu	irregular=yes
+203	fr_w_appeler	appeler	verb	actions	to call; s'appeler = to be called	يتصل؛ يُسمّى		appelle, appelles, appelons, appelez, appellent, appelé
+204	fr_w_demander	demander	verb	actions	to ask	يسأل؛ يطلب		demande, demandes, demandons, demandez, demandent, demandé
+205	fr_w_aider	aider	verb	actions	to help	يساعد		aide, aides, aidons, aidez, aident, aidé
+206	fr_w_jouer	jouer	verb	actions	to play	يلعب		joue, joues, jouons, jouez, jouent, joué, jouais
+207	fr_w_regarder	regarder	verb	actions	to look at, to watch	ينظر إلى، يشاهد		regarde, regardes, regardons, regardez, regardent, regardé
+208	fr_w_ecouter	écouter	verb	actions	to listen	يستمع		écoute, écoutes, écoutons, écoutez, écoutent, écouté
+209	fr_w_ouvrir	ouvrir	verb	actions	to open	يفتح		ouvre, ouvres, ouvrons, ouvrez, ouvrent, ouvert, ouverte	irregular=yes
+210	fr_w_fermer	fermer	verb	actions	to close	يُغلق		ferme, fermes, fermons, fermez, ferment, fermé, fermée
+211	fr_w_commencer	commencer	verb	actions	to start	يبدأ		commence, commences, commençons, commencez, commencent, commencé
+212	fr_w_finir	finir	verb	actions	to finish	ينهي، ينتهي		finis, finit, finissons, finissez, finissent, fini
+213	fr_w_arriver	arriver	verb	actions	to arrive	يصل		arrive, arrives, arrivons, arrivez, arrivent, arrivé, arrivée
+214	fr_w_rester	rester	verb	actions	to stay; to be left	يبقى		reste, restes, restons, restez, restent, resté
+215	fr_w_rentrer	rentrer	verb	actions	to go back home	يعود (إلى البيت)		rentre, rentres, rentrons, rentrez, rentrent, rentré
+216	fr_w_marcher	marcher	verb	actions	to walk	يمشي		marche, marches, marchons, marchez, marchent, marché
+217	fr_w_courir	courir	verb	actions	to run	يركض		cours, court, courons, courez, courent, couru	irregular=yes
+218	fr_w_oublier	oublier	verb	actions	to forget	ينسى		oublie, oublies, oublions, oubliez, oublient, oublié
+219	fr_w_perdre	perdre	verb	actions	to lose	يُضيّع؛ يخسر		perds, perd, perdons, perdez, perdent, perdu
+220	fr_w_gagner	gagner	verb	actions	to win; to earn	يفوز؛ يكسب		gagne, gagnes, gagnons, gagnez, gagnent, gagné
+221	fr_w_envoyer	envoyer	verb	actions	to send	يرسل		envoie, envoies, envoyons, envoyez, envoient, envoyé
+222	fr_w_changer	changer	verb	actions	to change	يغيّر		change, changes, changeons, changez, changent, changé
+223	fr_w_laver	laver	verb	home	to wash	يغسل		lave, laves, lavons, lavez, lavent, lavé
+224	fr_w_cuisiner	cuisiner	verb	food	to cook	يطبخ		cuisine, cuisines, cuisinons, cuisinez, cuisinent, cuisiné
+225	fr_w_etudier	étudier	verb	actions	to study	يدرس		étudie, étudies, étudions, étudiez, étudient, étudié		fr_etudier
+226	fr_w_pleuvoir	pleuvoir	verb	nature	to rain	تمطر		pleut, plu, pleuvra	irregular=yes	fr_il_pleut
+227	fr_w_falloir	falloir	verb	function	to be necessary (il faut = one must)	يلزم، يجب		faut, fallait, faudra	irregular=yes
+228	fr_w_devoir	devoir	verb	function	must, to have to	يجب		dois, doit, devons, devez, doivent, dû, devais, devrais, devrait	irregular=yes
+229	fr_w_entendre	entendre	verb	actions	to hear	يسمع		entends, entend, entendons, entendez, entendent, entendu
+230	fr_w_montrer	montrer	verb	actions	to show	يُري		montre, montres, montrons, montrez, montrent, montré
+231	fr_w_chaud	chaud	adj	describe	hot, warm	حار، ساخن
+232	fr_w_froid	froid	adj	describe	cold	بارد
+233	fr_w_fatigue	fatigué	adj	feelings	tired	متعب				fr_fatigue
+234	fr_w_content	content	adj	feelings	happy, pleased	مسرور				fr_content
+235	fr_w_heureux	heureux	adj	feelings	happy	سعيد		heureuse, heureuses
+236	fr_w_triste	triste	adj	feelings	sad	حزين
+237	fr_w_joli	joli	adj	describe	pretty	جميل
+238	fr_w_facile	facile	adj	describe	easy	سهل
+239	fr_w_difficile	difficile	adj	describe	difficult	صعب
+240	fr_w_important	important	adj	describe	important	مهم
+241	fr_w_cher	cher	adj	shopping	expensive; dear	غالٍ؛ عزيز		chère, chers, chères		fr_cher
+242	fr_w_malade	malade	adj	feelings	ill, sick	مريض				fr_malade
+243	fr_w_pret	prêt	adj	describe	ready	جاهز، مستعد		prête
+244	fr_w_libre	libre	adj	describe	free (not busy, not taken)	متفرغ؛ شاغر
+245	fr_w_vrai	vrai	adj	describe	true	صحيح
+246	fr_w_sur_sure	sûr	adj	describe	sure	متأكد		sûre
+247	fr_w_premier	premier	adj	number	first	أول		première, premiers
+248	fr_w_dernier	dernier	adj	time	last	أخير؛ ماضٍ		dernière, derniers
+249	fr_w_prochain	prochain	adj	time	next	القادم، التالي		prochaine		fr_prochain
+250	fr_w_seul	seul	adj	describe	alone; only	وحيد؛ فقط
+251	fr_w_jeune	jeune	adj	describe	young	شاب، صغير السن
+252	fr_w_long	long	adj	describe	long	طويل		longue, longs, longues
+253	fr_w_blanc	blanc	adj	describe	white	أبيض		blanche, blancs, blanches
+254	fr_w_noir	noir	adj	describe	black	أسود
+255	fr_w_rouge	rouge	adj	describe	red	أحمر
+256	fr_w_pres	près	adv	places	near (près de)	قرب
+257	fr_w_loin	loin	adv	places	far	بعيد
+258	fr_w_bientot	bientôt	adv	time	soon	قريبًا
+259	fr_w_tard	tard	adv	time	late	متأخرًا
+260	fr_w_tot	tôt	adv	time	early	مبكرًا
+261	fr_w_ensemble	ensemble	adv	people	together	معًا
+262	fr_w_vite	vite	adv	describe	quickly, fast	بسرعة
+263	fr_w_souvent	souvent	adv	time	often	غالبًا، كثيرًا
+264	fr_w_parfois	parfois	adv	time	sometimes	أحيانًا
+265	fr_w_peut_etre	peut-être	adv	function	maybe	ربما				fr_peut_etre
+266	fr_w_daccord	d'accord	phrase	social	okay, agreed	حسنًا، موافق
+267	fr_w_au_revoir	au revoir	phrase	social	goodbye	إلى اللقاء				fr_au_revoir
+268	fr_w_pardon	pardon	interj	social	sorry, excuse me	عذرًا				fr_pardon
+269	fr_w_sil_vous_plait	s'il vous plaît	phrase	social	please (formal; s'il te plaît = informal)	من فضلك				fr_svp
+270	fr_w_salut	salut	interj	social	hi; bye (informal)	مرحبًا؛ إلى اللقاء (غير رسمي)
+271	fr_w_bonsoir	bonsoir	interj	social	good evening	مساء الخير				fr_bonsoir
+272	fr_w_deux	deux	num	number	two	اثنان
+273	fr_w_trois	trois	num	number	three	ثلاثة
+274	fr_w_quatre	quatre	num	number	four	أربعة
+275	fr_w_cinq	cinq	num	number	five	خمسة
+276	fr_w_dix	dix	num	number	ten	عشرة
+277	fr_w_cent	cent	num	number	a hundred	مئة
+278	fr_w_personne	personne	noun	people	person; ne … personne = nobody	شخص؛ لا أحد			gender=f; article=la
+279	fr_w_quelquun	quelqu'un	pron	people	someone	شخص ما
+280	fr_w_chaque	chaque	det	quantity	each, every	كل
+281	fr_w_quelque_chose	quelque chose	pron	things	something	شيء ما
+282	fr_w_la_adv	là	adv	places	there; here	هناك؛ هنا
+283	fr_w_dehors	dehors	adv	places	outside	في الخارج
+284	fr_w_leur	leur	det	function	their	ـهم		leurs
+285	fr_w_pendant	pendant	prep	time	during	أثناء
+286	fr_w_donc	donc	conj	function	so, therefore	لذلك، إذن
+287	fr_w_ou	ou	conj	function	or	أو، أم
+288	fr_w_son	son	det	function	his, her, its	ـه، ـها		sa, ses
+289	fr_w_ensuite	ensuite	adv	time	then, next	بعد ذلك
+290	fr_w_par	par	prep	function	by, through; per	بـ، عبر؛ في (لكل)
+291	fr_w_vraiment	vraiment	adv	describe	really	حقًا
+292	fr_w_moins	moins	adv	quantity	less	أقل
+293	fr_w_mieux	mieux	adv	describe	better	أفضل
+294	fr_w_mal	mal	adv	describe	badly; avoir mal = to hurt	بشكل سيئ؛ ألم
+295	fr_w_faim	faim	noun	feelings	hunger; avoir faim = to be hungry	جوع			gender=f; article=la
+296	fr_w_soif	soif	noun	feelings	thirst; avoir soif = to be thirsty	عطش			gender=f; article=la
+297	fr_w_chance	chance	noun	feelings	luck	حظ			gender=f; article=la	fr_chance
+298	fr_w_bureau	bureau	noun	work	office; desk	مكتب		bureaux	gender=m; article=le; plural=bureaux
+299	fr_w_rendez_vous	rendez-vous	noun	social	appointment, meeting	موعد			gender=m; article=le	fr_rendez_vous
+300	fr_w_bienvenue	bienvenue	interj	social	welcome	أهلًا وسهلًا

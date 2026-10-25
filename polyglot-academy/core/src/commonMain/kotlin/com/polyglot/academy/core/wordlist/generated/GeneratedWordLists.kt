@@ -6,6 +6,7 @@ internal object GeneratedWordLists {
     fun levels(languageTag: String): List<() -> Pair<List<String>, List<String>>> = when (languageTag) {
         "en" -> listOf({ EnLevel01.words to EnLevel01.examples })
         "es" -> listOf({ EsLevel01.words to EsLevel01.examples })
+        "fr" -> listOf({ FrLevel01.words to FrLevel01.examples })
         else -> emptyList()
     }
 }

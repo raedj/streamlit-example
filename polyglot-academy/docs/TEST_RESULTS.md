@@ -10,7 +10,7 @@ story and tutor tests iterate over every language, so they now cover all eight c
 After adding the word-list programme (English level 1): **BUILD SUCCESSFUL, 227 tests, 0
 failures** (core 171 incl. 10 in `WordListTest`, data 44, uicore 12); `:androidApp:assembleDebug`
 succeeds. `WordListTest` was also shown to reject words outside the list on the real data, and
-After Spanish level 1 the same build again passes (227 tests, 0 failures); writing it exposed and fixed a matcher bug (a proper name was also removed from inside longer words, e.g. "Ana" in "hermana"), now covered by a test. `tools/gen_wordlists.py` was run on a deliberately broken copy (wrong rank, invalid part of
+After Spanish level 1 and again after French level 1 the same build passes (227 tests, 0 failures); for French, every example word accepted only through an inflection rule (not an exact term or form) was listed and checked by hand — all were real plurals or feminine forms; writing it exposed and fixed a matcher bug (a proper name was also removed from inside longer words, e.g. "Ana" in "hermana"), now covered by a test. `tools/gen_wordlists.py` was run on a deliberately broken copy (wrong rank, invalid part of
 speech, missing example) and refused to generate, naming each line.
 
 | Module | Test class | Tests | Failures |

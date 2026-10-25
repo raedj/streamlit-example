@@ -1,7 +1,7 @@
 {
-  "updated": "2026-10-25T19:00:00Z",
+  "updated": "2026-10-25T20:00:00Z",
   "branch": "ccr-e06ebaa4-5wjvye",
-  "current_phase": "Word-list programme: level 1 done for English and Spanish",
+  "current_phase": "Word-list programme: level 1 done for English, Spanish and French",
   "completed_phases": [
     "0 Environment audit",
     "1 Requirements",
@@ -85,6 +85,7 @@
     "Verify Azure pronunciation scoring, OpenAI Realtime calls and WebDAV sync with real accounts (K-17..K-19); check Azure locales for tr/ur/ms"
   ],
   "recent_changes": [
+    "French level 1 word list (300 lemmas with gender/article, elided forms and conjugations, 600 examples)",
     "Spanish level 1 word list (300 lemmas with gender/article and conjugated forms, 600 examples); fixed name removal inside longer words in WordMatcher",
     "Word lists: TSV format, tools/gen_wordlists.py (validates and generates per-level Kotlin), WordList/WordMatcher in core, WordListTest (ranks, levels, fields, example counts, word in example, 85% of example words within rank+300, linked review ids); English level 1 (300 lemmas, 600 examples) written",
     "Added Turkish, Urdu and Malay as learning languages: starter course (A1-B2), business and finance tracks, travel phrasebook, 6 role-plays, 3 graded stories and placement bank each; offline tutor greetings; Urdu right-to-left with transliteration",
@@ -157,14 +158,20 @@
           1
         ],
         "last_rank": 300
+      },
+      "fr": {
+        "levels": [
+          1
+        ],
+        "last_rank": 300
       }
     },
     "resume_at": {
-      "language": "fr",
+      "language": "zh",
       "level": 1,
       "next_rank": 1,
-      "note": "Level 1 for the remaining languages first (planned order: fr, zh, ar, tr, ur, ms), then level 2 for all."
+      "note": "Level 1 for the remaining languages first (planned order: zh, ar, tr, ur, ms), then level 2 for all."
     },
-    "size_per_level": "about 43-59 KB compressed in the APK per level (measured: en 59 KB, es 43 KB)"
+    "size_per_level": "about 41-59 KB compressed in the APK per level (measured: en 59 KB, es 43 KB, fr 41 KB)"
   }
 }

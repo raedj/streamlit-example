@@ -53,7 +53,7 @@ CEFR equivalents of the 10 levels are approximate (1–2 ≈ A1, 3–4 ≈ A2, 5
 | English | 1 | 300 / 3000 | 600 | Not reviewed |
 | Mandarin Chinese | — | 0 / 3000 | — | — |
 | Spanish | 1 | 300 / 3000 | 600 | Not reviewed |
-| French | — | 0 / 3000 | — | — |
+| French | 1 | 300 / 3000 | 600 | Not reviewed |
 | Arabic | — | 0 / 3000 | — | — |
 | Turkish | — | 0 / 3000 | — | — |
 | Urdu | — | 0 / 3000 | — | — |
