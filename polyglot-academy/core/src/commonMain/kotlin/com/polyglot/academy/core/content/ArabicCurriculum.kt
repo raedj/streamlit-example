@@ -108,6 +108,24 @@ internal object ArabicCurriculum {
             v("iqtirah", "اقتراح", "proposal, suggestion", "رأي يُعرض للنقاش", NOUN, B1, "business", translit = "iqtirāḥ", gender = MASCULINE, tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
             v("murfaq", "تجدون مرفقًا…", "please find attached… (formal email)", "عبارة لإرسال ملف", PHRASE, B1, "business", translit = "tajidūna murfaqan", tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
             v("tahiyya", "تحية طيبة وبعد،", "formal letter opening (≈ 'Dear…')", "افتتاحية الرسائل الرسمية", PHRASE, B1, "business", translit = "taḥiyya ṭayyiba wa-baʿd", tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
+
+            // Next steps: past and future
+            v("dhahabtu", "ذهبتُ", "I went", "فعل ماضٍ للمتكلم من ذهب", VERB, A2, "past", translit = "dhahabtu",
+                ex = "ذهبتُ إلى السوق أمس.", exEn = "I went to the market yesterday.", exAr = "ذهبتُ إلى السوق أمس.")
+            v("darastu", "درستُ", "I studied", "فعل ماضٍ للمتكلم من درس", VERB, A2, "past", translit = "darastu")
+            v("katabtu", "كتبتُ", "I wrote", "فعل ماضٍ للمتكلم من كتب", VERB, A2, "past", translit = "katabtu")
+            v("ams", "أمس", "yesterday", "اليوم الذي قبل اليوم", NOUN, A1, "past", translit = "ams")
+            v("usbu_madi", "الأسبوع الماضي", "last week", "الأسبوع الذي مضى", PHRASE, A2, "past", translit = "al-usbūʿ al-māḍī")
+            v("suq", "السوق", "the market", "مكان البيع والشراء", NOUN, A1, "past", translit = "as-sūq", gender = MASCULINE)
+            v("risala", "رسالة", "letter, message", "كلام مكتوب يُرسَل", NOUN, A2, "past", translit = "risāla", gender = FEMININE)
+            v("sawfa", "سـ / سوف", "will (future marker before a present verb)", "حرفا الاستقبال", PHRASE, B1, "future", translit = "sa- / sawfa",
+                ex = "سأسافر الشهر القادم.", exEn = "I will travel next month.", exAr = "سأسافر الشهر القادم.")
+            v("yusafir", "يسافر", "he travels", "ينتقل من بلد إلى آخر", VERB, A2, "future", translit = "yusāfir")
+            v("shahr_qadim", "الشهر القادم", "next month", "الشهر الذي يأتي", PHRASE, A2, "future", translit = "ash-shahr al-qādim")
+            v("utla", "عطلة", "holiday", "وقت الراحة من العمل", NOUN, A2, "future", translit = "ʿuṭla", gender = FEMININE)
+            v("khutta", "خطة", "plan", "ما يُعَدّ لعمل في المستقبل", NOUN, B1, "future", translit = "khiṭṭa", gender = FEMININE)
+            v("inshallah", "إن شاء الله", "God willing (common when speaking of plans)", "عبارة تقال عن المستقبل", PHRASE, A2, "future", translit = "in shāʾa llāh")
+            v("lan", "لن", "will not (+ subjunctive verb)", "حرف نفي المستقبل", PHRASE, B1, "future", translit = "lan")
         }
         val vocabulary = vb.items
         val f = LessonFactory(L, vocabulary)
@@ -134,6 +152,20 @@ internal object ArabicCurriculum {
                 listOf(ex("بيت الطالب", "the student's house", "بيت الطالب"), ex("موعد الطبيب", "the doctor's appointment", "موعد الطبيب"),
                     ex("البيت الطالب", "The first noun takes no ال", "المضاف لا يأخذ (ال)", wrong = true)),
                 listOf(g("✗ الغرفة المدرّس → ✓ غرفة المدرّس.", "✗ الغرفة المدرّس ← ✓ غرفة المدرّس."))),
+            grammar("past", L, B1, g("The past tense (al-māḍī)", "الفعل الماضي"),
+                g("Past verbs show the person with an ending: ذهبتُ (I went), ذهبتَ (you, m.), ذهبتِ (you, f.), ذهبَ (he went), ذهبتْ (she went), ذهبنا (we went). Time words like أمس and الأسبوع الماضي often go with it.",
+                    "يدلّ آخر الفعل الماضي على الفاعل: ذهبتُ، ذهبتَ، ذهبتِ، ذهبَ، ذهبتْ، ذهبنا. ويأتي غالبًا مع كلمات زمنية مثل أمس والأسبوع الماضي."),
+                listOf(ex("درستُ العربية أمس.", "I studied Arabic yesterday.", "درستُ العربية أمس."),
+                    ex("كتبتْ سارة رسالة.", "Sara wrote a letter.", "كتبتْ سارة رسالة."),
+                    ex("هي كتبَ رسالة.", "With هي use كتبتْ", "مع هي نقول كتبتْ", wrong = true)),
+                listOf(g("Forgetting the feminine ending: ✗ هي ذهبَ → ✓ هي ذهبتْ.", "نسيان تاء التأنيث: ✗ هي ذهبَ ← ✓ هي ذهبتْ."))),
+            grammar("future", L, B1, g("The future with سـ and سوف", "المستقبل بـ (سـ) و(سوف)"),
+                g("Put سـ (joined to the verb) or سوف (a separate word) before a present-tense verb: سأدرس / سوف أدرس (I will study). To say 'will not', use لن with the verb: لن أسافر.",
+                    "ضع (سـ) متصلة بالفعل أو (سوف) منفصلة قبل الفعل المضارع: سأدرس / سوف أدرس. ولنفي المستقبل استخدم (لن) قبل الفعل: لن أسافر."),
+                listOf(ex("سنسافر الشهر القادم.", "We will travel next month.", "سنسافر الشهر القادم."),
+                    ex("لن أعمل غدًا.", "I won't work tomorrow.", "لن أعمل غدًا."),
+                    ex("سوف ذهبتُ.", "سوف goes with a present verb: سوف أذهب", "تأتي سوف مع المضارع: سوف أذهب", wrong = true)),
+                listOf(g("Don't combine them: ✗ سوف سأدرس → ✓ سوف أدرس or سأدرس.", "لا تجمع بينهما: ✗ سوف سأدرس ← ✓ سوف أدرس أو سأدرس."))),
         )
         val lessons = listOf(
             f.lesson("greetings", PRE_A1, "basics", g("Greetings", "التحيات"), g("Greet people and introduce yourself.", "التحية والتعريف بالنفس."),
@@ -181,6 +213,21 @@ internal object ArabicCurriculum {
                     writing("w4", L, g("Write a short email to a client proposing a meeting.", "اكتب رسالة قصيرة إلى عميل تقترح فيها اجتماعًا."), 15,
                         listOf("تحية طيبة وبعد", "اجتماع", "اقتراح")),
                 )),
+            f.lesson("past", B1, "next", g("What happened", "ماذا حدث"), g("Talk about the past with al-māḍī.", "تحدّث عن الماضي بالفعل الماضي."),
+                Skill.GRAMMAR, listOf("dhahabtu", "darastu", "katabtu", "ams", "usbu_madi", "suq", "risala"), "past",
+                extra = listOf(
+                    choice("pa1", L, "I went to the market yesterday: ___ إلى السوق أمس.", listOf("ذهبتُ", "أذهب", "سأذهب"), 0),
+                    choice("pa2", L, "She wrote a letter: هي ___ رسالة.", listOf("كتبتْ", "كتبَ", "يكتب"), 0),
+                    order("pa3", L, listOf("درستُ", "العربية", "أمس"), g("I studied Arabic yesterday.", "درستُ العربية أمس.")),
+                ), prerequisites = listOf("health")),
+            f.lesson("future", B1, "next", g("Plans and the future", "الخطط والمستقبل"), g("Use سـ, سوف and لن for the future.", "استخدم سـ وسوف ولن للمستقبل."),
+                Skill.SPEAKING, listOf("sawfa", "yusafir", "shahr_qadim", "utla", "khutta", "inshallah", "lan"), "future",
+                extra = listOf(
+                    choice("fu1", L, "I will travel next month: ___ الشهر القادم.", listOf("سأسافر", "سافرتُ", "سافرنا"), 0),
+                    order("fu2", L, listOf("سوف", "أدرس", "غدًا"), g("I will study tomorrow.", "سوف أدرس غدًا.")),
+                    choice("fu3", L, "I will not travel: ___ أسافر.", listOf("لن", "لم", "ما"), 0),
+                    writing("fu4", L, g("Write two sentences about your plans (use سـ or سوف).", "اكتب جملتين عن خططك (استخدم سـ أو سوف)."), 6, listOf("سأ", "سوف", "غدًا")),
+                ), prerequisites = listOf("past")),
         )
         val units = listOf(
             CourseUnit("ar_u_basics", L, PRE_A1, g("First steps", "الخطوات الأولى"), g("Greetings and pronouns", "التحيات والضمائر"), listOf("ar_l_greetings", "ar_l_people")),
@@ -188,6 +235,7 @@ internal object ArabicCurriculum {
 
             CourseUnit("ar_u_home", L, A2, g("Home and health", "البيت والصحة"), g("Your home, the weather and the doctor", "بيتك والطقس والطبيب"), listOf("ar_l_home", "ar_l_health")),
             CourseUnit("ar_u_pro_business", L, B1, g("Arabic for work", "العربية للعمل"), g("Meetings and formal emails", "الاجتماعات والرسائل الرسمية"), listOf("ar_l_work"), trackId = "business"),
+            CourseUnit("ar_u_next", L, B1, g("Next steps", "الخطوة التالية"), g("The past and the future", "الماضي والمستقبل"), listOf("ar_l_past", "ar_l_future")),
         )
         val readings = listOf(
             ReadingPassage(

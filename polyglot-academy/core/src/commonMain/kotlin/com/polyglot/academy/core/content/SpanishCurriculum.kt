@@ -117,6 +117,24 @@ internal object SpanishCurriculum {
             v("propuesta", "la propuesta", "proposal", "المقترح", NOUN, B1, "business", gender = FEMININE, tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
             v("adjunto", "le envío adjunto…", "please find attached… (formal email)", "أرسل إليكم مرفقًا…", PHRASE, B1, "business", tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
             v("estimado", "Estimado / Estimada…:", "Dear… (formal letter opening)", "حضرة… المحترم/المحترمة", PHRASE, B1, "business", tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
+
+            // Next steps: plans and wishes
+            v("plan", "el plan", "plan", "الخطة", NOUN, B1, "plans", gender = MASCULINE)
+            v("ir_a", "ir a + infinitivo", "to be going to (do)", "سوف (لخطة قريبة)", PHRASE, A2, "plans",
+                ex = "Voy a estudiar esta noche.", exEn = "I'm going to study tonight.", exAr = "سأدرس الليلة.")
+            v("proximo", "el próximo año / la próxima semana", "next year / next week", "العام القادم / الأسبوع القادم", PHRASE, A2, "plans")
+            v("viajar", "viajar", "to travel", "يسافر", VERB, A2, "plans")
+            v("ahorrar", "ahorrar", "to save (money)", "يدّخر", VERB, B1, "plans")
+            v("quizas", "quizás", "maybe, perhaps", "ربما", ADVERB, B1, "plans")
+            v("vacaciones", "las vacaciones", "holidays, vacation", "العطلة", NOUN, A2, "plans", gender = FEMININE)
+            v("espero_que", "espero que…", "I hope that… (+ subjunctive)", "آمل أن…", PHRASE, B2, "wishes",
+                ex = "Espero que tengas un buen día.", exEn = "I hope you have a good day.", exAr = "آمل أن يكون يومك جميلًا.")
+            v("ojala", "ojalá", "I wish, hopefully", "ليت / يا ليت", PHRASE, B2, "wishes")
+            v("quiero_que", "quiero que…", "I want (someone) to…", "أريد أن (يفعل شخص آخر)…", PHRASE, B2, "wishes")
+            v("es_importante", "es importante que…", "it's important that…", "من المهم أن…", PHRASE, B2, "wishes")
+            v("suerte", "la suerte", "luck", "الحظ", NOUN, B1, "wishes", gender = FEMININE)
+            v("aprobar", "aprobar", "to pass (an exam)", "ينجح (في امتحان)", VERB, B1, "wishes")
+            v("examen", "el examen", "exam", "الامتحان", NOUN, A2, "wishes", gender = MASCULINE)
         }
         val vocabulary = vb.items
         val f = LessonFactory(L, vocabulary)
@@ -162,6 +180,20 @@ internal object SpanishCurriculum {
                 listOf(ex("¿Puede enviarme el presupuesto?", "Could you send me the quote?", "هل يمكنكم إرسال عرض السعر إليّ؟"),
                     ex("¿Usted puedes venir?", "usted takes 'puede', not 'puedes'", "usted يأخذ puede وليس puedes", wrong = true)),
                 listOf(g("Mixing tú and usted forms in one sentence sounds careless in formal emails.", "الخلط بين صيغتي tú وusted في الجملة نفسها يبدو غير متقن في الرسائل الرسمية."))),
+            grammar("futuro", L, B1, g("Talking about the future", "الحديث عن المستقبل"),
+                g("Use ir a + infinitive for plans: Voy a viajar en julio. The simple future (infinitive + -é, -ás, -á, -emos, -éis, -án) is for predictions and promises: Mañana lloverá. Te llamaré.",
+                    "استخدم ir a + المصدر للخطط: Voy a viajar en julio. والمستقبل البسيط (المصدر + ‎-é و‎-ás وغيرهما) للتوقّعات والوعود: Mañana lloverá. Te llamaré."),
+                listOf(ex("Vamos a cenar en casa.", "We're going to have dinner at home.", "سنتناول العشاء في البيت."),
+                    ex("El año que viene viviré en Madrid.", "Next year I'll live in Madrid.", "في العام القادم سأعيش في مدريد."),
+                    ex("Voy a viajo.", "After ir a use the infinitive: voy a viajar", "بعد ir a يأتي المصدر: voy a viajar", wrong = true)),
+                listOf(g("Forgetting 'a': ✗ Voy viajar → ✓ Voy a viajar.", "نسيان a: ✗ Voy viajar ← ✓ Voy a viajar."))),
+            grammar("subjuntivo", L, B2, g("Present subjunctive for wishes", "المضارع الشرطي (subjuntivo) للأمنيات"),
+                g("After wishes, hopes and needs with a different subject, use the subjunctive: Espero que vengas. Quiero que mis hijos hablen inglés. Endings swap vowels: -ar verbs take -e (hablar → hable), -er/-ir verbs take -a (comer → coma, vivir → viva).",
+                    "بعد الأمنيات والرجاء والحاجة مع فاعل مختلف يُستخدم subjuntivo: Espero que vengas. وQuiero que mis hijos hablen inglés. تتبادل الحروف الصوتية: أفعال ‎-ar تأخذ ‎-e (hablar ← hable) وأفعال ‎-er/-ir تأخذ ‎-a (comer ← coma، vivir ← viva)."),
+                listOf(ex("Espero que apruebes el examen.", "I hope you pass the exam.", "أتمنى أن تنجح في الامتحان."),
+                    ex("Ojalá haga buen tiempo.", "Hopefully the weather will be good.", "ليت الجو يكون جميلًا."),
+                    ex("Quiero que vienes.", "Use the subjunctive: quiero que vengas", "استخدم subjuntivo: quiero que vengas", wrong = true)),
+                listOf(g("Same subject → infinitive: Quiero viajar (not ✗ Quiero que yo viaje).", "عند اتحاد الفاعل يأتي المصدر: Quiero viajar (وليس ✗ Quiero que yo viaje)."))),
         )
 
         val lessons = listOf(
@@ -230,6 +262,22 @@ internal object SpanishCurriculum {
                     writing("tr4", L, g("Write a short email to a client proposing a meeting next week.", "اكتب رسالة قصيرة إلى عميل تقترح فيها اجتماعًا الأسبوع القادم."), 40,
                         listOf("Estimado", "reunión", "propuesta", "Un saludo")),
                 )),
+            f.lesson("planes", B1, "next", g("Plans for the future", "خطط المستقبل"), g("Talk about plans with ir a and the simple future.", "تحدّث عن الخطط باستخدام ir a والمستقبل البسيط."),
+                Skill.SPEAKING, listOf("plan", "ir_a", "proximo", "viajar", "ahorrar", "quizas", "vacaciones"), "futuro",
+                extra = listOf(
+                    fill("pl1", L, "El año que viene ___ a viajar a México. (yo, ir)", listOf("voy")),
+                    fill("pl2", L, "Mañana ___ (llover).", listOf("lloverá")),
+                    order("pl3", L, listOf("Vamos", "a", "ahorrar", "para", "las", "vacaciones"), g("We're going to save for the holidays.", "سنوفّر المال للعطلة.")),
+                    writing("pl4", L, g("Write about your plans for next year (30+ words).", "اكتب عن خططك للعام القادم (30 كلمة على الأقل)."), 30, listOf("voy a", "el próximo año", "quizás")),
+                ), prerequisites = listOf("salud")),
+            f.lesson("deseos", B2, "next", g("Hopes and wishes", "الآمال والأمنيات"), g("Use the present subjunctive after espero que, quiero que and ojalá.", "استخدم subjuntivo بعد espero que وquiero que وojalá."),
+                Skill.GRAMMAR, listOf("espero_que", "ojala", "quiero_que", "es_importante", "suerte", "aprobar", "examen"), "subjuntivo",
+                extra = listOf(
+                    fill("de1", L, "Espero que ___ (tener, tú) un buen viaje.", listOf("tengas")),
+                    fill("de2", L, "Quiero que mis hijos ___ (hablar) inglés.", listOf("hablen")),
+                    choice("de3", L, "Ojalá ___ buen tiempo mañana.", listOf("hace", "haga", "hará"), 1),
+                    translate("de4", L, g("I hope you pass the exam.", "أتمنى أن تنجح في الامتحان."), listOf("Espero que apruebes el examen", "Ojalá apruebes el examen")),
+                ), prerequisites = listOf("planes")),
         )
         val units = listOf(
             CourseUnit("es_u_basics", L, A1, g("First steps", "الخطوات الأولى"), g("Greetings and family", "التحيات والعائلة"), listOf("es_l_saludos", "es_l_familia")),
@@ -238,6 +286,7 @@ internal object SpanishCurriculum {
 
             CourseUnit("es_u_home", L, A2, g("Home and health", "البيت والصحة"), g("Your home, the weather and the doctor", "بيتك والطقس والطبيب"), listOf("es_l_casa", "es_l_salud")),
             CourseUnit("es_u_pro_business", L, B1, g("Spanish for work", "الإسبانية للعمل"), g("Meetings and formal emails", "الاجتماعات والرسائل الرسمية"), listOf("es_l_trabajo"), trackId = "business"),
+            CourseUnit("es_u_next", L, B1, g("Next steps", "الخطوة التالية"), g("Plans, hopes and wishes", "الخطط والآمال والأمنيات"), listOf("es_l_planes", "es_l_deseos")),
         )
         val readings = listOf(
             ReadingPassage(

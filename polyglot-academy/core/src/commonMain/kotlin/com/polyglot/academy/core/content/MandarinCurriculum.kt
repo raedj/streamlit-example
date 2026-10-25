@@ -125,6 +125,26 @@ internal object MandarinCurriculum {
             v("fasong", "发送", "to send", "يرسل", VERB, B1, "business", "fāsòng", trad = "發送", tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
             v("zunjing", "尊敬的…", "Dear… (formal letter opening)", "حضرة… المحترم", PHRASE, B1, "business", "zūnjìng de", tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
             v("qing", "请", "please (polite request)", "من فضلك (طلب مهذب)", VERB, A2, "business", "qǐng", trad = "請", tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
+
+            // Next steps: completed actions and comparisons
+            v("le", "了", "(marks a completed action or a change)", "(أداة تدل على اكتمال الفعل أو التغيّر)", PARTICLE, B1, "aspect", "le",
+                ex = "我买了一本书。", exEn = "I bought a book.", exAr = "اشتريتُ كتابًا.")
+            v("mai", "买", "to buy", "يشتري", VERB, A1, "aspect", "mǎi", trad = "買")
+            v("yijing", "已经", "already", "بالفعل، سبق أن", ADVERB, B1, "aspect", "yǐjīng", trad = "已經")
+            v("zuotian", "昨天", "yesterday", "أمس", NOUN, A1, "aspect", "zuótiān")
+            v("kan", "看", "to look; to read; to watch", "ينظر، يقرأ، يشاهد", VERB, A1, "aspect", "kàn")
+            v("shu", "书", "book", "كتاب", NOUN, A1, "aspect", "shū", trad = "書")
+            v("dianying", "电影", "film, movie", "فيلم", NOUN, A2, "aspect", "diànyǐng", trad = "電影")
+            v("meiyou", "没有", "did not; have not (negates completed actions)", "لم (نفي الفعل المكتمل)", ADVERB, A2, "aspect", "méiyǒu", trad = "沒有")
+            v("bi", "比", "than (in comparisons)", "من (في المقارنة)", PARTICLE, B1, "compare", "bǐ",
+                ex = "我比他高。", exEn = "I am taller than him.", exAr = "أنا أطول منه.")
+            v("geng", "更", "even more", "أكثر (للمقارنة)", ADVERB, B1, "compare", "gèng")
+            v("gao", "高", "tall, high", "طويل، مرتفع", ADJECTIVE, A1, "compare", "gāo")
+            v("da", "大", "big; older (in age)", "كبير؛ أكبر سنًا", ADJECTIVE, A1, "compare", "dà")
+            v("xiao", "小", "small; younger", "صغير؛ أصغر سنًا", ADJECTIVE, A1, "compare", "xiǎo")
+            v("yiyang", "一样", "the same", "مثل، نفس الشيء", ADJECTIVE, B1, "compare", "yíyàng", trad = "一樣")
+            v("leng", "冷", "cold", "بارد", ADJECTIVE, A1, "compare", "lěng")
+            v("re", "热", "hot", "حار", ADJECTIVE, A1, "compare", "rè", trad = "熱")
         }
         val vocabulary = vb.items
         val f = LessonFactory(L, vocabulary)
@@ -200,6 +220,20 @@ internal object MandarinCurriculum {
                     writing("w4", L, g("Write a short email to a client proposing a meeting (use 尊敬的 and 附件).", "اكتب رسالة قصيرة إلى عميل تقترح فيها اجتماعًا (استخدم 尊敬的 و附件)."), 15,
                         listOf("尊敬的", "会议", "附件")),
                 )),
+            f.lesson("completed", B1, "next", g("What you did", "ما فعلته"), g("Talk about completed actions with 了 and 没有.", "تحدّث عن الأفعال المكتملة باستخدام 了 و没有."),
+                Skill.GRAMMAR, listOf("le", "mai", "yijing", "zuotian", "kan", "shu", "dianying", "meiyou"), "le",
+                extra = listOf(
+                    fill("le1", L, "我昨天看___一个电影。", listOf("了")),
+                    choice("le2", L, "I didn't buy a book:", listOf("我没买书。", "我不买了书。", "我没买了书。"), 0),
+                    order("le3", L, listOf("我", "已经", "吃", "了"), g("I have already eaten.", "لقد أكلتُ بالفعل."), separator = ""),
+                ), prerequisites = listOf("reasons")),
+            f.lesson("compare", B1, "next", g("Comparing things", "المقارنة"), g("Compare people and things with 比 and 一样.", "قارن بين الأشخاص والأشياء باستخدام 比 و一样."),
+                Skill.SPEAKING, listOf("bi", "geng", "gao", "da", "xiao", "yiyang", "leng", "re"), "bi",
+                extra = listOf(
+                    choice("bi1", L, "I am taller than him:", listOf("我比他高。", "我比他很高。", "我高比他。"), 0),
+                    fill("bi2", L, "今天___昨天冷。", listOf("比")),
+                    order("bi3", L, listOf("北京", "比", "上海", "冷"), g("Beijing is colder than Shanghai.", "بكين أبرد من شنغهاي."), separator = ""),
+                ), prerequisites = listOf("completed")),
         )
 
         val grammar = listOf(
@@ -241,6 +275,20 @@ internal object MandarinCurriculum {
                     ex("您能不能下午开会？", "Could you meet in the afternoon?", "هل يمكنكم الاجتماع بعد الظهر؟"),
                     ex("发送请附件。", "请 goes before the verb", "يأتي 请 قبل الفعل", wrong = true)),
                 listOf(g("Using 你 with a new client can sound too casual; 您 is safer.", "استخدام 你 مع عميل جديد قد يبدو غير رسمي، و您 أنسب."))),
+            grammar("le", L, B1, g("了 for completed actions", "‏了 للفعل المكتمل"),
+                g("Put 了 after a verb to show the action is completed: 我买了一本书 (I bought a book). To say it did not happen, use 没(有) before the verb and drop 了: 我没买书.",
+                    "ضع 了 بعد الفعل للدلالة على اكتماله: 我买了一本书 (اشتريتُ كتابًا). وللنفي استخدم 没(有) قبل الفعل واحذف 了: 我没买书."),
+                listOf(ex("我昨天看了一个电影。", "I watched a film yesterday.", "شاهدتُ فيلمًا أمس."),
+                    ex("他已经吃了。", "He has already eaten.", "لقد أكل بالفعل."),
+                    ex("我没买了书。", "No 了 after 没", "لا يأتي 了 مع 没", wrong = true)),
+                listOf(g("Using 不 for the past: ✗ 我昨天不去 → ✓ 我昨天没去.", "استخدام 不 للماضي: ✗ 我昨天不去 ← ✓ 我昨天没去."))),
+            grammar("bi", L, B1, g("Comparisons with 比", "المقارنة بـ 比"),
+                g("A 比 B + adjective: 我比他高 (I am taller than him). Don't put 很 before the adjective; use 更 (even more) or add an amount: 今天比昨天更冷, 他比我大两岁. For 'the same', use A 跟 B 一样 + adjective.",
+                    "‏A 比 B + صفة: 我比他高 (أنا أطول منه). لا تضع 很 قبل الصفة، بل استخدم 更 أو أضف مقدارًا: 今天比昨天更冷، 他比我大两岁. وللمساواة استخدم A 跟 B 一样 + صفة."),
+                listOf(ex("北京比上海冷。", "Beijing is colder than Shanghai.", "بكين أبرد من شنغهاي."),
+                    ex("我跟我哥哥一样高。", "I am as tall as my older brother.", "أنا بطول أخي الأكبر."),
+                    ex("我比他很高。", "No 很 in a 比 sentence", "لا يأتي 很 في جملة 比", wrong = true)),
+                listOf(g("✗ 我高比他 → ✓ 我比他高 (比 B comes before the adjective).", "✗ 我高比他 ← ✓ 我比他高 (يأتي 比 B قبل الصفة)."))),
         )
 
         val units = listOf(
@@ -250,6 +298,7 @@ internal object MandarinCurriculum {
             CourseUnit("zh_u_travel", L, A2, g("Getting around", "التنقّل"), g("Places, time and reasons", "الأماكن والوقت والأسباب"), listOf("zh_l_places", "zh_l_time_daily", "zh_l_reasons")),
 
             CourseUnit("zh_u_pro_business", L, B1, g("Chinese for work", "الصينية للعمل"), g("Meetings and formal emails", "الاجتماعات والرسائل الرسمية"), listOf("zh_l_work"), trackId = "business"),
+            CourseUnit("zh_u_next", L, B1, g("Next steps", "الخطوة التالية"), g("Completed actions and comparisons", "الأفعال المكتملة والمقارنة"), listOf("zh_l_completed", "zh_l_compare")),
         )
 
         val readings = listOf(

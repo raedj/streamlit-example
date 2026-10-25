@@ -117,6 +117,22 @@ internal object EnglishCurriculum {
             v("cheap", "cheap", "not costing much money", "رخيص", ADJECTIVE, A1, "shopping", "/tʃiːp/")
             v("expensive", "expensive", "costing a lot of money", "غالٍ", ADJECTIVE, A1, "shopping", "/ɪkˈspensɪv/")
             v("size", "size", "how big or small something is", "مقاس / حجم", NOUN, A2, "shopping", "/saɪz/")
+
+            // Next steps: plans and conditions
+            v("plan", "plan", "something you intend to do", "خطة", NOUN, B1, "plans", "/plæn/",
+                ex = "What are your plans for the summer?", exEn = "What are your plans for the summer?", exAr = "ما خططك للصيف؟")
+            v("going_to", "be going to", "used for plans you have already decided", "ينوي / سوف (لخطة مقرّرة)", PHRASE, A2, "plans")
+            v("probably", "probably", "very likely", "على الأرجح", ADVERB, B1, "plans", "/ˈprɒbəbli/")
+            v("abroad", "abroad", "in or to another country", "في الخارج", ADVERB, B1, "plans", "/əˈbrɔːd/")
+            v("save_money", "save (money)", "to keep money instead of spending it", "يدّخر (المال)", VERB, B1, "plans")
+            v("decide", "decide", "to make a choice", "يقرّر", VERB, B1, "plans", "/dɪˈsaɪd/")
+            v("unless", "unless", "except if", "ما لم / إلا إذا", PHRASE, B2, "conditions", "/ənˈles/",
+                ex = "I won't go unless you come too.", exEn = "I won't go unless you come too.", exAr = "لن أذهب إلا إذا أتيت أنت أيضًا.")
+            v("afford", "afford", "to have enough money for something", "يقدر على تحمّل تكلفة", VERB, B2, "conditions", "/əˈfɔːd/")
+            v("opportunity", "opportunity", "a chance to do something", "فرصة", NOUN, B1, "conditions", "/ˌɒpəˈtjuːnəti/")
+            v("in_case", "in case", "because something might happen", "تحسّبًا لـ", PHRASE, B2, "conditions",
+                ex = "Take an umbrella in case it rains.", exEn = "Take an umbrella in case it rains.", exAr = "خذ مظلة تحسّبًا للمطر.")
+            v("regret", "regret", "to feel sorry about something you did", "يندم", VERB, B2, "conditions", "/rɪˈɡret/")
         }
         val pro = professionalVocabulary()
         val vocabulary = vb.items + pro
@@ -185,6 +201,23 @@ internal object EnglishCurriculum {
                     fill("w1", L, "We have ___ (meet) the deadline.", listOf("met")),
                     writing("w2", L, g("Write an email to a colleague asking to move a meeting.", "اكتب رسالة لزميل تطلب فيها تأجيل اجتماع."), 40, listOf("meeting", "schedule", "could we")),
                 ), prerequisites = listOf("opinions")),
+            f.lesson("plans", B1, "next", g("Plans and predictions", "الخطط والتوقّعات"), g("Talk about the future with will and going to.", "تحدّث عن المستقبل باستخدام will وgoing to."),
+                Skill.SPEAKING, listOf("plan", "going_to", "probably", "abroad", "save_money", "decide"), "future",
+                extra = listOf(
+                    fill("pl1", L, "I'm ___ to visit my aunt next week.", listOf("going")),
+                    choice("pl2", L, "Look at those clouds! It ___ rain.", listOf("is going to", "would", "was"), 0),
+                    fill("pl3", L, "A: The phone's ringing. B: I ___ get it!", listOf("will")),
+                    writing("pl4", L, g("Write about your plans for next year (40+ words).", "اكتب عن خططك للعام القادم (40 كلمة على الأقل)."), 40, listOf("I'm going to", "I will", "probably")),
+                ), prerequisites = listOf("work_life")),
+            f.lesson("conditionals", B2, "next", g("If… : real and imagined", "لو وإذا: الواقعي والمتخيَّل"), g("Use first and second conditionals.", "استخدم الجمل الشرطية الأولى والثانية."),
+                Skill.GRAMMAR, listOf("unless", "afford", "opportunity", "in_case", "regret", "decide"), "conditionals",
+                extra = listOf(
+                    fill("co1", L, "If it rains tomorrow, we ___ stay at home.", listOf("will")),
+                    fill("co2", L, "If I ___ more money, I would travel more. (have)", listOf("had")),
+                    choice("co3", L, "If I were you, I ___ accept the offer.", listOf("will", "would", "am"), 1),
+                    translate("co4", L, g("If I had time, I would learn Chinese.", "لو كان لديّ وقت لتعلّمت الصينية."),
+                        listOf("If I had time, I would learn Chinese", "If I had time I would learn Chinese", "If I had the time, I would learn Chinese")),
+                ), prerequisites = listOf("plans")),
         )
 
         val units = listOf(
@@ -192,6 +225,7 @@ internal object EnglishCurriculum {
             CourseUnit("en_u_everyday", L, A1, g("Everyday life", "الحياة اليومية"), g("Food, time and routines", "الطعام والوقت والروتين"), listOf("en_l_cafe", "en_l_time", "en_l_routine")),
             CourseUnit("en_u_travel", L, A2, g("Out and about", "في الخارج"), g("Travel, directions and shopping", "السفر والاتجاهات والتسوق"), listOf("en_l_travel", "en_l_shopping")),
             CourseUnit("en_u_work", L, B1, g("Opinions and work", "الآراء والعمل"), g("Express ideas and talk about work", "التعبير عن الأفكار والحديث عن العمل"), listOf("en_l_opinions", "en_l_work_life")),
+            CourseUnit("en_u_next", L, B1, g("Next steps", "الخطوة التالية"), g("Plans, predictions and conditions", "الخطط والتوقّعات والشروط"), listOf("en_l_plans", "en_l_conditionals")),
         ) + professionalUnits(f).first
 
         val proLessons = professionalUnits(f).second
@@ -261,6 +295,20 @@ internal object EnglishCurriculum {
                 ex("She has finished the report.", "She has finished the report.", "أنهت التقرير."),
                 ex("I have seen him yesterday.", "Use past simple with 'yesterday'", "استخدم الماضي البسيط مع yesterday", wrong = true)),
             listOf(g("Using it with a finished time: ✗ I have seen him yesterday → ✓ I saw him yesterday.", "استخدامه مع زمن منتهٍ: ✗ I have seen him yesterday ← ✓ I saw him yesterday."))),
+        grammar("future", L, B1, g("Future: will and going to", "المستقبل: will وgoing to"),
+            g("Use 'be going to' for plans you have already made (I'm going to visit Rome) and for predictions from what you can see (Look at the clouds — it's going to rain). Use 'will' for decisions made now, promises and general predictions (I'll call you later).",
+                "استخدم be going to للخطط المقرّرة مسبقًا (I'm going to visit Rome) وللتوقّع مما تراه (Look at the clouds — it's going to rain). واستخدم will للقرار اللحظي والوعود والتوقّعات العامة (I'll call you later)."),
+            listOf(ex("We're going to move next month.", "We're moving next month (already planned).", "سننتقل الشهر القادم (أمر مقرّر)."),
+                ex("I'll help you with that.", "A decision or offer made now.", "قرار أو عرض في اللحظة نفسها."),
+                ex("I will going to travel.", "Use either 'will travel' or 'am going to travel'", "استخدم will travel أو am going to travel", wrong = true)),
+            listOf(g("✗ I will to go → ✓ I will go (no 'to' after will).", "✗ I will to go ← ✓ I will go (لا تأتي to بعد will)."))),
+        grammar("conditionals", L, B2, g("First and second conditionals", "الجمل الشرطية الأولى والثانية"),
+            g("First conditional for real possibilities: If + present, will + verb (If it rains, we'll stay in). Second conditional for imaginary or unlikely situations: If + past, would + verb (If I had more time, I would learn Chinese). 'Unless' means 'if not'.",
+                "الشرط الأول للاحتمالات الواقعية: If + مضارع، ثم will + فعل (If it rains, we'll stay in). والشرط الثاني للمواقف المتخيَّلة أو المستبعدة: If + ماضٍ، ثم would + فعل (If I had more time, I would learn Chinese). وunless تعني 'إذا لم'."),
+            listOf(ex("If you study, you'll pass.", "A real possibility.", "احتمال واقعي."),
+                ex("If I were rich, I would travel the world.", "An imaginary situation.", "موقف متخيَّل."),
+                ex("If it will rain, we stay home.", "No 'will' in the if-clause", "لا تُستخدم will في جملة الشرط", wrong = true)),
+            listOf(g("✗ If I would have money → ✓ If I had money.", "✗ If I would have money ← ✓ If I had money."))),
     )
 
     private fun readings() = listOf(

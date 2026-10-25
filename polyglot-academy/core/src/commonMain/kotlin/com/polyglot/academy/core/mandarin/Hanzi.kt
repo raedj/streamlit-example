@@ -35,6 +35,8 @@ object HanziData {
         "冖" to g("cover", "غطاء"), "⺍" to g("(top dots)", "(نقاط علوية)"), "耂" to g("old (top)", "كبير السن (أعلى)"), "匕" to g("spoon", "ملعقة"),
         "尔" to g("you (old form)", "أنت (صيغة قديمة)"), "丩" to g("(sound part) jiū", "(جزء صوتي) jiū"), "一" to g("one", "واحد"),
         "丨" to g("line", "خط"), "丿" to g("stroke", "ضربة"),
+        "目" to g("eye", "عين"), "手" to g("hand", "يد"), "冫" to g("ice", "جليد"), "令" to g("(sound part) lìng", "(جزء صوتي) lìng"),
+        "羊" to g("sheep", "خروف"), "彡" to g("brush strokes", "خطوط فرشاة"), "景" to g("scenery", "منظر"), "执" to g("to hold", "يمسك"),
     )
 
     private val roleOf = mapOf('*' to ComponentRole.SOUND, '~' to ComponentRole.OTHER)
@@ -84,6 +86,13 @@ object HanziData {
         h('吗', 6, "口 *马", g("Mouth (口) + 马 (mǎ): the question word ma.", "فم (口) + 马 (mǎ): أداة الاستفهام ma.")),
         h('很', 9, "彳 *艮"), h('贵', 9), h('便', 9, "亻 更"), h('宜', 8, "宀 *且"), h('因', 6, "囗 大"), h('为', 4), h('所', 8), h('以', 4),
         h('请', 10, "讠 *青", g("Speech (讠) + 青 (qīng): qǐng, 'please'.", "كلام (讠) + 青 (qīng): qǐng، 'من فضلك'.")),
+        h('了', 2), h('买', 6), h('已', 3), h('经', 8), h('书', 4), h('电', 5), h('有', 6), h('没', 7), h('更', 7),
+        h('看', 9, "手 目", g("A hand (手) shading the eye (目): to look.", "يد (手) فوق العين (目): ينظر.")),
+        h('昨', 9, "日 *乍", g("Sun, day (日) on the left: 昨天 'yesterday'.", "شمس، يوم (日) على اليسار: 昨天 'أمس'.")),
+        h('影', 15, "*景 彡"), h('比', 4, "匕 匕", g("Two figures side by side: to compare.", "شكلان متجاوران: يقارن.")),
+        h('高', 10), h('大', 3), h('小', 3),
+        h('样', 10, "木 *羊"), h('冷', 7, "冫 *令", g("Ice (冫) on the left: cold.", "جليد (冫) على اليسار: بارد.")),
+        h('热', 10, "~执 灬", g("Fire dots (灬) at the bottom: hot.", "نقاط النار (灬) في الأسفل: حار.")),
         h('的', 8, "白 勺"), h('会', 6, "人 云"), h('公', 4, "八 厶"), h('发', 5), h('送', 9, "辶 关"),
     ).associateBy { it.character }
 

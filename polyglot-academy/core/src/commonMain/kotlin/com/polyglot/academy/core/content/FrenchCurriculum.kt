@@ -112,6 +112,23 @@ internal object FrenchCurriculum {
             v("proposition", "la proposition", "proposal", "المقترح", NOUN, B1, "business", gender = FEMININE, tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
             v("ci_joint", "veuillez trouver ci-joint…", "please find attached… (formal email)", "تجدون مرفقًا…", PHRASE, B1, "business", tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
             v("madame_monsieur", "Madame, Monsieur,", "Dear Sir or Madam, (formal letter opening)", "سيدتي، سيدي، (افتتاحية رسمية)", PHRASE, B1, "business", tags = setOf("business"), source = VocabularySource.PROFESSIONAL_TRACK)
+
+            // Next steps: plans and wishes
+            v("projet", "le projet", "plan, project", "المشروع، الخطة", NOUN, B1, "plans", gender = MASCULINE)
+            v("aller_inf", "aller + infinitif", "to be going to (do)", "سوف (لخطة قريبة)", PHRASE, A2, "plans",
+                ex = "Je vais étudier ce soir.", exEn = "I'm going to study tonight.", exAr = "سأدرس هذا المساء.")
+            v("prochain", "l'année prochaine / la semaine prochaine", "next year / next week", "العام القادم / الأسبوع القادم", PHRASE, A2, "plans")
+            v("voyager", "voyager", "to travel", "يسافر", VERB, A2, "plans")
+            v("economiser", "économiser", "to save (money)", "يدّخر", VERB, B1, "plans")
+            v("peut_etre", "peut-être", "maybe, perhaps", "ربما", ADVERB, A2, "plans")
+            v("vacances", "les vacances", "holidays (feminine plural)", "العطلة", NOUN, A2, "plans", gender = FEMININE)
+            v("il_faut_que", "il faut que…", "it is necessary that… (+ subjunctive)", "يجب أن…", PHRASE, B2, "wishes",
+                ex = "Il faut que tu viennes.", exEn = "You have to come.", exAr = "يجب أن تأتي.")
+            v("je_veux_que", "je veux que…", "I want (someone) to…", "أريد أن (يفعل شخص آخر)…", PHRASE, B2, "wishes")
+            v("j_espere_que", "j'espère que…", "I hope that… (+ indicative)", "آمل أن…", PHRASE, B1, "wishes")
+            v("chance", "la chance", "luck", "الحظ", NOUN, B1, "wishes", gender = FEMININE)
+            v("reussir", "réussir", "to succeed; to pass (an exam)", "ينجح", VERB, B1, "wishes")
+            v("examen", "l'examen", "exam", "الامتحان", NOUN, A2, "wishes", gender = MASCULINE)
         }
         val vocabulary = vb.items
         val f = LessonFactory(L, vocabulary)
@@ -157,6 +174,20 @@ internal object FrenchCurriculum {
                 listOf(ex("Pourriez-vous confirmer la date ?", "Could you confirm the date?", "هل يمكنكم تأكيد الموعد؟"),
                     ex("Vous peux venir ?", "vous takes 'pouvez'", "vous يأخذ pouvez", wrong = true)),
                 listOf(g("Switching from vous to tu with a client can seem too familiar.", "الانتقال من vous إلى tu مع عميل قد يبدو تبسّطًا زائدًا."))),
+            grammar("futur", L, B1, g("Talking about the future", "الحديث عن المستقبل"),
+                g("The futur proche (aller + infinitive) is for plans and the near future: Je vais voyager. The futur simple (infinitive + -ai, -as, -a, -ons, -ez, -ont) is for predictions and promises: Il pleuvra demain. Je t'appellerai.",
+                    "يُستخدم futur proche (aller + المصدر) للخطط والمستقبل القريب: Je vais voyager. ويُستخدم futur simple (المصدر + ‎-ai و‎-as وغيرهما) للتوقّعات والوعود: Il pleuvra demain. Je t'appellerai."),
+                listOf(ex("Nous allons dîner à la maison.", "We're going to have dinner at home.", "سنتناول العشاء في البيت."),
+                    ex("L'année prochaine, j'habiterai à Paris.", "Next year I'll live in Paris.", "في العام القادم سأسكن في باريس."),
+                    ex("Je vais voyage.", "After aller use the infinitive: je vais voyager", "بعد aller يأتي المصدر: je vais voyager", wrong = true)),
+                listOf(g("Irregular stems to learn: être → ser-, avoir → aur-, aller → ir-, faire → fer-.", "جذور شاذة يجب حفظها: être ← ser- وavoir ← aur- وaller ← ir- وfaire ← fer-."))),
+            grammar("subjonctif", L, B2, g("The subjunctive after il faut que", "صيغة subjonctif بعد il faut que"),
+                g("Use the subjunctive after il faut que, je veux que, pour que and bien que: Il faut que tu viennes. Take the ils-form stem and add -e, -es, -e, -ions, -iez, -ent (ils parlent → que je parle). Learn the irregulars: être (sois), avoir (aies), faire (fasse), aller (aille). Espérer que takes the indicative.",
+                    "تُستخدم subjonctif بعد il faut que وje veux que وpour que وbien que: Il faut que tu viennes. خذ جذر صيغة ils وأضف ‎-e و‎-es و‎-e و‎-ions و‎-iez و‎-ent (ils parlent ← que je parle). واحفظ الشواذ: être (sois) وavoir (aies) وfaire (fasse) وaller (aille). أما espérer que فيليها الإخبار."),
+                listOf(ex("Il faut que nous partions.", "We have to leave.", "يجب أن نغادر."),
+                    ex("Je veux que tu sois heureux.", "I want you to be happy.", "أريدك أن تكون سعيدًا."),
+                    ex("Il faut que tu fais attention.", "Use the subjunctive: que tu fasses", "استخدم subjonctif: que tu fasses", wrong = true)),
+                listOf(g("✗ J'espère qu'il vienne → ✓ J'espère qu'il viendra (indicative).", "✗ J'espère qu'il vienne ← ✓ J'espère qu'il viendra (صيغة الإخبار)."))),
         )
 
         val lessons = listOf(
@@ -220,6 +251,23 @@ internal object FrenchCurriculum {
                     writing("t4", L, g("Write a short email to a client proposing a meeting next week.", "اكتب رسالة قصيرة إلى عميل تقترح فيها اجتماعًا الأسبوع القادم."), 40,
                         listOf("Madame, Monsieur", "réunion", "proposition", "Cordialement")),
                 )),
+            f.lesson("projets", B1, "next", g("Plans for the future", "خطط المستقبل"), g("Talk about plans with aller + infinitive and the futur simple.", "تحدّث عن الخطط باستخدام aller + المصدر والمستقبل البسيط."),
+                Skill.SPEAKING, listOf("projet", "aller_inf", "prochain", "voyager", "economiser", "peut_etre", "vacances"), "futur",
+                extra = listOf(
+                    fill("pr1", L, "L'année prochaine, je ___ voyager au Canada. (aller)", listOf("vais")),
+                    fill("pr2", L, "Demain, il ___ (pleuvoir).", listOf("pleuvra")),
+                    order("pr3", L, listOf("Nous", "allons", "économiser", "pour", "les", "vacances"), g("We're going to save for the holidays.", "سنوفّر المال للعطلة.")),
+                    writing("pr4", L, g("Write about your plans for next year (30+ words).", "اكتب عن خططك للعام القادم (30 كلمة على الأقل)."), 30, listOf("je vais", "l'année prochaine", "peut-être")),
+                ), prerequisites = listOf("sante")),
+            f.lesson("souhaits", B2, "next", g("Needs and wishes", "الضرورات والأمنيات"), g("Use the subjunctive after il faut que and je veux que.", "استخدم subjonctif بعد il faut que وje veux que."),
+                Skill.GRAMMAR, listOf("il_faut_que", "je_veux_que", "j_espere_que", "chance", "reussir", "examen"), "subjonctif",
+                extra = listOf(
+                    fill("so1", L, "Il faut que tu ___ (faire) tes devoirs.", listOf("fasses")),
+                    fill("so2", L, "Je veux que vous ___ (venir) demain.", listOf("veniez")),
+                    choice("so3", L, "J'espère qu'il ___ beau demain.", listOf("fasse", "fera", "fait"), 1,
+                        explanation = g("Espérer que takes the indicative (here the future).", "يأتي بعد espérer que الفعل في صيغة الإخبار (هنا المستقبل).")),
+                    translate("so4", L, g("I want you to succeed.", "أريدك أن تنجح."), listOf("Je veux que tu réussisses", "Je veux que vous réussissiez")),
+                ), prerequisites = listOf("projets")),
         )
         val units = listOf(
             CourseUnit("fr_u_basics", L, A1, g("First steps", "الخطوات الأولى"), g("Greetings and family", "التحيات والعائلة"), listOf("fr_l_salutations", "fr_l_famille")),
@@ -228,6 +276,7 @@ internal object FrenchCurriculum {
 
             CourseUnit("fr_u_home", L, A2, g("Home and health", "البيت والصحة"), g("Your home, the weather and the doctor", "بيتك والطقس والطبيب"), listOf("fr_l_maison", "fr_l_sante")),
             CourseUnit("fr_u_pro_business", L, B1, g("French for work", "الفرنسية للعمل"), g("Meetings and formal emails", "الاجتماعات والرسائل الرسمية"), listOf("fr_l_travail"), trackId = "business"),
+            CourseUnit("fr_u_next", L, B1, g("Next steps", "الخطوة التالية"), g("Plans, needs and wishes", "الخطط والضرورات والأمنيات"), listOf("fr_l_projets", "fr_l_souhaits")),
         )
         val readings = listOf(
             ReadingPassage(
