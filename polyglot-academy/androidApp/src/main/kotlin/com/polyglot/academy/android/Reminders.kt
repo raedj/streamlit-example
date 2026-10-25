@@ -55,7 +55,7 @@ object Reminders {
         val hour = cal.get(Calendar.HOUR_OF_DAY)
         val inQuiet = if (quietStart > quietEnd) hour >= quietStart || hour < quietEnd else hour in quietStart until quietEnd
         if (iso !in daysOf(p.getString("days", "1,2,3,4,5,6,7")) || inQuiet) return
-        val nm = context.getSystemService(NotificationManager::class.java)
+        val nm = context.getSystemService(NotificationManager::class.java) ?: return
         nm.createNotificationChannel(NotificationChannel(CHANNEL, context.getString(R.string.reminder_channel), NotificationManager.IMPORTANCE_DEFAULT))
         val open = PendingIntent.getActivity(context, 0, Intent(context, MainActivity::class.java), PendingIntent.FLAG_IMMUTABLE)
         val n = NotificationCompat.Builder(context, CHANNEL)

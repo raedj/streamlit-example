@@ -27,3 +27,9 @@ include(":uicore")
 include(":ui")
 include(":desktopApp")
 if (androidEnabled) include(":androidApp")
+
+// Optional partial type-check of Android sources without Google Maven (tools/android-typecheck/README.md).
+if (providers.gradleProperty("polyglot.androidTypecheck").isPresent) {
+    include(":android-typecheck")
+    project(":android-typecheck").projectDir = file("tools/android-typecheck")
+}

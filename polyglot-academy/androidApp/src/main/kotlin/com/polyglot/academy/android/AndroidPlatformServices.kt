@@ -59,14 +59,14 @@ class AndroidPlatformServices(private val context: Context) : PlatformServices {
 
     override fun deviceInfo(): DeviceInfo {
         val am = context.getSystemService(ActivityManager::class.java)
-        val mem = ActivityManager.MemoryInfo().also { am.getMemoryInfo(it) }
+        val mem = ActivityManager.MemoryInfo().also { am?.getMemoryInfo(it) }
         val stat = StatFs(context.filesDir.absolutePath)
         val battery = context.getSystemService(BatteryManager::class.java)?.getIntProperty(BatteryManager.BATTERY_PROPERTY_CAPACITY)
         val pm = context.getSystemService(PowerManager::class.java)
         val thermal = if (Build.VERSION.SDK_INT >= 29) (pm?.currentThermalStatus ?: 0) >= PowerManager.THERMAL_STATUS_SEVERE else false
         return DeviceInfo(
             totalRamMb = mem.totalMem / (1024 * 1024), availableStorageMb = stat.availableBytes / (1024 * 1024), osApiLevel = Build.VERSION.SDK_INT,
-            cpuCores = Runtime.getRuntime().availableProcessors(), is64Bit = Build.SUPPORTED_64_BIT_ABIS.isNotEmpty(), isLowRamDevice = am.isLowRamDevice,
+            cpuCores = Runtime.getRuntime().availableProcessors(), is64Bit = Build.SUPPORTED_64_BIT_ABIS.isNotEmpty(), isLowRamDevice = am?.isLowRamDevice ?: false,
             batteryPercent = battery, isPowerSaveMode = pm?.isPowerSaveMode == true, thermalThrottled = thermal,
             hasMicrophone = context.packageManager.hasSystemFeature(PackageManager.FEATURE_MICROPHONE), platformName = "Android ${Build.VERSION.RELEASE} (API ${Build.VERSION.SDK_INT})",
         )
