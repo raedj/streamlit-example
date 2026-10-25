@@ -525,6 +525,26 @@ class ServicesIntegrationTest {
         assertTrue(platform.secrets.get(com.polyglot.academy.core.service.SyncService.PASSPHRASE) == null)
     }
 
+    @Test fun eachFeatureCanUseADifferentProvider() = runBlocking<Unit> {
+        enroll(); enableCloud()
+        val claude = ScriptedProvider(ProviderCatalog.ANTHROPIC, mutableListOf(Result.success("claude says hi")))
+        val gemini = ScriptedProvider(ProviderCatalog.GEMINI, mutableListOf(Result.success("gemini reads")))
+        val multi = AppServices(store, platform, HttpClient(), clock, SequentialIdGenerator(), providerFactory = { _, _ -> listOf(openai, claude, gemini) })
+        listOf(ProviderId.ANTHROPIC, ProviderId.GEMINI).forEach { id -> store.save(ProviderConfig(id, enabled = true)); multi.providers.saveKey(id, "key-$id") }
+        multi.providers.setFeatureProvider(com.polyglot.academy.core.ai.AiCapability.CHAT, ProviderId.ANTHROPIC)
+        multi.providers.setFeatureProvider(com.polyglot.academy.core.ai.AiCapability.VISION, ProviderId.GEMINI)
+        val chat = multi.providers.execute(com.polyglot.academy.core.ai.AiCapability.CHAT, ChatRequest("s", listOf(com.polyglot.academy.core.ai.ChatMessage(com.polyglot.academy.core.ai.ChatRole.USER, "hi")), emptySet()))
+        assertEquals(ProviderId.ANTHROPIC, (chat as com.polyglot.academy.core.ai.AiOutcome.Success).response.providerId)
+        val vision = multi.providers.execute(com.polyglot.academy.core.ai.AiCapability.VISION, ChatRequest("s", listOf(com.polyglot.academy.core.ai.ChatMessage(com.polyglot.academy.core.ai.ChatRole.USER, "read")), emptySet()))
+        assertEquals(ProviderId.GEMINI, (vision as com.polyglot.academy.core.ai.AiOutcome.Success).response.providerId)
+        openai.replies += Result.success("openai corrects")
+        val feedback = multi.providers.execute(com.polyglot.academy.core.ai.AiCapability.STRUCTURED_FEEDBACK, ChatRequest("s", listOf(com.polyglot.academy.core.ai.ChatMessage(com.polyglot.academy.core.ai.ChatRole.USER, "x")), emptySet()))
+        assertEquals(ProviderId.OPENAI, (feedback as com.polyglot.academy.core.ai.AiOutcome.Success).response.providerId, "no choice = preferred provider")
+        multi.providers.setFeatureProvider(com.polyglot.academy.core.ai.AiCapability.CHAT, null)
+        assertTrue(com.polyglot.academy.core.ai.AiCapability.CHAT !in store.currentSettings().aiFeatureProviders)
+        assertNull(multi.providers.listModels(ProviderId.ANTHROPIC).getOrThrow(), "scripted providers have no model list")
+    }
+
     @Test fun speechUnavailableShowsNoticeInsteadOfHanging() = runBlocking<Unit> {
         enroll()
         platform.recognizer.available = SpeechAvailability.PERMISSION_DENIED

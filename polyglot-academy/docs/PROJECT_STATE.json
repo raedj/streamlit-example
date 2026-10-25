@@ -50,11 +50,11 @@
     }
   },
   "last_tests": {
-    "total": 212,
+    "total": 217,
     "failed": 0,
     "modules": {
-      "core": 157,
-      "data": 43,
+      "core": 161,
+      "data": 44,
       "uicore": 12
     },
     "not_run": [
@@ -84,6 +84,7 @@
     "Verify Azure pronunciation scoring, OpenAI Realtime calls and WebDAV sync with real accounts on a device (K-17..K-19)"
   ],
   "recent_changes": [
+    "AI providers: added Mistral, Groq, xAI Grok, OpenRouter, Qwen and a custom OpenAI-compatible endpoint; suggested models and loading the model list from the learner's account; a provider per feature; OpenAI reasoning-model parameters",
     "Daily XP loop: XP derived from stored activity, daily XP goal, three daily quests, levels, streak freezes (earned every 7 days, max 2)",
     "Graded stories: 15 original stories (A1/A2/B1 x 5 languages) with tap-to-translate words and save-to-review; AI-written stories by interest, validated, stored and backed up",
     "Detailed pronunciation scoring via Azure AI Speech (learner's key): per-word and per-phoneme scores, weak sounds to error log",

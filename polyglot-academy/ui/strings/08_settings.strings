@@ -166,9 +166,9 @@ PROV_PRIVACY_CLOUD ¦ Messages you send to the tutor go to {0}'s servers and are
 PROV_PRIVACY_LOCAL ¦ Requests go only to the server address you enter. Use HTTPS, or 127.0.0.1 on the same device. ¦ تُرسل الطلبات إلى عنوان الخادم الذي تدخله فقط. استخدم HTTPS، أو 127.0.0.1 على الجهاز نفسه.
 PROV_FEATURES ¦ Features used here ¦ الميزات المستخدمة هنا
 CAP_CHAT ¦ Conversation ¦ المحادثة
-CAP_STRUCTURED_FEEDBACK ¦ Corrections and writing feedback ¦ التصحيحات وملاحظات الكتابة
+CAP_STRUCTURED_FEEDBACK ¦ Corrections, writing feedback and stories ¦ التصحيحات وتقييم الكتابة والقصص
 CAP_TRANSLATION ¦ Translation ¦ الترجمة
-CAP_VISION ¦ Images ¦ الصور
+CAP_VISION ¦ Reading photos and scans ¦ قراءة الصور والمستندات الممسوحة
 PROV_SPEECH_NOTE ¦ Speech uses your device's speech services, not this provider. ¦ يستخدم الكلام خدمات الكلام في جهازك وليس هذا المزوّد.
 PROV_USAGE ¦ Used {0} times · about {1} tokens (approximate; check the provider dashboard for billing) ¦ استُخدم {0} مرة · نحو {1} رمز (تقريبي؛ راجع لوحة المزوّد للفوترة)
 PROV_DOCS ¦ Provider documentation: {0} ¦ وثائق المزوّد: {0}
@@ -254,3 +254,17 @@ SYNC_ERR_NEWER ¦ The server copy was made by a newer version of the app. Update
 SYNC_ERR_CHANGED ¦ Another device synced at the same moment. Tap Sync now again. ¦ زامن جهاز آخر في اللحظة نفسها. اضغط «زامن الآن» مجددًا.
 SYNC_ERR_SHORT_PASSPHRASE ¦ The passphrase must have at least 10 characters. ¦ يجب أن تتكوّن عبارة المرور من 10 أحرف على الأقل.
 SYNC_ERR_OTHER ¦ Sync failed: {0} ¦ فشلت المزامنة: {0}
+PROV_PER_FEATURE ¦ Which AI for each feature ¦ أي ذكاء اصطناعي لكل ميزة
+PROV_PER_FEATURE_BODY ¦ For example Claude for conversations, Gemini for reading photos and DeepSeek for corrections. "Preferred" uses your preferred provider. ¦ مثلًا Claude للمحادثات، وGemini لقراءة الصور، وDeepSeek للتصحيح. «المفضّل» يستخدم مزوّدك المفضّل.
+PROV_PER_FEATURE_NONE ¦ Turn on a provider and save its key to choose it here. ¦ فعّل مزوّدًا واحفظ مفتاحه لتختاره هنا.
+PROV_FEATURE_DEFAULT ¦ Preferred ¦ المفضّل
+PROV_FEATURE_UNSUPPORTED ¦ None of your providers supports this feature yet. ¦ لا يدعم أيٌّ من مزوّديك هذه الميزة بعد.
+PROV_GET_KEY ¦ Get a key: {0} ¦ احصل على مفتاح: {0}
+PROV_MODEL_REQUIRED ¦ Required: the model id from your provider ¦ مطلوب: معرّف النموذج لدى مزوّدك
+PROV_MODEL_SUGGESTED ¦ Common models ¦ نماذج شائعة
+PROV_MODELS_LOAD ¦ Load the models of my account ¦ حمّل نماذج حسابي
+PROV_MODELS_LOADING ¦ Loading models… ¦ جارٍ تحميل النماذج…
+PROV_MODELS_FOUND ¦ {0} models available (showing {1}; type in the model field to filter) ¦ {0} نموذجًا متاحًا (يُعرض {1}؛ اكتب في حقل النموذج للتصفية)
+PROV_MODELS_EMPTY ¦ The provider returned no models. ¦ لم يُرجع المزوّد أي نماذج.
+PROV_MODELS_UNSUPPORTED ¦ This provider has no model list; type the model or deployment name. ¦ لا يوفّر هذا المزوّد قائمة نماذج؛ اكتب اسم النموذج أو النشر.
+PROV_MODELS_FAILED ¦ Could not load models: {0} ¦ تعذّر تحميل النماذج: {0}

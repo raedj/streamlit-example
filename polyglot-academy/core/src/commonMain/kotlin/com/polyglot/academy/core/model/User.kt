@@ -108,6 +108,8 @@ data class AppSettings(
     val showHintsByDefault: Boolean = true,
     val voiceServices: VoiceServiceSettings = VoiceServiceSettings(),
     val sync: SyncSettings = SyncSettings(),
+    /** Provider chosen for a feature (e.g. Claude for conversations, Gemini for reading photos); missing = the preferred provider. */
+    val aiFeatureProviders: Map<com.polyglot.academy.core.ai.AiCapability, com.polyglot.academy.core.ai.ProviderId> = emptyMap(),
 )
 
 /** Encrypted sync through the learner's own WebDAV server. Password and passphrase are in the secure store. */

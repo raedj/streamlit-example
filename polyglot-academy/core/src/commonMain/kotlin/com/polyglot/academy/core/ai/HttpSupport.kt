@@ -1,6 +1,7 @@
 package com.polyglot.academy.core.ai
 
 import io.ktor.client.HttpClient
+import io.ktor.client.request.get
 import io.ktor.client.request.header
 import io.ktor.client.request.post
 import io.ktor.client.request.setBody
@@ -60,6 +61,24 @@ internal suspend fun postJson(
     } catch (e: Exception) {
         throw AiError.InvalidResponse(provider, "body is not a JSON object")
     }
+}
+
+internal suspend fun getJson(client: HttpClient, provider: ProviderId, url: String, headers: Map<String, String>, timeoutMillis: Long): JsonObject {
+    val status: Int
+    val text: String
+    try {
+        val response = withTimeout(timeoutMillis) { client.get(url) { headers.forEach { (k, v) -> header(k, v) } } }
+        status = response.status.value
+        text = withTimeout(timeoutMillis) { response.bodyAsText() }
+    } catch (e: TimeoutCancellationException) {
+        throw AiError.Timeout(provider)
+    } catch (e: CancellationException) {
+        throw e
+    } catch (e: Exception) {
+        throw AiError.Network(provider, e::class.simpleName ?: "IO")
+    }
+    if (status !in 200..299) throw classifyHttpError(provider, status, text, null)
+    return try { providerJson.parseToJsonElement(text).jsonObject } catch (e: Exception) { throw AiError.InvalidResponse(provider, "body is not a JSON object") }
 }
 
 internal fun classifyHttpError(provider: ProviderId, status: Int, body: String, retryAfterMillis: Long?): AiError {

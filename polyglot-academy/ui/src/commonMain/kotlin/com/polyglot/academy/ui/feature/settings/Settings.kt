@@ -307,6 +307,34 @@ private fun ProvidersPage() {
             Text(status.first, style = MaterialTheme.typography.labelLarge, color = status.second)
         }
     }
+    FeatureProviders(configs, keys, preferred)
+}
+
+/** Lets the learner pick a different provider for each feature; "Preferred" follows the preferred provider. */
+@Composable
+private fun FeatureProviders(configs: Map<ProviderId, ProviderConfig>, keys: Set<ProviderId>, preferred: ProviderId?) {
+    val app = LocalApp.current
+    val s = LocalStrings.current
+    val c = PolyglotTheme.colors
+    val scope = rememberCoroutineScope()
+    val ready = ProviderCatalog.all.filter { d ->
+        val cfg = configs[d.id] ?: ProviderConfig(d.id)
+        d.id != ProviderId.ON_DEVICE && cfg.enabled && (!d.requiresApiKey || d.id in keys)
+    }
+    SectionHeader(s[K.PROV_PER_FEATURE])
+    Text(s[K.PROV_PER_FEATURE_BODY], style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
+    if (ready.isEmpty()) { Text(s[K.PROV_PER_FEATURE_NONE], style = MaterialTheme.typography.bodyMedium, color = c.textMuted); return }
+    com.polyglot.academy.core.ai.AiCapability.entries.forEach { cap ->
+        val options = listOf<ProviderId?>(null) + ready.filter { cap in it.capabilities }.map { it.id }
+        val chosen = app.settings.aiFeatureProviders[cap]
+        PolyCard {
+            Text(Labels.capability(s, cap), style = MaterialTheme.typography.titleSmall)
+            ChipGroup(options, setOf(chosen), { id ->
+                id?.let { ProviderCatalog.of(it).displayName } ?: (s[K.PROV_FEATURE_DEFAULT] + (preferred?.let { " (${ProviderCatalog.of(it).displayName})" } ?: ""))
+            }, { id -> scope.launch { app.services.providers.setFeatureProvider(cap, id) } })
+            if (options.size == 1) Text(s[K.PROV_FEATURE_UNSUPPORTED], style = MaterialTheme.typography.bodySmall, color = c.textMuted)
+        }
+    }
 }
 
 @Composable
@@ -341,6 +369,9 @@ fun ProviderDetailScreen(id: ProviderId) {
     var deployment by remember(cfg.deployment) { mutableStateOf(cfg.deployment.orEmpty()) }
     var testing by remember { mutableStateOf(false) }
     var testMessage by remember { mutableStateOf<Pair<Boolean, String>?>(null) }
+    var accountModels by remember { mutableStateOf(emptyList<String>()) }
+    var loadingModels by remember { mutableStateOf(false) }
+    var modelsError by remember { mutableStateOf<String?>(null) }
     LaunchedEffect(id) { hasKey = app.services.providers.hasKey(id) }
     fun saveCfg(t: (ProviderConfig) -> ProviderConfig) = scope.launch { app.services.providers.saveConfig(t(app.services.store.current().getValue(id))) }
     ScrollScreen(d.displayName) {
@@ -359,8 +390,31 @@ fun ProviderDetailScreen(id: ProviderId) {
             }
             Text(s.f(K.PROV_KEY_STORAGE, app.services.platform.secrets.protectionDescription), style = MaterialTheme.typography.labelSmall, color = c.textMuted)
         }
+        d.keyUrl?.let { Text(s.f(K.PROV_GET_KEY, it), style = MaterialTheme.typography.bodySmall, color = c.textSecondary) }
         SectionHeader(s[K.PROV_MODEL])
-        AppTextField(model, { model = it }, s[K.PROV_MODEL], supporting = s.f(K.PROV_MODEL_DEFAULT, d.defaultModel))
+        AppTextField(model, { model = it }, s[K.PROV_MODEL],
+            supporting = if (d.defaultModel.isBlank()) s[K.PROV_MODEL_REQUIRED] else s.f(K.PROV_MODEL_DEFAULT, d.defaultModel))
+        if (d.suggestedModels.isNotEmpty()) {
+            Text(s[K.PROV_MODEL_SUGGESTED], style = MaterialTheme.typography.labelLarge)
+            ChipGroup(d.suggestedModels, setOf(model.ifBlank { d.defaultModel }), { it }, { model = it })
+        }
+        SecondaryButton(if (loadingModels) s[K.PROV_MODELS_LOADING] else s[K.PROV_MODELS_LOAD], {
+            loadingModels = true; modelsError = null
+            scope.launch {
+                saveCfg { it.copy(baseUrl = baseUrl.trim().ifBlank { null }, deployment = deployment.trim().ifBlank { null }) }.join()
+                app.services.providers.listModels(id).fold(
+                    { list -> if (list == null) modelsError = s[K.PROV_MODELS_UNSUPPORTED] else { accountModels = list; if (list.isEmpty()) modelsError = s[K.PROV_MODELS_EMPTY] } },
+                    { e -> modelsError = s.f(K.PROV_MODELS_FAILED, e.message ?: "") })
+                loadingModels = false
+            }
+        }, Modifier.fillMaxWidth(), enabled = !loadingModels && (hasKey || !d.requiresApiKey))
+        modelsError?.let { Text(it, style = MaterialTheme.typography.bodySmall, color = c.warning) }
+        if (accountModels.isNotEmpty()) {
+            val filter = model.trim().lowercase()
+            val shown = accountModels.filter { filter.isEmpty() || filter in it.lowercase() || it == model }.take(40)
+            Text(s.f(K.PROV_MODELS_FOUND, accountModels.size, shown.size), style = MaterialTheme.typography.labelLarge)
+            ChipGroup(shown, setOf(model), { it }, { model = it })
+        }
         if (d.requiresBaseUrl || d.defaultBaseUrl != null) AppTextField(baseUrl, { baseUrl = it }, s[K.PROV_BASE_URL], supporting = d.defaultBaseUrl)
         if (id == ProviderId.AZURE_OPENAI) AppTextField(deployment, { deployment = it }, s[K.PROV_DEPLOYMENT])
         SecondaryButton(s[K.SAVE], { saveCfg { it.copy(model = model.trim().ifBlank { null }, baseUrl = baseUrl.trim().ifBlank { null }, deployment = deployment.trim().ifBlank { null }) } }, Modifier.fillMaxWidth())

@@ -21,9 +21,22 @@
 | Anthropic Claude | console.anthropic.com ← API Keys | |
 | Azure OpenAI | بوابة Azure ← مورد Azure OpenAI ← Keys and Endpoint + اسم الـ deployment | |
 | DeepSeek | platform.deepseek.com | |
+| Mistral AI | console.mistral.ai ← API keys | |
+| Groq | console.groq.com ← API Keys | سريع جدًا، نماذج مفتوحة مثل Llama |
+| xAI Grok | console.x.ai | |
+| OpenRouter | openrouter.ai ← Keys | مفتاح واحد للوصول إلى نماذج كثيرة (GPT وClaude وGemini وLlama…) |
+| Alibaba Qwen | Model Studio (دولي) ← API keys | |
+| خدمة أخرى متوافقة مع OpenAI | من موقع الخدمة (Together، Fireworks، Perplexity…) | أدخل العنوان (https فقط) واسم النموذج |
 | خادم محلي (Ollama / LM Studio) | لا يحتاج مفتاحًا؛ أدخل العنوان مثل http://localhost:11434/v1 | على أندرويد: من المحاكي استخدم 10.0.2.2 |
 
-اشتراكات المستهلكين (ChatGPT Plus، Gemini Advanced، Copilot) ليست مفاتيح API.
+**اختيار النموذج:** في صفحة كل مزوّد اختر من «نماذج شائعة»، أو اضغط «حمّل نماذج حسابي» لعرض كل
+النماذج المتاحة لمفتاحك، أو اكتب اسم أي نموذج.
+
+**مزوّد لكل ميزة:** في أسفل صفحة «مزوّدو الذكاء الاصطناعي» قسم «أي ذكاء اصطناعي لكل ميزة»:
+اختر مثلًا Claude للمحادثة، وDeepSeek للتصحيحات والقصص، وGemini لقراءة الصور. ما لا تختار له
+يستخدم المزوّد «المفضّل». يمكنك تفعيل عدة مزوّدين معًا، ولكلٍّ مفتاحه ونموذجه.
+
+اشتراكات المستهلكين (ChatGPT Plus، Gemini Advanced، Claude Pro، Copilot) ليست مفاتيح API.
 
 ## 3. تقييم النطق المفصّل (Azure AI Speech)
 1. في بوابة Azure أنشئ موردًا من نوع **Speech** (توجد فئة مجانية F0).

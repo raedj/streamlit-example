@@ -73,6 +73,7 @@ object ProviderRouter {
             if (d.requiresApiKey && d.id !in ctx.credentialPresent) return Candidate(d.id, SkipReason.NOT_CONFIGURED)
             if (d.requiresBaseUrl && cfg.baseUrl.isNullOrBlank() && d.defaultBaseUrl == null) return Candidate(d.id, SkipReason.NOT_CONFIGURED)
             if (d.id == ProviderId.AZURE_OPENAI && cfg.deployment.isNullOrBlank()) return Candidate(d.id, SkipReason.NOT_CONFIGURED)
+            if (d.defaultModel.isBlank() && cfg.model.isNullOrBlank()) return Candidate(d.id, SkipReason.NOT_CONFIGURED)
         }
         if (capability !in d.capabilities) return Candidate(d.id, SkipReason.MISSING_CAPABILITY)
         if (ctx.network == NetworkState.OFFLINE && d.location != ProviderLocation.ON_DEVICE) return Candidate(d.id, SkipReason.OFFLINE)

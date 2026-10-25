@@ -84,6 +84,59 @@ class AdapterTest {
         assertTrue("\"qwen\"" in lastBody)
     }
 
+    @Test fun everyOpenAiCompatibleCloudProviderUsesItsOwnAddressAndKey() = realTimeTest {
+        val c = client { respond("""{"choices":[{"message":{"content":"ok"}}]}""", HttpStatusCode.OK, json) }
+        val expected = mapOf(
+            ProviderCatalog.MISTRAL to "https://api.mistral.ai/v1/chat/completions",
+            ProviderCatalog.GROQ to "https://api.groq.com/openai/v1/chat/completions",
+            ProviderCatalog.XAI to "https://api.x.ai/v1/chat/completions",
+            ProviderCatalog.OPENROUTER to "https://openrouter.ai/api/v1/chat/completions",
+            ProviderCatalog.QWEN to "https://dashscope-intl.aliyuncs.com/compatible-mode/v1/chat/completions",
+        )
+        expected.forEach { (d, url) ->
+            OpenAiCompatibleProvider(d, c, keys, configs(), { 0L }).complete(req)
+            assertEquals(url, lastRequest!!.url.toString())
+            assertEquals("Bearer test-key-123", lastRequest!!.headers[HttpHeaders.Authorization])
+            assertTrue("\"${d.defaultModel}\"" in lastBody && "\"max_tokens\"" in lastBody, d.displayName)
+        }
+        assertFailsWith<AiError.NotConfigured> { OpenAiCompatibleProvider(ProviderCatalog.MISTRAL, c, noKeys, configs(), { 0L }).complete(req) }
+        // Any other OpenAI-compatible service: address and model come from the learner, HTTPS only.
+        val custom = { url: String, model: String? -> OpenAiCompatibleProvider(ProviderCatalog.CUSTOM_OPENAI, c, keys,
+            configs(ProviderConfig(ProviderId.CUSTOM_OPENAI, enabled = true, baseUrl = url, model = model)), { 0L }) }
+        custom("https://api.together.xyz/v1", "meta-llama/Llama-3.3-70B-Instruct-Turbo").complete(req)
+        assertEquals("https://api.together.xyz/v1/chat/completions", lastRequest!!.url.toString())
+        assertFailsWith<AiError.NotConfigured> { custom("http://api.example.com/v1", "m").complete(req) }
+        assertFailsWith<AiError.NotConfigured> { custom("https://api.example.com/v1", null).complete(req) }
+    }
+
+    @Test fun openAiNewerModelsGetTheirOwnParameters() = realTimeTest {
+        val c = client { respond("""{"choices":[{"message":{"content":"ok"}}]}""", HttpStatusCode.OK, json) }
+        val p = { m: String -> OpenAiCompatibleProvider(ProviderCatalog.OPENAI, c, keys, configs(ProviderConfig(ProviderId.OPENAI, enabled = true, model = m)), { 0L }) }
+        p("gpt-4.1-mini").complete(req)
+        assertTrue("\"max_completion_tokens\"" in lastBody && "\"temperature\"" in lastBody && "\"max_tokens\"" !in lastBody)
+        p("gpt-5-mini").complete(req)
+        assertTrue("\"max_completion_tokens\"" in lastBody && "\"temperature\"" !in lastBody, "reasoning models accept only the default temperature")
+        p("o4-mini").complete(req)
+        assertTrue("\"temperature\"" !in lastBody)
+    }
+
+    @Test fun modelListsAreLoadedFromTheAccount() = realTimeTest {
+        val oa = client { respond("""{"data":[{"id":"gpt-4.1"},{"id":"gpt-4.1-mini"},{"id":"gpt-4.1"}]}""", HttpStatusCode.OK, json) }
+        assertEquals(listOf("gpt-4.1", "gpt-4.1-mini"), OpenAiCompatibleProvider(ProviderCatalog.OPENAI, oa, keys, configs(), { 0L }).listModels())
+        assertEquals("https://api.openai.com/v1/models", lastRequest!!.url.toString())
+        assertEquals("GET", lastRequest!!.method.value)
+        val an = client { respond("""{"data":[{"id":"claude-sonnet-5-5","type":"model"},{"id":"claude-haiku-5-5","type":"model"}]}""", HttpStatusCode.OK, json) }
+        assertEquals(listOf("claude-haiku-5-5", "claude-sonnet-5-5"), AnthropicProvider(an, keys, configs(), { 0L }).listModels())
+        assertEquals("test-key-123", lastRequest!!.headers["x-api-key"])
+        val ge = client { respond("""{"models":[{"name":"models/gemini-2.5-flash","supportedGenerationMethods":["generateContent","countTokens"]},
+            {"name":"models/text-embedding-004","supportedGenerationMethods":["embedContent"]}]}""", HttpStatusCode.OK, json) }
+        assertEquals(listOf("gemini-2.5-flash"), GeminiProvider(ge, keys, configs(), { 0L }).listModels())
+        assertFalse("key=" in lastRequest!!.url.toString())
+        assertEquals(null, AzureOpenAiProvider(oa, keys, configs(), { 0L }).listModels(), "Azure has deployments, not a model list")
+        val denied = client { respond("", HttpStatusCode.Unauthorized) }
+        assertFailsWith<AiError.Authentication> { OpenAiCompatibleProvider(ProviderCatalog.GROQ, denied, keys, configs(), { 0L }).listModels() }
+    }
+
     @Test fun anthropicFormat() = realTimeTest {
         val c = client { respond("""{"model":"claude-haiku-5-5","content":[{"type":"text","text":"Hello "},{"type":"text","text":"there"}],"stop_reason":"end_turn","usage":{"input_tokens":5,"output_tokens":2}}""", HttpStatusCode.OK, json) }
         val r = AnthropicProvider(c, keys, configs(), { 0L }).complete(req)

@@ -79,6 +79,17 @@ class AiTest {
         assertEquals(listOf(ProviderId.OPENAI), d.ordered)
     }
 
+    @Test fun customProviderNeedsAModelAndEveryProviderIsListed() {
+        val withCustom = ctx(preferred = ProviderId.CUSTOM_OPENAI, enabled = setOf(ProviderId.CUSTOM_OPENAI)).let { c ->
+            c.copy(configs = c.configs + (ProviderId.CUSTOM_OPENAI to ProviderConfig(ProviderId.CUSTOM_OPENAI, enabled = true, baseUrl = "https://x.example/v1")))
+        }
+        assertIs<RouteDecision.Blocked>(ProviderRouter.route(AiCapability.CHAT, emptySet(), withCustom), "no model chosen yet")
+        val ready = withCustom.copy(configs = withCustom.configs + (ProviderId.CUSTOM_OPENAI to ProviderConfig(ProviderId.CUSTOM_OPENAI, enabled = true, baseUrl = "https://x.example/v1", model = "m")))
+        assertEquals(listOf(ProviderId.CUSTOM_OPENAI), (ProviderRouter.route(AiCapability.CHAT, emptySet(), ready) as RouteDecision.Route).ordered)
+        assertEquals(ProviderId.entries.toSet(), ProviderCatalog.all.map { it.id }.toSet())
+        assertTrue(ProviderCatalog.all.filter { it.requiresApiKey }.all { it.keyUrl != null || it.id == ProviderId.CUSTOM_OPENAI })
+    }
+
     @Test fun routerAddsCloudFallbackOnlyWhenAllowed() {
         val d = ProviderRouter.route(AiCapability.CHAT, emptySet(), ctx(privacy = cloudOn.copy(allowCloudFallback = true)))
         assertIs<RouteDecision.Route>(d)

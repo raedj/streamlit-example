@@ -7,12 +7,28 @@
 | Google Gemini | `GeminiProvider` | `POST {base}/models/{model}:generateContent`, `x-goog-api-key` (never in URL) | `gemini-2.5-flash` | Cloud | chat, feedback, translation | Mock HTTP tests only |
 | Anthropic Claude | `AnthropicProvider` | `POST {base}/messages`, `x-api-key`, `anthropic-version: 2023-06-01` | `claude-haiku-5-5` | Cloud | chat, feedback, translation | Mock HTTP tests only |
 | DeepSeek | `OpenAiCompatibleProvider` | `https://api.deepseek.com/chat/completions` | `deepseek-chat` | Cloud | chat, feedback | Mock HTTP tests only |
+| Mistral AI | `OpenAiCompatibleProvider` | `https://api.mistral.ai/v1/chat/completions`, Bearer | `mistral-small-latest` | Cloud | chat, feedback, translation | Mock HTTP tests only |
+| Groq | `OpenAiCompatibleProvider` | `https://api.groq.com/openai/v1/chat/completions`, Bearer | `llama-3.3-70b-versatile` | Cloud | chat, feedback, translation | Mock HTTP tests only |
+| xAI Grok | `OpenAiCompatibleProvider` | `https://api.x.ai/v1/chat/completions`, Bearer | `grok-3-mini` | Cloud | chat, feedback, translation | Mock HTTP tests only |
+| OpenRouter (many vendors, one key) | `OpenAiCompatibleProvider` | `https://openrouter.ai/api/v1/chat/completions`, Bearer | `openai/gpt-4o-mini` | Cloud | chat, feedback, translation | Mock HTTP tests only |
+| Alibaba Qwen (Model Studio, international) | `OpenAiCompatibleProvider` | `https://dashscope-intl.aliyuncs.com/compatible-mode/v1/chat/completions`, Bearer | `qwen-plus` | Cloud | chat, feedback, translation | Mock HTTP tests only |
+| Other OpenAI-compatible service (Together, Fireworks, Perplexity, …) | `OpenAiCompatibleProvider` | `{learner's HTTPS address}/chat/completions`, Bearer | entered by the learner (required) | Cloud | chat, feedback, translation | Mock HTTP tests only |
 | Local server (Ollama, llama.cpp server, LM Studio) | `OpenAiCompatibleProvider` | `{base}/chat/completions`, optional key | `llama3.2` | Learner's own server | chat, feedback | Mock HTTP tests only |
 | On-device | — | — | — | Device | — | No runtime bundled (honest "not available") |
 
 **No provider has been tested against its live API** (no keys; cloud hosts are outside this
 environment's allow-list). Default model names should be checked against each vendor's current
 catalogue before release; the learner can change the model in Settings.
+
+Choosing models
+- Every provider has its own key, model, address and connection test (Settings → AI providers).
+- Common models are offered as quick choices; **"Load the models of my account"** lists the models
+  the learner's key can use (`GET /models` for OpenAI-compatible services, `GET /v1/models` for
+  Anthropic, `GET /models` filtered to `generateContent` for Gemini; Azure uses deployment names).
+- **Per feature**: conversation, corrections/writing/stories, translation and reading photos can
+  each use a different provider; features without a choice use the preferred provider.
+- OpenAI and Azure OpenAI requests send `max_completion_tokens`; for reasoning models
+  (`gpt-5*`, `o1`/`o3`/`o4…`) the temperature is left at the model default, which those models require.
 
 Notes
 - Consumer subscriptions (ChatGPT Plus, Gemini Advanced, Microsoft Copilot) are not API access;

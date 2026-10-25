@@ -1,12 +1,12 @@
 # Test Results
 
 Run on 2026-10-25 in the cloud build container (JDK 21, Gradle 8.14.3, Linux x64) with
-`./gradlew build -x :ui:desktopTest`. **Result: BUILD SUCCESSFUL, 212 tests, 0 failures.**
+`./gradlew build -x :ui:desktopTest`. **Result: BUILD SUCCESSFUL, 217 tests, 0 failures.**
 
 | Module | Test class | Tests | Failures |
 |---|---|---|---|
-| core | AdapterTest (OpenAI, Azure, Gemini, Anthropic, DeepSeek, local; image parts per vendor; error classification; timeouts; no key leakage) | 11 | 0 |
-| core | AiTest (privacy policy, router, retries, fallback rules, redaction) | 18 | 0 |
+| core | AdapterTest (OpenAI, Azure, Gemini, Anthropic, DeepSeek, local; image parts per vendor; error classification; timeouts; no key leakage; Mistral, Groq, xAI, OpenRouter, Qwen and custom OpenAI-compatible endpoints; GPT-5/o-series parameters; model lists from OpenAI-compatible, Anthropic and Gemini) | 14 | 0 |
+| core | AiTest (privacy policy, router, retries, fallback rules, redaction, custom provider needs a model, catalog completeness) | 19 | 0 |
 | core | AssessmentPlannerAnalyticsTest | 13 | 0 |
 | core | CurriculumIntegrityTest (all 5 curricula, incl. track integrity and story glossaries) | 8 | 0 |
 | core | LearningEngineTest | 13 | 0 |
@@ -28,12 +28,12 @@ Run on 2026-10-25 in the cloud build container (JDK 21, Gradle 8.14.3, Linux x64
 | core | TextAndAnswersTest | 9 | 0 |
 | core | TutorAndVoiceTest | 10 | 0 |
 | data | SqlStoreTest (incl. real v1→v2 and v2→v3 migrations) | 10 | 0 |
-| data | ServicesIntegrationTest (lesson, review, plan, assessment, providers, offline/AI conversation, privacy, writing, materials, delete-all, restore re-applies reminder, PDF import, AI and offline speaking missions, vision OCR with privacy gate, chosen-topic AI conversation with corrections, free talk offline notice, coach asks for and saves the track, error log, warm-up once per session, daily loop stores a streak freeze, AI story stored/backed up and words saved, pronunciation scoring gated by key and voice consent, live voice call with fake WebSocket/microphone/speaker and transcript corrections, two-device encrypted sync incl. conflict) | 28 | 0 |
+| data | ServicesIntegrationTest (lesson, review, plan, assessment, providers, offline/AI conversation, privacy, writing, materials, delete-all, restore re-applies reminder, PDF import, AI and offline speaking missions, vision OCR with privacy gate, chosen-topic AI conversation with corrections, free talk offline notice, coach asks for and saves the track, error log, warm-up once per session, daily loop stores a streak freeze, AI story stored/backed up and words saved, pronunciation scoring gated by key and voice consent, live voice call with fake WebSocket/microphone/speaker and transcript corrections, two-device encrypted sync incl. conflict, a different provider per feature) | 29 | 0 |
 | data | ConversationIntegrityTest | 1 | 0 |
 | data | RestoreTest (v2 round trip of every record type, cloud AI forced off, invalid/newer files rejected without changes, v1 best-effort) | 4 | 0 |
 | uicore | LocalizationTest | 8 | 0 |
 | uicore | ContrastTest | 4 | 0 |
-| **Total** | | **212** | **0** |
+| **Total** | | **217** | **0** |
 
 Also executed: SQLDelight `verifyCommonMainPolyglotDatabaseMigration` (pass); compilation of
 `ui` and `desktopApp` for the JVM (pass, no warnings after fixes).

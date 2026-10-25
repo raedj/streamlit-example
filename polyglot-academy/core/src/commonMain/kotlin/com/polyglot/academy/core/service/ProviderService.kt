@@ -53,19 +53,32 @@ class ProviderService(
 
     suspend fun saveConfig(config: ProviderConfig) = configs.save(config)
 
-    suspend fun routingContext(perItemCloudConsent: Boolean = false): RoutingContext {
+    /** [capability] selects a per-feature provider choice when the learner made one. */
+    suspend fun routingContext(perItemCloudConsent: Boolean = false, capability: AiCapability? = null): RoutingContext {
         val cfg = configs.current()
         cachedConfigs = cfg
         val present = ProviderCatalog.all.filter { d -> !d.requiresApiKey || hasKey(d.id) }.map { it.id }.toSet()
-        val preferred = configs.preferredProvider.first()
-        return RoutingContext(profiles.currentSettings().privacy, network(), preferred, cfg, present, onDeviceReady(), perItemCloudConsent)
+        val settings = profiles.currentSettings()
+        val preferred = capability?.let { settings.aiFeatureProviders[it] } ?: configs.preferredProvider.first()
+        return RoutingContext(settings.privacy, network(), preferred, cfg, present, onDeviceReady(), perItemCloudConsent)
     }
 
     suspend fun route(capability: AiCapability, categories: Set<DataCategory>): RouteDecision =
-        ProviderRouter.route(capability, categories, routingContext())
+        ProviderRouter.route(capability, categories, routingContext(capability = capability))
+
+    /** Sets (or with null clears) the provider used for one feature. */
+    suspend fun setFeatureProvider(capability: AiCapability, id: ProviderId?) = profiles.updateSettings { s ->
+        s.copy(aiFeatureProviders = if (id == null) s.aiFeatureProviders - capability else s.aiFeatureProviders + (capability to id))
+    }
+
+    /** Models available to the learner's key, loaded from the provider (null = no listing API). */
+    suspend fun listModels(id: ProviderId): Result<List<String>?> = runCatching {
+        cachedConfigs = configs.current()
+        (providers[id] ?: throw com.polyglot.academy.core.ai.AiError.NotConfigured(id)).listModels()
+    }
 
     suspend fun execute(capability: AiCapability, request: ChatRequest, perItemCloudConsent: Boolean = false): AiOutcome {
-        val outcome = service.execute(capability, request, routingContext(perItemCloudConsent))
+        val outcome = service.execute(capability, request, routingContext(perItemCloudConsent, capability))
         if (outcome is AiOutcome.Success) {
             val c = configs.current().getValue(outcome.response.providerId)
             configs.save(c.copy(requestCount = c.requestCount + 1,

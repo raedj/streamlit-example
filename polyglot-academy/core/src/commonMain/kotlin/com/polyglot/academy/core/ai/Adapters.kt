@@ -29,6 +29,10 @@ abstract class BaseHttpProvider(
     protected val baseUrl: String
         get() = (config.baseUrl?.takeIf { it.isNotBlank() } ?: descriptor.defaultBaseUrl ?: throw AiError.NotConfigured(descriptor.id)).trimEnd('/')
 
+    /** Model ids from the provider's model-list endpoint (sorted, without duplicates). */
+    protected fun ids(json: kotlinx.serialization.json.JsonElement?, field: String = "id"): List<String> =
+        (json as? JsonArray).orEmpty().mapNotNull { it.path(field).str() }.distinct().sorted()
+
     protected suspend fun requireKey(): String =
         credentials.apiKey(descriptor.id)?.takeIf { it.isNotBlank() } ?: throw AiError.NotConfigured(descriptor.id)
 
@@ -55,17 +59,33 @@ open class OpenAiCompatibleProvider(
     protected open suspend fun endpointAndHeaders(): Pair<String, Map<String, String>> {
         val headers = if (descriptor.requiresApiKey) mapOf("Authorization" to "Bearer ${requireKey()}")
         else credentials.apiKey(descriptor.id)?.takeIf { it.isNotBlank() }?.let { mapOf("Authorization" to "Bearer $it") } ?: emptyMap()
+        // A learner-entered cloud address must use HTTPS so the key is never sent in clear text.
+        if (descriptor.id == ProviderId.CUSTOM_OPENAI && !baseUrl.startsWith("https://")) throw AiError.NotConfigured(descriptor.id)
         return "$baseUrl/chat/completions" to headers
     }
 
     protected open fun includeModelInBody() = true
 
+    /**
+     * OpenAI's newer models take `max_completion_tokens` (and reasoning models such as gpt-5 and
+     * the o-series accept only the default temperature); other compatible services use `max_tokens`.
+     */
+    private val usesOpenAiParameters get() = descriptor.id == ProviderId.OPENAI || descriptor.id == ProviderId.AZURE_OPENAI
+    private fun isReasoningModel(m: String) = m.lowercase().let { it.startsWith("gpt-5") || Regex("^o\\d").containsMatchIn(it) }
+
+    override suspend fun listModels(): List<String>? {
+        if (descriptor.id == ProviderId.AZURE_OPENAI) return null
+        val (_, headers) = endpointAndHeaders()
+        return ids(getJson(client, descriptor.id, "$baseUrl/models", headers, 20_000)["data"])
+    }
+
     override suspend fun complete(request: ChatRequest): ChatResponse {
         val (url, headers) = endpointAndHeaders()
+        if (descriptor.id == ProviderId.CUSTOM_OPENAI && model.isBlank()) throw AiError.NotConfigured(descriptor.id)
         val body = buildJsonObject {
             if (includeModelInBody()) put("model", model)
-            put("max_tokens", request.maxOutputTokens)
-            put("temperature", request.temperature)
+            if (usesOpenAiParameters) put("max_completion_tokens", request.maxOutputTokens) else put("max_tokens", request.maxOutputTokens)
+            if (!(usesOpenAiParameters && isReasoningModel(model))) put("temperature", request.temperature)
             if (request.expectJson) putJsonObject("response_format") { put("type", "json_object") }
             putJsonArray("messages") {
                 addJsonObject { put("role", "system"); put("content", request.system) }
@@ -108,6 +128,10 @@ class AnthropicProvider(
 ) : BaseHttpProvider(client, credentials, configs, clock) {
     override val descriptor = ProviderCatalog.ANTHROPIC
 
+    private suspend fun headers() = mapOf("x-api-key" to requireKey(), "anthropic-version" to "2023-06-01")
+
+    override suspend fun listModels(): List<String> = ids(getJson(client, descriptor.id, "$baseUrl/models?limit=100", headers(), 20_000)["data"])
+
     override suspend fun complete(request: ChatRequest): ChatResponse {
         val body = buildJsonObject {
             put("model", model)
@@ -132,8 +156,7 @@ class AnthropicProvider(
                 }
             }
         }
-        val headers = mapOf("x-api-key" to requireKey(), "anthropic-version" to "2023-06-01")
-        val json = postJson(client, descriptor.id, "$baseUrl/messages", headers, body, request.timeoutMillis)
+        val json = postJson(client, descriptor.id, "$baseUrl/messages", headers(), body, request.timeoutMillis)
         val content = json["content"] as? JsonArray ?: throw AiError.InvalidResponse(descriptor.id, "missing content")
         if (json.path("stop_reason").str() == "refusal") throw AiError.ContentFiltered(descriptor.id)
         val text = content.mapNotNull { block -> if (block.path("type").str() == "text") block.path("text").str() else null }.joinToString("")
@@ -147,6 +170,14 @@ class GeminiProvider(
     client: HttpClient, credentials: CredentialSource, configs: ConfigSource, clock: () -> Long,
 ) : BaseHttpProvider(client, credentials, configs, clock) {
     override val descriptor = ProviderCatalog.GEMINI
+
+    /** Only models that support generateContent, without the "models/" prefix. */
+    override suspend fun listModels(): List<String> {
+        val json = getJson(client, descriptor.id, "$baseUrl/models?pageSize=200", mapOf("x-goog-api-key" to requireKey()), 20_000)
+        return (json["models"] as? JsonArray).orEmpty().filter { m ->
+            (m.path("supportedGenerationMethods") as? JsonArray).orEmpty().any { it.str() == "generateContent" }
+        }.mapNotNull { it.path("name").str()?.removePrefix("models/") }.distinct().sorted()
+    }
 
     override suspend fun complete(request: ChatRequest): ChatResponse {
         val body = buildJsonObject {
@@ -195,5 +226,11 @@ fun createHttpProviders(
     GeminiProvider(client, credentials, configs, clock),
     AnthropicProvider(client, credentials, configs, clock),
     OpenAiCompatibleProvider(ProviderCatalog.DEEPSEEK, client, credentials, configs, clock),
+    OpenAiCompatibleProvider(ProviderCatalog.MISTRAL, client, credentials, configs, clock),
+    OpenAiCompatibleProvider(ProviderCatalog.GROQ, client, credentials, configs, clock),
+    OpenAiCompatibleProvider(ProviderCatalog.XAI, client, credentials, configs, clock),
+    OpenAiCompatibleProvider(ProviderCatalog.OPENROUTER, client, credentials, configs, clock),
+    OpenAiCompatibleProvider(ProviderCatalog.QWEN, client, credentials, configs, clock),
+    OpenAiCompatibleProvider(ProviderCatalog.CUSTOM_OPENAI, client, credentials, configs, clock),
     OpenAiCompatibleProvider(ProviderCatalog.LOCAL_SERVER, client, credentials, configs, clock),
 )
