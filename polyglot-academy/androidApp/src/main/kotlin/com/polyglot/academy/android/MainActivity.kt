@@ -50,7 +50,7 @@ class MainActivity : ComponentActivity(), PlatformUi {
     override val canPickFiles = true
     override suspend fun pickFile(): PickedFile? {
         val d = CompletableDeferred<Uri?>().also { pickResult = it }
-        pickLauncher.launch(arrayOf("text/plain", "text/markdown", "application/x-subrip", "text/vtt", "application/pdf", "image/*", "audio/*", "video/*", "application/octet-stream"))
+        pickLauncher.launch(arrayOf("text/plain", "text/markdown", "application/json", "application/x-subrip", "text/vtt", "application/pdf", "image/*", "audio/*", "video/*", "application/octet-stream"))
         val uri = d.await() ?: return null
         return withContext(Dispatchers.IO) {
             var name = "file"; var size = 0L
@@ -59,9 +59,11 @@ class MainActivity : ComponentActivity(), PlatformUi {
             }
             val mime = contentResolver.getType(uri) ?: "application/octet-stream"
             val lower = name.lowercase()
-            val textual = mime.startsWith("text/") || lower.endsWith(".srt") || lower.endsWith(".vtt") || lower.endsWith(".txt") || lower.endsWith(".md")
+            val json = mime == "application/json" || lower.endsWith(".json")
+            val textual = json || mime.startsWith("text/") || lower.endsWith(".srt") || lower.endsWith(".vtt") || lower.endsWith(".txt") || lower.endsWith(".md")
             // Read text in a bounded way; binary formats are not loaded into memory.
-            val text = if (textual && size in 1..(5L * 1024 * 1024)) contentResolver.openInputStream(uri)?.use { it.readBytes().decodeToString() } else null
+            val limit = if (json) 50L * 1024 * 1024 else 5L * 1024 * 1024
+            val text = if (textual && size in 1..limit) contentResolver.openInputStream(uri)?.use { it.readBytes().decodeToString() } else null
             PickedFile(name, mime, size, text)
         }
     }

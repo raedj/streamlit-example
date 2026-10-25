@@ -151,3 +151,9 @@ deleteAllProgress {
     DELETE FROM achievement;
     DELETE FROM daily_plan;
 }
+
+allAttempts:
+SELECT * FROM exercise_attempt ORDER BY answered_at;
+
+allSessions:
+SELECT * FROM study_session ORDER BY started_at;

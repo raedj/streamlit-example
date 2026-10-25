@@ -7,7 +7,7 @@
 | K-03 | Medium | Default AI model ids may be outdated by the time of release | Learner can edit the model; verify against vendor catalogues |
 | K-04 | Medium | PDF text, image OCR, audio/video transcription not implemented (reported as "not yet supported") | Paste text or import .txt/.srt/.vtt |
 | K-05 | Medium | No on-device LLM runtime; on-device provider is always unavailable | Use a local OpenAI-compatible server or a cloud provider |
-| K-06 | Medium | Backup "restore" is not implemented (export JSON exists; no import) | — |
+| K-06 | Low | Restore implemented (Settings → Your data). Version 1 exports restore profile, settings, lessons, reviews, vocabulary and mistakes only; reduced v1 phrase/assessment/note records are skipped and counted. A restored reminder is not rescheduled until the learner saves reminder settings again | Fixed 2026-10-25 (partial for v1 files) |
 | K-07 | Low | Built-in content is modest (36–82 words, 5–14 lessons per language); Arabic/French/Spanish have no professional tracks | Content packs can be added without code changes to the engine |
 | K-08 | Low | Pronunciation feedback is recognizer text similarity, not phonetic/tone analysis (disclosed in UI) | — |
 | K-09 | Low | Chinese stroke order, handwriting practice and character components not implemented | — |

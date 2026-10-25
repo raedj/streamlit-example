@@ -15,6 +15,14 @@ cd polyglot-academy
 ./gradlew build -x :ui:desktopTest           # compile all JVM targets, run core/data/uicore tests, verify DB migration
 ```
 
+## Android type-check (partial, works without Google Maven)
+```bash
+curl -o /tmp/android-all.jar https://repo1.maven.org/maven2/org/robolectric/android-all/15-robolectric-12650502/android-all-15-robolectric-12650502.jar
+./gradlew -Ppolyglot.androidTypecheck=/tmp/android-all.jar :android-typecheck:compileKotlin
+```
+Compiles the Android sources against real framework classes and stubbed AndroidX signatures. No APK; see
+`tools/android-typecheck/README.md` for what it does and does not prove.
+
 ## Full build (requires Google Maven)
 ```bash
 echo "sdk.dir=/path/to/Android/sdk" > local.properties
@@ -23,7 +31,7 @@ echo "sdk.dir=/path/to/Android/sdk" > local.properties
 ./gradlew -Ppolyglot.android=true :androidApp:testDebugUnitTest
 # Output: androidApp/build/outputs/apk/debug/androidApp-debug.apk
 ```
-Expect to fix first-compile issues in `androidApp` and `androidMain` sources (never compiled).
+Expect some first-compile issues in `androidApp` and `androidMain` (type-checked against the framework, never built with AGP/AndroidX).
 
 ## Install
 ```bash

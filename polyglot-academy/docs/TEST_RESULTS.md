@@ -1,7 +1,7 @@
 # Test Results
 
-Run on 2026-10-24 in the cloud build container (JDK 21, Gradle 8.14.3, Linux x64) with
-`./gradlew build -x :ui:desktopTest`. **Result: BUILD SUCCESSFUL, 137 tests, 0 failures.**
+Run on 2026-10-25 in the cloud build container (JDK 21, Gradle 8.14.3, Linux x64) with
+`./gradlew build -x :ui:desktopTest`. **Result: BUILD SUCCESSFUL, 141 tests, 0 failures.**
 
 | Module | Test class | Tests | Failures |
 |---|---|---|---|
@@ -17,12 +17,18 @@ Run on 2026-10-24 in the cloud build container (JDK 21, Gradle 8.14.3, Linux x64
 | data | SqlStoreTest (incl. real v1→v2 migration) | 9 | 0 |
 | data | ServicesIntegrationTest (lesson, review, plan, assessment, providers, offline/AI conversation, privacy, writing, materials, delete-all) | 15 | 0 |
 | data | ConversationIntegrityTest | 1 | 0 |
+| data | RestoreTest (v2 round trip of every record type, cloud AI forced off, invalid/newer files rejected without changes, v1 best-effort) | 4 | 0 |
 | uicore | LocalizationTest | 8 | 0 |
 | uicore | ContrastTest | 4 | 0 |
-| **Total** | | **137** | **0** |
+| **Total** | | **141** | **0** |
 
 Also executed: SQLDelight `verifyCommonMainPolyglotDatabaseMigration` (pass); compilation of
 `ui` and `desktopApp` for the JVM (pass, no warnings after fixes).
+
+**Android type-check** (`./gradlew -Ppolyglot.androidTypecheck=<android-all.jar> :android-typecheck:compileKotlin`,
+see `tools/android-typecheck/README.md`): `androidApp` and all `androidMain` sources compile against the
+real Android 15 framework classes plus hand-written AndroidX signature stubs. **Pass, no warnings.**
+This is not an Android build: resources, manifest, AndroidX behaviour and runtime are unverified.
 
 ## Not executed
 - `ui` desktop UI tests (10 tests written): dependency resolution fails — `androidx.collection:collection:1.4.0`, `androidx.annotation:annotation:1.8.0`, `androidx.lifecycle:lifecycle-{common,runtime,viewmodel}:2.8.5`, `androidx.arch.core:core-common:2.2.0` are only on Google Maven.
@@ -38,6 +44,9 @@ Also executed: SQLDelight `verifyCommonMainPolyglotDatabaseMigration` (pass); co
 | D-03 | Medium | Case-only corrections (capitalisation) dropped from AI feedback | Exact-string comparison; `writingFeedbackOfflineAndAi` |
 | D-04 | Medium | Pinyin "èr" split into two syllables | Erhua rule fix; Mandarin vocabulary test |
 | D-05 | Low | Vocabulary candidates tie-broken alphabetically, hiding multi-character words | Prefer longer terms on ties |
+| D-06 | High (crash) | `getSystemService(ActivityManager)` dereferenced without null check (device info) | Safe call; found by Android type-check |
+| D-07 | High (crash) | `NotificationManager` dereferenced without null check (reminder channel) | Safe call; found by Android type-check |
+| D-08 | Medium (crash) | Nullable `AlarmManager` used directly when scheduling reminders | Early return; found by Android type-check |
 | D-06 | Medium (a11y) | Light success colour 4.36:1 on its container | Darkened to #116A31; `ContrastTest` |
 | D-07 | Low | Home showed "self-selected" for test-based levels (flag inverted) | Flag semantics fixed |
 | D-08 | Medium | Lesson player could lose its Continue button after process death | Answer state no longer saveable on its own |

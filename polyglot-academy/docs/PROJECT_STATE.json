@@ -1,26 +1,79 @@
 {
-  "updated": "2026-10-24T20:30:00Z",
+  "updated": "2026-10-25T00:00:00Z",
   "branch": "ccr-e06ebaa4-5wjvye",
   "current_phase": "Phase 29/30 boundary — regression on JVM modules done; Android build blocked",
   "completed_phases": [
-    "0 Environment audit", "1 Requirements", "2 Architecture", "3 Design system",
-    "5 Local data architecture", "9 AI provider abstraction", "11 AI routing", "14 Pedagogical engine",
-    "15 Vocabulary and grammar (content + engine)", "18 Mandarin specialization (logic)",
-    "19 Study planner (logic)", "23 Memory and relaxation (logic)", "24 Assessments and analytics (logic)"
+    "0 Environment audit",
+    "1 Requirements",
+    "2 Architecture",
+    "3 Design system",
+    "5 Local data architecture",
+    "9 AI provider abstraction",
+    "11 AI routing",
+    "14 Pedagogical engine",
+    "15 Vocabulary and grammar (content + engine)",
+    "18 Mandarin specialization (logic)",
+    "19 Study planner (logic)",
+    "23 Memory and relaxation (logic)",
+    "24 Assessments and analytics (logic)"
   ],
   "implemented_not_verified": [
     "4 Android foundation (androidApp module written, not compiled)",
-    "6 Onboarding UI", "7 Navigation and dashboard UI", "8 Tutor UI", "12 Speech infrastructure (Android adapters)",
-    "13 Conversational learning UI", "16 Reading and writing UI", "17 Listening and pronunciation UI",
-    "20 Professional tracks UI", "21 Document import UI (text/subtitles only)", "22 Audio/video (not implemented beyond subtitles)",
-    "25 Immersive learning (2D animated avatars)", "26 Notifications (Android code)", "27 Security review (logic level)"
+    "6 Onboarding UI",
+    "7 Navigation and dashboard UI",
+    "8 Tutor UI",
+    "12 Speech infrastructure (Android adapters)",
+    "13 Conversational learning UI",
+    "16 Reading and writing UI",
+    "17 Listening and pronunciation UI",
+    "20 Professional tracks UI",
+    "21 Document import UI (text/subtitles only)",
+    "22 Audio/video (not implemented beyond subtitles)",
+    "25 Immersive learning (2D animated avatars)",
+    "26 Notifications (Android code)",
+    "27 Security review (logic level)"
   ],
-  "remaining_phases": ["10 Local AI runtime", "28 Performance and accessibility on device", "29 Full regression incl. UI", "30 Build and release", "31 Final audit"],
-  "last_build": {"command": "./gradlew build -x :ui:desktopTest", "result": "SUCCESS"},
-  "last_tests": {"total": 137, "failed": 0, "modules": {"core": 100, "data": 25, "uicore": 12}, "not_run": ["ui:desktopTest (10 UI flow tests)", "android tests"]},
+  "remaining_phases": [
+    "10 Local AI runtime",
+    "28 Performance and accessibility on device",
+    "29 Full regression incl. UI",
+    "30 Build and release",
+    "31 Final audit"
+  ],
+  "last_build": {
+    "command": "./gradlew build -x :ui:desktopTest",
+    "result": "SUCCESS",
+    "android_typecheck": {
+      "command": "./gradlew -Ppolyglot.androidTypecheck=<android-all-15.jar> :android-typecheck:compileKotlin",
+      "result": "SUCCESS",
+      "scope": "Android framework API usage only; no AGP, resources or APK"
+    }
+  },
+  "last_tests": {
+    "total": 141,
+    "failed": 0,
+    "modules": {
+      "core": 100,
+      "data": 29,
+      "uicore": 12
+    },
+    "not_run": [
+      "ui:desktopTest (10 UI flow tests)",
+      "android tests"
+    ]
+  },
   "critical_defects_open": [],
-  "blockers": ["B-01 dl.google.com blocked (AGP/AndroidX/SDK)", "B-02 Compose runtime needs Google-only androidx artifacts", "B-03 no emulator", "B-04 no AI API keys", "B-06 no signing keystore"],
-  "pending_external_credentials": ["AI provider API keys (optional)", "release signing keystore"],
+  "blockers": [
+    "B-01 dl.google.com blocked (AGP/AndroidX/SDK)",
+    "B-02 Compose runtime needs Google-only androidx artifacts",
+    "B-03 no emulator",
+    "B-04 no AI API keys",
+    "B-06 no signing keystore"
+  ],
+  "pending_external_credentials": [
+    "AI provider API keys (optional)",
+    "release signing keystore"
+  ],
   "next_actions": [
     "Allow dl.google.com and maven.google.com in the environment network settings",
     "Create local.properties with sdk.dir (or install Android SDK 35)",
@@ -28,5 +81,9 @@
     "./gradlew -Ppolyglot.android=true :androidApp:assembleDebug and fix compile errors",
     "Add screenshot tests (EN/AR, light/dark) and review visuals",
     "Device test: microphone flow, TTS voices for zh/ar, reminders, TalkBack"
+  ],
+  "recent_changes": [
+    "Backup restore (export format v2, transactional import, cloud AI forced off) — K-06",
+    "Android type-check module; fixed 3 null-dereference crashes (D-06..D-08)"
   ]
 }

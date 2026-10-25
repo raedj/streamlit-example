@@ -80,6 +80,7 @@ import com.polyglot.academy.ui.i18n.LocalStrings
 import com.polyglot.academy.ui.navigation.Route
 import com.polyglot.academy.ui.navigation.SettingsSection
 import kotlinx.coroutines.launch
+import com.polyglot.academy.core.repo.RestoreException
 
 @Composable
 fun SettingsScreen() {
@@ -450,11 +451,32 @@ private fun DataPage() {
             toast(where?.let { s.f(K.SET_EXPORT_SAVED_TO, it) } ?: s.f(K.SET_EXPORT_DONE, "${json.length / 1024 + 1} KB"))
         }
     }, Modifier.fillMaxWidth())
+    SectionHeader(s[K.SET_RESTORE])
+    Text(s[K.SET_RESTORE_SUB], style = MaterialTheme.typography.bodySmall, color = PolyglotTheme.colors.textSecondary)
+    SecondaryButton(s[K.SET_RESTORE], { confirm = K.SET_RESTORE }, Modifier.fillMaxWidth(), enabled = app.platformUi.canPickFiles)
+    if (!app.platformUi.canPickFiles) Text(s[K.SET_RESTORE_UNAVAILABLE], style = MaterialTheme.typography.bodySmall, color = PolyglotTheme.colors.textSecondary)
     SectionHeader(s[K.DELETE])
     SecondaryButton(s[K.SET_DELETE_CONV], { confirm = K.SET_DELETE_CONV }, Modifier.fillMaxWidth())
     SecondaryButton(s[K.SET_DELETE_MATERIALS], { confirm = K.SET_DELETE_MATERIALS }, Modifier.fillMaxWidth())
     SecondaryButton(s[K.SET_DELETE_ALL], { confirm = K.SET_DELETE_ALL }, Modifier.fillMaxWidth())
-    confirm?.let { what ->
+    if (confirm == K.SET_RESTORE) {
+        ConfirmDialog(s[K.SET_RESTORE], s[K.SET_RESTORE_BODY], s[K.SET_RESTORE_CONFIRM], s[K.CANCEL], destructive = true,
+            onConfirm = {
+                confirm = null
+                scope.launch {
+                    val file = app.platformUi.pickFile() ?: return@launch
+                    val text = file.text ?: return@launch toast(s[K.SET_RESTORE_INVALID])
+                    toast(try {
+                        val r = app.services.store.importJson(text)
+                        val n = r.counts.values.sum()
+                        if (r.skipped == 0) s.f(K.SET_RESTORE_DONE, n) else s.f(K.SET_RESTORE_SKIPPED, n, r.skipped)
+                    } catch (e: RestoreException) {
+                        when (e.message) { "newer_version" -> s[K.SET_RESTORE_NEWER]; "file_too_large" -> s[K.SET_RESTORE_TOO_LARGE]; else -> s[K.SET_RESTORE_INVALID] }
+                    })
+                }
+            }, onDismiss = { confirm = null })
+    }
+    confirm?.takeIf { it != K.SET_RESTORE }?.let { what ->
         ConfirmDialog(s[what], if (what == K.SET_DELETE_ALL) s[K.SET_DELETE_ALL_BODY] else s[what], s[K.SET_DELETE_CONFIRM], s[K.CANCEL], destructive = true,
             onConfirm = {
                 confirm = null

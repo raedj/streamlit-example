@@ -49,12 +49,13 @@ class DesktopPlatformUi(private val exportDir: File = File(System.getProperty("u
         dialog.isVisible = true
         val f = dialog.files.firstOrNull() ?: return@withContext null
         val name = f.name.lowercase()
-        val textual = name.endsWith(".txt") || name.endsWith(".md") || name.endsWith(".srt") || name.endsWith(".vtt")
+        val json = name.endsWith(".json")
+        val textual = json || name.endsWith(".txt") || name.endsWith(".md") || name.endsWith(".srt") || name.endsWith(".vtt")
         val mime = when {
-            name.endsWith(".srt") -> "application/x-subrip"; name.endsWith(".vtt") -> "text/vtt"; textual -> "text/plain"
+            json -> "application/json"; name.endsWith(".srt") -> "application/x-subrip"; name.endsWith(".vtt") -> "text/vtt"; textual -> "text/plain"
             name.endsWith(".pdf") -> "application/pdf"; else -> java.nio.file.Files.probeContentType(f.toPath()) ?: "application/octet-stream"
         }
-        PickedFile(f.name, mime, f.length(), if (textual && f.length() < 5 * 1024 * 1024) f.readText() else null)
+        PickedFile(f.name, mime, f.length(), if (textual && f.length() < (if (json) 50L else 5L) * 1024 * 1024) f.readText() else null)
     }
     override suspend fun requestMicrophonePermission() = false
     override suspend fun requestNotificationPermission() = false

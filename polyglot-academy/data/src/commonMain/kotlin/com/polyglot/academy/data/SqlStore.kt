@@ -38,6 +38,10 @@ import com.polyglot.academy.core.model.VocabularyItem
 import com.polyglot.academy.core.planner.DailyPlan
 import com.polyglot.academy.core.repo.ConversationRepository
 import com.polyglot.academy.core.repo.LearningStore
+import com.polyglot.academy.core.repo.RestoreException
+import com.polyglot.academy.core.repo.RestoreReport
+import com.polyglot.academy.core.model.RecallRating
+import kotlinx.serialization.json.JsonPrimitive
 import com.polyglot.academy.core.repo.LibraryRepository
 import com.polyglot.academy.core.repo.PlanRepository
 import com.polyglot.academy.core.repo.ProfileRepository
@@ -66,6 +70,9 @@ import kotlin.coroutines.CoroutineContext
 private const val KEY_PROFILE = "profile"
 private const val KEY_SETTINGS = "settings"
 private const val KEY_PREFERRED_PROVIDER = "preferred_provider"
+const val EXPORT_FORMAT = "polyglot-academy-export"
+const val EXPORT_VERSION = 2
+private const val MAX_IMPORT_CHARS = 50_000_000
 
 internal val storeJson = Json { ignoreUnknownKeys = true; encodeDefaults = true }
 
@@ -186,11 +193,7 @@ class SqlStore(
 
     override fun assessments(language: LanguageCode): Flow<List<AssessmentResult>> =
         pq.assessmentsForLanguage(language.name).asFlow().mapToList(io).map { l ->
-            l.map {
-                AssessmentResult(it.id, LanguageCode.valueOf(it.language), AssessmentKind.valueOf(it.kind), it.taken_at, CefrLevel.valueOf(it.estimated_level),
-                    CefrLevel.valueOf(it.level_low), CefrLevel.valueOf(it.level_high), storeJson.decodeFromString(skillScoreSerializer, it.skill_scores_json),
-                    it.questions_answered.toInt(), it.correct_answers.toInt())
-            }
+            l.map(::mapAssessment)
         }
 
     override suspend fun saveAssessment(result: AssessmentResult) = withContext(io) {
@@ -365,35 +368,116 @@ class SqlStore(
 
     // ---------------- Lifecycle ----------------
     override suspend fun exportJson(includeConversations: Boolean, includeNotes: Boolean): String = withContext(io) {
+        fun <T> arr(items: List<T>, ser: kotlinx.serialization.KSerializer<T>) = JsonArray(items.map { storeJson.encodeToJsonElement(ser, it) })
         val obj: JsonObject = buildJsonObject {
-            put("format", "polyglot-academy-export")
-            put("version", 1)
+            put("format", EXPORT_FORMAT)
+            put("version", EXPORT_VERSION)
+            put("exportedAt", clock.nowMillis())
             put("profile", storeJson.encodeToJsonElement(LearnerProfile.serializer(), currentProfileSync()))
             put("settings", storeJson.encodeToJsonElement(AppSettings.serializer(), currentSettingsSync()))
-            put("lessonProgress", JsonArray(pq.lessonProgressForLanguageAll().map { storeJson.encodeToJsonElement(LessonProgress.serializer(), it) }))
-            put("assessments", JsonArray(LanguageCode.entries.flatMap { l -> pq.assessmentsForLanguage(l.name).executeAsList() }.map {
-                buildJsonObject { put("language", it.language); put("takenAt", it.taken_at); put("estimatedLevel", it.estimated_level); put("low", it.level_low); put("high", it.level_high) }
+            put("lessonProgress", arr(pq.lessonProgressForLanguageAll(), LessonProgress.serializer()))
+            put("assessments", arr(LanguageCode.entries.flatMap { l -> pq.assessmentsForLanguage(l.name).executeAsList() }.map(::mapAssessment), AssessmentResult.serializer()))
+            put("attempts", arr(pq.allAttempts().executeAsList().map(::mapAttempt), ExerciseAttempt.serializer()))
+            put("sessions", arr(pq.allSessions().executeAsList().map(::mapSession), StudySession.serializer()))
+            put("achievements", arr(pq.allAchievements().executeAsList().map { Achievement(it.id, it.unlocked_at) }, Achievement.serializer()))
+            put("reviewStates", arr(LanguageCode.entries.flatMap { l -> rq.statesForLanguage(l.name).executeAsList().map(::mapState) }, ReviewState.serializer()))
+            put("reviewLogs", JsonArray(rq.allLogs().executeAsList().map {
+                buildJsonObject {
+                    put("log", storeJson.encodeToJsonElement(ReviewLog.serializer(), ReviewLog(it.item_id, it.reviewed_at, RecallRating.valueOf(it.rating), it.previous_interval, it.new_interval, it.response_ms)))
+                    put("language", it.language)
+                }
             }))
-            put("reviewStates", JsonArray(LanguageCode.entries.flatMap { l -> rq.statesForLanguage(l.name).executeAsList().map(::mapState) }
-                .map { storeJson.encodeToJsonElement(ReviewState.serializer(), it) }))
-            put("userVocabulary", JsonArray(LanguageCode.entries.flatMap { l -> lq.vocabularyForLanguage(l.name).executeAsList() }
-                .map { storeJson.parseToJsonElement(it.item_json) }))
-            put("savedPhrases", JsonArray(LanguageCode.entries.flatMap { l -> lq.phrasesForLanguage(l.name).executeAsList() }.map {
-                buildJsonObject { put("language", it.language); put("text", it.text); put("meaning", it.meaning) }
-            }))
-            put("mistakes", JsonArray(LanguageCode.entries.flatMap { l -> pq.mistakesForLanguage(l.name).executeAsList().map(::mapMistake) }
-                .map { storeJson.encodeToJsonElement(Mistake.serializer(), it) }))
+            put("userVocabulary", JsonArray(LanguageCode.entries.flatMap { l -> lq.vocabularyForLanguage(l.name).executeAsList() }.map { storeJson.parseToJsonElement(it.item_json) }))
+            put("savedPhrases", arr(LanguageCode.entries.flatMap { l -> lq.phrasesForLanguage(l.name).executeAsList() }.map {
+                SavedPhrase(it.id, LanguageCode.valueOf(it.language), it.text, it.meaning, it.note, it.source_conversation_id, it.created_at)
+            }, SavedPhrase.serializer()))
+            put("mistakes", arr(LanguageCode.entries.flatMap { l -> pq.mistakesForLanguage(l.name).executeAsList().map(::mapMistake) }, Mistake.serializer()))
+            put("bookmarks", arr(lq.allBookmarks().executeAsList().map { Bookmark(it.id, BookmarkKind.valueOf(it.kind), it.reference_id, it.created_at) }, Bookmark.serializer()))
             if (includeConversations) {
-                put("conversations", JsonArray(cq.allConversations().executeAsList().map { storeJson.encodeToJsonElement(Conversation.serializer(), mapConversation(it)) }))
-                put("conversationTurns", JsonArray(cq.allTurns().executeAsList().map { storeJson.encodeToJsonElement(ConversationTurn.serializer(), mapTurn(it)) }))
+                put("conversations", arr(cq.allConversations().executeAsList().map(::mapConversation), Conversation.serializer()))
+                put("conversationTurns", arr(cq.allTurns().executeAsList().map(::mapTurn), ConversationTurn.serializer()))
             }
             if (includeNotes) {
-                put("notes", JsonArray(lq.allNotes().executeAsList().map { buildJsonObject { put("title", it.title); put("body", it.body); put("updatedAt", it.updated_at) } }))
+                put("notes", arr(lq.allNotes().executeAsList().map { Note(it.id, it.language?.let(LanguageCode::valueOf), it.title, it.body, it.created_at, it.updated_at) }, Note.serializer()))
             }
             put("note", "API keys and other secrets are never included in exports.")
         }
         storeJson.encodeToString(JsonObject.serializer(), obj)
     }
+
+    override suspend fun importJson(json: String): RestoreReport = withContext(io) {
+        if (json.length > MAX_IMPORT_CHARS) throw RestoreException("file_too_large")
+        val root = runCatching { storeJson.parseToJsonElement(json) as JsonObject }.getOrNull() ?: throw RestoreException("not_json")
+        if ((root["format"] as? JsonPrimitive)?.content != EXPORT_FORMAT) throw RestoreException("not_an_export")
+        val version = (root["version"] as? JsonPrimitive)?.content?.toIntOrNull() ?: throw RestoreException("no_version")
+        if (version > EXPORT_VERSION) throw RestoreException("newer_version")
+        val counts = linkedMapOf<String, Int>()
+        var skipped = 0
+        fun <T> list(key: String, ser: kotlinx.serialization.KSerializer<T>): List<T> {
+            val a = root[key] as? JsonArray ?: return emptyList()
+            val out = a.mapNotNull { el -> runCatching { storeJson.decodeFromJsonElement(ser, el) }.getOrNull() }
+            skipped += a.size - out.size
+            counts[key] = out.size
+            return out
+        }
+        val profile = root["profile"]?.let { runCatching { storeJson.decodeFromJsonElement(LearnerProfile.serializer(), it) }.getOrNull() }
+        val settings = root["settings"]?.let { runCatching { storeJson.decodeFromJsonElement(AppSettings.serializer(), it) }.getOrNull() }
+        val lessons = list("lessonProgress", LessonProgress.serializer())
+        val reviews = list("reviewStates", ReviewState.serializer())
+        val vocab = list("userVocabulary", VocabularyItem.serializer())
+        val mistakes = list("mistakes", Mistake.serializer())
+        // v1 wrote reduced assessment/phrase/note objects; those are skipped rather than guessed.
+        val assessments = if (version >= 2) list("assessments", AssessmentResult.serializer()) else emptyList()
+        val phrases = if (version >= 2) list("savedPhrases", SavedPhrase.serializer()) else emptyList()
+        val notes = if (version >= 2) list("notes", Note.serializer()) else emptyList()
+        val attempts = list("attempts", ExerciseAttempt.serializer())
+        val sessions = list("sessions", StudySession.serializer())
+        val achievements = list("achievements", Achievement.serializer())
+        val bookmarks = list("bookmarks", Bookmark.serializer())
+        val conversations = list("conversations", Conversation.serializer())
+        val turns = list("conversationTurns", ConversationTurn.serializer())
+        val logs = (root["reviewLogs"] as? JsonArray).orEmpty().mapNotNull { el ->
+            runCatching {
+                val o = el as JsonObject
+                storeJson.decodeFromJsonElement(ReviewLog.serializer(), o.getValue("log")) to (o.getValue("language") as JsonPrimitive).content
+            }.getOrNull()
+        }.also { counts["reviewLogs"] = it.size }
+        db.transaction {
+            pq.deleteAllProgress(); rq.deleteAllReviews(); lq.deleteAllLibrary(); cq.deleteAllConversations(); kv.deleteAllValues()
+            profile?.let { kv.putValue(KEY_PROFILE, storeJson.encodeToString(LearnerProfile.serializer(), it)) }
+            val restoredSettings = (settings ?: AppSettings()).let { it.copy(privacy = it.privacy.copy(cloudAiEnabled = false, consentVersionAccepted = 0)) }
+            kv.putValue(KEY_SETTINGS, storeJson.encodeToString(AppSettings.serializer(), restoredSettings))
+            lessons.forEach { with(it) { pq.upsertLessonProgress(lessonId, language.name, bestScore, completions.toLong(), lastCompletedAtMillis, resumeIndex.toLong()) } }
+            reviews.forEach { with(it) {
+                rq.upsertState(itemId, language.name, phase.name, ease, intervalDays, learningStep.toLong(), repetitions.toLong(), lapses.toLong(), lastReviewedAtMillis, dueAtMillis, totalReviews.toLong(), correctReviews.toLong())
+            } }
+            logs.forEach { (l, lang) -> rq.insertLog(l.itemId, lang, l.reviewedAtMillis, l.rating.name, l.previousIntervalDays, l.newIntervalDays, l.responseMillis) }
+            vocab.forEach { lq.upsertVocabulary(it.id, it.language.name, storeJson.encodeToString(VocabularyItem.serializer(), it), clock.nowMillis()) }
+            mistakes.forEach { with(it) { pq.insertMistake(id, language.name, skill.name, sourceId, prompt, userAnswer, correctAnswer, explanation, severity.name, category, occurredAtMillis, resolved.toLong(), occurrences.toLong()) } }
+            assessments.forEach { with(it) {
+                pq.insertAssessment(id, language.name, kind.name, takenAtMillis, estimatedLevel.name, levelLow.name, levelHigh.name, storeJson.encodeToString(skillScoreSerializer, skillScores), questionsAnswered.toLong(), correctAnswers.toLong())
+            } }
+            attempts.forEach { with(it) { pq.insertAttempt(id, lessonId, exerciseId, language.name, skill.name, difficulty.toLong(), correct.toLong(), score, responseMillis, hintsUsed.toLong(), answeredAtMillis, userAnswer) } }
+            sessions.forEach { with(it) { pq.upsertSession(id, language.name, kind.name, referenceId, startedAtMillis, endedAtMillis, activeSeconds.toLong(), itemsCompleted.toLong(), itemsCorrect.toLong(), completed.toLong()) } }
+            achievements.forEach { pq.insertAchievement(it.id, it.unlockedAtMillis) }
+            phrases.forEach { with(it) { lq.upsertPhrase(id, language.name, text, meaning, note, sourceConversationId, createdAtMillis) } }
+            notes.forEach { with(it) { lq.upsertNote(id, language?.name, title, body, createdAtMillis, updatedAtMillis) } }
+            bookmarks.forEach { lq.insertBookmark(it.id, it.kind.name, it.referenceId, it.createdAtMillis, null) }
+            conversations.forEach { with(it) { cq.insertConversationIfAbsent(id, language.name, tutorId, scenarioId, startedAtMillis, endedAtMillis, summary) } }
+            val convIds = conversations.map { it.id }.toSet()
+            turns.filter { it.conversationId in convIds }.forEach { t -> with(t) {
+                cq.insertTurn(id, conversationId, speaker.name, text, translation, storeJson.encodeToString(correctionList, corrections),
+                    storeJson.encodeToString(stringList, alternatives), storeJson.encodeToString(stringList, vocabularyNotes), createdAtMillis, producedBy, wasSpoken.toLong())
+            } }
+        }
+        RestoreReport(version, counts, skipped)
+    }
+
+    private fun mapAssessment(it: com.polyglot.academy.data.db.Assessment_result) = AssessmentResult(
+        it.id, LanguageCode.valueOf(it.language), AssessmentKind.valueOf(it.kind), it.taken_at, CefrLevel.valueOf(it.estimated_level),
+        CefrLevel.valueOf(it.level_low), CefrLevel.valueOf(it.level_high), storeJson.decodeFromString(skillScoreSerializer, it.skill_scores_json),
+        it.questions_answered.toInt(), it.correct_answers.toInt(),
+    )
 
     private fun currentProfileSync() = kv.getValue(KEY_PROFILE).executeAsOneOrNull()?.let { decodeOr(it, LearnerProfile()) } ?: LearnerProfile()
     private fun currentSettingsSync() = kv.getValue(KEY_SETTINGS).executeAsOneOrNull()?.let { decodeOr(it, AppSettings()) } ?: AppSettings()

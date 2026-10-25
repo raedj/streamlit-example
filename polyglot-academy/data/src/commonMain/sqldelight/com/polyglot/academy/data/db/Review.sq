@@ -45,3 +45,6 @@ deleteAllReviews {
     DELETE FROM review_state;
     DELETE FROM review_log;
 }
+
+allLogs:
+SELECT * FROM review_log ORDER BY id;

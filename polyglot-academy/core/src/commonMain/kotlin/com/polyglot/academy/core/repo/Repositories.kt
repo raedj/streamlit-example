@@ -116,8 +116,19 @@ interface SecretStore {
 }
 
 /** Erases all user data across stores. Implemented by the data layer. */
+/** Result of restoring an export. */
+data class RestoreReport(val formatVersion: Int, val counts: Map<String, Int>, val skipped: Int)
+
+class RestoreException(message: String) : Exception(message)
+
 interface DataLifecycle {
     suspend fun exportJson(includeConversations: Boolean, includeNotes: Boolean): String
+    /**
+     * Replaces all local learning data with the content of an export (format v1 or v2). Runs in a
+     * single transaction: on any error nothing is changed. Cloud AI is switched off afterwards so
+     * the learner re-confirms consent on this device. Never contains secrets.
+     */
+    suspend fun importJson(json: String): RestoreReport
     suspend fun deleteAllData()
     suspend fun deleteConversations()
     suspend fun deleteImportedMaterials()

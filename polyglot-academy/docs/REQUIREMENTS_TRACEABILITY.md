@@ -32,7 +32,7 @@ Status key: **V** implemented and verified by automated tests · **I** implement
 | PR-18 Professional tracks | English curriculum tracks | CurriculumIntegrityTest | V (content) / I (UI) |
 | PR-19 Own material | `MaterialService`, Library | ServicesIntegrationTest | P (text/subtitles only) |
 | PR-20 Relaxation | `relax/Relaxation`, RelaxScreen | MiscCoreTest | V (logic) / I (UI) |
-| PR-23 Export/delete | `SqlStore`, `AppServices.deleteEverything` | SqlStoreTest, ServicesIntegrationTest | V |
+| PR-23 Export/restore/delete | `SqlStore.exportJson/importJson`, `AppServices.deleteEverything`, Settings → Your data | SqlStoreTest, RestoreTest, ServicesIntegrationTest | V (logic); UI not run |
 | PR-24 Reminders | `Reminders.kt` (Android) | — | B |
 | Local models | `localai/LocalModels`, LocalModelsPage | MiscCoreTest | P (compatibility only; no runtime) |
 | Visual verification (§4.14) | — | — | B |

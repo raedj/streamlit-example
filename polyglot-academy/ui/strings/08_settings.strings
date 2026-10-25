@@ -84,6 +84,16 @@ SET_EXPORT_CONV ¦ Include conversations ¦ تضمين المحادثات
 SET_EXPORT_NOTES ¦ Include notes ¦ تضمين الملاحظات
 SET_EXPORT_DONE ¦ Export ready ({0}) ¦ التصدير جاهز ({0})
 SET_EXPORT_SAVED_TO ¦ Saved to {0} ¦ حُفظ في {0}
+SET_RESTORE ¦ Restore from an export ¦ الاستعادة من ملف تصدير
+SET_RESTORE_SUB ¦ Replaces the data on this device with a file exported from Polyglot Academy. Cloud AI is switched off afterwards so you can confirm consent again. ¦ يستبدل البيانات على هذا الجهاز بملف صُدِّر من Polyglot Academy. يُوقَف الذكاء الاصطناعي السحابي بعدها لتؤكّد موافقتك من جديد.
+SET_RESTORE_BODY ¦ Restoring replaces your current profile, progress, reviews, vocabulary, notes and conversations on this device. Saved API keys are not affected. ¦ تستبدل الاستعادة ملفك الشخصي وتقدّمك ومراجعاتك ومفرداتك وملاحظاتك ومحادثاتك الحالية على هذا الجهاز. لا تتأثر مفاتيح API المحفوظة.
+SET_RESTORE_CONFIRM ¦ Choose file and restore ¦ اختيار الملف والاستعادة
+SET_RESTORE_DONE ¦ Restored {0} records ¦ استُعيد {0} من السجلات
+SET_RESTORE_SKIPPED ¦ Restored {0} records; {1} could not be read and were skipped ¦ استُعيد {0} من السجلات، وتُخطّي {1} تعذّرت قراءته
+SET_RESTORE_INVALID ¦ This file isn't a Polyglot Academy export ¦ هذا الملف ليس ملف تصدير من Polyglot Academy
+SET_RESTORE_NEWER ¦ This export comes from a newer version of the app. Update the app and try again. ¦ هذا الملف من إصدار أحدث من التطبيق. حدّث التطبيق ثم أعد المحاولة.
+SET_RESTORE_TOO_LARGE ¦ This file is too large to restore ¦ هذا الملف أكبر من أن يُستعاد
+SET_RESTORE_UNAVAILABLE ¦ Choosing files isn't available on this device ¦ اختيار الملفات غير متاح على هذا الجهاز
 SET_DELETE_CONV ¦ Delete all conversations ¦ حذف كل المحادثات
 SET_DELETE_MATERIALS ¦ Delete all imported material ¦ حذف كل المواد المستوردة
 SET_DELETE_ALL ¦ Delete all my data ¦ حذف كل بياناتي
