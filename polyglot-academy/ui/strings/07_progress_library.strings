@@ -102,7 +102,7 @@ MATERIAL_PDF_ENCRYPTED ¦ This PDF is password-protected, so its text can't be r
 MATERIAL_PDF_NO_TEXT ¦ No text was found in this PDF. It may be a scanned image, and reading scanned pages (OCR) isn't supported yet. You can paste the text instead. ¦ لم يُعثر على نص في ملف PDF هذا. قد يكون صورة ممسوحة ضوئيًا، وقراءة الصفحات الممسوحة (OCR) غير مدعومة بعد. يمكنك لصق النص بدلًا من ذلك.
 MATERIAL_PDF_INVALID ¦ This file couldn't be read as a PDF. It may be damaged. ¦ تعذّرت قراءة هذا الملف بصيغة PDF، وقد يكون تالفًا.
 MATERIAL_NO_TEXT ¦ No text was found in this file. ¦ لم يُعثر على نص في هذا الملف.
-MATERIAL_PDF_CHECK ¦ Text was extracted from the PDF on this device. Columns, tables and right-to-left punctuation can come out in the wrong order, so check it before studying. ¦ استُخرج النص من ملف PDF على هذا الجهاز. قد تظهر الأعمدة والجداول وعلامات الترقيم في النصوص من اليمين إلى اليسار بترتيب خاطئ، لذا راجعه قبل الدراسة.
+MATERIAL_PDF_CHECK ¦ Text was extracted from the PDF on this device. Columns and tables can come out in the wrong order, so check it before studying. ¦ استُخرج النص من ملف PDF على هذا الجهاز. قد تظهر الأعمدة والجداول بترتيب خاطئ، لذا راجعه قبل الدراسة.
 MATERIAL_TOO_LARGE ¦ This file is larger than the {0} MB limit. ¦ هذا الملف أكبر من الحد المسموح ({0} ميغابايت).
 MATERIAL_UNSUPPORTED_TYPE ¦ This file type isn't supported. ¦ نوع الملف هذا غير مدعوم.
 MATERIAL_EMPTY_FILE ¦ The file is empty. ¦ الملف فارغ.

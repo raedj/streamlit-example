@@ -654,7 +654,7 @@ internal object EnglishStrings {
         K.MATERIAL_PDF_NO_TEXT to "No text was found in this PDF. It may be a scanned image, and reading scanned pages (OCR) isn't supported yet. You can paste the text instead.",
         K.MATERIAL_PDF_INVALID to "This file couldn't be read as a PDF. It may be damaged.",
         K.MATERIAL_NO_TEXT to "No text was found in this file.",
-        K.MATERIAL_PDF_CHECK to "Text was extracted from the PDF on this device. Columns, tables and right-to-left punctuation can come out in the wrong order, so check it before studying.",
+        K.MATERIAL_PDF_CHECK to "Text was extracted from the PDF on this device. Columns and tables can come out in the wrong order, so check it before studying.",
         K.MATERIAL_TOO_LARGE to "This file is larger than the {0} MB limit.",
         K.MATERIAL_UNSUPPORTED_TYPE to "This file type isn't supported.",
         K.MATERIAL_EMPTY_FILE to "The file is empty.",

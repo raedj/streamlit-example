@@ -27,8 +27,14 @@ class PdfTextTest {
         assertTrue("Hello, my name is Laila. I study Spanish every morning." in t, t)
         assertTrue("Quisiera un café con leche, por favor." in t, t)
         assertTrue("我要一杯茶。谢谢！" in t, t)
-        // Stored in visual order by the writer; words come back in reading order.
-        assertTrue("مرحبًا اسمي عمر أنا طالب في مدرسة جديدة" in t, t)
+        // The writer stores Arabic in visual order and places punctuation with a second font; glyph
+        // positions give the reading order back, punctuation and the tanween (ActualText) included.
+        assertTrue("مرحبًا، اسمي عمر. أنا طالب في مدرسة جديدة." in t, t)
+    }
+
+    @Test fun arabicLineWithNumbersLatinAndBrackets() {
+        val t = text(fixture("libreoffice_arabic_mixed.pdf")).text
+        assertEquals("ذهبتُ إلى السوق يوم 12 مارس مع صديقي (أحمد) واشتريت كتاب Python.\nهل تحب القهوة؟ نعم، أحبها كثيرًا!", t)
     }
 
     @Test fun objectStreamsCidFontsAndKerningSpaces() {
@@ -58,7 +64,7 @@ class PdfTextTest {
             .obj(1, "<< /Type /Catalog /Pages 2 0 R >>")
             .obj(2, "<< /Type /Pages /Kids [3 0 R] /Count 1 >>")
             .obj(3, "<< /Type /Page /Parent 2 0 R /Contents 4 0 R /Resources << /XObject << /X1 6 0 R >> /Font << /F1 5 0 R >> >> >>")
-            .stream(4, "q /X1 Do Q BT /F1 10 Tf (Fin) Tj ET")
+            .stream(4, "q /X1 Do Q BT /F1 10 Tf 0 -20 Td (Fin) Tj ET")
             .obj(5, "<< /Type /Font /Subtype /Type1 /Encoding << /BaseEncoding /WinAnsiEncoding /Differences [65 /eacute /uni0645] >> >>")
             .stream(6, "BT /F1 10 Tf (Caf) Tj (A) Tj (B) Tj ET", extraDict = "/Type /XObject /Subtype /Form /Resources << /Font << /F1 5 0 R >> >>")
             .build()
@@ -83,6 +89,12 @@ class PdfTextTest {
         for (cut in listOf(10, 500, bytes.size / 3, bytes.size / 2, bytes.size - 100)) {
             PdfTextExtractor.extract(bytes.copyOf(cut))
         }
+    }
+
+    @Test fun visualOrderConversionHandlesMixedLines() {
+        assertEquals("مرحبا Laila 2024", ArabicForms.visualToLogical("Laila 2024 ابحرم"))
+        assertEquals("Hello مرحبا world", ArabicForms.visualToLogical("Hello ابحرم world"))
+        assertEquals("(نص)", ArabicForms.visualToLogical(")صن("))
     }
 
     @Test fun glyphNamesAndArabicPresentationForms() {

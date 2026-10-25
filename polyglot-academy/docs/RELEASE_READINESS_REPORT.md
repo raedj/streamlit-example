@@ -4,7 +4,7 @@
 
 | Area | State |
 |---|---|
-| Learning engine, content, AI routing, privacy, data | Implemented; 151 automated tests pass (incl. backup restore) |
+| Learning engine, content, AI routing, privacy, data | Implemented; 153 automated tests pass (incl. backup restore) |
 | UI (≈40 screens, EN/AR) | Implemented; compiles for JVM; not executed, not visually verified |
 | Android integration (speech, TTS, Keystore, reminders, files) | Written; type-checked against the Android 15 framework (3 null-safety crashes fixed); never built with AGP |
 | Build artifact | None (APK/AAB not produced) |

@@ -50,10 +50,10 @@
     }
   },
   "last_tests": {
-    "total": 151,
+    "total": 153,
     "failed": 0,
     "modules": {
-      "core": 108,
+      "core": 110,
       "data": 31,
       "uicore": 12
     },
@@ -88,6 +88,7 @@
     "Spanish/French/Arabic: +24 words, +3 lessons (home & weather, health, work), +2 role-plays and a 'for work' track each; track integrity validated — K-07 partly addressed",
     "Restore re-schedules the restored reminder (AppServices.restore)",
     "Mandarin 'for work' track: 10 words, polite-request grammar, lesson, client role-play",
-    "On-device PDF text extraction (K-04 partly addressed); scanned/encrypted PDFs reported with specific messages"
+    "On-device PDF text extraction (K-04 partly addressed); scanned/encrypted PDFs reported with specific messages",
+    "PDF: glyph-position layout for Arabic lines (correct punctuation, numbers, Latin runs, ActualText), standard-14 font widths"
   ]
 }
