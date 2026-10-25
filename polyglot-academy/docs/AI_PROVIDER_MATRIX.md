@@ -25,3 +25,18 @@ Notes
 
 ## Vision (text recognition)
 Photos and scanned PDF pages can be read by vision-capable providers (OpenAI, Gemini, Anthropic) on explicit request. Images are sent as `image_url` data URLs (OpenAI), `inlineData` parts (Gemini) or base64 `image` blocks (Anthropic); request shapes are covered by `AdapterTest.imagesUseEachVendorsDocumentedShape`. Not verified against live endpoints (no keys in this environment).
+
+## Voice services (optional, learner's own keys)
+| Service | Used for | Endpoint / auth | Data | Verified |
+|---|---|---|---|---|
+| Azure AI Speech — pronunciation assessment | Scores per word and phoneme, fluency, completeness, prosody (English) | `POST https://{region}.stt.speech.microsoft.com/speech/recognition/conversation/cognitiveservices/v1?language=…&format=detailed`, `Ocp-Apim-Subscription-Key`, `Pronunciation-Assessment` header (base64 JSON: reference text, HundredMark, Phoneme granularity, miscue); key check via `…/sts/v1.0/issueToken` | 16 kHz mono WAV, ≤ 20 s (VOICE_AUDIO) | Mock HTTP tests only |
+| OpenAI Realtime | Live voice calls (speech-to-speech, server voice detection, barge-in) | `wss://api.openai.com/v1/realtime?model=gpt-realtime`, `Authorization: Bearer` (the OpenAI key from AI providers); `session.update` with 24 kHz PCM in/out, input transcription | streamed PCM (VOICE_AUDIO) + transcripts | Fake WebSocket tests only; parser accepts current and beta event names |
+
+Locales for pronunciation: en-US/en-GB/en-AU, es-ES/es-MX, fr-FR/fr-CA, zh-CN, ar-SA/ar-EG
+(the course variant is used when supported). Check Microsoft's current language list before
+release. Realtime model ids and voices are editable in Settings → Voice services.
+
+## Story writing
+AI-written graded stories use the normal chat providers (STRUCTURED_FEEDBACK capability, JSON
+reply). The reply is validated (sentences, translations, glossary terms present in the text,
+well-formed questions) and rejected if incomplete.

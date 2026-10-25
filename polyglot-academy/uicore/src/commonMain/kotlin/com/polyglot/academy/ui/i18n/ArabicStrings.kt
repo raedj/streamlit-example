@@ -1209,7 +1209,7 @@ internal object ArabicStrings {
         K.SYNC_KEEP_THIS to "احتفظ بهذا الجهاز",
         K.SYNC_USE_SERVER to "استخدم النسخة المخزّنة",
         K.SYNC_ERR_SETUP to "أدخل العنوان واسم المستخدم وكلمة المرور وعبارة المرور أولًا.",
-        K.SYNC_ERR_INSECURE to "استخدم عنوانًا يبدأ بـ https://، فـhttp:// مسموح على شبكتك المحلية فقط.",
+        K.SYNC_ERR_INSECURE to "استخدم عنوانًا يبدأ بـ https://.",
         K.SYNC_ERR_AUTH to "رفض الخادم اسم المستخدم أو كلمة المرور.",
         K.SYNC_ERR_PASSPHRASE to "عبارة المرور لا تطابق المستخدمة على جهازك الآخر.",
         K.SYNC_ERR_NOT_SYNC to "الملف على الخادم ليس ملف مزامنة من هذا التطبيق.",

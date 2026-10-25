@@ -162,11 +162,13 @@ class WebDavRemote(
         const val FOLDER = "polyglot-academy"
         const val FILE = "sync.json"
 
-        /** HTTPS everywhere; plain HTTP only for this device or the local network. */
+        /**
+         * HTTPS everywhere; plain HTTP only to this device (localhost, or 10.0.2.2 from the Android
+         * emulator), matching the Android network security config.
+         */
         fun isAllowed(url: Url): Boolean = when (url.protocol.name) {
             "https" -> true
-            "http" -> url.host == "localhost" || url.host.startsWith("127.") || url.host.startsWith("10.") || url.host.startsWith("192.168.") ||
-                Regex("^172\\.(1[6-9]|2[0-9]|3[01])\\.").containsMatchIn(url.host) || url.host.endsWith(".local")
+            "http" -> url.host == "localhost" || url.host.startsWith("127.") || url.host == "10.0.2.2"
             else -> false
         }
     }

@@ -50,11 +50,11 @@
     }
   },
   "last_tests": {
-    "total": 187,
+    "total": 212,
     "failed": 0,
     "modules": {
-      "core": 137,
-      "data": 38,
+      "core": 157,
+      "data": 43,
       "uicore": 12
     },
     "not_run": [
@@ -80,9 +80,16 @@
     "./gradlew :ui:desktopTest and fix failures",
     "./gradlew -Ppolyglot.android=true :androidApp:assembleDebug and fix compile errors",
     "Add screenshot tests (EN/AR, light/dark) and review visuals",
-    "Device test: microphone flow, TTS voices for zh/ar, reminders, TalkBack"
+    "Device test: microphone flow, TTS voices for zh/ar, reminders, TalkBack",
+    "Verify Azure pronunciation scoring, OpenAI Realtime calls and WebDAV sync with real accounts on a device (K-17..K-19)"
   ],
   "recent_changes": [
+    "Daily XP loop: XP derived from stored activity, daily XP goal, three daily quests, levels, streak freezes (earned every 7 days, max 2)",
+    "Graded stories: 15 original stories (A1/A2/B1 x 5 languages) with tap-to-translate words and save-to-review; AI-written stories by interest, validated, stored and backed up",
+    "Detailed pronunciation scoring via Azure AI Speech (learner's key): per-word and per-phoneme scores, weak sounds to error log",
+    "Live voice calls via OpenAI Realtime WebSocket with barge-in, transcript corrections (coach format) and error log; Android/desktop PCM capture and playback",
+    "Animated avatars: blinking, breathing, nods, five expressions, loudness-driven mouth in live calls",
+    "End-to-end encrypted sync via the learner's WebDAV server (PBKDF2 + AES-256-GCM), conflict choice, device settings kept per device",
     "AI language-coach protocol: first-session welcome and track choice (fluency, business, travel, exam prep with language-specific exams), adaptive warm-up from review items, micro-learning and role-play rules, Socratic four-part corrections (error, fix, reason, register + hint for minor errors), hidden error log grouped by error type and fed back for re-tests, frustration handling, ordered encouragement titles; 9 new tests",
     "Backup restore (export format v2, transactional import, cloud AI forced off) — K-06",
     "Android type-check module; fixed 3 null-dereference crashes (D-06..D-08)",

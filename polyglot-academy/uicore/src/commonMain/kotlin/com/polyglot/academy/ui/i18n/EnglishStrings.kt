@@ -1209,7 +1209,7 @@ internal object EnglishStrings {
         K.SYNC_KEEP_THIS to "Keep this device",
         K.SYNC_USE_SERVER to "Use the server copy",
         K.SYNC_ERR_SETUP to "Enter the address, user name, password and passphrase first.",
-        K.SYNC_ERR_INSECURE to "Use an https:// address (http:// is only allowed on your local network).",
+        K.SYNC_ERR_INSECURE to "Use an https:// address.",
         K.SYNC_ERR_AUTH to "The server rejected the user name or password.",
         K.SYNC_ERR_PASSPHRASE to "The passphrase does not match the one used on your other device.",
         K.SYNC_ERR_NOT_SYNC to "The file on the server is not a sync file from this app.",

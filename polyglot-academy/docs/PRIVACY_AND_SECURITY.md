@@ -8,14 +8,28 @@ in a private SharedPreferences file.
 
 ## What may leave the device
 Only text in categories the learner allowed, only to the provider they configured, only when
-cloud AI is on and the current consent version is accepted. Raw audio never leaves via this app
-(the device's speech recognizer may process audio according to its own settings; the app
-reports whether recognition is on-device when Android exposes it).
+cloud AI is on and the current consent version is accepted. The device's speech recognizer may
+process audio according to its own settings; the app reports whether recognition is on-device
+when Android exposes it.
+
+Raw microphone audio leaves the device only for two optional features, and only when cloud AI is
+on **and** the "Voice recordings" category (off by default) is allowed:
+- **Detailed pronunciation scoring**: one recording (at most 20 s) per check, sent to the
+  learner's own Azure AI Speech resource with the reference sentence. Not stored by the app.
+- **Live voice calls**: audio streams to OpenAI Realtime during the call; only the text
+  transcript is stored. Each learner sentence is also checked as text (CONVERSATION_TEXT).
+
+**Sync** (optional) uploads one file to the learner's own WebDAV server. It is encrypted on the
+device (PBKDF2-HMAC-SHA256, 210,000 iterations → AES-256-GCM, fresh salt and nonce per upload)
+with a passphrase that never leaves the device; the server sees only ciphertext. Device settings
+(privacy choices, theme, voice services) and all keys stay on each device.
+
+**AI-written stories** send only the chosen topic, level and a few known words (LESSON_CONTENT).
 
 ## Controls
 Cloud AI master switch (off by default) + consent dialog; per-category switches (sensitive
 categories off by default); per-item consent for imported material; local-network AI switch;
-cloud fallback switch (off by default); backup opt-in; export (no secrets); delete
+cloud fallback switch (off by default); "Voice recordings" category (off by default) for pronunciation scoring and live calls; sync connection with disconnect; backup opt-in; export (no secrets); delete
 conversations / imported material / everything (incl. keys and reminder).
 
 ## Security measures
@@ -31,13 +45,18 @@ conversations / imported material / everything (incl. keys and reminder).
   so a file from another device cannot silently re-enable cloud processing.
 - Permissions requested just in time (microphone, notifications); file access via the system picker (no storage permission).
 - No analytics or crash reporting SDKs; all metrics stay local.
+- Speech-service key, WebDAV password and sync passphrase are kept in the secure store like API keys, never exported and removed by "delete everything" and "disconnect".
+- Azure region and realtime model ids are validated (letters/digits only) before they are put into a URL; WebDAV requires HTTPS (plain HTTP only to localhost, as in the network security config).
+- Sync downloads keep the device's own settings, so a synced file cannot switch on cloud AI or voice upload on another device.
 
 ## Privacy tests (automated, passing)
 Cloud off by default; sensitive categories blocked; per-item consent; outdated consent blocks;
 router never uses denied providers; no silent cloud fallback; offline excludes network
 providers; no request is made when cloud is disabled (integration test); errors don't leak keys;
 redaction; export excludes conversations/notes unless chosen and never contains keys; delete-all
-removes data, keys and reminder.
+removes data, keys and reminder; pronunciation scoring and live calls refuse to send audio without
+the voice category; the speech key is never exported; sync file is ciphertext only, wrong
+passphrase and tampering are rejected, device settings survive a download.
 
 ## Not yet done
 Penetration testing; review of Android Keystore behaviour on devices without StrongBox;

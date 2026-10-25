@@ -246,7 +246,7 @@ SYNC_CONFLICT_BODY ¦ This device and the server copy both changed since the las
 SYNC_KEEP_THIS ¦ Keep this device ¦ احتفظ بهذا الجهاز
 SYNC_USE_SERVER ¦ Use the server copy ¦ استخدم النسخة المخزّنة
 SYNC_ERR_SETUP ¦ Enter the address, user name, password and passphrase first. ¦ أدخل العنوان واسم المستخدم وكلمة المرور وعبارة المرور أولًا.
-SYNC_ERR_INSECURE ¦ Use an https:// address (http:// is only allowed on your local network). ¦ استخدم عنوانًا يبدأ بـ https://، فـhttp:// مسموح على شبكتك المحلية فقط.
+SYNC_ERR_INSECURE ¦ Use an https:// address. ¦ استخدم عنوانًا يبدأ بـ https://.
 SYNC_ERR_AUTH ¦ The server rejected the user name or password. ¦ رفض الخادم اسم المستخدم أو كلمة المرور.
 SYNC_ERR_PASSPHRASE ¦ The passphrase does not match the one used on your other device. ¦ عبارة المرور لا تطابق المستخدمة على جهازك الآخر.
 SYNC_ERR_NOT_SYNC ¦ The file on the server is not a sync file from this app. ¦ الملف على الخادم ليس ملف مزامنة من هذا التطبيق.

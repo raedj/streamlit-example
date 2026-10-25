@@ -1,14 +1,14 @@
 # Test Results
 
 Run on 2026-10-25 in the cloud build container (JDK 21, Gradle 8.14.3, Linux x64) with
-`./gradlew build -x :ui:desktopTest`. **Result: BUILD SUCCESSFUL, 187 tests, 0 failures.**
+`./gradlew build -x :ui:desktopTest`. **Result: BUILD SUCCESSFUL, 212 tests, 0 failures.**
 
 | Module | Test class | Tests | Failures |
 |---|---|---|---|
 | core | AdapterTest (OpenAI, Azure, Gemini, Anthropic, DeepSeek, local; image parts per vendor; error classification; timeouts; no key leakage) | 11 | 0 |
 | core | AiTest (privacy policy, router, retries, fallback rules, redaction) | 18 | 0 |
 | core | AssessmentPlannerAnalyticsTest | 13 | 0 |
-| core | CurriculumIntegrityTest (all 5 curricula, incl. track integrity) | 7 | 0 |
+| core | CurriculumIntegrityTest (all 5 curricula, incl. track integrity and story glossaries) | 8 | 0 |
 | core | LearningEngineTest | 13 | 0 |
 | core | MiscCoreTest (pinyin, captions, extraction, import policy, breathing, device/local models) | 12 | 0 |
 | core | PdfTextTest (reportlab and LibreOffice fixtures in Latin, Chinese and Arabic; object streams; CID fonts; Differences; form XObjects; encrypted/scanned/non-PDF; truncated files; Arabic with numbers, Latin and brackets; mixed-direction lines) | 9 | 0 |
@@ -18,16 +18,22 @@ Run on 2026-10-25 in the cloud build container (JDK 21, Gradle 8.14.3, Linux x64
 | core | VisemesTest (mouth shapes from spelling; TTS offsets to words) | 2 | 0 |
 | core | FreeTalkTest (free-topic prompt, correction instruction, topic sanitising) | 2 | 0 |
 | core | CoachTest (coach protocol in the prompt, track question and exam names, warm-up/error log/frustration, four-part correction parsing, frustration detection, error-log grouping, warm-up item choice, ordered titles) | 8 | 0 |
+| core | PinyinPunctuationTest | 1 | 0 |
+| core | DailyLoopTest (XP from stored activity, stable daily quests, streak freezes used only when enough, earned every 7 days up to 2, levels) | 5 | 0 |
+| core | StoriesTest (graded stories at A1/A2/B1 in all languages; phrase tapping; French elision, Arabic prefixes, Mandarin segmentation; AI story validation) | 4 | 0 |
+| core | VoiceServicesTest (WAV encoding; Azure detailed response down to phonemes; request headers and reference text via mock HTTP; region/locale rules; OpenAI Realtime event parsing, current and beta names) | 5 | 0 |
+| core | AvatarMotionTest (expression from the last learner turn; subtle motion; loudness-driven mouth) | 2 | 0 |
+| core | SyncTest (AES-GCM envelope round trip; wrong passphrase and tampering rejected; fingerprint; HTTPS/LAN rule; WebDAV GET/MKCOL/PUT, If-Match conflicts, 401 via mock HTTP) | 4 | 0 |
 | core | SchedulerTest | 9 | 0 |
 | core | TextAndAnswersTest | 9 | 0 |
 | core | TutorAndVoiceTest | 10 | 0 |
 | data | SqlStoreTest (incl. real v1→v2 and v2→v3 migrations) | 10 | 0 |
-| data | ServicesIntegrationTest (lesson, review, plan, assessment, providers, offline/AI conversation, privacy, writing, materials, delete-all, restore re-applies reminder, PDF import, AI and offline speaking missions, vision OCR with privacy gate, chosen-topic AI conversation with corrections, free talk offline notice, coach asks for and saves the track, error log, warm-up once per session) | 23 | 0 |
+| data | ServicesIntegrationTest (lesson, review, plan, assessment, providers, offline/AI conversation, privacy, writing, materials, delete-all, restore re-applies reminder, PDF import, AI and offline speaking missions, vision OCR with privacy gate, chosen-topic AI conversation with corrections, free talk offline notice, coach asks for and saves the track, error log, warm-up once per session, daily loop stores a streak freeze, AI story stored/backed up and words saved, pronunciation scoring gated by key and voice consent, live voice call with fake WebSocket/microphone/speaker and transcript corrections, two-device encrypted sync incl. conflict) | 28 | 0 |
 | data | ConversationIntegrityTest | 1 | 0 |
 | data | RestoreTest (v2 round trip of every record type, cloud AI forced off, invalid/newer files rejected without changes, v1 best-effort) | 4 | 0 |
 | uicore | LocalizationTest | 8 | 0 |
 | uicore | ContrastTest | 4 | 0 |
-| **Total** | | **187** | **0** |
+| **Total** | | **212** | **0** |
 
 Also executed: SQLDelight `verifyCommonMainPolyglotDatabaseMigration` (pass); compilation of
 `ui` and `desktopApp` for the JVM (pass, no warnings after fixes).

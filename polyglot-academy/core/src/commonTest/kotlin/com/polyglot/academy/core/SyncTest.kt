@@ -42,10 +42,10 @@ class SyncTest {
         assertTrue(SyncEnvelope.fingerprint(a) != SyncEnvelope.fingerprint("""{"exportedAt":1,"attempts":[1,2,3]}"""))
     }
 
-    @Test fun onlyHttpsOrLocalNetworkServersAreAccepted() {
+    @Test fun onlyHttpsServersAreAccepted() {
         assertTrue(WebDavRemote.isAllowed(Url("https://cloud.example.com/remote.php/dav/files/me")))
-        assertTrue(WebDavRemote.isAllowed(Url("http://192.168.1.20:8080/dav")))
-        assertTrue(WebDavRemote.isAllowed(Url("http://nas.local/dav")))
+        assertTrue(WebDavRemote.isAllowed(Url("http://localhost:8080/dav")))
+        assertFalse(WebDavRemote.isAllowed(Url("http://192.168.1.20:8080/dav")), "Android blocks cleartext to the LAN")
         assertFalse(WebDavRemote.isAllowed(Url("http://cloud.example.com/dav")))
         assertFalse(WebDavRemote.isAllowed(Url("ftp://192.168.1.2/")))
         assertFailsWith<SyncError.InsecureUrl> { WebDavRemote(HttpClient(MockEngine { respond("") }), "http://example.com/dav", "u", "p") }
