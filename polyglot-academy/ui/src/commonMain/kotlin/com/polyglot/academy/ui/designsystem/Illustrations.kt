@@ -12,6 +12,15 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.graphics.drawscope.rotate
+import androidx.compose.ui.graphics.drawscope.translate
+import com.polyglot.academy.core.tutor.AvatarMood
+import com.polyglot.academy.core.tutor.AvatarMotion
+import kotlinx.coroutines.delay
+import kotlin.random.Random
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.CornerRadius
 import androidx.compose.ui.geometry.Offset
@@ -61,9 +70,11 @@ private fun DrawScope.drawMouth(shape: MouthShape, color: Color, w: Float, h: Fl
 }
 
 /**
- * Original vector tutor portrait (implementation level 2: animated 2D avatar). Drawn from an
- * [AvatarSpec] so every tutor has a distinct look without bitmap assets. Animations stop when
- * reduced motion is enabled; the state is also conveyed by text elsewhere in the UI.
+ * Original vector tutor portrait (animated 2D avatar). Drawn from an [AvatarSpec] so every tutor
+ * has a distinct look without bitmap assets. It blinks, breathes, nods while listening, shows an
+ * expression ([mood]) and moves its mouth from the spoken word ([speakingWord]) or from the
+ * loudness of streamed audio ([mouthLevel]). All motion stops when reduced motion is enabled; the
+ * state is also conveyed by text elsewhere in the UI.
  */
 @Composable
 fun TutorAvatar(
@@ -71,17 +82,36 @@ fun TutorAvatar(
     /** The word the speech engine reports it is saying; drives approximate mouth shapes. */
     speakingWord: String? = null,
     language: LanguageCode = LanguageCode.ENGLISH,
+    mood: AvatarMood = AvatarMood.NEUTRAL,
+    /** Loudness (0..1) of the audio being played, e.g. in a live call. */
+    mouthLevel: Float? = null,
+    /** Idle breathing and blinking; off by default for small list thumbnails. */
+    lively: Boolean = size >= 72.dp || state != AvatarState.IDLE,
 ) {
     val reduced = PolyglotTheme.motion.reduced
     val animate = !reduced && state != AvatarState.IDLE
     val t = if (animate) rememberInfiniteTransition().animateFloat(0f, 1f, infiniteRepeatable(tween(if (state == AvatarState.SPEAKING) 260 else 900), RepeatMode.Reverse)).value else 0f
+    val phase = if (!reduced && lively) rememberInfiniteTransition().animateFloat(0f, 1f, infiniteRepeatable(tween(if (state == AvatarState.IDLE) 4200 else 2400, easing = LinearEasing))).value else 0f
+    val pose = AvatarMotion.pose(state == AvatarState.LISTENING, state == AvatarState.SPEAKING, phase)
+    var blink by remember { mutableStateOf(false) }
+    LaunchedEffect(reduced, lively) {
+        if (reduced || !lively) return@LaunchedEffect
+        while (true) { delay(AvatarMotion.nextBlinkDelay(Random.nextDouble())); blink = true; delay(AvatarMotion.BLINK_MILLIS); blink = false }
+    }
     // Step through the current word's mouth shapes once, at roughly speaking pace.
     val wordPhase = remember(speakingWord) { Animatable(0f) }
     LaunchedEffect(speakingWord) {
         val steps = speakingWord?.let { Visemes.shapes(it, language).size } ?: 0
         if (steps > 0 && !reduced) wordPhase.animateTo(1f, tween(maxOf(200, steps * 95), easing = LinearEasing))
     }
-    val mouth = if (state == AvatarState.SPEAKING && speakingWord != null && !reduced) Visemes.shapeAt(speakingWord, language, wordPhase.value) else null
+    // Audio-driven mouth: smoothed so it opens quickly and closes gently.
+    val levelAnim = remember { Animatable(0f) }
+    LaunchedEffect(mouthLevel, state) {
+        val target = if (state == AvatarState.SPEAKING && mouthLevel != null && !reduced) AvatarMotion.mouthOpening(mouthLevel) else 0f
+        levelAnim.animateTo(target, tween(if (target > levelAnim.value) 60 else 180))
+    }
+    val mouth = if (state == AvatarState.SPEAKING && speakingWord != null && !reduced && mouthLevel == null) Visemes.shapeAt(speakingWord, language, wordPhase.value) else null
+    val face = if (state == AvatarState.THINKING) AvatarMood.THINKING else mood
     Canvas(modifier.size(size).semantics { contentDescription = description }) {
         val w = this.size.width; val h = this.size.height
         val accent = Color(spec.accentColor)
@@ -89,67 +119,107 @@ fun TutorAvatar(
         drawCircle(accent.copy(alpha = 0.18f), radius = w / 2)
         if (state == AvatarState.LISTENING) drawCircle(accent.copy(alpha = 0.35f + 0.3f * t), radius = w / 2 - 1.5f, style = Stroke(w * 0.05f))
         clipPath(Path().apply { addOval(androidx.compose.ui.geometry.Rect(0f, 0f, w, h)) }) {
-            // Shoulders / clothing.
-            drawOval(accent, topLeft = Offset(w * 0.12f, h * 0.70f), size = Size(w * 0.76f, h * 0.55f))
+            // Shoulders / clothing (rise slightly with breathing).
+            val breathe = pose.bob * h * 0.4f
+            drawOval(accent, topLeft = Offset(w * 0.12f, h * 0.70f + breathe), size = Size(w * 0.76f, h * 0.55f))
             if (spec.accessory == Accessory.TIE) {
                 val tie = Path().apply { moveTo(w * 0.5f, h * 0.74f); lineTo(w * 0.46f, h * 0.9f); lineTo(w * 0.5f, h); lineTo(w * 0.54f, h * 0.9f); close() }
                 drawPath(tie, Color(0xFF1B1B3A))
             }
             if (spec.accessory == Accessory.SCARF) drawRoundRect(Color(0xFFE85D3F), Offset(w * 0.3f, h * 0.68f), Size(w * 0.4f, h * 0.08f), CornerRadius(w * 0.04f))
-            // Neck.
             val skin = Color(spec.skinTone)
             drawRect(skin, Offset(w * 0.43f, h * 0.58f), Size(w * 0.14f, h * 0.14f))
-            // Hair behind the face for long styles.
-            val hair = Color(spec.hairColor)
-            when (spec.hairStyle) {
-                HairStyle.LONG, HairStyle.WAVY -> drawRoundRect(hair, Offset(w * 0.24f, h * 0.2f), Size(w * 0.52f, h * 0.52f), CornerRadius(w * 0.2f))
-                HairStyle.BOB -> drawRoundRect(hair, Offset(w * 0.25f, h * 0.18f), Size(w * 0.5f, h * 0.42f), CornerRadius(w * 0.18f))
-                else -> {}
-            }
-            // Face.
-            drawOval(skin, topLeft = Offset(w * 0.3f, h * 0.2f), size = Size(w * 0.4f, h * 0.46f))
-            // Hair on top.
-            when (spec.hairStyle) {
-                HairStyle.SHORT -> drawArc(hair, 180f, 180f, true, Offset(w * 0.29f, h * 0.16f), Size(w * 0.42f, h * 0.26f))
-                HairStyle.LONG, HairStyle.BOB -> drawArc(hair, 180f, 180f, true, Offset(w * 0.28f, h * 0.15f), Size(w * 0.44f, h * 0.28f))
-                HairStyle.WAVY -> for (i in 0..3) drawCircle(hair, w * 0.09f, Offset(w * (0.34f + i * 0.105f), h * 0.23f))
-                HairStyle.CURLY -> for (i in 0..4) drawCircle(hair, w * 0.075f, Offset(w * (0.32f + i * 0.09f), h * 0.2f + (i % 2) * h * 0.02f))
-                HairStyle.BUN -> { drawCircle(hair, w * 0.09f, Offset(w * 0.5f, h * 0.12f)); drawArc(hair, 180f, 180f, true, Offset(w * 0.29f, h * 0.16f), Size(w * 0.42f, h * 0.24f)) }
-                HairStyle.BALD_BEARD -> drawArc(hair, 0f, 180f, true, Offset(w * 0.32f, h * 0.42f), Size(w * 0.36f, h * 0.24f))
-            }
-            // Eyes (blink-free; a gentle look-up while thinking).
-            val eyeY = h * (if (state == AvatarState.THINKING) 0.40f else 0.42f)
-            val eye = Color(0xFF1F2328)
-            drawCircle(eye, w * 0.022f, Offset(w * 0.43f, eyeY)); drawCircle(eye, w * 0.022f, Offset(w * 0.57f, eyeY))
-            if (spec.accessory == Accessory.GLASSES) {
-                val g = Stroke(w * 0.012f)
-                drawCircle(Color(0xFF2B2B2B), w * 0.05f, Offset(w * 0.43f, eyeY), style = g)
-                drawCircle(Color(0xFF2B2B2B), w * 0.05f, Offset(w * 0.57f, eyeY), style = g)
-                drawLine(Color(0xFF2B2B2B), Offset(w * 0.48f, eyeY), Offset(w * 0.52f, eyeY), w * 0.012f)
-            }
-            if (spec.accessory == Accessory.EARRINGS) {
-                drawCircle(Color(0xFFE6B422), w * 0.018f, Offset(w * 0.305f, h * 0.5f)); drawCircle(Color(0xFFE6B422), w * 0.018f, Offset(w * 0.695f, h * 0.5f))
-            }
-            // Mouth: shapes from the spoken word when the speech engine reports progress, otherwise a simple rhythm.
-            val mouthColor = Color(0xFF8A3B3B)
-            if (mouth != null) {
-                drawMouth(mouth, mouthColor, w, h)
-            } else if (state == AvatarState.SPEAKING) {
-                val open = h * (0.015f + 0.035f * t)
-                drawOval(mouthColor, Offset(w * 0.455f, h * 0.53f), Size(w * 0.09f, open))
-            } else {
-                drawArc(mouthColor, 20f, 140f, false, Offset(w * 0.44f, h * 0.49f), Size(w * 0.12f, h * 0.07f), style = Stroke(w * 0.016f, cap = StrokeCap.Round))
-            }
-            if (spec.accessory == Accessory.HEADPHONES) {
-                val s = Stroke(w * 0.035f, cap = StrokeCap.Round)
-                drawArc(Color(0xFF263238), 190f, 160f, false, Offset(w * 0.26f, h * 0.14f), Size(w * 0.48f, h * 0.4f), style = s)
-                drawRoundRect(Color(0xFF263238), Offset(w * 0.25f, h * 0.36f), Size(w * 0.07f, h * 0.12f), CornerRadius(w * 0.03f))
-                drawRoundRect(Color(0xFF263238), Offset(w * 0.68f, h * 0.36f), Size(w * 0.07f, h * 0.12f), CornerRadius(w * 0.03f))
+            translate(top = pose.bob * h) {
+                rotate(pose.tiltDegrees, Offset(w * 0.5f, h * 0.62f)) {
+                    drawHead(spec, skin, w, h, state, face, blink, mouth, levelAnim.value, mouthLevel != null, t)
+                }
             }
         }
         if (state == AvatarState.THINKING) {
             for (i in 0..2) drawCircle(accent.copy(alpha = 0.4f + 0.6f * ((t + i / 3f) % 1f)), w * 0.035f, Offset(w * (0.72f + i * 0.08f), h * 0.14f))
         }
+    }
+}
+
+private fun DrawScope.drawHead(
+    spec: AvatarSpec, skin: Color, w: Float, h: Float, state: AvatarState, mood: AvatarMood, blink: Boolean,
+    mouth: MouthShape?, level: Float, audioDriven: Boolean, t: Float,
+) {
+    // Hair behind the face for long styles.
+    val hair = Color(spec.hairColor)
+    when (spec.hairStyle) {
+        HairStyle.LONG, HairStyle.WAVY -> drawRoundRect(hair, Offset(w * 0.24f, h * 0.2f), Size(w * 0.52f, h * 0.52f), CornerRadius(w * 0.2f))
+        HairStyle.BOB -> drawRoundRect(hair, Offset(w * 0.25f, h * 0.18f), Size(w * 0.5f, h * 0.42f), CornerRadius(w * 0.18f))
+        else -> {}
+    }
+    // Face.
+    drawOval(skin, topLeft = Offset(w * 0.3f, h * 0.2f), size = Size(w * 0.4f, h * 0.46f))
+    // Hair on top.
+    when (spec.hairStyle) {
+        HairStyle.SHORT -> drawArc(hair, 180f, 180f, true, Offset(w * 0.29f, h * 0.16f), Size(w * 0.42f, h * 0.26f))
+        HairStyle.LONG, HairStyle.BOB -> drawArc(hair, 180f, 180f, true, Offset(w * 0.28f, h * 0.15f), Size(w * 0.44f, h * 0.28f))
+        HairStyle.WAVY -> for (i in 0..3) drawCircle(hair, w * 0.09f, Offset(w * (0.34f + i * 0.105f), h * 0.23f))
+        HairStyle.CURLY -> for (i in 0..4) drawCircle(hair, w * 0.075f, Offset(w * (0.32f + i * 0.09f), h * 0.2f + (i % 2) * h * 0.02f))
+        HairStyle.BUN -> { drawCircle(hair, w * 0.09f, Offset(w * 0.5f, h * 0.12f)); drawArc(hair, 180f, 180f, true, Offset(w * 0.29f, h * 0.16f), Size(w * 0.42f, h * 0.24f)) }
+        HairStyle.BALD_BEARD -> drawArc(hair, 0f, 180f, true, Offset(w * 0.32f, h * 0.42f), Size(w * 0.36f, h * 0.24f))
+    }
+    // Eyes: look up while thinking, slightly toward the learner while listening; blink now and then.
+    val eyeY = h * when { mood == AvatarMood.THINKING -> 0.40f; mood == AvatarMood.SURPRISED -> 0.415f; else -> 0.42f }
+    val gaze = if (state == AvatarState.LISTENING) w * 0.006f else 0f
+    val eye = Color(0xFF1F2328)
+    val browColor = hair.takeIf { spec.hairStyle != HairStyle.BALD_BEARD } ?: Color(0xFF3A2E28)
+    for (x in listOf(0.43f, 0.57f)) {
+        val c = Offset(w * x + gaze, eyeY)
+        if (blink) drawLine(eye, Offset(c.x - w * 0.022f, c.y), Offset(c.x + w * 0.022f, c.y), w * 0.012f, cap = StrokeCap.Round)
+        else {
+            drawCircle(eye, w * if (mood == AvatarMood.SURPRISED) 0.026f else 0.022f, c)
+            drawCircle(Color.White.copy(alpha = 0.85f), w * 0.007f, Offset(c.x + w * 0.007f, c.y - h * 0.007f))
+        }
+        // Eyebrows carry most of the expression.
+        val inner = if (x < 0.5f) 1f else -1f
+        val lift = when (mood) { AvatarMood.SURPRISED -> 0.03f; AvatarMood.HAPPY -> 0.012f; else -> 0f }
+        val innerLift = when (mood) { AvatarMood.ENCOURAGING -> 0.012f; AvatarMood.THINKING -> if (x < 0.5f) 0.02f else -0.004f; else -> 0f }
+        val by = eyeY - h * (0.055f + lift)
+        drawLine(browColor, Offset(c.x - w * 0.035f * inner, by), Offset(c.x + w * 0.03f * inner, by - h * innerLift), w * 0.014f, cap = StrokeCap.Round)
+    }
+    if (spec.accessory == Accessory.GLASSES) {
+        val g = Stroke(w * 0.012f)
+        drawCircle(Color(0xFF2B2B2B), w * 0.05f, Offset(w * 0.43f, eyeY), style = g)
+        drawCircle(Color(0xFF2B2B2B), w * 0.05f, Offset(w * 0.57f, eyeY), style = g)
+        drawLine(Color(0xFF2B2B2B), Offset(w * 0.48f, eyeY), Offset(w * 0.52f, eyeY), w * 0.012f)
+    }
+    if (spec.accessory == Accessory.EARRINGS) {
+        drawCircle(Color(0xFFE6B422), w * 0.018f, Offset(w * 0.305f, h * 0.5f)); drawCircle(Color(0xFFE6B422), w * 0.018f, Offset(w * 0.695f, h * 0.5f))
+    }
+    if (mood == AvatarMood.HAPPY) {
+        drawCircle(Color(0xFFE57373).copy(alpha = 0.28f), w * 0.035f, Offset(w * 0.38f, h * 0.5f))
+        drawCircle(Color(0xFFE57373).copy(alpha = 0.28f), w * 0.035f, Offset(w * 0.62f, h * 0.5f))
+    }
+    // Mouth: audio loudness in live calls, word shapes from TTS progress, a simple rhythm otherwise.
+    val mouthColor = Color(0xFF8A3B3B)
+    when {
+        state == AvatarState.SPEAKING && audioDriven -> {
+            val open = h * (0.012f + 0.06f * level)
+            drawOval(mouthColor, Offset(w * (0.455f - 0.01f * level), h * 0.545f - open / 2), Size(w * (0.09f + 0.02f * level), open))
+        }
+        mouth != null -> drawMouth(mouth, mouthColor, w, h)
+        state == AvatarState.SPEAKING -> {
+            val open = h * (0.015f + 0.035f * t)
+            drawOval(mouthColor, Offset(w * 0.455f, h * 0.53f), Size(w * 0.09f, open))
+        }
+        mood == AvatarMood.SURPRISED -> drawOval(mouthColor, Offset(w * 0.475f, h * 0.525f), Size(w * 0.05f, h * 0.045f))
+        mood == AvatarMood.THINKING -> drawLine(mouthColor, Offset(w * 0.46f, h * 0.55f), Offset(w * 0.54f, h * 0.54f), w * 0.016f, cap = StrokeCap.Round)
+        else -> {
+            val big = mood == AvatarMood.HAPPY
+            drawArc(mouthColor, if (big) 10f else 20f, if (big) 160f else 140f, false, Offset(w * (if (big) 0.425f else 0.44f), h * 0.49f),
+                Size(w * (if (big) 0.15f else 0.12f), h * (if (big) 0.085f else 0.07f)), style = Stroke(w * 0.016f, cap = StrokeCap.Round))
+        }
+    }
+    if (spec.accessory == Accessory.HEADPHONES) {
+        val s = Stroke(w * 0.035f, cap = StrokeCap.Round)
+        drawArc(Color(0xFF263238), 190f, 160f, false, Offset(w * 0.26f, h * 0.14f), Size(w * 0.48f, h * 0.4f), style = s)
+        drawRoundRect(Color(0xFF263238), Offset(w * 0.25f, h * 0.36f), Size(w * 0.07f, h * 0.12f), CornerRadius(w * 0.03f))
+        drawRoundRect(Color(0xFF263238), Offset(w * 0.68f, h * 0.36f), Size(w * 0.07f, h * 0.12f), CornerRadius(w * 0.03f))
     }
 }
 

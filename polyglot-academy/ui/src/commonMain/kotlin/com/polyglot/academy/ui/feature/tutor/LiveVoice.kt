@@ -80,7 +80,7 @@ fun LiveVoiceScreen(tutorId: String, topic: String?) {
         PolyCard {
             Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(16.dp)) {
                 TutorAvatar(tutor.avatar, s.f(K.TUTOR_AVATAR_DESC, tutor.name), size = 96.dp, state = avatarState,
-                    speakingWord = st.tutorDraft.split(' ').lastOrNull()?.takeIf { st.tutorSpeaking }, language = lang)
+                    language = lang, mood = com.polyglot.academy.core.tutor.AvatarMotion.mood(st.turns), mouthLevel = st.tutorLevel)
                 Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(4.dp)) {
                     Text(tutor.name, style = MaterialTheme.typography.titleLarge)
                     Text(s[K.valueOf("LIVE_STATUS_" + st.status.name)], style = MaterialTheme.typography.bodyMedium, color = c.textSecondary,

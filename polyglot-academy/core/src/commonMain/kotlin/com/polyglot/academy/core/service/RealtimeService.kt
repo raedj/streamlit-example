@@ -62,6 +62,8 @@ data class RealtimeState(
     val tutorSpeaking: Boolean = false,
     val learnerSpeaking: Boolean = false,
     val micLevel: Float = 0f,
+    /** Loudness of the latest tutor audio, for the avatar's mouth. */
+    val tutorLevel: Float = 0f,
     val muted: Boolean = false,
     val problem: RealtimeProblem? = null,
     val serverMessage: String? = null,
@@ -203,13 +205,13 @@ class RealtimeController internal constructor(
                     RealtimeEvent.LearnerSpeechStarted -> {
                         sink?.clear()
                         speechStartedAt = clock.nowMillis()
-                        _state.update { it.copy(learnerSpeaking = true, tutorSpeaking = false) }
+                        _state.update { it.copy(learnerSpeaking = true, tutorSpeaking = false, tutorLevel = 0f) }
                     }
                     RealtimeEvent.LearnerSpeechStopped -> {
                         lastSpeechMillis = speechStartedAt?.let { clock.nowMillis() - it }
                         _state.update { it.copy(learnerSpeaking = false) }
                     }
-                    is RealtimeEvent.TutorAudio -> { sink?.write(e.pcm); if (!_state.value.tutorSpeaking) _state.update { it.copy(tutorSpeaking = true) } }
+                    is RealtimeEvent.TutorAudio -> { sink?.write(e.pcm); _state.update { it.copy(tutorSpeaking = true, tutorLevel = Wav.level(e.pcm)) } }
                     is RealtimeEvent.TutorTranscriptDelta -> _state.update { it.copy(tutorDraft = it.tutorDraft + e.text) }
                     is RealtimeEvent.TutorTranscriptDone -> {
                         val text = e.text.ifBlank { _state.value.tutorDraft.trim() }
@@ -218,7 +220,7 @@ class RealtimeController internal constructor(
                             createdAtMillis = clock.nowMillis(), producedBy = "openai-realtime", wasSpoken = true))
                     }
                     is RealtimeEvent.LearnerTranscript -> learnerSaid(e.text)
-                    RealtimeEvent.ResponseDone -> _state.update { it.copy(tutorSpeaking = false) }
+                    RealtimeEvent.ResponseDone -> _state.update { it.copy(tutorSpeaking = false, tutorLevel = 0f) }
                     is RealtimeEvent.Failure -> {
                         val fatal = e.code in setOf("invalid_api_key", "insufficient_quota", "model_not_found", "session_expired")
                         if (fatal) fail(RealtimeProblem.SERVER, e.message) else _state.update { it.copy(serverMessage = e.message) }

@@ -203,7 +203,8 @@ private fun EngineHeader(state: ConversationState, controller: ConversationContr
     ContentColumn {
         Row(verticalAlignment = Alignment.CenterVertically) {
             TutorAvatar(state.tutor.avatar, s.f(K.TUTOR_AVATAR_DESC, state.tutor.name), size = 56.dp, state = avatarState(state.voice),
-                speakingWord = state.speakingWord, language = state.language)
+                speakingWord = state.speakingWord, language = state.language,
+                mood = com.polyglot.academy.core.tutor.AvatarMotion.mood(state.turns, thinking = state.voice == VoiceState.Processing))
             Spacer(Modifier.width(12.dp))
             Column(Modifier.weight(1f)) {
                 val engine = state.engine
