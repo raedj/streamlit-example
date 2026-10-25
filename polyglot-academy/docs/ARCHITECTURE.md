@@ -32,3 +32,20 @@ saved with `rememberSaveable` (routes encode to strings) to survive process deat
 ## Threading
 All database work runs on `Dispatchers.IO` inside `SqlStore`; network calls run inside
 `withTimeout`; Android speech APIs run on the main thread via `flowOn(Dispatchers.Main)`.
+
+## Word lists
+The 3000-word programme (10 levels of 300 lemmas per language) keeps its data as text, not code:
+`content/wordlists/<lang>.words.tsv` and `<lang>.examples.tsv` (format in
+`content/wordlists/README.md`). `tools/gen_wordlists.py` validates the files and generates one
+Kotlin object per language and level (`core/.../wordlist/generated/<Lang>LevelNN.kt`, at most 300
+entries each, rows kept as tab-separated string literals) plus an index. This keeps every
+generated method far below the JVM's 64 KB method limit and lets each level load on its own.
+
+At run time `WordLists.of(language)` parses a language's levels on first use only (a `lazy` per
+language), so start-up cost does not depend on the number of lists. `WordMatcher` finds list
+words in sentences per language (case and script normalisation, French elision, Arabic clitics,
+Turkish suffixes by stem, Malay affixes, Chinese longest-match segmentation); the same matcher
+backs the validation tests and is meant for building exercises (for example, blanking the word in
+its example). `WordEntry.toVocabularyItem()` maps an entry to the existing vocabulary model so
+reviews use the normal spaced-repetition queue; entries linked to a curriculum word (`vocab_id`)
+keep that word's id, so existing review state is not lost.

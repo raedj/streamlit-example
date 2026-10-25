@@ -1,7 +1,7 @@
 {
-  "updated": "2026-10-25T17:10:00Z",
+  "updated": "2026-10-25T18:00:00Z",
   "branch": "ccr-e06ebaa4-5wjvye",
-  "current_phase": "Android debug build verified on an emulator; languages extended to 8; word-list programme (3000 words x 10 levels) not started",
+  "current_phase": "Word-list programme: format, generator and validation done; English level 1 written",
   "completed_phases": [
     "0 Environment audit",
     "1 Requirements",
@@ -55,10 +55,10 @@
     }
   },
   "last_tests": {
-    "total": 217,
+    "total": 227,
     "failed": 0,
     "modules": {
-      "core": 161,
+      "core": 171,
       "data": 44,
       "uicore": 12
     },
@@ -85,6 +85,7 @@
     "Verify Azure pronunciation scoring, OpenAI Realtime calls and WebDAV sync with real accounts (K-17..K-19); check Azure locales for tr/ur/ms"
   ],
   "recent_changes": [
+    "Word lists: TSV format, tools/gen_wordlists.py (validates and generates per-level Kotlin), WordList/WordMatcher in core, WordListTest (ranks, levels, fields, example counts, word in example, 85% of example words within rank+300, linked review ids); English level 1 (300 lemmas, 600 examples) written",
     "Added Turkish, Urdu and Malay as learning languages: starter course (A1-B2), business and finance tracks, travel phrasebook, 6 role-plays, 3 graded stories and placement bank each; offline tutor greetings; Urdu right-to-left with transliteration",
     "Pronunciation scoring reports an unsupported language instead of guessing an Azure locale",
     "Fixed after the first emulator run: Practice again, RTL punctuation in learned text, Arabic plural and preposition strings, 0% best score for started lessons",
@@ -140,12 +141,23 @@
     }
   },
   "wordlist_programme": {
-    "status": "not started",
+    "status": "in progress",
+    "format": "content/wordlists/<lang>.{words,examples}.tsv -> tools/gen_wordlists.py -> core/.../wordlist/generated (see content/wordlists/README.md)",
+    "ranking_source": "approximate (AI, general knowledge of spoken frequency); no licensed list verified yet — docs/CONTENT_SOURCES.md",
+    "completed": {
+      "en": {
+        "levels": [
+          1
+        ],
+        "last_rank": 300
+      }
+    },
     "resume_at": {
       "language": "en",
-      "level": 1,
-      "last_rank": 0
+      "level": 2,
+      "next_rank": 301,
+      "note": "Or write level 1 for the next language first (planned order: zh, es, fr, ar, tr, ur, ms), as the brief puts levels 1-3 of all languages before higher levels."
     },
-    "notes": "Requested: 3000 lemmas per language in 10 levels of 300, with examples, generator script and validation tests. Now 8 languages (24,000 entries). Format, generator and loader still to be designed; see docs/CONTENT_SOURCES.md for sourcing rules."
+    "size_per_level": "about 59 KB compressed in the APK (English level 1)"
   }
 }

@@ -1,0 +1,301 @@
+rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
+1	en_w_the	the	det	function	the (definite article)	أداة التعريف (الـ)	/ðə/
+2	en_w_be	be	verb	function	to be	يكون	/bi/	am, is, are, was, were, been, being, isn't, aren't, wasn't, weren't	irregular=yes
+3	en_w_you	you	pron	function	you	أنت، أنتم	/ju/	your, yours, yourself, you're, you've, you'll, you'd
+4	en_w_i	I	pron	function	I	أنا	/aɪ/	me, my, mine, myself, I'm, I've, I'll, I'd
+5	en_w_to	to	prep	function	to, toward	إلى	/tu/
+6	en_w_a	a	det	function	a, an (indefinite article)	أداة النكرة (واحد)	/ə/	an
+7	en_w_and	and	conj	function	and	و	/ænd/
+8	en_w_it	it	pron	function	it	هو، هي (لغير العاقل)	/ɪt/	its, it's, itself
+9	en_w_not	not	adv	function	not	لا، ليس	/nɑt/
+10	en_w_that	that	pron	function	that	ذلك، تلك؛ أنّ	/ðæt/	those, that's
+11	en_w_do	do	verb	function	to do	يفعل	/du/	does, did, done, doing, don't, doesn't, didn't	irregular=yes
+12	en_w_have	have	verb	function	to have	يملك، لديه	/hæv/	has, had, having, haven't, hasn't, hadn't	irregular=yes
+13	en_w_what	what	pron	question	what	ماذا، ما	/wʌt/	what's
+14	en_w_of	of	prep	function	of	من (للإضافة)	/ʌv/
+15	en_w_in	in	prep	function	in	في	/ɪn/
+16	en_w_we	we	pron	function	we	نحن	/wi/	us, our, ours, ourselves, we're, we've, we'll
+17	en_w_he	he	pron	function	he	هو	/hi/	him, his, himself, he's, he'll
+18	en_w_this	this	det	function	this	هذا، هذه	/ðɪs/	these
+19	en_w_on	on	prep	function	on	على	/ɑn/
+20	en_w_for	for	prep	function	for	لـ، من أجل	/fɔr/
+21	en_w_she	she	pron	function	she	هي	/ʃi/	her, hers, herself, she's, she'll
+22	en_w_they	they	pron	function	they	هم، هنّ	/ðeɪ/	them, their, theirs, themselves, they're, they've, they'll
+23	en_w_know	know	verb	actions	to know	يعرف	/noʊ/	knows, knew, known	irregular=yes
+24	en_w_get	get	verb	actions	to get	يحصل على	/ɡɛt/	got, gotten, getting	irregular=yes
+25	en_w_go	go	verb	actions	to go	يذهب	/ɡoʊ/	goes, went, gone, going	irregular=yes
+26	en_w_can	can	verb	function	can, be able to	يستطيع	/kæn/	can't, cannot
+27	en_w_with	with	prep	function	with	مع	/wɪð/
+28	en_w_no	no	det	function	no	لا	/noʊ/
+29	en_w_yes	yes	interj	social	yes	نعم	/jɛs/	yeah
+30	en_w_just	just	adv	function	just, only; a moment ago	فقط؛ للتو	/dʒʌst/
+31	en_w_there	there	adv	places	there	هناك	/ðɛr/	there's
+32	en_w_here	here	adv	places	here	هنا	/hɪr/	here's
+33	en_w_all	all	det	quantity	all	كل، جميع	/ɔl/
+34	en_w_so	so	adv	function	so; very	لذلك؛ جدًا	/soʊ/
+35	en_w_but	but	conj	function	but	لكن	/bʌt/
+36	en_w_like	like	verb	feelings	to like; like (similar to)	يحب، يعجبه؛ مثل	/laɪk/
+37	en_w_will	will	verb	function	will (future)	سوف	/wɪl/	won't
+38	en_w_want	want	verb	actions	to want	يريد	/wɑnt/
+39	en_w_out	out	adv	places	out	خارج	/aʊt/
+40	en_w_up	up	adv	places	up	أعلى، فوق	/ʌp/
+41	en_w_at	at	prep	function	at	في، عند	/æt/
+42	en_w_come	come	verb	actions	to come	يأتي	/kʌm/	comes, came, coming	irregular=yes
+43	en_w_think	think	verb	actions	to think	يفكر، يعتقد	/θɪŋk/	thought	irregular=yes
+44	en_w_right	right	adj	describe	correct; right (side)	صحيح؛ يمين	/raɪt/
+45	en_w_now	now	adv	time	now	الآن	/naʊ/
+46	en_w_good	good	adj	describe	good	جيد	/ɡʊd/	better, best
+47	en_w_see	see	verb	actions	to see	يرى	/si/	sees, saw, seen	irregular=yes
+48	en_w_about	about	prep	function	about	عن، حول	/əˈbaʊt/
+49	en_w_well	well	adv	describe	well	جيدًا؛ حسنًا	/wɛl/
+50	en_w_one	one	num	number	one	واحد	/wʌn/
+51	en_w_how	how	adv	question	how	كيف	/haʊ/	how's
+52	en_w_say	say	verb	actions	to say	يقول	/seɪ/	says, said	irregular=yes
+53	en_w_if	if	conj	function	if	إذا	/ɪf/
+54	en_w_time	time	noun	time	time	وقت، مرة	/taɪm/
+55	en_w_who	who	pron	question	who	مَن	/hu/	who's
+56	en_w_tell	tell	verb	actions	to tell	يخبر، يحكي	/tɛl/	told	irregular=yes
+57	en_w_okay	okay	interj	social	okay, all right	حسنًا	/oʊˈkeɪ/	ok
+58	en_w_make	make	verb	actions	to make	يصنع، يُعدّ	/meɪk/	made	irregular=yes
+59	en_w_oh	oh	interj	social	oh	آه، أوه	/oʊ/
+60	en_w_look	look	verb	actions	to look	ينظر؛ يبدو	/lʊk/
+61	en_w_would	would	verb	function	would	سـ (للتمني والتأدب)	/wʊd/	wouldn't
+62	en_w_could	could	verb	function	could	استطاع؛ هل يمكن	/kʊd/	couldn't
+63	en_w_from	from	prep	function	from	من	/frʌm/
+64	en_w_take	take	verb	actions	to take	يأخذ	/teɪk/	took, taken	irregular=yes
+65	en_w_when	when	adv	question	when	متى؛ عندما	/wɛn/
+66	en_w_back	back	adv	places	back	عائدًا، إلى الوراء	/bæk/
+67	en_w_then	then	adv	time	then	ثم؛ آنذاك	/ðɛn/
+68	en_w_need	need	verb	actions	to need	يحتاج	/nid/
+69	en_w_let	let	verb	actions	to let, allow	يدع، يسمح	/lɛt/	let's	irregular=yes
+70	en_w_thing	thing	noun	things	thing	شيء	/θɪŋ/
+71	en_w_really	really	adv	describe	really	حقًا	/ˈrɪli/
+72	en_w_some	some	det	quantity	some	بعض	/sʌm/
+73	en_w_why	why	adv	question	why	لماذا	/waɪ/
+74	en_w_where	where	adv	question	where	أين	/wɛr/	where's
+75	en_w_man	man	noun	people	man	رجل	/mæn/	men
+76	en_w_people	people	noun	people	people	ناس	/ˈpipəl/
+77	en_w_day	day	noun	time	day	يوم	/deɪ/
+78	en_w_give	give	verb	actions	to give	يعطي	/ɡɪv/	gave, given	irregular=yes
+79	en_w_way	way	noun	travel	way	طريق؛ طريقة	/weɪ/
+80	en_w_something	something	pron	things	something	شيء ما	/ˈsʌmθɪŋ/
+81	en_w_very	very	adv	describe	very	جدًا	/ˈvɛri/
+82	en_w_or	or	conj	function	or	أو، أم	/ɔr/
+83	en_w_more	more	det	quantity	more	أكثر، المزيد	/mɔr/
+84	en_w_talk	talk	verb	actions	to talk	يتحدث	/tɔk/
+85	en_w_sorry	sorry	adj	social	sorry	آسف	/ˈsɑri/			en_sorry
+86	en_w_thank	thank	verb	social	to thank	يشكر	/θæŋk/	thanks
+87	en_w_love	love	verb	feelings	to love	يحب	/lʌv/
+88	en_w_little	little	adj	describe	small, little	صغير؛ قليل	/ˈlɪtəl/
+89	en_w_nothing	nothing	pron	things	nothing	لا شيء	/ˈnʌθɪŋ/
+90	en_w_never	never	adv	time	never	أبدًا	/ˈnɛvər/
+91	en_w_mean	mean	verb	actions	to mean	يعني، يقصد	/min/	meant	irregular=yes
+92	en_w_because	because	conj	function	because	لأنّ	/bɪˈkʌz/
+93	en_w_sure	sure	adj	describe	sure	متأكد	/ʃʊr/
+94	en_w_work	work	verb	actions	to work	يعمل	/wɜrk/			en_work_v
+95	en_w_call	call	verb	actions	to call	يتصل؛ ينادي	/kɔl/
+96	en_w_help	help	verb	actions	to help	يساعد	/hɛlp/
+97	en_w_home	home	noun	home	home	البيت، المنزل	/hoʊm/
+98	en_w_life	life	noun	people	life	حياة	/laɪf/	lives
+99	en_w_any	any	det	quantity	any	أي	/ˈɛni/
+100	en_w_two	two	num	number	two	اثنان	/tu/
+101	en_w_by	by	prep	function	by, next to	بـ؛ بجانب	/baɪ/
+102	en_w_find	find	verb	actions	to find	يجد	/faɪnd/	found	irregular=yes
+103	en_w_still	still	adv	time	still	ما زال	/stɪl/
+104	en_w_feel	feel	verb	feelings	to feel	يشعر	/fil/	felt	irregular=yes
+105	en_w_put	put	verb	actions	to put	يضع	/pʊt/		irregular=yes
+106	en_w_try	try	verb	actions	to try	يحاول؛ يجرّب	/traɪ/
+107	en_w_maybe	maybe	adv	function	maybe	ربما	/ˈmeɪbi/
+108	en_w_other	other	adj	describe	other	آخر	/ˈʌðər/
+109	en_w_again	again	adv	time	again	مرة أخرى	/əˈɡɛn/
+110	en_w_much	much	det	quantity	much	كثير	/mʌtʃ/
+111	en_w_big	big	adj	describe	big	كبير	/bɪɡ/	bigger, biggest
+112	en_w_down	down	adv	places	down	أسفل	/daʊn/
+113	en_w_too	too	adv	describe	too; also	جدًا (أكثر من اللازم)؛ أيضًا	/tu/
+114	en_w_first	first	adj	number	first	أول	/fɜrst/
+115	en_w_should	should	verb	function	should	ينبغي	/ʃʊd/	shouldn't
+116	en_w_hear	hear	verb	actions	to hear	يسمع	/hɪr/	heard	irregular=yes
+117	en_w_everything	everything	pron	things	everything	كل شيء	/ˈɛvriθɪŋ/
+118	en_w_leave	leave	verb	actions	to leave	يغادر؛ يترك	/liv/	left	irregular=yes
+119	en_w_night	night	noun	time	night	ليل، ليلة	/naɪt/
+120	en_w_woman	woman	noun	people	woman	امرأة	/ˈwʊmən/	women
+121	en_w_friend	friend	noun	people	friend	صديق	/frɛnd/			en_friend
+122	en_w_new	new	adj	describe	new	جديد	/nu/
+123	en_w_old	old	adj	describe	old	قديم؛ كبير السن	/oʊld/
+124	en_w_ask	ask	verb	actions	to ask	يسأل؛ يطلب	/æsk/
+125	en_w_father	father	noun	family	father	أب	/ˈfɑðər/	dad		en_father
+126	en_w_mother	mother	noun	family	mother	أم	/ˈmʌðər/	mom, mum		en_mother
+127	en_w_house	house	noun	home	house	بيت	/haʊs/
+128	en_w_name	name	noun	people	name	اسم	/neɪm/			en_name
+129	en_w_money	money	noun	things	money	مال	/ˈmʌni/
+130	en_w_child	child	noun	family	child	طفل	/tʃaɪld/	children, kid, kids
+131	en_w_always	always	adv	time	always	دائمًا	/ˈɔlweɪz/
+132	en_w_only	only	adv	function	only	فقط؛ الوحيد	/ˈoʊnli/
+133	en_w_even	even	adv	function	even	حتى	/ˈivən/
+134	en_w_happen	happen	verb	actions	to happen	يحدث	/ˈhæpən/
+135	en_w_than	than	conj	function	than	من (للمقارنة)	/ðæn/
+136	en_w_every	every	det	quantity	every	كل	/ˈɛvri/
+137	en_w_keep	keep	verb	actions	to keep	يحتفظ؛ يُبقي	/kip/	kept	irregular=yes
+138	en_w_stop	stop	verb	actions	to stop	يتوقف؛ يوقف	/stɑp/
+139	en_w_wait	wait	verb	actions	to wait	ينتظر	/weɪt/
+140	en_w_believe	believe	verb	actions	to believe	يصدّق	/bɪˈliv/
+141	en_w_understand	understand	verb	actions	to understand	يفهم	/ˌʌndərˈstænd/	understood	irregular=yes
+142	en_w_remember	remember	verb	actions	to remember	يتذكر	/rɪˈmɛmbər/
+143	en_w_eat	eat	verb	food	to eat	يأكل	/it/	ate, eaten	irregular=yes
+144	en_w_live	live	verb	home	to live	يعيش، يسكن	/lɪv/
+145	en_w_start	start	verb	actions	to start	يبدأ	/stɑrt/
+146	en_w_bring	bring	verb	actions	to bring	يُحضر	/brɪŋ/	brought	irregular=yes
+147	en_w_year	year	noun	time	year	سنة، عام	/jɪr/
+148	en_w_morning	morning	noun	time	morning	صباح	/ˈmɔrnɪŋ/			en_morning
+149	en_w_today	today	adv	time	today	اليوم	/təˈdeɪ/			en_today
+150	en_w_tomorrow	tomorrow	adv	time	tomorrow	غدًا	/təˈmɑroʊ/			en_tomorrow
+151	en_w_yesterday	yesterday	adv	time	yesterday	أمس	/ˈjɛstərdeɪ/			en_yesterday
+152	en_w_three	three	num	number	three	ثلاثة	/θri/
+153	en_w_hello	hello	interj	social	hello	مرحبًا	/həˈloʊ/	hi		en_hello
+154	en_w_please	please	adv	social	please	من فضلك	/pliz/			en_please
+155	en_w_boy	boy	noun	people	boy	ولد	/bɔɪ/
+156	en_w_girl	girl	noun	people	girl	بنت، فتاة	/ɡɜrl/
+157	en_w_great	great	adj	describe	great	رائع؛ عظيم	/ɡreɪt/
+158	en_w_bad	bad	adj	describe	bad	سيئ	/bæd/	worse, worst
+159	en_w_nice	nice	adj	describe	nice	لطيف، جميل	/naɪs/
+160	en_w_sleep	sleep	verb	actions	to sleep	ينام	/slip/	slept	irregular=yes
+161	en_w_play	play	verb	actions	to play	يلعب	/pleɪ/
+162	en_w_run	run	verb	actions	to run	يركض	/rʌn/	ran, running	irregular=yes
+163	en_w_show	show	verb	actions	to show	يُري، يعرض	/ʃoʊ/	shown
+164	en_w_car	car	noun	travel	car	سيارة	/kɑr/
+165	en_w_job	job	noun	work	job	وظيفة، عمل	/dʒɑb/
+166	en_w_place	place	noun	places	place	مكان	/pleɪs/
+167	en_w_room	room	noun	home	room	غرفة	/rum/
+168	en_w_head	head	noun	body	head	رأس	/hɛd/
+169	en_w_hand	hand	noun	body	hand	يد	/hænd/
+170	en_w_eye	eye	noun	body	eye	عين	/aɪ/
+171	en_w_water	water	noun	food	water	ماء	/ˈwɔtər/			en_water
+172	en_w_food	food	noun	food	food	طعام	/fud/
+173	en_w_door	door	noun	home	door	باب	/dɔr/
+174	en_w_phone	phone	noun	things	phone	هاتف	/foʊn/
+175	en_w_school	school	noun	places	school	مدرسة	/skul/
+176	en_w_world	world	noun	places	world	عالم	/wɜrld/
+177	en_w_family	family	noun	family	family	عائلة	/ˈfæməli/	families		en_family
+178	en_w_problem	problem	noun	things	problem	مشكلة	/ˈprɑbləm/
+179	en_w_question	question	noun	things	question	سؤال	/ˈkwɛstʃən/
+180	en_w_hour	hour	noun	time	hour	ساعة (60 دقيقة)	/ˈaʊər/
+181	en_w_minute	minute	noun	time	minute	دقيقة	/ˈmɪnɪt/
+182	en_w_week	week	noun	time	week	أسبوع	/wik/			en_week
+183	en_w_next	next	adj	time	next	التالي، القادم	/nɛkst/
+184	en_w_last	last	adj	time	last	الأخير؛ الماضي	/læst/
+185	en_w_long	long	adj	describe	long	طويل	/lɔŋ/
+186	en_w_same	same	adj	describe	same	نفس، مماثل	/seɪm/
+187	en_w_another	another	det	quantity	another	آخر	/əˈnʌðər/
+188	en_w_after	after	prep	time	after	بعد	/ˈæftər/
+189	en_w_before	before	prep	time	before	قبل	/bɪˈfɔr/
+190	en_w_into	into	prep	places	into	إلى داخل	/ˈɪntu/
+191	en_w_over	over	prep	places	over; finished	فوق؛ منتهٍ	/ˈoʊvər/
+192	en_w_around	around	prep	places	around	حول	/əˈraʊnd/
+193	en_w_off	off	adv	places	off	مُطفأ؛ بعيدًا عن	/ɔf/
+194	en_w_away	away	adv	places	away	بعيدًا؛ غائب	/əˈweɪ/
+195	en_w_together	together	adv	people	together	معًا	/təˈɡɛðər/
+196	en_w_many	many	det	quantity	many	كثير (للمعدود)	/ˈmɛni/
+197	en_w_most	most	det	quantity	most	معظم؛ الأكثر	/moʊst/
+198	en_w_enough	enough	det	quantity	enough	كافٍ	/ɪˈnʌf/
+199	en_w_four	four	num	number	four	أربعة	/fɔr/
+200	en_w_five	five	num	number	five	خمسة	/faɪv/
+201	en_w_open	open	verb	actions	to open; open	يفتح؛ مفتوح	/ˈoʊpən/
+202	en_w_close	close	verb	actions	to close	يُغلق	/kloʊz/
+203	en_w_buy	buy	verb	shopping	to buy	يشتري	/baɪ/	bought	irregular=yes
+204	en_w_pay	pay	verb	shopping	to pay	يدفع	/peɪ/	paid	irregular=yes
+205	en_w_send	send	verb	actions	to send	يرسل	/sɛnd/	sent	irregular=yes
+206	en_w_read	read	verb	actions	to read	يقرأ	/rid/		irregular=yes
+207	en_w_write	write	verb	actions	to write	يكتب	/raɪt/	wrote, written, writing	irregular=yes
+208	en_w_speak	speak	verb	actions	to speak	يتكلم	/spik/	spoke, spoken	irregular=yes
+209	en_w_learn	learn	verb	actions	to learn	يتعلم	/lɜrn/	learnt
+210	en_w_change	change	verb	actions	to change	يغيّر؛ يتغيّر	/tʃeɪndʒ/
+211	en_w_meet	meet	verb	social	to meet	يقابل، يلتقي	/mit/	met	irregular=yes
+212	en_w_sit	sit	verb	actions	to sit	يجلس	/sɪt/	sat, sitting	irregular=yes
+213	en_w_walk	walk	verb	actions	to walk	يمشي	/wɔk/
+214	en_w_drink	drink	verb	food	to drink; a drink	يشرب؛ مشروب	/drɪŋk/	drank, drunk	irregular=yes
+215	en_w_turn	turn	verb	actions	to turn; a turn	يدير، ينعطف؛ دور	/tɜrn/
+216	en_w_hope	hope	verb	feelings	to hope	يأمل	/hoʊp/
+217	en_w_forget	forget	verb	actions	to forget	ينسى	/fərˈɡɛt/	forgot, forgotten	irregular=yes
+218	en_w_lose	lose	verb	actions	to lose	يُضيّع؛ يخسر	/luz/	lost	irregular=yes
+219	en_w_win	win	verb	actions	to win	يفوز	/wɪn/	won, winning	irregular=yes
+220	en_w_fine	fine	adj	feelings	fine, well	بخير؛ جميل	/faɪn/
+221	en_w_happy	happy	adj	feelings	happy	سعيد	/ˈhæpi/			en_happy
+222	en_w_tired	tired	adj	feelings	tired	متعب	/ˈtaɪərd/			en_tired
+223	en_w_hungry	hungry	adj	feelings	hungry	جائع	/ˈhʌŋɡri/			en_hungry
+224	en_w_hot	hot	adj	describe	hot	حار، ساخن	/hɑt/
+225	en_w_cold	cold	adj	describe	cold	بارد	/koʊld/
+226	en_w_beautiful	beautiful	adj	describe	beautiful	جميل	/ˈbjutəfəl/
+227	en_w_easy	easy	adj	describe	easy	سهل	/ˈizi/
+228	en_w_hard	hard	adj	describe	hard, difficult	صعب؛ بجد	/hɑrd/
+229	en_w_important	important	adj	describe	important	مهم	/ɪmˈpɔrtənt/
+230	en_w_different	different	adj	describe	different	مختلف	/ˈdɪfərənt/
+231	en_w_small	small	adj	describe	small	صغير	/smɔl/
+232	en_w_young	young	adj	describe	young	صغير السن، شاب	/jʌŋ/
+233	en_w_ready	ready	adj	describe	ready	جاهز، مستعد	/ˈrɛdi/
+234	en_w_late	late	adj	time	late	متأخر	/leɪt/
+235	en_w_early	early	adv	time	early	مبكرًا	/ˈɜrli/
+236	en_w_free	free	adj	describe	free (no cost; not busy)	مجاني؛ متفرغ	/fri/
+237	en_w_wrong	wrong	adj	describe	wrong	خطأ، خاطئ	/rɔŋ/
+238	en_w_sister	sister	noun	family	sister	أخت	/ˈsɪstər/			en_sister
+239	en_w_brother	brother	noun	family	brother	أخ	/ˈbrʌðər/			en_brother
+240	en_w_wife	wife	noun	family	wife	زوجة	/waɪf/	wives
+241	en_w_husband	husband	noun	family	husband	زوج	/ˈhʌzbənd/
+242	en_w_baby	baby	noun	family	baby	طفل رضيع	/ˈbeɪbi/
+243	en_w_doctor	doctor	noun	people	doctor	طبيب	/ˈdɑktər/
+244	en_w_teacher	teacher	noun	people	teacher	معلّم	/ˈtitʃər/
+245	en_w_city	city	noun	places	city	مدينة	/ˈsɪti/
+246	en_w_country	country	noun	places	country	بلد	/ˈkʌntri/
+247	en_w_street	street	noun	places	street	شارع	/strit/
+248	en_w_shop	shop	noun	shopping	shop, store	متجر	/ʃɑp/
+249	en_w_book	book	noun	things	book	كتاب	/bʊk/
+250	en_w_word	word	noun	things	word	كلمة	/wɜrd/
+251	en_w_story	story	noun	things	story	قصة	/ˈstɔri/
+252	en_w_idea	idea	noun	things	idea	فكرة	/aɪˈdiə/
+253	en_w_game	game	noun	things	game	لعبة؛ مباراة	/ɡeɪm/
+254	en_w_music	music	noun	things	music	موسيقى	/ˈmjuzɪk/
+255	en_w_movie	movie	noun	things	movie, film	فيلم	/ˈmuvi/
+256	en_w_table	table	noun	home	table	طاولة	/ˈteɪbəl/
+257	en_w_bed	bed	noun	home	bed	سرير	/bɛd/
+258	en_w_dinner	dinner	noun	food	dinner	عشاء	/ˈdɪnər/
+259	en_w_breakfast	breakfast	noun	food	breakfast	فطور	/ˈbrɛkfəst/
+260	en_w_coffee	coffee	noun	food	coffee	قهوة	/ˈkɔfi/			en_coffee
+261	en_w_tea	tea	noun	food	tea	شاي	/ti/			en_tea
+262	en_w_bread	bread	noun	food	bread	خبز	/brɛd/			en_bread
+263	en_w_bus	bus	noun	travel	bus	حافلة	/bʌs/
+264	en_w_train	train	noun	travel	train	قطار	/treɪn/
+265	en_w_weather	weather	noun	nature	weather	طقس	/ˈwɛðər/
+266	en_w_rain	rain	noun	nature	rain; to rain	مطر؛ تمطر	/reɪn/
+267	en_w_sun	sun	noun	nature	sun	شمس	/sʌn/
+268	en_w_dog	dog	noun	nature	dog	كلب	/dɔɡ/
+269	en_w_birthday	birthday	noun	time	birthday	عيد ميلاد	/ˈbɜrθdeɪ/
+270	en_w_hundred	hundred	num	number	hundred	مئة	/ˈhʌndrəd/
+271	en_w_ten	ten	num	number	ten	عشرة	/tɛn/
+272	en_w_also	also	adv	function	also	أيضًا	/ˈɔlsoʊ/
+273	en_w_as	as	conj	function	as	كـ، مثل	/æz/
+274	en_w_which	which	det	question	which	أي، الذي	/wɪtʃ/
+275	en_w_someone	someone	pron	people	someone	شخص ما	/ˈsʌmwʌn/	somebody
+276	en_w_anything	anything	pron	things	anything	أي شيء	/ˈɛniθɪŋ/
+277	en_w_everyone	everyone	pron	people	everyone	الجميع	/ˈɛvriwʌn/	everybody
+278	en_w_must	must	verb	function	must	يجب	/mʌst/
+279	en_w_lot	lot	noun	quantity	a lot	كثير	/lɑt/
+280	en_w_kind	kind	adj	describe	kind, nice	لطيف، طيب	/kaɪnd/
+281	en_w_part	part	noun	things	part	جزء	/pɑrt/
+282	en_w_end	end	noun	time	end	نهاية	/ɛnd/
+283	en_w_month	month	noun	time	month	شهر	/mʌnθ/
+284	en_w_tonight	tonight	adv	time	tonight	الليلة	/təˈnaɪt/
+285	en_w_soon	soon	adv	time	soon	قريبًا	/sun/
+286	en_w_later	later	adv	time	later	لاحقًا	/ˈleɪtər/
+287	en_w_already	already	adv	time	already	بالفعل	/ɔlˈrɛdi/
+288	en_w_almost	almost	adv	quantity	almost	تقريبًا	/ˈɔlmoʊst/
+289	en_w_often	often	adv	time	often	غالبًا	/ˈɔfən/
+290	en_w_sometimes	sometimes	adv	time	sometimes	أحيانًا	/ˈsʌmtaɪmz/
+291	en_w_under	under	prep	places	under	تحت	/ˈʌndər/
+292	en_w_near	near	prep	places	near	قرب	/nɪr/
+293	en_w_between	between	prep	places	between	بين	/bɪˈtwin/
+294	en_w_without	without	prep	function	without	بدون	/wɪˈðaʊt/
+295	en_w_while	while	conj	time	while; a while	بينما؛ فترة	/waɪl/
+296	en_w_until	until	conj	time	until	حتى	/ənˈtɪl/
+297	en_w_cook	cook	verb	food	to cook	يطبخ	/kʊk/
+298	en_w_wash	wash	verb	home	to wash	يغسل	/wɑʃ/
+299	en_w_clean	clean	adj	home	clean	نظيف	/klin/
+300	en_w_welcome	welcome	adj	social	welcome	مُرحَّب به؛ أهلًا	/ˈwɛlkəm/

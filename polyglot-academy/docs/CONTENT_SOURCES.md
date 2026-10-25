@@ -34,8 +34,31 @@ public release, starting with Turkish, Urdu and Malay, and record the reviewer a
 - **Malay:** Standard Malaysian Malay (Bahasa Melayu). Indonesian (Bahasa Indonesia) differs in
   vocabulary and spelling and is not covered.
 
-## Future word lists
-If a frequency list is used later (for example for the planned 3000-word lists), only use one
-whose licence explicitly allows redistribution in an app, and record here: the source, version,
-licence, attribution text and any share-alike obligations. Without such a source, ranks must be
-documented as approximate.
+## Frequency word lists (3000 words, 10 levels)
+**Ranking source: approximate.** No frequency list with a licence that clearly allows bundling
+in this app has been verified yet, so the ranks are an approximate ordering by an AI model
+(Claude) from general knowledge of everyday, spoken-language frequency, with function words
+(articles, pronouns, prepositions, conjunctions) placed according to their very high frequency.
+Ranks are by lemma (go = go, went, gone). Treat rank differences of a few dozen places as noise.
+If a properly licensed list is adopted later (for example one derived from subtitle corpora or
+Wiktionary, or HSK lists for Mandarin), record here its source, version, licence, attribution and
+any share-alike obligations, and re-rank.
+
+All meanings, translations and example sentences in the word lists are original and AI-written.
+CEFR equivalents of the 10 levels are approximate (1–2 ≈ A1, 3–4 ≈ A2, 5–6 ≈ B1, 7–8 ≈ B2,
+9–10 ≈ B2+ to C1). No claim is made about how much of real text these words cover.
+
+| Language | Levels written | Entries | Examples | Native-speaker review |
+|---|---|---|---|---|
+| English | 1 | 300 / 3000 | 600 | Not reviewed |
+| Mandarin Chinese | — | 0 / 3000 | — | — |
+| Spanish | — | 0 / 3000 | — | — |
+| French | — | 0 / 3000 | — | — |
+| Arabic | — | 0 / 3000 | — | — |
+| Turkish | — | 0 / 3000 | — | — |
+| Urdu | — | 0 / 3000 | — | — |
+| Malay | — | 0 / 3000 | — | — |
+
+Size: one level adds about 146 KB of dex code, about 59 KB compressed in the APK (measured for
+English level 1). All 80 levels would add roughly 5 MB compressed. If that becomes a problem, the
+rows can move from string literals to compressed resources without changing the format.

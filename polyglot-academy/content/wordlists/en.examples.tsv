@@ -1,0 +1,601 @@
+rank	sentence	en	ar	names
+1	The coffee is hot.	The coffee is hot.	القهوة ساخنة.
+1	Close the door, please.	Close the door, please.	أغلق الباب من فضلك.
+2	I am tired today.	I am tired today.	أنا متعب اليوم.
+2	They were at home last night.	They were at home last night.	كانوا في البيت الليلة الماضية.
+3	You can sit here.	You can sit here.	يمكنك الجلوس هنا.
+3	I can help you with that.	I can help you with that.	أستطيع مساعدتك في ذلك.
+4	I want some tea, please.	I want some tea, please.	أريد بعض الشاي من فضلك.
+4	My name is Sara.	My name is Sara.	اسمي سارة.	Sara
+5	We go to school every day.	We go to school every day.	نذهب إلى المدرسة كل يوم.
+5	I need to talk to you.	I need to talk to you.	أحتاج أن أتحدث إليك.
+6	She has a new car.	She has a new car.	لديها سيارة جديدة.
+6	I have an idea.	I have an idea.	لديّ فكرة.
+7	My mother and father are here.	My mother and father are here.	أمي وأبي هنا.
+7	We eat bread and drink tea.	We eat bread and drink tea.	نأكل الخبز ونشرب الشاي.
+8	It is cold today.	It is cold today.	الجو بارد اليوم.
+8	I like this book; it's very good.	I like this book; it's very good.	يعجبني هذا الكتاب؛ إنه جيد جدًا.
+9	I am not hungry now.	I am not hungry now.	لست جائعًا الآن.
+9	This is not my phone.	This is not my phone.	هذا ليس هاتفي.
+10	That car is very old.	That car is very old.	تلك السيارة قديمة جدًا.
+10	I think that he is right.	I think that he is right.	أعتقد أنه على حق.
+11	What do you do?	What do you do?	ماذا تعمل؟
+11	I don't know his name.	I don't know his name.	لا أعرف اسمه.
+12	I have two brothers.	I have two brothers.	لديّ أخوان.
+12	We had dinner at home.	We had dinner at home.	تناولنا العشاء في البيت.
+13	What is your name?	What is your name?	ما اسمك؟
+13	What time is it now?	What time is it now?	كم الساعة الآن؟
+14	She is a friend of my sister.	She is a friend of my sister.	هي صديقة أختي.
+14	Most of the people are here.	Most of the people are here.	معظم الناس هنا.
+15	My father is in the car.	My father is in the car.	أبي في السيارة.
+15	We live in a small house.	We live in a small house.	نعيش في بيت صغير.
+16	We are ready to start.	We are ready to start.	نحن مستعدون للبدء.
+16	Our house is near the school.	Our house is near the school.	بيتنا قريب من المدرسة.
+17	He is my brother.	He is my brother.	هو أخي.
+17	His wife is a doctor.	His wife is a doctor.	زوجته طبيبة.
+18	This is my friend Omar.	This is my friend Omar.	هذا صديقي عمر.	Omar
+18	These books are new.	These books are new.	هذه الكتب جديدة.
+19	The phone is on the table.	The phone is on the table.	الهاتف على الطاولة.
+19	I see her on the bus every day.	I see her on the bus every day.	أراها في الحافلة كل يوم.
+20	This is for you.	This is for you.	هذا لك.
+20	We waited for an hour.	We waited for an hour.	انتظرنا ساعة.
+21	She is a teacher.	She is a teacher.	هي معلّمة.
+21	Her mother is very kind.	Her mother is very kind.	أمها لطيفة جدًا.
+22	They live in the city.	They live in the city.	يعيشون في المدينة.
+22	Their children are at school.	Their children are at school.	أطفالهم في المدرسة.
+23	I know her name.	I know her name.	أعرف اسمها.
+23	Do you know this place?	Do you know this place?	هل تعرف هذا المكان؟
+24	I get up early every morning.	I get up early every morning.	أستيقظ مبكرًا كل صباح.
+24	She got a new job.	She got a new job.	حصلت على وظيفة جديدة.
+25	Let's go home now.	Let's go home now.	لنذهب إلى البيت الآن.
+25	He went to the shop.	He went to the shop.	ذهب إلى المتجر.
+26	Can you help me, please?	Can you help me, please?	هل يمكنك مساعدتي من فضلك؟
+26	I can't find my phone.	I can't find my phone.	لا أستطيع إيجاد هاتفي.
+27	I live with my family.	I live with my family.	أعيش مع عائلتي.
+27	Come with me, please.	Come with me, please.	تعال معي من فضلك.
+28	No, I am not ready.	No, I am not ready.	لا، لست مستعدًا.
+28	There is no water here.	There is no water here.	لا يوجد ماء هنا.
+29	Yes, I know him.	Yes, I know him.	نعم، أعرفه.
+29	Yeah, that is a good idea.	Yeah, that is a good idea.	نعم، هذه فكرة جيدة.
+30	I just want to sleep.	I just want to sleep.	أريد أن أنام فقط.
+30	He just left the house.	He just left the house.	غادر البيت للتو.
+31	There is a dog in the street.	There is a dog in the street.	هناك كلب في الشارع.
+31	Put the book over there.	Put the book over there.	ضع الكتاب هناك.
+32	Please come here and sit down.	Please come here and sit down.	تعال إلى هنا من فضلك واجلس.
+32	My friends are here now.	My friends are here now.	أصدقائي هنا الآن.
+33	All my friends are here.	All my friends are here.	كل أصدقائي هنا.
+33	We ate all the bread.	We ate all the bread.	أكلنا كل الخبز.
+34	I was tired, so I went to bed.	I was tired, so I went to bed.	كنت متعبًا، لذلك ذهبت إلى النوم.
+34	The movie was so good.	The movie was so good.	كان الفيلم جيدًا جدًا.
+35	It is small but nice.	It is small but nice.	إنه صغير لكنه جميل.
+35	I want to come, but I can't.	I want to come, but I can't.	أريد أن آتي، لكنني لا أستطيع.
+36	I like your new car.	I like your new car.	تعجبني سيارتك الجديدة.
+36	She likes music and movies.	She likes music and movies.	تحب الموسيقى والأفلام.
+37	I will call you tomorrow.	I will call you tomorrow.	سأتصل بك غدًا.
+37	It won't take long.	It won't take long.	لن يستغرق وقتًا طويلًا.
+38	Do you want some coffee?	Do you want some coffee?	هل تريد بعض القهوة؟
+38	I want to learn something new.	I want to learn something new.	أريد أن أتعلّم شيئًا جديدًا.
+39	Let's go out tonight.	Let's go out tonight.	لنخرج الليلة.
+39	He is out with his friends.	He is out with his friends.	هو في الخارج مع أصدقائه.
+40	I get up very early.	I get up very early.	أستيقظ مبكرًا جدًا.
+40	Turn the music up, please.	Turn the music up, please.	ارفع صوت الموسيقى من فضلك.
+41	I am at home now.	I am at home now.	أنا في البيت الآن.
+41	Look at the baby.	Look at the baby.	انظر إلى الطفل.
+42	Can you come to my house tonight?	Can you come to my house tonight?	هل يمكنك أن تأتي إلى بيتي الليلة؟
+42	She came home late.	She came home late.	عادت إلى البيت متأخرة.
+43	I think it will rain.	I think it will rain.	أعتقد أنها ستمطر.
+43	What do you think about it?	What do you think about it?	ما رأيك في ذلك؟
+44	You are right about that.	You are right about that.	أنت على حق في ذلك.
+44	Turn right at the school.	Turn right at the school.	انعطف يمينًا عند المدرسة.
+45	I can't talk now.	I can't talk now.	لا أستطيع التحدث الآن.
+45	Where are you now?	Where are you now?	أين أنت الآن؟
+46	This bread is very good.	This bread is very good.	هذا الخبز جيد جدًا.
+46	She is a better cook than me.	She is a better cook than me.	هي طبّاخة أفضل مني.
+47	I can see your house from here.	I can see your house from here.	أستطيع رؤية بيتك من هنا.
+47	We saw a good movie.	We saw a good movie.	شاهدنا فيلمًا جيدًا.
+48	Tell me about your family.	Tell me about your family.	حدّثني عن عائلتك.
+48	The movie is about a dog.	The movie is about a dog.	الفيلم عن كلب.
+49	I am very well, thank you.	I am very well, thank you.	أنا بخير جدًا، شكرًا لك.
+49	Well, I don't know.	Well, I don't know.	حسنًا، لا أعرف.
+50	I have one sister.	I have one sister.	لديّ أخت واحدة.
+50	One day I will go there.	One day I will go there.	يومًا ما سأذهب إلى هناك.
+51	How are you today?	How are you today?	كيف حالك اليوم؟
+51	How do you make this bread?	How do you make this bread?	كيف تصنع هذا الخبز؟
+52	What did she say?	What did she say?	ماذا قالت؟
+52	He said that he was tired.	He said that he was tired.	قال إنه متعب.
+53	Call me if you need help.	Call me if you need help.	اتصل بي إذا احتجت إلى مساعدة.
+53	If it rains, we will not go out.	If it rains, we will not go out.	إذا أمطرت فلن نخرج.
+54	What time is the movie?	What time is the movie?	متى موعد الفيلم؟
+54	I don't have much time.	I don't have much time.	ليس لديّ وقت كثير.
+55	Who is that man?	Who is that man?	من ذلك الرجل؟
+55	Who wants more coffee?	Who wants more coffee?	من يريد المزيد من القهوة؟
+56	Please tell me the story.	Please tell me the story.	من فضلك احكِ لي القصة.
+56	She told me her name.	She told me her name.	أخبرتني باسمها.
+57	Okay, let's go now.	Okay, let's go now.	حسنًا، لنذهب الآن.
+57	Is it okay if I sit here?	Is it okay if I sit here?	هل يمكنني أن أجلس هنا؟
+58	I will make some tea.	I will make some tea.	سأُعدّ بعض الشاي.
+58	She made dinner for us.	She made dinner for us.	أعدّت لنا العشاء.
+59	Oh, I forgot your birthday!	Oh, I forgot your birthday!	آه، نسيت عيد ميلادك!
+59	Oh no, it's raining again.	Oh no, it's raining again.	أوه لا، إنها تمطر مرة أخرى.
+60	Look at that big dog!	Look at that big dog!	انظر إلى ذلك الكلب الكبير!
+60	You look tired today.	You look tired today.	تبدو متعبًا اليوم.
+61	Would you like some tea?	Would you like some tea?	هل تودّ بعض الشاي؟
+61	I would like to go home.	I would like to go home.	أودّ أن أذهب إلى البيت.
+62	Could you open the door?	Could you open the door?	هل يمكنك فتح الباب؟
+62	I couldn't sleep last night.	I couldn't sleep last night.	لم أستطع النوم الليلة الماضية.
+63	Where are you from?	Where are you from?	من أين أنت؟
+63	I got a book from my father.	I got a book from my father.	حصلت على كتاب من أبي.
+64	Take the bus to school.	Take the bus to school.	خذ الحافلة إلى المدرسة.
+64	It took an hour.	It took an hour.	استغرق ذلك ساعة.
+65	When is your birthday?	When is your birthday?	متى عيد ميلادك؟
+65	Call me when you get home.	Call me when you get home.	اتصل بي عندما تصل إلى البيت.
+66	I will be back soon.	I will be back soon.	سأعود قريبًا.
+66	Give me my phone back.	Give me my phone back.	أعِد إليّ هاتفي.
+67	We ate, and then we slept.	We ate, and then we slept.	أكلنا ثم نمنا.
+67	I was young then.	I was young then.	كنت صغيرًا آنذاك.
+68	I need some water.	I need some water.	أحتاج إلى بعض الماء.
+68	Do you need help?	Do you need help?	هل تحتاج إلى مساعدة؟
+69	Let's eat dinner together.	Let's eat dinner together.	لنتناول العشاء معًا.
+69	Let me help you with that.	Let me help you with that.	دعني أساعدك في ذلك.
+70	I have one more thing to say.	I have one more thing to say.	لديّ شيء آخر أقوله.
+70	Put your things on the bed.	Put your things on the bed.	ضع أشياءك على السرير.
+71	I really like this music.	I really like this music.	تعجبني هذه الموسيقى حقًا.
+71	Is that really your car?	Is that really your car?	هل هذه سيارتك حقًا؟
+72	Can I have some bread?	Can I have some bread?	هل يمكنني أن آخذ بعض الخبز؟
+72	Some people like the rain.	Some people like the rain.	بعض الناس يحبون المطر.
+73	Why are you so tired?	Why are you so tired?	لماذا أنت متعب جدًا؟
+73	Why did you leave early?	Why did you leave early?	لماذا غادرت مبكرًا؟
+74	Where is the bus?	Where is the bus?	أين الحافلة؟
+74	Where do you live now?	Where do you live now?	أين تعيش الآن؟
+75	That man is a doctor.	That man is a doctor.	ذلك الرجل طبيب.
+75	Two men are waiting for you.	Two men are waiting for you.	رجلان ينتظرانك.
+76	Many people live in this city.	Many people live in this city.	يعيش كثير من الناس في هذه المدينة.
+76	The people here are very nice.	The people here are very nice.	الناس هنا لطفاء جدًا.
+77	Have a nice day!	Have a nice day!	يومًا سعيدًا!
+77	I work five days a week.	I work five days a week.	أعمل خمسة أيام في الأسبوع.
+78	Give me the book, please.	Give me the book, please.	أعطني الكتاب من فضلك.
+78	My father gave me some money.	My father gave me some money.	أعطاني أبي بعض المال.
+79	Is this the way to the school?	Is this the way to the school?	هل هذا هو الطريق إلى المدرسة؟
+79	There is no other way.	There is no other way.	لا يوجد طريق آخر.
+80	I want to eat something.	I want to eat something.	أريد أن آكل شيئًا.
+80	Did you say something?	Did you say something?	هل قلت شيئًا؟
+81	The weather is very hot.	The weather is very hot.	الطقس حار جدًا.
+81	Thank you very much!	Thank you very much!	شكرًا جزيلًا!
+82	Do you want tea or coffee?	Do you want tea or coffee?	هل تريد شايًا أم قهوة؟
+82	Is it big or small?	Is it big or small?	هل هو كبير أم صغير؟
+83	Can I have more bread?	Can I have more bread?	هل يمكنني أن آخذ المزيد من الخبز؟
+83	I need more time.	I need more time.	أحتاج إلى وقت أكثر.
+84	Can we talk later?	Can we talk later?	هل يمكننا التحدث لاحقًا؟
+84	They talked for an hour.	They talked for an hour.	تحدثوا لمدة ساعة.
+85	I'm sorry, I'm late.	I'm sorry, I'm late.	آسف، لقد تأخرت.
+85	Sorry, I don't understand.	Sorry, I don't understand.	عذرًا، لا أفهم.
+86	Thank you for your help.	Thank you for your help.	شكرًا على مساعدتك.
+86	Thanks a lot for dinner.	Thanks a lot for dinner.	شكرًا جزيلًا على العشاء.
+87	I love my family.	I love my family.	أحب عائلتي.
+87	She loves her new job.	She loves her new job.	تحب وظيفتها الجديدة.
+88	We have a little house.	We have a little house.	لدينا بيت صغير.
+88	Can I have a little water?	Can I have a little water?	هل يمكنني أن آخذ قليلًا من الماء؟
+89	There is nothing in the room.	There is nothing in the room.	لا يوجد شيء في الغرفة.
+89	I have nothing to say.	I have nothing to say.	ليس لديّ ما أقوله.
+90	I never eat breakfast.	I never eat breakfast.	لا أتناول الفطور أبدًا.
+90	She has never been to this city.	She has never been to this city.	لم تزر هذه المدينة أبدًا.
+91	What does this word mean?	What does this word mean?	ماذا تعني هذه الكلمة؟
+91	I didn't mean that.	I didn't mean that.	لم أقصد ذلك.
+92	I'm hungry because I didn't eat.	I'm hungry because I didn't eat.	أنا جائع لأنني لم آكل.
+92	We went home because it was late.	We went home because it was late.	ذهبنا إلى البيت لأن الوقت كان متأخرًا.
+93	Are you sure about that?	Are you sure about that?	هل أنت متأكد من ذلك؟
+93	Sure, I can help you.	Sure, I can help you.	بالتأكيد، أستطيع مساعدتك.
+94	My mother works at a school.	My mother works at a school.	تعمل أمي في مدرسة.
+94	I work from home today.	I work from home today.	أعمل من البيت اليوم.
+95	I will call you tonight.	I will call you tonight.	سأتصل بك الليلة.
+95	Please call a doctor.	Please call a doctor.	من فضلك اتصل بطبيب.
+96	Can I help you?	Can I help you?	هل أستطيع مساعدتك؟
+96	My brother helped me a lot.	My brother helped me a lot.	ساعدني أخي كثيرًا.
+97	I want to go home.	I want to go home.	أريد أن أذهب إلى البيت.
+97	She is at home today.	She is at home today.	هي في البيت اليوم.
+98	Life in the city is hard.	Life in the city is hard.	الحياة في المدينة صعبة.
+98	I have a good life here.	I have a good life here.	لديّ حياة جيدة هنا.
+99	Do you have any money?	Do you have any money?	هل لديك أي مال؟
+99	I don't have any questions.	I don't have any questions.	ليس لديّ أي أسئلة.
+100	I have two children.	I have two children.	لديّ طفلان.
+100	We waited two hours.	We waited two hours.	انتظرنا ساعتين.
+101	I go to work by bus.	I go to work by bus.	أذهب إلى العمل بالحافلة.
+101	Sit by the door, please.	Sit by the door, please.	اجلس بجانب الباب من فضلك.
+102	I can't find my book.	I can't find my book.	لا أستطيع إيجاد كتابي.
+102	She found a good job.	She found a good job.	وجدت وظيفة جيدة.
+103	Are you still at work?	Are you still at work?	هل ما زلت في العمل؟
+103	It is still raining.	It is still raining.	ما زالت تمطر.
+104	I feel tired today.	I feel tired today.	أشعر بالتعب اليوم.
+104	How do you feel now?	How do you feel now?	كيف تشعر الآن؟
+105	Put the food on the table.	Put the food on the table.	ضع الطعام على الطاولة.
+105	Where did you put my phone?	Where did you put my phone?	أين وضعت هاتفي؟
+106	Try this bread, it's good.	Try this bread, it's good.	جرّب هذا الخبز، إنه جيد.
+106	I tried to call you.	I tried to call you.	حاولت الاتصال بك.
+107	Maybe it will rain tomorrow.	Maybe it will rain tomorrow.	ربما تمطر غدًا.
+107	Maybe we can meet tonight.	Maybe we can meet tonight.	ربما نستطيع أن نلتقي الليلة.
+108	Where are the other children?	Where are the other children?	أين بقية الأطفال؟
+108	I have no other questions.	I have no other questions.	ليس لديّ أسئلة أخرى.
+109	Can you say that again?	Can you say that again?	هل يمكنك أن تقول ذلك مرة أخرى؟
+109	I want to see you again.	I want to see you again.	أريد أن أراك مرة أخرى.
+110	How much is this book?	How much is this book?	بكم هذا الكتاب؟
+110	Thank you so much.	Thank you so much.	شكرًا جزيلًا.
+111	They live in a big house.	They live in a big house.	يعيشون في بيت كبير.
+111	This city is bigger than mine.	This city is bigger than mine.	هذه المدينة أكبر من مدينتي.
+112	Please sit down here.	Please sit down here.	من فضلك اجلس هنا.
+112	Turn the music down, please.	Turn the music down, please.	اخفض صوت الموسيقى من فضلك.
+113	This tea is too hot.	This tea is too hot.	هذا الشاي ساخن جدًا.
+113	I want to come too.	I want to come too.	أريد أن آتي أيضًا.
+114	This is my first time here.	This is my first time here.	هذه أول مرة لي هنا.
+114	First, wash your hands.	First, wash your hands.	أولًا، اغسل يديك.
+115	You should eat something.	You should eat something.	ينبغي أن تأكل شيئًا.
+115	We should go home now.	We should go home now.	ينبغي أن نذهب إلى البيت الآن.
+116	Can you hear me now?	Can you hear me now?	هل تسمعني الآن؟
+116	I heard a dog in the night.	I heard a dog in the night.	سمعت كلبًا في الليل.
+117	Everything is ready for dinner.	Everything is ready for dinner.	كل شيء جاهز للعشاء.
+117	Thank you for everything.	Thank you for everything.	شكرًا على كل شيء.
+118	What time do you leave work?	What time do you leave work?	متى تغادر العمل؟
+118	She left her phone at home.	She left her phone at home.	تركت هاتفها في البيت.
+119	Good night, see you tomorrow.	Good night, see you tomorrow.	تصبح على خير، أراك غدًا.
+119	I work at night.	I work at night.	أعمل في الليل.
+120	That woman is my teacher.	That woman is my teacher.	تلك المرأة معلّمتي.
+120	Many women work here.	Many women work here.	تعمل هنا نساء كثيرات.
+121	She is my best friend.	She is my best friend.	هي أعزّ صديقاتي.
+121	I went out with my friends.	I went out with my friends.	خرجت مع أصدقائي.
+122	I have a new phone.	I have a new phone.	لديّ هاتف جديد.
+122	Is this car new?	Is this car new?	هل هذه السيارة جديدة؟
+123	My car is very old.	My car is very old.	سيارتي قديمة جدًا.
+123	How old are you?	How old are you?	كم عمرك؟
+124	Can I ask you a question?	Can I ask you a question?	هل يمكنني أن أسألك سؤالًا؟
+124	Ask your teacher for help.	Ask your teacher for help.	اطلب المساعدة من معلّمك.
+125	My father works in a shop.	My father works in a shop.	يعمل أبي في متجر.
+125	Dad, can you help me?	Dad, can you help me?	أبي، هل يمكنك مساعدتي؟
+126	My mother makes good bread.	My mother makes good bread.	تصنع أمي خبزًا جيدًا.
+126	Mom is at home today.	Mom is at home today.	أمي في البيت اليوم.
+127	Our house has four rooms.	Our house has four rooms.	في بيتنا أربع غرف.
+127	Come to my house tonight.	Come to my house tonight.	تعال إلى بيتي الليلة.
+128	Write your name here, please.	Write your name here, please.	اكتب اسمك هنا من فضلك.
+128	I forgot his name.	I forgot his name.	نسيت اسمه.
+129	I don't have much money.	I don't have much money.	ليس لديّ مال كثير.
+129	She paid the money yesterday.	She paid the money yesterday.	دفعت المال أمس.
+130	The child is sleeping now.	The child is sleeping now.	الطفل نائم الآن.
+130	They have three kids.	They have three kids.	لديهم ثلاثة أطفال.
+131	She is always late.	She is always late.	هي متأخرة دائمًا.
+131	I always drink coffee in the morning.	I always drink coffee in the morning.	أشرب القهوة دائمًا في الصباح.
+132	I have only five minutes.	I have only five minutes.	لديّ خمس دقائق فقط.
+132	She is the only doctor here.	She is the only doctor here.	هي الطبيبة الوحيدة هنا.
+133	He works even at night.	He works even at night.	يعمل حتى في الليل.
+133	It is even colder today.	It is even colder today.	الجو أبرد اليوم.
+134	What happened to your car?	What happened to your car?	ماذا حدث لسيارتك؟
+134	It happens every day.	It happens every day.	يحدث ذلك كل يوم.
+135	My brother is older than me.	My brother is older than me.	أخي أكبر مني.
+135	Tea is better than coffee.	Tea is better than coffee.	الشاي أفضل من القهوة.
+136	I see him every day.	I see him every day.	أراه كل يوم.
+136	Every room has a big bed.	Every room has a big bed.	في كل غرفة سرير كبير.
+137	Keep the door open, please.	Keep the door open, please.	أبقِ الباب مفتوحًا من فضلك.
+137	She kept the old books.	She kept the old books.	احتفظت بالكتب القديمة.
+138	Please stop the car here.	Please stop the car here.	من فضلك أوقف السيارة هنا.
+138	The rain stopped at night.	The rain stopped at night.	توقف المطر في الليل.
+139	Please wait a minute.	Please wait a minute.	انتظر دقيقة من فضلك.
+139	We waited for the bus.	We waited for the bus.	انتظرنا الحافلة.
+140	I can't believe it!	I can't believe it!	لا أصدق ذلك!
+140	Do you believe his story?	Do you believe his story?	هل تصدّق قصته؟
+141	I don't understand this word.	I don't understand this word.	لا أفهم هذه الكلمة.
+141	Do you understand me now?	Do you understand me now?	هل تفهمني الآن؟
+142	Do you remember my name?	Do you remember my name?	هل تتذكر اسمي؟
+142	I remember that day well.	I remember that day well.	أتذكر ذلك اليوم جيدًا.
+143	Let's eat something now.	Let's eat something now.	لنأكل شيئًا الآن.
+143	We ate dinner very late.	We ate dinner very late.	تناولنا العشاء متأخرين جدًا.
+144	Where do you live?	Where do you live?	أين تسكن؟
+144	My family lives in a small city.	My family lives in a small city.	تعيش عائلتي في مدينة صغيرة.
+145	The movie starts at five.	The movie starts at five.	يبدأ الفيلم في الخامسة.
+145	Let's start the game.	Let's start the game.	لنبدأ اللعبة.
+146	Bring me some water, please.	Bring me some water, please.	أحضر لي بعض الماء من فضلك.
+146	She brought her baby with her.	She brought her baby with her.	أحضرت طفلها معها.
+147	I have a new job this year.	I have a new job this year.	لديّ وظيفة جديدة هذا العام.
+147	She is ten years old.	She is ten years old.	عمرها عشر سنوات.
+148	Good morning, how are you?	Good morning, how are you?	صباح الخير، كيف حالك؟
+148	I drink coffee every morning.	I drink coffee every morning.	أشرب القهوة كل صباح.
+149	What do you want to do today?	What do you want to do today?	ماذا تريد أن تفعل اليوم؟
+149	Today is my birthday.	Today is my birthday.	اليوم عيد ميلادي.
+150	See you tomorrow morning.	See you tomorrow morning.	أراك صباح الغد.
+150	Tomorrow we will go to the city.	Tomorrow we will go to the city.	غدًا سنذهب إلى المدينة.
+151	I saw your brother yesterday.	I saw your brother yesterday.	رأيت أخاك أمس.
+151	It rained all day yesterday.	It rained all day yesterday.	أمطرت طوال اليوم أمس.
+152	I have three sisters.	I have three sisters.	لديّ ثلاث أخوات.
+152	We waited for three hours.	We waited for three hours.	انتظرنا ثلاث ساعات.
+153	Hello, my name is Adam.	Hello, my name is Adam.	مرحبًا، اسمي آدم.	Adam
+153	Hi, how are you today?	Hi, how are you today?	مرحبًا، كيف حالك اليوم؟
+154	Please close the door.	Please close the door.	من فضلك أغلق الباب.
+154	Can I have some water, please?	Can I have some water, please?	هل يمكنني أن آخذ بعض الماء من فضلك؟
+155	The boy is playing with the dog.	The boy is playing with the dog.	الولد يلعب مع الكلب.
+155	They have two boys.	They have two boys.	لديهم ولدان.
+156	That girl is my sister.	That girl is my sister.	تلك الفتاة أختي.
+156	The girls are at school today.	The girls are at school today.	البنات في المدرسة اليوم.
+157	That is a great idea!	That is a great idea!	هذه فكرة رائعة!
+157	We had a great time.	We had a great time.	قضينا وقتًا رائعًا.
+158	The weather is bad today.	The weather is bad today.	الطقس سيئ اليوم.
+158	It was the worst day of my life.	It was the worst day of my life.	كان أسوأ يوم في حياتي.
+159	Your house is very nice.	Your house is very nice.	بيتك جميل جدًا.
+159	It was nice to meet you.	It was nice to meet you.	سُررت بلقائك.
+160	I want to sleep now.	I want to sleep now.	أريد أن أنام الآن.
+160	The baby slept all night.	The baby slept all night.	نام الطفل طوال الليل.
+161	The children play in the street.	The children play in the street.	يلعب الأطفال في الشارع.
+161	Do you want to play a game?	Do you want to play a game?	هل تريد أن تلعب لعبة؟
+162	I run every morning.	I run every morning.	أركض كل صباح.
+162	The dog ran to the door.	The dog ran to the door.	ركض الكلب نحو الباب.
+163	Can you show me the way?	Can you show me the way?	هل يمكنك أن تريني الطريق؟
+163	She showed me her new house.	She showed me her new house.	أرتني بيتها الجديد.
+164	My car is in the street.	My car is in the street.	سيارتي في الشارع.
+164	We went to the city by car.	We went to the city by car.	ذهبنا إلى المدينة بالسيارة.
+165	I love my new job.	I love my new job.	أحب وظيفتي الجديدة.
+165	What is your job?	What is your job?	ما عملك؟
+166	This is a nice place.	This is a nice place.	هذا مكان جميل.
+166	Is this place free?	Is this place free?	هل هذا المكان شاغر؟
+167	My room is very small.	My room is very small.	غرفتي صغيرة جدًا.
+167	The children are in their room.	The children are in their room.	الأطفال في غرفتهم.
+168	Put your hand on your head.	Put your hand on your head.	ضع يدك على رأسك.
+168	She turned her head to look.	She turned her head to look.	أدارت رأسها لتنظر.
+169	Wash your hands before dinner.	Wash your hands before dinner.	اغسل يديك قبل العشاء.
+169	Give me your hand.	Give me your hand.	أعطني يدك.
+170	Close your eyes, please.	Close your eyes, please.	أغمض عينيك من فضلك.
+170	She has beautiful eyes.	She has beautiful eyes.	لديها عينان جميلتان.
+171	Can I have some water?	Can I have some water?	هل يمكنني أن آخذ بعض الماء؟
+171	The water is too cold.	The water is too cold.	الماء بارد جدًا.
+172	The food here is very good.	The food here is very good.	الطعام هنا جيد جدًا.
+172	We need to buy some food.	We need to buy some food.	نحتاج إلى شراء بعض الطعام.
+173	Please open the door.	Please open the door.	من فضلك افتح الباب.
+173	Someone is at the door.	Someone is at the door.	هناك شخص عند الباب.
+174	Where is my phone?	Where is my phone?	أين هاتفي؟
+174	She called me on the phone.	She called me on the phone.	اتصلت بي على الهاتف.
+175	The children go to school by bus.	The children go to school by bus.	يذهب الأطفال إلى المدرسة بالحافلة.
+175	My school was very big.	My school was very big.	كانت مدرستي كبيرة جدًا.
+176	This is the best food in the world.	This is the best food in the world.	هذا أفضل طعام في العالم.
+176	I want to see the world.	I want to see the world.	أريد أن أرى العالم.
+177	My family is very big.	My family is very big.	عائلتي كبيرة جدًا.
+177	We eat dinner as a family.	We eat dinner as a family.	نتناول العشاء معًا كعائلة.
+178	There is a problem with my car.	There is a problem with my car.	هناك مشكلة في سيارتي.
+178	No problem, I can help.	No problem, I can help.	لا مشكلة، أستطيع المساعدة.
+179	I have a question for you.	I have a question for you.	لديّ سؤال لك.
+179	That is a good question.	That is a good question.	هذا سؤال جيد.
+180	The movie is two hours long.	The movie is two hours long.	مدة الفيلم ساعتان.
+180	I will be back in an hour.	I will be back in an hour.	سأعود بعد ساعة.
+181	Wait a minute, please.	Wait a minute, please.	انتظر دقيقة من فضلك.
+181	The bus comes in five minutes.	The bus comes in five minutes.	تصل الحافلة بعد خمس دقائق.
+182	I go to the shop every week.	I go to the shop every week.	أذهب إلى المتجر كل أسبوع.
+182	See you next week.	See you next week.	أراك الأسبوع القادم.
+183	The next bus is at ten.	The next bus is at ten.	الحافلة التالية في العاشرة.
+183	Next time, call me first.	Next time, call me first.	في المرة القادمة اتصل بي أولًا.
+184	I saw her last week.	I saw her last week.	رأيتها الأسبوع الماضي.
+184	This is the last bus tonight.	This is the last bus tonight.	هذه آخر حافلة الليلة.
+185	It was a long day.	It was a long day.	كان يومًا طويلًا.
+185	How long will you be here?	How long will you be here?	كم من الوقت ستبقى هنا؟
+186	We go to the same school.	We go to the same school.	نذهب إلى المدرسة نفسها.
+186	Your phone is the same as mine.	Your phone is the same as mine.	هاتفك مثل هاتفي.
+187	Can I have another coffee?	Can I have another coffee?	هل يمكنني أن آخذ قهوة أخرى؟
+187	Let's try another way.	Let's try another way.	لنجرّب طريقة أخرى.
+188	Call me after dinner.	Call me after dinner.	اتصل بي بعد العشاء.
+188	After work, I go home.	After work, I go home.	بعد العمل أذهب إلى البيت.
+189	Wash your hands before you eat.	Wash your hands before you eat.	اغسل يديك قبل أن تأكل.
+189	I have seen this movie before.	I have seen this movie before.	شاهدت هذا الفيلم من قبل.
+190	She went into the house.	She went into the house.	دخلت إلى البيت.
+190	The dog ran into the room.	The dog ran into the room.	ركض الكلب إلى داخل الغرفة.
+191	The game is over.	The game is over.	انتهت اللعبة.
+191	Come over to my house tonight.	Come over to my house tonight.	تعال إلى بيتي الليلة.
+192	We walked around the city.	We walked around the city.	تجولنا في أنحاء المدينة.
+192	There are shops all around here.	There are shops all around here.	توجد متاجر في كل مكان هنا.
+193	Turn off the phone, please.	Turn off the phone, please.	أطفئ الهاتف من فضلك.
+193	We got off the bus.	We got off the bus.	نزلنا من الحافلة.
+194	Go away, I want to sleep.	Go away, I want to sleep.	اذهب، أريد أن أنام.
+194	She is away this week.	She is away this week.	هي غائبة هذا الأسبوع.
+195	Let's eat together tonight.	Let's eat together tonight.	لنأكل معًا الليلة.
+195	We work together at the shop.	We work together at the shop.	نعمل معًا في المتجر.
+196	How many children do you have?	How many children do you have?	كم طفلًا لديك؟
+196	There are many people here.	There are many people here.	هناك كثير من الناس هنا.
+197	Most of my friends live here.	Most of my friends live here.	يعيش معظم أصدقائي هنا.
+197	This is the most beautiful place.	This is the most beautiful place.	هذا أجمل مكان.
+198	Do we have enough food?	Do we have enough food?	هل لدينا ما يكفي من الطعام؟
+198	I don't have enough time.	I don't have enough time.	ليس لديّ وقت كافٍ.
+199	We have four rooms.	We have four rooms.	لدينا أربع غرف.
+199	The shop opens at four.	The shop opens at four.	يفتح المتجر في الرابعة.
+200	I have five minutes.	I have five minutes.	لديّ خمس دقائق.
+200	She is five years old.	She is five years old.	عمرها خمس سنوات.
+201	The shop is open today.	The shop is open today.	المتجر مفتوح اليوم.
+201	Open your book, please.	Open your book, please.	افتح كتابك من فضلك.
+202	Close your book, please.	Close your book, please.	أغلق كتابك من فضلك.
+202	The shop closes at ten.	The shop closes at ten.	يُغلق المتجر في العاشرة.
+203	I want to buy a new car.	I want to buy a new car.	أريد أن أشتري سيارة جديدة.
+203	She bought some bread.	She bought some bread.	اشترت بعض الخبز.
+204	Can I pay later?	Can I pay later?	هل يمكنني أن أدفع لاحقًا؟
+204	He paid for our dinner.	He paid for our dinner.	دفع ثمن عشائنا.
+205	Please send me the book.	Please send me the book.	من فضلك أرسل لي الكتاب.
+205	I sent the money yesterday.	I sent the money yesterday.	أرسلت المال أمس.
+206	I read a book every week.	I read a book every week.	أقرأ كتابًا كل أسبوع.
+206	Can you read this word?	Can you read this word?	هل تستطيع قراءة هذه الكلمة؟
+207	She writes stories for children.	She writes stories for children.	تكتب قصصًا للأطفال.
+207	I wrote a long story.	I wrote a long story.	كتبت قصة طويلة.
+208	Can you speak to the teacher?	Can you speak to the teacher?	هل يمكنك التحدث إلى المعلّم؟
+208	She speaks very well.	She speaks very well.	تتحدث جيدًا جدًا.
+209	I want to learn to cook.	I want to learn to cook.	أريد أن أتعلّم الطبخ.
+209	The children learn a lot at school.	The children learn a lot at school.	يتعلّم الأطفال كثيرًا في المدرسة.
+210	The weather changes every day.	The weather changes every day.	يتغيّر الطقس كل يوم.
+210	Can I change my room?	Can I change my room?	هل يمكنني تغيير غرفتي؟
+211	Nice to meet you.	Nice to meet you.	تشرّفت بمعرفتك.
+211	We met at school.	We met at school.	التقينا في المدرسة.
+212	Can I sit here?	Can I sit here?	هل يمكنني الجلوس هنا؟
+212	She sat next to me.	She sat next to me.	جلست بجانبي.
+213	I walk to work every day.	I walk to work every day.	أمشي إلى العمل كل يوم.
+213	We walked home together.	We walked home together.	مشينا إلى البيت معًا.
+214	What do you want to drink?	What do you want to drink?	ماذا تريد أن تشرب؟
+214	I drank too much coffee.	I drank too much coffee.	شربت قهوة كثيرة جدًا.
+215	Turn right at the next street.	Turn right at the next street.	انعطف يمينًا عند الشارع التالي.
+215	It's your turn to play.	It's your turn to play.	حان دورك في اللعب.
+216	I hope you feel better.	I hope you feel better.	أتمنى أن تتحسن.
+216	We hope to see you soon.	We hope to see you soon.	نأمل أن نراك قريبًا.
+217	Don't forget your phone.	Don't forget your phone.	لا تنسَ هاتفك.
+217	I forgot her birthday.	I forgot her birthday.	نسيت عيد ميلادها.
+218	I lost my phone again.	I lost my phone again.	أضعت هاتفي مرة أخرى.
+218	We lost the game.	We lost the game.	خسرنا المباراة.
+219	Our school won the game.	Our school won the game.	فازت مدرستنا في المباراة.
+219	I hope we win tonight.	I hope we win tonight.	أتمنى أن نفوز الليلة.
+220	I'm fine, thank you.	I'm fine, thank you.	أنا بخير، شكرًا لك.
+220	The weather is fine today.	The weather is fine today.	الطقس جميل اليوم.
+221	I am very happy today.	I am very happy today.	أنا سعيد جدًا اليوم.
+221	Happy birthday to you!	Happy birthday to you!	عيد ميلاد سعيد!
+222	I'm too tired to cook.	I'm too tired to cook.	أنا متعب جدًا لأطبخ.
+222	The children are tired after school.	The children are tired after school.	الأطفال متعبون بعد المدرسة.
+223	Are you hungry now?	Are you hungry now?	هل أنت جائع الآن؟
+223	I'm very hungry, let's eat.	I'm very hungry, let's eat.	أنا جائع جدًا، لنأكل.
+224	It is hot in the city.	It is hot in the city.	الجو حار في المدينة.
+224	I want a hot drink.	I want a hot drink.	أريد مشروبًا ساخنًا.
+225	The water is cold.	The water is cold.	الماء بارد.
+225	It is very cold at night.	It is very cold at night.	الجو بارد جدًا في الليل.
+226	What a beautiful day!	What a beautiful day!	يا له من يوم جميل!
+226	Your house is beautiful.	Your house is beautiful.	بيتك جميل.
+227	This question is easy.	This question is easy.	هذا السؤال سهل.
+227	It is not easy to learn.	It is not easy to learn.	ليس من السهل التعلّم.
+228	This job is very hard.	This job is very hard.	هذا العمل صعب جدًا.
+228	She works hard every day.	She works hard every day.	تعمل بجد كل يوم.
+229	This is very important.	This is very important.	هذا مهم جدًا.
+229	Family is important to me.	Family is important to me.	العائلة مهمة بالنسبة لي.
+230	We are very different.	We are very different.	نحن مختلفان جدًا.
+230	This city is different at night.	This city is different at night.	هذه المدينة مختلفة في الليل.
+231	I live in a small room.	I live in a small room.	أعيش في غرفة صغيرة.
+231	This car is too small for us.	This car is too small for us.	هذه السيارة صغيرة جدًا علينا.
+232	My mother looks very young.	My mother looks very young.	تبدو أمي صغيرة جدًا في السن.
+232	When I was young, I played a lot.	When I was young, I played a lot.	عندما كنت صغيرًا، كنت ألعب كثيرًا.
+233	Dinner is ready, come and eat!	Dinner is ready, come and eat!	العشاء جاهز، تعالوا وكلوا!
+233	Are you ready to go?	Are you ready to go?	هل أنت مستعد للذهاب؟
+234	Sorry, I am late again.	Sorry, I am late again.	آسف، لقد تأخرت مرة أخرى.
+234	It's late, let's go home.	It's late, let's go home.	الوقت متأخر، لنذهب إلى البيت.
+235	We went to bed early.	We went to bed early.	ذهبنا إلى النوم مبكرًا.
+235	The bus came early today.	The bus came early today.	جاءت الحافلة مبكرًا اليوم.
+236	Are you free tonight?	Are you free tonight?	هل أنت متفرغ الليلة؟
+236	The water here is free.	The water here is free.	الماء هنا مجاني.
+237	Sorry, that is the wrong way.	Sorry, that is the wrong way.	عذرًا، هذا هو الطريق الخطأ.
+237	What is wrong with you?	What is wrong with you?	ما بك؟
+238	My sister is a teacher.	My sister is a teacher.	أختي معلّمة.
+238	I have two little sisters.	I have two little sisters.	لديّ أختان صغيرتان.
+239	My brother lives in another city.	My brother lives in another city.	يعيش أخي في مدينة أخرى.
+239	Her brothers are at home.	Her brothers are at home.	إخوتها في البيت.
+240	This is my wife, Lina.	This is my wife, Lina.	هذه زوجتي لينا.	Lina
+240	His wife works at the school.	His wife works at the school.	تعمل زوجته في المدرسة.
+241	Her husband is a doctor.	Her husband is a doctor.	زوجها طبيب.
+241	My husband cooks dinner every night.	My husband cooks dinner every night.	يطبخ زوجي العشاء كل ليلة.
+242	The baby is sleeping.	The baby is sleeping.	الطفل نائم.
+242	They have a new baby.	They have a new baby.	رُزقوا بطفل جديد.
+243	I need to see a doctor.	I need to see a doctor.	أحتاج إلى رؤية طبيب.
+243	The doctor is very kind.	The doctor is very kind.	الطبيب لطيف جدًا.
+244	Our teacher is very nice.	Our teacher is very nice.	معلّمنا لطيف جدًا.
+244	My father was a teacher.	My father was a teacher.	كان أبي معلّمًا.
+245	I love this city.	I love this city.	أحب هذه المدينة.
+245	The city is big and beautiful.	The city is big and beautiful.	المدينة كبيرة وجميلة.
+246	This is a beautiful country.	This is a beautiful country.	هذا بلد جميل.
+246	What country are you from?	What country are you from?	من أي بلد أنت؟
+247	The shop is on this street.	The shop is on this street.	المتجر في هذا الشارع.
+247	Don't play in the street!	Don't play in the street!	لا تلعب في الشارع!
+248	The shop is open until ten.	The shop is open until ten.	المتجر مفتوح حتى العاشرة.
+248	I need to go to the shop.	I need to go to the shop.	أحتاج أن أذهب إلى المتجر.
+249	This book is very good.	This book is very good.	هذا الكتاب جيد جدًا.
+249	I read books at night.	I read books at night.	أقرأ الكتب في الليل.
+250	I don't know this word.	I don't know this word.	لا أعرف هذه الكلمة.
+250	Write the new words in your book.	Write the new words in your book.	اكتب الكلمات الجديدة في كتابك.
+251	Tell me a story, please.	Tell me a story, please.	احكِ لي قصة من فضلك.
+251	It's a long story.	It's a long story.	إنها قصة طويلة.
+252	I have a better idea.	I have a better idea.	لديّ فكرة أفضل.
+252	I have no idea where he is.	I have no idea where he is.	ليس لديّ أي فكرة أين هو.
+253	We saw the game together.	We saw the game together.	شاهدنا المباراة معًا.
+253	This game is very easy.	This game is very easy.	هذه اللعبة سهلة جدًا.
+254	I like music very much.	I like music very much.	أحب الموسيقى كثيرًا.
+254	Turn off the music, please.	Turn off the music, please.	أطفئ الموسيقى من فضلك.
+255	Let's see a movie tonight.	Let's see a movie tonight.	لنشاهد فيلمًا الليلة.
+255	The movie was very long.	The movie was very long.	كان الفيلم طويلًا جدًا.
+256	The children sat at the table.	The children sat at the table.	جلس الأطفال إلى الطاولة.
+256	We need a bigger table.	We need a bigger table.	نحتاج إلى طاولة أكبر.
+257	I go to bed at ten.	I go to bed at ten.	أذهب إلى السرير في العاشرة.
+257	The bed in my room is small.	The bed in my room is small.	السرير في غرفتي صغير.
+258	What's for dinner tonight?	What's for dinner tonight?	ما العشاء الليلة؟
+258	We had dinner with friends.	We had dinner with friends.	تناولنا العشاء مع الأصدقاء.
+259	I eat breakfast at home.	I eat breakfast at home.	أتناول الفطور في البيت.
+259	We have bread and tea for breakfast.	We have bread and tea for breakfast.	نتناول الخبز والشاي على الفطور.
+260	This coffee is very good.	This coffee is very good.	هذه القهوة جيدة جدًا.
+260	Let's meet for coffee tomorrow.	Let's meet for coffee tomorrow.	لنلتقِ لشرب القهوة غدًا.
+261	I make tea for my mother.	I make tea for my mother.	أُعدّ الشاي لأمي.
+261	The tea is too cold now.	The tea is too cold now.	الشاي بارد جدًا الآن.
+262	I buy bread every morning.	I buy bread every morning.	أشتري الخبز كل صباح.
+262	This bread is still hot.	This bread is still hot.	هذا الخبز ما زال ساخنًا.
+263	I take the bus to work.	I take the bus to work.	أركب الحافلة إلى العمل.
+263	The bus is late again.	The bus is late again.	الحافلة متأخرة مرة أخرى.
+264	The train leaves at five.	The train leaves at five.	يغادر القطار في الخامسة.
+264	I like to read on the train.	I like to read on the train.	أحب القراءة في القطار.
+265	How is the weather today?	How is the weather today?	كيف الطقس اليوم؟
+265	The weather was bad all week.	The weather was bad all week.	كان الطقس سيئًا طوال الأسبوع.
+266	There is a lot of rain this month.	There is a lot of rain this month.	هناك أمطار كثيرة هذا الشهر.
+266	Look, it's raining again!	Look, it's raining again!	انظر، إنها تمطر مرة أخرى!
+267	The sun is very hot today.	The sun is very hot today.	الشمس حارة جدًا اليوم.
+267	Let's sit in the sun.	Let's sit in the sun.	لنجلس في الشمس.
+268	We have a big dog.	We have a big dog.	لدينا كلب كبير.
+268	The dog sleeps by the door.	The dog sleeps by the door.	ينام الكلب بجانب الباب.
+269	It's my sister's birthday tomorrow.	It's my sister's birthday tomorrow.	غدًا عيد ميلاد أختي.
+269	What do you want for your birthday?	What do you want for your birthday?	ماذا تريد في عيد ميلادك؟
+270	There are a hundred people here.	There are a hundred people here.	هناك مئة شخص هنا.
+270	I have read this book a hundred times.	I have read this book a hundred times.	قرأت هذا الكتاب مئة مرة.
+271	Ten people came to dinner.	Ten people came to dinner.	جاء عشرة أشخاص إلى العشاء.
+271	We waited ten minutes for the bus.	We waited ten minutes for the bus.	انتظرنا الحافلة عشر دقائق.
+272	I also want some tea.	I also want some tea.	أريد بعض الشاي أيضًا.
+272	She is a teacher and also a mother.	She is a teacher and also a mother.	هي معلّمة وأم أيضًا.
+273	She works as a doctor.	She works as a doctor.	تعمل طبيبة.
+273	Come as early as you can.	Come as early as you can.	تعال بأبكر ما تستطيع.
+274	Which bus goes to the city?	Which bus goes to the city?	أي حافلة تذهب إلى المدينة؟
+274	Which one do you want?	Which one do you want?	أيها تريد؟
+275	Someone called you this morning.	Someone called you this morning.	اتصل بك أحدهم هذا الصباح.
+275	I need someone to help me.	I need someone to help me.	أحتاج إلى شخص يساعدني.
+276	Do you need anything from the shop?	Do you need anything from the shop?	هل تحتاج شيئًا من المتجر؟
+276	I didn't eat anything today.	I didn't eat anything today.	لم آكل شيئًا اليوم.
+277	Everyone is here now.	Everyone is here now.	الجميع هنا الآن.
+277	Good morning, everybody, let's start.	Good morning, everybody, let's start.	صباح الخير جميعًا، لنبدأ.
+278	You must be tired.	You must be tired.	لا بد أنك متعب.
+278	We must leave now.	We must leave now.	يجب أن نغادر الآن.
+279	I have a lot of work today.	I have a lot of work today.	لديّ عمل كثير اليوم.
+279	She reads a lot of books.	She reads a lot of books.	تقرأ كتبًا كثيرة.
+280	You are very kind.	You are very kind.	أنت لطيف جدًا.
+280	She is kind to everyone.	She is kind to everyone.	هي لطيفة مع الجميع.
+281	This is the best part of the movie.	This is the best part of the movie.	هذا أفضل جزء في الفيلم.
+281	I read the first part of the book.	I read the first part of the book.	قرأت الجزء الأول من الكتاب.
+282	I didn't like the end of the movie.	I didn't like the end of the movie.	لم تعجبني نهاية الفيلم.
+282	See you at the end of the week.	See you at the end of the week.	أراك في نهاية الأسبوع.
+283	I see my family every month.	I see my family every month.	أرى عائلتي كل شهر.
+283	Next month I start a new job.	Next month I start a new job.	الشهر القادم أبدأ عملًا جديدًا.
+284	What are you doing tonight?	What are you doing tonight?	ماذا ستفعل الليلة؟
+284	It will be cold tonight.	It will be cold tonight.	سيكون الجو باردًا الليلة.
+285	Dinner will be ready soon.	Dinner will be ready soon.	سيكون العشاء جاهزًا قريبًا.
+285	The bus will come soon.	The bus will come soon.	ستصل الحافلة قريبًا.
+286	Call me later, please.	Call me later, please.	اتصل بي لاحقًا من فضلك.
+286	I will do it later.	I will do it later.	سأفعل ذلك لاحقًا.
+287	I already ate dinner.	I already ate dinner.	تناولت العشاء بالفعل.
+287	Is it ten already?	Is it ten already?	هل أصبحت الساعة العاشرة بالفعل؟
+288	Dinner is almost ready.	Dinner is almost ready.	العشاء جاهز تقريبًا.
+288	I almost forgot your birthday.	I almost forgot your birthday.	كدت أنسى عيد ميلادك.
+289	I often walk to work.	I often walk to work.	كثيرًا ما أمشي إلى العمل.
+289	How often do you see your family?	How often do you see your family?	كم مرة ترى عائلتك؟
+290	Sometimes I work at night.	Sometimes I work at night.	أحيانًا أعمل في الليل.
+290	We sometimes eat breakfast together.	We sometimes eat breakfast together.	نتناول الفطور معًا أحيانًا.
+291	The dog is under the table.	The dog is under the table.	الكلب تحت الطاولة.
+291	I found my phone under the bed.	I found my phone under the bed.	وجدت هاتفي تحت السرير.
+292	I live near the school.	I live near the school.	أسكن قرب المدرسة.
+292	Is there a shop near here?	Is there a shop near here?	هل يوجد متجر قريب من هنا؟
+293	Sit between me and your brother.	Sit between me and your brother.	اجلس بيني وبين أخيك.
+293	The shop is between the school and my house.	The shop is between the school and my house.	المتجر بين المدرسة وبيتي.
+294	I can't live without coffee.	I can't live without coffee.	لا أستطيع العيش بدون قهوة.
+294	She left without her phone.	She left without her phone.	غادرت بدون هاتفها.
+295	I read while I wait for the bus.	I read while I wait for the bus.	أقرأ بينما أنتظر الحافلة.
+295	Wait here for a while.	Wait here for a while.	انتظر هنا لبعض الوقت.
+296	Wait until I come back.	Wait until I come back.	انتظر حتى أعود.
+296	I slept until ten this morning.	I slept until ten this morning.	نمت حتى العاشرة هذا الصباح.
+297	I cook dinner for my family.	I cook dinner for my family.	أطبخ العشاء لعائلتي.
+297	Can you cook this for me?	Can you cook this for me?	هل يمكنك أن تطبخ هذا لي؟
+298	Wash your hands, please.	Wash your hands, please.	اغسل يديك من فضلك.
+298	I need to wash the car.	I need to wash the car.	أحتاج إلى غسل السيارة.
+299	My room is clean now.	My room is clean now.	غرفتي نظيفة الآن.
+299	Please keep the house clean.	Please keep the house clean.	من فضلك حافظ على نظافة البيت.
+300	You're welcome to come any time.	You're welcome to come any time.	مرحبًا بك في أي وقت.
+300	Welcome to our house!	Welcome to our house!	أهلًا بك في بيتنا!

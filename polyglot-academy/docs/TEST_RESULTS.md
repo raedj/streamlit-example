@@ -7,6 +7,12 @@ Re-run on 2026-10-25 on Windows 11 (JDK 17, Gradle 8.14.3) after adding Turkish,
 **BUILD SUCCESSFUL, 217 tests, 0 failures** (core 161, data 44, uicore 12). The curriculum,
 story and tutor tests iterate over every language, so they now cover all eight curricula.
 
+After adding the word-list programme (English level 1): **BUILD SUCCESSFUL, 227 tests, 0
+failures** (core 171 incl. 10 in `WordListTest`, data 44, uicore 12); `:androidApp:assembleDebug`
+succeeds. `WordListTest` was also shown to reject words outside the list on the real data, and
+`tools/gen_wordlists.py` was run on a deliberately broken copy (wrong rank, invalid part of
+speech, missing example) and refused to generate, naming each line.
+
 | Module | Test class | Tests | Failures |
 |---|---|---|---|
 | core | AdapterTest (OpenAI, Azure, Gemini, Anthropic, DeepSeek, local; image parts per vendor; error classification; timeouts; no key leakage; Mistral, Groq, xAI, OpenRouter, Qwen and custom OpenAI-compatible endpoints; GPT-5/o-series parameters; model lists from OpenAI-compatible, Anthropic and Gemini) | 14 | 0 |
