@@ -1,6 +1,7 @@
 package com.polyglot.academy.core.wordlist
 
 import com.polyglot.academy.core.model.LanguageCode
+import com.polyglot.academy.core.model.PartOfSpeech
 
 /**
  * Finds list words in sentences, per language: normalisation (case, Turkish i/ı, Arabic and Urdu
@@ -61,18 +62,14 @@ class WordMatcher(private val language: LanguageCode, entries: List<WordEntry>) 
         }
         val toks = tokens(sentence, names)
         val keys = singleKeys[entry.id].orEmpty()
-        if (keys.isNotEmpty() && toks.any { tok -> candidates(tok).any { it in keys } || prefixMatch(tok, keys) }) return true
+        if (keys.isNotEmpty() && toks.any { tok -> candidates(tok).any { it in keys } }) return true
         return phrases[entry.id].orEmpty().any { p -> containsSequence(toks, p) }
     }
 
     /** Rank of the most frequent entry this token belongs to, or null if the list does not know it. */
     fun rankOf(token: String): Int? {
         if (language == LanguageCode.MANDARIN) return zhDictionary[token]
-        candidates(token).mapNotNull { keyRank[it] }.minOrNull()?.let { return it }
-        if (language == LanguageCode.TURKISH) {
-            for (len in token.length - 1 downTo 2) keyRank[token.substring(0, len)]?.let { return it }
-        }
-        return null
+        return candidates(token).mapNotNull { keyRank[it] }.minOrNull()
     }
 
     /** Words of the example that are unknown or less frequent than rank + slack (for messages and checks). */
@@ -90,7 +87,10 @@ class WordMatcher(private val language: LanguageCode, entries: List<WordEntry>) 
 
     private fun stems(e: WordEntry): List<String> = buildList {
         e.extra["stem"]?.let { add(it) }
-        if (language == LanguageCode.TURKISH && (e.term.endsWith("mek") || e.term.endsWith("mak")) && e.term.length > 4) add(e.term.dropLast(3))
+        // Verbs only: the noun "ekmek" (bread) has no stem "ek".
+        if (language == LanguageCode.TURKISH && e.partOfSpeech == PartOfSpeech.VERB && (e.term.endsWith("mek") || e.term.endsWith("mak")) && e.term.length > 4) {
+            add(e.term.dropLast(3))
+        }
         // Broken plurals and the present stem cannot be derived by rule.
         if (language == LanguageCode.ARABIC) listOf("plural", "present").mapNotNull { e.extra[it] }.forEach { add(it) }
     }
@@ -113,11 +113,37 @@ class WordMatcher(private val language: LanguageCode, entries: List<WordEntry>) 
     }
 
     private fun containsSequence(toks: List<String>, phrase: List<String>): Boolean =
-        toks.windowed(phrase.size).any { w -> w.indices.all { i -> candidates(w[i]).contains(phrase[i]) || prefixMatch(w[i], setOf(phrase[i])) } }
+        toks.windowed(phrase.size).any { w -> w.indices.all { i -> candidates(w[i]).contains(phrase[i]) } }
 
-    /** Turkish is agglutinative: a key of two or more letters matches the start of a longer word (ev → evde). */
-    private fun prefixMatch(token: String, keys: Set<String>): Boolean =
-        language == LanguageCode.TURKISH && keys.any { it.length >= 2 && token.length > it.length && token.startsWith(it) }
+    /**
+     * Turkish is agglutinative: a word is a stem followed by suffixes (ev-ler-imiz-de). A stem is accepted
+     * only when the rest of the word splits completely into known suffix pieces, so "bulmak" is not taken
+     * for "bu" + something. Final p/ç/t/k soften before a vowel (kitabı, gidiyor, çocuğu) and a stem's
+     * final e/a narrows before -iyor (bekliyor ← bekle).
+     */
+    private fun turkishStems(token: String): List<String> = buildList {
+        for (len in token.length - 1 downTo 1) {
+            val stem = token.substring(0, len)
+            val rest = token.substring(len)
+            if (!turkishSuffixChain(rest, HashMap())) continue
+            add(stem)
+            when (stem.last()) {
+                'b' -> add(stem.dropLast(1) + "p")
+                'c' -> add(stem.dropLast(1) + "ç")
+                'd' -> add(stem.dropLast(1) + "t")
+                'ğ', 'g' -> add(stem.dropLast(1) + "k")
+            }
+            if (TR_PRESENT.any { rest.startsWith(it) }) { add(stem + "e"); add(stem + "a") }
+        }
+    }
+
+    private fun turkishSuffixChain(rest: String, memo: HashMap<String, Boolean>): Boolean {
+        if (rest.isEmpty()) return true
+        memo[rest]?.let { return it }
+        val ok = TR_SUFFIXES.any { rest.startsWith(it) && turkishSuffixChain(rest.substring(it.length), memo) }
+        memo[rest] = ok
+        return ok
+    }
 
     /** The token plus the forms it may come from under the language's regular inflection rules. */
     fun candidates(token: String): List<String> = buildList {
@@ -171,6 +197,7 @@ class WordMatcher(private val language: LanguageCode, entries: List<WordEntry>) 
                 for (s in stripped.toList()) if (s.length >= 3 && s[0] in "اتن") stripped += "ي" + s.drop(1)
                 addAll(stripped.drop(1))
             }
+            LanguageCode.TURKISH -> addAll(turkishStems(t))
             LanguageCode.MALAY -> {
                 val bases = mutableListOf(t)
                 for (suf in listOf("nya", "lah", "kah", "pun", "kan", "an", "i")) if (t.endsWith(suf) && t.length - suf.length >= 3) bases += t.removeSuffix(suf)
@@ -206,5 +233,29 @@ class WordMatcher(private val language: LanguageCode, entries: List<WordEntry>) 
             if (!matched) { out += s[i].toString() to null; i++ }
         }
         return out
+    }
+
+    private companion object {
+        val TR_PRESENT = listOf("iyor", "ıyor", "uyor", "üyor")
+
+        /**
+         * Turkish suffix pieces in all their vowel-harmony and consonant variants: plural, case, possessive,
+         * tense, person, negation, question and common derivations. Single letters cover buffer consonants
+         * and one-letter endings (ev-e, oku-r, gel-di-m).
+         */
+        val TR_SUFFIXES = listOf(
+            "iyor", "ıyor", "uyor", "üyor", "yor",
+            "acak", "ecek", "acağ", "eceğ", "mış", "miş", "muş", "müş", "malı", "meli", "abil", "ebil",
+            "arak", "erek", "ınca", "ince", "unca", "ünce",
+            "dan", "den", "tan", "ten", "nın", "nin", "nun", "nün", "lar", "ler", "mız", "miz", "muz", "müz",
+            "nız", "niz", "nuz", "nüz", "sın", "sin", "sun", "sün", "dır", "dir", "dur", "dür", "tır", "tir", "tur", "tür",
+            "maz", "mez", "mak", "mek", "ken", "lık", "lik", "luk", "lük", "sız", "siz", "suz", "süz",
+            "dık", "dik", "duk", "dük", "tık", "tik", "tuk", "tük", "yla", "yle",
+            "da", "de", "ta", "te", "ın", "in", "un", "ün", "la", "le", "ki", "ım", "im", "um", "üm",
+            "dı", "di", "du", "dü", "tı", "ti", "tu", "tü", "ar", "er", "ır", "ir", "ur", "ür", "ma", "me",
+            "sa", "se", "lı", "li", "lu", "lü", "cı", "ci", "cu", "cü", "çı", "çi", "çu", "çü", "ca", "ce", "ça", "çe",
+            "ıp", "ip", "up", "üp", "mı", "mi", "mu", "mü",
+            "a", "e", "ı", "i", "u", "ü", "m", "n", "k", "y", "s", "r", "z",
+        )
     }
 }

@@ -52,6 +52,8 @@ Arabic terms carry full vowel marks; roots, broken plurals, masdars and present 
 from general knowledge. Arabic example sentences are unvowelled (as in everyday print) and their
 `ar` column repeats the sentence, like the `en` column of the English list. The clitics و، ف، بـ،
 كـ، سـ are not separate entries (they are always attached); لِـ is, with its pronoun forms (لي، لك…).
+Turkish entries have no pronunciation column (Turkish spelling is phonemic); irregular stems are given
+as forms (bana ← ben, oğlu ← oğul, yiyor ← yemek).
 CEFR equivalents of the 10 levels are approximate (1–2 ≈ A1, 3–4 ≈ A2, 5–6 ≈ B1, 7–8 ≈ B2,
 9–10 ≈ B2+ to C1). No claim is made about how much of real text these words cover.
 
@@ -62,7 +64,7 @@ CEFR equivalents of the 10 levels are approximate (1–2 ≈ A1, 3–4 ≈ A2, 5
 | Spanish | 1 | 300 / 3000 | 600 | Not reviewed |
 | French | 1 | 300 / 3000 | 600 | Not reviewed |
 | Arabic | 1 | 300 / 3000 | 600 | Not reviewed |
-| Turkish | — | 0 / 3000 | — | — |
+| Turkish | 1 | 300 / 3000 | 600 | Not reviewed |
 | Urdu | — | 0 / 3000 | — | — |
 | Malay | — | 0 / 3000 | — | — |
 

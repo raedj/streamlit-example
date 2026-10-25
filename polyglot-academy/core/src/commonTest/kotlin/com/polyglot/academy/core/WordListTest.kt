@@ -89,8 +89,8 @@ class WordListTest {
         assertEquals(10, WordLevels.levelOf(3000))
     }
 
-    private fun entry(lang: LanguageCode, rank: Int, term: String, forms: List<String> = emptyList()) =
-        WordEntry(lang, rank, "${lang.tag}_w_$rank", term, PartOfSpeech.NOUN, "t", Gloss(term, term), null, forms, emptyMap(), null, emptyList())
+    private fun entry(lang: LanguageCode, rank: Int, term: String, forms: List<String> = emptyList(), pos: PartOfSpeech = PartOfSpeech.NOUN) =
+        WordEntry(lang, rank, "${lang.tag}_w_$rank", term, pos, "t", Gloss(term, term), null, forms, emptyMap(), null, emptyList())
 
     @Test fun matcherHandlesInflectionPerLanguage() {
         val en = listOf(entry(LanguageCode.ENGLISH, 1, "go", listOf("went", "gone")), entry(LanguageCode.ENGLISH, 2, "city"), entry(LanguageCode.ENGLISH, 3, "stop"), entry(LanguageCode.ENGLISH, 400, "zebra"))
@@ -118,10 +118,16 @@ class WordListTest {
         assertTrue(mg.candidates("الكبيرة").contains("كبير"), "feminine ending")
         assertFalse(mg.contains(book, "ذهبوا إلى البيت"))
 
-        val tr = listOf(entry(LanguageCode.TURKISH, 1, "ev"), entry(LanguageCode.TURKISH, 2, "gelmek"))
+        val tr = listOf(entry(LanguageCode.TURKISH, 1, "ev"), entry(LanguageCode.TURKISH, 2, "gelmek", pos = PartOfSpeech.VERB))
         val mt = WordMatcher(LanguageCode.TURKISH, tr)
         assertTrue(mt.contains(tr[0], "Annem evde.") && mt.contains(tr[1], "Yarın geliyorum."))
         assertEquals(listOf("annem", "evde"), mt.tokens("Annem İstanbul'da evde.", listOf("İstanbul")))
+        val tr2 = listOf(entry(LanguageCode.TURKISH, 1, "bu"), entry(LanguageCode.TURKISH, 2, "kitap"), entry(LanguageCode.TURKISH, 3, "beklemek", pos = PartOfSpeech.VERB),
+            entry(LanguageCode.TURKISH, 4, "gitmek", pos = PartOfSpeech.VERB), entry(LanguageCode.TURKISH, 5, "çocuk"))
+        val mt2 = WordMatcher(LanguageCode.TURKISH, tr2)
+        assertTrue(mt2.contains(tr2[1], "Kitabı okudum.") && mt2.contains(tr2[2], "Seni bekliyorum.") && mt2.contains(tr2[3], "Okula gidiyoruz.")
+            && mt2.contains(tr2[4], "Çocuğun adı ne?") && mt2.contains(tr2[0], "Bunlar ne?"), "suffixes, softening and narrowing")
+        assertEquals(null, mt2.rankOf("bulmak"), "a stem needs a complete chain of suffixes after it")
 
         val ms = listOf(entry(LanguageCode.MALAY, 1, "beli"), entry(LanguageCode.MALAY, 2, "tulis"))
         val mm = WordMatcher(LanguageCode.MALAY, ms)

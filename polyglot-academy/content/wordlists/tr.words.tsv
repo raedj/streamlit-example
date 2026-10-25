@@ -1,0 +1,301 @@
+rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
+1	tr_w_bir	bir	det	function	a, one	أداة نكرة؛ واحد
+2	tr_w_ve	ve	conj	function	and	و
+3	tr_w_bu	bu	pron	function	this	هذا، هذه		bun
+4	tr_w_o	o	pron	people	he, she, it; that	هو، هي؛ ذلك		on
+5	tr_w_ben	ben	pron	people	I	أنا		ban
+6	tr_w_sen	sen	pron	people	you	أنتَ، أنتِ		san
+7	tr_w_biz	biz	pron	people	we	نحن
+8	tr_w_siz	siz	pron	people	you (plural, polite)	أنتم؛ حضرتك
+9	tr_w_onlar	onlar	pron	people	they	هم
+10	tr_w_su_that	şu	pron	function	that (nearby)	ذلك (القريب)		şun
+11	tr_w_ne	ne	pron	questions	what	ماذا، ما
+12	tr_w_kim	kim	pron	questions	who	مَن
+13	tr_w_nerede	nerede	adv	questions	where	أين		nere
+14	tr_w_nasil	nasıl	adv	questions	how	كيف
+15	tr_w_neden	neden	adv	questions	why	لماذا
+16	tr_w_kac	kaç	pron	questions	how many	كم
+17	tr_w_mi	mi	part	questions	question particle	أداة استفهام		mı, mu, mü
+18	tr_w_degil	değil	part	function	not (with nouns, adjectives)	ليس
+19	tr_w_var	var	part	function	there is; to have	يوجد؛ عنده
+20	tr_w_yok	yok	part	function	there isn't; not to have	لا يوجد؛ ليس عنده
+21	tr_w_evet	evet	interj	function	yes	نعم
+22	tr_w_hayir	hayır	interj	function	no	لا
+23	tr_w_de	de	conj	function	also, too	أيضًا		da
+24	tr_w_ama	ama	conj	function	but	لكن
+25	tr_w_cunku	çünkü	conj	function	because	لأنّ
+26	tr_w_veya	veya	conj	function	or	أو
+27	tr_w_ile	ile	conj	function	with; and	مع؛ و
+28	tr_w_icin	için	prep	function	for	من أجل، لـ
+29	tr_w_gibi	gibi	prep	function	like	مثل
+30	tr_w_kadar	kadar	prep	function	until; as much as	حتى؛ بقدر
+31	tr_w_sonra	sonra	adv	time	after, later	بعد، لاحقًا
+32	tr_w_once	önce	adv	time	before; ago	قبل
+33	tr_w_simdi	şimdi	adv	time	now	الآن
+34	tr_w_bugun	bugün	adv	time	today	اليوم				tr_bugun
+35	tr_w_yarin	yarın	adv	time	tomorrow	غدًا				tr_yarin
+36	tr_w_dun	dün	adv	time	yesterday	أمس				tr_dun
+37	tr_w_her	her	det	function	every	كلّ
+38	tr_w_cok	çok	adv	function	very; a lot	جدًا؛ كثيرًا
+39	tr_w_az	az	adv	function	little, few	قليل
+40	tr_w_daha	daha	adv	function	more; still	أكثر؛ بعدُ
+41	tr_w_en	en	adv	function	most (superlative)	الأكثر
+42	tr_w_hep	hep	adv	time	always	دائمًا
+43	tr_w_bazen	bazen	adv	time	sometimes	أحيانًا
+44	tr_w_hic	hiç	adv	function	never, not at all	أبدًا، إطلاقًا
+45	tr_w_burada	burada	adv	places	here	هنا		bura
+46	tr_w_orada	orada	adv	places	there	هناك		ora
+47	tr_w_hemen	hemen	adv	time	right away	فورًا
+48	tr_w_biraz	biraz	adv	function	a little	قليلًا
+49	tr_w_sadece	sadece	adv	function	only	فقط
+50	tr_w_belki	belki	adv	function	maybe	ربما				tr_belki
+51	tr_w_tamam	tamam	interj	function	OK	حسنًا
+52	tr_w_lutfen	lütfen	interj	greetings	please	من فضلك				tr_lutfen
+53	tr_w_merhaba	merhaba	interj	greetings	hello	مرحبًا				tr_merhaba
+54	tr_w_tesekkur	teşekkür	noun	greetings	thanks	شكر		teşekkürler
+55	tr_w_gunaydin	günaydın	interj	greetings	good morning	صباح الخير				tr_gunaydin
+56	tr_w_hosca_kal	hoşça kal	phrase	greetings	goodbye (said by the one leaving)	مع السلامة		hoşça kalın
+57	tr_w_iyi	iyi	adj	descriptions	good; well	جيد؛ بخير
+58	tr_w_kotu	kötü	adj	descriptions	bad	سيئ
+59	tr_w_buyuk	büyük	adj	descriptions	big	كبير
+60	tr_w_kucuk	küçük	adj	descriptions	small	صغير
+61	tr_w_yeni	yeni	adj	descriptions	new	جديد
+62	tr_w_eski	eski	adj	descriptions	old (thing)	قديم
+63	tr_w_guzel	güzel	adj	descriptions	beautiful, nice	جميل
+64	tr_w_sicak	sıcak	adj	weather	hot	حارّ
+65	tr_w_soguk	soğuk	adj	weather	cold	بارد
+66	tr_w_uzun	uzun	adj	descriptions	long; tall	طويل
+67	tr_w_kisa	kısa	adj	descriptions	short	قصير
+68	tr_w_kolay	kolay	adj	descriptions	easy	سهل
+69	tr_w_zor	zor	adj	descriptions	difficult	صعب
+70	tr_w_ucuz	ucuz	adj	shopping	cheap	رخيص				tr_ucuz
+71	tr_w_pahali	pahalı	adj	shopping	expensive	غالٍ				tr_pahali
+72	tr_w_yakin	yakın	adj	places	near	قريب
+73	tr_w_uzak	uzak	adj	places	far	بعيد
+74	tr_w_hizli	hızlı	adj	descriptions	fast	سريع
+75	tr_w_yavas	yavaş	adj	descriptions	slow	بطيء
+76	tr_w_mutlu	mutlu	adj	feelings	happy	سعيد				tr_mutlu
+77	tr_w_yorgun	yorgun	adj	feelings	tired	متعب				tr_yorgun
+78	tr_w_hasta	hasta	adj	health	ill	مريض				tr_hasta
+79	tr_w_ac	aç	adj	food	hungry	جائع
+80	tr_w_lezzetli	lezzetli	adj	food	delicious	لذيذ				tr_lezzetli
+81	tr_w_onemli	önemli	adj	descriptions	important	مهم
+82	tr_w_dogru	doğru	adj	descriptions	right, true	صحيح
+83	tr_w_yanlis	yanlış	adj	descriptions	wrong	خطأ
+84	tr_w_bos	boş	adj	descriptions	empty; free	فارغ؛ غير مشغول
+85	tr_w_dolu	dolu	adj	descriptions	full	ممتلئ
+86	tr_w_mesgul	meşgul	adj	work	busy	مشغول
+87	tr_w_beyaz	beyaz	adj	descriptions	white	أبيض
+88	tr_w_siyah	siyah	adj	descriptions	black	أسود
+89	tr_w_kirmizi	kırmızı	adj	descriptions	red	أحمر
+90	tr_w_mavi	mavi	adj	descriptions	blue	أزرق
+91	tr_w_yas	yaş	noun	people	age	عمر
+92	tr_w_ilk	ilk	adj	numbers	first	أول
+93	tr_w_son	son	adj	descriptions	last	آخر، أخير
+94	tr_w_baska	başka	adj	descriptions	other, another	آخر، غير
+95	tr_w_ayni	aynı	adj	descriptions	same	نفس
+96	tr_w_butun	bütün	det	function	all, whole	كل، جميع
+97	tr_w_kendi	kendi	pron	people	own; oneself	نفسه؛ خاصّ به
+98	tr_w_lazim	lazım	adj	function	needed	لازم
+99	tr_w_olmak	olmak	verb	function	to be, to become	يكون، يصبح
+100	tr_w_yapmak	yapmak	verb	routine	to do, to make	يفعل، يصنع
+101	tr_w_etmek	etmek	verb	routine	to do (in compounds)	يفعل (فعل مساعد)
+102	tr_w_gitmek	gitmek	verb	movement	to go	يذهب
+103	tr_w_gelmek	gelmek	verb	movement	to come	يأتي
+104	tr_w_almak	almak	verb	shopping	to take; to buy	يأخذ؛ يشتري
+105	tr_w_vermek	vermek	verb	routine	to give	يعطي
+106	tr_w_demek	demek	verb	communication	to say	يقول		diyor
+107	tr_w_soylemek	söylemek	verb	communication	to say, to tell	يقول، يخبر
+108	tr_w_gormek	görmek	verb	senses	to see	يرى
+109	tr_w_bakmak	bakmak	verb	senses	to look	ينظر
+110	tr_w_bilmek	bilmek	verb	mind	to know	يعرف
+111	tr_w_istemek	istemek	verb	feelings	to want	يريد
+112	tr_w_sevmek	sevmek	verb	feelings	to love, to like	يحبّ				tr_seviyorum
+113	tr_w_yemek_eat	yemek	verb	food	to eat	يأكل		yiyor, yiyecek
+114	tr_w_icmek	içmek	verb	food	to drink	يشرب
+115	tr_w_okumak	okumak	verb	school	to read; to study	يقرأ؛ يدرس				tr_okumak
+116	tr_w_yazmak	yazmak	verb	school	to write	يكتب
+117	tr_w_konusmak	konuşmak	verb	communication	to speak	يتكلم
+118	tr_w_anlamak	anlamak	verb	mind	to understand	يفهم
+119	tr_w_calismak	çalışmak	verb	work	to work; to study	يعمل؛ يذاكر				tr_calismak
+120	tr_w_ogrenmek	öğrenmek	verb	school	to learn	يتعلّم
+121	tr_w_oturmak	oturmak	verb	routine	to sit; to live	يجلس؛ يسكن
+122	tr_w_kalkmak	kalkmak	verb	routine	to get up; to leave (transport)	ينهض؛ يغادر				tr_kalkmak
+123	tr_w_yatmak	yatmak	verb	routine	to lie down, to go to bed	يستلقي، يأوي إلى الفراش
+124	tr_w_uyumak	uyumak	verb	routine	to sleep	ينام
+125	tr_w_uyanmak	uyanmak	verb	routine	to wake up	يستيقظ
+126	tr_w_beklemek	beklemek	verb	routine	to wait	ينتظر
+127	tr_w_aramak	aramak	verb	routine	to look for; to call	يبحث عن؛ يتصل
+128	tr_w_bulmak	bulmak	verb	routine	to find	يجد
+129	tr_w_acmak	açmak	verb	home	to open	يفتح
+130	tr_w_kapatmak	kapatmak	verb	home	to close	يغلق
+131	tr_w_baslamak	başlamak	verb	routine	to begin	يبدأ
+132	tr_w_bitirmek	bitirmek	verb	routine	to finish	يُنهي
+133	tr_w_satmak	satmak	verb	shopping	to sell	يبيع
+134	tr_w_odemek	ödemek	verb	shopping	to pay	يدفع
+135	tr_w_binmek	binmek	verb	travel	to get on, to ride	يركب
+136	tr_w_inmek	inmek	verb	travel	to get off; to go down	ينزل
+137	tr_w_girmek	girmek	verb	movement	to enter	يدخل
+138	tr_w_cikmak	çıkmak	verb	movement	to go out; to go up	يخرج؛ يصعد
+139	tr_w_donmek	dönmek	verb	movement	to return; to turn	يعود؛ ينعطف
+140	tr_w_kalmak	kalmak	verb	routine	to stay	يبقى
+141	tr_w_yasamak	yaşamak	verb	home	to live	يعيش
+142	tr_w_dusunmek	düşünmek	verb	mind	to think	يفكّر
+143	tr_w_sormak	sormak	verb	communication	to ask	يسأل
+144	tr_w_duymak	duymak	verb	senses	to hear	يسمع
+145	tr_w_dinlemek	dinlemek	verb	senses	to listen	يستمع
+146	tr_w_kosmak	koşmak	verb	leisure	to run	يركض
+147	tr_w_yurumek	yürümek	verb	movement	to walk	يمشي
+148	tr_w_oynamak	oynamak	verb	leisure	to play	يلعب
+149	tr_w_giymek	giymek	verb	clothes	to put on, to wear	يلبس
+150	tr_w_yikamak	yıkamak	verb	home	to wash	يغسل
+151	tr_w_pisirmek	pişirmek	verb	food	to cook	يطبخ
+152	tr_w_getirmek	getirmek	verb	routine	to bring	يُحضر
+153	tr_w_gondermek	göndermek	verb	communication	to send	يرسل
+154	tr_w_kullanmak	kullanmak	verb	routine	to use	يستخدم
+155	tr_w_unutmak	unutmak	verb	mind	to forget	ينسى
+156	tr_w_hatirlamak	hatırlamak	verb	mind	to remember	يتذكّر
+157	tr_w_yuzmek	yüzmek	verb	leisure	to swim	يسبح
+158	tr_w_hazirlamak	hazırlamak	verb	routine	to prepare	يُعدّ، يحضّر
+159	tr_w_seyahat	seyahat	noun	travel	travel, trip	سفر، رحلة
+160	tr_w_yardim	yardım	noun	people	help	مساعدة
+161	tr_w_ev	ev	noun	home	house, home	بيت				tr_ev
+162	tr_w_okul	okul	noun	school	school	مدرسة
+163	tr_w_is	iş	noun	work	work, job	عمل
+164	tr_w_sirket	şirket	noun	work	company	شركة				tr_sirket
+165	tr_w_universite	üniversite	noun	school	university	جامعة
+166	tr_w_hastane	hastane	noun	health	hospital	مستشفى				tr_ev_hastane
+167	tr_w_eczane	eczane	noun	health	pharmacy	صيدلية				tr_eczane
+168	tr_w_market	market	noun	shopping	supermarket, grocery	متجر بقالة
+169	tr_w_lokanta	lokanta	noun	food	restaurant	مطعم
+170	tr_w_otel	otel	noun	travel	hotel	فندق
+171	tr_w_sehir	şehir	noun	places	city	مدينة		şehr
+172	tr_w_ulke	ülke	noun	places	country	بلد
+173	tr_w_sokak	sokak	noun	places	street	شارع
+174	tr_w_yol	yol	noun	places	road, way	طريق
+175	tr_w_istasyon	istasyon	noun	travel	station	محطة				tr_istasyon
+176	tr_w_havaalani	havaalanı	noun	travel	airport	مطار		havaalan
+177	tr_w_oda	oda	noun	home	room	غرفة
+178	tr_w_mutfak	mutfak	noun	home	kitchen	مطبخ				tr_mutfak
+179	tr_w_kapi	kapı	noun	home	door	باب
+180	tr_w_pencere	pencere	noun	home	window	نافذة
+181	tr_w_masa	masa	noun	home	table	طاولة
+182	tr_w_sandalye	sandalye	noun	home	chair	كرسي
+183	tr_w_yatak	yatak	noun	home	bed	سرير
+184	tr_w_araba	araba	noun	travel	car	سيارة
+185	tr_w_otobus	otobüs	noun	travel	bus	حافلة
+186	tr_w_tren	tren	noun	travel	train	قطار
+187	tr_w_ucak	uçak	noun	travel	aeroplane	طائرة
+188	tr_w_bilet	bilet	noun	travel	ticket	تذكرة				tr_bilet
+189	tr_w_para	para	noun	shopping	money	مال
+190	tr_w_telefon	telefon	noun	communication	telephone	هاتف
+191	tr_w_bilgisayar	bilgisayar	noun	work	computer	حاسوب
+192	tr_w_kitap	kitap	noun	school	book	كتاب
+193	tr_w_kalem	kalem	noun	school	pen, pencil	قلم
+194	tr_w_cuma	cuma	noun	time	Friday	الجمعة
+195	tr_w_canta	çanta	noun	travel	bag	حقيبة
+196	tr_w_anahtar	anahtar	noun	home	key	مفتاح				tr_ev_anahtar
+197	tr_w_kiyafet	kıyafet	noun	clothes	clothes, outfit	ملابس
+198	tr_w_ayakkabi	ayakkabı	noun	clothes	shoe(s)	حذاء
+199	tr_w_hediye	hediye	noun	people	present, gift	هدية
+200	tr_w_fotograf	fotoğraf	noun	leisure	photo	صورة
+201	tr_w_televizyon	televizyon	noun	leisure	television	تلفاز
+202	tr_w_film	film	noun	leisure	film	فيلم
+203	tr_w_muzik	müzik	noun	leisure	music	موسيقى
+204	tr_w_spor	spor	noun	leisure	sport	رياضة
+205	tr_w_aile	aile	noun	family	family	عائلة				tr_aile
+206	tr_w_anne	anne	noun	family	mother	أمّ				tr_anne
+207	tr_w_baba	baba	noun	family	father	أب				tr_baba
+208	tr_w_kardes	kardeş	noun	family	sibling (brother, sister)	أخ أو أخت				tr_kardes
+209	tr_w_abla	abla	noun	family	older sister	الأخت الكبرى				tr_abla
+210	tr_w_agabey	ağabey	noun	family	older brother	الأخ الأكبر		abi
+211	tr_w_cocuk	çocuk	noun	family	child	طفل
+212	tr_w_ogul	oğul	noun	family	son	ابن		oğl
+213	tr_w_kiz	kız	noun	family	girl; daughter	بنت
+214	tr_w_es	eş	noun	family	spouse	زوج، زوجة
+215	tr_w_arkadas	arkadaş	noun	people	friend	صديق				tr_arkadas
+216	tr_w_insan	insan	noun	people	person, human	إنسان
+217	tr_w_adam	adam	noun	people	man	رجل
+218	tr_w_kadin	kadın	noun	people	woman	امرأة
+219	tr_w_ogrenci	öğrenci	noun	school	student	طالب
+220	tr_w_ogretmen	öğretmen	noun	school	teacher	معلّم
+221	tr_w_doktor	doktor	noun	health	doctor	طبيب				tr_doktor
+222	tr_w_ad	ad	noun	people	name	اسم
+223	tr_w_isim	isim	noun	people	name	اسم		ism
+224	tr_w_su	su	noun	food	water	ماء				tr_su
+225	tr_w_cay	çay	noun	food	tea	شاي				tr_cay
+226	tr_w_kahve	kahve	noun	food	coffee	قهوة				tr_kahve
+227	tr_w_sut	süt	noun	food	milk	حليب
+228	tr_w_ekmek	ekmek	noun	food	bread	خبز				tr_ekmek
+229	tr_w_yemek	yemek	noun	food	food; meal	طعام؛ وجبة
+230	tr_w_et	et	noun	food	meat	لحم
+231	tr_w_tavuk	tavuk	noun	food	chicken	دجاج
+232	tr_w_pilav	pilav	noun	food	rice (cooked)	أرز مطبوخ
+233	tr_w_meyve	meyve	noun	food	fruit	فاكهة
+234	tr_w_elma	elma	noun	food	apple	تفاحة
+235	tr_w_yumurta	yumurta	noun	food	egg	بيضة
+236	tr_w_peynir	peynir	noun	food	cheese	جبن
+237	tr_w_seker	şeker	noun	food	sugar; sweet	سكّر؛ حلوى
+238	tr_w_kahvalti	kahvaltı	noun	food	breakfast	فطور
+239	tr_w_hesap	hesap	noun	food	bill	الحساب				tr_hesap
+240	tr_w_gun	gün	noun	time	day	يوم
+241	tr_w_hafta	hafta	noun	time	week	أسبوع				tr_hafta
+242	tr_w_ay	ay	noun	time	month; moon	شهر؛ قمر
+243	tr_w_yil	yıl	noun	time	year	سنة
+244	tr_w_saat	saat	noun	time	hour; clock, watch	ساعة
+245	tr_w_dakika	dakika	noun	time	minute	دقيقة
+246	tr_w_sabah	sabah	noun	time	morning	صباح
+247	tr_w_ogle	öğle	noun	time	noon, midday	ظهر
+248	tr_w_aksam	akşam	noun	time	evening	مساء
+249	tr_w_gece	gece	noun	time	night	ليل
+250	tr_w_zaman	zaman	noun	time	time	وقت، زمن
+251	tr_w_tatil	tatil	noun	leisure	holiday	عطلة				tr_tatil
+252	tr_w_hava	hava	noun	weather	weather; air	طقس؛ هواء
+253	tr_w_yagmur	yağmur	noun	weather	rain	مطر
+254	tr_w_gunes	güneş	noun	weather	sun	شمس
+255	tr_w_deniz	deniz	noun	places	sea	بحر
+256	tr_w_kis	kış	noun	weather	winter	شتاء
+257	tr_w_yaz	yaz	noun	weather	summer	صيف
+258	tr_w_kedi	kedi	noun	animals	cat	قطة
+259	tr_w_kopek	köpek	noun	animals	dog	كلب
+260	tr_w_bas	baş	noun	body	head	رأس				tr_bas
+261	tr_w_el	el	noun	body	hand	يد
+262	tr_w_goz	göz	noun	body	eye	عين
+263	tr_w_soru	soru	noun	school	question	سؤال
+264	tr_w_cevap	cevap	noun	school	answer	جواب
+265	tr_w_ders	ders	noun	school	lesson	درس
+266	tr_w_dil	dil	noun	school	language; tongue	لغة؛ لسان
+267	tr_w_turkce	Türkçe	noun	school	Turkish (language)	اللغة التركية
+268	tr_w_kelime	kelime	noun	school	word	كلمة
+269	tr_w_sorun	sorun	noun	function	problem	مشكلة
+270	tr_w_sey	şey	noun	function	thing	شيء
+271	tr_w_yer	yer	noun	places	place	مكان
+272	tr_w_sinav	sınav	noun	school	exam	امتحان				tr_sinav
+273	tr_w_lira	lira	noun	shopping	lira (Turkish currency)	ليرة
+274	tr_w_kisi	kişi	noun	people	person (in counting)	شخص
+275	tr_w_iki	iki	num	numbers	two	اثنان
+276	tr_w_uc	üç	num	numbers	three	ثلاثة
+277	tr_w_dort	dört	num	numbers	four	أربعة
+278	tr_w_bes	beş	num	numbers	five	خمسة
+279	tr_w_alti	altı	num	numbers	six	ستة
+280	tr_w_yedi	yedi	num	numbers	seven	سبعة
+281	tr_w_sekiz	sekiz	num	numbers	eight	ثمانية
+282	tr_w_dokuz	dokuz	num	numbers	nine	تسعة
+283	tr_w_on	on	num	numbers	ten	عشرة
+284	tr_w_yuz	yüz	num	numbers	hundred	مئة
+285	tr_w_bin	bin	num	numbers	thousand	ألف
+286	tr_w_yarim	yarım	adj	numbers	half	نصف
+287	tr_w_tane	tane	noun	numbers	piece (counting word)	حبة، قطعة (للعدّ)
+288	tr_w_hos_geldiniz	hoş geldiniz	phrase	greetings	welcome	أهلًا وسهلًا		hoş geldin
+289	tr_w_ozur_dilerim	özür dilerim	phrase	greetings	I'm sorry	أنا آسف				tr_ozur
+290	tr_w_gorusuruz	görüşürüz	interj	greetings	see you	نلتقي لاحقًا				tr_gorusuruz
+291	tr_w_iyi_aksamlar	iyi akşamlar	phrase	greetings	good evening	مساء الخير				tr_iyi_aksamlar
+292	tr_w_rica_ederim	rica ederim	phrase	greetings	you're welcome	عفوًا				tr_ev_rica
+293	tr_w_tabii	tabii	adv	function	of course	طبعًا
+294	tr_w_genellikle	genellikle	adv	time	usually	عادةً				tr_genellikle
+295	tr_w_birlikte	birlikte	adv	function	together	معًا
+296	tr_w_erken	erken	adv	time	early	مبكرًا
+297	tr_w_gec	geç	adj	time	late	متأخر
+298	tr_w_bence	bence	adv	mind	in my opinion	في رأيي				tr_bence
+299	tr_w_ne_kadar	ne kadar	phrase	shopping	how much	كم (السعر أو المقدار)				tr_ne_kadar
+300	tr_w_kac_para	kaç para	phrase	shopping	how much does it cost	بكم
