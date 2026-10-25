@@ -129,6 +129,13 @@ class WordListTest {
             && mt2.contains(tr2[4], "Çocuğun adı ne?") && mt2.contains(tr2[0], "Bunlar ne?"), "suffixes, softening and narrowing")
         assertEquals(null, mt2.rankOf("bulmak"), "a stem needs a complete chain of suffixes after it")
 
+        val ur = listOf(entry(LanguageCode.URDU, 1, "جانا", pos = PartOfSpeech.VERB), entry(LanguageCode.URDU, 2, "لڑکا"),
+            entry(LanguageCode.URDU, 3, "لڑکی"), entry(LanguageCode.URDU, 4, "اچھا", pos = PartOfSpeech.ADJECTIVE))
+        val mu = WordMatcher(LanguageCode.URDU, ur)
+        assertTrue(mu.contains(ur[0], "وہ روز اسکول جاتی ہے۔") && mu.contains(ur[0], "ہم کل جائیں گے۔") && mu.contains(ur[1], "لڑکوں نے کھانا کھایا۔")
+            && mu.contains(ur[2], "دو لڑکیاں آئیں۔") && mu.contains(ur[3], "یہ اچھی کتاب ہے۔"), "Urdu endings and verb stems")
+        assertFalse(mu.contains(ur[3], "لڑکا آیا۔"))
+
         val ms = listOf(entry(LanguageCode.MALAY, 1, "beli"), entry(LanguageCode.MALAY, 2, "tulis"))
         val mm = WordMatcher(LanguageCode.MALAY, ms)
         assertTrue(mm.contains(ms[0], "Dia membeli roti.") && mm.contains(ms[1], "Surat itu ditulis semalam.") && mm.contains(ms[1], "Saya menulis surat."))

@@ -54,6 +54,9 @@ from general knowledge. Arabic example sentences are unvowelled (as in everyday 
 كـ، سـ are not separate entries (they are always attached); لِـ is, with its pronoun forms (لي، لك…).
 Turkish entries have no pronunciation column (Turkish spelling is phonemic); irregular stems are given
 as forms (bana ← ben, oğlu ← oğul, yiyor ← yemek).
+Urdu terms are written without vowel marks (as in normal print), with a Latin transliteration
+(ā, ī, ū for long vowels, ṭ ḍ ṛ for retroflex consonants, a tilde for nasal vowels); verbs are
+listed by infinitive, and irregular forms (گیا ← جانا، کیا ← کرنا، مجھے ← میں) are given as forms.
 CEFR equivalents of the 10 levels are approximate (1–2 ≈ A1, 3–4 ≈ A2, 5–6 ≈ B1, 7–8 ≈ B2,
 9–10 ≈ B2+ to C1). No claim is made about how much of real text these words cover.
 
@@ -65,7 +68,7 @@ CEFR equivalents of the 10 levels are approximate (1–2 ≈ A1, 3–4 ≈ A2, 5
 | French | 1 | 300 / 3000 | 600 | Not reviewed |
 | Arabic | 1 | 300 / 3000 | 600 | Not reviewed |
 | Turkish | 1 | 300 / 3000 | 600 | Not reviewed |
-| Urdu | — | 0 / 3000 | — | — |
+| Urdu | 1 | 300 / 3000 | 600 | Not reviewed |
 | Malay | — | 0 / 3000 | — | — |
 
 Size: one level adds about 146 KB of dex code, about 59 KB compressed in the APK (measured for

@@ -7,7 +7,7 @@ import com.polyglot.academy.core.model.PartOfSpeech
  * Finds list words in sentences, per language: normalisation (case, Turkish i/ı, Arabic and Urdu
  * vowel marks), tokenisation (French elision, Chinese longest match) and light inflection rules
  * (English suffixes, Spanish/French plurals and feminine forms, Arabic clitics, Turkish suffixes
- * by stem, Malay affixes). Irregular forms come from each entry's forms list. The rules are
+ * by stem, Urdu gender/number endings and verb stems, Malay affixes). Irregular forms come from each entry's forms list. The rules are
  * deliberately simple: they are used to validate examples and to locate a word for exercises,
  * not to analyse arbitrary text.
  */
@@ -45,6 +45,8 @@ class WordMatcher(private val language: LanguageCode, entries: List<WordEntry>) 
         t = if (language == LanguageCode.TURKISH) t.replace('I', 'ı').replace('İ', 'i').lowercase() else t.lowercase()
         if (language == LanguageCode.ARABIC || language == LanguageCode.URDU) t = t.replace(Regex("[\\u064B-\\u065F\\u0670\\u0640]"), "")
         if (language == LanguageCode.ARABIC) t = t.replace(Regex("[أإآٱ]"), "ا").replace('ى', 'ي')
+        // Arabic code points typed on some keyboards for Urdu letters.
+        if (language == LanguageCode.URDU) t = t.replace('ي', 'ی').replace('ى', 'ی').replace('ك', 'ک').replace("ۓ", "ئے")
         return t
     }
 
@@ -93,6 +95,11 @@ class WordMatcher(private val language: LanguageCode, entries: List<WordEntry>) 
         }
         // Broken plurals and the present stem cannot be derived by rule.
         if (language == LanguageCode.ARABIC) listOf("plural", "present").mapNotNull { e.extra[it] }.forEach { add(it) }
+        if (language == LanguageCode.URDU) {
+            e.extra["plural"]?.let { add(it) }
+            // Urdu verbs are listed by infinitive (جانا); the stem (جا) carries all other forms.
+            if (e.partOfSpeech == PartOfSpeech.VERB && e.term.endsWith("نا") && e.term.length > 2) add(e.term.dropLast(2))
+        }
     }
 
     private fun rawTokens(text: String): List<String> = when (language) {
@@ -198,6 +205,14 @@ class WordMatcher(private val language: LanguageCode, entries: List<WordEntry>) 
                 addAll(stripped.drop(1))
             }
             LanguageCode.TURKISH -> addAll(turkishStems(t))
+            LanguageCode.URDU -> {
+                // One ending is removed, then the bare stem and the -ا / -ی / -ہ dictionary endings are tried:
+                // لڑکے، لڑکوں → لڑکا; لڑکیاں → لڑکی; کمرے → کمرہ; اچھی → اچھا; جاتی، جائیں، کھایا → جا، کھا.
+                for (suf in UR_SUFFIXES) if (t.endsWith(suf) && t.length > suf.length) {
+                    val stem = t.dropLast(suf.length)
+                    add(stem); add(stem + "ا"); add(stem + "ی"); add(stem + "ہ")
+                }
+            }
             LanguageCode.MALAY -> {
                 val bases = mutableListOf(t)
                 for (suf in listOf("nya", "lah", "kah", "pun", "kan", "an", "i")) if (t.endsWith(suf) && t.length - suf.length >= 3) bases += t.removeSuffix(suf)
@@ -237,6 +252,11 @@ class WordMatcher(private val language: LanguageCode, entries: List<WordEntry>) 
 
     private companion object {
         val TR_PRESENT = listOf("iyor", "ıyor", "uyor", "üyor")
+
+        /** Urdu noun, adjective and verb endings (plural, oblique, gender, habitual, perfective, subjunctive, polite). */
+        val UR_SUFFIXES = listOf(
+            "یاں", "یوں", "ئیں", "ئیے", "یے", "یں", "وں", "ؤں", "تا", "تی", "تے", "نا", "نی", "نے", "یا", "ئی", "ئے", "ے", "ی", "ا", "و", "ؤ",
+        )
 
         /**
          * Turkish suffix pieces in all their vowel-harmony and consonant variants: plural, case, possessive,

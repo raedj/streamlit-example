@@ -1,0 +1,301 @@
+rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
+1	ur_w_hai	ہے	part	function	is	يكون (فعل الكينونة للمفرد)	hai	ہیں, ہوں, ہو
+2	ur_w_mein_in	میں	prep	function	in	في	mẽ
+3	ur_w_main	میں	pron	people	I	أنا	maĩ	مجھے, مجھ
+4	ur_w_ka	کا	prep	function	of ('s)	أداة الإضافة	kā
+5	ur_w_ko	کو	prep	function	to (object marker)	إلى؛ علامة المفعول	ko
+6	ur_w_se	سے	prep	function	from; with; than	من؛ بـ	se
+7	ur_w_par	پر	prep	function	on; at	على؛ في	par
+8	ur_w_ne	نے	part	function	marker of the subject in the past	علامة الفاعل في الماضي	ne
+9	ur_w_aur	اور	conj	function	and	و	aur
+10	ur_w_yeh	یہ	pron	function	this; he, she (near)	هذا، هذه	yeh	اس, اسے, ان, انہیں
+11	ur_w_woh	وہ	pron	function	that; he, she	ذلك؛ هو، هي	woh	اس, اسے, ان, انہیں, انہوں
+12	ur_w_aap	آپ	pron	people	you (polite)	حضرتك، أنتم	āp
+13	ur_w_tum	تم	pron	people	you (familiar)	أنت	tum	تمہیں
+14	ur_w_ham	ہم	pron	people	we	نحن	ham	ہمیں
+15	ur_w_nahin	نہیں	part	function	no, not	لا	nahī̃
+16	ur_w_tha	تھا	part	function	was	كان	thā
+17	ur_w_kya	کیا	pron	questions	what; question word	ماذا؛ هل	kyā
+18	ur_w_bhi	بھی	part	function	also, too	أيضًا	bhī
+19	ur_w_to	تو	part	function	then, so	إذن، فـ	to
+20	ur_w_ke	کہ	conj	function	that	أنّ	ke
+21	ur_w_kaun	کون	pron	questions	who	مَن	kaun	کس
+22	ur_w_kahan	کہاں	adv	questions	where	أين	kahā̃
+23	ur_w_kab	کب	adv	questions	when	متى	kab
+24	ur_w_kaise	کیسے	adv	questions	how	كيف	kaise	کیسا
+25	ur_w_kyon	کیوں	adv	questions	why	لماذا	kyõ
+26	ur_w_kitna	کتنا	pron	questions	how much, how many	كم	kitnā
+27	ur_w_koi	کوئی	pron	function	someone; any	أحد؛ أيّ	koī
+28	ur_w_kuchh	کچھ	pron	function	something; some	شيء؛ بعض	kuchh
+29	ur_w_sab	سب	pron	function	all, everyone	كل، الجميع	sab
+30	ur_w_har	ہر	det	function	every	كل	har
+31	ur_w_apna	اپنا	pron	people	one's own	خاصّته، نفسه	apnā
+32	ur_w_mera	میرا	pron	people	my	لي، ـي	merā
+33	ur_w_tumhara	تمہارا	pron	people	your (familiar)	لك، ـك	tumhārā
+34	ur_w_hamara	ہمارا	pron	people	our	لنا، ـنا	hamārā
+35	ur_w_lekin	لیکن	conj	function	but	لكن	lekin
+36	ur_w_ya	یا	conj	function	or	أو	yā
+37	ur_w_kyonke	کیونکہ	conj	function	because	لأنّ	kyõ-ke
+38	ur_w_agar	اگر	conj	function	if	إذا، إن	agar
+39	ur_w_jab	جب	conj	time	when (not a question)	عندما	jab
+40	ur_w_saath	ساتھ	prep	function	with, together	مع	sāth
+41	ur_w_liye	لیے	prep	function	for (کے لیے)	من أجل	liye	لئے
+42	ur_w_tak	تک	prep	function	until, up to	حتى، إلى	tak
+43	ur_w_paas	پاس	prep	places	near; (to) have	قرب؛ عند	pās
+44	ur_w_baad	بعد	adv	time	after	بعد	baad
+45	ur_w_pehle	پہلے	adv	time	before; first	قبل؛ أولًا	pehle
+46	ur_w_ab	اب	adv	time	now	الآن	ab
+47	ur_w_abhi	ابھی	adv	time	right now	الآن حالًا	abhī			ur_abhi
+48	ur_w_aaj	آج	adv	time	today	اليوم	āj			ur_aaj
+49	ur_w_kal	کل	adv	time	tomorrow; yesterday	غدًا؛ أمس	kal			ur_kal
+50	ur_w_hamesha	ہمیشہ	adv	time	always	دائمًا	hamesha
+51	ur_w_kabhi	کبھی	adv	time	sometimes; ever	أحيانًا؛ قطّ	kabhī
+52	ur_w_roz	روز	adv	time	every day	كل يوم	roz
+53	ur_w_bahut	بہت	adv	function	very; a lot	جدًا؛ كثيرًا	bahut
+54	ur_w_sirf	صرف	adv	function	only	فقط	sirf
+55	ur_w_yahan	یہاں	adv	places	here	هنا	yahā̃
+56	ur_w_wahan	وہاں	adv	places	there	هناك	wahā̃
+57	ur_w_bahar	باہر	adv	places	outside	خارجًا	bāhar
+58	ur_w_jaldi	جلدی	adv	time	quickly; early	بسرعة؛ مبكرًا	jaldī
+59	ur_w_shayad	شاید	adv	function	maybe	ربما	shāyad			ur_shayad
+60	ur_w_phir	پھر	adv	time	then; again	ثم؛ مرة أخرى	phir
+61	ur_w_theek	ٹھیک	adj	descriptions	fine, all right	بخير، حسنًا	ṭhīk
+62	ur_w_ga	گا	part	time	will (future marker)	علامة المستقبل	gā
+63	ur_w_haan	ہاں	interj	function	yes	نعم	hā̃
+64	ur_w_ji	جی	interj	function	yes (polite); respectful particle	نعم (بأدب)	jī
+65	ur_w_shukriya	شکریہ	interj	greetings	thank you	شكرًا	shukriya			ur_shukriya
+66	ur_w_salam	السلام علیکم	phrase	greetings	peace be upon you (hello)	السلام عليكم	as-salām-o-alaikum			ur_salam
+67	ur_w_khuda_hafiz	خدا حافظ	phrase	greetings	goodbye	مع السلامة	khudā hāfiz			ur_khuda_hafiz
+68	ur_w_subah_bakhair	صبح بخیر	phrase	greetings	good morning	صباح الخير	subah bakhair			ur_subah_bakhair
+69	ur_w_maaf	معاف	adj	greetings	forgiven (معاف کیجیے: sorry, excuse me)	معفوّ عنه (معذرةً)	maaf
+70	ur_w_koi_baat	کوئی بات نہیں	phrase	greetings	never mind, no problem	لا بأس	koī bāt nahī̃			ur_ev_koi_baat
+71	ur_w_hona	ہونا	verb	function	to be, to happen	يكون، يحدث	honā
+72	ur_w_karna	کرنا	verb	routine	to do	يفعل	karnā	کیا, کی, کیے, کیجیے
+73	ur_w_jana	جانا	verb	movement	to go	يذهب	jānā	گیا, گئی, گئے, گئیں
+74	ur_w_aana	آنا	verb	movement	to come	يأتي	ānā
+75	ur_w_dena	دینا	verb	routine	to give	يعطي	denā
+76	ur_w_lena	لینا	verb	routine	to take	يأخذ	lenā
+77	ur_w_kehna	کہنا	verb	communication	to say	يقول	kehnā
+78	ur_w_bolna	بولنا	verb	communication	to speak	يتكلم	bolnā
+79	ur_w_dekhna	دیکھنا	verb	senses	to see, to look	يرى، ينظر	dekhnā
+80	ur_w_sunna	سننا	verb	senses	to hear, to listen	يسمع	sunnā
+81	ur_w_jaanna	جاننا	verb	mind	to know	يعرف	jānnā
+82	ur_w_samajhna	سمجھنا	verb	mind	to understand	يفهم	samajhnā
+83	ur_w_chahna	چاہنا	verb	feelings	to want	يريد	chāhnā
+84	ur_w_chahiye	چاہیے	part	function	should; is needed	ينبغي؛ يلزم	chāhiye	چاہئے
+85	ur_w_khana	کھانا	verb	food	to eat	يأكل	khānā
+86	ur_w_peena	پینا	verb	food	to drink	يشرب	pīnā
+87	ur_w_parhna	پڑھنا	verb	school	to read; to study	يقرأ؛ يدرس	paṛhnā			ur_parhna
+88	ur_w_likhna	لکھنا	verb	school	to write	يكتب	likhnā
+89	ur_w_baithna	بیٹھنا	verb	routine	to sit	يجلس	baiṭhnā
+90	ur_w_uthna	اٹھنا	verb	routine	to get up	ينهض	uṭhnā			ur_uthna
+91	ur_w_sona	سونا	verb	routine	to sleep	ينام	sonā
+92	ur_w_jaagna	جاگنا	verb	routine	to wake up, to be awake	يستيقظ	jāgnā
+93	ur_w_rehna	رہنا	verb	home	to live, to stay	يسكن، يبقى	rehnā
+94	ur_w_sakna	سکنا	verb	mind	can, to be able	يستطيع	saknā
+95	ur_w_milna	ملنا	verb	people	to meet; to get	يلتقي؛ يحصل على	milnā
+96	ur_w_rakhna	رکھنا	verb	home	to put, to keep	يضع؛ يحتفظ	rakhnā
+97	ur_w_kholna	کھولنا	verb	home	to open	يفتح	kholnā
+98	ur_w_kharidna	خریدنا	verb	shopping	to buy	يشتري	kharīdnā
+99	ur_w_bechna	بیچنا	verb	shopping	to sell	يبيع	bechnā
+100	ur_w_chalna	چلنا	verb	movement	to walk, to go	يمشي، يذهب	chalnā
+101	ur_w_daurna	دوڑنا	verb	leisure	to run	يركض	dauṛnā
+102	ur_w_khelna	کھیلنا	verb	leisure	to play	يلعب	khelnā
+103	ur_w_pehenna	پہننا	verb	clothes	to wear, to put on	يلبس	pehennā
+104	ur_w_dhona	دھونا	verb	home	to wash	يغسل	dhonā
+105	ur_w_pakana	پکانا	verb	food	to cook	يطبخ	pakānā
+106	ur_w_lana	لانا	verb	routine	to bring	يُحضر	lānā
+107	ur_w_bhejna	بھیجنا	verb	communication	to send	يرسل	bhejnā
+108	ur_w_dhoondhna	ڈھونڈنا	verb	routine	to look for	يبحث عن	ḍhūnḍhnā
+109	ur_w_bhoolna	بھولنا	verb	mind	to forget	ينسى	bhūlnā
+110	ur_w_sochna	سوچنا	verb	mind	to think	يفكّر	sochnā
+111	ur_w_poochhna	پوچھنا	verb	communication	to ask	يسأل	pūchhnā
+112	ur_w_batana	بتانا	verb	communication	to tell	يخبر	batānā
+113	ur_w_seekhna	سیکھنا	verb	school	to learn	يتعلّم	sīkhnā
+114	ur_w_pahunchna	پہنچنا	verb	travel	to arrive, to reach	يصل	pahunchnā
+115	ur_w_nikalna	نکلنا	verb	movement	to go out, to leave	يخرج	nikalnā
+116	ur_w_utarna	اترنا	verb	travel	to get off, to go down	ينزل	utarnā
+117	ur_w_rukna	رکنا	verb	travel	to stop	يتوقف	ruknā
+118	ur_w_banana	بنانا	verb	routine	to make	يصنع، يُعدّ	banānā
+119	ur_w_lagna	لگنا	verb	feelings	to seem; to take (time)	يبدو؛ يستغرق	lagnā
+120	ur_w_tairna	تیرنا	verb	leisure	to swim	يسبح	tairnā
+121	ur_w_kaam	کام	noun	work	work	عمل	kām		gender=m
+122	ur_w_madad	مدد	noun	people	help	مساعدة	madad		gender=f
+123	ur_w_intezar	انتظار	noun	routine	waiting (انتظار کرنا: to wait)	انتظار	intezār		gender=m
+124	ur_w_yaad	یاد	noun	mind	memory (یاد ہونا: to remember)	ذِكر، تذكّر	yād		gender=f
+125	ur_w_shuru	شروع	noun	routine	beginning (شروع کرنا: to start)	بداية	shurū		gender=m
+126	ur_w_safar	سفر	noun	travel	journey, travel	سفر	safar		gender=m
+127	ur_w_band	بند	adj	home	closed, shut	مغلق	band
+128	ur_w_khatam	ختم	adj	routine	finished	منتهٍ	khatam
+129	ur_w_wapas	واپس	adv	movement	back (returning)	عائدًا	wāpas
+130	ur_w_meharbani	مہربانی	noun	greetings	kindness (مہربانی کر کے: please)	لطف (من فضلك)	mehrbānī		gender=f
+131	ur_w_ghar	گھر	noun	home	house, home	بيت	ghar		gender=m	ur_ghar
+132	ur_w_kamra	کمرہ	noun	home	room	غرفة	kamra		gender=m
+133	ur_w_bawarchi_khana	باورچی خانہ	noun	home	kitchen	مطبخ	bāwarchī-khāna		gender=m	ur_bawarchi_khana
+134	ur_w_darwaza	دروازہ	noun	home	door	باب	darwāza		gender=m
+135	ur_w_khirki	کھڑکی	noun	home	window	نافذة	khiṛkī		gender=f
+136	ur_w_mez	میز	noun	home	table	طاولة	mez		gender=f
+137	ur_w_kursi	کرسی	noun	home	chair	كرسي	kursī		gender=f
+138	ur_w_bistar	بستر	noun	home	bed	سرير	bistar		gender=m
+139	ur_w_school	اسکول	noun	school	school	مدرسة	iskūl		gender=m
+140	ur_w_daftar	دفتر	noun	work	office	مكتب	daftar		gender=m
+141	ur_w_haspatal	ہسپتال	noun	health	hospital	مستشفى	haspatāl		gender=m	ur_ev_haspatal
+142	ur_w_dukan	دکان	noun	shopping	shop	دكّان	dukān		gender=f
+143	ur_w_bazar	بازار	noun	shopping	market	سوق	bāzār		gender=m
+144	ur_w_hotel	ہوٹل	noun	travel	hotel; restaurant	فندق؛ مطعم	hoṭal		gender=m
+145	ur_w_shehar	شہر	noun	places	city	مدينة	shehar		gender=m
+146	ur_w_mulk	ملک	noun	places	country	بلد	mulk		gender=m
+147	ur_w_sarak	سڑک	noun	places	road, street	شارع، طريق	saṛak		gender=f
+148	ur_w_raasta	راستہ	noun	places	way, route	طريق	rāsta		gender=m
+149	ur_w_station	اسٹیشن	noun	travel	station	محطة	isṭeshan		gender=m	ur_station
+150	ur_w_hawai_adda	ہوائی اڈہ	noun	travel	airport	مطار	havāī aḍḍa		gender=m
+151	ur_w_gaari	گاڑی	noun	travel	car; vehicle	سيارة	gāṛī		gender=f
+152	ur_w_bas	بس	noun	travel	bus	حافلة	bas		gender=f
+153	ur_w_train	ٹرین	noun	travel	train	قطار	ṭren		gender=f
+154	ur_w_jahaz	جہاز	noun	travel	aeroplane; ship	طائرة؛ سفينة	jahāz		gender=m
+155	ur_w_ticket	ٹکٹ	noun	travel	ticket	تذكرة	ṭikaṭ		gender=m	ur_ticket
+156	ur_w_paisa	پیسہ	noun	shopping	money (usually plural پیسے)	مال، نقود	paisa		gender=m; plural=پیسے
+157	ur_w_phone	فون	noun	communication	telephone	هاتف	fon		gender=m
+158	ur_w_computer	کمپیوٹر	noun	work	computer	حاسوب	kampyūṭar		gender=m
+159	ur_w_kitab	کتاب	noun	school	book	كتاب	kitāb		gender=f; plural=کتابیں
+160	ur_w_qalam	قلم	noun	school	pen	قلم	qalam		gender=m
+161	ur_w_bag	بیگ	noun	travel	bag	حقيبة	beg		gender=m
+162	ur_w_chabi	چابی	noun	home	key	مفتاح	chābī		gender=f	ur_ev_chabi
+163	ur_w_kapra	کپڑا	noun	clothes	cloth; (plural) clothes	قماش؛ ملابس	kapṛā		gender=m; plural=کپڑے
+164	ur_w_joota	جوتا	noun	clothes	shoe	حذاء	jūtā		gender=m; plural=جوتے
+165	ur_w_tohfa	تحفہ	noun	people	present, gift	هدية	tohfa		gender=m
+166	ur_w_tasveer	تصویر	noun	leisure	picture, photo	صورة	tasvīr		gender=f
+167	ur_w_film	فلم	noun	leisure	film	فيلم	film		gender=f
+168	ur_w_khel	کھیل	noun	leisure	game, sport	لعبة	khel		gender=m
+169	ur_w_khandan	خاندان	noun	family	family	عائلة	khāndān		gender=m	ur_khandan
+170	ur_w_ammi	امی	noun	family	mum	ماما	ammī		gender=f	ur_ammi
+171	ur_w_abbu	ابو	noun	family	dad	بابا	abbū		gender=m	ur_abbu
+172	ur_w_maan	ماں	noun	family	mother	أمّ	mā̃		gender=f
+173	ur_w_baap	باپ	noun	family	father	أب	bāp		gender=m
+174	ur_w_bhai	بھائی	noun	family	brother	أخ	bhāī		gender=m	ur_bhai
+175	ur_w_behan	بہن	noun	family	sister	أخت	behan		gender=f; plural=بہنیں	ur_behan
+176	ur_w_beta	بیٹا	noun	family	son	ابن	beṭā		gender=m
+177	ur_w_beti	بیٹی	noun	family	daughter	ابنة	beṭī		gender=f
+178	ur_w_bachcha	بچہ	noun	family	child	طفل	bachcha		gender=m; plural=بچے
+179	ur_w_shauhar	شوہر	noun	family	husband	زوج	shauhar		gender=m
+180	ur_w_biwi	بیوی	noun	family	wife	زوجة	bīvī		gender=f
+181	ur_w_dost	دوست	noun	people	friend	صديق	dost		gender=mf	ur_dost
+182	ur_w_aadmi	آدمی	noun	people	man	رجل	ādmī		gender=m
+183	ur_w_aurat	عورت	noun	people	woman	امرأة	aurat		gender=f
+184	ur_w_larka	لڑکا	noun	people	boy	ولد	laṛkā		gender=m
+185	ur_w_larki	لڑکی	noun	people	girl	بنت	laṛkī		gender=f
+186	ur_w_log	لوگ	noun	people	people	ناس	log		gender=m
+187	ur_w_talib_ilm	طالب علم	noun	school	student	طالب	tālib-e-ilm		gender=m
+188	ur_w_ustad	استاد	noun	school	teacher	معلّم	ustād		gender=m
+189	ur_w_doctor	ڈاکٹر	noun	health	doctor	طبيب	ḍākṭar		gender=mf	ur_doctor
+190	ur_w_naam	نام	noun	people	name	اسم	nām		gender=m
+191	ur_w_umr	عمر	noun	people	age	عُمر	umr		gender=f
+192	ur_w_pani	پانی	noun	food	water	ماء	pānī		gender=m	ur_pani
+193	ur_w_chai	چائے	noun	food	tea	شاي	chāy		gender=f	ur_chai
+194	ur_w_coffee	کافی	noun	food	coffee	قهوة	kāfī		gender=f	ur_coffee
+195	ur_w_doodh	دودھ	noun	food	milk	حليب	dūdh		gender=m
+196	ur_w_roti	روٹی	noun	food	bread (flatbread)	خبز	roṭī		gender=f	ur_roti
+197	ur_w_khana_food	کھانا	noun	food	food, meal	طعام، وجبة	khānā		gender=m
+198	ur_w_gosht	گوشت	noun	food	meat	لحم	gosht		gender=m
+199	ur_w_murghi	مرغی	noun	food	chicken	دجاج	murghī		gender=f
+200	ur_w_chawal	چاول	noun	food	rice	أرز	chāval		gender=m
+201	ur_w_phal	پھل	noun	food	fruit	فاكهة	phal		gender=m
+202	ur_w_seb	سیب	noun	food	apple	تفاح	seb		gender=m
+203	ur_w_anda	انڈا	noun	food	egg	بيضة	anḍā		gender=m; plural=انڈے
+204	ur_w_cheeni	چینی	noun	food	sugar	سكّر	chīnī		gender=f
+205	ur_w_nashta	ناشتہ	noun	food	breakfast	فطور	nāshta		gender=m
+206	ur_w_din	دن	noun	time	day	يوم	din		gender=m
+207	ur_w_raat	رات	noun	time	night	ليل	rāt		gender=f
+208	ur_w_subah	صبح	noun	time	morning	صباح	subah		gender=f
+209	ur_w_shaam	شام	noun	time	evening	مساء	shām		gender=f
+210	ur_w_dopahar	دوپہر	noun	time	midday, afternoon	ظهر	dopahar		gender=f
+211	ur_w_hafta	ہفتہ	noun	time	week; Saturday	أسبوع؛ السبت	hafta		gender=m	ur_hafta
+212	ur_w_mahina	مہینہ	noun	time	month	شهر	mahīna		gender=m
+213	ur_w_saal	سال	noun	time	year	سنة	sāl		gender=m
+214	ur_w_ghanta	گھنٹہ	noun	time	hour	ساعة	ghanṭa		gender=m
+215	ur_w_minat	منٹ	noun	time	minute	دقيقة	minaṭ		gender=m
+216	ur_w_waqt	وقت	noun	time	time	وقت	waqt		gender=m
+217	ur_w_baje	بجے	part	time	o'clock	الساعة (في التوقيت)	baje
+218	ur_w_chhutti	چھٹی	noun	leisure	day off, holiday	إجازة	chhuṭṭī		gender=f	ur_chhuttiyan
+219	ur_w_juma	جمعہ	noun	time	Friday	الجمعة	jumma		gender=m
+220	ur_w_mausam	موسم	noun	weather	weather; season	طقس؛ فصل	mausam		gender=m	ur_mausam
+221	ur_w_barish	بارش	noun	weather	rain	مطر	bārish		gender=f
+222	ur_w_dhoop	دھوپ	noun	weather	sunshine	ضوء الشمس	dhūp		gender=f
+223	ur_w_garmi	گرمی	noun	weather	heat; summer	حرّ؛ صيف	garmī		gender=f
+224	ur_w_sardi	سردی	noun	weather	cold; winter	برد؛ شتاء	sardī		gender=f
+225	ur_w_samundar	سمندر	noun	places	sea	بحر	samundar		gender=m
+226	ur_w_billi	بلی	noun	animals	cat	قطة	billī		gender=f
+227	ur_w_kutta	کتا	noun	animals	dog	كلب	kuttā		gender=m
+228	ur_w_sar	سر	noun	body	head	رأس	sar		gender=m	ur_sar
+229	ur_w_haath	ہاتھ	noun	body	hand	يد	hāth		gender=m
+230	ur_w_aankh	آنکھ	noun	body	eye	عين	ā̃kh		gender=f
+231	ur_w_sawal	سوال	noun	school	question	سؤال	savāl		gender=m
+232	ur_w_jawab	جواب	noun	school	answer	جواب	javāb		gender=m
+233	ur_w_sabaq	سبق	noun	school	lesson	درس	sabaq		gender=m
+234	ur_w_zaban	زبان	noun	school	language; tongue	لغة؛ لسان	zabān		gender=f
+235	ur_w_urdu	اردو	noun	school	Urdu	اللغة الأردية	urdū		gender=f
+236	ur_w_lafz	لفظ	noun	school	word	كلمة	lafz		gender=m; plural=الفاظ
+237	ur_w_imtihan	امتحان	noun	school	exam	امتحان	imtihān		gender=m	ur_imtihan
+238	ur_w_masla	مسئلہ	noun	function	problem	مشكلة	masla		gender=m
+239	ur_w_cheez	چیز	noun	function	thing	شيء	chīz		gender=f
+240	ur_w_jagah	جگہ	noun	places	place	مكان	jagah		gender=f
+241	ur_w_achchha	اچھا	adj	descriptions	good	جيد	achchhā
+242	ur_w_bura	برا	adj	descriptions	bad	سيئ	burā
+243	ur_w_bara	بڑا	adj	descriptions	big; older	كبير	baṛā
+244	ur_w_chhota	چھوٹا	adj	descriptions	small; younger	صغير	chhoṭā
+245	ur_w_naya	نیا	adj	descriptions	new	جديد	nayā	نئی, نئے
+246	ur_w_purana	پرانا	adj	descriptions	old (thing)	قديم	purānā
+247	ur_w_khubsurat	خوبصورت	adj	descriptions	beautiful	جميل	khūbsūrat
+248	ur_w_garam	گرم	adj	weather	hot, warm	حارّ، دافئ	garam
+249	ur_w_thanda	ٹھنڈا	adj	weather	cold	بارد	ṭhanḍā
+250	ur_w_lamba	لمبا	adj	descriptions	long; tall	طويل	lambā
+251	ur_w_asan	آسان	adj	descriptions	easy	سهل	āsān
+252	ur_w_mushkil	مشکل	adj	descriptions	difficult	صعب	mushkil
+253	ur_w_sasta	سستا	adj	shopping	cheap	رخيص	sastā			ur_sasta
+254	ur_w_mehnga	مہنگا	adj	shopping	expensive	غالٍ	mehngā			ur_mehnga
+255	ur_w_qareeb	قریب	adj	places	near	قريب	qarīb
+256	ur_w_door	دور	adj	places	far	بعيد	dūr
+257	ur_w_tez	تیز	adj	descriptions	fast	سريع	tez
+258	ur_w_ahista	آہستہ	adv	descriptions	slowly	ببطء	āhista
+259	ur_w_khush	خوش	adj	feelings	happy	سعيد	khush			ur_khush
+260	ur_w_thaka	تھکا	adj	feelings	tired (تھکا ہوا)	متعب	thakā
+261	ur_w_bhooka	بھوکا	adj	food	hungry	جائع	bhūkā
+262	ur_w_pyasa	پیاسا	adj	food	thirsty	عطشان	pyāsā
+263	ur_w_mazedar	مزیدار	adj	food	tasty	لذيذ	mazedār			ur_mazedar
+264	ur_w_zaroori	ضروری	adj	descriptions	necessary, important	ضروري	zarūrī
+265	ur_w_sahih	صحیح	adj	descriptions	correct	صحيح	sahīh
+266	ur_w_ghalat	غلط	adj	descriptions	wrong	خطأ	ghalat
+267	ur_w_khali	خالی	adj	descriptions	empty, free	فارغ	khālī
+268	ur_w_masroof	مصروف	adj	work	busy	مشغول	masrūf
+269	ur_w_safed	سفید	adj	descriptions	white	أبيض	safed
+270	ur_w_kala	کالا	adj	descriptions	black	أسود	kālā
+271	ur_w_laal	لال	adj	descriptions	red	أحمر	lāl
+272	ur_w_neela	نیلا	adj	descriptions	blue	أزرق	nīlā
+273	ur_w_pehla	پہلا	adj	numbers	first	أول	pehlā
+274	ur_w_aakhri	آخری	adj	descriptions	last	أخير	ākhrī
+275	ur_w_doosra	دوسرا	adj	descriptions	other; second	آخر؛ ثانٍ	dūsrā
+276	ur_w_bimar	بیمار	adj	health	ill	مريض	bīmār			ur_bimar
+277	ur_w_ek	ایک	num	numbers	one	واحد	ek
+278	ur_w_do	دو	num	numbers	two	اثنان	do
+279	ur_w_teen	تین	num	numbers	three	ثلاثة	tīn
+280	ur_w_char	چار	num	numbers	four	أربعة	chār
+281	ur_w_paanch	پانچ	num	numbers	five	خمسة	pā̃ch
+282	ur_w_chhe	چھ	num	numbers	six	ستة	chhe
+283	ur_w_saat	سات	num	numbers	seven	سبعة	sāt
+284	ur_w_aath	آٹھ	num	numbers	eight	ثمانية	āṭh
+285	ur_w_nau	نو	num	numbers	nine	تسعة	nau
+286	ur_w_das	دس	num	numbers	ten	عشرة	das
+287	ur_w_sau	سو	num	numbers	hundred	مئة	sau
+288	ur_w_hazar	ہزار	num	numbers	thousand	ألف	hazār
+289	ur_w_aadha	آدھا	adj	numbers	half	نصف	ādhā
+290	ur_w_rupaya	روپیہ	noun	shopping	rupee	روبية	rupaya		gender=m; plural=روپے
+291	ur_w_andar	اندر	adv	places	inside	داخل	andar
+292	ur_w_behtar	بہتر	adj	descriptions	better	أفضل	behtar
+293	ur_w_zyada	زیادہ	adj	descriptions	more, much	أكثر، كثير	zyāda
+294	ur_w_kam	کم	adj	descriptions	less, little	أقل، قليل	kam
+295	ur_w_thora	تھوڑا	adj	descriptions	a little	قليل	thoṛā
+296	ur_w_ikatthe	اکٹھے	adv	function	together	معًا	ikaṭṭhe
+297	ur_w_aam_taur	عام طور پر	phrase	time	usually	عادةً	ām taur par			ur_aam_taur
+298	ur_w_mere_khayal	میرے خیال میں	phrase	mind	in my opinion	في رأيي	mere khayāl mẽ			ur_mere_khayal
+299	ur_w_pasand	پسند	adj	feelings	liked (مجھے … پسند ہے: I like …)	محبوب، مفضَّل	pasand			ur_pasand
+300	ur_w_khushi	خوشی	noun	feelings	happiness, pleasure	سعادة، سرور	khushī		gender=f
