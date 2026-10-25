@@ -4,7 +4,7 @@ package com.polyglot.academy.core.wordlist.generated
 /** Rows of each generated level: words then examples, as tab-separated lines. */
 internal object GeneratedWordLists {
     fun levels(languageTag: String): List<() -> Pair<List<String>, List<String>>> = when (languageTag) {
-        "en" -> listOf({ EnLevel01.words to EnLevel01.examples })
+        "en" -> listOf({ EnLevel01.words to EnLevel01.examples }, { EnLevel02.words to EnLevel02.examples })
         "zh" -> listOf({ ZhLevel01.words to ZhLevel01.examples })
         "es" -> listOf({ EsLevel01.words to EsLevel01.examples })
         "fr" -> listOf({ FrLevel01.words to FrLevel01.examples })

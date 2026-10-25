@@ -299,3 +299,303 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 298	en_w_wash	wash	verb	home	to wash	يغسل	/wɑʃ/
 299	en_w_clean	clean	adj	home	clean	نظيف	/klin/
 300	en_w_welcome	welcome	adj	social	welcome	مُرحَّب به؛ أهلًا	/ˈwɛlkəm/
+301	en_w_use	use	verb	routine	to use	يستخدم	/juːz/
+302	en_w_watch	watch	verb	leisure	to watch; a watch	يشاهد؛ ساعة يد	/wɒtʃ/	watches
+303	en_w_listen	listen	verb	senses	to listen	يستمع	/ˈlɪsən/
+304	en_w_teach	teach	verb	school	to teach	يعلّم	/tiːtʃ/	taught	irregular=yes
+305	en_w_study	study	verb	school	to study	يدرس	/ˈstʌdi/	studies, studied		en_study
+306	en_w_drive	drive	verb	travel	to drive	يقود	/draɪv/	drove, driven	irregular=yes
+307	en_w_wear	wear	verb	clothes	to wear	يلبس	/weə/	wore, worn	irregular=yes
+308	en_w_visit	visit	verb	travel	to visit	يزور	/ˈvɪzɪt/
+309	en_w_travel	travel	verb	travel	to travel	يسافر	/ˈtrævəl/
+310	en_w_stay	stay	verb	routine	to stay	يبقى	/steɪ/
+311	en_w_move	move	verb	movement	to move	يتحرك؛ ينتقل	/muːv/
+312	en_w_carry	carry	verb	routine	to carry	يحمل	/ˈkæri/	carries, carried
+313	en_w_follow	follow	verb	movement	to follow	يتبع	/ˈfɒləʊ/
+314	en_w_laugh	laugh	verb	feelings	to laugh	يضحك	/lɑːf/
+315	en_w_cry	cry	verb	feelings	to cry	يبكي	/kraɪ/	cries, cried
+316	en_w_sing	sing	verb	leisure	to sing	يغني	/sɪŋ/	sang, sung	irregular=yes
+317	en_w_dance	dance	verb	leisure	to dance	يرقص	/dɑːns/
+318	en_w_swim	swim	verb	leisure	to swim	يسبح	/swɪm/	swam, swum, swimming	irregular=yes
+319	en_w_fly	fly	verb	travel	to fly	يطير	/flaɪ/	flies, flew, flown	irregular=yes
+320	en_w_fall	fall	verb	movement	to fall	يسقط	/fɔːl/	fell, fallen	irregular=yes
+321	en_w_grow	grow	verb	nature	to grow	ينمو	/ɡrəʊ/	grew, grown	irregular=yes
+322	en_w_hold	hold	verb	routine	to hold	يمسك	/həʊld/	held	irregular=yes
+323	en_w_stand	stand	verb	routine	to stand	يقف	/stænd/	stood	irregular=yes
+324	en_w_spend	spend	verb	shopping	to spend	ينفق؛ يقضي	/spend/	spent	irregular=yes
+325	en_w_sell	sell	verb	shopping	to sell	يبيع	/sel/	sold	irregular=yes
+326	en_w_choose	choose	verb	mind	to choose	يختار	/tʃuːz/	chose, chosen	irregular=yes
+327	en_w_break	break	verb	routine	to break	يكسر	/breɪk/	broke, broken	irregular=yes
+328	en_w_build	build	verb	work	to build	يبني	/bɪld/	built	irregular=yes
+329	en_w_fix	fix	verb	home	to fix, to repair	يصلح	/fɪks/	fixes
+330	en_w_check	check	verb	routine	to check	يتحقق	/tʃek/
+331	en_w_finish	finish	verb	routine	to finish	ينهي	/ˈfɪnɪʃ/	finishes
+332	en_w_begin	begin	verb	routine	to begin	يبدأ	/bɪˈɡɪn/	began, begun, beginning	irregular=yes
+333	en_w_enjoy	enjoy	verb	feelings	to enjoy	يستمتع	/ɪnˈdʒɔɪ/
+334	en_w_miss	miss	verb	feelings	to miss	يفتقد؛ يفوته	/mɪs/	misses
+335	en_w_agree	agree	verb	communication	to agree	يوافق	/əˈɡriː/
+336	en_w_answer	answer	verb	communication	to answer; an answer	يجيب؛ جواب	/ˈɑːnsə/
+337	en_w_arrive	arrive	verb	travel	to arrive	يصل	/əˈraɪv/
+338	en_w_explain	explain	verb	communication	to explain	يشرح	/ɪkˈspleɪn/
+339	en_w_prepare	prepare	verb	routine	to prepare	يحضّر	/prɪˈpeə/
+340	en_w_order	order	verb	food	to order	يطلب	/ˈɔːdə/
+341	en_w_save	save	verb	shopping	to save	يدّخر؛ ينقذ	/seɪv/
+342	en_w_seem	seem	verb	mind	to seem	يبدو	/siːm/
+343	en_w_touch	touch	verb	senses	to touch	يلمس	/tʌtʃ/	touches
+344	en_w_cut	cut	verb	routine	to cut	يقطع	/kʌt/	cutting	irregular=yes
+345	en_w_catch	catch	verb	routine	to catch	يمسك؛ يلحق	/kætʃ/	caught, catches	irregular=yes
+346	en_w_hate	hate	verb	feelings	to hate	يكره	/heɪt/
+347	en_w_hurt	hurt	verb	health	to hurt	يؤلم	/hɜːt/		irregular=yes
+348	en_w_join	join	verb	people	to join	ينضم	/dʒɔɪn/
+349	en_w_pass	pass	verb	school	to pass	ينجح؛ يمرّر	/pɑːs/	passes
+350	en_w_return	return	verb	travel	to return	يعود	/rɪˈtɜːn/
+351	en_w_ride	ride	verb	travel	to ride	يركب	/raɪd/	rode, ridden	irregular=yes
+352	en_w_smile	smile	verb	feelings	to smile	يبتسم	/smaɪl/
+353	en_w_worry	worry	verb	feelings	to worry	يقلق	/ˈwʌri/	worries, worried		en_worried
+354	en_w_cost	cost	verb	shopping	to cost	يكلّف	/kɒst/		irregular=yes
+355	en_w_die	die	verb	health	to die	يموت	/daɪ/	dying
+356	en_w_receive	receive	verb	communication	to receive	يستلم	/rɪˈsiːv/
+357	en_w_repeat	repeat	verb	communication	to repeat	يكرر	/rɪˈpiːt/
+358	en_w_taste	taste	verb	food	to taste	يتذوق	/teɪst/
+359	en_w_rest	rest	verb	routine	to rest	يرتاح	/rest/
+360	en_w_offer	offer	verb	people	to offer	يعرض	/ˈɒfə/
+361	en_w_promise	promise	verb	communication	to promise	يعد	/ˈprɒmɪs/
+362	en_w_share	share	verb	people	to share	يشارك	/ʃeə/
+363	en_w_improve	improve	verb	school	to improve	يحسّن	/ɪmˈpruːv/			en_improve
+364	en_w_decide	decide	verb	mind	to decide	يقرر	/dɪˈsaɪd/			en_decide
+365	en_w_allow	allow	verb	function	to allow	يسمح	/əˈlaʊ/
+366	en_w_wish	wish	verb	feelings	to wish	يتمنى	/wɪʃ/	wishes
+367	en_w_dollar	dollar	noun	shopping	dollar	دولار	/ˈdɒlə/
+368	en_w_each	each	det	function	each	كل (واحد)	/iːtʃ/
+369	en_w_both	both	det	function	both	كلا	/bəʊθ/
+370	en_w_few	few	det	function	few, a few	قليل، بضعة	/fjuː/
+371	en_w_own	own	adj	function	own	خاصّ	/əʊn/
+372	en_w_else	else	adv	function	else	آخر، غير ذلك	/els/
+373	en_w_ever	ever	adv	time	ever	أبدًا، في أي وقت	/ˈevə/
+374	en_w_once	once	adv	time	once	مرة واحدة	/wʌns/
+375	en_w_ago	ago	adv	time	ago	منذ	/əˈɡəʊ/
+376	en_w_since	since	prep	time	since	منذ	/sɪns/
+377	en_w_yet	yet	adv	time	yet	بعدُ	/jet/
+378	en_w_through	through	prep	places	through	عبر	/θruː/
+379	en_w_across	across	prep	places	across	عبر، على الجانب الآخر	/əˈkrɒs/
+380	en_w_behind	behind	prep	places	behind	خلف	/bɪˈhaɪnd/
+381	en_w_during	during	prep	time	during	أثناء	/ˈdjʊərɪŋ/
+382	en_w_inside	inside	adv	places	inside	داخل	/ɪnˈsaɪd/
+383	en_w_outside	outside	adv	places	outside	خارج	/aʊtˈsaɪd/
+384	en_w_anyone	anyone	pron	function	anyone	أي أحد	/ˈeniwʌn/	anybody
+385	en_w_nobody	nobody	pron	function	nobody	لا أحد	/ˈnəʊbədi/	no one
+386	en_w_somewhere	somewhere	adv	places	somewhere	في مكان ما	/ˈsʌmweə/
+387	en_w_everywhere	everywhere	adv	places	everywhere	في كل مكان	/ˈevriweə/
+388	en_w_whose	whose	pron	questions	whose	لمن	/huːz/
+389	en_w_bit	bit	noun	function	a bit, a little	قليلًا	/bɪt/
+390	en_w_quite	quite	adv	function	quite	إلى حد ما	/kwaɪt/
+391	en_w_actually	actually	adv	function	actually	في الواقع	/ˈæktʃuəli/
+392	en_w_probably	probably	adv	function	probably	على الأرجح	/ˈprɒbəbli/			en_probably
+393	en_w_usually	usually	adv	time	usually	عادةً	/ˈjuːʒuəli/			en_usually
+394	en_w_finally	finally	adv	time	finally	أخيرًا	/ˈfaɪnəli/
+395	en_w_quickly	quickly	adv	descriptions	quickly	بسرعة	/ˈkwɪkli/
+396	en_w_slowly	slowly	adv	descriptions	slowly	ببطء	/ˈsləʊli/
+397	en_w_o_clock	o'clock	adv	time	o'clock	الساعة (في التوقيت)	/əˈklɒk/
+398	en_w_six	six	num	numbers	six	ستة	/sɪks/
+399	en_w_seven	seven	num	numbers	seven	سبعة	/ˈsevən/
+400	en_w_eight	eight	num	numbers	eight	ثمانية	/eɪt/
+401	en_w_nine	nine	num	numbers	nine	تسعة	/naɪn/
+402	en_w_twelve	twelve	num	numbers	twelve	اثنا عشر	/twelv/
+403	en_w_twenty	twenty	num	numbers	twenty	عشرون	/ˈtwenti/
+404	en_w_thirty	thirty	num	numbers	thirty	ثلاثون	/ˈθɜːti/
+405	en_w_thousand	thousand	num	numbers	thousand	ألف	/ˈθaʊzənd/
+406	en_w_second	second	adj	numbers	second	ثانٍ	/ˈsekənd/
+407	en_w_half	half	noun	numbers	half	نصف	/hɑːf/
+408	en_w_afternoon	afternoon	noun	time	afternoon	بعد الظهر	/ˌɑːftəˈnuːn/
+409	en_w_evening	evening	noun	time	evening	مساء	/ˈiːvnɪŋ/			en_evening
+410	en_w_weekend	weekend	noun	time	weekend	عطلة نهاية الأسبوع	/ˌwiːkˈend/
+411	en_w_monday	Monday	noun	time	Monday	الاثنين	/ˈmʌndeɪ/
+412	en_w_friday	Friday	noun	time	Friday	الجمعة	/ˈfraɪdeɪ/
+413	en_w_saturday	Saturday	noun	time	Saturday	السبت	/ˈsætədeɪ/
+414	en_w_sunday	Sunday	noun	time	Sunday	الأحد	/ˈsʌndeɪ/
+415	en_w_summer	summer	noun	weather	summer	صيف	/ˈsʌmə/
+416	en_w_winter	winter	noun	weather	winter	شتاء	/ˈwɪntə/
+417	en_w_holiday	holiday	noun	leisure	holiday	عطلة	/ˈhɒlədeɪ/	holidays
+418	en_w_moment	moment	noun	time	moment	لحظة	/ˈməʊmənt/
+419	en_w_future	future	noun	time	future	مستقبل	/ˈfjuːtʃə/
+420	en_w_age	age	noun	people	age	عمر	/eɪdʒ/
+421	en_w_person	person	noun	people	person	شخص	/ˈpɜːsən/
+422	en_w_son	son	noun	family	son	ابن	/sʌn/
+423	en_w_daughter	daughter	noun	family	daughter	ابنة	/ˈdɔːtə/
+424	en_w_parent	parent	noun	family	parent	والد، والدة	/ˈpeərənt/
+425	en_w_grandmother	grandmother	noun	family	grandmother	جدة	/ˈɡrænˌmʌðə/	grandma
+426	en_w_grandfather	grandfather	noun	family	grandfather	جد	/ˈɡrænˌfɑːðə/	grandpa
+427	en_w_uncle	uncle	noun	family	uncle	عم، خال	/ˈʌŋkəl/
+428	en_w_aunt	aunt	noun	family	aunt	عمة، خالة	/ɑːnt/
+429	en_w_cousin	cousin	noun	family	cousin	ابن العم أو الخال	/ˈkʌzən/
+430	en_w_neighbour	neighbour	noun	people	neighbour	جار	/ˈneɪbə/	neighbor
+431	en_w_student	student	noun	school	student	طالب	/ˈstjuːdənt/
+432	en_w_boss	boss	noun	work	boss	مدير	/bɒs/	bosses
+433	en_w_driver	driver	noun	travel	driver	سائق	/ˈdraɪvə/
+434	en_w_police	police	noun	places	police	شرطة	/pəˈliːs/			en_ev_police
+435	en_w_guest	guest	noun	people	guest	ضيف	/ɡest/
+436	en_w_customer	customer	noun	shopping	customer	زبون	/ˈkʌstəmə/
+437	en_w_team	team	noun	leisure	team	فريق	/tiːm/
+438	en_w_group	group	noun	people	group	مجموعة	/ɡruːp/
+439	en_w_body	body	noun	body	body	جسم	/ˈbɒdi/
+440	en_w_face	face	noun	body	face	وجه	/feɪs/
+441	en_w_hair	hair	noun	body	hair	شعر	/heə/
+442	en_w_mouth	mouth	noun	body	mouth	فم	/maʊθ/
+443	en_w_ear	ear	noun	body	ear	أذن	/ɪə/
+444	en_w_arm	arm	noun	body	arm	ذراع	/ɑːm/
+445	en_w_leg	leg	noun	body	leg	ساق	/leɡ/
+446	en_w_foot	foot	noun	body	foot	قدم	/fʊt/	feet
+447	en_w_heart	heart	noun	body	heart	قلب	/hɑːt/
+448	en_w_tooth	tooth	noun	body	tooth	سنّ	/tuːθ/	teeth
+449	en_w_pain	pain	noun	health	pain	ألم	/peɪn/
+450	en_w_sick	sick	adj	health	ill, sick	مريض	/sɪk/
+451	en_w_medicine	medicine	noun	health	medicine	دواء	/ˈmedsən/
+452	en_w_hospital	hospital	noun	health	hospital	مستشفى	/ˈhɒspɪtəl/			en_ev_hospital
+453	en_w_kitchen	kitchen	noun	home	kitchen	مطبخ	/ˈkɪtʃɪn/
+454	en_w_bathroom	bathroom	noun	home	bathroom	حمّام	/ˈbɑːθruːm/
+455	en_w_garden	garden	noun	home	garden	حديقة	/ˈɡɑːdən/
+456	en_w_window	window	noun	home	window	نافذة	/ˈwɪndəʊ/
+457	en_w_wall	wall	noun	home	wall	جدار	/wɔːl/
+458	en_w_floor	floor	noun	home	floor	أرضية؛ طابق	/flɔː/
+459	en_w_chair	chair	noun	home	chair	كرسي	/tʃeə/
+460	en_w_box	box	noun	home	box	صندوق	/bɒks/	boxes
+461	en_w_bag	bag	noun	travel	bag	حقيبة	/bæɡ/
+462	en_w_key	key	noun	home	key	مفتاح	/kiː/			en_ev_key
+463	en_w_clock	clock	noun	home	clock	ساعة حائط	/klɒk/
+464	en_w_light	light	noun	home	light; (adj) light	ضوء؛ خفيف	/laɪt/
+465	en_w_picture	picture	noun	leisure	picture	صورة	/ˈpɪktʃə/
+466	en_w_photo	photo	noun	leisure	photo	صورة فوتوغرافية	/ˈfəʊtəʊ/
+467	en_w_letter	letter	noun	communication	letter	رسالة؛ حرف	/ˈletə/
+468	en_w_paper	paper	noun	school	paper	ورق	/ˈpeɪpə/
+469	en_w_pen	pen	noun	school	pen	قلم	/pen/
+470	en_w_glass	glass	noun	food	glass	كوب زجاجي	/ɡlɑːs/	glasses
+471	en_w_cup	cup	noun	food	cup	فنجان	/kʌp/
+472	en_w_plate	plate	noun	food	plate	صحن	/pleɪt/
+473	en_w_rice	rice	noun	food	rice	أرز	/raɪs/
+474	en_w_meat	meat	noun	food	meat	لحم	/miːt/
+475	en_w_chicken	chicken	noun	food	chicken	دجاج	/ˈtʃɪkɪn/
+476	en_w_fish	fish	noun	food	fish	سمك	/fɪʃ/
+477	en_w_egg	egg	noun	food	egg	بيضة	/eɡ/
+478	en_w_fruit	fruit	noun	food	fruit	فاكهة	/fruːt/
+479	en_w_apple	apple	noun	food	apple	تفاحة	/ˈæpəl/
+480	en_w_vegetable	vegetable	noun	food	vegetable	خضار	/ˈvedʒtəbəl/
+481	en_w_milk	milk	noun	food	milk	حليب	/mɪlk/
+482	en_w_sugar	sugar	noun	food	sugar	سكر	/ˈʃʊɡə/
+483	en_w_cake	cake	noun	food	cake	كعكة	/keɪk/
+484	en_w_lunch	lunch	noun	food	lunch	غداء	/lʌntʃ/
+485	en_w_soup	soup	noun	food	soup	حساء	/suːp/
+486	en_w_juice	juice	noun	food	juice	عصير	/dʒuːs/
+487	en_w_cheese	cheese	noun	food	cheese	جبن	/tʃiːz/
+488	en_w_menu	menu	noun	food	menu	قائمة الطعام	/ˈmenjuː/			en_menu
+489	en_w_restaurant	restaurant	noun	food	restaurant	مطعم	/ˈrestərɒnt/
+490	en_w_hotel	hotel	noun	travel	hotel	فندق	/həʊˈtel/			en_hotel
+491	en_w_station	station	noun	travel	station	محطة	/ˈsteɪʃən/			en_station
+492	en_w_airport	airport	noun	travel	airport	مطار	/ˈeəpɔːt/			en_airport
+493	en_w_office	office	noun	work	office	مكتب	/ˈɒfɪs/
+494	en_w_bank	bank	noun	shopping	bank	مصرف	/bæŋk/
+495	en_w_market	market	noun	shopping	market	سوق	/ˈmɑːkɪt/
+496	en_w_park	park	noun	places	park	حديقة عامة	/pɑːk/
+497	en_w_village	village	noun	places	village	قرية	/ˈvɪlɪdʒ/
+498	en_w_town	town	noun	places	town	بلدة	/taʊn/
+499	en_w_road	road	noun	places	road	طريق	/rəʊd/
+500	en_w_river	river	noun	places	river	نهر	/ˈrɪvə/
+501	en_w_sea	sea	noun	places	sea	بحر	/siː/
+502	en_w_beach	beach	noun	places	beach	شاطئ	/biːtʃ/	beaches
+503	en_w_mountain	mountain	noun	places	mountain	جبل	/ˈmaʊntɪn/
+504	en_w_library	library	noun	school	library	مكتبة	/ˈlaɪbrəri/
+505	en_w_museum	museum	noun	leisure	museum	متحف	/mjuˈziːəm/			en_ev_museum
+506	en_w_plane	plane	noun	travel	plane	طائرة	/pleɪn/
+507	en_w_bike	bike	noun	travel	bike	دراجة	/baɪk/	bicycle
+508	en_w_taxi	taxi	noun	travel	taxi	سيارة أجرة	/ˈtæksi/
+509	en_w_ticket	ticket	noun	travel	ticket	تذكرة	/ˈtɪkɪt/			en_ticket
+510	en_w_trip	trip	noun	travel	trip	رحلة	/trɪp/
+511	en_w_map	map	noun	travel	map	خريطة	/mæp/			en_ev_map
+512	en_w_computer	computer	noun	work	computer	حاسوب	/kəmˈpjuːtə/
+513	en_w_tv	TV	noun	leisure	TV	تلفاز	/ˌtiːˈviː/	television
+514	en_w_email	email	noun	communication	email	بريد إلكتروني	/ˈiːmeɪl/
+515	en_w_message	message	noun	communication	message	رسالة	/ˈmesɪdʒ/
+516	en_w_clothes	clothes	noun	clothes	clothes	ملابس	/kləʊðz/
+517	en_w_shirt	shirt	noun	clothes	shirt	قميص	/ʃɜːt/
+518	en_w_dress	dress	noun	clothes	dress	فستان	/dres/	dresses
+519	en_w_shoe	shoe	noun	clothes	shoe	حذاء	/ʃuː/
+520	en_w_coat	coat	noun	clothes	coat	معطف	/kəʊt/
+521	en_w_card	card	noun	communication	card	بطاقة	/kɑːd/
+522	en_w_ball	ball	noun	leisure	ball	كرة	/bɔːl/
+523	en_w_present	present	noun	people	present, gift	هدية	/ˈprezənt/
+524	en_w_flower	flower	noun	nature	flower	زهرة	/ˈflaʊə/
+525	en_w_tree	tree	noun	nature	tree	شجرة	/triː/
+526	en_w_animal	animal	noun	animals	animal	حيوان	/ˈænɪməl/
+527	en_w_cat	cat	noun	animals	cat	قطة	/kæt/
+528	en_w_bird	bird	noun	animals	bird	طائر	/bɜːd/
+529	en_w_sky	sky	noun	nature	sky	سماء	/skaɪ/
+530	en_w_wind	wind	noun	weather	wind	ريح	/wɪnd/
+531	en_w_snow	snow	noun	weather	snow	ثلج	/snəʊ/
+532	en_w_fire	fire	noun	nature	fire	نار	/ˈfaɪə/
+533	en_w_air	air	noun	nature	air	هواء	/eə/
+534	en_w_reason	reason	noun	mind	reason	سبب	/ˈriːzən/
+535	en_w_news	news	noun	communication	news	أخبار	/njuːz/
+536	en_w_language	language	noun	school	language	لغة	/ˈlæŋɡwɪdʒ/
+537	en_w_number	number	noun	numbers	number	رقم، عدد	/ˈnʌmbə/
+538	en_w_colour	colour	noun	descriptions	colour	لون	/ˈkʌlə/	color
+539	en_w_price	price	noun	shopping	price	سعر	/praɪs/
+540	en_w_size	size	noun	shopping	size	مقاس، حجم	/saɪz/			en_size
+541	en_w_plan	plan	noun	mind	plan	خطة	/plæn/	planned, planning		en_plan
+542	en_w_chance	chance	noun	mind	chance	فرصة	/tʃɑːns/
+543	en_w_mistake	mistake	noun	school	mistake	خطأ	/mɪˈsteɪk/
+544	en_w_party	party	noun	leisure	party	حفلة	/ˈpɑːti/	parties
+545	en_w_meeting	meeting	noun	work	meeting	اجتماع	/ˈmiːtɪŋ/			en_meeting
+546	en_w_class	class	noun	school	class	صف، حصة	/klɑːs/	classes
+547	en_w_lesson	lesson	noun	school	lesson	درس	/ˈlesən/
+548	en_w_test	test	noun	school	test	اختبار	/test/
+549	en_w_homework	homework	noun	school	homework	واجب منزلي	/ˈhəʊmwɜːk/
+550	en_w_company	company	noun	work	company	شركة	/ˈkʌmpəni/
+551	en_w_business	business	noun	work	business	عمل تجاري	/ˈbɪznəs/
+552	en_w_sport	sport	noun	leisure	sport	رياضة	/spɔːt/
+553	en_w_red	red	adj	descriptions	red	أحمر	/red/
+554	en_w_blue	blue	adj	descriptions	blue	أزرق	/bluː/
+555	en_w_green	green	adj	descriptions	green	أخضر	/ɡriːn/
+556	en_w_black	black	adj	descriptions	black	أسود	/blæk/
+557	en_w_white	white	adj	descriptions	white	أبيض	/waɪt/
+558	en_w_yellow	yellow	adj	descriptions	yellow	أصفر	/ˈjeləʊ/
+559	en_w_high	high	adj	descriptions	high	عالٍ	/haɪ/
+560	en_w_short	short	adj	descriptions	short	قصير	/ʃɔːt/
+561	en_w_tall	tall	adj	descriptions	tall	طويل القامة	/tɔːl/
+562	en_w_fast	fast	adj	descriptions	fast	سريع	/fɑːst/
+563	en_w_slow	slow	adj	descriptions	slow	بطيء	/sləʊ/
+564	en_w_strong	strong	adj	descriptions	strong	قوي	/strɒŋ/
+565	en_w_rich	rich	adj	descriptions	rich	غني	/rɪtʃ/
+566	en_w_poor	poor	adj	descriptions	poor	فقير	/pɔː/
+567	en_w_full	full	adj	descriptions	full	ممتلئ	/fʊl/
+568	en_w_empty	empty	adj	descriptions	empty	فارغ	/ˈempti/
+569	en_w_dark	dark	adj	descriptions	dark	مظلم	/dɑːk/
+570	en_w_quiet	quiet	adj	descriptions	quiet	هادئ	/ˈkwaɪət/
+571	en_w_warm	warm	adj	weather	warm	دافئ	/wɔːm/
+572	en_w_heavy	heavy	adj	descriptions	heavy	ثقيل	/ˈhevi/
+573	en_w_safe	safe	adj	descriptions	safe	آمن	/seɪf/
+574	en_w_dangerous	dangerous	adj	descriptions	dangerous	خطير	/ˈdeɪndʒərəs/
+575	en_w_cheap	cheap	adj	shopping	cheap	رخيص	/tʃiːp/			en_cheap
+576	en_w_expensive	expensive	adj	shopping	expensive	غالٍ	/ɪkˈspensɪv/			en_expensive
+577	en_w_busy	busy	adj	work	busy	مشغول	/ˈbɪzi/			en_busy
+578	en_w_sad	sad	adj	feelings	sad	حزين	/sæd/
+579	en_w_angry	angry	adj	feelings	angry	غاضب	/ˈæŋɡri/
+580	en_w_afraid	afraid	adj	feelings	afraid	خائف	/əˈfreɪd/
+581	en_w_interesting	interesting	adj	descriptions	interesting	مثير للاهتمام	/ˈɪntrəstɪŋ/
+582	en_w_funny	funny	adj	descriptions	funny	مضحك	/ˈfʌni/
+583	en_w_simple	simple	adj	descriptions	simple	بسيط	/ˈsɪmpəl/
+584	en_w_real	real	adj	descriptions	real	حقيقي	/rɪəl/
+585	en_w_true	true	adj	descriptions	true	صحيح، حقيقي	/truː/
+586	en_w_possible	possible	adj	descriptions	possible	ممكن	/ˈpɒsəbəl/
+587	en_w_special	special	adj	descriptions	special	خاص، مميز	/ˈspeʃəl/
+588	en_w_whole	whole	adj	descriptions	whole	كامل	/həʊl/
+589	en_w_famous	famous	adj	descriptions	famous	مشهور	/ˈfeɪməs/
+590	en_w_favourite	favourite	adj	feelings	favourite	مفضّل	/ˈfeɪvərɪt/	favorite
+591	en_w_perfect	perfect	adj	descriptions	perfect	مثالي	/ˈpɜːfɪkt/
+592	en_w_terrible	terrible	adj	descriptions	terrible	فظيع	/ˈterəbəl/
+593	en_w_wonderful	wonderful	adj	descriptions	wonderful	رائع	/ˈwʌndəfəl/
+594	en_w_lovely	lovely	adj	descriptions	lovely	جميل، لطيف	/ˈlʌvli/
+595	en_w_delicious	delicious	adj	food	delicious	لذيذ	/dɪˈlɪʃəs/
+596	en_w_married	married	adj	people	married	متزوج	/ˈmærid/
+597	en_w_careful	careful	adj	descriptions	careful	حذر	/ˈkeəfəl/
+598	en_w_friendly	friendly	adj	people	friendly	ودود	/ˈfrendli/
+599	en_w_comfortable	comfortable	adj	descriptions	comfortable	مريح	/ˈkʌmftəbəl/
+600	en_w_worried	worried	adj	feelings	worried	قلق	/ˈwʌrid/
