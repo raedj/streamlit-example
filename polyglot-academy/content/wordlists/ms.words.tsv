@@ -1,0 +1,301 @@
+rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
+1	ms_w_yang	yang	pron	function	which, who (relative)	الذي، التي				
+2	ms_w_dan	dan	conj	function	and	و				
+3	ms_w_di	di	prep	function	at, in	في				
+4	ms_w_ke	ke	prep	function	to	إلى				
+5	ms_w_dari	dari	prep	function	from	من		daripada		
+6	ms_w_ini	ini	det	function	this	هذا، هذه				
+7	ms_w_itu	itu	det	function	that	ذلك، تلك				
+8	ms_w_saya	saya	pron	people	I; my	أنا				
+9	ms_w_awak	awak	pron	people	you	أنت				
+10	ms_w_dia	dia	pron	people	he, she	هو، هي				
+11	ms_w_kami	kami	pron	people	we (not including you)	نحن (دون المخاطَب)				
+12	ms_w_kita	kita	pron	people	we (including you)	نحن (مع المخاطَب)				
+13	ms_w_mereka	mereka	pron	people	they	هم				
+14	ms_w_anda	anda	pron	people	you (polite)	حضرتك				
+15	ms_w_tidak	tidak	adv	function	not	لا		tak		
+16	ms_w_bukan	bukan	adv	function	not (with nouns)	ليس				
+17	ms_w_ada	ada	verb	function	there is; to have	يوجد؛ عنده				
+18	ms_w_akan	akan	adv	time	will	سوف				
+19	ms_w_sudah	sudah	adv	time	already	قد، بالفعل		dah		
+20	ms_w_sedang	sedang	adv	time	in the middle of (-ing)	يفعل الآن				
+21	ms_w_belum	belum	adv	time	not yet	لم بعد				
+22	ms_w_boleh	boleh	verb	function	can, may	يستطيع؛ يمكن				
+23	ms_w_mahu	mahu	verb	feelings	to want	يريد		nak, hendak		
+24	ms_w_perlu	perlu	verb	function	to need, must	يحتاج؛ يجب				ms_perlu
+25	ms_w_dengan	dengan	prep	function	with	مع؛ بـ				
+26	ms_w_untuk	untuk	prep	function	for	لـ، من أجل				
+27	ms_w_pada	pada	prep	function	at, on (time)	في (للزمن)				
+28	ms_w_kepada	kepada	prep	function	to (a person)	إلى (شخص)				
+29	ms_w_juga	juga	adv	function	also, too	أيضًا				
+30	ms_w_lagi	lagi	adv	function	more; again	أيضًا؛ مرة أخرى				
+31	ms_w_sangat	sangat	adv	function	very	جدًا				
+32	ms_w_banyak	banyak	adj	function	many, a lot	كثير				
+33	ms_w_sedikit	sedikit	adj	function	a little	قليل		sikit		
+34	ms_w_semua	semua	det	function	all	كل، جميع				
+35	ms_w_setiap	setiap	det	function	every	كل				
+36	ms_w_apa	apa	pron	questions	what	ماذا، ما				
+37	ms_w_siapa	siapa	pron	questions	who	مَن				
+38	ms_w_mana	mana	pron	questions	where; which	أين؛ أيّ				
+39	ms_w_bila	bila	adv	questions	when	متى				
+40	ms_w_bagaimana	bagaimana	adv	questions	how	كيف				
+41	ms_w_kenapa	kenapa	adv	questions	why	لماذا				
+42	ms_w_berapa	berapa	pron	questions	how much, how many	كم				
+43	ms_w_ya	ya	interj	function	yes	نعم				
+44	ms_w_terima_kasih	terima kasih	phrase	greetings	thank you	شكرًا				ms_terima_kasih
+45	ms_w_sama_sama	sama-sama	phrase	greetings	you're welcome	عفوًا				ms_ev_sama_sama
+46	ms_w_maaf	maaf	interj	greetings	sorry	آسف				ms_maaf
+47	ms_w_tolong	tolong	verb	greetings	to help; please	يساعد؛ من فضلك				
+48	ms_w_sila	sila	interj	greetings	please (go ahead)	تفضّل				
+49	ms_w_selamat_pagi	selamat pagi	phrase	greetings	good morning	صباح الخير				ms_selamat_pagi
+50	ms_w_selamat_malam	selamat malam	phrase	greetings	good night	تصبح على خير				ms_selamat_malam
+51	ms_w_jumpa_lagi	jumpa lagi	phrase	greetings	see you again	إلى اللقاء				ms_jumpa_lagi
+52	ms_w_apa_khabar	apa khabar	phrase	greetings	how are you	كيف حالك				
+53	ms_w_sekarang	sekarang	adv	time	now	الآن				
+54	ms_w_esok	esok	adv	time	tomorrow	غدًا				ms_esok
+55	ms_w_semalam	semalam	adv	time	yesterday	أمس				ms_semalam
+56	ms_w_selalu	selalu	adv	time	always	دائمًا				
+57	ms_w_kadang_kadang	kadang-kadang	adv	time	sometimes	أحيانًا				
+58	ms_w_biasanya	biasanya	adv	time	usually	عادةً				ms_biasanya
+59	ms_w_masih	masih	adv	time	still	ما زال				
+60	ms_w_hanya	hanya	adv	function	only	فقط		cuma		
+61	ms_w_terlalu	terlalu	adv	function	too	جدًا، أكثر من اللازم				
+62	ms_w_lebih	lebih	adv	function	more	أكثر				
+63	ms_w_paling	paling	adv	function	most	الأكثر				
+64	ms_w_mungkin	mungkin	adv	function	maybe	ربما				ms_mungkin
+65	ms_w_nanti	nanti	adv	time	later	لاحقًا				
+66	ms_w_sini	sini	adv	places	here	هنا				
+67	ms_w_sana	sana	adv	places	there	هناك				
+68	ms_w_luar	luar	noun	places	outside	خارج				
+69	ms_w_dalam	dalam	prep	places	in, inside	داخل				
+70	ms_w_atas	atas	prep	places	on, above; for (thanks)	فوق، على				
+71	ms_w_bawah	bawah	prep	places	under	تحت				
+72	ms_w_depan	depan	prep	places	in front; next (week)	أمام؛ القادم				ms_depan
+73	ms_w_belakang	belakang	prep	places	behind	خلف				
+74	ms_w_sebelah	sebelah	prep	places	next to	بجانب				
+75	ms_w_sebelum	sebelum	conj	time	before	قبل				
+76	ms_w_selepas	selepas	conj	time	after	بعد				
+77	ms_w_kerana	kerana	conj	function	because	لأنّ		sebab		
+78	ms_w_tetapi	tetapi	conj	function	but	لكن		tapi		
+79	ms_w_atau	atau	conj	function	or	أو				
+80	ms_w_kalau	kalau	conj	function	if	إذا		jika		
+81	ms_w_awal	awal	adj	time	early	مبكر				
+82	ms_w_sendiri	sendiri	pron	people	oneself; alone	بنفسه				
+83	ms_w_ramai	ramai	adj	people	many (people)	كثيرون				
+84	ms_w_pergi	pergi	verb	movement	to go	يذهب				
+85	ms_w_datang	datang	verb	movement	to come	يأتي				
+86	ms_w_balik	balik	verb	movement	to go back	يعود				
+87	ms_w_pulang	pulang	verb	movement	to return home	يعود إلى البيت				
+88	ms_w_makan	makan	verb	food	to eat	يأكل				
+89	ms_w_minum	minum	verb	food	to drink	يشرب				
+90	ms_w_tidur	tidur	verb	routine	to sleep	ينام				
+91	ms_w_bangun	bangun	verb	routine	to get up, to wake up	يستيقظ، ينهض				ms_bangun
+92	ms_w_duduk	duduk	verb	routine	to sit	يجلس				
+93	ms_w_tinggal	tinggal	verb	home	to live, to stay	يسكن، يبقى				
+94	ms_w_bekerja	bekerja	verb	work	to work	يعمل				ms_bekerja
+95	ms_w_belajar	belajar	verb	school	to study, to learn	يدرس، يتعلم				ms_belajar
+96	ms_w_baca	baca	verb	school	to read (membaca)	يقرأ				
+97	ms_w_tulis	tulis	verb	school	to write (menulis)	يكتب				
+98	ms_w_beli	beli	verb	shopping	to buy (membeli)	يشتري				
+99	ms_w_jual	jual	verb	shopping	to sell (menjual)	يبيع				
+100	ms_w_bayar	bayar	verb	shopping	to pay (membayar)	يدفع				
+101	ms_w_masak	masak	verb	food	to cook (memasak)	يطبخ				
+102	ms_w_cuci	cuci	verb	home	to wash (mencuci)	يغسل				
+103	ms_w_cari	cari	verb	routine	to look for (mencari)	يبحث عن				
+104	ms_w_tunggu	tunggu	verb	routine	to wait (menunggu)	ينتظر				
+105	ms_w_tonton	tonton	verb	leisure	to watch (menonton)	يشاهد				
+106	ms_w_dengar	dengar	verb	senses	to hear, to listen (mendengar)	يسمع				
+107	ms_w_lihat	lihat	verb	senses	to see, to look (melihat)	يرى، ينظر		tengok		
+108	ms_w_cakap	cakap	verb	communication	to speak (bercakap)	يتكلم				
+109	ms_w_tanya	tanya	verb	communication	to ask (bertanya)	يسأل				
+110	ms_w_jawab	jawab	verb	communication	to answer (menjawab)	يجيب				
+111	ms_w_tahu	tahu	verb	mind	to know	يعرف				
+112	ms_w_faham	faham	verb	mind	to understand	يفهم		memahami		
+113	ms_w_ingat	ingat	verb	mind	to remember	يتذكر				
+114	ms_w_lupa	lupa	verb	mind	to forget	ينسى				
+115	ms_w_fikir	fikir	verb	mind	to think (berfikir)	يفكّر				
+116	ms_w_rasa	rasa	verb	feelings	to feel; to think	يشعر؛ يظن				
+117	ms_w_suka	suka	verb	feelings	to like	يحب				ms_suka
+118	ms_w_lewat	lewat	adj	time	late	متأخر				
+119	ms_w_mula	mula	verb	routine	to begin (bermula)	يبدأ				
+120	ms_w_habis	habis	verb	routine	to be finished, to run out	ينتهي، ينفد				
+121	ms_w_beri	beri	verb	routine	to give (memberi)	يعطي		bagi		
+122	ms_w_ambil	ambil	verb	routine	to take (mengambil)	يأخذ				
+123	ms_w_bawa	bawa	verb	routine	to bring, to carry (membawa)	يُحضر، يحمل				
+124	ms_w_hantar	hantar	verb	communication	to send; to take someone (menghantar)	يرسل؛ يوصل				
+125	ms_w_buka	buka	verb	home	to open (membuka)	يفتح				
+126	ms_w_tutup	tutup	verb	home	to close (menutup)	يغلق				
+127	ms_w_buat	buat	verb	routine	to do, to make (membuat)	يفعل، يصنع				
+128	ms_w_pakai	pakai	verb	clothes	to wear (memakai)	يلبس				
+129	ms_w_jalan	jalan	noun	places	road, street; (berjalan) to walk	طريق؛ يمشي				
+130	ms_w_lari	lari	verb	leisure	to run (berlari)	يركض				
+131	ms_w_main	main	verb	leisure	to play (bermain)	يلعب				
+132	ms_w_renang	renang	verb	leisure	to swim (berenang)	يسبح				
+133	ms_w_rehat	rehat	verb	routine	to rest (berehat)	يرتاح				
+134	ms_w_masuk	masuk	verb	movement	to enter	يدخل				
+135	ms_w_keluar	keluar	verb	movement	to go out	يخرج				
+136	ms_w_naik	naik	verb	travel	to go up; to ride, to take (transport)	يصعد؛ يركب				
+137	ms_w_turun	turun	verb	travel	to go down; to get off	ينزل				
+138	ms_w_sampai	sampai	verb	travel	to arrive	يصل				
+139	ms_w_jumpa	jumpa	verb	people	to meet (berjumpa)	يلتقي				
+140	ms_w_panggil	panggil	verb	communication	to call (memanggil)	ينادي، يستدعي				
+141	ms_w_telefon	telefon	noun	communication	telephone; to phone	هاتف؛ يتصل				
+142	ms_w_mandi	mandi	verb	routine	to bathe, to shower	يستحم				
+143	ms_w_ajar	ajar	verb	school	to teach (mengajar)	يدرّس				
+144	ms_w_guna	guna	verb	routine	to use (menggunakan)	يستخدم				
+145	ms_w_dapat	dapat	verb	routine	to get	يحصل على				
+146	ms_w_cuba	cuba	verb	routine	to try (mencuba)	يحاول، يجرّب				
+147	ms_w_bantu	bantu	verb	people	to help (membantu)	يساعد				
+148	ms_w_jadi	jadi	verb	function	to become (menjadi)	يصبح				
+149	ms_w_rumah	rumah	noun	home	house, home	بيت				ms_rumah
+150	ms_w_sekolah	sekolah	noun	school	school	مدرسة				
+151	ms_w_pejabat	pejabat	noun	work	office	مكتب				
+152	ms_w_hospital	hospital	noun	health	hospital	مستشفى				ms_ev_hospital
+153	ms_w_kedai	kedai	noun	shopping	shop	دكان				
+154	ms_w_pasar	pasar	noun	shopping	market	سوق				
+155	ms_w_restoran	restoran	noun	food	restaurant	مطعم				
+156	ms_w_hotel	hotel	noun	travel	hotel	فندق				
+157	ms_w_bandar	bandar	noun	places	city, town	مدينة				
+158	ms_w_negara	negara	noun	places	country	بلد				
+159	ms_w_stesen	stesen	noun	travel	station	محطة				ms_stesen
+160	ms_w_lapangan_terbang	lapangan terbang	noun	travel	airport	مطار				
+161	ms_w_bilik	bilik	noun	home	room	غرفة				
+162	ms_w_dapur	dapur	noun	home	kitchen	مطبخ				ms_dapur
+163	ms_w_pintu	pintu	noun	home	door	باب				
+164	ms_w_tingkap	tingkap	noun	home	window	نافذة				
+165	ms_w_meja	meja	noun	home	table	طاولة				
+166	ms_w_kerusi	kerusi	noun	home	chair	كرسي				
+167	ms_w_katil	katil	noun	home	bed	سرير				
+168	ms_w_kereta	kereta	noun	travel	car	سيارة				
+169	ms_w_bas	bas	noun	travel	bus	حافلة				
+170	ms_w_kereta_api	kereta api	noun	travel	train	قطار				
+171	ms_w_kapal_terbang	kapal terbang	noun	travel	aeroplane	طائرة				
+172	ms_w_tiket	tiket	noun	travel	ticket	تذكرة				ms_tiket
+173	ms_w_duit	duit	noun	shopping	money	مال		wang		
+174	ms_w_komputer	komputer	noun	work	computer	حاسوب				
+175	ms_w_buku	buku	noun	school	book	كتاب				
+176	ms_w_pen	pen	noun	school	pen	قلم				
+177	ms_w_beg	beg	noun	travel	bag	حقيبة				
+178	ms_w_kunci	kunci	noun	home	key	مفتاح				ms_ev_kunci
+179	ms_w_baju	baju	noun	clothes	shirt; clothes	قميص؛ ملابس				
+180	ms_w_kasut	kasut	noun	clothes	shoe(s)	حذاء				
+181	ms_w_hadiah	hadiah	noun	people	present, gift	هدية				
+182	ms_w_gambar	gambar	noun	leisure	picture, photo	صورة				
+183	ms_w_pukul	pukul	noun	time	o'clock	الساعة (في التوقيت)				
+184	ms_w_filem	filem	noun	leisure	film	فيلم				
+185	ms_w_sukan	sukan	noun	leisure	sport	رياضة				
+186	ms_w_keluarga	keluarga	noun	family	family	عائلة				ms_keluarga
+187	ms_w_ibu	ibu	noun	family	mother	أم		emak, mak		ms_ibu
+188	ms_w_bapa	bapa	noun	family	father	أب		ayah		ms_bapa
+189	ms_w_abang	abang	noun	family	older brother	الأخ الأكبر				ms_abang
+190	ms_w_kakak	kakak	noun	family	older sister	الأخت الكبرى				ms_kakak
+191	ms_w_adik	adik	noun	family	younger brother or sister	الأخ أو الأخت الأصغر				ms_adik
+192	ms_w_anak	anak	noun	family	child	طفل، ابن				
+193	ms_w_suami	suami	noun	family	husband	زوج				
+194	ms_w_isteri	isteri	noun	family	wife	زوجة				
+195	ms_w_kawan	kawan	noun	people	friend	صديق				ms_kawan
+196	ms_w_orang	orang	noun	people	person; (counting word for people)	شخص				
+197	ms_w_lelaki	lelaki	noun	people	man; male	رجل؛ ذكر				
+198	ms_w_perempuan	perempuan	noun	people	woman; female	امرأة؛ أنثى				
+199	ms_w_harga	harga	noun	shopping	price	سعر				
+200	ms_w_pelajar	pelajar	noun	school	student	طالب				
+201	ms_w_cikgu	cikgu	noun	school	teacher	معلم		guru		
+202	ms_w_doktor	doktor	noun	health	doctor	طبيب				ms_doktor
+203	ms_w_nama	nama	noun	people	name	اسم				
+204	ms_w_umur	umur	noun	people	age	عمر				
+205	ms_w_air	air	noun	food	water	ماء				ms_air
+206	ms_w_teh	teh	noun	food	tea	شاي				ms_teh
+207	ms_w_kopi	kopi	noun	food	coffee	قهوة				ms_kopi
+208	ms_w_susu	susu	noun	food	milk	حليب				
+209	ms_w_roti	roti	noun	food	bread	خبز				ms_roti
+210	ms_w_nasi	nasi	noun	food	cooked rice	أرز مطبوخ				
+211	ms_w_makanan	makanan	noun	food	food	طعام				
+212	ms_w_daging	daging	noun	food	meat	لحم				
+213	ms_w_ayam	ayam	noun	food	chicken	دجاج				
+214	ms_w_ikan	ikan	noun	food	fish	سمك				
+215	ms_w_sayur	sayur	noun	food	vegetable	خضار				
+216	ms_w_buah	buah	noun	food	fruit; (counting word for things)	فاكهة				
+217	ms_w_epal	epal	noun	food	apple	تفاحة				
+218	ms_w_telur	telur	noun	food	egg	بيضة				
+219	ms_w_gula	gula	noun	food	sugar	سكر				
+220	ms_w_sarapan	sarapan	noun	food	breakfast	فطور				
+221	ms_w_hari	hari	noun	time	day	يوم				
+222	ms_w_malam	malam	noun	time	night, evening	ليل، مساء				
+223	ms_w_pagi	pagi	noun	time	morning	صباح				
+224	ms_w_petang	petang	noun	time	afternoon, early evening	بعد الظهر، العصر				
+225	ms_w_tengah_hari	tengah hari	noun	time	midday, noon	الظهر				
+226	ms_w_minggu	minggu	noun	time	week	أسبوع				ms_minggu
+227	ms_w_bulan	bulan	noun	time	month; moon	شهر؛ قمر				
+228	ms_w_tahun	tahun	noun	time	year	سنة				
+229	ms_w_jam	jam	noun	time	hour; clock	ساعة				
+230	ms_w_minit	minit	noun	time	minute	دقيقة				
+231	ms_w_masa	masa	noun	time	time	وقت		waktu		
+232	ms_w_cuti	cuti	noun	leisure	holiday, day off	إجازة				ms_cuti
+233	ms_w_jumaat	Jumaat	noun	time	Friday	الجمعة				
+234	ms_w_cuaca	cuaca	noun	weather	weather	طقس				ms_cuaca
+235	ms_w_hujan	hujan	noun	weather	rain	مطر				ms_hujan
+236	ms_w_matahari	matahari	noun	weather	sun	شمس				
+237	ms_w_laut	laut	noun	places	sea	بحر				
+238	ms_w_kucing	kucing	noun	animals	cat	قطة				
+239	ms_w_anjing	anjing	noun	animals	dog	كلب				
+240	ms_w_kepala	kepala	noun	body	head	رأس				ms_kepala
+241	ms_w_tangan	tangan	noun	body	hand	يد				
+242	ms_w_mata	mata	noun	body	eye	عين				
+243	ms_w_soalan	soalan	noun	school	question	سؤال				
+244	ms_w_jawapan	jawapan	noun	school	answer	جواب				
+245	ms_w_kelas	kelas	noun	school	class	صف، درس				
+246	ms_w_bahasa	bahasa	noun	school	language	لغة				
+247	ms_w_perkataan	perkataan	noun	school	word	كلمة				
+248	ms_w_peperiksaan	peperiksaan	noun	school	exam	امتحان				ms_peperiksaan
+249	ms_w_masalah	masalah	noun	function	problem	مشكلة				
+250	ms_w_barang	barang	noun	function	thing(s), goods	أشياء، أغراض				
+251	ms_w_tempat	tempat	noun	places	place	مكان				
+252	ms_w_kerja	kerja	noun	work	work, job	عمل				
+253	ms_w_baik	baik	adj	descriptions	good; kind; well	جيد؛ طيب؛ بخير				
+254	ms_w_bagus	bagus	adj	descriptions	good, great	ممتاز				
+255	ms_w_teruk	teruk	adj	descriptions	bad, terrible	سيئ جدًا				
+256	ms_w_besar	besar	adj	descriptions	big	كبير				
+257	ms_w_kecil	kecil	adj	descriptions	small	صغير				
+258	ms_w_baru	baru	adj	descriptions	new; just (now)	جديد؛ للتوّ				
+259	ms_w_lama	lama	adj	descriptions	old; long (time)	قديم؛ طويل (زمنًا)				
+260	ms_w_cantik	cantik	adj	descriptions	beautiful, pretty	جميل				
+261	ms_w_panas	panas	adj	weather	hot	حار				ms_panas
+262	ms_w_sejuk	sejuk	adj	weather	cold	بارد				ms_sejuk
+263	ms_w_panjang	panjang	adj	descriptions	long	طويل				
+264	ms_w_pendek	pendek	adj	descriptions	short	قصير				
+265	ms_w_mudah	mudah	adj	descriptions	easy	سهل		senang		
+266	ms_w_susah	susah	adj	descriptions	difficult	صعب				
+267	ms_w_murah	murah	adj	shopping	cheap	رخيص				ms_murah
+268	ms_w_mahal	mahal	adj	shopping	expensive	غالٍ				ms_mahal
+269	ms_w_dekat	dekat	adj	places	near	قريب				
+270	ms_w_jauh	jauh	adj	places	far	بعيد				
+271	ms_w_cepat	cepat	adj	descriptions	fast	سريع				
+272	ms_w_perlahan	perlahan	adj	descriptions	slow, slowly	بطيء، ببطء				
+273	ms_w_gembira	gembira	adj	feelings	happy	سعيد				ms_gembira
+274	ms_w_sedih	sedih	adj	feelings	sad	حزين				
+275	ms_w_penat	penat	adj	feelings	tired	متعب				ms_penat
+276	ms_w_lapar	lapar	adj	food	hungry	جائع				
+277	ms_w_dahaga	dahaga	adj	food	thirsty	عطشان				
+278	ms_w_sedap	sedap	adj	food	tasty, delicious	لذيذ				ms_sedap
+279	ms_w_penting	penting	adj	descriptions	important	مهم				
+280	ms_w_betul	betul	adj	descriptions	right, correct	صحيح				
+281	ms_w_salah	salah	adj	descriptions	wrong	خطأ				
+282	ms_w_sibuk	sibuk	adj	work	busy	مشغول، مزدحم				
+283	ms_w_sakit	sakit	adj	health	ill; painful	مريض؛ مؤلم				ms_sakit
+284	ms_w_putih	putih	adj	descriptions	white	أبيض				
+285	ms_w_hitam	hitam	adj	descriptions	black	أسود				
+286	ms_w_merah	merah	adj	descriptions	red	أحمر				
+287	ms_w_lain	lain	adj	descriptions	other, another	آخر				
+288	ms_w_sama	sama	adj	descriptions	same	نفس، مماثل				
+289	ms_w_satu	satu	num	numbers	one	واحد				
+290	ms_w_dua	dua	num	numbers	two	اثنان				
+291	ms_w_tiga	tiga	num	numbers	three	ثلاثة				
+292	ms_w_empat	empat	num	numbers	four	أربعة				
+293	ms_w_lima	lima	num	numbers	five	خمسة				
+294	ms_w_enam	enam	num	numbers	six	ستة				
+295	ms_w_tujuh	tujuh	num	numbers	seven	سبعة				
+296	ms_w_lapan	lapan	num	numbers	eight	ثمانية				
+297	ms_w_sembilan	sembilan	num	numbers	nine	تسعة				
+298	ms_w_sepuluh	sepuluh	num	numbers	ten	عشرة				
+299	ms_w_ratus	ratus	num	numbers	hundred (seratus: one hundred)	مئة				
+300	ms_w_pertama	pertama	adj	numbers	first	أول				

@@ -57,6 +57,9 @@ as forms (bana ← ben, oğlu ← oğul, yiyor ← yemek).
 Urdu terms are written without vowel marks (as in normal print), with a Latin transliteration
 (ā, ī, ū for long vowels, ṭ ḍ ṛ for retroflex consonants, a tilde for nasal vowels); verbs are
 listed by infinitive, and irregular forms (گیا ← جانا، کیا ← کرنا، مجھے ← میں) are given as forms.
+Malay is Bahasa Melayu as used in Malaysia (standard spelling, a few common spoken forms such as tak,
+nak and tapi listed as forms). Most verbs are listed by root (beli, tulis); affixed forms (membeli,
+menulis, bermain) are recognised by rule, and belajar and bekerja are listed as they are usually taught.
 CEFR equivalents of the 10 levels are approximate (1–2 ≈ A1, 3–4 ≈ A2, 5–6 ≈ B1, 7–8 ≈ B2,
 9–10 ≈ B2+ to C1). No claim is made about how much of real text these words cover.
 
@@ -69,7 +72,7 @@ CEFR equivalents of the 10 levels are approximate (1–2 ≈ A1, 3–4 ≈ A2, 5
 | Arabic | 1 | 300 / 3000 | 600 | Not reviewed |
 | Turkish | 1 | 300 / 3000 | 600 | Not reviewed |
 | Urdu | 1 | 300 / 3000 | 600 | Not reviewed |
-| Malay | — | 0 / 3000 | — | — |
+| Malay | 1 | 300 / 3000 | 600 | Not reviewed |
 
 Size: one level adds about 146 KB of dex code, about 59 KB compressed in the APK (measured for
 English level 1). All 80 levels would add roughly 5 MB compressed. If that becomes a problem, the

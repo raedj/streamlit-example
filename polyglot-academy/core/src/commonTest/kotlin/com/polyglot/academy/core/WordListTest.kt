@@ -139,6 +139,10 @@ class WordListTest {
         val ms = listOf(entry(LanguageCode.MALAY, 1, "beli"), entry(LanguageCode.MALAY, 2, "tulis"))
         val mm = WordMatcher(LanguageCode.MALAY, ms)
         assertTrue(mm.contains(ms[0], "Dia membeli roti.") && mm.contains(ms[1], "Surat itu ditulis semalam.") && mm.contains(ms[1], "Saya menulis surat."))
+        val ms2 = listOf(entry(LanguageCode.MALAY, 1, "masak"), entry(LanguageCode.MALAY, 2, "kerja"), entry(LanguageCode.MALAY, 3, "buku"))
+        val mm2 = WordMatcher(LanguageCode.MALAY, ms2)
+        assertTrue(mm2.contains(ms2[0], "Ibu sedang memasak.") && mm2.contains(ms2[1], "Ayah bekerja di pejabat.") && mm2.contains(ms2[2], "Ini bukuku."),
+            "plain me-, be- and the -ku clitic")
 
         val zh = listOf(entry(LanguageCode.MANDARIN, 1, "我"), entry(LanguageCode.MANDARIN, 2, "喜欢"), entry(LanguageCode.MANDARIN, 3, "中国"))
         val mz = WordMatcher(LanguageCode.MANDARIN, zh)

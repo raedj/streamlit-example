@@ -215,16 +215,19 @@ class WordMatcher(private val language: LanguageCode, entries: List<WordEntry>) 
             }
             LanguageCode.MALAY -> {
                 val bases = mutableListOf(t)
-                for (suf in listOf("nya", "lah", "kah", "pun", "kan", "an", "i")) if (t.endsWith(suf) && t.length - suf.length >= 3) bases += t.removeSuffix(suf)
+                // -ku / -mu are the possessive clitics (bukuku, rumahmu).
+                for (suf in listOf("nya", "lah", "kah", "pun", "kan", "an", "ku", "mu", "i")) if (t.endsWith(suf) && t.length - suf.length >= 3) bases += t.removeSuffix(suf)
                 for (b in bases.toList()) {
                     when {
                         b.startsWith("meny") && b.length > 5 -> bases += "s" + b.drop(4)
                         b.startsWith("meng") && b.length > 5 -> { bases += b.drop(4); bases += "k" + b.drop(4) }
                         b.startsWith("mem") && b.length > 4 -> { bases += b.drop(3); bases += "p" + b.drop(3) }
                         b.startsWith("men") && b.length > 4 -> { bases += b.drop(3); bases += "t" + b.drop(3) }
-                        b.startsWith("me") && b.length > 4 -> bases += b.drop(2)
                     }
-                    for (p in listOf("ber", "ter", "di", "ke", "se", "pe")) if (b.startsWith(p) && b.length - p.length >= 3) bases += b.removePrefix(p)
+                    // Plain me- before m, n, ng, ny, l, r, w, y (memasak, menanti, melihat).
+                    if (b.startsWith("me") && b.length > 4) bases += b.drop(2)
+                    // ber- loses its r before r and some stems (bekerja); belajar is listed as a form.
+                    for (p in listOf("ber", "ter", "be", "di", "ke", "se", "pe")) if (b.startsWith(p) && b.length - p.length >= 3) bases += b.removePrefix(p)
                 }
                 addAll(bases.drop(1))
             }

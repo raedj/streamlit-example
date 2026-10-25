@@ -11,6 +11,7 @@ internal object GeneratedWordLists {
         "ar" -> listOf({ ArLevel01.words to ArLevel01.examples })
         "tr" -> listOf({ TrLevel01.words to TrLevel01.examples })
         "ur" -> listOf({ UrLevel01.words to UrLevel01.examples })
+        "ms" -> listOf({ MsLevel01.words to MsLevel01.examples })
         else -> emptyList()
     }
 }
