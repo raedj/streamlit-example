@@ -5,7 +5,7 @@ package com.polyglot.academy.core.wordlist.generated
 internal object GeneratedWordLists {
     fun levels(languageTag: String): List<() -> Pair<List<String>, List<String>>> = when (languageTag) {
         "en" -> listOf({ EnLevel01.words to EnLevel01.examples }, { EnLevel02.words to EnLevel02.examples })
-        "zh" -> listOf({ ZhLevel01.words to ZhLevel01.examples })
+        "zh" -> listOf({ ZhLevel01.words to ZhLevel01.examples }, { ZhLevel02.words to ZhLevel02.examples })
         "es" -> listOf({ EsLevel01.words to EsLevel01.examples }, { EsLevel02.words to EsLevel02.examples })
         "fr" -> listOf({ FrLevel01.words to FrLevel01.examples }, { FrLevel02.words to FrLevel02.examples })
         "ar" -> listOf({ ArLevel01.words to ArLevel01.examples })

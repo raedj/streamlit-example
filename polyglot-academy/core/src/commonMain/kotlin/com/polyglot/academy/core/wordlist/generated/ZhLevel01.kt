@@ -418,7 +418,7 @@ internal object ZhLevel01 {
         "56	我们在北京玩了五天。	We spent five days in Beijing.	قضينا خمسة أيام في بكين.	",
         "56	我想休息几天。	I want to rest for a few days.	أريد أن أرتاح بضعة أيام.	",
         "57	现在八点。	It's eight o'clock now.	الساعة الآن الثامنة.	",
-        "57	我每天早上七点吃早饭。	I have breakfast at seven every morning.	أتناول الفطور في السابعة كل صباح.	",
+        "57	我每天早上七点吃饭。	I eat at seven every morning.	آكل في السابعة كل صباح.	",
         "58	请等我五分钟。	Please wait five minutes for me.	انتظرني خمس دقائق من فضلك.	",
         "58	从我家到学校走十分钟。	It's a ten-minute walk from my home to school.	من بيتي إلى المدرسة عشر دقائق مشيًا.	",
         "59	明天上午我们去商店。	Tomorrow morning we're going to the shop.	صباح الغد سنذهب إلى المتجر.	",
