@@ -267,9 +267,13 @@ class SqlStore(
     private fun mapConversation(c: com.polyglot.academy.data.db.Conversation) =
         Conversation(c.id, LanguageCode.valueOf(c.language), c.tutor_id, c.scenario_id, c.started_at, c.ended_at, c.summary)
 
+    override suspend fun learnerTurns(language: LanguageCode): List<ConversationTurn> = withContext(io) {
+        cq.learnerTurnsForLanguage(language.name).executeAsList().map(::mapTurn)
+    }
+
     private fun mapTurn(t: com.polyglot.academy.data.db.Conversation_turn) = ConversationTurn(
         t.id, t.conversation_id, Speaker.valueOf(t.speaker), t.text, t.translation, storeJson.decodeFromString(correctionList, t.corrections_json),
-        storeJson.decodeFromString(stringList, t.alternatives_json), storeJson.decodeFromString(stringList, t.vocabulary_json), t.created_at, t.produced_by, t.was_spoken == 1L,
+        storeJson.decodeFromString(stringList, t.alternatives_json), storeJson.decodeFromString(stringList, t.vocabulary_json), t.created_at, t.produced_by, t.was_spoken == 1L, t.speaking_ms,
     )
 
     override fun turns(conversationId: String): Flow<List<ConversationTurn>> =
@@ -287,7 +291,7 @@ class SqlStore(
     override suspend fun addTurn(turn: ConversationTurn) = withContext(io) {
         with(turn) {
             cq.insertTurn(id, conversationId, speaker.name, text, translation, storeJson.encodeToString(correctionList, corrections),
-                storeJson.encodeToString(stringList, alternatives), storeJson.encodeToString(stringList, vocabularyNotes), createdAtMillis, producedBy, wasSpoken.toLong())
+                storeJson.encodeToString(stringList, alternatives), storeJson.encodeToString(stringList, vocabularyNotes), createdAtMillis, producedBy, wasSpoken.toLong(), speakingMillis)
         }
     }
 
@@ -467,7 +471,7 @@ class SqlStore(
             val convIds = conversations.map { it.id }.toSet()
             turns.filter { it.conversationId in convIds }.forEach { t -> with(t) {
                 cq.insertTurn(id, conversationId, speaker.name, text, translation, storeJson.encodeToString(correctionList, corrections),
-                    storeJson.encodeToString(stringList, alternatives), storeJson.encodeToString(stringList, vocabularyNotes), createdAtMillis, producedBy, wasSpoken.toLong())
+                    storeJson.encodeToString(stringList, alternatives), storeJson.encodeToString(stringList, vocabularyNotes), createdAtMillis, producedBy, wasSpoken.toLong(), speakingMillis)
             } }
         }
         RestoreReport(version, counts, skipped)

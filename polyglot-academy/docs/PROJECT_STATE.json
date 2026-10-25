@@ -50,11 +50,11 @@
     }
   },
   "last_tests": {
-    "total": 159,
+    "total": 172,
     "failed": 0,
     "modules": {
-      "core": 116,
-      "data": 31,
+      "core": 125,
+      "data": 35,
       "uicore": 12
     },
     "not_run": [
@@ -91,6 +91,9 @@
     "On-device PDF text extraction (K-04 partly addressed); scanned/encrypted PDFs reported with specific messages",
     "PDF: glyph-position layout for Arabic lines (correct punctuation, numbers, Latin runs, ActualText), standard-14 font widths",
     "Mandarin character writing practice: HanziData (79 characters), HandwritingScorer, Characters screen — K-09 partly addressed",
-    "'Next steps' unit in all five languages: future and conditionals (EN), future and subjunctive (ES, FR), past and future (AR), 了 and 比 (ZH); Arabic now reaches B1; HanziData 98 characters"
+    "'Next steps' unit in all five languages: future and conditionals (EN), future and subjunctive (ES, FR), past and future (AR), 了 and 比 (ZH); Arabic now reaches B1; HanziData 98 characters",
+    "Speaking path: 30 missions A1–C1, AI mission prompts with completion flag, mission evaluation, fluency report, speaking time per turn (DB v3)",
+    "Vision OCR for photos and scanned PDFs (Android PdfRenderer) with confirmation and privacy gate",
+    "Charts: tap-to-inspect tooltips; avatar mouth shapes driven by TTS word progress"
   ]
 }

@@ -190,7 +190,13 @@ fun LibraryScreen() {
         app.services.materials.import(lang, input, cloudAllowed).collect { p ->
             when (p) {
                 is ImportProgress.Processing -> progress = p.fraction
-                is ImportProgress.Done -> { progress = null; app.nav.push(Route.Material(p.material.id)) }
+                is ImportProgress.Done -> {
+                    progress = null
+                    // Keep the file in memory so the learner can choose to read it with AI on the next screen.
+                    val bytes = input.bytes
+                    if (bytes != null && app.services.materials.canTryOcr(p.material)) PendingOcrFiles.put(p.material.id, input.mimeType, bytes)
+                    app.nav.push(Route.Material(p.material.id))
+                }
                 is ImportProgress.Rejected -> {
                     progress = null
                     toast(when (val r = p.reason) {
@@ -313,7 +319,7 @@ fun MaterialScreen(materialId: String) {
     val speaker = rememberSpeaker(s)
     val materials by remember { app.services.store.materials(null) }.collectAsState(null)
     val material = materials?.firstOrNull { it.id == materialId }
-    var editText by remember(material?.id) { mutableStateOf(material?.extractedText.orEmpty()) }
+    var editText by remember(material?.id, material?.extractedText) { mutableStateOf(material?.extractedText.orEmpty()) }
     val chosen = remember(material?.id) { mutableStateMapOf<String, String>() }
     var confirmDelete by remember { mutableStateOf(false) }
     var added by remember { mutableStateOf(false) }
@@ -324,14 +330,20 @@ fun MaterialScreen(materialId: String) {
         if (material == null) { StateMessage(s[K.ERROR_TITLE], s[K.LESSON_NOT_FOUND]); return@ScrollScreen }
         Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) { Pill(Labels.materialType(s, material.type)); Pill(Labels.materialStatus(s, material.status)) }
         when (material.status) {
-            MaterialStatus.UNSUPPORTED, MaterialStatus.FAILED -> Banner(BannerKind.WARNING, s[when (material.errorMessage) {
-                "pdf_encrypted" -> K.MATERIAL_PDF_ENCRYPTED
-                "pdf_no_text" -> K.MATERIAL_PDF_NO_TEXT
-                "pdf_invalid" -> K.MATERIAL_PDF_INVALID
-                "no_text_found" -> K.MATERIAL_NO_TEXT
-                else -> K.MATERIAL_UNSUPPORTED_BODY
-            }])
+            MaterialStatus.UNSUPPORTED, MaterialStatus.FAILED -> {
+                Banner(BannerKind.WARNING, s[when (material.errorMessage) {
+                    "pdf_encrypted" -> K.MATERIAL_PDF_ENCRYPTED
+                    "pdf_no_text" -> K.MATERIAL_PDF_NO_TEXT
+                    "pdf_invalid" -> K.MATERIAL_PDF_INVALID
+                    "no_text_found" -> K.MATERIAL_NO_TEXT
+                    "needs_ocr" -> K.MATERIAL_NEEDS_OCR
+                    "ocr_no_text" -> K.MATERIAL_OCR_NO_TEXT
+                    else -> K.MATERIAL_UNSUPPORTED_BODY
+                }])
+                if (app.services.materials.canTryOcr(material)) OcrCard(material)
+            }
             else -> {
+                if (material.cloudProcessingAllowed && material.type != MaterialType.TEXT) Banner(BannerKind.INFO, s[K.MATERIAL_OCR_CHECK])
                 if (material.type == MaterialType.PDF) Banner(BannerKind.INFO, s[K.MATERIAL_PDF_CHECK])
                 SectionHeader(s[K.MATERIAL_TEXT_REVIEW])
                 Text(s[K.MATERIAL_TEXT_EDIT_NOTE], style = MaterialTheme.typography.bodySmall, color = c.textSecondary)

@@ -57,7 +57,7 @@ class DesktopPlatformUi(private val exportDir: File = File(System.getProperty("u
         }
         val pdf = mime == "application/pdf"
         PickedFile(f.name, mime, f.length(), if (textual && f.length() < (if (json) 50L else 5L) * 1024 * 1024) f.readText() else null,
-            if (pdf && f.length() <= 50L * 1024 * 1024) f.readBytes() else null)
+            if ((pdf && f.length() <= 50L * 1024 * 1024) || (mime.startsWith("image/") && f.length() <= 20L * 1024 * 1024)) f.readBytes() else null)
     }
     override suspend fun requestMicrophonePermission() = false
     override suspend fun requestNotificationPermission() = false

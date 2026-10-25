@@ -9,6 +9,8 @@ import com.polyglot.academy.core.model.ErrorSeverity
 import com.polyglot.academy.core.model.LanguageCode
 import com.polyglot.academy.core.model.Languages
 import com.polyglot.academy.core.model.RolePlayScenario
+import com.polyglot.academy.core.speaking.SpeakingMission
+import com.polyglot.academy.core.speaking.SpeakingPath
 import com.polyglot.academy.core.util.TextNormalizer
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonArray
@@ -27,6 +29,8 @@ data class TutorReply(
     val producedBy: String,
     /** True when the reply came from scripted logic rather than a language model. */
     val scripted: Boolean,
+    /** The AI tutor judged that the learner completed the speaking mission's tasks. */
+    val missionComplete: Boolean = false,
 )
 
 data class TutorContext(
@@ -39,6 +43,7 @@ data class TutorContext(
     val showTranslation: Boolean,
     val recentVocabulary: List<String> = emptyList(),
     val recurringDifficulties: List<String> = emptyList(),
+    val mission: SpeakingMission? = null,
 )
 
 /** Builds the system prompt sent to cloud/local models. Personality changes instructions, not just the name. */
@@ -77,12 +82,25 @@ object TutorPromptBuilder {
             ctx.scenario?.let {
                 appendLine("Role-play scenario: ${it.title.en}. Setting: ${it.setting.en}. Learner goal: ${it.learnerGoal.en}. Stay in the scenario.")
             }
+            appendLine(SpeakingPath.coaching(ctx.level))
+            appendLine("Keep your own turns to two or three sentences so the learner does most of the talking.")
+            ctx.mission?.let { m ->
+                appendLine("Speaking mission (${m.level.label}): ${m.title.en}. ${m.brief}")
+                appendLine("The learner should: " + m.tasks.mapIndexed { i, t -> "${i + 1}) ${t.en}" }.joinToString("; ") + ".")
+                appendLine("Guide the conversation so the learner can do each task, without doing them for the learner.")
+                appendLine("If the first learner message is exactly \"$MISSION_START\", it is a signal from the app: open the conversation yourself in $target.")
+                appendLine("Only when the learner has done every task, say so warmly and set \"mission_complete\" to true; otherwise keep it false.")
+            }
             if (ctx.recentVocabulary.isNotEmpty()) appendLine("Try to reuse some recently studied words: ${ctx.recentVocabulary.take(10).joinToString()}.")
             if (ctx.recurringDifficulties.isNotEmpty()) appendLine("The learner often struggles with: ${ctx.recurringDifficulties.take(5).joinToString()}.")
             appendLine("Respond ONLY with a JSON object of this shape:")
-            appendLine("""{"reply": "<your reply in $target>", "reply_translation": "<translation in $explain or empty>", "corrections": [{"original": "...", "corrected": "...", "explanation": "<in $explain>", "severity": "minor|moderate|meaning", "stylistic": false}], "alternatives": ["<optional more natural phrasing>"], "vocabulary": ["<word — meaning in $explain>"]}""")
+            appendLine("""{"reply": "<your reply in $target>", "reply_translation": "<translation in $explain or empty>", "corrections": [{"original": "...", "corrected": "...", "explanation": "<in $explain>", "severity": "minor|moderate|meaning", "stylistic": false}], "alternatives": ["<optional more natural phrasing>"], "vocabulary": ["<word — meaning in $explain>"]""" +
+                (if (ctx.mission != null) """, "mission_complete": false""" else "") + "}")
         }
     }
+
+    /** Sent as the first user message so the AI opens a speaking mission itself. */
+    const val MISSION_START = "[start mission]"
 
     fun history(turns: List<Pair<Boolean, String>>, maxTurns: Int = 16): List<ChatMessage> =
         turns.takeLast(maxTurns).map { (isLearner, text) -> ChatMessage(if (isLearner) ChatRole.USER else ChatRole.ASSISTANT, text) }
@@ -102,7 +120,8 @@ object TutorResponseParser {
         val corrections = corrections(obj)
         val reply = s("reply")?.takeIf { it.isNotEmpty() } ?: return TutorReply(raw.trim(), null, emptyList(), emptyList(), emptyList(), false, producedBy, false)
         return TutorReply(reply, s("reply_translation")?.takeIf { it.isNotEmpty() }, corrections, list("alternatives"), list("vocabulary"),
-            finished = false, producedBy = producedBy, scripted = false)
+            finished = false, producedBy = producedBy, scripted = false,
+            missionComplete = (obj["mission_complete"] as? JsonPrimitive)?.content == "true")
     }
 
     /** Reads a "corrections" array, dropping entries where nothing actually changed. */

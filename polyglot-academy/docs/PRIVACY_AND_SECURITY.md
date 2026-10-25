@@ -23,6 +23,7 @@ conversations / imported material / everything (incl. keys and reminder).
 - `SecretRedactor` strips key-like strings; error messages never include keys or user content (tested).
 - HTTPS only (network security config); cleartext allowed only for 127.0.0.1/localhost/10.0.2.2 (own local server).
 - No `followRedirects` for provider calls; timeouts on every request.
+- Reading a photo or scanned PDF with AI sends its images to the chosen vision provider only after a confirmation dialog, only when cloud AI is enabled (the global switch is checked first), and is tagged IMPORTED_MATERIAL. Files are kept in memory for this, never stored.
 - Imported PDFs are parsed on the device; their bytes are never sent anywhere, and only the extracted text is stored.
 - Backup rules exclude the secrets file and the raw database; optional backup uses a secret-free export.
 - Restore (`SqlStore.importJson`) checks the format and version, runs in one transaction (a bad file changes nothing),

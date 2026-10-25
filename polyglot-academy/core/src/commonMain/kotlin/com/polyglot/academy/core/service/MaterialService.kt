@@ -50,10 +50,32 @@ class MaterialService(
     private val ids: IdGenerator,
     /** Platform-provided extraction support (e.g. Android PDF text via a library). */
     private val platformSupport: Map<MaterialType, ExtractionSupport> = emptyMap(),
+    private val ocr: OcrService? = null,
 ) {
     fun support(type: MaterialType): ExtractionSupport = when (type) {
         MaterialType.TEXT, MaterialType.CAPTIONS, MaterialType.PDF -> ExtractionSupport.SUPPORTED
+        MaterialType.IMAGE -> if (ocr != null) ExtractionSupport.AI_OCR else ExtractionSupport.NOT_IMPLEMENTED
         else -> platformSupport[type] ?: ExtractionSupport.NOT_IMPLEMENTED
+    }
+
+    /** Whether a failed or unsupported material can still be read with AI text recognition. */
+    fun canTryOcr(material: ImportedMaterial): Boolean = ocr != null &&
+        (material.type == MaterialType.IMAGE || material.errorMessage == "pdf_no_text")
+
+    /**
+     * Reads the text of [pages] (a photo, or rendered pages of a scanned PDF) with a vision AI
+     * provider and stores it for review. Only call after the learner confirmed sending the file.
+     */
+    suspend fun recognizeText(material: ImportedMaterial, pages: List<OcrPage>, onPage: (Int, Int) -> Unit = { _, _ -> }): Pair<ImportedMaterial, OcrResult> {
+        val service = ocr ?: return material to OcrResult.Failed(com.polyglot.academy.core.ai.AiError.NoProviderAvailable("no vision service"))
+        val result = service.recognize(pages, material.language, onPage)
+        val updated = when (result) {
+            is OcrResult.Text -> material.copy(status = MaterialStatus.READY_FOR_REVIEW, extractedText = result.text, errorMessage = null, cloudProcessingAllowed = true)
+            OcrResult.NoText -> material.copy(status = MaterialStatus.FAILED, errorMessage = "ocr_no_text", cloudProcessingAllowed = true)
+            is OcrResult.Failed, is OcrResult.TooLarge -> material
+        }
+        if (updated != material) library.upsertMaterial(updated)
+        return updated to result
     }
 
     fun import(language: LanguageCode, input: ImportInput, cloudAllowed: Boolean): Flow<ImportProgress> = flow {
@@ -76,7 +98,8 @@ class MaterialService(
             }
         } else input.text
         if (support(type) == ExtractionSupport.NOT_IMPLEMENTED || raw == null) {
-            material = material.copy(status = MaterialStatus.UNSUPPORTED, errorMessage = "extraction_not_available")
+            val reason = if (type == MaterialType.IMAGE && ocr != null) "needs_ocr" else "extraction_not_available"
+            material = material.copy(status = MaterialStatus.UNSUPPORTED, errorMessage = reason)
             library.upsertMaterial(material)
             emit(ImportProgress.Done(material)); return@flow
         }

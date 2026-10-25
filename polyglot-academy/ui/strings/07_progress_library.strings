@@ -73,6 +73,7 @@ LIBRARY_SUPPORT ¦ What can be processed in this version ¦ ما الذي يمك
 SUPPORT_SUPPORTED ¦ Supported ¦ مدعوم
 SUPPORT_PLATFORM_DEPENDENT ¦ Depends on your device ¦ يعتمد على جهازك
 SUPPORT_NOT_IMPLEMENTED ¦ Not yet supported ¦ غير مدعوم بعد
+SUPPORT_AI_OCR ¦ With AI, on request ¦ بالذكاء الاصطناعي عند الطلب
 MTYPE_TEXT ¦ Text (.txt, .md) ¦ نص (.txt و.md)
 MTYPE_CAPTIONS ¦ Subtitles (.srt, .vtt) ¦ ترجمات (.srt و.vtt)
 MTYPE_PDF ¦ PDF ¦ PDF
@@ -99,7 +100,24 @@ MATERIAL_DELETE_TITLE ¦ Delete this material? ¦ حذف هذه المادة؟
 MATERIAL_DELETE_BODY ¦ The text and any new words created only from it will be removed. ¦ سيُحذف النص وأي كلمات جديدة أُنشئت منه فقط.
 MATERIAL_UNSUPPORTED_BODY ¦ This type of file can be stored but its text can't be extracted in this version. You can paste the text instead. ¦ يمكن تخزين هذا النوع من الملفات لكن لا يمكن استخراج نصه في هذا الإصدار، ويمكنك لصق النص بدلًا من ذلك.
 MATERIAL_PDF_ENCRYPTED ¦ This PDF is password-protected, so its text can't be read. Remove the protection or paste the text instead. ¦ ملف PDF هذا محمي بكلمة مرور، لذا لا يمكن قراءة نصه. أزل الحماية أو الصق النص بدلًا من ذلك.
-MATERIAL_PDF_NO_TEXT ¦ No text was found in this PDF. It may be a scanned image, and reading scanned pages (OCR) isn't supported yet. You can paste the text instead. ¦ لم يُعثر على نص في ملف PDF هذا. قد يكون صورة ممسوحة ضوئيًا، وقراءة الصفحات الممسوحة (OCR) غير مدعومة بعد. يمكنك لصق النص بدلًا من ذلك.
+MATERIAL_PDF_NO_TEXT ¦ No text was found in this PDF. It may be a scanned image: you can read it with AI below (if available) or paste the text instead. ¦ لم يُعثر على نص في ملف PDF هذا. قد يكون صورة ممسوحة ضوئيًا: يمكنك قراءته بالذكاء الاصطناعي أدناه (إن توفّر) أو لصق النص بدلًا من ذلك.
+MATERIAL_NEEDS_OCR ¦ This is an image. Its text can be read with an AI provider, on your request. ¦ هذه صورة. يمكن قراءة نصها بمزوّد ذكاء اصطناعي بناءً على طلبك.
+MATERIAL_OCR_NO_TEXT ¦ The AI provider found no readable text in this file. ¦ لم يجد مزوّد الذكاء الاصطناعي نصًا مقروءًا في هذا الملف.
+MATERIAL_OCR_TITLE ¦ Read the text with AI ¦ قراءة النص بالذكاء الاصطناعي
+MATERIAL_OCR_BODY ¦ The photo or the page images are sent to your chosen AI provider (OpenAI, Gemini or Claude), which returns the text. This needs cloud AI to be allowed in Privacy. Up to 20 pages. ¦ تُرسل الصورة أو صور الصفحات إلى مزوّد الذكاء الاصطناعي الذي اخترته (OpenAI أو Gemini أو Claude) ليعيد النص. يتطلب ذلك السماح بالذكاء الاصطناعي السحابي في الخصوصية، وبحدّ أقصى 20 صفحة.
+MATERIAL_OCR_REIMPORT ¦ To read it with AI, import the file again (files are not kept after you leave). ¦ لقراءته بالذكاء الاصطناعي، استورد الملف مرة أخرى (لا تُحفظ الملفات بعد مغادرتك).
+MATERIAL_OCR_START ¦ Read text with AI ¦ قراءة النص بالذكاء الاصطناعي
+MATERIAL_OCR_CONFIRM_TITLE ¦ Send this file to your AI provider? ¦ إرسال هذا الملف إلى مزوّد الذكاء الاصطناعي؟
+MATERIAL_OCR_CONFIRM_BODY ¦ The images will leave your device and be processed by the provider under its own terms. Only do this with material you have the right to use. ¦ ستغادر الصور جهازك وتعالجها الجهة المزوّدة وفق شروطها. افعل ذلك فقط بمواد يحق لك استخدامها.
+MATERIAL_OCR_PREPARING ¦ Preparing pages… ¦ جارٍ تجهيز الصفحات…
+MATERIAL_OCR_PROGRESS ¦ Reading page {0} of {1}… ¦ جارٍ قراءة الصفحة {0} من {1}…
+MATERIAL_OCR_DONE ¦ Text read from {0} of {1} pages. Check it before studying. ¦ قُرئ النص من {0} من أصل {1} صفحات. راجعه قبل الدراسة.
+MATERIAL_OCR_NO_RENDER ¦ This device can't turn the PDF into page images. Paste the text instead. ¦ لا يستطيع هذا الجهاز تحويل ملف PDF إلى صور صفحات. الصق النص بدلًا من ذلك.
+MATERIAL_OCR_TOO_LARGE ¦ An image is larger than {0} MB. Use a smaller photo. ¦ إحدى الصور أكبر من {0} ميغابايت. استخدم صورة أصغر.
+MATERIAL_OCR_PRIVACY ¦ Cloud AI is off in your privacy settings, so the file wasn't sent. ¦ الذكاء الاصطناعي السحابي مُعطّل في إعدادات الخصوصية، لذلك لم يُرسل الملف.
+MATERIAL_OCR_NO_PROVIDER ¦ No AI provider that can read images is set up. Add OpenAI, Gemini or Claude in Settings. ¦ لا يوجد مزوّد ذكاء اصطناعي مُعدّ يستطيع قراءة الصور. أضف OpenAI أو Gemini أو Claude في الإعدادات.
+MATERIAL_OCR_FAILED ¦ Reading failed: {0} ¦ فشلت القراءة: {0}
+MATERIAL_OCR_CHECK ¦ This text was read by an AI provider and may contain mistakes. Check it before studying. ¦ قرأ هذا النص مزوّد ذكاء اصطناعي وقد يحتوي أخطاء، فراجعه قبل الدراسة.
 MATERIAL_PDF_INVALID ¦ This file couldn't be read as a PDF. It may be damaged. ¦ تعذّرت قراءة هذا الملف بصيغة PDF، وقد يكون تالفًا.
 MATERIAL_NO_TEXT ¦ No text was found in this file. ¦ لم يُعثر على نص في هذا الملف.
 MATERIAL_PDF_CHECK ¦ Text was extracted from the PDF on this device. Columns and tables can come out in the wrong order, so check it before studying. ¦ استُخرج النص من ملف PDF على هذا الجهاز. قد تظهر الأعمدة والجداول بترتيب خاطئ، لذا راجعه قبل الدراسة.

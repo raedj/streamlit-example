@@ -1,4 +1,4 @@
-# Database Schema (SQLDelight, version 2)
+# Database Schema (SQLDelight, version 3)
 
 Files: `data/src/commonMain/sqldelight/com/polyglot/academy/data/db/*.sq`, migration
 `migrations/1.sqm`, snapshot `databases/1.db`.
@@ -18,7 +18,7 @@ Files: `data/src/commonMain/sqldelight/com/polyglot/academy/data/db/*.sq`, migra
 | user_vocabulary | id | language, item_json, created_at | (language) |
 | saved_phrase | id | language, text, meaning, note, source_conversation_id, created_at | (language) |
 | conversation | id | language, tutor_id, scenario_id, started_at, ended_at, summary | (language, started_at) |
-| conversation_turn | id | conversation_id → conversation ON DELETE CASCADE, speaker, text, translation, corrections/alternatives/vocabulary JSON, created_at, produced_by, was_spoken | (conversation_id, created_at) |
+| conversation_turn | id | conversation_id → conversation ON DELETE CASCADE, speaker, text, translation, corrections/alternatives/vocabulary JSON, created_at, produced_by, was_spoken, speaking_ms (v3) | (conversation_id, created_at) |
 | imported_material | id | language, title, type, mime_type, size_bytes, imported_at, status, extracted_text, error_message, generated_vocabulary_json, cloud_processing_allowed | (language) |
 | note | id | language, title, body, created/updated | — |
 | bookmark | id, UNIQUE(kind, reference_id) | created_at, label (v2) | — |
@@ -29,7 +29,9 @@ Built-in curriculum content is code, not data; review states reference built-in 
 
 ## Migrations
 - v1 → v2: `ALTER TABLE bookmark ADD COLUMN label`; index `mistake_lang_source`.
-- Verified by `verifyCommonMainPolyglotDatabaseMigration` and `SqlStoreTest.migrationFromVersion1PreservesData`.
+- v2 → v3: `ALTER TABLE conversation_turn ADD COLUMN speaking_ms INTEGER` (approximate speaking time of spoken learner turns).
+- Speaking missions are stored as conversations with `scenario_id = "mission:<id>"`; a passed mission adds `mission_passed=true` to the summary (no extra table).
+- Verified by `verifyCommonMainPolyglotDatabaseMigration`, `SqlStoreTest.migrationFromVersion1PreservesData` and `migrationFromVersion2KeepsTurnsAndAddsSpeakingTime`.
 
 ## Rules
 - Never `INSERT OR REPLACE` on rows referenced by foreign keys (REPLACE deletes first → cascade). Conversations use insert-or-ignore + update (regression test `ConversationIntegrityTest`).

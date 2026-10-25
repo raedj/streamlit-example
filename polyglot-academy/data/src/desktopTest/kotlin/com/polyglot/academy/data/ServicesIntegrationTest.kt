@@ -58,6 +58,7 @@ import kotlinx.datetime.TimeZone
 import kotlin.test.AfterTest
 import kotlin.test.Test
 import kotlin.test.assertEquals
+import kotlin.test.assertFalse
 import kotlin.test.assertIs
 import kotlin.test.assertNotNull
 import kotlin.test.assertNull
@@ -227,6 +228,50 @@ class ServicesIntegrationTest {
         assertEquals(1, store.savedPhrases(LanguageCode.ENGLISH).first().size)
     }
 
+    @Test fun aiSpeakingMissionOpensInCharacterAndPassesWhenTasksAreDone() = runBlocking<Unit> {
+        enroll(LanguageCode.ENGLISH, CefrLevel.A1); enableCloud()
+        val mission = com.polyglot.academy.core.speaking.SpeakingPath.of("a1_intro")!!
+        openai.replies += Result.success("""{"reply":"Hi! I'm new here. What's your name?"}""")
+        repeat(3) { openai.replies += Result.success("""{"reply":"Nice! Tell me more.","mission_complete":false}""") }
+        openai.replies += Result.success("""{"reply":"Great, you did everything!","mission_complete":true}""")
+        val c = app.conversation(scope, LanguageCode.ENGLISH, TutorRoster.byId("emma")!!, null, mission = mission)
+        c.start(); waitFor { c.state.value.turns.isNotEmpty() }
+        assertEquals("Hi! I'm new here. What's your name?", c.state.value.turns.first().text)
+        val first = openai.requests.first()
+        assertEquals(com.polyglot.academy.core.tutor.TutorPromptBuilder.MISSION_START, first.messages.single().content)
+        assertTrue("Say where you are from" in first.system)
+        listOf("My name is Laila Hassan", "I am from Amman in Jordan", "I work as a nurse there", "I like my job very much").forEachIndexed { i, t ->
+            c.sendText(t); waitFor { c.state.value.turns.size >= 3 + 2 * i }
+        }
+        assertTrue(c.state.value.missionConfirmed)
+        // Later requests still start with the start signal, then the real conversation.
+        assertEquals(com.polyglot.academy.core.tutor.TutorPromptBuilder.MISSION_START, openai.requests.last().messages.first().content)
+        c.end(); waitFor { c.state.value.summary != null }
+        assertTrue(c.state.value.summary!!.missionResult!!.passed)
+        val a1 = app.speaking.progress(LanguageCode.ENGLISH).first()
+        assertTrue(a1.missions.first { it.mission.id == "a1_intro" }.passed)
+        assertEquals("a1_cafe", com.polyglot.academy.core.speaking.SpeakingProgressCalculator.next(app.speaking.progress(LanguageCode.ENGLISH))?.id)
+        val fluency = app.speaking.fluency(LanguageCode.ENGLISH)
+        assertEquals(4, fluency.learnerTurns)
+        assertEquals(6, fluency.medianWordsPerTurn) // turns of 5, 6, 6 and 6 words
+    }
+
+    @Test fun offlineMissionWithoutRolePlayIsFreePracticeAndDoesNotPass() = runBlocking<Unit> {
+        enroll(LanguageCode.FRENCH, CefrLevel.B1)
+        val mission = com.polyglot.academy.core.speaking.SpeakingPath.of("b1_story")!!
+        val c = app.conversation(scope, LanguageCode.FRENCH, TutorRoster.byId("emma")!!, null, mission = mission)
+        c.start(); waitFor { c.state.value.turns.isNotEmpty() }
+        assertTrue(c.state.value.missionNeedsAi)
+        c.startListening(); waitFor { c.state.value.turns.size >= 3 }
+        val spoken = c.state.value.turns[1]
+        assertTrue(spoken.wasSpoken && spoken.speakingMillis != null)
+        c.end(); waitFor { c.state.value.summary != null }
+        val result = c.state.value.summary!!.missionResult!!
+        assertFalse(result.passed)
+        assertTrue(com.polyglot.academy.core.speaking.MissionGap.TASKS_NOT_CONFIRMED in result.gaps)
+        assertTrue(store.conversations(LanguageCode.FRENCH).first().single().scenarioId == mission.conversationKey)
+    }
+
     @Test fun speechUnavailableShowsNoticeInsteadOfHanging() = runBlocking<Unit> {
         enroll()
         platform.recognizer.available = SpeechAvailability.PERMISSION_DENIED
@@ -329,6 +374,34 @@ class ServicesIntegrationTest {
         val failed = app.materials.import(LanguageCode.FRENCH, ImportInput("X", "application/pdf", "x.pdf", junk.size.toLong(), null, junk), false).toList().last() as ImportProgress.Done
         assertEquals(MaterialStatus.FAILED, failed.material.status)
         assertEquals("pdf_no_text", failed.material.errorMessage)
+    }
+
+    @Test fun photoTextIsReadWithVisionAiOnlyWhenCloudIsAllowed() = runBlocking<Unit> {
+        val photo = byteArrayOf(1, 2, 3, 4)
+        val done = app.materials.import(LanguageCode.FRENCH, ImportInput("Menu", "image/jpeg", "menu.jpg", 4, null, photo), false).toList().last() as ImportProgress.Done
+        assertEquals(MaterialStatus.UNSUPPORTED, done.material.status)
+        assertEquals("needs_ocr", done.material.errorMessage)
+        assertTrue(app.materials.canTryOcr(done.material))
+        val pages = listOf(com.polyglot.academy.core.service.OcrPage("image/jpeg", photo), com.polyglot.academy.core.service.OcrPage("image/jpeg", photo))
+
+        // Cloud AI off: nothing is sent.
+        val (_, blocked) = app.materials.recognizeText(done.material, pages)
+        assertIs<com.polyglot.academy.core.service.OcrResult.Failed>(blocked)
+        assertTrue(openai.requests.isEmpty())
+
+        enableCloud()
+        openai.replies += Result.success("Café : 2 €\nCroissant : 1,50 €")
+        openai.replies += Result.success("NO_TEXT")
+        val (updated, result) = app.materials.recognizeText(done.material, pages)
+        val text = assertIs<com.polyglot.academy.core.service.OcrResult.Text>(result)
+        assertEquals(2, text.pagesRead)
+        assertEquals(1, text.pagesWithoutText)
+        assertEquals(MaterialStatus.READY_FOR_REVIEW, updated.status)
+        assertTrue("Croissant" in updated.extractedText.orEmpty())
+        val req = openai.requests.first()
+        assertEquals(setOf(com.polyglot.academy.core.model.DataCategory.IMPORTED_MATERIAL), req.dataCategories)
+        assertEquals("AQIDBA==", req.messages.single().images.single().base64)
+        assertTrue("French" in req.messages.single().content)
     }
 
     @Test fun captionsImport() = runBlocking<Unit> {

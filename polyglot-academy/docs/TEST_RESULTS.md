@@ -1,11 +1,11 @@
 # Test Results
 
 Run on 2026-10-25 in the cloud build container (JDK 21, Gradle 8.14.3, Linux x64) with
-`./gradlew build -x :ui:desktopTest`. **Result: BUILD SUCCESSFUL, 159 tests, 0 failures.**
+`./gradlew build -x :ui:desktopTest`. **Result: BUILD SUCCESSFUL, 172 tests, 0 failures.**
 
 | Module | Test class | Tests | Failures |
 |---|---|---|---|
-| core | AdapterTest (OpenAI, Azure, Gemini, Anthropic, DeepSeek, local; error classification; timeouts; no key leakage) | 10 | 0 |
+| core | AdapterTest (OpenAI, Azure, Gemini, Anthropic, DeepSeek, local; image parts per vendor; error classification; timeouts; no key leakage) | 11 | 0 |
 | core | AiTest (privacy policy, router, retries, fallback rules, redaction) | 18 | 0 |
 | core | AssessmentPlannerAnalyticsTest | 13 | 0 |
 | core | CurriculumIntegrityTest (all 5 curricula, incl. track integrity) | 7 | 0 |
@@ -14,16 +14,18 @@ Run on 2026-10-25 in the cloud build container (JDK 21, Gradle 8.14.3, Linux x64
 | core | PdfTextTest (reportlab and LibreOffice fixtures in Latin, Chinese and Arabic; object streams; CID fonts; Differences; form XObjects; encrypted/scanned/non-PDF; truncated files; Arabic with numbers, Latin and brackets; mixed-direction lines) | 9 | 0 |
 | core | HanziTest (character data coverage and spot checks; scorer on synthetic shapes; stroke-count hints; alpha masks) | 5 | 0 |
 | core | HandwritingFontTest (scoring against glyphs rendered by Noto Sans CJK SC) | 1 | 0 |
+| core | SpeakingPathTest (mission ladder A1–C1, prompt and completion flag, word counts, pass criteria, fluency report, progress) | 6 | 0 |
+| core | VisemesTest (mouth shapes from spelling; TTS offsets to words) | 2 | 0 |
 | core | SchedulerTest | 9 | 0 |
 | core | TextAndAnswersTest | 9 | 0 |
 | core | TutorAndVoiceTest | 10 | 0 |
-| data | SqlStoreTest (incl. real v1→v2 migration) | 9 | 0 |
-| data | ServicesIntegrationTest (lesson, review, plan, assessment, providers, offline/AI conversation, privacy, writing, materials, delete-all, restore re-applies reminder, PDF import) | 17 | 0 |
+| data | SqlStoreTest (incl. real v1→v2 and v2→v3 migrations) | 10 | 0 |
+| data | ServicesIntegrationTest (lesson, review, plan, assessment, providers, offline/AI conversation, privacy, writing, materials, delete-all, restore re-applies reminder, PDF import, AI and offline speaking missions, vision OCR with privacy gate) | 20 | 0 |
 | data | ConversationIntegrityTest | 1 | 0 |
 | data | RestoreTest (v2 round trip of every record type, cloud AI forced off, invalid/newer files rejected without changes, v1 best-effort) | 4 | 0 |
 | uicore | LocalizationTest | 8 | 0 |
 | uicore | ContrastTest | 4 | 0 |
-| **Total** | | **159** | **0** |
+| **Total** | | **172** | **0** |
 
 Also executed: SQLDelight `verifyCommonMainPolyglotDatabaseMigration` (pass); compilation of
 `ui` and `desktopApp` for the JVM (pass, no warnings after fixes).

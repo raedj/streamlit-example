@@ -5,11 +5,15 @@ import android.app.ActivityManager
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.graphics.Bitmap
+import android.graphics.Color
+import android.graphics.pdf.PdfRenderer
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.os.BatteryManager
 import android.os.Build
 import android.os.Bundle
+import android.os.ParcelFileDescriptor
 import android.os.PowerManager
 import android.os.StatFs
 import android.speech.RecognitionListener
@@ -24,6 +28,7 @@ import com.polyglot.academy.core.device.DeviceInfo
 import com.polyglot.academy.core.media.ExtractionSupport
 import com.polyglot.academy.core.model.MaterialType
 import com.polyglot.academy.core.repo.SecretStore
+import com.polyglot.academy.core.service.OcrPage
 import com.polyglot.academy.core.service.PlatformServices
 import com.polyglot.academy.core.speech.RecognitionEvent
 import com.polyglot.academy.core.speech.SpeechAvailability
@@ -38,6 +43,8 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.callbackFlow
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.withContext
+import java.io.ByteArrayOutputStream
+import java.io.File
 import java.security.KeyStore
 import java.util.Locale
 import java.util.UUID
@@ -72,13 +79,48 @@ class AndroidPlatformServices(private val context: Context) : PlatformServices {
         )
     }
 
-    // PDF/OCR/transcription extractors are not bundled in this version (see VISUAL/BLOCKERS docs).
+    // PDF text is extracted in shared code; on-device OCR and transcription are not bundled.
     override val extractionSupport: Map<MaterialType, ExtractionSupport> = emptyMap()
 
     override suspend fun scheduleReminder(enabled: Boolean, hour: Int, minute: Int, days: Set<Int>): Boolean =
         Reminders.schedule(context, enabled, hour, minute, days)
 
     override val platformName: String get() = "Android ${Build.VERSION.RELEASE}"
+
+    /** Renders pages with the framework PdfRenderer (needs a seekable file, so a private temp copy is used). */
+    override suspend fun renderPdfPages(pdf: ByteArray, maxPages: Int): List<OcrPage>? = withContext(Dispatchers.IO) {
+        val file = File.createTempFile("ocr", ".pdf", context.cacheDir)
+        try {
+            file.writeBytes(pdf)
+            ParcelFileDescriptor.open(file, ParcelFileDescriptor.MODE_READ_ONLY).use { fd ->
+                PdfRenderer(fd).use { renderer ->
+                    (0 until minOf(renderer.pageCount, maxPages)).map { i ->
+                        renderer.openPage(i).use { page ->
+                            val width = OCR_PAGE_WIDTH
+                            val height = (width.toFloat() * page.height / page.width).toInt().coerceAtLeast(1)
+                            val bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888)
+                            bitmap.eraseColor(Color.WHITE)
+                            page.render(bitmap, null, null, PdfRenderer.Page.RENDER_MODE_FOR_DISPLAY)
+                            val out = ByteArrayOutputStream()
+                            bitmap.compress(Bitmap.CompressFormat.JPEG, 85, out)
+                            bitmap.recycle()
+                            OcrPage("image/jpeg", out.toByteArray())
+                        }
+                    }
+                }
+            }
+        } catch (e: Exception) {
+            // Damaged or password-protected files cannot be rendered.
+            null
+        } finally {
+            file.delete()
+        }
+    }
+
+    private companion object {
+        /** Wide enough for small print, small enough to stay well under vision API image limits. */
+        const val OCR_PAGE_WIDTH = 1600
+    }
 }
 
 /** Wraps android.speech.SpeechRecognizer. Must be used from the main thread, hence flowOn(Main). */

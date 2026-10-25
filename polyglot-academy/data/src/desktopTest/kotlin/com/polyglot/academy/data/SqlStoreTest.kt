@@ -172,7 +172,26 @@ class SqlStoreTest {
         val row = db.libraryQueries.allBookmarks().executeAsList().single()
         assertEquals("en_l_cafe", row.reference_id)
         assertNull(row.label)
-        assertEquals(2L, PolyglotDatabase.Schema.version)
+        assertEquals(3L, PolyglotDatabase.Schema.version)
+        driver.close()
+        tmp.delete()
+    }
+
+    @Test fun migrationFromVersion2KeepsTurnsAndAddsSpeakingTime() {
+        val snapshot = File("src/commonMain/sqldelight/databases/2.db")
+        assertTrue(snapshot.exists(), "missing v2 schema snapshot")
+        val tmp = Files.createTempFile("polyglot-v2", ".db").toFile()
+        snapshot.copyTo(tmp, overwrite = true)
+        val url = "jdbc:sqlite:${tmp.absolutePath}"
+        JdbcSqliteDriver(url, Properties()).use { raw ->
+            raw.execute(null, "INSERT INTO conversation VALUES ('c1','ENGLISH','emma',NULL,1,NULL,NULL)", 0)
+            raw.execute(null, "INSERT INTO conversation_turn VALUES ('t1','c1','LEARNER','hello',NULL,'[]','[]','[]',2,NULL,1)", 0)
+            raw.execute(null, "PRAGMA user_version = 2", 0)
+        }
+        val driver = JdbcSqliteDriver(url, Properties(), PolyglotDatabase.Schema)
+        val turn = PolyglotDatabase(driver).conversationQueries.turnsFor("c1").executeAsList().single()
+        assertEquals("hello", turn.text)
+        assertNull(turn.speaking_ms)
         driver.close()
         tmp.delete()
     }

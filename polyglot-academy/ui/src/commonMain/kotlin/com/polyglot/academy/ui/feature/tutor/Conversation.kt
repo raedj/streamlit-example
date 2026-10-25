@@ -58,6 +58,9 @@ import com.polyglot.academy.core.model.Speaker
 import com.polyglot.academy.core.service.ConversationController
 import com.polyglot.academy.core.service.ConversationState
 import com.polyglot.academy.core.service.TutorEngineMode
+import com.polyglot.academy.core.speaking.MissionGap
+import com.polyglot.academy.core.speaking.SpeakingMission
+import com.polyglot.academy.core.speaking.SpeakingPath
 import com.polyglot.academy.core.speech.SpeechAvailability
 import com.polyglot.academy.core.speech.VoiceState
 import com.polyglot.academy.core.tutor.TutorRoster
@@ -97,9 +100,10 @@ fun ConversationScreen(tutorId: String, scenarioId: String?, offline: Boolean) {
     val tutor = TutorRoster.byId(tutorId)
     val lang = app.profile.activeLearningLanguage
     if (tutor == null) { StateMessage(s[K.ERROR_TITLE], s[K.ERROR_BODY], action = s[K.BACK], onAction = { app.nav.pop() }); return }
+    val mission = SpeakingPath.fromConversationKey(scenarioId)
     val scenario = scenarioId?.let { id -> Curriculum.of(lang).scenarios.firstOrNull { it.id == id } }
     val scope = rememberCoroutineScope()
-    val controller = remember(tutorId, scenarioId, lang, offline) { app.services.conversation(scope, lang, tutor, scenario, offline) }
+    val controller = remember(tutorId, scenarioId, lang, offline) { app.services.conversation(scope, lang, tutor, scenario, offline, mission) }
     LaunchedEffect(controller) { controller.start() }
     // Recording and playback must stop as soon as the learner leaves the conversation.
     DisposableEffect(controller) { onDispose { controller.cancelVoice() } }
@@ -128,10 +132,34 @@ fun ConversationScreen(tutorId: String, scenarioId: String?, offline: Boolean) {
         } else {
             Column(Modifier.fillMaxSize().padding(padding).imePadding()) {
                 EngineHeader(state, controller)
+                state.mission?.let { MissionPanel(state, it) }
                 Transcript(state, controller, lang, Modifier.weight(1f))
                 InputBar(state, controller, lang)
             }
         }
+    }
+}
+
+/** The mission's goal and tasks, kept visible above the transcript. */
+@Composable
+private fun MissionPanel(state: ConversationState, mission: SpeakingMission) {
+    val s = LocalStrings.current
+    val c = PolyglotTheme.colors
+    var open by remember { mutableStateOf(true) }
+    ContentColumn {
+        PolyCard(onClick = { open = !open }) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Text(s.gloss(mission.title), style = MaterialTheme.typography.titleSmall, modifier = Modifier.weight(1f))
+                Pill(mission.level.label)
+                if (state.missionConfirmed) Pill(s[K.MISSION_TASKS_DONE], container = c.success, content = c.onPrimary)
+            }
+            if (open) {
+                Text(s.gloss(mission.canDo), style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
+                mission.tasks.forEach { Text("• " + s.gloss(it), style = MaterialTheme.typography.bodyMedium) }
+                Text(s.f(K.MISSION_TARGET, mission.minTurns, mission.minWordsPerTurn), style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
+            }
+        }
+        if (state.missionNeedsAi) Banner(BannerKind.INFO, s[K.MISSION_NEEDS_AI])
     }
 }
 
@@ -159,7 +187,8 @@ private fun EngineHeader(state: ConversationState, controller: ConversationContr
     val c = PolyglotTheme.colors
     ContentColumn {
         Row(verticalAlignment = Alignment.CenterVertically) {
-            TutorAvatar(state.tutor.avatar, s.f(K.TUTOR_AVATAR_DESC, state.tutor.name), size = 56.dp, state = avatarState(state.voice))
+            TutorAvatar(state.tutor.avatar, s.f(K.TUTOR_AVATAR_DESC, state.tutor.name), size = 56.dp, state = avatarState(state.voice),
+                speakingWord = state.speakingWord, language = state.language)
             Spacer(Modifier.width(12.dp))
             Column(Modifier.weight(1f)) {
                 val engine = state.engine
@@ -374,6 +403,16 @@ private fun SummaryView(state: ConversationState, lang: LanguageCode) {
                 if (sum.savedPhrases > 0) Text(s.plural(K.CONV_SUMMARY_SAVED, sum.savedPhrases), color = c.textSecondary)
                 if (sum.scenarioCompleted) Text(s[K.CONV_SUMMARY_SCENARIO_DONE], color = c.success)
             }
+            sum.missionResult?.let { r ->
+                if (r.passed) Banner(BannerKind.SUCCESS, s[K.MISSION_PASSED])
+                else Banner(BannerKind.INFO, s[K.MISSION_NOT_YET] + " " + r.gaps.joinToString(" ") { gap ->
+                    when (gap) {
+                        MissionGap.TOO_FEW_TURNS -> s.f(K.MISSION_GAP_TURNS, r.learnerTurns, state.mission?.minTurns ?: 0)
+                        MissionGap.ANSWERS_TOO_SHORT -> s.f(K.MISSION_GAP_WORDS, r.medianWords, state.mission?.minWordsPerTurn ?: 0)
+                        MissionGap.TASKS_NOT_CONFIRMED -> s[K.MISSION_GAP_TASKS]
+                    }
+                })
+            }
             sum.unlockedAchievements.forEach { Banner(BannerKind.SUCCESS, s.f(K.SUMMARY_UNLOCKED, Labels.achievement(s, it))) }
             SectionHeader(s[K.CONV_SUMMARY_CORRECTIONS])
             if (sum.corrections.isEmpty()) Text(s[K.CONV_SUMMARY_NO_CORRECTIONS], color = c.textSecondary)
@@ -384,7 +423,8 @@ private fun SummaryView(state: ConversationState, lang: LanguageCode) {
                     if (cr.explanation.isNotBlank()) Text(cr.explanation, style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
                 }
             }
-            PrimaryButton(s[K.CONV_SUMMARY_NEW], { app.nav.replace(Route.Conversation(state.tutor.id, state.scenario?.id)) }, Modifier.fillMaxWidth())
+            PrimaryButton(s[K.CONV_SUMMARY_NEW], { app.nav.replace(Route.Conversation(state.tutor.id, state.mission?.conversationKey ?: state.scenario?.id)) }, Modifier.fillMaxWidth())
+            if (state.mission != null) SecondaryButton(s[K.SPEAKING_TITLE], { app.nav.replace(Route.SpeakingPath) }, Modifier.fillMaxWidth())
             SecondaryButton(s[K.SUMMARY_HOME], { app.nav.home() }, Modifier.fillMaxWidth())
         }
     }

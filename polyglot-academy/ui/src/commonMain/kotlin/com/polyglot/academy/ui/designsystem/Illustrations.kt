@@ -1,5 +1,7 @@
 package com.polyglot.academy.ui.designsystem
 
+import androidx.compose.animation.core.Animatable
+import androidx.compose.animation.core.LinearEasing
 import androidx.compose.animation.core.RepeatMode
 import androidx.compose.animation.core.animateFloat
 import androidx.compose.animation.core.infiniteRepeatable
@@ -8,6 +10,8 @@ import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.size
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.CornerRadius
 import androidx.compose.ui.geometry.Offset
@@ -26,6 +30,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.rememberTextMeasurer
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import com.polyglot.academy.core.model.LanguageCode
+import com.polyglot.academy.core.speech.MouthShape
+import com.polyglot.academy.core.speech.Visemes
 import com.polyglot.academy.core.tutor.Accessory
 import com.polyglot.academy.core.tutor.AvatarSpec
 import com.polyglot.academy.core.tutor.HairStyle
@@ -35,16 +42,46 @@ import kotlin.math.sin
 
 enum class AvatarState { IDLE, LISTENING, THINKING, SPEAKING }
 
+/** Simplified mouth outlines centred under the nose line of the portrait. */
+private fun DrawScope.drawMouth(shape: MouthShape, color: Color, w: Float, h: Float) {
+    val cx = w * 0.5f
+    val cy = h * 0.545f
+    fun oval(mw: Float, mh: Float) = drawOval(color, Offset(cx - w * mw / 2, cy - h * mh / 2), Size(w * mw, h * mh))
+    when (shape) {
+        MouthShape.REST -> oval(0.08f, 0.012f)
+        MouthShape.CLOSED -> drawLine(color, Offset(cx - w * 0.045f, cy), Offset(cx + w * 0.045f, cy), w * 0.016f, cap = StrokeCap.Round)
+        MouthShape.OPEN -> oval(0.09f, 0.06f)
+        MouthShape.WIDE -> oval(0.13f, 0.026f)
+        MouthShape.ROUND -> oval(0.055f, 0.048f)
+        MouthShape.TEETH -> {
+            oval(0.1f, 0.032f)
+            drawRect(Color.White, Offset(cx - w * 0.035f, cy - h * 0.016f), Size(w * 0.07f, h * 0.012f))
+        }
+    }
+}
+
 /**
  * Original vector tutor portrait (implementation level 2: animated 2D avatar). Drawn from an
  * [AvatarSpec] so every tutor has a distinct look without bitmap assets. Animations stop when
  * reduced motion is enabled; the state is also conveyed by text elsewhere in the UI.
  */
 @Composable
-fun TutorAvatar(spec: AvatarSpec, description: String, modifier: Modifier = Modifier, size: Dp = 64.dp, state: AvatarState = AvatarState.IDLE) {
+fun TutorAvatar(
+    spec: AvatarSpec, description: String, modifier: Modifier = Modifier, size: Dp = 64.dp, state: AvatarState = AvatarState.IDLE,
+    /** The word the speech engine reports it is saying; drives approximate mouth shapes. */
+    speakingWord: String? = null,
+    language: LanguageCode = LanguageCode.ENGLISH,
+) {
     val reduced = PolyglotTheme.motion.reduced
     val animate = !reduced && state != AvatarState.IDLE
     val t = if (animate) rememberInfiniteTransition().animateFloat(0f, 1f, infiniteRepeatable(tween(if (state == AvatarState.SPEAKING) 260 else 900), RepeatMode.Reverse)).value else 0f
+    // Step through the current word's mouth shapes once, at roughly speaking pace.
+    val wordPhase = remember(speakingWord) { Animatable(0f) }
+    LaunchedEffect(speakingWord) {
+        val steps = speakingWord?.let { Visemes.shapes(it, language).size } ?: 0
+        if (steps > 0 && !reduced) wordPhase.animateTo(1f, tween(maxOf(200, steps * 95), easing = LinearEasing))
+    }
+    val mouth = if (state == AvatarState.SPEAKING && speakingWord != null && !reduced) Visemes.shapeAt(speakingWord, language, wordPhase.value) else null
     Canvas(modifier.size(size).semantics { contentDescription = description }) {
         val w = this.size.width; val h = this.size.height
         val accent = Color(spec.accentColor)
@@ -93,9 +130,11 @@ fun TutorAvatar(spec: AvatarSpec, description: String, modifier: Modifier = Modi
             if (spec.accessory == Accessory.EARRINGS) {
                 drawCircle(Color(0xFFE6B422), w * 0.018f, Offset(w * 0.305f, h * 0.5f)); drawCircle(Color(0xFFE6B422), w * 0.018f, Offset(w * 0.695f, h * 0.5f))
             }
-            // Mouth: opens rhythmically while speaking.
+            // Mouth: shapes from the spoken word when the speech engine reports progress, otherwise a simple rhythm.
             val mouthColor = Color(0xFF8A3B3B)
-            if (state == AvatarState.SPEAKING) {
+            if (mouth != null) {
+                drawMouth(mouth, mouthColor, w, h)
+            } else if (state == AvatarState.SPEAKING) {
                 val open = h * (0.015f + 0.035f * t)
                 drawOval(mouthColor, Offset(w * 0.455f, h * 0.53f), Size(w * 0.09f, open))
             } else {

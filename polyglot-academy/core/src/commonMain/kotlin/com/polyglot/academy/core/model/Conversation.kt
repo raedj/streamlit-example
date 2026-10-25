@@ -30,6 +30,8 @@ data class ConversationTurn(
     /** Which engine produced a tutor turn: provider id or "offline". */
     val producedBy: String? = null,
     val wasSpoken: Boolean = false,
+    /** Approximate time the learner spent speaking this turn (from the recognizer), if spoken. */
+    val speakingMillis: Long? = null,
 )
 
 @Serializable

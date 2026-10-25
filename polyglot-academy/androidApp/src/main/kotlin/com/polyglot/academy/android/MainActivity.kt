@@ -65,7 +65,9 @@ class MainActivity : ComponentActivity(), PlatformUi {
             val limit = if (json) 50L * 1024 * 1024 else 5L * 1024 * 1024
             val text = if (textual && size in 1..limit) contentResolver.openInputStream(uri)?.use { it.readBytes().decodeToString() } else null
             val pdf = mime == "application/pdf" || lower.endsWith(".pdf")
-            val bytes = if (pdf && size in 1..(50L * 1024 * 1024)) contentResolver.openInputStream(uri)?.use { it.readBytes() } else null
+            // PDFs and photos are kept as bytes: PDF text is extracted on device, photos can be read with AI on request.
+            val binaryLimit = if (pdf) 50L * 1024 * 1024 else if (mime.startsWith("image/")) 20L * 1024 * 1024 else 0L
+            val bytes = if (size in 1..binaryLimit) contentResolver.openInputStream(uri)?.use { it.readBytes() } else null
             PickedFile(name, mime, size, text, bytes)
         }
     }

@@ -108,6 +108,36 @@ class AdapterTest {
         assertTrue("responseMimeType" in lastBody)
     }
 
+    private val visionReq = ChatRequest("Transcribe", listOf(ChatMessage(ChatRole.USER, "Read this",
+        images = listOf(com.polyglot.academy.core.ai.ImagePart("image/jpeg", "QUJD")))), emptySet())
+
+    @Test fun imagesUseEachVendorsDocumentedShape() = realTimeTest {
+        val oc = client { respond("""{"choices":[{"message":{"content":"text"}}]}""", HttpStatusCode.OK, json) }
+        OpenAiCompatibleProvider(ProviderCatalog.OPENAI, oc, keys, configs(), { 0L }).complete(visionReq)
+        val oParts = Json.parseToJsonElement(lastBody).jsonObject["messages"]!!.jsonArray[1].jsonObject["content"]!!.jsonArray
+        assertEquals("text", oParts[0].jsonObject["type"]!!.jsonPrimitive.content)
+        assertEquals("data:image/jpeg;base64,QUJD", oParts[1].jsonObject["image_url"]!!.jsonObject["url"]!!.jsonPrimitive.content)
+
+        val ac = client { respond("""{"content":[{"type":"text","text":"text"}]}""", HttpStatusCode.OK, json) }
+        AnthropicProvider(ac, keys, configs(), { 0L }).complete(visionReq)
+        val aParts = Json.parseToJsonElement(lastBody).jsonObject["messages"]!!.jsonArray[0].jsonObject["content"]!!.jsonArray
+        val source = aParts[0].jsonObject["source"]!!.jsonObject
+        assertEquals("base64", source["type"]!!.jsonPrimitive.content)
+        assertEquals("image/jpeg", source["media_type"]!!.jsonPrimitive.content)
+        assertEquals("QUJD", source["data"]!!.jsonPrimitive.content)
+        assertEquals("text", aParts[1].jsonObject["type"]!!.jsonPrimitive.content)
+
+        val gc = client { respond("""{"candidates":[{"content":{"parts":[{"text":"text"}]}}]}""", HttpStatusCode.OK, json) }
+        GeminiProvider(gc, keys, configs(), { 0L }).complete(visionReq)
+        val gParts = Json.parseToJsonElement(lastBody).jsonObject["contents"]!!.jsonArray[0].jsonObject["parts"]!!.jsonArray
+        assertEquals("QUJD", gParts[0].jsonObject["inlineData"]!!.jsonObject["data"]!!.jsonPrimitive.content)
+        assertEquals("Read this", gParts[1].jsonObject["text"]!!.jsonPrimitive.content)
+
+        // Text-only messages keep the plain string form.
+        OpenAiCompatibleProvider(ProviderCatalog.OPENAI, oc, keys, configs(), { 0L }).complete(req)
+        assertEquals("Hello", Json.parseToJsonElement(lastBody).jsonObject["messages"]!!.jsonArray[1].jsonObject["content"]!!.jsonPrimitive.content)
+    }
+
     @Test fun azureUsesDeploymentAndApiKeyHeader() = realTimeTest {
         val c = client { respond("""{"choices":[{"message":{"content":"ok"}}]}""", HttpStatusCode.OK, json) }
         val p = AzureOpenAiProvider(c, keys, configs(ProviderConfig(ProviderId.AZURE_OPENAI, enabled = true, baseUrl = "https://res.openai.azure.com", deployment = "tutor")), { 0L })

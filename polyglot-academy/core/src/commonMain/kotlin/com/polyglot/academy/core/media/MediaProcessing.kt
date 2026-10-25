@@ -173,7 +173,11 @@ object ImportPolicy {
 }
 
 /** What extraction is implemented for each type in this build (honest capability report). */
-enum class ExtractionSupport { SUPPORTED, PLATFORM_DEPENDENT, NOT_IMPLEMENTED }
+enum class ExtractionSupport {
+    SUPPORTED, PLATFORM_DEPENDENT, NOT_IMPLEMENTED,
+    /** Text can be read with a vision AI provider, on the learner's explicit request (images are sent to it). */
+    AI_OCR,
+}
 
 data class ProcessingProgress(val processedChunks: Int, val totalChunks: Int, val partialText: String?, val done: Boolean) {
     val fraction: Float get() = if (totalChunks == 0) 1f else processedChunks.toFloat() / totalChunks

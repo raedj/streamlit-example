@@ -1,4 +1,31 @@
 PRACTICE_TITLE ¦ Practice ¦ التدريب
+PRACTICE_SPEAKING ¦ Speaking path ¦ مسار المحادثة
+PRACTICE_SPEAKING_SUB ¦ Speaking missions from A1 to C1 ¦ مهام محادثة من A1 إلى C1
+SPEAKING_TITLE ¦ Speaking path ¦ مسار المحادثة
+SPEAKING_BODY ¦ Fluency comes from speaking a lot, at the right level. Each mission is a real conversation with your tutor with clear tasks; it counts when you complete the tasks in turns that are long enough for the level. ¦ تأتي الطلاقة من كثرة التحدث في المستوى المناسب. كل مهمة محادثة حقيقية مع معلّمك بمهام واضحة، وتُحتسب عندما تنجز المهام بجمل طويلة بما يكفي للمستوى.
+SPEAKING_NEXT ¦ Your next mission ¦ مهمتك التالية
+SPEAKING_START ¦ Start mission ¦ ابدأ المهمة
+SPEAKING_AGAIN ¦ Practise again ¦ تدرّب مرة أخرى
+SPEAKING_ALL_DONE ¦ You have passed every mission on the path. Keep talking with your tutor about anything you like. ¦ أنجزت كل مهام المسار. واصل الحديث مع معلّمك في أي موضوع تحبه.
+SPEAKING_LEVEL ¦ {0} · {1} of {2} passed ¦ {0} · أُنجز {1} من {2}
+SPEAKING_PASSED ¦ Passed ¦ أُنجزت
+SPEAKING_NEW ¦ New ¦ جديدة
+SPEAKING_ATTEMPTS ¦ {0} attempt|{0} attempts ¦ لا محاولات|محاولة واحدة|محاولتان|{0} محاولات|{0} محاولة|{0} محاولة
+SPEAKING_STATS ¦ Your speaking ¦ محادثتك
+SPEAKING_NO_DATA ¦ No speaking data yet. Your measurements appear after your first conversation. ¦ لا توجد بيانات محادثة بعد. تظهر قياساتك بعد محادثتك الأولى.
+SPEAKING_WORDS_PER_TURN ¦ Words per turn (median) ¦ كلمات في كل دور (الوسيط)
+SPEAKING_LONGEST ¦ Longest turn (words) ¦ أطول دور (كلمات)
+SPEAKING_WPM ¦ Words per minute ¦ كلمة في الدقيقة
+SPEAKING_SPOKEN_SHARE ¦ Turns spoken aloud ¦ الأدوار المنطوقة
+SPEAKING_VARIETY ¦ Vocabulary variety: {0}% different words in each 50-word stretch ¦ تنوّع المفردات: {0}% كلمات مختلفة في كل 50 كلمة
+SPEAKING_VARIETY_LOW ¦ Vocabulary variety appears after about 50 words of speaking. ¦ يظهر تنوّع المفردات بعد نحو 50 كلمة من الحديث.
+SPEAKING_CORRECTIONS ¦ Corrections: {0} per 10 turns ¦ التصحيحات: {0} لكل 10 أدوار
+SPEAKING_WPM_NONE ¦ Words per minute needs at least three spoken turns with the microphone. ¦ يحتاج حساب الكلمات في الدقيقة إلى ثلاثة أدوار منطوقة على الأقل بالميكروفون.
+SPEAKING_STATS_NOTE ¦ Measured only from what you said in this app. Speaking time comes from speech recognition and is approximate; Mandarin word counts are estimated from characters. ¦ تُقاس فقط مما قلته في هذا التطبيق. زمن الحديث مأخوذ من التعرّف على الكلام وهو تقريبي، وعدد الكلمات الصينية مقدَّر من عدد الحروف.
+SPEAKING_WEEKLY ¦ Words per turn, by week ¦ الكلمات في كل دور حسب الأسبوع
+SPEAKING_WEEKLY_DESC ¦ Median words per turn by week: {0} ¦ وسيط الكلمات في كل دور حسب الأسبوع: {0}
+SPEAKING_ABOUT_TITLE ¦ How missions count ¦ كيف تُحتسب المهام
+SPEAKING_ABOUT ¦ A mission passes when you take enough turns, your typical turn is long enough for the level, and the tasks are confirmed: by the AI tutor, or by finishing the built-in role-play when you practise offline. Levels are practice targets, not an official certificate. Missions without a built-in role-play need an AI tutor (cloud or a local model). ¦ تُحتسب المهمة عندما تأخذ أدوارًا كافية، ويكون طول دورك المعتاد مناسبًا للمستوى، وتُؤكَّد المهام: من معلّم الذكاء الاصطناعي، أو بإكمال الموقف المدمج عند التدرّب دون اتصال. المستويات أهداف تدريبية وليست شهادة رسمية. المهام التي لا يقابلها موقف مدمج تحتاج إلى معلّم ذكاء اصطناعي (سحابي أو نموذج محلي).
 PRACTICE_REVIEW ¦ Spaced review ¦ المراجعة المتباعدة
 PRACTICE_REVIEW_SUB ¦ Words and phrases that are due ¦ الكلمات والعبارات المستحقة
 PRACTICE_MISTAKES ¦ Mistake review ¦ مراجعة الأخطاء

@@ -70,7 +70,16 @@ open class OpenAiCompatibleProvider(
             putJsonArray("messages") {
                 addJsonObject { put("role", "system"); put("content", request.system) }
                 request.messages.forEach { m ->
-                    addJsonObject { put("role", if (m.role == ChatRole.USER) "user" else "assistant"); put("content", m.content) }
+                    addJsonObject {
+                        put("role", if (m.role == ChatRole.USER) "user" else "assistant")
+                        if (m.images.isEmpty()) put("content", m.content)
+                        else putJsonArray("content") {
+                            addJsonObject { put("type", "text"); put("text", m.content) }
+                            m.images.forEach { img ->
+                                addJsonObject { put("type", "image_url"); putJsonObject("image_url") { put("url", "data:${img.mimeType};base64,${img.base64}") } }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -107,7 +116,19 @@ class AnthropicProvider(
             put("system", request.system)
             putJsonArray("messages") {
                 request.messages.forEach { m ->
-                    addJsonObject { put("role", if (m.role == ChatRole.USER) "user" else "assistant"); put("content", m.content) }
+                    addJsonObject {
+                        put("role", if (m.role == ChatRole.USER) "user" else "assistant")
+                        if (m.images.isEmpty()) put("content", m.content)
+                        else putJsonArray("content") {
+                            m.images.forEach { img ->
+                                addJsonObject {
+                                    put("type", "image")
+                                    putJsonObject("source") { put("type", "base64"); put("media_type", img.mimeType); put("data", img.base64) }
+                                }
+                            }
+                            addJsonObject { put("type", "text"); put("text", m.content) }
+                        }
+                    }
                 }
             }
         }
@@ -134,7 +155,12 @@ class GeminiProvider(
                 request.messages.forEach { m ->
                     addJsonObject {
                         put("role", if (m.role == ChatRole.USER) "user" else "model")
-                        putJsonArray("parts") { addJsonObject { put("text", m.content) } }
+                        putJsonArray("parts") {
+                            m.images.forEach { img ->
+                                addJsonObject { putJsonObject("inlineData") { put("mimeType", img.mimeType); put("data", img.base64) } }
+                            }
+                            addJsonObject { put("text", m.content) }
+                        }
                     }
                 }
             })

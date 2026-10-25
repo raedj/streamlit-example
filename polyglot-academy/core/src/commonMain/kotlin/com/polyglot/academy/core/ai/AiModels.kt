@@ -51,8 +51,12 @@ enum class ConnectionStatus { NEVER_TESTED, VERIFIED, FAILED }
 @Serializable
 enum class ChatRole { USER, ASSISTANT }
 
+/** An image sent with a message (vision requests only), already base64-encoded. */
 @Serializable
-data class ChatMessage(val role: ChatRole, val content: String)
+data class ImagePart(val mimeType: String, val base64: String)
+
+@Serializable
+data class ChatMessage(val role: ChatRole, val content: String, val images: List<ImagePart> = emptyList())
 
 data class ChatRequest(
     val system: String,

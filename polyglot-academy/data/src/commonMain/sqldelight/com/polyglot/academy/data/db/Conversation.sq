@@ -20,7 +20,9 @@ CREATE TABLE conversation_turn (
     vocabulary_json TEXT NOT NULL,
     created_at INTEGER NOT NULL,
     produced_by TEXT,
-    was_spoken INTEGER NOT NULL
+    was_spoken INTEGER NOT NULL,
+    -- Approximate speaking time of a spoken learner turn (recognizer timing), added in schema v3.
+    speaking_ms INTEGER
 );
 CREATE INDEX conversation_turn_conv_time ON conversation_turn(conversation_id, created_at);
 
@@ -33,11 +35,13 @@ UPDATE conversation SET language = ?, tutor_id = ?, scenario_id = ?, started_at 
 conversationsForLanguage:
 SELECT * FROM conversation WHERE language = ? ORDER BY started_at DESC;
 insertTurn:
-INSERT OR REPLACE INTO conversation_turn VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+INSERT OR REPLACE INTO conversation_turn VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
 turnsFor:
 SELECT * FROM conversation_turn WHERE conversation_id = ? ORDER BY created_at, rowid;
 learnerTurnCount:
 SELECT COUNT(*) FROM conversation_turn t JOIN conversation c ON c.id = t.conversation_id WHERE c.language = ? AND t.speaker = 'LEARNER';
+learnerTurnsForLanguage:
+SELECT t.* FROM conversation_turn t JOIN conversation c ON c.id = t.conversation_id WHERE c.language = ? AND t.speaker = 'LEARNER' ORDER BY t.created_at;
 allConversations:
 SELECT * FROM conversation ORDER BY started_at;
 allTurns:

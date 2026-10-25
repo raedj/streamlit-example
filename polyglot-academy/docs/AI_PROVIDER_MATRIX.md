@@ -22,3 +22,6 @@ Notes
 - Usage counters (requests, approximate tokens) are local and approximate; billing is the
   provider's dashboard.
 - Routing, retries and fallback rules: SR-AI-03, SR-PV-03.
+
+## Vision (text recognition)
+Photos and scanned PDF pages can be read by vision-capable providers (OpenAI, Gemini, Anthropic) on explicit request. Images are sent as `image_url` data URLs (OpenAI), `inlineData` parts (Gemini) or base64 `image` blocks (Anthropic); request shapes are covered by `AdapterTest.imagesUseEachVendorsDocumentedShape`. Not verified against live endpoints (no keys in this environment).

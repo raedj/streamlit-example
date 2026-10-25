@@ -22,6 +22,9 @@ import com.polyglot.academy.core.model.StudySession
 import com.polyglot.academy.core.repo.ConversationRepository
 import com.polyglot.academy.core.repo.ProfileRepository
 import com.polyglot.academy.core.repo.VocabularyRepository
+import com.polyglot.academy.core.speaking.MissionEvaluator
+import com.polyglot.academy.core.speaking.MissionResult
+import com.polyglot.academy.core.speaking.SpeakingMission
 import com.polyglot.academy.core.speech.RecognitionEvent
 import com.polyglot.academy.core.speech.SpeechAvailability
 import com.polyglot.academy.core.speech.SpeechErrorKind
@@ -31,6 +34,7 @@ import com.polyglot.academy.core.speech.SynthesisEvent
 import com.polyglot.academy.core.speech.VoiceEvent
 import com.polyglot.academy.core.speech.VoiceState
 import com.polyglot.academy.core.speech.VoiceStateMachine
+import com.polyglot.academy.core.speech.Visemes
 import com.polyglot.academy.core.tutor.OfflineTutorEngine
 import com.polyglot.academy.core.tutor.TutorContext
 import com.polyglot.academy.core.tutor.TutorPersona
@@ -65,6 +69,7 @@ data class ConversationSummary(
     val scenarioCompleted: Boolean,
     val durationSeconds: Int,
     val unlockedAchievements: List<String>,
+    val missionResult: MissionResult? = null,
 )
 
 data class ConversationState(
@@ -84,7 +89,15 @@ data class ConversationState(
     val summary: ConversationSummary? = null,
     val lastAiError: String? = null,
     val savedPhraseCount: Int = 0,
+    val mission: SpeakingMission? = null,
+    /** The mission's tasks were confirmed (by the AI tutor, or by finishing the built-in role-play). */
+    val missionConfirmed: Boolean = false,
+    /** The word the speech engine reports it is saying now (null if the engine gives no progress). */
+    val speakingWord: String? = null,
 ) {
+    /** Offline, a mission without a matching built-in role-play can only be practised freely. */
+    val missionNeedsAi: Boolean get() = mission != null && engine is TutorEngineMode.Offline && mission.offlineScenario(language) == null
+
     val isBusy: Boolean get() = voice is VoiceState.Processing
 }
 
@@ -109,11 +122,18 @@ class ConversationController(
     private val clock: TimeSource,
     private val ids: IdGenerator,
     private val forceOffline: Boolean = false,
+    private val mission: SpeakingMission? = null,
 ) {
-    private val _state = MutableStateFlow(ConversationState(ids.newId("conv"), tutor, language, scenario))
+    private val _state = MutableStateFlow(ConversationState(ids.newId("conv"), tutor, language, scenario, mission = mission))
     val state: StateFlow<ConversationState> = _state.asStateFlow()
 
-    private val effectiveScenario: RolePlayScenario = scenario
+    /** Stored with the conversation so progress (missions, scenarios) can be derived later. */
+    private val conversationKey: String? = mission?.conversationKey ?: scenario?.id
+    private val missionScenario: RolePlayScenario? = mission?.offlineScenario(language)
+    private var speechStartedAt: Long? = null
+    private var listenStartedAt: Long = 0
+
+    private val effectiveScenario: RolePlayScenario = scenario ?: missionScenario
         ?: Curriculum.of(language).scenarios.firstOrNull { it.trackId == com.polyglot.academy.core.model.CourseUnit.GENERAL_TRACK }
         ?: Curriculum.of(language).scenarios.first()
     private lateinit var offline: OfflineTutorEngine
@@ -139,11 +159,18 @@ class ConversationController(
             it.copy(engine = engine, recognitionAvailable = recognition, ttsAvailable = tts, showTranslations = settings.showTranslationsByDefault,
                 speechRate = settings.speech.speechRate * Languages.of(language).defaultSpeechRate, hint = offline.currentHint().takeIf { engine is TutorEngineMode.Offline })
         }
-        conversations.upsertConversation(Conversation(_state.value.conversationId, language, tutor.id, scenario?.id, clock.nowMillis()))
-        session = study.startSession(language, SessionKind.CONVERSATION, scenario?.id)
-        val opening = if (engine is TutorEngineMode.Offline) offline.opening() else aiOpening()
+        conversations.upsertConversation(Conversation(_state.value.conversationId, language, tutor.id, conversationKey, clock.nowMillis()))
+        session = study.startSession(language, SessionKind.CONVERSATION, conversationKey)
+        val opening = when {
+            engine is TutorEngineMode.Offline -> offline.opening()
+            mission != null -> aiMissionOpening() ?: offline.opening()
+            else -> aiOpening()
+        }
         addTutorTurn(opening, autoplay = settings.speech.autoPlayTutorReplies)
     }
+
+    /** For a mission the AI opens in character; the start signal itself is not stored as a turn. */
+    private suspend fun aiMissionOpening(): TutorReply? = aiReply(listOf(com.polyglot.academy.core.ai.ChatMessage(com.polyglot.academy.core.ai.ChatRole.USER, TutorPromptBuilder.MISSION_START)))
 
     private suspend fun chooseEngine(): TutorEngineMode = when (val d = providers.route(AiCapability.CHAT, setOf(DataCategory.CONVERSATION_TEXT))) {
         is RouteDecision.Route -> {
@@ -180,20 +207,23 @@ class ConversationController(
     fun dismissError() = dispatch(VoiceEvent.DismissError)
     fun setSpeechRate(rate: Float) = _state.update { it.copy(speechRate = rate.coerceIn(0.5f, 1.5f)) }
 
-    fun sendText(text: String, spoken: Boolean = false) {
+    fun sendText(text: String, spoken: Boolean = false, speakingMillis: Long? = null) {
         val trimmed = text.trim()
         // A spoken turn arrives while the voice state is already Processing (set by the recognizer's final result).
         if (trimmed.isEmpty() || (!spoken && _state.value.isBusy) || _state.value.summary != null) return
         synthesizer.stop(); speakJob?.cancel()
         if (!spoken) dispatch(VoiceEvent.SubmitTyped)
         scope.launch {
-            val turn = ConversationTurn(ids.newId("turn"), _state.value.conversationId, Speaker.LEARNER, trimmed, createdAtMillis = clock.nowMillis(), wasSpoken = spoken)
+            val turn = ConversationTurn(ids.newId("turn"), _state.value.conversationId, Speaker.LEARNER, trimmed, createdAtMillis = clock.nowMillis(),
+                wasSpoken = spoken, speakingMillis = speakingMillis.takeIf { spoken })
             conversations.addTurn(turn)
             _state.update { it.copy(turns = it.turns + turn) }
             val reply = when (val engine = _state.value.engine) {
                 is TutorEngineMode.Offline -> offline.respond(trimmed)
                 is TutorEngineMode.Ai -> aiReply() ?: offline.respond(trimmed)
             }
+            val confirmed = reply.missionComplete || (missionScenario != null && offline.isFinished && _state.value.engine is TutorEngineMode.Offline)
+            if (mission != null && confirmed) _state.update { it.copy(missionConfirmed = true) }
             // Attach corrections to the learner turn they refer to.
             if (reply.corrections.isNotEmpty()) {
                 val corrected = turn.copy(corrections = reply.corrections)
@@ -206,10 +236,12 @@ class ConversationController(
         }
     }
 
-    private suspend fun aiReply(): TutorReply? {
+    private suspend fun aiReply(override: List<com.polyglot.academy.core.ai.ChatMessage>? = null): TutorReply? {
         val s = _state.value
-        val ctx = TutorContext(tutor, language, explanationLanguage, level, profiles.currentProfile().correctionIntensity, scenario, s.showTranslations)
-        val history = TutorPromptBuilder.history(s.turns.filter { it.speaker != Speaker.SYSTEM }.map { (it.speaker == Speaker.LEARNER) to it.text })
+        val ctx = TutorContext(tutor, language, explanationLanguage, level, profiles.currentProfile().correctionIntensity, scenario, s.showTranslations, mission = mission)
+        val turns = TutorPromptBuilder.history(s.turns.filter { it.speaker != Speaker.SYSTEM }.map { (it.speaker == Speaker.LEARNER) to it.text })
+        // A mission conversation always begins with the start signal, so the model sees why it spoke first.
+        val history = override ?: if (mission != null) listOf(com.polyglot.academy.core.ai.ChatMessage(com.polyglot.academy.core.ai.ChatRole.USER, TutorPromptBuilder.MISSION_START)) + turns else turns
         val outcome = providers.execute(AiCapability.CHAT, ChatRequest(TutorPromptBuilder.systemPrompt(ctx), history, setOf(DataCategory.CONVERSATION_TEXT), expectJson = true))
         return when (outcome) {
             is AiOutcome.Success -> {
@@ -240,12 +272,13 @@ class ConversationController(
         if (!_state.value.ttsAvailable) { _state.update { it.copy(notice = ConversationNotice.TTS_UNAVAILABLE) }; return }
         speakJob?.cancel()
         speakJob = scope.launch {
-            synthesizer.speak(spokenText(turn.text), localeTag, _state.value.speechRate).collect { e ->
+            val spoken = spokenText(turn.text)
+            synthesizer.speak(spoken, localeTag, _state.value.speechRate).collect { e ->
                 when (e) {
                     SynthesisEvent.Started -> dispatch(VoiceEvent.SpeakStarted(turn.id))
-                    SynthesisEvent.Done -> dispatch(VoiceEvent.SpeakFinished)
-                    is SynthesisEvent.Error -> dispatch(VoiceEvent.SpeakFailed(e.kind))
-                    is SynthesisEvent.Progress -> {}
+                    SynthesisEvent.Done -> { dispatch(VoiceEvent.SpeakFinished); _state.update { it.copy(speakingWord = null) } }
+                    is SynthesisEvent.Error -> { dispatch(VoiceEvent.SpeakFailed(e.kind)); _state.update { it.copy(speakingWord = null) } }
+                    is SynthesisEvent.Progress -> _state.update { it.copy(speakingWord = Visemes.wordAt(spoken, e.charStart)) }
                 }
             }
         }
@@ -254,7 +287,10 @@ class ConversationController(
     /** Pinyin in parentheses is for reading only; the TTS engine should read the characters. */
     private fun spokenText(text: String) = if (language == LanguageCode.MANDARIN) text.replace(Regex("\\([^)]*\\)"), "") else text
 
-    fun stopSpeaking() { synthesizer.stop(); speakJob?.cancel(); dispatch(VoiceEvent.SpeakFinished) }
+    fun stopSpeaking() {
+        synthesizer.stop(); speakJob?.cancel(); dispatch(VoiceEvent.SpeakFinished)
+        _state.update { it.copy(speakingWord = null) }
+    }
 
     fun startListening() {
         val s = _state.value
@@ -265,10 +301,16 @@ class ConversationController(
         stopSpeaking()
         dispatch(VoiceEvent.StartListening)
         listenJob?.cancel()
+        listenStartedAt = clock.nowMillis()
+        speechStartedAt = null
         listenJob = scope.launch {
             recognizer.listen(localeTag).collect { e ->
                 dispatch(VoiceEvent.Recognition(e))
-                if (e is RecognitionEvent.Final && e.text.isNotBlank()) sendText(e.text, spoken = true)
+                // Speaking time runs from the first recognised words to the final result: an approximation.
+                if (e is RecognitionEvent.Partial && speechStartedAt == null) speechStartedAt = clock.nowMillis()
+                if (e is RecognitionEvent.Final && e.text.isNotBlank()) {
+                    sendText(e.text, spoken = true, speakingMillis = clock.nowMillis() - (speechStartedAt ?: listenStartedAt))
+                }
             }
         }
     }
@@ -308,14 +350,17 @@ class ConversationController(
         val learner = s.turns.count { it.speaker == Speaker.LEARNER }
         val start = s.turns.firstOrNull()?.createdAtMillis ?: clock.nowMillis()
         val duration = ((clock.nowMillis() - start) / 1000).toInt()
-        conversations.upsertConversation(Conversation(s.conversationId, language, tutor.id, scenario?.id, start, clock.nowMillis(),
-            summary = "learner_turns=$learner corrections=${s.turns.sumOf { it.corrections.size }}"))
+        val missionResult = mission?.let { MissionEvaluator.evaluate(it, language, s.turns.filter { t -> t.speaker == Speaker.LEARNER }, s.missionConfirmed) }
+        val summaryText = "learner_turns=$learner corrections=${s.turns.sumOf { it.corrections.size }}" +
+            if (missionResult?.passed == true) " ${MissionEvaluator.PASSED_MARK}" else ""
+        conversations.upsertConversation(Conversation(s.conversationId, language, tutor.id, conversationKey, start, clock.nowMillis(), summary = summaryText))
         session?.let { study.updateSession(it, learner, learner, completed = true, activeSeconds = duration) }
         val unlocked = achievements.evaluateConversation(learner)
         dispatch(VoiceEvent.Finish)
         _state.update {
             it.copy(summary = ConversationSummary(learner, s.turns.count { t -> t.speaker == Speaker.TUTOR }, s.turns.flatMap { t -> t.corrections },
-                s.savedPhraseCount, scenarioCompleted = this@ConversationController::offline.isInitialized && offline.isFinished, durationSeconds = duration, unlockedAchievements = unlocked))
+                s.savedPhraseCount, scenarioCompleted = this@ConversationController::offline.isInitialized && offline.isFinished, durationSeconds = duration, unlockedAchievements = unlocked,
+                missionResult = missionResult))
         }
     }
 }

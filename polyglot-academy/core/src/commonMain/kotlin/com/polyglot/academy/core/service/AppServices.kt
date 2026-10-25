@@ -35,6 +35,9 @@ interface PlatformServices {
     /** Schedules or cancels the daily reminder. Returns false when the platform refuses (e.g. permission denied). */
     suspend fun scheduleReminder(enabled: Boolean, hour: Int, minute: Int, days: Set<Int>): Boolean
     val platformName: String
+
+    /** Renders PDF pages as JPEG images for AI text recognition, or null when the platform has no renderer. */
+    suspend fun renderPdfPages(pdf: ByteArray, maxPages: Int): List<OcrPage>? = null
 }
 
 /** Manual dependency graph (see ADR-004). One instance per process. */
@@ -59,11 +62,16 @@ class AppServices(
         clock,
     )
     val writing = WritingService(providers)
-    val materials = MaterialService(store, store, reviews, clock, ids, platform.extractionSupport)
+    val ocr = OcrService(providers)
+    val materials = MaterialService(store, store, reviews, clock, ids, platform.extractionSupport, ocr)
 
-    fun conversation(scope: CoroutineScope, language: LanguageCode, tutor: TutorPersona, scenario: RolePlayScenario?, forceOffline: Boolean = false) =
-        ConversationController(scope, language, tutor, scenario, store, store, store, reviews, providers, study, achievements,
-            platform.recognizer, platform.synthesizer, clock, ids, forceOffline)
+    val speaking = SpeakingService(store, clock)
+
+    fun conversation(
+        scope: CoroutineScope, language: LanguageCode, tutor: TutorPersona, scenario: RolePlayScenario?, forceOffline: Boolean = false,
+        mission: com.polyglot.academy.core.speaking.SpeakingMission? = null,
+    ) = ConversationController(scope, language, tutor, scenario, store, store, store, reviews, providers, study, achievements,
+        platform.recognizer, platform.synthesizer, clock, ids, forceOffline, mission)
 
     /**
      * Restores an export, then re-applies the restored reminder schedule (the alarm itself is not

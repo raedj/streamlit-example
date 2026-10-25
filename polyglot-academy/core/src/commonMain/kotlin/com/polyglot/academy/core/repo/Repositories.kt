@@ -78,6 +78,8 @@ interface ConversationRepository {
     suspend fun upsertConversation(conversation: Conversation)
     suspend fun addTurn(turn: ConversationTurn)
     suspend fun learnerTurnCount(language: LanguageCode): Int
+    /** All learner turns in [language], oldest first (for speaking metrics). */
+    suspend fun learnerTurns(language: LanguageCode): List<ConversationTurn>
 }
 
 interface LibraryRepository {
