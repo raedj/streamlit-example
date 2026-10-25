@@ -1,0 +1,601 @@
+rank	sentence	en	ar	names
+1	المفتاح في الحقيبة الصغيرة.	The key is in the small bag.	المفتاح في الحقيبة الصغيرة.
+1	نسكن في مدينة كبيرة.	We live in a big city.	نسكن في مدينة كبيرة.
+2	أنا من مصر، وأنت؟	I'm from Egypt, and you?	أنا من مصر، وأنت؟	مصر
+2	هذه هدية من صديقي.	This is a present from my friend.	هذه هدية من صديقي.
+3	القطة على السرير الآن.	The cat is on the bed now.	القطة على السرير الآن.
+3	تركت المفتاح على الكرسي.	I left the key on the chair.	تركت المفتاح على الكرسي.
+4	سافر أبي إلى القاهرة.	My father travelled to Cairo.	سافر أبي إلى القاهرة.	القاهرة
+4	ذهبنا إلى المطعم في المساء.	We went to the restaurant in the evening.	ذهبنا إلى المطعم في المساء.
+5	أنا جائع جدا الآن.	I'm very hungry now.	أنا جائع جدا الآن.
+5	أنا من هذه المدينة.	I'm from this city.	أنا من هذه المدينة.
+6	هو مدرس في مدرستنا.	He is a teacher at our school.	هو مدرس في مدرستنا.
+6	هو أخي الكبير وهو مدرس.	He is my older brother and he is a teacher.	هو أخي الكبير وهو مدرس.
+7	هي طبيبة في المستشفى.	She is a doctor at the hospital.	هي طبيبة في المستشفى.
+7	هي تعمل في شركة كبيرة.	She works at a big company.	هي تعمل في شركة كبيرة.
+8	أنت صديق جيد جدا.	You are a very good friend.	أنت صديق جيد جدا.
+8	هل أنت طالب هنا؟	Are you a student here?	هل أنت طالب هنا؟
+9	أين تسكنين أنت الآن؟	Where do you (f.) live now?	أين تسكنين أنت الآن؟
+9	أنت جميلة جدا اليوم.	You (f.) look very beautiful today.	أنت جميلة جدا اليوم.
+10	نحن طلاب في هذه المدرسة.	We are students at this school.	نحن طلاب في هذه المدرسة.
+10	نحن نسكن بجانب البحر.	We live next to the sea.	نحن نسكن بجانب البحر.
+11	هل أنتم من هنا؟	Are you (pl.) from here?	هل أنتم من هنا؟
+11	أنتم طلاب جيدون جدا.	You are very good students.	أنتم طلاب جيدون جدا.
+12	هم في المطعم الآن.	They are at the restaurant now.	هم في المطعم الآن.
+12	هم يعملون في شركة كبيرة.	They work at a big company.	هم يعملون في شركة كبيرة.
+13	هذا الكتاب جميل جدا.	This book is very nice.	هذا الكتاب جميل جدا.
+13	هذا بيتنا الجديد في المدينة.	This is our new home in the city.	هذا بيتنا الجديد في المدينة.
+14	هذه غرفتي وهذه غرفة أختي.	This is my room and this is my sister's room.	هذه غرفتي وهذه غرفة أختي.
+14	هذه هدية صغيرة لك.	This is a small present for you.	هذه هدية صغيرة لك.
+15	ذلك الرجل مدرس أخي.	That man is my brother's teacher.	ذلك الرجل مدرس أخي.
+15	هل ذلك البيت بيتكم؟	Is that house yours?	هل ذلك البيت بيتكم؟
+16	تلك المرأة طبيبة في المستشفى.	That woman is a doctor at the hospital.	تلك المرأة طبيبة في المستشفى.
+16	تلك السيارة الحمراء لأبي.	That red car is my father's.	تلك السيارة الحمراء لأبي.
+17	الرجل الذي في المكتب مدرسي.	The man in the office is my teacher.	الرجل الذي في المكتب مدرسي.
+17	هذه هي البنت التي تسكن بجانبنا.	This is the girl who lives next to us.	هذه هي البنت التي تسكن بجانبنا.
+18	لا، أنا لا أشرب القهوة.	No, I don't drink coffee.	لا، أنا لا أشرب القهوة.
+18	لا أعرف أين المفتاح.	I don't know where the key is.	لا أعرف أين المفتاح.
+19	نعم، أنا من هنا.	Yes, I'm from here.	نعم، أنا من هنا.
+19	نعم، أريد شايا من فضلك.	Yes, I'd like some tea, please.	نعم، أريد شايا من فضلك.
+20	ما اسم هذا الشيء؟	What is this thing called?	ما اسم هذا الشيء؟
+20	ما هذا الطعام اللذيذ؟	What is this delicious food?	ما هذا الطعام اللذيذ؟
+21	ماذا تريد أن تأكل؟	What do you want to eat?	ماذا تريد أن تأكل؟
+21	ماذا فعلت أمس في المساء؟	What did you do yesterday evening?	ماذا فعلت أمس في المساء؟
+22	من ذلك الرجل الذي هناك؟	Who is that man over there?	من ذلك الرجل الذي هناك؟
+22	من يريد أن يشرب الشاي؟	Who wants to drink tea?	من يريد أن يشرب الشاي؟
+23	أين تسكن أنت الآن؟	Where do you live now?	أين تسكن أنت الآن؟
+23	أين الكتاب الذي اشتريته؟	Where is the book you bought?	أين الكتاب الذي اشتريته؟
+24	متى يبدأ الدرس اليوم؟	When does the lesson start today?	متى يبدأ الدرس اليوم؟
+24	متى ترجع إلى البيت؟	When are you coming back home?	متى ترجع إلى البيت؟
+25	كيف أذهب إلى المطار؟	How do I get to the airport?	كيف أذهب إلى المطار؟
+25	كيف تذهب إلى العمل؟	How do you get to work?	كيف تذهب إلى العمل؟
+26	لماذا لم تذهب إلى المدرسة؟	Why didn't you go to school?	لماذا لم تذهب إلى المدرسة؟
+26	لماذا أنت حزين اليوم؟	Why are you sad today?	لماذا أنت حزين اليوم؟
+27	كم ساعة تعمل كل يوم؟	How many hours do you work every day?	كم ساعة تعمل كل يوم؟
+27	كم أخا وأختا عندك؟	How many brothers and sisters do you have?	كم أخا وأختا عندك؟
+28	هل عندك وقت الآن؟	Do you have time now?	هل عندك وقت الآن؟
+28	هل هذا بيتك الجديد؟	Is this your new home?	هل هذا بيتك الجديد؟
+29	البيت ليس بعيدا عن هنا.	The house isn't far from here.	البيت ليس بعيدا عن هنا.
+29	أنا لست مشغولا اليوم.	I'm not busy today.	أنا لست مشغولا اليوم.
+30	لم يأكل أخي الفطور اليوم.	My brother didn't eat breakfast today.	لم يأكل أخي الفطور اليوم.
+30	لم أذهب إلى العمل أمس.	I didn't go to work yesterday.	لم أذهب إلى العمل أمس.
+31	أريد أن أشرب الماء.	I want to drink some water.	أريد أن أشرب الماء.
+31	أحب أن أقرأ في المساء.	I like to read in the evening.	أحب أن أقرأ في المساء.
+32	أذهب إلى السوق مع أمي.	I go to the market with my mother.	أذهب إلى السوق مع أمي.
+32	هل تذهب معي إلى السوق؟	Will you go to the market with me?	هل تذهب معي إلى السوق؟
+33	عندي أخ واحد وأختان.	I have one brother and two sisters.	عندي أخ واحد وأختان.
+33	الطبيب عند المريض الآن.	The doctor is with the patient now.	الطبيب عند المريض الآن.
+34	هذا الكتاب لي وليس لك.	This book is mine, not yours.	هذا الكتاب لي وليس لك.
+34	هذه الحقيبة لي، وتلك لأختي.	This bag is mine, and that one is my sister's.	هذه الحقيبة لي، وتلك لأختي.
+35	أبحث عن مفتاح السيارة.	I'm looking for the car key.	أبحث عن مفتاح السيارة.
+35	تكلمنا عن العطلة في المساء.	We talked about the holiday in the evening.	تكلمنا عن العطلة في المساء.
+36	كل الطلاب في المدرسة الآن.	All the students are at school now.	كل الطلاب في المدرسة الآن.
+36	أذهب إلى السوق كل أسبوع.	I go to the market every week.	أذهب إلى السوق كل أسبوع.
+37	عندي بعض الأسئلة عن الدرس.	I have some questions about the lesson.	عندي بعض الأسئلة عن الدرس.
+37	بعض الطلاب في المكتبة.	Some of the students are in the library.	بعض الطلاب في المكتبة.
+38	وصلت إلى البيت قبل ساعة.	I got home an hour ago.	وصلت إلى البيت قبل ساعة.
+38	أشرب القهوة قبل العمل.	I drink coffee before work.	أشرب القهوة قبل العمل.
+39	نشرب الشاي بعد الغداء.	We drink tea after lunch.	نشرب الشاي بعد الغداء.
+39	سأتصل بأمي بعد الدرس.	I'll call my mother after the lesson.	سأتصل بأمي بعد الدرس.
+40	أنتظرك أمام باب المدرسة.	I'll wait for you in front of the school gate.	أنتظرك أمام باب المدرسة.
+40	يوجد مطعم جديد أمام المحطة.	There is a new restaurant in front of the station.	يوجد مطعم جديد أمام المحطة.
+41	يوجد مسجد كبير خلف المدرسة.	There is a big mosque behind the school.	يوجد مسجد كبير خلف المدرسة.
+41	جلست خلف أخي في السيارة.	I sat behind my brother in the car.	جلست خلف أخي في السيارة.
+42	القطة تحت الطاولة الآن.	The cat is under the table now.	القطة تحت الطاولة الآن.
+42	حقيبتي تحت السرير في غرفتي.	My bag is under the bed in my room.	حقيبتي تحت السرير في غرفتي.
+43	كتبي فوق الطاولة في المكتب.	My books are on the desk in the office.	كتبي فوق الطاولة في المكتب.
+43	القطة فوق السيارة الآن.	The cat is on top of the car now.	القطة فوق السيارة الآن.
+44	البيت بين المسجد والمدرسة.	The house is between the mosque and the school.	البيت بين المسجد والمدرسة.
+44	جلست بين أبي وأمي.	I sat between my father and my mother.	جلست بين أبي وأمي.
+45	نذهب بالقطار أو بالحافلة.	We'll go by train or by bus.	نذهب بالقطار أو بالحافلة.
+45	أسافر بالسيارة أو بالقطار.	I travel by car or by train.	أسافر بالسيارة أو بالقطار.
+46	البيت صغير لكن جميل.	The house is small but beautiful.	البيت صغير لكن جميل.
+46	أريد أن أذهب، لكن عندي عمل.	I want to go, but I have work.	أريد أن أذهب، لكن عندي عمل.
+47	أكلت الفطور ثم ذهبت إلى العمل.	I had breakfast and then went to work.	أكلت الفطور ثم ذهبت إلى العمل.
+47	نشرب القهوة ثم نبدأ العمل.	We drink coffee, then we start work.	نشرب القهوة ثم نبدأ العمل.
+48	لم أذهب لأنني مريض.	I didn't go because I'm ill.	لم أذهب لأنني مريض.
+48	أشرب الماء لأن الطقس حار.	I'm drinking water because it's hot.	أشرب الماء لأن الطقس حار.
+49	إذا كان الطقس جميلا، نذهب إلى البحر.	If the weather is nice, we'll go to the sea.	إذا كان الطقس جميلا، نذهب إلى البحر.
+49	إذا عندك سؤال، اسألني.	If you have a question, ask me.	إذا عندك سؤال، اسألني.
+50	عندما أكون مريضا، أنام كثيرا.	When I'm ill, I sleep a lot.	عندما أكون مريضا، أنام كثيرا.
+50	عندما وصلت، كان أبي في البيت.	When I arrived, my father was at home.	عندما وصلت، كان أبي في البيت.
+51	انتظرتك في المحطة حتى المساء.	I waited for you at the station until the evening.	انتظرتك في المحطة حتى المساء.
+51	أعمل من الصباح حتى الليل.	I work from morning until night.	أعمل من الصباح حتى الليل.
+52	أنا أيضا طالب في الجامعة.	I'm a university student too.	أنا أيضا طالب في الجامعة.
+52	أريد شايا أيضا من فضلك.	I'd like some tea too, please.	أريد شايا أيضا من فضلك.
+53	الطقس حار جدا اليوم.	It's very hot today.	الطقس حار جدا اليوم.
+53	بيت أخي كبير جدا.	My brother's house is very big.	بيت أخي كبير جدا.
+54	عندي أخ واحد فقط.	I have only one brother.	عندي أخ واحد فقط.
+54	في الصباح أشرب القهوة فقط.	In the morning I only drink coffee.	في الصباح أشرب القهوة فقط.
+55	يجب أن نذهب الآن.	We have to go now.	يجب أن نذهب الآن.
+55	الآن أفهم الدرس جيدا.	Now I understand the lesson well.	الآن أفهم الدرس جيدا.
+56	الطقس جميل جدا اليوم.	The weather is lovely today.	الطقس جميل جدا اليوم.
+56	ماذا تفعل اليوم في المساء؟	What are you doing this evening?	ماذا تفعل اليوم في المساء؟
+57	سأسافر غدا إلى القاهرة.	I'm travelling to Cairo tomorrow.	سأسافر غدا إلى القاهرة.	القاهرة
+57	هل عندك درس غدا؟	Do you have a lesson tomorrow?	هل عندك درس غدا؟
+58	ذهبت إلى السوق أمس.	I went to the market yesterday.	ذهبت إلى السوق أمس.
+58	كان الطقس باردا أمس.	It was cold yesterday.	كان الطقس باردا أمس.
+59	أبي يشرب القهوة دائما.	My father always drinks coffee.	أبي يشرب القهوة دائما.
+59	أنت دائما في المكتب.	You're always at the office.	أنت دائما في المكتب.
+60	أحيانا نأكل في المطعم.	Sometimes we eat at a restaurant.	أحيانا نأكل في المطعم.
+60	أحيانا أمشي إلى العمل.	Sometimes I walk to work.	أحيانا أمشي إلى العمل.
+61	نحن نعمل معا في الشركة.	We work together at the company.	نحن نعمل معا في الشركة.
+61	لنأكل الغداء معا اليوم.	Let's have lunch together today.	لنأكل الغداء معا اليوم.
+62	سوف أسافر في الصيف.	I will travel in the summer.	سوف أسافر في الصيف.
+62	سوف نذهب إلى البحر غدا.	We will go to the sea tomorrow.	سوف نذهب إلى البحر غدا.
+63	تعال هنا من فضلك.	Come here, please.	تعال هنا من فضلك.
+63	هل يوجد مطعم هنا؟	Is there a restaurant here?	هل يوجد مطعم هنا؟
+64	المحطة هناك بجانب المسجد.	The station is over there, next to the mosque.	المحطة هناك بجانب المسجد.
+64	هناك قطة تحت السيارة.	There's a cat under the car.	هناك قطة تحت السيارة.
+65	كان الطقس جميلا أمس.	The weather was nice yesterday.	كان الطقس جميلا أمس.
+65	كنت في البيت في المساء.	I was at home in the evening.	كنت في البيت في المساء.
+66	قال المدرس إن الدرس سهل.	The teacher said the lesson is easy.	قال المدرس إن الدرس سهل.
+66	ماذا قال لك الطبيب؟	What did the doctor tell you?	ماذا قال لك الطبيب؟
+67	ذهبنا إلى البحر في الصيف.	We went to the sea in the summer.	ذهبنا إلى البحر في الصيف.
+67	إلى أين ذهب أخوك؟	Where did your brother go?	إلى أين ذهب أخوك؟
+68	جاء صديقي إلى بيتي أمس.	My friend came to my home yesterday.	جاء صديقي إلى بيتي أمس.
+68	متى جئت إلى هنا؟	When did you come here?	متى جئت إلى هنا؟
+69	أريد أن أشتري سيارة.	I want to buy a car.	أريد أن أشتري سيارة.
+69	ماذا تريد أن تشتري؟	What do you want to buy?	ماذا تريد أن تشتري؟
+70	أحب القهوة كثيرا في الصباح.	I really like coffee in the morning.	أحب القهوة كثيرا في الصباح.
+70	أختي تحب الرياضة كثيرا.	My sister really likes sport.	أختي تحب الرياضة كثيرا.
+71	لا أعرف هذا الرجل.	I don't know this man.	لا أعرف هذا الرجل.
+71	هل تعرف أين المحطة؟	Do you know where the station is?	هل تعرف أين المحطة؟
+72	أكلنا كثيرا في المطعم أمس.	We ate a lot at the restaurant yesterday.	أكلنا كثيرا في المطعم أمس.
+72	أنا لا آكل اللحم.	I don't eat meat.	أنا لا آكل اللحم.
+73	شربت كثيرا من الماء اليوم.	I drank a lot of water today.	شربت كثيرا من الماء اليوم.
+73	أبي لا يشرب القهوة.	My father doesn't drink coffee.	أبي لا يشرب القهوة.
+74	رأيت صديقك في السوق.	I saw your friend at the market.	رأيت صديقك في السوق.
+74	هل ترى تلك السيارة؟	Do you see that car?	هل ترى تلك السيارة؟
+75	هل تسمعني جيدا الآن؟	Can you hear me well now?	هل تسمعني جيدا الآن؟
+75	سمعت أن المطعم الجديد جيد.	I heard the new restaurant is good.	سمعت أن المطعم الجديد جيد.
+76	قرأت كتابا جميلا في العطلة.	I read a nice book on holiday.	قرأت كتابا جميلا في العطلة.
+76	أقرأ كتابا كل أسبوع.	I read a book every week.	أقرأ كتابا كل أسبوع.
+77	أكتب رسالة إلى صديقي.	I'm writing a letter to my friend.	أكتب رسالة إلى صديقي.
+77	كتبت اسمي على الورقة.	I wrote my name on the paper.	كتبت اسمي على الورقة.
+78	أدرس اللغة العربية في الجامعة.	I study Arabic at university.	أدرس اللغة العربية في الجامعة.
+78	درسنا كثيرا أمس في المكتبة.	We studied a lot in the library yesterday.	درسنا كثيرا أمس في المكتبة.
+79	أعمل في مستشفى المدينة.	I work at the city hospital.	أعمل في مستشفى المدينة.
+79	أين تعمل أمك الآن؟	Where does your mother work now?	أين تعمل أمك الآن؟
+80	ماذا تفعل في يوم الجمعة؟	What do you do on Fridays?	ماذا تفعل في يوم الجمعة؟
+80	لا أعرف ماذا أفعل.	I don't know what to do.	لا أعرف ماذا أفعل.
+81	أعطني الحقيبة من فضلك.	Give me the bag, please.	أعطني الحقيبة من فضلك.
+81	أعطيت أختي هدية جميلة.	I gave my sister a lovely present.	أعطيت أختي هدية جميلة.
+82	خذ هذا المفتاح من فضلك.	Take this key, please.	خذ هذا المفتاح من فضلك.
+82	أخذت الحافلة إلى العمل.	I took the bus to work.	أخذت الحافلة إلى العمل.
+83	يفتح السوق في الصباح.	The market opens in the morning.	يفتح السوق في الصباح.
+83	فتحت الحقيبة ووجدت المفتاح.	I opened the bag and found the key.	فتحت الحقيبة ووجدت المفتاح.
+84	أغلق الباب من فضلك.	Close the door, please.	أغلق الباب من فضلك.
+84	أغلقت النافذة لأن الطقس بارد.	I closed the window because it's cold.	أغلقت النافذة لأن الطقس بارد.
+85	جلسنا في المطعم ساعة.	We sat in the restaurant for an hour.	جلسنا في المطعم ساعة.
+85	اجلس هنا من فضلك.	Sit here, please.	اجلس هنا من فضلك.
+86	نام الطفل في السرير.	The child fell asleep in bed.	نام الطفل في السرير.
+86	نمت كثيرا يوم الجمعة.	I slept a lot on Friday.	نمت كثيرا يوم الجمعة.
+87	أسكن في بيت صغير.	I live in a small house.	أسكن في بيت صغير.
+87	هل تسكن أسرتك في المدينة؟	Does your family live in the city?	هل تسكن أسرتك في المدينة؟
+88	رجعت إلى البيت في المساء.	I came back home in the evening.	رجعت إلى البيت في المساء.
+88	متى ترجع من العمل؟	When do you get back from work?	متى ترجع من العمل؟
+89	خرجنا من البيت في الصباح.	We left the house in the morning.	خرجنا من البيت في الصباح.
+89	لا أريد أن أخرج اليوم.	I don't want to go out today.	لا أريد أن أخرج اليوم.
+90	دخلت الغرفة وأغلقت الباب.	I went into the room and closed the door.	دخلت الغرفة وأغلقت الباب.
+90	ادخل البيت من فضلك.	Come into the house, please.	ادخل البيت من فضلك.
+91	سافرنا إلى مصر في الصيف.	We travelled to Egypt in the summer.	سافرنا إلى مصر في الصيف.	مصر
+91	أسافر كثيرا في عملي.	I travel a lot for my work.	أسافر كثيرا في عملي.
+92	اشتريت سيارة جديدة هذا الشهر.	I bought a new car this month.	اشتريت سيارة جديدة هذا الشهر.
+92	أريد أن أشتري خبزا.	I want to buy some bread.	أريد أن أشتري خبزا.
+93	باع أبي سيارته القديمة.	My father sold his old car.	باع أبي سيارته القديمة.
+93	ماذا يبيعون في هذا السوق؟	What do they sell in this market?	ماذا يبيعون في هذا السوق؟
+94	دفعت المال في المطعم.	I paid the money at the restaurant.	دفعت المال في المطعم.
+94	كم دفعت للسيارة الجديدة؟	How much did you pay for the new car?	كم دفعت للسيارة الجديدة؟
+95	يلعب الأطفال في الشارع.	The children are playing in the street.	يلعب الأطفال في الشارع.
+95	لعبنا كثيرا في العطلة.	We played a lot during the holiday.	لعبنا كثيرا في العطلة.
+96	هل تتكلم اللغة العربية؟	Do you speak Arabic?	هل تتكلم اللغة العربية؟
+96	أتكلم مع أمي كل يوم.	I talk to my mother every day.	أتكلم مع أمي كل يوم.
+97	لم أفهم هذا السؤال جيدا.	I didn't understand this question well.	لم أفهم هذا السؤال جيدا.
+97	هل فهمت الدرس اليوم؟	Did you understand today's lesson?	هل فهمت الدرس اليوم؟
+98	سألني المدرس عن اسمك.	The teacher asked me your name.	سألني المدرس عن اسمك.
+98	اسأل المدرس إذا لم تفهم.	Ask the teacher if you don't understand.	اسأل المدرس إذا لم تفهم.
+99	أجاب الطالب عن السؤال.	The student answered the question.	أجاب الطالب عن السؤال.
+99	أجبت عن كل الأسئلة.	I answered all the questions.	أجبت عن كل الأسئلة.
+100	انتظرني هنا من فضلك.	Wait for me here, please.	انتظرني هنا من فضلك.
+100	انتظرت أخي نصف ساعة.	I waited half an hour for my brother.	انتظرت أخي نصف ساعة.
+101	هل تستطيع أن تساعدني؟	Can you help me?	هل تستطيع أن تساعدني؟
+101	ساعدت أمي في المطبخ.	I helped my mother in the kitchen.	ساعدت أمي في المطبخ.
+102	يبدأ العمل في الصباح.	Work starts in the morning.	يبدأ العمل في الصباح.
+102	بدأت أتعلم العربية هذا الشهر.	I started learning Arabic this month.	بدأت أتعلم العربية هذا الشهر.
+103	طبخت العشاء لأسرتي اليوم.	I cooked dinner for my family today.	طبخت العشاء لأسرتي اليوم.
+103	أطبخ العشاء كل مساء.	I cook dinner every evening.	أطبخ العشاء كل مساء.
+104	أغسل يدي قبل الأكل.	I wash my hands before eating.	أغسل يدي قبل الأكل.
+104	غسلت كل ملابسي اليوم.	I washed all my clothes today.	غسلت كل ملابسي اليوم.
+105	البس هذا، الطقس بارد.	Put this on, it's cold.	البس هذا، الطقس بارد.
+105	ماذا تلبس في الشتاء؟	What do you wear in winter?	ماذا تلبس في الشتاء؟
+106	أمشي إلى المدرسة كل يوم.	I walk to school every day.	أمشي إلى المدرسة كل يوم.
+106	مشينا بجانب البحر في المساء.	We walked by the sea in the evening.	مشينا بجانب البحر في المساء.
+107	ركبنا القطار إلى القاهرة.	We took the train to Cairo.	ركبنا القطار إلى القاهرة.	القاهرة
+107	ركبت الطائرة لأول مرة.	I flew for the first time.	ركبت الطائرة لأول مرة.
+108	وصل القطار قبل دقيقة.	The train arrived a minute ago.	وصل القطار قبل دقيقة.
+108	متى تصل الطائرة إلى المطار؟	When does the plane arrive at the airport?	متى تصل الطائرة إلى المطار؟
+109	لا أستطيع أن أنام الليلة.	I can't sleep tonight.	لا أستطيع أن أنام الليلة.
+109	استطعت أن أفهم الدرس.	I was able to understand the lesson.	استطعت أن أفهم الدرس.
+110	نسيت مفتاح البيت في المكتب.	I left the house key at the office.	نسيت مفتاح البيت في المكتب.
+110	أنا لا أنسى اسمك.	I don't forget your name.	أنا لا أنسى اسمك.
+111	اتصلت بأمي في المساء.	I called my mother in the evening.	اتصلت بأمي في المساء.
+111	سأتصل بالطبيب غدا في الصباح.	I'll call the doctor tomorrow morning.	سأتصل بالطبيب غدا في الصباح.
+112	أرسل لي صورة من فضلك.	Send me a picture, please.	أرسل لي صورة من فضلك.
+112	أرسلت المال إلى أخي.	I sent the money to my brother.	أرسلت المال إلى أخي.
+113	لم أجد مفتاحي في الحقيبة.	I didn't find my key in the bag.	لم أجد مفتاحي في الحقيبة.
+113	يوجد مطعم جيد في هذا الشارع.	There's a good restaurant on this street.	يوجد مطعم جيد في هذا الشارع.
+114	أبحث عن قلمي الأزرق.	I'm looking for my blue pen.	أبحث عن قلمي الأزرق.
+114	بحثنا عن القطة في كل مكان.	We looked for the cat everywhere.	بحثنا عن القطة في كل مكان.
+115	أستيقظ كل يوم في الصباح.	I wake up in the morning every day.	أستيقظ كل يوم في الصباح.
+115	استيقظ الطفل في الليل.	The child woke up in the night.	استيقظ الطفل في الليل.
+116	أشعر أني مريض اليوم.	I feel ill today.	أشعر أني مريض اليوم.
+116	هل تشعر بخير الآن؟	Do you feel well now?	هل تشعر بخير الآن؟
+117	أظن أن الطقس سيكون حارا.	I think the weather will be hot.	أظن أن الطقس سيكون حارا.
+117	ظننت أنك في البيت.	I thought you were at home.	ظننت أنك في البيت.
+118	أتعلم العربية في الجامعة.	I'm learning Arabic at university.	أتعلم العربية في الجامعة.
+118	تعلمت كلمات جديدة اليوم.	I learned new words today.	تعلمت كلمات جديدة اليوم.
+119	زرت صديقي في المستشفى.	I visited my friend in hospital.	زرت صديقي في المستشفى.
+119	سنزور أسرتي في العطلة.	We'll visit my family during the holiday.	سنزور أسرتي في العطلة.
+120	أحب أن أسبح في البحر.	I like swimming in the sea.	أحب أن أسبح في البحر.
+120	سبحنا كثيرا في الصيف.	We swam a lot in the summer.	سبحنا كثيرا في الصيف.
+121	أنت متعب، استرح قليلا الآن.	You're tired, rest a little now.	أنت متعب، استرح قليلا الآن.
+121	نستريح قليلا بعد الغداء.	We rest a little after lunch.	نستريح قليلا بعد الغداء.
+122	عشت في هذه المدينة سنة.	I lived in this city for a year.	عشت في هذه المدينة سنة.
+122	يعيش أخي في بلد آخر.	My brother lives in another country.	يعيش أخي في بلد آخر.
+123	تركت حقيبتي في السيارة.	I left my bag in the car.	تركت حقيبتي في السيارة.
+123	لا تترك الطعام على الطاولة.	Don't leave the food on the table.	لا تترك الطعام على الطاولة.
+124	حاولت أن أفهم الدرس.	I tried to understand the lesson.	حاولت أن أفهم الدرس.
+124	سأحاول أن أصل قبل المساء.	I'll try to arrive before the evening.	سأحاول أن أصل قبل المساء.
+125	أحتاج إلى قلم من فضلك.	I need a pen, please.	أحتاج إلى قلم من فضلك.
+125	هل تحتاج إلى شيء؟	Do you need anything?	هل تحتاج إلى شيء؟
+126	يجب أن أذهب الآن.	I have to go now.	يجب أن أذهب الآن.
+126	يجب أن تشرب الماء كثيرا.	You should drink a lot of water.	يجب أن تشرب الماء كثيرا.
+127	من هذا الرجل الطويل؟	Who is this tall man?	من هذا الرجل الطويل؟
+127	في المكتب ثلاثة رجال.	There are three men in the office.	في المكتب ثلاثة رجال.
+128	تلك المرأة أم صديقي.	That woman is my friend's mother.	تلك المرأة أم صديقي.
+128	امرأة جميلة تسكن بجانبنا.	A beautiful woman lives next to us.	امرأة جميلة تسكن بجانبنا.
+129	الولد يلعب في الشارع.	The boy is playing in the street.	الولد يلعب في الشارع.
+129	عندهم ثلاثة أولاد وبنت واحدة.	They have three boys and one girl.	عندهم ثلاثة أولاد وبنت واحدة.
+130	عندي بنت واحدة وولدان.	I have one daughter and two sons.	عندي بنت واحدة وولدان.
+130	البنت الصغيرة تقرأ كتابا.	The little girl is reading a book.	البنت الصغيرة تقرأ كتابا.
+131	الطفل الصغير جائع جدا.	The little child is very hungry.	الطفل الصغير جائع جدا.
+131	كم طفلا عندكم في البيت؟	How many children do you have at home?	كم طفلا عندكم في البيت؟
+132	أبي طبيب في المستشفى.	My father is a doctor at the hospital.	أبي طبيب في المستشفى.
+132	أين يعمل أبوك الآن؟	Where does your father work now?	أين يعمل أبوك الآن؟
+133	أمي تعمل في مكتبة المدينة.	My mother works at the city library.	أمي تعمل في مكتبة المدينة.
+133	أمي وأبي في السوق.	My mother and father are at the market.	أمي وأبي في السوق.
+134	أخي أكبر مني بسنتين.	My brother is two years older than me.	أخي أكبر مني بسنتين.
+134	عندي أخ في الجامعة.	I have a brother at university.	عندي أخ في الجامعة.
+135	أختي طالبة في الجامعة.	My sister is a university student.	أختي طالبة في الجامعة.
+135	عندي أختان صغيرتان وأخ كبير.	I have two little sisters and a big brother.	عندي أختان صغيرتان وأخ كبير.
+136	ابني يدرس في هذه المدرسة.	My son studies at this school.	ابني يدرس في هذه المدرسة.
+136	له ابن واحد وبنتان.	He has one son and two daughters.	له ابن واحد وبنتان.
+137	زوجي يعمل في المطار.	My husband works at the airport.	زوجي يعمل في المطار.
+137	زوج أختي طبيب في المستشفى.	My sister's husband is a doctor at the hospital.	زوج أختي طبيب في المستشفى.
+138	زوجتي تحب الطبخ كثيرا.	My wife really likes cooking.	زوجتي تحب الطبخ كثيرا.
+138	هذه زوجتي، وهذا ابني.	This is my wife, and this is my son.	هذه زوجتي، وهذا ابني.
+139	أسرتي ليست كبيرة جدا.	My family isn't very big.	أسرتي ليست كبيرة جدا.
+139	أسكن مع أسرتي في بيت صغير.	I live with my family in a small house.	أسكن مع أسرتي في بيت صغير.
+140	هو صديقي من المدرسة.	He's my friend from school.	هو صديقي من المدرسة.
+140	عندي أصدقاء كثيرون هنا.	I have a lot of friends here.	عندي أصدقاء كثيرون هنا.
+141	أنا طالب في الجامعة.	I'm a university student.	أنا طالب في الجامعة.
+141	في مدرستنا طلاب كثيرون.	There are many students at our school.	في مدرستنا طلاب كثيرون.
+142	مدرس العربية من مصر.	The Arabic teacher is from Egypt.	مدرس العربية من مصر.	مصر
+142	المدرسون في المكتب الآن.	The teachers are in the office now.	المدرسون في المكتب الآن.
+143	يجب أن تذهب إلى الطبيب.	You should go to the doctor.	يجب أن تذهب إلى الطبيب.
+143	الطبيب في المستشفى الآن.	The doctor is at the hospital now.	الطبيب في المستشفى الآن.
+144	ما اسم هذا الشارع؟	What is the name of this street?	ما اسم هذا الشارع؟
+144	اسمي سارة، وأنا طالبة.	My name is Sara, and I'm a student.	اسمي سارة، وأنا طالبة.	سارة
+145	الناس في هذه المدينة جيدون.	The people in this city are good.	الناس في هذه المدينة جيدون.
+145	الناس في الشارع كثيرون.	There are a lot of people in the street.	الناس في الشارع كثيرون.
+146	هو شخص جيد جدا.	He is a very good person.	هو شخص جيد جدا.
+146	كم شخصا في أسرتك؟	How many people are in your family?	كم شخصا في أسرتك؟
+147	أنا في البيت الآن.	I'm at home now.	أنا في البيت الآن.
+147	بيتنا قريب من البحر.	Our house is near the sea.	بيتنا قريب من البحر.
+148	أذهب إلى المدرسة كل يوم.	I go to school every day.	أذهب إلى المدرسة كل يوم.
+148	مدرستي كبيرة وجميلة جدا.	My school is big and very beautiful.	مدرستي كبيرة وجميلة جدا.
+149	القاهرة مدينة كبيرة جدا.	Cairo is a very big city.	القاهرة مدينة كبيرة جدا.	القاهرة
+149	أحب هذه المدينة كثيرا.	I really like this city.	أحب هذه المدينة كثيرا.
+150	مصر بلد كبير وجميل.	Egypt is a big and beautiful country.	مصر بلد كبير وجميل.	مصر
+150	سافرت إلى بلاد كثيرة.	I've travelled to many countries.	سافرت إلى بلاد كثيرة.
+151	أسكن في هذا الشارع.	I live on this street.	أسكن في هذا الشارع.
+151	الشارع أمام بيتي كبير.	The street in front of my house is wide.	الشارع أمام بيتي كبير.
+152	اشتريت الفاكهة من السوق.	I bought the fruit at the market.	اشتريت الفاكهة من السوق.
+152	في السوق ناس كثيرون.	There are a lot of people at the market.	في السوق ناس كثيرون.
+153	هذا المطعم جديد وجميل.	This restaurant is new and nice.	هذا المطعم جديد وجميل.
+153	نأكل في المطعم يوم الجمعة.	We eat at the restaurant on Fridays.	نأكل في المطعم يوم الجمعة.
+154	أبي مريض وهو في المستشفى.	My father is ill and in hospital.	أبي مريض وهو في المستشفى.
+154	ذهبت إلى المستشفى مع أمي.	I went to the hospital with my mother.	ذهبت إلى المستشفى مع أمي.
+155	أنا في المكتب الآن.	I'm at the office now.	أنا في المكتب الآن.
+155	مكتب أبي قريب من المحطة.	My father's office is near the station.	مكتب أبي قريب من المحطة.
+156	أين المحطة من فضلك؟	Where is the station, please?	أين المحطة من فضلك؟
+156	ننتظر الحافلة في المحطة.	We're waiting for the bus at the station.	ننتظر الحافلة في المحطة.
+157	المطار بعيد عن المدينة.	The airport is far from the city.	المطار بعيد عن المدينة.
+157	وصلنا إلى المطار في الصباح.	We arrived at the airport in the morning.	وصلنا إلى المطار في الصباح.
+158	غرفتي صغيرة لكن جميلة.	My room is small but nice.	غرفتي صغيرة لكن جميلة.
+158	في البيت ثلاث غرف.	There are three rooms in the house.	في البيت ثلاث غرف.
+159	أمي في المطبخ الآن.	My mother is in the kitchen now.	أمي في المطبخ الآن.
+159	المطبخ في بيتنا صغير.	The kitchen in our house is small.	المطبخ في بيتنا صغير.
+160	افتح الباب من فضلك.	Open the door, please.	افتح الباب من فضلك.
+160	باب بيتنا أزرق وجميل.	The door of our house is blue and pretty.	باب بيتنا أزرق وجميل.
+161	افتح النافذة من فضلك.	Open the window, please.	افتح النافذة من فضلك.
+161	في غرفتي نافذة كبيرة.	There's a big window in my room.	في غرفتي نافذة كبيرة.
+162	هذا مكان جميل جدا.	This is a very beautiful place.	هذا مكان جميل جدا.
+162	لا يوجد مكان في الحافلة.	There's no room on the bus.	لا يوجد مكان في الحافلة.
+163	المسجد قريب من البيت.	The mosque is near the house.	المسجد قريب من البيت.
+163	في مدينتنا مساجد كثيرة.	There are many mosques in our city.	في مدينتنا مساجد كثيرة.
+164	أقرأ في المكتبة كل يوم.	I read in the library every day.	أقرأ في المكتبة كل يوم.
+164	اشتريت كتابا من المكتبة.	I bought a book at the bookshop.	اشتريت كتابا من المكتبة.
+165	أخي يدرس في الجامعة.	My brother studies at university.	أخي يدرس في الجامعة.
+165	الجامعة بعيدة عن بيتي.	The university is far from my house.	الجامعة بعيدة عن بيتي.
+166	أبحث عن عمل جديد.	I'm looking for a new job.	أبحث عن عمل جديد.
+166	عندي عمل كثير اليوم.	I have a lot of work today.	عندي عمل كثير اليوم.
+167	أعمل في شركة كبيرة.	I work for a big company.	أعمل في شركة كبيرة.
+167	الشركة قريبة من المحطة.	The company is near the station.	الشركة قريبة من المحطة.
+168	المطعم الجديد بجانب المسجد.	The new restaurant is next to the mosque.	المطعم الجديد بجانب المسجد.
+168	اجلس بجانبي من فضلك.	Sit next to me, please.	اجلس بجانبي من فضلك.
+169	قرأت هذا الكتاب أمس.	I read this book yesterday.	قرأت هذا الكتاب أمس.
+169	عندي كتب كثيرة في غرفتي.	I have a lot of books in my room.	عندي كتب كثيرة في غرفتي.
+170	أعطني القلم الأزرق من فضلك.	Give me the blue pen, please.	أعطني القلم الأزرق من فضلك.
+170	قلمي الجديد على الطاولة.	My new pen is on the table.	قلمي الجديد على الطاولة.
+171	اكتب اسمك على هذه الورقة.	Write your name on this sheet.	اكتب اسمك على هذه الورقة.
+171	أعطني ورقة وقلما من فضلك.	Give me a sheet of paper and a pen, please.	أعطني ورقة وقلما من فضلك.
+172	الكتب على الطاولة الكبيرة.	The books are on the big table.	الكتب على الطاولة الكبيرة.
+172	في المطبخ طاولة صغيرة.	There's a small table in the kitchen.	في المطبخ طاولة صغيرة.
+173	اجلس على الكرسي بجانبي.	Sit on the chair next to me.	اجلس على الكرسي بجانبي.
+173	في الغرفة أربعة كراسي.	There are four chairs in the room.	في الغرفة أربعة كراسي.
+174	في غرفتي سرير كبير.	There's a big bed in my room.	في غرفتي سرير كبير.
+174	الطفل في سريره الآن.	The child is in his bed now.	الطفل في سريره الآن.
+175	لا أعرف أين هاتفي.	I don't know where my phone is.	لا أعرف أين هاتفي.
+175	اشتريت هاتفا جديدا من السوق.	I bought a new phone at the market.	اشتريت هاتفا جديدا من السوق.
+176	هذه سيارة أبي الجديدة.	This is my father's new car.	هذه سيارة أبي الجديدة.
+176	سيارتي بيضاء وسيارة أخي سوداء.	My car is white and my brother's car is black.	سيارتي بيضاء وسيارة أخي سوداء.
+177	أركب الحافلة كل صباح.	I take the bus every morning.	أركب الحافلة كل صباح.
+177	متى تصل الحافلة إلى المحطة؟	When does the bus get to the station?	متى تصل الحافلة إلى المحطة؟
+178	القطار أسرع من الحافلة.	The train is faster than the bus.	القطار أسرع من الحافلة.
+178	القطار يصل في المساء.	The train arrives in the evening.	القطار يصل في المساء.
+179	الطائرة في المطار الآن.	The plane is at the airport now.	الطائرة في المطار الآن.
+179	سافرنا بالطائرة إلى مصر.	We flew to Egypt.	سافرنا بالطائرة إلى مصر.	مصر
+180	ليس عندي مال الآن.	I don't have any money now.	ليس عندي مال الآن.
+180	كم من المال تحتاج؟	How much money do you need?	كم من المال تحتاج؟
+181	هل رأيت مفتاح السيارة؟	Have you seen the car key?	هل رأيت مفتاح السيارة؟
+181	هذا مفتاح غرفتك الجديدة.	This is the key to your new room.	هذا مفتاح غرفتك الجديدة.
+182	هذه حقيبتي، وتلك حقيبتك.	This is my bag, and that's your bag.	هذه حقيبتي، وتلك حقيبتك.
+182	اشتريت حقيبة سوداء جديدة.	I bought a new black bag.	اشتريت حقيبة سوداء جديدة.
+183	اشتريت ملابس جديدة للعطلة.	I bought new clothes for the holiday.	اشتريت ملابس جديدة للعطلة.
+183	كل ملابسي في الحقيبة.	All my clothes are in the bag.	كل ملابسي في الحقيبة.
+184	أرسلت رسالة إلى أخي.	I sent a message to my brother.	أرسلت رسالة إلى أخي.
+184	كتبت رسالة طويلة لصديقي.	I wrote a long letter to my friend.	كتبت رسالة طويلة لصديقي.
+185	هذه صورة أسرتي في العطلة.	This is a photo of my family on holiday.	هذه صورة أسرتي في العطلة.
+185	أرسلت الصور إلى أمي.	I sent the photos to my mother.	أرسلت الصور إلى أمي.
+186	ما لون سيارتك الجديدة؟	What colour is your new car?	ما لون سيارتك الجديدة؟
+186	اللون الأبيض جميل جدا.	White is a very nice colour.	اللون الأبيض جميل جدا.
+187	اشتريت هدية جميلة لأمي.	I bought a lovely present for my mother.	اشتريت هدية جميلة لأمي.
+187	شكرا على هذه الهدية الجميلة.	Thank you for this lovely present.	شكرا على هذه الهدية الجميلة.
+188	اشتريت تذكرة القطار أمس.	I bought the train ticket yesterday.	اشتريت تذكرة القطار أمس.
+188	تذكرة الطائرة غالية جدا.	The plane ticket is very expensive.	تذكرة الطائرة غالية جدا.
+189	لا يوجد تلفاز في غرفتي.	There's no television in my room.	لا يوجد تلفاز في غرفتي.
+189	اشترى أبي تلفازا جديدا.	My father bought a new television.	اشترى أبي تلفازا جديدا.
+190	أعمل على الحاسوب كل يوم.	I work on the computer every day.	أعمل على الحاسوب كل يوم.
+190	حاسوب أبي قديم جدا.	My father's computer is very old.	حاسوب أبي قديم جدا.
+191	أهلا وسهلا في بيتنا.	Welcome to our home.	أهلا وسهلا في بيتنا.
+191	أهلا، كيف حالك اليوم؟	Hi, how are you today?	أهلا، كيف حالك اليوم؟
+192	أنا أحب الرياضة كثيرا.	I really like sport.	أنا أحب الرياضة كثيرا.
+192	الرياضة مهمة جدا للجسم.	Exercise is very important for the body.	الرياضة مهمة جدا للجسم.
+193	ما هذا الشيء على الطاولة؟	What is this thing on the table?	ما هذا الشيء على الطاولة؟
+193	هل تريد شيئا من السوق؟	Do you want anything from the market?	هل تريد شيئا من السوق؟
+194	هذا الطعام لذيذ جدا.	This food is very tasty.	هذا الطعام لذيذ جدا.
+194	أمي تطبخ طعاما لذيذا.	My mother cooks delicious food.	أمي تطبخ طعاما لذيذا.
+195	أعطني الماء من فضلك.	Give me the water, please.	أعطني الماء من فضلك.
+195	أريد ماء باردا من فضلك.	I'd like cold water, please.	أريد ماء باردا من فضلك.
+196	هل تريد قهوة أو شايا؟	Would you like coffee or tea?	هل تريد قهوة أو شايا؟
+196	هذه القهوة حارة جدا.	This coffee is very hot.	هذه القهوة حارة جدا.
+197	أشرب الشاي كل صباح.	I drink tea every morning.	أشرب الشاي كل صباح.
+197	الشاي في هذا المطعم جيد.	The tea in this restaurant is good.	الشاي في هذا المطعم جيد.
+198	اشترت أمي خبزا من السوق.	My mother bought bread at the market.	اشترت أمي خبزا من السوق.
+198	الخبز على طاولة المطبخ.	The bread is on the kitchen table.	الخبز على طاولة المطبخ.
+199	الطفل يشرب الحليب كل صباح.	The child drinks milk every morning.	الطفل يشرب الحليب كل صباح.
+199	هل تريد حليبا مع القهوة؟	Would you like milk with your coffee?	هل تريد حليبا مع القهوة؟
+200	اللحم غال في هذا السوق.	Meat is expensive at this market.	اللحم غال في هذا السوق.
+200	طبخت أمي اللحم والأرز.	My mother cooked meat and rice.	طبخت أمي اللحم والأرز.
+201	أكلنا الدجاج والأرز في المطعم.	We ate chicken and rice at the restaurant.	أكلنا الدجاج والأرز في المطعم.
+201	أحب الدجاج أكثر من اللحم.	I like chicken more than meat.	أحب الدجاج أكثر من اللحم.
+202	طبخت أمي الدجاج والأرز.	My mother cooked chicken and rice.	طبخت أمي الدجاج والأرز.
+202	الأرز مع اللحم لذيذ.	Rice with meat is delicious.	الأرز مع اللحم لذيذ.
+203	أكلت تفاحة كبيرة في الصباح.	I ate a big apple in the morning.	أكلت تفاحة كبيرة في الصباح.
+203	اشتريت التفاح من السوق.	I bought the apples at the market.	اشتريت التفاح من السوق.
+204	اشتريت بعض الفاكهة من السوق.	I bought some fruit at the market.	اشتريت بعض الفاكهة من السوق.
+204	أحب الفاكهة في الصيف.	I like fruit in the summer.	أحب الفاكهة في الصيف.
+205	أكلت الخبز والبيض في الفطور.	I had bread and eggs for breakfast.	أكلت الخبز والبيض في الفطور.
+205	اشتريت البيض والحليب من السوق.	I bought eggs and milk at the market.	اشتريت البيض والحليب من السوق.
+206	الشاي مع السكر لذيذ.	Tea with sugar is delicious.	الشاي مع السكر لذيذ.
+206	هل تريد سكرا في القهوة؟	Do you want sugar in your coffee?	هل تريد سكرا في القهوة؟
+207	ماذا أكلت في الفطور؟	What did you have for breakfast?	ماذا أكلت في الفطور؟
+207	نأكل الفطور معا كل صباح.	We have breakfast together every morning.	نأكل الفطور معا كل صباح.
+208	ماذا نأكل للغداء اليوم؟	What are we having for lunch today?	ماذا نأكل للغداء اليوم؟
+208	الغداء في الساعة الواحدة.	Lunch is at one o'clock.	الغداء في الساعة الواحدة.
+209	ماذا تريد أن تأكل للعشاء؟	What do you want for dinner?	ماذا تريد أن تأكل للعشاء؟
+209	أكلنا العشاء في مطعم جديد.	We had dinner at a new restaurant.	أكلنا العشاء في مطعم جديد.
+210	هذا يوم جميل جدا.	This is a very nice day.	هذا يوم جميل جدا.
+210	سأسافر بعد ثلاثة أيام.	I'm travelling in three days.	سأسافر بعد ثلاثة أيام.
+211	أنام في الليل ثماني ساعات.	I sleep eight hours at night.	أنام في الليل ثماني ساعات.
+211	الطقس بارد في الليل.	It's cold at night.	الطقس بارد في الليل.
+212	أشرب القهوة كل صباح.	I drink coffee every morning.	أشرب القهوة كل صباح.
+212	يفتح المكتب في الصباح.	The office opens in the morning.	يفتح المكتب في الصباح.
+213	نخرج معا في المساء.	We go out together in the evening.	نخرج معا في المساء.
+213	مساء الخير، كيف حالك؟	Good evening, how are you?	مساء الخير، كيف حالك؟
+214	أدرس ساعتين كل يوم.	I study for two hours every day.	أدرس ساعتين كل يوم.
+214	كم الساعة الآن من فضلك؟	What time is it now, please?	كم الساعة الآن من فضلك؟
+215	يبدأ الدرس بعد خمس دقائق.	The lesson starts in five minutes.	يبدأ الدرس بعد خمس دقائق.
+215	يصل القطار بعد دقائق قليلة.	The train arrives in a few minutes.	يصل القطار بعد دقائق قليلة.
+216	سأرجع إلى البيت بعد أسبوع.	I'll come back home in a week.	سأرجع إلى البيت بعد أسبوع.
+216	أدرس العربية ثلاث مرات في الأسبوع.	I study Arabic three times a week.	أدرس العربية ثلاث مرات في الأسبوع.
+217	سأسافر إلى مصر بعد شهر.	I'm travelling to Egypt in a month.	سأسافر إلى مصر بعد شهر.	مصر
+217	أدفع المال كل شهر.	I pay the money every month.	أدفع المال كل شهر.
+218	في السنة اثنا عشر شهرا.	There are twelve months in a year.	في السنة اثنا عشر شهرا.
+218	درست العربية ثلاث سنوات.	I studied Arabic for three years.	درست العربية ثلاث سنوات.
+219	ليس عندي وقت اليوم.	I don't have time today.	ليس عندي وقت اليوم.
+219	كم من الوقت تحتاج؟	How much time do you need?	كم من الوقت تحتاج؟
+220	أزور أمي مرة كل أسبوع.	I visit my mother once a week.	أزور أمي مرة كل أسبوع.
+220	قلت لك ثلاث مرات.	I've told you three times.	قلت لك ثلاث مرات.
+221	ماذا فعلتم في العطلة؟	What did you (pl.) do during the holiday?	ماذا فعلتم في العطلة؟
+221	العطلة تبدأ غدا، أنا سعيد.	The holiday starts tomorrow, I'm happy.	العطلة تبدأ غدا، أنا سعيد.
+222	اليوم هو يوم الجمعة.	Today is Friday.	اليوم هو يوم الجمعة.
+222	يذهب أبي إلى المسجد يوم الجمعة.	My father goes to the mosque on Friday.	يذهب أبي إلى المسجد يوم الجمعة.
+223	السلام عليكم، أنا سارة.	Hello (peace be upon you), I'm Sara.	السلام عليكم، أنا سارة.	سارة
+223	السلام عليكم، كيف حالكم؟	Hello (peace be upon you), how are you all?	السلام عليكم، كيف حالكم؟
+224	رأسي حار، أظن أني مريض.	My head is hot, I think I'm ill.	رأسي حار، أظن أني مريض.
+224	لبس الطفل شيئا على رأسه.	The child put something on his head.	لبس الطفل شيئا على رأسه.
+225	يدك باردة جدا اليوم.	Your hand is very cold today.	يدك باردة جدا اليوم.
+225	اغسل يديك قبل الطعام.	Wash your hands before eating.	اغسل يديك قبل الطعام.
+226	لأختي عينان جميلتان جدا.	My sister has very beautiful eyes.	لأختي عينان جميلتان جدا.
+226	عيون القطة زرقاء وجميلة.	The cat's eyes are blue and beautiful.	عيون القطة زرقاء وجميلة.
+227	الماء مهم جدا للجسم.	Water is very important for the body.	الماء مهم جدا للجسم.
+227	جسمي متعب جدا اليوم.	My body is very tired today.	جسمي متعب جدا اليوم.
+228	أحتاج إلى دواء من الطبيب.	I need medicine from the doctor.	أحتاج إلى دواء من الطبيب.
+228	خذ هذا الدواء بعد الأكل.	Take this medicine after eating.	خذ هذا الدواء بعد الأكل.
+229	كيف الطقس في مدينتك اليوم؟	What's the weather like in your city today?	كيف الطقس في مدينتك اليوم؟
+229	الطقس سيئ جدا اليوم.	The weather is very bad today.	الطقس سيئ جدا اليوم.
+230	كان المطر كثيرا أمس.	There was a lot of rain yesterday.	كان المطر كثيرا أمس.
+230	أنا لا أحب المطر.	I don't like the rain.	أنا لا أحب المطر.
+231	الشمس فوق البحر في الصباح.	The sun is above the sea in the morning.	الشمس فوق البحر في الصباح.
+231	الشمس حارة جدا اليوم.	The sun is very hot today.	الشمس حارة جدا اليوم.
+232	نذهب إلى البحر في الصيف.	We go to the sea in the summer.	نذهب إلى البحر في الصيف.
+232	ماء البحر بارد جدا.	The sea water is very cold.	ماء البحر بارد جدا.
+233	المطر كثير في الشتاء.	There's a lot of rain in winter.	المطر كثير في الشتاء.
+233	الشتاء بارد في بلدي.	Winter is cold in my country.	الشتاء بارد في بلدي.
+234	الصيف حار جدا هنا.	Summer is very hot here.	الصيف حار جدا هنا.
+234	أحب الصيف أكثر من الشتاء.	I like summer more than winter.	أحب الصيف أكثر من الشتاء.
+235	عندنا قطة بيضاء صغيرة.	We have a little white cat.	عندنا قطة بيضاء صغيرة.
+235	أختي تحب القطط كثيرا.	My sister loves cats.	أختي تحب القطط كثيرا.
+236	أحب أن ألعب مع كلبي.	I like playing with my dog.	أحب أن ألعب مع كلبي.
+236	عندنا كلب كبير في البيت.	We have a big dog at home.	عندنا كلب كبير في البيت.
+237	هذا سؤال جيد جدا.	That's a very good question.	هذا سؤال جيد جدا.
+237	هل عندك سؤال عن الدرس؟	Do you have a question about the lesson?	هل عندك سؤال عن الدرس؟
+238	أريد أن أتعلم لغة جديدة.	I want to learn a new language.	أريد أن أتعلم لغة جديدة.
+238	كم لغة تتكلم أنت؟	How many languages do you speak?	كم لغة تتكلم أنت؟
+239	اللغة العربية لغة جميلة.	Arabic is a beautiful language.	اللغة العربية لغة جميلة.
+239	هل تتكلم العربية جيدا؟	Do you speak Arabic well?	هل تتكلم العربية جيدا؟
+240	لم أفهم هذه الكلمة.	I didn't understand this word.	لم أفهم هذه الكلمة.
+240	اكتب هذه الكلمة على الورقة.	Write this word on the paper.	اكتب هذه الكلمة على الورقة.
+241	الدرس اليوم طويل جدا.	Today's lesson is very long.	الدرس اليوم طويل جدا.
+241	عندنا درس في الصباح.	We have a lesson in the morning.	عندنا درس في الصباح.
+242	لا توجد مشكلة، أنا هنا.	No problem, I'm here.	لا توجد مشكلة، أنا هنا.
+242	عندي مشكلة في سيارتي.	I have a problem with my car.	عندي مشكلة في سيارتي.
+243	كيف حال أسرتك اليوم؟	How is your family today?	كيف حال أسرتك اليوم؟
+243	كيف حالك؟ أنا بخير.	How are you? I'm fine.	كيف حالك؟ أنا بخير.
+244	أنا بخير، شكرا لك.	I'm fine, thank you.	أنا بخير، شكرا لك.
+244	أمي بخير الآن، شكرا.	My mother is well now, thanks.	أمي بخير الآن، شكرا.
+245	هذا بيت كبير وجميل.	This is a big, beautiful house.	هذا بيت كبير وجميل.
+245	القاهرة أكبر مدينة في مصر.	Cairo is the biggest city in Egypt.	القاهرة أكبر مدينة في مصر.	القاهرة, مصر
+246	عندي سيارة صغيرة وقديمة.	I have a small, old car.	عندي سيارة صغيرة وقديمة.
+246	أختي أصغر مني بسنة.	My sister is a year younger than me.	أختي أصغر مني بسنة.
+247	هل هذا كتاب جديد؟	Is this a new book?	هل هذا كتاب جديد؟
+247	عندنا مدرس جديد هذا الشهر.	We have a new teacher this month.	عندنا مدرس جديد هذا الشهر.
+248	هذا البيت قديم جدا.	This house is very old.	هذا البيت قديم جدا.
+248	سيارة أبي قديمة لكن جيدة.	My father's car is old but good.	سيارة أبي قديمة لكن جيدة.
+249	هذه المدينة جميلة جدا.	This city is very beautiful.	هذه المدينة جميلة جدا.
+249	البحر أجمل في الصباح.	The sea is more beautiful in the morning.	البحر أجمل في الصباح.
+250	هذا مطعم جيد جدا.	This is a very good restaurant.	هذا مطعم جيد جدا.
+250	أنت طالب جيد جدا.	You are a very good student.	أنت طالب جيد جدا.
+251	هذا الطعام سيئ جدا.	This food is very bad.	هذا الطعام سيئ جدا.
+251	كان يوما سيئا في العمل.	It was a bad day at work.	كان يوما سيئا في العمل.
+252	هذا الشارع طويل جدا.	This street is very long.	هذا الشارع طويل جدا.
+252	أخي الكبير أطول مني.	My older brother is taller than me.	أخي الكبير أطول مني.
+253	كان الدرس قصيرا اليوم.	The lesson was short today.	كان الدرس قصيرا اليوم.
+253	أختي الصغيرة قصيرة جدا.	My little sister is very short.	أختي الصغيرة قصيرة جدا.
+254	الصيف حار في مصر.	Summer is hot in Egypt.	الصيف حار في مصر.	مصر
+254	هذا الشاي حار جدا.	This tea is very hot.	هذا الشاي حار جدا.
+255	الطقس بارد جدا في الشتاء.	It's very cold in winter.	الطقس بارد جدا في الشتاء.
+255	الغرفة باردة، أغلق النافذة.	The room is cold, close the window.	الغرفة باردة، أغلق النافذة.
+256	أنا سعيد جدا اليوم.	I'm very happy today.	أنا سعيد جدا اليوم.
+256	كانت أمي سعيدة بالهدية.	My mother was happy with the present.	كانت أمي سعيدة بالهدية.
+257	كان الطفل حزينا لأن كلبه مريض.	The child was sad because his dog was ill.	كان الطفل حزينا لأن كلبه مريض.
+257	أختي حزينة جدا اليوم.	My sister is very sad today.	أختي حزينة جدا اليوم.
+258	أنا متعب جدا بعد العمل.	I'm very tired after work.	أنا متعب جدا بعد العمل.
+258	كانت أمي متعبة أمس.	My mother was tired yesterday.	كانت أمي متعبة أمس.
+259	هل أنت جائع الآن؟	Are you hungry now?	هل أنت جائع الآن؟
+259	الأطفال جائعون، لنأكل الآن.	The children are hungry, let's eat now.	الأطفال جائعون، لنأكل الآن.
+260	أنا عطشان، أريد الماء.	I'm thirsty, I want some water.	أنا عطشان، أريد الماء.
+260	هل أنت عطشان بعد الرياضة؟	Are you thirsty after exercising?	هل أنت عطشان بعد الرياضة؟
+261	هذا الدرس سهل جدا.	This lesson is very easy.	هذا الدرس سهل جدا.
+261	اللغة العربية ليست سهلة.	Arabic isn't easy.	اللغة العربية ليست سهلة.
+262	هذا سؤال صعب جدا.	This is a very difficult question.	هذا سؤال صعب جدا.
+262	العمل صعب لكن جميل.	The work is hard but nice.	العمل صعب لكن جميل.
+263	هذا المطعم غال جدا.	This restaurant is very expensive.	هذا المطعم غال جدا.
+263	السيارة الجديدة غالية جدا.	The new car is very expensive.	السيارة الجديدة غالية جدا.
+264	الفاكهة رخيصة في الصيف.	Fruit is cheap in summer.	الفاكهة رخيصة في الصيف.
+264	هذا السوق أرخص من ذلك.	This market is cheaper than that one.	هذا السوق أرخص من ذلك.
+265	السوق قريب من بيتنا.	The market is near our house.	السوق قريب من بيتنا.
+265	المحطة أقرب من المطار.	The station is closer than the airport.	المحطة أقرب من المطار.
+266	المستشفى بعيد عن بيتنا.	The hospital is far from our house.	المستشفى بعيد عن بيتنا.
+266	هل المطار بعيد عن هنا؟	Is the airport far from here?	هل المطار بعيد عن هنا؟
+267	هذا القطار سريع جدا.	This train is very fast.	هذا القطار سريع جدا.
+267	أمشي سريعا إلى المحطة.	I walk quickly to the station.	أمشي سريعا إلى المحطة.
+268	الحافلة اليوم بطيئة جدا.	The bus is very slow today.	الحافلة اليوم بطيئة جدا.
+268	حاسوبي قديم وبطيء جدا.	My computer is old and very slow.	حاسوبي قديم وبطيء جدا.
+269	أنا مشغول جدا اليوم.	I'm very busy today.	أنا مشغول جدا اليوم.
+269	أبي مشغول دائما في العمل.	My father is always busy at work.	أبي مشغول دائما في العمل.
+270	الطعام في هذا المطعم لذيذ.	The food in this restaurant is delicious.	الطعام في هذا المطعم لذيذ.
+270	كانت القهوة لذيذة جدا.	The coffee was very good.	كانت القهوة لذيذة جدا.
+271	هذا الدرس مهم جدا.	This lesson is very important.	هذا الدرس مهم جدا.
+271	عندي عمل مهم اليوم.	I have important work today.	عندي عمل مهم اليوم.
+272	هذه أول مرة أسافر فيها.	This is the first time I've travelled.	هذه أول مرة أسافر فيها.
+272	أسكن في الشارع الأول.	I live on the first street.	أسكن في الشارع الأول.
+273	هل عندك لون آخر؟	Do you have another colour?	هل عندك لون آخر؟
+273	أريد غرفة أخرى من فضلك.	I'd like another room, please.	أريد غرفة أخرى من فضلك.
+274	في المدينة سيارات كثيرة.	There are a lot of cars in the city.	في المدينة سيارات كثيرة.
+274	أحب الشاي أكثر من القهوة.	I like tea more than coffee.	أحب الشاي أكثر من القهوة.
+275	عندي وقت قليل اليوم.	I have little time today.	عندي وقت قليل اليوم.
+275	أتكلم العربية قليلا فقط.	I only speak a little Arabic.	أتكلم العربية قليلا فقط.
+276	أنا مريض ولا أستطيع أن أعمل.	I'm ill and can't work.	أنا مريض ولا أستطيع أن أعمل.
+276	كانت أختي مريضة أمس.	My sister was ill yesterday.	كانت أختي مريضة أمس.
+277	هل ممكن أن تساعدني؟	Could you help me?	هل ممكن أن تساعدني؟
+277	ممكن أن نذهب غدا.	We could go tomorrow.	ممكن أن نذهب غدا.
+278	آسف، لا أعرف أين المحطة.	Sorry, I don't know where the station is.	آسف، لا أعرف أين المحطة.
+278	أنا آسفة، لم أفهم.	I'm sorry (f.), I didn't understand.	أنا آسفة، لم أفهم.
+279	القطة البيضاء الصغيرة لأختي.	The little white cat is my sister's.	القطة البيضاء الصغيرة لأختي.
+279	لبست ملابس بيضاء اليوم.	I wore white clothes today.	لبست ملابس بيضاء اليوم.
+280	الكلب الأسود كبير جدا.	The black dog is very big.	الكلب الأسود كبير جدا.
+280	حقيبتي سوداء وجديدة جدا.	My bag is black and brand new.	حقيبتي سوداء وجديدة جدا.
+281	أكلت تفاحة حمراء كبيرة.	I ate a big red apple.	أكلت تفاحة حمراء كبيرة.
+281	عندي قلم أحمر وقلم أزرق.	I have a red pen and a blue pen.	عندي قلم أحمر وقلم أزرق.
+282	أحب اللون الأزرق كثيرا.	I really like the colour blue.	أحب اللون الأزرق كثيرا.
+282	البحر أزرق وجميل اليوم.	The sea is blue and beautiful today.	البحر أزرق وجميل اليوم.
+283	انتظر دقيقة واحدة من فضلك.	Wait one minute, please.	انتظر دقيقة واحدة من فضلك.
+283	عندنا سيارة واحدة فقط.	We have only one car.	عندنا سيارة واحدة فقط.
+284	واحد واثنان وثلاثة وأربعة.	One, two, three and four.	واحد واثنان وثلاثة وأربعة.
+284	كم أخا عندك؟ اثنان.	How many brothers do you have? Two.	كم أخا عندك؟ اثنان.
+285	عندي ثلاثة كتب جديدة.	I have three new books.	عندي ثلاثة كتب جديدة.
+285	انتظرت ثلاث ساعات في المطار.	I waited three hours at the airport.	انتظرت ثلاث ساعات في المطار.
+286	نحن أربعة أشخاص في الأسرة.	There are four of us in the family.	نحن أربعة أشخاص في الأسرة.
+286	أعمل أربع ساعات كل يوم.	I work four hours every day.	أعمل أربع ساعات كل يوم.
+287	في الغرفة خمسة أشخاص.	There are five people in the room.	في الغرفة خمسة أشخاص.
+287	عندي خمسة إخوة وأخت واحدة.	I have five brothers and one sister.	عندي خمسة إخوة وأخت واحدة.
+288	عندي ستة أقلام في حقيبتي.	I have six pens in my bag.	عندي ستة أقلام في حقيبتي.
+288	اشتريت ست تفاحات من السوق.	I bought six apples at the market.	اشتريت ست تفاحات من السوق.
+289	في الأسبوع سبعة أيام.	There are seven days in a week.	في الأسبوع سبعة أيام.
+289	قرأت سبعة كتب في العطلة.	I read seven books during the holiday.	قرأت سبعة كتب في العطلة.
+290	في المدرسة ثمانية مدرسين.	There are eight teachers at the school.	في المدرسة ثمانية مدرسين.
+290	عملت ثماني ساعات اليوم.	I worked eight hours today.	عملت ثماني ساعات اليوم.
+291	اشتريت تسعة أقلام للمدرسة.	I bought nine pens for school.	اشتريت تسعة أقلام للمدرسة.
+291	بعد تسع دقائق يصل القطار.	The train arrives in nine minutes.	بعد تسع دقائق يصل القطار.
+292	عندي عشرة أصدقاء في الجامعة.	I have ten friends at university.	عندي عشرة أصدقاء في الجامعة.
+292	انتظرت عشر دقائق في المحطة.	I waited ten minutes at the station.	انتظرت عشر دقائق في المحطة.
+293	في مدرستنا مئة طالب.	There are a hundred students at our school.	في مدرستنا مئة طالب.
+293	في هذا الشارع مئة بيت.	There are a hundred houses on this street.	في هذا الشارع مئة بيت.
+294	أكلت نصف التفاحة فقط.	I only ate half the apple.	أكلت نصف التفاحة فقط.
+294	نصف الطلاب في المكتبة.	Half the students are in the library.	نصف الطلاب في المكتبة.
+295	مرحبا، اسمي سارة وأنا طالبة.	Hello, my name is Sara and I'm a student.	مرحبا، اسمي سارة وأنا طالبة.	سارة
+295	مرحبا، هل أنت مشغول الآن؟	Hello, are you busy now?	مرحبا، هل أنت مشغول الآن؟
+296	شكرا، الطعام لذيذ جدا.	Thank you, the food is delicious.	شكرا، الطعام لذيذ جدا.
+296	شكرا، لا أريد شيئا.	Thanks, I don't want anything.	شكرا، لا أريد شيئا.
+297	شكرا لك! عفوا، لا مشكلة.	Thank you! — You're welcome, no problem.	شكرا لك! عفوا، لا مشكلة.
+297	عفوا، أين محطة القطار؟	Excuse me, where is the train station?	عفوا، أين محطة القطار؟
+298	مع السلامة، أراك غدا.	Goodbye, see you tomorrow.	مع السلامة، أراك غدا.
+298	قلت لأمي مع السلامة.	I said goodbye to my mother.	قلت لأمي مع السلامة.
+299	من فضلك، أين المطعم؟	Excuse me, where is the restaurant?	من فضلك، أين المطعم؟
+299	اكتب اسمك هنا من فضلك.	Write your name here, please.	اكتب اسمك هنا من فضلك.
+300	صباح الخير، كيف حالك؟	Good morning, how are you?	صباح الخير، كيف حالك؟
+300	صباح الخير، هل تريد قهوة؟	Good morning, would you like some coffee?	صباح الخير، هل تريد قهوة؟

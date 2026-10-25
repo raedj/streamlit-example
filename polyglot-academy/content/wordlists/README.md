@@ -33,7 +33,7 @@ Language-specific `extra` keys (required ones in bold):
 |---|---|
 | `rank` | Rank of the word the example illustrates |
 | `sentence` | 4–12 words (Mandarin: 4–24 characters), everyday and natural, using the word in its most common sense |
-| `en`, `ar` | Translations (for English the `en` column repeats the sentence) |
+| `en`, `ar` | Translations (for English the `en` column, for Arabic the `ar` column repeats the sentence) |
 | `names` | Comma-separated proper names in the sentence; they are ignored by the checks |
 
 Levels 1–3 need at least two examples per word, higher levels at least one.

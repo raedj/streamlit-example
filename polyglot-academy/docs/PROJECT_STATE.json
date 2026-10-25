@@ -170,14 +170,20 @@
           1
         ],
         "last_rank": 300
+      },
+      "ar": {
+        "levels": [
+          1
+        ],
+        "last_rank": 300
       }
     },
     "resume_at": {
-      "language": "ar",
+      "language": "tr",
       "level": 1,
       "next_rank": 1,
-      "note": "Level 1 for the remaining languages first (planned order: ar, tr, ur, ms), then level 2 for all."
+      "note": "Level 1 for the remaining languages first (planned order: tr, ur, ms), then level 2 for all."
     },
-    "size_per_level": "about 41-59 KB compressed in the APK per level (measured: en 59 KB, es 43 KB, fr 41 KB; zh not measured)"
+    "size_per_level": "about 41-59 KB compressed in the APK per level (measured: en 59 KB, es 43 KB, fr 41 KB; zh and ar not measured)"
   }
 }

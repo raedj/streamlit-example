@@ -108,6 +108,15 @@ class WordListTest {
         val ar = listOf(entry(LanguageCode.ARABIC, 1, "كِتَاب"), entry(LanguageCode.ARABIC, 2, "مَدْرَسَة"))
         val ma = WordMatcher(LanguageCode.ARABIC, ar)
         assertTrue(ma.contains(ar[0], "قرأتُ الكتابَ أمس.") && ma.contains(ar[0], "وبكتابه") && ma.contains(ar[1], "ذهبت إلى المدرسة"))
+        val go = WordEntry(LanguageCode.ARABIC, 3, "ar_w_go", "ذَهَبَ", PartOfSpeech.VERB, "t", Gloss("go", "ذهب"), null, emptyList(),
+            mapOf("present" to "يَذْهَبُ"), null, emptyList())
+        val book = WordEntry(LanguageCode.ARABIC, 4, "ar_w_book", "كِتَاب", PartOfSpeech.NOUN, "t", Gloss("book", "كتاب"), null, emptyList(),
+            mapOf("plural" to "كُتُب"), null, emptyList())
+        val mg = WordMatcher(LanguageCode.ARABIC, listOf(go, book, entry(LanguageCode.ARABIC, 5, "كَبِير")))
+        assertTrue(listOf("سأذهب غدًا", "نذهب معًا", "ذهبوا").all { mg.contains(go, it) }, "present prefixes and past endings")
+        assertTrue(mg.contains(book, "قرأت الكتب") && mg.contains(book, "كتبهم"), "broken plural, also with a pronoun")
+        assertTrue(mg.candidates("الكبيرة").contains("كبير"), "feminine ending")
+        assertFalse(mg.contains(book, "ذهبوا إلى البيت"))
 
         val tr = listOf(entry(LanguageCode.TURKISH, 1, "ev"), entry(LanguageCode.TURKISH, 2, "gelmek"))
         val mt = WordMatcher(LanguageCode.TURKISH, tr)

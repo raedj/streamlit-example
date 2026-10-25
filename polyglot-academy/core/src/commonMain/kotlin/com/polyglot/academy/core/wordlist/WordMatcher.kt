@@ -91,6 +91,8 @@ class WordMatcher(private val language: LanguageCode, entries: List<WordEntry>) 
     private fun stems(e: WordEntry): List<String> = buildList {
         e.extra["stem"]?.let { add(it) }
         if (language == LanguageCode.TURKISH && (e.term.endsWith("mek") || e.term.endsWith("mak")) && e.term.length > 4) add(e.term.dropLast(3))
+        // Broken plurals and the present stem cannot be derived by rule.
+        if (language == LanguageCode.ARABIC) listOf("plural", "present").mapNotNull { e.extra[it] }.forEach { add(it) }
     }
 
     private fun rawTokens(text: String): List<String> = when (language) {
@@ -148,17 +150,25 @@ class WordMatcher(private val language: LanguageCode, entries: List<WordEntry>) 
                 if (base.endsWith("ve") && base.length > 3) add(base.dropLast(2) + "f")
             }
             LanguageCode.ARABIC -> {
-                val stripped = mutableListOf(t)
+                val stripped = linkedSetOf(t)
                 // Clitics stack (و + ب + ال), so strip in two passes.
                 repeat(2) {
                     for (s in stripped.toList()) for (p in listOf("وال", "بال", "فال", "كال", "لل", "ال", "و", "ف", "ب", "ل", "ك", "س")) {
                         if (s.startsWith(p) && s.length - p.length >= 2) stripped += s.removePrefix(p)
                     }
                 }
-                for (s in stripped.toList()) for (suf in listOf("هما", "كما", "ها", "هم", "هن", "كم", "كن", "نا", "ني", "ات", "ون", "ين", "ان", "ه", "ك", "ي", "ت", "ا", "و")) {
-                    if (s.endsWith(suf) && s.length - suf.length >= 2) stripped += s.removeSuffix(suf)
+                // Endings stack too (كتبته = كتب + ت + ه).
+                repeat(2) {
+                    for (s in stripped.toList()) for (suf in listOf("هما", "كما", "ها", "هم", "هن", "كم", "كن", "نا", "ني", "ات", "ون", "ين", "ان", "وا", "تم", "ه", "ك", "ي", "ت", "ا", "و")) {
+                        if (s.endsWith(suf) && s.length - suf.length >= 2) stripped += s.removeSuffix(suf)
+                    }
                 }
-                for (s in stripped.toList()) if (s.endsWith("ت") && s.length > 2) stripped += s.dropLast(1) + "ة"
+                for (s in stripped.toList()) {
+                    if (s.endsWith("ت") && s.length > 2) stripped += s.dropLast(1) + "ة"
+                    if (s.endsWith("ة") && s.length > 2) stripped += s.dropLast(1)
+                }
+                // Present tense: أذهب, تذهب, نذهب match the يـ form stored in the entry's "present" field.
+                for (s in stripped.toList()) if (s.length >= 3 && s[0] in "اتن") stripped += "ي" + s.drop(1)
                 addAll(stripped.drop(1))
             }
             LanguageCode.MALAY -> {
