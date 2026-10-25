@@ -72,6 +72,21 @@ CONV_SUMMARY_CORRECTIONS ¦ Corrections to review ¦ تصحيحات للمراج
 CONV_SUMMARY_NO_CORRECTIONS ¦ No corrections this time. ¦ لا تصحيحات هذه المرة.
 CONV_SUMMARY_SAVED ¦ {0} phrase saved|{0} phrases saved ¦ لم تُحفظ عبارات|حُفظت عبارة واحدة|حُفظت عبارتان|حُفظت {0} عبارات|حُفظت {0} عبارة|حُفظت {0} عبارة
 CONV_SUMMARY_SCENARIO_DONE ¦ Scenario completed ¦ اكتمل الموقف
+FREE_TALK_TITLE ¦ Talk about anything ¦ تحدّث في أي موضوع
+FREE_TALK_BODY ¦ Choose a topic or type your own. Your AI tutor talks with you about it, corrects your mistakes as you go and adapts to your level. ¦ اختر موضوعًا أو اكتب موضوعك. يتحدث معك معلّمك الذكي فيه، ويصحّح أخطاءك أثناء الحديث، ويتكيّف مع مستواك.
+FREE_TALK_TOPIC_LABEL ¦ Topic (optional) ¦ الموضوع (اختياري)
+FREE_TALK_START ¦ Start conversation ¦ ابدأ المحادثة
+FREE_TALK_NOTE ¦ Needs an AI provider (OpenAI, Gemini, Claude, DeepSeek or your own local model) in Settings. Without one, the offline tutor follows a short practice script. ¦ يتطلب مزوّد ذكاء اصطناعي (OpenAI أو Gemini أو Claude أو DeepSeek أو نموذجك المحلي) في الإعدادات. دونه يتبع المعلّم غير المتصل نصًّا تدريبيًا قصيرًا.
+FREE_TOPIC_1 ¦ My weekend ¦ عطلة نهاية الأسبوع
+FREE_TOPIC_2 ¦ Travel plans ¦ خطط السفر
+FREE_TOPIC_3 ¦ Food and cooking ¦ الطعام والطبخ
+FREE_TOPIC_4 ¦ Films and series ¦ الأفلام والمسلسلات
+FREE_TOPIC_5 ¦ Sport ¦ الرياضة
+FREE_TOPIC_6 ¦ My job ¦ عملي
+FREE_TOPIC_7 ¦ Technology ¦ التكنولوجيا
+FREE_TOPIC_8 ¦ Culture and traditions ¦ الثقافة والتقاليد
+CONV_TOPIC ¦ Topic: {0} ¦ الموضوع: {0}
+CONV_FREE_NEEDS_AI ¦ Free conversation on any topic needs an AI tutor. Right now you are talking to the offline tutor, which can only follow a short script. ¦ تحتاج المحادثة الحرة في أي موضوع إلى معلّم ذكاء اصطناعي. أنت الآن تتحدث مع المعلّم غير المتصل الذي يتبع نصًّا قصيرًا فقط.
 CONV_SUMMARY_NEW ¦ New conversation ¦ محادثة جديدة
 MISSION_TASKS_DONE ¦ Tasks done ¦ أُنجزت المهام
 MISSION_TARGET ¦ Aim for at least {0} turns of about {1}+ words. ¦ استهدف {0} أدوار على الأقل بنحو {1} كلمات أو أكثر.

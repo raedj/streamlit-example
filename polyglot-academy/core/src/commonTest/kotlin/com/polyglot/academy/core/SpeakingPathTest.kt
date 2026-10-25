@@ -46,7 +46,7 @@ class SpeakingPathTest {
         val m = SpeakingPath.of("b2_debate")!!
         val prompt = TutorPromptBuilder.systemPrompt(TutorContext(TutorRoster.tutors.first(), LanguageCode.SPANISH, LanguageCode.ARABIC, CefrLevel.B2,
             CorrectionIntensity.BALANCED, null, true, mission = m))
-        assertTrue("Give two advantages" in prompt && TutorPromptBuilder.MISSION_START in prompt && "\"mission_complete\"" in prompt, prompt)
+        assertTrue("Give two advantages" in prompt && TutorPromptBuilder.START_SIGNAL in prompt && "\"mission_complete\"" in prompt, prompt)
         assertTrue("counter-arguments" in prompt, "level coaching missing")
         val plain = TutorPromptBuilder.systemPrompt(TutorContext(TutorRoster.tutors.first(), LanguageCode.SPANISH, LanguageCode.ARABIC, CefrLevel.A1,
             CorrectionIntensity.BALANCED, null, true))

@@ -28,7 +28,8 @@ Common behaviour: loading → `LoadingPlaceholder`; failure → `StateMessage` w
 | Scenarios | Role-play list sorted by closeness to level | | |
 | Travel phrasebook | Six situations (essentials, emergencies, restaurant, hotel, transport, sightseeing), phrase + reading + meaning, audio, add to reviews | — | Built from the travel lessons |
 | Speaking path | Speaking measurements (median words/turn, longest turn, words per minute, spoken share, vocabulary variety, corrections, weekly chart), next mission, 5 levels × 6 missions with status | No data yet; all passed | Missions start a tutor conversation |
-| Conversation | Transcript, mic/typing, translations toggle, speed, save phrase, mission panel (goal, tasks, target), end → summary (incl. mission result and gaps) | Engine label (AI via X / offline scripted + reason), Listening/Thinking/Speaking/Failed, notices | Recording stops on leave |
+| Tutors | "Talk about anything" card (topic field + 8 suggestions, starts with the selected tutor), tutor cards | — | Needs-AI note |
+| Conversation | Topic pill and "needs an AI tutor" notice with a Set up AI action for free talk offline; transcript, mic/typing, translations toggle, speed, save phrase, mission panel (goal, tasks, target), end → summary (incl. mission result and gaps) | Engine label (AI via X / offline scripted + reason), Listening/Thinking/Speaking/Failed, notices | Recording stops on leave |
 | Placement test | Intro → adaptive questions (I don't know) → result range → accept/choose | History | Disclaimer |
 | Progress | Totals, study time (7/28 d), consistency heatmap, weekly accuracy, skill accuracy, memory estimate, review forecast, placement history, definitions | Empty state | Observed vs estimated labelled |
 | Me / profile | Name, languages (switch/add), goals, links | | |

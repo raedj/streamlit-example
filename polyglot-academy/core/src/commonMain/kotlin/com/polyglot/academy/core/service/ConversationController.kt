@@ -94,7 +94,12 @@ data class ConversationState(
     val missionConfirmed: Boolean = false,
     /** The word the speech engine reports it is saying now (null if the engine gives no progress). */
     val speakingWord: String? = null,
+    /** The topic of a free conversation the learner chose, if any. */
+    val topic: String? = null,
 ) {
+    /** Free conversation (no scenario or mission) without an AI tutor: the offline partner can only follow a short script. */
+    val freeTalkNeedsAi: Boolean get() = scenario == null && mission == null && engine is TutorEngineMode.Offline
+
     /** Offline, a mission without a matching built-in role-play can only be practised freely. */
     val missionNeedsAi: Boolean get() = mission != null && engine is TutorEngineMode.Offline && mission.offlineScenario(language) == null
 
@@ -123,12 +128,17 @@ class ConversationController(
     private val ids: IdGenerator,
     private val forceOffline: Boolean = false,
     private val mission: SpeakingMission? = null,
+    /** Free conversation on a topic the learner chose; the AI opens the conversation on it. */
+    topic: String? = null,
 ) {
-    private val _state = MutableStateFlow(ConversationState(ids.newId("conv"), tutor, language, scenario, mission = mission))
+    private val topic: String? = topic?.let { TutorPromptBuilder.cleanTopic(it) }
+    private val _state = MutableStateFlow(ConversationState(ids.newId("conv"), tutor, language, scenario, mission = mission, topic = this.topic))
     val state: StateFlow<ConversationState> = _state.asStateFlow()
 
     /** Stored with the conversation so progress (missions, scenarios) can be derived later. */
-    private val conversationKey: String? = mission?.conversationKey ?: scenario?.id
+    private val conversationKey: String? = mission?.conversationKey ?: scenario?.id ?: this.topic?.let { TOPIC_PREFIX + it }
+    /** Missions and chosen topics are opened by the AI itself, prompted by the start signal. */
+    private val aiOpensItself = mission != null || this.topic != null
     private val missionScenario: RolePlayScenario? = mission?.offlineScenario(language)
     private var speechStartedAt: Long? = null
     private var listenStartedAt: Long = 0
@@ -163,14 +173,14 @@ class ConversationController(
         session = study.startSession(language, SessionKind.CONVERSATION, conversationKey)
         val opening = when {
             engine is TutorEngineMode.Offline -> offline.opening()
-            mission != null -> aiMissionOpening() ?: offline.opening()
+            aiOpensItself -> aiSelfOpening() ?: if (mission != null) offline.opening() else aiOpening()
             else -> aiOpening()
         }
         addTutorTurn(opening, autoplay = settings.speech.autoPlayTutorReplies)
     }
 
     /** For a mission the AI opens in character; the start signal itself is not stored as a turn. */
-    private suspend fun aiMissionOpening(): TutorReply? = aiReply(listOf(com.polyglot.academy.core.ai.ChatMessage(com.polyglot.academy.core.ai.ChatRole.USER, TutorPromptBuilder.MISSION_START)))
+    private suspend fun aiSelfOpening(): TutorReply? = aiReply(listOf(com.polyglot.academy.core.ai.ChatMessage(com.polyglot.academy.core.ai.ChatRole.USER, TutorPromptBuilder.START_SIGNAL)))
 
     private suspend fun chooseEngine(): TutorEngineMode = when (val d = providers.route(AiCapability.CHAT, setOf(DataCategory.CONVERSATION_TEXT))) {
         is RouteDecision.Route -> {
@@ -238,10 +248,10 @@ class ConversationController(
 
     private suspend fun aiReply(override: List<com.polyglot.academy.core.ai.ChatMessage>? = null): TutorReply? {
         val s = _state.value
-        val ctx = TutorContext(tutor, language, explanationLanguage, level, profiles.currentProfile().correctionIntensity, scenario, s.showTranslations, mission = mission)
+        val ctx = TutorContext(tutor, language, explanationLanguage, level, profiles.currentProfile().correctionIntensity, scenario, s.showTranslations, mission = mission, topic = topic)
         val turns = TutorPromptBuilder.history(s.turns.filter { it.speaker != Speaker.SYSTEM }.map { (it.speaker == Speaker.LEARNER) to it.text })
         // A mission conversation always begins with the start signal, so the model sees why it spoke first.
-        val history = override ?: if (mission != null) listOf(com.polyglot.academy.core.ai.ChatMessage(com.polyglot.academy.core.ai.ChatRole.USER, TutorPromptBuilder.MISSION_START)) + turns else turns
+        val history = override ?: if (aiOpensItself) listOf(com.polyglot.academy.core.ai.ChatMessage(com.polyglot.academy.core.ai.ChatRole.USER, TutorPromptBuilder.START_SIGNAL)) + turns else turns
         val outcome = providers.execute(AiCapability.CHAT, ChatRequest(TutorPromptBuilder.systemPrompt(ctx), history, setOf(DataCategory.CONVERSATION_TEXT), expectJson = true))
         return when (outcome) {
             is AiOutcome.Success -> {
@@ -362,5 +372,10 @@ class ConversationController(
                 s.savedPhraseCount, scenarioCompleted = this@ConversationController::offline.isInitialized && offline.isFinished, durationSeconds = duration, unlockedAchievements = unlocked,
                 missionResult = missionResult))
         }
+    }
+
+    companion object {
+        /** Stored as the conversation key of a chosen-topic conversation. */
+        const val TOPIC_PREFIX = "topic:"
     }
 }

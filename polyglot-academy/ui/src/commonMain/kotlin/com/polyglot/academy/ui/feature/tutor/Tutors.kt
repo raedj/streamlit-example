@@ -38,6 +38,14 @@ import com.polyglot.academy.ui.designsystem.TutorAvatar
 import com.polyglot.academy.ui.i18n.K
 import com.polyglot.academy.ui.i18n.Labels
 import com.polyglot.academy.ui.i18n.LocalStrings
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.setValue
+import com.polyglot.academy.core.service.ConversationController
+import com.polyglot.academy.core.tutor.TutorPromptBuilder
+import com.polyglot.academy.ui.designsystem.AppTextField
+import com.polyglot.academy.ui.designsystem.ChipGroup
 import com.polyglot.academy.ui.navigation.Route
 import com.polyglot.academy.ui.navigation.Tab
 import kotlinx.coroutines.launch
@@ -49,8 +57,32 @@ fun TutorsScreen() {
     val lang = app.profile.activeLearningLanguage
     ScrollScreen(s[K.TUTORS_TITLE], showBack = false, tab = Tab.TUTORS) {
         Text(s.f(K.TUTORS_FOR, Labels.language(s, lang)), style = MaterialTheme.typography.bodyLarge, color = PolyglotTheme.colors.textSecondary)
+        FreeTalkCard()
         TutorRoster.forLanguage(lang).forEach { t -> TutorCard(t, selected = t.id == app.profile.preferredTutorId) { app.nav.push(Route.TutorDetail(t.id)) } }
         Text(s[K.TUTOR_AVATAR_NOTE], style = MaterialTheme.typography.bodySmall, color = PolyglotTheme.colors.textMuted)
+    }
+}
+
+/** Start a conversation with the AI tutor about any topic the learner types or picks. */
+@Composable
+private fun FreeTalkCard() {
+    val app = LocalApp.current
+    val s = LocalStrings.current
+    val c = PolyglotTheme.colors
+    val lang = app.profile.activeLearningLanguage
+    var topic by rememberSaveable { mutableStateOf("") }
+    val suggestions = (1..8).map { s[K.valueOf("FREE_TOPIC_$it")] }
+    PolyCard {
+        Text(s[K.FREE_TALK_TITLE], style = MaterialTheme.typography.titleMedium)
+        Text(s[K.FREE_TALK_BODY], style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
+        AppTextField(topic, { topic = it.take(120) }, s[K.FREE_TALK_TOPIC_LABEL])
+        ChipGroup(suggestions, setOf(topic), { it }, { topic = it })
+        PrimaryButton(s[K.FREE_TALK_START], {
+            val tutor = TutorRoster.forLanguage(lang).let { list -> list.firstOrNull { it.id == app.profile.preferredTutorId } ?: list.first() }
+            val key = TutorPromptBuilder.cleanTopic(topic)?.let { ConversationController.TOPIC_PREFIX + it }
+            app.nav.push(Route.Conversation(tutor.id, key))
+        }, Modifier.fillMaxWidth())
+        Text(s[K.FREE_TALK_NOTE], style = MaterialTheme.typography.bodySmall, color = c.textMuted)
     }
 }
 

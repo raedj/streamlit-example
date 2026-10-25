@@ -101,9 +101,10 @@ fun ConversationScreen(tutorId: String, scenarioId: String?, offline: Boolean) {
     val lang = app.profile.activeLearningLanguage
     if (tutor == null) { StateMessage(s[K.ERROR_TITLE], s[K.ERROR_BODY], action = s[K.BACK], onAction = { app.nav.pop() }); return }
     val mission = SpeakingPath.fromConversationKey(scenarioId)
+    val topic = scenarioId?.takeIf { it.startsWith(ConversationController.TOPIC_PREFIX) }?.removePrefix(ConversationController.TOPIC_PREFIX)
     val scenario = scenarioId?.let { id -> Curriculum.of(lang).scenarios.firstOrNull { it.id == id } }
     val scope = rememberCoroutineScope()
-    val controller = remember(tutorId, scenarioId, lang, offline) { app.services.conversation(scope, lang, tutor, scenario, offline, mission) }
+    val controller = remember(tutorId, scenarioId, lang, offline) { app.services.conversation(scope, lang, tutor, scenario, offline, mission, topic) }
     LaunchedEffect(controller) { controller.start() }
     // Recording and playback must stop as soon as the learner leaves the conversation.
     DisposableEffect(controller) { onDispose { controller.cancelVoice() } }
@@ -133,10 +134,24 @@ fun ConversationScreen(tutorId: String, scenarioId: String?, offline: Boolean) {
             Column(Modifier.fillMaxSize().padding(padding).imePadding()) {
                 EngineHeader(state, controller)
                 state.mission?.let { MissionPanel(state, it) }
+                FreeTalkNotice(state)
                 Transcript(state, controller, lang, Modifier.weight(1f))
                 InputBar(state, controller, lang)
             }
         }
+    }
+}
+
+/** Shows the chosen topic, and says plainly when free conversation is running without an AI tutor. */
+@Composable
+private fun FreeTalkNotice(state: ConversationState) {
+    val app = LocalApp.current
+    val s = LocalStrings.current
+    if (state.topic == null && !state.freeTalkNeedsAi) return
+    ContentColumn {
+        state.topic?.let { Pill(s.f(K.CONV_TOPIC, it)) }
+        if (state.freeTalkNeedsAi) Banner(BannerKind.INFO, s[K.CONV_FREE_NEEDS_AI], action = s[K.CONV_SET_UP_AI],
+            onAction = { app.nav.push(Route.SettingsPage(SettingsSection.PROVIDERS)) })
     }
 }
 
@@ -423,7 +438,8 @@ private fun SummaryView(state: ConversationState, lang: LanguageCode) {
                     if (cr.explanation.isNotBlank()) Text(cr.explanation, style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
                 }
             }
-            PrimaryButton(s[K.CONV_SUMMARY_NEW], { app.nav.replace(Route.Conversation(state.tutor.id, state.mission?.conversationKey ?: state.scenario?.id)) }, Modifier.fillMaxWidth())
+            val again = state.mission?.conversationKey ?: state.scenario?.id ?: state.topic?.let { ConversationController.TOPIC_PREFIX + it }
+            PrimaryButton(s[K.CONV_SUMMARY_NEW], { app.nav.replace(Route.Conversation(state.tutor.id, again)) }, Modifier.fillMaxWidth())
             if (state.mission != null) SecondaryButton(s[K.SPEAKING_TITLE], { app.nav.replace(Route.SpeakingPath) }, Modifier.fillMaxWidth())
             SecondaryButton(s[K.SUMMARY_HOME], { app.nav.home() }, Modifier.fillMaxWidth())
         }

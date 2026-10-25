@@ -238,14 +238,14 @@ class ServicesIntegrationTest {
         c.start(); waitFor { c.state.value.turns.isNotEmpty() }
         assertEquals("Hi! I'm new here. What's your name?", c.state.value.turns.first().text)
         val first = openai.requests.first()
-        assertEquals(com.polyglot.academy.core.tutor.TutorPromptBuilder.MISSION_START, first.messages.single().content)
+        assertEquals(com.polyglot.academy.core.tutor.TutorPromptBuilder.START_SIGNAL, first.messages.single().content)
         assertTrue("Say where you are from" in first.system)
         listOf("My name is Laila Hassan", "I am from Amman in Jordan", "I work as a nurse there", "I like my job very much").forEachIndexed { i, t ->
             c.sendText(t); waitFor { c.state.value.turns.size >= 3 + 2 * i }
         }
         assertTrue(c.state.value.missionConfirmed)
         // Later requests still start with the start signal, then the real conversation.
-        assertEquals(com.polyglot.academy.core.tutor.TutorPromptBuilder.MISSION_START, openai.requests.last().messages.first().content)
+        assertEquals(com.polyglot.academy.core.tutor.TutorPromptBuilder.START_SIGNAL, openai.requests.last().messages.first().content)
         c.end(); waitFor { c.state.value.summary != null }
         assertTrue(c.state.value.summary!!.missionResult!!.passed)
         val a1 = app.speaking.progress(LanguageCode.ENGLISH).first()
@@ -270,6 +270,32 @@ class ServicesIntegrationTest {
         assertFalse(result.passed)
         assertTrue(com.polyglot.academy.core.speaking.MissionGap.TASKS_NOT_CONFIRMED in result.gaps)
         assertTrue(store.conversations(LanguageCode.FRENCH).first().single().scenarioId == mission.conversationKey)
+    }
+
+    @Test fun aiTutorTalksAboutAChosenTopicAndCorrectsMistakes() = runBlocking<Unit> {
+        enroll(LanguageCode.SPANISH, CefrLevel.A2); enableCloud()
+        openai.replies += Result.success("""{"reply":"¡Qué bien! ¿Qué deporte te gusta más?"}""")
+        openai.replies += Result.success("""{"reply":"¡El fútbol es genial! ¿Juegas tú también?","corrections":[{"original":"Me gusta mucho el futbol y juego cada semanas","corrected":"Me gusta mucho el fútbol y juego cada semana","explanation":"cada + مفرد: cada semana","severity":"moderate"}]}""")
+        val c = app.conversation(scope, LanguageCode.SPANISH, TutorRoster.byId("emma")!!, null, topic = "el deporte\n")
+        c.start(); waitFor { c.state.value.turns.isNotEmpty() }
+        assertEquals("¡Qué bien! ¿Qué deporte te gusta más?", c.state.value.turns.first().text)
+        assertEquals("el deporte", c.state.value.topic)
+        assertEquals(com.polyglot.academy.core.tutor.TutorPromptBuilder.START_SIGNAL, openai.requests.first().messages.single().content)
+        assertTrue("\"el deporte\"" in openai.requests.first().system)
+        c.sendText("Me gusta mucho el futbol y juego cada semanas")
+        waitFor { c.state.value.turns.size >= 3 }
+        assertEquals("Me gusta mucho el fútbol y juego cada semana", c.state.value.turns[1].corrections.single().corrected)
+        assertFalse(c.state.value.freeTalkNeedsAi)
+        c.end(); waitFor { c.state.value.summary != null }
+        assertEquals("topic:el deporte", store.conversations(LanguageCode.SPANISH).first().single().scenarioId)
+    }
+
+    @Test fun freeTalkWithoutAiSaysSoInsteadOfPretending() = runBlocking<Unit> {
+        enroll(LanguageCode.FRENCH)
+        val c = app.conversation(scope, LanguageCode.FRENCH, TutorRoster.byId("emma")!!, null, topic = "le cinéma")
+        c.start(); waitFor { c.state.value.turns.isNotEmpty() }
+        assertTrue(c.state.value.freeTalkNeedsAi)
+        assertIs<TutorEngineMode.Offline>(c.state.value.engine)
     }
 
     @Test fun speechUnavailableShowsNoticeInsteadOfHanging() = runBlocking<Unit> {

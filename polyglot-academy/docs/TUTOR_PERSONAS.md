@@ -20,3 +20,10 @@ implementation level 2 (animated 2D vector); no lip-sync, no photorealism.
 All prompts additionally instruct: use the learner's CEFR estimate, the chosen correction
 intensity, separate stylistic alternatives, admit uncertainty, general-audience content, and
 return a JSON object (reply, translation, corrections, alternatives, vocabulary).
+
+## Free conversation
+Any tutor can hold an open conversation: the learner types a topic (or picks one of eight suggestions) on the
+Tutors tab, and the AI tutor opens the conversation on it, follows topic changes, corrects the learner in every
+reply (shown under the learner's sentence) and keeps its own turns short. The topic is sanitised (one line, no
+quotes, 120 characters) before it is quoted in the prompt. Without an AI provider the offline tutor can only follow
+a short script, and the conversation screen says so with a link to set up a provider.

@@ -44,6 +44,8 @@ data class TutorContext(
     val recentVocabulary: List<String> = emptyList(),
     val recurringDifficulties: List<String> = emptyList(),
     val mission: SpeakingMission? = null,
+    /** A topic the learner typed for a free conversation (already sanitised by [TutorPromptBuilder.cleanTopic]). */
+    val topic: String? = null,
 )
 
 /** Builds the system prompt sent to cloud/local models. Personality changes instructions, not just the name. */
@@ -88,9 +90,19 @@ object TutorPromptBuilder {
                 appendLine("Speaking mission (${m.level.label}): ${m.title.en}. ${m.brief}")
                 appendLine("The learner should: " + m.tasks.mapIndexed { i, t -> "${i + 1}) ${t.en}" }.joinToString("; ") + ".")
                 appendLine("Guide the conversation so the learner can do each task, without doing them for the learner.")
-                appendLine("If the first learner message is exactly \"$MISSION_START\", it is a signal from the app: open the conversation yourself in $target.")
+                appendLine("If the first learner message is exactly \"$START_SIGNAL\", it is a signal from the app: open the conversation yourself in $target.")
                 appendLine("Only when the learner has done every task, say so warmly and set \"mission_complete\" to true; otherwise keep it false.")
             }
+            if (ctx.mission == null && ctx.scenario == null) {
+                appendLine("This is a free conversation: talk about any topic the learner raises and follow changes of topic naturally. " +
+                    "Ask follow-up questions and share short opinions or facts when useful; say so when you are not sure. " +
+                    "Politely decline harmful or inappropriate topics and suggest another one.")
+                ctx.topic?.let {
+                    appendLine("The learner chose this topic: \"$it\". If the first learner message is exactly \"$START_SIGNAL\", it is a signal from the app: " +
+                        "open the conversation about this topic yourself in $target, with a question.")
+                }
+            }
+            appendLine("In every reply, first report the learner's errors in the corrections field as described above, then continue the conversation naturally in $target.")
             if (ctx.recentVocabulary.isNotEmpty()) appendLine("Try to reuse some recently studied words: ${ctx.recentVocabulary.take(10).joinToString()}.")
             if (ctx.recurringDifficulties.isNotEmpty()) appendLine("The learner often struggles with: ${ctx.recurringDifficulties.take(5).joinToString()}.")
             appendLine("Respond ONLY with a JSON object of this shape:")
@@ -99,8 +111,12 @@ object TutorPromptBuilder {
         }
     }
 
-    /** Sent as the first user message so the AI opens a speaking mission itself. */
-    const val MISSION_START = "[start mission]"
+    /** Sent as the first user message so the AI opens the conversation itself (missions, chosen topics). */
+    const val START_SIGNAL = "[start conversation]"
+
+    /** A learner-typed topic made safe to quote in the prompt: one line, no quotes, at most 120 characters. */
+    fun cleanTopic(raw: String): String? =
+        raw.replace(Regex("[\\r\\n\\t\"|]+"), " ").replace(Regex(" {2,}"), " ").trim().take(120).ifBlank { null }
 
     fun history(turns: List<Pair<Boolean, String>>, maxTurns: Int = 16): List<ChatMessage> =
         turns.takeLast(maxTurns).map { (isLearner, text) -> ChatMessage(if (isLearner) ChatRole.USER else ChatRole.ASSISTANT, text) }

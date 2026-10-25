@@ -50,11 +50,11 @@
     }
   },
   "last_tests": {
-    "total": 174,
+    "total": 178,
     "failed": 0,
     "modules": {
-      "core": 127,
-      "data": 35,
+      "core": 129,
+      "data": 37,
       "uicore": 12
     },
     "not_run": [
@@ -97,6 +97,7 @@
     "Charts: tap-to-inspect tooltips; avatar mouth shapes driven by TTS word progress",
     "Banking and finance track (8 words, lesson, disclaimer) for Spanish, French, Arabic, Mandarin",
     "Android targets aligned to JVM 17; local build guide",
-    "Daily-life and travel pack for all five languages: 6 lessons, 48 phrases and 3 role-plays each; travel phrasebook screen; pinyin punctuation fix"
+    "Daily-life and travel pack for all five languages: 6 lessons, 48 phrases and 3 role-plays each; travel phrasebook screen; pinyin punctuation fix",
+    "Free conversation on any topic with the AI tutor (topic card, AI opens on the topic, correction in every reply, honest offline notice)"
   ]
 }

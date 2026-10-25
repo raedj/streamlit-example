@@ -70,8 +70,9 @@ class AppServices(
     fun conversation(
         scope: CoroutineScope, language: LanguageCode, tutor: TutorPersona, scenario: RolePlayScenario?, forceOffline: Boolean = false,
         mission: com.polyglot.academy.core.speaking.SpeakingMission? = null,
+        topic: String? = null,
     ) = ConversationController(scope, language, tutor, scenario, store, store, store, reviews, providers, study, achievements,
-        platform.recognizer, platform.synthesizer, clock, ids, forceOffline, mission)
+        platform.recognizer, platform.synthesizer, clock, ids, forceOffline, mission, topic)
 
     /**
      * Restores an export, then re-applies the restored reminder schedule (the alarm itself is not
