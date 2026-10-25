@@ -106,4 +106,15 @@ data class AppSettings(
     val privacy: PrivacySettings = PrivacySettings(),
     val showTranslationsByDefault: Boolean = true,
     val showHintsByDefault: Boolean = true,
+    val voiceServices: VoiceServiceSettings = VoiceServiceSettings(),
+)
+
+/** Optional cloud voice services. Keys are kept in the secure store, never here. */
+@Serializable
+data class VoiceServiceSettings(
+    /** Azure AI Speech region for pronunciation scoring, e.g. "westeurope". Empty until set up. */
+    val azureRegion: String = "",
+    /** Realtime speech-to-speech model used with the OpenAI key. */
+    val realtimeModel: String = "gpt-realtime",
+    val realtimeVoice: String = "alloy",
 )

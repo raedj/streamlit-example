@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.material.icons.filled.Phone
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -87,6 +88,10 @@ private fun FreeTalkCard() {
             val key = TutorPromptBuilder.cleanTopic(topic)?.let { ConversationController.TOPIC_PREFIX + it }
             app.nav.push(Route.Conversation(tutor.id, key))
         }, Modifier.fillMaxWidth())
+        com.polyglot.academy.ui.designsystem.SecondaryButton(s[K.LIVE_OPEN], {
+            val tutor = TutorRoster.forLanguage(lang).let { list -> list.firstOrNull { it.id == app.profile.preferredTutorId } ?: list.first() }
+            app.nav.push(Route.LiveVoice(tutor.id, TutorPromptBuilder.cleanTopic(topic)))
+        }, Modifier.fillMaxWidth(), icon = androidx.compose.material.icons.Icons.Filled.Phone)
         Text(s[K.FREE_TALK_NOTE], style = MaterialTheme.typography.bodySmall, color = c.textMuted)
     }
 }

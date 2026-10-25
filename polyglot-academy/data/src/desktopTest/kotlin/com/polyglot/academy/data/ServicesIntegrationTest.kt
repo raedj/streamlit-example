@@ -52,6 +52,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.flow.toList
+import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withTimeout
 import kotlinx.datetime.TimeZone
@@ -90,6 +91,55 @@ class FakePlatform : PlatformServices {
     var reminder: Triple<Boolean, Int, Int>? = null
     override suspend fun scheduleReminder(enabled: Boolean, hour: Int, minute: Int, days: Set<Int>): Boolean { reminder = Triple(enabled, hour, minute); return true }
     override val platformName = "test"
+    var capture: com.polyglot.academy.core.speech.AudioCapture = com.polyglot.academy.core.speech.NoAudioCapture
+    override val audioCapture get() = capture
+    val output = FakeOutput()
+    override val audioOutput: com.polyglot.academy.core.speech.AudioOutput = output
+}
+
+class FakeCapture(private val chunks: List<ByteArray>) : com.polyglot.academy.core.speech.AudioCapture {
+    override suspend fun availability() = SpeechAvailability.AVAILABLE
+    override fun record(sampleRate: Int) = kotlinx.coroutines.flow.flow { chunks.forEach { emit(it) }; kotlinx.coroutines.awaitCancellation() }
+}
+
+class FakeOutput : com.polyglot.academy.core.speech.AudioOutput {
+    val written = java.util.concurrent.CopyOnWriteArrayList<Byte>()
+    @Volatile var clears = 0
+    @Volatile var closed = false
+    override fun open(sampleRate: Int) = object : com.polyglot.academy.core.speech.PcmSink {
+        override fun write(pcm: ByteArray) { written.addAll(pcm.toList()) }
+        override fun clear() { clears++ }
+        override fun close() { closed = true }
+    }
+}
+
+class FakeSocket : com.polyglot.academy.core.realtime.RealtimeSocket {
+    val toClient = kotlinx.coroutines.channels.Channel<String>(kotlinx.coroutines.channels.Channel.UNLIMITED)
+    val sent = java.util.concurrent.CopyOnWriteArrayList<String>()
+    override val incoming = toClient.receiveAsFlow()
+    override suspend fun send(text: String) { sent += text }
+    override suspend fun close() { toClient.close() }
+}
+
+class FakeTransport : com.polyglot.academy.core.realtime.RealtimeTransport {
+    val socket = FakeSocket()
+    var url = ""; var headers = emptyMap<String, String>()
+    override suspend fun connect(url: String, headers: Map<String, String>): com.polyglot.academy.core.realtime.RealtimeSocket { this.url = url; this.headers = headers; return socket }
+}
+
+class FakeAssessor : com.polyglot.academy.core.pronunciation.PronunciationAssessor {
+    override val name = "Fake speech"
+    val references = mutableListOf<String>()
+    override suspend fun assess(wav: ByteArray, referenceText: String, localeTag: String): com.polyglot.academy.core.pronunciation.PronunciationReport {
+        references += "$referenceText|$localeTag|${String(wav.copyOfRange(0, 4))}"
+        return com.polyglot.academy.core.pronunciation.AzureResponse.parse(DETAILED, name)
+    }
+    override suspend fun verify() = true
+    companion object {
+        const val DETAILED = """{"RecognitionStatus":"Success","NBest":[{"Display":"Hello world.","PronunciationAssessment":{"AccuracyScore":70,"PronScore":75},
+            "Words":[{"Word":"hello","PronunciationAssessment":{"AccuracyScore":95,"ErrorType":"None"}},
+            {"Word":"world","PronunciationAssessment":{"AccuracyScore":40,"ErrorType":"Mispronunciation"},"Phonemes":[{"Phoneme":"ɝ","PronunciationAssessment":{"AccuracyScore":22}}]}]}]}"""
+    }
 }
 
 class ScriptedProvider(override val descriptor: com.polyglot.academy.core.ai.ProviderDescriptor, val replies: MutableList<Result<String>>) : AiProvider {
@@ -108,7 +158,10 @@ class ServicesIntegrationTest {
     private val platform = FakePlatform()
     private val openai = ScriptedProvider(ProviderCatalog.OPENAI, mutableListOf())
     private val store = SqlStore(createJvmDriver(), Dispatchers.IO, TimeZone.UTC, clock)
-    private val app = AppServices(store, platform, HttpClient(), clock, SequentialIdGenerator(), providerFactory = { _, _ -> listOf(openai) })
+    private val assessor = FakeAssessor()
+    private val transport = FakeTransport()
+    private val app = AppServices(store, platform, HttpClient(), clock, SequentialIdGenerator(), providerFactory = { _, _ -> listOf(openai) },
+        assessorFactory = { _, _ -> assessor }, realtimeTransport = transport)
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.Default)
 
     @AfterTest fun tearDown() = scope.cancel()
@@ -336,6 +389,75 @@ class ServicesIntegrationTest {
         assertNull(app.stories.find(story.id))
         store.importJson(json)
         assertEquals("Mi gato", app.stories.find(story.id)?.title)
+    }
+
+    private suspend fun allowVoice() = store.updateSettings { it.copy(privacy = it.privacy.copy(cloudAllowedCategories = it.privacy.cloudAllowedCategories + com.polyglot.academy.core.model.DataCategory.VOICE_AUDIO)) }
+    private fun loudPcm(millis: Int) = ByteArray(16 * millis * 2) { i -> if (i % 4 < 2) 0 else 0x30 }
+
+    @Test fun pronunciationIsScoredOnlyWithAKeyAndVoiceConsent() = runBlocking<Unit> {
+        enroll()
+        val pron = app.pronunciation
+        assertEquals(com.polyglot.academy.core.service.PronunciationReadiness.NOT_CONFIGURED, pron.readiness())
+        assertFalse(pron.configure("west europe/x", "key"))
+        assertTrue(pron.configure("West Europe", "speech-key-1"))
+        assertEquals("westeurope", store.currentSettings().voiceServices.azureRegion)
+        assertFalse("speech-key-1" in store.exportJson(true, true), "keys never go into exports")
+        enableCloud()
+        assertEquals(com.polyglot.academy.core.service.PronunciationReadiness.NO_CONSENT, pron.readiness(), "voice audio is off by default")
+        assertTrue(pron.assess(LanguageCode.ENGLISH, "Hello world", loudPcm(1000)).exceptionOrNull() is com.polyglot.academy.core.pronunciation.PronunciationError.NoConsent)
+        assertTrue(assessor.references.isEmpty())
+        allowVoice()
+        assertEquals(com.polyglot.academy.core.service.PronunciationReadiness.READY, pron.readiness())
+        assertTrue(pron.assess(LanguageCode.ENGLISH, "Hello world", ByteArray(32_000)).exceptionOrNull() is com.polyglot.academy.core.pronunciation.PronunciationError.NoSpeech)
+        assertTrue(pron.assess(LanguageCode.ENGLISH, "Hello world", loudPcm(200)).exceptionOrNull() is com.polyglot.academy.core.pronunciation.PronunciationError.TooShort)
+        val report = pron.assess(LanguageCode.ENGLISH, "Hello world", loudPcm(1500)).getOrThrow()
+        assertEquals(75.0, report.overall)
+        assertEquals("Hello world|en-US|RIFF", assessor.references.single())
+        assertEquals(com.polyglot.academy.core.model.SessionKind.PRONUNCIATION, store.sessions(LanguageCode.ENGLISH).first().single().kind)
+        assertEquals("pronunciation:world", store.mistakes(LanguageCode.ENGLISH).first().single().sourceId)
+        assertEquals(1, app.gamification.today(LanguageCode.ENGLISH).today.pronunciationChecks)
+    }
+
+    @Test fun liveVoiceCallStreamsAudioAndCorrectsTheTranscript() = runBlocking<Unit> {
+        enroll(LanguageCode.FRENCH, CefrLevel.A2); enableCloud()
+        assertEquals(com.polyglot.academy.core.service.RealtimeReadiness.NO_CONSENT, app.realtime.readiness())
+        allowVoice()
+        assertEquals(com.polyglot.academy.core.service.RealtimeReadiness.READY, app.realtime.readiness())
+        platform.capture = FakeCapture(listOf(loudPcm(100), loudPcm(100)))
+        val call = app.realtime.session(scope, LanguageCode.FRENCH, TutorRoster.byId("emma")!!, "le cinéma")
+        call.start()
+        waitFor { transport.socket.sent.isNotEmpty() }
+        assertEquals("Bearer sk-test-key-0000", transport.headers["Authorization"])
+        assertTrue("model=gpt-realtime" in transport.url)
+        val update = transport.socket.sent.first()
+        assertTrue("session.update" in update && "Emma" in update && "le cinéma" in update && "French" in update, update)
+        transport.socket.toClient.send("""{"type":"session.updated"}""")
+        waitFor { transport.socket.sent.any { "response.create" in it } && transport.socket.sent.count { "input_audio_buffer.append" in it } == 2 }
+        assertEquals(com.polyglot.academy.core.service.RealtimeStatus.LIVE, call.state.value.status)
+        val audio = java.util.Base64.getEncoder().encodeToString(byteArrayOf(5, 6, 7))
+        transport.socket.toClient.send("""{"type":"response.output_audio.delta","delta":"$audio"}""")
+        transport.socket.toClient.send("""{"type":"response.output_audio_transcript.done","transcript":"Bonjour ! Quel film aimes-tu ?"}""")
+        waitFor { call.state.value.turns.size == 1 }
+        assertEquals(listOf<Byte>(5, 6, 7), platform.output.written.toList())
+        openai.replies += Result.success("""{"corrections":[{"original":"je aime","corrected":"j'aime","explanation":"élision","severity":"minor","hint":"Que devient je devant une voyelle ?","register":"neutral","category":"spelling"}]}""")
+        transport.socket.toClient.send("""{"type":"input_audio_buffer.speech_started"}""")
+        transport.socket.toClient.send("""{"type":"conversation.item.input_audio_transcription.completed","item_id":"i1","transcript":"je aime les films d'action"}""")
+        waitFor { call.state.value.turns.getOrNull(1)?.corrections?.isNotEmpty() == true }
+        assertEquals(1, platform.output.clears, "the learner interrupting stops playback")
+        val learner = call.state.value.turns[1]
+        assertTrue(learner.wasSpoken)
+        assertEquals("Que devient je devant une voyelle ?", learner.corrections.single().hint)
+        assertTrue("Learner said: je aime les films d'action" in openai.requests.last().messages.single().content)
+        assertEquals(setOf(com.polyglot.academy.core.model.DataCategory.CONVERSATION_TEXT), openai.requests.last().dataCategories)
+        call.end()
+        waitFor { call.state.value.status == com.polyglot.academy.core.service.RealtimeStatus.ENDED }
+        waitFor { store.conversations(LanguageCode.FRENCH).first().singleOrNull()?.summary != null }
+        val conv = store.conversations(LanguageCode.FRENCH).first().single()
+        assertTrue("mode=realtime" in conv.summary!! && "learner_turns=1" in conv.summary!!)
+        assertEquals("topic:le cinéma", conv.scenarioId)
+        assertEquals(2, store.turns(conv.id).first().size)
+        assertEquals("conversation:spelling", store.mistakes(LanguageCode.FRENCH).first().single().sourceId)
+        assertTrue(platform.output.closed)
     }
 
     @Test fun speechUnavailableShowsNoticeInsteadOfHanging() = runBlocking<Unit> {

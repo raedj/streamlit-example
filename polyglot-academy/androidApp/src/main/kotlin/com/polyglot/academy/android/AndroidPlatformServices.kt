@@ -57,6 +57,8 @@ class AndroidPlatformServices(private val context: Context) : PlatformServices {
     override val recognizer: SpeechRecognizerService = AndroidSpeechRecognizer(context)
     override val synthesizer: SpeechSynthesizerService = AndroidTextToSpeech(context)
     override val secrets: SecretStore = KeystoreSecretStore(context)
+    override val audioCapture: com.polyglot.academy.core.speech.AudioCapture = AndroidAudioCapture(context)
+    override val audioOutput: com.polyglot.academy.core.speech.AudioOutput = AndroidAudioOutput()
 
     override fun network(): NetworkState {
         val cm = context.getSystemService(ConnectivityManager::class.java) ?: return NetworkState.OFFLINE

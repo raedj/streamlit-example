@@ -305,7 +305,7 @@ private fun LearnerBubble(turn: ConversationTurn, lang: LanguageCode) {
  * error with a guiding question, the fix stays hidden until the learner asks, so they can try first.
  */
 @Composable
-private fun CorrectionCard(cr: com.polyglot.academy.core.model.Correction, lang: LanguageCode) {
+internal fun CorrectionCard(cr: com.polyglot.academy.core.model.Correction, lang: LanguageCode) {
     val s = LocalStrings.current
     val c = PolyglotTheme.colors
     val socratic = cr.hint != null && cr.severity == com.polyglot.academy.core.model.ErrorSeverity.MINOR && !cr.isStylistic

@@ -200,3 +200,37 @@ STORY_TOPIC_TECHNOLOGY ¦ technology ¦ التقنية
 STORY_TOPIC_FAMILY ¦ family ¦ العائلة
 STORY_TOPIC_ANIMALS ¦ animals ¦ الحيوانات
 STORY_TOPIC_HISTORY ¦ history ¦ التاريخ
+PRON_DETAIL_TITLE ¦ Detailed scoring ¦ تقييم مفصّل
+PRON_DETAIL_SETUP ¦ Get a score for every word and sound by connecting a pronunciation service (your own Azure AI Speech key). ¦ احصل على درجة لكل كلمة وكل صوت بربط خدمة تقييم النطق (مفتاح Azure AI Speech الخاص بك).
+PRON_DETAIL_SET_UP ¦ Set up ¦ إعداد
+PRON_DETAIL_BODY ¦ Read this sentence aloud, then tap Stop: ¦ اقرأ هذه الجملة بصوت عالٍ ثم اضغط «إيقاف»:
+PRON_DETAIL_RECORD ¦ Record and score ¦ سجّل وقيّم
+PRON_DETAIL_STOP ¦ Stop ¦ إيقاف
+PRON_DETAIL_LISTENING ¦ Recording… ¦ جارٍ التسجيل…
+PRON_DETAIL_PRIVACY ¦ The recording is sent to Azure AI Speech for scoring and is not saved by the app. ¦ يُرسل التسجيل إلى Azure AI Speech للتقييم ولا يحفظه التطبيق.
+PRON_ERR_PERMISSION ¦ Microphone permission is needed. ¦ يلزم إذن الميكروفون.
+PRON_ERR_MIC ¦ The microphone could not be used. ¦ تعذّر استخدام الميكروفون.
+PRON_ERR_QUOTA ¦ The speech service limit was reached. Try again later. ¦ بلغت حدّ خدمة الصوت. حاول لاحقًا.
+PRON_ERR_NO_SPEECH ¦ No speech was heard. Speak a little louder and closer to the microphone. ¦ لم يُسمع كلام. تحدّث بصوت أعلى قليلًا وأقرب إلى الميكروفون.
+PRON_ERR_TOO_SHORT ¦ The recording was too short. ¦ التسجيل قصير جدًا.
+PRON_ERR_OTHER ¦ Scoring failed: {0} ¦ فشل التقييم: {0}
+PRON_SCORE_OVERALL ¦ Overall ¦ الإجمالي
+PRON_SCORE_ACCURACY ¦ Accuracy ¦ الدقة
+PRON_SCORE_FLUENCY ¦ Fluency ¦ الطلاقة
+PRON_SCORE_COMPLETENESS ¦ Completeness ¦ الاكتمال
+PRON_SCORE_PROSODY ¦ Rhythm and intonation: {0} ¦ الإيقاع والتنغيم: {0}
+PRON_HEARD ¦ Heard: {0} ¦ ما سُمع: {0}
+PRON_WORDS_TAP ¦ Tap a word to see its sounds ¦ اضغط على كلمة لرؤية أصواتها
+PRON_WORD_DESC ¦ {0}: {1} points, {2} ¦ {0}: {1} نقطة، {2}
+PRON_WORD_SCORE ¦ Score {0} · {1} ¦ الدرجة {0} · {1}
+PRON_NO_PHONEMES ¦ No sound-level scores for this word. ¦ لا توجد درجات للأصوات في هذه الكلمة.
+PRON_WEAK_SOUNDS ¦ Sounds to practise: {0} ¦ أصوات تحتاج إلى تدريب: {0}
+PRON_GREAT ¦ Very clear pronunciation. Well done! ¦ نطق واضح جدًا. أحسنت!
+PRON_SCORED_BY ¦ Scored by {0}. Scores are an automatic estimate. ¦ قيّمته خدمة {0}. الدرجات تقدير آلي.
+PRON_ERR_TYPE_NONE ¦ good ¦ جيد
+PRON_ERR_TYPE_MISPRONUNCIATION ¦ mispronounced ¦ نُطقت بشكل خاطئ
+PRON_ERR_TYPE_OMISSION ¦ missed ¦ لم تُنطق
+PRON_ERR_TYPE_INSERTION ¦ extra word ¦ كلمة زائدة
+PRON_ERR_TYPE_UNEXPECTED_BREAK ¦ unexpected pause ¦ توقف غير متوقع
+PRON_ERR_TYPE_MISSING_BREAK ¦ missing pause ¦ توقف ناقص
+PRON_ERR_TYPE_MONOTONE ¦ flat intonation ¦ تنغيم رتيب

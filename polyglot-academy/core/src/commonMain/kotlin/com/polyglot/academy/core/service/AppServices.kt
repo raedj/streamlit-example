@@ -38,6 +38,10 @@ interface PlatformServices {
 
     /** Renders PDF pages as JPEG images for AI text recognition, or null when the platform has no renderer. */
     suspend fun renderPdfPages(pdf: ByteArray, maxPages: Int): List<OcrPage>? = null
+
+    /** Raw microphone audio for pronunciation scoring and realtime voice. */
+    val audioCapture: com.polyglot.academy.core.speech.AudioCapture get() = com.polyglot.academy.core.speech.NoAudioCapture
+    val audioOutput: com.polyglot.academy.core.speech.AudioOutput get() = com.polyglot.academy.core.speech.NoAudioOutput
 }
 
 /** Manual dependency graph (see ADR-004). One instance per process. */
@@ -48,6 +52,8 @@ class AppServices(
     val clock: TimeSource = TimeSource.System,
     val ids: IdGenerator = IdGenerator.Random,
     providerFactory: ((CredentialSource, (ProviderId) -> ProviderConfig) -> List<AiProvider>)? = null,
+    assessorFactory: ((String, suspend () -> String?) -> com.polyglot.academy.core.pronunciation.PronunciationAssessor)? = null,
+    realtimeTransport: com.polyglot.academy.core.realtime.RealtimeTransport? = null,
 ) {
     val scheduler = SpacedRepetitionScheduler()
     val achievements = AchievementService(store, store, clock)
@@ -69,6 +75,11 @@ class AppServices(
     val coach = CoachService(store, store, store, store, clock, ids)
     val gamification = GamificationService(store, store, store, clock)
     val stories = StoryService(store, store, store, reviews, providers, clock, ids)
+    val realtime = RealtimeService(store, store, platform.secrets, platform::network, { platform.audioCapture }, { platform.audioOutput },
+        realtimeTransport ?: com.polyglot.academy.core.realtime.KtorRealtimeTransport(httpClient), providers, coach, clock, ids)
+    val pronunciation = PronunciationService(store, store, platform.secrets, platform::network, study, clock, ids, assessorFactory ?: { region, key ->
+        com.polyglot.academy.core.pronunciation.AzurePronunciationAssessor(httpClient, region, key)
+    })
 
     fun conversation(
         scope: CoroutineScope, language: LanguageCode, tutor: TutorPersona, scenario: RolePlayScenario?, forceOffline: Boolean = false,

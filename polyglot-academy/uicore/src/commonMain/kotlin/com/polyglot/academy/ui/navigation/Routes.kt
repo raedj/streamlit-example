@@ -5,7 +5,7 @@ import com.polyglot.academy.core.model.LanguageCode
 
 enum class Tab { HOME, LEARN, PRACTICE, TUTORS, ME }
 
-enum class SettingsSection { APPEARANCE, LANGUAGES, LEARNING, SPEECH, ACCESSIBILITY, PRIVACY, PROVIDERS, LOCAL_MODELS, REMINDERS, DATA, PERMISSIONS, HELP, ABOUT }
+enum class SettingsSection { APPEARANCE, LANGUAGES, LEARNING, SPEECH, ACCESSIBILITY, PRIVACY, PROVIDERS, VOICE, LOCAL_MODELS, REMINDERS, DATA, PERMISSIONS, HELP, ABOUT }
 
 /** Every destination. Routes are plain data so the back stack can be saved across process death. */
 sealed interface Route {
@@ -37,6 +37,8 @@ sealed interface Route {
     data class TutorDetail(val tutorId: String) : Route
     data class Conversation(val tutorId: String, val scenarioId: String? = null, val offline: Boolean = false) : Route
     data object Scenarios : Route
+    /** Live speech-to-speech conversation (realtime API). */
+    data class LiveVoice(val tutorId: String, val topic: String? = null) : Route
     data object Settings : Route
     data class SettingsPage(val section: SettingsSection) : Route
     data class ProviderDetail(val provider: ProviderId) : Route
@@ -60,6 +62,7 @@ sealed interface Route {
             is Assessment -> "assess|${r.language?.name.orEmpty()}|${r.fromOnboarding}"
             is TutorDetail -> "tutor|${r.tutorId}"
             is Conversation -> "conv|${r.tutorId}|${r.scenarioId.orEmpty()}|${r.offline}"
+            is LiveVoice -> "live|${r.tutorId}|${r.topic.orEmpty()}"
             Scenarios -> "scenarios"; Settings -> "settings"
             is SettingsPage -> "settingsPage|${r.section}"
             is ProviderDetail -> "provider|${r.provider}"
@@ -86,6 +89,7 @@ sealed interface Route {
                 "assess" -> Assessment(arg(1).ifEmpty { null }?.let(LanguageCode::valueOf), arg(2) == "true")
                 "tutor" -> TutorDetail(arg(1))
                 "conv" -> Conversation(arg(1), arg(2).ifEmpty { null }, arg(3) == "true")
+                "live" -> LiveVoice(arg(1), arg(2).ifEmpty { null })
                 "scenarios" -> Scenarios; "settings" -> Settings
                 "settingsPage" -> SettingsPage(SettingsSection.valueOf(arg(1)))
                 "provider" -> ProviderDetail(ProviderId.valueOf(arg(1)))

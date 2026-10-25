@@ -147,3 +147,30 @@ COACH_NEED_CONVERSATION_STARTER ¦ Have 5 conversations of at least 4 turns. ¦ 
 COACH_NEED_PHRASING_PRO ¦ Have 10 conversations, with at most 3 corrections per 10 of your recent turns. ¦ أجرِ 10 محادثات، بثلاثة تصحيحات على الأكثر لكل 10 من أدوارك الأخيرة.
 COACH_NEED_MISSION_MASTER ¦ Pass 10 speaking missions. ¦ أنجز 10 مهام محادثة.
 COACH_NEED_FLUENT_VOICE ¦ Pass 20 speaking missions with about 12+ words per turn. ¦ أنجز 20 مهمة محادثة بنحو 12 كلمة أو أكثر في كل دور.
+LIVE_TITLE ¦ Live voice call ¦ مكالمة صوتية مباشرة
+LIVE_OPEN ¦ Live voice call (beta) ¦ مكالمة صوتية مباشرة (تجريبية)
+LIVE_STATUS_IDLE ¦ Ready to call ¦ جاهز للاتصال
+LIVE_STATUS_CONNECTING ¦ Connecting… ¦ جارٍ الاتصال…
+LIVE_STATUS_LIVE ¦ On the call ¦ في المكالمة
+LIVE_STATUS_ENDED ¦ Call ended ¦ انتهت المكالمة
+LIVE_STATUS_FAILED ¦ The call could not continue ¦ تعذّر استمرار المكالمة
+LIVE_MUTED ¦ Your microphone is muted ¦ الميكروفون مكتوم
+LIVE_TUTOR_SPEAKING ¦ Your tutor is speaking — just talk to interrupt ¦ المدرّب يتحدث. تكلّم لمقاطعته
+LIVE_YOU_SPEAKING ¦ Listening to you… ¦ يستمع إليك…
+LIVE_YOUR_TURN ¦ Your turn — speak naturally ¦ دورك. تحدّث بشكل طبيعي
+LIVE_MIC_LEVEL ¦ Microphone ¦ الميكروفون
+LIVE_START ¦ Start the call ¦ ابدأ المكالمة
+LIVE_AGAIN ¦ Call again ¦ اتصل مجددًا
+LIVE_CONNECTING ¦ Connecting ¦ جارٍ الاتصال
+LIVE_MUTE ¦ Mute ¦ كتم
+LIVE_UNMUTE ¦ Unmute ¦ إلغاء الكتم
+LIVE_INTERRUPT ¦ Stop the tutor ¦ أوقف المدرّب
+LIVE_END ¦ End the call ¦ أنهِ المكالمة
+LIVE_HEADPHONES ¦ Tip: headphones prevent the tutor's voice from being picked up by your microphone. ¦ نصيحة: سماعات الرأس تمنع التقاط صوت المدرّب عبر الميكروفون.
+LIVE_ERR_NO_KEY ¦ Live calls use your OpenAI key. Add it in AI providers. ¦ تستخدم المكالمات المباشرة مفتاح OpenAI الخاص بك. أضفه في مزوّدي الذكاء الاصطناعي.
+LIVE_ERR_SPEAKER ¦ No audio output is available. ¦ لا يوجد مخرج صوت متاح.
+LIVE_ERR_CONNECTION ¦ The connection failed or was closed. {0} ¦ فشل الاتصال أو انقطع. {0}
+LIVE_ERR_SERVER ¦ The service stopped the call: {0} ¦ أوقفت الخدمة المكالمة: {0}
+LIVE_CHECKING ¦ Checking your sentence… ¦ جارٍ تدقيق جملتك…
+LIVE_SUMMARY ¦ You spoke {0} times; {1} corrections were noted. They are saved in your history and error log. ¦ تحدّثت {0} مرات، وسُجّل {1} تصحيحًا. حُفظت في السجل وسجل الأخطاء.
+LIVE_PRIVACY ¦ Your voice goes to OpenAI during the call; the app keeps only the text transcript. ¦ يُرسل صوتك إلى OpenAI أثناء المكالمة، ولا يحفظ التطبيق سوى النص المكتوب.

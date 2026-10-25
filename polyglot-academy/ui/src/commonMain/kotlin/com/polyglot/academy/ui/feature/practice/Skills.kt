@@ -304,6 +304,7 @@ fun PronunciationScreen() {
             scope.launch { app.services.study.recordExercise(lang, null, item, a.outcome, a.userAnswer, 0, 0, a.promptText) }
         }
         if (answeredKey == index) PrimaryButton(s[K.NEXT], { index++ }, Modifier.fillMaxWidth())
+        DetailedPronunciationCard(item.targetText, lang)
         Text(s[K.SPEAK_DISCLAIMER], style = MaterialTheme.typography.bodySmall, color = PolyglotTheme.colors.textSecondary)
     }
 }

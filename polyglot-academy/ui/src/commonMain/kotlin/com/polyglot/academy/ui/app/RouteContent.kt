@@ -73,6 +73,7 @@ fun RouteContent(route: Route) {
         is Route.TutorDetail -> TutorDetailScreen(route.tutorId)
         is Route.Conversation -> ConversationScreen(route.tutorId, route.scenarioId, route.offline)
         Route.Scenarios -> ScenariosScreen()
+        is Route.LiveVoice -> com.polyglot.academy.ui.feature.tutor.LiveVoiceScreen(route.tutorId, route.topic)
         Route.Settings -> SettingsScreen()
         is Route.SettingsPage -> SettingsPageScreen(route.section)
         is Route.ProviderDetail -> ProviderDetailScreen(route.provider)

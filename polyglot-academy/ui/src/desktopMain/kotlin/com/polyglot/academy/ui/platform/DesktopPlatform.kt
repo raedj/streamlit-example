@@ -18,8 +18,9 @@ import kotlinx.coroutines.withContext
 import java.io.File
 
 /**
- * Platform services for the JVM desktop verification harness. It is NOT the product: speech and
- * reminders are reported as unavailable, and secrets are kept in memory only.
+ * Platform services for the JVM desktop verification harness. It is NOT the product: platform
+ * speech recognition/TTS and reminders are unavailable, and secrets are kept in memory only. Raw
+ * microphone capture and playback (for pronunciation scoring and realtime voice) use javax.sound.
  */
 class DesktopPlatformServices(
     override val recognizer: SpeechRecognizerService = UnavailableSpeechRecognizer,
@@ -40,6 +41,8 @@ class DesktopPlatformServices(
     override val extractionSupport: Map<MaterialType, ExtractionSupport> = emptyMap()
     override suspend fun scheduleReminder(enabled: Boolean, hour: Int, minute: Int, days: Set<Int>): Boolean = !enabled
     override val platformName = "Desktop JVM (verification harness)"
+    override val audioCapture: com.polyglot.academy.core.speech.AudioCapture = DesktopAudioCapture
+    override val audioOutput: com.polyglot.academy.core.speech.AudioOutput = DesktopAudioOutput
 }
 
 class DesktopPlatformUi(private val exportDir: File = File(System.getProperty("user.home"))) : PlatformUi {

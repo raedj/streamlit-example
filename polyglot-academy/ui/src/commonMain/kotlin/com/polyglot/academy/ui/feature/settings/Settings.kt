@@ -99,6 +99,7 @@ fun SettingsScreen() {
                 Divider()
                 SettingsRow(s[K.SET_PRIVACY], subtitle = if (privacy.cloudAiEnabled) s[K.SET_PRIVACY_SUMMARY_CLOUD] else s[K.SET_PRIVACY_SUMMARY_LOCAL], icon = Icons.Filled.Lock, onClick = { go(SettingsSection.PRIVACY) })
                 SettingsRow(s[K.SET_AI_PROVIDERS], subtitle = s[K.SET_AI_PROVIDERS_SUB], icon = Icons.Filled.SmartToy, onClick = { go(SettingsSection.PROVIDERS) })
+                SettingsRow(s[K.SET_VOICE], subtitle = s[K.SET_VOICE_SUB], icon = Icons.Filled.RecordVoiceOver, onClick = { go(SettingsSection.VOICE) })
                 SettingsRow(s[K.SET_LOCAL_MODELS], subtitle = s[K.SET_LOCAL_MODELS_SUB], icon = Icons.Filled.Memory, onClick = { go(SettingsSection.LOCAL_MODELS) })
                 SettingsRow(s[K.SET_NOTIFICATIONS], subtitle = if (app.settings.reminders.enabled) s[K.ON] else s[K.OFF], icon = Icons.Filled.Notifications, onClick = { go(SettingsSection.REMINDERS) })
                 SettingsRow(s[K.SET_DATA], icon = Icons.Filled.Storage, onClick = { go(SettingsSection.DATA) })
@@ -117,7 +118,7 @@ fun SettingsPageScreen(section: SettingsSection) {
     val title = when (section) {
         SettingsSection.APPEARANCE -> s[K.SET_APPEARANCE]; SettingsSection.LANGUAGES -> s[K.SET_LANGUAGES]; SettingsSection.LEARNING -> s[K.SET_LEARNING]
         SettingsSection.SPEECH -> s[K.SET_SPEECH]; SettingsSection.ACCESSIBILITY -> s[K.SET_ACCESSIBILITY]; SettingsSection.PRIVACY -> s[K.SET_PRIVACY]
-        SettingsSection.PROVIDERS -> s[K.PROV_TITLE]; SettingsSection.LOCAL_MODELS -> s[K.LOCAL_TITLE]; SettingsSection.REMINDERS -> s[K.SET_NOTIFICATIONS]
+        SettingsSection.PROVIDERS -> s[K.PROV_TITLE]; SettingsSection.VOICE -> s[K.SET_VOICE]; SettingsSection.LOCAL_MODELS -> s[K.LOCAL_TITLE]; SettingsSection.REMINDERS -> s[K.SET_NOTIFICATIONS]
         SettingsSection.DATA -> s[K.SET_DATA]; SettingsSection.PERMISSIONS -> s[K.SET_PERMISSIONS]; SettingsSection.HELP -> s[K.SET_HELP]; SettingsSection.ABOUT -> s[K.SET_ABOUT]
     }
     ScrollScreen(title) {
@@ -129,6 +130,7 @@ fun SettingsPageScreen(section: SettingsSection) {
             SettingsSection.ACCESSIBILITY -> AccessibilityPage()
             SettingsSection.PRIVACY -> PrivacyPage()
             SettingsSection.PROVIDERS -> ProvidersPage()
+            SettingsSection.VOICE -> VoicePage()
             SettingsSection.LOCAL_MODELS -> LocalModelsPage()
             SettingsSection.REMINDERS -> RemindersPage()
             SettingsSection.DATA -> DataPage()
@@ -266,10 +268,9 @@ private fun PrivacyPage() {
     PolyCard(contentPadding = 0.dp) {
         DataCategory.entries.forEach { cat ->
             val allowed = cat in p.cloudAllowedCategories
-            // Raw audio is never sent in this version, so the switch is shown off and disabled.
-            SwitchRow(Labels.category(s, cat), allowed && cat != DataCategory.VOICE_AUDIO, { v ->
+            SwitchRow(Labels.category(s, cat), allowed, { v ->
                 update { it.copy(privacy = it.privacy.copy(cloudAllowedCategories = if (v) it.privacy.cloudAllowedCategories + cat else it.privacy.cloudAllowedCategories - cat)) }
-            }, subtitle = Labels.categoryDesc(s, cat), enabled = p.cloudAiEnabled && cat != DataCategory.VOICE_AUDIO)
+            }, subtitle = Labels.categoryDesc(s, cat), enabled = p.cloudAiEnabled)
         }
     }
     if (consent) AlertDialog(onDismissRequest = { consent = false }, title = { Text(s[K.SET_CONSENT_TITLE]) }, text = { Text(s[K.SET_CONSENT_BODY]) },

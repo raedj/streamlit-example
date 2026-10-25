@@ -49,7 +49,7 @@ CAT_LESSON_CONTENT_SUB ¦ App-authored exercises and texts ¦ تمارين ون�
 CAT_CONVERSATION_TEXT ¦ Conversation messages ¦ رسائل المحادثة
 CAT_CONVERSATION_TEXT_SUB ¦ What you type or say to a tutor (as text) ¦ ما تكتبه أو تقوله للمعلّم (كنص)
 CAT_VOICE_AUDIO ¦ Voice recordings ¦ التسجيلات الصوتية
-CAT_VOICE_AUDIO_SUB ¦ This version never sends raw audio to AI providers ¦ لا يرسل هذا الإصدار الصوت الخام إلى مزوّدي الذكاء الاصطناعي أبدًا
+CAT_VOICE_AUDIO_SUB ¦ Needed only for detailed pronunciation scoring and live voice calls. Audio is sent while you use them and is not saved by the app. ¦ مطلوبة فقط لتقييم النطق المفصّل والمكالمات الصوتية المباشرة. يُرسل الصوت أثناء استخدامها فقط ولا يحفظه التطبيق.
 CAT_WRITING_SUBMISSION ¦ Writing exercises ¦ تمارين الكتابة
 CAT_WRITING_SUBMISSION_SUB ¦ Texts you submit for feedback ¦ النصوص التي ترسلها لتلقي الملاحظات
 CAT_PERSONAL_NOTES ¦ Personal notes ¦ الملاحظات الشخصية
@@ -188,3 +188,36 @@ LOCAL_REASON_INSUFFICIENT_RAM ¦ Not enough memory ¦ الذاكرة غير كا
 LOCAL_REASON_INSUFFICIENT_STORAGE ¦ Not enough free storage ¦ مساحة التخزين المتاحة غير كافية
 LOCAL_REASON_OS_TOO_OLD ¦ Android version too old ¦ إصدار أندرويد قديم جدًا
 LOCAL_ALTERNATIVE ¦ Alternative: run a model on your computer (for example with Ollama) and connect it as "Local server" in AI providers. ¦ بديل: شغّل نموذجًا على حاسوبك (مثل Ollama) واربطه بوصفه «خادمًا محليًا» في مزوّدي الذكاء الاصطناعي.
+SET_VOICE ¦ Voice services ¦ خدمات الصوت
+SET_VOICE_SUB ¦ Pronunciation scoring and live voice calls ¦ تقييم النطق والمكالمات الصوتية المباشرة
+VOICE_INTRO ¦ Two optional cloud services use your own API keys. Everything else in the app works without them. ¦ خدمتان سحابيتان اختياريتان تستخدمان مفاتيح API الخاصة بك. كل ما عداهما في التطبيق يعمل بدونهما.
+VOICE_NEEDS_CONSENT ¦ Both services send your voice. Turn on cloud AI and allow "Voice recordings" in Privacy first. ¦ ترسل الخدمتان صوتك. فعّل الذكاء الاصطناعي السحابي واسمح بـ«التسجيلات الصوتية» في الخصوصية أولًا.
+VOICE_PRON_TITLE ¦ Pronunciation scoring (Azure AI Speech) ¦ تقييم النطق (Azure AI Speech)
+VOICE_PRON_BODY ¦ Scores every word and sound you say against the sentence, with accuracy, fluency and completeness. ¦ يقيّم كل كلمة وكل صوت تنطقه مقارنةً بالجملة، مع الدقة والطلاقة والاكتمال.
+VOICE_PRON_HOWTO ¦ In the Azure portal create a "Speech" resource, then copy Key 1 and its region (for example westeurope). A free tier exists; charges are set by Microsoft. ¦ أنشئ موردًا من نوع «Speech» في بوابة Azure، ثم انسخ المفتاح Key 1 والمنطقة (مثل westeurope). توجد فئة مجانية، والأسعار تحدّدها Microsoft.
+VOICE_REGION ¦ Region ¦ المنطقة
+VOICE_REGION_HINT ¦ Lowercase, e.g. westeurope, eastus, uaenorth ¦ بأحرف صغيرة، مثل westeurope أو eastus أو uaenorth
+VOICE_KEY ¦ Speech key ¦ مفتاح الخدمة
+VOICE_KEY_SAVED ¦ Key saved — enter a new one to replace it ¦ المفتاح محفوظ. أدخل مفتاحًا جديدًا لاستبداله
+VOICE_SAVED ¦ Saved. The key is stored encrypted on this device. ¦ تم الحفظ. المفتاح مخزّن مشفّرًا على هذا الجهاز.
+VOICE_BAD_REGION ¦ That region name is not valid. ¦ اسم المنطقة غير صالح.
+VOICE_TEST ¦ Test the key ¦ اختبر المفتاح
+VOICE_TEST_OK ¦ The key works. ¦ المفتاح يعمل.
+VOICE_TEST_BAD_KEY ¦ The service rejected the key or region. ¦ رفضت الخدمة المفتاح أو المنطقة.
+VOICE_TEST_FAILED ¦ Could not reach the service: {0} ¦ تعذّر الوصول إلى الخدمة: {0}
+VOICE_REMOVE_KEY ¦ Remove key ¦ احذف المفتاح
+VOICE_STATE_NOT_CONFIGURED ¦ Not set up ¦ غير مُعدّ
+VOICE_STATE_NO_CONSENT ¦ Voice not allowed in Privacy ¦ الصوت غير مسموح في الخصوصية
+VOICE_STATE_OFFLINE ¦ Offline ¦ دون اتصال
+VOICE_STATE_READY ¦ Ready ¦ جاهز
+VOICE_RT_TITLE ¦ Live voice calls (OpenAI Realtime) ¦ المكالمات الصوتية المباشرة (OpenAI Realtime)
+VOICE_RT_BODY ¦ Talk with your tutor like a phone call: low delay, and you can interrupt. Your sentences are still corrected in the transcript. ¦ تحدّث مع مدرّبك كأنها مكالمة هاتفية: تأخير قليل ويمكنك المقاطعة. وتظهر تصحيحات جملك في نص المحادثة.
+VOICE_RT_ADD_KEY ¦ Add an OpenAI key ¦ أضف مفتاح OpenAI
+VOICE_RT_MODEL ¦ Realtime model ¦ نموذج الصوت المباشر
+VOICE_RT_MODEL_HINT ¦ Default gpt-realtime. Check the provider's current model list. ¦ الافتراضي gpt-realtime. راجع قائمة النماذج الحالية لدى المزوّد.
+VOICE_RT_VOICE ¦ Tutor voice ¦ صوت المدرّب
+VOICE_RT_KEY_NOTE ¦ Uses the {0} key from AI providers. Voice calls cost more than text chat; prices are set by the provider. ¦ يستخدم مفتاح {0} من مزوّدي الذكاء الاصطناعي. المكالمات الصوتية أعلى كلفة من المحادثة النصية، والأسعار يحدّدها المزوّد.
+RT_STATE_NO_KEY ¦ No OpenAI key ¦ لا يوجد مفتاح OpenAI
+RT_STATE_NO_CONSENT ¦ Voice not allowed in Privacy ¦ الصوت غير مسموح في الخصوصية
+RT_STATE_OFFLINE ¦ Offline ¦ دون اتصال
+RT_STATE_READY ¦ Ready ¦ جاهز
