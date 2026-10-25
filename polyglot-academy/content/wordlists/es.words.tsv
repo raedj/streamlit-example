@@ -299,3 +299,303 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 298	es_w_momento	momento	noun	time	moment	لحظة			gender=m; article=el
 299	es_w_medio	medio	adj	quantity	half	نصف
 300	es_w_cuidado	cuidado	noun	social	care; ¡cuidado! = careful!	انتباه؛ احذر!			gender=m; article=el
+301	es_w_usar	usar	verb	actions	to use	يستخدم		uso, usas, usa, usamos, usan, usé, usó, usado
+302	es_w_conducir	conducir	verb	travel	to drive	يقود		conduzco, conduces, conduce, conducimos, conducen, conduje, condujo, conducido	irregular=yes
+303	es_w_visitar	visitar	verb	travel	to visit	يزور		visito, visitas, visita, visitamos, visitan, visité, visitó, visitado
+304	es_w_viajar	viajar	verb	travel	to travel	يسافر		viajo, viajas, viaja, viajamos, viajan, viajé, viajó, viajado		es_viajar
+305	es_w_mover	mover	verb	actions	to move	يحرّك		muevo, mueves, mueve, movemos, mueven, moví, movió, movido	irregular=yes
+306	es_w_subir	subir	verb	movement	to go up; to get on	يصعد؛ يركب		subo, subes, sube, subimos, suben, subí, subió, subido
+307	es_w_bajar	bajar	verb	movement	to go down; to get off	ينزل		bajo, bajas, baja, bajamos, bajan, bajé, bajó, bajado
+308	es_w_entrar	entrar	verb	movement	to go in, to enter	يدخل		entro, entras, entra, entramos, entran, entré, entró, entrado
+309	es_w_reir	reír	verb	feelings	to laugh	يضحك		río, ríes, ríe, reímos, ríen, reí, rió, reído	irregular=yes
+310	es_w_llorar	llorar	verb	feelings	to cry	يبكي		lloro, lloras, llora, lloramos, lloran, lloré, lloró, llorando
+311	es_w_cantar	cantar	verb	leisure	to sing	يغني		canto, cantas, canta, cantamos, cantan, canté, cantó
+312	es_w_bailar	bailar	verb	leisure	to dance	يرقص		bailo, bailas, baila, bailamos, bailan, bailé, bailó
+313	es_w_nadar	nadar	verb	leisure	to swim	يسبح		nado, nadas, nada, nadamos, nadan, nadé, nadó
+314	es_w_volar	volar	verb	travel	to fly	يطير		vuelo, vuelas, vuela, volamos, vuelan, volé, voló	irregular=yes
+315	es_w_caer	caer	verb	actions	to fall	يسقط		caigo, caes, cae, caemos, caen, caí, cayó, caído	irregular=yes
+316	es_w_crecer	crecer	verb	nature	to grow	ينمو		crezco, creces, crece, crecemos, crecen, crecí, creció, crecido
+317	es_w_vender	vender	verb	shopping	to sell	يبيع		vendo, vendes, vende, vendemos, venden, vendí, vendió, vendido
+318	es_w_elegir	elegir	verb	mind	to choose	يختار		elijo, eliges, elige, elegimos, eligen, elegí, eligió, elegido	irregular=yes
+319	es_w_romper	romper	verb	actions	to break	يكسر		rompo, rompes, rompe, rompemos, rompen, rompí, rompió, roto	irregular=yes
+320	es_w_construir	construir	verb	work	to build	يبني		construyo, construye, construyen, construí, construyó, construido	irregular=yes
+321	es_w_arreglar	arreglar	verb	home	to fix, to repair	يصلح		arreglo, arreglas, arregla, arreglamos, arreglan, arreglé, arregló, arreglado
+322	es_w_acabar	acabar	verb	actions	to finish	ينهي		acabo, acabas, acaba, acabamos, acaban, acabé, acabó, acabado
+323	es_w_disfrutar	disfrutar	verb	feelings	to enjoy	يستمتع		disfruto, disfrutas, disfruta, disfrutamos, disfrutan, disfruté, disfrutó
+324	es_w_contestar	contestar	verb	communication	to answer	يجيب		contesto, contestas, contesta, contestamos, contestan, contesté, contestó
+325	es_w_explicar	explicar	verb	communication	to explain	يشرح		explico, explicas, explica, explicamos, explican, expliqué, explicó
+326	es_w_preparar	preparar	verb	food	to prepare	يحضّر		preparo, preparas, prepara, preparamos, preparan, preparé, preparó, preparado
+327	es_w_pedir	pedir	verb	food	to ask for, to order	يطلب		pido, pides, pide, pedimos, piden, pedí, pidió, pedido	irregular=yes
+328	es_w_ahorrar	ahorrar	verb	shopping	to save (money)	يدّخر		ahorro, ahorras, ahorra, ahorramos, ahorran, ahorré, ahorró		es_ahorrar
+329	es_w_tocar	tocar	verb	senses	to touch; to play (music)	يلمس؛ يعزف		toco, tocas, toca, tocamos, tocan, toqué, tocó, toques
+330	es_w_cortar	cortar	verb	actions	to cut	يقطع		corto, cortas, corta, cortamos, cortan, corté, cortó
+331	es_w_odiar	odiar	verb	feelings	to hate	يكره		odio, odias, odia, odiamos, odian
+332	es_w_doler	doler	verb	health	to hurt	يؤلم		duele, duelen, dolió	irregular=yes
+333	es_w_aprobar	aprobar	verb	school	to pass (an exam)	ينجح في		apruebo, apruebas, aprueba, aprobamos, aprueban, aprobé, aprobó, aprobado	irregular=yes	es_aprobar
+334	es_w_devolver	devolver	verb	actions	to give back, to return	يُرجع		devuelvo, devuelves, devuelve, devolvemos, devuelven, devolví, devolvió, devuelto	irregular=yes
+335	es_w_sonreir	sonreír	verb	feelings	to smile	يبتسم		sonrío, sonríes, sonríe, sonreímos, sonríen, sonrió
+336	es_w_preocuparse	preocuparse	verb	feelings	to worry	يقلق		preocupo, preocupas, preocupa, preocupan, preocupes
+337	es_w_prestar	prestar	verb	shopping	to lend	يُعير		presto, prestas, presta, prestamos, prestan, presté, prestó
+338	es_w_costar	costar	verb	shopping	to cost	يكلّف		cuesta, cuestan, costó	irregular=yes
+339	es_w_morir	morir	verb	health	to die	يموت		muere, mueren, murió, muerto	irregular=yes
+340	es_w_recibir	recibir	verb	communication	to receive	يستلم		recibo, recibes, recibe, recibimos, reciben, recibí, recibiste, recibió
+341	es_w_repetir	repetir	verb	communication	to repeat	يكرر		repito, repites, repite, repetimos, repiten, repetí, repitió	irregular=yes
+342	es_w_probar	probar	verb	food	to try, to taste	يجرّب، يتذوق		pruebo, pruebas, prueba, probamos, prueban, probé, probó	irregular=yes
+343	es_w_descansar	descansar	verb	routine	to rest	يرتاح		descanso, descansas, descansa, descansamos, descansan, descansé, descansó
+344	es_w_ofrecer	ofrecer	verb	people	to offer	يعرض		ofrezco, ofreces, ofrece, ofrecemos, ofrecen, ofrecí, ofreció
+345	es_w_prometer	prometer	verb	communication	to promise	يعد		prometo, prometes, promete, prometemos, prometen, prometí, prometió
+346	es_w_compartir	compartir	verb	people	to share	يشارك		comparto, compartes, comparte, compartimos, comparten, compartí, compartió
+347	es_w_mejorar	mejorar	verb	school	to improve	يحسّن		mejoro, mejoras, mejora, mejoramos, mejoran, mejoré, mejoró, mejorado
+348	es_w_decidir	decidir	verb	mind	to decide	يقرر		decido, decides, decide, decidimos, deciden, decidí, decidió, decidido
+349	es_w_permitir	permitir	verb	function	to allow	يسمح		permito, permite, permiten, permitió, permitido
+350	es_w_desear	desear	verb	feelings	to wish, to want	يتمنى		deseo, deseas, desea, deseamos, desean
+351	es_w_saltar	saltar	verb	leisure	to jump	يقفز		salto, saltas, salta, saltamos, saltan, salté, saltó
+352	es_w_vestirse	vestirse	verb	clothes	to get dressed	يرتدي ملابسه		visto, vistes, viste, vestimos, visten, vestí, vistió	irregular=yes
+353	es_w_despertarse	despertarse	verb	routine	to wake up	يستيقظ		despierto, despiertas, despierta, despertamos, despiertan, desperté, despertó	irregular=yes
+354	es_w_levantarse	levantarse	verb	routine	to get up	ينهض		levanto, levantas, levanta, levantamos, levantan, levanté, levantó		es_levantarse
+355	es_w_ducharse	ducharse	verb	routine	to shower	يستحم		ducho, duchas, ducha, duchamos, duchan, duché, duchó
+356	es_w_cenar	cenar	verb	food	to have dinner	يتعشى		ceno, cenas, cena, cenamos, cenan, cené, cenó
+357	es_w_desayunar	desayunar	verb	food	to have breakfast	يفطر		desayuno, desayunas, desayuna, desayunamos, desayunan, desayuné, desayunaste, desayunó
+358	es_w_almorzar	almorzar	verb	food	to have lunch	يتغدى		almuerzo, almuerzas, almuerza, almorzamos, almuerzan, almorcé, almorzó	irregular=yes
+359	es_w_contar	contar	verb	communication	to tell; to count	يحكي؛ يعدّ		cuento, cuentas, cuenta, contamos, cuentan, conté, contó	irregular=yes
+360	es_w_ensenar	enseñar	verb	school	to teach; to show	يعلّم؛ يُري		enseño, enseñas, enseña, enseñamos, enseñan, enseñé, enseñó
+361	es_w_invitar	invitar	verb	people	to invite	يدعو		invito, invitas, invita, invitamos, invitan, invité, invitó, invitaron
+362	es_w_celebrar	celebrar	verb	leisure	to celebrate	يحتفل		celebro, celebras, celebra, celebramos, celebran, celebré, celebró
+363	es_w_alquilar	alquilar	verb	home	to rent	يستأجر		alquilo, alquilas, alquila, alquilamos, alquilan, alquilé, alquiló
+364	es_w_reservar	reservar	verb	travel	to book	يحجز		reservo, reservas, reserva, reservamos, reservan, reservé, reservó
+365	es_w_regalar	regalar	verb	people	to give (as a present)	يُهدي		regalo, regalas, regala, regalamos, regalan, regalé, regaló
+366	es_w_nacer	nacer	verb	people	to be born	يولد		nací, nació, nacieron	irregular=yes
+367	es_w_casarse	casarse	verb	people	to get married	يتزوج		caso, casas, casa, casamos, casan, casé, casó, casaron
+368	es_w_intentar	intentar	verb	mind	to try	يحاول		intento, intentas, intenta, intentamos, intentan, intenté, intentó
+369	es_w_ocurrir	ocurrir	verb	function	to happen	يحدث		ocurre, ocurren, ocurrió
+370	es_w_servir	servir	verb	food	to serve	يقدّم		sirvo, sirves, sirve, servimos, sirven, serví, sirvió	irregular=yes
+371	es_w_cruzar	cruzar	verb	movement	to cross	يعبر		cruzo, cruzas, cruza, cruzamos, cruzan, crucé, cruzó
+372	es_w_girar	girar	verb	movement	to turn	ينعطف		giro, giras, gira, giramos, giran, giré, giró
+373	es_w_llenar	llenar	verb	actions	to fill	يملأ		lleno, llenas, llena, llenamos, llenan, llené, llenó
+374	es_w_mostrar	mostrar	verb	actions	to show	يُري		muestro, muestras, muestra, mostramos, muestran, mostré, mostró	irregular=yes
+375	es_w_lunes	lunes	noun	time	Monday	الاثنين			gender=m; article=el
+376	es_w_viernes	viernes	noun	time	Friday	الجمعة			gender=m; article=el
+377	es_w_sabado	sábado	noun	time	Saturday	السبت			gender=m; article=el
+378	es_w_domingo	domingo	noun	time	Sunday	الأحد			gender=m; article=el
+379	es_w_verano	verano	noun	weather	summer	صيف			gender=m; article=el
+380	es_w_invierno	invierno	noun	weather	winter	شتاء			gender=m; article=el
+381	es_w_vacaciones	vacaciones	noun	leisure	holidays	عطلة			gender=f; article=las	es_vacaciones
+382	es_w_fin_de_semana	fin de semana	noun	time	weekend	عطلة نهاية الأسبوع			gender=m; article=el
+383	es_w_edad	edad	noun	people	age	عمر			gender=f; article=la
+384	es_w_tio	tío	noun	family	uncle	عم، خال		tía, tíos, tías	gender=m; article=el
+385	es_w_primo	primo	noun	family	cousin	ابن العم أو الخال			gender=m; article=el
+386	es_w_vecino	vecino	noun	people	neighbour	جار			gender=m; article=el
+387	es_w_estudiante	estudiante	noun	school	student	طالب			gender=mf; article=el
+388	es_w_jefe	jefe	noun	work	boss	مدير		jefa	gender=m; article=el
+389	es_w_conductor	conductor	noun	travel	driver	سائق		conductora	gender=m; article=el
+390	es_w_policia	policía	noun	places	police	شرطة			gender=f; article=la	es_ev_policia
+391	es_w_cliente	cliente	noun	work	customer, client	زبون			gender=mf; article=el	es_cliente
+392	es_w_equipo	equipo	noun	leisure	team	فريق			gender=m; article=el
+393	es_w_grupo	grupo	noun	people	group	مجموعة			gender=m; article=el
+394	es_w_cuerpo	cuerpo	noun	body	body	جسم			gender=m; article=el
+395	es_w_cara	cara	noun	body	face	وجه			gender=f; article=la
+396	es_w_pelo	pelo	noun	body	hair	شعر			gender=m; article=el
+397	es_w_boca	boca	noun	body	mouth	فم			gender=f; article=la
+398	es_w_oreja	oreja	noun	body	ear	أذن			gender=f; article=la
+399	es_w_brazo	brazo	noun	body	arm	ذراع			gender=m; article=el
+400	es_w_pierna	pierna	noun	body	leg	ساق			gender=f; article=la
+401	es_w_pie	pie	noun	body	foot	قدم			gender=m; article=el
+402	es_w_corazon	corazón	noun	body	heart	قلب		corazones	gender=m; article=el
+403	es_w_diente	diente	noun	body	tooth	سنّ			gender=m; article=el
+404	es_w_dolor	dolor	noun	health	pain	ألم			gender=m; article=el
+405	es_w_fiebre	fiebre	noun	health	fever	حمّى			gender=f; article=la	es_fiebre
+406	es_w_medicina	medicina	noun	health	medicine	دواء			gender=f; article=la
+407	es_w_hospital	hospital	noun	health	hospital	مستشفى			gender=m; article=el	es_ev_hospital
+408	es_w_farmacia	farmacia	noun	health	pharmacy	صيدلية			gender=f; article=la	es_farmacia
+409	es_w_jardin	jardín	noun	home	garden	حديقة		jardines	gender=m; article=el
+410	es_w_pared	pared	noun	home	wall	جدار			gender=f; article=la
+411	es_w_suelo	suelo	noun	home	floor	أرضية			gender=m; article=el
+412	es_w_silla	silla	noun	home	chair	كرسي			gender=f; article=la
+413	es_w_caja	caja	noun	home	box	صندوق			gender=f; article=la
+414	es_w_bolso	bolso	noun	travel	bag	حقيبة			gender=m; article=el
+415	es_w_llave	llave	noun	home	key	مفتاح			gender=f; article=la	es_ev_llave
+416	es_w_reloj	reloj	noun	home	clock, watch	ساعة		relojes	gender=m; article=el
+417	es_w_luz	luz	noun	home	light	ضوء		luces	gender=f; article=la
+418	es_w_foto	foto	noun	leisure	photo	صورة			gender=f; article=la
+419	es_w_carta	carta	noun	communication	letter	رسالة			gender=f; article=la
+420	es_w_papel	papel	noun	school	paper	ورق			gender=m; article=el
+421	es_w_boligrafo	bolígrafo	noun	school	pen	قلم حبر			gender=m; article=el
+422	es_w_vaso	vaso	noun	food	glass	كوب			gender=m; article=el
+423	es_w_taza	taza	noun	food	cup	فنجان			gender=f; article=la
+424	es_w_plato	plato	noun	food	plate; dish	صحن؛ طبق			gender=m; article=el
+425	es_w_arroz	arroz	noun	food	rice	أرز			gender=m; article=el
+426	es_w_carne	carne	noun	food	meat	لحم			gender=f; article=la
+427	es_w_pollo	pollo	noun	food	chicken	دجاج			gender=m; article=el
+428	es_w_pescado	pescado	noun	food	fish (food)	سمك			gender=m; article=el
+429	es_w_huevo	huevo	noun	food	egg	بيضة			gender=m; article=el
+430	es_w_fruta	fruta	noun	food	fruit	فاكهة			gender=f; article=la
+431	es_w_manzana	manzana	noun	food	apple	تفاحة			gender=f; article=la
+432	es_w_verdura	verdura	noun	food	vegetables	خضار			gender=f; article=la
+433	es_w_leche	leche	noun	food	milk	حليب			gender=f; article=la
+434	es_w_azucar	azúcar	noun	food	sugar	سكر			gender=m; article=el
+435	es_w_pastel	pastel	noun	food	cake	كعكة		pasteles	gender=m; article=el
+436	es_w_almuerzo	almuerzo	noun	food	lunch	غداء			gender=m; article=el
+437	es_w_sopa	sopa	noun	food	soup	حساء			gender=f; article=la
+438	es_w_zumo	zumo	noun	food	juice	عصير			gender=m; article=el
+439	es_w_queso	queso	noun	food	cheese	جبن			gender=m; article=el
+440	es_w_postre	postre	noun	food	dessert	حلوى			gender=m; article=el	es_ev_postre
+441	es_w_restaurante	restaurante	noun	food	restaurant	مطعم			gender=m; article=el
+442	es_w_hotel	hotel	noun	travel	hotel	فندق		hoteles	gender=m; article=el
+443	es_w_estacion	estación	noun	travel	station	محطة		estaciones	gender=f; article=la	es_estacion
+444	es_w_aeropuerto	aeropuerto	noun	travel	airport	مطار			gender=m; article=el
+445	es_w_oficina	oficina	noun	work	office	مكتب			gender=f; article=la
+446	es_w_banco	banco	noun	shopping	bank	مصرف			gender=m; article=el
+447	es_w_mercado	mercado	noun	shopping	market	سوق			gender=m; article=el
+448	es_w_parque	parque	noun	places	park	حديقة عامة			gender=m; article=el
+449	es_w_pueblo	pueblo	noun	places	village, town	قرية، بلدة			gender=m; article=el
+450	es_w_rio	río	noun	places	river	نهر			gender=m; article=el
+451	es_w_montana	montaña	noun	places	mountain	جبل			gender=f; article=la
+452	es_w_biblioteca	biblioteca	noun	school	library	مكتبة			gender=f; article=la
+453	es_w_museo	museo	noun	leisure	museum	متحف			gender=m; article=el	es_ev_museo
+454	es_w_avion	avión	noun	travel	plane	طائرة		aviones	gender=m; article=el
+455	es_w_barco	barco	noun	travel	boat, ship	قارب، سفينة			gender=m; article=el
+456	es_w_bicicleta	bicicleta	noun	travel	bicycle	دراجة			gender=f; article=la
+457	es_w_taxi	taxi	noun	travel	taxi	سيارة أجرة			gender=m; article=el
+458	es_w_billete	billete	noun	travel	ticket	تذكرة			gender=m; article=el	es_billete
+459	es_w_mapa	mapa	noun	travel	map	خريطة			gender=m; article=el	es_ev_mapa
+460	es_w_equipaje	equipaje	noun	travel	luggage	أمتعة			gender=m; article=el	es_ev_equipaje
+461	es_w_ordenador	ordenador	noun	work	computer	حاسوب		ordenadores	gender=m; article=el
+462	es_w_television	televisión	noun	leisure	television	تلفاز		tele	gender=f; article=la
+463	es_w_correo	correo	noun	communication	mail, email	بريد			gender=m; article=el
+464	es_w_mensaje	mensaje	noun	communication	message	رسالة			gender=m; article=el
+465	es_w_camisa	camisa	noun	clothes	shirt	قميص			gender=f; article=la
+466	es_w_vestido	vestido	noun	clothes	dress	فستان			gender=m; article=el
+467	es_w_zapato	zapato	noun	clothes	shoe	حذاء			gender=m; article=el
+468	es_w_abrigo	abrigo	noun	clothes	coat	معطف			gender=m; article=el
+469	es_w_tarjeta	tarjeta	noun	shopping	card	بطاقة			gender=f; article=la
+470	es_w_pelota	pelota	noun	leisure	ball	كرة			gender=f; article=la
+471	es_w_flor	flor	noun	nature	flower	زهرة		flores	gender=f; article=la
+472	es_w_arbol	árbol	noun	nature	tree	شجرة		árboles	gender=m; article=el
+473	es_w_animal	animal	noun	animals	animal	حيوان		animales	gender=m; article=el
+474	es_w_pajaro	pájaro	noun	animals	bird	طائر			gender=m; article=el
+475	es_w_caballo	caballo	noun	animals	horse	حصان			gender=m; article=el
+476	es_w_cielo	cielo	noun	nature	sky	سماء			gender=m; article=el
+477	es_w_viento	viento	noun	weather	wind	ريح			gender=m; article=el
+478	es_w_nieve	nieve	noun	weather	snow	ثلج			gender=f; article=la
+479	es_w_fuego	fuego	noun	nature	fire	نار			gender=m; article=el
+480	es_w_aire	aire	noun	nature	air	هواء			gender=m; article=el
+481	es_w_razon	razón	noun	mind	reason	سبب		razones	gender=f; article=la
+482	es_w_noticia	noticia	noun	communication	news	خبر			gender=f; article=la
+483	es_w_idioma	idioma	noun	school	language	لغة			gender=m; article=el
+484	es_w_numero	número	noun	numbers	number	رقم			gender=m; article=el
+485	es_w_precio	precio	noun	shopping	price	سعر			gender=m; article=el
+486	es_w_talla	talla	noun	clothes	size	مقاس			gender=f; article=la
+487	es_w_plan	plan	noun	mind	plan	خطة		planes	gender=m; article=el	es_plan
+488	es_w_error	error	noun	school	mistake	خطأ		errores	gender=m; article=el
+489	es_w_reunion	reunión	noun	work	meeting	اجتماع		reuniones	gender=f; article=la	es_reunion
+490	es_w_leccion	lección	noun	school	lesson	درس		lecciones	gender=f; article=la
+491	es_w_deberes	deberes	noun	school	homework	واجبات منزلية			gender=m; article=los
+492	es_w_empresa	empresa	noun	work	company	شركة			gender=f; article=la	es_empresa
+493	es_w_deporte	deporte	noun	leisure	sport	رياضة			gender=m; article=el
+494	es_w_cita	cita	noun	health	appointment	موعد			gender=f; article=la	es_cita
+495	es_w_suerte	suerte	noun	feelings	luck	حظ			gender=f; article=la	es_suerte
+496	es_w_dormitorio	dormitorio	noun	home	bedroom	غرفة نوم			gender=m; article=el	es_dormitorio
+497	es_w_paisaje	paisaje	noun	nature	landscape, view	منظر			gender=m; article=el
+498	es_w_ingles	inglés	noun	school	English (language); English	اللغة الإنجليزية؛ إنجليزي			gender=m; article=el
+499	es_w_euro	euro	noun	shopping	euro	يورو			gender=m; article=el
+500	es_w_verde	verde	adj	descriptions	green	أخضر		verdes
+501	es_w_azul	azul	adj	descriptions	blue	أزرق		azules
+502	es_w_amarillo	amarillo	adj	descriptions	yellow	أصفر
+503	es_w_bajo	bajo	adj	descriptions	short; low	قصير؛ منخفض
+504	es_w_rapido	rápido	adj	descriptions	fast	سريع
+505	es_w_lento	lento	adj	descriptions	slow	بطيء
+506	es_w_fuerte	fuerte	adj	descriptions	strong	قوي		fuertes
+507	es_w_pobre	pobre	adj	descriptions	poor	فقير		pobres
+508	es_w_lleno	lleno	adj	descriptions	full	ممتلئ
+509	es_w_vacio	vacío	adj	descriptions	empty	فارغ
+510	es_w_oscuro	oscuro	adj	descriptions	dark	مظلم
+511	es_w_mojado	mojado	adj	weather	wet	مبلل
+512	es_w_pesado	pesado	adj	descriptions	heavy	ثقيل
+513	es_w_peligroso	peligroso	adj	descriptions	dangerous	خطير
+514	es_w_ocupado	ocupado	adj	work	busy	مشغول
+515	es_w_enfadado	enfadado	adj	feelings	angry	غاضب
+516	es_w_aburrido	aburrido	adj	feelings	bored; boring	ملول؛ ممل
+517	es_w_interesante	interesante	adj	descriptions	interesting	مثير للاهتمام		interesantes
+518	es_w_divertido	divertido	adj	descriptions	fun, funny	مسلٍّ، مضحك
+519	es_w_raro	raro	adj	descriptions	strange	غريب
+520	es_w_sencillo	sencillo	adj	descriptions	simple	بسيط
+521	es_w_especial	especial	adj	descriptions	special	خاص، مميز		especiales
+522	es_w_famoso	famoso	adj	descriptions	famous	مشهور
+523	es_w_favorito	favorito	adj	feelings	favourite	مفضّل
+524	es_w_perfecto	perfecto	adj	descriptions	perfect	مثالي
+525	es_w_terrible	terrible	adj	descriptions	terrible	فظيع		terribles
+526	es_w_maravilloso	maravilloso	adj	descriptions	wonderful	رائع
+527	es_w_delicioso	delicioso	adj	food	delicious	لذيذ
+528	es_w_sucio	sucio	adj	descriptions	dirty	متسخ
+529	es_w_casado	casado	adj	people	married	متزوج
+530	es_w_amable	amable	adj	people	kind	لطيف		amables
+531	es_w_comodo	cómodo	adj	descriptions	comfortable	مريح
+532	es_w_preocupado	preocupado	adj	feelings	worried	قلق
+533	es_w_guapo	guapo	adj	descriptions	good-looking	وسيم
+534	es_w_simpatico	simpático	adj	people	nice, friendly	ودود
+535	es_w_propio	propio	adj	function	own	خاصّ
+536	es_w_menor	menor	adj	people	younger	أصغر سنًا		menores
+537	es_w_seco	seco	adj	weather	dry	جاف
+538	es_w_limpio	limpio	adj	descriptions	clean	نظيف
+539	es_w_ambos	ambos	det	function	both	كلا		ambas
+540	es_w_varios	varios	det	function	several	عدة		varias
+541	es_w_alguno	alguno	det	function	some, any	بعض، أيّ		algún, alguna, algunos, algunas
+542	es_w_ninguno	ninguno	det	function	none, no	لا أحد، لا شيء		ningún, ninguna
+543	es_w_cualquier	cualquier	det	function	any	أيّ		cualquiera
+544	es_w_tampoco	tampoco	adv	function	neither, not either	ولا أيضًا
+545	es_w_menos	menos	adv	function	less	أقل
+546	es_w_aun	aún	adv	time	still, yet	ما زال
+547	es_w_ademas	además	adv	function	also, besides	بالإضافة إلى ذلك
+548	es_w_realmente	realmente	adv	function	really	حقًا
+549	es_w_finalmente	finalmente	adv	time	finally	أخيرًا
+550	es_w_normalmente	normalmente	adv	time	usually	عادةً				es_normalmente
+551	es_w_rapidamente	rápidamente	adv	descriptions	quickly	بسرعة
+552	es_w_despacio	despacio	adv	descriptions	slowly	ببطء
+553	es_w_arriba	arriba	adv	places	up, upstairs	فوق
+554	es_w_abajo	abajo	adv	places	down, downstairs	تحت
+555	es_w_detras	detrás	adv	places	behind	خلف
+556	es_w_delante	delante	adv	places	in front	أمام
+557	es_w_enfrente	enfrente	adv	places	opposite	مقابل
+558	es_w_encima	encima	adv	places	on top	فوق
+559	es_w_debajo	debajo	adv	places	underneath	تحت
+560	es_w_alrededor	alrededor	adv	places	around	حول
+561	es_w_hacia	hacia	prep	places	towards	نحو
+562	es_w_contra	contra	prep	function	against	ضد
+563	es_w_segun	según	prep	function	according to	وفقًا لـ
+564	es_w_izquierda	izquierda	noun	places	left	يسار			gender=f; article=la	es_izquierda
+565	es_w_derecha	derecha	noun	places	right	يمين			gender=f; article=la	es_derecha
+566	es_w_seis	seis	num	numbers	six	ستة
+567	es_w_siete	siete	num	numbers	seven	سبعة
+568	es_w_ocho	ocho	num	numbers	eight	ثمانية
+569	es_w_nueve	nueve	num	numbers	nine	تسعة
+570	es_w_veinte	veinte	num	numbers	twenty	عشرون
+571	es_w_treinta	treinta	num	numbers	thirty	ثلاثون
+572	es_w_mil	mil	num	numbers	thousand	ألف
+573	es_w_segundo	segundo	adj	numbers	second	ثانٍ
+574	es_w_mitad	mitad	noun	numbers	half	نصف			gender=f; article=la
+575	es_w_tipo	tipo	noun	function	type, kind	نوع			gender=m; article=el
+576	es_w_rato	rato	noun	time	while, short time	برهة			gender=m; article=el
+577	es_w_fecha	fecha	noun	time	date	تاريخ			gender=f; article=la
+578	es_w_futuro	futuro	noun	time	future	مستقبل			gender=m; article=el
+579	es_w_pasado	pasado	adj	time	last, past	الماضي
+580	es_w_salud	salud	noun	health	health	صحة			gender=f; article=la
+581	es_w_espanol	español	noun	school	Spanish (language); Spanish	اللغة الإسبانية؛ إسباني			gender=m; article=el
+582	es_w_martes	martes	noun	time	Tuesday	الثلاثاء			gender=m; article=el
+583	es_w_miercoles	miércoles	noun	time	Wednesday	الأربعاء			gender=m; article=el
+584	es_w_jueves	jueves	noun	time	Thursday	الخميس			gender=m; article=el
+585	es_w_primavera	primavera	noun	weather	spring	ربيع			gender=f; article=la
+586	es_w_otono	otoño	noun	weather	autumn	خريف			gender=m; article=el
+587	es_w_sal	sal	noun	food	salt	ملح			gender=f; article=la
+588	es_w_nariz	nariz	noun	body	nose	أنف			gender=f; article=la
+589	es_w_espalda	espalda	noun	body	back	ظهر			gender=f; article=la
+590	es_w_piso	piso	noun	home	flat; floor (storey)	شقة؛ طابق			gender=m; article=el
+591	es_w_sofa	sofá	noun	home	sofa	أريكة			gender=m; article=el
+592	es_w_metro	metro	noun	travel	underground, metro	مترو			gender=m; article=el
+593	es_w_maleta	maleta	noun	travel	suitcase	حقيبة سفر			gender=f; article=la
+594	es_w_centro	centro	noun	places	centre	مركز			gender=m; article=el
+595	es_w_puente	puente	noun	places	bridge	جسر			gender=m; article=el
+596	es_w_gafas	gafas	noun	clothes	glasses	نظارة			gender=f; article=las
+597	es_w_quince	quince	num	numbers	fifteen	خمسة عشر
+598	es_w_cuchara	cuchara	noun	food	spoon	ملعقة			gender=f; article=la
+599	es_w_tenedor	tenedor	noun	food	fork	شوكة		tenedores	gender=m; article=el
+600	es_w_camarero	camarero	noun	food	waiter	نادل			gender=m; article=el

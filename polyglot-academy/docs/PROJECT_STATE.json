@@ -156,9 +156,10 @@
       },
       "es": {
         "levels": [
-          1
+          1,
+          2
         ],
-        "last_rank": 300
+        "last_rank": 600
       },
       "fr": {
         "levels": [
@@ -198,7 +199,7 @@
       }
     },
     "resume_at": {
-      "language": "es",
+      "language": "fr",
       "level": 2,
       "next_rank": 301,
       "note": "Level 2 in progress (order: en, es, fr, zh, ar, tr, ur, ms); tools/scan_wordlist.py <lang> --level 2 must report 0 unknown before committing."
