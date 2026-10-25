@@ -97,6 +97,8 @@ class WordListTest {
         assertTrue(m.contains(en[0], "She went home.") && m.contains(en[1], "Two big cities.") && m.contains(en[2], "It stopped."))
         assertEquals(listOf("zebra"), m.outOfRange(en[0], WordExample("Go, zebra, go!", Gloss("", ""))))
         assertTrue(m.tokens("Ali and Mona go.", listOf("Ali", "Mona")) == listOf("and", "go"))
+        assertEquals(listOf("mi", "hermana", "se", "llama"), WordMatcher(LanguageCode.SPANISH, emptyList()).tokens("Mi hermana se llama Ana.", listOf("Ana")),
+            "a name is removed as a whole word only")
 
         val fr = listOf(entry(LanguageCode.FRENCH, 1, "le", listOf("l'", "la", "les")), entry(LanguageCode.FRENCH, 2, "eau"), entry(LanguageCode.FRENCH, 3, "petit"))
         val mf = WordMatcher(LanguageCode.FRENCH, fr)

@@ -1,0 +1,601 @@
+rank	sentence	en	ar	names
+1	La casa de mi padre es grande.	My father's house is big.	بيت أبي كبير.
+1	Soy de una ciudad pequeña.	I'm from a small city.	أنا من مدينة صغيرة.
+2	El perro está en la casa.	The dog is in the house.	الكلب في البيت.
+2	Los niños juegan en la calle.	The children play in the street.	يلعب الأطفال في الشارع.
+3	Creo que él tiene un perro.	I think he has a dog.	أعتقد أن لديه كلبًا.
+3	El libro que me diste es muy bueno.	The book you gave me is very good.	الكتاب الذي أعطيتني إياه جيد جدًا.
+4	Tengo un hermano y una hermana.	I have a brother and a sister.	لديّ أخ وأخت.
+4	Comemos pan y bebemos café.	We eat bread and drink coffee.	نأكل الخبز ونشرب القهوة.
+5	Voy a la escuela todos los días.	I go to school every day.	أذهب إلى المدرسة كل يوم.
+5	Mañana vamos al mar.	Tomorrow we're going to the sea.	غدًا سنذهب إلى البحر.
+6	Mi madre está en casa.	My mother is at home.	أمي في البيت.
+6	Vivimos en una ciudad grande.	We live in a big city.	نعيش في مدينة كبيرة.
+7	Necesito un libro nuevo.	I need a new book.	أحتاج إلى كتاب جديد.
+7	Quiero una casa con una ventana grande.	I want a house with a big window.	أريد بيتًا فيه نافذة كبيرة.
+8	Mi padre es médico.	My father is a doctor.	أبي طبيب.
+8	Ella era profesora en mi escuela.	She was a teacher at my school.	كانت معلّمة في مدرستي.
+9	Mi hermana se llama Ana.	My sister's name is Ana.	اسم أختي آنا.	Ana
+9	Él se fue a casa temprano.	He went home early.	ذهب إلى البيت مبكرًا.
+10	No tengo dinero ahora.	I don't have any money now.	ليس لديّ مال الآن.
+10	No, no quiero café.	No, I don't want coffee.	لا، لا أريد قهوة.
+11	Hay un perro en la calle.	There is a dog in the street.	هناك كلب في الشارع.
+11	Nunca he estado en este país.	I have never been to this country.	لم أزر هذا البلد قط.
+12	Gracias por tu ayuda.	Thank you for your help.	شكرًا على مساعدتك.
+12	Camino por la ciudad cada tarde.	I walk around the city every afternoon.	أمشي في المدينة كل مساء.
+13	Vivo con mi familia.	I live with my family.	أعيش مع عائلتي.
+13	¿Quieres venir conmigo a la tienda?	Do you want to come to the shop with me?	هل تريد أن تأتي معي إلى المتجر؟
+14	Su casa es muy bonita.	His house is very pretty.	بيته جميل جدًا.
+14	Ellos viven con sus hijos.	They live with their children.	يعيشون مع أبنائهم.
+15	Esta comida es para los niños.	This food is for the children.	هذا الطعام للأطفال.
+15	Necesito dinero para el viaje.	I need money for the trip.	أحتاج مالًا للرحلة.
+16	Él habla como su padre.	He talks like his father.	يتكلم مثل أبيه.
+16	Trabajo como profesor en una escuela.	I work as a teacher at a school.	أعمل معلّمًا في مدرسة.
+17	Estoy muy cansado hoy.	I'm very tired today.	أنا متعب جدًا اليوم.
+17	¿Dónde están mis libros?	Where are my books?	أين كتبي؟
+18	Yo tengo dos hermanos.	I have two brothers.	لديّ أخوان.
+18	¿Tienes tiempo mañana por la tarde?	Do you have time tomorrow afternoon?	هل لديك وقت غدًا بعد الظهر؟
+19	No lo sé, lo siento.	I don't know, I'm sorry.	لا أعرف، آسف.
+19	Lo vi ayer en la tienda.	I saw him yesterday at the shop.	رأيته أمس في المتجر.
+20	Todo está listo para la cena.	Everything is ready for dinner.	كل شيء جاهز للعشاء.
+20	Todos mis amigos están aquí.	All my friends are here.	كل أصدقائي هنا.
+21	Es pequeño pero muy bonito.	It's small but very pretty.	إنه صغير لكنه جميل جدًا.
+21	Quiero ir, pero no puedo.	I want to go, but I can't.	أريد أن أذهب، لكنني لا أستطيع.
+22	Quiero más pan, por favor.	I'd like more bread, please.	أريد المزيد من الخبز من فضلك.
+22	Mi hermano es más alto que yo.	My brother is taller than me.	أخي أطول مني.
+23	¿Qué haces esta noche?	What are you doing tonight?	ماذا تفعل هذه الليلة؟
+23	Hoy hace mucho calor.	It's very hot today.	الجو حار جدًا اليوم.
+24	¿Quieres café o té?	Do you want coffee or tea?	هل تريد قهوة أم شايًا؟
+24	Podemos ir hoy o mañana.	We can go today or tomorrow.	يمكننا أن نذهب اليوم أو غدًا.
+25	¿Me puedes ayudar, por favor?	Can you help me, please?	هل يمكنك مساعدتي من فضلك؟
+25	No puedo dormir esta noche.	I can't sleep tonight.	لا أستطيع النوم هذه الليلة.
+26	¿Qué dice tu madre?	What does your mother say?	ماذا تقول أمك؟
+26	Él me dijo su nombre.	He told me his name.	أخبرني باسمه.
+27	Este libro es muy bueno.	This book is very good.	هذا الكتاب جيد جدًا.
+27	Esta casa es nueva.	This house is new.	هذا البيت جديد.
+28	Vamos a casa ahora.	Let's go home now.	لنذهب إلى البيت الآن.
+28	Ayer fui a la playa con mis amigos.	Yesterday I went to the beach with my friends.	أمس ذهبت إلى الشاطئ مع أصدقائي.
+29	Quiero otro café, por favor.	I'd like another coffee, please.	أريد قهوة أخرى من فضلك.
+29	Mi hermano vive en otra ciudad.	My brother lives in another city.	يعيش أخي في مدينة أخرى.
+30	Ese hombre es mi profesor.	That man is my teacher.	ذلك الرجل معلّمي.
+30	Eso es muy importante.	That is very important.	ذلك مهم جدًا.
+31	Si llueve, no vamos a la playa.	If it rains, we won't go to the beach.	إذا أمطرت فلن نذهب إلى الشاطئ.
+31	Si tienes hambre, hay pan en la mesa.	If you're hungry, there's bread on the table.	إذا كنت جائعًا، يوجد خبز على الطاولة.
+32	Ya es muy tarde.	It's already very late.	لقد تأخر الوقت كثيرًا.
+32	¿Ya terminaste tu trabajo?	Have you finished your work yet?	هل أنهيت عملك؟
+33	Yo vivo aquí con mi familia.	I live here with my family.	أنا أعيش هنا مع عائلتي.
+33	Mi nombre es Carlos.	My name is Carlos.	اسمي كارلوس.	Carlos
+34	¿Tú eres el nuevo profesor?	Are you the new teacher?	هل أنت المعلّم الجديد؟
+34	Tu casa es muy grande.	Your house is very big.	بيتك كبير جدًا.
+35	Él trabaja en una tienda.	He works in a shop.	هو يعمل في متجر.
+35	Le di el libro ayer.	I gave him the book yesterday.	أعطيته الكتاب أمس.
+36	Ella es mi hermana.	She is my sister.	هي أختي.
+36	Ella siempre llega temprano.	She always arrives early.	هي تصل مبكرًا دائمًا.
+37	Nosotros vivimos cerca de aquí.	We live near here.	نحن نعيش قرب هنا.
+37	Nuestra casa es pequeña.	Our house is small.	بيتنا صغير.
+38	Ellos están en la escuela.	They are at school.	هم في المدرسة.
+38	Ellas son mis amigas.	They are my friends.	هنّ صديقاتي.
+39	¿Usted es el médico?	Are you the doctor?	هل حضرتك الطبيب؟
+39	Muchas gracias a ustedes.	Thank you very much, all of you.	شكرًا جزيلًا لكم.
+40	Sí, hoy tengo tiempo.	Yes, I have time today.	نعم، لديّ وقت اليوم.
+40	Sí, me gusta mucho.	Yes, I like it a lot.	نعم، يعجبني كثيرًا.
+41	Estoy muy bien, gracias.	I'm very well, thank you.	أنا بخير جدًا، شكرًا.
+41	Ella habla muy bien.	She speaks very well.	هي تتكلم جيدًا جدًا.
+42	Hace muy buen tiempo hoy.	The weather is very nice today.	الطقس جميل جدًا اليوم.
+42	Hoy estoy muy contento.	I'm very happy today.	أنا مسرور جدًا اليوم.
+43	Mis amigos están aquí.	My friends are here.	أصدقائي هنا.
+43	¿Vives aquí con tu familia?	Do you live here with your family?	هل تعيش هنا مع عائلتك؟
+44	No puedo hablar ahora.	I can't talk now.	لا أستطيع التحدث الآن.
+44	¿Dónde estás ahora mismo?	Where are you right now?	أين أنت الآن؟
+45	Yo también quiero café.	I want coffee too.	أنا أيضًا أريد قهوة.
+45	Ella también es profesora.	She is a teacher too.	هي أيضًا معلّمة.
+46	Cuando llego a casa, como algo.	When I get home, I eat something.	عندما أصل إلى البيت، آكل شيئًا.
+46	Cuando era niño, jugaba mucho.	When I was a child, I played a lot.	عندما كنت طفلًا، كنت ألعب كثيرًا.
+47	¿Qué tienes en la mano?	What do you have in your hand?	ماذا في يدك؟
+47	¿Qué hora es ahora?	What time is it now?	كم الساعة الآن؟
+48	¿Dónde vive tu familia?	Where does your family live?	أين تعيش عائلتك؟
+48	¿De dónde es tu profesor?	Where is your teacher from?	من أين معلّمك؟
+49	¿Quién es ese hombre?	Who is that man?	مَن ذلك الرجل؟
+49	¿Quién quiere más café?	Who wants more coffee?	مَن يريد المزيد من القهوة؟
+50	¿Cómo estás hoy, amigo?	How are you today?	كيف حالك اليوم؟
+50	¿Cómo se llama tu perro?	What's your dog's name?	ما اسم كلبك؟
+51	¿Cuánto dinero tienes ahora?	How much money do you have now?	كم من المال لديك؟
+51	¿Cuántos hijos tienes tú?	How many children do you have?	كم ولدًا لديك؟
+52	No tengo nada que hacer.	I have nothing to do.	ليس لديّ ما أفعله.
+52	No hay nada en la mesa.	There is nothing on the table.	لا يوجد شيء على الطاولة.
+53	¿Quieres comer algo ahora?	Do you want to eat something now?	هل تريد أن تأكل شيئًا الآن؟
+53	Tengo algo para ti.	I have something for you.	لديّ شيء لك.
+54	Nunca bebo café por la noche.	I never drink coffee at night.	لا أشرب القهوة ليلًا أبدًا.
+54	Ella nunca llega tarde.	She is never late.	هي لا تتأخر أبدًا.
+55	Siempre como pan en el desayuno.	I always eat bread at breakfast.	آكل الخبز دائمًا في الفطور.
+55	Mi abuela siempre está contenta.	My grandmother is always happy.	جدتي مسرورة دائمًا.
+56	Tengo mucho trabajo hoy.	I have a lot of work today.	لديّ عمل كثير اليوم.
+56	Hay muchas personas en la calle.	There are many people in the street.	هناك أشخاص كثيرون في الشارع.
+57	Hoy tengo poco tiempo.	I have little time today.	لديّ وقت قليل اليوم.
+57	Quiero un poco de agua.	I'd like a little water.	أريد قليلًا من الماء.
+58	Es un buen libro.	It's a good book.	إنه كتاب جيد.
+58	Buenos días, ¿cómo estás?	Good morning, how are you?	صباح الخير، كيف حالك؟
+59	Hoy hace mal tiempo.	The weather is bad today.	الطقس سيئ اليوم.
+59	No es una mala idea.	It's not a bad idea.	ليست فكرة سيئة.
+60	Tienen una casa muy grande.	They have a very big house.	لديهم بيت كبير جدًا.
+60	Es una gran ciudad.	It's a great city.	إنها مدينة عظيمة.
+61	Mi habitación es pequeña.	My room is small.	غرفتي صغيرة.
+61	Tengo un perro pequeño.	I have a small dog.	لديّ كلب صغير.
+62	Tengo un teléfono nuevo.	I have a new phone.	لديّ هاتف جديد.
+62	Ella tiene una casa nueva.	She has a new house.	لديها بيت جديد.
+63	Mi coche es muy viejo.	My car is very old.	سيارتي قديمة جدًا.
+63	Mi abuelo ya es viejo.	My grandfather is old now.	جدي أصبح كبيرًا في السن.
+64	Vivimos en la misma calle.	We live on the same street.	نعيش في الشارع نفسه.
+64	Siempre comemos lo mismo.	We always eat the same thing.	نأكل الشيء نفسه دائمًا.
+65	¿Quieres ver una película?	Do you want to watch a film?	هل تريد أن تشاهد فيلمًا؟
+65	Te vi ayer en la calle.	I saw you in the street yesterday.	رأيتك أمس في الشارع.
+66	¿Me das el libro, por favor?	Will you give me the book, please?	هل تعطيني الكتاب من فضلك؟
+66	Mi padre me dio dinero.	My father gave me money.	أعطاني أبي مالًا.
+67	No sé dónde está.	I don't know where it is.	لا أعرف أين هو.
+67	¿Sabes dónde vive Ana?	Do you know where Ana lives?	هل تعرف أين تسكن آنا؟	Ana
+68	Quiero un café, por favor.	I'd like a coffee, please.	أريد قهوة من فضلك.
+68	¿Quieres venir a la fiesta?	Do you want to come to the party?	هل تريد أن تأتي إلى الحفلة؟
+69	El tren llega a las cinco.	The train arrives at five.	يصل القطار في الخامسة.
+69	Llegué a casa muy tarde.	I got home very late.	وصلت إلى البيت متأخرًا جدًا.
+70	¿Qué te pasa hoy?	What's wrong with you today?	ما بك اليوم؟
+70	Pasamos el día en la playa.	We spent the day at the beach.	قضينا اليوم على الشاطئ.
+71	Debes comer algo ahora.	You should eat something now.	يجب أن تأكل شيئًا الآن.
+71	Mañana debemos llegar temprano.	Tomorrow we must arrive early.	يجب أن نصل مبكرًا.
+72	Pon el libro en la mesa.	Put the book on the table.	ضع الكتاب على الطاولة.
+72	¿Dónde pusiste mi teléfono?	Where did you put my phone?	أين وضعت هاتفي؟
+73	Parece una buena idea.	It seems like a good idea.	تبدو فكرة جيدة.
+73	Tu hermano parece cansado.	Your brother looks tired.	يبدو أخوك متعبًا.
+74	Me quedo en casa hoy.	I'm staying at home today.	سأبقى في البيت اليوم.
+74	No queda pan en casa.	There's no bread left at home.	لم يبقَ خبز في البيت.
+75	Creo que va a llover.	I think it's going to rain.	أعتقد أنها ستمطر.
+75	No creo su historia.	I don't believe his story.	لا أصدّق قصته.
+76	¿Puedo hablar con usted?	May I speak with you?	هل يمكنني التحدث مع حضرتك؟
+76	Hablamos mucho por teléfono.	We talk a lot on the phone.	نتحدث كثيرًا بالهاتف.
+77	Llevo a mis hijos a la escuela.	I take my children to school.	آخذ أطفالي إلى المدرسة.
+77	¿Qué llevas en la mano?	What are you carrying in your hand?	ماذا تحمل في يدك؟
+78	Dejé mi teléfono en casa.	I left my phone at home.	تركت هاتفي في البيت.
+78	Deja la puerta abierta, por favor.	Leave the door open, please.	اترك الباب مفتوحًا من فضلك.
+79	Sigo en la misma ciudad.	I'm still in the same city.	ما زلت في المدينة نفسها.
+79	Ella sigue en el trabajo.	She is still at work.	ما زالت في العمل.
+80	No encuentro mis libros.	I can't find my books.	لا أجد كتبي.
+80	Encontré un buen trabajo.	I found a good job.	وجدت عملًا جيدًا.
+81	Hola, me llamo Pedro.	Hello, my name is Pedro.	مرحبًا، اسمي بيدرو.	Pedro
+81	Te llamo esta noche.	I'll call you tonight.	سأتصل بك هذه الليلة.
+82	¿Vienes a mi casa mañana?	Are you coming to my house tomorrow?	هل تأتي إلى بيتي غدًا؟
+82	Mi madre vino ayer por la tarde.	My mother came yesterday afternoon.	جاءت أمي أمس بعد الظهر.
+83	¿Qué piensas de esta idea?	What do you think of this idea?	ما رأيك في هذه الفكرة؟
+83	Pienso en ti todos los días.	I think of you every day.	أفكر فيك كل يوم.
+84	Salgo del trabajo a las cinco.	I leave work at five.	أخرج من العمل في الخامسة.
+84	Ayer salimos con nuestros amigos.	Yesterday we went out with our friends.	أمس خرجنا مع أصدقائنا.
+85	Vuelvo a casa muy tarde.	I come home very late.	أعود إلى البيت متأخرًا جدًا.
+85	¿Cuándo vuelves del viaje?	When are you coming back from the trip?	متى تعود من الرحلة؟
+86	Tomo el autobús todos los días.	I take the bus every day.	أركب الحافلة كل يوم.
+86	¿Quieres tomar un café?	Do you want to have a coffee?	هل تريد أن تشرب قهوة؟
+87	¿Conoces a mi hermano?	Do you know my brother?	هل تعرف أخي؟
+87	Conocí a mi esposa en la escuela.	I met my wife at school.	تعرّفت على زوجتي في المدرسة.
+88	¿Y dónde vives ahora?	And where do you live now?	أين تسكن الآن؟
+88	Mis abuelos viven cerca del mar.	My grandparents live near the sea.	يسكن جدّاي قرب البحر.
+89	Lo siento, llego tarde.	I'm sorry, I'm late.	آسف، لقد تأخرت.
+89	Me siento muy cansado hoy.	I feel very tired today.	أشعر بتعب شديد اليوم.
+90	Espero el autobús cada mañana.	I wait for the bus every morning.	أنتظر الحافلة كل صباح.
+90	Te espero en la puerta.	I'll wait for you at the door.	سأنتظرك عند الباب.
+91	Busco un trabajo nuevo.	I'm looking for a new job.	أبحث عن عمل جديد.
+91	¿Qué buscas en la tienda?	What are you looking for in the shop?	عمّ تبحث في المتجر؟
+92	No entiendo esta palabra.	I don't understand this word.	لا أفهم هذه الكلمة.
+92	¿Me entiendes bien ahora?	Do you understand me well now?	هل تفهمني جيدًا الآن؟
+93	Mi padre trabaja en una tienda.	My father works in a shop.	يعمل أبي في متجر.
+93	Hoy trabajo desde casa.	Today I'm working from home.	أعمل اليوم من البيت.
+94	Me gusta mucho la música.	I really like music.	أحب الموسيقى كثيرًا.
+94	¿Te gustan los perros?	Do you like dogs?	هل تحب الكلاب؟
+95	Comemos juntos a las dos.	We eat together at two.	نأكل معًا في الثانية.
+95	Los niños comen mucho.	The children eat a lot.	يأكل الأطفال كثيرًا.
+96	Bebo mucha agua cada día.	I drink a lot of water every day.	أشرب ماءً كثيرًا كل يوم.
+96	¿Quieres beber algo frío?	Do you want something cold to drink?	هل تريد أن تشرب شيئًا باردًا؟
+97	El bebé duerme mucho.	The baby sleeps a lot.	ينام الطفل كثيرًا.
+97	No dormí bien ayer por la noche.	I didn't sleep well last night.	لم أنم جيدًا ليلة أمس.
+98	Abre el libro, por favor.	Open the book, please.	افتح الكتاب من فضلك.
+98	La tienda abre a las diez.	The shop opens at ten.	يفتح المتجر في العاشرة.
+99	Cierra la puerta, por favor.	Close the door, please.	أغلق الباب من فضلك.
+99	La tienda está cerrada hoy.	The shop is closed today.	المتجر مغلق اليوم.
+100	Quiero comprar un coche nuevo.	I want to buy a new car.	أريد أن أشتري سيارة جديدة.
+100	Compré pan para la cena.	I bought bread for dinner.	اشتريت خبزًا للعشاء.
+101	¿Puedo pagar la cuenta?	Can I pay the bill?	هل يمكنني دفع الحساب؟
+101	Él pagó la comida.	He paid for the food.	هو دفع ثمن الطعام.
+102	Escribe tu nombre aquí.	Write your name here.	اكتب اسمك هنا.
+102	Mi hermana escribe historias.	My sister writes stories.	أختي تكتب قصصًا.
+103	Leo un libro cada semana.	I read a book every week.	أقرأ كتابًا كل أسبوع.
+103	¿Puedes leer esta palabra?	Can you read this word?	هل تستطيع قراءة هذه الكلمة؟
+104	Estudio todas las noches.	I study every night.	أدرس كل ليلة.
+104	Ella estudia para el examen.	She is studying for the exam.	هي تذاكر للامتحان.
+105	Quiero aprender a cocinar.	I want to learn to cook.	أريد أن أتعلّم الطبخ.
+105	Los niños aprenden mucho en la escuela.	Children learn a lot at school.	يتعلّم الأطفال كثيرًا في المدرسة.
+106	¿Te ayudo con la cena?	Shall I help you with dinner?	هل أساعدك في العشاء؟
+106	Mi hermano me ayudó mucho.	My brother helped me a lot.	ساعدني أخي كثيرًا.
+107	Los niños juegan con el perro.	The children play with the dog.	يلعب الأطفال مع الكلب.
+107	¿Quieres jugar conmigo un poco?	Do you want to play with me for a bit?	هل تريد أن تلعب معي؟
+108	Mira, está lloviendo otra vez.	Look, it's raining again.	انظر، إنها تمطر مرة أخرى.
+108	Me gusta mirar el mar.	I like looking at the sea.	أحب أن أتأمل البحر.
+109	Escucho música en el coche.	I listen to music in the car.	أستمع إلى الموسيقى في السيارة.
+109	¿Me escuchas bien ahora?	Can you hear me well now?	هل تسمعني جيدًا الآن؟
+110	¿Puedo preguntar algo, profesor?	May I ask something, teacher?	هل يمكنني أن أسأل شيئًا يا أستاذ؟
+110	Pregunta al profesor, por favor.	Ask the teacher, please.	اسأل المعلّم من فضلك.
+111	Necesito ver a un médico.	I need to see a doctor.	أحتاج إلى رؤية طبيب.
+111	¿Necesitas algo de la tienda?	Do you need anything from the shop?	هل تحتاج شيئًا من المتجر؟
+112	La película empieza a las diez.	The film starts at ten.	يبدأ الفيلم في العاشرة.
+112	Empecé un trabajo nuevo.	I started a new job.	بدأت عملًا جديدًا.
+113	¿Cuándo termina la película?	When does the film end?	متى ينتهي الفيلم؟
+113	Ya terminé mi trabajo.	I've already finished my work.	أنهيت عملي بالفعل.
+114	Camino al trabajo cada día.	I walk to work every day.	أمشي إلى العمل كل يوم.
+114	Caminamos juntos por la playa.	We walked together along the beach.	مشينا معًا على الشاطئ.
+115	Mi padre cocina muy bien.	My father cooks very well.	يطبخ أبي جيدًا جدًا.
+115	Hoy voy a cocinar para todos.	Today I'm going to cook for everyone.	سأطبخ اليوم للجميع.
+116	¿Recuerdas el nombre de la película?	Do you remember the name of the film?	هل تتذكر اسم الفيلم؟
+116	No recuerdo dónde está mi coche.	I don't remember where my car is.	لا أتذكر أين سيارتي.
+117	No olvides tu teléfono.	Don't forget your phone.	لا تنسَ هاتفك.
+117	Olvidé su cumpleaños otra vez.	I forgot his birthday again.	نسيت عيد ميلاده مرة أخرى.
+118	Perdí mi teléfono otra vez.	I lost my phone again.	أضعت هاتفي مرة أخرى.
+118	No quiero perder el tren.	I don't want to miss the train.	لا أريد أن يفوتني القطار.
+119	Quiero ganar el juego.	I want to win the game.	أريد أن أفوز باللعبة.
+119	Él gana poco dinero.	He earns little money.	يكسب مالًا قليلًا.
+120	¿Me traes un poco de agua?	Can you bring me a little water?	هل تحضر لي قليلًا من الماء؟
+120	Ella trajo un regalo para mí.	She brought a present for me.	أحضرت هدية لي.
+121	Te envío el libro mañana.	I'll send you the book tomorrow.	سأرسل لك الكتاب غدًا.
+121	Envié el dinero ayer.	I sent the money yesterday.	أرسلت المال أمس.
+122	El tiempo cambia mucho aquí.	The weather changes a lot here.	يتغيّر الطقس كثيرًا هنا.
+122	Quiero cambiar de habitación.	I want to change rooms.	أريد أن أغيّر الغرفة.
+123	Corro todas las mañanas.	I run every morning.	أركض كل صباح.
+123	El perro corre por la casa.	The dog runs around the house.	يركض الكلب في البيت.
+124	Lava el coche con agua fría.	Wash the car with cold water.	اغسل السيارة بماء بارد.
+124	Tengo que lavar el coche.	I have to wash the car.	يجب أن أغسل السيارة.
+125	Limpio mi habitación cada semana.	I clean my room every week.	أنظف غرفتي كل أسبوع.
+125	La casa está muy limpia.	The house is very clean.	البيت نظيف جدًا.
+126	Mañana va a llover.	It's going to rain tomorrow.	ستمطر غدًا.
+126	Llueve mucho en este país.	It rains a lot in this country.	تمطر كثيرًا في هذا البلد.
+127	No tengo tiempo hoy.	I don't have time today.	ليس لديّ وقت اليوم.
+127	¿Qué tiempo hace hoy?	What's the weather like today?	كيف الطقس اليوم؟
+128	Buenos días a todos.	Good morning, everyone.	صباح الخير للجميع.
+128	Trabajo cinco días a la semana.	I work five days a week.	أعمل خمسة أيام في الأسبوع.
+129	Mi hijo tiene diez años.	My son is ten years old.	عمر ابني عشر سنوات.
+129	El año pasado fui a la playa.	Last year I went to the beach.	العام الماضي ذهبت إلى الشاطئ.
+130	Te llamo otra vez mañana.	I'll call you again tomorrow.	سأتصل بك مرة أخرى غدًا.
+130	Voy a la playa muchas veces.	I go to the beach many times.	أذهب إلى الشاطئ مرات كثيرة.
+131	¿A qué hora empieza la clase?	What time does the class start?	في أي ساعة يبدأ الدرس؟
+131	Esperé una hora en la calle.	I waited an hour in the street.	انتظرت ساعة في الشارع.
+132	Espera un minuto, por favor.	Wait a minute, please.	انتظر دقيقة من فضلك.
+132	El autobús llega en cinco minutos.	The bus arrives in five minutes.	تصل الحافلة بعد خمس دقائق.
+133	Te veo la próxima semana.	I'll see you next week.	أراك الأسبوع القادم.
+133	Trabajo mucho esta semana.	I'm working a lot this week.	أعمل كثيرًا هذا الأسبوع.
+134	Mi cumpleaños es el próximo mes.	My birthday is next month.	عيد ميلادي الشهر القادم.
+134	Vivo aquí desde hace un mes.	I've lived here for a month.	أعيش هنا منذ شهر.
+135	Nos vemos mañana por la mañana.	See you tomorrow morning.	نلتقي غدًا صباحًا.
+135	Bebo café cada mañana.	I drink coffee every morning.	أشرب القهوة كل صباح.
+136	Buenas tardes, ¿cómo está usted?	Good afternoon, how are you?	مساء الخير، كيف حالك؟
+136	Es muy tarde para salir.	It's too late to go out.	الوقت متأخر جدًا للخروج.
+137	Buenas noches, hasta mañana.	Good night, see you tomorrow.	تصبح على خير، إلى الغد.
+137	Trabajo por la noche.	I work at night.	أعمل في الليل.
+138	Hoy es mi cumpleaños.	Today is my birthday.	اليوم عيد ميلادي.
+138	¿Qué hacemos hoy por la tarde?	What shall we do this afternoon?	ماذا نفعل اليوم بعد الظهر؟
+139	Ayer llovió todo el día.	Yesterday it rained all day.	أمطرت طوال اليوم أمس.
+139	Vi a tu hermano ayer.	I saw your brother yesterday.	رأيت أخاك أمس.
+140	Vamos a mi casa.	Let's go to my house.	لنذهب إلى بيتي.
+140	Su casa tiene tres habitaciones.	Their house has three rooms.	في بيتهم ثلاث غرف.
+141	Tengo muchas cosas que hacer.	I have a lot of things to do.	لديّ أشياء كثيرة لأفعلها.
+141	Pon tus cosas en la cama.	Put your things on the bed.	ضع أشياءك على السرير.
+142	Ese hombre es muy alto.	That man is very tall.	ذلك الرجل طويل جدًا.
+142	Un hombre te busca en la puerta.	A man is looking for you at the door.	رجل يبحث عنك عند الباب.
+143	Esa mujer es mi profesora.	That woman is my teacher.	تلك المرأة معلّمتي.
+143	Muchas mujeres trabajan aquí.	Many women work here.	تعمل هنا نساء كثيرات.
+144	Es una persona muy buena.	He's a very good person.	إنه شخص طيب جدًا.
+144	Hay diez personas en la clase.	There are ten people in the class.	هناك عشرة أشخاص في الصف.
+145	Hay mucha gente en la calle.	There are a lot of people in the street.	هناك ناس كثيرون في الشارع.
+145	La gente de esta ciudad es tranquila.	The people in this city are calm.	الناس في هذه المدينة هادئون.
+146	El niño está en la escuela.	The boy is at school.	الطفل في المدرسة.
+146	Las niñas juegan juntas.	The girls play together.	تلعب البنات معًا.
+147	Tengo dos hijos pequeños.	I have two small children.	لديّ طفلان صغيران.
+147	Su hija es médica.	His daughter is a doctor.	ابنته طبيبة.
+148	Mi padre es profesor.	My father is a teacher.	أبي معلّم.
+148	Papá, ¿me ayudas, por favor?	Dad, will you help me, please?	أبي، هل تساعدني من فضلك؟
+149	Mi madre habla muy bien.	My mother speaks very well.	أمي تتكلم جيدًا جدًا.
+149	Mamá, tengo mucha hambre.	Mum, I'm very hungry.	أمي، أنا جائع جدًا.
+150	Mi hermano es mayor que yo.	My brother is older than me.	أخي أكبر مني.
+150	Tengo tres hermanos mayores.	I have three older brothers.	لديّ ثلاثة إخوة أكبر مني.
+151	Mi hermana tiene un gato.	My sister has a cat.	لدى أختي قطة.
+151	Voy a la fiesta con mi hermana.	I'm going to the party with my sister.	أذهب إلى الحفلة مع أختي.
+152	Él es mi mejor amigo.	He is my best friend.	هو أعزّ أصدقائي.
+152	Salgo con mis amigas esta noche.	I'm going out with my friends tonight.	أخرج مع صديقاتي هذه الليلة.
+153	Mi familia es muy grande.	My family is very big.	عائلتي كبيرة جدًا.
+153	Comemos todos en familia.	We all eat together as a family.	نأكل جميعًا معًا كعائلة.
+154	¿Cuál es tu nombre?	What is your name?	ما اسمك؟
+154	Escribe tu nombre en el libro.	Write your name in the book.	اكتب اسمك في الكتاب.
+155	¿Me das un poco de agua?	Can you give me a little water?	هل تعطيني قليلًا من الماء؟
+155	El agua está muy fría.	The water is very cold.	الماء بارد جدًا.
+156	La comida está lista.	The food is ready.	الطعام جاهز.
+156	Me gusta la comida de mi madre.	I like my mother's food.	أحب طعام أمي.
+157	Un café, por favor.	A coffee, please.	قهوة من فضلك.
+157	Bebo café por la mañana.	I drink coffee in the morning.	أشرب القهوة في الصباح.
+158	Compro pan cada mañana.	I buy bread every morning.	أشتري الخبز كل صباح.
+158	Este pan está muy rico.	This bread is very tasty.	هذا الخبز لذيذ جدًا.
+159	¿Quieres un té caliente?	Would you like a hot tea?	هل تريد شايًا ساخنًا؟
+159	Mi abuela bebe té cada tarde.	My grandmother drinks tea every afternoon.	تشرب جدتي الشاي كل مساء.
+160	¿Qué hay para la cena?	What's for dinner?	ماذا يوجد للعشاء؟
+160	La cena fue muy rica.	The dinner was very tasty.	كان العشاء لذيذًا جدًا.
+161	Tomo el desayuno en casa.	I have breakfast at home.	أتناول الفطور في البيت.
+161	El desayuno está en la mesa.	Breakfast is on the table.	الفطور على الطاولة.
+162	Pon el pan en la mesa.	Put the bread on the table.	ضع الخبز على الطاولة.
+162	Necesitamos una mesa más grande.	We need a bigger table.	نحتاج إلى طاولة أكبر.
+163	El gato duerme en mi cama.	The cat sleeps on my bed.	تنام القطة على سريري.
+163	Me voy a la cama.	I'm going to bed.	سأذهب إلى السرير.
+164	Abre la puerta, por favor.	Open the door, please.	افتح الباب من فضلك.
+164	Hay alguien en la puerta.	There is someone at the door.	هناك شخص عند الباب.
+165	Mi habitación es muy pequeña.	My room is very small.	غرفتي صغيرة جدًا.
+165	La casa tiene cuatro habitaciones.	The house has four rooms.	في البيت أربع غرف.
+166	Me gusta mucho esta ciudad.	I really like this city.	تعجبني هذه المدينة كثيرًا.
+166	La ciudad es muy bonita de noche.	The city is very pretty at night.	المدينة جميلة جدًا في الليل.
+167	Es un país muy bonito.	It's a very beautiful country.	إنه بلد جميل جدًا.
+167	¿De qué país eres?	What country are you from?	من أي بلد أنت؟
+168	Vivo en esta calle.	I live on this street.	أسكن في هذا الشارع.
+168	No juegues en la calle.	Don't play in the street.	لا تلعب في الشارع.
+169	La tienda está cerca de mi casa.	The shop is near my house.	المتجر قريب من بيتي.
+169	Voy a la tienda a comprar pan.	I'm going to the shop to buy bread.	أذهب إلى المتجر لأشتري الخبز.
+170	Mis hijos van a la escuela.	My children go to school.	يذهب أطفالي إلى المدرسة.
+170	Mi escuela era muy grande.	My school was very big.	كانت مدرستي كبيرة جدًا.
+171	Tengo un trabajo nuevo.	I have a new job.	لديّ عمل جديد.
+171	Voy al trabajo en autobús.	I go to work by bus.	أذهب إلى العمل بالحافلة.
+172	No tengo mucho dinero.	I don't have much money.	ليس لديّ مال كثير.
+172	Ella gana mucho dinero.	She earns a lot of money.	هي تكسب مالًا كثيرًا.
+173	Mi coche está en la calle.	My car is in the street.	سيارتي في الشارع.
+173	Vamos a la playa en coche.	Let's go to the beach by car.	لنذهب إلى الشاطئ بالسيارة.
+174	El autobús llega tarde otra vez.	The bus is late again.	الحافلة متأخرة مرة أخرى.
+174	Tomo el autobús para ir a clase.	I take the bus to go to class.	أركب الحافلة للذهاب إلى الدرس.
+175	El tren sale a las diez.	The train leaves at ten.	يغادر القطار في العاشرة.
+175	Me gusta leer en el tren.	I like reading on the train.	أحب القراءة في القطار.
+176	¿Dónde está mi teléfono?	Where is my phone?	أين هاتفي؟
+176	Hablo con mi madre por teléfono.	I talk to my mother on the phone.	أتحدث مع أمي بالهاتف.
+177	Este libro es para ti.	This book is for you.	هذا الكتاب لك.
+177	Leo libros por la noche.	I read books at night.	أقرأ الكتب في الليل.
+178	No conozco esta palabra.	I don't know this word.	لا أعرف هذه الكلمة.
+178	Escribe las palabras nuevas.	Write the new words.	اكتب الكلمات الجديدة.
+179	Tengo una pregunta para usted.	I have a question for you.	لديّ سؤال لحضرتك.
+179	Es una buena pregunta.	It's a good question.	إنه سؤال جيد.
+180	Tengo un problema con mi coche.	I have a problem with my car.	لديّ مشكلة في سيارتي.
+180	No es un problema para mí.	It's not a problem for me.	ليست مشكلة بالنسبة لي.
+181	Es una idea muy buena.	It's a very good idea.	إنها فكرة جيدة جدًا.
+181	No tengo idea de dónde está.	I have no idea where it is.	ليس لديّ فكرة أين هو.
+182	Me gusta esta historia.	I like this story.	تعجبني هذه القصة.
+182	Es una historia muy larga.	It's a very long story.	إنها قصة طويلة جدًا.
+183	Este juego es muy fácil.	This game is very easy.	هذه اللعبة سهلة جدًا.
+183	Los niños tienen muchos juegos.	The children have lots of games.	لدى الأطفال ألعاب كثيرة.
+184	Escucho música todos los días.	I listen to music every day.	أستمع إلى الموسيقى كل يوم.
+184	La música de esta película es bonita.	The music in this film is beautiful.	موسيقى هذا الفيلم جميلة.
+185	Vamos a ver una película.	Let's watch a film.	لنشاهد فيلمًا.
+185	La película fue muy larga.	The film was very long.	كان الفيلم طويلًا جدًا.
+186	Quiero ver el mundo.	I want to see the world.	أريد أن أرى العالم.
+186	Es la mejor comida del mundo.	It's the best food in the world.	إنه أفضل طعام في العالم.
+187	La vida aquí es tranquila.	Life here is calm.	الحياة هنا هادئة.
+187	Tengo una buena vida.	I have a good life.	لديّ حياة جيدة.
+188	Pon la mano en la cabeza.	Put your hand on your head.	ضع يدك على رأسك.
+188	Mi cabeza está muy caliente.	My head is very hot.	رأسي ساخن جدًا.
+189	Tengo algo en la mano.	I have something in my hand.	في يدي شيء.
+189	Las manos del bebé son pequeñas.	The baby's hands are small.	يدا الطفل صغيرتان.
+190	Cierra los ojos, por favor.	Close your eyes, please.	أغمض عينيك من فضلك.
+190	Ella tiene los ojos negros.	She has dark eyes.	عيناها سوداوان.
+191	Mi perro es muy grande.	My dog is very big.	كلبي كبير جدًا.
+191	El perro duerme en la puerta.	The dog sleeps by the door.	ينام الكلب عند الباب.
+192	Hoy hace mucho sol.	It's very sunny today.	الشمس قوية اليوم.
+192	Me gusta estar al sol.	I like being in the sun.	أحب الجلوس في الشمس.
+193	Hay mucha lluvia este mes.	There's a lot of rain this month.	هناك أمطار كثيرة هذا الشهر.
+193	No me gusta la lluvia.	I don't like the rain.	لا أحب المطر.
+194	Necesito ir al médico.	I need to go to the doctor.	أحتاج إلى الذهاب إلى الطبيب.
+194	Mi hermana es médica.	My sister is a doctor.	أختي طبيبة.
+195	Mi profesor es muy bueno.	My teacher is very good.	معلّمي جيد جدًا.
+195	La profesora nos ayuda mucho.	The teacher helps us a lot.	المعلّمة تساعدنا كثيرًا.
+196	Feliz cumpleaños, mi amigo.	Happy birthday, my friend.	عيد ميلاد سعيد يا صديقي.
+196	Mañana es el cumpleaños de mi madre.	Tomorrow is my mother's birthday.	غدًا عيد ميلاد أمي.
+197	Hay una fiesta en mi casa.	There's a party at my house.	هناك حفلة في بيتي.
+197	La fiesta fue muy buena.	The party was very good.	كانت الحفلة جيدة جدًا.
+198	Es un lugar muy bonito.	It's a very pretty place.	إنه مكان جميل جدًا.
+198	¿Hay un lugar para mí?	Is there a place for me?	هل يوجد مكان لي؟
+199	¿Es este el camino a la playa?	Is this the way to the beach?	هل هذا هو الطريق إلى الشاطئ؟
+199	No hay otro camino.	There is no other way.	لا يوجد طريق آخر.
+200	Esta es la mejor parte.	This is the best part.	هذا أفضل جزء.
+200	Una parte del libro es difícil.	Part of the book is difficult.	جزء من الكتاب صعب.
+201	Nos vemos el fin de semana.	See you at the weekend.	نلتقي في عطلة نهاية الأسبوع.
+201	No me gustó el fin de la película.	I didn't like the end of the film.	لم تعجبني نهاية الفيلم.
+202	Tengo mucha hambre ahora.	I'm very hungry now.	أنا جائع جدًا الآن.
+202	Los niños tienen hambre.	The children are hungry.	الأطفال جائعون.
+203	Hoy hace mucho frío.	It's very cold today.	الجو بارد جدًا اليوم.
+203	El café está frío.	The coffee is cold.	القهوة باردة.
+204	En este país hace mucho calor.	It's very hot in this country.	الجو حار جدًا في هذا البلد.
+204	Tengo calor, abre la ventana.	I'm hot, open the window.	أشعر بالحر، افتح النافذة.
+205	Estoy cansado después del trabajo.	I'm tired after work.	أنا متعب بعد العمل.
+205	Mi madre está muy cansada.	My mother is very tired.	أمي متعبة جدًا.
+206	Estoy contento con mi trabajo.	I'm happy with my job.	أنا راضٍ عن عملي.
+206	Los niños están muy contentos.	The children are very happy.	الأطفال مسرورون جدًا.
+207	Soy muy feliz aquí.	I'm very happy here.	أنا سعيد جدًا هنا.
+207	Son una familia muy feliz.	They are a very happy family.	إنهم عائلة سعيدة جدًا.
+208	¿Por qué estás triste?	Why are you sad?	لماذا أنت حزين؟
+208	Es una película muy triste.	It's a very sad film.	إنه فيلم حزين جدًا.
+209	Tu casa es muy bonita.	Your house is very pretty.	بيتك جميل جدًا.
+209	Qué día tan bonito.	What a beautiful day.	يا له من يوم جميل.
+210	Esta pregunta es fácil.	This question is easy.	هذا السؤال سهل.
+210	No es fácil aprender.	It's not easy to learn.	ليس من السهل التعلّم.
+211	El examen fue muy difícil.	The exam was very difficult.	كان الامتحان صعبًا جدًا.
+211	Es difícil vivir sin dinero.	It's hard to live without money.	من الصعب العيش بدون مال.
+212	Es muy importante para mí.	It's very important to me.	إنه مهم جدًا بالنسبة لي.
+212	Tengo una pregunta importante.	I have an important question.	لديّ سؤال مهم.
+213	Este coche es muy caro.	This car is very expensive.	هذه السيارة غالية جدًا.
+213	La comida aquí es cara.	The food here is expensive.	الطعام هنا غالٍ.
+214	El pan es barato aquí.	Bread is cheap here.	الخبز رخيص هنا.
+214	Busco una habitación barata.	I'm looking for a cheap room.	أبحث عن غرفة رخيصة.
+215	Este café está muy rico.	This coffee is very good.	هذه القهوة لذيذة جدًا.
+215	Es un hombre muy rico.	He's a very rich man.	إنه رجل غني جدًا.
+216	La cena está lista.	Dinner is ready.	العشاء جاهز.
+216	¿Estás listo para salir?	Are you ready to go out?	هل أنت مستعد للخروج؟
+217	Salgo de casa muy temprano.	I leave home very early.	أخرج من البيت مبكرًا جدًا.
+217	Llegamos temprano a la fiesta.	We arrived early at the party.	وصلنا مبكرًا إلى الحفلة.
+218	¿Estás libre esta noche?	Are you free tonight?	هل أنت متفرغ هذه الليلة؟
+218	¿Está libre este lugar?	Is this seat free?	هل هذا المكان شاغر؟
+219	Claro, te ayudo con eso.	Of course, I'll help you with that.	بالتأكيد، سأساعدك في ذلك.
+219	Claro, puedes venir con nosotros.	Of course, you can come with us.	طبعًا، يمكنك أن تأتي معنا.
+220	¿Es verdad lo que dices?	Is what you're saying true?	هل ما تقوله صحيح؟
+220	Hoy hace frío, ¿verdad?	It's cold today, isn't it?	الجو بارد اليوم، أليس كذلك؟
+221	Es mi primer día aquí.	It's my first day here.	إنه يومي الأول هنا.
+221	Primero, lava tus manos.	First, wash your hands.	أولًا، اغسل يديك.
+222	Es el último autobús de la noche.	It's the last bus of the night.	إنها آخر حافلة في الليل.
+222	La última parte es difícil.	The last part is difficult.	الجزء الأخير صعب.
+223	El próximo tren sale a las cinco.	The next train leaves at five.	القطار التالي يغادر في الخامسة.
+223	Nos vemos el próximo año.	See you next year.	نلتقي العام القادم.
+224	Vivo solo en una casa pequeña.	I live alone in a small house.	أعيش وحدي في بيت صغير.
+224	Solo tengo cinco minutos.	I only have five minutes.	لديّ خمس دقائق فقط.
+225	Vivo cerca de la escuela.	I live near the school.	أسكن قرب المدرسة.
+225	¿Hay una tienda cerca de aquí?	Is there a shop near here?	هل يوجد متجر قريب من هنا؟
+226	Mi trabajo está muy lejos.	My work is very far away.	عملي بعيد جدًا.
+226	La playa no está lejos de aquí.	The beach isn't far from here.	الشاطئ ليس بعيدًا عن هنا.
+227	Antes vivía en otra ciudad.	I used to live in another city.	كنت أعيش سابقًا في مدينة أخرى.
+227	Come algo antes de salir.	Eat something before you go out.	كُل شيئًا قبل أن تخرج.
+228	Te llamo después de la cena.	I'll call you after dinner.	سأتصل بك بعد العشاء.
+228	Después del trabajo voy a casa.	After work I go home.	بعد العمل أذهب إلى البيت.
+229	Bueno, hasta luego, amigo.	Well, see you later, my friend.	حسنًا، إلى اللقاء يا صديقي.
+229	Primero comemos y luego salimos.	First we eat and then we go out.	أولًا نأكل ثم نخرج.
+230	Entonces, ¿vienes o no?	So, are you coming or not?	إذن، هل ستأتي أم لا؟
+230	Yo era muy joven entonces.	I was very young then.	كنت صغيرًا جدًا آنذاك.
+231	Todavía estoy en el trabajo.	I'm still at work.	ما زلت في العمل.
+231	¿Todavía vives aquí con tus padres?	Do you still live here with your parents?	هل ما زلت تسكن هنا مع والديك؟
+232	La cena está casi lista.	Dinner is almost ready.	العشاء جاهز تقريبًا.
+232	Casi olvido tu cumpleaños.	I almost forgot your birthday.	كدت أنسى عيد ميلادك.
+233	Vamos juntos a la fiesta.	Let's go to the party together.	لنذهب معًا إلى الحفلة.
+233	Siempre comemos juntos en casa.	We always eat together at home.	نأكل معًا دائمًا في البيت.
+234	Hola, ¿cómo estás hoy?	Hello, how are you today?	مرحبًا، كيف حالك اليوم؟
+234	Hola, me llamo Ana.	Hello, my name is Ana.	مرحبًا، اسمي آنا.	Ana
+235	Muchas gracias por todo.	Thank you very much for everything.	شكرًا جزيلًا على كل شيء.
+235	Gracias por la cena.	Thanks for dinner.	شكرًا على العشاء.
+236	Adiós a todos, hasta mañana.	Goodbye everyone, see you tomorrow.	إلى اللقاء جميعًا، أراكم غدًا.
+236	Dijo adiós a su familia.	He said goodbye to his family.	ودّع عائلته.
+237	Perdón, no entiendo la pregunta.	Sorry, I don't understand the question.	عذرًا، لا أفهم السؤال.
+237	Perdón, ¿dónde está la playa?	Excuse me, where is the beach?	عذرًا، أين الشاطئ؟
+238	Un té, por favor.	A tea, please.	شاي من فضلك.
+238	Cierra la ventana, por favor.	Close the window, please.	أغلق النافذة من فضلك.
+239	Vale, nos vemos mañana.	Okay, see you tomorrow.	حسنًا، نلتقي غدًا.
+239	¿Vamos a la playa? Vale.	Shall we go to the beach? Okay.	هل نذهب إلى الشاطئ؟ حسنًا.
+240	Tengo dos gatos en casa.	I have two cats at home.	لديّ قطتان في البيت.
+240	Nos vemos a las dos.	See you at two.	نلتقي في الثانية.
+241	Vivo aquí desde hace tres años.	I've lived here for three years.	أعيش هنا منذ ثلاث سنوات.
+241	Ayer compré tres libros.	Yesterday I bought three books.	أمس اشتريت ثلاثة كتب.
+242	Somos cuatro en mi familia.	There are four of us in my family.	نحن أربعة في عائلتي.
+242	La clase termina a las cuatro.	The class ends at four.	ينتهي الدرس في الرابعة.
+243	Tengo cinco minutos para comer.	I have five minutes to eat.	لديّ خمس دقائق لآكل.
+243	Mi hijo tiene cinco años.	My son is five years old.	عمر ابني خمس سنوات.
+244	Espero diez minutos más.	I'll wait ten more minutes.	سأنتظر عشر دقائق أخرى.
+244	Hay diez personas en la fiesta.	There are ten people at the party.	هناك عشرة أشخاص في الحفلة.
+245	Hay cien personas aquí.	There are a hundred people here.	هناك مئة شخص هنا.
+245	Te lo dije cien veces.	I told you a hundred times.	قلت لك ذلك مئة مرة.
+246	La tienda está entre la escuela y mi casa.	The shop is between the school and my house.	المتجر بين المدرسة وبيتي.
+246	Entre semana trabajo mucho.	During the week I work a lot.	أعمل كثيرًا في أيام الأسبوع.
+247	No puedo vivir sin café.	I can't live without coffee.	لا أستطيع العيش بدون قهوة.
+247	Salió sin su teléfono.	He went out without his phone.	خرج بدون هاتفه.
+248	El libro está sobre la mesa.	The book is on the table.	الكتاب على الطاولة.
+248	Es una película sobre un perro.	It's a film about a dog.	إنه فيلم عن كلب.
+249	Hasta mañana, mis amigos.	See you tomorrow, my friends.	إلى الغد يا أصدقائي.
+249	La tienda abre hasta las diez.	The shop is open until ten.	يفتح المتجر حتى العاشرة.
+250	Vivo aquí desde el año pasado.	I've lived here since last year.	أعيش هنا منذ العام الماضي.
+250	Te llamo desde el tren.	I'm calling you from the train.	أتصل بك من القطار.
+251	Dormí durante todo el viaje.	I slept during the whole trip.	نمت طوال الرحلة.
+251	No hablamos durante la clase.	We don't talk during class.	لا نتحدث أثناء الدرس.
+252	Leo mientras espero el autobús.	I read while I wait for the bus.	أقرأ بينما أنتظر الحافلة.
+252	Escucho música mientras cocino.	I listen to music while I cook.	أستمع إلى الموسيقى بينما أطبخ.
+253	Salgo aunque llueve mucho.	I'm going out even though it's raining a lot.	سأخرج رغم أنها تمطر كثيرًا.
+253	Aunque es difícil, me gusta.	Although it's difficult, I like it.	رغم أنه صعب، يعجبني.
+254	No vengo porque estoy cansado.	I'm not coming because I'm tired.	لن آتي لأنني متعب.
+254	Como mucho porque tengo hambre.	I eat a lot because I'm hungry.	آكل كثيرًا لأنني جائع.
+255	¿Por qué no vienes?	Why aren't you coming?	لماذا لا تأتي؟
+255	¿Por qué estás tan cansado?	Why are you so tired?	لماذا أنت متعب هكذا؟
+256	¿Cuál es tu coche?	Which car is yours?	أي سيارة هي سيارتك؟
+256	¿Cuál de los dos quieres?	Which of the two do you want?	أيّ الاثنين تريد؟
+257	¿Hay alguien en casa?	Is anyone at home?	هل يوجد أحد في البيت؟
+257	Alguien te llamó esta mañana.	Someone called you this morning.	اتصل بك أحدهم هذا الصباح.
+258	No hay nadie en la calle.	There's nobody in the street.	لا يوجد أحد في الشارع.
+258	Nadie sabe dónde está.	Nobody knows where he is.	لا أحد يعرف أين هو.
+259	Llamo a mi madre cada día.	I call my mother every day.	أتصل بأمي كل يوم.
+259	Cada niño tiene un libro.	Each child has a book.	لكل طفل كتاب.
+260	La película es tan larga.	The film is so long.	الفيلم طويل جدًا.
+260	No estoy tan cansado.	I'm not that tired.	لست متعبًا إلى هذا الحد.
+261	Hace demasiado calor hoy.	It's too hot today.	الجو حار أكثر من اللازم اليوم.
+261	Ayer comí demasiado pan.	Yesterday I ate too much bread.	أمس أكلت خبزًا أكثر من اللازم.
+262	Hoy tengo bastante tiempo.	I have enough time today.	لديّ وقت كافٍ.
+262	Tú hablas bastante bien.	You speak quite well.	تتكلم جيدًا بما فيه الكفاية.
+263	Se hace así, mira.	It's done like this, look.	يُفعل هكذا، انظر.
+263	No me gusta vivir así.	I don't like living like this.	لا أحب أن أعيش هكذا.
+264	Mi casa está allí.	My house is over there.	بيتي هناك.
+264	Pon tus cosas ahí.	Put your things there.	ضع أشياءك هناك.
+265	Los niños están dentro de casa.	The children are inside the house.	الأطفال داخل البيت.
+265	Hace frío, vamos dentro.	It's cold, let's go inside.	الجو بارد، لندخل.
+266	Hoy hace calor fuera.	It's hot outside today.	الجو حار في الخارج اليوم.
+266	Vamos a comer fuera hoy.	Let's eat out today.	لنأكل خارج البيت اليوم.
+267	Hasta pronto, mis amigos.	See you soon, my friends.	إلى اللقاء قريبًا يا أصدقائي.
+267	Vuelvo pronto a casa.	I'll be back home soon.	سأعود قريبًا إلى البيت.
+268	Quizás llueve mañana por la tarde.	Maybe it'll rain tomorrow afternoon.	ربما تمطر غدًا بعد الظهر.
+268	Quizás vamos a la playa.	Maybe we'll go to the beach.	ربما نذهب إلى الشاطئ.
+269	La cuenta, por favor.	The bill, please.	الحساب من فضلك.
+269	Yo pago la cuenta hoy.	I'll pay the bill today.	أنا أدفع الحساب اليوم.
+270	Mi esposo es profesor.	My husband is a teacher.	زوجي معلّم.
+270	Su esposa trabaja en una tienda.	His wife works in a shop.	تعمل زوجته في متجر.
+271	El bebé está dormido.	The baby is asleep.	الطفل نائم.
+271	Tienen un bebé nuevo.	They have a new baby.	لديهم طفل جديد.
+272	Mi abuelo tiene un perro.	My grandfather has a dog.	لدى جدي كلب.
+272	Mis abuelos están en casa.	My grandparents are at home.	جدّاي في البيت.
+273	Mi clase es muy grande.	My class is very big.	صفي كبير جدًا.
+273	Llegué tarde a clase.	I was late for class.	وصلت متأخرًا إلى الدرس.
+274	Mañana tengo un examen.	I have an exam tomorrow.	غدًا لديّ امتحان.
+274	El examen fue fácil.	The exam was easy.	كان الامتحان سهلًا.
+275	Que tengas un buen viaje.	Have a good trip.	رحلة سعيدة.
+275	El viaje fue muy largo.	The trip was very long.	كانت الرحلة طويلة جدًا.
+276	Vamos a la playa mañana.	Let's go to the beach tomorrow.	لنذهب إلى الشاطئ غدًا.
+276	Me gusta caminar por la playa.	I like walking on the beach.	أحب المشي على الشاطئ.
+277	El mar está muy frío hoy.	The sea is very cold today.	البحر بارد جدًا اليوم.
+277	Vivimos cerca del mar.	We live near the sea.	نعيش قرب البحر.
+278	Gracias por el regalo.	Thank you for the present.	شكرًا على الهدية.
+278	Compré un regalo para mi madre.	I bought a present for my mother.	اشتريت هدية لأمي.
+279	Necesito ropa nueva para la fiesta.	I need new clothes for the party.	أحتاج إلى ملابس جديدة للحفلة.
+279	Pon tu ropa en la cama.	Put your clothes on the bed.	ضع ملابسك على السرير.
+280	Mi gato duerme mucho.	My cat sleeps a lot.	قطتي تنام كثيرًا.
+280	El gato está en la ventana.	The cat is at the window.	القطة عند النافذة.
+281	Abre la ventana, por favor.	Open the window, please.	افتح النافذة من فضلك.
+281	Mi habitación tiene una ventana grande.	My room has a big window.	في غرفتي نافذة كبيرة.
+282	¿Dónde está el baño?	Where is the bathroom?	أين الحمّام؟
+282	El baño está cerca de mi habitación.	The bathroom is near my room.	الحمّام قرب غرفتي.
+283	La cocina es muy pequeña.	The kitchen is very small.	المطبخ صغير جدًا.
+283	Comemos en la cocina.	We eat in the kitchen.	نأكل في المطبخ.
+284	¿De qué color es tu coche?	What colour is your car?	ما لون سيارتك؟
+284	Me gusta este color.	I like this colour.	يعجبني هذا اللون.
+285	Tengo un gato blanco.	I have a white cat.	لديّ قطة بيضاء.
+285	La casa es blanca.	The house is white.	البيت أبيض.
+286	Mi perro es negro.	My dog is black.	كلبي أسود.
+286	Bebo el café negro.	I drink my coffee black.	أشرب القهوة سوداء.
+287	Quiero el coche rojo.	I want the red car.	أريد السيارة الحمراء.
+287	Ella tiene una puerta roja.	She has a red door.	لديها باب أحمر.
+288	Mi padre es muy alto.	My father is very tall.	أبي طويل جدًا.
+288	Es un hombre alto y joven.	He's a tall young man.	إنه رجل طويل وشاب.
+289	Fue un día muy largo.	It was a very long day.	كان يومًا طويلًا جدًا.
+289	El camino es largo.	The way is long.	الطريق طويل.
+290	Mi madre es muy joven.	My mother is very young.	أمي صغيرة جدًا في السن.
+290	Hay muchos jóvenes en la ciudad.	There are many young people in the city.	هناك شباب كثيرون في المدينة.
+291	Hoy estoy enfermo en casa.	Today I'm ill at home.	أنا مريض في البيت اليوم.
+291	Mi hija está enferma.	My daughter is ill.	ابنتي مريضة.
+292	¿Estás seguro de eso?	Are you sure about that?	هل أنت متأكد من ذلك؟
+292	Esta calle es muy segura.	This street is very safe.	هذا الشارع آمن جدًا.
+293	Es cierto, hace mucho frío.	It's true, it's very cold.	صحيح، الجو بارد جدًا.
+293	No es cierto lo que dice.	What he says isn't true.	ما يقوله ليس صحيحًا.
+294	¿Es posible llegar hoy?	Is it possible to arrive today?	هل يمكن الوصول اليوم؟
+294	Ven lo antes posible.	Come as soon as possible.	تعال بأسرع ما يمكن.
+295	Es una ciudad muy tranquila.	It's a very quiet city.	إنها مدينة هادئة جدًا.
+295	Tranquilo, todo está bien.	Calm down, everything is fine.	اهدأ، كل شيء على ما يرام.
+296	El café está muy caliente.	The coffee is very hot.	القهوة ساخنة جدًا.
+296	El agua está caliente.	The water is hot.	الماء ساخن.
+297	¡Bienvenido a mi casa!	Welcome to my house!	أهلًا بك في بيتي!
+297	Bienvenidos a nuestra ciudad.	Welcome to our city.	أهلًا بكم في مدينتنا.
+298	Espera un momento, por favor.	Wait a moment, please.	انتظر لحظة من فضلك.
+298	Ahora no es un buen momento.	Now isn't a good time.	الآن ليس وقتًا مناسبًا.
+299	Espero media hora más.	I'll wait another half hour.	سأنتظر نصف ساعة أخرى.
+299	Son las dos y media.	It's half past two.	الساعة الثانية والنصف.
+300	¡Cuidado con el perro!	Watch out for the dog!	احذر من الكلب!
+300	Ten cuidado en la calle.	Be careful in the street.	انتبه في الشارع.
