@@ -107,6 +107,20 @@ data class AppSettings(
     val showTranslationsByDefault: Boolean = true,
     val showHintsByDefault: Boolean = true,
     val voiceServices: VoiceServiceSettings = VoiceServiceSettings(),
+    val sync: SyncSettings = SyncSettings(),
+)
+
+/** Encrypted sync through the learner's own WebDAV server. Password and passphrase are in the secure store. */
+@Serializable
+data class SyncSettings(
+    val serverUrl: String = "",
+    val username: String = "",
+    val includeConversations: Boolean = true,
+    val includeNotes: Boolean = true,
+    val lastSyncAtMillis: Long? = null,
+    /** Fingerprints of the local data and of the server copy at the last successful sync. */
+    val lastLocalFingerprint: String? = null,
+    val lastRemoteFingerprint: String? = null,
 )
 
 /** Optional cloud voice services. Keys are kept in the secure store, never here. */

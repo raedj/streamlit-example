@@ -441,6 +441,7 @@ private fun DataPage() {
     var includeConv by remember { mutableStateOf(false) }
     var includeNotes by remember { mutableStateOf(false) }
     var confirm by remember { mutableStateOf<K?>(null) }
+    SyncSection()
     SectionHeader(s[K.SET_EXPORT])
     Text(s[K.SET_EXPORT_SUB], style = MaterialTheme.typography.bodySmall, color = PolyglotTheme.colors.textSecondary)
     PolyCard(contentPadding = 0.dp) {

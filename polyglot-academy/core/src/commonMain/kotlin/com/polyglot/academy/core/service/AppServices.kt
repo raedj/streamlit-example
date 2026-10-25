@@ -54,6 +54,7 @@ class AppServices(
     providerFactory: ((CredentialSource, (ProviderId) -> ProviderConfig) -> List<AiProvider>)? = null,
     assessorFactory: ((String, suspend () -> String?) -> com.polyglot.academy.core.pronunciation.PronunciationAssessor)? = null,
     realtimeTransport: com.polyglot.academy.core.realtime.RealtimeTransport? = null,
+    syncRemoteFactory: ((String, String, String) -> com.polyglot.academy.core.sync.SyncRemote)? = null,
 ) {
     val scheduler = SpacedRepetitionScheduler()
     val achievements = AchievementService(store, store, clock)
@@ -77,6 +78,9 @@ class AppServices(
     val stories = StoryService(store, store, store, reviews, providers, clock, ids)
     val realtime = RealtimeService(store, store, platform.secrets, platform::network, { platform.audioCapture }, { platform.audioOutput },
         realtimeTransport ?: com.polyglot.academy.core.realtime.KtorRealtimeTransport(httpClient), providers, coach, clock, ids)
+    val sync = SyncService(store, platform.secrets, clock, syncRemoteFactory ?: { url, user, pass ->
+        com.polyglot.academy.core.sync.WebDavRemote(httpClient, url, user, pass)
+    })
     val pronunciation = PronunciationService(store, store, platform.secrets, platform::network, study, clock, ids, assessorFactory ?: { region, key ->
         com.polyglot.academy.core.pronunciation.AzurePronunciationAssessor(httpClient, region, key)
     })

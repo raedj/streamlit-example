@@ -127,6 +127,20 @@ class FakeTransport : com.polyglot.academy.core.realtime.RealtimeTransport {
     override suspend fun connect(url: String, headers: Map<String, String>): com.polyglot.academy.core.realtime.RealtimeSocket { this.url = url; this.headers = headers; return socket }
 }
 
+/** A WebDAV server in memory, shared by several test devices. */
+class MemoryRemote : com.polyglot.academy.core.sync.SyncRemote {
+    var file: ByteArray? = null
+    var version = 0
+    var lastPassword = ""
+    override suspend fun read() = file?.let { com.polyglot.academy.core.sync.RemoteFile(it, "\"v$version\"") }
+    override suspend fun write(bytes: ByteArray, ifMatch: String?, exists: Boolean): String? {
+        if (ifMatch != null && ifMatch != "\"v$version\"") throw com.polyglot.academy.core.sync.SyncError.Changed
+        if (!exists && file != null) throw com.polyglot.academy.core.sync.SyncError.Changed
+        file = bytes; version++
+        return "\"v$version\""
+    }
+}
+
 class FakeAssessor : com.polyglot.academy.core.pronunciation.PronunciationAssessor {
     override val name = "Fake speech"
     val references = mutableListOf<String>()
@@ -161,7 +175,8 @@ class ServicesIntegrationTest {
     private val assessor = FakeAssessor()
     private val transport = FakeTransport()
     private val app = AppServices(store, platform, HttpClient(), clock, SequentialIdGenerator(), providerFactory = { _, _ -> listOf(openai) },
-        assessorFactory = { _, _ -> assessor }, realtimeTransport = transport)
+        assessorFactory = { _, _ -> assessor }, realtimeTransport = transport, syncRemoteFactory = { _, _, pw -> remote.also { it.lastPassword = pw } })
+    private val remote = MemoryRemote()
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.Default)
 
     @AfterTest fun tearDown() = scope.cancel()
@@ -458,6 +473,56 @@ class ServicesIntegrationTest {
         assertEquals(2, store.turns(conv.id).first().size)
         assertEquals("conversation:spelling", store.mistakes(LanguageCode.FRENCH).first().single().sourceId)
         assertTrue(platform.output.closed)
+    }
+
+    @Test fun encryptedSyncKeepsTwoDevicesInStep() = runBlocking<Unit> {
+        val day = 86_400_000L
+        fun review(store: SqlStore, id: String, at: Long) = runBlocking {
+            store.upsertSession(com.polyglot.academy.core.model.StudySession(id, LanguageCode.ENGLISH, com.polyglot.academy.core.model.SessionKind.REVIEW, null, at, null, 120, 5, 5, true))
+        }
+        // Device A has learned something and connects first.
+        enroll()
+        review(store, "a1", clock.nowMillis() - day)
+        assertTrue(app.sync.configure("http://dav.example.com", "me", "pw", "a long passphrase").isFailure, "plain HTTP to the internet is refused")
+        assertTrue(app.sync.configure("https://dav.example.com/files/me", "me", "pw", "short").isFailure, "passphrase too short")
+        app.sync.configure("https://dav.example.com/files/me/", "me", "pw", "a long passphrase").getOrThrow()
+        assertTrue(app.sync.isConfigured())
+        assertEquals(com.polyglot.academy.core.service.SyncOutcome.UPLOADED, app.sync.sync().getOrThrow())
+        assertEquals("pw", remote.lastPassword)
+        assertFalse("\"sessions\"" in remote.file!!.decodeToString() || "\"a1\"" in remote.file!!.decodeToString(), "the server only sees ciphertext")
+        assertEquals(com.polyglot.academy.core.service.SyncOutcome.UP_TO_DATE, app.sync.sync().getOrThrow())
+
+        // Device B is new: it takes the server copy and keeps its own settings.
+        val storeB = SqlStore(createJvmDriver(), Dispatchers.IO, TimeZone.UTC, clock)
+        val appB = AppServices(storeB, FakePlatform(), HttpClient(), clock, SequentialIdGenerator(), providerFactory = { _, _ -> listOf(openai) }, syncRemoteFactory = { _, _, _ -> remote })
+        storeB.updateSettings { it.copy(theme = com.polyglot.academy.core.model.ThemeMode.DARK) }
+        appB.sync.configure("https://dav.example.com/files/me", "me", "pw", "a wrong passphrase").getOrThrow()
+        assertTrue(appB.sync.sync().exceptionOrNull() is com.polyglot.academy.core.sync.SyncError.WrongPassphrase)
+        appB.sync.configure("https://dav.example.com/files/me", "me", "", "a long passphrase").getOrThrow()
+        assertEquals(com.polyglot.academy.core.service.SyncOutcome.DOWNLOADED, appB.sync.sync().getOrThrow())
+        assertEquals(listOf("a1"), storeB.sessions(LanguageCode.ENGLISH).first().map { it.id })
+        assertEquals(LanguageCode.ENGLISH, storeB.currentProfile().activeLearningLanguage)
+        assertEquals(com.polyglot.academy.core.model.ThemeMode.DARK, storeB.currentSettings().theme, "device settings stay on the device")
+        assertTrue(appB.sync.isConfigured(), "the sync connection survives the download")
+        assertEquals(com.polyglot.academy.core.service.SyncOutcome.UP_TO_DATE, appB.sync.sync().getOrThrow())
+
+        // B studies; A picks it up.
+        review(storeB, "b1", clock.nowMillis())
+        assertEquals(com.polyglot.academy.core.service.SyncOutcome.UPLOADED, appB.sync.sync().getOrThrow())
+        assertEquals(com.polyglot.academy.core.service.SyncOutcome.DOWNLOADED, app.sync.sync().getOrThrow())
+        assertEquals(setOf("a1", "b1"), store.sessions(LanguageCode.ENGLISH).first().map { it.id }.toSet())
+
+        // Both study offline: the learner chooses.
+        review(store, "a2", clock.nowMillis()); review(storeB, "b2", clock.nowMillis())
+        assertEquals(com.polyglot.academy.core.service.SyncOutcome.UPLOADED, appB.sync.sync().getOrThrow())
+        assertEquals(com.polyglot.academy.core.service.SyncOutcome.CONFLICT, app.sync.sync().getOrThrow())
+        assertTrue(store.sessions(LanguageCode.ENGLISH).first().any { it.id == "a2" }, "nothing is overwritten until the learner chooses")
+        assertEquals(com.polyglot.academy.core.service.SyncOutcome.DOWNLOADED, app.sync.sync(com.polyglot.academy.core.service.ConflictChoice.USE_SERVER).getOrThrow())
+        assertEquals(setOf("a1", "b1", "b2"), store.sessions(LanguageCode.ENGLISH).first().map { it.id }.toSet())
+
+        app.sync.disconnect()
+        assertFalse(app.sync.isConfigured())
+        assertTrue(platform.secrets.get(com.polyglot.academy.core.service.SyncService.PASSPHRASE) == null)
     }
 
     @Test fun speechUnavailableShowsNoticeInsteadOfHanging() = runBlocking<Unit> {

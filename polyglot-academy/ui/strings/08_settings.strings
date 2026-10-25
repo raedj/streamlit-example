@@ -221,3 +221,36 @@ RT_STATE_NO_KEY ¦ No OpenAI key ¦ لا يوجد مفتاح OpenAI
 RT_STATE_NO_CONSENT ¦ Voice not allowed in Privacy ¦ الصوت غير مسموح في الخصوصية
 RT_STATE_OFFLINE ¦ Offline ¦ دون اتصال
 RT_STATE_READY ¦ Ready ¦ جاهز
+SYNC_TITLE ¦ Sync between devices ¦ المزامنة بين الأجهزة
+SYNC_BODY ¦ Keep your progress on your phone, tablet and computer in step through your own WebDAV storage (for example Nextcloud, ownCloud or a NAS). Everything is encrypted on this device with your passphrase before it is uploaded. ¦ حافظ على تقدّمك متطابقًا بين الهاتف والجهاز اللوحي والحاسوب عبر مساحة تخزين WebDAV خاصة بك (مثل Nextcloud أو ownCloud أو جهاز NAS). يُشفَّر كل شيء على هذا الجهاز بعبارة المرور قبل رفعه.
+SYNC_URL ¦ WebDAV address ¦ عنوان WebDAV
+SYNC_URL_HINT ¦ e.g. https://cloud.example.com/remote.php/dav/files/you ¦ مثال: https://cloud.example.com/remote.php/dav/files/you
+SYNC_USER ¦ User name ¦ اسم المستخدم
+SYNC_PASSWORD ¦ Password or app password ¦ كلمة المرور أو كلمة مرور التطبيق
+SYNC_PASSWORD_SAVED ¦ Password saved — enter a new one to replace it ¦ كلمة المرور محفوظة. أدخل جديدة لاستبدالها
+SYNC_PASSPHRASE ¦ Encryption passphrase ¦ عبارة مرور التشفير
+SYNC_PASSPHRASE_SAVED ¦ Passphrase saved — enter a new one to replace it ¦ عبارة المرور محفوظة. أدخل جديدة لاستبدالها
+SYNC_PASSPHRASE_HINT ¦ At least 10 characters. Use the same one on every device. If you lose it, the server copy cannot be read by anyone, including us. ¦ 10 أحرف على الأقل. استخدم العبارة نفسها على كل جهاز. إن فقدتها فلن يستطيع أحد قراءة النسخة المخزّنة، ولا نحن.
+SYNC_SAVED ¦ Saved. Secrets are stored encrypted on this device. ¦ تم الحفظ. البيانات السرية مخزّنة مشفّرة على هذا الجهاز.
+SYNC_NOW ¦ Sync now ¦ زامن الآن
+SYNC_LAST ¦ Last sync: {0} ¦ آخر مزامنة: {0}
+SYNC_NEVER ¦ Not synced yet ¦ لم تتم المزامنة بعد
+SYNC_DISCONNECT ¦ Disconnect this device ¦ افصل هذا الجهاز
+SYNC_NOTE ¦ Learning data is synced; device settings (theme, privacy, API keys) stay on each device. There is no merge: when both devices changed you choose which copy to keep. ¦ تُزامن بيانات التعلّم فقط، وتبقى إعدادات الجهاز (المظهر والخصوصية ومفاتيح API) على كل جهاز. لا يوجد دمج: إن تغيّر الجهازان معًا تختار النسخة التي تحتفظ بها.
+SYNC_RESULT_UPLOADED ¦ Your progress was uploaded. ¦ رُفع تقدّمك.
+SYNC_RESULT_DOWNLOADED ¦ Progress from your other device was loaded. ¦ حُمّل التقدّم من جهازك الآخر.
+SYNC_RESULT_UP_TO_DATE ¦ Everything is up to date. ¦ كل شيء محدَّث.
+SYNC_RESULT_CONFLICT ¦ Both copies changed. ¦ تغيّرت النسختان.
+SYNC_CONFLICT_TITLE ¦ Both devices have new progress ¦ لدى الجهازين تقدّم جديد
+SYNC_CONFLICT_BODY ¦ This device and the server copy both changed since the last sync. Keep this device (the server copy is replaced) or use the server copy (this device's new progress is replaced)? ¦ تغيّر هذا الجهاز والنسخة المخزّنة منذ آخر مزامنة. هل تحتفظ بهذا الجهاز (تُستبدل النسخة المخزّنة) أم تستخدم النسخة المخزّنة (يُستبدل التقدّم الجديد على هذا الجهاز)؟
+SYNC_KEEP_THIS ¦ Keep this device ¦ احتفظ بهذا الجهاز
+SYNC_USE_SERVER ¦ Use the server copy ¦ استخدم النسخة المخزّنة
+SYNC_ERR_SETUP ¦ Enter the address, user name, password and passphrase first. ¦ أدخل العنوان واسم المستخدم وكلمة المرور وعبارة المرور أولًا.
+SYNC_ERR_INSECURE ¦ Use an https:// address (http:// is only allowed on your local network). ¦ استخدم عنوانًا يبدأ بـ https://، فـhttp:// مسموح على شبكتك المحلية فقط.
+SYNC_ERR_AUTH ¦ The server rejected the user name or password. ¦ رفض الخادم اسم المستخدم أو كلمة المرور.
+SYNC_ERR_PASSPHRASE ¦ The passphrase does not match the one used on your other device. ¦ عبارة المرور لا تطابق المستخدمة على جهازك الآخر.
+SYNC_ERR_NOT_SYNC ¦ The file on the server is not a sync file from this app. ¦ الملف على الخادم ليس ملف مزامنة من هذا التطبيق.
+SYNC_ERR_NEWER ¦ The server copy was made by a newer version of the app. Update the app first. ¦ النسخة المخزّنة من إصدار أحدث من التطبيق. حدّث التطبيق أولًا.
+SYNC_ERR_CHANGED ¦ Another device synced at the same moment. Tap Sync now again. ¦ زامن جهاز آخر في اللحظة نفسها. اضغط «زامن الآن» مجددًا.
+SYNC_ERR_SHORT_PASSPHRASE ¦ The passphrase must have at least 10 characters. ¦ يجب أن تتكوّن عبارة المرور من 10 أحرف على الأقل.
+SYNC_ERR_OTHER ¦ Sync failed: {0} ¦ فشلت المزامنة: {0}
