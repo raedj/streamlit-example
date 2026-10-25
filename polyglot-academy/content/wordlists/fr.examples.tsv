@@ -599,3 +599,603 @@ rank	sentence	en	ar	names
 299	On a rendez-vous à deux heures.	We're meeting at two o'clock.	لدينا موعد في الثانية.
 300	Bienvenue chez nous, mes amis !	Welcome to our home, my friends!	أهلًا بكم في بيتنا يا أصدقائي!
 300	Bienvenue dans notre ville.	Welcome to our town.	أهلًا بكم في مدينتنا.
+301	Je peux utiliser ton téléphone ?	Can I use your phone?	هل يمكنني استخدام هاتفك؟
+301	J'utilise l'ordinateur tous les jours.	I use the computer every day.	أستخدم الحاسوب كل يوم.
+302	Mon père conduit très bien.	My father drives very well.	أبي يقود جيدًا جدًا.
+302	Tu sais conduire une voiture ?	Do you know how to drive a car?	هل تعرف قيادة السيارة؟
+303	Nous avons visité le musée hier.	We visited the museum yesterday.	زرنا المتحف أمس.
+303	Je veux visiter Paris cet été.	I want to visit Paris this summer.	أريد زيارة باريس هذا الصيف.	Paris
+304	J'aime voyager en train.	I like travelling by train.	أحب السفر بالقطار.
+304	Nous voyageons chaque été.	We travel every summer.	نسافر كل صيف.
+305	Monte dans le bus, il part !	Get on the bus, it's leaving!	اركب الحافلة، إنها تغادر!
+305	Nous sommes montés sur la montagne.	We went up the mountain.	صعدنا الجبل.
+306	Je descends à la prochaine gare.	I get off at the next station.	أنزل في المحطة القادمة.
+306	Elle descend dans la cuisine.	She goes down to the kitchen.	تنزل إلى المطبخ.
+307	Entrez, la porte est ouverte.	Come in, the door is open.	ادخلوا، الباب مفتوح.
+307	Nous sommes entrés dans le restaurant.	We went into the restaurant.	دخلنا المطعم.
+308	Les enfants rient beaucoup.	The children laugh a lot.	الأطفال يضحكون كثيرًا.
+308	On a beaucoup ri avec ce film.	We laughed a lot at this film.	ضحكنا كثيرًا مع هذا الفيلم.
+309	Le bébé pleure la nuit.	The baby cries at night.	يبكي الطفل في الليل.
+309	Pourquoi est-ce que tu pleures ?	Why are you crying?	لماذا تبكي؟
+310	Ma sœur chante très bien.	My sister sings very well.	أختي تغني جيدًا جدًا.
+310	Nous avons chanté à la fête.	We sang at the party.	غنّينا في الحفلة.
+311	Tu veux danser avec moi ?	Do you want to dance with me?	هل تريد أن ترقص معي؟
+311	Nous avons dansé toute la nuit.	We danced all night.	رقصنا طوال الليل.
+312	Je nage dans la mer chaque été.	I swim in the sea every summer.	أسبح في البحر كل صيف.
+312	Mon fils apprend à nager.	My son is learning to swim.	ابني يتعلم السباحة.
+313	Attention, ne tombe pas !	Careful, don't fall!	انتبه، لا تسقط!
+313	Le verre est tombé de la table.	The glass fell off the table.	سقط الكوب من على الطاولة.
+314	Ton fils a beaucoup grandi.	Your son has grown a lot.	لقد كبر ابنك كثيرًا.
+314	Les enfants grandissent vite.	Children grow up fast.	الأطفال يكبرون بسرعة.
+315	Ils vendent des fruits au marché.	They sell fruit at the market.	يبيعون الفاكهة في السوق.
+315	Mon père a vendu sa vieille voiture.	My father sold his old car.	باع أبي سيارته القديمة.
+316	Tu peux choisir la couleur.	You can choose the colour.	يمكنك اختيار اللون.
+316	Elle a choisi la robe bleue.	She chose the blue dress.	اختارت الفستان الأزرق.
+317	Attention, ne casse pas le verre.	Careful, don't break the glass.	انتبه، لا تكسر الكوب.
+317	Mon téléphone est cassé.	My phone is broken.	هاتفي مكسور.
+318	Ils construisent une nouvelle école.	They are building a new school.	يبنون مدرسة جديدة.
+318	Mon grand-père a construit cette maison.	My grandfather built this house.	بنى جدي هذا البيت.
+319	Tu peux réparer mon vélo ?	Can you repair my bike?	هل يمكنك إصلاح دراجتي؟
+319	Mon père a réparé la lumière.	My father repaired the light.	أصلح أبي الضوء.
+320	Profite bien de tes vacances !	Enjoy your holidays!	استمتع بعطلتك!
+320	Nous avons profité du beau temps.	We made the most of the good weather.	استفدنا من الطقس الجميل.
+321	Réponds à la question, s'il te plaît.	Answer the question, please.	أجب عن السؤال من فضلك.
+321	Elle n'a pas répondu à mon message.	She didn't answer my message.	لم ترد على رسالتي.
+322	Tu peux expliquer ce mot ?	Can you explain this word?	هل يمكنك شرح هذه الكلمة؟
+322	Le professeur explique la leçon encore une fois.	The teacher explains the lesson once more.	يشرح المعلم الدرس مرة أخرى.
+323	Ma mère prépare le déjeuner.	My mother is preparing lunch.	أمي تحضّر الغداء.
+323	J'ai tout préparé pour la fête.	I prepared everything for the party.	حضّرت كل شيء للحفلة.
+324	Je vais commander du poisson.	I'm going to order fish.	سأطلب سمكًا.
+324	Nous avons commandé deux cafés.	We ordered two coffees.	طلبنا قهوتين.
+325	Je veux économiser pour un voyage.	I want to save for a trip.	أريد أن أدّخر لرحلة.
+325	Nous économisons un peu chaque mois.	We save a little every month.	ندّخر قليلًا كل شهر.
+326	Ne touche pas le gâteau !	Don't touch the cake!	لا تلمس الكعكة!
+326	Le bébé touche mon visage.	The baby touches my face.	الطفل يلمس وجهي.
+327	Coupe le pain, s'il te plaît.	Cut the bread, please.	اقطع الخبز من فضلك.
+327	Je me suis coupé la main.	I cut my hand.	جرحت يدي.
+328	Je déteste le froid.	I hate the cold.	أكره البرد.
+328	Ma sœur déteste attendre le bus.	My sister hates waiting for the bus.	أختي تكره انتظار الحافلة.
+329	J'espère réussir mon examen.	I hope to pass my exam.	أتمنى أن أنجح في امتحاني.
+329	Elle a réussi tous ses examens.	She passed all her exams.	نجحت في كل امتحاناتها.
+330	Rends le livre à la bibliothèque.	Return the book to the library.	أعد الكتاب إلى المكتبة.
+330	Je te rends ton argent demain.	I'll give you your money back tomorrow.	سأعيد لك مالك غدًا.
+331	Elle sourit toujours à tout le monde.	She always smiles at everyone.	هي تبتسم للجميع دائمًا.
+331	L'enfant a souri à sa mère.	The child smiled at his mother.	ابتسم الطفل لأمه.
+332	Tu peux me prêter ton stylo ?	Can you lend me your pen?	هل يمكنك أن تعيرني قلمك؟
+332	J'ai prêté ma voiture à mon frère.	I lent my car to my brother.	أعرت سيارتي لأخي.
+333	Combien coûte cette chemise ?	How much does this shirt cost?	كم يكلّف هذا القميص؟
+333	Le voyage a coûté beaucoup d'argent.	The trip cost a lot of money.	كلّفت الرحلة مالًا كثيرًا.
+334	Son vieux chien est mort l'année dernière.	His old dog died last year.	مات كلبه العجوز العام الماضي.
+334	Les fleurs meurent sans eau.	Flowers die without water.	تموت الزهور بدون ماء.
+335	Tu as reçu mon message ?	Did you get my message?	هل وصلتك رسالتي؟
+335	J'ai reçu un cadeau de ma tante.	I got a present from my aunt.	تلقيت هدية من عمتي.
+336	Vous pouvez répéter, s'il vous plaît ?	Can you repeat, please?	هل يمكنك التكرار من فضلك؟
+336	Répétez les mots avec moi.	Repeat the words with me.	ردّدوا الكلمات معي.
+337	Goûte cette soupe, elle est délicieuse.	Taste this soup, it's delicious.	تذوق هذا الحساء، إنه لذيذ.
+337	Je peux goûter le gâteau ?	Can I taste the cake?	هل يمكنني تذوق الكعكة؟
+338	Tu dois te reposer quelques jours.	You must rest for a few days.	يجب أن ترتاح بضعة أيام.
+338	Nous nous reposons après le déjeuner.	We rest after lunch.	نرتاح بعد الغداء.
+339	Il m'a offert un café.	He offered me a coffee.	عرض عليّ قهوة.
+339	Je vais offrir des fleurs à ma mère.	I'm going to give my mother flowers.	سأهدي أمي زهورًا.
+340	Je te promets de t'appeler.	I promise to call you.	أعدك بأن أتصل بك.
+340	Il a promis de nous aider.	He promised to help us.	وعد بأن يساعدنا.
+341	Nous partageons le gâteau.	We share the cake.	نتقاسم الكعكة.
+341	Je partage ma chambre avec mon frère.	I share my room with my brother.	أتشارك غرفتي مع أخي.
+342	Je veux améliorer mon français.	I want to improve my French.	أريد أن أحسّن لغتي الفرنسية.
+342	Ta santé s'est améliorée.	Your health has improved.	تحسّنت صحتك.
+343	Nous avons décidé de rester à la maison.	We decided to stay at home.	قررنا البقاء في البيت.
+343	Je ne peux pas décider quoi acheter.	I can't decide what to buy.	لا أستطيع أن أقرر ماذا أشتري.
+344	Ma mère me permet de sortir.	My mother allows me to go out.	تسمح لي أمي بالخروج.
+344	Les chiens ne sont pas permis ici.	Dogs aren't allowed here.	لا يُسمح بالكلاب هنا.
+345	Je te souhaite un bon anniversaire.	I wish you a happy birthday.	أتمنى لك عيد ميلاد سعيدًا.
+345	Nous vous souhaitons de bonnes vacances.	We wish you a good holiday.	نتمنى لكم عطلة سعيدة.
+346	Les enfants sautent dans le jardin.	The children jump in the garden.	يقفز الأطفال في الحديقة.
+346	Le chat a sauté sur la table.	The cat jumped onto the table.	قفزت القطة على الطاولة.
+347	Je m'habille vite le matin.	I get dressed quickly in the morning.	أرتدي ملابسي بسرعة في الصباح.
+347	L'enfant s'habille seul le matin.	The child gets dressed by himself in the morning.	الطفل يرتدي ملابسه وحده في الصباح.
+348	Je me réveille à sept heures.	I wake up at seven.	أستيقظ في السابعة.
+348	Tu te réveilles à quelle heure ?	What time do you wake up?	في أي ساعة تستيقظ؟
+349	Je me lève tôt tous les jours.	I get up early every day.	أنهض مبكرًا كل يوم.
+349	Mon père s'est levé à six heures.	My father got up at six.	نهض أبي في السادسة.
+350	Je me douche le matin.	I shower in the morning.	أستحم في الصباح.
+350	Elle se douche après le sport.	She showers after sport.	تستحم بعد الرياضة.
+351	Mon grand-père raconte des histoires.	My grandfather tells stories.	يحكي جدي قصصًا.
+351	Raconte-moi ton voyage.	Tell me about your trip.	احكِ لي عن رحلتك.
+352	Elle enseigne le français dans une école.	She teaches French in a school.	تدرّس الفرنسية في مدرسة.
+352	Mon oncle enseigne la musique.	My uncle teaches music.	عمي يدرّس الموسيقى.
+353	Je t'invite à ma fête.	I'm inviting you to my party.	أدعوك إلى حفلتي.
+353	Ils nous ont invités à dîner.	They invited us to dinner.	دعونا إلى العشاء.
+354	Nous fêtons son anniversaire à la maison.	We're celebrating her birthday at home.	نحتفل بعيد ميلادها في البيت.
+354	On a fêté la fin de l'examen.	We celebrated the end of the exam.	احتفلنا بنهاية الامتحان.
+355	Nous louons un appartement au centre.	We rent a flat in the centre.	نستأجر شقة في المركز.
+355	Je veux louer un vélo.	I want to rent a bike.	أريد أن أستأجر دراجة.
+356	Je voudrais réserver une table pour deux.	I'd like to book a table for two.	أريد أن أحجز طاولة لشخصين.
+356	J'ai réservé l'hôtel par téléphone.	I booked the hotel by phone.	حجزت الفندق بالهاتف.
+357	Je suis né dans un petit village.	I was born in a small village.	ولدت في قرية صغيرة.
+357	Ma fille est née en hiver.	My daughter was born in winter.	ولدت ابنتي في الشتاء.
+358	Ma sœur se marie cet été.	My sister is getting married this summer.	أختي تتزوج هذا الصيف.
+358	Ils se sont mariés l'année dernière.	They got married last year.	تزوجا العام الماضي.
+359	Je vais essayer d'arriver tôt.	I'll try to arrive early.	سأحاول الوصول مبكرًا.
+359	Tu peux essayer cette robe.	You can try on this dress.	يمكنك تجربة هذا الفستان.
+360	Le serveur sert le repas.	The waiter serves the meal.	النادل يقدّم الوجبة.
+360	Ça sert à quoi ?	What is it for?	ما فائدة هذا؟
+361	Traverse la rue avec attention.	Cross the street carefully.	اعبر الشارع بانتباه.
+361	Nous avons traversé le pont à pied.	We crossed the bridge on foot.	عبرنا الجسر سيرًا.
+362	Tournez à droite après la banque.	Turn right after the bank.	انعطفوا يمينًا بعد المصرف.
+362	Tourne à gauche dans la prochaine rue.	Turn left at the next street.	انعطف يسارًا في الشارع القادم.
+363	Remplis le verre d'eau.	Fill the glass with water.	املأ الكوب بالماء.
+363	J'ai rempli la valise de vêtements.	I filled the suitcase with clothes.	ملأت الحقيبة بالملابس.
+364	Elle porte une robe rouge.	She is wearing a red dress.	ترتدي فستانًا أحمر.
+364	Tu peux porter ce sac ?	Can you carry this bag?	هل يمكنك حمل هذه الحقيبة؟
+365	Je nettoie la cuisine le samedi.	I clean the kitchen on Saturdays.	أنظف المطبخ يوم السبت.
+365	Nous avons nettoyé toute la maison.	We cleaned the whole house.	نظفنا البيت كله.
+366	Je me sens fatigué aujourd'hui.	I feel tired today.	أشعر بالتعب اليوم.
+366	Les fleurs sentent bon.	The flowers smell good.	رائحة الزهور طيبة.
+367	Je veux devenir médecin.	I want to become a doctor.	أريد أن أصبح طبيبًا.
+367	Elle est devenue professeur.	She became a teacher.	أصبحت معلمة.
+368	Je reviens dans cinq minutes.	I'll be back in five minutes.	سأعود بعد خمس دقائق.
+368	Quand est-ce que tu reviens de voyage ?	When are you coming back from your trip?	متى تعود من رحلتك؟
+369	Suivez-moi, s'il vous plaît.	Follow me, please.	اتبعوني من فضلكم.
+369	Le chien nous a suivis à la maison.	The dog followed us home.	تبعنا الكلب إلى البيت.
+370	Tu peux garder ce livre.	You can keep this book.	يمكنك الاحتفاظ بهذا الكتاب.
+370	Je garde toutes mes photos.	I keep all my photos.	أحتفظ بكل صوري.
+371	J'ai laissé mon sac dans le bus.	I left my bag on the bus.	تركت حقيبتي في الحافلة.
+371	Laisse-moi t'aider avec ça.	Let me help you with that.	دعني أساعدك في ذلك.
+372	L'enfant compte de un à dix.	The child counts from one to ten.	يعدّ الطفل من واحد إلى عشرة.
+372	Compte l'argent, s'il te plaît.	Count the money, please.	عُدّ المال من فضلك.
+373	J'espère que tu vas bien.	I hope you're well.	آمل أن تكون بخير.
+373	Nous espérons venir l'été prochain.	We hope to come next summer.	نأمل أن نأتي الصيف القادم.
+374	Je préfère le thé au café.	I prefer tea to coffee.	أفضّل الشاي على القهوة.
+374	Tu préfères la mer ou la montagne ?	Do you prefer the sea or the mountains?	هل تفضّل البحر أم الجبل؟
+375	Je quitte le bureau à six heures.	I leave the office at six.	أغادر المكتب في السادسة.
+375	Il a quitté la ville l'année dernière.	He left the city last year.	غادر المدينة العام الماضي.
+376	Tu sembles fatigué ce soir.	You seem tired this evening.	تبدو متعبًا هذا المساء.
+376	Ça semble facile, mais c'est difficile.	It seems easy, but it's difficult.	يبدو سهلًا، لكنه صعب.
+377	Asseyez-vous, s'il vous plaît.	Sit down, please.	اجلسوا من فضلكم.
+377	Je m'assieds près de la fenêtre.	I sit near the window.	أجلس قرب النافذة.
+378	Lundi, je commence un nouveau travail.	On Monday I start a new job.	يوم الاثنين أبدأ عملًا جديدًا.
+378	Le musée est fermé le lundi.	The museum is closed on Mondays.	المتحف مغلق أيام الاثنين.
+379	J'ai un cours de musique mardi.	I have a music class on Tuesday.	لديّ درس موسيقى يوم الثلاثاء.
+379	La réunion est mardi matin.	The meeting is on Tuesday morning.	الاجتماع صباح الثلاثاء.
+380	Mercredi, nous allons au cinéma.	On Wednesday we're going to the cinema.	يوم الأربعاء سنذهب إلى السينما.
+380	Tu travailles mercredi matin ?	Are you working on Wednesday morning?	هل تعمل صباح الأربعاء؟
+381	Jeudi, c'est l'anniversaire de ma mère.	Thursday is my mother's birthday.	يوم الخميس عيد ميلاد أمي.
+381	Je t'appelle jeudi soir.	I'll call you on Thursday evening.	سأتصل بك مساء الخميس.
+382	Nous avons un examen vendredi.	We have an exam on Friday.	لدينا امتحان يوم الجمعة.
+382	Le vendredi soir, on va au restaurant.	On Friday evenings we go to a restaurant.	مساء الجمعة نذهب إلى المطعم.
+383	Samedi, nous allons au marché.	On Saturday we're going to the market.	يوم السبت سنذهب إلى السوق.
+383	Tu es libre samedi ?	Are you free on Saturday?	هل أنت متفرغ يوم السبت؟
+384	Nous voyons ma grand-mère le dimanche.	We see my grandmother on Sundays.	نرى جدتي أيام الأحد.
+384	Je ne travaille pas le dimanche.	I don't work on Sundays.	لا أعمل أيام الأحد.
+385	En été, il fait très chaud.	In summer it's very hot.	في الصيف الجو حار جدًا.
+385	Nous allons à la plage cet été.	We're going to the beach this summer.	سنذهب إلى الشاطئ هذا الصيف.
+386	En hiver, il fait froid.	In winter it's cold.	في الشتاء الجو بارد.
+386	J'ai besoin d'un manteau pour l'hiver.	I need a coat for the winter.	أحتاج إلى معطف للشتاء.
+387	Au printemps, il y a beaucoup de fleurs.	In spring there are a lot of flowers.	في الربيع زهور كثيرة.
+387	J'aime beaucoup le printemps.	I really like spring.	أحب الربيع كثيرًا.
+388	En automne, il pleut souvent.	In autumn it often rains.	في الخريف تمطر كثيرًا.
+388	Les arbres sont beaux en automne.	The trees are beautiful in autumn.	الأشجار جميلة في الخريف.
+389	Où vas-tu en vacances ?	Where are you going on holiday?	إلى أين تذهب في العطلة؟
+389	Les vacances étaient magnifiques.	The holidays were wonderful.	كانت العطلة رائعة.
+390	Quel âge as-tu ?	How old are you?	كم عمرك؟
+390	À ton âge, j'habitais à Paris.	At your age, I lived in Paris.	في عمرك كنت أسكن في باريس.	Paris
+391	Mon oncle habite dans un autre pays.	My uncle lives in another country.	عمي يسكن في بلد آخر.
+391	Mon oncle est très drôle.	My uncle is very funny.	عمي مضحك جدًا.
+392	Ma tante fait un gâteau délicieux.	My aunt makes a delicious cake.	عمتي تصنع كعكة لذيذة.
+392	Nous sommes chez ma tante.	We're at my aunt's.	نحن عند عمتي.
+393	Mon cousin vient demain.	My cousin is coming tomorrow.	ابن عمي قادم غدًا.
+393	J'ai beaucoup de cousins.	I have a lot of cousins.	لديّ أبناء عم كثيرون.
+394	Notre voisin a un grand chien.	Our neighbour has a big dog.	جارنا لديه كلب كبير.
+394	Ma voisine est très gentille.	My neighbour is very kind.	جارتي لطيفة جدًا.
+395	Je suis étudiant à Paris depuis un an.	I have been a student in Paris for a year.	أنا طالب في باريس منذ سنة.	Paris
+395	Il y a vingt étudiants dans la classe.	There are twenty students in the class.	في الصف عشرون طالبًا.
+396	Mon patron est très occupé aujourd'hui.	My boss is very busy today.	مديري مشغول جدًا اليوم.
+396	J'ai une réunion avec mon patron.	I have a meeting with my boss.	لديّ اجتماع مع مديري.
+397	Le chauffeur du bus est sympa.	The bus driver is nice.	سائق الحافلة لطيف.
+397	Mon père est chauffeur de taxi.	My father is a taxi driver.	أبي سائق سيارة أجرة.
+398	Il faut appeler la police !	We have to call the police!	يجب أن نتصل بالشرطة!
+398	La police a trouvé mon sac.	The police found my bag.	وجدت الشرطة حقيبتي.
+399	Le magasin a beaucoup de clients.	The shop has a lot of customers.	للمتجر زبائن كثيرون.
+399	La cliente veut payer par carte.	The customer wants to pay by card.	الزبونة تريد الدفع بالبطاقة.
+400	Notre équipe a gagné le jeu.	Our team won the game.	فاز فريقنا في اللعبة.
+400	Je travaille dans une petite équipe.	I work in a small team.	أعمل في فريق صغير.
+401	Nous avons voyagé en grand groupe.	We travelled in a big group.	سافرنا في مجموعة كبيرة.
+401	Les étudiants travaillent en groupes.	The students work in groups.	يعمل الطلاب في مجموعات.
+402	Le sport est bon pour le corps.	Sport is good for the body.	الرياضة مفيدة للجسم.
+402	Après le sport, j'ai mal au corps.	After sport my body hurts.	بعد الرياضة جسمي يؤلمني.
+403	Lave-toi le visage et les mains.	Wash your face and hands.	اغسل وجهك ويديك.
+403	Elle a un très joli visage.	She has a very pretty face.	لها وجه جميل جدًا.
+404	Elle a les cheveux longs et noirs.	She has long black hair.	شعرها طويل وأسود.
+404	Je dois couper mes cheveux.	I must cut my hair.	يجب أن أقص شعري.
+405	Ouvre la bouche, s'il te plaît.	Open your mouth, please.	افتح فمك من فضلك.
+405	J'ai la bouche sèche.	My mouth is dry.	فمي جاف.
+406	J'ai mal à l'oreille.	My ear hurts.	أذني تؤلمني.
+406	Le chat a de petites oreilles.	The cat has small ears.	للقطة أذنان صغيرتان.
+407	Il s'est cassé le bras.	He broke his arm.	كسر ذراعه.
+407	Elle porte le bébé dans ses bras.	She carries the baby in her arms.	تحمل الطفل بين ذراعيها.
+408	J'ai mal aux jambes.	My legs hurt.	ساقاي تؤلمانني.
+408	La table a quatre jambes.	The table has four legs.	للطاولة أربع أرجل.
+409	Nous allons au parc à pied.	We go to the park on foot.	نذهب إلى الحديقة سيرًا.
+409	J'ai mal aux pieds.	My feet hurt.	قدماي تؤلمانني.
+410	Elle a un grand cœur.	She has a big heart.	لها قلب كبير.
+410	Le cœur est très important.	The heart is very important.	القلب مهم جدًا.
+411	J'ai mal aux dents.	I have toothache.	أسناني تؤلمني.
+411	Lave tes dents avant de dormir.	Brush your teeth before sleeping.	نظّف أسنانك قبل النوم.
+412	J'ai mal au dos.	My back hurts.	ظهري يؤلمني.
+412	Il porte un sac sur le dos.	He carries a bag on his back.	يحمل حقيبة على ظهره.
+413	Elle a un petit nez.	She has a small nose.	لها أنف صغير.
+413	J'ai mal au nez.	My nose hurts.	أنفي يؤلمني.
+414	J'ai une douleur dans le dos.	I have a pain in my back.	لديّ ألم في ظهري.
+414	La douleur est moins forte aujourd'hui.	The pain is less strong today.	الألم أخف اليوم.
+415	L'enfant a de la fièvre.	The child has a fever.	الطفل مصاب بالحمّى.
+415	Si tu as de la fièvre, va chez le médecin.	If you have a fever, go to the doctor.	إذا كانت لديك حمّى فاذهب إلى الطبيب.
+416	Prends ce médicament après le repas.	Take this medicine after the meal.	خذ هذا الدواء بعد الوجبة.
+416	Le médicament m'a beaucoup aidé.	The medicine helped me a lot.	ساعدني الدواء كثيرًا.
+417	Mon grand-père est à l'hôpital.	My grandfather is in hospital.	جدي في المستشفى.
+417	Où est l'hôpital, s'il vous plaît ?	Where is the hospital, please?	أين المستشفى من فضلك؟
+418	La pharmacie est près d'ici.	The pharmacy is near here.	الصيدلية قريبة من هنا.
+418	J'ai acheté le médicament à la pharmacie.	I bought the medicine at the pharmacy.	اشتريت الدواء من الصيدلية.
+419	La santé est très importante.	Health is very important.	الصحة مهمة جدًا.
+419	Le sport est bon pour la santé.	Sport is good for your health.	الرياضة مفيدة للصحة.
+420	Nous avons un petit jardin.	We have a small garden.	لدينا حديقة صغيرة.
+420	Les enfants jouent dans le jardin.	The children play in the garden.	يلعب الأطفال في الحديقة.
+421	Il y a une horloge sur le mur.	There's a clock on the wall.	هناك ساعة على الجدار.
+421	Les murs de ma chambre sont blancs.	The walls of my room are white.	جدران غرفتي بيضاء.
+422	Le sac est sur le sol.	The bag is on the floor.	الحقيبة على الأرض.
+422	Le sol de la cuisine est mouillé.	The kitchen floor is wet.	أرضية المطبخ مبللة.
+423	Assieds-toi sur cette chaise.	Sit on this chair.	اجلس على هذا الكرسي.
+423	Nous avons besoin de deux chaises.	We need two chairs.	نحتاج إلى كرسيين.
+424	Qu'est-ce qu'il y a dans cette boîte ?	What's in this box?	ماذا يوجد في هذا الصندوق؟
+424	Mets les livres dans la boîte.	Put the books in the box.	ضع الكتب في الصندوق.
+425	Mon sac est très lourd.	My bag is very heavy.	حقيبتي ثقيلة جدًا.
+425	Elle a laissé son sac dans le train.	She left her bag on the train.	تركت حقيبتها في القطار.
+426	Je ne trouve pas mes clés.	I can't find my keys.	لا أجد مفاتيحي.
+426	C'est la clé de votre chambre.	This is the key to your room.	هذا مفتاح غرفتك.
+427	Mon père m'a offert une montre.	My father gave me a watch.	أهداني أبي ساعة.
+427	Ma montre est cassée.	My watch is broken.	ساعتي مكسورة.
+428	L'horloge de la cuisine est vieille.	The kitchen clock is old.	ساعة المطبخ قديمة.
+428	Regarde l'horloge, il est tard !	Look at the clock, it's late!	انظر إلى الساعة، الوقت متأخر!
+429	La lumière est trop forte ici.	The light is too strong here.	الضوء قوي جدًا هنا.
+429	Ma chambre a beaucoup de lumière.	My room has a lot of light.	في غرفتي ضوء كثير.
+430	Vous pouvez nous prendre en photo ?	Can you take a photo of us?	هل يمكنك التقاط صورة لنا؟
+430	J'ai beaucoup de photos du voyage.	I have a lot of photos from the trip.	لديّ صور كثيرة من الرحلة.
+431	J'ai écrit une lettre à ma grand-mère.	I wrote a letter to my grandmother.	كتبت رسالة إلى جدتي.
+431	Il y a une lettre pour moi ?	Is there a letter for me?	هل هناك رسالة لي؟
+432	J'ai besoin de papier et d'un stylo.	I need paper and a pen.	أحتاج إلى ورق وقلم.
+432	Écris ton nom sur le papier.	Write your name on the paper.	اكتب اسمك على الورقة.
+433	Tu peux me prêter un stylo ?	Can you lend me a pen?	هل يمكنك أن تعيرني قلمًا؟
+433	Ce stylo n'écrit pas.	This pen doesn't write.	هذا القلم لا يكتب.
+434	Je voudrais un verre d'eau.	I'd like a glass of water.	أريد كوب ماء.
+434	Le verre est vide.	The glass is empty.	الكوب فارغ.
+435	Tu veux une tasse de thé ?	Do you want a cup of tea?	هل تريد فنجان شاي؟
+435	La tasse est sur la table.	The cup is on the table.	الفنجان على الطاولة.
+436	Mets le gâteau sur une assiette.	Put the cake on a plate.	ضع الكعكة على صحن.
+436	Mon assiette est vide.	My plate is empty.	صحني فارغ.
+437	Nous mangeons du riz tous les jours.	We eat rice every day.	نأكل الأرز كل يوم.
+437	Je voudrais du poulet avec du riz.	I'd like chicken with rice.	أريد دجاجًا مع أرز.
+438	Je ne mange pas de viande.	I don't eat meat.	لا آكل اللحم.
+438	La viande est très bonne ici.	The meat is very good here.	اللحم جيد جدًا هنا.
+439	Nous avons mangé du poulet ce soir.	We ate chicken this evening.	أكلنا الدجاج هذا المساء.
+439	Cette soupe au poulet est délicieuse.	This chicken soup is delicious.	حساء الدجاج هذا لذيذ.
+440	Tu aimes le poisson ?	Do you like fish?	هل تحب السمك؟
+440	Il y a beaucoup de poissons dans la rivière.	There are lots of fish in the river.	في النهر أسماك كثيرة.
+441	Je mange deux œufs le matin.	I eat two eggs in the morning.	آكل بيضتين في الصباح.
+441	Nous avons besoin d'œufs pour le gâteau.	We need eggs for the cake.	نحتاج إلى بيض للكعكة.
+442	Je mange des fruits tous les matins.	I eat fruit every morning.	آكل الفاكهة كل صباح.
+442	Les fruits du marché sont bons.	The fruit at the market is good.	الفاكهة في السوق جيدة.
+443	Elle a acheté trois pommes.	She bought three apples.	اشترت ثلاث تفاحات.
+443	Cette pomme est très rouge.	This apple is very red.	هذه التفاحة حمراء جدًا.
+444	Mange tes légumes, c'est bon pour toi.	Eat your vegetables, they're good for you.	كُل خضارك، إنها مفيدة لك.
+444	Nous achetons les légumes au marché.	We buy vegetables at the market.	نشتري الخضار من السوق.
+445	Je ne prends pas de sucre dans le café.	I don't take sugar in my coffee.	لا أضع سكرًا في القهوة.
+445	Nous avons besoin de sucre pour le gâteau.	We need sugar for the cake.	نحتاج إلى سكر للكعكة.
+446	Tu peux me passer le sel ?	Can you pass me the salt?	هل يمكنك أن تناولني الملح؟
+446	La soupe a besoin de sel.	The soup needs salt.	الحساء يحتاج إلى ملح.
+447	Ma mère a fait un gâteau d'anniversaire.	My mother made a birthday cake.	صنعت أمي كعكة عيد ميلاد.
+447	Tu veux un peu de gâteau ?	Do you want a little cake?	هل تريد قليلًا من الكعكة؟
+448	La soupe est très chaude.	The soup is very hot.	الحساء ساخن جدًا.
+448	Je voudrais la soupe de poisson.	I'd like the fish soup.	أريد حساء السمك.
+449	Je voudrais un jus de pomme.	I'd like an apple juice.	أريد عصير تفاح.
+449	Les enfants aiment le jus de fruits.	Children like fruit juice.	الأطفال يحبون عصير الفاكهة.
+450	J'aime le pain avec du fromage.	I like bread with cheese.	أحب الخبز مع الجبن.
+450	Ce fromage vient du village.	This cheese comes from the village.	هذا الجبن من القرية.
+451	Qu'est-ce qu'il y a comme dessert ?	What is there for dessert?	ماذا يوجد للحلوى؟
+451	Je ne veux pas de dessert, merci.	I don't want dessert, thank you.	لا أريد حلوى، شكرًا.
+452	Nous avons mangé dans un nouveau restaurant.	We ate in a new restaurant.	أكلنا في مطعم جديد.
+452	Ce restaurant est très cher.	This restaurant is very expensive.	هذا المطعم غالٍ جدًا.
+453	Notre hôtel est près de la plage.	Our hotel is near the beach.	فندقنا قريب من الشاطئ.
+453	Nous avons passé trois nuits à l'hôtel.	We spent three nights at the hotel.	قضينا ثلاث ليالٍ في الفندق.
+454	Où est la gare, s'il vous plaît ?	Where is the station, please?	أين محطة القطار من فضلك؟
+454	Je t'attends à la gare.	I'll wait for you at the station.	سأنتظرك في المحطة.
+455	L'aéroport est loin de la ville ?	Is the airport far from the town?	هل المطار بعيد عن المدينة؟
+455	Nous sommes arrivés tôt à l'aéroport.	We arrived early at the airport.	وصلنا إلى المطار مبكرًا.
+456	Je dois aller à la banque.	I must go to the bank.	يجب أن أذهب إلى المصرف.
+456	La banque ouvre à neuf heures.	The bank opens at nine.	يفتح المصرف في التاسعة.
+457	Nous achetons du poisson au marché.	We buy fish at the market.	نشتري السمك من السوق.
+457	Le marché est ouvert le samedi.	The market is open on Saturdays.	السوق مفتوح أيام السبت.
+458	On va marcher dans le parc ?	Shall we walk in the park?	هل نمشي في الحديقة؟
+458	Il y a un grand parc près de chez moi.	There's a big park near my home.	هناك حديقة كبيرة قرب بيتي.
+459	Ma grand-mère habite dans un petit village.	My grandmother lives in a small village.	تسكن جدتي في قرية صغيرة.
+459	Le village est près de la montagne.	The village is near the mountain.	القرية قريبة من الجبل.
+460	Nous avons nagé dans la rivière.	We swam in the river.	سبحنا في النهر.
+460	Il y a un pont sur la rivière.	There's a bridge over the river.	هناك جسر فوق النهر.
+461	Nous sommes montés à pied sur la montagne.	We went up the mountain on foot.	صعدنا الجبل سيرًا.
+461	Il y a de la neige sur les montagnes.	There is snow on the mountains.	هناك ثلج على الجبال.
+462	Nous avons traversé le pont.	We crossed the bridge.	عبرنا الجسر.
+462	Ce pont est très vieux.	This bridge is very old.	هذا الجسر قديم جدًا.
+463	L'hôtel est dans le centre.	The hotel is in the centre.	الفندق في المركز.
+463	Nous allons au centre en bus.	We go to the centre by bus.	نذهب إلى المركز بالحافلة.
+464	J'étudie à la bibliothèque.	I study at the library.	أدرس في المكتبة.
+464	La bibliothèque est fermée le dimanche.	The library is closed on Sundays.	المكتبة مغلقة أيام الأحد.
+465	Le musée est fermé le lundi.	The museum is closed on Mondays.	المتحف مغلق أيام الاثنين.
+465	Nous avons visité un musée célèbre.	We visited a famous museum.	زرنا متحفًا مشهورًا.
+466	L'avion part à huit heures.	The plane leaves at eight.	تغادر الطائرة في الثامنة.
+466	Je n'aime pas voyager en avion.	I don't like travelling by plane.	لا أحب السفر بالطائرة.
+467	Nous avons pris le bateau sur la rivière.	We took the boat on the river.	ركبنا القارب في النهر.
+467	Le bateau est très grand.	The boat is very big.	القارب كبير جدًا.
+468	Je vais au travail à vélo.	I go to work by bike.	أذهب إلى العمل بالدراجة.
+468	Mon fils a un nouveau vélo.	My son has a new bike.	لدى ابني دراجة جديدة.
+469	On va prendre un taxi.	We're going to take a taxi.	سنأخذ سيارة أجرة.
+469	Le taxi attend dehors.	The taxi is waiting outside.	سيارة الأجرة تنتظر في الخارج.
+470	Je vais au bureau en métro.	I go to the office by metro.	أذهب إلى المكتب بالمترو.
+470	Où est le métro, s'il vous plaît ?	Where is the metro, please?	أين المترو من فضلك؟
+471	J'ai acheté deux billets de train.	I bought two train tickets.	اشتريت تذكرتي قطار.
+471	Combien coûte le billet ?	How much is the ticket?	بكم التذكرة؟
+472	Vous avez un plan de la ville ?	Do you have a map of the town?	هل لديك خريطة للمدينة؟
+472	Montre-moi sur le plan.	Show me on the map.	أرني على الخريطة.
+473	Où sont mes bagages ?	Where is my luggage?	أين أمتعتي؟
+473	Nous avons beaucoup de bagages.	We have a lot of luggage.	لدينا أمتعة كثيرة.
+474	Ma valise est très lourde.	My suitcase is very heavy.	حقيبة سفري ثقيلة جدًا.
+474	Je fais ma valise ce soir.	I'm packing my suitcase this evening.	أحزم حقيبتي هذا المساء.
+475	Je travaille sur l'ordinateur tous les jours.	I work on the computer every day.	أعمل على الحاسوب كل يوم.
+475	Mon ordinateur est très lent.	My computer is very slow.	حاسوبي بطيء جدًا.
+476	Nous regardons la télévision le soir.	We watch television in the evening.	نشاهد التلفاز في المساء.
+476	Il y a une grande télé dans le salon.	There's a big TV in the living room.	هناك تلفاز كبير في غرفة الجلوس.
+477	J'ai reçu ton message.	I got your message.	وصلتني رسالتك.
+477	Je peux laisser un message ?	Can I leave a message?	هل يمكنني ترك رسالة؟
+478	J'aime beaucoup ta chemise.	I really like your shirt.	يعجبني قميصك كثيرًا.
+478	Il porte une chemise blanche.	He's wearing a white shirt.	يرتدي قميصًا أبيض.
+479	Elle a acheté une nouvelle robe.	She bought a new dress.	اشترت فستانًا جديدًا.
+479	C'est une très belle robe.	It's a very beautiful dress.	إنه فستان جميل جدًا.
+480	Ces chaussures sont très confortables.	These shoes are very comfortable.	هذا الحذاء مريح جدًا.
+480	J'ai besoin de nouvelles chaussures.	I need new shoes.	أحتاج إلى حذاء جديد.
+481	Prends ton manteau, il fait froid.	Take your coat, it's cold.	خذ معطفك، الجو بارد.
+481	J'ai laissé mon manteau au restaurant.	I left my coat at the restaurant.	تركت معطفي في المطعم.
+482	Je ne trouve pas mes lunettes.	I can't find my glasses.	لا أجد نظارتي.
+482	J'ai besoin de lunettes pour lire.	I need glasses to read.	أحتاج إلى نظارة للقراءة.
+483	Je peux payer par carte ?	Can I pay by card?	هل يمكنني الدفع بالبطاقة؟
+483	Elle m'a envoyé une carte d'anniversaire.	She sent me a birthday card.	أرسلت لي بطاقة عيد ميلاد.
+484	Les enfants jouent avec le ballon.	The children play with the ball.	يلعب الأطفال بالكرة.
+484	Mets le ballon dans le jardin.	Put the ball in the garden.	ضع الكرة في الحديقة.
+485	Il m'a offert des fleurs.	He gave me flowers.	أهداني زهورًا.
+485	Il y a beaucoup de fleurs dans le jardin.	There are lots of flowers in the garden.	في الحديقة زهور كثيرة.
+486	Il y a un grand arbre dans le parc.	There's a big tree in the park.	هناك شجرة كبيرة في الحديقة.
+486	Les oiseaux sont dans l'arbre.	The birds are in the tree.	الطيور في الشجرة.
+487	Quel est ton animal préféré ?	What's your favourite animal?	ما حيوانك المفضل؟
+487	Il y a beaucoup d'animaux au village.	There are lots of animals in the village.	في القرية حيوانات كثيرة.
+488	Un oiseau chante dans l'arbre.	A bird is singing in the tree.	طائر يغني في الشجرة.
+488	J'ai vu un grand oiseau près de la rivière.	I saw a big bird near the river.	رأيت طائرًا كبيرًا قرب النهر.
+489	Mon oncle a un cheval blanc.	My uncle has a white horse.	لدى عمي حصان أبيض.
+489	Les chevaux boivent à la rivière.	The horses drink at the river.	تشرب الأحصنة من النهر.
+490	Le ciel est très bleu aujourd'hui.	The sky is very blue today.	السماء زرقاء جدًا اليوم.
+490	La nuit, le ciel est sombre.	At night the sky is dark.	في الليل تكون السماء مظلمة.
+491	Il y a beaucoup de vent aujourd'hui.	It's very windy today.	الريح شديدة اليوم.
+491	Le vent est froid en hiver.	The wind is cold in winter.	الريح باردة في الشتاء.
+492	Les enfants jouent dans la neige.	The children play in the snow.	يلعب الأطفال في الثلج.
+492	Il y a beaucoup de neige cette année.	There's a lot of snow this year.	يوجد ثلج كثير هذه السنة.
+493	Assieds-toi près du feu.	Sit near the fire.	اجلس قرب النار.
+493	Il y a un feu dans la montagne.	There's a fire on the mountain.	هناك حريق في الجبل.
+494	Sortons, j'ai besoin d'air.	Let's go out, I need some air.	لنخرج، أحتاج إلى هواء.
+494	L'air de la montagne est très bon.	The mountain air is very good.	هواء الجبل جيد جدًا.
+495	Je pense que tu as raison.	I think you're right.	أظن أنك محق.
+495	Quelle est la raison ?	What is the reason?	ما السبب؟
+496	J'ai une bonne nouvelle pour toi.	I have good news for you.	لديّ خبر جيد لك.
+496	Tu connais la nouvelle ?	Do you know the news?	هل تعرف الخبر؟
+497	Combien de langues parles-tu ?	How many languages do you speak?	كم لغة تتكلم؟
+497	Apprendre une langue prend du temps.	Learning a language takes time.	تعلّم لغة يستغرق وقتًا.
+498	Je parle un peu français.	I speak a little French.	أتكلم قليلًا من الفرنسية.
+498	Mon français n'est pas encore très bon.	My French isn't very good yet.	لغتي الفرنسية ليست جيدة جدًا بعد.
+499	Tu parles anglais ou français ?	Do you speak English or French?	هل تتكلم الإنجليزية أم الفرنسية؟
+499	Elle enseigne l'anglais dans une école.	She teaches English in a school.	تدرّس الإنجليزية في مدرسة.
+500	Quel est ton numéro de téléphone ?	What is your phone number?	ما رقم هاتفك؟
+500	Écris le numéro sur le papier.	Write the number on the paper.	اكتب الرقم على الورقة.
+501	Ce prix est trop cher pour moi.	This price is too expensive for me.	هذا السعر غالٍ جدًا بالنسبة لي.
+501	Quel est le prix de ce sac ?	What's the price of this bag?	ما سعر هذه الحقيبة؟
+502	Quelle est votre taille ?	What size are you?	ما مقاسك؟
+502	Vous avez cette chemise dans une autre taille ?	Do you have this shirt in another size?	هل لديكم هذا القميص بمقاس آخر؟
+503	Quels sont tes projets pour le week-end ?	What are your plans for the weekend?	ما خططك لعطلة نهاية الأسبوع؟
+503	C'est un projet très intéressant.	It's a very interesting project.	إنه مشروع مثير للاهتمام جدًا.
+504	J'ai fait une erreur.	I made a mistake.	ارتكبت خطأ.
+504	Il y a deux erreurs dans ta lettre.	There are two mistakes in your letter.	في رسالتك خطآن.
+505	La réunion commence à dix heures.	The meeting starts at ten.	يبدأ الاجتماع في العاشرة.
+505	J'ai des réunions toute la semaine.	I have meetings all week.	لديّ اجتماعات طوال الأسبوع.
+506	La leçon d'aujourd'hui était intéressante.	Today's lesson was interesting.	كان درس اليوم مثيرًا للاهتمام.
+506	J'ai une leçon de musique samedi.	I have a music lesson on Saturday.	لديّ درس موسيقى يوم السبت.
+507	Tu as fini tes devoirs ?	Have you finished your homework?	هل أنهيت واجباتك؟
+507	Nous avons beaucoup de devoirs aujourd'hui.	We have a lot of homework today.	لدينا واجبات كثيرة اليوم.
+508	Il travaille pour une grande entreprise.	He works for a big company.	يعمل لدى شركة كبيرة.
+508	Notre entreprise a vingt personnes.	Our company has twenty people.	في شركتنا عشرون شخصًا.
+509	Quel est ton sport préféré ?	What's your favourite sport?	ما رياضتك المفضلة؟
+509	Je fais du sport trois fois par semaine.	I do sport three times a week.	أمارس الرياضة ثلاث مرات في الأسبوع.
+510	Le café coûte deux euros.	The coffee costs two euros.	القهوة بيورويين.
+510	Je peux payer en euros ?	Can I pay in euros?	هل يمكنني الدفع باليورو؟
+511	Le paysage est magnifique.	The landscape is magnificent.	المنظر رائع.
+511	Il y a un beau paysage de la fenêtre.	There's a beautiful view from the window.	هناك منظر جميل من النافذة.
+512	J'habite dans un petit quartier.	I live in a small neighbourhood.	أسكن في حيّ صغير.
+512	Il y a une boulangerie dans mon quartier.	There's a bakery in my neighbourhood.	يوجد مخبز في حيّي.
+513	Nous habitons dans un petit appartement.	We live in a small flat.	نسكن في شقة صغيرة.
+513	L'appartement a trois chambres.	The flat has three bedrooms.	في الشقة ثلاث غرف نوم.
+514	Mon bureau est au deuxième étage.	My office is on the second floor.	مكتبي في الطابق الثاني.
+514	Nous habitons au premier étage.	We live on the first floor.	نسكن في الطابق الأول.
+515	Le chat dort sur le canapé.	The cat sleeps on the sofa.	القطة تنام على الأريكة.
+515	Nous avons acheté un nouveau canapé.	We bought a new sofa.	اشترينا أريكة جديدة.
+516	Le serveur est très sympa.	The waiter is very nice.	النادل لطيف جدًا.
+516	Appelle le serveur, s'il te plaît.	Call the waiter, please.	نادِ النادل من فضلك.
+517	J'ai besoin d'une cuillère pour la soupe.	I need a spoon for the soup.	أحتاج إلى ملعقة للحساء.
+517	La cuillère est sur la table.	The spoon is on the table.	الملعقة على الطاولة.
+518	Vous pouvez me donner une fourchette ?	Can you give me a fork?	هل يمكنك أن تعطيني شوكة؟
+518	La fourchette est sale.	The fork is dirty.	الشوكة متسخة.
+519	Coupe la viande avec un couteau.	Cut the meat with a knife.	اقطع اللحم بسكين.
+519	Ce couteau est très dangereux.	This knife is very dangerous.	هذه السكين خطيرة جدًا.
+520	Quelle est la date aujourd'hui ?	What's the date today?	ما تاريخ اليوم؟
+520	Écris la date sur le papier.	Write the date on the paper.	اكتب التاريخ على الورقة.
+521	Je veux être médecin à l'avenir.	I want to be a doctor in the future.	أريد أن أكون طبيبًا في المستقبل.
+521	Quels sont tes projets pour l'avenir ?	What are your plans for the future?	ما خططك للمستقبل؟
+522	Attends un moment, s'il te plaît.	Wait a moment, please.	انتظر لحظة من فضلك.
+522	Il est occupé en ce moment.	He's busy at the moment.	هو مشغول في هذه اللحظة.
+523	Tournez à gauche après le pont.	Turn left after the bridge.	انعطفوا يسارًا بعد الجسر.
+523	La banque est à gauche.	The bank is on the left.	المصرف على اليسار.
+524	La pharmacie est à droite.	The pharmacy is on the right.	الصيدلية على اليمين.
+524	Prends la deuxième rue à droite.	Take the second street on the right.	خذ الشارع الثاني على اليمين.
+525	Les arbres sont verts au printemps.	The trees are green in spring.	الأشجار خضراء في الربيع.
+525	Elle a les yeux verts.	She has green eyes.	عيناها خضراوان.
+526	La mer est très bleue.	The sea is very blue.	البحر أزرق جدًا.
+526	Je veux la chemise bleue.	I want the blue shirt.	أريد القميص الأزرق.
+527	Les fleurs sont jaunes.	The flowers are yellow.	الزهور صفراء.
+527	J'aime ton manteau jaune.	I like your yellow coat.	يعجبني معطفك الأصفر.
+528	Le film était très court.	The film was very short.	كان الفيلم قصيرًا جدًا.
+528	Elle a les cheveux courts.	She has short hair.	شعرها قصير.
+529	Le train est très rapide.	The train is very fast.	القطار سريع جدًا.
+529	C'est le chemin le plus rapide.	It's the fastest way.	إنه الطريق الأسرع.
+530	Le bus est lent aujourd'hui.	The bus is slow today.	الحافلة بطيئة اليوم.
+530	Mon ordinateur est trop lent.	My computer is too slow.	حاسوبي بطيء جدًا.
+531	Mon père est très fort.	My father is very strong.	أبي قوي جدًا.
+531	J'aime le café fort.	I like strong coffee.	أحب القهوة القوية.
+532	C'était une famille pauvre.	It was a poor family.	كانت عائلة فقيرة.
+532	Nous aidons les familles pauvres.	We help poor families.	نساعد العائلات الفقيرة.
+533	Le bus était plein.	The bus was full.	كانت الحافلة ممتلئة.
+533	Ma valise est pleine de vêtements.	My suitcase is full of clothes.	حقيبتي مليئة بالملابس.
+534	La chambre est vide.	The room is empty.	الغرفة فارغة.
+534	Mon verre est vide.	My glass is empty.	كوبي فارغ.
+535	La chambre est très sombre.	The room is very dark.	الغرفة مظلمة جدًا.
+535	En hiver, il fait sombre très tôt.	In winter it gets dark very early.	في الشتاء يحلّ الظلام مبكرًا جدًا.
+536	Mes chaussures sont mouillées.	My shoes are wet.	حذائي مبلل.
+536	Le chien est tout mouillé.	The dog is all wet.	الكلب مبلل تمامًا.
+537	Cette boîte est très lourde.	This box is very heavy.	هذا الصندوق ثقيل جدًا.
+537	Ton sac est lourd.	Your bag is heavy.	حقيبتك ثقيلة.
+538	Cette rue est dangereuse la nuit.	This street is dangerous at night.	هذا الشارع خطير ليلًا.
+538	C'est dangereux de nager ici.	It's dangerous to swim here.	السباحة هنا خطيرة.
+539	Je suis très occupé cette semaine.	I'm very busy this week.	أنا مشغول جدًا هذا الأسبوع.
+539	Cette chaise est occupée ?	Is this chair taken?	هل هذا الكرسي محجوز؟
+540	Mon père est fâché.	My father is angry.	أبي غاضب.
+540	Ne sois pas fâchée contre moi.	Don't be angry with me.	لا تغضبي مني.
+541	Ce film est très ennuyeux.	This film is very boring.	هذا الفيلم ممل جدًا.
+541	La réunion était ennuyeuse.	The meeting was boring.	كان الاجتماع مملًا.
+542	Ce livre est très intéressant.	This book is very interesting.	هذا الكتاب مثير للاهتمام جدًا.
+542	Il nous a raconté une histoire intéressante.	He told us an interesting story.	حكى لنا قصة مثيرة للاهتمام.
+543	Mon oncle est très drôle.	My uncle is very funny.	عمي مضحك جدًا.
+543	C'était un film drôle.	It was a funny film.	كان فيلمًا مضحكًا.
+544	C'est très bizarre, non ?	That's very strange, isn't it?	هذا غريب جدًا، أليس كذلك؟
+544	J'ai entendu quelque chose de bizarre.	I heard something strange.	سمعت شيئًا غريبًا.
+545	La question est simple.	The question is simple.	السؤال بسيط.
+545	C'est un plan très simple.	It's a very simple plan.	إنها خطة بسيطة جدًا.
+546	Aujourd'hui est un jour spécial.	Today is a special day.	اليوم يوم مميز.
+546	Elle a préparé un dîner spécial.	She made a special dinner.	حضّرت عشاءً مميزًا.
+547	C'est un médecin célèbre.	He's a famous doctor.	إنه طبيب مشهور.
+547	Ce village est célèbre pour son fromage.	This village is famous for its cheese.	هذه القرية مشهورة بجبنها.
+548	Quel est ton plat préféré ?	What's your favourite dish?	ما طبقك المفضل؟
+548	C'est mon restaurant préféré.	It's my favourite restaurant.	إنه مطعمي المفضل.
+549	Le temps est parfait aujourd'hui.	The weather is perfect today.	الطقس مثالي اليوم.
+549	Ton idée est parfaite.	Your idea is perfect.	فكرتك مثالية.
+550	Le repas était terrible.	The meal was terrible.	كانت الوجبة فظيعة.
+550	C'était un jour terrible.	It was a terrible day.	كان يومًا فظيعًا.
+551	Nous avons passé une soirée magnifique.	We had a wonderful evening.	قضينا سهرة رائعة.
+551	Quelle idée magnifique, merci !	What a wonderful idea, thank you!	يا لها من فكرة رائعة، شكرًا!
+552	Cette soupe est délicieuse.	This soup is delicious.	هذا الحساء لذيذ.
+552	Le gâteau était délicieux.	The cake was delicious.	كانت الكعكة لذيذة.
+553	Tu as les mains sales.	Your hands are dirty.	يداك متسختان.
+553	La cuisine est très sale.	The kitchen is very dirty.	المطبخ متسخ جدًا.
+554	Est-ce que ton frère est marié ?	Is your brother married?	هل أخوك متزوج؟
+554	Ma sœur est mariée.	My sister is married.	أختي متزوجة.
+555	Les gens ici sont très gentils.	People here are very kind.	الناس هنا لطفاء جدًا.
+555	Tu es très gentille, merci.	You're very kind, thank you.	أنتِ لطيفة جدًا، شكرًا.
+556	Ce canapé est très confortable.	This sofa is very comfortable.	هذه الأريكة مريحة جدًا.
+556	La chambre d'hôtel est confortable.	The hotel room is comfortable.	غرفة الفندق مريحة.
+557	Je suis inquiet pour mon fils.	I'm worried about my son.	أنا قلق على ابني.
+557	Elle semble très inquiète.	She seems very worried.	تبدو قلقة جدًا.
+558	Mes voisins sont très sympas.	My neighbours are very nice.	جيراني لطفاء جدًا.
+558	Le serveur était sympa.	The waiter was nice.	كان النادل لطيفًا.
+559	La chambre est propre.	The room is clean.	الغرفة نظيفة.
+559	J'ai besoin d'une chemise propre.	I need a clean shirt.	أحتاج إلى قميص نظيف.
+560	L'air est très sec ici.	The air is very dry here.	الهواء جاف جدًا هنا.
+560	Les vêtements sont secs.	The clothes are dry.	الملابس جافة.
+561	J'ai plusieurs amis ici.	I have several friends here.	لديّ عدة أصدقاء هنا.
+561	J'ai visité plusieurs villes.	I've visited several cities.	زرت عدة مدن.
+562	Je n'ai aucune idée.	I have no idea.	ليست لديّ أي فكرة.
+562	Aucun restaurant n'est ouvert.	No restaurant is open.	لا يوجد مطعم مفتوح.
+563	Certains étudiants sont arrivés tard.	Some students arrived late.	وصل بعض الطلاب متأخرين.
+563	Certaines personnes n'aiment pas le froid.	Some people don't like the cold.	بعض الناس لا يحبون البرد.
+564	Je ne mange ni viande ni poisson.	I eat neither meat nor fish.	لا آكل اللحم ولا السمك.
+564	Il n'a ni frère ni sœur.	He has no brother or sister.	ليس له أخ ولا أخت.
+565	Moi non plus, je n'aime pas ça.	I don't like that either.	أنا أيضًا لا أحب ذلك.
+565	Elle ne vient pas, lui non plus.	She isn't coming, and neither is he.	هي لن تأتي، وهو أيضًا.
+566	J'aime les fruits, surtout les pommes.	I like fruit, especially apples.	أحب الفاكهة، خصوصًا التفاح.
+566	Il fait froid, surtout le matin.	It's cold, especially in the morning.	الجو بارد، خصوصًا في الصباح.
+567	Nous avons enfin trouvé l'hôtel.	We finally found the hotel.	وجدنا الفندق أخيرًا.
+567	Le bus est enfin arrivé.	The bus finally arrived.	وصلت الحافلة أخيرًا.
+568	D'habitude, je me lève à sept heures.	Usually I get up at seven.	عادةً أنهض في السابعة.
+568	D'habitude, nous mangeons à huit heures.	We usually eat at eight.	عادةً نأكل في الثامنة.
+569	Parlez plus lentement, s'il vous plaît.	Speak more slowly, please.	تكلموا ببطء أكثر من فضلكم.
+569	Le vieil homme marche lentement.	The old man walks slowly.	يمشي الرجل العجوز ببطء.
+570	Elle a fini son repas rapidement.	She finished her meal quickly.	أنهت وجبتها بسرعة.
+570	Viens ici rapidement, s'il te plaît.	Come here quickly, please.	تعال إلى هنا بسرعة من فضلك.
+571	Le chat est en haut de l'arbre.	The cat is at the top of the tree.	القطة في أعلى الشجرة.
+571	Ma chambre est en haut.	My room is upstairs.	غرفتي في الأعلى.
+572	La cuisine est en bas.	The kitchen is downstairs.	المطبخ في الأسفل.
+572	Je t'attends en bas.	I'll wait for you downstairs.	سأنتظرك في الأسفل.
+573	Le jardin est derrière la maison.	The garden is behind the house.	الحديقة خلف البيت.
+573	Qui est derrière toi ?	Who is behind you?	من خلفك؟
+574	Le taxi est devant l'hôtel.	The taxi is in front of the hotel.	سيارة الأجرة أمام الفندق.
+574	Je t'attends devant l'école.	I'll wait for you in front of the school.	سأنتظرك أمام المدرسة.
+575	Nous avons marché autour du parc.	We walked around the park.	مشينا حول الحديقة.
+575	Il y a des arbres autour de la maison.	There are trees around the house.	هناك أشجار حول البيت.
+576	Nous marchons vers la rivière.	We're walking towards the river.	نمشي نحو النهر.
+576	Je rentre vers six heures.	I'll be home around six.	سأعود نحو السادسة.
+577	Mets la table contre le mur.	Put the table against the wall.	ضع الطاولة مقابل الجدار.
+577	Ils jouent contre une équipe forte.	They play against a strong team.	يلعبون ضد فريق قوي.
+578	Selon le médecin, je dois me reposer.	According to the doctor, I must rest.	وفقًا للطبيب، يجب أن أرتاح.
+578	Selon mon père, il va pleuvoir.	According to my father, it's going to rain.	وفقًا لأبي ستمطر.
+579	Tu as besoin de quelque chose ?	Do you need anything?	هل تحتاج إلى شيء؟
+579	J'ai besoin de toi.	I need you.	أحتاج إليك.
+580	Fais attention, la rue est dangereuse.	Be careful, the street is dangerous.	انتبه، الشارع خطير.
+580	Attention, le café est très chaud !	Careful, the coffee is very hot!	انتبه، القهوة ساخنة جدًا!
+581	Il y a un parc près d'ici.	There's a park near here.	هناك حديقة قريبة من هنا.
+581	Je suis arrivé il y a deux heures.	I arrived two hours ago.	وصلت قبل ساعتين.
+582	Mon fils a six ans.	My son is six.	ابني عمره ست سنوات.
+582	Je me lève à six heures.	I get up at six.	أنهض في السادسة.
+583	Il y a sept jours dans une semaine.	There are seven days in a week.	في الأسبوع سبعة أيام.
+583	Nous mangeons à sept heures.	We eat at seven.	نأكل في السابعة.
+584	Je dors huit heures par nuit.	I sleep eight hours a night.	أنام ثماني ساعات في الليلة.
+584	Le cours commence à huit heures.	The class starts at eight.	يبدأ الدرس في الثامنة.
+585	La banque ouvre à neuf heures.	The bank opens at nine.	يفتح المصرف في التاسعة.
+585	J'ai neuf cousins et cousines.	I have nine cousins.	لديّ تسعة من أبناء وبنات العم.
+586	Il y a vingt personnes dans le groupe.	There are twenty people in the group.	في المجموعة عشرون شخصًا.
+586	Le bus met vingt minutes.	The bus takes twenty minutes.	تستغرق الحافلة عشرين دقيقة.
+587	Ma sœur a trente ans.	My sister is thirty.	أختي عمرها ثلاثون سنة.
+587	La chemise coûte trente euros.	The shirt costs thirty euros.	القميص بثلاثين يورو.
+588	Mille personnes sont venues à la fête.	A thousand people came to the party.	جاء ألف شخص إلى الحفلة.
+588	Le voyage a coûté deux mille euros.	The trip cost two thousand euros.	كلّفت الرحلة ألفي يورو.
+589	Ma fille a quinze ans.	My daughter is fifteen.	ابنتي عمرها خمسة عشر عامًا.
+589	Le train part dans quinze minutes.	The train leaves in fifteen minutes.	يغادر القطار بعد خمس عشرة دقيقة.
+590	C'est mon deuxième voyage en France.	It's my second trip to France.	إنها رحلتي الثانية إلى فرنسا.	France
+590	Prends la deuxième rue à gauche.	Take the second street on the left.	خذ الشارع الثاني على اليسار.
+591	J'ai mangé la moitié du gâteau.	I ate half of the cake.	أكلت نصف الكعكة.
+591	La moitié de la classe est malade.	Half the class is ill.	نصف الصف مريض.
+592	J'arrive dans une demi-heure.	I'll be there in half an hour.	سأصل بعد نصف ساعة.
+592	Il est sept heures et demie.	It's half past seven.	الساعة السابعة والنصف.
+593	Quel est le plat du jour ?	What is the dish of the day?	ما طبق اليوم؟
+593	Ce plat est très célèbre ici.	This dish is very famous here.	هذا الطبق مشهور جدًا هنا.
+594	Je vais à la boulangerie acheter du pain.	I'm going to the bakery to buy bread.	أذهب إلى المخبز لأشتري خبزًا.
+594	La boulangerie ouvre à sept heures.	The bakery opens at seven.	يفتح المخبز في السابعة.
+595	Les enfants veulent une glace.	The children want an ice cream.	الأطفال يريدون مثلجات.
+595	Je voudrais une glace, s'il vous plaît.	I'd like an ice cream, please.	أريد مثلجات من فضلك.
+596	Une bouteille d'eau, s'il vous plaît.	A bottle of water, please.	زجاجة ماء من فضلك.
+596	La bouteille est vide.	The bottle is empty.	الزجاجة فارغة.
+597	Bonne soirée et à demain !	Have a good evening, see you tomorrow!	سهرة سعيدة وإلى الغد!
+597	Nous avons passé une bonne soirée chez nos amis.	We had a good evening at our friends'.	قضينا سهرة جميلة عند أصدقائنا.
+598	Prends l'escalier, c'est plus rapide.	Take the stairs, it's faster.	استخدم الدرج، إنه أسرع.
+598	Fais attention dans l'escalier.	Be careful on the stairs.	انتبه على الدرج.
+599	Nous regardons la télé dans le salon.	We watch TV in the living room.	نشاهد التلفاز في غرفة الجلوس.
+599	Le salon est grand et joli.	The living room is big and pretty.	غرفة الجلوس كبيرة وجميلة.
+600	On va au cinéma ce soir ?	Shall we go to the cinema tonight?	هل نذهب إلى السينما الليلة؟
+600	Le cinéma est près de la gare.	The cinema is near the station.	السينما قريبة من المحطة.

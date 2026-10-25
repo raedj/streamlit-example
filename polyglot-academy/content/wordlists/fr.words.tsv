@@ -299,3 +299,303 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 298	fr_w_bureau	bureau	noun	work	office; desk	مكتب		bureaux	gender=m; article=le; plural=bureaux
 299	fr_w_rendez_vous	rendez-vous	noun	social	appointment, meeting	موعد			gender=m; article=le	fr_rendez_vous
 300	fr_w_bienvenue	bienvenue	interj	social	welcome	أهلًا وسهلًا
+301	fr_w_utiliser	utiliser	verb	actions	to use	يستخدم		utilise, utilises, utilisons, utilisez, utilisent, utilisé
+302	fr_w_conduire	conduire	verb	travel	to drive	يقود		conduis, conduit, conduisons, conduisez, conduisent	irregular=yes
+303	fr_w_visiter	visiter	verb	travel	to visit (a place)	يزور		visite, visites, visitons, visitez, visitent, visité
+304	fr_w_voyager	voyager	verb	travel	to travel	يسافر		voyage, voyages, voyageons, voyagez, voyagent, voyagé		fr_voyager
+305	fr_w_monter	monter	verb	movement	to go up; to get on	يصعد؛ يركب		monte, montes, montons, montez, montent, monté, montée
+306	fr_w_descendre	descendre	verb	movement	to go down; to get off	ينزل		descends, descend, descendons, descendez, descendent, descendu, descendue
+307	fr_w_entrer	entrer	verb	movement	to go in	يدخل		entre, entres, entrons, entrez, entrent, entré, entrée
+308	fr_w_rire	rire	verb	feelings	to laugh	يضحك		ris, rit, rions, riez, rient, ri	irregular=yes
+309	fr_w_pleurer	pleurer	verb	feelings	to cry	يبكي		pleure, pleures, pleurons, pleurez, pleurent, pleuré
+310	fr_w_chanter	chanter	verb	leisure	to sing	يغني		chante, chantes, chantons, chantez, chantent, chanté
+311	fr_w_danser	danser	verb	leisure	to dance	يرقص		danse, danses, dansons, dansez, dansent, dansé
+312	fr_w_nager	nager	verb	leisure	to swim	يسبح		nage, nages, nageons, nagez, nagent, nagé
+313	fr_w_tomber	tomber	verb	actions	to fall	يسقط		tombe, tombes, tombons, tombez, tombent, tombé, tombée
+314	fr_w_grandir	grandir	verb	nature	to grow (up)	يكبر		grandis, grandit, grandissons, grandissent, grandi
+315	fr_w_vendre	vendre	verb	shopping	to sell	يبيع		vends, vend, vendons, vendez, vendent, vendu
+316	fr_w_choisir	choisir	verb	mind	to choose	يختار		choisis, choisit, choisissons, choisissez, choisissent, choisi
+317	fr_w_casser	casser	verb	actions	to break	يكسر		casse, casses, cassons, cassez, cassent, cassé, cassée
+318	fr_w_construire	construire	verb	work	to build	يبني		construis, construit, construisons, construisent	irregular=yes
+319	fr_w_reparer	réparer	verb	home	to repair	يصلح		répare, répares, réparons, réparez, réparent, réparé
+320	fr_w_profiter	profiter	verb	feelings	to enjoy, to make the most of	يستمتع، يستفيد		profite, profites, profitons, profitez, profitent, profité
+321	fr_w_repondre	répondre	verb	communication	to answer	يجيب		réponds, répond, répondons, répondez, répondent, répondu
+322	fr_w_expliquer	expliquer	verb	communication	to explain	يشرح		explique, expliques, expliquons, expliquez, expliquent, expliqué
+323	fr_w_preparer	préparer	verb	food	to prepare	يحضّر		prépare, prépares, préparons, préparez, préparent, préparé
+324	fr_w_commander	commander	verb	food	to order	يطلب		commande, commandes, commandons, commandez, commandent, commandé
+325	fr_w_economiser	économiser	verb	shopping	to save (money)	يدّخر		économise, économises, économisons, économisez, économisent, économisé		fr_economiser
+326	fr_w_toucher	toucher	verb	senses	to touch	يلمس		touche, touches, touchons, touchez, touchent, touché
+327	fr_w_couper	couper	verb	actions	to cut	يقطع		coupe, coupes, coupons, coupez, coupent, coupé
+328	fr_w_detester	détester	verb	feelings	to hate	يكره		déteste, détestes, détestons, détestez, détestent, détesté
+329	fr_w_reussir	réussir	verb	school	to succeed; to pass	ينجح		réussis, réussit, réussissons, réussissez, réussissent, réussi		fr_reussir
+330	fr_w_rendre	rendre	verb	actions	to give back	يُرجع		rends, rend, rendons, rendez, rendent, rendu
+331	fr_w_sourire	sourire	verb	feelings	to smile	يبتسم		souris, sourit, sourions, souriez, sourient, souri	irregular=yes
+332	fr_w_preter	prêter	verb	shopping	to lend	يُعير		prête, prêtes, prêtons, prêtez, prêtent, prêté
+333	fr_w_couter	coûter	verb	shopping	to cost	يكلّف		coûte, coûtent, coûté
+334	fr_w_mourir	mourir	verb	health	to die	يموت		meurt, meurent, mort, morte	irregular=yes
+335	fr_w_recevoir	recevoir	verb	communication	to receive	يستلم		reçois, reçoit, recevons, recevez, reçoivent, reçu	irregular=yes
+336	fr_w_repeter	répéter	verb	communication	to repeat	يكرر		répète, répètes, répétons, répétez, répètent, répété
+337	fr_w_gouter	goûter	verb	food	to taste	يتذوق		goûte, goûtes, goûtons, goûtez, goûtent, goûté
+338	fr_w_reposer	se reposer	verb	routine	to rest	يرتاح		reposer, repose, reposes, reposons, reposez, reposent, reposé
+339	fr_w_offrir	offrir	verb	people	to offer; to give (a present)	يقدّم؛ يُهدي		offre, offres, offrons, offrez, offrent, offert	irregular=yes
+340	fr_w_promettre	promettre	verb	communication	to promise	يعد		promets, promet, promettons, promettez, promettent, promis	irregular=yes
+341	fr_w_partager	partager	verb	people	to share	يشارك		partage, partages, partageons, partagez, partagent, partagé
+342	fr_w_ameliorer	améliorer	verb	school	to improve	يحسّن		améliore, améliores, améliorons, améliorez, améliorent, amélioré
+343	fr_w_decider	décider	verb	mind	to decide	يقرر		décide, décides, décidons, décidez, décident, décidé
+344	fr_w_permettre	permettre	verb	function	to allow	يسمح		permets, permet, permettons, permettez, permettent, permis	irregular=yes
+345	fr_w_souhaiter	souhaiter	verb	feelings	to wish	يتمنى		souhaite, souhaites, souhaitons, souhaitez, souhaitent, souhaité
+346	fr_w_sauter	sauter	verb	leisure	to jump	يقفز		saute, sautes, sautons, sautez, sautent, sauté
+347	fr_w_habiller	s'habiller	verb	clothes	to get dressed	يرتدي ملابسه		habiller, habille, habilles, habillons, habillez, habillent, habillé
+348	fr_w_reveiller	se réveiller	verb	routine	to wake up	يستيقظ		réveiller, réveille, réveilles, réveillons, réveillez, réveillent, réveillé
+349	fr_w_lever	se lever	verb	routine	to get up	ينهض		lever, lève, lèves, levons, levez, lèvent, levé		fr_se_lever
+350	fr_w_doucher	se doucher	verb	routine	to shower	يستحم		doucher, douche, douches, douchons, douchez, douchent, douché
+351	fr_w_raconter	raconter	verb	communication	to tell (a story)	يحكي		raconte, racontes, racontons, racontez, racontent, raconté
+352	fr_w_enseigner	enseigner	verb	school	to teach	يدرّس		enseigne, enseignes, enseignons, enseignez, enseignent, enseigné
+353	fr_w_inviter	inviter	verb	people	to invite	يدعو		invite, invites, invitons, invitez, invitent, invité
+354	fr_w_feter	fêter	verb	leisure	to celebrate	يحتفل		fête, fêtes, fêtons, fêtez, fêtent, fêté
+355	fr_w_louer	louer	verb	home	to rent	يستأجر		loue, loues, louons, louez, louent, loué
+356	fr_w_reserver	réserver	verb	travel	to book	يحجز		réserve, réserves, réservons, réservez, réservent, réservé
+357	fr_w_naitre	naître	verb	people	to be born	يولد		né, née, nés	irregular=yes
+358	fr_w_marier	se marier	verb	people	to get married	يتزوج		marier, marie, maries, marions, mariez, marient, marié, mariés
+359	fr_w_essayer	essayer	verb	mind	to try	يحاول، يجرّب		essaie, essaies, essayons, essayez, essaient, essayé
+360	fr_w_servir	servir	verb	food	to serve	يقدّم		sers, sert, servons, servez, servent, servi	irregular=yes
+361	fr_w_traverser	traverser	verb	movement	to cross	يعبر		traverse, traverses, traversons, traversez, traversent, traversé
+362	fr_w_tourner	tourner	verb	movement	to turn	ينعطف		tourne, tournes, tournons, tournez, tournent, tourné
+363	fr_w_remplir	remplir	verb	actions	to fill	يملأ		remplis, remplit, remplissons, remplissez, remplissent, rempli
+364	fr_w_porter	porter	verb	clothes	to wear; to carry	يرتدي؛ يحمل		porte, portes, portons, portez, portent, porté
+365	fr_w_nettoyer	nettoyer	verb	home	to clean	ينظّف		nettoie, nettoies, nettoyons, nettoyez, nettoient, nettoyé
+366	fr_w_sentir	sentir	verb	senses	to feel; to smell	يشعر؛ يشمّ		sens, sent, sentons, sentez, sentent, senti	irregular=yes
+367	fr_w_devenir	devenir	verb	function	to become	يصبح		deviens, devient, devenons, devenez, deviennent, devenu, devenue	irregular=yes
+368	fr_w_revenir	revenir	verb	movement	to come back	يعود		reviens, revient, revenons, revenez, reviennent, revenu, revenue	irregular=yes
+369	fr_w_suivre	suivre	verb	movement	to follow	يتبع		suis, suit, suivons, suivez, suivent, suivi	irregular=yes
+370	fr_w_garder	garder	verb	actions	to keep	يحتفظ		garde, gardes, gardons, gardez, gardent, gardé
+371	fr_w_laisser	laisser	verb	actions	to leave; to let	يترك		laisse, laisses, laissons, laissez, laissent, laissé
+372	fr_w_compter	compter	verb	numbers	to count	يعدّ		compte, comptes, comptons, comptez, comptent, compté
+373	fr_w_esperer	espérer	verb	feelings	to hope	يأمل		espère, espères, espérons, espérez, espèrent, espéré
+374	fr_w_preferer	préférer	verb	feelings	to prefer	يفضّل		préfère, préfères, préférons, préférez, préfèrent, préféré
+375	fr_w_quitter	quitter	verb	movement	to leave (a place)	يغادر		quitte, quittes, quittons, quittez, quittent, quitté
+376	fr_w_sembler	sembler	verb	mind	to seem	يبدو		semble, semblent, semblé
+377	fr_w_asseoir	s'asseoir	verb	routine	to sit down	يجلس		asseoir, assieds, assied, asseyons, asseyez, asseyent, assis, assise	irregular=yes
+378	fr_w_lundi	lundi	noun	time	Monday	الاثنين			gender=m; article=le
+379	fr_w_mardi	mardi	noun	time	Tuesday	الثلاثاء			gender=m; article=le
+380	fr_w_mercredi	mercredi	noun	time	Wednesday	الأربعاء			gender=m; article=le
+381	fr_w_jeudi	jeudi	noun	time	Thursday	الخميس			gender=m; article=le
+382	fr_w_vendredi	vendredi	noun	time	Friday	الجمعة			gender=m; article=le
+383	fr_w_samedi	samedi	noun	time	Saturday	السبت			gender=m; article=le
+384	fr_w_dimanche	dimanche	noun	time	Sunday	الأحد			gender=m; article=le
+385	fr_w_ete	été	noun	weather	summer	صيف			gender=m; article=l'
+386	fr_w_hiver	hiver	noun	weather	winter	شتاء			gender=m; article=l'
+387	fr_w_printemps	printemps	noun	weather	spring	ربيع			gender=m; article=le
+388	fr_w_automne	automne	noun	weather	autumn	خريف			gender=m; article=l'
+389	fr_w_vacances	vacances	noun	leisure	holidays	عطلة			gender=f; article=les	fr_vacances
+390	fr_w_age	âge	noun	people	age	عمر			gender=m; article=l'
+391	fr_w_oncle	oncle	noun	family	uncle	عم، خال			gender=m; article=l'
+392	fr_w_tante	tante	noun	family	aunt	عمة، خالة			gender=f; article=la
+393	fr_w_cousin	cousin	noun	family	cousin	ابن العم أو الخال		cousine	gender=m; article=le
+394	fr_w_voisin	voisin	noun	people	neighbour	جار		voisine	gender=m; article=le
+395	fr_w_etudiant	étudiant	noun	school	student	طالب		étudiante	gender=m; article=l'
+396	fr_w_patron	patron	noun	work	boss	مدير		patronne	gender=m; article=le
+397	fr_w_chauffeur	chauffeur	noun	travel	driver	سائق			gender=m; article=le
+398	fr_w_police	police	noun	places	police	شرطة			gender=f; article=la	fr_ev_police
+399	fr_w_client	client	noun	work	customer, client	زبون		cliente	gender=m; article=le	fr_client
+400	fr_w_equipe	équipe	noun	leisure	team	فريق			gender=f; article=l'
+401	fr_w_groupe	groupe	noun	people	group	مجموعة			gender=m; article=le
+402	fr_w_corps	corps	noun	body	body	جسم			gender=m; article=le
+403	fr_w_visage	visage	noun	body	face	وجه			gender=m; article=le
+404	fr_w_cheveux	cheveux	noun	body	hair	شعر			gender=m; article=les
+405	fr_w_bouche	bouche	noun	body	mouth	فم			gender=f; article=la
+406	fr_w_oreille	oreille	noun	body	ear	أذن			gender=f; article=l'
+407	fr_w_bras	bras	noun	body	arm	ذراع			gender=m; article=le
+408	fr_w_jambe	jambe	noun	body	leg	ساق			gender=f; article=la
+409	fr_w_pied	pied	noun	body	foot	قدم			gender=m; article=le
+410	fr_w_coeur	cœur	noun	body	heart	قلب			gender=m; article=le
+411	fr_w_dent	dent	noun	body	tooth	سنّ			gender=f; article=la
+412	fr_w_dos	dos	noun	body	back	ظهر			gender=m; article=le
+413	fr_w_nez	nez	noun	body	nose	أنف			gender=m; article=le
+414	fr_w_douleur	douleur	noun	health	pain	ألم			gender=f; article=la
+415	fr_w_fievre	fièvre	noun	health	fever	حمّى			gender=f; article=la	fr_fievre
+416	fr_w_medicament	médicament	noun	health	medicine	دواء			gender=m; article=le
+417	fr_w_hopital	hôpital	noun	health	hospital	مستشفى		hôpitaux	gender=m; article=l'; plural=hôpitaux	fr_ev_hopital
+418	fr_w_pharmacie	pharmacie	noun	health	pharmacy	صيدلية			gender=f; article=la	fr_pharmacie
+419	fr_w_sante	santé	noun	health	health	صحة			gender=f; article=la
+420	fr_w_jardin	jardin	noun	home	garden	حديقة			gender=m; article=le
+421	fr_w_mur	mur	noun	home	wall	جدار			gender=m; article=le
+422	fr_w_sol	sol	noun	home	floor, ground	أرض			gender=m; article=le
+423	fr_w_chaise	chaise	noun	home	chair	كرسي			gender=f; article=la
+424	fr_w_boite	boîte	noun	home	box	صندوق			gender=f; article=la
+425	fr_w_sac	sac	noun	travel	bag	حقيبة			gender=m; article=le
+426	fr_w_cle	clé	noun	home	key	مفتاح			gender=f; article=la	fr_ev_cle
+427	fr_w_montre	montre	noun	things	watch	ساعة يد			gender=f; article=la
+428	fr_w_horloge	horloge	noun	home	clock	ساعة حائط			gender=f; article=l'
+429	fr_w_lumiere	lumière	noun	home	light	ضوء			gender=f; article=la
+430	fr_w_photo	photo	noun	leisure	photo	صورة			gender=f; article=la
+431	fr_w_lettre	lettre	noun	communication	letter	رسالة			gender=f; article=la
+432	fr_w_papier	papier	noun	school	paper	ورق			gender=m; article=le
+433	fr_w_stylo	stylo	noun	school	pen	قلم			gender=m; article=le
+434	fr_w_verre	verre	noun	food	glass	كوب			gender=m; article=le
+435	fr_w_tasse	tasse	noun	food	cup	فنجان			gender=f; article=la
+436	fr_w_assiette	assiette	noun	food	plate	صحن			gender=f; article=l'
+437	fr_w_riz	riz	noun	food	rice	أرز			gender=m; article=le
+438	fr_w_viande	viande	noun	food	meat	لحم			gender=f; article=la
+439	fr_w_poulet	poulet	noun	food	chicken	دجاج			gender=m; article=le
+440	fr_w_poisson	poisson	noun	food	fish	سمك			gender=m; article=le
+441	fr_w_oeuf	œuf	noun	food	egg	بيضة			gender=m; article=l'
+442	fr_w_fruit	fruit	noun	food	fruit	فاكهة			gender=m; article=le
+443	fr_w_pomme	pomme	noun	food	apple	تفاحة			gender=f; article=la
+444	fr_w_legume	légume	noun	food	vegetable	خضار			gender=m; article=le
+445	fr_w_sucre	sucre	noun	food	sugar	سكر			gender=m; article=le
+446	fr_w_sel	sel	noun	food	salt	ملح			gender=m; article=le
+447	fr_w_gateau	gâteau	noun	food	cake	كعكة		gâteaux	gender=m; article=le; plural=gâteaux
+448	fr_w_soupe	soupe	noun	food	soup	حساء			gender=f; article=la
+449	fr_w_jus	jus	noun	food	juice	عصير			gender=m; article=le
+450	fr_w_fromage	fromage	noun	food	cheese	جبن			gender=m; article=le
+451	fr_w_dessert	dessert	noun	food	dessert	حلوى			gender=m; article=le	fr_ev_dessert
+452	fr_w_restaurant	restaurant	noun	food	restaurant	مطعم			gender=m; article=le
+453	fr_w_hotel	hôtel	noun	travel	hotel	فندق			gender=m; article=l'
+454	fr_w_gare	gare	noun	travel	(train) station	محطة قطار			gender=f; article=la	fr_gare
+455	fr_w_aeroport	aéroport	noun	travel	airport	مطار			gender=m; article=l'
+456	fr_w_banque	banque	noun	shopping	bank	مصرف			gender=f; article=la
+457	fr_w_marche	marché	noun	shopping	market	سوق			gender=m; article=le
+458	fr_w_parc	parc	noun	places	park	حديقة عامة			gender=m; article=le
+459	fr_w_village	village	noun	places	village	قرية			gender=m; article=le
+460	fr_w_riviere	rivière	noun	places	river	نهر			gender=f; article=la
+461	fr_w_montagne	montagne	noun	places	mountain	جبل			gender=f; article=la
+462	fr_w_pont	pont	noun	places	bridge	جسر			gender=m; article=le
+463	fr_w_centre	centre	noun	places	centre	مركز			gender=m; article=le
+464	fr_w_bibliotheque	bibliothèque	noun	school	library	مكتبة			gender=f; article=la
+465	fr_w_musee	musée	noun	leisure	museum	متحف			gender=m; article=le	fr_ev_musee
+466	fr_w_avion	avion	noun	travel	plane	طائرة			gender=m; article=l'
+467	fr_w_bateau	bateau	noun	travel	boat	قارب		bateaux	gender=m; article=le; plural=bateaux
+468	fr_w_velo	vélo	noun	travel	bicycle	دراجة			gender=m; article=le
+469	fr_w_taxi	taxi	noun	travel	taxi	سيارة أجرة			gender=m; article=le
+470	fr_w_metro	métro	noun	travel	underground, metro	مترو			gender=m; article=le
+471	fr_w_billet	billet	noun	travel	ticket	تذكرة			gender=m; article=le	fr_billet
+472	fr_w_plan	plan	noun	travel	map (of a town); plan	خريطة؛ خطة			gender=m; article=le	fr_ev_plan
+473	fr_w_bagages	bagages	noun	travel	luggage	أمتعة			gender=m; article=les	fr_ev_bagages
+474	fr_w_valise	valise	noun	travel	suitcase	حقيبة سفر			gender=f; article=la
+475	fr_w_ordinateur	ordinateur	noun	work	computer	حاسوب			gender=m; article=l'
+476	fr_w_television	télévision	noun	leisure	television	تلفاز		télé	gender=f; article=la
+477	fr_w_message	message	noun	communication	message	رسالة			gender=m; article=le
+478	fr_w_chemise	chemise	noun	clothes	shirt	قميص			gender=f; article=la
+479	fr_w_robe	robe	noun	clothes	dress	فستان			gender=f; article=la
+480	fr_w_chaussure	chaussure	noun	clothes	shoe	حذاء			gender=f; article=la
+481	fr_w_manteau	manteau	noun	clothes	coat	معطف		manteaux	gender=m; article=le; plural=manteaux
+482	fr_w_lunettes	lunettes	noun	clothes	glasses	نظارة			gender=f; article=les
+483	fr_w_carte	carte	noun	shopping	card; map	بطاقة؛ خريطة			gender=f; article=la
+484	fr_w_ballon	ballon	noun	leisure	ball	كرة			gender=m; article=le
+485	fr_w_fleur	fleur	noun	nature	flower	زهرة			gender=f; article=la
+486	fr_w_arbre	arbre	noun	nature	tree	شجرة			gender=m; article=l'
+487	fr_w_animal	animal	noun	animals	animal	حيوان		animaux	gender=m; article=l'; plural=animaux
+488	fr_w_oiseau	oiseau	noun	animals	bird	طائر		oiseaux	gender=m; article=l'; plural=oiseaux
+489	fr_w_cheval	cheval	noun	animals	horse	حصان		chevaux	gender=m; article=le; plural=chevaux
+490	fr_w_ciel	ciel	noun	nature	sky	سماء			gender=m; article=le
+491	fr_w_vent	vent	noun	weather	wind	ريح			gender=m; article=le
+492	fr_w_neige	neige	noun	weather	snow	ثلج			gender=f; article=la
+493	fr_w_feu	feu	noun	nature	fire	نار			gender=m; article=le
+494	fr_w_air	air	noun	nature	air	هواء			gender=m; article=l'
+495	fr_w_raison	raison	noun	mind	reason	سبب			gender=f; article=la
+496	fr_w_nouvelle	nouvelle	noun	communication	(piece of) news	خبر			gender=f; article=la
+497	fr_w_langue	langue	noun	school	language; tongue	لغة؛ لسان			gender=f; article=la
+498	fr_w_francais	français	noun	school	French (language); French	الفرنسية؛ فرنسي		française	gender=m; article=le
+499	fr_w_anglais	anglais	noun	school	English (language); English	الإنجليزية؛ إنجليزي		anglaise	gender=m; article=l'
+500	fr_w_numero	numéro	noun	numbers	number	رقم			gender=m; article=le
+501	fr_w_prix	prix	noun	shopping	price	سعر			gender=m; article=le
+502	fr_w_taille	taille	noun	clothes	size	مقاس			gender=f; article=la
+503	fr_w_projet	projet	noun	mind	plan, project	مشروع، خطة			gender=m; article=le	fr_projet
+504	fr_w_erreur	erreur	noun	school	mistake	خطأ			gender=f; article=l'
+505	fr_w_reunion	réunion	noun	work	meeting	اجتماع			gender=f; article=la	fr_reunion
+506	fr_w_lecon	leçon	noun	school	lesson	درس			gender=f; article=la
+507	fr_w_devoirs	devoirs	noun	school	homework	واجبات			gender=m; article=les
+508	fr_w_entreprise	entreprise	noun	work	company	شركة			gender=f; article=l'	fr_entreprise
+509	fr_w_sport	sport	noun	leisure	sport	رياضة			gender=m; article=le
+510	fr_w_euro	euro	noun	shopping	euro	يورو			gender=m; article=l'
+511	fr_w_pays_paysage	paysage	noun	nature	landscape	منظر			gender=m; article=le
+512	fr_w_quartier	quartier	noun	places	neighbourhood	حيّ			gender=m; article=le
+513	fr_w_appartement	appartement	noun	home	flat, apartment	شقة			gender=m; article=l'
+514	fr_w_etage	étage	noun	home	floor (storey)	طابق			gender=m; article=l'
+515	fr_w_canape	canapé	noun	home	sofa	أريكة			gender=m; article=le
+516	fr_w_serveur	serveur	noun	food	waiter	نادل		serveuse	gender=m; article=le
+517	fr_w_cuillere	cuillère	noun	food	spoon	ملعقة			gender=f; article=la
+518	fr_w_fourchette	fourchette	noun	food	fork	شوكة			gender=f; article=la
+519	fr_w_couteau	couteau	noun	food	knife	سكين		couteaux	gender=m; article=le; plural=couteaux
+520	fr_w_date	date	noun	time	date	تاريخ			gender=f; article=la
+521	fr_w_avenir	avenir	noun	time	future	مستقبل			gender=m; article=l'
+522	fr_w_moment	moment	noun	time	moment	لحظة			gender=m; article=le
+523	fr_w_gauche	gauche	noun	places	left	يسار			gender=f; article=la	fr_gauche
+524	fr_w_droite	droite	noun	places	right	يمين			gender=f; article=la	fr_droite
+525	fr_w_vert	vert	adj	descriptions	green	أخضر		verte, verts, vertes
+526	fr_w_bleu	bleu	adj	descriptions	blue	أزرق		bleue, bleus, bleues
+527	fr_w_jaune	jaune	adj	descriptions	yellow	أصفر
+528	fr_w_petit_court	court	adj	descriptions	short	قصير		courte, courts, courtes
+529	fr_w_rapide	rapide	adj	descriptions	fast	سريع
+530	fr_w_lent	lent	adj	descriptions	slow	بطيء		lente
+531	fr_w_fort	fort	adj	descriptions	strong	قوي		forte
+532	fr_w_pauvre	pauvre	adj	descriptions	poor	فقير
+533	fr_w_plein	plein	adj	descriptions	full	ممتلئ		pleine
+534	fr_w_vide	vide	adj	descriptions	empty	فارغ
+535	fr_w_sombre	sombre	adj	descriptions	dark	مظلم
+536	fr_w_mouille	mouillé	adj	weather	wet	مبلل		mouillée
+537	fr_w_lourd	lourd	adj	descriptions	heavy	ثقيل		lourde
+538	fr_w_dangereux	dangereux	adj	descriptions	dangerous	خطير		dangereuse
+539	fr_w_occupe	occupé	adj	work	busy; taken	مشغول		occupée
+540	fr_w_fache	fâché	adj	feelings	angry	غاضب		fâchée
+541	fr_w_ennuyeux	ennuyeux	adj	feelings	boring	ممل		ennuyeuse
+542	fr_w_interessant	intéressant	adj	descriptions	interesting	مثير للاهتمام		intéressante
+543	fr_w_drole	drôle	adj	descriptions	funny	مضحك
+544	fr_w_bizarre	bizarre	adj	descriptions	strange	غريب
+545	fr_w_simple	simple	adj	descriptions	simple	بسيط
+546	fr_w_special	spécial	adj	descriptions	special	خاص، مميز		spéciale
+547	fr_w_celebre	célèbre	adj	descriptions	famous	مشهور
+548	fr_w_prefere	préféré	adj	feelings	favourite	مفضّل		préférée
+549	fr_w_parfait	parfait	adj	descriptions	perfect	مثالي		parfaite
+550	fr_w_terrible	terrible	adj	descriptions	terrible	فظيع
+551	fr_w_magnifique	magnifique	adj	descriptions	wonderful, magnificent	رائع
+552	fr_w_delicieux	délicieux	adj	food	delicious	لذيذ		délicieuse		fr_delicieux
+553	fr_w_sale	sale	adj	descriptions	dirty	متسخ
+554	fr_w_marie_adj	marié	adj	people	married	متزوج		mariée
+555	fr_w_gentil	gentil	adj	people	kind	لطيف		gentille
+556	fr_w_confortable	confortable	adj	descriptions	comfortable	مريح
+557	fr_w_inquiet	inquiet	adj	feelings	worried	قلق		inquiète
+558	fr_w_sympa	sympa	adj	people	nice, friendly	لطيف، ودود		sympathique
+559	fr_w_propre	propre	adj	descriptions	clean; own	نظيف؛ خاص
+560	fr_w_sec	sec	adj	weather	dry	جاف		sèche
+561	fr_w_chaque_plusieurs	plusieurs	det	function	several	عدة
+562	fr_w_aucun	aucun	det	function	no, not any	لا أي		aucune
+563	fr_w_certain	certain	det	function	some, certain	بعض		certaine, certains, certaines
+564	fr_w_ni	ni	conj	function	nor	ولا
+565	fr_w_non_plus	non plus	phrase	function	neither, not either	ولا ... أيضًا
+566	fr_w_surtout	surtout	adv	function	especially	خصوصًا
+567	fr_w_enfin	enfin	adv	time	finally	أخيرًا
+568	fr_w_d_habitude	d'habitude	adv	time	usually	عادةً				fr_dhabitude
+569	fr_w_lentement	lentement	adv	descriptions	slowly	ببطء
+570	fr_w_rapidement	rapidement	adv	descriptions	quickly	بسرعة
+571	fr_w_haut	haut	adv	places	up, high	فوق، عاليًا
+572	fr_w_bas	bas	adv	places	down, low	تحت، منخفضًا
+573	fr_w_derriere	derrière	prep	places	behind	خلف
+574	fr_w_devant	devant	prep	places	in front of	أمام
+575	fr_w_autour	autour	adv	places	around	حول
+576	fr_w_vers	vers	prep	places	towards	نحو
+577	fr_w_contre	contre	prep	function	against	ضد
+578	fr_w_selon	selon	prep	function	according to	وفقًا لـ
+579	fr_w_besoin	besoin	noun	function	need (avoir besoin de: to need)	حاجة (يحتاج إلى)			gender=m; article=le
+580	fr_w_attention	attention	noun	function	attention, care (faire attention: be careful)	انتباه			gender=f; article=l'
+581	fr_w_il_y_a	il y a	phrase	function	there is/are; ago	يوجد؛ منذ
+582	fr_w_six	six	num	numbers	six	ستة
+583	fr_w_sept	sept	num	numbers	seven	سبعة
+584	fr_w_huit	huit	num	numbers	eight	ثمانية
+585	fr_w_neuf	neuf	num	numbers	nine	تسعة
+586	fr_w_vingt	vingt	num	numbers	twenty	عشرون
+587	fr_w_trente	trente	num	numbers	thirty	ثلاثون
+588	fr_w_mille	mille	num	numbers	thousand	ألف
+589	fr_w_quinze	quinze	num	numbers	fifteen	خمسة عشر
+590	fr_w_deuxieme	deuxième	adj	numbers	second	ثانٍ
+591	fr_w_moitie	moitié	noun	numbers	half	نصف			gender=f; article=la
+592	fr_w_demi	demi	adj	numbers	half	نصف		demie
+593	fr_w_plat	plat	noun	food	dish	طبق			gender=m; article=le
+594	fr_w_boulangerie	boulangerie	noun	shopping	bakery	مخبز			gender=f; article=la
+595	fr_w_glace	glace	noun	food	ice cream	مثلجات			gender=f; article=la
+596	fr_w_bouteille	bouteille	noun	food	bottle	زجاجة			gender=f; article=la
+597	fr_w_soiree	soirée	noun	time	evening; party	سهرة			gender=f; article=la
+598	fr_w_escalier	escalier	noun	home	stairs	درج			gender=m; article=l'
+599	fr_w_salon	salon	noun	home	living room	غرفة الجلوس			gender=m; article=le
+600	fr_w_cinema	cinéma	noun	leisure	cinema	سينما			gender=m; article=le
