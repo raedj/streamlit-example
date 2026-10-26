@@ -599,3 +599,303 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 598	ur_w_bachpan	بچپن	noun	people	childhood	طفولة	bacpan		gender=m
 599	ur_w_khush_qismat	خوش قسمت	adj	feelings	lucky	محظوظ	khush qismat
 600	ur_w_akela	اکیلا	adj	people	alone	وحيد	akelā
+601	ur_w_chillana	چلانا	verb	communication	to shout	يصرخ	chillānā	چلایا, چلائی, چلاؤ, چلاتا, چلاتی
+602	ur_w_choomna	چومنا	verb	people	to kiss	يقبّل	cūmnā
+603	ur_w_pehchanna	پہچاننا	verb	mind	to recognise	يتعرّف على	pehcānnā
+604	ur_w_barhana	بڑھانا	verb	numbers	to increase (something)	يزيد	baṛhānā
+605	ur_w_sambhalna	سنبھالنا	verb	work	to handle, to look after	يتولّى، يعتني بـ	sambhālnā
+606	ur_w_pachtana	پچھتانا	verb	feelings	to regret	يندم	pachtānā
+607	ur_w_khatkhatana	کھٹکھٹانا	verb	actions	to knock	يطرق	khaṭkhaṭānā
+608	ur_w_soonghna	سونگھنا	verb	senses	to smell	يشمّ	sū̃ghnā
+609	ur_w_latkana	لٹکانا	verb	actions	to hang	يعلّق	laṭkānā
+610	ur_w_ubalna	ابالنا	verb	food	to boil	يغلي	ubālnā
+611	ur_w_milana	ملانا	verb	food	to mix; to introduce	يخلط؛ يعرّف	milānā
+612	ur_w_chhapna	چھاپنا	verb	work	to print	يطبع	chāpnā
+613	ur_w_utarna_takeoff	اتارنا	verb	clothes	to take off	يخلع	utārnā
+614	ur_w_bujhana	بجھانا	verb	home	to put out, to turn off	يطفئ	bujhānā
+615	ur_w_letna	لیٹنا	verb	routine	to lie down	يستلقي	leṭnā
+616	ur_w_bachna	بچنا	verb	actions	to avoid; to be saved	يتجنّب؛ ينجو	bacnā
+617	ur_w_girana	گرانا	verb	actions	to drop	يُسقط	girānā
+618	ur_w_khilana	کھلانا	verb	food	to feed	يُطعم	khilānā
+619	ur_w_rangna	رنگنا	verb	home	to paint, to dye	يلوّن، يدهن	rangnā
+620	ur_w_bandhna	باندھنا	verb	actions	to tie	يربط	bā̃dhnā
+621	ur_w_jorna	جوڑنا	verb	actions	to join, to connect	يوصل، يربط	joṛnā
+622	ur_w_hilna	ہلنا	verb	movement	to move, to shake	يتحرّك	hilnā
+623	ur_w_bayan	بیان	noun	communication	description, statement (بیان کرنا: to describe)	وصف، بيان	bayān		gender=m
+624	ur_w_bahas	بحث	noun	communication	discussion, argument (بحث کرنا: to discuss)	نقاش	bahas		gender=f
+625	ur_w_zikr	ذکر	noun	communication	mention (ذکر کرنا: to mention)	ذكر	zikr		gender=m
+626	ur_w_mashwara	مشورہ	noun	communication	advice, suggestion	نصيحة، اقتراح	mashvarā		gender=m
+627	ur_w_shikayat	شکایت	noun	communication	complaint (شکایت کرنا: to complain)	شكوى	shikāyat		gender=f
+628	ur_w_inkar	انکار	noun	communication	refusal (انکار کرنا: to refuse)	رفض	inkār		gender=m
+629	ur_w_qubool	قبول	adj	communication	accepted (قبول کرنا: to accept)	مقبول	qabūl
+630	ur_w_tasawwur	تصور	noun	mind	imagination (تصور کرنا: to imagine)	تصوّر	tasavvur		gender=m
+631	ur_w_andaza	اندازہ	noun	mind	guess, estimate (اندازہ لگانا: to guess)	تخمين	andāzā		gender=m
+632	ur_w_bharosa	بھروسہ	noun	feelings	trust (بھروسہ کرنا: to trust)	ثقة	bharosā		gender=m
+633	ur_w_jama	جمع	adj	actions	collected (جمع کرنا: to collect)	مجموع	jamā
+634	ur_w_hifazat	حفاظت	noun	actions	protection (حفاظت کرنا: to protect)	حماية	hifāzat		gender=f
+635	ur_w_taraqqi	ترقی	noun	work	progress, development	تقدّم، تطوّر	taraqqī		gender=f
+636	ur_w_hal	حل	noun	mind	solution (حل کرنا: to solve)	حلّ	hal		gender=m
+637	ur_w_fail	فیل	adj	school	failed (فیل ہونا: to fail)	راسب	fel
+638	ur_w_kharch	خرچ	noun	shopping	expense (خرچ کرنا: to spend)	نفقة	kharc		gender=m
+639	ur_w_dastkhat	دستخط	noun	work	signature (دستخط کرنا: to sign)	توقيع	dastkhat		gender=m
+640	ur_w_hasil	حاصل	adj	actions	obtained (حاصل کرنا: to get)	محصَّل	hāsil
+641	ur_w_jhoot	جھوٹ	noun	communication	lie (جھوٹ بولنا: to lie)	كذب	jhūṭ		gender=m
+642	ur_w_dekh_bhal	دیکھ بھال	noun	people	care (دیکھ بھال کرنا: to look after)	رعاية	dekh bhāl		gender=f
+643	ur_w_shak	شک	noun	mind	doubt	شكّ	shak		gender=m
+644	ur_w_izafa	اضافہ	noun	numbers	increase, addition	زيادة، إضافة	izāfā		gender=m
+645	ur_w_ittefaq	اتفاق	noun	people	agreement; coincidence	اتفاق؛ صدفة	ittefāq		gender=m
+646	ur_w_ghussa	غصہ	noun	feelings	anger	غضب	ghussā		gender=m
+647	ur_w_afsos	افسوس	noun	feelings	regret, sorrow (افسوس ہے: I'm sorry)	أسف	afsos		gender=m
+648	ur_w_january	جنوری	noun	time	January	يناير	janvarī		gender=m
+649	ur_w_february	فروری	noun	time	February	فبراير	farvarī		gender=m
+650	ur_w_march	مارچ	noun	time	March	مارس	mārc		gender=m
+651	ur_w_april	اپریل	noun	time	April	أبريل	aprail		gender=m
+652	ur_w_may_month	مئی	noun	time	May	مايو	maī		gender=m
+653	ur_w_june	جون	noun	time	June	يونيو	jūn		gender=m
+654	ur_w_july	جولائی	noun	time	July	يوليو	julāī		gender=m
+655	ur_w_august	اگست	noun	time	August	أغسطس	agast		gender=m
+656	ur_w_september	ستمبر	noun	time	September	سبتمبر	sitambar		gender=m
+657	ur_w_october	اکتوبر	noun	time	October	أكتوبر	aktūbar		gender=m
+658	ur_w_november	نومبر	noun	time	November	نوفمبر	navambar		gender=m
+659	ur_w_december	دسمبر	noun	time	December	ديسمبر	disambar		gender=m
+660	ur_w_ilaqa	علاقہ	noun	places	area	منطقة	ilāqā		gender=m
+661	ur_w_kona	کونا	noun	places	corner	زاوية	konā		gender=m
+662	ur_w_jazeera	جزیرہ	noun	places	island	جزيرة	jazīrā		gender=m
+663	ur_w_pahari	پہاڑی	noun	places	hill	تلّ	pahāṛī		gender=f
+664	ur_w_imarat	عمارت	noun	places	building	مبنى	imārat		gender=f
+665	ur_w_girja	گرجا	noun	places	church	كنيسة	girjā		gender=m
+666	ur_w_theatre	تھیٹر	noun	leisure	theatre	مسرح	thieṭar		gender=m
+667	ur_w_swimming_pool	سوئمنگ پول	noun	leisure	swimming pool	مسبح	svimiṅg pūl		gender=m
+668	ur_w_stadium	اسٹیڈیم	noun	leisure	stadium	ملعب	sṭeḍiyam		gender=m
+669	ur_w_chowk	چوک	noun	places	square, crossroads	ساحة، تقاطع	cauk		gender=m
+670	ur_w_bakery	بیکری	noun	shopping	bakery	مخبز	bekarī		gender=f
+671	ur_w_sifarat_khana	سفارت خانہ	noun	places	embassy	سفارة	sifārat khānā		gender=m	ur_ev_sifarat_khana
+672	ur_w_reception	ریسیپشن	noun	travel	reception	الاستقبال	risepshan		gender=m	ur_ev_reception
+673	ur_w_ambulance	ایمبولینس	noun	health	ambulance	سيارة إسعاف	aimbūlens		gender=f	ur_ev_ambulance
+674	ur_w_washroom	واش روم	noun	home	toilet, washroom	حمّام	vāsh rūm		gender=m	ur_ev_washroom
+675	ur_w_emergency	ایمرجنسی	noun	health	emergency	طوارئ	emarjansī		gender=f	ur_ev_emergency_number
+676	ur_w_science	سائنس	noun	school	science	العلم	sāins		gender=f
+677	ur_w_hisab	حساب	noun	school	maths; account	حساب، رياضيات	hisāb		gender=m
+678	ur_w_lughat	لغت	noun	school	dictionary	قاموس	lughat		gender=f
+679	ur_w_board	بورڈ	noun	school	board	سبورة	borḍ		gender=m
+680	ur_w_copy	کاپی	noun	school	notebook	دفتر	kāpī		gender=f
+681	ur_w_misal	مثال	noun	school	example	مثال	misāl		gender=f
+682	ur_w_jumla	جملہ	noun	school	sentence	جملة	jumlā		gender=m
+683	ur_w_gardan	گردن	noun	body	neck	رقبة	gardan		gender=f
+684	ur_w_kandha	کندھا	noun	body	shoulder	كتف	kandhā		gender=m
+685	ur_w_ghutna	گھٹنا	noun	body	knee	ركبة	ghuṭnā		gender=m
+686	ur_w_meda	معدہ	noun	body	stomach	معدة	medā		gender=m
+687	ur_w_khansi	کھانسی	noun	health	cough	سعال	khā̃sī		gender=f
+688	ur_w_zukam	زکام	noun	health	cold (illness)	زكام	zukām		gender=m
+689	ur_w_allergy	الرجی	noun	health	allergy	حساسية	alarjī		gender=f	ur_ev_allergy
+690	ur_w_sweater	سویٹر	noun	clothes	sweater	كنزة	sveṭar		gender=m
+691	ur_w_moza	موزہ	noun	clothes	sock	جورب	mozā		gender=m
+692	ur_w_angoothi	انگوٹھی	noun	clothes	ring	خاتم	angūṭhī		gender=f
+693	ur_w_batwa	بٹوا	noun	shopping	wallet	محفظة	baṭvā		gender=m
+694	ur_w_chhatri	چھتری	noun	weather	umbrella	مظلّة	chatrī		gender=f
+695	ur_w_jeb	جیب	noun	clothes	pocket	جيب	jeb		gender=f
+696	ur_w_aaina	آئینہ	noun	home	mirror	مرآة	āinā		gender=m
+697	ur_w_almari	الماری	noun	home	cupboard, wardrobe	خزانة	almārī		gender=f
+698	ur_w_lamp	لیمپ	noun	home	lamp	مصباح	lemp		gender=m
+699	ur_w_balcony	بالکونی	noun	home	balcony	شرفة	bālkonī		gender=f
+700	ur_w_takiya	تکیہ	noun	home	pillow	وسادة	takiyā		gender=m
+701	ur_w_kambal	کمبل	noun	home	blanket	بطانية	kambal		gender=m
+702	ur_w_qaleen	قالین	noun	home	carpet	سجّادة	qālīn		gender=m
+703	ur_w_parda	پردہ	noun	home	curtain	ستارة	pardā		gender=m
+704	ur_w_machine	مشین	noun	home	machine	آلة	mashīn		gender=f
+705	ur_w_lift	لفٹ	noun	home	lift	مصعد	lifṭ		gender=f
+706	ur_w_pyaz	پیاز	noun	food	onion	بصل	pyāz		gender=f
+707	ur_w_mirch	مرچ	noun	food	chilli, pepper	فلفل	mirc		gender=f
+708	ur_w_tel	تیل	noun	food	oil	زيت	tel		gender=m
+709	ur_w_shahad	شہد	noun	food	honey	عسل	shahad		gender=m
+710	ur_w_makkhan	مکھن	noun	food	butter	زبدة	makkhan		gender=m
+711	ur_w_jam	جیم	noun	food	jam	مربّى	jem		gender=m
+712	ur_w_sandwich	سینڈوچ	noun	food	sandwich	شطيرة	senḍvic		gender=m
+713	ur_w_pasta	پاستا	noun	food	pasta	معكرونة	pāstā		gender=m
+714	ur_w_chocolate	چاکلیٹ	noun	food	chocolate	شوكولاتة	cākleṭ		gender=f
+715	ur_w_lemon	لیموں	noun	food	lemon	ليمون	lemū̃		gender=m
+716	ur_w_botal	بوتل	noun	food	bottle	زجاجة	botal		gender=f
+717	ur_w_tip	ٹپ	noun	food	tip	بقشيش	ṭip		gender=f	ur_ev_tip
+718	ur_w_sathi	ساتھی	noun	work	colleague, companion	زميل، رفيق	sāthī		gender=m
+719	ur_w_malik	مالک	noun	people	owner	مالك	mālik		gender=m
+720	ur_w_wakeel	وکیل	noun	work	lawyer	محامٍ	vakīl		gender=m
+721	ur_w_gulukar	گلوکار	noun	leisure	singer	مغنٍّ	gulūkār		gender=m
+722	ur_w_musannif	مصنف	noun	leisure	writer	كاتب	musannif		gender=m
+723	ur_w_sayyah	سیاح	noun	travel	tourist	سائح	sayyāh		gender=m
+724	ur_w_musafir	مسافر	noun	travel	traveller, passenger	مسافر، راكب	musāfir		gender=m
+725	ur_w_badshah	بادشاہ	noun	people	king	ملك	bādshāh		gender=m
+726	ur_w_pota	پوتا	noun	family	grandson (son's son)	حفيد	potā	پوتی	gender=m
+727	ur_w_guide	گائیڈ	noun	travel	guide	مرشد	gāiḍ		gender=m	ur_ev_guide_sair
+728	ur_w_tajurba	تجربہ	noun	work	experience	خبرة، تجربة	tajurbā		gender=m
+729	ur_w_mauqa	موقع	noun	work	opportunity	فرصة	mauqa		gender=m
+730	ur_w_budget	بجٹ	noun	work	budget	ميزانية	bajaṭ		gender=m
+731	ur_w_muahida	معاہدہ	noun	work	contract, agreement	عقد، اتفاقية	muāhidā		gender=m
+732	ur_w_qarz	قرض	noun	shopping	loan, debt	قرض	qarz		gender=m	ur_fin_qarz
+733	ur_w_qist	قسط	noun	shopping	instalment	قسط	qist		gender=f	ur_fin_qist
+734	ur_w_sood	سود	noun	shopping	interest	فائدة	sūd		gender=m	ur_fin_sood
+735	ur_w_account	اکاؤنٹ	noun	shopping	account	حساب	akāunṭ		gender=m	ur_fin_account
+736	ur_w_munsalik	منسلک	adj	work	attached	مرفق	munsalik			ur_munsalik
+737	ur_w_taqat	طاقت	noun	descriptions	strength	قوة	tāqat		gender=f
+738	ur_w_malumat	معلومات	noun	communication	information	معلومات	mālūmāt		gender=f
+739	ur_w_ilm	علم	noun	school	knowledge	علم	ilm		gender=m
+740	ur_w_saqafat	ثقافت	noun	leisure	culture	ثقافة	saqāfat		gender=f
+741	ur_w_riwayat	روایت	noun	leisure	tradition	تقليد	rivāyat	روایات	gender=f
+742	ur_w_internet	انٹرنیٹ	noun	communication	internet	الإنترنت	inṭarneṭ		gender=m
+743	ur_w_password	پاس ورڈ	noun	communication	password	كلمة المرور	pās varḍ		gender=m
+744	ur_w_natija	نتیجہ	noun	school	result	نتيجة	natījā		gender=m
+745	ur_w_farq	فرق	noun	mind	difference	فرق	farq		gender=m
+746	ur_w_faisla	فیصلہ	noun	mind	decision	قرار	faislā		gender=m
+747	ur_w_raye	رائے	noun	mind	opinion	رأي	rāe		gender=f
+748	ur_w_ehsas	احساس	noun	feelings	feeling	شعور	ehsās		gender=m
+749	ur_w_naqd	نقد	noun	shopping	cash	نقد	naqd		gender=m
+750	ur_w_parwaz	پرواز	noun	travel	flight	رحلة جوية	parvāz		gender=f
+751	ur_w_visa	ویزا	noun	travel	visa	تأشيرة	vīzā		gender=m
+752	ur_w_rawangi	روانگی	noun	travel	departure	مغادرة	ravāngī		gender=f	ur_ev_rawangi
+753	ur_w_takheer	تاخیر	noun	travel	delay	تأخير	tākhīr		gender=f	ur_ev_takheer
+754	ur_w_dakhla	داخلہ	noun	travel	entry, admission	دخول	dākhilā		gender=m	ur_ev_dakhla_ticket
+755	ur_w_auqat	اوقات	noun	time	timings, hours	مواعيد	auqāt		gender=m	ur_ev_auqat
+756	ur_w_yadgari	یادگاری	adj	travel	souvenir, memorial	تذكاري	yādgārī			ur_ev_yadgari_tohfa
+757	ur_w_awaz	آواز	noun	senses	voice, sound	صوت	āvāz		gender=f
+758	ur_w_shor	شور	noun	senses	noise	ضجيج	shor		gender=m
+759	ur_w_darja_hararat	درجہ حرارت	noun	weather	temperature	درجة الحرارة	darja-e-harārat		gender=m
+760	ur_w_pata	پتا	noun	places	address	عنوان	patā		gender=m
+761	ur_w_dar	ڈر	noun	feelings	fear	خوف	ḍar		gender=m
+762	ur_w_khwab	خواب	noun	mind	dream	حلم	khvāb		gender=m
+763	ur_w_mohabbat	محبت	noun	feelings	love	حبّ	mohabbat		gender=f
+764	ur_w_meter	میٹر	noun	numbers	metre	متر	mīṭar		gender=m
+765	ur_w_kilo	کلو	noun	numbers	kilo	كيلو	kilo		gender=m
+766	ur_w_pauda	پودا	noun	nature	plant	نبتة	paudā		gender=m
+767	ur_w_naram	نرم	adj	descriptions	soft	ناعم	naram
+768	ur_w_namkeen	نمکین	adj	food	salty	مالح	namkīn
+769	ur_w_khatta	کھٹا	adj	food	sour	حامض	khaṭṭā
+770	ur_w_karwa	کڑوا	adj	food	bitter	مرّ	kaṛvā
+771	ur_w_badsoorat	بدصورت	adj	descriptions	ugly	قبيح	badsūrat
+772	ur_w_bewaqoof	بیوقوف	adj	descriptions	stupid	غبي	bevaqūf
+773	ur_w_shaista	شائستہ	adj	people	polite	مهذّب	shāistā
+774	ur_w_imandar	ایماندار	adj	people	honest	أمين، صادق	īmāndār
+775	ur_w_bahadur	بہادر	adj	people	brave	شجاع	bahādur
+776	ur_w_sharmila	شرمیلا	adj	people	shy	خجول	sharmīlā
+777	ur_w_purjosh	پرجوش	adj	feelings	excited, enthusiastic	متحمّس	purjosh
+778	ur_w_jadeed	جدید	adj	descriptions	modern	حديث	jadīd
+779	ur_w_riwayati	روایتی	adj	descriptions	traditional	تقليدي	rivāyatī
+780	ur_w_qudrati	قدرتی	adj	nature	natural	طبيعي	qudratī
+781	ur_w_mufeed	مفید	adj	function	useful	مفيد	mufīd
+782	ur_w_qabil	قابل	adj	function	able, capable	قادر، كفء	qābil
+783	ur_w_sabzi_khor	سبزی خور	adj	food	vegetarian	نباتي	sabzī khor			ur_ev_sabzi_khor
+784	ur_w_sanjeeda	سنجیدہ	adj	people	serious	جادّ	sanjīdā
+785	ur_w_pagal	پاگل	adj	descriptions	crazy	مجنون	pāgal
+786	ur_w_sehatmand	صحت مند	adj	health	healthy	صحّي	sehatmand
+787	ur_w_yaqeen	یقین	noun	mind	certainty (یقین ہے: I'm sure)	يقين	yaqīn		gender=m
+788	ur_w_pursukoon	پرسکون	adj	descriptions	calm	هادئ	pursukūn
+789	ur_w_nakhush	ناخوش	adj	feelings	unhappy	تعيس	nākhush
+790	ur_w_geela	گیلا	adj	descriptions	wet	مبلّل	gīlā
+791	ur_w_sookha	سوکھا	adj	descriptions	dry	جافّ	sūkhā
+792	ur_w_chamakdar	چمکدار	adj	descriptions	bright, shiny	لامع	camakdār
+793	ur_w_chaura	چوڑا	adj	descriptions	wide	واسع	cauṛā
+794	ur_w_tang	تنگ	adj	descriptions	narrow; annoyed (تنگ کرنا: to bother)	ضيّق؛ منزعج	tang
+795	ur_w_hairan	حیران	adj	feelings	surprised	متفاجئ	hairān
+796	ur_w_khaas_taur	خاص طور پر	adv	function	especially	خصوصًا	khās taur par
+797	ur_w_bilkul	بالکل	adv	function	completely, exactly	تمامًا	bilkul
+798	ur_w_achanak	اچانک	adv	time	suddenly	فجأة	acānak
+799	ur_w_haal_hi	حال ہی میں	adv	time	recently	مؤخرًا	hāl hī mẽ
+800	ur_w_is_liye	اس لیے	conj	function	so, therefore	لذلك	is liye
+801	ur_w_maslan	مثلاً	adv	function	for example	مثلًا	maslan
+802	ur_w_jaise	جیسے	conj	function	like, as if	مثل، كأنّ	jaise	جیسا, جیسی
+803	ur_w_aksar	اکثر	adv	time	often	غالبًا، كثيرًا	aksar
+804	ur_w_saath_num	ساٹھ	num	numbers	sixty	ستون	sāṭh
+805	ur_w_sattar	ستر	num	numbers	seventy	سبعون	sattar
+806	ur_w_assi	اسی	num	numbers	eighty	ثمانون	assī
+807	ur_w_nawwe	نوے	num	numbers	ninety	تسعون	navve
+808	ur_w_lakh	لاکھ	num	numbers	hundred thousand	مئة ألف	lākh
+809	ur_w_karor	کروڑ	num	numbers	ten million	عشرة ملايين	karoṛ
+810	ur_w_chautha	چوتھا	adj	numbers	fourth	الرابع	cauthā
+811	ur_w_panchwan	پانچواں	adj	numbers	fifth	الخامس	pā̃cvā̃	پانچویں
+812	ur_w_salgirah_mubarak	سالگرہ مبارک	phrase	greetings	happy birthday	عيد ميلاد سعيد	sālgirah mubārak
+813	ur_w_mil_kar_khushi	آپ سے مل کر خوشی ہوئی	phrase	greetings	pleased to meet you	سعدت بلقائك	āp se mil kar khushī huī			ur_mil_kar_khushi
+814	ur_w_allah_hafiz	اللہ حافظ	phrase	greetings	goodbye	مع السلامة	allāh hāfiz
+815	ur_w_mashallah	ماشاء اللہ	interj	greetings	wonderful (expressing admiration)	ما شاء الله	māshā'allāh
+816	ur_w_muhtaram	محترم	adj	communication	respected, dear (formal)	محترم	muhtaram	محترمہ		ur_muhtaram
+817	ur_w_agla	اگلا	adj	time	next	التالي، القادم	aglā	اگلے, اگلی		ur_agle_hafte
+818	ur_w_bachao	بچاؤ	interj	health	help!	النجدة!	bacāo			ur_ev_bachao
+819	ur_w_bheegna	بھیگنا	verb	weather	to get wet	يتبلّل	bhīgnā
+820	ur_w_sookhna	سوکھنا	verb	weather	to dry (become dry)	يجفّ	sūkhnā
+821	ur_w_pighalna	پگھلنا	verb	weather	to melt	يذوب	pighalnā
+822	ur_w_jamna	جمنا	verb	weather	to freeze, to set	يتجمّد	jamnā
+823	ur_w_chamakna	چمکنا	verb	weather	to shine	يلمع	camaknā
+824	ur_w_dabana	دبانا	verb	actions	to press	يضغط	dabānā
+825	ur_w_dhakna	ڈھکنا	verb	actions	to cover	يغطّي	ḍhaknā
+826	ur_w_seena	سینا	verb	clothes	to sew	يخيط	sīnā	سی, سیا, سیتی
+827	ur_w_bona	بونا	verb	nature	to sow, to plant	يزرع	bonā
+828	ur_w_ugna	اگنا	verb	nature	to grow (of plants)	ينبت	ugnā
+829	ur_w_pakna	پکنا	verb	food	to ripen; to be cooked	ينضج	paknā
+830	ur_w_maangna	مانگنا	verb	communication	to ask for	يطلب	mā̃gnā
+831	ur_w_hatana	ہٹانا	verb	actions	to remove, to move aside	يزيح	haṭānā
+832	ur_w_chhupna	چھپنا	verb	actions	to hide (oneself)	يختبئ	chupnā
+833	ur_w_jhukna	جھکنا	verb	movement	to bend, to bow	ينحني	jhuknā
+834	ur_w_takrana	ٹکرانا	verb	travel	to collide	يصطدم	ṭakrānā
+835	ur_w_sulana	سلانا	verb	routine	to put to sleep	ينوّم	sulānā
+836	ur_w_ghabrana	گھبرانا	verb	feelings	to panic, to be nervous	يرتبك	ghabrānā
+837	ur_w_thamna	تھامنا	verb	actions	to hold	يمسك	thāmnā
+838	ur_w_janchna	جانچنا	verb	actions	to check	يفحص	jā̃cnā
+839	ur_w_angootha	انگوٹھا	noun	body	thumb	إبهام	angūṭhā		gender=m
+840	ur_w_hont	ہونٹ	noun	body	lip	شفة	hõṭ		gender=m
+841	ur_w_matha	ماتھا	noun	body	forehead	جبهة	māthā		gender=m
+842	ur_w_gaal	گال	noun	body	cheek	خدّ	gāl		gender=m
+843	ur_w_khoon	خون	noun	body	blood	دم	khūn		gender=m
+844	ur_w_haddi	ہڈی	noun	body	bone	عظم	haḍḍī		gender=f
+845	ur_w_jild	جلد	noun	body	skin	جلد	jild		gender=f
+846	ur_w_suraj	سورج	noun	nature	sun	شمس	sūraj		gender=m
+847	ur_w_ret	ریت	noun	nature	sand	رمل	ret		gender=f
+848	ur_w_patthar	پتھر	noun	nature	stone	حجر	patthar		gender=m
+849	ur_w_mitti	مٹی	noun	nature	soil, earth	تراب	miṭṭī		gender=f
+850	ur_w_lehar	لہر	noun	nature	wave	موجة	lehar		gender=f
+851	ur_w_toofan	طوفان	noun	weather	storm	عاصفة	tūfān		gender=m
+852	ur_w_bijli	بجلی	noun	home	electricity; lightning	كهرباء؛ برق	bijlī		gender=f
+853	ur_w_dhuan	دھواں	noun	nature	smoke	دخان	dhuā̃		gender=m
+854	ur_w_bakri	بکری	noun	animals	goat	عنزة	bakrī		gender=f
+855	ur_w_bher	بھیڑ	noun	animals	sheep; crowd	خروف؛ زحام	bheṛ		gender=f
+856	ur_w_sher	شیر	noun	animals	lion	أسد	sher		gender=m
+857	ur_w_haathi	ہاتھی	noun	animals	elephant	فيل	hāthī		gender=m
+858	ur_w_bandar	بندر	noun	animals	monkey	قرد	bandar		gender=m
+859	ur_w_chooha	چوہا	noun	animals	mouse, rat	فأر	cūhā		gender=m
+860	ur_w_machhar	مچھر	noun	animals	mosquito	بعوضة	macchar		gender=m
+861	ur_w_traffic	ٹریفک	noun	travel	traffic	زحام المرور	ṭraifik		gender=m
+862	ur_w_hadsa	حادثہ	noun	travel	accident	حادث	hādisā		gender=m
+863	ur_w_parking	پارکنگ	noun	travel	car park, parking	موقف سيارات	pārking		gender=f
+864	ur_w_dak_khana	ڈاک خانہ	noun	communication	post office	مكتب البريد	ḍāk khānā		gender=m
+865	ur_w_factory	فیکٹری	noun	work	factory	مصنع	faikṭrī		gender=f
+866	ur_w_mohalla	محلہ	noun	places	neighbourhood	حيّ	mohallā		gender=m
+867	ur_w_tala	تالا	noun	home	lock	قفل	tālā		gender=m
+868	ur_w_balti	بالٹی	noun	home	bucket	دلو	bālṭī		gender=f
+869	ur_w_sabun	صابن	noun	home	soap	صابون	sābun		gender=m
+870	ur_w_tauliya	تولیہ	noun	home	towel	منشفة	tauliyā		gender=m
+871	ur_w_brush	برش	noun	home	brush	فرشاة	brash		gender=m
+872	ur_w_kanghi	کنگھی	noun	home	comb	مشط	kanghī		gender=f
+873	ur_w_jharu	جھاڑو	noun	home	broom	مكنسة	jhāṛū		gender=m
+874	ur_w_istri	استری	noun	home	iron (for clothes)	مكواة	istrī		gender=f
+875	ur_w_pankha	پنکھا	noun	home	fan	مروحة	pankhā		gender=m
+876	ur_w_riayat	رعایت	noun	shopping	discount	تخفيض	riāyat		gender=f
+877	ur_w_tokri	ٹوکری	noun	shopping	basket	سلّة	ṭokrī		gender=f
+878	ur_w_thaila	تھیلا	noun	shopping	bag	كيس	thailā		gender=m
+879	ur_w_maal	مال	noun	shopping	goods	بضاعة	māl		gender=m
+880	ur_w_dukandar	دکاندار	noun	shopping	shopkeeper	صاحب المتجر	dukāndār		gender=m
+881	ur_w_dastana	دستانہ	noun	clothes	glove	قفاز	dastānā		gender=m
+882	ur_w_muffler	مفلر	noun	clothes	scarf	وشاح	maflar		gender=m
+883	ur_w_chappal	چپل	noun	clothes	slipper, sandal	شبشب	cappal		gender=f
+884	ur_w_gehra	گہرا	adj	descriptions	deep; dark (colour)	عميق؛ داكن	gehrā
+885	ur_w_ooncha	اونچا	adj	descriptions	high, tall	عالٍ	ū̃cā
+886	ur_w_neecha	نیچا	adj	descriptions	low	منخفض	nīcā
+887	ur_w_bareek	باریک	adj	descriptions	fine, thin	رفيع	bārīk
+888	ur_w_gol	گول	adj	descriptions	round	مستدير	gol
+889	ur_w_terha	ٹیڑھا	adj	descriptions	crooked	معوجّ	ṭeṛhā
+890	ur_w_bhara	بھرا	adj	descriptions	full	ممتلئ	bharā
+891	ur_w_kachcha	کچا	adj	food	raw, unripe	نيء، غير ناضج	kaccā
+892	ur_w_pakka	پکا	adj	food	ripe; firm, sure	ناضج؛ مؤكّد	pakkā
+893	ur_w_dheema	دھیما	adj	descriptions	slow, low (voice)	بطيء، خافت	dhīmā
+894	ur_w_adhoora	ادھورا	adj	descriptions	incomplete	ناقص	adhūrā
+895	ur_w_kabhi_kabhi	کبھی کبھی	adv	time	sometimes	أحيانًا	kabhī kabhī
+896	ur_w_aaj_kal	آج کل	adv	time	nowadays	هذه الأيام	āj kal
+897	ur_w_fauran	فوراً	adv	time	immediately	فورًا	fauran
+898	ur_w_baad_mein	بعد میں	adv	time	later	لاحقًا	baad mẽ
+899	ur_w_waise	ویسے	adv	function	by the way	بالمناسبة	vaise
+900	ur_w_naya_saal	نیا سال مبارک	phrase	greetings	happy new year	سنة جديدة سعيدة	nayā sāl mubārak

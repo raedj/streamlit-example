@@ -71,7 +71,7 @@ CEFR equivalents of the 10 levels are approximate (1–2 ≈ A1, 3–4 ≈ A2, 5
 | French | 1–3 | 900 / 3000 | 1800 | Not reviewed |
 | Arabic | 1–3 | 900 / 3000 | 1800 | Not reviewed |
 | Turkish | 1–3 | 900 / 3000 | 1800 | Not reviewed |
-| Urdu | 1–2 | 600 / 3000 | 1200 | Not reviewed |
+| Urdu | 1–3 | 900 / 3000 | 1800 | Not reviewed |
 | Malay | 1–2 | 600 / 3000 | 1200 | Not reviewed |
 
 Size: one level adds about 146 KB of dex code, about 59 KB compressed in the APK (measured for
