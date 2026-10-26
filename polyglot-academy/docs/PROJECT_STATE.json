@@ -169,9 +169,10 @@
         "levels": [
           1,
           2,
-          3
+          3,
+          4
         ],
-        "last_rank": 900
+        "last_rank": 1200
       },
       "zh": {
         "levels": [
@@ -215,7 +216,7 @@
       }
     },
     "resume_at": {
-      "language": "fr",
+      "language": "zh",
       "level": 4,
       "next_rank": 901,
       "note": "Level 4 in progress (order: en, es, fr, zh, ar, tr, ur, ms); tools/scan_wordlist.py <lang> --level 4 must report 0 unknown before committing."
