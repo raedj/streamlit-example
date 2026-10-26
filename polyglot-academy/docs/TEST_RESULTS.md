@@ -35,6 +35,32 @@ To keep level 1 clean, one Mandarin level-1 example (rank 57) had to be rewritte
 level-2 word 早饭 segmented as a single word, and it was more than 300 ranks beyond that example.
 These are checks on the word lists, not language review: no native speaker has reviewed levels 1–2.
 
+Level 3 (ranks 601–900) was then added for all eight languages, one commit each. After each one
+the same build passed (227 tests, 0 failures: core 171, data 44, uicore 12). `tools/scan_wordlist.py`
+reports 0 unknown tokens, 0 tokens beyond rank+300 and 0 examples missing their own word for every
+language at levels 1, 2 and 3 (levels 1–2 were rescanned after level 3 was added). Forms accepted
+only through rules were listed and checked by hand; where a form had matched the wrong word
+(e.g. Arabic كلامك, Turkish doğayı/kara/gecikti, Malay masakan/memulangkan) the example was
+rewritten. Level 3 counts:
+
+| Language | Accepted via rules | Links to curriculum vocab |
+|---|---|---|
+| en | 150 | 33 |
+| es | 129 | 20 |
+| fr | 88 | 24 |
+| zh | 0 (segmentation only) | 24 |
+| ar | 753 | 28 |
+| tr | 844 | 30 |
+| ur | 266 | 23 |
+| ms | 145 | 22 |
+
+Two notes from level 3. The Spanish level-3 commit first went out without its generated Kotlin:
+one id contained "ñ", the generator refused it, and the helper script did not stop. A follow-up
+commit fixed the id and added the code, and the script now stops on any generator problem. In
+Mandarin, the new words 搬家, 过去, 钱包 and 最近 would have re-segmented five level-2 examples,
+so those examples were reworded. These are checks on the word lists, not language review: no
+native speaker has reviewed levels 1–3.
+
 | Module | Test class | Tests | Failures |
 |---|---|---|---|
 | core | AdapterTest (OpenAI, Azure, Gemini, Anthropic, DeepSeek, local; image parts per vendor; error classification; timeouts; no key leakage; Mistral, Groq, xAI, OpenRouter, Qwen and custom OpenAI-compatible endpoints; GPT-5/o-series parameters; model lists from OpenAI-compatible, Anthropic and Gemini) | 14 | 0 |
