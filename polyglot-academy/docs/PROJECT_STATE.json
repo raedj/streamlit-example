@@ -219,9 +219,10 @@
           2,
           3,
           4,
-          5
+          5,
+          6
         ],
-        "last_rank": 1500
+        "last_rank": 1800
       },
       "ms": {
         "levels": [
@@ -235,7 +236,7 @@
       }
     },
     "resume_at": {
-      "language": "ur",
+      "language": "ms",
       "level": 6,
       "next_rank": 1501,
       "note": "Level 6 in progress (order: en, es, fr, zh, ar, tr, ur, ms); tools/scan_wordlist.py <lang> --level 6 must report 0 unknown before committing."
