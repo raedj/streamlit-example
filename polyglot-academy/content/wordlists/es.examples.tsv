@@ -1199,3 +1199,603 @@ rank	sentence	en	ar	names
 599	El tenedor está sucio.	The fork is dirty.	الشوكة متسخة.
 600	El camarero es muy simpático.	The waiter is very friendly.	النادل ودود جدًا.
 600	Llama al camarero, por favor.	Call the waiter, please.	نادِ النادل من فضلك.
+601	Voy a recoger a los niños de la escuela.	I'm going to pick the children up from school.	سأجلب الأطفال من المدرسة.
+601	Recoge tu ropa del suelo, por favor.	Pick your clothes up off the floor, please.	التقط ملابسك عن الأرض من فضلك.
+602	No tires papeles en la calle.	Don't throw paper in the street.	لا ترمِ الأوراق في الشارع.
+602	El niño tiró la pelota al perro.	The boy threw the ball to the dog.	رمى الولد الكرة للكلب.
+603	Empuja la puerta, no está cerrada.	Push the door, it isn't locked.	ادفع الباب، ليس مغلقًا.
+603	Los chicos empujaron el coche juntos.	The boys pushed the car together.	دفع الشباب السيارة معًا.
+604	Me han robado la cartera en el metro.	My wallet was stolen on the metro.	سُرقت محفظتي في المترو.
+604	Alguien robó mi bicicleta ayer.	Someone stole my bike yesterday.	سرق أحدهم دراجتي أمس.
+605	El gato se esconde debajo de la cama.	The cat hides under the bed.	تختبئ القطة تحت السرير.
+605	¿Dónde escondiste los regalos?	Where did you hide the presents?	أين خبّأت الهدايا؟
+606	No grites, el bebé está dormido.	Don't shout, the baby is asleep.	لا تصرخ، الطفل نائم.
+606	El profesor gritó a los niños.	The teacher shouted at the children.	صرخ المعلم على الأطفال.
+607	La madre besó a su hijo.	The mother kissed her son.	قبّلت الأم ابنها.
+607	En España la gente se besa mucho.	In Spain people kiss a lot.	في إسبانيا يتبادل الناس القبلات كثيرًا.	España
+608	Mi abuela me abrazó muy fuerte.	My grandmother hugged me very tight.	عانقتني جدتي بقوة.
+608	Los amigos se abrazan en el aeropuerto.	The friends hug at the airport.	يتعانق الأصدقاء في المطار.
+609	¿Puedes describir al hombre?	Can you describe the man?	هل تستطيع وصف الرجل؟
+609	Describe tu casa en cinco frases.	Describe your house in five sentences.	صِف بيتك في خمس جمل.
+610	Discutimos el plan en la reunión.	We discussed the plan at the meeting.	ناقشنا الخطة في الاجتماع.
+610	Mis hermanos siempre discuten por todo.	My brothers always argue about everything.	يتجادل إخوتي دائمًا على كل شيء.
+611	No mencionó el precio.	He didn't mention the price.	لم يذكر السعر.
+611	Ella te mencionó en su carta.	She mentioned you in her letter.	ذكرتك في رسالتها.
+612	Sugiero tomar un taxi.	I suggest taking a taxi.	أقترح أن نأخذ سيارة أجرة.
+612	¿Qué sugieres para la cena?	What do you suggest for dinner?	ماذا تقترح للعشاء؟
+613	¿Me recomienda un buen hotel?	Can you recommend me a good hotel?	هل تنصحني بفندق جيد؟
+613	El médico me recomendó descansar.	The doctor recommended that I rest.	نصحني الطبيب بالراحة.
+614	Mi padre siempre se queja de la comida.	My father always complains about the food.	أبي يشتكي دائمًا من الطعام.
+614	Nos quejamos al camarero.	We complained to the waiter.	اشتكينا إلى النادل.
+615	Ella rechazó mi regalo.	She refused my present.	رفضت هديتي.
+615	La empresa rechazó la propuesta.	The company rejected the proposal.	رفضت الشركة الاقتراح.
+616	¿Aceptan tarjetas en esta tienda?	Do you accept cards in this shop?	هل تقبلون البطاقات في هذا المتجر؟
+616	Acepté el nuevo trabajo.	I accepted the new job.	قبلت العمل الجديد.
+617	Imagina una casa cerca del mar.	Imagine a house by the sea.	تخيّل بيتًا قرب البحر.
+617	No puedo imaginar la vida sin música.	I can't imagine life without music.	لا أستطيع تخيّل الحياة بلا موسيقى.
+618	¡Adivina a quién vi hoy!	Guess who I saw today!	خمّن من رأيت اليوم!
+618	Nadie adivinó mi edad.	Nobody guessed my age.	لم يخمّن أحد عمري.
+619	¿Notaste algo raro en la casa?	Did you notice anything strange in the house?	هل لاحظت شيئًا غريبًا في البيت؟
+619	Noto que estás cansado.	I can see you're tired.	ألاحظ أنك متعب.
+620	No te reconocí con gafas.	I didn't recognise you with glasses.	لم أعرفك بالنظارة.
+620	¿Reconoces a esta mujer?	Do you recognise this woman?	هل تعرف هذه المرأة؟
+621	Perdóname, fue mi error.	Forgive me, it was my mistake.	سامحني، كان خطئي.
+621	Ella nunca lo perdonó.	She never forgave him.	لم تسامحه أبدًا.
+622	Puedes confiar en mí.	You can trust me.	يمكنك أن تثق بي.
+622	No confío en ese hombre.	I don't trust that man.	لا أثق بذلك الرجل.
+623	Prefiero el té al café.	I prefer tea to coffee.	أفضّل الشاي على القهوة.
+623	¿Qué color prefieres para el coche?	Which colour do you prefer for the car?	أيّ لون تفضّل للسيارة؟
+624	No importa, puedo esperar.	It doesn't matter, I can wait.	لا يهم، أستطيع الانتظار.
+624	Tu salud importa más que el dinero.	Your health matters more than money.	صحتك أهم من المال.
+625	Este bolso pertenece a mi hermana.	This bag belongs to my sister.	هذه الحقيبة لأختي.
+625	¿A quién pertenece este teléfono?	Who does this phone belong to?	لمن هذا الهاتف؟
+626	El precio incluye el desayuno.	The price includes breakfast.	السعر يشمل الفطور.
+626	¿Está incluida la propina?	Is the tip included?	هل البقشيش مشمول؟
+627	Todo depende del tiempo.	It all depends on the weather.	كل شيء يعتمد على الطقس.
+627	Los niños dependen de sus padres.	Children depend on their parents.	يعتمد الأطفال على والديهم.
+628	Compara los precios antes de comprar.	Compare the prices before buying.	قارن الأسعار قبل الشراء.
+628	No te compares con otras personas.	Don't compare yourself with other people.	لا تقارن نفسك بأشخاص آخرين.
+629	Tengo que entregar los deberes mañana.	I have to hand in the homework tomorrow.	يجب أن أسلّم الواجب غدًا.
+629	Entregaron la carta esta mañana.	They delivered the letter this morning.	سلّموا الرسالة هذا الصباح.
+630	Usa un sombrero para proteger la cabeza.	Wear a hat to protect your head.	البس قبعة لتحمي رأسك.
+630	Tenemos que proteger la naturaleza.	We have to protect nature.	يجب أن نحمي الطبيعة.
+631	No alcanzo la parte de arriba.	I can't reach the top.	لا أصل إلى الأعلى.
+631	Por fin alcanzamos el autobús.	We finally caught the bus.	لحقنا بالحافلة أخيرًا.
+632	La tienda redujo los precios.	The shop cut its prices.	خفّض المتجر الأسعار.
+632	Intenta reducir el azúcar.	Try to cut down on sugar.	حاول أن تقلّل السكر.
+633	El precio del pan aumentó otra vez.	The price of bread went up again.	ارتفع سعر الخبز مرة أخرى.
+633	Me aumentaron el sueldo este año.	They raised my salary this year.	زادوا راتبي هذا العام.
+634	Ella creó una empresa con su hermano.	She set up a company with her brother.	أسّست شركة مع أخيها.
+634	Quiero crear un juego para niños.	I want to create a game for children.	أريد أن أبتكر لعبة للأطفال.
+635	Practico español todos los días.	I practise Spanish every day.	أتمرّن على الإسبانية كل يوم.
+635	Necesitas practicar más cada día.	You need to practise more every day.	تحتاج إلى التمرّن أكثر كل يوم.
+636	¿Puedes resolver este problema?	Can you solve this problem?	هل تستطيع حلّ هذه المشكلة؟
+636	Lo resolvimos juntos en una hora.	We solved it together in an hour.	حللناه معًا في ساعة.
+637	Suspendí el examen de matemáticas.	I failed the maths exam.	رسبت في امتحان الرياضيات.
+637	Si no estudias, vas a suspender.	If you don't study, you'll fail.	إن لم تدرس سترسب.
+638	Logró terminar a tiempo.	She managed to finish on time.	تمكّنت من الإنهاء في الوقت.
+638	Hemos logrado mucho este año.	We've achieved a lot this year.	حقّقنا الكثير هذا العام.
+639	No me arrepiento de nada.	I don't regret anything.	لا أندم على شيء.
+639	Te vas a arrepentir.	You're going to regret it.	ستندم.
+640	Tu teléfono está sonando.	Your phone is ringing.	هاتفك يرنّ.
+640	Esa música me suena.	That music sounds familiar.	تلك الموسيقى مألوفة لي.
+641	Esta sopa huele muy bien.	This soup smells very good.	رائحة هذا الحساء طيبة جدًا.
+641	Me gusta oler el pan caliente.	I like the smell of warm bread.	أحب أن أشمّ الخبز الساخن.
+642	Cuelga el abrigo detrás de la puerta.	Hang your coat behind the door.	علّق معطفك خلف الباب.
+642	Colgué la foto en la pared.	I hung the photo on the wall.	علّقت الصورة على الجدار.
+643	Cuidado, te vas a quemar.	Careful, you'll burn yourself.	انتبه، ستحرق نفسك.
+643	Quemé el arroz otra vez.	I burnt the rice again.	أحرقت الأرز مرة أخرى.
+644	El agua ya hierve.	The water is already boiling.	الماء يغلي بالفعل.
+644	Hay que hervir los huevos diez minutos.	You have to boil the eggs for ten minutes.	يجب سلق البيض عشر دقائق.
+645	Mezcla los huevos con el azúcar.	Mix the eggs with the sugar.	اخلط البيض مع السكر.
+645	No mezcles la ropa blanca con la negra.	Don't mix white clothes with black ones.	لا تخلط الملابس البيضاء مع السوداء.
+646	Gasto mucho dinero en ropa.	I spend a lot of money on clothes.	أنفق مالًا كثيرًا على الملابس.
+646	No gastes el agua.	Don't waste water.	لا تهدر الماء.
+647	¿Puedes imprimir esta carta?	Can you print this letter?	هل تستطيع طباعة هذه الرسالة؟
+647	Imprimí los billetes en casa.	I printed the tickets at home.	طبعت التذاكر في البيت.
+648	Siéntate aquí y relájate un poco.	Sit here and relax a bit.	اجلس هنا واسترخِ قليلًا.
+648	Me relajo con música.	I relax with music.	أسترخي مع الموسيقى.
+649	¿Puedo sentarme aquí, por favor?	Can I sit here, please?	هل أستطيع الجلوس هنا من فضلك؟
+649	Nos sentamos cerca de la ventana.	We sat near the window.	جلسنا قرب النافذة.
+650	Me acuesto a las diez.	I go to bed at ten.	أذهب إلى السرير في العاشرة.
+650	Los niños se acostaron temprano.	The children went to bed early.	ذهب الأطفال إلى السرير مبكرًا.
+651	Quítate los zapatos, por favor.	Take off your shoes, please.	اخلع حذاءك من فضلك.
+651	¿Puedes quitar el bolso de la silla?	Can you take the bag off the chair?	هل تستطيع إزالة الحقيبة عن الكرسي؟
+652	Enciende la luz, está oscuro.	Turn on the light, it's dark.	أشعل الضوء، المكان مظلم.
+652	¿Puedo encender la televisión?	Can I turn on the TV?	هل أستطيع تشغيل التلفاز؟
+653	Apaga el teléfono en el cine.	Turn off your phone in the cinema.	أطفئ الهاتف في السينما.
+653	Apagué todas las luces.	I turned off all the lights.	أطفأت كل الأضواء.
+654	Mi hija pinta muy bien.	My daughter paints very well.	ابنتي ترسم جيدًا جدًا.
+654	Pintamos la habitación de azul.	We painted the room blue.	دهنّا الغرفة باللون الأزرق.
+655	El niño dibujó una casa y un árbol.	The boy drew a house and a tree.	رسم الولد بيتًا وشجرة.
+655	¿Me dibujas un mapa?	Will you draw me a map?	هل ترسم لي خريطة؟
+656	Firme aquí, por favor.	Sign here, please.	وقّع هنا من فضلك.
+656	Firmé el contrato ayer.	I signed the contract yesterday.	وقّعت العقد أمس.
+657	Conseguí un trabajo nuevo.	I got a new job.	حصلت على عمل جديد.
+657	No consigo dormir por la noche.	I can't manage to sleep at night.	لا أتمكّن من النوم في الليل.
+658	Guarda la leche en la nevera.	Keep the milk in the fridge.	احفظ الحليب في الثلاجة.
+658	Guardo las fotos en el ordenador.	I keep the photos on the computer.	أحتفظ بالصور في الحاسوب.
+659	Nos mudamos a un piso nuevo.	We moved to a new flat.	انتقلنا إلى شقة جديدة.
+659	Mi hermana se muda a Madrid.	My sister is moving to Madrid.	أختي تنتقل إلى مدريد.	Madrid
+660	Paseamos por la playa cada tarde.	We walk along the beach every afternoon.	نتنزّه على الشاطئ كل مساء.
+660	Me gusta pasear al perro.	I like walking the dog.	أحب أن أنزّه الكلب.
+661	Mi hijo aprende a montar en bicicleta.	My son is learning to ride a bike.	ابني يتعلّم ركوب الدراجة.
+661	Montamos a caballo en el campo.	We rode horses in the countryside.	ركبنا الخيل في الريف.
+662	No me mientas, por favor.	Please don't lie to me.	لا تكذب عليّ من فضلك.
+662	Creo que él miente.	I think he's lying.	أظن أنه يكذب.
+663	¿Te molesta la música?	Does the music bother you?	هل تزعجك الموسيقى؟
+663	Perdón, ¿le molesto un momento?	Sorry, may I bother you a moment?	عفوًا، هل أزعجك لحظة؟
+664	Me sorprendió su regalo.	His present surprised me.	فاجأتني هديته.
+664	Queremos sorprender a mamá con un regalo.	We want to surprise Mum with a present.	نريد أن نفاجئ أمي بهدية.
+665	Mi abuela cuida a los niños.	My grandmother looks after the children.	تعتني جدتي بالأطفال.
+665	Tienes que cuidar tu salud.	You have to look after your health.	يجب أن تعتني بصحتك.
+666	¿Me acompañas al médico?	Will you come with me to the doctor?	هل ترافقني إلى الطبيب؟
+666	Te acompaño a la estación.	I'll walk you to the station.	سأرافقك إلى المحطة.
+667	Avísame cuando llegues a casa.	Let me know when you get home.	أخبرني عندما تصل إلى البيت.
+667	Nadie me avisó del cambio.	Nobody told me about the change.	لم يخبرني أحد بالتغيير.
+668	Falta sal en la sopa.	The soup needs salt.	ينقص الحساء ملح.
+668	Faltan dos días para mi cumpleaños.	There are two days to go until my birthday.	بقي يومان على عيد ميلادي.
+669	El tren tarda dos horas.	The train takes two hours.	يستغرق القطار ساعتين.
+669	¿Cuánto tardas en llegar al trabajo?	How long does it take you to get to work?	كم تستغرق للوصول إلى العمل؟
+670	Suelo desayunar a las siete.	I usually have breakfast at seven.	عادةً أتناول الفطور في السابعة.
+670	Los domingos solemos comer con mis abuelos.	On Sundays we usually eat with my grandparents.	أيام الأحد عادةً نأكل مع جدّيّ.
+671	Dudo mucho de su historia.	I very much doubt his story.	أشكّ كثيرًا في قصته.
+671	No lo dudes, es una buena idea.	Don't doubt it, it's a good idea.	لا تشكّ، إنها فكرة جيدة.
+672	Mañana cumplo treinta años.	Tomorrow I turn thirty.	غدًا أبلغ الثلاثين.
+672	Mi hijo cumple diez años en mayo.	My son turns ten in May.	يبلغ ابني العاشرة في مايو.
+673	Disculpe, ¿dónde está la estación?	Excuse me, where is the station?	عفوًا، أين المحطة؟
+673	Disculpa, no te vi.	Sorry, I didn't see you.	آسف، لم أرك.
+674	En enero hace mucho frío aquí.	It's very cold here in January.	الجو بارد جدًا هنا في يناير.
+674	Mi nuevo trabajo empieza en enero.	My new job starts in January.	يبدأ عملي الجديد في يناير.
+675	Febrero es el mes más corto.	February is the shortest month.	فبراير أقصر شهر.
+675	En febrero fuimos a la montaña.	In February we went to the mountains.	في فبراير ذهبنا إلى الجبل.
+676	Mi cumpleaños es el treinta de marzo.	My birthday is on the thirtieth of March.	عيد ميلادي في الثلاثين من مارس.
+676	En marzo empieza la primavera.	Spring begins in March.	يبدأ الربيع في مارس.
+677	En abril llueve mucho.	It rains a lot in April.	تمطر كثيرًا في أبريل.
+677	Nos mudamos en abril.	We're moving in April.	سننتقل في أبريل.
+678	Los exámenes son en mayo.	The exams are in May.	الامتحانات في مايو.
+678	Mi hermana se casó en mayo.	My sister got married in May.	تزوجت أختي في مايو.
+679	Las clases terminan en junio.	Classes finish in June.	تنتهي الدروس في يونيو.
+679	En junio los días son muy largos.	In June the days are very long.	في يونيو الأيام طويلة جدًا.
+680	En julio vamos a la playa.	In July we go to the beach.	في يوليو نذهب إلى الشاطئ.
+680	En julio hace mucho calor aquí.	In July it's very hot here.	في يوليو الجو حارّ جدًا هنا.
+681	En agosto muchas tiendas cierran.	In August a lot of shops close.	في أغسطس تُغلق متاجر كثيرة.
+681	En agosto mis padres están con nosotros.	In August my parents are with us.	في أغسطس يكون والداي معنا.
+682	El curso empieza en septiembre.	The school year starts in September.	تبدأ السنة الدراسية في سبتمبر.
+682	Empecé la universidad en septiembre.	I started university in September.	بدأت الجامعة في سبتمبر.
+683	La reunión es el tres de octubre.	The meeting is on the third of October.	الاجتماع في الثالث من أكتوبر.
+683	En octubre los árboles cambian de color.	In October the trees change colour.	في أكتوبر تتغيّر ألوان الأشجار.
+684	En noviembre la noche llega pronto.	In November night comes early.	في نوفمبر يحلّ الليل مبكرًا.
+684	Tengo un examen el veinte de noviembre.	I have an exam on the twentieth of November.	عندي امتحان في العشرين من نوفمبر.
+685	En diciembre tenemos vacaciones.	We have holidays in December.	عندنا عطلة في ديسمبر.
+685	A veces hay nieve en diciembre.	Sometimes there's snow in December.	أحيانًا يكون هناك ثلج في ديسمبر.
+686	Vivimos en una zona tranquila.	We live in a quiet area.	نسكن في منطقة هادئة.
+686	Esta zona es famosa por su pescado.	This area is famous for its fish.	هذه المنطقة مشهورة بسمكها.
+687	El banco está al otro lado de la calle.	The bank is on the other side of the street.	المصرف على الجانب الآخر من الشارع.
+687	Siéntate a mi lado.	Sit next to me.	اجلس بجانبي.
+688	La farmacia está en la esquina.	The pharmacy is on the corner.	الصيدلية عند الناصية.
+688	Pon la silla en la esquina.	Put the chair in the corner.	ضع الكرسي في الزاوية.
+689	La tierra está mojada después de la lluvia.	The ground is wet after the rain.	الأرض مبلّلة بعد المطر.
+689	Mi abuelo trabaja la tierra.	My grandfather works the land.	جدي يفلح الأرض.
+690	Esta noche la luna está muy bonita.	The moon is very beautiful tonight.	القمر جميل جدًا الليلة.
+690	Mira la luna sobre el mar.	Look at the moon over the sea.	انظر إلى القمر فوق البحر.
+691	En el campo se ven muchas estrellas.	In the countryside you can see lots of stars.	في الريف تُرى نجوم كثيرة.
+691	Ella es una estrella de cine.	She's a film star.	إنها نجمة سينمائية.
+692	Hay nubes negras en el cielo.	There are dark clouds in the sky.	في السماء غيوم سوداء.
+692	El sol salió detrás de una nube.	The sun came out from behind a cloud.	خرجت الشمس من خلف غيمة.
+693	Pasamos una semana en una isla.	We spent a week on an island.	قضينا أسبوعًا في جزيرة.
+693	La isla tiene playas muy bonitas.	The island has very nice beaches.	في الجزيرة شواطئ جميلة جدًا.
+694	Nadamos en el lago.	We swam in the lake.	سبحنا في البحيرة.
+694	Hay un hotel pequeño cerca del lago.	There's a small hotel near the lake.	يوجد فندق صغير قرب البحيرة.
+695	Nuestra casa está en una colina.	Our house is on a hill.	بيتنا على تلّ.
+695	Subimos la colina detrás del pueblo.	We climbed the hill behind the village.	صعدنا التلّ خلف القرية.
+696	Mis abuelos viven en el campo.	My grandparents live in the countryside.	يعيش جدّاي في الريف.
+696	Los niños juegan en el campo.	The children play in the field.	يلعب الأطفال في الحقل.
+697	Hay muchos caminos en el bosque.	There are lots of paths in the forest.	في الغابة طرق كثيرة.
+697	Hay muchos animales en el bosque.	There are many animals in the forest.	في الغابة حيوانات كثيرة.
+698	Mi oficina está en ese edificio alto.	My office is in that tall building.	مكتبي في ذلك المبنى العالي.
+698	El edificio tiene diez pisos.	The building has ten floors.	في المبنى عشرة طوابق.
+699	Hay una iglesia antigua en el pueblo.	There's an old church in the village.	في القرية كنيسة قديمة.
+699	Se casaron en una iglesia pequeña.	They got married in a small church.	تزوّجا في كنيسة صغيرة.
+700	Compro la comida en el supermercado.	I buy food at the supermarket.	أشتري الطعام من السوبرماركت.
+700	El supermercado abre hasta las diez.	The supermarket is open until ten.	السوبرماركت مفتوح حتى العاشرة.
+701	¿Vamos al cine esta noche?	Shall we go to the cinema tonight?	هل نذهب إلى السينما الليلة؟
+701	El cine estaba lleno.	The cinema was full.	كانت السينما ممتلئة.
+702	Fuimos al teatro el sábado.	We went to the theatre on Saturday.	ذهبنا إلى المسرح يوم السبت.
+702	El teatro está al lado del museo.	The theatre is next to the museum.	المسرح بجانب المتحف.
+703	Voy al gimnasio después del trabajo.	I go to the gym after work.	أذهب إلى النادي الرياضي بعد العمل.
+703	El hotel tiene un gimnasio pequeño.	The hotel has a small gym.	في الفندق نادٍ رياضي صغير.
+704	Los niños están en la piscina.	The children are in the pool.	الأطفال في المسبح.
+704	¿El hotel tiene piscina?	Does the hotel have a pool?	هل في الفندق مسبح؟
+705	El estadio estaba lleno de gente.	The stadium was full of people.	كان الملعب ممتلئًا بالناس.
+705	Fuimos al estadio en metro.	We went to the stadium by metro.	ذهبنا إلى الملعب بالمترو.
+706	Mi hermano estudia en la universidad.	My brother studies at university.	يدرس أخي في الجامعة.
+706	Ella trabaja en la biblioteca de la universidad.	She works in the university library.	تعمل في مكتبة الجامعة.
+707	Nos vemos en la plaza a las seis.	See you in the square at six.	نلتقي في الساحة في السادسة.
+707	La plaza está llena de turistas.	The square is full of tourists.	الساحة مليئة بالسياح.
+708	Hay una mezquita muy antigua en Córdoba.	There's a very old mosque in Córdoba.	في قرطبة مسجد قديم جدًا.	Córdoba
+708	Mi padre va a la mezquita los viernes.	My father goes to the mosque on Fridays.	يذهب أبي إلى المسجد أيام الجمعة.
+709	¿Cuál es tu asignatura favorita?	What's your favourite subject?	ما مادتك المفضّلة؟
+709	Este año tengo seis asignaturas.	This year I have six subjects.	عندي هذا العام ست مواد.
+710	Hago un curso de español.	I'm doing a Spanish course.	أدرس دورة إسبانية.
+710	El curso dura seis semanas.	The course lasts six weeks.	تستمر الدورة ستة أسابيع.
+711	Le gusta mucho la ciencia.	She loves science.	تحب العلوم كثيرًا.
+711	Mi profesor de ciencias es muy divertido.	My science teacher is very funny.	معلم العلوم عندي مضحك جدًا.
+712	Las matemáticas son difíciles para mí.	Maths is hard for me.	الرياضيات صعبة عليّ.
+712	Mi padre me ayuda con las matemáticas.	My father helps me with maths.	يساعدني أبي في الرياضيات.
+713	Busca la palabra en el diccionario.	Look the word up in the dictionary.	ابحث عن الكلمة في القاموس.
+713	¿Me prestas tu diccionario?	Will you lend me your dictionary?	هل تعيرني قاموسك؟
+714	Tengo una buena nota en el examen.	I have a good mark in the exam.	عندي علامة جيدة في الامتحان.
+714	Te dejé una nota en la mesa.	I left you a note on the table.	تركت لك ملاحظة على الطاولة.
+715	¿Tienes mucha tarea hoy?	Do you have a lot of homework today?	هل عندك واجب كثير اليوم؟
+715	Limpiar la casa es una tarea aburrida.	Cleaning the house is a boring task.	تنظيف البيت مهمة مملّة.
+716	Me duele el cuello.	My neck hurts.	رقبتي تؤلمني.
+716	Tiene un cuello muy largo.	It has a very long neck.	لديه رقبة طويلة جدًا.
+717	Puso la mano en mi hombro.	He put his hand on my shoulder.	وضع يده على كتفي.
+717	Lleva el bolso en el hombro.	She carries the bag on her shoulder.	تحمل الحقيبة على كتفها.
+718	Me corté el dedo con un cuchillo.	I cut my finger with a knife.	جرحت إصبعي بسكين.
+718	Lleva un anillo en cada dedo.	She wears a ring on every finger.	تلبس خاتمًا في كل إصبع.
+719	Me duele la rodilla al correr.	My knee hurts when I run.	تؤلمني ركبتي عندما أركض.
+719	El niño se sentó en las rodillas de su padre.	The boy sat on his father's knees.	جلس الولد على ركبتي أبيه.
+720	Me duele el estómago.	I have a stomach ache.	معدتي تؤلمني.
+720	No es bueno nadar con el estómago lleno.	It isn't good to swim on a full stomach.	ليس جيدًا أن تسبح ومعدتك ممتلئة.
+721	Tengo tos y fiebre.	I have a cough and a fever.	عندي سعال وحمّى.
+721	Esta medicina es para la tos.	This medicine is for coughs.	هذا الدواء للسعال.
+722	Tengo un resfriado muy fuerte.	I have a very bad cold.	عندي زكام شديد.
+722	Tuve un resfriado en el viaje.	I had a cold on the trip.	أصبت بالزكام في الرحلة.
+723	Lleva una chaqueta, hace frío.	Take a jacket, it's cold.	خذ سترة، الجو بارد.
+723	Dejé la chaqueta en el restaurante.	I left my jacket at the restaurant.	نسيت سترتي في المطعم.
+724	Estos pantalones son muy largos.	These trousers are very long.	هذا البنطال طويل جدًا.
+724	Llevo pantalones negros y camisa blanca.	I'm wearing black trousers and a white shirt.	ألبس بنطالًا أسود وقميصًا أبيض.
+725	Se compró una falda roja.	She bought herself a red skirt.	اشترت لنفسها تنورة حمراء.
+725	Esta falda es demasiado corta.	This skirt is too short.	هذه التنورة قصيرة جدًا.
+726	Mi abuela me hizo un jersey.	My grandmother made me a sweater.	صنعت لي جدتي كنزة.
+726	Hace frío, necesitas un jersey.	It's cold, you need a sweater.	الجو بارد، تحتاج إلى كنزة.
+727	Lleva sombrero en la playa.	Wear a hat on the beach.	البس قبعة على الشاطئ.
+727	Se quitó el sombrero al entrar.	He took off his hat when he came in.	خلع قبعته عندما دخل.
+728	Lleva paraguas, va a llover.	Take an umbrella, it's going to rain.	خذ مظلّة، ستمطر.
+728	Olvidé el paraguas en el autobús.	I forgot my umbrella on the bus.	نسيت مظلتي في الحافلة.
+729	Perdí la cartera en el mercado.	I lost my wallet at the market.	فقدت محفظتي في السوق.
+729	No tengo dinero en la cartera.	I have no money in my wallet.	لا يوجد مال في محفظتي.
+730	Hice esta foto con mi cámara nueva.	I took this photo with my new camera.	التقطت هذه الصورة بكاميرتي الجديدة.
+730	No olvides la cámara.	Don't forget the camera.	لا تنسَ الكاميرا.
+731	No encuentro mis calcetines.	I can't find my socks.	لا أجد جواربي.
+731	Los calcetines están en la cama.	The socks are on the bed.	الجوارب على السرير.
+732	Le regaló un anillo muy bonito.	He gave her a very pretty ring.	أهداها خاتمًا جميلًا جدًا.
+732	Perdí mi anillo en la playa.	I lost my ring on the beach.	فقدت خاتمي على الشاطئ.
+733	Hoy hay pollo con patatas.	Today there's chicken with potatoes.	اليوم يوجد دجاج مع البطاطا.
+733	Las patatas están muy calientes.	The potatoes are very hot.	البطاطا ساخنة جدًا.
+734	Necesito tomates para la ensalada.	I need tomatoes for the salad.	أحتاج طماطم للسلطة.
+734	Estos tomates son muy frescos.	These tomatoes are very fresh.	هذه الطماطم طازجة جدًا.
+735	Quiero una ensalada para comer.	I'd like a salad for lunch.	أريد سلطة على الغداء.
+735	La ensalada lleva tomate y queso.	The salad has tomato and cheese in it.	في السلطة طماطم وجبن.
+736	Me hice un bocadillo de queso.	I made myself a cheese sandwich.	صنعت لنفسي شطيرة جبن.
+736	Un bocadillo de pollo, por favor.	A chicken sandwich, please.	شطيرة دجاج من فضلك.
+737	¿Pedimos una pizza esta noche?	Shall we order a pizza tonight?	هل نطلب بيتزا الليلة؟
+737	A los niños les gusta mucho la pizza.	The kids love pizza.	يحب الأطفال البيتزا كثيرًا.
+738	Cenamos pasta con tomate.	We had pasta with tomato for dinner.	تعشّينا معكرونة بالطماطم.
+738	Esta pasta está deliciosa.	This pasta is delicious.	هذه المعكرونة لذيذة.
+739	Me gusta mucho el pastel de chocolate.	I love chocolate cake.	أحب كعكة الشوكولاتة كثيرًا.
+739	No comas mucho chocolate.	Don't eat a lot of chocolate.	لا تأكل الكثير من الشوكولاتة.
+740	Bebo zumo de naranja cada mañana.	I drink orange juice every morning.	أشرب عصير البرتقال كل صباح.
+740	Las naranjas están baratas hoy.	Oranges are cheap today.	البرتقال رخيص اليوم.
+741	Como un plátano en el desayuno.	I eat a banana at breakfast.	آكل موزة في الفطور.
+741	Estos plátanos todavía están verdes.	These bananas are still green.	هذا الموز ما زال أخضر.
+742	Un té con limón, por favor.	A tea with lemon, please.	شاي بالليمون من فضلك.
+742	Necesito dos limones para la comida.	I need two lemons for the meal.	أحتاج ليمونتين للطعام.
+743	¿Me da una botella de agua?	Can I have a bottle of water?	هل تعطيني زجاجة ماء؟
+743	Pon las botellas en la nevera.	Put the bottles in the fridge.	ضع الزجاجات في الثلاجة.
+744	Los niños quieren un helado.	The children want an ice cream.	يريد الأطفال بوظة.
+744	De postre tomamos helado.	We had ice cream for dessert.	تناولنا البوظة كحلوى.
+745	Cuidado con ese cuchillo.	Careful with that knife.	انتبه لتلك السكين.
+745	Pon los cuchillos y los tenedores en la mesa.	Put the knives and forks on the table.	ضع السكاكين والشوك على الطاولة.
+746	Alquilamos un apartamento cerca de la playa.	We rented an apartment near the beach.	استأجرنا شقة قرب الشاطئ.
+746	El apartamento tiene dos dormitorios.	The apartment has two bedrooms.	في الشقة غرفتا نوم.
+747	Sube por la escalera al segundo piso.	Go up the stairs to the second floor.	اصعد الدرج إلى الطابق الثاني.
+747	Se cayó por la escalera.	He fell down the stairs.	سقط على الدرج.
+748	Hay un gato en el techo.	There's a cat on the roof.	هناك قطة على السطح.
+748	El techo de la cocina es muy alto.	The kitchen ceiling is very high.	سقف المطبخ عالٍ جدًا.
+749	La leche está en la nevera.	The milk is in the fridge.	الحليب في الثلاجة.
+749	La nevera está vacía otra vez.	The fridge is empty again.	الثلاجة فارغة مرة أخرى.
+750	Me doy una ducha cada mañana.	I have a shower every morning.	أستحمّ كل صباح.
+750	La ducha está en el baño de arriba.	The shower is in the upstairs bathroom.	الدُش في الحمّام العلوي.
+751	Se miró en el espejo.	She looked at herself in the mirror.	نظرت إلى نفسها في المرآة.
+751	Hay un espejo grande en el baño.	There's a big mirror in the bathroom.	في الحمّام مرآة كبيرة.
+752	Mi ropa está en el armario.	My clothes are in the wardrobe.	ملابسي في الخزانة.
+752	Pon los platos en el armario.	Put the plates in the cupboard.	ضع الصحون في الخزانة.
+753	Desayunamos en el balcón.	We have breakfast on the balcony.	نتناول الفطور في الشرفة.
+753	El piso tiene un balcón cerca del mar.	The flat has a balcony near the sea.	في الشقة شرفة قريبة من البحر.
+754	Ese chico es mi primo.	That boy is my cousin.	ذلك الفتى ابن عمي.
+754	Los chicos juegan a la pelota en el parque.	The boys play ball in the park.	يلعب الشباب بالكرة في الحديقة.
+755	La chica de la tienda es muy amable.	The girl in the shop is very nice.	البنت في المتجر لطيفة جدًا.
+755	Hay diez chicas en mi clase.	There are ten girls in my class.	في صفي عشر بنات.
+756	Son una pareja muy feliz.	They're a very happy couple.	إنهما زوجان سعيدان جدًا.
+756	Vino a la fiesta con su pareja.	He came to the party with his partner.	جاء إلى الحفلة مع شريكته.
+757	Mi hermana tiene un novio nuevo.	My sister has a new boyfriend.	لأختي حبيب جديد.
+757	El novio llegó tarde a la boda.	The groom arrived late for the wedding.	وصل العريس متأخرًا إلى العرس.
+758	Esta es mi novia, Ana.	This is my girlfriend, Ana.	هذه حبيبتي آنا.	Ana
+758	La novia lleva un vestido blanco.	The bride is wearing a white dress.	تلبس العروس فستانًا أبيض.
+759	El señor García es nuestro vecino.	Mr García is our neighbour.	السيد غارسيا جارنا.	García
+759	Un señor te espera fuera.	A man is waiting for you outside.	رجل ينتظرك في الخارج.
+760	La señora López es mi profesora.	Mrs López is my teacher.	السيدة لوبيث معلمتي.	López
+760	Una señora me preguntó la hora.	A lady asked me the time.	سألتني سيدة عن الوقت.
+761	El dueño del restaurante es muy simpático.	The restaurant owner is very friendly.	صاحب المطعم لطيف جدًا.
+761	¿Quién es el dueño de este perro?	Who's the owner of this dog?	من صاحب هذا الكلب؟
+762	Mi hermano es ingeniero.	My brother is an engineer.	أخي مهندس.
+762	Quiero ser ingeniero como mi padre.	I want to be an engineer like my father.	أريد أن أصبح مهندسًا مثل أبي.
+763	La enfermera me dio la medicina.	The nurse gave me the medicine.	أعطتني الممرّضة الدواء.
+763	Mi tío es enfermero en un hospital.	My uncle is a nurse in a hospital.	عمي ممرّض في مستشفى.
+764	Necesito hablar con un abogado.	I need to talk to a lawyer.	أحتاج إلى التحدث مع محامٍ.
+764	Su madre es abogada.	His mother is a lawyer.	أمه محامية.
+765	Es mi cantante favorito.	He's my favourite singer.	إنه مغنّيّ المفضّل.
+765	La cantante tiene una voz maravillosa.	The singer has a wonderful voice.	للمغنية صوت رائع.
+766	Es un escritor muy famoso.	He's a very famous writer.	إنه كاتب مشهور جدًا.
+766	Mi hija quiere ser escritora.	My daughter wants to be a writer.	ابنتي تريد أن تصبح كاتبة.
+767	En verano la ciudad está llena de turistas.	In summer the city is full of tourists.	في الصيف المدينة مليئة بالسياح.
+767	¿Eres turista o vives aquí?	Are you a tourist or do you live here?	هل أنت سائح أم تعيش هنا؟
+768	Los pasajeros esperan en el andén.	The passengers are waiting on the platform.	الركاب ينتظرون على الرصيف.
+768	El autobús iba lleno de pasajeros.	The bus was full of passengers.	كانت الحافلة مليئة بالركاب.
+769	¿Tienes experiencia en este trabajo?	Do you have experience in this job?	هل عندك خبرة في هذا العمل؟
+769	Fue una experiencia maravillosa.	It was a wonderful experience.	كانت تجربة رائعة.
+770	Es una gran oportunidad para ti.	It's a great opportunity for you.	إنها فرصة عظيمة لك.
+770	No tuve la oportunidad de ver a mi abuela.	I didn't get the chance to see my grandmother.	لم تسنح لي الفرصة لرؤية جدتي.
+771	El plazo termina el viernes.	The deadline is Friday.	تنتهي المهلة يوم الجمعة.
+771	Terminamos antes del plazo.	We finished before the deadline.	أنهينا قبل الموعد النهائي.
+772	El presupuesto llegó ayer.	The quote arrived yesterday.	وصل عرض السعر أمس.
+772	No tenemos presupuesto para un coche nuevo.	We don't have the budget for a new car.	ليست لدينا ميزانية لسيارة جديدة.
+773	Me gusta tu propuesta.	I like your proposal.	يعجبني اقتراحك.
+773	La empresa aceptó nuestra propuesta.	The company accepted our proposal.	قبلت الشركة اقتراحنا.
+774	Lee el contrato antes de firmar.	Read the contract before signing.	اقرأ العقد قبل التوقيع.
+774	Mi contrato termina en junio.	My contract ends in June.	ينتهي عقدي في يونيو.
+775	Necesitamos un préstamo para la casa.	We need a loan for the house.	نحتاج إلى قرض للبيت.
+775	El banco le dio un préstamo.	The bank gave him a loan.	أعطاه المصرف قرضًا.
+776	No tengo fuerza para caminar.	I don't have the strength to walk.	ليست لديّ قوة للمشي.
+776	Empujó la puerta con fuerza.	He pushed the door hard.	دفع الباب بقوة.
+777	¿Te puedo dar un consejo?	Can I give you some advice?	هل أستطيع أن أعطيك نصيحة؟
+777	Gracias por tus consejos.	Thanks for your advice.	شكرًا على نصائحك.
+778	Necesito información sobre los trenes.	I need information about the trains.	أحتاج معلومات عن القطارات.
+778	¿Dónde puedo encontrar más información?	Where can I find more information?	أين أجد معلومات أكثر؟
+779	Tiene muchos conocimientos de historia.	He knows a lot about history.	لديه معرفة كبيرة بالتاريخ.
+779	El conocimiento es muy importante.	Knowledge is very important.	المعرفة مهمة جدًا.
+780	La educación es muy importante en mi familia.	Education is very important in my family.	التعليم مهم جدًا في عائلتي.
+780	Mis padres me dieron una buena educación.	My parents gave me a good education.	منحني والداي تعليمًا جيدًا.
+781	No tengo energía para cocinar.	I don't have the energy to cook.	ليست لديّ طاقة للطبخ.
+781	¡Los niños tienen mucha energía!	Children have so much energy!	عند الأطفال طاقة كبيرة!
+782	Me gusta mucho pasear por la naturaleza.	I love walking in nature.	أحب التنزّه في الطبيعة.
+782	Tenemos que cuidar la naturaleza.	We have to look after nature.	يجب أن نعتني بالطبيعة.
+783	Me gusta mucho la cultura de España.	I really like Spanish culture.	تعجبني ثقافة إسبانيا كثيرًا.	España
+783	Cada país tiene su cultura.	Every country has its own culture.	لكل بلد ثقافته.
+784	Es una tradición de mi familia.	It's a family tradition.	إنها تقليد في عائلتي.
+784	Me gustan las tradiciones de este pueblo.	I like this village's traditions.	تعجبني تقاليد هذه القرية.
+785	¿Hay internet en el hotel?	Is there internet in the hotel?	هل يوجد إنترنت في الفندق؟
+785	Busqué la información en internet.	I looked up the information on the internet.	بحثت عن المعلومات على الإنترنت.
+786	¿Cuál es la contraseña del wifi?	What's the wifi password?	ما كلمة مرور الواي فاي؟	wifi
+786	Olvidé mi contraseña otra vez.	I forgot my password again.	نسيت كلمة المرور مرة أخرى.
+787	Hice una lista de la compra.	I made a shopping list.	كتبت قائمة مشتريات.
+787	¿Está mi nombre en la lista?	Is my name on the list?	هل اسمي في القائمة؟
+788	¿Me puedes dar un ejemplo?	Can you give me an example?	هل تعطيني مثالًا؟
+788	Lee primero el ejemplo.	Read the example first.	اقرأ المثال أولًا.
+789	Los resultados salen en julio.	The results come out in July.	تصدر النتائج في يوليو.
+789	Estamos contentos con el resultado.	We're happy with the result.	نحن راضون عن النتيجة.
+790	¿Cuál es la diferencia?	What's the difference?	ما الفرق؟
+790	No veo ninguna diferencia.	I don't see any difference.	لا أرى أيّ فرق.
+791	No tienes otra opción.	You have no other option.	ليس لديك خيار آخر.
+791	Hay dos opciones para ir al centro.	There are two ways of getting to the centre.	هناك خياران للذهاب إلى المركز.
+792	Fue una decisión difícil.	It was a hard decision.	كان قرارًا صعبًا.
+792	Necesitamos una decisión antes del lunes.	We need a decision before Monday.	نحتاج إلى قرار قبل الاثنين.
+793	¿Cuál es tu opinión?	What's your opinion?	ما رأيك؟
+793	En mi opinión, tiene razón.	In my opinion, he's right.	برأيي هو على حق.
+794	No habla de sus sentimientos.	He doesn't talk about his feelings.	لا يتكلم عن مشاعره.
+794	Es un sentimiento muy bonito.	It's a lovely feeling.	إنه شعور جميل جدًا.
+795	La fiesta fue un gran éxito.	The party was a great success.	كانت الحفلة نجاحًا كبيرًا.
+795	¡Te deseo mucho éxito!	I wish you every success!	أتمنى لك نجاحًا كبيرًا!
+796	Tiene un buen sueldo.	He has a good salary.	عنده راتب جيد.
+796	Recibo el sueldo cada mes.	I get my salary every month.	أتقاضى راتبي كل شهر.
+797	Tengo que pagar la factura de la luz.	I have to pay the electricity bill.	يجب أن أدفع فاتورة الكهرباء.
+797	¿Me da una factura, por favor?	Can I have an invoice, please?	هل تعطيني فاتورة من فضلك؟
+798	¿Puedo pagar en efectivo?	Can I pay in cash?	هل أستطيع الدفع نقدًا؟
+798	Hoy no llevo efectivo.	I don't have any cash on me today.	ليس معي نقد اليوم.
+799	Leí una revista en el avión.	I read a magazine on the plane.	قرأت مجلة في الطائرة.
+799	Compra esta revista cada semana.	She buys this magazine every week.	تشتري هذه المجلة كل أسبوع.
+800	Mi padre lee el periódico cada mañana.	My father reads the newspaper every morning.	يقرأ أبي الجريدة كل صباح.
+800	Lo leí en el periódico.	I read it in the newspaper.	قرأته في الجريدة.
+801	El sábado vamos a una boda.	On Saturday we're going to a wedding.	يوم السبت سنذهب إلى عرس.
+801	La boda fue en el campo.	The wedding was in the countryside.	كان العرس في الريف.
+802	Nuestro vuelo sale a las diez.	Our flight leaves at ten.	تقلع رحلتنا في العاشرة.
+802	El vuelo llegó con retraso.	The flight arrived late.	وصلت الرحلة متأخرة.
+803	No olvides el pasaporte.	Don't forget your passport.	لا تنسَ جواز سفرك.
+803	¿Me enseña su pasaporte, por favor?	Can you show me your passport, please?	هل تريني جواز سفرك من فضلك؟
+804	La salida está a la derecha.	The exit is on the right.	المخرج على اليمين.
+804	¿A qué hora es la salida del tren?	What time does the train leave?	متى موعد مغادرة القطار؟
+805	El tren tiene una hora de retraso.	The train is an hour late.	القطار متأخر ساعة.
+805	Perdón por el retraso.	Sorry for the delay.	آسف على التأخير.
+806	Tengo una reserva para dos noches.	I have a reservation for two nights.	عندي حجز لليلتين.
+806	¿Tiene usted reserva para esta noche?	Do you have a reservation for tonight?	هل لديك حجز لهذه الليلة؟
+807	El tren sale del andén cuatro.	The train leaves from platform four.	يغادر القطار من الرصيف الرابع.
+807	Esperamos en el andén una hora.	We waited on the platform for an hour.	انتظرنا على الرصيف ساعة.
+808	Compré un recuerdo para mi madre.	I bought a souvenir for my mother.	اشتريت تذكارًا لأمي.
+808	Tengo muy buenos recuerdos de ese viaje.	I have very good memories of that trip.	لديّ ذكريات جميلة جدًا عن تلك الرحلة.
+809	¿Dónde está la embajada?	Where is the embassy?	أين السفارة؟
+809	Mañana tengo que ir a la embajada.	Tomorrow I have to go to the embassy.	غدًا يجب أن أذهب إلى السفارة.
+810	Dejamos propina al camarero.	We left the waiter a tip.	تركنا بقشيشًا للنادل.
+810	¿Está incluida la propina en la cuenta?	Is the tip included in the bill?	هل البقشيش مشمول في الحساب؟
+811	Deja la llave en la recepción.	Leave the key at reception.	اترك المفتاح في الاستقبال.
+811	Pregunta en la recepción del hotel.	Ask at the hotel reception.	اسأل في استقبال الفندق.
+812	¿Dónde está la parada de autobús?	Where's the bus stop?	أين موقف الحافلات؟
+812	Tienes que bajar en la próxima parada.	You have to get off at the next stop.	يجب أن تنزل في الموقف القادم.
+813	¿Cuál es el horario del museo?	What are the museum's opening hours?	ما مواعيد المتحف؟
+813	Mira el horario de los trenes.	Look at the train timetable.	انظر إلى جدول القطارات.
+814	Compré dos entradas para el cine.	I bought two cinema tickets.	اشتريت تذكرتين للسينما.
+814	Te espero en la entrada del museo.	I'll wait for you at the museum entrance.	سأنتظرك عند مدخل المتحف.
+815	Escribe cinco frases sobre tu familia.	Write five sentences about your family.	اكتب خمس جمل عن عائلتك.
+815	No entiendo esta frase.	I don't understand this sentence.	لا أفهم هذه الجملة.
+816	Tiene una voz muy bonita.	She has a very lovely voice.	لها صوت جميل جدًا.
+816	Habla en voz baja, por favor.	Speak quietly, please.	تكلّم بصوت منخفض من فضلك.
+817	¿Qué es ese ruido?	What's that noise?	ما ذلك الضجيج؟
+817	Hay mucho ruido en la calle.	There's a lot of noise in the street.	في الشارع ضجيج كثير.
+818	Me gusta mucho el sonido del mar.	I love the sound of the sea.	أحب صوت البحر.
+818	Baja el sonido, por favor.	Turn the sound down, please.	اخفض الصوت من فضلك.
+819	Hoy la temperatura es muy alta.	The temperature is very high today.	درجة الحرارة مرتفعة جدًا اليوم.
+819	La enfermera me tomó la temperatura.	The nurse took my temperature.	قاست الممرّضة حرارتي.
+820	¿Cuál es tu dirección?	What's your address?	ما عنوانك؟
+820	Vamos en la otra dirección.	We're going in the other direction.	نسير في الاتجاه الآخر.
+821	Tengo miedo de los perros.	I'm afraid of dogs.	أخاف من الكلاب.
+821	No tengas miedo del perro.	Don't be afraid of the dog.	لا تخف من الكلب.
+822	Hoy tengo mucho sueño.	I'm very sleepy today.	أشعر بنعاس شديد اليوم.
+822	Mi sueño es viajar por el mundo.	My dream is to travel the world.	حلمي أن أسافر حول العالم.
+823	Necesito un poco de paz.	I need a bit of peace.	أحتاج إلى قليل من الهدوء.
+823	Queremos vivir en paz.	We want to live in peace.	نريد أن نعيش بسلام.
+824	El amor es lo más importante.	Love is the most important thing.	الحبّ أهم شيء.
+824	Es una película de amor.	It's a love film.	إنه فيلم رومانسي.
+825	Tengo prisa, hablamos luego.	I'm in a hurry, we'll talk later.	أنا مستعجل، نتكلم لاحقًا.
+825	No hay prisa, tenemos tiempo.	There's no hurry, we have time.	لا داعي للعجلة، لدينا وقت.
+826	En casa comemos a mediodía.	At home we eat at midday.	في البيت نأكل عند الظهر.
+826	Te llamo al mediodía.	I'll call you at midday.	سأتصل بك عند الظهر.
+827	La fiesta terminó a medianoche.	The party finished at midnight.	انتهت الحفلة في منتصف الليل.
+827	Me acosté después de medianoche.	I went to bed after midnight.	ذهبت إلى السرير بعد منتصف الليل.
+828	Hay un cuadro bonito en la pared.	There's a nice painting on the wall.	هناك لوحة جميلة على الجدار.
+828	Este cuadro es muy famoso.	This painting is very famous.	هذه اللوحة مشهورة جدًا.
+829	Es un sitio muy bonito.	It's a very nice place.	إنه مكان جميل جدًا.
+829	¿Hay sitio para mí?	Is there room for me?	هل يوجد مكان لي؟
+830	Mi abuela tiene diez nietos.	My grandmother has ten grandchildren.	لجدتي عشرة أحفاد.
+830	Mi nieta tiene cinco años.	My granddaughter is five years old.	حفيدتي عمرها خمس سنوات.
+831	¿Quieres hielo en el agua?	Do you want ice in your water?	هل تريد ثلجًا في الماء؟
+831	Hay hielo en la calle, cuidado.	There's ice on the street, be careful.	يوجد جليد في الشارع، انتبه.
+832	Esta cama es muy suave.	This bed is very soft.	هذا السرير ناعم جدًا.
+832	Tiene una voz muy suave.	She has a very soft voice.	صوتها ناعم جدًا.
+833	Este restaurante es muy ruidoso.	This restaurant is very noisy.	هذا المطعم صاخب جدًا.
+833	Mis vecinos son muy ruidosos.	My neighbours are very noisy.	جيراني صاخبون جدًا.
+834	Compramos pescado fresco en el mercado.	We bought fresh fish at the market.	اشترينا سمكًا طازجًا من السوق.
+834	Por la noche hace fresco.	It's cool at night.	الجو منعش في الليل.
+835	Este pastel es muy dulce.	This cake is very sweet.	هذه الكعكة حلوة جدًا.
+835	No me gustan las cosas dulces.	I don't like sweet things.	لا أحب الأشياء الحلوة.
+836	La sopa está muy salada.	The soup is very salty.	الحساء مالح جدًا.
+836	El agua del mar es salada.	Sea water is salty.	ماء البحر مالح.
+837	¿La comida es picante?	Is the food spicy?	هل الطعام حارّ؟
+837	No me gusta la comida picante.	I don't like spicy food.	لا أحب الطعام الحارّ.
+838	Mi hermano es alto y delgado.	My brother is tall and thin.	أخي طويل ونحيف.
+838	Ella está más delgada ahora.	She's thinner now.	هي أنحف الآن.
+839	Nuestro gato está muy gordo.	Our cat is very fat.	قطتنا سمينة جدًا.
+839	Comer mucho azúcar te pone gordo.	Eating a lot of sugar makes you fat.	أكل كثير من السكر يجعلك سمينًا.
+840	Ese edificio es muy feo.	That building is very ugly.	ذلك المبنى قبيح جدًا.
+840	El tiempo está feo hoy.	The weather is horrible today.	الطقس سيئ اليوم.
+841	Es una chica muy inteligente.	She's a very intelligent girl.	إنها فتاة ذكية جدًا.
+841	Los perros son animales inteligentes.	Dogs are intelligent animals.	الكلاب حيوانات ذكية.
+842	No seas tonto, ven con nosotros.	Don't be silly, come with us.	لا تكن سخيفًا، تعال معنا.
+842	Fue un error tonto.	It was a silly mistake.	كان خطأً سخيفًا.
+843	Sus hijos son muy educados.	Her children are very polite.	أولادها مهذّبون جدًا.
+843	Sé educado con los clientes.	Be polite to the customers.	كن مهذّبًا مع الزبائن.
+844	Para ser sincero, no me gusta.	To be honest, I don't like it.	بصراحة، لا يعجبني.
+844	Es una persona muy sincera.	She's a very honest person.	إنها شخص صادق جدًا.
+845	Mi hermana es muy valiente.	My sister is very brave.	أختي شجاعة جدًا.
+845	Fue una decisión valiente.	It was a brave decision.	كان قرارًا شجاعًا.
+846	De niño era muy tímido.	As a child he was very shy.	كان خجولًا جدًا في صغره.
+846	No seas tímida, habla.	Don't be shy, speak.	لا تخجلي، تكلّمي.
+847	Estoy nervioso por el examen.	I'm nervous about the exam.	أنا متوتّر بسبب الامتحان.
+847	Se pone nerviosa en el avión.	She gets nervous on planes.	تتوتّر في الطائرة.
+848	Mi padre estaba muy sorprendido.	My father was very surprised.	كان أبي متفاجئًا جدًا.
+848	Ella me miró muy sorprendida.	She looked at me in great surprise.	نظرت إليّ متفاجئة جدًا.
+849	Estoy muy orgulloso de ti.	I'm very proud of you.	أنا فخور بك جدًا.
+849	Sus padres están orgullosos de ella.	Her parents are proud of her.	والداها فخوران بها.
+850	La fruta es muy sana.	Fruit is very healthy.	الفاكهة صحية جدًا.
+850	Mi abuelo está sano y fuerte.	My grandfather is healthy and strong.	جدي بصحة جيدة وقوي.
+851	El pájaro todavía está vivo.	The bird is still alive.	الطائر ما زال حيًّا.
+851	Es una ciudad muy viva.	It's a very lively city.	إنها مدينة نابضة بالحياة.
+852	El árbol está muerto.	The tree is dead.	الشجرة ميّتة.
+852	Encontramos un pájaro muerto en el jardín.	We found a dead bird in the garden.	وجدنا طائرًا ميّتًا في الحديقة.
+853	Mi hermano todavía está soltero.	My brother is still single.	أخي ما زال أعزب.
+853	¿Estás casado o soltero?	Are you married or single?	هل أنت متزوّج أم أعزب؟
+854	Este restaurante es muy popular.	This restaurant is very popular.	هذا المطعم مشهور جدًا.
+854	El deporte es muy popular en España.	Sport is very popular in Spain.	الرياضة شائعة جدًا في إسبانيا.	España
+855	Viven en un piso moderno.	They live in a modern flat.	يسكنون في شقة حديثة.
+855	Me gusta la música moderna.	I like modern music.	أحب الموسيقى الحديثة.
+856	Es un edificio muy antiguo.	It's a very old building.	إنه مبنى قديم جدًا.
+856	Visitamos la parte antigua de la ciudad.	We visited the old part of the city.	زرنا الجزء القديم من المدينة.
+857	Es un plato tradicional de la zona.	It's a traditional local dish.	إنه طبق تقليدي في المنطقة.
+857	La novia lleva ropa tradicional.	The bride is wearing traditional clothes.	تلبس العروس ملابس تقليدية.
+858	Es normal estar nervioso.	It's normal to be nervous.	من الطبيعي أن تكون متوتّرًا.
+858	Hoy es un día normal.	Today is a normal day.	اليوم يوم عادي.
+859	Hay un ruido extraño en la casa.	There's a strange noise in the house.	هناك ضجيج غريب في البيت.
+859	Es extraño, nunca llega tarde.	It's strange, he's never late.	غريب، إنه لا يتأخر أبدًا.
+860	Es un nombre muy común.	It's a very common name.	إنه اسم شائع جدًا.
+860	Tenemos mucho en común.	We have a lot in common.	لدينا الكثير من القواسم المشتركة.
+861	Es un parque público.	It's a public park.	إنها حديقة عامة.
+861	El autobús público es barato aquí.	The public bus is cheap here.	الحافلة العامة رخيصة هنا.
+862	Esta playa es privada.	This beach is private.	هذا الشاطئ خاص.
+862	Estudia en una escuela privada.	She studies at a private school.	تدرس في مدرسة خاصة.
+863	La calle principal está llena de tiendas.	The main street is full of shops.	الشارع الرئيسي مليء بالمتاجر.
+863	¿Cuál es el problema principal?	What's the main problem?	ما المشكلة الرئيسية؟
+864	Me gusta la comida natural.	I like natural food.	أحب الطعام الطبيعي.
+864	Es natural tener miedo.	It's natural to be afraid.	من الطبيعي أن تخاف.
+865	¿Es necesario reservar una mesa?	Is it necessary to book a table?	هل من الضروري حجز طاولة؟
+865	Lleva solo lo necesario.	Take only what is necessary.	خذ فقط ما هو ضروري.
+866	¿Hay habitaciones disponibles para hoy?	Are there rooms available for today?	هل توجد غرف متاحة لليوم؟
+866	El médico no está disponible hoy.	The doctor isn't available today.	الطبيب غير متاح اليوم.
+867	Este mapa es muy útil.	This map is very useful.	هذه الخريطة مفيدة جدًا.
+867	Gracias por los consejos útiles.	Thanks for the useful advice.	شكرًا على النصائح المفيدة.
+868	¿Es correcta esta palabra?	Is this word correct?	هل هذه الكلمة صحيحة؟
+868	Elige la palabra correcta.	Choose the correct word.	اختر الكلمة الصحيحة.
+869	Nuestras casas son muy parecidas.	Our houses are very similar.	بيوتنا متشابهة جدًا.
+869	Tengo un bolso parecido.	I have a similar bag.	عندي حقيبة مشابهة.
+870	¿Eres capaz de terminar hoy?	Are you able to finish today?	هل أنت قادر على الإنهاء اليوم؟
+870	Ella es capaz de todo.	She's capable of anything.	إنها قادرة على كل شيء.
+871	Soy vegetariano, no como carne.	I'm vegetarian, I don't eat meat.	أنا نباتي، لا آكل اللحم.
+871	¿Tienen platos vegetarianos hoy?	Do you have vegetarian dishes today?	هل لديكم أطباق نباتية اليوم؟
+872	Siga todo recto hasta la plaza.	Go straight on as far as the square.	امشِ مستقيمًا حتى الساحة.
+872	La calle es larga y recta.	The street is long and straight.	الشارع طويل ومستقيم.
+873	Encantado, me llamo Pablo.	Pleased to meet you, I'm Pablo.	تشرّفنا، اسمي بابلو.	Pablo
+873	Estoy encantada con el regalo.	I'm delighted with the present.	أنا مسرورة جدًا بالهدية.
+874	Tiene el pelo corto.	She has short hair.	شعرها قصير.
+874	Fue un viaje muy corto.	It was a very short trip.	كانت رحلة قصيرة جدًا.
+875	Es una persona muy alegre.	He's a very cheerful person.	إنه شخص مرح جدًا.
+875	Me gusta la música alegre.	I like cheerful music.	أحب الموسيقى المرحة.
+876	¿Lo dices en serio?	Are you serious?	هل أنت جادّ؟
+876	Es un problema muy serio.	It's a very serious problem.	إنها مشكلة خطيرة جدًا.
+877	Tu hermano es muy gracioso.	Your brother is very funny.	أخوك مضحك جدًا.
+877	Eso no es nada gracioso.	That isn't funny at all.	هذا ليس مضحكًا على الإطلاق.
+878	¿Estás loco? Hace mucho frío.	Are you crazy? It's very cold.	هل أنت مجنون؟ الجو بارد جدًا.
+878	Mi hermana está loca por los gatos.	My sister is crazy about cats.	أختي مولعة بالقطط.
+879	Mi abuelo está débil y cansado.	My grandfather is weak and tired.	جدي ضعيف ومتعب.
+879	La luz es muy débil aquí.	The light is very weak here.	الضوء ضعيف جدًا هنا.
+880	Este pan está duro.	This bread is hard.	هذا الخبز قاسٍ.
+880	Fue un día muy duro.	It was a very hard day.	كان يومًا صعبًا جدًا.
+881	¡Ojalá haga sol mañana!	I hope it's sunny tomorrow!	يا ليت يكون الجو مشمسًا غدًا!
+881	Ojalá puedas venir a la fiesta.	I hope you can come to the party.	أتمنى أن تستطيع المجيء إلى الحفلة.
+882	Apenas tengo tiempo para comer.	I hardly have time to eat.	بالكاد عندي وقت للأكل.
+882	El niño apenas comió nada.	The boy hardly ate anything.	بالكاد أكل الولد شيئًا.
+883	Me gusta la fruta, sobre todo las naranjas.	I like fruit, especially oranges.	أحب الفاكهة، خصوصًا البرتقال.
+883	Hay mucha gente, sobre todo los sábados.	It's very busy, especially on Saturdays.	هناك ناس كثيرون، خصوصًا أيام السبت.
+884	Eso es exactamente lo que quiero.	That's exactly what I want.	هذا بالضبط ما أريده.
+884	El tren llegó exactamente a las seis.	The train arrived at exactly six.	وصل القطار في السادسة بالضبط.
+885	De repente se fue la luz.	Suddenly the power went off.	فجأة انقطعت الكهرباء.
+885	De repente empezó a llover.	Suddenly it started to rain.	فجأة بدأت تمطر.
+886	Llama al médico inmediatamente.	Call the doctor immediately.	اتصل بالطبيب فورًا.
+886	Ella contestó a mi mensaje inmediatamente.	She answered my message immediately.	ردّت على رسالتي فورًا.
+887	Se mudaron a esta calle recientemente.	They moved to this street recently.	انتقلوا إلى هذا الشارع مؤخرًا.
+887	No lo he visto recientemente.	I haven't seen him recently.	لم أره مؤخرًا.
+888	¡Adelante, puede entrar, por favor!	Come in, please!	تفضّل، يمكنك الدخول!
+888	Sigue adelante, ya llegamos.	Keep going, we're nearly there.	استمر إلى الأمام، اقتربنا من الوصول.
+889	Da un paso atrás.	Take a step back.	تراجع خطوة.
+889	Los niños van atrás en el coche.	The children sit in the back of the car.	يجلس الأطفال في الخلف في السيارة.
+890	No tengo ni tiempo ni dinero.	I have neither time nor money.	ليس عندي وقت ولا مال.
+890	No me llamó ni una vez.	He didn't call me even once.	لم يتصل بي ولا مرة.
+891	No es mi hermano, sino mi primo.	He's not my brother but my cousin.	ليس أخي بل ابن عمي.
+891	No quiero té, sino café.	I don't want tea, I want coffee.	لا أريد شايًا بل قهوة.
+892	Trabaja incluso los domingos.	She works even on Sundays.	تعمل حتى أيام الأحد.
+892	Incluso mi abuela usa internet.	Even my grandmother uses the internet.	حتى جدتي تستخدم الإنترنت.
+893	El hotel es bonito; sin embargo, es caro.	The hotel is nice; however, it's expensive.	الفندق جميل، ومع ذلك فهو غالٍ.
+893	Estudió mucho; sin embargo, suspendió.	He studied a lot; however, he failed.	درس كثيرًا ومع ذلك رسب.
+894	Tal vez hay lluvia mañana.	Perhaps there'll be rain tomorrow.	ربما يكون هناك مطر غدًا.
+894	Tal vez tienes razón.	Perhaps you're right.	ربما أنت على حق.
+895	A veces como en el trabajo.	Sometimes I eat at work.	أحيانًا آكل في العمل.
+895	A veces llueve en verano.	Sometimes it rains in summer.	أحيانًا تمطر في الصيف.
+896	Mi padre tiene cuarenta años.	My father is forty.	عمر أبي أربعون سنة.
+896	El viaje dura cuarenta minutos.	The trip takes forty minutes.	تستغرق الرحلة أربعين دقيقة.
+897	Hay cincuenta estudiantes en la clase.	There are fifty students in the class.	في الصف خمسون طالبًا.
+897	Esta chaqueta cuesta cincuenta euros.	This jacket costs fifty euros.	تكلّف هذه السترة خمسين يورو.
+898	La ciudad tiene tres millones de personas.	The city has three million people.	في المدينة ثلاثة ملايين شخص.
+898	Ganó un millón de euros.	He won a million euros.	ربح مليون يورو.
+899	Vivimos en el tercer piso.	We live on the third floor.	نسكن في الطابق الثالث.
+899	Es la tercera vez que vengo aquí.	It's the third time I've come here.	إنها المرة الثالثة التي آتي فيها إلى هنا.
+900	Son las siete y cuarto.	It's quarter past seven.	الساعة السابعة والربع.
+900	Esperé un cuarto de hora.	I waited a quarter of an hour.	انتظرت ربع ساعة.
