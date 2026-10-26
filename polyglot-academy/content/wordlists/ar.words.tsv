@@ -1199,3 +1199,303 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 1198	ar_w_talama	طَالَمَا	conj	function	as long as	ما دام	ṭālamā	طالما
 1199	ar_w_kullama	كُلَّمَا	conj	function	whenever	في كل مرّة	kullamā	كلما
 1200	ar_w_baynama	بَيْنَمَا	conj	function	while	في حين	baynamā	بينما
+1201	ar_w_tajadala	تَجَادَلَ	verb	communication	to argue	تخاصم بالكلام	tajādala		root=ج د ل; masdar=تَجَادُل; present=يَتَجَادَلُ
+1202	ar_w_istadama	اِصْطَدَمَ	verb	travel	to crash into	ارتطم	iṣṭadama		root=ص د م; masdar=اِصْطِدَام; present=يَصْطَدِمُ
+1203	ar_w_atlafa	أَتْلَفَ	verb	actions	to damage	أفسد	atlafa		root=ت ل ف; masdar=إِتْلَاف; present=يُتْلِفُ
+1204	ar_w_tajammada	تَجَمَّدَ	verb	weather	to freeze	تثلّج	tajammada	تجمد	root=ج م د; masdar=تَجَمُّد; present=يَتَجَمَّدُ
+1205	ar_w_lamaa	لَمَعَ	verb	weather	to shine	برق	lamaʿa		root=ل م ع; masdar=لَمَعَان; present=يَلْمَعُ
+1206	ar_w_khazzana	خَزَّنَ	verb	home	to store	ادّخر	khazzana	خزن	root=خ ز ن; masdar=تَخْزِين; present=يُخَزِّنُ
+1207	ar_w_iftarada	اِفْتَرَضَ	verb	mind	to suppose	ظنّ	iftaraḍa		root=ف ر ض; masdar=اِفْتِرَاض; present=يَفْتَرِضُ
+1208	ar_w_nataqa	نَطَقَ	verb	communication	to pronounce	لفظ	naṭaqa		root=ن ط ق; masdar=نُطْق; present=يَنْطِقُ
+1209	ar_w_ataa	أَطَاعَ	verb	people	to obey	امتثل	aṭāʿa	أطاع, أطاعت, يطيع, تطيع	root=ط و ع; masdar=طَاعَة; present=يُطِيعُ
+1210	ar_w_aaqaba	عَاقَبَ	verb	people	to punish	جازى	ʿāqaba		root=ع ق ب; masdar=عِقَاب; present=يُعَاقِبُ
+1211	ar_w_jadhaba	جَذَبَ	verb	people	to attract	استمال	jadhaba		root=ج ذ ب; masdar=جَذْب; present=يَجْذِبُ
+1212	ar_w_intaqada	اِنْتَقَدَ	verb	communication	to criticise	عاب	intaqada		root=ن ق د; masdar=اِنْتِقَاد; present=يَنْتَقِدُ
+1213	ar_w_madaha	مَدَحَ	verb	communication	to praise	أثنى على	madaḥa		root=م د ح; masdar=مَدْح; present=يَمْدَحُ
+1214	ar_w_himya	حِمْيَة	noun	health	diet	رجيم	ḥimya		gender=f; plural=—; root=ح م ي
+1215	ar_w_haffa	حَافَّة	noun	places	edge	طرف	ḥāffa		gender=f; plural=حَوَافّ; root=ح ف ف
+1216	ar_w_aduww	عَدُوّ	noun	people	enemy	خصم	ʿaduww		gender=m; plural=أَعْدَاء; root=ع د و
+1217	ar_w_siyaj	سِيَاج	noun	home	fence	حاجز	siyāj		gender=m; plural=أَسْيِجَة; root=س ي ج
+1218	ar_w_mirab	مِرْآب	noun	home	garage	كراج	mirʾāb		gender=m; plural=مَرَائِب; root=ر أ ب
+1219	ar_w_hufra	حُفْرَة	noun	places	hole	ثقب	ḥufra		gender=f; plural=حُفَر; root=ح ف ر
+1220	ar_w_hashara	حَشَرَة	noun	animals	insect	دويبة	ḥashara		gender=f; plural=حَشَرَات; root=ح ش ر
+1221	ar_w_mizaj	مِزَاج	noun	feelings	mood	حالة نفسية	mizāj		gender=m; plural=أَمْزِجَة; root=م ز ج
+1222	ar_w_muhit	مُحِيط	noun	nature	ocean	بحر واسع	muḥīṭ		gender=m; plural=مُحِيطَات; root=ح و ط
+1223	ar_w_blastik	بْلَاسْتِيك	noun	function	plastic	لدائن	blāstīk		gender=m; plural=—; root=—
+1224	ar_w_samik	سَمِيك	adj	descriptions	thick	ثخين	samīk		root=س م ك
+1225	ar_w_raqiq	رَقِيق	adj	descriptions	thin, delicate	ناعم	raqīq		root=ر ق ق
+1226	ar_w_ahad	أَحَد	pron	function	someone, anyone (لا أحد: nobody)	شخص	aḥad	أحدا, أحدًا	root=أ ح د
+1227	ar_w_akhbara	أَخْبَرَ	verb	communication	to tell, to inform	أعلم	akhbara	أخبر, أخبرت, أخبرني, أخبرتني, يخبر, تخبر	root=خ ب ر; masdar=إِخْبَار; present=يُخْبِرُ
+1228	ar_w_bai	بَائِع	noun	shopping	seller	تاجر	bāʾiʿ		gender=m; plural=بَاعَة; root=ب ي ع
+1229	ar_w_bank	بَنْك	noun	shopping	bank	مصرف	bank		gender=m; plural=بُنُوك; root=—
+1230	ar_w_qiraa	قِرَاءَة	noun	school	reading	مطالعة	qirāʾa		gender=f; plural=—; root=ق ر أ
+1231	ar_w_qitt	قِطّ	noun	animals	cat (male)	هرّ	qiṭṭ		gender=m; plural=قِطَط; root=ق ط ط
+1232	ar_w_qiyada	قِيَادَة	noun	travel	driving; leadership	سياقة	qiyāda		gender=f; plural=—; root=ق و د
+1233	ar_w_maqha	مَقْهًى	noun	places	café	كافيه	maqhan	مقهى, المقهى	gender=m; plural=مَقَاهٍ; root=ق ه و
+1234	ar_w_intabaha	اِنْتَبَهَ	verb	mind	to pay attention, to be careful	حذر	intabaha	انتبه, انتبهي, انتبهوا, ينتبه, تنتبه	root=ن ب ه; masdar=اِنْتِبَاه; present=يَنْتَبِهُ
+1235	ar_w_indamma	اِنْضَمَّ	verb	people	to join	التحق	inḍamma	انضم, انضمت, ينضم	root=ض م م; masdar=اِنْضِمَام; present=يَنْضَمُّ
+1236	ar_w_inqataa	اِنْقَطَعَ	verb	home	to be cut off (power, water)	توقّف	inqaṭaʿa		root=ق ط ع; masdar=اِنْقِطَاع; present=يَنْقَطِعُ
+1237	ar_w_ahda	أَهْدَى	verb	people	to give as a present	قدّم هدية	ahdā	أهدى, أهدت, أهديت, أهداني, أهدتني, يهدي	root=ه د ي; masdar=إِهْدَاء; present=يُهْدِي
+1238	ar_w_wafaqa	وَافَقَ	verb	people	to agree	قبل	wāfaqa		root=و ف ق; masdar=مُوَافَقَة; present=يُوَافِقُ
+1239	ar_w_badhala	بَذَلَ	verb	work	to make (an effort)	أعطى	badhala		root=ب ذ ل; masdar=بَذْل; present=يَبْذُلُ
+1240	ar_w_taghayyara	تَغَيَّرَ	verb	function	to change (intransitive)	تبدّل	taghayyara	تغير, تغيرت	root=غ ي ر; masdar=تَغَيُّر; present=يَتَغَيَّرُ
+1241	ar_w_khafa	خَافَ	verb	feelings	to be afraid	خشي	khāfa	خاف, خافت, خفت, يخاف, تخاف, أخاف, تخف	root=خ و ف; masdar=خَوْف; present=يَخَافُ
+1242	ar_w_azafa	عَزَفَ	verb	leisure	to play (an instrument)	لعب على آلة	ʿazafa		root=ع ز ف; masdar=عَزْف; present=يَعْزِفُ
+1243	ar_w_amtara	أَمْطَرَ	verb	weather	to rain	هطل المطر	amṭara	أمطرت, تمطر	root=م ط ر; masdar=إِمْطَار; present=يُمْطِرُ
+1244	ar_w_hadir	حَاضِر	adj	time	present; ready	موجود	ḥāḍir		root=ح ض ر
+1245	ar_w_haraka	حَرَكَة	noun	movement	movement; traffic	تحرّك	ḥaraka		gender=f; plural=حَرَكَات; root=ح ر ك
+1246	ar_w_hayah	حَيَاة	noun	people	life	عيش	ḥayāh	حياة, حياتي, حياته	gender=f; plural=—; root=ح ي ي
+1247	ar_w_dafi	دَافِئ	adj	weather	warm	ساخن قليلًا	dāfiʾ		root=د ف أ
+1248	ar_w_zala	زَالَ	verb	time	(ما زال: still)	ظلّ	zāla	زال, زلت, يزال	root=ز و ل; masdar=زَوَال; present=يَزَالُ
+1249	ar_w_zaman	زَمَن	noun	time	time, era	وقت، عصر	zaman		gender=m; plural=أَزْمَان; root=ز م ن
+1250	ar_w_tiwala	طِوَالَ	prep	time	throughout, all (day, night)	على مدى	ṭiwāla	طوال	root=ط و ل
+1251	ar_w_ghaba_absent	غَابَ	verb	school	to be absent	تغيّب	ghāba	غاب, غابت, غبت, يغيب, تغيب	root=غ ي ب; masdar=غِيَاب; present=يَغِيبُ
+1252	ar_w_qada_spend	قَضَى	verb	time	to spend (time)	أمضى	qaḍā	قضى, قضت, قضيت, قضينا, يقضي, نقضي	root=ق ض ي; masdar=قَضَاء; present=يَقْضِي
+1253	ar_w_litr	لِتْر	noun	numbers	litre	وحدة سعة	litr	لترين	gender=m; plural=لِتْرَات; root=—
+1254	ar_w_mudda	مُدَّة	noun	time	period, duration	فترة	mudda		gender=f; plural=مُدَد; root=م د د
+1255	ar_w_mithl	مِثْل	prep	function	like, similar to	كـ	mithl		root=م ث ل
+1256	ar_w_musaada	مُسَاعَدَة	noun	people	help	عون	musāʿada		gender=f; plural=مُسَاعَدَات; root=س ع د
+1257	ar_w_masnu	مَصْنُوع	adj	function	made (of)	مُعَدّ	maṣnūʿ		root=ص ن ع
+1258	ar_w_munasib	مُنَاسِب	adj	descriptions	suitable	ملائم	munāsib		root=ن س ب
+1259	ar_w_naim_asleep	نَائِم	adj	home	asleep	راقد	nāʾim		root=ن و م
+1260	ar_w_wadih	وَاضِح	adj	descriptions	clear	بيّن	wāḍiḥ		root=و ض ح
+1261	ar_w_ya	يَا	part	function	O (vocative particle)	حرف نداء	yā
+1262	ar_w_shamila	شَمِلَ	verb	function	to include	ضمّ	shamila		root=ش م ل; masdar=شُمُول; present=يَشْمَلُ
+1263	ar_w_asdara	أَصْدَرَ	verb	work	to issue; to make (a sound)	أخرج	aṣdara		root=ص د ر; masdar=إِصْدَار; present=يُصْدِرُ
+1264	ar_w_ajaba_please	أَعْجَبَ	verb	feelings	to please (يعجبني: I like)	سرّ	aʿjaba	أعجب, أعجبني, أعجبتني, يعجب, يعجبني, يعجبك, تعجبني	root=ع ج ب; masdar=إِعْجَاب; present=يُعْجِبُ
+1265	ar_w_amkana	أَمْكَنَ	verb	function	to be possible (يمكن: can)	استطاع	amkana	أمكن, يمكن, يمكنك, يمكنني, يمكننا	root=م ك ن; masdar=إِمْكَان; present=يُمْكِنُ
+1266	ar_w_safar	سَفَر	noun	travel	travel, journey	رحلة	safar		gender=m; plural=أَسْفَار; root=س ف ر
+1267	ar_w_jami	جَمِيع	pron	function	all, everyone	كلّ	jamīʿ		root=ج م ع
+1268	ar_w_zihham	زِحَام	noun	travel	crowding, traffic jam	ازدحام	ziḥām		gender=m; plural=—; root=ز ح م
+1269	ar_w_shadid	شَدِيد	adj	descriptions	strong, severe	قويّ	shadīd		root=ش د د
+1270	ar_w_ghasil	غَسِيل	noun	home	washing, laundry	ملابس مغسولة	ghasīl		gender=m; plural=—; root=غ س ل
+1271	ar_w_tanzif	تَنْظِيف	noun	home	cleaning	تطهير	tanẓīf		gender=m; plural=—; root=ن ظ ف
+1272	ar_w_alana	أَعْلَنَ	verb	communication	to announce	صرّح	aʿlana		root=ع ل ن; masdar=إِعْلَان; present=يُعْلِنُ
+1273	ar_w_itarafa	اِعْتَرَفَ	verb	communication	to admit	أقرّ	iʿtarafa		root=ع ر ف; masdar=اِعْتِرَاف; present=يَعْتَرِفُ
+1274	ar_w_itaqala	اِعْتَقَلَ	verb	people	to arrest	قبض على	iʿtaqala		root=ع ق ل; masdar=اِعْتِقَال; present=يَعْتَقِلُ
+1275	ar_w_arfaqa	أَرْفَقَ	verb	work	to attach	ألحق	arfaqa		root=ر ف ق; masdar=إِرْفَاق; present=يُرْفِقُ
+1276	ar_w_lama	لَامَ	verb	people	to blame	عاتب	lāma	لام, لامت, لمت, يلوم, تلوم, تلمني	root=ل و م; masdar=لَوْم; present=يَلُومُ
+1277	ar_w_dafana	دَفَنَ	verb	actions	to bury	وارى	dafana		root=د ف ن; masdar=دَفْن; present=يَدْفِنُ
+1278	ar_w_saffaqa	صَفَّقَ	verb	actions	to clap	صفّق بيديه	ṣaffaqa	صفق	root=ص ف ق; masdar=تَصْفِيق; present=يُصَفِّقُ
+1279	ar_w_madagha	مَضَغَ	verb	food	to chew	لاك	maḍagha		root=م ض غ; masdar=مَضْغ; present=يَمْضَغُ
+1280	ar_w_tanafasa	تَنَافَسَ	verb	leisure	to compete	تسابق	tanāfasa		root=ن ف س; masdar=تَنَافُس; present=يَتَنَافَسُ
+1281	ar_w_aqnaa	أَقْنَعَ	verb	communication	to convince	أثّر في	aqnaʿa		root=ق ن ع; masdar=إِقْنَاع; present=يُقْنِعُ
+1282	ar_w_zayyana	زَيَّنَ	verb	home	to decorate	جمّل	zayyana	زين	root=ز ي ن; masdar=تَزْيِين; present=يُزَيِّنُ
+1283	ar_w_dafaa_defend	دَافَعَ	verb	actions	to defend	حمى	dāfaʿa		root=د ف ع; masdar=دِفَاع; present=يُدَافِعُ
+1284	ar_w_ankara	أَنْكَرَ	verb	communication	to deny	جحد	ankara		root=ن ك ر; masdar=إِنْكَار; present=يُنْكِرُ
+1285	ar_w_istahaqqa	اِسْتَحَقَّ	verb	people	to deserve	جدر بـ	istaḥaqqa	استحق, تستحق, يستحق	root=ح ق ق; masdar=اِسْتِحْقَاق; present=يَسْتَحِقُّ
+1286	ar_w_hafara	حَفَرَ	verb	actions	to dig	نقب	ḥafara		root=ح ف ر; masdar=حَفْر; present=يَحْفِرُ
+1287	ar_w_iktashafa	اِكْتَشَفَ	verb	mind	to discover	وجد	iktashafa		root=ك ش ف; masdar=اِكْتِشَاف; present=يَكْتَشِفُ
+1288	ar_w_ghatasa	غَطَسَ	verb	leisure	to dive	غاص	ghaṭasa		root=غ ط س; masdar=غَطْس; present=يَغْطِسُ
+1289	ar_w_jarra	جَرَّ	verb	actions	to drag, to pull	سحب	jarra	جر, جرت, يجر, تجر	root=ج ر ر; masdar=جَرّ; present=يَجُرُّ
+1290	ar_w_fahasa	فَحَصَ	verb	health	to examine	كشف على	faḥaṣa		root=ف ح ص; masdar=فَحْص; present=يَفْحَصُ
+1291	ar_w_tabadala	تَبَادَلَ	verb	shopping	to exchange	بادل	tabādala		root=ب د ل; masdar=تَبَادُل; present=يَتَبَادَلُ
+1292	ar_w_infajara	اِنْفَجَرَ	verb	actions	to explode	تفجّر	infajara		root=ف ج ر; masdar=اِنْفِجَار; present=يَنْفَجِرُ
+1293	ar_w_istakshafa	اِسْتَكْشَفَ	verb	travel	to explore	تعرّف على	istakshafa		root=ك ش ف; masdar=اِسْتِكْشَاف; present=يَسْتَكْشِفُ
+1294	ar_w_tafa	طَفَا	verb	nature	to float	عام	ṭafā	طفا, طفت, يطفو, تطفو	root=ط ف و; masdar=طَفْو; present=يَطْفُو
+1295	ar_w_rakkaza	رَكَّزَ	verb	mind	to focus, to concentrate	انتبه	rakkaza	ركز	root=ر ك ز; masdar=تَرْكِيز; present=يُرَكِّزُ
+1296	ar_w_saada_hunt	صَادَ	verb	animals	to hunt, to catch	اصطاد	ṣāda	صاد, صادت, يصيد, تصيد	root=ص ي د; masdar=صَيْد; present=يَصِيدُ
+1297	ar_w_abhara	أَبْهَرَ	verb	people	to impress, to dazzle	أدهش	abhara		root=ب ه ر; masdar=إِبْهَار; present=يُبْهِرُ
+1298	ar_w_qataa_interrupt	قَاطَعَ	verb	communication	to interrupt	أوقف الكلام	qāṭaʿa		root=ق ط ع; masdar=مُقَاطَعَة; present=يُقَاطِعُ
+1299	ar_w_tadammana	تَضَمَّنَ	verb	function	to include, to contain	شمل	taḍammana	تضمن	root=ض م ن; masdar=تَضَمُّن; present=يَتَضَمَّنُ
+1300	ar_w_hakama	حَكَمَ	verb	people	to judge, to rule	قضى	ḥakama		root=ح ك م; masdar=حُكْم; present=يَحْكُمُ
+1301	ar_w_awmaa	أَوْمَأَ	verb	communication	to nod	أشار برأسه	awmaʾa		root=و م أ; masdar=إِيمَاء; present=يُومِئُ
+1302	ar_w_raqaba_watch	رَاقَبَ	verb	senses	to watch, to observe	لاحظ	rāqaba		root=ر ق ب; masdar=مُرَاقَبَة; present=يُرَاقِبُ
+1303	ar_w_manaa	مَنَعَ	verb	actions	to prevent, to forbid	حظر	manaʿa		root=م ن ع; masdar=مَنْع; present=يَمْنَعُ
+1304	ar_w_athbata	أَثْبَتَ	verb	mind	to prove	برهن	athbata		root=ث ب ت; masdar=إِثْبَات; present=يُثْبِتُ
+1305	ar_w_tafaala	تَفَاعَلَ	verb	people	to react, to interact	استجاب	tafāʿala		root=ف ع ل; masdar=تَفَاعُل; present=يَتَفَاعَلُ
+1306	ar_w_taafa	تَعَافَى	verb	health	to recover	شُفي	taʿāfā	تعافى, تعافت, يتعافى, تتعافى	root=ع ف و; masdar=تَعَافٍ; present=يَتَعَافَى
+1307	ar_w_tatallaba	تَطَلَّبَ	verb	function	to require	احتاج	taṭallaba	تطلب	root=ط ل ب; masdar=تَطَلُّب; present=يَتَطَلَّبُ
+1308	ar_w_taqaada	تَقَاعَدَ	verb	work	to retire	ترك العمل	taqāʿada		root=ق ع د; masdar=تَقَاعُد; present=يَتَقَاعَدُ
+1309	ar_w_kashafa	كَشَفَ	verb	communication	to reveal	أظهر	kashafa		root=ك ش ف; masdar=كَشْف; present=يَكْشِفُ
+1310	ar_w_faraka	فَرَكَ	verb	actions	to rub	دلك	faraka		root=ف ر ك; masdar=فَرْك; present=يَفْرُكُ
+1311	ar_w_abhara_sail	أَبْحَرَ	verb	travel	to sail	ركب البحر	abḥara		root=ب ح ر; masdar=إِبْحَار; present=يُبْحِرُ
+1312	ar_w_khadasha	خَدَشَ	verb	actions	to scratch	جرح	khadasha		root=خ د ش; masdar=خَدْش; present=يَخْدِشُ
+1313	ar_w_istaqarra	اِسْتَقَرَّ	verb	home	to settle	سكن	istaqarra	استقر, استقرت, يستقر	root=ق ر ر; masdar=اِسْتِقْرَار; present=يَسْتَقِرُّ
+1314	ar_w_tanahhada	تَنَهَّدَ	verb	feelings	to sigh	زفر	tanahhada	تنهد	root=ن ه د; masdar=تَنَهُّد; present=يَتَنَهَّدُ
+1315	ar_w_inzalaqa	اِنْزَلَقَ	verb	movement	to slip	زلّ	inzalaqa		root=ز ل ق; masdar=اِنْزِلَاق; present=يَنْزَلِقُ
+1316	ar_w_atasa	عَطَسَ	verb	health	to sneeze	عطس	ʿaṭasa		root=ع ط س; masdar=عُطَاس; present=يَعْطِسُ
+1317	ar_w_afsada	أَفْسَدَ	verb	actions	to spoil	خرّب	afsada		root=ف س د; masdar=إِفْسَاد; present=يُفْسِدُ
+1318	ar_w_haddaqa	حَدَّقَ	verb	senses	to stare	نظر طويلًا	ḥaddaqa	حدق	root=ح د ق; masdar=تَحْدِيق; present=يُحَدِّقُ
+1319	ar_w_kafaha	كَافَحَ	verb	actions	to struggle, to fight	جاهد	kāfaḥa		root=ك ف ح; masdar=كِفَاح; present=يُكَافِحُ
+1320	ar_w_kanasa	كَنَسَ	verb	home	to sweep	نظّف	kanasa		root=ك ن س; masdar=كَنْس; present=يَكْنُسُ
+1321	ar_w_mazzaqa	مَزَّقَ	verb	actions	to tear	قطّع	mazzaqa	مزق	root=م ز ق; masdar=تَمْزِيق; present=يُمَزِّقُ
+1322	ar_w_haddada	هَدَّدَ	verb	people	to threaten	توعّد	haddada	هدد	root=ه د د; masdar=تَهْدِيد; present=يُهَدِّدُ
+1323	ar_w_tajawwala	تَجَوَّلَ	verb	movement	to wander, to walk around	تمشّى	tajawwala	تجول	root=ج و ل; masdar=تَجَوُّل; present=يَتَجَوَّلُ
+1324	ar_w_qudra	قُدْرَة	noun	work	ability	استطاعة	qudra		gender=f; plural=قُدُرَات; root=ق د ر
+1325	ar_w_injaz	إِنْجَاز	noun	work	achievement	عمل ناجح	injāz		gender=m; plural=إِنْجَازَات; root=ن ج ز
+1326	ar_w_mumaththil	مُمَثِّل	noun	leisure	actor	فنّان	mumaththil		gender=m; plural=مُمَثِّلُون; root=م ث ل
+1327	ar_w_mughamara	مُغَامَرَة	noun	leisure	adventure	مخاطرة	mughāmara		gender=f; plural=مُغَامَرَات; root=غ م ر
+1328	ar_w_kahil	كَاحِل	noun	body	ankle	عرقوب	kāḥil		gender=m; plural=كَوَاحِل; root=ك ح ل
+1329	ar_w_dhikra	ذِكْرَى	noun	time	memory; anniversary	تذكار	dhikrā	ذكرى	gender=f; plural=ذِكْرَيَات; root=ذ ك ر
+1330	ar_w_itidhar	اِعْتِذَار	noun	communication	apology	أسف	iʿtidhār		gender=m; plural=اِعْتِذَارَات; root=ع ذ ر
+1331	ar_w_niqash	نِقَاش	noun	communication	discussion, argument	حوار	niqāsh		gender=m; plural=نِقَاشَات; root=ن ق ش
+1332	ar_w_wusul	وُصُول	noun	travel	arrival	قدوم	wuṣūl		gender=m; plural=—; root=و ص ل
+1333	ar_w_musaid	مُسَاعِد	noun	work	assistant	معاون	musāʿid		gender=m; plural=مُسَاعِدُون; root=س ع د
+1334	ar_w_muhawala	مُحَاوَلَة	noun	actions	attempt	تجربة	muḥāwala		gender=f; plural=مُحَاوَلَات; root=ح و ل
+1335	ar_w_jumhur	جُمْهُور	noun	leisure	audience	حضور	jumhūr		gender=m; plural=جَمَاهِير; root=ج م ه ر
+1336	ar_w_muallif	مُؤَلِّف	noun	leisure	author	كاتب	muʾallif		gender=m; plural=مُؤَلِّفُون; root=أ ل ف
+1337	ar_w_mutawassit	مُتَوَسِّط	noun	numbers	average; medium	معدّل	mutawassiṭ		gender=m; plural=—; root=و س ط
+1338	ar_w_khalfiyya	خَلْفِيَّة	noun	function	background	خلف	khalfiyya		gender=f; plural=خَلْفِيَّات; root=خ ل ف
+1339	ar_w_tawazun	تَوَازُن	noun	function	balance	اتّزان	tawāzun		gender=m; plural=—; root=و ز ن
+1340	ar_w_firqa	فِرْقَة	noun	leisure	band, troupe	جماعة	firqa		gender=f; plural=فِرَق; root=ف ر ق
+1341	ar_w_maraka	مَعْرَكَة	noun	people	battle	قتال	maʿraka		gender=f; plural=مَعَارِك; root=ع ر ك
+1342	ar_w_lihya	لِحْيَة	noun	body	beard	ذقن	liḥya		gender=f; plural=لِحًى; root=ل ح ي
+1343	ar_w_nahla	نَحْلَة	noun	animals	bee	حشرة العسل	naḥla		gender=f; plural=نَحْل; root=ن ح ل
+1344	ar_w_hizam	حِزَام	noun	clothes	belt	زنّار	ḥizām		gender=m; plural=أَحْزِمَة; root=ح ز م
+1345	ar_w_salla_basket	سَلَّة	noun	home	basket	قفّة	salla		gender=f; plural=سِلَال; root=س ل ل
+1346	ar_w_baskawit	بَسْكَوِيت	noun	food	biscuits	كعك	baskawīt		gender=m; plural=—; root=—
+1347	ar_w_ghusn	غُصْن	noun	nature	branch	فرع	ghuṣn		gender=m; plural=أَغْصَان; root=غ ص ن
+1348	ar_w_tub	طُوب	noun	home	bricks	آجر	ṭūb		gender=m; plural=—; root=—
+1349	ar_w_zirr	زِرّ	noun	clothes	button	مفتاح	zirr		gender=m; plural=أَزْرَار; root=ز ر ر
+1350	ar_w_qafas	قَفَص	noun	animals	cage	سجن الطيور	qafaṣ		gender=m; plural=أَقْفَاص; root=ق ف ص
+1351	ar_w_taqwim	تَقْوِيم	noun	time	calendar	روزنامة	taqwīm		gender=m; plural=تَقَاوِيم; root=ق و م
+1352	ar_w_qubtan	قُبْطَان	noun	travel	captain	ربّان	qubṭān		gender=m; plural=قَبَاطِنَة; root=—
+1353	ar_w_kahf	كَهْف	noun	nature	cave	مغارة	kahf		gender=m; plural=كُهُوف; root=ك ه ف
+1354	ar_w_silsila	سِلْسِلَة	noun	function	chain; series	سلسال	silsila		gender=f; plural=سَلَاسِل; root=س ل س ل
+1355	ar_w_tahaddin	تَحَدٍّ	noun	work	challenge	صعوبة	taḥaddin	تحدي, التحدي	gender=m; plural=تَحَدِّيَات; root=ح د ي
+1356	ar_w_qanat	قَنَاة	noun	leisure	channel	محطة	qanāh	قناة	gender=f; plural=قَنَوَات; root=ق ن و
+1357	ar_w_jamiyya	جَمْعِيَّة	noun	people	association, charity	منظّمة	jamʿiyya		gender=f; plural=جَمْعِيَّات; root=ج م ع
+1358	ar_w_khadd	خَدّ	noun	body	cheek	وجنة	khadd		gender=m; plural=خُدُود; root=خ د د
+1359	ar_w_sadr	صَدْر	noun	body	chest	ثدي	ṣadr		gender=m; plural=صُدُور; root=ص د ر
+1360	ar_w_daira	دَائِرَة	noun	function	circle; department	حلقة	dāʾira		gender=f; plural=دَوَائِر; root=د و ر
+1361	ar_w_muwatin	مُوَاطِن	noun	people	citizen	ابن البلد	muwāṭin		gender=m; plural=مُوَاطِنُون; root=و ط ن
+1362	ar_w_manakh	مَنَاخ	noun	weather	climate	طقس عامّ	manākh		gender=m; plural=—; root=ن و خ
+1363	ar_w_iyada	عِيَادَة	noun	health	clinic	مستوصف	ʿiyāda		gender=f; plural=عِيَادَات; root=ع و د
+1364	ar_w_nadin	نَادٍ	noun	leisure	club	ملتقى	nādin	نادي, النادي	gender=m; plural=أَنْدِيَة; root=ن د و
+1365	ar_w_mudarrib	مُدَرِّب	noun	leisure	coach, trainer	معلّم رياضة	mudarrib		gender=m; plural=مُدَرِّبُون; root=د ر ب
+1366	ar_w_shakwa	شَكْوَى	noun	communication	complaint	تظلّم	shakwā	شكوى	gender=f; plural=شَكَاوَى; root=ش ك و
+1367	ar_w_mutamar	مُؤْتَمَر	noun	work	conference	اجتماع كبير	muʾtamar		gender=m; plural=مُؤْتَمَرَات; root=أ م ر
+1368	ar_w_thiqa	ثِقَة	noun	feelings	trust, confidence	اطمئنان	thiqa		gender=f; plural=—; root=و ث ق
+1369	ar_w_qutn	قُطْن	noun	clothes	cotton	نسيج	quṭn		gender=m; plural=—; root=ق ط ن
+1370	ar_w_shajaa	شَجَاعَة	noun	feelings	courage	جرأة	shajāʿa		gender=f; plural=—; root=ش ج ع
+1371	ar_w_taqam	طَاقَم	noun	travel	crew	فريق	ṭāqam		gender=m; plural=طَوَاقِم; root=—
+1372	ar_w_bayanat	بَيَانَات	noun	work	data	معطيات	bayānāt		gender=f; plural=—; root=ب ي ن
+1373	ar_w_dayn	دَيْن	noun	shopping	debt	قرض	dayn		gender=m; plural=دُيُون; root=د ي ن
+1374	ar_w_shahada_cert	شَهَادَة	noun	school	certificate, degree	مؤهّل	shahāda		gender=f; plural=شَهَادَات; root=ش ه د
+1375	ar_w_wijha	وِجْهَة	noun	travel	destination	مقصد	wijha		gender=f; plural=وِجْهَات; root=و ج ه
+1376	ar_w_jihaz	جِهَاز	noun	home	device	آلة	jihāz		gender=m; plural=أَجْهِزَة; root=ج ه ز
+1377	ar_w_mudhakkirat	مُذَكِّرَات	noun	leisure	diary, memoirs	يوميات	mudhakkirāt		gender=f; plural=—; root=ذ ك ر
+1378	ar_w_karitha	كَارِثَة	noun	nature	disaster	مصيبة	kāritha		gender=f; plural=كَوَارِث; root=ك ر ث
+1379	ar_w_takhfid	تَخْفِيض	noun	shopping	discount	خصم	takhfīḍ		gender=m; plural=تَخْفِيضَات; root=خ ف ض
+1380	ar_w_wathiqa_doc	وَثِيقَة	noun	work	document	مستند	wathīqa		gender=f; plural=وَثَائِق; root=و ث ق
+1381	ar_w_tabl	طَبْل	noun	leisure	drum	دفّ	ṭabl		gender=m; plural=طُبُول; root=ط ب ل
+1382	ar_w_ghubar	غُبَار	noun	home	dust	تراب ناعم	ghubār		gender=m; plural=—; root=غ ب ر
+1383	ar_w_sahib	صَاحِب	noun	people	owner; companion	مالك؛ رفيق	ṣāḥib		gender=m; plural=أَصْحَاب; root=ص ح ب
+1384	ar_w_zarf	ظَرْف	noun	communication	envelope; circumstance	غلاف؛ حال	ẓarf		gender=m; plural=ظُرُوف; root=ظ ر ف
+1385	ar_w_muiddat	مُعَدَّات	noun	work	equipment	أدوات	muʿaddāt		gender=f; plural=—; root=ع د د
+1386	ar_w_dalil	دَلِيل	noun	people	evidence; guide	برهان؛ مرشد	dalīl		gender=m; plural=أَدِلَّة; root=د ل ل
+1387	ar_w_dhanb	ذَنْب	noun	people	fault, sin	خطيئة	dhanb		gender=m; plural=ذُنُوب; root=ذ ن ب
+1388	ar_w_risha	رِيشَة	noun	animals	feather	ريش	rīsha		gender=f; plural=رِيش; root=ر ي ش
+1389	ar_w_nakha	نَكْهَة	noun	food	flavour	طعم	nakha		gender=f; plural=نَكَهَات; root=ن ك ه
+1390	ar_w_fayadan	فَيَضَان	noun	weather	flood	سيل	fayaḍān		gender=m; plural=فَيَضَانَات; root=ف ي ض
+1391	ar_w_tahin	طَحِين	noun	food	flour	دقيق	ṭaḥīn		gender=m; plural=—; root=ط ح ن
+1392	ar_w_dabab	ضَبَاب	noun	weather	fog	غيم منخفض	ḍabāb		gender=m; plural=—; root=ض ب ب
+1393	ar_w_hurriyya	حُرِّيَّة	noun	people	freedom	استقلال	ḥurriyya		gender=f; plural=—; root=ح ر ر
+1394	ar_w_sadaqa	صَدَاقَة	noun	people	friendship	مودّة	ṣadāqa		gender=f; plural=صَدَاقَات; root=ص د ق
+1395	ar_w_difda	ضِفْدَع	noun	animals	frog	حيوان برمائي	ḍifdaʿ		gender=m; plural=ضَفَادِع; root=ض ف د ع
+1396	ar_w_waqud	وَقُود	noun	travel	fuel	محروقات	waqūd		gender=m; plural=—; root=و ق د
+1397	ar_w_ghaz	غَاز	noun	home	gas	وقود	ghāz		gender=m; plural=—; root=—
+1398	ar_w_jil	جِيل	noun	people	generation	عصر	jīl		gender=m; plural=أَجْيَال; root=ج ي ل
+1399	ar_w_shabah	شَبَح	noun	leisure	ghost	طيف	shabaḥ		gender=m; plural=أَشْبَاح; root=ش ب ح
+1400	ar_w_quffaz	قُفَّاز	noun	clothes	glove	كفّ	quffāz		gender=m; plural=قُفَّازَات; root=ق ف ز
+1401	ar_w_shahina	شَاحِنَة	noun	travel	lorry, truck	ناقلة	shāḥina		gender=f; plural=شَاحِنَات; root=ش ح ن
+1402	ar_w_binzin	بِنْزِين	noun	travel	petrol	وقود	binzīn		gender=m; plural=—; root=—
+1403	ar_w_ishara	إِشَارَة	noun	travel	sign, signal (إشارة المرور: traffic light)	علامة	ishāra		gender=f; plural=إِشَارَات; root=ش و ر
+1404	ar_w_taqatu	تَقَاطُع	noun	travel	crossroads	ملتقى طرق	taqāṭuʿ		gender=m; plural=تَقَاطُعَات; root=ق ط ع
+1405	ar_w_mina	مِينَاء	noun	travel	port	مرفأ	mīnāʾ		gender=m; plural=مَوَانِئ; root=—
+1406	ar_w_jamarik	جَمَارِك	noun	travel	customs	مكتب الجمارك	jamārik		gender=f; plural=—; root=—
+1407	ar_w_tabia_printer	طَابِعَة	noun	work	printer	آلة الطباعة	ṭābiʿa		gender=f; plural=طَابِعَات; root=ط ب ع
+1408	ar_w_qirt	قِرْط	noun	clothes	earring	حلق	qirṭ		gender=m; plural=أَقْرَاط; root=ق ر ط
+1409	ar_w_itr	عِطْر	noun	clothes	perfume	طيب	ʿiṭr		gender=m; plural=عُطُور; root=ع ط ر
+1410	ar_w_musht	مُشْط	noun	home	comb	فرشاة الشعر	musht		gender=m; plural=أَمْشَاط; root=م ش ط
+1411	ar_w_shampu	شَامْبُو	noun	home	shampoo	غسول الشعر	shāmbū		gender=m; plural=—; root=—
+1412	ar_w_ibra	إِبْرَة	noun	home	needle	مخيط	ibra		gender=f; plural=إِبَر; root=أ ب ر
+1413	ar_w_khayt	خَيْط	noun	home	thread	سلك	khayṭ		gender=m; plural=خُيُوط; root=خ ي ط
+1414	ar_w_dalw	دَلْو	noun	home	bucket	سطل	dalw		gender=m; plural=دِلَاء; root=د ل و
+1415	ar_w_miknasa	مِكْنَسَة	noun	home	broom	أداة الكنس	miknasa		gender=f; plural=مَكَانِس; root=ك ن س
+1416	ar_w_mikwah	مِكْوَاة	noun	home	iron	أداة الكيّ	mikwāh	مكواة	gender=f; plural=مَكَاوٍ; root=ك و ي
+1417	ar_w_furn	فُرْن	noun	food	oven	موقد الخبز	furn		gender=m; plural=أَفْرَان; root=ف ر ن
+1418	ar_w_siniyya	صِينِيَّة	noun	food	tray	طبق كبير	ṣīniyya		gender=f; plural=صَوَانٍ; root=—
+1419	ar_w_mandil	مِنْدِيل	noun	home	tissue, napkin	محرمة	mindīl		gender=m; plural=مَنَادِيل; root=ن د ل
+1420	ar_w_thum	ثُوم	noun	food	garlic	نبات	thūm		gender=m; plural=—; root=ث و م
+1421	ar_w_jazar	جَزَر	noun	food	carrots	خضار	jazar		gender=m; plural=—; root=ج ز ر
+1422	ar_w_khass_lettuce	خَسّ	noun	food	lettuce	ورق أخضر	khass		gender=m; plural=—; root=خ س س
+1423	ar_w_farawila	فَرَاوِلَة	noun	food	strawberry	توت	farāwila		gender=f; plural=—; root=—
+1424	ar_w_inab	عِنَب	noun	food	grapes	فاكهة	ʿinab		gender=m; plural=أَعْنَاب; root=ع ن ب
+1425	ar_w_ijjas	إِجَّاص	noun	food	pears	كمّثرى	ijjāṣ		gender=m; plural=—; root=—
+1426	ar_w_khawkh	خَوْخ	noun	food	peaches	درّاق	khawkh		gender=m; plural=—; root=خ و خ
+1427	ar_w_battikh	بِطِّيخ	noun	food	watermelon	فاكهة صيفية	baṭṭīkh		gender=m; plural=—; root=ب ط خ
+1428	ar_w_karaz	كَرَز	noun	food	cherries	فاكهة	karaz		gender=m; plural=—; root=—
+1429	ar_w_zaytun	زَيْتُون	noun	food	olives	ثمر الزيتون	zaytūn		gender=m; plural=—; root=ز ي ت
+1430	ar_w_laban	لَبَن	noun	food	yoghurt; milk	حليب رائب	laban		gender=m; plural=أَلْبَان; root=ل ب ن
+1431	ar_w_rubyan	رُوبْيَان	noun	food	prawns	جمبري	rūbyān		gender=m; plural=—; root=—
+1432	ar_w_baqara	بَقَرَة	noun	animals	cow	حيوان	baqara		gender=f; plural=أَبْقَار; root=ب ق ر
+1433	ar_w_thawr	ثَوْر	noun	animals	bull	ذكر البقر	thawr		gender=m; plural=ثِيرَان; root=ث و ر
+1434	ar_w_anza	عَنْزَة	noun	animals	goat	ماعز	ʿanza		gender=f; plural=—; root=ع ن ز
+1435	ar_w_himar	حِمَار	noun	animals	donkey	بغل	ḥimār		gender=m; plural=حَمِير; root=ح م ر
+1436	ar_w_asad	أَسَد	noun	animals	lion	ليث	asad		gender=m; plural=أُسُود; root=أ س د
+1437	ar_w_fil	فِيل	noun	animals	elephant	حيوان ضخم	fīl		gender=m; plural=فِيَلَة; root=ف ي ل
+1438	ar_w_qird	قِرْد	noun	animals	monkey	سعدان	qird		gender=m; plural=قُرُود; root=ق ر د
+1439	ar_w_thuban	ثُعْبَان	noun	animals	snake	أفعى	thuʿbān		gender=m; plural=ثَعَابِين; root=ث ع ب
+1440	ar_w_dhubaba	ذُبَابَة	noun	animals	fly	حشرة	dhubāba		gender=f; plural=ذُبَاب; root=ذ ب ب
+1441	ar_w_baauda	بَعُوضَة	noun	animals	mosquito	ناموسة	baʿūḍa		gender=f; plural=بَعُوض; root=ب ع ض
+1442	ar_w_ankabut	عَنْكَبُوت	noun	animals	spider	حشرة	ʿankabūt		gender=m; plural=عَنَاكِب; root=—
+1443	ar_w_farasha	فَرَاشَة	noun	animals	butterfly	حشرة ملوّنة	farāsha		gender=f; plural=فَرَاش; root=ف ر ش
+1444	ar_w_arnab	أَرْنَب	noun	animals	rabbit	حيوان	arnab		gender=m; plural=أَرَانِب; root=—
+1445	ar_w_sulahfat	سُلَحْفَاة	noun	animals	tortoise	حيوان بطيء	sulaḥfāh	سلحفاة	gender=f; plural=سَلَاحِف; root=—
+1446	ar_w_hut	حُوت	noun	animals	whale	حيوان بحري	ḥūt		gender=m; plural=حِيتَان; root=ح و ت
+1447	ar_w_dubb	دُبّ	noun	animals	bear	حيوان	dubb		gender=m; plural=دِبَبَة; root=د ب ب
+1448	ar_w_dhib	ذِئْب	noun	animals	wolf	حيوان بري	dhiʾb		gender=m; plural=ذِئَاب; root=ذ أ ب
+1449	ar_w_thalab	ثَعْلَب	noun	animals	fox	حيوان	thaʿlab		gender=m; plural=ثَعَالِب; root=—
+1450	ar_w_ushsh	عُشّ	noun	animals	nest	وكر	ʿushsh		gender=m; plural=أَعْشَاش; root=ع ش ش
+1451	ar_w_janah	جَنَاح	noun	animals	wing; suite	ريش	janāḥ		gender=m; plural=أَجْنِحَة; root=ج ن ح
+1452	ar_w_dhayl	ذَيْل	noun	animals	tail	طرف	dhayl		gender=m; plural=ذُيُول; root=ذ ي ل
+1453	ar_w_jamal	جَمَل	noun	animals	camel	بعير	jamal		gender=m; plural=جِمَال; root=ج م ل
+1454	ar_w_hayy	حَيّ	adj	descriptions	alive; neighbourhood	غير ميت؛ منطقة	ḥayy		root=ح ي ي
+1455	ar_w_mustayqiz	مُسْتَيْقِظ	adj	descriptions	awake	صاحٍ	mustayqiẓ		root=ي ق ظ
+1456	ar_w_mudrik	مُدْرِك	adj	mind	aware	واعٍ	mudrik		root=د ر ك
+1457	ar_w_asasi	أَسَاسِيّ	adj	descriptions	basic	جوهري	asāsī		root=أ س س
+1458	ar_w_marih	مَرِح	adj	feelings	cheerful	فرِح	mariḥ		root=م ر ح
+1459	ar_w_shai	شَائِع	adj	descriptions	common	منتشر	shāʾiʿ		root=ش ي ع
+1460	ar_w_wathiq	وَاثِق	adj	feelings	confident	متأكّد	wāthiq		root=و ث ق
+1461	ar_w_murtabik	مُرْتَبِك	adj	feelings	confused	حائر	murtabik		root=ر ب ك
+1462	ar_w_fuduli	فُضُولِيّ	adj	people	curious	محبّ للمعرفة	fuḍūlī		root=ف ض ل
+1463	ar_w_asamm	أَصَمّ	adj	health	deaf	لا يسمع	aṣamm		root=ص م م
+1464	ar_w_mutasawin	مُتَسَاوٍ	adj	numbers	equal	متعادل	mutasāwin	متساوية, متساوي	root=س و ي
+1465	ar_w_malluf	مَأْلُوف	adj	mind	familiar	معروف	maʾlūf		root=أ ل ف
+1466	ar_w_karim	كَرِيم	adj	people	generous	سخيّ	karīm		root=ك ر م
+1467	ar_w_mumtann	مُمْتَنّ	adj	feelings	grateful	شاكر	mumtann		root=م ن ن
+1468	ar_w_mudhnib	مُذْنِب	adj	feelings	guilty	خاطئ	mudhnib		root=ذ ن ب
+1469	ar_w_mutaawin	مُتَعَاوِن	adj	people	helpful, cooperative	مساعد	mutaʿāwin		root=ع و ن
+1470	ar_w_hurr	حُرّ	adj	people	free	مستقلّ	ḥurr		root=ح ر ر
+1471	ar_w_majjani	مَجَّانِيّ	adj	shopping	free (of charge)	بلا مقابل	majjānī		root=م ج ن
+1472	ar_w_nihai	نِهَائِيّ	adj	function	final	أخير	nihāʾī		root=ن ه ي
+1473	ar_w_kahrabai	كَهْرَبَائِيّ	adj	home	electric	كهربي	kahrabāʾī		root=ك ه ر ب
+1474	ar_w_bawuduh	بِوُضُوحٍ	adv	function	clearly	بجلاء	biwuḍūḥ	بوضوح
+1475	ar_w_umuman	عُمُومًا	adv	function	generally	بشكل عامّ	ʿumūman	عموما
+1476	ar_w_bisaraha	بِصَرَاحَةٍ	adv	function	honestly, frankly	بكل صدق	biṣarāḥa	بصراحة
+1477	ar_w_asasan	أَسَاسًا	adv	function	mainly, basically	في الأصل	asāsan	أساسا
+1478	ar_w_nadiran	نَادِرًا	adv	time	rarely	قليلًا	nādiran	نادرا
+1479	ar_w_bintizam	بِانْتِظَامٍ	adv	time	regularly	بشكل منتظم	bintiẓām	بانتظام
+1480	ar_w_bibasata	بِبَسَاطَةٍ	adv	function	simply	بسهولة	bibasāṭa	ببساطة
+1481	ar_w_awwalan	أَوَّلًا	adv	function	first(ly)	في البداية	awwalan	أولا
+1482	ar_w_thaniyan	ثَانِيًا	adv	function	secondly	بعد ذلك	thāniyan	ثانيا
+1483	ar_w_haliyyan	حَالِيًّا	adv	time	currently	الآن	ḥāliyyan	حاليا
+1484	ar_w_sabiqan	سَابِقًا	adv	time	previously	من قبل	sābiqan	سابقا
+1485	ar_w_lahiqan	لَاحِقًا	adv	time	later	فيما بعد	lāḥiqan	لاحقا
+1486	ar_w_asa	عَصًا	noun	function	stick	عود	ʿaṣan	عصا	gender=f; plural=عِصِيّ; root=ع ص و
+1487	ar_w_namir	نَمِر	noun	animals	tiger	حيوان مفترس	namir		gender=m; plural=نُمُور; root=ن م ر
+1488	ar_w_hawd	حَوْض	noun	home	basin, sink	مغسلة	ḥawḍ		gender=m; plural=أَحْوَاض; root=ح و ض
+1489	ar_w_marwaha	مِرْوَحَة	noun	home	fan	مكيّف بسيط	mirwaḥa		gender=f; plural=مَرَاوِح; root=ر و ح
+1490	ar_w_siyasa	سِيَاسَة	noun	people	politics; policy	حكم	siyāsa		gender=f; plural=سِيَاسَات; root=س و س
+1491	ar_w_qadin	قَاضٍ	noun	people	judge	حاكم	qāḍin	قاضي, القاضي	gender=m; plural=قُضَاة; root=ق ض ي
+1492	ar_w_mahkama	مَحْكَمَة	noun	places	court	دار القضاء	maḥkama		gender=f; plural=مَحَاكِم; root=ح ك م
+1493	ar_w_bir	بِئْر	noun	nature	well	عين ماء	biʾr		gender=f; plural=آبَار; root=ب أ ر
+1494	ar_w_birka	بِرْكَة	noun	nature	pond, pool	حوض ماء	birka		gender=f; plural=بِرَك; root=ب ر ك
+1495	ar_w_jidhr	جِذْر	noun	nature	root	أصل	jidhr		gender=m; plural=جُذُور; root=ج ذ ر
+1496	ar_w_bidhra	بِذْرَة	noun	nature	seed	حبّة	bidhra		gender=f; plural=بُذُور; root=ب ذ ر
+1497	ar_w_khabbaz	خَبَّاز	noun	work	baker	صانع الخبز	khabbāz		gender=m; plural=خَبَّازُون; root=خ ب ز
+1498	ar_w_jazzar	جَزَّار	noun	work	butcher	لحّام	jazzār		gender=m; plural=جَزَّارُون; root=ج ز ر
+1499	ar_w_hallaq	حَلَّاق	noun	work	barber	مزيّن	ḥallāq		gender=m; plural=حَلَّاقُون; root=ح ل ق
+1500	ar_w_khayyat	خَيَّاط	noun	work	tailor	صانع الثياب	khayyāṭ		gender=m; plural=خَيَّاطُون; root=خ ي ط
