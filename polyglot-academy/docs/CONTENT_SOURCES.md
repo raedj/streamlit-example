@@ -65,7 +65,7 @@ CEFR equivalents of the 10 levels are approximate (1–2 ≈ A1, 3–4 ≈ A2, 5
 
 | Language | Levels written | Entries | Examples | Native-speaker review |
 |---|---|---|---|---|
-| English | 1–5 | 1500 / 3000 | 2400 | Not reviewed |
+| English | 1–6 | 1800 / 3000 | 2700 | Not reviewed |
 | Mandarin Chinese | 1–5 | 1500 / 3000 | 2400 | Not reviewed |
 | Spanish | 1–5 | 1500 / 3000 | 2400 | Not reviewed |
 | French | 1–5 | 1500 / 3000 | 2400 | Not reviewed |
