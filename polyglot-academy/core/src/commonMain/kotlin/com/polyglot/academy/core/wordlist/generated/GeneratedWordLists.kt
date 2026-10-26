@@ -6,7 +6,7 @@ internal object GeneratedWordLists {
     fun levels(languageTag: String): List<() -> Pair<List<String>, List<String>>> = when (languageTag) {
         "en" -> listOf({ EnLevel01.words to EnLevel01.examples }, { EnLevel02.words to EnLevel02.examples }, { EnLevel03.words to EnLevel03.examples }, { EnLevel04.words to EnLevel04.examples }, { EnLevel05.words to EnLevel05.examples })
         "zh" -> listOf({ ZhLevel01.words to ZhLevel01.examples }, { ZhLevel02.words to ZhLevel02.examples }, { ZhLevel03.words to ZhLevel03.examples }, { ZhLevel04.words to ZhLevel04.examples })
-        "es" -> listOf({ EsLevel01.words to EsLevel01.examples }, { EsLevel02.words to EsLevel02.examples }, { EsLevel03.words to EsLevel03.examples }, { EsLevel04.words to EsLevel04.examples })
+        "es" -> listOf({ EsLevel01.words to EsLevel01.examples }, { EsLevel02.words to EsLevel02.examples }, { EsLevel03.words to EsLevel03.examples }, { EsLevel04.words to EsLevel04.examples }, { EsLevel05.words to EsLevel05.examples })
         "fr" -> listOf({ FrLevel01.words to FrLevel01.examples }, { FrLevel02.words to FrLevel02.examples }, { FrLevel03.words to FrLevel03.examples }, { FrLevel04.words to FrLevel04.examples })
         "ar" -> listOf({ ArLevel01.words to ArLevel01.examples }, { ArLevel02.words to ArLevel02.examples }, { ArLevel03.words to ArLevel03.examples }, { ArLevel04.words to ArLevel04.examples })
         "tr" -> listOf({ TrLevel01.words to TrLevel01.examples }, { TrLevel02.words to TrLevel02.examples }, { TrLevel03.words to TrLevel03.examples }, { TrLevel04.words to TrLevel04.examples })
