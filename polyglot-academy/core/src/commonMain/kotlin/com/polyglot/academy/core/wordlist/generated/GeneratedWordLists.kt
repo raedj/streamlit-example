@@ -4,7 +4,7 @@ package com.polyglot.academy.core.wordlist.generated
 /** Rows of each generated level: words then examples, as tab-separated lines. */
 internal object GeneratedWordLists {
     fun levels(languageTag: String): List<() -> Pair<List<String>, List<String>>> = when (languageTag) {
-        "en" -> listOf({ EnLevel01.words to EnLevel01.examples }, { EnLevel02.words to EnLevel02.examples }, { EnLevel03.words to EnLevel03.examples }, { EnLevel04.words to EnLevel04.examples }, { EnLevel05.words to EnLevel05.examples }, { EnLevel06.words to EnLevel06.examples })
+        "en" -> listOf({ EnLevel01.words to EnLevel01.examples }, { EnLevel02.words to EnLevel02.examples }, { EnLevel03.words to EnLevel03.examples }, { EnLevel04.words to EnLevel04.examples }, { EnLevel05.words to EnLevel05.examples }, { EnLevel06.words to EnLevel06.examples }, { EnLevel07.words to EnLevel07.examples })
         "zh" -> listOf({ ZhLevel01.words to ZhLevel01.examples }, { ZhLevel02.words to ZhLevel02.examples }, { ZhLevel03.words to ZhLevel03.examples }, { ZhLevel04.words to ZhLevel04.examples }, { ZhLevel05.words to ZhLevel05.examples }, { ZhLevel06.words to ZhLevel06.examples })
         "es" -> listOf({ EsLevel01.words to EsLevel01.examples }, { EsLevel02.words to EsLevel02.examples }, { EsLevel03.words to EsLevel03.examples }, { EsLevel04.words to EsLevel04.examples }, { EsLevel05.words to EsLevel05.examples }, { EsLevel06.words to EsLevel06.examples })
         "fr" -> listOf({ FrLevel01.words to FrLevel01.examples }, { FrLevel02.words to FrLevel02.examples }, { FrLevel03.words to FrLevel03.examples }, { FrLevel04.words to FrLevel04.examples }, { FrLevel05.words to FrLevel05.examples }, { FrLevel06.words to FrLevel06.examples })
