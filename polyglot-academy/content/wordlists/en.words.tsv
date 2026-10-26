@@ -1199,3 +1199,303 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 1198	en_w_detail	detail	noun	function	detail	تفصيل	/ˈdiːteɪl/
 1199	en_w_effect	effect	noun	function	effect	أثر	/ɪˈfekt/
 1200	en_w_effort	effort	noun	work	effort	جهد	/ˈefət/
+1201	en_w_cheat	cheat	verb	school	to cheat	يغشّ	/tʃiːt/
+1202	en_w_concentrate	concentrate	verb	mind	to concentrate	يركّز	/ˈkɒnsntreɪt/
+1203	en_w_contain	contain	verb	function	to contain	يحتوي	/kənˈteɪn/
+1204	en_w_divide	divide	verb	numbers	to divide	يقسم	/dɪˈvaɪd/
+1205	en_w_perform	perform	verb	leisure	to perform	يؤدّي، يعرض	/pəˈfɔːm/
+1206	en_w_produce	produce	verb	work	to produce	يُنتج	/prəˈdjuːs/
+1207	en_w_suffer	suffer	verb	health	to suffer	يعاني	/ˈsʌfə/
+1208	en_w_survive	survive	verb	actions	to survive	ينجو	/səˈvaɪv/
+1209	en_w_advantage	advantage	noun	work	advantage	ميزة	/ədˈvɑːntɪdʒ/
+1210	en_w_century	century	noun	time	century	قرن	/ˈsentʃəri/	centuries
+1211	en_w_competition	competition	noun	leisure	competition	مسابقة	/ˌkɒmpəˈtɪʃn/
+1212	en_w_condition	condition	noun	function	condition	حالة؛ شرط	/kənˈdɪʃn/
+1213	en_w_crime	crime	noun	people	crime	جريمة	/kraɪm/
+1214	en_w_enemy	enemy	noun	people	enemy	عدوّ	/ˈenəmi/	enemies
+1215	en_w_expert	expert	noun	work	expert	خبير	/ˈekspɜːt/
+1216	en_w_fact	fact	noun	function	fact	حقيقة	/fækt/
+1217	en_w_fashion	fashion	noun	clothes	fashion	موضة	/ˈfæʃn/
+1218	en_w_government	government	noun	people	government	حكومة	/ˈɡʌvənmənt/
+1219	en_w_habit	habit	noun	people	habit	عادة	/ˈhæbɪt/
+1220	en_w_industry	industry	noun	work	industry	صناعة	/ˈɪndəstri/	industries
+1221	en_w_injury	injury	noun	health	injury	إصابة	/ˈɪndʒəri/	injuries
+1222	en_w_law	law	noun	people	law	قانون	/lɔː/
+1223	en_w_leader	leader	noun	people	leader	قائد	/ˈliːdə/
+1224	en_w_material	material	noun	function	material	مادّة	/məˈtɪəriəl/
+1225	en_w_memory	memory	noun	mind	memory	ذاكرة؛ ذكرى	/ˈmeməri/	memories
+1226	en_w_nature	nature	noun	nature	nature	طبيعة	/ˈneɪtʃə/
+1227	en_w_peace	peace	noun	people	peace	سلام	/piːs/
+1228	en_w_pollution	pollution	noun	nature	pollution	تلوّث	/pəˈluːʃn/
+1229	en_w_power	power	noun	function	power	قوّة؛ كهرباء	/ˈpaʊə/
+1230	en_w_president	president	noun	people	president	رئيس	/ˈprezɪdənt/
+1231	en_w_prison	prison	noun	places	prison	سجن	/ˈprɪzn/
+1232	en_w_product	product	noun	work	product	منتَج	/ˈprɒdʌkt/
+1233	en_w_research	research	noun	school	research	بحث	/rɪˈsɜːtʃ/
+1234	en_w_risk	risk	noun	function	risk	مخاطرة	/rɪsk/
+1235	en_w_rock	rock	noun	nature	rock	صخرة	/rɒk/
+1236	en_w_rule	rule	noun	function	rule	قاعدة	/ruːl/
+1237	en_w_sense	sense	noun	mind	sense	حسّ؛ معنى	/sens/
+1238	en_w_service	service	noun	work	service	خدمة	/ˈsɜːvɪs/
+1239	en_w_shape	shape	noun	function	shape	شكل	/ʃeɪp/
+1240	en_w_situation	situation	noun	function	situation	وضع	/ˌsɪtʃuˈeɪʃn/
+1241	en_w_solution	solution	noun	mind	solution	حلّ	/səˈluːʃn/
+1242	en_w_speech	speech	noun	communication	speech	خطاب	/spiːtʃ/	speeches
+1243	en_w_system	system	noun	function	system	نظام	/ˈsɪstəm/
+1244	en_w_task	task	noun	work	task	مهمّة	/tɑːsk/
+1245	en_w_technology	technology	noun	work	technology	تكنولوجيا	/tekˈnɒlədʒi/
+1246	en_w_truth	truth	noun	communication	truth	حقيقة	/truːθ/
+1247	en_w_war	war	noun	people	war	حرب	/wɔː/
+1248	en_w_awful	awful	adj	descriptions	awful	فظيع	/ˈɔːfl/
+1249	en_w_blind	blind	adj	health	blind	أعمى	/blaɪnd/
+1250	en_w_fair	fair	adj	people	fair	عادل	/feə/
+1251	en_w_foreign	foreign	adj	travel	foreign	أجنبي	/ˈfɒrən/
+1252	en_w_narrow	narrow	adj	descriptions	narrow	ضيّق	/ˈnærəʊ/
+1253	en_w_public	public	adj	places	public	عامّ	/ˈpʌblɪk/
+1254	en_w_rude	rude	adj	people	rude	وقح	/ruːd/
+1255	en_w_mostly	mostly	adv	function	mostly	في الغالب	/ˈməʊstli/
+1256	en_w_properly	properly	adv	function	properly	كما ينبغي	/ˈprɒpəli/
+1257	en_w_except	except	prep	function	except	ما عدا	/ɪkˈsept/
+1258	en_w_admire	admire	verb	people	to admire	يُعجب بـ	/ədˈmaɪə/
+1259	en_w_admit	admit	verb	communication	to admit	يعترف	/ədˈmɪt/	admitted, admitting
+1260	en_w_advise	advise	verb	communication	to advise	ينصح	/ədˈvaɪz/
+1261	en_w_announce	announce	verb	communication	to announce	يعلن	/əˈnaʊns/
+1262	en_w_appear	appear	verb	actions	to appear	يظهر	/əˈpɪə/
+1263	en_w_appreciate	appreciate	verb	feelings	to appreciate	يقدّر	/əˈpriːʃieɪt/
+1264	en_w_arrange	arrange	verb	work	to arrange	يرتّب	/əˈreɪndʒ/
+1265	en_w_arrest	arrest	verb	people	to arrest	يعتقل	/əˈrest/
+1266	en_w_attach	attach	verb	work	to attach	يرفق	/əˈtætʃ/	attaches
+1267	en_w_attend	attend	verb	school	to attend	يحضر	/əˈtend/
+1268	en_w_bend	bend	verb	body	to bend	ينحني	/bend/	bent	irregular=yes
+1269	en_w_blame	blame	verb	people	to blame	يلوم	/bleɪm/
+1270	en_w_bother	bother	verb	people	to bother	يزعج	/ˈbɒðə/
+1271	en_w_bury	bury	verb	actions	to bury	يدفن	/ˈberi/	buries, buried
+1272	en_w_calculate	calculate	verb	numbers	to calculate	يحسب	/ˈkælkjuleɪt/
+1273	en_w_charge	charge	verb	shopping	to charge (money; a battery)	يتقاضى؛ يشحن	/tʃɑːdʒ/
+1274	en_w_chat	chat	verb	communication	to chat	يدردش	/tʃæt/	chatted, chatting
+1275	en_w_cheer	cheer	verb	feelings	to cheer	يهتف	/tʃɪə/
+1276	en_w_chew	chew	verb	food	to chew	يمضغ	/tʃuː/
+1277	en_w_claim	claim	verb	communication	to claim	يدّعي، يطالب	/kleɪm/
+1278	en_w_clap	clap	verb	actions	to clap	يصفّق	/klæp/	clapped, clapping
+1279	en_w_combine	combine	verb	actions	to combine	يجمع بين	/kəmˈbaɪn/
+1280	en_w_comment	comment	verb	communication	to comment; a comment	يعلّق؛ تعليق	/ˈkɒment/
+1281	en_w_compete	compete	verb	leisure	to compete	يتنافس	/kəmˈpiːt/
+1282	en_w_contact	contact	verb	communication	to contact	يتواصل مع	/ˈkɒntækt/
+1283	en_w_convince	convince	verb	communication	to convince	يقنع	/kənˈvɪns/
+1284	en_w_cope	cope	verb	feelings	to cope	يتدبّر أمره	/kəʊp/
+1285	en_w_cure	cure	verb	health	to cure; a cure	يشفي؛ علاج	/kjʊə/
+1286	en_w_dare	dare	verb	feelings	to dare	يجرؤ	/deə/
+1287	en_w_decorate	decorate	verb	home	to decorate	يزيّن	/ˈdekəreɪt/
+1288	en_w_defend	defend	verb	actions	to defend	يدافع	/dɪˈfend/
+1289	en_w_deny	deny	verb	communication	to deny	ينكر	/dɪˈnaɪ/	denies, denied
+1290	en_w_deserve	deserve	verb	people	to deserve	يستحقّ	/dɪˈzɜːv/
+1291	en_w_dig	dig	verb	actions	to dig	يحفر	/dɪɡ/	dug, digging	irregular=yes
+1292	en_w_disagree	disagree	verb	communication	to disagree	يختلف في الرأي	/ˌdɪsəˈɡriː/
+1293	en_w_discover	discover	verb	mind	to discover	يكتشف	/dɪˈskʌvə/
+1294	en_w_dive	dive	verb	leisure	to dive	يغطس	/daɪv/
+1295	en_w_drag	drag	verb	actions	to drag	يجرّ	/dræɡ/	dragged, dragging
+1296	en_w_employ	employ	verb	work	to employ	يوظّف	/ɪmˈplɔɪ/
+1297	en_w_examine	examine	verb	health	to examine	يفحص	/ɪɡˈzæmɪn/
+1298	en_w_exchange	exchange	verb	shopping	to exchange	يبادل	/ɪksˈtʃeɪndʒ/
+1299	en_w_explode	explode	verb	actions	to explode	ينفجر	/ɪkˈspləʊd/
+1300	en_w_explore	explore	verb	travel	to explore	يستكشف	/ɪkˈsplɔː/
+1301	en_w_express	express	verb	communication	to express	يعبّر	/ɪkˈspres/	expresses
+1302	en_w_feed	feed	verb	animals	to feed	يطعم	/fiːd/	fed	irregular=yes
+1303	en_w_float	float	verb	nature	to float	يطفو	/fləʊt/
+1304	en_w_focus	focus	verb	mind	to focus	يركّز	/ˈfəʊkəs/	focuses
+1305	en_w_frighten	frighten	verb	feelings	to frighten	يُخيف	/ˈfraɪtn/
+1306	en_w_grab	grab	verb	actions	to grab	يمسك بسرعة	/ɡræb/	grabbed, grabbing
+1307	en_w_hire	hire	verb	work	to hire	يستأجر؛ يوظّف	/ˈhaɪə/
+1308	en_w_hug	hug	verb	people	to hug	يعانق	/hʌɡ/	hugged, hugging
+1309	en_w_hunt	hunt	verb	animals	to hunt	يصطاد	/hʌnt/
+1310	en_w_impress	impress	verb	people	to impress	يُبهر	/ɪmˈpres/	impresses
+1311	en_w_inform	inform	verb	communication	to inform	يُعلم	/ɪnˈfɔːm/
+1312	en_w_insist	insist	verb	communication	to insist	يصرّ	/ɪnˈsɪst/
+1313	en_w_interrupt	interrupt	verb	communication	to interrupt	يقاطع	/ˌɪntəˈrʌpt/
+1314	en_w_involve	involve	verb	function	to involve	يتضمّن، يُشرك	/ɪnˈvɒlv/
+1315	en_w_judge	judge	verb	people	to judge; a judge	يحكم؛ قاضٍ	/dʒʌdʒ/
+1316	en_w_load	load	verb	actions	to load; a load	يحمّل؛ حمولة	/ləʊd/
+1317	en_w_nod	nod	verb	communication	to nod	يومئ برأسه	/nɒd/	nodded, nodding
+1318	en_w_obey	obey	verb	people	to obey	يطيع	/əˈbeɪ/
+1319	en_w_observe	observe	verb	senses	to observe	يراقب	/əbˈzɜːv/
+1320	en_w_occur	occur	verb	function	to occur	يحدث	/əˈkɜː/	occurred, occurring
+1321	en_w_owe	owe	verb	shopping	to owe	يدين بـ	/əʊ/
+1322	en_w_persuade	persuade	verb	communication	to persuade	يقنع	/pəˈsweɪd/
+1323	en_w_praise	praise	verb	communication	to praise	يمدح	/preɪz/
+1324	en_w_prevent	prevent	verb	actions	to prevent	يمنع	/prɪˈvent/
+1325	en_w_prove	prove	verb	mind	to prove	يثبت	/pruːv/
+1326	en_w_publish	publish	verb	work	to publish	ينشر	/ˈpʌblɪʃ/	publishes
+1327	en_w_punish	punish	verb	people	to punish	يعاقب	/ˈpʌnɪʃ/	punishes
+1328	en_w_quit	quit	verb	work	to quit	يستقيل، يترك	/kwɪt/	quitting	irregular=yes
+1329	en_w_react	react	verb	people	to react	يتفاعل	/riˈækt/
+1330	en_w_recover	recover	verb	health	to recover	يتعافى	/rɪˈkʌvə/
+1331	en_w_rely	rely	verb	people	to rely	يعتمد على	/rɪˈlaɪ/	relies, relied
+1332	en_w_request	request	verb	communication	to request; a request	يطلب؛ طلب	/rɪˈkwest/
+1333	en_w_require	require	verb	function	to require	يتطلّب	/rɪˈkwaɪə/
+1334	en_w_retire	retire	verb	work	to retire	يتقاعد	/rɪˈtaɪə/
+1335	en_w_reveal	reveal	verb	communication	to reveal	يكشف	/rɪˈviːl/
+1336	en_w_rob	rob	verb	people	to rob	يسرق	/rɒb/	robbed, robbing
+1337	en_w_rub	rub	verb	actions	to rub	يفرك	/rʌb/	rubbed, rubbing
+1338	en_w_sail	sail	verb	travel	to sail	يبحر	/seɪl/
+1339	en_w_scratch	scratch	verb	actions	to scratch	يخدش، يحكّ	/skrætʃ/	scratches
+1340	en_w_select	select	verb	actions	to select	يختار	/sɪˈlekt/
+1341	en_w_separate	separate	verb	actions	to separate; separate (adj)	يفصل؛ منفصل	/ˈsepəreɪt/
+1342	en_w_settle	settle	verb	home	to settle	يستقرّ	/ˈsetl/
+1343	en_w_shave	shave	verb	body	to shave	يحلق	/ʃeɪv/
+1344	en_w_sigh	sigh	verb	feelings	to sigh	يتنهّد	/saɪ/
+1345	en_w_slide	slide	verb	movement	to slide	ينزلق	/slaɪd/	slid	irregular=yes
+1346	en_w_slip	slip	verb	movement	to slip	ينزلق	/slɪp/	slipped, slipping
+1347	en_w_sneeze	sneeze	verb	health	to sneeze	يعطس	/sniːz/
+1348	en_w_spoil	spoil	verb	actions	to spoil	يُفسد	/spɔɪl/
+1349	en_w_stare	stare	verb	senses	to stare	يحدّق	/steə/
+1350	en_w_stir	stir	verb	food	to stir	يحرّك	/stɜː/	stirred, stirring
+1351	en_w_stretch	stretch	verb	body	to stretch	يتمطّى، يمدّ	/stretʃ/	stretches
+1352	en_w_struggle	struggle	verb	actions	to struggle	يكافح	/ˈstrʌɡl/
+1353	en_w_sweep	sweep	verb	home	to sweep	يكنس	/swiːp/	swept	irregular=yes
+1354	en_w_tear	tear	verb	actions	to tear; a tear	يمزّق؛ دمعة	/teə/	tore, torn	irregular=yes
+1355	en_w_threaten	threaten	verb	people	to threaten	يهدّد	/ˈθretn/
+1356	en_w_wander	wander	verb	movement	to wander	يتجوّل	/ˈwɒndə/
+1357	en_w_whistle	whistle	verb	senses	to whistle; a whistle	يصفّر؛ صفّارة	/ˈwɪsl/
+1358	en_w_wipe	wipe	verb	home	to wipe	يمسح	/waɪp/
+1359	en_w_ability	ability	noun	work	ability	قدرة	/əˈbɪləti/	abilities
+1360	en_w_accommodation	accommodation	noun	travel	accommodation	سكن	/əˌkɒməˈdeɪʃn/
+1361	en_w_achievement	achievement	noun	work	achievement	إنجاز	/əˈtʃiːvmənt/
+1362	en_w_actor	actor	noun	leisure	actor	ممثّل	/ˈæktə/
+1363	en_w_adventure	adventure	noun	leisure	adventure	مغامرة	/ədˈventʃə/
+1364	en_w_aim	aim	noun	work	aim	هدف	/eɪm/
+1365	en_w_anger	anger	noun	feelings	anger	غضب	/ˈæŋɡə/
+1366	en_w_ankle	ankle	noun	body	ankle	كاحل	/ˈæŋkl/
+1367	en_w_anniversary	anniversary	noun	time	anniversary	ذكرى سنوية	/ˌænɪˈvɜːsəri/	anniversaries
+1368	en_w_apology	apology	noun	communication	apology	اعتذار	/əˈpɒlədʒi/	apologies
+1369	en_w_application	application	noun	work	application	طلب؛ تطبيق	/ˌæplɪˈkeɪʃn/
+1370	en_w_architect	architect	noun	work	architect	مهندس معماري	/ˈɑːkɪtekt/
+1371	en_w_argument	argument	noun	communication	argument	جدال	/ˈɑːɡjumənt/
+1372	en_w_arrival	arrival	noun	travel	arrival	وصول	/əˈraɪvl/
+1373	en_w_assistant	assistant	noun	work	assistant	مساعد	/əˈsɪstənt/
+1374	en_w_atmosphere	atmosphere	noun	feelings	atmosphere	جوّ	/ˈætməsfɪə/
+1375	en_w_attempt	attempt	noun	actions	attempt; to attempt	محاولة؛ يحاول	/əˈtempt/
+1376	en_w_audience	audience	noun	leisure	audience	جمهور	/ˈɔːdiəns/
+1377	en_w_author	author	noun	leisure	author	مؤلّف	/ˈɔːθə/
+1378	en_w_average	average	noun	numbers	average	متوسّط	/ˈævərɪdʒ/
+1379	en_w_award	award	noun	leisure	award	جائزة	/əˈwɔːd/
+1380	en_w_background	background	noun	function	background	خلفية	/ˈbækɡraʊnd/
+1381	en_w_balance	balance	noun	function	balance	توازن؛ رصيد	/ˈbæləns/
+1382	en_w_band	band	noun	leisure	band	فرقة موسيقية	/bænd/
+1383	en_w_bar	bar	noun	places	bar	حانة؛ قطعة	/bɑː/
+1384	en_w_battle	battle	noun	people	battle	معركة	/ˈbætl/
+1385	en_w_beard	beard	noun	body	beard	لحية	/bɪəd/
+1386	en_w_belt	belt	noun	clothes	belt	حزام	/belt/
+1387	en_w_bin	bin	noun	home	bin	سلّة مهملات	/bɪn/
+1388	en_w_biscuit	biscuit	noun	food	biscuit	بسكويت	/ˈbɪskɪt/
+1389	en_w_branch	branch	noun	nature	branch	غصن؛ فرع	/brɑːntʃ/	branches
+1390	en_w_brick	brick	noun	home	brick	طوبة	/brɪk/
+1391	en_w_bush	bush	noun	nature	bush	شجيرة	/bʊʃ/	bushes
+1392	en_w_button	button	noun	clothes	button	زرّ	/ˈbʌtn/
+1393	en_w_cage	cage	noun	animals	cage	قفص	/keɪdʒ/
+1394	en_w_calendar	calendar	noun	time	calendar	تقويم	/ˈkælɪndə/
+1395	en_w_captain	captain	noun	people	captain	قائد، قبطان	/ˈkæptɪn/
+1396	en_w_cave	cave	noun	nature	cave	كهف	/keɪv/
+1397	en_w_ceremony	ceremony	noun	leisure	ceremony	حفل	/ˈserəməni/	ceremonies
+1398	en_w_chain	chain	noun	function	chain	سلسلة	/tʃeɪn/
+1399	en_w_challenge	challenge	noun	work	challenge	تحدٍّ	/ˈtʃælɪndʒ/
+1400	en_w_champion	champion	noun	leisure	champion	بطل	/ˈtʃæmpiən/
+1401	en_w_channel	channel	noun	leisure	channel	قناة	/ˈtʃænl/
+1402	en_w_chapter	chapter	noun	school	chapter	فصل	/ˈtʃæptə/
+1403	en_w_charity	charity	noun	people	charity	جمعية خيرية	/ˈtʃærəti/	charities
+1404	en_w_cheek	cheek	noun	body	cheek	خدّ	/tʃiːk/
+1405	en_w_chest	chest	noun	body	chest	صدر	/tʃest/
+1406	en_w_circle	circle	noun	function	circle	دائرة	/ˈsɜːkl/
+1407	en_w_citizen	citizen	noun	people	citizen	مواطن	/ˈsɪtɪzn/
+1408	en_w_climate	climate	noun	weather	climate	مناخ	/ˈklaɪmət/
+1409	en_w_clinic	clinic	noun	health	clinic	عيادة	/ˈklɪnɪk/
+1410	en_w_club	club	noun	leisure	club	نادٍ	/klʌb/
+1411	en_w_coach	coach	noun	travel	coach (bus); coach (trainer)	حافلة سياحية؛ مدرّب	/kəʊtʃ/	coaches
+1412	en_w_collection	collection	noun	leisure	collection	مجموعة	/kəˈlekʃn/
+1413	en_w_community	community	noun	people	community	مجتمع محلي	/kəˈmjuːnəti/	communities
+1414	en_w_complaint	complaint	noun	communication	complaint	شكوى	/kəmˈpleɪnt/
+1415	en_w_conference	conference	noun	work	conference	مؤتمر	/ˈkɒnfərəns/
+1416	en_w_confidence	confidence	noun	feelings	confidence	ثقة	/ˈkɒnfɪdəns/
+1417	en_w_cotton	cotton	noun	clothes	cotton	قطن	/ˈkɒtn/
+1418	en_w_couple	couple	noun	people	couple	زوجان؛ عدد قليل	/ˈkʌpl/
+1419	en_w_courage	courage	noun	feelings	courage	شجاعة	/ˈkʌrɪdʒ/
+1420	en_w_crew	crew	noun	travel	crew	طاقم	/kruː/
+1421	en_w_currency	currency	noun	shopping	currency	عملة	/ˈkʌrənsi/	currencies
+1422	en_w_data	data	noun	work	data	بيانات	/ˈdeɪtə/
+1423	en_w_debt	debt	noun	shopping	debt	دَين	/det/
+1424	en_w_decade	decade	noun	time	decade	عقد (عشر سنوات)	/ˈdekeɪd/
+1425	en_w_degree	degree	noun	school	degree	درجة؛ شهادة جامعية	/dɪˈɡriː/
+1426	en_w_department	department	noun	work	department	قسم	/dɪˈpɑːtmənt/
+1427	en_w_destination	destination	noun	travel	destination	وجهة	/ˌdestɪˈneɪʃn/
+1428	en_w_device	device	noun	home	device	جهاز	/dɪˈvaɪs/
+1429	en_w_diary	diary	noun	leisure	diary	مذكّرات	/ˈdaɪəri/	diaries
+1430	en_w_disaster	disaster	noun	nature	disaster	كارثة	/dɪˈzɑːstə/
+1431	en_w_discount	discount	noun	shopping	discount	تخفيض	/ˈdɪskaʊnt/
+1432	en_w_document	document	noun	work	document	وثيقة	/ˈdɒkjumənt/
+1433	en_w_drama	drama	noun	leisure	drama	دراما	/ˈdrɑːmə/
+1434	en_w_drum	drum	noun	leisure	drum	طبل	/drʌm/
+1435	en_w_dust	dust	noun	home	dust	غبار	/dʌst/
+1436	en_w_duty	duty	noun	work	duty	واجب	/ˈdjuːti/	duties
+1437	en_w_employer	employer	noun	work	employer	صاحب العمل	/ɪmˈplɔɪə/
+1438	en_w_envelope	envelope	noun	communication	envelope	ظرف	/ˈenvələʊp/
+1439	en_w_equipment	equipment	noun	work	equipment	معدّات	/ɪˈkwɪpmənt/
+1440	en_w_essay	essay	noun	school	essay	مقال	/ˈeseɪ/
+1441	en_w_evidence	evidence	noun	people	evidence	دليل	/ˈevɪdəns/
+1442	en_w_fault	fault	noun	people	fault	خطأ، ذنب	/fɔːlt/
+1443	en_w_fee	fee	noun	shopping	fee	رسم	/fiː/
+1444	en_w_flavour	flavour	noun	food	flavour	نكهة	/ˈfleɪvə/
+1445	en_w_flood	flood	noun	weather	flood	فيضان	/flʌd/
+1446	en_w_flour	flour	noun	food	flour	طحين	/ˈflaʊə/
+1447	en_w_fog	fog	noun	weather	fog	ضباب	/fɒɡ/
+1448	en_w_freedom	freedom	noun	people	freedom	حرّية	/ˈfriːdəm/
+1449	en_w_friendship	friendship	noun	people	friendship	صداقة	/ˈfrendʃɪp/
+1450	en_w_frog	frog	noun	animals	frog	ضفدع	/frɒɡ/
+1451	en_w_fuel	fuel	noun	travel	fuel	وقود	/ˈfjuːəl/
+1452	en_w_gallery	gallery	noun	leisure	gallery	معرض فنّي	/ˈɡæləri/	galleries
+1453	en_w_gap	gap	noun	function	gap	فجوة	/ɡæp/
+1454	en_w_gas	gas	noun	home	gas	غاز	/ɡæs/
+1455	en_w_generation	generation	noun	people	generation	جيل	/ˌdʒenəˈreɪʃn/
+1456	en_w_glove	glove	noun	clothes	glove	قفّاز	/ɡlʌv/
+1457	en_w_glue	glue	noun	school	glue	غراء	/ɡluː/
+1458	en_w_grammar	grammar	noun	school	grammar	قواعد اللغة	/ˈɡræmə/
+1459	en_w_active	active	adj	descriptions	active	نشيط	/ˈæktɪv/
+1460	en_w_alive	alive	adj	descriptions	alive	حيّ	/əˈlaɪv/
+1461	en_w_ancient	ancient	adj	descriptions	ancient	قديم جدًا	/ˈeɪnʃənt/
+1462	en_w_anxious	anxious	adj	feelings	anxious	قلق	/ˈæŋkʃəs/
+1463	en_w_asleep	asleep	adj	descriptions	asleep	نائم	/əˈsliːp/
+1464	en_w_awake	awake	adj	descriptions	awake	مستيقظ	/əˈweɪk/
+1465	en_w_aware	aware	adj	mind	aware	مدرك	/əˈweə/
+1466	en_w_basic	basic	adj	descriptions	basic	أساسي	/ˈbeɪsɪk/
+1467	en_w_bitter	bitter	adj	food	bitter	مُرّ	/ˈbɪtə/
+1468	en_w_cheerful	cheerful	adj	feelings	cheerful	مرح	/ˈtʃɪəfl/
+1469	en_w_common	common	adj	descriptions	common	شائع	/ˈkɒmən/
+1470	en_w_confident	confident	adj	feelings	confident	واثق	/ˈkɒnfɪdənt/
+1471	en_w_confused	confused	adj	feelings	confused	مرتبك	/kənˈfjuːzd/
+1472	en_w_cruel	cruel	adj	people	cruel	قاسٍ	/ˈkruːəl/
+1473	en_w_curious	curious	adj	people	curious	فضولي	/ˈkjʊəriəs/
+1474	en_w_deaf	deaf	adj	health	deaf	أصمّ	/def/
+1475	en_w_eager	eager	adj	feelings	eager	متلهّف	/ˈiːɡə/
+1476	en_w_elderly	elderly	adj	people	elderly	مسنّ	/ˈeldəli/
+1477	en_w_equal	equal	adj	numbers	equal	متساوٍ	/ˈiːkwəl/
+1478	en_w_excellent	excellent	adj	descriptions	excellent	ممتاز	/ˈeksələnt/
+1479	en_w_familiar	familiar	adj	mind	familiar	مألوف	/fəˈmɪliə/
+1480	en_w_fluent	fluent	adj	communication	fluent	طليق	/ˈfluːənt/
+1481	en_w_generous	generous	adj	people	generous	كريم	/ˈdʒenərəs/
+1482	en_w_gentle	gentle	adj	people	gentle	لطيف	/ˈdʒentl/
+1483	en_w_grateful	grateful	adj	feelings	grateful	ممتنّ	/ˈɡreɪtfl/
+1484	en_w_guilty	guilty	adj	feelings	guilty	مذنب	/ˈɡɪlti/
+1485	en_w_helpful	helpful	adj	people	helpful	مفيد، متعاون	/ˈhelpfl/
+1486	en_w_afterwards	afterwards	adv	time	afterwards	بعد ذلك	/ˈɑːftəwədz/
+1487	en_w_anywhere	anywhere	adv	places	anywhere	في أيّ مكان	/ˈeniweə/
+1488	en_w_badly	badly	adv	function	badly	بشكل سيئ	/ˈbædli/
+1489	en_w_certainly	certainly	adv	function	certainly	بالتأكيد	/ˈsɜːtnli/
+1490	en_w_clearly	clearly	adv	function	clearly	بوضوح	/ˈklɪəli/
+1491	en_w_eventually	eventually	adv	time	eventually	في النهاية	/ɪˈventʃuəli/
+1492	en_w_fairly	fairly	adv	function	fairly	إلى حدّ ما	/ˈfeəli/
+1493	en_w_generally	generally	adv	function	generally	عمومًا	/ˈdʒenrəli/
+1494	en_w_gently	gently	adv	function	gently	بلطف	/ˈdʒentli/
+1495	en_w_honestly	honestly	adv	function	honestly	بصراحة	/ˈɒnɪstli/
+1496	en_w_mainly	mainly	adv	function	mainly	أساسًا	/ˈmeɪnli/
+1497	en_w_nowadays	nowadays	adv	time	nowadays	هذه الأيام	/ˈnaʊədeɪz/
+1498	en_w_rarely	rarely	adv	time	rarely	نادرًا	/ˈreəli/
+1499	en_w_regularly	regularly	adv	time	regularly	بانتظام	/ˈreɡjələli/
+1500	en_w_simply	simply	adv	function	simply	ببساطة	/ˈsɪmpli/
