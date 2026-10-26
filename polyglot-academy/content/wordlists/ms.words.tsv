@@ -1199,3 +1199,303 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 1198	ms_w_tepung	tepung	noun	food	flour	طحين
 1199	ms_w_beras	beras	noun	food	uncooked rice	أرزّ غير مطبوخ
 1200	ms_w_kuali	kuali	noun	food	wok	مقلاة
+1201	ms_w_apabila	apabila	conj	time	when	عندما
+1202	ms_w_layar	layar	verb	travel	sail (belayar: to sail)	شراع؛ يبحر
+1203	ms_w_beritahu	beritahu	verb	communication	to tell, to inform (memberitahu)	يخبر
+1204	ms_w_bidang	bidang	noun	work	field, area (of work)	مجال
+1205	ms_w_cedera	cedera	adj	health	injured	مصاب
+1206	ms_w_islam	Islam	noun	people	Islam	الإسلام
+1207	ms_w_jom	jom	interj	function	let's (go)	هيّا
+1208	ms_w_kegemaran	kegemaran	noun	feelings	favourite; hobby	المفضّل؛ هواية
+1209	ms_w_kena	kena	verb	function	to have to; to be hit by	يجب عليه؛ يُصاب بـ
+1210	ms_w_laju	laju	adj	travel	fast	سريع
+1211	ms_w_lemak	lemak	noun	food	fat; rich (nasi lemak)	دهن
+1212	ms_w_majlis	majlis	noun	leisure	event, ceremony	حفل، مناسبة
+1213	ms_w_melayu	Melayu	noun	people	Malay	ملايوي
+1214	ms_w_minta	minta	verb	communication	to ask for (meminta)	يطلب
+1215	ms_w_jahit	jahit	verb	clothes	to sew (menjahit)	يخيط
+1216	ms_w_mesti	mesti	verb	function	must	يجب
+1217	ms_w_motosikal	motosikal	noun	travel	motorcycle	درّاجة نارية
+1218	ms_w_pegawai	pegawai	noun	work	officer	موظّف، ضابط
+1219	ms_w_percuma	percuma	adj	shopping	free (of charge)	مجّاني
+1220	ms_w_perkara	perkara	noun	function	thing, matter	أمر، شيء
+1221	ms_w_permainan	permainan	noun	leisure	game	لعبة
+1222	ms_w_perubatan	perubatan	noun	health	medicine (field)	الطب
+1223	ms_w_ringgit	ringgit	noun	shopping	ringgit (Malaysian currency)	رينغيت
+1224	ms_w_saudara	saudara	noun	family	relative, sibling	قريب، أخ
+1225	ms_w_kampit	kampit	noun	shopping	sack (sekampit: a sack of)	كيس
+1226	ms_w_sembuh	sembuh	verb	health	to recover, to heal	يشفى
+1227	ms_w_udara	udara	noun	weather	air	هواء
+1228	ms_w_unta	unta	noun	animals	camel	جمل
+1229	ms_w_benda	benda	noun	function	thing	شيء
+1230	ms_w_mari	mari	verb	movement	come; let's	تعال؛ هيّا
+1231	ms_w_kagum	kagum	adj	feelings	amazed, admiring (mengagumi: to admire)	معجب، مندهش
+1232	ms_w_akui	akui	verb	communication	to admit (mengakui)	يعترف
+1233	ms_w_hargai	hargai	verb	feelings	to appreciate (menghargai)	يقدّر
+1234	ms_w_bongkok	bongkok	verb	body	to bend over (membongkok)	ينحني
+1235	ms_w_tepuk	tepuk	verb	actions	to clap (bertepuk tangan)	يصفّق
+1236	ms_w_kunyah	kunyah	verb	food	to chew (mengunyah)	يمضغ
+1237	ms_w_gabung	gabung	verb	actions	to combine (menggabungkan)	يجمع
+1238	ms_w_komen	komen	noun	communication	comment	تعليق
+1239	ms_w_pertahan	pertahan	verb	actions	to defend (mempertahankan)	يدافع
+1240	ms_w_nafi	nafi	verb	communication	to deny (menafikan)	ينكر
+1241	ms_w_layak	layak	adj	people	deserving, eligible	مستحقّ
+1242	ms_w_temui	temui	verb	mind	to find, to discover (menemui)	يجد، يكتشف
+1243	ms_w_selam	selam	verb	leisure	to dive (menyelam)	يغطس
+1244	ms_w_heret	heret	verb	actions	to drag (mengheret)	يجرّ
+1245	ms_w_periksa	periksa	verb	health	to examine, to check (memeriksa)	يفحص
+1246	ms_w_letup	letup	verb	actions	to explode (meletup)	ينفجر
+1247	ms_w_terokai	teroka	verb	travel	to explore (meneroka, menerokai)	يستكشف
+1248	ms_w_luah	luah	verb	communication	to express (meluahkan)	يعبّر
+1249	ms_w_apung	apung	verb	nature	to float (terapung)	يطفو
+1250	ms_w_tumpu	tumpu	verb	mind	to focus (menumpukan)	يركّز
+1251	ms_w_rampas	rampas	verb	actions	to snatch (merampas)	يخطف
+1252	ms_w_sampuk	sampuk	verb	communication	to interrupt (menyampuk)	يقاطع
+1253	ms_w_angguk	angguk	verb	communication	to nod (mengangguk)	يومئ
+1254	ms_w_patuh	patuh	verb	people	to obey (mematuhi)	يطيع
+1255	ms_w_perhati	perhati	verb	senses	to observe (memerhati)	يراقب
+1256	ms_w_hutang	hutang	noun	shopping	debt (berhutang: to owe)	دَين
+1257	ms_w_cegah	cegah	verb	actions	to prevent (mencegah)	يمنع
+1258	ms_w_bukti	bukti	noun	people	proof (membuktikan: to prove)	دليل
+1259	ms_w_terbit	terbit	verb	work	to publish; to rise (sun)	ينشر؛ يطلع
+1260	ms_w_reaksi	reaksi	noun	people	reaction	ردّ فعل
+1261	ms_w_bersara	bersara	verb	work	to retire	يتقاعد
+1262	ms_w_dedah	dedah	verb	communication	to reveal (mendedahkan)	يكشف
+1263	ms_w_cakar	cakar	verb	actions	to scratch (mencakar)	يخدش
+1264	ms_w_menetap	menetap	verb	home	to settle, to live	يستقرّ
+1265	ms_w_cukur	cukur	verb	body	to shave (bercukur)	يحلق
+1266	ms_w_mengeluh	mengeluh	verb	feelings	to sigh, to complain	يتنهّد، يشتكي
+1267	ms_w_bersin	bersin	verb	health	to sneeze	يعطس
+1268	ms_w_koyak	koyak	verb	actions	to tear; torn	يمزّق؛ ممزّق
+1269	ms_w_ugut	ugut	verb	people	to threaten (mengugut)	يهدّد
+1270	ms_w_siul	siul	verb	senses	to whistle (bersiul)	يصفّر
+1271	ms_w_kebolehan	kebolehan	noun	work	ability	قدرة
+1272	ms_w_penginapan	penginapan	noun	travel	accommodation	إقامة
+1273	ms_w_kejayaan	kejayaan	noun	work	success	نجاح
+1274	ms_w_pengembaraan	pengembaraan	noun	leisure	adventure, journey	مغامرة
+1275	ms_w_kemarahan	kemarahan	noun	feelings	anger	غضب
+1276	ms_w_buku_lali	buku lali	noun	body	ankle	كاحل
+1277	ms_w_ulang_tahun	ulang tahun	noun	time	anniversary	ذكرى سنوية
+1278	ms_w_permohonan	permohonan	noun	work	application	طلب
+1279	ms_w_arkitek	arkitek	noun	work	architect	مهندس معماري
+1280	ms_w_pertengkaran	pertengkaran	noun	communication	quarrel	شجار
+1281	ms_w_ketibaan	ketibaan	noun	travel	arrival	وصول
+1282	ms_w_pembantu	pembantu	noun	work	assistant, helper	مساعد
+1283	ms_w_suasana	suasana	noun	feelings	atmosphere	جوّ
+1284	ms_w_cubaan	cubaan	noun	actions	attempt	محاولة
+1285	ms_w_penonton	penonton	noun	leisure	audience, spectators	متفرّجون
+1286	ms_w_purata	purata	noun	numbers	average	متوسّط
+1287	ms_w_imbangan	imbangan	noun	function	balance	توازن
+1288	ms_w_janggut	janggut	noun	body	beard	لحية
+1289	ms_w_lebah	lebah	noun	animals	bee	نحلة
+1290	ms_w_tong_sampah	tong sampah	noun	home	rubbish bin	سلّة المهملات
+1291	ms_w_biskut	biskut	noun	food	biscuit	بسكويت
+1292	ms_w_dahan	dahan	noun	nature	branch	غصن
+1293	ms_w_bata	bata	noun	home	brick	طوبة
+1294	ms_w_semak	semak	noun	nature	bush; to check (menyemak)	شجيرات؛ يراجع
+1295	ms_w_butang	butang	noun	clothes	button	زرّ
+1296	ms_w_sangkar	sangkar	noun	animals	cage	قفص
+1297	ms_w_kalendar	kalendar	noun	time	calendar	تقويم
+1298	ms_w_kapten	kapten	noun	people	captain	قائد، قبطان
+1299	ms_w_kartun	kartun	noun	leisure	cartoon	رسوم متحرّكة
+1300	ms_w_gua	gua	noun	nature	cave	كهف
+1301	ms_w_upacara	upacara	noun	leisure	ceremony	حفل
+1302	ms_w_rantai	rantai	noun	function	chain	سلسلة
+1303	ms_w_cabaran	cabaran	noun	work	challenge	تحدٍّ
+1304	ms_w_juara	juara	noun	leisure	champion	بطل
+1305	ms_w_saluran	saluran	noun	leisure	channel	قناة
+1306	ms_w_bab	bab	noun	school	chapter	فصل
+1307	ms_w_dada	dada	noun	body	chest	صدر
+1308	ms_w_bulatan	bulatan	noun	function	circle; roundabout	دائرة؛ دوّار
+1309	ms_w_warganegara	warganegara	noun	people	citizen	مواطن
+1310	ms_w_iklim	iklim	noun	weather	climate	مناخ
+1311	ms_w_klinik	klinik	noun	health	clinic	عيادة
+1312	ms_w_kelab	kelab	noun	leisure	club	نادٍ
+1313	ms_w_jurulatih	jurulatih	noun	leisure	coach	مدرّب
+1314	ms_w_koleksi	koleksi	noun	leisure	collection	مجموعة
+1315	ms_w_aduan	aduan	noun	communication	complaint	شكوى
+1316	ms_w_persidangan	persidangan	noun	work	conference	مؤتمر
+1317	ms_w_keyakinan	keyakinan	noun	feelings	confidence	ثقة
+1318	ms_w_kapas	kapas	noun	clothes	cotton	قطن
+1319	ms_w_keberanian	keberanian	noun	feelings	courage	شجاعة
+1320	ms_w_anak_kapal	anak kapal	noun	travel	crew member	طاقم السفينة
+1321	ms_w_mata_wang	mata wang	noun	shopping	currency	عملة
+1322	ms_w_data	data	noun	work	data	بيانات
+1323	ms_w_dekad	dekad	noun	time	decade	عقد
+1324	ms_w_ijazah	ijazah	noun	school	degree	شهادة جامعية
+1325	ms_w_jabatan	jabatan	noun	work	department	قسم، دائرة
+1326	ms_w_destinasi	destinasi	noun	travel	destination	وجهة
+1327	ms_w_peranti	peranti	noun	home	device	جهاز
+1328	ms_w_diari	diari	noun	leisure	diary	مذكّرات
+1329	ms_w_bencana	bencana	noun	nature	disaster	كارثة
+1330	ms_w_dokumen	dokumen	noun	work	document	وثيقة
+1331	ms_w_gendang	gendang	noun	leisure	drum	طبل
+1332	ms_w_debu	debu	noun	home	dust	غبار
+1333	ms_w_tugas	tugas	noun	work	duty, task	مهمّة
+1334	ms_w_majikan	majikan	noun	work	employer	صاحب العمل
+1335	ms_w_sampul	sampul	noun	communication	envelope; cover	ظرف؛ غلاف
+1336	ms_w_peralatan	peralatan	noun	work	equipment	معدّات
+1337	ms_w_karangan	karangan	noun	school	essay	إنشاء
+1338	ms_w_kesalahan	kesalahan	noun	people	mistake, offence	خطأ، مخالفة
+1339	ms_w_bulu	bulu	noun	animals	feather, fur	ريش، فرو
+1340	ms_w_yuran	yuran	noun	shopping	fee	رسوم
+1341	ms_w_banjir	banjir	noun	weather	flood	فيضان
+1342	ms_w_kebebasan	kebebasan	noun	people	freedom	حرّية
+1343	ms_w_persahabatan	persahabatan	noun	people	friendship	صداقة
+1344	ms_w_katak	katak	noun	animals	frog	ضفدع
+1345	ms_w_bahan_api	bahan api	noun	travel	fuel	وقود
+1346	ms_w_galeri	galeri	noun	leisure	gallery	معرض فنّي
+1347	ms_w_gas	gas	noun	home	gas	غاز
+1348	ms_w_generasi	generasi	noun	people	generation	جيل
+1349	ms_w_hantu	hantu	noun	leisure	ghost	شبح
+1350	ms_w_sarung_tangan	sarung tangan	noun	clothes	glove	قفّاز
+1351	ms_w_gam	gam	noun	school	glue	غراء
+1352	ms_w_tatabahasa	tatabahasa	noun	school	grammar	قواعد اللغة
+1353	ms_w_lori	lori	noun	travel	lorry	شاحنة
+1354	ms_w_pencetak	pencetak	noun	work	printer	طابعة
+1355	ms_w_kalung	kalung	noun	clothes	necklace	عقد
+1356	ms_w_subang	subang	noun	clothes	earring	قرط
+1357	ms_w_minyak_wangi	minyak wangi	noun	clothes	perfume	عطر
+1358	ms_w_syampu	syampu	noun	home	shampoo	شامبو
+1359	ms_w_ketuhar	ketuhar	noun	food	oven	فرن
+1360	ms_w_dulang	dulang	noun	food	tray	صينية
+1361	ms_w_tisu	tisu	noun	home	tissue	منديل ورقي
+1362	ms_w_timun	timun	noun	food	cucumber	خيار
+1363	ms_w_strawberi	strawberi	noun	food	strawberry	فراولة
+1364	ms_w_pir	pir	noun	food	pear	إجاصة
+1365	ms_w_pic	pic	noun	food	peach	خوخ
+1366	ms_w_ceri	ceri	noun	food	cherry	كرز
+1367	ms_w_kacang	kacang	noun	food	nut, bean	فول، مكسّرات
+1368	ms_w_zaitun	zaitun	noun	food	olive	زيتون
+1369	ms_w_yogurt	yogurt	noun	food	yoghurt	لبن زبادي
+1370	ms_w_ikan_bilis	ikan bilis	noun	food	anchovies	أنشوفة
+1371	ms_w_lembu_jantan	lembu jantan	noun	animals	bull	ثور
+1372	ms_w_keldai	keldai	noun	animals	donkey	حمار
+1373	ms_w_labah_labah	labah-labah	noun	animals	spider	عنكبوت
+1374	ms_w_rama_rama	rama-rama	noun	animals	butterfly	فراشة
+1375	ms_w_arnab	arnab	noun	animals	rabbit	أرنب
+1376	ms_w_penyu	penyu	noun	animals	turtle	سلحفاة بحرية
+1377	ms_w_ikan_paus	ikan paus	noun	animals	whale	حوت
+1378	ms_w_beruang	beruang	noun	animals	bear	دبّ
+1379	ms_w_serigala	serigala	noun	animals	wolf	ذئب
+1380	ms_w_musang	musang	noun	animals	civet, fox	زباد، ثعلب
+1381	ms_w_sarang	sarang	noun	animals	nest	عشّ
+1382	ms_w_sayap	sayap	noun	animals	wing	جناح
+1383	ms_w_harimau	harimau	noun	animals	tiger	نمر
+1384	ms_w_aktif	aktif	adj	descriptions	active	نشيط
+1385	ms_w_asas	asas	adj	descriptions	basic; foundation	أساسي؛ أساس
+1386	ms_w_ceria	ceria	adj	feelings	cheerful	مرح
+1387	ms_w_yakin	yakin	adj	feelings	confident, sure	واثق
+1388	ms_w_keliru	keliru	adj	feelings	confused	مرتبك
+1389	ms_w_kejam	kejam	adj	people	cruel	قاسٍ
+1390	ms_w_pekak	pekak	adj	health	deaf	أصمّ
+1391	ms_w_sama_rata	sama rata	adj	numbers	equal	متساوٍ
+1392	ms_w_dermawan	dermawan	adj	people	generous	كريم
+1393	ms_w_bersyukur	bersyukur	adj	feelings	grateful, thankful	ممتنّ
+1394	ms_w_bersalah	bersalah	adj	feelings	guilty	مذنب
+1395	ms_w_jelas	jelas	adj	function	clear	واضح
+1396	ms_w_secara_umum	secara umum	adv	function	generally	عمومًا
+1397	ms_w_sejujurnya	sejujurnya	adv	function	honestly	بصراحة
+1398	ms_w_pada_mulanya	pada mulanya	adv	time	at first	في البداية
+1399	ms_w_buat_masa_ini	buat masa ini	adv	time	for the time being	حاليًا
+1400	ms_w_dahulu	dahulu	adv	time	formerly, before	سابقًا
+1401	ms_w_doktor_gigi	doktor gigi	noun	health	dentist	طبيب أسنان
+1402	ms_w_tukang_roti	tukang roti	noun	work	baker	خبّاز
+1403	ms_w_penjahit	penjahit	noun	work	tailor	خيّاط
+1404	ms_w_hakim	hakim	noun	people	judge	قاضٍ
+1405	ms_w_politik	politik	noun	people	politics	سياسة
+1406	ms_w_agama	agama	noun	people	religion	دين
+1407	ms_w_perigi	perigi	noun	nature	well	بئر
+1408	ms_w_akar	akar	noun	nature	root	جذر
+1409	ms_w_biji	biji	noun	nature	seed; classifier for objects	بذرة؛ مصنّف للأشياء
+1410	ms_w_sinki	sinki	noun	home	sink	مغسلة
+1411	ms_w_paip	paip	noun	home	tap, pipe	صنبور، أنبوب
+1412	ms_w_mentol	mentol	noun	home	light bulb	مصباح كهربائي
+1413	ms_w_alat_kawalan_jauh	alat kawalan jauh	noun	home	remote control	جهاز التحكّم
+1414	ms_w_laman_web	laman web	noun	communication	website	موقع إلكتروني
+1415	ms_w_emel	e-mel	noun	communication	email	بريد إلكتروني
+1416	ms_w_aplikasi	aplikasi	noun	communication	app	تطبيق
+1417	ms_w_fail	fail	noun	work	file	ملفّ
+1418	ms_w_wartawan	wartawan	noun	work	journalist	صحفي
+1419	ms_w_drama	drama	noun	leisure	drama, TV series	مسلسل
+1420	ms_w_pemuzik	pemuzik	noun	leisure	musician	موسيقي
+1421	ms_w_pelukis	pelukis	noun	leisure	painter	رسّام
+1422	ms_w_patung	patung	noun	leisure	statue; doll	تمثال؛ دمية
+1423	ms_w_sajak	sajak	noun	leisure	poem	قصيدة
+1424	ms_w_novel	novel	noun	leisure	novel	رواية
+1425	ms_w_pentas	pentas	noun	leisure	stage	خشبة المسرح
+1426	ms_w_pendidikan	pendidikan	noun	school	education	تعليم
+1427	ms_w_preskripsi	preskripsi	noun	health	prescription	وصفة طبية
+1428	ms_w_kecederaan	kecederaan	noun	health	injury	إصابة
+1429	ms_w_pembalut	pembalut	noun	health	bandage	ضمادة
+1430	ms_w_suntikan	suntikan	noun	health	injection	حقنة
+1431	ms_w_kebersihan	kebersihan	noun	home	cleanliness	نظافة
+1432	ms_w_pakaian	pakaian	noun	clothes	clothing	ملابس
+1433	ms_w_baju_kurung	baju kurung	noun	clothes	baju kurung (traditional dress)	ثوب تقليدي
+1434	ms_w_songkok	songkok	noun	clothes	songkok (cap)	طاقية
+1435	ms_w_sapu_tangan	sapu tangan	noun	clothes	handkerchief	منديل
+1436	ms_w_jam_tangan	jam tangan	noun	time	wristwatch	ساعة يد
+1437	ms_w_wang_kertas	wang kertas	noun	shopping	banknote	ورقة نقدية
+1438	ms_w_badminton	badminton	noun	leisure	badminton	الريشة الطائرة
+1439	ms_w_hoki	hoki	noun	leisure	hockey	الهوكي
+1440	ms_w_tenis	tenis	noun	leisure	tennis	التنس
+1441	ms_w_kemenangan	kemenangan	noun	leisure	victory	فوز
+1442	ms_w_puncak	puncak	noun	nature	peak, summit	قمّة
+1443	ms_w_terusan	terusan	noun	nature	canal	قناة مائية
+1444	ms_w_penyewa	penyewa	noun	home	tenant	مستأجر
+1445	ms_w_lorong	lorong	noun	places	lane, alley	زقاق
+1446	ms_w_kesedihan	kesedihan	noun	feelings	sadness	حزن
+1447	ms_w_kebanggaan	kebanggaan	noun	feelings	pride	فخر
+1448	ms_w_cemburu	cemburu	adj	feelings	jealous	غيور
+1449	ms_w_benci	benci	verb	feelings	to hate	يكره
+1450	ms_w_emosi	emosi	noun	feelings	emotion	عاطفة
+1451	ms_w_kemiskinan	kemiskinan	noun	people	poverty	فقر
+1452	ms_w_kekayaan	kekayaan	noun	shopping	wealth	ثروة
+1453	ms_w_simpanan	simpanan	noun	shopping	savings	مدّخرات
+1454	ms_w_perbelanjaan	perbelanjaan	noun	shopping	expenses	مصاريف
+1455	ms_w_pendapatan	pendapatan	noun	work	income	دخل
+1456	ms_w_pekerjaan	pekerjaan	noun	work	job, occupation	وظيفة
+1457	ms_w_perniagaan	perniagaan	noun	work	business	تجارة
+1458	ms_w_peniaga	peniaga	noun	work	trader	تاجر
+1459	ms_w_untung	untung	noun	work	profit; lucky	ربح؛ محظوظ
+1460	ms_w_kerugian	kerugian	noun	work	loss	خسارة
+1461	ms_w_penipu	penipu	noun	people	cheat, liar	محتال
+1462	ms_w_berkuasa	berkuasa	adj	descriptions	powerful	قويّ، ذو سلطة
+1463	ms_w_basi	basi	adj	food	stale	بائت
+1464	ms_w_tawar	tawar	adj	food	bland; to bargain (menawar)	بلا طعم؛ يساوم
+1465	ms_w_rajin	rajin	adj	people	hard-working	مجتهد
+1466	ms_w_penganggur	penganggur	noun	work	unemployed person	عاطل عن العمل
+1467	ms_w_rapuh	rapuh	adj	descriptions	fragile	هشّ
+1468	ms_w_asli	asli	adj	descriptions	original, real, native	أصلي
+1469	ms_w_kebenaran	kebenaran	noun	people	permission; truth	إذن؛ حقيقة
+1470	ms_w_layanan	layanan	noun	work	service, treatment	خدمة، معاملة
+1471	ms_w_adat	adat	noun	people	custom	عادة، عرف
+1472	ms_w_kebun	kebun	noun	nature	garden, orchard	بستان
+1473	ms_w_sawah	sawah	noun	nature	rice field	حقل أرز
+1474	ms_w_kerbau	kerbau	noun	animals	water buffalo	جاموس
+1475	ms_w_angsa	angsa	noun	animals	goose, swan	إوزّة
+1476	ms_w_burung_hantu	burung hantu	noun	animals	owl	بومة
+1477	ms_w_helang	helang	noun	animals	eagle	نسر
+1478	ms_w_ular	ular	noun	animals	snake	ثعبان
+1479	ms_w_buaya	buaya	noun	animals	crocodile	تمساح
+1480	ms_w_siput	siput	noun	animals	snail	حلزون
+1481	ms_w_cacing	cacing	noun	animals	worm	دودة
+1482	ms_w_semut	semut	noun	animals	ant	نملة
+1483	ms_w_lipas	lipas	noun	animals	cockroach	صرصور
+1484	ms_w_mawar	mawar	noun	nature	rose	وردة
+1485	ms_w_orkid	orkid	noun	nature	orchid	سحلبية
+1486	ms_w_nasi_goreng	nasi goreng	noun	food	fried rice	أرز مقلي
+1487	ms_w_sate	sate	noun	food	satay	ساتيه (لحم مشوي)
+1488	ms_w_rendang	rendang	noun	food	rendang (spiced meat)	رندانغ (لحم متبّل)
+1489	ms_w_laksa	laksa	noun	food	laksa (noodle soup)	لاكسا (حساء معكرونة)
+1490	ms_w_lapang	lapang	adj	descriptions	spacious; free (time)	واسع؛ متفرّغ
+1491	ms_w_letih	letih	adj	feelings	tired	متعب
+1492	ms_w_mengantuk	mengantuk	adj	feelings	sleepy	نعسان
+1493	ms_w_kenyang	kenyang	adj	food	full (after eating)	شبعان
+1494	ms_w_tikar	tikar	noun	home	mat	حصيرة
+1495	ms_w_tilam	tilam	noun	home	mattress	فرشة
+1496	ms_w_cadar	cadar	noun	home	bedsheet	ملاءة
+1497	ms_w_desa	desa	noun	places	village, countryside	قرية، ريف
+1498	ms_w_air_terjun	air terjun	noun	nature	waterfall	شلّال
+1499	ms_w_surau	surau	noun	places	small mosque, prayer room	مصلّى
+1500	ms_w_kuil	kuil	noun	places	temple	معبد
