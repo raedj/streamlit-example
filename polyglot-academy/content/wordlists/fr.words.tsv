@@ -1199,3 +1199,303 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 1198	fr_w_sans_doute	sans doute	adv	function	probably; no doubt	على الأرجح
 1199	fr_w_de_toute_facon	de toute façon	adv	function	anyway	على أي حال
 1200	fr_w_par_exemple	par exemple	adv	function	for example	مثلًا
+1201	fr_w_admirer	admirer	verb	people	to admire	يُعجب بـ		admire, admires, admirons, admirez, admirent, admiré, admirée, admirés, admirais, admirait, admiraient, admirerai, admirera, admirant
+1202	fr_w_avouer	avouer	verb	communication	to admit, to confess	يعترف		avoue, avoues, avouons, avouez, avouent, avoué, avouée, avoués, avouais, avouait, avouaient, avouerai, avouera, avouant
+1203	fr_w_annoncer	annoncer	verb	communication	to announce	يعلن		annonce, annonces, annonçons, annoncez, annoncent, annoncé, annoncée, annoncés, annonçais, annonçait, annonçaient, annoncerai, annoncera, annonçant
+1204	fr_w_apprecier	apprécier	verb	feelings	to appreciate, to like	يقدّر		apprécie, apprécies, apprécions, appréciez, apprécient, apprécié, appréciée, appréciés, appréciais, appréciait, appréciaient, apprécierai, appréciera, appréciant
+1205	fr_w_joindre	joindre	verb	work	to attach; to reach (by phone)	يرفق؛ يتّصل بـ		joins, joint, joignons, joignez, joignent, joignait	irregular=yes
+1206	fr_w_assister	assister	verb	school	to attend	يحضر		assiste, assistes, assistons, assistez, assistent, assisté, assistée, assistés, assistais, assistait, assistaient, assisterai, assistera, assistant
+1207	fr_w_se_pencher	se pencher	verb	body	to bend down, to lean	ينحني		penche, penches, penchons, penchez, penchent, penché, penchée, penchés, penchais, penchait, penchaient, pencherai, penchera, penchant, pencher
+1208	fr_w_reprocher	reprocher	verb	people	to blame, to reproach	يلوم		reproche, reproches, reprochons, reprochez, reprochent, reproché, reprochée, reprochés, reprochais, reprochait, reprochaient, reprocherai, reprochera, reprochant
+1209	fr_w_enterrer	enterrer	verb	actions	to bury	يدفن		enterre, enterres, enterrons, enterrez, enterrent, enterré, enterrée, enterrés, enterrais, enterrait, enterraient, enterrerai, enterrera, enterrant
+1210	fr_w_calculer	calculer	verb	numbers	to calculate	يحسب		calcule, calcules, calculons, calculez, calculent, calculé, calculée, calculés, calculais, calculait, calculaient, calculerai, calculera, calculant
+1211	fr_w_applaudir	applaudir	verb	actions	to clap	يصفّق		applaudis, applaudit, applaudissons, applaudissez, applaudissent, applaudi, applaudissait	irregular=yes
+1212	fr_w_macher	mâcher	verb	food	to chew	يمضغ		mâche, mâches, mâchons, mâchez, mâchent, mâché, mâchée, mâchés, mâchais, mâchait, mâchaient, mâcherai, mâchera, mâchant
+1213	fr_w_combiner	combiner	verb	actions	to combine	يجمع بين		combine, combines, combinons, combinez, combinent, combiné, combinée, combinés, combinais, combinait, combinaient, combinerai, combinera, combinant
+1214	fr_w_commenter	commenter	verb	communication	to comment	يعلّق		commente, commentes, commentons, commentez, commentent, commenté, commentée, commentés, commentais, commentait, commentaient, commenterai, commentera, commentant
+1215	fr_w_contacter	contacter	verb	communication	to contact	يتواصل مع		contacte, contactes, contactons, contactez, contactent, contacté, contactée, contactés, contactais, contactait, contactaient, contacterai, contactera, contactant
+1216	fr_w_convaincre	convaincre	verb	communication	to convince	يقنع		convaincs, convainc, convainquons, convainquent, convaincu, convaincue	irregular=yes
+1217	fr_w_decorer	décorer	verb	home	to decorate	يزيّن		décore, décores, décorons, décorez, décorent, décoré, décorée, décorés, décorais, décorait, décoraient, décorerai, décorera, décorant
+1218	fr_w_defendre	défendre	verb	actions	to defend	يدافع		défends, défend, défendons, défendez, défendent, défendu, défendait	irregular=yes
+1219	fr_w_nier	nier	verb	communication	to deny	ينكر		nie, nies, nions, niez, nient, nié, niée, niés, niais, niait, niaient, nierai, niera, niant
+1220	fr_w_meriter	mériter	verb	people	to deserve	يستحقّ		mérite, mérites, méritons, méritez, méritent, mérité, méritée, mérités, méritais, méritait, méritaient, mériterai, méritera, méritant
+1221	fr_w_creuser	creuser	verb	actions	to dig	يحفر		creuse, creuses, creusons, creusez, creusent, creusé, creusée, creusés, creusais, creusait, creusaient, creuserai, creusera, creusant
+1222	fr_w_decouvrir	découvrir	verb	mind	to discover	يكتشف		découvre, découvres, découvrons, découvrez, découvrent, découvert, découverte, découvrait	irregular=yes
+1223	fr_w_plonger	plonger	verb	leisure	to dive	يغطس		plonge, plonges, plongeons, plongez, plongent, plongé, plongée, plongés, plongeais, plongeait, plongeaient, plongerai, plongera, plongeant
+1224	fr_w_trainer	traîner	verb	actions	to drag; to hang around	يجرّ؛ يتسكّع		traîne, traînes, traînons, traînez, traînent, traîné, traînée, traînés, traînais, traînait, traînaient, traînerai, traînera, traînant
+1225	fr_w_examiner	examiner	verb	health	to examine	يفحص		examine, examines, examinons, examinez, examinent, examiné, examinée, examinés, examinais, examinait, examinaient, examinerai, examinera, examinant
+1226	fr_w_echanger	échanger	verb	shopping	to exchange	يبادل		échange, échanges, échangeons, échangez, échangent, échangé, échangée, échangés, échangeais, échangeait, échangeaient, échangerai, échangera, échangeant
+1227	fr_w_exploser	exploser	verb	actions	to explode	ينفجر		explose, exploses, explosons, explosez, explosent, explosé, explosée, explosés, explosais, explosait, explosaient, exploserai, explosera, explosant
+1228	fr_w_explorer	explorer	verb	travel	to explore	يستكشف		explore, explores, explorons, explorez, explorent, exploré, explorée, explorés, explorais, explorait, exploraient, explorerai, explorera, explorant
+1229	fr_w_exprimer	exprimer	verb	communication	to express	يعبّر		exprime, exprimes, exprimons, exprimez, expriment, exprimé, exprimée, exprimés, exprimais, exprimait, exprimaient, exprimerai, exprimera, exprimant
+1230	fr_w_nourrir	nourrir	verb	animals	to feed	يطعم		nourris, nourrit, nourrissons, nourrissez, nourrissent, nourri, nourrissait	irregular=yes
+1231	fr_w_flotter	flotter	verb	nature	to float	يطفو		flotte, flottes, flottons, flottez, flottent, flotté, flottée, flottés, flottais, flottait, flottaient, flotterai, flottera, flottant
+1232	fr_w_effrayer	effrayer	verb	feelings	to frighten	يُخيف		effrayons, effrayez, effrayé, effrayée, effrayés, effrayais, effrayait, effrayaient, effrayant, effraie, effraies, effraient
+1233	fr_w_serrer	serrer	verb	people	to hug, to squeeze; to shake (hands)	يضمّ، يشدّ		serre, serres, serrons, serrez, serrent, serré, serrée, serrés, serrais, serrait, serraient, serrerai, serrera, serrant
+1234	fr_w_impressionner	impressionner	verb	people	to impress	يُبهر		impressionne, impressionnes, impressionnons, impressionnez, impressionnent, impressionné, impressionnée, impressionnés, impressionnais, impressionnait, impressionnaient, impressionnerai, impressionnera, impressionnant
+1235	fr_w_interrompre	interrompre	verb	communication	to interrupt	يقاطع		interromps, interrompt, interrompons, interrompent, interrompu	irregular=yes
+1236	fr_w_juger	juger	verb	people	to judge	يحكم على		juge, juges, jugeons, jugez, jugent, jugé, jugée, jugés, jugeais, jugeait, jugeaient, jugerai, jugera, jugeant
+1237	fr_w_obeir	obéir	verb	people	to obey	يطيع		obéis, obéit, obéissons, obéissez, obéissent, obéi, obéissait	irregular=yes
+1238	fr_w_observer	observer	verb	senses	to observe	يراقب		observe, observes, observons, observez, observent, observé, observée, observés, observais, observait, observaient, observerai, observera, observant
+1239	fr_w_persuader	persuader	verb	communication	to persuade	يقنع		persuade, persuades, persuadons, persuadez, persuadent, persuadé, persuadée, persuadés, persuadais, persuadait, persuadaient, persuaderai, persuadera, persuadant
+1240	fr_w_feliciter	féliciter	verb	communication	to congratulate, to praise	يهنّئ		félicite, félicites, félicitons, félicitez, félicitent, félicité, félicitée, félicités, félicitais, félicitait, félicitaient, féliciterai, félicitera, félicitant
+1241	fr_w_empecher	empêcher	verb	actions	to prevent	يمنع		empêche, empêches, empêchons, empêchez, empêchent, empêché, empêchée, empêchés, empêchais, empêchait, empêchaient, empêcherai, empêchera, empêchant
+1242	fr_w_prouver	prouver	verb	mind	to prove	يثبت		prouve, prouves, prouvons, prouvez, prouvent, prouvé, prouvée, prouvés, prouvais, prouvait, prouvaient, prouverai, prouvera, prouvant
+1243	fr_w_publier	publier	verb	work	to publish	ينشر		publie, publies, publions, publiez, publient, publié, publiée, publiés, publiais, publiait, publiaient, publierai, publiera, publiant
+1244	fr_w_punir	punir	verb	people	to punish	يعاقب		punis, punit, punissons, punissez, punissent, puni, punissait	irregular=yes
+1245	fr_w_reagir	réagir	verb	people	to react	يتفاعل		réagis, réagit, réagissons, réagissez, réagissent, réagi, réagissait	irregular=yes
+1246	fr_w_exiger	exiger	verb	function	to require, to demand	يطالب، يتطلّب		exige, exiges, exigeons, exigez, exigent, exigé, exigée, exigés, exigeais, exigeait, exigeaient, exigerai, exigera, exigeant
+1247	fr_w_reveler	révéler	verb	communication	to reveal	يكشف		révélons, révélez, révélé, révélée, révélés, révélais, révélait, révélaient, révélant, révèle, révèles, révèlent, révélerai, révélera
+1248	fr_w_frotter	frotter	verb	actions	to rub	يفرك		frotte, frottes, frottons, frottez, frottent, frotté, frottée, frottés, frottais, frottait, frottaient, frotterai, frottera, frottant
+1249	fr_w_naviguer	naviguer	verb	travel	to sail; to browse	يبحر؛ يتصفّح		navigue, navigues, naviguons, naviguez, naviguent, navigué, naviguée, navigués, naviguais, naviguait, naviguaient, naviguerai, naviguera, naviguant
+1250	fr_w_gratter	gratter	verb	actions	to scratch	يحكّ		gratte, grattes, grattons, grattez, grattent, gratté, grattée, grattés, grattais, grattait, grattaient, gratterai, grattera, grattant
+1251	fr_w_selectionner	sélectionner	verb	actions	to select	يختار		sélectionne, sélectionnes, sélectionnons, sélectionnez, sélectionnent, sélectionné, sélectionnée, sélectionnés, sélectionnais, sélectionnait, sélectionnaient, sélectionnerai, sélectionnera, sélectionnant
+1252	fr_w_separer	séparer	verb	actions	to separate	يفصل		sépare, sépares, séparons, séparez, séparent, séparé, séparée, séparés, séparais, séparait, séparaient, séparerai, séparera, séparant
+1253	fr_w_se_raser	se raser	verb	body	to shave	يحلق		rase, rases, rasons, rasez, rasent, rasé, rasée, rasés, rasais, rasait, rasaient, raserai, rasera, rasant, raser
+1254	fr_w_soupirer	soupirer	verb	feelings	to sigh	يتنهّد		soupire, soupires, soupirons, soupirez, soupirent, soupiré, soupirée, soupirés, soupirais, soupirait, soupiraient, soupirerai, soupirera, soupirant
+1255	fr_w_glisser	glisser	verb	movement	to slip, to slide	ينزلق		glisse, glisses, glissons, glissez, glissent, glissé, glissée, glissés, glissais, glissait, glissaient, glisserai, glissera, glissant
+1256	fr_w_eternuer	éternuer	verb	health	to sneeze	يعطس		éternue, éternues, éternuons, éternuez, éternuent, éternué, éternuée, éternués, éternuais, éternuait, éternuaient, éternuerai, éternuera, éternuant
+1257	fr_w_gacher	gâcher	verb	actions	to spoil, to waste	يُفسد		gâche, gâches, gâchons, gâchez, gâchent, gâché, gâchée, gâchés, gâchais, gâchait, gâchaient, gâcherai, gâchera, gâchant
+1258	fr_w_fixer	fixer	verb	senses	to stare at; to fix	يحدّق؛ يثبّت		fixe, fixes, fixons, fixez, fixent, fixé, fixée, fixés, fixais, fixait, fixaient, fixerai, fixera, fixant
+1259	fr_w_remuer	remuer	verb	food	to stir	يحرّك		remue, remues, remuons, remuez, remuent, remué, remuée, remués, remuais, remuait, remuaient, remuerai, remuera, remuant
+1260	fr_w_s_etirer	s'étirer	verb	body	to stretch	يتمطّى		étire, étires, étirons, étirez, étirent, étiré, étirée, étirés, étirais, étirait, étiraient, étirerai, étirera, étirant, étirer
+1261	fr_w_balayer	balayer	verb	home	to sweep	يكنس		balayons, balayez, balayé, balayée, balayés, balayais, balayait, balayaient, balayant, balaie, balaies, balaient
+1262	fr_w_dechirer	déchirer	verb	actions	to tear	يمزّق		déchire, déchires, déchirons, déchirez, déchirent, déchiré, déchirée, déchirés, déchirais, déchirait, déchiraient, déchirerai, déchirera, déchirant
+1263	fr_w_menacer	menacer	verb	people	to threaten	يهدّد		menace, menaces, menaçons, menacez, menacent, menacé, menacée, menacés, menaçais, menaçait, menaçaient, menacerai, menacera, menaçant
+1264	fr_w_siffler	siffler	verb	senses	to whistle	يصفّر		siffle, siffles, sifflons, sifflez, sifflent, sifflé, sifflée, sifflés, sifflais, sifflait, sifflaient, sifflerai, sifflera, sifflant
+1265	fr_w_essuyer	essuyer	verb	home	to wipe, to dry	يمسح، ينشّف		essuyons, essuyez, essuyé, essuyée, essuyés, essuyais, essuyait, essuyaient, essuyant, essuie, essuies, essuient
+1266	fr_w_tousser	tousser	verb	health	to cough	يسعل		tousse, tousses, toussons, toussez, toussent, toussé, toussée, toussés, toussais, toussait, toussaient, tousserai, toussera, toussant
+1267	fr_w_saigner	saigner	verb	health	to bleed	ينزف		saigne, saignes, saignons, saignez, saignent, saigné, saignée, saignés, saignais, saignait, saignaient, saignerai, saignera, saignant
+1268	fr_w_grossir	grossir	verb	health	to put on weight	يسمن		grossis, grossit, grossissent, grossi	irregular=yes
+1269	fr_w_maigrir	maigrir	verb	health	to lose weight	ينحف		maigris, maigrit, maigrissent, maigri	irregular=yes
+1270	fr_w_vieillir	vieillir	verb	people	to grow old	يشيخ		vieillis, vieillit, vieillissent, vieilli	irregular=yes
+1271	fr_w_rougir	rougir	verb	feelings	to blush	يحمرّ خجلًا		rougis, rougit, rougissent, rougi	irregular=yes
+1272	fr_w_endormir	endormir	verb	home	to put to sleep (s'endormir: to fall asleep)	ينيّم		endors, endort, endorment, endormi, endormie	irregular=yes
+1273	fr_w_garer	garer	verb	travel	to park	يركن (السيارة)		gare, gares, garons, garez, garent, garé, garée, garés, garais, garait, garaient, garerai, garera, garant
+1274	fr_w_doubler	doubler	verb	travel	to overtake; to double	يتجاوز؛ يضاعف		double, doubles, doublons, doublez, doublent, doublé, doublée, doublés, doublais, doublait, doublaient, doublerai, doublera, doublant
+1275	fr_w_freiner	freiner	verb	travel	to brake	يكبح		freine, freines, freinons, freinez, freinent, freiné, freinée, freinés, freinais, freinait, freinaient, freinerai, freinera, freinant
+1276	fr_w_klaxonner	klaxonner	verb	travel	to honk	يزمّر		klaxonne, klaxonnes, klaxonnons, klaxonnez, klaxonnent, klaxonné, klaxonnée, klaxonnés, klaxonnais, klaxonnait, klaxonnaient, klaxonnerai, klaxonnera, klaxonnant
+1277	fr_w_capacite	capacité	noun	work	ability, capacity	قدرة			gender=f; article=la
+1278	fr_w_logement	logement	noun	travel	accommodation, housing	سكن			gender=m; article=le
+1279	fr_w_reussite	réussite	noun	work	success, achievement	نجاح			gender=f; article=la
+1280	fr_w_acteur	acteur	noun	leisure	actor	ممثّل		actrice	gender=m; article=l'
+1281	fr_w_aventure	aventure	noun	leisure	adventure	مغامرة			gender=f; article=l'
+1282	fr_w_colere	colère	noun	feelings	anger	غضب			gender=f; article=la
+1283	fr_w_cheville	cheville	noun	body	ankle	كاحل			gender=f; article=la
+1284	fr_w_candidature	candidature	noun	work	application	ترشّح، طلب			gender=f; article=la
+1285	fr_w_architecte	architecte	noun	work	architect	مهندس معماري			gender=mf; article=l'
+1286	fr_w_assistant	assistant	noun	work	assistant	مساعد		assistante	gender=m; article=l'
+1287	fr_w_ambiance	ambiance	noun	feelings	atmosphere	جوّ			gender=f; article=l'
+1288	fr_w_tentative	tentative	noun	actions	attempt	محاولة			gender=f; article=la
+1289	fr_w_auteur	auteur	noun	leisure	author	مؤلّف			gender=m; article=l'
+1290	fr_w_moyenne	moyenne	noun	numbers	average	متوسّط			gender=f; article=la
+1291	fr_w_equilibre	équilibre	noun	function	balance	توازن			gender=m; article=l'
+1292	fr_w_bataille	bataille	noun	people	battle	معركة			gender=f; article=la
+1293	fr_w_barbe	barbe	noun	body	beard	لحية			gender=f; article=la
+1294	fr_w_abeille	abeille	noun	animals	bee	نحلة			gender=f; article=l'
+1295	fr_w_ceinture	ceinture	noun	clothes	belt	حزام			gender=f; article=la
+1296	fr_w_biscuit	biscuit	noun	food	biscuit	بسكويت			gender=m; article=le
+1297	fr_w_brique	brique	noun	home	brick	طوبة			gender=f; article=la
+1298	fr_w_buisson	buisson	noun	nature	bush	شجيرة			gender=m; article=le
+1299	fr_w_bouton	bouton	noun	clothes	button	زرّ			gender=m; article=le
+1300	fr_w_cage	cage	noun	animals	cage	قفص			gender=f; article=la
+1301	fr_w_calendrier	calendrier	noun	time	calendar	تقويم			gender=m; article=le
+1302	fr_w_capitaine	capitaine	noun	people	captain	قائد، قبطان			gender=m; article=le
+1303	fr_w_dessin_anime	dessin animé	noun	leisure	cartoon	رسوم متحرّكة		dessins animés	gender=m; article=le
+1304	fr_w_grotte	grotte	noun	nature	cave	كهف			gender=f; article=la
+1305	fr_w_ceremonie	cérémonie	noun	leisure	ceremony	حفل			gender=f; article=la
+1306	fr_w_chaine	chaîne	noun	function	chain; channel	سلسلة؛ قناة			gender=f; article=la
+1307	fr_w_defi	défi	noun	work	challenge	تحدٍّ			gender=m; article=le
+1308	fr_w_champion	champion	noun	leisure	champion	بطل		championne	gender=m; article=le
+1309	fr_w_chapitre	chapitre	noun	school	chapter	فصل			gender=m; article=le
+1310	fr_w_poitrine	poitrine	noun	body	chest	صدر			gender=f; article=la
+1311	fr_w_cercle	cercle	noun	function	circle	دائرة			gender=m; article=le
+1312	fr_w_citoyen	citoyen	noun	people	citizen	مواطن		citoyenne	gender=m; article=le
+1313	fr_w_climat	climat	noun	weather	climate	مناخ			gender=m; article=le
+1314	fr_w_clinique	clinique	noun	health	clinic	عيادة			gender=f; article=la
+1315	fr_w_club	club	noun	leisure	club	نادٍ			gender=m; article=le
+1316	fr_w_entraineur	entraîneur	noun	leisure	coach	مدرّب			gender=m; article=l'
+1317	fr_w_collection	collection	noun	leisure	collection	مجموعة			gender=f; article=la
+1318	fr_w_plainte	plainte	noun	communication	complaint	شكوى			gender=f; article=la
+1319	fr_w_conference	conférence	noun	work	conference, lecture	مؤتمر، محاضرة			gender=f; article=la
+1320	fr_w_confiance	confiance	noun	feelings	confidence, trust	ثقة			gender=f; article=la
+1321	fr_w_coton	coton	noun	clothes	cotton	قطن			gender=m; article=le
+1322	fr_w_courage	courage	noun	feelings	courage	شجاعة			gender=m; article=le
+1323	fr_w_equipage	équipage	noun	travel	crew	طاقم			gender=m; article=l'
+1324	fr_w_monnaie	monnaie	noun	shopping	currency; change	عملة؛ فكّة			gender=f; article=la
+1325	fr_w_donnees	données	noun	work	data	بيانات			gender=f; article=la
+1326	fr_w_dette	dette	noun	shopping	debt	دَين			gender=f; article=la
+1327	fr_w_decennie	décennie	noun	time	decade	عقد			gender=f; article=la
+1328	fr_w_diplome	diplôme	noun	school	diploma, degree	شهادة			gender=m; article=le
+1329	fr_w_departement	département	noun	work	department	قسم			gender=m; article=le
+1330	fr_w_destination	destination	noun	travel	destination	وجهة			gender=f; article=la
+1331	fr_w_appareil	appareil	noun	home	device, appliance	جهاز			gender=m; article=l'
+1332	fr_w_journal_intime	journal intime	noun	leisure	diary	مذكّرات			gender=m; article=le
+1333	fr_w_catastrophe	catastrophe	noun	nature	disaster	كارثة			gender=f; article=la
+1334	fr_w_reduction	réduction	noun	shopping	discount	تخفيض			gender=f; article=la
+1335	fr_w_document	document	noun	work	document	وثيقة			gender=m; article=le
+1336	fr_w_tambour	tambour	noun	leisure	drum	طبل			gender=m; article=le
+1337	fr_w_poussiere	poussière	noun	home	dust	غبار			gender=f; article=la
+1338	fr_w_employeur	employeur	noun	work	employer	صاحب العمل			gender=m; article=l'
+1339	fr_w_enveloppe	enveloppe	noun	communication	envelope	ظرف			gender=f; article=l'
+1340	fr_w_equipement	équipement	noun	work	equipment	معدّات			gender=m; article=l'
+1341	fr_w_redaction	rédaction	noun	school	essay	إنشاء			gender=f; article=la
+1342	fr_w_preuve	preuve	noun	people	proof, evidence	دليل			gender=f; article=la
+1343	fr_w_faute	faute	noun	people	mistake, fault	خطأ			gender=f; article=la
+1344	fr_w_plume	plume	noun	animals	feather	ريشة			gender=f; article=la
+1345	fr_w_tarif	tarif	noun	shopping	rate, fare	تعرفة			gender=m; article=le
+1346	fr_w_saveur	saveur	noun	food	flavour	نكهة			gender=f; article=la
+1347	fr_w_inondation	inondation	noun	weather	flood	فيضان			gender=f; article=l'
+1348	fr_w_farine	farine	noun	food	flour	طحين			gender=f; article=la
+1349	fr_w_brouillard	brouillard	noun	weather	fog	ضباب			gender=m; article=le
+1350	fr_w_liberte	liberté	noun	people	freedom	حرّية			gender=f; article=la
+1351	fr_w_amitie	amitié	noun	people	friendship	صداقة			gender=f; article=l'
+1352	fr_w_grenouille	grenouille	noun	animals	frog	ضفدع			gender=f; article=la
+1353	fr_w_carburant	carburant	noun	travel	fuel	وقود			gender=m; article=le
+1354	fr_w_galerie	galerie	noun	leisure	gallery	معرض فنّي			gender=f; article=la
+1355	fr_w_gaz	gaz	noun	home	gas	غاز			gender=m; article=le
+1356	fr_w_generation	génération	noun	people	generation	جيل			gender=f; article=la
+1357	fr_w_fantome	fantôme	noun	leisure	ghost	شبح			gender=m; article=le
+1358	fr_w_gant	gant	noun	clothes	glove	قفّاز			gender=m; article=le
+1359	fr_w_grammaire	grammaire	noun	school	grammar	قواعد اللغة			gender=f; article=la
+1360	fr_w_camion	camion	noun	travel	lorry, truck	شاحنة			gender=m; article=le
+1361	fr_w_moto	moto	noun	travel	motorbike	درّاجة نارية			gender=f; article=la
+1362	fr_w_autoroute	autoroute	noun	travel	motorway	طريق سريع			gender=f; article=l'
+1363	fr_w_essence	essence	noun	travel	petrol	بنزين			gender=f; article=l'
+1364	fr_w_parking	parking	noun	travel	car park	موقف سيارات			gender=m; article=le
+1365	fr_w_feu_rouge	feu rouge	noun	travel	red light	إشارة حمراء		feux rouges	gender=m; article=le
+1366	fr_w_carrefour	carrefour	noun	travel	crossroads	تقاطع			gender=m; article=le
+1367	fr_w_port	port	noun	travel	port	ميناء			gender=m; article=le
+1368	fr_w_douane	douane	noun	travel	customs	جمارك			gender=f; article=la
+1369	fr_w_retour	retour	noun	travel	return	عودة			gender=m; article=le
+1370	fr_w_profession	profession	noun	work	profession	مهنة			gender=f; article=la
+1371	fr_w_imprimante	imprimante	noun	work	printer	طابعة			gender=f; article=l'
+1372	fr_w_short	short	noun	clothes	shorts	بنطال قصير			gender=m; article=le
+1373	fr_w_botte	botte	noun	clothes	boot	حذاء طويل			gender=f; article=la
+1374	fr_w_basket	basket	noun	clothes	trainer	حذاء رياضي			gender=f; article=la
+1375	fr_w_collier	collier	noun	clothes	necklace	عقد			gender=m; article=le
+1376	fr_w_boucle_d_oreille	boucle d'oreille	noun	clothes	earring	قرط		boucles d'oreilles	gender=f; article=la
+1377	fr_w_parfum	parfum	noun	clothes	perfume; flavour	عطر؛ نكهة			gender=m; article=le
+1378	fr_w_peigne	peigne	noun	home	comb	مشط			gender=m; article=le
+1379	fr_w_savon	savon	noun	home	soap	صابون			gender=m; article=le
+1380	fr_w_shampooing	shampooing	noun	home	shampoo	شامبو			gender=m; article=le
+1381	fr_w_dentifrice	dentifrice	noun	home	toothpaste	معجون أسنان			gender=m; article=le
+1382	fr_w_ciseaux	ciseaux	noun	home	scissors	مقصّ			gender=m; article=le
+1383	fr_w_aiguille	aiguille	noun	home	needle	إبرة			gender=f; article=l'
+1384	fr_w_fil	fil	noun	home	thread	خيط			gender=m; article=le
+1385	fr_w_seau	seau	noun	home	bucket	دلو		seaux	gender=m; article=le
+1386	fr_w_balai	balai	noun	home	broom	مكنسة			gender=m; article=le
+1387	fr_w_fer_a_repasser	fer à repasser	noun	home	iron	مكواة			gender=m; article=le
+1388	fr_w_lave_linge	lave-linge	noun	home	washing machine	غسّالة			gender=m; article=le
+1389	fr_w_micro_ondes	micro-ondes	noun	home	microwave	ميكروويف			gender=m; article=le
+1390	fr_w_four	four	noun	food	oven	فرن			gender=m; article=le
+1391	fr_w_casserole	casserole	noun	food	saucepan	قدر			gender=f; article=la
+1392	fr_w_plateau	plateau	noun	food	tray	صينية		plateaux	gender=m; article=le
+1393	fr_w_nappe	nappe	noun	food	tablecloth	مفرش الطاولة			gender=f; article=la
+1394	fr_w_ail	ail	noun	food	garlic	ثوم			gender=m; article=l'
+1395	fr_w_carotte	carotte	noun	food	carrot	جزرة			gender=f; article=la
+1396	fr_w_laitue	laitue	noun	food	lettuce	خسّ			gender=f; article=la
+1397	fr_w_concombre	concombre	noun	food	cucumber	خيار			gender=m; article=le
+1398	fr_w_fraise	fraise	noun	food	strawberry	فراولة			gender=f; article=la
+1399	fr_w_raisin	raisin	noun	food	grapes	عنب			gender=m; article=le
+1400	fr_w_poire	poire	noun	food	pear	إجاصة			gender=f; article=la
+1401	fr_w_pasteque	pastèque	noun	food	watermelon	بطيخ			gender=f; article=la
+1402	fr_w_cerise	cerise	noun	food	cherry	كرز			gender=f; article=la
+1403	fr_w_noix	noix	noun	food	walnut, nut	جوز			gender=f; article=la
+1404	fr_w_olive	olive	noun	food	olive	زيتونة			gender=f; article=l'
+1405	fr_w_yaourt	yaourt	noun	food	yoghurt	لبن زبادي			gender=m; article=l'
+1406	fr_w_steak	steak	noun	food	steak	شريحة لحم			gender=m; article=le
+1407	fr_w_fruits_de_mer	fruits de mer	noun	food	seafood	مأكولات بحرية			gender=m; article=le
+1408	fr_w_crevette	crevette	noun	food	prawn	روبيان			gender=f; article=la
+1409	fr_w_agneau	agneau	noun	food	lamb	لحم ضأن		agneaux	gender=m; article=l'
+1410	fr_w_vache	vache	noun	animals	cow	بقرة			gender=f; article=la
+1411	fr_w_taureau	taureau	noun	animals	bull	ثور		taureaux	gender=m; article=le
+1412	fr_w_chevre	chèvre	noun	animals	goat	عنزة			gender=f; article=la
+1413	fr_w_ane	âne	noun	animals	donkey	حمار			gender=m; article=l'
+1414	fr_w_lion	lion	noun	animals	lion	أسد			gender=m; article=le
+1415	fr_w_elephant	éléphant	noun	animals	elephant	فيل			gender=m; article=l'
+1416	fr_w_singe	singe	noun	animals	monkey	قرد			gender=m; article=le
+1417	fr_w_serpent	serpent	noun	animals	snake	ثعبان			gender=m; article=le
+1418	fr_w_mouche	mouche	noun	animals	fly	ذبابة			gender=f; article=la
+1419	fr_w_moustique	moustique	noun	animals	mosquito	بعوضة			gender=m; article=le
+1420	fr_w_araignee	araignée	noun	animals	spider	عنكبوت			gender=f; article=l'
+1421	fr_w_papillon	papillon	noun	animals	butterfly	فراشة			gender=m; article=le
+1422	fr_w_lapin	lapin	noun	animals	rabbit	أرنب			gender=m; article=le
+1423	fr_w_tortue	tortue	noun	animals	tortoise	سلحفاة			gender=f; article=la
+1424	fr_w_baleine	baleine	noun	animals	whale	حوت			gender=f; article=la
+1425	fr_w_ours	ours	noun	animals	bear	دبّ			gender=m; article=l'
+1426	fr_w_loup	loup	noun	animals	wolf	ذئب			gender=m; article=le
+1427	fr_w_renard	renard	noun	animals	fox	ثعلب			gender=m; article=le
+1428	fr_w_nid	nid	noun	animals	nest	عشّ			gender=m; article=le
+1429	fr_w_aile	aile	noun	animals	wing	جناح			gender=f; article=l'
+1430	fr_w_musicien	musicien	noun	leisure	musician	موسيقي		musicienne	gender=m; article=le
+1431	fr_w_chanson	chanson	noun	leisure	song	أغنية			gender=f; article=la
+1432	fr_w_natation	natation	noun	leisure	swimming	السباحة			gender=f; article=la
+1433	fr_w_tennis	tennis	noun	leisure	tennis	التنس			gender=m; article=le
+1434	fr_w_lecture	lecture	noun	leisure	reading	القراءة			gender=f; article=la
+1435	fr_w_emission	émission	noun	leisure	programme (TV, radio)	برنامج			gender=f; article=l'
+1436	fr_w_eleve	élève	noun	school	pupil	تلميذ			gender=mf; article=l'
+1437	fr_w_directeur	directeur	noun	work	director, headteacher	مدير		directrice	gender=m; article=le
+1438	fr_w_fermier	fermier	noun	work	farmer	مزارع		fermière	gender=m; article=le
+1439	fr_w_cour	cour	noun	school	playground, courtyard	ساحة			gender=f; article=la
+1440	fr_w_route	route	noun	travel	road	طريق			gender=f; article=la
+1441	fr_w_toilettes	toilettes	noun	home	toilet(s)	حمّام، مرحاض			gender=f; article=la
+1442	fr_w_salle	salle	noun	places	room, hall (salle de bains: bathroom)	قاعة، غرفة			gender=f; article=la
+1443	fr_w_repos	repos	noun	health	rest	راحة			gender=m; article=le
+1444	fr_w_journee	journée	noun	time	day (daytime)	نهار، يوم			gender=f; article=la
+1445	fr_w_dessin	dessin	noun	leisure	drawing	رسم			gender=m; article=le
+1446	fr_w_parents	parents	noun	family	parents	والدان			gender=m; article=le
+1447	fr_w_actif	actif	adj	descriptions	active	نشيط		active
+1448	fr_w_conscient	conscient	adj	mind	aware	مدرك
+1449	fr_w_basique	basique	adj	descriptions	basic	أساسي
+1450	fr_w_amer	amer	adj	food	bitter	مُرّ		amère
+1451	fr_w_courant	courant	adj	descriptions	common, current	شائع؛ جارٍ
+1452	fr_w_confiant	confiant	adj	feelings	confident	واثق
+1453	fr_w_cruel	cruel	adj	people	cruel	قاسٍ		cruelle
+1454	fr_w_curieux	curieux	adj	people	curious	فضولي		curieuse
+1455	fr_w_sourd	sourd	adj	health	deaf	أصمّ
+1456	fr_w_egal	égal	adj	numbers	equal	متساوٍ		égale, égaux
+1457	fr_w_excellent	excellent	adj	descriptions	excellent	ممتاز
+1458	fr_w_familier	familier	adj	mind	familiar	مألوف		familière
+1459	fr_w_genereux	généreux	adj	people	generous	كريم		généreuse
+1460	fr_w_reconnaissant	reconnaissant	adj	feelings	grateful	ممتنّ
+1461	fr_w_coupable	coupable	adj	feelings	guilty	مذنب
+1462	fr_w_serviable	serviable	adj	people	helpful	خدوم
+1463	fr_w_anxieux	anxieux	adj	feelings	anxious	قلق		anxieuse
+1464	fr_w_mechant	méchant	adj	people	nasty, mean	شرّير، لئيم
+1465	fr_w_presse	pressé	adj	feelings	in a hurry	مستعجل
+1466	fr_w_mauvais	mauvais	adj	descriptions	bad	سيئ		mauvaise
+1467	fr_w_electrique	électrique	adj	home	electric	كهربائي
+1468	fr_w_gratuit	gratuit	adj	shopping	free (of charge)	مجّاني
+1469	fr_w_final	final	adj	function	final	نهائي		finale
+1470	fr_w_total	total	adj	numbers	total	إجمالي		totale
+1471	fr_w_agreable	agréable	adj	descriptions	pleasant	لطيف، ممتع
+1472	fr_w_n_importe_ou	n'importe où	adv	places	anywhere	في أيّ مكان
+1473	fr_w_clairement	clairement	adv	function	clearly	بوضوح
+1474	fr_w_generalement	généralement	adv	function	generally	عمومًا
+1475	fr_w_honnetement	honnêtement	adv	function	honestly	بصراحة
+1476	fr_w_principalement	principalement	adv	function	mainly	أساسًا
+1477	fr_w_rarement	rarement	adv	time	rarely	نادرًا
+1478	fr_w_regulierement	régulièrement	adv	time	regularly	بانتظام
+1479	fr_w_simplement	simplement	adv	function	simply	ببساطة
+1480	fr_w_seulement	seulement	adv	function	only	فقط
+1481	fr_w_d_abord	d'abord	adv	time	first	أولًا
+1482	fr_w_tout_a_coup	tout à coup	adv	time	suddenly	فجأة
+1483	fr_w_oh	oh	interj	function	oh	آه
+1484	fr_w_medecine	médecine	noun	health	medicine (science)	الطب			gender=f; article=la
+1485	fr_w_dentiste	dentiste	noun	health	dentist	طبيب أسنان			gender=mf; article=le/la
+1486	fr_w_boulanger	boulanger	noun	work	baker	خبّاز		boulangère	gender=m; article=le
+1487	fr_w_boucher	boucher	noun	work	butcher	جزّار		bouchère	gender=m; article=le
+1488	fr_w_coiffeur	coiffeur	noun	work	hairdresser	حلّاق		coiffeuse	gender=m; article=le
+1489	fr_w_vendeur	vendeur	noun	work	shop assistant, seller	بائع		vendeuse	gender=m; article=le
+1490	fr_w_juge	juge	noun	people	judge	قاضٍ			gender=mf; article=le/la
+1491	fr_w_tribunal	tribunal	noun	places	court	محكمة		tribunaux	gender=m; article=le
+1492	fr_w_politique	politique	noun	people	politics; policy	سياسة			gender=f; article=la
+1493	fr_w_religion	religion	noun	people	religion	دين			gender=f; article=la
+1494	fr_w_terrain	terrain	noun	places	ground, pitch, plot of land	أرض، ملعب			gender=m; article=le
+1495	fr_w_etang	étang	noun	nature	pond	بركة			gender=m; article=l'
+1496	fr_w_racine	racine	noun	nature	root	جذر			gender=f; article=la
+1497	fr_w_graine	graine	noun	nature	seed	بذرة			gender=f; article=la
+1498	fr_w_puits	puits	noun	nature	well	بئر			gender=m; article=le
+1499	fr_w_chameau	chameau	noun	animals	camel	جمل		chameaux	gender=m; article=le
+1500	fr_w_requin	requin	noun	animals	shark	قرش			gender=m; article=le
