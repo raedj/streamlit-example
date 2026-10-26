@@ -214,16 +214,17 @@
         "levels": [
           1,
           2,
-          3
+          3,
+          4
         ],
-        "last_rank": 900
+        "last_rank": 1200
       }
     },
     "resume_at": {
-      "language": "ms",
-      "level": 4,
-      "next_rank": 901,
-      "note": "Level 4 in progress (order: en, es, fr, zh, ar, tr, ur, ms); tools/scan_wordlist.py <lang> --level 4 must report 0 unknown before committing."
+      "language": "en",
+      "level": 5,
+      "next_rank": 1201,
+      "note": "Levels 1-4 are done for all eight languages. Next: level 5 in the same order (en, es, fr, zh, ar, tr, ur, ms)."
     },
     "size_per_level": "about 41-59 KB compressed in the APK per level (measured: en 59 KB, es 43 KB, fr 41 KB; zh, ar, tr, ur and ms not measured)"
   }

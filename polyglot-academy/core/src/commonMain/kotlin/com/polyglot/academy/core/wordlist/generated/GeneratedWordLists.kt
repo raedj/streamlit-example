@@ -11,7 +11,7 @@ internal object GeneratedWordLists {
         "ar" -> listOf({ ArLevel01.words to ArLevel01.examples }, { ArLevel02.words to ArLevel02.examples }, { ArLevel03.words to ArLevel03.examples }, { ArLevel04.words to ArLevel04.examples })
         "tr" -> listOf({ TrLevel01.words to TrLevel01.examples }, { TrLevel02.words to TrLevel02.examples }, { TrLevel03.words to TrLevel03.examples }, { TrLevel04.words to TrLevel04.examples })
         "ur" -> listOf({ UrLevel01.words to UrLevel01.examples }, { UrLevel02.words to UrLevel02.examples }, { UrLevel03.words to UrLevel03.examples }, { UrLevel04.words to UrLevel04.examples })
-        "ms" -> listOf({ MsLevel01.words to MsLevel01.examples }, { MsLevel02.words to MsLevel02.examples }, { MsLevel03.words to MsLevel03.examples })
+        "ms" -> listOf({ MsLevel01.words to MsLevel01.examples }, { MsLevel02.words to MsLevel02.examples }, { MsLevel03.words to MsLevel03.examples }, { MsLevel04.words to MsLevel04.examples })
         else -> emptyList()
     }
 }
