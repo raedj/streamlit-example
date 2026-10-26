@@ -1499,3 +1499,303 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 1498	tr_w_sahne	sahne	noun	leisure	stage; scene	خشبة المسرح؛ مشهد
 1499	tr_w_gise	gişe	noun	leisure	ticket office	شبّاك التذاكر
 1500	tr_w_kizarmak	kızarmak	verb	feelings	to blush; to be fried	يحمرّ؛ يُقلى
+1501	tr_w_ayarlamak	ayarlamak	verb	actions	to adjust, to set	يضبط
+1502	tr_w_evlat_edinmek	evlat edinmek	verb	family	to adopt (a child)	يتبنّى
+1503	tr_w_havlamak	havlamak	verb	animals	to bark	ينبح
+1504	tr_w_ziplamak	zıplamak	verb	movement	to bounce, to hop	يقفز
+1505	tr_w_ele_gecirmek	ele geçirmek	verb	actions	to capture	يستولي على
+1506	tr_w_cokmek	çökmek	verb	actions	to collapse	ينهار
+1507	tr_w_teselli_etmek	teselli etmek	verb	feelings	to comfort	يواسي
+1508	tr_w_bestelemek	bestelemek	verb	leisure	to compose (music)	يلحّن
+1509	tr_w_danismak	danışmak	verb	work	to consult	يستشير
+1510	tr_w_ezmek	ezmek	verb	actions	to crush, to mash	يسحق
+1511	tr_w_ilan_etmek	ilan etmek	verb	communication	to declare	يعلن
+1512	tr_w_tanimlamak	tanımlamak	verb	school	to define	يعرّف
+1513	tr_w_talep_etmek	talep etmek	verb	communication	to demand	يطالب
+1514	tr_w_yatirmak	yatırmak	verb	shopping	to deposit; to lay down	يودع؛ يُضجع
+1515	tr_w_tespit_etmek	tespit etmek	verb	senses	to detect, to determine	يكتشف، يحدّد
+1516	tr_w_belirlemek	belirlemek	verb	mind	to determine	يحدّد
+1517	tr_w_bagislamak	bağışlamak	verb	people	to donate	يتبرّع
+1518	tr_w_bogulmak	boğulmak	verb	health	to drown	يغرق
+1519	tr_w_abartmak	abartmak	verb	communication	to exaggerate	يبالغ
+1520	tr_w_genisletmek	genişletmek	verb	work	to expand	يوسّع
+1521	tr_w_uzatmak	uzatmak	verb	time	to extend	يمدّد
+1522	tr_w_akmak	akmak	verb	nature	to flow	يجري
+1523	tr_w_tereddut_etmek	tereddüt etmek	verb	mind	to hesitate	يتردّد
+1524	tr_w_agirlamak	ağırlamak	verb	leisure	to host (guests)	يستضيف
+1525	tr_w_taklit_etmek	taklit etmek	verb	actions	to imitate	يقلّد
+1526	tr_w_belirtmek	belirtmek	verb	communication	to indicate, to state	يذكر، يشير
+1527	tr_w_miras_almak	miras almak	verb	family	to inherit	يرث
+1528	tr_w_denetlemek	denetlemek	verb	work	to inspect, to supervise	يفتّش
+1529	tr_w_ilham_vermek	ilham vermek	verb	people	to inspire	يلهم
+1530	tr_w_hakaret_etmek	hakaret etmek	verb	communication	to insult	يهين
+1531	tr_w_niyet_etmek	niyet etmek	verb	mind	to intend	ينوي
+1532	tr_w_sorusturmak	soruşturmak	verb	work	to investigate	يحقّق
+1533	tr_w_diz_cokmek	diz çökmek	verb	body	to kneel	يركع
+1534	tr_w_firlatmak	fırlatmak	verb	actions	to throw, to launch	يقذف
+1535	tr_w_yaslanmak_lean	yaslanmak	verb	body	to lean	يستند
+1536	tr_w_surdurmek	sürdürmek	verb	work	to maintain, to continue	يواصل
+1537	tr_w_onarmak	onarmak	verb	home	to mend, to repair	يصلح
+1538	tr_w_pazarlik_etmek	pazarlık etmek	verb	shopping	to bargain	يساوم
+1539	tr_w_ihmal_etmek	ihmal etmek	verb	people	to neglect	يهمل
+1540	tr_w_elde_etmek	elde etmek	verb	function	to obtain	يحصل على
+1541	tr_w_kaplamak	kaplamak	verb	places	to cover, to occupy	يغطّي
+1542	tr_w_gucendirmek	gücendirmek	verb	people	to offend	يجرح مشاعر
+1543	tr_w_ameliyat_etmek	ameliyat etmek	verb	health	to operate (surgery)	يجري عملية
+1544	tr_w_karsi_cikmak	karşı çıkmak	verb	people	to oppose	يعارض
+1545	tr_w_sahip_olmak	sahip olmak	verb	function	to own	يمتلك
+1546	tr_w_ilerlemek	ilerlemek	verb	movement	to advance, to proceed	يتقدّم
+1547	tr_w_protesto_etmek	protesto etmek	verb	people	to protest	يحتجّ
+1548	tr_w_yansitmak	yansıtmak	verb	mind	to reflect	يعكس
+1549	tr_w_kaydolmak	kaydolmak	verb	school	to register, to enrol	يسجّل
+1550	tr_w_serbest_birakmak	serbest bırakmak	verb	actions	to release	يطلق سراح
+1551	tr_w_hafifletmek	hafifletmek	verb	health	to relieve	يخفّف
+1552	tr_w_temsil_etmek	temsil etmek	verb	work	to represent	يمثّل
+1553	tr_w_benzemek	benzemek	verb	people	to resemble	يشبه
+1554	tr_w_istifa_etmek	istifa etmek	verb	work	to resign	يستقيل
+1555	tr_w_direnmek	direnmek	verb	actions	to resist	يقاوم
+1556	tr_w_kizartmak	kızartmak	verb	food	to fry, to roast	يقلي، يحمّر
+1557	tr_w_yuvarlanmak	yuvarlanmak	verb	movement	to roll	يتدحرج
+1558	tr_w_mahvetmek	mahvetmek	verb	actions	to ruin	يدمّر
+1559	tr_w_feda_etmek	feda etmek	verb	people	to sacrifice	يضحّي
+1560	tr_w_tatmin_etmek	tatmin etmek	verb	feelings	to satisfy	يرضي
+1561	tr_w_gol_atmak	gol atmak	verb	leisure	to score a goal	يسجّل هدفًا
+1562	tr_w_dikmek	dikmek	verb	clothes	to sew; to plant	يخيط؛ يزرع
+1563	tr_w_titremek	titremek	verb	body	to shiver, to tremble	يرتجف
+1564	tr_w_islatmak	ıslatmak	verb	home	to wet, to soak	يبلّل
+1565	tr_w_sikmak	sıkmak	verb	actions	to squeeze	يعصر
+1566	tr_w_sokmak	sokmak	verb	animals	to sting; to insert	يلدغ؛ يُدخل
+1567	tr_w_guclendirmek	güçlendirmek	verb	function	to strengthen	يقوّي
+1568	tr_w_grev_yapmak	grev yapmak	verb	work	to go on strike	يضرب عن العمل
+1569	tr_w_sunmak	sunmak	verb	work	to present, to submit	يقدّم
+1570	tr_w_ozetlemek	özetlemek	verb	school	to summarise	يلخّص
+1571	tr_w_suphelenmek	şüphelenmek	verb	mind	to suspect	يشتبه
+1572	tr_w_yutmak	yutmak	verb	food	to swallow	يبلع
+1573	tr_w_yemin_etmek	yemin etmek	verb	communication	to swear (an oath)	يحلف
+1574	tr_w_terlemek	terlemek	verb	body	to sweat	يتعرّق
+1575	tr_w_sallanmak	sallanmak	verb	movement	to swing	يتأرجح
+1576	tr_w_takilmak	takılmak	verb	people	to tease; to get stuck	يمازح؛ يعلق
+1577	tr_w_tahammul_etmek	tahammül etmek	verb	people	to tolerate	يتحمّل
+1578	tr_w_aktarmak	aktarmak	verb	work	to transfer	ينقل
+1579	tr_w_donusturmek	dönüştürmek	verb	function	to transform	يحوّل
+1580	tr_w_kandirmak	kandırmak	verb	people	to trick	يخدع
+1581	tr_w_birlesmek	birleşmek	verb	people	to unite	يتّحد
+1582	tr_w_guncellemek	güncellemek	verb	work	to update	يحدّث
+1583	tr_w_tesvik_etmek	teşvik etmek	verb	communication	to encourage, to urge	يحثّ
+1584	tr_w_yok_olmak	yok olmak	verb	actions	to vanish	يختفي
+1585	tr_w_gonullu_olmak	gönüllü olmak	verb	people	to volunteer	يتطوّع
+1586	tr_w_zayiflamak	zayıflamak	verb	function	to weaken; to lose weight	يضعف؛ ينحف
+1587	tr_w_para_cekmek	para çekmek	verb	shopping	to withdraw money	يسحب مالًا
+1588	tr_w_yaralamak	yaralamak	verb	health	to wound	يجرح
+1589	tr_w_esnemek	esnemek	verb	body	to yawn	يتثاءب
+1590	tr_w_kamp_yapmak	kamp yapmak	verb	leisure	to camp	يخيّم
+1591	tr_w_oksamak	okşamak	verb	animals	to stroke	يداعب
+1592	tr_w_dalga_gecmek	dalga geçmek	verb	people	to make fun of	يسخر
+1593	tr_w_isbirligi_yapmak	işbirliği yapmak	verb	work	to collaborate	يتعاون
+1594	tr_w_havalanmak	havalanmak	verb	travel	to take off	تقلع
+1595	tr_w_geri_donusturmek	geri dönüştürmek	verb	nature	to recycle	يعيد التدوير
+1596	tr_w_tebrik_etmek	tebrik etmek	verb	people	to congratulate	يهنّئ
+1597	tr_w_basmak	basmak	verb	movement	to step on; to print	يدوس؛ يطبع
+1598	tr_w_aksan	aksan	noun	communication	accent	لهجة
+1599	tr_w_muhasebeci	muhasebeci	noun	work	accountant	محاسب
+1600	tr_w_ajans	ajans	noun	work	agency	وكالة
+1601	tr_w_anlasma	anlaşma	noun	work	agreement	اتفاق
+1602	tr_w_havayolu	havayolu	noun	travel	airline	شركة طيران
+1603	tr_w_alternatif	alternatif	noun	function	alternative	بديل
+1604	tr_w_hirs	hırs	noun	work	ambition, greed	طموح، جشع
+1605	tr_w_kaygi	kaygı	noun	feelings	anxiety	قلق
+1606	tr_w_istah	iştah	noun	food	appetite	شهية
+1607	tr_w_ev_aleti	ev aleti	noun	home	household appliance	جهاز منزلي
+1608	tr_w_aci_angle	açı	noun	function	angle, aspect	زاوية، جانب
+1609	tr_w_dernek	dernek	noun	people	association	جمعية
+1610	tr_w_yetki	yetki	noun	people	authority	صلاحية
+1611	tr_w_kelepir	kelepir	noun	shopping	bargain	صفقة رابحة
+1612	tr_w_engel	engel	noun	places	obstacle, barrier	عائق
+1613	tr_w_bodrum	bodrum	noun	home	basement	قبو
+1614	tr_w_korfez	körfez	noun	nature	gulf, bay	خليج
+1615	tr_w_fasulye	fasulye	noun	food	bean	فاصولياء
+1616	tr_w_davranis	davranış	noun	people	behaviour	سلوك
+1617	tr_w_inanc	inanç	noun	mind	belief	اعتقاد
+1618	tr_w_fayda	fayda	noun	function	benefit	فائدة
+1619	tr_w_biyoloji	biyoloji	noun	school	biology	علم الأحياء
+1620	tr_w_blog	blog	noun	communication	blog	مدوّنة
+1621	tr_w_bag	bağ	noun	people	bond, tie	رابطة
+1622	tr_w_prim	prim	noun	work	bonus	علاوة
+1623	tr_w_esinti	esinti	noun	weather	breeze	نسيم
+1624	tr_w_gelin	gelin	noun	people	bride	عروس
+1625	tr_w_damat	damat	noun	people	groom	عريس
+1626	tr_w_brosur	broşür	noun	travel	brochure	كتيّب
+1627	tr_w_kabarcik	kabarcık	noun	nature	bubble	فقاعة
+1628	tr_w_boga	boğa	noun	animals	bull	ثور
+1629	tr_w_demet	demet	noun	function	bunch	باقة
+1630	tr_w_yuk	yük	noun	function	load, burden	حمل
+1631	tr_w_kabin	kabin	noun	travel	cabin	مقصورة
+1632	tr_w_kablo	kablo	noun	home	cable	كابل
+1633	tr_w_kafe	kafe	noun	food	café	مقهى
+1634	tr_w_kampanya	kampanya	noun	work	campaign	حملة
+1635	tr_w_kanser	kanser	noun	health	cancer	سرطان
+1636	tr_w_aday	aday	noun	work	candidate	مرشّح
+1637	tr_w_kategori	kategori	noun	function	category	فئة
+1638	tr_w_sigir	sığır	noun	animals	cattle	ماشية
+1639	tr_w_sertifika	sertifika	noun	school	certificate	شهادة
+1640	tr_w_tebesir	tebeşir	noun	school	chalk	طباشير
+1641	tr_w_kaos	kaos	noun	function	chaos	فوضى
+1642	tr_w_grafik	grafik	noun	work	chart, graph	رسم بياني
+1643	tr_w_cek	çek	noun	shopping	cheque	شيك
+1644	tr_w_kimya	kimya	noun	school	chemistry	الكيمياء
+1645	tr_w_satranc	satranç	noun	leisure	chess	الشطرنج
+1646	tr_w_sef	şef	noun	work	chef; boss	طاهٍ؛ رئيس
+1647	tr_w_cips	cips	noun	food	crisps	رقائق بطاطس
+1648	tr_w_kil	kil	noun	nature	clay	طين
+1649	tr_w_ucurum	uçurum	noun	nature	cliff	جرف
+1650	tr_w_kumas	kumaş	noun	clothes	fabric	قماش
+1651	tr_w_ipucu	ipucu	noun	mind	clue, hint	دليل، تلميح
+1652	tr_w_komur	kömür	noun	nature	coal	فحم
+1653	tr_w_kod	kod	noun	function	code	رمز
+1654	tr_w_meslektas	meslektaş	noun	work	colleague	زميل
+1655	tr_w_komedi	komedi	noun	leisure	comedy	كوميديا
+1656	tr_w_komite	komite	noun	work	committee	لجنة
+1657	tr_w_rakip	rakip	noun	leisure	rival, competitor	منافس
+1658	tr_w_kavram	kavram	noun	mind	concept	مفهوم
+1659	tr_w_endise	endişe	noun	feelings	worry, concern	قلق
+1660	tr_w_baglanti	bağlantı	noun	function	connection	اتصال
+1661	tr_w_kap	kap	noun	home	container	وعاء
+1662	tr_w_baglam	bağlam	noun	school	context	سياق
+1663	tr_w_kita	kıta	noun	places	continent	قارّة
+1664	tr_w_kostum	kostüm	noun	clothes	costume	زيّ
+1665	tr_w_kulube	kulübe	noun	home	hut, cabin	كوخ
+1666	tr_w_zanaat	zanaat	noun	work	craft	حرفة
+1667	tr_w_krema	krema	noun	food	cream	كريمة
+1668	tr_w_yaratik	yaratık	noun	animals	creature	مخلوق
+1669	tr_w_kriz	kriz	noun	function	crisis	أزمة
+1670	tr_w_hasat	hasat	noun	nature	harvest	حصاد
+1671	tr_w_tac	taç	noun	people	crown	تاج
+1672	tr_w_dansci	dansçı	noun	leisure	dancer	راقص
+1673	tr_w_safak	şafak	noun	time	dawn	فجر
+1674	tr_w_munazara	münazara	noun	communication	debate	مناظرة
+1675	tr_w_susleme	süsleme	noun	home	decoration	زينة
+1676	tr_w_yenilgi	yenilgi	noun	leisure	defeat	هزيمة
+1677	tr_w_zevk	zevk	noun	feelings	pleasure, taste	متعة، ذوق
+1678	tr_w_teslimat	teslimat	noun	shopping	delivery	توصيل
+1679	tr_w_demokrasi	demokrasi	noun	people	democracy	ديمقراطية
+1680	tr_w_derinlik	derinlik	noun	numbers	depth	عمق
+1681	tr_w_aciklama	açıklama	noun	communication	explanation, statement	تفسير، بيان
+1682	tr_w_dedektif	dedektif	noun	people	detective	محقّق
+1683	tr_w_gelisme	gelişme	noun	work	development	تطوّر
+1684	tr_w_diyagram	diyagram	noun	school	diagram	رسم توضيحي
+1685	tr_w_diyalog	diyalog	noun	communication	dialogue	حوار
+1686	tr_w_elmas	elmas	noun	shopping	diamond	ألماس
+1687	tr_w_gucluk	güçlük	noun	function	difficulty	صعوبة
+1688	tr_w_dinozor	dinozor	noun	animals	dinosaur	ديناصور
+1689	tr_w_dezavantaj	dezavantaj	noun	function	disadvantage	عيب
+1690	tr_w_disiplin	disiplin	noun	school	discipline	انضباط
+1691	tr_w_kesif	keşif	noun	mind	discovery	اكتشاف
+1692	tr_w_ilce	ilçe	noun	places	district	قضاء، منطقة
+1693	tr_w_bosanma	boşanma	noun	family	divorce	طلاق
+1694	tr_w_belgesel	belgesel	noun	leisure	documentary	فيلم وثائقي
+1695	tr_w_bagis	bağış	noun	people	donation	تبرّع
+1696	tr_w_doz	doz	noun	health	dose	جرعة
+1697	tr_w_nokta	nokta	noun	function	point, dot	نقطة
+1698	tr_w_kuraklik	kuraklık	noun	weather	drought	جفاف
+1699	tr_w_kartal	kartal	noun	animals	eagle	نسر
+1700	tr_w_deprem	deprem	noun	nature	earthquake	زلزال
+1701	tr_w_editor	editör	noun	work	editor	محرّر
+1702	tr_w_dirsek	dirsek	noun	body	elbow	مرفق
+1703	tr_w_secim	seçim	noun	people	election; choice	انتخابات؛ اختيار
+1704	tr_w_istihdam	istihdam	noun	work	employment	توظيف
+1705	tr_w_eglence	eğlence	noun	leisure	entertainment, fun	ترفيه
+1706	tr_w_patlama	patlama	noun	actions	explosion	انفجار
+1707	tr_w_ifade	ifade	noun	communication	expression	تعبير
+1708	tr_w_kas	kaş	noun	body	eyebrow	حاجب
+1709	tr_w_faktor	faktör	noun	function	factor	عامل
+1710	tr_w_basarisizlik	başarısızlık	noun	work	failure	فشل
+1711	tr_w_sohret	şöhret	noun	people	fame	شهرة
+1712	tr_w_kader	kader	noun	people	fate	قدر
+1713	tr_w_iyilik	iyilik	noun	people	favour, kindness	معروف
+1714	tr_w_ziyafet	ziyafet	noun	food	feast	وليمة
+1715	tr_w_ozellik	özellik	noun	function	feature	ميزة
+1716	tr_w_geri_bildirim	geri bildirim	noun	communication	feedback	تغذية راجعة
+1717	tr_w_kurgu	kurgu	noun	leisure	fiction	خيال
+1718	tr_w_rakam	rakam	noun	numbers	digit, figure	رقم
+1719	tr_w_ceza	ceza	noun	people	fine, penalty	غرامة، عقوبة
+1720	tr_w_havai_fisek	havai fişek	noun	leisure	fireworks	ألعاب نارية
+1721	tr_w_alev	alev	noun	nature	flame	لهب
+1722	tr_w_grip	grip	noun	health	flu	إنفلونزا
+1723	tr_w_alin	alın	noun	body	forehead	جبهة		alnı, alnım, alnına, alnında
+1724	tr_w_servet	servet	noun	shopping	fortune	ثروة
+1725	tr_w_vakif	vakıf	noun	work	foundation	مؤسّسة خيرية
+1726	tr_w_cesme	çeşme	noun	places	fountain	نافورة
+1727	tr_w_cerceve	çerçeve	noun	home	frame	إطار
+1728	tr_w_dondurucu	dondurucu	noun	home	freezer	مجمّد
+1729	tr_w_islev	işlev	noun	function	function	وظيفة
+1730	tr_w_cenaze	cenaze	noun	people	funeral	جنازة
+1731	tr_w_cete	çete	noun	people	gang	عصابة
+1732	tr_w_cinsiyet	cinsiyet	noun	people	gender	جنس
+1733	tr_w_dahi	dâhi	noun	people	genius	عبقري
+1734	tr_w_beyefendi	beyefendi	noun	people	gentleman	سيّد محترم
+1735	tr_w_cografya	coğrafya	noun	school	geography	الجغرافيا
+1736	tr_w_jest	jest	noun	communication	gesture	إيماءة
+1737	tr_w_dev	dev	noun	people	giant	عملاق
+1738	tr_w_golf	golf	noun	leisure	golf	الغولف
+1739	tr_w_mal	mal	noun	shopping	goods, property	بضاعة، ممتلكات
+1740	tr_w_dedikodu	dedikodu	noun	communication	gossip	نميمة
+1741	tr_w_tahil	tahıl	noun	food	grain	حبوب
+1742	tr_w_mezar	mezar	noun	people	grave	قبر
+1743	tr_w_keder	keder	noun	feelings	grief	حزن
+1744	tr_w_buyume	büyüme	noun	function	growth	نموّ
+1745	tr_w_silah	silah	noun	people	gun, weapon	سلاح
+1746	tr_w_cekic	çekiç	noun	home	hammer	مطرقة
+1747	tr_w_manset	manşet	noun	communication	headline	عنوان رئيسي
+1748	tr_w_cennet	cennet	noun	people	paradise	جنّة
+1749	tr_w_topuk	topuk	noun	body	heel	كعب
+1750	tr_w_helikopter	helikopter	noun	travel	helicopter	مروحية
+1751	tr_w_kask	kask	noun	travel	helmet	خوذة
+1752	tr_w_ima	ima	noun	communication	hint, implication	تلميح
+1753	tr_w_kalca	kalça	noun	body	hip	ورك
+1754	tr_w_onur	onur	noun	people	honour	شرف
+1755	tr_w_kanca	kanca	noun	home	hook	خطّاف
+1756	tr_w_ufuk	ufuk	noun	nature	horizon	أفق
+1757	tr_w_boynuz	boynuz	noun	animals	horn	قرن
+1758	tr_w_pansiyon	pansiyon	noun	travel	guesthouse	نزل
+1759	tr_w_konut	konut	noun	home	housing, residence	مسكن
+1760	tr_w_mizah	mizah	noun	feelings	humour	فكاهة
+1761	tr_w_aclik	açlık	noun	food	hunger	جوع
+1762	tr_w_kasirga	kasırga	noun	weather	hurricane	إعصار
+1763	tr_w_saskin	şaşkın	adj	feelings	amazed, confused	مندهش
+1764	tr_w_sadik	sadık	adj	people	loyal	وفيّ
+1765	tr_w_olgun	olgun	adj	people	ripe, mature	ناضج
+1766	tr_w_olumsuz	olumsuz	adj	descriptions	negative	سلبي
+1767	tr_w_olumlu	olumlu	adj	descriptions	positive	إيجابي
+1768	tr_w_orijinal	orijinal	adj	descriptions	original	أصلي
+1769	tr_w_bariscil	barışçıl	adj	people	peaceful	سلمي
+1770	tr_w_iyimser	iyimser	adj	people	optimistic	متفائل
+1771	tr_w_kotumser	kötümser	adj	people	pessimistic	متشائم
+1772	tr_w_pratik	pratik	adj	descriptions	practical	عملي
+1773	tr_w_saf	saf	adj	descriptions	pure; naive	نقيّ؛ ساذج
+1774	tr_w_kirsal	kırsal	adj	places	rural	ريفي
+1775	tr_w_kentsel	kentsel	adj	places	urban	حضري
+1776	tr_w_bilge	bilge	adj	people	wise	حكيم
+1777	tr_w_hassas	hassas	adj	feelings	sensitive	حسّاس
+1778	tr_w_saglam	sağlam	adj	descriptions	sturdy, solid	متين
+1779	tr_w_kati	katı	adj	people	strict; solid	صارم؛ صلب
+1780	tr_w_sefkatli	şefkatli	adj	people	affectionate	حنون
+1781	tr_w_tipik	tipik	adj	descriptions	typical	نموذجي
+1782	tr_w_degerli	değerli	adj	descriptions	valuable	ثمين
+1783	tr_w_bilinmeyen	bilinmeyen	adj	people	unknown	مجهول
+1784	tr_w_bagimsiz	bağımsız	adj	people	independent	مستقلّ
+1785	tr_w_ulusal	ulusal	adj	places	national	وطني
+1786	tr_w_dikkatli	dikkatli	adj	people	careful	حذر
+1787	tr_w_hirsli	hırslı	adj	people	ambitious	طموح
+1788	tr_w_heyecan_verici	heyecan verici	adj	feelings	exciting	مثير
+1789	tr_w_inatci	inatçı	adj	people	stubborn	عنيد
+1790	tr_w_alcakgonullu	alçakgönüllü	adj	people	humble	متواضع
+1791	tr_w_bencil	bencil	adj	people	selfish	أناني
+1792	tr_w_caliskan	çalışkan	adj	people	hard-working	مجتهد
+1793	tr_w_esnek	esnek	adj	descriptions	flexible	مرن
+1794	tr_w_makul	makul	adj	mind	reasonable	معقول
+1795	tr_w_istikrarli	istikrarlı	adj	descriptions	stable	مستقرّ
+1796	tr_w_muhtemelen	muhtemelen	adv	mind	probably	على الأرجح
+1797	tr_w_su_anda	şu anda	adv	time	at the moment	حاليًا
+1798	tr_w_dogrudan	doğrudan	adv	movement	directly	مباشرةً
+1799	tr_w_kisisel_olarak	kişisel olarak	adv	people	personally	شخصيًا
+1800	tr_w_yavas_yavas	yavaş yavaş	adv	time	gradually, slowly	شيئًا فشيئًا
