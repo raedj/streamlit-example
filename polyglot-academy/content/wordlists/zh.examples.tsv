@@ -605,7 +605,7 @@ rank	sentence	en	ar	names
 302	她很喜欢旅游。	She really likes travelling.	هي تحب السفر كثيرًا.
 303	我们昨天参观了博物馆。	We visited the museum yesterday.	زرنا المتحف أمس.
 303	欢迎你们来参观我们的学校。	You're welcome to visit our school.	أهلًا بكم لزيارة مدرستنا.
-304	我们下个月搬家。	We're moving house next month.	سننتقل إلى بيت جديد الشهر القادم.
+304	我们下个月搬到北京。	We're moving to Beijing next month.	سننتقل إلى بكين الشهر القادم.
 304	你能帮我搬这个桌子吗？	Can you help me move this table?	هل يمكنك مساعدتي في نقل هذه الطاولة؟
 305	我每天八点上班。	I start work at eight every day.	أبدأ العمل في الثامنة كل يوم.
 305	他坐地铁去上班。	He takes the subway to work.	يذهب إلى العمل بالمترو.
@@ -673,7 +673,7 @@ rank	sentence	en	ar	names
 336	我打算明天去银行。	I plan to go to the bank tomorrow.	أنوي الذهاب إلى المصرف غدًا.
 337	我认为这个办法很好。	I think this method is good.	أرى أن هذه الطريقة جيدة.
 337	你认为怎么样？	What do you think?	ما رأيك؟
-338	我发现我的钱包不见了。	I found that my wallet was gone.	اكتشفت أن محفظتي اختفت.
+338	我发现我的手机不见了。	I found that my phone was gone.	اكتشفت أن هاتفي اختفى.
 338	他发现了一个好地方。	He found a good place.	اكتشف مكانًا جيدًا.
 339	我明天去见他。	I'm going to see him tomorrow.	سأذهب لرؤيته غدًا.
 339	好久不见，你好吗？	Long time no see, how are you?	زمان لم نلتقِ، كيف حالك؟
@@ -1003,7 +1003,7 @@ rank	sentence	en	ar	names
 501	这条裤子太短了。	These trousers are too short.	هذا البنطال قصير جدًا.
 502	我弟弟比我矮。	My younger brother is shorter than me.	أخي الصغير أقصر مني.
 502	这个孩子不矮。	This child isn't short.	هذا الطفل ليس قصيرًا.
-503	我最近胖了。	I've put on weight recently.	زاد وزني مؤخرًا.
+503	我这个月胖了。	I've put on weight this month.	زاد وزني هذا الشهر.
 503	这只猫很胖。	This cat is very fat.	هذه القطة سمينة جدًا.
 504	她比以前瘦了。	She's thinner than before.	أصبحت أنحف من قبل.
 504	你太瘦了，多吃一点儿。	You're too thin, eat a bit more.	أنت نحيف جدًا، كُل أكثر قليلًا.
@@ -1056,7 +1056,7 @@ rank	sentence	en	ar	names
 528	这个歌很好听。	This song is lovely.	هذه الأغنية جميلة.
 528	她唱歌很好听。	She sings beautifully.	تغني بصوت جميل.
 529	晚上一个人出去很危险。	Going out alone at night is dangerous.	الخروج وحدك في الليل خطير.
-529	这里很危险，别过去。	It's dangerous here, don't go over.	المكان خطير هنا، لا تذهب.
+529	这里很危险，别去那里。	It's dangerous here, don't go over there.	المكان هنا خطير، لا تذهب إلى هناك.
 530	这些水果很新鲜。	This fruit is very fresh.	هذه الفاكهة طازجة جدًا.
 530	我想买新鲜的鱼。	I want to buy fresh fish.	أريد أن أشتري سمكًا طازجًا.
 531	这个箱子很重。	This box is very heavy.	هذا الصندوق ثقيل جدًا.
@@ -1157,7 +1157,7 @@ rank	sentence	en	ar	names
 578	他不是坏人。	He's not a bad person.	إنه ليس شخصًا سيئًا.
 579	加油！你一定可以！	Come on! You can definitely do it!	هيّا! يمكنك ذلك بالتأكيد!
 579	明天考试，加油！	Exam tomorrow, good luck!	الامتحان غدًا، بالتوفيق!
-580	好久不见，你最近怎么样？	Long time no see, how have you been lately?	زمان لم نلتقِ، كيف حالك مؤخرًا؟
+580	好久不见，你怎么样？	Long time no see, how are you?	لم أرك منذ زمن، كيف حالك؟
 580	好久不见！你还好吗？	Long time no see! Are you OK?	زمان لم نلتقِ! هل أنت بخير؟
 581	新年快乐，身体健康！	Happy New Year and good health!	سنة جديدة سعيدة وصحة جيدة!
 581	祝大家新年快乐！	Happy New Year, everyone!	سنة جديدة سعيدة للجميع!
@@ -1199,3 +1199,603 @@ rank	sentence	en	ar	names
 599	奶奶家有很多鸡。	Grandma has lots of chickens.	لدى جدتي دجاج كثير.
 600	我不吃肉。	I don't eat meat.	لا آكل اللحم.
 600	这个肉很新鲜。	This meat is very fresh.	هذا اللحم طازج جدًا.
+601	我已经把邮件发送给经理了。	I've already sent the email to the manager.	أرسلت البريد إلى المدير بالفعل.
+601	请把照片发送给我。	Please send me the photos.	من فضلك أرسل لي الصور.
+602	星期六我们打扫房间。	We clean the rooms on Saturday.	ننظّف الغرف يوم السبت.
+602	妈妈每天打扫厨房。	Mum cleans the kitchen every day.	تنظّف أمي المطبخ كل يوم.
+603	快收拾你的东西！	Quickly tidy up your things!	رتّب أغراضك بسرعة!
+603	我在收拾行李。	I'm packing my luggage.	أحزم أمتعتي.
+604	我的钥匙丢了。	I've lost my keys.	ضاعت مفاتيحي.
+604	别把护照丢了。	Don't lose your passport.	لا تُضيّع جواز سفرك.
+605	有人偷了我的自行车。	Someone stole my bike.	سرق أحدهم دراجتي.
+605	我的包在地铁上被偷了。	My bag was stolen on the metro.	سُرقت حقيبتي في المترو.
+606	请推门进来。	Please push the door and come in.	من فضلك ادفع الباب وادخل.
+606	我们一起推车吧。	Let's push the car together.	لندفع السيارة معًا.
+607	他拉着我的手。	He was holding my hand and pulling.	كان يسحبني من يدي.
+607	请拉开窗户。	Please pull the window open.	من فضلك اسحب النافذة وافتحها.
+608	别把纸扔在路上。	Don't throw paper on the road.	لا ترمِ الورق في الطريق.
+608	他把足球扔给了狗。	He threw the football to the dog.	رمى كرة القدم للكلب.
+609	奶奶抱着孩子。	Grandma is holding the child.	جدتي تحمل الطفل.
+609	朋友们在机场抱在一起。	The friends hugged at the airport.	تعانق الأصدقاء في المطار.
+610	别喊，孩子在睡觉。	Don't shout, the child is sleeping.	لا تصرخ، الطفل نائم.
+610	老师在门口喊我的名字。	The teacher called my name at the door.	نادى المعلم اسمي عند الباب.
+611	你能描述一下那个人吗？	Can you describe that person?	هل تستطيع وصف ذلك الشخص؟
+611	请用五个句子描述你的家。	Describe your home in five sentences.	صِف بيتك في خمس جمل.
+612	我们开会讨论了这个问题。	We discussed this problem at the meeting.	ناقشنا هذه المشكلة في الاجتماع.
+612	我们下午再讨论吧。	Let's discuss it again this afternoon.	لنناقشه مرة أخرى بعد الظهر.
+613	我建议你早一点儿休息。	I suggest you rest a bit earlier.	أقترح أن ترتاح مبكرًا قليلًا.
+613	谢谢你的建议。	Thank you for your suggestion.	شكرًا على اقتراحك.
+614	你能给我推荐一个饭店吗？	Can you recommend a restaurant to me?	هل تنصحني بمطعم؟
+614	医生推荐我多运动。	The doctor recommended I exercise more.	نصحني الطبيب بممارسة الرياضة أكثر.
+615	他常常抱怨天气。	He often complains about the weather.	كثيرًا ما يشتكي من الطقس.
+615	客人向经理抱怨了。	The guest complained to the manager.	اشتكى الضيف إلى المدير.
+616	她拒绝了我的礼物。	She refused my present.	رفضت هديتي.
+616	公司拒绝了我们的方案。	The company rejected our proposal.	رفضت الشركة مقترحنا.
+617	这里接受信用卡吗？	Do you accept credit cards here?	هل تقبلون بطاقات الائتمان هنا؟
+617	我接受了新的工作。	I accepted the new job.	قبلت العمل الجديد.
+618	我不能想象没有音乐的生活。	I can't imagine life without music.	لا أستطيع تخيّل الحياة بلا موسيقى.
+618	你想象一下海边的房子。	Imagine a house by the sea.	تخيّل بيتًا على البحر.
+619	你猜我今天见到谁了？	Guess who I saw today?	خمّن من رأيت اليوم؟
+619	我猜他已经回家了。	I guess he's already gone home.	أظن أنه عاد إلى البيت.
+620	过马路的时候要注意车。	Watch out for cars when crossing the road.	انتبه للسيارات عندما تعبر الطريق.
+620	请注意你的身体。	Please take care of your health.	من فضلك انتبه لصحتك.
+621	对不起，请原谅我。	I'm sorry, please forgive me.	آسف، أرجوك سامحني.
+621	她还没有原谅他。	She still hasn't forgiven him.	لم تسامحه بعد.
+622	你可以信任我。	You can trust me.	يمكنك أن تثق بي.
+622	我不太信任那个人。	I don't really trust that person.	لا أثق بذلك الشخص كثيرًا.
+623	这个包属于我妹妹。	This bag belongs to my younger sister.	هذه الحقيبة لأختي الصغرى.
+623	这张照片属于谁？	Who does this photo belong to?	لمن هذه الصورة؟
+624	价格包括早饭吗？	Does the price include breakfast?	هل يشمل السعر الفطور؟
+624	一共十个人，包括我。	Ten people altogether, including me.	عشرة أشخاص إجمالًا، بمن فيهم أنا.
+625	我儿子喜欢收集照片。	My son likes collecting photos.	ابني يحب جمع الصور.
+625	老师收集了大家的作业。	The teacher collected everyone's homework.	جمع المعلم واجبات الجميع.
+626	我们应该保护动物。	We should protect animals.	يجب أن نحمي الحيوانات.
+626	戴帽子可以保护你的头。	Wearing a hat can protect your head.	لبس القبعة يحمي رأسك.
+627	宾馆提供免费的早饭。	The hotel provides free breakfast.	يقدّم الفندق فطورًا مجانيًا.
+627	学校给学生提供午饭。	The school provides lunch for students.	تقدّم المدرسة الغداء للطلاب.
+628	你应该减少吃糖。	You should eat less sugar.	يجب أن تقلّل من أكل السكر.
+628	这几年游客减少了很多。	Tourist numbers have fallen a lot in recent years.	قلّ السياح كثيرًا في السنوات الأخيرة.
+629	学校的学生增加了。	The school has more students now.	ازداد طلاب المدرسة.
+629	公司给我增加了工资。	The company raised my salary.	زادت الشركة راتبي.
+630	这个城市发展得很快。	This city is developing very fast.	هذه المدينة تتطوّر بسرعة كبيرة.
+630	中国的发展非常快。	China's development is very fast.	تطوّر الصين سريع جدًا.
+631	他管理一家小宾馆。	He manages a small hotel.	يدير فندقًا صغيرًا.
+631	她很会管理时间。	She's very good at managing her time.	هي بارعة في إدارة الوقت.
+632	这个问题很难解决。	This problem is hard to solve.	هذه المشكلة صعبة الحلّ.
+632	我们一起想办法解决吧。	Let's find a way to solve it together.	لنجد معًا طريقة لحلّها.
+633	别害怕失败。	Don't be afraid of failure.	لا تخف من الفشل.
+633	第一次考试失败了，他很难过。	He failed the first exam and was very upset.	رسب في الامتحان الأول وحزن كثيرًا.
+634	祝你成功！	I wish you success!	أتمنى لك النجاح!
+634	他终于成功了。	He finally succeeded.	نجح أخيرًا.
+635	我很后悔没有去。	I really regret not going.	أندم كثيرًا لأنني لم أذهب.
+635	你不会后悔的。	You won't regret it.	لن تندم.
+636	明天早上七点叫醒我。	Wake me up at seven tomorrow morning.	أيقظني في السابعة صباح الغد.
+636	别叫醒孩子。	Don't wake the child.	لا توقظ الطفل.
+637	进来以前请敲门。	Please knock before you come in.	من فضلك اطرق الباب قبل الدخول.
+637	有人在敲门。	Someone is knocking at the door.	أحدهم يطرق الباب.
+638	你的手机响了。	Your phone is ringing.	هاتفك يرنّ.
+638	电话响了很长时间。	The phone rang for a long time.	رنّ الهاتف وقتًا طويلًا.
+639	你闻一下这个汤。	Smell this soup.	شمّ هذا الحساء.
+639	我感冒了，什么都闻不到。	I have a cold and can't smell anything.	عندي زكام ولا أشمّ أيّ شيء.
+640	把衣服挂在门上。	Hang your clothes on the door.	علّق ملابسك على الباب.
+640	门上挂着一张地图。	A map is hanging on the door.	خريطة معلّقة على الباب.
+641	米饭烧了。	The rice is burnt.	احترق الأرز.
+641	妈妈烧了一条鱼。	Mum cooked a fish.	طبخت أمي سمكة.
+642	鸡蛋要煮十分钟。	The eggs need to boil for ten minutes.	يجب سلق البيض عشر دقائق.
+642	我给你煮面条吧。	Let me cook you some noodles.	دعني أطبخ لك المعكرونة.
+643	我姐姐去年结婚了。	My older sister got married last year.	تزوجت أختي الكبرى العام الماضي.
+643	你们什么时候结婚？	When are you getting married?	متى ستتزوجان؟
+644	我们赢了足球比赛。	We won the football match.	فزنا في مباراة كرة القدم.
+644	谁赢了比赛？	Who won the match?	من فاز في المباراة؟
+645	我们昨天输了比赛。	We lost the match yesterday.	خسرنا المباراة أمس.
+645	输了也没关系。	It doesn't matter if we lose.	لا يهم إن خسرنا.
+646	她赚的钱比我多。	She earns more money than me.	تكسب مالًا أكثر مني.
+646	他一个月能赚多少钱？	How much can he earn in a month?	كم يستطيع أن يكسب في الشهر؟
+647	别浪费水。	Don't waste water.	لا تهدر الماء.
+647	我们浪费了很多时间。	We wasted a lot of time.	أهدرنا وقتًا كثيرًا.
+648	你能帮我打印这个吗？	Can you print this for me?	هل تستطيع طباعة هذا لي؟
+648	我在家打印了飞机票。	I printed the plane tickets at home.	طبعت تذاكر الطائرة في البيت.
+649	周末我喜欢在家放松。	At weekends I like to relax at home.	في عطلة نهاية الأسبوع أحب أن أسترخي في البيت.
+649	听音乐可以让人放松。	Listening to music helps people relax.	الاستماع إلى الموسيقى يريح الإنسان.
+650	我很累，想躺一下。	I'm tired, I want to lie down for a bit.	أنا متعب، أريد أن أستلقي قليلًا.
+650	爷爷躺在沙发上看电视。	Grandpa is lying on the sofa watching TV.	جدي مستلقٍ على الأريكة يشاهد التلفاز.
+651	进门以前请脱鞋。	Please take off your shoes before coming in.	من فضلك اخلع حذاءك قبل الدخول.
+651	太热了，我把外套脱了。	It was too hot, so I took my jacket off.	كان الجو حارًا جدًا فخلعت سترتي.
+652	她戴着一个红帽子。	She's wearing a red hat.	تلبس قبعة حمراء.
+652	爷爷看书的时候戴眼镜。	Grandpa wears glasses when he reads.	يلبس جدي النظارة عندما يقرأ.
+653	请在这里签名字。	Please sign your name here.	من فضلك وقّع اسمك هنا.
+653	我昨天签了合同。	I signed the contract yesterday.	وقّعت العقد أمس.
+654	我们租了一个小房子。	We rented a small house.	استأجرنا بيتًا صغيرًا.
+654	在北京租房子很贵。	Renting a flat in Beijing is expensive.	استئجار شقة في بكين غالٍ.
+655	别对我撒谎。	Don't lie to me.	لا تكذب عليّ.
+655	我觉得他在撒谎。	I think he's lying.	أظن أنه يكذب.
+656	对不起，打扰一下。	Sorry to bother you.	آسف على الإزعاج.
+656	他在工作，别打扰他。	He's working, don't disturb him.	إنه يعمل، لا تزعجه.
+657	你能陪我去医院吗？	Can you go to the hospital with me?	هل ترافقني إلى المستشفى؟
+657	周末我陪奶奶去公园。	At the weekend I take Grandma to the park.	في عطلة الأسبوع أرافق جدتي إلى الحديقة.
+658	我很想念我的家人。	I miss my family a lot.	أشتاق كثيرًا إلى عائلتي.
+658	在中国的时候，我常常想念妈妈。	When I was in China I often missed Mum.	عندما كنت في الصين كنت أشتاق كثيرًا إلى أمي.
+659	我怀疑他的故事。	I doubt his story.	أشكّ في قصته.
+659	别怀疑自己。	Don't doubt yourself.	لا تشكّ في نفسك.
+660	猫抓住了一只鸟。	The cat caught a bird.	أمسكت القطة طائرًا.
+660	请抓住我的手。	Please hold on to my hand.	من فضلك أمسك يدي.
+661	感谢你的帮助。	Thank you for your help.	شكرًا على مساعدتك.
+661	我们非常感谢大家。	We're very grateful to everyone.	نحن ممتنّون جدًا للجميع.
+662	我在城市里迷路了。	I got lost in the city.	ضللت الطريق في المدينة.
+662	带上地图，别迷路。	Take a map so you don't get lost.	خذ خريطة لكي لا تضيع.
+663	我在超市遇到了我的老师。	I ran into my teacher at the supermarket.	صادفت معلمي في السوبرماركت.
+663	遇到问题可以问我。	If you run into problems you can ask me.	إذا واجهت مشكلة يمكنك أن تسألني.
+664	车在门口停了。	The car stopped at the door.	توقفت السيارة عند الباب.
+664	雨停了，我们走吧。	The rain has stopped, let's go.	توقف المطر، لنذهب.
+665	我们下个月要搬家了。	We're moving house next month.	سننتقل من بيتنا الشهر القادم.
+665	搬家很累。	Moving house is very tiring.	الانتقال من بيت إلى آخر متعب جدًا.
+666	你留在家里吧。	You stay at home.	ابقَ أنت في البيت.
+666	我给你留了一块蛋糕。	I saved a piece of cake for you.	تركت لك قطعة كعكة.
+667	妈妈在切菜。	Mum is chopping vegetables.	أمي تقطّع الخضار.
+667	请把西瓜切开。	Please cut the watermelon open.	من فضلك اقطع البطيخة.
+668	我们晚饭以后去散步。	We go for a walk after dinner.	نتنزّه بعد العشاء.
+668	爷爷每天早上在公园散步。	Grandpa walks in the park every morning.	يتنزّه جدي في الحديقة كل صباح.
+669	我们一起喝茶聊天吧。	Let's have tea and chat together.	لنشرب الشاي ونتحدّث معًا.
+669	她常常和朋友上网聊天。	She often chats online with friends.	تدردش كثيرًا مع أصدقائها على الإنترنت.
+670	我妹妹弹得很好。	My younger sister plays very well.	أختي الصغرى تعزف جيدًا جدًا.
+670	他每天弹两个小时。	He plays for two hours every day.	يعزف ساعتين كل يوم.
+671	我们在山上拍照吧。	Let's take photos on the mountain.	لنلتقط صورًا على الجبل.
+671	这里可以拍照吗？	Can I take photos here?	هل يمكن التصوير هنا؟
+672	请在这里排队。	Please queue here.	من فضلك قف في الطابور هنا.
+672	我们排队等了一个小时。	We queued and waited for an hour.	وقفنا في الطابور وانتظرنا ساعة.
+673	我们明天早上退房。	We're checking out tomorrow morning.	سنغادر الفندق صباح الغد.
+673	几点以前要退房？	What time do we need to check out by?	قبل أيّ ساعة يجب مغادرة الغرفة؟
+674	经理安排了一个会议。	The manager arranged a meeting.	رتّب المدير اجتماعًا.
+674	明天你有什么安排？	What are your plans for tomorrow?	ما برنامجك غدًا؟
+675	这家商店在打折。	This shop is having a sale.	هذا المتجر يقدّم تخفيضات.
+675	衣服打折以后很便宜。	The clothes are very cheap after the discount.	الملابس رخيصة جدًا بعد التخفيض.
+676	服务员，买单！	Waiter, the bill please!	يا نادل، الحساب!
+676	今天我来买单。	I'll pay the bill today.	سأدفع الحساب اليوم.
+677	我想以后出国学习。	I want to study abroad later on.	أريد أن أدرس في الخارج لاحقًا.
+677	你想出国吗？	Do you want to go abroad?	هل تريد السفر إلى الخارج؟
+678	你最喜欢哪个季节？	Which season do you like best?	أيّ فصل تحب أكثر؟
+678	秋天是北京最好的季节。	Autumn is the best season in Beijing.	الخريف أجمل فصل في بكين.
+679	今天的日期是几号？	What's today's date?	ما تاريخ اليوم؟
+679	请写上日期和名字。	Please write the date and your name.	من فضلك اكتب التاريخ والاسم.
+680	过去的事别想了。	Don't think about the past.	لا تفكّر في الماضي.
+680	过去这里没有地铁。	In the past there was no metro here.	في الماضي لم يكن هنا مترو.
+681	你将来想做什么工作？	What job do you want to do in the future?	ماذا تريد أن تعمل في المستقبل؟
+681	将来我想住在海边。	In the future I want to live by the sea.	في المستقبل أريد أن أعيش على البحر.
+682	他半夜才回家。	He didn't get home until midnight.	لم يعد إلى البيت إلا في منتصف الليل.
+682	半夜别给我打电话。	Don't call me in the middle of the night.	لا تتصل بي في منتصف الليل.
+683	这个地区很安静。	This area is very quiet.	هذه المنطقة هادئة جدًا.
+683	这个地区的水果很有名。	The fruit from this area is famous.	فاكهة هذه المنطقة مشهورة.
+684	我们只有一个地球。	We only have one Earth.	ليس لدينا إلا أرض واحدة.
+684	我们要保护地球。	We must protect the Earth.	يجب أن نحمي الأرض.
+685	今天晚上的月亮很漂亮。	The moon is beautiful tonight.	القمر جميل الليلة.
+685	月亮在湖上。	The moon is above the lake.	القمر فوق البحيرة.
+686	在农村能看到很多星星。	In the countryside you can see lots of stars.	في الريف ترى نجومًا كثيرة.
+686	天上有很多星星。	There are lots of stars in the sky.	في السماء نجوم كثيرة.
+687	天上有很多白云。	There are lots of white clouds in the sky.	في السماء غيوم بيضاء كثيرة.
+687	太阳从云里出来了。	The sun came out of the clouds.	خرجت الشمس من الغيوم.
+688	我们在一个岛上住了一个星期。	We stayed on an island for a week.	أقمنا في جزيرة أسبوعًا.
+688	坐船去岛上要一个小时。	It takes an hour by boat to the island.	تستغرق الرحلة بالقارب إلى الجزيرة ساعة.
+689	森林里有很多动物。	There are many animals in the forest.	في الغابة حيوانات كثيرة.
+689	我们在森林里迷路了。	We got lost in the forest.	ضللنا الطريق في الغابة.
+690	我的办公室在那座大楼里。	My office is in that building.	مكتبي في ذلك المبنى.
+690	这座大楼有三十层。	This building has thirty floors.	في هذا المبنى ثلاثون طابقًا.
+691	这个城市有很多教堂。	This city has many churches.	في هذه المدينة كنائس كثيرة.
+691	他们在教堂结婚了。	They got married in a church.	تزوّجا في كنيسة.
+692	我每天下班以后去体育馆。	I go to the gym every day after work.	أذهب إلى الصالة الرياضية كل يوم بعد العمل.
+692	今天的篮球比赛在体育馆。	Today's basketball match is in the sports hall.	مباراة كرة السلة اليوم في الصالة الرياضية.
+693	孩子们在游泳池游泳。	The children are swimming in the pool.	الأطفال يسبحون في المسبح.
+693	宾馆有游泳池吗？	Does the hotel have a pool?	هل في الفندق مسبح؟
+694	我哥哥在北京上大学。	My older brother goes to university in Beijing.	أخي الأكبر يدرس في جامعة في بكين.
+694	这所大学非常有名。	This university is very famous.	هذه الجامعة مشهورة جدًا.
+695	我们在广场见面吧。	Let's meet in the square.	لنلتقِ في الساحة.
+695	晚上广场上很热闹。	The square is very lively in the evening.	الساحة نابضة بالحياة في المساء.
+696	我爷爷奶奶住在农村。	My grandparents live in the countryside.	يعيش جدّاي في الريف.
+696	农村的空气很新鲜。	The air in the countryside is very fresh.	هواء الريف نقيّ جدًا.
+697	周末我们带孩子去动物园。	At the weekend we take the kids to the zoo.	في عطلة الأسبوع نأخذ الأطفال إلى حديقة الحيوانات.
+697	动物园里有熊猫。	There are pandas at the zoo.	في حديقة الحيوانات باندا.
+698	今天晚上去电影院吧。	Let's go to the cinema tonight.	لنذهب إلى السينما الليلة.
+698	电影院离我家很近。	The cinema is very close to my home.	السينما قريبة جدًا من بيتي.
+699	邮局几点关门？	What time does the post office close?	متى يغلق مكتب البريد؟
+699	我下午要去邮局。	I have to go to the post office this afternoon.	يجب أن أذهب إلى مكتب البريد بعد الظهر.
+700	我很喜欢科学。	I really like science.	أحب العلوم كثيرًا.
+700	他是一个很有名的科学老师。	He's a very well-known science teacher.	إنه معلم علوم مشهور جدًا.
+701	数学对我来说很难。	Maths is hard for me.	الرياضيات صعبة بالنسبة لي.
+701	爸爸帮我做数学作业。	Dad helps me with my maths homework.	يساعدني أبي في واجب الرياضيات.
+702	别忘记带课本。	Don't forget to bring your textbook.	لا تنسَ أن تحضر كتابك المدرسي.
+702	这本课本很新。	This textbook is very new.	هذا الكتاب المدرسي جديد جدًا.
+703	老师在黑板上写字。	The teacher is writing on the blackboard.	يكتب المعلم على السبورة.
+703	请看黑板。	Please look at the board.	من فضلك انظر إلى السبورة.
+704	你上几年级？	What year are you in at school?	في أيّ صف أنت؟
+704	我妹妹上三年级。	My younger sister is in third grade.	أختي الصغرى في الصف الثالث.
+705	这个问题的答案是什么？	What's the answer to this question?	ما إجابة هذا السؤال؟
+705	你的答案是对的。	Your answer is right.	إجابتك صحيحة.
+706	你能给我一个例子吗？	Can you give me an example?	هل تعطيني مثالًا؟
+706	请看一下例子。	Please have a look at the example.	من فضلك ألقِ نظرة على المثال.
+707	我把汉字写在笔记本上。	I write the characters in my notebook.	أكتب الحروف الصينية في دفتري.
+707	我的笔记本电脑坏了。	My laptop is broken.	حاسوبي المحمول معطّل.
+708	我的脖子很疼。	My neck hurts a lot.	رقبتي تؤلمني كثيرًا.
+708	天冷了，他的脖子很冷。	It's cold and his neck is cold.	الجو بارد ورقبته باردة.
+709	他把手放在我的肩膀上。	He put his hand on my shoulder.	وضع يده على كتفي.
+709	我的肩膀有点儿疼。	My shoulder hurts a bit.	كتفي يؤلمني قليلًا.
+710	我切菜的时候切到了手指。	I cut my finger while chopping vegetables.	جرحت إصبعي وأنا أقطّع الخضار.
+710	她的手指很长。	Her fingers are very long.	أصابعها طويلة جدًا.
+711	太阳对皮肤不好。	The sun is bad for the skin.	الشمس مضرّة بالبشرة.
+711	她的皮肤很白。	Her skin is very fair.	بشرتها بيضاء جدًا.
+712	我感冒了，一直咳嗽。	I have a cold and keep coughing.	أصبت بالزكام وما زلت أسعل.
+712	咳嗽的时候要多喝水。	Drink plenty of water when you have a cough.	اشرب ماءً كثيرًا عندما تسعل.
+713	孩子发烧了，我们去医院吧。	The child has a fever, let's go to hospital.	الطفل محموم، لنذهب إلى المستشفى.
+713	你发烧了吗？	Do you have a fever?	هل عندك حمّى؟
+714	我今天很头疼。	I have a bad headache today.	عندي صداع شديد اليوم.
+714	太吵了，我头疼。	It's too noisy, I've got a headache.	الضجيج كثير، عندي صداع.
+715	外面很冷，穿上外套吧。	It's cold outside, put on your coat.	الجو بارد في الخارج، البس معطفك.
+715	我把外套留在饭店了。	I left my jacket at the restaurant.	تركت سترتي في المطعم.
+716	奶奶给我做了一件毛衣。	Grandma made me a sweater.	صنعت لي جدتي كنزة.
+716	这件毛衣很舒服。	This sweater is very comfortable.	هذه الكنزة مريحة جدًا.
+717	我找不到我的袜子。	I can't find my socks.	لا أجد جواربي.
+717	我买了三双袜子。	I bought three pairs of socks.	اشتريت ثلاثة أزواج من الجوارب.
+718	他送给她一个戒指。	He gave her a ring.	أهداها خاتمًا.
+718	我在海边丢了戒指。	I lost my ring by the sea.	أضعت خاتمي على شاطئ البحر.
+719	我的钱包里没有钱了。	There's no money left in my wallet.	لم يبقَ مال في محفظتي.
+719	他在路上找到了一个钱包。	He found a wallet on the road.	وجد محفظة في الطريق.
+720	我用新照相机拍照。	I take photos with my new camera.	ألتقط الصور بكاميرتي الجديدة.
+720	别忘记带照相机。	Don't forget to bring the camera.	لا تنسَ أن تحضر الكاميرا.
+721	钥匙在我的口袋里。	The keys are in my pocket.	المفاتيح في جيبي.
+721	把手机放在口袋里。	Put your phone in your pocket.	ضع هاتفك في جيبك.
+722	我们晚饭吃鸡和土豆。	We're having chicken and potatoes for dinner.	عشاؤنا دجاج وبطاطا.
+722	土豆很便宜。	Potatoes are very cheap.	البطاطا رخيصة جدًا.
+723	西红柿鸡蛋汤很好喝。	Tomato and egg soup is very tasty.	حساء الطماطم والبيض لذيذ جدًا.
+723	这些西红柿很新鲜。	These tomatoes are very fresh.	هذه الطماطم طازجة جدًا.
+724	我中午只吃了一份沙拉。	I only had a salad at lunchtime.	لم آكل عند الظهر إلا سلطة.
+724	这个沙拉很新鲜。	This salad is very fresh.	هذه السلطة طازجة جدًا.
+725	我早饭吃了一个三明治。	I had a sandwich for breakfast.	أكلت شطيرة في الفطور.
+725	请给我一个鸡肉三明治。	A chicken sandwich, please.	شطيرة دجاج من فضلك.
+726	我很喜欢吃巧克力。	I really like eating chocolate.	أحب أكل الشوكولاتة كثيرًا.
+726	别给孩子吃太多巧克力。	Don't give the children too much chocolate.	لا تعطِ الأطفال كثيرًا من الشوكولاتة.
+727	我每天早上吃一个橙子。	I eat an orange every morning.	آكل برتقالة كل صباح.
+727	冬天橙子很便宜。	Oranges are cheap in winter.	البرتقال رخيص في الشتاء.
+728	我想要一杯柠檬茶。	I'd like a cup of lemon tea.	أريد كوب شاي بالليمون.
+728	柠檬很酸。	Lemons are very sour.	الليمون حامض جدًا.
+729	夏天孩子们喜欢吃冰淇淋。	In summer children like eating ice cream.	في الصيف يحب الأطفال أكل البوظة.
+729	我们买两个冰淇淋吧。	Let's buy two ice creams.	لنشترِ بوظتين.
+730	过年的时候我们吃饺子。	We eat dumplings at New Year.	نأكل الزلابية في رأس السنة.
+730	妈妈包的饺子最好吃。	Mum's dumplings are the best.	زلابية أمي هي الألذ.
+731	我早饭吃了两个包子。	I had two steamed buns for breakfast.	أكلت كعكتين على البخار في الفطور.
+731	这家饭店的包子很有名。	This restaurant's steamed buns are famous.	كعكات هذا المطعم على البخار مشهورة.
+732	我不吃羊肉。	I don't eat lamb.	لا آكل لحم الضأن.
+732	这个羊肉汤很好喝。	This lamb soup is very tasty.	حساء لحم الضأن هذا لذيذ جدًا.
+733	你喜欢吃牛肉吗？	Do you like beef?	هل تحب لحم البقر؟
+733	我要一碗牛肉面条。	I'd like a bowl of beef noodles.	أريد طبق معكرونة باللحم البقري.
+734	小心，这把刀很快。	Careful, this knife is very sharp.	انتبه، هذه السكين حادة جدًا.
+734	请给我一把刀和一个叉子。	Please give me a knife and a fork.	من فضلك أعطني سكينًا وشوكة.
+735	喝汤要用勺子。	You use a spoon for soup.	نستعمل الملعقة لشرب الحساء.
+735	请给我一把勺子。	Please give me a spoon.	من فضلك أعطني ملعقة.
+736	你会用筷子还是用叉子？	Do you use chopsticks or a fork?	هل تستعمل العيدان أم الشوكة؟
+736	我的叉子在地上。	My fork is on the floor.	شوكتي على الأرض.
+737	屋顶上有一只猫。	There's a cat on the roof.	هناك قطة على السطح.
+737	我们家的屋顶很旧。	Our roof is very old.	سطح بيتنا قديم جدًا.
+738	她在看镜子里的自己。	She's looking at herself in the mirror.	تنظر إلى نفسها في المرآة.
+738	洗手间里有一个大镜子。	There's a big mirror in the bathroom.	في الحمّام مرآة كبيرة.
+739	碗在柜子里。	The bowls are in the cupboard.	الأوعية في الخزانة.
+739	把衣服放在柜子里。	Put the clothes in the cupboard.	ضع الملابس في الخزانة.
+740	我们在阳台上喝茶。	We drink tea on the balcony.	نشرب الشاي في الشرفة.
+740	阳台上有很多花。	There are lots of flowers on the balcony.	في الشرفة أزهار كثيرة.
+741	电梯坏了，我们走楼梯吧。	The lift is broken, let's take the stairs.	المصعد معطّل، لنأخذ الدرج.
+741	小心，楼梯上有水。	Careful, there's water on the stairs.	انتبه، يوجد ماء على الدرج.
+742	我们家有两个卧室。	Our home has two bedrooms.	في بيتنا غرفتا نوم.
+742	卧室在楼上。	The bedroom is upstairs.	غرفة النوم في الطابق العلوي.
+743	客人在客厅里等你。	The guest is waiting for you in the living room.	الضيف ينتظرك في غرفة الجلوس.
+743	我们的客厅很大。	Our living room is very big.	غرفة الجلوس عندنا كبيرة جدًا.
+744	别把垃圾扔在地上。	Don't throw rubbish on the ground.	لا ترمِ القمامة على الأرض.
+744	请把垃圾带出去。	Please take the rubbish out.	من فضلك أخرج القمامة.
+745	她有男朋友了。	She has a boyfriend now.	صار لها حبيب.
+745	这是我的男朋友。	This is my boyfriend.	هذا حبيبي.
+746	我想给女朋友买礼物。	I want to buy my girlfriend a present.	أريد أن أشتري هدية لحبيبتي.
+746	他的女朋友是医生。	His girlfriend is a doctor.	حبيبته طبيبة.
+747	老板今天不在。	The boss isn't in today.	المدير ليس هنا اليوم.
+747	饭店的老板很有名。	The restaurant owner is very well known.	صاحب المطعم مشهور جدًا.
+748	我哥哥是工程师。	My older brother is an engineer.	أخي الأكبر مهندس.
+748	她想做一个工程师。	She wants to be an engineer.	تريد أن تصبح مهندسة.
+749	我要找一个律师。	I need to find a lawyer.	يجب أن أجد محاميًا.
+749	他妈妈是律师。	His mother is a lawyer.	أمه محامية.
+750	她是我最喜欢的歌手。	She's my favourite singer.	إنها مغنّيتي المفضّلة.
+750	这个歌手的声音很好听。	This singer's voice is lovely.	صوت هذا المغني جميل.
+751	他是一个有名的作家。	He's a famous writer.	إنه كاتب مشهور.
+751	我女儿想做作家。	My daughter wants to be a writer.	ابنتي تريد أن تصبح كاتبة.
+752	夏天这里有很多游客。	There are lots of tourists here in summer.	في الصيف يوجد هنا سياح كثيرون.
+752	游客们在广场上拍照。	The tourists are taking photos in the square.	السياح يلتقطون الصور في الساحة.
+753	乘客们在站台上等火车。	The passengers are waiting for the train on the platform.	الركاب ينتظرون القطار على الرصيف.
+753	这辆公共汽车上有很多乘客。	There are many passengers on this bus.	في هذه الحافلة ركاب كثيرون.
+754	导游给我们介绍了这个城市。	The guide told us about this city.	عرّفنا المرشد بهذه المدينة.
+754	我们的导游会说汉语。	Our guide speaks Chinese.	مرشدنا يتكلم الصينية.
+755	我爷爷有三个孙子。	My grandfather has three grandsons.	لجدي ثلاثة أحفاد.
+755	奶奶每天照顾孙子。	Grandma looks after her grandson every day.	تعتني جدتي بحفيدها كل يوم.
+756	她的孙女五岁了。	Her granddaughter is five.	حفيدتها عمرها خمس سنوات.
+756	爷爷给孙女买了一个蛋糕。	Grandpa bought his granddaughter a cake.	اشترى الجد كعكة لحفيدته.
+757	今天下午我要见一个客户。	I have to meet a client this afternoon.	يجب أن أقابل عميلًا بعد ظهر اليوم.
+757	客户对我们的方案很满意。	The client is very happy with our proposal.	العميل راضٍ جدًا عن مقترحنا.
+758	会议几点开始？	What time does the meeting start?	متى يبدأ الاجتماع؟
+758	这个会议很重要。	This meeting is very important.	هذا الاجتماع مهم جدًا.
+759	我们的预算不多。	Our budget isn't big.	ميزانيتنا ليست كبيرة.
+759	这个方案的预算是多少？	What's the budget for this plan?	ما ميزانية هذه الخطة؟
+760	截止日期是下星期五。	The deadline is next Friday.	الموعد النهائي يوم الجمعة القادم.
+760	我们在截止日期以前完成了。	We finished before the deadline.	أنهينا قبل الموعد النهائي.
+761	这个方案很好。	This plan is very good.	هذه الخطة جيدة جدًا.
+761	我们要一个新方案。	We need a new plan.	نحتاج إلى خطة جديدة.
+762	请看邮件的附件。	Please look at the email attachment.	من فضلك انظر إلى مرفق البريد.
+762	我忘记发附件了。	I forgot to send the attachment.	نسيت أن أرسل المرفق.
+763	签合同以前要看清楚。	Read it carefully before signing the contract.	اقرأ جيدًا قبل توقيع العقد.
+763	我的合同下个月结束。	My contract ends next month.	ينتهي عقدي الشهر القادم.
+764	我们要贷款买房子。	We need a loan to buy a house.	نحتاج إلى قرض لشراء بيت.
+764	这笔贷款要还十年。	This loan has to be repaid over ten years.	يجب سداد هذا القرض في عشر سنوات.
+765	你有工作经验吗？	Do you have work experience?	هل لديك خبرة في العمل؟
+765	他有很多教汉语的经验。	He has a lot of experience teaching Chinese.	لديه خبرة كبيرة في تعليم الصينية.
+766	我上网找到了很多信息。	I found lots of information online.	وجدت معلومات كثيرة على الإنترنت.
+766	他给我发了一条信息。	He sent me a message.	أرسل لي رسالة.
+767	读书可以学到很多知识。	You can gain a lot of knowledge by reading.	يمكنك أن تكتسب معرفة كبيرة بالقراءة.
+767	他的历史知识很多。	He knows a lot about history.	لديه معرفة كبيرة بالتاريخ.
+768	教育对孩子很重要。	Education is very important for children.	التعليم مهم جدًا للأطفال.
+768	她在一个教育公司工作。	She works at an education company.	تعمل في شركة تعليمية.
+769	他的工作能力很高。	His work ability is very high.	قدرته على العمل عالية جدًا.
+769	每个人都有自己的能力。	Everyone has their own abilities.	لكل شخص قدراته.
+770	这里的环境很好。	The environment here is very good.	البيئة هنا جيدة جدًا.
+770	我们要保护环境。	We must protect the environment.	يجب أن نحمي البيئة.
+771	我喜欢去农村看自然。	I like going to the countryside to see nature.	أحب الذهاب إلى الريف لرؤية الطبيعة.
+771	说汉语的时候要自然一点儿。	Be a bit more natural when you speak Chinese.	كن طبيعيًا أكثر عندما تتكلم الصينية.
+772	我很喜欢中国文化。	I really like Chinese culture.	أحب الثقافة الصينية كثيرًا.
+772	每个国家都有自己的文化。	Every country has its own culture.	لكل بلد ثقافته.
+773	过年吃饺子是一个传统。	Eating dumplings at New Year is a tradition.	أكل الزلابية في رأس السنة تقليد.
+773	她穿着传统的衣服。	She's wearing traditional clothes.	تلبس ملابس تقليدية.
+774	这个网站很有用。	This website is very useful.	هذا الموقع مفيد جدًا.
+774	你可以在网站上预订。	You can book on the website.	يمكنك الحجز على الموقع.
+775	这个网站要密码。	This website needs a password.	هذا الموقع يحتاج إلى كلمة مرور.
+775	我忘记了我的密码。	I've forgotten my password.	نسيت كلمة المرور الخاصة بي.
+776	考试结果什么时候出来？	When do the exam results come out?	متى تصدر نتائج الامتحان؟
+776	我们对结果很满意。	We're very happy with the result.	نحن راضون جدًا عن النتيجة.
+777	这两个字有什么区别？	What's the difference between these two characters?	ما الفرق بين هذين الحرفين؟
+777	我看不出区别。	I can't see the difference.	لا أرى الفرق.
+778	你有什么意见？	What's your opinion?	ما رأيك؟
+778	我同意你的意见。	I agree with you.	أوافقك الرأي.
+779	我感觉有点儿冷。	I feel a bit cold.	أشعر ببعض البرد.
+779	这种感觉很奇怪。	This feeling is very strange.	هذا الشعور غريب جدًا.
+780	他的工资很高。	His salary is very high.	راتبه مرتفع جدًا.
+780	我每个月十号拿工资。	I get paid on the tenth of every month.	أتقاضى راتبي في العاشر من كل شهر.
+781	这里的价格很便宜。	Prices here are very cheap.	الأسعار هنا رخيصة جدًا.
+781	这件衣服的价格是多少？	What's the price of this item of clothing?	كم سعر هذه القطعة من الملابس؟
+782	我没有带现金。	I didn't bring any cash.	لم أحضر نقدًا.
+782	可以用现金付吗？	Can I pay in cash?	هل يمكن الدفع نقدًا؟
+783	我在飞机上看了一本杂志。	I read a magazine on the plane.	قرأت مجلة في الطائرة.
+783	她每个月买这本杂志。	She buys this magazine every month.	تشتري هذه المجلة كل شهر.
+784	星期六我们去参加婚礼。	On Saturday we're going to a wedding.	يوم السبت سنحضر عرسًا.
+784	他们的婚礼在海边。	Their wedding is by the sea.	عرسهم على شاطئ البحر.
+785	我们的航班晚点了。	Our flight is delayed.	رحلتنا متأخرة.
+785	今天去北京的航班很多。	There are lots of flights to Beijing today.	هناك رحلات كثيرة إلى بكين اليوم.
+786	去中国要签证吗？	Do you need a visa to go to China?	هل تحتاج إلى تأشيرة للذهاب إلى الصين؟
+786	我的签证没有问题。	My visa is fine.	تأشيرتي لا مشكلة فيها.
+787	请把房卡给前台。	Please give the key card to reception.	من فضلك أعطِ بطاقة الغرفة للاستقبال.
+787	你可以问前台。	You can ask at reception.	يمكنك أن تسأل في الاستقبال.
+788	火车从三号站台出发。	The train leaves from platform three.	ينطلق القطار من الرصيف رقم ثلاثة.
+788	我们在站台上等了一个小时。	We waited on the platform for an hour.	انتظرنا على الرصيف ساعة.
+789	我给妈妈买了一个纪念品。	I bought Mum a souvenir.	اشتريت تذكارًا لأمي.
+789	这家商店卖很多纪念品。	This shop sells lots of souvenirs.	هذا المتجر يبيع تذكارات كثيرة.
+790	大使馆在哪里？	Where is the embassy?	أين السفارة؟
+790	我明天要去大使馆。	I have to go to the embassy tomorrow.	يجب أن أذهب إلى السفارة غدًا.
+791	请给我看一下登机牌。	Please show me your boarding pass.	من فضلك أرني بطاقة الصعود.
+791	我的登机牌在手机里。	My boarding pass is on my phone.	بطاقة الصعود في هاتفي.
+792	我要买一张往返票。	I'd like to buy a return ticket.	أريد شراء تذكرة ذهاب وإياب.
+792	往返票比较便宜。	A return ticket is cheaper.	تذكرة الذهاب والإياب أرخص.
+793	我想要一个单人间。	I'd like a single room.	أريد غرفة مفردة.
+793	单人间一个晚上多少钱？	How much is a single room per night?	بكم الغرفة المفردة لليلة؟
+794	我们预订了一个双人间。	We booked a double room.	حجزنا غرفة مزدوجة.
+794	双人间还有吗？	Are there any double rooms left?	هل بقيت غرف مزدوجة؟
+795	我的房卡不能用了。	My key card doesn't work any more.	بطاقة غرفتي لم تعد تعمل.
+795	退房的时候请把房卡给前台。	Give the key card to reception when you check out.	أعطِ بطاقة الغرفة للاستقبال عند المغادرة.
+796	我们去古城参观吧。	Let's go and visit the old town.	لنذهب لزيارة المدينة القديمة.
+796	古城里有很多小商店。	There are many small shops in the old town.	في المدينة القديمة محلات صغيرة كثيرة.
+797	他生病了，我们去急诊吧。	He's ill, let's go to the emergency department.	إنه مريض، لنذهب إلى الطوارئ.
+797	急诊在医院的左边。	The emergency department is on the left of the hospital.	قسم الطوارئ على يسار المستشفى.
+798	我吃素食，不吃肉。	I'm vegetarian, I don't eat meat.	أنا نباتي، لا آكل اللحم.
+798	这家饭店有素食吗？	Does this restaurant have vegetarian food?	هل في هذا المطعم طعام نباتي؟
+799	火车晚点了一个小时。	The train was an hour late.	تأخر القطار ساعة.
+799	飞机晚点了两个小时。	The plane was two hours late.	تأخرت الطائرة ساعتين.
+800	汉语的语法不太难。	Chinese grammar isn't very hard.	قواعد الصينية ليست صعبة جدًا.
+800	老师今天教了新的语法。	The teacher taught new grammar today.	علّم المعلم قواعد جديدة اليوم.
+801	汉语有四个声调。	Chinese has four tones.	للصينية أربع نغمات.
+801	这个字的声调是什么？	What tone is this character?	ما نغمة هذا الحرف؟
+802	请写出这个字的拼音。	Please write the pinyin of this character.	من فضلك اكتب البينيين لهذا الحرف.
+802	学汉语要从拼音开始。	Learning Chinese starts with pinyin.	تعلّم الصينية يبدأ بالبينيين.
+803	今天的温度很高。	The temperature is very high today.	درجة الحرارة مرتفعة جدًا اليوم.
+803	护士检查了我的温度。	The nurse checked my temperature.	فحصت الممرّضة حرارتي.
+804	火车站在哪个方向？	Which direction is the railway station?	في أيّ اتجاه محطة القطار؟
+804	我们走错方向了。	We went the wrong way.	سرنا في الاتجاه الخاطئ.
+805	请告诉我你的地址。	Please tell me your address.	من فضلك أخبرني بعنوانك.
+805	我把地址写在纸上了。	I wrote the address on the paper.	كتبت العنوان على الورقة.
+806	这是一个爱情故事。	This is a love story.	هذه قصة حبّ.
+806	我不喜欢看爱情电影。	I don't like watching romantic films.	لا أحب مشاهدة الأفلام الرومانسية.
+807	我昨天晚上做了一个奇怪的梦。	I had a strange dream last night.	رأيت حلمًا غريبًا ليلة أمس.
+807	我的梦是去世界上很多地方旅游。	My dream is to travel to many places in the world.	حلمي أن أسافر إلى أماكن كثيرة في العالم.
+808	我们都希望世界和平。	We all hope for world peace.	نتمنى جميعًا السلام في العالم.
+808	这是一个和平的国家。	This is a peaceful country.	هذا بلد مسالم.
+809	今天我的心情很好。	I'm in a very good mood today.	مزاجي جيد جدًا اليوم.
+809	下雨天我心情不好。	I'm in a bad mood on rainy days.	مزاجي سيئ في الأيام الممطرة.
+810	从我家到学校有三公里。	It's three kilometres from my home to school.	من بيتي إلى المدرسة ثلاثة كيلومترات.
+810	他每天跑五公里。	He runs five kilometres every day.	يركض خمسة كيلومترات كل يوم.
+811	这条河有一百米长。	This river is a hundred metres long.	طول هذا النهر مئة متر.
+811	我哥哥一米八。	My older brother is one metre eighty.	طول أخي الأكبر متر وثمانون.
+812	我买了两公斤苹果。	I bought two kilos of apples.	اشتريت كيلوغرامين من التفاح.
+812	这个箱子有二十公斤。	This suitcase weighs twenty kilos.	وزن هذه الحقيبة عشرون كيلوغرامًا.
+813	请问厕所在哪里？	Excuse me, where is the toilet?	عفوًا، أين المرحاض؟
+813	厕所在楼下。	The toilet is downstairs.	المرحاض في الطابق السفلي.
+814	我要一杯冰水。	I'd like a glass of ice water.	أريد كوب ماء مثلّج.
+814	冬天湖上有冰。	In winter there's ice on the lake.	في الشتاء يوجد جليد على البحيرة.
+815	她家里有很多植物。	She has lots of plants at home.	في بيتها نباتات كثيرة.
+815	植物要水和太阳。	Plants need water and sun.	تحتاج النباتات إلى الماء والشمس.
+816	秋天树上的叶子变黄了。	In autumn the leaves on the trees turn yellow.	في الخريف تصفرّ أوراق الأشجار.
+816	地上有很多叶子。	There are lots of leaves on the ground.	على الأرض أوراق كثيرة.
+817	农村的空气很好。	The air in the countryside is very good.	هواء الريف جيد جدًا.
+817	打开窗户，让空气进来。	Open the window and let some air in.	افتح النافذة ودع الهواء يدخل.
+818	这张床很软。	This bed is very soft.	هذا السرير ناعم جدًا.
+818	面包很软，很好吃。	The bread is soft and very tasty.	الخبز طريّ ولذيذ جدًا.
+819	这个饭店太吵了。	This restaurant is too noisy.	هذا المطعم صاخب جدًا.
+819	孩子们很吵，我不能工作。	The children are noisy, I can't work.	الأطفال صاخبون، لا أستطيع العمل.
+820	这个菜太咸了。	This dish is too salty.	هذا الطبق مالح جدًا.
+820	海水是咸的。	Sea water is salty.	ماء البحر مالح.
+821	这个苹果有点儿酸。	This apple is a bit sour.	هذه التفاحة حامضة قليلًا.
+821	我不喜欢吃酸的东西。	I don't like sour things.	لا أحب الأشياء الحامضة.
+822	这个药很苦。	This medicine is very bitter.	هذا الدواء مرّ جدًا.
+822	咖啡太苦了，给我一点儿糖。	The coffee is too bitter, give me some sugar.	القهوة مرّة جدًا، أعطني قليلًا من السكر.
+823	这件衣服太丑了。	This item of clothing is too ugly.	هذه الملابس قبيحة جدًا.
+823	我觉得那座大楼很丑。	I think that building is ugly.	أرى أن ذلك المبنى قبيح.
+824	别说自己笨。	Don't call yourself stupid.	لا تقل عن نفسك إنك غبي.
+824	我真笨，忘记带钥匙了。	I'm so silly, I forgot my keys.	أنا غبي حقًا، نسيت المفاتيح.
+825	他的孩子都很有礼貌。	His children are all very polite.	أولاده كلهم مهذّبون جدًا.
+825	对客人要有礼貌。	You should be polite to guests.	يجب أن تكون مهذّبًا مع الضيوف.
+826	他是一个很诚实的人。	He's a very honest person.	إنه شخص صادق جدًا.
+826	请诚实地回答。	Please answer honestly.	من فضلك أجب بصدق.
+827	我妹妹非常勇敢。	My younger sister is very brave.	أختي الصغرى شجاعة جدًا.
+827	别害怕，要勇敢！	Don't be afraid, be brave!	لا تخف، كن شجاعًا!
+828	她小的时候很害羞。	She was very shy when she was little.	كانت خجولة جدًا في صغرها.
+828	别害羞，说吧。	Don't be shy, speak.	لا تخجل، تكلّم.
+829	考试以前我很紧张。	I'm very nervous before exams.	أكون متوتّرًا جدًا قبل الامتحانات.
+829	别紧张，你会成功的。	Don't be nervous, you'll succeed.	لا تتوتّر، ستنجح.
+830	孩子们激动地等着过年。	The children are excitedly waiting for New Year.	ينتظر الأطفال رأس السنة بحماس.
+830	见到你我很激动。	I'm so excited to see you.	أنا متحمّس جدًا لرؤيتك.
+831	这个电影太无聊了。	This film is too boring.	هذا الفيلم مملّ جدًا.
+831	周末在家很无聊。	Being at home at the weekend is boring.	البقاء في البيت في عطلة الأسبوع مملّ.
+832	我女儿考试成功了，我很骄傲。	My daughter passed her exam and I'm very proud.	نجحت ابنتي في الامتحان وأنا فخور جدًا.
+832	他的爸爸妈妈很骄傲。	His parents are very proud.	والداه فخوران جدًا.
+833	一个人住有时候很孤单。	Living alone is sometimes lonely.	العيش وحيدًا موحش أحيانًا.
+833	在中国的时候我觉得很孤单。	I felt very lonely when I was in China.	شعرت بالوحدة الشديدة عندما كنت في الصين.
+834	我哥哥还是单身。	My older brother is still single.	أخي الأكبر ما زال أعزب.
+834	你结婚了还是单身？	Are you married or single?	هل أنت متزوّج أم أعزب؟
+835	这首音乐现在很流行。	This music is very popular now.	هذه الموسيقى رائجة الآن.
+835	这个颜色现在很流行。	This colour is in fashion now.	هذا اللون رائج الآن.
+836	他们住在一个很现代的房子里。	They live in a very modern house.	يعيشون في بيت حديث جدًا.
+836	我喜欢现代音乐。	I like modern music.	أحب الموسيقى الحديثة.
+837	这是一座很古老的城市。	This is a very ancient city.	هذه مدينة عتيقة جدًا.
+837	这个古老的故事很有意思。	This ancient story is very interesting.	هذه القصة العتيقة مثيرة جدًا.
+838	考试以前紧张很正常。	It's normal to be nervous before exams.	من الطبيعي أن تتوتّر قبل الامتحانات.
+838	今天是正常的一天。	Today is a normal day.	اليوم يوم عادي.
+839	他是一个普通的学生。	He's an ordinary student.	إنه طالب عادي.
+839	这只是一件普通的衣服。	This is just an ordinary piece of clothing.	هذه مجرد ملابس عادية.
+840	这个问题主要是钱。	The main problem here is money.	المشكلة الرئيسية هي المال.
+840	我主要在家工作。	I mainly work from home.	أعمل غالبًا من البيت.
+841	没有必要买新的。	There's no need to buy a new one.	لا داعي لشراء واحد جديد.
+841	有必要预订吗？	Is it necessary to book?	هل من الضروري الحجز؟
+842	这个地图很有用。	This map is very useful.	هذه الخريطة مفيدة جدًا.
+842	谢谢你，你的建议很有用。	Thank you, your advice is very useful.	شكرًا، نصيحتك مفيدة جدًا.
+843	你的答案是正确的。	Your answer is correct.	إجابتك صحيحة.
+843	请选择正确的句子。	Please choose the correct sentence.	من فضلك اختر الجملة الصحيحة.
+844	我们两个人的生日相同。	We both have the same birthday.	عيد ميلادنا في اليوم نفسه.
+844	这两个字的意思不相同。	These two characters don't mean the same.	معنى هذين الحرفين مختلف.
+845	她学习很积极。	She's very keen on her studies.	هي متحمّسة جدًا للدراسة.
+845	他常常很积极地帮助别人。	He's often very keen to help others.	كثيرًا ما يكون متحمّسًا لمساعدة الآخرين.
+846	今天的工作很轻松。	Today's work is very easy.	عمل اليوم سهل جدًا.
+846	考试以后，我觉得很轻松。	After the exam I feel very relaxed.	بعد الامتحان أشعر بارتياح كبير.
+847	你的新鞋真酷！	Your new shoes are really cool!	حذاؤك الجديد رائع حقًا!
+847	他觉得骑自行车很酷。	He thinks riding a bike is cool.	يرى أن ركوب الدراجة رائع.
+848	这个故事很可怕。	This story is very scary.	هذه القصة مخيفة جدًا.
+848	昨天的天气真可怕。	Yesterday's weather was terrible.	كان طقس أمس سيئًا جدًا.
+849	昨天的比赛很精彩。	Yesterday's match was brilliant.	كانت مباراة أمس رائعة.
+849	这个电影非常精彩。	This film is excellent.	هذا الفيلم رائع جدًا.
+850	今天我非常开心。	I'm very happy today.	أنا سعيد جدًا اليوم.
+850	孩子们玩得很开心。	The children had a great time.	استمتع الأطفال كثيرًا.
+851	他们的生活很幸福。	They have a very happy life.	حياتهم سعيدة جدًا.
+851	祝你们幸福！	I wish you happiness!	أتمنى لكما السعادة!
+852	我对这个结果很失望。	I'm very disappointed with this result.	أنا خائب الأمل جدًا من هذه النتيجة.
+852	别让我失望。	Don't let me down.	لا تخيّب أملي.
+853	她的猫丢了，她很伤心。	Her cat got lost and she's very sad.	ضاعت قطتها فحزنت كثيرًا.
+853	别伤心了，明天会更好。	Don't be sad, tomorrow will be better.	لا تحزن، الغد سيكون أفضل.
+854	这个故事让我很感动。	This story really moved me.	أثّرت فيّ هذه القصة كثيرًا.
+854	大家都被他感动了。	Everyone was moved by him.	تأثّر به الجميع.
+855	这里晚上很安全。	It's very safe here at night.	المكان هنا آمن جدًا في الليل.
+855	开车要注意安全。	Drive safely.	انتبه للسلامة عندما تقود.
+856	小心，地上有水！	Careful, there's water on the floor!	انتبه، يوجد ماء على الأرض!
+856	过马路的时候要小心。	Be careful when you cross the road.	كن حذرًا عندما تعبر الطريق.
+857	这个博物馆是免费的。	This museum is free.	هذا المتحف مجاني.
+857	孩子们坐地铁免费。	Children ride the metro for free.	يركب الأطفال المترو مجانًا.
+858	尽管下雨，我们还是去了公园。	Although it rained, we still went to the park.	مع أنها أمطرت ذهبنا إلى الحديقة.
+858	尽管他很累，他还是去上班了。	Although he was tired, he still went to work.	مع أنه كان متعبًا ذهب إلى العمل.
+859	除非下雨，我们明天去爬山。	Unless it rains, we'll go hiking tomorrow.	سنذهب إلى تسلّق الجبل غدًا إلا إذا أمطرت.
+859	除非有重要的事，别给我打电话。	Don't call me unless it's important.	لا تتصل بي إلا إذا كان الأمر مهمًا.
+860	反正我没事，我陪你去。	I'm free anyway, I'll go with you.	أنا متفرّغ على أيّ حال، سأرافقك.
+860	反正时间还早，我们走路去吧。	It's still early anyway, let's walk.	ما زال الوقت مبكرًا على أيّ حال، لنمشِ.
+861	他不是我哥哥，而是我叔叔。	He's not my older brother but my uncle.	ليس أخي الأكبر بل عمي.
+861	我不想喝茶，而是想喝咖啡。	I don't want tea, I want coffee.	لا أريد الشاي بل القهوة.
+862	也许他已经走了。	Perhaps he's already left.	ربما ذهب بالفعل.
+862	也许明天会下雨。	Perhaps it'll rain tomorrow.	ربما تمطر غدًا.
+863	我喜欢水果，尤其是西瓜。	I like fruit, especially watermelon.	أحب الفاكهة، خصوصًا البطيخ.
+863	这里很热闹，尤其是周末。	It's very lively here, especially at weekends.	المكان هنا نابض بالحياة، خصوصًا في عطلة الأسبوع.
+864	你来得正好！	You've come at just the right time!	جئت في الوقت المناسب تمامًا!
+864	这件衣服我穿正好。	This item of clothing fits me just right.	هذه الملابس على مقاسي تمامًا.
+865	我们差不多到了。	We're almost there.	اقتربنا من الوصول.
+865	这两个颜色差不多。	These two colours are about the same.	هذان اللونان متشابهان تقريبًا.
+866	我几乎每天都去游泳。	I go swimming almost every day.	أذهب للسباحة كل يوم تقريبًا.
+866	火车上几乎没有人。	There's almost nobody on the train.	لا يوجد أحد تقريبًا في القطار.
+867	请立刻给医生打电话。	Please call the doctor immediately.	من فضلك اتصل بالطبيب فورًا.
+867	他听到以后立刻回家了。	After hearing it he went home at once.	بعد أن سمع ذلك عاد إلى البيت فورًا.
+868	你最近忙吗？	Have you been busy recently?	هل أنت مشغول مؤخرًا؟
+868	我最近常常去图书馆。	Recently I've often been going to the library.	مؤخرًا أذهب كثيرًا إلى المكتبة.
+869	我的卧室在楼上。	My bedroom is upstairs.	غرفة نومي في الطابق العلوي.
+869	楼上的邻居很吵。	The upstairs neighbours are very noisy.	جيران الطابق العلوي صاخبون جدًا.
+870	我在楼下等你。	I'll wait for you downstairs.	سأنتظرك في الأسفل.
+870	楼下有一家超市。	There's a supermarket downstairs.	في الأسفل سوبرماركت.
+871	银行在医院对面。	The bank is opposite the hospital.	المصرف مقابل المستشفى.
+871	我家对面有一个公园。	There's a park opposite my home.	مقابل بيتي حديقة.
+872	我到处找钥匙。	I looked for my keys everywhere.	بحثت عن مفاتيحي في كل مكان.
+872	周末到处都是人。	At weekends there are people everywhere.	في عطلة الأسبوع الناس في كل مكان.
+873	另外，我们还要一些水。	Besides, we also need some water.	إضافة إلى ذلك نحتاج بعض الماء.
+873	我有两个哥哥，另外还有一个妹妹。	I have two older brothers and also a younger sister.	لي أخوان أكبر مني وأيضًا أخت صغرى.
+874	快走吧，否则我们会晚。	Let's go quickly, otherwise we'll be late.	لنذهب بسرعة وإلّا سنتأخر.
+874	多穿一点儿衣服，否则会感冒。	Wear more clothes, otherwise you'll catch a cold.	البس ملابس أكثر وإلّا ستصاب بالزكام.
+875	他不但会说汉语，而且会写汉字。	He can not only speak Chinese but also write characters.	لا يتكلم الصينية فقط بل يكتب حروفها أيضًا.
+875	这里不但便宜，而且好吃。	It's not only cheap here but also tasty.	المكان هنا ليس رخيصًا فقط بل لذيذ أيضًا.
+876	他忙得甚至没有时间吃饭。	He's so busy he doesn't even have time to eat.	إنه مشغول لدرجة أنه لا يجد وقتًا للأكل.
+876	我奶奶甚至会上网。	My grandma can even go online.	حتى جدتي تستطيع استخدام الإنترنت.
+877	原来是你！	Oh, it's you!	آه، إنه أنت!
+877	我原来住在北京。	I used to live in Beijing.	كنت أسكن في بكين في الأصل.
+878	我本来想去，但是太累了。	I originally wanted to go, but I was too tired.	كنت أريد الذهاب في الأصل لكنني كنت متعبًا جدًا.
+878	这里本来是一个公园。	This was originally a park.	كان هذا المكان في الأصل حديقة.
+879	赶快走吧，车来了！	Hurry up, the bus is here!	أسرع، جاءت الحافلة!
+879	你赶快去医院吧。	Go to the hospital quickly.	اذهب إلى المستشفى بسرعة.
+880	现在七点一刻。	It's quarter past seven now.	الساعة الآن السابعة والربع.
+880	我七点一刻起床。	I get up at a quarter past seven.	أستيقظ في السابعة والربع.
+881	我要一份米饭。	I'd like a portion of rice.	أريد حصة من الأرز.
+881	请给我一份报纸。	Please give me a newspaper.	من فضلك أعطني جريدة.
+882	那座山很高。	That mountain is very high.	ذلك الجبل عالٍ جدًا.
+882	这座城市很漂亮。	This city is very beautiful.	هذه المدينة جميلة جدًا.
+883	房间里有两把椅子。	There are two chairs in the room.	في الغرفة كرسيان.
+883	我买了一把雨伞。	I bought an umbrella.	اشتريت مظلّة.
+884	我吃了一片面包。	I ate a slice of bread.	أكلت شريحة خبز.
+884	这是一片很大的森林。	This is a very large forest.	هذه غابة كبيرة جدًا.
+885	她送给我一朵花。	She gave me a flower.	أهدتني زهرة.
+885	天上有几朵白云。	There are a few white clouds in the sky.	في السماء بضع غيوم بيضاء.
+886	天上有一颗星星。	There's one star in the sky.	في السماء نجمة واحدة.
+886	孩子有一颗牙坏了。	The child has a bad tooth.	للطفل سنّ مسوّسة.
+887	昨天的那场比赛很精彩。	Yesterday's match was brilliant.	كانت مباراة أمس رائعة.
+887	今天下了一场大雨。	There was heavy rain today.	هطل مطر غزير اليوم.
+888	我写了一篇故事。	I wrote a story.	كتبت قصة.
+888	这篇故事很有意思。	This story is very interesting.	هذه القصة مثيرة جدًا.
+889	这间房间很大。	This room is very big.	هذه الغرفة كبيرة جدًا.
+889	我们家有三间卧室。	Our home has three bedrooms.	في بيتنا ثلاث غرف نوم.
+890	这是一所很好的学校。	This is a very good school.	هذه مدرسة جيدة جدًا.
+890	这所大学有两万个学生。	This university has twenty thousand students.	في هذه الجامعة عشرون ألف طالب.
+891	我给奶奶写了一封信。	I wrote Grandma a letter.	كتبت رسالة لجدتي.
+891	今天我收到了两封信。	I received two letters today.	استلمت رسالتين اليوم.
+892	这首音乐很好听。	This piece of music is lovely.	هذه المقطوعة الموسيقية جميلة.
+892	我很喜欢这首音乐。	I really like this piece of music.	أحب هذه المقطوعة الموسيقية كثيرًا.
+893	我们租了一套房子。	We rented a flat.	استأجرنا شقة.
+893	这套衣服很贵。	This outfit is very expensive.	هذا الطقم غالٍ جدًا.
+894	今天我们有四节课。	We have four lessons today.	عندنا أربع حصص اليوم.
+894	第一节课是汉语。	The first lesson is Chinese.	الحصة الأولى صينية.
+895	祝你一路平安！	Have a safe trip!	رحلة سالمة!
+895	一路平安，到了给我打电话。	Safe journey, call me when you arrive.	رحلة سالمة، اتصل بي عندما تصل.
+896	恭喜你考试成功！	Congratulations on passing your exam!	مبروك نجاحك في الامتحان!
+896	听说你结婚了，恭喜恭喜！	I heard you got married, congratulations!	سمعت أنك تزوجت، مبروك!
+897	我们祝贺你找到新工作。	We congratulate you on your new job.	نهنّئك على عملك الجديد.
+897	大家都来祝贺他。	Everyone came to congratulate him.	جاء الجميع لتهنئته.
+898	你辛苦了，休息一下吧。	Thanks for your hard work, take a rest.	شكرًا على تعبك، ارتح قليلًا.
+898	司机，辛苦了！	Thank you, driver!	شكرًا لك أيها السائق!
+899	你想吃什么？随便。	What do you want to eat? Anything.	ماذا تريد أن تأكل؟ أيّ شيء.
+899	别随便扔东西。	Don't throw things around carelessly.	لا ترمِ الأشياء بإهمال.
+900	我们成功了，干杯！	We did it, cheers!	نجحنا، في صحتكم!
+900	大家一起干杯！	Cheers, everyone!	في صحتكم جميعًا!

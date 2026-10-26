@@ -599,3 +599,303 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 598	zh_w_menpiao	门票	noun	leisure	entrance ticket	تذكرة دخول	ménpiào		measure=张; hsk=4; trad=門票	zh_ev_menpiao
 599	zh_w_ji_chicken	鸡	noun	food	chicken	دجاج	jī		measure=只; hsk=2; trad=雞
 600	zh_w_rou	肉	noun	food	meat	لحم	ròu		measure=块; hsk=2
+601	zh_w_fasong	发送	verb	communication	to send (email, message)	يرسل (رسالة إلكترونية)	fāsòng		hsk=4; trad=發送	zh_fasong
+602	zh_w_dasao	打扫	verb	home	to clean, to sweep	ينظّف	dǎsǎo		hsk=3; trad=打掃
+603	zh_w_shoushi	收拾	verb	home	to tidy up, to pack	يرتّب	shōu·shi		hsk=4
+604	zh_w_diu	丢	verb	actions	to lose	يُضيّع	diū		hsk=4
+605	zh_w_tou_steal	偷	verb	actions	to steal	يسرق	tōu		hsk=4
+606	zh_w_tui_push	推	verb	actions	to push	يدفع	tuī		hsk=4
+607	zh_w_la_pull	拉	verb	actions	to pull	يسحب	lā		hsk=4
+608	zh_w_reng	扔	verb	actions	to throw (away)	يرمي	rēng		hsk=4
+609	zh_w_bao_hug	抱	verb	people	to hug, to hold	يعانق، يحمل	bào		hsk=4
+610	zh_w_han	喊	verb	communication	to shout, to call out	يصرخ، ينادي	hǎn		hsk=5
+611	zh_w_miaoshu	描述	verb	communication	to describe	يصف	miáoshù		hsk=5
+612	zh_w_taolun	讨论	verb	communication	to discuss	يناقش	tǎolùn		hsk=4; trad=討論
+613	zh_w_jianyi	建议	verb	communication	to suggest; suggestion	يقترح؛ اقتراح	jiànyì		hsk=4; trad=建議
+614	zh_w_tuijian	推荐	verb	communication	to recommend	يوصي	tuījiàn		hsk=5; trad=推薦
+615	zh_w_baoyuan	抱怨	verb	communication	to complain	يشتكي	bàoyuàn		hsk=5
+616	zh_w_jujue	拒绝	verb	communication	to refuse	يرفض	jùjué		hsk=4; trad=拒絕
+617	zh_w_jieshou	接受	verb	communication	to accept	يقبل	jiēshòu		hsk=4
+618	zh_w_xiangxiang	想象	verb	mind	to imagine	يتخيّل	xiǎngxiàng		hsk=5
+619	zh_w_cai_guess	猜	verb	mind	to guess	يخمّن	cāi		hsk=4
+620	zh_w_zhuyi	注意	verb	senses	to pay attention	ينتبه	zhùyì		hsk=3
+621	zh_w_yuanliang	原谅	verb	feelings	to forgive	يسامح	yuánliàng		hsk=4; trad=原諒
+622	zh_w_xinren	信任	verb	feelings	to trust	يثق	xìnrèn		hsk=4
+623	zh_w_shuyu	属于	verb	function	to belong to	ينتمي إلى	shǔyú		hsk=5; trad=屬於
+624	zh_w_baokuo	包括	verb	function	to include	يشمل	bāokuò		hsk=4
+625	zh_w_shouji_collect	收集	verb	actions	to collect	يجمع	shōují		hsk=5
+626	zh_w_baohu	保护	verb	actions	to protect	يحمي	bǎohù		hsk=4; trad=保護
+627	zh_w_tigong	提供	verb	work	to provide	يوفّر	tígōng		hsk=4
+628	zh_w_jianshao	减少	verb	numbers	to reduce	يقلّل	jiǎnshǎo		hsk=4; trad=減少
+629	zh_w_zengjia	增加	verb	numbers	to increase	يزيد	zēngjiā		hsk=4
+630	zh_w_fazhan	发展	verb	work	to develop	يطوّر، يتطوّر	fāzhǎn		hsk=4; trad=發展
+631	zh_w_guanli	管理	verb	work	to manage	يدير	guǎnlǐ		hsk=4
+632	zh_w_jiejue	解决	verb	mind	to solve	يحلّ	jiějué		hsk=3; trad=解決
+633	zh_w_shibai	失败	verb	work	to fail; failure	يفشل؛ فشل	shībài		hsk=4; trad=失敗
+634	zh_w_chenggong	成功	verb	work	to succeed; success	ينجح؛ نجاح	chénggōng		hsk=4
+635	zh_w_houhui	后悔	verb	feelings	to regret	يندم	hòuhuǐ		hsk=4; trad=後悔
+636	zh_w_jiaoxing	叫醒	verb	routine	to wake (someone) up	يوقظ	jiàoxǐng		hsk=4
+637	zh_w_qiao	敲	verb	actions	to knock	يطرق	qiāo		hsk=4
+638	zh_w_xiang_ring	响	verb	communication	to ring, to sound	يرنّ	xiǎng		hsk=4; trad=響
+639	zh_w_wen_smell	闻	verb	senses	to smell	يشمّ	wén		hsk=4; trad=聞
+640	zh_w_gua	挂	verb	actions	to hang	يعلّق	guà		hsk=4; trad=掛
+641	zh_w_shao_burn	烧	verb	actions	to burn; to cook	يحرق؛ يطبخ	shāo		hsk=4; trad=燒
+642	zh_w_zhu_boil	煮	verb	food	to boil	يسلق، يغلي	zhǔ		hsk=5
+643	zh_w_jiehun	结婚	verb	people	to get married	يتزوّج	jiéhūn		hsk=3; trad=結婚
+644	zh_w_ying	赢	verb	leisure	to win	يفوز	yíng		hsk=4; trad=贏
+645	zh_w_shu_lose	输	verb	leisure	to lose (a game)	يخسر	shū		hsk=4; trad=輸
+646	zh_w_zhuan	赚	verb	work	to earn	يكسب	zhuàn		hsk=4; trad=賺
+647	zh_w_langfei	浪费	verb	actions	to waste	يهدر	làngfèi		hsk=4; trad=浪費
+648	zh_w_dayin	打印	verb	work	to print	يطبع	dǎyìn		hsk=4
+649	zh_w_fangsong	放松	verb	leisure	to relax	يسترخي	fàngsōng		hsk=4; trad=放鬆
+650	zh_w_tang_lie	躺	verb	routine	to lie down	يستلقي	tǎng		hsk=4
+651	zh_w_tuo	脱	verb	clothes	to take off	يخلع	tuō		hsk=4; trad=脫
+652	zh_w_dai_wear	戴	verb	clothes	to wear (glasses, hat)	يلبس (نظارة، قبعة)	dài		hsk=4
+653	zh_w_qian_sign	签	verb	work	to sign	يوقّع	qiān		hsk=4; trad=簽
+654	zh_w_zu	租	verb	home	to rent	يستأجر	zū		hsk=4
+655	zh_w_sahuang	撒谎	verb	communication	to lie, to tell a lie	يكذب	sāhuǎng		hsk=5; trad=撒謊
+656	zh_w_darao	打扰	verb	feelings	to disturb	يزعج	dǎrǎo		hsk=4; trad=打擾
+657	zh_w_pei	陪	verb	people	to accompany	يرافق	péi		hsk=4
+658	zh_w_xiangnian	想念	verb	feelings	to miss (someone)	يشتاق إلى	xiǎngniàn		hsk=5
+659	zh_w_huaiyi	怀疑	verb	mind	to doubt	يشكّ	huáiyí		hsk=4; trad=懷疑
+660	zh_w_zhua	抓	verb	actions	to catch, to grab	يمسك	zhuā		hsk=5
+661	zh_w_ganxie	感谢	verb	greetings	to thank	يشكر	gǎnxiè		hsk=4; trad=感謝
+662	zh_w_milu	迷路	verb	travel	to get lost	يضلّ الطريق	mílù		hsk=4
+663	zh_w_yudao	遇到	verb	people	to run into, to meet	يصادف	yùdào		hsk=3
+664	zh_w_ting_stop	停	verb	movement	to stop	يتوقّف	tíng		hsk=4
+665	zh_w_banjia	搬家	verb	home	to move house	ينتقل من بيت	bānjiā		hsk=4
+666	zh_w_liu_stay	留	verb	actions	to stay; to leave (behind)	يبقى؛ يترك	liú		hsk=4
+667	zh_w_qie	切	verb	food	to cut, to slice	يقطع	qiē		hsk=5
+668	zh_w_sanbu	散步	verb	leisure	to go for a walk	يتنزّه	sànbù		hsk=4
+669	zh_w_liaotian	聊天	verb	communication	to chat	يدردش	liáotiān		hsk=4
+670	zh_w_tan	弹	verb	leisure	to play (piano, guitar)	يعزف	tán		hsk=4; trad=彈
+671	zh_w_paizhao	拍照	verb	leisure	to take a photo	يلتقط صورة	pāizhào		hsk=4
+672	zh_w_paidui	排队	verb	actions	to queue	يقف في الطابور	páiduì		hsk=4; trad=排隊
+673	zh_w_tuifang	退房	verb	travel	to check out (of a hotel)	يغادر الفندق	tuìfáng		hsk=5	zh_ev_tuifang
+674	zh_w_anpai	安排	verb	work	to arrange	يرتّب، ينظّم	ānpái		hsk=4
+675	zh_w_dazhe	打折	verb	shopping	to give a discount	يخفّض السعر	dǎzhé		hsk=4
+676	zh_w_maidan	买单	verb	food	to pay the bill	يدفع الحساب	mǎidān		hsk=5; trad=買單	zh_ev_maidan
+677	zh_w_chuguo	出国	verb	travel	to go abroad	يسافر إلى الخارج	chūguó		hsk=4; trad=出國
+678	zh_w_jijie	季节	noun	weather	season	فصل (من السنة)	jìjié		measure=个; hsk=3; trad=季節
+679	zh_w_riqi	日期	noun	time	date	تاريخ	rìqī		measure=个; hsk=4
+680	zh_w_guoqu	过去	noun	time	the past	الماضي	guòqù		measure=none; hsk=3; trad=過去
+681	zh_w_jianglai	将来	noun	time	the future	المستقبل	jiānglái		measure=none; hsk=4; trad=將來
+682	zh_w_banye	半夜	noun	time	midnight, middle of the night	منتصف الليل	bànyè		measure=none; hsk=4
+683	zh_w_diqu	地区	noun	places	area, region	منطقة	dìqū		measure=个; hsk=4; trad=地區
+684	zh_w_diqiu	地球	noun	nature	the earth	الأرض	dìqiú		measure=个; hsk=4
+685	zh_w_yueliang	月亮	noun	nature	moon	القمر	yuè·liang		measure=个; hsk=3
+686	zh_w_xingxing	星星	noun	nature	star	نجمة	xīng·xing		measure=颗; hsk=4
+687	zh_w_yun	云	noun	weather	cloud	غيمة	yún		measure=朵; hsk=4; trad=雲
+688	zh_w_dao_island	岛	noun	places	island	جزيرة	dǎo		measure=个; hsk=5; trad=島
+689	zh_w_senlin	森林	noun	nature	forest	غابة	sēnlín		measure=片; hsk=4
+690	zh_w_dalou	大楼	noun	places	(tall) building	مبنى عالٍ	dàlóu		measure=座; hsk=4; trad=大樓
+691	zh_w_jiaotang	教堂	noun	places	church	كنيسة	jiàotáng		measure=座; hsk=5
+692	zh_w_tiyuguan	体育馆	noun	leisure	gym, sports hall	صالة رياضية	tǐyùguǎn		measure=个; hsk=4; trad=體育館
+693	zh_w_youyongchi	游泳池	noun	leisure	swimming pool	مسبح	yóuyǒngchí		measure=个; hsk=4
+694	zh_w_daxue	大学	noun	school	university	جامعة	dàxué		measure=所; hsk=3; trad=大學
+695	zh_w_guangchang	广场	noun	places	square	ساحة	guǎngchǎng		measure=个; hsk=4; trad=廣場
+696	zh_w_nongcun	农村	noun	places	countryside	الريف	nóngcūn		measure=none; hsk=4; trad=農村
+697	zh_w_dongwuyuan	动物园	noun	leisure	zoo	حديقة الحيوانات	dòngwùyuán		measure=个; hsk=3; trad=動物園
+698	zh_w_dianyingyuan	电影院	noun	leisure	cinema	سينما	diànyǐngyuàn		measure=家; hsk=3; trad=電影院
+699	zh_w_youju	邮局	noun	communication	post office	مكتب البريد	yóujú		measure=个; hsk=4; trad=郵局
+700	zh_w_kexue	科学	noun	school	science	العلم، العلوم	kēxué		measure=none; hsk=4; trad=科學
+701	zh_w_shuxue	数学	noun	school	maths	رياضيات	shùxué		measure=none; hsk=3; trad=數學
+702	zh_w_keben	课本	noun	school	textbook	كتاب مدرسي	kèběn		measure=本; hsk=4; trad=課本
+703	zh_w_heiban	黑板	noun	school	blackboard	سبورة	hēibǎn		measure=块; hsk=3
+704	zh_w_nianji	年级	noun	school	grade, year (at school)	صف دراسي	niánjí		measure=个; hsk=3; trad=年級
+705	zh_w_daan	答案	noun	school	answer	إجابة	dá'àn		measure=个; hsk=4
+706	zh_w_lizi	例子	noun	school	example	مثال	lì·zi		measure=个; hsk=4
+707	zh_w_bijiben	笔记本	noun	school	notebook; laptop	دفتر؛ حاسوب محمول	bǐjìběn		measure=本; hsk=3; trad=筆記本
+708	zh_w_bozi	脖子	noun	body	neck	رقبة	bó·zi		measure=个; hsk=4
+709	zh_w_jianbang	肩膀	noun	body	shoulder	كتف	jiānbǎng		measure=个; hsk=5
+710	zh_w_shouzhi	手指	noun	body	finger	إصبع	shǒuzhǐ		measure=个; hsk=5
+711	zh_w_pifu	皮肤	noun	body	skin	جلد، بشرة	pífū		measure=none; hsk=4; trad=皮膚
+712	zh_w_kesou	咳嗽	verb	health	to cough	يسعل	ké·sou		hsk=4
+713	zh_w_fashao	发烧	verb	health	to have a fever	يصاب بالحمّى	fāshāo		hsk=3; trad=發燒
+714	zh_w_touteng	头疼	adj	health	to have a headache	عنده صداع	tóuténg		hsk=4; trad=頭疼
+715	zh_w_waitao	外套	noun	clothes	coat, jacket	معطف، سترة	wàitào		measure=件; hsk=4
+716	zh_w_maoyi	毛衣	noun	clothes	sweater	كنزة صوف	máoyī		measure=件; hsk=4
+717	zh_w_wazi	袜子	noun	clothes	sock	جورب	wà·zi		measure=双; hsk=4; trad=襪子
+718	zh_w_jiezhi	戒指	noun	clothes	ring	خاتم	jiè·zhi		measure=个; hsk=5
+719	zh_w_qianbao	钱包	noun	shopping	wallet	محفظة	qiánbāo		measure=个; hsk=4; trad=錢包
+720	zh_w_zhaoxiangji	照相机	noun	leisure	camera	كاميرا	zhàoxiàngjī		measure=个; hsk=3; trad=照相機
+721	zh_w_koudai	口袋	noun	clothes	pocket	جيب	kǒu·dai		measure=个; hsk=5
+722	zh_w_tudou	土豆	noun	food	potato	بطاطا	tǔdòu		measure=个; hsk=5
+723	zh_w_xihongshi	西红柿	noun	food	tomato	طماطم	xīhóngshì		measure=个; hsk=4; trad=西紅柿
+724	zh_w_shala	沙拉	noun	food	salad	سلطة	shālā		measure=份; hsk=5
+725	zh_w_sanmingzhi	三明治	noun	food	sandwich	شطيرة	sānmíngzhì		measure=个; hsk=5
+726	zh_w_qiaokeli	巧克力	noun	food	chocolate	شوكولاتة	qiǎokèlì		measure=块; hsk=4
+727	zh_w_chengzi	橙子	noun	food	orange	برتقالة	chéng·zi		measure=个; hsk=4
+728	zh_w_ningmeng	柠檬	noun	food	lemon	ليمون	níngméng		measure=个; hsk=5; trad=檸檬
+729	zh_w_bingqilin	冰淇淋	noun	food	ice cream	بوظة	bīngqílín		measure=个; hsk=4
+730	zh_w_jiaozi	饺子	noun	food	dumpling	زلابية صينية	jiǎo·zi		measure=个; hsk=4; trad=餃子
+731	zh_w_baozi	包子	noun	food	steamed bun	كعكة محشوة على البخار	bāo·zi		measure=个; hsk=4
+732	zh_w_yangrou	羊肉	noun	food	lamb, mutton	لحم الضأن	yángròu		measure=none; hsk=3
+733	zh_w_niurou	牛肉	noun	food	beef	لحم البقر	niúròu		measure=none; hsk=4
+734	zh_w_dao_knife	刀	noun	food	knife	سكين	dāo		measure=把; hsk=4
+735	zh_w_shaozi	勺子	noun	food	spoon	ملعقة	sháo·zi		measure=把; hsk=4
+736	zh_w_chazi	叉子	noun	food	fork	شوكة	chā·zi		measure=把; hsk=4
+737	zh_w_wuding	屋顶	noun	home	roof	سطح، سقف	wūdǐng		measure=个; hsk=5; trad=屋頂
+738	zh_w_jingzi	镜子	noun	home	mirror	مرآة	jìng·zi		measure=面; hsk=4; trad=鏡子
+739	zh_w_guizi	柜子	noun	home	cupboard	خزانة	guì·zi		measure=个; hsk=4; trad=櫃子
+740	zh_w_yangtai	阳台	noun	home	balcony	شرفة	yángtái		measure=个; hsk=4; trad=陽台
+741	zh_w_louti	楼梯	noun	home	stairs	درج	lóutī		measure=个; hsk=4; trad=樓梯
+742	zh_w_woshi	卧室	noun	home	bedroom	غرفة نوم	wòshì		measure=间; hsk=4; trad=臥室
+743	zh_w_keting	客厅	noun	home	living room	غرفة الجلوس	kètīng		measure=个; hsk=4; trad=客廳
+744	zh_w_laji	垃圾	noun	home	rubbish	قمامة	lājī		measure=none; hsk=4
+745	zh_w_nanpengyou	男朋友	noun	people	boyfriend	حبيب	nánpéng·you		measure=个; hsk=3
+746	zh_w_nvpengyou	女朋友	noun	people	girlfriend	حبيبة	nǚpéng·you		measure=个; hsk=3
+747	zh_w_laoban	老板	noun	work	boss, owner	مدير، صاحب العمل	lǎobǎn		measure=个; hsk=4; trad=老闆
+748	zh_w_gongchengshi	工程师	noun	work	engineer	مهندس	gōngchéngshī		measure=位; hsk=5; trad=工程師
+749	zh_w_lvshi	律师	noun	work	lawyer	محامٍ	lǜshī		measure=位; hsk=4; trad=律師
+750	zh_w_geshou	歌手	noun	leisure	singer	مغنٍّ	gēshǒu		measure=位; hsk=4
+751	zh_w_zuojia	作家	noun	leisure	writer	كاتب	zuòjiā		measure=位; hsk=4
+752	zh_w_youke	游客	noun	travel	tourist	سائح	yóukè		measure=个; hsk=5; trad=遊客
+753	zh_w_chengke	乘客	noun	travel	passenger	راكب	chéngkè		measure=位; hsk=5
+754	zh_w_daoyou	导游	noun	travel	tour guide	مرشد سياحي	dǎoyóu		measure=位; hsk=4; trad=導遊	zh_ev_daoyou
+755	zh_w_sunzi	孙子	noun	family	grandson	حفيد	sūn·zi		measure=个; hsk=4; trad=孫子
+756	zh_w_sunnv	孙女	noun	family	granddaughter	حفيدة	sūnnǚ		measure=个; hsk=4; trad=孫女
+757	zh_w_kehu	客户	noun	work	client	عميل	kèhù		measure=位; hsk=5; trad=客戶	zh_kehu
+758	zh_w_huiyi	会议	noun	work	meeting	اجتماع	huìyì		measure=个; hsk=3; trad=會議	zh_huiyi
+759	zh_w_yusuan	预算	noun	work	budget	ميزانية	yùsuàn		measure=个; hsk=5; trad=預算	zh_yusuan
+760	zh_w_jiezhi_riqi	截止日期	noun	work	deadline	الموعد النهائي	jiézhǐ rìqī		measure=个; hsk=5	zh_jiezhi_riqi
+761	zh_w_fangan	方案	noun	work	plan, proposal	خطة، مقترح	fāng'àn		measure=个; hsk=5	zh_fangan
+762	zh_w_fujian	附件	noun	work	attachment	ملف مرفق	fùjiàn		measure=个; hsk=5	zh_fujian
+763	zh_w_hetong	合同	noun	work	contract	عقد	hé·tong		measure=份; hsk=5
+764	zh_w_daikuan	贷款	noun	shopping	loan	قرض	dàikuǎn		measure=笔; hsk=5; trad=貸款	zh_fin_daikuan
+765	zh_w_jingyan	经验	noun	work	experience	خبرة	jīngyàn		measure=none; hsk=4; trad=經驗
+766	zh_w_xinxi	信息	noun	communication	information; message	معلومات؛ رسالة	xìnxī		measure=条; hsk=4
+767	zh_w_zhishi	知识	noun	school	knowledge	معرفة	zhī·shi		measure=none; hsk=4; trad=知識
+768	zh_w_jiaoyu	教育	noun	school	education	تعليم	jiàoyù		measure=none; hsk=4
+769	zh_w_nengli	能力	noun	work	ability	قدرة	nénglì		measure=none; hsk=4
+770	zh_w_huanjing	环境	noun	nature	environment	البيئة	huánjìng		measure=none; hsk=3; trad=環境
+771	zh_w_ziran	自然	noun	nature	nature; natural	الطبيعة؛ طبيعي	zìrán		measure=none; hsk=4
+772	zh_w_wenhua	文化	noun	leisure	culture	ثقافة	wénhuà		measure=none; hsk=3
+773	zh_w_chuantong	传统	noun	leisure	tradition; traditional	تقليد؛ تقليدي	chuántǒng		measure=个; hsk=5; trad=傳統
+774	zh_w_wangzhan	网站	noun	communication	website	موقع إلكتروني	wǎngzhàn		measure=个; hsk=4; trad=網站
+775	zh_w_mima	密码	noun	communication	password	كلمة المرور	mìmǎ		measure=个; hsk=4; trad=密碼
+776	zh_w_jieguo	结果	noun	school	result	نتيجة	jiéguǒ		measure=个; hsk=4; trad=結果
+777	zh_w_qubie	区别	noun	mind	difference	فرق	qūbié		measure=个; hsk=4; trad=區別
+778	zh_w_yijian	意见	noun	mind	opinion	رأي	yì·jian		measure=个; hsk=4; trad=意見
+779	zh_w_ganjue	感觉	noun	feelings	feeling	شعور	gǎnjué		measure=个; hsk=4; trad=感覺
+780	zh_w_gongzi	工资	noun	work	salary	راتب	gōngzī		measure=none; hsk=4; trad=工資
+781	zh_w_jiage	价格	noun	shopping	price	سعر	jiàgé		measure=个; hsk=4; trad=價格
+782	zh_w_xianjin	现金	noun	shopping	cash	نقد	xiànjīn		measure=none; hsk=5; trad=現金
+783	zh_w_zazhi	杂志	noun	communication	magazine	مجلة	zázhì		measure=本; hsk=4; trad=雜誌
+784	zh_w_hunli	婚礼	noun	people	wedding	عرس	hūnlǐ		measure=场; hsk=5; trad=婚禮
+785	zh_w_hangban	航班	noun	travel	flight	رحلة جوية	hángbān		measure=个; hsk=4
+786	zh_w_qianzheng	签证	noun	travel	visa	تأشيرة	qiānzhèng		measure=个; hsk=4; trad=簽證
+787	zh_w_qiantai	前台	noun	travel	reception (desk)	مكتب الاستقبال	qiántái		measure=个; hsk=5; trad=前臺	zh_ev_qiantai
+788	zh_w_zhantai	站台	noun	travel	platform	رصيف المحطة	zhàntái		measure=个; hsk=5; trad=站臺	zh_ev_zhantai
+789	zh_w_jinianpin	纪念品	noun	travel	souvenir	تذكار	jìniànpǐn		measure=个; hsk=5; trad=紀念品	zh_ev_jinianpin
+790	zh_w_dashiguan	大使馆	noun	places	embassy	سفارة	dàshǐguǎn		measure=个; hsk=5; trad=大使館	zh_ev_dashiguan
+791	zh_w_dengjipai	登机牌	noun	travel	boarding pass	بطاقة الصعود	dēngjīpái		measure=张; hsk=4; trad=登機牌	zh_ev_dengjipai
+792	zh_w_wangfanpiao	往返票	noun	travel	return ticket	تذكرة ذهاب وإياب	wǎngfǎnpiào		measure=张; hsk=5	zh_ev_wangfanpiao
+793	zh_w_danrenjian	单人间	noun	travel	single room	غرفة مفردة	dānrénjiān		measure=间; hsk=5; trad=單人間	zh_ev_danrenjian
+794	zh_w_shuangrenjian	双人间	noun	travel	double room	غرفة مزدوجة	shuāngrénjiān		measure=间; hsk=5; trad=雙人間	zh_ev_shuangrenjian
+795	zh_w_fangka	房卡	noun	travel	room key card	بطاقة الغرفة	fángkǎ		measure=张; hsk=5	zh_ev_fangka
+796	zh_w_gucheng	古城	noun	places	old town	المدينة القديمة	gǔchéng		measure=座; hsk=5	zh_ev_gucheng
+797	zh_w_jizhen	急诊	noun	health	emergency (department)	قسم الطوارئ	jízhěn		measure=none; hsk=5; trad=急診	zh_ev_jizhen
+798	zh_w_sushi	素食	noun	food	vegetarian food	طعام نباتي	sùshí		measure=none; hsk=6	zh_ev_sushi
+799	zh_w_wandian	晚点	adj	travel	delayed	متأخر (عن موعده)	wǎndiǎn		hsk=5; trad=晚點	zh_ev_wandian
+800	zh_w_yufa	语法	noun	school	grammar	قواعد اللغة	yǔfǎ		measure=none; hsk=4; trad=語法
+801	zh_w_shengdiao	声调	noun	school	tone (of a syllable)	نغمة	shēngdiào		measure=个; hsk=5; trad=聲調
+802	zh_w_pinyin	拼音	noun	school	pinyin	البينيين	pīnyīn		measure=none; hsk=4
+803	zh_w_wendu	温度	noun	weather	temperature	درجة الحرارة	wēndù		measure=none; hsk=4; trad=溫度
+804	zh_w_fangxiang	方向	noun	places	direction	اتجاه	fāngxiàng		measure=个; hsk=4
+805	zh_w_dizhi	地址	noun	places	address	عنوان	dìzhǐ		measure=个; hsk=4
+806	zh_w_aiqing	爱情	noun	feelings	love	حبّ (عاطفي)	àiqíng		measure=none; hsk=4; trad=愛情
+807	zh_w_meng	梦	noun	mind	dream	حلم	mèng		measure=个; hsk=4; trad=夢
+808	zh_w_heping	和平	noun	feelings	peace	سلام	hépíng		measure=none; hsk=5
+809	zh_w_xinqing	心情	noun	feelings	mood	مزاج	xīnqíng		measure=个; hsk=4
+810	zh_w_gongli	公里	measure	numbers	kilometre	كيلومتر	gōnglǐ		hsk=4
+811	zh_w_mi_metre	米	measure	numbers	metre	متر	mǐ		hsk=4
+812	zh_w_gongjin	公斤	measure	numbers	kilogram	كيلوغرام	gōngjīn		hsk=3
+813	zh_w_cesuo	厕所	noun	home	toilet	مرحاض	cèsuǒ		measure=个; hsk=4; trad=廁所
+814	zh_w_bing	冰	noun	weather	ice	ثلج، جليد	bīng		measure=块; hsk=4
+815	zh_w_zhiwu	植物	noun	nature	plant	نبات	zhíwù		measure=种; hsk=4
+816	zh_w_yezi	叶子	noun	nature	leaf	ورقة شجر	yè·zi		measure=片; hsk=4; trad=葉子
+817	zh_w_kongqi	空气	noun	nature	air	هواء	kōngqì		measure=none; hsk=4; trad=空氣
+818	zh_w_ruan	软	adj	descriptions	soft	ناعم، طريّ	ruǎn		hsk=5; trad=軟
+819	zh_w_chao	吵	adj	descriptions	noisy	صاخب	chǎo		hsk=4
+820	zh_w_xian	咸	adj	food	salty	مالح	xián		hsk=4; trad=鹹
+821	zh_w_suan	酸	adj	food	sour	حامض	suān		hsk=4
+822	zh_w_ku_bitter	苦	adj	food	bitter	مُرّ	kǔ		hsk=4
+823	zh_w_chou	丑	adj	descriptions	ugly	قبيح	chǒu		hsk=5; trad=醜
+824	zh_w_ben_stupid	笨	adj	descriptions	stupid, clumsy	غبي	bèn		hsk=4
+825	zh_w_limao	礼貌	adj	people	polite; politeness	مهذّب؛ أدب	lǐmào		hsk=4; trad=禮貌
+826	zh_w_chengshi_honest	诚实	adj	people	honest	صادق	chéngshí		hsk=4; trad=誠實
+827	zh_w_yonggan	勇敢	adj	people	brave	شجاع	yǒnggǎn		hsk=4
+828	zh_w_haixiu	害羞	adj	people	shy	خجول	hàixiū		hsk=4
+829	zh_w_jinzhang	紧张	adj	feelings	nervous	متوتّر	jǐnzhāng		hsk=4; trad=緊張
+830	zh_w_jidong	激动	adj	feelings	excited	متحمّس	jīdòng		hsk=4; trad=激動
+831	zh_w_wuliao	无聊	adj	feelings	bored, boring	مملّ	wúliáo		hsk=4; trad=無聊
+832	zh_w_jiaoao	骄傲	adj	feelings	proud	فخور	jiāo'ào		hsk=4; trad=驕傲
+833	zh_w_gudan	孤单	adj	feelings	lonely	وحيد	gūdān		hsk=5; trad=孤單
+834	zh_w_danshen	单身	adj	people	single	أعزب	dānshēn		hsk=5; trad=單身
+835	zh_w_liuxing	流行	adj	descriptions	popular, fashionable	رائج	liúxíng		hsk=4
+836	zh_w_xiandai	现代	adj	descriptions	modern	حديث	xiàndài		hsk=4; trad=現代
+837	zh_w_gulao	古老	adj	descriptions	ancient	عتيق	gǔlǎo		hsk=5
+838	zh_w_zhengchang	正常	adj	descriptions	normal	طبيعي	zhèngcháng		hsk=4
+839	zh_w_putong	普通	adj	descriptions	ordinary	عادي	pǔtōng		hsk=4
+840	zh_w_zhuyao	主要	adj	function	main	رئيسي	zhǔyào		hsk=3
+841	zh_w_biyao	必要	adj	function	necessary	ضروري	bìyào		hsk=4
+842	zh_w_youyong_useful	有用	adj	function	useful	مفيد	yǒuyòng		hsk=4
+843	zh_w_zhengque	正确	adj	school	correct	صحيح	zhèngquè		hsk=4; trad=正確
+844	zh_w_xiangtong	相同	adj	descriptions	the same	متماثل	xiāngtóng		hsk=4
+845	zh_w_jiji	积极	adj	feelings	positive, active	إيجابي، نشيط	jījí		hsk=4; trad=積極
+846	zh_w_qingsong	轻松	adj	feelings	relaxed, easy	مرتاح؛ سهل	qīngsōng		hsk=4; trad=輕鬆
+847	zh_w_ku_cool	酷	adj	descriptions	cool	رائع (عامية)	kù		hsk=5
+848	zh_w_kepa	可怕	adj	feelings	frightening, terrible	مخيف	kěpà		hsk=4
+849	zh_w_jingcai	精彩	adj	descriptions	wonderful, brilliant	رائع	jīngcǎi		hsk=4
+850	zh_w_kaixin	开心	adj	feelings	happy	سعيد	kāixīn		hsk=4; trad=開心
+851	zh_w_xingfu	幸福	adj	feelings	happy (in life)	سعيد (في حياته)	xìngfú		hsk=4
+852	zh_w_shiwang	失望	adj	feelings	disappointed	خائب الأمل	shīwàng		hsk=4
+853	zh_w_shangxin	伤心	adj	feelings	sad, heartbroken	حزين	shāngxīn		hsk=4; trad=傷心
+854	zh_w_gandong	感动	adj	feelings	moved, touched	متأثّر	gǎndòng		hsk=4; trad=感動
+855	zh_w_anquan	安全	adj	descriptions	safe	آمن	ānquán		hsk=4
+856	zh_w_xiaoxin	小心	adj	descriptions	careful	حذِر	xiǎoxīn		hsk=3
+857	zh_w_mianfei	免费	adj	shopping	free (of charge)	مجّاني	miǎnfèi		hsk=4; trad=免費
+858	zh_w_jinguan	尽管	conj	function	although	مع أنّ	jǐnguǎn		hsk=4; trad=儘管
+859	zh_w_chufei	除非	conj	function	unless	إلّا إذا	chúfēi		hsk=5
+860	zh_w_fanzheng	反正	adv	function	anyway	على أيّ حال	fǎnzhèng		hsk=5
+861	zh_w_ershi	而是	conj	function	but rather	بل	érshì		hsk=4
+862	zh_w_yexu	也许	adv	function	perhaps	ربما	yěxǔ		hsk=4; trad=也許
+863	zh_w_youqi	尤其	adv	function	especially	خصوصًا	yóuqí		hsk=4
+864	zh_w_zhenghao	正好	adv	function	just right, exactly	بالضبط، في الوقت المناسب	zhènghǎo		hsk=4
+865	zh_w_chabuduo	差不多	adv	function	almost, about	تقريبًا	chà·buduō		hsk=4
+866	zh_w_jihu	几乎	adv	function	almost	تقريبًا	jīhū		hsk=4; trad=幾乎
+867	zh_w_like	立刻	adv	time	immediately	فورًا	lìkè		hsk=5
+868	zh_w_zuijin	最近	adv	time	recently	مؤخرًا	zuìjìn		hsk=3
+869	zh_w_loushang	楼上	noun	home	upstairs	الطابق العلوي	lóushàng		measure=none; hsk=4; trad=樓上
+870	zh_w_louxia	楼下	noun	home	downstairs	الطابق السفلي	lóuxià		measure=none; hsk=4; trad=樓下
+871	zh_w_duimian	对面	noun	places	opposite	المقابل	duìmiàn		measure=none; hsk=4; trad=對面
+872	zh_w_daochu	到处	adv	places	everywhere	في كل مكان	dàochù		hsk=4; trad=到處
+873	zh_w_lingwai	另外	adv	function	in addition, besides	إضافة إلى ذلك	lìngwài		hsk=4
+874	zh_w_fouze	否则	conj	function	otherwise	وإلّا	fǒuzé		hsk=4; trad=否則
+875	zh_w_budan	不但	conj	function	not only	ليس فقط	búdàn		hsk=3
+876	zh_w_shenzhi	甚至	adv	function	even	حتى	shènzhì		hsk=4
+877	zh_w_yuanlai	原来	adv	function	so it turns out; originally	تبيّن أنّ؛ في الأصل	yuánlái		hsk=4; trad=原來
+878	zh_w_benlai	本来	adv	function	originally, at first	في الأصل	běnlái		hsk=4; trad=本來
+879	zh_w_gankuai	赶快	adv	time	quickly, hurry up	بسرعة	gǎnkuài		hsk=5; trad=趕快
+880	zh_w_ke_quarter	刻	measure	numbers	quarter (of an hour)	ربع ساعة	kè		hsk=3
+881	zh_w_fen_portion	份	measure	numbers	portion, copy	حصة، نسخة	fèn		hsk=4
+882	zh_w_zuo_measure	座	measure	numbers	(measure word for buildings, mountains)	مميّز للمباني والجبال	zuò		hsk=4
+883	zh_w_ba_measure	把	measure	numbers	(measure word for chairs, knives)	مميّز للأشياء ذات المقبض	bǎ		hsk=3
+884	zh_w_pian	片	measure	numbers	slice, piece	شريحة، قطعة	piàn		hsk=4
+885	zh_w_duo_measure	朵	measure	numbers	(measure word for flowers, clouds)	مميّز للأزهار والغيوم	duǒ		hsk=5
+886	zh_w_ke_measure	颗	measure	numbers	(measure word for small round things)	مميّز للأشياء الصغيرة المستديرة	kē		hsk=5; trad=顆
+887	zh_w_chang_measure	场	measure	numbers	(measure word for games, films, events)	مميّز للمباريات والأحداث	chǎng		hsk=4; trad=場
+888	zh_w_pian_article	篇	measure	numbers	(measure word for articles, essays)	مميّز للمقالات	piān		hsk=4
+889	zh_w_jian_room	间	measure	numbers	(measure word for rooms)	مميّز للغرف	jiān		hsk=4; trad=間
+890	zh_w_suo	所	measure	numbers	(measure word for schools, houses)	مميّز للمدارس والبيوت	suǒ		hsk=4
+891	zh_w_feng_measure	封	measure	numbers	(measure word for letters)	مميّز للرسائل	fēng		hsk=4
+892	zh_w_shou_song	首	measure	numbers	(measure word for songs, poems)	مميّز للأغاني والقصائد	shǒu		hsk=4
+893	zh_w_tao	套	measure	numbers	set; (measure word for flats)	طقم؛ مميّز للشقق	tào		hsk=5
+894	zh_w_jie_period	节	measure	numbers	(measure word for lessons)	مميّز للحصص	jié		hsk=4; trad=節
+895	zh_w_yilu_pingan	一路平安	phrase	greetings	have a safe trip	رحلة سالمة	yílù píng'ān		hsk=4
+896	zh_w_gongxi	恭喜	interj	greetings	congratulations	مبروك	gōngxǐ		hsk=4
+897	zh_w_zhuhe	祝贺	verb	greetings	to congratulate	يهنّئ	zhùhè		hsk=4; trad=祝賀
+898	zh_w_xinku_le	辛苦了	phrase	greetings	thanks for your hard work	شكرًا على تعبك	xīnkǔ ·le		hsk=4
+899	zh_w_suibian	随便	adv	function	as you like, casual	كما تشاء	suíbiàn		hsk=4; trad=隨便
+900	zh_w_ganbei	干杯	interj	food	cheers!	في صحتك!	gānbēi		hsk=4; trad=乾杯
