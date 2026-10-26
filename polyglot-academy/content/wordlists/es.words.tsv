@@ -664,7 +664,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 663	es_w_molestar	molestar	verb	feelings	to bother	يزعج		molesto, molestas, molesta, molestamos, molestan, molesté, molestó, molestado, molestando, molestaron, molestaste, molestes, moleste
 664	es_w_sorprender	sorprender	verb	feelings	to surprise	يفاجئ		sorprendo, sorprendes, sorprende, sorprendemos, sorprenden, sorprendí, sorprendió, sorprendido, sorprendiendo, sorprendieron, sorprendiste, sorprendimos, sorprendas, sorprenda
 665	es_w_cuidar	cuidar	verb	people	to look after	يعتني بـ		cuido, cuidas, cuida, cuidamos, cuidan, cuidé, cuidó, cuidado, cuidando, cuidaron, cuidaste, cuides, cuide
-666	es_w_acompañar	acompañar	verb	people	to go with	يرافق		acompaño, acompañas, acompaña, acompañamos, acompañan, acompañé, acompañó, acompañado, acompañando, acompañaron, acompañaste, acompañes, acompañe
+666	es_w_acompanar	acompañar	verb	people	to go with	يرافق		acompaño, acompañas, acompaña, acompañamos, acompañan, acompañé, acompañó, acompañado, acompañando, acompañaron, acompañaste, acompañes, acompañe
 667	es_w_avisar	avisar	verb	communication	to let know, to warn	يُبلغ، ينبّه		aviso, avisas, avisa, avisamos, avisan, avisé, avisó, avisado, avisando, avísame, avisaron, avisaste, avises, avise
 668	es_w_faltar	faltar	verb	function	to be missing	ينقص		falto, faltas, falta, faltamos, faltan, falté, faltó, faltado, faltando, faltaron, faltaste, faltes, falte
 669	es_w_tardar	tardar	verb	time	to take (time)	يستغرق		tardo, tardas, tarda, tardamos, tardan, tardé, tardó, tardado, tardando, tardaron, tardaste, tardes, tarde
