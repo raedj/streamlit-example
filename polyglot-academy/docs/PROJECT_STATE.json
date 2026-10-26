@@ -182,9 +182,10 @@
       "ar": {
         "levels": [
           1,
-          2
+          2,
+          3
         ],
-        "last_rank": 600
+        "last_rank": 900
       },
       "tr": {
         "levels": [
@@ -209,7 +210,7 @@
       }
     },
     "resume_at": {
-      "language": "ar",
+      "language": "tr",
       "level": 3,
       "next_rank": 601,
       "note": "Level 3 in progress (order: en, es, fr, zh, ar, tr, ur, ms); tools/scan_wordlist.py <lang> --level 3 must report 0 unknown before committing."
