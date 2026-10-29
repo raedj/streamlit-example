@@ -2999,3 +2999,303 @@ rank	sentence	en	ar	names
 2098	Burası çok kalabalık, başka yerde yemek yemek istiyorum.	It's very crowded here, I want to eat elsewhere.	المكان مزدحم جدًا، أريد أن آكل في مكان آخر.
 2099	Yarın sabah köye gideceğiz.	We'll go to the village tomorrow morning.	سنذهب إلى القرية صباح الغد.
 2100	Bu müzeyi iki kez ziyaret ettim.	I have visited this museum twice.	زرت هذا المتحف مرّتين.
+2101	Küçük kardeşim yeni oyuncağımı kıskandı.	My little brother was jealous of my new toy.	غار أخي الصغير من لعبتي الجديدة.
+2102	Çocuk hatasından çok utandı.	The child was very ashamed of his mistake.	خجل الطفل كثيرًا من خطئه.
+2103	Ona bağırdım ve sonra pişman oldum.	I shouted at him and then regretted it.	صرخت عليه ثمّ ندمت.
+2104	Dedem kendi kendine bir şeyler mırıldanıyor.	My grandfather is mumbling something to himself.	جدّي يتمتم بشيء لنفسه.
+2105	Heyecanlanınca biraz kekeliyor ve yavaş konuşuyor.	When he gets excited he stammers a little and speaks slowly.	عندما يتحمّس يتلعثم قليلًا ويتكلّم ببطء.
+2106	Sıcakta bir kadın otobüste bayıldı.	A woman fainted on the bus in the heat.	أغمي على امرأة في الحافلة من الحرّ.
+2107	Annem hastalıktan sonra hızlıca iyileşti.	My mother recovered quickly after the illness.	تعافت أمّي بسرعة بعد المرض.
+2108	Annem salata için havuç rendeliyor.	My mother is grating carrots for the salad.	أمّي تبشر الجزر للسلطة.
+2109	Etleri soğanla birlikte kavurdum.	I sautéed the meat together with onions.	حمّصت اللحم مع البصل.
+2110	Kahvaltı için iki yumurta haşladım.	I boiled two eggs for breakfast.	سلقت بيضتين للفطور.
+2111	Makarnayı pişirdikten sonra süz.	Drain the pasta after cooking it.	صفِّ المعكرونة بعد طبخها.
+2112	Ekmek için hamuru iyice yoğurmak lazım.	You need to knead the dough well for bread.	يجب عجن العجين جيدًا للخبز.
+2113	Köylüler tarladaki buğdayı biçti.	The villagers reaped the wheat in the field.	حصد القرويّون القمح في الحقل.
+2114	Kediler geceleri bahçede avlanır.	Cats hunt in the garden at night.	تصطاد القطط في الحديقة ليلًا.
+2115	Gölde iki saat kürek çektik.	We rowed on the lake for two hours.	جدّفنا في البحيرة ساعتين.
+2116	Yılan taşların arasında sürünüyordu.	The snake was crawling between the stones.	كانت الأفعى تزحف بين الحجارة.
+2117	Balık sudan havaya sıçradı.	The fish leapt out of the water into the air.	قفزت السمكة من الماء إلى الهواء.
+2118	Yaşlı adam merdivende biraz sendeledi.	The old man staggered a little on the stairs.	ترنّح الرجل العجوز قليلًا على الدرج.
+2119	Karanlıkta bir taşa tökezledim.	I stumbled over a stone in the dark.	تعثّرت بحجر في الظلام.
+2120	Teyzemi dün akşam havalimanında uğurladık.	We saw my aunt off at the airport last night.	ودّعنا خالتي في المطار مساء أمس.
+2121	Patron tembel işçiyi işten kovdu.	The boss fired the lazy worker.	طرد ربّ العمل العامل الكسول.
+2122	Küçük gelen ayakkabıyı dükkâna iade ettim.	I returned the shoes that were too small to the shop.	أرجعت الحذاء الصغير إلى المتجر.
+2123	Kütüphaneden üç kitap ödünç aldım.	I borrowed three books from the library.	استعرت ثلاثة كتب من المكتبة.
+2124	Arkadaşıma bisikletimi ödünç verdim.	I lent my bike to my friend.	أعرت دراجتي لصديقي.
+2125	Berber sakalımı biraz kırptı.	The barber trimmed my beard a little.	قصّ الحلّاق لحيتي قليلًا.
+2126	Babam resmi asmak için duvarı deldi.	My father drilled the wall to hang the picture.	ثقب أبي الجدار ليعلّق الصورة.
+2127	Öğrenciler şiiri ezberlemek zorunda.	The students have to memorise the poem.	على الطلاب حفظ القصيدة.
+2128	Takım sonunda yenilgiyi kabullendi.	The team finally came to terms with the defeat.	تقبّل الفريق الهزيمة في النهاية.
+2129	Annem akşam yemeği için pırasa pişirdi.	My mother cooked leeks for dinner.	طبخت أمّي الكرّاث للعشاء.
+2130	Enginar ilkbaharda çok lezzetli olur.	Artichokes are very tasty in spring.	الخرشوف لذيذ جدًا في الربيع.
+2131	Fırında karnabahar yapmayı çok severim.	I really love making cauliflower in the oven.	أحبّ كثيرًا طبخ القرنبيط في الفرن.
+2132	Salataya biraz turp ekledim.	I added some radish to the salad.	أضفت بعض الفجل إلى السلطة.
+2133	Pancar suyu sağlık için faydalıdır.	Beetroot juice is good for your health.	عصير الشمندر مفيد للصحّة.
+2134	Çocuklar bezelye yemeyi sevmiyor.	The children don't like eating peas.	الأطفال لا يحبّون أكل البازلاء.
+2135	Bugün öğlen bulgur pilavı yedik.	We ate bulgur pilaf at noon today.	أكلنا برغلًا على الغداء اليوم.
+2136	Yoğurda biraz dereotu koy.	Put a little dill in the yoghurt.	ضع قليلًا من الشبت في اللبن.
+2137	Kışın evde turşu yaparız.	We make pickles at home in winter.	نصنع المخلّل في البيت في الشتاء.
+2138	Kahvaltıda ekmeği pekmeze batırırım.	At breakfast I dip bread in grape molasses.	في الفطور أغمس الخبز في الدبس.
+2139	Annem misafirler için helva yaptı.	My mother made halva for the guests.	صنعت أمّي الحلاوة للضيوف.
+2140	Kahvenin yanında bir lokum verdiler.	They gave a Turkish delight with the coffee.	قدّموا راحة الحلقوم مع القهوة.
+2141	Yazın soğuk ayran içmek çok güzel.	Drinking cold ayran in summer is lovely.	شرب العيران البارد في الصيف رائع.
+2142	Babaannem bize kurabiye pişirdi.	My grandmother baked biscuits for us.	خبزت جدّتي لنا البسكويت.
+2143	Annemin mantısı çok lezzetli.	My mother's dumplings are very tasty.	مانطي أمّي لذيذ جدًا.
+2144	Akşam yemeğinde köfte ve pilav var.	There are meatballs and rice for dinner.	العشاء كفتة وأرز.
+2145	Annem biber dolması yapmayı çok iyi bilir.	My mother knows how to make stuffed peppers very well.	أمّي تعرف جيدًا كيف تصنع الفلفل المحشي.
+2146	Oğlak annesinin yanında oynuyor.	The young goat is playing beside its mother.	يلعب الجدي قرب أمّه.
+2147	İnek dün gece bir buzağı doğurdu.	The cow gave birth to a calf last night.	ولدت البقرة عجلًا ليلة أمس.
+2148	Tavuğun arkasında sarı civcivler yürüyor.	Yellow chicks are walking behind the hen.	صيصان صفراء تمشي خلف الدجاجة.
+2149	Köstebek bahçede çok delik açtı.	The mole dug lots of holes in the garden.	حفر الخلد حفرًا كثيرة في الحديقة.
+2150	Şahin gökyüzünde yavaşça dönüyordu.	The falcon was slowly circling in the sky.	كان الصقر يحوم ببطء في السماء.
+2151	Leylekler her ilkbahar köyümüze gelir.	Storks come to our village every spring.	تأتي اللقالق إلى قريتنا كلّ ربيع.
+2152	Martılar geminin arkasından uçuyor.	Seagulls are flying behind the ship.	النوارس تطير خلف السفينة.
+2153	Ahtapotun sekiz uzun kolu vardır.	The octopus has eight long arms.	للأخطبوط ثماني أذرع طويلة.
+2154	Kumsalda küçük bir yengeç bulduk.	We found a small crab on the beach.	وجدنا سلطعونًا صغيرًا على الشاطئ.
+2155	Denizde yüzerken denizanasına dikkat et.	Watch out for jellyfish when swimming in the sea.	انتبه لقناديل البحر عندما تسبح.
+2156	Taşın altında bir akrep vardı.	There was a scorpion under the stone.	كان هناك عقرب تحت الحجر.
+2157	Elimin üstünde kırmızı bir uğur böceği yürüyor.	A red ladybird is walking on my hand.	دعسوقة حمراء تمشي على يدي.
+2158	Gölün üstünde mavi bir yusufçuk uçuyor.	A blue dragonfly is flying over the lake.	يعسوب أزرق يطير فوق البحيرة.
+2159	Ormanda bir geyik gördük.	We saw a deer in the forest.	رأينا غزالًا في الغابة.
+2160	Dağdaki şelale çok yüksek ve güzel.	The waterfall on the mountain is very high and beautiful.	الشلّال في الجبل عالٍ وجميل جدًا.
+2161	Bataklıkta çok sivrisinek var.	There are lots of mosquitoes in the swamp.	في المستنقع بعوض كثير.
+2162	Koyunlar dağın yamacında otluyor.	The sheep are grazing on the mountain slope.	الخراف ترعى على منحدر الجبل.
+2163	Sabah erkenden kumsalda yürüdük.	We walked on the sandy beach early in the morning.	مشينا على الشاطئ الرملي في الصباح الباكر.
+2164	Bu sahilde gelgit çok güçlüdür.	The tide is very strong on this coast.	المدّ والجزر قويّ جدًا على هذا الساحل.
+2165	Bu denizdeki mercanlar çok renkli.	The corals in this sea are very colourful.	المرجان في هذا البحر ملوّن جدًا.
+2166	Kızım kumsalda deniz kabuğu topluyor.	My daughter is collecting seashells on the beach.	ابنتي تجمع الأصداف على الشاطئ.
+2167	Çocuk göle küçük bir çakıl attı.	The child threw a small pebble into the lake.	رمى الطفل حصاة صغيرة في البحيرة.
+2168	Yağmurdan sonra ayakkabılarım çamur oldu.	My shoes got muddy after the rain.	اتّسخ حذائي بالوحل بعد المطر.
+2169	Yanardağ yüz yıl önce patlamış.	The volcano erupted a hundred years ago.	ثار البركان قبل مئة عام.
+2170	Öğleden sonra çok büyük bir sağanak yağdı.	A very big downpour fell in the afternoon.	هطلت زخّة مطر كبيرة جدًا بعد الظهر.
+2171	Sabah çimenlerin üstünde çiy vardı.	There was dew on the grass in the morning.	كان الندى على العشب في الصباح.
+2172	Yağmurdan sonra gökyüzünde bir gökkuşağı çıktı.	A rainbow appeared in the sky after the rain.	ظهر قوس قزح في السماء بعد المطر.
+2173	Nehrin kenarında büyük bir söğüt ağacı var.	There is a big willow tree by the river.	على ضفّة النهر شجرة صفصاف كبيرة.
+2174	Bu meşe ağacı yüz yaşında.	This oak tree is a hundred years old.	عمر شجرة البلّوط هذه مئة عام.
+2175	Taşların üstü yeşil yosunla kaplı.	The stones are covered with green moss.	الحجارة مغطّاة بطحلب أخضر.
+2176	Gülün dikeni parmağıma battı.	The rose's thorn pricked my finger.	وخزت شوكة الوردة إصبعي.
+2177	Atlar ahırda saman yiyor.	The horses are eating hay in the stable.	الخيول تأكل القشّ في الإسطبل.
+2178	İnekler gece ahırda uyur.	The cows sleep in the barn at night.	تنام الأبقار في الحظيرة ليلًا.
+2179	Çoban koyunları otlağa çıkardı.	The shepherd took the sheep out to the pasture.	أخرج الراعي الخراف إلى المرعى.
+2180	Tepede eski bir değirmen var.	There is an old mill on the hill.	على التلّ طاحونة قديمة.
+2181	Nehrin üstüne büyük bir baraj yaptılar.	They built a big dam on the river.	بنوا سدًّا كبيرًا على النهر.
+2182	Gece gemiler fenerin ışığını görür.	At night ships see the lighthouse's light.	في الليل ترى السفن ضوء المنارة.
+2183	Gemi yavaşça iskeleye geldi.	The ship slowly came to the pier.	وصلت السفينة ببطء إلى الرصيف.
+2184	Bayramda dedemin mezarını ziyaret etmek için mezarlığa gittik.	At the holiday we went to the cemetery to visit my grandfather's grave.	في العيد ذهبنا إلى المقبرة لزيارة قبر جدّي.
+2185	Şehrin üstünde eski bir kale var.	There is an old castle above the city.	فوق المدينة قلعة قديمة.
+2186	Caminin kubbesi çok büyük ve güzel.	The mosque's dome is very big and beautiful.	قبّة المسجد كبيرة وجميلة جدًا.
+2187	Bu caminin dört minaresi var.	This mosque has four minarets.	لهذا المسجد أربع مآذن.
+2188	İkinci kavşakta sağa dön.	Turn right at the second junction.	انعطف يمينًا عند التقاطع الثاني.
+2189	Otoyolda çok hızlı gitme.	Don't go too fast on the motorway.	لا تسرع كثيرًا على الطريق السريع.
+2190	Ormanda pusula ile yolumuzu bulduk.	We found our way in the forest with a compass.	وجدنا طريقنا في الغابة بالبوصلة.
+2191	Geçen yaz adaya feribotla gittik.	Last summer we went to the island by ferry.	في الصيف الماضي ذهبنا إلى الجزيرة بالعبّارة.
+2192	Limanda çok güzel yatlar var.	There are very beautiful yachts in the harbour.	في الميناء يخوت جميلة جدًا.
+2193	Şoför birden frene bastı.	The driver suddenly hit the brake.	ضغط السائق على المكبح فجأة.
+2194	Yolda arabanın lastiği patladı.	The car's tyre burst on the road.	انفجر إطار السيارة في الطريق.
+2195	Babam direksiyonu bana verdi.	My father let me take the wheel.	أعطاني أبي المقود.
+2196	Arabada her zaman emniyet kemerini bağla.	Always fasten your seat belt in the car.	اربط حزام الأمان دائمًا في السيارة.
+2197	Yumurtaları küçük tavada pişirdim.	I cooked the eggs in the small frying pan.	طبخت البيض في المقلاة الصغيرة.
+2198	Çorbayı kepçe ile tabaklara koy.	Serve the soup into the plates with the ladle.	اسكب الحساء في الصحون بالمغرفة.
+2199	Çayı bardağa süzgeçten dök.	Pour the tea into the glass through the strainer.	اسكب الشاي في الكأس عبر المصفاة.
+2200	Demlikte taze çay var.	There is fresh tea in the teapot.	في الإبريق شاي طازج.
+2201	Peyniri rende ile rendele.	Grate the cheese with the grater.	ابشر الجبن بالمبشرة.
+2202	Babaannem hamuru oklava ile açıyor.	My grandmother rolls out the dough with a rolling pin.	جدّتي تفرد العجين بالشوبك.
+2203	Çiçekleri vazoya koy lütfen.	Please put the flowers in the vase.	ضع الأزهار في المزهرية من فضلك.
+2204	Masada eski bir gümüş şamdan var.	There is an old silver candlestick on the table.	على الطاولة شمعدان فضّي قديم.
+2205	Salonda büyük bir avize asılı.	A big chandelier hangs in the living room.	في الصالون ثريّا كبيرة معلّقة.
+2206	Ceketini kapının arkasındaki askıya as.	Hang your jacket on the hanger behind the door.	علّق سترتك على العلّاقة خلف الباب.
+2207	Kışın kalın bir yorganla uyurum.	In winter I sleep with a thick quilt.	في الشتاء أنام بلحاف سميك.
+2208	Tabakları bulaşık makinesine koy.	Put the plates in the dishwasher.	ضع الصحون في الجلّاية.
+2209	Bacadan beyaz duman çıkıyor.	White smoke is coming out of the chimney.	يخرج دخان أبيض من المدخنة.
+2210	Eski oyuncaklarımız tavan arasında.	Our old toys are in the attic.	ألعابنا القديمة في العلّية.
+2211	Bugün anahtarlığımı evde unuttum.	Today I forgot my keyring at home.	اليوم نسيت علّاقة مفاتيحي في البيت.
+2212	Sandalyenin bir vidası eksik.	The chair is missing a screw.	ينقص الكرسي برغي.
+2213	Bana küçük tornavidayı verir misin?	Can you give me the small screwdriver?	هل تعطيني المفكّ الصغير؟
+2214	Bu kalın ipi pense ile kestim.	I cut this thick string with the pliers.	قطعت هذا الخيط السميك بالكمّاشة.
+2215	Dedem baltayla odun kesiyor.	My grandfather is chopping wood with an axe.	جدّي يقطع الحطب بالفأس.
+2216	Duvarı delmek için matkap lazım.	You need a drill to make a hole in the wall.	تحتاج إلى مثقب لثقب الجدار.
+2217	Kırık vazoyu tutkalla yapıştırdım.	I glued the broken vase with glue.	ألصقت المزهرية المكسورة بالغراء.
+2218	Boyamadan önce kapıyı zımparala.	Sand the door before painting it.	اصقل الباب بالصنفرة قبل دهنه.
+2219	Bu yıl maaşıma zam geldi.	I got a pay rise this year.	حصلت على زيادة في راتبي هذا العام.
+2220	Dedem iki yıl önce emekli oldu.	My grandfather retired two years ago.	تقاعد جدّي قبل عامين.
+2221	Ofiste yeni bir stajyer var.	There is a new intern in the office.	في المكتب متدرّب جديد.
+2222	Mesai saat beşte bitiyor.	Working hours end at five o'clock.	ينتهي الدوام في الساعة الخامسة.
+2223	Pazardaki tezgâhlarda taze meyve var.	There is fresh fruit on the stalls in the market.	على بسطات السوق فاكهة طازجة.
+2224	Çoban koyunlarıyla dağdan indi.	The shepherd came down the mountain with his sheep.	نزل الراعي من الجبل مع خرافه.
+2225	Bahçıvan her sabah çiçekleri suluyor.	The gardener waters the flowers every morning.	يسقي البستاني الأزهار كلّ صباح.
+2226	Saçımı kestirmek için berbere gittim.	I went to the barber to get my hair cut.	ذهبت إلى الحلّاق لأقصّ شعري.
+2227	Marangoz bize yeni bir masa yaptı.	The carpenter made us a new table.	صنع لنا النجّار طاولة جديدة.
+2228	Musluk çalışmıyor, tesisatçı çağırmamız lazım.	The tap isn't working, we need to call a plumber.	الحنفية لا تعمل، يجب أن نستدعي السبّاك.
+2229	Elektrikçi lambayı tamir etti.	The electrician repaired the lamp.	أصلح الكهربائي المصباح.
+2230	Caminin önünde bir dilenci oturuyor.	A beggar is sitting in front of the mosque.	يجلس متسوّل أمام المسجد.
+2231	Kazayı gören bir tanık var.	There is a witness who saw the accident.	هناك شاهد رأى الحادث.
+2232	Kayınvalidem bu hafta bize geliyor.	My mother-in-law is coming to us this week.	حماتي قادمة إلينا هذا الأسبوع.
+2233	Komşumuzun ikiz kızları var.	Our neighbour has twin daughters.	لجارنا ابنتان توأم.
+2234	Teyzem genç yaşta dul kaldı.	My aunt was widowed at a young age.	ترمّلت خالتي في سنّ صغيرة.
+2235	Hikâyedeki tilki çok kurnazdı.	The fox in the story was very cunning.	كان الثعلب في القصّة ماكرًا جدًا.
+2236	Küçük kardeşim çok yaramaz bir çocuk.	My little brother is a very naughty child.	أخي الصغير طفل شقيّ جدًا.
+2237	Kibirli insanları kimse sevmez.	Nobody likes arrogant people.	لا أحد يحبّ المتكبّرين.
+2238	Korkak olma, onunla konuş.	Don't be a coward, talk to him.	لا تكن جبانًا، تحدّث معه.
+2239	Dikkat et, yer çok kaygan.	Be careful, the floor is very slippery.	انتبه، الأرض زلقة جدًا.
+2240	Ellerim baldan yapışkan oldu.	My hands got sticky from the honey.	صارت يداي لزجتين من العسل.
+2241	Bu bardaklar çok kırılgan, dikkatli ol.	These glasses are very fragile, be careful.	هذه الكؤوس هشّة جدًا، كن حذرًا.
+2242	Gözlüksüz her şey bulanık görünüyor.	Without glasses everything looks blurry.	بدون نظّارة يبدو كلّ شيء ضبابيًا.
+2243	Yüzün çok solgun, hasta mısın?	Your face is very pale, are you ill?	وجهك شاحب جدًا، هل أنت مريض؟
+2244	Gözleri yorgun ve donuk görünüyordu.	His eyes looked tired and dull.	بدت عيناه متعبتين وباهتتين.
+2245	Eski kitaplar çok tozlu.	The old books are very dusty.	الكتب القديمة مغبرّة جدًا.
+2246	Çocuklar çamurlu ayakkabılarla içeri girdi.	The children came in with muddy shoes.	دخل الأطفال بأحذية موحلة.
+2247	Bahçe kapısı çok paslı.	The garden gate is very rusty.	بوّابة الحديقة صدئة جدًا.
+2248	Gömleğin çok buruşuk, ütüle.	Your shirt is very wrinkled, iron it.	قميصك مجعّد جدًا، اكوِه.
+2249	Eski pantolonum dizden yırtık.	My old trousers are torn at the knee.	بنطالي القديم ممزّق عند الركبة.
+2250	Bu vida biraz gevşek.	This screw is a bit loose.	هذا البرغي مرتخٍ قليلًا.
+2251	Bu topraklar çok bereketli.	This land is very fertile.	هذه الأرض خصبة جدًا.
+2252	Öğle yemeğinden sonra hep uykulu olurum.	I'm always sleepy after lunch.	أكون دائمًا نعسانًا بعد الغداء.
+2253	Kapıyı iki kez hafifçe çaldı.	He knocked gently on the door twice.	طرق الباب برفق مرّتين.
+2254	Bebek uyuyor, kapıyı yavaşça kapat.	The baby is sleeping, close the door slowly.	الطفل نائم، أغلق الباب ببطء.
+2255	Eski arkadaşımı çarşıda tesadüfen gördüm.	I saw my old friend in the market by chance.	رأيت صديقي القديم في السوق بالصدفة.
+2256	Bunu bilerek yapmadım, özür dilerim.	I didn't do it on purpose, I'm sorry.	لم أفعل ذلك عمدًا، أنا آسف.
+2257	Yanlışlıkla senin çantanı aldım.	I took your bag by mistake.	أخذت حقيبتك خطأً.
+2258	Çocuklar gizlice pastadan yediler.	The children secretly ate some of the cake.	أكل الأطفال من الكعكة سرًّا.
+2259	Küçük fare peyniri kemiriyor.	The little mouse is gnawing the cheese.	الفأر الصغير يقضم الجبن.
+2260	Kuşlar yerdeki ekmeği gagalıyor.	The birds are pecking at the bread on the ground.	الطيور تنقر الخبز على الأرض.
+2261	Kedi kapının önünde miyavlıyor.	The cat is meowing in front of the door.	القطّة تموء أمام الباب.
+2262	Aslan kafesinde yüksek sesle kükredi.	The lion roared loudly in its cage.	زأر الأسد بصوت عالٍ في قفصه.
+2263	Bir sinek kulağımın yanında vızıldıyor.	A fly is buzzing next to my ear.	ذبابة تطنّ قرب أذني.
+2264	Kedi yanımda mutlu mutlu mırlıyor.	The cat is happily purring beside me.	القطّة تخرخر بسعادة بجانبي.
+2265	Sabahları kuşlar ağaçta ötüyor.	In the mornings the birds sing in the tree.	في الصباح تغرّد الطيور على الشجرة.
+2266	Köylü kadın her sabah ineği sağıyor.	The village woman milks the cow every morning.	تحلب المرأة القروية البقرة كلّ صباح.
+2267	Atlar tarlada sakin sakin otluyor.	The horses are calmly grazing in the field.	الخيول ترعى بهدوء في الحقل.
+2268	Çocuk köyde kazları güdüyor.	The boy herds the geese in the village.	الولد يرعى الإوزّ في القرية.
+2269	Tohumlar bir haftada filizlendi.	The seeds sprouted in a week.	نبتت البذور في أسبوع.
+2270	Bahçedeki elma ağacı çiçeklendi.	The apple tree in the garden has blossomed.	أزهرت شجرة التفّاح في الحديقة.
+2271	Yazın bu dere tamamen kuruyor.	In summer this stream dries up completely.	في الصيف يجفّ هذا الجدول تمامًا.
+2272	Sepetteki elmaların hepsi çürümüş.	All the apples in the basket have rotted.	تعفّن كلّ التفّاح في السلّة.
+2273	Yağmurda kalan bisiklet paslandı.	The bike left in the rain went rusty.	صدئت الدراجة التي بقيت تحت المطر.
+2274	Sıcak banyodan sonra ayna buğulandı.	The mirror steamed up after the hot bath.	تغبّشت المرآة بعد الحمّام الساخن.
+2275	Şemsiyem yoktu, iyice ıslandım.	I had no umbrella, I got soaked.	لم تكن معي مظلّة، فتبلّلت تمامًا.
+2276	Gece gökyüzünde yıldızlar parıldıyor.	The stars sparkle in the sky at night.	النجوم تتلألأ في السماء ليلًا.
+2277	Eski kapı açılırken gıcırdıyor.	The old door creaks when it opens.	الباب القديم يصرّ عند فتحه.
+2278	Konserden sonra kulaklarım hâlâ çınlıyor.	My ears are still ringing after the concert.	أذناي ما زالتا ترنّان بعد الحفلة.
+2279	Kolun kaşınıyor ama sakın kaşıma.	Your arm itches, but don't scratch it.	ذراعك تحكّك، لكن لا تحكّها أبدًا.
+2280	Bebek yemekten sonra hıçkırıyor.	The baby hiccups after eating.	الطفل يشهق بعد الأكل.
+2281	Babam geceleri çok yüksek sesle horluyor.	My father snores very loudly at night.	أبي يشخر بصوت عالٍ جدًا في الليل.
+2282	Düştükten sonra dizim morardı.	My knee bruised after I fell.	ازرقّت ركبتي بعد أن وقعت.
+2283	Maçta ayak bileğimi burktum.	I sprained my ankle in the match.	لويت كاحلي في المباراة.
+2284	Düştükten sonra ayak bileğim şişti.	My ankle swelled after I fell.	انتفخ كاحلي بعد أن وقعت.
+2285	Hemşire bebeği bugün aşıladı.	The nurse vaccinated the baby today.	طعّمت الممرّضة الطفل اليوم.
+2286	Doktor yaralı kolu sargıladı.	The doctor bandaged the injured arm.	ضمّد الطبيب الذراع المصابة.
+2287	Salata için domatesleri doğra.	Chop the tomatoes for the salad.	اقطع الطماطم للسلطة.
+2288	Elmaları soyup küçük parçalara kes.	Peel the apples and cut them into small pieces.	قشّر التفّاح وقطّعه قطعًا صغيرة.
+2289	Pastanın üstüne biraz şeker serp.	Sprinkle a little sugar on the cake.	رشّ قليلًا من السكّر على الكعكة.
+2290	Annem evde yoğurt mayalıyor.	My mother makes yoghurt at home.	أمّي تخمّر اللبن في البيت.
+2291	Balığı pişirmeden önce tuzla.	Salt the fish before cooking it.	ملّح السمك قبل طبخه.
+2292	Mutfaktaki musluktan su damlıyor.	Water is dripping from the kitchen tap.	الماء يقطر من حنفية المطبخ.
+2293	Süt ocakta kaynadı ve taştı.	The milk boiled and spilled over on the stove.	غلى الحليب على الموقد وفاض.
+2294	Yağmur yağınca çatıdan su sızıyor.	When it rains, water leaks from the roof.	عندما تمطر يتسرّب الماء من السقف.
+2295	Banyodaki lavabo yine tıkandı.	The washbasin in the bathroom got blocked again.	انسدّت مغسلة الحمّام مرّة أخرى.
+2296	Halıyı sabah balkonda silkeledim.	I shook out the carpet on the balcony this morning.	نفضت السجّادة في الشرفة صباحًا.
+2297	Sabahları odayı havalandırmak lazım.	You should air out the room in the mornings.	يجب تهوية الغرفة في الصباح.
+2298	Çocuk bize el salladı.	The child waved to us.	لوّح لنا الطفل بيده.
+2299	Çocuk annesinin kolunu çekiştiriyor.	The child is tugging at his mother's arm.	الطفل يشدّ ذراع أمّه.
+2300	Arkadaşım beni dirseğiyle hafifçe iteledi.	My friend nudged me gently with his elbow.	دفعني صديقي برفق بمرفقه.
+2301	Kedi masadaki bardağı devirdi.	The cat knocked over the glass on the table.	قلبت القطّة الكأس على الطاولة.
+2302	Eski boyayı duvardan kazıdık.	We scraped the old paint off the wall.	كشطنا الدهان القديم عن الجدار.
+2303	Dedem tahtadan küçük bir kuş oydu.	My grandfather carved a little bird out of wood.	نحت جدّي طائرًا صغيرًا من الخشب.
+2304	Annem pantolonumun dizini yamadı.	My mother patched the knee of my trousers.	رقّعت أمّي ركبة بنطالي.
+2305	Soğuk var, ceketini düğmele.	It's cold, button up your jacket.	الجوّ بارد، زرّر سترتك.
+2306	Abim beni okulda hep kollar.	My older brother always looks out for me at school.	أخي الأكبر يرعاني دائمًا في المدرسة.
+2307	Onu kışkırtma, sonra kızar.	Don't provoke him, he'll get angry.	لا تستفزّه، سيغضب.
+2308	Arkadaşlarıyla alay etmek kötü bir şey.	Mocking your friends is a bad thing.	السخرية من الأصدقاء أمر سيّئ.
+2309	Komşular bütün gün dedikodu yapıyor.	The neighbours gossip all day long.	الجيران يثرثرون عن الناس طوال اليوم.
+2310	Yeni arabasıyla çok övünüyor.	He boasts a lot about his new car.	يتباهى كثيرًا بسيّارته الجديدة.
+2311	Kardeşim bana iki gündür küs.	My sister hasn't spoken to me for two days.	أختي مخاصمتي منذ يومين.
+2312	Doğum gününü unuttum, o yüzden bana darıldı.	I forgot his birthday, so he took offence.	نسيت عيد ميلاده، لذلك زعل منّي.
+2313	Her gün aynı yemeği yemekten bıktım.	I'm fed up with eating the same food every day.	مللت من أكل الطعام نفسه كلّ يوم.
+2314	Bu kötü kokudan çok iğreniyorum.	I'm really disgusted by this bad smell.	أشمئزّ كثيرًا من هذه الرائحة الكريهة.
+2315	At gök gürültüsünden ürktü.	The horse was startled by the thunder.	جفل الحصان من الرعد.
+2316	Herkes onun cesaretine hayran oldu.	Everyone admired his courage.	أُعجب الجميع بشجاعته.
+2317	Ailem başarımla gurur duyuyor.	My family is proud of my success.	عائلتي فخورة بنجاحي.
+2318	Sokaktaki kediye çok acıdım.	I felt very sorry for the cat in the street.	أشفقت كثيرًا على القطّة في الشارع.
+2319	Kendini hiçbir zaman başkalarıyla kıyaslama.	Never compare yourself with others.	لا تقارن نفسك بالآخرين أبدًا.
+2320	Hikâyesi biraz abartılı geldi bana.	His story seemed a little exaggerated to me.	بدت لي قصّته مبالغًا فيها قليلًا.
+2321	Dikkatsiz sürücüler kazalara neden olur.	Careless drivers cause accidents.	السائقون المهملون يسبّبون الحوادث.
+2322	Çok sakarım, her şeyi düşürüyorum.	I'm very clumsy, I drop everything.	أنا أخرق جدًا، أُسقط كلّ شيء.
+2323	Annem çok becerikli bir aşçı.	My mother is a very skilful cook.	أمّي طبّاخة ماهرة جدًا.
+2324	Bu halıyı hünerli bir kadın yaptı.	A deft woman made this carpet.	صنعت هذه السجّادة امرأة حاذقة.
+2325	Bugün neden bu kadar somurtkansın?	Why are you so sulky today?	لماذا أنت عابس هكذا اليوم؟
+2326	Komşumuz yaşlı ve biraz huysuz bir adam.	Our neighbour is an old and rather grumpy man.	جارنا رجل عجوز ونكد قليلًا.
+2327	Çok alıngan, her şeye kırılıyor.	He is very touchy, everything offends him.	هو سريع الزعل جدًا، يتأذّى من كلّ شيء.
+2328	Şımarık çocuk her şeyi istiyor.	The spoiled child wants everything.	الطفل المدلّل يريد كلّ شيء.
+2329	Gösterişli bir araba aldı.	He bought a flashy car.	اشترى سيّارة لافتة للنظر.
+2330	Odası çok sade ama temiz.	His room is very plain but clean.	غرفته بسيطة جدًا لكنّها نظيفة.
+2331	Gelinin elbisesi çok süslüydü.	The bride's dress was very ornate.	كان فستان العروس مزخرفًا جدًا.
+2332	Mavi çizgili bir gömlek giydim.	I wore a blue striped shirt.	لبست قميصًا مخطّطًا بالأزرق.
+2333	Benekli bir köpeğimiz var.	We have a spotted dog.	عندنا كلب منقّط.
+2334	Kırmızı kareli bir masa örtüsü aldık.	We bought a red checked tablecloth.	اشترينا مفرش طاولة بمربّعات حمراء.
+2335	Anneme desenli bir elbise hediye ettim.	I gave my mother a patterned dress as a present.	أهديت أمّي فستانًا منقوشًا.
+2336	Bebeğin yüzü çok pürüzsüz.	The baby's face is very smooth.	وجه الطفل ناعم جدًا.
+2337	Bu tahtanın yüzeyi biraz pürüzlü.	The surface of this board is a bit rough.	سطح هذا اللوح خشن قليلًا.
+2338	Kedinin tüyleri çok yumuşacık.	The cat's fur is really soft.	فرو القطّة ناعم جدًا.
+2339	Bahçede kokulu güller var.	There are fragrant roses in the garden.	في الحديقة ورود عطرة.
+2340	Buzdolabındaki eski balık kokmuş.	The old fish in the fridge has gone off.	السمك القديم في الثلّاجة متعفّن.
+2341	Bu ekmek bayat, yenisini al.	This bread is stale, buy a fresh one.	هذا الخبز بائت، اشترِ خبزًا جديدًا.
+2342	Bu domatesler daha ham.	These tomatoes are still unripe.	هذه الطماطم ما زالت نيّئة.
+2343	Baharatlı yemekleri çok severim.	I really love spicy food.	أحبّ الطعام المتبّل كثيرًا.
+2344	Bu yemek benim için çok yağlı.	This food is too greasy for me.	هذا الطعام دهني جدًا بالنسبة لي.
+2345	Sabah fırından gelen ekmek sıcak ve gevrekti.	The bread from the bakery this morning was warm and crispy.	كان خبز المخبز صباحًا ساخنًا ومقرمشًا.
+2346	Bu şeftaliler çok sulu.	These peaches are very juicy.	هذا الخوخ كثير العصير.
+2347	Küçük oda sigaradan dumanlıydı.	The small room was smoky from cigarettes.	كانت الغرفة الصغيرة مليئة بدخان السجائر.
+2348	Bodrum katı çok rutubetli.	The basement is very damp.	القبو رطب جدًا.
+2349	Bu gece dışarıda ayaz var.	There is a bitter frost outside tonight.	في الخارج برد قارس الليلة.
+2350	Sabah denizin üstünde hafif bir pus vardı.	There was a light haze over the sea in the morning.	كان هناك ضباب خفيف فوق البحر في الصباح.
+2351	Yıldırım büyük ağaca düştü.	Lightning struck the big tree.	سقطت صاعقة على الشجرة الكبيرة.
+2352	Dağda çığ tehlikesi var.	There is a danger of avalanches on the mountain.	في الجبل خطر انهيار ثلجي.
+2353	Tipi yüzünden yollar kapandı.	The roads were closed because of the blizzard.	أُغلقت الطرق بسبب العاصفة الثلجية.
+2354	Çatıdan uzun bir buz sarkıtı sarkıyor.	A long icicle is hanging from the roof.	قطعة جليد طويلة تتدلّى من السقف.
+2355	Çocuklar bahçede kardan adam yaptı.	The children made a snowman in the garden.	صنع الأطفال رجل ثلج في الحديقة.
+2356	Çocuklarla tepeden kızakla indik.	We came down the hill on a sledge with the children.	نزلنا من التلّ على زلّاجة مع الأطفال.
+2357	Kızım parkta salıncakta sallanıyor.	My daughter is swinging on the swing in the park.	ابنتي تتأرجح على الأرجوحة في الحديقة.
+2358	Çocuklar parkta kaydıraktan kayıyor.	The children are going down the slide in the park.	الأطفال ينزلقون على الزلّاقة في الحديقة.
+2359	İki kardeş tahterevallide oynuyor.	The two siblings are playing on the seesaw.	الأخوان يلعبان على ميزان الأطفال.
+2360	Rüzgârlı günde uçurtma uçurduk.	We flew a kite on the windy day.	طيّرنا طائرة ورقية في اليوم العاصف.
+2361	Çocuklar sokakta bilye oynuyor.	The children are playing marbles in the street.	الأطفال يلعبون بالكِلّات في الشارع.
+2362	Dün bahçede saklambaç oynadık.	Yesterday we played hide-and-seek in the garden.	أمس لعبنا الغمّيضة في الحديقة.
+2363	Bin parçalık bir yapbozu bitirdim.	I finished a thousand-piece jigsaw puzzle.	أنهيت أحجية من ألف قطعة.
+2364	Dedemle akşamları dama oynarız.	In the evenings I play draughts with my grandfather.	ألعب الداما مع جدّي في المساء.
+2365	Kahvede yaşlı adamlar tavla oynuyor.	Old men are playing backgammon in the café.	رجال كبار يلعبون طاولة الزهر في المقهى.
+2366	Akşam ailece iskambil oynadık.	In the evening we played cards as a family.	في المساء لعبنا الورق مع العائلة.
+2367	Sıra sende, zarı at.	It's your turn, throw the dice.	دورك، ارمِ النرد.
+2368	Çocuklar kukla gösterisini çok sevdi.	The children loved the puppet show.	أحبّ الأطفال عرض الدمى كثيرًا.
+2369	Balıkçı oltasına biraz yem koydu.	The fisherman put some bait on his rod.	وضع الصيّاد بعض الطُّعم في صنّارته.
+2370	Kampta uyku tulumunda uyuduk.	At the camp we slept in sleeping bags.	في المخيّم نمنا في أكياس النوم.
+2371	Akşam kamp ateşinin etrafında şarkı söyledik.	In the evening we sang around the campfire.	في المساء غنّينا حول نار المخيّم.
+2372	Dürbünle uzaktaki kuşlara baktık.	We looked at the distant birds with binoculars.	نظرنا إلى الطيور البعيدة بالمنظار.
+2373	Ormandaki dar patikadan yürüdük.	We walked along the narrow footpath in the forest.	مشينا على الدرب الضيّق في الغابة.
+2374	Dağdaki geçit kışın kapanıyor.	The mountain pass closes in winter.	يُغلق الممرّ الجبلي في الشتاء.
+2375	Karşıya yaya geçidinden geç.	Cross over at the pedestrian crossing.	اعبر من ممرّ المشاة.
+2376	Kaldırımda bisiklet sürmek yasak.	Riding a bike on the pavement is forbidden.	ركوب الدراجة على الرصيف ممنوع.
+2377	Trafik lambası kırmızıya döndü.	The traffic light turned red.	صارت إشارة المرور حمراء.
+2378	Yolda bir benzinlikte durduk.	We stopped at a petrol station on the way.	توقّفنا عند محطّة وقود في الطريق.
+2379	Çekici bozuk arabayı tamirciye çekti.	The tow truck pulled the broken car to the mechanic.	سحبت سيّارة السحب السيّارة المعطّلة إلى الميكانيكي.
+2380	Bisikletin pedalı yolda kırıldı.	The bike's pedal broke on the road.	انكسرت دوّاسة الدراجة في الطريق.
+2381	Tekneyi kalın bir halatla bağladılar.	They tied the boat with a thick rope.	ربطوا القارب بحبل غليظ.
+2382	Balık tutarken oltanın makarası takıldı.	The fishing rod's reel got stuck while fishing.	علقت بكرة الصنّارة أثناء الصيد.
+2383	Eski kapının menteşesi gıcırdıyor.	The old door's hinge is creaking.	مفصّلة الباب القديم تصرّ.
+2384	Gece kapının sürgüsünü çek.	Slide the door's bolt shut at night.	اغلق مزلاج الباب في الليل.
+2385	Eski evin kapısında büyük bir kapı tokmağı var.	The old house's door has a big knocker.	على باب البيت القديم مطرقة كبيرة.
+2386	Ayakkabılarını kapıdaki paspasa sil.	Wipe your shoes on the doormat at the door.	امسح حذاءك على الممسحة عند الباب.
+2387	Toz bezini mutfakta bıraktım.	I left the duster in the kitchen.	تركت خرقة الغبار في المطبخ.
+2388	Yerdeki çöpleri faraşla topla.	Collect the rubbish on the floor with the dustpan.	اجمع القمامة عن الأرض بالمجرود.
+2389	Çamaşırları balkondaki çamaşır ipine astım.	I hung the laundry on the clothesline on the balcony.	نشرت الغسيل على الحبل في الشرفة.
+2390	Rüzgârda düşmesin, gömleğe bir mandal koy.	So it doesn't fall in the wind, put a peg on the shirt.	ضع ملقطًا على القميص كي لا يسقط في الريح.
+2391	Reçeli büyük bir kavanoza koyduk.	We put the jam in a big jar.	وضعنا المربّى في مرطبان كبير.
+2392	Sirke şişesinin tıpasını kaybettim.	I lost the stopper of the vinegar bottle.	أضعت سدادة زجاجة الخلّ.
+2393	Yağı şişeye huni ile dök.	Pour the oil into the bottle with a funnel.	اسكب الزيت في الزجاجة بالقمع.
+2394	Masaya bir sürahi su koydum.	I put a jug of water on the table.	وضعت إبريق ماء على الطاولة.
+2395	Yolculukta termosta sıcak çay vardı.	On the trip there was hot tea in the flask.	في الرحلة كان في الترمس شاي ساخن.
+2396	Mumu yakmak için kibrit lazım.	We need matches to light the candle.	نحتاج إلى عيدان ثقاب لإشعال الشمعة.
+2397	Mumun fitili çok kısa.	The candle's wick is very short.	فتيل الشمعة قصير جدًا.
+2398	Kışın şöminenin önünde otururuz.	In winter we sit in front of the fireplace.	في الشتاء نجلس أمام المدفأة.
+2399	Sobanın külünü bahçeye döktüm.	I tipped the stove's ash into the garden.	أفرغت رماد المدفأة في الحديقة.
+2400	Ateşten küçük kıvılcımlar uçuyor.	Small sparks are flying from the fire.	شرارات صغيرة تتطاير من النار.

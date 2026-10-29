@@ -2099,3 +2099,303 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2098	tr_w_baska_yerde	başka yerde	adv	places	elsewhere	في مكان آخر
 2099	tr_w_yarin_sabah	yarın sabah	adv	time	tomorrow morning	صباح الغد
 2100	tr_w_iki_kez	iki kez	adv	numbers	twice	مرّتين
+2101	tr_w_kiskanmak	kıskanmak	verb	feelings	to envy, to be jealous	يغار
+2102	tr_w_utanmak	utanmak	verb	feelings	to be ashamed	يخجل
+2103	tr_w_pisman_olmak	pişman olmak	verb	feelings	to regret	يندم
+2104	tr_w_mirildanmak	mırıldanmak	verb	communication	to mumble	يتمتم
+2105	tr_w_kekelemek	kekelemek	verb	communication	to stammer	يتلعثم
+2106	tr_w_bayilmak	bayılmak	verb	health	to faint	يغمى عليه
+2107	tr_w_iyilesmek	iyileşmek	verb	health	to recover, to heal	يشفى
+2108	tr_w_rendelemek	rendelemek	verb	food	to grate	يبشر
+2109	tr_w_kavurmak	kavurmak	verb	food	to roast, to sauté	يحمّص
+2110	tr_w_haslamak	haşlamak	verb	food	to boil (food)	يسلق
+2111	tr_w_suzmek	süzmek	verb	food	to strain	يصفّي
+2112	tr_w_yogurmak	yoğurmak	verb	food	to knead	يعجن
+2113	tr_w_bicmek	biçmek	verb	nature	to reap, to mow	يحصد
+2114	tr_w_avlanmak	avlanmak	verb	leisure	to hunt	يصطاد
+2115	tr_w_kurek_cekmek	kürek çekmek	verb	leisure	to row	يجدّف
+2116	tr_w_surunmek	sürünmek	verb	movement	to crawl	يزحف
+2117	tr_w_sicramak	sıçramak	verb	movement	to leap, to splash	يقفز
+2118	tr_w_sendelemek	sendelemek	verb	movement	to stagger	يترنّح
+2119	tr_w_tokezlemek	tökezlemek	verb	movement	to stumble	يتعثّر
+2120	tr_w_ugurlamak	uğurlamak	verb	people	to see off	يودّع
+2121	tr_w_kovmak	kovmak	verb	work	to fire, to chase away	يطرد
+2122	tr_w_iade_etmek	iade etmek	verb	shopping	to return (an item)	يرجع
+2123	tr_w_odunc_almak	ödünç almak	verb	actions	to borrow	يستعير
+2124	tr_w_odunc_vermek	ödünç vermek	verb	actions	to lend	يعير
+2125	tr_w_kirpmak	kırpmak	verb	actions	to trim, to clip	يقصّ
+2126	tr_w_delmek	delmek	verb	actions	to drill, to pierce	يثقب
+2127	tr_w_ezberlemek	ezberlemek	verb	school	to memorise	يحفظ
+2128	tr_w_kabullenmek	kabullenmek	verb	mind	to accept, to come to terms	يتقبّل
+2129	tr_w_pirasa	pırasa	noun	food	leek	كرّاث
+2130	tr_w_enginar	enginar	noun	food	artichoke	خرشوف
+2131	tr_w_karnabahar	karnabahar	noun	food	cauliflower	قرنبيط
+2132	tr_w_turp	turp	noun	food	radish	فجل
+2133	tr_w_pancar	pancar	noun	food	beetroot	شمندر
+2134	tr_w_bezelye	bezelye	noun	food	peas	بازلاء
+2135	tr_w_bulgur	bulgur	noun	food	bulgur	برغل
+2136	tr_w_dereotu	dereotu	noun	food	dill	شبت
+2137	tr_w_tursu	turşu	noun	food	pickles	مخلّل
+2138	tr_w_pekmez	pekmez	noun	food	grape molasses	دبس
+2139	tr_w_helva	helva	noun	food	halva	حلاوة
+2140	tr_w_lokum	lokum	noun	food	Turkish delight	راحة الحلقوم
+2141	tr_w_ayran	ayran	noun	food	ayran (yoghurt drink)	عيران
+2142	tr_w_kurabiye	kurabiye	noun	food	biscuit, cookie	بسكويت
+2143	tr_w_manti	mantı	noun	food	Turkish dumplings	مانطي
+2144	tr_w_kofte	köfte	noun	food	meatballs	كفتة
+2145	tr_w_dolma	dolma	noun	food	stuffed vegetables	محشي
+2146	tr_w_oglak	oğlak	noun	animals	young goat	جدي
+2147	tr_w_buzagi	buzağı	noun	animals	calf	عجل
+2148	tr_w_civciv	civciv	noun	animals	chick	صوص
+2149	tr_w_kostebek	köstebek	noun	animals	mole	خلد
+2150	tr_w_sahin	şahin	noun	animals	falcon	صقر
+2151	tr_w_leylek	leylek	noun	animals	stork	لقلق
+2152	tr_w_marti	martı	noun	animals	seagull	نورس
+2153	tr_w_ahtapot	ahtapot	noun	animals	octopus	أخطبوط
+2154	tr_w_yengec	yengeç	noun	animals	crab	سلطعون
+2155	tr_w_denizanasi	denizanası	noun	animals	jellyfish	قنديل البحر
+2156	tr_w_akrep	akrep	noun	animals	scorpion	عقرب
+2157	tr_w_ugur_bocegi	uğur böceği	noun	animals	ladybird	دعسوقة
+2158	tr_w_yusufcuk	yusufçuk	noun	animals	dragonfly	يعسوب
+2159	tr_w_geyik	geyik	noun	animals	deer	غزال
+2160	tr_w_selale	şelale	noun	nature	waterfall	شلّال
+2161	tr_w_bataklik	bataklık	noun	nature	swamp	مستنقع
+2162	tr_w_yamac	yamaç	noun	nature	slope	منحدر
+2163	tr_w_kumsal	kumsal	noun	nature	sandy beach	شاطئ رملي
+2164	tr_w_gelgit	gelgit	noun	nature	tide	مدّ وجزر
+2165	tr_w_mercan	mercan	noun	nature	coral	مرجان
+2166	tr_w_deniz_kabugu	deniz kabuğu	noun	nature	seashell	صدفة
+2167	tr_w_cakil	çakıl	noun	nature	pebble	حصاة
+2168	tr_w_camur	çamur	noun	nature	mud	وحل
+2169	tr_w_yanardag	yanardağ	noun	nature	volcano	بركان
+2170	tr_w_saganak	sağanak	noun	weather	downpour	زخّة مطر
+2171	tr_w_ciy	çiy	noun	weather	dew	ندى
+2172	tr_w_gokkusagi	gökkuşağı	noun	weather	rainbow	قوس قزح
+2173	tr_w_sogut	söğüt	noun	nature	willow	صفصاف
+2174	tr_w_mese	meşe	noun	nature	oak	بلّوط
+2175	tr_w_yosun	yosun	noun	nature	moss	طحلب
+2176	tr_w_diken	diken	noun	nature	thorn	شوكة
+2177	tr_w_saman	saman	noun	nature	straw, hay	قشّ
+2178	tr_w_ahir	ahır	noun	places	barn, stable	حظيرة
+2179	tr_w_otlak	otlak	noun	places	pasture	مرعى
+2180	tr_w_degirmen	değirmen	noun	places	mill	طاحونة
+2181	tr_w_baraj	baraj	noun	places	dam	سدّ
+2182	tr_w_fener	fener	noun	places	lighthouse, lantern	منارة
+2183	tr_w_iskele	iskele	noun	places	pier, jetty	رصيف ميناء
+2184	tr_w_mezarlik	mezarlık	noun	places	cemetery	مقبرة
+2185	tr_w_kale	kale	noun	places	castle	قلعة
+2186	tr_w_kubbe	kubbe	noun	places	dome	قبّة
+2187	tr_w_minare	minare	noun	places	minaret	مئذنة
+2188	tr_w_kavsak	kavşak	noun	travel	junction	تقاطع
+2189	tr_w_otoyol	otoyol	noun	travel	motorway	طريق سريع
+2190	tr_w_pusula	pusula	noun	travel	compass	بوصلة
+2191	tr_w_feribot	feribot	noun	travel	ferry	عبّارة
+2192	tr_w_yat	yat	noun	travel	yacht	يخت
+2193	tr_w_fren	fren	noun	travel	brake	مكبح
+2194	tr_w_lastik	lastik	noun	travel	tyre	إطار
+2195	tr_w_direksiyon	direksiyon	noun	travel	steering wheel	مقود
+2196	tr_w_emniyet_kemeri	emniyet kemeri	noun	travel	seat belt	حزام الأمان
+2197	tr_w_tava	tava	noun	home	frying pan	مقلاة
+2198	tr_w_kepce	kepçe	noun	home	ladle	مغرفة
+2199	tr_w_suzgec	süzgeç	noun	home	strainer	مصفاة
+2200	tr_w_demlik	demlik	noun	home	teapot	إبريق شاي
+2201	tr_w_rende	rende	noun	home	grater	مبشرة
+2202	tr_w_oklava	oklava	noun	home	rolling pin	شوبك
+2203	tr_w_vazo	vazo	noun	home	vase	مزهرية
+2204	tr_w_samdan	şamdan	noun	home	candlestick	شمعدان
+2205	tr_w_avize	avize	noun	home	chandelier	ثريّا
+2206	tr_w_aski	askı	noun	home	hanger	علّاقة
+2207	tr_w_yorgan	yorgan	noun	home	quilt	لحاف
+2208	tr_w_bulasik_makinesi	bulaşık makinesi	noun	home	dishwasher	جلّاية
+2209	tr_w_baca	baca	noun	home	chimney	مدخنة
+2210	tr_w_tavan_arasi	tavan arası	noun	home	attic	علّية
+2211	tr_w_anahtarlik	anahtarlık	noun	home	keyring	علّاقة مفاتيح
+2212	tr_w_vida	vida	noun	work	screw	برغي
+2213	tr_w_tornavida	tornavida	noun	work	screwdriver	مفكّ
+2214	tr_w_pense	pense	noun	work	pliers	كمّاشة
+2215	tr_w_balta	balta	noun	work	axe	فأس
+2216	tr_w_matkap	matkap	noun	work	drill	مثقب
+2217	tr_w_tutkal	tutkal	noun	work	glue	غراء
+2218	tr_w_zimpara	zımpara	noun	work	sandpaper	ورق صنفرة
+2219	tr_w_zam	zam	noun	work	pay rise	زيادة
+2220	tr_w_emekli	emekli	noun	work	retired person	متقاعد
+2221	tr_w_stajyer	stajyer	noun	work	intern	متدرّب
+2222	tr_w_mesai	mesai	noun	work	working hours	دوام
+2223	tr_w_tezgah	tezgâh	noun	shopping	counter, stall	بسطة
+2224	tr_w_coban	çoban	noun	people	shepherd	راعٍ
+2225	tr_w_bahcivan	bahçıvan	noun	people	gardener	بستاني
+2226	tr_w_berber	berber	noun	people	barber	حلّاق
+2227	tr_w_marangoz	marangoz	noun	people	carpenter	نجّار
+2228	tr_w_tesisatci	tesisatçı	noun	people	plumber	سبّاك
+2229	tr_w_elektrikci	elektrikçi	noun	people	electrician	كهربائي
+2230	tr_w_dilenci	dilenci	noun	people	beggar	متسوّل
+2231	tr_w_tanik	tanık	noun	people	witness	شاهد
+2232	tr_w_kayinvalide	kayınvalide	noun	family	mother-in-law	حماة
+2233	tr_w_ikiz	ikiz	noun	family	twin	توأم
+2234	tr_w_dul	dul	noun	family	widow, widower	أرمل
+2235	tr_w_kurnaz	kurnaz	adj	people	cunning	ماكر
+2236	tr_w_yaramaz	yaramaz	adj	people	naughty	شقيّ
+2237	tr_w_kibirli	kibirli	adj	people	arrogant	متكبّر
+2238	tr_w_korkak	korkak	adj	people	cowardly	جبان
+2239	tr_w_kaygan	kaygan	adj	descriptions	slippery	زلق
+2240	tr_w_yapiskan	yapışkan	adj	descriptions	sticky	لزج
+2241	tr_w_kirilgan	kırılgan	adj	descriptions	fragile	هشّ
+2242	tr_w_bulanik	bulanık	adj	descriptions	blurry, cloudy	ضبابي
+2243	tr_w_solgun	solgun	adj	descriptions	pale	شاحب
+2244	tr_w_donuk	donuk	adj	descriptions	dull	باهت
+2245	tr_w_tozlu	tozlu	adj	descriptions	dusty	مغبرّ
+2246	tr_w_camurlu	çamurlu	adj	descriptions	muddy	موحل
+2247	tr_w_pasli	paslı	adj	descriptions	rusty	صدئ
+2248	tr_w_burusuk	buruşuk	adj	descriptions	wrinkled	مجعّد
+2249	tr_w_yirtik	yırtık	adj	descriptions	torn	ممزّق
+2250	tr_w_gevsek	gevşek	adj	descriptions	loose	مرتخٍ
+2251	tr_w_bereketli	bereketli	adj	nature	fertile	خصب
+2252	tr_w_uykulu	uykulu	adj	body	sleepy	نعسان
+2253	tr_w_hafifce	hafifçe	adv	function	lightly, gently	بخفّة
+2254	tr_w_yavasca	yavaşça	adv	function	slowly	ببطء
+2255	tr_w_tesadufen	tesadüfen	adv	function	by chance	بالصدفة
+2256	tr_w_bilerek	bilerek	adv	function	on purpose	عمدًا
+2257	tr_w_yanlislikla	yanlışlıkla	adv	function	by mistake	خطأً
+2258	tr_w_gizlice	gizlice	adv	function	secretly	سرًّا
+2259	tr_w_kemirmek	kemirmek	verb	animals	to gnaw	يقضم
+2260	tr_w_gagalamak	gagalamak	verb	animals	to peck	ينقر
+2261	tr_w_miyavlamak	miyavlamak	verb	animals	to meow	يموء
+2262	tr_w_kukremek	kükremek	verb	animals	to roar	يزأر
+2263	tr_w_vizildamak	vızıldamak	verb	animals	to buzz	يطنّ
+2264	tr_w_mirlamak	mırlamak	verb	animals	to purr	يخرخر
+2265	tr_w_otmek	ötmek	verb	animals	to sing (bird)	يغرّد
+2266	tr_w_sagmak	sağmak	verb	animals	to milk	يحلب
+2267	tr_w_otlamak	otlamak	verb	animals	to graze	يرعى
+2268	tr_w_gutmek	gütmek	verb	animals	to herd	يرعى القطيع
+2269	tr_w_filizlenmek	filizlenmek	verb	nature	to sprout	ينبت
+2270	tr_w_ciceklenmek	çiçeklenmek	verb	nature	to blossom	يزهر
+2271	tr_w_kurumak	kurumak	verb	nature	to dry up	يجفّ
+2272	tr_w_curumek	çürümek	verb	nature	to rot	يتعفّن
+2273	tr_w_paslanmak	paslanmak	verb	descriptions	to rust	يصدأ
+2274	tr_w_bugulanmak	buğulanmak	verb	weather	to steam up	يتغبّش
+2275	tr_w_islanmak	ıslanmak	verb	weather	to get wet	يتبلّل
+2276	tr_w_parildamak	parıldamak	verb	descriptions	to sparkle	يتلألأ
+2277	tr_w_gicirdamak	gıcırdamak	verb	senses	to creak	يصرّ
+2278	tr_w_cinlamak	çınlamak	verb	senses	to ring, to tinkle	يرنّ
+2279	tr_w_kasimak	kaşımak	verb	body	to scratch	يحكّ
+2280	tr_w_hickirmak	hıçkırmak	verb	body	to hiccup, to sob	يشهق
+2281	tr_w_horlamak	horlamak	verb	body	to snore	يشخر
+2282	tr_w_morarmak	morarmak	verb	health	to bruise	يزرقّ
+2283	tr_w_burkmak	burkmak	verb	health	to sprain	يلوي
+2284	tr_w_sismek	şişmek	verb	health	to swell	ينتفخ
+2285	tr_w_asilamak	aşılamak	verb	health	to vaccinate	يطعّم
+2286	tr_w_sargilamak	sargılamak	verb	health	to bandage	يضمّد
+2287	tr_w_dogramak	doğramak	verb	food	to chop	يفرم
+2288	tr_w_soymak	soymak	verb	food	to peel	يقشّر
+2289	tr_w_serpmek	serpmek	verb	food	to sprinkle	يرشّ
+2290	tr_w_mayalamak	mayalamak	verb	food	to ferment, to leaven	يخمّر
+2291	tr_w_tuzlamak	tuzlamak	verb	food	to salt	يملّح
+2292	tr_w_damlamak	damlamak	verb	home	to drip	يقطر
+2293	tr_w_tasmak	taşmak	verb	home	to overflow	يفيض
+2294	tr_w_sizmak	sızmak	verb	home	to leak	يتسرّب
+2295	tr_w_tikanmak	tıkanmak	verb	home	to get blocked	ينسدّ
+2296	tr_w_silkelemek	silkelemek	verb	home	to shake out	ينفض
+2297	tr_w_havalandirmak	havalandırmak	verb	home	to air out	يهوّي
+2298	tr_w_sallamak	sallamak	verb	actions	to shake, to wave	يهزّ
+2299	tr_w_cekistirmek	çekiştirmek	verb	actions	to tug	يشدّ
+2300	tr_w_itelemek	itelemek	verb	actions	to nudge	يدفع برفق
+2301	tr_w_devirmek	devirmek	verb	actions	to knock over	يقلب
+2302	tr_w_kazimak	kazımak	verb	actions	to scrape	يكشط
+2303	tr_w_oymak	oymak	verb	actions	to carve	ينحت
+2304	tr_w_yamamak	yamamak	verb	clothes	to patch	يرقّع
+2305	tr_w_dugmelemek	düğmelemek	verb	clothes	to button	يزرّر
+2306	tr_w_kollamak	kollamak	verb	people	to look out for	يرعى
+2307	tr_w_kiskirtmak	kışkırtmak	verb	people	to provoke	يستفزّ
+2308	tr_w_alay_etmek	alay etmek	verb	people	to mock	يسخر
+2309	tr_w_dedikodu_yapmak	dedikodu yapmak	verb	communication	to gossip	يثرثر عن الناس
+2310	tr_w_ovunmek	övünmek	verb	communication	to boast	يتباهى
+2311	tr_w_kusmek	küsmek	verb	people	to sulk, to stop speaking	يخاصم
+2312	tr_w_darilmak	darılmak	verb	feelings	to take offence	يزعل
+2313	tr_w_bikmak	bıkmak	verb	feelings	to get fed up	يملّ
+2314	tr_w_igrenmek	iğrenmek	verb	feelings	to be disgusted	يشمئزّ
+2315	tr_w_urkmek	ürkmek	verb	feelings	to be startled	يجفل
+2316	tr_w_hayran_olmak	hayran olmak	verb	feelings	to admire	يُعجب
+2317	tr_w_gurur_duymak	gurur duymak	verb	feelings	to be proud	يفتخر
+2318	tr_w_acimak	acımak	verb	feelings	to pity, to hurt	يشفق
+2319	tr_w_kiyaslamak	kıyaslamak	verb	mind	to compare	يقارن
+2320	tr_w_abartili	abartılı	adj	descriptions	exaggerated	مبالغ فيه
+2321	tr_w_dikkatsiz	dikkatsiz	adj	people	careless	مهمل
+2322	tr_w_sakar	sakar	adj	people	clumsy	أخرق
+2323	tr_w_becerikli	becerikli	adj	people	skilful	ماهر
+2324	tr_w_hunerli	hünerli	adj	people	talented, deft	حاذق
+2325	tr_w_somurtkan	somurtkan	adj	feelings	sulky	عابس
+2326	tr_w_huysuz	huysuz	adj	people	grumpy	نكد
+2327	tr_w_alingan	alıngan	adj	feelings	touchy	سريع الزعل
+2328	tr_w_simarik	şımarık	adj	people	spoiled	مدلّل
+2329	tr_w_gosterisli	gösterişli	adj	descriptions	showy, flashy	متباهٍ
+2330	tr_w_sade	sade	adj	descriptions	plain, simple	بسيط
+2331	tr_w_suslu	süslü	adj	descriptions	ornate	مزخرف
+2332	tr_w_cizgili	çizgili	adj	clothes	striped	مخطّط
+2333	tr_w_benekli	benekli	adj	descriptions	spotted	منقّط
+2334	tr_w_kareli	kareli	adj	clothes	checked	مربّعات
+2335	tr_w_desenli	desenli	adj	clothes	patterned	منقوش
+2336	tr_w_puruzsuz	pürüzsüz	adj	descriptions	smooth	أملس
+2337	tr_w_puruzlu	pürüzlü	adj	descriptions	rough	خشن
+2338	tr_w_yumusacik	yumuşacık	adj	descriptions	very soft	ناعم جدًا
+2339	tr_w_kokulu	kokulu	adj	senses	fragrant	معطّر
+2340	tr_w_kokmus	kokmuş	adj	food	rotten, smelly	متعفّن
+2341	tr_w_bayat	bayat	adj	food	stale	بائت
+2342	tr_w_ham	ham	adj	food	unripe, raw	نيّ
+2343	tr_w_baharatli	baharatlı	adj	food	spicy	متبّل
+2344	tr_w_yagli	yağlı	adj	food	greasy, fatty	دهني
+2345	tr_w_gevrek	gevrek	adj	food	crispy	مقرمش
+2346	tr_w_sulu	sulu	adj	food	juicy	عصيري
+2347	tr_w_dumanli	dumanlı	adj	weather	smoky, misty	مدخّن
+2348	tr_w_rutubetli	rutubetli	adj	weather	humid, damp	رطب
+2349	tr_w_ayaz	ayaz	noun	weather	frosty cold	برد قارس
+2350	tr_w_pus	pus	noun	weather	haze	ضباب خفيف
+2351	tr_w_yildirim	yıldırım	noun	weather	thunderbolt	صاعقة
+2352	tr_w_cig	çığ	noun	weather	avalanche	انهيار ثلجي
+2353	tr_w_tipi	tipi	noun	weather	blizzard	عاصفة ثلجية
+2354	tr_w_buz_sarkiti	buz sarkıtı	noun	weather	icicle	قطعة جليد متدلّية
+2355	tr_w_kardan_adam	kardan adam	noun	leisure	snowman	رجل الثلج
+2356	tr_w_kizak	kızak	noun	leisure	sledge	زلّاجة
+2357	tr_w_salincak	salıncak	noun	leisure	swing	أرجوحة
+2358	tr_w_kaydirak	kaydırak	noun	leisure	slide	زلّاقة
+2359	tr_w_tahterevalli	tahterevalli	noun	leisure	seesaw	ميزان الأطفال
+2360	tr_w_ucurtma	uçurtma	noun	leisure	kite	طائرة ورقية
+2361	tr_w_bilye	bilye	noun	leisure	marble	كلّة
+2362	tr_w_saklambac	saklambaç	noun	leisure	hide-and-seek	الغمّيضة
+2363	tr_w_yapboz	yapboz	noun	leisure	jigsaw puzzle	أحجية تركيب
+2364	tr_w_dama	dama	noun	leisure	draughts	الداما
+2365	tr_w_tavla	tavla	noun	leisure	backgammon	طاولة الزهر
+2366	tr_w_iskambil	iskambil	noun	leisure	playing cards	ورق اللعب
+2367	tr_w_zar	zar	noun	leisure	dice	نرد
+2368	tr_w_kukla	kukla	noun	leisure	puppet	دمية متحرّكة
+2369	tr_w_yem	yem	noun	animals	bait, feed	طُعم
+2370	tr_w_uyku_tulumu	uyku tulumu	noun	travel	sleeping bag	كيس نوم
+2371	tr_w_kamp_atesi	kamp ateşi	noun	travel	campfire	نار المخيّم
+2372	tr_w_durbun	dürbün	noun	travel	binoculars	منظار
+2373	tr_w_patika	patika	noun	travel	footpath	درب
+2374	tr_w_gecit	geçit	noun	travel	pass, crossing	ممرّ
+2375	tr_w_yaya_gecidi	yaya geçidi	noun	travel	pedestrian crossing	ممرّ المشاة
+2376	tr_w_kaldirim	kaldırım	noun	travel	pavement	رصيف
+2377	tr_w_trafik_lambasi	trafik lambası	noun	travel	traffic light	إشارة المرور
+2378	tr_w_benzinlik	benzinlik	noun	travel	petrol station	محطّة وقود
+2379	tr_w_cekici	çekici	noun	travel	tow truck	سيّارة سحب
+2380	tr_w_pedal	pedal	noun	travel	pedal	دوّاسة
+2381	tr_w_halat	halat	noun	work	rope	حبل غليظ
+2382	tr_w_makara	makara	noun	work	reel, pulley	بكرة
+2383	tr_w_mentese	menteşe	noun	home	hinge	مفصّلة
+2384	tr_w_surgu	sürgü	noun	home	bolt (lock)	مزلاج
+2385	tr_w_kapi_tokmagi	kapı tokmağı	noun	home	door knocker	مطرقة الباب
+2386	tr_w_paspas	paspas	noun	home	doormat, mop	ممسحة
+2387	tr_w_toz_bezi	toz bezi	noun	home	duster	خرقة غبار
+2388	tr_w_faras	faraş	noun	home	dustpan	مجرود
+2389	tr_w_camasir_ipi	çamaşır ipi	noun	home	clothesline	حبل الغسيل
+2390	tr_w_mandal	mandal	noun	home	clothes peg	ملقط غسيل
+2391	tr_w_kavanoz	kavanoz	noun	home	jar	مرطبان
+2392	tr_w_tipa	tıpa	noun	home	plug, stopper	سدادة
+2393	tr_w_huni	huni	noun	home	funnel	قمع
+2394	tr_w_surahi	sürahi	noun	home	jug	إبريق
+2395	tr_w_termos	termos	noun	home	flask	ترمس
+2396	tr_w_kibrit	kibrit	noun	home	match	عود ثقاب
+2397	tr_w_fitil	fitil	noun	home	wick	فتيل
+2398	tr_w_somine	şömine	noun	home	fireplace	مدفأة حائط
+2399	tr_w_kul	kül	noun	home	ash	رماد
+2400	tr_w_kivilcim	kıvılcım	noun	home	spark	شرارة
