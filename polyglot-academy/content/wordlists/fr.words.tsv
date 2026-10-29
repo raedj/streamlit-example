@@ -2399,3 +2399,303 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2398	fr_w_toile_d_araignee	toile d'araignée	noun	animals	cobweb	بيت العنكبوت		toiles d'araignée	gender=f; article=la
 2399	fr_w_mesange	mésange	noun	animals	tit (bird)	قرقف			gender=f; article=la
 2400	fr_w_moineau	moineau	noun	animals	sparrow	عصفور دوري		moineaux	gender=m; article=le
+2401	fr_w_abolir	abolir	verb	society	to abolish	يلغي		abolis, abolit, abolissons, abolissent, aboli, abolie	irregular=yes
+2402	fr_w_accelerer	accélérer	verb	movement	to accelerate	يسرّع		accélérons, accélérez, accéléré, accélérée, accélérés, accélérais, accélérait, accéléraient, accélérant, accélère, accélèrent
+2403	fr_w_cesser	cesser	verb	time	to cease	يتوقّف		cesse, cesses, cessons, cessez, cessent, cessé, cessée, cessés, cessais, cessait, cessaient, cesserai, cessera, cessant
+2404	fr_w_s_accrocher	s'accrocher	verb	actions	to cling	يتشبّث		accroche, accroches, accrochons, accrochez, accrochent, accroché, accrochée, accrochés, accrochais, accrochait, accrochaient, accrocherai, accrochera, accrochant, accrocher
+2405	fr_w_coincider	coïncider	verb	time	to coincide	يتزامن		coïncide, coïncides, coïncidons, coïncidez, coïncident, coïncidé, coïncidée, coïncidés, coïncidais, coïncidait, coïncidaient, coïnciderai, coïncidera, coïncidant
+2406	fr_w_compiler	compiler	verb	work	to compile	يجمع		compile, compiles, compilons, compilez, compilent, compilé, compilée, compilés, compilais, compilait, compilaient, compilerai, compilera, compilant
+2407	fr_w_contaminer	contaminer	verb	nature	to contaminate	يلوّث		contamine, contamines, contaminons, contaminez, contaminent, contaminé, contaminée, contaminés, contaminais, contaminait, contaminaient, contaminerai, contaminera, contaminant
+2408	fr_w_contempler	contempler	verb	mind	to contemplate	يتأمّل		contemple, contemples, contemplons, contemplez, contemplent, contemplé, contemplée, contemplés, contemplais, contemplait, contemplaient, contemplerai, contemplera, contemplant
+2409	fr_w_eblouir	éblouir	verb	senses	to dazzle	يبهر		éblouis, éblouit, éblouissent, ébloui, éblouie	irregular=yes
+2410	fr_w_deduire	déduire	verb	shopping	to deduct	يخصم		déduis, déduit, déduisent, déduite	irregular=yes
+2411	fr_w_defier	défier	verb	people	to defy, to challenge	يتحدّى		défie, défies, défions, défiez, défient, défié, défiée, défiés, défiais, défiait, défiaient, défierai, défiera, défiant
+2412	fr_w_demolir	démolir	verb	actions	to demolish	يهدم		démolis, démolit, démolissent, démoli, démolie	irregular=yes
+2413	fr_w_priver	priver	verb	society	to deprive	يحرم		prive, prives, privons, privez, privent, privé, privée, privés, privais, privait, privaient, priverai, privera, privant
+2414	fr_w_deriver	dériver	verb	mind	to derive	يشتقّ		dérive, dérives, dérivons, dérivez, dérivent, dérivé, dérivée, dérivés, dérivais, dérivait, dérivaient, dériverai, dérivera, dérivant
+2415	fr_w_se_deteriorer	se détériorer	verb	health	to deteriorate	يتدهور		détériore, détériores, détériorons, détériorez, détériorent, détérioré, détériorée, détériorés, détériorais, détériorait, détérioraient, détériorerai, détériorera, détériorant, détériorer
+2416	fr_w_dicter	dicter	verb	communication	to dictate	يملي		dicte, dictes, dictons, dictez, dictent, dicté, dictée, dictés, dictais, dictait, dictaient, dicterai, dictera, dictant
+2417	fr_w_digerer	digérer	verb	health	to digest	يهضم		digérons, digérez, digéré, digérée, digérés, digérais, digérait, digéraient, digérant, digère, digèrent
+2418	fr_w_diluer	diluer	verb	food	to dilute	يخفّف		dilue, dilues, diluons, diluez, diluent, dilué, diluée, dilués, diluais, diluait, diluaient, diluerai, diluera, diluant
+2419	fr_w_deformer	déformer	verb	communication	to distort	يشوّه		déforme, déformes, déformons, déformez, déforment, déformé, déformée, déformés, déformais, déformait, déformaient, déformerai, déformera, déformant
+2420	fr_w_devier	dévier	verb	travel	to divert	يحوّل		dévie, dévies, dévions, déviez, dévient, dévié, déviée, déviés, déviais, déviait, déviaient, dévierai, déviera, déviant
+2421	fr_w_egoutter	égoutter	verb	home	to drain	يصفّي		égoutte, égouttes, égouttons, égouttez, égouttent, égoutté, égouttée, égouttés, égouttais, égouttait, égouttaient, égoutterai, égouttera, égouttant
+2422	fr_w_appuyer	appuyer	verb	work	to back, to press	يدعم، يضغط		appuyons, appuyez, appuyé, appuyée, appuyés, appuyais, appuyait, appuyaient, appuyant, appuie, appuient
+2423	fr_w_evacuer	évacuer	verb	actions	to evacuate	يخلي		évacue, évacues, évacuons, évacuez, évacuent, évacué, évacuée, évacués, évacuais, évacuait, évacuaient, évacuerai, évacuera, évacuant
+2424	fr_w_s_evaporer	s'évaporer	verb	nature	to evaporate	يتبخّر		évapore, évapores, évaporons, évaporez, évaporent, évaporé, évaporée, évaporés, évaporais, évaporait, évaporaient, évaporerai, évaporera, évaporant, évaporer
+2425	fr_w_exclure	exclure	verb	actions	to exclude	يستبعد		exclus, exclut, excluent, exclu, exclue	irregular=yes
+2426	fr_w_exploiter	exploiter	verb	work	to exploit	يستغلّ		exploite, exploites, exploitons, exploitez, exploitent, exploité, exploitée, exploités, exploitais, exploitait, exploitaient, exploiterai, exploitera, exploitant
+2427	fr_w_fluctuer	fluctuer	verb	function	to fluctuate	يتقلّب		fluctue, fluctues, fluctuons, fluctuez, fluctuent, fluctué, fluctuée, fluctués, fluctuais, fluctuait, fluctuaient, fluctuerai, fluctuera, fluctuant
+2428	fr_w_falsifier	falsifier	verb	work	to forge	يزوّر		falsifie, falsifies, falsifions, falsifiez, falsifient, falsifié, falsifiée, falsifiés, falsifiais, falsifiait, falsifiaient, falsifierai, falsifiera, falsifiant
+2429	fr_w_haleter	haleter	verb	body	to pant	يلهث		haletons, haletez, haleté, haletée, haletés, haletais, haletait, haletaient, haletant, halète, halètent
+2430	fr_w_moudre	moudre	verb	food	to grind	يطحن		mouds, moud, moulons, moulent, moulu, moulue	irregular=yes
+2431	fr_w_gemir	gémir	verb	body	to groan	يئنّ		gémis, gémit, gémissent, gémi	irregular=yes
+2432	fr_w_entraver	entraver	verb	actions	to hinder	يعيق		entrave, entraves, entravons, entravez, entravent, entravé, entravée, entravés, entravais, entravait, entravaient, entraverai, entravera, entravant
+2433	fr_w_fredonner	fredonner	verb	leisure	to hum	يدندن		fredonne, fredonnes, fredonnons, fredonnez, fredonnent, fredonné, fredonnée, fredonnés, fredonnais, fredonnait, fredonnaient, fredonnerai, fredonnera, fredonnant
+2434	fr_w_inhaler	inhaler	verb	body	to inhale	يستنشق		inhale, inhales, inhalons, inhalez, inhalent, inhalé, inhalée, inhalés, inhalais, inhalait, inhalaient, inhalerai, inhalera, inhalant
+2435	fr_w_injecter	injecter	verb	health	to inject	يحقن		injecte, injectes, injectons, injectez, injectent, injecté, injectée, injectés, injectais, injectait, injectaient, injecterai, injectera, injectant
+2436	fr_w_intervenir	intervenir	verb	people	to intervene	يتدخّل		interviens, intervient, interviennent, intervenu, intervenue	irregular=yes
+2437	fr_w_irriter	irriter	verb	feelings	to irritate	يزعج		irrite, irrites, irritons, irritez, irritent, irrité, irritée, irrités, irritais, irritait, irritaient, irriterai, irritera, irritant
+2438	fr_w_desserrer	desserrer	verb	actions	to loosen	يرخي		desserre, desserres, desserrons, desserrez, desserrent, desserré, desserrée, desserrés, desserrais, desserrait, desserraient, desserrerai, desserrera, desserrant
+2439	fr_w_fusionner	fusionner	verb	work	to merge	يدمج		fusionne, fusionnes, fusionnons, fusionnez, fusionnent, fusionné, fusionnée, fusionnés, fusionnais, fusionnait, fusionnaient, fusionnerai, fusionnera, fusionnant
+2440	fr_w_marmonner	marmonner	verb	communication	to mumble	يتمتم		marmonne, marmonnes, marmonnons, marmonnez, marmonnent, marmonné, marmonnée, marmonnés, marmonnais, marmonnait, marmonnaient, marmonnerai, marmonnera, marmonnant
+2441	fr_w_obstruer	obstruer	verb	actions	to obstruct	يعرقل		obstrue, obstrues, obstruons, obstruez, obstruent, obstrué, obstruée, obstrués, obstruais, obstruait, obstruaient, obstruerai, obstruera, obstruant
+2442	fr_w_omettre	omettre	verb	actions	to omit	يحذف		omets, omet, omettent, omis, omise	irregular=yes
+2443	fr_w_opprimer	opprimer	verb	society	to oppress	يضطهد		opprime, opprimes, opprimons, opprimez, oppriment, opprimé, opprimée, opprimés, opprimais, opprimait, opprimaient, opprimerai, opprimera, opprimant
+2444	fr_w_accabler	accabler	verb	feelings	to overwhelm	يثقل		accable, accables, accablons, accablez, accablent, accablé, accablée, accablés, accablais, accablait, accablaient, accablerai, accablera, accablant
+2445	fr_w_penetrer	pénétrer	verb	actions	to penetrate	يخترق		pénétrons, pénétrez, pénétré, pénétrée, pénétrés, pénétrais, pénétrait, pénétraient, pénétrant, pénètre, pénètrent
+2446	fr_w_percer	percer	verb	actions	to pierce	يثقب		perce, perces, perçons, percez, percent, percé, percée, percés, perçais, perçait, perçaient, percerai, percera, perçant
+2447	fr_w_mediter	méditer	verb	mind	to ponder, to meditate	يتأمّل		médite, médites, méditons, méditez, méditent, médité, méditée, médités, méditais, méditait, méditaient, méditerai, méditera, méditant
+2448	fr_w_preceder	précéder	verb	time	to precede	يسبق		précédons, précédez, précédé, précédée, précédés, précédais, précédait, précédaient, précédant, précède, précèdent
+2449	fr_w_proclamer	proclamer	verb	communication	to proclaim	يعلن		proclame, proclames, proclamons, proclamez, proclament, proclamé, proclamée, proclamés, proclamais, proclamait, proclamaient, proclamerai, proclamera, proclamant
+2450	fr_w_poursuivre	poursuivre	verb	society	to prosecute, to pursue	يقاضي، يلاحق		poursuis, poursuit, poursuivent, poursuivi	irregular=yes
+2451	fr_w_rayonner	rayonner	verb	nature	to radiate	يشعّ		rayonne, rayonnes, rayonnons, rayonnez, rayonnent, rayonné, rayonnée, rayonnés, rayonnais, rayonnait, rayonnaient, rayonnerai, rayonnera, rayonnant
+2452	fr_w_cliqueter	cliqueter	verb	senses	to rattle, to clink	يخشخش		cliquetons, cliquetez, cliqueté, cliquetée, cliquetés, cliquetais, cliquetait, cliquetaient, cliquetant, cliquette, cliquettent
+2453	fr_w_reconcilier	réconcilier	verb	people	to reconcile	يصالح		réconcilie, réconcilies, réconcilions, réconciliez, réconcilient, réconcilié, réconciliée, réconciliés, réconciliais, réconciliait, réconciliaient, réconcilierai, réconciliera, réconciliant
+2454	fr_w_raffiner	raffiner	verb	actions	to refine	ينقّي		raffine, raffines, raffinons, raffinez, raffinent, raffiné, raffinée, raffinés, raffinais, raffinait, raffinaient, raffinerai, raffinera, raffinant
+2455	fr_w_s_abstenir	s'abstenir	verb	actions	to refrain	يمتنع		abstiens, abstient, abstiennent, abstenu, abstenir	irregular=yes
+2456	fr_w_savourer	savourer	verb	food	to savour	يتذوّق		savoure, savoures, savourons, savourez, savourent, savouré, savourée, savourés, savourais, savourait, savouraient, savourerai, savourera, savourant
+2457	fr_w_renover	rénover	verb	home	to renovate	يجدّد		rénove, rénoves, rénovons, rénovez, rénovent, rénové, rénovée, rénovés, rénovais, rénovait, rénovaient, rénoverai, rénovera, rénovant
+2458	fr_w_en_vouloir	en vouloir	verb	feelings	to resent, to hold a grudge	يستاء من		veux, veut, voulu	irregular=yes
+2459	fr_w_retenir	retenir	verb	actions	to hold back, to retain	يحبس		retiens, retient, retiennent, retenu, retenue	irregular=yes
+2460	fr_w_recuperer	récupérer	verb	actions	to retrieve, to recover	يسترجع		récupérons, récupérez, récupéré, récupérée, récupérés, récupérais, récupérait, récupéraient, récupérant, récupère, récupèrent
+2461	fr_w_rincer	rincer	verb	home	to rinse	يشطف		rince, rinces, rinçons, rincez, rincent, rincé, rincée, rincés, rinçais, rinçait, rinçaient, rincerai, rincera, rinçant
+2462	fr_w_errer	errer	verb	movement	to roam, to wander	يتجوّل		erre, erres, errons, errez, errent, erré, errée, errés, errais, errait, erraient, errerai, errera, errant
+2463	fr_w_pourrir	pourrir	verb	nature	to rot	يتعفّن		pourris, pourrit, pourrissent, pourri, pourrie	irregular=yes
+2464	fr_w_griffonner	griffonner	verb	school	to scribble	يخربش		griffonne, griffonnes, griffonnons, griffonnez, griffonnent, griffonné, griffonnée, griffonnés, griffonnais, griffonnait, griffonnaient, griffonnerai, griffonnera, griffonnant
+2465	fr_w_saisir	saisir	verb	actions	to seize	يمسك، يصادر		saisis, saisit, saisissent, saisi, saisie	irregular=yes
+2466	fr_w_briser	briser	verb	actions	to shatter	يحطّم		brise, brises, brisons, brisez, brisent, brisé, brisée, brisés, brisais, brisait, brisaient, briserai, brisera, brisant
+2467	fr_w_hausser	hausser	verb	body	to raise, to shrug	يرفع		hausse, hausses, haussons, haussez, haussent, haussé, haussée, haussés, haussais, haussait, haussaient, hausserai, haussera, haussant
+2468	fr_w_mijoter	mijoter	verb	food	to simmer	يطهو على نار هادئة		mijote, mijotes, mijotons, mijotez, mijotent, mijoté, mijotée, mijotés, mijotais, mijotait, mijotaient, mijoterai, mijotera, mijotant
+2469	fr_w_abattre	abattre	verb	animals	to slaughter, to knock down	يذبح، يهدم		abats, abat, abattent, abattu, abattue	irregular=yes
+2470	fr_w_renifler	renifler	verb	senses	to sniff	يشمّ		renifle, renifles, reniflons, reniflez, reniflent, reniflé, reniflée, reniflés, reniflais, reniflait, reniflaient, reniflerai, reniflera, reniflant
+2471	fr_w_semer	semer	verb	nature	to sow	يبذر		semons, semez, semé, semée, semés, semais, semait, semaient, semant, sème, sèment
+2472	fr_w_se_fouler	se fouler	verb	health	to sprain	يلوي		foule, foules, foulons, foulez, foulent, foulé, foulée, foulés, foulais, foulait, foulaient, foulerai, foulera, foulant, fouler
+2473	fr_w_saupoudrer	saupoudrer	verb	food	to sprinkle	يرشّ		saupoudre, saupoudres, saupoudrons, saupoudrez, saupoudrent, saupoudré, saupoudrée, saupoudrés, saupoudrais, saupoudrait, saupoudraient, saupoudrerai, saupoudrera, saupoudrant
+2474	fr_w_germer	germer	verb	nature	to sprout	ينبت		germe, germes, germons, germez, germent, germé, germée, germés, germais, germait, germaient, germerai, germera, germant
+2475	fr_w_submerger	submerger	verb	nature	to submerge	يغمر		submerge, submerges, submergeons, submergez, submergent, submergé, submergée, submergés, submergeais, submergeait, submergeaient, submergerai, submergera, submergeant
+2476	fr_w_reprimer	réprimer	verb	feelings	to suppress	يكبت		réprimons, réprimez, réprimé, réprimée, réprimés, réprimais, réprimait, réprimaient, réprimant, réprime, répriment
+2477	fr_w_se_balancer	se balancer	verb	movement	to sway	يتمايل		balance, balances, balançons, balancez, balancent, balancé, balancée, balancés, balançais, balançait, balançaient, balancerai, balancera, balançant, balancer
+2478	fr_w_gonfler	gonfler	verb	health	to swell, to inflate	ينتفخ		gonfle, gonfles, gonflons, gonflez, gonflent, gonflé, gonflée, gonflés, gonflais, gonflait, gonflaient, gonflerai, gonflera, gonflant
+2479	fr_w_incliner	incliner	verb	movement	to tilt	يميل		incline, inclines, inclinons, inclinez, inclinent, incliné, inclinée, inclinés, inclinais, inclinait, inclinaient, inclinerai, inclinera, inclinant
+2480	fr_w_transmettre	transmettre	verb	communication	to transmit	ينقل		transmets, transmet, transmettent, transmis, transmise	irregular=yes
+2481	fr_w_degringoler	dégringoler	verb	movement	to tumble	يتدحرج		dégringole, dégringoles, dégringolons, dégringolez, dégringolent, dégringolé, dégringolée, dégringolés, dégringolais, dégringolait, dégringolaient, dégringolerai, dégringolera, dégringolant
+2482	fr_w_se_faner	se faner	verb	nature	to wither	يذبل		fane, fanes, fanons, fanez, fanent, fané, fanée, fanés, fanais, fanait, fanaient, fanerai, fanera, fanant, faner
+2483	fr_w_vaciller	vaciller	verb	movement	to wobble	يتمايل		vacille, vacilles, vacillons, vacillez, vacillent, vacillé, vacillée, vacillés, vacillais, vacillait, vacillaient, vacillerai, vacillera, vacillant
+2484	fr_w_aspirer	aspirer	verb	feelings	to aspire, to yearn	يتطلّع		aspire, aspires, aspirons, aspirez, aspirent, aspiré, aspirée, aspirés, aspirais, aspirait, aspiraient, aspirerai, aspirera, aspirant
+2485	fr_w_eliminer	éliminer	verb	actions	to eliminate	يزيل		élimine, élimines, éliminons, éliminez, éliminent, éliminé, éliminée, éliminés, éliminais, éliminait, éliminaient, éliminerai, éliminera, éliminant
+2486	fr_w_agrandir	agrandir	verb	actions	to enlarge	يكبّر		agrandis, agrandit, agrandissent, agrandi	irregular=yes
+2487	fr_w_se_revolter	se révolter	verb	society	to rebel	يتمرّد		révolte, révoltes, révoltons, révoltez, révoltent, révolté, révoltée, révoltés, révoltais, révoltait, révoltaient, révolterai, révoltera, révoltant, révolter
+2488	fr_w_renforcer	renforcer	verb	actions	to reinforce	يعزّز		renforce, renforces, renforçons, renforcez, renforcent, renforcé, renforcée, renforcés, renforçais, renforçait, renforçaient, renforcerai, renforcera, renforçant
+2489	fr_w_convoquer	convoquer	verb	people	to summon	يستدعي		convoque, convoques, convoquons, convoquez, convoquent, convoqué, convoquée, convoqués, convoquais, convoquait, convoquaient, convoquerai, convoquera, convoquant
+2490	fr_w_violer	violer	verb	society	to violate	ينتهك		viole, violes, violons, violez, violent, violé, violée, violés, violais, violait, violaient, violerai, violera, violant
+2491	fr_w_preserver	préserver	verb	nature	to preserve	يحفظ		préserve, préserves, préservons, préservez, préservent, préservé, préservée, préservés, préservais, préservait, préservaient, préserverai, préservera, préservant
+2492	fr_w_acquerir	acquérir	verb	work	to acquire	يكتسب		acquiers, acquiert, acquièrent, acquis, acquise	irregular=yes
+2493	fr_w_heurter	heurter	verb	travel	to collide with	يصطدم		heurte, heurtes, heurtons, heurtez, heurtent, heurté, heurtée, heurtés, heurtais, heurtait, heurtaient, heurterai, heurtera, heurtant
+2494	fr_w_extraire	extraire	verb	actions	to extract	يستخرج		extrais, extrait, extraient	irregular=yes
+2495	fr_w_presumer	présumer	verb	mind	to presume	يفترض		présume, présumes, présumons, présumez, présument, présumé, présumée, présumés, présumais, présumait, présumaient, présumerai, présumera, présumant
+2496	fr_w_preciser	préciser	verb	communication	to specify	يحدّد		précise, précises, précisons, précisez, précisent, précisé, précisée, précisés, précisais, précisait, précisaient, préciserai, précisera, précisant
+2497	fr_w_s_evanouir	s'évanouir	verb	health	to faint	يغمى عليه		évanouis, évanouit, évanoui, évanouie, évanouir	irregular=yes
+2498	fr_w_ronfler	ronfler	verb	body	to snore	يشخر		ronfle, ronfles, ronflons, ronflez, ronflent, ronflé, ronflée, ronflés, ronflais, ronflait, ronflaient, ronflerai, ronflera, ronflant
+2499	fr_w_petrir	pétrir	verb	food	to knead	يعجن		pétris, pétrit, pétrissent, pétri	irregular=yes
+2500	fr_w_eplucher	éplucher	verb	food	to peel	يقشّر		épluche, épluches, épluchons, épluchez, épluchent, épluché, épluchée, épluchés, épluchais, épluchait, épluchaient, éplucherai, épluchera, épluchant
+2501	fr_w_raper	râper	verb	food	to grate	يبشر		râpe, râpes, râpons, râpez, râpent, râpé, râpée, râpés, râpais, râpait, râpaient, râperai, râpera, râpant
+2502	fr_w_bouillir	bouillir	verb	food	to boil	يغلي		bous, bout, bouillent, bouilli	irregular=yes
+2503	fr_w_frire	frire	verb	food	to fry	يقلي		fris, frit, frite	irregular=yes
+2504	fr_w_goutter	goutter	verb	home	to drip	يقطر		goutte, gouttes, gouttons, gouttez, gouttent, goutté, gouttée, gouttés, gouttais, gouttait, gouttaient, goutterai, gouttera, gouttant
+2505	fr_w_coudre	coudre	verb	clothes	to sew	يخيط		couds, coud, cousent, cousu, cousue	irregular=yes
+2506	fr_w_caliner	câliner	verb	people	to cuddle	يحضن		câline, câlines, câlinons, câlinez, câlinent, câliné, câlinée, câlinés, câlinais, câlinait, câlinaient, câlinerai, câlinera, câlinant
+2507	fr_w_envier	envier	verb	feelings	to envy	يحسد		envie, envies, envions, enviez, envient, envié, enviée, enviés, enviais, enviait, enviaient, envierai, enviera, enviant
+2508	fr_w_memoriser	mémoriser	verb	school	to memorise	يحفظ		mémorise, mémorises, mémorisons, mémorisez, mémorisent, mémorisé, mémorisée, mémorisés, mémorisais, mémorisait, mémorisaient, mémoriserai, mémorisera, mémorisant
+2509	fr_w_presser	presser	verb	actions	to squeeze, to press	يعصر		presse, presses, pressons, pressez, pressent, pressé, pressée, pressés, pressais, pressait, pressaient, presserai, pressera, pressant
+2510	fr_w_sculpter	sculpter	verb	actions	to carve	ينحت		sculpte, sculptes, sculptons, sculptez, sculptent, sculpté, sculptée, sculptés, sculptais, sculptait, sculptaient, sculpterai, sculptera, sculptant
+2511	fr_w_secouer	secouer	verb	actions	to shake	يهزّ		secoue, secoues, secouons, secouez, secouent, secoué, secouée, secoués, secouais, secouait, secouaient, secouerai, secouera, secouant
+2512	fr_w_elaguer	élaguer	verb	nature	to prune	يقلّم		élague, élagues, élaguons, élaguez, élaguent, élagué, élaguée, élagués, élaguais, élaguait, élaguaient, élaguerai, élaguera, élaguant
+2513	fr_w_bocal	bocal	noun	home	jar	مرطبان		bocaux	gender=m; article=le
+2514	fr_w_domaine	domaine	noun	places	estate, field	ضيعة، مجال			gender=m; article=le
+2515	fr_w_abondance	abondance	noun	function	abundance	وفرة			gender=f; article=l'
+2516	fr_w_adolescence	adolescence	noun	people	adolescence	مراهقة			gender=f; article=l'
+2517	fr_w_angoisse	angoisse	noun	feelings	anguish	ضيق			gender=f; article=l'
+2518	fr_w_apprenti	apprenti	noun	work	apprentice	متدرّب			gender=m; article=l'
+2519	fr_w_archives	archives	noun	work	archives	أرشيف			gender=f; article=l'
+2520	fr_w_arrogance	arrogance	noun	feelings	arrogance	غرور			gender=f; article=l'
+2521	fr_w_asile	asile	noun	society	asylum	لجوء			gender=m; article=l'
+2522	fr_w_scrutin	scrutin	noun	society	ballot	اقتراع			gender=m; article=le
+2523	fr_w_banquet	banquet	noun	food	banquet	مأدبة			gender=m; article=le
+2524	fr_w_orge	orge	noun	food	barley	شعير			gender=f; article=l'
+2525	fr_w_bec	bec	noun	animals	beak	منقار			gender=m; article=le
+2526	fr_w_tempete_de_neige	tempête de neige	noun	weather	blizzard	عاصفة ثلجية			gender=f; article=la
+2527	fr_w_victime	victime	noun	health	victim, casualty	ضحية			gender=f; article=la
+2528	fr_w_carie	carie	noun	health	tooth decay	تسوّس			gender=f; article=la
+2529	fr_w_cadavre	cadavre	noun	health	corpse	جثّة			gender=m; article=le
+2530	fr_w_poignard	poignard	noun	society	dagger	خنجر			gender=m; article=le
+2531	fr_w_decombres	décombres	noun	function	rubble	ركام			gender=m; article=le
+2532	fr_w_crepuscule	crépuscule	noun	time	dusk	غسق			gender=m; article=le
+2533	fr_w_epidemie	épidémie	noun	health	epidemic	وباء			gender=f; article=l'
+2534	fr_w_erosion	érosion	noun	nature	erosion	تآكل			gender=f; article=l'
+2535	fr_w_engrais	engrais	noun	nature	fertiliser	سماد			gender=m; article=l'
+2536	fr_w_forteresse	forteresse	noun	places	fortress	حصن			gender=f; article=la
+2537	fr_w_fossile	fossile	noun	nature	fossil	أحفورة			gender=m; article=le
+2538	fr_w_gratitude	gratitude	noun	feelings	gratitude	امتنان			gender=f; article=la
+2539	fr_w_meule_de_foin	meule de foin	noun	nature	haystack	كومة قشّ			gender=f; article=la
+2540	fr_w_heritier	héritier	noun	family	heir	وريث			gender=m; article=l'
+2541	fr_w_otage	otage	noun	society	hostage	رهينة			gender=m; article=l'
+2542	fr_w_humilite	humilité	noun	feelings	humility	تواضع			gender=f; article=l'
+2543	fr_w_hymne	hymne	noun	leisure	hymn, anthem	نشيد			gender=m; article=l'
+2544	fr_w_heritage	héritage	noun	family	inheritance	ميراث			gender=m; article=l'
+2545	fr_w_insomnie	insomnie	noun	health	insomnia	أرق			gender=f; article=l'
+2546	fr_w_integrite	intégrité	noun	feelings	integrity	نزاهة			gender=f; article=l'
+2547	fr_w_ironie	ironie	noun	communication	irony	سخرية			gender=f; article=l'
+2548	fr_w_jalousie	jalousie	noun	feelings	jealousy	غيرة			gender=f; article=la
+2549	fr_w_glissement_de_terrain	glissement de terrain	noun	nature	landslide	انهيار أرضي			gender=m; article=le
+2550	fr_w_lanterne	lanterne	noun	home	lantern	فانوس			gender=f; article=la
+2551	fr_w_loyaute	loyauté	noun	feelings	loyalty	وفاء			gender=f; article=la
+2552	fr_w_berceuse	berceuse	noun	leisure	lullaby	تهويدة			gender=f; article=la
+2553	fr_w_pitie	pitié	noun	feelings	mercy, pity	رحمة، شفقة			gender=f; article=la
+2554	fr_w_prairie	prairie	noun	nature	meadow	مرج			gender=f; article=la
+2555	fr_w_betise	bêtise	noun	people	mischief, silly thing	حماقة			gender=f; article=la
+2556	fr_w_mosaique	mosaïque	noun	leisure	mosaic	فسيفساء			gender=f; article=la
+2557	fr_w_nostalgie	nostalgie	noun	feelings	nostalgia	حنين			gender=f; article=la
+2558	fr_w_serment	serment	noun	communication	oath	قسم			gender=m; article=le
+2559	fr_w_verger	verger	noun	nature	orchard	بستان			gender=m; article=le
+2560	fr_w_orphelin	orphelin	noun	people	orphan	يتيم			gender=m; article=l'
+2561	fr_w_pelerin	pèlerin	noun	society	pilgrim	حاجّ			gender=m; article=le
+2562	fr_w_peste	peste	noun	health	plague	طاعون			gender=f; article=la
+2563	fr_w_prejuge	préjugé	noun	society	prejudice	تحيّز			gender=m; article=le
+2564	fr_w_prophetie	prophétie	noun	society	prophecy	نبوءة			gender=f; article=la
+2565	fr_w_rancon	rançon	noun	society	ransom	فدية			gender=f; article=la
+2566	fr_w_remords	remords	noun	feelings	remorse	ندم			gender=m; article=le
+2567	fr_w_devinette	devinette	noun	leisure	riddle	لغز			gender=f; article=la
+2568	fr_w_selle	selle	noun	animals	saddle	سرج			gender=f; article=la
+2569	fr_w_cicatrice	cicatrice	noun	health	scar	ندبة			gender=f; article=la
+2570	fr_w_epouvantail	épouvantail	noun	nature	scarecrow	فزّاعة			gender=m; article=l'
+2571	fr_w_mepris	mépris	noun	feelings	scorn	ازدراء			gender=m; article=le
+2572	fr_w_berger	berger	noun	people	shepherd	راعٍ			gender=m; article=le
+2573	fr_w_sanctuaire	sanctuaire	noun	places	shrine	ضريح			gender=m; article=le
+2574	fr_w_echarde	écharde	noun	home	splinter	شظيّة			gender=f; article=l'
+2575	fr_w_marecage	marécage	noun	nature	swamp	مستنقع			gender=m; article=le
+2576	fr_w_epine	épine	noun	nature	thorn	شوكة			gender=f; article=l'
+2577	fr_w_trahison	trahison	noun	society	treason, betrayal	خيانة			gender=f; article=la
+2578	fr_w_tribu	tribu	noun	society	tribe	قبيلة			gender=f; article=la
+2579	fr_w_treve	trêve	noun	society	truce	هدنة			gender=f; article=la
+2580	fr_w_cuir	cuir	noun	clothes	leather	جلد			gender=m; article=le
+2581	fr_w_soie	soie	noun	clothes	silk	حرير			gender=f; article=la
+2582	fr_w_rustine	rustine	noun	clothes	patch	رقعة			gender=f; article=la
+2583	fr_w_gifle	gifle	noun	people	slap	صفعة			gender=f; article=la
+2584	fr_w_hematome	hématome	noun	health	bruise	كدمة			gender=m; article=l'
+2585	fr_w_brancard	brancard	noun	health	stretcher	نقّالة			gender=m; article=le
+2586	fr_w_bequille	béquille	noun	health	crutch	عكّاز			gender=f; article=la
+2587	fr_w_pouls	pouls	noun	health	pulse	نبض			gender=m; article=le
+2588	fr_w_vertige	vertige	noun	health	dizziness	دوار			gender=m; article=le
+2589	fr_w_nausee	nausée	noun	health	nausea	غثيان			gender=f; article=la
+2590	fr_w_colonne_vertebrale	colonne vertébrale	noun	body	spine	العمود الفقري			gender=f; article=la
+2591	fr_w_rein	rein	noun	body	kidney	كلية			gender=m; article=le
+2592	fr_w_foie	foie	noun	body	liver	كبد			gender=m; article=le
+2593	fr_w_veine	veine	noun	body	vein	وريد			gender=f; article=la
+2594	fr_w_salive	salive	noun	body	saliva	لعاب			gender=f; article=la
+2595	fr_w_hoquet	hoquet	noun	body	hiccups	فواق			gender=m; article=l'
+2596	fr_w_tempe	tempe	noun	body	temple	صدغ			gender=f; article=la
+2597	fr_w_paume	paume	noun	body	palm	كفّ			gender=f; article=la
+2598	fr_w_grain_de_beaute	grain de beauté	noun	body	mole, beauty spot	شامة			gender=m; article=le
+2599	fr_w_tache_de_rousseur	tache de rousseur	noun	body	freckle	نمش			gender=f; article=la
+2600	fr_w_ride	ride	noun	body	wrinkle	تجعّد			gender=f; article=la
+2601	fr_w_abrupt	abrupt	adj	descriptions	abrupt, steep	مفاجئ، وعر		abrupte, abrupts
+2602	fr_w_absurde	absurde	adj	descriptions	absurd	سخيف		absurdes
+2603	fr_w_agile	agile	adj	people	agile	رشيق		agiles
+2604	fr_w_aride	aride	adj	nature	arid	قاحل		arides
+2605	fr_w_morne	morne	adj	descriptions	bleak, dull	كئيب		mornes
+2606	fr_w_emousse	émoussé	adj	descriptions	blunt	كليل		émoussée, émoussés
+2607	fr_w_cassant	cassant	adj	descriptions	brittle	هشّ		cassante, cassants
+2608	fr_w_maladroit	maladroit	adj	people	clumsy	أخرق		maladroite, maladroits
+2609	fr_w_pieux	pieux	adj	society	devout	تقيّ		pieuse
+2610	fr_w_frele	frêle	adj	health	frail	واهن		frêles
+2611	fr_w_frenetique	frénétique	adj	feelings	frantic	محموم		frénétiques
+2612	fr_w_econome	économe	adj	shopping	thrifty	مقتصد		économes
+2613	fr_w_cupide	cupide	adj	people	greedy	جشع		cupides
+2614	fr_w_dentele	dentelé	adj	descriptions	jagged	مسنّن		dentelée
+2615	fr_w_luxueux	luxueux	adj	descriptions	luxurious	فخم		luxueuse
+2616	fr_w_docile	docile	adj	people	meek, docile	وديع		dociles
+2617	fr_w_trouble	trouble	adj	descriptions	murky, cloudy	عكر		troubles
+2618	fr_w_serein	serein	adj	feelings	serene	هادئ		sereine
+2619	fr_w_miteux	miteux	adj	descriptions	shabby	رثّ		miteuse
+2620	fr_w_aigre	aigre	adj	food	sour	حامض		aigres
+2621	fr_w_franchement	franchement	adv	function	frankly	بصراحة
+2622	fr_w_deliberement	délibérément	adv	function	deliberately	عمدًا
+2623	fr_w_neanmoins	néanmoins	adv	function	nevertheless	مع ذلك
+2624	fr_w_tandis_que	tandis que	adv	function	whereas	بينما
+2625	fr_w_par_consequent	par conséquent	adv	function	consequently	بالتالي
+2626	fr_w_poireau	poireau	noun	food	leek	كرّاث		poireaux	gender=m; article=le
+2627	fr_w_artichaut	artichaut	noun	food	artichoke	خرشوف			gender=m; article=l'
+2628	fr_w_chou_fleur	chou-fleur	noun	food	cauliflower	قرنبيط			gender=m; article=le
+2629	fr_w_radis	radis	noun	food	radish	فجل			gender=m; article=le
+2630	fr_w_betterave	betterave	noun	food	beetroot	شمندر			gender=f; article=la
+2631	fr_w_petit_pois	petit pois	noun	food	pea	بازلاء			gender=m; article=le
+2632	fr_w_pois_chiche	pois chiche	noun	food	chickpea	حمّص			gender=m; article=le
+2633	fr_w_lentille	lentille	noun	food	lentil	عدس			gender=f; article=la
+2634	fr_w_cannelle	cannelle	noun	food	cinnamon	قرفة			gender=f; article=la
+2635	fr_w_cumin	cumin	noun	food	cumin	كمّون			gender=m; article=le
+2636	fr_w_menthe	menthe	noun	food	mint	نعناع			gender=f; article=la
+2637	fr_w_persil	persil	noun	food	parsley	بقدونس			gender=m; article=le
+2638	fr_w_veau	veau	noun	animals	calf, veal	عجل		veaux	gender=m; article=le
+2639	fr_w_poussin	poussin	noun	animals	chick	صوص			gender=m; article=le
+2640	fr_w_faucon	faucon	noun	animals	falcon	صقر			gender=m; article=le
+2641	fr_w_cigogne	cigogne	noun	animals	stork	لقلق			gender=f; article=la
+2642	fr_w_mouette	mouette	noun	animals	seagull	نورس			gender=f; article=la
+2643	fr_w_pente	pente	noun	nature	slope	منحدر			gender=f; article=la
+2644	fr_w_arc_en_ciel	arc-en-ciel	noun	weather	rainbow	قوس قزح			gender=m; article=l'
+2645	fr_w_pin	pin	noun	nature	pine	صنوبر			gender=m; article=le
+2646	fr_w_chene	chêne	noun	nature	oak	بلّوط			gender=m; article=le
+2647	fr_w_mousse	mousse	noun	nature	moss, foam	طحلب، رغوة			gender=f; article=la
+2648	fr_w_ecurie	écurie	noun	places	stable	إسطبل			gender=f; article=l'
+2649	fr_w_balancoire	balançoire	noun	leisure	swing	أرجوحة			gender=f; article=la
+2650	fr_w_cerf_volant	cerf-volant	noun	leisure	kite	طائرة ورقية			gender=m; article=le
+2651	fr_w_echecs	échecs	noun	leisure	chess	شطرنج			gender=m; article=l'
+2652	fr_w_marionnette	marionnette	noun	leisure	puppet	دمية متحرّكة			gender=f; article=la
+2653	fr_w_jumelles	jumelles	noun	travel	binoculars	منظار			gender=f; article=la
+2654	fr_w_verrou	verrou	noun	home	bolt	مزلاج			gender=m; article=le
+2655	fr_w_panier	panier	noun	home	basket	سلّة			gender=m; article=le
+2656	fr_w_entonnoir	entonnoir	noun	home	funnel	قمع			gender=m; article=l'
+2657	fr_w_carafe	carafe	noun	home	jug, carafe	إبريق			gender=f; article=la
+2658	fr_w_allumette	allumette	noun	home	match	عود ثقاب			gender=f; article=l'
+2659	fr_w_cendre	cendre	noun	home	ash	رماد			gender=f; article=la
+2660	fr_w_etincelle	étincelle	noun	home	spark	شرارة			gender=f; article=l'
+2661	fr_w_rouille	rouille	noun	descriptions	rust	صدأ			gender=f; article=la
+2662	fr_w_fissure	fissure	noun	home	crack	شقّ			gender=f; article=la
+2663	fr_w_tournevis	tournevis	noun	work	screwdriver	مفكّ			gender=m; article=le
+2664	fr_w_fil_de_fer	fil de fer	noun	work	wire	سلك			gender=m; article=le
+2665	fr_w_vase	vase	noun	home	vase	مزهرية			gender=m; article=le
+2666	fr_w_louche	louche	noun	home	ladle	مغرفة			gender=f; article=la
+2667	fr_w_passoire	passoire	noun	home	colander	مصفاة			gender=f; article=la
+2668	fr_w_theiere	théière	noun	home	teapot	إبريق شاي			gender=f; article=la
+2669	fr_w_arrosoir	arrosoir	noun	home	watering can	مرشّة			gender=m; article=l'
+2670	fr_w_tuyau	tuyau	noun	home	hose, pipe	خرطوم		tuyaux	gender=m; article=le
+2671	fr_w_rateau	râteau	noun	nature	rake	مدمّة		râteaux	gender=m; article=le
+2672	fr_w_grillon	grillon	noun	animals	cricket	صرصور الليل			gender=m; article=le
+2673	fr_w_mulet	mulet	noun	animals	mule	بغل			gender=m; article=le
+2674	fr_w_griffe	griffe	noun	animals	claw	مخلب			gender=f; article=la
+2675	fr_w_ecaille	écaille	noun	animals	scale (fish)	حرشفة			gender=f; article=l'
+2676	fr_w_sabot	sabot	noun	animals	hoof	حافر			gender=m; article=le
+2677	fr_w_amasser	amasser	verb	actions	to amass	يكدّس		amasse, amasses, amassons, amassez, amassent, amassé, amassée, amassés, amassais, amassait, amassaient, amasserai, amassera, amassant
+2678	fr_w_apaiser	apaiser	verb	feelings	to soothe	يهدّئ		apaise, apaises, apaisons, apaisez, apaisent, apaisé, apaisée, apaisés, apaisais, apaisait, apaisaient, apaiserai, apaisera, apaisant
+2679	fr_w_bacler	bâcler	verb	work	to botch, to rush	يتسرّع في العمل		bâcle, bâcles, bâclons, bâclez, bâclent, bâclé, bâclée, bâclés, bâclais, bâclait, bâclaient, bâclerai, bâclera, bâclant
+2680	fr_w_chuter	chuter	verb	movement	to fall, to drop	يسقط		chute, chutes, chutons, chutez, chutent, chuté, chutée, chutés, chutais, chutait, chutaient, chuterai, chutera, chutant
+2681	fr_w_dechiffrer	déchiffrer	verb	school	to decipher	يفكّ الرموز		déchiffre, déchiffres, déchiffrons, déchiffrez, déchiffrent, déchiffré, déchiffrée, déchiffrés, déchiffrais, déchiffrait, déchiffraient, déchiffrerai, déchiffrera, déchiffrant
+2682	fr_w_decortiquer	décortiquer	verb	food	to shell, to analyse	يقشّر		décortique, décortiques, décortiquons, décortiquez, décortiquent, décortiqué, décortiquée, décortiqués, décortiquais, décortiquait, décortiquaient, décortiquerai, décortiquera, décortiquant
+2683	fr_w_dissiper	dissiper	verb	actions	to dispel	يبدّد		dissipe, dissipes, dissipons, dissipez, dissipent, dissipé, dissipée, dissipés, dissipais, dissipait, dissipaient, dissiperai, dissipera, dissipant
+2684	fr_w_effleurer	effleurer	verb	senses	to brush lightly	يلامس		effleure, effleures, effleurons, effleurez, effleurent, effleuré, effleurée, effleurés, effleurais, effleurait, effleuraient, effleurerai, effleurera, effleurant
+2685	fr_w_emietter	émietter	verb	food	to crumble	يفتّت		émiette, émiettes, émiettons, émiettez, émiettent, émietté, émiettée, émiettés, émiettais, émiettait, émiettaient, émietterai, émiettera, émiettant
+2686	fr_w_engloutir	engloutir	verb	food	to gobble up	يلتهم		engloutis, engloutit, engloutissent, englouti	irregular=yes
+2687	fr_w_enjamber	enjamber	verb	movement	to step over	يتخطّى		enjambe, enjambes, enjambons, enjambez, enjambent, enjambé, enjambée, enjambés, enjambais, enjambait, enjambaient, enjamberai, enjambera, enjambant
+2688	fr_w_entasser	entasser	verb	actions	to pile up	يكدّس		entasse, entasses, entassons, entassez, entassent, entassé, entassée, entassés, entassais, entassait, entassaient, entasserai, entassera, entassant
+2689	fr_w_esquiver	esquiver	verb	movement	to dodge	يتفادى		esquive, esquives, esquivons, esquivez, esquivent, esquivé, esquivée, esquivés, esquivais, esquivait, esquivaient, esquiverai, esquivera, esquivant
+2690	fr_w_etouffer	étouffer	verb	health	to suffocate, to stifle	يختنق		étouffe, étouffes, étouffons, étouffez, étouffent, étouffé, étouffée, étouffés, étouffais, étouffait, étouffaient, étoufferai, étouffera, étouffant
+2691	fr_w_froisser	froisser	verb	actions	to crumple	يجعّد		froisse, froisses, froissons, froissez, froissent, froissé, froissée, froissés, froissais, froissait, froissaient, froisserai, froissera, froissant
+2692	fr_w_hocher	hocher	verb	body	to nod (head)	يومئ		hoche, hoches, hochons, hochez, hochent, hoché, hochée, hochés, hochais, hochait, hochaient, hocherai, hochera, hochant
+2693	fr_w_lecher	lécher	verb	actions	to lick	يلعق		léchons, léchez, léché, léchée, léchés, léchais, léchait, léchaient, léchant, lèche, lèchent
+2694	fr_w_ricaner	ricaner	verb	people	to snigger	يضحك بسخرية		ricane, ricanes, ricanons, ricanez, ricanent, ricané, ricanée, ricanés, ricanais, ricanait, ricanaient, ricanerai, ricanera, ricanant
+2695	fr_w_ruisseler	ruisseler	verb	nature	to stream, to trickle	يسيل		ruisselons, ruisselez, ruisselé, ruisselée, ruisselés, ruisselais, ruisselait, ruisselaient, ruisselant, ruisselle, ruissellent
+2696	fr_w_sautiller	sautiller	verb	movement	to hop	يقفز قفزات صغيرة		sautille, sautilles, sautillons, sautillez, sautillent, sautillé, sautillée, sautillés, sautillais, sautillait, sautillaient, sautillerai, sautillera, sautillant
+2697	fr_w_somnoler	somnoler	verb	body	to doze	ينعس		somnole, somnoles, somnolons, somnolez, somnolent, somnolé, somnolée, somnolés, somnolais, somnolait, somnolaient, somnolerai, somnolera, somnolant
+2698	fr_w_trottiner	trottiner	verb	movement	to trot along	يهرول		trottine, trottines, trottinons, trottinez, trottinent, trottiné, trottinée, trottinés, trottinais, trottinait, trottinaient, trottinerai, trottinera, trottinant
+2699	fr_w_gazouiller	gazouiller	verb	animals	to chirp	يغرّد		gazouille, gazouilles, gazouillons, gazouillez, gazouillent, gazouillé, gazouillée, gazouillés, gazouillais, gazouillait, gazouillaient, gazouillerai, gazouillera, gazouillant
+2700	fr_w_rugir	rugir	verb	animals	to roar	يزأر		rugis, rugit, rugissent, rugi	irregular=yes
