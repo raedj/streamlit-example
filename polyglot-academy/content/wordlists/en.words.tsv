@@ -2399,3 +2399,303 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2398	en_w_tender	tender	adj	feelings	tender	رقيق	/ˈtendə/
 2399	en_w_vague	vague	adj	mind	vague	غامض	/veɪɡ/
 2400	en_w_vivid	vivid	adj	descriptions	vivid	زاهٍ، حيّ	/ˈvɪvɪd/
+2401	en_w_assemble	assemble	verb	work	to assemble	يجمع، يركّب	/əˈsembl/
+2402	en_w_boast	boast	verb	communication	to boast	يتفاخر	/bəʊst/
+2403	en_w_confront	confront	verb	actions	to confront	يواجه	/kənˈfrʌnt/
+2404	en_w_eliminate	eliminate	verb	function	to eliminate	يزيل، يقصي	/ɪˈlɪmɪneɪt/
+2405	en_w_enlarge	enlarge	verb	function	to enlarge	يكبّر	/ɪnˈlɑːdʒ/
+2406	en_w_illustrate	illustrate	verb	school	to illustrate	يوضّح بالرسم	/ˈɪləstreɪt/
+2407	en_w_linger	linger	verb	time	to linger	يتباطأ في الرحيل	/ˈlɪŋɡə/
+2408	en_w_nominate	nominate	verb	people	to nominate	يرشّح	/ˈnɒmɪneɪt/
+2409	en_w_overtake	overtake	verb	travel	to overtake	يتجاوز	/ˌəʊvəˈteɪk/	overtook, overtaken	irregular=yes
+2410	en_w_rebel	rebel	verb	people	to rebel	يتمرّد	/rɪˈbel/	rebels, rebelled, rebelling
+2411	en_w_reinforce	reinforce	verb	function	to reinforce	يعزّز	/ˌriːɪnˈfɔːs/
+2412	en_w_revise	revise	verb	school	to revise	يراجع	/rɪˈvaɪz/
+2413	en_w_summon	summon	verb	people	to summon	يستدعي	/ˈsʌmən/
+2414	en_w_thrive	thrive	verb	nature	to thrive	يزدهر	/θraɪv/
+2415	en_w_violate	violate	verb	people	to violate	ينتهك	/ˈvaɪəleɪt/
+2416	en_w_deposit	deposit	verb	shopping	to deposit; a deposit	يودع؛ عربون	/dɪˈpɒzɪt/
+2417	en_w_preserve	preserve	verb	nature	to preserve	يحفظ	/prɪˈzɜːv/
+2418	en_w_unite	unite	verb	people	to unite	يوحّد	/juˈnaɪt/
+2419	en_w_capacity	capacity	noun	numbers	capacity	سعة، قدرة	/kəˈpæsəti/
+2420	en_w_donation	donation	noun	people	donation	تبرّع	/dəʊˈneɪʃn/
+2421	en_w_grief	grief	noun	feelings	grief	حزن	/ɡriːf/
+2422	en_w_jar	jar	noun	home	jar	برطمان	/dʒɑː/
+2423	en_w_muscle	muscle	noun	body	muscle	عضلة	/ˈmʌsl/
+2424	en_w_proof	proof	noun	mind	proof	دليل	/pruːf/
+2425	en_w_original	original	adj	descriptions	original	أصلي	/əˈrɪdʒənl/
+2426	en_w_typical	typical	adj	descriptions	typical	نموذجي	/ˈtɪpɪkl/
+2427	en_w_acquire	acquire	verb	function	to acquire	يكتسب	/əˈkwaɪə/
+2428	en_w_collide	collide	verb	travel	to collide	يصطدم	/kəˈlaɪd/
+2429	en_w_depart	depart	verb	travel	to depart	يغادر	/dɪˈpɑːt/
+2430	en_w_distinguish	distinguish	verb	mind	to distinguish	يميّز	/dɪˈstɪŋɡwɪʃ/
+2431	en_w_extract	extract	verb	actions	to extract	يستخرج	/ɪkˈstrækt/
+2432	en_w_fulfil	fulfil	verb	work	to fulfil	يحقّق	/fʊlˈfɪl/
+2433	en_w_insure	insure	verb	shopping	to insure	يؤمّن	/ɪnˈʃʊə/
+2434	en_w_presume	presume	verb	mind	to presume	يفترض	/prɪˈzjuːm/
+2435	en_w_secure	secure	verb	function	to secure	يؤمّن	/sɪˈkjʊə/
+2436	en_w_specify	specify	verb	communication	to specify	يحدّد	/ˈspesɪfaɪ/
+2437	en_w_admission	admission	noun	school	admission	قبول، دخول	/ədˈmɪʃn/
+2438	en_w_allowance	allowance	noun	shopping	allowance, pocket money	مصروف	/əˈlaʊəns/
+2439	en_w_approval	approval	noun	people	approval	موافقة	/əˈpruːvl/
+2440	en_w_axe	axe	noun	home	axe	فأس	/æks/
+2441	en_w_barn	barn	noun	nature	barn	حظيرة	/bɑːn/
+2442	en_w_blessing	blessing	noun	people	blessing	نعمة	/ˈblesɪŋ/
+2443	en_w_broom	broom	noun	home	broom	مكنسة	/bruːm/
+2444	en_w_canvas	canvas	noun	leisure	canvas	قماش الرسم	/ˈkænvəs/
+2445	en_w_chimney	chimney	noun	home	chimney	مدخنة	/ˈtʃɪmni/
+2446	en_w_coffin	coffin	noun	people	coffin	تابوت	/ˈkɒfɪn/
+2447	en_w_compliment	compliment	noun	communication	compliment	إطراء	/ˈkɒmplɪmənt/
+2448	en_w_contest	contest	noun	leisure	contest	مسابقة	/ˈkɒntest/
+2449	en_w_crane	crane	noun	work	crane	رافعة	/kreɪn/
+2450	en_w_dairy	dairy	noun	food	dairy	ألبان	/ˈdeəri/
+2451	en_w_descendant	descendant	noun	family	descendant	سليل	/dɪˈsendənt/
+2452	en_w_ditch	ditch	noun	places	ditch	خندق	/dɪtʃ/
+2453	en_w_dune	dune	noun	nature	dune	كثيب رملي	/djuːn/
+2454	en_w_estate	estate	noun	home	estate	ملكية، عقار	/ɪˈsteɪt/
+2455	en_w_fang	fang	noun	animals	fang	ناب	/fæŋ/
+2456	en_w_frank	frank	adj	people	frank	صريح	/fræŋk/
+2457	en_w_humid	humid	adj	weather	humid	رطب	/ˈhjuːmɪd/
+2458	en_w_moist	moist	adj	descriptions	moist	رطب	/mɔɪst/
+2459	en_w_punctual	punctual	adj	time	punctual	دقيق في مواعيده	/ˈpʌŋktʃuəl/
+2460	en_w_sour	sour	adj	food	sour	حامض	/ˈsaʊə/
+2461	en_w_timid	timid	adj	people	timid	خجول	/ˈtɪmɪd/
+2462	en_w_abolish	abolish	verb	society	to abolish	يلغي	/əˈbɒlɪʃ/
+2463	en_w_accelerate	accelerate	verb	movement	to accelerate	يسرّع	/əkˈseləreɪt/
+2464	en_w_accommodate	accommodate	verb	travel	to accommodate	يستوعب، يسكن	/əˈkɒmədeɪt/
+2465	en_w_advocate	advocate	verb	communication	to advocate; an advocate	يدعو إلى؛ مناصر	/ˈædvəkeɪt/
+2466	en_w_allocate	allocate	verb	work	to allocate	يخصّص	/ˈæləkeɪt/
+2467	en_w_appoint	appoint	verb	work	to appoint	يعيّن	/əˈpɔɪnt/
+2468	en_w_assure	assure	verb	communication	to assure	يؤكّد لـ	/əˈʃʊə/
+2469	en_w_attain	attain	verb	work	to attain	يبلغ، يحقّق	/əˈteɪn/
+2470	en_w_bleed	bleed	verb	health	to bleed	ينزف	/bliːd/	bled	irregular=yes
+2471	en_w_blend	blend	verb	food	to blend	يمزج	/blend/
+2472	en_w_cease	cease	verb	time	to cease	يتوقّف	/siːs/
+2473	en_w_cite	cite	verb	school	to cite	يستشهد بـ	/saɪt/
+2474	en_w_cling	cling	verb	actions	to cling	يتشبّث	/klɪŋ/	clung	irregular=yes
+2475	en_w_coincide	coincide	verb	time	to coincide	يتزامن	/ˌkəʊɪnˈsaɪd/
+2476	en_w_compile	compile	verb	work	to compile	يجمع، يؤلّف	/kəmˈpaɪl/
+2477	en_w_comply	comply	verb	society	to comply	يمتثل	/kəmˈplaɪ/	complies, complied
+2478	en_w_concede	concede	verb	communication	to concede	يقرّ، يتنازل	/kənˈsiːd/
+2479	en_w_confine	confine	verb	actions	to confine	يحصر	/kənˈfaɪn/
+2480	en_w_contaminate	contaminate	verb	nature	to contaminate	يلوّث	/kənˈtæmɪneɪt/
+2481	en_w_contemplate	contemplate	verb	mind	to contemplate	يتأمّل	/ˈkɒntəmpleɪt/
+2482	en_w_convict	convict	verb	society	to convict; a convict	يدين؛ مدان	/kənˈvɪkt/
+2483	en_w_cram	cram	verb	school	to cram	يحشو، يذاكر بكثافة	/kræm/	crams, crammed, cramming
+2484	en_w_dazzle	dazzle	verb	senses	to dazzle	يبهر	/ˈdæzl/
+2485	en_w_deceive	deceive	verb	people	to deceive	يخدع	/dɪˈsiːv/
+2486	en_w_deduct	deduct	verb	shopping	to deduct	يخصم	/dɪˈdʌkt/
+2487	en_w_defy	defy	verb	people	to defy	يتحدّى	/dɪˈfaɪ/	defies, defied
+2488	en_w_demolish	demolish	verb	actions	to demolish	يهدم	/dɪˈmɒlɪʃ/
+2489	en_w_deprive	deprive	verb	society	to deprive	يحرم	/dɪˈpraɪv/
+2490	en_w_derive	derive	verb	mind	to derive	يستمدّ	/dɪˈraɪv/
+2491	en_w_deteriorate	deteriorate	verb	health	to deteriorate	يتدهور	/dɪˈtɪəriəreɪt/
+2492	en_w_dictate	dictate	verb	communication	to dictate	يملي	/dɪkˈteɪt/
+2493	en_w_digest	digest	verb	health	to digest	يهضم	/daɪˈdʒest/
+2494	en_w_dilute	dilute	verb	food	to dilute	يخفّف	/daɪˈluːt/
+2495	en_w_discard	discard	verb	actions	to discard	يتخلّص من	/dɪˈskɑːd/
+2496	en_w_dispose	dispose	verb	home	to dispose (of)	يتخلّص من	/dɪˈspəʊz/
+2497	en_w_distort	distort	verb	communication	to distort	يشوّه	/dɪˈstɔːt/
+2498	en_w_divert	divert	verb	travel	to divert	يحوّل	/daɪˈvɜːt/
+2499	en_w_drain	drain	verb	home	to drain; a drain	يصفّي؛ بالوعة	/dreɪn/
+2500	en_w_dwell	dwell	verb	home	to dwell	يسكن	/dwel/	dwelt	irregular=yes
+2501	en_w_embark	embark	verb	travel	to embark	يشرع، يركب	/ɪmˈbɑːk/
+2502	en_w_enclose	enclose	verb	communication	to enclose	يرفق	/ɪnˈkləʊz/
+2503	en_w_endorse	endorse	verb	work	to endorse	يؤيّد	/ɪnˈdɔːs/
+2504	en_w_enforce	enforce	verb	society	to enforce	يفرض	/ɪnˈfɔːs/
+2505	en_w_evacuate	evacuate	verb	actions	to evacuate	يخلي	/ɪˈvækjueɪt/
+2506	en_w_evaporate	evaporate	verb	nature	to evaporate	يتبخّر	/ɪˈvæpəreɪt/
+2507	en_w_exclude	exclude	verb	actions	to exclude	يستبعد	/ɪkˈskluːd/
+2508	en_w_exhale	exhale	verb	body	to exhale	يزفر	/eksˈheɪl/
+2509	en_w_exploit	exploit	verb	work	to exploit	يستغلّ	/ɪkˈsplɔɪt/
+2510	en_w_fluctuate	fluctuate	verb	function	to fluctuate	يتقلّب	/ˈflʌktʃueɪt/
+2511	en_w_forge	forge	verb	work	to forge	يزوّر، يصوغ	/fɔːdʒ/
+2512	en_w_gasp	gasp	verb	body	to gasp	يلهث	/ɡɑːsp/
+2513	en_w_glare	glare	verb	senses	to glare	يحدّق بغضب	/ɡleə/
+2514	en_w_grieve	grieve	verb	feelings	to grieve	يحزن	/ɡriːv/
+2515	en_w_grind	grind	verb	food	to grind	يطحن	/ɡraɪnd/	grinds, grinding
+2516	en_w_groan	groan	verb	body	to groan	يئنّ	/ɡrəʊn/
+2517	en_w_hinder	hinder	verb	actions	to hinder	يعيق	/ˈhɪndə/
+2518	en_w_hover	hover	verb	movement	to hover	يحوم	/ˈhɒvə/
+2519	en_w_hum	hum	verb	leisure	to hum	يدندن	/hʌm/	hums, hummed, humming
+2520	en_w_ignite	ignite	verb	actions	to ignite	يشعل	/ɪɡˈnaɪt/
+2521	en_w_inhale	inhale	verb	body	to inhale	يستنشق	/ɪnˈheɪl/
+2522	en_w_inject	inject	verb	health	to inject	يحقن	/ɪnˈdʒekt/
+2523	en_w_intervene	intervene	verb	people	to intervene	يتدخّل	/ˌɪntəˈviːn/
+2524	en_w_irritate	irritate	verb	feelings	to irritate	يزعج	/ˈɪrɪteɪt/
+2525	en_w_loosen	loosen	verb	actions	to loosen	يرخي	/ˈluːsn/
+2526	en_w_merge	merge	verb	work	to merge	يدمج	/mɜːdʒ/
+2527	en_w_mimic	mimic	verb	actions	to mimic	يحاكي	/ˈmɪmɪk/	mimics, mimicked, mimicking
+2528	en_w_moan	moan	verb	communication	to moan	يتذمّر	/məʊn/
+2529	en_w_modify	modify	verb	actions	to modify	يعدّل	/ˈmɒdɪfaɪ/	modifies, modified
+2530	en_w_mourn	mourn	verb	feelings	to mourn	ينعى، يحزن	/mɔːn/
+2531	en_w_mumble	mumble	verb	communication	to mumble	يتمتم	/ˈmʌmbl/
+2532	en_w_navigate	navigate	verb	travel	to navigate	يبحر، يجد طريقه	/ˈnævɪɡeɪt/
+2533	en_w_obstruct	obstruct	verb	actions	to obstruct	يعرقل	/əbˈstrʌkt/
+2534	en_w_omit	omit	verb	actions	to omit	يحذف	/əˈmɪt/	omits, omitted, omitting
+2535	en_w_oppress	oppress	verb	society	to oppress	يضطهد	/əˈpres/
+2536	en_w_overwhelm	overwhelm	verb	feelings	to overwhelm	يغمر	/ˌəʊvəˈwelm/
+2537	en_w_pant	pant	verb	body	to pant	يلهث	/pænt/
+2538	en_w_penetrate	penetrate	verb	actions	to penetrate	يخترق	/ˈpenɪtreɪt/
+2539	en_w_pierce	pierce	verb	actions	to pierce	يثقب	/pɪəs/
+2540	en_w_pledge	pledge	verb	communication	to pledge; a pledge	يتعهّد؛ تعهّد	/pledʒ/
+2541	en_w_plunge	plunge	verb	movement	to plunge	يغطس، يهبط	/plʌndʒ/
+2542	en_w_ponder	ponder	verb	mind	to ponder	يتأمّل	/ˈpɒndə/
+2543	en_w_precede	precede	verb	time	to precede	يسبق	/prɪˈsiːd/
+2544	en_w_proclaim	proclaim	verb	communication	to proclaim	يعلن	/prəˈkleɪm/
+2545	en_w_prosecute	prosecute	verb	society	to prosecute	يقاضي	/ˈprɒsɪkjuːt/
+2546	en_w_provoke	provoke	verb	people	to provoke	يستفزّ	/prəˈvəʊk/
+2547	en_w_punctuate	punctuate	verb	school	to punctuate	يضع علامات الترقيم	/ˈpʌŋktʃueɪt/
+2548	en_w_radiate	radiate	verb	nature	to radiate	يشعّ	/ˈreɪdieɪt/
+2549	en_w_rattle	rattle	verb	senses	to rattle; a rattle	يخشخش؛ خشخيشة	/ˈrætl/
+2550	en_w_reassure	reassure	verb	feelings	to reassure	يطمئن	/ˌriːəˈʃʊə/
+2551	en_w_reclaim	reclaim	verb	actions	to reclaim	يستعيد	/rɪˈkleɪm/
+2552	en_w_reconcile	reconcile	verb	people	to reconcile	يصالح	/ˈrekənsaɪl/
+2553	en_w_refine	refine	verb	actions	to refine	ينقّي، يحسّن	/rɪˈfaɪn/
+2554	en_w_refrain	refrain	verb	actions	to refrain	يمتنع	/rɪˈfreɪn/
+2555	en_w_relish	relish	verb	food	to relish	يستمتع بـ	/ˈrelɪʃ/
+2556	en_w_renovate	renovate	verb	home	to renovate	يجدّد	/ˈrenəveɪt/
+2557	en_w_repay	repay	verb	shopping	to repay	يسدّد	/rɪˈpeɪ/	repaid	irregular=yes
+2558	en_w_resent	resent	verb	feelings	to resent	يستاء من	/rɪˈzent/
+2559	en_w_restrain	restrain	verb	actions	to restrain	يكبح	/rɪˈstreɪn/
+2560	en_w_retrieve	retrieve	verb	actions	to retrieve	يسترجع	/rɪˈtriːv/
+2561	en_w_rinse	rinse	verb	home	to rinse	يشطف	/rɪns/
+2562	en_w_roam	roam	verb	movement	to roam	يتجوّل	/rəʊm/
+2563	en_w_rot	rot	verb	nature	to rot	يتعفّن	/rɒt/	rots, rotted, rotting
+2564	en_w_rumble	rumble	verb	senses	to rumble	يقرقر، يدوّي	/ˈrʌmbl/
+2565	en_w_scold	scold	verb	people	to scold	يوبّخ	/skəʊld/
+2566	en_w_scrape	scrape	verb	actions	to scrape	يكشط	/skreɪp/
+2567	en_w_scribble	scribble	verb	school	to scribble	يخربش	/ˈskrɪbl/
+2568	en_w_seize	seize	verb	actions	to seize	يستولي على	/siːz/
+2569	en_w_shatter	shatter	verb	actions	to shatter	يحطّم	/ˈʃætə/
+2570	en_w_shrug	shrug	verb	body	to shrug	يهزّ كتفيه	/ʃrʌɡ/	shrugs, shrugged, shrugging
+2571	en_w_simmer	simmer	verb	food	to simmer	يطهو على نار هادئة	/ˈsɪmə/
+2572	en_w_skim	skim	verb	school	to skim	يتصفّح بسرعة	/skɪm/	skims, skimmed, skimming
+2573	en_w_slaughter	slaughter	verb	animals	to slaughter	يذبح	/ˈslɔːtə/
+2574	en_w_sniff	sniff	verb	senses	to sniff	يشمّ	/snɪf/
+2575	en_w_sob	sob	verb	feelings	to sob	ينتحب	/sɒb/	sobs, sobbed, sobbing
+2576	en_w_sow	sow	verb	nature	to sow	يبذر	/səʊ/	sown	irregular=yes
+2577	en_w_sprain	sprain	verb	health	to sprain	يلوي	/spreɪn/
+2578	en_w_sprinkle	sprinkle	verb	food	to sprinkle	يرشّ	/ˈsprɪŋkl/
+2579	en_w_sprout	sprout	verb	nature	to sprout	ينبت	/spraʊt/
+2580	en_w_stagger	stagger	verb	movement	to stagger	يترنّح	/ˈstæɡə/
+2581	en_w_stammer	stammer	verb	communication	to stammer	يتلعثم	/ˈstæmə/
+2582	en_w_startle	startle	verb	feelings	to startle	يُجفل	/ˈstɑːtl/
+2583	en_w_submerge	submerge	verb	nature	to submerge	يغمر	/səbˈmɜːdʒ/
+2584	en_w_suppress	suppress	verb	feelings	to suppress	يكبت	/səˈpres/
+2585	en_w_sway	sway	verb	movement	to sway	يتمايل	/sweɪ/
+2586	en_w_swell	swell	verb	health	to swell	ينتفخ	/swel/	swollen	irregular=yes
+2587	en_w_tickle	tickle	verb	body	to tickle	يدغدغ	/ˈtɪkl/
+2588	en_w_tilt	tilt	verb	movement	to tilt	يميل	/tɪlt/
+2589	en_w_transmit	transmit	verb	communication	to transmit	ينقل	/trænzˈmɪt/	transmits, transmitted, transmitting
+2590	en_w_trim	trim	verb	actions	to trim	يشذّب	/trɪm/	trims, trimmed, trimming
+2591	en_w_tumble	tumble	verb	movement	to tumble	يتدحرج	/ˈtʌmbl/
+2592	en_w_uphold	uphold	verb	society	to uphold	يدعم	/ʌpˈhəʊld/	upheld	irregular=yes
+2593	en_w_utter	utter	verb	communication	to utter	ينطق	/ˈʌtə/
+2594	en_w_wither	wither	verb	nature	to wither	يذبل	/ˈwɪðə/
+2595	en_w_wobble	wobble	verb	movement	to wobble	يتمايل	/ˈwɒbl/
+2596	en_w_yearn	yearn	verb	feelings	to yearn	يتوق	/jɜːn/
+2597	en_w_abundance	abundance	noun	function	abundance	وفرة	/əˈbʌndəns/
+2598	en_w_acquaintance	acquaintance	noun	people	acquaintance	معرفة، أحد المعارف	/əˈkweɪntəns/	acquaintances
+2599	en_w_adolescence	adolescence	noun	people	adolescence	مراهقة	/ˌædəˈlesns/
+2600	en_w_anguish	anguish	noun	feelings	anguish	ألم شديد	/ˈæŋɡwɪʃ/
+2601	en_w_apparatus	apparatus	noun	work	apparatus	جهاز	/ˌæpəˈreɪtəs/
+2602	en_w_apprentice	apprentice	noun	work	apprentice	متدرّب	/əˈprentɪs/	apprentices
+2603	en_w_archive	archive	noun	work	archive	أرشيف	/ˈɑːkaɪv/	archives
+2604	en_w_arrogance	arrogance	noun	feelings	arrogance	غرور	/ˈærəɡəns/
+2605	en_w_asylum	asylum	noun	society	asylum	لجوء	/əˈsaɪləm/
+2606	en_w_ballot	ballot	noun	society	ballot	اقتراع	/ˈbælət/	ballots
+2607	en_w_banquet	banquet	noun	food	banquet	مأدبة	/ˈbæŋkwɪt/	banquets
+2608	en_w_barley	barley	noun	food	barley	شعير	/ˈbɑːli/
+2609	en_w_beak	beak	noun	animals	beak	منقار	/biːk/	beaks
+2610	en_w_benevolence	benevolence	noun	feelings	benevolence	إحسان	/bəˈnevələns/
+2611	en_w_blizzard	blizzard	noun	weather	blizzard	عاصفة ثلجية	/ˈblɪzəd/	blizzards
+2612	en_w_boulder	boulder	noun	nature	boulder	صخرة كبيرة	/ˈbəʊldə/	boulders
+2613	en_w_burrow	burrow	noun	animals	burrow	جحر	/ˈbʌrəʊ/	burrows
+2614	en_w_cabinet	cabinet	noun	home	cabinet	خزانة	/ˈkæbɪnət/	cabinets
+2615	en_w_canopy	canopy	noun	nature	canopy	مظلّة	/ˈkænəpi/	canopies
+2616	en_w_casualty	casualty	noun	health	casualty	ضحية، مصاب	/ˈkæʒuəlti/	casualties
+2617	en_w_cavity	cavity	noun	health	cavity	تجويف	/ˈkævəti/	cavities
+2618	en_w_corpse	corpse	noun	health	corpse	جثّة	/kɔːps/	corpses
+2619	en_w_courtyard	courtyard	noun	home	courtyard	فناء	/ˈkɔːtjɑːd/	courtyards
+2620	en_w_crib	crib	noun	home	cot, crib	سرير طفل	/krɪb/	cribs
+2621	en_w_dagger	dagger	noun	society	dagger	خنجر	/ˈdæɡə/	daggers
+2622	en_w_debris	debris	noun	function	debris	حطام	/ˈdebriː/
+2623	en_w_decay	decay	noun	nature	decay	تحلّل	/dɪˈkeɪ/
+2624	en_w_dusk	dusk	noun	time	dusk	غسق	/dʌsk/
+2625	en_w_epidemic	epidemic	noun	health	epidemic	وباء	/ˌepɪˈdemɪk/	epidemics
+2626	en_w_erosion	erosion	noun	nature	erosion	تآكل	/ɪˈrəʊʒn/
+2627	en_w_fatigue	fatigue	noun	health	fatigue	إرهاق	/fəˈtiːɡ/
+2628	en_w_fertiliser	fertiliser	noun	nature	fertiliser	سماد	/ˈfɜːtəlaɪzə/	fertilisers
+2629	en_w_fortress	fortress	noun	places	fortress	حصن	/ˈfɔːtrəs/	fortresses
+2630	en_w_fossil	fossil	noun	nature	fossil	أحفورة	/ˈfɒsl/	fossils
+2631	en_w_fragrance	fragrance	noun	senses	fragrance	عبير	/ˈfreɪɡrəns/	fragrances
+2632	en_w_frontier	frontier	noun	places	frontier	حدود	/ˈfrʌntɪə/	frontiers
+2633	en_w_gratitude	gratitude	noun	feelings	gratitude	امتنان	/ˈɡrætɪtjuːd/
+2634	en_w_hail	hail	noun	weather	hail	برد	/heɪl/
+2635	en_w_haystack	haystack	noun	nature	haystack	كومة قشّ	/ˈheɪstæk/	haystacks
+2636	en_w_heir	heir	noun	family	heir	وريث	/eə/	heirs
+2637	en_w_hinge	hinge	noun	home	hinge	مفصّلة	/hɪndʒ/	hinges
+2638	en_w_hostage	hostage	noun	society	hostage	رهينة	/ˈhɒstɪdʒ/	hostages
+2639	en_w_humility	humility	noun	feelings	humility	تواضع	/hjuːˈmɪləti/
+2640	en_w_hymn	hymn	noun	leisure	hymn	ترنيمة	/hɪm/	hymns
+2641	en_w_inheritance	inheritance	noun	family	inheritance	ميراث	/ɪnˈherɪtəns/	inheritances
+2642	en_w_insomnia	insomnia	noun	health	insomnia	أرق	/ɪnˈsɒmniə/
+2643	en_w_integrity	integrity	noun	feelings	integrity	نزاهة	/ɪnˈteɡrəti/
+2644	en_w_irony	irony	noun	communication	irony	سخرية	/ˈaɪrəni/	ironies
+2645	en_w_jealousy	jealousy	noun	feelings	jealousy	غيرة	/ˈdʒeləsi/
+2646	en_w_landslide	landslide	noun	nature	landslide	انهيار أرضي	/ˈlændslaɪd/	landslides
+2647	en_w_lantern	lantern	noun	home	lantern	فانوس	/ˈlæntən/	lanterns
+2648	en_w_lighthouse	lighthouse	noun	places	lighthouse	منارة	/ˈlaɪthaʊs/	lighthouses
+2649	en_w_loyalty	loyalty	noun	feelings	loyalty	وفاء	/ˈlɔɪəlti/
+2650	en_w_lullaby	lullaby	noun	leisure	lullaby	تهويدة	/ˈlʌləbaɪ/	lullabies
+2651	en_w_mercy	mercy	noun	feelings	mercy	رحمة	/ˈmɜːsi/
+2652	en_w_meadow	meadow	noun	nature	meadow	مرج	/ˈmedəʊ/	meadows
+2653	en_w_mischief	mischief	noun	people	mischief	شقاوة	/ˈmɪstʃɪf/
+2654	en_w_mortgage	mortgage	noun	shopping	mortgage	رهن عقاري	/ˈmɔːɡɪdʒ/	mortgages
+2655	en_w_mosaic	mosaic	noun	leisure	mosaic	فسيفساء	/məʊˈzeɪɪk/	mosaics
+2656	en_w_nostalgia	nostalgia	noun	feelings	nostalgia	حنين	/nɒˈstældʒə/
+2657	en_w_oath	oath	noun	communication	oath	قسم	/əʊθ/	oaths
+2658	en_w_orchard	orchard	noun	nature	orchard	بستان	/ˈɔːtʃəd/	orchards
+2659	en_w_orphan	orphan	noun	people	orphan	يتيم	/ˈɔːfn/	orphans
+2660	en_w_pasture	pasture	noun	nature	pasture	مرعى	/ˈpɑːstʃə/	pastures
+2661	en_w_pebble	pebble	noun	nature	pebble	حصاة	/ˈpebl/	pebbles
+2662	en_w_pilgrim	pilgrim	noun	society	pilgrim	حاجّ	/ˈpɪlɡrɪm/	pilgrims
+2663	en_w_plague	plague	noun	health	plague	طاعون	/pleɪɡ/	plagues
+2664	en_w_prejudice	prejudice	noun	society	prejudice	تحيّز	/ˈpredʒudɪs/	prejudices
+2665	en_w_prophecy	prophecy	noun	society	prophecy	نبوءة	/ˈprɒfəsi/	prophecies
+2666	en_w_quarry	quarry	noun	places	quarry	مقلع	/ˈkwɒri/	quarries
+2667	en_w_ransom	ransom	noun	society	ransom	فدية	/ˈrænsəm/	ransoms
+2668	en_w_refuge	refuge	noun	places	refuge	ملجأ	/ˈrefjuːdʒ/
+2669	en_w_remorse	remorse	noun	feelings	remorse	ندم	/rɪˈmɔːs/
+2670	en_w_reservoir	reservoir	noun	nature	reservoir	خزّان مياه	/ˈrezəvwɑː/	reservoirs
+2671	en_w_riddle	riddle	noun	leisure	riddle	لغز	/ˈrɪdl/	riddles
+2672	en_w_saddle	saddle	noun	animals	saddle	سرج	/ˈsædl/	saddles
+2673	en_w_scar	scar	noun	health	scar	ندبة	/skɑː/	scars
+2674	en_w_scarecrow	scarecrow	noun	nature	scarecrow	فزّاعة	/ˈskeəkrəʊ/	scarecrows
+2675	en_w_scorn	scorn	noun	feelings	scorn	ازدراء	/skɔːn/
+2676	en_w_shepherd	shepherd	noun	people	shepherd	راعٍ	/ˈʃepəd/	shepherds
+2677	en_w_shrine	shrine	noun	places	shrine	ضريح	/ʃraɪn/	shrines
+2678	en_w_siege	siege	noun	society	siege	حصار	/siːdʒ/	sieges
+2679	en_w_sorrow	sorrow	noun	feelings	sorrow	أسى	/ˈsɒrəʊ/	sorrows
+2680	en_w_splinter	splinter	noun	home	splinter	شظيّة	/ˈsplɪntə/	splinters
+2681	en_w_straw	straw	noun	nature	straw	قشّ	/strɔː/	straws
+2682	en_w_swamp	swamp	noun	nature	swamp	مستنقع	/swɒmp/	swamps
+2683	en_w_thorn	thorn	noun	nature	thorn	شوكة	/θɔːn/	thorns
+2684	en_w_throne	throne	noun	society	throne	عرش	/θrəʊn/	thrones
+2685	en_w_tide	tide	noun	nature	tide	مدّ وجزر	/taɪd/	tides
+2686	en_w_torch	torch	noun	home	torch	مصباح يدوي	/tɔːtʃ/	torches
+2687	en_w_treason	treason	noun	society	treason	خيانة عظمى	/ˈtriːzn/
+2688	en_w_tribe	tribe	noun	society	tribe	قبيلة	/traɪb/	tribes
+2689	en_w_truce	truce	noun	society	truce	هدنة	/truːs/	truces
+2690	en_w_vineyard	vineyard	noun	nature	vineyard	كرم عنب	/ˈvɪnjəd/	vineyards
+2691	en_w_volcano	volcano	noun	nature	volcano	بركان	/vɒlˈkeɪnəʊ/	volcanoes
+2692	en_w_wisdom	wisdom	noun	mind	wisdom	حكمة	/ˈwɪzdəm/
+2693	en_w_abrupt	abrupt	adj	descriptions	abrupt	مفاجئ	/əˈbrʌpt/
+2694	en_w_absurd	absurd	adj	descriptions	absurd	سخيف	/əbˈsɜːd/
+2695	en_w_agile	agile	adj	people	agile	رشيق	/ˈædʒaɪl/
+2696	en_w_ample	ample	adj	function	ample	وافر	/ˈæmpl/
+2697	en_w_arid	arid	adj	nature	arid	قاحل	/ˈærɪd/
+2698	en_w_bleak	bleak	adj	descriptions	bleak	كئيب	/bliːk/
+2699	en_w_blunt	blunt	adj	descriptions	blunt	كليل، صريح	/blʌnt/
+2700	en_w_brittle	brittle	adj	descriptions	brittle	هشّ	/ˈbrɪtl/
