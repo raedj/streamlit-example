@@ -2399,3 +2399,303 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2398	ms_w_wakaf	wakaf	noun	places	roadside shelter, endowment	استراحة، وقف
 2399	ms_w_dusun	dusun	noun	places	orchard	بستان
 2400	ms_w_titi	titi	noun	places	footbridge	جسر خشبي
+2401	ms_w_mansuh	mansuh	verb	society	to abolish (memansuhkan)	يلغي
+2402	ms_w_pecut	pecut	verb	movement	to whip, to speed (memecut)	يسرّع
+2403	ms_w_selari	selari	adj	time	parallel, in line	متوازٍ
+2404	ms_w_himpun	himpun	verb	work	to gather, to compile (menghimpunkan)	يجمع
+2405	ms_w_cemar	cemar	verb	nature	to pollute (mencemarkan)	يلوّث
+2406	ms_w_perdaya	perdaya	verb	people	to deceive (memperdaya)	يخدع
+2407	ms_w_cabar	cabar	verb	people	to challenge (mencabar)	يتحدّى
+2408	ms_w_roboh	roboh	verb	actions	to collapse; to demolish (merobohkan)	ينهار، يهدم
+2409	ms_w_putar_belit	putar belit	verb	communication	to twist (the truth)	يحرّف
+2410	ms_w_sejat	sejat	verb	nature	to evaporate (menyejat)	يتبخّر
+2411	ms_w_singkir	singkir	verb	actions	to exclude, to remove (menyingkirkan)	يستبعد
+2412	ms_w_eksploitasi	eksploitasi	verb	work	to exploit	يستغلّ
+2413	ms_w_turun_naik	turun naik	verb	function	to fluctuate	يتقلّب
+2414	ms_w_termengah_mengah	termengah-mengah	verb	body	to pant	يلهث
+2415	ms_w_kisar	kisar	verb	food	to grind, to blend (mengisar)	يطحن
+2416	ms_w_rintih	rintih	verb	body	to groan (merintih)	يئنّ
+2417	ms_w_halang	halang	verb	actions	to hinder (menghalang)	يعيق
+2418	ms_w_senandung	senandung	verb	leisure	to hum (bersenandung)	يدندن
+2419	ms_w_suntik	suntik	verb	health	to inject (menyuntik)	يحقن
+2420	ms_w_campur_tangan	campur tangan	verb	people	to intervene	يتدخّل
+2421	ms_w_jengkel	jengkel	verb	feelings	to be annoyed	ينزعج
+2422	ms_w_ubah_suai	ubah suai	verb	actions	to modify	يعدّل
+2423	ms_w_pandu_arah	pandu arah	verb	travel	to navigate	يوجّه
+2424	ms_w_tindas	tindas	verb	society	to oppress (menindas)	يضطهد
+2425	ms_w_tembus	tembus	verb	actions	to penetrate (menembusi)	يخترق
+2426	ms_w_tikam	tikam	verb	actions	to stab (menikam)	يطعن
+2427	ms_w_fikir_fikir	fikir-fikir	verb	mind	to think over	يفكّر مليًّا
+2428	ms_w_dakwa	dakwa	verb	society	to charge, to sue (mendakwa)	يتّهم، يقاضي
+2429	ms_w_provokasi	provokasi	verb	people	to provoke	يستفزّ
+2430	ms_w_pancar	pancar	verb	nature	to radiate (memancarkan)	يشعّ
+2431	ms_w_yakinkan	yakinkan	verb	feelings	to reassure	يطمئن
+2432	ms_w_tapis	tapis	verb	actions	to filter (menapis)	يصفّي
+2433	ms_w_nikmati	nikmati	verb	food	to enjoy (menikmati)	يستمتع
+2434	ms_w_baik_pulih	baik pulih	verb	home	to repair, to renovate	يرمّم
+2435	ms_w_bayar_balik	bayar balik	verb	shopping	to repay	يسدّد
+2436	ms_w_kesal	kesal	verb	feelings	to regret, to resent	يتحسّر
+2437	ms_w_kekang	kekang	verb	actions	to restrain (mengekang)	يكبح
+2438	ms_w_bilas	bilas	verb	home	to rinse (membilas)	يشطف
+2439	ms_w_merayau	merayau	verb	movement	to wander, to roam	يتجوّل
+2440	ms_w_busuk	busuk	adj	nature	rotten	فاسد
+2441	ms_w_conteng	conteng	verb	school	to scribble (menconteng)	يخربش
+2442	ms_w_angkat_bahu	angkat bahu	verb	body	to shrug	يهزّ كتفيه
+2443	ms_w_reneh	reneh	verb	food	to simmer (mereneh)	يطهو ببطء
+2444	ms_w_sembelih	sembelih	verb	animals	to slaughter (menyembelih)	يذبح
+2445	ms_w_esak	esak	verb	feelings	to sob (teresak-esak)	ينتحب
+2446	ms_w_semai	semai	verb	nature	to sow (menyemai)	يبذر
+2447	ms_w_seliuh	seliuh	verb	health	to sprain (terseliuh)	يلوي
+2448	ms_w_percik	percik	verb	food	to splash, to sprinkle (memercik)	يرشّ
+2449	ms_w_tunas	tunas	verb	nature	to sprout (bertunas)	ينبت
+2450	ms_w_terkejut	terkejut	verb	feelings	to be startled	يفزع
+2451	ms_w_kembung	kembung	verb	health	to bloat, to swell	ينتفخ
+2452	ms_w_condong	condong	verb	movement	to lean, to tilt	يميل
+2453	ms_w_pangkas	pangkas	verb	actions	to trim (memangkas)	يشذّب
+2454	ms_w_hadapi	hadapi	verb	people	to face (menghadapi)	يواجه
+2455	ms_w_hapus	hapus	verb	actions	to erase (menghapuskan)	يمحو
+2456	ms_w_besarkan	besarkan	verb	actions	to enlarge (membesarkan)	يكبّر
+2457	ms_w_potong_jalan	potong jalan	verb	travel	to overtake, to cut in	يتجاوز
+2458	ms_w_memberontak	memberontak	verb	society	to rebel	يتمرّد
+2459	ms_w_satukan	satukan	verb	people	to unite	يوحّد
+2460	ms_w_rempuh	rempuh	verb	travel	to crash into (merempuh)	يرتطم
+2461	ms_w_nyatakan	nyatakan	verb	communication	to state	يذكر
+2462	ms_w_cucuk	cucuk	verb	actions	to poke (mencucuk)	ينخز
+2463	ms_w_sepak	sepak	verb	actions	to kick (menyepak)	يركل
+2464	ms_w_tumbuk	tumbuk	verb	actions	to punch, to pound (menumbuk)	يلكم، يدقّ
+2465	ms_w_gegar	gegar	verb	actions	to shake (menggegarkan)	يهزّ
+2466	ms_w_minyakkan	minyakkan	verb	home	to oil	يزيّت
+2467	ms_w_cop	cop	verb	work	to stamp	يختم
+2468	ms_w_bundar	bundar	adj	descriptions	round	مستدير
+2469	ms_w_otot	otot	noun	body	muscle	عضلة
+2470	ms_w_rahmat	rahmat	noun	society	blessing, mercy	رحمة
+2471	ms_w_kanvas	kanvas	noun	leisure	canvas	قماش رسم
+2472	ms_w_keranda	keranda	noun	society	coffin	تابوت
+2473	ms_w_kren	kren	noun	work	crane	رافعة
+2474	ms_w_tenusu	tenusu	noun	food	dairy	ألبان
+2475	ms_w_bukit_pasir	bukit pasir	noun	nature	sand dune	كثيب
+2476	ms_w_estet	estet	noun	places	estate	ضيعة
+2477	ms_w_taring	taring	noun	animals	fang	ناب
+2478	ms_w_kelimpahan	kelimpahan	noun	function	abundance	وفرة
+2479	ms_w_kenalan	kenalan	noun	people	acquaintance	معرفة
+2480	ms_w_remaja	remaja	noun	people	teenager	مراهق
+2481	ms_w_arkib	arkib	noun	work	archive	أرشيف
+2482	ms_w_suaka	suaka	noun	society	asylum, sanctuary	لجوء
+2483	ms_w_kertas_undi	kertas undi	noun	society	ballot paper	ورقة اقتراع
+2484	ms_w_jamuan	jamuan	noun	food	banquet, feast	مأدبة
+2485	ms_w_barli	barli	noun	food	barley	شعير
+2486	ms_w_ribut_salji	ribut salji	noun	weather	blizzard	عاصفة ثلجية
+2487	ms_w_batu_besar	batu besar	noun	nature	boulder	صخرة
+2488	ms_w_liang	liang	noun	animals	burrow, hole	جحر
+2489	ms_w_kabinet	kabinet	noun	home	cabinet	خزانة
+2490	ms_w_mangsa	mangsa	noun	health	victim, prey	ضحية، فريسة
+2491	ms_w_gigi_rongak	gigi rongak	noun	health	gap in teeth	فراغ بين الأسنان
+2492	ms_w_mayat	mayat	noun	health	corpse	جثّة
+2493	ms_w_laman	laman	noun	home	yard	فناء
+2494	ms_w_keris	keris	noun	society	kris dagger	خنجر الكريس
+2495	ms_w_wabak	wabak	noun	health	epidemic	وباء
+2496	ms_w_hakisan	hakisan	noun	nature	erosion	تآكل
+2497	ms_w_keletihan	keletihan	noun	health	fatigue	إرهاق
+2498	ms_w_fosil	fosil	noun	nature	fossil	أحفورة
+2499	ms_w_haruman	haruman	noun	senses	fragrance	عبير
+2500	ms_w_penghargaan	penghargaan	noun	feelings	appreciation, gratitude	تقدير
+2501	ms_w_tebusan	tebusan	noun	society	hostage, ransom	رهينة
+2502	ms_w_lagu_kebangsaan	lagu kebangsaan	noun	leisure	national anthem	النشيد الوطني
+2503	ms_w_pusaka	pusaka	noun	family	heirloom, inheritance	إرث
+2504	ms_w_insomnia	insomnia	noun	health	insomnia	أرق
+2505	ms_w_integriti	integriti	noun	feelings	integrity	نزاهة
+2506	ms_w_ironi	ironi	noun	communication	irony	سخرية
+2507	ms_w_tanah_runtuh	tanah runtuh	noun	nature	landslide	انهيار أرضي
+2508	ms_w_lampu_suluh	lampu suluh	noun	home	torch	مصباح يدوي
+2509	ms_w_lagu_dodoi	lagu dodoi	noun	leisure	lullaby	تهويدة
+2510	ms_w_belas_kasihan	belas kasihan	noun	feelings	mercy, pity	رحمة
+2511	ms_w_padang_rumput	padang rumput	noun	nature	meadow	مرج
+2512	ms_w_gadai_janji	gadai janji	noun	shopping	mortgage	رهن عقاري
+2513	ms_w_mozek	mozek	noun	leisure	mosaic	فسيفساء
+2514	ms_w_nostalgia	nostalgia	noun	feelings	nostalgia	حنين
+2515	ms_w_kebun_buah	kebun buah	noun	nature	orchard	بستان
+2516	ms_w_jemaah_haji	jemaah haji	noun	society	pilgrims	الحجّاج
+2517	ms_w_taun	taun	noun	health	plague	طاعون
+2518	ms_w_prasangka	prasangka	noun	society	prejudice	تحيّز
+2519	ms_w_kuari	kuari	noun	places	quarry	مقلع
+2520	ms_w_wang_tebusan	wang tebusan	noun	society	ransom	فدية
+2521	ms_w_tempat_perlindungan	tempat perlindungan	noun	places	shelter	ملجأ
+2522	ms_w_sesalan	sesalan	noun	feelings	remorse	ندم
+2523	ms_w_takungan	takungan	noun	nature	reservoir	خزّان
+2524	ms_w_pelana	pelana	noun	animals	saddle	سرج
+2525	ms_w_orang_orang	orang-orang	noun	nature	scarecrow	فزّاعة
+2526	ms_w_cemuhan	cemuhan	noun	feelings	scorn	ازدراء
+2527	ms_w_kepungan	kepungan	noun	society	siege	حصار
+2528	ms_w_selumbar	selumbar	noun	home	splinter	شظيّة
+2529	ms_w_takhta	takhta	noun	society	throne	عرش
+2530	ms_w_khianat	khianat	noun	society	treason	خيانة
+2531	ms_w_suku_kaum	suku kaum	noun	society	tribe	قبيلة
+2532	ms_w_gencatan_senjata	gencatan senjata	noun	society	ceasefire	وقف إطلاق النار
+2533	ms_w_ladang_anggur	ladang anggur	noun	nature	vineyard	كرم عنب
+2534	ms_w_gunung_api	gunung api	noun	nature	volcano	بركان
+2535	ms_w_kebijaksanaan	kebijaksanaan	noun	mind	wisdom	حكمة
+2536	ms_w_kain_tampal	kain tampal	noun	clothes	patch	رقعة
+2537	ms_w_tamparan	tamparan	noun	people	slap	صفعة
+2538	ms_w_sogokan	sogokan	noun	society	bribe	رشوة
+2539	ms_w_ubat_sapu	ubat sapu	noun	health	ointment	مرهم
+2540	ms_w_ubat_batuk	ubat batuk	noun	health	cough syrup	دواء السعال
+2541	ms_w_denyutan	denyutan	noun	health	pulse, throb	نبض
+2542	ms_w_mual	mual	adj	health	nauseous	يشعر بالغثيان
+2543	ms_w_tulang_rusuk	tulang rusuk	noun	body	rib	ضلع
+2544	ms_w_saluran_darah	saluran darah	noun	body	blood vessel	وعاء دموي
+2545	ms_w_air_peluh	air peluh	noun	body	sweat	عرق
+2546	ms_w_sedu_sedan	sedu-sedan	noun	body	sobbing	نحيب
+2547	ms_w_rahang	rahang	noun	body	jaw	فكّ
+2548	ms_w_kerutan	kerutan	noun	body	wrinkle	تجعّد
+2549	ms_w_bisul	bisul	noun	health	boil	دمّل
+2550	ms_w_ketiak	ketiak	noun	body	armpit	إبط
+2551	ms_w_pinggang	pinggang	noun	body	waist	خصر
+2552	ms_w_punggung	punggung	noun	body	bottom, buttocks	مؤخّرة
+2553	ms_w_tengkuk	tengkuk	noun	body	nape of the neck	قفا
+2554	ms_w_lidah	lidah	noun	body	tongue	لسان
+2555	ms_w_gusi	gusi	noun	body	gum	لثة
+2556	ms_w_karut	karut	adj	descriptions	nonsense, absurd	هراء
+2557	ms_w_tangkas	tangkas	adj	people	nimble	رشيق
+2558	ms_w_gersang	gersang	adj	nature	barren	قاحل
+2559	ms_w_tumpul	tumpul	adj	descriptions	blunt	كليل
+2560	ms_w_kekok	kekok	adj	people	clumsy, awkward	أخرق
+2561	ms_w_warak	warak	adj	society	devout	ورع
+2562	ms_w_malap	malap	adj	descriptions	dim	خافت
+2563	ms_w_berjimat	berjimat	adj	shopping	thrifty	مقتصد
+2564	ms_w_haloba	haloba	adj	people	greedy	جشع
+2565	ms_w_tidak_dapat_dielakkan	tidak dapat dielakkan	adj	function	inevitable	حتمي
+2566	ms_w_bergerigi	bergerigi	adj	descriptions	jagged	مسنّن
+2567	ms_w_mewah	mewah	adj	descriptions	luxurious	فاخر
+2568	ms_w_jinak	jinak	adj	animals	tame	أليف
+2569	ms_w_keruh	keruh	adj	descriptions	murky	عكر
+2570	ms_w_mulia	mulia	adj	people	noble	نبيل
+2571	ms_w_melulu	melulu	adj	people	reckless	متهوّر
+2572	ms_w_suci	suci	adj	society	holy, pure	مقدّس
+2573	ms_w_lusuh	lusuh	adj	descriptions	shabby, worn	رثّ
+2574	ms_w_samar	samar	adj	communication	vague	غامض
+2575	ms_w_meriah	meriah	adj	descriptions	lively	حيوي
+2576	ms_w_lesu	lesu	adj	body	exhausted	منهك
+2577	ms_w_tepat_masa	tepat masa	adj	time	punctual	في الوقت المحدّد
+2578	ms_w_terus_terang	terus terang	adv	function	frankly	بصراحة
+2579	ms_w_sekadar	sekadar	adv	function	merely	مجرّد
+2580	ms_w_namun	namun	adv	function	however	لكن
+2581	ms_w_manakala	manakala	adv	function	whereas	بينما
+2582	ms_w_perjanjian_damai	perjanjian damai	noun	society	peace treaty	معاهدة سلام
+2583	ms_w_parlimen	parlimen	noun	society	parliament	برلمان
+2584	ms_w_menteri	menteri	noun	society	minister	وزير
+2585	ms_w_duta	duta	noun	society	ambassador	سفير
+2586	ms_w_penghijrahan	penghijrahan	noun	society	migration	هجرة
+2587	ms_w_kerakyatan	kerakyatan	noun	society	citizenship	جنسية
+2588	ms_w_hak	hak	noun	society	right	حقّ
+2589	ms_w_kewajipan	kewajipan	noun	society	duty	واجب
+2590	ms_w_tahanan	tahanan	noun	people	detainee	محتجز
+2591	ms_w_pertempuran	pertempuran	noun	society	battle	معركة
+2592	ms_w_belanjawan	belanjawan	noun	work	budget	ميزانية
+2593	ms_w_pesara	pesara	noun	people	retiree	متقاعد
+2594	ms_w_persaraan	persaraan	noun	work	retirement	تقاعد
+2595	ms_w_penyelia	penyelia	noun	people	supervisor	مشرف
+2596	ms_w_penasihat	penasihat	noun	people	adviser	مستشار
+2597	ms_w_jurubahasa	jurubahasa	noun	people	interpreter	مترجم
+2598	ms_w_timbalan	timbalan	noun	work	deputy	نائب
+2599	ms_w_pengerusi	pengerusi	noun	people	chairperson	رئيس
+2600	ms_w_setiausaha	setiausaha	noun	people	secretary	سكرتير
+2601	ms_w_laporan	laporan	noun	work	report	تقرير
+2602	ms_w_persetujuan	persetujuan	noun	work	agreement	موافقة
+2603	ms_w_undian	undian	noun	society	vote	تصويت
+2604	ms_w_pembangkang	pembangkang	noun	society	opposition	معارضة
+2605	ms_w_rakyat	rakyat	noun	society	the people, citizens	الشعب
+2606	ms_w_mukim	mukim	noun	places	sub-district	ناحية
+2607	ms_w_taman_perumahan	taman perumahan	noun	places	housing estate	حيّ سكني
+2608	ms_w_simpang_empat	simpang empat	noun	travel	crossroads	تقاطع
+2609	ms_w_jejantas	jejantas	noun	travel	footbridge	جسر مشاة
+2610	ms_w_had_laju	had laju	noun	travel	speed limit	حدّ السرعة
+2611	ms_w_saman	saman	noun	travel	traffic fine	مخالفة
+2612	ms_w_lesen	lesen	noun	travel	licence	رخصة
+2613	ms_w_imigresen	imigresen	noun	travel	immigration	الهجرة
+2614	ms_w_balai_ketibaan	balai ketibaan	noun	travel	arrivals hall	صالة الوصول
+2615	ms_w_balai_berlepas	balai berlepas	noun	travel	departures hall	صالة المغادرة
+2616	ms_w_troli	troli	noun	travel	trolley	عربة
+2617	ms_w_juruwang	juruwang	noun	people	cashier	أمين الصندوق
+2618	ms_w_baucar	baucar	noun	shopping	voucher	قسيمة
+2619	ms_w_jualan_murah	jualan murah	noun	shopping	sale	تنزيلات
+2620	ms_w_pembekal	pembekal	noun	work	supplier	مورّد
+2621	ms_w_pengeluar	pengeluar	noun	work	producer	منتج
+2622	ms_w_import	import	noun	work	import	استيراد
+2623	ms_w_pelabur	pelabur	noun	work	investor	مستثمر
+2624	ms_w_saham	saham	noun	work	share, stock	سهم
+2625	ms_w_cawangan	cawangan	noun	work	branch	فرع
+2626	ms_w_ibu_pejabat	ibu pejabat	noun	work	headquarters	المقرّ الرئيسي
+2627	ms_w_kakitangan	kakitangan	noun	work	staff	موظّفون
+2628	ms_w_elaun	elaun	noun	work	allowance	بدل
+2629	ms_w_cuti_sakit	cuti sakit	noun	work	sick leave	إجازة مرضية
+2630	ms_w_latihan	latihan	noun	work	training	تدريب
+2631	ms_w_kursus	kursus	noun	school	course	دورة
+2632	ms_w_seminar	seminar	noun	school	seminar	ندوة
+2633	ms_w_ceramah	ceramah	noun	school	talk, lecture	محاضرة
+2634	ms_w_pensyarah	pensyarah	noun	people	lecturer	محاضر
+2635	ms_w_profesor	profesor	noun	people	professor	أستاذ جامعي
+2636	ms_w_siswazah	siswazah	noun	school	graduate	خرّيج
+2637	ms_w_tesis	tesis	noun	school	thesis	أطروحة
+2638	ms_w_penyelidikan	penyelidikan	noun	school	research	بحث
+2639	ms_w_eksperimen	eksperimen	noun	school	experiment	تجربة
+2640	ms_w_teori	teori	noun	school	theory	نظرية
+2641	ms_w_formula	formula	noun	school	formula	صيغة
+2642	ms_w_statistik	statistik	noun	school	statistics	إحصاء
+2643	ms_w_graf	graf	noun	school	graph	رسم بياني
+2644	ms_w_jadual	jadual	noun	school	table, timetable	جدول
+2645	ms_w_peta_minda	peta minda	noun	school	mind map	خريطة ذهنية
+2646	ms_w_pucuk	pucuk	noun	nature	shoot, sprout	برعم
+2647	ms_w_belukar	belukar	noun	nature	scrubland	أدغال
+2648	ms_w_hutan_simpan	hutan simpan	noun	nature	forest reserve	غابة محمية
+2649	ms_w_hutan_bakau	hutan bakau	noun	nature	mangrove	غابة المنغروف
+2650	ms_w_muara	muara	noun	nature	estuary	مصبّ النهر
+2651	ms_w_semenanjung	semenanjung	noun	nature	peninsula	شبه جزيرة
+2652	ms_w_kepulauan	kepulauan	noun	nature	archipelago	أرخبيل
+2653	ms_w_terumbu_karang	terumbu karang	noun	nature	coral reef	شعاب مرجانية
+2654	ms_w_dasar_laut	dasar laut	noun	nature	seabed	قاع البحر
+2655	ms_w_ombak_besar	ombak besar	noun	nature	big wave	موجة كبيرة
+2656	ms_w_air_pasang	air pasang	noun	nature	high tide	المدّ
+2657	ms_w_air_surut	air surut	noun	nature	low tide	الجزر
+2658	ms_w_angin_monsun	angin monsun	noun	weather	monsoon wind	رياح موسمية
+2659	ms_w_musim_tengkujuh	musim tengkujuh	noun	weather	rainy season	موسم الأمطار
+2660	ms_w_kilat_sabung_menyabung	kilat sabung-menyabung	noun	weather	flashes of lightning	بروق متتالية
+2661	ms_w_titisan	titisan	noun	weather	drop	قطرة
+2662	ms_w_gerimis	gerimis	noun	weather	drizzle	رذاذ
+2663	ms_w_hujan_lebat	hujan lebat	noun	weather	heavy rain	مطر غزير
+2664	ms_w_kelembapan	kelembapan	noun	weather	humidity	رطوبة
+2665	ms_w_ramalan_cuaca	ramalan cuaca	noun	weather	weather forecast	نشرة الطقس
+2666	ms_w_pemanasan_global	pemanasan global	noun	nature	global warming	الاحتباس الحراري
+2667	ms_w_sampah_sarap	sampah sarap	noun	nature	rubbish, litter	نفايات
+2668	ms_w_tenaga	tenaga	noun	nature	energy	طاقة
+2669	ms_w_bekalan_air	bekalan air	noun	home	water supply	إمدادات المياه
+2670	ms_w_tuan_rumah	tuan rumah	noun	people	landlord, host	صاحب البيت
+2671	ms_w_kondominium	kondominium	noun	home	condominium	شقّة سكنية
+2672	ms_w_rumah_teres	rumah teres	noun	home	terraced house	بيت متّصل
+2673	ms_w_banglo	banglo	noun	home	bungalow	بيت مستقلّ
+2674	ms_w_bilik_stor	bilik stor	noun	home	storeroom	مخزن
+2675	ms_w_ruang_tamu	ruang tamu	noun	home	living room	غرفة الجلوس
+2676	ms_w_bilik_air	bilik air	noun	home	bathroom	حمّام
+2677	ms_w_singki	singki	noun	home	sink	حوض
+2678	ms_w_pili	pili	noun	home	tap	حنفية
+2679	ms_w_mangkuk_tandas	mangkuk tandas	noun	home	toilet bowl	مرحاض
+2680	ms_w_pancuran	pancuran	noun	home	shower	دشّ
+2681	ms_w_jubin	jubin	noun	home	tile	بلاط
+2682	ms_w_siling	siling	noun	home	ceiling	سقف
+2683	ms_w_pramugari	pramugari	noun	people	flight attendant	مضيفة طيران
+2684	ms_w_pemburu	pemburu	noun	people	hunter	صيّاد
+2685	ms_w_pengawal_keselamatan	pengawal keselamatan	noun	people	security guard	حارس أمن
+2686	ms_w_posmen	posmen	noun	people	postman	ساعي البريد
+2687	ms_w_pemandu_teksi	pemandu teksi	noun	people	taxi driver	سائق أجرة
+2688	ms_w_juruukur	juruukur	noun	people	surveyor	مسّاح
+2689	ms_w_penjaja	penjaja	noun	people	hawker	بائع متجوّل
+2690	ms_w_tukang_cat	tukang cat	noun	people	painter (decorator)	دهّان
+2691	ms_w_tukang_elektrik	tukang elektrik	noun	people	electrician	كهربائي
+2692	ms_w_mekanik	mekanik	noun	people	mechanic	ميكانيكي
+2693	ms_w_bidan	bidan	noun	people	midwife	قابلة
+2694	ms_w_pengasuh	pengasuh	noun	people	nanny, carer	مربّية
+2695	ms_w_pengakap	pengakap	noun	people	scout	كشّاف
+2696	ms_w_gelanggang	gelanggang	noun	leisure	court, arena	ساحة
+2697	ms_w_pengadil	pengadil	noun	people	referee	حكم
+2698	ms_w_piala	piala	noun	leisure	cup, trophy	كأس
+2699	ms_w_wisel	wisel	noun	leisure	whistle	صفّارة
+2700	ms_w_gawang	gawang	noun	leisure	goalposts	مرمى
