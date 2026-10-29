@@ -214,9 +214,10 @@
           3,
           4,
           5,
-          6
+          6,
+          7
         ],
-        "last_rank": 1800
+        "last_rank": 2100
       },
       "ur": {
         "levels": [
@@ -242,7 +243,7 @@
       }
     },
     "resume_at": {
-      "language": "tr",
+      "language": "ur",
       "level": 7,
       "next_rank": 1801,
       "note": "Level 7 in progress (order: en, es, fr, zh, ar, tr, ur, ms); tools/scan_wordlist.py <lang> --level 7 must report 0 unknown before committing."

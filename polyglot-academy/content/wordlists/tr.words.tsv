@@ -1799,3 +1799,303 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 1798	tr_w_dogrudan	doğrudan	adv	movement	directly	مباشرةً
 1799	tr_w_kisisel_olarak	kişisel olarak	adv	people	personally	شخصيًا
 1800	tr_w_yavas_yavas	yavaş yavaş	adv	time	gradually, slowly	شيئًا فشيئًا
+1801	tr_w_goz_kirpmak	göz kırpmak	verb	body	to wink, to blink	يغمز
+1802	tr_w_emeklemek	emeklemek	verb	movement	to crawl (baby)	يحبو
+1803	tr_w_solmak	solmak	verb	descriptions	to fade	يبهت
+1804	tr_w_ormek	örmek	verb	leisure	to knit	يحيك
+1805	tr_w_cilalamak	cilalamak	verb	home	to polish	يلمّع
+1806	tr_w_ongormek	öngörmek	verb	mind	to foresee, to predict	يتنبّأ
+1807	tr_w_terfi_etmek	terfi etmek	verb	work	to be promoted	يترقّى
+1808	tr_w_alinti_yapmak	alıntı yapmak	verb	communication	to quote	يقتبس
+1809	tr_w_yenilemek	yenilemek	verb	work	to renew	يجدّد
+1810	tr_w_odullendirmek	ödüllendirmek	verb	people	to reward	يكافئ
+1811	tr_w_dilimlemek	dilimlemek	verb	food	to slice	يقطّع شرائح
+1812	tr_w_lekelemek	lekelemek	verb	home	to stain	يلطّخ
+1813	tr_w_emmek	emmek	verb	actions	to suck	يمصّ
+1814	tr_w_tedarik_etmek	tedarik etmek	verb	work	to supply	يزوّد
+1815	tr_w_cevrelemek	çevrelemek	verb	places	to surround	يحيط
+1816	tr_w_takas_etmek	takas etmek	verb	actions	to swap	يقايض
+1817	tr_w_bukmek	bükmek	verb	actions	to twist, to bend	يلوي
+1818	tr_w_tapmak	tapmak	verb	people	to worship	يعبد
+1819	tr_w_haykirmak	haykırmak	verb	communication	to yell, to shout	يصيح
+1820	tr_w_adamak	adamak	verb	work	to dedicate	يكرّس
+1821	tr_w_acik_bufe	açık büfe	noun	food	buffet	بوفيه مفتوح
+1822	tr_w_kori	köri	noun	food	curry	كاري
+1823	tr_w_minder	minder	noun	home	cushion	وسادة أرضية
+1824	tr_w_unsur	unsur	noun	function	element	عنصر
+1825	tr_w_kiragi	kırağı	noun	weather	frost	صقيع
+1826	tr_w_aliskanlik_kazanmak	alışkanlık kazanmak	verb	people	to get into a habit	يكتسب عادة
+1827	tr_w_not_almak	not almak	verb	school	to take notes	يدوّن ملاحظات
+1828	tr_w_sokmek	sökmek	verb	actions	to pull out, to take apart	يقتلع، يفكّ
+1829	tr_w_cirpmak	çırpmak	verb	food	to whisk	يخفق
+1830	tr_w_sakinlestirmek	sakinleştirmek	verb	feelings	to calm down	يهدّئ
+1831	tr_w_neden_olmak	neden olmak	verb	function	to cause	يسبّب
+1832	tr_w_yetistirmek	yetiştirmek	verb	nature	to grow, to raise	يزرع، يربّي
+1833	tr_w_one_cikmak	öne çıkmak	verb	function	to stand out	يبرز
+1834	tr_w_bosanmak	boşanmak	verb	family	to get divorced	يطلّق
+1835	tr_w_goc_etmek	göç etmek	verb	travel	to emigrate	يهاجر
+1836	tr_w_kotulesmek	kötüleşmek	verb	health	to get worse	يسوء
+1837	tr_w_yuzlesmek	yüzleşmek	verb	actions	to face, to confront	يواجه
+1838	tr_w_prova_yapmak	prova yapmak	verb	leisure	to rehearse	يتمرّن
+1839	tr_w_ihrac_etmek	ihraç etmek	verb	work	to export	يصدّر
+1840	tr_w_kolaylastirmak	kolaylaştırmak	verb	function	to make easier	يسهّل
+1841	tr_w_imal_etmek	imal etmek	verb	work	to manufacture	يصنع
+1842	tr_w_basarisiz_olmak	başarısız olmak	verb	work	to fail	يفشل
+1843	tr_w_atamak	atamak	verb	people	to appoint	يعيّن
+1844	tr_w_programlamak	programlamak	verb	work	to program	يبرمج
+1845	tr_w_gerceklestirmek	gerçekleştirmek	verb	work	to carry out, to realise	ينفّذ، يحقّق
+1846	tr_w_kurtulmak	kurtulmak	verb	actions	to escape, to get rid of	يتخلّص، ينجو
+1847	tr_w_cozum_bulmak	çözüm bulmak	verb	mind	to find a solution	يجد حلًّا
+1848	tr_w_toplama_yapmak	toplama yapmak	verb	numbers	to do addition	يجمع (حسابيًا)
+1849	tr_w_zafer_kazanmak	zafer kazanmak	verb	work	to win a victory	ينتصر
+1850	tr_w_deger_vermek	değer vermek	verb	people	to value	يقدّر
+1851	tr_w_sulamak	sulamak	verb	nature	to water	يسقي
+1852	tr_w_gidiklamak	gıdıklamak	verb	people	to tickle	يدغدغ
+1853	tr_w_taramak	taramak	verb	body	to comb	يمشّط
+1854	tr_w_dagitmak	dağıtmak	verb	work	to distribute	يوزّع
+1855	tr_w_hakim_olmak	hakim olmak	verb	function	to dominate, to master	يسيطر، يتقن
+1856	tr_w_aydinlatmak	aydınlatmak	verb	home	to light up	يضيء
+1857	tr_w_israf_etmek	israf etmek	verb	function	to waste	يبذّر
+1858	tr_w_cesaret_etmek	cesaret etmek	verb	feelings	to dare	يجرؤ
+1859	tr_w_bahse_girmek	bahse girmek	verb	leisure	to bet	يراهن
+1860	tr_w_rahatlatmak	rahatlatmak	verb	feelings	to reassure, to relieve	يطمئن
+1861	tr_w_yetismek	yetişmek	verb	movement	to catch up, to make it in time	يلحق
+1862	tr_w_budamak	budamak	verb	nature	to prune	يقلّم
+1863	tr_w_kopya_cekmek	kopya çekmek	verb	people	to cheat (in an exam)	يغشّ
+1864	tr_w_vedalasmak	vedalaşmak	verb	people	to say goodbye	يتوادع
+1865	tr_w_kazanc_saglamak	kazanç sağlamak	verb	work	to make a profit	يحقّق ربحًا
+1866	tr_w_emek_vermek	emek vermek	verb	work	to put in effort	يبذل جهدًا
+1867	tr_w_geri_cekilmek	geri çekilmek	verb	movement	to withdraw	ينسحب
+1868	tr_w_yayilmak	yayılmak	verb	actions	to spread	ينتشر
+1869	tr_w_yola_cikmak	yola çıkmak	verb	travel	to set off	ينطلق
+1870	tr_w_ferahlamak	ferahlamak	verb	feelings	to feel relieved	يرتاح
+1871	tr_w_abone_olmak	abone olmak	verb	people	to subscribe	يشترك
+1872	tr_w_fotograf_cekmek	fotoğraf çekmek	verb	leisure	to take a photo	يلتقط صورة
+1873	tr_w_tamamlamak	tamamlamak	verb	work	to complete	يكمل
+1874	tr_w_paramparca_etmek	paramparça etmek	verb	actions	to smash to pieces	يحطّم
+1875	tr_w_antrenman_yapmak	antrenman yapmak	verb	leisure	to train	يتدرّب
+1876	tr_w_kufretmek	küfretmek	verb	communication	to swear	يشتم
+1877	tr_w_rahatsiz_etmek	rahatsız etmek	verb	people	to disturb	يزعج
+1878	tr_w_sitem_etmek	sitem etmek	verb	communication	to reproach	يعاتب
+1879	tr_w_rekabet_etmek	rekabet etmek	verb	leisure	to compete	يتنافس
+1880	tr_w_azarlamak	azarlamak	verb	communication	to scold	يوبّخ
+1881	tr_w_tasarruf_etmek	tasarruf etmek	verb	shopping	to save (money)	يدّخر
+1882	tr_w_mezun_olmak	mezun olmak	verb	school	to graduate	يتخرّج
+1883	tr_w_karismak	karışmak	verb	people	to interfere; to get mixed	يتدخّل؛ يختلط
+1884	tr_w_soylenmek	söylenmek	verb	communication	to grumble	يتذمّر
+1885	tr_w_barismak	barışmak	verb	people	to make up	يتصالح
+1886	tr_w_izin_istemek	izin istemek	verb	communication	to ask permission	يستأذن
+1887	tr_w_itiraz_etmek	itiraz etmek	verb	communication	to object	يعترض
+1888	tr_w_tembellik_etmek	tembellik etmek	verb	people	to be lazy	يتكاسل
+1889	tr_w_sempati_duymak	sempati duymak	verb	feelings	to sympathise	يتعاطف
+1890	tr_w_seyretmek	seyretmek	verb	leisure	to watch	يشاهد
+1891	tr_w_el_sallamak	el sallamak	verb	communication	to wave	يلوّح بيده
+1892	tr_w_kasinmak	kaşınmak	verb	body	to itch	يحكّ
+1893	tr_w_fisildasmak	fısıldaşmak	verb	communication	to whisper to each other	يتهامس
+1894	tr_w_kucaklamak	kucaklamak	verb	people	to embrace	يعانق
+1895	tr_w_yalvarmak	yalvarmak	verb	communication	to beg	يتوسّل
+1896	tr_w_simartmak	şımartmak	verb	family	to spoil (a child)	يدلّل
+1897	tr_w_ajanda	ajanda	noun	work	diary	مفكّرة
+1898	tr_w_belediye_baskani	belediye başkanı	noun	people	mayor	رئيس البلدية
+1899	tr_w_sevinc	sevinç	noun	feelings	joy	فرح
+1900	tr_w_besin	besin	noun	food	nutrient, food	غذاء
+1901	tr_w_anten	anten	noun	home	aerial	هوائي
+1902	tr_w_soyadi	soyadı	noun	people	surname	اسم العائلة
+1903	tr_w_hakem	hakem	noun	leisure	referee	حكم
+1904	tr_w_mesele	mesele	noun	function	matter, issue	مسألة
+1905	tr_w_trafik_sikisikligi	trafik sıkışıklığı	noun	travel	traffic jam	ازدحام مروري
+1906	tr_w_hostes	hostes	noun	travel	flight attendant	مضيفة طيران
+1907	tr_w_mayo	mayo	noun	clothes	swimsuit	ثوب سباحة
+1908	tr_w_opucuk	öpücük	noun	people	kiss	قبلة
+1909	tr_w_biyik	bıyık	noun	body	moustache	شارب
+1910	tr_w_itfaiyeci	itfaiyeci	noun	work	firefighter	إطفائي
+1911	tr_w_cadi	cadı	noun	people	witch	ساحرة
+1912	tr_w_posta_kutusu	posta kutusu	noun	communication	postbox	صندوق بريد
+1913	tr_w_kasiyer	kasiyer	noun	shopping	cashier	أمين صندوق
+1914	tr_w_isitma	ısıtma	noun	home	heating	تدفئة
+1915	tr_w_sefkat	şefkat	noun	feelings	compassion	حنان
+1916	tr_w_ehliyet	ehliyet	noun	travel	driving licence	رخصة قيادة
+1917	tr_w_tabela	tabela	noun	communication	sign	لافتة
+1918	tr_w_katedral	katedral	noun	places	cathedral	كاتدرائية
+1919	tr_w_sifir	sıfır	noun	numbers	zero	صفر
+1920	tr_w_cim	çim	noun	nature	grass, lawn	عشب
+1921	tr_w_kurdele	kurdele	noun	home	ribbon	شريط
+1922	tr_w_civi	çivi	noun	home	nail	مسمار
+1923	tr_w_timsah	timsah	noun	animals	crocodile	تمساح
+1924	tr_w_roket	roket	noun	travel	rocket	صاروخ
+1925	tr_w_yatak_odasi	yatak odası	noun	home	bedroom	غرفة نوم
+1926	tr_w_yemek_odasi	yemek odası	noun	home	dining room	غرفة الطعام
+1927	tr_w_ticaret	ticaret	noun	shopping	trade	تجارة
+1928	tr_w_karakol	karakol	noun	places	police station	مخفر
+1929	tr_w_kravat	kravat	noun	clothes	tie	ربطة عنق
+1930	tr_w_zirve	zirve	noun	nature	summit	قمّة
+1931	tr_w_besik	beşik	noun	home	cradle	مهد
+1932	tr_w_yunus	yunus	noun	animals	dolphin	دلفين
+1933	tr_w_gecit_toreni	geçit töreni	noun	leisure	parade	استعراض
+1934	tr_w_plak	plak	noun	leisure	record	أسطوانة
+1935	tr_w_anket	anket	noun	communication	survey	استطلاع
+1936	tr_w_vitrin	vitrin	noun	shopping	shop window	واجهة المتجر
+1937	tr_w_etiket	etiket	noun	shopping	label	ملصق
+1938	tr_w_deniz_feneri	deniz feneri	noun	travel	lighthouse	منارة
+1939	tr_w_mutluluk	mutluluk	noun	feelings	happiness	سعادة
+1940	tr_w_sira	sıra	noun	function	row; turn	صفّ؛ دور
+1941	tr_w_imza	imza	noun	work	signature	توقيع
+1942	tr_w_benzin_istasyonu	benzin istasyonu	noun	travel	petrol station	محطّة وقود
+1943	tr_w_kep	kep	noun	clothes	cap	قبّعة
+1944	tr_w_demir	demir	noun	nature	iron	حديد
+1945	tr_w_duman	duman	noun	nature	smoke	دخان
+1946	tr_w_yangin	yangın	noun	actions	fire (blaze)	حريق
+1947	tr_w_zurafa	zürafa	noun	animals	giraffe	زرافة
+1948	tr_w_mucevher	mücevher	noun	shopping	jewel	جوهرة
+1949	tr_w_yun	yün	noun	clothes	wool	صوف
+1950	tr_w_kursun_kalem	kurşun kalem	noun	school	pencil	قلم رصاص
+1951	tr_w_konserve	konserve	noun	food	tinned food	معلّبات
+1952	tr_w_harf	harf	noun	school	letter	حرف
+1953	tr_w_el_feneri	el feneri	noun	home	torch	مصباح يدوي
+1954	tr_w_papagan	papağan	noun	animals	parrot	ببغاء
+1955	tr_w_misir	mısır	noun	food	corn	ذرة
+1956	tr_w_leke	leke	noun	home	stain	بقعة
+1957	tr_w_tamirci	tamirci	noun	work	mechanic	مصلّح
+1958	tr_w_madalya	madalya	noun	leisure	medal	ميدالية
+1959	tr_w_sirt_cantasi	sırt çantası	noun	travel	backpack	حقيبة ظهر
+1960	tr_w_koku	koku	noun	senses	smell	رائحة
+1961	tr_w_kiyi	kıyı	noun	nature	shore, bank	شاطئ، ضفّة
+1962	tr_w_saray	saray	noun	places	palace	قصر
+1963	tr_w_guvercin	güvercin	noun	animals	pigeon	حمامة
+1964	tr_w_mendil	mendil	noun	clothes	handkerchief	منديل
+1965	tr_w_koridor	koridor	noun	home	corridor	ممرّ
+1966	tr_w_hap	hap	noun	health	pill	حبّة دواء
+1967	tr_w_palyaco	palyaço	noun	leisure	clown	مهرّج
+1968	tr_w_balikci	balıkçı	noun	work	fisherman	صيّاد سمك
+1969	tr_w_pijama	pijama	noun	clothes	pyjamas	بيجامة
+1970	tr_w_ananas	ananas	noun	food	pineapple	أناناس
+1971	tr_w_tablo	tablo	noun	leisure	painting; table	لوحة؛ جدول
+1972	tr_w_nufus	nüfus	noun	people	population	سكّان
+1973	tr_w_prenses	prenses	noun	people	princess	أميرة
+1974	tr_w_prens	prens	noun	people	prince	أمير
+1975	tr_w_bilezik	bilezik	noun	clothes	bracelet	سوار
+1976	tr_w_gokdelen	gökdelen	noun	places	skyscraper	ناطحة سحاب
+1977	tr_w_simsek	şimşek	noun	weather	lightning	برق
+1978	tr_w_teneffus	teneffüs	noun	school	break (at school)	استراحة
+1979	tr_w_ag	ağ	noun	function	net, network	شبكة
+1980	tr_w_gazoz	gazoz	noun	food	fizzy drink	مشروب غازي
+1981	tr_w_kaya	kaya	noun	nature	rock	صخرة
+1982	tr_w_carsaf	çarşaf	noun	home	bed sheet	ملاءة
+1983	tr_w_pul	pul	noun	communication	stamp	طابع
+1984	tr_w_sessizlik	sessizlik	noun	senses	silence	صمت
+1985	tr_w_yegen	yeğen	noun	family	nephew, niece	ابن الأخ أو الأخت
+1986	tr_w_gulumseme	gülümseme	noun	feelings	smile	ابتسامة
+1987	tr_w_kayinpeder	kayınpeder	noun	family	father-in-law	حمو
+1988	tr_w_boyut	boyut	noun	function	size	حجم
+1989	tr_w_atolye	atölye	noun	work	workshop	ورشة
+1990	tr_w_klavye	klavye	noun	work	keyboard	لوحة مفاتيح
+1991	tr_w_hazine	hazine	noun	shopping	treasure	كنز
+1992	tr_w_kopekbaligi	köpekbalığı	noun	animals	shark	قرش
+1993	tr_w_zil	zil	noun	home	bell	جرس
+1994	tr_w_omlet	omlet	noun	food	omelette	عجّة
+1995	tr_w_tuzak	tuzak	noun	actions	trap	فخّ
+1996	tr_w_bugday	buğday	noun	food	wheat	قمح
+1997	tr_w_gok_gurultusu	gök gürültüsü	noun	weather	thunder	رعد
+1998	tr_w_tunel	tünel	noun	travel	tunnel	نفق
+1999	tr_w_tirnak	tırnak	noun	body	nail (finger)	ظفر
+2000	tr_w_asi	aşı	noun	health	vaccine	لقاح
+2001	tr_w_ziyaret	ziyaret	noun	people	visit	زيارة
+2002	tr_w_zebra	zebra	noun	animals	zebra	حمار وحشي
+2003	tr_w_solucan	solucan	noun	animals	worm	دودة
+2004	tr_w_akciger	akciğer	noun	body	lung	رئة
+2005	tr_w_baykus	baykuş	noun	animals	owl	بومة
+2006	tr_w_karga	karga	noun	animals	crow	غراب
+2007	tr_w_kertenkele	kertenkele	noun	animals	lizard	سحلية
+2008	tr_w_kugu	kuğu	noun	animals	swan	بجعة
+2009	tr_w_kaz	kaz	noun	animals	goose	إوزّة
+2010	tr_w_sincap	sincap	noun	animals	squirrel	سنجاب
+2011	tr_w_kirpi	kirpi	noun	animals	hedgehog	قنفذ
+2012	tr_w_tirtil	tırtıl	noun	animals	caterpillar	يرقة
+2013	tr_w_kilit	kilit	noun	home	lock	قفل
+2014	tr_w_kulp	kulp	noun	home	handle	مقبض
+2015	tr_w_kalorifer	kalorifer	noun	home	radiator, heating	مشعاع
+2016	tr_w_sunger	sünger	noun	home	sponge	إسفنجة
+2017	tr_w_kurek	kürek	noun	home	shovel; oar	مجرفة؛ مجداف
+2018	tr_w_ispanak	ıspanak	noun	food	spinach	سبانخ
+2019	tr_w_lahana	lahana	noun	food	cabbage	ملفوف
+2020	tr_w_patlican	patlıcan	noun	food	aubergine	باذنجان
+2021	tr_w_kabak	kabak	noun	food	courgette, pumpkin	كوسا، يقطين
+2022	tr_w_mantar	mantar	noun	food	mushroom	فطر
+2023	tr_w_findik	fındık	noun	food	hazelnut	بندق
+2024	tr_w_badem	badem	noun	food	almond	لوز
+2025	tr_w_kirinti	kırıntı	noun	food	crumb	فتات
+2026	tr_w_maya	maya	noun	food	yeast	خميرة
+2027	tr_w_sirke	sirke	noun	food	vinegar	خلّ
+2028	tr_w_hardal	hardal	noun	food	mustard	خردل
+2029	tr_w_yelek	yelek	noun	clothes	waistcoat	صدرية
+2030	tr_w_sandalet	sandalet	noun	clothes	sandal	صندل
+2031	tr_w_yaka	yaka	noun	clothes	collar	ياقة
+2032	tr_w_banliyo	banliyö	noun	places	suburb	ضاحية
+2033	tr_w_kisla	kışla	noun	places	barracks	ثكنة
+2034	tr_w_ara_sokak	ara sokak	noun	places	side street, alley	زقاق
+2035	tr_w_bilek	bilek	noun	body	wrist	معصم
+2036	tr_w_kirpik	kirpik	noun	body	eyelash	رمش
+2037	tr_w_dudak	dudak	noun	body	lip	شفة
+2038	tr_w_goz_kapagi	göz kapağı	noun	body	eyelid	جفن
+2039	tr_w_cene	çene	noun	body	chin, jaw	ذقن، فكّ
+2040	tr_w_ense	ense	noun	body	nape	قفا
+2041	tr_w_ayak_parmagi	ayak parmağı	noun	body	toe	إصبع القدم
+2042	tr_w_kafatasi	kafatası	noun	body	skull	جمجمة
+2043	tr_w_baldir	baldır	noun	body	calf (leg)	ربلة الساق
+2044	tr_w_serce	serçe	noun	animals	sparrow	عصفور
+2045	tr_w_deve_kusu	deve kuşu	noun	animals	ostrich	نعامة
+2046	tr_w_penguen	penguen	noun	animals	penguin	بطريق
+2047	tr_w_yarasa	yarasa	noun	animals	bat	خفّاش
+2048	tr_w_salyangoz	salyangoz	noun	animals	snail	حلزون
+2049	tr_w_cekirge	çekirge	noun	animals	grasshopper	جرادة
+2050	tr_w_hamambocegi	hamamböceği	noun	animals	cockroach	صرصور
+2051	tr_w_tavus_kusu	tavus kuşu	noun	animals	peacock	طاووس
+2052	tr_w_nar	nar	noun	food	pomegranate	رمّان
+2053	tr_w_incir	incir	noun	food	fig	تين
+2054	tr_w_kayisi	kayısı	noun	food	apricot	مشمش
+2055	tr_w_fistik	fıstık	noun	food	pistachio, peanut	فستق
+2056	tr_w_maydanoz	maydanoz	noun	food	parsley	بقدونس
+2057	tr_w_nane	nane	noun	food	mint	نعناع
+2058	tr_w_kimyon	kimyon	noun	food	cumin	كمّون
+2059	tr_w_tarcin	tarçın	noun	food	cinnamon	قرفة
+2060	tr_w_kekik	kekik	noun	food	thyme	زعتر
+2061	tr_w_nohut	nohut	noun	food	chickpeas	حمّص
+2062	tr_w_mercimek	mercimek	noun	food	lentils	عدس
+2063	tr_w_borek	börek	noun	food	savoury pastry	فطيرة
+2064	tr_w_olta	olta	noun	leisure	fishing rod	صنّارة
+2065	tr_w_testere	testere	noun	home	saw	منشار
+2066	tr_w_zambak	zambak	noun	nature	lily	زنبق
+2067	tr_w_lale	lale	noun	nature	tulip	خزامى
+2068	tr_w_gul	gül	noun	nature	rose	وردة
+2069	tr_w_papatya	papatya	noun	nature	daisy	بابونج
+2070	tr_w_bitkin	bitkin	adj	feelings	exhausted	منهك
+2071	tr_w_sevimsiz	sevimsiz	adj	people	unpleasant	ثقيل الظلّ
+2072	tr_w_sasirtici	şaşırtıcı	adj	feelings	surprising	مدهش
+2073	tr_w_kiskanc	kıskanç	adj	feelings	jealous	غيور
+2074	tr_w_ozenli	özenli	adj	people	careful, meticulous	متقن
+2075	tr_w_dalgin	dalgın	adj	people	absent-minded	شارد الذهن
+2076	tr_w_sik	şık	adj	descriptions	elegant	أنيق
+2077	tr_w_nadir	nadir	adj	descriptions	rare	نادر
+2078	tr_w_sahte	sahte	adj	descriptions	fake	مزيّف
+2079	tr_w_nemli	nemli	adj	weather	humid	رطب
+2080	tr_w_imkansiz	imkansız	adj	function	impossible	مستحيل
+2081	tr_w_faydasiz	faydasız	adj	function	useless	عديم الفائدة
+2082	tr_w_issiz	ıssız	adj	places	deserted, remote	مهجور، نائٍ
+2083	tr_w_sinir_bozucu	sinir bozucu	adj	feelings	annoying	مزعج
+2084	tr_w_istah_acici	iştah açıcı	adj	food	appetizing	فاتح للشهية
+2085	tr_w_essiz	eşsiz	adj	descriptions	unique	فريد
+2086	tr_w_endise_verici	endişe verici	adj	feelings	worrying	مقلق
+2087	tr_w_acimasiz	acımasız	adj	people	merciless, cruel	قاسٍ
+2088	tr_w_acik_sozlu	açık sözlü	adj	people	frank	صريح
+2089	tr_w_yorucu	yorucu	adj	feelings	tiring	متعب
+2090	tr_w_zifiri	zifiri	adj	descriptions	pitch-dark	حالك
+2091	tr_w_cimri	cimri	adj	people	stingy	بخيل
+2092	tr_w_dun_aksam	dün akşam	adv	time	yesterday evening	مساء أمس
+2093	tr_w_mutlaka	mutlaka	adv	mind	definitely	حتمًا
+2094	tr_w_yeniden	yeniden	adv	time	again	من جديد
+2095	tr_w_zamaninda	zamanında	adv	time	on time	في الوقت المحدّد
+2096	tr_w_elbette	elbette	adv	communication	of course	بالطبع
+2097	tr_w_bir_zamanlar	bir zamanlar	adv	time	once upon a time	في زمن ما
+2098	tr_w_baska_yerde	başka yerde	adv	places	elsewhere	في مكان آخر
+2099	tr_w_yarin_sabah	yarın sabah	adv	time	tomorrow morning	صباح الغد
+2100	tr_w_iki_kez	iki kez	adv	numbers	twice	مرّتين
