@@ -2399,3 +2399,303 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2398	tr_w_somine	şömine	noun	home	fireplace	مدفأة حائط
 2399	tr_w_kul	kül	noun	home	ash	رماد
 2400	tr_w_kivilcim	kıvılcım	noun	home	spark	شرارة
+2401	tr_w_hizlanmak	hızlanmak	verb	movement	to speed up	يتسارع
+2402	tr_w_cakismak	çakışmak	verb	time	to coincide, to clash	يتزامن
+2403	tr_w_derlemek	derlemek	verb	work	to compile	يجمع
+2404	tr_w_aldatmak	aldatmak	verb	people	to deceive, to cheat	يخدع
+2405	tr_w_meydan_okumak	meydan okumak	verb	people	to challenge	يتحدّى
+2406	tr_w_mahrum_etmek	mahrum etmek	verb	society	to deprive	يحرم
+2407	tr_w_dikte_etmek	dikte etmek	verb	communication	to dictate	يملي
+2408	tr_w_sindirmek	sindirmek	verb	health	to digest	يهضم
+2409	tr_w_seyreltmek	seyreltmek	verb	food	to dilute	يخفّف
+2410	tr_w_carpitmak	çarpıtmak	verb	communication	to distort	يشوّه
+2411	tr_w_tahliye_etmek	tahliye etmek	verb	actions	to evacuate	يخلي
+2412	tr_w_buharlasmak	buharlaşmak	verb	nature	to evaporate	يتبخّر
+2413	tr_w_dislamak	dışlamak	verb	actions	to exclude	يستبعد
+2414	tr_w_somurmek	sömürmek	verb	work	to exploit	يستغلّ
+2415	tr_w_dalgalanmak	dalgalanmak	verb	function	to fluctuate, to wave	يتقلّب
+2416	tr_w_sahtesini_yapmak	sahtesini yapmak	verb	work	to forge	يزوّر
+2417	tr_w_nefes_nefese_kalmak	nefes nefese kalmak	verb	body	to pant	يلهث
+2418	tr_w_ogutmek	öğütmek	verb	food	to grind	يطحن
+2419	tr_w_inlemek	inlemek	verb	body	to groan	يئنّ
+2420	tr_w_solumak	solumak	verb	body	to breathe in	يستنشق
+2421	tr_w_enjekte_etmek	enjekte etmek	verb	health	to inject	يحقن
+2422	tr_w_mudahale_etmek	müdahale etmek	verb	people	to intervene	يتدخّل
+2423	tr_w_sinirlendirmek	sinirlendirmek	verb	feelings	to irritate	يزعج
+2424	tr_w_gevsetmek	gevşetmek	verb	actions	to loosen	يرخي
+2425	tr_w_yol_bulmak	yol bulmak	verb	travel	to navigate	يجد طريقه
+2426	tr_w_nufuz_etmek	nüfuz etmek	verb	actions	to penetrate	يخترق
+2427	tr_w_dusunceye_dalmak	düşünceye dalmak	verb	mind	to ponder	يتأمّل
+2428	tr_w_dava_acmak	dava açmak	verb	society	to sue	يقاضي
+2429	tr_w_yaymak	yaymak	verb	nature	to radiate, to spread	ينشر
+2430	tr_w_guvence_vermek	güvence vermek	verb	feelings	to reassure	يطمئن
+2431	tr_w_uzlasmak	uzlaşmak	verb	people	to reconcile	يتصالح
+2432	tr_w_aritmak	arıtmak	verb	actions	to refine, to purify	ينقّي
+2433	tr_w_tadini_cikarmak	tadını çıkarmak	verb	food	to savour	يستمتع
+2434	tr_w_geri_odemek	geri ödemek	verb	shopping	to repay	يسدّد
+2435	tr_w_icerlemek	içerlemek	verb	feelings	to resent	يستاء
+2436	tr_w_zapt_etmek	zapt etmek	verb	actions	to restrain	يكبح
+2437	tr_w_durulamak	durulamak	verb	home	to rinse	يشطف
+2438	tr_w_curutmek	çürütmek	verb	nature	to rot (something)	يعفّن
+2439	tr_w_paylamak	paylamak	verb	people	to scold	يوبّخ
+2440	tr_w_karalamak	karalamak	verb	school	to scribble	يخربش
+2441	tr_w_el_koymak	el koymak	verb	society	to confiscate	يصادر
+2442	tr_w_parcalamak	parçalamak	verb	actions	to smash	يحطّم
+2443	tr_w_omuz_silkmek	omuz silkmek	verb	body	to shrug	يهزّ كتفيه
+2444	tr_w_hickira_hickira_aglamak	hıçkıra hıçkıra ağlamak	verb	feelings	to sob	ينتحب
+2445	tr_w_tohum_ekmek	tohum ekmek	verb	nature	to sow	يبذر
+2446	tr_w_serpistirmek	serpiştirmek	verb	food	to sprinkle	يرشّ
+2447	tr_w_yesermek	yeşermek	verb	nature	to sprout	ينبت
+2448	tr_w_irkilmek	irkilmek	verb	feelings	to be startled	يجفل
+2449	tr_w_batirmak	batırmak	verb	nature	to sink, to submerge	يغرق
+2450	tr_w_bastirmak	bastırmak	verb	feelings	to suppress	يكبت
+2451	tr_w_kabarmak	kabarmak	verb	health	to swell, to rise	ينتفخ
+2452	tr_w_egmek	eğmek	verb	movement	to tilt	يميل
+2453	tr_w_iletmek	iletmek	verb	communication	to transmit, to pass on	ينقل
+2454	tr_w_porsumek	pörsümek	verb	nature	to wither	يذبل
+2455	tr_w_hasret_cekmek	hasret çekmek	verb	feelings	to long for	يحنّ
+2456	tr_w_ortadan_kaldirmak	ortadan kaldırmak	verb	actions	to eliminate	يزيل
+2457	tr_w_sollamak	sollamak	verb	travel	to overtake	يتجاوز
+2458	tr_w_isyan_etmek	isyan etmek	verb	society	to rebel	يتمرّد
+2459	tr_w_edinmek	edinmek	verb	work	to acquire	يكتسب
+2460	tr_w_carpismak	çarpışmak	verb	travel	to collide	يصطدم
+2461	tr_w_sizlanmak	sızlanmak	verb	communication	to whine	يتذمّر
+2462	tr_w_cimdiklemek	çimdiklemek	verb	actions	to pinch	يقرص
+2463	tr_w_durtmek	dürtmek	verb	actions	to poke	ينخز
+2464	tr_w_tekmelemek	tekmelemek	verb	actions	to kick	يركل
+2465	tr_w_yumruklamak	yumruklamak	verb	actions	to punch	يلكم
+2466	tr_w_tokat_atmak	tokat atmak	verb	people	to slap	يصفع
+2467	tr_w_sarsmak	sarsmak	verb	actions	to shake, to shock	يهزّ
+2468	tr_w_yaglamak	yağlamak	verb	home	to oil	يزيّت
+2469	tr_w_muhurlemek	mühürlemek	verb	work	to seal	يختم
+2470	tr_w_damgalamak	damgalamak	verb	work	to stamp	يختم
+2471	tr_w_yuvarlamak	yuvarlamak	verb	numbers	to round, to roll	يقرّب
+2472	tr_w_pekistirmek	pekiştirmek	verb	school	to reinforce (learning)	يرسّخ
+2473	tr_w_anlamlandirmak	anlamlandırmak	verb	mind	to make sense of	يفهم
+2474	tr_w_nimet	nimet	noun	society	blessing	نعمة
+2475	tr_w_tuval	tuval	noun	leisure	canvas	قماش رسم
+2476	tr_w_tabut	tabut	noun	society	coffin	تابوت
+2477	tr_w_iltifat	iltifat	noun	communication	compliment	إطراء
+2478	tr_w_vinc	vinç	noun	work	crane	رافعة
+2479	tr_w_sut_urunleri	süt ürünleri	noun	food	dairy products	منتجات الألبان
+2480	tr_w_hendek	hendek	noun	nature	ditch	خندق
+2481	tr_w_kum_tepesi	kum tepesi	noun	nature	sand dune	كثيب
+2482	tr_w_zehirli_dis	zehirli diş	noun	animals	fang	ناب سامّ
+2483	tr_w_bolluk	bolluk	noun	function	abundance	وفرة
+2484	tr_w_ergenlik	ergenlik	noun	people	adolescence	مراهقة
+2485	tr_w_istirap	ıstırap	noun	feelings	anguish	ألم شديد
+2486	tr_w_cirak	çırak	noun	work	apprentice	صبيّ متدرّب
+2487	tr_w_arsiv	arşiv	noun	work	archive	أرشيف
+2488	tr_w_kibir	kibir	noun	feelings	arrogance	غرور
+2489	tr_w_siginma	sığınma	noun	society	asylum, shelter	لجوء
+2490	tr_w_oy_pusulasi	oy pusulası	noun	society	ballot paper	ورقة اقتراع
+2491	tr_w_arpa	arpa	noun	food	barley	شعير
+2492	tr_w_gaga	gaga	noun	animals	beak	منقار
+2493	tr_w_in	in	noun	animals	den, lair	عرين
+2494	tr_w_kurban	kurban	noun	health	victim, sacrifice	ضحية
+2495	tr_w_curuk	çürük	noun	health	tooth decay, rot	تسوّس
+2496	tr_w_ceset	ceset	noun	health	corpse	جثّة
+2497	tr_w_hancer	hançer	noun	society	dagger	خنجر
+2498	tr_w_enkaz	enkaz	noun	function	wreckage, rubble	حطام
+2499	tr_w_alacakaranlik	alacakaranlık	noun	time	twilight	غسق
+2500	tr_w_salgin	salgın	noun	health	epidemic	وباء
+2501	tr_w_erozyon	erozyon	noun	nature	erosion	تآكل
+2502	tr_w_yorgunluk	yorgunluk	noun	health	tiredness	تعب
+2503	tr_w_gubre	gübre	noun	nature	fertiliser	سماد
+2504	tr_w_fosil	fosil	noun	nature	fossil	أحفورة
+2505	tr_w_minnet	minnet	noun	feelings	gratitude	امتنان
+2506	tr_w_saman_yigini	saman yığını	noun	nature	haystack	كومة قشّ
+2507	tr_w_rehine	rehine	noun	society	hostage	رهينة
+2508	tr_w_alcakgonulluluk	alçakgönüllülük	noun	feelings	humility	تواضع
+2509	tr_w_ilahi	ilahi	noun	leisure	hymn	ترنيمة
+2510	tr_w_miras	miras	noun	family	inheritance	ميراث
+2511	tr_w_uykusuzluk	uykusuzluk	noun	health	insomnia	أرق
+2512	tr_w_durustluk	dürüstlük	noun	feelings	honesty	صدق
+2513	tr_w_ironi	ironi	noun	communication	irony	سخرية
+2514	tr_w_kiskanclik	kıskançlık	noun	feelings	jealousy	غيرة
+2515	tr_w_toprak_kaymasi	toprak kayması	noun	nature	landslide	انهيار أرضي
+2516	tr_w_sadakat	sadakat	noun	feelings	loyalty	وفاء
+2517	tr_w_ninni	ninni	noun	leisure	lullaby	تهويدة
+2518	tr_w_merhamet	merhamet	noun	feelings	mercy	رحمة
+2519	tr_w_cayir	çayır	noun	nature	meadow	مرج
+2520	tr_w_yaramazlik	yaramazlık	noun	people	mischief	شقاوة
+2521	tr_w_ipotek	ipotek	noun	shopping	mortgage	رهن عقاري
+2522	tr_w_mozaik	mozaik	noun	leisure	mosaic	فسيفساء
+2523	tr_w_nostalji	nostalji	noun	feelings	nostalgia	حنين
+2524	tr_w_yemin	yemin	noun	communication	oath	قسم
+2525	tr_w_meyve_bahcesi	meyve bahçesi	noun	nature	orchard	بستان
+2526	tr_w_yetim	yetim	noun	people	orphan	يتيم
+2527	tr_w_mera	mera	noun	nature	pasture	مرعى
+2528	tr_w_haci	hacı	noun	society	pilgrim	حاجّ
+2529	tr_w_veba	veba	noun	health	plague	طاعون
+2530	tr_w_onyargi	önyargı	noun	society	prejudice	تحيّز
+2531	tr_w_kehanet	kehanet	noun	society	prophecy	نبوءة
+2532	tr_w_tas_ocagi	taş ocağı	noun	places	quarry	مقلع
+2533	tr_w_fidye	fidye	noun	society	ransom	فدية
+2534	tr_w_siginak	sığınak	noun	places	shelter	ملجأ
+2535	tr_w_vicdan_azabi	vicdan azabı	noun	feelings	remorse	تأنيب الضمير
+2536	tr_w_bilmece	bilmece	noun	leisure	riddle	لغز
+2537	tr_w_eyer	eyer	noun	animals	saddle	سرج
+2538	tr_w_yara_izi	yara izi	noun	health	scar	ندبة
+2539	tr_w_korkuluk	korkuluk	noun	nature	scarecrow, railing	فزّاعة
+2540	tr_w_kucumseme	küçümseme	noun	feelings	contempt	احتقار
+2541	tr_w_turbe	türbe	noun	places	tomb, shrine	ضريح
+2542	tr_w_kusatma	kuşatma	noun	society	siege	حصار
+2543	tr_w_kiymik	kıymık	noun	home	splinter	شظيّة
+2544	tr_w_taht	taht	noun	society	throne	عرش
+2545	tr_w_ihanet	ihanet	noun	society	betrayal	خيانة
+2546	tr_w_kabile	kabile	noun	society	tribe	قبيلة
+2547	tr_w_ateskes	ateşkes	noun	society	ceasefire	هدنة
+2548	tr_w_bilgelik	bilgelik	noun	mind	wisdom	حكمة
+2549	tr_w_ipek	ipek	noun	clothes	silk	حرير
+2550	tr_w_yama	yama	noun	clothes	patch	رقعة
+2551	tr_w_rusvet	rüşvet	noun	society	bribe	رشوة
+2552	tr_w_morluk	morluk	noun	health	bruise	كدمة
+2553	tr_w_sargi	sargı	noun	health	bandage	ضمادة
+2554	tr_w_merhem	merhem	noun	health	ointment	مرهم
+2555	tr_w_surup	şurup	noun	health	syrup	شراب
+2556	tr_w_sedye	sedye	noun	health	stretcher	نقّالة
+2557	tr_w_koltuk_degnegi	koltuk değneği	noun	health	crutch	عكّاز
+2558	tr_w_nabiz	nabız	noun	health	pulse	نبض
+2559	tr_w_bas_donmesi	baş dönmesi	noun	health	dizziness	دوار
+2560	tr_w_mide_bulantisi	mide bulantısı	noun	health	nausea	غثيان
+2561	tr_w_kaburga	kaburga	noun	body	rib	ضلع
+2562	tr_w_omurga	omurga	noun	body	spine	العمود الفقري
+2563	tr_w_bobrek	böbrek	noun	body	kidney	كلية
+2564	tr_w_karaciger	karaciğer	noun	body	liver	كبد
+2565	tr_w_damar	damar	noun	body	vein	وريد
+2566	tr_w_ter	ter	noun	body	sweat	عرق
+2567	tr_w_gozyasi	gözyaşı	noun	body	tear	دمعة
+2568	tr_w_tukuruk	tükürük	noun	body	saliva	لعاب
+2569	tr_w_hickirik	hıçkırık	noun	body	hiccup	فواق
+2570	tr_w_sakak	şakak	noun	body	temple	صدغ
+2571	tr_w_avuc	avuç	noun	body	palm	كفّ
+2572	tr_w_cil	çil	noun	body	freckle	نمش
+2573	tr_w_kirisiklik	kırışıklık	noun	body	wrinkle	تجعّد
+2574	tr_w_sivilce	sivilce	noun	health	pimple	بثرة
+2575	tr_w_cevik	çevik	adj	people	agile	رشيق
+2576	tr_w_kurak	kurak	adj	nature	arid	قاحل
+2577	tr_w_beceriksiz	beceriksiz	adj	people	clumsy	أخرق
+2578	tr_w_dindar	dindar	adj	society	devout	متديّن
+2579	tr_w_los	loş	adj	descriptions	dim	خافت
+2580	tr_w_urkutucu	ürkütücü	adj	feelings	eerie, scary	مخيف
+2581	tr_w_cilginca	çılgınca	adj	feelings	frantic, crazy	جنوني
+2582	tr_w_tutumlu	tutumlu	adj	shopping	thrifty	مقتصد
+2583	tr_w_acgozlu	açgözlü	adj	people	greedy	جشع
+2584	tr_w_devasa	devasa	adj	descriptions	huge	ضخم
+2585	tr_w_kacinilmaz	kaçınılmaz	adj	function	inevitable	حتمي
+2586	tr_w_tirtikli	tırtıklı	adj	descriptions	jagged	مسنّن
+2587	tr_w_luks	lüks	adj	descriptions	luxurious	فاخر
+2588	tr_w_uysal	uysal	adj	people	docile	وديع
+2589	tr_w_soylu	soylu	adj	people	noble	نبيل
+2590	tr_w_itaatkar	itaatkâr	adj	people	obedient	مطيع
+2591	tr_w_pervasiz	pervasız	adj	people	reckless	متهوّر
+2592	tr_w_kutsal	kutsal	adj	society	sacred	مقدّس
+2593	tr_w_huzurlu	huzurlu	adj	feelings	peaceful	هادئ
+2594	tr_w_pejmurde	pejmürde	adj	descriptions	shabby	رثّ
+2595	tr_w_belirsiz	belirsiz	adj	communication	vague, uncertain	غامض
+2596	tr_w_canli	canlı	adj	descriptions	lively, vivid	حيّ
+2597	tr_w_dakik	dakik	adj	time	punctual	دقيق في المواعيد
+2598	tr_w_zar_zor	zar zor	adv	function	barely	بالكاد
+2599	tr_w_kasten	kasten	adv	function	deliberately	عمدًا
+2600	tr_w_yine_de	yine de	adv	function	nevertheless	مع ذلك
+2601	tr_w_oysa	oysa	adv	function	whereas	بينما
+2602	tr_w_kas_muscle	kas	noun	body	muscle	عضلة
+2603	tr_w_antlasma	antlaşma	noun	society	treaty	معاهدة
+2604	tr_w_meclis	meclis	noun	society	parliament, assembly	مجلس
+2605	tr_w_bakan	bakan	noun	society	minister	وزير
+2606	tr_w_buyukelci	büyükelçi	noun	society	ambassador	سفير
+2607	tr_w_elcilik	elçilik	noun	society	embassy	سفارة
+2608	tr_w_goc	göç	noun	society	migration	هجرة
+2609	tr_w_multeci	mülteci	noun	people	refugee	لاجئ
+2610	tr_w_uyruk	uyruk	noun	society	nationality	جنسية
+2611	tr_w_hak	hak	noun	society	right	حقّ
+2612	tr_w_cezaevi	cezaevi	noun	places	prison	سجن
+2613	tr_w_mahkum	mahkûm	noun	people	prisoner	سجين
+2614	tr_w_sorusturma	soruşturma	noun	society	investigation	تحقيق
+2615	tr_w_subay	subay	noun	people	officer	ضابط
+2616	tr_w_baris	barış	noun	society	peace	سلام
+2617	tr_w_zafer	zafer	noun	society	victory	نصر
+2618	tr_w_zarar	zarar	noun	work	loss, harm	خسارة، ضرر
+2619	tr_w_depo	depo	noun	work	warehouse	مستودع
+2620	tr_w_issizlik	işsizlik	noun	work	unemployment	بطالة
+2621	tr_w_terfi	terfi	noun	work	promotion	ترقية
+2622	tr_w_sorumluluk	sorumluluk	noun	work	responsibility	مسؤولية
+2623	tr_w_burs	burs	noun	school	scholarship	منحة
+2624	tr_w_kayit	kayıt	noun	school	registration	تسجيل
+2625	tr_w_devam	devam	noun	school	attendance, continuation	حضور، استمرار
+2626	tr_w_dikte	dikte	noun	school	dictation	إملاء
+2627	tr_w_el_yazisi	el yazısı	noun	school	handwriting	خطّ اليد
+2628	tr_w_kalemlik	kalemlik	noun	school	pencil case	مقلمة
+2629	tr_w_ceviri	çeviri	noun	communication	translation	ترجمة
+2630	tr_w_sive	şive	noun	communication	accent, dialect	لهجة
+2631	tr_w_atasozu	atasözü	noun	communication	proverb	مثل
+2632	tr_w_fikra	fıkra	noun	leisure	joke, anecdote	نكتة
+2633	tr_w_festival	festival	noun	leisure	festival	مهرجان
+2634	tr_w_anit	anıt	noun	places	monument	نصب تذكاري
+2635	tr_w_kalitim	kalıtım	noun	family	heredity	وراثة
+2636	tr_w_terbiye	terbiye	noun	family	upbringing, manners	تربية
+2637	tr_w_akraba	akraba	noun	family	relative	قريب
+2638	tr_w_konuk	konuk	noun	people	guest	ضيف
+2639	tr_w_konukseverlik	konukseverlik	noun	people	hospitality	ضيافة
+2640	tr_w_dostluk	dostluk	noun	people	friendship	صداقة
+2641	tr_w_dusmanlik	düşmanlık	noun	people	enmity	عداوة
+2642	tr_w_intikam	intikam	noun	people	revenge	انتقام
+2643	tr_w_af	af	noun	people	pardon	عفو
+2644	tr_w_umutsuzluk	umutsuzluk	noun	feelings	despair	يأس
+2645	tr_w_umut	umut	noun	feelings	hope	أمل
+2646	tr_w_yalnizlik	yalnızlık	noun	feelings	loneliness	وحدة
+2647	tr_w_gerginlik	gerginlik	noun	feelings	tension	توتّر
+2648	tr_w_huzur	huzur	noun	feelings	peace, calm	راحة
+2649	tr_w_saskinlik	şaşkınlık	noun	feelings	astonishment	دهشة
+2650	tr_w_merhametli	merhametli	adj	people	merciful	رحيم
+2651	tr_w_geveze	geveze	adj	people	talkative	ثرثار
+2652	tr_w_yalanci	yalancı	adj	people	liar, lying	كاذب
+2653	tr_w_mutlak	mutlak	adj	function	absolute	مطلق
+2654	tr_w_dolambacli	dolambaçlı	adj	descriptions	winding	متعرّج
+2655	tr_w_sivri	sivri	adj	descriptions	pointed	مدبّب
+2656	tr_w_yagmurlu	yağmurlu	adj	weather	rainy	ممطر
+2657	tr_w_bulutlu	bulutlu	adj	weather	cloudy	غائم
+2658	tr_w_firtinali	fırtınalı	adj	weather	stormy	عاصف
+2659	tr_w_onceden	önceden	adv	time	in advance	مسبقًا
+2660	tr_w_silgi	silgi	noun	school	eraser	ممحاة
+2661	tr_w_cetvel	cetvel	noun	school	ruler	مسطرة
+2662	tr_w_pergel	pergel	noun	school	compasses	فرجار
+2663	tr_w_sandik	sandık	noun	home	chest	صندوق
+2664	tr_w_silte	şilte	noun	home	mattress	فرشة
+2665	tr_w_esik	eşik	noun	home	threshold	عتبة
+2666	tr_w_dam	dam	noun	home	roof	سطح
+2667	tr_w_tomurcuk	tomurcuk	noun	nature	bud	برعم
+2668	tr_w_filiz	filiz	noun	nature	sprout, shoot	نبتة صغيرة
+2669	tr_w_kumul	kumul	noun	nature	dune	كثيب
+2670	tr_w_inci	inci	noun	nature	pearl	لؤلؤة
+2671	tr_w_bakir	bakır	noun	descriptions	copper	نحاس
+2672	tr_w_celik	çelik	noun	descriptions	steel	فولاذ
+2673	tr_w_mermer	mermer	noun	descriptions	marble	رخام
+2674	tr_w_cimento	çimento	noun	work	cement	إسمنت
+2675	tr_w_kiris	kiriş	noun	work	beam	عارضة
+2676	tr_w_vantilator	vantilatör	noun	home	fan	مروحة
+2677	tr_w_havan	havan	noun	home	mortar	هاون
+2678	tr_w_kandil	kandil	noun	home	oil lamp	قنديل
+2679	tr_w_cibinlik	cibinlik	noun	home	mosquito net	ناموسية
+2680	tr_w_bostan	bostan	noun	places	vegetable garden	بستان خضار
+2681	tr_w_tersane	tersane	noun	places	shipyard	حوض سفن
+2682	tr_w_sandal	sandal	noun	travel	rowing boat	قارب
+2683	tr_w_dumen	dümen	noun	travel	rudder, helm	دفّة
+2684	tr_w_kilim	kilim	noun	home	kilim rug	سجّاد يدوي
+2685	tr_w_hasir	hasır	noun	home	straw mat	حصير
+2686	tr_w_hapsirik	hapşırık	noun	health	sneeze	عطسة
+2687	tr_w_seker_hastaligi	şeker hastalığı	noun	health	diabetes	سكّري
+2688	tr_w_ameliyat	ameliyat	noun	health	operation, surgery	عملية جراحية
+2689	tr_w_recete	reçete	noun	health	prescription	وصفة طبية
+2690	tr_w_acil_servis	acil servis	noun	health	emergency room	قسم الطوارئ
+2691	tr_w_muayene	muayene	noun	health	medical examination	فحص طبي
+2692	tr_w_iyilesme	iyileşme	noun	health	recovery	شفاء
+2693	tr_w_vitamin	vitamin	noun	health	vitamin	فيتامين
+2694	tr_w_beslenme	beslenme	noun	health	nutrition	تغذية
+2695	tr_w_kaplica	kaplıca	noun	places	hot spring, spa	ينبوع حارّ
+2696	tr_w_hamam	hamam	noun	places	Turkish bath	حمّام تركي
+2697	tr_w_kervansaray	kervansaray	noun	places	caravanserai	خان
+2698	tr_w_semt	semt	noun	places	district	حيّ
+2699	tr_w_sokak_lambasi	sokak lambası	noun	travel	streetlamp	مصباح الشارع
+2700	tr_w_kaldirim_tasi	kaldırım taşı	noun	travel	paving stone	حجر الرصيف
