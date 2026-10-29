@@ -2699,3 +2699,303 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2698	en_w_bleak	bleak	adj	descriptions	bleak	كئيب	/bliːk/
 2699	en_w_blunt	blunt	adj	descriptions	blunt	كليل، صريح	/blʌnt/
 2700	en_w_brittle	brittle	adj	descriptions	brittle	هشّ	/ˈbrɪtl/
+2701	en_w_candid	candid	adj	people	candid	صريح	/ˈkændɪd/
+2702	en_w_clumsy	clumsy	adj	people	clumsy	أخرق	/ˈklʌmzi/
+2703	en_w_cunning	cunning	adj	people	cunning	ماكر	/ˈkʌnɪŋ/
+2704	en_w_damp	damp	adj	weather	damp	رطب	/dæmp/
+2705	en_w_devout	devout	adj	society	devout	متديّن	/dɪˈvaʊt/
+2706	en_w_dim	dim	adj	descriptions	dim	خافت	/dɪm/
+2707	en_w_drowsy	drowsy	adj	body	drowsy	نعسان	/ˈdraʊzi/
+2708	en_w_eerie	eerie	adj	feelings	eerie	مخيف، غريب	/ˈɪəri/
+2709	en_w_frail	frail	adj	health	frail	واهن	/freɪl/
+2710	en_w_frantic	frantic	adj	feelings	frantic	محموم	/ˈfræntɪk/
+2711	en_w_frugal	frugal	adj	shopping	frugal	مقتصد	/ˈfruːɡl/
+2712	en_w_jagged	jagged	adj	descriptions	jagged	مسنّن	/ˈdʒæɡɪd/
+2713	en_w_lavish	lavish	adj	descriptions	lavish	فخم	/ˈlævɪʃ/
+2714	en_w_meek	meek	adj	people	meek	وديع	/miːk/
+2715	en_w_murky	murky	adj	descriptions	murky	عكر	/ˈmɜːki/
+2716	en_w_serene	serene	adj	feelings	serene	هادئ	/səˈriːn/
+2717	en_w_shabby	shabby	adj	descriptions	shabby	رثّ	/ˈʃæbi/
+2718	en_w_sly	sly	adj	people	sly	ماكر	/slaɪ/
+2719	en_w_stingy	stingy	adj	people	stingy	بخيل	/ˈstɪndʒi/
+2720	en_w_weary	weary	adj	body	weary	منهك	/ˈwɪəri/
+2721	en_w_aloud	aloud	adv	communication	aloud	بصوت عالٍ	/əˈlaʊd/
+2722	en_w_barely	barely	adv	function	barely	بالكاد	/ˈbeəli/
+2723	en_w_deliberately	deliberately	adv	function	deliberately	عمدًا	/dɪˈlɪbərətli/
+2724	en_w_hence	hence	adv	function	hence	لذلك	/hens/
+2725	en_w_merely	merely	adv	function	merely	مجرّد	/ˈmɪəli/
+2726	en_w_nonetheless	nonetheless	adv	function	nonetheless	مع ذلك	/ˌnʌnðəˈles/
+2727	en_w_seldom	seldom	adv	time	seldom	نادرًا	/ˈseldəm/
+2728	en_w_thereby	thereby	adv	function	thereby	بذلك	/ˌðeəˈbaɪ/
+2729	en_w_whereas	whereas	adv	function	whereas	بينما	/weərˈæz/
+2730	en_w_abide	abide	verb	society	to abide (by)	يلتزم بـ	/əˈbaɪd/
+2731	en_w_abstain	abstain	verb	society	to abstain	يمتنع	/əbˈsteɪn/
+2732	en_w_accentuate	accentuate	verb	communication	to accentuate	يُبرز	/əkˈsentʃueɪt/
+2733	en_w_adhere	adhere	verb	society	to adhere	يلتزم	/ədˈhɪə/
+2734	en_w_adjourn	adjourn	verb	work	to adjourn	يرفع الجلسة	/əˈdʒɜːn/
+2735	en_w_admonish	admonish	verb	people	to admonish	ينذر، يوبّخ	/ədˈmɒnɪʃ/
+2736	en_w_alleviate	alleviate	verb	health	to alleviate	يخفّف	/əˈliːvieɪt/
+2737	en_w_amend	amend	verb	society	to amend	يعدّل	/əˈmend/
+2738	en_w_appease	appease	verb	people	to appease	يسترضي	/əˈpiːz/
+2739	en_w_ascend	ascend	verb	movement	to ascend	يصعد	/əˈsend/
+2740	en_w_ascertain	ascertain	verb	mind	to ascertain	يتحقّق من	/ˌæsəˈteɪn/
+2741	en_w_aspire	aspire	verb	feelings	to aspire	يطمح	/əˈspaɪə/
+2742	en_w_assert	assert	verb	communication	to assert	يؤكّد	/əˈsɜːt/
+2743	en_w_avert	avert	verb	actions	to avert	يتفادى	/əˈvɜːt/
+2744	en_w_beckon	beckon	verb	communication	to beckon	يومئ	/ˈbekən/
+2745	en_w_bewilder	bewilder	verb	feelings	to bewilder	يحيّر	/bɪˈwɪldə/
+2746	en_w_blur	blur	verb	senses	to blur	يغشّي	/blɜː/	blurs, blurred, blurring
+2747	en_w_bolster	bolster	verb	actions	to bolster	يعزّز	/ˈbəʊlstə/
+2748	en_w_brace	brace	verb	actions	to brace (oneself)	يستعدّ	/breɪs/
+2749	en_w_brandish	brandish	verb	actions	to brandish	يلوّح بـ	/ˈbrændɪʃ/
+2750	en_w_breach	breach	verb	society	to breach; a breach	يخرق؛ خرق	/briːtʃ/
+2751	en_w_bristle	bristle	verb	animals	to bristle	ينتصب (الشعر)	/ˈbrɪsl/
+2752	en_w_buckle	buckle	verb	clothes	to buckle; a buckle	يربط؛ إبزيم	/ˈbʌkl/
+2753	en_w_bulge	bulge	verb	descriptions	to bulge	ينتفخ	/bʌldʒ/
+2754	en_w_cajole	cajole	verb	people	to cajole	يتملّق	/kəˈdʒəʊl/
+2755	en_w_capsize	capsize	verb	travel	to capsize	ينقلب (القارب)	/kæpˈsaɪz/
+2756	en_w_chuckle	chuckle	verb	feelings	to chuckle	يضحك بخفوت	/ˈtʃʌkl/
+2757	en_w_clamber	clamber	verb	movement	to clamber	يتسلّق بصعوبة	/ˈklæmbə/
+2758	en_w_clasp	clasp	verb	actions	to clasp	يمسك بإحكام	/klɑːsp/
+2759	en_w_cleanse	cleanse	verb	home	to cleanse	يطهّر	/klenz/
+2760	en_w_clench	clench	verb	body	to clench	يقبض	/klentʃ/
+2761	en_w_coax	coax	verb	people	to coax	يلاطف	/kəʊks/
+2762	en_w_commemorate	commemorate	verb	society	to commemorate	يحيي ذكرى	/kəˈmeməreɪt/
+2763	en_w_compel	compel	verb	society	to compel	يرغم	/kəmˈpel/	compels, compelled, compelling
+2764	en_w_concoct	concoct	verb	food	to concoct	يختلق، يحضّر	/kənˈkɒkt/
+2765	en_w_condone	condone	verb	society	to condone	يتغاضى عن	/kənˈdəʊn/
+2766	en_w_confer	confer	verb	work	to confer	يتشاور	/kənˈfɜː/	confers, conferred, conferring
+2767	en_w_congregate	congregate	verb	people	to congregate	يتجمّع	/ˈkɒŋɡrɪɡeɪt/
+2768	en_w_console	console	verb	feelings	to console	يواسي	/kənˈsəʊl/
+2769	en_w_contend	contend	verb	communication	to contend	يدّعي، ينافس	/kənˈtend/
+2770	en_w_contrive	contrive	verb	mind	to contrive	يدبّر	/kənˈtraɪv/
+2771	en_w_convene	convene	verb	work	to convene	يعقد (اجتماعًا)	/kənˈviːn/
+2772	en_w_cower	cower	verb	feelings	to cower	ينكمش خوفًا	/ˈkaʊə/
+2773	en_w_crave	crave	verb	feelings	to crave	يشتهي	/kreɪv/
+2774	en_w_crease	crease	verb	clothes	to crease; a crease	يجعّد؛ تجعيدة	/kriːs/
+2775	en_w_crumble	crumble	verb	actions	to crumble	يتفتّت	/ˈkrʌmbl/
+2776	en_w_crumple	crumple	verb	actions	to crumple	يجعّد	/ˈkrʌmpl/
+2777	en_w_curb	curb	verb	actions	to curb	يكبح	/kɜːb/
+2778	en_w_dangle	dangle	verb	actions	to dangle	يتدلّى	/ˈdæŋɡl/
+2779	en_w_dart	dart	verb	movement	to dart; a dart	يندفع؛ سهم صغير	/dɑːt/
+2780	en_w_dawdle	dawdle	verb	movement	to dawdle	يتباطأ	/ˈdɔːdl/
+2781	en_w_debunk	debunk	verb	communication	to debunk	يفنّد	/ˌdiːˈbʌŋk/
+2782	en_w_decipher	decipher	verb	school	to decipher	يفكّ رموز	/dɪˈsaɪfə/
+2783	en_w_defer	defer	verb	time	to defer	يؤجّل	/dɪˈfɜː/	defers, deferred, deferring
+2784	en_w_deflect	deflect	verb	actions	to deflect	يحرف	/dɪˈflekt/
+2785	en_w_defraud	defraud	verb	society	to defraud	يحتال على	/dɪˈfrɔːd/
+2786	en_w_deplete	deplete	verb	nature	to deplete	يستنزف	/dɪˈpliːt/
+2787	en_w_deplore	deplore	verb	feelings	to deplore	يستنكر	/dɪˈplɔː/
+2788	en_w_deride	deride	verb	people	to deride	يسخر من	/dɪˈraɪd/
+2789	en_w_desecrate	desecrate	verb	society	to desecrate	يدنّس	/ˈdesɪkreɪt/
+2790	en_w_detain	detain	verb	society	to detain	يحتجز	/dɪˈteɪn/
+2791	en_w_deter	deter	verb	society	to deter	يردع	/dɪˈtɜː/	deters, deterred, deterring
+2792	en_w_devour	devour	verb	food	to devour	يلتهم	/dɪˈvaʊə/
+2793	en_w_diminish	diminish	verb	function	to diminish	يتضاءل	/dɪˈmɪnɪʃ/
+2794	en_w_disband	disband	verb	society	to disband	يحلّ (جماعة)	/dɪsˈbænd/
+2795	en_w_discern	discern	verb	senses	to discern	يميّز	/dɪˈsɜːn/
+2796	en_w_disclose	disclose	verb	communication	to disclose	يكشف	/dɪsˈkləʊz/
+2797	en_w_dislodge	dislodge	verb	actions	to dislodge	يزيح	/dɪsˈlɒdʒ/
+2798	en_w_dismantle	dismantle	verb	actions	to dismantle	يفكّك	/dɪsˈmæntl/
+2799	en_w_disperse	disperse	verb	actions	to disperse	يتفرّق	/dɪˈspɜːs/
+2800	en_w_dispel	dispel	verb	mind	to dispel	يبدّد	/dɪˈspel/	dispels, dispelled, dispelling
+2801	en_w_dissuade	dissuade	verb	communication	to dissuade	يثني عن	/dɪˈsweɪd/
+2802	en_w_dodge	dodge	verb	movement	to dodge	يراوغ	/dɒdʒ/
+2803	en_w_douse	douse	verb	home	to douse	يغمر، يطفئ	/daʊs/
+2804	en_w_dread	dread	verb	feelings	to dread; dread	يخشى؛ رهبة	/dred/
+2805	en_w_drench	drench	verb	weather	to drench	يبلّل تمامًا	/drentʃ/
+2806	en_w_dwindle	dwindle	verb	function	to dwindle	يتضاءل	/ˈdwɪndl/
+2807	en_w_elicit	elicit	verb	communication	to elicit	يستخلص	/iˈlɪsɪt/
+2808	en_w_elude	elude	verb	actions	to elude	يفلت من	/iˈluːd/
+2809	en_w_emanate	emanate	verb	nature	to emanate	ينبعث	/ˈeməneɪt/
+2810	en_w_embellish	embellish	verb	communication	to embellish	يزيّن، يبالغ	/ɪmˈbelɪʃ/
+2811	en_w_embezzle	embezzle	verb	work	to embezzle	يختلس	/ɪmˈbezl/
+2812	en_w_encroach	encroach	verb	places	to encroach	يتعدّى على	/ɪnˈkrəʊtʃ/
+2813	en_w_endow	endow	verb	society	to endow	يهب	/ɪnˈdaʊ/
+2814	en_w_engulf	engulf	verb	nature	to engulf	يبتلع	/ɪnˈɡʌlf/
+2815	en_w_enlighten	enlighten	verb	mind	to enlighten	ينير	/ɪnˈlaɪtn/
+2816	en_w_ensue	ensue	verb	time	to ensue	يتبع	/ɪnˈsjuː/
+2817	en_w_entice	entice	verb	people	to entice	يغري	/ɪnˈtaɪs/
+2818	en_w_entrust	entrust	verb	people	to entrust	يأتمن	/ɪnˈtrʌst/
+2819	en_w_eradicate	eradicate	verb	actions	to eradicate	يستأصل	/ɪˈrædɪkeɪt/
+2820	en_w_erode	erode	verb	nature	to erode	يتآكل	/ɪˈrəʊd/
+2821	en_w_evade	evade	verb	actions	to evade	يتهرّب	/ɪˈveɪd/
+2822	en_w_exert	exert	verb	actions	to exert	يبذل	/ɪɡˈzɜːt/
+2823	en_w_exhort	exhort	verb	communication	to exhort	يحثّ	/ɪɡˈzɔːt/
+2824	en_w_expel	expel	verb	school	to expel	يطرد	/ɪkˈspel/	expels, expelled, expelling
+2825	en_w_extol	extol	verb	communication	to extol	يمجّد	/ɪkˈstəʊl/	extols, extolled, extolling
+2826	en_w_falter	falter	verb	movement	to falter	يتعثّر	/ˈfɔːltə/
+2827	en_w_fester	fester	verb	health	to fester	يتقيّح	/ˈfestə/
+2828	en_w_fidget	fidget	verb	body	to fidget	يتململ	/ˈfɪdʒɪt/
+2829	en_w_flail	flail	verb	movement	to flail	يلوّح بعنف	/fleɪl/
+2830	en_w_flaunt	flaunt	verb	people	to flaunt	يستعرض	/flɔːnt/
+2831	en_w_flicker	flicker	verb	senses	to flicker	يومض	/ˈflɪkə/
+2832	en_w_flinch	flinch	verb	body	to flinch	يجفل	/flɪntʃ/
+2833	en_w_fling	fling	verb	actions	to fling	يقذف	/flɪŋ/	flung	irregular=yes
+2834	en_w_flounder	flounder	verb	movement	to flounder	يتخبّط	/ˈflaʊndə/
+2835	en_w_fluster	fluster	verb	feelings	to fluster	يربك	/ˈflʌstə/
+2836	en_w_foil	foil	verb	actions	to foil; foil	يحبط؛ رقاقة	/fɔɪl/
+2837	en_w_forfeit	forfeit	verb	society	to forfeit	يخسر (حقًّا)	/ˈfɔːfɪt/
+2838	en_w_fortify	fortify	verb	actions	to fortify	يحصّن	/ˈfɔːtɪfaɪ/	fortifies, fortified
+2839	en_w_fret	fret	verb	feelings	to fret	يقلق	/fret/	frets, fretted, fretting
+2840	en_w_frolic	frolic	verb	leisure	to frolic	يمرح	/ˈfrɒlɪk/	frolics, frolicked, frolicking
+2841	en_w_fumble	fumble	verb	actions	to fumble	يتلمّس بارتباك	/ˈfʌmbl/
+2842	en_w_gargle	gargle	verb	health	to gargle	يتغرغر	/ˈɡɑːɡl/
+2843	en_w_gesticulate	gesticulate	verb	communication	to gesticulate	يشير بيديه	/dʒeˈstɪkjuleɪt/
+2844	en_w_gloat	gloat	verb	feelings	to gloat	يشمت	/ɡləʊt/
+2845	en_w_glisten	glisten	verb	senses	to glisten	يلمع	/ˈɡlɪsn/
+2846	en_w_gnaw	gnaw	verb	animals	to gnaw	يقرض	/nɔː/
+2847	en_w_gobble	gobble	verb	food	to gobble	يلتهم	/ˈɡɒbl/
+2848	en_w_grapple	grapple	verb	actions	to grapple	يصارع	/ˈɡræpl/
+2849	en_w_grimace	grimace	verb	body	to grimace	يكشّر	/ˈɡrɪməs/
+2850	en_w_grumble	grumble	verb	communication	to grumble	يتذمّر	/ˈɡrʌmbl/
+2851	en_w_haggle	haggle	verb	shopping	to haggle	يساوم	/ˈhæɡl/
+2852	en_w_hamper	hamper	verb	actions	to hamper; a hamper	يعيق؛ سلّة	/ˈhæmpə/
+2853	en_w_harass	harass	verb	people	to harass	يضايق	/ˈhærəs/
+2854	en_w_heave	heave	verb	actions	to heave	يرفع بجهد	/hiːv/
+2855	en_w_heed	heed	verb	communication	to heed	يصغي إلى	/hiːd/
+2856	en_w_hoard	hoard	verb	actions	to hoard; a hoard	يكنز؛ كنز	/hɔːd/
+2857	en_w_hobble	hobble	verb	movement	to hobble	يعرج	/ˈhɒbl/
+2858	en_w_hoist	hoist	verb	actions	to hoist	يرفع	/hɔɪst/
+2859	en_w_huddle	huddle	verb	people	to huddle	يتجمّع متلاصقين	/ˈhʌdl/
+2860	en_w_hurl	hurl	verb	actions	to hurl	يقذف	/hɜːl/
+2861	en_w_hush	hush	verb	communication	to hush; hush	يُسكت؛ سكون	/hʌʃ/
+2862	en_w_impede	impede	verb	actions	to impede	يعرقل	/ɪmˈpiːd/
+2863	en_w_implore	implore	verb	communication	to implore	يتوسّل	/ɪmˈplɔː/
+2864	en_w_incite	incite	verb	society	to incite	يحرّض	/ɪnˈsaɪt/
+2865	en_w_indulge	indulge	verb	feelings	to indulge	ينغمس، يدلّل	/ɪnˈdʌldʒ/
+2866	en_w_infer	infer	verb	mind	to infer	يستنتج	/ɪnˈfɜː/	infers, inferred, inferring
+2867	en_w_infest	infest	verb	animals	to infest	يغزو (الحشرات)	/ɪnˈfest/
+2868	en_w_inflict	inflict	verb	actions	to inflict	يُلحق	/ɪnˈflɪkt/
+2869	en_w_instil	instil	verb	school	to instil	يغرس	/ɪnˈstɪl/	instils, instilled, instilling
+2870	en_w_jeer	jeer	verb	people	to jeer	يسخر	/dʒɪə/
+2871	en_w_jolt	jolt	verb	movement	to jolt; a jolt	يهزّ فجأة؛ هزّة	/dʒəʊlt/
+2872	en_w_jostle	jostle	verb	movement	to jostle	يتدافع	/ˈdʒɒsl/
+2873	en_w_lament	lament	verb	feelings	to lament	يرثي	/ləˈment/
+2874	en_w_loathe	loathe	verb	feelings	to loathe	يمقت	/ləʊð/
+2875	en_w_loiter	loiter	verb	movement	to loiter	يتسكّع	/ˈlɔɪtə/
+2876	en_w_lull	lull	verb	feelings	to lull; a lull	يهدّئ؛ هدوء مؤقّت	/lʌl/
+2877	en_w_lunge	lunge	verb	movement	to lunge	يندفع	/lʌndʒ/
+2878	en_w_lurk	lurk	verb	movement	to lurk	يكمن	/lɜːk/
+2879	en_w_maim	maim	verb	health	to maim	يشوّه، يعطب	/meɪm/
+2880	en_w_mar	mar	verb	actions	to mar	يفسد	/mɑː/	mars, marred, marring
+2881	en_w_meander	meander	verb	movement	to meander	يتعرّج	/miˈændə/
+2882	en_w_mingle	mingle	verb	people	to mingle	يختلط	/ˈmɪŋɡl/
+2883	en_w_mitigate	mitigate	verb	actions	to mitigate	يخفّف	/ˈmɪtɪɡeɪt/
+2884	en_w_mock	mock	verb	people	to mock	يسخر	/mɒk/
+2885	en_w_muster	muster	verb	actions	to muster	يحشد	/ˈmʌstə/
+2886	en_w_nag	nag	verb	communication	to nag	يلحّ	/næɡ/	nags, nagged, nagging
+2887	en_w_nestle	nestle	verb	movement	to nestle	يستكين	/ˈnesl/
+2888	en_w_nibble	nibble	verb	food	to nibble	يقضم	/ˈnɪbl/
+2889	en_w_nudge	nudge	verb	actions	to nudge	يدفع برفق	/nʌdʒ/
+2890	en_w_nurture	nurture	verb	family	to nurture	يرعى	/ˈnɜːtʃə/
+2891	en_w_obliterate	obliterate	verb	actions	to obliterate	يمحو	/əˈblɪtəreɪt/
+2892	en_w_ooze	ooze	verb	nature	to ooze	يرشح	/uːz/
+2893	en_w_outwit	outwit	verb	mind	to outwit	يتفوّق بالدهاء	/ˌaʊtˈwɪt/	outwits, outwitted, outwitting
+2894	en_w_pacify	pacify	verb	feelings	to pacify	يهدّئ	/ˈpæsɪfaɪ/	pacifies, pacified
+2895	en_w_pamper	pamper	verb	people	to pamper	يدلّل	/ˈpæmpə/
+2896	en_w_peck	peck	verb	animals	to peck	ينقر	/pek/
+2897	en_w_peer	peer	verb	senses	to peer; a peer	يحدّق؛ نظير	/pɪə/
+2898	en_w_perish	perish	verb	health	to perish	يهلك	/ˈperɪʃ/
+2899	en_w_pester	pester	verb	people	to pester	يزعج	/ˈpestə/
+2900	en_w_pilfer	pilfer	verb	society	to pilfer	يسرق أشياء صغيرة	/ˈpɪlfə/
+2901	en_w_plod	plod	verb	movement	to plod	يمشي بتثاقل	/plɒd/	plods, plodded, plodding
+2902	en_w_pluck	pluck	verb	actions	to pluck	يقطف، ينتف	/plʌk/
+2903	en_w_plummet	plummet	verb	movement	to plummet	يهوي	/ˈplʌmɪt/
+2904	en_w_poach	poach	verb	food	to poach	يسلق، يصطاد خلسة	/pəʊtʃ/
+2905	en_w_pounce	pounce	verb	animals	to pounce	ينقضّ	/paʊns/
+2906	en_w_prance	prance	verb	movement	to prance	يتبختر	/prɑːns/
+2907	en_w_prod	prod	verb	actions	to prod	ينخز	/prɒd/	prods, prodded, prodding
+2908	en_w_prowl	prowl	verb	animals	to prowl	يتربّص	/praʊl/
+2909	en_w_pry	pry	verb	people	to pry	يتطفّل	/praɪ/	pries, pried
+2910	en_w_quench	quench	verb	food	to quench	يروي	/kwentʃ/
+2911	en_w_rake	rake	verb	nature	to rake; a rake	يجرف؛ مدمّة	/reɪk/
+2912	en_w_ramble	ramble	verb	leisure	to ramble	يتنزّه، يهذر	/ˈræmbl/
+2913	en_w_ransack	ransack	verb	society	to ransack	ينهب	/ˈrænsæk/
+2914	en_w_rebuke	rebuke	verb	people	to rebuke	يوبّخ	/rɪˈbjuːk/
+2915	en_w_recede	recede	verb	nature	to recede	ينحسر	/rɪˈsiːd/
+2916	en_w_recoil	recoil	verb	body	to recoil	يرتدّ	/rɪˈkɔɪl/
+2917	en_w_relent	relent	verb	feelings	to relent	يلين	/rɪˈlent/
+2918	en_w_rend	rend	verb	actions	to rend	يمزّق	/rend/	rent	irregular=yes
+2919	en_w_replenish	replenish	verb	actions	to replenish	يعيد ملء	/rɪˈplenɪʃ/
+2920	en_w_reproach	reproach	verb	people	to reproach	يلوم	/rɪˈprəʊtʃ/
+2921	en_w_rummage	rummage	verb	actions	to rummage	ينبش	/ˈrʌmɪdʒ/
+2922	en_w_rustle	rustle	verb	senses	to rustle	يحفّ	/ˈrʌsl/
+2923	en_w_saunter	saunter	verb	movement	to saunter	يتمشّى	/ˈsɔːntə/
+2924	en_w_scald	scald	verb	health	to scald	يحرق بسائل ساخن	/skɔːld/
+2925	en_w_scamper	scamper	verb	movement	to scamper	يركض مسرعًا	/ˈskæmpə/
+2926	en_w_scoff	scoff	verb	people	to scoff	يستهزئ	/skɒf/
+2927	en_w_scorch	scorch	verb	nature	to scorch	يلفح	/skɔːtʃ/
+2928	en_w_scour	scour	verb	home	to scour	يفرك، يفتّش	/ˈskaʊə/
+2929	en_w_scowl	scowl	verb	feelings	to scowl	يعبس	/skaʊl/
+2930	en_w_scramble	scramble	verb	movement	to scramble	يتدافع، يخفق	/ˈskræmbl/
+2931	en_w_scrutinise	scrutinise	verb	mind	to scrutinise	يدقّق	/ˈskruːtənaɪz/
+2932	en_w_seethe	seethe	verb	feelings	to seethe	يغلي غضبًا	/siːð/
+2933	en_w_shove	shove	verb	actions	to shove	يدفع بقوّة	/ʃʌv/
+2934	en_w_shudder	shudder	verb	body	to shudder	يرتعد	/ˈʃʌdə/
+2935	en_w_shun	shun	verb	people	to shun	يتجنّب	/ʃʌn/	shuns, shunned, shunning
+2936	en_w_sift	sift	verb	food	to sift	ينخل	/sɪft/
+2937	en_w_simper	simper	verb	feelings	to simper	يبتسم بتكلّف	/ˈsɪmpə/
+2938	en_w_skulk	skulk	verb	movement	to skulk	يتسلّل	/skʌlk/
+2939	en_w_slander	slander	verb	communication	to slander; slander	يفتري؛ افتراء	/ˈslɑːndə/
+2940	en_w_slither	slither	verb	movement	to slither	ينزلق	/ˈslɪðə/
+2941	en_w_slouch	slouch	verb	body	to slouch	يتهدّل	/slaʊtʃ/
+2942	en_w_smother	smother	verb	actions	to smother	يخنق	/ˈsmʌðə/
+2943	en_w_smoulder	smoulder	verb	nature	to smoulder	يحترق ببطء	/ˈsməʊldə/
+2944	en_w_snarl	snarl	verb	animals	to snarl	يزمجر	/snɑːl/
+2945	en_w_snatch	snatch	verb	actions	to snatch	يخطف	/snætʃ/
+2946	en_w_sneer	sneer	verb	people	to sneer	يتهكّم	/snɪə/
+2947	en_w_snore	snore	verb	body	to snore	يشخر	/snɔː/
+2948	en_w_snort	snort	verb	body	to snort	يشخر بأنفه	/snɔːt/
+2949	en_w_soar	soar	verb	movement	to soar	يحلّق	/sɔː/
+2950	en_w_spurn	spurn	verb	people	to spurn	يرفض بازدراء	/spɜːn/
+2951	en_w_squabble	squabble	verb	people	to squabble	يتشاجر	/ˈskwɒbl/
+2952	en_w_squander	squander	verb	shopping	to squander	يبدّد	/ˈskwɒndə/
+2953	en_w_squint	squint	verb	senses	to squint	يضيّق عينيه	/skwɪnt/
+2954	en_w_squirm	squirm	verb	body	to squirm	يتلوّى	/skwɜːm/
+2955	en_w_stalk	stalk	verb	animals	to stalk; a stalk	يتعقّب؛ ساق	/stɔːk/
+2956	en_w_stifle	stifle	verb	feelings	to stifle	يكتم	/ˈstaɪfl/
+2957	en_w_stoop	stoop	verb	movement	to stoop	ينحني	/stuːp/
+2958	en_w_strew	strew	verb	actions	to strew	ينثر	/struː/	strewn	irregular=yes
+2959	en_w_stride	stride	verb	movement	to stride; a stride	يخطو؛ خطوة	/straɪd/	strode, stridden	irregular=yes
+2960	en_w_strut	strut	verb	movement	to strut	يختال	/strʌt/	struts, strutted, strutting
+2961	en_w_stun	stun	verb	feelings	to stun	يذهل	/stʌn/	stuns, stunned, stunning
+2962	en_w_subdue	subdue	verb	society	to subdue	يُخضع	/səbˈdjuː/
+2963	en_w_succumb	succumb	verb	health	to succumb	يستسلم	/səˈkʌm/
+2964	en_w_sulk	sulk	verb	feelings	to sulk	يزعل	/sʌlk/
+2965	en_w_swagger	swagger	verb	movement	to swagger	يتبختر	/ˈswæɡə/
+2966	en_w_swarm	swarm	verb	animals	to swarm; a swarm	يحتشد؛ سرب	/swɔːm/
+2967	en_w_swat	swat	verb	actions	to swat	يضرب (حشرة)	/swɒt/	swats, swatted, swatting
+2968	en_w_swerve	swerve	verb	travel	to swerve	ينحرف فجأة	/swɜːv/
+2969	en_w_swindle	swindle	verb	society	to swindle	يحتال	/ˈswɪndl/
+2970	en_w_taunt	taunt	verb	people	to taunt	يعيّر	/tɔːnt/
+2971	en_w_teeter	teeter	verb	movement	to teeter	يترنّح	/ˈtiːtə/
+2972	en_w_thrash	thrash	verb	actions	to thrash	يضرب بعنف	/θræʃ/
+2973	en_w_throb	throb	verb	body	to throb	ينبض بألم	/θrɒb/	throbs, throbbed, throbbing
+2974	en_w_thwart	thwart	verb	actions	to thwart	يُحبط	/θwɔːt/
+2975	en_w_tinker	tinker	verb	work	to tinker	يعبث بإصلاح	/ˈtɪŋkə/
+2976	en_w_toil	toil	verb	work	to toil; toil	يكدح؛ كدح	/tɔɪl/
+2977	en_w_topple	topple	verb	actions	to topple	يسقط، يطيح	/ˈtɒpl/
+2978	en_w_totter	totter	verb	movement	to totter	يترنّح	/ˈtɒtə/
+2979	en_w_trample	trample	verb	movement	to trample	يدوس	/ˈtræmpl/
+2980	en_w_trudge	trudge	verb	movement	to trudge	يمشي بتعب	/trʌdʒ/
+2981	en_w_twitch	twitch	verb	body	to twitch	يرتعش	/twɪtʃ/
+2982	en_w_unravel	unravel	verb	actions	to unravel	يحلّ، يتفكّك	/ʌnˈrævl/	unravels, unravelled, unravelling
+2983	en_w_uproot	uproot	verb	nature	to uproot	يقتلع	/ʌpˈruːt/
+2984	en_w_usher	usher	verb	people	to usher	يرشد	/ˈʌʃə/
+2985	en_w_vex	vex	verb	feelings	to vex	يغيظ	/veks/
+2986	en_w_waddle	waddle	verb	movement	to waddle	يتهادى	/ˈwɒdl/
+2987	en_w_wade	wade	verb	movement	to wade	يخوض	/weɪd/
+2988	en_w_waft	waft	verb	senses	to waft	يفوح	/wɒft/
+2989	en_w_wail	wail	verb	feelings	to wail	يولول	/weɪl/
+2990	en_w_wane	wane	verb	nature	to wane	يتضاءل	/weɪn/
+2991	en_w_warble	warble	verb	animals	to warble	يغرّد	/ˈwɔːbl/
+2992	en_w_wheeze	wheeze	verb	health	to wheeze	يئزّ صدره	/wiːz/
+2993	en_w_whimper	whimper	verb	feelings	to whimper	يئنّ	/ˈwɪmpə/
+2994	en_w_whine	whine	verb	communication	to whine	يتذمّر	/waɪn/
+2995	en_w_whirl	whirl	verb	movement	to whirl	يدور بسرعة	/wɜːl/
+2996	en_w_whisk	whisk	verb	food	to whisk; a whisk	يخفق؛ مخفقة	/wɪsk/
+2997	en_w_wiggle	wiggle	verb	movement	to wiggle	يهزّ	/ˈwɪɡl/
+2998	en_w_wince	wince	verb	body	to wince	يجفل ألمًا	/wɪns/
+2999	en_w_wrench	wrench	verb	actions	to wrench; a wrench	يلوي؛ مفتاح ربط	/rentʃ/
+3000	en_w_wrestle	wrestle	verb	leisure	to wrestle	يصارع	/ˈresl/
