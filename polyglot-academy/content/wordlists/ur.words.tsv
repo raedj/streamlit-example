@@ -2099,3 +2099,303 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2098	ur_w_hichki	ہچکی	noun	body	hiccup	حازوقة	hichkī		gender=f
 2099	ur_w_jamai	جمائی	noun	body	yawn	تثاؤب	jamāī		gender=f
 2100	ur_w_khujli	کھجلی	noun	body	itch	حكّة	khujlī		gender=f
+2101	ur_w_chugna	چگنا	verb	animals	to peck (grain)	ينقر الحبّ	chugnā	چگا, چگی, چگے, چگتا, چگتی, چگتے, چگ, چگیں, چگو, چگنے
+2102	ur_w_dahaarna	دہاڑنا	verb	animals	to roar	يزأر	dahāṛnā	دہاڑا, دہاڑی, دہاڑے, دہاڑتا, دہاڑتی, دہاڑتے, دہاڑ, دہاڑیں, دہاڑو, دہاڑنے
+2103	ur_w_bhinbhinana	بھنبھنانا	verb	animals	to buzz	يطنّ	bhinbhinānā	بھنبھنایا, بھنبھنائی, بھنبھنائے, بھنبھناتا, بھنبھناتی, بھنبھناتے, بھنبھنا, بھنبھنایں, بھنبھناو, بھنبھنانے
+2104	ur_w_chahchahana	چہچہانا	verb	animals	to chirp	يغرّد	chahchahānā	چہچہایا, چہچہائی, چہچہائے, چہچہاتا, چہچہاتی, چہچہاتے, چہچہا, چہچہایں, چہچہاو, چہچہانے
+2105	ur_w_dohna	دوہنا	verb	animals	to milk	يحلب	dohnā	دوہا, دوہی, دوہے, دوہتا, دوہتی, دوہتے, دوہ, دوہیں, دوہو, دوہنے
+2106	ur_w_charna	چرنا	verb	animals	to graze	يرعى	charnā	چرا, چری, چرے, چرتا, چرتی, چرتے, چر, چریں, چرو, چرنے
+2107	ur_w_murjhana	مرجھانا	verb	nature	to wilt	يذبل	murjhānā	مرجھایا, مرجھائی, مرجھائے, مرجھاتا, مرجھاتی, مرجھاتے, مرجھا, مرجھایں, مرجھاو, مرجھانے
+2108	ur_w_charcharana	چرچرانا	verb	senses	to creak	يصرّ	charcharānā	چرچرایا, چرچرائی, چرچرائے, چرچراتا, چرچراتی, چرچراتے, چرچرا, چرچرایں, چرچراو, چرچرانے
+2109	ur_w_khujana	کھجانا	verb	body	to scratch	يحكّ	khujānā	کھجایا, کھجائی, کھجائے, کھجاتا, کھجاتی, کھجاتے, کھجا, کھجایں, کھجاو, کھجانے
+2110	ur_w_kharrate_lena	خراٹے لینا	verb	body	to snore	يشخر	kharrāṭe lenā	خراٹے لیا, خراٹے لیی, خراٹے لیے, خراٹے لیتا, خراٹے لیتی, خراٹے لیتے, خراٹے لی, خراٹے لییں, خراٹے لیو, خراٹے لینے
+2111	ur_w_jamai_lena	جمائی لینا	verb	body	to yawn	يتثاءب	jamāī lenā	جمائی لیا, جمائی لیی, جمائی لیے, جمائی لیتا, جمائی لیتی, جمائی لیتے, جمائی لی, جمائی لییں, جمائی لیو, جمائی لینے
+2112	ur_w_chheenkna	چھینکنا	verb	body	to sneeze	يعطس	chhīnknā	چھینکا, چھینکی, چھینکے, چھینکتا, چھینکتی, چھینکتے, چھینک, چھینکیں, چھینکو, چھینکنے
+2113	ur_w_behosh_hona	بے ہوش ہونا	verb	health	to faint	يغمى عليه	be-hosh honā	بے ہوش ہویا, بے ہوش ہوئی, بے ہوش ہوئے, بے ہوش ہوتا, بے ہوش ہوتی, بے ہوش ہوتے, بے ہوش ہو, بے ہوش ہویں, بے ہوش ہوو, بے ہوش ہونے
+2114	ur_w_goondhna	گوندھنا	verb	food	to knead	يعجن	gūndhnā	گوندھا, گوندھی, گوندھے, گوندھتا, گوندھتی, گوندھتے, گوندھ, گوندھیں, گوندھو, گوندھنے
+2115	ur_w_risna	رسنا	verb	home	to leak, to ooze	يرشح	risnā	رسا, رسی, رسے, رستا, رستی, رستے, رس, رسیں, رسو, رسنے
+2116	ur_w_jhaarna	جھاڑنا	verb	home	to dust, to shake off	ينفض	jhāṛnā	جھاڑا, جھاڑی, جھاڑے, جھاڑتا, جھاڑتی, جھاڑتے, جھاڑ, جھاڑیں, جھاڑو, جھاڑنے
+2117	ur_w_tah_karna	تہ کرنا	verb	home	to fold	يطوي	tah karnā	تہ کرا, تہ کری, تہ کرے, تہ کرتا, تہ کرتی, تہ کرتے, تہ کر, تہ کریں, تہ کرو, تہ کرنے
+2118	ur_w_istri_karna	استری کرنا	verb	home	to iron	يكوي	istrī karnā	استری کرا, استری کری, استری کرے, استری کرتا, استری کرتی, استری کرتے, استری کر, استری کریں, استری کرو, استری کرنے
+2119	ur_w_rafu_karna	رفو کرنا	verb	clothes	to darn	يرفو	rafū karnā	رفو کرا, رفو کری, رفو کرے, رفو کرتا, رفو کرتی, رفو کرتے, رفو کر, رفو کریں, رفو کرو, رفو کرنے
+2120	ur_w_silna	سلنا	verb	clothes	to be sewn	يُخاط	silnā	سلا, سلی, سلے, سلتا, سلتی, سلتے, سل, سلیں, سلو, سلنے
+2121	ur_w_tankna	ٹانکنا	verb	clothes	to stitch on	يخيط	ṭāṅknā	ٹانکا, ٹانکی, ٹانکے, ٹانکتا, ٹانکتی, ٹانکتے, ٹانک, ٹانکیں, ٹانکو, ٹانکنے
+2122	ur_w_thokar_khana	ٹھوکر کھانا	verb	movement	to stumble	يتعثّر	ṭhokar khānā	ٹھوکر کھایا, ٹھوکر کھائی, ٹھوکر کھائے, ٹھوکر کھاتا, ٹھوکر کھاتی, ٹھوکر کھاتے, ٹھوکر کھا, ٹھوکر کھایں, ٹھوکر کھاو, ٹھوکر کھانے
+2123	ur_w_lipatna_hug	گلے لگانا	verb	people	to hug	يعانق	gale lagānā	گلے لگایا, گلے لگائی, گلے لگائے, گلے لگاتا, گلے لگاتی, گلے لگاتے, گلے لگا, گلے لگایں, گلے لگاو, گلے لگانے
+2124	ur_w_daantna	ڈانٹنا	verb	people	to scold	يوبّخ	ḍāṅṭnā	ڈانٹا, ڈانٹی, ڈانٹے, ڈانٹتا, ڈانٹتی, ڈانٹتے, ڈانٹ, ڈانٹیں, ڈانٹو, ڈانٹنے
+2125	ur_w_sataana	ستانا	verb	people	to tease, to harass	يضايق	satānā	ستایا, ستائی, ستائے, ستاتا, ستاتی, ستاتے, ستا, ستایں, ستاو, ستانے
+2126	ur_w_khilkhilana	کھلکھلانا	verb	feelings	to giggle	يقهقه	khilkhilānā	کھلکھلایا, کھلکھلائی, کھلکھلائے, کھلکھلاتا, کھلکھلاتی, کھلکھلاتے, کھلکھلا, کھلکھلایں, کھلکھلاو, کھلکھلانے
+2127	ur_w_roothna	روٹھنا	verb	feelings	to sulk	يزعل	rūṭhnā	روٹھا, روٹھی, روٹھے, روٹھتا, روٹھتی, روٹھتے, روٹھ, روٹھیں, روٹھو, روٹھنے
+2128	ur_w_chidna	چڑنا	verb	feelings	to get irritated	ينزعج	chiṛnā	چڑا, چڑی, چڑے, چڑتا, چڑتی, چڑتے, چڑ, چڑیں, چڑو, چڑنے
+2129	ur_w_jalna_envy	حسد کرنا	verb	feelings	to envy	يحسد	hasad karnā	حسد کرا, حسد کری, حسد کرے, حسد کرتا, حسد کرتی, حسد کرتے, حسد کر, حسد کریں, حسد کرو, حسد کرنے
+2130	ur_w_phusphusana	پھسپھسانا	verb	communication	to whisper	يهمس	phusphusānā	پھسپھسایا, پھسپھسائی, پھسپھسائے, پھسپھساتا, پھسپھساتی, پھسپھساتے, پھسپھسا, پھسپھسایں, پھسپھساو, پھسپھسانے
+2131	ur_w_qasam_khana	قسم کھانا	verb	communication	to swear	يقسم	qasam khānā	قسم کھایا, قسم کھائی, قسم کھائے, قسم کھاتا, قسم کھاتی, قسم کھاتے, قسم کھا, قسم کھایں, قسم کھاو, قسم کھانے
+2132	ur_w_chugli_karna	چغلی کرنا	verb	communication	to tell tales	يشي	chuġlī karnā	چغلی کرا, چغلی کری, چغلی کرے, چغلی کرتا, چغلی کرتی, چغلی کرتے, چغلی کر, چغلی کریں, چغلی کرو, چغلی کرنے
+2133	ur_w_dabochna	دبوچنا	verb	actions	to grab	يمسك بقوّة	dabochnā	دبوچا, دبوچی, دبوچے, دبوچتا, دبوچتی, دبوچتے, دبوچ, دبوچیں, دبوچو, دبوچنے
+2134	ur_w_khurachna	کھرچنا	verb	actions	to scrape	يكشط	khurachnā	کھرچا, کھرچی, کھرچے, کھرچتا, کھرچتی, کھرچتے, کھرچ, کھرچیں, کھرچو, کھرچنے
+2135	ur_w_ulatna	الٹنا	verb	actions	to overturn	يقلب	ulaṭnā	الٹا, الٹی, الٹے, الٹتا, الٹتی, الٹتے, الٹ, الٹیں, الٹو, الٹنے
+2136	ur_w_sinchna	سینچنا	verb	nature	to irrigate	يروي	sīnchnā	سینچا, سینچی, سینچے, سینچتا, سینچتی, سینچتے, سینچ, سینچیں, سینچو, سینچنے
+2137	ur_w_kaatna_harvest	فصل کاٹنا	verb	nature	to harvest	يحصد	fasl kāṭnā	فصل کاٹا, فصل کاٹی, فصل کاٹے, فصل کاٹتا, فصل کاٹتی, فصل کاٹتے, فصل کاٹ, فصل کاٹیں, فصل کاٹو, فصل کاٹنے
+2138	ur_w_gajar_halwa	گاجر کا حلوہ	noun	food	carrot halwa	حلوى الجزر	gājar kā halwā		gender=m
+2139	ur_w_shalgam	شلجم	noun	food	turnip	لفت	shalġam		gender=m
+2140	ur_w_chuqandar	چقندر	noun	food	beetroot	شمندر	chuqandar		gender=m
+2141	ur_w_chane	چنے	noun	food	chickpeas	حمّص	chane		gender=m
+2142	ur_w_masoor	مسور	noun	food	lentils	عدس	masūr		gender=f
+2143	ur_w_sirka	سرکہ	noun	food	vinegar	خلّ	sirkā		gender=m
+2144	ur_w_murabba	مربہ	noun	food	jam, preserve	مربّى	murabbā		gender=m
+2145	ur_w_raita	رائتہ	noun	food	raita	لبن بالخضار	rāitā		gender=m
+2146	ur_w_saahi	سیہی	noun	animals	porcupine	شيهم	sehī		gender=f
+2147	ur_w_bagla	بگلا	noun	animals	heron	مالك الحزين	baglā		gender=m
+2148	ur_w_ababeel	ابابیل	noun	animals	swallow	سنونو	abābīl		gender=f
+2149	ur_w_reechh	ریچھ	noun	animals	bear	دبّ	rīchh		gender=m
+2150	ur_w_jugnu	جگنو	noun	animals	firefly	يراعة	jugnū		gender=m
+2151	ur_w_shahad_ki_makkhi	شہد کی مکھی	noun	animals	bee	نحلة	shahad kī makkhī		gender=f
+2152	ur_w_dhalaan	ڈھلان	noun	nature	slope	منحدر	ḍhalān		gender=f
+2153	ur_w_aatish_fishan	آتش فشاں	noun	nature	volcano	بركان	ātish-fishāṅ		gender=m
+2154	ur_w_khushk_sali	خشک سالی	noun	weather	drought	جفاف	khushk-sālī		gender=f
+2155	ur_w_olay	اولے	noun	weather	hail	برد	ole		gender=m
+2156	ur_w_shabnam	شبنم	noun	weather	dew	ندى	shabnam		gender=f
+2157	ur_w_neem	نیم	noun	nature	neem tree	شجرة النيم	nīm		gender=m
+2158	ur_w_peepal	پیپل	noun	nature	peepal tree	شجرة التين المقدّس	pīpal		gender=m
+2159	ur_w_chinar	چنار	noun	nature	plane tree	دلب	chinār		gender=m
+2160	ur_w_deodar	دیودار	noun	nature	cedar	أرز	deodār		gender=m
+2161	ur_w_kaai	کائی	noun	nature	moss	طحلب	kāī		gender=f
+2162	ur_w_tehni	ٹہنی	noun	nature	twig	غصين	ṭehnī		gender=f
+2163	ur_w_kali	کلی	noun	nature	bud	برعم	kalī		gender=f
+2164	ur_w_pankhuri	پنکھڑی	noun	nature	petal	بتلة	paṅkhuṛī		gender=f
+2165	ur_w_astabal	اصطبل	noun	places	stable	إسطبل	astabal		gender=m
+2166	ur_w_charagah	چراگاہ	noun	places	pasture	مرعى	charāgāh		gender=f
+2167	ur_w_chakki	چکی	noun	places	mill, grindstone	رحى	chakkī		gender=f
+2168	ur_w_lighthouse	روشنی کا مینار	noun	places	lighthouse	منارة	roshnī kā mīnār		gender=m
+2169	ur_w_qabristan	قبرستان	noun	places	cemetery	مقبرة	qabristān		gender=m
+2170	ur_w_motorway	موٹروے	noun	travel	motorway	طريق سريع	moṭarwe		gender=f
+2171	ur_w_kastam	کسٹم	noun	travel	customs	جمارك	kasṭam		gender=m
+2172	ur_w_chappu	چپو	noun	travel	oar	مجداف	chappū		gender=m
+2173	ur_w_break	بریک	noun	travel	brake	مكبح	brek		gender=f
+2174	ur_w_tair	ٹائر	noun	travel	tyre	إطار	ṭāyar		gender=m
+2175	ur_w_steering	اسٹیئرنگ	noun	travel	steering wheel	مقود	asṭīyariṅg		gender=m
+2176	ur_w_deg	دیگ	noun	home	cauldron	قِدر كبيرة	deg		gender=f
+2177	ur_w_patila	پتیلا	noun	home	cooking pot	طنجرة	patīlā		gender=m
+2178	ur_w_chamcha	چمچہ	noun	home	ladle, big spoon	مغرفة	chamchā		gender=m
+2179	ur_w_kettle	کیتلی	noun	home	kettle	غلّاية	ketlī		gender=f
+2180	ur_w_kaddukash	کدوکش	noun	home	grater	مبشرة	kaddūkash		gender=m
+2181	ur_w_shamadan	شمع دان	noun	home	candlestick	شمعدان	shamādān		gender=m
+2182	ur_w_chimni	چمنی	noun	home	chimney	مدخنة	chimnī		gender=f
+2183	ur_w_pech	پیچ	noun	work	screw	برغي	pech		gender=m
+2184	ur_w_pechkas	پیچ کس	noun	work	screwdriver	مفكّ	pech-kas		gender=m
+2185	ur_w_plaas	پلاس	noun	work	pliers	كمّاشة	plās		gender=m
+2186	ur_w_aari	آری	noun	work	saw	منشار	ārī		gender=f
+2187	ur_w_kulhari	کلہاڑی	noun	work	axe	فأس	kulhāṛī		gender=f
+2188	ur_w_barma	برما	noun	work	drill	مثقب	barmā		gender=m
+2189	ur_w_regmal	ریگ مال	noun	work	sandpaper	ورق صنفرة	reg-māl		gender=m
+2190	ur_w_pension	پنشن	noun	work	pension	معاش تقاعدي	penshan		gender=f
+2191	ur_w_thela	ٹھیلا	noun	shopping	handcart	عربة يد	ṭhelā		gender=m
+2192	ur_w_charwaha	چرواہا	noun	people	shepherd	راعٍ	charwāhā		gender=m
+2193	ur_w_naanbai	نانبائی	noun	people	baker	خبّاز	nānbāī		gender=m
+2194	ur_w_hajjam	حجام	noun	people	barber	حلّاق	hajjām		gender=m
+2195	ur_w_gawah	گواہ	noun	people	witness	شاهد	gawāh		gender=m
+2196	ur_w_qazi	قاضی	noun	people	judge	قاضٍ	qāzī		gender=m
+2197	ur_w_nawasa	نواسا	noun	family	grandson (daughter's son)	حفيد	nawāsā		gender=m
+2198	ur_w_bhanja	بھانجا	noun	family	nephew (sister's son)	ابن الأخت	bhānjā		gender=m
+2199	ur_w_judwan	جڑواں	noun	family	twins	توأمان	juṛwāṅ		gender=m
+2200	ur_w_sakhi	سخی	adj	people	generous	كريم	sakhī
+2201	ur_w_bhola	بھولا	adj	people	naive, innocent	ساذج	bholā	بھولی, بھولے
+2202	ur_w_shararti	شرارتی	adj	people	naughty	شقيّ	sharārtī
+2203	ur_w_sabir	صابر	adj	people	patient	صبور	sābir
+2204	ur_w_maghroor	مغرور	adj	people	arrogant	مغرور	maġrūr
+2205	ur_w_munkasir	منکسر	adj	people	humble	متواضع	munkasir
+2206	ur_w_kaahil	کاہل	adj	people	lazy	كسول	kāhil
+2207	ur_w_chikna	چکنا	adj	descriptions	greasy, slippery	زلق	chiknā	چکنی, چکنے
+2208	ur_w_chipchipa	چپچپا	adj	descriptions	sticky	لزج	chipchipā	چپچپی, چپچپے
+2209	ur_w_dhundla	دھندلا	adj	descriptions	blurry	ضبابي	dhuṅdlā	دھندلی, دھندلے
+2210	ur_w_peela_pale	زرد	adj	descriptions	pale, yellow	شاحب	zard
+2211	ur_w_chamkila	چمکیلا	adj	descriptions	shiny	لامع	chamkīlā	چمکیلی, چمکیلے
+2212	ur_w_gard_aalood	گرد آلود	adj	descriptions	dusty	مغبرّ	gard-ālūd
+2213	ur_w_zang_aalood	زنگ آلود	adj	descriptions	rusty	صدئ	zang-ālūd
+2214	ur_w_dheela	ڈھیلا	adj	descriptions	loose	مرتخٍ	ḍhīlā	ڈھیلی, ڈھیلے
+2215	ur_w_chatpata	چٹپٹا	adj	food	spicy, tangy	حرّيف	chaṭpaṭā	چٹپٹی, چٹپٹے
+2216	ur_w_khasta	خستہ	adj	food	crispy, flaky	مقرمش	khastā
+2217	ur_w_nam	نم	adj	weather	damp, moist	رطب	nam
+2218	ur_w_umas_bhara	حبس والا	adj	weather	muggy	خانق	habs wālā	حبس والی, حبس والے
+2219	ur_w_chupke_se	چپکے سے	adv	function	quietly, secretly	خلسةً	chupke se
+2220	ur_w_ittifaqan	اتفاقاً	adv	function	by chance	بالصدفة	ittifāqan
+2221	ur_w_jaan_boojh_kar	جان بوجھ کر	adv	function	on purpose	عمدًا	jān būjh kar
+2222	ur_w_ghalti_se	غلطی سے	adv	function	by mistake	خطأً	ġalatī se
+2223	ur_w_darasal	دراصل	adv	function	actually	في الواقع	dar-asl
+2224	ur_w_dheere_se	دھیرے سے	adv	function	gently	برفق	dhīre se
+2225	ur_w_ittihad	اتحاد	noun	society	unity, union	اتّحاد	ittihād		gender=m
+2226	ur_w_ikhtilaf	اختلاف	noun	communication	disagreement	اختلاف	iḳhtilāf		gender=m
+2227	ur_w_itiraz	اعتراض	noun	communication	objection	اعتراض	e'tirāz		gender=m
+2228	ur_w_mubalgha	مبالغہ	noun	communication	exaggeration	مبالغة	mubālġa		gender=m
+2229	ur_w_afwah	افواہ	noun	communication	rumour	إشاعة	afwāh		gender=f
+2230	ur_w_khitab	خطاب	noun	communication	speech, address	خطاب	ḳhitāb		gender=m
+2231	ur_w_muhawara	محاورہ	noun	communication	idiom	مصطلح	muhāwara		gender=m
+2232	ur_w_kahawat	کہاوت	noun	communication	proverb	مثل	kahāwat		gender=f
+2233	ur_w_dastaan	داستان	noun	leisure	tale, saga	حكاية	dāstān		gender=f
+2234	ur_w_ghazal	غزل	noun	leisure	ghazal (poem)	غزل	ġazal		gender=f
+2235	ur_w_mushaira	مشاعرہ	noun	leisure	poetry gathering	أمسية شعرية	mushā'ira		gender=m
+2236	ur_w_qawwali	قوالی	noun	leisure	qawwali music	قوالي	qawwālī		gender=f
+2237	ur_w_mela	میلہ	noun	leisure	fair, festival	مهرجان	melā		gender=m
+2238	ur_w_kanche	کنچے	noun	leisure	marbles	كِلّات	kanche		gender=m
+2239	ur_w_ludo	لڈو	noun	leisure	ludo	لعبة لودو	luḍo		gender=f
+2240	ur_w_taash	تاش	noun	leisure	playing cards	ورق اللعب	tāsh		gender=m
+2241	ur_w_pagdandi	پگڈنڈی	noun	travel	footpath	درب	pagḍanḍī		gender=f
+2242	ur_w_footpath	فٹ پاتھ	noun	travel	pavement	رصيف	fuṭ-pāth		gender=m
+2243	ur_w_petrol_pump	پٹرول پمپ	noun	travel	petrol station	محطّة وقود	peṭrol pamp		gender=m
+2244	ur_w_rassa	رسا	noun	work	rope	حبل غليظ	rassā		gender=m
+2245	ur_w_kunda	کنڈا	noun	home	latch, hook	مزلاج	kuṇḍā		gender=m
+2246	ur_w_chitkani	چٹخنی	noun	home	bolt	مزلاج	chiṭaḳhnī		gender=f
+2247	ur_w_pochha	پوچا	noun	home	floor cloth, mop	ممسحة	pochā		gender=m
+2248	ur_w_martaban	مرتبان	noun	home	jar	مرطبان	martabān		gender=m
+2249	ur_w_dhakkan	ڈھکن	noun	home	lid	غطاء	ḍhakkan		gender=m
+2250	ur_w_keep	کیپ	noun	home	funnel	قمع	kīp		gender=f
+2251	ur_w_thaal	تھال	noun	home	large tray	صينية	thāl		gender=m
+2252	ur_w_thermos	تھرماس	noun	home	flask	ترمس	tharmās		gender=m
+2253	ur_w_batti	بتی	noun	home	wick, light	فتيل	battī		gender=f
+2254	ur_w_chingari	چنگاری	noun	home	spark	شرارة	chiṅgārī		gender=f
+2255	ur_w_zang	زنگ	noun	descriptions	rust	صدأ	zang		gender=m
+2256	ur_w_dhabba	دھبہ	noun	home	stain	بقعة	dhabbā		gender=m
+2257	ur_w_daraar	دراڑ	noun	home	crack	شقّ	darāṛ		gender=f
+2258	ur_w_paiwand	پیوند	noun	clothes	patch	رقعة	paiwand		gender=m
+2259	ur_w_silai	سلائی	noun	clothes	stitching, sewing	خياطة	silāī		gender=f
+2260	ur_w_kalar	کالر	noun	clothes	collar	ياقة	kālar		gender=m
+2261	ur_w_zip	زپ	noun	clothes	zip	سحّاب	zip		gender=f
+2262	ur_w_astar	استر	noun	clothes	lining	بطانة	astar		gender=m
+2263	ur_w_kanpati	کنپٹی	noun	body	temple	صدغ	kanpaṭī		gender=f
+2264	ur_w_hatheli	ہتھیلی	noun	body	palm	كفّ	hathelī		gender=f
+2265	ur_w_til	تل	noun	body	mole (skin)	شامة	til		gender=m
+2266	ur_w_jhurri	جھری	noun	body	wrinkle	تجعّد	jhurrī		gender=f
+2267	ur_w_nishan	نشان	noun	body	mark, scar	أثر	nishān		gender=m
+2268	ur_w_phunsi	پھنسی	noun	health	pimple	بثرة	phunsī		gender=f
+2269	ur_w_chhala	چھالا	noun	health	blister	فقاعة جلدية	chhālā		gender=m
+2270	ur_w_neel	نیل	noun	health	bruise	كدمة	nīl		gender=m
+2271	ur_w_marham	مرہم	noun	health	ointment	مرهم	marham		gender=m
+2272	ur_w_teeka	ٹیکا	noun	health	injection, vaccine	حقنة	ṭīkā		gender=m
+2273	ur_w_thermometer	تھرمامیٹر	noun	health	thermometer	ميزان حرارة	tharmāmīṭar		gender=m
+2274	ur_w_stretcher	اسٹریچر	noun	health	stretcher	نقّالة	isṭrechar		gender=m
+2275	ur_w_blood_pressure	بلڈ پریشر	noun	health	blood pressure	ضغط الدم	blaḍ preshar		gender=m
+2276	ur_w_khaarish	خارش	noun	health	itch, rash	حكّة	ḳhārish		gender=f
+2277	ur_w_chakkar	چکر	noun	health	dizziness, round	دوار	chakkar		gender=m
+2278	ur_w_matli	متلی	noun	health	nausea	غثيان	matlī		gender=f
+2279	ur_w_bad_hazmi	بدہضمی	noun	health	indigestion	عسر هضم	bad-hazmī		gender=f
+2280	ur_w_qabz	قبض	noun	health	constipation	إمساك	qabz		gender=m
+2281	ur_w_reerh	ریڑھ کی ہڈی	noun	body	spine	العمود الفقري	reṛh kī haḍḍī		gender=f
+2282	ur_w_phephra	پھیپھڑا	noun	body	lung	رئة	phephṛā		gender=m
+2283	ur_w_gurda	گردہ	noun	body	kidney	كلية	gurda		gender=m
+2284	ur_w_jigar	جگر	noun	body	liver	كبد	jigar		gender=m
+2285	ur_w_rag	رگ	noun	body	vein	وريد	rag		gender=f
+2286	ur_w_ungli_ka_por	پور	noun	body	fingertip	طرف الإصبع	por		gender=m
+2287	ur_w_insaf	انصاف	noun	society	justice	عدالة	insāf		gender=m
+2288	ur_w_masawat	مساوات	noun	society	equality	مساواة	musāwāt		gender=f
+2289	ur_w_ghulami	غلامی	noun	society	slavery	عبودية	ġulāmī		gender=f
+2290	ur_w_ameeri	امیری	noun	society	wealth, richness	غنى	amīrī		gender=f
+2291	ur_w_rishwat	رشوت	noun	society	bribe	رشوة	rishwat		gender=f
+2292	ur_w_muqadma	مقدمہ	noun	society	lawsuit, case	قضية	muqaddama		gender=m
+2293	ur_w_gawahi	گواہی	noun	society	testimony	شهادة	gawāhī		gender=f
+2294	ur_w_aaeen	آئین	noun	society	constitution	دستور	āīn		gender=m
+2295	ur_w_ehtijaj	احتجاج	noun	society	protest	احتجاج	ehtijāj		gender=m
+2296	ur_w_hartal	ہڑتال	noun	society	strike	إضراب	haṛtāl		gender=f
+2297	ur_w_hathiyar	ہتھیار	noun	society	weapon	سلاح	hathiyār		gender=m
+2298	ur_w_muhajir	مہاجر	noun	people	migrant, refugee	مهاجر	muhājir		gender=m
+2299	ur_w_rasm	رسم	noun	society	custom, ceremony	عادة	rasm		gender=f
+2300	ur_w_jahez	جہیز	noun	society	dowry	جهاز العروس	jahez		gender=m
+2301	ur_w_baraat	بارات	noun	society	wedding procession	زفّة	bārāt		gender=f
+2302	ur_w_walima	ولیمہ	noun	society	wedding feast	وليمة	walīma		gender=m
+2303	ur_w_aqeeqa	عقیقہ	noun	society	aqiqah (birth feast)	عقيقة	aqīqa		gender=m
+2304	ur_w_ibadat	عبادت	noun	society	worship	عبادة	ibādat		gender=f
+2305	ur_w_dua	دعا	noun	society	prayer, supplication	دعاء	du'ā		gender=f
+2306	ur_w_sadqa	صدقہ	noun	society	charity	صدقة	sadqa		gender=m
+2307	ur_w_zakat	زکوٰۃ	noun	society	zakat	زكاة	zakāt		gender=f
+2308	ur_w_roza	روزہ	noun	society	fast	صيام	roza		gender=m
+2309	ur_w_sehri	سحری	noun	society	pre-dawn meal	سحور	sehrī		gender=f
+2310	ur_w_iftari	افطاری	noun	society	iftar	إفطار	iftārī		gender=f
+2311	ur_w_eidi	عیدی	noun	society	Eid gift money	عيدية	īdī		gender=f
+2312	ur_w_hikmat	حکمت	noun	mind	wisdom	حكمة	hikmat		gender=f
+2313	ur_w_aql	عقل	noun	mind	intellect, reason	عقل	aql		gender=f
+2314	ur_w_irada	ارادہ	noun	mind	intention	نيّة	irāda		gender=m
+2315	ur_w_sabr	صبر	noun	feelings	patience	صبر	sabr		gender=m
+2316	ur_w_pachhtawa	پچھتاوا	noun	feelings	regret	ندم	pachhtāwā		gender=m
+2317	ur_w_mayoosi	مایوسی	noun	feelings	despair	يأس	māyūsī		gender=f
+2318	ur_w_tasalli	تسلی	noun	feelings	consolation, reassurance	طمأنينة	tasallī		gender=f
+2319	ur_w_bechaini	بے چینی	noun	feelings	restlessness	قلق	be-chainī		gender=f
+2320	ur_w_bewafai	بے وفائی	noun	feelings	betrayal	خيانة	be-wafāī		gender=f
+2321	ur_w_dhoka	دھوکا	noun	people	deception, trick	خداع	dhokā		gender=m
+2322	ur_w_badla	بدلہ	noun	people	revenge	انتقام	badla		gender=m
+2323	ur_w_dushmani	دشمنی	noun	people	enmity	عداوة	dushmanī		gender=f
+2324	ur_w_mangni	منگنی	noun	people	engagement	خطوبة	maṅgnī		gender=f
+2325	ur_w_parwarish	پرورش	noun	family	upbringing	تربية	parwarish		gender=f
+2326	ur_w_virasat	وراثت	noun	family	inheritance	ميراث	wirāsat		gender=f
+2327	ur_w_buzurg	بزرگ	noun	people	elder	شيخ	buzurg		gender=m
+2328	ur_w_padosan	پڑوسن	noun	people	neighbour (female)	جارة	paṛosan		gender=f
+2329	ur_w_beimaan	بے ایمان	adj	people	dishonest	غير أمين	be-īmān
+2330	ur_w_rehamdil	رحم دل	adj	people	kind-hearted	رحيم	reham-dil
+2331	ur_w_sangdil	سنگ دل	adj	people	hard-hearted	قاسي القلب	saṅg-dil
+2332	ur_w_batooni	باتونی	adj	people	talkative	ثرثار	bātūnī
+2333	ur_w_lapparwah	لاپروا	adj	people	careless	مهمل	lā-parwā	لاپروی, لاپروے
+2334	ur_w_maghmoom	مغموم	adj	feelings	grief-stricken	مغموم	maġmūm
+2335	ur_w_mutmain	مطمئن	adj	feelings	satisfied, at ease	مطمئنّ	mutma'in
+2336	ur_w_bezaar	بیزار	adj	feelings	fed up	ضجر	bezār
+2337	ur_w_qadeem	قدیم	adj	descriptions	ancient	قديم	qadīm
+2338	ur_w_bekaar	بے کار	adj	descriptions	useless	عديم الفائدة	be-kār
+2339	ur_w_saaf_suthra	صاف ستھرا	adj	descriptions	neat and clean	نظيف ومرتّب	sāf suthrā	صاف ستھری, صاف ستھرے
+2340	ur_w_khokhla	کھوکھلا	adj	descriptions	hollow	أجوف	khokhlā	کھوکھلی, کھوکھلے
+2341	ur_w_bharpoor	بھرپور	adj	descriptions	full, abundant	مليء	bharpūr
+2342	ur_w_hargiz	ہرگز	adv	function	never, by no means	أبدًا	hargiz
+2343	ur_w_kabhi_kabhar	کبھی کبھار	adv	time	occasionally	أحيانًا	kabhī kabhār
+2344	ur_w_aainda	آئندہ	adv	time	in future	في المستقبل	āinda
+2345	ur_w_pehle_se	پہلے سے	adv	time	already, beforehand	مسبقًا	pehle se
+2346	ur_w_tijarat	تجارت	noun	work	trade	تجارة	tijārat		gender=f
+2347	ur_w_mehngai	مہنگائی	noun	shopping	inflation, high prices	غلاء	mahaṅgāī		gender=f
+2348	ur_w_bhao	بھاؤ	noun	shopping	price, rate	سعر	bhāo		gender=m
+2349	ur_w_mol_tol	مول تول	noun	shopping	haggling	مساومة	mol-tol		gender=m
+2350	ur_w_khachchar	خچر	noun	animals	mule	بغل	ḳhachchar		gender=m
+2351	ur_w_samandri_jhaag	جھاگ	noun	nature	foam	زبد	jhāg		gender=m
+2352	ur_w_marjan	مرجان	noun	nature	coral	مرجان	marjān		gender=m
+2353	ur_w_seepi	سیپی	noun	nature	seashell	صدفة	sīpī		gender=f
+2354	ur_w_faulad	فولاد	noun	descriptions	steel	فولاذ	faulād		gender=m
+2355	ur_w_cement	سیمنٹ	noun	work	cement	إسمنت	simeṅṭ		gender=m
+2356	ur_w_shatir	شہتیر	noun	work	beam	عارضة	shahtīr		gender=m
+2357	ur_w_darwaaza_khatkhata	دستک	noun	home	knock	طرقة	dastak		gender=f
+2358	ur_w_kangha	کنگھا	noun	home	comb	مشط	kaṅghā		gender=m
+2359	ur_w_manjan	منجن	noun	home	tooth powder	مسحوق أسنان	manjan		gender=m
+2360	ur_w_miswak	مسواک	noun	home	miswak	سواك	miswāk		gender=f
+2361	ur_w_itr	عطر	noun	home	perfume	عطر	itr		gender=m
+2362	ur_w_khussa	کھسہ	noun	clothes	embroidered shoe	حذاء مطرّز	khussa		gender=m
+2363	ur_w_kadhai_embroidery	کڑھائی	noun	clothes	embroidery	تطريز	kaṛhāī		gender=f
+2364	ur_w_reshmi	ریشمی	adj	clothes	silky	حريري	reshmī
+2365	ur_w_ooni	اونی	adj	clothes	woollen	صوفي	ūnī
+2366	ur_w_sooti	سوتی	adj	clothes	cotton	قطني	sūtī
+2367	ur_w_dhaari_daar	دھاری دار	adj	clothes	striped	مخطّط	dhārī-dār
+2368	ur_w_chaarkhana	چارخانہ	adj	clothes	checked	مربّعات	chār-ḳhāna
+2369	ur_w_phooldar	پھول دار	adj	clothes	floral	مزهّر	phūl-dār
+2370	ur_w_bhadkeela	بھڑکیلا	adj	descriptions	gaudy, bright	فاقع	bhaṛkīlā	بھڑکیلی, بھڑکیلے
+2371	ur_w_mulaim	ملائم	adj	descriptions	soft, smooth	ناعم	mulāim
+2372	ur_w_khurdura	کھردرا	adj	descriptions	rough	خشن	khuradrā	کھردری, کھردرے
+2373	ur_w_khushbudar	خوشبودار	adj	senses	fragrant	عطر	ḳhushbū-dār
+2374	ur_w_badbudar	بدبودار	adj	senses	smelly	كريه الرائحة	bad-bū-dār
+2375	ur_w_lazeez	لذیذ	adj	food	delicious	لذيذ	lazīz
+2376	ur_w_garma_garam	گرما گرم	adj	food	piping hot	ساخن جدًا	garmā-garam
+2377	ur_w_thanda_thaar	ٹھنڈا ٹھار	adj	food	ice-cold	بارد جدًا	ṭhaṇḍā ṭhār
+2378	ur_w_shayir	شاعر	noun	people	poet	شاعر	shā'ir		gender=m
+2379	ur_w_kutub_khana	کتب خانہ	noun	places	library	مكتبة	kutub-ḳhāna		gender=m
+2380	ur_w_chungi	چنگی	noun	travel	toll	رسم عبور	chuṅgī		gender=f
+2381	ur_w_musafir_khana	مسافر خانہ	noun	travel	guest house	نُزُل	musāfir-ḳhāna		gender=m
+2382	ur_w_safarnama	سفرنامہ	noun	leisure	travelogue	أدب الرحلات	safar-nāma		gender=m
+2383	ur_w_imla	املا	noun	school	dictation, spelling	إملاء	imlā		gender=m
+2384	ur_w_insha	انشا	noun	school	composition	إنشاء	inshā		gender=f
+2385	ur_w_khushkhati	خوش خطی	noun	school	calligraphy	خطّ جميل	ḳhush-ḳhattī		gender=f
+2386	ur_w_qalamdan	قلم دان	noun	school	pen case	مقلمة	qalam-dān		gender=m
+2387	ur_w_parcha	پرچہ	noun	school	exam paper	ورقة امتحان	parcha		gender=m
+2388	ur_w_wazifa	وظیفہ	noun	school	scholarship	منحة	wazīfa		gender=m
+2389	ur_w_haazri	حاضری	noun	school	attendance	حضور	hāzirī		gender=f
+2390	ur_w_ghair_haazri	غیر حاضری	noun	school	absence	غياب	ġair-hāzirī		gender=f
+2391	ur_w_kahani_kaar	کہانی کار	noun	people	storyteller	راوٍ	kahānī-kār		gender=m
+2392	ur_w_nigrani	نگرانی	noun	work	supervision	إشراف	nigrānī		gender=f
+2393	ur_w_zimmedari	ذمہ داری	noun	work	responsibility	مسؤولية	zimmedārī		gender=f
+2394	ur_w_istifa	استعفیٰ	noun	work	resignation	استقالة	isti'fā		gender=m
+2395	ur_w_berozgari	بے روزگاری	noun	work	unemployment	بطالة	be-rozgārī		gender=f
+2396	ur_w_hunar	ہنر	noun	work	skill, craft	مهارة	hunar		gender=m
+2397	ur_w_tajurbakaar	تجربہ کار	noun	work	experienced person	خبير	tajriba-kār		gender=m
+2398	ur_w_shagird	شاگرد	noun	people	apprentice, pupil	تلميذ	shāgird		gender=m
+2399	ur_w_hamsaya	ہمسایہ	noun	people	neighbour	جار	hamsāya		gender=m
+2400	ur_w_ajnabi	اجنبی	noun	people	stranger	غريب	ajnabī		gender=m
