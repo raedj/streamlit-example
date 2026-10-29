@@ -2099,3 +2099,303 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2098	zh_w_yixiang	一向	adv	time	always (up to now)	دائمًا	yíxiàng		hsk=5
 2099	zh_w_zonggong	总共	adv	numbers	altogether	إجمالًا	zǒnggòng		hsk=5; trad=總共
 2100	zh_w_zuizhong	最终	adv	time	finally	في النهاية	zuìzhōng		hsk=5; trad=最終
+2101	zh_w_biaoda	表达	verb	communication	to express	يعبّر	biǎodá		hsk=5; trad=表達
+2102	zh_w_canyu	参与	verb	people	to take part	يشارك	cānyù		hsk=5; trad=參與
+2103	zh_w_chengzan	称赞	verb	people	to praise	يمدح	chēngzàn		hsk=5; trad=稱讚
+2104	zh_w_chuban	出版	verb	work	to publish	ينشر	chūbǎn		hsk=5
+2105	zh_w_dating	打听	verb	communication	to ask about	يستفسر	dǎting		hsk=5; trad=打聽
+2106	zh_w_daozhi	导致	verb	function	to lead to, to cause	يؤدّي إلى	dǎozhì		hsk=5; trad=導致
+2107	zh_w_mogu	蘑菇	noun	food	mushroom	فطر	mógu		measure=个; hsk=6
+2108	zh_w_fahui	发挥	verb	work	to bring into play	يُظهر (قدراته)	fāhuī		hsk=5; trad=發揮
+2109	zh_w_fendou	奋斗	verb	work	to strive	يكافح	fèndòu		hsk=5; trad=奮鬥
+2110	zh_w_gaobie	告别	verb	communication	to say goodbye	يودّع	gàobié		hsk=5; trad=告別
+2111	zh_w_guancha	观察	verb	senses	to observe	يراقب	guānchá		hsk=5; trad=觀察
+2112	zh_w_hua_row	划	verb	leisure	to row	يجدّف	huá		hsk=5; trad=劃
+2113	zh_w_jilu	记录	verb	work	to record; record	يسجّل؛ سجلّ	jìlù		hsk=5; trad=記錄
+2114	zh_w_jiechu	接触	verb	people	to come into contact	يتّصل، يلامس	jiēchù		hsk=5; trad=接觸
+2115	zh_w_jinkou	进口	verb	work	to import	يستورد	jìnkǒu		hsk=5; trad=進口
+2116	zh_w_kanwang	看望	verb	people	to visit (someone)	يزور	kànwàng		hsk=5
+2117	zh_w_lunliu	轮流	verb	people	to take turns	يتناوب	lúnliú		hsk=5; trad=輪流
+2118	zh_w_miaoxie	描写	verb	communication	to describe (in writing)	يصف	miáoxiě		hsk=5; trad=描寫
+2119	zh_w_pai	拍	verb	actions	to pat, to clap	يربّت	pāi		hsk=5
+2120	zh_w_qiang_grab	抢	verb	actions	to snatch, to rob	ينتزع	qiǎng		hsk=5; trad=搶
+2121	zh_w_ranshao	燃烧	verb	nature	to burn	يحترق	ránshāo		hsk=5; trad=燃燒
+2122	zh_w_sheng	升	verb	movement	to rise	يرتفع	shēng		hsk=5
+2123	zh_w_shuru	输入	verb	work	to input, to type in	يُدخل	shūrù		hsk=5; trad=輸入
+2124	zh_w_suoduan	缩短	verb	time	to shorten	يقصّر	suōduǎn		hsk=5; trad=縮短
+2125	zh_w_tuiguang	推广	verb	work	to promote, to spread	يروّج	tuīguǎng		hsk=5; trad=推廣
+2126	zh_w_weixiu	维修	verb	home	to repair, to maintain	يصلح	wéixiū		hsk=6; trad=維修
+2127	zh_w_xianshi	显示	verb	function	to show, to display	يُظهر	xiǎnshì		hsk=5; trad=顯示
+2128	zh_w_xiezuo	写作	verb	school	to write; writing	يكتب؛ كتابة	xiězuò		hsk=5; trad=寫作
+2129	zh_w_yanjiang	演讲	verb	communication	to give a speech; speech	يلقي خطابًا	yǎnjiǎng		hsk=5; trad=演講
+2130	zh_w_yidong	移动	verb	movement	to move	يحرّك	yídòng		hsk=5; trad=移動
+2131	zh_w_yufang	预防	verb	health	to prevent	يقي	yùfáng		hsk=5; trad=預防
+2132	zh_w_zaocheng	造成	verb	function	to cause	يسبّب	zàochéng		hsk=5
+2133	zh_w_zhenglun	争论	verb	communication	to argue; dispute	يتجادل	zhēnglùn		hsk=5; trad=爭論
+2134	zh_w_zhidao_guide	指导	verb	school	to guide, to coach	يرشد	zhǐdǎo		hsk=5; trad=指導
+2135	zh_w_zhufu	祝福	verb	people	to bless; blessing	يبارك؛ تمنيات	zhùfú		hsk=5
+2136	zh_w_baobei	宝贝	noun	family	darling; treasure	حبيبي؛ كنز	bǎobèi		measure=个; hsk=5; trad=寶貝
+2137	zh_w_bianpao	鞭炮	noun	leisure	firecracker	مفرقعة	biānpào		measure=个; hsk=5
+2138	zh_w_caichan	财产	noun	shopping	property	ممتلكات	cáichǎn		measure=笔; hsk=5; trad=財產
+2139	zh_w_chexiang	车厢	noun	travel	train carriage	عربة قطار	chēxiāng		measure=节; hsk=5; trad=車廂
+2140	zh_w_denglong	灯笼	noun	leisure	lantern	فانوس	dēnglong		measure=个; hsk=5; trad=燈籠
+2141	zh_w_duixiang	对象	noun	people	partner; target	شريك؛ هدف	duìxiàng		measure=个; hsk=5; trad=對象
+2142	zh_w_feihua	废话	noun	communication	nonsense	كلام فارغ	fèihuà		measure=句; hsk=5; trad=廢話
+2143	zh_w_gongdian	宫殿	noun	places	palace	قصر	gōngdiàn		measure=座; hsk=5; trad=宮殿
+2144	zh_w_gudai	古代	noun	time	ancient times	العصور القديمة	gǔdài		measure=none; hsk=5
+2145	zh_w_haixian	海鲜	noun	food	seafood	مأكولات بحرية	hǎixiān		measure=none; hsk=5; trad=海鮮
+2146	zh_w_huangjin	黄金	noun	shopping	gold	ذهب	huángjīn		measure=none; hsk=5; trad=黃金
+2147	zh_w_jiqiren	机器人	noun	function	robot	روبوت	jīqìrén		measure=个; hsk=5; trad=機器人
+2148	zh_w_jiazhi	价值	noun	function	value	قيمة	jiàzhí		measure=个; hsk=5; trad=價值
+2149	zh_w_juese	角色	noun	leisure	role, character	دور	juésè		measure=个; hsk=5
+2150	zh_w_jinshu	金属	noun	nature	metal	معدن	jīnshǔ		measure=种; hsk=5; trad=金屬
+2151	zh_w_kache	卡车	noun	travel	lorry	شاحنة	kǎchē		measure=辆; hsk=5; trad=卡車
+2152	zh_w_lajiao	辣椒	noun	food	chilli	فلفل حارّ	làjiāo		measure=个; hsk=5
+2153	zh_w_lingshi	零食	noun	food	snack	وجبة خفيفة	língshí		measure=种; hsk=5
+2154	zh_w_luotuo	骆驼	noun	animals	camel	جمل	luòtuo		measure=头; hsk=5; trad=駱駝
+2155	zh_w_maobing	毛病	noun	function	fault, problem	عطل، عيب	máobìng		measure=个; hsk=5
+2156	zh_w_mianhua	棉花	noun	nature	cotton	قطن	miánhua		measure=none; hsk=5
+2157	zh_w_naitao_cheese	奶酪	noun	food	cheese	جبن	nǎilào		measure=块; hsk=5
+2158	zh_w_nongmin	农民	noun	work	farmer, peasant	مزارع	nóngmín		measure=个; hsk=5; trad=農民
+2159	zh_w_qipao	旗袍	noun	clothes	qipao dress	فستان تشيباو	qípáo		measure=件; hsk=5
+2160	zh_w_qingwa	青蛙	noun	animals	frog	ضفدع	qīngwā		measure=只; hsk=5
+2161	zh_w_rili	日历	noun	time	calendar	تقويم	rìlì		measure=本; hsk=5; trad=日曆
+2162	zh_w_she	蛇	noun	animals	snake	أفعى	shé		measure=条; hsk=5
+2163	zh_w_shenhua	神话	noun	leisure	myth	أسطورة	shénhuà		measure=个; hsk=5; trad=神話
+2164	zh_w_shibing	士兵	noun	people	soldier	جندي	shìbīng		measure=个; hsk=5
+2165	zh_w_shujia	书架	noun	home	bookshelf	رفّ كتب	shūjià		measure=个; hsk=5; trad=書架
+2166	zh_w_shuju	数据	noun	work	data	بيانات	shùjù		measure=个; hsk=5; trad=數據
+2167	zh_w_simiao	寺庙	noun	places	temple	معبد	sìmiào		measure=座; hsk=6; trad=寺廟
+2168	zh_w_taitai	太太	noun	family	wife, Mrs	زوجة، سيّدة	tàitai		measure=位; hsk=5
+2169	zh_w_tudi	土地	noun	nature	land	أرض	tǔdì		measure=片; hsk=5
+2170	zh_w_wangluo	网络	noun	function	network, internet	شبكة	wǎngluò		measure=个; hsk=5; trad=網絡
+2171	zh_w_wushu	武术	noun	leisure	martial arts	فنون قتالية	wǔshù		measure=none; hsk=5; trad=武術
+2172	zh_w_xia_shrimp	虾	noun	food	shrimp	روبيان	xiā		measure=只; hsk=5; trad=蝦
+2173	zh_w_xiaomai	小麦	noun	food	wheat	قمح	xiǎomài		measure=none; hsk=5; trad=小麥
+2174	zh_w_yan_smoke	烟	noun	nature	smoke; cigarette	دخان؛ سيجارة	yān		measure=支; hsk=5; trad=煙
+2175	zh_w_yigui	衣柜	noun	home	wardrobe	خزانة ملابس	yīguì		measure=个; hsk=5; trad=衣櫃
+2176	zh_w_yumi	玉米	noun	food	corn	ذرة	yùmǐ		measure=根; hsk=5
+2177	zh_w_zainan	灾难	noun	nature	disaster	كارثة	zāinàn		measure=场; hsk=5; trad=災難
+2178	zh_w_zhengjian	证件	noun	travel	ID document	وثيقة هويّة	zhèngjiàn		measure=个; hsk=5; trad=證件
+2179	zh_w_zhuzi	竹子	noun	nature	bamboo	خيزران	zhúzi		measure=根; hsk=5
+2180	zh_w_zuopin	作品	noun	leisure	work (of art)	عمل فنّي	zuòpǐn		measure=部; hsk=5
+2181	zh_w_cu	粗	adj	descriptions	thick, rough	غليظ، خشن	cū		hsk=5
+2182	zh_w_danxiao	胆小	adj	people	timid	جبان	dǎnxiǎo		hsk=5; trad=膽小
+2183	zh_w_guanghua	光滑	adj	descriptions	smooth	أملس	guānghuá		hsk=5
+2184	zh_w_haohua	豪华	adj	descriptions	luxurious	فاخر	háohuá		hsk=5; trad=豪華
+2185	zh_w_jimo	寂寞	adj	feelings	lonely	وحيد	jìmò		hsk=5
+2186	zh_w_jin_tight	紧	adj	clothes	tight	ضيّق	jǐn		hsk=5; trad=緊
+2187	zh_w_liaobuqi	了不起	adj	feelings	amazing	رائع	liǎobuqǐ		hsk=5
+2188	zh_w_mohu	模糊	adj	senses	blurry, vague	غامض، ضبابي	móhu		hsk=5
+2189	zh_w_pilao	疲劳	adj	health	tired, fatigued	منهك	píláo		hsk=5; trad=疲勞
+2190	zh_w_qianxu	谦虚	adj	people	modest	متواضع	qiānxū		hsk=5; trad=謙虛
+2191	zh_w_qingdan	清淡	adj	food	light (food)	خفيف (طعام)	qīngdàn		hsk=5
+2192	zh_w_shu_ripe	熟	adj	food	ripe; cooked	ناضج؛ مطبوخ	shú		hsk=5
+2193	zh_w_tongku	痛苦	adj	feelings	painful, suffering	مؤلم	tòngkǔ		hsk=5
+2194	zh_w_xi_thin	细	adj	descriptions	thin, fine	رفيع	xì		hsk=5; trad=細
+2195	zh_w_xianshi_real	现实	adj	mind	realistic	واقعي	xiànshí		hsk=5; trad=現實
+2196	zh_w_youmei	优美	adj	descriptions	graceful	رشيق، جميل	yōuměi		hsk=5; trad=優美
+2197	zh_w_zhuangguan	壮观	adj	descriptions	spectacular	مذهل	zhuàngguān		hsk=5; trad=壯觀
+2198	zh_w_ziyou	自由	adj	people	free; freedom	حرّ؛ حرّية	zìyóu		hsk=5
+2199	zh_w_dique	的确	adv	mind	indeed	حقًّا	díquè		hsk=5; trad=的確
+2200	zh_w_ganjin	赶紧	adv	time	hurriedly	بسرعة	gǎnjǐn		hsk=5; trad=趕緊
+2201	zh_w_jinkuai	尽快	adv	time	as soon as possible	بأسرع ما يمكن	jǐnkuài		hsk=5; trad=盡快
+2202	zh_w_lianmang	连忙	adv	time	promptly	على عجل	liánmáng		hsk=5; trad=連忙
+2203	zh_w_teyi	特意	adv	mind	specially	خصّيصًا	tèyì		hsk=5
+2204	zh_w_xingkui	幸亏	adv	feelings	fortunately	لحسن الحظ	xìngkuī		hsk=5; trad=幸虧
+2205	zh_w_zuichu	最初	adv	time	at first	في البداية	zuìchū		hsk=5
+2206	zh_w_baozhuang	包装	verb	shopping	to pack; packaging	يغلّف؛ تغليف	bāozhuāng		hsk=5; trad=包裝
+2207	zh_w_beisong	背诵	verb	school	to recite from memory	يحفظ ويُسمّع	bèisòng		hsk=6; trad=背誦
+2208	zh_w_biaoxian	表现	verb	people	to perform, to behave; performance	يُظهر؛ أداء	biǎoxiàn		hsk=5; trad=表現
+2209	zh_w_bofang	播放	verb	leisure	to broadcast, to play	يبثّ، يشغّل	bōfàng		hsk=5
+2210	zh_w_caiqu	采取	verb	actions	to adopt, to take (measures)	يتّخذ	cǎiqǔ		hsk=5; trad=採取
+2211	zh_w_cankao	参考	verb	school	to refer to; reference	يرجع إلى؛ مرجع	cānkǎo		hsk=5; trad=參考
+2212	zh_w_celiang	测量	verb	numbers	to measure	يقيس	cèliáng		hsk=5; trad=測量
+2213	zh_w_chaoxie	抄写	verb	school	to copy by hand	ينسخ	chāoxiě		hsk=5; trad=抄寫
+2214	zh_w_chenghu	称呼	verb	communication	to address, to call	ينادي	chēnghu		hsk=5; trad=稱呼
+2215	zh_w_chengzhang	成长	verb	people	to grow up	ينشأ، يكبر	chéngzhǎng		hsk=5; trad=成長
+2216	zh_w_chengnuo	承诺	verb	communication	to promise; promise	يعد؛ وعد	chéngnuò		hsk=6; trad=承諾
+2217	zh_w_chushou	出售	verb	shopping	to sell	يبيع	chūshòu		hsk=5
+2218	zh_w_chufa_punish	处罚	verb	people	to punish	يعاقب	chǔfá		hsk=5; trad=處罰
+2219	zh_w_chuanbo	传播	verb	communication	to spread	ينشر	chuánbō		hsk=5; trad=傳播
+2220	zh_w_chuandi	传递	verb	actions	to pass on	يمرّر	chuándì		hsk=5; trad=傳遞
+2221	zh_w_dalie	打猎	verb	leisure	to hunt	يصطاد	dǎliè		hsk=5; trad=打獵
+2222	zh_w_dianran	点燃	verb	actions	to light, to ignite	يشعل	diǎnrán		hsk=6; trad=點燃
+2223	zh_w_diaoke	雕刻	verb	leisure	to carve; carving	ينحت؛ نحت	diāokè		hsk=6
+2224	zh_w_fabiao	发表	verb	communication	to publish, to deliver (a speech)	ينشر، يلقي	fābiǎo		hsk=5; trad=發表
+2225	zh_w_fankang	反抗	verb	people	to resist	يقاوم	fǎnkàng		hsk=6
+2226	zh_w_fangzhi	防止	verb	function	to prevent	يمنع	fángzhǐ		hsk=5
+2227	zh_w_fenpei	分配	verb	work	to allocate	يوزّع	fēnpèi		hsk=5
+2228	zh_w_fenxi	分析	verb	mind	to analyse	يحلّل	fēnxī		hsk=5
+2229	zh_w_gaishan	改善	verb	function	to improve	يحسّن	gǎishàn		hsk=5
+2230	zh_w_ganshou	感受	verb	feelings	to feel; feeling	يشعر؛ إحساس	gǎnshòu		hsk=5
+2231	zh_w_guanzhu	关注	verb	mind	to pay attention to	يهتمّ بـ	guānzhù		hsk=6; trad=關注
+2232	zh_w_guihuan	归还	verb	actions	to return (something)	يُرجع	guīhuán		hsk=6; trad=歸還
+2233	zh_w_huishou	回收	verb	nature	to recycle	يعيد التدوير	huíshōu		hsk=6
+2234	zh_w_hunhe	混合	verb	food	to mix	يمزج	hùnhé		hsk=5
+2235	zh_w_jianshe	建设	verb	work	to build; construction	يبني؛ بناء	jiànshè		hsk=5; trad=建設
+2236	zh_w_jiaowang	交往	verb	people	to associate with	يتعامل مع	jiāowǎng		hsk=5
+2237	zh_w_jiejin	接近	verb	movement	to approach, to be close to	يقترب	jiējìn		hsk=5
+2238	zh_w_jieyan	戒烟	verb	health	to quit smoking	يقلع عن التدخين	jièyān		hsk=5; trad=戒煙
+2239	zh_w_jingying	经营	verb	work	to run (a business)	يدير	jīngyíng		hsk=5; trad=經營
+2240	zh_w_jiuzheng	纠正	verb	school	to correct	يصحّح	jiūzhèng		hsk=5; trad=糾正
+2241	zh_w_mifeng	蜜蜂	noun	animals	bee	نحلة	mìfēng		measure=只; hsk=6
+2242	zh_w_kuajiang	夸奖	verb	people	to praise	يمدح	kuājiǎng		hsk=5; trad=誇獎
+2243	zh_w_liyong	利用	verb	function	to make use of	يستغلّ	lìyòng		hsk=5
+2244	zh_w_liuchuan	流传	verb	communication	to be handed down	يُتناقل	liúchuán		hsk=6; trad=流傳
+2245	zh_w_luohou	落后	adj	function	backward; to fall behind	متخلّف	luòhòu		hsk=5; trad=落後
+2246	zh_w_mingling	命令	verb	people	to order; order	يأمر؛ أمر	mìnglìng		hsk=5
+2247	zh_w_peixun	培训	verb	work	to train	يدرّب	péixùn		hsk=5; trad=培訓
+2248	zh_w_pinming	拼命	adv	actions	desperately, with all one's might	بكلّ قوّة	pīnmìng		hsk=5
+2249	zh_w_pingjia	评价	verb	work	to evaluate; evaluation	يقيّم؛ تقييم	píngjià		hsk=5; trad=評價
+2250	zh_w_qifu	欺负	verb	people	to bully	يستقوي على	qīfu		hsk=5; trad=欺負
+2251	zh_w_qianzi	签字	verb	work	to sign	يوقّع	qiānzì		hsk=5; trad=簽字
+2252	zh_w_qiangdiao	强调	verb	communication	to emphasise	يؤكّد	qiángdiào		hsk=5; trad=強調
+2253	zh_w_qude	取得	verb	work	to obtain, to achieve	يحقّق	qǔdé		hsk=5
+2254	zh_w_renshou	忍受	verb	feelings	to endure	يتحمّل	rěnshòu		hsk=5
+2255	zh_w_shengji	升级	verb	work	to upgrade	يرقّي	shēngjí		hsk=6; trad=升級
+2256	zh_w_shoucang	收藏	verb	leisure	to collect; collection	يقتني؛ مجموعة	shōucáng		hsk=6
+2257	zh_w_shuohuang	说谎	verb	communication	to lie	يكذب	shuōhuǎng		hsk=5; trad=說謊
+2258	zh_w_sikao	思考	verb	mind	to think deeply	يتفكّر	sīkǎo		hsk=5
+2259	zh_w_sousuo	搜索	verb	work	to search	يبحث	sōusuǒ		hsk=5
+2260	zh_w_suoxiao	缩小	verb	function	to reduce, to shrink	يصغّر	suōxiǎo		hsk=6; trad=縮小
+2261	zh_w_tansuo	探索	verb	mind	to explore	يستكشف	tànsuǒ		hsk=6
+2262	zh_w_taobi	逃避	verb	actions	to escape, to evade	يتهرّب	táobì		hsk=5
+2263	zh_w_tichang	提倡	verb	communication	to advocate	يدعو إلى	tíchàng		hsk=5
+2264	zh_w_tiyan	体验	verb	feelings	to experience	يختبر، يجرّب	tǐyàn		hsk=5; trad=體驗
+2265	zh_w_tiaoxuan	挑选	verb	shopping	to choose	يختار	tiāoxuǎn		hsk=5; trad=挑選
+2266	zh_w_tingliu	停留	verb	travel	to stay, to stop over	يمكث	tíngliú		hsk=6
+2267	zh_w_touru	投入	verb	work	to put into; devoted	يضع، يكرّس	tóurù		hsk=5
+2268	zh_w_tuidong	推动	verb	function	to promote, to push forward	يدفع قدمًا	tuīdòng		hsk=5; trad=推動
+2269	zh_w_tuice	推测	verb	mind	to guess, to infer	يستنتج	tuīcè		hsk=6; trad=推測
+2270	zh_w_weihu	维护	verb	work	to maintain, to protect	يحافظ على	wéihù		hsk=6; trad=維護
+2271	zh_w_xiande	显得	verb	function	to seem, to look	يبدو	xiǎnde		hsk=5; trad=顯得
+2272	zh_w_xiaomie	消灭	verb	actions	to eliminate	يقضي على	xiāomiè		hsk=6; trad=消滅
+2273	zh_w_xiaoshou	销售	verb	shopping	to sell; sales	يبيع؛ مبيعات	xiāoshòu		hsk=5; trad=銷售
+2274	zh_w_xiujian	修建	verb	work	to build	يشيّد	xiūjiàn		hsk=6
+2275	zh_w_yanzou	演奏	verb	leisure	to perform (music)	يعزف	yǎnzòu		hsk=5
+2276	zh_w_yimin	移民	verb	travel	to emigrate; immigrant	يهاجر؛ مهاجر	yímín		hsk=5
+2277	zh_w_yindao	引导	verb	people	to guide	يوجّه	yǐndǎo		hsk=6; trad=引導
+2278	zh_w_yincang	隐藏	verb	actions	to hide	يخفي	yǐncáng		hsk=6; trad=隱藏
+2279	zh_w_yunyong	运用	verb	function	to apply, to use	يستخدم	yùnyòng		hsk=5; trad=運用
+2280	zh_w_zanmei	赞美	verb	people	to praise	يمجّد	zànměi		hsk=5; trad=讚美
+2281	zh_w_zhangwo	掌握	verb	school	to master	يتقن	zhǎngwò		hsk=5
+2282	zh_w_zhaohu	招呼	verb	people	to greet, to call	يحيّي	zhāohu		hsk=5
+2283	zh_w_zhengchao	争吵	verb	people	to quarrel	يتشاجر	zhēngchǎo		hsk=5; trad=爭吵
+2284	zh_w_zhihui	指挥	verb	work	to direct, to conduct	يقود	zhǐhuī		hsk=5; trad=指揮
+2285	zh_w_zhuzhang	主张	verb	mind	to advocate; view	يرى؛ رأي	zhǔzhāng		hsk=5; trad=主張
+2286	zh_w_zhuanbian	转变	verb	function	to change, to transform	يتحوّل	zhuǎnbiàn		hsk=5; trad=轉變
+2287	zh_w_aixin	爱心	noun	feelings	love, compassion	محبّة	àixīn		measure=颗; hsk=5; trad=愛心
+2288	zh_w_an_bank	岸	noun	nature	bank, shore	ضفّة	àn		measure=个; hsk=5
+2289	zh_w_baihuo	百货	noun	shopping	general merchandise	بضائع متنوّعة	bǎihuò		measure=none; hsk=5; trad=百貨
+2290	zh_w_banben	版本	noun	function	version	نسخة	bǎnběn		measure=个; hsk=6
+2291	zh_w_bangwan	傍晚	noun	time	dusk	غسق	bàngwǎn		measure=none; hsk=5
+2292	zh_w_baoshi	宝石	noun	shopping	gem	حجر كريم	bǎoshí		measure=颗; hsk=6; trad=寶石
+2293	zh_w_beiju	悲剧	noun	leisure	tragedy	مأساة	bēijù		measure=个; hsk=6; trad=悲劇
+2294	zh_w_biji	笔记	noun	school	notes	ملاحظات	bǐjì		measure=本; hsk=5; trad=筆記
+2295	zh_w_biaozhi	标志	noun	function	sign, symbol	علامة	biāozhì		measure=个; hsk=5; trad=標誌
+2296	zh_w_bingfang	病房	noun	health	ward	عنبر مرضى	bìngfáng		measure=间; hsk=6
+2297	zh_w_bumen	部门	noun	work	department	قسم	bùmén		measure=个; hsk=5; trad=部門
+2298	zh_w_caochang	操场	noun	school	playground	ملعب المدرسة	cāochǎng		measure=个; hsk=5; trad=操場
+2299	zh_w_caodi	草地	noun	nature	lawn, grassland	مرج	cǎodì		measure=片; hsk=5
+2300	zh_w_chaye	茶叶	noun	food	tea leaves	أوراق الشاي	cháyè		measure=none; hsk=5; trad=茶葉
+2301	zh_w_changtu	长途	adj	travel	long-distance	بعيد المسافة	chángtú		hsk=5; trad=長途
+2302	zh_w_chengben	成本	noun	work	cost	تكلفة	chéngběn		measure=个; hsk=6
+2303	zh_w_chengjiu	成就	noun	work	achievement	إنجاز	chéngjiù		measure=个; hsk=5
+2304	zh_w_chengxu	程序	noun	work	procedure; program	إجراء؛ برنامج	chéngxù		measure=个; hsk=5
+2305	zh_w_chicun	尺寸	noun	numbers	size, measurements	مقاس	chǐcùn		measure=个; hsk=5
+2306	zh_w_chongtu	冲突	noun	people	conflict	نزاع	chōngtū		measure=个; hsk=6; trad=衝突
+2307	zh_w_chuanshuo	传说	noun	leisure	legend	أسطورة	chuánshuō		measure=个; hsk=5; trad=傳說
+2308	zh_w_chuangkou	窗口	noun	places	window, counter	نافذة، شبّاك	chuāngkǒu		measure=个; hsk=5
+2309	zh_w_cihui	词汇	noun	school	vocabulary	مفردات	cíhuì		measure=个; hsk=5; trad=詞彙
+2310	zh_w_cunzhuang	村庄	noun	places	village	قرية	cūnzhuāng		measure=个; hsk=5; trad=村莊
+2311	zh_w_dating_hall	大厅	noun	places	hall, lobby	بهو	dàtīng		measure=个; hsk=5; trad=大廳
+2312	zh_w_dashi	大使	noun	people	ambassador	سفير	dàshǐ		measure=位; hsk=5
+2313	zh_w_danci	单词	noun	school	word	كلمة	dāncí		measure=个; hsk=5; trad=單詞
+2314	zh_w_dangan	档案	noun	work	file, records	أرشيف	dàng'àn		measure=份; hsk=6; trad=檔案
+2315	zh_w_daoyu	岛屿	noun	nature	islands	جزر	dǎoyǔ		measure=个; hsk=6; trad=島嶼
+2316	zh_w_daode	道德	noun	people	morality	أخلاق	dàodé		measure=none; hsk=5
+2317	zh_w_daoli	道理	noun	mind	reason, principle	منطق	dàolǐ		measure=个; hsk=5
+2318	zh_w_dengguang	灯光	noun	home	lighting	إضاءة	dēngguāng		measure=none; hsk=5; trad=燈光
+2319	zh_w_diaoxiang	雕像	noun	places	statue	تمثال	diāoxiàng		measure=座; hsk=6
+2320	zh_w_donghua	动画	noun	leisure	cartoon, animation	رسوم متحرّكة	dònghuà		measure=部; hsk=5; trad=動畫
+2321	zh_w_duifang	对方	noun	people	the other side	الطرف الآخر	duìfāng		measure=none; hsk=5; trad=對方
+2322	zh_w_erji	耳机	noun	leisure	headphones	سمّاعات	ěrjī		measure=副; hsk=5; trad=耳機
+2323	zh_w_faxing	发型	noun	body	hairstyle	تسريحة شعر	fàxíng		measure=个; hsk=5; trad=髮型
+2324	zh_w_fanchuan	帆船	noun	travel	sailing boat	مركب شراعي	fānchuán		measure=艘; hsk=6
+2325	zh_w_fanguan	饭馆	noun	food	restaurant	مطعم	fànguǎn		measure=家; hsk=5; trad=飯館
+2326	zh_w_fanwei	范围	noun	function	range, scope	نطاق	fànwéi		measure=个; hsk=5; trad=範圍
+2327	zh_w_feiliao	肥料	noun	nature	fertiliser	سماد	féiliào		measure=种; hsk=6
+2328	zh_w_fenshu	分数	noun	school	score, mark	درجة	fēnshù		measure=个; hsk=5; trad=分數
+2329	zh_w_fengge	风格	noun	leisure	style	أسلوب	fēnggé		measure=种; hsk=5; trad=風格
+2330	zh_w_fengzheng	风筝	noun	leisure	kite	طائرة ورقية	fēngzheng		measure=个; hsk=5; trad=風箏
+2331	zh_w_fuhao	符号	noun	function	symbol	رمز	fúhào		measure=个; hsk=5; trad=符號
+2332	zh_w_gangbi	钢笔	noun	school	fountain pen	قلم حبر	gāngbǐ		measure=支; hsk=5; trad=鋼筆
+2333	zh_w_geci	歌词	noun	leisure	lyrics	كلمات أغنية	gēcí		measure=首; hsk=6; trad=歌詞
+2334	zh_w_gongfu	功夫	noun	leisure	kung fu; effort	الكونغ فو؛ جهد	gōngfu		measure=none; hsk=5
+2335	zh_w_gugu	姑姑	noun	family	aunt (father's sister)	عمّة	gūgu		measure=个; hsk=5
+2336	zh_w_guji_site	古迹	noun	places	historic site	موقع أثري	gǔjì		measure=处; hsk=5; trad=古蹟
+2337	zh_w_guzhe	骨折	verb	health	to fracture a bone	يُكسر عظمه	gǔzhé		hsk=6
+2338	zh_w_guwen	顾问	noun	work	adviser	مستشار	gùwèn		measure=位; hsk=6; trad=顧問
+2339	zh_w_guimo	规模	noun	function	scale, size	حجم	guīmó		measure=个; hsk=5; trad=規模
+2340	zh_w_guitai	柜台	noun	shopping	counter	منضدة	guìtái		measure=个; hsk=5; trad=櫃檯
+2341	zh_w_haibao	海报	noun	communication	poster	ملصق	hǎibào		measure=张; hsk=6; trad=海報
+2342	zh_w_haiyang	海洋	noun	nature	ocean	محيط	hǎiyáng		measure=片; hsk=5
+2343	zh_w_gezi	鸽子	noun	animals	pigeon, dove	حمامة	gēzi		measure=只; hsk=6; trad=鴿子
+2344	zh_w_heian	黑暗	adj	descriptions	dark; darkness	مظلم؛ ظلام	hēi'àn		hsk=5
+2345	zh_w_houdai	后代	noun	family	descendants	ذرّية	hòudài		measure=个; hsk=6; trad=後代
+2346	zh_w_hutong	胡同	noun	places	alley, hutong	زقاق	hútòng		measure=条; hsk=6
+2347	zh_w_huaping	花瓶	noun	home	vase	مزهرية	huāpíng		measure=个; hsk=5
+2348	zh_w_huazhuangpin	化妆品	noun	shopping	cosmetics	مستحضرات تجميل	huàzhuāngpǐn		measure=种; hsk=5; trad=化妝品
+2349	zh_w_huanghun	黄昏	noun	time	dusk	غروب	huánghūn		measure=none; hsk=5; trad=黃昏
+2350	zh_w_hunyin	婚姻	noun	family	marriage	زواج	hūnyīn		measure=个; hsk=5
+2351	zh_w_huozai	火灾	noun	actions	fire (disaster)	حريق	huǒzāi		measure=场; hsk=6; trad=火災
+2352	zh_w_jiepai	节拍	noun	leisure	beat, rhythm	إيقاع	jiépāi		measure=个; hsk=6; trad=節拍
+2353	zh_w_jinkuang	近况	noun	people	recent situation	الأحوال الأخيرة	jìnkuàng		measure=none; hsk=6; trad=近況
+2354	zh_w_jiudian	酒店	noun	travel	hotel	فندق	jiǔdiàn		measure=家; hsk=5
+2355	zh_w_juchang	剧场	noun	leisure	theatre	مسرح	jùchǎng		measure=个; hsk=6; trad=劇場
+2356	zh_w_kaoya	烤鸭	noun	food	roast duck	بطّ مشوي	kǎoyā		measure=只; hsk=5; trad=烤鴨
+2357	zh_w_lizi_chestnut	栗子	noun	food	chestnut	كستناء	lìzi		measure=个; hsk=6
+2358	zh_w_liushui	流水	noun	nature	running water	ماء جارٍ	liúshuǐ		measure=none; hsk=6
+2359	zh_w_luxiang	录像	noun	leisure	video recording	تسجيل فيديو	lùxiàng		measure=个; hsk=5; trad=錄像
+2360	zh_w_maoyi_trade	贸易	noun	work	trade	تجارة	màoyì		measure=none; hsk=5; trad=貿易
+2361	zh_w_mingsheng	名胜	noun	travel	famous scenic spot	معلم سياحي	míngshèng		measure=处; hsk=6; trad=名勝
+2362	zh_w_qiyu	奇遇	noun	leisure	adventure, chance encounter	مغامرة	qíyù		measure=次; hsk=6
+2363	zh_w_quanjia	全家	noun	family	the whole family	العائلة كلّها	quánjiā		measure=none; hsk=5
+2364	zh_w_renqing	人情	noun	people	human feelings, favour	معروف	rénqíng		measure=个; hsk=6
+2365	zh_w_shiye	事业	noun	work	career, undertaking	مسيرة مهنية	shìyè		measure=项; hsk=5; trad=事業
+2366	zh_w_shuping	书评	noun	leisure	book review	مراجعة كتاب	shūpíng		measure=篇; hsk=6; trad=書評
+2367	zh_w_tiyu	体育	noun	leisure	physical education, sport	الرياضة البدنية	tǐyù		measure=none; hsk=5; trad=體育
+2368	zh_w_waiyu	外语	noun	school	foreign language	لغة أجنبية	wàiyǔ		measure=门; hsk=5; trad=外語
+2369	zh_w_youhui	优惠	noun	shopping	discount, special offer	خصم	yōuhuì		measure=个; hsk=6; trad=優惠
+2370	zh_w_zaocan	早餐	noun	food	breakfast	فطور	zǎocān		measure=顿; hsk=5
+2371	zh_w_zhuye	主页	noun	work	homepage	الصفحة الرئيسية	zhǔyè		measure=个; hsk=6; trad=主頁
+2372	zh_w_aoman	傲慢	adj	people	arrogant	متكبّر	àomàn		hsk=6
+2373	zh_w_benzhong	笨重	adj	descriptions	heavy, cumbersome	ثقيل الحجم	bènzhòng		hsk=6
+2374	zh_w_cankui	惭愧	adj	feelings	ashamed	خجلان	cánkuì		hsk=6; trad=慚愧
+2375	zh_w_canlan	灿烂	adj	descriptions	brilliant, splendid	متألّق	cànlàn		hsk=5; trad=燦爛
+2376	zh_w_chenmo	沉默	adj	people	silent, taciturn	صامت	chénmò		hsk=5
+2377	zh_w_chengken	诚恳	adj	people	sincere	صادق	chéngkěn		hsk=5; trad=誠懇
+2378	zh_w_chongzu	充足	adj	function	sufficient, ample	وافر	chōngzú		hsk=6
+2379	zh_w_chuse	出色	adj	people	outstanding	متميّز	chūsè		hsk=5
+2380	zh_w_cuiruo	脆弱	adj	descriptions	fragile	هشّ	cuìruò		hsk=6
+2381	zh_w_dadan	大胆	adj	people	bold	جريء	dàdǎn		hsk=5; trad=大膽
+2382	zh_w_dandiao	单调	adj	feelings	monotonous	رتيب	dāndiào		hsk=5; trad=單調
+2383	zh_w_deyi	得意	adj	feelings	pleased with oneself	متباهٍ	déyì		hsk=5
+2384	zh_w_dongren	动人	adj	feelings	touching	مؤثّر	dòngrén		hsk=6; trad=動人
+2385	zh_w_dou_steep	陡	adj	places	steep	شديد الانحدار	dǒu		hsk=6
+2386	zh_w_duanzan	短暂	adj	time	brief	قصير الأمد	duǎnzàn		hsk=6; trad=短暫
+2387	zh_w_fanhua	繁华	adj	places	bustling, prosperous	مزدهر	fánhuá		hsk=6; trad=繁華
+2388	zh_w_feiwo	肥沃	adj	nature	fertile	خصب	féiwò		hsk=6
+2389	zh_w_gaoshang	高尚	adj	people	noble	نبيل	gāoshàng		hsk=6
+2390	zh_w_gudu	孤独	adj	feelings	lonely	وحيد	gūdú		hsk=5; trad=孤獨
+2391	zh_w_guguai	古怪	adj	people	eccentric	غريب الأطوار	gǔguài		hsk=6
+2392	zh_w_guangrong	光荣	adj	people	glorious, honoured	مجيد	guāngróng		hsk=5; trad=光榮
+2393	zh_w_hanleng	寒冷	adj	weather	cold, frigid	بارد جدًا	hánlěng		hsk=5
+2394	zh_w_haoqi	好奇	adj	mind	curious	فضولي	hàoqí		hsk=5
+2395	zh_w_hexie	和谐	adj	people	harmonious	متناغم	héxié		hsk=6; trad=和諧
+2396	zh_w_huali	华丽	adj	descriptions	magnificent, ornate	فخم	huálì		hsk=6; trad=華麗
+2397	zh_w_huangliang	荒凉	adj	places	desolate	مقفر	huāngliáng		hsk=6; trad=荒涼
+2398	zh_w_huihuang	辉煌	adj	descriptions	splendid	رائع	huīhuáng		hsk=6; trad=輝煌
+2399	zh_w_jianding	坚定	adj	people	firm, resolute	حازم	jiāndìng		hsk=5; trad=堅定
+2400	zh_w_nanmian	难免	adj	function	hard to avoid	لا مفرّ منه	nánmiǎn		hsk=5; trad=難免
