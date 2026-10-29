@@ -2699,3 +2699,303 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2698	ar_w_sahi	صَحْو	adj	weather	clear (sky)	بلا غيوم	ṣaḥw		root=ص ح و
 2699	ar_w_kurrasa	كُرَّاسَة	noun	school	notebook	دفتر	kurrāsa		gender=f; plural=كَرَارِيس; root=ك ر س
 2700	ar_w_mimhat	مِمْحَاة	noun	school	eraser	أداة المسح	mimḥāh		gender=f; plural=مَمَاحٍ; root=م ح و
+2701	ar_w_iltazama	اِلْتَزَمَ	verb	society	to abide by, to commit	تعهّد	iltazama		root=ل ز م; masdar=اِلْتِزَام; present=يَلْتَزِمُ
+2702	ar_w_tamaha	طَمَحَ	verb	feelings	to aspire	تطلّع	ṭamaḥa		root=ط م ح; masdar=طُمُوح; present=يَطْمَحُ
+2703	ar_w_ahara	حَيَّرَ	verb	feelings	to bewilder	أربك	ḥayyara		root=ح ي ر; masdar=تَحْيِير; present=يُحَيِّرُ
+2704	ar_w_akhalla	أَخَلَّ	verb	society	to breach	نقض	akhalla		root=خ ل ل; masdar=إِخْلَال; present=يُخِلُّ
+2705	ar_w_inqalaba	اِنْقَلَبَ	verb	travel	to overturn, to capsize	انعكس	inqalaba		root=ق ل ب; masdar=اِنْقِلَاب; present=يَنْقَلِبُ
+2706	ar_w_qahqaha	قَهْقَهَ	verb	feelings	to laugh loudly	ضحك عاليًا	qahqaha		root=ق ه ق ه; masdar=قَهْقَهَة; present=يُقَهْقِهُ
+2707	ar_w_tahhara	طَهَّرَ	verb	home	to purify, to disinfect	نظّف	ṭahhara		root=ط ه ر; masdar=تَطْهِير; present=يُطَهِّرُ
+2708	ar_w_ahya	أَحْيَا	verb	society	to revive, to commemorate	أعاد الحياة	aḥyā		root=ح ي ي; masdar=إِحْيَاء; present=يُحْيِي
+2709	ar_w_ajbara	أَجْبَرَ	verb	society	to force	أرغم	ajbara		root=ج ب ر; masdar=إِجْبَار; present=يُجْبِرُ
+2710	ar_w_ta_amara	تَآمَرَ	verb	mind	to conspire	دبّر مكيدة	taʾāmara		root=أ م ر; masdar=تَآمُر; present=يَتَآمَرُ
+2711	ar_w_tajammaa	تَجَمَّعَ	verb	people	to gather	اجتمع	tajammaʿa		root=ج م ع; masdar=تَجَمُّع; present=يَتَجَمَّعُ
+2712	ar_w_inkamasha	اِنْكَمَشَ	verb	feelings	to shrink, to cower	تقلّص	inkamasha		root=ك م ش; masdar=اِنْكِمَاش; present=يَنْكَمِشُ
+2713	ar_w_ishtaha	اِشْتَهَى	verb	feelings	to crave	رغب	ishtahā		root=ش ه و; masdar=اِشْتِهَاء; present=يَشْتَهِي
+2714	ar_w_tafattata	تَفَتَّتَ	verb	actions	to crumble	تكسّر	tafattata		root=ف ت ت; masdar=تَفَتُّت; present=يَتَفَتَّتُ
+2715	ar_w_tadalla	تَدَلَّى	verb	actions	to dangle	علق	tadallā		root=د ل ي; masdar=تَدَلٍّ; present=يَتَدَلَّى
+2716	ar_w_mamata	مَاطَلَ	verb	time	to procrastinate	أخّر	māṭala		root=م ط ل; masdar=مُمَاطَلَة; present=يُمَاطِلُ
+2717	ar_w_fannada	فَنَّدَ	verb	communication	to refute	دحض	fannada		root=ف ن د; masdar=تَفْنِيد; present=يُفَنِّدُ
+2718	ar_w_ihtala	اِحْتَالَ	verb	society	to swindle	غشّ	iḥtāla		root=ح و ل; masdar=اِحْتِيَال; present=يَحْتَالُ
+2719	ar_w_fawwada	فَوَّضَ	verb	work	to delegate	أوكل	fawwaḍa		root=ف و ض; masdar=تَفْوِيض; present=يُفَوِّضُ
+2720	ar_w_istanzafa	اِسْتَنْزَفَ	verb	nature	to deplete	أنهك	istanzafa		root=ن ز ف; masdar=اِسْتِنْزَاف; present=يَسْتَنْزِفُ
+2721	ar_w_istankara	اِسْتَنْكَرَ	verb	feelings	to denounce	رفض	istankara		root=ن ك ر; masdar=اِسْتِنْكَار; present=يَسْتَنْكِرُ
+2722	ar_w_dannasa	دَنَّسَ	verb	society	to desecrate	نجّس	dannasa		root=د ن س; masdar=تَدْنِيس; present=يُدَنِّسُ
+2723	ar_w_ihtajaza	اِحْتَجَزَ	verb	society	to detain	حبس	iḥtajaza		root=ح ج ز; masdar=اِحْتِجَاز; present=يَحْتَجِزُ
+2724	ar_w_radaa	رَدَعَ	verb	society	to deter	منع	radaʿa		root=ر د ع; masdar=رَدْع; present=يَرْدَعُ
+2725	ar_w_iltahama	اِلْتَهَمَ	verb	food	to devour	أكل بسرعة	iltahama		root=ل ه م; masdar=اِلْتِهَام; present=يَلْتَهِمُ
+2726	ar_w_tadaala	تَضَاءَلَ	verb	function	to dwindle	صغر	taḍāʾala		root=ض ء ل; masdar=تَضَاؤُل; present=يَتَضَاءَلُ
+2727	ar_w_mayyaza	مَيَّزَ	verb	senses	to distinguish	فرّق	mayyaza		root=م ي ز; masdar=تَمْيِيز; present=يُمَيِّزُ
+2728	ar_w_afsha	أَفْشَى	verb	communication	to disclose	كشف	afshā		root=ف ش و; masdar=إِفْشَاء; present=يُفْشِي
+2729	ar_w_fakkaka	فَكَّكَ	verb	actions	to dismantle	فصل الأجزاء	fakkaka		root=ف ك ك; masdar=تَفْكِيك; present=يُفَكِّكُ
+2730	ar_w_baddada	بَدَّدَ	verb	mind	to dispel, to waste	أزال	baddada		root=ب د د; masdar=تَبْدِيد; present=يُبَدِّدُ
+2731	ar_w_thana	ثَنَى	verb	communication	to dissuade, to fold	صرف عن	thanā		root=ث ن ي; masdar=ثَنْي; present=يَثْنِي
+2732	ar_w_rawagha	رَاوَغَ	verb	movement	to dodge	تهرّب	rāwagha		root=ر و غ; masdar=مُرَاوَغَة; present=يُرَاوِغُ
+2733	ar_w_khasha	خَشِيَ	verb	feelings	to fear, to dread	خاف	khashiya		root=خ ش ي; masdar=خَشْيَة; present=يَخْشَى
+2734	ar_w_aflata	أَفْلَتَ	verb	actions	to escape, to let go	نجا	aflata		root=ف ل ت; masdar=إِفْلَات; present=يُفْلِتُ
+2735	ar_w_inbaatha	اِنْبَعَثَ	verb	nature	to emanate	خرج	inbaʿatha		root=ب ع ث; masdar=اِنْبِعَاث; present=يَنْبَعِثُ
+2736	ar_w_ikhtalasa	اِخْتَلَسَ	verb	work	to embezzle	سرق خفية	ikhtalasa		root=خ ل س; masdar=اِخْتِلَاس; present=يَخْتَلِسُ
+2737	ar_w_taadda	تَعَدَّى	verb	places	to trespass, to exceed	تجاوز	taʿaddā		root=ع د و; masdar=تَعَدٍّ; present=يَتَعَدَّى
+2738	ar_w_wahaba	وَهَبَ	verb	society	to grant, to endow	أعطى	wahaba		root=و ه ب; masdar=هِبَة; present=يَهَبُ
+2739	ar_w_anara	أَنَارَ	verb	mind	to light up	أضاء	anāra		root=ن و ر; masdar=إِنَارَة; present=يُنِيرُ
+2740	ar_w_aw_kala	أَوْكَلَ	verb	people	to entrust	فوّض	awkala		root=و ك ل; masdar=إِيكَال; present=يُوكِلُ
+2741	ar_w_istaasala	اِسْتَأْصَلَ	verb	actions	to eradicate	أزال من الجذور	istaʾṣala		root=أ ص ل; masdar=اِسْتِئْصَال; present=يَسْتَأْصِلُ
+2742	ar_w_tahharraba	تَهَرَّبَ	verb	actions	to evade	هرب	taharraba		root=ه ر ب; masdar=تَهَرُّب; present=يَتَهَرَّبُ
+2743	ar_w_majjada	مَجَّدَ	verb	communication	to glorify	عظّم	majjada		root=م ج د; masdar=تَمْجِيد; present=يُمَجِّدُ
+2744	ar_w_taqayyaha	تَقَيَّحَ	verb	health	to fester	خرج منه القيح	taqayyaḥa		root=ق ي ح; masdar=تَقَيُّح; present=يَتَقَيَّحُ
+2745	ar_w_tamalmala	تَمَلْمَلَ	verb	body	to fidget	تحرّك بقلق	tamalmala		root=م ل م ل; masdar=تَمَلْمُل; present=يَتَمَلْمَلُ
+2746	ar_w_istarada	اِسْتَعْرَضَ	verb	people	to show off, to review	عرض	istaʿraḍa		root=ع ر ض; masdar=اِسْتِعْرَاض; present=يَسْتَعْرِضُ
+2747	ar_w_wamada	وَمَضَ	verb	senses	to flicker	لمع	wamaḍa		root=و م ض; masdar=وَمِيض; present=يَمِضُ
+2748	ar_w_tahassasa	تَحَسَّسَ	verb	actions	to feel, to grope	لمس	taḥassasa		root=ح س س; masdar=تَحَسُّس; present=يَتَحَسَّسُ
+2749	ar_w_taghargara	تَغَرْغَرَ	verb	health	to gargle	غسل الحلق	tagharghara		root=غ ر غ ر; masdar=غَرْغَرَة; present=يَتَغَرْغَرُ
+2750	ar_w_shamata	شَمِتَ	verb	feelings	to gloat	فرح بمصيبة غيره	shamita		root=ش م ت; masdar=شَمَاتَة; present=يَشْمَتُ
+2751	ar_w_sharaa	صَارَعَ	verb	leisure	to wrestle	قاتل	ṣāraʿa		root=ص ر ع; masdar=مُصَارَعَة; present=يُصَارِعُ
+2752	ar_w_kashshara	كَشَّرَ	verb	body	to grimace, to grin	عبس	kashshara		root=ك ش ر; masdar=تَكْشِير; present=يُكَشِّرُ
+2753	ar_w_araja	عَرَجَ	verb	movement	to limp	مشى بصعوبة	ʿaraja		root=ع ر ج; masdar=عَرَج; present=يَعْرُجُ
+2754	ar_w_harrada	حَرَّضَ	verb	society	to incite	دفع إلى الشرّ	ḥarraḍa		root=ح ر ض; masdar=تَحْرِيض; present=يُحَرِّضُ
+2755	ar_w_alhaqa	أَلْحَقَ	verb	actions	to inflict, to attach	سبّب	alḥaqa		root=ل ح ق; masdar=إِلْحَاق; present=يُلْحِقُ
+2756	ar_w_gharasa	غَرَسَ	verb	school	to plant, to instil	زرع	gharasa		root=غ ر س; masdar=غَرْس; present=يَغْرِسُ
+2757	ar_w_istahjana	اِسْتَهْجَنَ	verb	people	to disapprove of	استنكر	istahjana		root=ه ج ن; masdar=اِسْتِهْجَان; present=يَسْتَهْجِنُ
+2758	ar_w_tadafaa	تَدَافَعَ	verb	movement	to jostle	دفع بعضهم بعضًا	tadāfaʿa		root=د ف ع; masdar=تَدَافُع; present=يَتَدَافَعُ
+2759	ar_w_ratha	رَثَى	verb	feelings	to lament (in verse)	بكى الميت	rathā		root=ر ث ي; masdar=رِثَاء; present=يَرْثِي
+2760	ar_w_maqata	مَقَتَ	verb	feelings	to loathe	كره بشدّة	maqata		root=م ق ت; masdar=مَقْت; present=يَمْقُتُ
+2761	ar_w_taskkaa	تَسَكَّعَ	verb	movement	to loiter	مشى بلا هدف	taskkaʿa		root=س ك ع; masdar=تَسَكُّع; present=يَتَسَكَّعُ
+2762	ar_w_inqadda	اِنْقَضَّ	verb	movement	to pounce	هجم	inqaḍḍa		root=ق ض ض; masdar=اِنْقِضَاض; present=يَنْقَضُّ
+2763	ar_w_kamana	كَمَنَ	verb	movement	to lurk	اختبأ	kamana		root=ك م ن; masdar=كُمُون; present=يَكْمُنُ
+2764	ar_w_taarraja	تَعَرَّجَ	verb	movement	to meander	التوى	taʿarraja		root=ع ر ج; masdar=تَعَرُّج; present=يَتَعَرَّجُ
+2765	ar_w_ikhtalata	اِخْتَلَطَ	verb	people	to mingle	امتزج	ikhtalaṭa		root=خ ل ط; masdar=اِخْتِلَاط; present=يَخْتَلِطُ
+2766	ar_w_alahha	أَلَحَّ	verb	communication	to insist, to nag	أصرّ	alaḥḥa		root=ل ح ح; masdar=إِلْحَاح; present=يُلِحُّ
+2767	ar_w_ashshasha	عَشَّشَ	verb	animals	to nest	بنى عشًّا	ʿashshasha		root=ع ش ش; masdar=تَعْشِيش; present=يُعَشِّشُ
+2768	ar_w_naghaza	نَغَزَ	verb	actions	to nudge	دفع بالمرفق	naghaza		root=ن غ ز; masdar=نَغْز; present=يَنْغُزُ
+2769	ar_w_maha	مَحَا	verb	actions	to erase	أزال	maḥā		root=م ح و; masdar=مَحْو; present=يَمْحُو
+2770	ar_w_rashaha	رَشَحَ	verb	nature	to ooze	خرج قطرة قطرة	rashaḥa		root=ر ش ح; masdar=رَشْح; present=يَرْشَحُ
+2771	ar_w_tajassasa	تَجَسَّسَ	verb	senses	to spy	راقب سرًّا	tajassasa		root=ج س س; masdar=تَجَسُّس; present=يَتَجَسَّسُ
+2772	ar_w_halaka	هَلَكَ	verb	health	to perish	مات	halaka		root=ه ل ك; masdar=هَلَاك; present=يَهْلِكُ
+2773	ar_w_nataf	نَتَفَ	verb	animals	to pluck	نزع	natafa		root=ن ت ف; masdar=نَتْف; present=يَنْتِفُ
+2774	ar_w_wakhaza	وَخَزَ	verb	actions	to prick	طعن خفيفًا	wakhaza		root=و خ ز; masdar=وَخْز; present=يَخِزُ
+2775	ar_w_tatafala	تَطَفَّلَ	verb	people	to pry, to intrude	تدخّل	taṭaffala		root=ط ف ل; masdar=تَطَفُّل; present=يَتَطَفَّلُ
+2776	ar_w_arwa	أَرْوَى	verb	food	to quench	سقى	arwā		root=ر و ي; masdar=إِرْوَاء; present=يُرْوِي
+2777	ar_w_nahaba	نَهَبَ	verb	society	to loot	سرق	nahaba		root=ن ه ب; masdar=نَهْب; present=يَنْهَبُ
+2778	ar_w_inhasara	اِنْحَسَرَ	verb	nature	to recede	تراجع	inḥasara		root=ح س ر; masdar=اِنْحِسَار; present=يَنْحَسِرُ
+2779	ar_w_lana	لَانَ	verb	feelings	to soften, to relent	رقّ	lāna		root=ل ي ن; masdar=لِين; present=يَلِينُ
+2780	ar_w_nabasha	نَبَشَ	verb	actions	to dig up, to rummage	بحث	nabasha		root=ن ب ش; masdar=نَبْش; present=يَنْبُشُ
+2781	ar_w_lasaa	لَسَعَ	verb	health	to sting, to burn	لدغ	lasaʿa		root=ل س ع; masdar=لَسْع; present=يَلْسَعُ
+2782	ar_w_istahzaa	اِسْتَهْزَأَ	verb	people	to mock	سخر	istahzaʾa		root=ه ز ء; masdar=اِسْتِهْزَاء; present=يَسْتَهْزِئُ
+2783	ar_w_lafaha	لَفَحَ	verb	nature	to scorch	أحرق	lafaḥa		root=ل ف ح; masdar=لَفْح; present=يَلْفَحُ
+2784	ar_w_daqqaqa	دَقَّقَ	verb	mind	to scrutinise	فحص بدقّة	daqqaqa		root=د ق ق; masdar=تَدْقِيق; present=يُدَقِّقُ
+2785	ar_w_irtaada	اِرْتَعَدَ	verb	body	to shudder	ارتجف	irtaʿada		root=ر ع د; masdar=اِرْتِعَاد; present=يَرْتَعِدُ
+2786	ar_w_nakhala	نَخَلَ	verb	food	to sift	صفّى الطحين	nakhala		root=ن خ ل; masdar=نَخْل; present=يَنْخُلُ
+2787	ar_w_iftara	اِفْتَرَى	verb	communication	to slander	كذب على	iftarā		root=ف ر ي; masdar=اِفْتِرَاء; present=يَفْتَرِي
+2788	ar_w_ikhmada	أَخْمَدَ	verb	actions	to extinguish	أطفأ	akhmada		root=خ م د; masdar=إِخْمَاد; present=يُخْمِدُ
+2789	ar_w_zamjara	زَمْجَرَ	verb	animals	to growl	صاح بغضب	zamjara		root=ز م ج ر; masdar=زَمْجَرَة; present=يُزَمْجِرُ
+2790	ar_w_khatafa	خَطَفَ	verb	actions	to snatch	أخذ بسرعة	khaṭafa		root=خ ط ف; masdar=خَطْف; present=يَخْطَفُ
+2791	ar_w_talawwa	تَلَوَّى	verb	body	to writhe	انثنى	talawwā		root=ل و ي; masdar=تَلَوٍّ; present=يَتَلَوَّى
+2792	ar_w_taaqqaba	تَعَقَّبَ	verb	animals	to track	تبع	taʿaqqaba		root=ع ق ب; masdar=تَعَقُّب; present=يَتَعَقَّبُ
+2793	ar_w_nathara	نَثَرَ	verb	actions	to scatter	فرّق	nathara		root=ن ث ر; masdar=نَثْر; present=يَنْثُرُ
+2794	ar_w_tabakhtara	تَبَخْتَرَ	verb	movement	to strut	مشى بتكبّر	tabakhtara		root=ب خ ت ر; masdar=تَبَخْتُر; present=يَتَبَخْتَرُ
+2795	ar_w_adhhala	أَذْهَلَ	verb	feelings	to astonish	أدهش	adhhala		root=ذ ه ل; masdar=إِذْهَال; present=يُذْهِلُ
+2796	ar_w_akhdaa	أَخْضَعَ	verb	society	to subdue	سيطر	akhḍaʿa		root=خ ض ع; masdar=إِخْضَاع; present=يُخْضِعُ
+2797	ar_w_istaslama	اِسْتَسْلَمَ	verb	health	to surrender	خضع	istaslama		root=س ل م; masdar=اِسْتِسْلَام; present=يَسْتَسْلِمُ
+2798	ar_w_inharafa	اِنْحَرَفَ	verb	travel	to swerve, to deviate	مال	inḥarafa		root=ح ر ف; masdar=اِنْحِرَاف; present=يَنْحَرِفُ
+2799	ar_w_ayyara	عَيَّرَ	verb	people	to taunt	عاب	ʿayyara		root=ع ي ر; masdar=تَعْيِير; present=يُعَيِّرُ
+2800	ar_w_kadaha	كَدَحَ	verb	work	to toil	عمل بجدّ	kadaḥa		root=ك د ح; masdar=كَدْح; present=يَكْدَحُ
+2801	ar_w_asqata	أَسْقَطَ	verb	actions	to topple, to drop	أوقع	asqaṭa		root=س ق ط; masdar=إِسْقَاط; present=يُسْقِطُ
+2802	ar_w_irtaasha	اِرْتَعَشَ	verb	body	to twitch, to quiver	ارتجف	irtaʿasha		root=ر ع ش; masdar=اِرْتِعَاش; present=يَرْتَعِشُ
+2803	ar_w_arshada	أَرْشَدَ	verb	people	to guide	دلّ	arshada		root=ر ش د; masdar=إِرْشَاد; present=يُرْشِدُ
+2804	ar_w_aghaza	أَغَاظَ	verb	feelings	to vex	أغضب	aghāẓa		root=غ ي ظ; masdar=إِغَاظَة; present=يُغِيظُ
+2805	ar_w_khada	خَاضَ	verb	movement	to wade	دخل الماء	khāḍa		root=خ و ض; masdar=خَوْض; present=يَخُوضُ
+2806	ar_w_wala	وَلْوَلَ	verb	feelings	to wail	صاح باكيًا	walwala		root=و ل و ل; masdar=وَلْوَلَة; present=يُوَلْوِلُ
+2807	ar_w_dhawa	ذَوَى	verb	nature	to wilt, to fade	ذبل	dhawā		root=ذ و ي; masdar=ذُوِيّ; present=يَذْوِي
+2808	ar_w_dawwama	دَوَّمَ	verb	movement	to whirl	دار	dawwama		root=د و م; masdar=تَدْوِيم; present=يُدَوِّمُ
+2809	ar_w_harraka	حَرَّكَ	verb	movement	to move, to stir	دفع	ḥarraka		root=ح ر ك; masdar=تَحْرِيك; present=يُحَرِّكُ
+2810	ar_w_iltizam	اِلْتِزَام	noun	society	commitment	تعهّد	iltizām		gender=m; plural=اِلْتِزَامَات; root=ل ز م
+2811	ar_w_muamara	مُؤَامَرَة	noun	society	conspiracy	مكيدة	muʾāmara		gender=f; plural=مُؤَامَرَات; root=أ م ر
+2812	ar_w_ihtiyal	اِحْتِيَال	noun	society	fraud	غشّ	iḥtiyāl		gender=m; plural=—; root=ح و ل
+2813	ar_w_ikhtilas	اِخْتِلَاس	noun	work	embezzlement	سرقة المال	ikhtilās		gender=m; plural=—; root=خ ل س
+2814	ar_w_tahrid	تَحْرِيض	noun	society	incitement	دفع إلى الشرّ	taḥrīḍ		gender=m; plural=—; root=ح ر ض
+2815	ar_w_ritha	رِثَاء	noun	leisure	elegy	بكاء الميت شعرًا	rithāʾ		gender=m; plural=—; root=ر ث ي
+2816	ar_w_jasus	جَاسُوس	noun	people	spy	عميل سرّي	jāsūs		gender=m; plural=جَوَاسِيس; root=ج س س
+2817	ar_w_khain	خَائِن	noun	people	traitor	غادر	khāʾin		gender=m; plural=خَوَنَة; root=خ و ن
+2818	ar_w_qatil	قَاتِل	noun	people	murderer	من قتل	qātil		gender=m; plural=قَتَلَة; root=ق ت ل
+2819	ar_w_khatif	خَاطِف	noun	people	kidnapper	من يخطف	khāṭif		gender=m; plural=خَاطِفُون; root=خ ط ف
+2820	ar_w_mutaham	مُتَّهَم	noun	people	defendant	من عليه تهمة	muttaham		gender=m; plural=مُتَّهَمُون; root=و ه م
+2821	ar_w_mushtabah	مُشْتَبَه	noun	people	suspect	من عليه شكّ	mushtabah bihi		gender=m; plural=—; root=ش ب ه
+2822	ar_w_raqm_qiyasi	رَقْمٌ قِيَاسِيّ	noun	leisure	record	أفضل نتيجة	raqm qiyāsī		gender=m; plural=—; root=—
+2823	ar_w_tadul	تَعَادُل	noun	leisure	draw	نتيجة متساوية	taʿādul		gender=m; plural=—; root=ع د ل
+2824	ar_w_marma	مَرْمًى	noun	leisure	goal	هدف الكرة	marman		gender=m; plural=مَرَامٍ; root=ر م ي
+2825	ar_w_madrab	مِضْرَب	noun	leisure	racket	أداة الضرب	miḍrab		gender=m; plural=مَضَارِب; root=ض ر ب
+2826	ar_w_munqidh	مُنْقِذ	noun	people	rescuer, lifeguard	من ينقذ	munqidh		gender=m; plural=مُنْقِذُون; root=ن ق ذ
+2827	ar_w_bannaa	بَنَّاء	noun	people	builder	من يبني	bannāʾ		gender=m; plural=بَنَّاؤُون; root=ب ن ي
+2828	ar_w_iskafi	إِسْكَافِيّ	noun	people	shoemaker	مصلّح الأحذية	iskāfiyy		gender=m; plural=إِسْكَافِيُّون; root=—
+2829	ar_w_saigh	صَائِغ	noun	people	jeweller	صانع الحليّ	ṣāʾigh		gender=m; plural=صَاغَة; root=ص و غ
+2830	ar_w_sai_barid	سَاعِي البَرِيد	noun	people	postman	موزّع الرسائل	sāʿī l-barīd		gender=m; plural=—; root=—
+2831	ar_w_massah	مَسَّاح	noun	people	surveyor	من يقيس الأرض	massāḥ		gender=m; plural=مَسَّاحُون; root=م س ح
+2832	ar_w_baia_mutajawwil	بَائِعٌ مُتَجَوِّل	noun	people	street vendor	بائع في الشارع	bāʾiʿ mutajawwil		gender=m; plural=—; root=—
+2833	ar_w_dahhan	دَهَّان	noun	people	painter	من يدهن	dahhān		gender=m; plural=دَهَّانُون; root=د ه ن
+2834	ar_w_murabbiya	مُرَبِّيَة	noun	people	nanny	من ترعى الأطفال	murabbiya		gender=f; plural=مُرَبِّيَات; root=ر ب و
+2835	ar_w_muhandis_mimari	مُهَنْدِسٌ مِعْمَارِيّ	noun	people	architect	من يصمّم البيوت	muhandis miʿmārī		gender=m; plural=—; root=—
+2836	ar_w_katib_adl	كَاتِبُ عَدْل	noun	people	notary	موثّق	kātib ʿadl		gender=m; plural=—; root=—
+2837	ar_w_bahhar	بَحَّار	noun	people	sailor	من يعمل في البحر	baḥḥār		gender=m; plural=بَحَّارَة; root=ب ح ر
+2838	ar_w_musafir	مُسَافِر	noun	people	traveller	من يسافر	musāfir		gender=m; plural=مُسَافِرُون; root=س ف ر
+2839	ar_w_muhajir	مُهَاجِر	noun	people	immigrant	من ترك بلده	muhājir		gender=m; plural=مُهَاجِرُون; root=ه ج ر
+2840	ar_w_mutafarrij	مُتَفَرِّج	noun	people	spectator	من يشاهد	mutafarrij		gender=m; plural=مُتَفَرِّجُون; root=ف ر ج
+2841	ar_w_irtiash	اِرْتِعَاش	noun	body	trembling	اهتزاز	irtiʿāsh		gender=m; plural=—; root=ر ع ش
+2842	ar_w_qushaarira	قُشَعْرِيرَة	noun	body	shiver, goosebumps	برد في الجسم	qushaʿrīra		gender=f; plural=—; root=ق ش ع ر
+2843	ar_w_nahib	نَحِيب	noun	feelings	sobbing	بكاء شديد	naḥīb		gender=m; plural=—; root=ن ح ب
+2844	ar_w_tanhida	تَنْهِيدَة	noun	feelings	sigh	نفس طويل	tanhīda		gender=f; plural=تَنْهِيدَات; root=ن ه د
+2845	ar_w_tathauub	تَثَاؤُب	noun	body	yawn	فتح الفم من النعاس	tathāʾub		gender=m; plural=—; root=ث ء ب
+2846	ar_w_atsa	عَطْسَة	noun	health	sneeze	خروج الهواء من الأنف	ʿaṭsa		gender=f; plural=عَطَسَات; root=ع ط س
+2847	ar_w_sukkari	سُكَّرِيّ	noun	health	diabetes	مرض السكّر	sukkariyy		gender=m; plural=—; root=س ك ر
+2848	ar_w_amaliyya	عَمَلِيَّة	noun	health	operation	جراحة	ʿamaliyya		gender=f; plural=عَمَلِيَّات; root=ع م ل
+2849	ar_w_wasfa	وَصْفَة	noun	health	prescription, recipe	ورقة الدواء	waṣfa		gender=f; plural=وَصَفَات; root=و ص ف
+2850	ar_w_qurs	قُرْص	noun	health	tablet, disc	حبّة دواء	qurṣ		gender=m; plural=أَقْرَاص; root=ق ر ص
+2851	ar_w_shifa	شِفَاء	noun	health	recovery	زوال المرض	shifāʾ		gender=m; plural=—; root=ش ف ي
+2852	ar_w_kabus	كَابُوس	noun	body	nightmare	حلم مخيف	kābūs		gender=m; plural=كَوَابِيس; root=—
+2853	ar_w_qaylula	قَيْلُولَة	noun	body	nap	نوم الظهر	qaylūla		gender=f; plural=—; root=ق ي ل
+2854	ar_w_nazwa	نَزْوَة	noun	feelings	whim	رغبة مفاجئة	nazwa		gender=f; plural=نَزَوَات; root=ن ز و
+2855	ar_w_ulliyya	عُلِّيَّة	noun	home	attic	غرفة تحت السقف	ʿulliyya		gender=f; plural=—; root=ع ل و
+2856	ar_w_jaras_bab	جَرَسُ البَاب	noun	home	doorbell	جرس المدخل	jaras al-bāb		gender=m; plural=—; root=—
+2857	ar_w_warii	وَرِع	adj	society	pious	تقيّ	wariʿ		root=و ر ع
+2858	ar_w_hazil	هَزِيل	adj	health	thin, weak	نحيل	hazīl		root=ه ز ل
+2859	ar_w_mutaqashshif	مُتَقَشِّف	adj	shopping	austere	مقتصد	mutaqashshif		root=ق ش ف
+2860	ar_w_ghayr_muntazam	غَيْرُ مُنْتَظِم	adj	descriptions	irregular	غير مرتّب	ghayr muntaẓim		root=—
+2861	ar_w_mubadhdhir	مُبَذِّر	adj	shopping	wasteful	مسرف	mubadhdhir		root=ب ذ ر
+2862	ar_w_khadi	خَاضِع	adj	people	submissive	مطيع	khāḍiʿ		root=خ ض ع
+2863	ar_w_muhil	مُوحِل	adj	nature	muddy	فيه وحل	mūḥil		root=و ح ل
+2864	ar_w_bali	بَالٍ	adj	descriptions	worn out	قديم	bālin		root=ب ل ي
+2865	ar_w_dani	دَنِيء	adj	people	petty, mean	خسيس	danīʾ		root=د ن ء
+2866	ar_w_saim	سَئِم	adj	feelings	fed up	ملّ	saʾim		root=س ء م
+2867	ar_w_qasdan	قَصْدًا	adv	function	intentionally	عمدًا	qaṣdan	قصدا
+2868	ar_w_nadiran_jiddan	نَادِرًا جِدًّا	adv	time	very rarely	قليلًا جدًا	nādiran jiddan	نادرا جدا
+2869	ar_w_hakadha	هَكَذَا	adv	function	thus, like this	بهذه الطريقة	hākadhā	هكذا
+2870	ar_w_fi_al_muqabil	فِي المُقَابِلِ	adv	function	on the other hand	بالمقابل	fi l-muqābil	في المقابل
+2871	ar_w_kathiran	كَثِيرًا	adv	time	often, a lot	مرارًا	kathīran	كثيرا
+2872	ar_w_khilsatan	خِلْسَةً	adv	function	secretly	سرًّا	khilsatan	خلسة
+2873	ar_w_dawla	دَوْلَة	noun	society	state, country	بلد	dawla		gender=f; plural=دُوَل; root=د و ل
+2874	ar_w_wizara	وِزَارَة	noun	society	ministry	مكتب الوزير	wizāra		gender=f; plural=وِزَارَات; root=و ز ر
+2875	ar_w_muhafaza	مُحَافَظَة	noun	places	governorate	منطقة إدارية	muḥāfaẓa		gender=f; plural=مُحَافَظَات; root=ح ف ظ
+2876	ar_w_hizb	حِزْب	noun	society	party	جماعة سياسية	ḥizb		gender=m; plural=أَحْزَاب; root=ح ز ب
+2877	ar_w_muarada	مُعَارَضَة	noun	society	opposition	رفض	muʿāraḍa		gender=f; plural=—; root=ع ر ض
+2878	ar_w_thawra	ثَوْرَة	noun	society	revolution	تغيير كبير	thawra		gender=f; plural=ثَوْرَات; root=ث و ر
+2879	ar_w_muzahara	مُظَاهَرَة	noun	society	demonstration	احتجاج في الشارع	muẓāhara		gender=f; plural=مُظَاهَرَات; root=ظ ه ر
+2880	ar_w_idrab	إِضْرَاب	noun	society	strike	توقّف عن العمل	iḍrāb		gender=m; plural=إِضْرَابَات; root=ض ر ب
+2881	ar_w_wasit	وَسِيط	noun	people	mediator	من يصلح بين الناس	wasīṭ		gender=m; plural=وُسَطَاء; root=و س ط
+2882	ar_w_muwarrid	مُوَرِّد	noun	work	supplier	من يقدّم البضاعة	muwarrid		gender=m; plural=مُوَرِّدُون; root=و ر د
+2883	ar_w_mustathmir	مُسْتَثْمِر	noun	work	investor	من يستثمر	mustathmir		gender=m; plural=مُسْتَثْمِرُون; root=ث م ر
+2884	ar_w_bursa	بُورْصَة	noun	work	stock exchange	سوق المال	būrṣa		gender=f; plural=—; root=—
+2885	ar_w_maqarr	مَقَرّ	noun	work	headquarters	المكان الرئيسي	maqarr		gender=m; plural=مَقَرَّات; root=ق ر ر
+2886	ar_w_ajr	أَجْر	noun	work	wage	مال العمل	ajr		gender=m; plural=أُجُور; root=أ ج ر
+2887	ar_w_badal	بَدَل	noun	work	allowance	مال إضافي	badal		gender=m; plural=—; root=ب د ل
+2888	ar_w_mukafaa	مُكَافَأَة	noun	work	reward, bonus	جائزة	mukāfaʾa		gender=f; plural=مُكَافَآت; root=ك ف ء
+2889	ar_w_ijaza	إِجَازَة	noun	work	leave, holiday	عطلة	ijāza		gender=f; plural=إِجَازَات; root=ج و ز
+2890	ar_w_tadrib	تَدْرِيب	noun	work	training	تعليم مهارة	tadrīb		gender=m; plural=—; root=د ر ب
+2891	ar_w_dawra	دَوْرَة	noun	school	course, cycle	برنامج تعليم	dawra		gender=f; plural=دَوْرَات; root=د و ر
+2892	ar_w_nadwa	نَدْوَة	noun	school	seminar	لقاء علمي	nadwa		gender=f; plural=نَدَوَات; root=ن د و
+2893	ar_w_muhadir	مُحَاضِر	noun	people	lecturer	أستاذ الجامعة	muḥāḍir		gender=m; plural=مُحَاضِرُون; root=ح ض ر
+2894	ar_w_khirrij	خِرِّيج	noun	school	graduate	من أنهى الدراسة	khirrīj		gender=m; plural=خِرِّيجُون; root=خ ر ج
+2895	ar_w_utruha	أُطْرُوحَة	noun	school	thesis	بحث جامعي	uṭrūḥa		gender=f; plural=أُطْرُوحَات; root=ط ر ح
+2896	ar_w_mukhtabar	مُخْتَبَر	noun	school	laboratory	مكان التجارب	mukhtabar		gender=m; plural=مُخْتَبَرَات; root=خ ب ر
+2897	ar_w_tajriba	تَجْرِبَة	noun	school	experiment	اختبار	tajriba		gender=f; plural=تَجَارِب; root=ج ر ب
+2898	ar_w_nazariyya	نَظَرِيَّة	noun	school	theory	فكرة علمية	naẓariyya		gender=f; plural=نَظَرِيَّات; root=ن ظ ر
+2899	ar_w_sigha	صِيغَة	noun	school	formula, form	شكل	ṣīgha		gender=f; plural=صِيَغ; root=ص و غ
+2900	ar_w_ihsa	إِحْصَاء	noun	school	statistics	أرقام	iḥṣāʾ		gender=m; plural=إِحْصَاءَات; root=ح ص ي
+2901	ar_w_rasm_bayani	رَسْمٌ بَيَانِيّ	noun	school	graph	صورة الأرقام	rasm bayānī		gender=m; plural=—; root=—
+2902	ar_w_kharita_dhihniyya	خَرِيطَةٌ ذِهْنِيَّة	noun	school	mind map	رسم الأفكار	kharīṭa dhihniyya		gender=f; plural=—; root=—
+2903	ar_w_ghaba_mahmiyya	مَحْمِيَّة	noun	nature	nature reserve	منطقة محمية	maḥmiyya		gender=f; plural=مَحْمِيَّات; root=ح م ي
+2904	ar_w_masabb	مَصَبّ	noun	nature	river mouth	نهاية النهر	maṣabb		gender=m; plural=مَصَابّ; root=ص ب ب
+2905	ar_w_jadwal_maa	غَدِير	noun	nature	brook	نهر صغير	ghadīr		gender=m; plural=غُدْرَان; root=غ د ر
+2906	ar_w_shibh_jazira	شِبْهُ جَزِيرَة	noun	nature	peninsula	أرض يحيط بها الماء	shibh jazīra		gender=f; plural=—; root=—
+2907	ar_w_arkhabil	أَرْخَبِيل	noun	nature	archipelago	مجموعة جزر	arkhabīl		gender=m; plural=—; root=—
+2908	ar_w_qa_bahr	قَاعُ البَحْر	noun	nature	seabed	أسفل البحر	qāʿ al-baḥr		gender=m; plural=—; root=—
+2909	ar_w_madd	مَدّ	noun	nature	high tide	ارتفاع البحر	madd		gender=m; plural=—; root=م د د
+2910	ar_w_riyah_mawsimiyya	رِيَاحٌ مَوْسِمِيَّة	noun	weather	monsoon winds	رياح الفصل	riyāḥ mawsimiyya		gender=f; plural=—; root=—
+2911	ar_w_radhadh	رَذَاذ	noun	weather	drizzle	مطر خفيف	radhādh		gender=m; plural=—; root=ر ذ ذ
+2912	ar_w_wabil	وَابِل	noun	weather	downpour	مطر غزير	wābil		gender=m; plural=—; root=و ب ل
+2913	ar_w_daraja_harara	دَرَجَةُ الحَرَارَة	noun	weather	temperature	مقدار الحرّ	darajat al-ḥarāra		gender=f; plural=—; root=—
+2914	ar_w_rutuba	رُطُوبَة	noun	weather	humidity	ماء في الهواء	ruṭūba		gender=f; plural=—; root=ر ط ب
+2915	ar_w_nashra_jawwiyya	نَشْرَةٌ جَوِّيَّة	noun	weather	weather forecast	أخبار الطقس	nashra jawwiyya		gender=f; plural=—; root=—
+2916	ar_w_ihtibas_harari	اِحْتِبَاسٌ حَرَارِيّ	noun	nature	global warming	ارتفاع حرارة الأرض	iḥtibās ḥarārī		gender=m; plural=—; root=—
+2917	ar_w_nifayat	نِفَايَات	noun	nature	waste	قمامة	nifāyāt		gender=f; plural=—; root=ن ف ي
+2918	ar_w_iadat_tadwir	إِعَادَةُ التَّدْوِير	noun	nature	recycling	استعمال مرّة أخرى	iʿādat at-tadwīr		gender=f; plural=—; root=—
+2919	ar_w_mustajir	مُسْتَأْجِر	noun	people	tenant	من يستأجر	mustaʾjir		gender=m; plural=مُسْتَأْجِرُون; root=أ ج ر
+2920	ar_w_villa	فِيلَّا	noun	home	villa	بيت كبير	fīllā		gender=f; plural=فِيلَّات; root=—
+2921	ar_w_makhzan	مَخْزَن	noun	home	storeroom	مكان الحفظ	makhzan		gender=m; plural=مَخَازِن; root=خ ز ن
+2922	ar_w_mirhad	مِرْحَاض	noun	home	toilet	بيت الخلاء	mirḥāḍ		gender=m; plural=مَرَاحِيض; root=ر ح ض
+2923	ar_w_dushsh	دُشّ	noun	home	shower	ماء الاستحمام	dushsh		gender=m; plural=—; root=—
+2924	ar_w_balat	بَلَاط	noun	home	tiles	حجارة الأرض	balāṭ		gender=m; plural=—; root=ب ل ط
+2925	ar_w_ard_bayt	أَرْضِيَّة	noun	home	floor	أسفل الغرفة	arḍiyya		gender=f; plural=أَرْضِيَّات; root=أ ر ض
+2926	ar_w_imara	عِمَارَة	noun	home	building	بناء كبير	ʿimāra		gender=f; plural=عِمَارَات; root=ع م ر
+2927	ar_w_haris	حَارِس	noun	people	guard	من يحرس	ḥāris		gender=m; plural=حُرَّاس; root=ح ر س
+2928	ar_w_bawwab	بَوَّاب	noun	people	doorman	حارس الباب	bawwāb		gender=m; plural=بَوَّابُون; root=ب و ب
+2929	ar_w_jiran	جِيرَة	noun	people	neighbourhood	الجيران	jīra		gender=f; plural=—; root=ج و ر
+2930	ar_w_ishara_murur	إِشَارَةُ المُرُور	noun	travel	traffic light	ضوء الطريق	ishārat al-murūr		gender=f; plural=—; root=—
+2931	ar_w_hadd_sura	حَدُّ السُّرْعَة	noun	travel	speed limit	أقصى سرعة	ḥadd as-surʿa		gender=m; plural=—; root=—
+2932	ar_w_mukhalafa	مُخَالَفَة	noun	travel	violation, fine	خطأ	mukhālafa		gender=f; plural=مُخَالَفَات; root=خ ل ف
+2933	ar_w_rasif_mahatta	رَصِيفُ المَحَطَّة	noun	travel	platform	مكان انتظار القطار	raṣīf al-maḥaṭṭa		gender=m; plural=—; root=—
+2934	ar_w_nisyan	نِسْيَان	noun	mind	forgetting	عدم التذكّر	nisyān		gender=m; plural=—; root=ن س ي
+2935	ar_w_shubha	شُبْهَة	noun	mind	suspicion	شكّ	shubha		gender=f; plural=شُبُهَات; root=ش ب ه
+2936	ar_w_niyya	نِيَّة	noun	mind	intention	قصد	niyya		gender=f; plural=نَوَايَا; root=ن و ي
+2937	ar_w_aqida	عَقِيدَة	noun	mind	belief, creed	إيمان	ʿaqīda		gender=f; plural=عَقَائِد; root=ع ق د
+2938	ar_w_wa_y	وَعْي	noun	mind	awareness	إدراك	waʿy		gender=m; plural=—; root=و ع ي
+2939	ar_w_mantiq	مَنْطِق	noun	mind	logic	تفكير صحيح	manṭiq		gender=m; plural=—; root=ن ط ق
+2940	ar_w_fardiyya	فَرَضِيَّة	noun	school	hypothesis	فكرة مقترحة	faraḍiyya		gender=f; plural=فَرَضِيَّات; root=ف ر ض
+2941	ar_w_faitna	فِطْنَة	noun	mind	cleverness	ذكاء	fiṭna		gender=f; plural=—; root=ف ط ن
+2942	ar_w_kibriya	كِبْرِيَاء	noun	feelings	pride	عزّة	kibriyāʾ		gender=f; plural=—; root=ك ب ر
+2943	ar_w_hiqd	حِقْد	noun	feelings	grudge, hatred	كره	ḥiqd		gender=m; plural=أَحْقَاد; root=ح ق د
+2944	ar_w_irtiyah	اِرْتِيَاح	noun	feelings	relief, comfort	راحة	irtiyāḥ		gender=m; plural=—; root=ر و ح
+2945	ar_w_aza	عَزَاء	noun	feelings	consolation, condolence	مواساة	ʿazāʾ		gender=m; plural=—; root=ع ز ي
+2946	ar_w_kasal	كَسَل	noun	feelings	laziness	عدم النشاط	kasal		gender=m; plural=—; root=ك س ل
+2947	ar_w_tama	طَمَع	noun	feelings	greed	حبّ المال	ṭamaʿ		gender=m; plural=—; root=ط م ع
+2948	ar_w_fakhr	فَخْر	noun	feelings	pride	اعتزاز	fakhr		gender=m; plural=—; root=ف خ ر
+2949	ar_w_wahsha	وَحْشَة	noun	feelings	loneliness, desolation	وحدة	waḥsha		gender=f; plural=—; root=و ح ش
+2950	ar_w_haya	حَيَاء	noun	feelings	modesty	خجل	ḥayāʾ		gender=m; plural=—; root=ح ي ي
+2951	ar_w_wadd	وُدّ	noun	feelings	affection	محبّة	wudd		gender=m; plural=—; root=و د د
+2952	ar_w_ihtiqar	اِحْتِقَار	noun	feelings	contempt	ازدراء	iḥtiqār		gender=m; plural=—; root=ح ق ر
+2953	ar_w_taajjub	تَعَجُّب	noun	feelings	wonder, surprise	دهشة	taʿajjub		gender=m; plural=—; root=ع ج ب
+2954	ar_w_hayra	حَيْرَة	noun	feelings	confusion	تردّد	ḥayra		gender=f; plural=—; root=ح ي ر
+2955	ar_w_ihbat	إِحْبَاط	noun	feelings	frustration	خيبة	iḥbāṭ		gender=m; plural=—; root=ح ب ط
+2956	ar_w_qana	قَنَاعَة	noun	feelings	contentment	رضا	qanāʿa		gender=f; plural=—; root=ق ن ع
+2957	ar_w_tafaul	تَفَاؤُل	noun	feelings	optimism	أمل	tafāʾul		gender=m; plural=—; root=ف ء ل
+2958	ar_w_tashaum	تَشَاؤُم	noun	feelings	pessimism	يأس	tashāʾum		gender=m; plural=—; root=ش ء م
+2959	ar_w_malal	مَلَل	noun	feelings	boredom	سأم	malal		gender=m; plural=—; root=م ل ل
+2960	ar_w_daf	ضَعْف	noun	health	weakness	قلّة القوّة	ḍaʿf		gender=m; plural=—; root=ض ع ف
+2961	ar_w_ilaj	عِلَاج	noun	health	treatment	دواء	ʿilāj		gender=m; plural=—; root=ع ل ج
+2962	ar_w_mumarrid	مُمَرِّض	noun	people	nurse	من يعتني بالمرضى	mumarriḍ		gender=m; plural=مُمَرِّضُون; root=م ر ض
+2963	ar_w_tahlil	تَحْلِيل	noun	health	analysis, test	فحص الدم	taḥlīl		gender=m; plural=تَحَالِيل; root=ح ل ل
+2964	ar_w_haqna	حُقْنَة	noun	health	injection	إبرة	ḥuqna		gender=f; plural=حُقَن; root=ح ق ن
+2965	ar_w_kursi_mutaharrik	كُرْسِيٌّ مُتَحَرِّك	noun	health	wheelchair	كرسي بعجلات	kursī mutaḥarrik		gender=m; plural=—; root=—
+2966	ar_w_sammaa	سَمَّاعَة	noun	health	hearing aid, earphone	أداة السمع	sammāʿa		gender=f; plural=سَمَّاعَات; root=س م ع
+2967	ar_w_tibb	طِبّ	noun	health	medicine (science)	علم العلاج	ṭibb		gender=m; plural=—; root=ط ب ب
+2968	ar_w_jiraha	جِرَاحَة	noun	health	surgery	عملية	jirāḥa		gender=f; plural=—; root=ج ر ح
+2969	ar_w_jarrah	جَرَّاح	noun	people	surgeon	طبيب العمليات	jarrāḥ		gender=m; plural=جَرَّاحُون; root=ج ر ح
+2970	ar_w_tabib_asnan	طَبِيبُ أَسْنَان	noun	people	dentist	طبيب الفم	ṭabīb asnān		gender=m; plural=—; root=—
+2971	ar_w_tamrid	تَمْرِيض	noun	health	nursing	رعاية المرضى	tamrīḍ		gender=m; plural=—; root=م ر ض
+2972	ar_w_mujawharat	مُجَوْهَرَات	noun	clothes	jewellery	حليّ	mujawharāt		gender=f; plural=—; root=ج و ه ر
+2973	ar_w_ziyy_rasmi	زِيٌّ رَسْمِيّ	noun	clothes	uniform	لباس العمل	ziyy rasmī		gender=m; plural=—; root=—
+2974	ar_w_hidhaa_riyadi	حِذَاءٌ رِيَاضِيّ	noun	clothes	trainers	حذاء الرياضة	ḥidhāʾ riyāḍī		gender=m; plural=—; root=—
+2975	ar_w_haqiba_yad	حَقِيبَةُ يَد	noun	shopping	handbag	حقيبة صغيرة	ḥaqībat yad		gender=f; plural=—; root=—
+2976	ar_w_sa_a_yad	سَاعَةُ يَد	noun	clothes	wristwatch	ساعة المعصم	sāʿat yad		gender=f; plural=—; root=—
+2977	ar_w_nazzara_shams	نَظَّارَةٌ شَمْسِيَّة	noun	clothes	sunglasses	نظّارة الشمس	naẓẓāra shamsiyya		gender=f; plural=—; root=—
+2978	ar_w_furshat_asnan	فُرْشَاةُ أَسْنَان	noun	home	toothbrush	أداة تنظيف الأسنان	furshāt asnān		gender=f; plural=—; root=—
+2979	ar_w_mujaffif	مُجَفِّف	noun	home	dryer	آلة التجفيف	mujaffif		gender=m; plural=مُجَفِّفَات; root=ج ف ف
+2980	ar_w_mimsaha	مِمْسَحَة	noun	home	mop	أداة المسح	mimsaḥa		gender=f; plural=مَمَاسِح; root=م س ح
+2981	ar_w_sunduq_qumama	سَلَّةُ المُهْمَلَات	noun	home	wastebasket	وعاء القمامة	sallat al-muhmalāt		gender=f; plural=—; root=—
+2982	ar_w_mafrash	مَفْرَش	noun	home	tablecloth	غطاء الطاولة	mafrash		gender=m; plural=مَفَارِش; root=ف ر ش
+2983	ar_w_ghallaya	غَلَّايَة	noun	home	kettle	إناء التسخين	ghallāya		gender=f; plural=غَلَّايَات; root=غ ل ي
+2984	ar_w_qaniu	قَنُوع	adj	feelings	content	راضٍ	qanūʿ		root=ق ن ع
+2985	ar_w_murtah	مُرْتَاح	adj	feelings	comfortable, relaxed	هادئ	murtāḥ		root=ر و ح
+2986	ar_w_mutadayiq	مُتَضَايِق	adj	feelings	annoyed	منزعج	mutaḍāyiq		root=ض ي ق
+2987	ar_w_mushtaq	مُشْتَاق	adj	feelings	longing	يحنّ	mushtāq		root=ش و ق
+2988	ar_w_muhbat	مُحْبَط	adj	feelings	frustrated	خائب	muḥbaṭ		root=ح ب ط
+2989	ar_w_mutaraddid	مُتَرَدِّد	adj	feelings	hesitant	لا يقرّر	mutaraddid		root=ر د د
+2990	ar_w_mutakabbir	مُتَكَبِّر	adj	people	arrogant	مغرور	mutakabbir		root=ك ب ر
+2991	ar_w_ghaddar	غَدَّار	adj	people	treacherous	خائن	ghaddār		root=غ د ر
+2992	ar_w_munafasa	مُنَافَسَة	noun	leisure	competition	سباق	munāfasa		gender=f; plural=مُنَافَسَات; root=ن ف س
+2993	ar_w_liyaqa	لِيَاقَة	noun	health	fitness	قوّة الجسم	liyāqa		gender=f; plural=—; root=ل ي ق
+2994	ar_w_sibaha	سِبَاحَة	noun	leisure	swimming	العوم	sibāḥa		gender=f; plural=—; root=س ب ح
+2995	ar_w_jary	جَرْي	noun	leisure	running	الركض	jary		gender=m; plural=—; root=ج ر ي
+2996	ar_w_tazalluj	تَزَلُّج	noun	leisure	skiing, skating	الانزلاق على الثلج	tazalluj		gender=m; plural=—; root=ز ل ج
+2997	ar_w_rimaya	رِمَايَة	noun	leisure	shooting (sport)	إطلاق السهام	rimāya		gender=f; plural=—; root=ر م ي
+2998	ar_w_furusiyya	فُرُوسِيَّة	noun	leisure	horsemanship	ركوب الخيل	furūsiyya		gender=f; plural=—; root=ف ر س
+2999	ar_w_nuzha	نُزْهَة	noun	leisure	outing, picnic	رحلة قصيرة	nuzha		gender=f; plural=نُزُهَات; root=ن ز ه
+3000	ar_w_mukhayyam	مُخَيَّم	noun	leisure	camp	مكان الخيام	mukhayyam		gender=m; plural=مُخَيَّمَات; root=خ ي م
