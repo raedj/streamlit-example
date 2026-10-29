@@ -70,7 +70,7 @@ CEFR equivalents of the 10 levels are approximate (1–2 ≈ A1, 3–4 ≈ A2, 5
 | Spanish | 1–10 | 3000 / 3000 | 3900 | Not reviewed |
 | French | 1–10 | 3000 / 3000 | 3900 | Not reviewed |
 | Arabic | 1–10 | 3000 / 3000 | 3900 | Not reviewed |
-| Turkish | 1–9 | 2700 / 3000 | 3600 | Not reviewed |
+| Turkish | 1–10 | 3000 / 3000 | 3900 | Not reviewed |
 | Urdu | 1–9 | 2700 / 3000 | 3600 | Not reviewed |
 | Malay | 1–9 | 2700 / 3000 | 3600 | Not reviewed |
 

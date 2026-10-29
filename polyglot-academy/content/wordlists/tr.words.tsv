@@ -2699,3 +2699,303 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2698	tr_w_semt	semt	noun	places	district	حيّ
 2699	tr_w_sokak_lambasi	sokak lambası	noun	travel	streetlamp	مصباح الشارع
 2700	tr_w_kaldirim_tasi	kaldırım taşı	noun	travel	paving stone	حجر الرصيف
+2701	tr_w_uymak	uymak	verb	society	to comply, to fit	يلتزم، يناسب
+2702	tr_w_yatistirmak	yatıştırmak	verb	feelings	to calm down	يهدّئ
+2703	tr_w_dogrulamak	doğrulamak	verb	mind	to confirm, to verify	يتحقّق
+2704	tr_w_iddia_etmek	iddia etmek	verb	communication	to claim	يدّعي
+2705	tr_w_alabora_olmak	alabora olmak	verb	travel	to capsize	ينقلب
+2706	tr_w_kikirdamak	kıkırdamak	verb	feelings	to giggle	يقهقه
+2707	tr_w_kavramak	kavramak	verb	actions	to grasp	يمسك، يفهم
+2708	tr_w_arindirmak	arındırmak	verb	home	to purify	ينقّي
+2709	tr_w_anmak	anmak	verb	society	to commemorate, to mention	يحيي ذكرى
+2710	tr_w_zorlamak	zorlamak	verb	society	to force	يُرغم
+2711	tr_w_goz_yummak	göz yummak	verb	society	to turn a blind eye	يتغاضى
+2712	tr_w_toplanmak	toplanmak	verb	people	to gather	يتجمّع
+2713	tr_w_buzulmek	büzülmek	verb	feelings	to shrink, to cower	ينكمش
+2714	tr_w_cani_cekmek	canı çekmek	verb	feelings	to crave	يشتهي
+2715	tr_w_ufalanmak	ufalanmak	verb	actions	to crumble	يتفتّت
+2716	tr_w_sarkmak	sarkmak	verb	actions	to dangle	يتدلّى
+2717	tr_w_oyalanmak	oyalanmak	verb	movement	to dawdle	يتباطأ
+2718	tr_w_sifre_cozmek	şifre çözmek	verb	school	to decode	يفكّ الشيفرة
+2719	tr_w_dolandirmak	dolandırmak	verb	society	to swindle	يحتال
+2720	tr_w_devretmek	devretmek	verb	work	to transfer, to delegate	يفوّض
+2721	tr_w_tuketmek	tüketmek	verb	nature	to consume, to use up	يستهلك
+2722	tr_w_kinamak	kınamak	verb	feelings	to condemn	يدين
+2723	tr_w_gozaltina_almak	gözaltına almak	verb	society	to detain	يحتجز
+2724	tr_w_caydirmak	caydırmak	verb	society	to deter	يردع
+2725	tr_w_yalayip_yutmak	yalayıp yutmak	verb	food	to devour	يلتهم
+2726	tr_w_azalmak	azalmak	verb	function	to decrease	يقلّ
+2727	tr_w_ayirt_etmek	ayırt etmek	verb	senses	to distinguish	يميّز
+2728	tr_w_aciga_vurmak	açığa vurmak	verb	communication	to reveal	يكشف
+2729	tr_w_dagilmak	dağılmak	verb	actions	to disperse	يتفرّق
+2730	tr_w_vazgecirmek	vazgeçirmek	verb	communication	to dissuade	يثني
+2731	tr_w_sirilsiklam_olmak	sırılsıklam olmak	verb	weather	to get soaked	يتبلّل تمامًا
+2732	tr_w_kacip_kurtulmak	kaçıp kurtulmak	verb	actions	to escape	يفلت
+2733	tr_w_zimmetine_gecirmek	zimmetine geçirmek	verb	work	to embezzle	يختلس
+2734	tr_w_cezbetmek	cezbetmek	verb	people	to attract	يجذب
+2735	tr_w_emanet_etmek	emanet etmek	verb	people	to entrust	يأتمن
+2736	tr_w_kokunu_kazimak	kökünü kazımak	verb	actions	to eradicate	يستأصل
+2737	tr_w_asinmak	aşınmak	verb	nature	to erode, to wear away	يتآكل
+2738	tr_w_sakinmak	sakınmak	verb	actions	to avoid, to refrain	يتجنّب
+2739	tr_w_okuldan_atmak	okuldan atmak	verb	school	to expel	يطرد من المدرسة
+2740	tr_w_yuceltmek	yüceltmek	verb	communication	to exalt	يمجّد
+2741	tr_w_bocalamak	bocalamak	verb	movement	to falter	يتعثّر
+2742	tr_w_iltihaplanmak	iltihaplanmak	verb	health	to become inflamed	يلتهب
+2743	tr_w_kipirdanmak	kıpırdanmak	verb	body	to fidget	يتململ
+2744	tr_w_gosteris_yapmak	gösteriş yapmak	verb	people	to show off	يتباهى
+2745	tr_w_titresmek	titreşmek	verb	senses	to flicker, to vibrate	يتذبذب
+2746	tr_w_bosa_cikarmak	boşa çıkarmak	verb	actions	to foil	يحبط
+2747	tr_w_tahkim_etmek	tahkim etmek	verb	actions	to fortify	يحصّن
+2748	tr_w_dert_etmek	dert etmek	verb	feelings	to fret	يقلق
+2749	tr_w_oynasmak	oynaşmak	verb	leisure	to frolic	يمرح
+2750	tr_w_el_yordamiyla_aramak	el yordamıyla aramak	verb	actions	to grope	يتلمّس
+2751	tr_w_gargara_yapmak	gargara yapmak	verb	health	to gargle	يتغرغر
+2752	tr_w_el_kol_hareketi_yapmak	el kol hareketi yapmak	verb	communication	to gesticulate	يشير بيديه
+2753	tr_w_oh_demek	oh demek	verb	feelings	to gloat	يشمت
+2754	tr_w_isildamak	ışıldamak	verb	senses	to glisten	يلمع
+2755	tr_w_guresmek	güreşmek	verb	leisure	to wrestle	يصارع
+2756	tr_w_yuzunu_burusturmak	yüzünü buruşturmak	verb	body	to grimace	يكشّر
+2757	tr_w_homurdanmak	homurdanmak	verb	communication	to grumble	يتذمّر
+2758	tr_w_taciz_etmek	taciz etmek	verb	people	to harass	يضايق
+2759	tr_w_istiflemek	istiflemek	verb	actions	to stack, to hoard	يكدّس
+2760	tr_w_topallamak	topallamak	verb	movement	to limp	يعرج
+2761	tr_w_gondere_cekmek	göndere çekmek	verb	actions	to hoist (a flag)	يرفع العلم
+2762	tr_w_sokulmak	sokulmak	verb	people	to snuggle up	يلتصق
+2763	tr_w_yakarmak	yakarmak	verb	communication	to implore	يتوسّل
+2764	tr_w_sonuc_cikarmak	sonuç çıkarmak	verb	mind	to infer	يستنتج
+2765	tr_w_istila_etmek	istila etmek	verb	animals	to invade, to infest	يغزو
+2766	tr_w_yuhalamak	yuhalamak	verb	people	to boo	يستهجن
+2767	tr_w_itismek	itişmek	verb	movement	to jostle	يتدافع
+2768	tr_w_yas_tutmak	yas tutmak	verb	feelings	to mourn	ينوح
+2769	tr_w_nefret_etmek	nefret etmek	verb	feelings	to hate	يكره
+2770	tr_w_avare_dolasmak	avare dolaşmak	verb	movement	to loiter	يتسكّع
+2771	tr_w_ninni_soylemek	ninni söylemek	verb	feelings	to sing a lullaby	يغنّي تهويدة
+2772	tr_w_atilmak	atılmak	verb	movement	to lunge	يندفع
+2773	tr_w_pusuya_yatmak	pusuya yatmak	verb	movement	to lie in wait	يكمن
+2774	tr_w_sakat_birakmak	sakat bırakmak	verb	health	to maim	يُعجز
+2775	tr_w_kivrilmak	kıvrılmak	verb	movement	to wind, to curl	يتعرّج
+2776	tr_w_kaynasmak	kaynaşmak	verb	people	to mingle	يختلط
+2777	tr_w_seferber_etmek	seferber etmek	verb	actions	to mobilise	يحشد
+2778	tr_w_dirdir_etmek	dırdır etmek	verb	communication	to nag	يثرثر بإلحاح
+2779	tr_w_yuva_yapmak	yuva yapmak	verb	animals	to nest	يعشّش
+2780	tr_w_yok_etmek	yok etmek	verb	actions	to destroy	يدمّر
+2781	tr_w_alt_etmek	alt etmek	verb	mind	to outwit, to defeat	يتغلّب
+2782	tr_w_yatismak	yatışmak	verb	feelings	to calm down	يهدأ
+2783	tr_w_el_ustunde_tutmak	el üstünde tutmak	verb	people	to pamper	يدلّل
+2784	tr_w_gozetlemek	gözetlemek	verb	senses	to peer, to spy	يتلصّص
+2785	tr_w_can_vermek	can vermek	verb	health	to die	يموت
+2786	tr_w_basinin_etini_yemek	başının etini yemek	verb	people	to pester	يُلحّ
+2787	tr_w_asirmak	aşırmak	verb	society	to pinch, to steal	يسرق
+2788	tr_w_yolmak	yolmak	verb	animals	to pluck	ينتف
+2789	tr_w_cakilmak	çakılmak	verb	movement	to crash, to plummet	يهوي
+2790	tr_w_sekmek	sekmek	verb	movement	to hop	يقفز
+2791	tr_w_burnunu_sokmak	burnunu sokmak	verb	people	to poke one's nose in	يتدخّل
+2792	tr_w_susuzlugunu_gidermek	susuzluğunu gidermek	verb	food	to quench one's thirst	يروي عطشه
+2793	tr_w_tirmiklamak	tırmıklamak	verb	animals	to scratch, to rake	يخدش
+2794	tr_w_yagmalamak	yağmalamak	verb	society	to loot	ينهب
+2795	tr_w_yumusamak	yumuşamak	verb	feelings	to soften	يلين
+2796	tr_w_ikmal_etmek	ikmal etmek	verb	actions	to replenish	يزوّد
+2797	tr_w_hisirdamak	hışırdamak	verb	senses	to rustle	يحفّ
+2798	tr_w_haslanmak	haşlanmak	verb	health	to be scalded	ينحرق
+2799	tr_w_kosusturmak	koşuşturmak	verb	movement	to scurry	يتسارع
+2800	tr_w_dudak_bukmek	dudak bükmek	verb	people	to sneer	يتهكّم
+2801	tr_w_kavrulmak	kavrulmak	verb	nature	to be scorched	ينلفح
+2802	tr_w_ovalamak	ovalamak	verb	home	to rub, to scrub	يفرك
+2803	tr_w_kaslarini_catmak	kaşlarını çatmak	verb	feelings	to frown	يعبس
+2804	tr_w_incelemek	incelemek	verb	mind	to examine	يفحص
+2805	tr_w_kopurmek	köpürmek	verb	feelings	to foam, to rage	يستشيط
+2806	tr_w_itip_kakmak	itip kakmak	verb	actions	to push about	يدفع
+2807	tr_w_urpermek	ürpermek	verb	body	to shudder	يرتعد
+2808	tr_w_uzak_durmak	uzak durmak	verb	people	to keep away	يبتعد
+2809	tr_w_elemek	elemek	verb	food	to sift, to eliminate	ينخل
+2810	tr_w_iftira_atmak	iftira atmak	verb	communication	to slander	يفتري
+2811	tr_w_suzulmek	süzülmek	verb	movement	to glide	ينساب
+2812	tr_w_kambur_durmak	kambur durmak	verb	body	to slouch	يحدودب
+2813	tr_w_bogmak	boğmak	verb	actions	to smother, to drown	يخنق
+2814	tr_w_hirlamak	hırlamak	verb	animals	to growl	يزمجر
+2815	tr_w_kucumsemek	küçümsemek	verb	people	to look down on	يحتقر
+2816	tr_w_didismek	didişmek	verb	people	to squabble	يتشاجر
+2817	tr_w_carcur_etmek	çarçur etmek	verb	shopping	to squander	يبذّر
+2818	tr_w_gozlerini_kismak	gözlerini kısmak	verb	senses	to squint	يضيّق عينيه
+2819	tr_w_kivranmak	kıvranmak	verb	body	to writhe	يتلوّى
+2820	tr_w_iz_surmek	iz sürmek	verb	animals	to track	يتعقّب
+2821	tr_w_sacmak	saçmak	verb	actions	to scatter	ينثر
+2822	tr_w_calim_atmak	çalım atmak	verb	movement	to swagger	يتبختر
+2823	tr_w_afallamak	afallamak	verb	feelings	to be stunned	يذهل
+2824	tr_w_boyun_egdirmek	boyun eğdirmek	verb	society	to subdue	يُخضع
+2825	tr_w_pes_etmek	pes etmek	verb	health	to give up	يستسلم
+2826	tr_w_surat_asmak	surat asmak	verb	feelings	to sulk	يعبس
+2827	tr_w_kaynamak_swarm	kaynamak	verb	animals	to swarm	يعجّ
+2828	tr_w_saptirmak	saptırmak	verb	travel	to divert	يحرف
+2829	tr_w_kazik_atmak	kazık atmak	verb	society	to rip off	يحتال
+2830	tr_w_alaya_almak	alaya almak	verb	people	to taunt	يسخر
+2831	tr_w_cirpinmak	çırpınmak	verb	actions	to flounder, to thrash	يتخبّط
+2832	tr_w_zonklamak	zonklamak	verb	body	to throb	ينبض بألم
+2833	tr_w_engel_olmak	engel olmak	verb	actions	to prevent	يمنع
+2834	tr_w_kurcalamak	kurcalamak	verb	work	to tinker	يعبث
+2835	tr_w_didinmek	didinmek	verb	work	to toil	يكدح
+2836	tr_w_devrilmek	devrilmek	verb	actions	to topple over	يسقط
+2837	tr_w_zar_zor_yurumek	zar zor yürümek	verb	movement	to trudge	يمشي بتعب
+2838	tr_w_segirmek	seğirmek	verb	body	to twitch	يرتعش
+2839	tr_w_kokunden_sokmek	kökünden sökmek	verb	nature	to uproot	يقتلع
+2840	tr_w_yer_gostermek	yer göstermek	verb	people	to usher	يرشد
+2841	tr_w_canini_sikmak	canını sıkmak	verb	feelings	to annoy	يضايق
+2842	tr_w_paytak_paytak_yurumek	paytak paytak yürümek	verb	movement	to waddle	يتهادى
+2843	tr_w_suda_yurumek	suda yürümek	verb	movement	to wade	يخوض
+2844	tr_w_dovunmek	dövünmek	verb	feelings	to wail	يولول
+2845	tr_w_gerilemek	gerilemek	verb	nature	to decline	يتراجع
+2846	tr_w_hirildamak	hırıldamak	verb	health	to wheeze	يحشرج
+2847	tr_w_mizmizlanmak	mızmızlanmak	verb	communication	to whine	يتذمّر
+2848	tr_w_firil_firil_donmek	fırıl fırıl dönmek	verb	movement	to whirl	يدور بسرعة
+2849	tr_w_kipirdatmak	kıpırdatmak	verb	movement	to wiggle	يحرّك
+2850	tr_w_ihtiyatli	ihtiyatlı	adj	people	cautious	حذر
+2851	tr_w_sofu	sofu	adj	society	pious	ورع
+2852	tr_w_mahmur	mahmur	adj	body	sleepy-eyed	ناعس
+2853	tr_w_tuyler_urpertici	tüyler ürpertici	adj	feelings	spine-chilling	مرعب
+2854	tr_w_ciliz	cılız	adj	health	puny	هزيل
+2855	tr_w_kanaatkar	kanaatkâr	adj	feelings	content	قنوع
+2856	tr_w_duzensiz	düzensiz	adj	descriptions	irregular	غير منتظم
+2857	tr_w_savurgan	savurgan	adj	shopping	wasteful	مبذّر
+2858	tr_w_boyun_egen	boyun eğen	adj	people	submissive	خاضع
+2859	tr_w_balcikli	balçıklı	adj	nature	muddy	موحل
+2860	tr_w_eskimis	eskimiş	adj	descriptions	worn out	بالٍ
+2861	tr_w_sinsi	sinsi	adj	people	sly	ماكر
+2862	tr_w_bayagi	bayağı	adj	people	vulgar, common	مبتذل
+2863	tr_w_usanmis	usanmış	adj	feelings	fed up	سئم
+2864	tr_w_yuksek_sesle	yüksek sesle	adv	communication	aloud	بصوت عالٍ
+2865	tr_w_mahsus	mahsus	adv	function	on purpose	عمدًا
+2866	tr_w_bu_nedenle	bu nedenle	adv	function	for this reason	لهذا السبب
+2867	tr_w_buna_ragmen	buna rağmen	adv	function	despite this	رغم ذلك
+2868	tr_w_hemen_hemen_hic	hemen hemen hiç	adv	time	hardly ever	نادرًا جدًا
+2869	tr_w_boylece	böylece	adv	function	thus	وهكذا
+2870	tr_w_ote_yandan	öte yandan	adv	function	on the other hand	من ناحية أخرى
+2871	tr_w_sik_sik	sık sık	adv	time	often	كثيرًا
+2872	tr_w_birdenbire	birdenbire	adv	time	suddenly	فجأة
+2873	tr_w_gizli_gizli	gizli gizli	adv	function	secretly	خفيةً
+2874	tr_w_caglayan	çağlayan	noun	nature	waterfall, cascade	شلّال
+2875	tr_w_kiyi_seridi	kıyı şeridi	noun	nature	coastline	خطّ الساحل
+2876	tr_w_buzul	buzul	noun	nature	glacier	نهر جليدي
+2877	tr_w_cisenti	çisenti	noun	weather	drizzle	رذاذ
+2878	tr_w_ekinoks	ekinoks	noun	nature	equinox	اعتدال
+2879	tr_w_tutulma	tutulma	noun	nature	eclipse	كسوف
+2880	tr_w_kuyruklu_yildiz	kuyruklu yıldız	noun	nature	comet	مذنّب
+2881	tr_w_gezegen	gezegen	noun	nature	planet	كوكب
+2882	tr_w_yorunge	yörünge	noun	nature	orbit	مدار
+2883	tr_w_takimyildiz	takımyıldız	noun	nature	constellation	كوكبة
+2884	tr_w_gelincik	gelincik	noun	animals	weasel	ابن عرس
+2885	tr_w_porsuk	porsuk	noun	animals	badger	غرير
+2886	tr_w_akbaba	akbaba	noun	animals	vulture	نسر رخم
+2887	tr_w_istakoz	ıstakoz	noun	animals	lobster	كركند
+2888	tr_w_atesbocegi	ateşböceği	noun	animals	firefly	يراعة
+2889	tr_w_katir	katır	noun	animals	mule	بغل
+2890	tr_w_yele	yele	noun	animals	mane	عُرف
+2891	tr_w_pence	pençe	noun	animals	claw	مخلب
+2892	tr_w_toynak	toynak	noun	animals	hoof	حافر
+2893	tr_w_suru	sürü	noun	animals	herd, flock	قطيع
+2894	tr_w_kumes	kümes	noun	home	henhouse	قنّ دجاج
+2895	tr_w_tirpan	tırpan	noun	work	scythe	منجل
+2896	tr_w_capa	çapa	noun	work	hoe	معزقة
+2897	tr_w_tirmik	tırmık	noun	work	rake	مدمّة
+2898	tr_w_ors	örs	noun	work	anvil	سندان
+2899	tr_w_keski	keski	noun	work	chisel	إزميل
+2900	tr_w_mengene	mengene	noun	work	vice, clamp	ملزمة
+2901	tr_w_civata	cıvata	noun	work	bolt	مسمار ملولب
+2902	tr_w_somun	somun	noun	work	nut (bolt)	صامولة
+2903	tr_w_tirabzan	tırabzan	noun	home	banister	درابزين
+2904	tr_w_panjur	panjur	noun	home	shutter	مصراع
+2905	tr_w_kiler	kiler	noun	home	pantry	مخزن المؤونة
+2906	tr_w_kevgir	kevgir	noun	food	colander	مصفاة
+2907	tr_w_tirbuson	tirbuşon	noun	food	corkscrew	فتّاحة
+2908	tr_w_baharat	baharat	noun	food	spice	بهار
+2909	tr_w_karanfil	karanfil	noun	food	clove	قرنفل
+2910	tr_w_zencefil	zencefil	noun	food	ginger	زنجبيل
+2911	tr_w_safran	safran	noun	food	saffron	زعفران
+2912	tr_w_sumak	sumak	noun	food	sumac	سمّاق
+2913	tr_w_hamur	hamur	noun	food	dough	عجين
+2914	tr_w_kabuk	kabuk	noun	food	peel, shell	قشرة
+2915	tr_w_cekirdek	çekirdek	noun	food	seed, pit	بذرة
+2916	tr_w_ayva	ayva	noun	food	quince	سفرجل
+2917	tr_w_dut	dut	noun	food	mulberry	توت
+2918	tr_w_bamya	bamya	noun	food	okra	بامية
+2919	tr_w_gamze	gamze	noun	body	dimple	غمّازة
+2920	tr_w_kasinti	kaşıntı	noun	health	itch	حكّة
+2921	tr_w_alci	alçı	noun	health	plaster cast	جبس
+2922	tr_w_siringa	şırınga	noun	health	syringe	حقنة
+2923	tr_w_nekahet	nekahet	noun	health	convalescence	نقاهة
+2924	tr_w_pismanlik	pişmanlık	noun	feelings	regret	ندم
+2925	tr_w_ozlem	özlem	noun	feelings	longing	شوق
+2926	tr_w_hayranlik	hayranlık	noun	feelings	admiration	إعجاب
+2927	tr_w_utanc	utanç	noun	feelings	shame	خجل
+2928	tr_w_kin	kin	noun	feelings	grudge	حقد
+2929	tr_w_tedirginlik	tedirginlik	noun	feelings	unease	قلق
+2930	tr_w_cosku	coşku	noun	feelings	enthusiasm	حماس
+2931	tr_w_huzun	hüzün	noun	feelings	melancholy	حزن
+2932	tr_w_sabir	sabır	noun	feelings	patience	صبر
+2933	tr_w_vicdan	vicdan	noun	mind	conscience	ضمير
+2934	tr_w_sezgi	sezgi	noun	mind	intuition	حدس
+2935	tr_w_onsezi	önsezi	noun	mind	premonition	هاجس
+2936	tr_w_varsayim	varsayım	noun	mind	assumption	افتراض
+2937	tr_w_celiski	çelişki	noun	mind	contradiction	تناقض
+2938	tr_w_ikilem	ikilem	noun	mind	dilemma	معضلة
+2939	tr_w_efsane	efsane	noun	leisure	legend	أسطورة
+2940	tr_w_masal	masal	noun	leisure	fairy tale	حكاية
+2941	tr_w_destan	destan	noun	leisure	epic	ملحمة
+2942	tr_w_deyim	deyim	noun	communication	idiom	تعبير اصطلاحي
+2943	tr_w_lakap	lakap	noun	communication	nickname	لقب
+2944	tr_w_fisilti	fısıltı	noun	communication	whisper	همس
+2945	tr_w_soylenti	söylenti	noun	communication	rumour	إشاعة
+2946	tr_w_ovgu	övgü	noun	communication	praise	مديح
+2947	tr_w_yakinma	yakınma	noun	communication	complaint	شكوى
+2948	tr_w_ozur	özür	noun	communication	apology	اعتذار
+2949	tr_w_tebrik	tebrik	noun	communication	congratulation	تهنئة
+2950	tr_w_taziye	taziye	noun	society	condolence	تعزية
+2951	tr_w_nikah	nikâh	noun	society	marriage ceremony	عقد قران
+2952	tr_w_ceyiz	çeyiz	noun	society	trousseau	جهاز العروس
+2953	tr_w_vasiyet	vasiyet	noun	society	will (testament)	وصيّة
+2954	tr_w_yargic	yargıç	noun	society	judge	قاضٍ
+2955	tr_w_sanik	sanık	noun	society	defendant	متّهم
+2956	tr_w_kefalet	kefalet	noun	society	bail	كفالة
+2957	tr_w_dava	dava	noun	society	lawsuit	دعوى
+2958	tr_w_oy	oy	noun	society	vote	صوت انتخابي
+2959	tr_w_anayasa	anayasa	noun	society	constitution	دستور
+2960	tr_w_belediye	belediye	noun	society	municipality	بلدية
+2961	tr_w_muhtar	muhtar	noun	society	village headman	مختار
+2962	tr_w_yelken	yelken	noun	travel	sail	شراع
+2963	tr_w_kervan	kervan	noun	travel	caravan	قافلة
+2964	tr_w_han	han	noun	travel	inn	خان
+2965	tr_w_dokuma	dokuma	noun	work	weaving	نسيج
+2966	tr_w_comlek	çömlek	noun	work	pottery	فخّار
+2967	tr_w_nakis	nakış	noun	work	embroidery	تطريز
+2968	tr_w_cini	çini	noun	work	tile	بلاط مزخرف
+2969	tr_w_kursun	kurşun	noun	work	lead, bullet	رصاص
+2970	tr_w_kirec	kireç	noun	work	lime	جير
+2971	tr_w_yuksuk	yüksük	noun	work	thimble	كشتبان
+2972	tr_w_fermuar	fermuar	noun	home	zip	سحّاب
+2973	tr_w_deri	deri	noun	shopping	leather	جلد
+2974	tr_w_pazarlik	pazarlık	noun	shopping	bargaining	مساومة
+2975	tr_w_sermaye	sermaye	noun	work	capital	رأس مال
+2976	tr_w_hisse	hisse	noun	work	share	سهم
+2977	tr_w_ortak	ortak	noun	work	partner	شريك
+2978	tr_w_usta	usta	noun	work	master craftsman	معلّم حرفة
+2979	tr_w_grev	grev	noun	work	strike	إضراب
+2980	tr_w_sendika	sendika	noun	work	trade union	نقابة
+2981	tr_w_tez	tez	noun	school	thesis	أطروحة
+2982	tr_w_kutuphaneci	kütüphaneci	noun	school	librarian	أمين مكتبة
+2983	tr_w_dipnot	dipnot	noun	school	footnote	حاشية
+2984	tr_w_ozet	özet	noun	school	summary	ملخّص
+2985	tr_w_dizin	dizin	noun	school	index	فهرس
+2986	tr_w_hece	hece	noun	school	syllable	مقطع
+2987	tr_w_unlem	ünlem	noun	school	exclamation	تعجّب
+2988	tr_w_virgul	virgül	noun	school	comma	فاصلة
+2989	tr_w_kement	kement	noun	work	lasso	وهق
+2990	tr_w_dizgin	dizgin	noun	animals	rein	لجام
+2991	tr_w_nal	nal	noun	animals	horseshoe	حدوة
+2992	tr_w_agil	ağıl	noun	animals	sheepfold	حظيرة غنم
+2993	tr_w_coban_kopegi	çoban köpeği	noun	animals	sheepdog	كلب الراعي
+2994	tr_w_ari_kovani	arı kovanı	noun	animals	beehive	خليّة نحل
+2995	tr_w_petek	petek	noun	food	honeycomb	شهد
+2996	tr_w_agit	ağıt	noun	feelings	lament	رثاء
+2997	tr_w_ic_cekis	iç çekiş	noun	feelings	sigh	تنهيدة
+2998	tr_w_kahkaha	kahkaha	noun	feelings	loud laughter	قهقهة
+2999	tr_w_esneme	esneme	noun	body	yawn	تثاؤب
+3000	tr_w_horlama	horlama	noun	body	snoring	شخير
