@@ -2699,3 +2699,303 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2698	zh_w_suidao	隧道	noun	places	tunnel	نفق	suìdào		measure=条; hsk=6; trad=隧道
 2699	zh_w_qiuqian	秋千	noun	leisure	swing	أرجوحة	qiūqiān		measure=个; hsk=6; trad=鞦韆
 2700	zh_w_shaizi	骰子	noun	leisure	dice	نرد	shǎizi		measure=个; hsk=6; trad=骰子
+2701	zh_w_yanqi	延期	verb	time	to postpone	يؤجّل	yánqī		hsk=6; trad=延期
+2702	zh_w_xunjie	训诫	verb	people	to admonish	يوبّخ	xùnjiè		hsk=6; trad=訓誡
+2703	zh_w_xiuding	修订	verb	society	to revise, to amend	يعدّل	xiūdìng		hsk=6; trad=修訂
+2704	zh_w_anfu	安抚	verb	people	to pacify	يهدّئ	ānfǔ		hsk=6; trad=安撫
+2705	zh_w_pandeng	攀登	verb	movement	to climb	يتسلّق	pāndēng		hsk=6; trad=攀登
+2706	zh_w_chaming	查明	verb	mind	to find out	يتحقّق	chámíng		hsk=6; trad=查明
+2707	zh_w_shengcheng	声称	verb	communication	to claim	يدّعي	shēngchēng		hsk=6; trad=聲稱
+2708	zh_w_mihuo	迷惑	verb	feelings	to confuse	يحيّر	míhuo		hsk=6; trad=迷惑
+2709	zh_w_zhicheng	支撑	verb	actions	to prop up, to support	يدعم	zhīchēng		hsk=6; trad=支撐
+2710	zh_w_huiwu	挥舞	verb	actions	to brandish, to wave	يلوّح	huīwǔ		hsk=6; trad=揮舞
+2711	zh_w_weiyue	违约	verb	society	to break a contract	يخلّ بالعقد	wéiyuē		hsk=6; trad=違約
+2712	zh_w_qingxiao	轻笑	verb	feelings	to chuckle	يضحك بخفوت	qīngxiào		hsk=6; trad=輕笑
+2713	zh_w_jinwo	紧握	verb	actions	to clasp	يمسك بإحكام	jǐnwò		hsk=6; trad=緊握
+2714	zh_w_jinghua	净化	verb	home	to purify	ينقّي	jìnghuà		hsk=6; trad=淨化
+2715	zh_w_jinian	纪念	verb	society	to commemorate	يحيي ذكرى	jìniàn		hsk=5; trad=紀念
+2716	zh_w_qiangpo	强迫	verb	society	to force	يُرغم	qiǎngpò		hsk=6; trad=強迫
+2717	zh_w_zongrong	纵容	verb	society	to condone, to indulge	يتساهل	zòngróng		hsk=6; trad=縱容
+2718	zh_w_shangyi	商议	verb	work	to discuss	يتشاور	shāngyì		hsk=6; trad=商議
+2719	zh_w_quansuo	蜷缩	verb	feelings	to curl up	ينكمش	quánsuō		hsk=6; trad=蜷縮
+2720	zh_w_zhouqi	皱起	verb	clothes	to wrinkle	يجعّد	zhòuqǐ		hsk=6; trad=皺起
+2721	zh_w_bengta	崩塌	verb	actions	to collapse	ينهار	bēngtā		hsk=6; trad=崩塌
+2722	zh_w_ezhi	遏制	verb	actions	to curb	يكبح	èzhì		hsk=6; trad=遏制
+2723	zh_w_xuandang	悬荡	verb	actions	to dangle	يتدلّى	xuándàng		hsk=6; trad=懸盪
+2724	zh_w_tuoyan	拖延	verb	time	to delay	يماطل	tuōyán		hsk=6; trad=拖延
+2725	zh_w_jiechuan	揭穿	verb	communication	to expose, to debunk	يفضح	jiēchuān		hsk=6; trad=揭穿
+2726	zh_w_pojie	破解	verb	school	to crack, to decipher	يفكّ	pòjiě		hsk=6; trad=破解
+2727	zh_w_zhapian	诈骗	verb	society	to defraud	يحتال	zhàpiàn		hsk=6; trad=詐騙
+2728	zh_w_weipai	委派	verb	work	to delegate	يفوّض	wěipài		hsk=6; trad=委派
+2729	zh_w_haojin	耗尽	verb	nature	to exhaust	يستنفد	hàojìn		hsk=6; trad=耗盡
+2730	zh_w_tongxi	痛惜	verb	feelings	to deplore, to regret	يأسف بشدّة	tòngxī		hsk=6; trad=痛惜
+2731	zh_w_jixiao	讥笑	verb	people	to sneer at	يسخر	jīxiào		hsk=6; trad=譏笑
+2732	zh_w_xiedu	亵渎	verb	society	to desecrate	يدنّس	xièdú		hsk=6; trad=褻瀆
+2733	zh_w_juliu	拘留	verb	society	to detain	يحتجز	jūliú		hsk=6; trad=拘留
+2734	zh_w_weishe	威慑	verb	society	to deter	يردع	wēishè		hsk=6; trad=威懾
+2735	zh_w_tunshi	吞噬	verb	food	to devour	يلتهم	tūnshì		hsk=6; trad=吞噬
+2736	zh_w_jiesan	解散	verb	society	to disband	يحلّ	jiěsàn		hsk=6; trad=解散
+2737	zh_w_bianbie	辨别	verb	senses	to distinguish	يميّز	biànbié		hsk=6; trad=辨別
+2738	zh_w_toulu	透露	verb	communication	to disclose	يكشف	tòulù		hsk=6; trad=透露
+2739	zh_w_chaixie	拆卸	verb	actions	to dismantle	يفكّك	chāixiè		hsk=6; trad=拆卸
+2740	zh_w_qusan	驱散	verb	actions	to disperse	يفرّق	qūsàn		hsk=6; trad=驅散
+2741	zh_w_quanzu	劝阻	verb	communication	to dissuade	يثني	quànzǔ		hsk=6; trad=勸阻
+2742	zh_w_duobi	躲避	verb	movement	to dodge	يتفادى	duǒbì		hsk=6; trad=躲避
+2743	zh_w_kongju	恐惧	noun	feelings	dread, fear	رعب	kǒngjù		measure=种; hsk=6; trad=恐懼
+2744	zh_w_linshi	淋湿	verb	weather	to drench	يبلّل	línshī		hsk=6; trad=淋濕
+2745	zh_w_suojian	缩减	verb	function	to cut back	يقلّص	suōjiǎn		hsk=6; trad=縮減
+2746	zh_w_taotuo	逃脱	verb	actions	to escape	يفلت	táotuō		hsk=6; trad=逃脫
+2747	zh_w_sanfa	散发	verb	nature	to give off	ينبعث	sànfā		hsk=6; trad=散發
+2748	zh_w_runse	润色	verb	communication	to polish (writing)	ينقّح	rùnsè		hsk=6; trad=潤色
+2749	zh_w_nuoyong	挪用	verb	work	to misappropriate	يختلس	nuóyòng		hsk=6; trad=挪用
+2750	zh_w_qinzhan	侵占	verb	places	to encroach, to occupy	يستولي	qīnzhàn		hsk=6; trad=侵佔
+2751	zh_w_fuyu	赋予	verb	society	to endow, to give	يمنح	fùyǔ		hsk=6; trad=賦予
+2752	zh_w_yinyou	引诱	verb	people	to entice	يغري	yǐnyòu		hsk=6; trad=引誘
+2753	zh_w_weituo	委托	verb	people	to entrust	يفوّض	wěituō		hsk=6; trad=委託
+2754	zh_w_genchu	根除	verb	actions	to eradicate	يستأصل	gēnchú		hsk=6; trad=根除
+2755	zh_w_zansong	赞颂	verb	communication	to extol	يمجّد	zànsòng		hsk=6; trad=讚頌
+2756	zh_w_dongyao	动摇	verb	feelings	to waver	يتزعزع	dòngyáo		hsk=6; trad=動搖
+2757	zh_w_ganran	感染	verb	health	to infect	يُعدي	gǎnrǎn		hsk=6; trad=感染
+2758	zh_w_xuanyao	炫耀	verb	people	to show off	يتباهى	xuànyào		hsk=6; trad=炫耀
+2759	zh_w_shanshuo	闪烁	verb	senses	to flicker	يومض	shǎnshuò		hsk=6; trad=閃爍
+2760	zh_w_tuosuo	退缩	verb	feelings	to shrink back	يتراجع	tuìsuō		hsk=6; trad=退縮
+2761	zh_w_shefang	设防	verb	actions	to fortify	يحصّن	shèfáng		hsk=6; trad=設防
+2762	zh_w_youlv	忧虑	verb	feelings	to worry	يقلق	yōulǜ		hsk=6; trad=憂慮
+2763	zh_w_xixi	嬉戏	verb	leisure	to frolic	يمرح	xīxì		hsk=6; trad=嬉戲
+2764	zh_w_mosuo	摸索	verb	actions	to grope	يتلمّس	mōsuǒ		hsk=6; trad=摸索
+2765	zh_w_shukou	漱口	verb	health	to rinse the mouth	يتمضمض	shùkǒu		hsk=6; trad=漱口
+2766	zh_w_bihua	比划	verb	communication	to gesture	يشير بيديه	bǐhua		hsk=6; trad=比劃
+2767	zh_w_xingzai_lehuo	幸灾乐祸	verb	feelings	to gloat	يشمت	xìngzāi lèhuò		hsk=6; trad=幸災樂禍
+2768	zh_w_ken	啃	verb	animals	to gnaw	يقضم	kěn		hsk=6; trad=啃
+2769	zh_w_langtun_huyan	狼吞虎咽	verb	food	to wolf down	يلتهم	lángtūn hǔyàn		hsk=6; trad=狼吞虎嚥
+2770	zh_w_niuda	扭打	verb	actions	to grapple	يتصارع	niǔdǎ		hsk=6; trad=扭打
+2771	zh_w_laodao	唠叨	verb	communication	to nag	يثرثر	láodao		hsk=6; trad=嘮叨
+2772	zh_w_saorao	骚扰	verb	people	to harass	يضايق	sāorǎo		hsk=6; trad=騷擾
+2773	zh_w_tingcong	听从	verb	communication	to heed	يصغي	tīngcóng		hsk=6; trad=聽從
+2774	zh_w_tunji	囤积	verb	actions	to hoard	يكنز	túnjī		hsk=6; trad=囤積
+2775	zh_w_jizaiyiqi	挤在一起	verb	people	to huddle	يتجمّع متلاصقين	jǐ zài yìqǐ		hsk=6; trad=擠在一起
+2776	zh_w_paozhi	抛掷	verb	actions	to hurl	يقذف	pāozhì		hsk=6; trad=拋擲
+2777	zh_w_kenqiu	恳求	verb	communication	to implore	يتوسّل	kěnqiú		hsk=6; trad=懇求
+2778	zh_w_shandong	煽动	verb	society	to incite	يحرّض	shāndòng		hsk=6; trad=煽動
+2779	zh_w_niai	溺爱	verb	people	to spoil (a child)	يدلّل	nì'ài		hsk=6; trad=溺愛
+2780	zh_w_guanshu	灌输	verb	school	to instil	يغرس	guànshū		hsk=6; trad=灌輸
+2781	zh_w_hongxiao	哄笑	verb	people	to roar with laughter	يضحك عاليًا	hōngxiào		hsk=6; trad=哄笑
+2782	zh_w_dianbo	颠簸	verb	movement	to jolt, to bump	يهتزّ	diānbǒ		hsk=6; trad=顛簸
+2783	zh_w_yongji	拥挤	adj	places	crowded	مزدحم	yōngjǐ		hsk=5; trad=擁擠
+2784	zh_w_aidao	哀悼	verb	feelings	to mourn	ينعى	āidào		hsk=6; trad=哀悼
+2785	zh_w_yanwu	厌恶	verb	feelings	to loathe	يمقت	yànwù		hsk=6; trad=厭惡
+2786	zh_w_paihuai	徘徊	verb	movement	to linger, to pace	يتسكّع	páihuái		hsk=6; trad=徘徊
+2787	zh_w_cuimian	催眠	verb	feelings	to lull to sleep	ينوّم	cuīmián		hsk=6; trad=催眠
+2788	zh_w_pushang	扑上	verb	movement	to pounce	ينقضّ	pūshàng		hsk=6; trad=撲上
+2789	zh_w_qianfu	潜伏	verb	movement	to lurk	يكمن	qiánfú		hsk=6; trad=潛伏
+2790	zh_w_canji	残疾	noun	health	disability	إعاقة	cánjí		measure=种; hsk=6; trad=殘疾
+2791	zh_w_wanyan	蜿蜒	verb	movement	to meander	يتعرّج	wānyán		hsk=6; trad=蜿蜒
+2792	zh_w_jianqing	减轻	verb	actions	to lighten, to reduce	يخفّف	jiǎnqīng		hsk=6; trad=減輕
+2793	zh_w_chaonong	嘲弄	verb	people	to mock	يسخر	cháonòng		hsk=6; trad=嘲弄
+2794	zh_w_zhuzhai	筑巢	verb	animals	to build a nest	يبني عشًّا	zhùcháo		hsk=6; trad=築巢
+2795	zh_w_huimie	毁灭	verb	actions	to destroy	يدمّر	huǐmiè		hsk=6; trad=毀滅
+2796	zh_w_shenchu	渗出	verb	nature	to ooze	يرشح	shènchū		hsk=6; trad=滲出
+2797	zh_w_zhisheng	智胜	verb	mind	to outwit	يتفوّق بالذكاء	zhìshèng		hsk=6; trad=智勝
+2798	zh_w_pingxi	平息	verb	feelings	to calm down	يهدأ	píngxī		hsk=6; trad=平息
+2799	zh_w_jiaoyang	娇养	verb	people	to pamper	يدلّل	jiāoyǎng		hsk=6; trad=嬌養
+2800	zh_w_kuitan	窥探	verb	senses	to spy, to peep	يتجسّس	kuītàn		hsk=6; trad=窺探
+2801	zh_w_sangsheng	丧生	verb	health	to lose one's life	يفقد حياته	sàngshēng		hsk=6; trad=喪生
+2802	zh_w_jiuchan	纠缠	verb	people	to pester	يلحّ	jiūchán		hsk=6; trad=糾纏
+2803	zh_w_touqie	偷窃	verb	society	to steal	يسرق	tōuqiè		hsk=6; trad=偷竊
+2804	zh_w_caizhai	采摘	verb	nature	to pick	يقطف	cǎizhāi		hsk=6; trad=採摘
+2805	zh_w_baodie	暴跌	verb	function	to plummet	يهوي	bàodiē		hsk=6; trad=暴跌
+2806	zh_w_tiaoyue	跳跃	verb	movement	to leap	يقفز	tiàoyuè		hsk=6; trad=跳躍
+2807	zh_w_chuo	戳	verb	actions	to poke	ينخز	chuō		hsk=6; trad=戳
+2808	zh_w_jieke	解渴	verb	food	to quench thirst	يروي العطش	jiěkě		hsk=6; trad=解渴
+2809	zh_w_manbu	漫步	verb	leisure	to stroll	يتنزّه	mànbù		hsk=6; trad=漫步
+2810	zh_w_qiangjie	抢劫	verb	society	to rob	يسلب	qiǎngjié		hsk=6; trad=搶劫
+2811	zh_w_chize	斥责	verb	people	to rebuke	يوبّخ	chìzé		hsk=6; trad=斥責
+2812	zh_w_tuique	退却	verb	movement	to retreat	يتراجع	tuìquè		hsk=6; trad=退卻
+2813	zh_w_rangbu	让步	verb	feelings	to give in	يتنازل	ràngbù		hsk=6; trad=讓步
+2814	zh_w_sipo	撕破	verb	actions	to tear	يمزّق	sīpò		hsk=6; trad=撕破
+2815	zh_w_qianze	谴责	verb	people	to condemn	يدين	qiǎnzé		hsk=6; trad=譴責
+2816	zh_w_fanzhao	翻找	verb	actions	to rummage	ينبش	fānzhǎo		hsk=6; trad=翻找
+2817	zh_w_shashasheng	沙沙作响	verb	senses	to rustle	يحفّ	shāshā zuòxiǎng		hsk=6; trad=沙沙作響
+2818	zh_w_tangshang	烫伤	verb	health	to scald	يحرق	tàngshāng		hsk=6; trad=燙傷
+2819	zh_w_benpao	奔跑	verb	movement	to run fast	يجري	bēnpǎo		hsk=6; trad=奔跑
+2820	zh_w_kaojiao	烤焦	verb	nature	to scorch	يحرق	kǎojiāo		hsk=6; trad=烤焦
+2821	zh_w_cashi	擦拭	verb	home	to wipe	يمسح	cāshì		hsk=6; trad=擦拭
+2822	zh_w_zhengduo	争夺	verb	movement	to scramble for	يتنافس على	zhēngduó		hsk=6; trad=爭奪
+2823	zh_w_shencha	审查	verb	mind	to examine	يدقّق	shěnchá		hsk=6; trad=審查
+2824	zh_w_fennu	愤怒	noun	feelings	anger, rage	غضب	fènnù		measure=种; hsk=5; trad=憤怒
+2825	zh_w_tuisang	推搡	verb	actions	to shove	يدفع	tuīsǎng		hsk=6; trad=推搡
+2826	zh_w_zhanli	战栗	verb	body	to shudder	يرتعد	zhànlì		hsk=6; trad=戰慄
+2827	zh_w_huibi	回避	verb	people	to avoid	يتجنّب	huíbì		hsk=6; trad=迴避
+2828	zh_w_shai_sift	筛	verb	food	to sift	ينخل	shāi		hsk=6; trad=篩
+2829	zh_w_feibang	诽谤	verb	communication	to slander	يفتري	fěibàng		hsk=6; trad=誹謗
+2830	zh_w_huaxing	滑行	verb	movement	to slide, to glide	ينزلق	huáxíng		hsk=6; trad=滑行
+2831	zh_w_tuobei	驼背	verb	body	to hunch	يحدودب	tuóbèi		hsk=6; trad=駝背
+2832	zh_w_menxi	闷熄	verb	actions	to smother	يخمد	mènxī		hsk=6; trad=悶熄
+2833	zh_w_paoxiao	咆哮	verb	animals	to roar	يزأر	páoxiào		hsk=6; trad=咆哮
+2834	zh_w_qiangduo	抢夺	verb	actions	to snatch	يخطف	qiǎngduó		hsk=6; trad=搶奪
+2835	zh_w_lengxiao	冷笑	verb	people	to sneer	يتهكّم	lěngxiào		hsk=6; trad=冷笑
+2836	zh_w_aoxiang	翱翔	verb	movement	to soar	يحلّق	áoxiáng		hsk=6; trad=翱翔
+2837	zh_w_huihuo	挥霍	verb	shopping	to squander	يبدّد	huīhuò		hsk=6; trad=揮霍
+2838	zh_w_miyan	眯眼	verb	senses	to squint	يضيّق عينيه	mī yǎn		hsk=6; trad=瞇眼
+2839	zh_w_niudong	扭动	verb	body	to twist about	يتلوّى	niǔdòng		hsk=6; trad=扭動
+2840	zh_w_genzong	跟踪	verb	animals	to follow, to track	يتعقّب	gēnzōng		hsk=6; trad=跟蹤
+2841	zh_w_wanyao	弯腰	verb	movement	to bend over	ينحني	wān yāo		hsk=6; trad=彎腰
+2842	zh_w_kuobu	阔步	verb	movement	to stride	يخطو	kuòbù		hsk=6; trad=闊步
+2843	zh_w_zhenjing	震惊	verb	feelings	to shock	يصدم	zhènjīng		hsk=6; trad=震驚
+2844	zh_w_qufu	屈服	verb	health	to yield	يستسلم	qūfú		hsk=6; trad=屈服
+2845	zh_w_shengmenqi	生闷气	verb	feelings	to sulk	يزعل	shēng mènqì		hsk=6; trad=生悶氣
+2846	zh_w_chengqun	成群	verb	animals	to swarm	يتجمهر	chéngqún		hsk=6; trad=成群
+2847	zh_w_paida	拍打	verb	actions	to swat, to pat	يضرب برفق	pāidǎ		hsk=6; trad=拍打
+2848	zh_w_jizhuan	急转	verb	travel	to swerve	ينعطف فجأة	jízhuǎn		hsk=6; trad=急轉
+2849	zh_w_pianqu	骗取	verb	society	to swindle	يحتال للحصول	piànqǔ		hsk=6; trad=騙取
+2850	zh_w_ruma	辱骂	verb	people	to insult	يشتم	rǔmà		hsk=6; trad=辱罵
+2851	zh_w_tiaodong	跳动	verb	body	to beat, to throb	ينبض	tiàodòng		hsk=6; trad=跳動
+2852	zh_w_zunao	阻挠	verb	actions	to thwart	يعرقل	zǔnáo		hsk=6; trad=阻撓
+2853	zh_w_laolei	劳累	adj	work	overworked	مرهق	láolèi		hsk=6; trad=勞累
+2854	zh_w_tuifan	推翻	verb	actions	to overthrow	يطيح	tuīfān		hsk=6; trad=推翻
+2855	zh_w_jianta	践踏	verb	movement	to trample	يدوس	jiàntà		hsk=6; trad=踐踏
+2856	zh_w_bashe	跋涉	verb	movement	to trek	يقطع رحلة شاقّة	báshè		hsk=6; trad=跋涉
+2857	zh_w_choudong	抽动	verb	body	to twitch	يرتعش	chōudòng		hsk=6; trad=抽動
+2858	zh_w_jiekai	解开	verb	actions	to untie, to solve	يحلّ	jiěkāi		hsk=5; trad=解開
+2859	zh_w_yinling	引领	verb	people	to lead, to usher	يرشد	yǐnlǐng		hsk=6; trad=引領
+2860	zh_w_aonao	懊恼	verb	feelings	to be vexed	يغتاظ	àonǎo		hsk=6; trad=懊惱
+2861	zh_w_tangshui	蹚水	verb	movement	to wade	يخوض الماء	tāng shuǐ		hsk=6; trad=蹚水
+2862	zh_w_piaosan	飘散	verb	senses	to waft	يفوح	piāosàn		hsk=6; trad=飄散
+2863	zh_w_haojiao	嚎叫	verb	feelings	to howl	يعوي	háojiào		hsk=6; trad=嚎叫
+2864	zh_w_shuaitui	衰退	verb	nature	to decline	يتراجع	shuāituì		hsk=6; trad=衰退
+2865	zh_w_qichuan	气喘	verb	health	to wheeze	يلهث	qìchuǎn		hsk=6; trad=氣喘
+2866	zh_w_wuye	呜咽	verb	feelings	to whimper	يئنّ	wūyè		hsk=6; trad=嗚咽
+2867	zh_w_xuanzhuan	旋转	verb	movement	to spin	يدور	xuánzhuǎn		hsk=6; trad=旋轉
+2868	zh_w_jiaoban	搅拌	verb	food	to stir, to whisk	يخلط	jiǎobàn		hsk=6; trad=攪拌
+2869	zh_w_niuqu	扭曲	verb	actions	to twist	يلوي	niǔqū		hsk=6; trad=扭曲
+2870	zh_w_shuaijiao	摔跤	verb	leisure	to wrestle, to fall	يصارع	shuāijiāo		hsk=6; trad=摔跤
+2871	zh_w_tanshuai	坦率	adj	people	candid	صريح	tǎnshuài		hsk=6; trad=坦率
+2872	zh_w_hunhuang	昏黄	adj	descriptions	dim yellow	أصفر باهت	hūnhuáng		hsk=6; trad=昏黃
+2873	zh_w_yinsen	阴森	adj	feelings	gloomy, eerie	موحش	yīnsēn		hsk=6; trad=陰森
+2874	zh_w_shuairuo	衰弱	adj	health	feeble	ضعيف	shuāiruò		hsk=6; trad=衰弱
+2875	zh_w_jianpu	俭朴	adj	shopping	frugal	مقتصد	jiǎnpǔ		hsk=6; trad=儉樸
+2876	zh_w_juchi	锯齿	noun	descriptions	sawtooth	أسنان المنشار	jùchǐ		measure=种; hsk=6; trad=鋸齒
+2877	zh_w_shechi	奢侈	adj	descriptions	extravagant	مسرف	shēchǐ		hsk=6; trad=奢侈
+2878	zh_w_rouruo	柔弱	adj	people	weak, delicate	رقيق	róuruò		hsk=6; trad=柔弱
+2879	zh_w_jiaozha	狡诈	adj	people	crafty	مخادع	jiǎozhà		hsk=6; trad=狡詐
+2880	zh_w_koumen	抠门	adj	people	stingy	بخيل	kōumén		hsk=6; trad=摳門
+2881	zh_w_juandai	倦怠	adj	feelings	weary	ضجر	juàndài		hsk=6; trad=倦怠
+2882	zh_w_dasheng	大声	adv	communication	loudly	بصوت عالٍ	dà shēng		hsk=4; trad=大聲
+2883	zh_w_gu_er_therefore	故而	adv	function	therefore	لذلك	gù'ér		hsk=6; trad=故而
+2884	zh_w_congrer	从而	adv	function	thereby	وبذلك	cóng'ér		hsk=6; trad=從而
+2885	zh_w_ran_er	然而	adv	function	however	لكن	rán'ér		hsk=5; trad=然而
+2886	zh_w_tiaoyue_treaty	条约	noun	society	treaty	معاهدة	tiáoyuē		measure=项; hsk=6; trad=條約
+2887	zh_w_yihui	议会	noun	society	parliament	برلمان	yìhuì		measure=个; hsk=6; trad=議會
+2888	zh_w_gongmin	公民	noun	society	citizen	مواطن	gōngmín		measure=个; hsk=6; trad=公民
+2889	zh_w_yiwu	义务	noun	society	duty, obligation	واجب	yìwù		measure=项; hsk=6; trad=義務
+2890	zh_w_fanzui	犯罪	verb	society	to commit a crime	يرتكب جريمة	fànzuì		hsk=6; trad=犯罪
+2891	zh_w_jianyu	监狱	noun	places	prison	سجن	jiānyù		measure=座; hsk=6; trad=監獄
+2892	zh_w_qiufan	囚犯	noun	people	prisoner	سجين	qiúfàn		measure=名; hsk=6; trad=囚犯
+2893	zh_w_fayuan	法院	noun	places	court	محكمة	fǎyuàn		measure=个; hsk=5; trad=法院
+2894	zh_w_junguan	军官	noun	people	officer	ضابط	jūnguān		measure=名; hsk=6; trad=軍官
+2895	zh_w_wuqi	武器	noun	society	weapon	سلاح	wǔqì		measure=件; hsk=6; trad=武器
+2896	zh_w_zhanyi	战役	noun	society	battle, campaign	معركة	zhànyì		measure=场; hsk=6; trad=戰役
+2897	zh_w_shengli	胜利	noun	society	victory	نصر	shènglì		measure=种; hsk=5; trad=勝利
+2898	zh_w_lirun	利润	noun	work	profit	ربح	lìrùn		measure=笔; hsk=5; trad=利潤
+2899	zh_w_zhaiwu	债务	noun	shopping	debt	دين	zhàiwù		measure=笔; hsk=6; trad=債務
+2900	zh_w_cangku	仓库	noun	work	warehouse	مستودع	cāngkù		measure=个; hsk=6; trad=倉庫
+2901	zh_w_tuixiu	退休	verb	work	to retire	يتقاعد	tuìxiū		hsk=5; trad=退休
+2902	zh_w_shengzhi	升职	verb	work	to be promoted	يترقّى	shēngzhí		hsk=6; trad=升職
+2903	zh_w_jineng	技能	noun	work	skill	مهارة	jìnéng		measure=项; hsk=6; trad=技能
+2904	zh_w_jiangxuejin	奖学金	noun	school	scholarship	منحة دراسية	jiǎngxuéjīn		measure=笔; hsk=4; trad=獎學金
+2905	zh_w_xuewei	学位	noun	school	degree	شهادة جامعية	xuéwèi		measure=个; hsk=6; trad=學位
+2906	zh_w_chuxi	出席	verb	school	to attend	يحضر	chūxí		hsk=6; trad=出席
+2907	zh_w_tingxie	听写	noun	school	dictation	إملاء	tīngxiě		measure=种; hsk=6; trad=聽寫
+2908	zh_w_zuowen	作文	noun	school	composition	إنشاء	zuòwén		measure=篇; hsk=5; trad=作文
+2909	zh_w_biji_hand	笔迹	noun	school	handwriting	خطّ اليد	bǐjì		measure=种; hsk=6; trad=筆跡
+2910	zh_w_wenjuhe	文具盒	noun	school	pencil case	مقلمة	wénjùhé		measure=个; hsk=6; trad=文具盒
+2911	zh_w_yanyu	谚语	noun	communication	proverb	مثل	yànyǔ		measure=句; hsk=6; trad=諺語
+2912	zh_w_jinianbei	纪念碑	noun	places	monument	نصب تذكاري	jìniànbēi		measure=座; hsk=6; trad=紀念碑
+2913	zh_w_dinghun	订婚	verb	people	to get engaged	يخطب	dìnghūn		hsk=6; trad=訂婚
+2914	zh_w_choushi	仇视	verb	people	to be hostile to	يعادي	chóushì		hsk=6; trad=仇視
+2915	zh_w_baochou	报仇	verb	people	to take revenge	ينتقم	bàochóu		hsk=6; trad=報仇
+2916	zh_w_juewang	绝望	adj	feelings	desperate	يائس	juéwàng		hsk=6; trad=絕望
+2917	zh_w_yuanhen	怨恨	verb	feelings	to resent	يحقد	yuànhèn		hsk=6; trad=怨恨
+2918	zh_w_songkouqi	松了口气	verb	feelings	to feel relieved	يرتاح	sōng le kǒu qì		hsk=6; trad=鬆了口氣
+2919	zh_w_landuo	懒惰	adj	feelings	lazy	كسول	lǎnduò		hsk=6; trad=懶惰
+2920	zh_w_xiangxiangli	想象力	noun	mind	imagination	خيال	xiǎngxiànglì		measure=种; hsk=5; trad=想像力
+2921	zh_w_xianyi	嫌疑	noun	mind	suspicion	شبهة	xiányí		measure=种; hsk=6; trad=嫌疑
+2922	zh_w_yitu	意图	noun	mind	intention	نيّة	yìtú		measure=种; hsk=6; trad=意圖
+2923	zh_w_liangxin	良心	noun	mind	conscience	ضمير	liángxīn		measure=颗; hsk=6; trad=良心
+2924	zh_w_luoji	逻辑	noun	mind	logic	منطق	luójí		measure=种; hsk=6; trad=邏輯
+2925	zh_w_lilun	理论	noun	school	theory	نظرية	lǐlùn		measure=种; hsk=5; trad=理論
+2926	zh_w_shiyanshi	实验室	noun	school	laboratory	مختبر	shíyànshì		measure=个; hsk=5; trad=實驗室
+2927	zh_w_gongshi	公式	noun	school	formula	صيغة	gōngshì		measure=个; hsk=6; trad=公式
+2928	zh_w_tongji	统计	noun	school	statistics	إحصاء	tǒngjì		measure=种; hsk=6; trad=統計
+2929	zh_w_kebiao	课表	noun	school	class timetable	جدول الحصص	kèbiǎo		measure=张; hsk=6; trad=課表
+2930	zh_w_guanmu	灌木	noun	nature	shrub	شجيرة	guànmù		measure=丛; hsk=6; trad=灌木
+2931	zh_w_hongshulin	红树林	noun	nature	mangrove	غابة المنغروف	hóngshùlín		measure=片; hsk=6; trad=紅樹林
+2932	zh_w_hekou	河口	noun	nature	estuary	مصبّ	hékǒu		measure=个; hsk=6; trad=河口
+2933	zh_w_xiaoxi_stream	小溪	noun	nature	stream	جدول	xiǎoxī		measure=条; hsk=6; trad=小溪
+2934	zh_w_qundao	群岛	noun	nature	archipelago	أرخبيل	qúndǎo		measure=个; hsk=6; trad=群島
+2935	zh_w_anjiao	暗礁	noun	nature	reef	شعاب	ànjiāo		measure=块; hsk=6; trad=暗礁
+2936	zh_w_haidi	海底	noun	nature	seabed	قاع البحر	hǎidǐ		measure=种; hsk=6; trad=海底
+2937	zh_w_langtao	浪涛	noun	nature	billows	أمواج	làngtāo		measure=种; hsk=6; trad=浪濤
+2938	zh_w_jifeng	季风	noun	weather	monsoon	رياح موسمية	jìfēng		measure=种; hsk=6; trad=季風
+2939	zh_w_maomaoyu	毛毛雨	noun	weather	drizzle	رذاذ	máomaoyǔ		measure=场; hsk=6; trad=毛毛雨
+2940	zh_w_baoyu	暴雨	noun	weather	rainstorm	عاصفة مطرية	bàoyǔ		measure=场; hsk=6; trad=暴雨
+2941	zh_w_shidu	湿度	noun	weather	humidity	رطوبة	shīdù		measure=种; hsk=6; trad=濕度
+2942	zh_w_quanqiu_biannuan	全球变暖	noun	nature	global warming	الاحتباس الحراري	quánqiú biànnuǎn		measure=种; hsk=6; trad=全球變暖
+2943	zh_w_dianfei	电费	noun	home	electricity bill	فاتورة الكهرباء	diànfèi		measure=种; hsk=6; trad=電費
+2944	zh_w_zuke	租客	noun	people	tenant	مستأجر	zūkè		measure=个; hsk=6; trad=租客
+2945	zh_w_bieshu	别墅	noun	home	villa	فيلا	biéshù		measure=栋; hsk=6; trad=別墅
+2946	zh_w_chucangshi	储藏室	noun	home	storeroom	مخزن	chǔcángshì		measure=间; hsk=6; trad=儲藏室
+2947	zh_w_shuichi	水池	noun	home	sink, pool	حوض	shuǐchí		measure=个; hsk=6; trad=水池
+2948	zh_w_shuilongtou	水龙头	noun	home	tap	حنفية	shuǐlóngtóu		measure=个; hsk=6; trad=水龍頭
+2949	zh_w_matong	马桶	noun	home	toilet bowl	مرحاض	mǎtǒng		measure=个; hsk=6; trad=馬桶
+2950	zh_w_linyu	淋浴	noun	home	shower	دشّ	línyù		measure=种; hsk=6; trad=淋浴
+2951	zh_w_cizhuan	瓷砖	noun	home	tile	بلاط	cízhuān		measure=块; hsk=6; trad=瓷磚
+2952	zh_w_tianhuaban	天花板	noun	home	ceiling	سقف	tiānhuābǎn		measure=种; hsk=6; trad=天花板
+2953	zh_w_kongjie	空姐	noun	people	flight attendant	مضيفة طيران	kōngjiě		measure=位; hsk=6; trad=空姐
+2954	zh_w_lieren	猎人	noun	people	hunter	صيّاد	lièrén		measure=个; hsk=6; trad=獵人
+2955	zh_w_youdiyuan	邮递员	noun	people	postman	ساعي البريد	yóudìyuán		measure=个; hsk=6; trad=郵遞員
+2956	zh_w_celiangyuan	测量员	noun	people	surveyor	مسّاح	cèliángyuán		measure=个; hsk=6; trad=測量員
+2957	zh_w_xiaofan	小贩	noun	people	street vendor	بائع متجوّل	xiǎofàn		measure=个; hsk=6; trad=小販
+2958	zh_w_youqigong	油漆工	noun	people	painter (decorator)	دهّان	yóuqīgōng		measure=个; hsk=6; trad=油漆工
+2959	zh_w_diangong	电工	noun	people	electrician	كهربائي	diàngōng		measure=个; hsk=6; trad=電工
+2960	zh_w_jixiugong	机修工	noun	people	mechanic	ميكانيكي	jīxiūgōng		measure=个; hsk=6; trad=機修工
+2961	zh_w_zhuchanshi	助产士	noun	people	midwife	قابلة	zhùchǎnshì		measure=个; hsk=6; trad=助產士
+2962	zh_w_baomu	保姆	noun	people	nanny	مربّية	bǎomǔ		measure=个; hsk=6; trad=保姆
+2963	zh_w_caipan	裁判	noun	people	referee	حكم	cáipàn		measure=个; hsk=6; trad=裁判
+2964	zh_w_jiangbei	奖杯	noun	leisure	trophy	كأس	jiǎngbēi		measure=个; hsk=6; trad=獎盃
+2965	zh_w_qiumen	球门	noun	leisure	goal	مرمى	qiúmén		measure=个; hsk=6; trad=球門
+2966	zh_w_qiuwang	球网	noun	leisure	net	شبكة	qiúwǎng		measure=张; hsk=6; trad=球網
+2967	zh_w_qiupai	球拍	noun	leisure	racket	مضرب	qiúpāi		measure=个; hsk=6; trad=球拍
+2968	zh_w_xiaofangyuan	消防员	noun	people	firefighter	إطفائي	xiāofángyuán		measure=名; hsk=6; trad=消防員
+2969	zh_w_jiushengyuan	救生员	noun	people	lifeguard	منقذ	jiùshēngyuán		measure=名; hsk=6; trad=救生員
+2970	zh_w_shuinuangong	水暖工	noun	people	plumber	سبّاك	shuǐnuǎngōng		measure=个; hsk=6; trad=水暖工
+2971	zh_w_niwajiang	泥瓦匠	noun	people	bricklayer	بنّاء	níwǎjiàng		measure=个; hsk=6; trad=泥瓦匠
+2972	zh_w_mujiang	木匠	noun	people	carpenter	نجّار	mùjiang		measure=个; hsk=6; trad=木匠
+2973	zh_w_xiejiang	鞋匠	noun	people	shoemaker	إسكافي	xiéjiang		measure=个; hsk=6; trad=鞋匠
+2974	zh_w_zhubaoshang	珠宝商	noun	people	jeweller	صائغ	zhūbǎoshāng		measure=个; hsk=6; trad=珠寶商
+2975	zh_w_huadian	花店	noun	places	florist's shop	محلّ الزهور	huādiàn		measure=家; hsk=6; trad=花店
+2976	zh_w_shouyinyuan	收银员	noun	people	cashier	أمين الصندوق	shōuyínyuán		measure=个; hsk=6; trad=收銀員
+2977	zh_w_jianzhushi	建筑师	noun	people	architect	مهندس معماري	jiànzhùshī		measure=位; hsk=6; trad=建築師
+2978	zh_w_zhengren	证人	noun	people	witness	شاهد	zhèngrén		measure=个; hsk=6; trad=證人
+2979	zh_w_beigao	被告	noun	people	defendant	متّهم	bèigào		measure=个; hsk=6; trad=被告
+2980	zh_w_xianyiren	嫌疑人	noun	people	suspect	مشتبه به	xiányírén		measure=个; hsk=6; trad=嫌疑人
+2981	zh_w_feixingyuan	飞行员	noun	people	pilot	طيّار	fēixíngyuán		measure=名; hsk=6; trad=飛行員
+2982	zh_w_lvke	旅客	noun	people	traveller	مسافر	lǚkè		measure=位; hsk=6; trad=旅客
+2983	zh_w_nanmin	难民	noun	people	refugee	لاجئ	nànmín		measure=个; hsk=6; trad=難民
+2984	zh_w_qiaomin	侨民	noun	people	expatriate, overseas national	مغترب	qiáomín		measure=个; hsk=6; trad=僑民
+2985	zh_w_qiumi	球迷	noun	people	fan (sports)	مشجّع	qiúmí		measure=个; hsk=6; trad=球迷
+2986	zh_w_guanjun	冠军	noun	people	champion	بطل	guànjūn		measure=个; hsk=5; trad=冠軍
+2987	zh_w_jiangpai	奖牌	noun	leisure	medal	ميدالية	jiǎngpái		measure=块; hsk=6; trad=獎牌
+2988	zh_w_pingju	平局	noun	leisure	draw	تعادل	píngjú		measure=种; hsk=6; trad=平局
+2989	zh_w_bifen	比分	noun	leisure	score	نتيجة	bǐfēn		measure=种; hsk=6; trad=比分
+2990	zh_w_shuishou_sailor	水手	noun	people	sailor	بحّار	shuǐshǒu		measure=个; hsk=6; trad=水手
+2991	zh_w_shuishou_tax	税收	noun	work	tax revenue	ضرائب	shuìshōu		measure=种; hsk=6; trad=稅收
+2992	zh_w_yufu	渔夫	noun	people	fisherman	صيّاد سمك	yúfū		measure=个; hsk=6; trad=漁夫
+2993	zh_w_nongfu	农夫	noun	people	farmer	فلّاح	nóngfū		measure=个; hsk=6; trad=農夫
+2994	zh_w_lieqiang	猎枪	noun	society	hunting rifle	بندقية صيد	lièqiāng		measure=支; hsk=6; trad=獵槍
+2995	zh_w_tieqiao	铁锹	noun	work	shovel	مجرفة	tiěqiāo		measure=把; hsk=6; trad=鐵鍬
+2996	zh_w_dingzi	钉子	noun	work	nail	مسمار	dìngzi		measure=颗; hsk=6; trad=釘子
+2997	zh_w_luosi	螺丝	noun	work	screw	برغي	luósī		measure=颗; hsk=6; trad=螺絲
+2998	zh_w_jiaoshui_glue	胶水	noun	work	glue	غراء	jiāoshuǐ		measure=瓶; hsk=6; trad=膠水
+2999	zh_w_luosidao	螺丝刀	noun	work	screwdriver	مفكّ	luósīdāo		measure=把; hsk=6; trad=螺絲刀
+3000	zh_w_dianzuan	电钻	noun	work	electric drill	مثقاب كهربائي	diànzuàn		measure=把; hsk=6; trad=電鑽
