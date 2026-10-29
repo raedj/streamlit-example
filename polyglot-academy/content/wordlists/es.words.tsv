@@ -2099,3 +2099,303 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2098	es_w_cebra	cebra	noun	animals	zebra	حمار وحشي			gender=f; article=la
 2099	es_w_gusano	gusano	noun	animals	worm	دودة			gender=m; article=el
 2100	es_w_pulmon	pulmón	noun	body	lung	رئة		pulmones	gender=m; article=el
+2101	es_w_absorber	absorber	verb	function	to absorb	يمتصّ		absorbo, absorbes, absorbe, absorbemos, absorben, absorbí, absorbió, absorbido, absorbiendo, absorbieron, absorbiste, absorbimos, absorbas, absorba, absorbía, absorbías, absorbíamos, absorbían, absorberá, absorberé, absorberemos, absorberán
+2102	es_w_acumular	acumular	verb	numbers	to accumulate	يراكم		acumulo, acumulas, acumula, acumulamos, acumulan, acumulé, acumuló, acumulado, acumulando, acumularon, acumulaste, acumules, acumule, acumulaba, acumulabas, acumulábamos, acumulaban, acumulará, acumularé, acumularemos, acumularán
+2103	es_w_analizar	analizar	verb	mind	to analyse	يحلّل		analizo, analizas, analiza, analizamos, analizan, analicé, analizó, analizado, analizando, analizaron, analizaste, analizes, analize, analizaba, analizabas, analizábamos, analizaban, analizará, analizaré, analizaremos, analizarán
+2104	es_w_anticipar	anticipar	verb	mind	to anticipate	يتوقّع		anticipo, anticipas, anticipa, anticipamos, anticipan, anticipé, anticipó, anticipado, anticipando, anticiparon, anticipaste, anticipes, anticipe, anticipaba, anticipabas, anticipábamos, anticipaban, anticipará, anticiparé, anticiparemos, anticiparán
+2105	es_w_asignar	asignar	verb	work	to assign	يخصّص		asigno, asignas, asigna, asignamos, asignan, asigné, asignó, asignado, asignando, asignaron, asignaste, asignes, asigne, asignaba, asignabas, asignábamos, asignaban, asignará, asignaré, asignaremos, asignarán
+2106	es_w_presumir	presumir	verb	communication	to show off	يتباهى		presumo, presumes, presume, presumimos, presumen, presumí, presumió, presumido, presumiendo, presumieron, presumiste, presumas, presuma, presumía, presumías, presumíamos, presumían, presumirá, presumiré, presumiremos, presumirán
+2107	es_w_clasificar	clasificar	verb	school	to classify	يصنّف		clasifico, clasificas, clasifica, clasificamos, clasifican, clasifiqué, clasificó, clasificado, clasificando, clasificaron, clasificaste, clasifices, clasifice, clasificaba, clasificabas, clasificábamos, clasificaban, clasificará, clasificaré, clasificaremos, clasificarán
+2108	es_w_compensar	compensar	verb	work	to compensate	يعوّض		compenso, compensas, compensa, compensamos, compensan, compensé, compensó, compensado, compensando, compensaron, compensaste, compenses, compense, compensaba, compensabas, compensábamos, compensaban, compensará, compensaré, compensaremos, compensarán
+2109	es_w_condenar	condenar	verb	people	to condemn	يدين		condeno, condenas, condena, condenamos, condenan, condené, condenó, condenado, condenando, condenaron, condenaste, condenes, condene, condenaba, condenabas, condenábamos, condenaban, condenará, condenaré, condenaremos, condenarán
+2110	es_w_consumir	consumir	verb	function	to consume	يستهلك		consumo, consumes, consume, consumimos, consumen, consumí, consumió, consumido, consumiendo, consumieron, consumiste, consumas, consuma, consumía, consumías, consumíamos, consumían, consumirá, consumiré, consumiremos, consumirán
+2111	es_w_cooperar	cooperar	verb	work	to cooperate	يتعاون		coopero, cooperas, coopera, cooperamos, cooperan, cooperé, cooperó, cooperado, cooperando, cooperaron, cooperaste, cooperes, coopere, cooperaba, cooperabas, cooperábamos, cooperaban, cooperará, cooperaré, cooperaremos, cooperarán
+2112	es_w_diagnosticar	diagnosticar	verb	health	to diagnose	يشخّص		diagnostico, diagnosticas, diagnostica, diagnosticamos, diagnostican, diagnostiqué, diagnosticó, diagnosticado, diagnosticando, diagnosticaron, diagnosticaste, diagnostices, diagnostice, diagnosticaba, diagnosticabas, diagnosticábamos, diagnosticaban, diagnosticará, diagnosticaré, diagnosticaremos, diagnosticarán
+2113	es_w_diferenciar	diferenciar	verb	mind	to differentiate	يميّز		diferencio, diferencias, diferencia, diferenciamos, diferencian, diferencié, diferenció, diferenciado, diferenciando, diferenciaron, diferenciaste, diferencies, diferencie, diferenciaba, diferenciabas, diferenciábamos, diferenciaban, diferenciará, diferenciaré, diferenciaremos, diferenciarán
+2114	es_w_disfrazarse	disfrazarse	verb	actions	to dress up, to disguise oneself	يتنكّر		disfrazo, disfrazas, disfraza, disfrazamos, disfrazan, disfracé, disfrazó, disfrazado, disfrazando, disfrazaron, disfrazaste, disfrazes, disfraze, disfrazaba, disfrazabas, disfrazábamos, disfrazaban, disfrazará, disfrazaré, disfrazaremos, disfrazarán, disfrazar, disfrazarme, disfrazarte
+2115	es_w_enfatizar	enfatizar	verb	communication	to emphasise	يؤكّد		enfatizo, enfatizas, enfatiza, enfatizamos, enfatizan, enfaticé, enfatizó, enfatizado, enfatizando, enfatizaron, enfatizaste, enfatizes, enfatize, enfatizaba, enfatizabas, enfatizábamos, enfatizaban, enfatizará, enfatizaré, enfatizaremos, enfatizarán
+2116	es_w_equipar	equipar	verb	work	to equip	يجهّز		equipo, equipas, equipa, equipamos, equipan, equipé, equipó, equipado, equipando, equiparon, equipaste, equipes, equipe, equipaba, equipabas, equipábamos, equipaban, equipará, equiparé, equiparemos, equiparán
+2117	es_w_evolucionar	evolucionar	verb	function	to evolve	يتطوّر		evoluciono, evolucionas, evoluciona, evolucionamos, evolucionan, evolucioné, evolucionó, evolucionado, evolucionando, evolucionaron, evolucionaste, evoluciones, evolucione, evolucionaba, evolucionabas, evolucionábamos, evolucionaban, evolucionará, evolucionaré, evolucionaremos, evolucionarán
+2118	es_w_caducar	caducar	verb	time	to expire	تنتهي صلاحيته		caduco, caducas, caduca, caducamos, caducan, caduqué, caducó, caducado, caducando, caducaron, caducaste, caduces, caduce, caducaba, caducabas, caducábamos, caducaban, caducará, caducaré, caducaremos, caducarán
+2119	es_w_fascinar	fascinar	verb	feelings	to fascinate	يسحر		fascino, fascinas, fascina, fascinamos, fascinan, fasciné, fascinó, fascinado, fascinando, fascinaron, fascinaste, fascines, fascine, fascinaba, fascinabas, fascinábamos, fascinaban, fascinará, fascinaré, fascinaremos, fascinarán
+2120	es_w_halagar	halagar	verb	communication	to flatter	يتملّق		halago, halagas, halaga, halagamos, halagan, halagué, halagó, halagado, halagando, halagaron, halagaste, halages, halage, halagaba, halagabas, halagábamos, halagaban, halagará, halagaré, halagaremos, halagarán
+2121	es_w_frustrar	frustrar	verb	feelings	to frustrate	يُحبط		frustro, frustras, frustra, frustramos, frustran, frustré, frustró, frustrado, frustrando, frustraron, frustraste, frustres, frustre, frustraba, frustrabas, frustrábamos, frustraban, frustrará, frustraré, frustraremos, frustrarán
+2122	es_w_captar	captar	verb	mind	to grasp, to capture	يستوعب		capto, captas, capta, captamos, captan, capté, captó, captado, captando, captaron, captaste, captes, capte, captaba, captabas, captábamos, captaban, captará, captaré, captaremos, captarán
+2123	es_w_ilustrar	ilustrar	verb	school	to illustrate	يوضّح بالرسم		ilustro, ilustras, ilustra, ilustramos, ilustran, ilustré, ilustró, ilustrado, ilustrando, ilustraron, ilustraste, ilustres, ilustre, ilustraba, ilustrabas, ilustrábamos, ilustraban, ilustrará, ilustraré, ilustraremos, ilustrarán
+2124	es_w_implementar	implementar	verb	work	to implement	ينفّذ		implemento, implementas, implementa, implementamos, implementan, implementé, implementó, implementado, implementando, implementaron, implementaste, implementes, implemente, implementaba, implementabas, implementábamos, implementaban, implementará, implementaré, implementaremos, implementarán
+2125	es_w_insertar	insertar	verb	actions	to insert	يُدخل		inserto, insertas, inserta, insertamos, insertan, inserté, insertó, insertado, insertando, insertaron, insertaste, insertes, inserte, insertaba, insertabas, insertábamos, insertaban, insertará, insertaré, insertaremos, insertarán
+2126	es_w_interpretar	interpretar	verb	communication	to interpret	يفسّر		interpreto, interpretas, interpreta, interpretamos, interpretan, interpreté, interpretó, interpretado, interpretando, interpretaron, interpretaste, interpretes, interprete, interpretaba, interpretabas, interpretábamos, interpretaban, interpretará, interpretaré, interpretaremos, interpretarán
+2127	es_w_invadir	invadir	verb	people	to invade	يغزو		invado, invades, invade, invadimos, invaden, invadí, invadió, invadido, invadiendo, invadieron, invadiste, invadas, invada, invadía, invadías, invadíamos, invadían, invadirá, invadiré, invadiremos, invadirán
+2128	es_w_justificar	justificar	verb	mind	to justify	يبرّر		justifico, justificas, justifica, justificamos, justifican, justifiqué, justificó, justificado, justificando, justificaron, justificaste, justifices, justifice, justificaba, justificabas, justificábamos, justificaban, justificará, justificaré, justificaremos, justificarán
+2129	es_w_localizar	localizar	verb	places	to locate	يحدّد موقع		localizo, localizas, localiza, localizamos, localizan, localicé, localizó, localizado, localizando, localizaron, localizaste, localizes, localize, localizaba, localizabas, localizábamos, localizaban, localizará, localizaré, localizaremos, localizarán
+2130	es_w_migrar	migrar	verb	animals	to migrate	يهاجر		migro, migras, migra, migramos, migran, migré, migró, migrado, migrando, migraron, migraste, migres, migre, migraba, migrabas, migrábamos, migraban, migrará, migraré, migraremos, migrarán
+2131	es_w_motivar	motivar	verb	people	to motivate	يحفّز		motivo, motivas, motiva, motivamos, motivan, motivé, motivó, motivado, motivando, motivaron, motivaste, motives, motive, motivaba, motivabas, motivábamos, motivaban, motivará, motivaré, motivaremos, motivarán
+2132	es_w_notificar	notificar	verb	communication	to notify	يُبلغ		notifico, notificas, notifica, notificamos, notifican, notifiqué, notificó, notificado, notificando, notificaron, notificaste, notifices, notifice, notificaba, notificabas, notificábamos, notificaban, notificará, notificaré, notificaremos, notificarán
+2133	es_w_percibir	percibir	verb	mind	to perceive	يدرك		percibo, percibes, percibe, percibimos, perciben, percibí, percibió, percibido, percibiendo, percibieron, percibiste, percibas, perciba, percibía, percibías, percibíamos, percibían, percibirá, percibiré, percibiremos, percibirán
+2134	es_w_persistir	persistir	verb	actions	to persist	يستمرّ		persisto, persistes, persiste, persistimos, persisten, persistí, persistió, persistido, persistiendo, persistieron, persististe, persistas, persista, persistía, persistías, persistíamos, persistían, persistirá, persistiré, persistiremos, persistirán
+2135	es_w_retratar	retratar	verb	leisure	to portray	يصوّر		retrato, retratas, retrata, retratamos, retratan, retraté, retrató, retratado, retratando, retrataron, retrataste, retrates, retrate, retrataba, retratabas, retratábamos, retrataban, retratará, retrataré, retrataremos, retratarán
+2136	es_w_recetar	recetar	verb	health	to prescribe	يصف (دواءً)		receto, recetas, receta, recetamos, recetan, receté, recetó, recetado, recetando, recetaron, recetaste, recetes, recete, recetaba, recetabas, recetábamos, recetaban, recetará, recetaré, recetaremos, recetarán
+2137	es_w_prolongar	prolongar	verb	time	to prolong	يطيل		prolongo, prolongas, prolonga, prolongamos, prolongan, prolongué, prolongó, prolongado, prolongando, prolongaron, prolongaste, prolonges, prolonge, prolongaba, prolongabas, prolongábamos, prolongaban, prolongará, prolongaré, prolongaremos, prolongarán
+2138	es_w_prosperar	prosperar	verb	work	to prosper	يزدهر		prospero, prosperas, prospera, prosperamos, prosperan, prosperé, prosperó, prosperado, prosperando, prosperaron, prosperaste, prosperes, prospere, prosperaba, prosperabas, prosperábamos, prosperaban, prosperará, prosperaré, prosperaremos, prosperarán
+2139	es_w_recitar	recitar	verb	school	to recite	يتلو		recito, recitas, recita, recitamos, recitan, recité, recitó, recitado, recitando, recitaron, recitaste, recites, recite, recitaba, recitabas, recitábamos, recitaban, recitará, recitaré, recitaremos, recitarán
+2140	es_w_reformar	reformar	verb	people	to reform, to renovate	يصلح، يجدّد		reformo, reformas, reforma, reformamos, reforman, reformé, reformó, reformado, reformando, reformaron, reformaste, reformes, reforme, reformaba, reformabas, reformábamos, reformaban, reformará, reformaré, reformaremos, reformarán
+2141	es_w_reembolsar	reembolsar	verb	shopping	to refund	يردّ المال		reembolso, reembolsas, reembolsa, reembolsamos, reembolsan, reembolsé, reembolsó, reembolsado, reembolsando, reembolsaron, reembolsaste, reembolses, reembolse, reembolsaba, reembolsabas, reembolsábamos, reembolsaban, reembolsará, reembolsaré, reembolsaremos, reembolsarán
+2142	es_w_residir	residir	verb	places	to reside	يقيم		resido, resides, reside, residimos, residen, residí, residió, residido, residiendo, residieron, residiste, residas, resida, residía, residías, residíamos, residían, residirá, residiré, residiremos, residirán
+2143	es_w_restringir	restringir	verb	function	to restrict	يقيّد		restringes, restringimos, restringen, restringí, restringió, restringido, restringiendo, restrinjo, restrinja, restringieron, restringiste, restringía, restringías, restringíamos, restringían, restringe, restringen	irregular=yes
+2144	es_w_reanudar	reanudar	verb	time	to resume	يستأنف		reanudo, reanudas, reanuda, reanudamos, reanudan, reanudé, reanudó, reanudado, reanudando, reanudaron, reanudaste, reanudes, reanude, reanudaba, reanudabas, reanudábamos, reanudaban, reanudará, reanudaré, reanudaremos, reanudarán
+2145	es_w_retroceder	retroceder	verb	movement	to go back, to retreat	يتراجع		retrocedo, retrocedes, retrocede, retrocedemos, retroceden, retrocedí, retrocedió, retrocedido, retrocediendo, retrocedieron, retrocediste, retrocedimos, retrocedas, retroceda, retrocedía, retrocedías, retrocedíamos, retrocedían, retrocederá, retrocederé, retrocederemos, retrocederán
+2146	es_w_revivir	revivir	verb	feelings	to revive, to relive	يحيي		revivo, revives, revive, revivimos, reviven, reviví, revivió, revivido, reviviendo, revivieron, reviviste, revivas, reviva, revivía, revivías, revivíamos, revivían, revivirá, reviviré, reviviremos, revivirán
+2147	es_w_rotar	rotar	verb	movement	to rotate	يدور		roto, rotas, rota, rotamos, rotan, roté, rotó, rotado, rotando, rotaron, rotaste, rotes, rote, rotaba, rotabas, rotábamos, rotaban, rotará, rotaré, rotaremos, rotarán
+2148	es_w_dispersar	dispersar	verb	actions	to scatter	ينثر		disperso, dispersas, dispersa, dispersamos, dispersan, dispersé, dispersó, dispersado, dispersando, dispersaron, dispersaste, disperses, disperse, dispersaba, dispersabas, dispersábamos, dispersaban, dispersará, dispersaré, dispersaremos, dispersarán
+2149	es_w_refugiarse	refugiarse	verb	places	to take shelter	يحتمي		refugio, refugias, refugia, refugiamos, refugian, refugié, refugió, refugiado, refugiando, refugiaron, refugiaste, refugies, refugie, refugiaba, refugiabas, refugiábamos, refugiaban, refugiará, refugiaré, refugiaremos, refugiarán, refugiar, refugiarme, refugiarte
+2150	es_w_esbozar	esbozar	verb	leisure	to sketch	يرسم بسرعة		esbozo, esbozas, esboza, esbozamos, esbozan, esbocé, esbozó, esbozado, esbozando, esbozaron, esbozaste, esbozes, esboze, esbozaba, esbozabas, esbozábamos, esbozaban, esbozará, esbozaré, esbozaremos, esbozarán
+2151	es_w_especializarse	especializarse	verb	work	to specialise	يتخصّص		especializo, especializas, especializa, especializamos, especializan, especialicé, especializó, especializado, especializando, especializaron, especializaste, especializes, especialize, especializaba, especializabas, especializábamos, especializaban, especializará, especializaré, especializaremos, especializarán, especializar, especializarme, especializarte
+2152	es_w_especificar	especificar	verb	communication	to specify	يحدّد		especifico, especificas, especifica, especificamos, especifican, especifiqué, especificó, especificado, especificando, especificaron, especificaste, especifices, especifice, especificaba, especificabas, especificábamos, especificaban, especificará, especificaré, especificaremos, especificarán
+2153	es_w_estimular	estimular	verb	function	to stimulate	ينشّط		estimulo, estimulas, estimula, estimulamos, estimulan, estimulé, estimuló, estimulado, estimulando, estimularon, estimulaste, estimules, estimule, estimulaba, estimulabas, estimulábamos, estimulaban, estimulará, estimularé, estimularemos, estimularán
+2154	es_w_suscribirse	suscribirse	verb	communication	to subscribe	يشترك		suscribo, suscribes, suscribe, suscribimos, suscriben, suscribí, suscribió, suscribido, suscribiendo, suscribieron, suscribiste, suscribas, suscriba, suscribía, suscribías, suscribíamos, suscribían, suscribirá, suscribiré, suscribiremos, suscribirán, suscribir, suscribirme, suscribirte
+2155	es_w_abordar	abordar	verb	actions	to tackle; to board	يعالج؛ يصعد		abordo, abordas, aborda, abordamos, abordan, abordé, abordó, abordado, abordando, abordaron, abordaste, abordes, aborde, abordaba, abordabas, abordábamos, abordaban, abordará, abordaré, abordaremos, abordarán
+2156	es_w_emprender	emprender	verb	work	to undertake	يباشر		emprendo, emprendes, emprende, emprendemos, emprenden, emprendí, emprendió, emprendido, emprendiendo, emprendieron, emprendiste, emprendimos, emprendas, emprenda, emprendía, emprendías, emprendíamos, emprendían, emprenderá, emprenderé, emprenderemos, emprenderán
+2157	es_w_verificar	verificar	verb	work	to verify	يتحقّق		verifico, verificas, verifica, verificamos, verifican, verifiqué, verificó, verificado, verificando, verificaron, verificaste, verifices, verifice, verificaba, verificabas, verificábamos, verificaban, verificará, verificaré, verificaremos, verificarán
+2158	es_w_ausencia	ausencia	noun	school	absence	غياب			gender=f; article=la
+2159	es_w_academia	academia	noun	school	academy	أكاديمية			gender=f; article=la
+2160	es_w_acido	ácido	noun	school	acid	حمض			gender=m; article=el
+2161	es_w_admision	admisión	noun	school	admission	قبول			gender=f; article=la
+2162	es_w_alcohol	alcohol	noun	food	alcohol	كحول			gender=m; article=el
+2163	es_w_alianza	alianza	noun	people	alliance	تحالف			gender=f; article=la
+2164	es_w_altitud	altitud	noun	travel	altitude	ارتفاع			gender=f; article=la
+2165	es_w_antepasado	antepasado	noun	family	ancestor	سلف			gender=m; article=el
+2166	es_w_angulo	ángulo	noun	school	angle	زاوية			gender=m; article=el
+2167	es_w_aplauso	aplauso	noun	leisure	applause	تصفيق			gender=m; article=el
+2168	es_w_aprobacion	aprobación	noun	people	approval	موافقة			gender=f; article=la
+2169	es_w_flecha	flecha	noun	function	arrow	سهم			gender=f; article=la
+2170	es_w_subasta	subasta	noun	shopping	auction	مزاد			gender=f; article=la
+2171	es_w_avalancha	avalancha	noun	nature	avalanche	انهيار ثلجي			gender=f; article=la
+2172	es_w_hacha	hacha	noun	home	axe	فأس			gender=f; article=la
+2173	es_w_insignia	insignia	noun	function	badge	شارة			gender=f; article=la
+2174	es_w_cebo	cebo	noun	leisure	bait	طُعم			gender=m; article=el
+2175	es_w_bambu	bambú	noun	nature	bamboo	خيزران			gender=m; article=el
+2176	es_w_venda	venda	noun	health	bandage	ضمادة			gender=f; article=la
+2177	es_w_pancarta	pancarta	noun	communication	banner	لافتة			gender=f; article=la
+2178	es_w_establo	establo	noun	nature	stable, barn	إسطبل			gender=m; article=el
+2179	es_w_barril	barril	noun	home	barrel	برميل		barriles	gender=m; article=el
+2180	es_w_bestia	bestia	noun	animals	beast	وحش			gender=f; article=la
+2181	es_w_biografia	biografía	noun	leisure	biography	سيرة ذاتية			gender=f; article=la
+2182	es_w_bendicion	bendición	noun	people	blessing	بركة			gender=f; article=la
+2183	es_w_ampolla	ampolla	noun	health	blister	بثرة			gender=f; article=la
+2184	es_w_boxeo	boxeo	noun	leisure	boxing	الملاكمة			gender=m; article=el
+2185	es_w_freno	freno	noun	travel	brake	مكبح			gender=m; article=el
+2186	es_w_soborno	soborno	noun	people	bribe	رشوة			gender=m; article=el
+2187	es_w_moreton	moretón	noun	health	bruise	كدمة			gender=m; article=el
+2188	es_w_boletin	boletín	noun	communication	bulletin	نشرة			gender=m; article=el
+2189	es_w_fardo	fardo	noun	function	bundle	حزمة			gender=m; article=el
+2190	es_w_repollo	repollo	noun	food	cabbage	ملفوف			gender=m; article=el
+2191	es_w_lienzo	lienzo	noun	leisure	canvas	قماش الرسم			gender=m; article=el
+2192	es_w_carrito	carrito	noun	shopping	trolley	عربة التسوّق			gender=m; article=el
+2193	es_w_catalogo	catálogo	noun	shopping	catalogue	كتالوج			gender=m; article=el
+2194	es_w_celula	célula	noun	school	cell	خليّة			gender=f; article=la
+2195	es_w_cementerio	cementerio	noun	places	cemetery	مقبرة			gender=m; article=el
+2196	es_w_chimenea	chimenea	noun	home	chimney, fireplace	مدخنة، موقد			gender=f; article=la
+2197	es_w_coro	coro	noun	leisure	choir	جوقة			gender=m; article=el
+2198	es_w_cigarrillo	cigarrillo	noun	health	cigarette	سيجارة			gender=m; article=el
+2199	es_w_cabina	cabina	noun	travel	cabin, cockpit	قمرة			gender=f; article=la
+2200	es_w_ataud	ataúd	noun	people	coffin	تابوت			gender=m; article=el
+2201	es_w_columna	columna	noun	places	column	عمود			gender=f; article=la
+2202	es_w_cometa	cometa	noun	nature	comet; kite	مذنّب؛ طائرة ورقية			gender=m; article=el
+2203	es_w_comision	comisión	noun	work	commission	عمولة؛ لجنة			gender=f; article=la
+2204	es_w_brujula	brújula	noun	travel	compass	بوصلة			gender=f; article=la
+2205	es_w_componente	componente	noun	function	component	مكوّن			gender=m; article=el
+2206	es_w_conciencia	conciencia	noun	mind	conscience	ضمير			gender=f; article=la
+2207	es_w_consentimiento	consentimiento	noun	people	consent	موافقة			gender=m; article=el
+2208	es_w_constitucion	constitución	noun	people	constitution	دستور			gender=f; article=la
+2209	es_w_consumidor	consumidor	noun	shopping	consumer	مستهلك		consumidores	gender=m; article=el
+2210	es_w_cordon	cordón	noun	home	cord, lace	خيط، رباط		cordones	gender=m; article=el
+2211	es_w_consejero	consejero	noun	work	counsellor	مستشار			gender=m; article=el
+2212	es_w_cortesia	cortesía	noun	people	courtesy	لباقة			gender=f; article=la
+2213	es_w_cobarde	cobarde	noun	people	coward	جبان			gender=mf; article=el/la
+2214	es_w_cangrejo	cangrejo	noun	animals	crab	سلطعون			gender=m; article=el
+2215	es_w_grua	grúa	noun	work	crane; tow truck	رافعة			gender=f; article=la
+2216	es_w_corteza	corteza	noun	food	crust, bark	قشرة			gender=f; article=la
+2217	es_w_cubiertos	cubiertos	noun	home	cutlery	أدوات المائدة			gender=m; article=el
+2218	es_w_lacteos	lácteos	noun	food	dairy products	ألبان			gender=m; article=el
+2219	es_w_presa	presa	noun	nature	dam	سدّ			gender=f; article=la
+2220	es_w_ciervo	ciervo	noun	animals	deer	غزال			gender=m; article=el
+2221	es_w_defensa	defensa	noun	people	defence	دفاع			gender=f; article=la
+2222	es_w_delegado	delegado	noun	work	delegate	مندوب			gender=m; article=el
+2223	es_w_descendiente	descendiente	noun	family	descendant	سليل			gender=mf; article=el/la
+2224	es_w_rocio	rocío	noun	weather	dew	ندى			gender=m; article=el
+2225	es_w_dialecto	dialecto	noun	communication	dialect	لهجة			gender=m; article=el
+2226	es_w_dignidad	dignidad	noun	people	dignity	كرامة			gender=f; article=la
+2227	es_w_dilema	dilema	noun	mind	dilemma	معضلة			gender=m; article=el
+2228	es_w_disputa	disputa	noun	people	dispute	نزاع			gender=f; article=la
+2229	es_w_zanja	zanja	noun	places	ditch	خندق			gender=f; article=la
+2230	es_w_muelle	muelle	noun	travel	dock, pier	رصيف			gender=m; article=el
+2231	es_w_cupula	cúpula	noun	places	dome	قبّة			gender=f; article=la
+2232	es_w_masa	masa	noun	food	dough	عجين			gender=f; article=la
+2233	es_w_dragon	dragón	noun	animals	dragon	تنّين			gender=m; article=el
+2234	es_w_taladro	taladro	noun	work	drill	مثقاب			gender=m; article=el
+2235	es_w_duna	duna	noun	nature	dune	كثيب			gender=f; article=la
+2236	es_w_dinastia	dinastía	noun	people	dynasty	سلالة			gender=f; article=la
+2237	es_w_eclipse	eclipse	noun	nature	eclipse	كسوف			gender=m; article=el
+2238	es_w_entusiasmo	entusiasmo	noun	feelings	enthusiasm	حماس			gender=m; article=el
+2239	es_w_envidia	envidia	noun	feelings	envy	حسد			gender=f; article=la
+2240	es_w_ecuador	ecuador	noun	places	equator	خطّ الاستواء			gender=m; article=el
+2241	es_w_etica	ética	noun	mind	ethics	أخلاقيات			gender=f; article=la
+2242	es_w_exilio	exilio	noun	people	exile	منفى			gender=m; article=el
+2243	es_w_fabula	fábula	noun	leisure	fable	حكاية رمزية			gender=f; article=la
+2244	es_w_facultad	facultad	noun	school	faculty	كلّية			gender=f; article=la
+2245	es_w_hambruna	hambruna	noun	people	famine	مجاعة			gender=f; article=la
+2246	es_w_colmillo	colmillo	noun	animals	fang	ناب			gender=m; article=el
+2247	es_w_ferry	ferry	noun	travel	ferry	عبّارة			gender=m; article=el
+2248	es_w_granero	granero	noun	nature	barn, granary	مخزن الحبوب			gender=m; article=el
+2249	es_w_hipoteca	hipoteca	noun	shopping	mortgage	رهن عقاري			gender=f; article=la
+2250	es_w_huerto	huerto	noun	nature	vegetable garden	بستان			gender=m; article=el
+2251	es_w_iman	imán	noun	function	magnet	مغناطيس			gender=m; article=el
+2252	es_w_jarabe	jarabe	noun	health	syrup	شراب دوائي			gender=m; article=el
+2253	es_w_jardinero	jardinero	noun	work	gardener	بستاني			gender=m; article=el
+2254	es_w_lagrima	lágrima	noun	body	tear	دمعة			gender=f; article=la
+2255	es_w_lena	leña	noun	nature	firewood	حطب			gender=f; article=la
+2256	es_w_lince	lince	noun	animals	lynx	وشق			gender=m; article=el
+2257	es_w_llanura	llanura	noun	nature	plain	سهل			gender=f; article=la
+2258	es_w_lujo	lujo	noun	shopping	luxury	رفاهية			gender=m; article=el
+2259	es_w_madrugada	madrugada	noun	time	early morning	الفجر، الساعات الأولى			gender=f; article=la
+2260	es_w_manga	manga	noun	clothes	sleeve	كمّ			gender=f; article=la
+2261	es_w_mapache	mapache	noun	animals	raccoon	راكون			gender=m; article=el
+2262	es_w_marea	marea	noun	nature	tide	مدّ وجزر			gender=f; article=la
+2263	es_w_mendigo	mendigo	noun	people	beggar	متسوّل			gender=m; article=el
+2264	es_w_menton	mentón	noun	body	chin	ذقن			gender=m; article=el
+2265	es_w_mercancia	mercancía	noun	shopping	goods	بضائع			gender=f; article=la
+2266	es_w_mina	mina	noun	places	mine	منجم			gender=f; article=la
+2267	es_w_molino	molino	noun	places	mill	طاحونة			gender=m; article=el
+2268	es_w_mostaza	mostaza	noun	food	mustard	خردل			gender=f; article=la
+2269	es_w_nuca	nuca	noun	body	nape	قفا			gender=f; article=la
+2270	es_w_obrero	obrero	noun	work	labourer	عامل			gender=m; article=el
+2271	es_w_oruga	oruga	noun	animals	caterpillar	يرقة			gender=f; article=la
+2272	es_w_paja	paja	noun	nature	straw	قشّ			gender=f; article=la
+2273	es_w_pala	pala	noun	home	shovel, spade	مجرفة			gender=f; article=la
+2274	es_w_parpado	párpado	noun	body	eyelid	جفن			gender=m; article=el
+2275	es_w_pasto	pasto	noun	nature	pasture, grass	مرعى			gender=m; article=el
+2276	es_w_pavo	pavo	noun	animals	turkey	ديك رومي			gender=m; article=el
+2277	es_w_pestana	pestaña	noun	body	eyelash	رمش			gender=f; article=la
+2278	es_w_petroleo	petróleo	noun	nature	oil, petroleum	نفط			gender=m; article=el
+2279	es_w_pinzas	pinzas	noun	home	tweezers, clothes pegs	ملقط			gender=f; article=la
+2280	es_w_polilla	polilla	noun	animals	moth	عثّة			gender=f; article=la
+2281	es_w_pomada	pomada	noun	health	ointment	مرهم			gender=f; article=la
+2282	es_w_punado	puñado	noun	function	handful	حفنة			gender=m; article=el
+2283	es_w_pupitre	pupitre	noun	school	school desk	مقعد دراسي			gender=m; article=el
+2284	es_w_quemadura	quemadura	noun	health	burn	حرق			gender=f; article=la
+2285	es_w_rebano	rebaño	noun	animals	flock, herd	قطيع			gender=m; article=el
+2286	es_w_recompensa	recompensa	noun	people	reward	مكافأة			gender=f; article=la
+2287	es_w_refugio	refugio	noun	places	shelter	ملجأ			gender=m; article=el
+2288	es_w_remo	remo	noun	leisure	oar	مجداف			gender=m; article=el
+2289	es_w_rodaja	rodaja	noun	food	slice	شريحة			gender=f; article=la
+2290	es_w_ruina	ruina	noun	places	ruin	خراب			gender=f; article=la
+2291	es_w_sabiduria	sabiduría	noun	mind	wisdom	حكمة			gender=f; article=la
+2292	es_w_sacerdote	sacerdote	noun	people	priest	كاهن			gender=m; article=el
+2293	es_w_salchicha	salchicha	noun	food	sausage	نقانق			gender=f; article=la
+2294	es_w_sardina	sardina	noun	food	sardine	سردين			gender=f; article=la
+2295	es_w_sauce	sauce	noun	nature	willow	صفصاف			gender=m; article=el
+2296	es_w_sierra	sierra	noun	work	saw; mountain range	منشار؛ سلسلة جبال			gender=f; article=la
+2297	es_w_sirena	sirena	noun	people	mermaid; siren	حورية البحر؛ صفّارة			gender=f; article=la
+2298	es_w_soga	soga	noun	home	rope	حبل			gender=f; article=la
+2299	es_w_sudor	sudor	noun	body	sweat	عرق			gender=m; article=el
+2300	es_w_tabla	tabla	noun	home	board, plank	لوح			gender=f; article=la
+2301	es_w_tanque	tanque	noun	work	tank	خزّان			gender=m; article=el
+2302	es_w_tapa	tapa	noun	home	lid; snack	غطاء؛ مقبّلات			gender=f; article=la
+2303	es_w_telon	telón	noun	leisure	curtain (theatre)	ستار المسرح			gender=m; article=el
+2304	es_w_termometro	termómetro	noun	health	thermometer	ميزان حرارة			gender=m; article=el
+2305	es_w_tobogan	tobogán	noun	leisure	slide	زلّاقة			gender=m; article=el
+2306	es_w_tornillo	tornillo	noun	home	screw	برغي			gender=m; article=el
+2307	es_w_trineo	trineo	noun	leisure	sledge	زلّاجة			gender=m; article=el
+2308	es_w_trono	trono	noun	people	throne	عرش			gender=m; article=el
+2309	es_w_tumbona	tumbona	noun	leisure	deckchair	كرسي الشاطئ			gender=f; article=la
+2310	es_w_urna	urna	noun	people	ballot box	صندوق الاقتراع			gender=f; article=la
+2311	es_w_vagon	vagón	noun	travel	carriage, wagon	عربة قطار			gender=m; article=el
+2312	es_w_veneno	veneno	noun	health	poison	سمّ			gender=m; article=el
+2313	es_w_ventilador	ventilador	noun	home	fan	مروحة			gender=m; article=el
+2314	es_w_vinedo	viñedo	noun	nature	vineyard	كرم عنب			gender=m; article=el
+2315	es_w_volcan	volcán	noun	nature	volcano	بركان			gender=m; article=el
+2316	es_w_yate	yate	noun	travel	yacht	يخت			gender=m; article=el
+2317	es_w_yema	yema	noun	food	yolk	صفار البيض			gender=f; article=la
+2318	es_w_zumbido	zumbido	noun	senses	buzz	طنين			gender=m; article=el
+2319	es_w_fertil	fértil	adj	nature	fertile	خصب
+2320	es_w_feroz	feroz	adj	descriptions	fierce	شرس		feroces
+2321	es_w_fragil	frágil	adj	descriptions	fragile	هشّ
+2322	es_w_franco	franco	adj	people	frank	صريح
+2323	es_w_genuino	genuino	adj	descriptions	genuine	حقيقي
+2324	es_w_sombrio	sombrío	adj	feelings	gloomy	كئيب
+2325	es_w_codicioso	codicioso	adj	people	greedy	جشع
+2326	es_w_aspero	áspero	adj	descriptions	rough, harsh	خشن
+2327	es_w_ocioso	ocioso	adj	people	idle	كسول
+2328	es_w_inmenso	inmenso	adj	descriptions	immense	هائل
+2329	es_w_inevitable	inevitable	adj	function	inevitable	حتمي
+2330	es_w_infinito	infinito	adj	numbers	infinite	لانهائي
+2331	es_w_suelto	suelto	adj	clothes	loose	فضفاض
+2332	es_w_ingenuo	ingenuo	adj	people	naive	ساذج
+2333	es_w_noble	noble	adj	people	noble	نبيل
+2334	es_w_obediente	obediente	adj	people	obedient	مطيع
+2335	es_w_palido	pálido	adj	descriptions	pale	شاحب
+2336	es_w_jugueton	juguetón	adj	people	playful	مرح		juguetona
+2337	es_w_puntual	puntual	adj	time	punctual	دقيق في مواعيده
+2338	es_w_imprudente	imprudente	adj	people	reckless	متهوّر
+2339	es_w_sagrado	sagrado	adj	people	sacred	مقدّس
+2340	es_w_somnoliento	somnoliento	adj	feelings	sleepy	نعسان
+2341	es_w_resbaladizo	resbaladizo	adj	descriptions	slippery	زلق
+2342	es_w_empinado	empinado	adj	places	steep	شديد الانحدار
+2343	es_w_pegajoso	pegajoso	adj	descriptions	sticky	لزج
+2344	es_w_terco	terco	adj	people	stubborn	عنيد
+2345	es_w_veloz	veloz	adj	descriptions	swift	سريع		veloces
+2346	es_w_vago	vago	adj	people	lazy; vague	كسول؛ غامض
+2347	es_w_intenso	intenso	adj	descriptions	intense	شديد
+2348	es_w_mental	mental	adj	health	mental	عقلي
+2349	es_w_responsable	responsable	adj	people	responsible	مسؤول
+2350	es_w_adinerado	adinerado	adj	people	wealthy	ثريّ
+2351	es_w_vivido	vívido	adj	descriptions	vivid	حيّ
+2352	es_w_grosero	grosero	adj	people	rude	وقح
+2353	es_w_tacano	tacaño	adj	people	stingy	بخيل
+2354	es_w_astuto	astuto	adj	people	cunning	ماكر
+2355	es_w_travieso	travieso	adj	people	naughty	شقيّ
+2356	es_w_olvidadizo	olvidadizo	adj	people	forgetful	كثير النسيان
+2357	es_w_desierto_adj	desierto adj	adj	places	deserted	مهجور		desierto
+2358	es_w_fallido	fallido	adj	function	failed	فاشل
+2359	es_w_anteayer	anteayer	adv	time	the day before yesterday	أوّل أمس
+2360	es_w_pasado_manana	pasado mañana	adv	time	the day after tomorrow	بعد غد
+2361	es_w_cada_vez_mas	cada vez más	adv	function	more and more	أكثر فأكثر
+2362	es_w_poco_a_poco	poco a poco	adv	time	little by little	شيئًا فشيئًا
+2363	es_w_en_voz_alta	en voz alta	adv	communication	out loud	بصوت عالٍ
+2364	es_w_en_voz_baja	en voz baja	adv	communication	quietly, in a low voice	بصوت منخفض
+2365	es_w_de_pie	de pie	adv	body	standing	واقفًا
+2366	es_w_a_pie	a pie	adv	movement	on foot	سيرًا على الأقدام
+2367	es_w_al_reves	al revés	adv	function	the wrong way round	بالعكس
+2368	es_w_a_proposito	a propósito	adv	communication	by the way; on purpose	بالمناسبة؛ عمدًا
+2369	es_w_cuanto_antes	cuanto antes	adv	time	as soon as possible	في أقرب وقت
+2370	es_w_ardilla	ardilla	noun	animals	squirrel	سنجاب			gender=f; article=la
+2371	es_w_buho	búho	noun	animals	owl	بومة			gender=m; article=el
+2372	es_w_cuervo	cuervo	noun	animals	crow, raven	غراب			gender=m; article=el
+2373	es_w_lagartija	lagartija	noun	animals	small lizard	سحلية صغيرة			gender=f; article=la
+2374	es_w_cisne	cisne	noun	animals	swan	بجعة			gender=m; article=el
+2375	es_w_ganso	ganso	noun	animals	goose	إوزّة			gender=m; article=el
+2376	es_w_erizo	erizo	noun	animals	hedgehog	قنفذ			gender=m; article=el
+2377	es_w_mariquita	mariquita	noun	animals	ladybird	خنفساء الدعسوقة			gender=f; article=la
+2378	es_w_avispa	avispa	noun	animals	wasp	دبّور			gender=f; article=la
+2379	es_w_saltamontes	saltamontes	noun	animals	grasshopper	جندب			gender=m; article=el
+2380	es_w_caracol	caracol	noun	animals	snail	حلزون		caracoles	gender=m; article=el
+2381	es_w_murcielago	murciélago	noun	animals	bat	خفّاش			gender=m; article=el
+2382	es_w_pinguino	pinguino	noun	animals	penguin	بطريق		pingüino	gender=m; article=el
+2383	es_w_avestruz	avestruz	noun	animals	ostrich	نعامة		avestruces	gender=m; article=el
+2384	es_w_pavo_real	pavo real	noun	animals	peacock	طاووس			gender=m; article=el
+2385	es_w_foca	foca	noun	animals	seal	فقمة			gender=f; article=la
+2386	es_w_pulpo	pulpo	noun	animals	octopus	أخطبوط			gender=m; article=el
+2387	es_w_medusa	medusa	noun	animals	jellyfish	قنديل البحر			gender=f; article=la
+2388	es_w_almeja	almeja	noun	food	clam	محار			gender=f; article=la
+2389	es_w_langosta	langosta	noun	food	lobster	كركند			gender=f; article=la
+2390	es_w_candado	candado	noun	home	padlock	قفل			gender=m; article=el
+2391	es_w_bisagra	bisagra	noun	home	hinge	مفصّلة			gender=f; article=la
+2392	es_w_interruptor	interruptor	noun	home	switch	مفتاح كهربائي		interruptores	gender=m; article=el
+2393	es_w_radiador	radiador	noun	home	radiator	مشعاع		radiadores	gender=m; article=el
+2394	es_w_fregadero	fregadero	noun	home	kitchen sink	مغسلة المطبخ			gender=m; article=el
+2395	es_w_lavabo	lavabo	noun	home	washbasin	حوض الغسيل			gender=m; article=el
+2396	es_w_banera	bañera	noun	home	bathtub	حوض الاستحمام			gender=f; article=la
+2397	es_w_percha	percha	noun	home	coat hanger	علّاقة ملابس			gender=f; article=la
+2398	es_w_esponja	esponja	noun	home	sponge	إسفنجة			gender=f; article=la
+2399	es_w_espinacas	espinacas	noun	food	spinach	سبانخ			gender=f; article=la
+2400	es_w_berenjena	berenjena	noun	food	aubergine	باذنجان			gender=f; article=la
