@@ -2399,3 +2399,303 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2398	zh_w_huihuang	辉煌	adj	descriptions	splendid	رائع	huīhuáng		hsk=6; trad=輝煌
 2399	zh_w_jianding	坚定	adj	people	firm, resolute	حازم	jiāndìng		hsk=5; trad=堅定
 2400	zh_w_nanmian	难免	adj	function	hard to avoid	لا مفرّ منه	nánmiǎn		hsk=5; trad=難免
+2401	zh_w_feichu	废除	verb	society	to abolish	يلغي	fèichú		hsk=6; trad=廢除
+2402	zh_w_jiasu	加速	verb	movement	to accelerate	يسرّع	jiāsù		hsk=5; trad=加速
+2403	zh_w_liuxue	流血	verb	health	to bleed	ينزف	liúxuè		hsk=6; trad=流血
+2404	zh_w_chonghe	重合	verb	time	to coincide, to overlap	يتطابق	chónghé		hsk=6; trad=重合
+2405	zh_w_bianzuan	编纂	verb	work	to compile	يجمع ويؤلّف	biānzuǎn		hsk=6; trad=編纂
+2406	zh_w_ningshi	凝视	verb	senses	to gaze at	يحدّق	níngshì		hsk=6; trad=凝視
+2407	zh_w_kouchu	扣除	verb	shopping	to deduct	يخصم	kòuchú		hsk=6; trad=扣除
+2408	zh_w_chaichu	拆除	verb	actions	to demolish	يهدم	chāichú		hsk=6; trad=拆除
+2409	zh_w_boduo	剥夺	verb	society	to deprive	يحرم	bōduó		hsk=6; trad=剝奪
+2410	zh_w_ehua	恶化	verb	health	to deteriorate	يتدهور	èhuà		hsk=6; trad=惡化
+2411	zh_w_xishi	稀释	verb	food	to dilute	يخفّف	xīshì		hsk=6; trad=稀釋
+2412	zh_w_waiqu	歪曲	verb	communication	to distort	يشوّه	wāiqū		hsk=6; trad=歪曲
+2413	zh_w_cheli	撤离	verb	actions	to evacuate	يخلي	chèlí		hsk=6; trad=撤離
+2414	zh_w_zhengfa	蒸发	verb	nature	to evaporate	يتبخّر	zhēngfā		hsk=6; trad=蒸發
+2415	zh_w_paichu	排除	verb	actions	to exclude, to rule out	يستبعد	páichú		hsk=6; trad=排除
+2416	zh_w_boxue	剥削	verb	work	to exploit	يستغلّ	bōxuē		hsk=6; trad=剝削
+2417	zh_w_bodong	波动	verb	function	to fluctuate	يتقلّب	bōdòng		hsk=6; trad=波動
+2418	zh_w_weizao	伪造	verb	work	to forge, to fake	يزوّر	wěizào		hsk=6; trad=偽造
+2419	zh_w_chuanxi	喘息	verb	body	to pant, to gasp	يلهث	chuǎnxī		hsk=6; trad=喘息
+2420	zh_w_mo_grind	磨	verb	food	to grind	يطحن	mò		hsk=6; trad=磨
+2421	zh_w_shenyin	呻吟	verb	body	to groan	يئنّ	shēnyín		hsk=6; trad=呻吟
+2422	zh_w_zu_ai	阻碍	verb	actions	to hinder	يعيق	zǔ'ài		hsk=6; trad=阻礙
+2423	zh_w_hengchang	哼唱	verb	leisure	to hum	يدندن	hēngchàng		hsk=6; trad=哼唱
+2424	zh_w_xiru	吸入	verb	body	to inhale	يستنشق	xīrù		hsk=6; trad=吸入
+2425	zh_w_zhushe	注射	verb	health	to inject	يحقن	zhùshè		hsk=6; trad=注射
+2426	zh_w_ganyu	干预	verb	people	to intervene	يتدخّل	gānyù		hsk=6; trad=干預
+2427	zh_w_ciji	刺激	verb	feelings	to stimulate, to irritate	يحفّز، يهيّج	cìjī		hsk=5; trad=刺激
+2428	zh_w_hebing	合并	verb	work	to merge	يدمج	hébìng		hsk=6; trad=合併
+2429	zh_w_daohang	导航	verb	travel	to navigate; navigation	يرشد؛ ملاحة	dǎoháng		hsk=6; trad=導航
+2430	zh_w_yilou	遗漏	verb	actions	to omit, to leave out	يغفل	yílòu		hsk=6; trad=遺漏
+2431	zh_w_yapo	压迫	verb	society	to oppress	يضطهد	yāpò		hsk=6; trad=壓迫
+2432	zh_w_chuantou	穿透	verb	actions	to penetrate	يخترق	chuāntòu		hsk=6; trad=穿透
+2433	zh_w_cichuan	刺穿	verb	actions	to pierce	يثقب	cìchuān		hsk=6; trad=刺穿
+2434	zh_w_chensi	沉思	verb	mind	to ponder	يتأمّل	chénsī		hsk=6; trad=沉思
+2435	zh_w_xuangao	宣告	verb	communication	to proclaim	يعلن	xuāngào		hsk=6; trad=宣告
+2436	zh_w_qisu	起诉	verb	society	to prosecute, to sue	يقاضي	qǐsù		hsk=6; trad=起訴
+2437	zh_w_tiaoxin	挑衅	verb	people	to provoke	يستفزّ	tiǎoxìn		hsk=6; trad=挑釁
+2438	zh_w_fushe	辐射	verb	nature	to radiate; radiation	يشعّ؛ إشعاع	fúshè		hsk=6; trad=輻射
+2439	zh_w_hejie	和解	verb	people	to reconcile	يتصالح	héjiě		hsk=6; trad=和解
+2440	zh_w_tilian	提炼	verb	actions	to refine, to extract	يكرّر	tíliàn		hsk=6; trad=提煉
+2441	zh_w_fanxin	翻新	verb	home	to renovate	يجدّد	fānxīn		hsk=6; trad=翻新
+2442	zh_w_changhuan	偿还	verb	shopping	to repay	يسدّد	chánghuán		hsk=6; trad=償還
+2443	zh_w_chongxi	冲洗	verb	home	to rinse	يشطف	chōngxǐ		hsk=6; trad=沖洗
+2444	zh_w_youdang	游荡	verb	movement	to roam, to wander	يتجوّل	yóudàng		hsk=6; trad=遊蕩
+2445	zh_w_fulan	腐烂	verb	nature	to rot	يتعفّن	fǔlàn		hsk=6; trad=腐爛
+2446	zh_w_zebei	责备	verb	people	to blame, to scold	يلوم	zébèi		hsk=6; trad=責備
+2447	zh_w_tumo	涂抹	verb	actions	to smear, to scribble	يلطّخ	túmǒ		hsk=6; trad=塗抹
+2448	zh_w_moshou	没收	verb	society	to confiscate	يصادر	mòshōu		hsk=6; trad=沒收
+2449	zh_w_fensui	粉碎	verb	actions	to smash	يحطّم	fěnsuì		hsk=6; trad=粉碎
+2450	zh_w_songjian	耸肩	verb	body	to shrug	يهزّ كتفيه	sǒngjiān		hsk=6; trad=聳肩
+2451	zh_w_dun_simmer	炖	verb	food	to stew	يطهو ببطء	dùn		hsk=6; trad=燉
+2452	zh_w_liulan	浏览	verb	leisure	to browse, to skim	يتصفّح	liúlǎn		hsk=5; trad=瀏覽
+2453	zh_w_tuzai	屠宰	verb	animals	to slaughter	يذبح	túzǎi		hsk=6; trad=屠宰
+2454	zh_w_chouqi	抽泣	verb	feelings	to sob	ينتحب	chōuqì		hsk=6; trad=抽泣
+2455	zh_w_bozhong	播种	verb	nature	to sow	يبذر	bōzhòng		hsk=6; trad=播種
+2456	zh_w_niushang	扭伤	verb	health	to sprain	يلوي	niǔshāng		hsk=6; trad=扭傷
+2457	zh_w_fa_ya	发芽	verb	nature	to sprout	ينبت	fāyá		hsk=6; trad=發芽
+2458	zh_w_jieba	结巴	verb	communication	to stammer	يتلعثم	jiēba		hsk=6; trad=結巴
+2459	zh_w_jingxia	惊吓	verb	feelings	to frighten	يفزع	jīngxià		hsk=6; trad=驚嚇
+2460	zh_w_yanmo	淹没	verb	nature	to submerge	يغمر	yānmò		hsk=6; trad=淹沒
+2461	zh_w_yaobai	摇摆	verb	movement	to sway, to swing	يتمايل	yáobǎi		hsk=6; trad=搖擺
+2462	zh_w_zhongzhang	肿胀	verb	health	to swell	ينتفخ	zhǒngzhàng		hsk=6; trad=腫脹
+2463	zh_w_qingxie	倾斜	verb	movement	to tilt	يميل	qīngxié		hsk=6; trad=傾斜
+2464	zh_w_chuanshu	传输	verb	communication	to transmit	ينقل	chuánshū		hsk=6; trad=傳輸
+2465	zh_w_diaoxie	凋谢	verb	nature	to wither	يذبل	diāoxiè		hsk=6; trad=凋謝
+2466	zh_w_kewang	渴望	verb	feelings	to long for	يتوق	kěwàng		hsk=5; trad=渴望
+2467	zh_w_xiaochu	消除	verb	actions	to eliminate	يزيل	xiāochú		hsk=5; trad=消除
+2468	zh_w_fangda	放大	verb	actions	to enlarge	يكبّر	fàngdà		hsk=6; trad=放大
+2469	zh_w_chaoyue	超越	verb	travel	to overtake, to surpass	يتجاوز	chāoyuè		hsk=6; trad=超越
+2470	zh_w_panni	叛逆	verb	society	to rebel; rebellious	يتمرّد؛ متمرّد	pànnì		hsk=6; trad=叛逆
+2471	zh_w_jiagu	加固	verb	actions	to reinforce	يعزّز	jiāgù		hsk=6; trad=加固
+2472	zh_w_cunru	存入	verb	shopping	to deposit	يودع	cúnrù		hsk=6; trad=存入
+2473	zh_w_zhuangji	撞击	verb	travel	to collide	يصطدم	zhuàngjī		hsk=6; trad=撞擊
+2474	zh_w_tiqu	提取	verb	actions	to extract	يستخرج	tíqǔ		hsk=6; trad=提取
+2475	zh_w_tuiduan	推断	verb	mind	to infer, to presume	يستنتج	tuīduàn		hsk=6; trad=推斷
+2476	zh_w_dapenti	打喷嚏	verb	body	to sneeze	يعطس	dǎ pēntì		hsk=5; trad=打噴嚏
+2477	zh_w_yundao	晕倒	verb	health	to faint	يغمى عليه	yūndǎo		hsk=6; trad=暈倒
+2478	zh_w_dahulu	打呼噜	verb	body	to snore	يشخر	dǎ hūlu		hsk=6; trad=打呼嚕
+2479	zh_w_eryu	耳语	verb	communication	to whisper	يهمس	ěryǔ		hsk=6; trad=耳語
+2480	zh_w_chuiniu	吹牛	verb	communication	to boast	يتباهى	chuīniú		hsk=6; trad=吹牛
+2481	zh_w_taojiahuanjia	讨价还价	verb	shopping	to haggle	يساوم	tǎojià huánjià		hsk=6; trad=討價還價
+2482	zh_w_rou_knead	揉	verb	food	to knead, to rub	يعجن، يفرك	róu		hsk=6; trad=揉
+2483	zh_w_xue_peel	削	verb	food	to peel, to pare	يقشّر	xiāo		hsk=6; trad=削
+2484	zh_w_zha_fry	炸	verb	food	to deep-fry, to explode	يقلي، ينفجر	zhá		hsk=5; trad=炸
+2485	zh_w_huadao	滑倒	verb	movement	to slip and fall	ينزلق ويقع	huádǎo		hsk=6; trad=滑倒
+2486	zh_w_bandao	绊倒	verb	movement	to trip	يتعثّر	bàndǎo		hsk=6; trad=絆倒
+2487	zh_w_chaoxiao	嘲笑	verb	people	to mock	يسخر	cháoxiào		hsk=6; trad=嘲笑
+2488	zh_w_chengfa	惩罚	verb	people	to punish; punishment	يعاقب؛ عقوبة	chéngfá		hsk=6; trad=懲罰
+2489	zh_w_jidu	嫉妒	verb	feelings	to envy	يحسد	jídù		hsk=6; trad=嫉妒
+2490	zh_w_xiukui	羞愧	adj	feelings	ashamed	خجلان	xiūkuì		hsk=6; trad=羞愧
+2491	zh_w_duocang	躲藏	verb	actions	to hide	يختبئ	duǒcáng		hsk=6; trad=躲藏
+2492	zh_w_zhantie	粘贴	verb	actions	to paste	يلصق	zhāntiē		hsk=5; trad=粘貼
+2493	zh_w_yaohuang	摇晃	verb	actions	to shake	يهزّ	yáohuàng		hsk=6; trad=搖晃
+2494	zh_w_bachu	拔	verb	nature	to pull out	يقتلع	bá		hsk=6; trad=拔
+2495	zh_w_guangai	灌溉	verb	nature	to irrigate	يروي	guàngài		hsk=6; trad=灌溉
+2496	zh_w_rongliang	容量	noun	function	capacity	سعة	róngliàng		measure=种; hsk=6; trad=容量
+2497	zh_w_juankuan	捐款	noun	people	donation	تبرّع	juānkuǎn		measure=笔; hsk=6; trad=捐款
+2498	zh_w_beitong	悲痛	noun	feelings	grief	حزن عميق	bēitòng		measure=种; hsk=6; trad=悲痛
+2499	zh_w_guanzi	罐子	noun	home	jar, can	مرطبان	guànzi		measure=个; hsk=6; trad=罐子
+2500	zh_w_jirou	肌肉	noun	body	muscle	عضلة	jīròu		measure=块; hsk=5; trad=肌肉
+2501	zh_w_zhengju	证据	noun	function	evidence, proof	دليل	zhèngjù		measure=个; hsk=5; trad=證據
+2502	zh_w_futou	斧头	noun	work	axe	فأس	fǔtou		measure=把; hsk=6; trad=斧頭
+2503	zh_w_gucang	谷仓	noun	places	barn	مخزن حبوب	gǔcāng		measure=个; hsk=6; trad=穀倉
+2504	zh_w_saozhou	扫帚	noun	home	broom	مكنسة	sàozhou		measure=把; hsk=6; trad=掃帚
+2505	zh_w_huabu	画布	noun	leisure	canvas	قماش رسم	huàbù		measure=块; hsk=6; trad=畫布
+2506	zh_w_yancong	烟囱	noun	home	chimney	مدخنة	yāncōng		measure=个; hsk=6; trad=煙囪
+2507	zh_w_guancai	棺材	noun	society	coffin	تابوت	guāncai		measure=口; hsk=6; trad=棺材
+2508	zh_w_diaoche	吊车	noun	work	crane (machine)	رافعة	diàochē		measure=辆; hsk=6; trad=吊車
+2509	zh_w_ruzhipin	乳制品	noun	food	dairy products	منتجات الألبان	rǔzhìpǐn		measure=种; hsk=6; trad=乳製品
+2510	zh_w_shaqiu	沙丘	noun	nature	sand dune	كثيب رملي	shāqiū		measure=座; hsk=6; trad=沙丘
+2511	zh_w_zhuangyuan	庄园	noun	places	estate, manor	ضيعة	zhuāngyuán		measure=座; hsk=6; trad=莊園
+2512	zh_w_duya	毒牙	noun	animals	fang	ناب سامّ	dúyá		measure=颗; hsk=6; trad=毒牙
+2513	zh_w_qingchunqi	青春期	noun	people	adolescence	مراهقة	qīngchūnqī		measure=种; hsk=6; trad=青春期
+2514	zh_w_xuetu	学徒	noun	work	apprentice	متدرّب	xuétú		measure=个; hsk=6; trad=學徒
+2515	zh_w_binan	避难	verb	society	to take refuge	يلجأ	bìnàn		hsk=6; trad=避難
+2516	zh_w_xuanpiao	选票	noun	society	ballot paper, vote	ورقة اقتراع	xuǎnpiào		measure=张; hsk=6; trad=選票
+2517	zh_w_damai	大麦	noun	food	barley	شعير	dàmài		measure=种; hsk=6; trad=大麥
+2518	zh_w_niaozui	鸟嘴	noun	animals	beak	منقار	niǎozuǐ		measure=个; hsk=6; trad=鳥嘴
+2519	zh_w_baofengxue	暴风雪	noun	weather	blizzard	عاصفة ثلجية	bàofēngxuě		measure=场; hsk=6; trad=暴風雪
+2520	zh_w_yanshi	岩石	noun	nature	rock, boulder	صخرة	yánshí		measure=块; hsk=6; trad=岩石
+2521	zh_w_dongxue	洞穴	noun	animals	cave, burrow	جحر، كهف	dòngxué		measure=个; hsk=6; trad=洞穴
+2522	zh_w_zhuya	蛀牙	noun	health	tooth decay	تسوّس	zhùyá		measure=颗; hsk=6; trad=蛀牙
+2523	zh_w_shiti	尸体	noun	health	corpse	جثّة	shītǐ		measure=具; hsk=6; trad=屍體
+2524	zh_w_yaolan	摇篮	noun	home	cradle	مهد	yáolán		measure=个; hsk=6; trad=搖籃
+2525	zh_w_bishou	匕首	noun	society	dagger	خنجر	bǐshǒu		measure=把; hsk=6; trad=匕首
+2526	zh_w_canhai	残骸	noun	function	wreckage	حطام	cánhái		measure=块; hsk=6; trad=殘骸
+2527	zh_w_qinshi	侵蚀	verb	nature	to erode; erosion	يتآكل؛ تآكل	qīnshí		hsk=6; trad=侵蝕
+2528	zh_w_huafei	化肥	noun	nature	chemical fertiliser	سماد كيميائي	huàféi		measure=种; hsk=6; trad=化肥
+2529	zh_w_yaosai	要塞	noun	places	fortress	حصن	yàosài		measure=座; hsk=6; trad=要塞
+2530	zh_w_huashi	化石	noun	nature	fossil	أحفورة	huàshí		measure=块; hsk=6; trad=化石
+2531	zh_w_bianjing	边境	noun	places	border	حدود	biānjìng		measure=条; hsk=6; trad=邊境
+2532	zh_w_gan_en	感恩	verb	feelings	to be grateful	يمتنّ	gǎn'ēn		hsk=6; trad=感恩
+2533	zh_w_bingbao	冰雹	noun	weather	hail	برد	bīngbáo		measure=场; hsk=6; trad=冰雹
+2534	zh_w_caoduo	草垛	noun	nature	haystack	كومة قشّ	cǎoduò		measure=个; hsk=6; trad=草垛
+2535	zh_w_jichengren	继承人	noun	family	heir	وريث	jìchéngrén		measure=个; hsk=6; trad=繼承人
+2536	zh_w_heye	合页	noun	home	hinge	مفصّلة	héyè		measure=个; hsk=6; trad=合頁
+2537	zh_w_renzhi	人质	noun	society	hostage	رهينة	rénzhì		measure=名; hsk=6; trad=人質
+2538	zh_w_zanmeishi	赞美诗	noun	leisure	hymn	ترنيمة	zànměishī		measure=首; hsk=6; trad=讚美詩
+2539	zh_w_yichan	遗产	noun	family	inheritance, heritage	ميراث، تراث	yíchǎn		measure=笔; hsk=6; trad=遺產
+2540	zh_w_zhengzhi	正直	adj	feelings	upright, honest	نزيه	zhèngzhí		hsk=6; trad=正直
+2541	zh_w_fengci	讽刺	noun	communication	irony, satire	سخرية	fěngcì		measure=种; hsk=6; trad=諷刺
+2542	zh_w_dengta	灯塔	noun	places	lighthouse	منارة	dēngtǎ		measure=座; hsk=6; trad=燈塔
+2543	zh_w_yaolanqu	摇篮曲	noun	leisure	lullaby	تهويدة	yáolánqǔ		measure=首; hsk=6; trad=搖籃曲
+2544	zh_w_lianmin	怜悯	verb	feelings	to pity; mercy	يشفق	liánmǐn		hsk=6; trad=憐憫
+2545	zh_w_taoqi	淘气	adj	people	naughty	شقيّ	táoqì		hsk=6; trad=淘氣
+2546	zh_w_xiangqian	镶嵌	noun	leisure	inlay, mosaic	ترصيع	xiāngqiàn		measure=种; hsk=6; trad=鑲嵌
+2547	zh_w_xiangchou	乡愁	noun	feelings	homesickness	حنين للوطن	xiāngchóu		measure=种; hsk=6; trad=鄉愁
+2548	zh_w_shiyan_oath	誓言	noun	communication	oath, vow	قسم	shìyán		measure=个; hsk=6; trad=誓言
+2549	zh_w_guoyuan	果园	noun	nature	orchard	بستان	guǒyuán		measure=个; hsk=6; trad=果園
+2550	zh_w_gu_er	孤儿	noun	people	orphan	يتيم	gū'ér		measure=个; hsk=6; trad=孤兒
+2551	zh_w_muchang	牧场	noun	nature	pasture, ranch	مرعى	mùchǎng		measure=个; hsk=6; trad=牧場
+2552	zh_w_shizi_pebble	石子	noun	nature	pebble	حصاة	shízǐ		measure=颗; hsk=6; trad=石子
+2553	zh_w_chaoshengzhe	朝圣者	noun	society	pilgrim	حاجّ	cháoshèngzhě		measure=名; hsk=6; trad=朝聖者
+2554	zh_w_wenyi	瘟疫	noun	health	plague	طاعون	wēnyì		measure=场; hsk=6; trad=瘟疫
+2555	zh_w_pianjian	偏见	noun	society	prejudice	تحيّز	piānjiàn		measure=种; hsk=6; trad=偏見
+2556	zh_w_yuyan_prophecy	预言	noun	society	prophecy	نبوءة	yùyán		measure=个; hsk=6; trad=預言
+2557	zh_w_caishichang	采石场	noun	places	quarry	مقلع	cǎishíchǎng		measure=个; hsk=6; trad=採石場
+2558	zh_w_shujin	赎金	noun	society	ransom	فدية	shújīn		measure=笔; hsk=6; trad=贖金
+2559	zh_w_binansuo	避难所	noun	places	shelter, refuge	ملجأ	bìnànsuǒ		measure=个; hsk=6; trad=避難所
+2560	zh_w_huiheng	悔恨	noun	feelings	remorse	ندم	huǐhèn		measure=种; hsk=6; trad=悔恨
+2561	zh_w_shuiku	水库	noun	nature	reservoir	خزّان مياه	shuǐkù		measure=座; hsk=6; trad=水庫
+2562	zh_w_miyu	谜语	noun	leisure	riddle	لغز	míyǔ		measure=个; hsk=6; trad=謎語
+2563	zh_w_maan	马鞍	noun	animals	saddle	سرج	mǎ'ān		measure=个; hsk=6; trad=馬鞍
+2564	zh_w_shangba	伤疤	noun	health	scar	ندبة	shāngbā		measure=道; hsk=6; trad=傷疤
+2565	zh_w_daocaoren	稻草人	noun	nature	scarecrow	فزّاعة	dàocǎorén		measure=个; hsk=6; trad=稻草人
+2566	zh_w_mieshi	蔑视	verb	feelings	to scorn	يحتقر	mièshì		hsk=6; trad=蔑視
+2567	zh_w_muyangren	牧羊人	noun	people	shepherd	راعٍ	mùyángrén		measure=个; hsk=6; trad=牧羊人
+2568	zh_w_shenmiao	神庙	noun	places	temple, shrine	معبد	shénmiào		measure=座; hsk=6; trad=神廟
+2569	zh_w_weigong	围攻	verb	society	to besiege	يحاصر	wéigōng		hsk=6; trad=圍攻
+2570	zh_w_youshang	忧伤	adj	feelings	sorrowful	حزين	yōushāng		hsk=6; trad=憂傷
+2571	zh_w_muci	木刺	noun	home	splinter	شظيّة خشب	mùcì		measure=根; hsk=6; trad=木刺
+2572	zh_w_daocao	稻草	noun	nature	straw	قشّ	dàocǎo		measure=根; hsk=6; trad=稻草
+2573	zh_w_zhaoze	沼泽	noun	nature	swamp	مستنقع	zhǎozé		measure=片; hsk=6; trad=沼澤
+2574	zh_w_ci_thorn	刺	noun	nature	thorn	شوكة	cì		measure=根; hsk=6; trad=刺
+2575	zh_w_wangwei	王位	noun	society	throne	العرش	wángwèi		measure=个; hsk=6; trad=王位
+2576	zh_w_chaoxi	潮汐	noun	nature	tide	مدّ وجزر	cháoxī		measure=种; hsk=6; trad=潮汐
+2577	zh_w_shoudiantong	手电筒	noun	home	torch	مصباح يدوي	shǒudiàntǒng		measure=个; hsk=6; trad=手電筒
+2578	zh_w_panguo	叛国	noun	society	treason	خيانة الوطن	pànguó		measure=种; hsk=6; trad=叛國
+2579	zh_w_buluo	部落	noun	society	tribe	قبيلة	bùluò		measure=个; hsk=6; trad=部落
+2580	zh_w_tingzhan	停战	noun	society	ceasefire, truce	هدنة	tíngzhàn		measure=种; hsk=6; trad=停戰
+2581	zh_w_putaoyuan	葡萄园	noun	nature	vineyard	كرم عنب	pútaoyuán		measure=个; hsk=6; trad=葡萄園
+2582	zh_w_huoshan	火山	noun	nature	volcano	بركان	huǒshān		measure=座; hsk=6; trad=火山
+2583	zh_w_zhihui_wisdom	智慧	noun	mind	wisdom	حكمة	zhìhuì		measure=种; hsk=5; trad=智慧
+2584	zh_w_pige	皮革	noun	clothes	leather	جلد	pígé		measure=块; hsk=6; trad=皮革
+2585	zh_w_yangmao	羊毛	noun	clothes	wool	صوف	yángmáo		measure=种; hsk=6; trad=羊毛
+2586	zh_w_zhen_needle	针	noun	clothes	needle	إبرة	zhēn		measure=根; hsk=5; trad=針
+2587	zh_w_budin	补丁	noun	clothes	patch	رقعة	bǔding		measure=块; hsk=6; trad=補丁
+2588	zh_w_erguang	耳光	noun	people	slap	صفعة	ěrguāng		measure=个; hsk=6; trad=耳光
+2589	zh_w_huilu	贿赂	noun	society	bribe; to bribe	رشوة	huìlù		measure=笔; hsk=6; trad=賄賂
+2590	zh_w_yuqing	淤青	noun	health	bruise	كدمة	yūqīng		measure=块; hsk=6; trad=淤青
+2591	zh_w_shuipao	水泡	noun	health	blister	فقاعة جلدية	shuǐpào		measure=个; hsk=6; trad=水泡
+2592	zh_w_bengdai	绷带	noun	health	bandage	ضمادة	bēngdài		measure=条; hsk=6; trad=繃帶
+2593	zh_w_yaogao	药膏	noun	health	ointment	مرهم	yàogāo		measure=支; hsk=6; trad=藥膏
+2594	zh_w_yimiao	疫苗	noun	health	vaccine	لقاح	yìmiáo		measure=支; hsk=6; trad=疫苗
+2595	zh_w_danjia	担架	noun	health	stretcher	نقّالة	dānjià		measure=副; hsk=6; trad=擔架
+2596	zh_w_guaizhang	拐杖	noun	health	walking stick, crutch	عكّاز	guǎizhàng		measure=根; hsk=6; trad=拐杖
+2597	zh_w_maibo	脉搏	noun	health	pulse	نبض	màibó		measure=种; hsk=6; trad=脈搏
+2598	zh_w_touyun	头晕	adj	health	dizzy	دائخ	tóuyūn		hsk=5; trad=頭暈
+2599	zh_w_exin	恶心	adj	health	nauseous, disgusting	غثيان، مقرف	ěxin		hsk=5; trad=惡心
+2600	zh_w_leigu	肋骨	noun	body	rib	ضلع	lèigǔ		measure=根; hsk=6; trad=肋骨
+2601	zh_w_jizhu	脊柱	noun	body	spine	العمود الفقري	jǐzhù		measure=根; hsk=6; trad=脊柱
+2602	zh_w_shenzang	肾脏	noun	body	kidney	كلية	shènzàng		measure=个; hsk=6; trad=腎臟
+2603	zh_w_ganzang	肝脏	noun	body	liver	كبد	gānzàng		measure=个; hsk=6; trad=肝臟
+2604	zh_w_jingmai	静脉	noun	body	vein	وريد	jìngmài		measure=条; hsk=6; trad=靜脈
+2605	zh_w_hanshui	汗水	noun	body	sweat	عرق	hànshuǐ		measure=种; hsk=6; trad=汗水
+2606	zh_w_koushui	口水	noun	body	saliva	لعاب	kǒushuǐ		measure=种; hsk=6; trad=口水
+2607	zh_w_dage	打嗝	verb	body	to hiccup, to burp	يتجشّأ	dǎgé		hsk=6; trad=打嗝
+2608	zh_w_jiemao	睫毛	noun	body	eyelash	رمش	jiémáo		measure=根; hsk=6; trad=睫毛
+2609	zh_w_xiaba	下巴	noun	body	chin	ذقن	xiàba		measure=个; hsk=5; trad=下巴
+2610	zh_w_taiyangxue	太阳穴	noun	body	temple	صدغ	tàiyángxué		measure=个; hsk=6; trad=太陽穴
+2611	zh_w_shouzhang	手掌	noun	body	palm	كفّ	shǒuzhǎng		measure=个; hsk=6; trad=手掌
+2612	zh_w_zhijia	指甲	noun	body	fingernail	ظفر	zhǐjia		measure=个; hsk=6; trad=指甲
+2613	zh_w_zhouwen	皱纹	noun	body	wrinkle	تجعّد	zhòuwén		measure=条; hsk=6; trad=皺紋
+2614	zh_w_doudou	痘痘	noun	health	pimple	بثرة	dòudou		measure=颗; hsk=6; trad=痘痘
+2615	zh_w_gebozhou	胳膊肘	noun	body	elbow	مرفق	gēbozhǒu		measure=个; hsk=6; trad=胳膊肘
+2616	zh_w_jiaogen	脚跟	noun	body	heel	كعب	jiǎogēn		measure=个; hsk=6; trad=腳跟
+2617	zh_w_shouwan	手腕	noun	body	wrist	معصم	shǒuwàn		measure=个; hsk=6; trad=手腕
+2618	zh_w_jiaohuai	脚踝	noun	body	ankle	كاحل	jiǎohuái		measure=个; hsk=6; trad=腳踝
+2619	zh_w_huangmiu	荒谬	adj	descriptions	absurd	سخيف	huāngmiù		hsk=6; trad=荒謬
+2620	zh_w_dun_blunt	钝	adj	descriptions	blunt	كليل	dùn		hsk=6; trad=鈍
+2621	zh_w_benzhuo	笨拙	adj	people	clumsy	أخرق	bènzhuō		hsk=6; trad=笨拙
+2622	zh_w_jiaohua	狡猾	adj	people	cunning	ماكر	jiǎohuá		hsk=6; trad=狡猾
+2623	zh_w_qiancheng	虔诚	adj	society	devout	متديّن	qiánchéng		hsk=6; trad=虔誠
+2624	zh_w_hun_an	昏暗	adj	descriptions	dim	معتم	hūn'àn		hsk=6; trad=昏暗
+2625	zh_w_kunjuan	困倦	adj	body	drowsy	نعسان	kùnjuàn		hsk=6; trad=困倦
+2626	zh_w_guiyi	诡异	adj	feelings	eerie, weird	غريب ومخيف	guǐyì		hsk=6; trad=詭異
+2627	zh_w_tanlan	贪婪	adj	people	greedy	جشع	tānlán		hsk=6; trad=貪婪
+2628	zh_w_kongxin	空心	adj	descriptions	hollow	أجوف	kōngxīn		hsk=6; trad=空心
+2629	zh_w_wenshun	温顺	adj	people	docile, meek	وديع	wēnshùn		hsk=6; trad=溫順
+2630	zh_w_hunzhuo	浑浊	adj	descriptions	murky	عكر	húnzhuó		hsk=6; trad=渾濁
+2631	zh_w_tianzhen	天真	adj	people	naive, innocent	ساذج، بريء	tiānzhēn		hsk=5; trad=天真
+2632	zh_w_tinghua	听话	adj	people	obedient	مطيع	tīnghuà		hsk=6; trad=聽話
+2633	zh_w_lumang	鲁莽	adj	people	reckless	متهوّر	lǔmǎng		hsk=6; trad=魯莽
+2634	zh_w_shensheng	神圣	adj	society	sacred	مقدّس	shénshèng		hsk=6; trad=神聖
+2635	zh_w_anxiang	安详	adj	feelings	serene	هادئ	ānxiáng		hsk=6; trad=安詳
+2636	zh_w_polan	破烂	adj	descriptions	tattered, shabby	رثّ	pòlàn		hsk=6; trad=破爛
+2637	zh_w_linse	吝啬	adj	people	stingy	بخيل	lìnsè		hsk=6; trad=吝嗇
+2638	zh_w_guzhi	固执	adj	people	stubborn	عنيد	gùzhí		hsk=6; trad=固執
+2639	zh_w_pibei	疲惫	adj	body	exhausted	منهك	píbèi		hsk=6; trad=疲憊
+2640	zh_w_miantian	腼腆	adj	people	shy, bashful	خجول	miǎntian		hsk=6; trad=靦腆
+2641	zh_w_yuanshi	原始	adj	descriptions	original, primitive	أصلي، بدائي	yuánshǐ		hsk=6; trad=原始
+2642	zh_w_tanbai	坦白	adj	communication	frank, candid	صريح	tǎnbái		hsk=6; trad=坦白
+2643	zh_w_mianqiang	勉强	adv	function	barely, reluctantly	بالكاد، على مضض	miǎnqiǎng		hsk=5; trad=勉強
+2644	zh_w_jinjin	仅仅	adv	function	merely	مجرّد	jǐnjǐn		hsk=5; trad=僅僅
+2645	zh_w_lvci	屡次	adv	time	repeatedly	مرارًا	lǚcì		hsk=6; trad=屢次
+2646	zh_w_jiucai	韭菜	noun	food	Chinese chives	ثوم معمّر	jiǔcài		measure=根; hsk=6; trad=韭菜
+2647	zh_w_qiezi	茄子	noun	food	aubergine	باذنجان	qiézi		measure=个; hsk=6; trad=茄子
+2648	zh_w_nangua	南瓜	noun	food	pumpkin	يقطين	nánguā		measure=个; hsk=6; trad=南瓜
+2649	zh_w_huacai	花菜	noun	food	cauliflower	قرنبيط	huācài		measure=棵; hsk=6; trad=花菜
+2650	zh_w_luobo	萝卜	noun	food	radish	فجل	luóbo		measure=根; hsk=6; trad=蘿蔔
+2651	zh_w_wandou	豌豆	noun	food	pea	بازلاء	wāndòu		measure=颗; hsk=6; trad=豌豆
+2652	zh_w_huangdou	黄豆	noun	food	soybean	فول الصويا	huángdòu		measure=颗; hsk=6; trad=黃豆
+2653	zh_w_rougui	肉桂	noun	food	cinnamon	قرفة	ròuguì		measure=种; hsk=6; trad=肉桂
+2654	zh_w_bohe	薄荷	noun	food	mint	نعناع	bòhe		measure=种; hsk=6; trad=薄荷
+2655	zh_w_xiangcai	香菜	noun	food	coriander	كزبرة	xiāngcài		measure=种; hsk=6; trad=香菜
+2656	zh_w_guojiang	果酱	noun	food	jam	مربّى	guǒjiàng		measure=瓶; hsk=6; trad=果醬
+2657	zh_w_xiaoyang	小羊	noun	animals	lamb	حمل	xiǎoyáng		measure=只; hsk=6; trad=小羊
+2658	zh_w_wugui	乌龟	noun	animals	tortoise	سلحفاة	wūguī		measure=只; hsk=6; trad=烏龜
+2659	zh_w_ciwei	刺猬	noun	animals	hedgehog	قنفذ	cìwei		measure=只; hsk=6; trad=刺蝟
+2660	zh_w_bianfu	蝙蝠	noun	animals	bat	خفّاش	biānfú		measure=只; hsk=6; trad=蝙蝠
+2661	zh_w_maque	麻雀	noun	animals	sparrow	عصفور	máquè		measure=只; hsk=6; trad=麻雀
+2662	zh_w_wuya	乌鸦	noun	animals	crow	غراب	wūyā		measure=只; hsk=6; trad=烏鴉
+2663	zh_w_haiou	海鸥	noun	animals	seagull	نورس	hǎi'ōu		measure=只; hsk=6; trad=海鷗
+2664	zh_w_jingyu	鲸鱼	noun	animals	whale	حوت	jīngyú		measure=头; hsk=6; trad=鯨魚
+2665	zh_w_zhangyu	章鱼	noun	animals	octopus	أخطبوط	zhāngyú		measure=只; hsk=6; trad=章魚
+2666	zh_w_pangxie	螃蟹	noun	animals	crab	سلطعون	pángxiè		measure=只; hsk=6; trad=螃蟹
+2667	zh_w_haizhe	海蜇	noun	animals	jellyfish	قنديل البحر	hǎizhé		measure=只; hsk=6; trad=海蜇
+2668	zh_w_xiezi	蝎子	noun	animals	scorpion	عقرب	xiēzi		measure=只; hsk=6; trad=蠍子
+2669	zh_w_zhamang	蚱蜢	noun	animals	grasshopper	جندب	zhàměng		measure=只; hsk=6; trad=蚱蜢
+2670	zh_w_piaochong	瓢虫	noun	animals	ladybird	دعسوقة	piáochóng		measure=只; hsk=6; trad=瓢蟲
+2671	zh_w_qingting	蜻蜓	noun	animals	dragonfly	يعسوب	qīngtíng		measure=只; hsk=6; trad=蜻蜓
+2672	zh_w_wenzi	蚊子	noun	animals	mosquito	بعوضة	wénzi		measure=只; hsk=5; trad=蚊子
+2673	zh_w_zhizhu	蜘蛛	noun	animals	spider	عنكبوت	zhīzhū		measure=只; hsk=6; trad=蜘蛛
+2674	zh_w_woniu	蜗牛	noun	animals	snail	حلزون	wōniú		measure=只; hsk=6; trad=蝸牛
+2675	zh_w_xiyi	蜥蜴	noun	animals	lizard	سحلية	xīyì		measure=只; hsk=6; trad=蜥蜴
+2676	zh_w_lu_deer	鹿	noun	animals	deer	غزال	lù		measure=只; hsk=6; trad=鹿
+2677	zh_w_pubu	瀑布	noun	nature	waterfall	شلّال	pùbù		measure=条; hsk=6; trad=瀑布
+2678	zh_w_shangu	山谷	noun	nature	valley	وادٍ	shāngǔ		measure=个; hsk=6; trad=山谷
+2679	zh_w_shanpo	山坡	noun	nature	hillside, slope	منحدر	shānpō		measure=个; hsk=6; trad=山坡
+2680	zh_w_shanding	山顶	noun	nature	summit	قمّة	shāndǐng		measure=个; hsk=5; trad=山頂
+2681	zh_w_niba	泥巴	noun	nature	mud	طين	níba		measure=种; hsk=6; trad=泥巴
+2682	zh_w_hongshui	洪水	noun	nature	flood	فيضان	hóngshuǐ		measure=场; hsk=6; trad=洪水
+2683	zh_w_lushui	露水	noun	weather	dew	ندى	lùshuǐ		measure=种; hsk=6; trad=露水
+2684	zh_w_shandian	闪电	noun	weather	lightning	برق	shǎndiàn		measure=道; hsk=5; trad=閃電
+2685	zh_w_taifeng	台风	noun	weather	typhoon	إعصار	táifēng		measure=场; hsk=6; trad=颱風
+2686	zh_w_liushu	柳树	noun	nature	willow	صفصاف	liǔshù		measure=棵; hsk=6; trad=柳樹
+2687	zh_w_songshu_pine	松树	noun	nature	pine	صنوبر	sōngshù		measure=棵; hsk=6; trad=松樹
+2688	zh_w_xiangshu	橡树	noun	nature	oak	بلّوط	xiàngshù		measure=棵; hsk=6; trad=橡樹
+2689	zh_w_taixian	苔藓	noun	nature	moss	طحلب	táixiǎn		measure=种; hsk=6; trad=苔蘚
+2690	zh_w_zhongzi	种子	noun	nature	seed	بذرة	zhǒngzi		measure=颗; hsk=5; trad=種子
+2691	zh_w_maju	马厩	noun	places	stable	إسطبل	mǎjiù		measure=个; hsk=6; trad=馬廄
+2692	zh_w_mofang_mill	磨坊	noun	places	mill	طاحونة	mòfáng		measure=座; hsk=6; trad=磨坊
+2693	zh_w_shuijing	水井	noun	places	well	بئر	shuǐjǐng		measure=口; hsk=6; trad=水井
+2694	zh_w_daba	大坝	noun	places	dam	سدّ	dàbà		measure=座; hsk=6; trad=大壩
+2695	zh_w_matou	码头	noun	places	wharf, pier	رصيف ميناء	mǎtou		measure=个; hsk=6; trad=碼頭
+2696	zh_w_gongmu	公墓	noun	places	cemetery	مقبرة	gōngmù		measure=座; hsk=6; trad=公墓
+2697	zh_w_yuanding	圆顶	noun	places	dome	قبّة	yuándǐng		measure=个; hsk=6; trad=圓頂
+2698	zh_w_suidao	隧道	noun	places	tunnel	نفق	suìdào		measure=条; hsk=6; trad=隧道
+2699	zh_w_qiuqian	秋千	noun	leisure	swing	أرجوحة	qiūqiān		measure=个; hsk=6; trad=鞦韆
+2700	zh_w_shaizi	骰子	noun	leisure	dice	نرد	shǎizi		measure=个; hsk=6; trad=骰子
