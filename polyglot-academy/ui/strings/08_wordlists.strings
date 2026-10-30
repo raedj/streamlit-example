@@ -85,3 +85,8 @@ WORDTEST_NO_VOICE ¦ There is no voice for {0} on this device, so the test has n
 HOME_WORDS_TITLE ¦ Most common words ¦ الكلمات الأكثر شيوعًا
 HOME_WORDS_LEVEL ¦ Level {0} · {1} of {2} words in your reviews ¦ المستوى {0} · {1} من {2} كلمة في مراجعاتك
 HOME_WORDS_OPEN ¦ Continue the level ¦ تابع المستوى
+WORDLEVEL_LESSONS ¦ Lessons ¦ الدروس
+WORDLEVEL_LESSONS_BODY ¦ Each lesson teaches 10 words of this level with flashcards, matching, choices, listening and example sentences. When you finish it, the words go into your reviews. ¦ يعلّمك كل درس 10 كلمات من هذا المستوى بالبطاقات والمطابقة والاختيار والاستماع وجمل الأمثلة. عندما تُنهيه تُضاف الكلمات إلى مراجعاتك.
+WORDLEVEL_LESSONS_DONE ¦ {0} of {1} lessons done ¦ أنجزت {0} من {1} درسًا
+WORDLEVEL_LESSON_NEXT ¦ Lesson {0}: words {1}–{2} ¦ الدرس {0}: الكلمات ⁦{1}–{2}⁩
+WORDLEVEL_LESSONS_ALL ¦ You have done all the lessons of this level. ¦ أنجزت كل دروس هذا المستوى.

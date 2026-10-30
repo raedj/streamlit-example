@@ -1320,5 +1320,10 @@ internal object EnglishStrings {
         K.HOME_WORDS_TITLE to "Most common words",
         K.HOME_WORDS_LEVEL to "Level {0} · {1} of {2} words in your reviews",
         K.HOME_WORDS_OPEN to "Continue the level",
+        K.WORDLEVEL_LESSONS to "Lessons",
+        K.WORDLEVEL_LESSONS_BODY to "Each lesson teaches 10 words of this level with flashcards, matching, choices, listening and example sentences. When you finish it, the words go into your reviews.",
+        K.WORDLEVEL_LESSONS_DONE to "{0} of {1} lessons done",
+        K.WORDLEVEL_LESSON_NEXT to "Lesson {0}: words {1}–{2}",
+        K.WORDLEVEL_LESSONS_ALL to "You have done all the lessons of this level.",
     ) }
 }

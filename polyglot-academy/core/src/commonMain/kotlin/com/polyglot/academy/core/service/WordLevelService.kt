@@ -1,5 +1,6 @@
 package com.polyglot.academy.core.service
 
+import com.polyglot.academy.core.content.WordLessons
 import com.polyglot.academy.core.model.LanguageCode
 import com.polyglot.academy.core.model.ReviewPhase
 import com.polyglot.academy.core.model.ReviewState
@@ -30,6 +31,9 @@ enum class WordTestMode {
     /** The spoken word only (text-to-speech); choose its meaning. */
     LISTENING,
 }
+
+/** Generated lessons of one level ([com.polyglot.academy.core.content.WordLessons]): how many are done, and the next one to do. */
+data class WordLessonProgress(val done: Int, val total: Int, val next: Int?)
 
 /** One level-test question: [options] are words of the level and the answer is among them. */
 data class WordQuizQuestion(val entry: WordEntry, val options: List<WordEntry>, val answerIndex: Int, val mode: WordTestMode = WordTestMode.MEANING)
@@ -111,6 +115,14 @@ class WordLevelService(
             val options = (distractors + entry).shuffled(random)
             WordQuizQuestion(entry, options, options.indexOf(entry), modes[i % modes.size])
         }
+    }
+
+    /** Completed generated lessons of the level and the first one not yet completed (null when all are done). */
+    suspend fun lessons(language: LanguageCode, level: Int): WordLessonProgress {
+        val lp = progress.lessonProgress(language).first()
+        val numbers = 1..WordLessons.PER_LEVEL
+        val done = numbers.filter { (lp[WordLessons.id(language, level, it)]?.completions ?: 0) > 0 }.toSet()
+        return WordLessonProgress(done.size, WordLessons.PER_LEVEL, numbers.firstOrNull { it !in done })
     }
 
     /** The level to show on the home screen: the first one not yet passed (the last level once all are passed). */

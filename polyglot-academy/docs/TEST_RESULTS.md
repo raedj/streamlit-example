@@ -123,6 +123,19 @@ English, no English voice installed): the home card, the test type choice with l
 its notice, a meaning-to-word question with feedback, the K-24 warning and Skip button in Listening
 practice and inside the Greetings lesson (question 13 of 18; Skip moved to 14).
 
+**Generated word-list lessons (2026-10-30).** `WordLessons` builds 30 lessons of 10 words per level
+(2400 in all). New `WordLessonsTest` (core, 3 tests) builds every one of the 2400 lessons and checks
+ids, unique exercise ids, at least 18 exercises, four distinct options (also in Arabic) with a valid
+answer, flashcards that resolve, 4-8 tokens for word order, and that generation is deterministic.
+`WordLevelServiceTest` gained a test that completing a lesson puts its 10 words into reviews and
+moves to the next lesson. Build and tests were run in a copy of the repository outside OneDrive
+(OneDrive locked `ui/build`): 242 tests, 0 failures (core 174, data 56, uicore 12). On the emulator
+(Arabic interface, English, no English voice) lesson 1 of level 1 was played to the end by a script
+plus one manual word-order answer: flashcards, matching, both choice directions, word order, the
+three audio exercises skipped with the K-24 warning, summary "15 of 20 correct" (23 exercises minus
+the 3 skipped), and a "Next lesson: words 11-20" button. Home also showed "Continue: Greetings · 6
+minutes", confirming K-25 on the device.
+
 | Module | Test class | Tests | Failures |
 |---|---|---|---|
 | core | AdapterTest (OpenAI, Azure, Gemini, Anthropic, DeepSeek, local; image parts per vendor; error classification; timeouts; no key leakage; Mistral, Groq, xAI, OpenRouter, Qwen and custom OpenAI-compatible endpoints; GPT-5/o-series parameters; model lists from OpenAI-compatible, Anthropic and Gemini) | 14 | 0 |

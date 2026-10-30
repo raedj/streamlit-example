@@ -282,16 +282,15 @@
         "WordTest"
       ],
       "service": "core/service/WordLevelService.kt",
-      "not_yet": [
-        "automatic lessons from the lists"
-      ],
+      "not_yet": [],
       "test_modes": [
         "word to meaning",
         "meaning to word",
         "listening (needs a voice)",
         "mixed"
       ],
-      "home_card": "first level not yet passed"
+      "home_card": "first level not yet passed",
+      "lessons": "30 generated lessons of 10 words per level (core/content/WordLessons.kt)"
     }
   },
   "known_issues_fixed": [

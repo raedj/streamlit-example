@@ -116,7 +116,9 @@ fun ExerciseView(exercise: Exercise, ctx: ExerciseContext, answered: Boolean, on
 private fun FlashcardView(e: Exercise.Flashcard, ctx: ExerciseContext, answered: Boolean, onAnswer: (Answer) -> Unit) {
     val s = LocalStrings.current
     val c = PolyglotTheme.colors
-    val v = Curriculum.of(ctx.language).vocabularyById[e.vocabularyId] ?: return
+    val v = Curriculum.of(ctx.language).vocabularyById[e.vocabularyId]
+        // Already loaded by the lesson that contains the card.
+        ?: com.polyglot.academy.core.wordlist.WordLists.of(ctx.language).byId[e.vocabularyId]?.toVocabularyItem() ?: return
     var revealed by remember(e.id) { mutableStateOf(false) }
     val term = if (ctx.traditional) v.traditional ?: v.term else v.term
     PolyCard(Modifier.heightIn(min = 220.dp)) {

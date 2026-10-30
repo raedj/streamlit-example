@@ -98,4 +98,14 @@ class WordLevelServiceTest {
         app.wordLevels.finishTest(lang, 2, 10, 20, emptyList())
         assertEquals(2, app.wordLevels.currentLevel(lang).level)
     }
+
+    @Test fun completingAWordLessonPutsItsWordsIntoReviewsAndAdvances() = runBlocking<Unit> {
+        val lang = LanguageCode.FRENCH
+        assertEquals(com.polyglot.academy.core.service.WordLessonProgress(0, 30, 1), app.wordLevels.lessons(lang, 5))
+        val lesson = com.polyglot.academy.core.content.WordLessons.load(com.polyglot.academy.core.content.WordLessons.id(lang, 5, 1))!!
+        app.study.completeLesson(lesson, 0.9)
+        assertEquals(10, app.wordLevels.level(lang, 5).started)
+        assertEquals(com.polyglot.academy.core.service.WordLessonProgress(1, 30, 2), app.wordLevels.lessons(lang, 5))
+        assertTrue(app.reviews.dueQueue(lang, limit = 50, newLimit = 50).map { it.front }.containsAll(WordLists.of(lang).level(5).take(10).map { it.term }))
+    }
 }

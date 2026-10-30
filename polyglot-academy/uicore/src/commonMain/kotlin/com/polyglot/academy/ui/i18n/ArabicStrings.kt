@@ -1320,5 +1320,10 @@ internal object ArabicStrings {
         K.HOME_WORDS_TITLE to "الكلمات الأكثر شيوعًا",
         K.HOME_WORDS_LEVEL to "المستوى {0} · {1} من {2} كلمة في مراجعاتك",
         K.HOME_WORDS_OPEN to "تابع المستوى",
+        K.WORDLEVEL_LESSONS to "الدروس",
+        K.WORDLEVEL_LESSONS_BODY to "يعلّمك كل درس 10 كلمات من هذا المستوى بالبطاقات والمطابقة والاختيار والاستماع وجمل الأمثلة. عندما تُنهيه تُضاف الكلمات إلى مراجعاتك.",
+        K.WORDLEVEL_LESSONS_DONE to "أنجزت {0} من {1} درسًا",
+        K.WORDLEVEL_LESSON_NEXT to "الدرس {0}: الكلمات ⁦{1}–{2}⁩",
+        K.WORDLEVEL_LESSONS_ALL to "أنجزت كل دروس هذا المستوى.",
     ) }
 }

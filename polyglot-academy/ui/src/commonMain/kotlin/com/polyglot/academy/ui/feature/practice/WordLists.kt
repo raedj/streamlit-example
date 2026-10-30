@@ -24,6 +24,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import com.polyglot.academy.core.content.WordLessons
 import com.polyglot.academy.core.model.LanguageCode
 import com.polyglot.academy.core.model.Languages
 import com.polyglot.academy.core.model.ReviewPhase
@@ -111,18 +112,29 @@ fun WordLevelScreen(level: Int) {
     var query by rememberSaveable { mutableStateOf("") }
     var shown by rememberSaveable { mutableIntStateOf(PAGE) }
     val loader = rememberLoader(lang, level) {
-        Triple(app.services.wordLevels.level(lang, level), app.services.wordLevels.states(lang, level), app.services.wordLevels.words(lang, level))
+        LevelData(app.services.wordLevels.level(lang, level), app.services.wordLevels.states(lang, level),
+            app.services.wordLevels.words(lang, level), app.services.wordLevels.lessons(lang, level))
     }
     ScrollScreen(s.f(K.WORDLEVEL_NAME, level)) {
         Text(levelRanks(s, level), style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
-        LoadContent(loader) { (progress, states, words) ->
+        LoadContent(loader) { (progress, states, words, lessons) ->
             Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                PolyCard {
+                    Text(s[K.WORDLEVEL_LESSONS], style = MaterialTheme.typography.titleMedium)
+                    Text(s[K.WORDLEVEL_LESSONS_BODY], style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
+                    LabeledProgress(s.f(K.WORDLEVEL_LESSONS_DONE, lessons.done, lessons.total), "", lessons.done.toFloat() / lessons.total.coerceAtLeast(1))
+                    val next = lessons.next
+                    if (next != null) {
+                        val r = WordLessons.ranks(level, next)
+                        PrimaryButton(s.f(K.WORDLEVEL_LESSON_NEXT, next, r.first, r.last), { app.nav.push(Route.LessonPlayer(WordLessons.id(lang, level, next))) }, Modifier.fillMaxWidth())
+                    } else Text(s[K.WORDLEVEL_LESSONS_ALL], style = MaterialTheme.typography.bodyMedium)
+                }
                 PolyCard {
                     LabeledProgress(s[K.WORDLEVEL_STARTED], s.f(K.WORDLEVEL_COUNT, progress.started, progress.total), progress.started.toFloat() / progress.total.coerceAtLeast(1))
                     LabeledProgress(s[K.WORDLEVEL_KNOWN], s.f(K.WORDLEVEL_COUNT, progress.known, progress.total), progress.known.toFloat() / progress.total.coerceAtLeast(1), color = c.success)
                     progress.bestTestScore?.let { Text(s.f(K.WORDLEVEL_BEST, percent(it)), style = MaterialTheme.typography.bodySmall, color = c.textSecondary) }
                     if (progress.started < progress.total) {
-                        PrimaryButton(s.f(K.WORDLEVEL_ADD_NEXT, WordLevelService.BATCH), {
+                        SecondaryButton(s.f(K.WORDLEVEL_ADD_NEXT, WordLevelService.BATCH), {
                             scope.launch {
                                 val added = app.services.wordLevels.addNext(lang, level)
                                 toast(s.plural(K.WORDLEVEL_ADDED, added.size))
@@ -349,6 +361,13 @@ private enum class TestChoice(val label: K) {
 }
 
 private const val PAGE = 60
+
+private data class LevelData(
+    val progress: com.polyglot.academy.core.service.WordLevelProgress,
+    val states: Map<String, ReviewState>,
+    val words: List<WordEntry>,
+    val lessons: com.polyglot.academy.core.service.WordLessonProgress,
+)
 
 private fun percent(score: Double): Int = (score * 100).roundToInt()
 

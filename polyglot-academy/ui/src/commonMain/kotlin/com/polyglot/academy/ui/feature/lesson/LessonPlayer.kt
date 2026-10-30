@@ -28,6 +28,7 @@ import androidx.compose.runtime.key
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateMapOf
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.saveable.rememberSaveable
@@ -39,6 +40,7 @@ import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 import com.polyglot.academy.core.content.Curriculum
+import com.polyglot.academy.core.content.WordLessons
 import com.polyglot.academy.core.learning.AnswerVerdict
 import com.polyglot.academy.core.learning.DifficultyAdjuster
 import com.polyglot.academy.core.learning.DifficultyReason
@@ -61,6 +63,7 @@ import com.polyglot.academy.ui.designsystem.ContentColumn
 import com.polyglot.academy.ui.designsystem.FeedbackPanel
 import com.polyglot.academy.ui.designsystem.HeroIllustration
 import com.polyglot.academy.ui.designsystem.HeroKind
+import com.polyglot.academy.ui.designsystem.LoadingPlaceholder
 import com.polyglot.academy.ui.designsystem.PolyCard
 import com.polyglot.academy.ui.designsystem.PolyglotTheme
 import com.polyglot.academy.ui.designsystem.PrimaryButton
@@ -80,18 +83,25 @@ private data class Summary(val score: Double, val correct: Int, val total: Int, 
 fun LessonPlayerScreen(lessonId: String, restart: Boolean) {
     // "Practice again" keeps the same route, so a fresh key is what resets every piece of player state.
     var attempt by rememberSaveable(lessonId) { mutableIntStateOf(0) }
-    key(attempt) { LessonPlayer(lessonId, restart || attempt > 0, onRetry = { attempt++ }) }
+    val app = LocalApp.current
+    val s = LocalStrings.current
+    // Word-list lessons are generated from a 3000-word list, so they are built off the main thread.
+    val generated = WordLessons.isWordLesson(lessonId)
+    val lesson = if (generated) produceState<Lesson?>(null, lessonId) { value = WordLessons.load(lessonId) }.value
+        else remember(lessonId) { Curriculum.all.values.firstNotNullOfOrNull { it.lessonsById[lessonId] } }
+    if (lesson == null) {
+        if (generated && WordLessons.parse(lessonId) != null) ContentColumn(padding = PaddingValues(top = 48.dp)) { LoadingPlaceholder(s[K.LOADING]) }
+        else StateMessage(s[K.ERROR_TITLE], s[K.LESSON_NOT_FOUND], action = s[K.BACK], onAction = { app.nav.pop() })
+        return
+    }
+    key(attempt) { LessonPlayer(lesson, restart || attempt > 0, onRetry = { attempt++ }) }
 }
 
 @Composable
-private fun LessonPlayer(lessonId: String, restart: Boolean, onRetry: () -> Unit) {
+private fun LessonPlayer(lesson: Lesson, restart: Boolean, onRetry: () -> Unit) {
     val app = LocalApp.current
     val s = LocalStrings.current
-    val lesson = remember(lessonId) { Curriculum.all.values.firstNotNullOfOrNull { it.lessonsById[lessonId] } }
-    if (lesson == null) {
-        StateMessage(s[K.ERROR_TITLE], s[K.LESSON_NOT_FOUND], action = s[K.BACK], onAction = { app.nav.pop() })
-        return
-    }
+    val lessonId = lesson.id
     val services = app.services
     val scope = rememberCoroutineScope()
     val speaker = rememberSpeaker(s)
@@ -139,7 +149,9 @@ private fun LessonPlayer(lessonId: String, restart: Boolean, onRetry: () -> Unit
         val seconds = ((services.clock.nowMillis() - started) / 1000).toInt()
         session?.let { services.study.updateSession(it, gradable.size, gradable.count { g -> firstTry.getValue(g.id) >= 0.99 }, true, seconds) }
         val progress = services.store.lessonProgress(lesson.language).first()
-        val next = Curriculum.of(lesson.language).sequencer.nextLesson(enrollment?.startingLevel ?: lesson.level, progress)?.takeIf { it.id != lesson.id }
+        val next = WordLessons.parse(lesson.id)?.let { (lang, level, number) ->
+            if (number < WordLessons.PER_LEVEL) WordLessons.load(WordLessons.id(lang, level, number + 1)) else null
+        } ?: Curriculum.of(lesson.language).sequencer.nextLesson(enrollment?.startingLevel ?: lesson.level, progress)?.takeIf { it.id != lesson.id }
         summary = Summary(score, gradable.count { firstTry.getValue(it.id) >= 0.99 }, gradable.size, newWords, unlocked, seconds, next)
     }
 
@@ -244,7 +256,10 @@ private fun SummaryView(lesson: Lesson, sum: Summary, onRetry: () -> Unit) {
     Banner(if (sum.score >= 0.8) BannerKind.SUCCESS else BannerKind.INFO, if (sum.score >= 0.8) s[K.SUMMARY_MASTERED] else s[K.SUMMARY_NOT_MASTERED])
     if (sum.newWords > 0) PolyCard { Text(s.plural(K.SUMMARY_NEW_WORDS, sum.newWords), style = MaterialTheme.typography.bodyLarge) }
     sum.unlocked.forEach { Banner(BannerKind.SUCCESS, s.f(K.SUMMARY_UNLOCKED, Labels.achievement(s, it))) }
-    sum.next?.let { next -> PrimaryButton("${s[K.SUMMARY_NEXT]}: ${s.gloss(next.title)}", { app.nav.replace(Route.LessonOverview(next.id)) }, Modifier.fillMaxWidth()) }
+    sum.next?.let { next ->
+        val route = if (WordLessons.isWordLesson(next.id)) Route.LessonPlayer(next.id, restart = true) else Route.LessonOverview(next.id)
+        PrimaryButton("${s[K.SUMMARY_NEXT]}: ${s.gloss(next.title)}", { app.nav.replace(route) }, Modifier.fillMaxWidth())
+    }
     SecondaryButton(s[K.SUMMARY_RETRY], onRetry, Modifier.fillMaxWidth())
     SecondaryButton(s[K.SUMMARY_HOME], { app.nav.home() }, Modifier.fillMaxWidth())
 }
