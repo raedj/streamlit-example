@@ -61,6 +61,34 @@ Mandarin, the new words 搬家, 过去, 钱包 and 最近 would have re-segmente
 so those examples were reworded. These are checks on the word lists, not language review: no
 native speaker has reviewed levels 1–3.
 
+Levels 4–10 (ranks 901–3000) were then added for all eight languages, one commit per language
+per level (56 commits, e.g. level 10: en bcf8874, es 437beee, fr deeea86, zh a9a3480, ar 7d58ba5,
+tr 22c16d0, ur e7e3835, ms 0d23579). Before each commit `./gradlew build -x :ui:desktopTest`
+passed with 227 tests and 0 failures (core 171, data 44, uicore 12). Each language now has 3000
+entries and 3900 examples. A final rescan of every language (all ten levels together) with
+`tools/scan_wordlist.py` reports:
+
+| Language | Unknown tokens | Beyond rank+300 | Examples without their word | Accepted via rules (all levels) |
+|---|---|---|---|---|
+| en | 0 | 0 | 0 | 1049 |
+| es | 0 | 0 | 0 | 438 |
+| fr | 0 | 0 | 0 | 358 |
+| zh | 0 | 0 | 0 | 0 (segmentation only) |
+| ar | 0 | 0 | 0 | 2952 |
+| tr | 0 | 0 | 0 | 3983 |
+| ur | 0 | 0 | 0 | 797 |
+| ms | 0 | 0 | 0 | 709 |
+
+Limits of these checks for levels 4–10. Unlike levels 1–3, the forms accepted only through
+inflection or affix rules were **not** all listed and checked by hand, so a form may match the
+wrong list word without being noticed. Where the matcher could not see a valid form, the example
+was reworded instead of changing the matcher. For example, Urdu compound verbs (… کرنا) match only
+present, imperative and infinitive forms, and Turkish, Arabic and Malay sometimes needed simpler
+inflections. In Mandarin, some new words re-segmented older examples, and those examples were
+reworded (noted in the commits). Examples have 4–12 words (Mandarin 4–24 characters) and one
+example per word. These are checks on the data only: no native speaker has reviewed levels 4–10,
+ranks are approximate, and Mandarin HSK levels were not checked against an official syllabus.
+
 | Module | Test class | Tests | Failures |
 |---|---|---|---|
 | core | AdapterTest (OpenAI, Azure, Gemini, Anthropic, DeepSeek, local; image parts per vendor; error classification; timeouts; no key leakage; Mistral, Groq, xAI, OpenRouter, Qwen and custom OpenAI-compatible endpoints; GPT-5/o-series parameters; model lists from OpenAI-compatible, Anthropic and Gemini) | 14 | 0 |
