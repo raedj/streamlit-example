@@ -6,6 +6,7 @@ import com.polyglot.academy.core.model.CefrLevel.A1
 import com.polyglot.academy.core.model.CefrLevel.A2
 import com.polyglot.academy.core.model.CefrLevel.B1
 import com.polyglot.academy.core.model.CefrLevel.B2
+import com.polyglot.academy.core.model.CefrLevel.C1
 import com.polyglot.academy.core.model.CefrLevel.PRE_A1
 import com.polyglot.academy.core.model.CourseUnit
 import com.polyglot.academy.core.model.Exercise
@@ -156,6 +157,19 @@ internal object MandarinCurriculum {
             v("fin_weiyue", "违约", "default; breach of contract", "تعثّر، إخلال بالعقد", NOUN, B2, "finance", "wéiyuē", trad = "違約", tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
             v("fin_fuzhaibiao", "资产负债表", "balance sheet", "الميزانية العمومية", NOUN, B2, "finance", "zīchǎn fùzhài biǎo", trad = "資產負債表", tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
             v("fin_liudongxing", "流动性", "liquidity", "السيولة", NOUN, B2, "finance", "liúdòngxìng", trad = "流動性", tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            // Credit and risk (professional track)
+            v("cr_xindai_fengxian", "信贷风险", "credit risk", "مخاطر الائتمان", NOUN, B2, "credit_risk", pron = "xìndài fēngxiǎn", trad = "信貸風險", ex = "银行评估每个客户的信贷风险。", exEn = "The bank assesses each customer's credit risk.", exAr = "يقيّم البنك مخاطر الائتمان لكل عميل.", tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("cr_buliang_daikuan", "不良贷款", "non-performing loan", "قرض متعثّر", NOUN, B2, "credit_risk", pron = "bùliáng dàikuǎn", trad = "不良貸款", tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("cr_zhaiwu_chongzu", "债务重组", "debt restructuring", "إعادة هيكلة الدين", NOUN, C1, "credit_risk", pron = "zhàiwù chóngzǔ", trad = "債務重組", tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("cr_hexiao", "核销", "write-off", "شطب (الدَّين)", VERB, C1, "credit_risk", pron = "héxiāo", trad = "核銷", tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("cr_xinyong_pingji", "信用评级", "credit rating", "التصنيف الائتماني", NOUN, C1, "credit_risk", pron = "xìnyòng píngjí", trad = "信用評級", tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("cr_danbaoren", "担保人", "guarantor", "الكفيل", NOUN, B2, "credit_risk", pron = "dānbǎorén", trad = "擔保人", tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            // Contracts (professional track)
+            v("lg_hetong", "合同", "contract", "عقد", NOUN, B1, "legal", pron = "hétong", ex = "双方昨天签了合同。", exEn = "Both parties signed the contract yesterday.", exAr = "وقّع الطرفان العقد أمس.", tags = setOf("legal"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("lg_tiaokuan", "条款", "clause", "بند", NOUN, B2, "legal", pron = "tiáokuǎn", trad = "條款", tags = setOf("legal"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("lg_dangshiren", "当事人", "party (to an agreement)", "طرف (في الاتفاق)", NOUN, B2, "legal", pron = "dāngshìrén", trad = "當事人", tags = setOf("legal"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("lg_falv_zeren", "法律责任", "legal liability", "المسؤولية القانونية", NOUN, C1, "legal", pron = "fǎlǜ zérèn", trad = "法律責任", tags = setOf("legal"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("lg_weifan_hetong", "违反合同", "breach of contract", "الإخلال بالعقد", PHRASE, C1, "legal", pron = "wéifǎn hétong", trad = "違反合同", tags = setOf("legal"), source = VocabularySource.PROFESSIONAL_TRACK)
             // Daily life and travel
             v("ev_qingwen", "请问", "excuse me, may I ask…", "عفوًا، هل لي أن أسأل…", PHRASE, A1, "essentials", "qǐngwèn", trad = "請問", ex = "请问，这个座位有人吗？", exEn = "Excuse me, is this seat taken?", exAr = "عفوًا، هل هذا المقعد محجوز؟")
             v("ev_ting_bu_dong", "我听不懂", "I don't understand (what I hear)", "لا أفهم (ما أسمعه)", PHRASE, A1, "essentials", "wǒ tīng bu dǒng", trad = "我聽不懂")
@@ -301,6 +315,12 @@ internal object MandarinCurriculum {
                     choice("fi2", L, "利率 means…", listOf("interest rate", "exchange rate", "tax rate"), 0, Skill.VOCABULARY),
                     order("fi3", L, listOf("我们", "每个月", "还款"), g("We make a repayment every month.", "نسدّد كل شهر."), separator = ""),
                 )),
+            f.lesson("credit", B2, "pro_credit", g("Credit and risk", "الائتمان والمخاطر"), g("Credit risk, problem loans, write-offs and guarantors.", "مخاطر الائتمان والقروض المتعثرة وشطب الديون والكفلاء."),
+                Skill.VOCABULARY, listOf("cr_xindai_fengxian", "cr_buliang_daikuan", "cr_zhaiwu_chongzu", "cr_hexiao", "cr_xinyong_pingji", "cr_danbaoren"),
+                extra = listOf(choice("cr1", L, "A loan that is not being repaid: ___贷款", listOf("不良", "银行", "短期"), 0, Skill.VOCABULARY), choice("cr2", L, "Guarantor:", listOf("担保人", "当事人", "收银员"), 0, Skill.VOCABULARY))),
+            f.lesson("legal", B2, "pro_legal", g("Contract language", "لغة العقود"), g("Contracts, clauses, parties, liability and breach.", "العقود والبنود والأطراف والمسؤولية والإخلال."),
+                Skill.VOCABULARY, listOf("lg_hetong", "lg_tiaokuan", "lg_dangshiren", "lg_falv_zeren", "lg_weifan_hetong"),
+                extra = listOf(choice("lg1", L, "双方昨天签了___。", listOf("合同", "贷款", "利率"), 0, Skill.VOCABULARY), choice("lg2", L, "A section of a contract:", listOf("条款", "抵押", "账户"), 0, Skill.VOCABULARY))),
             f.lesson("ev_essentials", A1, "survival", g("Most useful phrases", "العبارات الأكثر استخدامًا"), g("Phrases you will use every day and when travelling.", "عبارات تستخدمها كل يوم وفي السفر."),
                 Skill.SPEAKING, listOf("ev_qingwen", "ev_ting_bu_dong", "ev_man_yidian", "ev_zai_shuo", "ev_xishoujian", "ev_bang_wo", "ev_bu_zhidao", "ev_mei_guanxi"),
                 extra = listOf(
@@ -403,6 +423,8 @@ internal object MandarinCurriculum {
             CourseUnit("zh_u_pro_business", L, B1, g("Chinese for work", "الصينية للعمل"), g("Meetings and formal emails", "الاجتماعات والرسائل الرسمية"), listOf("zh_l_work"), trackId = "business"),
             CourseUnit("zh_u_next", L, B1, g("Next steps", "الخطوة التالية"), g("Completed actions and comparisons", "الأفعال المكتملة والمقارنة"), listOf("zh_l_completed", "zh_l_compare")),
             CourseUnit("zh_u_pro_finance", L, B1, g("Banking and finance", "البنوك والتمويل"), g("Core banking vocabulary", "مفردات البنوك الأساسية"), listOf("zh_l_finance"), trackId = "finance"),
+            CourseUnit("zh_u_pro_credit", L, B2, g("Credit and risk", "الائتمان والمخاطر"), g("Credit risk and problem loans", "مخاطر الائتمان والقروض المتعثرة"), listOf("zh_l_credit"), trackId = "credit_risk"),
+            CourseUnit("zh_u_pro_legal", L, B2, g("Legal Chinese", "الصينية القانونية"), g("Contracts", "العقود"), listOf("zh_l_legal"), trackId = "legal"),
             CourseUnit("zh_u_survival", L, A1, g("Essential phrases", "العبارات الأساسية"), g("Everyday phrases and emergencies", "العبارات اليومية والطوارئ"), listOf("zh_l_ev_essentials", "zh_l_ev_emergency")),
             CourseUnit("zh_u_tourism", L, A2, g("Travel and tourism", "السفر والسياحة"), g("Restaurants, hotels, transport and sightseeing", "المطاعم والفنادق والمواصلات والمعالم"), listOf("zh_l_ev_restaurant", "zh_l_ev_hotel", "zh_l_ev_transport", "zh_l_ev_sightseeing")),
         )
@@ -540,6 +562,10 @@ internal object MandarinCurriculum {
             scenarios = scenarios, assessment = assessment,
             tracks = listOf(LearningTrack("business", L, g("Chinese for work", "الصينية للعمل"), g("Meetings, formal emails, budgets and deadlines.", "الاجتماعات والرسائل الرسمية والميزانيات والمواعيد النهائية."), A2, null),
                 LearningTrack("finance", L, g("Chinese for banking and finance", "الصينية للبنوك والتمويل"), g("Accounts, loans, interest, collateral and financial statements.", "الحسابات والقروض والفوائد والضمانات والقوائم المالية."), B1,
+                    g("This track teaches Chinese vocabulary used in this field. It is not financial, legal or professional advice.", "يعلّم هذا المسار مفردات الصينية المستخدمة في هذا المجال، ولا يُعدّ استشارة مالية أو قانونية أو مهنية.")),
+                LearningTrack("credit_risk", L, g("Credit and risk", "الائتمان والمخاطر"), g("Credit risk, problem loans, restructuring and guarantors.", "مخاطر الائتمان والقروض المتعثرة وإعادة الهيكلة والكفلاء."), B2,
+                    g("This track teaches Chinese vocabulary used in this field. It is not financial, legal or professional advice.", "يعلّم هذا المسار مفردات الصينية المستخدمة في هذا المجال، ولا يُعدّ استشارة مالية أو قانونية أو مهنية.")),
+                LearningTrack("legal", L, g("Legal Chinese", "الصينية القانونية"), g("Contracts, clauses, parties and liability.", "العقود والبنود والأطراف والمسؤولية."), B2,
                     g("This track teaches Chinese vocabulary used in this field. It is not financial, legal or professional advice.", "يعلّم هذا المسار مفردات الصينية المستخدمة في هذا المجال، ولا يُعدّ استشارة مالية أو قانونية أو مهنية."))),
             dictations = listOf(
                 dictation("d1", L, "我是学生", listOf("我是学生。")),

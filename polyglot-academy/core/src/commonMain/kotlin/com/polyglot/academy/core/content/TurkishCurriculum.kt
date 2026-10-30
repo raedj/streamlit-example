@@ -6,6 +6,7 @@ import com.polyglot.academy.core.model.CefrLevel.A1
 import com.polyglot.academy.core.model.CefrLevel.A2
 import com.polyglot.academy.core.model.CefrLevel.B1
 import com.polyglot.academy.core.model.CefrLevel.B2
+import com.polyglot.academy.core.model.CefrLevel.C1
 import com.polyglot.academy.core.model.CourseUnit
 import com.polyglot.academy.core.model.Exercise
 import com.polyglot.academy.core.model.LanguageCode
@@ -144,6 +145,19 @@ internal object TurkishCurriculum {
             v("fin_temerrut", "temerrüt", "default (failure to pay)", "التعثّر عن السداد", NOUN, B2, "finance", tags = fin, source = pro)
             v("fin_bilanco", "bilanço", "balance sheet", "الميزانية العمومية", NOUN, B2, "finance", tags = fin, source = pro)
             v("fin_likidite", "likidite", "liquidity", "السيولة", NOUN, B2, "finance", tags = fin, source = pro)
+            // Credit and risk (professional track)
+            v("cr_kredi_riski", "kredi riski", "credit risk", "مخاطر الائتمان", NOUN, B2, "credit_risk", ex = "Banka her müşterinin kredi riskini değerlendirir.", exEn = "The bank assesses each customer's credit risk.", exAr = "يقيّم البنك مخاطر الائتمان لكل عميل.", tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("cr_yapilandirma", "yeniden yapılandırma", "restructuring", "إعادة الهيكلة", NOUN, B2, "credit_risk", tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("cr_aktiften_silme", "aktiften silme", "write-off", "شطب الدين", NOUN, C1, "credit_risk", tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("cr_kredi_degerliligi", "kredi değerliliği", "creditworthiness", "الجدارة الائتمانية", NOUN, C1, "credit_risk", tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("cr_karsilik", "zarar karşılığı", "loan-loss provision", "مخصّص الخسائر", NOUN, C1, "credit_risk", tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("cr_kefil", "kefil", "guarantor", "الكفيل", NOUN, B2, "credit_risk", tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            // Contracts (professional track)
+            v("lg_sozlesme", "sözleşme", "contract", "العقد", NOUN, B1, "legal", ex = "İki taraf sözleşmeyi dün imzaladı.", exEn = "Both parties signed the contract yesterday.", exAr = "وقّع الطرفان العقد أمس.", tags = setOf("legal"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("lg_madde", "madde", "clause, article", "البند، المادة", NOUN, B2, "legal", tags = setOf("legal"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("lg_taraf", "taraf", "party (to an agreement)", "الطرف", NOUN, B2, "legal", tags = setOf("legal"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("lg_sorumluluk", "hukuki sorumluluk", "legal liability", "المسؤولية القانونية", NOUN, C1, "legal", tags = setOf("legal"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("lg_ihlal", "sözleşme ihlali", "breach of contract", "الإخلال بالعقد", NOUN, C1, "legal", tags = setOf("legal"), source = VocabularySource.PROFESSIONAL_TRACK)
             // Daily life and travel
             v("ev_affedersiniz", "affedersiniz", "excuse me", "عفوًا", PHRASE, A1, "essentials", ex = "Affedersiniz, bu yer boş mu?", exEn = "Excuse me, is this seat free?", exAr = "عفوًا، هل هذا المقعد شاغر؟")
             v("ev_anlamiyorum", "anlamıyorum", "I don't understand", "لا أفهم", PHRASE, A1, "essentials")
@@ -346,6 +360,12 @@ internal object TurkishCurriculum {
                     fill("fi2", L, "Faiz ___ yüzde beş.", listOf("oranı")),
                     choice("fi3", L, "Which document shows assets and liabilities?", listOf("bilanço", "teklif", "fiş"), 0, Skill.VOCABULARY),
                 )),
+            f.lesson("credit", B2, "pro_credit", g("Credit and risk", "الائتمان والمخاطر"), g("Credit risk, problem loans, write-offs and guarantors.", "مخاطر الائتمان والقروض المتعثرة وشطب الديون والكفلاء."),
+                Skill.VOCABULARY, listOf("cr_kredi_riski", "cr_yapilandirma", "cr_aktiften_silme", "cr_kredi_degerliligi", "cr_karsilik", "cr_kefil"),
+                extra = listOf(fill("cr1", L, "Banka müşterinin kredi ___ değerlendirdi.", listOf("riskini")), choice("cr2", L, "Who pays if the borrower cannot?", listOf("kefil", "veznedar", "noter"), 0, Skill.VOCABULARY))),
+            f.lesson("legal", B2, "pro_legal", g("Contract language", "لغة العقود"), g("Contracts, clauses, parties, liability and breach.", "العقود والبنود والأطراف والمسؤولية والإخلال."),
+                Skill.VOCABULARY, listOf("lg_sozlesme", "lg_madde", "lg_taraf", "lg_sorumluluk", "lg_ihlal"),
+                extra = listOf(fill("lg1", L, "İki ___ sözleşmeyi imzaladı.", listOf("taraf")), choice("lg2", L, "A section of a contract:", listOf("madde", "taksit", "teminat"), 0, Skill.VOCABULARY))),
             f.lesson("ev_essentials", A1, "survival", g("Most useful phrases", "العبارات الأكثر استخدامًا"), g("Phrases you will use every day and when travelling.", "عبارات تستخدمها كل يوم وفي السفر."),
                 Skill.SPEAKING, listOf("ev_affedersiniz", "ev_anlamiyorum", "ev_yavas", "ev_tekrar", "ev_tuvalet", "ev_yardim", "ev_bilmiyorum", "ev_rica"),
                 extra = listOf(
@@ -391,6 +411,8 @@ internal object TurkishCurriculum {
             CourseUnit("tr_u_pro_business", L, B1, g("Turkish for work", "التركية للعمل"), g("Meetings and formal emails", "الاجتماعات والرسائل الرسمية"), listOf("tr_l_is"), trackId = "business"),
             CourseUnit("tr_u_next", L, B1, g("Next steps", "الخطوة التالية"), g("Plans, needs and wishes", "الخطط والضرورات والأمنيات"), listOf("tr_l_planlar", "tr_l_istekler")),
             CourseUnit("tr_u_pro_finance", L, B1, g("Banking and finance", "البنوك والتمويل"), g("Core banking vocabulary", "مفردات البنوك الأساسية"), listOf("tr_l_finans"), trackId = "finance"),
+            CourseUnit("tr_u_pro_credit", L, B2, g("Credit and risk", "الائتمان والمخاطر"), g("Credit risk and problem loans", "مخاطر الائتمان والقروض المتعثرة"), listOf("tr_l_credit"), trackId = "credit_risk"),
+            CourseUnit("tr_u_pro_legal", L, B2, g("Legal Turkish", "التركية القانونية"), g("Contracts", "العقود"), listOf("tr_l_legal"), trackId = "legal"),
             CourseUnit("tr_u_survival", L, A1, g("Essential phrases", "العبارات الأساسية"), g("Everyday phrases and emergencies", "العبارات اليومية والطوارئ"), listOf("tr_l_ev_essentials", "tr_l_ev_emergency")),
             CourseUnit("tr_u_tourism", L, A2, g("Travel and tourism", "السفر والسياحة"), g("Restaurants, hotels, transport and sightseeing", "المطاعم والفنادق والمواصلات والمعالم"), listOf("tr_l_ev_restaurant", "tr_l_ev_hotel", "tr_l_ev_transport", "tr_l_ev_sightseeing")),
         )
@@ -513,6 +535,10 @@ internal object TurkishCurriculum {
         return LanguageCurriculum(L, vocabulary, grammar, units, lessons, readings, scenarios, assessment,
             tracks = listOf(LearningTrack("business", L, g("Turkish for work", "التركية للعمل"), g("Meetings, formal emails, quotes and deadlines.", "الاجتماعات والرسائل الرسمية وعروض الأسعار والمواعيد النهائية."), A2, null),
                 LearningTrack("finance", L, g("Turkish for banking and finance", "التركية للبنوك والتمويل"), g("Accounts, loans, interest, collateral and financial statements.", "الحسابات والقروض والفوائد والضمانات والقوائم المالية."), B1,
+                    g("This track teaches Turkish vocabulary used in this field. It is not financial, legal or professional advice.", "يعلّم هذا المسار مفردات التركية المستخدمة في هذا المجال، ولا يُعدّ استشارة مالية أو قانونية أو مهنية.")),
+                LearningTrack("credit_risk", L, g("Credit and risk", "الائتمان والمخاطر"), g("Credit risk, problem loans, restructuring and guarantors.", "مخاطر الائتمان والقروض المتعثرة وإعادة الهيكلة والكفلاء."), B2,
+                    g("This track teaches Turkish vocabulary used in this field. It is not financial, legal or professional advice.", "يعلّم هذا المسار مفردات التركية المستخدمة في هذا المجال، ولا يُعدّ استشارة مالية أو قانونية أو مهنية.")),
+                LearningTrack("legal", L, g("Legal Turkish", "التركية القانونية"), g("Contracts, clauses, parties and liability.", "العقود والبنود والأطراف والمسؤولية."), B2,
                     g("This track teaches Turkish vocabulary used in this field. It is not financial, legal or professional advice.", "يعلّم هذا المسار مفردات التركية المستخدمة في هذا المجال، ولا يُعدّ استشارة مالية أو قانونية أو مهنية."))),
             dictations = listOf(
                 dictation("d1", L, "Benim adım Kerem.", listOf("Benim adım Kerem")),

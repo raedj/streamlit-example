@@ -6,6 +6,7 @@ import com.polyglot.academy.core.model.CefrLevel.A1
 import com.polyglot.academy.core.model.CefrLevel.A2
 import com.polyglot.academy.core.model.CefrLevel.B1
 import com.polyglot.academy.core.model.CefrLevel.B2
+import com.polyglot.academy.core.model.CefrLevel.C1
 import com.polyglot.academy.core.model.CourseUnit
 import com.polyglot.academy.core.model.Exercise
 import com.polyglot.academy.core.model.Gender.FEMININE
@@ -149,6 +150,19 @@ internal object UrduCurriculum {
             v("fin_nadehandagi", "نادہندگی", "default (failure to pay)", "التعثّر عن السداد", NOUN, B2, "finance", translit = "nādehandagī", tags = fin, source = pro)
             v("fin_balance_sheet", "بیلنس شیٹ", "balance sheet", "الميزانية العمومية", NOUN, B2, "finance", translit = "bailans shīṭ", tags = fin, source = pro)
             v("fin_liquidity", "لیکویڈیٹی", "liquidity", "السيولة", NOUN, B2, "finance", translit = "likwiḍiṭī", tags = fin, source = pro)
+            // Credit and risk (professional track)
+            v("cr_qarz_khatra", "قرض کا خطرہ", "credit risk", "مخاطر الائتمان", NOUN, B2, "credit_risk", translit = "qarz kā ḳhatra", ex = "بینک ہر گاہک کے قرض کے خطرے کا جائزہ لیتا ہے۔", exEn = "The bank assesses each customer's credit risk.", exAr = "يقيّم البنك مخاطر الائتمان لكل عميل.", tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("cr_tashkeel_nau", "ازسرِنو تشکیل", "restructuring", "إعادة الهيكلة", NOUN, B2, "credit_risk", translit = "az-sar-e nau tashkīl", tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("cr_write_off", "قرض کا رائٹ آف", "write-off", "شطب الدين", NOUN, C1, "credit_risk", translit = "qarz kā rāiṭ āf", tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("cr_saakh", "ساکھ", "creditworthiness, credit standing", "الجدارة الائتمانية", NOUN, C1, "credit_risk", translit = "sākh", tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("cr_provision", "پروویژن", "loan-loss provision", "مخصّص الخسائر", NOUN, C1, "credit_risk", translit = "provīzhan", tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("cr_zamin", "ضامن", "guarantor", "الكفيل", NOUN, B2, "credit_risk", translit = "zāmin", tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            // Contracts (professional track)
+            v("lg_muahida", "معاہدہ", "contract", "العقد", NOUN, B1, "legal", translit = "muāhida", ex = "دونوں فریقوں نے کل معاہدے پر دستخط کیے۔", exEn = "Both parties signed the contract yesterday.", exAr = "وقّع الطرفان العقد أمس.", tags = setOf("legal"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("lg_shiq", "شق", "clause", "البند", NOUN, B2, "legal", translit = "shiq", tags = setOf("legal"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("lg_fareeq", "فریق", "party (to an agreement)", "الطرف", NOUN, B2, "legal", translit = "farīq", tags = setOf("legal"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("lg_zimmedari", "قانونی ذمہ داری", "legal liability", "المسؤولية القانونية", NOUN, C1, "legal", translit = "qānūnī zimmedārī", tags = setOf("legal"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("lg_khilaf_warzi", "معاہدے کی خلاف ورزی", "breach of contract", "الإخلال بالعقد", PHRASE, C1, "legal", translit = "muāhide kī ḳhilāf varzī", tags = setOf("legal"), source = VocabularySource.PROFESSIONAL_TRACK)
             // Daily life and travel
             v("ev_suniye", "سنیے", "excuse me (to get attention)", "لو سمحت", PHRASE, A1, "essentials", translit = "suniye", ex = "سنیے، کیا یہ سیٹ خالی ہے؟", exEn = "Excuse me, is this seat free?", exAr = "لو سمحت، هل هذا المقعد شاغر؟")
             v("ev_samjha_nahin", "میں سمجھا نہیں / سمجھی نہیں", "I didn't understand (m./f.)", "لم أفهم", PHRASE, A1, "essentials", translit = "maiṅ samjhā nahīṇ / samjhī nahīṇ")
@@ -353,6 +367,12 @@ internal object UrduCurriculum {
                     fill("fi2", L, "شرحِ ___ پانچ فیصد ہے۔", listOf("سود")),
                     choice("fi3", L, "Which document shows assets and liabilities?", listOf("بیلنس شیٹ", "کوٹیشن", "رسید"), 0, Skill.VOCABULARY),
                 )),
+            f.lesson("credit", B2, "pro_credit", g("Credit and risk", "الائتمان والمخاطر"), g("Credit risk, problem loans, write-offs and guarantors.", "مخاطر الائتمان والقروض المتعثرة وشطب الديون والكفلاء."),
+                Skill.VOCABULARY, listOf("cr_qarz_khatra", "cr_tashkeel_nau", "cr_write_off", "cr_saakh", "cr_provision", "cr_zamin"),
+                extra = listOf(fill("cr1", L, "قرض ادا نہ ہو تو ___ ادا کرتا ہے۔", listOf("ضامن")), choice("cr2", L, "Credit risk:", listOf("قرض کا خطرہ", "شرحِ سود", "بیلنس شیٹ"), 0, Skill.VOCABULARY))),
+            f.lesson("legal", B2, "pro_legal", g("Contract language", "لغة العقود"), g("Contracts, clauses, parties, liability and breach.", "العقود والبنود والأطراف والمسؤولية والإخلال."),
+                Skill.VOCABULARY, listOf("lg_muahida", "lg_shiq", "lg_fareeq", "lg_zimmedari", "lg_khilaf_warzi"),
+                extra = listOf(fill("lg1", L, "دونوں ___ نے معاہدے پر دستخط کیے۔", listOf("فریقوں")), choice("lg2", L, "A section of a contract:", listOf("شق", "قسط", "ضمانت"), 0, Skill.VOCABULARY))),
             f.lesson("ev_essentials", A1, "survival", g("Most useful phrases", "العبارات الأكثر استخدامًا"), g("Phrases you will use every day and when travelling.", "عبارات تستخدمها كل يوم وفي السفر."),
                 Skill.SPEAKING, listOf("ev_suniye", "ev_samjha_nahin", "ev_ahista", "ev_dobara", "ev_washroom", "ev_madad", "ev_maloom", "ev_koi_baat"),
                 extra = listOf(
@@ -398,6 +418,8 @@ internal object UrduCurriculum {
             CourseUnit("ur_u_pro_business", L, B1, g("Urdu for work", "الأردية للعمل"), g("Meetings and formal emails", "الاجتماعات والرسائل الرسمية"), listOf("ur_l_kaam"), trackId = "business"),
             CourseUnit("ur_u_next", L, B1, g("Next steps", "الخطوة التالية"), g("Plans, needs and wishes", "الخطط والضرورات والأمنيات"), listOf("ur_l_mansoobay", "ur_l_khwahishein")),
             CourseUnit("ur_u_pro_finance", L, B1, g("Banking and finance", "البنوك والتمويل"), g("Core banking vocabulary", "مفردات البنوك الأساسية"), listOf("ur_l_finance"), trackId = "finance"),
+            CourseUnit("ur_u_pro_credit", L, B2, g("Credit and risk", "الائتمان والمخاطر"), g("Credit risk and problem loans", "مخاطر الائتمان والقروض المتعثرة"), listOf("ur_l_credit"), trackId = "credit_risk"),
+            CourseUnit("ur_u_pro_legal", L, B2, g("Legal Urdu", "الأردية القانونية"), g("Contracts", "العقود"), listOf("ur_l_legal"), trackId = "legal"),
             CourseUnit("ur_u_survival", L, A1, g("Essential phrases", "العبارات الأساسية"), g("Everyday phrases and emergencies", "العبارات اليومية والطوارئ"), listOf("ur_l_ev_essentials", "ur_l_ev_emergency")),
             CourseUnit("ur_u_tourism", L, A2, g("Travel and tourism", "السفر والسياحة"), g("Restaurants, hotels, transport and sightseeing", "المطاعم والفنادق والمواصلات والمعالم"), listOf("ur_l_ev_restaurant", "ur_l_ev_hotel", "ur_l_ev_transport", "ur_l_ev_sightseeing")),
         )
@@ -520,6 +542,10 @@ internal object UrduCurriculum {
         return LanguageCurriculum(L, vocabulary, grammar, units, lessons, readings, scenarios, assessment,
             tracks = listOf(LearningTrack("business", L, g("Urdu for work", "الأردية للعمل"), g("Meetings, formal emails, quotes and deadlines.", "الاجتماعات والرسائل الرسمية وعروض الأسعار والمواعيد النهائية."), A2, null),
                 LearningTrack("finance", L, g("Urdu for banking and finance", "الأردية للبنوك والتمويل"), g("Accounts, loans, interest, collateral and financial statements.", "الحسابات والقروض والفوائد والضمانات والقوائم المالية."), B1,
+                    g("This track teaches Urdu vocabulary used in this field. It is not financial, legal or professional advice.", "يعلّم هذا المسار مفردات الأردية المستخدمة في هذا المجال، ولا يُعدّ استشارة مالية أو قانونية أو مهنية.")),
+                LearningTrack("credit_risk", L, g("Credit and risk", "الائتمان والمخاطر"), g("Credit risk, problem loans, restructuring and guarantors.", "مخاطر الائتمان والقروض المتعثرة وإعادة الهيكلة والكفلاء."), B2,
+                    g("This track teaches Urdu vocabulary used in this field. It is not financial, legal or professional advice.", "يعلّم هذا المسار مفردات الأردية المستخدمة في هذا المجال، ولا يُعدّ استشارة مالية أو قانونية أو مهنية.")),
+                LearningTrack("legal", L, g("Legal Urdu", "الأردية القانونية"), g("Contracts, clauses, parties and liability.", "العقود والبنود والأطراف والمسؤولية."), B2,
                     g("This track teaches Urdu vocabulary used in this field. It is not financial, legal or professional advice.", "يعلّم هذا المسار مفردات الأردية المستخدمة في هذا المجال، ولا يُعدّ استشارة مالية أو قانونية أو مهنية."))),
             dictations = listOf(
                 dictation("d1", L, "میرا نام عمران ہے۔", listOf("میرا نام عمران ہے")),

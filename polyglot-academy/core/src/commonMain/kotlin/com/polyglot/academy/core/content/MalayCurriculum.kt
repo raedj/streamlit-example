@@ -6,6 +6,7 @@ import com.polyglot.academy.core.model.CefrLevel.A1
 import com.polyglot.academy.core.model.CefrLevel.A2
 import com.polyglot.academy.core.model.CefrLevel.B1
 import com.polyglot.academy.core.model.CefrLevel.B2
+import com.polyglot.academy.core.model.CefrLevel.C1
 import com.polyglot.academy.core.model.CourseUnit
 import com.polyglot.academy.core.model.Exercise
 import com.polyglot.academy.core.model.LanguageCode
@@ -145,6 +146,19 @@ internal object MalayCurriculum {
             v("fin_ingkar", "ingkar bayar", "default (failure to pay)", "التعثّر عن السداد", NOUN, B2, "finance", tags = fin, source = pro)
             v("fin_kunci_kira", "kunci kira-kira", "balance sheet", "الميزانية العمومية", NOUN, B2, "finance", tags = fin, source = pro)
             v("fin_kecairan", "kecairan", "liquidity", "السيولة", NOUN, B2, "finance", tags = fin, source = pro)
+            // Credit and risk (professional track)
+            v("cr_risiko_kredit", "risiko kredit", "credit risk", "مخاطر الائتمان", NOUN, B2, "credit_risk", ex = "Bank menilai risiko kredit setiap pelanggan.", exEn = "The bank assesses each customer's credit risk.", exAr = "يقيّم البنك مخاطر الائتمان لكل عميل.", tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("cr_penstrukturan", "penstrukturan semula", "restructuring", "إعادة الهيكلة", NOUN, B2, "credit_risk", tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("cr_hapus_kira", "hapus kira", "write-off", "شطب الدين", NOUN, C1, "credit_risk", tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("cr_kelayakan", "kelayakan kredit", "creditworthiness", "الجدارة الائتمانية", NOUN, C1, "credit_risk", tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("cr_peruntukan", "peruntukan kerugian", "loan-loss provision", "مخصّص الخسائر", NOUN, C1, "credit_risk", tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("cr_penjamin", "penjamin", "guarantor", "الكفيل", NOUN, B2, "credit_risk", tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            // Contracts (professional track)
+            v("lg_kontrak", "kontrak", "contract", "العقد", NOUN, B1, "legal", ex = "Kedua-dua pihak menandatangani kontrak itu semalam.", exEn = "Both parties signed the contract yesterday.", exAr = "وقّع الطرفان العقد أمس.", tags = setOf("legal"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("lg_fasal", "fasal", "clause", "البند", NOUN, B2, "legal", tags = setOf("legal"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("lg_pihak", "pihak", "party (to an agreement)", "الطرف", NOUN, B2, "legal", tags = setOf("legal"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("lg_liabiliti", "liabiliti", "legal liability", "المسؤولية القانونية", NOUN, C1, "legal", tags = setOf("legal"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("lg_pelanggaran", "pelanggaran kontrak", "breach of contract", "الإخلال بالعقد", NOUN, C1, "legal", tags = setOf("legal"), source = VocabularySource.PROFESSIONAL_TRACK)
             // Daily life and travel
             v("ev_maafkan", "maafkan saya", "excuse me", "عفوًا", PHRASE, A1, "essentials", ex = "Maafkan saya, tempat ini kosong?", exEn = "Excuse me, is this seat free?", exAr = "عفوًا، هل هذا المقعد شاغر؟")
             v("ev_tak_faham", "saya tak faham", "I don't understand", "لا أفهم", PHRASE, A1, "essentials")
@@ -356,6 +370,12 @@ internal object MalayCurriculum {
                         explanation = g("Passive: di- + verb, doer after oleh.", "المبني للمجهول: di- + الفعل، والفاعل بعد oleh.")),
                     choice("kw4", L, "Which document shows assets and liabilities?", listOf("kunci kira-kira", "sebut harga", "resit"), 0, Skill.VOCABULARY),
                 )),
+            f.lesson("credit", B2, "pro_credit", g("Credit and risk", "الائتمان والمخاطر"), g("Credit risk, problem loans, write-offs and guarantors.", "مخاطر الائتمان والقروض المتعثرة وشطب الديون والكفلاء."),
+                Skill.VOCABULARY, listOf("cr_risiko_kredit", "cr_penstrukturan", "cr_hapus_kira", "cr_kelayakan", "cr_peruntukan", "cr_penjamin"),
+                extra = listOf(fill("cr1", L, "Bank menilai ___ kredit setiap pelanggan.", listOf("risiko")), choice("cr2", L, "Who pays if the borrower cannot?", listOf("penjamin", "juruwang", "peguam"), 0, Skill.VOCABULARY))),
+            f.lesson("legal", B2, "pro_legal", g("Contract language", "لغة العقود"), g("Contracts, clauses, parties, liability and breach.", "العقود والبنود والأطراف والمسؤولية والإخلال."),
+                Skill.VOCABULARY, listOf("lg_kontrak", "lg_fasal", "lg_pihak", "lg_liabiliti", "lg_pelanggaran"),
+                extra = listOf(fill("lg1", L, "Kedua-dua ___ menandatangani kontrak itu.", listOf("pihak")), choice("lg2", L, "A section of a contract:", listOf("fasal", "ansuran", "cagaran"), 0, Skill.VOCABULARY))),
             f.lesson("ev_essentials", A1, "survival", g("Most useful phrases", "العبارات الأكثر استخدامًا"), g("Phrases you will use every day and when travelling.", "عبارات تستخدمها كل يوم وفي السفر."),
                 Skill.SPEAKING, listOf("ev_maafkan", "ev_tak_faham", "ev_perlahan", "ev_ulang", "ev_tandas", "ev_bantu", "ev_tak_tahu", "ev_sama_sama"),
                 extra = listOf(
@@ -401,6 +421,8 @@ internal object MalayCurriculum {
             CourseUnit("ms_u_pro_business", L, B1, g("Malay for work", "الملايوية للعمل"), g("Meetings and formal emails", "الاجتماعات والرسائل الرسمية"), listOf("ms_l_kerja"), trackId = "business"),
             CourseUnit("ms_u_next", L, B1, g("Next steps", "الخطوة التالية"), g("Plans, needs and wishes", "الخطط والضرورات والأمنيات"), listOf("ms_l_rancangan", "ms_l_harapan")),
             CourseUnit("ms_u_pro_finance", L, B1, g("Banking and finance", "البنوك والتمويل"), g("Core banking vocabulary", "مفردات البنوك الأساسية"), listOf("ms_l_kewangan"), trackId = "finance"),
+            CourseUnit("ms_u_pro_credit", L, B2, g("Credit and risk", "الائتمان والمخاطر"), g("Credit risk and problem loans", "مخاطر الائتمان والقروض المتعثرة"), listOf("ms_l_credit"), trackId = "credit_risk"),
+            CourseUnit("ms_u_pro_legal", L, B2, g("Legal Malay", "الملايوية القانونية"), g("Contracts", "العقود"), listOf("ms_l_legal"), trackId = "legal"),
             CourseUnit("ms_u_survival", L, A1, g("Essential phrases", "العبارات الأساسية"), g("Everyday phrases and emergencies", "العبارات اليومية والطوارئ"), listOf("ms_l_ev_essentials", "ms_l_ev_emergency")),
             CourseUnit("ms_u_tourism", L, A2, g("Travel and tourism", "السفر والسياحة"), g("Restaurants, hotels, transport and sightseeing", "المطاعم والفنادق والمواصلات والمعالم"), listOf("ms_l_ev_restaurant", "ms_l_ev_hotel", "ms_l_ev_transport", "ms_l_ev_sightseeing")),
         )
@@ -523,6 +545,10 @@ internal object MalayCurriculum {
         return LanguageCurriculum(L, vocabulary, grammar, units, lessons, readings, scenarios, assessment,
             tracks = listOf(LearningTrack("business", L, g("Malay for work", "الملايوية للعمل"), g("Meetings, formal emails, quotes and deadlines.", "الاجتماعات والرسائل الرسمية وعروض الأسعار والمواعيد النهائية."), A2, null),
                 LearningTrack("finance", L, g("Malay for banking and finance", "الملايوية للبنوك والتمويل"), g("Accounts, loans, interest, collateral and financial statements.", "الحسابات والقروض والفوائد والضمانات والقوائم المالية."), B1,
+                    g("This track teaches Malay vocabulary used in this field. It is not financial, legal or professional advice.", "يعلّم هذا المسار مفردات الملايوية المستخدمة في هذا المجال، ولا يُعدّ استشارة مالية أو قانونية أو مهنية.")),
+                LearningTrack("credit_risk", L, g("Credit and risk", "الائتمان والمخاطر"), g("Credit risk, problem loans, restructuring and guarantors.", "مخاطر الائتمان والقروض المتعثرة وإعادة الهيكلة والكفلاء."), B2,
+                    g("This track teaches Malay vocabulary used in this field. It is not financial, legal or professional advice.", "يعلّم هذا المسار مفردات الملايوية المستخدمة في هذا المجال، ولا يُعدّ استشارة مالية أو قانونية أو مهنية.")),
+                LearningTrack("legal", L, g("Legal Malay", "الملايوية القانونية"), g("Contracts, clauses, parties and liability.", "العقود والبنود والأطراف والمسؤولية."), B2,
                     g("This track teaches Malay vocabulary used in this field. It is not financial, legal or professional advice.", "يعلّم هذا المسار مفردات الملايوية المستخدمة في هذا المجال، ولا يُعدّ استشارة مالية أو قانونية أو مهنية."))),
             dictations = listOf(
                 dictation("d1", L, "Nama saya Aminah.", listOf("Nama saya Aminah")),

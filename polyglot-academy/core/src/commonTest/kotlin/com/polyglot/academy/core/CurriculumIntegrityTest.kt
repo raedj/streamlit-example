@@ -63,9 +63,13 @@ class CurriculumIntegrityTest {
     @Test fun nonEnglishLanguagesHaveAWorkTrackOutsideTheGeneralSequence() {
         for (lang in LanguageCode.entries - LanguageCode.ENGLISH) {
             val c = Curriculum.of(lang)
-            assertEquals(listOf("business", "finance"), c.tracks.map { it.id }, "$lang tracks")
-            assertTrue(c.tracks.first { it.id == "finance" }.disclaimer != null, "$lang finance track needs its disclaimer")
-            assertTrue(c.unitsForTrack("finance").flatMap { it.lessonIds }.none { id -> c.sequencer.orderedLessons().any { it.id == id } })
+            assertEquals(listOf("business", "finance", "credit_risk", "legal"), c.tracks.map { it.id }, "$lang tracks")
+            for (id in listOf("finance", "credit_risk", "legal")) {
+                assertTrue(c.tracks.first { it.id == id }.disclaimer != null, "$lang $id track needs its disclaimer")
+                val lessons = c.unitsForTrack(id).flatMap { it.lessonIds }
+                assertTrue(lessons.isNotEmpty() && lessons.all { it in c.lessonsById }, "$lang $id track lessons")
+                assertTrue(lessons.none { l -> c.sequencer.orderedLessons().any { it.id == l } }, "$lang $id lessons leak into the general path")
+            }
             val trackLessons = c.unitsForTrack("business").flatMap { it.lessonIds }.toSet()
             assertTrue(trackLessons.isNotEmpty(), "$lang business track has no lessons")
             assertTrue(c.sequencer.orderedLessons().none { it.id in trackLessons }, "$lang track lessons leak into the general path")

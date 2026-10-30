@@ -6,6 +6,7 @@ import com.polyglot.academy.core.model.CefrLevel.A1
 import com.polyglot.academy.core.model.CefrLevel.A2
 import com.polyglot.academy.core.model.CefrLevel.B1
 import com.polyglot.academy.core.model.CefrLevel.B2
+import com.polyglot.academy.core.model.CefrLevel.C1
 import com.polyglot.academy.core.model.CefrLevel.PRE_A1
 import com.polyglot.academy.core.model.CourseUnit
 import com.polyglot.academy.core.model.Exercise
@@ -138,6 +139,19 @@ internal object ArabicCurriculum {
             v("fin_taathur", "تعثّر عن السداد", "default (failure to repay)", "العجز عن دفع الدين", PHRASE, B2, "finance", translit = "taʿaththur ʿan as-sadād", tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
             v("fin_mizaniyya_umumiyya", "الميزانية العمومية", "balance sheet", "قائمة الأصول والخصوم", NOUN, B2, "finance", translit = "al-mīzāniyya al-ʿumūmiyya", gender = FEMININE, tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
             v("fin_suyula", "السيولة", "liquidity", "توفر النقد", NOUN, B2, "finance", translit = "as-suyūla", gender = FEMININE, tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            // Credit and risk (professional track)
+            v("cr_mukhatir", "مخاطر الائتمان", "credit risk", "احتمال ألّا يسدّد المقترض دينه", NOUN, B2, "credit_risk", translit = "makhāṭir al-iʾtimān", gender = FEMININE, ex = "يقيّم البنك مخاطر الائتمان لكل عميل.", exEn = "The bank assesses each customer's credit risk.", exAr = "يقيّم البنك مخاطر الائتمان لكل عميل.", tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("cr_qard_mutaaththir", "قرض متعثّر", "non-performing loan", "قرض تأخّر سداده طويلًا (عادة 90 يومًا أو أكثر)", NOUN, B2, "credit_risk", translit = "qarḍ mutaʿaththir", gender = MASCULINE, tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("cr_haykala", "إعادة الهيكلة", "restructuring", "تغيير شروط القرض لتسهيل سداده", NOUN, C1, "credit_risk", translit = "iʿādat al-haykala", gender = FEMININE, tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("cr_shatb", "شطب الدين", "write-off", "حذف دين لا يُتوقّع تحصيله من الدفاتر", NOUN, C1, "credit_risk", translit = "shaṭb ad-dayn", gender = MASCULINE, tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("cr_jadara", "الجدارة الائتمانية", "creditworthiness", "مدى قدرة المقترض على السداد", NOUN, C1, "credit_risk", translit = "al-jadāra al-iʾtimāniyya", gender = FEMININE, tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("cr_kafil", "كفيل", "guarantor", "من يتعهّد بالسداد إذا عجز المقترض", NOUN, B2, "credit_risk", translit = "kafīl", gender = MASCULINE, tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            // Contracts (professional track)
+            v("lg_aqd", "عقد", "contract", "اتفاق ملزم بين طرفين أو أكثر", NOUN, B1, "legal", translit = "ʿaqd", gender = MASCULINE, ex = "وقّع الطرفان العقد أمس.", exEn = "Both parties signed the contract yesterday.", exAr = "وقّع الطرفان العقد أمس.", tags = setOf("legal"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("lg_band", "بند", "clause", "جزء من العقد", NOUN, B2, "legal", translit = "band", gender = MASCULINE, tags = setOf("legal"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("lg_taraf", "طرف", "party (to an agreement)", "شخص أو جهة في الاتفاق", NOUN, B2, "legal", translit = "ṭaraf", gender = MASCULINE, tags = setOf("legal"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("lg_masuliyya", "المسؤولية القانونية", "legal liability", "التبعة القانونية عن فعل أو ضرر", NOUN, C1, "legal", translit = "al-masʾūliyya al-qānūniyya", gender = FEMININE, tags = setOf("legal"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("lg_ikhlal", "الإخلال بالعقد", "breach of contract", "عدم الوفاء بشروط العقد", PHRASE, C1, "legal", translit = "al-ikhlāl bil-ʿaqd", tags = setOf("legal"), source = VocabularySource.PROFESSIONAL_TRACK)
             // Daily life and travel
             v("ev_law_samaht", "لو سمحت", "excuse me / please (to get attention)", "عبارة لطلب الانتباه بأدب", PHRASE, A1, "essentials", translit = "law samaḥt", ex = "لو سمحت، هل هذا المقعد شاغر؟", exEn = "Excuse me, is this seat free?", exAr = "لو سمحت، هل هذا المقعد شاغر؟")
             v("ev_la_afham", "لا أفهم", "I don't understand", "عبارة عند عدم الفهم", PHRASE, A1, "essentials", translit = "lā afham")
@@ -296,6 +310,12 @@ internal object ArabicCurriculum {
                     order("fi2", L, listOf("دفعتُ", "القسط", "الشهري"), g("I paid the monthly instalment.", "دفعتُ القسط الشهري.")),
                     choice("fi3", L, "Interest rate:", listOf("سعر الفائدة", "سعر الصرف", "سعر السوق"), 0, Skill.VOCABULARY),
                 )),
+            f.lesson("credit", B2, "pro_credit", g("Credit and risk", "الائتمان والمخاطر"), g("Credit risk, problem loans, write-offs and guarantors.", "مخاطر الائتمان والقروض المتعثرة وشطب الديون والكفلاء."),
+                Skill.VOCABULARY, listOf("cr_mukhatir", "cr_qard_mutaaththir", "cr_haykala", "cr_shatb", "cr_jadara", "cr_kafil"),
+                extra = listOf(choice("cr1", L, "A loan unpaid for 90+ days: قرض ___", listOf("متعثّر", "مضمون", "جديد"), 0, Skill.VOCABULARY), choice("cr2", L, "Creditworthiness:", listOf("الجدارة الائتمانية", "السيولة", "الميزانية العمومية"), 0, Skill.VOCABULARY))),
+            f.lesson("legal", B2, "pro_legal", g("Contract language", "لغة العقود"), g("Contracts, clauses, parties, liability and breach.", "العقود والبنود والأطراف والمسؤولية والإخلال."),
+                Skill.VOCABULARY, listOf("lg_aqd", "lg_band", "lg_taraf", "lg_masuliyya", "lg_ikhlal"),
+                extra = listOf(choice("lg1", L, "وقّع الطرفان ___ أمس.", listOf("العقد", "القسط", "الكفيل"), 0, Skill.VOCABULARY), choice("lg2", L, "A section of a contract:", listOf("بند", "طرف", "ضمان"), 0, Skill.VOCABULARY))),
             f.lesson("ev_essentials", A1, "survival", g("Most useful phrases", "العبارات الأكثر استخدامًا"), g("Phrases you will use every day and when travelling.", "عبارات تستخدمها كل يوم وفي السفر."),
                 Skill.SPEAKING, listOf("ev_law_samaht", "ev_la_afham", "ev_bibut", "ev_karrir", "ev_dawrat_miyah", "ev_musaada", "ev_la_aarif", "ev_la_mushkila"),
                 extra = listOf(
@@ -341,6 +361,8 @@ internal object ArabicCurriculum {
             CourseUnit("ar_u_pro_business", L, B1, g("Arabic for work", "العربية للعمل"), g("Meetings and formal emails", "الاجتماعات والرسائل الرسمية"), listOf("ar_l_work"), trackId = "business"),
             CourseUnit("ar_u_next", L, B1, g("Next steps", "الخطوة التالية"), g("The past and the future", "الماضي والمستقبل"), listOf("ar_l_past", "ar_l_future")),
             CourseUnit("ar_u_pro_finance", L, B1, g("Banking and finance", "البنوك والتمويل"), g("Core banking vocabulary", "مفردات البنوك الأساسية"), listOf("ar_l_finance"), trackId = "finance"),
+            CourseUnit("ar_u_pro_credit", L, B2, g("Credit and risk", "الائتمان والمخاطر"), g("Credit risk and problem loans", "مخاطر الائتمان والقروض المتعثرة"), listOf("ar_l_credit"), trackId = "credit_risk"),
+            CourseUnit("ar_u_pro_legal", L, B2, g("Legal Arabic", "العربية القانونية"), g("Contracts", "العقود"), listOf("ar_l_legal"), trackId = "legal"),
             CourseUnit("ar_u_survival", L, A1, g("Essential phrases", "العبارات الأساسية"), g("Everyday phrases and emergencies", "العبارات اليومية والطوارئ"), listOf("ar_l_ev_essentials", "ar_l_ev_emergency")),
             CourseUnit("ar_u_tourism", L, A2, g("Travel and tourism", "السفر والسياحة"), g("Restaurants, hotels, transport and sightseeing", "المطاعم والفنادق والمواصلات والمعالم"), listOf("ar_l_ev_restaurant", "ar_l_ev_hotel", "ar_l_ev_transport", "ar_l_ev_sightseeing")),
         )
@@ -463,6 +485,10 @@ internal object ArabicCurriculum {
         return LanguageCurriculum(L, vocabulary, grammar, units, lessons, readings, scenarios, assessment,
             tracks = listOf(LearningTrack("business", L, g("Arabic for work", "العربية للعمل"), g("Meetings, formal emails, budgets and deadlines in Modern Standard Arabic.", "الاجتماعات والرسائل الرسمية والميزانيات والمواعيد النهائية بالعربية الفصحى."), A2, null),
                 LearningTrack("finance", L, g("Arabic for banking and finance", "العربية للبنوك والتمويل"), g("Accounts, loans, interest, collateral and financial statements in Modern Standard Arabic.", "الحسابات والقروض والفوائد والضمانات والقوائم المالية بالعربية الفصحى."), B1,
+                    g("This track teaches Arabic vocabulary used in this field. It is not financial, legal or professional advice.", "يعلّم هذا المسار مفردات العربية المستخدمة في هذا المجال، ولا يُعدّ استشارة مالية أو قانونية أو مهنية.")),
+                LearningTrack("credit_risk", L, g("Credit and risk", "الائتمان والمخاطر"), g("Credit risk, problem loans, restructuring and guarantors.", "مخاطر الائتمان والقروض المتعثرة وإعادة الهيكلة والكفلاء."), B2,
+                    g("This track teaches Arabic vocabulary used in this field. It is not financial, legal or professional advice.", "يعلّم هذا المسار مفردات العربية المستخدمة في هذا المجال، ولا يُعدّ استشارة مالية أو قانونية أو مهنية.")),
+                LearningTrack("legal", L, g("Legal Arabic", "العربية القانونية"), g("Contracts, clauses, parties and liability.", "العقود والبنود والأطراف والمسؤولية."), B2,
                     g("This track teaches Arabic vocabulary used in this field. It is not financial, legal or professional advice.", "يعلّم هذا المسار مفردات العربية المستخدمة في هذا المجال، ولا يُعدّ استشارة مالية أو قانونية أو مهنية."))),
             dictations = listOf(dictation("d1", L, "أنا طالب", listOf("انا طالب")), dictation("d2", L, "أين المحطة؟", listOf("اين المحطة"))),
             writingPrompts = listOf(writing("wp1", L, g("Introduce yourself in Arabic (name, job or study).", "عرّف بنفسك بالعربية."), 5, listOf("اسمي", "أنا"))),

@@ -6,6 +6,7 @@ import com.polyglot.academy.core.model.CefrLevel.A1
 import com.polyglot.academy.core.model.CefrLevel.A2
 import com.polyglot.academy.core.model.CefrLevel.B1
 import com.polyglot.academy.core.model.CefrLevel.B2
+import com.polyglot.academy.core.model.CefrLevel.C1
 import com.polyglot.academy.core.model.CourseUnit
 import com.polyglot.academy.core.model.Exercise
 import com.polyglot.academy.core.model.Gender.FEMININE
@@ -140,6 +141,19 @@ internal object FrenchCurriculum {
             v("fin_defaut", "le défaut de paiement", "default (failure to pay)", "التعثّر عن السداد", NOUN, B2, "finance", gender = MASCULINE, tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
             v("fin_bilan", "le bilan", "balance sheet", "الميزانية العمومية", NOUN, B2, "finance", gender = MASCULINE, tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
             v("fin_liquidite", "la liquidité", "liquidity", "السيولة", NOUN, B2, "finance", gender = FEMININE, tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            // Credit and risk (professional track)
+            v("cr_risque", "le risque de crédit", "credit risk", "مخاطر الائتمان", NOUN, B2, "credit_risk", gender = MASCULINE, ex = "La banque évalue le risque de crédit de chaque client.", exEn = "The bank assesses each customer's credit risk.", exAr = "يقيّم البنك مخاطر الائتمان لكل عميل.", tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("cr_restructuration", "la restructuration", "restructuring", "إعادة الهيكلة", NOUN, B2, "credit_risk", gender = FEMININE, tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("cr_passage_perte", "le passage en perte", "write-off", "شطب الدين", NOUN, C1, "credit_risk", gender = MASCULINE, tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("cr_solvabilite", "la solvabilité", "creditworthiness, solvency", "الجدارة الائتمانية، الملاءة", NOUN, C1, "credit_risk", gender = FEMININE, tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("cr_provision", "la provision", "loan-loss provision", "مخصّص الخسائر", NOUN, C1, "credit_risk", gender = FEMININE, tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("cr_garant", "le garant", "guarantor", "الكفيل", NOUN, B2, "credit_risk", gender = MASCULINE, tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            // Contracts (professional track)
+            v("lg_contrat", "le contrat", "contract", "العقد", NOUN, B1, "legal", gender = MASCULINE, ex = "Les deux parties ont signé le contrat hier.", exEn = "Both parties signed the contract yesterday.", exAr = "وقّع الطرفان العقد أمس.", tags = setOf("legal"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("lg_clause", "la clause", "clause", "البند", NOUN, B2, "legal", gender = FEMININE, tags = setOf("legal"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("lg_partie", "la partie", "party (to an agreement)", "الطرف", NOUN, B2, "legal", gender = FEMININE, tags = setOf("legal"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("lg_responsabilite", "la responsabilité civile", "legal liability", "المسؤولية القانونية", NOUN, C1, "legal", gender = FEMININE, tags = setOf("legal"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("lg_manquement", "le manquement contractuel", "breach of contract", "الإخلال بالعقد", NOUN, C1, "legal", gender = MASCULINE, tags = setOf("legal"), source = VocabularySource.PROFESSIONAL_TRACK)
             // Daily life and travel
             v("ev_excusez_moi", "excusez-moi", "excuse me", "عفوًا", PHRASE, A1, "essentials", ex = "Excusez-moi, cette place est libre ?", exEn = "Excuse me, is this seat free?", exAr = "عفوًا، هل هذا المقعد شاغر؟")
             v("ev_comprends_pas", "je ne comprends pas", "I don't understand", "لا أفهم", PHRASE, A1, "essentials")
@@ -335,6 +349,12 @@ internal object FrenchCurriculum {
                     fill("fi2", L, "Le ___ d'intérêt est de 5 %.", listOf("taux")),
                     choice("fi3", L, "Which document shows assets and liabilities?", listOf("le bilan", "le devis", "le reçu"), 0, Skill.VOCABULARY),
                 )),
+            f.lesson("credit", B2, "pro_credit", g("Credit and risk", "الائتمان والمخاطر"), g("Credit risk, problem loans, write-offs and guarantors.", "مخاطر الائتمان والقروض المتعثرة وشطب الديون والكفلاء."),
+                Skill.VOCABULARY, listOf("cr_risque", "cr_restructuration", "cr_passage_perte", "cr_solvabilite", "cr_provision", "cr_garant"),
+                extra = listOf(fill("cr1", L, "La banque évalue le ___ de crédit.", listOf("risque")), choice("cr2", L, "Who pays if the borrower cannot?", listOf("le garant", "le caissier", "le notaire"), 0, Skill.VOCABULARY))),
+            f.lesson("legal", B2, "pro_legal", g("Contract language", "لغة العقود"), g("Contracts, clauses, parties, liability and breach.", "العقود والبنود والأطراف والمسؤولية والإخلال."),
+                Skill.VOCABULARY, listOf("lg_contrat", "lg_clause", "lg_partie", "lg_responsabilite", "lg_manquement"),
+                extra = listOf(fill("lg1", L, "Les deux ___ ont signé le contrat.", listOf("parties")), choice("lg2", L, "A section of a contract:", listOf("la clause", "la mensualité", "la garantie"), 0, Skill.VOCABULARY))),
             f.lesson("ev_essentials", A1, "survival", g("Most useful phrases", "العبارات الأكثر استخدامًا"), g("Phrases you will use every day and when travelling.", "عبارات تستخدمها كل يوم وفي السفر."),
                 Skill.SPEAKING, listOf("ev_excusez_moi", "ev_comprends_pas", "ev_lentement", "ev_repeter", "ev_toilettes", "ev_aider", "ev_sais_pas", "ev_de_rien"),
                 extra = listOf(
@@ -381,6 +401,8 @@ internal object FrenchCurriculum {
             CourseUnit("fr_u_pro_business", L, B1, g("French for work", "الفرنسية للعمل"), g("Meetings and formal emails", "الاجتماعات والرسائل الرسمية"), listOf("fr_l_travail"), trackId = "business"),
             CourseUnit("fr_u_next", L, B1, g("Next steps", "الخطوة التالية"), g("Plans, needs and wishes", "الخطط والضرورات والأمنيات"), listOf("fr_l_projets", "fr_l_souhaits")),
             CourseUnit("fr_u_pro_finance", L, B1, g("Banking and finance", "البنوك والتمويل"), g("Core banking vocabulary", "مفردات البنوك الأساسية"), listOf("fr_l_finance"), trackId = "finance"),
+            CourseUnit("fr_u_pro_credit", L, B2, g("Credit and risk", "الائتمان والمخاطر"), g("Credit risk and problem loans", "مخاطر الائتمان والقروض المتعثرة"), listOf("fr_l_credit"), trackId = "credit_risk"),
+            CourseUnit("fr_u_pro_legal", L, B2, g("Legal French", "الفرنسية القانونية"), g("Contracts", "العقود"), listOf("fr_l_legal"), trackId = "legal"),
             CourseUnit("fr_u_survival", L, A1, g("Essential phrases", "العبارات الأساسية"), g("Everyday phrases and emergencies", "العبارات اليومية والطوارئ"), listOf("fr_l_ev_essentials", "fr_l_ev_emergency")),
             CourseUnit("fr_u_tourism", L, A2, g("Travel and tourism", "السفر والسياحة"), g("Restaurants, hotels, transport and sightseeing", "المطاعم والفنادق والمواصلات والمعالم"), listOf("fr_l_ev_restaurant", "fr_l_ev_hotel", "fr_l_ev_transport", "fr_l_ev_sightseeing")),
         )
@@ -504,6 +526,10 @@ internal object FrenchCurriculum {
         return LanguageCurriculum(L, vocabulary, grammar, units, lessons, readings, scenarios, assessment,
             tracks = listOf(LearningTrack("business", L, g("French for work", "الفرنسية للعمل"), g("Meetings, formal emails, quotes and deadlines.", "الاجتماعات والرسائل الرسمية وعروض الأسعار والمواعيد النهائية."), A2, null),
                 LearningTrack("finance", L, g("French for banking and finance", "الفرنسية للبنوك والتمويل"), g("Accounts, loans, interest, collateral and financial statements.", "الحسابات والقروض والفوائد والضمانات والقوائم المالية."), B1,
+                    g("This track teaches French vocabulary used in this field. It is not financial, legal or professional advice.", "يعلّم هذا المسار مفردات الفرنسية المستخدمة في هذا المجال، ولا يُعدّ استشارة مالية أو قانونية أو مهنية.")),
+                LearningTrack("credit_risk", L, g("Credit and risk", "الائتمان والمخاطر"), g("Credit risk, problem loans, restructuring and guarantors.", "مخاطر الائتمان والقروض المتعثرة وإعادة الهيكلة والكفلاء."), B2,
+                    g("This track teaches French vocabulary used in this field. It is not financial, legal or professional advice.", "يعلّم هذا المسار مفردات الفرنسية المستخدمة في هذا المجال، ولا يُعدّ استشارة مالية أو قانونية أو مهنية.")),
+                LearningTrack("legal", L, g("Legal French", "الفرنسية القانونية"), g("Contracts, clauses, parties and liability.", "العقود والبنود والأطراف والمسؤولية."), B2,
                     g("This track teaches French vocabulary used in this field. It is not financial, legal or professional advice.", "يعلّم هذا المسار مفردات الفرنسية المستخدمة في هذا المجال، ولا يُعدّ استشارة مالية أو قانونية أو مهنية."))),
             dictations = listOf(
                 dictation("d1", L, "Je m'appelle Karim.", listOf("Je m'appelle Karim")),

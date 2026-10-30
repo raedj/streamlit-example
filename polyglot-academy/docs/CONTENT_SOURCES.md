@@ -89,7 +89,7 @@ rows can move from string literals to compressed resources without changing the 
 
 | Data | File | Licence | Source | Use |
 |---|---|---|---|---|
-| Stroke medians for the 2786 Chinese characters the app uses (simplified and traditional forms) | `content/hanzi/strokes.tsv`, compiled by `tools/gen_strokes.py` into `core/.../mandarin/generated/` | Arphic Public License (`content/hanzi/ARPHICPL.TXT`); the data is a modified version of `graphics.txt` and stays under that licence, so anyone may copy, modify and redistribute it on the same terms | Make Me a Hanzi, commit 618dbab (2018-10-16), derived from the fonts Arphic PL KaitiM GB and Arphic PL UKai (downloaded 2026-10-30 with the owner's approval) | Stroke-order animation and order checking |
+| Stroke medians for the 2787 Chinese characters the app uses (simplified and traditional forms) | `content/hanzi/strokes.tsv`, compiled by `tools/gen_strokes.py` into `core/.../mandarin/generated/` | Arphic Public License (`content/hanzi/ARPHICPL.TXT`); the data is a modified version of `graphics.txt` and stays under that licence, so anyone may copy, modify and redistribute it on the same terms | Make Me a Hanzi, commit 618dbab (2018-10-16), derived from the fonts Arphic PL KaitiM GB and Arphic PL UKai (downloaded 2026-10-30 with the owner's approval) | Stroke-order animation and order checking |
 
 What was changed is recorded in the header of `strokes.tsv`: only the app's characters, only the
 medians (outlines removed), y axis flipped to screen orientation, coordinates rounded, tab-separated
