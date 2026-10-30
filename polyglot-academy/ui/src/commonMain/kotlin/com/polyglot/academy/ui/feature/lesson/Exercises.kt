@@ -93,7 +93,11 @@ data class ExerciseContext(
 fun ExerciseView(exercise: Exercise, ctx: ExerciseContext, answered: Boolean, onAnswer: (Answer) -> Unit) {
     val s = LocalStrings.current
     Column(verticalArrangement = Arrangement.spacedBy(14.dp)) {
-        Text(ctx.gloss(exercise.instruction), style = MaterialTheme.typography.titleMedium, color = PolyglotTheme.colors.textSecondary)
+        // The explanation language can differ from the interface language (Arabic hints in the English
+        // interface), so the instruction takes the full width and its own direction.
+        Text(ctx.gloss(exercise.instruction), Modifier.fillMaxWidth(),
+            style = MaterialTheme.typography.titleMedium.copy(textDirection = androidx.compose.ui.text.style.TextDirection.Content),
+            color = PolyglotTheme.colors.textSecondary)
         when (exercise) {
             is Exercise.Flashcard -> FlashcardView(exercise, ctx, answered, onAnswer)
             is Exercise.MultipleChoice -> MultipleChoiceView(exercise, ctx, answered, onAnswer)

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Android 11 and lower. API keys (secrets prefs) and the raw database are never backed up.
-     When the learner enables "Include learning data in backup", the app writes a secret-free
-     export to files/backup/, which is the only learning data included. -->
+<!-- Android 11 and lower. Only files/backup/ is backed up: once an <include> is present, nothing
+     else is, so API keys (the polyglot_secrets shared preferences) and the raw database are never
+     backed up. When the learner enables "Include learning data in backup", the app writes a
+     secret-free export to files/backup/, which is the only learning data included.
+     (Explicit <exclude> rules for those paths are rejected by lint as outside the included path.) -->
 <full-backup-content>
-    <exclude domain="sharedpref" path="polyglot_secrets.xml" />
-    <exclude domain="database" path="." />
     <include domain="file" path="backup/" />
 </full-backup-content>

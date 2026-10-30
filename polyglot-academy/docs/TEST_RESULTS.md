@@ -136,6 +136,22 @@ three audio exercises skipped with the K-24 warning, summary "15 of 20 correct" 
 the 3 skipped), and a "Next lesson: words 11-20" button. Home also showed "Continue: Greetings · 6
 minutes", confirming K-25 on the device.
 
+**Release build, English interface, small fixes (2026-10-30).** `:androidApp:assembleRelease` (R8
+minify and resource shrinking on) failed in `lintVitalRelease`: the backup rules listed `<exclude>`
+paths outside the only `<include>` (files/backup/). With an `<include>` present nothing else is backed
+up, so the excludes were redundant; they were removed and the comments explain why keys and the
+database still never leave the device. The release APK then built (5.1 MB unsigned; R8 took about
+12 minutes on this machine). Signed with the local debug key for testing only, it ran on the emulator
+with no crash or ANR: home in about 9 s, word levels and a level, and the interrupted Greetings lesson
+resumed at exercise 14 and finished with "12 of 16 correct" (18 exercises minus 2 skipped audio ones),
+which also confirms K-26 on a device. In the English interface the settings, Me, Practice, word
+levels, a level and a generated lesson were checked; Arabic instructions (explanations in Arabic)
+wrapped at a third of the width in the LTR layout and now take the full width with their own
+direction. Five Arabic strings used the ASCII "%" and showed "%5"; they now use "٪" inside a
+left-to-right isolate like the rest of the app. Build: 242 tests, 0 failures. Not checked: TalkBack,
+large fonts, other learning languages on the device. One ANR was seen on an idle summary screen while
+R8 was using the whole machine; it did not recur afterwards.
+
 | Module | Test class | Tests | Failures |
 |---|---|---|---|
 | core | AdapterTest (OpenAI, Azure, Gemini, Anthropic, DeepSeek, local; image parts per vendor; error classification; timeouts; no key leakage; Mistral, Groq, xAI, OpenRouter, Qwen and custom OpenAI-compatible endpoints; GPT-5/o-series parameters; model lists from OpenAI-compatible, Anthropic and Gemini) | 14 | 0 |

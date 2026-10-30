@@ -29,7 +29,7 @@ SPEAKING_WORDS_PER_TURN ¦ Words per turn (median) ¦ كلمات في كل دو�
 SPEAKING_LONGEST ¦ Longest turn (words) ¦ أطول دور (كلمات)
 SPEAKING_WPM ¦ Words per minute ¦ كلمة في الدقيقة
 SPEAKING_SPOKEN_SHARE ¦ Turns spoken aloud ¦ الأدوار المنطوقة
-SPEAKING_VARIETY ¦ Vocabulary variety: {0}% different words in each 50-word stretch ¦ تنوّع المفردات: {0}% كلمات مختلفة في كل 50 كلمة
+SPEAKING_VARIETY ¦ Vocabulary variety: {0}% different words in each 50-word stretch ¦ تنوّع المفردات: ⁦{0}٪⁩ كلمات مختلفة في كل 50 كلمة
 SPEAKING_VARIETY_LOW ¦ Vocabulary variety appears after about 50 words of speaking. ¦ يظهر تنوّع المفردات بعد نحو 50 كلمة من الحديث.
 SPEAKING_CORRECTIONS ¦ Corrections: {0} per 10 turns ¦ التصحيحات: {0} لكل 10 أدوار
 SPEAKING_WPM_NONE ¦ Words per minute needs at least three spoken turns with the microphone. ¦ يحتاج حساب الكلمات في الدقيقة إلى ثلاثة أدوار منطوقة على الأقل بالميكروفون.
@@ -145,7 +145,7 @@ CHARS_GOOD ¦ Well written — the shape matches. ¦ أحسنت، الشكل م�
 CHARS_CLOSE ¦ Close. Compare with the guide: a stroke may be missing or out of place. ¦ قريب. قارن بالحرف الإرشادي، فقد تكون هناك ضربة ناقصة أو في غير مكانها.
 CHARS_TRY_AGAIN ¦ Not quite. Turn on the guide and trace it once more. ¦ ليس تمامًا. أظهر الحرف الإرشادي وتتبّعه مرة أخرى.
 CHARS_EMPTY ¦ Draw the character first. ¦ ارسم الحرف أولًا.
-CHARS_SCORES ¦ Shape covered: {0}% · ink on the character: {1}% ¦ نسبة تغطية الشكل: {0}% · الحبر على الحرف: {1}%
+CHARS_SCORES ¦ Shape covered: {0}% · ink on the character: {1}% ¦ نسبة تغطية الشكل: ⁦{0}٪⁩ · الحبر على الحرف: ⁦{1}٪⁩
 CHARS_STROKES_MORE ¦ You drew {0} strokes; this character has {1}. ¦ رسمت {0} ضربات، وهذا الحرف فيه {1}.
 CHARS_STROKES_FEWER ¦ You drew {0} strokes; this character has {1}. Some strokes may be joined. ¦ رسمت {0} ضربات، وهذا الحرف فيه {1}، وربما وصلت بعض الضربات ببعضها.
 CHARS_ABOUT_TITLE ¦ How checking works ¦ كيف يتم التحقق
