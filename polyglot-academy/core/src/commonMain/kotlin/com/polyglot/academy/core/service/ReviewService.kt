@@ -12,6 +12,7 @@ import com.polyglot.academy.core.repo.ReviewRepository
 import com.polyglot.academy.core.repo.VocabularyRepository
 import com.polyglot.academy.core.srs.SpacedRepetitionScheduler
 import com.polyglot.academy.core.util.TimeSource
+import com.polyglot.academy.core.wordlist.WordEntry
 import com.polyglot.academy.core.wordlist.WordLists
 import kotlinx.coroutines.flow.first
 
@@ -37,10 +38,11 @@ class ReviewService(
         val items = resolve(language)
         val phrases = vocabulary.savedPhrases(language).first().associateBy { it.id }
         val states = reviews.states(language).first().filter { scheduler.isDue(it, now) }
+        val wordList = if (states.any { it.itemId !in items && it.itemId !in phrases }) WordLists.load(language).byId else emptyMap()
         val learning = states.filter { it.phase == ReviewPhase.LEARNING || it.phase == ReviewPhase.RELEARNING }.sortedBy { it.dueAtMillis }
         val due = states.filter { it.phase == ReviewPhase.REVIEW }.sortedBy { it.dueAtMillis }
         val fresh = states.filter { it.phase == ReviewPhase.NEW }.take(newLimit)
-        return (learning + due + fresh).mapNotNull { s -> card(s, items, phrases) }.take(limit)
+        return (learning + due + fresh).mapNotNull { s -> card(s, items, phrases, wordList) }.take(limit)
     }
 
     suspend fun dueCount(language: LanguageCode): Int {
@@ -48,10 +50,10 @@ class ReviewService(
         return reviews.states(language).first().count { scheduler.isDue(it, now) }
     }
 
-    private fun card(s: ReviewState, items: Map<String, VocabularyItem>, phrases: Map<String, SavedPhrase>): ReviewCard? {
+    private fun card(s: ReviewState, items: Map<String, VocabularyItem>, phrases: Map<String, SavedPhrase>, wordList: Map<String, WordEntry>): ReviewCard? {
         items[s.itemId]?.let { v -> return ReviewCard(s, v.term, v.meaning, v.pronunciation ?: v.transliteration, v.example, v) }
         phrases[s.itemId]?.let { p -> return ReviewCard(s, p.text, Gloss(p.meaning, p.meaning), null, p.note, null) }
-        WordLists.of(s.language).byId[s.itemId]?.toVocabularyItem()?.let { v -> return ReviewCard(s, v.term, v.meaning, v.pronunciation ?: v.transliteration, v.example, v) }
+        wordList[s.itemId]?.toVocabularyItem()?.let { v -> return ReviewCard(s, v.term, v.meaning, v.pronunciation ?: v.transliteration, v.example, v) }
         return null
     }
 

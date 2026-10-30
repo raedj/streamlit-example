@@ -45,7 +45,7 @@ WORD_EXTRA_HSK ¦ HSK level (not verified) ¦ مستوى HSK (غير متحقَ�
 WORD_EXTRA_STEM ¦ Stem ¦ الجذع
 WORD_IRREGULAR ¦ Irregular ¦ غير قياسي
 WORDTEST_TITLE ¦ Level {0} test ¦ اختبار المستوى {0}
-WORDTEST_BODY ¦ {0} words from this level. Choose the meaning of each word. You pass with {1}% or more, and the words you miss go into your reviews. ¦ {0} كلمة من هذا المستوى. اختر معنى كل كلمة. تجتاز الاختبار بنسبة {1}% أو أكثر، وتُضاف الكلمات التي تخطئ فيها إلى مراجعاتك.
+WORDTEST_BODY ¦ {0} words from this level. You pass with {1}% or more, and the words you miss go into your reviews. ¦ {0} كلمة من هذا المستوى. تجتاز الاختبار بنسبة {1}% أو أكثر، وتُضاف الكلمات التي تخطئ فيها إلى مراجعاتك.
 WORDTEST_START ¦ Start the test ¦ ابدأ الاختبار
 WORDTEST_QUESTION ¦ Question {0} of {1} ¦ السؤال {0} من {1}
 WORDTEST_PROMPT ¦ What does this word mean? ¦ ما معنى هذه الكلمة؟
@@ -74,3 +74,14 @@ POS_PHRASE ¦ phrase ¦ عبارة
 POS_PARTICLE ¦ particle ¦ أداة
 POS_MEASURE_WORD ¦ measure word ¦ مُصنِّف
 POS_DETERMINER ¦ determiner ¦ محدِّد
+WORDTEST_MODE ¦ Question type ¦ نوع الأسئلة
+WORDTEST_MODE_MIXED ¦ Mixed ¦ منوّعة
+WORDTEST_MODE_MEANING ¦ Word to meaning ¦ من الكلمة إلى المعنى
+WORDTEST_MODE_WORD ¦ Meaning to word ¦ من المعنى إلى الكلمة
+WORDTEST_MODE_LISTENING ¦ Listening ¦ استماع
+WORDTEST_PROMPT_WORD ¦ Which word has this meaning? ¦ أيّ كلمة لها هذا المعنى؟
+WORDTEST_PROMPT_LISTEN ¦ Listen and choose the meaning ¦ استمع واختر المعنى
+WORDTEST_NO_VOICE ¦ There is no voice for {0} on this device, so the test has no listening questions. ¦ لا يوجد صوت للغة {0} على هذا الجهاز، لذلك لا يتضمّن الاختبار أسئلة استماع.
+HOME_WORDS_TITLE ¦ Most common words ¦ الكلمات الأكثر شيوعًا
+HOME_WORDS_LEVEL ¦ Level {0} · {1} of {2} words in your reviews ¦ المستوى {0} · {1} من {2} كلمة في مراجعاتك
+HOME_WORDS_OPEN ¦ Continue the level ¦ تابع المستوى

@@ -283,10 +283,20 @@
       ],
       "service": "core/service/WordLevelService.kt",
       "not_yet": [
-        "automatic lessons from the lists",
-        "meaning-to-word and listening test directions",
-        "level progress on the home screen"
-      ]
+        "automatic lessons from the lists"
+      ],
+      "test_modes": [
+        "word to meaning",
+        "meaning to word",
+        "listening (needs a voice)",
+        "mixed"
+      ],
+      "home_card": "first level not yet passed"
     }
-  }
+  },
+  "known_issues_fixed": [
+    "K-24",
+    "K-25",
+    "K-26"
+  ]
 }

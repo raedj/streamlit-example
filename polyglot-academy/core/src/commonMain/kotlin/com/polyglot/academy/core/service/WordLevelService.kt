@@ -21,8 +21,18 @@ data class WordLevelProgress(val level: Int, val total: Int, val started: Int, v
     val passed: Boolean get() = (bestTestScore ?: 0.0) >= WordLevelService.PASS_SCORE
 }
 
-/** One level-test question: choose the meaning of [entry] among [options] (the answer is among them). */
-data class WordQuizQuestion(val entry: WordEntry, val options: List<WordEntry>, val answerIndex: Int)
+/** What a level-test question shows and what the learner chooses. */
+enum class WordTestMode {
+    /** The written word; choose its meaning. */
+    MEANING,
+    /** The meaning; choose the written word. */
+    WORD,
+    /** The spoken word only (text-to-speech); choose its meaning. */
+    LISTENING,
+}
+
+/** One level-test question: [options] are words of the level and the answer is among them. */
+data class WordQuizQuestion(val entry: WordEntry, val options: List<WordEntry>, val answerIndex: Int, val mode: WordTestMode = WordTestMode.MEANING)
 
 /** Result of a finished level test; [added] are the missed words newly put into the review queue. */
 data class WordTestResult(val level: Int, val correct: Int, val total: Int, val added: Int) {
@@ -43,7 +53,7 @@ class WordLevelService(
     private val ids: IdGenerator,
 ) {
     suspend fun levels(language: LanguageCode): List<WordLevelProgress> {
-        val list = WordLists.of(language)
+        val list = WordLists.load(language)
         val states = reviews.states(language).first().associateBy { it.itemId }
         val best = bestScores(language)
         return (1..list.levelCount).map { level -> summarize(level, list.level(level), states, best[level]) }
@@ -51,20 +61,23 @@ class WordLevelService(
 
     suspend fun level(language: LanguageCode, level: Int): WordLevelProgress {
         val states = reviews.states(language).first().associateBy { it.itemId }
-        return summarize(level, WordLists.of(language).level(level), states, bestScores(language)[level])
+        return summarize(level, WordLists.load(language).level(level), states, bestScores(language)[level])
     }
+
+    /** The level's words, most frequent first (loaded off the main thread). */
+    suspend fun words(language: LanguageCode, level: Int): List<WordEntry> = WordLists.load(language).level(level)
 
     /** Review states of the level's words, keyed by [WordEntry.id]; words never added are absent. */
     suspend fun states(language: LanguageCode, level: Int): Map<String, ReviewState> {
         val states = reviews.states(language).first().associateBy { it.itemId }
-        return WordLists.of(language).level(level).mapNotNull { e -> states[e.reviewId]?.let { e.id to it } }.toMap()
+        return WordLists.load(language).level(level).mapNotNull { e -> states[e.reviewId]?.let { e.id to it } }.toMap()
     }
 
     /** Puts the next [count] words of the level that are not yet in the review queue into it, most frequent first. */
     suspend fun addNext(language: LanguageCode, level: Int, count: Int = BATCH): List<WordEntry> {
         val now = clock.nowMillis()
         val added = mutableListOf<WordEntry>()
-        for (e in WordLists.of(language).level(level)) {
+        for (e in WordLists.load(language).level(level)) {
             if (added.size >= count) break
             if (reviews.state(e.reviewId) == null) { reviews.save(scheduler.newState(e.reviewId, language, now), null); added += e }
         }
@@ -79,20 +92,31 @@ class WordLevelService(
     }
 
     /**
-     * A multiple-choice test of [size] words sampled from the level. Wrong options come from the same
-     * level, preferably the same part of speech, and never share the answer's meaning.
+     * A multiple-choice test of [size] words sampled from the level, cycling through [modes]. Wrong
+     * options come from the same level, preferably the same part of speech, and never share the
+     * answer's meaning or written form, so each question has exactly one right choice in every mode.
      */
-    fun quiz(language: LanguageCode, level: Int, size: Int = QUIZ_SIZE, seed: Long = clock.nowMillis()): List<WordQuizQuestion> {
-        val words = WordLists.of(language).level(level)
+    suspend fun quiz(
+        language: LanguageCode, level: Int, size: Int = QUIZ_SIZE, seed: Long = clock.nowMillis(),
+        modes: List<WordTestMode> = listOf(WordTestMode.MEANING),
+    ): List<WordQuizQuestion> {
+        require(modes.isNotEmpty()) { "at least one test mode" }
+        val words = WordLists.load(language).level(level)
         val random = Random(seed)
-        return words.shuffled(random).take(size).map { entry ->
-            fun usable(o: WordEntry) = o.id != entry.id && o.meaning.en != entry.meaning.en && o.meaning.ar != entry.meaning.ar
+        return words.shuffled(random).take(size).mapIndexed { i, entry ->
+            fun usable(o: WordEntry) = o.id != entry.id && o.term != entry.term && o.meaning.en != entry.meaning.en && o.meaning.ar != entry.meaning.ar
             val samePos = words.filter { usable(it) && it.partOfSpeech == entry.partOfSpeech }.shuffled(random)
             val others = words.filter { usable(it) && it.partOfSpeech != entry.partOfSpeech }.shuffled(random)
-            val distractors = (samePos + others).distinctBy { it.meaning.en }.take(OPTIONS - 1)
+            val distractors = (samePos + others).distinctBy { it.meaning.en }.distinctBy { it.meaning.ar }.distinctBy { it.term }.take(OPTIONS - 1)
             val options = (distractors + entry).shuffled(random)
-            WordQuizQuestion(entry, options, options.indexOf(entry))
+            WordQuizQuestion(entry, options, options.indexOf(entry), modes[i % modes.size])
         }
+    }
+
+    /** The level to show on the home screen: the first one not yet passed (the last level once all are passed). */
+    suspend fun currentLevel(language: LanguageCode): WordLevelProgress {
+        val all = levels(language)
+        return all.firstOrNull { !it.passed } ?: all.last()
     }
 
     /** Records a finished test as a study session and puts the missed words into the review queue. */

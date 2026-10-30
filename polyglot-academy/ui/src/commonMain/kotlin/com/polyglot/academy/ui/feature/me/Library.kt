@@ -92,6 +92,9 @@ fun VocabularyScreen() {
     val states by remember(lang) { app.services.store.states(lang) }.collectAsState(emptyList())
     val userVocab by remember(lang) { app.services.store.userVocabulary(lang) }.collectAsState(emptyList())
     val phrases by remember(lang) { app.services.store.savedPhrases(lang) }.collectAsState(emptyList())
+    val wordList by androidx.compose.runtime.produceState(emptyMap<String, com.polyglot.academy.core.wordlist.WordEntry>(), lang) {
+        value = com.polyglot.academy.core.wordlist.WordLists.load(lang).byId
+    }
     val now = app.services.clock.nowMillis()
     ScrollScreen(s[K.VOCAB_TITLE]) {
         TabRow(selectedTabIndex = tab, containerColor = c.background) {
@@ -104,7 +107,6 @@ fun VocabularyScreen() {
             val builtIn = Curriculum.of(lang).vocabularyById
             val byId = builtIn + userVocab.associateBy { it.id }
             val stateById = states.associateBy { it.itemId }
-            val wordList = com.polyglot.academy.core.wordlist.WordLists.of(lang).byId
             val words = states.mapNotNull { st -> (byId[st.itemId] ?: wordList[st.itemId]?.toVocabularyItem())?.let { it to st } } + userVocab.filter { it.id !in stateById }.map { it to null }
             val filtered = words.filter { (v, st) ->
                 (!dueOnly || (st != null && st.dueAtMillis <= now)) &&

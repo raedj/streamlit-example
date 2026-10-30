@@ -61,6 +61,7 @@ import com.polyglot.academy.ui.designsystem.IconBadge
 import com.polyglot.academy.ui.designsystem.LabeledProgress
 import com.polyglot.academy.ui.designsystem.LevelBadge
 import com.polyglot.academy.ui.designsystem.PolyCard
+import com.polyglot.academy.ui.designsystem.QuietButton
 import com.polyglot.academy.ui.designsystem.PolyglotTheme
 import com.polyglot.academy.ui.designsystem.PrimaryButton
 import com.polyglot.academy.ui.designsystem.ProgressRing
@@ -152,6 +153,8 @@ private fun HomeContent(data: HomeData) {
 
     RecommendationCard(snap.recommendation, snap)
     DailyLoopCard(data.loop)
+
+    WordLevelCard(snap.language)
 
     // Daily goal + reviews + streak.
     PolyCard {
@@ -334,5 +337,19 @@ internal fun DailyLoopCard(loop: com.polyglot.academy.core.gamification.DailyLoo
                 color = if (q.done) c.success else c.primary)
         }
         Text(s.f(K.GAME_QUEST_BONUS, com.polyglot.academy.core.gamification.XpRules.QUEST_BONUS), style = MaterialTheme.typography.bodySmall, color = c.textMuted)
+    }
+}
+
+/** Frequency word lists: the first level not yet passed. Loaded on its own so the rest of home does not wait for the list. */
+@Composable
+private fun WordLevelCard(language: com.polyglot.academy.core.model.LanguageCode) {
+    val app = LocalApp.current
+    val s = LocalStrings.current
+    val loader = rememberLoader(language) { app.services.wordLevels.currentLevel(language) }
+    val words = (loader.state as? com.polyglot.academy.ui.app.Load.Ready)?.value ?: return
+    PolyCard(onClick = { app.nav.push(Route.WordLevel(words.level)) }) {
+        Text(s[K.HOME_WORDS_TITLE], style = MaterialTheme.typography.titleMedium)
+        LabeledProgress(s.f(K.HOME_WORDS_LEVEL, words.level, words.started, words.total), "", words.started.toFloat() / words.total.coerceAtLeast(1))
+        QuietButton(s[K.HOME_WORDS_OPEN], { app.nav.push(Route.WordLevel(words.level)) })
     }
 }

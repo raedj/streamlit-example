@@ -108,7 +108,20 @@ keeps the results from before the interruption, attempts from an earlier complet
 the first-try score matches the player, the home card shows the next lesson's own minutes, and only
 audio-only exercises need a voice. `./gradlew build -x :ui:desktopTest`: 236 tests, 0 failures (core
 171, data 53, uicore 12). The APK was rebuilt and started on the emulator (home screen, no crash). Not
-checked on a device: the skip warning (the emulator has an English voice) and the resumed-lesson score.
+checked on a device: the resumed-lesson score. (An earlier version of this note said the emulator has
+an English voice; that was wrong, it has none, which made the K-24 check below possible.)
+
+**Word tests and home card (2026-10-30).** Level tests now offer word to meaning, meaning to word,
+listening and mixed questions (listening only when the device has a voice), and home shows the first
+level not yet passed. Word lists are now parsed off the main thread: the first build of the home card
+did it on the main thread and the emulator showed "isn't responding"; after the change and a separate
+loader for the card, home appeared after about 10 s on this (slow) emulator with no ANR. New tests in
+`WordLevelServiceTest`: modes cycle and options have distinct words and meanings in all eight
+languages; the current level is the first not passed. `./gradlew build -x :ui:desktopTest`: 238
+tests, 0 failures (core 171, data 55, uicore 12). Checked by hand on the emulator (Arabic interface,
+English, no English voice installed): the home card, the test type choice with listening hidden and
+its notice, a meaning-to-word question with feedback, the K-24 warning and Skip button in Listening
+practice and inside the Greetings lesson (question 13 of 18; Skip moved to 14).
 
 | Module | Test class | Tests | Failures |
 |---|---|---|---|

@@ -4,6 +4,7 @@ import com.polyglot.academy.core.model.LanguageCode
 import com.polyglot.academy.core.model.RecallRating
 import com.polyglot.academy.core.service.AppServices
 import com.polyglot.academy.core.service.WordLevelService
+import com.polyglot.academy.core.service.WordTestMode
 import com.polyglot.academy.core.util.FixedTimeSource
 import com.polyglot.academy.core.util.SequentialIdGenerator
 import com.polyglot.academy.core.wordlist.WordLists
@@ -39,7 +40,7 @@ class WordLevelServiceTest {
         assertFalse(app.wordLevels.add(level.first()))
     }
 
-    @Test fun quizHasFourDistinctOptionsWithTheAnswerAmongThem() {
+    @Test fun quizHasFourDistinctOptionsWithTheAnswerAmongThem() = runBlocking<Unit> {
         LanguageCode.entries.forEach { lang ->
             val quiz = app.wordLevels.quiz(lang, 10, seed = 7)
             assertEquals(WordLevelService.QUIZ_SIZE, quiz.size)
@@ -75,5 +76,26 @@ class WordLevelServiceTest {
         assertNull(WordLevelService.levelOfReference("lesson:7"))
         assertNull(WordLevelService.levelOfReference("wordlevel:11"))
         assertNull(WordLevelService.levelOfReference(null))
+    }
+
+    @Test fun mixedQuizCyclesModesAndOptionsAreDistinctInEveryMode() = runBlocking<Unit> {
+        val modes = WordTestMode.entries.toList()
+        LanguageCode.entries.forEach { lang ->
+            val quiz = app.wordLevels.quiz(lang, 3, seed = 11, modes = modes)
+            assertEquals(quiz.indices.map { modes[it % modes.size] }, quiz.map { it.mode })
+            quiz.forEach { q ->
+                assertEquals(q.options.size, q.options.map { it.term }.toSet().size, "${lang.tag}: ${q.entry.term}")
+                assertEquals(q.options.size, q.options.map { it.meaning.ar }.toSet().size, "${lang.tag}: ${q.entry.term}")
+            }
+        }
+    }
+
+    @Test fun currentLevelIsTheFirstNotPassed() = runBlocking<Unit> {
+        val lang = LanguageCode.MALAY
+        assertEquals(1, app.wordLevels.currentLevel(lang).level)
+        app.wordLevels.finishTest(lang, 1, 18, 20, emptyList())
+        assertEquals(2, app.wordLevels.currentLevel(lang).level)
+        app.wordLevels.finishTest(lang, 2, 10, 20, emptyList())
+        assertEquals(2, app.wordLevels.currentLevel(lang).level)
     }
 }

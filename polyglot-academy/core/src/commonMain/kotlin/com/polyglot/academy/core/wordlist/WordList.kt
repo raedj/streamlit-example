@@ -7,6 +7,8 @@ import com.polyglot.academy.core.model.LanguageCode
 import com.polyglot.academy.core.model.PartOfSpeech
 import com.polyglot.academy.core.model.VocabularyItem
 import com.polyglot.academy.core.wordlist.generated.GeneratedWordLists
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 
 /**
  * The frequency word lists: up to 3000 lemmas per language in 10 levels of 300, most frequent first.
@@ -88,12 +90,19 @@ class WordList(val language: LanguageCode, val entries: List<WordEntry>) {
 }
 
 object WordLists {
-    private val lists: Map<LanguageCode, Lazy<WordList>> = LanguageCode.entries.associateWith { code -> lazy { load(code) } }
+    private val lists: Map<LanguageCode, Lazy<WordList>> = LanguageCode.entries.associateWith { code -> lazy { build(code) } }
 
     /** The language's list; loaded on first use only, so other languages cost nothing at start-up. */
     fun of(language: LanguageCode): WordList = lists.getValue(language).value
 
-    private fun load(language: LanguageCode): WordList {
+    /**
+     * Same as [of], but parses the list on a background thread: the first load of a language builds
+     * 3000 entries, which is long enough on a phone to freeze the screen if done on the main thread.
+     */
+    suspend fun load(language: LanguageCode): WordList =
+        if (lists.getValue(language).isInitialized()) of(language) else withContext(Dispatchers.Default) { of(language) }
+
+    private fun build(language: LanguageCode): WordList {
         val chunks = GeneratedWordLists.levels(language.tag).map { it() }
         return parse(language, chunks.flatMap { it.first }, chunks.flatMap { it.second })
     }

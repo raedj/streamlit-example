@@ -10,10 +10,12 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.saveable.rememberSaveable
@@ -23,10 +25,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.polyglot.academy.core.model.LanguageCode
+import com.polyglot.academy.core.model.Languages
 import com.polyglot.academy.core.model.ReviewPhase
 import com.polyglot.academy.core.model.ReviewState
 import com.polyglot.academy.core.service.WordLevelService
 import com.polyglot.academy.core.service.WordQuizQuestion
+import com.polyglot.academy.core.service.WordTestMode
 import com.polyglot.academy.core.service.WordTestResult
 import com.polyglot.academy.core.util.TextNormalizer
 import com.polyglot.academy.core.wordlist.WordEntry
@@ -106,11 +110,12 @@ fun WordLevelScreen(level: Int) {
     val speaker = rememberSpeaker(s)
     var query by rememberSaveable { mutableStateOf("") }
     var shown by rememberSaveable { mutableIntStateOf(PAGE) }
-    val loader = rememberLoader(lang, level) { app.services.wordLevels.level(lang, level) to app.services.wordLevels.states(lang, level) }
-    val words = remember(lang, level) { WordLists.of(lang).level(level) }
+    val loader = rememberLoader(lang, level) {
+        Triple(app.services.wordLevels.level(lang, level), app.services.wordLevels.states(lang, level), app.services.wordLevels.words(lang, level))
+    }
     ScrollScreen(s.f(K.WORDLEVEL_NAME, level)) {
         Text(levelRanks(s, level), style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
-        LoadContent(loader) { (progress, states) ->
+        LoadContent(loader) { (progress, states, words) ->
             Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
                 PolyCard {
                     LabeledProgress(s[K.WORDLEVEL_STARTED], s.f(K.WORDLEVEL_COUNT, progress.started, progress.total), progress.started.toFloat() / progress.total.coerceAtLeast(1))
@@ -165,7 +170,11 @@ fun WordDetailScreen(entryId: String) {
     val toast = rememberToast()
     val lang = app.profile.activeLearningLanguage
     val speaker = rememberSpeaker(s)
-    val list = remember(lang) { WordLists.of(lang) }
+    val list = produceState<com.polyglot.academy.core.wordlist.WordList?>(null, lang) { value = WordLists.load(lang) }.value
+    if (list == null) {
+        ScrollScreen(s[K.WORDLEVELS_TITLE]) { com.polyglot.academy.ui.designsystem.LoadingPlaceholder(s[K.LOADING]) }
+        return
+    }
     val entry = list.byId[entryId]
     if (entry == null) {
         ScrollScreen(s[K.WORDLEVELS_TITLE]) { StateMessage(s[K.WORDLEVELS_TITLE], s[K.WORD_NOT_FOUND]) }
@@ -230,7 +239,7 @@ fun WordDetailScreen(entryId: String) {
     }
 }
 
-/** Multiple-choice level test: the meaning of 20 words from the level; missed words go into reviews. */
+/** Multiple-choice level test of 20 words: word to meaning, meaning to word, listening, or mixed; missed words go into reviews. */
 @Composable
 fun WordTestScreen(level: Int) {
     val app = LocalApp.current
@@ -239,9 +248,12 @@ fun WordTestScreen(level: Int) {
     val scope = rememberCoroutineScope()
     val lang = app.profile.activeLearningLanguage
     val speaker = rememberSpeaker(s)
+    val voice by produceState<Boolean?>(null, lang) {
+        value = app.services.platform.synthesizer.isLanguageAvailable(Languages.of(lang).defaultVariant.localeTag)
+    }
+    var choice by rememberSaveable { mutableStateOf(TestChoice.MIXED) }
     var attempt by remember { mutableIntStateOf(0) }
-    val quiz = remember(lang, level, attempt) { app.services.wordLevels.quiz(lang, level) }
-    var started by remember(attempt) { mutableStateOf(false) }
+    var quiz by remember(attempt) { mutableStateOf<List<WordQuizQuestion>>(emptyList()) }
     var index by remember(attempt) { mutableIntStateOf(0) }
     var chosen by remember(attempt) { mutableStateOf<Int?>(null) }
     val missed = remember(attempt) { mutableStateListOf<WordEntry>() }
@@ -249,9 +261,16 @@ fun WordTestScreen(level: Int) {
     ScrollScreen(s.f(K.WORDTEST_TITLE, level)) {
         val done = result
         when {
-            !started -> {
-                Text(s.f(K.WORDTEST_BODY, quiz.size, percent(WordLevelService.PASS_SCORE)), style = MaterialTheme.typography.bodyLarge)
-                PrimaryButton(s[K.WORDTEST_START], { started = true }, Modifier.fillMaxWidth())
+            quiz.isEmpty() -> {
+                Text(s.f(K.WORDTEST_BODY, WordLevelService.QUIZ_SIZE, percent(WordLevelService.PASS_SCORE)), style = MaterialTheme.typography.bodyLarge)
+                SectionHeader(s[K.WORDTEST_MODE])
+                val choices = TestChoice.entries.filter { it != TestChoice.LISTENING || voice != false }
+                choices.forEach { ch -> ChoiceCard(s[ch.label], selected = choice == ch, onClick = { choice = ch }) }
+                if (voice == false) Banner(BannerKind.INFO, s.f(K.WORDTEST_NO_VOICE, Labels.language(s, lang)))
+                PrimaryButton(s[K.WORDTEST_START], {
+                    val pick = if (voice == false && choice == TestChoice.LISTENING) TestChoice.MIXED else choice
+                    scope.launch { quiz = app.services.wordLevels.quiz(lang, level, modes = pick.modes(voice != false)) }
+                }, Modifier.fillMaxWidth())
             }
             done != null -> {
                 StateMessage(s.f(K.WORDTEST_RESULT, done.correct, done.total, percent(done.score)), s[if (done.passed) K.WORDTEST_PASSED else K.WORDTEST_FAILED])
@@ -270,23 +289,42 @@ fun WordTestScreen(level: Int) {
             }
             else -> {
                 val q: WordQuizQuestion = quiz[index]
+                if (q.mode == WordTestMode.LISTENING) LaunchedEffect(attempt, index) { speaker.play(q.entry.term, lang) }
                 Text(s.f(K.WORDTEST_QUESTION, index + 1, quiz.size), style = MaterialTheme.typography.labelLarge, color = c.textSecondary)
                 PolyCard {
                     Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                        Text(s[K.WORDTEST_PROMPT], style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
-                        LearningText(q.entry.term, lang, textAlign = TextAlign.Center,
-                            style = if (lang == LanguageCode.MANDARIN) PolyglotTheme.learning.hanzi else PolyglotTheme.learning.term)
-                        AudioButton(s[K.PLAY_AUDIO], { speaker.toggle(q.entry.term, lang) }, playing = speaker.playingText == q.entry.term)
+                        val termStyle = if (lang == LanguageCode.MANDARIN) PolyglotTheme.learning.hanzi else PolyglotTheme.learning.term
+                        when (q.mode) {
+                            WordTestMode.MEANING -> {
+                                Text(s[K.WORDTEST_PROMPT], style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
+                                LearningText(q.entry.term, lang, textAlign = TextAlign.Center, style = termStyle)
+                                AudioButton(s[K.PLAY_AUDIO], { speaker.toggle(q.entry.term, lang) }, playing = speaker.playingText == q.entry.term)
+                            }
+                            WordTestMode.WORD -> {
+                                Text(s[K.WORDTEST_PROMPT_WORD], style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
+                                Text(s.gloss(q.entry.meaning), style = MaterialTheme.typography.headlineSmall, textAlign = TextAlign.Center)
+                            }
+                            WordTestMode.LISTENING -> {
+                                Text(s[K.WORDTEST_PROMPT_LISTEN], style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
+                                Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                                    AudioButton(s[K.PLAY_AUDIO], { speaker.toggle(q.entry.term, lang) }, playing = speaker.playingText == q.entry.term)
+                                    AudioButton(s[K.LISTEN_SLOW], { speaker.play(q.entry.term, lang, 0.7f) })
+                                }
+                                if (chosen != null) LearningText(q.entry.term, lang, textAlign = TextAlign.Center, style = termStyle)
+                            }
+                        }
                     }
                 }
                 q.options.forEachIndexed { i, o ->
-                    ChoiceCard(s.gloss(o.meaning), selected = chosen == i, onClick = {
+                    val label = if (q.mode == WordTestMode.WORD) o.term else s.gloss(o.meaning)
+                    ChoiceCard(label, selected = chosen == i, onClick = {
                         if (chosen == null) { chosen = i; if (i != q.answerIndex) missed += q.entry }
                     })
                 }
                 chosen?.let { pick ->
                     val right = pick == q.answerIndex
-                    FeedbackPanel(right, s[if (right) K.WORDTEST_CORRECT else K.WORDTEST_WRONG], if (right) null else s.f(K.WORDTEST_ANSWER, s.gloss(q.entry.meaning)))
+                    val answer = if (q.mode == WordTestMode.MEANING) s.gloss(q.entry.meaning) else "${q.entry.term} — ${s.gloss(q.entry.meaning)}"
+                    FeedbackPanel(right, s[if (right) K.WORDTEST_CORRECT else K.WORDTEST_WRONG], if (right && q.mode == WordTestMode.MEANING) null else s.f(K.WORDTEST_ANSWER, answer))
                     val last = index + 1 >= quiz.size
                     PrimaryButton(s[if (last) K.WORDTEST_FINISH else K.WORDTEST_NEXT], {
                         if (!last) { index++; chosen = null }
@@ -295,6 +333,18 @@ fun WordTestScreen(level: Int) {
                 }
             }
         }
+    }
+}
+
+/** The question types offered before a level test. */
+private enum class TestChoice(val label: K) {
+    MIXED(K.WORDTEST_MODE_MIXED), MEANING(K.WORDTEST_MODE_MEANING), WORD(K.WORDTEST_MODE_WORD), LISTENING(K.WORDTEST_MODE_LISTENING);
+
+    fun modes(voice: Boolean): List<WordTestMode> = when (this) {
+        MIXED -> listOfNotNull(WordTestMode.MEANING, WordTestMode.WORD, WordTestMode.LISTENING.takeIf { voice })
+        MEANING -> listOf(WordTestMode.MEANING)
+        WORD -> listOf(WordTestMode.WORD)
+        LISTENING -> listOf(WordTestMode.LISTENING)
     }
 }
 
