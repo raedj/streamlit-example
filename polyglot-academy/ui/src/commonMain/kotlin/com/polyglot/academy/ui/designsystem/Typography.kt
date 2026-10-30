@@ -1,6 +1,7 @@
 package com.polyglot.academy.ui.designsystem
 
 import androidx.compose.material3.Typography
+import androidx.compose.runtime.Composable
 import androidx.compose.runtime.Immutable
 import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.text.TextStyle
@@ -67,6 +68,25 @@ fun learningTypography(scale: Float = 1f) = LearningTypography(
 )
 
 val LocalLearningTypography = staticCompositionLocalOf { learningTypography() }
+
+/** Fonts for scripts the platform default does not render in their usual style; null means the default. */
+@Immutable
+data class ScriptFonts(val urdu: FontFamily? = null)
+
+val LocalScriptFonts = staticCompositionLocalOf { ScriptFonts() }
+
+/**
+ * [base] adapted to the learned [language]: Urdu uses the Nastaliq font when the platform provides
+ * one, with about twice the font size as line height, because Nastaliq letters slope and stack and
+ * would otherwise be clipped. Other languages keep [base].
+ */
+@Composable
+fun styleFor(language: LanguageCode, base: TextStyle): TextStyle {
+    val urdu = LocalScriptFonts.current.urdu
+    if (language != LanguageCode.URDU || urdu == null) return base
+    val lineHeight = if (base.fontSize.isSp) (base.fontSize.value * 2f).sp else base.lineHeight
+    return base.copy(fontFamily = urdu, lineHeight = lineHeight)
+}
 
 /** Locale hint so Han characters use Chinese (not Japanese) glyph variants, and Arabic shapes correctly. */
 fun localeFor(tag: String): LocaleList = LocaleList(tag)

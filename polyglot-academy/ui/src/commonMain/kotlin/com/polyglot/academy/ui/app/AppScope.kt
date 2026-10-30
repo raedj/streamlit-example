@@ -30,6 +30,8 @@ interface PlatformUi {
     suspend fun saveExport(fileName: String, content: String): String?
     fun openAppSettings()
     val appVersion: String
+    /** Nastaliq font for Urdu learning content; null uses the platform default (Naskh-style). */
+    val urduFont: androidx.compose.ui.text.font.FontFamily? get() = null
 }
 
 object NoopPlatformUi : PlatformUi {

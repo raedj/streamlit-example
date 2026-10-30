@@ -85,4 +85,6 @@ class MainActivity : ComponentActivity(), PlatformUi {
     }
 
     override val appVersion: String get() = packageManager.getPackageInfo(packageName, 0).versionName ?: "?"
+    // Noto Nastaliq Urdu, SIL Open Font License 1.1 (docs/licenses/OFL-NotoNastaliqUrdu.txt).
+    override val urduFont = androidx.compose.ui.text.font.FontFamily(androidx.compose.ui.text.font.Font(R.font.noto_nastaliq_urdu))
 }

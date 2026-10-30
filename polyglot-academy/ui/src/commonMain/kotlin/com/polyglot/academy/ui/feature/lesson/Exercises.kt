@@ -196,7 +196,7 @@ private fun TypedView(
     if (sentenceInTarget) LearningText(prompt.replace("___", "_____"), ctx.language, style = PolyglotTheme.learning.sentence)
     else Text(prompt, style = MaterialTheme.typography.headlineSmall)
     AppTextField(text, { text = it; empty = false }, s[K.TYPE_ANSWER], isError = empty, supporting = if (empty) s[K.FEEDBACK_EMPTY] else null,
-        textStyle = MaterialTheme.typography.bodyLarge.copy(localeList = com.polyglot.academy.ui.designsystem.localeFor(Languages.of(ctx.language).defaultVariant.localeTag),
+        textStyle = com.polyglot.academy.ui.designsystem.styleFor(ctx.language, MaterialTheme.typography.bodyLarge).copy(localeList = com.polyglot.academy.ui.designsystem.localeFor(Languages.of(ctx.language).defaultVariant.localeTag),
             textDirection = com.polyglot.academy.ui.designsystem.textDirectionFor(ctx.language)))
     if (ctx.hintsAvailable && !answered) {
         if (hints == 0) QuietButton(s[K.HINT_SHOW], { hints = 1 })

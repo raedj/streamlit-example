@@ -16,6 +16,7 @@ images). Source: `ui/.../designsystem/Illustrations.kt` unless noted.
 | `AchievementBadge` | Medal with glyph | Vector | Achievement name | Accent / disabled | Original |
 | Launcher icon `res/drawable/ic_launcher.xml` | App icon (two speech bubbles) | Vector drawable | n/a | Fixed brand colours | Original |
 | Material Icons (filled/auto-mirrored) | Action icons | Vector | Content descriptions on meaningful icons | Tinted by theme | Apache-2.0 (Google), via Compose |
+| Font `res/font/noto_nastaliq_urdu.ttf` | Urdu learning content in Nastaliq (Android) | Variable font | Text stays selectable/readable by screen readers | Theme text colours | SIL OFL 1.1, Noto Project (see CONTENT_SOURCES.md) |
 
 Not yet provided: adaptive-icon foreground/background layers and Play Store artwork; vocabulary
 images; cultural-context illustrations; stroke-order animations for Chinese characters.

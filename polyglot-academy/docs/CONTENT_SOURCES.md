@@ -30,7 +30,8 @@ public release, starting with Turkish, Urdu and Malay, and record the reviewer a
   exercises follow standard Istanbul Turkish.
 - **Urdu:** Urdu script with a simple romanization (macrons for long vowels, ṭ/ḍ/ṛ for
   retroflex consonants, ṇ for nasalisation). Gendered forms are given as m./f. pairs where the
-  speaker's gender matters. Android shows Urdu in the system Naskh-style font, not Nastaliq.
+  speaker's gender matters. On Android, Urdu learning content uses the bundled Noto Nastaliq
+  Urdu font (see "Fonts" below); other text uses the system Naskh-style font.
 - **Malay:** Standard Malaysian Malay (Bahasa Melayu). Indonesian (Bahasa Indonesia) differs in
   vocabulary and spelling and is not covered.
 
@@ -77,3 +78,9 @@ CEFR equivalents of the 10 levels are approximate (1–2 ≈ A1, 3–4 ≈ A2, 5
 Size: one level adds about 146 KB of dex code, about 59 KB compressed in the APK (measured for
 English level 1). All 80 levels would add roughly 5 MB compressed. If that becomes a problem, the
 rows can move from string literals to compressed resources without changing the format.
+
+## Fonts
+
+| Font | File | Licence | Source | Use |
+|---|---|---|---|---|
+| Noto Nastaliq Urdu (variable weight, 674 KB, SHA-256 `98a4787f…abbcd`) | `androidApp/src/main/res/font/noto_nastaliq_urdu.ttf` | SIL Open Font License 1.1, copyright 2022 The Noto Project Authors; full text in `docs/licenses/OFL-NotoNastaliqUrdu.txt` | `ofl/notonastaliqurdu/` in github.com/google/fonts (downloaded 2026-10-30 with the owner's approval) | Urdu learning content on Android |

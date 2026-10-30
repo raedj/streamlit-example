@@ -152,6 +152,13 @@ left-to-right isolate like the rest of the app. Build: 242 tests, 0 failures. No
 large fonts, other learning languages on the device. One ANR was seen on an idle summary screen while
 R8 was using the whole machine; it did not recur afterwards.
 
+**Nastaliq font for Urdu (2026-10-30).** Noto Nastaliq Urdu (OFL 1.1) is bundled in the Android app
+and passed to the shared UI through `PlatformUi.urduFont` / `LocalScriptFonts`; `styleFor` uses it,
+with about twice the font size as line height, for Urdu `LearningText` and typed answers. On the
+emulator (English interface, Urdu as learning language) the level 1 list and a word page with two
+example sentences rendered in Nastaliq without clipping. Screen titles and choice buttons still use
+the system font. Build: 242 tests, 0 failures; debug APK 24.5 MB (+0.7 MB).
+
 | Module | Test class | Tests | Failures |
 |---|---|---|---|
 | core | AdapterTest (OpenAI, Azure, Gemini, Anthropic, DeepSeek, local; image parts per vendor; error classification; timeouts; no key leakage; Mistral, Groq, xAI, OpenRouter, Qwen and custom OpenAI-compatible endpoints; GPT-5/o-series parameters; model lists from OpenAI-compatible, Anthropic and Gemini) | 14 | 0 |

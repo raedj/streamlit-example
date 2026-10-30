@@ -586,7 +586,7 @@ fun LearningText(
     val tag = Languages.of(language).defaultVariant.localeTag
     Column(modifier, horizontalAlignment = when (textAlign) { TextAlign.Center -> Alignment.CenterHorizontally; else -> Alignment.Start }) {
         if (reading != null) Text(reading, style = PolyglotTheme.learning.pinyin.copy(localeList = localeFor("en")), color = PolyglotTheme.colors.textSecondary, textAlign = textAlign)
-        Text(text, style = style.copy(localeList = localeFor(tag), textDirection = textDirectionFor(language)), color = color, textAlign = textAlign)
+        Text(text, style = styleFor(language, style).copy(localeList = localeFor(tag), textDirection = textDirectionFor(language)), color = color, textAlign = textAlign)
     }
 }
 
