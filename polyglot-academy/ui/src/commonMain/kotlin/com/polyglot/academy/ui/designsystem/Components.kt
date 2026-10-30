@@ -360,6 +360,8 @@ fun ChoiceCard(
     subtitle: String? = null,
     leading: (@Composable () -> Unit)? = null,
     multiSelect: Boolean = false,
+    /** Set when [title] is in the learned language, so it gets that language's font, locale and direction. */
+    language: LanguageCode? = null,
 ) {
     val c = PolyglotTheme.colors
     val shape = RoundedCornerShape(PolyglotTheme.radii.lg)
@@ -372,7 +374,11 @@ fun ChoiceCard(
     ) {
         if (leading != null) { leading(); Spacer(Modifier.width(14.dp)) }
         Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
-            Text(title, style = MaterialTheme.typography.titleSmall, color = c.textPrimary)
+            val titleStyle = if (language == null) MaterialTheme.typography.titleSmall
+                else styleFor(language, MaterialTheme.typography.titleSmall).copy(
+                    localeList = localeFor(Languages.of(language).defaultVariant.localeTag), textDirection = textDirectionFor(language))
+            // Full width so a right-to-left title (Urdu, Arabic) aligns to its own start in a left-to-right layout.
+            Text(title, if (language != null) Modifier.fillMaxWidth().padding(end = 12.dp) else Modifier, style = titleStyle, color = c.textPrimary)
             if (subtitle != null) Text(subtitle, style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
         }
         if (multiSelect) {

@@ -329,7 +329,7 @@ fun WordTestScreen(level: Int) {
                 }
                 q.options.forEachIndexed { i, o ->
                     val label = if (q.mode == WordTestMode.WORD) o.term else s.gloss(o.meaning)
-                    ChoiceCard(label, selected = chosen == i, onClick = {
+                    ChoiceCard(label, selected = chosen == i, language = lang.takeIf { q.mode == WordTestMode.WORD }, onClick = {
                         if (chosen == null) { chosen = i; if (i != q.answerIndex) missed += q.entry }
                     })
                 }

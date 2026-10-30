@@ -173,7 +173,7 @@ private fun MultipleChoiceView(e: Exercise.MultipleChoice, ctx: ExerciseContext,
         }
         ChoiceCard(
             title = label, selected = selected == i || (answered && i == e.correctIndex),
-            subtitle = state,
+            subtitle = state, language = ctx.language.takeIf { e.optionGlosses == null },
             onClick = {
                 if (answered) return@ChoiceCard
                 selected = i
@@ -218,7 +218,10 @@ private fun DictationView(e: Exercise.Dictation, ctx: ExerciseContext, answered:
         AudioButton(s[K.PLAY_AUDIO], { ctx.speaker.toggle(e.audioText, ctx.language) }, playing = ctx.speaker.playingText == e.audioText)
         SecondaryButton(s[K.LISTEN_SLOW], { ctx.speaker.play(e.audioText, ctx.language, 0.65f) })
     }
-    AppTextField(text, { text = it }, s[K.TYPE_ANSWER], singleLine = false, minLines = 2)
+    AppTextField(text, { text = it }, s[K.TYPE_ANSWER], singleLine = false, minLines = 2,
+        textStyle = com.polyglot.academy.ui.designsystem.styleFor(ctx.language, MaterialTheme.typography.bodyLarge).copy(
+            localeList = com.polyglot.academy.ui.designsystem.localeFor(Languages.of(ctx.language).defaultVariant.localeTag),
+            textDirection = com.polyglot.academy.ui.designsystem.textDirectionFor(ctx.language)))
     if (!answered) PrimaryButton(s[K.CHECK], {
         val check = AnswerChecker.check(text, e.acceptedAnswers)
         if (check.verdict == AnswerVerdict.EMPTY) return@PrimaryButton

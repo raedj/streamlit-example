@@ -158,6 +158,10 @@ with about twice the font size as line height, for Urdu `LearningText` and typed
 emulator (English interface, Urdu as learning language) the level 1 list and a word page with two
 example sentences rendered in Nastaliq without clipping. Screen titles and choice buttons still use
 the system font. Build: 242 tests, 0 failures; debug APK 24.5 MB (+0.7 MB).
+Follow-up the same day: choice options that are words of the learned language (lesson choices, the
+meaning-to-word test) and the dictation field also use the font; right-to-left options take the full
+width so they align to their own start, with space before the radio button. Checked on the emulator
+with the Urdu meaning-to-word test in the English interface. Build: 242 tests, 0 failures.
 
 | Module | Test class | Tests | Failures |
 |---|---|---|---|
