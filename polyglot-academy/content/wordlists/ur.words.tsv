@@ -2699,3 +2699,303 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2698	ur_w_taal	تال	noun	leisure	rhythm	إيقاع	tāl		gender=f
 2699	ur_w_naghma	نغمہ	noun	leisure	song, tune	أغنية	naġma		gender=m
 2700	ur_w_qasida	قصیدہ	noun	leisure	ode	قصيدة	qasīda		gender=m
+2701	ur_w_nithrna	نتھارنا	verb	food	to decant, to strain	يصفّي	nithārnā	نتھارا, نتھاری, نتھارے, نتھارتا, نتھارتی, نتھارتے, نتھار, نتھاریں, نتھارو, نتھارنے
+2702	ur_w_phatakna	پھٹکنا	verb	food	to winnow	يذرّي	phaṭaknā	پھٹکا, پھٹکی, پھٹکے, پھٹکتا, پھٹکتی, پھٹکتے, پھٹک, پھٹکیں, پھٹکو, پھٹکنے
+2703	ur_w_udhedna	ادھیڑنا	verb	work	to unpick (stitches)	يفكّ الخياطة	udheṛnā	ادھیڑا, ادھیڑی, ادھیڑے, ادھیڑتا, ادھیڑتی, ادھیڑتے, ادھیڑ, ادھیڑیں, ادھیڑو, ادھیڑنے
+2704	ur_w_pirona	پرونا	verb	work	to thread	يُدخل الخيط	pironā	پرویا, پروئی, پروئے, پروتا, پروتی, پروتے, پرو, پرویں, پروو, پرونے
+2705	ur_w_mandhna	منڈھنا	verb	work	to cover, to frame	يغلّف	manḍhnā	منڈھا, منڈھی, منڈھے, منڈھتا, منڈھتی, منڈھتے, منڈھ, منڈھیں, منڈھو, منڈھنے
+2706	ur_w_lepna	لیپنا	verb	home	to plaster, to smear	يطلي	lepnā	لیپا, لیپی, لیپے, لیپتا, لیپتی, لیپتے, لیپ, لیپیں, لیپو, لیپنے
+2707	ur_w_potna	پوتنا	verb	home	to whitewash	يبيّض الجدار	potnā	پوتا, پوتی, پوتے, پوتتا, پوتتی, پوتتے, پوت, پوتیں, پوتو, پوتنے
+2708	ur_w_bujhna	بجھنا	verb	home	to go out (fire)	ينطفئ	bujhnā	بجھا, بجھی, بجھے, بجھتا, بجھتی, بجھتے, بجھ, بجھیں, بجھو, بجھنے
+2709	ur_w_kumhlana	کمھلانا	verb	nature	to wilt	يذوي	kumhlānā	کمھلایا, کمھلائی, کمھلائے, کمھلاتا, کمھلاتی, کمھلاتے, کمھلا, کمھلایں, کمھلاو, کمھلانے
+2710	ur_w_lahlahana	لہلہانا	verb	nature	to sway (crops)	يتمايل	lahlahānā	لہلہایا, لہلہائی, لہلہائے, لہلہاتا, لہلہاتی, لہلہاتے, لہلہا, لہلہایں, لہلہاو, لہلہانے
+2711	ur_w_hinhinana	ہنہنانا	verb	animals	to neigh	يصهل	hinhinānā	ہنہنایا, ہنہنائی, ہنہنائے, ہنہناتا, ہنہناتی, ہنہناتے, ہنہنا, ہنہنایں, ہنہناو, ہنہنانے
+2712	ur_w_mimiyana	ممیانا	verb	animals	to bleat	يثغو	mimiyānā	ممیایا, ممیائی, ممیائے, ممیاتا, ممیاتی, ممیاتے, ممیا, ممیایں, ممیاو, ممیانے
+2713	ur_w_rambhana	رمبھانا	verb	animals	to moo	يخور	rambhānā	رمبھایا, رمبھائی, رمبھائے, رمبھاتا, رمبھاتی, رمبھاتے, رمبھا, رمبھایں, رمبھاو, رمبھانے
+2714	ur_w_kukna	کوکنا	verb	animals	to call (cuckoo)	يصدح	kūknā	کوکا, کوکی, کوکے, کوکتا, کوکتی, کوکتے, کوک, کوکیں, کوکو, کوکنے
+2715	ur_w_dakarna	ڈکارنا	verb	body	to belch	يتجشّأ	ḍakārnā	ڈکارا, ڈکاری, ڈکارے, ڈکارتا, ڈکارتی, ڈکارتے, ڈکار, ڈکاریں, ڈکارو, ڈکارنے
+2716	ur_w_hichkina	ہچکیانا	verb	body	to hiccup	يفوق	hichkiyānā	ہچکیایا, ہچکیائی, ہچکیائے, ہچکیاتا, ہچکیاتی, ہچکیاتے, ہچکیا, ہچکیایں, ہچکیاو, ہچکیانے
+2717	ur_w_belna	بیلنا	verb	food	to roll out	يفرد العجين	belnā	بیلا, بیلی, بیلے, بیلتا, بیلتی, بیلتے, بیل, بیلیں, بیلو, بیلنے
+2718	ur_w_raundna	روندنا	verb	actions	to trample	يدوس	raundnā	روندا, روندی, روندے, روندتا, روندتی, روندتے, روند, روندیں, روندو, روندنے
+2719	ur_w_pataknna	پٹکنا	verb	actions	to fling down	يطرح أرضًا	paṭaknā	پٹکا, پٹکی, پٹکے, پٹکتا, پٹکتی, پٹکتے, پٹک, پٹکیں, پٹکو, پٹکنے
+2720	ur_w_chidhana	چڑانا	verb	people	to tease	يغيظ	chiṛānā	چڑایا, چڑائی, چڑائے, چڑاتا, چڑاتی, چڑاتے, چڑا, چڑایں, چڑاو, چڑانے
+2721	ur_w_thagna	ٹھگنا	verb	society	to swindle	يحتال	ṭhagnā	ٹھگا, ٹھگی, ٹھگے, ٹھگتا, ٹھگتی, ٹھگتے, ٹھگ, ٹھگیں, ٹھگو, ٹھگنے
+2722	ur_w_dutkarna	دھتکارنا	verb	people	to rebuff	يزجر	dhutkārnā	دھتکارا, دھتکاری, دھتکارے, دھتکارتا, دھتکارتی, دھتکارتے, دھتکار, دھتکاریں, دھتکارو, دھتکارنے
+2723	ur_w_lalkarna	للکارنا	verb	people	to challenge	يتحدّى	lalkārnā	للکارا, للکاری, للکارے, للکارتا, للکارتی, للکارتے, للکار, للکاریں, للکارو, للکارنے
+2724	ur_w_phatkarna	پھٹکارنا	verb	people	to scold	يوبّخ	phaṭkārnā	پھٹکارا, پھٹکاری, پھٹکارے, پھٹکارتا, پھٹکارتی, پھٹکارتے, پھٹکار, پھٹکاریں, پھٹکارو, پھٹکارنے
+2725	ur_w_dubki_lagana	ڈبکی لگانا	verb	leisure	to dive	يغطس	ḍubkī lagānā	ڈبکی لگایا, ڈبکی لگائی, ڈبکی لگائے, ڈبکی لگاتا, ڈبکی لگاتی, ڈبکی لگاتے, ڈبکی لگا, ڈبکی لگایں, ڈبکی لگاو, ڈبکی لگانے
+2726	ur_w_patang_udana	پتنگ اڑانا	verb	leisure	to fly a kite	يطيّر طائرة ورقية	patang uṛānā	پتنگ اڑایا, پتنگ اڑائی, پتنگ اڑائے, پتنگ اڑاتا, پتنگ اڑاتی, پتنگ اڑاتے, پتنگ اڑا, پتنگ اڑایں, پتنگ اڑاو, پتنگ اڑانے
+2727	ur_w_sustana	سستانا	verb	leisure	to rest	يستريح	sustānā	سستایا, سستائی, سستائے, سستاتا, سستاتی, سستاتے, سستا, سستایں, سستاو, سستانے
+2728	ur_w_unghna	اونگھنا	verb	body	to doze	يغفو	ūnghnā	اونگھا, اونگھی, اونگھے, اونگھتا, اونگھتی, اونگھتے, اونگھ, اونگھیں, اونگھو, اونگھنے
+2729	ur_w_angdai_lena	انگڑائی لینا	verb	body	to stretch	يتمطّى	angṛāī lenā	انگڑائی لیا, انگڑائی لیی, انگڑائی لیے, انگڑائی لیتا, انگڑائی لیتی, انگڑائی لیتے, انگڑائی لی, انگڑائی لییں, انگڑائی لیو, انگڑائی لینے
+2730	ur_w_aankh_marna	آنکھ مارنا	verb	body	to wink	يغمز	ānkh mārnā	آنکھ مارا, آنکھ ماری, آنکھ مارے, آنکھ مارتا, آنکھ مارتی, آنکھ مارتے, آنکھ مار, آنکھ ماریں, آنکھ مارو, آنکھ مارنے
+2731	ur_w_chakla	چکلا	noun	food	pastry board	لوح العجين	chaklā		gender=m
+2732	ur_w_sarauta	سروتا	noun	food	nutcracker	كسّارة جوز	sarautā		gender=m
+2733	ur_w_machhardani	مچھر دانی	noun	home	mosquito net	ناموسية	machchhar dānī		gender=f
+2734	ur_w_toshak	توشک	noun	home	mattress	فراش	toshak		gender=m
+2735	ur_w_pidhi	پیڑھی	noun	home	low stool	كرسي منخفض	pīṛhī		gender=f
+2736	ur_w_mundair	منڈیر	noun	home	parapet	حافّة السطح	munḍer		gender=f
+2737	ur_w_jharna	جھرنا	noun	nature	waterfall, spring	شلّال	jharnā		gender=m
+2738	ur_w_ghati	گھاٹی	noun	nature	valley, gorge	وادٍ	ghāṭī		gender=f
+2739	ur_w_ola	اولا	noun	weather	hailstone	برَدة	olā		gender=m
+2740	ur_w_dhanak	دھنک	noun	weather	rainbow	قوس قزح	dhanak		gender=f
+2741	ur_w_bhuchal	بھونچال	noun	nature	earthquake	زلزال	bhūnchāl		gender=m
+2742	ur_w_kenchua	کینچوا	noun	animals	earthworm	دودة الأرض	kenchuā		gender=m
+2743	ur_w_rewar	ریوڑ	noun	animals	herd, flock	قطيع	revaṛ		gender=m
+2744	ur_w_tabela	طویلہ	noun	animals	stable	إسطبل	ṭavela		gender=m
+2745	ur_w_randa	رندا	noun	work	plane (tool)	فارة النجّار	randā		gender=m
+2746	ur_w_ghata	گھاٹا	noun	work	loss	خسارة	ghāṭā		gender=m
+2747	ur_w_sarmaya	سرمایہ	noun	work	capital	رأس مال	sarmāya		gender=m
+2748	ur_w_sajhedar	ساجھے دار	noun	work	partner	شريك	sājhedār		gender=m
+2749	ur_w_mulzim	ملزم	noun	society	accused	متّهم	mulzim		gender=m
+2750	ur_w_zamanat	ضمانت	noun	society	bail, guarantee	كفالة	zamānat		gender=f
+2751	ur_w_baladiya	بلدیہ	noun	society	municipality	بلدية	baladiya		gender=f
+2752	ur_w_numberdar	نمبردار	noun	society	village headman	مختار	nambardār		gender=m
+2753	ur_w_hijrat	ہجرت	noun	society	migration	هجرة	hijrat		gender=f
+2754	ur_w_panahgir	پناہ گزین	noun	society	refugee	لاجئ	panāh guzīn		gender=m
+2755	ur_w_langar	لنگر	noun	travel	anchor	مرساة	langar		gender=m
+2756	ur_w_badban	بادبان	noun	travel	sail	شراع	bādbān		gender=m
+2757	ur_w_qafila	قافلہ	noun	travel	caravan	قافلة	qāfila		gender=m
+2758	ur_w_qasid	قاصد	noun	work	messenger	رسول	qāṣid		gender=m
+2759	ur_w_jarrah	جراح	noun	health	surgeon	جرّاح	jarrāḥ		gender=m
+2760	ur_w_kharash	خراش	noun	health	scratch	خدش	kharāsh		gender=f
+2761	ur_w_moch	موچ	noun	health	sprain	التواء	moch		gender=f
+2762	ur_w_soojan	سوجن	noun	health	swelling	تورّم	sūjan		gender=f
+2763	ur_w_bekhwabi	بے خوابی	noun	health	insomnia	أرق	be khvābī		gender=f
+2764	ur_w_thakan	تھکن	noun	health	fatigue	تعب	thakan		gender=f
+2765	ur_w_hairat	حیرت	noun	feelings	astonishment	دهشة	ḥairat		gender=f
+2766	ur_w_sharmindagi	شرمندگی	noun	feelings	embarrassment	خجل	sharmindagī		gender=f
+2767	ur_w_reham	رحم	noun	feelings	mercy	رحمة	raḥm		gender=m
+2768	ur_w_keena	کینہ	noun	feelings	grudge	حقد	kīna		gender=m
+2769	ur_w_sukoon	سکون	noun	feelings	peace, calm	سكينة	sukūn		gender=m
+2770	ur_w_josh	جوش	noun	feelings	enthusiasm	حماس	josh		gender=m
+2771	ur_w_zameer	ضمیر	noun	mind	conscience	ضمير	zamīr		gender=m
+2772	ur_w_wajdan	وجدان	noun	mind	intuition	وجدان	vijdān		gender=m
+2773	ur_w_qiyas	قیاس	noun	mind	guess, assumption	قياس	qiyās		gender=m
+2774	ur_w_tazad	تضاد	noun	mind	contradiction	تضادّ	tazād		gender=m
+2775	ur_w_kashmakash	کشمکش	noun	mind	dilemma, struggle	صراع	kashmakash		gender=f
+2776	ur_w_urf	عرف	noun	communication	nickname	كنية	ʿurf		gender=m
+2777	ur_w_shikwa	شکوہ	noun	communication	complaint	شكوى	shikva		gender=m
+2778	ur_w_mubarakbad	مبارکباد	noun	communication	congratulations	تهنئة	mubārakbād		gender=f
+2779	ur_w_taziyat	تعزیت	noun	society	condolence	تعزية	taʿziyat		gender=f
+2780	ur_w_nikah	نکاح	noun	society	marriage ceremony	عقد قران	nikāḥ		gender=m
+2781	ur_w_wasiyat	وصیت	noun	society	will (testament)	وصيّة	vaṣiyyat		gender=f
+2782	ur_w_parhezgar	پرہیزگار	adj	society	pious	تقيّ	parhezgār
+2783	ur_w_qanaat_pasand	قناعت پسند	adj	feelings	content	قنوع	qanāʿat pasand
+2784	ur_w_fuzool_kharch	فضول خرچ	adj	shopping	wasteful	مبذّر	fuzūl kharch
+2785	ur_w_bholabhala	بھولا بھالا	adj	people	innocent, naive	ساذج	bholā bhālā	بھولا بھالی, بھولا بھالے
+2786	ur_w_ghamandi	گھمنڈی	adj	people	arrogant	متكبّر	ghamanḍī
+2787	ur_w_nekdil	نیک دل	adj	people	kind-hearted	طيّب القلب	nek dil
+2788	ur_w_bedard	بے درد	adj	people	heartless	قاسي القلب	be dard
+2789	ur_w_bewafa	بے وفا	adj	people	unfaithful	غير وفيّ	be vafā	بے وفی, بے وفے
+2790	ur_w_kaamchor	کام چور	adj	work	lazy, work-shy	كسول	kām chor
+2791	ur_w_ghisa_pita	گھسا پٹا	adj	descriptions	worn out, trite	بالٍ	ghisā piṭā	گھسا پٹی, گھسا پٹے
+2792	ur_w_keechadwala	کیچڑ بھرا	adj	nature	muddy	موحل	kīchaṛ bharā	کیچڑ بھری, کیچڑ بھرے
+2793	ur_w_lijlija	لجلجا	adj	senses	slimy	لزج	lijlijā	لجلجی, لجلجے
+2794	ur_w_phir_bhi	پھر بھی	adv	function	even so	ومع ذلك	phir bhī
+2795	ur_w_lagatar	لگاتار	adv	time	continuously	باستمرار	lagātār
+2796	ur_w_iqrar_karna	اقرار کرنا	verb	communication	to confess, to admit	يقرّ	iqrār karnā	اقرار کرا, اقرار کری, اقرار کرے, اقرار کرتا, اقرار کرتی, اقرار کرتے, اقرار کر, اقرار کریں, اقرار کرو, اقرار کرنے
+2797	ur_w_inkar_karna	انکار کرنا	verb	communication	to refuse, to deny	يرفض	inkār karnā	انکار کرا, انکار کری, انکار کرے, انکار کرتا, انکار کرتی, انکار کرتے, انکار کر, انکار کریں, انکار کرو, انکار کرنے
+2798	ur_w_tasdeeq_karna	تصدیق کرنا	verb	mind	to verify, to confirm	يصدّق	taṣdīq karnā	تصدیق کرا, تصدیق کری, تصدیق کرے, تصدیق کرتا, تصدیق کرتی, تصدیق کرتے, تصدیق کر, تصدیق کریں, تصدیق کرو, تصدیق کرنے
+2799	ur_w_dawa_karna	دعویٰ کرنا	verb	communication	to claim	يدّعي	daʿvā karnā	دعویٰ کرا, دعویٰ کری, دعویٰ کرے, دعویٰ کرتا, دعویٰ کرتی, دعویٰ کرتے, دعویٰ کر, دعویٰ کریں, دعویٰ کرو, دعویٰ کرنے
+2800	ur_w_muzammat_karna	مذمت کرنا	verb	communication	to condemn	يدين	mazammat karnā	مذمت کرا, مذمت کری, مذمت کرے, مذمت کرتا, مذمت کرتی, مذمت کرتے, مذمت کر, مذمت کریں, مذمت کرو, مذمت کرنے
+2801	ur_w_tanqeed_karna	تنقید کرنا	verb	communication	to criticise	ينتقد	tanqīd karnā	تنقید کرا, تنقید کری, تنقید کرے, تنقید کرتا, تنقید کرتی, تنقید کرتے, تنقید کر, تنقید کریں, تنقید کرو, تنقید کرنے
+2802	ur_w_sifarish_karna	سفارش کرنا	verb	communication	to recommend	يوصي	sifārish karnā	سفارش کرا, سفارش کری, سفارش کرے, سفارش کرتا, سفارش کرتی, سفارش کرتے, سفارش کر, سفارش کریں, سفارش کرو, سفارش کرنے
+2803	ur_w_darkhast_karna	درخواست کرنا	verb	communication	to request, to apply	يطلب	darkhvāst karnā	درخواست کرا, درخواست کری, درخواست کرے, درخواست کرتا, درخواست کرتی, درخواست کرتے, درخواست کر, درخواست کریں, درخواست کرو, درخواست کرنے
+2804	ur_w_ilteja_karna	التجا کرنا	verb	communication	to implore	يتوسّل	iltijā karnā	التجا کرا, التجا کری, التجا کرے, التجا کرتا, التجا کرتی, التجا کرتے, التجا کر, التجا کریں, التجا کرو, التجا کرنے
+2805	ur_w_wazahat_karna	وضاحت کرنا	verb	communication	to explain, to clarify	يوضّح	vazāḥat karnā	وضاحت کرا, وضاحت کری, وضاحت کرے, وضاحت کرتا, وضاحت کرتی, وضاحت کرتے, وضاحت کر, وضاحت کریں, وضاحت کرو, وضاحت کرنے
+2806	ur_w_bayan_karna	بیان کرنا	verb	communication	to describe	يصف	bayān karnā	بیان کرا, بیان کری, بیان کرے, بیان کرتا, بیان کرتی, بیان کرتے, بیان کر, بیان کریں, بیان کرو, بیان کرنے
+2807	ur_w_elan_karna	اعلان کرنا	verb	communication	to announce	يعلن	iʿlān karnā	اعلان کرا, اعلان کری, اعلان کرے, اعلان کرتا, اعلان کرتی, اعلان کرتے, اعلان کر, اعلان کریں, اعلان کرو, اعلان کرنے
+2808	ur_w_mashwara_karna	مشورہ کرنا	verb	communication	to consult	يتشاور	mashvara karnā	مشورہ کرا, مشورہ کری, مشورہ کرے, مشورہ کرتا, مشورہ کرتی, مشورہ کرتے, مشورہ کر, مشورہ کریں, مشورہ کرو, مشورہ کرنے
+2809	ur_w_bahas_karna	بحث کرنا	verb	communication	to argue	يجادل	baḥs karnā	بحث کرا, بحث کری, بحث کرے, بحث کرتا, بحث کرتی, بحث کرتے, بحث کر, بحث کریں, بحث کرو, بحث کرنے
+2810	ur_w_ehtijaj_karna	احتجاج کرنا	verb	society	to protest	يحتجّ	iḥtijāj karnā	احتجاج کرا, احتجاج کری, احتجاج کرے, احتجاج کرتا, احتجاج کرتی, احتجاج کرتے, احتجاج کر, احتجاج کریں, احتجاج کرو, احتجاج کرنے
+2811	ur_w_hifazat_karna	حفاظت کرنا	verb	society	to protect	يحمي	ḥifāzat karnā	حفاظت کرا, حفاظت کری, حفاظت کرے, حفاظت کرتا, حفاظت کرتی, حفاظت کرتے, حفاظت کر, حفاظت کریں, حفاظت کرو, حفاظت کرنے
+2812	ur_w_giraftar_karna	گرفتار کرنا	verb	society	to arrest	يعتقل	giriftār karnā	گرفتار کرا, گرفتار کری, گرفتار کرے, گرفتار کرتا, گرفتار کرتی, گرفتار کرتے, گرفتار کر, گرفتار کریں, گرفتار کرو, گرفتار کرنے
+2813	ur_w_riha_karna	رہا کرنا	verb	society	to release	يطلق سراح	rihā karnā	رہا کرا, رہا کری, رہا کرے, رہا کرتا, رہا کرتی, رہا کرتے, رہا کر, رہا کریں, رہا کرو, رہا کرنے
+2814	ur_w_bardasht_karna	برداشت کرنا	verb	feelings	to tolerate	يتحمّل	bardāsht karnā	برداشت کرا, برداشت کری, برداشت کرے, برداشت کرتا, برداشت کرتی, برداشت کرتے, برداشت کر, برداشت کریں, برداشت کرو, برداشت کرنے
+2815	ur_w_nazarandaz_karna	نظرانداز کرنا	verb	people	to ignore	يتجاهل	nazarandāz karnā	نظرانداز کرا, نظرانداز کری, نظرانداز کرے, نظرانداز کرتا, نظرانداز کرتی, نظرانداز کرتے, نظرانداز کر, نظرانداز کریں, نظرانداز کرو, نظرانداز کرنے
+2816	ur_w_hausla_afzai_karna	حوصلہ افزائی کرنا	verb	people	to encourage	يشجّع	ḥausla afzāʾī karnā	حوصلہ افزائی کرا, حوصلہ افزائی کری, حوصلہ افزائی کرے, حوصلہ افزائی کرتا, حوصلہ افزائی کرتی, حوصلہ افزائی کرتے, حوصلہ افزائی کر, حوصلہ افزائی کریں, حوصلہ افزائی کرو, حوصلہ افزائی کرنے
+2817	ur_w_ehtiyat_karna	احتیاط کرنا	verb	actions	to be careful	يحتاط	iḥtiyāt karnā	احتیاط کرا, احتیاط کری, احتیاط کرے, احتیاط کرتا, احتیاط کرتی, احتیاط کرتے, احتیاط کر, احتیاط کریں, احتیاط کرو, احتیاط کرنے
+2818	ur_w_parhez_karna	پرہیز کرنا	verb	health	to abstain, to diet	يحتمي	parhez karnā	پرہیز کرا, پرہیز کری, پرہیز کرے, پرہیز کرتا, پرہیز کرتی, پرہیز کرتے, پرہیز کر, پرہیز کریں, پرہیز کرو, پرہیز کرنے
+2819	ur_w_ilaj_karna	علاج کرنا	verb	health	to treat	يعالج	ʿilāj karnā	علاج کرا, علاج کری, علاج کرے, علاج کرتا, علاج کرتی, علاج کرتے, علاج کر, علاج کریں, علاج کرو, علاج کرنے
+2820	ur_w_muayna_karna	معائنہ کرنا	verb	health	to examine	يفحص	muʿāʾina karnā	معائنہ کرا, معائنہ کری, معائنہ کرے, معائنہ کرتا, معائنہ کرتی, معائنہ کرتے, معائنہ کر, معائنہ کریں, معائنہ کرو, معائنہ کرنے
+2821	ur_w_marham_patti_karna	مرہم پٹی کرنا	verb	health	to dress a wound	يضمّد	marham paṭṭī karnā	مرہم پٹی کرا, مرہم پٹی کری, مرہم پٹی کرے, مرہم پٹی کرتا, مرہم پٹی کرتی, مرہم پٹی کرتے, مرہم پٹی کر, مرہم پٹی کریں, مرہم پٹی کرو, مرہم پٹی کرنے
+2822	ur_w_tabdeel_karna	تبدیل کرنا	verb	actions	to change	يبدّل	tabdīl karnā	تبدیل کرا, تبدیل کری, تبدیل کرے, تبدیل کرتا, تبدیل کرتی, تبدیل کرتے, تبدیل کر, تبدیل کریں, تبدیل کرو, تبدیل کرنے
+2823	ur_w_mustarad_karna	مسترد کرنا	verb	work	to reject	يرفض	mustarad karnā	مسترد کرا, مسترد کری, مسترد کرے, مسترد کرتا, مسترد کرتی, مسترد کرتے, مسترد کر, مسترد کریں, مسترد کرو, مسترد کرنے
+2824	ur_w_manzoor_karna	منظور کرنا	verb	work	to approve	يوافق على	manzūr karnā	منظور کرا, منظور کری, منظور کرے, منظور کرتا, منظور کرتی, منظور کرتے, منظور کر, منظور کریں, منظور کرو, منظور کرنے
+2825	ur_w_muttala_karna	مطلع کرنا	verb	communication	to inform	يبلغ	muṭṭaliʿ karnā	مطلع کرا, مطلع کری, مطلع کرے, مطلع کرتا, مطلع کرتی, مطلع کرتے, مطلع کر, مطلع کریں, مطلع کرو, مطلع کرنے
+2826	ur_w_takmeel_karna	تکمیل کرنا	verb	work	to complete	يُكمل	takmīl karnā	تکمیل کرا, تکمیل کری, تکمیل کرے, تکمیل کرتا, تکمیل کرتی, تکمیل کرتے, تکمیل کر, تکمیل کریں, تکمیل کرو, تکمیل کرنے
+2827	ur_w_tameer_karna	تعمیر کرنا	verb	work	to construct	يبني	taʿmīr karnā	تعمیر کرا, تعمیر کری, تعمیر کرے, تعمیر کرتا, تعمیر کرتی, تعمیر کرتے, تعمیر کر, تعمیر کریں, تعمیر کرو, تعمیر کرنے
+2828	ur_w_marammat_karna	مرمت کرنا	verb	work	to repair	يرمّم	marammat karnā	مرمت کرا, مرمت کری, مرمت کرے, مرمت کرتا, مرمت کرتی, مرمت کرتے, مرمت کر, مرمت کریں, مرمت کرو, مرمت کرنے
+2829	ur_w_nigrani_karna	نگرانی کرنا	verb	work	to supervise	يشرف	nigrānī karnā	نگرانی کرا, نگرانی کری, نگرانی کرے, نگرانی کرتا, نگرانی کرتی, نگرانی کرتے, نگرانی کر, نگرانی کریں, نگرانی کرو, نگرانی کرنے
+2830	ur_w_intizam_karna	انتظام کرنا	verb	work	to arrange	يدبّر	intizām karnā	انتظام کرا, انتظام کری, انتظام کرے, انتظام کرتا, انتظام کرتی, انتظام کرتے, انتظام کر, انتظام کریں, انتظام کرو, انتظام کرنے
+2831	ur_w_takseem_karna	تقسیم کرنا	verb	actions	to distribute, to divide	يقسّم	taqsīm karnā	تقسیم کرا, تقسیم کری, تقسیم کرے, تقسیم کرتا, تقسیم کرتی, تقسیم کرتے, تقسیم کر, تقسیم کریں, تقسیم کرو, تقسیم کرنے
+2832	ur_w_jama_karna	جمع کرنا	verb	actions	to collect, to add	يجمع	jamaʿ karnā	جمع کرا, جمع کری, جمع کرے, جمع کرتا, جمع کرتی, جمع کرتے, جمع کر, جمع کریں, جمع کرو, جمع کرنے
+2833	ur_w_kadhai_karna	کڑھائی کرنا	verb	work	to embroider	يطرّز	kaṛhāʾī karnā	کڑھائی کرا, کڑھائی کری, کڑھائی کرے, کڑھائی کرتا, کڑھائی کرتی, کڑھائی کرتے, کڑھائی کر, کڑھائی کریں, کڑھائی کرو, کڑھائی کرنے
+2834	ur_w_kashida_karna	کشیدہ کاری کرنا	verb	work	to do needlework	يطرّز	kashīda kārī karnā	کشیدہ کاری کرا, کشیدہ کاری کری, کشیدہ کاری کرے, کشیدہ کاری کرتا, کشیدہ کاری کرتی, کشیدہ کاری کرتے, کشیدہ کاری کر, کشیدہ کاری کریں, کشیدہ کاری کرو, کشیدہ کاری کرنے
+2835	ur_w_kaddukash_karna	کدوکش کرنا	verb	food	to grate	يبشر	kaddūkash karnā	کدوکش کرا, کدوکش کری, کدوکش کرے, کدوکش کرتا, کدوکش کرتی, کدوکش کرتے, کدوکش کر, کدوکش کریں, کدوکش کرو, کدوکش کرنے
+2836	ur_w_baghar_lagana	بگھار لگانا	verb	food	to temper (spices)	يقدح البهارات	baghār lagānā	بگھار لگایا, بگھار لگائی, بگھار لگائے, بگھار لگاتا, بگھار لگاتی, بگھار لگاتے, بگھار لگا, بگھار لگایں, بگھار لگاو, بگھار لگانے
+2837	ur_w_dam_dena	دم دینا	verb	food	to steam, to simmer	يطهو على نار هادئة	dam denā	دم دیا, دم دیی, دم دیے, دم دیتا, دم دیتی, دم دیتے, دم دی, دم دییں, دم دیو, دم دینے
+2838	ur_w_achar_dalna	اچار ڈالنا	verb	food	to pickle	يخلّل	achār ḍālnā	اچار ڈالا, اچار ڈالی, اچار ڈالے, اچار ڈالتا, اچار ڈالتی, اچار ڈالتے, اچار ڈال, اچار ڈالیں, اچار ڈالو, اچار ڈالنے
+2839	ur_w_khamir_uthna	خمیر اٹھنا	verb	food	to rise (dough)	يختمر	khamīr uṭhnā	خمیر اٹھا, خمیر اٹھی, خمیر اٹھے, خمیر اٹھتا, خمیر اٹھتی, خمیر اٹھتے, خمیر اٹھ, خمیر اٹھیں, خمیر اٹھو, خمیر اٹھنے
+2840	ur_w_ankurna	انکرنا	verb	nature	to sprout	ينبت	ankurnā	انکرا, انکری, انکرے, انکرتا, انکرتی, انکرتے, انکر, انکریں, انکرو, انکرنے
+2841	ur_w_phalna_phoolna	پھلنا پھولنا	verb	nature	to flourish	يزدهر	phalnā phūlnā	پھلنا پھولا, پھلنا پھولی, پھلنا پھولے, پھلنا پھولتا, پھلنا پھولتی, پھلنا پھولتے, پھلنا پھول, پھلنا پھولیں, پھلنا پھولو, پھلنا پھولنے
+2842	ur_w_zang_lagna	زنگ لگنا	verb	nature	to rust	يصدأ	zang lagnā	زنگ لگا, زنگ لگی, زنگ لگے, زنگ لگتا, زنگ لگتی, زنگ لگتے, زنگ لگ, زنگ لگیں, زنگ لگو, زنگ لگنے
+2843	ur_w_langar_dalna	لنگر ڈالنا	verb	travel	to drop anchor	يرسو	langar ḍālnā	لنگر ڈالا, لنگر ڈالی, لنگر ڈالے, لنگر ڈالتا, لنگر ڈالتی, لنگر ڈالتے, لنگر ڈال, لنگر ڈالیں, لنگر ڈالو, لنگر ڈالنے
+2844	ur_w_safar_karna	سفر کرنا	verb	travel	to travel	يسافر	safar karnā	سفر کرا, سفر کری, سفر کرے, سفر کرتا, سفر کرتی, سفر کرتے, سفر کر, سفر کریں, سفر کرو, سفر کرنے
+2845	ur_w_hijrat_karna	ہجرت کرنا	verb	society	to migrate	يهاجر	hijrat karnā	ہجرت کرا, ہجرت کری, ہجرت کرے, ہجرت کرتا, ہجرت کرتی, ہجرت کرتے, ہجرت کر, ہجرت کریں, ہجرت کرو, ہجرت کرنے
+2846	ur_w_panah_lena	پناہ لینا	verb	society	to take refuge	يلجأ	panāh lenā	پناہ لیا, پناہ لیی, پناہ لیے, پناہ لیتا, پناہ لیتی, پناہ لیتے, پناہ لی, پناہ لییں, پناہ لیو, پناہ لینے
+2847	ur_w_wasiyat_karna	وصیت کرنا	verb	society	to bequeath	يوصي	vaṣiyyat karnā	وصیت کرا, وصیت کری, وصیت کرے, وصیت کرتا, وصیت کرتی, وصیت کرتے, وصیت کر, وصیت کریں, وصیت کرو, وصیت کرنے
+2848	ur_w_soog_manana	سوگ منانا	verb	feelings	to mourn	يحزن	sog manānā	سوگ منایا, سوگ منائی, سوگ منائے, سوگ مناتا, سوگ مناتی, سوگ مناتے, سوگ منا, سوگ منایں, سوگ مناو, سوگ منانے
+2849	ur_w_jashn_manana	جشن منانا	verb	leisure	to celebrate	يحتفل	jashn manānā	جشن منایا, جشن منائی, جشن منائے, جشن مناتا, جشن مناتی, جشن مناتے, جشن منا, جشن منایں, جشن مناو, جشن منانے
+2850	ur_w_lori_sunana	لوری سنانا	verb	family	to sing a lullaby	يغنّي تهويدة	lorī sunānā	لوری سنایا, لوری سنائی, لوری سنائے, لوری سناتا, لوری سناتی, لوری سناتے, لوری سنا, لوری سنایں, لوری سناو, لوری سنانے
+2851	ur_w_laad_karna	لاڈ کرنا	verb	family	to pamper	يدلّل	lāḍ karnā	لاڈ کرا, لاڈ کری, لاڈ کرے, لاڈ کرتا, لاڈ کرتی, لاڈ کرتے, لاڈ کر, لاڈ کریں, لاڈ کرو, لاڈ کرنے
+2852	ur_w_parwarish_karna	پرورش کرنا	verb	family	to bring up	يربّي	parvarish karnā	پرورش کرا, پرورش کری, پرورش کرے, پرورش کرتا, پرورش کرتی, پرورش کرتے, پرورش کر, پرورش کریں, پرورش کرو, پرورش کرنے
+2853	ur_w_taaqub_karna	تعاقب کرنا	verb	movement	to chase	يطارد	taʿāqub karnā	تعاقب کرا, تعاقب کری, تعاقب کرے, تعاقب کرتا, تعاقب کرتی, تعاقب کرتے, تعاقب کر, تعاقب کریں, تعاقب کرو, تعاقب کرنے
+2854	ur_w_ghaat_lagana	گھات لگانا	verb	movement	to lie in ambush	يكمن	ghāt lagānā	گھات لگایا, گھات لگائی, گھات لگائے, گھات لگاتا, گھات لگاتی, گھات لگاتے, گھات لگا, گھات لگایں, گھات لگاو, گھات لگانے
+2855	ur_w_hamla_karna	حملہ کرنا	verb	society	to attack	يهاجم	ḥamla karnā	حملہ کرا, حملہ کری, حملہ کرے, حملہ کرتا, حملہ کرتی, حملہ کرتے, حملہ کر, حملہ کریں, حملہ کرو, حملہ کرنے
+2856	ur_w_loot_mar_karna	لوٹ مار کرنا	verb	society	to plunder	ينهب	lūṭ mār karnā	لوٹ مار کرا, لوٹ مار کری, لوٹ مار کرے, لوٹ مار کرتا, لوٹ مار کرتی, لوٹ مار کرتے, لوٹ مار کر, لوٹ مار کریں, لوٹ مار کرو, لوٹ مار کرنے
+2857	ur_w_qabza_karna	قبضہ کرنا	verb	society	to occupy, to seize	يستولي	qabza karnā	قبضہ کرا, قبضہ کری, قبضہ کرے, قبضہ کرتا, قبضہ کرتی, قبضہ کرتے, قبضہ کر, قبضہ کریں, قبضہ کرو, قبضہ کرنے
+2858	ur_w_aiwan	ایوان	noun	society	house (of parliament)	مجلس	aivān		gender=m
+2859	ur_w_munsif	منصف	noun	society	judge	قاضٍ	munṣif		gender=m
+2860	ur_w_qaidkhana	قید خانہ	noun	society	prison	سجن	qaid khāna		gender=m
+2861	ur_w_silsila	سلسلہ	noun	mind	series, chain	سلسلة	silsila		gender=m
+2862	ur_w_nazariya	نظریہ	noun	mind	theory, viewpoint	نظرية	nazariya		gender=m
+2863	ur_w_mafhoom	مفہوم	noun	mind	meaning, concept	مفهوم	mafhūm		gender=m
+2864	ur_w_sabab	سبب	noun	mind	cause	سبب	sabab		gender=m
+2865	ur_w_tajziya	تجزیہ	noun	mind	analysis	تحليل	tajziya		gender=m
+2866	ur_w_khulasa	خلاصہ	noun	school	summary	خلاصة	khulāṣa		gender=m
+2867	ur_w_hashiya	حاشیہ	noun	school	margin, footnote	حاشية	ḥāshiya		gender=m
+2868	ur_w_fehrist	فہرست	noun	school	list, index	فهرس	fehrist		gender=f
+2869	ur_w_maqala	مقالہ	noun	school	thesis, article	مقالة	maqāla		gender=m
+2870	ur_w_hijje	ہجے	noun	school	spelling	تهجئة	hijje		gender=m
+2871	ur_w_rumuz	رموز	noun	school	punctuation, symbols	رموز	rumūz		gender=m
+2872	ur_w_vaqfa	وقفہ	noun	school	pause, comma	وقفة	vaqfa		gender=m
+2873	ur_w_misra	مصرع	noun	leisure	line of verse	شطر	miṣraʿ		gender=m
+2874	ur_w_pehelwani	پہلوانی	noun	leisure	wrestling	مصارعة	pahalvānī		gender=f
+2875	ur_w_ghudsawari	گھڑ سواری	noun	leisure	horse riding	ركوب الخيل	ghuṛ savārī		gender=f
+2876	ur_w_nishanebazi	نشانہ بازی	noun	leisure	shooting	رماية	nishāna bāzī		gender=f
+2877	ur_w_tairaki	تیراکی	noun	leisure	swimming	سباحة	tairākī		gender=f
+2878	ur_w_kohpaimai	کوہ پیمائی	noun	leisure	mountaineering	تسلّق الجبال	koh paimāʾī		gender=f
+2879	ur_w_khuddari	خودداری	noun	feelings	self-respect	عزّة النفس	khuddārī		gender=f
+2880	ur_w_bebasi	بے بسی	noun	feelings	helplessness	عجز	be basī		gender=f
+2881	ur_w_lagao	لگاؤ	noun	feelings	attachment	تعلّق	lagāʾo		gender=m
+2882	ur_w_rishtedari	رشتہ داری	noun	family	kinship	قرابة	rishta dārī		gender=f
+2883	ur_w_sasural	سسرال	noun	family	in-laws' home	بيت الأصهار	susrāl		gender=m
+2884	ur_w_maika	میکہ	noun	family	wife's parental home	بيت أهل الزوجة	maika		gender=m
+2885	ur_w_samdhi	سمدھی	noun	family	co-father-in-law	والد زوج الابن	samdhī		gender=m
+2886	ur_w_devar	دیور	noun	family	husband's younger brother	أخو الزوج	devar		gender=m
+2887	ur_w_nand	نند	noun	family	husband's sister	أخت الزوج	nand		gender=f
+2888	ur_w_bahnoi	بہنوئی	noun	family	sister's husband	زوج الأخت	bahnoʾī		gender=m
+2889	ur_w_saala	سالا	noun	family	wife's brother	أخو الزوجة	sālā		gender=m
+2890	ur_w_parpota	پڑپوتا	noun	family	great-grandson	ابن الحفيد	paṛpotā		gender=m
+2891	ur_w_randwa	رنڈوا	noun	family	widower	أرمل	ranḍvā		gender=m
+2892	ur_w_kunba	کنبہ	noun	family	household, family	عائلة	kunba		gender=m
+2893	ur_w_jawani	جوانی	noun	family	youth	شباب	javānī		gender=f
+2894	ur_w_dimple	گڑھا	noun	body	pit, dimple	حفرة	gaṛhā		gender=m
+2895	ur_w_jabda	جبڑا	noun	body	jaw	فكّ	jabṛā		gender=m
+2896	ur_w_hansli	ہنسلی	noun	body	collarbone	ترقوة	hanslī		gender=f
+2897	ur_w_reedh	ریڑھ	noun	body	spine	عمود فقري	rīṛh		gender=f
+2898	ur_w_dakar	ڈکار	noun	body	belch	تجشّؤ	ḍakār		gender=f
+2899	ur_w_qahqaha	قہقہہ	noun	feelings	loud laugh	قهقهة	qahqaha		gender=m
+2900	ur_w_muskurahat	مسکراہٹ	noun	feelings	smile	ابتسامة	muskurāhaṭ		gender=f
+2901	ur_w_nauha	نوحہ	noun	feelings	lament	نواح	nauḥa		gender=m
+2902	ur_w_marsiya	مرثیہ	noun	leisure	elegy	مرثية	marsiya		gender=m
+2903	ur_w_ilham	الہام	noun	mind	inspiration	إلهام	ilhām		gender=m
+2904	ur_w_fikr	فکر	noun	mind	worry, thought	همّ	fikr		gender=f
+2905	ur_w_andesha	اندیشہ	noun	mind	apprehension	خشية	andesha		gender=m
+2906	ur_w_wahm	وہم	noun	mind	illusion, suspicion	وهم	vahm		gender=m
+2907	ur_w_tehwar	تہوار	noun	society	festival	عيد	tehvār		gender=m
+2908	ur_w_rukhsati	رخصتی	noun	society	bride's farewell	زفاف العروس	ruḵhṣatī		gender=f
+2909	ur_w_chaliswan	چالیسواں	noun	society	fortieth-day rite	الأربعين	chālīsvāṅ		gender=m
+2910	ur_w_kafan	کفن	noun	society	shroud	كفن	kafan		gender=m
+2911	ur_w_khairat	خیرات	noun	society	charity	صدقة	ḵhairāt		gender=f
+2912	ur_w_chanda	چندہ	noun	society	donation	تبرّع	chanda		gender=m
+2913	ur_w_beopar	بیوپار	noun	work	trade	تجارة	beopār		gender=m
+2914	ur_w_lagan	لگان	noun	work	land rent	خراج	lagān		gender=m
+2915	ur_w_kifayat	کفایت	noun	shopping	thrift	اقتصاد	kifāyat		gender=f
+2916	ur_w_sasta_bazar	سستا بازار	noun	shopping	cheap market	سوق رخيص	sastā bāzār		gender=m
+2917	ur_w_jamadar	جمعدار	noun	work	sweeper, supervisor	عامل نظافة	jamaʿdār		gender=m
+2918	ur_w_ayah	آیا	noun	work	nanny	مربّية	āyā		gender=f
+2919	ur_w_vaid	وید	noun	health	ayurvedic doctor	طبيب تقليدي	vaid		gender=m
+2920	ur_w_shifakhana	شفا خانہ	noun	health	hospital	مستشفى	shifā ḵhāna		gender=m
+2921	ur_w_marz	مرض	noun	health	disease	مرض	marz		gender=m
+2922	ur_w_waba	وبا	noun	health	epidemic	وباء	vabā		gender=f
+2923	ur_w_vitamin	وٹامن	noun	health	vitamin	فيتامين	viṭāman		gender=m
+2924	ur_w_kamzori	کمزوری	noun	health	weakness	ضعف	kamzorī		gender=f
+2925	ur_w_lazmi	لازمی	adj	function	compulsory	إلزامي	lāzmī
+2926	ur_w_ikhtiyari	اختیاری	adj	function	optional	اختياري	iḵhtiyārī
+2927	ur_w_aarzi	عارضی	adj	time	temporary	مؤقّت	ʿārzī
+2928	ur_w_mustaqil	مستقل	adj	time	permanent	دائم	mustaqil
+2929	ur_w_ghair_mamooli	غیر معمولی	adj	descriptions	extraordinary	استثنائي	ghair maʿmūlī
+2930	ur_w_mushkil_pasand	مشکل پسند	adj	people	fussy	صعب الإرضاء	mushkil pasand
+2931	ur_w_badmizaj	بد مزاج	adj	people	ill-tempered	سيّئ المزاج	bad mizāj
+2932	ur_w_nafarman	نافرمان	adj	people	disobedient	عاصٍ	nāfarmān
+2933	ur_w_mehman_nawaz	مہمان نواز	adj	people	hospitable	مضياف	mehmān navāz
+2934	ur_w_faraakhdil	فراخ دل	adj	people	generous	كريم	farāḵh dil
+2935	ur_w_tangdil	تنگ دل	adj	people	mean, narrow-minded	ضيّق الأفق	tang dil
+2936	ur_w_kund_zehn	کند ذہن	adj	mind	dull-witted	بليد	kund zehn
+2937	ur_w_beqarar	بے قرار	adj	feelings	impatient, restless	مضطرب	be qarār
+2938	ur_w_mustaqilan	مستقلاً	adv	time	permanently	بشكل دائم	mustaqillan
+2939	ur_w_aarziyan	عارضی طور پر	adv	time	temporarily	مؤقّتًا	ʿārzī taur par
+2940	ur_w_halanki	حالانکہ	adv	function	although	مع أنّ	ḥālānki
+2941	ur_w_glacier	گلیشیئر	noun	nature	glacier	نهر جليدي	gleshiyar		gender=m
+2942	ur_w_khuski	خشکی	noun	nature	dry land	يابسة	ḵhushkī		gender=f
+2943	ur_w_tarai	ترائی	noun	nature	lowland	أرض منخفضة	tarāʾī		gender=f
+2944	ur_w_kachhar	کچھار	noun	nature	lair, thicket	عرين	kachhār		gender=f
+2945	ur_w_chhaal	چھال	noun	nature	bark	لحاء	chhāl		gender=f
+2946	ur_w_khalihan	کھلیان	noun	nature	threshing floor	بيدر	khalihān		gender=m
+2947	ur_w_rahat	رہٹ	noun	work	water wheel	ناعورة	rahaṭ		gender=m
+2948	ur_w_tanga	تانگا	noun	travel	horse cart	عربة خيل	tāngā		gender=m
+2949	ur_w_bail_gari	بیل گاڑی	noun	travel	bullock cart	عربة ثيران	bail gāṛī		gender=f
+2950	ur_w_palki	پالکی	noun	travel	palanquin	محفّة	pālkī		gender=f
+2951	ur_w_paraao	پڑاؤ	noun	travel	halt, camp	مخيّم	paṛāʾo		gender=m
+2952	ur_w_zad_e_raah	زاد راہ	noun	travel	provisions for a journey	زاد	zād-e rāh		gender=m
+2953	ur_w_nazrana	نذرانہ	noun	society	offering	هبة	nazrāna		gender=m
+2954	ur_w_rutba	رتبہ	noun	society	rank	رتبة	rutba		gender=m
+2955	ur_w_ohda	عہدہ	noun	work	post, position	منصب	ʿohda		gender=m
+2956	ur_w_riaya	رعایا	noun	society	subjects (of a ruler)	رعيّة	riʿāyā		gender=f
+2957	ur_w_shahzada	شہزادہ	noun	society	prince	أمير	shahzāda		gender=m
+2958	ur_w_shahzadi	شہزادی	noun	society	princess	أميرة	shahzādī		gender=f
+2959	ur_w_darbar	دربار	noun	society	royal court	بلاط	darbār		gender=m
+2960	ur_w_wazir	وزیر	noun	society	minister	وزير	vazīr		gender=m
+2961	ur_w_lashkar	لشکر	noun	society	army	جيش	lashkar		gender=m
+2962	ur_w_fatah	فتح	noun	society	victory	نصر	fatḥ		gender=f
+2963	ur_w_teer	تیر	noun	society	arrow	سهم	tīr		gender=m
+2964	ur_w_neza	نیزہ	noun	society	spear	رمح	neza		gender=m
+2965	ur_w_baarood	بارود	noun	society	gunpowder	بارود	bārūd		gender=m
+2966	ur_w_riyazi	ریاضی	noun	school	mathematics	رياضيات	riyāzī		gender=f
+2967	ur_w_kimiya	کیمیا	noun	school	chemistry	كيمياء	kīmiyā		gender=f
+2968	ur_w_tabiyat	طبیعیات	noun	school	physics	فيزياء	ṭabīʿiyāt		gender=f
+2969	ur_w_falkiyat	فلکیات	noun	school	astronomy	علم الفلك	falakiyāt		gender=f
+2970	ur_w_madar	مدار	noun	nature	orbit	مدار	madār		gender=m
+2971	ur_w_grahan	گرہن	noun	nature	eclipse	كسوف	grahan		gender=m
+2972	ur_w_dumdar_sitara	دمدار ستارہ	noun	nature	comet	مذنّب	dumdār sitāra		gender=m
+2973	ur_w_kehkashan	کہکشاں	noun	nature	galaxy	مجرّة	kahkashāṅ		gender=f
+2974	ur_w_hilal	ہلال	noun	nature	crescent moon	هلال	hilāl		gender=m
+2975	ur_w_chaudhvin	چودھویں کا چاند	noun	nature	full moon	البدر	chaudhvīṅ kā chānd		gender=m
+2976	ur_w_abaad	آباد	adj	descriptions	inhabited	مأهول	ābād
+2977	ur_w_sarsabz	سرسبز	adj	nature	lush green	مخضرّ	sarsabz
+2978	ur_w_daldali	دلدلی	adj	nature	marshy	مستنقعي	daldalī
+2979	ur_w_pathreela	پتھریلا	adj	nature	rocky	صخري	pathrīlā	پتھریلی, پتھریلے
+2980	ur_w_retila	ریتیلا	adj	nature	sandy	رملي	retīlā	ریتیلی, ریتیلے
+2981	ur_w_kantila	کانٹے دار	adj	nature	thorny	شائك	kāṅṭe dār
+2982	ur_w_ghumavdar	گھماؤدار	adj	descriptions	winding	متعرّج	ghumāʾodār
+2983	ur_w_dhalwan	ڈھلوان	adj	descriptions	sloping	منحدر	ḍhalvān
+2984	ur_w_sapaat	سپاٹ	adj	descriptions	flat	مسطّح	sapāṭ
+2985	ur_w_nokila	نوکیلا	adj	descriptions	pointed	مدبّب	nokīlā	نوکیلی, نوکیلے
+2986	ur_w_gol_matol	گول مٹول	adj	descriptions	chubby	ممتلئ	gol maṭol
+2987	ur_w_lamba_chauda	لمبا چوڑا	adj	descriptions	tall and broad	ضخم	lambā chauṛā	لمبا چوڑی, لمبا چوڑے
+2988	ur_w_anmol	انمول	adj	shopping	priceless	لا يُقدّر بثمن	anmol
+2989	ur_w_raddi	ردی	adj	shopping	junk, worthless	خردة	raddī
+2990	ur_w_khwah_makhwah	خواہ مخواہ	adv	function	needlessly	بلا داعٍ	ḵhvāh maḵhvāh
+2991	ur_w_bamushkil	بمشکل	adv	function	barely	بالكاد	ba mushkil
+2992	ur_w_bakhubi	بخوبی	adv	function	well, thoroughly	جيّدًا	ba ḵhūbī
+2993	ur_w_rafta_rafta	رفتہ رفتہ	adv	time	gradually	تدريجيًا	rafta rafta
+2994	ur_w_yakayak	یکایک	adv	time	all of a sudden	فجأة	yakāyak
+2995	ur_w_sangtarash	سنگ تراش	noun	work	stonemason	نحّات حجر	sang tarāsh		gender=m
+2996	ur_w_khattat	خطاط	noun	work	calligrapher	خطّاط	ḵhaṭṭāṭ		gender=m
+2997	ur_w_naqqash	نقاش	noun	work	painter, engraver	نقّاش	naqqāsh		gender=m
+2998	ur_w_jild_saz	جلد ساز	noun	work	bookbinder	مجلّد كتب	jild sāz		gender=m
+2999	ur_w_kasera	کسیرا	noun	work	brazier (metalworker)	نحّاس	kaserā		gender=m
+3000	ur_w_bhatiyara	بھٹیارا	noun	work	innkeeper	صاحب خان	bhaṭiyārā		gender=m
