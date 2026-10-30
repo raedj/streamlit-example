@@ -13,6 +13,12 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        // Tesseract4Android (on-device OCR, Apache-2.0) is published only on JitPack. Only that group
+        // may be resolved from JitPack; every other dependency still comes from Google or Maven Central.
+        exclusiveContent {
+            forRepository { maven("https://jitpack.io") }
+            filter { includeGroup("cz.adaptech.tesseract4android") }
+        }
     }
 }
 

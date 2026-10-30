@@ -62,16 +62,23 @@ class MaterialService(
     fun canTryOcr(material: ImportedMaterial): Boolean = ocr != null &&
         (material.type == MaterialType.IMAGE || material.errorMessage == "pdf_no_text")
 
+    /** Whether this material's language can be read on the device, without any AI provider. */
+    fun canReadOnDevice(material: ImportedMaterial): Boolean = canReadOnDevice(material.language)
+    fun canReadOnDevice(language: LanguageCode): Boolean = ocr?.canReadOnDevice(language) == true
+
     /**
-     * Reads the text of [pages] (a photo, or rendered pages of a scanned PDF) with a vision AI
-     * provider and stores it for review. Only call after the learner confirmed sending the file.
+     * Reads the text of [pages] (a photo, or rendered pages of a scanned PDF) and stores it for review:
+     * on the device when [onDevice], otherwise with a vision AI provider, which must only happen after
+     * the learner confirmed sending the file.
      */
-    suspend fun recognizeText(material: ImportedMaterial, pages: List<OcrPage>, onPage: (Int, Int) -> Unit = { _, _ -> }): Pair<ImportedMaterial, OcrResult> {
+    suspend fun recognizeText(material: ImportedMaterial, pages: List<OcrPage>, onDevice: Boolean = false, onPage: (Int, Int) -> Unit = { _, _ -> }): Pair<ImportedMaterial, OcrResult> {
         val service = ocr ?: return material to OcrResult.Failed(com.polyglot.academy.core.ai.AiError.NoProviderAvailable("no vision service"))
-        val result = service.recognize(pages, material.language, onPage)
+        val result = if (onDevice) service.recognizeOnDevice(pages, material.language, onPage) else service.recognize(pages, material.language, onPage)
+        // Reading on the device sends nothing anywhere, so it does not count as cloud processing of this item.
+        val cloud = material.cloudProcessingAllowed || !onDevice
         val updated = when (result) {
-            is OcrResult.Text -> material.copy(status = MaterialStatus.READY_FOR_REVIEW, extractedText = result.text, errorMessage = null, cloudProcessingAllowed = true)
-            OcrResult.NoText -> material.copy(status = MaterialStatus.FAILED, errorMessage = "ocr_no_text", cloudProcessingAllowed = true)
+            is OcrResult.Text -> material.copy(status = MaterialStatus.READY_FOR_REVIEW, extractedText = result.text, errorMessage = null, cloudProcessingAllowed = cloud)
+            OcrResult.NoText -> material.copy(status = MaterialStatus.FAILED, errorMessage = "ocr_no_text", cloudProcessingAllowed = cloud)
             is OcrResult.Failed, is OcrResult.TooLarge -> material
         }
         if (updated != material) library.upsertMaterial(updated)

@@ -102,7 +102,7 @@ MATERIAL_UNSUPPORTED_BODY ¦ This type of file can be stored but its text can't 
 MATERIAL_PDF_ENCRYPTED ¦ This PDF is password-protected, so its text can't be read. Remove the protection or paste the text instead. ¦ ملف PDF هذا محمي بكلمة مرور، لذا لا يمكن قراءة نصه. أزل الحماية أو الصق النص بدلًا من ذلك.
 MATERIAL_PDF_NO_TEXT ¦ No text was found in this PDF. It may be a scanned image: you can read it with AI below (if available) or paste the text instead. ¦ لم يُعثر على نص في ملف PDF هذا. قد يكون صورة ممسوحة ضوئيًا: يمكنك قراءته بالذكاء الاصطناعي أدناه (إن توفّر) أو لصق النص بدلًا من ذلك.
 MATERIAL_NEEDS_OCR ¦ This is an image. Its text can be read with an AI provider, on your request. ¦ هذه صورة. يمكن قراءة نصها بمزوّد ذكاء اصطناعي بناءً على طلبك.
-MATERIAL_OCR_NO_TEXT ¦ The AI provider found no readable text in this file. ¦ لم يجد مزوّد الذكاء الاصطناعي نصًا مقروءًا في هذا الملف.
+MATERIAL_OCR_NO_TEXT ¦ No readable text was found in this file. ¦ لم يُعثر على نص مقروء في هذا الملف.
 MATERIAL_OCR_TITLE ¦ Read the text with AI ¦ قراءة النص بالذكاء الاصطناعي
 MATERIAL_OCR_BODY ¦ The photo or the page images are sent to your chosen AI provider (OpenAI, Gemini or Claude), which returns the text. This needs cloud AI to be allowed in Privacy. Up to 20 pages. ¦ تُرسل الصورة أو صور الصفحات إلى مزوّد الذكاء الاصطناعي الذي اخترته (OpenAI أو Gemini أو Claude) ليعيد النص. يتطلب ذلك السماح بالذكاء الاصطناعي السحابي في الخصوصية، وبحدّ أقصى 20 صفحة.
 MATERIAL_OCR_REIMPORT ¦ To read it with AI, import the file again (files are not kept after you leave). ¦ لقراءته بالذكاء الاصطناعي، استورد الملف مرة أخرى (لا تُحفظ الملفات بعد مغادرتك).
@@ -173,3 +173,9 @@ SESSION_RELAXATION ¦ Relaxation ¦ استرخاء
 SESSION_MEDIA ¦ Own material ¦ مواد خاصة
 SESSION_ITEMS ¦ {0} of {1} correct · {2} ¦ {0} من {1} صحيحة · {2}
 MATERIAL_CLOUD_ALLOW ¦ Allow cloud AI to explain this material ¦ السماح للذكاء الاصطناعي السحابي بشرح هذه المادة
+MATERIAL_OCR_DEVICE_TITLE ¦ Read the text on this device ¦ قراءة النص على هذا الجهاز
+MATERIAL_OCR_DEVICE_BODY ¦ {0} text can be recognised on this device. Nothing is sent anywhere. It works best with clear, straight photos of printed text; handwriting is rarely recognised. ¦ يمكن التعرّف على النص {0} على هذا الجهاز، ولا يُرسل شيء إلى أيّ جهة. يعمل أفضل مع صور واضحة ومستقيمة لنص مطبوع، ونادرًا ما يتعرّف على خطّ اليد.
+MATERIAL_OCR_DEVICE_START ¦ Read on this device ¦ اقرأ على هذا الجهاز
+MATERIAL_OCR_DEVICE_CHECK ¦ This text was recognised on this device and may contain mistakes. Check it before studying. ¦ تُعرّف على هذا النص على هذا الجهاز وقد يحتوي أخطاء، فراجعه قبل الدراسة.
+SUPPORT_DEVICE_OCR ¦ On this device, or with AI ¦ على هذا الجهاز، أو بالذكاء الاصطناعي
+MATERIAL_NEEDS_OCR_DEVICE ¦ This is an image. Its text can be read on this device, or with an AI provider on your request. ¦ هذه صورة. يمكن قراءة نصها على هذا الجهاز، أو بمزوّد ذكاء اصطناعي بناءً على طلبك.

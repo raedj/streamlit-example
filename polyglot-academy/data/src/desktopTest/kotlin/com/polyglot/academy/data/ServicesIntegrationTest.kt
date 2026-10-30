@@ -88,6 +88,11 @@ class FakePlatform : PlatformServices {
     override fun network() = net
     override fun deviceInfo() = DeviceInfo(6000, 10000, 34, 8, true, false, 90, false, false, true, "test")
     override val extractionSupport = mapOf(MaterialType.PDF to ExtractionSupport.NOT_IMPLEMENTED)
+    /** Stands in for Tesseract: Arabic only, returns a fixed line for any non-empty image. */
+    override val deviceOcr = object : com.polyglot.academy.core.service.DeviceOcr {
+        override val languages = setOf(LanguageCode.ARABIC)
+        override suspend fun recognize(page: com.polyglot.academy.core.service.OcrPage, language: LanguageCode) = if (page.bytes.isEmpty()) "" else "محطة القطار"
+    }
     var reminder: Triple<Boolean, Int, Int>? = null
     override suspend fun scheduleReminder(enabled: Boolean, hour: Int, minute: Int, days: Set<Int>): Boolean { reminder = Triple(enabled, hour, minute); return true }
     override val platformName = "test"
@@ -703,6 +708,23 @@ class ServicesIntegrationTest {
         assertEquals(setOf(com.polyglot.academy.core.model.DataCategory.IMPORTED_MATERIAL), req.dataCategories)
         assertEquals("AQIDBA==", req.messages.single().images.single().base64)
         assertTrue("French" in req.messages.single().content)
+    }
+
+    @Test fun arabicPhotoIsReadOnTheDeviceWithoutAnyProvider() = runBlocking<Unit> {
+        val photo = byteArrayOf(5, 6, 7)
+        val done = app.materials.import(LanguageCode.ARABIC, ImportInput("Sign", "image/jpeg", "sign.jpg", 3, null, photo), false).toList().last() as ImportProgress.Done
+        assertEquals("needs_ocr", done.material.errorMessage)
+        assertTrue(app.materials.canReadOnDevice(done.material))
+        assertTrue(!app.materials.canReadOnDevice(done.material.copy(language = LanguageCode.FRENCH)))
+        val (updated, result) = app.materials.recognizeText(done.material, listOf(com.polyglot.academy.core.service.OcrPage("image/jpeg", photo)), onDevice = true)
+        assertIs<com.polyglot.academy.core.service.OcrResult.Text>(result)
+        assertEquals(MaterialStatus.READY_FOR_REVIEW, updated.status)
+        assertEquals("محطة القطار", updated.extractedText)
+        // Cloud AI is off and nothing was sent: on-device reading is not cloud processing.
+        assertTrue(!updated.cloudProcessingAllowed)
+        assertTrue(openai.requests.isEmpty())
+        val (_, none) = app.materials.recognizeText(done.material, listOf(com.polyglot.academy.core.service.OcrPage("image/jpeg", ByteArray(0))), onDevice = true)
+        assertEquals(com.polyglot.academy.core.service.OcrResult.NoText, none)
     }
 
     @Test fun captionsImport() = runBlocking<Unit> {

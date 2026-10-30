@@ -39,6 +39,11 @@ conversations / imported material / everything (incl. keys and reminder).
 - No `followRedirects` for provider calls; timeouts on every request.
 - Reading a photo or scanned PDF with AI sends its images to the chosen vision provider only after a confirmation dialog, only when cloud AI is enabled (the global switch is checked first), and is tagged IMPORTED_MATERIAL. Files are kept in memory for this, never stored.
 - Imported PDFs are parsed on the device; their bytes are never sent anywhere, and only the extracted text is stored.
+- Arabic and Urdu photos can also be read on the device with Tesseract (bundled models, no network); this needs no
+  confirmation, sends nothing and does not mark the item as cloud-processed. The models are copied once from the APK
+  into `noBackupFilesDir`, so they are never backed up.
+- Build: JitPack is used only for the group `cz.adaptech.tesseract4android` (Gradle `exclusiveContent`); every other
+  dependency still resolves from Google Maven or Maven Central.
 - Backup rules include only `files/backup/` (the optional secret-free export); with an include rule nothing else is backed up or transferred, so the secrets file and the raw database never leave the device.
 - Restore (`SqlStore.importJson`) checks the format and version, runs in one transaction (a bad file changes nothing),
   never reads or writes secrets, and always switches cloud AI off and resets the accepted consent version,

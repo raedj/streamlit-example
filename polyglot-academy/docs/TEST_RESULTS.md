@@ -213,6 +213,20 @@ lessons stay out of the general path. Build: 264 tests, 0 failures (core 186, da
 ui 10); debug APK 29.0 MB, release 6.35 MB unsigned (was 5.1 MB). Checked on the emulator: home,
 a lesson page, Practice, and the course list with the four Chinese tracks.
 
+**On-device OCR for Arabic and Urdu (2026-10-31).** Tesseract4Android 4.9.0 with the Arabic and Urdu
+models from tessdata_fast (downloaded with the owner's approval). New data test: an Arabic photo is
+read through the device path, the material becomes ready for review, it is not marked as
+cloud-processed and no provider request is made; an empty page gives "no text". On the emulator
+(Urdu as learning language, Arabic interface): the material screen shows "Read on this device" next
+to the AI option; the library table says "On this device, or with AI". Results: printed Arabic
+(Naskh) from an app screenshot, read with the Urdu model, came back almost entirely right
+("مھام الیوم / اجمع 50 نقطة / تحذث 4 مرات فی محادثة / اقرأً قصة واحدة", Urdu letter forms for ي/ه,
+one junk line from a progress bar); Urdu in Nastaliq came back poorly (first line partly, second
+line missing). Single-block page segmentation kept the last Arabic line that automatic layout
+dropped, so it is used. Each page took about 3-4 s on the emulator. Release APK: 37 MB with all four
+ABIs uncompressed, 17.5 MB after dropping 32-bit x86 and compressing native libraries (was 6.35 MB
+before Tesseract). Build: 265 tests, 0 failures (core 186, data 57, uicore 12, ui 10).
+
 | Module | Test class | Tests | Failures |
 |---|---|---|---|
 | core | AdapterTest (OpenAI, Azure, Gemini, Anthropic, DeepSeek, local; image parts per vendor; error classification; timeouts; no key leakage; Mistral, Groq, xAI, OpenRouter, Qwen and custom OpenAI-compatible endpoints; GPT-5/o-series parameters; model lists from OpenAI-compatible, Anthropic and Gemini) | 14 | 0 |

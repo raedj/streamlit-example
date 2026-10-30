@@ -243,8 +243,10 @@ fun LibraryScreen() {
                 PolyCard {
                     MaterialType.entries.forEach { t ->
                         val sup = app.services.materials.support(t)
+                        val onDevice = t == MaterialType.IMAGE && app.services.materials.canReadOnDevice(lang)
                         Row { Text(Labels.materialType(s, t), Modifier.weight(1f), style = MaterialTheme.typography.bodyMedium)
-                            Text(s[K.valueOf("SUPPORT_${sup.name}")], style = MaterialTheme.typography.labelMedium, color = if (sup == ExtractionSupport.SUPPORTED) c.success else c.textSecondary) }
+                            Text(if (onDevice) s[K.SUPPORT_DEVICE_OCR] else s[K.valueOf("SUPPORT_${sup.name}")], style = MaterialTheme.typography.labelMedium,
+                                color = if (sup == ExtractionSupport.SUPPORTED || onDevice) c.success else c.textSecondary) }
                     }
                 }
             }
@@ -339,7 +341,7 @@ fun MaterialScreen(materialId: String) {
                     "pdf_no_text" -> K.MATERIAL_PDF_NO_TEXT
                     "pdf_invalid" -> K.MATERIAL_PDF_INVALID
                     "no_text_found" -> K.MATERIAL_NO_TEXT
-                    "needs_ocr" -> K.MATERIAL_NEEDS_OCR
+                    "needs_ocr" -> if (app.services.materials.canReadOnDevice(material)) K.MATERIAL_NEEDS_OCR_DEVICE else K.MATERIAL_NEEDS_OCR
                     "ocr_no_text" -> K.MATERIAL_OCR_NO_TEXT
                     else -> K.MATERIAL_UNSUPPORTED_BODY
                 }])
@@ -347,6 +349,7 @@ fun MaterialScreen(materialId: String) {
             }
             else -> {
                 if (material.cloudProcessingAllowed && material.type != MaterialType.TEXT) Banner(BannerKind.INFO, s[K.MATERIAL_OCR_CHECK])
+                else if (material.type == MaterialType.IMAGE) Banner(BannerKind.INFO, s[K.MATERIAL_OCR_DEVICE_CHECK])
                 if (material.type == MaterialType.PDF) Banner(BannerKind.INFO, s[K.MATERIAL_PDF_CHECK])
                 SectionHeader(s[K.MATERIAL_TEXT_REVIEW])
                 Text(s[K.MATERIAL_TEXT_EDIT_NOTE], style = MaterialTheme.typography.bodySmall, color = c.textSecondary)

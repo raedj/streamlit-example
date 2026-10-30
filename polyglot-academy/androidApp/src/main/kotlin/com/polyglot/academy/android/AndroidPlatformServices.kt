@@ -28,6 +28,7 @@ import com.polyglot.academy.core.device.DeviceInfo
 import com.polyglot.academy.core.media.ExtractionSupport
 import com.polyglot.academy.core.model.MaterialType
 import com.polyglot.academy.core.repo.SecretStore
+import com.polyglot.academy.core.service.DeviceOcr
 import com.polyglot.academy.core.service.OcrPage
 import com.polyglot.academy.core.service.PlatformServices
 import com.polyglot.academy.core.speech.RecognitionEvent
@@ -81,8 +82,11 @@ class AndroidPlatformServices(private val context: Context) : PlatformServices {
         )
     }
 
-    // PDF text is extracted in shared code; on-device OCR and transcription are not bundled.
+    // PDF text is extracted in shared code; transcription is not bundled. Photos can be read on the
+    // device for the languages in [deviceOcr], otherwise with a vision AI provider on request.
     override val extractionSupport: Map<MaterialType, ExtractionSupport> = emptyMap()
+
+    override val deviceOcr: DeviceOcr by lazy { TesseractOcr(context) }
 
     override suspend fun scheduleReminder(enabled: Boolean, hour: Int, minute: Int, days: Set<Int>): Boolean =
         Reminders.schedule(context, enabled, hour, minute, days)

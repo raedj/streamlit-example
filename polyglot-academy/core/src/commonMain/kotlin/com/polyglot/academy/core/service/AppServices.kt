@@ -39,6 +39,9 @@ interface PlatformServices {
     /** Renders PDF pages as JPEG images for AI text recognition, or null when the platform has no renderer. */
     suspend fun renderPdfPages(pdf: ByteArray, maxPages: Int): List<OcrPage>? = null
 
+    /** Text recognition that runs entirely on the device, or null when the platform has none. */
+    val deviceOcr: DeviceOcr? get() = null
+
     /** Raw microphone audio for pronunciation scoring and realtime voice. */
     val audioCapture: com.polyglot.academy.core.speech.AudioCapture get() = com.polyglot.academy.core.speech.NoAudioCapture
     val audioOutput: com.polyglot.academy.core.speech.AudioOutput get() = com.polyglot.academy.core.speech.NoAudioOutput
@@ -70,7 +73,7 @@ class AppServices(
         clock,
     )
     val writing = WritingService(providers)
-    val ocr = OcrService(providers)
+    val ocr = OcrService(providers, platform.deviceOcr)
     val materials = MaterialService(store, store, reviews, clock, ids, platform.extractionSupport, ocr)
 
     val speaking = SpeakingService(store, clock)

@@ -6,3 +6,6 @@
 # Ktor / OkHttp
 -dontwarn org.slf4j.**
 -dontwarn io.ktor.**
+# Tesseract4Android: native code calls back into these classes by name.
+-keep class com.googlecode.tesseract.android.** { *; }
+-keep class com.googlecode.leptonica.android.** { *; }
