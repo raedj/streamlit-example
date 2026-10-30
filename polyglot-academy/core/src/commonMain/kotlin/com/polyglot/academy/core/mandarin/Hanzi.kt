@@ -6,11 +6,12 @@ enum class ComponentRole { MEANING, SOUND, OTHER }
 
 data class HanziComponent(val form: String, val meaning: Gloss, val role: ComponentRole)
 
-/** Facts about one simplified character: stroke count and a learner-friendly breakdown into parts. */
+/** Facts about one character (simplified, or the traditional form of a course character): stroke count and a learner-friendly breakdown into parts. */
 data class HanziEntry(val character: Char, val strokes: Int, val components: List<HanziComponent>, val hint: Gloss?)
 
 /**
- * Stroke counts and component breakdowns for the characters used in the built-in Mandarin course.
+ * Stroke counts and component breakdowns for the characters used in the built-in Mandarin course,
+ * and for their traditional forms where these differ.
  * Authored for this app (not copied from a stroke-order database). Breakdowns are the common
  * teaching analysis, simplified for learners; "sound" parts hint at pronunciation only roughly.
  */
@@ -37,6 +38,13 @@ object HanziData {
         "丨" to g("line", "خط"), "丿" to g("stroke", "ضربة"),
         "目" to g("eye", "عين"), "手" to g("hand", "يد"), "冫" to g("ice", "جليد"), "令" to g("(sound part) lìng", "(جزء صوتي) lìng"),
         "羊" to g("sheep", "خروف"), "彡" to g("brush strokes", "خطوط فرشاة"), "景" to g("scenery", "منظر"), "执" to g("to hold", "يمسك"),
+        // Traditional forms.
+        "言" to g("speech", "كلام"), "馬" to g("horse", "حصان"), "飠" to g("food", "طعام"), "金" to g("metal", "معدن"),
+        "見" to g("to see", "يرى"), "貝" to g("shell (old money)", "صدفة (نقود قديمة)"), "罒" to g("net", "شبكة"), "雨" to g("rain", "مطر"),
+        "黑" to g("black", "أسود"), "糸" to g("silk", "حرير"), "巠" to g("(sound part) jīng", "(جزء صوتي) jīng"), "儿" to g("legs", "ساقان"),
+        "羽" to g("feathers, wings", "ريش، أجنحة"), "或" to g("(old form of 'country')", "(صيغة قديمة لـ'دولة')"), "气" to g("steam, air", "بخار، هواء"),
+        "固" to g("(sound part) gù", "(جزء صوتي) gù"), "衤" to g("clothing", "ملابس"), "里" to g("(sound part) lǐ", "(جزء صوتي) lǐ"),
+        "羕" to g("(sound part) yàng", "(جزء صوتي) yàng"), "埶" to g("(to plant)", "(يغرس)"), "米" to g("rice", "أرز"),
     )
 
     private val roleOf = mapOf('*' to ComponentRole.SOUND, '~' to ComponentRole.OTHER)
@@ -94,6 +102,26 @@ object HanziData {
         h('样', 10, "木 *羊"), h('冷', 7, "冫 *令", g("Ice (冫) on the left: cold.", "جليد (冫) على اليسار: بارد.")),
         h('热', 10, "~执 灬", g("Fire dots (灬) at the bottom: hot.", "نقاط النار (灬) في الأسفل: حار.")),
         h('的', 8, "白 勺"), h('会', 6, "人 云"), h('公', 4, "八 厶"), h('发', 5), h('送', 9, "辶 关"),
+        // Traditional forms of the course characters above, where they differ.
+        h('謝', 17, "言 *射", g("Speech (言) on the left: words of thanks.", "الكلام (言) على اليسار: كلمات الشكر.")),
+        h('氣', 10, "气 米", g("Steam (气) rising from rice (米): air, breath.", "بخار (气) يتصاعد من الأرز (米): هواء، نَفَس.")),
+        h('對', 14), h('見', 7, "目 儿", g("An eye (目) on legs (儿): to see.", "عين (目) على ساقين (儿): يرى.")),
+        h('師', 10), h('學', 16), h('個', 10, "亻 *固"),
+        h('媽', 13, "女 *馬", g("Woman (女) + 馬 (mǎ) for the sound: mā, 'mum'.", "امرأة (女) + 馬 (mǎ) للصوت: mā، 'أم'.")),
+        h('飯', 12, "飠 *反", g("Food (飠) + 反 (fǎn) for the sound: fàn, 'rice, meal'.", "طعام (飠) + 反 (fǎn) للصوت: fàn، 'أرز، وجبة'.")),
+        h('國', 11, "囗 或", g("或, an old word for a country, inside borders (囗).", "或، كلمة قديمة للدولة، داخل حدود (囗).")),
+        h('裡', 12, "衤 *里"), h('車', 7),
+        h('鐵', 21, "金", g("Metal (金) on the left: iron, as in 地鐵 (metro).", "معدن (金) على اليسار: حديد، كما في 地鐵 (مترو).")),
+        h('現', 11, "王 *見"), h('點', 17, "黑 *占"), h('習', 11, "羽 白", g("Wings (羽): a young bird practising flight.", "أجنحة (羽): طائر صغير يتدرّب على الطيران.")),
+        h('嗎', 13, "口 *馬", g("Mouth (口) + 馬 (mǎ): the question word ma.", "فم (口) + 馬 (mǎ): أداة الاستفهام ma.")),
+        h('貴', 12, "貝", g("Shells (貝), once used as money, at the bottom: expensive.", "أصداف (貝)، كانت نقودًا، في الأسفل: غالٍ.")),
+        h('為', 12),
+        h('請', 15, "言 *青", g("Speech (言) + 青 (qīng): qǐng, 'please'.", "كلام (言) + 青 (qīng): qǐng، 'من فضلك'.")),
+        h('買', 12, "罒 貝", g("A net (罒) over shells (貝), once money: to buy.", "شبكة (罒) فوق أصداف (貝)، كانت نقودًا: يشتري.")),
+        h('經', 13, "糸 *巠"), h('書', 10),
+        h('電', 13, "雨", g("Rain (雨) at the top: lightning, electricity.", "مطر (雨) في الأعلى: برق، كهرباء.")),
+        h('沒', 7), h('樣', 15, "木 *羕"), h('熱', 15, "~埶 灬", g("Fire dots (灬) at the bottom: hot.", "نقاط النار (灬) في الأسفل: حار.")),
+        h('會', 13), h('發', 12),
     ).associateBy { it.character }
 
     fun of(c: Char): HanziEntry? = entries[c]

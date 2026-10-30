@@ -149,7 +149,7 @@ CHARS_SCORES ¦ Shape covered: {0}% · ink on the character: {1}% ¦ نسبة ت
 CHARS_STROKES_MORE ¦ You drew {0} strokes; this character has {1}. ¦ رسمت {0} ضربات، وهذا الحرف فيه {1}.
 CHARS_STROKES_FEWER ¦ You drew {0} strokes; this character has {1}. Some strokes may be joined. ¦ رسمت {0} ضربات، وهذا الحرف فيه {1}، وربما وصلت بعض الضربات ببعضها.
 CHARS_ABOUT_TITLE ¦ How checking works ¦ كيف يتم التحقق
-CHARS_ABOUT ¦ Your writing is compared with the character's shape on this device, and its stroke order and direction with stroke data from Make Me a Hanzi (Arphic Public License). Both checks are tolerant comparisons, not handwriting recognition. Stroke counts and parts are for simplified characters. ¦ تُقارن كتابتك بشكل الحرف على هذا الجهاز، ويُقارن ترتيب ضرباتك واتجاهها ببيانات الضربات من مشروع Make Me a Hanzi (رخصة Arphic العامة). المقارنتان تقريبيتان وليستا تعرّفًا على الكتابة اليدوية. عدد الضربات والأجزاء للحروف المبسّطة.
+CHARS_ABOUT ¦ Your writing is compared with the character's shape on this device, and its stroke order and direction with stroke data from Make Me a Hanzi (Arphic Public License). Both checks are tolerant comparisons, not handwriting recognition. Parts are shown for the course characters, simplified and traditional; for the other characters the stroke count comes from the stroke data. ¦ تُقارن كتابتك بشكل الحرف على هذا الجهاز، ويُقارن ترتيب ضرباتك واتجاهها ببيانات الضربات من مشروع Make Me a Hanzi (رخصة Arphic العامة). المقارنتان تقريبيتان وليستا تعرّفًا على الكتابة اليدوية. الأجزاء مشروحة لحروف الدروس، المبسّطة والتقليدية، ويُؤخذ عدد الضربات لبقية الحروف من بيانات الضربات.
 TONES_TITLE ¦ Tone trainer ¦ مدرّب النغمات
 TONES_BODY ¦ Mandarin has four tones plus a neutral tone. The same syllable with a different tone is a different word. ¦ للصينية أربع نغمات ونغمة محايدة، والمقطع نفسه بنغمة مختلفة كلمة مختلفة.
 TONES_SANDHI ¦ When two 3rd tones meet, the first is said as a 2nd tone: nǐ hǎo sounds like ní hǎo. ¦ عند تتابع نغمتين ثالثتين تُنطق الأولى كنغمة ثانية: nǐ hǎo تُنطق ní hǎo.
@@ -244,3 +244,7 @@ CHARS_ORDER_DIFFERENT ¦ Stroke {0} does not match the expected stroke. ¦ ال�
 CHARS_ORDER_MISSING ¦ Stroke {0} of {1} is missing. ¦ الضربة {0} من {1} ناقصة.
 CHARS_ORDER_EXTRA ¦ There are more strokes than the {0} expected. ¦ عدد الضربات أكثر من {0}.
 CHARS_ORDER_COUNT ¦ ({0} of {1} strokes right) ¦ ({0} من {1} ضربات صحيحة)
+CHARS_SET ¦ Characters to practise ¦ الحروف التي تتدرّب عليها
+CHARS_SET_COURSE ¦ Course ¦ حروف الدروس
+CHARS_SET_SUB ¦ The course characters come with a breakdown into parts. Each word-list level adds the characters its words introduce. ¦ حروف الدروس مشروحة بأجزائها. وكل مستوى من قوائم الكلمات يضيف الحروف التي تظهر لأول مرة في كلماته.
+CHARS_POSITION ¦ Character {0} of {1} ¦ الحرف {0} من {1}

@@ -5,5 +5,5 @@ package com.polyglot.academy.core.mandarin.generated
 
 /** All generated stroke rows ("<char>\t<strokes>"). */
 internal object GeneratedStrokes {
-    fun rows(): List<String> = StrokeData01.rows + StrokeData02.rows + StrokeData03.rows + StrokeData04.rows + StrokeData05.rows + StrokeData06.rows + StrokeData07.rows + StrokeData08.rows + StrokeData09.rows
+    fun rows(): List<String> = StrokeData01.rows + StrokeData02.rows + StrokeData03.rows + StrokeData04.rows + StrokeData05.rows + StrokeData06.rows + StrokeData07.rows + StrokeData08.rows + StrokeData09.rows + StrokeData10.rows + StrokeData11.rows + StrokeData12.rows
 }

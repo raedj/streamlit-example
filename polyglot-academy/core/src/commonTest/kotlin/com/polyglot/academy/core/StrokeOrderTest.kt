@@ -18,7 +18,7 @@ class StrokeOrderTest {
         strokes.map { s -> s.map { InkPoint(it.x * scale + dx, it.y * scale + dy) } }
 
     @Test fun everyCharacterOfTheAppHasStrokeData() {
-        val missing = WordLists.of(LanguageCode.MANDARIN).entries.flatMap { e -> e.term.filter { it in '一'..'鿿' }.toList() }
+        val missing = WordLists.of(LanguageCode.MANDARIN).entries.flatMap { e -> (e.term + e.extra["trad"].orEmpty()).filter { it in '一'..'鿿' }.toList() }
             .toSet().filter { StrokeOrder.of(it) == null }
         assertEquals(emptyList(), missing)
         assertNull(StrokeOrder.of('A'))
@@ -26,8 +26,10 @@ class StrokeOrderTest {
 
     @Test fun strokeCountsAgreeWithTheCourseCharacters() {
         // The hand-written stroke counts of the course characters and the Make Me a Hanzi data must agree.
-        val disagree = Curriculum.of(LanguageCode.MANDARIN).vocabulary.flatMap { v -> v.term.toList() }.toSet()
-            .mapNotNull { c -> HanziData.of(c)?.let { h -> StrokeOrder.of(c)?.let { s -> if (s.size != h.strokes) "$c ${h.strokes}/${s.size}" else null } } }
+        // This covers the traditional forms too, which are hand-written entries of their own.
+        val missing = HanziData.entries.keys.filter { StrokeOrder.of(it) == null }
+        assertEquals(emptyList(), missing)
+        val disagree = HanziData.entries.values.mapNotNull { h -> StrokeOrder.of(h.character)!!.size.let { n -> if (n != h.strokes) "${h.character} ${h.strokes}/$n" else null } }
         assertEquals(emptyList(), disagree)
     }
 
