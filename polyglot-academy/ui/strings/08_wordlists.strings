@@ -90,3 +90,7 @@ WORDLEVEL_LESSONS_BODY ¦ Each lesson teaches 10 words of this level with flashc
 WORDLEVEL_LESSONS_DONE ¦ {0} of {1} lessons done ¦ أنجزت {0} من {1} درسًا
 WORDLEVEL_LESSON_NEXT ¦ Lesson {0}: words {1}–{2} ¦ الدرس {0}: الكلمات ⁦{1}–{2}⁩
 WORDLEVEL_LESSONS_ALL ¦ You have done all the lessons of this level. ¦ أنجزت كل دروس هذا المستوى.
+WORD_STROKES ¦ Stroke order ¦ ترتيب الضربات
+WORD_STROKES_REPLAY ¦ Play again ¦ أعد العرض
+WORD_STROKES_DESC ¦ Stroke order of {0}, {1} strokes ¦ ترتيب ضربات {0}، عدد الضربات {1}
+WORD_STROKES_SOURCE ¦ Stroke data: Make Me a Hanzi, Arphic Public License. ¦ بيانات الضربات: مشروع Make Me a Hanzi، رخصة Arphic العامة.

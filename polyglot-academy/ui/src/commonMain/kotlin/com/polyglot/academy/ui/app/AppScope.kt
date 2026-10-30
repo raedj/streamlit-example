@@ -69,14 +69,19 @@ class Loader<T>(private val trigger: () -> Unit) {
     fun reload() = trigger()
 }
 
-/** Loads data off the composition, keyed so it reloads when inputs change; failures become a retryable state. */
+/**
+ * Loads data off the composition, keyed so it reloads when inputs change; failures become a retryable
+ * state. The block runs on [kotlinx.coroutines.Dispatchers.Default]: building a language's curriculum or
+ * word list the first time is enough work to freeze the screen if done on the main thread.
+ */
 @Composable
 fun <T> rememberLoader(vararg keys: Any?, block: suspend () -> T): Loader<T> {
     var generation by remember { mutableIntStateOf(0) }
     val loader = remember(*keys) { Loader<T> { generation++ } }
     LaunchedEffect(loader, generation) {
         if (loader.state !is Load.Ready) loader.state = Load.Loading
-        loader.state = try { Load.Ready(block()) } catch (e: CancellationException) { throw e } catch (e: Throwable) { Load.Failed(e) }
+        loader.state = try { Load.Ready(kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.Default) { block() }) }
+            catch (e: CancellationException) { throw e } catch (e: Throwable) { Load.Failed(e) }
     }
     return loader
 }

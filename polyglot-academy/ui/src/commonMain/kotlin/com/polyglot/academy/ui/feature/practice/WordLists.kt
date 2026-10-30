@@ -25,6 +25,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.polyglot.academy.core.content.WordLessons
+import com.polyglot.academy.core.mandarin.StrokeOrder
+import com.polyglot.academy.ui.designsystem.StrokeOrderPlayer
 import com.polyglot.academy.core.model.LanguageCode
 import com.polyglot.academy.core.model.Languages
 import com.polyglot.academy.core.model.ReviewPhase
@@ -216,6 +218,20 @@ fun WordDetailScreen(entryId: String) {
                     }
                 }
             }
+        }
+        val hanzi = entry.term.filter { StrokeOrder.of(it) != null }
+        if (lang == LanguageCode.MANDARIN && hanzi.isNotEmpty()) {
+            var replay by remember(entryId) { mutableIntStateOf(0) }
+            SectionHeader(s[K.WORD_STROKES], action = s[K.WORD_STROKES_REPLAY], onAction = { replay++ })
+            // Chinese is written left to right, also in the Arabic interface.
+            androidx.compose.runtime.CompositionLocalProvider(androidx.compose.ui.platform.LocalLayoutDirection provides androidx.compose.ui.unit.LayoutDirection.Ltr) {
+                FlowRow(horizontalArrangement = Arrangement.spacedBy(12.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                    hanzi.forEach { ch ->
+                        StrokeOrderPlayer(StrokeOrder.of(ch)!!, s.f(K.WORD_STROKES_DESC, ch.toString(), StrokeOrder.of(ch)!!.size), replay)
+                    }
+                }
+            }
+            Text(s[K.WORD_STROKES_SOURCE], style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
         }
         if (entry.forms.isNotEmpty()) {
             SectionHeader(s[K.WORD_FORMS])

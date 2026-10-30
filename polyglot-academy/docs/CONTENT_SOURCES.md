@@ -84,3 +84,15 @@ rows can move from string literals to compressed resources without changing the 
 | Font | File | Licence | Source | Use |
 |---|---|---|---|---|
 | Noto Nastaliq Urdu (variable weight, 674 KB, SHA-256 `98a4787f…abbcd`) | `androidApp/src/main/res/font/noto_nastaliq_urdu.ttf` | SIL Open Font License 1.1, copyright 2022 The Noto Project Authors; full text in `docs/licenses/OFL-NotoNastaliqUrdu.txt` | `ofl/notonastaliqurdu/` in github.com/google/fonts (downloaded 2026-10-30 with the owner's approval) | Urdu learning content on Android |
+
+## Stroke-order data
+
+| Data | File | Licence | Source | Use |
+|---|---|---|---|---|
+| Stroke medians for the 2071 Chinese characters the app uses | `content/hanzi/strokes.tsv`, compiled by `tools/gen_strokes.py` into `core/.../mandarin/generated/` | Arphic Public License (`content/hanzi/ARPHICPL.TXT`); the data is a modified version of `graphics.txt` and stays under that licence, so anyone may copy, modify and redistribute it on the same terms | Make Me a Hanzi, commit 618dbab (2018-10-16), derived from the fonts Arphic PL KaitiM GB and Arphic PL UKai (downloaded 2026-10-30 with the owner's approval) | Stroke-order animation and order checking |
+
+What was changed is recorded in the header of `strokes.tsv`: only the app's characters, only the
+medians (outlines removed), y axis flipped to screen orientation, coordinates rounded, tab-separated
+format. `tools/extract_strokes.py` reproduces the file from the original `graphics.txt`. The rest of
+the app is not under the Arphic licence; the data is a separate work aggregated with it. This reading
+of the licence is not legal advice.

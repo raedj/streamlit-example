@@ -73,6 +73,13 @@ import com.polyglot.academy.ui.designsystem.SwitchRow
 import com.polyglot.academy.ui.designsystem.localeFor
 import com.polyglot.academy.ui.i18n.K
 import com.polyglot.academy.ui.i18n.LocalStrings
+import com.polyglot.academy.core.mandarin.StrokeMatch
+import com.polyglot.academy.core.mandarin.StrokeOrder
+import com.polyglot.academy.core.mandarin.StrokeOrderResult
+import com.polyglot.academy.ui.designsystem.STROKE_MILLIS
+import com.polyglot.academy.ui.designsystem.drawPracticeGrid
+import com.polyglot.academy.ui.designsystem.drawStrokeOrder
+import com.polyglot.academy.ui.i18n.Localizer
 import kotlinx.coroutines.launch
 
 /** The characters of the course that have stroke data, in the order the course introduces them. */
@@ -115,6 +122,11 @@ fun CharactersScreen() {
     val strokes = remember(index) { mutableStateListOf<List<InkPoint>>() }
     var current by remember(index) { mutableStateOf<List<InkPoint>>(emptyList()) }
     var result by remember(index) { mutableStateOf<HandwritingResult?>(null) }
+    var order by remember(index) { mutableStateOf<StrokeOrderResult?>(null) }
+    // Stroke-order demonstration: null while hidden, otherwise the animated number of strokes drawn.
+    val demo = remember(index) { androidx.compose.animation.core.Animatable(0f) }
+    var showDemo by remember(index) { mutableStateOf(false) }
+    val reduced = PolyglotTheme.motion.reduced
     var session by remember { mutableStateOf<StudySession?>(null) }
     var checked by remember { mutableIntStateOf(0) }
     var passed by remember { mutableIntStateOf(0) }
@@ -135,6 +147,14 @@ fun CharactersScreen() {
                 AudioButton(s[K.PLAY_AUDIO], { speaker.toggle(word.term, LanguageCode.MANDARIN) }, playing = speaker.playingText == word.term)
             }
             Text(s.f(K.CHARS_STROKES, entry.strokes), style = MaterialTheme.typography.labelLarge)
+            val medians = StrokeOrder.of(ch)
+            if (medians != null) SecondaryButton(s[K.CHARS_SHOW_ORDER], {
+                showDemo = true
+                scope.launch {
+                    if (reduced) demo.snapTo(medians.size.toFloat())
+                    else { demo.snapTo(0f); demo.animateTo(medians.size.toFloat(), androidx.compose.animation.core.tween(medians.size * STROKE_MILLIS, easing = androidx.compose.animation.core.LinearEasing)) }
+                }
+            }, Modifier.fillMaxWidth())
             if (entry.components.isNotEmpty()) {
                 Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
                     entry.components.forEach { part ->
@@ -156,7 +176,7 @@ fun CharactersScreen() {
                 .semantics { contentDescription = s.f(K.CHARS_BOX_DESC, ch.toString(), strokes.size) }
                 .pointerInput(index) {
                     detectDragGestures(
-                        onDragStart = { o -> current = listOf(InkPoint(o.x / size.width, o.y / size.height)); result = null },
+                        onDragStart = { o -> current = listOf(InkPoint(o.x / size.width, o.y / size.height)); result = null; order = null; showDemo = false },
                         onDrag = { change, _ ->
                             val p = change.position
                             current = current + InkPoint((p.x / size.width).coerceIn(0f, 1f), (p.y / size.height).coerceIn(0f, 1f))
@@ -167,10 +187,10 @@ fun CharactersScreen() {
                 },
         ) {
             // 田字格: the traditional practice grid with dashed centre lines.
-            val dash = PathEffect.dashPathEffect(floatArrayOf(10f, 10f))
-            drawLine(guide, Offset(size.width / 2, 0f), Offset(size.width / 2, size.height), 1.dp.toPx(), pathEffect = dash)
-            drawLine(guide, Offset(0f, size.height / 2), Offset(size.width, size.height / 2), 1.dp.toPx(), pathEffect = dash)
-            if (showGuide) drawCharacter(measurer, ch.toString(), guide.copy(alpha = 0.55f))
+            drawPracticeGrid(guide)
+            val medians = StrokeOrder.of(ch)
+            if (showDemo && medians != null) drawStrokeOrder(medians, demo.value, guide.copy(alpha = 0.7f), c.primary)
+            else if (showGuide) drawCharacter(measurer, ch.toString(), guide.copy(alpha = 0.55f))
             (strokes + listOf(current)).filter { it.isNotEmpty() }.forEach { stroke ->
                 val path = Path()
                 stroke.forEachIndexed { i, p -> if (i == 0) path.moveTo(p.x * size.width, p.y * size.height) else path.lineTo(p.x * size.width, p.y * size.height) }
@@ -179,12 +199,13 @@ fun CharactersScreen() {
         }
 
         Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-            SecondaryButton(s[K.CHARS_UNDO], { strokes.removeLastOrNull(); result = null }, Modifier.weight(1f), enabled = strokes.isNotEmpty())
-            SecondaryButton(s[K.CHARS_CLEAR], { strokes.clear(); result = null }, Modifier.weight(1f), enabled = strokes.isNotEmpty())
+            SecondaryButton(s[K.CHARS_UNDO], { strokes.removeLastOrNull(); result = null; order = null }, Modifier.weight(1f), enabled = strokes.isNotEmpty())
+            SecondaryButton(s[K.CHARS_CLEAR], { strokes.clear(); result = null; order = null }, Modifier.weight(1f), enabled = strokes.isNotEmpty())
         }
         PrimaryButton(s[K.CHARS_CHECK], {
             val r = HandwritingScorer.score(strokes.toList(), characterMask(measurer, ch.toString(), density), entry.strokes)
             result = r
+            order = StrokeOrder.of(ch)?.let { StrokeOrder.check(strokes.toList(), it) }
             if (r.verdict != HandwritingVerdict.EMPTY) {
                 checked++; if (r.verdict == HandwritingVerdict.GOOD) passed++
                 scope.launch {
@@ -208,6 +229,9 @@ fun CharactersScreen() {
                     Text(if (d > 0) s.f(K.CHARS_STROKES_MORE, r.strokesDrawn, entry.strokes) else s.f(K.CHARS_STROKES_FEWER, r.strokesDrawn, entry.strokes),
                         style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
                 }
+                order?.let { o ->
+                    Banner(if (o.allCorrect) BannerKind.SUCCESS else BannerKind.INFO, orderMessage(s, o), title = s[K.CHARS_ORDER_TITLE])
+                }
             }
         }
         if (checked > 0) Text(s.f(K.TONES_SCORE, passed, checked), style = MaterialTheme.typography.titleSmall)
@@ -215,4 +239,18 @@ fun CharactersScreen() {
         SectionHeader(s[K.CHARS_ABOUT_TITLE])
         Text(s[K.CHARS_ABOUT], style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
     }
+}
+
+/** One sentence about the learner's stroke order: all right, or the first stroke that is not. */
+private fun orderMessage(s: Localizer, o: StrokeOrderResult): String {
+    val first = o.firstProblem ?: return s.f(K.CHARS_ORDER_OK, o.expected)
+    val n = first + 1
+    return when (o.strokes[first]) {
+        StrokeMatch.REVERSED -> s.f(K.CHARS_ORDER_REVERSED, n)
+        StrokeMatch.OUT_OF_ORDER -> s.f(K.CHARS_ORDER_SWAPPED, n)
+        StrokeMatch.DIFFERENT -> s.f(K.CHARS_ORDER_DIFFERENT, n)
+        StrokeMatch.MISSING -> s.f(K.CHARS_ORDER_MISSING, n, o.expected)
+        StrokeMatch.EXTRA -> s.f(K.CHARS_ORDER_EXTRA, o.expected)
+        StrokeMatch.OK -> s.f(K.CHARS_ORDER_OK, o.expected)
+    } + " " + s.f(K.CHARS_ORDER_COUNT, o.correct, o.expected)
 }

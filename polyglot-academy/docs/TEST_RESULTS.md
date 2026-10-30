@@ -163,6 +163,21 @@ meaning-to-word test) and the dictation field also use the font; right-to-left o
 width so they align to their own start, with space before the radio button. Checked on the emulator
 with the Urdu meaning-to-word test in the English interface. Build: 242 tests, 0 failures.
 
+**Chinese stroke order (2026-10-30).** Stroke medians for the app's 2071 characters were extracted
+from Make Me a Hanzi (Arphic Public License). New `StrokeOrderTest` (core, 8 tests): every word-list
+character has data; the stroke counts of all course characters agree with the hand-written counts;
+points lie in the box; the expected strokes pass; a smaller off-centre copy passes; reversed,
+swapped, missing and extra strokes are reported; a scribble fails; a stray extra stroke no longer
+spoils the other strokes. On the emulator (Arabic interface, Mandarin): the "Show stroke order"
+animation for 你, 你 written from its medians as touch input ("all 7 strokes in the right order and
+direction"), the same with the first stroke reversed ("stroke 1 goes the other way, 6 of 7"), and
+the animations for 我 and 们 on the word page (first shown right to left in the Arabic interface,
+now forced left to right). The first device run also showed that one stray stroke made all strokes
+fail, which led to comparing with and without alignment. Another ANR on the home screen after
+switching to Mandarin led to running every screen loader on `Dispatchers.Default`; no ANR was seen
+afterwards, but the emulator stays slow (home after about 25 s in the debug build). Build: 250
+tests, 0 failures (core 182, data 56, uicore 12).
+
 | Module | Test class | Tests | Failures |
 |---|---|---|---|
 | core | AdapterTest (OpenAI, Azure, Gemini, Anthropic, DeepSeek, local; image parts per vendor; error classification; timeouts; no key leakage; Mistral, Groq, xAI, OpenRouter, Qwen and custom OpenAI-compatible endpoints; GPT-5/o-series parameters; model lists from OpenAI-compatible, Anthropic and Gemini) | 14 | 0 |

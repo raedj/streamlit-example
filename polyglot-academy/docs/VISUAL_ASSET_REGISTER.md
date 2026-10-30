@@ -16,7 +16,8 @@ images). Source: `ui/.../designsystem/Illustrations.kt` unless noted.
 | `AchievementBadge` | Medal with glyph | Vector | Achievement name | Accent / disabled | Original |
 | Launcher icon `res/drawable/ic_launcher.xml` | App icon (two speech bubbles) | Vector drawable | n/a | Fixed brand colours | Original |
 | Material Icons (filled/auto-mirrored) | Action icons | Vector | Content descriptions on meaningful icons | Tinted by theme | Apache-2.0 (Google), via Compose |
+| Stroke-order animation (`StrokeOrderPlayer`, `drawStrokeOrder`) | Chinese stroke order on word pages and in writing practice | Vector, drawn in code from stroke medians | Content description with character and stroke count; no animation with reduced motion | Theme colours | Code original; data from Make Me a Hanzi, Arphic Public License (content/hanzi) |
 | Font `res/font/noto_nastaliq_urdu.ttf` | Urdu learning content in Nastaliq (Android) | Variable font | Text stays selectable/readable by screen readers | Theme text colours | SIL OFL 1.1, Noto Project (see CONTENT_SOURCES.md) |
 
 Not yet provided: adaptive-icon foreground/background layers and Play Store artwork; vocabulary
-images; cultural-context illustrations; stroke-order animations for Chinese characters.
+images; cultural-context illustrations.
