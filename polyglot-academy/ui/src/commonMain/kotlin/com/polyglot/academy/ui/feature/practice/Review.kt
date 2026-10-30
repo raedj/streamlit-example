@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AutoStories
 import androidx.compose.material.icons.filled.Edit
+import androidx.compose.material.icons.filled.FormatListNumbered
 import androidx.compose.material.icons.filled.Hearing
 import androidx.compose.material.icons.automirrored.filled.MenuBook
 import androidx.compose.material.icons.filled.Mic
@@ -85,6 +86,7 @@ fun PracticeScreen() {
             add(Triple(K.PRACTICE_SPEAKING to K.PRACTICE_SPEAKING_SUB, Icons.Filled.RecordVoiceOver, Route.SpeakingPath))
             add(Triple(K.PRACTICE_PHRASEBOOK to K.PRACTICE_PHRASEBOOK_SUB, Icons.Filled.Luggage, Route.Phrasebook))
             add(Triple(K.PRACTICE_REVIEW to K.PRACTICE_REVIEW_SUB, Icons.Filled.Replay, Route.Review))
+            add(Triple(K.PRACTICE_WORDLISTS to K.PRACTICE_WORDLISTS_SUB, Icons.Filled.FormatListNumbered, Route.WordLevels))
             add(Triple(K.PRACTICE_MISTAKES to K.PRACTICE_MISTAKES_SUB, Icons.Filled.ReportProblem, Route.Mistakes))
             add(Triple(K.PRACTICE_SCENARIOS to K.PRACTICE_SCENARIOS_SUB, Icons.Filled.TheaterComedy, Route.Scenarios))
             add(Triple(K.PRACTICE_GRAMMAR to K.PRACTICE_GRAMMAR_SUB, Icons.Filled.Spellcheck, Route.Grammar))

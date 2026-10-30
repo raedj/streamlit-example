@@ -78,5 +78,9 @@ fun RouteContent(route: Route) {
         is Route.SettingsPage -> SettingsPageScreen(route.section)
         is Route.ProviderDetail -> ProviderDetailScreen(route.provider)
         Route.History -> HistoryScreen()
+        Route.WordLevels -> com.polyglot.academy.ui.feature.practice.WordLevelsScreen()
+        is Route.WordLevel -> com.polyglot.academy.ui.feature.practice.WordLevelScreen(route.level)
+        is Route.WordDetail -> com.polyglot.academy.ui.feature.practice.WordDetailScreen(route.entryId)
+        is Route.WordTest -> com.polyglot.academy.ui.feature.practice.WordTestScreen(route.level)
     }
 }

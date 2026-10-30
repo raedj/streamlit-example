@@ -1,0 +1,76 @@
+# Frequency word lists: levels, level word list, word page, level test.
+PRACTICE_WORDLISTS ¦ 3000 most common words ¦ أكثر 3000 كلمة شيوعًا
+PRACTICE_WORDLISTS_SUB ¦ Ten levels of 300 words, with examples and a test for each level ¦ عشرة مستويات من 300 كلمة، مع أمثلة واختبار لكل مستوى
+WORDLEVELS_TITLE ¦ Most common words ¦ الكلمات الأكثر شيوعًا
+WORDLEVELS_BODY ¦ The 3000 most common words of {0} in ten levels of 300, most frequent first. Add words to your reviews a few at a time, then check yourself with the level test. ¦ أكثر 3000 كلمة شيوعًا في {0}، في عشرة مستويات من 300 كلمة، الأكثر تكرارًا أولًا. أضف الكلمات إلى مراجعاتك على دفعات صغيرة، ثم اختبر نفسك باختبار المستوى.
+WORDLEVELS_NOTICE ¦ The lists, meanings and examples were written with AI and have not yet been checked by native speakers. The order by frequency is approximate. ¦ كُتبت القوائم والمعاني والأمثلة بمساعدة الذكاء الاصطناعي ولم يراجعها متحدثون أصليون بعد. الترتيب حسب الشيوع تقريبي.
+WORDLEVEL_NAME ¦ Level {0} ¦ المستوى {0}
+WORDLEVEL_RANKS ¦ Words {0}–{1} · about {2} ¦ الكلمات ⁦{0}–{1}⁩ · تقريبًا {2}
+WORDLEVEL_STARTED ¦ In your reviews ¦ في مراجعاتك
+WORDLEVEL_KNOWN ¦ Learned ¦ تعلّمتها
+WORDLEVEL_COUNT ¦ {0} of {1} ¦ {0} من {1}
+WORDLEVEL_BEST ¦ Best test result: {0}% ¦ أفضل نتيجة في الاختبار: {0}%
+WORDLEVEL_PASSED ¦ Test passed ¦ اجتزت الاختبار
+WORDLEVEL_ADD_NEXT ¦ Add the next {0} words to reviews ¦ أضف الكلمات الـ{0} التالية إلى المراجعات
+WORDLEVEL_ADDED ¦ {0} word added to your reviews|{0} words added to your reviews ¦ لم تُضف أي كلمة|أُضيفت كلمة واحدة إلى مراجعاتك|أُضيفت كلمتان إلى مراجعاتك|أُضيفت {0} كلمات إلى مراجعاتك|أُضيفت {0} كلمة إلى مراجعاتك|أُضيفت {0} كلمة إلى مراجعاتك
+WORDLEVEL_ALL_ADDED ¦ All the words of this level are in your reviews. ¦ كل كلمات هذا المستوى موجودة في مراجعاتك.
+WORDLEVEL_TEST ¦ Take the level test ¦ خذ اختبار المستوى
+WORDLEVEL_REVIEW ¦ Review now ¦ راجع الآن
+WORDLEVEL_SEARCH ¦ Search this level ¦ ابحث في هذا المستوى
+WORDLEVEL_NO_MATCH ¦ No word in this level matches your search. ¦ لا توجد كلمة في هذا المستوى تطابق بحثك.
+WORDLEVEL_SHOW_MORE ¦ Show more words ¦ اعرض مزيدًا من الكلمات
+WORD_STATUS_NOT_ADDED ¦ Not in reviews ¦ ليست في المراجعات
+WORD_RANK ¦ No. {0} · level {1} ¦ رقم {0} · المستوى {1}
+WORD_MEANING ¦ Meaning ¦ المعنى
+WORD_FORMS ¦ Other forms ¦ صيغ أخرى
+WORD_EXAMPLES ¦ Examples ¦ أمثلة
+WORD_DETAILS ¦ Grammar ¦ القواعد
+WORD_ADD ¦ Add to reviews ¦ أضف إلى المراجعات
+WORD_ADDED ¦ Added to your reviews ¦ أُضيفت إلى مراجعاتك
+WORD_NOT_FOUND ¦ This word is not in the list. ¦ هذه الكلمة غير موجودة في القائمة.
+WORD_PREV ¦ Previous word ¦ الكلمة السابقة
+WORD_NEXT ¦ Next word ¦ الكلمة التالية
+WORD_EXTRA_GENDER ¦ Gender ¦ الجنس
+WORD_GENDER_M ¦ masculine ¦ مذكّر
+WORD_GENDER_F ¦ feminine ¦ مؤنّث
+WORD_GENDER_MF ¦ masculine or feminine ¦ مذكّر أو مؤنّث
+WORD_EXTRA_ARTICLE ¦ Article ¦ أداة التعريف
+WORD_EXTRA_PLURAL ¦ Plural ¦ الجمع
+WORD_EXTRA_ROOT ¦ Root ¦ الجذر
+WORD_EXTRA_MASDAR ¦ Verbal noun ¦ المصدر
+WORD_EXTRA_PRESENT ¦ Present tense ¦ المضارع
+WORD_EXTRA_TRAD ¦ Traditional characters ¦ الحروف التقليدية
+WORD_EXTRA_MEASURE ¦ Measure word ¦ المُصنِّف
+WORD_EXTRA_HSK ¦ HSK level (not verified) ¦ مستوى HSK (غير متحقَّق منه)
+WORD_EXTRA_STEM ¦ Stem ¦ الجذع
+WORD_IRREGULAR ¦ Irregular ¦ غير قياسي
+WORDTEST_TITLE ¦ Level {0} test ¦ اختبار المستوى {0}
+WORDTEST_BODY ¦ {0} words from this level. Choose the meaning of each word. You pass with {1}% or more, and the words you miss go into your reviews. ¦ {0} كلمة من هذا المستوى. اختر معنى كل كلمة. تجتاز الاختبار بنسبة {1}% أو أكثر، وتُضاف الكلمات التي تخطئ فيها إلى مراجعاتك.
+WORDTEST_START ¦ Start the test ¦ ابدأ الاختبار
+WORDTEST_QUESTION ¦ Question {0} of {1} ¦ السؤال {0} من {1}
+WORDTEST_PROMPT ¦ What does this word mean? ¦ ما معنى هذه الكلمة؟
+WORDTEST_CORRECT ¦ Correct ¦ صحيح
+WORDTEST_WRONG ¦ Not quite ¦ ليس تمامًا
+WORDTEST_ANSWER ¦ The answer: {0} ¦ الإجابة: {0}
+WORDTEST_NEXT ¦ Next ¦ التالي
+WORDTEST_FINISH ¦ See the result ¦ اعرض النتيجة
+WORDTEST_RESULT ¦ {0} of {1} correct ({2}%) ¦ {0} من {1} صحيحة ({2}%)
+WORDTEST_PASSED ¦ You passed this level test. ¦ اجتزت اختبار هذا المستوى.
+WORDTEST_FAILED ¦ Not passed yet. Review the words you missed and try again. ¦ لم تجتز الاختبار بعد. راجع الكلمات التي أخطأت فيها ثم حاول مرة أخرى.
+WORDTEST_MISSED ¦ Words to review ¦ كلمات للمراجعة
+WORDTEST_BACK ¦ Back to the level ¦ عودة إلى المستوى
+WORDTEST_AGAIN ¦ Try again ¦ حاول مرة أخرى
+SESSION_WORD_TEST ¦ Word level test ¦ اختبار مستوى الكلمات
+POS_NOUN ¦ noun ¦ اسم
+POS_VERB ¦ verb ¦ فعل
+POS_ADJECTIVE ¦ adjective ¦ صفة
+POS_ADVERB ¦ adverb ¦ ظرف
+POS_PRONOUN ¦ pronoun ¦ ضمير
+POS_PREPOSITION ¦ preposition ¦ حرف جر
+POS_CONJUNCTION ¦ conjunction ¦ أداة ربط
+POS_INTERJECTION ¦ interjection ¦ كلمة تعجّب
+POS_NUMERAL ¦ number ¦ عدد
+POS_PHRASE ¦ phrase ¦ عبارة
+POS_PARTICLE ¦ particle ¦ أداة
+POS_MEASURE_WORD ¦ measure word ¦ مُصنِّف
+POS_DETERMINER ¦ determiner ¦ محدِّد

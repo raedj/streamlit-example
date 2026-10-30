@@ -89,6 +89,20 @@ reworded (noted in the commits). Examples have 4–12 words (Mandarin 4–24 cha
 example per word. These are checks on the data only: no native speaker has reviewed levels 4–10,
 ranks are approximate, and Mandarin HSK levels were not checked against an official syllabus.
 
+**Word lists in the app (2026-10-30).** The lists are now used in the app: Practice → "3000 most
+common words" shows the ten levels, each level's words (searchable), a page per word (pronunciation,
+part of speech, grammar fields, forms, examples with audio), adding words to the review queue ten at
+a time, and a level test (20 multiple-choice questions, pass at 80%, missed words go into reviews).
+Review cards and "My vocabulary" now also find word-list words. New tests:
+`WordLevelServiceTest` (data, 4 tests: rank-order adding and review cards, quiz options in all eight
+languages, best score and missed words, test references), plus route round-trips and part-of-speech
+labels in `LocalizationTest`. `./gradlew build -x :ui:desktopTest`: 231 tests, 0 failures (core 171,
+data 48, uicore 12). The debug APK was built (from a copy of the repository outside OneDrive, because
+OneDrive locked build files) and run on the Android 15 emulator in the Arabic interface with English
+as the learning language: levels screen, level 1, adding 10 words, a word page, a full level test
+with its result, and the review queue showing word-list cards were checked by hand. Not checked: the
+English interface, other learning languages on the device, TalkBack, and large font sizes.
+
 | Module | Test class | Tests | Failures |
 |---|---|---|---|
 | core | AdapterTest (OpenAI, Azure, Gemini, Anthropic, DeepSeek, local; image parts per vendor; error classification; timeouts; no key leakage; Mistral, Groq, xAI, OpenRouter, Qwen and custom OpenAI-compatible endpoints; GPT-5/o-series parameters; model lists from OpenAI-compatible, Anthropic and Gemini) | 14 | 0 |

@@ -12,6 +12,7 @@ import com.polyglot.academy.core.model.LearningGoal
 import com.polyglot.academy.core.model.LearningStyle
 import com.polyglot.academy.core.model.MaterialStatus
 import com.polyglot.academy.core.model.MaterialType
+import com.polyglot.academy.core.model.PartOfSpeech
 import com.polyglot.academy.core.model.ProviderLocation
 import com.polyglot.academy.core.model.SessionKind
 import com.polyglot.academy.core.model.Skill
@@ -52,6 +53,7 @@ object Labels {
     fun materialType(s: Localizer, t: MaterialType) = s[K.valueOf("MTYPE_${t.name}")]
     fun materialStatus(s: Localizer, t: MaterialStatus) = s[K.valueOf("MSTATUS_${t.name}")]
     fun session(s: Localizer, k: SessionKind) = s[K.valueOf("SESSION_${k.name}")]
+    fun partOfSpeech(s: Localizer, p: PartOfSpeech) = s[K.valueOf("POS_${p.name}")]
     fun capability(s: Localizer, c: AiCapability) = s[K.valueOf("CAP_${c.name}")]
     fun location(s: Localizer, l: ProviderLocation) = s[K.valueOf("PROV_LOC_${l.name}")]
     fun achievement(s: Localizer, id: String) = runCatching { s[K.valueOf("ACH_$id")] }.getOrDefault(id)

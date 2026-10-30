@@ -12,9 +12,10 @@ import com.polyglot.academy.core.repo.ReviewRepository
 import com.polyglot.academy.core.repo.VocabularyRepository
 import com.polyglot.academy.core.srs.SpacedRepetitionScheduler
 import com.polyglot.academy.core.util.TimeSource
+import com.polyglot.academy.core.wordlist.WordLists
 import kotlinx.coroutines.flow.first
 
-/** A reviewable card: built-in or user vocabulary, or a saved phrase. */
+/** A reviewable card: built-in or user vocabulary, a saved phrase, or a word from the frequency word lists. */
 data class ReviewCard(val state: ReviewState, val front: String, val back: Gloss, val pronunciation: String?, val example: String?, val vocabulary: VocabularyItem?)
 
 class ReviewService(
@@ -50,6 +51,7 @@ class ReviewService(
     private fun card(s: ReviewState, items: Map<String, VocabularyItem>, phrases: Map<String, SavedPhrase>): ReviewCard? {
         items[s.itemId]?.let { v -> return ReviewCard(s, v.term, v.meaning, v.pronunciation ?: v.transliteration, v.example, v) }
         phrases[s.itemId]?.let { p -> return ReviewCard(s, p.text, Gloss(p.meaning, p.meaning), null, p.note, null) }
+        WordLists.of(s.language).byId[s.itemId]?.toVocabularyItem()?.let { v -> return ReviewCard(s, v.term, v.meaning, v.pronunciation ?: v.transliteration, v.example, v) }
         return null
     }
 

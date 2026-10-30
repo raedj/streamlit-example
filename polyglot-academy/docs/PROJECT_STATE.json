@@ -271,6 +271,22 @@
     "resume_at": {
       "note": "All ten levels (3000 words) are done for all eight languages."
     },
-    "size_per_level": "about 41-59 KB compressed in the APK per level (measured: en 59 KB, es 43 KB, fr 41 KB; zh, ar, tr, ur and ms not measured)"
+    "size_per_level": "about 41-59 KB compressed in the APK per level (measured: en 59 KB, es 43 KB, fr 41 KB; zh, ar, tr, ur and ms not measured)",
+    "in_app": {
+      "status": "done",
+      "date": "2026-10-30",
+      "screens": [
+        "WordLevels",
+        "WordLevel",
+        "WordDetail",
+        "WordTest"
+      ],
+      "service": "core/service/WordLevelService.kt",
+      "not_yet": [
+        "automatic lessons from the lists",
+        "meaning-to-word and listening test directions",
+        "level progress on the home screen"
+      ]
+    }
   }
 }

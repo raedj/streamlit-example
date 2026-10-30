@@ -104,7 +104,8 @@ fun VocabularyScreen() {
             val builtIn = Curriculum.of(lang).vocabularyById
             val byId = builtIn + userVocab.associateBy { it.id }
             val stateById = states.associateBy { it.itemId }
-            val words = states.mapNotNull { st -> byId[st.itemId]?.let { it to st } } + userVocab.filter { it.id !in stateById }.map { it to null }
+            val wordList = com.polyglot.academy.core.wordlist.WordLists.of(lang).byId
+            val words = states.mapNotNull { st -> (byId[st.itemId] ?: wordList[st.itemId]?.toVocabularyItem())?.let { it to st } } + userVocab.filter { it.id !in stateById }.map { it to null }
             val filtered = words.filter { (v, st) ->
                 (!dueOnly || (st != null && st.dueAtMillis <= now)) &&
                     (query.isBlank() || TextNormalizer.loose(v.term).contains(TextNormalizer.loose(query)) || TextNormalizer.loose(s.gloss(v.meaning)).contains(TextNormalizer.loose(query)))

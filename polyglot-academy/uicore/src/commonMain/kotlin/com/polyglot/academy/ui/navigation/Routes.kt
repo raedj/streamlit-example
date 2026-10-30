@@ -43,6 +43,11 @@ sealed interface Route {
     data class SettingsPage(val section: SettingsSection) : Route
     data class ProviderDetail(val provider: ProviderId) : Route
     data object History : Route
+    /** The frequency word lists: levels, one level's words, one word, and a level test. */
+    data object WordLevels : Route
+    data class WordLevel(val level: Int) : Route
+    data class WordDetail(val entryId: String) : Route
+    data class WordTest(val level: Int) : Route
 
     companion object {
         fun encode(r: Route): String = when (r) {
@@ -67,6 +72,10 @@ sealed interface Route {
             is SettingsPage -> "settingsPage|${r.section}"
             is ProviderDetail -> "provider|${r.provider}"
             History -> "history"
+            WordLevels -> "wordLevels"
+            is WordLevel -> "wordLevel|${r.level}"
+            is WordDetail -> "word|${r.entryId}"
+            is WordTest -> "wordTest|${r.level}"
         }
 
         fun decode(s: String): Route? = runCatching {
@@ -94,6 +103,10 @@ sealed interface Route {
                 "settingsPage" -> SettingsPage(SettingsSection.valueOf(arg(1)))
                 "provider" -> ProviderDetail(ProviderId.valueOf(arg(1)))
                 "history" -> History
+                "wordLevels" -> WordLevels
+                "wordLevel" -> WordLevel(arg(1).toInt())
+                "word" -> WordDetail(arg(1))
+                "wordTest" -> WordTest(arg(1).toInt())
                 else -> null
             }
         }.getOrNull()

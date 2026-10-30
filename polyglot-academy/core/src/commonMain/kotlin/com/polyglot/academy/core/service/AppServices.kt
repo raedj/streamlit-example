@@ -60,6 +60,7 @@ class AppServices(
     val achievements = AchievementService(store, store, clock)
     val study = StudyService(store, store, achievements, scheduler, clock, ids)
     val reviews = ReviewService(store, store, scheduler, achievements, clock)
+    val wordLevels = WordLevelService(store, store, scheduler, clock, ids)
     val dashboard = DashboardService(store, store, store, store, reviews, study, clock)
     val plans = PlanService(store, store, store, reviews, clock)
     val assessments = AssessmentService(store, store, achievements, clock, ids)
