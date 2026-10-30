@@ -197,6 +197,22 @@ frame) comes from the debug APK running uncompiled right after installation; aft
 `cmd package compile -m speed-profile` the first frame takes about 1.8 s. Build: 254 tests,
 0 failures (core 186, data 56, uicore 12).
 
+**Versions, UI tests and professional tracks (2026-10-30).** With Google Maven reachable,
+`:ui:desktopTest` ran here for the first time. The first run hung: four tests that show the home
+screen never became idle, because home polled the network in an endless loop on the composition
+clock (the test clock kept advancing). The poll now runs on `Dispatchers.Default`, and each UI test
+has a 3-minute timeout so a hang fails instead of blocking the build. Upgraded Kotlin 2.1.21 to
+2.2.21, Compose Multiplatform 1.7.3 to 1.9.3, AGP 8.7.3 to 8.13.2, coroutines to 1.10.2,
+serialization to 1.9.0. The UI tests then showed home failing on desktop with
+`NoClassDefFoundError: kotlinx/datetime/Instant`: Material3 1.9 on desktop brings kotlinx-datetime
+0.7.1, where `Instant` moved to `kotlin.time`; the project moved to 0.7.1 and `kotlin.time`. On the
+emulator the selected bottom-bar label changed colour after the upgrade (new Material default), now
+set explicitly. Credit-risk and legal tracks were added to the seven non-English languages;
+`CurriculumIntegrityTest` now checks the four tracks per language, their disclaimers and that their
+lessons stay out of the general path. Build: 264 tests, 0 failures (core 186, data 56, uicore 12,
+ui 10); debug APK 29.0 MB, release 6.35 MB unsigned (was 5.1 MB). Checked on the emulator: home,
+a lesson page, Practice, and the course list with the four Chinese tracks.
+
 | Module | Test class | Tests | Failures |
 |---|---|---|---|
 | core | AdapterTest (OpenAI, Azure, Gemini, Anthropic, DeepSeek, local; image parts per vendor; error classification; timeouts; no key leakage; Mistral, Groq, xAI, OpenRouter, Qwen and custom OpenAI-compatible endpoints; GPT-5/o-series parameters; model lists from OpenAI-compatible, Anthropic and Gemini) | 14 | 0 |

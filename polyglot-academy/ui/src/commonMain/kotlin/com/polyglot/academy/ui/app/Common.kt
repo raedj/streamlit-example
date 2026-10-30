@@ -87,7 +87,7 @@ fun AppBottomBar(current: Tab) {
             NavigationBarItem(
                 selected = tab == current, onClick = { if (tab != current) app.nav.switchTab(tab) },
                 icon = { Icon(icon, contentDescription = null) }, label = { Text(s[key], maxLines = 1) },
-                colors = NavigationBarItemDefaults.colors(selectedIconColor = c.onPrimaryContainer, indicatorColor = c.primaryContainer),
+                colors = NavigationBarItemDefaults.colors(selectedIconColor = c.onPrimaryContainer, selectedTextColor = c.textPrimary, indicatorColor = c.primaryContainer),
             )
         }
     }

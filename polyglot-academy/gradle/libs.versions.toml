@@ -1,16 +1,17 @@
 [versions]
-# Kotlin 2.1.x + Compose Multiplatform 1.7.3 are selected because CMP 1.7.3 is the newest
-# line whose desktop artifacts resolve from Maven Central alone (see docs/ARCHITECTURE_DECISIONS.md, ADR-002).
-kotlin = "2.1.21"
-compose-multiplatform = "1.7.3"
-coroutines = "1.9.0"
-serialization = "1.7.3"
-datetime = "0.6.1"
+# Upgraded 2026-10-30 from Kotlin 2.1.21 / CMP 1.7.3 / AGP 8.7.3 once Google Maven was reachable
+# (see docs/ARCHITECTURE_DECISIONS.md, ADR-002). Kotlin 2.4 / CMP 1.12 / AGP 9 exist but need Gradle 9
+# and a migration of the Android plugin setup; that is a separate step.
+kotlin = "2.2.21"
+compose-multiplatform = "1.9.3"
+coroutines = "1.10.2"
+serialization = "1.9.0"
+datetime = "0.7.1"
 ktor = "3.0.3"
 sqldelight = "2.0.2"
 junit = "4.13.2"
-# Android-only (requires Google Maven; not resolvable in the current build environment)
-agp = "8.7.3"
+# Android-only (requires Google Maven)
+agp = "8.13.2"
 androidx-activity = "1.9.3"
 androidx-core = "1.15.0"
 androidx-work = "2.10.0"

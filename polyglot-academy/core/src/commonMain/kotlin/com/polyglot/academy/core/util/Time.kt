@@ -1,17 +1,19 @@
 package com.polyglot.academy.core.util
 
-import kotlinx.datetime.Clock
-import kotlinx.datetime.Instant
 import kotlinx.datetime.LocalDate
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toLocalDateTime
 import kotlin.random.Random
+import kotlin.time.Clock
+import kotlin.time.ExperimentalTime
+import kotlin.time.Instant
 
 /** Injected time source so scheduling logic is deterministic in tests. */
 fun interface TimeSource {
     fun nowMillis(): Long
 
     companion object {
+        @OptIn(ExperimentalTime::class)
         val System = TimeSource { Clock.System.now().toEpochMilliseconds() }
     }
 }
@@ -25,6 +27,7 @@ class FixedTimeSource(var current: Long) : TimeSource {
 const val MILLIS_PER_DAY = 86_400_000L
 const val MILLIS_PER_MINUTE = 60_000L
 
+@OptIn(ExperimentalTime::class)
 fun Long.toLocalDate(zone: TimeZone = TimeZone.currentSystemDefault()): LocalDate =
     Instant.fromEpochMilliseconds(this).toLocalDateTime(zone).date
 

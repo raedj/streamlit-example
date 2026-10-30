@@ -13,6 +13,12 @@ until built where Google Maven is reachable. The desktop target doubles as a ver
 Maven Central. Kotlin 2.1.21 matches it. **Note:** at *runtime* every CMP release still needs
 `androidx.collection` and `androidx.lifecycle`, which are Google-only — so the UI could be
 compiled but not executed here. Upgrade to current CMP/Kotlin once Google Maven is available.
+**Update 2026-10-30:** Google Maven is reachable now. Upgraded to Kotlin 2.2.21, CMP 1.9.3,
+AGP 8.13.2, coroutines 1.10.2, serialization 1.9.0 and kotlinx-datetime 0.7.1 (Material3 1.9 on desktop
+requires it; `kotlinx.datetime.Instant` moved to `kotlin.time.Instant`), keeping Gradle 8.14.3. The newest lines
+(Kotlin 2.4, CMP 1.12, AGP 9) need Gradle 9 and a new Android plugin setup and were left for a
+separate step. One visible change after the upgrade: the selected bottom-bar label took a new
+default colour, now set explicitly.
 
 ## ADR-003 SQLDelight instead of Room
 **Decision:** SQLDelight 2.0.2 (Maven Central, multiplatform) with explicit `.sqm` migrations

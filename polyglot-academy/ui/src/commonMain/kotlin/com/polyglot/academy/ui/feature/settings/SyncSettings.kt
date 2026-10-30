@@ -33,8 +33,9 @@ import com.polyglot.academy.ui.i18n.LocalStrings
 import com.polyglot.academy.ui.i18n.Localizer
 import kotlinx.coroutines.launch
 
+@OptIn(kotlin.time.ExperimentalTime::class)
 private fun shortDateTime(millis: Long): String {
-    val t = kotlinx.datetime.Instant.fromEpochMilliseconds(millis).toLocalDateTime(kotlinx.datetime.TimeZone.currentSystemDefault())
+    val t = kotlin.time.Instant.fromEpochMilliseconds(millis).toLocalDateTime(kotlinx.datetime.TimeZone.currentSystemDefault())
     fun two(n: Int) = n.toString().padStart(2, '0')
     return "${t.year}-${two(t.monthNumber)}-${two(t.dayOfMonth)} ${two(t.hour)}:${two(t.minute)}"
 }
