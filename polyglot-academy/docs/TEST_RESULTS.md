@@ -103,6 +103,13 @@ as the learning language: levels screen, level 1, adding 10 words, a word page, 
 with its result, and the review queue showing word-list cards were checked by hand. Not checked: the
 English interface, other learning languages on the device, TalkBack, and large font sizes.
 
+**Small fixes K-24, K-25, K-26 (2026-10-30).** New `LessonFixesTest` (data, 5 tests): a resumed lesson
+keeps the results from before the interruption, attempts from an earlier completed run are ignored,
+the first-try score matches the player, the home card shows the next lesson's own minutes, and only
+audio-only exercises need a voice. `./gradlew build -x :ui:desktopTest`: 236 tests, 0 failures (core
+171, data 53, uicore 12). The APK was rebuilt and started on the emulator (home screen, no crash). Not
+checked on a device: the skip warning (the emulator has an English voice) and the resumed-lesson score.
+
 | Module | Test class | Tests | Failures |
 |---|---|---|---|
 | core | AdapterTest (OpenAI, Azure, Gemini, Anthropic, DeepSeek, local; image parts per vendor; error classification; timeouts; no key leakage; Mistral, Groq, xAI, OpenRouter, Qwen and custom OpenAI-compatible endpoints; GPT-5/o-series parameters; model lists from OpenAI-compatible, Anthropic and Gemini) | 14 | 0 |

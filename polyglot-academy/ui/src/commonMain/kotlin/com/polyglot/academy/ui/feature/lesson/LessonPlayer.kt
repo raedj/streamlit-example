@@ -44,7 +44,10 @@ import com.polyglot.academy.core.learning.DifficultyAdjuster
 import com.polyglot.academy.core.learning.DifficultyReason
 import com.polyglot.academy.core.model.Exercise
 import com.polyglot.academy.core.model.LanguageCode
+import com.polyglot.academy.core.model.Languages
 import com.polyglot.academy.core.model.Lesson
+import com.polyglot.academy.core.model.needsAudio
+import com.polyglot.academy.core.service.StudyService
 import com.polyglot.academy.core.model.SessionKind
 import com.polyglot.academy.core.model.StudySession
 import com.polyglot.academy.core.learning.AnswerChecker
@@ -106,10 +109,15 @@ private fun LessonPlayer(lessonId: String, restart: Boolean, onRetry: () -> Unit
     var summary by remember { mutableStateOf<Summary?>(null) }
     var confirmExit by remember { mutableStateOf(false) }
     var shownAt by remember(index) { mutableStateOf(services.clock.nowMillis()) }
+    // Null until checked; false when the device has no text-to-speech voice for the lesson language.
+    var voiceAvailable by remember { mutableStateOf<Boolean?>(null) }
 
     LaunchedEffect(lessonId) {
         val p = services.store.lessonProgress(lesson.language).first()[lesson.id]
         if (index < 0) index = if (restart) 0 else (p?.resumeIndex ?: 0).coerceIn(0, lesson.exercises.lastIndex)
+        // A resumed lesson is scored on the exercises answered before the interruption too.
+        if (index > 0) services.study.resumedFirstTries(lesson, index).forEach { (id, score) -> if (id !in firstTry) firstTry[id] = score }
+        voiceAvailable = services.platform.synthesizer.isLanguageAvailable(Languages.of(lesson.language).defaultVariant.localeTag)
         session = services.study.startSession(lesson.language, SessionKind.LESSON, lesson.id)
     }
     // Leaving mid-lesson keeps the resume point.
@@ -139,7 +147,9 @@ private fun LessonPlayer(lessonId: String, restart: Boolean, onRetry: () -> Unit
         if (answered) return
         answered = true
         lastAnswer = a
-        if (ex.id !in firstTry) firstTry[ex.id] = if (a.outcome.correct) a.outcome.score.coerceAtLeast(0.99).coerceAtMost(1.0) else a.outcome.score.coerceAtMost(0.6)
+        // Without a voice a listening exercise is only a guess, so it is neither scored nor recorded.
+        if (voiceAvailable == false && ex.needsAudio) return
+        if (ex.id !in firstTry) firstTry[ex.id] = StudyService.firstTryScore(a.outcome.correct, a.outcome.score)
         scope.launch {
             services.study.recordExercise(lesson.language, lesson.id, ex, a.outcome, a.userAnswer, services.clock.nowMillis() - shownAt, a.hintsUsed, a.promptText)
             // Adapt hints and explanation depth from recent performance in this skill.
@@ -184,6 +194,10 @@ private fun LessonPlayer(lessonId: String, restart: Boolean, onRetry: () -> Unit
                     val ex = lesson.exercises[index]
                     adaptMessage?.let { Banner(BannerKind.INFO, s[it]) }
                     val ctx = ExerciseContext(lesson.language, explain, speaker, hintsOn, enrollment?.showTransliteration != false, enrollment?.useTraditionalCharacters == true)
+                    if (voiceAvailable == false && ex.needsAudio) {
+                        Banner(BannerKind.WARNING, s.f(K.LISTEN_NO_VOICE, Labels.language(s, lesson.language)))
+                        if (!answered) SecondaryButton(s[K.LISTEN_SKIP], { advance() }, Modifier.fillMaxWidth())
+                    }
                     ExerciseView(ex, ctx, answered) { onAnswer(ex, it) }
                     val a = lastAnswer
                     if (answered && a != null) {

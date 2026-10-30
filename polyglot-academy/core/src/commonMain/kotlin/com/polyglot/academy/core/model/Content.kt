@@ -295,3 +295,13 @@ data class LearningTrack(
     val minimumLevel: CefrLevel,
     val disclaimer: Gloss?,
 )
+
+/**
+ * True when the exercise can only be answered by listening: dictation, and multiple choice with audio
+ * (its written prompt is hidden). Without a text-to-speech voice such exercises are skipped, not graded.
+ */
+val Exercise.needsAudio: Boolean get() = when (this) {
+    is Exercise.Dictation -> true
+    is Exercise.MultipleChoice -> audioText != null
+    else -> false
+}

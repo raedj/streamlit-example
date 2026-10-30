@@ -89,6 +89,7 @@ class DashboardService(
                 skillEstimates = estimates, lastSessionKind = sessions.maxByOrNull { it.startedAtMillis }?.kind,
                 minutesStudiedToday = minutesToday, dailyGoalMinutes = profile.dailyMinutes,
                 hasPlacement = enrollment != null, includeRelaxation = profile.includeRelaxation,
+                nextLessonMinutes = next?.estimatedMinutes ?: 8, interruptedLessonMinutes = interrupted?.estimatedMinutes ?: 5,
             ),
         )
         val summary = analytics.summarize(sessions, attempts, states, reviews.reviewCount(lang), lessonProgress.values.count { it.completions > 0 },

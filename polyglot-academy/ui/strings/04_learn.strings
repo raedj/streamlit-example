@@ -80,3 +80,5 @@ SUMMARY_RETRY ¦ Practise again ¦ تدرّب مرة أخرى
 SUMMARY_TIME ¦ Time: {0} ¦ الوقت: {0}
 ADAPT_HARDER ¦ You're doing well — upcoming questions will be a little harder. ¦ أداؤك جيد، وستصبح الأسئلة القادمة أصعب قليلًا.
 ADAPT_EASIER ¦ Let's slow down: we'll add hints and fuller explanations for a while. ¦ لنبطئ الوتيرة: سنضيف تلميحات وشروحًا أوفى لفترة.
+LISTEN_NO_VOICE ¦ There is no voice for {0} on this device, so this listening exercise is not scored. Skip it, or install a voice in the system text-to-speech settings. ¦ لا يوجد صوت للغة {0} على هذا الجهاز، لذلك لا يُحتسب هذا التمرين السمعي. تخطَّه، أو ثبّت صوتًا من إعدادات تحويل النص إلى كلام في النظام.
+LISTEN_SKIP ¦ Skip this exercise ¦ تخطَّ هذا التمرين

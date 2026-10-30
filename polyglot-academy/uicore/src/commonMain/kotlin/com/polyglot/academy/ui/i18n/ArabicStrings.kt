@@ -374,6 +374,8 @@ internal object ArabicStrings {
         K.SUMMARY_TIME to "الوقت: {0}",
         K.ADAPT_HARDER to "أداؤك جيد، وستصبح الأسئلة القادمة أصعب قليلًا.",
         K.ADAPT_EASIER to "لنبطئ الوتيرة: سنضيف تلميحات وشروحًا أوفى لفترة.",
+        K.LISTEN_NO_VOICE to "لا يوجد صوت للغة {0} على هذا الجهاز، لذلك لا يُحتسب هذا التمرين السمعي. تخطَّه، أو ثبّت صوتًا من إعدادات تحويل النص إلى كلام في النظام.",
+        K.LISTEN_SKIP to "تخطَّ هذا التمرين",
         K.PRACTICE_TITLE to "التدريب",
         K.PRACTICE_PHRASEBOOK to "دليل عبارات السفر",
         K.PRACTICE_PHRASEBOOK_SUB to "أكثر العبارات استخدامًا في الحياة اليومية والسفر",

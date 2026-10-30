@@ -374,6 +374,8 @@ internal object EnglishStrings {
         K.SUMMARY_TIME to "Time: {0}",
         K.ADAPT_HARDER to "You're doing well — upcoming questions will be a little harder.",
         K.ADAPT_EASIER to "Let's slow down: we'll add hints and fuller explanations for a while.",
+        K.LISTEN_NO_VOICE to "There is no voice for {0} on this device, so this listening exercise is not scored. Skip it, or install a voice in the system text-to-speech settings.",
+        K.LISTEN_SKIP to "Skip this exercise",
         K.PRACTICE_TITLE to "Practice",
         K.PRACTICE_PHRASEBOOK to "Travel phrasebook",
         K.PRACTICE_PHRASEBOOK_SUB to "The most-used phrases for daily life and travel",

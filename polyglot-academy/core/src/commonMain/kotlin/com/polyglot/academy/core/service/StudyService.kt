@@ -77,6 +77,21 @@ class StudyService(
         for (id in itemIds) if (reviews.state(id) == null) reviews.save(scheduler.newState(id, language, now), null)
     }
 
+    /**
+     * First-try scores of the exercises before [resumeIndex] in the interrupted run of [lesson], rebuilt
+     * from the stored attempts, so a resumed lesson is scored on all of its exercises. Attempts from
+     * earlier completed runs are ignored; within the interrupted run each exercise is answered once,
+     * so the latest attempt per exercise is the one that counts.
+     */
+    suspend fun resumedFirstTries(lesson: Lesson, resumeIndex: Int): Map<String, Double> {
+        val since = progress.lessonProgress(lesson.language).first()[lesson.id]?.lastCompletedAtMillis ?: 0L
+        val before = lesson.exercises.take(resumeIndex).map { it.id }.toSet()
+        return progress.attempts(lesson.language).first()
+            .filter { it.lessonId == lesson.id && it.exerciseId in before && it.answeredAtMillis > since }
+            .groupBy { it.exerciseId }
+            .mapValues { (_, attempts) -> attempts.maxBy { it.answeredAtMillis }.let { firstTryScore(it.correct, it.score) } }
+    }
+
     suspend fun saveResumePoint(lesson: Lesson, index: Int) {
         val existing = progress.lessonProgress(lesson.language).first()[lesson.id]
         progress.saveLessonProgress(
@@ -98,7 +113,12 @@ class StudyService(
         progress.lessonProgress(language).first().values.filter { it.resumeIndex > 0 }.maxByOrNull { it.lastCompletedAtMillis ?: 0 }?.lessonId
             ?.takeIf { Curriculum.of(language).lessonsById.containsKey(it) }
 
-    companion object { const val MAX_SECONDS_PER_ITEM = 120 }
+    companion object {
+        const val MAX_SECONDS_PER_ITEM = 120
+
+        /** What an exercise contributes to the lesson score: a correct answer counts as (almost) full, a wrong one at most 0.6. */
+        fun firstTryScore(correct: Boolean, score: Double): Double = if (correct) score.coerceIn(0.99, 1.0) else score.coerceAtMost(0.6)
+    }
 }
 
 /** Non-coercive achievements: celebrate real milestones; there are no penalties or guilt messages. */

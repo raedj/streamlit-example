@@ -168,6 +168,10 @@ data class RecommendationInput(
     val dailyGoalMinutes: Int,
     val hasPlacement: Boolean,
     val includeRelaxation: Boolean,
+    /** Planned length of the next lesson, so the home card shows the same minutes as the lesson page. */
+    val nextLessonMinutes: Int = 8,
+    /** Planned length of the interrupted lesson. */
+    val interruptedLessonMinutes: Int = 5,
 )
 
 /**
@@ -180,7 +184,7 @@ object NextActivityRecommender {
 
     fun recommend(i: RecommendationInput): Recommendation {
         if (!i.hasPlacement) return Recommendation(RecommendationKind.ASSESSMENT, null, RecommendationReason.NO_PLACEMENT_YET, estimatedMinutes = 10)
-        i.interruptedLessonId?.let { return Recommendation(RecommendationKind.CONTINUE_LESSON, it, RecommendationReason.LESSON_INTERRUPTED) }
+        i.interruptedLessonId?.let { return Recommendation(RecommendationKind.CONTINUE_LESSON, it, RecommendationReason.LESSON_INTERRUPTED, estimatedMinutes = i.interruptedLessonMinutes) }
         if (i.dueReviewCount >= REVIEW_THRESHOLD && i.lastSessionKind != SessionKind.REVIEW) {
             return Recommendation(RecommendationKind.REVIEW_DUE, null, RecommendationReason.MANY_REVIEWS_DUE,
                 estimatedMinutes = (i.dueReviewCount / 4).coerceIn(3, 15))
@@ -202,7 +206,7 @@ object NextActivityRecommender {
             }
             return Recommendation(RecommendationKind.CONVERSATION, null, RecommendationReason.APPLY_IN_CONVERSATION, Skill.SPEAKING, 8)
         }
-        i.nextLessonId?.let { return Recommendation(RecommendationKind.NEXT_LESSON, it, RecommendationReason.NEXT_IN_PATH, estimatedMinutes = 8) }
+        i.nextLessonId?.let { return Recommendation(RecommendationKind.NEXT_LESSON, it, RecommendationReason.NEXT_IN_PATH, estimatedMinutes = i.nextLessonMinutes) }
         if (i.dueReviewCount > 0) return Recommendation(RecommendationKind.REVIEW_DUE, null, RecommendationReason.MANY_REVIEWS_DUE)
         return Recommendation(RecommendationKind.CONVERSATION, null, RecommendationReason.APPLY_IN_CONVERSATION, Skill.SPEAKING, 8)
     }

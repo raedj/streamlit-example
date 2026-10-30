@@ -170,6 +170,10 @@ fun ListeningScreen() {
         Slider(rate, { rate = it }, valueRange = 0.5f..1.25f, steps = 2, modifier = Modifier.semantics { contentDescription = s[K.LISTENING_SPEED] })
         val item = items[index % items.size]
         val ctx = ExerciseContext(lang, explainFor(lang, app.profile.explanationLanguage), speaker, true, true, false)
+        val voice by androidx.compose.runtime.produceState<Boolean?>(null, lang) {
+            value = app.services.platform.synthesizer.isLanguageAvailable(com.polyglot.academy.core.model.Languages.of(lang).defaultVariant.localeTag)
+        }
+        if (voice == false) Banner(BannerKind.WARNING, s.f(K.LISTEN_NO_VOICE, Labels.language(s, lang)))
         PolyCard {
             Row(horizontalArrangement = Arrangement.spacedBy(12.dp), verticalAlignment = Alignment.CenterVertically) {
                 AudioButton(s[K.PLAY_AUDIO], { speaker.play(item.audioText, lang, rate) }, playing = speaker.playingText == item.audioText)
@@ -177,7 +181,8 @@ fun ListeningScreen() {
             }
             ExerciseView(item, ctx, answered) { a ->
                 answered = true; last = a
-                scope.launch { app.services.study.recordExercise(lang, null, item, a.outcome, a.userAnswer, 0, 0, a.promptText) }
+                // Without a voice the answer is a guess: it is not recorded, so it does not affect skill estimates.
+                if (voice != false) scope.launch { app.services.study.recordExercise(lang, null, item, a.outcome, a.userAnswer, 0, 0, a.promptText) }
             }
         }
         last?.let { a ->
