@@ -5,4 +5,10 @@
     <string name="reminder_channel">Study reminders</string>
     <string name="reminder_title">Time for a short practice?</string>
     <string name="reminder_body">A few minutes today keeps your words fresh.</string>
+    <string name="reminder_body_2">Five minutes of review is enough to keep going.</string>
+    <string name="reminder_body_3">A short lesson or a few cards: whatever fits your day.</string>
+    <plurals name="reminder_body_due">
+        <item quantity="one">%d word is ready for review.</item>
+        <item quantity="other">%d words are ready for review.</item>
+    </plurals>
 </resources>

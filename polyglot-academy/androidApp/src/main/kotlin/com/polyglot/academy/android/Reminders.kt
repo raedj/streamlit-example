@@ -47,7 +47,8 @@ object Reminders {
 
     private fun daysOf(s: String?) = s.orEmpty().split(',').mapNotNull { it.toIntOrNull() }.toSet()
 
-    fun post(context: Context, quietStart: Int, quietEnd: Int) {
+    /** Posts today's reminder; [dueReviews] makes the text concrete when words are waiting, otherwise the wording rotates by day. */
+    fun post(context: Context, quietStart: Int, quietEnd: Int, dueReviews: Int = 0) {
         val p = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
         val cal = Calendar.getInstance()
         // Calendar: Sunday=1..Saturday=7 → ISO Monday=1..Sunday=7
@@ -61,13 +62,17 @@ object Reminders {
         val n = NotificationCompat.Builder(context, CHANNEL)
             .setSmallIcon(R.drawable.ic_launcher)
             .setContentTitle(context.getString(R.string.reminder_title))
-            .setContentText(context.getString(R.string.reminder_body))
+            .setContentText(body(context, dueReviews, cal.get(Calendar.DAY_OF_YEAR)))
             .setContentIntent(open).setAutoCancel(true).build()
         if (Build.VERSION.SDK_INT < 33 || NotificationManagerCompat.from(context).areNotificationsEnabled()) {
             runCatching { NotificationManagerCompat.from(context).notify(REQUEST, n) }
         }
     }
 }
+
+internal fun body(context: Context, dueReviews: Int, dayOfYear: Int): String =
+    if (dueReviews > 0) context.resources.getQuantityString(R.plurals.reminder_body_due, dueReviews, dueReviews)
+    else context.getString(listOf(R.string.reminder_body, R.string.reminder_body_2, R.string.reminder_body_3)[dayOfYear % 3])
 
 class ReminderReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {
@@ -76,7 +81,10 @@ class ReminderReceiver : BroadcastReceiver() {
         app.appScope.launch {
             try {
                 val r = app.services.store.currentSettings().reminders
-                if (r.enabled) Reminders.post(context, r.quietHoursStart, r.quietHoursEnd)
+                if (r.enabled) {
+                    val due = runCatching { app.services.reviews.dueCount(app.services.store.currentProfile().activeLearningLanguage) }.getOrDefault(0)
+                    Reminders.post(context, r.quietHoursStart, r.quietHoursEnd, due)
+                }
             } finally { pending.finish() }
         }
     }
