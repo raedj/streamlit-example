@@ -143,7 +143,7 @@
     }
   },
   "wordlist_programme": {
-    "status": "in progress",
+    "status": "complete",
     "format": "content/wordlists/<lang>.{words,examples}.tsv -> tools/gen_wordlists.py -> core/.../wordlist/generated (see content/wordlists/README.md)",
     "ranking_source": "approximate (AI, general knowledge of spoken frequency); no licensed list verified yet — docs/CONTENT_SOURCES.md",
     "completed": {
@@ -262,16 +262,14 @@
           6,
           7,
           8,
-          9
+          9,
+          10
         ],
-        "last_rank": 2700
+        "last_rank": 3000
       }
     },
     "resume_at": {
-      "language": "ms",
-      "level": 10,
-      "next_rank": 2701,
-      "note": "Level 10 in progress (order: en, es, fr, zh, ar, tr, ur, ms); tools/scan_wordlist.py <lang> --level 10 must report 0 unknown before committing."
+      "note": "All ten levels (3000 words) are done for all eight languages."
     },
     "size_per_level": "about 41-59 KB compressed in the APK per level (measured: en 59 KB, es 43 KB, fr 41 KB; zh, ar, tr, ur and ms not measured)"
   }
