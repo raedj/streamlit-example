@@ -75,8 +75,8 @@ import com.polyglot.academy.ui.i18n.Localizer
 import com.polyglot.academy.ui.navigation.Route
 import com.polyglot.academy.ui.navigation.Tab
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.withContext
 import kotlinx.coroutines.launch
-import kotlinx.datetime.Instant
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toLocalDateTime
 
@@ -90,7 +90,11 @@ fun HomeScreen() {
         HomeData(app.services.dashboard.snapshot(), app.services.plans.today(), app.services.gamification.today(app.profile.activeLearningLanguage))
     }
     var offline by remember { mutableStateOf(false) }
-    LaunchedEffect(Unit) { while (true) { offline = app.services.platform.network() == NetworkState.OFFLINE; delay(15_000) } }
+    // Polled on a background dispatcher: an endless loop on the composition's clock keeps the screen
+    // from ever being idle, which made UI tests on the home screen hang.
+    LaunchedEffect(Unit) {
+        withContext(kotlinx.coroutines.Dispatchers.Default) { while (true) { offline = app.services.platform.network() == NetworkState.OFFLINE; delay(15_000) } }
+    }
     ScrollScreen(title = s[K.APP_NAME], showBack = false, tab = Tab.HOME, actions = {
         LanguageSwitcher()
         IconButton(onClick = { app.nav.push(Route.Search) }) { Icon(Icons.Filled.Search, s[K.SEARCH]) }
@@ -118,7 +122,8 @@ private fun LanguageSwitcher() {
 }
 
 private fun greetingKey(nowMillis: Long): K {
-    val hour = Instant.fromEpochMilliseconds(nowMillis).toLocalDateTime(TimeZone.currentSystemDefault()).hour
+    @OptIn(kotlin.time.ExperimentalTime::class)
+    val hour = kotlin.time.Instant.fromEpochMilliseconds(nowMillis).toLocalDateTime(TimeZone.currentSystemDefault()).hour
     return when (hour) { in 5..11 -> K.HOME_GREETING_MORNING; in 12..17 -> K.HOME_GREETING_AFTERNOON; else -> K.HOME_GREETING_EVENING }
 }
 

@@ -22,6 +22,9 @@ import kotlin.test.assertTrue
 
 @OptIn(ExperimentalTestApi::class)
 class UiFlowTest {
+    // A screen that never becomes idle (an endless animation or loop) fails the test instead of hanging the build.
+    @get:org.junit.Rule val timeout: org.junit.rules.Timeout = org.junit.rules.Timeout.seconds(180)
+
     private fun androidx.compose.ui.test.ComposeUiTest.waitForText(text: String, substring: Boolean = false, timeout: Long = 10_000) =
         waitUntil(timeoutMillis = timeout) { onAllNodesWithText(text, substring = substring).fetchSemanticsNodes().isNotEmpty() }
 
