@@ -252,7 +252,7 @@ fun LibraryScreen() {
             else -> {
                 if (bookmarks.isEmpty()) StateMessage(s[K.LIBRARY_TAB_BOOKMARKS], s[K.BOOKMARKS_EMPTY])
                 bookmarks.forEach { b ->
-                    val lesson = Curriculum.all.values.firstNotNullOfOrNull { it.lessonsById[b.referenceId] }
+                    val lesson = Curriculum.lesson(b.referenceId)
                     PolyCard(onClick = { if (b.kind == BookmarkKind.LESSON) app.nav.push(Route.LessonOverview(b.referenceId)) }) {
                         Text(lesson?.let { s.gloss(it.title) } ?: b.referenceId, style = MaterialTheme.typography.titleSmall)
                     }

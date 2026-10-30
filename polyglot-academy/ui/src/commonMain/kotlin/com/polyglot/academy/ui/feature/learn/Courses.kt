@@ -164,7 +164,7 @@ fun LessonOverviewScreen(lessonId: String) {
     val s = LocalStrings.current
     val c = PolyglotTheme.colors
     val scope = rememberCoroutineScope()
-    val lesson = Curriculum.all.values.firstNotNullOfOrNull { it.lessonsById[lessonId] }
+    val lesson = Curriculum.lesson(lessonId)
     if (lesson == null) {
         ScrollScreen(s[K.LEARN_TITLE]) { StateMessage(s[K.ERROR_TITLE], s[K.LESSON_NOT_FOUND], action = s[K.BACK], onAction = { app.nav.pop() }) }
         return

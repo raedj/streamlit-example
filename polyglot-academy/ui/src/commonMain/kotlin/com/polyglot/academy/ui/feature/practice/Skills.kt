@@ -117,7 +117,7 @@ fun GrammarTopicScreen(topicId: String) {
     val app = LocalApp.current
     val s = LocalStrings.current
     val c = PolyglotTheme.colors
-    val topic = Curriculum.all.values.firstNotNullOfOrNull { it.grammarById[topicId] }
+    val topic = Curriculum.grammar(topicId)
     val speaker = rememberSpeaker(s)
     ScrollScreen(topic?.let { s.gloss(it.title) } ?: s[K.GRAMMAR_TITLE]) {
         if (topic == null) { StateMessage(s[K.ERROR_TITLE], s[K.LESSON_NOT_FOUND]); return@ScrollScreen }

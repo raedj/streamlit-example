@@ -89,13 +89,35 @@ object Curriculum {
 
     fun phrasebook(code: LanguageCode, topic: String) = of(code).vocabulary.filter { it.topic == topic && it.id.removePrefix(code.tag + "_").startsWith("ev_") }
 
-    val all: Map<LanguageCode, LanguageCurriculum> by lazy {
-        listOf(EnglishCurriculum.build(), MandarinCurriculum.build(), SpanishCurriculum.build(), FrenchCurriculum.build(), ArabicCurriculum.build(),
-            TurkishCurriculum.build(), UrduCurriculum.build(), MalayCurriculum.build())
-            .map { c -> LanguageCurriculum(c.language, c.vocabulary, c.grammar, c.units, c.lessons, c.readings + GradedStories.of(c.language), c.scenarios,
-                c.assessment, c.tracks, c.dictations, c.writingPrompts) }
-            .associateBy { it.language }
+    // Each language is built on first use: building all eight at once took about 7 s on a slow phone.
+    private val built: Map<LanguageCode, Lazy<LanguageCurriculum>> = LanguageCode.entries.associateWith { code -> lazy { build(code) } }
+
+    private fun build(code: LanguageCode): LanguageCurriculum {
+        val c = when (code) {
+            LanguageCode.ENGLISH -> EnglishCurriculum.build()
+            LanguageCode.MANDARIN -> MandarinCurriculum.build()
+            LanguageCode.SPANISH -> SpanishCurriculum.build()
+            LanguageCode.FRENCH -> FrenchCurriculum.build()
+            LanguageCode.ARABIC -> ArabicCurriculum.build()
+            LanguageCode.TURKISH -> TurkishCurriculum.build()
+            LanguageCode.URDU -> UrduCurriculum.build()
+            LanguageCode.MALAY -> MalayCurriculum.build()
+        }
+        check(c.language == code)
+        return LanguageCurriculum(c.language, c.vocabulary, c.grammar, c.units, c.lessons, c.readings + GradedStories.of(c.language), c.scenarios,
+            c.assessment, c.tracks, c.dictations, c.writingPrompts)
     }
 
-    fun of(code: LanguageCode): LanguageCurriculum = all.getValue(code)
+    /** Every language's curriculum. This builds all eight, so use [of], [lesson], [grammar] or [reading] where possible. */
+    val all: Map<LanguageCode, LanguageCurriculum> get() = built.mapValues { it.value.value }
+
+    fun of(code: LanguageCode): LanguageCurriculum = built.getValue(code).value
+
+    /** Content ids start with the language tag ("zh_l_greetings"), so only that language is built. */
+    private fun <T> find(id: String, pick: (LanguageCurriculum) -> T?): T? =
+        LanguageCode.fromTag(id.substringBefore('_'))?.let { pick(of(it)) } ?: all.values.firstNotNullOfOrNull(pick)
+
+    fun lesson(id: String): Lesson? = find(id) { it.lessonsById[id] }
+    fun grammar(id: String): GrammarTopic? = find(id) { it.grammarById[id] }
+    fun reading(id: String): ReadingPassage? = find(id) { c -> c.readings.firstOrNull { it.id == id } }
 }

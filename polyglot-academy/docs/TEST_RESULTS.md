@@ -178,6 +178,25 @@ switching to Mandarin led to running every screen loader on `Dispatchers.Default
 afterwards, but the emulator stays slow (home after about 25 s in the debug build). Build: 250
 tests, 0 failures (core 182, data 56, uicore 12).
 
+**Writing practice for all characters, traditional forms, start-up time (2026-10-30).** Stroke data
+now also covers the traditional forms in the word list (2786 characters, none missing from Make Me a
+Hanzi). Writing practice offers the course characters or the new characters of any word-list level,
+in simplified or traditional form; hand-written breakdowns were added for the 29 traditional forms of
+course characters. New `WritingCharactersTest` (core, 4 tests): the course set, the traditional
+course set (every form has a breakdown, 謝 comes from 謝謝), the ten levels together cover every
+word-list character exactly once, and every item has a stroke count matching the data. The stroke
+count check against the data caught one wrong hand count (為: 12, not 9). On the emulator (Arabic
+interface): level 3 in traditional form (247 characters, first 掃 from 打掃), 掃 written from its
+medians as touch input ("shape matches", "all 11 strokes in the right order and direction"), and
+the traditional course set showing 謝 with 17 strokes and its parts 言 and 射.
+Start-up: timing the home loader on the emulator showed `Curriculum.of` building all eight
+curricula at once (7.1 s of 7.5 s). Each language is now built on first use, and lookups by id
+(lessons, grammar, stories) build only the language named in the id: the home loader went from
+7.5 s to 0.86 s with compiled code. The rest of the slow first start (about 16-21 s to the first
+frame) comes from the debug APK running uncompiled right after installation; after
+`cmd package compile -m speed-profile` the first frame takes about 1.8 s. Build: 254 tests,
+0 failures (core 186, data 56, uicore 12).
+
 | Module | Test class | Tests | Failures |
 |---|---|---|---|
 | core | AdapterTest (OpenAI, Azure, Gemini, Anthropic, DeepSeek, local; image parts per vendor; error classification; timeouts; no key leakage; Mistral, Groq, xAI, OpenRouter, Qwen and custom OpenAI-compatible endpoints; GPT-5/o-series parameters; model lists from OpenAI-compatible, Anthropic and Gemini) | 14 | 0 |

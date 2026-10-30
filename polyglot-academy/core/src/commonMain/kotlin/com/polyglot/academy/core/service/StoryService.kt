@@ -39,7 +39,7 @@ class StoryService(
         stories.stories(language).map { generated -> Curriculum.of(language).readings.sortedBy { it.level } + generated }
 
     suspend fun find(id: String): ReadingPassage? =
-        Curriculum.all.values.firstNotNullOfOrNull { c -> c.readings.firstOrNull { it.id == id } }
+        Curriculum.reading(id)
             ?: LanguageCode.entries.firstNotNullOfOrNull { l -> stories.stories(l).first().firstOrNull { it.id == id } }
 
     /** All vocabulary a story's words can be looked up in: built-in plus the learner's own. */

@@ -94,7 +94,7 @@ fun PlanScreen() {
 internal fun itemTitle(s: Localizer, item: PlanItem): String = when (item.kind) {
     PlanItemKind.REVIEW -> s[K.PLAN_ITEM_REVIEW]
     PlanItemKind.LESSON -> {
-        val title = item.referenceId?.let { id -> Curriculum.all.values.firstNotNullOfOrNull { it.lessonsById[id] } }?.let { s.gloss(it.title) } ?: ""
+        val title = item.referenceId?.let { id -> Curriculum.lesson(id) }?.let { s.gloss(it.title) } ?: ""
         s.f(K.PLAN_ITEM_LESSON, title)
     }
     PlanItemKind.SKILL_PRACTICE -> s.f(K.PLAN_ITEM_SKILL_PRACTICE, Labels.skill(s, item.skill ?: Skill.VOCABULARY))

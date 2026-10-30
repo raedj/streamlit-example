@@ -88,7 +88,7 @@ fun LessonPlayerScreen(lessonId: String, restart: Boolean) {
     // Word-list lessons are generated from a 3000-word list, so they are built off the main thread.
     val generated = WordLessons.isWordLesson(lessonId)
     val lesson = if (generated) produceState<Lesson?>(null, lessonId) { value = WordLessons.load(lessonId) }.value
-        else remember(lessonId) { Curriculum.all.values.firstNotNullOfOrNull { it.lessonsById[lessonId] } }
+        else remember(lessonId) { Curriculum.lesson(lessonId) }
     if (lesson == null) {
         if (generated && WordLessons.parse(lessonId) != null) ContentColumn(padding = PaddingValues(top = 48.dp)) { LoadingPlaceholder(s[K.LOADING]) }
         else StateMessage(s[K.ERROR_TITLE], s[K.LESSON_NOT_FOUND], action = s[K.BACK], onAction = { app.nav.pop() })
