@@ -219,4 +219,40 @@ class UiFlowTest {
         waitForText("محطة القطار")
         assertTrue(!runBlocking { app.store.materials(LanguageCode.ARABIC).first().single() }.cloudProcessingAllowed)
     }
+
+    @Test fun cameraPhotoIsTurnedCroppedAndImported() = runDesktopComposeUiTest(800, 1700) {
+        val ocr = object : com.polyglot.academy.core.service.DeviceOcr {
+            override val languages = setOf(LanguageCode.ARABIC)
+            override suspend fun recognize(page: com.polyglot.academy.core.service.OcrPage, language: LanguageCode, traditionalChinese: Boolean) = "مخرج"
+        }
+        val app = TestApp(deviceOcr = ocr); app.profile(learn = LanguageCode.ARABIC)
+        val camera = object : com.polyglot.academy.ui.app.PlatformUi by com.polyglot.academy.ui.platform.DesktopPlatformUi() {
+            override val canTakePhoto = true
+            override suspend fun takePhoto() = PhotoTestImages.jpeg(200, 100)
+        }
+        setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.ME), Route.Library), camera) }
+        waitForText("Take a photo")
+        onNodeWithText("Take a photo").performScrollTo().performClick()
+        waitForText("Crop the photo")
+        onNodeWithText("Rotate").performScrollTo().performClick()
+        // A quarter turn makes the landscape photo portrait.
+        waitUntil(timeoutMillis = 10_000) { com.polyglot.academy.ui.feature.me.PendingPhoto.bytes?.let { PhotoTestImages.size(it) } == (100 to 200) }
+        onNodeWithText("Use this photo").performScrollTo().performClick()
+        waitForText("Read on this device")
+        val material = runBlocking { app.store.materials(LanguageCode.ARABIC).first().single() }
+        assertEquals(com.polyglot.academy.core.model.MaterialType.IMAGE, material.type)
+        assertEquals(100 to 200, PhotoTestImages.size(com.polyglot.academy.ui.feature.me.PendingOcrFiles.get(material.id)!!.second))
+        assertTrue(com.polyglot.academy.ui.feature.me.PendingPhoto.bytes == null, "the photo is not kept after import")
+    }
+}
+
+object PhotoTestImages {
+    fun jpeg(width: Int, height: Int): ByteArray {
+        val surface = org.jetbrains.skia.Surface.makeRasterN32Premul(width, height)
+        surface.canvas.clear(0xFFFFFFFF.toInt())
+        surface.canvas.drawRect(org.jetbrains.skia.Rect.makeXYWH(0f, 0f, width / 2f, height / 2f), org.jetbrains.skia.Paint().apply { color = 0xFF000000.toInt() })
+        return surface.makeImageSnapshot().encodeToData(org.jetbrains.skia.EncodedImageFormat.JPEG, 92)!!.bytes
+    }
+
+    fun size(bytes: ByteArray): Pair<Int, Int> = org.jetbrains.skia.Image.makeFromEncoded(bytes).let { it.width to it.height }
 }

@@ -51,6 +51,7 @@ conversations / imported material / everything (incl. keys and reminder).
   never reads or writes secrets, and always switches cloud AI off and resets the accepted consent version,
   so a file from another device cannot silently re-enable cloud processing.
 - Permissions requested just in time (microphone, notifications); file access via the system picker (no storage permission).
+- Photos for import are taken by the system camera app, so the app declares no camera permission. The camera app writes one file into the app's cache (`cache/camera/`, shared through a FileProvider for that photo only); it is scaled to at most 2400 px, the full-size file is deleted at once, and the scaled copy stays in memory until the learner imports it or leaves the crop screen. Imported photos are stored like other imported material.
 - No analytics or crash reporting SDKs; all metrics stay local.
 - Speech-service key, WebDAV password and sync passphrase are kept in the secure store like API keys, never exported and removed by "delete everything" and "disconnect".
 - Azure region and realtime model ids are validated (letters/digits only) before they are put into a URL; WebDAV requires HTTPS (plain HTTP only to localhost, as in the network security config).

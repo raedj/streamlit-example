@@ -326,6 +326,19 @@ only the selected tab shows its label and the others keep their name for screen 
 no unnamed element). Not tested: real TalkBack reading order and gestures, Switch Access, a
 physical phone. Build: 285 tests, 0 failures.
 
+**Camera capture with crop (2026-10-31).** "Take a photo" in the library opens the system camera
+app (no camera permission); the photo returns upright and scaled, then a crop screen offers dragging
+the frame's corners or middle, rotating, "Whole photo", retaking and "Use this photo". Tests: crop
+frame touch, drag limits and pixel bounds; Skia turn-then-crop (sizes and where a dark corner lands);
+a UI flow test that takes, rotates and imports a photo and checks its size and that nothing stays in
+memory. On the emulator (AOSP Camera2 with its virtual scene): photo taken and confirmed, returned
+upright, the cache file deleted, both corners dragged, rotated clockwise, imported, and the material
+screen offered on-device reading; Back from the crop screen imports nothing. Found and fixed on the
+device: corners on the photo's edge could not be grabbed from outside (the touch area now reaches 24
+dp past the photo), and the date in the title was reordered in the Arabic interface (now isolated
+left to right). Not tested: a physical camera, text recognition of a real camera photo, process death
+while the camera app is open (the photo is then lost and the screen asks to take it again). Build: 290 tests, 0 failures (core 196, data 63, uicore 12, ui 19); release APK builds.
+
 | Module | Test class | Tests | Failures |
 |---|---|---|---|
 | core | AdapterTest (OpenAI, Azure, Gemini, Anthropic, DeepSeek, local; image parts per vendor; error classification; timeouts; no key leakage; Mistral, Groq, xAI, OpenRouter, Qwen and custom OpenAI-compatible endpoints; GPT-5/o-series parameters; model lists from OpenAI-compatible, Anthropic and Gemini) | 14 | 0 |

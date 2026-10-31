@@ -66,6 +66,18 @@ LIBRARY_TAB_NOTES ¦ Notes ¦ الملاحظات
 LIBRARY_TAB_BOOKMARKS ¦ Bookmarks ¦ المفضلة
 LIBRARY_IMPORT_FILE ¦ Import a file ¦ استيراد ملف
 LIBRARY_PASTE ¦ Paste text ¦ لصق نص
+PHOTO_TAKE ¦ Take a photo ¦ التقاط صورة
+PHOTO_TITLE ¦ Crop the photo ¦ قصّ الصورة
+PHOTO_CROP_HINT ¦ Drag the corners to keep only the text you want to read, or keep the whole photo. The photo stays on this device. ¦ اسحب الزوايا لتُبقي النصّ الذي تريد قراءته فقط، أو أبقِ الصورة كاملة. تبقى الصورة على هذا الجهاز.
+PHOTO_CROP_AREA ¦ Photo with a crop frame. Drag a corner to resize the frame, or its middle to move it. ¦ صورة عليها إطار القصّ. اسحب زاوية لتغيير حجم الإطار، أو وسطه لتحريكه.
+PHOTO_ROTATE ¦ Rotate ¦ تدوير
+PHOTO_WHOLE ¦ Whole photo ¦ الصورة كاملة
+PHOTO_RETAKE ¦ Retake ¦ إعادة الالتقاط
+PHOTO_USE ¦ Use this photo ¦ استخدام الصورة
+PHOTO_EDIT_FAILED ¦ The photo could not be edited. ¦ تعذّر تعديل الصورة.
+PHOTO_LOST_TITLE ¦ No photo ¦ لا توجد صورة
+PHOTO_LOST_BODY ¦ The photo was not kept, for example because the app was closed. Take it again. ¦ لم تُحفظ الصورة، ربّما لأنّ التطبيق أُغلق. التقطها مرّة أخرى.
+PHOTO_NAME ¦ Photo {0} ¦ صورة {0}
 LIBRARY_EMPTY_TITLE ¦ Learn from things you love ¦ تعلّم مما تحب
 LIBRARY_EMPTY_BODY ¦ Import an article, subtitles or your own notes. We'll find useful words and turn them into reviews. ¦ استورد مقالًا أو ترجمة أفلام أو ملاحظاتك، وسنستخرج الكلمات المفيدة ونحوّلها إلى مراجعات.
 LIBRARY_RIGHTS ¦ Only import material you have the right to use. Imported files are processed on this device and nothing is uploaded unless you allow it. ¦ لا تستورد إلا مواد يحق لك استخدامها. تُعالج الملفات المستوردة على هذا الجهاز ولا يُرفع شيء ما لم تسمح بذلك.

@@ -99,6 +99,6 @@ fun PhoneFrame(content: @Composable () -> Unit) {
 }
 
 @Composable
-fun AppUnderTest(app: TestApp, stack: List<Route>? = null) {
-    PhoneFrame { PolyglotApp(app.services, NoopPlatformUi, stack) }
+fun AppUnderTest(app: TestApp, stack: List<Route>? = null, platformUi: com.polyglot.academy.ui.app.PlatformUi = NoopPlatformUi) {
+    PhoneFrame { PolyglotApp(app.services, platformUi, stack) }
 }

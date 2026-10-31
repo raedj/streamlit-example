@@ -66,6 +66,7 @@ fun RouteContent(route: Route) {
         Route.Vocabulary -> VocabularyScreen()
         Route.Library -> LibraryScreen()
         is Route.Material -> MaterialScreen(route.materialId)
+        Route.PhotoImport -> com.polyglot.academy.ui.feature.me.PhotoImportScreen()
         Route.Search -> SearchScreen()
         Route.Plan -> PlanScreen()
         Route.Progress -> ProgressScreen()

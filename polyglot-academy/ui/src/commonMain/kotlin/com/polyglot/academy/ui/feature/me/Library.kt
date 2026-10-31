@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.CameraAlt
 import androidx.compose.material.icons.filled.ContentPaste
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.UploadFile
@@ -228,6 +229,10 @@ fun LibraryScreen() {
                     }, Modifier.weight(1f), icon = Icons.Filled.UploadFile)
                     PrimaryButton(s[K.LIBRARY_PASTE], { pasting = true }, Modifier.weight(1f), icon = Icons.Filled.ContentPaste)
                 }
+                // The system camera app takes the photo, so the app needs no camera permission.
+                if (app.platformUi.canTakePhoto) SecondaryButton(s[K.PHOTO_TAKE], {
+                    scope.launch { app.platformUi.takePhoto()?.let { PendingPhoto.bytes = it; app.nav.push(Route.PhotoImport) } }
+                }, Modifier.fillMaxWidth(), icon = Icons.Filled.CameraAlt)
                 progress?.let { f ->
                     Text(s.f(K.MATERIAL_PROCESSING, (f * 100).toInt()))
                     LinearProgressIndicator(progress = { f }, modifier = Modifier.fillMaxWidth(), drawStopIndicator = {})

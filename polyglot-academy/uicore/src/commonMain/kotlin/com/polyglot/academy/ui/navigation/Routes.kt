@@ -30,6 +30,8 @@ sealed interface Route {
     data object Vocabulary : Route
     data object Library : Route
     data class Material(val materialId: String) : Route
+    /** Cropping a photo just taken, before it is imported. */
+    data object PhotoImport : Route
     data object Search : Route
     data object Plan : Route
     data object Progress : Route
@@ -61,7 +63,7 @@ sealed interface Route {
             is ReadingPassage -> "passage|${r.passageId}"
             Listening -> "listening"; Writing -> "writing"; Pronunciation -> "pronunciation"; Tones -> "tones"; Characters -> "characters"; Relax -> "relax"
             SpeakingPath -> "speaking"; Phrasebook -> "phrasebook"
-            Vocabulary -> "vocab"; Library -> "library"
+            Vocabulary -> "vocab"; Library -> "library"; PhotoImport -> "photo"
             is Material -> "material|${r.materialId}"
             Search -> "search"; Plan -> "plan"; Progress -> "progress"
             is Assessment -> "assess|${r.language?.name.orEmpty()}|${r.fromOnboarding}"
@@ -92,7 +94,7 @@ sealed interface Route {
                 "passage" -> ReadingPassage(arg(1))
                 "listening" -> Listening; "writing" -> Writing; "pronunciation" -> Pronunciation; "tones" -> Tones; "characters" -> Characters; "relax" -> Relax
                 "speaking" -> SpeakingPath; "phrasebook" -> Phrasebook
-                "vocab" -> Vocabulary; "library" -> Library
+                "vocab" -> Vocabulary; "library" -> Library; "photo" -> PhotoImport
                 "material" -> Material(arg(1))
                 "search" -> Search; "plan" -> Plan; "progress" -> Progress
                 "assess" -> Assessment(arg(1).ifEmpty { null }?.let(LanguageCode::valueOf), arg(2) == "true")

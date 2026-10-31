@@ -13,6 +13,8 @@ import com.polyglot.academy.core.speech.UnavailableSpeechRecognizer
 import com.polyglot.academy.core.speech.UnavailableSpeechSynthesizer
 import com.polyglot.academy.ui.app.PickedFile
 import com.polyglot.academy.ui.app.PlatformUi
+import com.polyglot.academy.ui.feature.me.CropRect
+import androidx.compose.ui.graphics.toComposeImageBitmap
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.io.File
@@ -69,4 +71,30 @@ class DesktopPlatformUi(private val exportDir: File = File(System.getProperty("u
     }
     override fun openAppSettings() {}
     override val appVersion = "0.1.0-dev (desktop harness)"
+    override fun decodeImage(bytes: ByteArray): androidx.compose.ui.graphics.ImageBitmap? =
+        runCatching { org.jetbrains.skia.Image.makeFromEncoded(bytes).toComposeImageBitmap() }.getOrNull()
+    override suspend fun editImage(bytes: ByteArray, crop: CropRect, quarterTurns: Int): ByteArray? =
+        withContext(Dispatchers.Default) { runCatching { SkiaImages.edit(bytes, crop, quarterTurns) }.getOrNull() }
+}
+
+/** Turning and cropping with Skia, as the Android build does with Bitmap. */
+object SkiaImages {
+    fun edit(bytes: ByteArray, crop: CropRect, quarterTurns: Int): ByteArray? {
+        val image = org.jetbrains.skia.Image.makeFromEncoded(bytes)
+        val turns = ((quarterTurns % 4) + 4) % 4
+        val tw = if (turns % 2 == 1) image.height else image.width
+        val th = if (turns % 2 == 1) image.width else image.height
+        val (x, y, w, h) = crop.pixels(tw, th).toList()
+        val surface = org.jetbrains.skia.Surface.makeRasterN32Premul(w, h)
+        surface.canvas.apply {
+            translate(-x.toFloat(), -y.toFloat())
+            when (turns) {
+                1 -> { translate(tw.toFloat(), 0f); rotate(90f) }
+                2 -> { translate(tw.toFloat(), th.toFloat()); rotate(180f) }
+                3 -> { translate(0f, th.toFloat()); rotate(270f) }
+            }
+            drawImage(image, 0f, 0f)
+        }
+        return surface.makeImageSnapshot().encodeToData(org.jetbrains.skia.EncodedImageFormat.JPEG, 92)?.bytes
+    }
 }

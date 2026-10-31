@@ -3,22 +3,29 @@ package com.polyglot.academy.android
 import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
+import android.provider.MediaStore
 import android.provider.OpenableColumns
 import android.provider.Settings
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.compose.ui.graphics.ImageBitmap
+import androidx.compose.ui.graphics.asImageBitmap
 import androidx.core.content.ContextCompat
+import androidx.core.content.FileProvider
 import com.polyglot.academy.ui.app.PickedFile
 import com.polyglot.academy.ui.app.PlatformUi
 import com.polyglot.academy.ui.app.PolyglotApp
+import com.polyglot.academy.ui.feature.me.CropRect
 import kotlinx.coroutines.CompletableDeferred
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import java.io.File
 
 class MainActivity : ComponentActivity(), PlatformUi {
     private var permissionResult: CompletableDeferred<Boolean>? = null
@@ -29,6 +36,9 @@ class MainActivity : ComponentActivity(), PlatformUi {
     // The system picker grants access to the chosen file only; no storage permission is needed.
     private val pickLauncher = registerForActivityResult(ActivityResultContracts.OpenDocument()) { pickResult?.complete(it) }
     private val createLauncher = registerForActivityResult(ActivityResultContracts.CreateDocument("application/json")) { createResult?.complete(it) }
+    private var photoResult: CompletableDeferred<Boolean>? = null
+    // The system camera app writes the photo into the app's cache; no camera permission is declared or needed.
+    private val photoLauncher = registerForActivityResult(ActivityResultContracts.TakePicture()) { photoResult?.complete(it) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         enableEdgeToEdge()
@@ -86,5 +96,23 @@ class MainActivity : ComponentActivity(), PlatformUi {
 
     override val appVersion: String get() = packageManager.getPackageInfo(packageName, 0).versionName ?: "?"
     // Noto Nastaliq Urdu, SIL Open Font License 1.1 (docs/licenses/OFL-NotoNastaliqUrdu.txt).
-    override val urduFont = androidx.compose.ui.text.font.FontFamily(androidx.compose.ui.text.font.Font(R.font.noto_nastaliq_urdu))
+    override val canTakePhoto: Boolean get() =
+        packageManager.hasSystemFeature(PackageManager.FEATURE_CAMERA_ANY) &&
+            Intent(MediaStore.ACTION_IMAGE_CAPTURE).resolveActivity(packageManager) != null
+
+    override suspend fun takePhoto(): ByteArray? {
+        val file = withContext(Dispatchers.IO) { File(cacheDir, "camera").apply { mkdirs() }.resolve("photo.jpg").apply { delete() } }
+        val d = CompletableDeferred<Boolean>().also { photoResult = it }
+        photoLauncher.launch(FileProvider.getUriForFile(this, "$packageName.files", file))
+        val taken = d.await()
+        // The full-size camera file is removed at once; only the scaled copy stays, in memory.
+        return withContext(Dispatchers.Default) { try { if (taken) AndroidImages.fromCamera(file) else null } finally { file.delete() } }
+    }
+
+    override fun decodeImage(bytes: ByteArray): ImageBitmap? = BitmapFactory.decodeByteArray(bytes, 0, bytes.size)?.asImageBitmap()
+
+    override suspend fun editImage(bytes: ByteArray, crop: CropRect, quarterTurns: Int): ByteArray? =
+        withContext(Dispatchers.Default) { runCatching { AndroidImages.edit(bytes, crop, quarterTurns) }.getOrNull() }
+
+    override val urduFont =androidx.compose.ui.text.font.FontFamily(androidx.compose.ui.text.font.Font(R.font.noto_nastaliq_urdu))
 }

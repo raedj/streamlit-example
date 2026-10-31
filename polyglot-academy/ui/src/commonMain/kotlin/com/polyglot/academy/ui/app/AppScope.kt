@@ -32,6 +32,14 @@ interface PlatformUi {
     val appVersion: String
     /** Nastaliq font for Urdu learning content; null uses the platform default (Naskh-style). */
     val urduFont: androidx.compose.ui.text.font.FontFamily? get() = null
+    /** True when a camera app can take a photo for import. */
+    val canTakePhoto: Boolean get() = false
+    /** Takes a photo with the system camera app: JPEG bytes, upright and scaled for reading text, or null if cancelled. */
+    suspend fun takePhoto(): ByteArray? = null
+    /** Decodes an image for display, or null when the format is not readable. */
+    fun decodeImage(bytes: ByteArray): androidx.compose.ui.graphics.ImageBitmap? = null
+    /** Turns the image [quarterTurns] times clockwise, then keeps [crop] of the turned image; JPEG bytes, or null on failure. */
+    suspend fun editImage(bytes: ByteArray, crop: com.polyglot.academy.ui.feature.me.CropRect, quarterTurns: Int): ByteArray? = null
 }
 
 object NoopPlatformUi : PlatformUi {
