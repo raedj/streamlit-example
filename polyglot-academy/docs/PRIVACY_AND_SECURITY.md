@@ -23,6 +23,11 @@ on **and** the "Voice recordings" category (off by default) is allowed:
 device (PBKDF2-HMAC-SHA256, 210,000 iterations → AES-256-GCM, fresh salt and nonce per upload)
 with a passphrase that never leaves the device; the server sees only ciphertext. Device settings
 (privacy choices, theme, voice services) and all keys stay on each device.
+Background sync is off by default and can only be turned on once the connection is saved. When on,
+Android's job scheduler runs it about every 6 hours, only with a network (Wi-Fi or another unmetered
+network unless the learner allows mobile data) and not when the battery is low. It sends the same
+encrypted file as "Sync now", never replaces either copy when both changed, and stops when it is
+turned off or the device is disconnected.
 
 **AI-written stories** send only the chosen topic, level and a few known words (LESSON_CONTENT).
 
@@ -56,6 +61,7 @@ conversations / imported material / everything (incl. keys and reminder).
 - Speech-service key, WebDAV password and sync passphrase are kept in the secure store like API keys, never exported and removed by "delete everything" and "disconnect".
 - Azure region and realtime model ids are validated (letters/digits only) before they are put into a URL; WebDAV requires HTTPS (plain HTTP only to localhost, as in the network security config).
 - Sync downloads keep the device's own settings, so a synced file cannot switch on cloud AI or voice upload on another device.
+- Secret fields (API keys, passwords, the sync passphrase) are password fields for the keyboard too, so it shows no suggestions and does not learn what is typed (found on the emulator on 2026-10-31: the passphrase appeared in the suggestion bar).
 
 ## Privacy tests (automated, passing)
 Cloud off by default; sensitive categories blocked; per-item consent; outdated consent blocks;

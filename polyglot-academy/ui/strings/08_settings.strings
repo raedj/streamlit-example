@@ -233,6 +233,15 @@ SYNC_PASSPHRASE_SAVED ¦ Passphrase saved — enter a new one to replace it ¦ �
 SYNC_PASSPHRASE_HINT ¦ At least 10 characters. Use the same one on every device. If you lose it, the server copy cannot be read by anyone, including us. ¦ 10 أحرف على الأقل. استخدم العبارة نفسها على كل جهاز. إن فقدتها فلن يستطيع أحد قراءة النسخة المخزّنة، ولا نحن.
 SYNC_SAVED ¦ Saved. Secrets are stored encrypted on this device. ¦ تم الحفظ. البيانات السرية مخزّنة مشفّرة على هذا الجهاز.
 SYNC_NOW ¦ Sync now ¦ زامن الآن
+SYNC_AUTO ¦ Sync automatically ¦ مزامنة تلقائية
+SYNC_AUTO_BODY ¦ About every 6 hours, when the device is online and the battery is not low. Off by default. ¦ كل 6 ساعات تقريبًا، حين يكون الجهاز متصلًا والبطارية غير منخفضة. متوقّفة افتراضيًا.
+SYNC_AUTO_SETUP_FIRST ¦ Save the address, password and passphrase first. ¦ احفظ العنوان وكلمة المرور وعبارة المرور أولًا.
+SYNC_AUTO_WIFI ¦ Only on Wi-Fi ¦ عبر Wi-Fi فقط
+SYNC_AUTO_WIFI_BODY ¦ Not on mobile data or other metered networks. ¦ لا تُستخدم بيانات الجوّال ولا الشبكات المحدودة.
+SYNC_AUTO_LAST ¦ Last automatic sync ({0}): {1} ¦ آخر مزامنة تلقائية ({0}): {1}
+SYNC_AUTO_FAILED ¦ it did not complete and will be tried again later. Tap Sync now to see why. ¦ لم تكتمل، وستُعاد المحاولة لاحقًا. اضغط «زامن الآن» لمعرفة السبب.
+SYNC_AUTO_CONFLICT ¦ This device and the server both changed since the last sync. Automatic sync overwrites nothing: choose which copy to keep. ¦ تغيّر هذا الجهاز والنسخة المخزّنة كلاهما منذ آخر مزامنة. المزامنة التلقائية لا تستبدل شيئًا: اختر النسخة التي تُبقيها.
+SYNC_AUTO_CHOOSE ¦ Choose a copy ¦ اختر نسخة
 SYNC_LAST ¦ Last sync: {0} ¦ آخر مزامنة: {0}
 SYNC_NEVER ¦ Not synced yet ¦ لم تتم المزامنة بعد
 SYNC_DISCONNECT ¦ Disconnect this device ¦ افصل هذا الجهاز

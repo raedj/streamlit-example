@@ -174,6 +174,13 @@ data class SyncSettings(
     /** Fingerprints of the local data and of the server copy at the last successful sync. */
     val lastLocalFingerprint: String? = null,
     val lastRemoteFingerprint: String? = null,
+    /** Background sync; off until the learner turns it on. */
+    val autoSync: Boolean = false,
+    /** Background sync only on unmetered networks such as Wi-Fi. */
+    val autoSyncUnmeteredOnly: Boolean = true,
+    /** The last background attempt: a [com.polyglot.academy.core.service.SyncOutcome] name or "ERROR", and when. */
+    val lastAutoResult: String? = null,
+    val lastAutoAtMillis: Long? = null,
 )
 
 /** Optional cloud voice services. Keys are kept in the secure store, never here. */

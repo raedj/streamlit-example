@@ -534,6 +534,48 @@ class ServicesIntegrationTest {
         assertTrue(platform.secrets.get(com.polyglot.academy.core.service.SyncService.PASSPHRASE) == null)
     }
 
+    @Test fun automaticSyncIsOptInAndNeverResolvesAConflict() = runBlocking<Unit> {
+        fun review(store: SqlStore, id: String) = runBlocking {
+            store.upsertSession(com.polyglot.academy.core.model.StudySession(id, LanguageCode.ENGLISH, com.polyglot.academy.core.model.SessionKind.REVIEW, null, clock.nowMillis(), null, 120, 5, 5, true))
+        }
+        enroll()
+        review(store, "a1")
+        assertFalse(store.currentSettings().sync.autoSync, "off by default")
+        assertFalse(app.sync.setAutoSync(true, true), "cannot be turned on before the connection is set up")
+        assertFalse(store.currentSettings().sync.autoSync)
+        app.sync.configure("https://dav.example.com/files/me", "me", "pw", "a long passphrase").getOrThrow()
+        assertNull(app.sync.autoSync(), "configured but still off: nothing is sent")
+        assertNull(remote.file)
+
+        assertTrue(app.sync.setAutoSync(true, true))
+        assertEquals(com.polyglot.academy.core.service.SyncOutcome.UPLOADED, app.sync.autoSync())
+        assertEquals(com.polyglot.academy.core.service.SyncOutcome.UPLOADED.name, store.currentSettings().sync.lastAutoResult)
+        assertEquals(clock.nowMillis(), store.currentSettings().sync.lastAutoAtMillis)
+
+        // Another device and this one both change: the background run leaves both copies alone.
+        val storeB = SqlStore(createJvmDriver(), Dispatchers.IO, TimeZone.UTC, clock)
+        val appB = AppServices(storeB, FakePlatform(), HttpClient(), clock, SequentialIdGenerator(), providerFactory = { _, _ -> listOf(openai) }, syncRemoteFactory = { _, _, _ -> remote })
+        appB.sync.configure("https://dav.example.com/files/me", "me", "pw", "a long passphrase").getOrThrow()
+        assertEquals(com.polyglot.academy.core.service.SyncOutcome.DOWNLOADED, appB.sync.sync().getOrThrow())
+        review(storeB, "b1"); review(store, "a2")
+        assertEquals(com.polyglot.academy.core.service.SyncOutcome.UPLOADED, appB.sync.sync().getOrThrow())
+        val serverCopy = remote.file!!.copyOf()
+        assertEquals(com.polyglot.academy.core.service.SyncOutcome.CONFLICT, app.sync.autoSync())
+        assertEquals(com.polyglot.academy.core.service.SyncOutcome.CONFLICT.name, store.currentSettings().sync.lastAutoResult)
+        assertTrue(store.sessions(LanguageCode.ENGLISH).first().any { it.id == "a2" }, "this device keeps its progress")
+        assertTrue(serverCopy.contentEquals(remote.file!!), "the server copy is not replaced")
+
+        // A failing server is recorded, not thrown.
+        val failing = AppServices(store, platform, HttpClient(), clock, SequentialIdGenerator(), providerFactory = { _, _ -> listOf(openai) },
+            syncRemoteFactory = { _, _, _ -> throw com.polyglot.academy.core.sync.SyncError.Authentication })
+        assertNull(failing.sync.autoSync())
+        assertEquals(com.polyglot.academy.core.service.SyncService.AUTO_ERROR, store.currentSettings().sync.lastAutoResult)
+
+        // Disconnecting turns background sync off.
+        app.sync.disconnect()
+        assertFalse(store.currentSettings().sync.autoSync)
+    }
+
     @Test fun eachFeatureCanUseADifferentProvider() = runBlocking<Unit> {
         enroll(); enableCloud()
         val claude = ScriptedProvider(ProviderCatalog.ANTHROPIC, mutableListOf(Result.success("claude says hi")))

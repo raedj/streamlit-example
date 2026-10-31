@@ -339,6 +339,18 @@ dp past the photo), and the date in the title was reordered in the Arabic interf
 left to right). Not tested: a physical camera, text recognition of a real camera photo, process death
 while the camera app is open (the photo is then lost and the screen asks to take it again). Build: 290 tests, 0 failures (core 196, data 63, uicore 12, ui 19); release APK builds.
 
+**Optional background sync (2026-10-31).** Data test: off by default; cannot be turned on before the
+connection is saved; when on, a background run uploads and records its result; with changes on both
+sides it reports a conflict and leaves this device's data and the server file untouched; a failing
+server is recorded, not thrown; disconnecting turns it off. On the emulator, against a small local
+WebDAV test server (`http://10.0.2.2`, allowed only for the emulator host): the switch asks for the
+connection first; once on, `dumpsys jobscheduler` showed the job every 6 h (flex 1 h), persisted,
+battery-not-low and NOT_METERED; a forced run (`cmd jobscheduler run -f`) sent GET, MKCOL and PUT and
+the server held only the encrypted envelope; the page showed the result; turning the switch off
+removed the job. Found on the way and fixed: the keyboard showed the typed passphrase in its
+suggestion bar (secret fields are now password fields for the keyboard; checked on the emulator). Not
+tested: a run started by the system on its own schedule, a conflict on the device, a real Nextcloud. Build: 291 tests, 0 failures (core 196, data 64, uicore 12, ui 19); release APK builds.
+
 | Module | Test class | Tests | Failures |
 |---|---|---|---|
 | core | AdapterTest (OpenAI, Azure, Gemini, Anthropic, DeepSeek, local; image parts per vendor; error classification; timeouts; no key leakage; Mistral, Groq, xAI, OpenRouter, Qwen and custom OpenAI-compatible endpoints; GPT-5/o-series parameters; model lists from OpenAI-compatible, Anthropic and Gemini) | 14 | 0 |

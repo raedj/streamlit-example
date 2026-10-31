@@ -16,6 +16,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.polyglot.academy.core.service.ConflictChoice
 import com.polyglot.academy.core.service.SyncOutcome
+import com.polyglot.academy.core.service.SyncService
 import com.polyglot.academy.core.sync.SyncError
 import com.polyglot.academy.ui.app.LocalApp
 import com.polyglot.academy.ui.designsystem.AppTextField
@@ -101,8 +102,27 @@ internal fun SyncSection() {
         SwitchRow(s[K.SET_EXPORT_CONV], sync.includeConversations, { v -> scope.launch { app.services.sync.setIncluded(v, sync.includeNotes) } })
         SwitchRow(s[K.SET_EXPORT_NOTES], sync.includeNotes, { v -> scope.launch { app.services.sync.setIncluded(sync.includeConversations, v) } })
     }
+    if (app.services.platform.canSyncInBackground) PolyCard(contentPadding = 0.dp) {
+        SwitchRow(s[K.SYNC_AUTO], sync.autoSync, { v -> scope.launch { app.services.sync.setAutoSync(v, sync.autoSyncUnmeteredOnly) } },
+            subtitle = if (configured || sync.autoSync) s[K.SYNC_AUTO_BODY] else s[K.SYNC_AUTO_SETUP_FIRST], enabled = configured || sync.autoSync)
+        if (sync.autoSync) SwitchRow(s[K.SYNC_AUTO_WIFI], sync.autoSyncUnmeteredOnly, { v -> scope.launch { app.services.sync.setAutoSync(true, v) } },
+            subtitle = s[K.SYNC_AUTO_WIFI_BODY])
+    }
     SecondaryButton(s[K.SYNC_NOW], { run() }, Modifier.fillMaxWidth(), enabled = configured && !busy)
     Text(sync.lastSyncAtMillis?.let { s.f(K.SYNC_LAST, shortDateTime(it)) } ?: s[K.SYNC_NEVER], style = MaterialTheme.typography.bodySmall, color = c.textMuted)
+    // The last background attempt, shown only while it is newer than the last completed sync.
+    val autoAt = sync.lastAutoAtMillis
+    val autoResult = sync.lastAutoResult
+    if (autoAt != null && autoResult != null) when {
+        autoResult == SyncOutcome.CONFLICT.name && autoAt > (sync.lastSyncAtMillis ?: 0) -> {
+            Banner(BannerKind.WARNING, s[K.SYNC_AUTO_CONFLICT])
+            SecondaryButton(s[K.SYNC_AUTO_CHOOSE], { conflict = true }, Modifier.fillMaxWidth(), enabled = !busy)
+        }
+        autoResult == SyncService.AUTO_ERROR && autoAt > (sync.lastSyncAtMillis ?: 0) ->
+            Text(s.f(K.SYNC_AUTO_LAST, shortDateTime(autoAt), s[K.SYNC_AUTO_FAILED]), style = MaterialTheme.typography.bodySmall, color = c.textMuted)
+        autoResult != SyncOutcome.CONFLICT.name && autoResult != SyncService.AUTO_ERROR ->
+            Text(s.f(K.SYNC_AUTO_LAST, shortDateTime(autoAt), s[K.valueOf("SYNC_RESULT_$autoResult")]), style = MaterialTheme.typography.bodySmall, color = c.textMuted)
+    }
     message?.let { (k, t) -> Banner(k, t) }
     if (configured) QuietButton(s[K.SYNC_DISCONNECT], { scope.launch { app.services.sync.disconnect(); configured = false; message = null } })
     Text(s[K.SYNC_NOTE], style = MaterialTheme.typography.bodySmall, color = c.textMuted)

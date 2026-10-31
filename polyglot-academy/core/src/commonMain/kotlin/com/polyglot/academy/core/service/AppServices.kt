@@ -39,6 +39,9 @@ interface PlatformServices {
     /** Renders PDF pages as JPEG images for AI text recognition, or null when the platform has no renderer. */
     suspend fun renderPdfPages(pdf: ByteArray, maxPages: Int): List<OcrPage>? = null
 
+    /** True when the platform can run sync in the background (Android's job scheduler). */
+    val canSyncInBackground: Boolean get() = false
+
     /** Text recognition that runs entirely on the device, or null when the platform has none. */
     val deviceOcr: DeviceOcr? get() = null
 

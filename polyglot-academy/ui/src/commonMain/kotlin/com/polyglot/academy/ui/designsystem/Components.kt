@@ -474,6 +474,10 @@ fun AppTextField(
         supportingText = supporting?.let { { Text(it) } }, isError = isError, singleLine = singleLine, minLines = minLines,
         textStyle = textStyle, shape = RoundedCornerShape(PolyglotTheme.radii.md),
         visualTransformation = if (secret) androidx.compose.ui.text.input.PasswordVisualTransformation() else androidx.compose.ui.text.input.VisualTransformation.None,
+        // A password field for the keyboard too: no suggestions shown, nothing learned or saved by the keyboard.
+        keyboardOptions = if (secret) androidx.compose.foundation.text.KeyboardOptions(
+            keyboardType = androidx.compose.ui.text.input.KeyboardType.Password, autoCorrectEnabled = false,
+        ) else androidx.compose.foundation.text.KeyboardOptions.Default,
     )
 }
 

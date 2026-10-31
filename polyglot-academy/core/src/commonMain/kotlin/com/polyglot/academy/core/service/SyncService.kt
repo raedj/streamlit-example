@@ -8,6 +8,8 @@ import com.polyglot.academy.core.sync.SyncError
 import com.polyglot.academy.core.sync.SyncRemote
 import com.polyglot.academy.core.util.TimeSource
 import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.sync.Mutex
+import kotlinx.coroutines.sync.withLock
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonArray
 import kotlinx.serialization.json.jsonObject
@@ -27,6 +29,9 @@ class SyncService(
     private val clock: TimeSource,
     private val remoteFactory: (url: String, user: String, password: String) -> SyncRemote,
 ) {
+    // A background run and "Sync now" never overlap.
+    private val running = Mutex()
+
     suspend fun settings(): SyncSettings = store.currentSettings().sync
 
     suspend fun isConfigured(): Boolean {
@@ -51,26 +56,46 @@ class SyncService(
     suspend fun setIncluded(conversations: Boolean, notes: Boolean) =
         store.updateSettings { it.copy(sync = it.sync.copy(includeConversations = conversations, includeNotes = notes)) }
 
+    /** Turns background sync on or off; it can only be turned on once the connection is set up. */
+    suspend fun setAutoSync(enabled: Boolean, unmeteredOnly: Boolean): Boolean {
+        val on = enabled && isConfigured()
+        store.updateSettings { it.copy(sync = it.sync.copy(autoSync = on, autoSyncUnmeteredOnly = unmeteredOnly)) }
+        return on == enabled
+    }
+
+    /**
+     * One background attempt, or null when background sync is off or not set up. A conflict is never
+     * resolved here: both copies stay as they are until the learner chooses on the sync page.
+     */
+    suspend fun autoSync(): SyncOutcome? {
+        if (!settings().autoSync || !isConfigured()) return null
+        val result = sync()
+        store.updateSettings { it.copy(sync = it.sync.copy(lastAutoResult = result.getOrNull()?.name ?: AUTO_ERROR, lastAutoAtMillis = clock.nowMillis())) }
+        return result.getOrNull()
+    }
+
     /** Removes the connection and stored secrets from this device (the server copy is untouched). */
     suspend fun disconnect() {
         secrets.remove(PASSWORD); secrets.remove(PASSPHRASE)
         store.updateSettings { it.copy(sync = SyncSettings()) }
     }
 
-    suspend fun sync(choice: ConflictChoice? = null): Result<SyncOutcome> = runCatching {
+    suspend fun sync(choice: ConflictChoice? = null): Result<SyncOutcome> = running.withLock { runCatching { syncOnce(choice) } }
+
+    private suspend fun syncOnce(choice: ConflictChoice?): SyncOutcome {
         val s = settings()
         val password = secrets.get(PASSWORD); val passphrase = secrets.get(PASSPHRASE)
         if (s.serverUrl.isBlank() || password.isNullOrEmpty() || passphrase.isNullOrEmpty()) throw SyncError.NotConfigured
         val remote = remoteFactory(s.serverUrl, s.username, password)
         val local = store.exportJson(s.includeConversations, s.includeNotes)
         val localFp = SyncEnvelope.fingerprint(local)
-        val file = remote.read() ?: return@runCatching upload(remote, local, localFp, null, exists = false)
+        val file = remote.read() ?: return upload(remote, local, localFp, null, exists = false)
         val remoteJson = SyncEnvelope.open(file.bytes, passphrase)
         val remoteFp = SyncEnvelope.fingerprint(remoteJson)
-        if (remoteFp == localFp) { remember(localFp, remoteFp); return@runCatching SyncOutcome.UP_TO_DATE }
+        if (remoteFp == localFp) { remember(localFp, remoteFp); return SyncOutcome.UP_TO_DATE }
         val localChanged = localFp != s.lastLocalFingerprint && !isEmpty(local)
         val remoteChanged = remoteFp != s.lastRemoteFingerprint
-        when {
+        return when {
             localChanged && remoteChanged -> when (choice) {
                 ConflictChoice.KEEP_THIS_DEVICE -> upload(remote, local, localFp, file.etag, exists = true)
                 ConflictChoice.USE_SERVER -> download(remoteJson, remoteFp)
@@ -114,5 +139,6 @@ class SyncService(
         const val PASSWORD = "sync.webdav.password"
         const val PASSPHRASE = "sync.passphrase"
         const val MIN_PASSPHRASE = 10
+        const val AUTO_ERROR = "ERROR"
     }
 }

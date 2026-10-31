@@ -31,6 +31,12 @@ class PolyglotApplication : Application() {
                 BackupFiles.update(this@PolyglotApplication, if (enabled) store.exportJson(includeConversations = false, includeNotes = false) else null)
             }
         }
+        // Background sync follows the setting; turning it off or disconnecting cancels the job.
+        appScope.launch {
+            store.settings.map { it.sync.autoSync to it.sync.autoSyncUnmeteredOnly }.distinctUntilChanged().collect { (on, unmetered) ->
+                AutoSyncJob.schedule(this@PolyglotApplication, on, unmetered)
+            }
+        }
     }
 }
 

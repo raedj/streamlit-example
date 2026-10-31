@@ -53,6 +53,9 @@
             <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths" />
         </provider>
 
+        <!-- Optional background sync; scheduled only when the learner turns it on. -->
+        <service android:name=".AutoSyncJob" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false" />
+
         <receiver android:name=".ReminderReceiver" android:exported="false" />
         <receiver android:name=".BootReceiver" android:exported="false">
             <intent-filter><action android:name="android.intent.action.BOOT_COMPLETED" /></intent-filter>
