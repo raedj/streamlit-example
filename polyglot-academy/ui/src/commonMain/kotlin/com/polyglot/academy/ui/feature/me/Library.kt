@@ -15,7 +15,7 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Tab
-import androidx.compose.material3.TabRow
+import androidx.compose.material3.SecondaryTabRow
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -97,7 +97,7 @@ fun VocabularyScreen() {
     }
     val now = app.services.clock.nowMillis()
     ScrollScreen(s[K.VOCAB_TITLE]) {
-        TabRow(selectedTabIndex = tab, containerColor = c.background) {
+        SecondaryTabRow(selectedTabIndex = tab, containerColor = c.background) {
             Tab(tab == 0, { tab = 0 }, text = { Text(s[K.VOCAB_TAB_WORDS]) })
             Tab(tab == 1, { tab = 1 }, text = { Text(s[K.VOCAB_TAB_PHRASES]) })
         }
@@ -213,7 +213,7 @@ fun LibraryScreen() {
     }
 
     ScrollScreen(s[K.LIBRARY_TITLE]) {
-        TabRow(selectedTabIndex = tab, containerColor = c.background) {
+        SecondaryTabRow(selectedTabIndex = tab, containerColor = c.background) {
             Tab(tab == 0, { tab = 0 }, text = { Text(s[K.LIBRARY_TAB_MATERIALS]) })
             Tab(tab == 1, { tab = 1 }, text = { Text(s[K.LIBRARY_TAB_NOTES]) })
             Tab(tab == 2, { tab = 2 }, text = { Text(s[K.LIBRARY_TAB_BOOKMARKS]) })

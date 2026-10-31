@@ -255,6 +255,20 @@ enum is loaded through the Kotlin extension's class loader. Result: build and 26
 APK 39.0 MB, release 17.6 MB unsigned. On the emulator: home, the Urdu level 1 page with Nastaliq
 text, and on-device OCR of the Arabic test image (same text as before).
 
+**Deprecation warnings cleared (2026-10-31).** A full rebuild listed every compiler and build-script
+warning. Code: kotlinx-datetime `dayOfMonth`/`monthNumber` replaced by `day`/`month.number`
+(Progress, Speaking, Sync settings); `TabRow` replaced by `SecondaryTabRow`, which keeps the
+full-width indicator; a redundant `toLong()` (`toEpochDays()` returns `Long` in datetime 0.7) and an
+unused `Unit` removed; `-Xexpect-actual-classes` set on `core` for the `SyncCrypto` expect/actual
+object (still Beta in Kotlin). Build scripts: `val x by getting` replaced by `getByName(...)`, and the
+deprecated `compose.*` dependency shortcuts replaced by catalogue entries with the same versions they
+resolved to (runtime/foundation/ui/desktop/ui-test 1.12.2, material3 1.9.0, icons 1.7.3, which
+JetBrains no longer updates). UI tests moved to `androidx.compose.ui.test.v2.runDesktopComposeUiTest`
+(queued coroutines like the real app); all 10 still pass. Left on purpose: AGP's note that Android
+host tests are off for `commonTest`, since the shared tests already run on the desktop JVM. Build:
+265 tests, 0 failures; on the emulator the library tabs look and switch as before. The progress
+charts were not seen with data on the device (no activity in the active language).
+
 | Module | Test class | Tests | Failures |
 |---|---|---|---|
 | core | AdapterTest (OpenAI, Azure, Gemini, Anthropic, DeepSeek, local; image parts per vendor; error classification; timeouts; no key leakage; Mistral, Groq, xAI, OpenRouter, Qwen and custom OpenAI-compatible endpoints; GPT-5/o-series parameters; model lists from OpenAI-compatible, Anthropic and Gemini) | 14 | 0 |

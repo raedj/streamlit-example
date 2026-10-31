@@ -62,7 +62,7 @@ fun ScrollScreen(
     val app = LocalApp.current
     val s = LocalStrings.current
     ScreenScaffold(
-        title = title, onBack = if (showBack) ({ app.nav.pop(); Unit }) else null, backLabel = s[K.BACK], actions = actions,
+        title = title, onBack = if (showBack) ({ app.nav.pop() }) else null, backLabel = s[K.BACK], actions = actions,
         bottomBar = { if (tab != null) AppBottomBar(tab) },
     ) { padding ->
         Column(Modifier.fillMaxSize().padding(padding).verticalScroll(rememberScrollState())) {

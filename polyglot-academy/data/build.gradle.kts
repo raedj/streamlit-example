@@ -28,9 +28,7 @@ kotlin {
             implementation(kotlin("test"))
             implementation(libs.kotlinx.coroutines.test)
         }
-        val desktopMain by getting {
-            dependencies { implementation(libs.sqldelight.sqlite.driver) }
-        }
+        getByName("desktopMain").dependencies { implementation(libs.sqldelight.sqlite.driver) }
         if (androidEnabled) {
             getByName("androidMain").dependencies { implementation(libs.sqldelight.android.driver) }
         }

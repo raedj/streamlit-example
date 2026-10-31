@@ -13,6 +13,8 @@ if (androidEnabled) {
 }
 
 kotlin {
+    // SyncCrypto is an expect/actual object, which Kotlin still marks as Beta.
+    compilerOptions { freeCompilerArgs.add("-Xexpect-actual-classes") }
     jvm("desktop") {
         compilerOptions { jvmTarget.set(JvmTarget.JVM_17) }
     }
@@ -31,9 +33,7 @@ kotlin {
             implementation(libs.kotlinx.coroutines.test)
             implementation(libs.ktor.client.mock)
         }
-        val desktopMain by getting {
-            dependencies { implementation(libs.ktor.client.okhttp) }
-        }
+        getByName("desktopMain").dependencies { implementation(libs.ktor.client.okhttp) }
         if (androidEnabled) {
             getByName("androidMain").dependencies { implementation(libs.ktor.client.okhttp) }
         }

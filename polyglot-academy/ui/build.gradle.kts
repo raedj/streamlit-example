@@ -23,32 +23,28 @@ kotlin {
         commonMain.dependencies {
             api(project(":data"))
             api(project(":uicore"))
-            api(compose.runtime)
-            api(compose.foundation)
-            api(compose.material3)
-            api(compose.materialIconsExtended)
-            api(compose.ui)
+            api(libs.compose.runtime)
+            api(libs.compose.foundation)
+            api(libs.compose.material3)
+            api(libs.compose.material.icons.extended)
+            api(libs.compose.ui)
         }
         commonTest.dependencies {
             implementation(kotlin("test"))
             implementation(libs.kotlinx.coroutines.test)
         }
-        val desktopMain by getting {
-            dependencies {
-                implementation(compose.desktop.common)
-                implementation(libs.kotlinx.coroutines.swing)
-            }
+        getByName("desktopMain").dependencies {
+            implementation(libs.compose.desktop)
+            implementation(libs.kotlinx.coroutines.swing)
         }
         if (androidEnabled) {
             getByName("androidMain").dependencies { implementation(libs.androidx.activity.compose) }
         }
-        val desktopTest by getting {
-            dependencies {
-                implementation(libs.sqldelight.sqlite.driver)
-                implementation(compose.desktop.currentOs)
-                implementation(compose.desktop.uiTestJUnit4)
-                implementation(libs.junit)
-            }
+        getByName("desktopTest").dependencies {
+            implementation(libs.sqldelight.sqlite.driver)
+            implementation(compose.desktop.currentOs)
+            implementation(libs.compose.ui.test.junit4)
+            implementation(libs.junit)
         }
     }
 }

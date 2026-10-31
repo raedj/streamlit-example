@@ -1,5 +1,6 @@
 package com.polyglot.academy.ui.feature.practice
 
+import kotlinx.datetime.number
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -148,7 +149,7 @@ private fun SpeakingStats(r: FluencyReport) {
     if (r.weekly.any { it.learnerTurns > 0 }) {
         PolyCard {
             Text(s[K.SPEAKING_WEEKLY], style = MaterialTheme.typography.titleSmall)
-            BarChart(r.weekly.map { ChartPoint("${it.weekStart.dayOfMonth}/${it.weekStart.monthNumber}", it.medianWords.toDouble()) },
+            BarChart(r.weekly.map { ChartPoint("${it.weekStart.day}/${it.weekStart.month.number}", it.medianWords.toDouble()) },
                 s.f(K.SPEAKING_WEEKLY_DESC, r.weekly.joinToString { "${it.weekStart}: ${it.medianWords}" }))
         }
     }

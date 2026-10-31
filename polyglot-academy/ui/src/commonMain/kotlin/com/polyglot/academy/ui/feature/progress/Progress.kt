@@ -1,5 +1,6 @@
 package com.polyglot.academy.ui.feature.progress
 
+import kotlinx.datetime.number
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.material.icons.Icons
@@ -86,7 +87,7 @@ fun ProgressScreen() {
             ChipGroup(listOf(7, 28), setOf(range), { if (it == 7) s[K.PROGRESS_RANGE_7] else s[K.PROGRESS_RANGE_28] }, { range = it })
             PolyCard {
                 val values = if (range == 7) sum.observedMinutesByDay else data.minutes28
-                val points = values.map { ChartPoint(if (range == 7) Labels.dayInitial(s, it.date.dayOfWeek.ordinal + 1) else it.date.dayOfMonth.toString(), it.value) }
+                val points = values.map { ChartPoint(if (range == 7) Labels.dayInitial(s, it.date.dayOfWeek.ordinal + 1) else it.date.day.toString(), it.value) }
                 val desc = s.f(K.PROGRESS_TIME_DESC, values.joinToString { "${it.date} ${it.value.toInt()}" })
                 if (range == 7) BarChart(points, desc) else BarChart(points.filterIndexed { i, _ -> i % 2 == 1 || i == points.lastIndex }, desc)
             }
@@ -94,13 +95,13 @@ fun ProgressScreen() {
             SectionHeader(s[K.PROGRESS_CONSISTENCY])
             PolyCard {
                 val active = data.minutes28.count { it.value > 0 }
-                CalendarHeatmap(data.minutes28.map { ChartPoint(it.date.dayOfMonth.toString(), it.value) }, s.f(K.PROGRESS_CONSISTENCY_DESC, active))
+                CalendarHeatmap(data.minutes28.map { ChartPoint(it.date.day.toString(), it.value) }, s.f(K.PROGRESS_CONSISTENCY_DESC, active))
             }
 
             SectionHeader(s[K.PROGRESS_ACCURACY])
             PolyCard {
                 if (sum.observedAccuracyByWeek.isEmpty()) Text(s[K.NOT_ENOUGH_DATA], color = c.textSecondary)
-                else LineChart(sum.observedAccuracyByWeek.map { ChartPoint("${it.date.dayOfMonth}/${it.date.monthNumber}", it.value) },
+                else LineChart(sum.observedAccuracyByWeek.map { ChartPoint("${it.date.day}/${it.date.month.number}", it.value) },
                     s.f(K.PROGRESS_ACCURACY_DESC, sum.observedAccuracyByWeek.joinToString { "${it.date}: ${(it.value * 100).toInt()}%" }))
             }
 

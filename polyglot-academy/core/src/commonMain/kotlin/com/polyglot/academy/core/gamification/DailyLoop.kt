@@ -87,7 +87,7 @@ object Quests {
     fun forDay(date: LocalDate, language: LanguageCode, day: DayActivity, goalXp: Int): List<Quest> {
         val pool = listOf(QuestKind.COMPLETE_LESSON, QuestKind.REVIEW_WORDS, QuestKind.CORRECT_ANSWERS, QuestKind.CONVERSATION_TURNS,
             QuestKind.SPEAK_ALOUD, QuestKind.READ_STORY, QuestKind.PRONUNCIATION)
-        val seed = (date.toEpochDays() * 31 + language.ordinal * 7).toLong()
+        val seed = date.toEpochDays() * 31 + language.ordinal * 7
         val picked = pool.sortedBy { k -> mix(seed + k.ordinal) }.take(2)
         return (listOf(QuestKind.EARN_XP) + picked).map { k -> quest(k, day, goalXp) }
     }
