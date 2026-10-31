@@ -1,0 +1,176 @@
+TUTORS_TITLE ¦ Tutors ¦ المعلّمون
+TUTORS_FOR ¦ Tutors for {0} ¦ معلّمو اللغة {0}
+TUTORS_ALL_LANGUAGES ¦ Teaches any language ¦ يعلّم أي لغة
+TUTOR_LEVELS ¦ Levels {0}–{1} ¦ المستويات {0}–{1}
+TUTOR_STYLE_SUPPORTIVE ¦ Supportive ¦ داعم
+TUTOR_STYLE_STRUCTURED ¦ Structured ¦ منهجي
+TUTOR_STYLE_ROLE_PLAY ¦ Role-play ¦ تمثيل أدوار
+TUTOR_STYLE_SOCRATIC ¦ Guiding questions ¦ أسئلة موجّهة
+TUTOR_STYLE_STORYTELLING ¦ Storytelling ¦ سرد القصص
+TUTOR_STYLE_PROFESSIONAL ¦ Professional ¦ مهني
+TUTOR_STYLE_CONFIDENCE_COACH ¦ Confidence coach ¦ مدرّب ثقة
+TUTOR_CORR_RECAST ¦ Corrects by rephrasing naturally ¦ يصحّح بإعادة الصياغة بشكل طبيعي
+TUTOR_CORR_PROMPT_SELF_CORRECTION ¦ Lets you find the error first ¦ يتيح لك اكتشاف الخطأ أولًا
+TUTOR_CORR_EXPLICIT_WITH_RULE ¦ Explains the rule behind each correction ¦ يشرح القاعدة وراء كل تصحيح
+TUTOR_FOCUS ¦ Focus ¦ التركيز
+TUTOR_SELECT ¦ Choose {0} ¦ اختر {0}
+TUTOR_SELECTED ¦ Your tutor ¦ معلّمك
+TUTOR_START ¦ Free conversation ¦ محادثة حرّة
+TUTOR_SCENARIOS ¦ Role-play scenarios ¦ مواقف تمثيل الأدوار
+TUTOR_SCENARIO_GOAL ¦ Your goal: {0} ¦ هدفك: {0}
+TUTOR_SETTINGS ¦ Tutor settings ¦ إعدادات المعلّم
+TUTOR_CORRECTION_LEVEL ¦ Correction intensity ¦ شدة التصحيح
+TUTOR_SHOW_TRANSLATIONS ¦ Show translations by default ¦ إظهار الترجمات افتراضيًا
+TUTOR_AVATAR_NOTE ¦ Tutors are original characters with animated 2D portraits. ¦ المعلّمون شخصيات أصلية بصور ثنائية الأبعاد متحركة.
+CONV_TITLE ¦ Conversation with {0} ¦ محادثة مع {0}
+CONV_ENGINE_AI ¦ AI tutor via {0} ¦ معلّم ذكاء اصطناعي عبر {0}
+CONV_ENGINE_AI_CLOUD ¦ Cloud: your messages are sent to {0}. ¦ سحابي: تُرسل رسائلك إلى {0}.
+CONV_ENGINE_AI_LOCAL ¦ Runs on your own server or device. ¦ يعمل على خادمك أو جهازك.
+CONV_ENGINE_OFFLINE ¦ Offline practice partner — scripted, not AI ¦ شريك تدريب دون اتصال — نص مُعدّ مسبقًا وليس ذكاءً اصطناعيًا
+OFFLINE_REASON_NO_PROVIDER_CONFIGURED ¦ No AI provider is set up. ¦ لم يُهيأ أي مزوّد للذكاء الاصطناعي.
+OFFLINE_REASON_CLOUD_DISABLED_BY_PRIVACY ¦ Cloud AI is off in your privacy settings. ¦ الذكاء الاصطناعي السحابي متوقف في إعدادات خصوصيتك.
+OFFLINE_REASON_OFFLINE_NETWORK ¦ You're offline. ¦ أنت غير متصل.
+OFFLINE_REASON_PROVIDER_FAILED ¦ The AI provider didn't respond. ¦ لم يستجب مزوّد الذكاء الاصطناعي.
+OFFLINE_REASON_USER_CHOSE_OFFLINE ¦ You chose offline practice. ¦ اخترت التدريب دون اتصال.
+CONV_SET_UP_AI ¦ Set up AI ¦ إعداد الذكاء الاصطناعي
+CONV_TRY_AI_AGAIN ¦ Try AI again ¦ جرّب الذكاء الاصطناعي مجددًا
+CONV_STATE_READY ¦ Your turn ¦ دورك
+CONV_STATE_LISTENING ¦ Listening — microphone on ¦ يستمع — الميكروفون يعمل
+CONV_STATE_PROCESSING ¦ {0} is thinking… ¦ {0} يفكّر…
+CONV_STATE_SPEAKING ¦ {0} is speaking ¦ {0} يتحدث
+CONV_STATE_PAUSED ¦ Paused ¦ متوقف مؤقتًا
+CONV_STATE_COMPLETED ¦ Conversation ended ¦ انتهت المحادثة
+CONV_MIC_START ¦ Start speaking ¦ ابدأ التحدث
+CONV_MIC_STOP ¦ Stop and send ¦ توقف وأرسل
+CONV_MIC_UNAVAILABLE ¦ Microphone unavailable ¦ الميكروفون غير متاح
+CONV_CANCEL_RECORDING ¦ Cancel recording ¦ إلغاء التسجيل
+CONV_STOP_SPEAKING ¦ Stop audio ¦ إيقاف الصوت
+CONV_TYPE ¦ Type your reply ¦ اكتب ردّك
+CONV_SEND ¦ Send ¦ إرسال
+CONV_HINT ¦ Hint: {0} ¦ تلميح: {0}
+CONV_SHOW_EXAMPLE ¦ Show an example answer ¦ أظهر إجابة نموذجية
+CONV_EXAMPLE ¦ Example: {0} ¦ مثال: {0}
+CONV_YOU ¦ You ¦ أنت
+CONV_CORRECTION ¦ Correction ¦ تصحيح
+CONV_STYLISTIC ¦ Optional alternative ¦ بديل اختياري
+CONV_ALTERNATIVE ¦ Another way to say it ¦ طريقة أخرى للقول
+CONV_VOCAB ¦ Useful words ¦ كلمات مفيدة
+CONV_REPLAY ¦ Replay ¦ إعادة التشغيل
+CONV_SAVE ¦ Save phrase ¦ حفظ العبارة
+CONV_SAVE_TITLE ¦ Save to your phrasebook ¦ احفظ في دفتر عباراتك
+CONV_SAVE_PHRASE ¦ Phrase ¦ العبارة
+CONV_SAVE_MEANING ¦ Meaning (in your words) ¦ المعنى (بكلماتك)
+CONV_SPOKEN ¦ spoken ¦ منطوق
+CONV_SPEED ¦ Voice speed ¦ سرعة الصوت
+CONV_END ¦ End ¦ إنهاء
+CONV_END_TITLE ¦ End this conversation? ¦ هل تريد إنهاء هذه المحادثة؟
+CONV_END_BODY ¦ You'll see a summary with corrections to review. ¦ سترى ملخصًا يتضمن التصحيحات للمراجعة.
+CONV_SUMMARY_TITLE ¦ Conversation summary ¦ ملخّص المحادثة
+CONV_SUMMARY_TURNS ¦ You replied {0} time|You replied {0} times ¦ لم ترد|رددت مرة واحدة|رددت مرتين|رددت {0} مرات|رددت {0} مرة|رددت {0} مرة
+CONV_SUMMARY_DURATION ¦ Duration: {0} ¦ المدة: {0}
+CONV_SUMMARY_CORRECTIONS ¦ Corrections to review ¦ تصحيحات للمراجعة
+CONV_SUMMARY_NO_CORRECTIONS ¦ No corrections this time. ¦ لا تصحيحات هذه المرة.
+CONV_SUMMARY_SAVED ¦ {0} phrase saved|{0} phrases saved ¦ لم تُحفظ عبارات|حُفظت عبارة واحدة|حُفظت عبارتان|حُفظت {0} عبارات|حُفظت {0} عبارة|حُفظت {0} عبارة
+CONV_SUMMARY_SCENARIO_DONE ¦ Scenario completed ¦ اكتمل الموقف
+FREE_TALK_TITLE ¦ Talk about anything ¦ تحدّث في أي موضوع
+FREE_TALK_BODY ¦ Choose a topic or type your own. Your AI tutor talks with you about it, corrects your mistakes as you go and adapts to your level. ¦ اختر موضوعًا أو اكتب موضوعك. يتحدث معك معلّمك الذكي فيه، ويصحّح أخطاءك أثناء الحديث، ويتكيّف مع مستواك.
+FREE_TALK_TOPIC_LABEL ¦ Topic (optional) ¦ الموضوع (اختياري)
+FREE_TALK_START ¦ Start conversation ¦ ابدأ المحادثة
+FREE_TALK_NOTE ¦ Needs an AI provider (OpenAI, Gemini, Claude, DeepSeek or your own local model) in Settings. Without one, the offline tutor follows a short practice script. ¦ يتطلب مزوّد ذكاء اصطناعي (OpenAI أو Gemini أو Claude أو DeepSeek أو نموذجك المحلي) في الإعدادات. دونه يتبع المعلّم غير المتصل نصًّا تدريبيًا قصيرًا.
+FREE_TOPIC_1 ¦ My weekend ¦ عطلة نهاية الأسبوع
+FREE_TOPIC_2 ¦ Travel plans ¦ خطط السفر
+FREE_TOPIC_3 ¦ Food and cooking ¦ الطعام والطبخ
+FREE_TOPIC_4 ¦ Films and series ¦ الأفلام والمسلسلات
+FREE_TOPIC_5 ¦ Sport ¦ الرياضة
+FREE_TOPIC_6 ¦ My job ¦ عملي
+FREE_TOPIC_7 ¦ Technology ¦ التكنولوجيا
+FREE_TOPIC_8 ¦ Culture and traditions ¦ الثقافة والتقاليد
+CONV_TOPIC ¦ Topic: {0} ¦ الموضوع: {0}
+CONV_FREE_NEEDS_AI ¦ Free conversation on any topic needs an AI tutor. Right now you are talking to the offline tutor, which can only follow a short script. ¦ تحتاج المحادثة الحرة في أي موضوع إلى معلّم ذكاء اصطناعي. أنت الآن تتحدث مع المعلّم غير المتصل الذي يتبع نصًّا قصيرًا فقط.
+CONV_SUMMARY_NEW ¦ New conversation ¦ محادثة جديدة
+MISSION_TASKS_DONE ¦ Tasks done ¦ أُنجزت المهام
+MISSION_TARGET ¦ Aim for at least {0} turns of about {1}+ words. ¦ استهدف {0} أدوار على الأقل بنحو {1} كلمات أو أكثر.
+MISSION_NEEDS_AI ¦ This mission needs an AI tutor. Offline you can still practise freely, but the mission won't be marked as passed. ¦ تحتاج هذه المهمة إلى معلّم ذكاء اصطناعي. يمكنك التدرّب بحرية دون اتصال، لكن المهمة لن تُحتسب منجزة.
+MISSION_PASSED ¦ Mission passed. Well done! ¦ أُنجزت المهمة. أحسنت!
+MISSION_NOT_YET ¦ Not passed yet. ¦ لم تُنجز بعد.
+MISSION_GAP_TURNS ¦ You took {0} turns; this mission needs {1}. ¦ أخذت {0} أدوار، وتحتاج هذه المهمة إلى {1}.
+MISSION_GAP_WORDS ¦ Your typical turn had {0} words; aim for {1}. ¦ كان في دورك المعتاد {0} كلمات، واستهدف {1}.
+MISSION_GAP_TASKS ¦ The tasks weren't confirmed yet. ¦ لم تُؤكَّد المهام بعد.
+CONV_NOTICE_FELL_BACK_TO_OFFLINE ¦ The AI provider didn't answer, so the offline practice partner continues. Nothing was sent to another provider. ¦ لم يجب مزوّد الذكاء الاصطناعي، فيتابع شريك التدريب دون اتصال. لم يُرسل أي شيء إلى مزوّد آخر.
+CONV_NOTICE_USED_FALLBACK_PROVIDER ¦ Your preferred provider failed; a fallback provider you allowed answered instead. ¦ فشل مزوّدك المفضّل، فأجاب مزوّد احتياطي سمحت به.
+CONV_NOTICE_SPEECH_UNAVAILABLE ¦ Speech recognition isn't available right now. You can type instead. ¦ التعرّف على الكلام غير متاح الآن، ويمكنك الكتابة بدلًا من ذلك.
+CONV_NOTICE_TTS_UNAVAILABLE ¦ Spoken replies aren't available for this language on this device. ¦ الردود المنطوقة غير متاحة لهذه اللغة على هذا الجهاز.
+CONV_NOTICE_PHRASE_SAVED ¦ Saved to your phrasebook and review deck. ¦ حُفظت في دفتر عباراتك ومجموعة المراجعة.
+CONV_NOTICE_AI_ERROR_RETRYABLE ¦ The AI is having trouble. Please try again. ¦ يواجه الذكاء الاصطناعي مشكلة، يُرجى المحاولة مرة أخرى.
+CONV_PRIVACY_NOTE ¦ The microphone is on only while the red indicator shows. Recordings are not stored by this app. ¦ لا يعمل الميكروفون إلا أثناء ظهور المؤشر الأحمر، ولا يخزّن هذا التطبيق التسجيلات.
+CONV_AI_MAY_ERR ¦ AI tutors can make mistakes. Ask "why?" if something looks wrong. ¦ قد يخطئ معلّمو الذكاء الاصطناعي. اسأل «لماذا؟» إذا بدا لك شيء خاطئ.
+SCENARIOS_TITLE ¦ Role-play scenarios ¦ مواقف تمثيل الأدوار
+SCENARIO_LEVEL ¦ Level {0} ¦ المستوى {0}
+SCENARIO_START ¦ Start scenario ¦ ابدأ الموقف
+SCENARIO_PHRASES ¦ Useful phrases ¦ عبارات مفيدة
+CORR_ERROR ¦ Your sentence ¦ الخطأ
+CORR_FIX ¦ Correction ¦ التصحيح
+CORR_REASON ¦ Why ¦ السبب
+CORR_CONTEXT ¦ Register ¦ السياق
+CORR_TRY_YOURSELF ¦ Try to fix it yourself: ¦ حاول أن تصحّحه بنفسك:
+CORR_SHOW_ANSWER ¦ Show the correction ¦ أظهر التصحيح
+REGISTER_FORMAL ¦ Formal ¦ رسمي
+REGISTER_INFORMAL ¦ Informal ¦ عامّي / غير رسمي
+REGISTER_NEUTRAL ¦ Neutral (fine in most situations) ¦ محايد (مناسب لمعظم المواقف)
+ERR_CAT_TENSE ¦ tense ¦ الأزمنة
+ERR_CAT_AGREEMENT ¦ agreement ¦ المطابقة
+ERR_CAT_WORD_ORDER ¦ word order ¦ ترتيب الكلمات
+ERR_CAT_SPELLING ¦ spelling ¦ الإملاء
+ERR_CAT_VOCABULARY ¦ vocabulary ¦ المفردات
+ERR_CAT_PREPOSITION ¦ preposition ¦ حروف الجر
+ERR_CAT_ARTICLE ¦ article ¦ أدوات التعريف والتنكير
+ERR_CAT_REGISTER ¦ register ¦ مستوى اللغة
+ERR_CAT_OTHER ¦ other ¦ أخرى
+COACH_TRACK_LABEL ¦ Your coaching track ¦ مسار التدريب
+COACH_TRACK_FLUENCY ¦ Everyday fluency ¦ المحادثة والطلاقة اليومية
+COACH_TRACK_BUSINESS ¦ Business and emails ¦ لغة الأعمال والإيميلات
+COACH_TRACK_TRAVEL ¦ Travel and hospitality ¦ السفر والسياحة والضيافة
+COACH_TRACK_EXAM ¦ Exam preparation ({0}) ¦ التحضير للاختبارات ({0})
+COACH_EXAM_ARABIC ¦ Arabic proficiency exams ¦ اختبارات الكفاءة في العربية
+COACH_TITLE_LABEL ¦ Your title ¦ لقبك
+COACH_TITLE_FIRST_STEPS ¦ First Steps ¦ الخطوات الأولى
+COACH_TITLE_WORD_EXPLORER ¦ Word Explorer ¦ مستكشف الكلمات
+COACH_TITLE_CONVERSATION_STARTER ¦ Conversation Starter ¦ مُبادر المحادثة
+COACH_TITLE_PHRASING_PRO ¦ Phrasing Pro ¦ محترف الصياغة
+COACH_TITLE_MISSION_MASTER ¦ Mission Master ¦ سيّد المهام
+COACH_TITLE_FLUENT_VOICE ¦ Fluent Voice ¦ الصوت الطليق
+COACH_TITLE_NEXT ¦ Next: {0}. {1} ¦ التالي: {0}. {1}
+COACH_TITLE_TOP ¦ You have earned every title. Keep talking to stay in shape! ¦ حصلت على كل الألقاب. واصل الحديث لتحافظ على مستواك!
+COACH_NEED_FIRST_STEPS ¦ Start learning. ¦ ابدأ التعلّم.
+COACH_NEED_WORD_EXPLORER ¦ Have 25 words in your reviews. ¦ أضف 25 كلمة إلى مراجعاتك.
+COACH_NEED_CONVERSATION_STARTER ¦ Have 5 conversations of at least 4 turns. ¦ أجرِ 5 محادثات من 4 أدوار على الأقل.
+COACH_NEED_PHRASING_PRO ¦ Have 10 conversations, with at most 3 corrections per 10 of your recent turns. ¦ أجرِ 10 محادثات، بثلاثة تصحيحات على الأكثر لكل 10 من أدوارك الأخيرة.
+COACH_NEED_MISSION_MASTER ¦ Pass 10 speaking missions. ¦ أنجز 10 مهام محادثة.
+COACH_NEED_FLUENT_VOICE ¦ Pass 20 speaking missions with about 12+ words per turn. ¦ أنجز 20 مهمة محادثة بنحو 12 كلمة أو أكثر في كل دور.
+LIVE_TITLE ¦ Live voice call ¦ مكالمة صوتية مباشرة
+LIVE_OPEN ¦ Live voice call (beta) ¦ مكالمة صوتية مباشرة (تجريبية)
+LIVE_STATUS_IDLE ¦ Ready to call ¦ جاهز للاتصال
+LIVE_STATUS_CONNECTING ¦ Connecting… ¦ جارٍ الاتصال…
+LIVE_STATUS_LIVE ¦ On the call ¦ في المكالمة
+LIVE_STATUS_ENDED ¦ Call ended ¦ انتهت المكالمة
+LIVE_STATUS_FAILED ¦ The call could not continue ¦ تعذّر استمرار المكالمة
+LIVE_MUTED ¦ Your microphone is muted ¦ الميكروفون مكتوم
+LIVE_TUTOR_SPEAKING ¦ Your tutor is speaking — just talk to interrupt ¦ المدرّب يتحدث. تكلّم لمقاطعته
+LIVE_YOU_SPEAKING ¦ Listening to you… ¦ يستمع إليك…
+LIVE_YOUR_TURN ¦ Your turn — speak naturally ¦ دورك. تحدّث بشكل طبيعي
+LIVE_MIC_LEVEL ¦ Microphone ¦ الميكروفون
+LIVE_START ¦ Start the call ¦ ابدأ المكالمة
+LIVE_AGAIN ¦ Call again ¦ اتصل مجددًا
+LIVE_CONNECTING ¦ Connecting ¦ جارٍ الاتصال
+LIVE_MUTE ¦ Mute ¦ كتم
+LIVE_UNMUTE ¦ Unmute ¦ إلغاء الكتم
+LIVE_INTERRUPT ¦ Stop the tutor ¦ أوقف المدرّب
+LIVE_END ¦ End the call ¦ أنهِ المكالمة
+LIVE_HEADPHONES ¦ Tip: headphones prevent the tutor's voice from being picked up by your microphone. ¦ نصيحة: سماعات الرأس تمنع التقاط صوت المدرّب عبر الميكروفون.
+LIVE_ERR_NO_KEY ¦ Live calls use your OpenAI key. Add it in AI providers. ¦ تستخدم المكالمات المباشرة مفتاح OpenAI الخاص بك. أضفه في مزوّدي الذكاء الاصطناعي.
+LIVE_ERR_SPEAKER ¦ No audio output is available. ¦ لا يوجد مخرج صوت متاح.
+LIVE_ERR_CONNECTION ¦ The connection failed or was closed. {0} ¦ فشل الاتصال أو انقطع. {0}
+LIVE_ERR_SERVER ¦ The service stopped the call: {0} ¦ أوقفت الخدمة المكالمة: {0}
+LIVE_CHECKING ¦ Checking your sentence… ¦ جارٍ تدقيق جملتك…
+LIVE_SUMMARY ¦ You spoke {0} times; {1} corrections were noted. They are saved in your history and error log. ¦ تحدّثت {0} مرات، وسُجّل {1} تصحيحًا. حُفظت في السجل وسجل الأخطاء.
+LIVE_PRIVACY ¦ Your voice goes to OpenAI during the call; the app keeps only the text transcript. ¦ يُرسل صوتك إلى OpenAI أثناء المكالمة، ولا يحفظ التطبيق سوى النص المكتوب.

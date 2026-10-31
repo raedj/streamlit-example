@@ -1,0 +1,41 @@
+rootProject.name = "polyglot-academy"
+
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        // Tesseract4Android (on-device OCR, Apache-2.0) is published only on JitPack. Only that group
+        // may be resolved from JitPack; every other dependency still comes from Google or Maven Central.
+        exclusiveContent {
+            forRepository { maven("https://jitpack.io") }
+            filter { includeGroup("cz.adaptech.tesseract4android") }
+        }
+    }
+}
+
+// The Android targets need the Android Gradle Plugin and AndroidX from Google Maven.
+// Enable them with -Ppolyglot.android=true (or in gradle.properties) once Google Maven
+// and an Android SDK are reachable. See docs/BUILD_AND_RELEASE.md.
+val androidEnabled = providers.gradleProperty("polyglot.android").orNull == "true"
+
+include(":core")
+include(":data")
+include(":uicore")
+include(":ui")
+include(":desktopApp")
+if (androidEnabled) include(":androidApp")
+
+// Optional partial type-check of Android sources without Google Maven (tools/android-typecheck/README.md).
+if (providers.gradleProperty("polyglot.androidTypecheck").isPresent) {
+    include(":android-typecheck")
+    project(":android-typecheck").projectDir = file("tools/android-typecheck")
+}

@@ -1,0 +1,91 @@
+HOME_GREETING_MORNING ¦ Good morning{0} ¦ صباح الخير{0}
+HOME_GREETING_AFTERNOON ¦ Good afternoon{0} ¦ نهارك سعيد{0}
+HOME_GREETING_EVENING ¦ Good evening{0} ¦ مساء الخير{0}
+HOME_LEARNING ¦ Learning {0} ¦ تتعلّم {0}
+HOME_SWITCH_LANGUAGE ¦ Switch language ¦ تبديل اللغة
+HOME_LEVEL_ESTIMATE ¦ estimated ¦ تقديري
+HOME_LEVEL_SELF ¦ self-selected ¦ اختيار ذاتي
+HOME_DAILY_GOAL ¦ Daily goal ¦ الهدف اليومي
+HOME_GOAL_PROGRESS ¦ {0} of {1} min today ¦ {0} من {1} دقيقة اليوم
+HOME_GOAL_RING_DESC ¦ Daily goal progress: {0} of {1} minutes ¦ التقدّم نحو الهدف اليومي: {0} من {1} دقيقة
+HOME_RECOMMENDED ¦ Recommended next ¦ المقترح التالي
+HOME_START ¦ Start ¦ ابدأ
+HOME_WHY ¦ Why this? ¦ لماذا هذا؟
+REC_REVIEW_DUE ¦ Review your words ¦ راجِع كلماتك
+REC_MISTAKE_REVIEW ¦ Learn from recent mistakes ¦ تعلّم من أخطائك الأخيرة
+REC_CONTINUE_LESSON ¦ Continue: {0} ¦ تابِع: {0}
+REC_NEXT_LESSON ¦ Next lesson: {0} ¦ الدرس التالي: {0}
+REC_SKILL_PRACTICE ¦ Practise {0} ¦ تدرّب على {0}
+REC_CONVERSATION ¦ Have a short conversation ¦ أجرِ محادثة قصيرة
+REC_ASSESSMENT ¦ Find your starting level ¦ حدّد مستوى بدايتك
+REC_RELAXATION ¦ Two calm minutes before speaking ¦ دقيقتان من الهدوء قبل التحدث
+REC_ALL_DONE ¦ Today's goal reached ¦ حقّقت هدف اليوم
+REASON_MANY_REVIEWS_DUE ¦ {0} item is ready for review. Reviewing now helps it stick.|{0} items are ready for review. Reviewing now helps them stick. ¦ لا توجد عناصر للمراجعة.|عنصر واحد جاهز للمراجعة، ومراجعته الآن تساعدك على تثبيته.|عنصران جاهزان للمراجعة، ومراجعتهما الآن تساعدك على تثبيتهما.|{0} عناصر جاهزة للمراجعة، ومراجعتها الآن تساعدك على تثبيتها.|{0} عنصرًا جاهزًا للمراجعة، ومراجعتها الآن تساعدك على تثبيتها.|{0} عنصر جاهز للمراجعة، ومراجعتها الآن تساعدك على تثبيتها.
+REASON_RECURRING_MISTAKES ¦ A few mistakes keep coming back. A quick review fixes them faster. ¦ هناك أخطاء تتكرر، ومراجعتها السريعة تصحّحها أسرع.
+REASON_LESSON_INTERRUPTED ¦ You stopped in the middle — pick up where you left off. ¦ توقفت في المنتصف، فتابِع من حيث توقفت.
+REASON_NEXT_IN_PATH ¦ The next step in your course. ¦ الخطوة التالية في دورتك.
+REASON_WEAKEST_SKILL ¦ This skill has been the hardest for you lately. ¦ كانت هذه المهارة الأصعب عليك مؤخرًا.
+REASON_INTERLEAVE_SKILLS ¦ Mixing skills helps you remember better. ¦ المزج بين المهارات يساعدك على التذكّر أفضل.
+REASON_APPLY_IN_CONVERSATION ¦ Use what you just learned in a real exchange. ¦ استخدم ما تعلّمته للتو في حوار حقيقي.
+REASON_NO_PLACEMENT_YET ¦ A short test lets us start you at the right level. ¦ يتيح لنا اختبار قصير أن نبدأ معك من المستوى المناسب.
+REASON_GOAL_MET_TODAY ¦ Great work. Extra practice is optional — rest is part of learning too. ¦ عمل رائع. التدريب الإضافي اختياري، فالراحة جزء من التعلّم أيضًا.
+REASON_PRE_SPEAKING_CALM ¦ Speaking is your focus today; a calm start can make it easier. ¦ التحدث محور يومك، وقد تجعل البداية الهادئة الأمر أسهل.
+HOME_QUICK ¦ Quick start ¦ بداية سريعة
+QUICK_CONVERSATION ¦ Talk ¦ تحدّث
+QUICK_REVIEW ¦ Review ¦ راجِع
+QUICK_LESSON ¦ Lesson ¦ درس
+QUICK_IMPORT ¦ My material ¦ موادّي
+HOME_REVIEWS_DUE ¦ {0} item due|{0} items due ¦ لا عناصر مستحقة|عنصر واحد مستحق|عنصران مستحقان|{0} عناصر مستحقة|{0} عنصرًا مستحقًا|{0} عنصر مستحق
+HOME_NO_REVIEWS ¦ Nothing to review right now ¦ لا شيء للمراجعة الآن
+HOME_THIS_WEEK ¦ This week ¦ هذا الأسبوع
+HOME_WEEK_CHART_DESC ¦ Minutes studied on each of the last 7 days: {0} ¦ دقائق الدراسة في كل يوم من الأيام السبعة الأخيرة: {0}
+HOME_STREAK ¦ {0}-day streak|{0}-day streak ¦ سلسلة {0} يوم|سلسلة يوم واحد|سلسلة يومين|سلسلة {0} أيام|سلسلة {0} يومًا|سلسلة {0} يوم
+HOME_SKILLS ¦ Skills ¦ المهارات
+HOME_SKILLS_EMPTY ¦ Skill estimates appear after a few exercises. ¦ تظهر تقديرات المهارات بعد بضعة تمارين.
+HOME_ACHIEVEMENTS ¦ Recent achievements ¦ إنجازات حديثة
+HOME_NEW_TITLE ¦ Welcome! Let's find your starting point ¦ مرحبًا! لنحدّد نقطة بدايتك
+HOME_NEW_BODY ¦ Your progress will appear here once you start. We only show numbers based on what you have actually done. ¦ سيظهر تقدّمك هنا بعد أن تبدأ، فنحن لا نعرض إلا أرقامًا مبنية على ما أنجزته فعلًا.
+HOME_TUTOR_SHORTCUT ¦ Talk with {0} ¦ تحدّث مع {0}
+HOME_TUTOR_SHORTCUT_SUB ¦ {0} ¦ {0}
+HOME_TODAY_PLAN ¦ Today's plan ¦ خطة اليوم
+HOME_PLAN_PROGRESS ¦ {0} of {1} activities done ¦ أُنجز {0} من {1} أنشطة
+PLAN_TITLE ¦ Study plan ¦ خطة الدراسة
+PLAN_TODAY ¦ Today ¦ اليوم
+PLAN_SUBTITLE ¦ {0} planned · {1} done ¦ المخطّط: {0} · المنجز: {1}
+PLAN_ITEM_REVIEW ¦ Review due items ¦ مراجعة العناصر المستحقة
+PLAN_ITEM_LESSON ¦ Lesson: {0} ¦ درس: {0}
+PLAN_ITEM_SKILL_PRACTICE ¦ Practise {0} ¦ تدرّب على {0}
+PLAN_ITEM_CONVERSATION ¦ Conversation practice ¦ تدريب على المحادثة
+PLAN_ITEM_MISTAKE_REVIEW ¦ Review mistakes ¦ مراجعة الأخطاء
+PLAN_ITEM_RELAXATION ¦ Calm breathing ¦ تنفّس هادئ
+PLAN_ITEM_READING ¦ Reading practice ¦ تدريب على القراءة
+PLAN_ITEM_LISTENING ¦ Listening practice ¦ تدريب على الاستماع
+PLAN_MARK_DONE ¦ Mark as done ¦ وضع علامة كمنجز
+PLAN_MARK_UNDONE ¦ Mark as not done ¦ إلغاء علامة الإنجاز
+PLAN_OPEN ¦ Open ¦ فتح
+PLAN_MISSED_NOTE ¦ Welcome back. We kept today's plan the same size instead of piling on extra work. ¦ مرحبًا بعودتك. أبقينا خطة اليوم بالحجم نفسه بدل تكديس عمل إضافي.
+PLAN_WEEK_FOCUS ¦ Skill focus this week ¦ تركيز المهارات هذا الأسبوع
+PLAN_DAILY_TIME ¦ Daily time ¦ الوقت اليومي
+PLAN_REBUILD ¦ Rebuild today's plan ¦ إعادة بناء خطة اليوم
+PLAN_HOW_TITLE ¦ How this plan is built ¦ كيف تُبنى هذه الخطة
+PLAN_HOW_BODY ¦ Reviews that are due come first (up to 40% of your time), then the next lesson, a short conversation when you have 15 minutes or more, and practice for your weakest skill. You can mark items done or change your daily time. ¦ تأتي المراجعات المستحقة أولًا (حتى 40٪ من وقتك)، ثم الدرس التالي، ثم محادثة قصيرة إذا كان لديك 15 دقيقة أو أكثر، ثم تدريب على أضعف مهاراتك. يمكنك وضع علامة على ما أنجزته أو تغيير وقتك اليومي.
+PLAN_EMPTY ¦ No plan yet. Choose a language to start. ¦ لا توجد خطة بعد. اختر لغة للبدء.
+GAME_TODAY_XP ¦ Today's XP ¦ نقاط اليوم
+GAME_XP ¦ {0} XP ¦ {0} نقطة
+GAME_XP_PROGRESS ¦ {0} of {1} XP ¦ {0} من {1} نقطة
+GAME_XP_RING_DESC ¦ Daily XP goal: {0} of {1} ¦ هدف النقاط اليومي: {0} من {1}
+GAME_GOAL_REACHED ¦ Daily goal reached. Well done! ¦ حقّقت هدفك اليومي. أحسنت!
+GAME_LEVEL ¦ Level {0} · {1}/{2} XP to the next level ¦ المستوى {0} · {1}/{2} نقطة للمستوى التالي
+GAME_FREEZES ¦ {0} streak freeze|{0} streak freezes ¦ لا حماية للسلسلة|حماية واحدة للسلسلة|حمايتان للسلسلة|{0} حمايات للسلسلة|{0} حماية للسلسلة|{0} حماية للسلسلة
+GAME_FREEZE_USED ¦ A streak freeze kept your streak alive. ¦ حافظت حماية السلسلة على سلسلتك.
+GAME_QUESTS ¦ Daily quests ¦ مهام اليوم
+GAME_QUEST_BONUS ¦ Each finished quest gives +{0} XP. You earn a streak freeze every 7 days in a row (up to 2). ¦ كل مهمة منجزة تمنحك {0}+ نقطة. وتحصل على حماية للسلسلة كل 7 أيام متتالية (حتى 2).
+GAME_SET_GOAL ¦ Daily XP goal ¦ هدف النقاط اليومي
+QUEST_EARN_XP ¦ Earn {0} XP ¦ اجمع {0} نقطة
+QUEST_COMPLETE_LESSON ¦ Complete a lesson ¦ أكمل درسًا واحدًا
+QUEST_REVIEW_WORDS ¦ Review {0} words ¦ راجع {0} كلمة
+QUEST_CORRECT_ANSWERS ¦ Get {0} answers right ¦ أجب {0} إجابات صحيحة
+QUEST_CONVERSATION_TURNS ¦ Send {0} messages to a tutor ¦ أرسل {0} رسائل إلى مدرّب
+QUEST_SPEAK_ALOUD ¦ Speak {0} times in a conversation ¦ تحدّث {0} مرات في محادثة
+QUEST_READ_STORY ¦ Read a story ¦ اقرأ قصة واحدة
+QUEST_PRONUNCIATION ¦ Do {0} pronunciation checks ¦ أجرِ {0} اختبارات نطق

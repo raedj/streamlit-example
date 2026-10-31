@@ -1,0 +1,50 @@
+CREATE TABLE review_state (
+    item_id TEXT NOT NULL PRIMARY KEY,
+    language TEXT NOT NULL,
+    phase TEXT NOT NULL,
+    ease REAL NOT NULL,
+    interval_days REAL NOT NULL,
+    learning_step INTEGER NOT NULL,
+    repetitions INTEGER NOT NULL,
+    lapses INTEGER NOT NULL,
+    last_reviewed_at INTEGER,
+    due_at INTEGER NOT NULL,
+    total_reviews INTEGER NOT NULL,
+    correct_reviews INTEGER NOT NULL
+);
+CREATE INDEX review_state_lang_due ON review_state(language, due_at);
+
+CREATE TABLE review_log (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    item_id TEXT NOT NULL,
+    language TEXT NOT NULL,
+    reviewed_at INTEGER NOT NULL,
+    rating TEXT NOT NULL,
+    previous_interval REAL NOT NULL,
+    new_interval REAL NOT NULL,
+    response_ms INTEGER
+);
+CREATE INDEX review_log_item ON review_log(item_id);
+
+upsertState:
+INSERT OR REPLACE INTO review_state VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+
+stateFor:
+SELECT * FROM review_state WHERE item_id = ?;
+
+statesForLanguage:
+SELECT * FROM review_state WHERE language = ?;
+
+insertLog:
+INSERT INTO review_log(item_id, language, reviewed_at, rating, previous_interval, new_interval, response_ms) VALUES (?, ?, ?, ?, ?, ?, ?);
+
+logCount:
+SELECT COUNT(*) FROM review_log WHERE language = ?;
+
+deleteAllReviews {
+    DELETE FROM review_state;
+    DELETE FROM review_log;
+}
+
+allLogs:
+SELECT * FROM review_log ORDER BY id;

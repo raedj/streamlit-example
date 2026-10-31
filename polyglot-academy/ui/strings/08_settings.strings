@@ -1,0 +1,270 @@
+SETTINGS_TITLE ¦ Settings ¦ الإعدادات
+SET_APPEARANCE ¦ Appearance ¦ المظهر
+SET_THEME ¦ Theme ¦ السمة
+SET_LANGUAGES ¦ Languages ¦ اللغات
+SET_INTERFACE_LANGUAGE ¦ App language ¦ لغة التطبيق
+SET_EXPLANATION_LANGUAGE ¦ Explanations in ¦ لغة الشروح
+SET_NATIVE_LANGUAGE ¦ Native language ¦ اللغة الأم
+SET_VARIANT ¦ Preferred variety of {0} ¦ النوع المفضّل من {0}
+SET_TRANSLIT ¦ Show pinyin / transliteration ¦ إظهار البينيين / النقحرة
+SET_TRADITIONAL ¦ Use traditional Chinese characters ¦ استخدام الحروف الصينية التقليدية
+SET_LEVEL ¦ Starting level for {0} ¦ مستوى البداية في {0}
+SET_DAILY_MINUTES ¦ Daily study time ¦ وقت الدراسة اليومي
+SET_LEARNING ¦ Learning ¦ التعلّم
+SET_GOALS ¦ Goals ¦ الأهداف
+SET_STYLE ¦ Learning style ¦ أسلوب التعلّم
+SET_RELAX_IN_PLAN ¦ Include relaxation in my plan ¦ تضمين الاسترخاء في خطتي
+SET_SPEECH ¦ Speech ¦ الكلام
+SET_SPEECH_RATE ¦ Tutor voice speed ¦ سرعة صوت المعلّم
+SET_AUTOPLAY ¦ Read tutor replies aloud ¦ قراءة ردود المعلّم بصوت مسموع
+SET_SHOW_TRANSCRIPT ¦ Show live transcript while listening ¦ إظهار النص المباشر أثناء الاستماع
+SET_SPEECH_ENGINE ¦ Speech uses your device's speech recognition and text-to-speech services. ¦ يستخدم الكلام خدمات التعرّف على الكلام وتحويل النص إلى كلام في جهازك.
+SET_SPEECH_ON_DEVICE ¦ Recognition on this device: {0} ¦ التعرّف على هذا الجهاز: {0}
+SET_SPEECH_STATUS_YES ¦ processed on the device ¦ يُعالج على الجهاز
+SET_SPEECH_STATUS_NO ¦ may be processed by your device's speech provider online ¦ قد يُعالج عبر الإنترنت لدى مزوّد الكلام في جهازك
+SET_SPEECH_STATUS_UNKNOWN ¦ unknown ¦ غير معروف
+SET_ACCESSIBILITY ¦ Accessibility ¦ إمكانية الوصول
+SET_REDUCED_MOTION ¦ Reduce motion ¦ تقليل الحركة
+SET_REDUCED_MOTION_SUB ¦ Turns off decorative animations ¦ يوقف الحركات التزيينية
+SET_LARGER_TEXT ¦ Larger text ¦ نص أكبر
+SET_LARGER_TEXT_SUB ¦ On top of your system font size ¦ إضافة إلى حجم خط النظام
+SET_HIGH_CONTRAST ¦ Higher contrast ¦ تباين أعلى
+SET_HAPTICS ¦ Vibration feedback ¦ الاهتزاز عند الإجابة
+SET_TRANSLATIONS_DEFAULT ¦ Show translations by default ¦ إظهار الترجمات افتراضيًا
+SET_HINTS_DEFAULT ¦ Offer hints ¦ تقديم التلميحات
+SET_PRIVACY ¦ Privacy ¦ الخصوصية
+SET_PRIVACY_SUMMARY_LOCAL ¦ Everything stays on this device ¦ يبقى كل شيء على هذا الجهاز
+SET_PRIVACY_SUMMARY_CLOUD ¦ Cloud AI allowed for selected content ¦ الذكاء الاصطناعي السحابي مسموح لمحتوى محدّد
+SET_PRIVACY_INTRO ¦ What is stored on this device: your profile, progress, reviews, conversations, notes and imported text. What can leave it: only content you allow below, sent only to the AI provider you configured. ¦ ما يُخزّن على هذا الجهاز: ملفك الشخصي وتقدّمك ومراجعاتك ومحادثاتك وملاحظاتك والنصوص المستوردة. وما قد يغادره: المحتوى الذي تسمح به أدناه فقط، ويُرسل إلى مزوّد الذكاء الاصطناعي الذي هيّأته فقط.
+SET_CLOUD_AI ¦ Allow cloud AI ¦ السماح بالذكاء الاصطناعي السحابي
+SET_CLOUD_AI_SUB ¦ Needed for AI tutors and AI writing feedback from cloud providers ¦ مطلوب لمعلّمي الذكاء الاصطناعي وملاحظات الكتابة من المزوّدين السحابيين
+SET_CONSENT_TITLE ¦ Before you turn on cloud AI ¦ قبل تفعيل الذكاء الاصطناعي السحابي
+SET_CONSENT_BODY ¦ Text you choose to share (for example your conversation messages) will be sent to the AI provider you configure, under that provider's terms and privacy policy. Notes, imported files, recordings and learning history stay on this device unless you allow each category separately. You can turn this off at any time. ¦ سيُرسل النص الذي تختار مشاركته (مثل رسائل محادثتك) إلى مزوّد الذكاء الاصطناعي الذي تهيّئه، وفق شروطه وسياسة خصوصيته. تبقى الملاحظات والملفات المستوردة والتسجيلات وسجل التعلّم على هذا الجهاز ما لم تسمح بكل فئة على حدة. ويمكنك إيقاف ذلك في أي وقت.
+SET_CONSENT_ACCEPT ¦ I understand, turn on ¦ فهمت، فعّل
+SET_LOCAL_NETWORK ¦ Allow my own local AI server ¦ السماح بخادم الذكاء الاصطناعي المحلي الخاص بي
+SET_LOCAL_NETWORK_SUB ¦ For a server you run yourself, such as Ollama on your computer ¦ لخادم تشغّله بنفسك مثل Ollama على حاسوبك
+SET_CATEGORIES ¦ What cloud AI may receive ¦ ما يمكن أن يتلقاه الذكاء الاصطناعي السحابي
+CAT_LESSON_CONTENT ¦ Lesson content ¦ محتوى الدروس
+CAT_LESSON_CONTENT_SUB ¦ App-authored exercises and texts ¦ تمارين ونصوص من إعداد التطبيق
+CAT_CONVERSATION_TEXT ¦ Conversation messages ¦ رسائل المحادثة
+CAT_CONVERSATION_TEXT_SUB ¦ What you type or say to a tutor (as text) ¦ ما تكتبه أو تقوله للمعلّم (كنص)
+CAT_VOICE_AUDIO ¦ Voice recordings ¦ التسجيلات الصوتية
+CAT_VOICE_AUDIO_SUB ¦ Needed only for detailed pronunciation scoring and live voice calls. Audio is sent while you use them and is not saved by the app. ¦ مطلوبة فقط لتقييم النطق المفصّل والمكالمات الصوتية المباشرة. يُرسل الصوت أثناء استخدامها فقط ولا يحفظه التطبيق.
+CAT_WRITING_SUBMISSION ¦ Writing exercises ¦ تمارين الكتابة
+CAT_WRITING_SUBMISSION_SUB ¦ Texts you submit for feedback ¦ النصوص التي ترسلها لتلقي الملاحظات
+CAT_PERSONAL_NOTES ¦ Personal notes ¦ الملاحظات الشخصية
+CAT_PERSONAL_NOTES_SUB ¦ Sensitive — off by default ¦ حساس — متوقف افتراضيًا
+CAT_IMPORTED_MATERIAL ¦ Imported material ¦ المواد المستوردة
+CAT_IMPORTED_MATERIAL_SUB ¦ Sensitive — or allow per item when importing ¦ حساس — أو اسمح لكل عنصر عند الاستيراد
+CAT_LEARNING_HISTORY ¦ Learning history ¦ سجل التعلّم
+CAT_LEARNING_HISTORY_SUB ¦ Mistakes, scores and progress ¦ الأخطاء والنتائج والتقدّم
+CAT_PROFESSIONAL_MATERIAL ¦ Work material ¦ مواد العمل
+CAT_PROFESSIONAL_MATERIAL_SUB ¦ Sensitive — off by default ¦ حساس — متوقف افتراضيًا
+SET_FALLBACK ¦ Allow fallback to another cloud provider ¦ السماح بالتحويل إلى مزوّد سحابي آخر
+SET_FALLBACK_SUB ¦ Off: if your preferred provider fails, we use offline practice instead of sending your text elsewhere ¦ عند الإيقاف: إذا فشل مزوّدك المفضّل نستخدم التدريب دون اتصال بدل إرسال نصك إلى جهة أخرى
+SET_BACKUP ¦ Include learning data in device backup ¦ تضمين بيانات التعلّم في نسخ الجهاز الاحتياطي
+SET_BACKUP_SUB ¦ API keys are never backed up ¦ لا تُنسخ مفاتيح API احتياطيًا أبدًا
+SET_AI ¦ AI ¦ الذكاء الاصطناعي
+SET_AI_PROVIDERS ¦ AI providers ¦ مزوّدو الذكاء الاصطناعي
+SET_AI_PROVIDERS_SUB ¦ Connect your own API keys ¦ اربط مفاتيح API الخاصة بك
+SET_LOCAL_MODELS ¦ On-device models ¦ النماذج على الجهاز
+SET_LOCAL_MODELS_SUB ¦ Compatibility and limits ¦ التوافق والقيود
+SET_NOTIFICATIONS ¦ Reminders ¦ التذكيرات
+SET_REMINDER_ENABLE ¦ Daily reminder ¦ تذكير يومي
+SET_REMINDER_TIME ¦ Time ¦ الوقت
+SET_REMINDER_DAYS ¦ Days ¦ الأيام
+SET_QUIET_HOURS ¦ Quiet hours: {0}–{1} (no reminders) ¦ ساعات الهدوء: {0}–{1} (بلا تذكيرات)
+SET_REMINDER_FAILED ¦ Reminders couldn't be scheduled. Check that notifications are allowed for this app. ¦ تعذّرت جدولة التذكيرات. تحقّق من السماح بالإشعارات لهذا التطبيق.
+SET_REMINDER_SAVED ¦ Reminder updated ¦ حُدّث التذكير
+SET_REMINDER_QUIET_CONFLICT ¦ That time is inside quiet hours, so the reminder will wait until quiet hours end. ¦ هذا الوقت ضمن ساعات الهدوء، لذا سينتظر التذكير حتى تنتهي.
+SET_DATA ¦ Your data ¦ بياناتك
+SET_EXPORT ¦ Export my data ¦ تصدير بياناتي
+SET_EXPORT_SUB ¦ A JSON file with your profile, progress and vocabulary. API keys are never included. ¦ ملف JSON يتضمن ملفك الشخصي وتقدّمك ومفرداتك، ولا تُضمّن مفاتيح API أبدًا.
+SET_EXPORT_CONV ¦ Include conversations ¦ تضمين المحادثات
+SET_EXPORT_NOTES ¦ Include notes ¦ تضمين الملاحظات
+SET_EXPORT_DONE ¦ Export ready ({0}) ¦ التصدير جاهز ({0})
+SET_EXPORT_SAVED_TO ¦ Saved to {0} ¦ حُفظ في {0}
+SET_RESTORE ¦ Restore from an export ¦ الاستعادة من ملف تصدير
+SET_RESTORE_SUB ¦ Replaces the data on this device with a file exported from Polyglot Academy. Cloud AI is switched off afterwards so you can confirm consent again. ¦ يستبدل البيانات على هذا الجهاز بملف صُدِّر من Polyglot Academy. يُوقَف الذكاء الاصطناعي السحابي بعدها لتؤكّد موافقتك من جديد.
+SET_RESTORE_BODY ¦ Restoring replaces your current profile, progress, reviews, vocabulary, notes and conversations on this device. Saved API keys are not affected. ¦ تستبدل الاستعادة ملفك الشخصي وتقدّمك ومراجعاتك ومفرداتك وملاحظاتك ومحادثاتك الحالية على هذا الجهاز. لا تتأثر مفاتيح API المحفوظة.
+SET_RESTORE_CONFIRM ¦ Choose file and restore ¦ اختيار الملف والاستعادة
+SET_RESTORE_DONE ¦ Restored {0} records ¦ استُعيد {0} من السجلات
+SET_RESTORE_SKIPPED ¦ Restored {0} records; {1} could not be read and were skipped ¦ استُعيد {0} من السجلات، وتُخطّي {1} تعذّرت قراءته
+SET_RESTORE_INVALID ¦ This file isn't a Polyglot Academy export ¦ هذا الملف ليس ملف تصدير من Polyglot Academy
+SET_RESTORE_NEWER ¦ This export comes from a newer version of the app. Update the app and try again. ¦ هذا الملف من إصدار أحدث من التطبيق. حدّث التطبيق ثم أعد المحاولة.
+SET_RESTORE_TOO_LARGE ¦ This file is too large to restore ¦ هذا الملف أكبر من أن يُستعاد
+SET_RESTORE_UNAVAILABLE ¦ Choosing files isn't available on this device ¦ اختيار الملفات غير متاح على هذا الجهاز
+SET_DELETE_CONV ¦ Delete all conversations ¦ حذف كل المحادثات
+SET_DELETE_MATERIALS ¦ Delete all imported material ¦ حذف كل المواد المستوردة
+SET_DELETE_ALL ¦ Delete all my data ¦ حذف كل بياناتي
+SET_DELETE_ALL_BODY ¦ This removes your profile, progress, reviews, conversations, notes, imported material, saved API keys and reminders from this device. It can't be undone. ¦ يحذف هذا ملفك الشخصي وتقدّمك ومراجعاتك ومحادثاتك وملاحظاتك والمواد المستوردة ومفاتيح API المحفوظة والتذكيرات من هذا الجهاز، ولا يمكن التراجع عنه.
+SET_DELETE_CONFIRM ¦ Delete ¦ حذف
+SET_DELETED ¦ Deleted ¦ حُذف
+SET_PERMISSIONS ¦ Permissions explained ¦ شرح الأذونات
+PERM_MIC ¦ Microphone ¦ الميكروفون
+PERM_MIC_BODY ¦ Used only while you speak to a tutor or practise pronunciation. Requested the first time you tap the microphone. ¦ يُستخدم فقط أثناء التحدث مع المعلّم أو التدرّب على النطق، ويُطلب في أول مرة تضغط فيها على الميكروفون.
+PERM_NOTIF ¦ Notifications ¦ الإشعارات
+PERM_NOTIF_BODY ¦ Used only for the daily reminder you set. ¦ تُستخدم فقط للتذكير اليومي الذي تحدّده.
+PERM_FILES ¦ Files ¦ الملفات
+PERM_FILES_BODY ¦ We use the system file picker, so the app only sees the files you choose. ¦ نستخدم منتقي الملفات في النظام، فلا يرى التطبيق إلا الملفات التي تختارها.
+PERM_CAMERA ¦ Camera ¦ الكاميرا
+PERM_CAMERA_BODY ¦ Not used in this version. ¦ غير مستخدمة في هذا الإصدار.
+PERM_INTERNET ¦ Internet ¦ الإنترنت
+PERM_INTERNET_BODY ¦ Used only to reach AI providers you configure. Lessons and reviews work offline. ¦ يُستخدم فقط للوصول إلى مزوّدي الذكاء الاصطناعي الذين تهيّئهم، وتعمل الدروس والمراجعات دون اتصال.
+SET_HELP ¦ Help and troubleshooting ¦ المساعدة وحل المشكلات
+HELP_Q1 ¦ The tutor says it is "offline / scripted". Why? ¦ يقول المعلّم إنه «دون اتصال / نص مُعدّ مسبقًا». لماذا؟
+HELP_A1 ¦ No AI provider is set up, cloud AI is off in Privacy, or the provider failed. The scripted partner still lets you practise scenarios. Set up a provider in Settings › AI providers. ¦ لم يُهيأ مزوّد ذكاء اصطناعي، أو الذكاء الاصطناعي السحابي متوقف في الخصوصية، أو فشل المزوّد. ما زال الشريك المُعدّ مسبقًا يتيح لك التدرّب على المواقف. هيّئ مزوّدًا من الإعدادات › مزوّدو الذكاء الاصطناعي.
+HELP_Q2 ¦ I have a ChatGPT/Gemini/Copilot subscription. Why do I need an API key? ¦ لديّ اشتراك في ChatGPT أو Gemini أو Copilot. لماذا أحتاج إلى مفتاح API؟
+HELP_A2 ¦ Consumer chat subscriptions usually don't include API access. Create an API key on the provider's developer platform and paste it in AI providers. ¦ لا تتضمن اشتراكات المحادثة للمستهلكين عادةً وصولًا إلى واجهة API. أنشئ مفتاح API من منصة المطوّرين لدى المزوّد والصقه في مزوّدي الذكاء الاصطناعي.
+HELP_Q3 ¦ The microphone doesn't work. ¦ الميكروفون لا يعمل.
+HELP_A3 ¦ Allow microphone access for the app in system settings and check that a speech recognition service is installed for your learning language. You can always type instead. ¦ اسمح للتطبيق بالوصول إلى الميكروفون من إعدادات النظام وتحقّق من تثبيت خدمة تعرّف على الكلام للغة التي تتعلّمها، ويمكنك دائمًا الكتابة بدلًا من ذلك.
+HELP_Q4 ¦ There is no audio for Chinese or Arabic. ¦ لا يوجد صوت للصينية أو العربية.
+HELP_A4 ¦ Install a voice for that language in your system's text-to-speech settings. ¦ ثبّت صوتًا لتلك اللغة من إعدادات تحويل النص إلى كلام في نظامك.
+HELP_Q5 ¦ How is my level estimated? ¦ كيف يُقدَّر مستواي؟
+HELP_A5 ¦ The placement test adapts question difficulty and reports a likely range. It is an estimate, not an official certificate, and you can change your level at any time. ¦ يكيّف اختبار تحديد المستوى صعوبة الأسئلة ويعرض نطاقًا مرجّحًا. إنه تقدير وليس شهادة رسمية، ويمكنك تغيير مستواك في أي وقت.
+HELP_Q6 ¦ Can I learn while I sleep? ¦ هل يمكنني التعلّم أثناء النوم؟
+HELP_A6 ¦ No — there is no good evidence that new vocabulary is learned while asleep. Sleep does help consolidate what you practised while awake, so regular rest and short daily reviews are the reliable approach. ¦ لا، فلا يوجد دليل جيد على تعلّم مفردات جديدة أثناء النوم. لكن النوم يساعد على تثبيت ما تدرّبت عليه وأنت مستيقظ، لذا فالراحة المنتظمة والمراجعات اليومية القصيرة هي النهج الموثوق.
+SET_ABOUT ¦ About and legal ¦ حول التطبيق والشؤون القانونية
+ABOUT_VERSION ¦ Version {0} ¦ الإصدار {0}
+ABOUT_BODY ¦ Polyglot Academy is an original language-learning app. Tutors, illustrations and lesson content were created for this app. ¦ أكاديمية بوليغلوت تطبيق أصلي لتعلّم اللغات، وقد أُعدّ المعلّمون والرسوم ومحتوى الدروس خصيصًا له.
+ABOUT_AI ¦ AI responses can be wrong. Professional tracks teach language, not financial, legal or professional advice. ¦ قد تخطئ ردود الذكاء الاصطناعي. والمسارات المهنية تعلّم اللغة ولا تقدّم استشارات مالية أو قانونية أو مهنية.
+ABOUT_LEVELS ¦ Level labels follow CEFR descriptors. In-app results are estimates, not certified results. ¦ تتبع تسميات المستويات واصفات الإطار الأوروبي المرجعي، ونتائج التطبيق تقديرات وليست نتائج معتمدة.
+ABOUT_LICENSES ¦ Open-source libraries: Kotlin, kotlinx (Apache-2.0), Compose Multiplatform (Apache-2.0), Ktor (Apache-2.0), SQLDelight (Apache-2.0), OkHttp (Apache-2.0). ¦ مكتبات مفتوحة المصدر: Kotlin وkotlinx (Apache-2.0) وCompose Multiplatform (Apache-2.0) وKtor (Apache-2.0) وSQLDelight (Apache-2.0) وOkHttp (Apache-2.0).
+ABOUT_PLATFORM ¦ Running on: {0} ¦ يعمل على: {0}
+PROV_TITLE ¦ AI providers ¦ مزوّدو الذكاء الاصطناعي
+PROV_INTRO ¦ Connect a provider with your own API key to enable AI tutors. Nothing is connected until you add a key and the connection test succeeds. ¦ اربط مزوّدًا بمفتاح API الخاص بك لتفعيل معلّمي الذكاء الاصطناعي. لا يُعدّ أي مزوّد متصلًا حتى تضيف مفتاحًا وينجح اختبار الاتصال.
+PROV_CLOUD_OFF ¦ Cloud AI is turned off in Privacy, so cloud providers won't be used even if configured. ¦ الذكاء الاصطناعي السحابي متوقف في الخصوصية، لذا لن يُستخدم المزوّدون السحابيون حتى لو هُيّئوا.
+PROV_OPEN_PRIVACY ¦ Open privacy settings ¦ فتح إعدادات الخصوصية
+PROV_STATUS_OFF ¦ Off ¦ متوقف
+PROV_STATUS_NEEDS_KEY ¦ Needs an API key ¦ يحتاج إلى مفتاح API
+PROV_STATUS_NEEDS_CONFIG ¦ Needs configuration ¦ يحتاج إلى إعداد
+PROV_STATUS_UNTESTED ¦ Configured — not verified yet ¦ مُهيأ — لم يُتحقّق منه بعد
+PROV_STATUS_VERIFIED ¦ Connection verified ¦ تم التحقّق من الاتصال
+PROV_STATUS_FAILED ¦ Last test failed ¦ فشل آخر اختبار
+PROV_STATUS_NO_RUNTIME ¦ Not available in this build ¦ غير متاح في هذا الإصدار
+PROV_PREFERRED_BADGE ¦ Preferred ¦ مفضّل
+PROV_LOC_CLOUD ¦ Cloud service ¦ خدمة سحابية
+PROV_LOC_LOCAL_NETWORK ¦ Your own server ¦ خادمك الخاص
+PROV_LOC_ON_DEVICE ¦ On this device ¦ على هذا الجهاز
+PROV_ENABLED ¦ Use this provider ¦ استخدام هذا المزوّد
+PROV_API_KEY ¦ API key ¦ مفتاح API
+PROV_KEY_SAVED ¦ A key is saved (hidden). Enter a new one to replace it. ¦ يوجد مفتاح محفوظ (مخفي). أدخل مفتاحًا جديدًا لاستبداله.
+PROV_KEY_SAVE ¦ Save key ¦ حفظ المفتاح
+PROV_KEY_REMOVE ¦ Remove key ¦ إزالة المفتاح
+PROV_KEY_STORAGE ¦ Stored with: {0} ¦ طريقة التخزين: {0}
+PROV_MODEL ¦ Model ¦ النموذج
+PROV_MODEL_DEFAULT ¦ Default: {0} ¦ الافتراضي: {0}
+PROV_BASE_URL ¦ Server address ¦ عنوان الخادم
+PROV_DEPLOYMENT ¦ Deployment name ¦ اسم النشر
+PROV_TEST ¦ Test connection ¦ اختبار الاتصال
+PROV_TESTING ¦ Testing… ¦ جارٍ الاختبار…
+PROV_TEST_OK ¦ Connected — answered in {0} ms ¦ متصل — أجاب خلال {0} مللي ثانية
+PROV_TEST_FAILED ¦ Connection failed: {0} ¦ فشل الاتصال: {0}
+PROV_MAKE_PREFERRED ¦ Make preferred ¦ اجعله المفضّل
+PROV_IS_PREFERRED ¦ This is your preferred provider ¦ هذا مزوّدك المفضّل
+PROV_PRIVACY_CLOUD ¦ Messages you send to the tutor go to {0}'s servers and are handled under their terms. ¦ تُرسل الرسائل التي ترسلها إلى المعلّم إلى خوادم {0} وتُعالج وفق شروطه.
+PROV_PRIVACY_LOCAL ¦ Requests go only to the server address you enter. Use HTTPS, or 127.0.0.1 on the same device. ¦ تُرسل الطلبات إلى عنوان الخادم الذي تدخله فقط. استخدم HTTPS، أو 127.0.0.1 على الجهاز نفسه.
+PROV_FEATURES ¦ Features used here ¦ الميزات المستخدمة هنا
+CAP_CHAT ¦ Conversation ¦ المحادثة
+CAP_STRUCTURED_FEEDBACK ¦ Corrections, writing feedback and stories ¦ التصحيحات وتقييم الكتابة والقصص
+CAP_TRANSLATION ¦ Translation ¦ الترجمة
+CAP_VISION ¦ Reading photos and scans ¦ قراءة الصور والمستندات الممسوحة
+PROV_SPEECH_NOTE ¦ Speech uses your device's speech services, not this provider. ¦ يستخدم الكلام خدمات الكلام في جهازك وليس هذا المزوّد.
+PROV_USAGE ¦ Used {0} times · about {1} tokens (approximate; check the provider dashboard for billing) ¦ استُخدم {0} مرة · نحو {1} رمز (تقريبي؛ راجع لوحة المزوّد للفوترة)
+PROV_DOCS ¦ Provider documentation: {0} ¦ وثائق المزوّد: {0}
+PROV_SUBSCRIPTION ¦ A consumer chat subscription usually does not include API access. Create an API key on the provider's developer platform. ¦ لا يتضمن اشتراك المحادثة للمستهلكين عادةً وصولًا إلى API. أنشئ مفتاح API من منصة المطوّرين لدى المزوّد.
+PROV_AZURE_NOTE ¦ Uses the documented Azure OpenAI REST API (Microsoft). Enter your resource endpoint and deployment name. ¦ يستخدم واجهة Azure OpenAI REST الموثّقة من Microsoft. أدخل عنوان المورد واسم النشر.
+LOCAL_TITLE ¦ On-device models ¦ النماذج على الجهاز
+LOCAL_INTRO ¦ Running a language model on a phone needs a compatible runtime, enough memory and storage. This build does not include an on-device runtime yet, so no models are downloaded. The compatibility check below shows what your device could support. ¦ يتطلب تشغيل نموذج لغوي على الهاتف بيئة تشغيل متوافقة وذاكرة وتخزينًا كافيين. لا يتضمن هذا الإصدار بيئة تشغيل على الجهاز بعد، لذا لا تُنزّل أي نماذج. يوضح فحص التوافق أدناه ما يمكن أن يدعمه جهازك.
+LOCAL_DEVICE ¦ This device ¦ هذا الجهاز
+LOCAL_DEVICE_INFO ¦ {0} MB memory · {1} MB free storage · {2} cores ¦ ذاكرة {0} ميغابايت · تخزين متاح {1} ميغابايت · {2} أنوية
+LOCAL_TIER_LOW ¦ Entry-level device ¦ جهاز بمواصفات أساسية
+LOCAL_TIER_MID ¦ Mid-range device ¦ جهاز متوسط
+LOCAL_TIER_HIGH ¦ High-end device ¦ جهاز عالي الأداء
+LOCAL_MODEL_SIZE ¦ {0} MB download · needs {1} MB memory · licence {2} ¦ تنزيل {0} ميغابايت · يحتاج {1} ميغابايت ذاكرة · الترخيص {2}
+LOCAL_REASON_RUNTIME_NOT_BUNDLED ¦ No on-device runtime in this build ¦ لا توجد بيئة تشغيل على الجهاز في هذا الإصدار
+LOCAL_REASON_NOT_64_BIT ¦ Needs a 64-bit device ¦ يحتاج إلى جهاز 64 بت
+LOCAL_REASON_INSUFFICIENT_RAM ¦ Not enough memory ¦ الذاكرة غير كافية
+LOCAL_REASON_INSUFFICIENT_STORAGE ¦ Not enough free storage ¦ مساحة التخزين المتاحة غير كافية
+LOCAL_REASON_OS_TOO_OLD ¦ Android version too old ¦ إصدار أندرويد قديم جدًا
+LOCAL_ALTERNATIVE ¦ Alternative: run a model on your computer (for example with Ollama) and connect it as "Local server" in AI providers. ¦ بديل: شغّل نموذجًا على حاسوبك (مثل Ollama) واربطه بوصفه «خادمًا محليًا» في مزوّدي الذكاء الاصطناعي.
+SET_VOICE ¦ Voice services ¦ خدمات الصوت
+SET_VOICE_SUB ¦ Pronunciation scoring and live voice calls ¦ تقييم النطق والمكالمات الصوتية المباشرة
+VOICE_INTRO ¦ Two optional cloud services use your own API keys. Everything else in the app works without them. ¦ خدمتان سحابيتان اختياريتان تستخدمان مفاتيح API الخاصة بك. كل ما عداهما في التطبيق يعمل بدونهما.
+VOICE_NEEDS_CONSENT ¦ Both services send your voice. Turn on cloud AI and allow "Voice recordings" in Privacy first. ¦ ترسل الخدمتان صوتك. فعّل الذكاء الاصطناعي السحابي واسمح بـ«التسجيلات الصوتية» في الخصوصية أولًا.
+VOICE_PRON_TITLE ¦ Pronunciation scoring (Azure AI Speech) ¦ تقييم النطق (Azure AI Speech)
+VOICE_PRON_BODY ¦ Scores every word and sound you say against the sentence, with accuracy, fluency and completeness. ¦ يقيّم كل كلمة وكل صوت تنطقه مقارنةً بالجملة، مع الدقة والطلاقة والاكتمال.
+VOICE_PRON_HOWTO ¦ In the Azure portal create a "Speech" resource, then copy Key 1 and its region (for example westeurope). A free tier exists; charges are set by Microsoft. ¦ أنشئ موردًا من نوع «Speech» في بوابة Azure، ثم انسخ المفتاح Key 1 والمنطقة (مثل westeurope). توجد فئة مجانية، والأسعار تحدّدها Microsoft.
+VOICE_REGION ¦ Region ¦ المنطقة
+VOICE_REGION_HINT ¦ Lowercase, e.g. westeurope, eastus, uaenorth ¦ بأحرف صغيرة، مثل westeurope أو eastus أو uaenorth
+VOICE_KEY ¦ Speech key ¦ مفتاح الخدمة
+VOICE_KEY_SAVED ¦ Key saved — enter a new one to replace it ¦ المفتاح محفوظ. أدخل مفتاحًا جديدًا لاستبداله
+VOICE_SAVED ¦ Saved. The key is stored encrypted on this device. ¦ تم الحفظ. المفتاح مخزّن مشفّرًا على هذا الجهاز.
+VOICE_BAD_REGION ¦ That region name is not valid. ¦ اسم المنطقة غير صالح.
+VOICE_TEST ¦ Test the key ¦ اختبر المفتاح
+VOICE_TEST_OK ¦ The key works. ¦ المفتاح يعمل.
+VOICE_TEST_BAD_KEY ¦ The service rejected the key or region. ¦ رفضت الخدمة المفتاح أو المنطقة.
+VOICE_TEST_FAILED ¦ Could not reach the service: {0} ¦ تعذّر الوصول إلى الخدمة: {0}
+VOICE_REMOVE_KEY ¦ Remove key ¦ احذف المفتاح
+VOICE_STATE_NOT_CONFIGURED ¦ Not set up ¦ غير مُعدّ
+VOICE_STATE_NO_CONSENT ¦ Voice not allowed in Privacy ¦ الصوت غير مسموح في الخصوصية
+VOICE_STATE_OFFLINE ¦ Offline ¦ دون اتصال
+VOICE_STATE_READY ¦ Ready ¦ جاهز
+VOICE_RT_TITLE ¦ Live voice calls (OpenAI Realtime) ¦ المكالمات الصوتية المباشرة (OpenAI Realtime)
+VOICE_RT_BODY ¦ Talk with your tutor like a phone call: low delay, and you can interrupt. Your sentences are still corrected in the transcript. ¦ تحدّث مع مدرّبك كأنها مكالمة هاتفية: تأخير قليل ويمكنك المقاطعة. وتظهر تصحيحات جملك في نص المحادثة.
+VOICE_RT_ADD_KEY ¦ Add an OpenAI key ¦ أضف مفتاح OpenAI
+VOICE_RT_MODEL ¦ Realtime model ¦ نموذج الصوت المباشر
+VOICE_RT_MODEL_HINT ¦ Default gpt-realtime. Check the provider's current model list. ¦ الافتراضي gpt-realtime. راجع قائمة النماذج الحالية لدى المزوّد.
+VOICE_RT_VOICE ¦ Tutor voice ¦ صوت المدرّب
+VOICE_RT_KEY_NOTE ¦ Uses the {0} key from AI providers. Voice calls cost more than text chat; prices are set by the provider. ¦ يستخدم مفتاح {0} من مزوّدي الذكاء الاصطناعي. المكالمات الصوتية أعلى كلفة من المحادثة النصية، والأسعار يحدّدها المزوّد.
+RT_STATE_NO_KEY ¦ No OpenAI key ¦ لا يوجد مفتاح OpenAI
+RT_STATE_NO_CONSENT ¦ Voice not allowed in Privacy ¦ الصوت غير مسموح في الخصوصية
+RT_STATE_OFFLINE ¦ Offline ¦ دون اتصال
+RT_STATE_READY ¦ Ready ¦ جاهز
+SYNC_TITLE ¦ Sync between devices ¦ المزامنة بين الأجهزة
+SYNC_BODY ¦ Keep your progress on your phone, tablet and computer in step through your own WebDAV storage (for example Nextcloud, ownCloud or a NAS). Everything is encrypted on this device with your passphrase before it is uploaded. ¦ حافظ على تقدّمك متطابقًا بين الهاتف والجهاز اللوحي والحاسوب عبر مساحة تخزين WebDAV خاصة بك (مثل Nextcloud أو ownCloud أو جهاز NAS). يُشفَّر كل شيء على هذا الجهاز بعبارة المرور قبل رفعه.
+SYNC_URL ¦ WebDAV address ¦ عنوان WebDAV
+SYNC_URL_HINT ¦ e.g. https://cloud.example.com/remote.php/dav/files/you ¦ مثال: https://cloud.example.com/remote.php/dav/files/you
+SYNC_USER ¦ User name ¦ اسم المستخدم
+SYNC_PASSWORD ¦ Password or app password ¦ كلمة المرور أو كلمة مرور التطبيق
+SYNC_PASSWORD_SAVED ¦ Password saved — enter a new one to replace it ¦ كلمة المرور محفوظة. أدخل جديدة لاستبدالها
+SYNC_PASSPHRASE ¦ Encryption passphrase ¦ عبارة مرور التشفير
+SYNC_PASSPHRASE_SAVED ¦ Passphrase saved — enter a new one to replace it ¦ عبارة المرور محفوظة. أدخل جديدة لاستبدالها
+SYNC_PASSPHRASE_HINT ¦ At least 10 characters. Use the same one on every device. If you lose it, the server copy cannot be read by anyone, including us. ¦ 10 أحرف على الأقل. استخدم العبارة نفسها على كل جهاز. إن فقدتها فلن يستطيع أحد قراءة النسخة المخزّنة، ولا نحن.
+SYNC_SAVED ¦ Saved. Secrets are stored encrypted on this device. ¦ تم الحفظ. البيانات السرية مخزّنة مشفّرة على هذا الجهاز.
+SYNC_NOW ¦ Sync now ¦ زامن الآن
+SYNC_LAST ¦ Last sync: {0} ¦ آخر مزامنة: {0}
+SYNC_NEVER ¦ Not synced yet ¦ لم تتم المزامنة بعد
+SYNC_DISCONNECT ¦ Disconnect this device ¦ افصل هذا الجهاز
+SYNC_NOTE ¦ Learning data is synced; device settings (theme, privacy, API keys) stay on each device. There is no merge: when both devices changed you choose which copy to keep. ¦ تُزامن بيانات التعلّم فقط، وتبقى إعدادات الجهاز (المظهر والخصوصية ومفاتيح API) على كل جهاز. لا يوجد دمج: إن تغيّر الجهازان معًا تختار النسخة التي تحتفظ بها.
+SYNC_RESULT_UPLOADED ¦ Your progress was uploaded. ¦ رُفع تقدّمك.
+SYNC_RESULT_DOWNLOADED ¦ Progress from your other device was loaded. ¦ حُمّل التقدّم من جهازك الآخر.
+SYNC_RESULT_UP_TO_DATE ¦ Everything is up to date. ¦ كل شيء محدَّث.
+SYNC_RESULT_CONFLICT ¦ Both copies changed. ¦ تغيّرت النسختان.
+SYNC_CONFLICT_TITLE ¦ Both devices have new progress ¦ لدى الجهازين تقدّم جديد
+SYNC_CONFLICT_BODY ¦ This device and the server copy both changed since the last sync. Keep this device (the server copy is replaced) or use the server copy (this device's new progress is replaced)? ¦ تغيّر هذا الجهاز والنسخة المخزّنة منذ آخر مزامنة. هل تحتفظ بهذا الجهاز (تُستبدل النسخة المخزّنة) أم تستخدم النسخة المخزّنة (يُستبدل التقدّم الجديد على هذا الجهاز)؟
+SYNC_KEEP_THIS ¦ Keep this device ¦ احتفظ بهذا الجهاز
+SYNC_USE_SERVER ¦ Use the server copy ¦ استخدم النسخة المخزّنة
+SYNC_ERR_SETUP ¦ Enter the address, user name, password and passphrase first. ¦ أدخل العنوان واسم المستخدم وكلمة المرور وعبارة المرور أولًا.
+SYNC_ERR_INSECURE ¦ Use an https:// address. ¦ استخدم عنوانًا يبدأ بـ https://.
+SYNC_ERR_AUTH ¦ The server rejected the user name or password. ¦ رفض الخادم اسم المستخدم أو كلمة المرور.
+SYNC_ERR_PASSPHRASE ¦ The passphrase does not match the one used on your other device. ¦ عبارة المرور لا تطابق المستخدمة على جهازك الآخر.
+SYNC_ERR_NOT_SYNC ¦ The file on the server is not a sync file from this app. ¦ الملف على الخادم ليس ملف مزامنة من هذا التطبيق.
+SYNC_ERR_NEWER ¦ The server copy was made by a newer version of the app. Update the app first. ¦ النسخة المخزّنة من إصدار أحدث من التطبيق. حدّث التطبيق أولًا.
+SYNC_ERR_CHANGED ¦ Another device synced at the same moment. Tap Sync now again. ¦ زامن جهاز آخر في اللحظة نفسها. اضغط «زامن الآن» مجددًا.
+SYNC_ERR_SHORT_PASSPHRASE ¦ The passphrase must have at least 10 characters. ¦ يجب أن تتكوّن عبارة المرور من 10 أحرف على الأقل.
+SYNC_ERR_OTHER ¦ Sync failed: {0} ¦ فشلت المزامنة: {0}
+PROV_PER_FEATURE ¦ Which AI for each feature ¦ أي ذكاء اصطناعي لكل ميزة
+PROV_PER_FEATURE_BODY ¦ For example Claude for conversations, Gemini for reading photos and DeepSeek for corrections. "Preferred" uses your preferred provider. ¦ مثلًا Claude للمحادثات، وGemini لقراءة الصور، وDeepSeek للتصحيح. «المفضّل» يستخدم مزوّدك المفضّل.
+PROV_PER_FEATURE_NONE ¦ Turn on a provider and save its key to choose it here. ¦ فعّل مزوّدًا واحفظ مفتاحه لتختاره هنا.
+PROV_FEATURE_DEFAULT ¦ Preferred ¦ المفضّل
+PROV_FEATURE_UNSUPPORTED ¦ None of your providers supports this feature yet. ¦ لا يدعم أيٌّ من مزوّديك هذه الميزة بعد.
+PROV_GET_KEY ¦ Get a key: {0} ¦ احصل على مفتاح: {0}
+PROV_MODEL_REQUIRED ¦ Required: the model id from your provider ¦ مطلوب: معرّف النموذج لدى مزوّدك
+PROV_MODEL_SUGGESTED ¦ Common models ¦ نماذج شائعة
+PROV_MODELS_LOAD ¦ Load the models of my account ¦ حمّل نماذج حسابي
+PROV_MODELS_LOADING ¦ Loading models… ¦ جارٍ تحميل النماذج…
+PROV_MODELS_FOUND ¦ {0} models available (showing {1}; type in the model field to filter) ¦ {0} نموذجًا متاحًا (يُعرض {1}؛ اكتب في حقل النموذج للتصفية)
+PROV_MODELS_EMPTY ¦ The provider returned no models. ¦ لم يُرجع المزوّد أي نماذج.
+PROV_MODELS_UNSUPPORTED ¦ This provider has no model list; type the model or deployment name. ¦ لا يوفّر هذا المزوّد قائمة نماذج؛ اكتب اسم النموذج أو النشر.
+PROV_MODELS_FAILED ¦ Could not load models: {0} ¦ تعذّر تحميل النماذج: {0}

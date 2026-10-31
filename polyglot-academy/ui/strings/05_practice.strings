@@ -1,0 +1,252 @@
+PRACTICE_TITLE ¦ Practice ¦ التدريب
+PRACTICE_PHRASEBOOK ¦ Travel phrasebook ¦ دليل عبارات السفر
+PRACTICE_PHRASEBOOK_SUB ¦ The most-used phrases for daily life and travel ¦ أكثر العبارات استخدامًا في الحياة اليومية والسفر
+PHRASEBOOK_TITLE ¦ Travel phrasebook ¦ دليل عبارات السفر
+PHRASEBOOK_BODY ¦ The phrases you need most in daily life and when travelling. Tap a phrase to hear it, and add the ones you want to remember to your reviews. ¦ العبارات التي تحتاجها أكثر في الحياة اليومية وفي السفر. اضغط لسماع العبارة، وأضف ما تريد تذكّره إلى مراجعاتك.
+PHRASEBOOK_ADD ¦ Add to reviews ¦ أضف إلى المراجعات
+PHRASEBOOK_ADDED ¦ Added to your reviews ¦ أُضيفت إلى مراجعاتك
+PHRASE_TOPIC_ESSENTIALS ¦ Essentials ¦ الأساسيات
+PHRASE_TOPIC_EMERGENCY ¦ Emergencies ¦ الطوارئ
+PHRASE_TOPIC_RESTAURANT ¦ Restaurant ¦ المطعم
+PHRASE_TOPIC_HOTEL ¦ Hotel ¦ الفندق
+PHRASE_TOPIC_TRANSPORT ¦ Transport ¦ المواصلات
+PHRASE_TOPIC_SIGHTSEEING ¦ Sightseeing ¦ السياحة
+PRACTICE_SPEAKING ¦ Speaking path ¦ مسار المحادثة
+PRACTICE_SPEAKING_SUB ¦ Speaking missions from A1 to C1 ¦ مهام محادثة من A1 إلى C1
+SPEAKING_TITLE ¦ Speaking path ¦ مسار المحادثة
+SPEAKING_BODY ¦ Fluency comes from speaking a lot, at the right level. Each mission is a real conversation with your tutor with clear tasks; it counts when you complete the tasks in turns that are long enough for the level. ¦ تأتي الطلاقة من كثرة التحدث في المستوى المناسب. كل مهمة محادثة حقيقية مع معلّمك بمهام واضحة، وتُحتسب عندما تنجز المهام بجمل طويلة بما يكفي للمستوى.
+SPEAKING_NEXT ¦ Your next mission ¦ مهمتك التالية
+SPEAKING_START ¦ Start mission ¦ ابدأ المهمة
+SPEAKING_AGAIN ¦ Practise again ¦ تدرّب مرة أخرى
+SPEAKING_ALL_DONE ¦ You have passed every mission on the path. Keep talking with your tutor about anything you like. ¦ أنجزت كل مهام المسار. واصل الحديث مع معلّمك في أي موضوع تحبه.
+SPEAKING_LEVEL ¦ {0} · {1} of {2} passed ¦ {0} · أُنجز {1} من {2}
+SPEAKING_PASSED ¦ Passed ¦ أُنجزت
+SPEAKING_NEW ¦ New ¦ جديدة
+SPEAKING_ATTEMPTS ¦ {0} attempt|{0} attempts ¦ لا محاولات|محاولة واحدة|محاولتان|{0} محاولات|{0} محاولة|{0} محاولة
+SPEAKING_STATS ¦ Your speaking ¦ محادثتك
+SPEAKING_NO_DATA ¦ No speaking data yet. Your measurements appear after your first conversation. ¦ لا توجد بيانات محادثة بعد. تظهر قياساتك بعد محادثتك الأولى.
+SPEAKING_WORDS_PER_TURN ¦ Words per turn (median) ¦ كلمات في كل دور (الوسيط)
+SPEAKING_LONGEST ¦ Longest turn (words) ¦ أطول دور (كلمات)
+SPEAKING_WPM ¦ Words per minute ¦ كلمة في الدقيقة
+SPEAKING_SPOKEN_SHARE ¦ Turns spoken aloud ¦ الأدوار المنطوقة
+SPEAKING_VARIETY ¦ Vocabulary variety: {0}% different words in each 50-word stretch ¦ تنوّع المفردات: ⁦{0}٪⁩ كلمات مختلفة في كل 50 كلمة
+SPEAKING_VARIETY_LOW ¦ Vocabulary variety appears after about 50 words of speaking. ¦ يظهر تنوّع المفردات بعد نحو 50 كلمة من الحديث.
+SPEAKING_CORRECTIONS ¦ Corrections: {0} per 10 turns ¦ التصحيحات: {0} لكل 10 أدوار
+SPEAKING_WPM_NONE ¦ Words per minute needs at least three spoken turns with the microphone. ¦ يحتاج حساب الكلمات في الدقيقة إلى ثلاثة أدوار منطوقة على الأقل بالميكروفون.
+SPEAKING_STATS_NOTE ¦ Measured only from what you said in this app. Speaking time comes from speech recognition and is approximate; Mandarin word counts are estimated from characters. ¦ تُقاس فقط مما قلته في هذا التطبيق. زمن الحديث مأخوذ من التعرّف على الكلام وهو تقريبي، وعدد الكلمات الصينية مقدَّر من عدد الحروف.
+SPEAKING_WEEKLY ¦ Words per turn, by week ¦ الكلمات في كل دور حسب الأسبوع
+SPEAKING_WEEKLY_DESC ¦ Median words per turn by week: {0} ¦ وسيط الكلمات في كل دور حسب الأسبوع: {0}
+SPEAKING_ABOUT_TITLE ¦ How missions count ¦ كيف تُحتسب المهام
+SPEAKING_ABOUT ¦ A mission passes when you take enough turns, your typical turn is long enough for the level, and the tasks are confirmed: by the AI tutor, or by finishing the built-in role-play when you practise offline. Levels are practice targets, not an official certificate. Missions without a built-in role-play need an AI tutor (cloud or a local model). ¦ تُحتسب المهمة عندما تأخذ أدوارًا كافية، ويكون طول دورك المعتاد مناسبًا للمستوى، وتُؤكَّد المهام: من معلّم الذكاء الاصطناعي، أو بإكمال الموقف المدمج عند التدرّب دون اتصال. المستويات أهداف تدريبية وليست شهادة رسمية. المهام التي لا يقابلها موقف مدمج تحتاج إلى معلّم ذكاء اصطناعي (سحابي أو نموذج محلي).
+PRACTICE_REVIEW ¦ Spaced review ¦ المراجعة المتباعدة
+PRACTICE_REVIEW_SUB ¦ Words and phrases that are due ¦ الكلمات والعبارات المستحقة
+PRACTICE_MISTAKES ¦ Mistake review ¦ مراجعة الأخطاء
+PRACTICE_MISTAKES_SUB ¦ Learn from what went wrong ¦ تعلّم مما أخطأت فيه
+PRACTICE_GRAMMAR ¦ Grammar ¦ القواعد
+PRACTICE_GRAMMAR_SUB ¦ Rules, examples and common mistakes ¦ القواعد والأمثلة والأخطاء الشائعة
+PRACTICE_READING ¦ Reading ¦ القراءة
+PRACTICE_READING_SUB ¦ Graded texts with audio and questions ¦ نصوص متدرجة مع الصوت والأسئلة
+PRACTICE_LISTENING ¦ Listening and dictation ¦ الاستماع والإملاء
+PRACTICE_LISTENING_SUB ¦ Hear it, type it ¦ استمع واكتب
+PRACTICE_WRITING ¦ Writing ¦ الكتابة
+PRACTICE_WRITING_SUB ¦ Guided and free writing with feedback ¦ كتابة موجّهة وحرّة مع ملاحظات
+PRACTICE_PRONUNCIATION ¦ Pronunciation ¦ النطق
+PRACTICE_PRONUNCIATION_SUB ¦ Listen and repeat ¦ استمع وكرّر
+PRACTICE_TONES ¦ Tone trainer ¦ مدرّب النغمات
+PRACTICE_CHARS ¦ Character writing ¦ كتابة الحروف الصينية
+PRACTICE_CHARS_SUB ¦ Trace and write Chinese characters ¦ تتبّع الحروف الصينية واكتبها
+PRACTICE_TONES_SUB ¦ Hear and tell apart Mandarin tones ¦ استمع وميّز نغمات الصينية
+PRACTICE_RELAX ¦ Relax and focus ¦ استرخِ وركّز
+PRACTICE_RELAX_SUB ¦ Optional breathing before you practise ¦ تنفّس اختياري قبل التدريب
+PRACTICE_VOCAB ¦ My vocabulary ¦ مفرداتي
+PRACTICE_VOCAB_SUB ¦ Saved words and your phrasebook ¦ الكلمات المحفوظة ودفتر عباراتك
+PRACTICE_SCENARIOS ¦ Role-play scenarios ¦ مواقف تمثيل الأدوار
+PRACTICE_SCENARIOS_SUB ¦ Rehearse real situations ¦ تدرّب على مواقف حقيقية
+REVIEW_TITLE ¦ Review ¦ المراجعة
+REVIEW_DUE_COUNT ¦ {0} card to review|{0} cards to review ¦ لا بطاقات للمراجعة|بطاقة واحدة للمراجعة|بطاقتان للمراجعة|{0} بطاقات للمراجعة|{0} بطاقة للمراجعة|{0} بطاقة للمراجعة
+REVIEW_EMPTY_TITLE ¦ All caught up ¦ لا شيء متأخر
+REVIEW_EMPTY_BODY ¦ Nothing is due. Words from your lessons will come back here just before you're likely to forget them. ¦ لا شيء مستحق الآن. ستعود كلمات دروسك إلى هنا قبيل الوقت الذي يُحتمل أن تنساها فيه.
+REVIEW_SHOW ¦ Show answer ¦ إظهار الإجابة
+REVIEW_RATE ¦ How well did you remember? ¦ إلى أي حد تذكّرتها؟
+RATING_AGAIN ¦ Again ¦ مجددًا
+RATING_HARD ¦ Hard ¦ صعب
+RATING_GOOD ¦ Good ¦ جيد
+RATING_EASY ¦ Easy ¦ سهل
+RATING_DESC ¦ {0}, next review {1} ¦ {0}، المراجعة التالية {1}
+REVIEW_DONE_TITLE ¦ Session complete ¦ اكتملت الجلسة
+REVIEW_DONE_BODY ¦ {0} card reviewed|{0} cards reviewed ¦ لم تُراجَع بطاقات|رُوجعت بطاقة واحدة|رُوجعت بطاقتان|رُوجعت {0} بطاقات|رُوجعت {0} بطاقة|رُوجعت {0} بطاقة
+REVIEW_HOW ¦ Spaced repetition brings each item back just before you are likely to forget it, so a few minutes a day goes a long way. ¦ تعيد المراجعة المتباعدة كل عنصر قبيل احتمال نسيانه، لذا تُحدث دقائق قليلة يوميًا فرقًا كبيرًا.
+REVIEW_LEECH ¦ This one keeps slipping away. Try writing your own example sentence for it. ¦ هذه الكلمة تتفلّت منك مرارًا، جرّب أن تكتب لها جملة مثال من عندك.
+MISTAKES_TITLE ¦ Mistake review ¦ مراجعة الأخطاء
+MISTAKES_EMPTY_TITLE ¦ No open mistakes ¦ لا أخطاء مفتوحة
+MISTAKES_EMPTY_BODY ¦ When you get an exercise wrong it appears here, so you can see the pattern and fix it. ¦ عندما تخطئ في تمرين يظهر هنا، لترى النمط وتصحّحه.
+MISTAKE_YOURS ¦ You wrote: {0} ¦ كتبت: {0}
+MISTAKE_CORRECT ¦ Correct: {0} ¦ الصحيح: {0}
+MISTAKE_TIMES ¦ Seen {0} time|Seen {0} times ¦ لم يتكرر|تكرر مرة واحدة|تكرر مرتين|تكرر {0} مرات|تكرر {0} مرة|تكرر {0} مرة
+MISTAKE_RESOLVE ¦ I've got it now ¦ فهمتها الآن
+MISTAKE_RESOLVED ¦ Resolved ¦ تمت المعالجة
+MISTAKES_SHOW_RESOLVED ¦ Show resolved ¦ إظهار ما عولج
+GRAMMAR_TITLE ¦ Grammar ¦ القواعد
+GRAMMAR_RULE ¦ The rule ¦ القاعدة
+GRAMMAR_EXAMPLES ¦ Examples ¦ أمثلة
+GRAMMAR_MISTAKES ¦ Common mistakes ¦ أخطاء شائعة
+GRAMMAR_INCORRECT ¦ Incorrect ¦ غير صحيح
+GRAMMAR_PRACTISE ¦ Practise in a lesson ¦ تدرّب عليها في درس
+READING_TITLE ¦ Reading ¦ القراءة
+READING_TAP_HINT ¦ Tap a sentence to hear it and see its translation. Highlighted words are in your course. ¦ اضغط على جملة لسماعها ورؤية ترجمتها. الكلمات المظلّلة موجودة في دورتك.
+READING_QUESTIONS ¦ Check your understanding ¦ اختبر فهمك
+READING_SAVE_WORDS ¦ Add highlighted words to review ¦ أضف الكلمات المظلّلة إلى المراجعة
+READING_WORDS_ADDED ¦ Words added to your reviews ¦ أُضيفت الكلمات إلى مراجعاتك
+READING_RESULT ¦ {0} of {1} answered correctly ¦ أجبت عن {0} من {1} إجابة صحيحة
+READING_PLAY_ALL ¦ Play whole text ¦ تشغيل النص كاملًا
+LISTENING_TITLE ¦ Listening and dictation ¦ الاستماع والإملاء
+LISTENING_SPEED ¦ Playback speed ¦ سرعة التشغيل
+LISTENING_REVEAL ¦ Show the sentence ¦ إظهار الجملة
+LISTENING_NEXT ¦ Next sentence ¦ الجملة التالية
+LISTENING_INTRO ¦ Listen as many times as you like, then type what you hear. Small spelling slips are pointed out but not penalised heavily. ¦ استمع كما تشاء ثم اكتب ما تسمعه. نشير إلى أخطاء الإملاء البسيطة دون معاقبة شديدة.
+WRITING_TITLE ¦ Writing ¦ الكتابة
+WRITING_CHOOSE ¦ Choose a prompt ¦ اختر موضوعًا
+WRITING_MIN ¦ At least {0} words ¦ {0} كلمة على الأقل
+WRITING_PLACEHOLDER ¦ Write your text here ¦ اكتب نصك هنا
+WRITING_CHECK_BASIC ¦ Check basics ¦ فحص الأساسيات
+WRITING_CHECK_AI ¦ Get AI feedback ¦ احصل على ملاحظات الذكاء الاصطناعي
+WRITING_AI_BLOCKED ¦ AI feedback isn't available: your privacy settings don't allow sending writing to cloud AI, or no provider is set up. Basic checks still work. ¦ ملاحظات الذكاء الاصطناعي غير متاحة: إعدادات الخصوصية لا تسمح بإرسال الكتابة إلى الذكاء الاصطناعي السحابي، أو لم يُهيأ مزوّد. ما زالت الفحوص الأساسية تعمل.
+WRITING_AI_FAILED ¦ AI feedback failed: {0} ¦ تعذّر الحصول على ملاحظات الذكاء الاصطناعي: {0}
+WRITING_SOURCE_OFFLINE ¦ Basic checks done on this device. They don't judge grammar. ¦ فحوص أساسية على هذا الجهاز، ولا تقيّم القواعد.
+WRITING_SOURCE_AI ¦ Feedback from {0}. AI can be wrong — double-check anything surprising. ¦ ملاحظات من {0}. قد يخطئ الذكاء الاصطناعي، فتحقّق من أي شيء يثير الاستغراب.
+WRITING_CORRECTIONS ¦ Corrections ¦ التصحيحات
+WRITING_OPTIONAL_STYLE ¦ Optional style suggestion ¦ اقتراح أسلوبي اختياري
+WRITING_IMPROVED ¦ A polished version ¦ نسخة منقّحة
+WRITING_DRAFTS ¦ Drafts this session ¦ مسودات هذه الجلسة
+WRITING_DRAFT_N ¦ Draft {0} · {1} ¦ المسودة {0} · {1}
+WCHECK_TOO_SHORT ¦ A bit short — aim for the suggested length. ¦ قصير قليلًا، حاول الوصول إلى الطول المقترح.
+WCHECK_GOOD_LENGTH ¦ Good length. ¦ طول مناسب.
+WCHECK_SUGGESTED_WORDS_MISSING ¦ Try to include some of the suggested words. ¦ حاول تضمين بعض الكلمات المقترحة.
+WCHECK_USED_SUGGESTED_WORDS ¦ You used suggested words: {0} ¦ استخدمت كلمات مقترحة: {0}
+WCHECK_REPEATED_WORDS ¦ Repeated words: {0}. Can you vary them? ¦ كلمات مكررة: {0}. هل يمكنك تنويعها؟
+WCHECK_MISSING_CAPITAL ¦ Start the text with a capital letter. ¦ ابدأ النص بحرف كبير.
+WCHECK_MISSING_END_PUNCTUATION ¦ End with punctuation. ¦ اختم بعلامة ترقيم.
+PRON_TITLE ¦ Pronunciation ¦ النطق
+PRON_BODY ¦ Listen to a model sentence, then say it yourself. Slow the audio down if it helps. ¦ استمع إلى الجملة النموذجية ثم قلها بنفسك، وأبطئ الصوت إن كان ذلك يساعدك.
+CHARS_TITLE ¦ Character writing ¦ كتابة الحروف الصينية
+CHARS_BODY ¦ Write each character in the box with your finger. Start by tracing the faded guide, then turn it off and write from memory. ¦ اكتب كل حرف في المربع بإصبعك. ابدأ بتتبّع الحرف الباهت ثم أخفِه واكتب من الذاكرة.
+CHARS_NOT_MANDARIN ¦ Character writing is for Mandarin. Switch your active language to Mandarin to track progress there. ¦ كتابة الحروف مخصّصة للصينية، فبدّل لغتك النشطة إلى الصينية لتتابع تقدّمك فيها.
+CHARS_STROKES ¦ {0} strokes ¦ عدد الضربات: {0}
+CHARS_ROLE_MEANING ¦ meaning ¦ معنى
+CHARS_ROLE_SOUND ¦ sound ¦ صوت
+CHARS_ROLE_PART ¦ part ¦ جزء
+CHARS_GUIDE ¦ Show guide ¦ إظهار الحرف الإرشادي
+CHARS_GUIDE_SUB ¦ Turn off to write from memory ¦ أخفِه لتكتب من الذاكرة
+CHARS_BOX_DESC ¦ Writing box for {0}. {1} strokes drawn. ¦ مربع كتابة الحرف {0}. عدد الضربات المرسومة: {1}.
+CHARS_UNDO ¦ Undo stroke ¦ تراجع عن ضربة
+CHARS_CLEAR ¦ Clear ¦ مسح
+CHARS_CHECK ¦ Check ¦ تحقّق
+CHARS_GOOD ¦ Well written — the shape matches. ¦ أحسنت، الشكل مطابق.
+CHARS_CLOSE ¦ Close. Compare with the guide: a stroke may be missing or out of place. ¦ قريب. قارن بالحرف الإرشادي، فقد تكون هناك ضربة ناقصة أو في غير مكانها.
+CHARS_TRY_AGAIN ¦ Not quite. Turn on the guide and trace it once more. ¦ ليس تمامًا. أظهر الحرف الإرشادي وتتبّعه مرة أخرى.
+CHARS_EMPTY ¦ Draw the character first. ¦ ارسم الحرف أولًا.
+CHARS_SCORES ¦ Shape covered: {0}% · ink on the character: {1}% ¦ نسبة تغطية الشكل: ⁦{0}٪⁩ · الحبر على الحرف: ⁦{1}٪⁩
+CHARS_STROKES_MORE ¦ You drew {0} strokes; this character has {1}. ¦ رسمت {0} ضربات، وهذا الحرف فيه {1}.
+CHARS_STROKES_FEWER ¦ You drew {0} strokes; this character has {1}. Some strokes may be joined. ¦ رسمت {0} ضربات، وهذا الحرف فيه {1}، وربما وصلت بعض الضربات ببعضها.
+CHARS_ABOUT_TITLE ¦ How checking works ¦ كيف يتم التحقق
+CHARS_ABOUT ¦ Your writing is compared with the character's shape on this device, and its stroke order and direction with stroke data from Make Me a Hanzi (Arphic Public License). Both checks are tolerant comparisons, not handwriting recognition. Parts are shown for the course characters, simplified and traditional; for the other characters the stroke count comes from the stroke data. ¦ تُقارن كتابتك بشكل الحرف على هذا الجهاز، ويُقارن ترتيب ضرباتك واتجاهها ببيانات الضربات من مشروع Make Me a Hanzi (رخصة Arphic العامة). المقارنتان تقريبيتان وليستا تعرّفًا على الكتابة اليدوية. الأجزاء مشروحة لحروف الدروس، المبسّطة والتقليدية، ويُؤخذ عدد الضربات لبقية الحروف من بيانات الضربات.
+TONES_TITLE ¦ Tone trainer ¦ مدرّب النغمات
+TONES_BODY ¦ Mandarin has four tones plus a neutral tone. The same syllable with a different tone is a different word. ¦ للصينية أربع نغمات ونغمة محايدة، والمقطع نفسه بنغمة مختلفة كلمة مختلفة.
+TONES_SANDHI ¦ When two 3rd tones meet, the first is said as a 2nd tone: nǐ hǎo sounds like ní hǎo. ¦ عند تتابع نغمتين ثالثتين تُنطق الأولى كنغمة ثانية: nǐ hǎo تُنطق ní hǎo.
+TONES_SCORE ¦ {0} of {1} correct ¦ {0} من {1} صحيحة
+TONES_NOT_MANDARIN ¦ The tone trainer is for Mandarin. Switch your active language to Mandarin to use it. ¦ مدرّب النغمات مخصّص للصينية، فبدّل لغتك النشطة إلى الصينية لاستخدامه.
+TONES_CHARACTERS ¦ Show traditional characters ¦ إظهار الحروف التقليدية
+RELAX_TITLE ¦ Relax and focus ¦ استرخِ وركّز
+RELAX_BODY ¦ A short, optional breathing exercise. Stop whenever you like. ¦ تمرين تنفّس قصير واختياري، يمكنك التوقف متى شئت.
+RELAX_START ¦ Begin ¦ ابدأ
+RELAX_STOP ¦ Stop ¦ توقّف
+RELAX_INHALE ¦ Breathe in ¦ شهيق
+RELAX_HOLD ¦ Hold ¦ احبس
+RELAX_EXHALE ¦ Breathe out ¦ زفير
+RELAX_HOLD_EMPTY ¦ Rest ¦ استرح
+RELAX_CYCLE ¦ Round {0} of {1} ¦ الجولة {0} من {1}
+RELAX_DONE ¦ Nicely done. Ready when you are. ¦ أحسنت. ابدأ متى كنت مستعدًا.
+RELAX_REFLECT ¦ Reflection: what is one thing you learned today? ¦ تأمّل: ما الشيء الذي تعلّمته اليوم؟
+RELAX_ROUNDS ¦ Rounds ¦ الجولات
+RELAX_SECONDS ¦ {0} seconds ¦ {0} ثانية
+STORY_INTRO ¦ Short graded stories with audio. Tap any word to see its meaning and save it to your reviews. ¦ قصص قصيرة متدرّجة مع الصوت. اضغط على أي كلمة لترى معناها وتحفظها في مراجعاتك.
+STORY_CREATE ¦ A story about what you like ¦ قصة عمّا تحبّه
+STORY_CREATE_BODY ¦ Tell the AI tutor a topic and it writes a new story at your level, with translations, a glossary and questions. ¦ اكتب موضوعًا وسيكتب المدرّب الذكي قصة جديدة بمستواك، مع الترجمة ومسرد للكلمات وأسئلة.
+STORY_INTEREST ¦ Topic (e.g. football, cooking) ¦ الموضوع (مثل: كرة القدم، الطبخ)
+STORY_LEVEL ¦ Level ¦ المستوى
+STORY_WRITE ¦ Write my story ¦ اكتب قصتي
+STORY_NEEDS_AI ¦ Writing new stories needs an AI provider. The built-in stories below work offline. ¦ كتابة قصص جديدة تحتاج إلى مزوّد ذكاء اصطناعي. القصص المدمجة أدناه تعمل دون اتصال.
+STORY_FAILED ¦ The story could not be written: {0} ¦ تعذّرت كتابة القصة: {0}
+STORY_AI_NOTE ¦ Only the topic and your level are sent to the AI provider. ¦ يُرسل الموضوع ومستواك فقط إلى مزوّد الذكاء الاصطناعي.
+STORY_MINE ¦ Your stories ¦ قصصك
+STORY_BUILT_IN ¦ Course stories ¦ قصص الدورة
+STORY_AI_WRITTEN ¦ Written by AI ¦ كتبها الذكاء الاصطناعي
+STORY_TAPPABLE ¦ Tap words ¦ كلمات قابلة للضغط
+STORY_DELETE ¦ Delete story? ¦ حذف القصة؟
+STORY_DELETE_BODY ¦ “{0}” will be removed. Words you saved stay in your reviews. ¦ ستُحذف «{0}». الكلمات التي حفظتها تبقى في مراجعاتك.
+STORY_AI_CHECK ¦ This story was written by AI. It is usually correct, but it may contain mistakes. ¦ كتب هذه القصةَ الذكاءُ الاصطناعي. هي صحيحة عادةً لكنها قد تحتوي على أخطاء.
+STORY_TAP_HINT ¦ Tap a word for its meaning. Use the buttons under each sentence to hear it or see its translation. ¦ اضغط على كلمة لمعرفة معناها. استخدم الأزرار تحت كل جملة لسماعها أو رؤية ترجمتها.
+STORY_TRANSLATE ¦ Show translation ¦ أظهر الترجمة
+STORY_NO_MEANING ¦ No meaning is saved for this word yet. Try the sentence translation. ¦ لا يوجد معنى محفوظ لهذه الكلمة بعد. جرّب ترجمة الجملة.
+STORY_SAVE_WORD ¦ Add to my reviews ¦ أضف إلى مراجعاتي
+STORY_WORD_SAVED ¦ Added to your reviews ¦ أُضيفت إلى مراجعاتك
+STORY_MARK_READ ¦ I've read it ¦ قرأتها
+STORY_DONE ¦ Story finished — well done! ¦ أنهيت القصة. أحسنت!
+STORY_TOPIC_FOOTBALL ¦ football ¦ كرة القدم
+STORY_TOPIC_COOKING ¦ cooking ¦ الطبخ
+STORY_TOPIC_TRAVEL ¦ travel ¦ السفر
+STORY_TOPIC_MUSIC ¦ music ¦ الموسيقى
+STORY_TOPIC_TECHNOLOGY ¦ technology ¦ التقنية
+STORY_TOPIC_FAMILY ¦ family ¦ العائلة
+STORY_TOPIC_ANIMALS ¦ animals ¦ الحيوانات
+STORY_TOPIC_HISTORY ¦ history ¦ التاريخ
+PRON_DETAIL_TITLE ¦ Detailed scoring ¦ تقييم مفصّل
+PRON_DETAIL_SETUP ¦ Get a score for every word and sound by connecting a pronunciation service (your own Azure AI Speech key). ¦ احصل على درجة لكل كلمة وكل صوت بربط خدمة تقييم النطق (مفتاح Azure AI Speech الخاص بك).
+PRON_DETAIL_SET_UP ¦ Set up ¦ إعداد
+PRON_DETAIL_BODY ¦ Read this sentence aloud, then tap Stop: ¦ اقرأ هذه الجملة بصوت عالٍ ثم اضغط «إيقاف»:
+PRON_DETAIL_RECORD ¦ Record and score ¦ سجّل وقيّم
+PRON_DETAIL_STOP ¦ Stop ¦ إيقاف
+PRON_DETAIL_LISTENING ¦ Recording… ¦ جارٍ التسجيل…
+PRON_DETAIL_PRIVACY ¦ The recording is sent to Azure AI Speech for scoring and is not saved by the app. ¦ يُرسل التسجيل إلى Azure AI Speech للتقييم ولا يحفظه التطبيق.
+PRON_ERR_PERMISSION ¦ Microphone permission is needed. ¦ يلزم إذن الميكروفون.
+PRON_ERR_MIC ¦ The microphone could not be used. ¦ تعذّر استخدام الميكروفون.
+PRON_ERR_QUOTA ¦ The speech service limit was reached. Try again later. ¦ بلغت حدّ خدمة الصوت. حاول لاحقًا.
+PRON_ERR_NO_SPEECH ¦ No speech was heard. Speak a little louder and closer to the microphone. ¦ لم يُسمع كلام. تحدّث بصوت أعلى قليلًا وأقرب إلى الميكروفون.
+PRON_ERR_TOO_SHORT ¦ The recording was too short. ¦ التسجيل قصير جدًا.
+PRON_ERR_LANGUAGE ¦ Detailed pronunciation scoring isn't available for this language yet. You can still practise by listening and repeating. ¦ التقييم التفصيلي للنطق غير متاح لهذه اللغة بعد. يمكنك مواصلة التدرّب بالاستماع والتكرار.
+PRON_ERR_OTHER ¦ Scoring failed: {0} ¦ فشل التقييم: {0}
+PRON_SCORE_OVERALL ¦ Overall ¦ الإجمالي
+PRON_SCORE_ACCURACY ¦ Accuracy ¦ الدقة
+PRON_SCORE_FLUENCY ¦ Fluency ¦ الطلاقة
+PRON_SCORE_COMPLETENESS ¦ Completeness ¦ الاكتمال
+PRON_SCORE_PROSODY ¦ Rhythm and intonation: {0} ¦ الإيقاع والتنغيم: {0}
+PRON_HEARD ¦ Heard: {0} ¦ ما سُمع: {0}
+PRON_WORDS_TAP ¦ Tap a word to see its sounds ¦ اضغط على كلمة لرؤية أصواتها
+PRON_WORD_DESC ¦ {0}: {1} points, {2} ¦ {0}: {1} نقطة، {2}
+PRON_WORD_SCORE ¦ Score {0} · {1} ¦ الدرجة {0} · {1}
+PRON_NO_PHONEMES ¦ No sound-level scores for this word. ¦ لا توجد درجات للأصوات في هذه الكلمة.
+PRON_WEAK_SOUNDS ¦ Sounds to practise: {0} ¦ أصوات تحتاج إلى تدريب: {0}
+PRON_GREAT ¦ Very clear pronunciation. Well done! ¦ نطق واضح جدًا. أحسنت!
+PRON_SCORED_BY ¦ Scored by {0}. Scores are an automatic estimate. ¦ قيّمته خدمة {0}. الدرجات تقدير آلي.
+PRON_ERR_TYPE_NONE ¦ good ¦ جيد
+PRON_ERR_TYPE_MISPRONUNCIATION ¦ mispronounced ¦ نُطقت بشكل خاطئ
+PRON_ERR_TYPE_OMISSION ¦ missed ¦ لم تُنطق
+PRON_ERR_TYPE_INSERTION ¦ extra word ¦ كلمة زائدة
+PRON_ERR_TYPE_UNEXPECTED_BREAK ¦ unexpected pause ¦ توقف غير متوقع
+PRON_ERR_TYPE_MISSING_BREAK ¦ missing pause ¦ توقف ناقص
+PRON_ERR_TYPE_MONOTONE ¦ flat intonation ¦ تنغيم رتيب
+CHARS_SHOW_ORDER ¦ Show stroke order ¦ اعرض ترتيب الضربات
+CHARS_ORDER_TITLE ¦ Stroke order ¦ ترتيب الضربات
+CHARS_ORDER_OK ¦ All {0} strokes are in the right order and direction. ¦ الضربات الـ{0} كلها بالترتيب والاتجاه الصحيحين.
+CHARS_ORDER_REVERSED ¦ Stroke {0} goes the other way. ¦ الضربة {0} في الاتجاه المعاكس.
+CHARS_ORDER_SWAPPED ¦ Stroke {0} belongs elsewhere in the order. ¦ الضربة {0} مكانها مختلف في الترتيب.
+CHARS_ORDER_DIFFERENT ¦ Stroke {0} does not match the expected stroke. ¦ الضربة {0} لا تطابق الضربة المتوقعة.
+CHARS_ORDER_MISSING ¦ Stroke {0} of {1} is missing. ¦ الضربة {0} من {1} ناقصة.
+CHARS_ORDER_EXTRA ¦ There are more strokes than the {0} expected. ¦ عدد الضربات أكثر من {0}.
+CHARS_ORDER_COUNT ¦ ({0} of {1} strokes right) ¦ ({0} من {1} ضربات صحيحة)
+CHARS_SET ¦ Characters to practise ¦ الحروف التي تتدرّب عليها
+CHARS_SET_COURSE ¦ Course ¦ حروف الدروس
+CHARS_SET_SUB ¦ The course characters come with a breakdown into parts. Each word-list level adds the characters its words introduce. ¦ حروف الدروس مشروحة بأجزائها. وكل مستوى من قوائم الكلمات يضيف الحروف التي تظهر لأول مرة في كلماته.
+CHARS_POSITION ¦ Character {0} of {1} ¦ الحرف {0} من {1}
+CHARS_SET_MISSED ¦ To practise again ({0}) ¦ للتدرّب مجددًا ({0})
+CHARS_MISSED_DONE ¦ No characters left to practise again. Pick another set. ¦ لا حروف متبقّية للتدرّب عليها مجددًا. اختر مجموعة أخرى.

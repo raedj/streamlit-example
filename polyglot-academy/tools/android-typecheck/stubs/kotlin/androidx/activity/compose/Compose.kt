@@ -1,0 +1,7 @@
+// SIGNATURE STUB for type-checking only (tools/android-typecheck). Mirrors the public API of the real library; never shipped.
+package androidx.activity.compose
+import androidx.activity.ComponentActivity
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionContext
+fun ComponentActivity.setContent(parent: CompositionContext? = null, content: @Composable () -> Unit) {}
+@Composable fun BackHandler(enabled: Boolean = true, onBack: () -> Unit) {}

@@ -1,0 +1,145 @@
+# ---- General ----
+APP_NAME ¦ Polyglot Academy ¦ أكاديمية بوليغلوت
+BACK ¦ Back ¦ رجوع
+CLOSE ¦ Close ¦ إغلاق
+CANCEL ¦ Cancel ¦ إلغاء
+CONTINUE ¦ Continue ¦ متابعة
+NEXT ¦ Next ¦ التالي
+SKIP ¦ Skip ¦ تخطٍّ
+SKIP_FOR_NOW ¦ Skip for now ¦ تخطٍّ الآن
+DONE ¦ Done ¦ تم
+SAVE ¦ Save ¦ حفظ
+DELETE ¦ Delete ¦ حذف
+RETRY ¦ Try again ¦ حاول مرة أخرى
+EDIT ¦ Edit ¦ تعديل
+START ¦ Start ¦ ابدأ
+CHECK ¦ Check ¦ تحقّق
+ADD ¦ Add ¦ إضافة
+REMOVE ¦ Remove ¦ إزالة
+LOADING ¦ Loading… ¦ جارٍ التحميل…
+SEE_ALL ¦ See all ¦ عرض الكل
+SEARCH ¦ Search ¦ بحث
+OPTIONAL ¦ Optional ¦ اختياري
+ON ¦ On ¦ مفعّل
+OFF ¦ Off ¦ متوقف
+SELECTED ¦ Selected ¦ محدّد
+LOCKED ¦ Locked ¦ مقفل
+COMPLETED ¦ Completed ¦ مكتمل
+NOT_STARTED ¦ Not started ¦ لم يبدأ
+ESTIMATE ¦ estimate ¦ تقدير
+NOT_ENOUGH_DATA ¦ Not enough data yet ¦ لا توجد بيانات كافية بعد
+ERROR_TITLE ¦ Something went wrong ¦ حدث خطأ ما
+ERROR_BODY ¦ We couldn't load this. Your data is safe — please try again. ¦ تعذّر تحميل هذا المحتوى. بياناتك محفوظة، يُرجى المحاولة مرة أخرى.
+OFFLINE_BANNER ¦ You're offline. Lessons, reviews and the offline practice partner still work. ¦ أنت غير متصل بالإنترنت. ما زالت الدروس والمراجعات وشريك التدريب دون اتصال تعمل.
+PERCENT ¦ {0}% ¦ ‎{0}٪
+MINUTES ¦ {0} min|{0} min ¦ {0} دقيقة|دقيقة واحدة|دقيقتان|{0} دقائق|{0} دقيقة|{0} دقيقة
+DAYS ¦ {0} day|{0} days ¦ {0} يوم|يوم واحد|يومان|{0} أيام|{0} يومًا|{0} يوم
+WORDS ¦ {0} word|{0} words ¦ {0} كلمة|كلمة واحدة|كلمتان|{0} كلمات|{0} كلمة|{0} كلمة
+HOURS ¦ {0} hour|{0} hours ¦ {0} ساعة|ساعة واحدة|ساعتان|{0} ساعات|{0} ساعة|{0} ساعة
+MONTHS ¦ {0} month|{0} months ¦ {0} شهر|شهر واحد|شهران|{0} أشهر|{0} شهرًا|{0} شهر
+NOW ¦ now ¦ الآن
+IN_TIME ¦ in {0} ¦ بعد {0}
+PLAY_AUDIO ¦ Play audio ¦ تشغيل الصوت
+STOP_AUDIO ¦ Stop audio ¦ إيقاف الصوت
+SHOW_TRANSLATION ¦ Show translation ¦ إظهار الترجمة
+HIDE_TRANSLATION ¦ Hide translation ¦ إخفاء الترجمة
+TRANSLATIONS ¦ Translations ¦ الترجمات
+TUTOR_AVATAR_DESC ¦ Portrait of {0}, your tutor ¦ صورة {0}، معلّمك
+ILLUSTRATION ¦ Illustration ¦ رسم توضيحي
+# ---- Navigation ----
+NAV_HOME ¦ Home ¦ الرئيسية
+NAV_LEARN ¦ Learn ¦ تعلّم
+NAV_PRACTICE ¦ Practice ¦ تدرّب
+NAV_TUTORS ¦ Tutors ¦ المعلّمون
+NAV_ME ¦ Me ¦ حسابي
+# ---- Levels ----
+LEVEL_PRE_A1 ¦ Complete beginner ¦ مبتدئ تمامًا
+LEVEL_A1 ¦ Beginner — simple phrases ¦ مبتدئ — عبارات بسيطة
+LEVEL_A2 ¦ Elementary — everyday situations ¦ أساسي — مواقف يومية
+LEVEL_B1 ¦ Intermediate — most travel and work basics ¦ متوسط — معظم أساسيات السفر والعمل
+LEVEL_B2 ¦ Upper intermediate — fluent on familiar topics ¦ فوق المتوسط — طلاقة في المواضيع المألوفة
+LEVEL_C1 ¦ Advanced — flexible and precise ¦ متقدم — مرونة ودقة
+LEVEL_C2 ¦ Mastery — near-native ¦ إتقان — قريب من مستوى الناطقين
+# ---- Goals ----
+GOAL_TRAVEL ¦ Travel ¦ السفر
+GOAL_WORK ¦ Work and career ¦ العمل والمهنة
+GOAL_STUDY ¦ School or university ¦ المدرسة أو الجامعة
+GOAL_EXAM ¦ Prepare for an exam ¦ الاستعداد لاختبار
+GOAL_CONVERSATION ¦ Everyday conversation ¦ المحادثة اليومية
+GOAL_CULTURE ¦ Culture, films and books ¦ الثقافة والأفلام والكتب
+GOAL_FAMILY ¦ Family and friends ¦ العائلة والأصدقاء
+GOAL_PERSONAL_GROWTH ¦ Personal growth ¦ تطوير الذات
+# ---- Learning styles ----
+STYLE_VISUAL ¦ Visual ¦ بصري
+STYLE_VISUAL_DESC ¦ Images, colours and diagrams help me remember ¦ تساعدني الصور والألوان والرسوم على التذكّر
+STYLE_AUDITORY ¦ Listening ¦ سمعي
+STYLE_AUDITORY_DESC ¦ I learn best by hearing and repeating ¦ أتعلّم أفضل بالاستماع والتكرار
+STYLE_READING_WRITING ¦ Reading and writing ¦ القراءة والكتابة
+STYLE_READING_WRITING_DESC ¦ I like texts, notes and written practice ¦ أحب النصوص والملاحظات والتمارين المكتوبة
+STYLE_CONVERSATIONAL ¦ Conversation ¦ محادثة
+STYLE_CONVERSATIONAL_DESC ¦ I want to speak as much as possible ¦ أريد أن أتحدث قدر الإمكان
+STYLE_MIXED ¦ A bit of everything ¦ مزيج من كل شيء
+STYLE_MIXED_DESC ¦ Balanced practice across all skills ¦ تدريب متوازن في جميع المهارات
+# ---- Skills ----
+SKILL_SPEAKING ¦ Speaking ¦ التحدث
+SKILL_LISTENING ¦ Listening ¦ الاستماع
+SKILL_READING ¦ Reading ¦ القراءة
+SKILL_WRITING ¦ Writing ¦ الكتابة
+SKILL_VOCABULARY ¦ Vocabulary ¦ المفردات
+SKILL_GRAMMAR ¦ Grammar ¦ القواعد
+SKILL_PRONUNCIATION ¦ Pronunciation ¦ النطق
+SKILL_COMPREHENSION ¦ Comprehension ¦ الفهم
+SKILL_FLUENCY ¦ Fluency ¦ الطلاقة
+SKILL_FUNCTIONAL ¦ Everyday communication ¦ التواصل اليومي
+# ---- Correction intensity ----
+CORRECTION_GENTLE ¦ Gentle ¦ لطيف
+CORRECTION_GENTLE_DESC ¦ Only errors that change the meaning ¦ الأخطاء التي تغيّر المعنى فقط
+CORRECTION_BALANCED ¦ Balanced ¦ متوازن
+CORRECTION_BALANCED_DESC ¦ Important and recurring errors ¦ الأخطاء المهمة والمتكررة
+CORRECTION_THOROUGH ¦ Thorough ¦ شامل
+CORRECTION_THOROUGH_DESC ¦ Every error, with explanations ¦ كل خطأ مع الشرح
+# ---- Theme ----
+THEME_SYSTEM ¦ Match system ¦ حسب النظام
+THEME_LIGHT ¦ Light ¦ فاتح
+THEME_DARK ¦ Dark ¦ داكن
+# ---- Severity ----
+SEVERITY_MINOR ¦ Minor ¦ بسيط
+SEVERITY_MODERATE ¦ Grammar ¦ قواعدي
+SEVERITY_MEANING_CHANGING ¦ Changes meaning ¦ يغيّر المعنى
+# ---- Days ----
+DAY_1 ¦ Mon ¦ الإثنين
+DAY_2 ¦ Tue ¦ الثلاثاء
+DAY_3 ¦ Wed ¦ الأربعاء
+DAY_4 ¦ Thu ¦ الخميس
+DAY_5 ¦ Fri ¦ الجمعة
+DAY_6 ¦ Sat ¦ السبت
+DAY_7 ¦ Sun ¦ الأحد
+DAY_INITIAL_1 ¦ M ¦ ن
+DAY_INITIAL_2 ¦ T ¦ ث
+DAY_INITIAL_3 ¦ W ¦ ر
+DAY_INITIAL_4 ¦ T ¦ خ
+DAY_INITIAL_5 ¦ F ¦ ج
+DAY_INITIAL_6 ¦ S ¦ س
+DAY_INITIAL_7 ¦ S ¦ ح
+# ---- Speech errors ----
+SPEECH_ERR_PERMISSION_DENIED ¦ Microphone access is off. You can type instead, or allow the microphone in settings. ¦ الوصول إلى الميكروفون متوقف. يمكنك الكتابة بدلًا من ذلك، أو السماح بالميكروفون من الإعدادات.
+SPEECH_ERR_MICROPHONE_UNAVAILABLE ¦ No microphone is available on this device. ¦ لا يتوفر ميكروفون على هذا الجهاز.
+SPEECH_ERR_NO_SPEECH_DETECTED ¦ We didn't hear anything. Tap the microphone and try again. ¦ لم نسمع شيئًا. اضغط على الميكروفون وحاول مرة أخرى.
+SPEECH_ERR_RECOGNITION_TIMEOUT ¦ Listening timed out. Try again when you're ready. ¦ انتهت مهلة الاستماع. حاول مرة أخرى عندما تكون مستعدًا.
+SPEECH_ERR_LANGUAGE_UNSUPPORTED ¦ Speech recognition doesn't support this language on your device. ¦ لا يدعم التعرّف على الكلام هذه اللغة على جهازك.
+SPEECH_ERR_NETWORK ¦ A network problem interrupted the request. ¦ قاطعت مشكلة في الشبكة الطلب.
+SPEECH_ERR_RECOGNIZER_BUSY ¦ The speech recognizer is busy. Try again in a moment. ¦ أداة التعرّف على الكلام مشغولة. حاول بعد لحظة.
+SPEECH_ERR_AUDIO_FOCUS_LOST ¦ Another app took over audio. ¦ استحوذ تطبيق آخر على الصوت.
+SPEECH_ERR_TTS_UNAVAILABLE ¦ Spoken audio isn't available for this language on this device. ¦ الصوت المنطوق غير متاح لهذه اللغة على هذا الجهاز.
+SPEECH_ERR_TTS_FAILED ¦ Audio playback failed. ¦ فشل تشغيل الصوت.
+SPEECH_ERR_CANCELLED ¦ Cancelled. ¦ أُلغي.
+SPEECH_ERR_UNKNOWN ¦ Something went wrong with speech. Please try again. ¦ حدث خطأ في الكلام. يُرجى المحاولة مرة أخرى.
+# ---- Achievements ----
+ACH_first_lesson ¦ First lesson completed ¦ أول درس مكتمل
+ACH_five_lessons ¦ Five lessons completed ¦ خمسة دروس مكتملة
+ACH_perfect_lesson ¦ A perfect lesson ¦ درس بلا أخطاء
+ACH_fifty_reviews ¦ 50 reviews ¦ ‏50 مراجعة
+ACH_first_conversation ¦ First real conversation ¦ أول محادثة حقيقية
+ACH_streak_3 ¦ Three days in a row ¦ ثلاثة أيام متتالية
+ACH_streak_7 ¦ A full week of practice ¦ أسبوع كامل من التدريب
+ACH_placement_done ¦ Found your level ¦ حدّدت مستواك

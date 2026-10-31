@@ -1,0 +1,116 @@
+package com.polyglot.academy.core.service
+
+import kotlinx.coroutines.flow.first
+import com.polyglot.academy.core.repo.RestoreReport
+import com.polyglot.academy.core.ai.AiProvider
+import com.polyglot.academy.core.ai.CredentialSource
+import com.polyglot.academy.core.ai.NetworkState
+import com.polyglot.academy.core.ai.ProviderConfig
+import com.polyglot.academy.core.ai.ProviderId
+import com.polyglot.academy.core.ai.createHttpProviders
+import com.polyglot.academy.core.device.DeviceInfo
+import com.polyglot.academy.core.media.ExtractionSupport
+import com.polyglot.academy.core.model.LanguageCode
+import com.polyglot.academy.core.model.MaterialType
+import com.polyglot.academy.core.model.RolePlayScenario
+import com.polyglot.academy.core.repo.LearningStore
+import com.polyglot.academy.core.repo.SecretStore
+import com.polyglot.academy.core.speech.SpeechRecognizerService
+import com.polyglot.academy.core.speech.SpeechSynthesizerService
+import com.polyglot.academy.core.srs.SpacedRepetitionScheduler
+import com.polyglot.academy.core.tutor.TutorPersona
+import com.polyglot.academy.core.util.IdGenerator
+import com.polyglot.academy.core.util.TimeSource
+import io.ktor.client.HttpClient
+import kotlinx.coroutines.CoroutineScope
+
+/** Platform capabilities injected by the Android app (or the desktop harness / tests). */
+interface PlatformServices {
+    val recognizer: SpeechRecognizerService
+    val synthesizer: SpeechSynthesizerService
+    val secrets: SecretStore
+    fun network(): NetworkState
+    fun deviceInfo(): DeviceInfo
+    val extractionSupport: Map<MaterialType, ExtractionSupport>
+    /** Schedules or cancels the daily reminder. Returns false when the platform refuses (e.g. permission denied). */
+    suspend fun scheduleReminder(enabled: Boolean, hour: Int, minute: Int, days: Set<Int>): Boolean
+    val platformName: String
+
+    /** Renders PDF pages as JPEG images for AI text recognition, or null when the platform has no renderer. */
+    suspend fun renderPdfPages(pdf: ByteArray, maxPages: Int): List<OcrPage>? = null
+
+    /** Text recognition that runs entirely on the device, or null when the platform has none. */
+    val deviceOcr: DeviceOcr? get() = null
+
+    /** Raw microphone audio for pronunciation scoring and realtime voice. */
+    val audioCapture: com.polyglot.academy.core.speech.AudioCapture get() = com.polyglot.academy.core.speech.NoAudioCapture
+    val audioOutput: com.polyglot.academy.core.speech.AudioOutput get() = com.polyglot.academy.core.speech.NoAudioOutput
+}
+
+/** Manual dependency graph (see ADR-004). One instance per process. */
+class AppServices(
+    val store: LearningStore,
+    val platform: PlatformServices,
+    httpClient: HttpClient,
+    val clock: TimeSource = TimeSource.System,
+    val ids: IdGenerator = IdGenerator.Random,
+    providerFactory: ((CredentialSource, (ProviderId) -> ProviderConfig) -> List<AiProvider>)? = null,
+    assessorFactory: ((String, suspend () -> String?) -> com.polyglot.academy.core.pronunciation.PronunciationAssessor)? = null,
+    realtimeTransport: com.polyglot.academy.core.realtime.RealtimeTransport? = null,
+    syncRemoteFactory: ((String, String, String) -> com.polyglot.academy.core.sync.SyncRemote)? = null,
+) {
+    val scheduler = SpacedRepetitionScheduler()
+    val achievements = AchievementService(store, store, clock)
+    val study = StudyService(store, store, achievements, scheduler, clock, ids)
+    val reviews = ReviewService(store, store, scheduler, achievements, clock)
+    val wordLevels = WordLevelService(store, store, scheduler, clock, ids)
+    val dashboard = DashboardService(store, store, store, store, reviews, study, clock)
+    val plans = PlanService(store, store, store, reviews, clock)
+    val assessments = AssessmentService(store, store, achievements, clock, ids)
+    val providers = ProviderService(
+        store, platform.secrets, store, platform::network,
+        providerFactory ?: { creds, cfg -> createHttpProviders(httpClient, creds, { id -> cfg(id) }, clock::nowMillis) },
+        clock,
+    )
+    val writing = WritingService(providers)
+    val ocr = OcrService(providers, platform.deviceOcr)
+    val materials = MaterialService(store, store, reviews, clock, ids, platform.extractionSupport, ocr)
+
+    val speaking = SpeakingService(store, clock)
+    val coach = CoachService(store, store, store, store, clock, ids)
+    val gamification = GamificationService(store, store, store, clock)
+    val stories = StoryService(store, store, store, reviews, providers, clock, ids)
+    val realtime = RealtimeService(store, store, platform.secrets, platform::network, { platform.audioCapture }, { platform.audioOutput },
+        realtimeTransport ?: com.polyglot.academy.core.realtime.KtorRealtimeTransport(httpClient), providers, coach, clock, ids)
+    val sync = SyncService(store, platform.secrets, clock, syncRemoteFactory ?: { url, user, pass ->
+        com.polyglot.academy.core.sync.WebDavRemote(httpClient, url, user, pass)
+    })
+    val pronunciation = PronunciationService(store, store, platform.secrets, platform::network, study, clock, ids, assessorFactory ?: { region, key ->
+        com.polyglot.academy.core.pronunciation.AzurePronunciationAssessor(httpClient, region, key)
+    })
+
+    fun conversation(
+        scope: CoroutineScope, language: LanguageCode, tutor: TutorPersona, scenario: RolePlayScenario?, forceOffline: Boolean = false,
+        mission: com.polyglot.academy.core.speaking.SpeakingMission? = null,
+        topic: String? = null,
+    ) = ConversationController(scope, language, tutor, scenario, store, store, store, reviews, providers, study, achievements,
+        platform.recognizer, platform.synthesizer, clock, ids, forceOffline, mission, topic, coach)
+
+    /**
+     * Restores an export, then re-applies the restored reminder schedule (the alarm itself is not
+     * part of the export). [allowNotifications] is asked only when the restored reminder is on.
+     */
+    suspend fun restore(json: String, allowNotifications: suspend () -> Boolean): RestoreReport {
+        val report = store.importJson(json)
+        val r = store.settings.first().reminders
+        platform.scheduleReminder(r.enabled && allowNotifications(), r.hour, r.minute, r.days)
+        return report
+    }
+
+    /** Erases all stored data, credentials and the reminder schedule. */
+    suspend fun deleteEverything() {
+        store.deleteAllData()
+        platform.secrets.keys().forEach { platform.secrets.remove(it) }
+        platform.scheduleReminder(false, 0, 0, emptySet())
+    }
+}

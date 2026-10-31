@@ -1,0 +1,84 @@
+LEARN_TITLE ¦ Courses ¦ الدورات
+LEARN_GENERAL ¦ General course ¦ الدورة العامة
+LEARN_TRACKS ¦ Professional tracks ¦ المسارات المهنية
+LEARN_TRACKS_SUB ¦ Optional specialist vocabulary ¦ مفردات تخصصية اختيارية
+LEARN_UNIT_PROGRESS ¦ {0} of {1} lessons mastered ¦ أتقنت {0} من {1} دروس
+LESSON_LOCKED_HINT ¦ Master the previous lesson to unlock ¦ أتقن الدرس السابق لفتح هذا الدرس
+LESSON_MASTERED ¦ Mastered ¦ مُتقَن
+LESSON_BEST ¦ Best {0}% ¦ أفضل نتيجة {0}٪
+LESSON_BELOW_LEVEL ¦ Review — below your starting level ¦ مراجعة — أقل من مستوى بدايتك
+LESSON_EXERCISES ¦ {0} exercise|{0} exercises ¦ {0} تمارين|تمرين واحد|تمرينان|{0} تمارين|{0} تمرينًا|{0} تمرين
+TRACK_MIN_LEVEL ¦ Recommended from {0} ¦ موصى به ابتداءً من {0}
+TRACK_DISCLAIMER_TITLE ¦ Language practice only ¦ للتدرّب اللغوي فقط
+TRACK_EMPTY ¦ No professional tracks for this language yet. ¦ لا توجد مسارات مهنية لهذه اللغة بعد.
+LESSON_VOCAB ¦ Words in this lesson ¦ كلمات هذا الدرس
+LESSON_GRAMMAR ¦ Grammar focus ¦ محور القواعد
+LESSON_START ¦ Start lesson ¦ ابدأ الدرس
+LESSON_RESUME ¦ Resume at exercise {0} ¦ تابِع من التمرين {0}
+LESSON_RESTART ¦ Start over ¦ ابدأ من جديد
+LESSON_BOOKMARK ¦ Bookmark lesson ¦ حفظ الدرس في المفضلة
+LESSON_UNBOOKMARK ¦ Remove bookmark ¦ إزالة من المفضلة
+LESSON_NOT_FOUND ¦ This lesson is no longer available. ¦ هذا الدرس لم يعد متاحًا.
+PLAYER_PROGRESS ¦ Exercise {0} of {1} ¦ التمرين {0} من {1}
+PLAYER_EXIT_TITLE ¦ Leave the lesson? ¦ هل تريد مغادرة الدرس؟
+PLAYER_EXIT_BODY ¦ Your progress is saved. You can continue later from this exercise. ¦ تقدّمك محفوظ، ويمكنك المتابعة لاحقًا من هذا التمرين.
+PLAYER_EXIT_CONFIRM ¦ Leave ¦ مغادرة
+PLAYER_STAY ¦ Keep going ¦ تابِع
+FEEDBACK_CORRECT ¦ Correct! ¦ صحيح!
+FEEDBACK_CORRECT_ACCENT ¦ Correct — mind the accents ¦ صحيح — انتبه إلى علامات النطق
+FEEDBACK_ALMOST ¦ Almost there ¦ اقتربت
+FEEDBACK_INCORRECT ¦ Not quite ¦ ليس تمامًا
+FEEDBACK_ANSWER_WAS ¦ Answer: {0} ¦ الإجابة: {0}
+FEEDBACK_MISSING_WORDS ¦ Missing: {0} ¦ ناقص: {0}
+FEEDBACK_EMPTY ¦ Type an answer first. ¦ اكتب إجابة أولًا.
+FLASHCARD_REVEAL ¦ Show meaning ¦ إظهار المعنى
+FLASHCARD_KNEW ¦ I knew it ¦ كنت أعرفها
+FLASHCARD_DIDNT ¦ I didn't know ¦ لم أكن أعرفها
+FLASHCARD_EXAMPLE ¦ Example ¦ مثال
+MATCH_INSTRUCTION ¦ Tap a word, then its meaning. ¦ اضغط على كلمة ثم على معناها.
+MATCH_ALL_DONE ¦ All pairs matched ¦ تمت مطابقة كل الأزواج
+MATCH_WRONG ¦ Those don't match — try another pair. ¦ هذان غير متطابقين، جرّب زوجًا آخر.
+ORDER_TAP_WORDS ¦ Tap the words in the right order ¦ اضغط على الكلمات بالترتيب الصحيح
+ORDER_RESET ¦ Reset ¦ إعادة تعيين
+ORDER_MEANING ¦ Meaning: {0} ¦ المعنى: {0}
+TYPE_ANSWER ¦ Your answer ¦ إجابتك
+TRANSLATE_PROMPT ¦ Translate: ¦ ترجم:
+TONE_1 ¦ 1st · high level (ā) ¦ الأولى · مستوية عالية (ā)
+TONE_2 ¦ 2nd · rising (á) ¦ الثانية · صاعدة (á)
+TONE_3 ¦ 3rd · dipping (ǎ) ¦ الثالثة · هابطة ثم صاعدة (ǎ)
+TONE_4 ¦ 4th · falling (à) ¦ الرابعة · هابطة (à)
+TONE_5 ¦ Neutral (a) ¦ محايدة (a)
+TONE_LISTEN ¦ Listen to {0} ¦ استمع إلى {0}
+SPEAK_TAP_MIC ¦ Tap the microphone, then say the sentence. ¦ اضغط على الميكروفون ثم قل الجملة.
+SPEAK_HEARD ¦ We heard: "{0}" ¦ سمعنا: «{0}»
+SPEAK_MATCH ¦ Match with the target: {0}% ¦ مدى التطابق مع الجملة: {0}٪
+SPEAK_DISCLAIMER ¦ This compares what the speech recognizer heard with the sentence. It is not a phonetic measurement of your accent. ¦ تقارن هذه النتيجة ما سمعته أداة التعرّف على الكلام بالجملة، وليست قياسًا صوتيًا للهجتك.
+SPEAK_UNAVAILABLE ¦ Speech recognition isn't available here. Say the sentence aloud, then rate yourself honestly. ¦ التعرّف على الكلام غير متاح هنا. قل الجملة بصوت عالٍ ثم قيّم نفسك بصدق.
+SPEAK_SELF_GOOD ¦ I said it clearly ¦ نطقتها بوضوح
+SPEAK_SELF_RETRY ¦ I need more practice ¦ أحتاج إلى مزيد من التدريب
+SPEAK_TRY_AGAIN ¦ Try again ¦ حاول مجددًا
+WRITE_COUNT ¦ {0} / {1} words ¦ {0} / {1} كلمة
+WRITE_SUGGESTED ¦ Try using: {0} ¦ حاول استخدام: {0}
+WRITE_SUBMIT ¦ Submit ¦ إرسال
+LISTEN_AGAIN ¦ Listen again ¦ استمع مرة أخرى
+LISTEN_SLOW ¦ Slow ¦ بطيء
+TTS_MISSING ¦ Audio isn't available for {0} on this device. You can install a voice for it in the system text-to-speech settings. ¦ الصوت غير متاح للغة {0} على هذا الجهاز. يمكنك تثبيت صوت لها من إعدادات تحويل النص إلى كلام في النظام.
+HINT_SHOW ¦ Show a hint ¦ أظهر تلميحًا
+HINT_FIRST_LETTERS ¦ Starts with: {0} ¦ تبدأ بـ: {0}
+EXPLANATION ¦ Why? ¦ لماذا؟
+SUMMARY_TITLE ¦ Lesson complete ¦ اكتمل الدرس
+SUMMARY_SCORE ¦ {0}% ¦ ‎{0}٪
+SUMMARY_SCORE_DESC ¦ Score: {0} percent ¦ النتيجة: {0} بالمئة
+SUMMARY_CORRECT ¦ {0} of {1} correct on the first try ¦ {0} من {1} صحيحة من المحاولة الأولى
+SUMMARY_MASTERED ¦ Lesson mastered — well done! ¦ أتقنت الدرس، أحسنت!
+SUMMARY_NOT_MASTERED ¦ Score 80% or more to master this lesson. Your best score is kept. ¦ احصل على 80٪ أو أكثر لإتقان هذا الدرس، وسنحتفظ بأفضل نتيجة لك.
+SUMMARY_NEW_WORDS ¦ {0} word added to your reviews|{0} words added to your reviews ¦ لم تُضف كلمات إلى مراجعاتك|أُضيفت كلمة واحدة إلى مراجعاتك|أُضيفت كلمتان إلى مراجعاتك|أُضيفت {0} كلمات إلى مراجعاتك|أُضيفت {0} كلمة إلى مراجعاتك|أُضيفت {0} كلمة إلى مراجعاتك
+SUMMARY_UNLOCKED ¦ New achievement: {0} ¦ إنجاز جديد: {0}
+SUMMARY_NEXT ¦ Next lesson ¦ الدرس التالي
+SUMMARY_HOME ¦ Back to home ¦ العودة إلى الرئيسية
+SUMMARY_RETRY ¦ Practise again ¦ تدرّب مرة أخرى
+SUMMARY_TIME ¦ Time: {0} ¦ الوقت: {0}
+ADAPT_HARDER ¦ You're doing well — upcoming questions will be a little harder. ¦ أداؤك جيد، وستصبح الأسئلة القادمة أصعب قليلًا.
+ADAPT_EASIER ¦ Let's slow down: we'll add hints and fuller explanations for a while. ¦ لنبطئ الوتيرة: سنضيف تلميحات وشروحًا أوفى لفترة.
+LISTEN_NO_VOICE ¦ There is no voice for {0} on this device, so this listening exercise is not scored. Skip it, or install a voice in the system text-to-speech settings. ¦ لا يوجد صوت للغة {0} على هذا الجهاز، لذلك لا يُحتسب هذا التمرين السمعي. تخطَّه، أو ثبّت صوتًا من إعدادات تحويل النص إلى كلام في النظام.
+LISTEN_SKIP ¦ Skip this exercise ¦ تخطَّ هذا التمرين
