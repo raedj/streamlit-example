@@ -36,6 +36,25 @@ object WritingCharacters {
         }.filter { StrokeOrder.of(it.character) != null }.distinctBy { it.character }
     }
 
+    /**
+     * Items for [characters] (simplified or traditional, as they were written), each with the first word
+     * that contains it in the course or the word list; characters that are not found are left out.
+     */
+    fun of(characters: List<Char>, list: WordList): List<WritingItem> {
+        if (characters.isEmpty()) return emptyList()
+        val wanted = characters.toSet()
+        val found = HashMap<Char, WritingItem>()
+        // Sets are built one at a time and the search stops once every character is found.
+        val sources: List<() -> List<WritingItem>> = listOf(false, true).flatMap { t ->
+            listOf<() -> List<WritingItem>>({ course(t) }) + (1..WordLevels.COUNT).map { l -> { level(list, l, t) } }
+        }
+        for (load in sources) {
+            load().forEach { if (it.character in wanted && it.character !in found) found[it.character] = it }
+            if (found.size == wanted.size) break
+        }
+        return characters.mapNotNull { found[it] }
+    }
+
     private fun item(term: String, trad: String?, i: Int, reading: String?, meaning: Gloss, traditional: Boolean): WritingItem {
         // The traditional form is used only when it lines up character by character with the term.
         val t = trad?.takeIf { traditional && it.length == term.length }

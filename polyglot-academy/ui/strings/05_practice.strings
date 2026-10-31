@@ -248,3 +248,5 @@ CHARS_SET ¦ Characters to practise ¦ الحروف التي تتدرّب علي
 CHARS_SET_COURSE ¦ Course ¦ حروف الدروس
 CHARS_SET_SUB ¦ The course characters come with a breakdown into parts. Each word-list level adds the characters its words introduce. ¦ حروف الدروس مشروحة بأجزائها. وكل مستوى من قوائم الكلمات يضيف الحروف التي تظهر لأول مرة في كلماته.
 CHARS_POSITION ¦ Character {0} of {1} ¦ الحرف {0} من {1}
+CHARS_SET_MISSED ¦ To practise again ({0}) ¦ للتدرّب مجددًا ({0})
+CHARS_MISSED_DONE ¦ No characters left to practise again. Pick another set. ¦ لا حروف متبقّية للتدرّب عليها مجددًا. اختر مجموعة أخرى.

@@ -15,6 +15,7 @@ import com.polyglot.academy.ui.navigation.Route
 import com.polyglot.academy.ui.navigation.SettingsSection
 import com.polyglot.academy.ui.navigation.Tab
 import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.flow.toList
 import kotlinx.coroutines.runBlocking
 import kotlin.test.Test
 import kotlin.test.assertEquals
@@ -157,5 +158,50 @@ class UiFlowTest {
         val app = TestApp(); app.profile(theme = ThemeMode.DARK); app.seedActivity()
         setContent { AppUnderTest(app) }
         waitForText("This week")
+    }
+
+    @Test fun writingPracticeRemembersTheSetAndPosition() = runDesktopComposeUiTest(800, 1700) {
+        val app = TestApp(); app.profile(learn = LanguageCode.MANDARIN)
+        setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.PRACTICE), Route.Characters)) }
+        waitForText("Character 1 of", substring = true)
+        // No missed characters yet, so that set is not offered.
+        assertTrue(onAllNodesWithText("To practise again", substring = true).fetchSemanticsNodes().isEmpty())
+        onNodeWithText("Level 3").performClick()
+        waitUntil(timeoutMillis = 10_000) { runBlocking { app.store.currentSettings().writingPractice.set == 3 } }
+        waitForText("Character 1 of", substring = true)
+        onNodeWithText("Next").performScrollTo().performClick()
+        waitForText("Character 2 of", substring = true)
+        waitUntil(timeoutMillis = 10_000) { runBlocking { app.store.currentSettings().writingPractice.position(3, false) == 1 } }
+    }
+
+    @Test fun missedCharactersCanBePractisedAgain() = runDesktopComposeUiTest(800, 1700) {
+        val app = TestApp(); app.profile(learn = LanguageCode.MANDARIN)
+        runBlocking { app.store.updateSettings { it.copy(writingPractice = it.writingPractice.checked('好', right = false).copy(set = -1)) } }
+        setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.PRACTICE), Route.Characters)) }
+        waitForText("To practise again (1)")
+        waitForText("Character 1 of 1")
+        assertTrue(onAllNodesWithText("你好").fetchSemanticsNodes().isNotEmpty(), "the character is shown with a word it appears in")
+    }
+
+    @Test fun arabicPhotoIsReadOnTheDeviceFromTheMaterialScreen() = runDesktopComposeUiTest(800, 1700) {
+        val ocr = object : com.polyglot.academy.core.service.DeviceOcr {
+            override val languages = setOf(LanguageCode.ARABIC)
+            override suspend fun recognize(page: com.polyglot.academy.core.service.OcrPage, language: LanguageCode) = "محطة القطار"
+        }
+        val app = TestApp(deviceOcr = ocr); app.profile(learn = LanguageCode.ARABIC)
+        val photo = byteArrayOf(1, 2, 3)
+        val done = runBlocking {
+            app.services.materials.import(LanguageCode.ARABIC, com.polyglot.academy.core.service.ImportInput("Sign", "image/jpeg", "sign.jpg", 3, null, photo), false)
+                .toList().last() as com.polyglot.academy.core.service.ImportProgress.Done
+        }
+        com.polyglot.academy.ui.feature.me.PendingOcrFiles.put(done.material.id, "image/jpeg", photo)
+        setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.ME), Route.Material(done.material.id))) }
+        waitForText("Read on this device")
+        onNodeWithText("Read on this device").performClick()
+        waitUntil(timeoutMillis = 10_000) {
+            runBlocking { app.store.materials(LanguageCode.ARABIC).first().single().extractedText == "محطة القطار" }
+        }
+        waitForText("محطة القطار")
+        assertTrue(!runBlocking { app.store.materials(LanguageCode.ARABIC).first().single() }.cloudProcessingAllowed)
     }
 }

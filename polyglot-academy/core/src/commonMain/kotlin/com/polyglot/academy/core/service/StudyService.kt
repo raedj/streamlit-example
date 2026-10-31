@@ -38,6 +38,10 @@ class StudyService(
     }
 
     /** Updates a running session; active time is capped per item so an idle screen does not inflate study time. */
+    /** Free practice outside lessons; see [PracticeSession]. Create it when the practice screen opens. */
+    fun practice(language: LanguageCode, kind: SessionKind, reference: String?): PracticeSession =
+        PracticeSession(this, clock, language, kind, reference, clock.nowMillis())
+
     suspend fun updateSession(session: StudySession, itemsCompleted: Int, itemsCorrect: Int, completed: Boolean, activeSeconds: Int): StudySession {
         val updated = session.copy(
             itemsCompleted = itemsCompleted, itemsCorrect = itemsCorrect, completed = completed,

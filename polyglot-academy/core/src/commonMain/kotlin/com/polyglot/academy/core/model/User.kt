@@ -110,7 +110,36 @@ data class AppSettings(
     val sync: SyncSettings = SyncSettings(),
     /** Provider chosen for a feature (e.g. Claude for conversations, Gemini for reading photos); missing = the preferred provider. */
     val aiFeatureProviders: Map<com.polyglot.academy.core.ai.AiCapability, com.polyglot.academy.core.ai.ProviderId> = emptyMap(),
+    val writingPractice: WritingPracticeState = WritingPracticeState(),
 )
+
+/** Where character writing practice was left, and the characters to practise again. */
+@Serializable
+data class WritingPracticeState(
+    /** [MISSED] for the missed characters, 0 for the course characters, 1..10 for a word-list level. */
+    val set: Int = 0,
+    /** Null: follow the course setting for traditional characters. */
+    val traditional: Boolean? = null,
+    /** Position in each set, keyed by "set/traditional". */
+    val positions: Map<String, Int> = emptyMap(),
+    /** Characters whose last check was not right (shape or stroke order), most recent first. */
+    val missed: List<String> = emptyList(),
+) {
+    fun position(set: Int, traditional: Boolean): Int = positions[key(set, traditional)] ?: 0
+    fun withPosition(set: Int, traditional: Boolean, index: Int) = copy(positions = positions + (key(set, traditional) to index))
+
+    /** Adds [c] to the missed characters when [right] is false, removes it when true. */
+    fun checked(c: Char, right: Boolean): WritingPracticeState {
+        val rest = missed - c.toString()
+        return copy(missed = if (right) rest else (listOf(c.toString()) + rest).take(MAX_MISSED))
+    }
+
+    companion object {
+        const val MISSED = -1
+        const val MAX_MISSED = 30
+        private fun key(set: Int, traditional: Boolean) = "$set/${if (traditional) "t" else "s"}"
+    }
+}
 
 /** Encrypted sync through the learner's own WebDAV server. Password and passphrase are in the secure store. */
 @Serializable

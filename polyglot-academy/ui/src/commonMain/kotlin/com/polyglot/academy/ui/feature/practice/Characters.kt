@@ -14,6 +14,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateListOf
@@ -59,7 +60,7 @@ import com.polyglot.academy.core.wordlist.WordLists
 import com.polyglot.academy.core.model.LanguageCode
 import com.polyglot.academy.core.model.Languages
 import com.polyglot.academy.core.model.SessionKind
-import com.polyglot.academy.core.model.StudySession
+import com.polyglot.academy.core.model.WritingPracticeState
 import com.polyglot.academy.ui.app.LocalApp
 import com.polyglot.academy.ui.app.ScrollScreen
 import com.polyglot.academy.ui.app.rememberSpeaker
@@ -121,17 +122,30 @@ fun CharactersScreen() {
     val speaker = rememberSpeaker(s)
     val measurer = rememberTextMeasurer()
     val density = LocalDensity.current
-    // 0: the course characters; 1..10: the characters a word-list level introduces.
-    var setLevel by remember { mutableIntStateOf(0) }
-    var traditional by remember { mutableStateOf(app.profile.enrollment(LanguageCode.MANDARIN)?.useTraditionalCharacters == true) }
+    // Where practice was left last time (set, script, position) and the characters to practise again.
+    val saved = remember { app.settings.writingPractice }
+    val missed = app.settings.writingPractice.missed
+    // MISSED: the missed characters; 0: the course characters; 1..10: the characters a word-list level introduces.
+    var setLevel by remember { mutableIntStateOf(if (saved.set == WritingPracticeState.MISSED && saved.missed.isEmpty()) 0 else saved.set) }
+    var traditional by remember { mutableStateOf(saved.traditional ?: (app.profile.enrollment(LanguageCode.MANDARIN)?.useTraditionalCharacters == true)) }
+    // The missed set is fixed while it is open, so characters written right do not shift the position.
+    val missedSet = remember(setLevel) { missed.mapNotNull { it.firstOrNull() } }
     val items by produceState<List<WritingItem>?>(null, setLevel, traditional) {
         value = null
         value = withContext(Dispatchers.Default) {
-            if (setLevel == 0) WritingCharacters.course(traditional)
-            else WritingCharacters.level(WordLists.load(LanguageCode.MANDARIN), setLevel, traditional)
+            when (setLevel) {
+                WritingPracticeState.MISSED -> WritingCharacters.of(missedSet, WordLists.load(LanguageCode.MANDARIN))
+                0 -> WritingCharacters.course(traditional)
+                else -> WritingCharacters.level(WordLists.load(LanguageCode.MANDARIN), setLevel, traditional)
+            }
         }
     }
-    var index by remember(setLevel, traditional) { mutableIntStateOf(0) }
+    var index by remember(setLevel, traditional) { mutableIntStateOf(if (setLevel == WritingPracticeState.MISSED) 0 else saved.position(setLevel, traditional)) }
+    LaunchedEffect(setLevel, traditional, index) {
+        app.services.store.updateSettings { st ->
+            st.copy(writingPractice = st.writingPractice.copy(set = setLevel, traditional = traditional).withPosition(setLevel, traditional, index))
+        }
+    }
     var showGuide by remember { mutableStateOf(true) }
     val strokes = remember(index, setLevel, traditional) { mutableStateListOf<List<InkPoint>>() }
     var current by remember(index, setLevel, traditional) { mutableStateOf<List<InkPoint>>(emptyList()) }
@@ -141,7 +155,7 @@ fun CharactersScreen() {
     val demo = remember(index, setLevel, traditional) { androidx.compose.animation.core.Animatable(0f) }
     var showDemo by remember(index, setLevel, traditional) { mutableStateOf(false) }
     val reduced = PolyglotTheme.motion.reduced
-    var session by remember { mutableStateOf<StudySession?>(null) }
+    val practice = remember { app.services.study.practice(LanguageCode.MANDARIN, SessionKind.WRITING, "characters") }
     var checked by remember { mutableIntStateOf(0) }
     var passed by remember { mutableIntStateOf(0) }
 
@@ -150,12 +164,17 @@ fun CharactersScreen() {
         Text(s[K.CHARS_BODY], style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
         PolyCard {
             Text(s[K.CHARS_SET], style = MaterialTheme.typography.titleSmall)
-            ChipGroup(listOf(0) + (1..WordLevels.COUNT), setOf(setLevel), { if (it == 0) s[K.CHARS_SET_COURSE] else s.f(K.WORDLEVEL_NAME, it) }, { setLevel = it })
+            val sets = (if (missed.isNotEmpty() || setLevel == WritingPracticeState.MISSED) listOf(WritingPracticeState.MISSED) else emptyList()) + listOf(0) + (1..WordLevels.COUNT)
+            ChipGroup(sets, setOf(setLevel), {
+                when (it) { WritingPracticeState.MISSED -> s.f(K.CHARS_SET_MISSED, missed.size); 0 -> s[K.CHARS_SET_COURSE]; else -> s.f(K.WORDLEVEL_NAME, it) }
+            }, { setLevel = it })
             Text(s[K.CHARS_SET_SUB], style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
         }
-        PolyCard(contentPadding = 0.dp) { SwitchRow(s[K.TONES_CHARACTERS], traditional, { traditional = it }) }
+        // The missed characters are shown as they were written, so the script switch does not apply there.
+        if (setLevel != WritingPracticeState.MISSED) PolyCard(contentPadding = 0.dp) { SwitchRow(s[K.TONES_CHARACTERS], traditional, { traditional = it }) }
         val list = items
-        if (list.isNullOrEmpty()) { LoadingPlaceholder(s[K.LOADING]); return@ScrollScreen }
+        if (list == null) { LoadingPlaceholder(s[K.LOADING]); return@ScrollScreen }
+        if (list.isEmpty()) { Text(s[K.CHARS_MISSED_DONE], style = MaterialTheme.typography.bodyMedium); return@ScrollScreen }
         val item = list[index % list.size]
         val ch = item.character
         val entry = HanziData.of(ch)
@@ -231,9 +250,14 @@ fun CharactersScreen() {
             order = StrokeOrder.of(ch)?.let { StrokeOrder.check(strokes.toList(), it) }
             if (r.verdict != HandwritingVerdict.EMPTY) {
                 checked++; if (r.verdict == HandwritingVerdict.GOOD) passed++
+                // Right: a good shape, or a close one with every stroke in order and direction. The shape check
+                // compares with the device font, whose style differs from the stroke data, so a correctly
+                // written character is often only "close" there.
+                val allInOrder = order?.allCorrect
+                val right = (r.verdict == HandwritingVerdict.GOOD && allInOrder != false) || (r.verdict == HandwritingVerdict.CLOSE && allInOrder == true)
                 scope.launch {
-                    val sess = session ?: app.services.study.startSession(LanguageCode.MANDARIN, SessionKind.WRITING, "characters").also { session = it }
-                    session = app.services.study.updateSession(sess, checked, passed, false, 0)
+                    practice.answer(r.verdict == HandwritingVerdict.GOOD)
+                    app.services.store.updateSettings { st -> st.copy(writingPractice = st.writingPractice.checked(ch, right)) }
                 }
             }
         }, Modifier.fillMaxWidth(), enabled = strokes.isNotEmpty())

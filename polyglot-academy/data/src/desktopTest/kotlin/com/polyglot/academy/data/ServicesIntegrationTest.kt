@@ -727,6 +727,23 @@ class ServicesIntegrationTest {
         assertEquals(com.polyglot.academy.core.service.OcrResult.NoText, none)
     }
 
+    @Test fun freePracticeCountsTowardStudyTimeOnlyOnceAnswered() = runBlocking<Unit> {
+        val practice = app.study.practice(LanguageCode.MANDARIN, com.polyglot.academy.core.model.SessionKind.WRITING, "characters")
+        clock.advanceMinutes(3)
+        // Nothing answered yet: no session.
+        assertTrue(store.sessions(LanguageCode.MANDARIN).first().none { it.referenceId == "characters" })
+        practice.answer(true)
+        clock.advanceMinutes(1)
+        val s = practice.answer(false)
+        assertEquals(2, s.itemsCompleted)
+        assertEquals(1, s.itemsCorrect)
+        assertEquals(240, s.activeSeconds)
+        assertEquals(1, store.sessions(LanguageCode.MANDARIN).first().count { it.referenceId == "characters" })
+        // A screen left open for an hour counts at most two minutes per answer.
+        clock.advanceMinutes(60)
+        assertEquals(3 * com.polyglot.academy.core.service.StudyService.MAX_SECONDS_PER_ITEM, practice.answer(true).activeSeconds)
+    }
+
     @Test fun captionsImport() = runBlocking<Unit> {
         val srt = "1\n00:00:01,000 --> 00:00:02,000\nWhere is the station?\n\n2\n00:00:03,000 --> 00:00:04,000\nGo straight on.\n"
         val done = app.materials.import(LanguageCode.ENGLISH, ImportInput("Clip", "application/x-subrip", "clip.srt", srt.length.toLong(), srt), false).toList().last() as ImportProgress.Done

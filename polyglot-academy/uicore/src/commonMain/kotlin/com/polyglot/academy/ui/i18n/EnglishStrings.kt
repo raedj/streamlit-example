@@ -626,6 +626,8 @@ internal object EnglishStrings {
         K.CHARS_SET_COURSE to "Course",
         K.CHARS_SET_SUB to "The course characters come with a breakdown into parts. Each word-list level adds the characters its words introduce.",
         K.CHARS_POSITION to "Character {0} of {1}",
+        K.CHARS_SET_MISSED to "To practise again ({0})",
+        K.CHARS_MISSED_DONE to "No characters left to practise again. Pick another set.",
         K.TUTORS_TITLE to "Tutors",
         K.TUTORS_FOR to "Tutors for {0}",
         K.TUTORS_ALL_LANGUAGES to "Teaches any language",

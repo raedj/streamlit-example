@@ -626,6 +626,8 @@ internal object ArabicStrings {
         K.CHARS_SET_COURSE to "حروف الدروس",
         K.CHARS_SET_SUB to "حروف الدروس مشروحة بأجزائها. وكل مستوى من قوائم الكلمات يضيف الحروف التي تظهر لأول مرة في كلماته.",
         K.CHARS_POSITION to "الحرف {0} من {1}",
+        K.CHARS_SET_MISSED to "للتدرّب مجددًا ({0})",
+        K.CHARS_MISSED_DONE to "لا حروف متبقّية للتدرّب عليها مجددًا. اختر مجموعة أخرى.",
         K.TUTORS_TITLE to "المعلّمون",
         K.TUTORS_FOR to "معلّمو اللغة {0}",
         K.TUTORS_ALL_LANGUAGES to "يعلّم أي لغة",

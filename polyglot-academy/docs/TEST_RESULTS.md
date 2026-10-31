@@ -269,6 +269,26 @@ host tests are off for `commonTest`, since the shared tests already run on the d
 265 tests, 0 failures; on the emulator the library tabs look and switch as before. The progress
 charts were not seen with data on the device (no activity in the active language).
 
+**Practice time and writing practice (2026-10-31).** The progress charts were checked with
+Mandarin: day labels and the 28-day grid (4-31 October) are right after the `day` rename. They
+showed 0 minutes although writing practice had been used: character writing saved its session with
+0 seconds, and listening and tone practice saved no session at all, so free practice never counted
+toward the daily goal or the charts. New `PracticeSession` (core): a session is created on the first
+answer and updated after each one, timed from when the screen opened and capped per answer by
+`StudyService` (2 minutes), so a screen left open does not inflate it; used by writing, listening
+and tones. Writing practice now remembers the set, the script and the position in each set across
+visits, and keeps up to 30 characters to practise again: a character is added when the shape is not
+good or a stroke is out of order, and removed when it is written right. "Right" also accepts a
+"close" shape when every stroke is in order and direction, because the shape check compares with
+the device font, whose style differs from the stroke data; on the emulator 旅 written from its
+medians gave "close" (81 % coverage) with all 10 strokes right. Checked on the emulator: level 2
+chosen, a wrong stroke checked, Next, app restarted: level 2 at character 2 of 275 and "To practise
+again (1)"; that set showed 旅, which left the list after being written right, and the screen fell
+back to the course characters; the progress screen then showed 3.2 minutes today. New tests: core
+2 (missed set lookup, practice state), data 1 (practice time and cap), UI 3 (set and position kept,
+missed set, reading an Arabic photo on the device from the material screen; all in the English
+interface).
+
 | Module | Test class | Tests | Failures |
 |---|---|---|---|
 | core | AdapterTest (OpenAI, Azure, Gemini, Anthropic, DeepSeek, local; image parts per vendor; error classification; timeouts; no key leakage; Mistral, Groq, xAI, OpenRouter, Qwen and custom OpenAI-compatible endpoints; GPT-5/o-series parameters; model lists from OpenAI-compatible, Anthropic and Gemini) | 14 | 0 |

@@ -45,4 +45,24 @@ class WritingCharactersTest {
         val level1 = WritingCharacters.level(list, 1, traditional = true).map { it.character }
         assertTrue('們' in level1 && '们' !in level1 && '我' in level1)
     }
+
+    @Test fun missedCharactersAreFoundWithTheirWords() {
+        val items = WritingCharacters.of(listOf('謝', '的', 'A'), list)
+        assertEquals(listOf('謝', '的'), items.map { it.character })
+        assertEquals("謝謝", items[0].word)
+        assertTrue(WritingCharacters.of(emptyList(), list).isEmpty())
+    }
+
+    @Test fun practiceStateKeepsPositionsAndMissedCharacters() {
+        var st = com.polyglot.academy.core.model.WritingPracticeState()
+        st = st.withPosition(3, traditional = true, index = 12)
+        assertEquals(12, st.position(3, true))
+        assertEquals(0, st.position(3, false))
+        st = st.checked('我', right = false).checked('你', right = false).checked('我', right = false)
+        assertEquals(listOf("我", "你"), st.missed)
+        st = st.checked('你', right = true)
+        assertEquals(listOf("我"), st.missed)
+        repeat(40) { st = st.checked('一' + it, right = false) }
+        assertEquals(com.polyglot.academy.core.model.WritingPracticeState.MAX_MISSED, st.missed.size)
+    }
 }

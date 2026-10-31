@@ -163,6 +163,7 @@ fun ListeningScreen() {
     var answered by remember(index) { mutableStateOf(false) }
     var last by remember(index) { mutableStateOf<Answer?>(null) }
     var rate by remember { mutableStateOf(1f) }
+    val practice = remember(lang) { app.services.study.practice(lang, SessionKind.LISTENING, "listening") }
     ScrollScreen(s[K.LISTENING_TITLE]) {
         Text(s[K.LISTENING_INTRO], style = MaterialTheme.typography.bodyMedium, color = PolyglotTheme.colors.textSecondary)
         if (items.isEmpty()) { StateMessage(s[K.NOT_ENOUGH_DATA], ""); return@ScrollScreen }
@@ -185,7 +186,10 @@ fun ListeningScreen() {
             ExerciseView(item, ctx, answered) { a ->
                 answered = true; last = a
                 // Without a voice the answer is a guess: it is not recorded, so it does not affect skill estimates.
-                if (voice != false) scope.launch { app.services.study.recordExercise(lang, null, item, a.outcome, a.userAnswer, 0, 0, a.promptText) }
+                if (voice != false) scope.launch {
+                    app.services.study.recordExercise(lang, null, item, a.outcome, a.userAnswer, 0, 0, a.promptText)
+                    practice.answer(a.outcome.correct)
+                }
             }
         }
         last?.let { a ->
@@ -331,6 +335,7 @@ fun TonesScreen() {
     var correct by remember { mutableIntStateOf(0) }
     var total by remember { mutableIntStateOf(0) }
     var traditional by remember { mutableStateOf(app.profile.enrollment(LanguageCode.MANDARIN)?.useTraditionalCharacters == true) }
+    val practice = remember { app.services.study.practice(LanguageCode.MANDARIN, SessionKind.LISTENING, "tones") }
     ScrollScreen(s[K.TONES_TITLE]) {
         if (app.profile.activeLearningLanguage != LanguageCode.MANDARIN) Banner(BannerKind.INFO, s[K.TONES_NOT_MANDARIN])
         Text(s[K.TONES_BODY], style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
@@ -341,7 +346,10 @@ fun TonesScreen() {
         PolyCard {
             ExerciseView(item, ctx, answered) { a ->
                 answered = true; total++; if (a.outcome.correct) correct++
-                scope.launch { app.services.study.recordExercise(LanguageCode.MANDARIN, null, item, a.outcome, a.userAnswer, 0, 0, a.promptText) }
+                scope.launch {
+                    app.services.study.recordExercise(LanguageCode.MANDARIN, null, item, a.outcome, a.userAnswer, 0, 0, a.promptText)
+                    practice.answer(a.outcome.correct)
+                }
             }
         }
         if (answered) PrimaryButton(s[K.NEXT], { index++ }, Modifier.fillMaxWidth())
