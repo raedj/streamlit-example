@@ -316,6 +316,16 @@ rule is shown; the "?" in the pinyin line sat on the wrong side in the Arabic in
 left-to-right. Hiding pinyin for known words (review interval of a week or more; data test). Build:
 285 tests, 0 failures (core 196, data 63, uicore 12, ui 14).
 
+**Accessibility on the emulator (2026-10-31).** TalkBack is not on this AOSP image (installing it
+needs a Google image or a separate download, not done), so the screen-reader check was made on the
+accessibility tree that TalkBack reads (`uiautomator dump`): on ten screens (home, learn, practice,
+tutors, me, tones, characters, lesson overview, lesson player, settings) no clickable element lacks a
+name. Elements under 48 dp were only ones cut off at the screen edge while scrolling. At 200% text
+size home, practice and a lesson fit; the bottom bar's five labels crowded each other, so from 150%
+only the selected tab shows its label and the others keep their name for screen readers (checked:
+no unnamed element). Not tested: real TalkBack reading order and gestures, Switch Access, a
+physical phone. Build: 285 tests, 0 failures.
+
 | Module | Test class | Tests | Failures |
 |---|---|---|---|
 | core | AdapterTest (OpenAI, Azure, Gemini, Anthropic, DeepSeek, local; image parts per vendor; error classification; timeouts; no key leakage; Mistral, Groq, xAI, OpenRouter, Qwen and custom OpenAI-compatible endpoints; GPT-5/o-series parameters; model lists from OpenAI-compatible, Anthropic and Gemini) | 14 | 0 |

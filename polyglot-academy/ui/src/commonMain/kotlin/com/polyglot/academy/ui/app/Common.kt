@@ -84,9 +84,14 @@ fun AppBottomBar(current: Tab) {
             Triple(Tab.TUTORS, Icons.Filled.RecordVoiceOver, K.NAV_TUTORS),
             Triple(Tab.ME, Icons.Filled.Person, K.NAV_ME),
         ).forEach { (tab, icon, key) ->
+            // With very large text five labels do not fit: only the selected one is shown, and the other
+            // icons carry the name for screen readers instead.
+            val allLabels = androidx.compose.ui.platform.LocalDensity.current.fontScale < 1.5f
             NavigationBarItem(
                 selected = tab == current, onClick = { if (tab != current) app.nav.switchTab(tab) },
-                icon = { Icon(icon, contentDescription = null) }, label = { Text(s[key], maxLines = 1) },
+                icon = { Icon(icon, contentDescription = if (allLabels || tab == current) null else s[key]) },
+                label = { Text(s[key], maxLines = 1, overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis) },
+                alwaysShowLabel = allLabels,
                 colors = NavigationBarItemDefaults.colors(selectedIconColor = c.onPrimaryContainer, selectedTextColor = c.textPrimary, indicatorColor = c.primaryContainer),
             )
         }
