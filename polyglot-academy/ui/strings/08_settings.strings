@@ -268,3 +268,13 @@ PROV_MODELS_FOUND ¦ {0} models available (showing {1}; type in the model field 
 PROV_MODELS_EMPTY ¦ The provider returned no models. ¦ لم يُرجع المزوّد أي نماذج.
 PROV_MODELS_UNSUPPORTED ¦ This provider has no model list; type the model or deployment name. ¦ لا يوفّر هذا المزوّد قائمة نماذج؛ اكتب اسم النموذج أو النشر.
 PROV_MODELS_FAILED ¦ Could not load models: {0} ¦ تعذّر تحميل النماذج: {0}
+SET_SHOW_POINTS ¦ Show points, quests and streak ¦ إظهار النقاط والمهام والسلسلة
+SET_SHOW_POINTS_SUB ¦ Your progress is recorded either way; this only hides them from the home screen. ¦ يُسجَّل تقدّمك في كلّ الأحوال، وهذا يخفيها من الشاشة الرئيسية فقط.
+SET_REPORTS ¦ Content error reports ¦ بلاغات أخطاء المحتوى
+SET_REPORTS_NONE ¦ No reports yet. Use "Report an error in this content" in lessons, reviews or word pages. ¦ لا بلاغات بعد. استخدم «أبلغ عن خطأ في هذا المحتوى» في الدروس أو المراجعة أو صفحات الكلمات.
+SET_REPORTS_COUNT ¦ {0} report on this device|{0} reports on this device ¦ لا بلاغات|بلاغ واحد على هذا الجهاز|بلاغان على هذا الجهاز|{0} بلاغات على هذا الجهاز|{0} بلاغًا على هذا الجهاز|{0} بلاغ على هذا الجهاز
+SET_REPORTS_EXPORT ¦ Export reports for reviewers ¦ صدّر البلاغات للمراجعين
+SET_REPORTS_DELETE ¦ Delete all reports ¦ احذف كلّ البلاغات
+SET_REPORTS_DELETE_BODY ¦ The reports on this device will be deleted. Export them first if you want to send them. ¦ ستُحذف البلاغات من هذا الجهاز. صدّرها أولًا إن أردت إرسالها.
+SET_TRANSLIT_KNOWN ¦ Hide it for words I know ¦ أخفِه للكلمات التي أتقنتها
+SET_TRANSLIT_KNOWN_SUB ¦ For words due a week or more later in your reviews; a button still shows it. ¦ للكلمات التي صار موعد مراجعتها بعد أسبوع أو أكثر، ويبقى زرّ لإظهاره.

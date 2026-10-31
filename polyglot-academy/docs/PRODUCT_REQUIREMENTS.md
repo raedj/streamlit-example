@@ -19,7 +19,7 @@ English, Mandarin Chinese, Spanish, French, Arabic.
 | PR-02 | Placement test with adaptive difficulty that reports a level *range*, labelled as an estimate | Implemented + tested |
 | PR-03 | Structured course per language (units → lessons) with prerequisites and mastery (≥80 %) | Implemented + tested |
 | PR-04 | Ten exercise types: flashcard, multiple choice, fill-in, sentence order, matching, translation, dictation, speak-and-repeat, tone choice, free writing | Implemented (UI compiled, not run) |
-| PR-05 | Spaced-repetition review of lesson words, imported words and saved phrases | Implemented + tested |
+| PR-05 | Spaced-repetition review of lesson words, imported words and saved phrases; the learner can postpone an item (a day, a week) or remove it | Implemented + tested |
 | PR-06 | Mistake log with de-duplication and resolution | Implemented + tested |
 | PR-07 | Ten original tutor personas whose personality changes instructional behaviour | Implemented + tested (prompt content) |
 | PR-08 | Conversation practice by text or voice; AI when allowed, otherwise an offline scripted partner that is clearly labelled as not AI | Implemented + tested (service level) |
@@ -29,11 +29,11 @@ English, Mandarin Chinese, Spanish, French, Arabic.
 | PR-12 | Listening/dictation with speed control | Implemented |
 | PR-13 | Writing with offline checks and optional AI corrections that separate errors from stylistic options | Implemented + tested |
 | PR-14 | Pronunciation practice using speech recognition, with an explicit disclaimer that it is not phonetic scoring | Implemented (UI) |
-| PR-15 | Mandarin: pinyin with tone marks, tone drills, tone sandhi note, simplified/traditional toggle | Implemented + tested (pinyin) |
+| PR-15 | Mandarin: pinyin with tone marks, tone drills, tone sandhi (不, 一, third tones) and neutral-tone drills, hearing close words apart, simplified/traditional toggle, hiding pinyin for known words | Implemented + tested (drills built from the word list; checked on the emulator, which has no Chinese voice) |
 | PR-16 | Daily plan that fits the learner's time budget and does not grow after a missed day | Implemented + tested |
 | PR-17 | Progress analytics from real events, separating observed metrics from estimates; no fabricated data | Implemented + tested |
 | PR-18 | Optional professional tracks (business, banking/finance, credit risk & NPL, legal, career) with "not professional advice" disclaimers | Implemented: English (5 tracks); the other seven languages have "for work", "banking and finance", "credit and risk" and legal tracks (the last two added 2026-10-30, smaller than the English ones) |
-| PR-19 | Import of own material (text, subtitles, text-based PDF) → extracted text review → word candidates → review deck | Implemented + tested; OCR (scanned PDFs, images) and audio transcription not implemented |
+| PR-19 | Import of own material (text, subtitles, text-based PDF, photos, scanned PDFs) → extracted text review → word candidates → review deck | Implemented + tested; photos read on the device for all eight languages (Tesseract), or with AI on request; audio and video transcription not implemented |
 | PR-20 | Optional relaxation/breathing with evidence-conscious disclaimer | Implemented |
 | PR-21 | AI provider management with own API keys, verified connection tests, preferred provider | Implemented + tested (mocked HTTP) |
 | PR-22 | Privacy controls per data category, consent before cloud AI, no silent fallback to another cloud provider | Implemented + tested |

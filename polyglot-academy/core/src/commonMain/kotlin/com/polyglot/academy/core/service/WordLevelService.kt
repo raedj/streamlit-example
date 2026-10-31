@@ -1,6 +1,7 @@
 package com.polyglot.academy.core.service
 
 import com.polyglot.academy.core.content.WordLessons
+import com.polyglot.academy.core.learning.AnswerAmbiguity
 import com.polyglot.academy.core.model.LanguageCode
 import com.polyglot.academy.core.model.ReviewPhase
 import com.polyglot.academy.core.model.ReviewState
@@ -108,10 +109,16 @@ class WordLevelService(
         val words = WordLists.load(language).level(level)
         val random = Random(seed)
         return words.shuffled(random).take(size).mapIndexed { i, entry ->
-            fun usable(o: WordEntry) = o.id != entry.id && o.term != entry.term && o.meaning.en != entry.meaning.en && o.meaning.ar != entry.meaning.ar
+            // A distractor must not be a second right answer: no shared term and no shared sense of the meaning.
+            fun usable(o: WordEntry) = o.id != entry.id && o.term != entry.term && !AnswerAmbiguity.overlaps(o.meaning, entry.meaning)
             val samePos = words.filter { usable(it) && it.partOfSpeech == entry.partOfSpeech }.shuffled(random)
             val others = words.filter { usable(it) && it.partOfSpeech != entry.partOfSpeech }.shuffled(random)
-            val distractors = (samePos + others).distinctBy { it.meaning.en }.distinctBy { it.meaning.ar }.distinctBy { it.term }.take(OPTIONS - 1)
+            // Distractors must not overlap each other either, or the learner would see two identical choices.
+            val distractors = mutableListOf<WordEntry>()
+            for (o in samePos + others) {
+                if (distractors.size == OPTIONS - 1) break
+                if (distractors.none { it.term == o.term || AnswerAmbiguity.overlaps(it.meaning, o.meaning) }) distractors += o
+            }
             val options = (distractors + entry).shuffled(random)
             WordQuizQuestion(entry, options, options.indexOf(entry), modes[i % modes.size])
         }

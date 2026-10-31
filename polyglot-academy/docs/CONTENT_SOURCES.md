@@ -104,5 +104,13 @@ of the licence is not legal advice.
 | Arabic and Urdu recognition models (`ara.traineddata` 1.4 MB, `urd.traineddata` 1.4 MB) | `androidApp/src/main/assets/tessdata/` | Apache License 2.0 (`docs/licenses/Apache-2.0-tessdata_fast.txt`) | tesseract-ocr/tessdata_fast, commit 8741641 (2024-08-01), downloaded 2026-10-30 with the owner's approval; SHA-256 ara e3206d3d…b2bb3e729, urd 62e8250c…5d0ce3c5b5008387fd0d555f | Reading Arabic and Urdu photos on the device |
 | Tesseract4Android 4.9.0 (Tesseract OCR with Leptonica, libjpeg, libpng) | Gradle dependency `cz.adaptech.tesseract4android:tesseract4android`, from JitPack | Apache License 2.0 (Tesseract, Tesseract4Android); Leptonica, libjpeg and libpng under their own permissive licences | github.com/adaptech-cz/Tesseract4Android | OCR engine on Android |
 
-The models are unmodified. Models for the other six learning languages (about 16 MB together) are
-not bundled.
+The models are unmodified. On 2026-10-31, with the owner's approval, the models for the other six
+languages were added from the same commit: `eng` 4.1 MB, `chi_sim` 2.5 MB, `chi_tra` 2.4 MB, `spa` 2.3 MB,
+`fra` 1.1 MB, `tur` 4.6 MB, `msa` 1.7 MB (SHA-256 recorded in TEST_RESULTS.md).
+
+## Human review of the content
+
+`content/review/status.tsv` records which word-list items a qualified speaker has reviewed (status,
+reviewer, date). It is empty: nothing has been reviewed by a person yet. `tools/review_sheets.py` exports
+review sheets (`content/review/sheets/`, level 1 of every language prepared: 900 rows each) and merges the
+filled sheets back; the app shows an item as reviewed only when it is listed there.

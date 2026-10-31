@@ -89,3 +89,6 @@ QUEST_CONVERSATION_TURNS ¦ Send {0} messages to a tutor ¦ أرسل {0} رسا�
 QUEST_SPEAK_ALOUD ¦ Speak {0} times in a conversation ¦ تحدّث {0} مرات في محادثة
 QUEST_READ_STORY ¦ Read a story ¦ اقرأ قصة واحدة
 QUEST_PRONUNCIATION ¦ Do {0} pronunciation checks ¦ أجرِ {0} اختبارات نطق
+HOME_OTHER ¦ Something else ¦ نشاط آخر
+HOME_OTHER_HIDE ¦ Hide other activities ¦ إخفاء الأنشطة الأخرى
+HOME_OTHER_REVIEW ¦ Review {0} word|Review {0} words ¦ لا كلمات للمراجعة|راجِع كلمة واحدة|راجِع كلمتين|راجِع {0} كلمات|راجِع {0} كلمة|راجِع {0} كلمة

@@ -1,0 +1,901 @@
+item_id	kind	level	text	pron	en	ar	status	correction	reviewer	date	note
+ms_w_yang	word	1	yang		which, who (relative)	الذي، التي					
+ms_w_yang#ex1	example	1	Buku yang merah itu buku saya.		The red book is mine.	الكتاب الأحمر كتابي.					
+ms_w_yang#ex2	example	1	Kucing yang hitam itu kucing saya.		The black cat is mine.	القطة السوداء قطتي.					
+ms_w_dan	word	1	dan		and	و					
+ms_w_dan#ex1	example	1	Saya suka teh dan kopi.		I like tea and coffee.	أحب الشاي والقهوة.					
+ms_w_dan#ex2	example	1	Ibu dan bapa ada di rumah.		Mum and Dad are at home.	أمي وأبي في البيت.					
+ms_w_di	word	1	di		at, in	في					
+ms_w_di#ex1	example	1	Saya tinggal di Kuala Lumpur.		I live in Kuala Lumpur.	أسكن في كوالالمبور.					
+ms_w_di#ex2	example	1	Kunci ada di atas meja.		The key is on the table.	المفتاح على الطاولة.					
+ms_w_ke	word	1	ke		to	إلى					
+ms_w_ke#ex1	example	1	Saya pergi ke sekolah setiap hari.		I go to school every day.	أذهب إلى المدرسة كل يوم.					
+ms_w_ke#ex2	example	1	Mereka balik ke rumah petang ini.		They're going back home this afternoon.	سيعودون إلى البيت بعد ظهر اليوم.					
+ms_w_dari	word	1	dari		from	من					
+ms_w_dari#ex1	example	1	Saya datang dari Malaysia.		I come from Malaysia.	أنا من ماليزيا.					
+ms_w_dari#ex2	example	1	Dia baru balik dari pejabat.		He has just come back from the office.	عاد للتوّ من المكتب.					
+ms_w_ini	word	1	ini		this	هذا، هذه					
+ms_w_ini#ex1	example	1	Ini rumah baru saya.		This is my new house.	هذا بيتي الجديد.					
+ms_w_ini#ex2	example	1	Buku ini sangat bagus.		This book is very good.	هذا الكتاب جيد جدًا.					
+ms_w_itu	word	1	itu		that	ذلك، تلك					
+ms_w_itu#ex1	example	1	Itu kereta abang saya.		That's my older brother's car.	تلك سيارة أخي الأكبر.					
+ms_w_itu#ex2	example	1	Kucing itu sangat cantik.		That cat is very pretty.	تلك القطة جميلة جدًا.					
+ms_w_saya	word	1	saya		I; my	أنا					
+ms_w_saya#ex1	example	1	Nama saya Ali, saya pelajar.		My name is Ali, I'm a student.	اسمي علي، أنا طالب.					
+ms_w_saya#ex2	example	1	Saya suka makan nasi.		I like eating rice.	أحب أكل الأرز.					
+ms_w_awak	word	1	awak		you	أنت					
+ms_w_awak#ex1	example	1	Awak datang dari mana?		Where do you come from?	من أين أنت؟					
+ms_w_awak#ex2	example	1	Awak mahu minum apa?		What would you like to drink?	ماذا تريد أن تشرب؟					
+ms_w_dia	word	1	dia		he, she	هو، هي					
+ms_w_dia#ex1	example	1	Dia kawan baik saya.		She is my good friend.	هي صديقتي العزيزة.					
+ms_w_dia#ex2	example	1	Dia bekerja di hospital.		He works at a hospital.	يعمل في مستشفى.					
+ms_w_kami	word	1	kami		we (not including you)	نحن (دون المخاطَب)					
+ms_w_kami#ex1	example	1	Kami pelajar di sekolah ini.		We are students at this school.	نحن طلاب في هذه المدرسة.					
+ms_w_kami#ex2	example	1	Kami makan dengan keluarga setiap malam.		We eat with the family every night.	نأكل مع العائلة كل ليلة.					
+ms_w_kita	word	1	kita		we (including you)	نحن (مع المخاطَب)					
+ms_w_kita#ex1	example	1	Kita pergi ke pasar esok.		We'll go to the market tomorrow.	سنذهب إلى السوق غدًا.					
+ms_w_kita#ex2	example	1	Kita perlu belajar sama-sama.		We need to study together.	نحتاج إلى أن ندرس معًا.					
+ms_w_mereka	word	1	mereka		they	هم					
+ms_w_mereka#ex1	example	1	Mereka tinggal di bandar.		They live in the city.	يسكنون في المدينة.					
+ms_w_mereka#ex2	example	1	Mereka sedang bermain di luar.		They are playing outside.	هم يلعبون في الخارج.					
+ms_w_anda	word	1	anda		you (polite)	حضرتك					
+ms_w_anda#ex1	example	1	Anda boleh duduk di sini.		You can sit here.	يمكنك الجلوس هنا.					
+ms_w_anda#ex2	example	1	Boleh saya tahu nama anda?		May I know your name?	هل لي أن أعرف اسمك؟					
+ms_w_tidak	word	1	tidak		not	لا					
+ms_w_tidak#ex1	example	1	Saya tidak minum kopi.		I don't drink coffee.	لا أشرب القهوة.					
+ms_w_tidak#ex2	example	1	Hari ini tidak hujan.		It's not raining today.	لا تمطر اليوم.					
+ms_w_bukan	word	1	bukan		not (with nouns)	ليس					
+ms_w_bukan#ex1	example	1	Ini bukan beg saya.		This isn't my bag.	هذه ليست حقيبتي.					
+ms_w_bukan#ex2	example	1	Dia bukan cikgu, dia doktor.		She isn't a teacher, she's a doctor.	ليست معلمة، إنها طبيبة.					
+ms_w_ada	word	1	ada		there is; to have	يوجد؛ عنده					
+ms_w_ada#ex1	example	1	Ada kedai dekat sini?		Is there a shop near here?	هل يوجد دكان قريب من هنا؟					
+ms_w_ada#ex2	example	1	Saya ada dua adik.		I have two younger siblings.	لديّ أخوان أصغر مني.					
+ms_w_akan	word	1	akan		will	سوف					
+ms_w_akan#ex1	example	1	Saya akan datang esok.		I'll come tomorrow.	سآتي غدًا.					
+ms_w_akan#ex2	example	1	Dia akan pergi ke Pulau Pinang.		He will go to Penang.	سيذهب إلى بينانغ.					
+ms_w_sudah	word	1	sudah		already	قد، بالفعل					
+ms_w_sudah#ex1	example	1	Saya sudah makan tengah hari.		I've already had lunch.	تناولت الغداء بالفعل.					
+ms_w_sudah#ex2	example	1	Bas sudah sampai di stesen.		The bus has arrived at the station.	وصلت الحافلة إلى المحطة.					
+ms_w_sedang	word	1	sedang		in the middle of (-ing)	يفعل الآن					
+ms_w_sedang#ex1	example	1	Ibu sedang memasak di dapur.		Mum is cooking in the kitchen.	أمي تطبخ في المطبخ.					
+ms_w_sedang#ex2	example	1	Saya sedang membaca buku.		I'm reading a book.	أقرأ كتابًا.					
+ms_w_belum	word	1	belum		not yet	لم بعد					
+ms_w_belum#ex1	example	1	Saya belum makan lagi.		I haven't eaten yet.	لم آكل بعد.					
+ms_w_belum#ex2	example	1	Kawan saya belum sampai lagi.		My friend hasn't arrived yet.	لم يصل صديقي بعد.					
+ms_w_boleh	word	1	boleh		can, may	يستطيع؛ يمكن					
+ms_w_boleh#ex1	example	1	Boleh saya duduk di sini?		May I sit here?	هل يمكنني الجلوس هنا؟					
+ms_w_boleh#ex2	example	1	Saya boleh bercakap bahasa Melayu.		I can speak Malay.	أستطيع التكلم بالملايوية.					
+ms_w_mahu	word	1	mahu		to want	يريد					
+ms_w_mahu#ex1	example	1	Saya mahu minum air.		I want to drink water.	أريد أن أشرب ماءً.					
+ms_w_mahu#ex2	example	1	Awak nak pergi ke mana?		Where do you want to go?	إلى أين تريد أن تذهب؟					
+ms_w_perlu	word	1	perlu		to need, must	يحتاج؛ يجب					
+ms_w_perlu#ex1	example	1	Saya perlu pergi sekarang.		I need to go now.	يجب أن أذهب الآن.					
+ms_w_perlu#ex2	example	1	Awak perlu jumpa doktor.		You need to see a doctor.	تحتاج إلى أن ترى طبيبًا.					
+ms_w_dengan	word	1	dengan		with	مع؛ بـ					
+ms_w_dengan#ex1	example	1	Saya pergi dengan kawan saya.		I'm going with my friend.	أذهب مع صديقي.					
+ms_w_dengan#ex2	example	1	Dia minum kopi dengan gula.		He drinks coffee with sugar.	يشرب القهوة بالسكر.					
+ms_w_untuk	word	1	untuk		for	لـ، من أجل					
+ms_w_untuk#ex1	example	1	Hadiah ini untuk awak.		This present is for you.	هذه الهدية لك.					
+ms_w_untuk#ex2	example	1	Saya beli roti untuk sarapan.		I bought bread for breakfast.	اشتريت خبزًا للفطور.					
+ms_w_pada	word	1	pada		at, on (time)	في (للزمن)					
+ms_w_pada#ex1	example	1	Saya jumpa dia pada waktu petang.		I met her in the afternoon.	قابلتها بعد الظهر.					
+ms_w_pada#ex2	example	1	Kami berjumpa pada hari Jumaat.		We met on Friday.	التقينا يوم الجمعة.					
+ms_w_kepada	word	1	kepada		to (a person)	إلى (شخص)					
+ms_w_kepada#ex1	example	1	Saya beri hadiah kepada ibu.		I gave a present to Mum.	أعطيت هدية لأمي.					
+ms_w_kepada#ex2	example	1	Tanya soalan itu kepada cikgu.		Ask the teacher that question.	اسأل المعلم ذلك السؤال.					
+ms_w_juga	word	1	juga		also, too	أيضًا					
+ms_w_juga#ex1	example	1	Saya juga pelajar di sini.		I'm also a student here.	أنا أيضًا طالب هنا.					
+ms_w_juga#ex2	example	1	Adik saya juga suka kucing.		My little brother likes cats too.	أخي الصغير يحب القطط أيضًا.					
+ms_w_lagi	word	1	lagi		more; again	أيضًا؛ مرة أخرى					
+ms_w_lagi#ex1	example	1	Saya mahu teh lagi.		I want more tea.	أريد مزيدًا من الشاي.					
+ms_w_lagi#ex2	example	1	Jumpa lagi esok, kawan!		See you again tomorrow, friend!	نلتقي غدًا يا صديقي!					
+ms_w_sangat	word	1	sangat		very	جدًا					
+ms_w_sangat#ex1	example	1	Makanan ini sangat sedap.		This food is very tasty.	هذا الطعام لذيذ جدًا.					
+ms_w_sangat#ex2	example	1	Saya sangat penat hari ini.		I'm very tired today.	أنا متعب جدًا اليوم.					
+ms_w_banyak	word	1	banyak		many, a lot	كثير					
+ms_w_banyak#ex1	example	1	Dia ada banyak kawan.		She has many friends.	لديها أصدقاء كثيرون.					
+ms_w_banyak#ex2	example	1	Terima kasih banyak, cikgu!		Thank you very much, teacher!	شكرًا جزيلًا يا معلم!					
+ms_w_sedikit	word	1	sedikit		a little	قليل					
+ms_w_sedikit#ex1	example	1	Saya mahu sedikit gula.		I'd like a little sugar.	أريد قليلًا من السكر.					
+ms_w_sedikit#ex2	example	1	Saya faham bahasa Melayu sedikit.		I understand a little Malay.	أفهم الملايوية قليلًا.					
+ms_w_semua	word	1	semua		all	كل، جميع					
+ms_w_semua#ex1	example	1	Semua pelajar ada di kelas.		All the students are in class.	كل الطلاب في الصف.					
+ms_w_semua#ex2	example	1	Saya suka semua makanan di sini.		I like all the food here.	أحب كل الطعام هنا.					
+ms_w_setiap	word	1	setiap		every	كل					
+ms_w_setiap#ex1	example	1	Saya minum kopi setiap pagi.		I drink coffee every morning.	أشرب القهوة كل صباح.					
+ms_w_setiap#ex2	example	1	Setiap bilik ada tingkap.		Every room has a window.	في كل غرفة نافذة.					
+ms_w_apa	word	1	apa		what	ماذا، ما					
+ms_w_apa#ex1	example	1	Apa nama makanan ini?		What is this food called?	ما اسم هذا الطعام؟					
+ms_w_apa#ex2	example	1	Awak buat apa hari ini?		What are you doing today?	ماذا تفعل اليوم؟					
+ms_w_siapa	word	1	siapa		who	مَن					
+ms_w_siapa#ex1	example	1	Siapa nama kawan awak itu?		What's your friend's name?	ما اسم صديقك ذاك؟					
+ms_w_siapa#ex2	example	1	Siapa lelaki di depan pintu?		Who is the man in front of the door?	من الرجل أمام الباب؟					
+ms_w_mana	word	1	mana		where; which	أين؛ أيّ					
+ms_w_mana#ex1	example	1	Di mana stesen bas?		Where is the bus station?	أين محطة الحافلات؟					
+ms_w_mana#ex2	example	1	Awak tinggal di mana?		Where do you live?	أين تسكن؟					
+ms_w_bila	word	1	bila		when	متى					
+ms_w_bila#ex1	example	1	Bila awak balik ke rumah?		When are you going home?	متى تعود إلى البيت؟					
+ms_w_bila#ex2	example	1	Bila kelas bahasa bermula?		When does the language class start?	متى يبدأ درس اللغة؟					
+ms_w_bagaimana	word	1	bagaimana		how	كيف					
+ms_w_bagaimana#ex1	example	1	Bagaimana saya pergi ke lapangan terbang?		How do I get to the airport?	كيف أذهب إلى المطار؟					
+ms_w_bagaimana#ex2	example	1	Bagaimana cuaca di sana?		What's the weather like there?	كيف الطقس هناك؟					
+ms_w_kenapa	word	1	kenapa		why	لماذا					
+ms_w_kenapa#ex1	example	1	Kenapa awak tidak datang semalam?		Why didn't you come yesterday?	لماذا لم تأتِ أمس؟					
+ms_w_kenapa#ex2	example	1	Kenapa awak sedih hari ini?		Why are you sad today?	لماذا أنت حزين اليوم؟					
+ms_w_berapa	word	1	berapa		how much, how many	كم					
+ms_w_berapa#ex1	example	1	Berapa harga baju ini?		How much is this shirt?	بكم هذا القميص؟					
+ms_w_berapa#ex2	example	1	Berapa orang dalam keluarga awak?		How many people are in your family?	كم شخصًا في عائلتك؟					
+ms_w_ya	word	1	ya		yes	نعم					
+ms_w_ya#ex1	example	1	Ya, saya pelajar di sini.		Yes, I'm a student here.	نعم، أنا طالب هنا.					
+ms_w_ya#ex2	example	1	Ya, saya mahu kopi.		Yes, I'd like coffee.	نعم، أريد قهوة.					
+ms_w_terima_kasih	word	1	terima kasih		thank you	شكرًا					
+ms_w_terima_kasih#ex1	example	1	Terima kasih atas bantuan awak.		Thank you for your help.	شكرًا على مساعدتك.					
+ms_w_terima_kasih#ex2	example	1	Terima kasih, makanan ini sedap.		Thank you, this food is tasty.	شكرًا، هذا الطعام لذيذ.					
+ms_w_sama_sama	word	1	sama-sama		you're welcome	عفوًا					
+ms_w_sama_sama#ex1	example	1	Terima kasih! Sama-sama.		Thank you! — You're welcome.	شكرًا! — عفوًا.					
+ms_w_sama_sama#ex2	example	1	Sama-sama, jumpa lagi esok.		You're welcome, see you tomorrow.	عفوًا، نلتقي غدًا.					
+ms_w_maaf	word	1	maaf		sorry	آسف					
+ms_w_maaf#ex1	example	1	Maaf, saya tidak faham.		Sorry, I don't understand.	آسف، لا أفهم.					
+ms_w_maaf#ex2	example	1	Maaf, saya datang lewat.		Sorry, I'm late.	آسف، تأخرت.					
+ms_w_tolong	word	1	tolong		to help; please	يساعد؛ من فضلك					
+ms_w_tolong#ex1	example	1	Tolong buka pintu itu.		Please open that door.	افتح ذلك الباب من فضلك.					
+ms_w_tolong#ex2	example	1	Boleh awak tolong saya?		Can you help me?	هل يمكنك مساعدتي؟					
+ms_w_sila	word	1	sila		please (go ahead)	تفضّل					
+ms_w_sila#ex1	example	1	Sila duduk di sini.		Please sit here.	تفضّل اجلس هنا.					
+ms_w_sila#ex2	example	1	Sila masuk, selamat datang.		Please come in, welcome.	تفضّل بالدخول، أهلًا وسهلًا.					
+ms_w_selamat_pagi	word	1	selamat pagi		good morning	صباح الخير					
+ms_w_selamat_pagi#ex1	example	1	Selamat pagi, apa khabar?		Good morning, how are you?	صباح الخير، كيف حالك؟					
+ms_w_selamat_pagi#ex2	example	1	Selamat pagi, cikgu dan kawan-kawan!		Good morning, teacher and friends!	صباح الخير يا معلم ويا أصدقاء!					
+ms_w_selamat_malam	word	1	selamat malam		good night	تصبح على خير					
+ms_w_selamat_malam#ex1	example	1	Selamat malam, jumpa lagi esok.		Good night, see you tomorrow.	تصبح على خير، نلتقي غدًا.					
+ms_w_selamat_malam#ex2	example	1	Selamat malam, ibu dan bapa.		Good night, Mum and Dad.	تصبحان على خير يا أمي ويا أبي.					
+ms_w_jumpa_lagi	word	1	jumpa lagi		see you again	إلى اللقاء					
+ms_w_jumpa_lagi#ex1	example	1	Terima kasih, jumpa lagi!		Thanks, see you!	شكرًا، إلى اللقاء!					
+ms_w_jumpa_lagi#ex2	example	1	Jumpa lagi minggu depan.		See you next week.	نلتقي الأسبوع القادم.					
+ms_w_apa_khabar	word	1	apa khabar		how are you	كيف حالك					
+ms_w_apa_khabar#ex1	example	1	Apa khabar? Khabar baik.		How are you? — I'm fine.	كيف حالك؟ — بخير.					
+ms_w_apa_khabar#ex2	example	1	Apa khabar keluarga awak?		How is your family?	كيف حال عائلتك؟					
+ms_w_sekarang	word	1	sekarang		now	الآن					
+ms_w_sekarang#ex1	example	1	Saya sangat sibuk sekarang.		I'm very busy now.	أنا مشغول جدًا الآن.					
+ms_w_sekarang#ex2	example	1	Sekarang sudah pukul berapa?		What time is it now?	كم الساعة الآن؟					
+ms_w_esok	word	1	esok		tomorrow	غدًا					
+ms_w_esok#ex1	example	1	Esok saya cuti, tidak bekerja.		I'm off tomorrow, I'm not working.	غدًا إجازتي، لن أعمل.					
+ms_w_esok#ex2	example	1	Kita jumpa esok pagi.		We'll meet tomorrow morning.	نلتقي صباح الغد.					
+ms_w_semalam	word	1	semalam		yesterday	أمس					
+ms_w_semalam#ex1	example	1	Semalam hujan sepanjang hari.		It rained all day yesterday.	أمطرت طوال اليوم أمس.					
+ms_w_semalam#ex2	example	1	Saya jumpa dia semalam.		I met him yesterday.	قابلته أمس.					
+ms_w_selalu	word	1	selalu		always	دائمًا					
+ms_w_selalu#ex1	example	1	Saya selalu minum teh pada waktu pagi.		I always drink tea in the morning.	أشرب الشاي دائمًا في الصباح.					
+ms_w_selalu#ex2	example	1	Bapa saya selalu sibuk bekerja.		My father is always busy working.	أبي مشغول دائمًا بالعمل.					
+ms_w_kadang_kadang	word	1	kadang-kadang		sometimes	أحيانًا					
+ms_w_kadang_kadang#ex1	example	1	Kadang-kadang kami makan di restoran.		Sometimes we eat at a restaurant.	أحيانًا نأكل في مطعم.					
+ms_w_kadang_kadang#ex2	example	1	Saya kadang-kadang pergi ke pasar.		I sometimes go to the market.	أذهب أحيانًا إلى السوق.					
+ms_w_biasanya	word	1	biasanya		usually	عادةً					
+ms_w_biasanya#ex1	example	1	Biasanya saya tidur pukul sepuluh.		I usually go to bed at ten.	عادةً أنام في الساعة العاشرة.					
+ms_w_biasanya#ex2	example	1	Biasanya dia naik bas ke pejabat.		He usually takes the bus to the office.	عادةً يركب الحافلة إلى المكتب.					
+ms_w_masih	word	1	masih		still	ما زال					
+ms_w_masih#ex1	example	1	Adik saya masih tidur lagi.		My little sister is still sleeping.	أختي الصغيرة ما زالت نائمة.					
+ms_w_masih#ex2	example	1	Kedai itu masih buka.		That shop is still open.	ذلك الدكان ما زال مفتوحًا.					
+ms_w_hanya	word	1	hanya		only	فقط					
+ms_w_hanya#ex1	example	1	Saya hanya mahu air.		I only want water.	أريد الماء فقط.					
+ms_w_hanya#ex2	example	1	Dia cuma ada satu adik.		She has only one younger sibling.	لديها أخ أصغر واحد فقط.					
+ms_w_terlalu	word	1	terlalu		too	جدًا، أكثر من اللازم					
+ms_w_terlalu#ex1	example	1	Baju ini terlalu mahal.		This shirt is too expensive.	هذا القميص غالٍ جدًا.					
+ms_w_terlalu#ex2	example	1	Teh ini terlalu panas.		This tea is too hot.	هذا الشاي ساخن جدًا.					
+ms_w_lebih	word	1	lebih		more	أكثر					
+ms_w_lebih#ex1	example	1	Kereta api lebih cepat daripada bas.		The train is faster than the bus.	القطار أسرع من الحافلة.					
+ms_w_lebih#ex2	example	1	Saya mahu lebih banyak masa.		I want more time.	أريد وقتًا أكثر.					
+ms_w_paling	word	1	paling		most	الأكثر					
+ms_w_paling#ex1	example	1	Ini restoran yang paling bagus.		This is the best restaurant.	هذا أفضل مطعم.					
+ms_w_paling#ex2	example	1	Dia lari paling cepat di kelas.		He runs the fastest in the class.	هو الأسرع ركضًا في الصف.					
+ms_w_mungkin	word	1	mungkin		maybe	ربما					
+ms_w_mungkin#ex1	example	1	Mungkin esok akan hujan.		Maybe it will rain tomorrow.	ربما تمطر غدًا.					
+ms_w_mungkin#ex2	example	1	Dia mungkin datang lewat.		He may come late.	ربما يأتي متأخرًا.					
+ms_w_nanti	word	1	nanti		later	لاحقًا					
+ms_w_nanti#ex1	example	1	Saya telefon awak nanti.		I'll phone you later.	سأتصل بك لاحقًا.					
+ms_w_nanti#ex2	example	1	Kita jumpa nanti di sekolah.		See you later at school.	نلتقي لاحقًا في المدرسة.					
+ms_w_sini	word	1	sini		here	هنا					
+ms_w_sini#ex1	example	1	Datang ke sini sekarang.		Come here now.	تعال إلى هنا الآن.					
+ms_w_sini#ex2	example	1	Rumah saya dekat dari sini.		My house is near here.	بيتي قريب من هنا.					
+ms_w_sana	word	1	sana		there	هناك					
+ms_w_sana#ex1	example	1	Siapa yang duduk di sana?		Who is sitting over there?	من الجالس هناك؟					
+ms_w_sana#ex2	example	1	Pasar ada di sana.		The market is over there.	السوق هناك.					
+ms_w_luar	word	1	luar		outside	خارج					
+ms_w_luar#ex1	example	1	Ayah menunggu di luar rumah.		Dad is waiting outside the house.	أبي ينتظر خارج البيت.					
+ms_w_luar#ex2	example	1	Cuaca di luar sangat panas.		It's very hot outside.	الجو حار جدًا في الخارج.					
+ms_w_dalam	word	1	dalam		in, inside	داخل					
+ms_w_dalam#ex1	example	1	Buku ada dalam beg.		The book is in the bag.	الكتاب في الحقيبة.					
+ms_w_dalam#ex2	example	1	Ibu ada di dalam rumah.		Mum is inside the house.	أمي داخل البيت.					
+ms_w_atas	word	1	atas		on, above; for (thanks)	فوق، على					
+ms_w_atas#ex1	example	1	Pen ada di atas meja.		The pen is on the table.	القلم على الطاولة.					
+ms_w_atas#ex2	example	1	Kucing tidur di atas katil.		The cat sleeps on the bed.	القطة تنام على السرير.					
+ms_w_bawah	word	1	bawah		under	تحت					
+ms_w_bawah#ex1	example	1	Kasut ada di bawah katil.		The shoes are under the bed.	الحذاء تحت السرير.					
+ms_w_bawah#ex2	example	1	Anjing duduk di bawah meja.		The dog is sitting under the table.	الكلب جالس تحت الطاولة.					
+ms_w_depan	word	1	depan		in front; next (week)	أمام؛ القادم					
+ms_w_depan#ex1	example	1	Saya tunggu di depan sekolah.		I'll wait in front of the school.	سأنتظر أمام المدرسة.					
+ms_w_depan#ex2	example	1	Minggu depan saya cuti.		I'm on holiday next week.	عندي إجازة الأسبوع القادم.					
+ms_w_belakang	word	1	belakang		behind	خلف					
+ms_w_belakang#ex1	example	1	Dapur ada di belakang rumah.		The kitchen is at the back of the house.	المطبخ في الجزء الخلفي من البيت.					
+ms_w_belakang#ex2	example	1	Dia duduk di belakang saya.		She is sitting behind me.	تجلس خلفي.					
+ms_w_sebelah	word	1	sebelah		next to	بجانب					
+ms_w_sebelah#ex1	example	1	Kedai itu di sebelah hotel.		That shop is next to the hotel.	ذلك الدكان بجانب الفندق.					
+ms_w_sebelah#ex2	example	1	Duduk di sebelah saya.		Sit next to me.	اجلس بجانبي.					
+ms_w_sebelum	word	1	sebelum		before	قبل					
+ms_w_sebelum#ex1	example	1	Cuci tangan sebelum makan.		Wash your hands before eating.	اغسل يديك قبل الأكل.					
+ms_w_sebelum#ex2	example	1	Saya minum kopi sebelum bekerja.		I drink coffee before work.	أشرب القهوة قبل العمل.					
+ms_w_selepas	word	1	selepas		after	بعد					
+ms_w_selepas#ex1	example	1	Kami minum teh selepas makan.		We drink tea after eating.	نشرب الشاي بعد الأكل.					
+ms_w_selepas#ex2	example	1	Selepas kelas, saya balik ke rumah.		After class I go back home.	بعد الصف أعود إلى البيت.					
+ms_w_kerana	word	1	kerana		because	لأنّ					
+ms_w_kerana#ex1	example	1	Saya tidak datang kerana saya sakit.		I didn't come because I was ill.	لم آتِ لأنني كنت مريضًا.					
+ms_w_kerana#ex2	example	1	Saya minum air sebab dahaga.		I'm drinking water because I'm thirsty.	أشرب الماء لأنني عطشان.					
+ms_w_tetapi	word	1	tetapi		but	لكن					
+ms_w_tetapi#ex1	example	1	Rumah itu kecil tetapi cantik.		That house is small but beautiful.	ذلك البيت صغير لكنه جميل.					
+ms_w_tetapi#ex2	example	1	Saya mahu pergi, tapi saya sibuk.		I want to go, but I'm busy.	أريد أن أذهب لكنني مشغول.					
+ms_w_atau	word	1	atau		or	أو					
+ms_w_atau#ex1	example	1	Awak mahu teh atau kopi?		Do you want tea or coffee?	هل تريد شايًا أم قهوة؟					
+ms_w_atau#ex2	example	1	Kita boleh naik bas atau kereta api.		We can take the bus or the train.	يمكننا ركوب الحافلة أو القطار.					
+ms_w_kalau	word	1	kalau		if	إذا					
+ms_w_kalau#ex1	example	1	Kalau hujan, kita duduk di rumah.		If it rains, we'll stay at home.	إذا أمطرت بقينا في البيت.					
+ms_w_kalau#ex2	example	1	Kalau awak lapar, makan roti ini.		If you're hungry, eat this bread.	إذا كنت جائعًا فكُل هذا الخبز.					
+ms_w_awal	word	1	awal		early	مبكر					
+ms_w_awal#ex1	example	1	Saya bangun awal setiap hari.		I get up early every day.	أستيقظ مبكرًا كل يوم.					
+ms_w_awal#ex2	example	1	Kelas bermula awal pagi ini.		Class starts early this morning.	يبدأ الصف مبكرًا هذا الصباح.					
+ms_w_sendiri	word	1	sendiri		oneself; alone	بنفسه					
+ms_w_sendiri#ex1	example	1	Saya memasak sendiri di rumah.		I cook for myself at home.	أطبخ بنفسي في البيت.					
+ms_w_sendiri#ex2	example	1	Dia pergi ke sekolah sendiri.		She goes to school by herself.	تذهب إلى المدرسة وحدها.					
+ms_w_ramai	word	1	ramai		many (people)	كثيرون					
+ms_w_ramai#ex1	example	1	Ramai orang di pasar hari ini.		There are a lot of people at the market today.	في السوق ناس كثيرون اليوم.					
+ms_w_ramai#ex2	example	1	Kawan saya ramai di sekolah.		I have many friends at school.	لديّ أصدقاء كثيرون في المدرسة.					
+ms_w_pergi	word	1	pergi		to go	يذهب					
+ms_w_pergi#ex1	example	1	Saya pergi ke pejabat dengan bas.		I go to the office by bus.	أذهب إلى المكتب بالحافلة.					
+ms_w_pergi#ex2	example	1	Awak pergi ke mana semalam?		Where did you go yesterday?	إلى أين ذهبت أمس؟					
+ms_w_datang	word	1	datang		to come	يأتي					
+ms_w_datang#ex1	example	1	Bila awak datang ke rumah saya?		When are you coming to my house?	متى تأتي إلى بيتي؟					
+ms_w_datang#ex2	example	1	Selamat datang ke Malaysia!		Welcome to Malaysia!	أهلًا بك في ماليزيا!					
+ms_w_balik	word	1	balik		to go back	يعود					
+ms_w_balik#ex1	example	1	Saya balik ke rumah pukul lima.		I go home at five.	أعود إلى البيت في الساعة الخامسة.					
+ms_w_balik#ex2	example	1	Bapa belum balik dari pejabat.		Dad isn't back from the office yet.	لم يعد أبي من المكتب بعد.					
+ms_w_pulang	word	1	pulang		to return home	يعود إلى البيت					
+ms_w_pulang#ex1	example	1	Kami pulang selepas kelas.		We go home after class.	نعود إلى البيت بعد الصف.					
+ms_w_pulang#ex2	example	1	Dia pulang lewat malam ini.		He's coming home late tonight.	سيعود متأخرًا هذه الليلة.					
+ms_w_makan	word	1	makan		to eat	يأكل					
+ms_w_makan#ex1	example	1	Kami makan nasi dan ayam.		We eat rice and chicken.	نأكل الأرز والدجاج.					
+ms_w_makan#ex2	example	1	Awak sudah makan tengah hari?		Have you had lunch?	هل تناولت الغداء؟					
+ms_w_minum	word	1	minum		to drink	يشرب					
+ms_w_minum#ex1	example	1	Saya minum susu setiap pagi.		I drink milk every morning.	أشرب الحليب كل صباح.					
+ms_w_minum#ex2	example	1	Kami minum kopi di kedai itu.		We drink coffee at that shop.	نشرب القهوة في ذلك الدكان.					
+ms_w_tidur	word	1	tidur		to sleep	ينام					
+ms_w_tidur#ex1	example	1	Saya tidur pukul sepuluh malam.		I go to bed at ten at night.	أنام في العاشرة ليلًا.					
+ms_w_tidur#ex2	example	1	Adik sedang tidur di bilik.		My little brother is sleeping in his room.	أخي الصغير نائم في الغرفة.					
+ms_w_bangun	word	1	bangun		to get up, to wake up	يستيقظ، ينهض					
+ms_w_bangun#ex1	example	1	Saya bangun pukul enam pagi.		I get up at six in the morning.	أستيقظ في السادسة صباحًا.					
+ms_w_bangun#ex2	example	1	Bangun, adik, sudah pagi!		Get up, little one, it's morning!	انهض يا صغيري، لقد أصبح الصباح!					
+ms_w_duduk	word	1	duduk		to sit	يجلس					
+ms_w_duduk#ex1	example	1	Boleh saya duduk di sebelah awak?		May I sit next to you?	هل يمكنني الجلوس بجانبك؟					
+ms_w_duduk#ex2	example	1	Kami duduk di dalam kelas.		We are sitting in the classroom.	نجلس في الصف.					
+ms_w_tinggal	word	1	tinggal		to live, to stay	يسكن، يبقى					
+ms_w_tinggal#ex1	example	1	Keluarga saya tinggal di bandar.		My family lives in the city.	عائلتي تسكن في المدينة.					
+ms_w_tinggal#ex2	example	1	Saya tinggal di hotel selama dua hari.		I stayed at the hotel for two days.	بقيت في الفندق يومين.					
+ms_w_bekerja	word	1	bekerja		to work	يعمل					
+ms_w_bekerja#ex1	example	1	Bapa saya bekerja di pejabat.		My father works in an office.	أبي يعمل في مكتب.					
+ms_w_bekerja#ex2	example	1	Ibu bekerja di hospital itu.		Mum works at that hospital.	أمي تعمل في ذلك المستشفى.					
+ms_w_belajar	word	1	belajar		to study, to learn	يدرس، يتعلم					
+ms_w_belajar#ex1	example	1	Saya belajar bahasa Melayu.		I'm learning Malay.	أتعلم الملايوية.					
+ms_w_belajar#ex2	example	1	Kami belajar di rumah kawan.		We study at a friend's house.	ندرس في بيت صديق.					
+ms_w_baca	word	1	baca		to read (membaca)	يقرأ					
+ms_w_baca#ex1	example	1	Saya suka membaca buku.		I like reading books.	أحب قراءة الكتب.					
+ms_w_baca#ex2	example	1	Tolong baca soalan ini.		Please read this question.	اقرأ هذا السؤال من فضلك.					
+ms_w_tulis	word	1	tulis		to write (menulis)	يكتب					
+ms_w_tulis#ex1	example	1	Tulis nama awak di sini.		Write your name here.	اكتب اسمك هنا.					
+ms_w_tulis#ex2	example	1	Dia sedang menulis jawapan.		She is writing the answer.	هي تكتب الجواب.					
+ms_w_beli	word	1	beli		to buy (membeli)	يشتري					
+ms_w_beli#ex1	example	1	Saya mahu beli tiket.		I want to buy a ticket.	أريد أن أشتري تذكرة.					
+ms_w_beli#ex2	example	1	Ibu membeli ikan di pasar.		Mum buys fish at the market.	تشتري أمي السمك من السوق.					
+ms_w_jual	word	1	jual		to sell (menjual)	يبيع					
+ms_w_jual#ex1	example	1	Kedai itu menjual buah dan sayur.		That shop sells fruit and vegetables.	ذلك الدكان يبيع الفاكهة والخضار.					
+ms_w_jual#ex2	example	1	Dia jual kereta lamanya.		He sold his old car.	باع سيارته القديمة.					
+ms_w_bayar	word	1	bayar		to pay (membayar)	يدفع					
+ms_w_bayar#ex1	example	1	Saya bayar untuk makan malam ini.		I'll pay for dinner tonight.	سأدفع ثمن العشاء الليلة.					
+ms_w_bayar#ex2	example	1	Di mana saya boleh membayar?		Where can I pay?	أين أستطيع أن أدفع؟					
+ms_w_masak	word	1	masak		to cook (memasak)	يطبخ					
+ms_w_masak#ex1	example	1	Ibu memasak nasi ayam.		Mum is cooking chicken rice.	أمي تطبخ الأرز بالدجاج.					
+ms_w_masak#ex2	example	1	Awak boleh masak nasi?		Can you cook rice?	هل تعرف طبخ الأرز؟					
+ms_w_cuci	word	1	cuci		to wash (mencuci)	يغسل					
+ms_w_cuci#ex1	example	1	Saya cuci baju hari ini.		I'm washing clothes today.	أغسل الملابس اليوم.					
+ms_w_cuci#ex2	example	1	Tolong cuci tangan awak.		Please wash your hands.	اغسل يديك من فضلك.					
+ms_w_cari	word	1	cari		to look for (mencari)	يبحث عن					
+ms_w_cari#ex1	example	1	Saya cari kunci saya.		I'm looking for my key.	أبحث عن مفتاحي.					
+ms_w_cari#ex2	example	1	Kami mencari hotel yang murah.		We're looking for a cheap hotel.	نبحث عن فندق رخيص.					
+ms_w_tunggu	word	1	tunggu		to wait (menunggu)	ينتظر					
+ms_w_tunggu#ex1	example	1	Tunggu saya di sini.		Wait for me here.	انتظرني هنا.					
+ms_w_tunggu#ex2	example	1	Kami menunggu bas di stesen.		We're waiting for the bus at the station.	ننتظر الحافلة في المحطة.					
+ms_w_tonton	word	1	tonton		to watch (menonton)	يشاهد					
+ms_w_tonton#ex1	example	1	Kami menonton filem semalam.		We watched a film yesterday.	شاهدنا فيلمًا أمس.					
+ms_w_tonton#ex2	example	1	Adik suka menonton filem.		My little brother likes watching films.	أخي الصغير يحب مشاهدة الأفلام.					
+ms_w_dengar	word	1	dengar		to hear, to listen (mendengar)	يسمع					
+ms_w_dengar#ex1	example	1	Saya tidak dengar awak.		I can't hear you.	لا أسمعك.					
+ms_w_dengar#ex2	example	1	Dengar apa yang cikgu cakap.		Listen to what the teacher says.	استمع لما يقوله المعلم.					
+ms_w_lihat	word	1	lihat		to see, to look (melihat)	يرى، ينظر					
+ms_w_lihat#ex1	example	1	Saya lihat dia di pasar.		I saw him at the market.	رأيته في السوق.					
+ms_w_lihat#ex2	example	1	Tengok gambar ini, cantik sangat!		Look at this picture, it's so pretty!	انظر إلى هذه الصورة، جميلة جدًا!					
+ms_w_cakap	word	1	cakap		to speak (bercakap)	يتكلم					
+ms_w_cakap#ex1	example	1	Awak cakap bahasa apa?		What language do you speak?	بأي لغة تتكلم؟					
+ms_w_cakap#ex2	example	1	Tolong cakap perlahan sedikit.		Please speak a bit slowly.	تكلم ببطء قليلًا من فضلك.					
+ms_w_tanya	word	1	tanya		to ask (bertanya)	يسأل					
+ms_w_tanya#ex1	example	1	Boleh saya tanya satu soalan?		May I ask a question?	هل يمكنني أن أسأل سؤالًا؟					
+ms_w_tanya#ex2	example	1	Dia bertanya nama saya.		He asked my name.	سأل عن اسمي.					
+ms_w_jawab	word	1	jawab		to answer (menjawab)	يجيب					
+ms_w_jawab#ex1	example	1	Tolong jawab soalan ini.		Please answer this question.	أجب عن هذا السؤال من فضلك.					
+ms_w_jawab#ex2	example	1	Dia tidak menjawab telefon.		She didn't answer the phone.	لم تردّ على الهاتف.					
+ms_w_tahu	word	1	tahu		to know	يعرف					
+ms_w_tahu#ex1	example	1	Saya tidak tahu jawapannya.		I don't know the answer.	لا أعرف الجواب.					
+ms_w_tahu#ex2	example	1	Awak tahu di mana stesen?		Do you know where the station is?	هل تعرف أين المحطة؟					
+ms_w_faham	word	1	faham		to understand	يفهم					
+ms_w_faham#ex1	example	1	Saya tidak faham soalan ini.		I don't understand this question.	لا أفهم هذا السؤال.					
+ms_w_faham#ex2	example	1	Awak faham apa yang saya cakap?		Do you understand what I'm saying?	هل تفهم ما أقول؟					
+ms_w_ingat	word	1	ingat		to remember	يتذكر					
+ms_w_ingat#ex1	example	1	Saya ingat nama awak.		I remember your name.	أتذكر اسمك.					
+ms_w_ingat#ex2	example	1	Awak ingat tempat ini?		Do you remember this place?	هل تتذكر هذا المكان؟					
+ms_w_lupa	word	1	lupa		to forget	ينسى					
+ms_w_lupa#ex1	example	1	Saya lupa kunci rumah.		I forgot the house key.	نسيت مفتاح البيت.					
+ms_w_lupa#ex2	example	1	Dia lupa nama saya.		He forgot my name.	نسي اسمي.					
+ms_w_fikir	word	1	fikir		to think (berfikir)	يفكّر					
+ms_w_fikir#ex1	example	1	Saya fikir dia betul.		I think he's right.	أظن أنه محق.					
+ms_w_fikir#ex2	example	1	Apa yang awak fikir?		What do you think?	ما رأيك؟					
+ms_w_rasa	word	1	rasa		to feel; to think	يشعر؛ يظن					
+ms_w_rasa#ex1	example	1	Saya rasa sakit kepala.		I have a headache.	أشعر بصداع.					
+ms_w_rasa#ex2	example	1	Saya rasa makanan ini sedap.		I think this food is tasty.	أظن أن هذا الطعام لذيذ.					
+ms_w_suka	word	1	suka		to like	يحب					
+ms_w_suka#ex1	example	1	Saya sangat suka kucing.		I really like cats.	أحب القطط كثيرًا.					
+ms_w_suka#ex2	example	1	Awak suka makan apa?		What do you like to eat?	ماذا تحب أن تأكل؟					
+ms_w_lewat	word	1	lewat		late	متأخر					
+ms_w_lewat#ex1	example	1	Bas datang lewat hari ini.		The bus came late today.	جاءت الحافلة متأخرة اليوم.					
+ms_w_lewat#ex2	example	1	Saya tidur lewat semalam.		I went to bed late last night.	نمت متأخرًا أمس.					
+ms_w_mula	word	1	mula		to begin (bermula)	يبدأ					
+ms_w_mula#ex1	example	1	Kelas bermula pukul lapan.		Class starts at eight.	يبدأ الصف في الساعة الثامنة.					
+ms_w_mula#ex2	example	1	Bila filem itu mula?		When does that film start?	متى يبدأ ذلك الفيلم؟					
+ms_w_habis	word	1	habis		to be finished, to run out	ينتهي، ينفد					
+ms_w_habis#ex1	example	1	Makanan di rumah sudah habis.		The food at home has run out.	نفد الطعام في البيت.					
+ms_w_habis#ex2	example	1	Kerja saya sudah habis.		My work is finished.	انتهى عملي.					
+ms_w_beri	word	1	beri		to give (memberi)	يعطي					
+ms_w_beri#ex1	example	1	Ibu beri saya hadiah.		Mum gave me a present.	أعطتني أمي هدية.					
+ms_w_beri#ex2	example	1	Tolong bagi saya air.		Please give me some water.	أعطني ماءً من فضلك.					
+ms_w_ambil	word	1	ambil		to take (mengambil)	يأخذ					
+ms_w_ambil#ex1	example	1	Sila ambil buku ini.		Please take this book.	خذ هذا الكتاب من فضلك.					
+ms_w_ambil#ex2	example	1	Saya mengambil banyak gambar.		I took a lot of photos.	التقطت صورًا كثيرة.					
+ms_w_bawa	word	1	bawa		to bring, to carry (membawa)	يُحضر، يحمل					
+ms_w_bawa#ex1	example	1	Tolong bawa beg awak.		Please bring your bag.	أحضر حقيبتك من فضلك.					
+ms_w_bawa#ex2	example	1	Dia membawa hadiah untuk saya.		She brought a present for me.	أحضرت هدية لي.					
+ms_w_hantar	word	1	hantar		to send; to take someone (menghantar)	يرسل؛ يوصل					
+ms_w_hantar#ex1	example	1	Saya hantar gambar kepada ibu.		I sent a photo to Mum.	أرسلت صورة إلى أمي.					
+ms_w_hantar#ex2	example	1	Bapa menghantar saya ke sekolah.		Dad takes me to school.	يوصلني أبي إلى المدرسة.					
+ms_w_buka	word	1	buka		to open (membuka)	يفتح					
+ms_w_buka#ex1	example	1	Tolong buka tingkap itu.		Please open that window.	افتح تلك النافذة من فضلك.					
+ms_w_buka#ex2	example	1	Kedai buka pukul sembilan.		The shop opens at nine.	يفتح الدكان في التاسعة.					
+ms_w_tutup	word	1	tutup		to close (menutup)	يغلق					
+ms_w_tutup#ex1	example	1	Tutup pintu, cuaca sejuk.		Close the door, it's cold.	أغلق الباب، الجو بارد.					
+ms_w_tutup#ex2	example	1	Kedai itu tutup hari ini.		That shop is closed today.	ذلك الدكان مغلق اليوم.					
+ms_w_buat	word	1	buat		to do, to make (membuat)	يفعل، يصنع					
+ms_w_buat#ex1	example	1	Apa yang awak buat?		What are you doing?	ماذا تفعل؟					
+ms_w_buat#ex2	example	1	Ibu membuat kopi untuk bapa.		Mum makes coffee for Dad.	أمي تُعدّ القهوة لأبي.					
+ms_w_pakai	word	1	pakai		to wear (memakai)	يلبس					
+ms_w_pakai#ex1	example	1	Dia memakai baju merah.		She is wearing a red shirt.	تلبس قميصًا أحمر.					
+ms_w_pakai#ex2	example	1	Pakai kasut baru awak.		Put on your new shoes.	البس حذاءك الجديد.					
+ms_w_jalan	word	1	jalan		road, street; (berjalan) to walk	طريق؛ يمشي					
+ms_w_jalan#ex1	example	1	Jalan ini sangat panjang.		This road is very long.	هذا الطريق طويل جدًا.					
+ms_w_jalan#ex2	example	1	Kami berjalan ke sekolah.		We walk to school.	نمشي إلى المدرسة.					
+ms_w_lari	word	1	lari		to run (berlari)	يركض					
+ms_w_lari#ex1	example	1	Dia berlari setiap pagi.		He runs every morning.	يركض كل صباح.					
+ms_w_lari#ex2	example	1	Anjing itu lari dengan cepat.		That dog runs fast.	ذلك الكلب يركض بسرعة.					
+ms_w_main	word	1	main		to play (bermain)	يلعب					
+ms_w_main#ex1	example	1	Anak-anak bermain di luar.		The children are playing outside.	الأطفال يلعبون في الخارج.					
+ms_w_main#ex2	example	1	Awak mahu main dengan saya?		Do you want to play with me?	هل تريد أن تلعب معي؟					
+ms_w_renang	word	1	renang		to swim (berenang)	يسبح					
+ms_w_renang#ex1	example	1	Saya suka berenang di laut.		I like swimming in the sea.	أحب السباحة في البحر.					
+ms_w_renang#ex2	example	1	Adakah awak tahu berenang?		Do you know how to swim?	هل تعرف السباحة؟					
+ms_w_rehat	word	1	rehat		to rest (berehat)	يرتاح					
+ms_w_rehat#ex1	example	1	Saya penat, saya mahu berehat.		I'm tired, I want to rest.	أنا متعب، أريد أن أرتاح.					
+ms_w_rehat#ex2	example	1	Kami berehat selepas makan.		We rest after eating.	نرتاح بعد الأكل.					
+ms_w_masuk	word	1	masuk		to enter	يدخل					
+ms_w_masuk#ex1	example	1	Dia masuk ke dalam bilik.		He went into the room.	دخل الغرفة.					
+ms_w_masuk#ex2	example	1	Boleh saya masuk sekarang?		May I come in now?	هل يمكنني الدخول الآن؟					
+ms_w_keluar	word	1	keluar		to go out	يخرج					
+ms_w_keluar#ex1	example	1	Saya keluar rumah pukul tujuh.		I leave home at seven.	أخرج من البيت في السابعة.					
+ms_w_keluar#ex2	example	1	Kami keluar makan malam ini.		We're going out to eat tonight.	سنخرج لنأكل الليلة.					
+ms_w_naik	word	1	naik		to go up; to ride, to take (transport)	يصعد؛ يركب					
+ms_w_naik#ex1	example	1	Kami naik kereta api ke Pulau Pinang.		We took the train to Penang.	ركبنا القطار إلى بينانغ.					
+ms_w_naik#ex2	example	1	Saya naik bas setiap hari.		I take the bus every day.	أركب الحافلة كل يوم.					
+ms_w_turun	word	1	turun		to go down; to get off	ينزل					
+ms_w_turun#ex1	example	1	Kita turun di stesen ini.		We get off at this station.	ننزل في هذه المحطة.					
+ms_w_turun#ex2	example	1	Dia turun dari bas.		He got off the bus.	نزل من الحافلة.					
+ms_w_sampai	word	1	sampai		to arrive	يصل					
+ms_w_sampai#ex1	example	1	Bila bas itu akan sampai?		When will that bus arrive?	متى ستصل تلك الحافلة؟					
+ms_w_sampai#ex2	example	1	Kami sampai di hotel pada waktu malam.		We arrived at the hotel at night.	وصلنا إلى الفندق ليلًا.					
+ms_w_jumpa	word	1	jumpa		to meet (berjumpa)	يلتقي					
+ms_w_jumpa#ex1	example	1	Saya jumpa kawan di kedai kopi.		I met a friend at the coffee shop.	قابلت صديقًا في المقهى.					
+ms_w_jumpa#ex2	example	1	Kita berjumpa di depan stesen.		We'll meet in front of the station.	نلتقي أمام المحطة.					
+ms_w_panggil	word	1	panggil		to call (memanggil)	ينادي، يستدعي					
+ms_w_panggil#ex1	example	1	Siapa yang panggil saya?		Who called me?	من ناداني؟					
+ms_w_panggil#ex2	example	1	Tolong panggil doktor sekarang!		Please call a doctor now!	استدعِ طبيبًا الآن من فضلك!					
+ms_w_telefon	word	1	telefon		telephone; to phone	هاتف؛ يتصل					
+ms_w_telefon#ex1	example	1	Saya telefon ibu setiap malam.		I phone Mum every night.	أتصل بأمي كل ليلة.					
+ms_w_telefon#ex2	example	1	Di mana telefon saya?		Where is my phone?	أين هاتفي؟					
+ms_w_mandi	word	1	mandi		to bathe, to shower	يستحم					
+ms_w_mandi#ex1	example	1	Saya mandi setiap pagi.		I take a bath every morning.	أستحم كل صباح.					
+ms_w_mandi#ex2	example	1	Adik sedang mandi sekarang.		My little sister is bathing now.	أختي الصغيرة تستحم الآن.					
+ms_w_ajar	word	1	ajar		to teach (mengajar)	يدرّس					
+ms_w_ajar#ex1	example	1	Cikgu mengajar bahasa Melayu.		The teacher teaches Malay.	المعلم يدرّس الملايوية.					
+ms_w_ajar#ex2	example	1	Siapa yang mengajar kelas ini?		Who teaches this class?	من يدرّس هذا الصف؟					
+ms_w_guna	word	1	guna		to use (menggunakan)	يستخدم					
+ms_w_guna#ex1	example	1	Boleh saya guna telefon awak?		May I use your phone?	هل يمكنني استخدام هاتفك؟					
+ms_w_guna#ex2	example	1	Saya menggunakan komputer di pejabat.		I use a computer at the office.	أستخدم الحاسوب في المكتب.					
+ms_w_dapat	word	1	dapat		to get	يحصل على					
+ms_w_dapat#ex1	example	1	Saya dapat hadiah daripada kawan.		I got a present from a friend.	تلقيت هدية من صديق.					
+ms_w_dapat#ex2	example	1	Boleh saya dapat air?		Could I get some water?	هل يمكنني الحصول على ماء؟					
+ms_w_cuba	word	1	cuba		to try (mencuba)	يحاول، يجرّب					
+ms_w_cuba#ex1	example	1	Cuba makanan ini, sedap!		Try this food, it's tasty!	جرّب هذا الطعام، إنه لذيذ!					
+ms_w_cuba#ex2	example	1	Saya akan cuba datang esok.		I'll try to come tomorrow.	سأحاول أن آتي غدًا.					
+ms_w_bantu	word	1	bantu		to help (membantu)	يساعد					
+ms_w_bantu#ex1	example	1	Saya membantu ibu di dapur.		I help Mum in the kitchen.	أساعد أمي في المطبخ.					
+ms_w_bantu#ex2	example	1	Terima kasih kerana membantu saya.		Thank you for helping me.	شكرًا لأنك ساعدتني.					
+ms_w_jadi	word	1	jadi		to become (menjadi)	يصبح					
+ms_w_jadi#ex1	example	1	Saya mahu jadi doktor.		I want to become a doctor.	أريد أن أصبح طبيبًا.					
+ms_w_jadi#ex2	example	1	Dia menjadi cikgu di sekolah itu.		She became a teacher at that school.	أصبحت معلمة في تلك المدرسة.					
+ms_w_rumah	word	1	rumah		house, home	بيت					
+ms_w_rumah#ex1	example	1	Rumah saya dekat dengan sekolah.		My house is near the school.	بيتي قريب من المدرسة.					
+ms_w_rumah#ex2	example	1	Rumah mereka sangat besar.		Their house is very big.	بيتهم كبير جدًا.					
+ms_w_sekolah	word	1	sekolah		school	مدرسة					
+ms_w_sekolah#ex1	example	1	Sekolah saya sangat besar.		My school is very big.	مدرستي كبيرة جدًا.					
+ms_w_sekolah#ex2	example	1	Sekolah bermula pukul tujuh pagi.		School starts at seven in the morning.	تبدأ المدرسة في السابعة صباحًا.					
+ms_w_pejabat	word	1	pejabat		office	مكتب					
+ms_w_pejabat#ex1	example	1	Pejabat saya di bandar.		My office is in the city.	مكتبي في المدينة.					
+ms_w_pejabat#ex2	example	1	Bapa masih di pejabat.		Dad is still at the office.	أبي ما زال في المكتب.					
+ms_w_hospital	word	1	hospital		hospital	مستشفى					
+ms_w_hospital#ex1	example	1	Di mana hospital yang paling dekat?		Where is the nearest hospital?	أين أقرب مستشفى؟					
+ms_w_hospital#ex2	example	1	Kawan saya sakit di hospital.		My friend is ill in hospital.	صديقي مريض في المستشفى.					
+ms_w_kedai	word	1	kedai		shop	دكان					
+ms_w_kedai#ex1	example	1	Saya pergi ke kedai untuk beli susu.		I'm going to the shop to buy milk.	أذهب إلى الدكان لأشتري حليبًا.					
+ms_w_kedai#ex2	example	1	Kedai ini sangat murah.		This shop is very cheap.	هذا الدكان رخيص جدًا.					
+ms_w_pasar	word	1	pasar		market	سوق					
+ms_w_pasar#ex1	example	1	Ibu pergi ke pasar setiap pagi.		Mum goes to the market every morning.	تذهب أمي إلى السوق كل صباح.					
+ms_w_pasar#ex2	example	1	Ikan di pasar ini murah.		The fish at this market is cheap.	السمك في هذا السوق رخيص.					
+ms_w_restoran	word	1	restoran		restaurant	مطعم					
+ms_w_restoran#ex1	example	1	Kami makan di restoran itu.		We eat at that restaurant.	نأكل في ذلك المطعم.					
+ms_w_restoran#ex2	example	1	Restoran ini sangat mahal.		This restaurant is very expensive.	هذا المطعم غالٍ جدًا.					
+ms_w_hotel	word	1	hotel		hotel	فندق					
+ms_w_hotel#ex1	example	1	Hotel kami dekat dengan laut.		Our hotel is near the sea.	فندقنا قريب من البحر.					
+ms_w_hotel#ex2	example	1	Hotel ini ada banyak bilik.		This hotel has many rooms.	في هذا الفندق غرف كثيرة.					
+ms_w_bandar	word	1	bandar		city, town	مدينة					
+ms_w_bandar#ex1	example	1	Kuala Lumpur bandar yang besar.		Kuala Lumpur is a big city.	كوالالمبور مدينة كبيرة.					
+ms_w_bandar#ex2	example	1	Saya suka tinggal di bandar.		I like living in the city.	أحب العيش في المدينة.					
+ms_w_negara	word	1	negara		country	بلد					
+ms_w_negara#ex1	example	1	Malaysia negara yang cantik.		Malaysia is a beautiful country.	ماليزيا بلد جميل.					
+ms_w_negara#ex2	example	1	Awak dari negara mana?		Which country are you from?	من أي بلد أنت؟					
+ms_w_stesen	word	1	stesen		station	محطة					
+ms_w_stesen#ex1	example	1	Di mana stesen kereta api?		Where is the train station?	أين محطة القطار؟					
+ms_w_stesen#ex2	example	1	Stesen itu jauh dari sini.		That station is far from here.	تلك المحطة بعيدة عن هنا.					
+ms_w_lapangan_terbang	word	1	lapangan terbang		airport	مطار					
+ms_w_lapangan_terbang#ex1	example	1	Lapangan terbang jauh dari bandar.		The airport is far from the city.	المطار بعيد عن المدينة.					
+ms_w_lapangan_terbang#ex2	example	1	Kami sampai di lapangan terbang awal.		We arrived at the airport early.	وصلنا إلى المطار مبكرًا.					
+ms_w_bilik	word	1	bilik		room	غرفة					
+ms_w_bilik#ex1	example	1	Bilik saya ada dua tingkap.		My room has two windows.	في غرفتي نافذتان.					
+ms_w_bilik#ex2	example	1	Adik ada di dalam bilik.		My little brother is in his room.	أخي الصغير في غرفته.					
+ms_w_dapur	word	1	dapur		kitchen	مطبخ					
+ms_w_dapur#ex1	example	1	Ibu ada di dapur.		Mum is in the kitchen.	أمي في المطبخ.					
+ms_w_dapur#ex2	example	1	Dapur rumah kami kecil.		Our kitchen is small.	مطبخنا صغير.					
+ms_w_pintu	word	1	pintu		door	باب					
+ms_w_pintu#ex1	example	1	Tolong tutup pintu bilik.		Please close the room door.	أغلق باب الغرفة من فضلك.					
+ms_w_pintu#ex2	example	1	Siapa di depan pintu?		Who is at the door?	من عند الباب؟					
+ms_w_tingkap	word	1	tingkap		window	نافذة					
+ms_w_tingkap#ex1	example	1	Buka tingkap, bilik ini panas.		Open the window, this room is hot.	افتح النافذة، هذه الغرفة حارة.					
+ms_w_tingkap#ex2	example	1	Kucing duduk di tingkap.		The cat is sitting at the window.	القطة جالسة عند النافذة.					
+ms_w_meja	word	1	meja		table	طاولة					
+ms_w_meja#ex1	example	1	Buku saya di atas meja.		My book is on the table.	كتابي على الطاولة.					
+ms_w_meja#ex2	example	1	Meja ini untuk dua orang.		This table is for two people.	هذه الطاولة لشخصين.					
+ms_w_kerusi	word	1	kerusi		chair	كرسي					
+ms_w_kerusi#ex1	example	1	Sila duduk di kerusi ini.		Please sit on this chair.	تفضّل اجلس على هذا الكرسي.					
+ms_w_kerusi#ex2	example	1	Ada empat kerusi di dapur.		There are four chairs in the kitchen.	في المطبخ أربعة كراسٍ.					
+ms_w_katil	word	1	katil		bed	سرير					
+ms_w_katil#ex1	example	1	Katil ini sangat besar.		This bed is very big.	هذا السرير كبير جدًا.					
+ms_w_katil#ex2	example	1	Saya mahu katil yang besar.		I'd like a big bed.	أريد سريرًا كبيرًا.					
+ms_w_kereta	word	1	kereta		car	سيارة					
+ms_w_kereta#ex1	example	1	Kereta baru saya putih.		My new car is white.	سيارتي الجديدة بيضاء.					
+ms_w_kereta#ex2	example	1	Bapa pergi kerja dengan kereta.		Dad goes to work by car.	يذهب أبي إلى العمل بالسيارة.					
+ms_w_bas	word	1	bas		bus	حافلة					
+ms_w_bas#ex1	example	1	Bas itu sangat perlahan.		That bus is very slow.	تلك الحافلة بطيئة جدًا.					
+ms_w_bas#ex2	example	1	Di mana saya boleh naik bas?		Where can I get on the bus?	أين يمكنني ركوب الحافلة؟					
+ms_w_kereta_api	word	1	kereta api		train	قطار					
+ms_w_kereta_api#ex1	example	1	Kereta api sampai pukul lima.		The train arrives at five.	يصل القطار في الخامسة.					
+ms_w_kereta_api#ex2	example	1	Saya suka naik kereta api.		I like taking the train.	أحب ركوب القطار.					
+ms_w_kapal_terbang	word	1	kapal terbang		aeroplane	طائرة					
+ms_w_kapal_terbang#ex1	example	1	Kapal terbang itu besar.		That plane is big.	تلك الطائرة كبيرة.					
+ms_w_kapal_terbang#ex2	example	1	Kami pergi ke Pulau Pinang dengan kapal terbang.		We went to Penang by plane.	ذهبنا إلى بينانغ بالطائرة.					
+ms_w_tiket	word	1	tiket		ticket	تذكرة					
+ms_w_tiket#ex1	example	1	Berapa harga tiket ke bandar?		How much is a ticket to the city?	بكم التذكرة إلى المدينة؟					
+ms_w_tiket#ex2	example	1	Saya sudah ada tiket.		I already have a ticket.	لديّ تذكرة بالفعل.					
+ms_w_duit	word	1	duit		money	مال					
+ms_w_duit#ex1	example	1	Saya tidak ada duit.		I don't have any money.	ليس معي مال.					
+ms_w_duit#ex2	example	1	Berapa banyak duit awak ada?		How much money do you have?	كم من المال معك؟					
+ms_w_komputer	word	1	komputer		computer	حاسوب					
+ms_w_komputer#ex1	example	1	Komputer saya sudah lama.		My computer is old.	حاسوبي قديم.					
+ms_w_komputer#ex2	example	1	Adik bermain di komputer.		My little brother is playing on the computer.	أخي الصغير يلعب على الحاسوب.					
+ms_w_buku	word	1	buku		book	كتاب					
+ms_w_buku#ex1	example	1	Saya beli buku baru semalam.		I bought a new book yesterday.	اشتريت كتابًا جديدًا أمس.					
+ms_w_buku#ex2	example	1	Di mana buku saya?		Where is my book?	أين كتابي؟					
+ms_w_pen	word	1	pen		pen	قلم					
+ms_w_pen#ex1	example	1	Boleh saya guna pen awak?		May I use your pen?	هل يمكنني استخدام قلمك؟					
+ms_w_pen#ex2	example	1	Pen merah ini untuk awak.		This red pen is for you.	هذا القلم الأحمر لك.					
+ms_w_beg	word	1	beg		bag	حقيبة					
+ms_w_beg#ex1	example	1	Beg saya hitam dan besar.		My bag is black and big.	حقيبتي سوداء وكبيرة.					
+ms_w_beg#ex2	example	1	Kunci ada dalam beg.		The key is in the bag.	المفتاح في الحقيبة.					
+ms_w_kunci	word	1	kunci		key	مفتاح					
+ms_w_kunci#ex1	example	1	Kunci bilik ada di meja.		The room key is on the table.	مفتاح الغرفة على الطاولة.					
+ms_w_kunci#ex2	example	1	Ini kunci kereta bapa.		This is Dad's car key.	هذا مفتاح سيارة أبي.					
+ms_w_baju	word	1	baju		shirt; clothes	قميص؛ ملابس					
+ms_w_baju#ex1	example	1	Saya mahu beli baju baru.		I want to buy new clothes.	أريد أن أشتري ملابس جديدة.					
+ms_w_baju#ex2	example	1	Baju awak sangat cantik.		Your shirt is very pretty.	قميصك جميل جدًا.					
+ms_w_kasut	word	1	kasut		shoe(s)	حذاء					
+ms_w_kasut#ex1	example	1	Kasut ini terlalu kecil.		These shoes are too small.	هذا الحذاء صغير جدًا.					
+ms_w_kasut#ex2	example	1	Di mana kasut saya?		Where are my shoes?	أين حذائي؟					
+ms_w_hadiah	word	1	hadiah		present, gift	هدية					
+ms_w_hadiah#ex1	example	1	Terima kasih atas hadiah yang cantik ini.		Thank you for this lovely present.	شكرًا على هذه الهدية الجميلة.					
+ms_w_hadiah#ex2	example	1	Saya mahu beli hadiah untuk adik.		I want to buy a present for my little brother.	أريد أن أشتري هدية لأخي الصغير.					
+ms_w_gambar	word	1	gambar		picture, photo	صورة					
+ms_w_gambar#ex1	example	1	Ini gambar keluarga saya.		This is a photo of my family.	هذه صورة عائلتي.					
+ms_w_gambar#ex2	example	1	Boleh tolong ambil gambar kami?		Could you take a photo of us?	هل يمكنك التقاط صورة لنا؟					
+ms_w_pukul	word	1	pukul		o'clock	الساعة (في التوقيت)					
+ms_w_pukul#ex1	example	1	Pukul berapa kelas bermula?		What time does class start?	متى يبدأ الصف؟					
+ms_w_pukul#ex2	example	1	Saya balik pukul enam petang.		I come home at six in the evening.	أعود في السادسة مساءً.					
+ms_w_filem	word	1	filem		film	فيلم					
+ms_w_filem#ex1	example	1	Filem ini sangat bagus.		This film is very good.	هذا الفيلم جيد جدًا.					
+ms_w_filem#ex2	example	1	Filem itu bermula pukul lapan.		That film starts at eight.	يبدأ ذلك الفيلم في الثامنة.					
+ms_w_sukan	word	1	sukan		sport	رياضة					
+ms_w_sukan#ex1	example	1	Saya sangat suka sukan.		I really like sport.	أحب الرياضة كثيرًا.					
+ms_w_sukan#ex2	example	1	Sukan baik untuk awak.		Sport is good for you.	الرياضة مفيدة لك.					
+ms_w_keluarga	word	1	keluarga		family	عائلة					
+ms_w_keluarga#ex1	example	1	Keluarga saya sangat besar.		My family is very big.	عائلتي كبيرة جدًا.					
+ms_w_keluarga#ex2	example	1	Saya makan malam dengan keluarga.		I have dinner with my family.	أتناول العشاء مع عائلتي.					
+ms_w_ibu	word	1	ibu		mother	أم					
+ms_w_ibu#ex1	example	1	Ibu saya seorang cikgu.		My mother is a teacher.	أمي معلمة.					
+ms_w_ibu#ex2	example	1	Mak, saya sudah balik!		Mum, I'm home!	ماما، لقد عدت!					
+ms_w_bapa	word	1	bapa		father	أب					
+ms_w_bapa#ex1	example	1	Bapa saya seorang doktor.		My father is a doctor.	أبي طبيب.					
+ms_w_bapa#ex2	example	1	Ayah sedang membaca di bilik.		Dad is reading in his room.	أبي يقرأ في غرفته.					
+ms_w_abang	word	1	abang		older brother	الأخ الأكبر					
+ms_w_abang#ex1	example	1	Abang saya tinggal di Kuala Lumpur.		My older brother lives in Kuala Lumpur.	أخي الأكبر يسكن في كوالالمبور.					
+ms_w_abang#ex2	example	1	Abang saya bekerja di hotel.		My older brother works at a hotel.	أخي الأكبر يعمل في فندق.					
+ms_w_kakak	word	1	kakak		older sister	الأخت الكبرى					
+ms_w_kakak#ex1	example	1	Kakak saya pelajar di bandar.		My older sister is a student in the city.	أختي الكبرى طالبة في المدينة.					
+ms_w_kakak#ex2	example	1	Kakak sangat suka memasak.		My older sister loves cooking.	أختي الكبرى تحب الطبخ كثيرًا.					
+ms_w_adik	word	1	adik		younger brother or sister	الأخ أو الأخت الأصغر					
+ms_w_adik#ex1	example	1	Adik saya berumur lima tahun.		My little brother is five.	أخي الصغير عمره خمس سنوات.					
+ms_w_adik#ex2	example	1	Adik saya suka bermain di luar.		My little sister likes playing outside.	أختي الصغيرة تحب اللعب في الخارج.					
+ms_w_anak	word	1	anak		child	طفل، ابن					
+ms_w_anak#ex1	example	1	Saya ada tiga anak.		I have three children.	لديّ ثلاثة أطفال.					
+ms_w_anak#ex2	example	1	Anak-anak sedang bermain.		The children are playing.	الأطفال يلعبون.					
+ms_w_suami	word	1	suami		husband	زوج					
+ms_w_suami#ex1	example	1	Suami saya bekerja di bandar.		My husband works in the city.	زوجي يعمل في المدينة.					
+ms_w_suami#ex2	example	1	Ini suami saya, Ahmad.		This is my husband, Ahmad.	هذا زوجي أحمد.					
+ms_w_isteri	word	1	isteri		wife	زوجة					
+ms_w_isteri#ex1	example	1	Isteri saya seorang cikgu.		My wife is a teacher.	زوجتي معلمة.					
+ms_w_isteri#ex2	example	1	Saya dan isteri saya suka makan di luar.		My wife and I like eating out.	أنا وزوجتي نحب الأكل في الخارج.					
+ms_w_kawan	word	1	kawan		friend	صديق					
+ms_w_kawan#ex1	example	1	Kawan saya datang dari Pulau Pinang.		My friend comes from Penang.	صديقي من بينانغ.					
+ms_w_kawan#ex2	example	1	Kawan-kawan saya suka sukan.		My friends like sport.	أصدقائي يحبون الرياضة.					
+ms_w_orang	word	1	orang		person; (counting word for people)	شخص					
+ms_w_orang#ex1	example	1	Ada ramai orang di sini.		There are lots of people here.	يوجد ناس كثيرون هنا.					
+ms_w_orang#ex2	example	1	Dia orang yang baik.		He's a good person.	هو شخص طيب.					
+ms_w_lelaki	word	1	lelaki		man; male	رجل؛ ذكر					
+ms_w_lelaki#ex1	example	1	Lelaki itu abang saya.		That man is my older brother.	ذلك الرجل أخي الأكبر.					
+ms_w_lelaki#ex2	example	1	Ada tiga lelaki di kedai.		There are three men in the shop.	في الدكان ثلاثة رجال.					
+ms_w_perempuan	word	1	perempuan		woman; female	امرأة؛ أنثى					
+ms_w_perempuan#ex1	example	1	Perempuan itu kakak saya.		That woman is my older sister.	تلك المرأة أختي الكبرى.					
+ms_w_perempuan#ex2	example	1	Ada dua perempuan di kelas.		There are two women in the class.	في الصف امرأتان.					
+ms_w_harga	word	1	harga		price	سعر					
+ms_w_harga#ex1	example	1	Harga baju ini mahal.		This shirt is expensive.	سعر هذا القميص مرتفع.					
+ms_w_harga#ex2	example	1	Harga makanan di sini murah.		Food prices here are cheap.	أسعار الطعام هنا رخيصة.					
+ms_w_pelajar	word	1	pelajar		student	طالب					
+ms_w_pelajar#ex1	example	1	Ramai pelajar di sekolah ini.		There are many students at this school.	في هذه المدرسة طلاب كثيرون.					
+ms_w_pelajar#ex2	example	1	Pelajar itu bertanya soalan.		That student asked a question.	ذلك الطالب سأل سؤالًا.					
+ms_w_cikgu	word	1	cikgu		teacher	معلم					
+ms_w_cikgu#ex1	example	1	Cikgu kami sangat baik.		Our teacher is very kind.	معلمنا لطيف جدًا.					
+ms_w_cikgu#ex2	example	1	Guru itu mengajar di sekolah saya.		That teacher teaches at my school.	ذلك المعلم يدرّس في مدرستي.					
+ms_w_doktor	word	1	doktor		doctor	طبيب					
+ms_w_doktor#ex1	example	1	Doktor itu sangat baik.		That doctor is very kind.	ذلك الطبيب لطيف جدًا.					
+ms_w_doktor#ex2	example	1	Bila doktor akan datang?		When will the doctor come?	متى سيأتي الطبيب؟					
+ms_w_nama	word	1	nama		name	اسم					
+ms_w_nama#ex1	example	1	Apa nama kucing awak?		What's your cat's name?	ما اسم قطتك؟					
+ms_w_nama#ex2	example	1	Nama sekolah saya sangat panjang.		My school's name is very long.	اسم مدرستي طويل جدًا.					
+ms_w_umur	word	1	umur		age	عمر					
+ms_w_umur#ex1	example	1	Berapa umur adik awak?		How old is your little brother?	كم عمر أخيك الصغير؟					
+ms_w_umur#ex2	example	1	Umur anak saya tiga tahun.		My child is three years old.	عمر طفلي ثلاث سنوات.					
+ms_w_air	word	1	air		water	ماء					
+ms_w_air#ex1	example	1	Air ini sangat sejuk.		This water is very cold.	هذا الماء بارد جدًا.					
+ms_w_air#ex2	example	1	Saya minum banyak air setiap hari.		I drink a lot of water every day.	أشرب ماءً كثيرًا كل يوم.					
+ms_w_teh	word	1	teh		tea	شاي					
+ms_w_teh#ex1	example	1	Saya suka teh dengan susu.		I like tea with milk.	أحب الشاي بالحليب.					
+ms_w_teh#ex2	example	1	Satu teh, terima kasih.		One tea, thank you.	كوب شاي واحد، شكرًا.					
+ms_w_kopi	word	1	kopi		coffee	قهوة					
+ms_w_kopi#ex1	example	1	Kopi di kedai ini sedap.		The coffee in this shop is tasty.	القهوة في هذا الدكان لذيذة.					
+ms_w_kopi#ex2	example	1	Bapa minum kopi setiap pagi.		Dad drinks coffee every morning.	يشرب أبي القهوة كل صباح.					
+ms_w_susu	word	1	susu		milk	حليب					
+ms_w_susu#ex1	example	1	Anak saya suka susu.		My child likes milk.	طفلي يحب الحليب.					
+ms_w_susu#ex2	example	1	Susu ini sudah habis.		The milk has run out.	نفد الحليب.					
+ms_w_roti	word	1	roti		bread	خبز					
+ms_w_roti#ex1	example	1	Roti ini sangat sedap.		This bread is very tasty.	هذا الخبز لذيذ جدًا.					
+ms_w_roti#ex2	example	1	Saya makan roti dan telur.		I eat bread and eggs.	آكل الخبز والبيض.					
+ms_w_nasi	word	1	nasi		cooked rice	أرز مطبوخ					
+ms_w_nasi#ex1	example	1	Nasi ayam di sini sedap.		The chicken rice here is tasty.	الأرز بالدجاج هنا لذيذ.					
+ms_w_nasi#ex2	example	1	Kami makan nasi setiap hari.		We eat rice every day.	نأكل الأرز كل يوم.					
+ms_w_makanan	word	1	makanan		food	طعام					
+ms_w_makanan#ex1	example	1	Saya suka makanan Malaysia.		I like Malaysian food.	أحب الطعام الماليزي.					
+ms_w_makanan#ex2	example	1	Makanan di restoran itu mahal.		The food at that restaurant is expensive.	الطعام في ذلك المطعم غالٍ.					
+ms_w_daging	word	1	daging		meat	لحم					
+ms_w_daging#ex1	example	1	Saya tidak makan daging.		I don't eat meat.	لا آكل اللحم.					
+ms_w_daging#ex2	example	1	Ibu beli daging di pasar.		Mum buys meat at the market.	تشتري أمي اللحم من السوق.					
+ms_w_ayam	word	1	ayam		chicken	دجاج					
+ms_w_ayam#ex1	example	1	Ayam ini sangat sedap.		This chicken is very tasty.	هذا الدجاج لذيذ جدًا.					
+ms_w_ayam#ex2	example	1	Ibu memasak ayam untuk makan malam.		Mum is cooking chicken for dinner.	أمي تطبخ الدجاج للعشاء.					
+ms_w_ikan	word	1	ikan		fish	سمك					
+ms_w_ikan#ex1	example	1	Saya suka makan ikan.		I like eating fish.	أحب أكل السمك.					
+ms_w_ikan#ex2	example	1	Ada banyak ikan di laut.		There are many fish in the sea.	في البحر أسماك كثيرة.					
+ms_w_sayur	word	1	sayur		vegetable	خضار					
+ms_w_sayur#ex1	example	1	Makan sayur setiap hari.		Eat vegetables every day.	كُل الخضار كل يوم.					
+ms_w_sayur#ex2	example	1	Saya beli sayur di pasar.		I buy vegetables at the market.	أشتري الخضار من السوق.					
+ms_w_buah	word	1	buah		fruit; (counting word for things)	فاكهة					
+ms_w_buah#ex1	example	1	Saya suka makan buah.		I like eating fruit.	أحب أكل الفاكهة.					
+ms_w_buah#ex2	example	1	Dia ada sebuah kereta baru.		He has a new car.	لديه سيارة جديدة.					
+ms_w_epal	word	1	epal		apple	تفاحة					
+ms_w_epal#ex1	example	1	Saya makan satu epal.		I ate an apple.	أكلت تفاحة.					
+ms_w_epal#ex2	example	1	Epal ini merah dan sedap.		This apple is red and tasty.	هذه التفاحة حمراء ولذيذة.					
+ms_w_telur	word	1	telur		egg	بيضة					
+ms_w_telur#ex1	example	1	Saya mahu dua telur.		I'd like two eggs.	أريد بيضتين.					
+ms_w_telur#ex2	example	1	Ibu beli telur di kedai.		Mum buys eggs at the shop.	تشتري أمي البيض من الدكان.					
+ms_w_gula	word	1	gula		sugar	سكر					
+ms_w_gula#ex1	example	1	Teh ini tidak ada gula.		This tea has no sugar.	هذا الشاي بلا سكر.					
+ms_w_gula#ex2	example	1	Gula sudah habis di rumah.		We've run out of sugar at home.	نفد السكر في البيت.					
+ms_w_sarapan	word	1	sarapan		breakfast	فطور					
+ms_w_sarapan#ex1	example	1	Saya makan sarapan pukul tujuh.		I have breakfast at seven.	أتناول الفطور في السابعة.					
+ms_w_sarapan#ex2	example	1	Sarapan apa hari ini?		What's for breakfast today?	ما الفطور اليوم؟					
+ms_w_hari	word	1	hari		day	يوم					
+ms_w_hari#ex1	example	1	Hari ini hari Jumaat.		Today is Friday.	اليوم هو الجمعة.					
+ms_w_hari#ex2	example	1	Saya bekerja lima hari seminggu.		I work five days a week.	أعمل خمسة أيام في الأسبوع.					
+ms_w_malam	word	1	malam		night, evening	ليل، مساء					
+ms_w_malam#ex1	example	1	Kami makan malam pukul lapan.		We have dinner at eight.	نتناول العشاء في الثامنة.					
+ms_w_malam#ex2	example	1	Malam ini saya tidak keluar.		I'm not going out tonight.	لن أخرج الليلة.					
+ms_w_pagi	word	1	pagi		morning	صباح					
+ms_w_pagi#ex1	example	1	Pagi ini cuaca sejuk.		It's cool this morning.	الجو بارد هذا الصباح.					
+ms_w_pagi#ex2	example	1	Kelas saya pada waktu pagi.		My class is in the morning.	صفي في الصباح.					
+ms_w_petang	word	1	petang		afternoon, early evening	بعد الظهر، العصر					
+ms_w_petang#ex1	example	1	Kami bermain pada waktu petang.		We play in the afternoon.	نلعب بعد الظهر.					
+ms_w_petang#ex2	example	1	Jumpa pukul empat petang.		See you at four in the afternoon.	نلتقي في الرابعة عصرًا.					
+ms_w_tengah_hari	word	1	tengah hari		midday, noon	الظهر					
+ms_w_tengah_hari#ex1	example	1	Kami makan tengah hari di restoran.		We have lunch at a restaurant.	نتناول الغداء في مطعم.					
+ms_w_tengah_hari#ex2	example	1	Cuaca panas pada tengah hari.		It's hot at midday.	الجو حار في الظهيرة.					
+ms_w_minggu	word	1	minggu		week	أسبوع					
+ms_w_minggu#ex1	example	1	Saya pergi ke pasar setiap minggu.		I go to the market every week.	أذهب إلى السوق كل أسبوع.					
+ms_w_minggu#ex2	example	1	Minggu ini saya sangat sibuk.		I'm very busy this week.	أنا مشغول جدًا هذا الأسبوع.					
+ms_w_bulan	word	1	bulan		month; moon	شهر؛ قمر					
+ms_w_bulan#ex1	example	1	Bulan depan saya akan pergi ke Malaysia.		Next month I'll go to Malaysia.	سأذهب إلى ماليزيا الشهر القادم.					
+ms_w_bulan#ex2	example	1	Saya cuti satu bulan.		I have a month's holiday.	عندي إجازة شهر.					
+ms_w_tahun	word	1	tahun		year	سنة					
+ms_w_tahun#ex1	example	1	Saya belajar di sini dua tahun.		I studied here for two years.	درست هنا سنتين.					
+ms_w_tahun#ex2	example	1	Tahun ini saya mahu belajar bahasa baru.		This year I want to learn a new language.	هذه السنة أريد أن أتعلم لغة جديدة.					
+ms_w_jam	word	1	jam		hour; clock	ساعة					
+ms_w_jam#ex1	example	1	Saya tunggu awak satu jam.		I waited an hour for you.	انتظرتك ساعة.					
+ms_w_jam#ex2	example	1	Saya belajar dua jam setiap hari.		I study two hours every day.	أدرس ساعتين كل يوم.					
+ms_w_minit	word	1	minit		minute	دقيقة					
+ms_w_minit#ex1	example	1	Sila tunggu lima minit.		Please wait five minutes.	انتظر خمس دقائق من فضلك.					
+ms_w_minit#ex2	example	1	Bas sampai dalam sepuluh minit.		The bus arrives in ten minutes.	تصل الحافلة بعد عشر دقائق.					
+ms_w_masa	word	1	masa		time	وقت					
+ms_w_masa#ex1	example	1	Saya tidak ada masa.		I don't have time.	ليس عندي وقت.					
+ms_w_masa#ex2	example	1	Ada masa untuk minum kopi?		Is there time for a coffee?	هل يوجد وقت لشرب القهوة؟					
+ms_w_cuti	word	1	cuti		holiday, day off	إجازة					
+ms_w_cuti#ex1	example	1	Kami pergi ke laut semasa cuti.		We went to the sea during the holiday.	ذهبنا إلى البحر في العطلة.					
+ms_w_cuti#ex2	example	1	Bila cuti sekolah bermula?		When do the school holidays start?	متى تبدأ العطلة المدرسية؟					
+ms_w_jumaat	word	1	Jumaat		Friday	الجمعة					
+ms_w_jumaat#ex1	example	1	Pada hari Jumaat kedai itu tutup.		That shop is closed on Fridays.	ذلك الدكان مغلق يوم الجمعة.					
+ms_w_jumaat#ex2	example	1	Saya cuti pada hari Jumaat.		I'm off on Friday.	عندي إجازة يوم الجمعة.					
+ms_w_cuaca	word	1	cuaca		weather	طقس					
+ms_w_cuaca#ex1	example	1	Cuaca hari ini sangat baik.		The weather today is very good.	الطقس اليوم جيد جدًا.					
+ms_w_cuaca#ex2	example	1	Cuaca di Malaysia selalu panas.		The weather in Malaysia is always hot.	الطقس في ماليزيا حار دائمًا.					
+ms_w_hujan	word	1	hujan		rain	مطر					
+ms_w_hujan#ex1	example	1	Saya tidak suka hujan.		I don't like the rain.	لا أحب المطر.					
+ms_w_hujan#ex2	example	1	Hujan turun pada waktu petang.		Rain falls in the afternoon.	يهطل المطر بعد الظهر.					
+ms_w_matahari	word	1	matahari		sun	شمس					
+ms_w_matahari#ex1	example	1	Matahari sangat panas hari ini.		The sun is very hot today.	الشمس حارة جدًا اليوم.					
+ms_w_matahari#ex2	example	1	Saya suka melihat matahari di laut.		I like watching the sun over the sea.	أحب مشاهدة الشمس فوق البحر.					
+ms_w_laut	word	1	laut		sea	بحر					
+ms_w_laut#ex1	example	1	Air laut sangat sejuk pagi ini.		The sea water is very cold this morning.	ماء البحر بارد جدًا هذا الصباح.					
+ms_w_laut#ex2	example	1	Kami pergi ke laut pada hari cuti.		We go to the sea on holidays.	نذهب إلى البحر في أيام العطلة.					
+ms_w_kucing	word	1	kucing		cat	قطة					
+ms_w_kucing#ex1	example	1	Saya ada dua kucing di rumah.		I have two cats at home.	لديّ قطتان في البيت.					
+ms_w_kucing#ex2	example	1	Kucing saya suka tidur.		My cat likes sleeping.	قطتي تحب النوم.					
+ms_w_anjing	word	1	anjing		dog	كلب					
+ms_w_anjing#ex1	example	1	Anjing itu besar dan hitam.		That dog is big and black.	ذلك الكلب كبير وأسود.					
+ms_w_anjing#ex2	example	1	Kawan saya ada anjing.		My friend has a dog.	صديقي لديه كلب.					
+ms_w_kepala	word	1	kepala		head	رأس					
+ms_w_kepala#ex1	example	1	Kepala saya sakit hari ini.		My head hurts today.	رأسي يؤلمني اليوم.					
+ms_w_kepala#ex2	example	1	Kepala anak itu panas.		That child's head is hot.	رأس ذلك الطفل ساخن.					
+ms_w_tangan	word	1	tangan		hand	يد					
+ms_w_tangan#ex1	example	1	Tangan saya sangat sejuk.		My hands are very cold.	يداي باردتان جدًا.					
+ms_w_tangan#ex2	example	1	Apa dalam tangan awak?		What's in your hand?	ماذا في يدك؟					
+ms_w_mata	word	1	mata		eye	عين					
+ms_w_mata#ex1	example	1	Mata dia sangat cantik.		Her eyes are very beautiful.	عيناها جميلتان جدًا.					
+ms_w_mata#ex2	example	1	Mata saya penat hari ini.		My eyes are tired today.	عيناي متعبتان اليوم.					
+ms_w_soalan	word	1	soalan		question	سؤال					
+ms_w_soalan#ex1	example	1	Saya ada satu soalan.		I have a question.	عندي سؤال.					
+ms_w_soalan#ex2	example	1	Soalan ini sangat susah.		This question is very hard.	هذا السؤال صعب جدًا.					
+ms_w_jawapan	word	1	jawapan		answer	جواب					
+ms_w_jawapan#ex1	example	1	Jawapan awak betul, bagus!		Your answer is right, well done!	جوابك صحيح، أحسنت!					
+ms_w_jawapan#ex2	example	1	Tulis jawapan di sini.		Write the answer here.	اكتب الجواب هنا.					
+ms_w_kelas	word	1	kelas		class	صف، درس					
+ms_w_kelas#ex1	example	1	Kelas bahasa saya pada waktu petang.		My language class is in the afternoon.	درس اللغة عندي بعد الظهر.					
+ms_w_kelas#ex2	example	1	Kelas ini sangat besar.		This class is very big.	هذا الصف كبير جدًا.					
+ms_w_bahasa	word	1	bahasa		language	لغة					
+ms_w_bahasa#ex1	example	1	Saya mahu belajar bahasa baru.		I want to learn a new language.	أريد أن أتعلم لغة جديدة.					
+ms_w_bahasa#ex2	example	1	Bahasa Melayu tidak susah.		Malay isn't difficult.	الملايوية ليست صعبة.					
+ms_w_perkataan	word	1	perkataan		word	كلمة					
+ms_w_perkataan#ex1	example	1	Saya tidak faham perkataan ini.		I don't understand this word.	لا أفهم هذه الكلمة.					
+ms_w_perkataan#ex2	example	1	Saya belajar lima perkataan baru setiap hari.		I learn five new words every day.	أتعلم خمس كلمات جديدة كل يوم.					
+ms_w_peperiksaan	word	1	peperiksaan		exam	امتحان					
+ms_w_peperiksaan#ex1	example	1	Esok saya ada peperiksaan.		I have an exam tomorrow.	عندي امتحان غدًا.					
+ms_w_peperiksaan#ex2	example	1	Peperiksaan itu sangat susah.		That exam was very hard.	كان ذلك الامتحان صعبًا جدًا.					
+ms_w_masalah	word	1	masalah		problem	مشكلة					
+ms_w_masalah#ex1	example	1	Tidak ada masalah, saya boleh tolong.		No problem, I can help.	لا مشكلة، أستطيع المساعدة.					
+ms_w_masalah#ex2	example	1	Kereta saya ada masalah.		My car has a problem.	سيارتي فيها مشكلة.					
+ms_w_barang	word	1	barang		thing(s), goods	أشياء، أغراض					
+ms_w_barang#ex1	example	1	Saya beli banyak barang di pasar.		I bought a lot of things at the market.	اشتريت أشياء كثيرة من السوق.					
+ms_w_barang#ex2	example	1	Di mana barang saya?		Where are my things?	أين أغراضي؟					
+ms_w_tempat	word	1	tempat		place	مكان					
+ms_w_tempat#ex1	example	1	Tempat ini sangat cantik.		This place is very beautiful.	هذا المكان جميل جدًا.					
+ms_w_tempat#ex2	example	1	Tidak ada tempat di dalam bas.		There's no room on the bus.	لا يوجد مكان في الحافلة.					
+ms_w_kerja	word	1	kerja		work, job	عمل					
+ms_w_kerja#ex1	example	1	Saya ada banyak kerja hari ini.		I have a lot of work today.	عندي عمل كثير اليوم.					
+ms_w_kerja#ex2	example	1	Kerja ini tidak susah.		This work isn't difficult.	هذا العمل ليس صعبًا.					
+ms_w_baik	word	1	baik		good; kind; well	جيد؛ طيب؛ بخير					
+ms_w_baik#ex1	example	1	Saya baik, terima kasih.		I'm well, thank you.	أنا بخير، شكرًا.					
+ms_w_baik#ex2	example	1	Cuaca hari ini baik.		The weather is good today.	الطقس جيد اليوم.					
+ms_w_bagus	word	1	bagus		good, great	ممتاز					
+ms_w_bagus#ex1	example	1	Bagus, jawapan awak betul!		Great, your answer is right!	ممتاز، جوابك صحيح!					
+ms_w_bagus#ex2	example	1	Restoran ini sangat bagus.		This restaurant is very good.	هذا المطعم جيد جدًا.					
+ms_w_teruk	word	1	teruk		bad, terrible	سيئ جدًا					
+ms_w_teruk#ex1	example	1	Cuaca hari ini teruk.		The weather is terrible today.	الطقس سيئ جدًا اليوم.					
+ms_w_teruk#ex2	example	1	Makanan di sana sangat teruk.		The food there is terrible.	الطعام هناك سيئ جدًا.					
+ms_w_besar	word	1	besar		big	كبير					
+ms_w_besar#ex1	example	1	Bandar ini sangat besar.		This city is very big.	هذه المدينة كبيرة جدًا.					
+ms_w_besar#ex2	example	1	Saya mahu beg yang besar.		I want a big bag.	أريد حقيبة كبيرة.					
+ms_w_kecil	word	1	kecil		small	صغير					
+ms_w_kecil#ex1	example	1	Bilik ini terlalu kecil.		This room is too small.	هذه الغرفة صغيرة جدًا.					
+ms_w_kecil#ex2	example	1	Kucing kecil itu tidur.		The little cat is sleeping.	القطة الصغيرة نائمة.					
+ms_w_baru	word	1	baru		new; just (now)	جديد؛ للتوّ					
+ms_w_baru#ex1	example	1	Kereta ini masih baru.		This car is still new.	هذه السيارة ما زالت جديدة.					
+ms_w_baru#ex2	example	1	Dia baru sampai di rumah.		He just got home.	وصل إلى البيت للتوّ.					
+ms_w_lama	word	1	lama		old; long (time)	قديم؛ طويل (زمنًا)					
+ms_w_lama#ex1	example	1	Rumah ini sangat lama.		This house is very old.	هذا البيت قديم جدًا.					
+ms_w_lama#ex2	example	1	Saya tunggu lama di stesen.		I waited a long time at the station.	انتظرت طويلًا في المحطة.					
+ms_w_cantik	word	1	cantik		beautiful, pretty	جميل					
+ms_w_cantik#ex1	example	1	Gambar ini sangat cantik.		This picture is very beautiful.	هذه الصورة جميلة جدًا.					
+ms_w_cantik#ex2	example	1	Bandar ini sangat cantik.		This city is very beautiful.	هذه المدينة جميلة جدًا.					
+ms_w_panas	word	1	panas		hot	حار					
+ms_w_panas#ex1	example	1	Hari ini sangat panas.		It's very hot today.	الجو حار جدًا اليوم.					
+ms_w_panas#ex2	example	1	Kopi ini masih panas.		This coffee is still hot.	هذه القهوة ما زالت ساخنة.					
+ms_w_sejuk	word	1	sejuk		cold	بارد					
+ms_w_sejuk#ex1	example	1	Bilik ini sangat sejuk.		This room is very cold.	هذه الغرفة باردة جدًا.					
+ms_w_sejuk#ex2	example	1	Saya mahu minum air sejuk.		I want to drink cold water.	أريد أن أشرب ماءً باردًا.					
+ms_w_panjang	word	1	panjang		long	طويل					
+ms_w_panjang#ex1	example	1	Cuti sekolah sangat panjang.		The school holidays are very long.	العطلة المدرسية طويلة جدًا.					
+ms_w_panjang#ex2	example	1	Baju ini terlalu panjang.		This shirt is too long.	هذا القميص طويل جدًا.					
+ms_w_pendek	word	1	pendek		short	قصير					
+ms_w_pendek#ex1	example	1	Kelas hari ini pendek.		Today's class is short.	صف اليوم قصير.					
+ms_w_pendek#ex2	example	1	Baju ini terlalu pendek.		This shirt is too short.	هذا القميص قصير جدًا.					
+ms_w_mudah	word	1	mudah		easy	سهل					
+ms_w_mudah#ex1	example	1	Soalan ini sangat mudah.		This question is very easy.	هذا السؤال سهل جدًا.					
+ms_w_mudah#ex2	example	1	Kerja ini sangat senang.		This work is very easy.	هذا العمل سهل جدًا.					
+ms_w_susah	word	1	susah		difficult	صعب					
+ms_w_susah#ex1	example	1	Bahasa ini susah sedikit.		This language is a little hard.	هذه اللغة صعبة قليلًا.					
+ms_w_susah#ex2	example	1	Kerja saya tidak susah.		My work isn't hard.	عملي ليس صعبًا.					
+ms_w_murah	word	1	murah		cheap	رخيص					
+ms_w_murah#ex1	example	1	Buah di pasar murah.		Fruit at the market is cheap.	الفاكهة في السوق رخيصة.					
+ms_w_murah#ex2	example	1	Saya mahu hotel yang murah.		I want a cheap hotel.	أريد فندقًا رخيصًا.					
+ms_w_mahal	word	1	mahal		expensive	غالٍ					
+ms_w_mahal#ex1	example	1	Kereta itu sangat mahal.		That car is very expensive.	تلك السيارة غالية جدًا.					
+ms_w_mahal#ex2	example	1	Tiket kapal terbang mahal.		Plane tickets are expensive.	تذاكر الطائرة غالية.					
+ms_w_dekat	word	1	dekat		near	قريب					
+ms_w_dekat#ex1	example	1	Kedai itu dekat dengan sekolah.		That shop is near the school.	ذلك الدكان قريب من المدرسة.					
+ms_w_dekat#ex2	example	1	Ada hospital dekat sini?		Is there a hospital near here?	هل يوجد مستشفى قريب من هنا؟					
+ms_w_jauh	word	1	jauh		far	بعيد					
+ms_w_jauh#ex1	example	1	Rumah kawan saya jauh.		My friend's house is far.	بيت صديقي بعيد.					
+ms_w_jauh#ex2	example	1	Berapa jauh lapangan terbang dari sini?		How far is the airport from here?	كم يبعد المطار عن هنا؟					
+ms_w_cepat	word	1	cepat		fast	سريع					
+ms_w_cepat#ex1	example	1	Dia bercakap dengan cepat.		He speaks fast.	يتكلم بسرعة.					
+ms_w_cepat#ex2	example	1	Cepat, bas sudah sampai!		Quick, the bus has arrived!	بسرعة، وصلت الحافلة!					
+ms_w_perlahan	word	1	perlahan		slow, slowly	بطيء، ببطء					
+ms_w_perlahan#ex1	example	1	Dia berjalan perlahan ke kelas.		He walks slowly to class.	يمشي ببطء إلى الصف.					
+ms_w_perlahan#ex2	example	1	Komputer saya sangat perlahan.		My computer is very slow.	حاسوبي بطيء جدًا.					
+ms_w_gembira	word	1	gembira		happy	سعيد					
+ms_w_gembira#ex1	example	1	Saya gembira berjumpa awak.		I'm glad to meet you.	سعيد بلقائك.					
+ms_w_gembira#ex2	example	1	Ibu sangat gembira hari ini.		Mum is very happy today.	أمي سعيدة جدًا اليوم.					
+ms_w_sedih	word	1	sedih		sad	حزين					
+ms_w_sedih#ex1	example	1	Dia sedih kerana kucingnya sakit.		She's sad because her cat is ill.	هي حزينة لأن قطتها مريضة.					
+ms_w_sedih#ex2	example	1	Saya sedih hari ini.		I'm sad today.	أنا حزين اليوم.					
+ms_w_penat	word	1	penat		tired	متعب					
+ms_w_penat#ex1	example	1	Saya penat selepas bekerja.		I'm tired after work.	أنا متعب بعد العمل.					
+ms_w_penat#ex2	example	1	Adakah awak penat sekarang?		Are you tired now?	هل أنت متعب الآن؟					
+ms_w_lapar	word	1	lapar		hungry	جائع					
+ms_w_lapar#ex1	example	1	Saya sangat lapar sekarang.		I'm very hungry now.	أنا جائع جدًا الآن.					
+ms_w_lapar#ex2	example	1	Anak-anak sudah lapar.		The children are hungry already.	الأطفال جائعون بالفعل.					
+ms_w_dahaga	word	1	dahaga		thirsty	عطشان					
+ms_w_dahaga#ex1	example	1	Saya sangat dahaga, ada air?		I'm very thirsty, is there water?	أنا عطشان جدًا، هل يوجد ماء؟					
+ms_w_dahaga#ex2	example	1	Kucing itu dahaga, beri air.		That cat is thirsty, give it water.	تلك القطة عطشى، أعطها ماءً.					
+ms_w_sedap	word	1	sedap		tasty, delicious	لذيذ					
+ms_w_sedap#ex1	example	1	Nasi ayam ini sedap.		This chicken rice is tasty.	هذا الأرز بالدجاج لذيذ.					
+ms_w_sedap#ex2	example	1	Kopi di sini sedap.		The coffee here is good.	القهوة هنا لذيذة.					
+ms_w_penting	word	1	penting		important	مهم					
+ms_w_penting#ex1	example	1	Peperiksaan ini sangat penting.		This exam is very important.	هذا الامتحان مهم جدًا.					
+ms_w_penting#ex2	example	1	Keluarga sangat penting untuk saya.		Family is very important to me.	العائلة مهمة جدًا بالنسبة لي.					
+ms_w_betul	word	1	betul		right, correct	صحيح					
+ms_w_betul#ex1	example	1	Adakah jawapan ini betul?		Is this answer right?	هل هذا الجواب صحيح؟					
+ms_w_betul#ex2	example	1	Ya, apa yang awak cakap betul.		Yes, what you say is right.	نعم، ما تقوله صحيح.					
+ms_w_salah	word	1	salah		wrong	خطأ					
+ms_w_salah#ex1	example	1	Maaf, jawapan ini salah.		Sorry, this answer is wrong.	آسف، هذا الجواب خطأ.					
+ms_w_salah#ex2	example	1	Saya naik bas yang salah.		I took the wrong bus.	ركبت الحافلة الخطأ.					
+ms_w_sibuk	word	1	sibuk		busy	مشغول، مزدحم					
+ms_w_sibuk#ex1	example	1	Hari ini saya sibuk bekerja.		Today I'm busy working.	أنا مشغول بالعمل اليوم.					
+ms_w_sibuk#ex2	example	1	Jalan ini sangat sibuk.		This road is very busy.	هذا الطريق مزدحم جدًا.					
+ms_w_sakit	word	1	sakit		ill; painful	مريض؛ مؤلم					
+ms_w_sakit#ex1	example	1	Saya sakit hari ini.		I'm ill today.	أنا مريض اليوم.					
+ms_w_sakit#ex2	example	1	Adik saya sakit, dia tidak ke sekolah.		My brother is ill, he's not at school.	أخي مريض، لم يذهب إلى المدرسة.					
+ms_w_putih	word	1	putih		white	أبيض					
+ms_w_putih#ex1	example	1	Baju putih ini cantik.		This white shirt is pretty.	هذا القميص الأبيض جميل.					
+ms_w_putih#ex2	example	1	Saya suka kasut putih.		I like white shoes.	أحب الحذاء الأبيض.					
+ms_w_hitam	word	1	hitam		black	أسود					
+ms_w_hitam#ex1	example	1	Anjing hitam itu besar.		The black dog is big.	الكلب الأسود كبير.					
+ms_w_hitam#ex2	example	1	Saya minum kopi hitam.		I drink black coffee.	أشرب القهوة السوداء.					
+ms_w_merah	word	1	merah		red	أحمر					
+ms_w_merah#ex1	example	1	Kereta merah itu kereta abang.		That red car is my brother's.	تلك السيارة الحمراء لأخي.					
+ms_w_merah#ex2	example	1	Kasut merah itu sangat mahal.		Those red shoes are very expensive.	ذلك الحذاء الأحمر غالٍ جدًا.					
+ms_w_lain	word	1	lain		other, another	آخر					
+ms_w_lain#ex1	example	1	Ada baju yang lain?		Is there another shirt?	هل يوجد قميص آخر؟					
+ms_w_lain#ex2	example	1	Saya mahu bilik lain.		I'd like another room.	أريد غرفة أخرى.					
+ms_w_sama	word	1	sama		same	نفس، مماثل					
+ms_w_sama#ex1	example	1	Kami tinggal di bandar yang sama.		We live in the same city.	نسكن في المدينة نفسها.					
+ms_w_sama#ex2	example	1	Kasut kita sama, cantik!		Our shoes are the same, nice!	حذاؤنا متشابه، جميل!					
+ms_w_satu	word	1	satu		one	واحد					
+ms_w_satu#ex1	example	1	Satu kopi dan satu teh, terima kasih.		One coffee and one tea, thank you.	قهوة واحدة وشاي واحد، شكرًا.					
+ms_w_satu#ex2	example	1	Sila tunggu satu minit.		Please wait one minute.	انتظر دقيقة واحدة من فضلك.					
+ms_w_dua	word	1	dua		two	اثنان					
+ms_w_dua#ex1	example	1	Saya mahu dua tiket.		I'd like two tickets.	أريد تذكرتين.					
+ms_w_dua#ex2	example	1	Dua orang kawan saya datang.		Two of my friends came.	جاء اثنان من أصدقائي.					
+ms_w_tiga	word	1	tiga		three	ثلاثة					
+ms_w_tiga#ex1	example	1	Kami tinggal di sini tiga tahun.		We've lived here three years.	نسكن هنا منذ ثلاث سنوات.					
+ms_w_tiga#ex2	example	1	Saya beli tiga epal.		I bought three apples.	اشتريت ثلاث تفاحات.					
+ms_w_empat	word	1	empat		four	أربعة					
+ms_w_empat#ex1	example	1	Keluarga saya ada empat orang.		There are four people in my family.	عائلتي أربعة أشخاص.					
+ms_w_empat#ex2	example	1	Rumah kami ada empat bilik.		Our house has four rooms.	في بيتنا أربع غرف.					
+ms_w_lima	word	1	lima		five	خمسة					
+ms_w_lima#ex1	example	1	Kelas bermula dalam lima minit.		Class starts in five minutes.	يبدأ الصف بعد خمس دقائق.					
+ms_w_lima#ex2	example	1	Lima orang pelajar datang lewat.		Five students came late.	جاء خمسة طلاب متأخرين.					
+ms_w_enam	word	1	enam		six	ستة					
+ms_w_enam#ex1	example	1	Bas pertama pukul enam pagi.		The first bus is at six in the morning.	أول حافلة في السادسة صباحًا.					
+ms_w_enam#ex2	example	1	Kami ada enam kerusi di rumah.		We have six chairs at home.	لدينا ستة كراسٍ في البيت.					
+ms_w_tujuh	word	1	tujuh		seven	سبعة					
+ms_w_tujuh#ex1	example	1	Seminggu ada tujuh hari.		A week has seven days.	في الأسبوع سبعة أيام.					
+ms_w_tujuh#ex2	example	1	Saya sarapan pukul tujuh pagi.		I have breakfast at seven in the morning.	أتناول الفطور في السابعة صباحًا.					
+ms_w_lapan	word	1	lapan		eight	ثمانية					
+ms_w_lapan#ex1	example	1	Saya tidur lapan jam.		I sleep eight hours.	أنام ثماني ساعات.					
+ms_w_lapan#ex2	example	1	Ada lapan pelajar di kelas ini.		There are eight students in this class.	في هذا الصف ثمانية طلاب.					
+ms_w_sembilan	word	1	sembilan		nine	تسعة					
+ms_w_sembilan#ex1	example	1	Saya sampai di pejabat pukul sembilan.		I get to the office at nine.	أصل إلى المكتب في التاسعة.					
+ms_w_sembilan#ex2	example	1	Anak saya berumur sembilan tahun.		My child is nine.	طفلي عمره تسع سنوات.					
+ms_w_sepuluh	word	1	sepuluh		ten	عشرة					
+ms_w_sepuluh#ex1	example	1	Saya ada sepuluh buku baru.		I have ten new books.	لديّ عشرة كتب جديدة.					
+ms_w_sepuluh#ex2	example	1	Tunggu sepuluh minit lagi.		Wait ten more minutes.	انتظر عشر دقائق أخرى.					
+ms_w_ratus	word	1	ratus		hundred (seratus: one hundred)	مئة					
+ms_w_ratus#ex1	example	1	Ada seratus pelajar di sekolah ini.		There are a hundred students at this school.	في هذه المدرسة مئة طالب.					
+ms_w_ratus#ex2	example	1	Rumah ini berumur dua ratus tahun.		This house is two hundred years old.	عمر هذا البيت مئتا سنة.					
+ms_w_pertama	word	1	pertama		first	أول					
+ms_w_pertama#ex1	example	1	Hari pertama di sekolah sangat susah.		The first day at school was very hard.	كان اليوم الأول في المدرسة صعبًا جدًا.					
+ms_w_pertama#ex2	example	1	Saya pelajar tahun pertama.		I'm a first-year student.	أنا طالب في السنة الأولى.					

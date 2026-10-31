@@ -289,6 +289,33 @@ back to the course characters; the progress screen then showed 3.2 minutes today
 missed set, reading an Arabic photo on the device from the material screen; all in the English
 interface).
 
+**Quality appendix, batches 1-5 (2026-10-31).** Audit in `docs/AUDIT_2026-10-31_AR.md`.
+(1) On-device OCR for the remaining six languages (models from tessdata_fast commit 8741641; SHA-256:
+eng 7d4322bd…6427170b2, chi_sim a5fcb6f0…e1f730, chi_tra 529c5b57…a829330b, spa 6f2e04d0…b464, fra
+ced03756…45ca, tur 73933811…c6b7, msa e41a3e5f…6cba). On the emulator: English, Turkish (ı ş ç ö) and
+Malay printed images read exactly. Loading chi_sim+chi_tra together turned simplified text into
+traditional; confidence could not choose (logged: simplified image chi_sim 87 / chi_tra 90, traditional
+image 82 / 93), so the learner's script picks the model and a switch on the card changes it; both
+Chinese images then read exactly. Fixed on the way: "。" shown at the start of Chinese lines in the
+Arabic interface (text field now follows the text's direction), and reading progress shown in both
+cards. (2) Arabic is the default interface on a new install (UI test). (3) Learner control: postpone a
+review item by a day or a week, or remove it (data test: not logged as a review, due again after the
+delay, gone after removal); "Try again" after a wrong answer in lessons (score keeps the first try);
+"Something else" on the home screen (checked on the emulator); a setting to hide points, quests and
+streak. (4) Content accuracy: level-test distractors may no longer share a sense with the answer or
+with each other (`AnswerAmbiguity`); a test runs every level of every language with all 300 words and
+finds none; lesson multiple-choice questions have no duplicate options. "Report an error in this
+content" in lessons, reviews and word pages, stored on the device and exported as a table (data test);
+a review-status record with review sheets (`tools/review_sheets.py`) and a test that every record
+points at a real item. (5) Mandarin: tone-change drills (不, 一, two third tones), neutral-tone drills
+and hearing close words apart, built from the word list; a test confirms every 不 and 一 written in
+the list follows the rule (a neutral 不 as in 对不起 is accepted); pairs of one character with two
+readings are excluded because the speech engine cannot say them apart. Checked on the emulator (no
+Chinese voice there, so answers are not counted): 港口 asks the first syllable, gáng is right and the
+rule is shown; the "?" in the pinyin line sat on the wrong side in the Arabic interface and is now
+left-to-right. Hiding pinyin for known words (review interval of a week or more; data test). Build:
+285 tests, 0 failures (core 196, data 63, uicore 12, ui 14).
+
 | Module | Test class | Tests | Failures |
 |---|---|---|---|
 | core | AdapterTest (OpenAI, Azure, Gemini, Anthropic, DeepSeek, local; image parts per vendor; error classification; timeouts; no key leakage; Mistral, Groq, xAI, OpenRouter, Qwen and custom OpenAI-compatible endpoints; GPT-5/o-series parameters; model lists from OpenAI-compatible, Anthropic and Gemini) | 14 | 0 |

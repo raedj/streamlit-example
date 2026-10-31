@@ -46,7 +46,7 @@ fun PolyglotApp(services: AppServices, platformUi: PlatformUi, initialStack: Lis
     val profile by services.store.profile.collectAsState(initial = null as LearnerProfile?)
     val settings by services.store.settings.collectAsState(initial = null as AppSettings?)
     val p = profile; val st = settings
-    val strings = remember(p?.interfaceLanguage) { Localizer(p?.interfaceLanguage ?: com.polyglot.academy.core.model.LanguageCode.ENGLISH) }
+    val strings = remember(p?.interfaceLanguage) { Localizer(p?.interfaceLanguage ?: com.polyglot.academy.core.model.LanguageCode.ARABIC) }
     PolyglotTheme(
         themeMode = st?.theme ?: com.polyglot.academy.core.model.ThemeMode.SYSTEM,
         rtl = strings.isRtl,

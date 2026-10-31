@@ -29,9 +29,24 @@ class UiFlowTest {
     private fun androidx.compose.ui.test.ComposeUiTest.waitForText(text: String, substring: Boolean = false, timeout: Long = 10_000) =
         waitUntil(timeoutMillis = timeout) { onAllNodesWithText(text, substring = substring).fetchSemanticsNodes().isNotEmpty() }
 
-    @Test fun onboardingCanBeCompletedAndSavesChoices() = runDesktopComposeUiTest(800, 1700) {
+    @Test fun aNewInstallStartsInArabicAndCanSwitchToEnglish() = runDesktopComposeUiTest(800, 1700) {
         val app = TestApp()
         runBlocking { app.store.updateSettings { it.copy(accessibility = it.accessibility.copy(reducedMotion = true)) } }
+        setContent { AppUnderTest(app) }
+        waitForText("لنبدأ")
+        onNodeWithText("لنبدأ").performClick()
+        waitForText("اختر لغة التطبيق")
+        onNodeWithText("English").performClick()
+        waitForText("Choose the app language")
+        assertEquals(LanguageCode.ENGLISH, runBlocking { app.store.currentProfile() }.interfaceLanguage)
+    }
+
+    @Test fun onboardingCanBeCompletedAndSavesChoices() = runDesktopComposeUiTest(800, 1700) {
+        val app = TestApp()
+        runBlocking {
+            app.store.updateSettings { it.copy(accessibility = it.accessibility.copy(reducedMotion = true)) }
+            app.store.updateProfile { it.copy(interfaceLanguage = LanguageCode.ENGLISH) }
+        }
         setContent { AppUnderTest(app) }
         waitForText("Get started")
         onNodeWithText("Get started").performClick()
@@ -186,7 +201,7 @@ class UiFlowTest {
     @Test fun arabicPhotoIsReadOnTheDeviceFromTheMaterialScreen() = runDesktopComposeUiTest(800, 1700) {
         val ocr = object : com.polyglot.academy.core.service.DeviceOcr {
             override val languages = setOf(LanguageCode.ARABIC)
-            override suspend fun recognize(page: com.polyglot.academy.core.service.OcrPage, language: LanguageCode) = "محطة القطار"
+            override suspend fun recognize(page: com.polyglot.academy.core.service.OcrPage, language: LanguageCode, traditionalChinese: Boolean) = "محطة القطار"
         }
         val app = TestApp(deviceOcr = ocr); app.profile(learn = LanguageCode.ARABIC)
         val photo = byteArrayOf(1, 2, 3)

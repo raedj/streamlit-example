@@ -71,9 +71,12 @@ class MaterialService(
      * on the device when [onDevice], otherwise with a vision AI provider, which must only happen after
      * the learner confirmed sending the file.
      */
-    suspend fun recognizeText(material: ImportedMaterial, pages: List<OcrPage>, onDevice: Boolean = false, onPage: (Int, Int) -> Unit = { _, _ -> }): Pair<ImportedMaterial, OcrResult> {
+    suspend fun recognizeText(
+        material: ImportedMaterial, pages: List<OcrPage>, onDevice: Boolean = false, traditionalChinese: Boolean = false,
+        onPage: (Int, Int) -> Unit = { _, _ -> },
+    ): Pair<ImportedMaterial, OcrResult> {
         val service = ocr ?: return material to OcrResult.Failed(com.polyglot.academy.core.ai.AiError.NoProviderAvailable("no vision service"))
-        val result = if (onDevice) service.recognizeOnDevice(pages, material.language, onPage) else service.recognize(pages, material.language, onPage)
+        val result = if (onDevice) service.recognizeOnDevice(pages, material.language, traditionalChinese, onPage) else service.recognize(pages, material.language, onPage)
         // Reading on the device sends nothing anywhere, so it does not count as cloud processing of this item.
         val cloud = material.cloudProcessingAllowed || !onDevice
         val updated = when (result) {

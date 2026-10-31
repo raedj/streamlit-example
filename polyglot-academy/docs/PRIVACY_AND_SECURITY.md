@@ -42,6 +42,8 @@ conversations / imported material / everything (incl. keys and reminder).
 - Arabic and Urdu photos can also be read on the device with Tesseract (bundled models, no network); this needs no
   confirmation, sends nothing and does not mark the item as cloud-processed. The models are copied once from the APK
   into `noBackupFilesDir`, so they are never backed up.
+- Content error reports ("Report an error in this content") are stored only on the device, inside the
+  settings, until the learner exports them as a table or deletes them; nothing is sent.
 - Build: JitPack is used only for the group `cz.adaptech.tesseract4android` (Gradle `exclusiveContent`); every other
   dependency still resolves from Google Maven or Maven Central.
 - Backup rules include only `files/backup/` (the optional secret-free export); with an include rule nothing else is backed up or transferred, so the secrets file and the raw database never leave the device.

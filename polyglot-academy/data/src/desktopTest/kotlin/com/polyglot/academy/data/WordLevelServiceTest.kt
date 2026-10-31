@@ -55,6 +55,25 @@ class WordLevelServiceTest {
         }
     }
 
+    @Test fun noLevelTestOffersASecondRightAnswer() = runBlocking<Unit> {
+        // Every level of every language, with a whole level's worth of questions: no option may share a
+        // term or a sense of its meaning with the answer or with another option.
+        val problems = mutableListOf<String>()
+        for (lang in LanguageCode.entries) for (level in 1..10) {
+            val quiz = app.wordLevels.quiz(lang, level, size = 300, seed = level.toLong())
+            quiz.forEach { q ->
+                if (q.options.size != WordLevelService.OPTIONS) problems += "${lang.tag} $level ${q.entry.term}: ${q.options.size} options"
+                for (i in q.options.indices) for (j in i + 1 until q.options.size) {
+                    val a = q.options[i]; val b = q.options[j]
+                    if (a.term == b.term || com.polyglot.academy.core.learning.AnswerAmbiguity.overlaps(a.meaning, b.meaning)) {
+                        problems += "${lang.tag} $level: ${a.term} (${a.meaning.en}) ~ ${b.term} (${b.meaning.en})"
+                    }
+                }
+            }
+        }
+        assertEquals(emptyList(), problems.take(20), "${problems.size} problems")
+    }
+
     @Test fun finishedTestKeepsBestScoreAndQueuesMissedWords() = runBlocking<Unit> {
         val lang = LanguageCode.TURKISH
         assertNull(app.wordLevels.level(lang, 2).bestTestScore)

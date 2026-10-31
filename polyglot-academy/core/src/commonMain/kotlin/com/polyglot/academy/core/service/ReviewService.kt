@@ -11,6 +11,7 @@ import com.polyglot.academy.core.model.VocabularyItem
 import com.polyglot.academy.core.repo.ReviewRepository
 import com.polyglot.academy.core.repo.VocabularyRepository
 import com.polyglot.academy.core.srs.SpacedRepetitionScheduler
+import com.polyglot.academy.core.util.MILLIS_PER_DAY
 import com.polyglot.academy.core.util.TimeSource
 import com.polyglot.academy.core.wordlist.WordEntry
 import com.polyglot.academy.core.wordlist.WordLists
@@ -65,7 +66,30 @@ class ReviewService(
 
     fun preview(card: ReviewCard): Map<RecallRating, Long> = scheduler.preview(card.state, clock.nowMillis())
 
+    /**
+     * Moves an item's next review [days] later, counted from when it is due (or now, if overdue). This
+     * is the learner's choice to wait, so it is not recorded as a review and the schedule is unchanged.
+     */
+    suspend fun postpone(itemId: String, days: Int): ReviewState? {
+        val s = reviews.state(itemId) ?: return null
+        val moved = s.copy(dueAtMillis = maxOf(s.dueAtMillis, clock.nowMillis()) + days * MILLIS_PER_DAY)
+        reviews.save(moved, null)
+        return moved
+    }
+
+    /** Items the learner knows well enough to read without help: in review, next due a week or more later. */
+    suspend fun knownIds(language: LanguageCode): Set<String> =
+        reviews.states(language).first().filter { it.phase == com.polyglot.academy.core.model.ReviewPhase.REVIEW && it.intervalDays >= KNOWN_INTERVAL_DAYS }.map { it.itemId }.toSet()
+
+    /** Takes an item out of the reviews; it can be added again later and starts as new. */
+    suspend fun remove(itemId: String) = reviews.remove(itemId)
+
     suspend fun addToReview(language: LanguageCode, itemId: String) {
         if (reviews.state(itemId) == null) reviews.save(scheduler.newState(itemId, language, clock.nowMillis()), null)
+    }
+
+    companion object {
+        /** A word whose review interval reached a week counts as known for hiding its reading. */
+        const val KNOWN_INTERVAL_DAYS = 7.0
     }
 }

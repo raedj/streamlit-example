@@ -112,6 +112,8 @@ private fun LessonPlayer(lesson: Lesson, restart: Boolean, onRetry: () -> Unit) 
     // Not saveable on purpose: it must reset together with lastAnswer, otherwise the Continue button could disappear.
     var answered by remember(lessonId, index) { mutableStateOf(false) }
     var lastAnswer by remember(lessonId, index) { mutableStateOf<Answer?>(null) }
+    // Bumped by "Try again" after a wrong answer, so the exercise starts fresh; the score keeps the first try.
+    var attempt by remember(lessonId, index) { mutableIntStateOf(0) }
     val firstTry = remember(lessonId) { mutableStateMapOf<String, Double>() }
     var hintsOn by rememberSaveable { mutableStateOf(app.settings.showHintsByDefault) }
     var adaptMessage by remember { mutableStateOf<K?>(null) }
@@ -119,6 +121,10 @@ private fun LessonPlayer(lesson: Lesson, restart: Boolean, onRetry: () -> Unit) 
     var summary by remember { mutableStateOf<Summary?>(null) }
     var confirmExit by remember { mutableStateOf(false) }
     var shownAt by remember(index) { mutableStateOf(services.clock.nowMillis()) }
+    // Known words whose reading the learner chose to hide (empty unless that setting is on).
+    val hiddenReadings by androidx.compose.runtime.produceState(emptySet<String>(), lesson.language, enrollment?.hideReadingWhenKnown) {
+        if (enrollment?.hideReadingWhenKnown == true) value = services.reviews.knownIds(lesson.language)
+    }
     // Null until checked; false when the device has no text-to-speech voice for the lesson language.
     var voiceAvailable by remember { mutableStateOf<Boolean?>(null) }
 
@@ -205,12 +211,12 @@ private fun LessonPlayer(lesson: Lesson, restart: Boolean, onRetry: () -> Unit) 
                 else if (index >= 0) {
                     val ex = lesson.exercises[index]
                     adaptMessage?.let { Banner(BannerKind.INFO, s[it]) }
-                    val ctx = ExerciseContext(lesson.language, explain, speaker, hintsOn, enrollment?.showTransliteration != false, enrollment?.useTraditionalCharacters == true)
+                    val ctx = ExerciseContext(lesson.language, explain, speaker, hintsOn, enrollment?.showTransliteration != false, enrollment?.useTraditionalCharacters == true, hiddenReadings)
                     if (voiceAvailable == false && ex.needsAudio) {
                         Banner(BannerKind.WARNING, s.f(K.LISTEN_NO_VOICE, Labels.language(s, lesson.language)))
                         if (!answered) SecondaryButton(s[K.LISTEN_SKIP], { advance() }, Modifier.fillMaxWidth())
                     }
-                    ExerciseView(ex, ctx, answered) { onAnswer(ex, it) }
+                    key(index, attempt) { ExerciseView(ex, ctx, answered) { onAnswer(ex, it) } }
                     val a = lastAnswer
                     if (answered && a != null) {
                         val verdict = a.outcome.note?.verdict
@@ -229,6 +235,10 @@ private fun LessonPlayer(lesson: Lesson, restart: Boolean, onRetry: () -> Unit) 
                         }.joinToString("\n").ifEmpty { null }
                         FeedbackPanel(a.outcome.correct, title, detail) {
                             ex.explanation?.let { ExplanationRow(it.forLanguage(explain)) }
+                        }
+                        com.polyglot.academy.ui.feature.common.ReportContentButton(lesson.language, "${lesson.id}/${ex.id}", a.promptText.ifBlank { ex.id })
+                        if (!a.outcome.correct && !(voiceAvailable == false && ex.needsAudio)) {
+                            SecondaryButton(s[K.RETRY], { answered = false; lastAnswer = null; attempt++; shownAt = services.clock.nowMillis() }, Modifier.fillMaxWidth())
                         }
                         PrimaryButton(if (index >= lesson.exercises.lastIndex) s[K.DONE] else s[K.CONTINUE], { advance() }, Modifier.fillMaxWidth())
                     }

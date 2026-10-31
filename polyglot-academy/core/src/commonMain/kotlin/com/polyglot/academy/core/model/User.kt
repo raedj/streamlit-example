@@ -29,7 +29,8 @@ enum class CorrectionIntensity {
 @Serializable
 data class LearnerProfile(
     val displayName: String = "",
-    val interfaceLanguage: LanguageCode = LanguageCode.ENGLISH,
+    /** Arabic by default on a new install; the learner can switch at the first step of onboarding. */
+    val interfaceLanguage: LanguageCode = LanguageCode.ARABIC,
     val nativeLanguage: LanguageCode = LanguageCode.ARABIC,
     /** Preferred explanation language for grammar notes and corrections. */
     val explanationLanguage: LanguageCode = LanguageCode.ARABIC,
@@ -41,6 +42,8 @@ data class LearnerProfile(
     val correctionIntensity: CorrectionIntensity = CorrectionIntensity.BALANCED,
     val preferredTutorId: String? = null,
     val includeRelaxation: Boolean = false,
+    /** Points, daily quests and the streak on the home screen; progress is recorded either way. */
+    val showPointsAndStreak: Boolean = true,
     val onboardingCompleted: Boolean = false,
     val skippedOnboardingSteps: Set<String> = emptySet(),
     /** Null until the learner picks a coaching track (on screen or in the first coaching session). */
@@ -66,6 +69,8 @@ data class LanguageEnrollment(
     val levelFromAssessment: Boolean,
     val targetLevel: CefrLevel = startingLevel.next(),
     val showTransliteration: Boolean = true,
+    /** Hide the reading (pinyin, transliteration) for words already known, with a button to show it. */
+    val hideReadingWhenKnown: Boolean = false,
     /** Mandarin: show traditional characters instead of simplified. */
     val useTraditionalCharacters: Boolean = false,
 )
@@ -111,6 +116,23 @@ data class AppSettings(
     /** Provider chosen for a feature (e.g. Claude for conversations, Gemini for reading photos); missing = the preferred provider. */
     val aiFeatureProviders: Map<com.polyglot.academy.core.ai.AiCapability, com.polyglot.academy.core.ai.ProviderId> = emptyMap(),
     val writingPractice: WritingPracticeState = WritingPracticeState(),
+    /** Errors the learner reported in built-in content, kept on the device until exported or deleted. */
+    val contentReports: List<ContentReport> = emptyList(),
+)
+
+enum class ContentIssue { TRANSLATION, EXAMPLE, PRONUNCIATION, AMBIGUOUS_ANSWER, LEVEL, OTHER }
+
+/** One reported problem in built-in content: which item, what is wrong, and the learner's note. */
+@Serializable
+data class ContentReport(
+    val id: String,
+    val language: LanguageCode,
+    /** The content id (word, exercise, lesson) and the text shown, so a reviewer can find it. */
+    val itemId: String,
+    val itemText: String,
+    val issue: ContentIssue,
+    val note: String,
+    val createdAtMillis: Long,
 )
 
 /** Where character writing practice was left, and the characters to practise again. */

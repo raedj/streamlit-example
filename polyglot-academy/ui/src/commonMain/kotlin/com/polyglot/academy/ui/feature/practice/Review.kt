@@ -1,6 +1,8 @@
 package com.polyglot.academy.ui.feature.practice
 
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -55,6 +57,8 @@ import com.polyglot.academy.ui.app.rememberLoader
 import com.polyglot.academy.ui.app.rememberSpeaker
 import com.polyglot.academy.ui.designsystem.AudioButton
 import com.polyglot.academy.ui.designsystem.Banner
+import com.polyglot.academy.ui.designsystem.ConfirmDialog
+import com.polyglot.academy.ui.designsystem.QuietButton
 import com.polyglot.academy.ui.designsystem.BannerKind
 import com.polyglot.academy.ui.designsystem.HeroIllustration
 import com.polyglot.academy.ui.designsystem.HeroKind
@@ -64,7 +68,6 @@ import com.polyglot.academy.ui.designsystem.Pill
 import com.polyglot.academy.ui.designsystem.PolyCard
 import com.polyglot.academy.ui.designsystem.PolyglotTheme
 import com.polyglot.academy.ui.designsystem.PrimaryButton
-import com.polyglot.academy.ui.designsystem.QuietButton
 import com.polyglot.academy.ui.designsystem.SecondaryButton
 import com.polyglot.academy.ui.designsystem.StateMessage
 import com.polyglot.academy.ui.i18n.K
@@ -131,6 +134,7 @@ fun ReviewScreen() {
     }
 }
 
+@OptIn(ExperimentalLayoutApi::class)
 @Composable
 private fun ReviewSession(queue: List<ReviewCard>, lang: LanguageCode) {
     val app = LocalApp.current
@@ -171,6 +175,7 @@ private fun ReviewSession(queue: List<ReviewCard>, lang: LanguageCode) {
             }
         }
     }
+    if (revealed) com.polyglot.academy.ui.feature.common.ReportContentButton(lang, card.state.itemId, "${card.front} — ${s.gloss(card.back)}")
     if (card.state.isLeech) Banner(BannerKind.INFO, s[K.REVIEW_LEECH])
     if (!revealed) PrimaryButton(s[K.REVIEW_SHOW], { revealed = true }, Modifier.fillMaxWidth())
     else {
@@ -204,6 +209,17 @@ private fun ReviewSession(queue: List<ReviewCard>, lang: LanguageCode) {
             }
         }
     }
+    // The learner decides: an item can wait a day or a week, or leave the reviews altogether.
+    var confirmRemove by remember(card) { mutableStateOf(false) }
+    fun skip() { position++; revealed = false; shownAt = app.services.clock.nowMillis() }
+    FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+        QuietButton(s[K.REVIEW_POSTPONE_DAY], { scope.launch { app.services.reviews.postpone(card.state.itemId, 1); skip() } })
+        QuietButton(s[K.REVIEW_POSTPONE_WEEK], { scope.launch { app.services.reviews.postpone(card.state.itemId, 7); skip() } })
+        QuietButton(s[K.REVIEW_REMOVE], { confirmRemove = true }, color = c.error)
+    }
+    if (confirmRemove) ConfirmDialog(s[K.REVIEW_REMOVE_TITLE], s[K.REVIEW_REMOVE_BODY], s[K.REVIEW_REMOVE], s[K.CANCEL],
+        onConfirm = { confirmRemove = false; scope.launch { app.services.reviews.remove(card.state.itemId); skip() } },
+        onDismiss = { confirmRemove = false }, destructive = true)
     Text(s[K.REVIEW_HOW], style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
 }
 

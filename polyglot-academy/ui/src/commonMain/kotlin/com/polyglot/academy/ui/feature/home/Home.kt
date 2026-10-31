@@ -62,6 +62,7 @@ import com.polyglot.academy.ui.designsystem.LabeledProgress
 import com.polyglot.academy.ui.designsystem.LevelBadge
 import com.polyglot.academy.ui.designsystem.PolyCard
 import com.polyglot.academy.ui.designsystem.QuietButton
+import com.polyglot.academy.ui.designsystem.SecondaryButton
 import com.polyglot.academy.ui.designsystem.PolyglotTheme
 import com.polyglot.academy.ui.designsystem.PrimaryButton
 import com.polyglot.academy.ui.designsystem.ProgressRing
@@ -157,7 +158,7 @@ private fun HomeContent(data: HomeData) {
     }
 
     RecommendationCard(snap.recommendation, snap)
-    DailyLoopCard(data.loop)
+    if (snap.profile.showPointsAndStreak) DailyLoopCard(data.loop)
 
     WordLevelCard(snap.language)
 
@@ -181,7 +182,9 @@ private fun HomeContent(data: HomeData) {
 
     Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
         StatTile(if (snap.dueReviews > 0) s.plural(K.HOME_REVIEWS_DUE, snap.dueReviews) else s[K.HOME_NO_REVIEWS], s[K.PRACTICE_REVIEW], Icons.Filled.Replay, c.secondary, Modifier.weight(1f))
-        StatTile(s.plural(K.HOME_STREAK, data.loop.streakDays), s.plural(K.GAME_FREEZES, data.loop.freezes), Icons.Filled.LocalFireDepartment, c.accent, Modifier.weight(1f))
+        if (snap.profile.showPointsAndStreak) {
+            StatTile(s.plural(K.HOME_STREAK, data.loop.streakDays), s.plural(K.GAME_FREEZES, data.loop.freezes), Icons.Filled.LocalFireDepartment, c.accent, Modifier.weight(1f))
+        }
     }
 
     SectionHeader(s[K.HOME_QUICK])
@@ -274,7 +277,29 @@ private fun RecommendationCard(rec: Recommendation, snap: DashboardSnapshot) {
             PrimaryButton(if (rec.estimatedMinutes > 0) "${s[K.HOME_START]} · ${s.plural(K.MINUTES, rec.estimatedMinutes)}" else s[K.HOME_START],
                 { openRecommendation(app, rec, snap) }, Modifier.fillMaxWidth())
         }
+        // The suggestion is only a suggestion: the learner can pick something else.
+        var showOthers by remember { mutableStateOf(false) }
+        QuietButton(s[if (showOthers) K.HOME_OTHER_HIDE else K.HOME_OTHER], { showOthers = !showOthers })
+        if (showOthers) otherActivities(s, rec, snap).forEach { (label, open) ->
+            SecondaryButton(label, { open(app) }, Modifier.fillMaxWidth())
+        }
     }
+}
+
+/** Other things to do now, besides the suggestion: only those that apply (reviews due, mistakes to fix…). */
+private fun otherActivities(s: Localizer, rec: Recommendation, snap: DashboardSnapshot): List<Pair<String, (AppScope) -> Unit>> = buildList {
+    if (snap.dueReviews > 0 && rec.kind != RecommendationKind.REVIEW_DUE) add(s.plural(K.HOME_OTHER_REVIEW, snap.dueReviews) to { a: AppScope -> a.nav.push(Route.Review) })
+    if (snap.unresolvedMistakes > 0 && rec.kind != RecommendationKind.MISTAKE_REVIEW) add(s[K.REC_MISTAKE_REVIEW] to { a: AppScope -> a.nav.push(Route.Mistakes) })
+    val lesson = snap.interruptedLesson ?: snap.nextLesson
+    if (lesson != null && rec.kind != RecommendationKind.CONTINUE_LESSON && rec.kind != RecommendationKind.NEXT_LESSON) {
+        add(s.f(K.REC_NEXT_LESSON, s.gloss(lesson.title)) to { a: AppScope -> a.nav.push(Route.LessonOverview(lesson.id)) })
+    }
+    if (rec.kind != RecommendationKind.CONVERSATION) {
+        add(s[K.REC_CONVERSATION] to { a: AppScope -> openRecommendation(a, rec.copy(kind = RecommendationKind.CONVERSATION), snap) })
+    }
+    add(s[K.READING_TITLE] to { a: AppScope -> a.nav.push(Route.Reading) })
+    add(s[K.LISTENING_TITLE] to { a: AppScope -> a.nav.push(Route.Listening) })
+    add(s[K.PRACTICE_WORDLISTS] to { a: AppScope -> a.nav.push(Route.WordLevels) })
 }
 
 internal fun recommendationTitle(s: Localizer, rec: Recommendation, snap: DashboardSnapshot): String = when (rec.kind) {

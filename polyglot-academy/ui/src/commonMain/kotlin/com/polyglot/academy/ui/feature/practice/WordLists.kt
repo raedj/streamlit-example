@@ -263,7 +263,14 @@ fun WordDetailScreen(entryId: String) {
             list.byRank[entry.rank - 1]?.let { prev -> SecondaryButton(s[K.WORD_PREV], { app.nav.replace(Route.WordDetail(prev.id)) }, Modifier.weight(1f)) }
             list.byRank[entry.rank + 1]?.let { next -> SecondaryButton(s[K.WORD_NEXT], { app.nav.replace(Route.WordDetail(next.id)) }, Modifier.weight(1f)) }
         }
-        Text(s[K.WORDLEVELS_NOTICE], style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
+        // Reviewed only when content/review/status.tsv says so; otherwise the AI-written notice stands.
+        val review = com.polyglot.academy.core.content.ContentReview.of(lang, entry.id)
+        Text(when (review?.status) {
+            com.polyglot.academy.core.content.ContentReviewStatus.REVIEWED -> s.f(K.WORD_REVIEWED, review.date)
+            com.polyglot.academy.core.content.ContentReviewStatus.NEEDS_FIX -> s[K.WORD_NEEDS_FIX]
+            null -> s[K.WORDLEVELS_NOTICE]
+        }, style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
+        com.polyglot.academy.ui.feature.common.ReportContentButton(lang, entry.id, "${entry.term} — ${s.gloss(entry.meaning)}")
     }
 }
 

@@ -250,3 +250,21 @@ CHARS_SET_SUB ¦ The course characters come with a breakdown into parts. Each wo
 CHARS_POSITION ¦ Character {0} of {1} ¦ الحرف {0} من {1}
 CHARS_SET_MISSED ¦ To practise again ({0}) ¦ للتدرّب مجددًا ({0})
 CHARS_MISSED_DONE ¦ No characters left to practise again. Pick another set. ¦ لا حروف متبقّية للتدرّب عليها مجددًا. اختر مجموعة أخرى.
+REVIEW_POSTPONE_DAY ¦ Later: tomorrow ¦ لاحقًا: غدًا
+REVIEW_POSTPONE_WEEK ¦ Later: in a week ¦ لاحقًا: بعد أسبوع
+REVIEW_REMOVE ¦ Remove from reviews ¦ احذف من المراجعة
+REVIEW_REMOVE_TITLE ¦ Remove this item from your reviews? ¦ حذف هذا العنصر من مراجعاتك؟
+REVIEW_REMOVE_BODY ¦ It will no longer be scheduled. Your past results stay in your statistics, and you can add it again later; it then starts as new. ¦ لن يُجدول بعد الآن. تبقى نتائجك السابقة في الإحصاءات، ويمكنك إضافته مجددًا لاحقًا، فيبدأ عنصرًا جديدًا.
+TONES_MODE_TONES ¦ Four tones ¦ النغمات الأربع
+TONES_MODE_SANDHI ¦ Tone changes ¦ تغيّر النغمات
+TONES_MODE_NEUTRAL ¦ Neutral tone ¦ النغمة المحايدة
+TONES_MODE_PAIRS ¦ Hear the difference ¦ ميّز بالسمع
+TONES_DRILL_ASK ¦ How is the highlighted syllable said in this word? ¦ كيف يُنطق المقطع المميّز في هذه الكلمة؟
+TONES_PAIRS_ASK ¦ Listen, then choose the word you heard. ¦ استمع، ثم اختر الكلمة التي سمعتها.
+TONES_RULE_BU ¦ 不 is bù, but bú before a fourth tone. ¦ يُنطق 不 بنغمة رابعة (bù)، لكنه يصير bú قبل نغمة رابعة.
+TONES_RULE_YI ¦ 一 is yī on its own or at the end, yí before a fourth tone, and yì before the other tones. ¦ يُنطق 一 بنغمة أولى (yī) وحده أو في آخر الكلمة، ويصير yí قبل نغمة رابعة، وyì قبل بقية النغمات.
+TONES_RULE_THIRD ¦ When two third tones meet, the first is said as a second tone. Dictionaries still write both as third tones. ¦ إذا التقت نغمتان ثالثتان نُطقت الأولى بنغمة ثانية، مع أنّ القواميس تكتبهما ثالثتين.
+TONES_RULE_NEUTRAL ¦ This syllable is said lightly and short, without its own tone; its pitch follows the syllable before it. ¦ يُنطق هذا المقطع خفيفًا قصيرًا بلا نغمة خاصة به، ويتبع ارتفاعُه المقطعَ الذي قبله.
+TONES_PAIRS_TONE ¦ Same sounds, different tones. ¦ الأصوات نفسها، والنغمات مختلفة.
+TONES_PAIRS_SOUND ¦ The same tones, one similar sound different. ¦ النغمات نفسها، ويختلف صوت متقارب واحد.
+TONES_DRILL_SOURCE ¦ Questions are built from the 3000-word list (AI-written, not yet reviewed). The tone-change rules are standard Mandarin; real speech varies with speed and region. ¦ الأسئلة مبنية من قائمة الـ3000 كلمة (مكتوبة بالذكاء الاصطناعي ولم تُراجع بعد). قواعد تغيّر النغمات هي قواعد الماندرين المعيارية، والكلام الفعلي يختلف بحسب السرعة والمنطقة.

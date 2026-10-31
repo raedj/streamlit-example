@@ -143,3 +143,15 @@ ACH_first_conversation ¦ First real conversation ¦ أول محادثة حقي�
 ACH_streak_3 ¦ Three days in a row ¦ ثلاثة أيام متتالية
 ACH_streak_7 ¦ A full week of practice ¦ أسبوع كامل من التدريب
 ACH_placement_done ¦ Found your level ¦ حدّدت مستواك
+REPORT_BUTTON ¦ Report an error in this content ¦ أبلغ عن خطأ في هذا المحتوى
+REPORT_TITLE ¦ Report a content error ¦ الإبلاغ عن خطأ في المحتوى
+REPORT_BODY ¦ The content was written with AI and is still being reviewed. Your report stays on this device until you export it from Settings → Your data. ¦ كُتب المحتوى بالذكاء الاصطناعي وما زال قيد المراجعة. يبقى بلاغك على هذا الجهاز حتى تصدّره من الإعدادات ← بياناتك.
+REPORT_NOTE ¦ What is wrong? (optional) ¦ ما الخطأ؟ (اختياري)
+REPORT_SAVE ¦ Save report ¦ احفظ البلاغ
+REPORT_SAVED ¦ Report saved on this device ¦ حُفظ البلاغ على هذا الجهاز
+REPORT_ISSUE_TRANSLATION ¦ Translation or meaning ¦ الترجمة أو المعنى
+REPORT_ISSUE_EXAMPLE ¦ Example sentence ¦ جملة المثال
+REPORT_ISSUE_PRONUNCIATION ¦ Pronunciation or reading ¦ النطق أو القراءة
+REPORT_ISSUE_AMBIGUOUS ¦ More than one right answer ¦ أكثر من إجابة صحيحة
+REPORT_ISSUE_LEVEL ¦ Wrong level ¦ المستوى غير مناسب
+REPORT_ISSUE_OTHER ¦ Something else ¦ شيء آخر

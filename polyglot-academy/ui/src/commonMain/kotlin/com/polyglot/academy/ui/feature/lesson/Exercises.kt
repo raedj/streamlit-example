@@ -85,8 +85,11 @@ data class ExerciseContext(
     val hintsAvailable: Boolean,
     val showReading: Boolean,
     val traditional: Boolean,
+    /** Items whose reading is hidden behind a button (known words, when the learner chose so). */
+    val readingHiddenFor: Set<String> = emptySet(),
 ) {
     fun gloss(g: Gloss) = g.forLanguage(explain)
+    fun readingHidden(itemId: String?) = itemId != null && itemId in readingHiddenFor
 }
 
 @Composable
@@ -124,11 +127,13 @@ private fun FlashcardView(e: Exercise.Flashcard, ctx: ExerciseContext, answered:
         // Already loaded by the lesson that contains the card.
         ?: com.polyglot.academy.core.wordlist.WordLists.of(ctx.language).byId[e.vocabularyId]?.toVocabularyItem() ?: return
     var revealed by remember(e.id) { mutableStateOf(false) }
+    var readingShown by remember(e.id) { mutableStateOf(!ctx.readingHidden(e.vocabularyId)) }
     val term = if (ctx.traditional) v.traditional ?: v.term else v.term
     PolyCard(Modifier.heightIn(min = 220.dp)) {
         Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(10.dp)) {
-            LearningText(term, ctx.language, reading = if (ctx.showReading) v.pronunciation ?: v.transliteration else null, textAlign = TextAlign.Center,
+            LearningText(term, ctx.language, reading = if (ctx.showReading && readingShown) v.pronunciation ?: v.transliteration else null, textAlign = TextAlign.Center,
                 style = if (ctx.language == LanguageCode.MANDARIN) PolyglotTheme.learning.hanzi else PolyglotTheme.learning.term)
+            if (ctx.showReading && !readingShown) QuietButton(s[K.SHOW_READING], { readingShown = true })
             AudioButton(s[K.PLAY_AUDIO], { ctx.speaker.toggle(v.term, ctx.language) }, playing = ctx.speaker.playingText == v.term)
             if (revealed) {
                 Text(ctx.gloss(v.meaning), style = MaterialTheme.typography.titleLarge, textAlign = TextAlign.Center)

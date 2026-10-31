@@ -60,6 +60,8 @@ interface ReviewRepository {
     suspend fun state(itemId: String): ReviewState?
     suspend fun save(state: ReviewState, log: ReviewLog?)
     suspend fun reviewCount(language: LanguageCode): Int
+    /** Removes the item from the reviews; its review log stays, so past statistics do not change. */
+    suspend fun remove(itemId: String)
 }
 
 interface VocabularyRepository {

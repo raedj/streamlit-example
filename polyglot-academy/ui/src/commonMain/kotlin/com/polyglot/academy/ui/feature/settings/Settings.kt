@@ -187,6 +187,9 @@ private fun LanguagesPage() {
             if (lp.has(com.polyglot.academy.core.model.LanguageFeature.TRANSLITERATION)) SwitchRow(s[K.SET_TRANSLIT], e.showTransliteration, { v ->
                 scope.launch { app.services.store.updateProfile { pr -> pr.copy(learningLanguages = pr.learningLanguages.map { if (it.language == e.language) it.copy(showTransliteration = v) else it }) } }
             })
+            if (lp.has(com.polyglot.academy.core.model.LanguageFeature.TRANSLITERATION) && e.showTransliteration) SwitchRow(s[K.SET_TRANSLIT_KNOWN], e.hideReadingWhenKnown, { v ->
+                scope.launch { app.services.store.updateProfile { pr -> pr.copy(learningLanguages = pr.learningLanguages.map { if (it.language == e.language) it.copy(hideReadingWhenKnown = v) else it }) } }
+            }, subtitle = s[K.SET_TRANSLIT_KNOWN_SUB])
             if (lp.has(com.polyglot.academy.core.model.LanguageFeature.SIMPLIFIED_TRADITIONAL)) SwitchRow(s[K.SET_TRADITIONAL], e.useTraditionalCharacters, { v ->
                 scope.launch { app.services.store.updateProfile { pr -> pr.copy(learningLanguages = pr.learningLanguages.map { if (it.language == e.language) it.copy(useTraditionalCharacters = v) else it }) } }
             })
@@ -212,6 +215,7 @@ private fun LearningPage() {
     SectionHeader(s[K.TUTOR_CORRECTION_LEVEL])
     CorrectionIntensity.entries.forEach { ci -> ChoiceCard(Labels.correction(s, ci), p.correctionIntensity == ci, onClick = { up { it.copy(correctionIntensity = ci) } }, subtitle = Labels.correctionDesc(s, ci)) }
     PolyCard(contentPadding = 0.dp) { SwitchRow(s[K.SET_RELAX_IN_PLAN], p.includeRelaxation, { v -> up { it.copy(includeRelaxation = v) } }) }
+    PolyCard(contentPadding = 0.dp) { SwitchRow(s[K.SET_SHOW_POINTS], p.showPointsAndStreak, { v -> up { it.copy(showPointsAndStreak = v) } }, subtitle = s[K.SET_SHOW_POINTS_SUB]) }
 }
 
 @Composable
@@ -509,6 +513,24 @@ private fun DataPage() {
             toast(where?.let { s.f(K.SET_EXPORT_SAVED_TO, it) } ?: s.f(K.SET_EXPORT_DONE, "${json.length / 1024 + 1} KB"))
         }
     }, Modifier.fillMaxWidth())
+    // Reports of content errors stay here until the learner exports them for the reviewers.
+    val reports = app.settings.contentReports
+    SectionHeader(s[K.SET_REPORTS])
+    Text(if (reports.isEmpty()) s[K.SET_REPORTS_NONE] else s.plural(K.SET_REPORTS_COUNT, reports.size), style = MaterialTheme.typography.bodySmall, color = PolyglotTheme.colors.textSecondary)
+    reports.take(5).forEach { r ->
+        Text("• ${com.polyglot.academy.ui.feature.common.issueLabel(s, r.issue)} · ${r.itemText}" + (if (r.note.isNotBlank()) " — ${r.note}" else ""),
+            style = MaterialTheme.typography.bodySmall)
+    }
+    if (reports.isNotEmpty()) {
+        SecondaryButton(s[K.SET_REPORTS_EXPORT], {
+            scope.launch {
+                val tsv = app.services.contentReports.exportTsv()
+                val where = app.platformUi.saveExport("polyglot-content-reports.tsv", tsv)
+                toast(where?.let { s.f(K.SET_EXPORT_SAVED_TO, it) } ?: s.f(K.SET_EXPORT_DONE, "${tsv.length / 1024 + 1} KB"))
+            }
+        }, Modifier.fillMaxWidth())
+        SecondaryButton(s[K.SET_REPORTS_DELETE], { confirm = K.SET_REPORTS_DELETE }, Modifier.fillMaxWidth())
+    }
     SectionHeader(s[K.SET_RESTORE])
     Text(s[K.SET_RESTORE_SUB], style = MaterialTheme.typography.bodySmall, color = PolyglotTheme.colors.textSecondary)
     SecondaryButton(s[K.SET_RESTORE], { confirm = K.SET_RESTORE }, Modifier.fillMaxWidth(), enabled = app.platformUi.canPickFiles)
@@ -517,6 +539,10 @@ private fun DataPage() {
     SecondaryButton(s[K.SET_DELETE_CONV], { confirm = K.SET_DELETE_CONV }, Modifier.fillMaxWidth())
     SecondaryButton(s[K.SET_DELETE_MATERIALS], { confirm = K.SET_DELETE_MATERIALS }, Modifier.fillMaxWidth())
     SecondaryButton(s[K.SET_DELETE_ALL], { confirm = K.SET_DELETE_ALL }, Modifier.fillMaxWidth())
+    if (confirm == K.SET_REPORTS_DELETE) {
+        ConfirmDialog(s[K.SET_REPORTS_DELETE], s[K.SET_REPORTS_DELETE_BODY], s[K.DELETE], s[K.CANCEL], destructive = true,
+            onConfirm = { confirm = null; scope.launch { app.services.contentReports.clear() } }, onDismiss = { confirm = null })
+    }
     if (confirm == K.SET_RESTORE) {
         ConfirmDialog(s[K.SET_RESTORE], s[K.SET_RESTORE_BODY], s[K.SET_RESTORE_CONFIRM], s[K.CANCEL], destructive = true,
             onConfirm = {

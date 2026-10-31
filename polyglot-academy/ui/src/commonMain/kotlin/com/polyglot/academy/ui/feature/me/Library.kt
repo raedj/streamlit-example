@@ -354,7 +354,10 @@ fun MaterialScreen(materialId: String) {
                 SectionHeader(s[K.MATERIAL_TEXT_REVIEW])
                 Text(s[K.MATERIAL_TEXT_EDIT_NOTE], style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
                 AppTextField(editText, { editText = it }, s[K.MATERIAL_TEXT_LABEL], singleLine = false, minLines = 6,
-                    textStyle = MaterialTheme.typography.bodyLarge.copy(localeList = com.polyglot.academy.ui.designsystem.localeFor(com.polyglot.academy.core.model.Languages.of(material.language).defaultVariant.localeTag)))
+                    textStyle = MaterialTheme.typography.bodyLarge.copy(
+                        localeList = com.polyglot.academy.ui.designsystem.localeFor(com.polyglot.academy.core.model.Languages.of(material.language).defaultVariant.localeTag),
+                        // The text keeps its own direction (Chinese or French in the Arabic interface, Arabic in the English one).
+                        textDirection = androidx.compose.ui.text.style.TextDirection.Content))
                 Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                     if (editText != material.extractedText) SecondaryButton(s[K.SAVE], { scope.launch { app.services.materials.updateExtractedText(material, editText) } }, Modifier.weight(1f))
                     SecondaryButton(s[K.MATERIAL_READ], { speaker.toggle(editText.take(1500), material.language) }, Modifier.weight(1f))

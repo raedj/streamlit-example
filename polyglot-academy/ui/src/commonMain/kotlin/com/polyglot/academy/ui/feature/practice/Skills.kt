@@ -336,8 +336,13 @@ fun TonesScreen() {
     var total by remember { mutableIntStateOf(0) }
     var traditional by remember { mutableStateOf(app.profile.enrollment(LanguageCode.MANDARIN)?.useTraditionalCharacters == true) }
     val practice = remember { app.services.study.practice(LanguageCode.MANDARIN, SessionKind.LISTENING, "tones") }
+    var mode by remember { mutableStateOf(ToneMode.TONES) }
     ScrollScreen(s[K.TONES_TITLE]) {
         if (app.profile.activeLearningLanguage != LanguageCode.MANDARIN) Banner(BannerKind.INFO, s[K.TONES_NOT_MANDARIN])
+        ChipGroup(ToneMode.entries, setOf(mode), {
+            when (it) { ToneMode.TONES -> s[K.TONES_MODE_TONES]; ToneMode.SANDHI -> s[K.TONES_MODE_SANDHI]; ToneMode.NEUTRAL -> s[K.TONES_MODE_NEUTRAL]; ToneMode.PAIRS -> s[K.TONES_MODE_PAIRS] }
+        }, { mode = it })
+        if (mode != ToneMode.TONES) { ToneDrillSection(mode, speaker); return@ScrollScreen }
         Text(s[K.TONES_BODY], style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
         Banner(BannerKind.INFO, s[K.TONES_SANDHI])
         if (total > 0) Text(s.f(K.TONES_SCORE, correct, total), style = MaterialTheme.typography.titleSmall)

@@ -88,10 +88,14 @@ class FakePlatform : PlatformServices {
     override fun network() = net
     override fun deviceInfo() = DeviceInfo(6000, 10000, 34, 8, true, false, 90, false, false, true, "test")
     override val extractionSupport = mapOf(MaterialType.PDF to ExtractionSupport.NOT_IMPLEMENTED)
-    /** Stands in for Tesseract: Arabic only, returns a fixed line for any non-empty image. */
+    /** Stands in for Tesseract: Arabic and Mandarin, a fixed line for any non-empty image (Mandarin in the chosen script). */
     override val deviceOcr = object : com.polyglot.academy.core.service.DeviceOcr {
-        override val languages = setOf(LanguageCode.ARABIC)
-        override suspend fun recognize(page: com.polyglot.academy.core.service.OcrPage, language: LanguageCode) = if (page.bytes.isEmpty()) "" else "محطة القطار"
+        override val languages = setOf(LanguageCode.ARABIC, LanguageCode.MANDARIN)
+        override suspend fun recognize(page: com.polyglot.academy.core.service.OcrPage, language: LanguageCode, traditionalChinese: Boolean) = when {
+            page.bytes.isEmpty() -> ""
+            language == LanguageCode.MANDARIN -> if (traditionalChinese) "學習中文" else "学习中文"
+            else -> "محطة القطار"
+        }
     }
     var reminder: Triple<Boolean, Int, Int>? = null
     override suspend fun scheduleReminder(enabled: Boolean, hour: Int, minute: Int, days: Set<Int>): Boolean { reminder = Triple(enabled, hour, minute); return true }
@@ -725,6 +729,60 @@ class ServicesIntegrationTest {
         assertTrue(openai.requests.isEmpty())
         val (_, none) = app.materials.recognizeText(done.material, listOf(com.polyglot.academy.core.service.OcrPage("image/jpeg", ByteArray(0))), onDevice = true)
         assertEquals(com.polyglot.academy.core.service.OcrResult.NoText, none)
+    }
+
+    @Test fun chinesePhotosAreReadInTheChosenScript() = runBlocking<Unit> {
+        val photo = byteArrayOf(9, 9)
+        suspend fun read(traditional: Boolean): String? {
+            val done = app.materials.import(LanguageCode.MANDARIN, ImportInput("Sign", "image/jpeg", "sign.jpg", 2, null, photo), false).toList().last() as ImportProgress.Done
+            return app.materials.recognizeText(done.material, listOf(com.polyglot.academy.core.service.OcrPage("image/jpeg", photo)), onDevice = true, traditionalChinese = traditional).first.extractedText
+        }
+        assertEquals("学习中文", read(false))
+        assertEquals("學習中文", read(true))
+    }
+
+    @Test fun reviewItemsCanBePostponedOrRemovedByTheLearner() = runBlocking<Unit> {
+        app.reviews.addToReview(LanguageCode.FRENCH, "fr_test_item")
+        assertEquals(1, app.reviews.dueCount(LanguageCode.FRENCH))
+        val moved = app.reviews.postpone("fr_test_item", 1)!!
+        assertEquals(0, app.reviews.dueCount(LanguageCode.FRENCH))
+        // Postponing is not a review: nothing is logged and the schedule itself is unchanged.
+        assertEquals(0, app.reviews.let { store.reviewCount(LanguageCode.FRENCH) })
+        assertEquals(0, moved.totalReviews)
+        clock.advanceDays(1.01)
+        assertEquals(1, app.reviews.dueCount(LanguageCode.FRENCH))
+        app.reviews.remove("fr_test_item")
+        assertEquals(0, app.reviews.dueCount(LanguageCode.FRENCH))
+        assertEquals(null, store.state("fr_test_item"))
+        assertEquals(null, app.reviews.postpone("fr_test_item", 1))
+    }
+
+    @Test fun contentReportsStayOnTheDeviceAndExportAsATable() = runBlocking<Unit> {
+        val r = app.contentReports.report(LanguageCode.FRENCH, "fr_w_gare", "la gare — station", com.polyglot.academy.core.model.ContentIssue.TRANSLATION, "  also\ttrain\nstation  ")
+        app.contentReports.report(LanguageCode.MANDARIN, "zh_l_intro/q3", "我是学生", com.polyglot.academy.core.model.ContentIssue.AMBIGUOUS_ANSWER, "")
+        assertEquals(2, app.contentReports.all().size)
+        assertEquals("also\ttrain\nstation", r.note)
+        val tsv = app.contentReports.exportTsv().lines().filter { it.isNotBlank() }
+        assertEquals("created_at_millis\tlanguage\titem_id\titem_text\tissue\tnote", tsv[0])
+        assertEquals(3, tsv.size)
+        // Tabs and line breaks inside a note cannot break the table.
+        assertTrue(tsv.drop(1).all { it.split('\t').size == 6 })
+        assertTrue(tsv.any { it.contains("fr\tfr_w_gare\tla gare — station\tTRANSLATION\talso train station") })
+        app.contentReports.delete(r.id)
+        assertEquals(listOf("zh_l_intro/q3"), app.contentReports.all().map { it.itemId })
+        app.contentReports.clear()
+        assertTrue(app.contentReports.all().isEmpty())
+        // Nothing was sent anywhere.
+        assertTrue(openai.requests.isEmpty())
+    }
+
+    @Test fun onlyWellKnownWordsCountAsKnownForHidingTheReading() = runBlocking<Unit> {
+        fun st(id: String, phase: com.polyglot.academy.core.model.ReviewPhase, days: Double) =
+            com.polyglot.academy.core.model.ReviewState(id, LanguageCode.MANDARIN, phase, intervalDays = days, dueAtMillis = clock.nowMillis() + 1)
+        store.save(st("zh_known", com.polyglot.academy.core.model.ReviewPhase.REVIEW, 9.0), null)
+        store.save(st("zh_recent", com.polyglot.academy.core.model.ReviewPhase.REVIEW, 3.0), null)
+        store.save(st("zh_learning", com.polyglot.academy.core.model.ReviewPhase.LEARNING, 10.0), null)
+        assertEquals(setOf("zh_known"), app.reviews.knownIds(LanguageCode.MANDARIN))
     }
 
     @Test fun freePracticeCountsTowardStudyTimeOnlyOnceAnswered() = runBlocking<Unit> {

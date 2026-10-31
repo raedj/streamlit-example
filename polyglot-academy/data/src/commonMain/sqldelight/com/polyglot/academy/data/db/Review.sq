@@ -35,6 +35,9 @@ SELECT * FROM review_state WHERE item_id = ?;
 statesForLanguage:
 SELECT * FROM review_state WHERE language = ?;
 
+deleteState:
+DELETE FROM review_state WHERE item_id = ?;
+
 insertLog:
 INSERT INTO review_log(item_id, language, reviewed_at, rating, previous_interval, new_interval, response_ms) VALUES (?, ?, ?, ?, ?, ?, ?);
 

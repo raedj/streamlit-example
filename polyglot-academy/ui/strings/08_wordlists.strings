@@ -94,3 +94,5 @@ WORD_STROKES ¦ Stroke order ¦ ترتيب الضربات
 WORD_STROKES_REPLAY ¦ Play again ¦ أعد العرض
 WORD_STROKES_DESC ¦ Stroke order of {0}, {1} strokes ¦ ترتيب ضربات {0}، عدد الضربات {1}
 WORD_STROKES_SOURCE ¦ Stroke data: Make Me a Hanzi, Arphic Public License. ¦ بيانات الضربات: مشروع Make Me a Hanzi، رخصة Arphic العامة.
+WORD_REVIEWED ¦ Checked by a qualified speaker on {0}. ¦ راجعها متحدّث مؤهّل في {0}.
+WORD_NEEDS_FIX ¦ A reviewer marked this entry for correction; it may contain a mistake. ¦ علّم مراجعٌ هذا المدخل للتصحيح، فقد يحتوي خطأً.

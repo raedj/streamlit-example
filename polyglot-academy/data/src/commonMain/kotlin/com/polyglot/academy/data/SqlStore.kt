@@ -238,6 +238,8 @@ class SqlStore(
 
     override suspend fun reviewCount(language: LanguageCode): Int = withContext(io) { rq.logCount(language.name).executeAsOne().toInt() }
 
+    override suspend fun remove(itemId: String) = withContext(io) { rq.deleteState(itemId); Unit }
+
     // ---------------- Vocabulary ----------------
     override fun userVocabulary(language: LanguageCode): Flow<List<VocabularyItem>> =
         lq.vocabularyForLanguage(language.name).asFlow().mapToList(io).map { l -> l.mapNotNull { runCatching { storeJson.decodeFromString(VocabularyItem.serializer(), it.item_json) }.getOrNull() } }

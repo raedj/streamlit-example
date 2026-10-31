@@ -27,8 +27,11 @@ sealed interface OcrResult {
 interface DeviceOcr {
     /** Languages whose recognition data is bundled with the app. */
     val languages: Set<LanguageCode>
-    /** The text of one page, or an empty string when none was found. */
-    suspend fun recognize(page: OcrPage, language: LanguageCode): String
+    /**
+     * The text of one page, or an empty string when none was found. For Mandarin, [traditionalChinese]
+     * picks the model for the script on the page: each model also turns the other script into its own.
+     */
+    suspend fun recognize(page: OcrPage, language: LanguageCode, traditionalChinese: Boolean = false): String
 }
 
 /**
@@ -42,14 +45,14 @@ class OcrService(private val providers: ProviderService, private val device: Dev
     fun canReadOnDevice(language: LanguageCode): Boolean = device != null && language in device.languages
 
     /** Reads [pages] on the device. Same result shape as [recognize]; there is no provider error to report. */
-    suspend fun recognizeOnDevice(pages: List<OcrPage>, language: LanguageCode, onPage: (Int, Int) -> Unit = { _, _ -> }): OcrResult {
+    suspend fun recognizeOnDevice(pages: List<OcrPage>, language: LanguageCode, traditionalChinese: Boolean = false, onPage: (Int, Int) -> Unit = { _, _ -> }): OcrResult {
         val ocr = device?.takeIf { language in it.languages } ?: return OcrResult.Failed(AiError.NoProviderAvailable("no on-device recognition for $language"))
         val selected = pages.take(MAX_PAGES)
         val texts = mutableListOf<String>()
         var empty = 0
         selected.forEachIndexed { i, page ->
             onPage(i + 1, selected.size)
-            val t = ocr.recognize(page, language).trim()
+            val t = ocr.recognize(page, language, traditionalChinese).trim()
             if (t.isEmpty()) empty++ else texts += t
         }
         return if (texts.isEmpty()) OcrResult.NoText else OcrResult.Text(texts.joinToString("\n\n"), selected.size, empty)

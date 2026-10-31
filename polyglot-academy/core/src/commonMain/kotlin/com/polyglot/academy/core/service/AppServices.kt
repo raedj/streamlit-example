@@ -80,6 +80,7 @@ class AppServices(
     val coach = CoachService(store, store, store, store, clock, ids)
     val gamification = GamificationService(store, store, store, clock)
     val stories = StoryService(store, store, store, reviews, providers, clock, ids)
+    val contentReports = ContentReportService(store, clock, ids)
     val realtime = RealtimeService(store, store, platform.secrets, platform::network, { platform.audioCapture }, { platform.audioOutput },
         realtimeTransport ?: com.polyglot.academy.core.realtime.KtorRealtimeTransport(httpClient), providers, coach, clock, ids)
     val sync = SyncService(store, platform.secrets, clock, syncRemoteFactory ?: { url, user, pass ->

@@ -24,6 +24,7 @@ import com.polyglot.academy.ui.designsystem.PolyCard
 import com.polyglot.academy.ui.designsystem.PolyglotTheme
 import com.polyglot.academy.ui.designsystem.PrimaryButton
 import com.polyglot.academy.ui.designsystem.SecondaryButton
+import com.polyglot.academy.ui.designsystem.SwitchRow
 import com.polyglot.academy.ui.i18n.K
 import com.polyglot.academy.ui.i18n.Labels
 import com.polyglot.academy.ui.i18n.LocalStrings
@@ -57,20 +58,25 @@ internal fun OcrCard(material: ImportedMaterial) {
     val pending = PendingOcrFiles.get(material.id)
     var confirm by remember { mutableStateOf(false) }
     var progress by remember { mutableStateOf<String?>(null) }
+    // Which card started the reading, so only that card shows its progress.
+    var readingOnDevice by remember { mutableStateOf<Boolean?>(null) }
+    // Chinese photos: read with the model for the script on the page (the learner's script by default).
+    var traditional by remember { mutableStateOf(app.profile.enrollment(material.language)?.useTraditionalCharacters == true) }
 
     fun read(onDevice: Boolean) {
         val (mime, bytes) = pending ?: return
         scope.launch {
+            readingOnDevice = onDevice
             progress = s[K.MATERIAL_OCR_PREPARING]
             val pages = if (material.type == MaterialType.PDF) app.services.platform.renderPdfPages(bytes, OcrService.MAX_PAGES)
                 else listOf(OcrPage(mime, bytes))
             if (pages.isNullOrEmpty()) {
-                progress = null
+                progress = null; readingOnDevice = null
                 toast(s[K.MATERIAL_OCR_NO_RENDER])
                 return@launch
             }
-            val (_, result) = app.services.materials.recognizeText(material, pages, onDevice) { i, n -> progress = s.f(K.MATERIAL_OCR_PROGRESS, i, n) }
-            progress = null
+            val (_, result) = app.services.materials.recognizeText(material, pages, onDevice, traditional && onDevice) { i, n -> progress = s.f(K.MATERIAL_OCR_PROGRESS, i, n) }
+            progress = null; readingOnDevice = null
             toast(when (result) {
                 is OcrResult.Text -> { PendingOcrFiles.remove(material.id); s.f(K.MATERIAL_OCR_DONE, result.pagesRead - result.pagesWithoutText, result.pagesRead) }
                 OcrResult.NoText -> s[K.MATERIAL_OCR_NO_TEXT]
@@ -88,10 +94,13 @@ internal fun OcrCard(material: ImportedMaterial) {
     if (app.services.materials.canReadOnDevice(material)) PolyCard {
         Text(s[K.MATERIAL_OCR_DEVICE_TITLE], style = MaterialTheme.typography.titleSmall)
         Text(s.f(K.MATERIAL_OCR_DEVICE_BODY, Labels.language(s, material.language)), style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
+        if (material.language == com.polyglot.academy.core.model.LanguageCode.MANDARIN) {
+            SwitchRow(s[K.MATERIAL_OCR_TRADITIONAL], traditional, { traditional = it }, subtitle = s[K.MATERIAL_OCR_TRADITIONAL_SUB])
+        }
         when {
             pending == null -> Text(s[K.MATERIAL_OCR_REIMPORT], style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
-            progress != null -> Text(progress!!, style = MaterialTheme.typography.bodyMedium)
-            else -> PrimaryButton(s[K.MATERIAL_OCR_DEVICE_START], { read(onDevice = true) }, Modifier.fillMaxWidth())
+            progress != null && readingOnDevice == true -> Text(progress!!, style = MaterialTheme.typography.bodyMedium)
+            else -> PrimaryButton(s[K.MATERIAL_OCR_DEVICE_START], { read(onDevice = true) }, Modifier.fillMaxWidth(), enabled = progress == null)
         }
     }
     PolyCard {
@@ -99,8 +108,8 @@ internal fun OcrCard(material: ImportedMaterial) {
         Text(s[K.MATERIAL_OCR_BODY], style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
         when {
             pending == null -> Text(s[K.MATERIAL_OCR_REIMPORT], style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
-            progress != null -> Text(progress!!, style = MaterialTheme.typography.bodyMedium)
-            else -> SecondaryButton(s[K.MATERIAL_OCR_START], { confirm = true }, Modifier.fillMaxWidth())
+            progress != null && readingOnDevice == false -> Text(progress!!, style = MaterialTheme.typography.bodyMedium)
+            else -> SecondaryButton(s[K.MATERIAL_OCR_START], { confirm = true }, Modifier.fillMaxWidth(), enabled = progress == null)
         }
     }
     if (confirm && pending != null) ConfirmDialog(s[K.MATERIAL_OCR_CONFIRM_TITLE], s[K.MATERIAL_OCR_CONFIRM_BODY], s[K.MATERIAL_OCR_START], s[K.CANCEL],

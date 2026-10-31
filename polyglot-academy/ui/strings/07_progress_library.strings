@@ -179,3 +179,5 @@ MATERIAL_OCR_DEVICE_START ¦ Read on this device ¦ اقرأ على هذا ال�
 MATERIAL_OCR_DEVICE_CHECK ¦ This text was recognised on this device and may contain mistakes. Check it before studying. ¦ تُعرّف على هذا النص على هذا الجهاز وقد يحتوي أخطاء، فراجعه قبل الدراسة.
 SUPPORT_DEVICE_OCR ¦ On this device, or with AI ¦ على هذا الجهاز، أو بالذكاء الاصطناعي
 MATERIAL_NEEDS_OCR_DEVICE ¦ This is an image. Its text can be read on this device, or with an AI provider on your request. ¦ هذه صورة. يمكن قراءة نصها على هذا الجهاز، أو بمزوّد ذكاء اصطناعي بناءً على طلبك.
+MATERIAL_OCR_TRADITIONAL ¦ The text is in traditional characters ¦ النص بالحروف التقليدية
+MATERIAL_OCR_TRADITIONAL_SUB ¦ Each Chinese model writes what it reads in its own script, so pick the script on the page. ¦ كلّ نموذج صيني يكتب ما يقرؤه بشكله هو، فاختر الشكل المكتوب في الصورة.
