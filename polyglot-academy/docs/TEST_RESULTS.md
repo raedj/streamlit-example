@@ -244,6 +244,17 @@ interface language and the texts come from a context in that language: "هل ل�
 came out as "١٠ كلمات جاهزة للمراجعة." (Arabic-Indic digits, unlike the rest of the app); the count
 is now passed as text, giving "10 كلمات جاهزة للمراجعة." The alarm stayed scheduled after an app update.
 
+**Gradle 9 / AGP 9 (2026-10-31).** Tried first in a copy. Kotlin 2.4.21, CMP 1.12.2 and Gradle 9.8.2
+built the desktop side and passed all tests at once. AGP 9.5.0 with the transition flags
+(`android.builtInKotlin=false`, `android.newDsl=false`) failed in `checkReleaseAarMetadata`: the
+Compose 1.12 AndroidX libraries need compileSdk 37 (installed already); with compileSdk 37 both APKs
+built and the app ran. Then the full migration: shared modules on
+`com.android.kotlin.multiplatform.library`, the app on built-in Kotlin, flags removed. The Groovy
+helper script could not import `JvmTarget` (its class loader does not see the Kotlin plugin), so the
+enum is loaded through the Kotlin extension's class loader. Result: build and 265 tests pass, debug
+APK 39.0 MB, release 17.6 MB unsigned. On the emulator: home, the Urdu level 1 page with Nastaliq
+text, and on-device OCR of the Arabic test image (same text as before).
+
 | Module | Test class | Tests | Failures |
 |---|---|---|---|
 | core | AdapterTest (OpenAI, Azure, Gemini, Anthropic, DeepSeek, local; image parts per vendor; error classification; timeouts; no key leakage; Mistral, Groq, xAI, OpenRouter, Qwen and custom OpenAI-compatible endpoints; GPT-5/o-series parameters; model lists from OpenAI-compatible, Anthropic and Gemini) | 14 | 0 |

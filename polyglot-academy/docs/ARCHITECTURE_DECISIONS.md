@@ -19,6 +19,13 @@ requires it; `kotlinx.datetime.Instant` moved to `kotlin.time.Instant`), keeping
 (Kotlin 2.4, CMP 1.12, AGP 9) need Gradle 9 and a new Android plugin setup and were left for a
 separate step. One visible change after the upgrade: the selected bottom-bar label took a new
 default colour, now set explicitly.
+**Update 2026-10-31:** second step to Gradle 9.8.2, Kotlin 2.4.21, CMP 1.12.2, AGP 9.5.0,
+coroutines 1.11.0 and serialization 1.12.0. The shared modules moved from `com.android.library` +
+`androidTarget()` to `com.android.kotlin.multiplatform.library` (configured in
+`gradle/android-library.gradle` under `kotlin { android { } }`), and the app uses AGP's built-in
+Kotlin instead of the Kotlin Android plugin; no transition flags are left. compileSdk is 37 because
+the Compose 1.12 AndroidX libraries require it; targetSdk stays 35, so runtime behaviour on newer
+Android versions is unchanged.
 
 ## ADR-003 SQLDelight instead of Room
 **Decision:** SQLDelight 2.0.2 (Maven Central, multiplatform) with explicit `.sqm` migrations

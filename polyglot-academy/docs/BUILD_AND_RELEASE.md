@@ -2,8 +2,8 @@
 
 ## Identity
 - Application id: `com.polyglot.academy` · versionCode 1 · versionName 0.1.0
-- minSdk 26 · targetSdk 35 · compileSdk 35 · JVM target 17
-- Toolchain: Gradle 8.14.3 (wrapper), Kotlin 2.1.21, Compose Multiplatform 1.7.3, AGP 8.7.3 (declared, unverified)
+- minSdk 26 · targetSdk 35 · compileSdk 37 · JVM target 17
+- Toolchain: Gradle 9.8.2 (wrapper), Kotlin 2.4.21, Compose Multiplatform 1.12.2, AGP 9.5.0 (verified 2026-10-31: build, tests, debug and release APKs)
 
 ## Prerequisites
 - JDK 17+ (21 used here)

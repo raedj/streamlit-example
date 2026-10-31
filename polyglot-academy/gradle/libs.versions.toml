@@ -1,17 +1,16 @@
 [versions]
-# Upgraded 2026-10-30 from Kotlin 2.1.21 / CMP 1.7.3 / AGP 8.7.3 once Google Maven was reachable
-# (see docs/ARCHITECTURE_DECISIONS.md, ADR-002). Kotlin 2.4 / CMP 1.12 / AGP 9 exist but need Gradle 9
-# and a migration of the Android plugin setup; that is a separate step.
-kotlin = "2.2.21"
-compose-multiplatform = "1.9.3"
-coroutines = "1.10.2"
-serialization = "1.9.0"
+# Kotlin 2.4 / CMP 1.12 / AGP 9.5 on Gradle 9.8 since 2026-10-31 (see docs/ARCHITECTURE_DECISIONS.md, ADR-002).
+# The shared modules use com.android.kotlin.multiplatform.library; the app uses AGP's built-in Kotlin.
+kotlin = "2.4.21"
+compose-multiplatform = "1.12.2"
+coroutines = "1.11.0"
+serialization = "1.12.0"
 datetime = "0.7.1"
 ktor = "3.0.3"
 sqldelight = "2.0.2"
 junit = "4.13.2"
 # Android-only (requires Google Maven)
-agp = "8.13.2"
+agp = "9.5.0"
 androidx-activity = "1.9.3"
 androidx-core = "1.15.0"
 androidx-work = "2.10.0"

@@ -1,16 +1,16 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 // Android application. Built only with -Ppolyglot.android=true (needs Google Maven + Android SDK).
-// NOT compiled in the environment where this project was authored; see docs/BLOCKERS_REGISTER.md.
+// Kotlin is compiled by AGP 9's built-in Kotlin support, so the Kotlin Android plugin is not applied.
 plugins {
     id("com.android.application")
-    id("org.jetbrains.kotlin.android")
     alias(libs.plugins.compose.compiler)
 }
 
 android {
     namespace = "com.polyglot.academy.android"
-    compileSdk = 35
+    // Compose 1.12 libraries require compiling against API 37; the app still targets API 35.
+    compileSdk = 37
     defaultConfig {
         applicationId = "com.polyglot.academy"
         minSdk = 26

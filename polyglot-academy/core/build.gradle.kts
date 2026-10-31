@@ -7,7 +7,7 @@ plugins {
 
 val androidEnabled = providers.gradleProperty("polyglot.android").orNull == "true"
 if (androidEnabled) {
-    apply(plugin = "com.android.library")
+    apply(plugin = "com.android.kotlin.multiplatform.library")
     extra["androidNamespace"] = "com.polyglot.academy.core"
     apply(from = rootProject.file("gradle/android-library.gradle"))
 }
@@ -16,7 +16,6 @@ kotlin {
     jvm("desktop") {
         compilerOptions { jvmTarget.set(JvmTarget.JVM_17) }
     }
-    if (androidEnabled) androidTarget { compilerOptions { jvmTarget.set(JvmTarget.JVM_17) } }
 
     sourceSets {
         commonMain.dependencies {
