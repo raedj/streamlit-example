@@ -234,6 +234,16 @@ folder on the emulator, with the same three images. Nastaliq came back unchanged
 Arabic page took 7 s instead of 3 s. It was not adopted: no gain on this sample, 5.7 times the size,
 about twice as slow. The fast model was put back; nothing changed in the app.
 
+**Reminder on the emulator (2026-10-31).** Turning the daily reminder on asked for the notification
+permission and scheduled an inexact daily alarm for 19:00 (`dumpsys alarm`). The alarm was fired from
+a root shell (`am broadcast` to the receiver) and the posted notification read with `dumpsys
+notification`. First result: "Time for a short practice?" in English although the interface was
+Arabic, because Android resources followed the device language. Now the receiver passes the
+interface language and the texts come from a context in that language: "هل لديك وقت لتدريب قصير؟ /
+خمس دقائق من المراجعة تكفي لتستمر." After adding 10 Urdu words to the reviews, the due-count text
+came out as "١٠ كلمات جاهزة للمراجعة." (Arabic-Indic digits, unlike the rest of the app); the count
+is now passed as text, giving "10 كلمات جاهزة للمراجعة." The alarm stayed scheduled after an app update.
+
 | Module | Test class | Tests | Failures |
 |---|---|---|---|
 | core | AdapterTest (OpenAI, Azure, Gemini, Anthropic, DeepSeek, local; image parts per vendor; error classification; timeouts; no key leakage; Mistral, Groq, xAI, OpenRouter, Qwen and custom OpenAI-compatible endpoints; GPT-5/o-series parameters; model lists from OpenAI-compatible, Anthropic and Gemini) | 14 | 0 |

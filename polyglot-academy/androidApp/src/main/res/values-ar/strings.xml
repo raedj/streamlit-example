@@ -10,8 +10,8 @@
         <item quantity="zero">لا توجد كلمات جاهزة للمراجعة.</item>
         <item quantity="one">كلمة واحدة جاهزة للمراجعة.</item>
         <item quantity="two">كلمتان جاهزتان للمراجعة.</item>
-        <item quantity="few">%d كلمات جاهزة للمراجعة.</item>
-        <item quantity="many">%d كلمة جاهزة للمراجعة.</item>
-        <item quantity="other">%d كلمة جاهزة للمراجعة.</item>
+        <item quantity="few">%s كلمات جاهزة للمراجعة.</item>
+        <item quantity="many">%s كلمة جاهزة للمراجعة.</item>
+        <item quantity="other">%s كلمة جاهزة للمراجعة.</item>
     </plurals>
 </resources>

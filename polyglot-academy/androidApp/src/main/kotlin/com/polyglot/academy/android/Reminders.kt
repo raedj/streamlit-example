@@ -48,7 +48,9 @@ object Reminders {
     private fun daysOf(s: String?) = s.orEmpty().split(',').mapNotNull { it.toIntOrNull() }.toSet()
 
     /** Posts today's reminder; [dueReviews] makes the text concrete when words are waiting, otherwise the wording rotates by day. */
-    fun post(context: Context, quietStart: Int, quietEnd: Int, dueReviews: Int = 0) {
+    fun post(base: Context, quietStart: Int, quietEnd: Int, dueReviews: Int = 0, interfaceLanguage: String? = null) {
+        // The texts follow the app's own interface language, not the device language.
+        val context = interfaceLanguage?.let { localized(base, it) } ?: base
         val p = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
         val cal = Calendar.getInstance()
         // Calendar: Sunday=1..Saturday=7 → ISO Monday=1..Sunday=7
@@ -70,8 +72,15 @@ object Reminders {
     }
 }
 
+/** [base] with its resources in [languageTag] (for example "ar"), so notifications match the app's interface. */
+internal fun localized(base: Context, languageTag: String): Context {
+    val config = android.content.res.Configuration(base.resources.configuration)
+    config.setLocale(java.util.Locale.forLanguageTag(languageTag))
+    return base.createConfigurationContext(config)
+}
+
 internal fun body(context: Context, dueReviews: Int, dayOfYear: Int): String =
-    if (dueReviews > 0) context.resources.getQuantityString(R.plurals.reminder_body_due, dueReviews, dueReviews)
+    if (dueReviews > 0) context.resources.getQuantityString(R.plurals.reminder_body_due, dueReviews, dueReviews.toString()) // 0-9 digits, as in the app
     else context.getString(listOf(R.string.reminder_body, R.string.reminder_body_2, R.string.reminder_body_3)[dayOfYear % 3])
 
 class ReminderReceiver : BroadcastReceiver() {
@@ -82,8 +91,9 @@ class ReminderReceiver : BroadcastReceiver() {
             try {
                 val r = app.services.store.currentSettings().reminders
                 if (r.enabled) {
-                    val due = runCatching { app.services.reviews.dueCount(app.services.store.currentProfile().activeLearningLanguage) }.getOrDefault(0)
-                    Reminders.post(context, r.quietHoursStart, r.quietHoursEnd, due)
+                    val profile = app.services.store.currentProfile()
+                    val due = runCatching { app.services.reviews.dueCount(profile.activeLearningLanguage) }.getOrDefault(0)
+                    Reminders.post(context, r.quietHoursStart, r.quietHoursEnd, due, profile.interfaceLanguage.tag)
                 }
             } finally { pending.finish() }
         }
