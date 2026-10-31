@@ -93,6 +93,7 @@ class AndroidPlatformServices(private val context: Context) : PlatformServices {
 
     override val platformName: String get() = "Android ${Build.VERSION.RELEASE}"
     override val canSyncInBackground = true
+    override val hasHomeWidget = true
 
     /** Renders pages with the framework PdfRenderer (needs a seekable file, so a private temp copy is used). */
     override suspend fun renderPdfPages(pdf: ByteArray, maxPages: Int): List<OcrPage>? = withContext(Dispatchers.IO) {

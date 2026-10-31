@@ -232,6 +232,20 @@ class ServicesIntegrationTest {
         assertEquals(lesson.vocabularyIds.size, snap.dueReviews)
     }
 
+    @Test fun widgetShowsRealProgressAndHidesTheWordWhenAsked() = runBlocking<Unit> {
+        enroll()
+        assertNull(app.widget.summary().word, "nothing to review yet")
+        app.study.introduceVocabulary(LanguageCode.ENGLISH, listOf("en_hello"))
+        val shown = app.widget.summary()
+        assertEquals(1, shown.dueReviews)
+        assertEquals("hello", shown.word?.term)
+        assertEquals(app.dashboard.snapshot().minutesToday, shown.minutesToday)
+        store.updateSettings { it.copy(privacy = it.privacy.copy(widgetShowsWord = false)) }
+        val hidden = app.widget.summary()
+        assertNull(hidden.word, "the privacy setting removes the word")
+        assertEquals(1, hidden.dueReviews)
+    }
+
     @Test fun reviewQueueAndRating() = runBlocking<Unit> {
         enroll()
         app.study.introduceVocabulary(LanguageCode.ENGLISH, listOf("en_hello", "en_coffee"))

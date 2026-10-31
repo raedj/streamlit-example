@@ -47,6 +47,12 @@ class MainActivity : ComponentActivity(), PlatformUi {
         setContent { PolyglotApp(app.services, this) }
     }
 
+    /** Leaving the app is when progress has usually changed, so the widget is brought up to date. */
+    override fun onStop() {
+        super.onStop()
+        StudyWidget.refresh(this)
+    }
+
     private suspend fun request(permission: String): Boolean {
         if (ContextCompat.checkSelfPermission(this, permission) == PackageManager.PERMISSION_GRANTED) return true
         val d = CompletableDeferred<Boolean>().also { permissionResult = it }

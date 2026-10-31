@@ -39,6 +39,9 @@ interface PlatformServices {
     /** Renders PDF pages as JPEG images for AI text recognition, or null when the platform has no renderer. */
     suspend fun renderPdfPages(pdf: ByteArray, maxPages: Int): List<OcrPage>? = null
 
+    /** True when the platform has a home-screen widget. */
+    val hasHomeWidget: Boolean get() = false
+
     /** True when the platform can run sync in the background (Android's job scheduler). */
     val canSyncInBackground: Boolean get() = false
 
@@ -68,6 +71,7 @@ class AppServices(
     val reviews = ReviewService(store, store, scheduler, achievements, clock)
     val wordLevels = WordLevelService(store, store, scheduler, clock, ids)
     val dashboard = DashboardService(store, store, store, store, reviews, study, clock)
+    val widget = WidgetService(dashboard, reviews, store)
     val plans = PlanService(store, store, store, reviews, clock)
     val assessments = AssessmentService(store, store, achievements, clock, ids)
     val providers = ProviderService(

@@ -349,7 +349,17 @@ battery-not-low and NOT_METERED; a forced run (`cmd jobscheduler run -f`) sent G
 the server held only the encrypted envelope; the page showed the result; turning the switch off
 removed the job. Found on the way and fixed: the keyboard showed the typed passphrase in its
 suggestion bar (secret fields are now password fields for the keyboard; checked on the emulator). Not
-tested: a run started by the system on its own schedule, a conflict on the device, a real Nextcloud. Build: 291 tests, 0 failures (core 196, data 64, uicore 12, ui 19); release APK builds.
+tested: a run started by the system on its own schedule, a conflict on the device, a real Nextcloud.
+
+**Home-screen widget (2026-11-01).** Text test: the lines in Arabic and English, Arabic plurals for
+the goal and the words due, goal reached, the next lesson when nothing is due, and the invitation to
+start without a learner. Data test: the widget reads real due counts and minutes, and the privacy
+setting removes the word. On the emulator (Launcher3): the widget is listed with its description,
+added with "Add", shows Mandarin progress and the next lesson in Arabic, right-aligned; tapping it
+opens the app; after switching to English and leaving the app it showed "35 words to review" and
+"the · /ðə/" with its meaning; turning the privacy setting off removed the word; dark mode uses the
+dark colours. Found on the way and fixed: an unescaped apostrophe in the widget description broke
+the Android resource build. Not tested: other launchers, resizing, the system's 2-hour refresh. Build: 295 tests, 0 failures (core 196, data 65, uicore 12, ui 22); release APK builds. Build: 291 tests, 0 failures (core 196, data 64, uicore 12, ui 19); release APK builds.
 
 | Module | Test class | Tests | Failures |
 |---|---|---|---|

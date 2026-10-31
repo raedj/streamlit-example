@@ -52,6 +52,8 @@ data class PrivacySettings(
     val localAnalyticsOnly: Boolean = true,
     val includeInBackup: Boolean = false,
     val consentVersionAccepted: Int = 0,
+    /** The home-screen widget may show one word due for review (it is never on the lock screen). */
+    val widgetShowsWord: Boolean = true,
 )
 
 object PrivacyConsent {

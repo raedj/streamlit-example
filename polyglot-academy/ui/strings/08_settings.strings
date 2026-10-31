@@ -233,6 +233,8 @@ SYNC_PASSPHRASE_SAVED ¦ Passphrase saved — enter a new one to replace it ¦ �
 SYNC_PASSPHRASE_HINT ¦ At least 10 characters. Use the same one on every device. If you lose it, the server copy cannot be read by anyone, including us. ¦ 10 أحرف على الأقل. استخدم العبارة نفسها على كل جهاز. إن فقدتها فلن يستطيع أحد قراءة النسخة المخزّنة، ولا نحن.
 SYNC_SAVED ¦ Saved. Secrets are stored encrypted on this device. ¦ تم الحفظ. البيانات السرية مخزّنة مشفّرة على هذا الجهاز.
 SYNC_NOW ¦ Sync now ¦ زامن الآن
+SET_WIDGET_WORD ¦ Show a word to review on the home-screen widget ¦ إظهار كلمة للمراجعة في أداة الشاشة الرئيسية
+SET_WIDGET_WORD_SUB ¦ The widget is for the home screen only, never the lock screen. Turn this off to show only your progress. ¦ الأداة للشاشة الرئيسية فقط، ولا تظهر على شاشة القفل. أوقف هذا الخيار لتُظهر تقدّمك فقط.
 SYNC_AUTO ¦ Sync automatically ¦ مزامنة تلقائية
 SYNC_AUTO_BODY ¦ About every 6 hours, when the device is online and the battery is not low. Off by default. ¦ كل 6 ساعات تقريبًا، حين يكون الجهاز متصلًا والبطارية غير منخفضة. متوقّفة افتراضيًا.
 SYNC_AUTO_SETUP_FIRST ¦ Save the address, password and passphrase first. ¦ احفظ العنوان وكلمة المرور وعبارة المرور أولًا.

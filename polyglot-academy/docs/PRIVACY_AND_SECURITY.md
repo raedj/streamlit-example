@@ -28,6 +28,10 @@ Android's job scheduler runs it about every 6 hours, only with a network (Wi-Fi 
 network unless the learner allows mobile data) and not when the battery is low. It sends the same
 encrypted file as "Sync now", never replaces either copy when both changed, and stops when it is
 turned off or the device is disconnected.
+The optional home-screen widget shows the active language, today's minutes against the goal, the
+number of words due or the next lesson, and one word to review. It is declared for the home screen
+only (never the lock screen), and "Show a word to review on the home-screen widget" in privacy
+settings removes the word. It reads the same local data as the home screen and sends nothing.
 
 **AI-written stories** send only the chosen topic, level and a few known words (LESSON_CONTENT).
 

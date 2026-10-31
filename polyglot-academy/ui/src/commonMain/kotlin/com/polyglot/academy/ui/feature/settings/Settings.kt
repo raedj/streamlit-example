@@ -267,6 +267,7 @@ private fun PrivacyPage() {
         SwitchRow(s[K.SET_LOCAL_NETWORK], p.allowLocalNetworkAi, { v -> update { it.copy(privacy = it.privacy.copy(allowLocalNetworkAi = v)) } }, subtitle = s[K.SET_LOCAL_NETWORK_SUB])
         SwitchRow(s[K.SET_FALLBACK], p.allowCloudFallback, { v -> update { it.copy(privacy = it.privacy.copy(allowCloudFallback = v)) } }, subtitle = s[K.SET_FALLBACK_SUB], enabled = p.cloudAiEnabled)
         SwitchRow(s[K.SET_BACKUP], p.includeInBackup, { v -> update { it.copy(privacy = it.privacy.copy(includeInBackup = v)) } }, subtitle = s[K.SET_BACKUP_SUB])
+        if (app.services.platform.hasHomeWidget) SwitchRow(s[K.SET_WIDGET_WORD], p.widgetShowsWord, { v -> update { it.copy(privacy = it.privacy.copy(widgetShowsWord = v)) } }, subtitle = s[K.SET_WIDGET_WORD_SUB])
     }
     SectionHeader(s[K.SET_CATEGORIES])
     PolyCard(contentPadding = 0.dp) {

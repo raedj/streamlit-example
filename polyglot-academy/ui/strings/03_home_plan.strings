@@ -37,6 +37,12 @@ QUICK_LESSON ¦ Lesson ¦ درس
 QUICK_IMPORT ¦ My material ¦ موادّي
 HOME_REVIEWS_DUE ¦ {0} item due|{0} items due ¦ لا عناصر مستحقة|عنصر واحد مستحق|عنصران مستحقان|{0} عناصر مستحقة|{0} عنصرًا مستحقًا|{0} عنصر مستحق
 HOME_NO_REVIEWS ¦ Nothing to review right now ¦ لا شيء للمراجعة الآن
+WIDGET_TODAY ¦ Today: {1} of {0} min|Today: {1} of {0} min ¦ اليوم: {1} من {0} دقيقة|اليوم: {1} من دقيقة واحدة|اليوم: {1} من دقيقتين|اليوم: {1} من {0} دقائق|اليوم: {1} من {0} دقيقة|اليوم: {1} من {0} دقيقة
+WIDGET_GOAL_DONE ¦ Today's goal is done ¦ اكتمل هدف اليوم
+WIDGET_DUE ¦ {0} word to review|{0} words to review ¦ لا كلمات للمراجعة|كلمة واحدة للمراجعة|كلمتان للمراجعة|{0} كلمات للمراجعة|{0} كلمة للمراجعة|{0} كلمة للمراجعة
+WIDGET_NEXT ¦ Next: {0} ¦ التالي: {0}
+WIDGET_START ¦ Open the app to start your first lesson ¦ افتح التطبيق لتبدأ درسك الأول
+WIDGET_WORD ¦ Word to review ¦ كلمة للمراجعة
 HOME_THIS_WEEK ¦ This week ¦ هذا الأسبوع
 HOME_WEEK_CHART_DESC ¦ Minutes studied on each of the last 7 days: {0} ¦ دقائق الدراسة في كل يوم من الأيام السبعة الأخيرة: {0}
 HOME_STREAK ¦ {0}-day streak|{0}-day streak ¦ سلسلة {0} يوم|سلسلة يوم واحد|سلسلة يومين|سلسلة {0} أيام|سلسلة {0} يومًا|سلسلة {0} يوم
