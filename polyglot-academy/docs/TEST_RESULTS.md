@@ -227,6 +227,13 @@ dropped, so it is used. Each page took about 3-4 s on the emulator. Release APK:
 ABIs uncompressed, 17.5 MB after dropping 32-bit x86 and compressing native libraries (was 6.35 MB
 before Tesseract). Build: 265 tests, 0 failures (core 186, data 57, uicore 12, ui 10).
 
+**Larger Urdu model tried (2026-10-31).** With the owner's approval the Urdu model from
+tessdata_best (commit e12c65a, 8.0 MB, Apache-2.0) was downloaded and swapped into the app's model
+folder on the emulator, with the same three images. Nastaliq came back unchanged
+("تةہاراووست ہوں۔", second line still missing), the Arabic Naskh image about the same, and the
+Arabic page took 7 s instead of 3 s. It was not adopted: no gain on this sample, 5.7 times the size,
+about twice as slow. The fast model was put back; nothing changed in the app.
+
 | Module | Test class | Tests | Failures |
 |---|---|---|---|
 | core | AdapterTest (OpenAI, Azure, Gemini, Anthropic, DeepSeek, local; image parts per vendor; error classification; timeouts; no key leakage; Mistral, Groq, xAI, OpenRouter, Qwen and custom OpenAI-compatible endpoints; GPT-5/o-series parameters; model lists from OpenAI-compatible, Anthropic and Gemini) | 14 | 0 |
