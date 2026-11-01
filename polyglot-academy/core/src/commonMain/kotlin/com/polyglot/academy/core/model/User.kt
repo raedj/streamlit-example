@@ -118,6 +118,8 @@ data class AppSettings(
     val writingPractice: WritingPracticeState = WritingPracticeState(),
     /** Errors the learner reported in built-in content, kept on the device until exported or deleted. */
     val contentReports: List<ContentReport> = emptyList(),
+    /** Where Arabic or Urdu letter writing was left, per language. */
+    val letterPositions: Map<LanguageCode, Int> = emptyMap(),
 )
 
 enum class ContentIssue { TRANSLATION, EXAMPLE, PRONUNCIATION, AMBIGUOUS_ANSWER, LEVEL, OTHER }

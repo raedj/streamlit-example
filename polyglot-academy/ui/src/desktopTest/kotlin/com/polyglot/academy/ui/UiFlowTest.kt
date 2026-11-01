@@ -8,6 +8,8 @@ import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performScrollTo
 import androidx.compose.ui.test.performTextInput
+import androidx.compose.ui.test.performTouchInput
+import androidx.compose.ui.test.swipe
 import androidx.compose.ui.test.v2.runDesktopComposeUiTest
 import com.polyglot.academy.core.model.LanguageCode
 import com.polyglot.academy.core.model.ThemeMode
@@ -228,6 +230,24 @@ class UiFlowTest {
         onNodeWithText("What each level covers").performScrollTo()
         onNodeWithText("No built-in material at this level").performScrollTo()
         onNodeWithText("There is no C1 or C2 course", substring = true).performScrollTo()
+    }
+
+    @Test fun arabicLettersAreWrittenAndCheckedWithTheirDots() = runDesktopComposeUiTest(800, 1700) {
+        val app = TestApp(); app.profile(learn = LanguageCode.ARABIC)
+        setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.PRACTICE), Route.Letters)) }
+        waitForText("Letter 1 of 28")
+        val box = onNode(androidx.compose.ui.test.hasContentDescription("Writing box for", substring = true))
+        // Alif: one stroke from top to bottom.
+        box.performScrollTo().performTouchInput { swipe(androidx.compose.ui.geometry.Offset(width * 0.5f, height * 0.12f), androidx.compose.ui.geometry.Offset(width * 0.5f, height * 0.85f), 300) }
+        onNodeWithText("Check").performScrollTo().performClick()
+        waitForText("Well written", substring = true)
+        // ب written without its dot: the dot is named, not just a low score.
+        onNodeWithText("Next").performScrollTo().performClick()
+        waitForText("Letter 2 of 28")
+        box.performScrollTo().performTouchInput { swipe(androidx.compose.ui.geometry.Offset(width * 0.85f, height * 0.45f), androidx.compose.ui.geometry.Offset(width * 0.15f, height * 0.6f), 300) }
+        onNodeWithText("Check").performScrollTo().performClick()
+        waitForText("This letter has 1 dot under it. You wrote none.", substring = true)
+        assertEquals(1, runBlocking { app.store.currentSettings() }.letterPositions[LanguageCode.ARABIC])
     }
 
     @Test fun cameraPhotoIsTurnedCroppedAndImported() = runDesktopComposeUiTest(800, 1700) {

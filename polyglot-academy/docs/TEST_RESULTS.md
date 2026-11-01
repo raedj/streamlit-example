@@ -374,7 +374,22 @@ results in `tools/feasibility/`): letters drawn in one font and thinned to a one
 scored with the Chinese shape scorer against another font. Correct Arabic letters were accepted as
 good 9/28 times (Chinese 9/14); letters differing only in dots 6/24; letters without their dots
 3/15. Counting dots from separate marks was right for 18/18 letters in two fonts and 14/18 in a font
-that merges dots. Conclusion in docs/WRITING_ARABIC_URDU_FEASIBILITY_AR.md. Build: 295 tests, 0 failures (core 196, data 65, uicore 12, ui 22); release APK builds. Build: 291 tests, 0 failures (core 196, data 64, uicore 12, ui 19); release APK builds.
+that merges dots. Conclusion in docs/WRITING_ARABIC_URDU_FEASIBILITY_AR.md.
+
+**Arabic and Urdu letter writing (2026-11-01).** Built in Naskh after the owner's approval. Tests
+(`LetterWritingTest`): 28 Arabic and 38 Urdu letters; every template written like the model (moved,
+smaller, shaky, dots tapped) is accepted with three seeds; every dotted or signed letter without its
+marks is rejected; every letter written in place of one that differs only in dots is rejected (ب ت ث
+پ ٹ, ج ح خ چ, د ذ ڈ, ر ز ڑ ژ, س ش, ص ض, ط ظ, ع غ, ن ں, ي ی); two dots as a dash, three as a caret
+and the dot of ج under the bowl are accepted; a reversed main stroke is "close" with a direction note;
+of 420 pairs of different bodies 4 are accepted (ف/ص, ی/ک). The first version accepted 112 of 420:
+small letters filled little of the comparison grid, and outlines such as ف and ب overlap; both shapes
+are now scaled to fill the box and the pen's path in writing order is compared too. Templates were
+compared by eye with a Naskh font and the Urdu gol he redrawn. UI test: alif accepted, ب without its
+dot told "This letter has 1 dot under it. You wrote none.", position saved. On the emulator (Urdu, 38
+letters): ت with two tapped dots accepted; with one dot rejected with the reason; drawn left to right
+"close" with the direction note. Build: 305 tests, 0 failures (core 204, data 65, uicore 12, ui 24);
+release APK builds. Build: 295 tests, 0 failures (core 196, data 65, uicore 12, ui 22); release APK builds. Build: 291 tests, 0 failures (core 196, data 64, uicore 12, ui 19); release APK builds.
 
 | Module | Test class | Tests | Failures |
 |---|---|---|---|

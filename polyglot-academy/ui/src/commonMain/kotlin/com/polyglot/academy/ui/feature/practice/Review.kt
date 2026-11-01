@@ -99,6 +99,7 @@ fun PracticeScreen() {
             add(Triple(K.PRACTICE_PRONUNCIATION to K.PRACTICE_PRONUNCIATION_SUB, Icons.Filled.Mic, Route.Pronunciation))
             if (isMandarin) add(Triple(K.PRACTICE_TONES to K.PRACTICE_TONES_SUB, Icons.Filled.MusicNote, Route.Tones))
             if (isMandarin) add(Triple(K.PRACTICE_CHARS to K.PRACTICE_CHARS_SUB, Icons.Filled.Draw, Route.Characters))
+            if (com.polyglot.academy.core.arabic.ArabicLetters.supports(app.profile.activeLearningLanguage)) add(Triple(K.PRACTICE_LETTERS to K.PRACTICE_LETTERS_SUB, Icons.Filled.Draw, Route.Letters))
             add(Triple(K.PRACTICE_VOCAB to K.PRACTICE_VOCAB_SUB, Icons.Filled.AutoStories, Route.Vocabulary))
             add(Triple(K.PRACTICE_RELAX to K.PRACTICE_RELAX_SUB, Icons.Filled.SelfImprovement, Route.Relax))
         }

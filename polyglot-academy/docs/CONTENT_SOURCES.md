@@ -97,6 +97,15 @@ format. `tools/extract_strokes.py` reproduces the file from the original `graphi
 the app is not under the Arphic licence; the data is a separate work aggregated with it. This reading
 of the licence is not legal advice.
 
+## Arabic and Urdu letter templates
+The 41 isolated letters used for letter writing (28 Arabic, 13 more for Urdu) are drawn for this
+app in a simple Naskh hand, as strokes in writing order with their dots or small signs
+(`core/.../arabic/ArabicLetters.kt`). They are original, not traced from a font, so no licence
+applies. They were compared by eye with Arabic Typesetting glyphs on 2026-11-01 (the Urdu gol he
+was redrawn after that comparison). **Not reviewed by a teacher or native writer**; the app says
+so on the screen. Stroke start points and writing order follow common Naskh teaching but need that
+review.
+
 ## On-device text recognition (OCR)
 
 | Item | File | Licence | Source | Use |

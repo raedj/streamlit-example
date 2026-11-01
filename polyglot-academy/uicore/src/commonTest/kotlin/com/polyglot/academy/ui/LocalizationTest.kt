@@ -123,7 +123,7 @@ class LocalizationTest {
             Route.TabRoot(Tab.LEARN), Route.Courses("finance"), Route.Courses(), Route.LessonOverview("en_l_cafe"), Route.LessonPlayer("x", true),
             Route.Review, Route.GrammarTopic("g"), Route.ReadingPassage("p"), Route.Material("m"), Route.Assessment(LanguageCode.FRENCH, true),
             Route.Assessment(), Route.TutorDetail("emma"), Route.Conversation("emma", "s", true), Route.Conversation("emma"),
-            Route.SettingsPage(SettingsSection.PRIVACY), Route.ProviderDetail(com.polyglot.academy.core.ai.ProviderId.GEMINI), Route.History, Route.Characters, Route.SpeakingPath, Route.Phrasebook, Route.Conversation("emma", "mission:b1_story"), Route.WordLevels, Route.WordLevel(3), Route.WordDetail("es_w_de"), Route.WordTest(10), Route.PhotoImport,
+            Route.SettingsPage(SettingsSection.PRIVACY), Route.ProviderDetail(com.polyglot.academy.core.ai.ProviderId.GEMINI), Route.History, Route.Characters, Route.SpeakingPath, Route.Phrasebook, Route.Conversation("emma", "mission:b1_story"), Route.WordLevels, Route.WordLevel(3), Route.WordDetail("es_w_de"), Route.WordTest(10), Route.PhotoImport, Route.Letters,
         )
         routes.forEach { assertEquals(it, Route.decode(Route.encode(it))) }
     }

@@ -52,12 +52,13 @@ build exists only as a test harness; there is no iOS app.
 | PR-27 | Photos for import taken with the system camera app (no camera permission), with crop, rotate and retake | Implemented + tested; on the emulator's virtual camera, not a real one |
 | PR-28 | End-to-end encrypted sync through the learner's own WebDAV server; optional background sync (off by default, unmetered network and battery not low, never settles a conflict on its own) | Implemented + tested; on the emulator with a local test server, not a real Nextcloud |
 | PR-29 | Optional home-screen widget (never on the lock screen): today's progress, next step, a word to review that can be hidden | Implemented + tested; on the emulator's launcher |
+| PR-31 | Writing the isolated Arabic and Urdu letters (Naskh) with separate checks for shape, dots (count and place; a dash for two dots and a caret for three accepted) and direction; demonstration, guide, letter picker, position kept | Implemented + tested; on the emulator. Templates not reviewed by a teacher; letters inside words (initial, medial, final forms) not covered |
 | PR-30 | Content accuracy: report an error in lessons, reviews and word pages; per-item human review record; no second correct answer in single-answer questions | Implemented + tested; no human review has been done yet (the record is empty) |
 
 ## Not covered
 - C1 and C2 courses (PR-26); graded stories above B1.
 - Audio and video transcription (PR-19).
-- Writing practice for Arabic and Urdu letters: feasible with explicit dot and direction checks and handwriting-style templates, not with the Chinese shape scorer alone (see docs/WRITING_ARABIC_URDU_FEASIBILITY_AR.md); waits for a reviewer, a decision on the Urdu style and approval.
+- Arabic and Urdu letters inside words (initial, medial and final forms, joining); Nastaliq letter shapes for Urdu.
 - Interface languages other than Arabic and English (each needs a reviewer).
 - iOS.
 

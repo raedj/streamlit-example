@@ -24,6 +24,8 @@ sealed interface Route {
     data object Pronunciation : Route
     data object Tones : Route
     data object Characters : Route
+    /** Writing the Arabic or Urdu letters. */
+    data object Letters : Route
     data object SpeakingPath : Route
     data object Phrasebook : Route
     data object Relax : Route
@@ -61,7 +63,7 @@ sealed interface Route {
             is GrammarTopic -> "grammarTopic|${r.topicId}"
             Reading -> "reading"
             is ReadingPassage -> "passage|${r.passageId}"
-            Listening -> "listening"; Writing -> "writing"; Pronunciation -> "pronunciation"; Tones -> "tones"; Characters -> "characters"; Relax -> "relax"
+            Listening -> "listening"; Writing -> "writing"; Pronunciation -> "pronunciation"; Tones -> "tones"; Characters -> "characters"; Letters -> "letters"; Relax -> "relax"
             SpeakingPath -> "speaking"; Phrasebook -> "phrasebook"
             Vocabulary -> "vocab"; Library -> "library"; PhotoImport -> "photo"
             is Material -> "material|${r.materialId}"
@@ -92,7 +94,7 @@ sealed interface Route {
                 "grammarTopic" -> GrammarTopic(arg(1))
                 "reading" -> Reading
                 "passage" -> ReadingPassage(arg(1))
-                "listening" -> Listening; "writing" -> Writing; "pronunciation" -> Pronunciation; "tones" -> Tones; "characters" -> Characters; "relax" -> Relax
+                "listening" -> Listening; "writing" -> Writing; "pronunciation" -> Pronunciation; "tones" -> Tones; "characters" -> Characters; "letters" -> Letters; "relax" -> Relax
                 "speaking" -> SpeakingPath; "phrasebook" -> Phrasebook
                 "vocab" -> Vocabulary; "library" -> Library; "photo" -> PhotoImport
                 "material" -> Material(arg(1))

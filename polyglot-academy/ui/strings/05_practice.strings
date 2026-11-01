@@ -55,6 +55,38 @@ PRACTICE_PRONUNCIATION_SUB ¦ Listen and repeat ¦ استمع وكرّر
 PRACTICE_TONES ¦ Tone trainer ¦ مدرّب النغمات
 PRACTICE_CHARS ¦ Character writing ¦ كتابة الحروف الصينية
 PRACTICE_CHARS_SUB ¦ Trace and write Chinese characters ¦ تتبّع الحروف الصينية واكتبها
+PRACTICE_LETTERS ¦ Letter writing ¦ كتابة الحروف
+PRACTICE_LETTERS_SUB ¦ Write each letter, with its dots, in the right direction ¦ اكتب كل حرف بنقاطه وفي اتجاهه الصحيح
+LETTERS_TITLE ¦ Letter writing ¦ كتابة الحروف
+LETTERS_BODY ¦ Write each {0} letter on its own with your finger, from right to left. Watch how it is written, trace the guide, then turn the guide off. ¦ اكتب كل حرف من حروف {0} منفصلًا بإصبعك، من اليمين إلى اليسار. شاهد طريقة كتابته، وتتبّع الحرف الإرشادي، ثم أخفِه.
+LETTERS_NOT_ACTIVE ¦ Letter writing is for Arabic and Urdu. These are the Arabic letters; switch your active language to practise Urdu. ¦ كتابة الحروف للعربية والأردية. هذه حروف العربية؛ غيّر لغتك النشطة لتتدرّب على الأردية.
+LETTERS_UNREVIEWED ¦ The model letters are drawn for this app in a simple Naskh hand and have not been reviewed by a teacher yet. ¦ نماذج الحروف مرسومة لهذا التطبيق بخط نسخ بسيط، ولم يراجعها معلّم بعد.
+LETTERS_POSITION ¦ Letter {0} of {1} ¦ الحرف {0} من {1}
+LETTERS_PICK ¦ Choose a letter ¦ اختر حرفًا
+LETTERS_SHOW_HOW ¦ Show how it is written ¦ اعرض طريقة الكتابة
+LETTERS_BOX_DESC ¦ Writing box for {0}. {1} strokes drawn. ¦ مربع كتابة الحرف {0}. عدد الضربات المرسومة: {1}.
+LETTERS_DOTS_N ¦ {0} dot|{0} dots ¦ لا نقاط|نقطة واحدة|نقطتان|{0} نقاط|{0} نقطة|{0} نقطة
+LETTERS_ABOVE ¦ above it ¦ فوقه
+LETTERS_BELOW ¦ under it ¦ تحته
+LETTERS_INSIDE ¦ inside it ¦ داخله
+LETTERS_HAS_DOTS ¦ This letter has {0} {1}. ¦ لهذا الحرف {0} {1}.
+LETTERS_HAS_SMALL_TA ¦ This letter has a small ط {0}. ¦ لهذا الحرف طاء صغيرة {0}.
+LETTERS_HAS_MARK ¦ This letter has a small mark {0}. ¦ لهذا الحرف علامة صغيرة {0}.
+LETTERS_NO_DOTS ¦ This letter has no dots. ¦ هذا الحرف بلا نقاط.
+LETTERS_GOOD ¦ Well written: the shape, the dots and the direction match. ¦ أحسنت: الشكل والنقاط والاتجاه مطابقة.
+LETTERS_CLOSE ¦ Close. See the notes below. ¦ قريب. انظر الملاحظات أدناه.
+LETTERS_TRY_AGAIN ¦ Not yet. See the notes below and try again. ¦ ليس بعد. انظر الملاحظات أدناه وحاول مرة أخرى.
+LETTERS_SHAPE_GOOD ¦ Shape: matches the model. ¦ الشكل: مطابق للنموذج.
+LETTERS_SHAPE_CLOSE ¦ Shape: close; compare it with the guide. ¦ الشكل: قريب، فقارنه بالحرف الإرشادي.
+LETTERS_SHAPE_OFF ¦ Shape: different from this letter. Watch how it is written. ¦ الشكل: مختلف عن هذا الحرف. شاهد طريقة كتابته.
+LETTERS_MARKS_RIGHT ¦ Dots: right number, right place. ¦ النقاط: عددها ومكانها صحيحان.
+LETTERS_FOUND ¦ You wrote {0}, or in another place. ¦ كتبتَ {0}، أو في مكان آخر.
+LETTERS_FOUND_NONE ¦ You wrote none. ¦ لم تكتب شيئًا منها.
+LETTERS_SIGN_CHECK ¦ Check that it is there and in its place. ¦ تأكّد من وجودها في مكانها.
+LETTERS_REVERSED ¦ Direction: your main stroke went the other way. Start where the demonstration starts. ¦ الاتجاه: ضربتك الرئيسية في الاتجاه المعاكس. ابدأ من حيث يبدأ العرض.
+LETTERS_MARKS_FIRST ¦ Tip: write the letter's body first, then the dots. ¦ نصيحة: اكتب جسم الحرف أولًا ثم النقاط.
+LETTERS_PREVIOUS ¦ Previous ¦ السابق
+LETTERS_ABOUT ¦ Three things are checked separately: the letter's shape against a model drawn for this app, the number and place of its dots (two dots written as a short dash, or three as a small caret, count too), and the direction of the main stroke. Handwriting styles vary, so a correct letter is sometimes only "close". It does not judge calligraphy. ¦ تُفحص ثلاثة أمور منفصلة: شكل الحرف مقارنةً بنموذج مرسوم لهذا التطبيق، وعدد نقاطه ومكانها (تُحسب النقطتان المكتوبتان شرطةً قصيرة، والثلاث المكتوبة على شكل ^ صغيرة)، واتجاه الضربة الرئيسية. تختلف الخطوط، فقد يُعدّ الحرف الصحيح «قريبًا» أحيانًا. ولا يُقيَّم جمال الخط.
 PRACTICE_TONES_SUB ¦ Hear and tell apart Mandarin tones ¦ استمع وميّز نغمات الصينية
 PRACTICE_RELAX ¦ Relax and focus ¦ استرخِ وركّز
 PRACTICE_RELAX_SUB ¦ Optional breathing before you practise ¦ تنفّس اختياري قبل التدريب
