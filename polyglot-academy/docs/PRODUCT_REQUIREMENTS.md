@@ -57,7 +57,7 @@ build exists only as a test harness; there is no iOS app.
 ## Not covered
 - C1 and C2 courses (PR-26); graded stories above B1.
 - Audio and video transcription (PR-19).
-- Writing practice for Arabic and Urdu letters (feasibility not yet assessed).
+- Writing practice for Arabic and Urdu letters: feasible with explicit dot and direction checks and handwriting-style templates, not with the Chinese shape scorer alone (see docs/WRITING_ARABIC_URDU_FEASIBILITY_AR.md); waits for a reviewer, a decision on the Urdu style and approval.
 - Interface languages other than Arabic and English (each needs a reviewer).
 - iOS.
 

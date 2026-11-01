@@ -1,0 +1,14 @@
+Arabic isolated, right letter (Tahoma ink on Naskh target) (28): GOOD=9 CLOSE=9 TRY_AGAIN=9 EMPTY=1
+Arabic isolated, dots left out (15): GOOD=3 CLOSE=8 TRY_AGAIN=4 EMPTY=0
+Arabic isolated, a letter differing only in dots (24): GOOD=6 CLOSE=5 TRY_AGAIN=13 EMPTY=0
+Arabic initial forms ب ت ث ن ي, right letter (5): GOOD=0 CLOSE=0 TRY_AGAIN=5 EMPTY=0
+Arabic initial forms ب ت ث ن ي, another of the five (20): GOOD=0 CLOSE=0 TRY_AGAIN=20 EMPTY=0
+Arabic isolated, a different letter shape (e.g. م for ب) (28): GOOD=0 CLOSE=1 TRY_AGAIN=26 EMPTY=1
+Urdu letters, right letter (Tahoma ink on Nastaliq target) (13): GOOD=3 CLOSE=6 TRY_AGAIN=4 EMPTY=0
+Urdu letters, right letter (Tahoma ink on Naskh target) (13): GOOD=4 CLOSE=8 TRY_AGAIN=1 EMPTY=0
+Urdu pairs differing in dots or a small mark (Naskh) (16): GOOD=2 CLOSE=4 TRY_AGAIN=10 EMPTY=0
+Dot count from the separate marks, Tahoma: 18 of 18 right []
+Dot count from the separate marks, Arabic Typesetting: 18 of 18 right []
+Dot count from the separate marks, Majalla: 14 of 18 right [ت:1/2, ق:1/2, ي:1/2, ژ:1/3]
+Chinese, right character (SimSun ink on Noto target) (14): GOOD=9 CLOSE=3 TRY_AGAIN=2 EMPTY=0
+Chinese, close character (日↔目, 大↔太, 木↔本, 人↔入, 土↔士) (10): GOOD=6 CLOSE=4 TRY_AGAIN=0 EMPTY=0

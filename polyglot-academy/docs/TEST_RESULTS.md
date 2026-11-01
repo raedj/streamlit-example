@@ -367,7 +367,14 @@ stop at B1; speaking missions reach C1; word-list levels 9–10 are labelled app
 the coverage counts equal the content in all eight languages; every course ceiling is A2–B2, C1
 has no course lesson and C2 offers nothing (so adding a C1 course fails the test until PR-26 and
 the in-app text are updated); a UI test for a Spanish learner set to C1 sees the notice and the
-table. On the emulator: the Learn tab table in Arabic for Mandarin matched the counts. Build: 298 tests, 0 failures (core 198, data 65, uicore 12, ui 23); release APK builds. Build: 295 tests, 0 failures (core 196, data 65, uicore 12, ui 22); release APK builds. Build: 291 tests, 0 failures (core 196, data 64, uicore 12, ui 19); release APK builds.
+table. On the emulator: the Learn tab table in Arabic for Mandarin matched the counts. Build: 298 tests, 0 failures (core 198, data 65, uicore 12, ui 23); release APK builds.
+
+**Arabic/Urdu letter-writing feasibility (2026-11-01).** An experiment, not a product test (code and
+results in `tools/feasibility/`): letters drawn in one font and thinned to a one-pixel line were
+scored with the Chinese shape scorer against another font. Correct Arabic letters were accepted as
+good 9/28 times (Chinese 9/14); letters differing only in dots 6/24; letters without their dots
+3/15. Counting dots from separate marks was right for 18/18 letters in two fonts and 14/18 in a font
+that merges dots. Conclusion in docs/WRITING_ARABIC_URDU_FEASIBILITY_AR.md. Build: 295 tests, 0 failures (core 196, data 65, uicore 12, ui 22); release APK builds. Build: 291 tests, 0 failures (core 196, data 64, uicore 12, ui 19); release APK builds.
 
 | Module | Test class | Tests | Failures |
 |---|---|---|---|
