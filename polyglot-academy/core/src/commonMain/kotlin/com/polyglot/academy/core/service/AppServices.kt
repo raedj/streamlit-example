@@ -39,6 +39,9 @@ interface PlatformServices {
     /** Renders PDF pages as JPEG images for AI text recognition, or null when the platform has no renderer. */
     suspend fun renderPdfPages(pdf: ByteArray, maxPages: Int): List<OcrPage>? = null
 
+    /** Chat models on the device (llama.cpp), or null when the platform has no runtime. */
+    val localLlm: com.polyglot.academy.core.localai.LocalLlmRuntime? get() = null
+
     /** Speech to text on the device, or null when the platform has none. */
     val transcriber: com.polyglot.academy.core.media.DeviceTranscriber? get() = null
 
@@ -79,8 +82,17 @@ class AppServices(
     val assessments = AssessmentService(store, store, achievements, clock, ids)
     val providers = ProviderService(
         store, platform.secrets, store, platform::network,
-        providerFactory ?: { creds, cfg -> createHttpProviders(httpClient, creds, { id -> cfg(id) }, clock::nowMillis) },
+        providerFactory ?: { creds, cfg ->
+            createHttpProviders(httpClient, creds, { id -> cfg(id) }, clock::nowMillis) +
+                listOfNotNull(platform.localLlm?.let { com.polyglot.academy.core.ai.OnDeviceProvider(it) { id -> cfg(id) } })
+        },
         clock,
+        // On-device chat is ready once the learner chose a model and it is on the phone.
+        onDeviceReady = { cfgs ->
+            val runtime = platform.localLlm
+            val model = com.polyglot.academy.core.localai.LocalModelCatalog.byId(cfgs[com.polyglot.academy.core.ai.ProviderId.ON_DEVICE]?.model)
+            runtime != null && model != null && runtime.isDownloaded(model)
+        },
     )
     val writing = WritingService(providers)
     val ocr = OcrService(providers, platform.deviceOcr)

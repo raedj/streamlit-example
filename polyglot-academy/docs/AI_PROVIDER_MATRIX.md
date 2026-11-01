@@ -14,7 +14,7 @@
 | Alibaba Qwen (Model Studio, international) | `OpenAiCompatibleProvider` | `https://dashscope-intl.aliyuncs.com/compatible-mode/v1/chat/completions`, Bearer | `qwen-plus` | Cloud | chat, feedback, translation | Mock HTTP tests only |
 | Other OpenAI-compatible service (Together, Fireworks, Perplexity, …) | `OpenAiCompatibleProvider` | `{learner's HTTPS address}/chat/completions`, Bearer | entered by the learner (required) | Cloud | chat, feedback, translation | Mock HTTP tests only |
 | Local server (Ollama, llama.cpp server, LM Studio) | `OpenAiCompatibleProvider` | `{base}/chat/completions`, optional key | `llama3.2` | Learner's own server | chat, feedback | Mock HTTP tests only |
-| On-device | — | — | — | Device | — | No runtime bundled (honest "not available") |
+| On-device (Android) | `OnDeviceProvider` + `LlamaRuntime` (llama.cpp v0.7.0, JNI) | model's own chat template | Qwen2.5 0.5B/1.5B Instruct Q4_K_M, downloaded on request | Device (nothing sent) | chat only (no structured feedback) | Fake-runtime tests; on the emulator see TEST_RESULTS |
 
 **No provider has been tested against its live API** (no keys; cloud hosts are outside this
 environment's allow-list). Default model names should be checked against each vendor's current

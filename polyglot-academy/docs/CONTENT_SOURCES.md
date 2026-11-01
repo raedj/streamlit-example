@@ -106,6 +106,16 @@ of the licence is not legal advice.
 Accuracy differs by language: Whisper base is much weaker for Urdu, Malay and Arabic than for
 English, Spanish and French, and the app asks the learner to check every transcript.
 
+## On-device chat models
+| What | Where | Licence | Source | Used for |
+|---|---|---|---|---|
+| llama.cpp v0.7.0 (core library, CPU parts of ggml) | `androidApp/src/main/cpp/llama/` (see `VENDORED.txt`); whisper.cpp uses the same ggml | MIT (`docs/licenses/MIT-llama.cpp.txt`) | github.com/ggml-org/llama.cpp, tag v0.7.0 (2026-10-15), archive SHA-256 55d67acf…21c5e1, downloaded 2026-11-01 with the owner's approval | Running chat models on the phone |
+| Qwen2.5 0.5B Instruct, Q4_K_M GGUF (491,400,032 bytes) | Not in the repository or APK: downloaded by the app on request into `noBackupFilesDir/llm/` | Apache-2.0 | huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF, SHA-256 74a4da8c…d7a9db | Tutor conversations on the phone |
+| Qwen2.5 1.5B Instruct, Q4_K_M GGUF (1,117,320,736 bytes) | As above | Apache-2.0 | huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF, SHA-256 6a1a2eb6…e9407e | As above, better quality |
+
+Small models make mistakes, and more so outside English and Chinese; the app says so on the models
+page. They are used for conversation only, not for the structured corrections of writing feedback.
+
 ## Arabic and Urdu letter templates
 The 41 isolated letters used for letter writing (28 Arabic, 13 more for Urdu) are drawn for this
 app in a simple Naskh hand, as strokes in writing order with their dots or small signs

@@ -176,7 +176,7 @@ PROV_DOCS ¦ Provider documentation: {0} ¦ وثائق المزوّد: {0}
 PROV_SUBSCRIPTION ¦ A consumer chat subscription usually does not include API access. Create an API key on the provider's developer platform. ¦ لا يتضمن اشتراك المحادثة للمستهلكين عادةً وصولًا إلى API. أنشئ مفتاح API من منصة المطوّرين لدى المزوّد.
 PROV_AZURE_NOTE ¦ Uses the documented Azure OpenAI REST API (Microsoft). Enter your resource endpoint and deployment name. ¦ يستخدم واجهة Azure OpenAI REST الموثّقة من Microsoft. أدخل عنوان المورد واسم النشر.
 LOCAL_TITLE ¦ On-device models ¦ النماذج على الجهاز
-LOCAL_INTRO ¦ Running a language model on a phone needs a compatible runtime, enough memory and storage. This build does not include an on-device runtime yet, so no models are downloaded. The compatibility check below shows what your device could support. ¦ يتطلب تشغيل نموذج لغوي على الهاتف بيئة تشغيل متوافقة وذاكرة وتخزينًا كافيين. لا يتضمن هذا الإصدار بيئة تشغيل على الجهاز بعد، لذا لا تُنزّل أي نماذج. يوضح فحص التوافق أدناه ما يمكن أن يدعمه جهازك.
+LOCAL_INTRO ¦ A chat model can run on this phone, with nothing sent anywhere. Download one below (once, after you agree), then choose it for conversations. Small models answer slowly and make more mistakes than cloud AI. ¦ يمكن تشغيل نموذج محادثة على هذا الهاتف دون إرسال أي شيء. نزّل نموذجًا أدناه (مرة واحدة وبعد موافقتك)، ثم اختره للمحادثات. النماذج الصغيرة أبطأ في الرد وأكثر خطأً من الذكاء الاصطناعي السحابي.
 LOCAL_DEVICE ¦ This device ¦ هذا الجهاز
 LOCAL_DEVICE_INFO ¦ {0} MB memory · {1} MB free storage · {2} cores ¦ ذاكرة {0} ميغابايت · تخزين متاح {1} ميغابايت · {2} أنوية
 LOCAL_TIER_LOW ¦ Entry-level device ¦ جهاز بمواصفات أساسية
@@ -188,6 +188,15 @@ LOCAL_REASON_NOT_64_BIT ¦ Needs a 64-bit device ¦ يحتاج إلى جهاز 6
 LOCAL_REASON_INSUFFICIENT_RAM ¦ Not enough memory ¦ الذاكرة غير كافية
 LOCAL_REASON_INSUFFICIENT_STORAGE ¦ Not enough free storage ¦ مساحة التخزين المتاحة غير كافية
 LOCAL_REASON_OS_TOO_OLD ¦ Android version too old ¦ إصدار أندرويد قديم جدًا
+LOCAL_DOWNLOAD ¦ Download ({0} MB) ¦ تنزيل ({0} ميغابايت)
+LOCAL_CONFIRM_TITLE ¦ Download this model? ¦ تنزيل هذا النموذج؟
+LOCAL_CONFIRM_BODY ¦ About {0} MB ({1}) is downloaded from the Qwen page on Hugging Face and checked before use. Only the model file is requested; nothing about you is sent. Use Wi-Fi if your data plan is limited. ¦ يُنزَّل نحو {0} ميغابايت ({1}) من صفحة Qwen على Hugging Face ويُتحقَّق منه قبل الاستخدام. يُطلب ملف النموذج فقط، ولا يُرسل شيء عنك. استخدم Wi-Fi إن كانت باقتك محدودة.
+LOCAL_USE ¦ Use for conversations ¦ استخدامه للمحادثات
+LOCAL_IN_USE ¦ In use ¦ قيد الاستخدام
+LOCAL_TRY ¦ Try it ¦ جرّبه
+LOCAL_TRY_OK ¦ Works on this phone: answered in {0} second.|Works on this phone: answered in {0} seconds. ¦ يعمل على هذا الهاتف: أجاب في أقل من ثانية.|يعمل على هذا الهاتف: أجاب خلال ثانية واحدة.|يعمل على هذا الهاتف: أجاب خلال ثانيتين.|يعمل على هذا الهاتف: أجاب خلال {0} ثوانٍ.|يعمل على هذا الهاتف: أجاب خلال {0} ثانية.|يعمل على هذا الهاتف: أجاب خلال {0} ثانية.
+LOCAL_DELETE ¦ Delete from this phone ¦ حذفه من هذا الهاتف
+LOCAL_QUALITY ¦ Answers from an on-device model are not checked by anyone; tutors still correct you, but the explanations can be wrong. Corrections in JSON (writing feedback) still need a cloud or local-server model. ¦ لا يراجع أحد إجابات النموذج على الجهاز؛ يبقى المعلّم يصحّح لك، لكن الشروح قد تخطئ. أما التصحيح المنظّم (ملاحظات الكتابة) فما زال يحتاج نموذجًا سحابيًا أو خادمًا محليًا.
 LOCAL_ALTERNATIVE ¦ Alternative: run a model on your computer (for example with Ollama) and connect it as "Local server" in AI providers. ¦ بديل: شغّل نموذجًا على حاسوبك (مثل Ollama) واربطه بوصفه «خادمًا محليًا» في مزوّدي الذكاء الاصطناعي.
 SET_VOICE ¦ Voice services ¦ خدمات الصوت
 SET_VOICE_SUB ¦ Pronunciation scoring and live voice calls ¦ تقييم النطق والمكالمات الصوتية المباشرة
@@ -244,6 +253,7 @@ PRIV_NO_SERVER ¦ The app has no server of its own: no account, no analytics, no
 PRIV_AI ¦ AI features (tutors, corrections, stories, reading a photo with AI) send text only when you turn cloud AI on, accept the consent, and allow that kind of data, and only to the provider you set up with your own key. ¦ ميزات الذكاء الاصطناعي (المعلّمون والتصحيح والقصص وقراءة الصور بالذكاء الاصطناعي) لا ترسل نصًّا إلا إذا شغّلت الذكاء الاصطناعي السحابي ووافقت على الإقرار وسمحت بذلك النوع من البيانات، ولا ترسله إلا إلى المزوّد الذي أعددته بمفتاحك.
 PRIV_VOICE ¦ Your voice leaves the device only for detailed pronunciation scoring and live voice calls, and only when "Voice recordings" is allowed (off by default). ¦ لا يغادر صوتك الجهاز إلا لتقييم النطق المفصّل وللمكالمات الصوتية المباشرة، وحين يُسمح بفئة «التسجيلات الصوتية» فقط (متوقّفة افتراضيًا).
 PRIV_SYNC ¦ Sync, if you set it up, sends one file to your own WebDAV server, encrypted on this device with your passphrase. Background sync is off unless you turn it on. ¦ المزامنة، إن أعددتها، ترسل ملفًّا واحدًا إلى خادم WebDAV الخاص بك، مشفّرًا على هذا الجهاز بعبارة مرورك. والمزامنة التلقائية متوقّفة ما لم تشغّلها.
+PRIV_LOCAL_CHAT ¦ A chat model you download in On-device models answers on the phone, without sending your conversation anywhere. ¦ نموذج المحادثة الذي تنزّله من «النماذج على الجهاز» يجيب على الهاتف دون أن يرسل محادثتك إلى أي جهة.
 PRIV_TRANSCRIBE ¦ Audio and video you import are transcribed on the phone. The speech model is downloaded only when you agree, and that download sends nothing about you. ¦ تُفرَّغ ملفات الصوت والفيديو التي تستوردها على الهاتف. ولا يُنزَّل نموذج الكلام إلا بموافقتك، ولا يُرسل هذا التنزيل شيئًا عنك.
 PRIV_SPEECH ¦ Speech recognition and read-aloud use your phone's speech services, which follow their own settings. ¦ التعرّف على الكلام والقراءة بصوت مسموع يستخدمان خدمات الكلام في هاتفك، وتخضع لإعداداتها الخاصة.
 PRIV_PERMISSIONS_TITLE ¦ Permissions ¦ الأذونات

@@ -96,7 +96,7 @@ TRANSCRIBE_DOWNLOAD ¦ Download speech model ({0} MB) ¦ تنزيل نموذج �
 TRANSCRIBE_DOWNLOADING ¦ Downloading… {0}% ¦ جارٍ التنزيل… {0}٪
 TRANSCRIBE_CONFIRM_TITLE ¦ Download the speech model? ¦ تنزيل نموذج الكلام؟
 TRANSCRIBE_CONFIRM_BODY ¦ About {0} MB is downloaded from the whisper.cpp model page on Hugging Face and checked before use. Only the model file is requested; nothing about you or your files is sent. Use Wi-Fi if your data plan is limited. ¦ يُنزَّل نحو {0} ميغابايت من صفحة نماذج whisper.cpp على Hugging Face ويُتحقَّق منه قبل الاستخدام. يُطلب ملف النموذج فقط، ولا يُرسل شيء عنك أو عن ملفاتك. استخدم Wi-Fi إن كانت باقتك محدودة.
-TRANSCRIBE_DOWNLOAD_FAILED ¦ The model could not be downloaded or did not pass the check. Try again later. ¦ تعذّر تنزيل النموذج أو لم يجتز التحقّق. حاول لاحقًا.
+TRANSCRIBE_DOWNLOAD_FAILED ¦ The model could not be downloaded or did not pass the check. Try again; an interrupted download continues where it stopped. ¦ تعذّر تنزيل النموذج أو لم يجتز التحقّق. حاول مرة أخرى؛ يُستأنف التنزيل المتوقّف من حيث انقطع.
 TRANSCRIBE_START ¦ Transcribe ¦ فرّغ النص
 TRANSCRIBE_DECODING ¦ Reading the audio… ¦ جارٍ قراءة الصوت…
 TRANSCRIBE_RECOGNISING ¦ Recognising speech… This can take a while, on slower phones several times the length of the recording. Keep the app open. ¦ جارٍ التعرّف على الكلام… قد يستغرق ذلك وقتًا، وعلى الهواتف الأبطأ أضعاف مدة التسجيل. أبقِ التطبيق مفتوحًا.

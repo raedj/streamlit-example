@@ -33,7 +33,7 @@ class ProviderService(
     private val network: () -> NetworkState,
     private val providerFactory: (CredentialSource, (ProviderId) -> ProviderConfig) -> List<AiProvider>,
     private val clock: TimeSource,
-    private val onDeviceReady: () -> Boolean = { false },
+    private val onDeviceReady: (Map<ProviderId, ProviderConfig>) -> Boolean = { false },
 ) {
     @kotlin.concurrent.Volatile private var cachedConfigs: Map<ProviderId, ProviderConfig> = emptyMap()
     val credentials = CredentialSource { id -> secrets.get(secretKeyFor(id)) }
@@ -60,7 +60,7 @@ class ProviderService(
         val present = ProviderCatalog.all.filter { d -> !d.requiresApiKey || hasKey(d.id) }.map { it.id }.toSet()
         val settings = profiles.currentSettings()
         val preferred = capability?.let { settings.aiFeatureProviders[it] } ?: configs.preferredProvider.first()
-        return RoutingContext(settings.privacy, network(), preferred, cfg, present, onDeviceReady(), perItemCloudConsent)
+        return RoutingContext(settings.privacy, network(), preferred, cfg, present, onDeviceReady(cfg), perItemCloudConsent)
     }
 
     suspend fun route(capability: AiCapability, categories: Set<DataCategory>): RouteDecision =

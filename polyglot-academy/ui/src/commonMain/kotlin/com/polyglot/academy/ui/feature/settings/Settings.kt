@@ -43,6 +43,10 @@ import com.polyglot.academy.core.device.DeviceCapability
 import com.polyglot.academy.core.device.DeviceTier
 import com.polyglot.academy.core.localai.Compatibility
 import com.polyglot.academy.core.localai.LocalModelCatalog
+import com.polyglot.academy.core.localai.IncompatibilityReason
+import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.material3.LinearProgressIndicator
+import androidx.compose.ui.Alignment
 import com.polyglot.academy.core.model.AppSettings
 import com.polyglot.academy.core.model.CefrLevel
 import com.polyglot.academy.core.model.CorrectionIntensity
@@ -471,15 +475,87 @@ private fun LocalModelsPage() {
         Text(when (DeviceCapability.tier(info)) { DeviceTier.LOW -> s[K.LOCAL_TIER_LOW]; DeviceTier.MID -> s[K.LOCAL_TIER_MID]; DeviceTier.HIGH -> s[K.LOCAL_TIER_HIGH] }, style = MaterialTheme.typography.titleSmall)
         Text(s.f(K.LOCAL_DEVICE_INFO, info.totalRamMb, info.availableStorageMb, info.cpuCores), style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
     }
+    val runtime = app.services.platform.localLlm
+    val scope = rememberCoroutineScope()
+    val configs by remember { app.services.store.configs }.collectAsState(emptyMap())
+    val preferred by remember { app.services.store.preferredProvider }.collectAsState(null)
+    // Bumped after a download or deletion so the cards re-read what is on the phone.
+    var version by remember { mutableIntStateOf(0) }
+    var progress by remember { mutableStateOf<Pair<String, Float>?>(null) }
+    var confirm by remember { mutableStateOf<com.polyglot.academy.core.localai.LocalModelSpec?>(null) }
+    var tryResult by remember { mutableStateOf<Pair<String, String>?>(null) }
+    var trying by remember { mutableStateOf<String?>(null) }
+    val chosen = configs[ProviderId.ON_DEVICE]?.model
     LocalModelCatalog.models.forEach { m ->
-        val comp = LocalModelCatalog.compatibility(m, info)
+        val comp = LocalModelCatalog.compatibility(m, info, setOfNotNull(runtime?.runtime))
+        val downloaded = remember(version) { runtime?.isDownloaded(m) == true }
+        val inUse = downloaded && chosen == m.id && preferred == ProviderId.ON_DEVICE
         PolyCard {
-            Text(m.displayName, style = MaterialTheme.typography.titleSmall)
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Text(m.displayName, style = MaterialTheme.typography.titleSmall, modifier = Modifier.weight(1f))
+                if (inUse) Pill(s[K.LOCAL_IN_USE])
+            }
             Text(s.f(K.LOCAL_MODEL_SIZE, m.downloadSizeMb, m.minRamMb, m.license), style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
             Text(m.languagesNote, style = MaterialTheme.typography.bodySmall, color = c.textMuted)
+            // Memory and storage are warnings for a downloaded model; a missing runtime blocks everything.
             if (comp is Compatibility.Incompatible) comp.reasons.forEach { r -> Text("• " + s[K.valueOf("LOCAL_REASON_${r.name}")], style = MaterialTheme.typography.bodySmall, color = c.warning) }
+            val blocked = comp is Compatibility.Incompatible && IncompatibilityReason.RUNTIME_NOT_BUNDLED in comp.reasons
+            when {
+                runtime == null || blocked -> {}
+                progress?.first == m.id -> {
+                    val f = progress!!.second
+                    Text(s.f(K.TRANSCRIBE_DOWNLOADING, (f * 100).toInt()))
+                    LinearProgressIndicator(progress = { f }, modifier = Modifier.fillMaxWidth(), drawStopIndicator = {})
+                }
+                !downloaded -> {
+                    SecondaryButton(s.f(K.LOCAL_DOWNLOAD, m.downloadSizeMb), { confirm = m }, Modifier.fillMaxWidth(), enabled = progress == null)
+                    // A failed download says so here (it resumes where it stopped when tried again).
+                    tryResult?.takeIf { it.first == m.id }?.let { Text(it.second, style = MaterialTheme.typography.bodySmall, color = c.warning) }
+                }
+                else -> {
+                    if (!inUse) PrimaryButton(s[K.LOCAL_USE], {
+                        scope.launch {
+                            val cfg = configs[ProviderId.ON_DEVICE] ?: com.polyglot.academy.core.ai.ProviderConfig(ProviderId.ON_DEVICE)
+                            app.services.providers.saveConfig(cfg.copy(model = m.id, enabled = true))
+                            app.services.store.setPreferred(ProviderId.ON_DEVICE)
+                        }
+                    }, Modifier.fillMaxWidth())
+                    SecondaryButton(if (trying == m.id) s[K.PROV_TESTING] else s[K.LOCAL_TRY], {
+                        trying = m.id; tryResult = null
+                        scope.launch {
+                            val cfg = configs[ProviderId.ON_DEVICE] ?: com.polyglot.academy.core.ai.ProviderConfig(ProviderId.ON_DEVICE)
+                            if (cfg.model != m.id) app.services.providers.saveConfig(cfg.copy(model = m.id, enabled = true))
+                            val started = app.services.clock.nowMillis()
+                            val r = app.services.providers.testConnection(ProviderId.ON_DEVICE)
+                            val seconds = ((app.services.clock.nowMillis() - started) / 1000).toInt()
+                            tryResult = m.id to (if (r.ok) s.plural(K.LOCAL_TRY_OK, seconds) else s.f(K.PROV_TEST_FAILED, r.error?.message.orEmpty()))
+                            trying = null
+                        }
+                    }, Modifier.fillMaxWidth(), enabled = trying == null)
+                    tryResult?.takeIf { it.first == m.id }?.let { Text(it.second, style = MaterialTheme.typography.bodySmall) }
+                    QuietButton(s[K.LOCAL_DELETE], {
+                        runtime.delete(m)
+                        if (inUse) scope.launch { app.services.store.setPreferred(null) }
+                        version++
+                    }, color = c.error)
+                }
+            }
         }
     }
+    confirm?.let { m ->
+        ConfirmDialog(s[K.LOCAL_CONFIRM_TITLE], s.f(K.LOCAL_CONFIRM_BODY, m.downloadSizeMb, m.displayName), s.f(K.LOCAL_DOWNLOAD, m.downloadSizeMb), s[K.CANCEL],
+            onConfirm = {
+                confirm = null
+                scope.launch {
+                    progress = m.id to 0f
+                    val r = runtime!!.download(m) { progress = m.id to it }
+                    progress = null
+                    version++
+                    if (r.isFailure) tryResult = m.id to s[K.TRANSCRIBE_DOWNLOAD_FAILED]
+                }
+            }, onDismiss = { confirm = null })
+    }
+    if (runtime != null) Text(s[K.LOCAL_QUALITY], style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
     Banner(BannerKind.INFO, s[K.LOCAL_ALTERNATIVE], action = s[K.PROV_TITLE], onAction = { app.nav.push(Route.ProviderDetail(ProviderId.LOCAL_SERVER)) })
 }
 

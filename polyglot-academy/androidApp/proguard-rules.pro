@@ -11,3 +11,4 @@
 -keep class com.googlecode.leptonica.android.** { *; }
 # whisper.cpp JNI: the native symbols name this class and its methods.
 -keep class com.polyglot.academy.android.WhisperNative { native <methods>; }
+-keep class com.polyglot.academy.android.LlamaNative { native <methods>; }

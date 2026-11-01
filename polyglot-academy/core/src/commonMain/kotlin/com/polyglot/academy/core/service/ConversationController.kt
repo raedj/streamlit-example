@@ -180,6 +180,8 @@ class ConversationController(
         session = study.startSession(language, SessionKind.CONVERSATION, conversationKey)
         val opening = when {
             engine is TutorEngineMode.Offline -> offline.opening()
+            // A model on the phone does not write the opening: the learner starts, so only one answer is generated at a time.
+            (engine as? TutorEngineMode.Ai)?.provider == com.polyglot.academy.core.ai.ProviderId.ON_DEVICE -> if (mission != null) offline.opening() else aiOpening()
             aiOpensItself -> aiSelfOpening() ?: if (mission != null) offline.opening() else aiOpening()
             else -> aiOpening()
         }
@@ -267,15 +269,18 @@ class ConversationController(
             askTrack = profile.coachTrack == null && scenario == null && mission == null,
             warmUp = if (warmUpPending && scenario == null) memory.warmUp else emptyList(),
             struggling = CoachProtocol.isStruggling(learnerTurns))
-        val turns = TutorPromptBuilder.history(s.turns.filter { it.speaker != Speaker.SYSTEM }.map { (it.speaker == Speaker.LEARNER) to it.text })
+        // A model on the phone gets the short prompt and less history (it reads every token on the phone's CPU).
+        val onDevice = (s.engine as? TutorEngineMode.Ai)?.provider == com.polyglot.academy.core.ai.ProviderId.ON_DEVICE
+        val turns = TutorPromptBuilder.history(s.turns.filter { it.speaker != Speaker.SYSTEM }.map { (it.speaker == Speaker.LEARNER) to it.text }, maxTurns = if (onDevice) 6 else 16)
         // A mission conversation always begins with the start signal, so the model sees why it spoke first.
-        val history = override ?: if (aiOpensItself) listOf(com.polyglot.academy.core.ai.ChatMessage(com.polyglot.academy.core.ai.ChatRole.USER, TutorPromptBuilder.START_SIGNAL)) + turns else turns
-        val outcome = providers.execute(AiCapability.CHAT, ChatRequest(TutorPromptBuilder.systemPrompt(ctx), history, setOf(DataCategory.CONVERSATION_TEXT), expectJson = true))
+        val history = override ?: if (aiOpensItself && !onDevice) listOf(com.polyglot.academy.core.ai.ChatMessage(com.polyglot.academy.core.ai.ChatRole.USER, TutorPromptBuilder.START_SIGNAL)) + turns else turns
+        val outcome = providers.execute(AiCapability.CHAT, ChatRequest(if (onDevice) TutorPromptBuilder.compactPrompt(ctx) else TutorPromptBuilder.systemPrompt(ctx), history, setOf(DataCategory.CONVERSATION_TEXT), expectJson = !onDevice))
         return when (outcome) {
             is AiOutcome.Success -> {
                 warmUpPending = false
                 if (outcome.usedFallback) _state.update { it.copy(notice = ConversationNotice.USED_FALLBACK_PROVIDER) }
-                TutorResponseParser.parse(outcome.response.text, outcome.response.providerId.name)
+                if (onDevice) TutorResponseParser.parseCompact(outcome.response.text, learnerTurns.lastOrNull()?.text, outcome.response.providerId.name)
+                else TutorResponseParser.parse(outcome.response.text, outcome.response.providerId.name)
             }
             is AiOutcome.Failure -> {
                 val reason = if (outcome.error is AiError.BlockedByPrivacy) OfflineReason.CLOUD_DISABLED_BY_PRIVACY else OfflineReason.PROVIDER_FAILED

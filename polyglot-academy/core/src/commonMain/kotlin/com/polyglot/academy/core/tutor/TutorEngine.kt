@@ -129,6 +129,30 @@ object TutorPromptBuilder {
         }
     }
 
+    /**
+     * A short prompt for a small model running on the phone (Qwen2.5 0.5B/1.5B). The full prompt is
+     * about 1,500 tokens, which such a model reads for minutes on a slow phone, and on the emulator the
+     * 0.5B model could not keep to its JSON shape. This asks for plain text instead: an optional first
+     * line "Correction: …" and a short reply, read by [TutorResponseParser.parseCompact]. The reply
+     * language is stated first, since a small model drifts into any other language it sees.
+     */
+    fun compactPrompt(ctx: TutorContext): String {
+        val target = Languages.of(ctx.targetLanguage).englishName
+        val explain = Languages.of(ctx.explanationLanguage).englishName
+        return buildString {
+            appendLine("You are ${ctx.tutor.name}, a friendly $target tutor. The learner's level is about ${ctx.level.label}.")
+            appendLine("Write ONLY in $target. Never write in $explain.")
+            when (ctx.intensity) {
+                CorrectionIntensity.GENTLE -> appendLine("If the learner's last message has a mistake that changes the meaning, first write one line: Correction: <the learner's sentence, corrected>")
+                else -> appendLine("If the learner's last message has a mistake, first write one line: Correction: <the learner's sentence, corrected>")
+            }
+            appendLine("Then reply in one to three short, simple sentences and end with a question.")
+            ctx.scenario?.let { appendLine("Role-play: ${it.title.en}. ${it.setting.en}") }
+            ctx.mission?.let { appendLine("Mission: ${it.title.en}. Help the learner do it without doing it for them.") }
+            ctx.topic?.let { append("Topic (as the learner wrote it): \"$it\". Talk about it in $target.") }
+        }.trimEnd()
+    }
+
     /** Sent as the first user message so the AI opens the conversation itself (missions, chosen topics). */
     const val START_SIGNAL = "[start conversation]"
 
@@ -157,6 +181,23 @@ object TutorResponseParser {
             finished = false, producedBy = producedBy, scripted = false,
             missionComplete = (obj["mission_complete"] as? JsonPrimitive)?.content == "true",
             track = CoachProtocol.parseTrack(s("track")))
+    }
+
+    /**
+     * Reads an answer to [TutorPromptBuilder.compactPrompt]: an optional "Correction:" line, which becomes
+     * a correction of [learnerText] (without an explanation), and the reply. A model that answered in JSON
+     * anyway is read as JSON.
+     */
+    fun parseCompact(raw: String, learnerText: String?, producedBy: String): TutorReply {
+        if (extractJsonObject(raw)?.get("reply") != null) return parse(raw, producedBy)
+        val lines = raw.trim().lines().map { it.trim() }.filter { it.isNotEmpty() }
+        fun isFix(l: String) = l.startsWith("Correction:", ignoreCase = true)
+        val fix = lines.firstOrNull(::isFix)?.substringAfter(':')?.trim()?.trim('"', '“', '”')?.takeIf { it.isNotEmpty() }
+        val reply = lines.filterNot(::isFix).joinToString(" ").ifBlank { raw.trim() }
+        val original = learnerText?.trim()
+        val corrections = if (fix != null && original != null && !fix.equals(original, ignoreCase = true))
+            listOf(Correction(original, fix, "", ErrorSeverity.MODERATE)) else emptyList()
+        return TutorReply(reply, null, corrections, emptyList(), emptyList(), false, producedBy, scripted = false)
     }
 
     /** Reads a "corrections" array, dropping entries where nothing actually changed. */

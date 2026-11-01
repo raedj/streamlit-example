@@ -215,7 +215,8 @@ object ProviderCatalog {
     val ON_DEVICE = ProviderDescriptor(
         ProviderId.ON_DEVICE, "On-device model", ProviderLocation.ON_DEVICE,
         setOf(AiCapability.CHAT),
-        requiresApiKey = false, requiresBaseUrl = false, defaultModel = "none",
+        // The model is chosen in On-device models (LocalModelCatalog ids).
+        requiresApiKey = false, requiresBaseUrl = false, defaultModel = "qwen2.5-0.5b-instruct-q4",
         defaultBaseUrl = null, documentationUrl = "docs/AI_PROVIDER_MATRIX.md",
         vendorOffersSpeechApis = false,
     )

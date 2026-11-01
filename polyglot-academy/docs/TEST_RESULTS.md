@@ -422,7 +422,24 @@ full endpoint cut back), older Ollama versions are listed through `/api/tags`, a
 (address, model not pulled). Adapter test with an Ollama-like mock. On the emulator against a small
 Ollama-like server on the PC (`http://10.0.2.2:11434`, typed without `/v1`): both models listed, the log
 shows `GET /v1/models 200`. Also fixed a timing race in the UI test `arabicInterfaceIsLocalized` (it
-checked the home content as soon as the tab bar appeared). Build: 309 tests, 0 failures. Build: 306 tests, 0 failures (core 204, data 65, uicore 12, ui 25); release APK builds (about 28 MB). Build: 295 tests, 0 failures (core 196, data 65, uicore 12, ui 22); release APK builds. Build: 291 tests, 0 failures (core 196, data 64, uicore 12, ui 19); release APK builds.
+checked the home content as soon as the tab bar appeared). Build: 309 tests, 0 failures.
+
+**Chat models on the phone (2026-11-01/02, K-05).** llama.cpp v0.7.0 (core library, CPU) vendored and built with
+whisper.cpp into one `libpolyglot_ml.so`; whisper.cpp now uses llama.cpp's ggml (its own copy removed). Tests
+(`OnDeviceModelTest`): catalog downloads point at the Qwen pages with SHA-256 and sizes; the provider trims old
+turns and sends the system message first; a missing or unknown model is reported, not guessed; routing picks the
+on-device model offline with cloud AI off, but not for structured feedback; the short tutor prompt is under a
+quarter of the full one and its plain-text answer becomes a correction card. On the emulator: the 0.5B model
+(491,400,032 bytes) downloaded in the app and passed its SHA-256. A first attempt stopped at 3% with no message
+shown; fixed: the download now resumes with HTTP Range (up to 5 tries) and the error is shown on the card.
+"Try it": 10 s at first, 3 s after enabling AVX2/FMA/F16C for x86_64 (the portable build was plain scalar code;
+the app checks /proc/cpuinfo and leaves the engines off on x86 CPUs without them). Tutor conversation: first
+with the full prompt no reply after 7 minutes; with a short JSON prompt a reply after 14 minutes, then an empty
+"..." turn (copied placeholder) and Arabic answers; after the fixes (plain-text format, reply language stated
+first, no AI-written opening) the scripted greeting appears at once and the reply "Great! Cooking pasta sounds
+delicious. Do you have any favorite recipes…" came after about 5 minutes, without correcting "I likes cook".
+Not tested: a real phone, the 1.5B model (needs 4 GB RAM), other languages, transcription speed after the
+AVX2 change. Build: 314 tests, 0 failures (core 210, data 66, uicore 12, ui 26). Build: 306 tests, 0 failures (core 204, data 65, uicore 12, ui 25); release APK builds (about 28 MB). Build: 295 tests, 0 failures (core 196, data 65, uicore 12, ui 22); release APK builds. Build: 291 tests, 0 failures (core 196, data 64, uicore 12, ui 19); release APK builds.
 
 | Module | Test class | Tests | Failures |
 |---|---|---|---|

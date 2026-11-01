@@ -10,18 +10,13 @@ import com.polyglot.academy.core.media.TranscriptionResult
 import com.polyglot.academy.core.media.TranscriptionStage
 import com.polyglot.academy.core.model.LanguageCode
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.ensureActive
 import kotlinx.coroutines.withContext
 import java.io.File
-import java.net.HttpURLConnection
-import java.net.URL
 import java.nio.ByteOrder
-import java.security.MessageDigest
-import kotlin.coroutines.coroutineContext
 
 /** whisper.cpp through JNI (src/main/cpp). */
 internal object WhisperNative {
-    init { System.loadLibrary("polyglot_whisper") }
+    init { System.loadLibrary("polyglot_ml") }
     external fun initContext(modelPath: String): Long
     external fun freeContext(context: Long)
     external fun transcribe(context: Long, samples: FloatArray, language: String, threads: Int): ByteArray?
@@ -52,36 +47,8 @@ class WhisperTranscriber(private val context: Context) : DeviceTranscriber {
     override val modelSizeBytes = MODEL_SIZE
     override fun isModelReady() = model.length() == MODEL_SIZE
 
-    override suspend fun downloadModel(onProgress: (Float) -> Unit): Result<Unit> = withContext(Dispatchers.IO) {
-        runCatching {
-            val part = File(model.parentFile, model.name + ".part")
-            model.parentFile?.mkdirs()
-            val digest = MessageDigest.getInstance("SHA-256")
-            val connection = (URL(MODEL_URL).openConnection() as HttpURLConnection).apply { connectTimeout = 20_000; readTimeout = 60_000 }
-            try {
-                if (connection.responseCode != 200) error("HTTP ${connection.responseCode}")
-                var done = 0L
-                connection.inputStream.use { input ->
-                    part.outputStream().use { out ->
-                        val buffer = ByteArray(64 * 1024)
-                        while (true) {
-                            coroutineContext.ensureActive()
-                            val n = input.read(buffer)
-                            if (n < 0) break
-                            out.write(buffer, 0, n); digest.update(buffer, 0, n)
-                            done += n
-                            onProgress((done.toFloat() / MODEL_SIZE).coerceAtMost(1f))
-                        }
-                    }
-                }
-            } finally {
-                connection.disconnect()
-            }
-            val sha = digest.digest().joinToString("") { "%02x".format(it) }
-            if (part.length() != MODEL_SIZE || sha != MODEL_SHA256) { part.delete(); error("checksum") }
-            if (!part.renameTo(model)) { part.delete(); error("rename") }
-        }.onFailure { File(model.parentFile, model.name + ".part").delete() }
-    }
+    override suspend fun downloadModel(onProgress: (Float) -> Unit): Result<Unit> =
+        ModelDownload.fetch(MODEL_URL, MODEL_SIZE, MODEL_SHA256, model, onProgress)
 
     override fun deleteModel() { model.delete() }
 
