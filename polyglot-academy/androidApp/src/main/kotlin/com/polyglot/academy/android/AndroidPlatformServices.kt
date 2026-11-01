@@ -147,37 +147,58 @@ class AndroidSpeechRecognizer(private val context: Context) : SpeechRecognizerSe
     override val processesAudioOnDevice: Boolean? get() =
         if (Build.VERSION.SDK_INT >= 31) SpeechRecognizer.isOnDeviceRecognitionAvailable(context) else null
 
+    /**
+     * Languages the phone's on-device recognizer refused in this process. That recognizer only knows the
+     * languages whose offline pack is installed (often just the phone's own language), while the regular
+     * recognizer of the same speech service usually supports the learning language.
+     */
+    private val notOnDevice = mutableSetOf<String>()
+
     override fun listen(localeTag: String): Flow<RecognitionEvent> = callbackFlow {
-        val recognizer = if (Build.VERSION.SDK_INT >= 31 && SpeechRecognizer.isOnDeviceRecognitionAvailable(context))
-            SpeechRecognizer.createOnDeviceSpeechRecognizer(context) else SpeechRecognizer.createSpeechRecognizer(context)
-        active = recognizer
-        recognizer.setRecognitionListener(object : RecognitionListener {
-            override fun onReadyForSpeech(params: Bundle?) { trySend(RecognitionEvent.Ready) }
-            override fun onBeginningOfSpeech() {}
-            override fun onRmsChanged(rmsdB: Float) { trySend(RecognitionEvent.LevelChanged(((rmsdB + 2f) / 12f).coerceIn(0f, 1f))) }
-            override fun onBufferReceived(buffer: ByteArray?) {}
-            override fun onEndOfSpeech() {}
-            override fun onError(error: Int) { trySend(RecognitionEvent.Error(mapError(error))); close() }
-            override fun onResults(results: Bundle?) {
-                val list = results?.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION).orEmpty()
-                val conf = results?.getFloatArray(SpeechRecognizer.CONFIDENCE_SCORES)?.firstOrNull()
-                trySend(RecognitionEvent.Final(list.firstOrNull().orEmpty(), conf, list.drop(1))); close()
-            }
-            override fun onPartialResults(partialResults: Bundle?) {
-                partialResults?.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)?.firstOrNull()?.let { trySend(RecognitionEvent.Partial(it)) }
-            }
-            override fun onEvent(eventType: Int, params: Bundle?) {}
-        })
         val intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH).apply {
             putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
             putExtra(RecognizerIntent.EXTRA_LANGUAGE, localeTag)
             putExtra(RecognizerIntent.EXTRA_PARTIAL_RESULTS, true)
             putExtra(RecognizerIntent.EXTRA_MAX_RESULTS, 3)
         }
-        recognizer.startListening(intent)
+        var current: SpeechRecognizer? = null
+
+        // On the device first (the audio stays on the phone); if it lacks this language, the regular recognizer.
+        fun start(onDevice: Boolean) {
+            current?.destroy()
+            val recognizer = if (onDevice) SpeechRecognizer.createOnDeviceSpeechRecognizer(context) else SpeechRecognizer.createSpeechRecognizer(context)
+            current = recognizer
+            active = recognizer
+            recognizer.setRecognitionListener(object : RecognitionListener {
+                override fun onReadyForSpeech(params: Bundle?) { trySend(RecognitionEvent.Ready) }
+                override fun onBeginningOfSpeech() {}
+                override fun onRmsChanged(rmsdB: Float) { trySend(RecognitionEvent.LevelChanged(((rmsdB + 2f) / 12f).coerceIn(0f, 1f))) }
+                override fun onBufferReceived(buffer: ByteArray?) {}
+                override fun onEndOfSpeech() {}
+                override fun onError(error: Int) {
+                    if (onDevice && isLanguageError(error)) { notOnDevice += localeTag; start(onDevice = false); return }
+                    trySend(RecognitionEvent.Error(mapError(error))); close()
+                }
+                override fun onResults(results: Bundle?) {
+                    val list = results?.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION).orEmpty()
+                    val conf = results?.getFloatArray(SpeechRecognizer.CONFIDENCE_SCORES)?.firstOrNull()
+                    trySend(RecognitionEvent.Final(list.firstOrNull().orEmpty(), conf, list.drop(1))); close()
+                }
+                override fun onPartialResults(partialResults: Bundle?) {
+                    partialResults?.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)?.firstOrNull()?.let { trySend(RecognitionEvent.Partial(it)) }
+                }
+                override fun onEvent(eventType: Int, params: Bundle?) {}
+            })
+            recognizer.startListening(intent)
+        }
+
+        start(onDevice = Build.VERSION.SDK_INT >= 31 && SpeechRecognizer.isOnDeviceRecognitionAvailable(context) && localeTag !in notOnDevice)
         // Cancelling the flow (leaving the screen, pressing cancel) always stops the microphone.
-        awaitClose { recognizer.cancel(); recognizer.destroy(); if (active === recognizer) active = null }
+        awaitClose { current?.let { r -> r.cancel(); r.destroy(); if (active === r) active = null } }
     }.flowOn(Dispatchers.Main)
+
+    private fun isLanguageError(e: Int) =
+        Build.VERSION.SDK_INT >= 31 && (e == SpeechRecognizer.ERROR_LANGUAGE_NOT_SUPPORTED || e == SpeechRecognizer.ERROR_LANGUAGE_UNAVAILABLE)
 
     override fun stopListening() { active?.stopListening() }
 
@@ -189,7 +210,7 @@ class AndroidSpeechRecognizer(private val context: Context) : SpeechRecognizerSe
         SpeechRecognizer.ERROR_NETWORK, SpeechRecognizer.ERROR_NETWORK_TIMEOUT, SpeechRecognizer.ERROR_SERVER -> SpeechErrorKind.NETWORK
         SpeechRecognizer.ERROR_RECOGNIZER_BUSY -> SpeechErrorKind.RECOGNIZER_BUSY
         SpeechRecognizer.ERROR_CLIENT -> SpeechErrorKind.CANCELLED
-        else -> if (Build.VERSION.SDK_INT >= 31 && (e == SpeechRecognizer.ERROR_LANGUAGE_NOT_SUPPORTED || e == SpeechRecognizer.ERROR_LANGUAGE_UNAVAILABLE)) SpeechErrorKind.LANGUAGE_UNSUPPORTED else SpeechErrorKind.UNKNOWN
+        else -> if (isLanguageError(e)) SpeechErrorKind.LANGUAGE_UNSUPPORTED else SpeechErrorKind.UNKNOWN
     }
 }
 

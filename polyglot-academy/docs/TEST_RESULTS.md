@@ -408,7 +408,12 @@ transcript was word for word right and gave vocabulary suggestions; the cache co
 Found and fixed: the debug build compiled whisper.cpp unoptimised (a run was stopped after 4 minutes);
 the native code is now always optimised, and the same file took 149 s on the emulator. The progress
 message promised "about as long as the recording" and was corrected. Not tested: a real phone,
-video files, other languages, long files. Build: 308 tests, 0 failures (core 204, data 66, uicore 12, ui 26); release APK 30.2 MB (the library adds 1.2-2.0 MB per ABI). Build: 306 tests, 0 failures (core 204, data 65, uicore 12, ui 25); release APK builds (about 28 MB). Build: 295 tests, 0 failures (core 196, data 65, uicore 12, ui 22); release APK builds. Build: 291 tests, 0 failures (core 196, data 64, uicore 12, ui 19); release APK builds.
+video files, other languages, long files. Build: 308 tests, 0 failures (core 204, data 66, uicore 12, ui 26); release APK 30.2 MB (the library adds 1.2-2.0 MB per ABI).
+
+**Microphone "language not supported" (2026-11-01, K-31).** Fallback from the on-device recognizer to the
+regular one on a language error, built and the full suite run (308 tests, 0 failures). Not exercised:
+the emulator image has no speech recognition service (`pm query-services` finds none), so the fix
+waits for a test on the owner's phone. Build: 306 tests, 0 failures (core 204, data 65, uicore 12, ui 25); release APK builds (about 28 MB). Build: 295 tests, 0 failures (core 196, data 65, uicore 12, ui 22); release APK builds. Build: 291 tests, 0 failures (core 196, data 64, uicore 12, ui 19); release APK builds.
 
 | Module | Test class | Tests | Failures |
 |---|---|---|---|

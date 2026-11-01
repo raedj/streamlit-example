@@ -126,7 +126,7 @@ SPEECH_ERR_PERMISSION_DENIED ¦ Microphone access is off. You can type instead, 
 SPEECH_ERR_MICROPHONE_UNAVAILABLE ¦ No microphone is available on this device. ¦ لا يتوفر ميكروفون على هذا الجهاز.
 SPEECH_ERR_NO_SPEECH_DETECTED ¦ We didn't hear anything. Tap the microphone and try again. ¦ لم نسمع شيئًا. اضغط على الميكروفون وحاول مرة أخرى.
 SPEECH_ERR_RECOGNITION_TIMEOUT ¦ Listening timed out. Try again when you're ready. ¦ انتهت مهلة الاستماع. حاول مرة أخرى عندما تكون مستعدًا.
-SPEECH_ERR_LANGUAGE_UNSUPPORTED ¦ Speech recognition doesn't support this language on your device. ¦ لا يدعم التعرّف على الكلام هذه اللغة على جهازك.
+SPEECH_ERR_LANGUAGE_UNSUPPORTED ¦ Your phone's speech recognition does not offer this language. Add it in the phone's voice-input settings (for example Google → Voice → Languages), or type your answer. ¦ لا يوفّر التعرّف على الكلام في هاتفك هذه اللغة. أضِفها من إعدادات الإدخال الصوتي في الهاتف (مثلًا Google ← الصوت ← اللغات)، أو اكتب إجابتك.
 SPEECH_ERR_NETWORK ¦ A network problem interrupted the request. ¦ قاطعت مشكلة في الشبكة الطلب.
 SPEECH_ERR_RECOGNIZER_BUSY ¦ The speech recognizer is busy. Try again in a moment. ¦ أداة التعرّف على الكلام مشغولة. حاول بعد لحظة.
 SPEECH_ERR_AUDIO_FOCUS_LOST ¦ Another app took over audio. ¦ استحوذ تطبيق آخر على الصوت.

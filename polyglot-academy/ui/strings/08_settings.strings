@@ -20,7 +20,7 @@ SET_AUTOPLAY ¦ Read tutor replies aloud ¦ قراءة ردود المعلّم �
 SET_SHOW_TRANSCRIPT ¦ Show live transcript while listening ¦ إظهار النص المباشر أثناء الاستماع
 SET_SPEECH_ENGINE ¦ Speech uses your device's speech recognition and text-to-speech services. ¦ يستخدم الكلام خدمات التعرّف على الكلام وتحويل النص إلى كلام في جهازك.
 SET_SPEECH_ON_DEVICE ¦ Recognition on this device: {0} ¦ التعرّف على هذا الجهاز: {0}
-SET_SPEECH_STATUS_YES ¦ processed on the device ¦ يُعالج على الجهاز
+SET_SPEECH_STATUS_YES ¦ on the device for the languages your phone has downloaded; other languages use its regular speech service, which may work online ¦ على الجهاز للّغات التي نزّلها هاتفك؛ أما غيرها فتستخدم خدمة الكلام المعتادة في الهاتف، وقد تعمل عبر الإنترنت
 SET_SPEECH_STATUS_NO ¦ may be processed by your device's speech provider online ¦ قد يُعالج عبر الإنترنت لدى مزوّد الكلام في جهازك
 SET_SPEECH_STATUS_UNKNOWN ¦ unknown ¦ غير معروف
 SET_ACCESSIBILITY ¦ Accessibility ¦ إمكانية الوصول
