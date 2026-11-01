@@ -35,6 +35,11 @@ settings removes the word. It reads the same local data as the home screen and s
 
 **AI-written stories** send only the chosen topic, level and a few known words (LESSON_CONTENT).
 
+**Transcription** of imported audio and video runs on the phone (whisper.cpp); the recording is never sent.
+The speech model (59.7 MB) is downloaded only when the learner agrees in a dialog, from
+huggingface.co/ggerganov/whisper.cpp over HTTPS; that request carries no learner data, and the file is
+checked against its SHA-256 before use.
+
 ## Retention and deletion
 | Data | Where | Kept until |
 |---|---|---|
@@ -44,6 +49,8 @@ settings removes the word. It reads the same local data as the home screen and s
 | API keys, WebDAV password, sync passphrase, speech key | Android Keystore–encrypted store | "Delete everything", "Disconnect" (sync) or removing the key |
 | Sync file | The learner's own WebDAV server, encrypted | The learner deletes it on the server; disconnecting only removes the connection from the device |
 | Text or audio sent to an AI or speech provider | That provider | That provider's own retention policy (outside the app's control) |
+| Copy of an imported audio or video file | `cache/media/` | Deleted after transcription, and every time the app starts |
+| Speech model for transcription (no personal data) | `noBackupFilesDir/whisper/` | The learner deletes it (Settings → On-device models) or uninstalls |
 | Optional backup file (`files/backup/`, no secrets) | Device, included in Android backup | Backup is turned off (the file is deleted) |
 
 "Delete everything" removes all of the above that is on the device, every stored secret and the

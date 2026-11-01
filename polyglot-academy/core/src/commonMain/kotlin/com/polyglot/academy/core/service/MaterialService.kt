@@ -40,7 +40,8 @@ sealed interface ImportProgress {
 /**
  * Turns learner-provided material into study content. Text and caption files are processed on
  * device in chunks; PDFs with real text are extracted on device ([PdfTextExtractor]). Scanned
- * PDFs (OCR), images and audio/video transcription are reported as unsupported rather than faked.
+ * PDFs and images can be read with OCR, and speech in audio/video transcribed on the device, each on
+ * the learner's request; what cannot be processed is reported as unsupported rather than faked.
  */
 class MaterialService(
     private val library: LibraryRepository,
@@ -51,10 +52,12 @@ class MaterialService(
     /** Platform-provided extraction support (e.g. Android PDF text via a library). */
     private val platformSupport: Map<MaterialType, ExtractionSupport> = emptyMap(),
     private val ocr: OcrService? = null,
+    private val transcriber: com.polyglot.academy.core.media.DeviceTranscriber? = null,
 ) {
     fun support(type: MaterialType): ExtractionSupport = when (type) {
         MaterialType.TEXT, MaterialType.CAPTIONS, MaterialType.PDF -> ExtractionSupport.SUPPORTED
         MaterialType.IMAGE -> if (ocr != null) ExtractionSupport.AI_OCR else ExtractionSupport.NOT_IMPLEMENTED
+        MaterialType.AUDIO, MaterialType.VIDEO -> if (transcriber != null) ExtractionSupport.ON_DEVICE_TRANSCRIPTION else platformSupport[type] ?: ExtractionSupport.NOT_IMPLEMENTED
         else -> platformSupport[type] ?: ExtractionSupport.NOT_IMPLEMENTED
     }
 
@@ -88,6 +91,27 @@ class MaterialService(
         return updated to result
     }
 
+    val transcription: com.polyglot.academy.core.media.DeviceTranscriber? get() = transcriber
+
+    /** Whether speech in this kind of file, in this language, can be transcribed on the device. */
+    fun canTranscribe(type: MaterialType, language: LanguageCode): Boolean =
+        transcriber != null && (type == MaterialType.AUDIO || type == MaterialType.VIDEO) && language in transcriber.languages
+
+    /** Transcribes [source] on the device and stores the text for review; nothing is sent anywhere. */
+    suspend fun transcribe(material: ImportedMaterial, source: String, onStage: (com.polyglot.academy.core.media.TranscriptionStage) -> Unit = {}):
+        Pair<ImportedMaterial, com.polyglot.academy.core.media.TranscriptionResult> {
+        val t = transcriber ?: return material to com.polyglot.academy.core.media.TranscriptionResult.Failed("no transcriber")
+        val result = t.transcribe(source, material.language, onStage)
+        val updated = when (result) {
+            is com.polyglot.academy.core.media.TranscriptionResult.Text -> material.copy(status = MaterialStatus.READY_FOR_REVIEW, extractedText = result.text, errorMessage = null)
+            com.polyglot.academy.core.media.TranscriptionResult.NoSpeech -> material.copy(status = MaterialStatus.FAILED, errorMessage = "no_speech")
+            com.polyglot.academy.core.media.TranscriptionResult.Unreadable -> material.copy(status = MaterialStatus.FAILED, errorMessage = "audio_unreadable")
+            else -> material
+        }
+        if (updated != material) library.upsertMaterial(updated)
+        return updated to result
+    }
+
     fun import(language: LanguageCode, input: ImportInput, cloudAllowed: Boolean): Flow<ImportProgress> = flow {
         val type = ImportPolicy.typeFor(input.mimeType, input.fileName)
         val validation = ImportPolicy.validate(type, input.sizeBytes)
@@ -108,7 +132,11 @@ class MaterialService(
             }
         } else input.text
         if (support(type) == ExtractionSupport.NOT_IMPLEMENTED || raw == null) {
-            val reason = if (type == MaterialType.IMAGE && ocr != null) "needs_ocr" else "extraction_not_available"
+            val reason = when {
+                type == MaterialType.IMAGE && ocr != null -> "needs_ocr"
+                canTranscribe(type, language) -> "needs_transcription"
+                else -> "extraction_not_available"
+            }
             material = material.copy(status = MaterialStatus.UNSUPPORTED, errorMessage = reason)
             library.upsertMaterial(material)
             emit(ImportProgress.Done(material)); return@flow

@@ -86,6 +86,31 @@ SUPPORT_SUPPORTED ¦ Supported ¦ مدعوم
 SUPPORT_PLATFORM_DEPENDENT ¦ Depends on your device ¦ يعتمد على جهازك
 SUPPORT_NOT_IMPLEMENTED ¦ Not yet supported ¦ غير مدعوم بعد
 SUPPORT_AI_OCR ¦ With AI, on request ¦ بالذكاء الاصطناعي عند الطلب
+SUPPORT_ON_DEVICE_TRANSCRIPTION ¦ Transcribed on this device ¦ يُفرَّغ على هذا الجهاز
+MATERIAL_NEEDS_TRANSCRIPTION ¦ This file has no text yet. Its speech can be transcribed on this device below. ¦ لا نصّ لهذا الملف بعد. يمكن تفريغ الكلام فيه على هذا الجهاز أدناه.
+TRANSCRIBE_TITLE ¦ Transcribe on this device ¦ التفريغ على هذا الجهاز
+TRANSCRIBE_BODY ¦ Speech in {0} is turned into text by a speech model running on your phone; the recording is not sent anywhere. Up to the first {1} minutes are transcribed. ¦ يُحوَّل الكلام بلغة {0} إلى نصّ بنموذج كلام يعمل على هاتفك، ولا يُرسل التسجيل إلى أيّ جهة. يُفرَّغ أوّل {1} دقائق كحدّ أقصى.
+TRANSCRIBE_REIMPORT ¦ Import the file again to transcribe it (the copy is not kept after the app closes). ¦ استورد الملف مرة أخرى لتفريغه (لا تُحفظ النسخة بعد إغلاق التطبيق).
+TRANSCRIBE_MODEL_NEEDED ¦ The speech model ({0} MB) needs to be downloaded once. ¦ يلزم تنزيل نموذج الكلام ({0} ميغابايت) مرة واحدة.
+TRANSCRIBE_DOWNLOAD ¦ Download speech model ({0} MB) ¦ تنزيل نموذج الكلام ({0} ميغابايت)
+TRANSCRIBE_DOWNLOADING ¦ Downloading… {0}% ¦ جارٍ التنزيل… {0}٪
+TRANSCRIBE_CONFIRM_TITLE ¦ Download the speech model? ¦ تنزيل نموذج الكلام؟
+TRANSCRIBE_CONFIRM_BODY ¦ About {0} MB is downloaded from the whisper.cpp model page on Hugging Face and checked before use. Only the model file is requested; nothing about you or your files is sent. Use Wi-Fi if your data plan is limited. ¦ يُنزَّل نحو {0} ميغابايت من صفحة نماذج whisper.cpp على Hugging Face ويُتحقَّق منه قبل الاستخدام. يُطلب ملف النموذج فقط، ولا يُرسل شيء عنك أو عن ملفاتك. استخدم Wi-Fi إن كانت باقتك محدودة.
+TRANSCRIBE_DOWNLOAD_FAILED ¦ The model could not be downloaded or did not pass the check. Try again later. ¦ تعذّر تنزيل النموذج أو لم يجتز التحقّق. حاول لاحقًا.
+TRANSCRIBE_START ¦ Transcribe ¦ فرّغ النص
+TRANSCRIBE_DECODING ¦ Reading the audio… ¦ جارٍ قراءة الصوت…
+TRANSCRIBE_RECOGNISING ¦ Recognising speech… This can take a while, on slower phones several times the length of the recording. Keep the app open. ¦ جارٍ التعرّف على الكلام… قد يستغرق ذلك وقتًا، وعلى الهواتف الأبطأ أضعاف مدة التسجيل. أبقِ التطبيق مفتوحًا.
+TRANSCRIBE_DONE ¦ Transcribed. Check the text below before using it. ¦ تمّ التفريغ. راجع النص أدناه قبل استخدامه.
+TRANSCRIBE_DONE_CUT ¦ The first {0} minutes were transcribed. Check the text before using it. ¦ فُرّغت أوّل {0} دقائق. راجع النص قبل استخدامه.
+TRANSCRIBE_NO_SPEECH ¦ No speech was recognised in this file. ¦ لم يُتعرَّف على كلام في هذا الملف.
+TRANSCRIBE_UNREADABLE ¦ The audio in this file could not be read on this device. ¦ تعذّرت قراءة الصوت في هذا الملف على هذا الجهاز.
+TRANSCRIBE_MODEL_MISSING ¦ The speech model is missing; download it again. ¦ نموذج الكلام غير موجود؛ نزّله مرة أخرى.
+TRANSCRIBE_FAILED ¦ Transcription failed on this device. ¦ فشل التفريغ على هذا الجهاز.
+TRANSCRIBE_CHECK ¦ This text was transcribed automatically and may contain mistakes, especially names and quiet passages. ¦ فُرّغ هذا النص آليًا وقد يحتوي أخطاء، خاصة في الأسماء والمقاطع الخافتة.
+TRANSCRIBE_MODEL_TITLE ¦ Speech model for transcription ¦ نموذج الكلام للتفريغ
+TRANSCRIBE_MODEL_READY ¦ Whisper base ({0} MB) is on this device. ¦ نموذج Whisper الأساسي ({0} ميغابايت) موجود على هذا الجهاز.
+TRANSCRIBE_MODEL_ABSENT ¦ Not downloaded. It is offered when you transcribe an audio or video file ({0} MB). ¦ لم يُنزَّل. يُعرض تنزيله حين تفرّغ ملف صوت أو فيديو ({0} ميغابايت).
+TRANSCRIBE_MODEL_DELETE ¦ Delete the speech model ¦ حذف نموذج الكلام
 MTYPE_TEXT ¦ Text (.txt, .md) ¦ نص (.txt و.md)
 MTYPE_CAPTIONS ¦ Subtitles (.srt, .vtt) ¦ ترجمات (.srt و.vtt)
 MTYPE_PDF ¦ PDF ¦ PDF

@@ -41,7 +41,7 @@ build exists only as a test harness; there is no iOS app.
 | PR-16 | Daily plan that fits the learner's time budget and does not grow after a missed day; a reason for the suggested activity and the choice of another | Implemented + tested; on the emulator |
 | PR-17 | Progress analytics from real events, separating observed metrics from estimates; no fabricated data | Implemented + tested |
 | PR-18 | Optional professional tracks (business, banking/finance, credit risk & NPL, legal, career) with "not professional advice" disclaimers | Implemented: English (5 tracks); the other seven languages have "for work", "banking and finance", "credit and risk" and legal tracks (smaller than the English ones) |
-| PR-19 | Import of own material (text, subtitles, text-based PDF, photos, scanned PDFs) → extracted text review → word candidates → review deck | Implemented + tested; photos read on the device for all eight languages (Tesseract), or with AI on request; audio and video transcription not implemented (needs an owner decision on a local model) |
+| PR-19 | Import of own material (text, subtitles, text-based PDF, photos, scanned PDFs) → extracted text review → word candidates → review deck | Implemented + tested; photos read on the device for all eight languages (Tesseract), or with AI on request; audio and video transcribed on the device (Whisper base via whisper.cpp, model downloaded on request) |
 | PR-20 | Optional relaxation/breathing with evidence-conscious disclaimer | Implemented |
 | PR-21 | AI provider management with own API keys, verified connection tests, preferred provider | Implemented + tested (mocked HTTP); no real keys tried |
 | PR-22 | Privacy controls per data category, consent before cloud AI, no silent fallback to another cloud provider; secret fields hidden from the keyboard; an in-app page on what is stored, what can leave the device, retention and deletion | Implemented + tested; page checked on the emulator. The legal privacy policy is not written or hosted (owner) |
@@ -57,7 +57,6 @@ build exists only as a test harness; there is no iOS app.
 
 ## Not covered
 - C1 and C2 courses (PR-26); graded stories above B1.
-- Audio and video transcription (PR-19).
 - Arabic and Urdu letters inside words (initial, medial and final forms, joining); Nastaliq letter shapes for Urdu.
 - Interface languages other than Arabic and English (each needs a reviewer).
 - iOS.

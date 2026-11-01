@@ -23,6 +23,8 @@ class PolyglotApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         platform = AndroidPlatformServices(this)
+        // Copies of audio and video kept for transcription do not outlive the process that picked them.
+        java.io.File(cacheDir, "media").deleteRecursively()
         val store = SqlStore(createAndroidDriver(this), Dispatchers.IO)
         services = AppServices(store, platform, defaultHttpClient())
         // Keep the optional, secret-free backup file in sync with the learner's choice.

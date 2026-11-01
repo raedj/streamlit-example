@@ -190,7 +190,7 @@ fun LibraryScreen() {
     val notes by remember { app.services.store.notes() }.collectAsState(emptyList())
     val bookmarks by remember { app.services.store.bookmarks() }.collectAsState(emptyList())
 
-    fun runImport(input: ImportInput, cloudAllowed: Boolean) = scope.launch {
+    fun runImport(input: ImportInput, cloudAllowed: Boolean, mediaPath: String? = null) = scope.launch {
         app.services.materials.import(lang, input, cloudAllowed).collect { p ->
             when (p) {
                 is ImportProgress.Processing -> progress = p.fraction
@@ -199,6 +199,8 @@ fun LibraryScreen() {
                     // Keep the file in memory so the learner can choose to read it with AI on the next screen.
                     val bytes = input.bytes
                     if (bytes != null && app.services.materials.canTryOcr(p.material)) PendingOcrFiles.put(p.material.id, input.mimeType, bytes)
+                    // Audio and video: the private copy waits for the learner to ask for a transcript (or is deleted).
+                    if (mediaPath != null) { if (p.material.errorMessage == "needs_transcription") PendingMediaFiles.put(p.material.id, mediaPath) else app.platformUi.deleteLocalFile(mediaPath) }
                     app.nav.push(Route.Material(p.material.id))
                 }
                 is ImportProgress.Rejected -> {
@@ -225,7 +227,7 @@ fun LibraryScreen() {
                 Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                     SecondaryButton(s[K.LIBRARY_IMPORT_FILE], {
                         if (!app.platformUi.canPickFiles) toast(s[K.MATERIAL_PICKER_UNAVAILABLE])
-                        else scope.launch { app.platformUi.pickFile()?.let { f -> runImport(ImportInput(f.name, f.mimeType, f.name, f.sizeBytes, f.text, f.bytes), false) } }
+                        else scope.launch { app.platformUi.pickFile()?.let { f -> runImport(ImportInput(f.name, f.mimeType, f.name, f.sizeBytes, f.text, f.bytes), false, f.localPath) } }
                     }, Modifier.weight(1f), icon = Icons.Filled.UploadFile)
                     PrimaryButton(s[K.LIBRARY_PASTE], { pasting = true }, Modifier.weight(1f), icon = Icons.Filled.ContentPaste)
                 }
@@ -251,7 +253,7 @@ fun LibraryScreen() {
                         val onDevice = t == MaterialType.IMAGE && app.services.materials.canReadOnDevice(lang)
                         Row { Text(Labels.materialType(s, t), Modifier.weight(1f), style = MaterialTheme.typography.bodyMedium)
                             Text(if (onDevice) s[K.SUPPORT_DEVICE_OCR] else s[K.valueOf("SUPPORT_${sup.name}")], style = MaterialTheme.typography.labelMedium,
-                                color = if (sup == ExtractionSupport.SUPPORTED || onDevice) c.success else c.textSecondary) }
+                                color = if (sup == ExtractionSupport.SUPPORTED || sup == ExtractionSupport.ON_DEVICE_TRANSCRIPTION || onDevice) c.success else c.textSecondary) }
                     }
                 }
             }
@@ -348,13 +350,18 @@ fun MaterialScreen(materialId: String) {
                     "no_text_found" -> K.MATERIAL_NO_TEXT
                     "needs_ocr" -> if (app.services.materials.canReadOnDevice(material)) K.MATERIAL_NEEDS_OCR_DEVICE else K.MATERIAL_NEEDS_OCR
                     "ocr_no_text" -> K.MATERIAL_OCR_NO_TEXT
+                    "needs_transcription" -> K.MATERIAL_NEEDS_TRANSCRIPTION
+                    "no_speech" -> K.TRANSCRIBE_NO_SPEECH
+                    "audio_unreadable" -> K.TRANSCRIBE_UNREADABLE
                     else -> K.MATERIAL_UNSUPPORTED_BODY
                 }])
                 if (app.services.materials.canTryOcr(material)) OcrCard(material)
+                if (app.services.materials.canTranscribe(material.type, material.language)) TranscribeCard(material)
             }
             else -> {
                 if (material.cloudProcessingAllowed && material.type != MaterialType.TEXT) Banner(BannerKind.INFO, s[K.MATERIAL_OCR_CHECK])
                 else if (material.type == MaterialType.IMAGE) Banner(BannerKind.INFO, s[K.MATERIAL_OCR_DEVICE_CHECK])
+                else if (material.type == MaterialType.AUDIO || material.type == MaterialType.VIDEO) Banner(BannerKind.INFO, s[K.TRANSCRIBE_CHECK])
                 if (material.type == MaterialType.PDF) Banner(BannerKind.INFO, s[K.MATERIAL_PDF_CHECK])
                 SectionHeader(s[K.MATERIAL_TEXT_REVIEW])
                 Text(s[K.MATERIAL_TEXT_EDIT_NOTE], style = MaterialTheme.typography.bodySmall, color = c.textSecondary)

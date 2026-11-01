@@ -9,3 +9,5 @@
 # Tesseract4Android: native code calls back into these classes by name.
 -keep class com.googlecode.tesseract.android.** { *; }
 -keep class com.googlecode.leptonica.android.** { *; }
+# whisper.cpp JNI: the native symbols name this class and its methods.
+-keep class com.polyglot.academy.android.WhisperNative { native <methods>; }

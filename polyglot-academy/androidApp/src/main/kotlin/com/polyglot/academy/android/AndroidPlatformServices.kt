@@ -88,6 +88,9 @@ class AndroidPlatformServices(private val context: Context) : PlatformServices {
 
     override val deviceOcr: DeviceOcr by lazy { TesseractOcr(context) }
 
+    // Speech to text on the device; the model is downloaded on the learner's request.
+    override val transcriber: com.polyglot.academy.core.media.DeviceTranscriber by lazy { WhisperTranscriber(context) }
+
     override suspend fun scheduleReminder(enabled: Boolean, hour: Int, minute: Int, days: Set<Int>): Boolean =
         Reminders.schedule(context, enabled, hour, minute, days)
 

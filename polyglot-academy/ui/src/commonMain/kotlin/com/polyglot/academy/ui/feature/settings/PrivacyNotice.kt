@@ -30,7 +30,7 @@ fun PrivacyNoticeScreen() {
         Text(s.f(K.PRIV_INTRO, app.platformUi.appVersion), style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
         listOf(
             K.PRIV_STORED_TITLE to listOf(K.PRIV_STORED, K.PRIV_KEYS),
-            K.PRIV_LEAVES_TITLE to listOf(K.PRIV_NO_SERVER, K.PRIV_AI, K.PRIV_VOICE, K.PRIV_SYNC, K.PRIV_SPEECH),
+            K.PRIV_LEAVES_TITLE to listOf(K.PRIV_NO_SERVER, K.PRIV_AI, K.PRIV_VOICE, K.PRIV_SYNC, K.PRIV_TRANSCRIBE, K.PRIV_SPEECH),
             K.PRIV_PERMISSIONS_TITLE to listOf(K.PRIV_PERMISSIONS),
             K.PRIV_KEPT_TITLE to listOf(K.PRIV_KEPT_DEVICE, K.PRIV_KEPT_PHOTOS, K.PRIV_KEPT_REPORTS, K.PRIV_KEPT_SYNC, K.PRIV_KEPT_PROVIDERS, K.PRIV_KEPT_BACKUP),
             K.PRIV_DELETE_TITLE to listOf(K.PRIV_DELETE, K.PRIV_UNINSTALL),

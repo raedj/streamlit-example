@@ -97,6 +97,15 @@ format. `tools/extract_strokes.py` reproduces the file from the original `graphi
 the app is not under the Arphic licence; the data is a separate work aggregated with it. This reading
 of the licence is not legal advice.
 
+## On-device transcription (speech to text)
+| What | Where | Licence | Source | Used for |
+|---|---|---|---|---|
+| whisper.cpp v1.9.5 (C/C++ inference code, CPU parts only) | `androidApp/src/main/cpp/whisper/` (see `VENDORED.txt`) | MIT (`docs/licenses/MIT-whisper.cpp.txt`) | github.com/ggml-org/whisper.cpp, tag v1.9.5, archive SHA-256 ff1a9053…dc1720, downloaded 2026-11-01 with the owner's approval | Running the speech model on the phone |
+| Whisper "base" model, 5-bit quantised (`ggml-base-q5_1.bin`, 59,707,625 bytes) | Not in the repository or APK: downloaded by the app on the learner's request into `noBackupFilesDir/whisper/` | MIT (OpenAI Whisper weights; ggml conversion by the whisper.cpp project) | huggingface.co/ggerganov/whisper.cpp, SHA-256 422f1ae4…1a8898, checked after every download | Transcribing speech in the eight learning languages |
+
+Accuracy differs by language: Whisper base is much weaker for Urdu, Malay and Arabic than for
+English, Spanish and French, and the app asks the learner to check every transcript.
+
 ## Arabic and Urdu letter templates
 The 41 isolated letters used for letter writing (28 Arabic, 13 more for Urdu) are drawn for this
 app in a simple Naskh hand, as strokes in writing order with their dots or small signs

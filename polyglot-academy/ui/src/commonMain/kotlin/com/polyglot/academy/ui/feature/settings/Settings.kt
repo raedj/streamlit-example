@@ -450,6 +450,14 @@ private fun LocalModelsPage() {
     val c = PolyglotTheme.colors
     val info = remember { app.services.platform.deviceInfo() }
     Text(s[K.LOCAL_INTRO], style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
+    app.services.materials.transcription?.let { t ->
+        var ready by remember { mutableStateOf(t.isModelReady()) }
+        SectionHeader(s[K.TRANSCRIBE_MODEL_TITLE])
+        PolyCard {
+            Text(s.f(if (ready) K.TRANSCRIBE_MODEL_READY else K.TRANSCRIBE_MODEL_ABSENT, (t.modelSizeBytes / 1_000_000).toInt()), style = MaterialTheme.typography.bodyMedium)
+            if (ready) QuietButton(s[K.TRANSCRIBE_MODEL_DELETE], { t.deleteModel(); ready = t.isModelReady() })
+        }
+    }
     SectionHeader(s[K.LOCAL_DEVICE])
     PolyCard {
         Text(when (DeviceCapability.tier(info)) { DeviceTier.LOW -> s[K.LOCAL_TIER_LOW]; DeviceTier.MID -> s[K.LOCAL_TIER_MID]; DeviceTier.HIGH -> s[K.LOCAL_TIER_HIGH] }, style = MaterialTheme.typography.titleSmall)

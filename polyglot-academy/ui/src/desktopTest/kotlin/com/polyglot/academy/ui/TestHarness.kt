@@ -36,11 +36,18 @@ import kotlinx.datetime.TimeZone
 /** 2026-10-24 09:00 UTC — a fixed "now" so screenshots and tests are reproducible. */
 const val TEST_NOW = 1_792_832_400_000L
 
-class TestApp(val clock: FixedTimeSource = FixedTimeSource(TEST_NOW), deviceOcr: com.polyglot.academy.core.service.DeviceOcr? = null) {
-    /** The desktop platform, optionally with a fake on-device text recognizer (the desktop has none). */
+class TestApp(
+    val clock: FixedTimeSource = FixedTimeSource(TEST_NOW),
+    deviceOcr: com.polyglot.academy.core.service.DeviceOcr? = null,
+    transcriber: com.polyglot.academy.core.media.DeviceTranscriber? = null,
+) {
+    /** The desktop platform, optionally with fake on-device text recognition and transcription (the desktop has neither). */
     val platform: com.polyglot.academy.core.service.PlatformServices =
-        if (deviceOcr == null) DesktopPlatformServices()
-        else object : com.polyglot.academy.core.service.PlatformServices by DesktopPlatformServices() { override val deviceOcr = deviceOcr }
+        if (deviceOcr == null && transcriber == null) DesktopPlatformServices()
+        else object : com.polyglot.academy.core.service.PlatformServices by DesktopPlatformServices() {
+            override val deviceOcr = deviceOcr
+            override val transcriber = transcriber
+        }
     val store = SqlStore(createJvmDriver(), Dispatchers.IO, TimeZone.UTC, clock)
     val services = AppServices(store, platform, HttpClient(), clock, SequentialIdGenerator())
 

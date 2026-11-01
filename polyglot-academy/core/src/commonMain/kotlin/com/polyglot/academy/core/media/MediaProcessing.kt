@@ -183,6 +183,8 @@ enum class ExtractionSupport {
     SUPPORTED, PLATFORM_DEPENDENT, NOT_IMPLEMENTED,
     /** Text can be read with a vision AI provider, on the learner's explicit request (images are sent to it). */
     AI_OCR,
+    /** Speech is transcribed on the device after a one-time model download. */
+    ON_DEVICE_TRANSCRIPTION,
 }
 
 data class ProcessingProgress(val processedChunks: Int, val totalChunks: Int, val partialText: String?, val done: Boolean) {

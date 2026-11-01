@@ -149,6 +149,38 @@ class UiFlowTest {
         waitUntil(timeoutMillis = 5_000) { runBlocking { app.store.currentSettings() }.privacy.cloudAiEnabled }
     }
 
+    @Test fun audioIsTranscribedAfterTheModelDownloadIsConfirmed() = runDesktopComposeUiTest(800, 1700) {
+        var ready = false
+        var downloads = 0
+        val fake = object : com.polyglot.academy.core.media.DeviceTranscriber {
+            override val languages = setOf(LanguageCode.FRENCH)
+            override val modelSizeBytes = 59_707_625L
+            override fun isModelReady() = ready
+            override suspend fun downloadModel(onProgress: (Float) -> Unit): Result<Unit> { downloads++; onProgress(1f); ready = true; return Result.success(Unit) }
+            override fun deleteModel() { ready = false }
+            override suspend fun transcribe(source: String, language: LanguageCode, onStage: (com.polyglot.academy.core.media.TranscriptionStage) -> Unit) =
+                com.polyglot.academy.core.media.TranscriptionResult.Text("Bonjour à tous.", 3, truncated = false)
+        }
+        val app = TestApp(transcriber = fake); app.profile(learn = LanguageCode.FRENCH)
+        val done = runBlocking {
+            app.services.materials.import(LanguageCode.FRENCH, com.polyglot.academy.core.service.ImportInput("Cours", "audio/mpeg", "cours.mp3", 1000, null), false)
+                .toList().last() as com.polyglot.academy.core.service.ImportProgress.Done
+        }
+        com.polyglot.academy.ui.feature.me.PendingMediaFiles.put(done.material.id, "/tmp/cours.mp3")
+        setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.ME), Route.Material(done.material.id))) }
+        waitForText("Download speech model (59 MB)")
+        onNodeWithText("Download speech model (59 MB)").performScrollTo().performClick()
+        waitForText("Download the speech model?")
+        assertEquals(0, downloads, "nothing is downloaded before the learner agrees")
+        onAllNodesWithText("Download speech model (59 MB)").fetchSemanticsNodes().size.let { assertTrue(it >= 2) }
+        onAllNodesWithText("Download speech model (59 MB)")[1].performClick()
+        waitForText("Transcribe")
+        onNodeWithText("Transcribe").performScrollTo().performClick()
+        waitUntil(timeoutMillis = 10_000) { runBlocking { app.store.materials(LanguageCode.FRENCH).first().single().extractedText == "Bonjour à tous." } }
+        assertEquals(1, downloads)
+        assertTrue(com.polyglot.academy.ui.feature.me.PendingMediaFiles.get(done.material.id) == null, "the private copy is let go")
+    }
+
     @Test fun privacyPageIsReachedFromPrivacySettings() = runDesktopComposeUiTest(800, 1700) {
         val app = TestApp(); app.profile(ui = LanguageCode.ARABIC)
         setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.ME), Route.SettingsPage(SettingsSection.PRIVACY))) }

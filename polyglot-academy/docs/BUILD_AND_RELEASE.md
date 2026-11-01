@@ -8,6 +8,9 @@
 ## Prerequisites
 - JDK 17+ (21 used here)
 - For Android: Android SDK (platform 35, build-tools 35) and access to Google Maven.
+- For Android since 2026-11-01: NDK 28.2.13676358 and CMake 4.1.2 (`sdkmanager "ndk;28.2.13676358" "cmake;4.1.2"`),
+  for the on-device transcription library built from `androidApp/src/main/cpp`. The native code is always
+  built optimised, also in debug builds (unoptimised it is far too slow to use).
 
 ## JVM modules (works without Google Maven)
 ```bash

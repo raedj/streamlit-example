@@ -11,6 +11,9 @@ android {
     namespace = "com.polyglot.academy.android"
     // Compose 1.12 libraries require compiling against API 37; the app still targets API 35.
     compileSdk = 37
+    // On-device transcription (whisper.cpp) is built from src/main/cpp.
+    ndkVersion = "28.2.13676358"
+    externalNativeBuild { cmake { path = file("src/main/cpp/CMakeLists.txt"); version = "4.1.2" } }
     defaultConfig {
         applicationId = "com.polyglot.academy"
         minSdk = 26

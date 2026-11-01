@@ -246,6 +246,37 @@ class ServicesIntegrationTest {
         assertEquals(1, hidden.dueReviews)
     }
 
+    @Test fun audioIsTranscribedOnTheDeviceOnlyWhenAsked() = runBlocking<Unit> {
+        val heard = mutableListOf<Pair<String, LanguageCode>>()
+        val fake = object : com.polyglot.academy.core.media.DeviceTranscriber {
+            override val languages = setOf(LanguageCode.SPANISH)
+            override val modelSizeBytes = 1L
+            override fun isModelReady() = true
+            override suspend fun downloadModel(onProgress: (Float) -> Unit) = Result.success(Unit)
+            override fun deleteModel() {}
+            override suspend fun transcribe(source: String, language: LanguageCode, onStage: (com.polyglot.academy.core.media.TranscriptionStage) -> Unit) =
+                if (source.endsWith("silence")) com.polyglot.academy.core.media.TranscriptionResult.NoSpeech
+                else { heard += source to language; com.polyglot.academy.core.media.TranscriptionResult.Text("Hola, ¿qué tal?", 4, truncated = false) }
+        }
+        val platformWith = object : PlatformServices by FakePlatform() { override val transcriber = fake }
+        val services = AppServices(store, platformWith, HttpClient(), clock, SequentialIdGenerator())
+        enroll(LanguageCode.SPANISH)
+        val audio = com.polyglot.academy.core.service.ImportInput("Clase", "audio/mpeg", "clase.mp3", 1000, null)
+        val imported = (services.materials.import(LanguageCode.SPANISH, audio, false).toList().last() as com.polyglot.academy.core.service.ImportProgress.Done).material
+        assertEquals("needs_transcription", imported.errorMessage)
+        assertTrue(heard.isEmpty(), "nothing is transcribed until the learner asks")
+        val (done, _) = services.materials.transcribe(imported, "/cache/media/m1")
+        assertEquals(com.polyglot.academy.core.model.MaterialStatus.READY_FOR_REVIEW, done.status)
+        assertEquals("Hola, ¿qué tal?", store.materials(LanguageCode.SPANISH).first().single().extractedText)
+        assertEquals(listOf("/cache/media/m1" to LanguageCode.SPANISH), heard)
+        assertFalse(done.cloudProcessingAllowed, "transcription on the device is not cloud processing")
+        val (silent, _) = services.materials.transcribe(imported, "/cache/media/silence")
+        assertEquals("no_speech", silent.errorMessage)
+        // A language the model is not offered for stays unsupported rather than producing a guess.
+        assertFalse(services.materials.canTranscribe(com.polyglot.academy.core.model.MaterialType.AUDIO, LanguageCode.FRENCH))
+        assertEquals(com.polyglot.academy.core.media.ExtractionSupport.ON_DEVICE_TRANSCRIPTION, services.materials.support(com.polyglot.academy.core.model.MaterialType.VIDEO))
+    }
+
     @Test fun reviewQueueAndRating() = runBlocking<Unit> {
         enroll()
         app.study.introduceVocabulary(LanguageCode.ENGLISH, listOf("en_hello", "en_coffee"))

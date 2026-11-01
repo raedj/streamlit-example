@@ -395,7 +395,20 @@ release APK builds.
 stored, what can leave the device and when, permissions, how long things are kept, how to delete.
 UI test: reached from privacy settings in Arabic, all sections present. Data test extended: after
 "delete everything" the sync passphrase is gone and the settings equal the defaults (reports,
-letter positions, widget choice and background sync reset). Checked on the emulator in Arabic. Build: 306 tests, 0 failures (core 204, data 65, uicore 12, ui 25); release APK builds (about 28 MB). Build: 295 tests, 0 failures (core 196, data 65, uicore 12, ui 22); release APK builds. Build: 291 tests, 0 failures (core 196, data 64, uicore 12, ui 19); release APK builds.
+letter positions, widget choice and background sync reset). Checked on the emulator in Arabic.
+
+**On-device transcription (2026-11-01).** whisper.cpp v1.9.5 built with NDK 28.2 and CMake 4.1.2 for
+arm64-v8a, armeabi-v7a and x86_64. Data test: audio is imported as "needs transcription", nothing is
+transcribed until asked, the text is stored for review, the item is not marked as cloud-processed, no
+speech gives "no_speech", a language outside the model's list is not offered. UI test: the model
+download waits for the dialog, then the transcript is stored and the private copy let go. On the
+emulator: a 7-second English WAV (made with Windows speech synthesis) imported from Downloads; the
+model downloaded in the app (59,707,625 bytes, SHA-256 checked, in `no_backup/whisper/`); the
+transcript was word for word right and gave vocabulary suggestions; the cache copy was deleted.
+Found and fixed: the debug build compiled whisper.cpp unoptimised (a run was stopped after 4 minutes);
+the native code is now always optimised, and the same file took 149 s on the emulator. The progress
+message promised "about as long as the recording" and was corrected. Not tested: a real phone,
+video files, other languages, long files. Build: 308 tests, 0 failures (core 204, data 66, uicore 12, ui 26); release APK 30.2 MB (the library adds 1.2-2.0 MB per ABI). Build: 306 tests, 0 failures (core 204, data 65, uicore 12, ui 25); release APK builds (about 28 MB). Build: 295 tests, 0 failures (core 196, data 65, uicore 12, ui 22); release APK builds. Build: 291 tests, 0 failures (core 196, data 64, uicore 12, ui 19); release APK builds.
 
 | Module | Test class | Tests | Failures |
 |---|---|---|---|

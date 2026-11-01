@@ -84,7 +84,12 @@ class MainActivity : ComponentActivity(), PlatformUi {
             // PDFs and photos are kept as bytes: PDF text is extracted on device, photos can be read with AI on request.
             val binaryLimit = if (pdf) 50L * 1024 * 1024 else if (mime.startsWith("image/")) 20L * 1024 * 1024 else 0L
             val bytes = if (size in 1..binaryLimit) contentResolver.openInputStream(uri)?.use { it.readBytes() } else null
-            PickedFile(name, mime, size, text, bytes)
+            // Audio and video are copied into the app's cache (the decoder needs a file) for transcription on the
+            // device; the copy is deleted after transcription and whenever the app starts.
+            val media = mime.startsWith("audio/") || mime.startsWith("video/")
+            val path = if (media && size in 1..1024L * 1024 * 1024) File(cacheDir, "media").apply { mkdirs() }.resolve("m${System.nanoTime()}")
+                .also { f -> contentResolver.openInputStream(uri)?.use { input -> f.outputStream().use { input.copyTo(it) } } }.path else null
+            PickedFile(name, mime, size, text, bytes, path)
         }
     }
 
@@ -102,6 +107,8 @@ class MainActivity : ComponentActivity(), PlatformUi {
 
     override val appVersion: String get() = packageManager.getPackageInfo(packageName, 0).versionName ?: "?"
     // Noto Nastaliq Urdu, SIL Open Font License 1.1 (docs/licenses/OFL-NotoNastaliqUrdu.txt).
+    override fun deleteLocalFile(path: String) { File(path).delete() }
+
     override val canTakePhoto: Boolean get() =
         packageManager.hasSystemFeature(PackageManager.FEATURE_CAMERA_ANY) &&
             Intent(MediaStore.ACTION_IMAGE_CAPTURE).resolveActivity(packageManager) != null

@@ -18,7 +18,9 @@ import kotlinx.coroutines.CancellationException
 
 /** A file chosen through the platform picker. Text is decoded by the platform when the type is textual. */
 /** A picked file: [text] for text formats, [bytes] for PDFs (other binaries carry neither). */
-class PickedFile(val name: String, val mimeType: String, val sizeBytes: Long, val text: String?, val bytes: ByteArray? = null)
+class PickedFile(val name: String, val mimeType: String, val sizeBytes: Long, val text: String?, val bytes: ByteArray? = null,
+    /** A private copy of an audio or video file, for transcription on the device. */
+    val localPath: String? = null)
 
 /** UI-side platform hooks (permission dialogs, file picker, saving exports). */
 interface PlatformUi {
@@ -32,6 +34,8 @@ interface PlatformUi {
     val appVersion: String
     /** Nastaliq font for Urdu learning content; null uses the platform default (Naskh-style). */
     val urduFont: androidx.compose.ui.text.font.FontFamily? get() = null
+    /** Deletes a private file the platform made (a copy of picked audio or video). */
+    fun deleteLocalFile(path: String) {}
     /** True when a camera app can take a photo for import. */
     val canTakePhoto: Boolean get() = false
     /** Takes a photo with the system camera app: JPEG bytes, upright and scaled for reading text, or null if cancelled. */
