@@ -9,6 +9,14 @@ LESSON_BEST ¦ Best {0}% ¦ أفضل نتيجة {0}٪
 LESSON_BELOW_LEVEL ¦ Review — below your starting level ¦ مراجعة — أقل من مستوى بدايتك
 LESSON_EXERCISES ¦ {0} exercise|{0} exercises ¦ {0} تمارين|تمرين واحد|تمرينان|{0} تمارين|{0} تمرينًا|{0} تمرين
 TRACK_MIN_LEVEL ¦ Recommended from {0} ¦ موصى به ابتداءً من {0}
+LEVELS_TITLE ¦ What each level covers ¦ ما يغطّيه كل مستوى
+LEVELS_INTRO ¦ Counted from the lessons and texts built into this version for {0}. ¦ محسوب من الدروس والنصوص المضمّنة في هذا الإصدار للغة {0}.
+LEVELS_ROW ¦ Lessons: {0} · Texts: {1} · Grammar: {2} · Speaking missions: {3} ¦ الدروس: {0} · النصوص: {1} · القواعد: {2} · مهام المحادثة: {3}
+LEVELS_WORDS ¦ Word-list levels: {0} (approximate band) ¦ مستويات قوائم الكلمات: {0} (تقدير تقريبي)
+LEVELS_NONE ¦ No built-in material at this level ¦ لا مواد مضمّنة في هذا المستوى
+LEVELS_NOTE ¦ There is no C1 or C2 course. Above the built-in lessons you can keep practising with tutor conversations, speaking missions (up to C1), the harder word-list levels and material you import. ¦ لا يوجد مقرّر لمستويَي C1 وC2. فوق الدروس المضمّنة يمكنك مواصلة التدرّب بالمحادثة مع المعلّمين ومهام المحادثة (حتى C1) ومستويات قوائم الكلمات الأصعب والموادّ التي تستوردها.
+LEVELS_ABOVE_TITLE ¦ Your level is above the built-in course ¦ مستواك أعلى من المقرّر المضمّن
+LEVELS_ABOVE ¦ The built-in {0} course goes up to {1}; there is no structured course at {2}. Lessons below your level stay open for review, and you can practise with tutors, speaking missions, the harder word lists and your own material. ¦ يصل مقرّر {0} المضمّن إلى المستوى {1}، ولا يوجد مقرّر منظّم في المستوى {2}. تبقى الدروس الأدنى من مستواك متاحة للمراجعة، ويمكنك التدرّب مع المعلّمين وبمهام المحادثة وقوائم الكلمات الأصعب وموادّك الخاصة.
 TRACK_DISCLAIMER_TITLE ¦ Language practice only ¦ للتدرّب اللغوي فقط
 TRACK_EMPTY ¦ No professional tracks for this language yet. ¦ لا توجد مسارات مهنية لهذه اللغة بعد.
 LESSON_VOCAB ¦ Words in this lesson ¦ كلمات هذا الدرس

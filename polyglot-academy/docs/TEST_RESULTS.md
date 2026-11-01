@@ -359,7 +359,15 @@ added with "Add", shows Mandarin progress and the next lesson in Arabic, right-a
 opens the app; after switching to English and leaving the app it showed "35 words to review" and
 "the · /ðə/" with its meaning; turning the privacy setting off removed the word; dark mode uses the
 dark colours. Found on the way and fixed: an unescaped apostrophe in the widget description broke
-the Android resource build. Not tested: other launchers, resizing, the system's 2-hour refresh. Build: 295 tests, 0 failures (core 196, data 65, uicore 12, ui 22); release APK builds. Build: 291 tests, 0 failures (core 196, data 64, uicore 12, ui 19); release APK builds.
+the Android resource build. Not tested: other launchers, resizing, the system's 2-hour refresh.
+
+**Level coverage, C1/C2 scope (2026-11-01).** Counted from the content: the general course has
+most lessons at A1–A2 (Mandarin 5 and 7), 2–4 at B1, 0–1 at B2, none at C1 or C2; graded stories
+stop at B1; speaking missions reach C1; word-list levels 9–10 are labelled approximately C1. Tests:
+the coverage counts equal the content in all eight languages; every course ceiling is A2–B2, C1
+has no course lesson and C2 offers nothing (so adding a C1 course fails the test until PR-26 and
+the in-app text are updated); a UI test for a Spanish learner set to C1 sees the notice and the
+table. On the emulator: the Learn tab table in Arabic for Mandarin matched the counts. Build: 298 tests, 0 failures (core 198, data 65, uicore 12, ui 23); release APK builds. Build: 295 tests, 0 failures (core 196, data 65, uicore 12, ui 22); release APK builds. Build: 291 tests, 0 failures (core 196, data 64, uicore 12, ui 19); release APK builds.
 
 | Module | Test class | Tests | Failures |
 |---|---|---|---|

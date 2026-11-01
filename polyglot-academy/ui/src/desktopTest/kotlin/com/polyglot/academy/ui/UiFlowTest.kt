@@ -220,6 +220,16 @@ class UiFlowTest {
         assertTrue(!runBlocking { app.store.materials(LanguageCode.ARABIC).first().single() }.cloudProcessingAllowed)
     }
 
+    @Test fun aLearnerAboveTheCourseIsToldWhatTheLevelsCover() = runDesktopComposeUiTest(800, 1700) {
+        val app = TestApp(); app.profile(learn = LanguageCode.SPANISH, level = com.polyglot.academy.core.model.CefrLevel.C1)
+        setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.LEARN))) }
+        waitForText("Your level is above the built-in course")
+        waitForText("there is no structured course at C1", substring = true)
+        onNodeWithText("What each level covers").performScrollTo()
+        onNodeWithText("No built-in material at this level").performScrollTo()
+        onNodeWithText("There is no C1 or C2 course", substring = true).performScrollTo()
+    }
+
     @Test fun cameraPhotoIsTurnedCroppedAndImported() = runDesktopComposeUiTest(800, 1700) {
         val ocr = object : com.polyglot.academy.core.service.DeviceOcr {
             override val languages = setOf(LanguageCode.ARABIC)

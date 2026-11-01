@@ -19,6 +19,7 @@ ONB_LEVEL_TEST ¦ Take a placement test ¦ خُض اختبار تحديد الم
 ONB_LEVEL_TEST_SUB ¦ About 5 minutes · up to 14 questions ¦ نحو 5 دقائق · حتى 14 سؤالًا
 ONB_LEVEL_SELF ¦ Choose my level myself ¦ سأختار مستواي بنفسي
 ONB_LEVEL_NOTE ¦ You can change your level at any time. ¦ يمكنك تغيير مستواك في أي وقت.
+ONB_LEVEL_FEW ¦ Few or no built-in lessons at this level yet ¦ دروس مضمّنة قليلة أو معدومة في هذا المستوى حاليًا
 ONB_GOALS_TITLE ¦ Why are you learning? ¦ لماذا تتعلّم؟
 ONB_GOALS_BODY ¦ Choose all that apply. We use this to pick topics. ¦ اختر كل ما ينطبق. نستخدم ذلك لاختيار المواضيع.
 ONB_TIME_TITLE ¦ How much time per day? ¦ كم من الوقت يوميًا؟

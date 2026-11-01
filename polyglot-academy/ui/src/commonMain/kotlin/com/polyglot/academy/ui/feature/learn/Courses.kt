@@ -34,6 +34,7 @@ import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.stateDescription
 import androidx.compose.ui.unit.dp
 import com.polyglot.academy.core.content.Curriculum
+import com.polyglot.academy.core.content.LevelCoverage
 import com.polyglot.academy.core.model.Bookmark
 import com.polyglot.academy.core.model.BookmarkKind
 import com.polyglot.academy.core.model.CefrLevel
@@ -75,6 +76,9 @@ fun CoursesScreen(trackId: String?, isTabRoot: Boolean) {
     ScrollScreen(track?.let { s.gloss(it.title) } ?: s[K.LEARN_TITLE], showBack = !isTabRoot, tab = if (isTabRoot) Tab.LEARN else null) {
         if (track == null) {
             Text("${Labels.language(s, lang)} · ${s[K.LEARN_GENERAL]}", style = MaterialTheme.typography.bodyLarge, color = PolyglotTheme.colors.textSecondary)
+            // A learner placed above the built-in course is told so, instead of finding no next lesson.
+            if (LevelCoverage.isAboveCourse(lang, start)) Banner(BannerKind.INFO,
+                s.f(K.LEVELS_ABOVE, Labels.language(s, lang), LevelCoverage.courseCeiling(lang).label, start.label), title = s[K.LEVELS_ABOVE_TITLE])
             curriculum.units.filter { it.trackId == CourseUnit.GENERAL_TRACK }.forEach { unit -> UnitCard(unit, curriculum.lessonsById, progress, start, isTrack = false) }
             SectionHeader(s[K.LEARN_TRACKS])
             if (curriculum.tracks.isEmpty()) Text(s[K.TRACK_EMPTY], color = PolyglotTheme.colors.textSecondary)
@@ -91,6 +95,7 @@ fun CoursesScreen(trackId: String?, isTabRoot: Boolean) {
                     }
                 }
             }
+            LevelCoverageSection(lang)
         } else {
             Text(s.gloss(track.description), style = MaterialTheme.typography.bodyLarge, color = PolyglotTheme.colors.textSecondary)
             track.disclaimer?.let { Banner(BannerKind.INFO, s.gloss(it), title = s[K.TRACK_DISCLAIMER_TITLE]) }
@@ -103,6 +108,32 @@ fun CoursesScreen(trackId: String?, isTabRoot: Boolean) {
             }
         }
     }
+}
+
+/** What each CEFR level offers in this language, counted from the built-in content. */
+@Composable
+private fun LevelCoverageSection(lang: com.polyglot.academy.core.model.LanguageCode) {
+    val s = LocalStrings.current
+    val c = PolyglotTheme.colors
+    val offers = remember(lang) { LevelCoverage.of(lang) }
+    SectionHeader(s[K.LEVELS_TITLE])
+    Text(s.f(K.LEVELS_INTRO, Labels.language(s, lang)), style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
+    PolyCard {
+        offers.forEach { o ->
+            Row(verticalAlignment = Alignment.Top) {
+                LevelBadge(o.level, null)
+                Spacer(Modifier.width(12.dp))
+                Column(Modifier.weight(1f)) {
+                    if (o.isEmpty) Text(s[K.LEVELS_NONE], style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
+                    else {
+                        Text(s.f(K.LEVELS_ROW, o.lessons, o.texts, o.grammarTopics, o.speakingMissions), style = MaterialTheme.typography.bodyMedium)
+                        if (o.wordLevels.isNotEmpty()) Text(s.f(K.LEVELS_WORDS, o.wordLevels.joinToString(if (s.isRtl) "، " else ", ")), style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
+                    }
+                }
+            }
+        }
+    }
+    Text(s[K.LEVELS_NOTE], style = MaterialTheme.typography.bodySmall, color = c.textMuted)
 }
 
 @Composable

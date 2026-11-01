@@ -180,7 +180,8 @@ fun OnboardingFlow() {
                         ChoiceCard(s[K.ONB_LEVEL_SELF], !takeTest, onClick = { takeTest = false })
                         if (!takeTest) {
                             Languages.of(learnLang).supportedLevels.forEach { l ->
-                                ChoiceCard("${l.label} · ${Labels.level(s, l)}", selfLevel == l, onClick = { selfLevel = l })
+                                ChoiceCard("${l.label} · ${Labels.level(s, l)}", selfLevel == l, onClick = { selfLevel = l },
+                                    subtitle = if (com.polyglot.academy.core.content.LevelCoverage.isAboveCourse(learnLang, l)) s[K.ONB_LEVEL_FEW] else null)
                             }
                         }
                         Text(s[K.ONB_LEVEL_NOTE], style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
