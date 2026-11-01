@@ -197,7 +197,8 @@ class UiFlowTest {
         setContent { AppUnderTest(app) }
         waitForText("الرئيسية")
         onNodeWithText("أكاديمية بوليغلوت").assertExists()
-        onNodeWithText("المقترح التالي").assertExists()
+        // The tab bar appears before the home data is loaded; wait for it rather than racing it.
+        waitForText("المقترح التالي")
     }
 
     @Test fun emptyReviewQueueShowsCaughtUpState() = runDesktopComposeUiTest(800, 1700) {

@@ -1267,6 +1267,7 @@ internal object EnglishStrings {
         K.PROV_TESTING to "Testing…",
         K.PROV_TEST_OK to "Connected — answered in {0} ms",
         K.PROV_TEST_FAILED to "Connection failed: {0}",
+        K.PROV_LOCAL_404 to "the server answered, but not at {0}, or it does not have the model \"{1}\". For Ollama the address is http://<computer>:11434/v1 and the model must be pulled first (ollama pull {1}); for LM Studio http://<computer>:1234/v1.",
         K.PROV_MAKE_PREFERRED to "Make preferred",
         K.PROV_IS_PREFERRED to "This is your preferred provider",
         K.PROV_PRIVACY_CLOUD to "Messages you send to the tutor go to {0}'s servers and are handled under their terms.",

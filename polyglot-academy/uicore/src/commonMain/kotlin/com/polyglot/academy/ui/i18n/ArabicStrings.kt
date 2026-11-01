@@ -1267,6 +1267,7 @@ internal object ArabicStrings {
         K.PROV_TESTING to "جارٍ الاختبار…",
         K.PROV_TEST_OK to "متصل — أجاب خلال {0} مللي ثانية",
         K.PROV_TEST_FAILED to "فشل الاتصال: {0}",
+        K.PROV_LOCAL_404 to "أجاب الخادم، لكن ليس على العنوان {0}، أو ليس لديه النموذج «{1}». عنوان Ollama هو http://<الحاسوب>:11434/v1 ويجب تنزيل النموذج عليه أولًا (ollama pull {1})؛ وعنوان LM Studio هو http://<الحاسوب>:1234/v1.",
         K.PROV_MAKE_PREFERRED to "اجعله المفضّل",
         K.PROV_IS_PREFERRED to "هذا مزوّدك المفضّل",
         K.PROV_PRIVACY_CLOUD to "تُرسل الرسائل التي ترسلها إلى المعلّم إلى خوادم {0} وتُعالج وفق شروطه.",

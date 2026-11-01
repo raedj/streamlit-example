@@ -404,13 +404,21 @@ fun ProviderDetailScreen(id: ProviderId) {
             Text(s[K.PROV_MODEL_SUGGESTED], style = MaterialTheme.typography.labelLarge)
             ChipGroup(d.suggestedModels, setOf(model.ifBlank { d.defaultModel }), { it }, { model = it })
         }
+        // A local server's address is completed (/v1) and shown that way, so what is saved is what is used.
+        fun cleanBase(): String? {
+            val b = baseUrl.trim().ifBlank { null } ?: return null
+            return if (id == ProviderId.LOCAL_SERVER) com.polyglot.academy.core.ai.LocalServerUrl.normalize(b).also { baseUrl = it } else b
+        }
+        // HTTP 404 from a local server: the address or the model name is wrong, not the network.
+        fun explain(e: Throwable?): String = if (id == ProviderId.LOCAL_SERVER && e is com.polyglot.academy.core.ai.AiError.InvalidResponse && "404" in e.message.orEmpty())
+            s.f(K.PROV_LOCAL_404, cleanBase() ?: d.defaultBaseUrl.orEmpty(), model.ifBlank { d.defaultModel }) else e?.message.orEmpty()
         SecondaryButton(if (loadingModels) s[K.PROV_MODELS_LOADING] else s[K.PROV_MODELS_LOAD], {
             loadingModels = true; modelsError = null
             scope.launch {
-                saveCfg { it.copy(baseUrl = baseUrl.trim().ifBlank { null }, deployment = deployment.trim().ifBlank { null }) }.join()
+                saveCfg { it.copy(baseUrl = cleanBase(), deployment = deployment.trim().ifBlank { null }) }.join()
                 app.services.providers.listModels(id).fold(
                     { list -> if (list == null) modelsError = s[K.PROV_MODELS_UNSUPPORTED] else { accountModels = list; if (list.isEmpty()) modelsError = s[K.PROV_MODELS_EMPTY] } },
-                    { e -> modelsError = s.f(K.PROV_MODELS_FAILED, e.message ?: "") })
+                    { e -> modelsError = s.f(K.PROV_MODELS_FAILED, explain(e)) })
                 loadingModels = false
             }
         }, Modifier.fillMaxWidth(), enabled = !loadingModels && (hasKey || !d.requiresApiKey))
@@ -423,13 +431,13 @@ fun ProviderDetailScreen(id: ProviderId) {
         }
         if (d.requiresBaseUrl || d.defaultBaseUrl != null) AppTextField(baseUrl, { baseUrl = it }, s[K.PROV_BASE_URL], supporting = d.defaultBaseUrl)
         if (id == ProviderId.AZURE_OPENAI) AppTextField(deployment, { deployment = it }, s[K.PROV_DEPLOYMENT])
-        SecondaryButton(s[K.SAVE], { saveCfg { it.copy(model = model.trim().ifBlank { null }, baseUrl = baseUrl.trim().ifBlank { null }, deployment = deployment.trim().ifBlank { null }) } }, Modifier.fillMaxWidth())
+        SecondaryButton(s[K.SAVE], { saveCfg { it.copy(model = model.trim().ifBlank { null }, baseUrl = cleanBase(), deployment = deployment.trim().ifBlank { null }) } }, Modifier.fillMaxWidth())
         PrimaryButton(if (testing) s[K.PROV_TESTING] else s[K.PROV_TEST], {
             testing = true; testMessage = null
             scope.launch {
-                saveCfg { it.copy(model = model.trim().ifBlank { null }, baseUrl = baseUrl.trim().ifBlank { null }, deployment = deployment.trim().ifBlank { null }) }.join()
+                saveCfg { it.copy(model = model.trim().ifBlank { null }, baseUrl = cleanBase(), deployment = deployment.trim().ifBlank { null }) }.join()
                 val r = app.services.providers.testConnection(id)
-                testMessage = if (r.ok) true to s.f(K.PROV_TEST_OK, r.latencyMillis ?: 0) else false to s.f(K.PROV_TEST_FAILED, r.error?.message ?: "")
+                testMessage = if (r.ok) true to s.f(K.PROV_TEST_OK, r.latencyMillis ?: 0) else false to s.f(K.PROV_TEST_FAILED, explain(r.error))
                 testing = false
             }
         }, Modifier.fillMaxWidth(), loading = testing, enabled = cfg.enabled)

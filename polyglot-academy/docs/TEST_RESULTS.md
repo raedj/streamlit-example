@@ -413,7 +413,16 @@ video files, other languages, long files. Build: 308 tests, 0 failures (core 204
 **Microphone "language not supported" (2026-11-01, K-31).** Fallback from the on-device recognizer to the
 regular one on a language error, built and the full suite run (308 tests, 0 failures). Not exercised:
 the emulator image has no speech recognition service (`pm query-services` finds none). The owner
-installed the new APK on their phone and confirmed that the microphone now works (2026-11-01). Build: 306 tests, 0 failures (core 204, data 65, uicore 12, ui 25); release APK builds (about 28 MB). Build: 295 tests, 0 failures (core 196, data 65, uicore 12, ui 22); release APK builds. Build: 291 tests, 0 failures (core 196, data 64, uicore 12, ui 19); release APK builds.
+installed the new APK on their phone and confirmed that the microphone now works (2026-11-01).
+
+**Local server "404 model or endpoint not found" (2026-11-01).** Reported by the owner when loading
+models. Ollama serves its OpenAI-compatible API under `/v1`, so an address typed as
+`http://computer:11434` asked `/models` and got 404. The address is now completed to `/v1` (and a pasted
+full endpoint cut back), older Ollama versions are listed through `/api/tags`, and a 404 is explained
+(address, model not pulled). Adapter test with an Ollama-like mock. On the emulator against a small
+Ollama-like server on the PC (`http://10.0.2.2:11434`, typed without `/v1`): both models listed, the log
+shows `GET /v1/models 200`. Also fixed a timing race in the UI test `arabicInterfaceIsLocalized` (it
+checked the home content as soon as the tab bar appeared). Build: 309 tests, 0 failures. Build: 306 tests, 0 failures (core 204, data 65, uicore 12, ui 25); release APK builds (about 28 MB). Build: 295 tests, 0 failures (core 196, data 65, uicore 12, ui 22); release APK builds. Build: 291 tests, 0 failures (core 196, data 64, uicore 12, ui 19); release APK builds.
 
 | Module | Test class | Tests | Failures |
 |---|---|---|---|

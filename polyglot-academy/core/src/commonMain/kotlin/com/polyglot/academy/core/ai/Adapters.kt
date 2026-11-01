@@ -26,7 +26,7 @@ abstract class BaseHttpProvider(
 ) : AiProvider {
     protected val config: ProviderConfig get() = configs.config(descriptor.id)
     protected val model: String get() = config.model?.takeIf { it.isNotBlank() } ?: descriptor.defaultModel
-    protected val baseUrl: String
+    protected open val baseUrl: String
         get() = (config.baseUrl?.takeIf { it.isNotBlank() } ?: descriptor.defaultBaseUrl ?: throw AiError.NotConfigured(descriptor.id)).trimEnd('/')
 
     /** Model ids from the provider's model-list endpoint (sorted, without duplicates). */
@@ -56,6 +56,10 @@ open class OpenAiCompatibleProvider(
     clock: () -> Long,
 ) : BaseHttpProvider(client, credentials, configs, clock) {
 
+    // A local server's address is accepted as people type it ("http://computer:11434").
+    override val baseUrl: String
+        get() = super.baseUrl.let { if (descriptor.id == ProviderId.LOCAL_SERVER) LocalServerUrl.normalize(it) else it }
+
     protected open suspend fun endpointAndHeaders(): Pair<String, Map<String, String>> {
         val headers = if (descriptor.requiresApiKey) mapOf("Authorization" to "Bearer ${requireKey()}")
         else credentials.apiKey(descriptor.id)?.takeIf { it.isNotBlank() }?.let { mapOf("Authorization" to "Bearer $it") } ?: emptyMap()
@@ -76,7 +80,13 @@ open class OpenAiCompatibleProvider(
     override suspend fun listModels(): List<String>? {
         if (descriptor.id == ProviderId.AZURE_OPENAI) return null
         val (_, headers) = endpointAndHeaders()
-        return ids(getJson(client, descriptor.id, "$baseUrl/models", headers, 20_000)["data"])
+        return try {
+            ids(getJson(client, descriptor.id, "$baseUrl/models", headers, 20_000)["data"])
+        } catch (e: AiError.InvalidResponse) {
+            // Older Ollama versions have no OpenAI model list; their own API lists the pulled models.
+            if (descriptor.id != ProviderId.LOCAL_SERVER || "404" !in e.message.orEmpty()) throw e
+            runCatching { ids(getJson(client, descriptor.id, "${LocalServerUrl.root(baseUrl)}/api/tags", headers, 20_000)["models"], "name") }.getOrElse { throw e }
+        }
     }
 
     override suspend fun complete(request: ChatRequest): ChatResponse {

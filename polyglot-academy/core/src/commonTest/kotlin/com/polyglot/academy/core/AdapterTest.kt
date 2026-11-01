@@ -137,6 +137,37 @@ class AdapterTest {
         assertFailsWith<AiError.Authentication> { OpenAiCompatibleProvider(ProviderCatalog.GROQ, denied, keys, configs(), { 0L }).listModels() }
     }
 
+    @Test fun localServerAddressIsCompletedAndOllamaModelsAreListed() = realTimeTest {
+        assertEquals("http://192.168.1.5:11434/v1", com.polyglot.academy.core.ai.LocalServerUrl.normalize(" http://192.168.1.5:11434/ "))
+        assertEquals("http://pc:11434/v1", com.polyglot.academy.core.ai.LocalServerUrl.normalize("http://pc:11434/v1/chat/completions"))
+        assertEquals("http://pc:1234/v1", com.polyglot.academy.core.ai.LocalServerUrl.normalize("http://pc:1234/v1/models"))
+        assertEquals("http://pc:8080/api/v1", com.polyglot.academy.core.ai.LocalServerUrl.normalize("http://pc:8080/api/v1"), "a path the learner chose is kept")
+        // An Ollama-like server: the OpenAI API under /v1, nothing at /models.
+        val seen = mutableListOf<String>()
+        val ollama = client { r ->
+            seen += r.url.encodedPath
+            when (r.url.encodedPath) {
+                "/v1/models" -> respond("""{"object":"list","data":[{"id":"qwen2.5:1.5b"},{"id":"gemma3:1b"}]}""", HttpStatusCode.OK, json)
+                "/v1/chat/completions" -> respond("""{"model":"qwen2.5:1.5b","choices":[{"message":{"content":"ok"},"finish_reason":"stop"}]}""", HttpStatusCode.OK, json)
+                else -> respond("404 page not found", HttpStatusCode.NotFound)
+            }
+        }
+        val typed = configs(ProviderConfig(ProviderId.LOCAL_SERVER, enabled = true, baseUrl = "http://127.0.0.1:11434", model = "qwen2.5:1.5b"))
+        val local = OpenAiCompatibleProvider(ProviderCatalog.LOCAL_SERVER, ollama, noKeys, typed, { 0L })
+        assertEquals(listOf("gemma3:1b", "qwen2.5:1.5b"), local.listModels())
+        assertEquals("ok", local.complete(req).text)
+        assertEquals(listOf("/v1/models", "/v1/chat/completions"), seen)
+        // An older Ollama without the OpenAI model list: its own list is used.
+        val old = client { r ->
+            if (r.url.encodedPath == "/api/tags") respond("""{"models":[{"name":"llama3.2:latest"},{"name":"qwen2.5:0.5b"}]}""", HttpStatusCode.OK, json)
+            else respond("404 page not found", HttpStatusCode.NotFound)
+        }
+        assertEquals(listOf("llama3.2:latest", "qwen2.5:0.5b"), OpenAiCompatibleProvider(ProviderCatalog.LOCAL_SERVER, old, noKeys, typed, { 0L }).listModels())
+        // Nothing there at all: the 404 is reported, not hidden.
+        val nothing = client { respond("not found", HttpStatusCode.NotFound) }
+        assertFailsWith<AiError.InvalidResponse> { OpenAiCompatibleProvider(ProviderCatalog.LOCAL_SERVER, nothing, noKeys, typed, { 0L }).listModels() }
+    }
+
     @Test fun anthropicFormat() = realTimeTest {
         val c = client { respond("""{"model":"claude-haiku-5-5","content":[{"type":"text","text":"Hello "},{"type":"text","text":"there"}],"stop_reason":"end_turn","usage":{"input_tokens":5,"output_tokens":2}}""", HttpStatusCode.OK, json) }
         val r = AnthropicProvider(c, keys, configs(), { 0L }).complete(req)

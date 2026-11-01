@@ -160,6 +160,7 @@ PROV_TEST ¦ Test connection ¦ اختبار الاتصال
 PROV_TESTING ¦ Testing… ¦ جارٍ الاختبار…
 PROV_TEST_OK ¦ Connected — answered in {0} ms ¦ متصل — أجاب خلال {0} مللي ثانية
 PROV_TEST_FAILED ¦ Connection failed: {0} ¦ فشل الاتصال: {0}
+PROV_LOCAL_404 ¦ the server answered, but not at {0}, or it does not have the model "{1}". For Ollama the address is http://<computer>:11434/v1 and the model must be pulled first (ollama pull {1}); for LM Studio http://<computer>:1234/v1. ¦ أجاب الخادم، لكن ليس على العنوان {0}، أو ليس لديه النموذج «{1}». عنوان Ollama هو http://<الحاسوب>:11434/v1 ويجب تنزيل النموذج عليه أولًا (ollama pull {1})؛ وعنوان LM Studio هو http://<الحاسوب>:1234/v1.
 PROV_MAKE_PREFERRED ¦ Make preferred ¦ اجعله المفضّل
 PROV_IS_PREFERRED ¦ This is your preferred provider ¦ هذا مزوّدك المفضّل
 PROV_PRIVACY_CLOUD ¦ Messages you send to the tutor go to {0}'s servers and are handled under their terms. ¦ تُرسل الرسائل التي ترسلها إلى المعلّم إلى خوادم {0} وتُعالج وفق شروطه.
