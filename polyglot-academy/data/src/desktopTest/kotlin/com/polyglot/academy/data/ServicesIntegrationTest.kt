@@ -876,8 +876,15 @@ class ServicesIntegrationTest {
 
     @Test fun deleteEverythingRemovesDataSecretsAndReminder() = runBlocking<Unit> {
         enroll(); enableCloud()
+        // What the privacy page promises "delete everything" removes besides learning data.
+        app.sync.configure("https://dav.example.com/files/me", "me", "pw", "a long passphrase").getOrThrow()
+        app.sync.setAutoSync(true, true)
+        store.updateSettings { it.copy(letterPositions = mapOf(LanguageCode.ARABIC to 4), privacy = it.privacy.copy(widgetShowsWord = false),
+            contentReports = listOf(com.polyglot.academy.core.model.ContentReport("r1", LanguageCode.ENGLISH, "en_w_the", "the", com.polyglot.academy.core.model.ContentIssue.OTHER, "", 0))) }
         app.deleteEverything()
         assertNull(platform.secrets.get("provider_api_key_openai"))
+        assertNull(platform.secrets.get(com.polyglot.academy.core.service.SyncService.PASSPHRASE))
+        assertEquals(com.polyglot.academy.core.model.AppSettings(), store.currentSettings(), "settings, reports and background sync are reset")
         assertTrue(!store.currentProfile().onboardingCompleted)
         assertEquals(false, platform.reminder?.first)
         assertNotNull(platform.reminder)

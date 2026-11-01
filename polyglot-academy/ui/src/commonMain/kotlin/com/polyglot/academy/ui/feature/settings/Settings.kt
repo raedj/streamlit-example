@@ -259,6 +259,7 @@ private fun PrivacyPage() {
     val p = app.settings.privacy
     var consent by remember { mutableStateOf(false) }
     Text(s[K.SET_PRIVACY_INTRO], style = MaterialTheme.typography.bodyMedium, color = PolyglotTheme.colors.textSecondary)
+    SecondaryButton(s[K.PRIV_TITLE], { app.nav.push(Route.PrivacyNotice) }, Modifier.fillMaxWidth())
     PolyCard(contentPadding = 0.dp) {
         SwitchRow(s[K.SET_CLOUD_AI], p.cloudAiEnabled, { v ->
             if (v && p.consentVersionAccepted < PrivacyConsent.CURRENT_VERSION) consent = true

@@ -149,6 +149,17 @@ class UiFlowTest {
         waitUntil(timeoutMillis = 5_000) { runBlocking { app.store.currentSettings() }.privacy.cloudAiEnabled }
     }
 
+    @Test fun privacyPageIsReachedFromPrivacySettings() = runDesktopComposeUiTest(800, 1700) {
+        val app = TestApp(); app.profile(ui = LanguageCode.ARABIC)
+        setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.ME), Route.SettingsPage(SettingsSection.PRIVACY))) }
+        waitForText("كيف تُعامَل بياناتك")
+        onNodeWithText("كيف تُعامَل بياناتك").performClick()
+        waitForText("ما قد يغادر الجهاز ومتى")
+        onNodeWithText("مدة الاحتفاظ").performScrollTo()
+        onNodeWithText("حذف بياناتك").performScrollTo()
+        onNodeWithText("وليست سياسة الخصوصية القانونية", substring = true).performScrollTo()
+    }
+
     @Test fun arabicInterfaceIsLocalized() = runDesktopComposeUiTest(800, 1700) {
         val app = TestApp(); app.profile(ui = LanguageCode.ARABIC)
         setContent { AppUnderTest(app) }

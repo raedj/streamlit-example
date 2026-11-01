@@ -35,6 +35,23 @@ settings removes the word. It reads the same local data as the home screen and s
 
 **AI-written stories** send only the chosen topic, level and a few known words (LESSON_CONTENT).
 
+## Retention and deletion
+| Data | Where | Kept until |
+|---|---|---|
+| Profile, settings, progress, attempts, reviews, mistakes, conversations, notes, saved words, extracted text of imports, error reports | App's private database on the device | The learner deletes it (per kind or everything) or uninstalls the app |
+| Imported files and photos themselves | Not stored; the last three are held in memory so they can be read on request | The app process ends |
+| Photo taken for import | Camera file in `cache/camera/` | Deleted as soon as it is read; the scaled copy stays in memory until imported or the crop screen is left |
+| API keys, WebDAV password, sync passphrase, speech key | Android Keystore–encrypted store | "Delete everything", "Disconnect" (sync) or removing the key |
+| Sync file | The learner's own WebDAV server, encrypted | The learner deletes it on the server; disconnecting only removes the connection from the device |
+| Text or audio sent to an AI or speech provider | That provider | That provider's own retention policy (outside the app's control) |
+| Optional backup file (`files/backup/`, no secrets) | Device, included in Android backup | Backup is turned off (the file is deleted) |
+
+"Delete everything" removes all of the above that is on the device, every stored secret and the
+reminder, and resets the settings, which also cancels background sync (data test
+`deleteEverythingRemovesDataSecretsAndReminder`). The in-app page "How your data is handled"
+(Settings → Privacy) says the same in plain words; it is not the legal privacy policy, which the
+owner still needs to publish.
+
 ## Controls
 Cloud AI master switch (off by default) + consent dialog; per-category switches (sensitive
 categories off by default); per-item consent for imported material; local-network AI switch;

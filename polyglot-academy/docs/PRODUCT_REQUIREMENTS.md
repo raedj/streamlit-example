@@ -44,7 +44,7 @@ build exists only as a test harness; there is no iOS app.
 | PR-19 | Import of own material (text, subtitles, text-based PDF, photos, scanned PDFs) → extracted text review → word candidates → review deck | Implemented + tested; photos read on the device for all eight languages (Tesseract), or with AI on request; audio and video transcription not implemented (needs an owner decision on a local model) |
 | PR-20 | Optional relaxation/breathing with evidence-conscious disclaimer | Implemented |
 | PR-21 | AI provider management with own API keys, verified connection tests, preferred provider | Implemented + tested (mocked HTTP); no real keys tried |
-| PR-22 | Privacy controls per data category, consent before cloud AI, no silent fallback to another cloud provider; secret fields hidden from the keyboard | Implemented + tested |
+| PR-22 | Privacy controls per data category, consent before cloud AI, no silent fallback to another cloud provider; secret fields hidden from the keyboard; an in-app page on what is stored, what can leave the device, retention and deletion | Implemented + tested; page checked on the emulator. The legal privacy policy is not written or hosted (owner) |
 | PR-23 | Export and full deletion of user data | Implemented + tested |
 | PR-24 | Non-coercive reminders and achievements; points, quests and streak can be hidden | Implemented; reminder checked on the emulator |
 | PR-25 | Accessibility: semantics, scalable text, high contrast, reduced motion, WCAG AA colours | Implemented; contrast tested; accessibility tree of ten screens and 200 % text checked on the emulator; TalkBack itself not run |

@@ -233,6 +233,32 @@ SYNC_PASSPHRASE_SAVED ¦ Passphrase saved — enter a new one to replace it ¦ �
 SYNC_PASSPHRASE_HINT ¦ At least 10 characters. Use the same one on every device. If you lose it, the server copy cannot be read by anyone, including us. ¦ 10 أحرف على الأقل. استخدم العبارة نفسها على كل جهاز. إن فقدتها فلن يستطيع أحد قراءة النسخة المخزّنة، ولا نحن.
 SYNC_SAVED ¦ Saved. Secrets are stored encrypted on this device. ¦ تم الحفظ. البيانات السرية مخزّنة مشفّرة على هذا الجهاز.
 SYNC_NOW ¦ Sync now ¦ زامن الآن
+PRIV_TITLE ¦ How your data is handled ¦ كيف تُعامَل بياناتك
+PRIV_INTRO ¦ A plain description of what version {0} of the app does with your data. ¦ وصف مبسّط لما يفعله الإصدار {0} من التطبيق ببياناتك.
+PRIV_STORED_TITLE ¦ Stored on this device ¦ ما يُحفظ على هذا الجهاز
+PRIV_STORED ¦ Your profile and settings, progress, answers, mistakes and reviews, conversations, notes, saved words, the text of material you import, and error reports you write. They stay in the app's private storage. ¦ ملفك الشخصي وإعداداتك، وتقدّمك وإجاباتك وأخطاؤك ومراجعاتك، ومحادثاتك، وملاحظاتك، والكلمات التي حفظتها، ونصّ المواد التي تستوردها، وبلاغات الأخطاء التي تكتبها. تبقى في مساحة التطبيق الخاصة.
+PRIV_KEYS ¦ API keys, the sync password and passphrase and the speech key are encrypted with the device's secure keystore. They are never exported or backed up. ¦ مفاتيح API وكلمة مرور المزامنة وعبارة مرورها ومفتاح خدمة الكلام مشفّرة بمخزن المفاتيح الآمن في الجهاز، ولا تُصدَّر ولا تُنسخ احتياطيًا أبدًا.
+PRIV_LEAVES_TITLE ¦ What can leave the device, and when ¦ ما قد يغادر الجهاز ومتى
+PRIV_NO_SERVER ¦ The app has no server of its own: no account, no analytics, no ads and no crash reporting. Lessons, reviews, the offline tutor and reading photos on the device work without sending anything. ¦ ليس للتطبيق خادم خاص به: لا حساب ولا تحليلات ولا إعلانات ولا تقارير أعطال. الدروس والمراجعات والمعلّم دون اتصال وقراءة الصور على الجهاز تعمل دون إرسال أي شيء.
+PRIV_AI ¦ AI features (tutors, corrections, stories, reading a photo with AI) send text only when you turn cloud AI on, accept the consent, and allow that kind of data, and only to the provider you set up with your own key. ¦ ميزات الذكاء الاصطناعي (المعلّمون والتصحيح والقصص وقراءة الصور بالذكاء الاصطناعي) لا ترسل نصًّا إلا إذا شغّلت الذكاء الاصطناعي السحابي ووافقت على الإقرار وسمحت بذلك النوع من البيانات، ولا ترسله إلا إلى المزوّد الذي أعددته بمفتاحك.
+PRIV_VOICE ¦ Your voice leaves the device only for detailed pronunciation scoring and live voice calls, and only when "Voice recordings" is allowed (off by default). ¦ لا يغادر صوتك الجهاز إلا لتقييم النطق المفصّل وللمكالمات الصوتية المباشرة، وحين يُسمح بفئة «التسجيلات الصوتية» فقط (متوقّفة افتراضيًا).
+PRIV_SYNC ¦ Sync, if you set it up, sends one file to your own WebDAV server, encrypted on this device with your passphrase. Background sync is off unless you turn it on. ¦ المزامنة، إن أعددتها، ترسل ملفًّا واحدًا إلى خادم WebDAV الخاص بك، مشفّرًا على هذا الجهاز بعبارة مرورك. والمزامنة التلقائية متوقّفة ما لم تشغّلها.
+PRIV_SPEECH ¦ Speech recognition and read-aloud use your phone's speech services, which follow their own settings. ¦ التعرّف على الكلام والقراءة بصوت مسموع يستخدمان خدمات الكلام في هاتفك، وتخضع لإعداداتها الخاصة.
+PRIV_PERMISSIONS_TITLE ¦ Permissions ¦ الأذونات
+PRIV_PERMISSIONS ¦ The microphone is asked for when you first tap it, notifications when you turn on the reminder. The app does not ask for camera, storage, contacts or location: photos are taken by your camera app and files are picked with the system picker. ¦ يُطلب الميكروفون حين تضغطه أول مرة، والإشعارات حين تشغّل التذكير. لا يطلب التطبيق الكاميرا ولا التخزين ولا جهات الاتصال ولا الموقع: تلتقط الصور بتطبيق الكاميرا، وتختار الملفات من منتقي النظام.
+PRIV_KEPT_TITLE ¦ How long things are kept ¦ مدة الاحتفاظ
+PRIV_KEPT_DEVICE ¦ Your learning data stays on this device until you delete it or uninstall the app. ¦ تبقى بيانات تعلّمك على هذا الجهاز حتى تحذفها أو تزيل التطبيق.
+PRIV_KEPT_PHOTOS ¦ For imported files and photos only the extracted text is kept. A photo you take is shrunk at once and the camera's file deleted; the photo itself stays in memory only until you import it or leave. ¦ لا يُحفظ من الملفات والصور المستوردة إلا النصّ المستخرج منها. الصورة التي تلتقطها تُصغَّر فورًا ويُحذف ملف الكاميرا، وتبقى الصورة نفسها في الذاكرة فقط حتى تستوردها أو تغادر.
+PRIV_KEPT_REPORTS ¦ Error reports stay on the device until you export or delete them. ¦ تبقى بلاغات الأخطاء على الجهاز حتى تصدّرها أو تحذفها.
+PRIV_KEPT_SYNC ¦ The sync file stays on your server until you delete it there; disconnecting removes the connection from this device only. ¦ يبقى ملف المزامنة على خادمك حتى تحذفه هناك؛ وفصل الجهاز يزيل الاتصال من هذا الجهاز فقط.
+PRIV_KEPT_PROVIDERS ¦ Anything sent to an AI or speech provider is kept according to that provider's policy, which the app does not control. ¦ ما يُرسل إلى مزوّد ذكاء اصطناعي أو خدمة كلام يُحفظ وفق سياسة ذلك المزوّد، ولا يتحكّم بها التطبيق.
+PRIV_KEPT_BACKUP ¦ The phone's backup includes learning data only if you turn that on, and never keys. ¦ لا يشمل النسخ الاحتياطي للهاتف بيانات التعلّم إلا إن شغّلت ذلك، ولا يشمل المفاتيح أبدًا.
+PRIV_DELETE_TITLE ¦ Deleting your data ¦ حذف بياناتك
+PRIV_DELETE ¦ In Settings → Your data you can delete conversations, imported material, or everything. Deleting everything also removes your keys, the sync connection and the reminder, and switches background sync off. ¦ من الإعدادات ← بياناتك يمكنك حذف المحادثات أو المواد المستوردة أو كل شيء. وحذف كل شيء يزيل أيضًا مفاتيحك واتصال المزامنة والتذكير، ويوقف المزامنة التلقائية.
+PRIV_UNINSTALL ¦ Uninstalling the app removes everything it stored on this device. ¦ إزالة التطبيق تحذف كل ما خزّنه على هذا الجهاز.
+PRIV_OPEN_SETTINGS ¦ Privacy settings ¦ إعدادات الخصوصية
+PRIV_OPEN_DATA ¦ Your data: export and delete ¦ بياناتك: التصدير والحذف
+PRIV_NOT_LEGAL ¦ This page describes how the app works; it is not the legal privacy policy, which is published separately. ¦ تصف هذه الصفحة طريقة عمل التطبيق، وليست سياسة الخصوصية القانونية التي تُنشر منفصلة.
 SET_WIDGET_WORD ¦ Show a word to review on the home-screen widget ¦ إظهار كلمة للمراجعة في أداة الشاشة الرئيسية
 SET_WIDGET_WORD_SUB ¦ The widget is for the home screen only, never the lock screen. Turn this off to show only your progress. ¦ الأداة للشاشة الرئيسية فقط، ولا تظهر على شاشة القفل. أوقف هذا الخيار لتُظهر تقدّمك فقط.
 SYNC_AUTO ¦ Sync automatically ¦ مزامنة تلقائية

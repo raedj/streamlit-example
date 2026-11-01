@@ -389,7 +389,13 @@ compared by eye with a Naskh font and the Urdu gol he redrawn. UI test: alif acc
 dot told "This letter has 1 dot under it. You wrote none.", position saved. On the emulator (Urdu, 38
 letters): ت with two tapped dots accepted; with one dot rejected with the reason; drawn left to right
 "close" with the direction note. Build: 305 tests, 0 failures (core 204, data 65, uicore 12, ui 24);
-release APK builds. Build: 295 tests, 0 failures (core 196, data 65, uicore 12, ui 22); release APK builds. Build: 291 tests, 0 failures (core 196, data 64, uicore 12, ui 19); release APK builds.
+release APK builds.
+
+**Privacy page and retention (2026-11-01).** "How your data is handled" (Settings → Privacy): what is
+stored, what can leave the device and when, permissions, how long things are kept, how to delete.
+UI test: reached from privacy settings in Arabic, all sections present. Data test extended: after
+"delete everything" the sync passphrase is gone and the settings equal the defaults (reports,
+letter positions, widget choice and background sync reset). Checked on the emulator in Arabic. Build: 306 tests, 0 failures (core 204, data 65, uicore 12, ui 25); release APK builds (about 28 MB). Build: 295 tests, 0 failures (core 196, data 65, uicore 12, ui 22); release APK builds. Build: 291 tests, 0 failures (core 196, data 64, uicore 12, ui 19); release APK builds.
 
 | Module | Test class | Tests | Failures |
 |---|---|---|---|

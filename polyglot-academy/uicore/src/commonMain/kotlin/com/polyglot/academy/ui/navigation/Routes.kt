@@ -47,6 +47,8 @@ sealed interface Route {
     data class SettingsPage(val section: SettingsSection) : Route
     data class ProviderDetail(val provider: ProviderId) : Route
     data object History : Route
+    /** What happens to the learner's data, in plain words. */
+    data object PrivacyNotice : Route
     /** The frequency word lists: levels, one level's words, one word, and a level test. */
     data object WordLevels : Route
     data class WordLevel(val level: Int) : Route
@@ -75,7 +77,7 @@ sealed interface Route {
             Scenarios -> "scenarios"; Settings -> "settings"
             is SettingsPage -> "settingsPage|${r.section}"
             is ProviderDetail -> "provider|${r.provider}"
-            History -> "history"
+            History -> "history"; PrivacyNotice -> "privacy"
             WordLevels -> "wordLevels"
             is WordLevel -> "wordLevel|${r.level}"
             is WordDetail -> "word|${r.entryId}"
@@ -106,7 +108,7 @@ sealed interface Route {
                 "scenarios" -> Scenarios; "settings" -> Settings
                 "settingsPage" -> SettingsPage(SettingsSection.valueOf(arg(1)))
                 "provider" -> ProviderDetail(ProviderId.valueOf(arg(1)))
-                "history" -> History
+                "history" -> History; "privacy" -> PrivacyNotice
                 "wordLevels" -> WordLevels
                 "wordLevel" -> WordLevel(arg(1).toInt())
                 "word" -> WordDetail(arg(1))
