@@ -37,6 +37,7 @@ import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 import com.polyglot.academy.core.ai.ConnectionStatus
 import com.polyglot.academy.core.ai.ProviderCatalog
+import com.polyglot.academy.core.ai.AiError
 import com.polyglot.academy.core.ai.ProviderConfig
 import com.polyglot.academy.core.ai.ProviderId
 import com.polyglot.academy.core.device.DeviceCapability
@@ -382,6 +383,8 @@ fun ProviderDetailScreen(id: ProviderId) {
     var accountModels by remember { mutableStateOf(emptyList<String>()) }
     var loadingModels by remember { mutableStateOf(false) }
     var modelsError by remember { mutableStateOf<String?>(null) }
+    var modelNote by remember { mutableStateOf<String?>(null) }
+    var keySaves by remember { mutableStateOf(0) }
     LaunchedEffect(id) { hasKey = app.services.providers.hasKey(id) }
     fun saveCfg(t: (ProviderConfig) -> ProviderConfig) = scope.launch { app.services.providers.saveConfig(t(app.services.store.current().getValue(id))) }
     ScrollScreen(d.displayName) {
@@ -395,7 +398,7 @@ fun ProviderDetailScreen(id: ProviderId) {
             if (hasKey) Text(s[K.PROV_KEY_SAVED], style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
             AppTextField(keyInput, { keyInput = it }, s[K.PROV_API_KEY], secret = true)
             Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-                SecondaryButton(s[K.PROV_KEY_SAVE], { scope.launch { app.services.providers.saveKey(id, keyInput); keyInput = ""; hasKey = app.services.providers.hasKey(id) } }, Modifier.weight(1f), enabled = keyInput.isNotBlank())
+                SecondaryButton(s[K.PROV_KEY_SAVE], { scope.launch { app.services.providers.saveKey(id, keyInput); keyInput = ""; hasKey = app.services.providers.hasKey(id); if (hasKey) keySaves++ } }, Modifier.weight(1f), enabled = keyInput.isNotBlank())
                 if (hasKey) QuietButton(s[K.PROV_KEY_REMOVE], { scope.launch { app.services.platform.secrets.remove(secretKeyFor(id)); hasKey = false } }, color = c.error)
             }
             Text(s.f(K.PROV_KEY_STORAGE, app.services.platform.secrets.protectionDescription), style = MaterialTheme.typography.labelSmall, color = c.textMuted)
@@ -413,38 +416,81 @@ fun ProviderDetailScreen(id: ProviderId) {
             val b = baseUrl.trim().ifBlank { null } ?: return null
             return if (id == ProviderId.LOCAL_SERVER) com.polyglot.academy.core.ai.LocalServerUrl.normalize(b).also { baseUrl = it } else b
         }
-        // HTTP 404 from a local server: the address or the model name is wrong, not the network.
-        fun explain(e: Throwable?): String = if (id == ProviderId.LOCAL_SERVER && e is com.polyglot.academy.core.ai.AiError.InvalidResponse && "404" in e.message.orEmpty())
-            s.f(K.PROV_LOCAL_404, cleanBase() ?: d.defaultBaseUrl.orEmpty(), model.ifBlank { d.defaultModel }) else e?.message.orEmpty()
-        SecondaryButton(if (loadingModels) s[K.PROV_MODELS_LOADING] else s[K.PROV_MODELS_LOAD], {
-            loadingModels = true; modelsError = null
-            scope.launch {
-                saveCfg { it.copy(baseUrl = cleanBase(), deployment = deployment.trim().ifBlank { null }) }.join()
-                app.services.providers.listModels(id).fold(
-                    { list -> if (list == null) modelsError = s[K.PROV_MODELS_UNSUPPORTED] else { accountModels = list; if (list.isEmpty()) modelsError = s[K.PROV_MODELS_EMPTY] } },
-                    { e -> modelsError = s.f(K.PROV_MODELS_FAILED, explain(e)) })
-                loadingModels = false
+        // What went wrong, in the learner's words: a rejected key, no network, a model the key does not have...
+        fun explain(e: Throwable?): String {
+            val name = d.displayName
+            val chosen = model.ifBlank { d.defaultModel }
+            return when (e) {
+                is AiError.InvalidResponse -> if ("404" !in e.message.orEmpty()) e.message.orEmpty()
+                    // HTTP 404 from a local server: the address or the model name is wrong, not the network.
+                    else if (id == ProviderId.LOCAL_SERVER) s.f(K.PROV_LOCAL_404, cleanBase() ?: d.defaultBaseUrl.orEmpty(), chosen)
+                    else s.f(K.PROV_ERR_MODEL, chosen)
+                is AiError.Authentication -> s.f(K.PROV_ERR_AUTH, name)
+                is AiError.Network -> s.f(K.PROV_ERR_NETWORK, name)
+                is AiError.Timeout -> s.f(K.PROV_ERR_TIMEOUT, name)
+                is AiError.QuotaExceeded -> s.f(K.PROV_ERR_QUOTA, name)
+                is AiError.RateLimited -> s.f(K.PROV_ERR_RATE, name)
+                is AiError.RegionNotSupported -> s.f(K.PROV_ERR_REGION, name)
+                is AiError.Server -> s.f(K.PROV_ERR_SERVER, name, e.status)
+                else -> e?.message.orEmpty()
             }
+        }
+        // Loads the account's models; when the chosen model is not among them, picks one that is and saves it.
+        suspend fun loadModels(): Boolean {
+            loadingModels = true; modelsError = null; modelNote = null
+            saveCfg { it.copy(baseUrl = cleanBase(), deployment = deployment.trim().ifBlank { null }) }.join()
+            val ok = app.services.providers.listModels(id).fold(
+                { list ->
+                    if (list == null) modelsError = s[K.PROV_MODELS_UNSUPPORTED] else {
+                        accountModels = list
+                        if (list.isEmpty()) modelsError = s[K.PROV_MODELS_EMPTY]
+                        com.polyglot.academy.core.ai.ModelChoice.replacementFor(model, d.defaultModel, list)?.let { pick ->
+                            modelNote = s.f(K.PROV_MODEL_SWITCHED, model.ifBlank { d.defaultModel }, pick)
+                            model = pick
+                            saveCfg { it.copy(model = pick) }.join()
+                        }
+                    }
+                    true
+                },
+                { e -> modelsError = s.f(K.PROV_MODELS_FAILED, explain(e)); false })
+            loadingModels = false
+            return ok
+        }
+        suspend fun test() {
+            testing = true; testMessage = null
+            saveCfg { it.copy(model = model.trim().ifBlank { null }, baseUrl = cleanBase(), deployment = deployment.trim().ifBlank { null }) }.join()
+            val r = app.services.providers.testConnection(id)
+            testMessage = if (r.ok) true to s.f(K.PROV_TEST_OK, r.latencyMillis ?: 0) else false to s.f(K.PROV_TEST_FAILED, explain(r.error))
+            testing = false
+        }
+        // A cloud key is enough: its models are loaded when the page opens, and after a new key is saved the
+        // provider is switched on, a model it has is chosen and the connection is tested without further taps.
+        LaunchedEffect(hasKey, keySaves) {
+            if (!hasKey || !d.requiresApiKey || d.location != ProviderLocation.CLOUD) return@LaunchedEffect
+            if (keySaves > 0) {
+                if (loadModels()) {
+                    saveCfg { it.copy(enabled = true) }.join()
+                    test()
+                    if (testMessage?.first == true && preferred == null) app.services.store.setPreferred(id)
+                }
+            } else if (accountModels.isEmpty()) loadModels()
+        }
+        SecondaryButton(if (loadingModels) s[K.PROV_MODELS_LOADING] else s[K.PROV_MODELS_LOAD], {
+            scope.launch { loadModels() }
         }, Modifier.fillMaxWidth(), enabled = !loadingModels && (hasKey || !d.requiresApiKey))
         modelsError?.let { Text(it, style = MaterialTheme.typography.bodySmall, color = c.warning) }
+        modelNote?.let { Text(it, style = MaterialTheme.typography.bodySmall, color = c.textSecondary) }
         if (accountModels.isNotEmpty()) {
-            val filter = model.trim().lowercase()
+            // Typing filters the list; a model picked from it (or chosen automatically) shows the whole list.
+            val filter = model.trim().lowercase().takeIf { model.trim() !in accountModels }.orEmpty()
             val shown = accountModels.filter { filter.isEmpty() || filter in it.lowercase() || it == model }.take(40)
-            Text(s.f(K.PROV_MODELS_FOUND, accountModels.size, shown.size), style = MaterialTheme.typography.labelLarge)
+            Text(s.plural(K.PROV_MODELS_FOUND, accountModels.size, shown.size), style = MaterialTheme.typography.labelLarge)
             ChipGroup(shown, setOf(model), { it }, { model = it })
         }
         if (d.requiresBaseUrl || d.defaultBaseUrl != null) AppTextField(baseUrl, { baseUrl = it }, s[K.PROV_BASE_URL], supporting = d.defaultBaseUrl)
         if (id == ProviderId.AZURE_OPENAI) AppTextField(deployment, { deployment = it }, s[K.PROV_DEPLOYMENT])
         SecondaryButton(s[K.SAVE], { saveCfg { it.copy(model = model.trim().ifBlank { null }, baseUrl = cleanBase(), deployment = deployment.trim().ifBlank { null }) } }, Modifier.fillMaxWidth())
-        PrimaryButton(if (testing) s[K.PROV_TESTING] else s[K.PROV_TEST], {
-            testing = true; testMessage = null
-            scope.launch {
-                saveCfg { it.copy(model = model.trim().ifBlank { null }, baseUrl = cleanBase(), deployment = deployment.trim().ifBlank { null }) }.join()
-                val r = app.services.providers.testConnection(id)
-                testMessage = if (r.ok) true to s.f(K.PROV_TEST_OK, r.latencyMillis ?: 0) else false to s.f(K.PROV_TEST_FAILED, explain(r.error))
-                testing = false
-            }
-        }, Modifier.fillMaxWidth(), loading = testing, enabled = cfg.enabled)
+        PrimaryButton(if (testing) s[K.PROV_TESTING] else s[K.PROV_TEST], { scope.launch { test() } }, Modifier.fillMaxWidth(), loading = testing, enabled = cfg.enabled && !testing)
         testMessage?.let { (ok, msg) -> Banner(if (ok) BannerKind.SUCCESS else BannerKind.ERROR, msg) }
         if (preferred == id) Text(s[K.PROV_IS_PREFERRED], color = c.success)
         else QuietButton(s[K.PROV_MAKE_PREFERRED], { scope.launch { app.services.store.setPreferred(id) } })

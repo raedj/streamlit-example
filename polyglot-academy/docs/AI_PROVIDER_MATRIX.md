@@ -4,7 +4,7 @@
 |---|---|---|---|---|---|---|
 | OpenAI | `OpenAiCompatibleProvider` | `POST {base}/chat/completions`, `Authorization: Bearer` | `gpt-4.1-mini` | Cloud | chat, feedback, translation | Mock HTTP tests only |
 | Azure OpenAI (Microsoft) | `AzureOpenAiProvider` | `{endpoint}/openai/deployments/{deployment}/chat/completions?api-version=2024-10-21`, `api-key` header | deployment name | Cloud | chat, feedback | Mock HTTP tests only |
-| Google Gemini | `GeminiProvider` | `POST {base}/models/{model}:generateContent`, `x-goog-api-key` (never in URL) | `gemini-2.5-flash` | Cloud | chat, feedback, translation | Mock HTTP tests only |
+| Google Gemini | `GeminiProvider` | `POST {base}/models/{model}:generateContent`, `x-goog-api-key` (never in URL) | `gemini-2.5-flash` (replaced by a listed model when the key lacks it) | Cloud | chat, feedback, translation | Mock HTTP tests only |
 | Anthropic Claude | `AnthropicProvider` | `POST {base}/messages`, `x-api-key`, `anthropic-version: 2023-06-01` | `claude-haiku-5-5` | Cloud | chat, feedback, translation | Mock HTTP tests only |
 | DeepSeek | `OpenAiCompatibleProvider` | `https://api.deepseek.com/chat/completions` | `deepseek-chat` | Cloud | chat, feedback | Mock HTTP tests only |
 | Mistral AI | `OpenAiCompatibleProvider` | `https://api.mistral.ai/v1/chat/completions`, Bearer | `mistral-small-latest` | Cloud | chat, feedback, translation | Mock HTTP tests only |
@@ -56,3 +56,7 @@ release. Realtime model ids and voices are editable in Settings → Voice servic
 AI-written graded stories use the normal chat providers (STRUCTURED_FEEDBACK capability, JSON
 reply). The reply is validated (sentences, translations, glossary terms present in the text,
 well-formed questions) and rejected if incomplete.
+
+## Setup after a key is saved (2026-11-02)
+
+Saving a cloud key loads the account's models (`listModels`), keeps the chosen model when listed, otherwise picks a fast stable one (`ModelChoice.replacementFor`: names with flash/mini/haiku, no preview/tts/image), switches the provider on, runs the connection test and makes it the preferred provider if none was set. Gemini requests set `thinkingConfig` (budget 0 for 2.5 Flash; 128 plus 512 tokens of room for 2.5 Pro; level "low" plus 2048 for Gemini 3) so short answers are not used up by thinking. Gemini 400 API_KEY_INVALID maps to `AiError.Authentication` and "location is not supported" to `AiError.RegionNotSupported`; other errors keep the provider's message after `SecretRedactor`. Tests: `AdapterTest.geminiKeyAndRegionErrorsAreNamedAndThinkingLeavesRoomForTheAnswer`, `aModelTheAccountHasIsChosenAutomatically`. Keys lose whitespace and invisible direction marks (`ApiKeyText`) when saved and used; a key with other non-ASCII characters is an `Authentication` error instead of a failed header shown as a network error (`pastedKeysLoseInvisibleCharactersAndOddOnesAreReportedAsTheKey`). Checked on the emulator against a local stand-in for the Gemini API (wrong key, then automatic model choice). Not verified against the live API (no key here).

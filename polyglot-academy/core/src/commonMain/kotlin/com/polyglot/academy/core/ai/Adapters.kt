@@ -2,6 +2,7 @@ package com.polyglot.academy.core.ai
 
 import io.ktor.client.HttpClient
 import kotlinx.serialization.json.JsonArray
+import kotlinx.serialization.json.JsonObject
 import kotlinx.serialization.json.buildJsonArray
 import kotlinx.serialization.json.buildJsonObject
 import kotlinx.serialization.json.put
@@ -33,8 +34,12 @@ abstract class BaseHttpProvider(
     protected fun ids(json: kotlinx.serialization.json.JsonElement?, field: String = "id"): List<String> =
         (json as? JsonArray).orEmpty().mapNotNull { it.path(field).str() }.distinct().sorted()
 
-    protected suspend fun requireKey(): String =
-        credentials.apiKey(descriptor.id)?.takeIf { it.isNotBlank() } ?: throw AiError.NotConfigured(descriptor.id)
+    protected suspend fun requireKey(): String {
+        val key = ApiKeyText.clean(credentials.apiKey(descriptor.id).orEmpty()).ifEmpty { throw AiError.NotConfigured(descriptor.id) }
+        // A header can carry only plain ASCII; anything else would fail inside the HTTP client as a "network" error.
+        if (!ApiKeyText.isSendable(key)) throw AiError.Authentication(descriptor.id)
+        return key
+    }
 
     override suspend fun testConnection(): ConnectionTestResult = try {
         val (r, ms) = timed({
@@ -186,7 +191,8 @@ class GeminiProvider(
         val json = getJson(client, descriptor.id, "$baseUrl/models?pageSize=200", mapOf("x-goog-api-key" to requireKey()), 20_000)
         return (json["models"] as? JsonArray).orEmpty().filter { m ->
             (m.path("supportedGenerationMethods") as? JsonArray).orEmpty().any { it.str() == "generateContent" }
-        }.mapNotNull { it.path("name").str()?.removePrefix("models/") }.distinct().sorted()
+        }.mapNotNull { it.path("name").str()?.removePrefix("models/") }
+            .filterNot { n -> listOf("tts", "image", "embedding", "audio", "live", "aqa").any { it in n } }.distinct().sorted()
     }
 
     override suspend fun complete(request: ChatRequest): ChatResponse {
@@ -206,9 +212,14 @@ class GeminiProvider(
                 }
             })
             putJsonObject("generationConfig") {
-                put("maxOutputTokens", request.maxOutputTokens)
+                // Gemini 2.5+ "thinks" first, and the thinking counts against maxOutputTokens: with a small
+                // limit (the connection test asks for 16) nothing is left for the answer. Flash models can turn
+                // it off; Pro and Gemini 3 cannot, so they get room for it on top of the answer.
+                val thinking = GeminiThinking.of(model)
+                put("maxOutputTokens", request.maxOutputTokens + thinking.extraTokens)
                 put("temperature", request.temperature)
                 if (request.expectJson) put("responseMimeType", "application/json")
+                thinking.config?.let { put("thinkingConfig", it) }
             }
         }
         val headers = mapOf("x-goog-api-key" to requireKey())
@@ -216,11 +227,27 @@ class GeminiProvider(
         if (json.path("promptFeedback", "blockReason") != null) throw AiError.ContentFiltered(descriptor.id)
         val candidate = json.path("candidates", 0)
         if (candidate.path("finishReason").str() == "SAFETY") throw AiError.ContentFiltered(descriptor.id)
-        val parts = candidate.path("content", "parts") as? JsonArray ?: throw AiError.InvalidResponse(descriptor.id, "missing candidates[0].content.parts")
+        val parts = candidate.path("content", "parts") as? JsonArray ?: throw AiError.InvalidResponse(descriptor.id,
+            if (candidate.path("finishReason").str() == "MAX_TOKENS") "the answer was cut off before any text (MAX_TOKENS)" else "missing candidates[0].content.parts")
         val text = parts.mapNotNull { it.path("text").str() }.joinToString("")
         if (text.isEmpty()) throw AiError.InvalidResponse(descriptor.id, "empty text")
         return ChatResponse(text, descriptor.id, json.path("modelVersion").str() ?: model,
             json.path("usageMetadata", "promptTokenCount").int(), json.path("usageMetadata", "candidatesTokenCount").int())
+    }
+}
+
+/** How to ask a Gemini model for a short answer, by model name (unknown models get no thinking settings). */
+internal class GeminiThinking(val config: JsonObject?, val extraTokens: Int) {
+    companion object {
+        fun of(model: String): GeminiThinking {
+            val m = model.lowercase()
+            return when {
+                m.startsWith("gemini-2.5") && "pro" !in m -> GeminiThinking(buildJsonObject { put("thinkingBudget", 0) }, 0)
+                m.startsWith("gemini-2.5") -> GeminiThinking(buildJsonObject { put("thinkingBudget", 128) }, 512)
+                m.startsWith("gemini-3") -> GeminiThinking(buildJsonObject { put("thinkingLevel", "low") }, 2048)
+                else -> GeminiThinking(null, 0)
+            }
+        }
     }
 }
 

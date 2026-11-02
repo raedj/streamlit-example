@@ -45,7 +45,8 @@ class ProviderService(
     suspend fun hasKey(id: ProviderId) = !secrets.get(secretKeyFor(id)).isNullOrBlank()
 
     suspend fun saveKey(id: ProviderId, key: String) {
-        if (key.isBlank()) secrets.remove(secretKeyFor(id)) else secrets.put(secretKeyFor(id), key.trim())
+        val clean = com.polyglot.academy.core.ai.ApiKeyText.clean(key)
+        if (clean.isEmpty()) secrets.remove(secretKeyFor(id)) else secrets.put(secretKeyFor(id), clean)
         // A new key invalidates the previous verification.
         val cfg = configs.current().getValue(id)
         configs.save(cfg.copy(lastTest = ConnectionStatus.NEVER_TESTED, lastErrorMessage = null))

@@ -2,6 +2,7 @@ package com.polyglot.academy.core
 
 import com.polyglot.academy.core.ai.AiError
 import com.polyglot.academy.core.ai.AnthropicProvider
+import com.polyglot.academy.core.ai.ApiKeyText
 import com.polyglot.academy.core.ai.AzureOpenAiProvider
 import com.polyglot.academy.core.ai.ChatMessage
 import com.polyglot.academy.core.ai.ChatRequest
@@ -9,6 +10,7 @@ import com.polyglot.academy.core.ai.ChatRole
 import com.polyglot.academy.core.ai.ConfigSource
 import com.polyglot.academy.core.ai.CredentialSource
 import com.polyglot.academy.core.ai.GeminiProvider
+import com.polyglot.academy.core.ai.ModelChoice
 import com.polyglot.academy.core.ai.OpenAiCompatibleProvider
 import com.polyglot.academy.core.ai.ProviderCatalog
 import com.polyglot.academy.core.ai.ProviderConfig
@@ -270,5 +272,52 @@ class AdapterTest {
         val r = AnthropicProvider(c, keys, configs(), { 0L }).testConnection()
         assertFalse(r.ok)
         assertTrue(r.error is AiError.Authentication)
+    }
+
+    @Test fun geminiKeyAndRegionErrorsAreNamedAndThinkingLeavesRoomForTheAnswer() = realTimeTest {
+        // A wrong Gemini key is HTTP 400, not 401.
+        val badKey = client { respond("""{"error":{"code":400,"message":"API key not valid. Please pass a valid API key.","status":"INVALID_ARGUMENT",
+            "details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"API_KEY_INVALID"}]}}""", HttpStatusCode.BadRequest, json) }
+        assertTrue(GeminiProvider(badKey, keys, configs(), { 0L }).testConnection().error is AiError.Authentication)
+        assertFailsWith<AiError.Authentication> { GeminiProvider(badKey, keys, configs(), { 0L }).listModels() }
+        val region = client { respond("""{"error":{"code":400,"message":"User location is not supported for the API use.","status":"FAILED_PRECONDITION"}}""", HttpStatusCode.BadRequest, json) }
+        assertTrue(GeminiProvider(region, keys, configs(), { 0L }).testConnection().error is AiError.RegionNotSupported)
+        // Any other 400 keeps the provider's own words, without anything key-like.
+        val other = client { respond("""{"error":{"message":"Bad field for key AIzaSyA1234567890abcdefghijkl"}}""", HttpStatusCode.BadRequest, json) }
+        val e = GeminiProvider(other, keys, configs(), { 0L }).testConnection().error!!
+        assertTrue("Bad field" in e.message!! && "AIza" !in e.message!!, e.message)
+
+        // Gemini 2.5 Flash: thinking off, so the connection test's 16 tokens are all for the answer.
+        val ok = client { respond("""{"candidates":[{"content":{"parts":[{"text":"ok"}]},"finishReason":"STOP"}]}""", HttpStatusCode.OK, json) }
+        assertTrue(GeminiProvider(ok, keys, configs(), { 0L }).testConnection().ok)
+        val cfg = Json.parseToJsonElement(lastBody).jsonObject["generationConfig"]!!.jsonObject
+        assertEquals("0", cfg["thinkingConfig"]!!.jsonObject["thinkingBudget"]!!.jsonPrimitive.content)
+        assertEquals("16", cfg["maxOutputTokens"]!!.jsonPrimitive.content)
+        // Pro cannot turn thinking off: it gets extra room; a model without thinking gets no setting.
+        GeminiProvider(ok, keys, configs(ProviderConfig(ProviderId.GEMINI, enabled = true, model = "gemini-2.5-pro")), { 0L }).testConnection()
+        assertTrue(Json.parseToJsonElement(lastBody).jsonObject["generationConfig"]!!.jsonObject["maxOutputTokens"]!!.jsonPrimitive.content.toInt() > 256)
+        GeminiProvider(ok, keys, configs(ProviderConfig(ProviderId.GEMINI, enabled = true, model = "gemma-3-27b-it")), { 0L }).testConnection()
+        assertFalse("thinkingConfig" in lastBody)
+        // An answer cut off before any text says so.
+        val cut = client { respond("""{"candidates":[{"content":{"role":"model"},"finishReason":"MAX_TOKENS"}]}""", HttpStatusCode.OK, json) }
+        assertTrue("MAX_TOKENS" in GeminiProvider(cut, keys, configs(), { 0L }).testConnection().error!!.message!!)
+    }
+
+    @Test fun aModelTheAccountHasIsChosenAutomatically() {
+        val listed = listOf("gemini-2.0-flash", "gemini-2.5-flash-lite", "gemini-2.5-pro", "gemini-3-flash", "gemini-3-flash-preview-tts")
+        assertEquals("gemini-3-flash", ModelChoice.replacementFor(null, "gemini-2.5-flash", listed))
+        assertEquals(null, ModelChoice.replacementFor("gemini-2.5-pro", "gemini-2.5-flash", listed), "a listed choice is kept")
+        assertEquals(null, ModelChoice.replacementFor(null, "gemini-2.5-flash", listOf("gemini-2.5-flash", "gemini-3-flash")), "the default is kept when listed")
+        assertEquals("gpt-4.1-mini", ModelChoice.replacementFor("gpt-old", "gpt-x", listOf("gpt-4.1", "gpt-4.1-mini", "gpt-4o-mini-tts")))
+        assertEquals(null, ModelChoice.replacementFor("x", "y", emptyList()))
+    }
+
+    @Test fun pastedKeysLoseInvisibleCharactersAndOddOnesAreReportedAsTheKey() = realTimeTest {
+        assertEquals("AIzaSyABC-123_x", ApiKeyText.clean("\u200F AIzaSy\u200BABC-123_x\n"))
+        val ok = client { respond("""{"models":[]}""", HttpStatusCode.OK, json) }
+        GeminiProvider(ok, CredentialSource { "\u202Bgood-key\u202C " }, configs(), { 0L }).listModels()
+        assertEquals("good-key", lastRequest!!.headers["x-goog-api-key"])
+        // A letter outside ASCII cannot go into a header: the key is named, not the network.
+        assertFailsWith<AiError.Authentication> { GeminiProvider(ok, CredentialSource { "مفتاح" }, configs(), { 0L }).listModels() }
     }
 }

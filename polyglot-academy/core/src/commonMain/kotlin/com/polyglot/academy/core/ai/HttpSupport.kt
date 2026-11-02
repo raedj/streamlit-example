@@ -89,11 +89,22 @@ internal fun classifyHttpError(provider: ProviderId, status: Int, body: String, 
         status == 429 && ("insufficient_quota" in lower || "billing" in lower || "resource_exhausted" in lower && "quota" in lower) ->
             AiError.QuotaExceeded(provider)
         status == 429 -> AiError.RateLimited(provider, retryAfterMillis)
+        // Gemini answers a wrong key with 400 INVALID_ARGUMENT / API_KEY_INVALID, not 401.
+        status == 400 && ("api_key_invalid" in lower || "api key not valid" in lower || "invalid_api_key" in lower || "invalid api key" in lower) ->
+            AiError.Authentication(provider)
+        status == 400 && "location is not supported" in lower -> AiError.RegionNotSupported(provider)
         status == 404 -> AiError.InvalidResponse(provider, "model or endpoint not found (HTTP 404)")
         status >= 500 -> AiError.Server(provider, status)
         "safety" in lower || "content_filter" in lower || "content_policy" in lower -> AiError.ContentFiltered(provider)
-        else -> AiError.InvalidResponse(provider, "HTTP $status")
+        else -> AiError.InvalidResponse(provider, "HTTP $status" + (providerErrorMessage(body)?.let { ": $it" } ?: ""))
     }
+}
+
+/** The provider's own short error text (e.g. error.message), without anything that looks like a key. */
+internal fun providerErrorMessage(body: String): String? {
+    val json = runCatching { providerJson.parseToJsonElement(body) }.getOrNull() ?: return null
+    val msg = (json.path("error", "message") ?: json.path("message") ?: json.path("error")).str()?.trim()
+    return msg?.takeIf { it.isNotEmpty() }?.let { SecretRedactor.redact(it).take(200) }
 }
 
 internal fun JsonElement?.path(vararg keys: Any): JsonElement? {

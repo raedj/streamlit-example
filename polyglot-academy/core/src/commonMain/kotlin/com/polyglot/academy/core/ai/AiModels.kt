@@ -96,6 +96,7 @@ sealed class AiError(message: String) : Exception(message) {
     class Network(val provider: ProviderId, detail: String) : AiError("Network error contacting $provider: $detail") { override val retryable = true }
     class Server(val provider: ProviderId, val status: Int) : AiError("$provider server error $status") { override val retryable = status >= 500 }
     class InvalidResponse(val provider: ProviderId, detail: String) : AiError("$provider returned an unexpected response: $detail") { override val retryable = false }
+    class RegionNotSupported(val provider: ProviderId) : AiError("$provider is not available in this country or region") { override val retryable = false }
     class ContentFiltered(val provider: ProviderId) : AiError("$provider declined to answer") { override val retryable = false }
     class BlockedByPrivacy(val provider: ProviderId?, val categories: Set<DataCategory>) :
         AiError("Blocked by privacy settings: ${categories.joinToString()}") { override val retryable = false }

@@ -313,10 +313,19 @@ PROV_MODEL_REQUIRED ¦ Required: the model id from your provider ¦ مطلوب: 
 PROV_MODEL_SUGGESTED ¦ Common models ¦ نماذج شائعة
 PROV_MODELS_LOAD ¦ Load the models of my account ¦ حمّل نماذج حسابي
 PROV_MODELS_LOADING ¦ Loading models… ¦ جارٍ تحميل النماذج…
-PROV_MODELS_FOUND ¦ {0} models available (showing {1}; type in the model field to filter) ¦ {0} نموذجًا متاحًا (يُعرض {1}؛ اكتب في حقل النموذج للتصفية)
+PROV_MODELS_FOUND ¦ {0} model available (showing {1}; type in the model field to filter)|{0} models available (showing {1}; type in the model field to filter) ¦ لا نماذج متاحة (يُعرض {1}؛ اكتب في حقل النموذج للتصفية)|نموذج واحد متاح (يُعرض {1}؛ اكتب في حقل النموذج للتصفية)|نموذجان متاحان (يُعرض {1}؛ اكتب في حقل النموذج للتصفية)|{0} نماذج متاحة (يُعرض {1}؛ اكتب في حقل النموذج للتصفية)|{0} نموذجًا متاحًا (يُعرض {1}؛ اكتب في حقل النموذج للتصفية)|{0} نموذج متاح (يُعرض {1}؛ اكتب في حقل النموذج للتصفية)
 PROV_MODELS_EMPTY ¦ The provider returned no models. ¦ لم يُرجع المزوّد أي نماذج.
 PROV_MODELS_UNSUPPORTED ¦ This provider has no model list; type the model or deployment name. ¦ لا يوفّر هذا المزوّد قائمة نماذج؛ اكتب اسم النموذج أو النشر.
 PROV_MODELS_FAILED ¦ Could not load models: {0} ¦ تعذّر تحميل النماذج: {0}
+PROV_MODEL_SWITCHED ¦ "{0}" is not available for this key, so the app chose "{1}" from your account. You can pick another below. ¦ النموذج «{0}» غير متاح لهذا المفتاح، فاختار التطبيق «{1}» من نماذج حسابك. يمكنك اختيار غيره من القائمة.
+PROV_ERR_AUTH ¦ {0} rejected the key. Copy the whole key again (no spaces), check that it is a {0} key and still active, then save it. ¦ رفض {0} المفتاح. انسخ المفتاح كاملًا مرة أخرى (دون مسافات)، وتأكد أنه مفتاح {0} وأنه ما زال فعّالًا، ثم احفظه.
+PROV_ERR_NETWORK ¦ Could not reach {0}. Check the internet connection, or a VPN or firewall that blocks it, then try again. ¦ تعذّر الوصول إلى {0}. تحقّق من اتصال الإنترنت، أو من شبكة VPN أو جدار حماية يحجبه، ثم أعد المحاولة.
+PROV_ERR_TIMEOUT ¦ {0} did not answer in time. Try again. ¦ لم يُجب {0} في الوقت المحدد. أعد المحاولة.
+PROV_ERR_QUOTA ¦ This {0} account has no free quota or credit left for this key. ¦ لم يبقَ لحساب {0} رصيد أو حصة مجانية لهذا المفتاح.
+PROV_ERR_RATE ¦ Too many requests to {0} right now. Wait a minute and try again. ¦ طلبات كثيرة إلى {0} الآن. انتظر دقيقة ثم أعد المحاولة.
+PROV_ERR_REGION ¦ {0} does not serve this key in your country or region. ¦ لا يقدّم {0} خدمته لهذا المفتاح في بلدك أو منطقتك.
+PROV_ERR_MODEL ¦ The model "{0}" is not available for this key. Tap "Load the models of my account" and choose one. ¦ النموذج «{0}» غير متاح لهذا المفتاح. اضغط «حمّل نماذج حسابي» واختر واحدًا منها.
+PROV_ERR_SERVER ¦ {0} had a server problem (HTTP {1}). Try again later. ¦ واجه خادم {0} مشكلة (HTTP {1}). أعد المحاولة لاحقًا.
 SET_SHOW_POINTS ¦ Show points, quests and streak ¦ إظهار النقاط والمهام والسلسلة
 SET_SHOW_POINTS_SUB ¦ Your progress is recorded either way; this only hides them from the home screen. ¦ يُسجَّل تقدّمك في كلّ الأحوال، وهذا يخفيها من الشاشة الرئيسية فقط.
 SET_REPORTS ¦ Content error reports ¦ بلاغات أخطاء المحتوى

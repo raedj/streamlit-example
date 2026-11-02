@@ -169,7 +169,7 @@ class AndroidSpeechRecognizer(private val context: Context) : SpeechRecognizerSe
         // On the device first (the audio stays on the phone); if it lacks this language, the regular recognizer.
         fun start(onDevice: Boolean) {
             current?.destroy()
-            val recognizer = if (onDevice) SpeechRecognizer.createOnDeviceSpeechRecognizer(context) else SpeechRecognizer.createSpeechRecognizer(context)
+            val recognizer = if (onDevice && Build.VERSION.SDK_INT >= 31) SpeechRecognizer.createOnDeviceSpeechRecognizer(context) else SpeechRecognizer.createSpeechRecognizer(context)
             current = recognizer
             active = recognizer
             recognizer.setRecognitionListener(object : RecognitionListener {

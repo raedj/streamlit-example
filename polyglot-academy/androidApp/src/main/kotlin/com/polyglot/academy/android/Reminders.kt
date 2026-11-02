@@ -1,5 +1,6 @@
 package com.polyglot.academy.android
 
+import android.Manifest
 import android.app.AlarmManager
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -7,9 +8,11 @@ import android.app.PendingIntent
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.os.Build
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
+import androidx.core.content.ContextCompat
 import kotlinx.coroutines.launch
 import java.util.Calendar
 
@@ -66,7 +69,7 @@ object Reminders {
             .setContentTitle(context.getString(R.string.reminder_title))
             .setContentText(body(context, dueReviews, cal.get(Calendar.DAY_OF_YEAR)))
             .setContentIntent(open).setAutoCancel(true).build()
-        if (Build.VERSION.SDK_INT < 33 || NotificationManagerCompat.from(context).areNotificationsEnabled()) {
+        if (Build.VERSION.SDK_INT < 33 || ContextCompat.checkSelfPermission(context, Manifest.permission.POST_NOTIFICATIONS) == PackageManager.PERMISSION_GRANTED) {
             runCatching { NotificationManagerCompat.from(context).notify(REQUEST, n) }
         }
     }
