@@ -99,7 +99,9 @@ open class OpenAiCompatibleProvider(
         if (descriptor.id == ProviderId.CUSTOM_OPENAI && model.isBlank()) throw AiError.NotConfigured(descriptor.id)
         val body = buildJsonObject {
             if (includeModelInBody()) put("model", model)
-            if (usesOpenAiParameters) put("max_completion_tokens", request.maxOutputTokens) else put("max_tokens", request.maxOutputTokens)
+            // Reasoning models think inside this limit; they get room for it on top of the answer.
+            val limit = request.maxOutputTokens + ReasoningModels.extraTokens(model)
+            if (usesOpenAiParameters) put("max_completion_tokens", limit) else put("max_tokens", limit)
             if (!(usesOpenAiParameters && isReasoningModel(model))) put("temperature", request.temperature)
             if (request.expectJson) putJsonObject("response_format") { put("type", "json_object") }
             putJsonArray("messages") {
@@ -121,7 +123,9 @@ open class OpenAiCompatibleProvider(
         val json = postJson(client, descriptor.id, url, headers, body, request.timeoutMillis)
         val choice = json.path("choices", 0)
         if (choice.path("finish_reason").str() == "content_filter") throw AiError.ContentFiltered(descriptor.id)
-        val text = choice.path("message", "content").str() ?: throw AiError.InvalidResponse(descriptor.id, "missing choices[0].message.content")
+        val text = choice.path("message", "content").str()?.takeIf { it.isNotEmpty() || choice.path("finish_reason").str() != "length" }
+            ?: throw AiError.InvalidResponse(descriptor.id,
+                if (choice.path("finish_reason").str() == "length") "the answer was cut off before any text (length)" else "missing choices[0].message.content")
         return ChatResponse(text, descriptor.id, json.path("model").str() ?: model,
             json.path("usage", "prompt_tokens").int(), json.path("usage", "completion_tokens").int())
     }

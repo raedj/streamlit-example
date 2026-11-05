@@ -432,6 +432,7 @@ fun ProviderDetailScreen(id: ProviderId) {
                 is AiError.RateLimited -> s.f(K.PROV_ERR_RATE, name)
                 is AiError.RegionNotSupported -> s.f(K.PROV_ERR_REGION, name)
                 is AiError.Server -> s.f(K.PROV_ERR_SERVER, name, e.status)
+                is AiError.NotConfigured -> s.f(K.PROV_ERR_NOT_CONFIGURED, name)
                 else -> e?.message.orEmpty()
             }
         }
@@ -467,9 +468,12 @@ fun ProviderDetailScreen(id: ProviderId) {
         // provider is switched on, a model it has is chosen and the connection is tested without further taps.
         LaunchedEffect(hasKey, keySaves) {
             if (!hasKey || !d.requiresApiKey || d.location != ProviderLocation.CLOUD) return@LaunchedEffect
+            // A provider on the learner's own server (Azure, a custom one) needs its address first.
+            if (d.requiresBaseUrl && cleanBase() == null) { modelNote = s[K.PROV_NEED_BASE_URL]; return@LaunchedEffect }
             if (keySaves > 0) {
                 if (loadModels()) {
                     saveCfg { it.copy(enabled = true) }.join()
+                    if (id == ProviderId.AZURE_OPENAI && deployment.isBlank()) { modelNote = s[K.PROV_NEED_DEPLOYMENT]; return@LaunchedEffect }
                     test()
                     if (testMessage?.first == true && preferred == null) app.services.store.setPreferred(id)
                 }

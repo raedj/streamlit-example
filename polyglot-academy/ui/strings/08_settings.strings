@@ -325,6 +325,9 @@ PROV_ERR_QUOTA ¦ This {0} account has no free quota or credit left for this key
 PROV_ERR_RATE ¦ Too many requests to {0} right now. Wait a minute and try again. ¦ طلبات كثيرة إلى {0} الآن. انتظر دقيقة ثم أعد المحاولة.
 PROV_ERR_REGION ¦ {0} does not serve this key in your country or region. ¦ لا يقدّم {0} خدمته لهذا المفتاح في بلدك أو منطقتك.
 PROV_ERR_MODEL ¦ The model "{0}" is not available for this key. Tap "Load the models of my account" and choose one. ¦ النموذج «{0}» غير متاح لهذا المفتاح. اضغط «حمّل نماذج حسابي» واختر واحدًا منها.
+PROV_ERR_NOT_CONFIGURED ¦ {0} is not set up yet: check the server address, the model and the key. ¦ لم يكتمل إعداد {0} بعد: تحقّق من عنوان الخادم والنموذج والمفتاح.
+PROV_NEED_BASE_URL ¦ Enter the server address below, then tap "Load the models of my account". ¦ اكتب عنوان الخادم في الأسفل، ثم اضغط «حمّل نماذج حسابي».
+PROV_NEED_DEPLOYMENT ¦ Enter the deployment name below, then tap "Test connection". ¦ اكتب اسم النشر في الأسفل، ثم اضغط «اختبار الاتصال».
 PROV_ERR_SERVER ¦ {0} had a server problem (HTTP {1}). Try again later. ¦ واجه خادم {0} مشكلة (HTTP {1}). أعد المحاولة لاحقًا.
 SET_SHOW_POINTS ¦ Show points, quests and streak ¦ إظهار النقاط والمهام والسلسلة
 SET_SHOW_POINTS_SUB ¦ Your progress is recorded either way; this only hides them from the home screen. ¦ يُسجَّل تقدّمك في كلّ الأحوال، وهذا يخفيها من الشاشة الرئيسية فقط.

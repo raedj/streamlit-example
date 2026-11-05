@@ -15,6 +15,7 @@ import com.polyglot.academy.core.ai.OpenAiCompatibleProvider
 import com.polyglot.academy.core.ai.ProviderCatalog
 import com.polyglot.academy.core.ai.ProviderConfig
 import com.polyglot.academy.core.ai.ProviderId
+import com.polyglot.academy.core.ai.ReasoningModels
 import io.ktor.client.HttpClient
 import io.ktor.client.engine.mock.MockEngine
 import io.ktor.client.engine.mock.MockRequestHandleScope
@@ -319,5 +320,25 @@ class AdapterTest {
         assertEquals("good-key", lastRequest!!.headers["x-goog-api-key"])
         // A letter outside ASCII cannot go into a header: the key is named, not the network.
         assertFailsWith<AiError.Authentication> { GeminiProvider(ok, CredentialSource { "مفتاح" }, configs(), { 0L }).listModels() }
+    }
+
+    @Test fun reasoningModelsGetRoomToThinkBeforeTheAnswer() = realTimeTest {
+        val ok = client { respond("""{"choices":[{"message":{"content":"ok"},"finish_reason":"stop"}]}""", HttpStatusCode.OK, json) }
+        fun limit(field: String) = Json.parseToJsonElement(lastBody).jsonObject[field]!!.jsonPrimitive.content.toInt()
+        fun cfg(id: ProviderId, m: String) = configs(ProviderConfig(id, enabled = true, model = m))
+        assertTrue(OpenAiCompatibleProvider(ProviderCatalog.OPENAI, ok, keys, cfg(ProviderId.OPENAI, "o4-mini"), { 0L }).testConnection().ok)
+        assertEquals(16 + ReasoningModels.EXTRA_TOKENS, limit("max_completion_tokens"))
+        OpenAiCompatibleProvider(ProviderCatalog.OPENAI, ok, keys, cfg(ProviderId.OPENAI, "gpt-4.1-mini"), { 0L }).testConnection()
+        assertEquals(16, limit("max_completion_tokens"), "a model without reasoning keeps the asked limit")
+        OpenAiCompatibleProvider(ProviderCatalog.DEEPSEEK, ok, keys, cfg(ProviderId.DEEPSEEK, "deepseek-reasoner"), { 0L }).testConnection()
+        assertEquals(16 + ReasoningModels.EXTRA_TOKENS, limit("max_tokens"))
+        OpenAiCompatibleProvider(ProviderCatalog.XAI, ok, keys, cfg(ProviderId.XAI, "grok-3-mini"), { 0L }).testConnection()
+        assertEquals(16 + ReasoningModels.EXTRA_TOKENS, limit("max_tokens"))
+        assertTrue(ReasoningModels.isReasoning("openai/o4-mini") && ReasoningModels.isReasoning("deepseek/deepseek-r1") && ReasoningModels.isReasoning("qwen3-32b"))
+        assertFalse(ReasoningModels.isReasoning("deepseek-chat") || ReasoningModels.isReasoning("openai/gpt-4o-mini") || ReasoningModels.isReasoning("mistral-small-latest"))
+        // Still cut off: said so, not "missing content".
+        val cut = client { respond("""{"choices":[{"message":{"content":""},"finish_reason":"length"}]}""", HttpStatusCode.OK, json) }
+        val e = OpenAiCompatibleProvider(ProviderCatalog.OPENAI, cut, keys, cfg(ProviderId.OPENAI, "o3"), { 0L }).testConnection().error!!
+        assertTrue("cut off" in e.message!!, e.message)
     }
 }
