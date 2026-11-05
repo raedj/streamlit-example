@@ -71,6 +71,9 @@ POLYGLOT_KEY_PASSWORD=…
 then add a `signingConfigs.release` block reading those properties. Never commit keystores
 (`*.jks`, `*.keystore` are git-ignored). Build with `./gradlew -Ppolyglot.android=true :androidApp:bundleRelease`.
 
+## Google Play testing requirement
+New personal developer accounts must run a closed test with at least 12 testers who stay opted in for 14 days in a row before they can apply for production access (check the current rule in Play Console). The Data safety answers are drafted in docs/PLAY_DATA_SAFETY.md and the trial plan in docs/TRIAL_PLAN_AR.md.
+
 ## Desktop verification harness
 ```bash
 ./gradlew :desktopApp:run     # needs the Compose runtime → Google Maven (see BLOCKERS B-02)

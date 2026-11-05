@@ -16,6 +16,10 @@ import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.foundation.layout.fillMaxWidth
+import com.polyglot.academy.ui.designsystem.Banner
+import com.polyglot.academy.ui.designsystem.BannerKind
+import com.polyglot.academy.ui.designsystem.SecondaryButton
 import androidx.compose.ui.unit.dp
 import com.polyglot.academy.core.analytics.AnalyticsCalculator
 import com.polyglot.academy.core.analytics.LearningSummary
@@ -134,6 +138,20 @@ fun ProgressScreen() {
 
             if (data.assessments.isNotEmpty()) {
                 SectionHeader(s[K.PROGRESS_ASSESSMENTS])
+                // Taking the same test again is the app's measure of learning, as opposed to activity.
+                com.polyglot.academy.core.assessment.PlacementProgress.change(data.assessments)?.let { ch ->
+                    PolyCard {
+                        Text(s[K.PROGRESS_CHANGE_TITLE], style = MaterialTheme.typography.titleSmall)
+                        Text(s.f(K.PROGRESS_CHANGE, ch.first.takenAtMillis.toLocalDate().toString(), ch.first.estimatedLevel.label, (ch.firstShareRight * 100).toInt(),
+                            ch.latest.takenAtMillis.toLocalDate().toString(), ch.latest.estimatedLevel.label, (ch.latestShareRight * 100).toInt()), style = MaterialTheme.typography.bodyMedium)
+                        Text(s[when { ch.levelSteps > 0 -> K.PROGRESS_CHANGE_UP; ch.levelSteps < 0 -> K.PROGRESS_CHANGE_DOWN; else -> K.PROGRESS_CHANGE_SAME }],
+                            style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
+                    }
+                }
+                if (com.polyglot.academy.core.assessment.PlacementProgress.retestDue(data.assessments, app.services.clock.nowMillis())) {
+                    Banner(BannerKind.INFO, s[K.PROGRESS_RETEST])
+                    SecondaryButton(s[K.PROGRESS_RETEST_BUTTON], { app.nav.push(com.polyglot.academy.ui.navigation.Route.Assessment(lang)) }, Modifier.fillMaxWidth())
+                }
                 data.assessments.reversed().forEach { a ->
                     PolyCard { LevelBadge(a.estimatedLevel, null); Text(s.f(K.ASSESS_RANGE, a.levelLow.label, a.levelHigh.label), color = c.textSecondary) }
                 }

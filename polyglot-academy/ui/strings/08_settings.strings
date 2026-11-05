@@ -347,3 +347,10 @@ SET_REPORTS_DELETE ¦ Delete all reports ¦ احذف كلّ البلاغات
 SET_REPORTS_DELETE_BODY ¦ The reports on this device will be deleted. Export them first if you want to send them. ¦ ستُحذف البلاغات من هذا الجهاز. صدّرها أولًا إن أردت إرسالها.
 SET_TRANSLIT_KNOWN ¦ Hide it for words I know ¦ أخفِه للكلمات التي أتقنتها
 SET_TRANSLIT_KNOWN_SUB ¦ For words due a week or more later in your reviews; a button still shows it. ¦ للكلمات التي صار موعد مراجعتها بعد أسبوع أو أكثر، ويبقى زرّ لإظهاره.
+LOCAL_EXPERIMENTAL_TITLE ¦ Experimental ¦ تجريبي
+LOCAL_EXPERIMENTAL ¦ Conversation with a model on the phone is experimental: on many phones a reply can take minutes, and small models miss many corrections. For full tutor feedback, use a cloud provider or a computer on your network. Lessons, reviews and the offline conversation partner work without it. ¦ المحادثة مع نموذج على الهاتف ميزة تجريبية: قد يستغرق الردّ دقائق على كثير من الهواتف، والنماذج الصغيرة تفوّت كثيرًا من التصحيحات. للملاحظات الكاملة من المعلّم استخدم مزوّدًا سحابيًا أو حاسوبًا على شبكتك. الدروس والمراجعة وشريك المحادثة دون اتصال تعمل من دونها.
+USAGE_TITLE ¦ Usage log for a trial ¦ سجلّ الاستخدام لتجربة
+USAGE_SUB ¦ Off unless you turn it on. It counts how often each screen is opened, per day, on this device only: no words you write or read, no names. If someone running a trial asked you to, export the file and send it yourself. Turning it off deletes it. ¦ متوقّف ما لم تشغّله. يعدّ كم مرة فُتحت كل شاشة في كل يوم، على هذا الجهاز فقط: لا كلمات كتبتها أو قرأتها، ولا أسماء. إن طلبه منك من يُجري تجربة، صدّر الملف وأرسله بنفسك. إيقافه يحذفه.
+USAGE_SWITCH ¦ Keep a usage log ¦ احتفظ بسجلّ استخدام
+USAGE_STATUS ¦ Recording since {1}: {0} day|Recording since {1}: {0} days ¦ يُسجَّل منذ {1}: لا أيام بعد|يُسجَّل منذ {1}: يوم واحد|يُسجَّل منذ {1}: يومان|يُسجَّل منذ {1}: {0} أيام|يُسجَّل منذ {1}: {0} يومًا|يُسجَّل منذ {1}: {0} يوم
+USAGE_EXPORT ¦ Export the usage log ¦ صدّر سجلّ الاستخدام

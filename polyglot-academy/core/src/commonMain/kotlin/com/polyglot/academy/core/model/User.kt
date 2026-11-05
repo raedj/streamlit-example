@@ -120,6 +120,16 @@ data class AppSettings(
     val contentReports: List<ContentReport> = emptyList(),
     /** Where Arabic or Urdu letter writing was left, per language. */
     val letterPositions: Map<LanguageCode, Int> = emptyMap(),
+    /** Opt-in screen counts for a trial with testers; off and empty by default (UsageLogService). */
+    val usageLog: UsageLog = UsageLog(),
+)
+
+/** Per day, how often each screen was opened ("screen:Review" -> 3). No text, no content, no ids. */
+@Serializable
+data class UsageLog(
+    val enabled: Boolean = false,
+    val startedAtMillis: Long? = null,
+    val days: Map<String, Map<String, Int>> = emptyMap(),
 )
 
 enum class ContentIssue { TRANSLATION, EXAMPLE, PRONUNCIATION, AMBIGUOUS_ANSWER, LEVEL, OTHER }

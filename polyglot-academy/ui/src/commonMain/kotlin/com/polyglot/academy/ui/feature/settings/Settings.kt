@@ -54,6 +54,8 @@ import com.polyglot.academy.core.model.CorrectionIntensity
 import com.polyglot.academy.core.model.DataCategory
 import com.polyglot.academy.core.model.LanguageCode
 import com.polyglot.academy.core.model.Languages
+import com.polyglot.academy.core.util.toLocalDate
+import kotlinx.coroutines.flow.first
 import com.polyglot.academy.core.model.LearningGoal
 import com.polyglot.academy.core.model.LearningStyle
 import com.polyglot.academy.core.model.PrivacyConsent
@@ -564,6 +566,7 @@ private fun LocalModelsPage() {
     var tryResult by remember { mutableStateOf<Pair<String, String>?>(null) }
     var trying by remember { mutableStateOf<String?>(null) }
     val chosen = configs[ProviderId.ON_DEVICE]?.model
+    Banner(BannerKind.WARNING, s[K.LOCAL_EXPERIMENTAL], title = s[K.LOCAL_EXPERIMENTAL_TITLE])
     LocalModelCatalog.models.forEach { m ->
         val comp = LocalModelCatalog.compatibility(m, info, setOfNotNull(runtime?.runtime))
         val downloaded = remember(version) { runtime?.isDownloaded(m) == true }
@@ -702,6 +705,23 @@ private fun DataPage() {
             }
         }, Modifier.fillMaxWidth())
         SecondaryButton(s[K.SET_REPORTS_DELETE], { confirm = K.SET_REPORTS_DELETE }, Modifier.fillMaxWidth())
+    }
+    // For a trial: the app has no server or analytics, so testers can keep and send screen counts themselves.
+    val usage = app.settings.usageLog
+    SectionHeader(s[K.USAGE_TITLE])
+    Text(s[K.USAGE_SUB], style = MaterialTheme.typography.bodySmall, color = PolyglotTheme.colors.textSecondary)
+    PolyCard(contentPadding = 0.dp) { SwitchRow(s[K.USAGE_SWITCH], usage.enabled, { on -> scope.launch { app.services.usage.setEnabled(on) } }) }
+    if (usage.enabled) {
+        val since = usage.startedAtMillis?.let { it.toLocalDate().toString() }.orEmpty()
+        Text(s.plural(K.USAGE_STATUS, usage.days.size, since), style = MaterialTheme.typography.bodySmall, color = PolyglotTheme.colors.textSecondary)
+        SecondaryButton(s[K.USAGE_EXPORT], {
+            scope.launch {
+                val results = Languages.all.flatMap { app.services.store.assessments(it.code).first() }
+                val json = app.services.usage.exportJson(results)
+                val where = app.platformUi.saveExport("polyglot-usage-log.json", json)
+                toast(where?.let { s.f(K.SET_EXPORT_SAVED_TO, it) } ?: s.f(K.SET_EXPORT_DONE, "${json.length / 1024 + 1} KB"))
+            }
+        }, Modifier.fillMaxWidth())
     }
     SectionHeader(s[K.SET_RESTORE])
     Text(s[K.SET_RESTORE_SUB], style = MaterialTheme.typography.bodySmall, color = PolyglotTheme.colors.textSecondary)

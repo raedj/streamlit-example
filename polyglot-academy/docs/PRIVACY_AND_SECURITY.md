@@ -33,6 +33,8 @@ number of words due or the next lesson, and one word to review. It is declared f
 only (never the lock screen), and "Show a word to review on the home-screen widget" in privacy
 settings removes the word. It reads the same local data as the home screen and sends nothing.
 
+**Usage log for a trial** (Settings → Your data, off by default) counts screen openings per day on the phone (event names such as `screen:Review`, nothing else is accepted). It is never sent by the app: the tester exports a JSON file with those counts and their placement results (level, share right, date) and sends it themselves. Turning it off deletes it. Tested in `TrialReadinessTest`.
+
 **AI-written stories** send only the chosen topic, level and a few known words (LESSON_CONTENT).
 
 **On-device chat models** (llama.cpp, Qwen2.5 0.5B or 1.5B) answer tutor conversations on the phone; nothing is

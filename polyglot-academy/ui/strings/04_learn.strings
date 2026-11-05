@@ -91,3 +91,7 @@ ADAPT_EASIER ¦ Let's slow down: we'll add hints and fuller explanations for a w
 LISTEN_NO_VOICE ¦ There is no voice for {0} on this device, so this listening exercise is not scored. Skip it, or install a voice in the system text-to-speech settings. ¦ لا يوجد صوت للغة {0} على هذا الجهاز، لذلك لا يُحتسب هذا التمرين السمعي. تخطَّه، أو ثبّت صوتًا من إعدادات تحويل النص إلى كلام في النظام.
 LISTEN_SKIP ¦ Skip this exercise ¦ تخطَّ هذا التمرين
 SHOW_READING ¦ Show pronunciation ¦ اعرض النطق
+LEARN_UNREVIEWED_TITLE ¦ Not reviewed yet ¦ لم يُراجَع بعد
+LEARN_UNREVIEWED ¦ The {0} lessons and words were written with AI help and have not been checked by a native speaker yet, so some may be wrong. If something looks wrong, report it from the lesson. ¦ دروس {0} وكلماتها كُتبت بمساعدة الذكاء الاصطناعي ولم يراجعها متحدّث أصلي بعد، فقد يكون في بعضها خطأ. إن بدا لك شيء خاطئ فأبلِغ عنه من الدرس.
+LEARN_PREVIEW_TITLE ¦ Preview: {0} ¦ معاينة: {0}
+LEARN_PREVIEW ¦ This is a short starter course written entirely by AI. No native speaker has checked it, so treat it as a first taste of the language rather than a reliable course, and check what you learn against another source. ¦ هذا مقرّر أولي قصير كتبه الذكاء الاصطناعي بالكامل، ولم يراجعه أي متحدّث أصلي. عامِله كتعرّف أوّلي على اللغة لا كمقرّر موثوق، وتحقّق مما تتعلّمه من مصدر آخر.

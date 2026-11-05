@@ -20,6 +20,16 @@ object ContentReview {
 
     fun of(language: LanguageCode, itemId: String): ContentReviewRecord? = records[language.tag to itemId]
 
+    // Starter courses written entirely by AI after the others (2026-10-25): shown as a preview, not a
+    // course, until a native speaker has checked some of them.
+    private val starterCourses = setOf(LanguageCode.TURKISH, LanguageCode.URDU, LanguageCode.MALAY)
+
+    /** No item of this language has been checked by a native speaker yet. */
+    fun isUnreviewed(language: LanguageCode): Boolean = reviewedCount(language) == 0
+
+    /** An AI-written starter course that nobody has reviewed: offered, but labelled as a preview. */
+    fun isPreview(language: LanguageCode): Boolean = language in starterCourses && isUnreviewed(language)
+
     /** Number of items reviewed and marked right, for the language (0 until the first review). */
     fun reviewedCount(language: LanguageCode): Int = records.count { (k, v) -> k.first == language.tag && v.status == ContentReviewStatus.REVIEWED }
 }

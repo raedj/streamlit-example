@@ -33,6 +33,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.stateDescription
 import androidx.compose.ui.unit.dp
+import com.polyglot.academy.core.content.ContentReview
 import com.polyglot.academy.core.content.Curriculum
 import com.polyglot.academy.core.content.LevelCoverage
 import com.polyglot.academy.core.model.Bookmark
@@ -76,6 +77,9 @@ fun CoursesScreen(trackId: String?, isTabRoot: Boolean) {
     ScrollScreen(track?.let { s.gloss(it.title) } ?: s[K.LEARN_TITLE], showBack = !isTabRoot, tab = if (isTabRoot) Tab.LEARN else null) {
         if (track == null) {
             Text("${Labels.language(s, lang)} · ${s[K.LEARN_GENERAL]}", style = MaterialTheme.typography.bodyLarge, color = PolyglotTheme.colors.textSecondary)
+            // AI-written content is labelled as such until native speakers have checked it (docs/CONTENT_SOURCES.md).
+            if (ContentReview.isPreview(lang)) Banner(BannerKind.WARNING, s[K.LEARN_PREVIEW], title = s.f(K.LEARN_PREVIEW_TITLE, Labels.language(s, lang)))
+            else if (ContentReview.isUnreviewed(lang)) Banner(BannerKind.INFO, s.f(K.LEARN_UNREVIEWED, Labels.language(s, lang)), title = s[K.LEARN_UNREVIEWED_TITLE])
             // A learner placed above the built-in course is told so, instead of finding no next lesson.
             if (LevelCoverage.isAboveCourse(lang, start)) Banner(BannerKind.INFO,
                 s.f(K.LEVELS_ABOVE, Labels.language(s, lang), LevelCoverage.courseCeiling(lang).label, start.label), title = s[K.LEVELS_ABOVE_TITLE])

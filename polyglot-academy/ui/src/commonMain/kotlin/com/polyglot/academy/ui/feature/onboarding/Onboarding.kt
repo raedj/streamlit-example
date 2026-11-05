@@ -165,8 +165,10 @@ fun OnboardingFlow() {
                         Languages.all.filter { it.code != nativeLang }.forEach { lp ->
                             ChoiceCard(lp.displayName(s.language), learnLang == lp.code, onClick = {
                                 learnLang = lp.code; variant = lp.defaultVariantId
-                            }, subtitle = lp.nativeName)
+                            }, subtitle = lp.nativeName + if (com.polyglot.academy.core.content.ContentReview.isPreview(lp.code)) " · " + s[K.LANG_PREVIEW_TAG] else "")
                         }
+                        // Said before the choice, not discovered later: nothing has been checked by a native speaker yet.
+                        Text(s[K.ONB_LEARN_REVIEW_NOTE], style = MaterialTheme.typography.bodySmall, color = PolyglotTheme.colors.textSecondary)
                     }
                     Step.VARIANT -> {
                         Header(s[K.ONB_VARIANT_TITLE], s[K.ONB_VARIANT_BODY])

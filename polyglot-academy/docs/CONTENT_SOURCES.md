@@ -25,6 +25,8 @@ No external word-frequency list or other third-party data set is bundled at pres
 **Recommendation:** have a native speaker (ideally a teacher) review each language before a
 public release, starting with Turkish, Urdu and Malay, and record the reviewer and date here.
 
+The app says the same thing: since 2026-11-05 the Learn tab tells the learner that a language's content has not been checked by a native speaker, and marks the Turkish, Urdu and Malay starter courses as "Preview" (also when choosing the language). Both follow `content/review/status.tsv`. The Arabic interface text has its own sheet: `python3 tools/ui_review_sheet.py` writes `content/review/sheets/ui-ar.tsv`.
+
 ## Notes per language
 - **Turkish:** IPA is given for most entries; vowel-harmony and consonant-assimilation forms in
   exercises follow standard Istanbul Turkish.

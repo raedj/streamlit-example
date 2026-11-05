@@ -1,6 +1,7 @@
 package com.polyglot.academy.ui.app
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import com.polyglot.academy.ui.feature.assessment.AssessmentScreen
 import com.polyglot.academy.ui.feature.home.HomeScreen
 import com.polyglot.academy.ui.feature.learn.CoursesScreen
@@ -38,6 +39,12 @@ import com.polyglot.academy.ui.navigation.Tab
 
 @Composable
 fun RouteContent(route: Route) {
+    // Counted only when the learner keeps the opt-in usage log (settings, your data); the screen's
+    // type only, never what is on it. Tabs are counted by tab.
+    val app = LocalApp.current
+    LaunchedEffect(route) {
+        app.services.usage.record("screen:" + ((route as? Route.TabRoot)?.tab?.name ?: route::class.simpleName ?: "Other"))
+    }
     when (route) {
         is Route.TabRoot -> when (route.tab) {
             Tab.HOME -> HomeScreen()
