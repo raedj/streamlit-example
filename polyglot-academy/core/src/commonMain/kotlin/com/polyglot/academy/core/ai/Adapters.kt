@@ -27,8 +27,11 @@ abstract class BaseHttpProvider(
 ) : AiProvider {
     protected val config: ProviderConfig get() = configs.config(descriptor.id)
     protected val model: String get() = config.model?.takeIf { it.isNotBlank() } ?: descriptor.defaultModel
+    // A saved address that is not a web address (a key typed into the wrong field, say) is never used:
+    // the provider's own address is, or the provider counts as not set up.
     protected open val baseUrl: String
-        get() = (config.baseUrl?.takeIf { it.isNotBlank() } ?: descriptor.defaultBaseUrl ?: throw AiError.NotConfigured(descriptor.id)).trimEnd('/')
+        get() = (config.baseUrl?.takeIf { it.isNotBlank() && (ProviderUrl.isWebAddress(it) || descriptor.id == ProviderId.LOCAL_SERVER) }
+            ?: descriptor.defaultBaseUrl ?: throw AiError.NotConfigured(descriptor.id)).trimEnd('/')
 
     /** Model ids from the provider's model-list endpoint (sorted, without duplicates). */
     protected fun ids(json: kotlinx.serialization.json.JsonElement?, field: String = "id"): List<String> =

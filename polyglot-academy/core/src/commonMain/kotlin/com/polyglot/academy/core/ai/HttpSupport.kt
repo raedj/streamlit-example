@@ -53,7 +53,7 @@ internal suspend fun postJson(
     } catch (e: AiError) {
         throw e
     } catch (e: Exception) {
-        throw AiError.Network(provider, e::class.simpleName ?: "IO")
+        throw AiError.Network(provider, networkFailureKind(e))
     }
     if (status !in 200..299) throw classifyHttpError(provider, status, text, retryAfter)
     return try {
@@ -75,10 +75,21 @@ internal suspend fun getJson(client: HttpClient, provider: ProviderId, url: Stri
     } catch (e: CancellationException) {
         throw e
     } catch (e: Exception) {
-        throw AiError.Network(provider, e::class.simpleName ?: "IO")
+        throw AiError.Network(provider, networkFailureKind(e))
     }
     if (status !in 200..299) throw classifyHttpError(provider, status, text, null)
     return try { providerJson.parseToJsonElement(text).jsonObject } catch (e: Exception) { throw AiError.InvalidResponse(provider, "body is not a JSON object") }
+}
+
+/**
+ * The most telling exception type in the chain (the HTTP client often wraps the real one), so the
+ * learner can be told "the address was not found" or "a secure connection failed" instead of only
+ * "network error". Only the type name is kept: messages may contain addresses or headers.
+ */
+internal fun networkFailureKind(e: Throwable): String {
+    val names = generateSequence(e) { it.cause.takeIf { c -> c !== it } }.take(8).mapNotNull { it::class.simpleName }.toList()
+    val telling = listOf("UnknownHost", "SSL", "Certificate", "CertPath", "ConnectException", "NoRouteToHost", "SocketTimeout", "PortUnreachable", "URLParser", "URLDecode")
+    return names.firstOrNull { n -> telling.any { it in n } } ?: names.firstOrNull() ?: "IO"
 }
 
 internal fun classifyHttpError(provider: ProviderId, status: Int, body: String, retryAfterMillis: Long?): AiError {

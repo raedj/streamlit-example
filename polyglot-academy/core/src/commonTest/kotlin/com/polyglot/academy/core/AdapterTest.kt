@@ -15,6 +15,7 @@ import com.polyglot.academy.core.ai.OpenAiCompatibleProvider
 import com.polyglot.academy.core.ai.ProviderCatalog
 import com.polyglot.academy.core.ai.ProviderConfig
 import com.polyglot.academy.core.ai.ProviderId
+import com.polyglot.academy.core.ai.ProviderUrl
 import com.polyglot.academy.core.ai.ReasoningModels
 import io.ktor.client.HttpClient
 import io.ktor.client.engine.mock.MockEngine
@@ -340,5 +341,28 @@ class AdapterTest {
         val cut = client { respond("""{"choices":[{"message":{"content":""},"finish_reason":"length"}]}""", HttpStatusCode.OK, json) }
         val e = OpenAiCompatibleProvider(ProviderCatalog.OPENAI, cut, keys, cfg(ProviderId.OPENAI, "o3"), { 0L }).testConnection().error!!
         assertTrue("cut off" in e.message!!, e.message)
+    }
+
+    @Test fun networkFailuresKeepTheirKindAndBadAddressesAreNeverUsed() = realTimeTest {
+        class UnknownHostException : Exception("generativelanguage.googleapis.com")
+        val wrapped = IllegalStateException("engine failed", UnknownHostException())
+        assertEquals("UnknownHostException", com.polyglot.academy.core.ai.networkFailureKind(wrapped))
+        assertEquals("IllegalStateException", com.polyglot.academy.core.ai.networkFailureKind(IllegalStateException("x")))
+        val down = client { throw UnknownHostException() }
+        val e = GeminiProvider(down, keys, configs(), { 0L }).testConnection().error
+        assertTrue(e is AiError.Network && e.detail == "UnknownHostException", e.toString())
+
+        assertTrue(ProviderUrl.isWebAddress("https://generativelanguage.googleapis.com/v1beta") && ProviderUrl.isWebAddress("http://10.0.2.2:8788/v1"))
+        assertFalse(ProviderUrl.isWebAddress("AIzaSyA-not-an-address") || ProviderUrl.isWebAddress("generativelanguage.googleapis.com") || ProviderUrl.isWebAddress("https://a b"))
+        assertEquals("generativelanguage.googleapis.com", ProviderUrl.host("https://generativelanguage.googleapis.com/v1beta"))
+        // A key saved in the address field by mistake: the provider's own address is used, the key is not sent as a URL.
+        val ok = client { respond("""{"models":[]}""", HttpStatusCode.OK, json) }
+        GeminiProvider(ok, keys, configs(ProviderConfig(ProviderId.GEMINI, enabled = true, baseUrl = "AIzaSyB-pasted-here")), { 0L }).listModels()
+        assertTrue(lastRequest!!.url.toString().startsWith("https://generativelanguage.googleapis.com/v1beta/models"), lastRequest!!.url.toString())
+
+        assertEquals("AIza", ApiKeyText.unexpectedFormat(ProviderId.GEMINI, "123456789012"), "a project number is not a key")
+        assertEquals(null, ApiKeyText.unexpectedFormat(ProviderId.GEMINI, " AIzaSyA1234567890 "))
+        assertEquals("sk-ant-", ApiKeyText.unexpectedFormat(ProviderId.ANTHROPIC, "sk-proj-abc"))
+        assertEquals(null, ApiKeyText.unexpectedFormat(ProviderId.MISTRAL, "anything"), "no known format, no hint")
     }
 }

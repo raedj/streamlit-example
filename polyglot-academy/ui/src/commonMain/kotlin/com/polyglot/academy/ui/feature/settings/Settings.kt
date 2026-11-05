@@ -385,6 +385,8 @@ fun ProviderDetailScreen(id: ProviderId) {
     var modelsError by remember { mutableStateOf<String?>(null) }
     var modelNote by remember { mutableStateOf<String?>(null) }
     var keySaves by remember { mutableStateOf(0) }
+    var keyWarning by remember { mutableStateOf<String?>(null) }
+    var urlError by remember { mutableStateOf<String?>(null) }
     LaunchedEffect(id) { hasKey = app.services.providers.hasKey(id) }
     fun saveCfg(t: (ProviderConfig) -> ProviderConfig) = scope.launch { app.services.providers.saveConfig(t(app.services.store.current().getValue(id))) }
     ScrollScreen(d.displayName) {
@@ -398,9 +400,14 @@ fun ProviderDetailScreen(id: ProviderId) {
             if (hasKey) Text(s[K.PROV_KEY_SAVED], style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
             AppTextField(keyInput, { keyInput = it }, s[K.PROV_API_KEY], secret = true)
             Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-                SecondaryButton(s[K.PROV_KEY_SAVE], { scope.launch { app.services.providers.saveKey(id, keyInput); keyInput = ""; hasKey = app.services.providers.hasKey(id); if (hasKey) keySaves++ } }, Modifier.weight(1f), enabled = keyInput.isNotBlank())
+                SecondaryButton(s[K.PROV_KEY_SAVE], { scope.launch {
+                    // Saved anyway (formats can change), but a project number or a name pasted instead of the key is caught here.
+                    keyWarning = com.polyglot.academy.core.ai.ApiKeyText.unexpectedFormat(id, keyInput)?.let { s.f(K.PROV_KEY_FORMAT, d.displayName, it) }
+                    app.services.providers.saveKey(id, keyInput); keyInput = ""; hasKey = app.services.providers.hasKey(id); if (hasKey) keySaves++
+                } }, Modifier.weight(1f), enabled = keyInput.isNotBlank())
                 if (hasKey) QuietButton(s[K.PROV_KEY_REMOVE], { scope.launch { app.services.platform.secrets.remove(secretKeyFor(id)); hasKey = false } }, color = c.error)
             }
+            keyWarning?.let { Text(it, style = MaterialTheme.typography.bodySmall, color = c.warning) }
             Text(s.f(K.PROV_KEY_STORAGE, app.services.platform.secrets.protectionDescription), style = MaterialTheme.typography.labelSmall, color = c.textMuted)
         }
         d.keyUrl?.let { Text(s.f(K.PROV_GET_KEY, it), style = MaterialTheme.typography.bodySmall, color = c.textSecondary) }
@@ -412,10 +419,20 @@ fun ProviderDetailScreen(id: ProviderId) {
             ChipGroup(d.suggestedModels, setOf(model.ifBlank { d.defaultModel }), { it }, { model = it })
         }
         // A local server's address is completed (/v1) and shown that way, so what is saved is what is used.
+        // Anything that is not a web address (often the key, pasted into the wrong field) is cleared, never
+        // saved or sent; a provider with its own address then uses that one.
         fun cleanBase(): String? {
-            val b = baseUrl.trim().ifBlank { null } ?: return null
-            return if (id == ProviderId.LOCAL_SERVER) com.polyglot.academy.core.ai.LocalServerUrl.normalize(b).also { baseUrl = it } else b
+            val b = baseUrl.trim().ifBlank { null } ?: return null.also { urlError = null }
+            val u = if (id == ProviderId.LOCAL_SERVER) com.polyglot.academy.core.ai.LocalServerUrl.normalize(b) else b
+            if (!com.polyglot.academy.core.ai.ProviderUrl.isWebAddress(u)) {
+                urlError = s[if (d.defaultBaseUrl != null) K.PROV_BASE_URL_INVALID_DEFAULT else K.PROV_BASE_URL_INVALID]
+                baseUrl = ""
+                return null
+            }
+            urlError = null
+            return u.also { if (id == ProviderId.LOCAL_SERVER) baseUrl = it }
         }
+        fun host() = com.polyglot.academy.core.ai.ProviderUrl.host(cleanBase() ?: d.defaultBaseUrl.orEmpty())
         // What went wrong, in the learner's words: a rejected key, no network, a model the key does not have...
         fun explain(e: Throwable?): String {
             val name = d.displayName
@@ -426,7 +443,13 @@ fun ProviderDetailScreen(id: ProviderId) {
                     else if (id == ProviderId.LOCAL_SERVER) s.f(K.PROV_LOCAL_404, cleanBase() ?: d.defaultBaseUrl.orEmpty(), chosen)
                     else s.f(K.PROV_ERR_MODEL, chosen)
                 is AiError.Authentication -> s.f(K.PROV_ERR_AUTH, name)
-                is AiError.Network -> s.f(K.PROV_ERR_NETWORK, name)
+                // The exception type says which step failed: finding the server, reaching it, or securing the connection.
+                is AiError.Network -> when {
+                    "UnknownHost" in e.detail -> s.f(K.PROV_ERR_DNS, name, host())
+                    "SSL" in e.detail || "Cert" in e.detail -> s.f(K.PROV_ERR_TLS, name, host())
+                    listOf("ConnectException", "NoRouteToHost", "SocketTimeout", "PortUnreachable").any { it in e.detail } -> s.f(K.PROV_ERR_BLOCKED, name, host())
+                    else -> s.f(K.PROV_ERR_NETWORK, name)
+                } + " " + s.f(K.PROV_ERR_DETAIL, e.detail)
                 is AiError.Timeout -> s.f(K.PROV_ERR_TIMEOUT, name)
                 is AiError.QuotaExceeded -> s.f(K.PROV_ERR_QUOTA, name)
                 is AiError.RateLimited -> s.f(K.PROV_ERR_RATE, name)
@@ -453,7 +476,7 @@ fun ProviderDetailScreen(id: ProviderId) {
                     }
                     true
                 },
-                { e -> modelsError = s.f(K.PROV_MODELS_FAILED, explain(e)); false })
+                { e -> accountModels = emptyList(); modelsError = s.f(K.PROV_MODELS_FAILED, explain(e)); false })
             loadingModels = false
             return ok
         }
@@ -491,7 +514,12 @@ fun ProviderDetailScreen(id: ProviderId) {
             Text(s.plural(K.PROV_MODELS_FOUND, accountModels.size, shown.size), style = MaterialTheme.typography.labelLarge)
             ChipGroup(shown, setOf(model), { it }, { model = it })
         }
-        if (d.requiresBaseUrl || d.defaultBaseUrl != null) AppTextField(baseUrl, { baseUrl = it }, s[K.PROV_BASE_URL], supporting = d.defaultBaseUrl)
+        if (d.requiresBaseUrl || d.defaultBaseUrl != null) {
+            AppTextField(baseUrl, { baseUrl = it }, s[K.PROV_BASE_URL], supporting = d.defaultBaseUrl)
+            urlError?.let { Text(it, style = MaterialTheme.typography.bodySmall, color = c.warning) }
+            if (d.defaultBaseUrl != null && baseUrl.isNotBlank() && baseUrl.trim().trimEnd('/') != d.defaultBaseUrl)
+                QuietButton(s[K.PROV_BASE_URL_RESET], { baseUrl = ""; urlError = null; saveCfg { it.copy(baseUrl = null) } })
+        }
         if (id == ProviderId.AZURE_OPENAI) AppTextField(deployment, { deployment = it }, s[K.PROV_DEPLOYMENT])
         SecondaryButton(s[K.SAVE], { saveCfg { it.copy(model = model.trim().ifBlank { null }, baseUrl = cleanBase(), deployment = deployment.trim().ifBlank { null }) } }, Modifier.fillMaxWidth())
         PrimaryButton(if (testing) s[K.PROV_TESTING] else s[K.PROV_TEST], { scope.launch { test() } }, Modifier.fillMaxWidth(), loading = testing, enabled = cfg.enabled && !testing)

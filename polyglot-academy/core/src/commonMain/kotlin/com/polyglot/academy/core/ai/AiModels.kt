@@ -93,7 +93,7 @@ sealed class AiError(message: String) : Exception(message) {
     class QuotaExceeded(val provider: ProviderId) : AiError("$provider quota or billing limit reached") { override val retryable = false }
     class RateLimited(val provider: ProviderId, val retryAfterMillis: Long?) : AiError("$provider rate limit") { override val retryable = true }
     class Timeout(val provider: ProviderId) : AiError("$provider timed out") { override val retryable = true }
-    class Network(val provider: ProviderId, detail: String) : AiError("Network error contacting $provider: $detail") { override val retryable = true }
+    class Network(val provider: ProviderId, val detail: String) : AiError("Network error contacting $provider: $detail") { override val retryable = true }
     class Server(val provider: ProviderId, val status: Int) : AiError("$provider server error $status") { override val retryable = status >= 500 }
     class InvalidResponse(val provider: ProviderId, detail: String) : AiError("$provider returned an unexpected response: $detail") { override val retryable = false }
     class RegionNotSupported(val provider: ProviderId) : AiError("$provider is not available in this country or region") { override val retryable = false }

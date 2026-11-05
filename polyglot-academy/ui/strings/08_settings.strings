@@ -159,7 +159,7 @@ PROV_DEPLOYMENT ¦ Deployment name ¦ اسم النشر
 PROV_TEST ¦ Test connection ¦ اختبار الاتصال
 PROV_TESTING ¦ Testing… ¦ جارٍ الاختبار…
 PROV_TEST_OK ¦ Connected — answered in {0} ms ¦ متصل — أجاب خلال {0} مللي ثانية
-PROV_TEST_FAILED ¦ Connection failed: {0} ¦ فشل الاتصال: {0}
+PROV_TEST_FAILED ¦ The test did not pass: {0} ¦ لم ينجح الاختبار: {0}
 PROV_LOCAL_404 ¦ the server answered, but not at {0}, or it does not have the model "{1}". For Ollama the address is http://<computer>:11434/v1 and the model must be pulled first (ollama pull {1}); for LM Studio http://<computer>:1234/v1. ¦ أجاب الخادم، لكن ليس على العنوان {0}، أو ليس لديه النموذج «{1}». عنوان Ollama هو http://<الحاسوب>:11434/v1 ويجب تنزيل النموذج عليه أولًا (ollama pull {1})؛ وعنوان LM Studio هو http://<الحاسوب>:1234/v1.
 PROV_MAKE_PREFERRED ¦ Make preferred ¦ اجعله المفضّل
 PROV_IS_PREFERRED ¦ This is your preferred provider ¦ هذا مزوّدك المفضّل
@@ -328,6 +328,14 @@ PROV_ERR_MODEL ¦ The model "{0}" is not available for this key. Tap "Load the m
 PROV_ERR_NOT_CONFIGURED ¦ {0} is not set up yet: check the server address, the model and the key. ¦ لم يكتمل إعداد {0} بعد: تحقّق من عنوان الخادم والنموذج والمفتاح.
 PROV_NEED_BASE_URL ¦ Enter the server address below, then tap "Load the models of my account". ¦ اكتب عنوان الخادم في الأسفل، ثم اضغط «حمّل نماذج حسابي».
 PROV_NEED_DEPLOYMENT ¦ Enter the deployment name below, then tap "Test connection". ¦ اكتب اسم النشر في الأسفل، ثم اضغط «اختبار الاتصال».
+PROV_ERR_DNS ¦ The phone could not find the {0} server ({1}). Check the internet connection; if other sites open, this address may be blocked on your network or in your country: try mobile data instead of Wi-Fi (or the other way round), a VPN, or another provider such as OpenRouter. ¦ لم يتمكّن الهاتف من إيجاد خادم {0} ‏({1}). تحقّق من اتصال الإنترنت؛ وإن كانت المواقع الأخرى تفتح فقد يكون هذا العنوان محجوبًا في شبكتك أو بلدك: جرّب بيانات الجوال بدل Wi-Fi (أو العكس)، أو VPN، أو مزوّدًا آخر مثل OpenRouter.
+PROV_ERR_TLS ¦ A secure connection to {0} ({1}) could not be set up. Check that the phone's date and time are set automatically, and turn off any VPN, proxy or app that inspects traffic. ¦ تعذّر إنشاء اتصال آمن مع {0} ‏({1}). تأكّد أن تاريخ الهاتف ووقته مضبوطان تلقائيًا، وأوقف أي VPN أو وكيل أو تطبيق يفحص الاتصال.
+PROV_ERR_BLOCKED ¦ The phone found {0} ({1}) but could not connect to it; the connection may be blocked on this network. Try mobile data instead of Wi-Fi (or the other way round), or a VPN. ¦ وجد الهاتف {0} ‏({1}) لكنه لم يستطع الاتصال به؛ قد يكون الاتصال محجوبًا في هذه الشبكة. جرّب بيانات الجوال بدل Wi-Fi (أو العكس)، أو VPN.
+PROV_ERR_DETAIL ¦ (Technical detail: {0}) ¦ (تفصيل تقني: {0})
+PROV_KEY_FORMAT ¦ Saved, but this does not look like a {0} API key: they usually start with "{1}". Copy the key itself from the provider's key page, not a project number or name. ¦ حُفظ، لكنه لا يبدو مفتاح API من {0}: مفاتيحه تبدأ عادة بـ «{1}». انسخ المفتاح نفسه من صفحة المفاتيح لدى المزوّد، لا رقم المشروع ولا اسمه.
+PROV_BASE_URL_INVALID ¦ The server address must be a web address starting with https:// (it was cleared). ¦ يجب أن يكون عنوان الخادم عنوان ويب يبدأ بـ https:// (مُسح ما كُتب).
+PROV_BASE_URL_INVALID_DEFAULT ¦ What was in the server address field is not a web address, so it was cleared and the provider's own address is used. Leave this field empty unless you use a proxy. ¦ ما كُتب في حقل عنوان الخادم ليس عنوان ويب، فمُسح ويُستخدم عنوان المزوّد نفسه. اترك هذا الحقل فارغًا إلا إن كنت تستخدم وسيطًا.
+PROV_BASE_URL_RESET ¦ Use the provider's own address ¦ استخدم عنوان المزوّد نفسه
 PROV_ERR_SERVER ¦ {0} had a server problem (HTTP {1}). Try again later. ¦ واجه خادم {0} مشكلة (HTTP {1}). أعد المحاولة لاحقًا.
 SET_SHOW_POINTS ¦ Show points, quests and streak ¦ إظهار النقاط والمهام والسلسلة
 SET_SHOW_POINTS_SUB ¦ Your progress is recorded either way; this only hides them from the home screen. ¦ يُسجَّل تقدّمك في كلّ الأحوال، وهذا يخفيها من الشاشة الرئيسية فقط.
