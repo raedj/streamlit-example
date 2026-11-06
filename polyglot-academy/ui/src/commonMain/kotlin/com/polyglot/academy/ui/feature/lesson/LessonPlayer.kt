@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.imePadding
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
@@ -21,6 +22,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -190,21 +192,41 @@ private fun LessonPlayer(lesson: Lesson, restart: Boolean, onRetry: () -> Unit) 
         onConfirm = { confirmExit = false; exit() }, onDismiss = { confirmExit = false })
 
     val c = PolyglotTheme.colors
-    Scaffold(containerColor = c.background, topBar = {
+    val actions = remember { ExerciseActionSlot() }
+    CompositionLocalProvider(LocalExerciseActions provides actions) { Scaffold(containerColor = c.background, topBar = {
         Row(Modifier.fillMaxWidth().padding(horizontal = 8.dp, vertical = 8.dp).padding(top = 24.dp), verticalAlignment = Alignment.CenterVertically) {
             IconButton(onClick = { if (summary != null) app.nav.pop() else confirmExit = true }) { Icon(Icons.Filled.Close, s[K.CLOSE]) }
             if (summary == null && index >= 0) {
                 val desc = s.f(K.PLAYER_PROGRESS, index + 1, lesson.exercises.size)
                 LinearProgressIndicator(
-                    progress = { (index + if (answered) 1 else 0).toFloat() / lesson.exercises.size },
+                    progress = { (index + 1).toFloat() / lesson.exercises.size },
                     modifier = Modifier.weight(1f).height(10.dp).clip(RoundedCornerShape(5.dp)).semantics { contentDescription = desc },
                     color = c.primary, trackColor = c.progressTrack, drawStopIndicator = {},
                 )
                 Text("${index + 1}/${lesson.exercises.size}", style = MaterialTheme.typography.labelLarge, modifier = Modifier.padding(horizontal = 12.dp))
             }
         }
+    }, bottomBar = {
+        // The buttons stay in reach under the thumb and above the keyboard, however long the exercise is.
+        Column(Modifier.fillMaxWidth().imePadding().navigationBarsPadding()) {
+            val pinned = actions.content
+            val feedbackFor = lastAnswer.takeIf { summary == null && answered && index >= 0 }
+            if (feedbackFor != null) {
+                val ex = lesson.exercises[index]
+                ContentColumn(padding = PaddingValues(vertical = 12.dp)) {
+                    Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                        if (!feedbackFor.outcome.correct && !(voiceAvailable == false && ex.needsAudio)) {
+                            SecondaryButton(s[K.RETRY], { answered = false; lastAnswer = null; attempt++; shownAt = services.clock.nowMillis() }, Modifier.weight(1f))
+                        }
+                        PrimaryButton(if (index >= lesson.exercises.lastIndex) s[K.DONE] else s[K.CONTINUE], { advance() }, Modifier.weight(1f))
+                    }
+                }
+            } else if (summary == null && pinned != null) {
+                ContentColumn(padding = PaddingValues(vertical = 12.dp)) { pinned() }
+            }
+        }
     }) { padding ->
-        Column(Modifier.fillMaxSize().padding(padding).verticalScroll(rememberScrollState()).navigationBarsPadding()) {
+        Column(Modifier.fillMaxSize().padding(padding).verticalScroll(rememberScrollState())) {
             ContentColumn(padding = PaddingValues(vertical = 12.dp)) {
                 val sum = summary
                 if (sum != null) SummaryView(lesson, sum, onRetry = onRetry)
@@ -237,15 +259,11 @@ private fun LessonPlayer(lesson: Lesson, restart: Boolean, onRetry: () -> Unit) 
                             ex.explanation?.let { ExplanationRow(it.forLanguage(explain)) }
                         }
                         com.polyglot.academy.ui.feature.common.ReportContentButton(lesson.language, "${lesson.id}/${ex.id}", a.promptText.ifBlank { ex.id })
-                        if (!a.outcome.correct && !(voiceAvailable == false && ex.needsAudio)) {
-                            SecondaryButton(s[K.RETRY], { answered = false; lastAnswer = null; attempt++; shownAt = services.clock.nowMillis() }, Modifier.fillMaxWidth())
-                        }
-                        PrimaryButton(if (index >= lesson.exercises.lastIndex) s[K.DONE] else s[K.CONTINUE], { advance() }, Modifier.fillMaxWidth())
                     }
                 }
             }
         }
-    }
+    } }
 }
 
 @Composable

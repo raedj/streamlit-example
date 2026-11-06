@@ -21,6 +21,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
@@ -28,7 +29,9 @@ import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.runtime.setValue
+import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -92,6 +95,25 @@ data class ExerciseContext(
     fun readingHidden(itemId: String?) = itemId != null && itemId in readingHiddenFor
 }
 
+/** Where a screen pins an exercise's buttons. Screens that provide none show the buttons under the exercise. */
+class ExerciseActionSlot {
+    var content by mutableStateOf<(@Composable () -> Unit)?>(null)
+}
+
+val LocalExerciseActions = staticCompositionLocalOf<ExerciseActionSlot?> { null }
+
+@Composable
+private fun ExerciseActions(content: @Composable () -> Unit) {
+    val slot = LocalExerciseActions.current
+    if (slot == null) { content(); return }
+    val latest by rememberUpdatedState(content)
+    DisposableEffect(slot) {
+        val pinned: @Composable () -> Unit = { latest() }
+        slot.content = pinned
+        onDispose { if (slot.content === pinned) slot.content = null }
+    }
+}
+
 @Composable
 fun ExerciseView(exercise: Exercise, ctx: ExerciseContext, answered: Boolean, onAnswer: (Answer) -> Unit) {
     val s = LocalStrings.current
@@ -129,8 +151,8 @@ private fun FlashcardView(e: Exercise.Flashcard, ctx: ExerciseContext, answered:
     var revealed by remember(e.id) { mutableStateOf(false) }
     var readingShown by remember(e.id) { mutableStateOf(!ctx.readingHidden(e.vocabularyId)) }
     val term = if (ctx.traditional) v.traditional ?: v.term else v.term
-    PolyCard(Modifier.heightIn(min = 220.dp)) {
-        Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(10.dp)) {
+    PolyCard {
+        Column(Modifier.fillMaxWidth().heightIn(min = 320.dp), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(10.dp, Alignment.CenterVertically)) {
             LearningText(term, ctx.language, reading = if (ctx.showReading && readingShown) v.pronunciation ?: v.transliteration else null, textAlign = TextAlign.Center,
                 style = if (ctx.language == LanguageCode.MANDARIN) PolyglotTheme.learning.hanzi else PolyglotTheme.learning.term)
             if (ctx.showReading && !readingShown) QuietButton(s[K.SHOW_READING], { readingShown = true })
@@ -145,11 +167,11 @@ private fun FlashcardView(e: Exercise.Flashcard, ctx: ExerciseContext, answered:
             }
         }
     }
-    if (!revealed) PrimaryButton(s[K.FLASHCARD_REVEAL], { revealed = true }, Modifier.fillMaxWidth())
-    else if (!answered) Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+    if (!revealed) ExerciseActions { PrimaryButton(s[K.FLASHCARD_REVEAL], { revealed = true }, Modifier.fillMaxWidth()) }
+    else if (!answered) ExerciseActions { Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
         SecondaryButton(s[K.FLASHCARD_DIDNT], { onAnswer(Answer(ExerciseOutcome(false, 0.0, ctx.gloss(v.meaning)), "didn't know", 0, v.term)) }, Modifier.weight(1f))
         PrimaryButton(s[K.FLASHCARD_KNEW], { onAnswer(Answer(ExerciseOutcome(true, 1.0, ctx.gloss(v.meaning)), "knew", 0, v.term)) }, Modifier.weight(1f))
-    }
+    } }
 }
 
 @Composable
@@ -207,11 +229,11 @@ private fun TypedView(
         if (hints == 0) QuietButton(s[K.HINT_SHOW], { hints = 1 })
         else Banner(BannerKind.INFO, hint?.let(ctx::gloss) ?: s.f(K.HINT_FIRST_LETTERS, accepted.first().take(maxOf(1, accepted.first().length / 3))))
     }
-    if (!answered) PrimaryButton(s[K.CHECK], {
+    if (!answered) ExerciseActions { PrimaryButton(s[K.CHECK], {
         val check = AnswerChecker.check(text, accepted)
         if (check.verdict == AnswerVerdict.EMPTY) { empty = true; return@PrimaryButton }
         onAnswer(Answer(ExerciseOutcome(check.isCorrect, check.score, check.closestAccepted, check), text, hints, prompt))
-    }, Modifier.fillMaxWidth())
+    }, Modifier.fillMaxWidth()) }
 }
 
 @Composable
@@ -227,11 +249,11 @@ private fun DictationView(e: Exercise.Dictation, ctx: ExerciseContext, answered:
         textStyle = com.polyglot.academy.ui.designsystem.styleFor(ctx.language, MaterialTheme.typography.bodyLarge).copy(
             localeList = com.polyglot.academy.ui.designsystem.localeFor(Languages.of(ctx.language).defaultVariant.localeTag),
             textDirection = com.polyglot.academy.ui.designsystem.textDirectionFor(ctx.language)))
-    if (!answered) PrimaryButton(s[K.CHECK], {
+    if (!answered) ExerciseActions { PrimaryButton(s[K.CHECK], {
         val check = AnswerChecker.check(text, e.acceptedAnswers)
         if (check.verdict == AnswerVerdict.EMPTY) return@PrimaryButton
         onAnswer(Answer(ExerciseOutcome(check.isCorrect, maxOf(check.score, TextNormalizer.similarity(text, e.audioText) * 0.8), e.audioText, check), text, 0, e.audioText))
-    }, Modifier.fillMaxWidth())
+    }, Modifier.fillMaxWidth()) }
 }
 
 @OptIn(ExperimentalLayoutApi::class)
@@ -255,7 +277,7 @@ private fun SentenceOrderView(e: Exercise.SentenceOrder, ctx: ExerciseContext, a
     FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
         shuffled.filter { it !in chosen }.forEach { i -> TokenChip(e.tokens[i], ctx.language, filled = false) { if (!answered) chosen.add(i) } }
     }
-    if (!answered) Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+    if (!answered) ExerciseActions { Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
         SecondaryButton(s[K.ORDER_RESET], { chosen.clear() }, Modifier.weight(1f))
         PrimaryButton(s[K.CHECK], {
             val answer = chosen.joinToString(e.separator) { e.tokens[it] }
@@ -263,7 +285,7 @@ private fun SentenceOrderView(e: Exercise.SentenceOrder, ctx: ExerciseContext, a
             val correct = TextNormalizer.basic(answer) == TextNormalizer.basic(expected)
             onAnswer(Answer(ExerciseOutcome(correct, if (correct) 1.0 else 0.0, expected), answer, 0, ctx.gloss(e.translation)))
         }, Modifier.weight(1f), enabled = chosen.size == e.tokens.size)
-    }
+    } }
 }
 
 @Composable
@@ -389,17 +411,17 @@ private fun SpeakRepeatView(e: Exercise.SpeakRepeat, ctx: ExerciseContext, answe
             Text(s.f(K.SPEAK_MATCH, (match * 100).toInt()), style = MaterialTheme.typography.titleMedium)
             Text(s[K.SPEAK_DISCLAIMER], style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
         }
-        if (!answered) Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+        if (!answered) ExerciseActions { Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
             SecondaryButton(s[K.SPEAK_TRY_AGAIN], { heard = null }, Modifier.weight(1f))
             PrimaryButton(s[K.CONTINUE], { onAnswer(Answer(ExerciseOutcome(match >= 0.75, match, e.targetText), h, 0, e.targetText)) }, Modifier.weight(1f))
-        }
+        } }
     }
     if (!canRecognize && availability != null && !answered) {
         Banner(BannerKind.INFO, s[K.SPEAK_UNAVAILABLE])
-        Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+        ExerciseActions { Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
             SecondaryButton(s[K.SPEAK_SELF_RETRY], { onAnswer(Answer(ExerciseOutcome(false, 0.5, e.targetText), "self:retry", 0, e.targetText)) }, Modifier.weight(1f))
             PrimaryButton(s[K.SPEAK_SELF_GOOD], { onAnswer(Answer(ExerciseOutcome(true, 1.0, e.targetText), "self:good", 0, e.targetText)) }, Modifier.weight(1f))
-        }
+        } }
     }
 }
 
@@ -434,10 +456,10 @@ private fun FreeWritingView(e: Exercise.FreeWriting, ctx: ExerciseContext, answe
     Text(ctx.gloss(e.prompt), style = MaterialTheme.typography.titleLarge)
     if (e.suggestedVocabulary.isNotEmpty()) Text(s.f(K.WRITE_SUGGESTED, e.suggestedVocabulary.joinToString(", ")), color = PolyglotTheme.colors.textSecondary)
     AppTextField(text, { text = it }, s[K.WRITING_PLACEHOLDER], singleLine = false, minLines = 5, supporting = s.f(K.WRITE_COUNT, words, e.minWords))
-    if (!answered) PrimaryButton(s[K.WRITE_SUBMIT], {
+    if (!answered) ExerciseActions { PrimaryButton(s[K.WRITE_SUBMIT], {
         val fb = app.services.writing.offlineFeedback(text, e, ctx.language)
         onAnswer(Answer(ExerciseOutcome(fb.wordCount >= e.minWords, (fb.wordCount.toDouble() / e.minWords).coerceAtMost(1.0), ""), text, 0, e.prompt.en))
-    }, Modifier.fillMaxWidth(), enabled = text.isNotBlank())
+    }, Modifier.fillMaxWidth(), enabled = text.isNotBlank()) }
 }
 
 /** Small lightbulb row for explanations after answering. */
