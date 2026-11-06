@@ -50,6 +50,7 @@ HOME_SKILLS ¦ Skills ¦ المهارات
 HOME_SKILLS_EMPTY ¦ Skill estimates appear after a few exercises. ¦ تظهر تقديرات المهارات بعد بضعة تمارين.
 HOME_ACHIEVEMENTS ¦ Recent achievements ¦ إنجازات حديثة
 HOME_NEW_TITLE ¦ Welcome! Let's find your starting point ¦ مرحبًا! لنحدّد نقطة بدايتك
+HOME_NEW_TITLE_READY ¦ Welcome! Your first lesson is ready ¦ مرحبًا! درسك الأول جاهز
 HOME_NEW_BODY ¦ Your progress will appear here once you start. We only show numbers based on what you have actually done. ¦ سيظهر تقدّمك هنا بعد أن تبدأ، فنحن لا نعرض إلا أرقامًا مبنية على ما أنجزته فعلًا.
 HOME_TUTOR_SHORTCUT ¦ Talk with {0} ¦ تحدّث مع {0}
 HOME_TUTOR_SHORTCUT_SUB ¦ {0} ¦ {0}
@@ -76,11 +77,7 @@ PLAN_REBUILD ¦ Rebuild today's plan ¦ إعادة بناء خطة اليوم
 PLAN_HOW_TITLE ¦ How this plan is built ¦ كيف تُبنى هذه الخطة
 PLAN_HOW_BODY ¦ Reviews that are due come first (up to 40% of your time), then the next lesson, a short conversation when you have 15 minutes or more, and practice for your weakest skill. You can mark items done or change your daily time. ¦ تأتي المراجعات المستحقة أولًا (حتى 40٪ من وقتك)، ثم الدرس التالي، ثم محادثة قصيرة إذا كان لديك 15 دقيقة أو أكثر، ثم تدريب على أضعف مهاراتك. يمكنك وضع علامة على ما أنجزته أو تغيير وقتك اليومي.
 PLAN_EMPTY ¦ No plan yet. Choose a language to start. ¦ لا توجد خطة بعد. اختر لغة للبدء.
-GAME_TODAY_XP ¦ Today's XP ¦ نقاط اليوم
 GAME_XP ¦ {0} XP ¦ {0} نقطة
-GAME_XP_PROGRESS ¦ {0} of {1} XP ¦ {0} من {1} نقطة
-GAME_XP_RING_DESC ¦ Daily XP goal: {0} of {1} ¦ هدف النقاط اليومي: {0} من {1}
-GAME_GOAL_REACHED ¦ Daily goal reached. Well done! ¦ حقّقت هدفك اليومي. أحسنت!
 GAME_LEVEL ¦ Level {0} · {1}/{2} XP to the next level ¦ المستوى {0} · {1}/{2} نقطة للمستوى التالي
 GAME_FREEZES ¦ {0} streak freeze|{0} streak freezes ¦ لا حماية للسلسلة|حماية واحدة للسلسلة|حمايتان للسلسلة|{0} حمايات للسلسلة|{0} حماية للسلسلة|{0} حماية للسلسلة
 GAME_FREEZE_USED ¦ A streak freeze kept your streak alive. ¦ حافظت حماية السلسلة على سلسلتك.

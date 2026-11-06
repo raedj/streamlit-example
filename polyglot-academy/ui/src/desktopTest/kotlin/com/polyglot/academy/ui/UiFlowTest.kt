@@ -90,7 +90,7 @@ class UiFlowTest {
         assertEquals(30, p.dailyMinutes)
         assertTrue("STYLE" in p.skippedOnboardingSteps)
         assertTrue(!runBlocking { app.store.currentSettings() }.privacy.cloudAiEnabled, "cloud AI must stay off by default")
-        waitForText("Spaced review", substring = false).also { } // Home loads its plan & dashboard
+        waitForText("Recommended next", substring = false).also { } // Home loads its plan & dashboard
     }
 
     @Test fun trialOnboardingAsksOnlyFourQuestionsAndTeachesEnglish() = runDesktopComposeUiTest(800, 1700) {
@@ -121,7 +121,7 @@ class UiFlowTest {
         assertEquals(LanguageCode.ARABIC, p.nativeLanguage)
         assertEquals(listOf(LanguageCode.ENGLISH), p.learningLanguages.map { it.language })
         // Home has no language switcher when there is only one language to learn.
-        waitForText("Spaced review", substring = false)
+        waitForText("Recommended next", substring = false)
         assertEquals(0, onAllNodes(androidx.compose.ui.test.hasContentDescription("Switch language")).fetchSemanticsNodes().size)
     }
 
@@ -131,6 +131,16 @@ class UiFlowTest {
         waitForText("Welcome! Let's find your starting point")
         onNodeWithText("Find your starting level").assertExists()
         assertTrue(onAllNodesWithText("This week").fetchSemanticsNodes().isEmpty(), "no charts for a learner without activity")
+        assertTrue(onAllNodesWithText("Daily goal").fetchSemanticsNodes().isEmpty(), "no goals or counters at zero")
+        assertTrue(onAllNodesWithText("Daily quests").fetchSemanticsNodes().isEmpty(), "no quests at zero")
+    }
+
+    @Test fun homeShowsOneProgressCardAfterTheFirstActivity() = runDesktopComposeUiTest(800, 1700) {
+        val app = TestApp(); app.profile(); app.seedActivity()
+        setContent { AppUnderTest(app) }
+        waitForText("Daily goal")
+        assertTrue(onAllNodesWithText("Welcome! Your first lesson is ready").fetchSemanticsNodes().isEmpty())
+        assertEquals(1, onAllNodes(hasText("min today", substring = true)).fetchSemanticsNodes().size)
     }
 
     @Test fun lessonFlashcardAnswerIsRecorded() = runDesktopComposeUiTest(800, 1700) {

@@ -67,7 +67,6 @@ import com.polyglot.academy.ui.designsystem.PolyglotTheme
 import com.polyglot.academy.ui.designsystem.PrimaryButton
 import com.polyglot.academy.ui.designsystem.ProgressRing
 import com.polyglot.academy.ui.designsystem.SectionHeader
-import com.polyglot.academy.ui.designsystem.StatTile
 import com.polyglot.academy.ui.designsystem.TutorAvatar
 import com.polyglot.academy.ui.i18n.K
 import com.polyglot.academy.ui.i18n.Labels
@@ -149,7 +148,7 @@ private fun HomeContent(data: HomeData) {
         PolyCard(containerColor = c.primaryContainer.copy(alpha = if (c.isDark) 0.4f else 0.55f)) {
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-                    Text(s[K.HOME_NEW_TITLE], style = MaterialTheme.typography.titleMedium)
+                    Text(s[if (snap.level != null && snap.nextLesson != null) K.HOME_NEW_TITLE_READY else K.HOME_NEW_TITLE], style = MaterialTheme.typography.titleMedium)
                     Text(s[K.HOME_NEW_BODY], style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
                 }
                 HeroIllustration(HeroKind.WELCOME, s[K.ILLUSTRATION], size = 88.dp)
@@ -158,34 +157,11 @@ private fun HomeContent(data: HomeData) {
     }
 
     RecommendationCard(snap.recommendation, snap)
-    if (snap.profile.showPointsAndStreak) DailyLoopCard(data.loop)
+    // A new learner sees one thing to do. Goals, counters and shortcuts would all read zero.
+    if (snap.isNewLearner) return
 
+    TodayCard(data)
     WordLevelCard(snap.language)
-
-    // Daily goal + reviews + streak.
-    PolyCard {
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            val fraction = snap.minutesToday.toFloat() / snap.dailyGoalMinutes.coerceAtLeast(1)
-            ProgressRing(fraction, description = s.f(K.HOME_GOAL_RING_DESC, snap.minutesToday, snap.dailyGoalMinutes), size = 84.dp) {
-                Text(s.f(K.PERCENT, (fraction.coerceAtMost(1f) * 100).toInt()), style = MaterialTheme.typography.titleMedium)
-            }
-            Spacer(Modifier.width(16.dp))
-            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(4.dp)) {
-                Text(s[K.HOME_DAILY_GOAL], style = MaterialTheme.typography.titleMedium)
-                Text(s.f(K.HOME_GOAL_PROGRESS, snap.minutesToday, snap.dailyGoalMinutes), style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
-                val planDone = data.plan.items.count { it.completed }
-                Text(s.f(K.HOME_PLAN_PROGRESS, planDone, data.plan.items.size), style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
-            }
-        }
-        com.polyglot.academy.ui.designsystem.QuietButton(s[K.HOME_TODAY_PLAN], { app.nav.push(Route.Plan) })
-    }
-
-    Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-        StatTile(if (snap.dueReviews > 0) s.plural(K.HOME_REVIEWS_DUE, snap.dueReviews) else s[K.HOME_NO_REVIEWS], s[K.PRACTICE_REVIEW], Icons.Filled.Replay, c.secondary, Modifier.weight(1f))
-        if (snap.profile.showPointsAndStreak) {
-            StatTile(s.plural(K.HOME_STREAK, data.loop.streakDays), s.plural(K.GAME_FREEZES, data.loop.freezes), Icons.Filled.LocalFireDepartment, c.accent, Modifier.weight(1f))
-        }
-    }
 
     SectionHeader(s[K.HOME_QUICK])
     FlowRow(horizontalArrangement = Arrangement.spacedBy(12.dp), verticalArrangement = Arrangement.spacedBy(12.dp), maxItemsInEachRow = 4) {
@@ -202,18 +178,16 @@ private fun HomeContent(data: HomeData) {
 
     TutorShortcut(snap)
 
-    if (!snap.isNewLearner) {
-        SectionHeader(s[K.HOME_THIS_WEEK], action = s[K.SEE_ALL], onAction = { app.nav.push(Route.Progress) })
-        PolyCard {
-            val points = snap.summary.observedMinutesByDay.map { ChartPoint(Labels.dayInitial(s, it.date.dayOfWeek.ordinal + 1), it.value) }
-            BarChart(points, s.f(K.HOME_WEEK_CHART_DESC, snap.summary.observedMinutesByDay.joinToString { "${Labels.day(s, it.date.dayOfWeek.ordinal + 1)} ${it.value.toInt()}" }))
-        }
-        SectionHeader(s[K.HOME_SKILLS])
-        PolyCard {
-            val measured = snap.skillEstimates.filter { it.hasEnoughData }
-            if (measured.isEmpty()) Text(s[K.HOME_SKILLS_EMPTY], style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
-            measured.forEach { e -> LabeledProgress(Labels.skill(s, e.skill), s.f(K.PERCENT, (e.mastery * 100).toInt()), e.mastery.toFloat()) }
-        }
+    SectionHeader(s[K.HOME_THIS_WEEK], action = s[K.SEE_ALL], onAction = { app.nav.push(Route.Progress) })
+    PolyCard {
+        val points = snap.summary.observedMinutesByDay.map { ChartPoint(Labels.dayInitial(s, it.date.dayOfWeek.ordinal + 1), it.value) }
+        BarChart(points, s.f(K.HOME_WEEK_CHART_DESC, snap.summary.observedMinutesByDay.joinToString { "${Labels.day(s, it.date.dayOfWeek.ordinal + 1)} ${it.value.toInt()}" }))
+    }
+    SectionHeader(s[K.HOME_SKILLS])
+    PolyCard {
+        val measured = snap.skillEstimates.filter { it.hasEnoughData }
+        if (measured.isEmpty()) Text(s[K.HOME_SKILLS_EMPTY], style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
+        measured.forEach { e -> LabeledProgress(Labels.skill(s, e.skill), s.f(K.PERCENT, (e.mastery * 100).toInt()), e.mastery.toFloat()) }
     }
 
     if (snap.recentAchievements.isNotEmpty()) {
@@ -341,32 +315,49 @@ internal fun skillRoute(skill: Skill?): Route = when (skill) {
     else -> Route.Review
 }
 
-/** XP toward the daily goal, level, and today's three quests. */
+/** Today in one place: the daily goal the learner chose, then reviews, streak, level and quests. */
 @Composable
-internal fun DailyLoopCard(loop: com.polyglot.academy.core.gamification.DailyLoop) {
+private fun TodayCard(data: HomeData) {
+    val app = LocalApp.current
     val s = LocalStrings.current
     val c = PolyglotTheme.colors
+    val snap = data.snapshot
+    val loop = data.loop
     PolyCard {
         Row(verticalAlignment = Alignment.CenterVertically) {
-            val fraction = loop.xpToday.toFloat() / loop.goalXp.coerceAtLeast(1)
-            ProgressRing(fraction, description = s.f(K.GAME_XP_RING_DESC, loop.xpToday, loop.goalXp), size = 84.dp) {
-                Text("${loop.xpToday}", style = MaterialTheme.typography.titleMedium)
+            val fraction = snap.minutesToday.toFloat() / snap.dailyGoalMinutes.coerceAtLeast(1)
+            ProgressRing(fraction, description = s.f(K.HOME_GOAL_RING_DESC, snap.minutesToday, snap.dailyGoalMinutes), size = 84.dp) {
+                Text(s.f(K.PERCENT, (fraction.coerceAtMost(1f) * 100).toInt()), style = MaterialTheme.typography.titleMedium)
             }
             Spacer(Modifier.width(16.dp))
             Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(4.dp)) {
-                Text(s[K.GAME_TODAY_XP], style = MaterialTheme.typography.titleMedium)
-                Text(if (loop.xpToday >= loop.goalXp) s[K.GAME_GOAL_REACHED] else s.f(K.GAME_XP_PROGRESS, loop.xpToday, loop.goalXp),
-                    style = MaterialTheme.typography.bodyMedium, color = if (loop.xpToday >= loop.goalXp) c.success else c.textSecondary)
-                Text(s.f(K.GAME_LEVEL, loop.level, loop.xpIntoLevel, loop.xpForLevel), style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
+                Text(s[K.HOME_DAILY_GOAL], style = MaterialTheme.typography.titleMedium)
+                Text(s.f(K.HOME_GOAL_PROGRESS, snap.minutesToday, snap.dailyGoalMinutes), style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
+                val planDone = data.plan.items.count { it.completed }
+                Text(s.f(K.HOME_PLAN_PROGRESS, planDone, data.plan.items.size), style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
             }
         }
-        if (loop.freezeUsedRecently) Text(s[K.GAME_FREEZE_USED], style = MaterialTheme.typography.bodySmall, color = c.accent)
-        Text(s[K.GAME_QUESTS], style = MaterialTheme.typography.titleSmall)
-        loop.quests.forEach { q ->
-            LabeledProgress((if (q.done) "✓ " else "") + s.f(K.valueOf("QUEST_${q.kind.name}"), q.target), "${q.progress.coerceAtMost(q.target)}/${q.target}", q.fraction,
-                color = if (q.done) c.success else c.primary)
+        TodayLine(Icons.Filled.Replay, c.secondary, if (snap.dueReviews > 0) s.plural(K.HOME_REVIEWS_DUE, snap.dueReviews) else s[K.HOME_NO_REVIEWS])
+        if (snap.profile.showPointsAndStreak) {
+            TodayLine(Icons.Filled.LocalFireDepartment, c.accent, s.plural(K.HOME_STREAK, loop.streakDays) + " · " + s.plural(K.GAME_FREEZES, loop.freezes))
+            Text(s.f(K.GAME_LEVEL, loop.level, loop.xpIntoLevel, loop.xpForLevel), style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
+            if (loop.freezeUsedRecently) Text(s[K.GAME_FREEZE_USED], style = MaterialTheme.typography.bodySmall, color = c.accent)
+            Text(s[K.GAME_QUESTS], style = MaterialTheme.typography.titleSmall)
+            loop.quests.forEach { q ->
+                LabeledProgress((if (q.done) "✓ " else "") + s.f(K.valueOf("QUEST_${q.kind.name}"), q.target), "${q.progress.coerceAtMost(q.target)}/${q.target}", q.fraction,
+                    color = if (q.done) c.success else c.primary)
+            }
+            Text(s.f(K.GAME_QUEST_BONUS, com.polyglot.academy.core.gamification.XpRules.QUEST_BONUS), style = MaterialTheme.typography.bodySmall, color = c.textMuted)
         }
-        Text(s.f(K.GAME_QUEST_BONUS, com.polyglot.academy.core.gamification.XpRules.QUEST_BONUS), style = MaterialTheme.typography.bodySmall, color = c.textMuted)
+        QuietButton(s[K.HOME_TODAY_PLAN], { app.nav.push(Route.Plan) })
+    }
+}
+
+@Composable
+private fun TodayLine(icon: androidx.compose.ui.graphics.vector.ImageVector, tint: androidx.compose.ui.graphics.Color, text: String) {
+    Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+        Icon(icon, null, tint = tint, modifier = Modifier.size(20.dp))
+        Text(text, style = MaterialTheme.typography.bodyMedium, color = PolyglotTheme.colors.textPrimary)
     }
 }
 
