@@ -58,9 +58,30 @@ fun TutorsScreen() {
     val lang = app.profile.activeLearningLanguage
     ScrollScreen(s[K.TUTORS_TITLE], showBack = false, tab = Tab.TUTORS) {
         Text(s.f(K.TUTORS_FOR, Labels.language(s, lang)), style = MaterialTheme.typography.bodyLarge, color = PolyglotTheme.colors.textSecondary)
-        FreeTalkCard()
+        // The same check the conversation makes, so the card promises only what will happen.
+        val aiLoader = com.polyglot.academy.ui.app.rememberLoader(app.settings) {
+            app.services.providers.route(com.polyglot.academy.core.ai.AiCapability.CHAT, setOf(com.polyglot.academy.core.model.DataCategory.CONVERSATION_TEXT)) is com.polyglot.academy.core.ai.RouteDecision.Route
+        }
+        when ((aiLoader.state as? com.polyglot.academy.ui.app.Load.Ready)?.value) {
+            true -> FreeTalkCard()
+            false -> ScriptedTalkCard()
+            null -> {}
+        }
         TutorRoster.forLanguage(lang).forEach { t -> TutorCard(t, selected = t.id == app.profile.preferredTutorId) { app.nav.push(Route.TutorDetail(t.id)) } }
         Text(s[K.TUTOR_AVATAR_NOTE], style = MaterialTheme.typography.bodySmall, color = PolyglotTheme.colors.textMuted)
+    }
+}
+
+/** Without an AI tutor only the built-in scenes work, so that is what is offered, before anything starts. */
+@Composable
+private fun ScriptedTalkCard() {
+    val app = LocalApp.current
+    val s = LocalStrings.current
+    PolyCard {
+        Text(s[K.SCRIPTED_TALK_TITLE], style = MaterialTheme.typography.titleMedium)
+        Text(s[K.SCRIPTED_TALK_BODY], style = MaterialTheme.typography.bodyMedium, color = PolyglotTheme.colors.textSecondary)
+        PrimaryButton(s[K.SCRIPTED_TALK_START], { app.nav.push(Route.Scenarios) }, Modifier.fillMaxWidth())
+        SecondaryButton(s[K.CONV_SET_UP_AI], { app.nav.push(Route.SettingsPage(com.polyglot.academy.ui.navigation.SettingsSection.PROVIDERS)) }, Modifier.fillMaxWidth())
     }
 }
 
@@ -92,7 +113,6 @@ private fun FreeTalkCard() {
             val tutor = TutorRoster.forLanguage(lang).let { list -> list.firstOrNull { it.id == app.profile.preferredTutorId } ?: list.first() }
             app.nav.push(Route.LiveVoice(tutor.id, TutorPromptBuilder.cleanTopic(topic)))
         }, Modifier.fillMaxWidth(), icon = androidx.compose.material.icons.Icons.Filled.Phone)
-        Text(s[K.FREE_TALK_NOTE], style = MaterialTheme.typography.bodySmall, color = c.textMuted)
     }
 }
 

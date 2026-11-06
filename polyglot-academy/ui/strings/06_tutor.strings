@@ -72,11 +72,13 @@ CONV_SUMMARY_CORRECTIONS ¦ Corrections to review ¦ تصحيحات للمراج
 CONV_SUMMARY_NO_CORRECTIONS ¦ No corrections this time. ¦ لا تصحيحات هذه المرة.
 CONV_SUMMARY_SAVED ¦ {0} phrase saved|{0} phrases saved ¦ لم تُحفظ عبارات|حُفظت عبارة واحدة|حُفظت عبارتان|حُفظت {0} عبارات|حُفظت {0} عبارة|حُفظت {0} عبارة
 CONV_SUMMARY_SCENARIO_DONE ¦ Scenario completed ¦ اكتمل الموقف
+SCRIPTED_TALK_TITLE ¦ Practise a ready-made conversation ¦ تدرّب على محادثة جاهزة
+SCRIPTED_TALK_BODY ¦ No AI tutor is available right now. You can practise ready-made scenes that work without internet. Talking about any topic needs an AI provider. ¦ لا يتوفّر معلّم بالذكاء الاصطناعي الآن. يمكنك التدرّب على مشاهد جاهزة تعمل دون إنترنت، أما الحديث في أي موضوع فيحتاج إلى مزوّد ذكاء اصطناعي.
+SCRIPTED_TALK_START ¦ Choose a scene ¦ اختر مشهدًا
 FREE_TALK_TITLE ¦ Talk about anything ¦ تحدّث في أي موضوع
 FREE_TALK_BODY ¦ Choose a topic or type your own. Your AI tutor talks with you about it, corrects your mistakes as you go and adapts to your level. ¦ اختر موضوعًا أو اكتب موضوعك. يتحدث معك معلّمك الذكي فيه، ويصحّح أخطاءك أثناء الحديث، ويتكيّف مع مستواك.
 FREE_TALK_TOPIC_LABEL ¦ Topic (optional) ¦ الموضوع (اختياري)
 FREE_TALK_START ¦ Start conversation ¦ ابدأ المحادثة
-FREE_TALK_NOTE ¦ Needs an AI provider (OpenAI, Gemini, Claude, DeepSeek or your own local model) in Settings. Without one, the offline tutor follows a short practice script. ¦ يتطلب مزوّد ذكاء اصطناعي (OpenAI أو Gemini أو Claude أو DeepSeek أو نموذجك المحلي) في الإعدادات. دونه يتبع المعلّم غير المتصل نصًّا تدريبيًا قصيرًا.
 FREE_TOPIC_1 ¦ My weekend ¦ عطلة نهاية الأسبوع
 FREE_TOPIC_2 ¦ Travel plans ¦ خطط السفر
 FREE_TOPIC_3 ¦ Food and cooking ¦ الطعام والطبخ

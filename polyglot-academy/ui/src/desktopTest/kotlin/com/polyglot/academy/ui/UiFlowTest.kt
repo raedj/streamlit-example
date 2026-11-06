@@ -145,6 +145,16 @@ class UiFlowTest {
         assertEquals(1, onAllNodes(hasText("min today", substring = true)).fetchSemanticsNodes().size)
     }
 
+    @Test fun tutorsWithoutAiOfferScenesInsteadOfAnyTopic() = runDesktopComposeUiTest(800, 1700) {
+        val app = TestApp(); app.profile()
+        setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.TUTORS))) }
+        waitForText("Practise a ready-made conversation")
+        assertTrue(onAllNodesWithText("Talk about anything").fetchSemanticsNodes().isEmpty(), "no promise of any topic without AI")
+        assertTrue(onAllNodesWithText("Topic (optional)").fetchSemanticsNodes().isEmpty())
+        onNodeWithText("Choose a scene").performClick()
+        waitForText("Ordering at a café", substring = true)
+    }
+
     @Test fun lessonFlashcardAnswerIsRecorded() = runDesktopComposeUiTest(800, 1700) {
         val app = TestApp(); app.profile()
         setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.HOME), Route.LessonPlayer("en_l_greetings", restart = true))) }
