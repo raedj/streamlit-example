@@ -85,15 +85,18 @@ fun PracticeScreen() {
     val isMandarin = app.profile.activeLearningLanguage == LanguageCode.MANDARIN
     ScrollScreen(s[K.PRACTICE_TITLE], showBack = false, tab = Tab.PRACTICE) {
         Text(Labels.language(s, app.profile.activeLearningLanguage), style = MaterialTheme.typography.bodyLarge, color = c.textSecondary)
-        val items = buildList {
+        // Four places to start, all working without a key; the rest wait behind "More".
+        val pinned = listOf(
+            Triple(K.PRACTICE_REVIEW to K.PRACTICE_REVIEW_SUB, Icons.Filled.Replay, Route.Review),
+            Triple(K.PRACTICE_WORDLISTS to K.PRACTICE_WORDLISTS_SUB, Icons.Filled.FormatListNumbered, Route.WordLevels),
+            Triple(K.PRACTICE_SCENARIOS to K.PRACTICE_SCENARIOS_SUB, Icons.Filled.TheaterComedy, Route.Scenarios),
+            Triple(K.PRACTICE_READING to K.PRACTICE_READING_SUB, Icons.AutoMirrored.Filled.MenuBook, Route.Reading),
+        )
+        val more = buildList {
             add(Triple(K.PRACTICE_SPEAKING to K.PRACTICE_SPEAKING_SUB, Icons.Filled.RecordVoiceOver, Route.SpeakingPath))
             add(Triple(K.PRACTICE_PHRASEBOOK to K.PRACTICE_PHRASEBOOK_SUB, Icons.Filled.Luggage, Route.Phrasebook))
-            add(Triple(K.PRACTICE_REVIEW to K.PRACTICE_REVIEW_SUB, Icons.Filled.Replay, Route.Review))
-            add(Triple(K.PRACTICE_WORDLISTS to K.PRACTICE_WORDLISTS_SUB, Icons.Filled.FormatListNumbered, Route.WordLevels))
             add(Triple(K.PRACTICE_MISTAKES to K.PRACTICE_MISTAKES_SUB, Icons.Filled.ReportProblem, Route.Mistakes))
-            add(Triple(K.PRACTICE_SCENARIOS to K.PRACTICE_SCENARIOS_SUB, Icons.Filled.TheaterComedy, Route.Scenarios))
             add(Triple(K.PRACTICE_GRAMMAR to K.PRACTICE_GRAMMAR_SUB, Icons.Filled.Spellcheck, Route.Grammar))
-            add(Triple(K.PRACTICE_READING to K.PRACTICE_READING_SUB, Icons.AutoMirrored.Filled.MenuBook, Route.Reading))
             add(Triple(K.PRACTICE_LISTENING to K.PRACTICE_LISTENING_SUB, Icons.Filled.Hearing, Route.Listening))
             add(Triple(K.PRACTICE_WRITING to K.PRACTICE_WRITING_SUB, Icons.Filled.Edit, Route.Writing))
             add(Triple(K.PRACTICE_PRONUNCIATION to K.PRACTICE_PRONUNCIATION_SUB, Icons.Filled.Mic, Route.Pronunciation))
@@ -103,9 +106,11 @@ fun PracticeScreen() {
             add(Triple(K.PRACTICE_VOCAB to K.PRACTICE_VOCAB_SUB, Icons.Filled.AutoStories, Route.Vocabulary))
             add(Triple(K.PRACTICE_RELAX to K.PRACTICE_RELAX_SUB, Icons.Filled.SelfImprovement, Route.Relax))
         }
-        items.forEachIndexed { i, (keys, icon, route) ->
+        var showMore by androidx.compose.runtime.saveable.rememberSaveable { mutableStateOf(false) }
+        (if (showMore) pinned + more else pinned).forEachIndexed { i, (keys, icon, route) ->
             HubRow(s[keys.first], s[keys.second], icon, c.chartSeries[i % c.chartSeries.size]) { app.nav.push(route) }
         }
+        com.polyglot.academy.ui.designsystem.QuietButton(s[if (showMore) K.PRACTICE_LESS else K.PRACTICE_MORE], { showMore = !showMore })
     }
 }
 

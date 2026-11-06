@@ -105,15 +105,21 @@ fun SettingsScreen() {
                 SettingsRow(s[K.SET_ACCESSIBILITY], icon = Icons.Filled.Accessibility, onClick = { go(SettingsSection.ACCESSIBILITY) })
                 Divider()
                 SettingsRow(s[K.SET_PRIVACY], subtitle = if (privacy.cloudAiEnabled) s[K.SET_PRIVACY_SUMMARY_CLOUD] else s[K.SET_PRIVACY_SUMMARY_LOCAL], icon = Icons.Filled.Lock, onClick = { go(SettingsSection.PRIVACY) })
-                SettingsRow(s[K.SET_AI_PROVIDERS], subtitle = s[K.SET_AI_PROVIDERS_SUB], icon = Icons.Filled.SmartToy, onClick = { go(SettingsSection.PROVIDERS) })
-                SettingsRow(s[K.SET_VOICE], subtitle = s[K.SET_VOICE_SUB], icon = Icons.Filled.RecordVoiceOver, onClick = { go(SettingsSection.VOICE) })
-                SettingsRow(s[K.SET_LOCAL_MODELS], subtitle = s[K.SET_LOCAL_MODELS_SUB], icon = Icons.Filled.Memory, onClick = { go(SettingsSection.LOCAL_MODELS) })
                 SettingsRow(s[K.SET_NOTIFICATIONS], subtitle = if (app.settings.reminders.enabled) s[K.ON] else s[K.OFF], icon = Icons.Filled.Notifications, onClick = { go(SettingsSection.REMINDERS) })
                 SettingsRow(s[K.SET_DATA], icon = Icons.Filled.Storage, onClick = { go(SettingsSection.DATA) })
                 SettingsRow(s[K.SET_PERMISSIONS], icon = Icons.Filled.VerifiedUser, onClick = { go(SettingsSection.PERMISSIONS) })
                 Divider()
                 SettingsRow(s[K.SET_HELP], icon = Icons.AutoMirrored.Filled.HelpOutline, onClick = { go(SettingsSection.HELP) })
                 SettingsRow(s[K.SET_ABOUT], icon = Icons.Filled.Info, onClick = { go(SettingsSection.ABOUT) })
+                Divider()
+                // Keys and models are for those who want them; most learners never need to see them.
+                var advanced by androidx.compose.runtime.saveable.rememberSaveable { mutableStateOf(false) }
+                SettingsRow(s[K.SET_ADVANCED], subtitle = s[K.SET_ADVANCED_SUB], icon = Icons.Filled.Memory, onClick = { advanced = !advanced })
+                if (advanced) {
+                    SettingsRow(s[K.SET_AI_PROVIDERS], subtitle = s[K.SET_AI_PROVIDERS_SUB], icon = Icons.Filled.SmartToy, onClick = { go(SettingsSection.PROVIDERS) })
+                    SettingsRow(s[K.SET_VOICE], subtitle = s[K.SET_VOICE_SUB], icon = Icons.Filled.RecordVoiceOver, onClick = { go(SettingsSection.VOICE) })
+                    SettingsRow(s[K.SET_LOCAL_MODELS], subtitle = s[K.SET_LOCAL_MODELS_SUB], icon = Icons.Filled.Memory, onClick = { go(SettingsSection.LOCAL_MODELS) })
+                }
             }
         }
     }

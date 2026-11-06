@@ -38,6 +38,8 @@ SPEAKING_WEEKLY ¦ Words per turn, by week ¦ الكلمات في كل دور ح
 SPEAKING_WEEKLY_DESC ¦ Median words per turn by week: {0} ¦ وسيط الكلمات في كل دور حسب الأسبوع: {0}
 SPEAKING_ABOUT_TITLE ¦ How missions count ¦ كيف تُحتسب المهام
 SPEAKING_ABOUT ¦ A mission passes when you take enough turns, your typical turn is long enough for the level, and the tasks are confirmed: by the AI tutor, or by finishing the built-in role-play when you practise offline. Levels are practice targets, not an official certificate. Missions without a built-in role-play need an AI tutor (cloud or a local model). ¦ تُحتسب المهمة عندما تأخذ أدوارًا كافية، ويكون طول دورك المعتاد مناسبًا للمستوى، وتُؤكَّد المهام: من معلّم الذكاء الاصطناعي، أو بإكمال الموقف المدمج عند التدرّب دون اتصال. المستويات أهداف تدريبية وليست شهادة رسمية. المهام التي لا يقابلها موقف مدمج تحتاج إلى معلّم ذكاء اصطناعي (سحابي أو نموذج محلي).
+PRACTICE_MORE ¦ More practice ¦ المزيد من التدريب
+PRACTICE_LESS ¦ Show less ¦ عرض أقل
 PRACTICE_REVIEW ¦ Review what you learned ¦ راجِع ما تعلّمته
 PRACTICE_REVIEW_SUB ¦ Words and phrases ready to review ¦ كلمات وعبارات حان وقت مراجعتها
 PRACTICE_MISTAKES ¦ Mistake review ¦ مراجعة الأخطاء

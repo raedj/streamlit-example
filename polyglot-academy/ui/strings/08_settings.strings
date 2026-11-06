@@ -65,6 +65,8 @@ SET_FALLBACK_SUB ¦ Off: if your preferred provider fails, we use offline practi
 SET_BACKUP ¦ Include learning data in device backup ¦ تضمين بيانات التعلّم في نسخ الجهاز الاحتياطي
 SET_BACKUP_SUB ¦ API keys are never backed up ¦ لا تُنسخ مفاتيح API احتياطيًا أبدًا
 SET_AI ¦ AI ¦ الذكاء الاصطناعي
+SET_ADVANCED ¦ Advanced ¦ متقدّم
+SET_ADVANCED_SUB ¦ AI keys, voice services and on-device models ¦ مفاتيح الذكاء الاصطناعي وخدمات الصوت والنماذج على الجهاز
 SET_AI_PROVIDERS ¦ AI providers ¦ مزوّدو الذكاء الاصطناعي
 SET_AI_PROVIDERS_SUB ¦ Connect your own API keys ¦ اربط مفاتيح API الخاصة بك
 SET_LOCAL_MODELS ¦ On-device models ¦ النماذج على الجهاز

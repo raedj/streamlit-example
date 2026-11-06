@@ -155,6 +155,26 @@ class UiFlowTest {
         waitForText("Ordering at a café", substring = true)
     }
 
+    @Test fun practiceStartsWithFourPlacesAndTheRestUnderMore() = runDesktopComposeUiTest(800, 1700) {
+        val app = TestApp(); app.profile()
+        setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.PRACTICE))) }
+        waitForText("Review what you learned")
+        assertTrue(onAllNodesWithText("Grammar").fetchSemanticsNodes().isEmpty())
+        onNodeWithText("More practice").performClick()
+        waitForText("Grammar")
+    }
+
+    @Test fun settingsKeepKeysAndModelsUnderAdvanced() = runDesktopComposeUiTest(800, 1700) {
+        val app = TestApp(); app.profile()
+        setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.ME), Route.Settings)) }
+        waitForText("Advanced")
+        assertTrue(onAllNodesWithText("AI providers").fetchSemanticsNodes().isEmpty())
+        onNodeWithText("Advanced").performClick()
+        waitForText("AI providers")
+        onNodeWithText("Voice services").assertExists()
+        onNodeWithText("On-device models").assertExists()
+    }
+
     @Test fun lessonFlashcardAnswerIsRecorded() = runDesktopComposeUiTest(800, 1700) {
         val app = TestApp(); app.profile()
         setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.HOME), Route.LessonPlayer("en_l_greetings", restart = true))) }
