@@ -119,6 +119,7 @@ private fun LessonPlayer(lesson: Lesson, restart: Boolean, onRetry: () -> Unit) 
     val firstTry = remember(lessonId) { mutableStateMapOf<String, Double>() }
     var hintsOn by rememberSaveable { mutableStateOf(app.settings.showHintsByDefault) }
     var adaptMessage by remember { mutableStateOf<K?>(null) }
+    val adaptSeen = remember { mutableSetOf<K>() }
     var session by remember { mutableStateOf<StudySession?>(null) }
     var summary by remember { mutableStateOf<Summary?>(null) }
     var confirmExit by remember { mutableStateOf(false) }
@@ -177,13 +178,14 @@ private fun LessonPlayer(lesson: Lesson, restart: Boolean, onRetry: () -> Unit) 
             val decision = DifficultyAdjuster.decide(ex.difficulty, recent, hintsPreferred = app.settings.showHintsByDefault)
             when (decision.reason) {
                 DifficultyReason.STRUGGLING_RECENTLY -> { if (!hintsOn) adaptMessage = K.ADAPT_EASIER; hintsOn = true }
-                DifficultyReason.STRONG_RECENT_PERFORMANCE -> { if (adaptMessage == null) adaptMessage = K.ADAPT_HARDER }
+                DifficultyReason.STRONG_RECENT_PERFORMANCE -> { if (adaptSeen.add(K.ADAPT_HARDER)) adaptMessage = K.ADAPT_HARDER }
                 else -> {}
             }
         }
     }
 
     fun advance() {
+        adaptMessage = null
         if (index >= lesson.exercises.lastIndex) finish()
         else { index++; scope.launch { services.study.saveResumePoint(lesson, index) } }
     }

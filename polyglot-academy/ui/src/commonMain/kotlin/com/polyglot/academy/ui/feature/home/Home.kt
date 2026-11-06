@@ -140,7 +140,7 @@ private fun HomeContent(data: HomeData) {
         Text(s.f(greetingKey(app.services.clock.nowMillis()), name), style = MaterialTheme.typography.headlineSmall, modifier = Modifier.semantics { heading() })
         Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
             Text(s.f(K.HOME_LEARNING, Labels.language(s, snap.language)), style = MaterialTheme.typography.bodyLarge, color = c.textSecondary)
-            snap.level?.let { LevelBadge(it, if (snap.levelIsEstimate) s[K.HOME_LEVEL_ESTIMATE] else s[K.HOME_LEVEL_SELF]) }
+            snap.level?.let { LevelBadge(it, Labels.levelName(s, it) + if (snap.levelIsEstimate) " · " + s[K.HOME_LEVEL_ESTIMATE] else "") }
         }
     }
 
@@ -248,7 +248,8 @@ private fun RecommendationCard(rec: Recommendation, snap: DashboardSnapshot) {
         }
         Text(reason, style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
         if (rec.kind != RecommendationKind.ALL_DONE) {
-            PrimaryButton(if (rec.estimatedMinutes > 0) "${s[K.HOME_START]} · ${s.plural(K.MINUTES, rec.estimatedMinutes)}" else s[K.HOME_START],
+            val start = s[if (rec.kind == RecommendationKind.CONTINUE_LESSON) K.HOME_CONTINUE else K.HOME_START]
+            PrimaryButton(if (rec.estimatedMinutes > 0) "$start · ${s.plural(K.MINUTES, rec.estimatedMinutes)}" else start,
                 { openRecommendation(app, rec, snap) }, Modifier.fillMaxWidth())
         }
         // The suggestion is only a suggestion: the learner can pick something else.
@@ -339,7 +340,9 @@ private fun TodayCard(data: HomeData) {
         }
         TodayLine(Icons.Filled.Replay, c.secondary, if (snap.dueReviews > 0) s.plural(K.HOME_REVIEWS_DUE, snap.dueReviews) else s[K.HOME_NO_REVIEWS])
         if (snap.profile.showPointsAndStreak) {
-            TodayLine(Icons.Filled.LocalFireDepartment, c.accent, s.plural(K.HOME_STREAK, loop.streakDays) + " · " + s.plural(K.GAME_FREEZES, loop.freezes))
+            TodayLine(Icons.Filled.LocalFireDepartment, c.accent,
+                (if (loop.streakDays > 0) s.plural(K.HOME_STREAK, loop.streakDays) else s[K.HOME_STREAK_START]) +
+                    if (loop.freezes > 0) " · " + s.plural(K.GAME_FREEZES, loop.freezes) else "")
             Text(s.f(K.GAME_LEVEL, loop.level, loop.xpIntoLevel, loop.xpForLevel), style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
             if (loop.freezeUsedRecently) Text(s[K.GAME_FREEZE_USED], style = MaterialTheme.typography.bodySmall, color = c.accent)
             Text(s[K.GAME_QUESTS], style = MaterialTheme.typography.titleSmall)

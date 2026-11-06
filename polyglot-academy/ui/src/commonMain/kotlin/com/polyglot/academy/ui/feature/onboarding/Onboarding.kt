@@ -43,7 +43,6 @@ import com.polyglot.academy.core.model.Languages
 import com.polyglot.academy.core.model.LearningGoal
 import com.polyglot.academy.core.model.LearningStyle
 import com.polyglot.academy.core.model.PrivacyConsent
-import com.polyglot.academy.core.planner.StudyPlanner
 import com.polyglot.academy.core.tutor.TutorRoster
 import com.polyglot.academy.ui.app.LocalApp
 import com.polyglot.academy.ui.designsystem.AppTextField
@@ -254,7 +253,7 @@ fun OnboardingFlow() {
                                 }
                             }
                         }
-                        Banner(BannerKind.INFO, s.f(K.ONB_PLAN_ESTIMATE, StudyPlanner.estimatedWeeksPerLevel(minutes, (if (takeTest) CefrLevel.A1 else selfLevel).ordinal)))
+                        Banner(BannerKind.INFO, s[K.ONB_PLAN_FIRST_GOAL])
                         AppTextField(name, { name = it.take(40) }, s[K.ONB_NAME_LABEL])
                     }
                 }

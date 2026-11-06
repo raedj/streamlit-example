@@ -122,6 +122,10 @@ private fun LevelCoverageSection(lang: com.polyglot.academy.core.model.LanguageC
     val offers = remember(lang) { LevelCoverage.of(lang) }
     SectionHeader(s[K.LEVELS_TITLE])
     Text(s.f(K.LEVELS_INTRO, Labels.language(s, lang)), style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
+    val profile = com.polyglot.academy.ui.app.LocalApp.current.profile
+    val level = profile.enrollment(lang)?.startingLevel ?: com.polyglot.academy.core.model.CefrLevel.A1
+    Text(s.f(K.ONB_PLAN_ESTIMATE, com.polyglot.academy.core.planner.StudyPlanner.estimatedWeeksPerLevel(profile.dailyMinutes, level.ordinal)),
+        style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
     PolyCard {
         offers.forEach { o ->
             Row(verticalAlignment = Alignment.Top) {

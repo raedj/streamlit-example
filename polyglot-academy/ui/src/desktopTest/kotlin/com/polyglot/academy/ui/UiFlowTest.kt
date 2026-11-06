@@ -114,6 +114,7 @@ class UiFlowTest {
         onNodeWithText("Continue").performClick()
         waitForText("Your plan")
         onNodeWithText("Step 5 of 5").assertExists()
+        onNodeWithText("Your first goal: one short lesson today. A longer estimate is under Learn.").assertExists()
         onNodeWithText("Start learning").performClick()
         waitUntil(timeoutMillis = 10_000) { runBlocking { app.store.currentProfile().onboardingCompleted } }
         val p = runBlocking { app.store.currentProfile() }
@@ -123,6 +124,7 @@ class UiFlowTest {
         // Home has no language switcher when there is only one language to learn.
         waitForText("Recommended next", substring = false)
         assertEquals(0, onAllNodes(androidx.compose.ui.test.hasContentDescription("Switch language")).fetchSemanticsNodes().size)
+        onNode(hasText("Beginner", substring = true)).assertExists() // the level by name, not "self-selected"
     }
 
     @Test fun newLearnerHomeShowsGuidanceInsteadOfStatistics() = runDesktopComposeUiTest(800, 1700) {

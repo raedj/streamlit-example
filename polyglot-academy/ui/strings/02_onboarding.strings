@@ -59,6 +59,7 @@ ONB_PLAN_LEVEL ¦ Starting level: {0} ¦ مستوى البداية: {0}
 ONB_PLAN_LEVEL_PENDING ¦ Starting level: after the placement test ¦ مستوى البداية: بعد اختبار تحديد المستوى
 ONB_PLAN_DAILY ¦ Daily time: {0} ¦ الوقت اليومي: {0}
 ONB_PLAN_TUTOR ¦ Your tutor: {0} ¦ معلّمك: {0}
+ONB_PLAN_FIRST_GOAL ¦ Your first goal: one short lesson today. A longer estimate is under Learn. ¦ هدفك الأول: درس قصير واحد اليوم. وتجد تقديرًا للمدة الأطول في «تعلّم».
 ONB_PLAN_ESTIMATE ¦ At this pace, moving up one level often takes about {0} weeks. This is a rough guide, not a promise. ¦ بهذه الوتيرة، يستغرق الانتقال إلى المستوى التالي غالبًا نحو {0} أسبوعًا. هذا تقدير تقريبي وليس وعدًا.
 ONB_NAME_LABEL ¦ What should we call you? (optional) ¦ بماذا نناديك؟ (اختياري)
 ONB_DONE_TITLE ¦ You're all set ¦ كل شيء جاهز

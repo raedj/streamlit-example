@@ -28,6 +28,8 @@ import com.polyglot.academy.core.util.MILLIS_PER_MINUTE
 object Labels {
     fun language(s: Localizer, code: LanguageCode) = Languages.of(code).displayName(s.language)
     fun level(s: Localizer, l: CefrLevel) = s[K.valueOf("LEVEL_${l.name}")]
+    /** The level's name alone, without what it covers: "Beginner". */
+    fun levelName(s: Localizer, l: CefrLevel) = level(s, l).substringBefore(" — ")
     fun goal(s: Localizer, g: LearningGoal) = s[K.valueOf("GOAL_${g.name}")]
     fun style(s: Localizer, st: LearningStyle) = s[K.valueOf("STYLE_${st.name}")]
     fun styleDesc(s: Localizer, st: LearningStyle) = s[K.valueOf("STYLE_${st.name}_DESC")]

@@ -77,7 +77,7 @@ fun MeScreen() {
                         Text(Labels.language(s, code), style = MaterialTheme.typography.titleMedium)
                         Text(Languages.of(code).nativeName, style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
                     }
-                    e?.let { LevelBadge(it.startingLevel, if (it.levelFromAssessment) s[K.HOME_LEVEL_ESTIMATE] else s[K.HOME_LEVEL_SELF]) }
+                    e?.let { LevelBadge(it.startingLevel, Labels.levelName(s, it.startingLevel) + if (it.levelFromAssessment) " · " + s[K.HOME_LEVEL_ESTIMATE] else "") }
                 }
                 if (code == profile.activeLearningLanguage) Pill(s[K.PROFILE_ACTIVE], container = c.primary, content = c.onPrimary)
                 else QuietButton(s.f(K.PROFILE_MAKE_ACTIVE, Labels.language(s, code)), { scope.launch { app.services.store.updateProfile { it.copy(activeLearningLanguage = code) } } })

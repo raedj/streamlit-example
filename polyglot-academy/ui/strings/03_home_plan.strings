@@ -4,7 +4,6 @@ HOME_GREETING_EVENING ¦ Good evening{0} ¦ مساء الخير{0}
 HOME_LEARNING ¦ Learning {0} ¦ تتعلّم {0}
 HOME_SWITCH_LANGUAGE ¦ Switch language ¦ تبديل اللغة
 HOME_LEVEL_ESTIMATE ¦ estimated ¦ تقديري
-HOME_LEVEL_SELF ¦ self-selected ¦ اختيار ذاتي
 HOME_DAILY_GOAL ¦ Daily goal ¦ الهدف اليومي
 HOME_GOAL_PROGRESS ¦ {0} of {1} min today ¦ {0} من {1} دقيقة اليوم
 HOME_GOAL_RING_DESC ¦ Daily goal progress: {0} of {1} minutes ¦ التقدّم نحو الهدف اليومي: {0} من {1} دقيقة
@@ -49,6 +48,8 @@ HOME_STREAK ¦ {0}-day streak|{0}-day streak ¦ سلسلة {0} يوم|سلسلة
 HOME_SKILLS ¦ Skills ¦ المهارات
 HOME_SKILLS_EMPTY ¦ Skill estimates appear after a few exercises. ¦ تظهر تقديرات المهارات بعد بضعة تمارين.
 HOME_ACHIEVEMENTS ¦ Recent achievements ¦ إنجازات حديثة
+HOME_CONTINUE ¦ Continue ¦ تابِع
+HOME_STREAK_START ¦ Start your streak today ¦ ابدأ سلسلتك اليوم
 HOME_NEW_TITLE ¦ Welcome! Let's find your starting point ¦ مرحبًا! لنحدّد نقطة بدايتك
 HOME_NEW_TITLE_READY ¦ Welcome! Your first lesson is ready ¦ مرحبًا! درسك الأول جاهز
 HOME_NEW_BODY ¦ Your progress will appear here once you start. We only show numbers based on what you have actually done. ¦ سيظهر تقدّمك هنا بعد أن تبدأ، فنحن لا نعرض إلا أرقامًا مبنية على ما أنجزته فعلًا.
