@@ -1,6 +1,7 @@
 ONB_STEP ¦ Step {0} of {1} ¦ الخطوة {0} من {1}
 ONB_WELCOME_TITLE ¦ Learn a language with a tutor who adapts to you ¦ تعلّم لغة مع معلّم يتكيّف معك
 ONB_WELCOME_BODY ¦ Short lessons, real conversations and smart reviews in English, Mandarin, Spanish, French and Arabic. ¦ دروس قصيرة ومحادثات حقيقية ومراجعات ذكية بالإنجليزية والصينية والإسبانية والفرنسية والعربية.
+ONB_WELCOME_BODY_TRIAL ¦ Short lessons, real conversations and smart reviews for learning English. ¦ دروس قصيرة ومحادثات حقيقية ومراجعات ذكية لتعلّم الإنجليزية.
 ONB_GET_STARTED ¦ Get started ¦ لنبدأ
 ONB_WELCOME_POINT_1 ¦ Practise speaking with patient virtual tutors ¦ تدرّب على التحدث مع معلّمين افتراضيين صبورين
 ONB_WELCOME_POINT_2 ¦ Reviews timed to help you remember ¦ مراجعات في أوقات تساعدك على التذكّر
@@ -66,3 +67,4 @@ ONB_START_TEST ¦ Start placement test ¦ ابدأ اختبار تحديد ال�
 ONB_START_LEARNING ¦ Start learning ¦ ابدأ التعلّم
 LANG_PREVIEW_TAG ¦ Preview ¦ معاينة
 ONB_LEARN_REVIEW_NOTE ¦ No language's content has been checked by a native speaker yet. "Preview" marks short starter courses written entirely by AI. ¦ لم يراجع متحدّث أصلي محتوى أي لغة بعد. وكلمة «معاينة» تعني مقرّرًا أوليًا قصيرًا كتبه الذكاء الاصطناعي بالكامل.
+ONB_TRIAL_REVIEW_NOTE ¦ The English course has not been checked by a native speaker yet. If something looks wrong, report it from the lesson. ¦ لم يراجع متحدّث أصلي مقرّر الإنجليزية بعد. إن بدا لك خطأ فأبلغ عنه من داخل الدرس.

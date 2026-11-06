@@ -70,6 +70,7 @@ class AppServices(
     assessorFactory: ((String, suspend () -> String?) -> com.polyglot.academy.core.pronunciation.PronunciationAssessor)? = null,
     realtimeTransport: com.polyglot.academy.core.realtime.RealtimeTransport? = null,
     syncRemoteFactory: ((String, String, String) -> com.polyglot.academy.core.sync.SyncRemote)? = null,
+    val edition: AppEdition = AppEdition.FULL,
 ) {
     val scheduler = SpacedRepetitionScheduler()
     val achievements = AchievementService(store, store, clock)

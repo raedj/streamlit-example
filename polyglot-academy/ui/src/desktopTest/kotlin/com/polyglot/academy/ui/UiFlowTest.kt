@@ -93,6 +93,38 @@ class UiFlowTest {
         waitForText("Spaced review", substring = false).also { } // Home loads its plan & dashboard
     }
 
+    @Test fun trialOnboardingAsksOnlyFourQuestionsAndTeachesEnglish() = runDesktopComposeUiTest(800, 1700) {
+        val app = TestApp(edition = com.polyglot.academy.core.service.AppEdition.ENGLISH_TRIAL)
+        runBlocking {
+            app.store.updateSettings { it.copy(accessibility = it.accessibility.copy(reducedMotion = true)) }
+            app.store.updateProfile { it.copy(interfaceLanguage = LanguageCode.ENGLISH) }
+        }
+        setContent { AppUnderTest(app) }
+        waitForText("Short lessons, real conversations and smart reviews for learning English.")
+        onNodeWithText("Get started").performClick()
+        waitForText("Step 1 of 5")
+        onNodeWithText("Continue").performClick() // interface: English
+        waitForText("Choose my level myself")
+        onNodeWithText("The English course has not been checked by a native speaker yet. If something looks wrong, report it from the lesson.").assertExists()
+        onNodeWithText("Choose my level myself").performClick()
+        onNodeWithText("Continue").performClick()
+        waitForText("How much time per day?")
+        onNodeWithText("Continue").performClick()
+        waitForText("Your privacy and AI")
+        onNodeWithText("Continue").performClick()
+        waitForText("Your plan")
+        onNodeWithText("Step 5 of 5").assertExists()
+        onNodeWithText("Start learning").performClick()
+        waitUntil(timeoutMillis = 10_000) { runBlocking { app.store.currentProfile().onboardingCompleted } }
+        val p = runBlocking { app.store.currentProfile() }
+        assertEquals(LanguageCode.ENGLISH, p.activeLearningLanguage)
+        assertEquals(LanguageCode.ARABIC, p.nativeLanguage)
+        assertEquals(listOf(LanguageCode.ENGLISH), p.learningLanguages.map { it.language })
+        // Home has no language switcher when there is only one language to learn.
+        waitForText("Spaced review", substring = false)
+        assertEquals(0, onAllNodes(androidx.compose.ui.test.hasContentDescription("Switch language")).fetchSemanticsNodes().size)
+    }
+
     @Test fun newLearnerHomeShowsGuidanceInsteadOfStatistics() = runDesktopComposeUiTest(800, 1700) {
         val app = TestApp(); app.profile(level = null)
         setContent { AppUnderTest(app) }

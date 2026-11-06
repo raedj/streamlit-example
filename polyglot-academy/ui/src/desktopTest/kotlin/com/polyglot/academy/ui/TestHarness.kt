@@ -40,6 +40,7 @@ class TestApp(
     val clock: FixedTimeSource = FixedTimeSource(TEST_NOW),
     deviceOcr: com.polyglot.academy.core.service.DeviceOcr? = null,
     transcriber: com.polyglot.academy.core.media.DeviceTranscriber? = null,
+    edition: com.polyglot.academy.core.service.AppEdition = com.polyglot.academy.core.service.AppEdition.FULL,
 ) {
     /** The desktop platform, optionally with fake on-device text recognition and transcription (the desktop has neither). */
     val platform: com.polyglot.academy.core.service.PlatformServices =
@@ -49,7 +50,7 @@ class TestApp(
             override val transcriber = transcriber
         }
     val store = SqlStore(createJvmDriver(), Dispatchers.IO, TimeZone.UTC, clock)
-    val services = AppServices(store, platform, HttpClient(), clock, SequentialIdGenerator())
+    val services = AppServices(store, platform, HttpClient(), clock, SequentialIdGenerator(), edition = edition)
 
     fun profile(
         ui: LanguageCode = LanguageCode.ENGLISH, learn: LanguageCode = LanguageCode.ENGLISH, level: CefrLevel? = CefrLevel.A1,

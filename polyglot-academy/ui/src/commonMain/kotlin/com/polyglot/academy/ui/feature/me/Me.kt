@@ -84,7 +84,7 @@ fun MeScreen() {
                 if (e == null) QuietButton(s[K.ME_ASSESS], { app.nav.push(Route.Assessment(code)) })
             }
         }
-        val available = Languages.all.map { it.code }.filter { it !in enrolled && it != profile.nativeLanguage }
+        val available = Languages.all.map { it.code }.filter { it !in enrolled && it != profile.nativeLanguage && app.services.edition.canLearn(it) }
         if (available.isNotEmpty()) {
             Text(s[K.PROFILE_ADD_LANGUAGE], style = MaterialTheme.typography.titleSmall)
             ChipGroup(available, emptySet(), { Labels.language(s, it) }, { code ->

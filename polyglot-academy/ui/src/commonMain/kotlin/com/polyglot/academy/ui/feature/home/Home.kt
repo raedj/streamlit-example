@@ -97,7 +97,7 @@ fun HomeScreen() {
         withContext(kotlinx.coroutines.Dispatchers.Default) { while (true) { offline = app.services.platform.network() == NetworkState.OFFLINE; delay(15_000) } }
     }
     ScrollScreen(title = s[K.APP_NAME], showBack = false, tab = Tab.HOME, actions = {
-        LanguageSwitcher()
+        if (!app.services.edition.singleLanguage) LanguageSwitcher()
         IconButton(onClick = { app.nav.push(Route.Search) }) { Icon(Icons.Filled.Search, s[K.SEARCH]) }
     }) {
         if (offline) Banner(BannerKind.WARNING, s[K.OFFLINE_BANNER])
@@ -113,7 +113,7 @@ private fun LanguageSwitcher() {
     var open by remember { mutableStateOf(false) }
     IconButton(onClick = { open = true }) { Icon(Icons.Filled.Translate, s[K.HOME_SWITCH_LANGUAGE]) }
     DropdownMenu(open, onDismissRequest = { open = false }) {
-        Languages.all.filter { it.code != app.profile.nativeLanguage }.forEach { lp ->
+        Languages.all.filter { it.code != app.profile.nativeLanguage && app.services.edition.canLearn(it.code) }.forEach { lp ->
             DropdownMenuItem(
                 text = { Text(lp.displayName(s.language) + if (lp.code == app.profile.activeLearningLanguage) " ✓" else "") },
                 onClick = { open = false; scope.launch { app.services.store.updateProfile { it.copy(activeLearningLanguage = lp.code) } } },

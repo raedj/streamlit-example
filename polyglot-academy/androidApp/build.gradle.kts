@@ -24,6 +24,8 @@ android {
         // Tesseract's native code is about 8 MB per ABI. 32-bit x86 exists only on old emulators, so it is
         // left out; phones use the ARM ABIs and current emulators x86_64.
         ndk { abiFilters += setOf("arm64-v8a", "armeabi-v7a", "x86_64") }
+        // The trial build for the first testers: English only and a shorter setup (core AppEdition).
+        buildConfigField("boolean", "TRIAL", (providers.gradleProperty("polyglot.trial").orNull == "true").toString())
     }
     buildTypes {
         release {
@@ -37,7 +39,7 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
-    buildFeatures { compose = true }
+    buildFeatures { compose = true; buildConfig = true }
     // Compressed native libraries keep the APK download small (they are extracted at install).
     packaging { jniLibs.useLegacyPackaging = true }
     packaging { resources.excludes += setOf("/META-INF/{AL2.0,LGPL2.1}", "META-INF/INDEX.LIST", "META-INF/io.netty.versions.properties") }
