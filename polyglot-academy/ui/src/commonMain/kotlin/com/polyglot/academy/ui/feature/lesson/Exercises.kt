@@ -148,7 +148,6 @@ private fun FlashcardView(e: Exercise.Flashcard, ctx: ExerciseContext, answered:
     val v = Curriculum.of(ctx.language).vocabularyById[e.vocabularyId]
         // Already loaded by the lesson that contains the card.
         ?: com.polyglot.academy.core.wordlist.WordLists.of(ctx.language).byId[e.vocabularyId]?.toVocabularyItem() ?: return
-    var revealed by remember(e.id) { mutableStateOf(false) }
     var readingShown by remember(e.id) { mutableStateOf(!ctx.readingHidden(e.vocabularyId)) }
     val term = if (ctx.traditional) v.traditional ?: v.term else v.term
     PolyCard {
@@ -157,21 +156,18 @@ private fun FlashcardView(e: Exercise.Flashcard, ctx: ExerciseContext, answered:
                 style = if (ctx.language == LanguageCode.MANDARIN) PolyglotTheme.learning.hanzi else PolyglotTheme.learning.term)
             if (ctx.showReading && !readingShown) QuietButton(s[K.SHOW_READING], { readingShown = true })
             AudioButton(s[K.PLAY_AUDIO], { ctx.speaker.toggle(v.term, ctx.language) }, playing = ctx.speaker.playingText == v.term)
-            if (revealed) {
-                Text(ctx.gloss(v.meaning), style = MaterialTheme.typography.titleLarge, textAlign = TextAlign.Center)
-                v.example?.let { ex ->
-                    Text(s[K.FLASHCARD_EXAMPLE], style = MaterialTheme.typography.labelMedium, color = c.textSecondary)
-                    LearningText(ex, ctx.language, style = MaterialTheme.typography.bodyLarge, textAlign = TextAlign.Center)
-                    v.exampleTranslation?.let { Text(ctx.gloss(it), style = MaterialTheme.typography.bodyMedium, color = c.textSecondary, textAlign = TextAlign.Center) }
-                }
+            Text(ctx.gloss(v.meaning), style = MaterialTheme.typography.titleLarge, textAlign = TextAlign.Center)
+            v.example?.let { ex ->
+                Text(s[K.FLASHCARD_EXAMPLE], style = MaterialTheme.typography.labelMedium, color = c.textSecondary)
+                LearningText(ex, ctx.language, style = MaterialTheme.typography.bodyLarge, textAlign = TextAlign.Center)
+                v.exampleTranslation?.let { Text(ctx.gloss(it), style = MaterialTheme.typography.bodyMedium, color = c.textSecondary, textAlign = TextAlign.Center) }
             }
         }
     }
-    if (!revealed) ExerciseActions { PrimaryButton(s[K.FLASHCARD_REVEAL], { revealed = true }, Modifier.fillMaxWidth()) }
-    else if (!answered) ExerciseActions { Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-        SecondaryButton(s[K.FLASHCARD_DIDNT], { onAnswer(Answer(ExerciseOutcome(false, 0.0, ctx.gloss(v.meaning)), "didn't know", 0, v.term)) }, Modifier.weight(1f))
-        PrimaryButton(s[K.FLASHCARD_KNEW], { onAnswer(Answer(ExerciseOutcome(true, 1.0, ctx.gloss(v.meaning)), "knew", 0, v.term)) }, Modifier.weight(1f))
-    } }
+    // A word met for the first time cannot be recalled, so it is presented; the exercises that follow check it.
+    if (!answered) ExerciseActions {
+        PrimaryButton(s[K.CONTINUE], { onAnswer(Answer(ExerciseOutcome(true, 1.0, "", counted = false), "", 0, v.term)) }, Modifier.fillMaxWidth())
+    }
 }
 
 @Composable
@@ -418,10 +414,10 @@ private fun SpeakRepeatView(e: Exercise.SpeakRepeat, ctx: ExerciseContext, answe
     }
     if (!canRecognize && availability != null && !answered) {
         Banner(BannerKind.INFO, s[K.SPEAK_UNAVAILABLE])
-        ExerciseActions { Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-            SecondaryButton(s[K.SPEAK_SELF_RETRY], { onAnswer(Answer(ExerciseOutcome(false, 0.5, e.targetText), "self:retry", 0, e.targetText)) }, Modifier.weight(1f))
-            PrimaryButton(s[K.SPEAK_SELF_GOOD], { onAnswer(Answer(ExerciseOutcome(true, 1.0, e.targetText), "self:good", 0, e.targetText)) }, Modifier.weight(1f))
-        } }
+        // Nothing here can hear the learner, so saying it aloud is practice and earns no score.
+        ExerciseActions {
+            PrimaryButton(s[K.SPEAK_SELF_DONE], { onAnswer(Answer(ExerciseOutcome(true, 1.0, e.targetText, counted = false), "", 0, e.targetText)) }, Modifier.fillMaxWidth())
+        }
     }
 }
 
@@ -458,7 +454,8 @@ private fun FreeWritingView(e: Exercise.FreeWriting, ctx: ExerciseContext, answe
     AppTextField(text, { text = it }, s[K.WRITING_PLACEHOLDER], singleLine = false, minLines = 5, supporting = s.f(K.WRITE_COUNT, words, e.minWords))
     if (!answered) ExerciseActions { PrimaryButton(s[K.WRITE_SUBMIT], {
         val fb = app.services.writing.offlineFeedback(text, e, ctx.language)
-        onAnswer(Answer(ExerciseOutcome(fb.wordCount >= e.minWords, (fb.wordCount.toDouble() / e.minWords).coerceAtMost(1.0), ""), text, 0, e.prompt.en))
+        // A word count says nothing about whether the text is right, so writing is practice and earns no score.
+        onAnswer(Answer(ExerciseOutcome(fb.wordCount >= e.minWords, 1.0, "", counted = false), text, 0, e.prompt.en))
     }, Modifier.fillMaxWidth(), enabled = text.isNotBlank()) }
 }
 

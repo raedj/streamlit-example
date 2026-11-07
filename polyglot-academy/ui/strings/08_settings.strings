@@ -347,7 +347,7 @@ SET_REPORTS_COUNT ¦ {0} report on this device|{0} reports on this device ¦ ل�
 SET_REPORTS_EXPORT ¦ Export reports for reviewers ¦ صدّر البلاغات للمراجعين
 SET_REPORTS_DELETE ¦ Delete all reports ¦ احذف كلّ البلاغات
 SET_REPORTS_DELETE_BODY ¦ The reports on this device will be deleted. Export them first if you want to send them. ¦ ستُحذف البلاغات من هذا الجهاز. صدّرها أولًا إن أردت إرسالها.
-SET_TRANSLIT_KNOWN ¦ Hide it for words I know ¦ أخفِه للكلمات التي أتقنتها
+SET_TRANSLIT_KNOWN ¦ Hide it for words I know ¦ أخفِه للكلمات التي أعرفها
 SET_TRANSLIT_KNOWN_SUB ¦ For words due a week or more later in your reviews; a button still shows it. ¦ للكلمات التي صار موعد مراجعتها بعد أسبوع أو أكثر، ويبقى زرّ لإظهاره.
 LOCAL_EXPERIMENTAL_TITLE ¦ Experimental ¦ تجريبي
 LOCAL_EXPERIMENTAL ¦ Conversation with a model on the phone is experimental: on many phones a reply can take minutes, and small models miss many corrections. For full tutor feedback, use a cloud provider or a computer on your network. Lessons, reviews and the offline conversation partner work without it. ¦ المحادثة مع نموذج على الهاتف ميزة تجريبية: قد يستغرق الردّ دقائق على كثير من الهواتف، والنماذج الصغيرة تفوّت كثيرًا من التصحيحات. للملاحظات الكاملة من المعلّم استخدم مزوّدًا سحابيًا أو حاسوبًا على شبكتك. الدروس والمراجعة وشريك المحادثة دون اتصال تعمل من دونها.

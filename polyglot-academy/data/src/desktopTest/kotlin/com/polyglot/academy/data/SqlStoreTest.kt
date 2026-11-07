@@ -63,7 +63,7 @@ class SqlStoreTest {
         assertEquals(listOf("a2", "a1"), s.recentAttempts(LanguageCode.SPANISH, 2).map { it.id })
         assertTrue(s.attempts(LanguageCode.FRENCH).first().isEmpty())
         s.saveLessonProgress(LessonProgress("es_l_cafe", LanguageCode.SPANISH, 0.9, 1, 5L, 0))
-        assertTrue(s.lessonProgress(LanguageCode.SPANISH).first().getValue("es_l_cafe").mastered)
+        assertTrue(s.lessonProgress(LanguageCode.SPANISH).first().getValue("es_l_cafe").passed)
     }
 
     @Test fun repeatedMistakesAreCountedNotDuplicated() = runBlocking<Unit> {

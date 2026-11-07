@@ -239,7 +239,7 @@ data class Lesson(
     val vocabularyIds: List<String>,
     val grammarTopicId: String?,
     val exercises: List<Exercise>,
-    /** Lesson ids that should be mastered first. */
+    /** Lesson ids that should be passed first. */
     val prerequisites: List<String> = emptyList(),
 )
 

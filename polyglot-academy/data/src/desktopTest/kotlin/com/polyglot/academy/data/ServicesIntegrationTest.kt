@@ -222,7 +222,7 @@ class ServicesIntegrationTest {
         val unlocked = app.study.completeLesson(lesson, 0.9)
         app.study.updateSession(session, 10, 9, true, 300)
         assertTrue("first_lesson" in unlocked)
-        assertTrue(store.lessonProgress(LanguageCode.ENGLISH).first().getValue(lesson.id).mastered)
+        assertTrue(store.lessonProgress(LanguageCode.ENGLISH).first().getValue(lesson.id).passed)
         assertEquals(lesson.vocabularyIds.size, store.states(LanguageCode.ENGLISH).first().size)
         assertEquals(1, store.mistakes(LanguageCode.ENGLISH).first().size)
         val snap = app.dashboard.snapshot()

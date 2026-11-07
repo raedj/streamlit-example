@@ -254,6 +254,7 @@ fun OnboardingFlow() {
                             }
                         }
                         Banner(BannerKind.INFO, s[K.ONB_PLAN_FIRST_GOAL])
+                        Banner(BannerKind.INFO, s[K.COURSE_PROMISE])
                         AppTextField(name, { name = it.take(40) }, s[K.ONB_NAME_LABEL])
                     }
                 }

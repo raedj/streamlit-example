@@ -42,7 +42,7 @@ internal fun grammar(
 internal fun ex(sentence: String, en: String, ar: String, wrong: Boolean = false) = GrammarExample(sentence, Gloss(en, ar), wrong)
 
 internal object Instr {
-    val flashcard = g("Recall the meaning, then reveal the card.", "تذكّر المعنى ثم اكشف البطاقة.")
+    val flashcard = g("A new word: listen to it and read its meaning and example.", "كلمة جديدة: استمع إليها واقرأ معناها ومثالها.")
     val matching = g("Match each word with its meaning.", "طابِق كل كلمة مع معناها.")
     val meaning = g("Choose the correct meaning.", "اختر المعنى الصحيح.")
     val whichWord = g("Which word matches this meaning?", "أي كلمة تطابق هذا المعنى؟")

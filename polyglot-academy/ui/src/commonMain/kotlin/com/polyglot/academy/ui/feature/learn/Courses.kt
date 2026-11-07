@@ -121,6 +121,7 @@ private fun LevelCoverageSection(lang: com.polyglot.academy.core.model.LanguageC
     val c = PolyglotTheme.colors
     val offers = remember(lang) { LevelCoverage.of(lang) }
     SectionHeader(s[K.LEVELS_TITLE])
+    Banner(BannerKind.INFO, s[K.COURSE_PROMISE])
     Text(s.f(K.LEVELS_INTRO, Labels.language(s, lang)), style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
     val profile = com.polyglot.academy.ui.app.LocalApp.current.profile
     val level = profile.enrollment(lang)?.startingLevel ?: com.polyglot.academy.core.model.CefrLevel.A1
@@ -151,6 +152,8 @@ private fun UnitCard(unit: CourseUnit, lessons: Map<String, Lesson>, progress: M
     val c = PolyglotTheme.colors
     val unitLessons = unit.lessonIds.mapNotNull { lessons[it] }
     val sequencer = Curriculum.of(unit.language).sequencer
+    val states by remember(unit.language) { app.services.store.states(unit.language) }.collectAsState(emptyList())
+    val statesById = remember(states) { states.associateBy { it.itemId } }
     PolyCard {
         Row(verticalAlignment = Alignment.CenterVertically) {
             Column(Modifier.weight(1f)) {
@@ -159,13 +162,14 @@ private fun UnitCard(unit: CourseUnit, lessons: Map<String, Lesson>, progress: M
             }
             LevelBadge(unit.level, null)
         }
-        Text(s.f(K.LEARN_UNIT_PROGRESS, unitLessons.count { progress[it.id]?.mastered == true }, unitLessons.size), style = MaterialTheme.typography.labelMedium, color = c.textSecondary)
+        Text(s.f(K.LEARN_UNIT_PROGRESS, unitLessons.count { progress[it.id]?.passed == true }, unitLessons.size), style = MaterialTheme.typography.labelMedium, color = c.textSecondary)
         unitLessons.forEach { lesson ->
             val p = progress[lesson.id]
             val unlocked = isTrack || sequencer.isUnlocked(lesson, start, progress)
             val below = !isTrack && lesson.level < start
             val (icon, tint, state) = when {
-                p?.mastered == true -> Triple(Icons.Filled.CheckCircle, c.success, s[K.LESSON_MASTERED])
+                p?.passed == true -> Triple(Icons.Filled.CheckCircle, c.success,
+                    s[if (com.polyglot.academy.core.learning.LessonStanding.isHeld(lesson.vocabularyIds, statesById)) K.LESSON_HELD else K.LESSON_PASSED])
                 !unlocked -> Triple(Icons.Filled.Lock, c.textMuted, s[K.LOCKED])
                 else -> Triple(Icons.Filled.PlayCircle, c.primary, lessonState(s, p))
             }
@@ -233,7 +237,7 @@ fun LessonOverviewScreen(lessonId: String) {
         } else {
             PrimaryButton(s[K.LESSON_START], { app.nav.push(Route.LessonPlayer(lesson.id, restart = true)) }, Modifier.fillMaxWidth())
         }
-        p?.let { if (it.completions > 0) Text(s.f(K.LESSON_BEST, (it.bestScore * 100).toInt()) + if (it.mastered) " · ${s[K.LESSON_MASTERED]}" else "", color = c.textSecondary) }
+        p?.let { if (it.completions > 0) Text(s.f(K.LESSON_BEST, (it.bestScore * 100).toInt()) + if (it.passed) " · ${s[K.LESSON_PASSED]}" else "", color = c.textSecondary) }
         lesson.grammarTopicId?.let { gid -> curriculum.grammarById[gid] }?.let { g ->
             SectionHeader(s[K.LESSON_GRAMMAR])
             PolyCard(onClick = { app.nav.push(Route.GrammarTopic(g.id)) }) {

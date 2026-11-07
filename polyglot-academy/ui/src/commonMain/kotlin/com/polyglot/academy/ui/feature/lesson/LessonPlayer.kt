@@ -164,9 +164,17 @@ private fun LessonPlayer(lesson: Lesson, restart: Boolean, onRetry: () -> Unit) 
         summary = Summary(score, gradable.count { firstTry.getValue(it.id) >= 0.99 }, gradable.size, newWords, unlocked, seconds, next)
     }
 
+    fun advance() {
+        adaptMessage = null
+        if (index >= lesson.exercises.lastIndex) finish()
+        else { index++; scope.launch { services.study.saveResumePoint(lesson, index) } }
+    }
+
     fun onAnswer(ex: Exercise, a: Answer) {
         if (answered) return
         answered = true
+        // Nothing was checked, so there is no verdict to show: go straight on.
+        if (!a.outcome.counted) { advance(); return }
         lastAnswer = a
         // Without a voice a listening exercise is only a guess, so it is neither scored nor recorded.
         if (voiceAvailable == false && ex.needsAudio) return
@@ -182,12 +190,6 @@ private fun LessonPlayer(lesson: Lesson, restart: Boolean, onRetry: () -> Unit) 
                 else -> {}
             }
         }
-    }
-
-    fun advance() {
-        adaptMessage = null
-        if (index >= lesson.exercises.lastIndex) finish()
-        else { index++; scope.launch { services.study.saveResumePoint(lesson, index) } }
     }
 
     if (confirmExit) ConfirmDialog(s[K.PLAYER_EXIT_TITLE], s[K.PLAYER_EXIT_BODY], s[K.PLAYER_EXIT_CONFIRM], s[K.PLAYER_STAY],
@@ -277,13 +279,14 @@ private fun SummaryView(lesson: Lesson, sum: Summary, onRetry: () -> Unit) {
     Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(12.dp)) {
         HeroIllustration(HeroKind.SUCCESS, s[K.ILLUSTRATION], size = 120.dp)
         Text(s[K.SUMMARY_TITLE], style = MaterialTheme.typography.headlineSmall)
-        ProgressRing(sum.score.toFloat(), description = s.f(K.SUMMARY_SCORE_DESC, pct), size = 120.dp, color = if (sum.score >= 0.8) c.success else c.accent) {
+        ProgressRing(sum.score.toFloat(), description = s.f(K.SUMMARY_SCORE_DESC, pct), size = 120.dp, color = if (sum.score >= com.polyglot.academy.core.model.LessonProgress.PASS_THRESHOLD) c.success else c.accent) {
             Text(s.f(K.SUMMARY_SCORE, pct), style = PolyglotTheme.learning.stat)
         }
         Text(s.f(K.SUMMARY_CORRECT, sum.correct, sum.total), style = MaterialTheme.typography.bodyLarge)
         Text(s.f(K.SUMMARY_TIME, Labels.clockTime(sum.seconds)), style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
     }
-    Banner(if (sum.score >= 0.8) BannerKind.SUCCESS else BannerKind.INFO, if (sum.score >= 0.8) s[K.SUMMARY_MASTERED] else s[K.SUMMARY_NOT_MASTERED])
+    val passed = sum.score >= com.polyglot.academy.core.model.LessonProgress.PASS_THRESHOLD
+    Banner(if (passed) BannerKind.SUCCESS else BannerKind.INFO, if (passed) s[K.SUMMARY_PASSED] else s[K.SUMMARY_NOT_PASSED])
     if (sum.newWords > 0) PolyCard { Text(s.plural(K.SUMMARY_NEW_WORDS, sum.newWords), style = MaterialTheme.typography.bodyLarge) }
     sum.unlocked.forEach { Banner(BannerKind.SUCCESS, s.f(K.SUMMARY_UNLOCKED, Labels.achievement(s, it))) }
     sum.next?.let { next ->

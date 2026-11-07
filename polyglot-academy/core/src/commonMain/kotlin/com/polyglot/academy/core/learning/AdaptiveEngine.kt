@@ -103,8 +103,8 @@ object DifficultyAdjuster {
 
 /**
  * Orders lessons for a language. Lessons below the learner's starting level are treated as
- * optional review; the next lesson is the first unmastered lesson at or above the starting level
- * whose prerequisites are mastered (or optional).
+ * optional review; the next lesson is the first unpassed lesson at or above the starting level
+ * whose prerequisites are passed (or optional).
  */
 class LessonSequencer(private val units: List<CourseUnit>, private val lessons: Map<String, Lesson>) {
 
@@ -116,21 +116,21 @@ class LessonSequencer(private val units: List<CourseUnit>, private val lessons: 
         val ordered = orderedLessons()
         return ordered.firstOrNull { lesson ->
             lesson.level >= startingLevel &&
-                progress[lesson.id]?.mastered != true &&
-                lesson.prerequisites.all { pre -> progress[pre]?.mastered == true || (lessons[pre]?.level ?: lesson.level) < startingLevel }
-        } ?: ordered.firstOrNull { progress[it.id]?.mastered != true }
+                progress[lesson.id]?.passed != true &&
+                lesson.prerequisites.all { pre -> progress[pre]?.passed == true || (lessons[pre]?.level ?: lesson.level) < startingLevel }
+        } ?: ordered.firstOrNull { progress[it.id]?.passed != true }
     }
 
     fun isUnlocked(lesson: Lesson, startingLevel: CefrLevel, progress: Map<String, LessonProgress>): Boolean =
         lesson.level < startingLevel || lesson.prerequisites.all { pre ->
-            progress[pre]?.mastered == true || (lessons[pre]?.level ?: lesson.level) < startingLevel
+            progress[pre]?.passed == true || (lessons[pre]?.level ?: lesson.level) < startingLevel
         }
 
-    /** Fraction of lessons at a level that are mastered. */
+    /** Fraction of lessons at a level that are passed. */
     fun levelCompletion(level: CefrLevel, progress: Map<String, LessonProgress>): Double {
         val atLevel = orderedLessons().filter { it.level == level }
         if (atLevel.isEmpty()) return 0.0
-        return atLevel.count { progress[it.id]?.mastered == true }.toDouble() / atLevel.size
+        return atLevel.count { progress[it.id]?.passed == true }.toDouble() / atLevel.size
     }
 }
 

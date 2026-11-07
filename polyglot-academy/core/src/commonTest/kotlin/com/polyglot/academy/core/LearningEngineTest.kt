@@ -78,7 +78,7 @@ class LearningEngineTest {
         assertTrue(!c.sequencer.isUnlocked(locked, CefrLevel.A1, emptyMap()))
     }
 
-    @Test fun lowScoreDoesNotCountAsMastered() {
+    @Test fun lowScoreDoesNotOpenTheNextLesson() {
         val c = Curriculum.of(LanguageCode.ENGLISH)
         val progress = mapOf("en_l_greetings" to LessonProgress("en_l_greetings", LanguageCode.ENGLISH, 0.5, 1, 1L))
         assertEquals("en_l_greetings", c.sequencer.nextLesson(CefrLevel.A1, progress)?.id)

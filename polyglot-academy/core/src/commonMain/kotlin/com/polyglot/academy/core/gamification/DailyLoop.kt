@@ -37,14 +37,14 @@ data class DayActivity(
 }
 
 /**
- * Scaled so that the default goal of 50 means about one full lesson (18 answers plus the lesson bonus),
- * not a few cards. XP is always counted from stored events, so a change here also recalculates past days.
+ * Scaled so that the default goal of 50 means about one full lesson (its checked answers plus the lesson
+ * bonus), not a few cards. Words shown and anything the app cannot check earn nothing. XP is always counted from stored events, so a change here also recalculates past days.
  */
 object XpRules {
     const val CORRECT = 2
     const val WRONG = 1
     const val REVIEW = 2
-    const val LESSON_BONUS = 25
+    const val LESSON_BONUS = 40
     const val TURN = 3
     const val SPOKEN_BONUS = 1
     const val STORY = 15

@@ -115,6 +115,7 @@ class UiFlowTest {
         waitForText("Your plan")
         onNodeWithText("Step 5 of 5").assertExists()
         onNodeWithText("Your first goal: one short lesson today. A longer estimate is under Learn.").assertExists()
+        onNodeWithText("What to expect", substring = true).assertExists()
         onNodeWithText("Start learning").performClick()
         waitUntil(timeoutMillis = 10_000) { runBlocking { app.store.currentProfile().onboardingCompleted } }
         val p = runBlocking { app.store.currentProfile() }
@@ -198,16 +199,24 @@ class UiFlowTest {
 
     @Test fun tabLabelsFitAtDoubleTextInArabic() = tabLabelsFitAtDoubleText(LanguageCode.ARABIC, listOf("الرئيسية", "تعلّم", "تدرّب", "المعلّمون", "حسابي"))
 
-    @Test fun lessonFlashcardAnswerIsRecorded() = runDesktopComposeUiTest(800, 1700) {
+    @Test fun aNewWordIsShownAndEarnsNoScore() = runDesktopComposeUiTest(800, 1700) {
         val app = TestApp(); app.profile()
         setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.HOME), Route.LessonPlayer("en_l_greetings", restart = true))) }
-        waitForText("Show meaning")
-        onNodeWithText("Show meaning").performClick()
-        onNodeWithText("I knew it").performClick()
-        waitForText("Correct!")
+        waitForText("1/18")
+        onNodeWithText("مرحبًا").assertExists() // the meaning is there from the start
         onNodeWithText("Continue").performClick()
-        waitUntil(timeoutMillis = 5_000) { runBlocking { app.store.attempts(LanguageCode.ENGLISH).first().isNotEmpty() } }
-        assertTrue(runBlocking { app.store.attempts(LanguageCode.ENGLISH).first().single().correct })
+        waitForText("2/18")
+        assertTrue(runBlocking { app.store.attempts(LanguageCode.ENGLISH).first() }.isEmpty())
+    }
+
+    @Test fun aPassedLessonSaysPractisedNotMastered() = runDesktopComposeUiTest(800, 1700) {
+        val app = TestApp(); app.profile()
+        val lesson = com.polyglot.academy.core.content.Curriculum.of(LanguageCode.ENGLISH).lessonsById.getValue("en_l_greetings")
+        runBlocking { app.services.study.completeLesson(lesson, 0.9) }
+        setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.LEARN))) }
+        waitForText("lessons practised", substring = true)
+        onAllNodesWithText("Practised", substring = true).fetchSemanticsNodes().let { assertTrue(it.isNotEmpty()) }
+        assertTrue(onAllNodesWithText("astered", substring = true).fetchSemanticsNodes().isEmpty())
     }
 
     @Test fun wrongFillInBlankShowsCorrectAnswerAndRecordsMistake() = runDesktopComposeUiTest(800, 1700) {

@@ -39,7 +39,7 @@ class DailyLoopTest {
         val days = XpRules.days(listOf(attempt(1, true, at = day0), attempt(2, false, at = day0)), sessions, turns, TimeZone.UTC)
         val d = days.values.single()
         assertEquals(1, d.learnerTurns); assertEquals(1, d.spokenTurns); assertEquals(12, d.reviews); assertEquals(1, d.lessonsCompleted)
-        assertEquals(2 + 1 + 12 * 2 + 25 + 3 + 1, d.baseXp)
+        assertEquals(2 + 1 + 12 * 2 + 40 + 3 + 1, d.baseXp)
         assertEquals(7, d.activeMinutes)
         assertFalse(DayActivity(today).active)
     }
@@ -77,9 +77,24 @@ class DailyLoopTest {
     @Test fun theDefaultGoalMeansAboutOneLesson() {
         val goal = com.polyglot.academy.core.model.LearnerProfile().dailyXpGoal
         assertTrue(DayActivity(today, correctAnswers = 6).baseXp < goal, "six cards do not finish the day")
-        val shortest = com.polyglot.academy.core.content.Curriculum.of(LanguageCode.ENGLISH).lessons.minOf { it.exercises.size }
+        // Only what the app can check earns points: words shown, unheard speech and free writing do not.
+        val shortest = com.polyglot.academy.core.content.Curriculum.of(LanguageCode.ENGLISH).lessons.minOf { lesson ->
+            lesson.exercises.count { it !is com.polyglot.academy.core.model.Exercise.Flashcard && it !is com.polyglot.academy.core.model.Exercise.SpeakRepeat && it !is com.polyglot.academy.core.model.Exercise.FreeWriting }
+        }
         assertTrue(DayActivity(today, correctAnswers = shortest, lessonsCompleted = 1).baseXp >= goal, "a lesson of $shortest answers reaches the goal")
         assertTrue(XpRules.WRONG < XpRules.CORRECT, "a right answer always earns more")
+    }
+
+    @Test fun aLessonLastsOnlyAfterSpacedReviews() {
+        val ids = listOf("a", "b", "c", "d", "e")
+        fun state(id: String, phase: com.polyglot.academy.core.model.ReviewPhase, days: Double) =
+            com.polyglot.academy.core.model.ReviewState(itemId = id, language = LanguageCode.ENGLISH, phase = phase, intervalDays = days)
+        val isHeld = com.polyglot.academy.core.learning.LessonStanding::isHeld
+        assertFalse(isHeld(emptyList(), emptyMap()))
+        assertFalse(isHeld(ids, ids.associateWith { state(it, com.polyglot.academy.core.model.ReviewPhase.NEW, 0.0) }), "just finished the lesson")
+        assertFalse(isHeld(ids, ids.associateWith { state(it, com.polyglot.academy.core.model.ReviewPhase.REVIEW, 6.0) }), "under a week")
+        assertFalse(isHeld(ids, ids.take(3).associateWith { state(it, com.polyglot.academy.core.model.ReviewPhase.REVIEW, 15.0) }), "too few words")
+        assertTrue(isHeld(ids, ids.take(4).associateWith { state(it, com.polyglot.academy.core.model.ReviewPhase.REVIEW, 15.0) }))
     }
 
     @Test fun levelsAndDailyLoop() {

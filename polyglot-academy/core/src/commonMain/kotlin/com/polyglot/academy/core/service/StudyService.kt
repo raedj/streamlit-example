@@ -20,7 +20,14 @@ import com.polyglot.academy.core.util.TimeSource
 import kotlinx.coroutines.flow.first
 
 /** Result of answering one exercise, as shown in the feedback panel. */
-data class ExerciseOutcome(val correct: Boolean, val score: Double, val expected: String, val note: AnswerCheck? = null)
+data class ExerciseOutcome(
+    val correct: Boolean,
+    val score: Double,
+    val expected: String,
+    val note: AnswerCheck? = null,
+    /** False when the app could not check the answer (a new word shown, speech it cannot hear, free writing): no score, no record. */
+    val counted: Boolean = true,
+)
 
 /** Records learning events and keeps progress, mistakes, reviews and achievements consistent. */
 class StudyService(
@@ -62,6 +69,7 @@ class StudyService(
         hintsUsed: Int,
         promptText: String,
     ) {
+        if (!outcome.counted) return
         val now = clock.nowMillis()
         progress.recordAttempt(
             ExerciseAttempt(ids.newId("att"), lessonId, exercise.id, language, exercise.skill, exercise.difficulty, outcome.correct, outcome.score,

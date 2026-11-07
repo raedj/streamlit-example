@@ -112,8 +112,9 @@ data class LessonProgress(
     /** Index of the next exercise if the lesson was interrupted. */
     val resumeIndex: Int = 0,
 ) {
-    val mastered: Boolean get() = bestScore >= MASTERY_THRESHOLD
-    companion object { const val MASTERY_THRESHOLD = 0.8 }
+    /** Enough to open the next lesson. Says nothing about what stays; see [com.polyglot.academy.core.learning.LessonStanding]. */
+    val passed: Boolean get() = bestScore >= PASS_THRESHOLD
+    companion object { const val PASS_THRESHOLD = 0.7 }
 }
 
 @Serializable
