@@ -197,6 +197,7 @@ private fun LessonPlayer(lesson: Lesson, restart: Boolean, onRetry: () -> Unit) 
 
     val c = PolyglotTheme.colors
     val actions = remember { ExerciseActionSlot() }
+    val tilePool = remember(lessonId) { lesson.exercises.filterIsInstance<Exercise.Translate>().mapNotNull { it.acceptedAnswers.firstOrNull() } }
     CompositionLocalProvider(LocalExerciseActions provides actions) { Scaffold(containerColor = c.background, topBar = {
         Row(Modifier.fillMaxWidth().padding(horizontal = 8.dp, vertical = 8.dp).padding(top = 24.dp), verticalAlignment = Alignment.CenterVertically) {
             IconButton(onClick = { if (summary != null) app.nav.pop() else confirmExit = true }) { Icon(Icons.Filled.Close, s[K.CLOSE]) }
@@ -237,7 +238,7 @@ private fun LessonPlayer(lesson: Lesson, restart: Boolean, onRetry: () -> Unit) 
                 else if (index >= 0) {
                     val ex = lesson.exercises[index]
                     adaptMessage?.let { Banner(BannerKind.INFO, s[it]) }
-                    val ctx = ExerciseContext(lesson.language, explain, speaker, hintsOn, enrollment?.showTransliteration != false, enrollment?.useTraditionalCharacters == true, hiddenReadings)
+                    val ctx = ExerciseContext(lesson.language, explain, speaker, hintsOn, enrollment?.showTransliteration != false, enrollment?.useTraditionalCharacters == true, hiddenReadings, tilePool)
                     if (voiceAvailable == false && ex.needsAudio) {
                         Banner(BannerKind.WARNING, s.f(K.LISTEN_NO_VOICE, Labels.language(s, lesson.language)))
                         if (!answered) SecondaryButton(s[K.LISTEN_SKIP], { advance() }, Modifier.fillMaxWidth())

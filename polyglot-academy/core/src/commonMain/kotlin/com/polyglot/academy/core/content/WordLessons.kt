@@ -13,8 +13,8 @@ import kotlin.random.Random
 
 /**
  * Lessons generated from the frequency word lists: each covers [PER_LESSON] consecutive words of a
- * level (30 lessons per level). Exercises: a flashcard per word, two matching rounds, meaning and
- * reverse-meaning choice, listening choice, and, from the words' example sentences, word order and
+ * level (30 lessons per level). Exercises: a new-word card per word, two matching rounds, meaning
+ * choice, typed word recall, listening choice, and, from the words' example sentences, word order and
  * dictation. Generation is deterministic, so a lesson id always yields the same lesson (needed to
  * resume it and to rebuild its earlier answers).
  */
@@ -71,11 +71,8 @@ object WordLessons {
             )
         }
         words.filterIndexed { i, _ -> i % 3 == 1 }.forEach { e ->
-            val options = options(e, pool, random)
-            exercises += Exercise.MultipleChoice(
-                "${id}_rev_${e.id}", Skill.VOCABULARY, Instr.whichWord, prompt = e.meaning.en,
-                options = options.map { it.term }, correctIndex = options.indexOf(e), difficulty = 2, promptGloss = e.meaning,
-            )
+            exercises += Exercise.Translate("${id}${com.polyglot.academy.core.model.WORD_RECALL_MARK}${e.id}", Skill.VOCABULARY, Instr.recall, e.meaning,
+                com.polyglot.academy.core.learning.Recall.acceptedAnswers(e.toVocabularyItem()), difficulty = 2)
         }
         words.filterIndexed { i, _ -> i % 5 == 2 }.forEach { e ->
             val options = options(e, pool, random)

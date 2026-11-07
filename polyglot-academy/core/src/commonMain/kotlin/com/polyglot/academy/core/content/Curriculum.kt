@@ -79,6 +79,7 @@ class LanguageCurriculum(
         is Exercise.Dictation -> if (e.acceptedAnswers.isEmpty()) "no answers" else null
         is Exercise.Flashcard -> if (e.vocabularyId !in vocabularyById) "flashcard references missing vocab" else null
         is Exercise.ToneChoice -> if (e.correctTone !in 1..5) "invalid tone" else null
+        is Exercise.GrammarNote -> if (e.topicId !in grammarById) "grammar note references missing topic" else null
         is Exercise.SpeakRepeat, is Exercise.FreeWriting -> null
     }
 }

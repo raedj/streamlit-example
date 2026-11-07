@@ -90,6 +90,8 @@ data class ExerciseContext(
     val traditional: Boolean,
     /** Items whose reading is hidden behind a button (known words, when the learner chose so). */
     val readingHiddenFor: Set<String> = emptySet(),
+    /** Other answers nearby, used as distractors in the tiles for typed answers. */
+    val tilePool: List<String> = emptyList(),
 ) {
     fun gloss(g: Gloss) = g.forLanguage(explain)
     fun readingHidden(itemId: String?) = itemId != null && itemId in readingHiddenFor
@@ -128,8 +130,8 @@ fun ExerciseView(exercise: Exercise, ctx: ExerciseContext, answered: Boolean, on
             is Exercise.MultipleChoice -> MultipleChoiceView(exercise, ctx, answered, onAnswer)
             is Exercise.FillInBlank -> TypedView(exercise.sentence, exercise.acceptedAnswers, exercise.hint, ctx, answered, onAnswer, sentenceInTarget = true)
             is Exercise.Translate -> {
-                Text(s[K.TRANSLATE_PROMPT], style = MaterialTheme.typography.labelLarge, color = PolyglotTheme.colors.textSecondary)
-                TypedView(ctx.gloss(exercise.source), exercise.acceptedAnswers, null, ctx, answered, onAnswer, sentenceInTarget = false)
+                if (com.polyglot.academy.core.model.WORD_RECALL_MARK !in exercise.id) Text(s[K.TRANSLATE_PROMPT], style = MaterialTheme.typography.labelLarge, color = PolyglotTheme.colors.textSecondary)
+                TypedView(ctx.gloss(exercise.source), exercise.acceptedAnswers, null, ctx, answered, onAnswer, sentenceInTarget = false, tiles = true)
             }
             is Exercise.Dictation -> DictationView(exercise, ctx, answered, onAnswer)
             is Exercise.SentenceOrder -> SentenceOrderView(exercise, ctx, answered, onAnswer)
@@ -137,6 +139,7 @@ fun ExerciseView(exercise: Exercise, ctx: ExerciseContext, answered: Boolean, on
             is Exercise.SpeakRepeat -> SpeakRepeatView(exercise, ctx, answered, onAnswer)
             is Exercise.ToneChoice -> ToneChoiceView(exercise, ctx, answered, onAnswer)
             is Exercise.FreeWriting -> FreeWritingView(exercise, ctx, answered, onAnswer)
+            is Exercise.GrammarNote -> GrammarNoteView(exercise, ctx, answered, onAnswer)
         }
     }
 }
@@ -211,6 +214,7 @@ private fun MultipleChoiceView(e: Exercise.MultipleChoice, ctx: ExerciseContext,
 @Composable
 private fun TypedView(
     prompt: String, accepted: List<String>, hint: Gloss?, ctx: ExerciseContext, answered: Boolean, onAnswer: (Answer) -> Unit, sentenceInTarget: Boolean,
+    tiles: Boolean = false,
 ) {
     val s = LocalStrings.current
     var text by remember(prompt) { mutableStateOf("") }
@@ -219,7 +223,9 @@ private fun TypedView(
     var wrongKeyboard by remember(prompt) { mutableStateOf(false) }
     if (sentenceInTarget) LearningText(prompt.replace("___", "_____"), ctx.language, style = PolyglotTheme.learning.sentence)
     else Text(prompt, style = MaterialTheme.typography.headlineSmall)
-    AppTextField(text, { text = it; empty = false }, s[K.TYPE_ANSWER], isError = empty, supporting = if (empty) s[K.FEEDBACK_EMPTY] else null,
+    if (tiles && !answered) RecallInput(text, { text = it; empty = false }, ctx.language, accepted.first(), ctx.tilePool, prompt,
+        supporting = if (empty) s[K.FEEDBACK_EMPTY] else null, isError = empty)
+    else AppTextField(text, { text = it; empty = false }, s[K.TYPE_ANSWER], isError = empty, supporting = if (empty) s[K.FEEDBACK_EMPTY] else null,
         textStyle = com.polyglot.academy.ui.designsystem.styleFor(ctx.language, MaterialTheme.typography.bodyLarge).copy(localeList = com.polyglot.academy.ui.designsystem.localeFor(Languages.of(ctx.language).defaultVariant.localeTag),
             textDirection = com.polyglot.academy.ui.designsystem.textDirectionFor(ctx.language)))
     if (wrongKeyboard) Banner(BannerKind.WARNING, s[K.FEEDBACK_KEYBOARD])
@@ -492,6 +498,25 @@ private fun FreeWritingView(e: Exercise.FreeWriting, ctx: ExerciseContext, answe
         // A word count says nothing about whether the text is right, so writing is practice and earns no score.
         onAnswer(Answer(ExerciseOutcome(fb.wordCount >= e.minWords, 1.0, "", counted = false), text, 0, e.prompt.en))
     }, Modifier.fillMaxWidth(), enabled = text.isNotBlank()) }
+}
+
+/** The rule, in the moment it is about to be used, instead of on a page before the lesson that many would skip. */
+@Composable
+private fun GrammarNoteView(e: Exercise.GrammarNote, ctx: ExerciseContext, answered: Boolean, onAnswer: (Answer) -> Unit) {
+    val s = LocalStrings.current
+    val c = PolyglotTheme.colors
+    val topic = Curriculum.grammar(e.topicId)
+    if (topic != null) PolyCard {
+        Text(ctx.gloss(topic.title), style = MaterialTheme.typography.titleMedium)
+        Text(ctx.gloss(topic.rule), style = MaterialTheme.typography.bodyLarge)
+        topic.examples.filter { !it.isIncorrect }.take(3).forEach { ex ->
+            LearningText(ex.sentence, ctx.language, style = MaterialTheme.typography.bodyLarge)
+            Text(ctx.gloss(ex.translation), style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
+        }
+    }
+    if (!answered) ExerciseActions {
+        PrimaryButton(s[K.CONTINUE], { onAnswer(Answer(ExerciseOutcome(true, 1.0, "", counted = false), "", 0, e.topicId)) }, Modifier.fillMaxWidth())
+    }
 }
 
 /** Small lightbulb row for explanations after answering. */

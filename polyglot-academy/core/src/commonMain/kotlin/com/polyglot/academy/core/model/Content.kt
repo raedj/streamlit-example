@@ -212,6 +212,17 @@ sealed interface Exercise {
         override val explanation: Gloss? = null,
     ) : Exercise
 
+    /** A grammar rule shown right before the exercises that use it. Nothing to answer, so it earns no score. */
+    @Serializable
+    data class GrammarNote(
+        override val id: String,
+        override val skill: Skill,
+        override val instruction: Gloss,
+        val topicId: String,
+        override val difficulty: Int = 1,
+        override val explanation: Gloss? = null,
+    ) : Exercise
+
     @Serializable
     data class FreeWriting(
         override val id: String,

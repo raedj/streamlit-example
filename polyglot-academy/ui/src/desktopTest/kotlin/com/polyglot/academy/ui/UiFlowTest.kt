@@ -225,13 +225,40 @@ class UiFlowTest {
         assertEquals(0, runBlocking { app.store.states(LanguageCode.ENGLISH).first().single().totalReviews })
     }
 
+    @Test fun lessonRecallCanBeBuiltFromTiles() = runDesktopComposeUiTest(800, 1700) {
+        val app = TestApp(); app.profile()
+        val lesson = com.polyglot.academy.core.content.Curriculum.of(LanguageCode.ENGLISH).lessonsById.getValue("en_l_greetings")
+        val index = lesson.exercises.indexOfFirst { it.id.contains(com.polyglot.academy.core.model.WORD_RECALL_MARK) }
+        runBlocking { app.services.study.saveResumePoint(lesson, index) }
+        setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.HOME), Route.LessonPlayer("en_l_greetings"))) }
+        waitForText("Build it by tapping")
+        onNodeWithText("Build it by tapping").performClick()
+        "hello".forEach { letter -> onNodeWithText(letter.toString()).performClick() }
+        onNodeWithText("Check").performClick()
+        waitForText("Correct!")
+    }
+
+    @Test fun theGrammarRuleComesRightBeforeTheExercisesThatUseIt() = runDesktopComposeUiTest(800, 1700) {
+        val app = TestApp(); app.profile()
+        val lesson = com.polyglot.academy.core.content.Curriculum.of(LanguageCode.ENGLISH).lessonsById.getValue("en_l_greetings")
+        val index = lesson.exercises.indexOfFirst { it is com.polyglot.academy.core.model.Exercise.GrammarNote }
+        assertTrue(lesson.exercises[index + 1] is com.polyglot.academy.core.model.Exercise.FillInBlank)
+        runBlocking { app.services.study.saveResumePoint(lesson, index) }
+        setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.HOME), Route.LessonPlayer("en_l_greetings"))) }
+        waitForText("to be", substring = true)
+        onNodeWithText("Continue").performClick()
+        waitForText("My name _____ Sara.")
+        assertTrue(runBlocking { app.store.attempts(LanguageCode.ENGLISH).first() }.isEmpty())
+    }
+
     @Test fun aNewWordIsShownAndEarnsNoScore() = runDesktopComposeUiTest(800, 1700) {
         val app = TestApp(); app.profile()
         setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.HOME), Route.LessonPlayer("en_l_greetings", restart = true))) }
-        waitForText("1/18")
+        val total = com.polyglot.academy.core.content.Curriculum.of(LanguageCode.ENGLISH).lessonsById.getValue("en_l_greetings").exercises.size
+        waitForText("1/$total")
         onNodeWithText("مرحبًا").assertExists() // the meaning is there from the start
         onNodeWithText("Continue").performClick()
-        waitForText("2/18")
+        waitForText("2/$total")
         assertTrue(runBlocking { app.store.attempts(LanguageCode.ENGLISH).first() }.isEmpty())
     }
 

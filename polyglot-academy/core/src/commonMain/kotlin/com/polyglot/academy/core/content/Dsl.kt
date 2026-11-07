@@ -1,5 +1,6 @@
 package com.polyglot.academy.core.content
 
+import com.polyglot.academy.core.learning.Recall
 import com.polyglot.academy.core.mandarin.Pinyin
 import com.polyglot.academy.core.model.CefrLevel
 import com.polyglot.academy.core.model.Exercise
@@ -13,6 +14,7 @@ import com.polyglot.academy.core.model.PartOfSpeech
 import com.polyglot.academy.core.model.Skill
 import com.polyglot.academy.core.model.VocabularyItem
 import com.polyglot.academy.core.model.VocabularySource
+import com.polyglot.academy.core.model.WORD_RECALL_MARK
 
 /** Small builders that keep curriculum files readable. */
 internal fun g(en: String, ar: String) = Gloss(en, ar)
@@ -42,6 +44,8 @@ internal fun grammar(
 internal fun ex(sentence: String, en: String, ar: String, wrong: Boolean = false) = GrammarExample(sentence, Gloss(en, ar), wrong)
 
 internal object Instr {
+    val recall = g("How do you say this?", "كيف تقول هذا؟")
+    val grammarNote = g("Read this rule. The next exercises use it.", "اقرأ هذه القاعدة، فالتمارين التالية تستخدمها.")
     val flashcard = g("A new word: listen to it and read its meaning and example.", "كلمة جديدة: استمع إليها واقرأ معناها ومثالها.")
     val matching = g("Match each word with its meaning.", "طابِق كل كلمة مع معناها.")
     val meaning = g("Choose the correct meaning.", "اختر المعنى الصحيح.")
@@ -58,9 +62,11 @@ internal object Instr {
 }
 
 /**
- * Generates a varied exercise sequence from a lesson's vocabulary: flashcards, matching,
- * meaning and reverse-meaning choice, listening discrimination and speaking repetition, followed
- * by the hand-written grammar exercises. Distractors are chosen deterministically.
+ * Generates a lesson from its vocabulary, moving from meeting a word to producing it: new-word cards,
+ * matching, a little meaning choice, word recall, listening, putting an example sentence in order, then
+ * the grammar rule with the hand-written exercises that use it, and last saying a sentence aloud. Nothing
+ * here is new content: words, meanings and examples all come from the vocabulary. Distractors are
+ * chosen deterministically.
  */
 internal class LessonFactory(private val lang: LanguageCode, private val allVocab: List<VocabularyItem>) {
     private val byId = allVocab.associateBy { it.id }
@@ -77,7 +83,7 @@ internal class LessonFactory(private val lang: LanguageCode, private val allVoca
         if (items.size >= 3) {
             exercises += Exercise.Matching("${fullId}_match", Skill.VOCABULARY, Instr.matching, items.take(4).map { it.term to it.meaning })
         }
-        items.take(3).forEachIndexed { i, item ->
+        items.take(2).forEachIndexed { i, item ->
             val distractors = distractors(item, 3)
             val options = rotate(listOf(item) + distractors, i)
             exercises += Exercise.MultipleChoice(
@@ -86,14 +92,11 @@ internal class LessonFactory(private val lang: LanguageCode, private val allVoca
                 optionGlosses = options.map { it.meaning },
             )
         }
-        items.drop(3).take(2).forEachIndexed { i, item ->
-            val options = rotate(listOf(item) + distractors(item, 3), i + 1)
-            exercises += Exercise.MultipleChoice(
-                "${fullId}_rev_${item.id}", Skill.VOCABULARY, Instr.whichWord, prompt = item.meaning.en,
-                options = options.map { it.term }, correctIndex = options.indexOf(item), difficulty = 2, promptGloss = item.meaning,
-            )
+        // Producing the word strengthens memory more than picking it from a list.
+        items.take(4).forEach { item ->
+            exercises += Exercise.Translate("${fullId}${WORD_RECALL_MARK}${item.id}", Skill.VOCABULARY, Instr.recall, item.meaning, Recall.acceptedAnswers(item), difficulty = 2)
         }
-        items.take(2).forEachIndexed { i, item ->
+        items.drop(2).take(if (lang == LanguageCode.MANDARIN) 2 else 1).forEachIndexed { i, item ->
             val options = rotate(listOf(item) + distractors(item, 2), i + 2)
             exercises += Exercise.MultipleChoice(
                 "${fullId}_listen_${item.id}", Skill.LISTENING, Instr.listen, prompt = "🔊",
@@ -106,11 +109,21 @@ internal class LessonFactory(private val lang: LanguageCode, private val allVoca
                 exercises += Exercise.ToneChoice("${fullId}_tone_${item.id}", Skill.PRONUNCIATION, Instr.tone, syl.base, syl.tone, item.term, item.meaning)
             }
         }
+        // Mandarin is written without spaces, so its sentences cannot be split here; its hand-written exercises cover this.
+        val sentences = if (lang == LanguageCode.MANDARIN) emptyList() else items.filter { it.example != null && it.exampleTranslation != null && it.example!!.split(' ').size in 3..9 }
+        sentences.firstOrNull()?.let { item ->
+            exercises += Exercise.Dictation("${fullId}_dict_${item.id}", Skill.LISTENING, Instr.dictation, item.example!!, listOf(item.example!!), 3)
+        }
+        sentences.drop(1).firstOrNull()?.let { item ->
+            exercises += Exercise.SentenceOrder("${fullId}_order_${item.id}", Skill.GRAMMAR, Instr.order, item.example!!.split(' '), " ", item.exampleTranslation!!)
+        }
+        grammarId?.let { exercises += Exercise.GrammarNote("${fullId}_rule", Skill.GRAMMAR, Instr.grammarNote, "${lang.tag}_g_$it") }
+        exercises += extra
         items.firstOrNull { it.example != null && it.exampleTranslation != null }?.let { item ->
             exercises += Exercise.SpeakRepeat("${fullId}_speak", Skill.SPEAKING, Instr.speak, item.example!!, item.pronunciation, item.exampleTranslation!!)
         }
-        exercises += extra
-        return Lesson(fullId, lang, level, "${lang.tag}_u_$unitId", title, summary, skill, minutes, items.map { it.id },
+        // Typing takes longer than tapping, so the time shown follows the exercises (an estimate, not a measurement).
+        return Lesson(fullId, lang, level, "${lang.tag}_u_$unitId", title, summary, skill, maxOf(minutes, exercises.size / 2), items.map { it.id },
             grammarId?.let { "${lang.tag}_g_$it" }, exercises, prerequisites.map { "${lang.tag}_l_$it" })
     }
 

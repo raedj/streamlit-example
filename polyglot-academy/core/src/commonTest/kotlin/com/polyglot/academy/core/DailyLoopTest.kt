@@ -39,7 +39,7 @@ class DailyLoopTest {
         val days = XpRules.days(listOf(attempt(1, true, at = day0), attempt(2, false, at = day0)), sessions, turns, TimeZone.UTC)
         val d = days.values.single()
         assertEquals(1, d.learnerTurns); assertEquals(1, d.spokenTurns); assertEquals(12, d.reviews); assertEquals(1, d.lessonsCompleted)
-        assertEquals(2 + 1 + 12 * 2 + 40 + 3 + 1, d.baseXp)
+        assertEquals(2 + 1 + 12 * 2 + 35 + 3 + 1, d.baseXp)
         assertEquals(7, d.activeMinutes)
         assertFalse(DayActivity(today).active)
     }
@@ -78,8 +78,9 @@ class DailyLoopTest {
         val goal = com.polyglot.academy.core.model.LearnerProfile().dailyXpGoal
         assertTrue(DayActivity(today, correctAnswers = 6).baseXp < goal, "six cards do not finish the day")
         // Only what the app can check earns points: words shown, unheard speech and free writing do not.
-        val shortest = com.polyglot.academy.core.content.Curriculum.of(LanguageCode.ENGLISH).lessons.minOf { lesson ->
-            lesson.exercises.count { it !is com.polyglot.academy.core.model.Exercise.Flashcard && it !is com.polyglot.academy.core.model.Exercise.SpeakRepeat && it !is com.polyglot.academy.core.model.Exercise.FreeWriting }
+        val shortest = listOf(LanguageCode.ENGLISH, LanguageCode.MANDARIN, LanguageCode.MALAY).flatMap { com.polyglot.academy.core.content.Curriculum.of(it).lessons }.minOf { lesson ->
+            lesson.exercises.count { it !is com.polyglot.academy.core.model.Exercise.Flashcard && it !is com.polyglot.academy.core.model.Exercise.SpeakRepeat &&
+                it !is com.polyglot.academy.core.model.Exercise.FreeWriting && it !is com.polyglot.academy.core.model.Exercise.GrammarNote }
         }
         assertTrue(DayActivity(today, correctAnswers = shortest, lessonsCompleted = 1).baseXp >= goal, "a lesson of $shortest answers reaches the goal")
         assertTrue(XpRules.WRONG < XpRules.CORRECT, "a right answer always earns more")

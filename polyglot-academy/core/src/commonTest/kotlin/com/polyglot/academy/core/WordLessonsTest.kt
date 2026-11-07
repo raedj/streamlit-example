@@ -45,6 +45,7 @@ class WordLessonsTest {
                         is Exercise.Matching -> assertTrue(e.pairs.size >= 3, "$where ${e.id}")
                         is Exercise.SentenceOrder -> assertTrue(e.tokens.size in 4..8, "$where ${e.id}")
                         is Exercise.Dictation -> assertTrue(e.audioText.isNotBlank(), "$where ${e.id}")
+                        is Exercise.Translate -> assertTrue(e.acceptedAnswers.isNotEmpty(), "$where ${e.id}")
                         else -> error("$where: unexpected ${e::class.simpleName}")
                     }
                 }

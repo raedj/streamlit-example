@@ -44,7 +44,7 @@ object XpRules {
     const val CORRECT = 2
     const val WRONG = 1
     const val REVIEW = 2
-    const val LESSON_BONUS = 40
+    const val LESSON_BONUS = 35
     const val TURN = 3
     const val SPOKEN_BONUS = 1
     const val STORY = 15
