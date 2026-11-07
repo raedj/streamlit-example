@@ -251,6 +251,20 @@ class UiFlowTest {
         assertTrue(runBlocking { app.store.attempts(LanguageCode.ENGLISH).first() }.isEmpty())
     }
 
+    @Test fun theWordCheckIsSavedApartFromPlacement() = runDesktopComposeUiTest(800, 1700) {
+        val app = TestApp(); app.profile()
+        setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.ME), Route.WordCheck(LanguageCode.ENGLISH))) }
+        waitForText("Take the word check", timeout = 30_000)
+        onNodeWithText("Take the word check").performClick()
+        repeat(com.polyglot.academy.core.assessment.WordCheck.SIZE) { i ->
+            waitForText("Word ${i + 1} of ${com.polyglot.academy.core.assessment.WordCheck.SIZE}")
+            onNodeWithText("I don't know it").performClick()
+        }
+        waitForText("You recalled 0 of 20 words.")
+        val results = runBlocking { app.store.assessments(LanguageCode.ENGLISH).first() }
+        assertEquals(com.polyglot.academy.core.model.AssessmentKind.PROGRESS_CHECK, results.single().kind)
+    }
+
     @Test fun aNewWordIsShownAndEarnsNoScore() = runDesktopComposeUiTest(800, 1700) {
         val app = TestApp(); app.profile()
         setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.HOME), Route.LessonPlayer("en_l_greetings", restart = true))) }

@@ -37,6 +37,7 @@ sealed interface Route {
     data object Search : Route
     data object Plan : Route
     data object Progress : Route
+    data class WordCheck(val language: LanguageCode) : Route
     data class Assessment(val language: LanguageCode? = null, val fromOnboarding: Boolean = false) : Route
     data class TutorDetail(val tutorId: String) : Route
     data class Conversation(val tutorId: String, val scenarioId: String? = null, val offline: Boolean = false) : Route
@@ -70,6 +71,7 @@ sealed interface Route {
             Vocabulary -> "vocab"; Library -> "library"; PhotoImport -> "photo"
             is Material -> "material|${r.materialId}"
             Search -> "search"; Plan -> "plan"; Progress -> "progress"
+            is WordCheck -> "wordCheck|${r.language.name}"
             is Assessment -> "assess|${r.language?.name.orEmpty()}|${r.fromOnboarding}"
             is TutorDetail -> "tutor|${r.tutorId}"
             is Conversation -> "conv|${r.tutorId}|${r.scenarioId.orEmpty()}|${r.offline}"
@@ -101,6 +103,7 @@ sealed interface Route {
                 "vocab" -> Vocabulary; "library" -> Library; "photo" -> PhotoImport
                 "material" -> Material(arg(1))
                 "search" -> Search; "plan" -> Plan; "progress" -> Progress
+                "wordCheck" -> WordCheck(LanguageCode.valueOf(arg(1)))
                 "assess" -> Assessment(arg(1).ifEmpty { null }?.let(LanguageCode::valueOf), arg(2) == "true")
                 "tutor" -> TutorDetail(arg(1))
                 "conv" -> Conversation(arg(1), arg(2).ifEmpty { null }, arg(3) == "true")

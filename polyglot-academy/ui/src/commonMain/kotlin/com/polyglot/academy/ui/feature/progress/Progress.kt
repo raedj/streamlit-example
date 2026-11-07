@@ -51,7 +51,7 @@ import com.polyglot.academy.ui.i18n.Labels
 import com.polyglot.academy.ui.i18n.LocalStrings
 import kotlinx.coroutines.flow.first
 
-data class ProgressData(val summary: LearningSummary, val minutes28: List<com.polyglot.academy.core.analytics.DailyValue>, val assessments: List<AssessmentResult>, val hasData: Boolean)
+data class ProgressData(val summary: LearningSummary, val minutes28: List<com.polyglot.academy.core.analytics.DailyValue>, val assessments: List<AssessmentResult>, val hasData: Boolean, val wordChecks: List<AssessmentResult> = emptyList())
 
 @Composable
 fun ProgressScreen() {
@@ -67,7 +67,9 @@ fun ProgressScreen() {
         val calc = AnalyticsCalculator()
         val summary = calc.summarize(sessions, attempts, st.states(lang).first().filterNot { it.isSentenceCard }, st.reviewCount(lang),
             st.lessonProgress(lang).first().values.count { it.completions > 0 }, st.learnerTurnCount(lang), now)
-        ProgressData(summary, calc.minutesByDay(sessions, now.toLocalDate(), 28), st.assessments(lang).first(), sessions.isNotEmpty() || attempts.isNotEmpty())
+        val results = st.assessments(lang).first()
+        ProgressData(summary, calc.minutesByDay(sessions, now.toLocalDate(), 28), results.filter { it.kind == com.polyglot.academy.core.model.AssessmentKind.DIAGNOSTIC },
+            sessions.isNotEmpty() || attempts.isNotEmpty(), results.filter { it.kind == com.polyglot.academy.core.model.AssessmentKind.PROGRESS_CHECK })
     }
     ScrollScreen(s[K.PROGRESS_TITLE]) {
         Text(Labels.language(s, lang), style = MaterialTheme.typography.bodyLarge, color = PolyglotTheme.colors.textSecondary)
@@ -136,6 +138,18 @@ fun ProgressScreen() {
                     s.f(K.PROGRESS_FORECAST_DESC, sum.reviewForecast.joinToString { "${it.date} ${it.value.toInt()}" }), color = c.secondary, highlightLast = false)
             }
 
+            // Lessons do not teach to this check, so it can show what points and streaks cannot.
+            SectionHeader(s[K.WORDCHECK_TITLE])
+            PolyCard {
+                val sorted = data.wordChecks.sortedBy { it.takenAtMillis }
+                val latest = sorted.lastOrNull()
+                if (latest == null) Text(s[K.WORDCHECK_NONE], style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
+                else {
+                    Text(s.f(K.WORDCHECK_LATEST, latest.takenAtMillis.toLocalDate().toString(), latest.correctAnswers, latest.questionsAnswered), style = MaterialTheme.typography.bodyMedium)
+                    if (sorted.size > 1) Text(s.f(K.WORDCHECK_CHANGE, sorted.first().takenAtMillis.toLocalDate().toString(), sorted.first().correctAnswers, sorted.first().questionsAnswered), style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
+                }
+                SecondaryButton(s[K.WORDCHECK_START], { app.nav.push(com.polyglot.academy.ui.navigation.Route.WordCheck(lang)) }, Modifier.fillMaxWidth())
+            }
             if (data.assessments.isNotEmpty()) {
                 SectionHeader(s[K.PROGRESS_ASSESSMENTS])
                 // Taking the same test again is the app's measure of learning, as opposed to activity.

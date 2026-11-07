@@ -247,16 +247,16 @@ private fun TypedView(
 @Composable
 fun RecallInput(
     value: String, onValue: (String) -> Unit, language: LanguageCode, answer: String, others: List<String>, key: String,
-    supporting: String? = null, isError: Boolean = false,
+    supporting: String? = null, isError: Boolean = false, allowTiles: Boolean = true,
 ) {
     val s = LocalStrings.current
     // Most learners cannot type characters without a pinyin keyboard, so Mandarin opens with the tiles.
-    var showTiles by remember(key) { mutableStateOf(language == LanguageCode.MANDARIN) }
+    var showTiles by remember(key) { mutableStateOf(allowTiles && language == LanguageCode.MANDARIN) }
     AppTextField(value, onValue, s[K.TYPE_ANSWER], isError = isError, supporting = supporting,
         textStyle = com.polyglot.academy.ui.designsystem.styleFor(language, MaterialTheme.typography.bodyLarge).copy(
             localeList = com.polyglot.academy.ui.designsystem.localeFor(Languages.of(language).defaultVariant.localeTag),
             textDirection = com.polyglot.academy.ui.designsystem.textDirectionFor(language)))
-    QuietButton(s[if (showTiles) K.RECALL_HIDE_TILES else K.RECALL_SHOW_TILES], { showTiles = !showTiles })
+    if (allowTiles) QuietButton(s[if (showTiles) K.RECALL_HIDE_TILES else K.RECALL_SHOW_TILES], { showTiles = !showTiles })
     if (showTiles) {
         val wordTiles = com.polyglot.academy.core.learning.Recall.usesWordTiles(answer)
         val tiles = remember(key, answer) { com.polyglot.academy.core.learning.Recall.tiles(answer, others, key.hashCode()) }

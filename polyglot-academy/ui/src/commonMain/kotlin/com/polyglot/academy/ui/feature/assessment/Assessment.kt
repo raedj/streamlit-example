@@ -59,7 +59,8 @@ fun AssessmentScreen(language: LanguageCode?, fromOnboarding: Boolean) {
     var result by remember(lang) { mutableStateOf<AssessmentResult?>(null) }
     var questionKey by remember { mutableIntStateOf(0) }
     var choosingOther by remember { mutableStateOf(false) }
-    val history by remember(lang) { app.services.store.assessments(lang) }.collectAsState(emptyList())
+    val allResults by remember(lang) { app.services.store.assessments(lang) }.collectAsState(emptyList())
+    val history = allResults.filter { it.kind == com.polyglot.academy.core.model.AssessmentKind.DIAGNOSTIC }
     val explain = app.profile.explanationLanguage.takeIf { it != lang } ?: if (lang == LanguageCode.ENGLISH) LanguageCode.ARABIC else LanguageCode.ENGLISH
 
     fun finishIfDone(sess: DiagnosticSession) {

@@ -223,5 +223,16 @@ PROGRESS_CHANGE ¦ On {0}: {1}, {2}% right. On {3}: {4}, {5}% right. ¦ في {0}
 PROGRESS_CHANGE_UP ¦ Your estimated level went up. ¦ ارتفع مستواك المقدَّر.
 PROGRESS_CHANGE_SAME ¦ The estimate has not changed yet; small gains often stay inside the same level. ¦ لم يتغيّر التقدير بعد؛ التقدّم الصغير يبقى غالبًا داخل المستوى نفسه.
 PROGRESS_CHANGE_DOWN ¦ The estimate is lower this time. A single test varies from day to day: take it again in a few days. ¦ التقدير أقلّ هذه المرة. نتيجة الاختبار الواحد تتغيّر من يوم لآخر، فأعِده بعد أيام.
+WORDCHECK_TITLE ¦ Word check ¦ فحص الكلمات
+WORDCHECK_INTRO ¦ {0} words from across the whole list, most of them not studied yet. For each meaning, type the word within {1} seconds, with no hints. A low result is normal at first: what matters is how it changes over the weeks. ¦ {0} كلمة من أنحاء القائمة كلها، ومعظمها لم تدرسه بعد. اكتب الكلمة لكل معنى خلال {1} ثانية، دون تلميحات. والنتيجة المنخفضة طبيعية في البداية، والمهم هو تغيّرها مع الأسابيع.
+WORDCHECK_START ¦ Take the word check ¦ ابدأ فحص الكلمات
+WORDCHECK_QUESTION ¦ Word {0} of {1} ¦ الكلمة {0} من {1}
+WORDCHECK_SKIP ¦ I don't know it ¦ لا أعرفها
+WORDCHECK_RESULT ¦ You recalled {0} of {1} words. ¦ تذكّرت {0} من {1} كلمة.
+WORDCHECK_ESTIMATE ¦ That suggests about {0} words of the first 3000. This is very rough, because the sample is small, and it measures vocabulary only. ¦ يشير هذا إلى نحو {0} كلمة من أول 3000. وهو تقدير تقريبي جدًا لأن العينة صغيرة، ويقيس المفردات فقط.
+WORDCHECK_CHANGE ¦ First check, {0}: {1} of {2}. ¦ أول فحص في {0}: {1} من {2}.
+WORDCHECK_LATEST ¦ Latest check, {0}: {1} of {2}. ¦ آخر فحص في {0}: {1} من {2}.
+WORDCHECK_NONE ¦ Not taken yet. Take it now, then again after two weeks, to see the change. ¦ لم تُجرِ الفحص بعد. أجرِه الآن ثم بعد أسبوعين لترى الفرق.
+WORDCHECK_REAL ¦ A truer test: say something you have learned to a real person and see whether they understand you. ¦ والاختبار الأصدق: قل جملة تعلّمتها لشخص حقيقي، وانظر هل يفهمك.
 PROGRESS_RETEST ¦ Two weeks have passed since your last placement test. Take it again to see how far you have come. ¦ مرّ أسبوعان على آخر اختبار تحديد مستوى. أعِده لترى كم تقدّمت.
 PROGRESS_RETEST_BUTTON ¦ Take the test again ¦ أعِد الاختبار

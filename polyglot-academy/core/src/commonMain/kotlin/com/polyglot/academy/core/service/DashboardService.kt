@@ -74,7 +74,8 @@ class DashboardService(
         val sessions = progress.sessions(lang).first()
         val lessonProgress = progress.lessonProgress(lang).first()
         val mistakes = progress.mistakes(lang).first().filter { !it.resolved }
-        val assessments = progress.assessments(lang).first()
+        // The word check measures vocabulary and does not place the learner.
+        val assessments = progress.assessments(lang).first().filter { it.kind == com.polyglot.academy.core.model.AssessmentKind.DIAGNOSTIC }
         val states = reviews.states(lang).first()
         val due = reviewService.dueCount(lang)
         val startLevel = enrollment?.startingLevel ?: CefrLevel.A1

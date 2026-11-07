@@ -80,6 +80,7 @@ fun RouteContent(route: Route) {
         Route.Plan -> PlanScreen()
         Route.Progress -> ProgressScreen()
         is Route.Assessment -> AssessmentScreen(route.language, route.fromOnboarding)
+        is Route.WordCheck -> com.polyglot.academy.ui.feature.assessment.WordCheckScreen(route.language)
         is Route.TutorDetail -> TutorDetailScreen(route.tutorId)
         is Route.Conversation -> ConversationScreen(route.tutorId, route.scenarioId, route.offline)
         Route.Scenarios -> ScenariosScreen()
