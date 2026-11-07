@@ -24,7 +24,7 @@ android {
         // Tesseract's native code is about 8 MB per ABI. 32-bit x86 exists only on old emulators, so it is
         // left out; phones use the ARM ABIs and current emulators x86_64.
         ndk { abiFilters += setOf("arm64-v8a", "armeabi-v7a", "x86_64") }
-        // The trial build for the first testers: English only and a shorter setup (core AppEdition).
+        // The trial build for the first testers: English, Mandarin and Malay, and a shorter setup (core AppEdition).
         buildConfigField("boolean", "TRIAL", (providers.gradleProperty("polyglot.trial").orNull == "true").toString())
     }
     buildTypes {

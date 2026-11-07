@@ -93,19 +93,26 @@ class UiFlowTest {
         waitForText("Recommended next", substring = false).also { } // Home loads its plan & dashboard
     }
 
-    @Test fun trialOnboardingAsksOnlyFourQuestionsAndTeachesEnglish() = runDesktopComposeUiTest(800, 1700) {
-        val app = TestApp(edition = com.polyglot.academy.core.service.AppEdition.ENGLISH_TRIAL)
+    @Test fun trialOnboardingAsksFiveQuestionsAndOffersOnlyItsThreeLanguages() = runDesktopComposeUiTest(800, 1700) {
+        val app = TestApp(edition = com.polyglot.academy.core.service.AppEdition.TRIAL)
         runBlocking {
             app.store.updateSettings { it.copy(accessibility = it.accessibility.copy(reducedMotion = true)) }
             app.store.updateProfile { it.copy(interfaceLanguage = LanguageCode.ENGLISH) }
         }
         setContent { AppUnderTest(app) }
-        waitForText("Short lessons, real conversations and smart reviews for learning English.")
+        waitForText("Short lessons, real conversations and smart reviews for learning English, Mandarin or Malay.")
         onNodeWithText("Get started").performClick()
-        waitForText("Step 1 of 5")
+        waitForText("Step 1 of 6")
         onNodeWithText("Continue").performClick() // interface: English
+        waitForText("Which language do you want to learn?")
+        onNodeWithText("English").assertExists()
+        onNodeWithText("Malay").assertExists()
+        assertEquals(0, onAllNodesWithText("Spanish").fetchSemanticsNodes().size)
+        onNodeWithText("· Preview", substring = true).assertExists() // Malay's mark, before the choice is made
+        onNodeWithText("No language's content has been checked by a native speaker yet.", substring = true).assertExists()
+        onNodeWithText("Mandarin Chinese").performClick()
+        onNodeWithText("Continue").performClick()
         waitForText("Choose my level myself")
-        onNodeWithText("The English course has not been checked by a native speaker yet. If something looks wrong, report it from the lesson.").assertExists()
         onNodeWithText("Choose my level myself").performClick()
         onNodeWithText("Continue").performClick()
         waitForText("How much time per day?")
@@ -113,19 +120,22 @@ class UiFlowTest {
         waitForText("Your privacy and AI")
         onNodeWithText("Continue").performClick()
         waitForText("Your plan")
-        onNodeWithText("Step 5 of 5").assertExists()
+        onNodeWithText("Step 6 of 6").assertExists()
         onNodeWithText("Your first goal: one short lesson today. A longer estimate is under Learn.").assertExists()
         onNodeWithText("What to expect", substring = true).assertExists()
         onNodeWithText("Start learning").performClick()
         waitUntil(timeoutMillis = 10_000) { runBlocking { app.store.currentProfile().onboardingCompleted } }
         val p = runBlocking { app.store.currentProfile() }
-        assertEquals(LanguageCode.ENGLISH, p.activeLearningLanguage)
+        assertEquals(LanguageCode.MANDARIN, p.activeLearningLanguage)
         assertEquals(LanguageCode.ARABIC, p.nativeLanguage)
-        assertEquals(listOf(LanguageCode.ENGLISH), p.learningLanguages.map { it.language })
-        // Home has no language switcher when there is only one language to learn.
+        assertEquals(listOf(LanguageCode.MANDARIN), p.learningLanguages.map { it.language })
         waitForText("Recommended next", substring = false)
-        assertEquals(0, onAllNodes(androidx.compose.ui.test.hasContentDescription("Switch language")).fetchSemanticsNodes().size)
         onNode(hasText("Beginner", substring = true)).assertExists() // the level by name, not "self-selected"
+        // The switcher on Home offers the same three languages.
+        onNode(androidx.compose.ui.test.hasContentDescription("Switch language")).performClick()
+        waitForText("Malay")
+        onNodeWithText("English").assertExists()
+        assertEquals(0, onAllNodesWithText("Spanish").fetchSemanticsNodes().size)
     }
 
     @Test fun newLearnerHomeShowsGuidanceInsteadOfStatistics() = runDesktopComposeUiTest(800, 1700) {

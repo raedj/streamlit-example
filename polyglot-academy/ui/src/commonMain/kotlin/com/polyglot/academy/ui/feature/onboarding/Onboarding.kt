@@ -91,9 +91,9 @@ fun OnboardingFlow() {
     var saving by rememberSaveable { mutableStateOf(false) }
 
     val edition = app.services.edition
-    // The trial build keeps Arabic as the native language, English with its default variant, and the default
+    // The trial build keeps Arabic as the native language, each language's default variant, and the default
     // goals, style, voice and reminder choices; all of them can still be changed in Settings.
-    val trialSteps = setOf(Step.WELCOME, Step.INTERFACE, Step.LEVEL, Step.TIME, Step.PRIVACY, Step.PLAN)
+    val trialSteps = setOf(Step.WELCOME, Step.INTERFACE, Step.LEARN, Step.LEVEL, Step.TIME, Step.PRIVACY, Step.PLAN)
     val steps = Step.entries.filter {
         (it != Step.VARIANT || Languages.of(learnLang).variants.size > 1) && (!edition.shortOnboarding || it in trialSteps)
     }
@@ -192,8 +192,6 @@ fun OnboardingFlow() {
                             }
                         }
                         Text(s[K.ONB_LEVEL_NOTE], style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
-                        // Without the language step, the review note is said here instead.
-                        if (edition.shortOnboarding) Text(s[K.ONB_TRIAL_REVIEW_NOTE], style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
                     }
                     Step.GOALS -> {
                         Header(s[K.ONB_GOALS_TITLE], s[K.ONB_GOALS_BODY])
@@ -283,7 +281,7 @@ private fun Welcome() {
         HeroIllustration(HeroKind.WELCOME, s[K.ILLUSTRATION], size = 200.dp)
         Text(s[K.APP_NAME], style = MaterialTheme.typography.labelLarge, color = c.primary)
         Text(s[K.ONB_WELCOME_TITLE], style = MaterialTheme.typography.headlineMedium, textAlign = TextAlign.Center, modifier = Modifier.semantics { heading() })
-        Text(s[if (LocalApp.current.services.edition.singleLanguage) K.ONB_WELCOME_BODY_TRIAL else K.ONB_WELCOME_BODY], style = MaterialTheme.typography.bodyLarge, color = c.textSecondary, textAlign = TextAlign.Center)
+        Text(s[if (LocalApp.current.services.edition.learnableLanguages != null) K.ONB_WELCOME_BODY_TRIAL else K.ONB_WELCOME_BODY], style = MaterialTheme.typography.bodyLarge, color = c.textSecondary, textAlign = TextAlign.Center)
         Column(Modifier.fillMaxWidth(), verticalArrangement = Arrangement.spacedBy(10.dp)) {
             listOf(K.ONB_WELCOME_POINT_1, K.ONB_WELCOME_POINT_2, K.ONB_WELCOME_POINT_3).forEach { Bullet(s[it]) }
         }

@@ -4,8 +4,8 @@ import com.polyglot.academy.core.model.LanguageCode
 
 /**
  * Which parts of the app a build shows. The full app is the default; the trial build for the first testers
- * (Android with -Ppolyglot.trial=true) teaches English only and asks fewer setup questions, so testers see
- * what is being tested and nothing else (UI first-run audit, 2026-11-06).
+ * (Android with -Ppolyglot.trial=true) teaches English, Mandarin and Malay and asks fewer setup questions, so
+ * testers see what is being tested and nothing else (UI first-run audit, 2026-11-06; owner's scope, 2026-11-07).
  */
 data class AppEdition(
     /** Languages a learner can pick or add; null means every language the app has. */
@@ -20,6 +20,6 @@ data class AppEdition(
 
     companion object {
         val FULL = AppEdition()
-        val ENGLISH_TRIAL = AppEdition(learnableLanguages = setOf(LanguageCode.ENGLISH), shortOnboarding = true)
+        val TRIAL = AppEdition(learnableLanguages = setOf(LanguageCode.ENGLISH, LanguageCode.MANDARIN, LanguageCode.MALAY), shortOnboarding = true)
     }
 }

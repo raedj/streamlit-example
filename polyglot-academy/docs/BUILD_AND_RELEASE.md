@@ -55,7 +55,7 @@ Expect some first-compile issues in `androidApp` and `androidMain` (type-checked
   `127.0.0.1`, `localhost` and the emulator host `10.0.2.2`, see `network_security_config.xml`).
 
 ## Trial build
-`./gradlew -Ppolyglot.android=true -Ppolyglot.trial=true :androidApp:assembleDebug` builds the edition for the first testers (`AppEdition.ENGLISH_TRIAL`): English is the only language to learn, the language switcher and "add a language" are hidden, and onboarding asks only for the app language, level, daily time and privacy. Without the property the full app is built. A property change alone does not clear data on a device, so install trial builds on a clean profile.
+`./gradlew -Ppolyglot.android=true -Ppolyglot.trial=true :androidApp:assembleDebug` builds the edition for the first testers (`AppEdition.TRIAL`): English, Mandarin and Malay are the only languages to learn, the language switcher and "add a language" offer only those three, and onboarding asks only for the app language, the language to learn, level, daily time and privacy. Without the property the full app is built. A property change alone does not clear data on a device, so install trial builds on a clean profile.
 
 ## Install
 ```bash

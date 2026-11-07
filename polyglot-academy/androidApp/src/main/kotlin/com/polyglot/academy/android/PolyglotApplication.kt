@@ -27,7 +27,7 @@ class PolyglotApplication : Application() {
         // Copies of audio and video kept for transcription do not outlive the process that picked them.
         java.io.File(cacheDir, "media").deleteRecursively()
         val store = SqlStore(createAndroidDriver(this), Dispatchers.IO)
-        services = AppServices(store, platform, defaultHttpClient(), edition = if (BuildConfig.TRIAL) AppEdition.ENGLISH_TRIAL else AppEdition.FULL)
+        services = AppServices(store, platform, defaultHttpClient(), edition = if (BuildConfig.TRIAL) AppEdition.TRIAL else AppEdition.FULL)
         // Keep the optional, secret-free backup file in sync with the learner's choice.
         appScope.launch {
             store.settings.map { it.privacy.includeInBackup }.distinctUntilChanged().collect { enabled ->
