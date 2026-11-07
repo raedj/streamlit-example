@@ -1,0 +1,114 @@
+# Privacy and Security
+
+## What is stored on the device
+Profile, settings, progress, attempts, mistakes, review states/logs, conversations and turns,
+saved phrases, user vocabulary, imported text, notes, bookmarks, provider configuration (not
+keys) — in the app's private SQLite database. API keys: Android Keystore AES-256-GCM, ciphertext
+in a private SharedPreferences file.
+
+## What may leave the device
+Only text in categories the learner allowed, only to the provider they configured, only when
+cloud AI is on and the current consent version is accepted. The device's speech recognizer may
+process audio according to its own settings; the app reports whether recognition is on-device
+when Android exposes it.
+
+Raw microphone audio leaves the device only for two optional features, and only when cloud AI is
+on **and** the "Voice recordings" category (off by default) is allowed:
+- **Detailed pronunciation scoring**: one recording (at most 20 s) per check, sent to the
+  learner's own Azure AI Speech resource with the reference sentence. Not stored by the app.
+- **Live voice calls**: audio streams to OpenAI Realtime during the call; only the text
+  transcript is stored. Each learner sentence is also checked as text (CONVERSATION_TEXT).
+
+**Sync** (optional) uploads one file to the learner's own WebDAV server. It is encrypted on the
+device (PBKDF2-HMAC-SHA256, 210,000 iterations → AES-256-GCM, fresh salt and nonce per upload)
+with a passphrase that never leaves the device; the server sees only ciphertext. Device settings
+(privacy choices, theme, voice services) and all keys stay on each device.
+Background sync is off by default and can only be turned on once the connection is saved. When on,
+Android's job scheduler runs it about every 6 hours, only with a network (Wi-Fi or another unmetered
+network unless the learner allows mobile data) and not when the battery is low. It sends the same
+encrypted file as "Sync now", never replaces either copy when both changed, and stops when it is
+turned off or the device is disconnected.
+The optional home-screen widget shows the active language, today's minutes against the goal, the
+number of words due or the next lesson, and one word to review. It is declared for the home screen
+only (never the lock screen), and "Show a word to review on the home-screen widget" in privacy
+settings removes the word. It reads the same local data as the home screen and sends nothing.
+
+**Usage log for a trial** (Settings → Your data, off by default) counts screen openings per day on the phone (event names such as `screen:Review`, nothing else is accepted). It is never sent by the app: the tester exports a JSON file with those counts and their placement results (level, share right, date) and sends it themselves. Turning it off deletes it. Tested in `TrialReadinessTest`.
+
+**AI-written stories** send only the chosen topic, level and a few known words (LESSON_CONTENT).
+
+**On-device chat models** (llama.cpp, Qwen2.5 0.5B or 1.5B) answer tutor conversations on the phone; nothing is
+sent, so they are allowed without the cloud-AI consent. A model is downloaded only after the learner agrees in a
+dialog, from huggingface.co/Qwen over HTTPS (the request carries no learner data), checked against its SHA-256,
+stored in `noBackupFilesDir/llm/` and deletable in Settings → On-device models.
+
+**Transcription** of imported audio and video runs on the phone (whisper.cpp); the recording is never sent.
+The speech model (59.7 MB) is downloaded only when the learner agrees in a dialog, from
+huggingface.co/ggerganov/whisper.cpp over HTTPS; that request carries no learner data, and the file is
+checked against its SHA-256 before use.
+
+## Retention and deletion
+| Data | Where | Kept until |
+|---|---|---|
+| Profile, settings, progress, attempts, reviews, mistakes, conversations, notes, saved words, extracted text of imports, error reports | App's private database on the device | The learner deletes it (per kind or everything) or uninstalls the app |
+| Imported files and photos themselves | Not stored; the last three are held in memory so they can be read on request | The app process ends |
+| Photo taken for import | Camera file in `cache/camera/` | Deleted as soon as it is read; the scaled copy stays in memory until imported or the crop screen is left |
+| API keys, WebDAV password, sync passphrase, speech key | Android Keystore–encrypted store | "Delete everything", "Disconnect" (sync) or removing the key |
+| Sync file | The learner's own WebDAV server, encrypted | The learner deletes it on the server; disconnecting only removes the connection from the device |
+| Text or audio sent to an AI or speech provider | That provider | That provider's own retention policy (outside the app's control) |
+| Copy of an imported audio or video file | `cache/media/` | Deleted after transcription, and every time the app starts |
+| On-device chat models (no personal data) | `noBackupFilesDir/llm/` | The learner deletes them (Settings → On-device models) or uninstalls |
+| Speech model for transcription (no personal data) | `noBackupFilesDir/whisper/` | The learner deletes it (Settings → On-device models) or uninstalls |
+| Optional backup file (`files/backup/`, no secrets) | Device, included in Android backup | Backup is turned off (the file is deleted) |
+
+"Delete everything" removes all of the above that is on the device, every stored secret and the
+reminder, and resets the settings, which also cancels background sync (data test
+`deleteEverythingRemovesDataSecretsAndReminder`). The in-app page "How your data is handled"
+(Settings → Privacy) says the same in plain words; it is not the legal privacy policy, which the
+owner still needs to publish.
+
+## Controls
+Cloud AI master switch (off by default) + consent dialog; per-category switches (sensitive
+categories off by default); per-item consent for imported material; local-network AI switch;
+cloud fallback switch (off by default); "Voice recordings" category (off by default) for pronunciation scoring and live calls; sync connection with disconnect; backup opt-in; export (no secrets); delete
+conversations / imported material / everything (incl. keys and reminder).
+
+## Security measures
+- No secrets in source code; keys entered by the learner at runtime.
+- `SecretRedactor` strips key-like strings; error messages never include keys or user content (tested).
+- HTTPS only (network security config); cleartext allowed only for 127.0.0.1/localhost/10.0.2.2 (own local server).
+- No `followRedirects` for provider calls; timeouts on every request.
+- Reading a photo or scanned PDF with AI sends its images to the chosen vision provider only after a confirmation dialog, only when cloud AI is enabled (the global switch is checked first), and is tagged IMPORTED_MATERIAL. Files are kept in memory for this, never stored.
+- Imported PDFs are parsed on the device; their bytes are never sent anywhere, and only the extracted text is stored.
+- Arabic and Urdu photos can also be read on the device with Tesseract (bundled models, no network); this needs no
+  confirmation, sends nothing and does not mark the item as cloud-processed. The models are copied once from the APK
+  into `noBackupFilesDir`, so they are never backed up.
+- Content error reports ("Report an error in this content") are stored only on the device, inside the
+  settings, until the learner exports them as a table or deletes them; nothing is sent.
+- Build: JitPack is used only for the group `cz.adaptech.tesseract4android` (Gradle `exclusiveContent`); every other
+  dependency still resolves from Google Maven or Maven Central.
+- Backup rules include only `files/backup/` (the optional secret-free export); with an include rule nothing else is backed up or transferred, so the secrets file and the raw database never leave the device.
+- Restore (`SqlStore.importJson`) checks the format and version, runs in one transaction (a bad file changes nothing),
+  never reads or writes secrets, and always switches cloud AI off and resets the accepted consent version,
+  so a file from another device cannot silently re-enable cloud processing.
+- Permissions requested just in time (microphone, notifications); file access via the system picker (no storage permission).
+- Photos for import are taken by the system camera app, so the app declares no camera permission. The camera app writes one file into the app's cache (`cache/camera/`, shared through a FileProvider for that photo only); it is scaled to at most 2400 px, the full-size file is deleted at once, and the scaled copy stays in memory until the learner imports it or leaves the crop screen. Imported photos are stored like other imported material.
+- No analytics or crash reporting SDKs; all metrics stay local.
+- Speech-service key, WebDAV password and sync passphrase are kept in the secure store like API keys, never exported and removed by "delete everything" and "disconnect".
+- Azure region and realtime model ids are validated (letters/digits only) before they are put into a URL; WebDAV requires HTTPS (plain HTTP only to localhost, as in the network security config).
+- Sync downloads keep the device's own settings, so a synced file cannot switch on cloud AI or voice upload on another device.
+- Secret fields (API keys, passwords, the sync passphrase) are password fields for the keyboard too, so it shows no suggestions and does not learn what is typed (found on the emulator on 2026-10-31: the passphrase appeared in the suggestion bar).
+
+## Privacy tests (automated, passing)
+Cloud off by default; sensitive categories blocked; per-item consent; outdated consent blocks;
+router never uses denied providers; no silent cloud fallback; offline excludes network
+providers; no request is made when cloud is disabled (integration test); errors don't leak keys;
+redaction; export excludes conversations/notes unless chosen and never contains keys; delete-all
+removes data, keys and reminder; pronunciation scoring and live calls refuse to send audio without
+the voice category; the speech key is never exported; sync file is ciphertext only, wrong
+passphrase and tampering are rejected, device settings survive a download.
+
+## Not yet done
+Penetration testing; review of Android Keystore behaviour on devices without StrongBox;
+dependency vulnerability scan (no scanner available offline); verifying third-party speech
+service data handling per device vendor.
