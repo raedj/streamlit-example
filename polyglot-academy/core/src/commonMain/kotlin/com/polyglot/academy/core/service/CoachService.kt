@@ -40,7 +40,7 @@ class CoachService(
         val turns = conversations.learnerTurns(language).takeLast(50)
         val fluency = FluencyCalculator.report(language, conversations.learnerTurns(language), clock.nowMillis().toLocalDate())
         return CoachStats(
-            wordsInReview = reviews.states(language).first().size,
+            wordsInReview = reviews.states(language).first().count { !it.isSentenceCard },
             conversations = convs.count { c -> c.summary?.let { Regex("learner_turns=(\\d+)").find(it)?.groupValues?.get(1)?.toIntOrNull() ?: 0 }?.let { it >= 4 } == true },
             recentCorrectionsPerTurn = turns.takeIf { it.size >= 10 }?.let { t -> t.sumOf { it.corrections.count { c -> !c.isStylistic } }.toDouble() / t.size },
             missionsPassed = SpeakingProgressCalculator.levels(convs).sumOf { it.passedCount },

@@ -92,7 +92,7 @@ class DashboardService(
                 nextLessonMinutes = next?.estimatedMinutes ?: 8, interruptedLessonMinutes = interrupted?.estimatedMinutes ?: 5,
             ),
         )
-        val summary = analytics.summarize(sessions, attempts, states, reviews.reviewCount(lang), lessonProgress.values.count { it.completions > 0 },
+        val summary = analytics.summarize(sessions, attempts, states.filterNot { it.isSentenceCard }, reviews.reviewCount(lang), lessonProgress.values.count { it.completions > 0 },
             conversations.learnerTurnCount(lang), now)
         return DashboardSnapshot(
             profile, lang, enrollment?.startingLevel, enrollment?.levelFromAssessment == true, rec, next, interrupted, due, mistakes.size,

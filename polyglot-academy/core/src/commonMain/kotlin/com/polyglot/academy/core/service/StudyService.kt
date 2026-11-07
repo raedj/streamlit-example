@@ -12,6 +12,7 @@ import com.polyglot.academy.core.model.LessonProgress
 import com.polyglot.academy.core.model.Mistake
 import com.polyglot.academy.core.model.SessionKind
 import com.polyglot.academy.core.model.StudySession
+import com.polyglot.academy.core.model.isReviewable
 import com.polyglot.academy.core.repo.ProgressRepository
 import com.polyglot.academy.core.repo.ReviewRepository
 import com.polyglot.academy.core.srs.SpacedRepetitionScheduler
@@ -89,6 +90,16 @@ class StudyService(
         for (id in itemIds) if (reviews.state(id) == null) reviews.save(scheduler.newState(id, language, now), null)
     }
 
+    /** A lesson's sentence and grammar items come back from tomorrow on, straight after the lesson there is nothing to recall yet. */
+    suspend fun introduceSentences(lesson: Lesson) {
+        if (com.polyglot.academy.core.content.WordLessons.isWordLesson(lesson.id)) return
+        val due = clock.nowMillis() + com.polyglot.academy.core.util.MILLIS_PER_DAY
+        lesson.exercises.filter { it.isReviewable }.forEach { e ->
+            val id = com.polyglot.academy.core.model.ReviewState.SENTENCE_CARD_PREFIX + e.id
+            if (reviews.state(id) == null) reviews.save(scheduler.newState(id, lesson.language, due), null)
+        }
+    }
+
     /**
      * First-try scores of the exercises before [resumeIndex] in the interrupted run of [lesson], rebuilt
      * from the stored attempts, so a resumed lesson is scored on all of its exercises. Attempts from
@@ -118,6 +129,7 @@ class StudyService(
         val updated = LessonProgress(lesson.id, lesson.language, maxOf(score, existing?.bestScore ?: 0.0), (existing?.completions ?: 0) + 1, now, resumeIndex = 0)
         progress.saveLessonProgress(updated)
         introduceVocabulary(lesson.language, lesson.vocabularyIds)
+        introduceSentences(lesson)
         return achievements.evaluateAfterLesson(lesson.language, score)
     }
 

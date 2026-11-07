@@ -28,6 +28,9 @@ data class ReviewState(
     val correctReviews: Int = 0,
 ) {
     val isLeech: Boolean get() = lapses >= 6
+    /** A sentence or grammar item rather than a word, so it does not count in word totals. */
+    val isSentenceCard: Boolean get() = itemId.startsWith(SENTENCE_CARD_PREFIX)
+    companion object { const val SENTENCE_CARD_PREFIX = "sentence:" }
 }
 
 @Serializable

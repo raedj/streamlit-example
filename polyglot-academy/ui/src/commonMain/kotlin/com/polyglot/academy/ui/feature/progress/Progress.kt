@@ -65,7 +65,7 @@ fun ProgressScreen() {
         val sessions = st.sessions(lang).first()
         val attempts = st.attempts(lang).first()
         val calc = AnalyticsCalculator()
-        val summary = calc.summarize(sessions, attempts, st.states(lang).first(), st.reviewCount(lang),
+        val summary = calc.summarize(sessions, attempts, st.states(lang).first().filterNot { it.isSentenceCard }, st.reviewCount(lang),
             st.lessonProgress(lang).first().values.count { it.completions > 0 }, st.learnerTurnCount(lang), now)
         ProgressData(summary, calc.minutesByDay(sessions, now.toLocalDate(), 28), st.assessments(lang).first(), sessions.isNotEmpty() || attempts.isNotEmpty())
     }

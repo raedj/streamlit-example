@@ -27,7 +27,7 @@ class WidgetService(
     suspend fun summary(): WidgetSummary {
         val d = dashboard.snapshot()
         val word = if (settings.currentSettings().privacy.widgetShowsWord && d.dueReviews > 0) {
-            reviews.dueQueue(d.language, limit = 1).firstOrNull()?.let { card ->
+            reviews.dueQueue(d.language).firstOrNull { it.exercise == null }?.let { card ->
                 val showReading = d.profile.enrollment(d.language)?.showTransliteration != false
                 WidgetWord(card.front, card.pronunciation?.takeIf { showReading }, card.back)
             }

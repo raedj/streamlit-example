@@ -100,6 +100,15 @@ REVIEW_TITLE ¦ Review ¦ المراجعة
 REVIEW_DUE_COUNT ¦ {0} card to review|{0} cards to review ¦ لا بطاقات للمراجعة|بطاقة واحدة للمراجعة|بطاقتان للمراجعة|{0} بطاقات للمراجعة|{0} بطاقة للمراجعة|{0} بطاقة للمراجعة
 REVIEW_EMPTY_TITLE ¦ All caught up ¦ لا شيء متأخر
 REVIEW_EMPTY_BODY ¦ Nothing is due. Words from your lessons will come back here just before you're likely to forget them. ¦ لا شيء مستحق الآن. ستعود كلمات دروسك إلى هنا قبيل الوقت الذي يُحتمل أن تنساها فيه.
+REVIEW_RECALL_PROMPT ¦ How do you say this? ¦ كيف تقول هذا؟
+REVIEW_DONT_KNOW ¦ I don't remember ¦ لا أتذكّرها
+REVIEW_HERE_IT_IS ¦ Here it is ¦ هذه هي الإجابة
+REVIEW_I_WAS_RIGHT ¦ My answer was right ¦ كانت إجابتي صحيحة
+RECALL_SHOW_TILES ¦ Build it by tapping ¦ ابنِ الإجابة بالنقر
+RECALL_HIDE_TILES ¦ Hide the tiles ¦ إخفاء المربعات
+RECALL_SPACE ¦ Space ¦ مسافة
+RECALL_DELETE ¦ Delete ¦ حذف
+FEEDBACK_KEYBOARD ¦ Your keyboard seems to be in another language. Switch it and try again. ¦ يبدو أن لوحة المفاتيح بلغة أخرى. غيّرها ثم حاول مجددًا.
 REVIEW_SHOW ¦ Show answer ¦ إظهار الإجابة
 REVIEW_RATE ¦ How well did you remember? ¦ إلى أي حد تذكّرتها؟
 RATING_AGAIN ¦ Again ¦ مجددًا

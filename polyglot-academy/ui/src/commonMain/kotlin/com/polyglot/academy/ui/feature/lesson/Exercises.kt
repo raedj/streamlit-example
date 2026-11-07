@@ -216,11 +216,13 @@ private fun TypedView(
     var text by remember(prompt) { mutableStateOf("") }
     var hints by remember(prompt) { mutableIntStateOf(0) }
     var empty by remember(prompt) { mutableStateOf(false) }
+    var wrongKeyboard by remember(prompt) { mutableStateOf(false) }
     if (sentenceInTarget) LearningText(prompt.replace("___", "_____"), ctx.language, style = PolyglotTheme.learning.sentence)
     else Text(prompt, style = MaterialTheme.typography.headlineSmall)
     AppTextField(text, { text = it; empty = false }, s[K.TYPE_ANSWER], isError = empty, supporting = if (empty) s[K.FEEDBACK_EMPTY] else null,
         textStyle = com.polyglot.academy.ui.designsystem.styleFor(ctx.language, MaterialTheme.typography.bodyLarge).copy(localeList = com.polyglot.academy.ui.designsystem.localeFor(Languages.of(ctx.language).defaultVariant.localeTag),
             textDirection = com.polyglot.academy.ui.designsystem.textDirectionFor(ctx.language)))
+    if (wrongKeyboard) Banner(BannerKind.WARNING, s[K.FEEDBACK_KEYBOARD])
     if (ctx.hintsAvailable && !answered) {
         if (hints == 0) QuietButton(s[K.HINT_SHOW], { hints = 1 })
         else Banner(BannerKind.INFO, hint?.let(ctx::gloss) ?: s.f(K.HINT_FIRST_LETTERS, accepted.first().take(maxOf(1, accepted.first().length / 3))))
@@ -228,14 +230,44 @@ private fun TypedView(
     if (!answered) ExerciseActions { PrimaryButton(s[K.CHECK], {
         val check = AnswerChecker.check(text, accepted)
         if (check.verdict == AnswerVerdict.EMPTY) { empty = true; return@PrimaryButton }
+        wrongKeyboard = check.verdict == AnswerVerdict.WRONG_KEYBOARD
+        if (wrongKeyboard) return@PrimaryButton
         onAnswer(Answer(ExerciseOutcome(check.isCorrect, check.score, check.closestAccepted, check), text, hints, prompt))
     }, Modifier.fillMaxWidth()) }
+}
+
+/** A typed answer with an optional row of tiles, so those who cannot type this script yet can still produce it. */
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+fun RecallInput(
+    value: String, onValue: (String) -> Unit, language: LanguageCode, answer: String, others: List<String>, key: String,
+    supporting: String? = null, isError: Boolean = false,
+) {
+    val s = LocalStrings.current
+    // Most learners cannot type characters without a pinyin keyboard, so Mandarin opens with the tiles.
+    var showTiles by remember(key) { mutableStateOf(language == LanguageCode.MANDARIN) }
+    AppTextField(value, onValue, s[K.TYPE_ANSWER], isError = isError, supporting = supporting,
+        textStyle = com.polyglot.academy.ui.designsystem.styleFor(language, MaterialTheme.typography.bodyLarge).copy(
+            localeList = com.polyglot.academy.ui.designsystem.localeFor(Languages.of(language).defaultVariant.localeTag),
+            textDirection = com.polyglot.academy.ui.designsystem.textDirectionFor(language)))
+    QuietButton(s[if (showTiles) K.RECALL_HIDE_TILES else K.RECALL_SHOW_TILES], { showTiles = !showTiles })
+    if (showTiles) {
+        val wordTiles = com.polyglot.academy.core.learning.Recall.usesWordTiles(answer)
+        val tiles = remember(key, answer) { com.polyglot.academy.core.learning.Recall.tiles(answer, others, key.hashCode()) }
+        androidx.compose.foundation.layout.FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+            tiles.forEach { tile ->
+                SecondaryButton(if (tile == " ") s[K.RECALL_SPACE] else tile, { onValue(if (wordTiles && value.isNotBlank()) "${value.trimEnd()} $tile" else value + tile) })
+            }
+            QuietButton(s[K.RECALL_DELETE], { onValue(if (wordTiles) value.trimEnd().substringBeforeLast(' ', "") else value.dropLast(1)) })
+        }
+    }
 }
 
 @Composable
 private fun DictationView(e: Exercise.Dictation, ctx: ExerciseContext, answered: Boolean, onAnswer: (Answer) -> Unit) {
     val s = LocalStrings.current
     var text by remember(e.id) { mutableStateOf("") }
+    var wrongKeyboard by remember(e.id) { mutableStateOf(false) }
     LaunchedEffect(e.id) { ctx.speaker.play(e.audioText, ctx.language) }
     Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
         AudioButton(s[K.PLAY_AUDIO], { ctx.speaker.toggle(e.audioText, ctx.language) }, playing = ctx.speaker.playingText == e.audioText)
@@ -245,9 +277,12 @@ private fun DictationView(e: Exercise.Dictation, ctx: ExerciseContext, answered:
         textStyle = com.polyglot.academy.ui.designsystem.styleFor(ctx.language, MaterialTheme.typography.bodyLarge).copy(
             localeList = com.polyglot.academy.ui.designsystem.localeFor(Languages.of(ctx.language).defaultVariant.localeTag),
             textDirection = com.polyglot.academy.ui.designsystem.textDirectionFor(ctx.language)))
+    if (wrongKeyboard) Banner(BannerKind.WARNING, s[K.FEEDBACK_KEYBOARD])
     if (!answered) ExerciseActions { PrimaryButton(s[K.CHECK], {
         val check = AnswerChecker.check(text, e.acceptedAnswers)
         if (check.verdict == AnswerVerdict.EMPTY) return@PrimaryButton
+        wrongKeyboard = check.verdict == AnswerVerdict.WRONG_KEYBOARD
+        if (wrongKeyboard) return@PrimaryButton
         onAnswer(Answer(ExerciseOutcome(check.isCorrect, maxOf(check.score, TextNormalizer.similarity(text, e.audioText) * 0.8), e.audioText, check), text, 0, e.audioText))
     }, Modifier.fillMaxWidth()) }
 }

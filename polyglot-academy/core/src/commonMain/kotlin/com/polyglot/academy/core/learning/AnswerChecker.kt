@@ -11,6 +11,8 @@ enum class AnswerVerdict {
     ALMOST,
     INCORRECT,
     EMPTY,
+    /** Typed in another script, so probably the wrong keyboard. Not an answer: the learner is asked to switch. */
+    WRONG_KEYBOARD,
 }
 
 data class AnswerCheck(
@@ -30,6 +32,7 @@ object AnswerChecker {
         require(accepted.isNotEmpty()) { "accepted answers must not be empty" }
         val basicUser = TextNormalizer.basic(userAnswer)
         if (basicUser.isEmpty()) return AnswerCheck(AnswerVerdict.EMPTY, 0.0, accepted.first(), null)
+        if (isWrongKeyboard(basicUser, accepted)) return AnswerCheck(AnswerVerdict.WRONG_KEYBOARD, 0.0, accepted.first(), null)
         accepted.firstOrNull { TextNormalizer.basic(it) == basicUser }?.let {
             return AnswerCheck(AnswerVerdict.CORRECT, 1.0, it, null)
         }
@@ -39,12 +42,20 @@ object AnswerChecker {
         }
         val best = accepted.maxBy { TextNormalizer.similarity(userAnswer, it) }
         val sim = TextNormalizer.similarity(userAnswer, best)
-        return if (sim >= ALMOST_THRESHOLD) {
+        // One slip of the finger in a word of four letters or more is a typo, however short the word.
+        val oneSlip = TextNormalizer.levenshtein(looseUser, TextNormalizer.loose(best)) == 1 && looseUser.length >= 4
+        return if (sim >= ALMOST_THRESHOLD || oneSlip) {
             AnswerCheck(AnswerVerdict.ALMOST, sim * 0.6, best, ErrorSeverity.MINOR)
         } else {
             AnswerCheck(AnswerVerdict.INCORRECT, 0.0, best, ErrorSeverity.MODERATE)
         }
     }
+
+    private fun hasArabic(text: String) = text.any { it in '\u0600'..'\u06FF' }
+    private fun hasLatin(text: String) = text.any { it in 'a'..'z' || it in 'A'..'Z' }
+
+    private fun isWrongKeyboard(answer: String, accepted: List<String>): Boolean =
+        (hasArabic(answer) && accepted.none(::hasArabic)) || (hasLatin(answer) && !hasArabic(answer) && accepted.all(::hasArabic))
 
     /** Word-level diff marking which expected words were missed, for dictation feedback. */
     fun missingWords(userAnswer: String, expected: String): List<String> {

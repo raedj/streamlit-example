@@ -1,6 +1,7 @@
 package com.polyglot.academy.core.service
 
 import com.polyglot.academy.core.content.Curriculum
+import com.polyglot.academy.core.learning.Recall
 import com.polyglot.academy.core.model.Gloss
 import com.polyglot.academy.core.model.LanguageCode
 import com.polyglot.academy.core.model.RecallRating
@@ -17,8 +18,16 @@ import com.polyglot.academy.core.wordlist.WordEntry
 import com.polyglot.academy.core.wordlist.WordLists
 import kotlinx.coroutines.flow.first
 
-/** A reviewable card: built-in or user vocabulary, a saved phrase, or a word from the frequency word lists. */
-data class ReviewCard(val state: ReviewState, val front: String, val back: Gloss, val pronunciation: String?, val example: String?, val vocabulary: VocabularyItem?)
+/**
+ * A reviewable card: built-in or user vocabulary, a saved phrase, a word from the frequency word lists, or a
+ * sentence or grammar item. Words are recalled from [recallAnswers] and items are answered as [exercise], so
+ * the app checks both; only a learner's own saved phrases are still rated by the learner.
+ */
+data class ReviewCard(
+    val state: ReviewState, val front: String, val back: Gloss, val pronunciation: String?, val example: String?, val vocabulary: VocabularyItem?,
+    val exercise: com.polyglot.academy.core.model.Exercise? = null,
+    val recallAnswers: List<String> = emptyList(),
+)
 
 class ReviewService(
     private val reviews: ReviewRepository,
@@ -39,11 +48,12 @@ class ReviewService(
         val items = resolve(language)
         val phrases = vocabulary.savedPhrases(language).first().associateBy { it.id }
         val states = reviews.states(language).first().filter { scheduler.isDue(it, now) }
-        val wordList = if (states.any { it.itemId !in items && it.itemId !in phrases }) WordLists.load(language).byId else emptyMap()
+        val wordList = if (states.any { it.itemId !in items && it.itemId !in phrases && !it.isSentenceCard }) WordLists.load(language).byId else emptyMap()
+        val sentences = if (states.any { it.isSentenceCard }) Curriculum.of(language).lessons.flatMap { it.exercises }.associateBy { it.id } else emptyMap()
         val learning = states.filter { it.phase == ReviewPhase.LEARNING || it.phase == ReviewPhase.RELEARNING }.sortedBy { it.dueAtMillis }
         val due = states.filter { it.phase == ReviewPhase.REVIEW }.sortedBy { it.dueAtMillis }
         val fresh = states.filter { it.phase == ReviewPhase.NEW }.take(newLimit)
-        return (learning + due + fresh).mapNotNull { s -> card(s, items, phrases, wordList) }.take(limit)
+        return (learning + due + fresh).mapNotNull { s -> card(s, items, phrases, wordList, sentences) }.take(limit)
     }
 
     suspend fun dueCount(language: LanguageCode): Int {
@@ -51,10 +61,14 @@ class ReviewService(
         return reviews.states(language).first().count { scheduler.isDue(it, now) }
     }
 
-    private fun card(s: ReviewState, items: Map<String, VocabularyItem>, phrases: Map<String, SavedPhrase>, wordList: Map<String, WordEntry>): ReviewCard? {
-        items[s.itemId]?.let { v -> return ReviewCard(s, v.term, v.meaning, v.pronunciation ?: v.transliteration, v.example, v) }
+    private fun card(
+        s: ReviewState, items: Map<String, VocabularyItem>, phrases: Map<String, SavedPhrase>, wordList: Map<String, WordEntry>,
+        sentences: Map<String, com.polyglot.academy.core.model.Exercise>,
+    ): ReviewCard? {
+        if (s.isSentenceCard) return sentences[s.itemId.removePrefix(ReviewState.SENTENCE_CARD_PREFIX)]?.let { e -> ReviewCard(s, "", Gloss("", ""), null, null, null, exercise = e) }
+        items[s.itemId]?.let { v -> return ReviewCard(s, v.term, v.meaning, v.pronunciation ?: v.transliteration, v.example, v, recallAnswers = Recall.acceptedAnswers(v)) }
         phrases[s.itemId]?.let { p -> return ReviewCard(s, p.text, Gloss(p.meaning, p.meaning), null, p.note, null) }
-        wordList[s.itemId]?.toVocabularyItem()?.let { v -> return ReviewCard(s, v.term, v.meaning, v.pronunciation ?: v.transliteration, v.example, v) }
+        wordList[s.itemId]?.toVocabularyItem()?.let { v -> return ReviewCard(s, v.term, v.meaning, v.pronunciation ?: v.transliteration, v.example, v, recallAnswers = Recall.acceptedAnswers(v)) }
         return null
     }
 

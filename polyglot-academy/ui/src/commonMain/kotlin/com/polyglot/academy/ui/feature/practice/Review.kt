@@ -140,6 +140,90 @@ fun ReviewScreen() {
     }
 }
 
+/** A word recalled from its meaning. The app checks the answer, so the schedule rests on what the learner produced. */
+@Composable
+private fun WordRecall(card: ReviewCard, lang: LanguageCode, others: List<String>, speaker: com.polyglot.academy.ui.app.Speaker, onDone: (RecallRating) -> Unit) {
+    val app = LocalApp.current
+    val s = LocalStrings.current
+    val c = PolyglotTheme.colors
+    val scope = rememberCoroutineScope()
+    val enrollment = app.profile.enrollment(lang)
+    var text by remember { mutableStateOf("") }
+    var check by remember { mutableStateOf<com.polyglot.academy.core.learning.AnswerCheck?>(null) }
+    var gaveUp by remember { mutableStateOf(false) }
+    var problem by remember { mutableStateOf<K?>(null) }
+    PolyCard {
+        Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(10.dp)) {
+            Text(s[K.REVIEW_RECALL_PROMPT], style = MaterialTheme.typography.labelLarge, color = c.textSecondary)
+            // The same language lessons explain words in, which can differ from the interface language.
+            Text(card.back.forLanguage(explainFor(lang, app.profile.explanationLanguage)), style = MaterialTheme.typography.headlineSmall, textAlign = TextAlign.Center)
+        }
+    }
+    val result = check
+    if (result == null && !gaveUp) {
+        com.polyglot.academy.ui.feature.lesson.RecallInput(text, { text = it; problem = null }, lang, card.front, others, card.state.itemId,
+            supporting = problem?.let { s[it] }, isError = problem != null)
+        PrimaryButton(s[K.CHECK], {
+            val r = com.polyglot.academy.core.learning.AnswerChecker.check(text, card.recallAnswers)
+            when (r.verdict) {
+                com.polyglot.academy.core.learning.AnswerVerdict.EMPTY -> problem = K.FEEDBACK_EMPTY
+                com.polyglot.academy.core.learning.AnswerVerdict.WRONG_KEYBOARD -> problem = K.FEEDBACK_KEYBOARD
+                else -> check = r
+            }
+        }, Modifier.fillMaxWidth())
+        SecondaryButton(s[K.REVIEW_DONT_KNOW], { gaveUp = true }, Modifier.fillMaxWidth())
+        return
+    }
+    val correct = result?.isCorrect == true
+    val title = when {
+        result == null -> s[K.REVIEW_HERE_IT_IS]
+        correct -> s[K.FEEDBACK_CORRECT]
+        result.verdict == com.polyglot.academy.core.learning.AnswerVerdict.ALMOST -> s[K.FEEDBACK_ALMOST]
+        else -> s[K.FEEDBACK_INCORRECT]
+    }
+    com.polyglot.academy.ui.designsystem.FeedbackPanel(correct, title, null)
+    PolyCard {
+        Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(10.dp)) {
+            val front = if (enrollment?.useTraditionalCharacters == true) card.vocabulary?.traditional ?: card.front else card.front
+            LearningText(front, lang, reading = if (enrollment?.showTransliteration != false) card.pronunciation else null, textAlign = TextAlign.Center,
+                style = if (lang == LanguageCode.MANDARIN) PolyglotTheme.learning.hanzi else PolyglotTheme.learning.term)
+            AudioButton(s[K.PLAY_AUDIO], { speaker.toggle(card.front, lang) }, playing = speaker.playingText == card.front)
+            card.example?.let { LearningText(it, lang, style = MaterialTheme.typography.bodyLarge, textAlign = TextAlign.Center) }
+        }
+    }
+    PrimaryButton(s[K.CONTINUE], { onDone(result?.let(com.polyglot.academy.core.learning.Recall::rating) ?: RecallRating.AGAIN) }, Modifier.fillMaxWidth())
+    // The checker can wrongly reject a valid answer, and no one else can catch it: the learner can overrule it, and the report keeps a count.
+    if (result != null && !correct) QuietButton(s[K.REVIEW_I_WAS_RIGHT], {
+        scope.launch {
+            app.services.contentReports.report(lang, card.state.itemId, "${card.front} ← $text", com.polyglot.academy.core.model.ContentIssue.AMBIGUOUS_ANSWER, "Answer marked wrong; learner says it was right")
+            onDone(RecallRating.GOOD)
+        }
+    })
+    com.polyglot.academy.ui.feature.common.ReportContentButton(lang, card.state.itemId, "${card.front} — ${s.gloss(card.back)}")
+}
+
+/** A grammar or sentence item from an earlier lesson, answered again and checked the same way. */
+@Composable
+private fun SentenceReview(card: ReviewCard, exercise: com.polyglot.academy.core.model.Exercise, lang: LanguageCode, speaker: com.polyglot.academy.ui.app.Speaker, onDone: (RecallRating) -> Unit) {
+    val app = LocalApp.current
+    val s = LocalStrings.current
+    var last by remember { mutableStateOf<com.polyglot.academy.ui.feature.lesson.Answer?>(null) }
+    val ctx = com.polyglot.academy.ui.feature.lesson.ExerciseContext(lang, explainFor(lang, app.profile.explanationLanguage), speaker, false,
+        app.profile.enrollment(lang)?.showTransliteration != false, app.profile.enrollment(lang)?.useTraditionalCharacters == true)
+    com.polyglot.academy.ui.feature.lesson.ExerciseView(exercise, ctx, last != null) { last = it }
+    last?.let { a ->
+        val outcome = a.outcome
+        com.polyglot.academy.ui.designsystem.FeedbackPanel(outcome.correct, s[if (outcome.correct) K.FEEDBACK_CORRECT else K.FEEDBACK_INCORRECT],
+            outcome.expected.takeIf { it.isNotBlank() && !outcome.correct }?.let { s.f(K.FEEDBACK_ANSWER_WAS, it) }) {
+            exercise.explanation?.let { com.polyglot.academy.ui.feature.lesson.ExplanationRow(it.forLanguage(ctx.explain)) }
+        }
+        PrimaryButton(s[K.CONTINUE], {
+            onDone(outcome.note?.let(com.polyglot.academy.core.learning.Recall::rating) ?: if (outcome.correct) RecallRating.GOOD else RecallRating.AGAIN)
+        }, Modifier.fillMaxWidth())
+        com.polyglot.academy.ui.feature.common.ReportContentButton(lang, exercise.id, a.promptText.ifBlank { exercise.id })
+    }
+}
+
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
 private fun ReviewSession(queue: List<ReviewCard>, lang: LanguageCode) {
@@ -152,6 +236,7 @@ private fun ReviewSession(queue: List<ReviewCard>, lang: LanguageCode) {
     var position by remember(queue) { mutableIntStateOf(0) }
     var revealed by remember(queue) { mutableStateOf(false) }
     var reviewed by remember(queue) { mutableIntStateOf(0) }
+    var remembered by remember(queue) { mutableIntStateOf(0) }
     var session by remember { mutableStateOf<StudySession?>(null) }
     var shownAt by remember { mutableStateOf(app.services.clock.nowMillis()) }
     val enrollment = app.profile.enrollment(lang)
@@ -169,7 +254,26 @@ private fun ReviewSession(queue: List<ReviewCard>, lang: LanguageCode) {
     }
     val card = cards[position]
     Text(s.plural(K.REVIEW_DUE_COUNT, cards.size - position), style = MaterialTheme.typography.labelLarge, color = c.textSecondary)
-    PolyCard(Modifier.heightIn(min = 240.dp)) {
+    if (card.state.isLeech) Banner(BannerKind.INFO, s[K.REVIEW_LEECH])
+    fun finish(r: RecallRating) {
+        scope.launch {
+            if (session == null) session = app.services.study.startSession(lang, SessionKind.REVIEW, null)
+            val (newState, _) = app.services.reviews.rate(card, r, app.services.clock.nowMillis() - shownAt)
+            reviewed++
+            if (r != RecallRating.AGAIN) remembered++
+            // Cards still in short learning steps come back later in the same session.
+            if (r == RecallRating.AGAIN) cards = cards + card.copy(state = newState)
+            session?.let { session = app.services.study.updateSession(it, reviewed, remembered, position + 1 >= cards.size, reviewed * 12) }
+            position++; revealed = false; shownAt = app.services.clock.nowMillis()
+        }
+    }
+    val exercise = card.exercise
+    if (exercise != null) androidx.compose.runtime.key(position) { SentenceReview(card, exercise, lang, speaker, ::finish) }
+    else if (card.recallAnswers.isNotEmpty()) {
+        val others = remember(cards) { cards.map { it.front }.filter { it.isNotBlank() } }
+        androidx.compose.runtime.key(position) { WordRecall(card, lang, others, speaker, ::finish) }
+    }
+    else { PolyCard(Modifier.heightIn(min = 240.dp)) {
         Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(10.dp)) {
             val front = if (enrollment?.useTraditionalCharacters == true) card.vocabulary?.traditional ?: card.front else card.front
             LearningText(front, lang, reading = if (revealed && enrollment?.showTransliteration != false) card.pronunciation else null, textAlign = TextAlign.Center,
@@ -182,7 +286,6 @@ private fun ReviewSession(queue: List<ReviewCard>, lang: LanguageCode) {
         }
     }
     if (revealed) com.polyglot.academy.ui.feature.common.ReportContentButton(lang, card.state.itemId, "${card.front} — ${s.gloss(card.back)}")
-    if (card.state.isLeech) Banner(BannerKind.INFO, s[K.REVIEW_LEECH])
     if (!revealed) PrimaryButton(s[K.REVIEW_SHOW], { revealed = true }, Modifier.fillMaxWidth())
     else {
         Text(s[K.REVIEW_RATE], style = MaterialTheme.typography.titleSmall)
@@ -193,17 +296,7 @@ private fun ReviewSession(queue: List<ReviewCard>, lang: LanguageCode) {
                 val interval = Labels.duration(s, preview.getValue(r))
                 val color = when (r) { RecallRating.AGAIN -> c.error; RecallRating.HARD -> c.warning; RecallRating.GOOD -> c.primary; RecallRating.EASY -> c.success }
                 Button(
-                    onClick = {
-                        scope.launch {
-                            if (session == null) session = app.services.study.startSession(lang, SessionKind.REVIEW, null)
-                            val (newState, _) = app.services.reviews.rate(card, r, app.services.clock.nowMillis() - shownAt)
-                            reviewed++
-                            // Cards still in short learning steps come back later in the same session.
-                            if (r == RecallRating.AGAIN) cards = cards + card.copy(state = newState)
-                            session?.let { session = app.services.study.updateSession(it, reviewed, reviewed, position + 1 >= cards.size, reviewed * 12) }
-                            position++; revealed = false; shownAt = app.services.clock.nowMillis()
-                        }
-                    },
+                    onClick = { finish(r) },
                     modifier = Modifier.weight(1f).heightIn(min = 64.dp).semantics { contentDescription = s.f(K.RATING_DESC, label, interval) },
                     colors = ButtonDefaults.buttonColors(containerColor = color.copy(alpha = 0.15f), contentColor = c.textPrimary),
                 ) {
@@ -214,7 +307,7 @@ private fun ReviewSession(queue: List<ReviewCard>, lang: LanguageCode) {
                 }
             }
         }
-    }
+    } }
     // The learner decides: an item can wait a day or a week, or leave the reviews altogether.
     var confirmRemove by remember(card) { mutableStateOf(false) }
     fun skip() { position++; revealed = false; shownAt = app.services.clock.nowMillis() }

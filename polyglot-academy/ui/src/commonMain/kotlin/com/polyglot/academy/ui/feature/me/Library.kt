@@ -90,7 +90,8 @@ fun VocabularyScreen() {
     var query by rememberSaveable { mutableStateOf("") }
     var dueOnly by rememberSaveable { mutableStateOf(false) }
     var adding by remember { mutableStateOf(false) }
-    val states by remember(lang) { app.services.store.states(lang) }.collectAsState(emptyList())
+    val allStates by remember(lang) { app.services.store.states(lang) }.collectAsState(emptyList())
+    val states = remember(allStates) { allStates.filterNot { it.isSentenceCard } }
     val userVocab by remember(lang) { app.services.store.userVocabulary(lang) }.collectAsState(emptyList())
     val phrases by remember(lang) { app.services.store.savedPhrases(lang) }.collectAsState(emptyList())
     val wordList by androidx.compose.runtime.produceState(emptyMap<String, com.polyglot.academy.core.wordlist.WordEntry>(), lang) {

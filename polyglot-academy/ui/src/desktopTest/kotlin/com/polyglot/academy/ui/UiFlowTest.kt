@@ -199,6 +199,32 @@ class UiFlowTest {
 
     @Test fun tabLabelsFitAtDoubleTextInArabic() = tabLabelsFitAtDoubleText(LanguageCode.ARABIC, listOf("الرئيسية", "تعلّم", "تدرّب", "المعلّمون", "حسابي"))
 
+    @Test fun reviewAsksForTheWordAndChecksTheAnswer() = runDesktopComposeUiTest(800, 1700) {
+        val app = TestApp(); app.profile()
+        runBlocking { app.services.study.introduceVocabulary(LanguageCode.ENGLISH, listOf("en_hello")) }
+        setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.PRACTICE), Route.Review)) }
+        waitForText("How do you say this?")
+        onNodeWithText("مرحبًا").assertExists()
+        assertTrue(onAllNodesWithText("hello").fetchSemanticsNodes().isEmpty(), "the word stays hidden until answered")
+        onNode(hasSetTextAction()).performTextInput("helo")
+        onNodeWithText("Check").performClick()
+        waitForText("Almost there")
+        onNodeWithText("Continue").performClick()
+        waitUntil(timeoutMillis = 5_000) { runBlocking { app.store.states(LanguageCode.ENGLISH).first().single().totalReviews == 1 } }
+    }
+
+    @Test fun anotherKeyboardIsToldToSwitchAndNotMarkedWrong() = runDesktopComposeUiTest(800, 1700) {
+        val app = TestApp(); app.profile()
+        runBlocking { app.services.study.introduceVocabulary(LanguageCode.ENGLISH, listOf("en_hello")) }
+        setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.PRACTICE), Route.Review)) }
+        waitForText("How do you say this?")
+        onNode(hasSetTextAction()).performTextInput("مرحبا")
+        onNodeWithText("Check").performClick()
+        waitForText("Your keyboard seems to be in another language", substring = true)
+        assertTrue(onAllNodesWithText("Not quite").fetchSemanticsNodes().isEmpty())
+        assertEquals(0, runBlocking { app.store.states(LanguageCode.ENGLISH).first().single().totalReviews })
+    }
+
     @Test fun aNewWordIsShownAndEarnsNoScore() = runDesktopComposeUiTest(800, 1700) {
         val app = TestApp(); app.profile()
         setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.HOME), Route.LessonPlayer("en_l_greetings", restart = true))) }

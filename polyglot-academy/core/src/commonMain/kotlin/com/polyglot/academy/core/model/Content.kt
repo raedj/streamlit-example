@@ -297,6 +297,20 @@ data class LearningTrack(
 )
 
 /**
+ * True for a sentence or grammar item worth bringing back in reviews, so it is not left to fade after its
+ * lesson. Words are scheduled separately, and only answers the app can check qualify.
+ */
+val Exercise.isReviewable: Boolean get() = when (this) {
+    is Exercise.FillInBlank, is Exercise.SentenceOrder, is Exercise.Dictation -> true
+    is Exercise.Translate -> WORD_RECALL_MARK !in id
+    is Exercise.MultipleChoice -> "_x_" in id
+    else -> false
+}
+
+/** In the id of a generated exercise that recalls a single word, which is already reviewed as a word. */
+const val WORD_RECALL_MARK = "_recall_"
+
+/**
  * True when the exercise can only be answered by listening: dictation, and multiple choice with audio
  * (its written prompt is hidden). Without a text-to-speech voice such exercises are skipped, not graded.
  */

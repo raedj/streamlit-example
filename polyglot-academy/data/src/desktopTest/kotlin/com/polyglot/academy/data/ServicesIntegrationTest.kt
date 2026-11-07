@@ -223,13 +223,25 @@ class ServicesIntegrationTest {
         app.study.updateSession(session, 10, 9, true, 300)
         assertTrue("first_lesson" in unlocked)
         assertTrue(store.lessonProgress(LanguageCode.ENGLISH).first().getValue(lesson.id).passed)
-        assertEquals(lesson.vocabularyIds.size, store.states(LanguageCode.ENGLISH).first().size)
+        assertEquals(lesson.vocabularyIds.size, store.states(LanguageCode.ENGLISH).first().count { !it.isSentenceCard })
         assertEquals(1, store.mistakes(LanguageCode.ENGLISH).first().size)
         val snap = app.dashboard.snapshot()
         assertTrue(!snap.isNewLearner)
         assertEquals(5, snap.minutesToday)
         assertEquals("en_l_introductions", snap.nextLesson?.id)
         assertEquals(lesson.vocabularyIds.size, snap.dueReviews)
+    }
+
+    @Test fun aLessonsSentencesComeBackTheNextDay() = runBlocking<Unit> {
+        enroll()
+        val lesson = Curriculum.of(LanguageCode.ENGLISH).lessonsById.getValue("en_l_greetings")
+        app.study.completeLesson(lesson, 0.9)
+        assertTrue(app.reviews.dueQueue(LanguageCode.ENGLISH, limit = 100, newLimit = 100).none { it.exercise != null }, "not on the same day")
+        clock.advanceDays(1.1)
+        val due = app.reviews.dueQueue(LanguageCode.ENGLISH, limit = 100, newLimit = 100)
+        assertTrue(due.any { it.exercise is Exercise.FillInBlank })
+        assertTrue(due.any { it.recallAnswers.isNotEmpty() }, "words are recalled too")
+        assertEquals(lesson.vocabularyIds.size, app.dashboard.snapshot().summary.estimatedRetention.total, "sentences do not count as words")
     }
 
     @Test fun widgetShowsRealProgressAndHidesTheWordWhenAsked() = runBlocking<Unit> {
