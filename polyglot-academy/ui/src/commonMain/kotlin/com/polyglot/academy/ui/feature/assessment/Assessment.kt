@@ -106,7 +106,10 @@ fun AssessmentScreen(language: LanguageCode?, fromOnboarding: Boolean) {
                 }
             }
             sess != null && !sess.isFinished -> {
-                val item = sess.current!!
+                // Read here, not only inside key() below: the session is not observable state, so the question and its
+                // number are read again only when this scope recomposes. Before, the screen kept showing question 1
+                // while the answers were scored against the questions after it (found on the emulator, 2026-11-07).
+                val item = remember(questionKey) { sess.current!! }
                 Text(s.f(K.ASSESS_QUESTION, sess.answeredCount + 1, sess.maxQuestions), style = MaterialTheme.typography.labelLarge, color = c.textSecondary)
                 LinearProgressIndicator(progress = { sess.answeredCount.toFloat() / sess.maxQuestions }, modifier = Modifier.fillMaxWidth(), color = c.primary, trackColor = c.progressTrack, drawStopIndicator = {})
                 val ctx = ExerciseContext(lang, explain, speaker, false, true, false)

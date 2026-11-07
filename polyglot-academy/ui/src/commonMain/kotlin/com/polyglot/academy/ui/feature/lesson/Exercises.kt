@@ -186,10 +186,15 @@ private fun MultipleChoiceView(e: Exercise.MultipleChoice, ctx: ExerciseContext,
         }
     } else if (e.promptGloss != null) {
         Text(ctx.gloss(e.promptGloss!!), style = MaterialTheme.typography.headlineSmall)
+        // A sentence with a blank is the question itself; the gloss is only its instruction.
+        if ("___" in e.prompt) LearningText(e.prompt, ctx.language, style = PolyglotTheme.learning.sentence)
     } else {
         LearningText(e.prompt, ctx.language, style = PolyglotTheme.learning.sentence)
     }
-    e.options.forEachIndexed { i, opt ->
+    // Mixed per question, so the right answer is not usually the first one.
+    val order = remember(e.id, e.options.size) { com.polyglot.academy.core.learning.ChoiceOrder.of(e.id, e.options.size) }
+    order.forEach { i ->
+        val opt = e.options[i]
         val label = e.optionGlosses?.getOrNull(i)?.let(ctx::gloss) ?: opt
         val state = when {
             !answered -> null

@@ -275,6 +275,18 @@ class UiFlowTest {
         assertEquals(com.polyglot.academy.core.model.AssessmentKind.PROGRESS_CHECK, results.single().kind)
     }
 
+    @Test fun thePlacementTestMovesOnAndShowsTheSentenceWithTheBlank() = runDesktopComposeUiTest(800, 1700) {
+        val app = TestApp(); app.profile()
+        setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.ME), Route.Assessment(LanguageCode.MANDARIN))) }
+        waitForText("Start test", timeout = 30_000)
+        onNodeWithText("Start test").performClick()
+        waitForText("Question 1 · up to 14")
+        // Every A1 question for Mandarin is a sentence with a blank; it must be on screen, not only its instruction.
+        assertTrue(onAllNodesWithText("___", substring = true).fetchSemanticsNodes().isNotEmpty(), "the sentence with the blank is shown")
+        onNodeWithText("I don't know").performClick()
+        waitForText("Question 2 · up to 14")
+    }
+
     @Test fun aNewWordIsShownAndEarnsNoScore() = runDesktopComposeUiTest(800, 1700) {
         val app = TestApp(); app.profile()
         setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.HOME), Route.LessonPlayer("en_l_greetings", restart = true))) }
