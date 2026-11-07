@@ -36,17 +36,21 @@ data class DayActivity(
         storiesRead * XpRules.STORY + pronunciationChecks * XpRules.PRONUNCIATION + otherItems * XpRules.OTHER_ITEM
 }
 
+/**
+ * Scaled so that the default goal of 50 means about one full lesson (18 answers plus the lesson bonus),
+ * not a few cards. XP is always counted from stored events, so a change here also recalculates past days.
+ */
 object XpRules {
-    const val CORRECT = 10
-    const val WRONG = 3
+    const val CORRECT = 2
+    const val WRONG = 1
     const val REVIEW = 2
-    const val LESSON_BONUS = 20
-    const val TURN = 5
-    const val SPOKEN_BONUS = 2
+    const val LESSON_BONUS = 25
+    const val TURN = 3
+    const val SPOKEN_BONUS = 1
     const val STORY = 15
-    const val PRONUNCIATION = 4
-    const val OTHER_ITEM = 3
-    const val QUEST_BONUS = 15
+    const val PRONUNCIATION = 2
+    const val OTHER_ITEM = 2
+    const val QUEST_BONUS = 5
     val goalChoices = listOf(20, 50, 100, 150, 250)
 
     /** Groups stored events into days for one language. */

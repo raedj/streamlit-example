@@ -39,7 +39,7 @@ class DailyLoopTest {
         val days = XpRules.days(listOf(attempt(1, true, at = day0), attempt(2, false, at = day0)), sessions, turns, TimeZone.UTC)
         val d = days.values.single()
         assertEquals(1, d.learnerTurns); assertEquals(1, d.spokenTurns); assertEquals(12, d.reviews); assertEquals(1, d.lessonsCompleted)
-        assertEquals(10 + 3 + 12 * 2 + 20 + 5 + 2, d.baseXp)
+        assertEquals(2 + 1 + 12 * 2 + 25 + 3 + 1, d.baseXp)
         assertEquals(7, d.activeMinutes)
         assertFalse(DayActivity(today).active)
     }
@@ -74,11 +74,19 @@ class DailyLoopTest {
         assertEquals(Streaks.MAX_FREEZES, Streaks.update(month, StreakState(freezes = 2, lastAwardAt = 21), today).freezes)
     }
 
+    @Test fun theDefaultGoalMeansAboutOneLesson() {
+        val goal = com.polyglot.academy.core.model.LearnerProfile().dailyXpGoal
+        assertTrue(DayActivity(today, correctAnswers = 6).baseXp < goal, "six cards do not finish the day")
+        val shortest = com.polyglot.academy.core.content.Curriculum.of(LanguageCode.ENGLISH).lessons.minOf { it.exercises.size }
+        assertTrue(DayActivity(today, correctAnswers = shortest, lessonsCompleted = 1).baseXp >= goal, "a lesson of $shortest answers reaches the goal")
+        assertTrue(XpRules.WRONG < XpRules.CORRECT, "a right answer always earns more")
+    }
+
     @Test fun levelsAndDailyLoop() {
         assertEquals(1, XpLevels.levelFor(0)); assertEquals(2, XpLevels.levelFor(100)); assertEquals(3, XpLevels.levelFor(250))
-        val days = mapOf(today to DayActivity(today, correctAnswers = 6), ago(1) to DayActivity(ago(1), correctAnswers = 2))
+        val days = mapOf(today to DayActivity(today, correctAnswers = 25), ago(1) to DayActivity(ago(1), correctAnswers = 2))
         val loop = DailyLoopCalculator.compute(LanguageCode.ENGLISH, days, StreakState(), 50, today)
-        assertTrue(loop.xpToday >= 60, "base XP plus the EARN_XP quest bonus")
+        assertTrue(loop.xpToday >= 50 + XpRules.QUEST_BONUS, "base XP plus the EARN_XP quest bonus")
         assertEquals(2, loop.streakDays)
         assertEquals(1, loop.goalMetDaysThisWeek)
         assertEquals(7, loop.weekXp.size)

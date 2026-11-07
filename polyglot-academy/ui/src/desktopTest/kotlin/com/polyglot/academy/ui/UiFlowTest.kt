@@ -175,6 +175,29 @@ class UiFlowTest {
         onNodeWithText("On-device models").assertExists()
     }
 
+    private fun tabLabelsFitAtDoubleText(ui: LanguageCode, labels: List<String>) = runDesktopComposeUiTest(720, 1600) {
+        val app = TestApp(); app.profile(ui = ui)
+        setContent {
+            androidx.compose.runtime.CompositionLocalProvider(androidx.compose.ui.platform.LocalDensity provides androidx.compose.ui.unit.Density(2f, 2f)) {
+                com.polyglot.academy.ui.app.PolyglotApp(app.services, com.polyglot.academy.ui.app.NoopPlatformUi, listOf(Route.TabRoot(Tab.PRACTICE)))
+            }
+        }
+        labels.forEach { label ->
+            waitForText(label)
+            // The tab bar is drawn last, so its label is the last node with this text.
+            val node = onAllNodesWithText(label).fetchSemanticsNodes().last()
+            val layout = mutableListOf<androidx.compose.ui.text.TextLayoutResult>()
+            node.config[androidx.compose.ui.semantics.SemanticsActions.GetTextLayoutResult].action!!(layout)
+            val r = layout.first()
+            val natural = r.multiParagraph.intrinsics.maxIntrinsicWidth
+            assertTrue(natural <= r.layoutInput.constraints.maxWidth, "$label needs $natural but has ${r.layoutInput.constraints.maxWidth}")
+        }
+    }
+
+    @Test fun tabLabelsFitAtDoubleTextInEnglish() = tabLabelsFitAtDoubleText(LanguageCode.ENGLISH, listOf("Home", "Learn", "Practice", "Tutors", "Me"))
+
+    @Test fun tabLabelsFitAtDoubleTextInArabic() = tabLabelsFitAtDoubleText(LanguageCode.ARABIC, listOf("الرئيسية", "تعلّم", "تدرّب", "المعلّمون", "حسابي"))
+
     @Test fun lessonFlashcardAnswerIsRecorded() = runDesktopComposeUiTest(800, 1700) {
         val app = TestApp(); app.profile()
         setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.HOME), Route.LessonPlayer("en_l_greetings", restart = true))) }

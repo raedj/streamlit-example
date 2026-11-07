@@ -76,6 +76,10 @@ fun AppBottomBar(current: Tab) {
     val app = LocalApp.current
     val s = LocalStrings.current
     val c = PolyglotTheme.colors
+    // Every tab keeps its name at any text size. Five names share a fixed width, so only their growth is
+    // capped here; the rest of the app still follows the system text size in full.
+    val density = androidx.compose.ui.platform.LocalDensity.current
+    val labelDensity = androidx.compose.ui.unit.Density(density.density, minOf(density.fontScale, 1.3f))
     NavigationBar(containerColor = c.surface) {
         listOf(
             Triple(Tab.HOME, Icons.Filled.Home, K.NAV_HOME),
@@ -84,14 +88,14 @@ fun AppBottomBar(current: Tab) {
             Triple(Tab.TUTORS, Icons.Filled.RecordVoiceOver, K.NAV_TUTORS),
             Triple(Tab.ME, Icons.Filled.Person, K.NAV_ME),
         ).forEach { (tab, icon, key) ->
-            // With very large text five labels do not fit: only the selected one is shown, and the other
-            // icons carry the name for screen readers instead.
-            val allLabels = androidx.compose.ui.platform.LocalDensity.current.fontScale < 1.5f
             NavigationBarItem(
                 selected = tab == current, onClick = { if (tab != current) app.nav.switchTab(tab) },
-                icon = { Icon(icon, contentDescription = if (allLabels || tab == current) null else s[key]) },
-                label = { Text(s[key], maxLines = 1, overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis) },
-                alwaysShowLabel = allLabels,
+                icon = { Icon(icon, contentDescription = null) },
+                label = {
+                    androidx.compose.runtime.CompositionLocalProvider(androidx.compose.ui.platform.LocalDensity provides labelDensity) {
+                        Text(s[key], maxLines = 1, overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis)
+                    }
+                },
                 colors = NavigationBarItemDefaults.colors(selectedIconColor = c.onPrimaryContainer, selectedTextColor = c.textPrimary, indicatorColor = c.primaryContainer),
             )
         }
