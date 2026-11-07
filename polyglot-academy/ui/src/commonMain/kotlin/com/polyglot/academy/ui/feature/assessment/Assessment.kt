@@ -81,7 +81,7 @@ fun AssessmentScreen(language: LanguageCode?, fromOnboarding: Boolean) {
                     Text(s[K.ASSESS_RESULT_TITLE], style = MaterialTheme.typography.titleMedium, color = c.textSecondary)
                     Text("${res.estimatedLevel.label}", style = PolyglotTheme.learning.stat)
                     Text(Labels.level(s, res.estimatedLevel), style = MaterialTheme.typography.titleMedium)
-                    Text(s.f(K.ASSESS_RANGE, res.levelLow.label, res.levelHigh.label), style = MaterialTheme.typography.bodyLarge)
+                    Text(Labels.levelRange(s, res.levelLow, res.levelHigh), style = MaterialTheme.typography.bodyLarge)
                     Text(s.f(K.ASSESS_SCORE, res.correctAnswers, res.questionsAnswered), color = c.textSecondary)
                 }
                 Banner(BannerKind.INFO, s[K.ASSESS_DISCLAIMER])
@@ -140,7 +140,7 @@ fun AssessmentScreen(language: LanguageCode?, fromOnboarding: Boolean) {
                     history.reversed().forEach { h ->
                         PolyCard {
                             LevelBadge(h.estimatedLevel, null)
-                            Text(s.f(K.ASSESS_RANGE, h.levelLow.label, h.levelHigh.label), style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
+                            Text(Labels.levelRange(s, h.levelLow, h.levelHigh), style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
                         }
                     }
                 }

@@ -6,6 +6,7 @@ ASSESS_QUESTION ¦ Question {0} · up to {1} ¦ السؤال {0} · حتى {1}
 ASSESS_DONT_KNOW ¦ I don't know ¦ لا أعرف
 ASSESS_RESULT_TITLE ¦ Your estimated level ¦ مستواك التقديري
 ASSESS_RANGE ¦ Most likely between {0} and {1} ¦ على الأرجح بين {0} و{1}
+ASSESS_RANGE_ONE ¦ Most likely {0} ¦ على الأرجح {0}
 ASSESS_DISCLAIMER ¦ This is an estimate from a short test, not an official CEFR certificate. ¦ هذا تقدير من اختبار قصير، وليس شهادة رسمية وفق الإطار الأوروبي المرجعي.
 ASSESS_ACCEPT ¦ Start at {0} ¦ ابدأ من {0}
 ASSESS_CHOOSE_OTHER ¦ Choose a different level ¦ اختر مستوى آخر

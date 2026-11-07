@@ -22,11 +22,12 @@ import kotlin.test.assertNotEquals
 import kotlin.test.assertTrue
 
 class TutorAndVoiceTest {
-    @Test fun rosterHasTenTutorsWithUniqueIdsAndEveryLanguageCovered() {
-        assertEquals(10, TutorRoster.tutors.size)
-        assertEquals(10, TutorRoster.tutors.map { it.id }.toSet().size)
+    @Test fun rosterHasElevenTutorsWithUniqueIdsAndEveryLanguageCovered() {
+        assertEquals(11, TutorRoster.tutors.size)
+        assertEquals(11, TutorRoster.tutors.map { it.id }.toSet().size)
         LanguageCode.entries.forEach { assertTrue(TutorRoster.forLanguage(it).isNotEmpty(), "no tutor for $it") }
         assertEquals("liwei", TutorRoster.defaultFor(LanguageCode.MANDARIN, CefrLevel.A1).id)
+        CefrLevel.entries.filter { it <= CefrLevel.B2 }.forEach { assertEquals("aisyah", TutorRoster.defaultFor(LanguageCode.MALAY, it).id) }
         assertEquals("morgan", TutorRoster.forLanguage(LanguageCode.ENGLISH).first { it.suits(CefrLevel.C2) && it.languages.isEmpty() }.id)
     }
 

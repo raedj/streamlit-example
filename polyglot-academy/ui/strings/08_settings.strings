@@ -345,6 +345,8 @@ SET_REPORTS ¦ Content error reports ¦ بلاغات أخطاء المحتوى
 SET_REPORTS_NONE ¦ No reports yet. Use "Report an error in this content" in lessons, reviews or word pages. ¦ لا بلاغات بعد. استخدم «أبلغ عن خطأ في هذا المحتوى» في الدروس أو المراجعة أو صفحات الكلمات.
 SET_REPORTS_COUNT ¦ {0} report on this device|{0} reports on this device ¦ لا بلاغات|بلاغ واحد على هذا الجهاز|بلاغان على هذا الجهاز|{0} بلاغات على هذا الجهاز|{0} بلاغًا على هذا الجهاز|{0} بلاغ على هذا الجهاز
 SET_REPORTS_EXPORT ¦ Export reports for reviewers ¦ صدّر البلاغات للمراجعين
+SET_REPORTS_EXPORT_BODY ¦ For each report the file holds when you made it, the language, the item and its text, what is wrong and your note. Nothing else: not your name, your answers, your conversations or your progress. The app does not send the file; you choose whom to give it to. ¦ يحوي الملف لكل بلاغ: وقته واللغة والعنصر ونصه وما الخطأ وملاحظتك. ولا شيء غير ذلك: لا اسمك ولا إجاباتك ولا محادثاتك ولا تقدّمك. ولا يرسل التطبيق الملف، بل تختار أنت لمن تعطيه.
+SET_REPORTS_EXPORT_CONFIRM ¦ Save the file ¦ احفظ الملف
 SET_REPORTS_DELETE ¦ Delete all reports ¦ احذف كلّ البلاغات
 SET_REPORTS_DELETE_BODY ¦ The reports on this device will be deleted. Export them first if you want to send them. ¦ ستُحذف البلاغات من هذا الجهاز. صدّرها أولًا إن أردت إرسالها.
 SET_TRANSLIT_KNOWN ¦ Hide it for words I know ¦ أخفِه للكلمات التي أعرفها

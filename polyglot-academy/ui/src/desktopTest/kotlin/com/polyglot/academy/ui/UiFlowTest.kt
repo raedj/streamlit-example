@@ -376,6 +376,38 @@ class UiFlowTest {
         assertTrue(com.polyglot.academy.ui.feature.me.PendingMediaFiles.get(done.material.id) == null, "the private copy is let go")
     }
 
+    @Test fun contentReportsAreSavedOnlyAfterTheLearnerSeesWhatTheFileHolds() = runDesktopComposeUiTest(800, 1700) {
+        val app = TestApp(); app.profile()
+        runBlocking { app.services.contentReports.report(LanguageCode.ENGLISH, "en_hello", "hello", com.polyglot.academy.core.model.ContentIssue.TRANSLATION, "odd") }
+        val saved = mutableListOf<String>()
+        val ui = object : com.polyglot.academy.ui.app.PlatformUi by com.polyglot.academy.ui.app.NoopPlatformUi {
+            override suspend fun saveExport(fileName: String, content: String): String? { saved += content; return fileName }
+        }
+        setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.ME), Route.SettingsPage(SettingsSection.DATA)), ui) }
+        waitForText("Export reports for reviewers")
+        onNodeWithText("Export reports for reviewers").performScrollTo().performClick()
+        waitForText("not your name", substring = true)
+        assertTrue(saved.isEmpty(), "nothing is written before the learner agrees")
+        onNodeWithText("Save the file").performClick()
+        waitUntil(timeoutMillis = 5_000) { saved.size == 1 }
+        assertTrue("en_hello" in saved.single() && "odd" in saved.single())
+    }
+
+    // Until 2026-11-07 the "delete everything" dialog also opened on top of this one, and its button wiped all data.
+    @Test fun deletingContentReportsDeletesOnlyTheReports() = runDesktopComposeUiTest(800, 1700) {
+        val app = TestApp(); app.profile()
+        runBlocking { app.services.contentReports.report(LanguageCode.ENGLISH, "en_hello", "hello", com.polyglot.academy.core.model.ContentIssue.TRANSLATION, "odd") }
+        setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.ME), Route.SettingsPage(SettingsSection.DATA))) }
+        waitForText("Delete all reports")
+        onNodeWithText("Delete all reports").performScrollTo().performClick()
+        waitForText("Export them first", substring = true)
+        // The page button and this dialog's title; the old second dialog added its own title and body (4 in all).
+        assertEquals(2, onAllNodesWithText("Delete all reports").fetchSemanticsNodes().size, "one dialog only")
+        onNode(hasText("Delete") and androidx.compose.ui.test.hasClickAction()).performClick()
+        waitUntil(timeoutMillis = 5_000) { runBlocking { app.services.contentReports.all().isEmpty() } }
+        assertEquals("Laila", runBlocking { app.store.profile.first().displayName })
+    }
+
     @Test fun privacyPageIsReachedFromPrivacySettings() = runDesktopComposeUiTest(800, 1700) {
         val app = TestApp(); app.profile(ui = LanguageCode.ARABIC)
         setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.ME), Route.SettingsPage(SettingsSection.PRIVACY))) }

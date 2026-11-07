@@ -96,6 +96,20 @@ object TutorRoster {
             behaviourPrompt = "Always write Mandarin with simplified characters followed by pinyin with tone marks in parentheses. " +
                 "When the learner makes a tone or word error, point to the syllable and invite them to try again.",
         ),
+        // Malay had no tutor of its own, so a beginner got Alex (role-play, no native-language help) by default.
+        TutorPersona(
+            id = "aisyah", name = "Aisyah", languages = setOf(LanguageCode.MALAY),
+            tagline = Gloss("Supportive Malay conversation coach", "مدرّبة محادثة ملايوية داعمة"),
+            bio = Gloss("Aisyah practises everyday Malay with you in short, simple sentences and notes when a word is formal or casual.",
+                "تتدرّب عائشة معك على الملايوية اليومية بجمل قصيرة وبسيطة، وتنبّه إن كانت الكلمة رسمية أو عامية."),
+            style = TeachingStyle.SUPPORTIVE, correction = CorrectionStrategy.RECAST,
+            minLevel = CefrLevel.PRE_A1, maxLevel = CefrLevel.B2, questionRate = 0.8, usesNativeLanguageSupport = true,
+            focusAreas = listOf(Gloss("Everyday conversation", "المحادثة اليومية"), Gloss("Formal and casual words", "الكلمات الرسمية والعامية")),
+            preferredVoiceGender = VoiceGender.FEMALE,
+            avatar = AvatarSpec(0xFFD9A47E, 0xFF1E1410, HairStyle.LONG, 0xFF00897B, Accessory.SCARF),
+            behaviourPrompt = "Be warm and encouraging and use standard Malaysian Malay (Bahasa Melayu). Prefer recasts. " +
+                "When a word is mainly formal or mainly casual, say so in one short note. Keep replies to 1-3 sentences.",
+        ),
         TutorPersona(
             id = "sofia", name = "Sofía", languages = setOf(LanguageCode.SPANISH),
             tagline = Gloss("Spanish conversation and practical expressions", "المحادثة الإسبانية والتعابير العملية"),

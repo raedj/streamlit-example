@@ -13,7 +13,8 @@ data class ContentReviewRecord(val status: ContentReviewStatus, val reviewer: St
  */
 object ContentReview {
     private val records: Map<Pair<String, String>, ContentReviewRecord> by lazy {
-        GeneratedReviewStatus.rows.associate { (lang, id, status, reviewer, date) ->
+        // Items hidden after the AI check are not a person's review: see ContentDisputes.
+        GeneratedReviewStatus.rows.filter { it[2] != ContentDisputes.STATUS }.associate { (lang, id, status, reviewer, date) ->
             (lang to id) to ContentReviewRecord(if (status == "reviewed") ContentReviewStatus.REVIEWED else ContentReviewStatus.NEEDS_FIX, reviewer, date)
         }
     }

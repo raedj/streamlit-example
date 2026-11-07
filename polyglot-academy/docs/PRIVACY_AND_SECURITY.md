@@ -47,6 +47,14 @@ The speech model (59.7 MB) is downloaded only when the learner agrees in a dialo
 huggingface.co/ggerganov/whisper.cpp over HTTPS; that request carries no learner data, and the file is
 checked against its SHA-256 before use.
 
+**Content error reports** are exported only after the learner reads what the file holds (time, language, item,
+item text, issue, note: no name, answers, conversations or progress); the app never sends the file.
+
+**The AI content check** (`tools/flag_content.py`) is a developer tool, not part of the app. It runs on the owner's
+computer and sends built-in lesson and word-list content to the AI vendors the owner names, with keys read from
+environment variables only, never written to a file or printed. It sends no learner data. Tester report files
+read by the tool stay in `content/review/tester_reports/`, which git ignores.
+
 ## Retention and deletion
 | Data | Where | Kept until |
 |---|---|---|

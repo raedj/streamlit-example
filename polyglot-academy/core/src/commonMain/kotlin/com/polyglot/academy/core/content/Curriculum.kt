@@ -93,7 +93,11 @@ object Curriculum {
     // Each language is built on first use: building all eight at once took about 7 s on a slow phone.
     private val built: Map<LanguageCode, Lazy<LanguageCurriculum>> = LanguageCode.entries.associateWith { code -> lazy { build(code) } }
 
-    private fun build(code: LanguageCode): LanguageCurriculum {
+    // Items hidden after the AI content check are left out here, so no screen shows them.
+    private fun build(code: LanguageCode): LanguageCurriculum = ContentCheck.without(unfilteredOf(code), ContentDisputes.of(code))
+
+    /** The curriculum with nothing hidden: what the AI content check reads (content/review/items). Built anew on each call. */
+    fun unfilteredOf(code: LanguageCode): LanguageCurriculum {
         val c = when (code) {
             LanguageCode.ENGLISH -> EnglishCurriculum.build()
             LanguageCode.MANDARIN -> MandarinCurriculum.build()

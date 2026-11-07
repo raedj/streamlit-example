@@ -703,13 +703,8 @@ private fun DataPage() {
             style = MaterialTheme.typography.bodySmall)
     }
     if (reports.isNotEmpty()) {
-        SecondaryButton(s[K.SET_REPORTS_EXPORT], {
-            scope.launch {
-                val tsv = app.services.contentReports.exportTsv()
-                val where = app.platformUi.saveExport("polyglot-content-reports.tsv", tsv)
-                toast(where?.let { s.f(K.SET_EXPORT_SAVED_TO, it) } ?: s.f(K.SET_EXPORT_DONE, "${tsv.length / 1024 + 1} KB"))
-            }
-        }, Modifier.fillMaxWidth())
+        // The learner sees what the file holds before it is written; the app never sends it.
+        SecondaryButton(s[K.SET_REPORTS_EXPORT], { confirm = K.SET_REPORTS_EXPORT }, Modifier.fillMaxWidth())
         SecondaryButton(s[K.SET_REPORTS_DELETE], { confirm = K.SET_REPORTS_DELETE }, Modifier.fillMaxWidth())
     }
     // For a trial: the app has no server or analytics, so testers can keep and send screen counts themselves.
@@ -737,6 +732,17 @@ private fun DataPage() {
     SecondaryButton(s[K.SET_DELETE_CONV], { confirm = K.SET_DELETE_CONV }, Modifier.fillMaxWidth())
     SecondaryButton(s[K.SET_DELETE_MATERIALS], { confirm = K.SET_DELETE_MATERIALS }, Modifier.fillMaxWidth())
     SecondaryButton(s[K.SET_DELETE_ALL], { confirm = K.SET_DELETE_ALL }, Modifier.fillMaxWidth())
+    if (confirm == K.SET_REPORTS_EXPORT) {
+        ConfirmDialog(s[K.SET_REPORTS_EXPORT], s[K.SET_REPORTS_EXPORT_BODY], s[K.SET_REPORTS_EXPORT_CONFIRM], s[K.CANCEL],
+            onConfirm = {
+                confirm = null
+                scope.launch {
+                    val tsv = app.services.contentReports.exportTsv()
+                    val where = app.platformUi.saveExport("polyglot-content-reports.tsv", tsv)
+                    toast(where?.let { s.f(K.SET_EXPORT_SAVED_TO, it) } ?: s.f(K.SET_EXPORT_DONE, "${tsv.length / 1024 + 1} KB"))
+                }
+            }, onDismiss = { confirm = null })
+    }
     if (confirm == K.SET_REPORTS_DELETE) {
         ConfirmDialog(s[K.SET_REPORTS_DELETE], s[K.SET_REPORTS_DELETE_BODY], s[K.DELETE], s[K.CANCEL], destructive = true,
             onConfirm = { confirm = null; scope.launch { app.services.contentReports.clear() } }, onDismiss = { confirm = null })
@@ -758,7 +764,9 @@ private fun DataPage() {
                 }
             }, onDismiss = { confirm = null })
     }
-    confirm?.takeIf { it != K.SET_RESTORE }?.let { what ->
+    // Only the three delete buttons: any other key (reports, restore) has its own dialog above. Before 2026-11-07 this
+    // also opened over "Delete reports" with a button that deleted everything; found by the export test below.
+    confirm?.takeIf { it in setOf(K.SET_DELETE_CONV, K.SET_DELETE_MATERIALS, K.SET_DELETE_ALL) }?.let { what ->
         ConfirmDialog(s[what], if (what == K.SET_DELETE_ALL) s[K.SET_DELETE_ALL_BODY] else s[what], s[K.SET_DELETE_CONFIRM], s[K.CANCEL], destructive = true,
             onConfirm = {
                 confirm = null

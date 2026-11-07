@@ -167,7 +167,7 @@ fun ProgressScreen() {
                     SecondaryButton(s[K.PROGRESS_RETEST_BUTTON], { app.nav.push(com.polyglot.academy.ui.navigation.Route.Assessment(lang)) }, Modifier.fillMaxWidth())
                 }
                 data.assessments.reversed().forEach { a ->
-                    PolyCard { LevelBadge(a.estimatedLevel, null); Text(s.f(K.ASSESS_RANGE, a.levelLow.label, a.levelHigh.label), color = c.textSecondary) }
+                    PolyCard { LevelBadge(a.estimatedLevel, null); Text(Labels.levelRange(s, a.levelLow, a.levelHigh), color = c.textSecondary) }
                 }
             }
             SectionHeader(s[K.PROGRESS_DEFINITIONS])

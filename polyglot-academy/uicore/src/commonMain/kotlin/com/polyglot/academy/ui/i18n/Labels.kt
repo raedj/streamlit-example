@@ -28,6 +28,9 @@ import com.polyglot.academy.core.util.MILLIS_PER_MINUTE
 object Labels {
     fun language(s: Localizer, code: LanguageCode) = Languages.of(code).displayName(s.language)
     fun level(s: Localizer, l: CefrLevel) = s[K.valueOf("LEVEL_${l.name}")]
+    /** A placement estimate's range; one level when both ends match, not "between Pre-A1 and Pre-A1". */
+    fun levelRange(s: Localizer, low: CefrLevel, high: CefrLevel) =
+        if (low == high) s.f(K.ASSESS_RANGE_ONE, low.label) else s.f(K.ASSESS_RANGE, low.label, high.label)
     /** The level's name alone, without what it covers: "Beginner". */
     fun levelName(s: Localizer, l: CefrLevel) = level(s, l).substringBefore(" — ")
     fun goal(s: Localizer, g: LearningGoal) = s[K.valueOf("GOAL_${g.name}")]

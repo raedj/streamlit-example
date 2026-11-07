@@ -1,5 +1,6 @@
 package com.polyglot.academy.core.wordlist
 
+import com.polyglot.academy.core.content.ContentDisputes
 import com.polyglot.academy.core.model.CefrLevel
 import com.polyglot.academy.core.model.Gender
 import com.polyglot.academy.core.model.Gloss
@@ -83,7 +84,8 @@ data class WordEntry(
 class WordList(val language: LanguageCode, val entries: List<WordEntry>) {
     val byRank: Map<Int, WordEntry> = entries.associateBy { it.rank }
     val byId: Map<String, WordEntry> = entries.associateBy { it.id }
-    val levelCount: Int get() = entries.size / WordLevels.SIZE
+    /** Full levels in the list. By rank, so a word hidden after the content check does not take its level away. */
+    val levelCount: Int get() = (byRank.keys.maxOrNull() ?: 0) / WordLevels.SIZE
     val matcher: WordMatcher by lazy { WordMatcher(language, entries) }
 
     fun level(level: Int): List<WordEntry> = WordLevels.ranks(level).mapNotNull { byRank[it] }
@@ -104,8 +106,17 @@ object WordLists {
 
     private fun build(language: LanguageCode): WordList {
         val chunks = GeneratedWordLists.levels(language.tag).map { it() }
-        return parse(language, chunks.flatMap { it.first }, chunks.flatMap { it.second })
+        return without(parse(language, chunks.flatMap { it.first }, chunks.flatMap { it.second }), ContentDisputes.of(language))
     }
+
+    /**
+     * The list without the words and examples hidden after the AI content check. Example ids are the word's
+     * id with "#ex" and the example's place, from 1, as in tools/review_sheets.py. The other words keep their ranks.
+     */
+    fun without(list: WordList, disputed: Set<String>): WordList = if (disputed.isEmpty()) list else WordList(list.language,
+        list.entries.filter { it.id !in disputed }.map { e ->
+            e.copy(examples = e.examples.filterIndexed { i, _ -> "${e.id}#ex${i + 1}" !in disputed })
+        })
 
     private val posCodes = mapOf(
         "noun" to PartOfSpeech.NOUN, "verb" to PartOfSpeech.VERB, "adj" to PartOfSpeech.ADJECTIVE, "adv" to PartOfSpeech.ADVERB,
