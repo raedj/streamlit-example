@@ -76,7 +76,7 @@ rank	sentence	en	ar	names
 38	你们是学生吗？	Are you (all) students?	هل أنتم طلاب؟
 38	你们什么时候回家？	When are you going home?	متى تعودون إلى البيت؟
 39	他们在学校学习。	They study at school.	هم يدرسون في المدرسة.
-39	她们都很漂亮。	They are all very pretty.	كلهن جميلات جدًا.
+39	他们都很高兴。	They are all very happy.	كلّهم سعداء جدًا.
 40	你在看什么书？	What book are you reading?	أي كتاب تقرأ؟
 40	他说什么？	What did he say?	ماذا قال؟
 41	这是谁的书？	Whose book is this?	كتاب من هذا؟
@@ -448,7 +448,7 @@ rank	sentence	en	ar	names
 224	请你再说一次。	Please say it again.	قلها مرة أخرى من فضلك.
 224	我们明天再来吧。	Let's come again tomorrow.	لنأتِ مرة أخرى غدًا.
 225	我现在就去。	I'll go right now.	سأذهب الآن حالًا.
-225	他八点就来了。	He came as early as eight.	جاء منذ الثامنة.
+225	他八点就来了。	He came as early as eight.	جاء مبكرًا، في الثامنة.
 226	你怎么现在才来？	Why are you only coming now?	لماذا لم تأتِ إلا الآن؟
 226	我昨天晚上十二点才睡觉。	I didn't go to bed until midnight last night.	لم أنم أمس إلا في الثانية عشرة ليلًا.
 227	他已经走了。	He has already left.	لقد غادر بالفعل.
@@ -783,7 +783,7 @@ rank	sentence	en	ar	names
 391	爸爸送我一块手表。	Dad gave me a watch.	أهداني أبي ساعة يد.
 392	这是我们家的照片。	This is a photo of our family.	هذه صورة عائلتنا.
 392	你给我看看你的照片。	Show me your photos.	أرني صورك.
-393	我给奶奶写了一个信。	I wrote a letter to Grandma.	كتبت رسالة إلى جدتي.
+393	我给奶奶写了一封信。	I wrote a letter to Grandma.	كتبت رسالة إلى جدتي.
 393	你收到他的信了吗？	Did you get his letter?	هل وصلتك رسالته؟
 394	请给我一张纸。	Please give me a sheet of paper.	أعطني ورقة من فضلك.
 394	把名字写在纸上。	Write your name on the paper.	اكتب اسمك على الورقة.
@@ -1019,7 +1019,7 @@ rank	sentence	en	ar	names
 509	我今天不舒服。	I don't feel well today.	لا أشعر أنني بخير اليوم.
 510	坐地铁很方便。	Taking the subway is very convenient.	ركوب المترو مريح جدًا.
 510	你什么时候方便？	When is convenient for you?	متى يناسبك؟
-511	多运动对健康好。	More exercise is good for your health.	الرياضة الأكثر مفيدة للصحة.
+511	多运动对健康好。	More exercise is good for your health.	الإكثار من الرياضة مفيد للصحة.
 511	祝你身体健康！	I wish you good health!	أتمنى لك صحة جيدة!
 512	这个孩子很可爱。	This child is very cute.	هذا الطفل لطيف جدًا.
 512	你的猫真可爱！	Your cat is really cute!	قطتك لطيفة حقًا!
@@ -1457,8 +1457,8 @@ rank	sentence	en	ar	names
 728	柠檬很酸。	Lemons are very sour.	الليمون حامض جدًا.
 729	夏天孩子们喜欢吃冰淇淋。	In summer children like eating ice cream.	في الصيف يحب الأطفال أكل البوظة.
 729	我们买两个冰淇淋吧。	Let's buy two ice creams.	لنشترِ بوظتين.
-730	过年的时候我们吃饺子。	We eat dumplings at New Year.	نأكل الزلابية في رأس السنة.
-730	妈妈包的饺子最好吃。	Mum's dumplings are the best.	زلابية أمي هي الألذ.
+730	过年的时候我们吃饺子。	We eat dumplings at New Year.	نأكل الجياوزي في رأس السنة.
+730	妈妈包的饺子最好吃。	Mum's dumplings are the best.	الجياوزي التي تصنعها أمي هي الألذ.
 731	我早饭吃了两个包子。	I had two steamed buns for breakfast.	أكلت كعكتين على البخار في الفطور.
 731	这家饭店的包子很有名。	This restaurant's steamed buns are famous.	كعكات هذا المطعم على البخار مشهورة.
 732	我不吃羊肉。	I don't eat lamb.	لا آكل لحم الضأن.
@@ -2105,7 +2105,7 @@ rank	sentence	en	ar	names
 1204	夏天院子里有很多虫子。	In summer there are a lot of bugs in the yard.	في الصيف هناك حشرات كثيرة في الفناء.
 1205	爷爷每天早上听收音机。	Grandpa listens to the radio every morning.	يستمع جدّي إلى الراديو كل صباح.
 1206	我的鞋里有沙子。	There's sand in my shoes.	في حذائي رمل.
-1207	下午的影子很长。	The shadows are long in the afternoon.	الظلال طويلة في المساء.
+1207	下午的影子很长。	The shadows are long in the afternoon.	الظلال طويلة بعد الظهر.
 1208	演员们已经在舞台上了。	The actors are already on the stage.	الممثّلون على المسرح بالفعل.
 1209	图书馆的系统很简单。	The library's system is very simple.	نظام المكتبة بسيط جدًا.
 1210	这个价格包括税吗？	Does this price include tax?	هل يشمل هذا السعر الضريبة؟
@@ -2257,7 +2257,7 @@ rank	sentence	en	ar	names
 1356	你对这件事有什么看法？	What's your view on this?	ما رأيك في هذا الأمر؟
 1357	那只小狗真可怜。	That little dog is really pitiful.	ذلك الكلب الصغير مسكين حقًا.
 1358	我想去，可是我没有时间。	I want to go, but I don't have time.	أريد الذهاب لكن ليس لديّ وقت.
-1359	明天你有空吗？	Are you free tomorrow?	هل أنت متفرّغ غدًا؟
+1359	这个瓶子是空的。	This bottle is empty.	هذه الزجاجة فارغة.
 1360	恐怕他今天不能来了。	I'm afraid he can't come today.	أخشى أنه لن يستطيع المجيء اليوم.
 1361	请给我一瓶矿泉水。	Please give me a bottle of mineral water.	من فضلك أعطني زجاجة مياه معدنية.
 1362	我很困，想睡觉。	I'm very sleepy, I want to sleep.	أنا نعسان جدًا، أريد أن أنام.
@@ -2879,7 +2879,7 @@ rank	sentence	en	ar	names
 1978	猫头鹰晚上不睡觉。	Owls don't sleep at night.	البوم لا ينام في الليل.
 1979	我的梦想是当医生。	My dream is to be a doctor.	حلمي أن أصبح طبيبًا.
 1980	经理的秘书很能干。	The manager's secretary is very capable.	سكرتيرة المدير كفؤة جدًا.
-1981	这套房子的面积是一百米。	This flat's area is a hundred metres.	مساحة هذه الشقّة مئة متر.
+1981	这个房间的面积很大。	This room has a large area.	مساحة هذه الغرفة كبيرة.
 1982	这是我的名片。	This is my business card.	هذه بطاقتي.
 1983	孩子们很喜欢看魔术。	The children love watching magic tricks.	يحبّ الأطفال مشاهدة الخدع السحرية.
 1984	太阳能是一种干净的能源。	Solar power is a clean source of energy.	الطاقة الشمسية مصدر طاقة نظيف.
@@ -3188,7 +3188,7 @@ rank	sentence	en	ar	names
 2287	她很有爱心，常常帮助别人。	She is very caring and often helps others.	إنّها محبّة جدًا وكثيرًا ما تساعد الآخرين.
 2288	船慢慢地靠岸了。	The boat slowly came alongside the bank.	رسا القارب على الضفّة ببطء.
 2289	这家百货商店很大。	This department store is very big.	هذا المتجر الكبير ضخم جدًا.
-2290	这是新版本的软件吗？	Is this the new version?	هل هذه هي النسخة الجديدة؟
+2290	这是新版本的软件吗？	Is this the new version of the software?	هل هذه هي النسخة الجديدة من البرنامج؟
 2291	傍晚我们去河边散步。	At dusk we go for a walk by the river.	عند الغسق نتمشّى على ضفّة النهر.
 2292	她的戒指上有一颗宝石。	There's a gem on her ring.	في خاتمها حجر كريم.
 2293	这部电影是一个悲剧。	This film is a tragedy.	هذا الفيلم مأساة.
@@ -3441,7 +3441,7 @@ rank	sentence	en	ar	names
 2540	他是一个正直的人。	He is an upright person.	هو شخص نزيه.
 2541	他的话里有很多讽刺。	His words were full of irony.	كان كلامه مليئًا بالسخرية.
 2542	灯塔晚上给船指路。	The lighthouse guides ships at night.	ترشد المنارة السفن ليلًا.
-2543	妈妈每天晚上给孩子一首摇篮曲。	Every night Mum gives the child a lullaby.	كلّ ليلة تغنّي الأمّ للطفل تهويدة.
+2543	妈妈每天晚上给孩子唱一首摇篮曲。	Every night Mum sings the child a lullaby.	كلّ ليلة تغنّي الأمّ للطفل تهويدة.
 2544	她很怜悯那只小狗。	She felt great pity for the little dog.	أشفقت كثيرًا على الكلب الصغير.
 2545	我弟弟非常淘气。	My little brother is very naughty.	أخي الصغير شقيّ جدًا.
 2546	这个盒子上镶嵌着宝石。	This box is inlaid with gems.	هذا الصندوق مرصّع بالأحجار الكريمة.
@@ -3452,7 +3452,7 @@ rank	sentence	en	ar	names
 2551	牛在牧场上吃草。	The cows are grazing in the pasture.	ترعى الأبقار في المرعى.
 2552	他往河里扔了一颗石子。	He threw a pebble into the river.	رمى حصاة في النهر.
 2553	很多朝圣者来到这座城市。	Many pilgrims come to this city.	يأتي حجّاج كثيرون إلى هذه المدينة.
-2554	以前瘟疫死了很多人。	In the past the plague killed many people.	في الماضي قتل الطاعون كثيرًا من الناس.
+2554	以前很多人死于瘟疫。	In the past many people died of the plague.	في الماضي مات كثير من الناس بسبب الوباء.
 2555	我们应该放下偏见。	We should put aside our prejudices.	يجب أن نترك أحكامنا المسبقة.
 2556	老人的预言是真的。	The old man's prophecy was true.	كانت نبوءة العجوز صحيحة.
 2557	这些石头来自附近的采石场。	These stones come from a nearby quarry.	تأتي هذه الحجارة من مقلع قريب.
@@ -3505,7 +3505,7 @@ rank	sentence	en	ar	names
 2604	护士在找我手上的静脉。	The nurse is looking for a vein in my hand.	تبحث الممرّضة عن وريد في يدي.
 2605	他的衣服上都是汗水。	His clothes are covered in sweat.	ملابسه مبلّلة بالعرق.
 2606	小狗的口水弄湿了我的手。	The puppy's saliva wet my hand.	بلّل لعاب الجرو يدي.
-2607	他一直打嗝，不能停。	He keeps hiccuping and can't stop.	يتجشّأ باستمرار ولا يستطيع التوقّف.
+2607	他一直打嗝，停不下来。	He keeps hiccuping and can't stop.	يصيبه الفُواق باستمرار ولا يستطيع التوقّف.
 2608	她的睫毛又长又黑。	Her eyelashes are long and dark.	رموشها طويلة وسوداء.
 2609	他用手摸着下巴想问题。	He rubbed his chin, thinking it over.	كان يتحسّس ذقنه وهو يفكّر.
 2610	我的太阳穴有点疼。	My temples hurt a bit.	صدغاي يؤلمانني قليلًا.
@@ -3669,7 +3669,7 @@ rank	sentence	en	ar	names
 2768	小狗在啃骨头。	The puppy is gnawing a bone.	الجرو يقضم عظمة.
 2769	他饿坏了，狼吞虎咽地吃饭。	He was starving and wolfed down his food.	كان جائعًا جدًا فالتهم طعامه.
 2770	两个男孩在地上扭打。	Two boys were grappling on the ground.	كان ولدان يتصارعان على الأرض.
-2771	奶奶总是唠叨我穿衣服。	Grandma always nags me about what I wear.	جدّتي تثرثر دائمًا حول ملابسي.
+2771	奶奶总是唠叨让我多穿衣服。	Grandma always nags me to put on more clothes.	جدّتي تلحّ عليّ دائمًا أن أرتدي ملابس أكثر.
 2772	不要骚扰别人。	Don't harass other people.	لا تضايق الآخرين.
 2773	你应该听从医生的建议。	You should follow the doctor's advice.	يجب أن تتّبع نصيحة الطبيب.
 2774	有人囤积了很多大米。	Someone hoarded a lot of rice.	كنز أحدهم كمّية كبيرة من الأرزّ.

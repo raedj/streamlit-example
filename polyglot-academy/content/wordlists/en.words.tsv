@@ -977,7 +977,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 976	en_w_support	support	verb	people	to support; support	يدعم؛ دعم	/səˈpɔːt/
 977	en_w_surprise	surprise	verb	feelings	to surprise; a surprise	يفاجئ؛ مفاجأة	/səˈpraɪz/
 978	en_w_switch	switch	verb	home	to switch; a switch	يبدّل، يشغّل؛ مفتاح كهربائي	/swɪtʃ/	switches
-979	en_w_tie	tie	verb	clothes	to tie; a tie	يربط؛ ربطة عنق	/taɪ/	tying	irregular=yes
+979	en_w_tie	tie	verb	clothes	to tie; a tie	يربط؛ ربطة عنق	/taɪ/	tying	
 980	en_w_translate	translate	verb	communication	to translate	يترجم	/trænzˈleɪt/
 981	en_w_type	type	verb	work	to type; a type	يكتب على لوحة المفاتيح؛ نوع	/taɪp/
 982	en_w_warn	warn	verb	communication	to warn	يحذّر	/wɔːn/
@@ -1352,7 +1352,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 1351	en_w_stretch	stretch	verb	body	to stretch	يتمطّى، يمدّ	/stretʃ/	stretches
 1352	en_w_struggle	struggle	verb	actions	to struggle	يكافح	/ˈstrʌɡl/
 1353	en_w_sweep	sweep	verb	home	to sweep	يكنس	/swiːp/	swept	irregular=yes
-1354	en_w_tear	tear	verb	actions	to tear; a tear	يمزّق؛ دمعة	/teə/	tore, torn	irregular=yes
+1354	en_w_tear	tear	verb	actions	to tear (rip)	يمزّق	/teə/	tore, torn	irregular=yes
 1355	en_w_threaten	threaten	verb	people	to threaten	يهدّد	/ˈθretn/
 1356	en_w_wander	wander	verb	movement	to wander	يتجوّل	/ˈwɒndə/
 1357	en_w_whistle	whistle	verb	senses	to whistle; a whistle	يصفّر؛ صفّارة	/ˈwɪsl/
@@ -2303,7 +2303,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2302	en_w_beam	beam	noun	nature	beam (of light)	شعاع	/biːm/
 2303	en_w_beast	beast	noun	animals	beast	وحش	/biːst/
 2304	en_w_bench	bench	noun	places	bench	مقعد خشبي	/bentʃ/
-2305	en_w_biography	biography	noun	leisure	biography	سيرة ذاتية	/baɪˈɒɡrəfi/
+2305	en_w_biography	biography	noun	leisure	biography	سيرة حياة	/baɪˈɒɡrəfi/
 2306	en_w_blister	blister	noun	health	blister	بثرة	/ˈblɪstə/
 2307	en_w_boxing	boxing	noun	leisure	boxing	الملاكمة	/ˈbɒksɪŋ/
 2308	en_w_bracelet	bracelet	noun	clothes	bracelet	سوار	/ˈbreɪslət/
@@ -2528,7 +2528,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2527	en_w_mimic	mimic	verb	actions	to mimic	يحاكي	/ˈmɪmɪk/	mimics, mimicked, mimicking
 2528	en_w_moan	moan	verb	communication	to moan	يتذمّر	/məʊn/
 2529	en_w_modify	modify	verb	actions	to modify	يعدّل	/ˈmɒdɪfaɪ/	modifies, modified
-2530	en_w_mourn	mourn	verb	feelings	to mourn	ينعى، يحزن	/mɔːn/
+2530	en_w_mourn	mourn	verb	feelings	to mourn	يحزن على، يرثي	/mɔːn/
 2531	en_w_mumble	mumble	verb	communication	to mumble	يتمتم	/ˈmʌmbl/
 2532	en_w_navigate	navigate	verb	travel	to navigate	يبحر، يجد طريقه	/ˈnævɪɡeɪt/
 2533	en_w_obstruct	obstruct	verb	actions	to obstruct	يعرقل	/əbˈstrʌkt/
@@ -2727,7 +2727,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2726	en_w_nonetheless	nonetheless	adv	function	nonetheless	مع ذلك	/ˌnʌnðəˈles/
 2727	en_w_seldom	seldom	adv	time	seldom	نادرًا	/ˈseldəm/
 2728	en_w_thereby	thereby	adv	function	thereby	بذلك	/ˌðeəˈbaɪ/
-2729	en_w_whereas	whereas	adv	function	whereas	بينما	/weərˈæz/
+2729	en_w_whereas	whereas	conj	function	whereas	بينما	/weərˈæz/
 2730	en_w_abide	abide	verb	society	to abide (by)	يلتزم بـ	/əˈbaɪd/
 2731	en_w_abstain	abstain	verb	society	to abstain	يمتنع	/əbˈsteɪn/
 2732	en_w_accentuate	accentuate	verb	communication	to accentuate	يُبرز	/əkˈsentʃueɪt/

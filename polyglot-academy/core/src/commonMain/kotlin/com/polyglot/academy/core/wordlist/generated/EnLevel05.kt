@@ -156,7 +156,7 @@ internal object EnLevel05 {
         "1351	en_w_stretch	stretch	verb	body	to stretch	يتمطّى، يمدّ	/stretʃ/	stretches		",
         "1352	en_w_struggle	struggle	verb	actions	to struggle	يكافح	/ˈstrʌɡl/			",
         "1353	en_w_sweep	sweep	verb	home	to sweep	يكنس	/swiːp/	swept	irregular=yes	",
-        "1354	en_w_tear	tear	verb	actions	to tear; a tear	يمزّق؛ دمعة	/teə/	tore, torn	irregular=yes	",
+        "1354	en_w_tear	tear	verb	actions	to tear (rip)	يمزّق	/teə/	tore, torn	irregular=yes	",
         "1355	en_w_threaten	threaten	verb	people	to threaten	يهدّد	/ˈθretn/			",
         "1356	en_w_wander	wander	verb	movement	to wander	يتجوّل	/ˈwɒndə/			",
         "1357	en_w_whistle	whistle	verb	senses	to whistle; a whistle	يصفّر؛ صفّارة	/ˈwɪsl/			",

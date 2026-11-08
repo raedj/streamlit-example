@@ -494,7 +494,7 @@ internal object ZhLevel08 {
         "2287	她很有爱心，常常帮助别人。	She is very caring and often helps others.	إنّها محبّة جدًا وكثيرًا ما تساعد الآخرين.	",
         "2288	船慢慢地靠岸了。	The boat slowly came alongside the bank.	رسا القارب على الضفّة ببطء.	",
         "2289	这家百货商店很大。	This department store is very big.	هذا المتجر الكبير ضخم جدًا.	",
-        "2290	这是新版本的软件吗？	Is this the new version?	هل هذه هي النسخة الجديدة؟	",
+        "2290	这是新版本的软件吗？	Is this the new version of the software?	هل هذه هي النسخة الجديدة من البرنامج؟	",
         "2291	傍晚我们去河边散步。	At dusk we go for a walk by the river.	عند الغسق نتمشّى على ضفّة النهر.	",
         "2292	她的戒指上有一颗宝石。	There's a gem on her ring.	في خاتمها حجر كريم.	",
         "2293	这部电影是一个悲剧。	This film is a tragedy.	هذا الفيلم مأساة.	",

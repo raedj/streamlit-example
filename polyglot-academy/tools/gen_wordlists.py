@@ -94,6 +94,8 @@ def check_language(lang):
         for col in ('id', 'term', 'pos', 'topic', 'en', 'ar'):
             if not w[col]:
                 fail(wpath, n, f'{col} is empty')
+        if w['ar'] and not ARABIC_LETTERS.search(w['ar']):
+            fail(wpath, n, f"ar must be an Arabic translation, got {w['ar']!r}")
         if not re.fullmatch(rf'{lang}_w_[a-z0-9_]+', w['id']):
             fail(wpath, n, f"id must look like {lang}_w_<lowercase_ascii>, got {w['id']!r}")
         if w['id'] in ids:
@@ -151,6 +153,9 @@ def check_language(lang):
         for col in ('sentence', 'en', 'ar'):
             if not e[col]:
                 fail(epath, n, f'{col} is empty')
+        # Until 2026-11-08, 109 English examples had the English sentence copied into ar; the content check found them.
+        if e['ar'] and not ARABIC_LETTERS.search(e['ar']):
+            fail(epath, n, f"ar must be an Arabic translation, got {e['ar']!r}")
         c = word_count(lang, e['sentence'])
         lo, hi = (4, 24) if lang == 'zh' else (4, 12)
         if not lo <= c <= hi:

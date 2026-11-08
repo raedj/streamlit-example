@@ -485,7 +485,7 @@ internal object ZhLevel07 {
         "1978	猫头鹰晚上不睡觉。	Owls don't sleep at night.	البوم لا ينام في الليل.	",
         "1979	我的梦想是当医生。	My dream is to be a doctor.	حلمي أن أصبح طبيبًا.	",
         "1980	经理的秘书很能干。	The manager's secretary is very capable.	سكرتيرة المدير كفؤة جدًا.	",
-        "1981	这套房子的面积是一百米。	This flat's area is a hundred metres.	مساحة هذه الشقّة مئة متر.	",
+        "1981	这个房间的面积很大。	This room has a large area.	مساحة هذه الغرفة كبيرة.	",
         "1982	这是我的名片。	This is my business card.	هذه بطاقتي.	",
         "1983	孩子们很喜欢看魔术。	The children love watching magic tricks.	يحبّ الأطفال مشاهدة الخدع السحرية.	",
         "1984	太阳能是一种干净的能源。	Solar power is a clean source of energy.	الطاقة الشمسية مصدر طاقة نظيف.	",
