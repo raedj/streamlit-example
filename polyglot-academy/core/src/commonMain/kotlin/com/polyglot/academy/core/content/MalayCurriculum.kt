@@ -13,6 +13,7 @@ import com.polyglot.academy.core.model.LanguageCode
 import com.polyglot.academy.core.model.LearningTrack
 import com.polyglot.academy.core.model.PartOfSpeech.ADJECTIVE
 import com.polyglot.academy.core.model.PartOfSpeech.ADVERB
+import com.polyglot.academy.core.model.PartOfSpeech.CONJUNCTION
 import com.polyglot.academy.core.model.PartOfSpeech.NOUN
 import com.polyglot.academy.core.model.PartOfSpeech.PHRASE
 import com.polyglot.academy.core.model.PartOfSpeech.VERB
@@ -58,8 +59,8 @@ internal object MalayCurriculum {
             v("roti", "roti", "bread", "الخبز", NOUN, A1, "food", "/roti/")
             v("bil", "bil", "the bill (restaurant)", "الحساب (في المطعم)", NOUN, A2, "food", "/bil/",
                 ex = "Minta bil, ya.", exEn = "The bill, please.", exAr = "الحساب من فضلك.")
-            v("boleh_dapat", "boleh saya dapat …?", "can I have…?", "هل يمكنني أن أحصل على…؟", PHRASE, A1, "food",
-                ex = "Boleh saya dapat secawan teh?", exEn = "Can I have a cup of tea?", exAr = "هل يمكنني أن أحصل على كوب شاي؟")
+            v("boleh_dapat", "boleh saya minta …?", "could I have…? (polite request)", "هل يمكنني أن أطلب…؟", PHRASE, A1, "food",
+                ex = "Boleh saya minta secawan teh?", exEn = "Could I have a cup of tea?", exAr = "هل يمكنني أن أطلب كوب شاي؟")
             v("sedap", "sedap", "delicious", "لذيذ", ADJECTIVE, A1, "food", "/sədap/")
             v("hari_ini", "hari ini", "today", "اليوم", ADVERB, A1, "time", "/hari ini/")
             v("esok", "esok", "tomorrow", "غدًا", ADVERB, A1, "time", "/esoʔ/",
@@ -81,7 +82,7 @@ internal object MalayCurriculum {
             v("gembira", "gembira", "happy", "سعيد", ADJECTIVE, A1, "feelings", "/ɡəmbira/")
             v("pendapat", "pada pendapat saya", "in my opinion", "في رأيي", PHRASE, B1, "feelings",
                 ex = "Pada pendapat saya, ini idea yang baik.", exEn = "In my opinion, this is a good idea.", exAr = "في رأيي هذه فكرة جيدة.")
-            v("walaupun", "walaupun", "although", "على الرغم من أنّ", PHRASE, B2, "feelings", "/walaupun/")
+            v("walaupun", "walaupun", "although", "على الرغم من أنّ", CONJUNCTION, B2, "feelings", "/walaupun/")
             v("berapa", "berapa harganya?", "how much is it?", "بكم؟", PHRASE, A1, "shopping", "/bərapa harɡaɲa/")
             v("mahal", "mahal", "expensive", "غالٍ", ADJECTIVE, A1, "shopping", "/mahal/")
             v("murah", "murah", "cheap", "رخيص", ADJECTIVE, A1, "shopping", "/murah/")
@@ -128,9 +129,9 @@ internal object MalayCurriculum {
             v("menabung", "menabung", "to save money", "يدّخر المال", VERB, B1, "plans")
             v("mungkin", "mungkin", "maybe, perhaps", "ربما", ADVERB, A2, "plans")
             v("cuti", "cuti", "holiday, leave", "العطلة", NOUN, A2, "plans")
-            v("perlu", "perlu / mesti", "need to / must", "يحتاج إلى / يجب", PHRASE, B2, "wishes",
+            v("perlu", "perlu / mesti", "need to / must", "يحتاج إلى / يجب", PHRASE, A2, "wishes",
                 ex = "Awak perlu berehat.", exEn = "You need to rest.", exAr = "تحتاج إلى أن ترتاح.")
-            v("mahu_awak", "saya mahu awak …", "I want you to…", "أريدك أن…", PHRASE, B2, "wishes")
+            v("mahu_awak", "saya mahu awak …", "I want you to…", "أريدك أن…", PHRASE, B1, "wishes")
             v("harap", "saya harap", "I hope", "آمل", PHRASE, B1, "wishes")
             v("nasib", "nasib", "luck, fate", "الحظ", NOUN, B1, "wishes")
             v("berjaya", "berjaya", "to succeed; successful", "ينجح؛ ناجح", VERB, B1, "wishes")
@@ -188,7 +189,7 @@ internal object MalayCurriculum {
             v("ev_bilik_bujang", "bilik bujang", "single room", "غرفة لشخص واحد", NOUN, A2, "hotel")
             v("ev_bilik_kelamin", "bilik kelamin", "double room", "غرفة مزدوجة", NOUN, A2, "hotel")
             v("ev_kunci", "kunci", "key", "المفتاح", NOUN, A1, "hotel")
-            v("ev_sarapan", "Sarapan termasuk?", "Is breakfast included?", "هل الفطور مشمول؟", PHRASE, A2, "hotel")
+            v("ev_sarapan", "Termasuk sarapan?", "Is breakfast included?", "هل الفطور مشمول؟", PHRASE, A2, "hotel")
             v("ev_wifi", "Apa kata laluan Wi-Fi?", "What's the Wi-Fi password?", "ما كلمة مرور الواي فاي؟", PHRASE, A2, "hotel")
             v("ev_kaunter", "kaunter penyambut tetamu", "reception desk", "مكتب الاستقبال", NOUN, A2, "hotel")
             v("ev_daftar_keluar", "daftar keluar", "to check out", "تسجيل المغادرة", VERB, A2, "hotel")
@@ -237,9 +238,9 @@ internal object MalayCurriculum {
                 listOf(ex("Saya sedang makan.", "I'm eating (right now).", "أنا آكل الآن."), ex("Dia sudah pergi.", "He has already left.", "لقد غادر بالفعل.")),
                 listOf(g("Not yet is belum, not tidak sudah: Saya belum makan.", "«لم … بعد» تُقال belum لا tidak sudah: Saya belum makan."))),
             grammar("politeness", L, A2, g("Polite requests", "الطلب المهذب"),
-                g("Ask with 'Boleh saya dapat …?' (can I have …?) or 'Minta …' (may I have …). Use tolong + verb to ask someone to do something: Tolong bawa bil. Address strangers as encik (Mr), puan (Mrs/Ms) or cik.",
-                    "اطلب بصيغة 'Boleh saya dapat …?' (هل يمكنني أن أحصل على…؟) أو 'Minta …'. واستخدم tolong + الفعل لتطلب من شخص أن يفعل شيئًا: Tolong bawa bil. وخاطب الغرباء بـ encik (السيد) أو puan (السيدة) أو cik."),
-                listOf(ex("Boleh saya dapat secawan kopi?", "Can I have a cup of coffee?", "هل يمكنني أن أحصل على كوب قهوة؟"), ex("Tolong bawa bil, encik.", "Please bring the bill, sir.", "أحضر الحساب من فضلك يا سيدي.")),
+                g("Ask with 'Boleh saya minta …?' (could I have …?) or simply 'Minta …'. Use tolong + verb to ask someone to do something: Tolong bawa bil. Address strangers as encik (Mr), puan (Mrs/Ms) or cik.",
+                    "اطلب بصيغة 'Boleh saya minta …?' (هل يمكنني أن أطلب…؟) أو 'Minta …' وحدها. واستخدم tolong + الفعل لتطلب من شخص أن يفعل شيئًا: Tolong bawa bil. وخاطب الغرباء بـ encik (السيد) أو puan (السيدة) أو cik."),
+                listOf(ex("Boleh saya minta secawan kopi?", "Could I have a cup of coffee?", "هل يمكنني أن أطلب كوب قهوة؟"), ex("Tolong bawa bil, encik.", "Please bring the bill, sir.", "أحضر الحساب من فضلك يا سيدي.")),
                 listOf(g("'Bagi kopi!' (give coffee!) sounds abrupt to a waiter.", "عبارة «Bagi kopi!» (أعطني قهوة!) تبدو جافة مع النادل."))),
             grammar("past", L, B1, g("Talking about the past", "الحديث عن الماضي"),
                 g("Use a time word (semalam, tadi, minggu lepas) or sudah / telah; the verb stays the same: Semalam saya pergi ke pawagam. To say 'have never / not yet', use belum pernah or belum: Saya belum pernah ke Sabah.",
@@ -286,17 +287,17 @@ internal object MalayCurriculum {
                 Skill.SPEAKING, listOf("helo", "selamat_pagi", "selamat_malam", "terima_kasih", "tolong_please", "maaf", "jumpa_lagi", "nama_saya", "berkenalan"), "no_to_be",
                 extra = listOf(
                     fill("s1", L, "Nama ___ Aminah.", listOf("saya")),
-                    fill("s2", L, "___ berkenalan.", listOf("Gembira")),
+                    fill("s2", L, "___ berkenalan.", listOf("Gembira", "Selamat", "Senang")),
                 ), minutes = 6),
             f.lesson("keluarga", A1, "basics", g("Family", "العائلة"), g("Talk about your family and count people and things.", "تحدّث عن عائلتك وعُدّ الأشخاص والأشياء."),
                 Skill.VOCABULARY, listOf("keluarga", "ibu", "bapa", "abang", "kakak", "adik", "kawan"), "plural",
-                extra = listOf(choice("k1", L, "Saya ada dua ___. (siblings)", listOf("adik", "adik-adik", "adiknya-adik"), 0,
+                extra = listOf(choice("k1", L, "Saya ada dua ___. (younger siblings)", listOf("adik", "adik-adik", "adiknya-adik"), 0,
                     explanation = g("After a number, the noun is not repeated.", "بعد العدد لا يُكرَّر الاسم."))),
                 prerequisites = listOf("salam")),
-            f.lesson("kafe", A1, "everyday", g("At the café", "في المقهى"), g("Order politely with 'Boleh saya dapat …?'.", "اطلب بأدب باستخدام 'Boleh saya dapat …?'."),
+            f.lesson("kafe", A1, "everyday", g("At the café", "في المقهى"), g("Order politely with 'Boleh saya minta …?'.", "اطلب بأدب باستخدام 'Boleh saya minta …?'."),
                 Skill.SPEAKING, listOf("air", "teh", "kopi", "roti", "bil", "boleh_dapat", "sedap"), "politeness",
                 extra = listOf(
-                    order("c1", L, listOf("Boleh", "saya", "dapat", "secawan", "teh?"), g("Can I have a cup of tea?", "هل يمكنني أن أحصل على كوب شاي؟")),
+                    order("c1", L, listOf("Boleh", "saya", "minta", "secawan", "teh?"), g("Could I have a cup of tea?", "هل يمكنني أن أطلب كوب شاي؟")),
                     dictation("c2", L, "Minta bil, ya.", listOf("Minta bil ya")),
                 ), prerequisites = listOf("keluarga")),
             f.lesson("rutin", A2, "everyday", g("Daily routine", "الروتين اليومي"), g("Describe your day with sedang, sudah and biasanya.", "صِف يومك باستخدام sedang وsudah وbiasanya."),
@@ -431,7 +432,7 @@ internal object MalayCurriculum {
                 "ms_r_aminah", L, A1, "Hari Aminah", g("Aminah's day", "يوم أمينة"),
                 listOf("Aminah bangun pukul tujuh pagi.", "Dia minum teh dan makan roti.", "Dia bekerja di sebuah bank.", "Pada waktu petang, dia belajar bahasa Inggeris.", "Dia penat tetapi gembira."),
                 listOf(g("Aminah gets up at seven in the morning.", "تنهض أمينة في السابعة صباحًا."), g("She drinks tea and eats bread.", "تشرب الشاي وتأكل الخبز."),
-                    g("She works in a bank.", "تعمل في بنك."), g("In the evening she studies English.", "في المساء تدرس الإنجليزية."), g("She is tired but happy.", "هي متعبة لكنها سعيدة.")),
+                    g("She works in a bank.", "تعمل في بنك."), g("In the late afternoon she studies English.", "في آخر النهار تدرس الإنجليزية."), g("She is tired but happy.", "هي متعبة لكنها سعيدة.")),
                 listOf("ms_bangun", "ms_teh", "ms_roti", "ms_bekerja", "ms_belajar", "ms_penat", "ms_gembira"),
                 listOf(
                     Exercise.MultipleChoice("ms_r_aminah_q1", Skill.READING, Instr.choose, "Di mana Aminah bekerja?", listOf("Di stesen", "Di bank", "Di kafe"), 1),
@@ -495,7 +496,7 @@ internal object MalayCurriculum {
                     ScenarioBeat(listOf("wi-fi", "wifi", "kata laluan", "internet"), g("Ask for the Wi-Fi password.", "اسأل عن كلمة مرور الواي فاي."),
                         "Apa kata laluan Wi-Fi?", "Ada pada kad anda. Selamat menginap!", g("It's on your card. Enjoy your stay!", "إنها على بطاقتك. إقامة سعيدة!")),
                 ),
-                listOf("Saya ada tempahan atas nama …", "Ini pasport saya.", "Sarapan termasuk?"),
+                listOf("Saya ada tempahan atas nama …", "Ini pasport saya.", "Termasuk sarapan?"),
             ),
             RolePlayScenario(
                 "ms_s_restoran", L, A2, g("Dinner at a restaurant", "العشاء في مطعم"), g("A seafood restaurant in Kota Kinabalu.", "مطعم مأكولات بحرية في كوتا كينابالو."),
@@ -533,7 +534,7 @@ internal object MalayCurriculum {
             item("a1_2", A1, Skill.VOCABULARY, "'Terima kasih' means…", listOf("please", "thank you", "sorry"), 1),
             item("a1_3", A1, Skill.GRAMMAR, "tiga ___ (three cats)", listOf("kucing", "kucing-kucing", "kucingan"), 0),
             item("a2_1", A2, Skill.GRAMMAR, "Saya ___ makan sekarang. (in progress)", listOf("sedang", "sudah", "akan"), 0),
-            item("a2_2", A2, Skill.GRAMMAR, "Dia pergi ___ sekolah.", listOf("ke", "di", "dari"), 0),
+            item("a2_2", A2, Skill.GRAMMAR, "Dia pergi ___ sekolah.", listOf("ke", "di", "pada"), 0),
             item("a2_3", A2, Skill.VOCABULARY, "Di restoran, untuk membayar anda minta ___.", listOf("menu", "bil", "tiket"), 1),
             item("b1_1", B1, Skill.GRAMMAR, "Saya ___ makan, terima kasih. (already)", listOf("sudah", "akan", "sedang"), 0),
             item("b1_2", B1, Skill.GRAMMAR, "Esok kami ___ pergi ke Melaka.", listOf("akan", "sudah", "telah"), 0),

@@ -75,6 +75,10 @@ class FlagContentTest(unittest.TestCase):
             f.write(ITEMS.replace('helo', 'halo'))
         fc.check('ms', [('openai', 'm')], yes=True, sender=counting)
         self.assertEqual([5, 1], calls)
+        with open(os.path.join(self.tmp.name, 'content/review/items/ms.curriculum.tsv'), 'w', encoding='utf-8') as f:
+            f.write(ITEMS.replace('helo', 'halo').replace('ms_x_q1\texercise\tA1', 'ms_x_q1\texercise\tA2'))
+        fc.check('ms', [('openai', 'm')], yes=True, sender=counting)
+        self.assertEqual([5, 1, 1], calls, 'a new level alone sends the item again')
 
     def test_tester_reports_are_counted_without_changing_what_is_disputed(self):
         d = os.path.join(self.tmp.name, 'content/review/tester_reports')

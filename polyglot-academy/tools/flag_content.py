@@ -103,7 +103,8 @@ def load_items(lang, source='all'):
     if source in ('wordlist', 'all'):
         items += wordlist_items(lang)
     for it in items:
-        it['hash'] = digest(it['text'])
+        # The level is sent and judged too, so a level change must send the item again.
+        it['hash'] = digest(it['level'] + '\t' + it['text'])
     return items
 
 
