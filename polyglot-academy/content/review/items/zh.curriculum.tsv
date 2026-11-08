@@ -15,7 +15,7 @@ zh_laoshi	word	A1	term: 老师 ¦ reading: lǎoshī ¦ traditional: 老師 ¦ pa
 zh_xuesheng	word	A1	term: 学生 ¦ reading: xuésheng ¦ traditional: 學生 ¦ part_of_speech: noun ¦ meaning: en: student | ar: طالب ¦ example: 我是学生。 ¦ example_meaning: en: I am a student. | ar: أنا طالب.
 zh_mama	word	Pre-A1	term: 妈妈 ¦ reading: māma ¦ traditional: 媽媽 ¦ part_of_speech: noun ¦ meaning: en: mum, mother | ar: أم
 zh_baba	word	Pre-A1	term: 爸爸 ¦ reading: bàba ¦ part_of_speech: noun ¦ meaning: en: dad, father | ar: أب
-zh_shi	word	Pre-A1	term: 是 ¦ reading: shì ¦ part_of_speech: verb ¦ meaning: en: to be (is/am/are) | ar: يكون (هو/هي)
+zh_shi	word	Pre-A1	term: 是 ¦ reading: shì ¦ part_of_speech: verb ¦ meaning: en: to be (is/am/are) | ar: يكون (فعل الكينونة)
 zh_ren	word	Pre-A1	term: 人 ¦ reading: rén ¦ part_of_speech: noun ¦ meaning: en: person | ar: شخص
 zh_yi	word	Pre-A1	term: 一 ¦ reading: yī ¦ part_of_speech: numeral ¦ meaning: en: one | ar: واحد
 zh_er	word	Pre-A1	term: 二 ¦ reading: èr ¦ part_of_speech: numeral ¦ meaning: en: two | ar: اثنان
@@ -53,8 +53,8 @@ zh_hen	word	A1	term: 很 ¦ reading: hěn ¦ part_of_speech: adverb ¦ meaning: 
 zh_hao	word	Pre-A1	term: 好 ¦ reading: hǎo ¦ part_of_speech: adjective ¦ meaning: en: good | ar: جيد
 zh_gui	word	A2	term: 贵 ¦ reading: guì ¦ traditional: 貴 ¦ part_of_speech: adjective ¦ meaning: en: expensive | ar: غالٍ ¦ example: 这个太贵了。 ¦ example_meaning: en: This one is too expensive. | ar: هذا غالٍ جدًا.
 zh_pianyi	word	A2	term: 便宜 ¦ reading: piányi ¦ part_of_speech: adjective ¦ meaning: en: cheap | ar: رخيص
-zh_yinwei	word	B1	term: 因为 ¦ reading: yīnwèi ¦ traditional: 因為 ¦ part_of_speech: phrase ¦ meaning: en: because | ar: لأنّ
-zh_suoyi	word	B1	term: 所以 ¦ reading: suǒyǐ ¦ part_of_speech: phrase ¦ meaning: en: so, therefore | ar: لذلك
+zh_yinwei	word	B1	term: 因为 ¦ reading: yīnwèi ¦ traditional: 因為 ¦ part_of_speech: conjunction ¦ meaning: en: because | ar: لأنّ
+zh_suoyi	word	B1	term: 所以 ¦ reading: suǒyǐ ¦ part_of_speech: conjunction ¦ meaning: en: so, therefore | ar: لذلك
 zh_huiyi	word	A2	term: 会议 ¦ reading: huìyì ¦ traditional: 會議 ¦ part_of_speech: noun ¦ meaning: en: meeting | ar: الاجتماع ¦ example: 会议九点开始。 ¦ example_meaning: en: The meeting starts at nine. | ar: يبدأ الاجتماع في التاسعة.
 zh_gongsi	word	A2	term: 公司 ¦ reading: gōngsī ¦ part_of_speech: noun ¦ meaning: en: company | ar: الشركة
 zh_kehu	word	A2	term: 客户 ¦ reading: kèhù ¦ traditional: 客戶 ¦ part_of_speech: noun ¦ meaning: en: client, customer | ar: العميل
@@ -73,7 +73,7 @@ zh_kan	word	A1	term: 看 ¦ reading: kàn ¦ part_of_speech: verb ¦ meaning: en
 zh_shu	word	A1	term: 书 ¦ reading: shū ¦ traditional: 書 ¦ part_of_speech: noun ¦ meaning: en: book | ar: كتاب
 zh_dianying	word	A2	term: 电影 ¦ reading: diànyǐng ¦ traditional: 電影 ¦ part_of_speech: noun ¦ meaning: en: film, movie | ar: فيلم
 zh_meiyou	word	A2	term: 没有 ¦ reading: méiyǒu ¦ traditional: 沒有 ¦ part_of_speech: adverb ¦ meaning: en: did not; have not (negates completed actions) | ar: لم (نفي الفعل المكتمل)
-zh_bi	word	B1	term: 比 ¦ reading: bǐ ¦ part_of_speech: particle ¦ meaning: en: than (in comparisons) | ar: من (في المقارنة) ¦ example: 我比他高。 ¦ example_meaning: en: I am taller than him. | ar: أنا أطول منه.
+zh_bi	word	B1	term: 比 ¦ reading: bǐ ¦ part_of_speech: preposition ¦ meaning: en: than (in comparisons) | ar: من (في المقارنة) ¦ example: 我比他高。 ¦ example_meaning: en: I am taller than him. | ar: أنا أطول منه.
 zh_geng	word	B1	term: 更 ¦ reading: gèng ¦ part_of_speech: adverb ¦ meaning: en: even more | ar: أكثر (للمقارنة)
 zh_gao	word	A1	term: 高 ¦ reading: gāo ¦ part_of_speech: adjective ¦ meaning: en: tall, high | ar: طويل، مرتفع
 zh_da	word	A1	term: 大 ¦ reading: dà ¦ part_of_speech: adjective ¦ meaning: en: big; older (in age) | ar: كبير؛ أكبر سنًا
@@ -85,14 +85,14 @@ zh_fin_zhanghu	word	A2	term: 银行账户 ¦ reading: yínháng zhànghù ¦ tra
 zh_fin_daikuan	word	B1	term: 贷款 ¦ reading: dàikuǎn ¦ traditional: 貸款 ¦ part_of_speech: noun ¦ meaning: en: loan | ar: قرض ¦ example: 银行批准了贷款。 ¦ example_meaning: en: The bank approved the loan. | ar: وافق البنك على القرض.
 zh_fin_lilv	word	B1	term: 利率 ¦ reading: lìlǜ ¦ part_of_speech: noun ¦ meaning: en: interest rate | ar: سعر الفائدة
 zh_fin_huankuan	word	B1	term: 还款 ¦ reading: huánkuǎn ¦ traditional: 還款 ¦ part_of_speech: verb ¦ meaning: en: repayment; to repay | ar: سداد
-zh_fin_diya	word	B2	term: 抵押 ¦ reading: dǐyā ¦ part_of_speech: noun ¦ meaning: en: collateral; to pledge | ar: رهن، ضمان
+zh_fin_diya	word	B2	term: 抵押 ¦ reading: dǐyā ¦ part_of_speech: verb ¦ meaning: en: to pledge as collateral; to mortgage | ar: يرهن، رهن
 zh_fin_weiyue	word	B2	term: 违约 ¦ reading: wéiyuē ¦ traditional: 違約 ¦ part_of_speech: noun ¦ meaning: en: default; breach of contract | ar: تعثّر، إخلال بالعقد
 zh_fin_fuzhaibiao	word	B2	term: 资产负债表 ¦ reading: zīchǎn fùzhài biǎo ¦ traditional: 資產負債表 ¦ part_of_speech: noun ¦ meaning: en: balance sheet | ar: الميزانية العمومية
 zh_fin_liudongxing	word	B2	term: 流动性 ¦ reading: liúdòngxìng ¦ traditional: 流動性 ¦ part_of_speech: noun ¦ meaning: en: liquidity | ar: السيولة
 zh_cr_xindai_fengxian	word	B2	term: 信贷风险 ¦ reading: xìndài fēngxiǎn ¦ traditional: 信貸風險 ¦ part_of_speech: noun ¦ meaning: en: credit risk | ar: مخاطر الائتمان ¦ example: 银行评估每个客户的信贷风险。 ¦ example_meaning: en: The bank assesses each customer's credit risk. | ar: يقيّم البنك مخاطر الائتمان لكل عميل.
 zh_cr_buliang_daikuan	word	B2	term: 不良贷款 ¦ reading: bùliáng dàikuǎn ¦ traditional: 不良貸款 ¦ part_of_speech: noun ¦ meaning: en: non-performing loan | ar: قرض متعثّر
 zh_cr_zhaiwu_chongzu	word	C1	term: 债务重组 ¦ reading: zhàiwù chóngzǔ ¦ traditional: 債務重組 ¦ part_of_speech: noun ¦ meaning: en: debt restructuring | ar: إعادة هيكلة الدين
-zh_cr_hexiao	word	C1	term: 核销 ¦ reading: héxiāo ¦ traditional: 核銷 ¦ part_of_speech: verb ¦ meaning: en: write-off | ar: شطب (الدَّين)
+zh_cr_hexiao	word	C1	term: 核销 ¦ reading: héxiāo ¦ traditional: 核銷 ¦ part_of_speech: verb ¦ meaning: en: to write off; to verify and cancel | ar: يشطب (الدَّين)؛ يتحقّق ويُلغي (قسيمة مثلًا)
 zh_cr_xinyong_pingji	word	C1	term: 信用评级 ¦ reading: xìnyòng píngjí ¦ traditional: 信用評級 ¦ part_of_speech: noun ¦ meaning: en: credit rating | ar: التصنيف الائتماني
 zh_cr_danbaoren	word	B2	term: 担保人 ¦ reading: dānbǎorén ¦ traditional: 擔保人 ¦ part_of_speech: noun ¦ meaning: en: guarantor | ar: الكفيل
 zh_lg_hetong	word	B1	term: 合同 ¦ reading: hétong ¦ part_of_speech: noun ¦ meaning: en: contract | ar: عقد ¦ example: 双方昨天签了合同。 ¦ example_meaning: en: Both parties signed the contract yesterday. | ar: وقّع الطرفان العقد أمس.
@@ -130,9 +130,9 @@ zh_ev_shuangrenjian	word	A2	term: 双人间 ¦ reading: shuāngrénjiān ¦ trad
 zh_ev_fangka	word	A2	term: 房卡 ¦ reading: fángkǎ ¦ part_of_speech: noun ¦ meaning: en: room key card | ar: بطاقة الغرفة
 zh_ev_zaocan	word	A2	term: 含早餐吗？ ¦ reading: hán zǎocān ma? ¦ traditional: 含早餐嗎？ ¦ part_of_speech: phrase ¦ meaning: en: Is breakfast included? | ar: هل الفطور مشمول؟
 zh_ev_wifi_mima	word	A2	term: 无线网密码是多少？ ¦ reading: wúxiànwǎng mìmǎ shì duōshao? ¦ traditional: 無線網密碼是多少？ ¦ part_of_speech: phrase ¦ meaning: en: What's the Wi-Fi password? | ar: ما كلمة مرور الواي فاي؟
-zh_ev_qiantai	word	A2	term: 前台 ¦ reading: qiántái ¦ traditional: 前檯 ¦ part_of_speech: noun ¦ meaning: en: reception | ar: الاستقبال
+zh_ev_qiantai	word	A2	term: 前台 ¦ reading: qiántái ¦ traditional: 前臺 ¦ part_of_speech: noun ¦ meaning: en: reception | ar: الاستقبال
 zh_ev_tuifang	word	A2	term: 退房 ¦ reading: tuìfáng ¦ part_of_speech: verb ¦ meaning: en: to check out | ar: يغادر الفندق
-zh_ev_zhantai	word	A2	term: 站台 ¦ reading: zhàntái ¦ traditional: 站檯 ¦ part_of_speech: noun ¦ meaning: en: platform | ar: الرصيف ¦ example: 火车从四号站台出发。 ¦ example_meaning: en: The train leaves from platform four. | ar: يغادر القطار من الرصيف رقم أربعة.
+zh_ev_zhantai	word	A2	term: 站台 ¦ reading: zhàntái ¦ traditional: 站臺 ¦ part_of_speech: noun ¦ meaning: en: platform | ar: الرصيف ¦ example: 火车从四号站台出发。 ¦ example_meaning: en: The train leaves from platform four. | ar: يغادر القطار من الرصيف رقم أربعة.
 zh_ev_wangfanpiao	word	A2	term: 往返票 ¦ reading: wǎngfǎn piào ¦ part_of_speech: noun ¦ meaning: en: return ticket | ar: تذكرة ذهاب وعودة
 zh_ev_danchengpiao	word	A2	term: 单程票 ¦ reading: dānchéng piào ¦ traditional: 單程票 ¦ part_of_speech: noun ¦ meaning: en: single (one-way) ticket | ar: تذكرة ذهاب فقط
 zh_ev_chufa	word	A2	term: 出发 ¦ reading: chūfā ¦ traditional: 出發 ¦ part_of_speech: verb ¦ meaning: en: to depart; departure | ar: يغادر؛ المغادرة
@@ -196,9 +196,9 @@ zh_x_cr1	exercise	B2	question: A loan that is not being repaid: ___贷款 ¦ opt
 zh_x_cr2	exercise	B2	question: Guarantor: ¦ options: 担保人 / 当事人 / 收银员 ¦ correct: 担保人
 zh_x_lg1	exercise	B2	question: 双方昨天签了___。 ¦ options: 合同 / 贷款 / 利率 ¦ correct: 合同
 zh_x_lg2	exercise	B2	question: A section of a contract: ¦ options: 条款 / 抵押 / 账户 ¦ correct: 条款
-zh_x_ev1	exercise	A1	sentence: 请说___一点。 ¦ accepted: 慢
+zh_x_ev1	exercise	A1	sentence: 请说___一点。 ¦ accepted: 慢 ¦ hint: en: Please speak a little more slowly. | ar: تكلّم ببطء أكثر من فضلك.
 zh_x_ev2	exercise	A1	question: Someone says 谢谢. A natural reply: ¦ options: 不客气 / 我不知道 / 请问 ¦ correct: 不客气
-zh_x_ev3	exercise	A2	sentence: 快叫___车！ ¦ accepted: 救护
+zh_x_ev3	exercise	A2	sentence: 快叫___车！ ¦ accepted: 救护 ¦ hint: en: Call an ambulance, quickly! | ar: اطلب سيارة إسعاف بسرعة!
 zh_x_ev4	exercise	A2	question: I've lost my passport: ¦ options: 我的护照丢了 / 我的护照很好 / 我买了护照 ¦ correct: 我的护照丢了
 zh_x_ev5	exercise	A2	question: To ask for the bill you say… ¦ options: 买单 / 菜单 / 两位 ¦ correct: 买单
 zh_x_ev6	exercise	A2	sentence: 你推荐什么 ¦ meaning: en: What do you recommend? | ar: بماذا تنصح؟
@@ -206,7 +206,7 @@ zh_x_ev7	exercise	A2	sentence: 含___吗？ ¦ accepted: 早餐
 zh_x_ev8	exercise	A2	audio: 我预订了一个房间 ¦ accepted: 我预订了一个房间 / 我预订了一个房间。
 zh_x_ev9	exercise	A2	question: 往返票 is… ¦ options: a return ticket / a single ticket / a boarding pass ¦ correct: a return ticket
 zh_x_ev10	exercise	A2	audio: 火车晚点了 ¦ accepted: 火车晚点了 / 火车晚点了。
-zh_x_ev11	exercise	A2	sentence: 博物馆几点___门？ ¦ accepted: 开
+zh_x_ev11	exercise	A2	sentence: 博物馆几点___门？ ¦ accepted: 开 ¦ hint: en: What time does the museum open? | ar: متى يفتح المتحف؟
 zh_x_ev12	exercise	A2	question: 门票 means… ¦ options: entrance ticket / tour guide / souvenir ¦ correct: entrance ticket
 zh_x_d1	exercise		audio: 我是学生 ¦ accepted: 我是学生 / 我是学生。
 zh_x_d2	exercise		audio: 你好吗 ¦ accepted: 你好吗 / 你好吗？

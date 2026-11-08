@@ -235,3 +235,15 @@
 {"id": "zh_s_hotel", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "c54eb6e81406", "date": "2026-11-08"}
 {"id": "zh_s_restaurant", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "40c921374504", "date": "2026-11-08"}
 {"id": "zh_s_station", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "a049ab8d9a0e", "date": "2026-11-08"}
+{"id": "zh_shi", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "ec47abec5e02", "date": "2026-11-08"}
+{"id": "zh_yinwei", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "e411b6328bcd", "date": "2026-11-08"}
+{"id": "zh_suoyi", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "5d3a4ddcf672", "date": "2026-11-08"}
+{"id": "zh_bi", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "77953a82ec65", "date": "2026-11-08"}
+{"id": "zh_fin_diya", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "100ba0549bff", "date": "2026-11-08"}
+{"id": "zh_cr_hexiao", "verdict": "doubtful", "problem": "The Arabic covers only writing off a debt. The English also gives 'verify and cancel' (e.g. redeeming coupons or vouchers), which the Arabic omits.", "fix": "يشطب (الدَّين)؛ يتحقق ويلغي (مثل القسائم)", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "dcdda679c71e", "date": "2026-11-08"}
+{"id": "zh_ev_qiantai", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "ad733370377b", "date": "2026-11-08"}
+{"id": "zh_ev_zhantai", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "bc723bdc6161", "date": "2026-11-08"}
+{"id": "zh_x_ev1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "308fcc11723c", "date": "2026-11-08"}
+{"id": "zh_x_ev3", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "41023bebf0c4", "date": "2026-11-08"}
+{"id": "zh_x_ev11", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "40432ec7745d", "date": "2026-11-08"}
+{"id": "zh_cr_hexiao", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "f4a3c28281cc", "date": "2026-11-08"}

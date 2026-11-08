@@ -13,6 +13,7 @@ import com.polyglot.academy.core.model.LanguageCode
 import com.polyglot.academy.core.model.LearningTrack
 import com.polyglot.academy.core.model.PartOfSpeech.ADJECTIVE
 import com.polyglot.academy.core.model.PartOfSpeech.ADVERB
+import com.polyglot.academy.core.model.PartOfSpeech.CONJUNCTION
 import com.polyglot.academy.core.model.PartOfSpeech.NOUN
 import com.polyglot.academy.core.model.PartOfSpeech.PHRASE
 import com.polyglot.academy.core.model.PartOfSpeech.VERB
@@ -98,7 +99,7 @@ internal object EnglishCurriculum {
             v("worried", "worried", "unhappy because you think something bad may happen", "قلق", ADJECTIVE, A2, "feelings", "/ˈwɜːrid/")
             v("i_think", "I think", "used to give your opinion", "أعتقد / في رأيي", PHRASE, A2, "feelings", "/aɪ θɪŋk/",
                 ex = "I think this book is interesting.", exEn = "I think this book is interesting.", exAr = "أعتقد أن هذا الكتاب ممتع.")
-            v("although", "although", "despite the fact that", "على الرغم من أن", ADVERB, B1, "feelings", "/ɔːlˈðoʊ/",
+            v("although", "although", "despite the fact that", "على الرغم من أن", CONJUNCTION, B1, "feelings", "/ɔːlˈðoʊ/",
                 ex = "Although it was raining, we went out.", exEn = "Although it was raining, we went out.", exAr = "على الرغم من أن المطر كان يهطل، خرجنا.")
             // Work & study (B1)
             v("meeting", "meeting", "when people come together to discuss something", "اجتماع", NOUN, A2, "work", "/ˈmiːtɪŋ/",
@@ -126,7 +127,7 @@ internal object EnglishCurriculum {
             v("abroad", "abroad", "in or to another country", "في الخارج", ADVERB, B1, "plans", "/əˈbrɔːd/")
             v("save_money", "save (money)", "to keep money instead of spending it", "يدّخر (المال)", VERB, B1, "plans")
             v("decide", "decide", "to make a choice", "يقرّر", VERB, B1, "plans", "/dɪˈsaɪd/")
-            v("unless", "unless", "except if", "ما لم / إلا إذا", PHRASE, B2, "conditions", "/ənˈles/",
+            v("unless", "unless", "except if", "ما لم / إلا إذا", CONJUNCTION, B2, "conditions", "/ənˈles/",
                 ex = "I won't go unless you come too.", exEn = "I won't go unless you come too.", exAr = "لن أذهب إلا إذا أتيت أنت أيضًا.")
             v("afford", "afford", "to have enough money for something", "يقدر على تحمّل تكلفة", VERB, B2, "conditions", "/əˈfɔːd/")
             v("opportunity", "opportunity", "a chance to do something", "فرصة", NOUN, B1, "conditions", "/ˌɒpəˈtjuːnəti/")
@@ -162,14 +163,14 @@ internal object EnglishCurriculum {
             v("ev_check_in", "check in", "to arrive and register at a hotel", "تسجيل الوصول", VERB, A2, "hotel")
             v("ev_check_out", "check out", "to pay and leave a hotel", "تسجيل المغادرة", VERB, A2, "hotel")
             v("ev_single_room", "single room", "a room for one person", "غرفة لشخص واحد", NOUN, A2, "hotel")
-            v("ev_double_room", "double room", "a room for two people", "غرفة مزدوجة", NOUN, A2, "hotel")
+            v("ev_double_room", "double room", "a room for two people", "غرفة لشخصين (مزدوجة)", NOUN, A2, "hotel")
             v("ev_key", "key", "a small object that opens a door", "مفتاح", NOUN, A1, "hotel")
             v("ev_breakfast_included", "Is breakfast included?", "asking if breakfast is in the price", "هل الفطور مشمول؟", PHRASE, A2, "hotel")
             v("ev_wifi_password", "What's the Wi-Fi password?", "asking how to connect to the internet", "ما كلمة مرور الواي فاي؟", PHRASE, A2, "hotel")
             v("ev_platform", "platform", "where you get on a train", "الرصيف", NOUN, A2, "transport", ex = "The train leaves from platform four.", exEn = "The train leaves from platform four.", exAr = "يغادر القطار من الرصيف رقم أربعة.")
             v("ev_return_ticket", "return ticket", "a ticket to go and come back", "تذكرة ذهاب وعودة", NOUN, A2, "transport")
             v("ev_single_ticket", "single ticket", "a ticket for one direction", "تذكرة ذهاب فقط", NOUN, A2, "transport")
-            v("ev_departure", "departure", "the time something leaves", "المغادرة", NOUN, A2, "transport")
+            v("ev_departure", "departure", "leaving; the time a train or plane leaves", "المغادرة", NOUN, A2, "transport")
             v("ev_delayed", "delayed", "later than planned", "متأخر", ADJECTIVE, A2, "transport")
             v("ev_boarding_pass", "boarding pass", "the card you need to get on a plane", "بطاقة الصعود إلى الطائرة", NOUN, A2, "transport")
             v("ev_luggage", "luggage", "the bags you travel with", "الأمتعة", NOUN, A2, "transport")
@@ -234,7 +235,7 @@ internal object EnglishCurriculum {
                 Skill.SPEAKING, listOf("how_much", "cheap", "expensive", "size"), "comparatives",
                 extra = listOf(
                     fill("s1", L, "This shirt is ___ (cheap) than that one.", listOf("cheaper")),
-                    fill("s2", L, "This bag is more ___ than the black one.", listOf("expensive")),
+                    fill("s2", L, "This bag is more ___ than the black one.", listOf("expensive"), g("It costs more money.", "ثمنها أعلى.")),
                 ), prerequisites = listOf("travel")),
             f.lesson("opinions", B1, "work", g("Opinions and feelings", "الآراء والمشاعر"), g("Give opinions and explain how you feel.", "عبّر عن رأيك واشرح مشاعرك."),
                 Skill.SPEAKING, listOf("happy", "worried", "i_think", "although", "improve"), "present_perfect",
@@ -248,7 +249,7 @@ internal object EnglishCurriculum {
                 Skill.READING, listOf("meeting", "deadline", "experience", "schedule", "achieve"), "present_perfect",
                 extra = listOf(
                     fill("w1", L, "We have ___ (meet) the deadline.", listOf("met")),
-                    writing("w2", L, g("Write an email to a colleague asking to move a meeting.", "اكتب رسالة لزميل تطلب فيها تأجيل اجتماع."), 40, listOf("meeting", "schedule", "could we")),
+                    writing("w2", L, g("Write an email to a colleague asking to move a meeting.", "اكتب رسالة لزميل تطلب فيها تغيير موعد اجتماع."), 40, listOf("meeting", "schedule", "could we")),
                 ), prerequisites = listOf("opinions")),
             f.lesson("plans", B1, "next", g("Plans and predictions", "الخطط والتوقّعات"), g("Talk about the future with will and going to.", "تحدّث عن المستقبل باستخدام will وgoing to."),
                 Skill.SPEAKING, listOf("plan", "going_to", "probably", "abroad", "save_money", "decide"), "future",
@@ -300,7 +301,7 @@ internal object EnglishCurriculum {
             f.lesson("ev_sightseeing", A2, "tourism", g("Sightseeing", "السياحة والمعالم"), g("Museums, tickets, tours and photos.", "المتاحف والتذاكر والجولات والصور."),
                 Skill.READING, listOf("ev_museum", "ev_opening_hours", "ev_entrance_fee", "ev_guided_tour", "ev_map", "ev_take_photo", "ev_old_town", "ev_souvenir"),
                 extra = listOf(
-                    fill("ev11", L, "What time does the museum ___?", listOf("open")),
+                    fill("ev11", L, "What time does the museum ___?", listOf("open"), g("Ask what time it opens.", "اسأل متى يفتح المتحف.")),
                     choice("ev12", L, "The money you pay to go into a museum is the…", listOf("entrance fee", "tip", "deposit"), 0, Skill.VOCABULARY),
                 )),
         )
@@ -538,7 +539,7 @@ internal object EnglishCurriculum {
             item("a2_2", A2, Skill.GRAMMAR, "This hotel is ___ than the other one.", listOf("more cheap", "cheaper", "cheapest", "more cheaper"), 1),
             item("a2_3", A2, Skill.VOCABULARY, "Could we have the ___, please? We'd like to pay.", listOf("menu", "bill", "ticket", "size"), 1),
             item("b1_1", B1, Skill.GRAMMAR, "I ___ to Spain three times.", listOf("have been", "was", "am", "had go"), 0),
-            item("b1_2", B1, Skill.VOCABULARY, "We must finish the report before the ___ on Friday.", listOf("deadline", "headline", "schedule", "meeting"), 0),
+            item("b1_2", B1, Skill.VOCABULARY, "We must finish the report before the ___ on Friday.", listOf("deadline", "headline", "guideline", "receipt"), 0),
             item("b1_3", B1, Skill.GRAMMAR, "___ it was raining, we went for a walk.", listOf("Because", "Although", "So", "Unless"), 1),
             item("b2_1", B2, Skill.GRAMMAR, "If I ___ more time, I would learn another language.", listOf("have", "had", "will have", "would have"), 1),
             item("b2_2", B2, Skill.VOCABULARY, "The new policy had a significant ___ on sales.", listOf("affect", "effect", "effort", "afford"), 1),

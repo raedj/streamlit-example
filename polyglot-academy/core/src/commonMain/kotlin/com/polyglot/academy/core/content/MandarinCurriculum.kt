@@ -15,11 +15,13 @@ import com.polyglot.academy.core.model.VocabularySource
 import com.polyglot.academy.core.model.LearningTrack
 import com.polyglot.academy.core.model.PartOfSpeech.ADJECTIVE
 import com.polyglot.academy.core.model.PartOfSpeech.ADVERB
+import com.polyglot.academy.core.model.PartOfSpeech.CONJUNCTION
 import com.polyglot.academy.core.model.PartOfSpeech.MEASURE_WORD
 import com.polyglot.academy.core.model.PartOfSpeech.NOUN
 import com.polyglot.academy.core.model.PartOfSpeech.NUMERAL
 import com.polyglot.academy.core.model.PartOfSpeech.PARTICLE
 import com.polyglot.academy.core.model.PartOfSpeech.PHRASE
+import com.polyglot.academy.core.model.PartOfSpeech.PREPOSITION
 import com.polyglot.academy.core.model.PartOfSpeech.PRONOUN
 import com.polyglot.academy.core.model.PartOfSpeech.VERB
 import com.polyglot.academy.core.model.ReadingPassage
@@ -59,7 +61,7 @@ internal object MandarinCurriculum {
                 ex = "我是学生。", exEn = "I am a student.", exAr = "أنا طالب.")
             v("mama", "妈妈", "mum, mother", "أم", NOUN, PRE_A1, "people", "māma", trad = "媽媽")
             v("baba", "爸爸", "dad, father", "أب", NOUN, PRE_A1, "people", "bàba")
-            v("shi", "是", "to be (is/am/are)", "يكون (هو/هي)", VERB, PRE_A1, "people", "shì")
+            v("shi", "是", "to be (is/am/are)", "يكون (فعل الكينونة)", VERB, PRE_A1, "people", "shì")
             v("ren", "人", "person", "شخص", NOUN, PRE_A1, "people", "rén")
             // Numbers
             v("yi", "一", "one", "واحد", NUMERAL, PRE_A1, "numbers", "yī")
@@ -110,8 +112,8 @@ internal object MandarinCurriculum {
             v("gui", "贵", "expensive", "غالٍ", ADJECTIVE, A2, "shopping", "guì", trad = "貴",
                 ex = "这个太贵了。", exEn = "This one is too expensive.", exAr = "هذا غالٍ جدًا.")
             v("pianyi", "便宜", "cheap", "رخيص", ADJECTIVE, A2, "shopping", "piányi")
-            v("yinwei", "因为", "because", "لأنّ", PHRASE, B1, "grammar", "yīnwèi", trad = "因為")
-            v("suoyi", "所以", "so, therefore", "لذلك", PHRASE, B1, "grammar", "suǒyǐ")
+            v("yinwei", "因为", "because", "لأنّ", CONJUNCTION, B1, "grammar", "yīnwèi", trad = "因為")
+            v("suoyi", "所以", "so, therefore", "لذلك", CONJUNCTION, B1, "grammar", "suǒyǐ")
 
             // Work (professional track)
             v("huiyi", "会议", "meeting", "الاجتماع", NOUN, A2, "business", "huìyì", trad = "會議",
@@ -137,7 +139,7 @@ internal object MandarinCurriculum {
             v("shu", "书", "book", "كتاب", NOUN, A1, "aspect", "shū", trad = "書")
             v("dianying", "电影", "film, movie", "فيلم", NOUN, A2, "aspect", "diànyǐng", trad = "電影")
             v("meiyou", "没有", "did not; have not (negates completed actions)", "لم (نفي الفعل المكتمل)", ADVERB, A2, "aspect", "méiyǒu", trad = "沒有")
-            v("bi", "比", "than (in comparisons)", "من (في المقارنة)", PARTICLE, B1, "compare", "bǐ",
+            v("bi", "比", "than (in comparisons)", "من (في المقارنة)", PREPOSITION, B1, "compare", "bǐ",
                 ex = "我比他高。", exEn = "I am taller than him.", exAr = "أنا أطول منه.")
             v("geng", "更", "even more", "أكثر (للمقارنة)", ADVERB, B1, "compare", "gèng")
             v("gao", "高", "tall, high", "طويل، مرتفع", ADJECTIVE, A1, "compare", "gāo")
@@ -153,7 +155,7 @@ internal object MandarinCurriculum {
                 ex = "银行批准了贷款。", exEn = "The bank approved the loan.", exAr = "وافق البنك على القرض.", tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
             v("fin_lilv", "利率", "interest rate", "سعر الفائدة", NOUN, B1, "finance", "lìlǜ", tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
             v("fin_huankuan", "还款", "repayment; to repay", "سداد", VERB, B1, "finance", "huánkuǎn", trad = "還款", tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
-            v("fin_diya", "抵押", "collateral; to pledge", "رهن، ضمان", NOUN, B2, "finance", "dǐyā", tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("fin_diya", "抵押", "to pledge as collateral; to mortgage", "يرهن، رهن", VERB, B2, "finance", "dǐyā", tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
             v("fin_weiyue", "违约", "default; breach of contract", "تعثّر، إخلال بالعقد", NOUN, B2, "finance", "wéiyuē", trad = "違約", tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
             v("fin_fuzhaibiao", "资产负债表", "balance sheet", "الميزانية العمومية", NOUN, B2, "finance", "zīchǎn fùzhài biǎo", trad = "資產負債表", tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
             v("fin_liudongxing", "流动性", "liquidity", "السيولة", NOUN, B2, "finance", "liúdòngxìng", trad = "流動性", tags = setOf("finance"), source = VocabularySource.PROFESSIONAL_TRACK)
@@ -161,7 +163,7 @@ internal object MandarinCurriculum {
             v("cr_xindai_fengxian", "信贷风险", "credit risk", "مخاطر الائتمان", NOUN, B2, "credit_risk", pron = "xìndài fēngxiǎn", trad = "信貸風險", ex = "银行评估每个客户的信贷风险。", exEn = "The bank assesses each customer's credit risk.", exAr = "يقيّم البنك مخاطر الائتمان لكل عميل.", tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
             v("cr_buliang_daikuan", "不良贷款", "non-performing loan", "قرض متعثّر", NOUN, B2, "credit_risk", pron = "bùliáng dàikuǎn", trad = "不良貸款", tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
             v("cr_zhaiwu_chongzu", "债务重组", "debt restructuring", "إعادة هيكلة الدين", NOUN, C1, "credit_risk", pron = "zhàiwù chóngzǔ", trad = "債務重組", tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
-            v("cr_hexiao", "核销", "write-off", "شطب (الدَّين)", VERB, C1, "credit_risk", pron = "héxiāo", trad = "核銷", tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
+            v("cr_hexiao", "核销", "to write off; to verify and cancel", "يشطب (الدَّين)؛ يتحقّق ويُلغي (قسيمة مثلًا)", VERB, C1, "credit_risk", pron = "héxiāo", trad = "核銷", tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
             v("cr_xinyong_pingji", "信用评级", "credit rating", "التصنيف الائتماني", NOUN, C1, "credit_risk", pron = "xìnyòng píngjí", trad = "信用評級", tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
             v("cr_danbaoren", "担保人", "guarantor", "الكفيل", NOUN, B2, "credit_risk", pron = "dānbǎorén", trad = "擔保人", tags = setOf("credit_risk"), source = VocabularySource.PROFESSIONAL_TRACK)
             // Contracts (professional track)
@@ -201,9 +203,9 @@ internal object MandarinCurriculum {
             v("ev_fangka", "房卡", "room key card", "بطاقة الغرفة", NOUN, A2, "hotel", "fángkǎ")
             v("ev_zaocan", "含早餐吗？", "Is breakfast included?", "هل الفطور مشمول؟", PHRASE, A2, "hotel", "hán zǎocān ma?", trad = "含早餐嗎？")
             v("ev_wifi_mima", "无线网密码是多少？", "What's the Wi-Fi password?", "ما كلمة مرور الواي فاي؟", PHRASE, A2, "hotel", "wúxiànwǎng mìmǎ shì duōshao?", trad = "無線網密碼是多少？")
-            v("ev_qiantai", "前台", "reception", "الاستقبال", NOUN, A2, "hotel", "qiántái", trad = "前檯")
+            v("ev_qiantai", "前台", "reception", "الاستقبال", NOUN, A2, "hotel", "qiántái", trad = "前臺")
             v("ev_tuifang", "退房", "to check out", "يغادر الفندق", VERB, A2, "hotel", "tuìfáng")
-            v("ev_zhantai", "站台", "platform", "الرصيف", NOUN, A2, "transport", "zhàntái", trad = "站檯", ex = "火车从四号站台出发。", exEn = "The train leaves from platform four.", exAr = "يغادر القطار من الرصيف رقم أربعة.")
+            v("ev_zhantai", "站台", "platform", "الرصيف", NOUN, A2, "transport", "zhàntái", trad = "站臺", ex = "火车从四号站台出发。", exEn = "The train leaves from platform four.", exAr = "يغادر القطار من الرصيف رقم أربعة.")
             v("ev_wangfanpiao", "往返票", "return ticket", "تذكرة ذهاب وعودة", NOUN, A2, "transport", "wǎngfǎn piào")
             v("ev_danchengpiao", "单程票", "single (one-way) ticket", "تذكرة ذهاب فقط", NOUN, A2, "transport", "dānchéng piào", trad = "單程票")
             v("ev_chufa", "出发", "to depart; departure", "يغادر؛ المغادرة", VERB, A2, "transport", "chūfā", trad = "出發")
@@ -324,13 +326,13 @@ internal object MandarinCurriculum {
             f.lesson("ev_essentials", A1, "survival", g("Most useful phrases", "العبارات الأكثر استخدامًا"), g("Phrases you will use every day and when travelling.", "عبارات تستخدمها كل يوم وفي السفر."),
                 Skill.SPEAKING, listOf("ev_qingwen", "ev_ting_bu_dong", "ev_man_yidian", "ev_zai_shuo", "ev_xishoujian", "ev_bang_wo", "ev_bu_zhidao", "ev_mei_guanxi"),
                 extra = listOf(
-                    fill("ev1", L, "请说___一点。", listOf("慢")),
+                    fill("ev1", L, "请说___一点。", listOf("慢"), g("Please speak a little more slowly.", "تكلّم ببطء أكثر من فضلك.")),
                     choice("ev2", L, "Someone says 谢谢. A natural reply:", listOf("不客气", "我不知道", "请问"), 0, Skill.FUNCTIONAL),
                 )),
             f.lesson("ev_emergency", A2, "survival", g("Emergencies and help", "الطوارئ وطلب المساعدة"), g("Ask for help, report a loss and find the police or a hospital.", "اطلب المساعدة وأبلغ عن فقدان شيء واعثر على الشرطة أو المستشفى."),
                 Skill.SPEAKING, listOf("ev_jiuming", "ev_jingcha", "ev_jiuhuche", "ev_huzhao", "ev_bei_tou", "ev_dashiguan", "ev_yiyuan", "ev_jizhen"),
                 extra = listOf(
-                    fill("ev3", L, "快叫___车！", listOf("救护")),
+                    fill("ev3", L, "快叫___车！", listOf("救护"), g("Call an ambulance, quickly!", "اطلب سيارة إسعاف بسرعة!")),
                     choice("ev4", L, "I've lost my passport:", listOf("我的护照丢了", "我的护照很好", "我买了护照"), 0, Skill.FUNCTIONAL),
                 )),
             f.lesson("ev_restaurant", A2, "tourism", g("At the restaurant", "في المطعم"), g("Ask for a table, order a meal, mention allergies and pay.", "اطلب طاولة واطلب وجبة واذكر الحساسية وادفع."),
@@ -354,7 +356,7 @@ internal object MandarinCurriculum {
             f.lesson("ev_sightseeing", A2, "tourism", g("Sightseeing", "السياحة والمعالم"), g("Museums, tickets, tours and photos.", "المتاحف والتذاكر والجولات والصور."),
                 Skill.READING, listOf("ev_bowuguan", "ev_kaifang_shijian", "ev_menpiao", "ev_daoyou", "ev_ditu", "ev_paizhao", "ev_gucheng", "ev_jinianpin"),
                 extra = listOf(
-                    fill("ev11", L, "博物馆几点___门？", listOf("开")),
+                    fill("ev11", L, "博物馆几点___门？", listOf("开"), g("What time does the museum open?", "متى يفتح المتحف؟")),
                     choice("ev12", L, "门票 means…", listOf("entrance ticket", "tour guide", "souvenir"), 0, Skill.VOCABULARY),
                 )),
         )

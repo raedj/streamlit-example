@@ -42,7 +42,7 @@ en_happy	word	A1	term: happy ¦ reading: /ˈhæpi/ ¦ part_of_speech: adjective 
 en_tired	word	A1	term: tired ¦ reading: /ˈtaɪərd/ ¦ part_of_speech: adjective ¦ meaning: en: needing rest or sleep | ar: متعب
 en_worried	word	A2	term: worried ¦ reading: /ˈwɜːrid/ ¦ part_of_speech: adjective ¦ meaning: en: unhappy because you think something bad may happen | ar: قلق
 en_i_think	word	A2	term: I think ¦ reading: /aɪ θɪŋk/ ¦ part_of_speech: phrase ¦ meaning: en: used to give your opinion | ar: أعتقد / في رأيي ¦ example: I think this book is interesting. ¦ example_meaning: en: I think this book is interesting. | ar: أعتقد أن هذا الكتاب ممتع.
-en_although	word	B1	term: although ¦ reading: /ɔːlˈðoʊ/ ¦ part_of_speech: adverb ¦ meaning: en: despite the fact that | ar: على الرغم من أن ¦ example: Although it was raining, we went out. ¦ example_meaning: en: Although it was raining, we went out. | ar: على الرغم من أن المطر كان يهطل، خرجنا.
+en_although	word	B1	term: although ¦ reading: /ɔːlˈðoʊ/ ¦ part_of_speech: conjunction ¦ meaning: en: despite the fact that | ar: على الرغم من أن ¦ example: Although it was raining, we went out. ¦ example_meaning: en: Although it was raining, we went out. | ar: على الرغم من أن المطر كان يهطل، خرجنا.
 en_meeting	word	A2	term: meeting ¦ reading: /ˈmiːtɪŋ/ ¦ part_of_speech: noun ¦ meaning: en: when people come together to discuss something | ar: اجتماع ¦ example: The meeting starts at ten. ¦ example_meaning: en: The meeting starts at ten. | ar: يبدأ الاجتماع في العاشرة.
 en_deadline	word	B1	term: deadline ¦ reading: /ˈdedlaɪn/ ¦ part_of_speech: noun ¦ meaning: en: the time by which something must be finished | ar: الموعد النهائي ¦ example: The deadline for the report is Friday. ¦ example_meaning: en: The deadline for the report is Friday. | ar: الموعد النهائي للتقرير هو الجمعة.
 en_experience	word	B1	term: experience ¦ reading: /ɪkˈspɪriəns/ ¦ part_of_speech: noun ¦ meaning: en: knowledge or skill you get from doing something | ar: خبرة
@@ -59,7 +59,7 @@ en_probably	word	B1	term: probably ¦ reading: /ˈprɒbəbli/ ¦ part_of_speech:
 en_abroad	word	B1	term: abroad ¦ reading: /əˈbrɔːd/ ¦ part_of_speech: adverb ¦ meaning: en: in or to another country | ar: في الخارج
 en_save_money	word	B1	term: save (money) ¦ part_of_speech: verb ¦ meaning: en: to keep money instead of spending it | ar: يدّخر (المال)
 en_decide	word	B1	term: decide ¦ reading: /dɪˈsaɪd/ ¦ part_of_speech: verb ¦ meaning: en: to make a choice | ar: يقرّر
-en_unless	word	B2	term: unless ¦ reading: /ənˈles/ ¦ part_of_speech: phrase ¦ meaning: en: except if | ar: ما لم / إلا إذا ¦ example: I won't go unless you come too. ¦ example_meaning: en: I won't go unless you come too. | ar: لن أذهب إلا إذا أتيت أنت أيضًا.
+en_unless	word	B2	term: unless ¦ reading: /ənˈles/ ¦ part_of_speech: conjunction ¦ meaning: en: except if | ar: ما لم / إلا إذا ¦ example: I won't go unless you come too. ¦ example_meaning: en: I won't go unless you come too. | ar: لن أذهب إلا إذا أتيت أنت أيضًا.
 en_afford	word	B2	term: afford ¦ reading: /əˈfɔːd/ ¦ part_of_speech: verb ¦ meaning: en: to have enough money for something | ar: يقدر على تحمّل تكلفة
 en_opportunity	word	B1	term: opportunity ¦ reading: /ˌɒpəˈtjuːnəti/ ¦ part_of_speech: noun ¦ meaning: en: a chance to do something | ar: فرصة
 en_in_case	word	B2	term: in case ¦ part_of_speech: phrase ¦ meaning: en: because something might happen | ar: تحسّبًا لـ ¦ example: Take an umbrella in case it rains. ¦ example_meaning: en: Take an umbrella in case it rains. | ar: خذ مظلة تحسّبًا للمطر.
@@ -92,14 +92,14 @@ en_ev_reservation	word	A2	term: reservation ¦ part_of_speech: noun ¦ meaning: 
 en_ev_check_in	word	A2	term: check in ¦ part_of_speech: verb ¦ meaning: en: to arrive and register at a hotel | ar: تسجيل الوصول
 en_ev_check_out	word	A2	term: check out ¦ part_of_speech: verb ¦ meaning: en: to pay and leave a hotel | ar: تسجيل المغادرة
 en_ev_single_room	word	A2	term: single room ¦ part_of_speech: noun ¦ meaning: en: a room for one person | ar: غرفة لشخص واحد
-en_ev_double_room	word	A2	term: double room ¦ part_of_speech: noun ¦ meaning: en: a room for two people | ar: غرفة مزدوجة
+en_ev_double_room	word	A2	term: double room ¦ part_of_speech: noun ¦ meaning: en: a room for two people | ar: غرفة لشخصين (مزدوجة)
 en_ev_key	word	A1	term: key ¦ part_of_speech: noun ¦ meaning: en: a small object that opens a door | ar: مفتاح
 en_ev_breakfast_included	word	A2	term: Is breakfast included? ¦ part_of_speech: phrase ¦ meaning: en: asking if breakfast is in the price | ar: هل الفطور مشمول؟
 en_ev_wifi_password	word	A2	term: What's the Wi-Fi password? ¦ part_of_speech: phrase ¦ meaning: en: asking how to connect to the internet | ar: ما كلمة مرور الواي فاي؟
 en_ev_platform	word	A2	term: platform ¦ part_of_speech: noun ¦ meaning: en: where you get on a train | ar: الرصيف ¦ example: The train leaves from platform four. ¦ example_meaning: en: The train leaves from platform four. | ar: يغادر القطار من الرصيف رقم أربعة.
 en_ev_return_ticket	word	A2	term: return ticket ¦ part_of_speech: noun ¦ meaning: en: a ticket to go and come back | ar: تذكرة ذهاب وعودة
 en_ev_single_ticket	word	A2	term: single ticket ¦ part_of_speech: noun ¦ meaning: en: a ticket for one direction | ar: تذكرة ذهاب فقط
-en_ev_departure	word	A2	term: departure ¦ part_of_speech: noun ¦ meaning: en: the time something leaves | ar: المغادرة
+en_ev_departure	word	A2	term: departure ¦ part_of_speech: noun ¦ meaning: en: leaving; the time a train or plane leaves | ar: المغادرة
 en_ev_delayed	word	A2	term: delayed ¦ part_of_speech: adjective ¦ meaning: en: later than planned | ar: متأخر
 en_ev_boarding_pass	word	A2	term: boarding pass ¦ part_of_speech: noun ¦ meaning: en: the card you need to get on a plane | ar: بطاقة الصعود إلى الطائرة
 en_ev_luggage	word	A2	term: luggage ¦ part_of_speech: noun ¦ meaning: en: the bags you travel with | ar: الأمتعة
@@ -166,12 +166,12 @@ en_x_tr1	exercise	A2	sentence: ___ left at the bank. ¦ accepted: Turn / turn
 en_x_tr2	exercise	A2	audio: Go straight on and turn left. ¦ accepted: Go straight on and turn left. / Go straight on and turn left
 en_x_tr3	exercise	A2	question: Excuse me, ___ is the station? ¦ options: where / who / when ¦ correct: where
 en_x_s1	exercise	A2	sentence: This shirt is ___ (cheap) than that one. ¦ accepted: cheaper
-en_x_s2	exercise	A2	sentence: This bag is more ___ than the black one. ¦ accepted: expensive
+en_x_s2	exercise	A2	sentence: This bag is more ___ than the black one. ¦ accepted: expensive ¦ hint: en: It costs more money. | ar: ثمنها أعلى.
 en_x_o1	exercise	B1	sentence: I have ___ (finish) my homework. ¦ accepted: finished
 en_x_o2	exercise	B1	question: She ___ to Paris twice. ¦ options: has been / have been / is been ¦ correct: has been ¦ explanation: en: he/she/it + has + past participle | ar: he/she/it + has + التصريف الثالث
 en_x_o3	exercise	B1	source: en: I think it is a good idea. | ar: أعتقد أنها فكرة جيدة. ¦ accepted: I think it is a good idea / I think it's a good idea
 en_x_w1	exercise	B1	sentence: We have ___ (meet) the deadline. ¦ accepted: met
-en_x_w2	exercise	B1	prompt: en: Write an email to a colleague asking to move a meeting. | ar: اكتب رسالة لزميل تطلب فيها تأجيل اجتماع. ¦ suggested_words: meeting / schedule / could we
+en_x_w2	exercise	B1	prompt: en: Write an email to a colleague asking to move a meeting. | ar: اكتب رسالة لزميل تطلب فيها تغيير موعد اجتماع. ¦ suggested_words: meeting / schedule / could we
 en_x_pl1	exercise	B1	sentence: I'm ___ to visit my aunt next week. ¦ accepted: going
 en_x_pl2	exercise	B1	question: Look at those clouds! It ___ rain. ¦ options: is going to / would / was ¦ correct: is going to
 en_x_pl3	exercise	B1	sentence: A: The phone's ringing. B: I ___ get it! ¦ accepted: will
@@ -190,7 +190,7 @@ en_x_ev7	exercise	A2	sentence: Is breakfast ___? ¦ accepted: included
 en_x_ev8	exercise	A2	audio: I have a reservation for two nights. ¦ accepted: I have a reservation for two nights. / I have a reservation for two nights
 en_x_ev9	exercise	A2	question: A ticket to go and come back is a… ¦ options: return ticket / single ticket / boarding pass ¦ correct: return ticket
 en_x_ev10	exercise	A2	audio: The train to London is delayed. ¦ accepted: The train to London is delayed. / The train to London is delayed
-en_x_ev11	exercise	A2	sentence: What time does the museum ___? ¦ accepted: open
+en_x_ev11	exercise	A2	sentence: What time does the museum ___? ¦ accepted: open ¦ hint: en: Ask what time it opens. | ar: اسأل متى يفتح المتحف.
 en_x_ev12	exercise	A2	question: The money you pay to go into a museum is the… ¦ options: entrance fee / tip / deposit ¦ correct: entrance fee
 en_x_bm1	exercise	B1	sentence: Please find ___ the latest report. ¦ accepted: attached
 en_x_bm2	exercise	B1	question: Which is more polite in a meeting? ¦ options: You are wrong. / I see your point, but I'm not sure I agree. / No. ¦ correct: I see your point, but I'm not sure I agree.
@@ -214,7 +214,7 @@ en_a_a2_1	placement	A2	question: She ___ to work by bus every day. ¦ options: g
 en_a_a2_2	placement	A2	question: This hotel is ___ than the other one. ¦ options: more cheap / cheaper / cheapest / more cheaper ¦ correct: cheaper
 en_a_a2_3	placement	A2	question: Could we have the ___, please? We'd like to pay. ¦ options: menu / bill / ticket / size ¦ correct: bill
 en_a_b1_1	placement	B1	question: I ___ to Spain three times. ¦ options: have been / was / am / had go ¦ correct: have been
-en_a_b1_2	placement	B1	question: We must finish the report before the ___ on Friday. ¦ options: deadline / headline / schedule / meeting ¦ correct: deadline
+en_a_b1_2	placement	B1	question: We must finish the report before the ___ on Friday. ¦ options: deadline / headline / guideline / receipt ¦ correct: deadline
 en_a_b1_3	placement	B1	question: ___ it was raining, we went for a walk. ¦ options: Because / Although / So / Unless ¦ correct: Although
 en_a_b2_1	placement	B2	question: If I ___ more time, I would learn another language. ¦ options: have / had / will have / would have ¦ correct: had
 en_a_b2_2	placement	B2	question: The new policy had a significant ___ on sales. ¦ options: affect / effect / effort / afford ¦ correct: effect

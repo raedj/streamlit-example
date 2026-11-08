@@ -234,3 +234,13 @@
 {"id": "en_s_station", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "4393df8f7411", "date": "2026-11-08"}
 {"id": "en_s_negotiation", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "a5fc50f5eb2e", "date": "2026-11-08"}
 {"id": "en_s_loan_review", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "52f7a6c172c8", "date": "2026-11-08"}
+{"id": "en_although", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "582ce3cd3fee", "date": "2026-11-08"}
+{"id": "en_unless", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "fd80bd16e5a8", "date": "2026-11-08"}
+{"id": "en_ev_double_room", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "3412a31a3628", "date": "2026-11-08"}
+{"id": "en_ev_departure", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "b3053543ec13", "date": "2026-11-08"}
+{"id": "en_x_s2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "4e74a6cf7e97", "date": "2026-11-08"}
+{"id": "en_x_w2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "6c351feefaf5", "date": "2026-11-08"}
+{"id": "en_x_ev11", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "f9142df14c14", "date": "2026-11-08"}
+{"id": "en_a_b1_2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "594da7cf1a22", "date": "2026-11-08"}
+{"id": "en_x_ev11", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "8dc4eca397ff", "date": "2026-11-08"}
+{"id": "en_a_b1_2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "265e1ed96673", "date": "2026-11-08"}

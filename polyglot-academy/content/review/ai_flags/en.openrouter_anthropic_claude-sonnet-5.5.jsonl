@@ -234,3 +234,13 @@
 {"id": "en_s_station", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "4393df8f7411", "date": "2026-11-08"}
 {"id": "en_s_negotiation", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "a5fc50f5eb2e", "date": "2026-11-08"}
 {"id": "en_s_loan_review", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "52f7a6c172c8", "date": "2026-11-08"}
+{"id": "en_although", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "582ce3cd3fee", "date": "2026-11-08"}
+{"id": "en_unless", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "fd80bd16e5a8", "date": "2026-11-08"}
+{"id": "en_ev_double_room", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "3412a31a3628", "date": "2026-11-08"}
+{"id": "en_ev_departure", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "b3053543ec13", "date": "2026-11-08"}
+{"id": "en_x_s2", "verdict": "doubtful", "problem": "The sentence is ambiguous: other adjectives could also fit (e.g. 'beautiful', 'comfortable'). The hint helps, but 'expensive' is not the only possible answer. The Arabic hint is fine.", "fix": "This bag costs more money than the black one, so it is more ___.", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "4e74a6cf7e97", "date": "2026-11-08"}
+{"id": "en_x_w2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "6c351feefaf5", "date": "2026-11-08"}
+{"id": "en_x_ev11", "verdict": "doubtful", "problem": "The hint 'Ask when you can go in' is acceptable, but 'close' would not fit the hint. The sentence is fine, though 'open' is the only intended answer. The hint is slightly loose.", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "f9142df14c14", "date": "2026-11-08"}
+{"id": "en_a_b1_2", "verdict": "wrong", "problem": "Both 'deadline' and 'schedule' could be argued: 'the schedule on Friday' is unnatural, so 'deadline' is the best answer. However, the item is acceptable, with only 'deadline' fitting naturally.", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "594da7cf1a22", "date": "2026-11-08"}
+{"id": "en_x_ev11", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "8dc4eca397ff", "date": "2026-11-08"}
+{"id": "en_a_b1_2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "265e1ed96673", "date": "2026-11-08"}
