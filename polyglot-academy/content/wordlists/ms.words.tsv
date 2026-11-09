@@ -28,7 +28,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 27	ms_w_pada	pada	prep	function	at, on (time)	في (للزمن)				
 28	ms_w_kepada	kepada	prep	function	to (a person)	إلى (شخص)				
 29	ms_w_juga	juga	adv	function	also, too	أيضًا				
-30	ms_w_lagi	lagi	adv	function	more; again	أيضًا؛ مرة أخرى				
+30	ms_w_lagi	lagi	adv	function	more; again	مزيد، أكثر؛ مرة أخرى				
 31	ms_w_sangat	sangat	adv	function	very	جدًا				
 32	ms_w_banyak	banyak	adj	function	many, a lot	كثير				
 33	ms_w_sedikit	sedikit	adj	function	a little	قليل		sikit		
@@ -752,7 +752,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 751	ms_w_tunai	tunai	noun	shopping	cash	نقد
 752	ms_w_penerbangan	penerbangan	noun	travel	flight	رحلة جوية
 753	ms_w_visa	visa	noun	travel	visa	تأشيرة
-754	ms_w_pas	pas	noun	travel	pass (pas masuk: boarding pass)	تصريح، بطاقة				ms_ev_pas_masuk
+754	ms_w_pas	pas	noun	travel	pass (pas masuk: entry pass)	تصريح، بطاقة				ms_ev_pas_masuk
 755	ms_w_cenderamata	cenderamata	noun	travel	souvenir	تذكار				ms_ev_cenderamata
 756	ms_w_sebut_harga	sebut harga	noun	work	quotation, quote	عرض سعر				ms_sebut_harga
 757	ms_w_tarikh_akhir	tarikh akhir	noun	work	deadline	الموعد النهائي				ms_tarikh_akhir
@@ -850,7 +850,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 849	ms_w_goreng	goreng	verb	food	to fry (menggoreng)	يقلي
 850	ms_w_bakar	bakar	verb	food	to burn, to grill (membakar)	يحرق، يشوي
 851	ms_w_kupas	kupas	verb	food	to peel (mengupas)	يقشّر
-852	ms_w_hiris	hiris	verb	food	to slice (menghiris)	يشرّح
+852	ms_w_hiris	hiris	verb	food	to slice (menghiris)	يقطّع شرائح
 853	ms_w_tuang	tuang	verb	food	to pour (menuang)	يصبّ
 854	ms_w_gigit	gigit	verb	animals	to bite (menggigit)	يعضّ
 855	ms_w_kejar	kejar	verb	movement	to chase (mengejar)	يطارد
@@ -1857,7 +1857,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 1856	ms_w_izin	izin	noun	communication	permission	إذن
 1857	ms_w_simpati	simpati	noun	feelings	sympathy	تعاطف
 1858	ms_w_lambai	lambai	verb	communication	to wave (melambai)	يلوّح
-1859	ms_w_gatal	gatal	adj	body	itchy	مُحِكّ
+1859	ms_w_gatal	gatal	adj	body	itchy	فيه حكّة، يُحكّ
 1860	ms_w_rangkul	rangkul	verb	people	to embrace (merangkul)	يعانق
 1861	ms_w_rayu	rayu	verb	communication	to plead (merayu)	يتوسّل
 1862	ms_w_manja	manja	adj	family	spoilt, pampered	مدلّل
@@ -2083,7 +2083,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2082	ms_w_gasing	gasing	noun	leisure	spinning top	خذروف
 2083	ms_w_wau	wau	noun	leisure	traditional kite	طائرة ورقية تقليدية
 2084	ms_w_congkak	congkak	noun	leisure	congkak (board game)	لعبة المنقلة
-2085	ms_w_sepak_takraw	sepak takraw	noun	leisure	sepak takraw (sport)	كرة الريشة بالقدم
+2085	ms_w_sepak_takraw	sepak takraw	noun	leisure	sepak takraw (sport)	سيباك تاكرو (رياضة بكرة من الخيزران)
 2086	ms_w_guli	guli	noun	leisure	marbles	كرات زجاجية
 2087	ms_w_harapan	harapan	noun	feelings	hope	أمل
 2088	ms_w_pendirian	pendirian	noun	mind	stance, principle	موقف
@@ -2125,14 +2125,14 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2124	ms_w_panik	panik	verb	feelings	to panic	يرتبك
 2125	ms_w_gagap	gagap	verb	communication	to stammer (tergagap)	يتلعثم
 2126	ms_w_megah	megah	verb	communication	to boast (bermegah)	يتباهى
-2127	ms_w_cekup	cekup	verb	actions	to grab, to pounce (menyekup)	ينقضّ
+2127	ms_w_cekup	cekup	verb	actions	to grab, to pounce (mencekup)	ينقضّ
 2128	ms_w_picit	picit	verb	actions	to squeeze, to press (memicit)	يضغط
 2129	ms_w_kikis	kikis	verb	actions	to scrape (mengikis)	يكشط
 2130	ms_w_ukir	ukir	verb	actions	to carve (mengukir)	ينحت
 2131	ms_w_terbalik	terbalik	verb	actions	to overturn	ينقلب
 2132	ms_w_goyang	goyang	verb	actions	to shake, to wobble (menggoyang)	يهزّ
 2133	ms_w_tuai	tuai	verb	nature	to harvest (menuai)	يحصد
-2134	ms_w_lobak	lobak	noun	food	radish, carrot	فجل، جزر
+2134	ms_w_lobak	lobak	noun	food	radish (lobak merah: carrot)	فجل، جزر
 2135	ms_w_ketumbar	ketumbar	noun	food	coriander	كزبرة
 2136	ms_w_buah_pelaga	buah pelaga	noun	food	cardamom	هيل
 2137	ms_w_cengkih	cengkih	noun	food	clove	قرنفل
@@ -2142,7 +2142,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2141	ms_w_pipit	pipit	noun	animals	sparrow	عصفور
 2142	ms_w_burung_nuri	burung nuri	noun	animals	parrot	ببغاء
 2143	ms_w_merak	merak	noun	animals	peacock	طاووس
-2144	ms_w_rusa	rusa	noun	animals	deer	غزال
+2144	ms_w_rusa	rusa	noun	animals	deer	أيّل
 2145	ms_w_kelip_kelip	kelip-kelip	noun	animals	firefly	يراعة
 2146	ms_w_kerikil	kerikil	noun	nature	gravel, pebble	حصى
 2147	ms_w_lumpur	lumpur	noun	nature	mud	وحل
@@ -2222,7 +2222,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2221	ms_w_pengumuman	pengumuman	noun	communication	announcement	إعلان
 2222	ms_w_ulasan	ulasan	noun	communication	review, comment	تعليق
 2223	ms_w_terjemahan	terjemahan	noun	communication	translation	ترجمة
-2224	ms_w_simpulan_bahasa	simpulan bahasa	noun	communication	idiom	مصطلح
+2224	ms_w_simpulan_bahasa	simpulan bahasa	noun	communication	idiom	تعبير اصطلاحي
 2225	ms_w_peribahasa	peribahasa	noun	communication	proverb	مثل
 2226	ms_w_hikayat	hikayat	noun	leisure	tale, saga	حكاية
 2227	ms_w_pantun	pantun	noun	leisure	pantun (verse)	بانتون
@@ -2323,7 +2323,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2322	ms_w_pentingkan_diri	pentingkan diri	adj	people	selfish	أناني
 2323	ms_w_baik_hati	baik hati	adj	people	kind-hearted	طيّب القلب
 2324	ms_w_peramah	peramah	adj	people	friendly	ودود
-2325	ms_w_pendiam	pendiam	adj	people	quiet (person)	كتوم
+2325	ms_w_pendiam	pendiam	adj	people	quiet (person)	قليل الكلام
 2326	ms_w_cuai	cuai	adj	people	careless	مهمل
 2327	ms_w_cerdik	cerdik	adj	people	clever	ذكي
 2328	ms_w_purba	purba	adj	descriptions	ancient	قديم
@@ -2333,7 +2333,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2332	ms_w_tidak_lengkap	tidak lengkap	adj	descriptions	incomplete	ناقص
 2333	ms_w_mutlak	mutlak	adj	function	absolute	مطلق
 2334	ms_w_sering	sering	adv	time	often	غالبًا
-2335	ms_w_lebih_awal	lebih awal	adv	time	earlier	مسبقًا
+2335	ms_w_lebih_awal	lebih awal	adv	time	earlier	أبكر
 2336	ms_w_perdagangan	perdagangan	noun	work	trade	تجارة
 2337	ms_w_keuntungan	keuntungan	noun	work	profit	ربح
 2338	ms_w_inflasi	inflasi	noun	shopping	inflation	تضخّم
@@ -2427,7 +2427,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2426	ms_w_tikam	tikam	verb	actions	to stab (menikam)	يطعن
 2427	ms_w_fikir_fikir	fikir-fikir	verb	mind	to think over	يفكّر مليًّا
 2428	ms_w_dakwa	dakwa	verb	society	to charge, to sue (mendakwa)	يتّهم، يقاضي
-2429	ms_w_provokasi	provokasi	verb	people	to provoke	يستفزّ
+2429	ms_w_provokasi	provokasi	noun	people	provocation (verb: memprovokasi)	استفزاز
 2430	ms_w_pancar	pancar	verb	nature	to radiate (memancarkan)	يشعّ
 2431	ms_w_yakinkan	yakinkan	verb	feelings	to reassure	يطمئن
 2432	ms_w_tapis	tapis	verb	actions	to filter (menapis)	يصفّي
@@ -2515,7 +2515,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2514	ms_w_nostalgia	nostalgia	noun	feelings	nostalgia	حنين
 2515	ms_w_kebun_buah	kebun buah	noun	nature	orchard	بستان
 2516	ms_w_jemaah_haji	jemaah haji	noun	society	pilgrims	الحجّاج
-2517	ms_w_taun	taun	noun	health	plague	طاعون
+2517	ms_w_taun	taun	noun	health	cholera (an epidemic disease)	كوليرا، وباء
 2518	ms_w_prasangka	prasangka	noun	society	prejudice	تحيّز
 2519	ms_w_kuari	kuari	noun	places	quarry	مقلع
 2520	ms_w_wang_tebusan	wang tebusan	noun	society	ransom	فدية
@@ -2742,7 +2742,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2741	ms_w_berliku	berliku	adj	travel	winding	متعرّج
 2742	ms_w_bergaul	bergaul	verb	people	to mix, to socialise	يختلط
 2743	ms_w_gerakkan	gerakkan	verb	actions	to mobilise (menggerakkan)	يحرّك
-2744	ms_w_leter	leter	verb	communication	to nag (berleter)	يثرثر
+2744	ms_w_leter	leter	verb	communication	to nag (berleter)	يتذمّر، يُكثر اللوم
 2745	ms_w_bersarang	bersarang	verb	animals	to nest	يعشّش
 2746	ms_w_tewaskan	tewaskan	verb	mind	to defeat (menewaskan)	يهزم
 2747	ms_w_reda	reda	verb	feelings	to subside	يهدأ
@@ -2764,7 +2764,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2763	ms_w_geram	geram	verb	animals	to growl, to be angry	يزمجر
 2764	ms_w_bertengkar	bertengkar	verb	people	to squabble	يتشاجر
 2765	ms_w_membazir	membazir	verb	shopping	to waste	يبذّر
-2766	ms_w_kecilkan	kecilkan	verb	senses	to narrow (mengecilkan)	يصغّر
+2766	ms_w_kecilkan	kecilkan	verb	senses	to make smaller, to turn down (mengecilkan)	يصغّر
 2767	ms_w_menggeliat	menggeliat	verb	body	to writhe, to stretch	يتلوّى
 2768	ms_w_jejak	jejak	verb	animals	to track (menjejak)	يتعقّب
 2769	ms_w_lagak	lagak	noun	movement	swagger	تبختر
@@ -2979,7 +2979,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2978	ms_w_astronomi	astronomi	noun	school	astronomy	علم الفلك
 2979	ms_w_galaksi	galaksi	noun	nature	galaxy	مجرّة
 2980	ms_w_anak_bulan	anak bulan	noun	nature	new crescent moon	هلال
-2981	ms_w_sunyi_sepi	sunyi sepi	adj	descriptions	desolate	مهجور
+2981	ms_w_sunyi_sepi	sunyi sepi	adj	descriptions	very quiet, silent	ساكن تمامًا، هادئ جدًا
 2982	ms_w_menghijau	menghijau	adj	nature	lush green	مخضرّ
 2983	ms_w_berbatu	berbatu	adj	nature	rocky	صخري
 2984	ms_w_berpasir	berpasir	adj	nature	sandy	رملي
