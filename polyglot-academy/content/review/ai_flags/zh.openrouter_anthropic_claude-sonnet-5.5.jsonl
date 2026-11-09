@@ -7173,3 +7173,15 @@
 {"id": "zh_w_tianhuaban", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "b3647902a4c4", "date": "2026-11-08"}
 {"id": "zh_w_dingzi", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "3d9b09ee1c20", "date": "2026-11-08"}
 {"id": "zh_w_mianji#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "12a57e60a76b", "date": "2026-11-08"}
+{"id": "zh_r_mingming", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "8b3ed583a1e0", "date": "2026-11-09"}
+{"id": "zh_st_shichang", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "5dd9bbc680fa", "date": "2026-11-09"}
+{"id": "zh_st_xinglixiang", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "7fd17a43d9e4", "date": "2026-11-09"}
+{"id": "zh_st_zhiyuanzhe", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "0fd926b25b9b", "date": "2026-11-09"}
+{"id": "zh_st_wodejia", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "e04a27cd10bb", "date": "2026-11-09"}
+{"id": "zh_st_shengri", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "17f72f3e7f8f", "date": "2026-11-09"}
+{"id": "zh_st_xiayu", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "73c3deb8bdd8", "date": "2026-11-09"}
+{"id": "zh_st_banjia", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "1412bc245085", "date": "2026-11-09"}
+{"id": "zh_st_wanggou", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "ddf898e4a903", "date": "2026-11-09"}
+{"id": "zh_st_shouji", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "4b93cfb18ef5", "date": "2026-11-09"}
+{"id": "zh_st_mianshi", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "eb80b547cd3e", "date": "2026-11-09"}
+{"id": "zh_st_laojia", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "7edb4859e269", "date": "2026-11-09"}

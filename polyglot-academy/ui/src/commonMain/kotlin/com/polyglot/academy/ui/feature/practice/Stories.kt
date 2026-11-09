@@ -11,6 +11,8 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Mic
+import androidx.compose.material.icons.filled.Stop
 import androidx.compose.material.icons.filled.Translate
 import androidx.compose.material.icons.automirrored.filled.VolumeUp
 import androidx.compose.material3.Icon
@@ -35,9 +37,19 @@ import androidx.compose.ui.semantics.liveRegion
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 import com.polyglot.academy.core.ai.AiError
+import com.polyglot.academy.core.learning.ReadAloud
+import com.polyglot.academy.core.learning.ReadAloudResult
 import com.polyglot.academy.core.model.CefrLevel
+import com.polyglot.academy.core.model.LanguageCode
+import com.polyglot.academy.core.model.Languages
+import com.polyglot.academy.core.model.OpenQuestion
 import com.polyglot.academy.core.model.ReadingPassage
 import com.polyglot.academy.core.model.SessionKind
+import com.polyglot.academy.core.service.OpenAnswerFeedback
+import com.polyglot.academy.core.service.ReadingAnswerService
+import com.polyglot.academy.core.service.Understanding
+import com.polyglot.academy.core.speech.RecognitionEvent
+import com.polyglot.academy.core.speech.SpeechAvailability
 import com.polyglot.academy.core.stories.StoryText
 import com.polyglot.academy.core.stories.WordInfo
 import com.polyglot.academy.ui.app.LoadContent
@@ -64,8 +76,10 @@ import com.polyglot.academy.ui.feature.lesson.ExerciseContext
 import com.polyglot.academy.ui.feature.lesson.ExerciseView
 import com.polyglot.academy.ui.navigation.SettingsSection
 import com.polyglot.academy.ui.i18n.K
+import com.polyglot.academy.ui.i18n.Labels
 import com.polyglot.academy.ui.i18n.LocalStrings
 import com.polyglot.academy.ui.navigation.Route
+import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 
 private val interestSuggestions = listOf("football", "cooking", "travel", "music", "technology", "family", "animals", "history")
@@ -193,6 +207,33 @@ private fun StoryReader(data: ReaderData) {
     val saved = remember { mutableStateMapOf<String, Boolean>() }
     val answers = remember { mutableStateMapOf<String, Boolean>() }
     var finished by remember { mutableStateOf(false) }
+    val tag = Languages.of(lang).defaultVariant.localeTag
+    var availability by remember { mutableStateOf<SpeechAvailability?>(null) }
+    LaunchedEffect(Unit) { availability = app.services.platform.recognizer.availability(tag) }
+    val canRecognize = availability == SpeechAvailability.AVAILABLE || availability == SpeechAvailability.PERMISSION_REQUIRED
+    var listeningAt by remember { mutableStateOf<Int?>(null) }
+    var aloudJob by remember { mutableStateOf<Job?>(null) }
+    val aloud = remember { mutableStateMapOf<Int, ReadAloudResult>() }
+    var aloudError by remember { mutableStateOf<Pair<Int, String>?>(null) }
+    fun readAloud(i: Int) {
+        if (listeningAt == i) { app.services.platform.recognizer.stopListening(); return }
+        aloudJob?.cancel()
+        aloudJob = scope.launch {
+            if (availability == SpeechAvailability.PERMISSION_REQUIRED && !app.platformUi.requestMicrophonePermission()) {
+                availability = SpeechAvailability.PERMISSION_DENIED; return@launch
+            }
+            speaker.stop(); listeningAt = i; aloudError = null
+            try {
+                app.services.platform.recognizer.listen(tag).collect { ev ->
+                    when (ev) {
+                        is RecognitionEvent.Final -> aloud[i] = ReadAloud.compare(story.sentences[i], ev.text, lang)
+                        is RecognitionEvent.Error -> aloudError = i to Labels.speechError(s, ev.kind)
+                        else -> {}
+                    }
+                }
+            } finally { listeningAt = null }
+        }
+    }
 
     LearningText(story.title, lang, style = MaterialTheme.typography.headlineSmall)
     Text(story.titleTranslation.forLanguage(explain), style = MaterialTheme.typography.bodyLarge, color = c.textSecondary)
@@ -201,6 +242,7 @@ private fun StoryReader(data: ReaderData) {
         if (story.generated) Pill(s[K.STORY_AI_WRITTEN])
     }
     if (story.generated) Banner(BannerKind.INFO, s[K.STORY_AI_CHECK])
+    else Text(s[K.READING_NOT_REVIEWED], style = MaterialTheme.typography.bodySmall, color = c.textMuted)
     Banner(BannerKind.INFO, s[K.STORY_TAP_HINT])
     SecondaryButton(s[K.READING_PLAY_ALL], { speaker.toggle(story.sentences.joinToString(" "), lang) })
 
@@ -221,7 +263,12 @@ private fun StoryReader(data: ReaderData) {
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     IconButton(onClick = { speaker.play(sentence, lang) }) { Icon(Icons.AutoMirrored.Filled.VolumeUp, s[K.PLAY_AUDIO]) }
                     IconButton(onClick = { translated = if (i in translated) translated - i else translated + i }) { Icon(Icons.Filled.Translate, s[K.STORY_TRANSLATE]) }
+                    if (canRecognize) IconButton(onClick = { readAloud(i) }) {
+                        if (listeningAt == i) Icon(Icons.Filled.Stop, s[K.CONV_MIC_STOP], tint = c.error) else Icon(Icons.Filled.Mic, s[K.READING_ALOUD])
+                    }
                 }
+                aloud[i]?.let { ReadAloudView(it, lang) }
+                aloudError?.takeIf { it.first == i }?.let { Text(it.second, style = MaterialTheme.typography.bodySmall, color = c.warning) }
                 if (i in translated) Text(story.sentenceTranslations[i].forLanguage(explain), style = MaterialTheme.typography.bodyMedium, color = c.textSecondary,
                     modifier = Modifier.semantics { liveRegion = LiveRegionMode.Polite })
             }
@@ -260,11 +307,114 @@ private fun StoryReader(data: ReaderData) {
         }
     } else if (!finished) PrimaryButton(s[K.STORY_MARK_READ], { finished = true }, Modifier.fillMaxWidth())
 
+    if (story.openQuestions.isNotEmpty()) {
+        SectionHeader(s[K.READING_OPEN])
+        Text(s[K.READING_OPEN_BODY], style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
+        story.openQuestions.forEach { o -> OpenQuestionCard(story, o, explain) }
+    }
+
     if (finished) {
         Text(s[K.STORY_DONE], color = c.success, style = MaterialTheme.typography.titleSmall)
         LaunchedEffect(story.id) {
             val sess = app.services.study.startSession(lang, SessionKind.READING, story.id)
             app.services.study.updateSession(sess, answers.size, answers.values.count { it }, true, 30 * story.sentences.size)
         }
+    }
+}
+
+/** The sentence as the recognizer heard it: heard words in green, missed words in red. */
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+private fun ReadAloudView(r: ReadAloudResult, lang: LanguageCode) {
+    val s = LocalStrings.current
+    val c = PolyglotTheme.colors
+    Column(Modifier.fillMaxWidth().semantics { liveRegion = LiveRegionMode.Polite }) {
+        FlowRow(horizontalArrangement = Arrangement.spacedBy(if (lang == LanguageCode.MANDARIN) 0.dp else 6.dp)) {
+            r.words.forEach { w -> LearningText(w.text, lang, style = MaterialTheme.typography.bodyLarge, color = if (w.heard) c.success else c.error) }
+        }
+        Text(s.f(K.READING_ALOUD_SCORE, (r.score * 100).toInt()), style = MaterialTheme.typography.labelLarge)
+        if (r.missed.isEmpty()) Text(s[K.READING_ALOUD_ALL], style = MaterialTheme.typography.bodySmall, color = c.success)
+        else Text(s.f(K.READING_ALOUD_MISSED, r.missed.joinToString(if (lang == LanguageCode.MANDARIN) " " else ", ")), style = MaterialTheme.typography.bodySmall)
+        Text(s[K.READING_ALOUD_NOTE], style = MaterialTheme.typography.bodySmall, color = c.textMuted)
+    }
+}
+
+/** A question answered in the learner's own words: an offline key-word check, or AI judgement and corrections when allowed. */
+@Composable
+private fun OpenQuestionCard(story: ReadingPassage, o: OpenQuestion, explain: LanguageCode) {
+    val app = LocalApp.current
+    val s = LocalStrings.current
+    val c = PolyglotTheme.colors
+    val scope = rememberCoroutineScope()
+    val lang = story.language
+    var text by remember(o.id) { mutableStateOf("") }
+    var feedback by remember(o.id) { mutableStateOf<OpenAnswerFeedback?>(null) }
+    var aiError by remember(o.id) { mutableStateOf<String?>(null) }
+    var loading by remember(o.id) { mutableStateOf(false) }
+    PolyCard {
+        if (o.summary) Pill(s[K.READING_RETELL])
+        LearningText(o.prompt, lang, style = MaterialTheme.typography.titleMedium)
+        Text(o.promptGloss.forLanguage(explain), style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
+        AppTextField(text, { text = it.take(1200) }, s[K.READING_ANSWER], singleLine = false, minLines = if (o.summary) 4 else 2)
+        Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+            SecondaryButton(s[K.READING_CHECK_OFFLINE], {
+                feedback = ReadingAnswerService.offlineCheck(text, o, lang); aiError = null
+            }, Modifier.weight(1f), enabled = text.isNotBlank())
+            PrimaryButton(s[K.READING_CHECK_AI], {
+                loading = true
+                scope.launch {
+                    app.services.readingAnswers.aiCheck(text, o, story, explain)
+                        .onSuccess { feedback = it; aiError = null }
+                        .onFailure { e ->
+                            aiError = if (e is AiError.BlockedByPrivacy || e is AiError.NoProviderAvailable) s[K.READING_AI_BLOCKED]
+                            else s.f(K.READING_AI_FAILED, e.message ?: "")
+                            feedback = ReadingAnswerService.offlineCheck(text, o, lang)
+                        }
+                    loading = false
+                }
+            }, Modifier.weight(1f), enabled = text.isNotBlank() && !loading, loading = loading)
+        }
+        Text(s[K.READING_SEND_NOTE], style = MaterialTheme.typography.bodySmall, color = c.textMuted)
+    }
+    aiError?.let { Banner(BannerKind.WARNING, it) }
+    feedback?.let { fb -> OpenAnswerFeedbackView(fb, o, lang) }
+}
+
+@Composable
+private fun OpenAnswerFeedbackView(fb: OpenAnswerFeedback, o: OpenQuestion, lang: LanguageCode) {
+    val s = LocalStrings.current
+    val c = PolyglotTheme.colors
+    PolyCard(modifier = Modifier.semantics { liveRegion = LiveRegionMode.Polite }) {
+        val understanding = fb.understanding
+        if (understanding == null) Text(s[K.READING_OFFLINE_NOTE], style = MaterialTheme.typography.labelMedium, color = c.textSecondary)
+        else {
+            Text(s.f(K.WRITING_SOURCE_AI, fb.source), style = MaterialTheme.typography.labelMedium, color = c.textSecondary)
+            val (key, color) = when (understanding) {
+                Understanding.YES -> K.READING_UNDERSTOOD_YES to c.success
+                Understanding.PARTLY -> K.READING_UNDERSTOOD_PARTLY to c.warning
+                Understanding.NO -> K.READING_UNDERSTOOD_NO to c.error
+            }
+            Text(s[key], style = MaterialTheme.typography.titleSmall, color = color)
+        }
+        if (fb.foundPoints.isNotEmpty()) Text(s.f(K.READING_POINTS_FOUND, fb.foundPoints.joinToString(", ")), style = MaterialTheme.typography.bodyMedium, color = c.success)
+        if (fb.missingPoints.isNotEmpty()) Text(s.f(K.READING_POINTS_MISSING, fb.missingPoints.joinToString(", ")), style = MaterialTheme.typography.bodyMedium)
+        fb.comment?.let { Text(it, style = MaterialTheme.typography.bodyMedium) }
+    }
+    if (fb.corrections.isNotEmpty()) {
+        SectionHeader(s[K.WRITING_CORRECTIONS])
+        fb.corrections.forEach { cr ->
+            PolyCard(containerColor = if (cr.isStylistic) c.infoContainer else c.card) {
+                if (cr.isStylistic) Text(s[K.WRITING_OPTIONAL_STYLE], style = MaterialTheme.typography.labelMedium, color = c.info)
+                else Pill(Labels.severity(s, cr.severity))
+                LearningText(cr.original, lang, style = MaterialTheme.typography.bodyLarge, color = c.error)
+                LearningText(cr.corrected, lang, style = MaterialTheme.typography.bodyLarge, color = c.success)
+                if (cr.explanation.isNotBlank()) Text(cr.explanation, style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
+            }
+        }
+    }
+    fb.improvedVersion?.let { SectionHeader(s[K.WRITING_IMPROVED]); PolyCard { LearningText(it, lang, style = MaterialTheme.typography.bodyLarge) } }
+    PolyCard {
+        Text(s[K.READING_MODEL_ANSWER], style = MaterialTheme.typography.labelLarge, color = c.textSecondary)
+        LearningText(o.modelAnswer, lang, style = MaterialTheme.typography.bodyLarge)
     }
 }

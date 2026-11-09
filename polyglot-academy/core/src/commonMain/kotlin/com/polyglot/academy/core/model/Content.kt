@@ -81,6 +81,25 @@ data class ReadingPassage(
     /** The interest a generated story was written about. */
     val interest: String? = null,
     val createdAtMillis: Long = 0,
+    /** Questions the learner answers in their own words, in the language being learned. */
+    val openQuestions: List<OpenQuestion> = emptyList(),
+)
+
+/**
+ * A comprehension question answered in writing, in the language being learned.
+ * An AI provider judges the answer when the learner allows it; offline, the app looks for the [keyPoints].
+ */
+@Serializable
+data class OpenQuestion(
+    val id: String,
+    val prompt: String,
+    val promptGloss: Gloss,
+    /** One good answer, shown after the learner answers. */
+    val modelAnswer: String,
+    /** Words a good answer contains; each item may list alternatives separated by "|". */
+    val keyPoints: List<String>,
+    /** True for "retell the text in a few sentences". */
+    val summary: Boolean = false,
 )
 
 /** One word or phrase in a story with its meaning (and reading, e.g. pinyin). */

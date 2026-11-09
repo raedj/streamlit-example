@@ -96,6 +96,7 @@ class AppServices(
         },
     )
     val writing = WritingService(providers)
+    val readingAnswers = ReadingAnswerService(providers)
     val ocr = OcrService(providers, platform.deviceOcr)
     val materials = MaterialService(store, store, reviews, clock, ids, platform.extractionSupport, ocr, platform.transcriber)
 

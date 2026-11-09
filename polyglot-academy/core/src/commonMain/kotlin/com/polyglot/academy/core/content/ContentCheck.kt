@@ -40,6 +40,9 @@ object ContentCheck {
                 "sentences" to r.sentences.indices.joinToString(" / ") { r.sentences[it] + " = " + gloss(r.sentenceTranslations[it]) },
                 "glossary" to r.glossary.joinToString(" / ") { it.term + (it.reading?.let { p -> " ($p)" } ?: "") + " = " + gloss(it.meaning) },
                 "questions" to r.questions.joinToString(" / ") { exercise(it).orEmpty() },
+                "open_questions" to r.openQuestions.joinToString(" / ") { o ->
+                    o.prompt + " = " + gloss(o.promptGloss) + " ; model answer: " + o.modelAnswer + " ; key words: " + o.keyPoints.joinToString(", ")
+                }.ifEmpty { null },
             )))
         }
         c.scenarios.forEach { s ->

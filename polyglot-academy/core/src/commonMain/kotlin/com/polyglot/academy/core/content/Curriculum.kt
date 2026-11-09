@@ -54,6 +54,11 @@ class LanguageCurriculum(
             r.questions.forEach { q -> validateExercise(q)?.let { add("${r.id}/${q.id}: $it") } }
             val text = com.polyglot.academy.core.stories.StoryText.normalize(r.sentences.joinToString(" "))
             r.glossary.filter { com.polyglot.academy.core.stories.StoryText.normalize(it.term) !in text }.forEach { add("reading ${r.id} glossary term not in text: ${it.term}") }
+            r.openQuestions.forEach { o ->
+                if (o.keyPoints.isEmpty() || o.keyPoints.any { p -> p.split('|').any { it.isBlank() } }) add("reading ${r.id}/${o.id}: empty key point")
+                if (o.prompt.isBlank() || o.modelAnswer.isBlank()) add("reading ${r.id}/${o.id}: empty question or model answer")
+            }
+            if (r.openQuestions.map { it.id }.toSet().size != r.openQuestions.size) add("reading ${r.id}: duplicate open question ids")
         }
         scenarios.forEach { s -> if (s.beats.isEmpty()) add("scenario ${s.id} has no beats") }
         val trackIds = tracks.map { it.id }.toSet() + CourseUnit.GENERAL_TRACK
@@ -109,7 +114,7 @@ object Curriculum {
             LanguageCode.MALAY -> MalayCurriculum.build()
         }
         check(c.language == code)
-        return LanguageCurriculum(c.language, c.vocabulary, c.grammar, c.units, c.lessons, c.readings + GradedStories.of(c.language), c.scenarios,
+        return LanguageCurriculum(c.language, c.vocabulary, c.grammar, c.units, c.lessons, (c.readings + GradedStories.of(c.language) + ReadingLibrary.of(c.language)).map(ReadingLibrary::withOpenQuestions), c.scenarios,
             c.assessment, c.tracks, c.dictations, c.writingPrompts)
     }
 

@@ -7274,3 +7274,15 @@
 {"id": "en_w_dawdle#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "f2e830561b84", "date": "2026-11-08"}
 {"id": "en_w_dodge#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "5641c528ddd2", "date": "2026-11-08"}
 {"id": "en_w_i#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "aa2a5c834d2d", "date": "2026-11-08"}
+{"id": "en_r_morning", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "ac740c78f7af", "date": "2026-11-09"}
+{"id": "en_r_project", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "9aa73d06ced6", "date": "2026-11-09"}
+{"id": "en_st_market", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "aca6db85fe34", "date": "2026-11-09"}
+{"id": "en_st_lost_bag", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "4b73132577df", "date": "2026-11-09"}
+{"id": "en_st_volunteer", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "ee284c983bc8", "date": "2026-11-09"}
+{"id": "en_st_new_flat", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "d6e6b9a94d56", "date": "2026-11-09"}
+{"id": "en_st_cooking_class", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "653af351f862", "date": "2026-11-09"}
+{"id": "en_st_broken_phone", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "023c82e075ff", "date": "2026-11-09"}
+{"id": "en_st_garden", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "aff77422fcf4", "date": "2026-11-09"}
+{"id": "en_st_working_home", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "8d0ff69221d8", "date": "2026-11-09"}
+{"id": "en_st_painter", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "744f63e3b104", "date": "2026-11-09"}
+{"id": "en_st_car_free", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "892feb6b35e0", "date": "2026-11-09"}
