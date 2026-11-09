@@ -7420,3 +7420,156 @@
 {"id": "en_w_disguise", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "54c0e9f43420", "date": "2026-11-09"}
 {"id": "en_w_restrain#ex1", "verdict": "doubtful", "problem": "«سيطر على» is too loose for 'restrained'. It suggests control, whereas restrain here means to hold back or tie up the dog.", "fix": "قيّد الكلب بحبل.", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "2ff3439700bc", "date": "2026-11-09"}
 {"id": "en_w_rake", "verdict": "doubtful", "problem": "The Arabic gloss describes the garden tool and the raking action only loosely. «يجمع بالمدمة» is understandable but «يمشّط/يجرف بالمِجرفة المشطية» is more precise, and the correct word for the tool is usually «أداة تمشيط/مِعزقة/مِجرفة». «مِدَمّة» is also rare and not clearly the word for a rake.", "fix": "يجمع/يكنس بالمِمشَطة (أداة الحديقة)، أو: يُمشّط التربة/الأوراق بالمِجرفة المشطية", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "e50b0f830bbd", "date": "2026-11-09"}
+{"id": "en_w_she#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "cd79336d2b4f", "date": "2026-11-09"}
+{"id": "en_w_they#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "70eb52f49e4f", "date": "2026-11-09"}
+{"id": "en_w_good#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "c1e996fb82d8", "date": "2026-11-09"}
+{"id": "en_w_thank#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "7fe90ce2f9ce", "date": "2026-11-09"}
+{"id": "en_w_work#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "59d1839d3c71", "date": "2026-11-09"}
+{"id": "en_w_drink", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "4ea58f44e9f5", "date": "2026-11-09"}
+{"id": "en_w_different#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "835da976cd40", "date": "2026-11-09"}
+{"id": "en_w_tea#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "ab6778af1603", "date": "2026-11-09"}
+{"id": "en_w_often", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "18fb543897e7", "date": "2026-11-09"}
+{"id": "en_w_welcome#ex1", "verdict": "doubtful", "problem": "The Arabic is acceptable but a little stiff. 'You're welcome to come' means an invitation to come, which the Arabic only partly captures.", "fix": "أهلًا بك للقدوم في أي وقت.", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "21fc64775b41", "date": "2026-11-09"}
+{"id": "en_w_agree#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "fab71d533bd2", "date": "2026-11-09"}
+{"id": "en_w_hurt#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "7450591db7e6", "date": "2026-11-09"}
+{"id": "en_w_yet#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "ed640bc7f94c", "date": "2026-11-09"}
+{"id": "en_w_afternoon#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "46e512e53ecf", "date": "2026-11-09"}
+{"id": "en_w_cousin", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "661bfbcee420", "date": "2026-11-09"}
+{"id": "en_w_meeting#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "566f5c7dd110", "date": "2026-11-09"}
+{"id": "en_w_business#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "23e22f5ff3fd", "date": "2026-11-09"}
+{"id": "en_w_strong#ex2", "verdict": "wrong", "problem": "The Arabic 'الثقيلة' (heavy) is not the natural way to say strong coffee; 'strong' should be 'قوية'.", "fix": "أحب القهوة القوية.", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "db89a4bec98d", "date": "2026-11-09"}
+{"id": "en_w_mix#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "a139b9e87b9a", "date": "2026-11-09"}
+{"id": "en_w_course#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "fb4d61e3cc9d", "date": "2026-11-09"}
+{"id": "en_w_stairs#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "5cecc0a9f878", "date": "2026-11-09"}
+{"id": "en_w_nurse#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "7809fa06de15", "date": "2026-11-09"}
+{"id": "en_w_proposal#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "277cac1fafc7", "date": "2026-11-09"}
+{"id": "en_w_passport#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "c40afe9aa26f", "date": "2026-11-09"}
+{"id": "en_w_ill#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "071eb3bea846", "date": "2026-11-09"}
+{"id": "en_w_ill#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "b804f20fe109", "date": "2026-11-09"}
+{"id": "en_w_able#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "f31993bfb9d2", "date": "2026-11-09"}
+{"id": "en_w_instead#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "9d1b17a32719", "date": "2026-11-09"}
+{"id": "en_w_either#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "30c021c9e67f", "date": "2026-11-09"}
+{"id": "en_w_add#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "e01f694edea0", "date": "2026-11-09"}
+{"id": "en_w_brush", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "2321feb46963", "date": "2026-11-09"}
+{"id": "en_w_brush#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "1fc70ebb79b3", "date": "2026-11-09"}
+{"id": "en_w_copy#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "ec75cd162f0b", "date": "2026-11-09"}
+{"id": "en_w_crash", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "ca7121dcf3f0", "date": "2026-11-09"}
+{"id": "en_w_record", "verdict": "doubtful", "problem": "The pronunciation /rɪˈkɔːd/ is the verb form, but 'record' is also a noun with different stress (/ˈrekɔːd/), which the entry omits; the meaning is incomplete.", "fix": "en: to record; a record | ar: يسجّل؛ سجل", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "d5ed1994078f", "date": "2026-11-09"}
+{"id": "en_w_bowl#ex1", "verdict": "doubtful", "problem": "Arabic 'صحنًا' means plate/dish; a bowl is better translated as 'وعاء' or 'طبق'.", "fix": "آكل وعاءً من الحساء كل مساء.", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "e9f7449d2d54", "date": "2026-11-09"}
+{"id": "en_w_goal#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "cf6bb1eb70ce", "date": "2026-11-09"}
+{"id": "en_w_guide", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "2ee70365020c", "date": "2026-11-09"}
+{"id": "en_w_guitar#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "889efcf21adc", "date": "2026-11-09"}
+{"id": "en_w_note", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "f40623f61ced", "date": "2026-11-09"}
+{"id": "en_w_note#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "2e5192a980e0", "date": "2026-11-09"}
+{"id": "en_w_relationship#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "612c4390164a", "date": "2026-11-09"}
+{"id": "en_w_sheep", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "3f1c08b4906c", "date": "2026-11-09"}
+{"id": "en_w_sheep#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "c7d203142b08", "date": "2026-11-09"}
+{"id": "en_w_skin#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "0adee3039204", "date": "2026-11-09"}
+{"id": "en_w_view#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "29189cd6175c", "date": "2026-11-09"}
+{"id": "en_w_cheat#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "f3927b448b79", "date": "2026-11-09"}
+{"id": "en_w_memory#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "e8d5ed6b594c", "date": "2026-11-09"}
+{"id": "en_w_compete#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "b4e9b659d4d4", "date": "2026-11-09"}
+{"id": "en_w_defend#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "4e2198fd7a8d", "date": "2026-11-09"}
+{"id": "en_w_deserve#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "d9299b9d0d5b", "date": "2026-11-09"}
+{"id": "en_w_load#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "c3d07de39bd9", "date": "2026-11-09"}
+{"id": "en_w_retire#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "6b74f5bd1145", "date": "2026-11-09"}
+{"id": "en_w_rob", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "4ee8f050214e", "date": "2026-11-09"}
+{"id": "en_w_stretch#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "81d856cb72e8", "date": "2026-11-09"}
+{"id": "en_w_discount#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "259db6c509b4", "date": "2026-11-09"}
+{"id": "en_w_flavour#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "9ced9494c63f", "date": "2026-11-09"}
+{"id": "en_w_asleep#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "781c04d0e26a", "date": "2026-11-09"}
+{"id": "en_w_basic#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "e5b201a6d493", "date": "2026-11-09"}
+{"id": "en_w_deaf#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "a95afc98f5fc", "date": "2026-11-09"}
+{"id": "en_w_fluent", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "a7e426ab386f", "date": "2026-11-09"}
+{"id": "en_w_board", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "55781649303f", "date": "2026-11-09"}
+{"id": "en_w_bounce#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "cc8999cd6ed8", "date": "2026-11-09"}
+{"id": "en_w_capture", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "d408a79ccdc2", "date": "2026-11-09"}
+{"id": "en_w_demonstrate", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "c325cf1a41fa", "date": "2026-11-09"}
+{"id": "en_w_proceed#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "d682b8b8271d", "date": "2026-11-09"}
+{"id": "en_w_pursue", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "6709e3a35b41", "date": "2026-11-09"}
+{"id": "en_w_vary", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "1ce2ec74325d", "date": "2026-11-09"}
+{"id": "en_w_withdraw", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "bf3988ea2d1e", "date": "2026-11-09"}
+{"id": "en_w_chemical", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "e15266c6ebbe", "date": "2026-11-09"}
+{"id": "en_w_delivery#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "83955c890256", "date": "2026-11-09"}
+{"id": "en_w_dirt", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "707c3cff9df2", "date": "2026-11-09"}
+{"id": "en_w_dirt#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "268d26134ac5", "date": "2026-11-09"}
+{"id": "en_w_expense", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "5a93a67ffa4e", "date": "2026-11-09"}
+{"id": "en_w_expense#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "77e55d6dcf46", "date": "2026-11-09"}
+{"id": "en_w_file#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "3349c0777dc4", "date": "2026-11-09"}
+{"id": "en_w_gang#ex1", "verdict": "doubtful", "problem": "The Arabic drops the 'gang' nuance (a group of boys, often a street gang); it is a neutral rendering and acceptable, but the English could be read as a gang of troublemakers.", "fix": "كانت عصابة من الأولاد واقفة عند الزاوية.", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "d58d0fbf7126", "date": "2026-11-09"}
+{"id": "en_w_giant", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "6e54259f9e0f", "date": "2026-11-09"}
+{"id": "en_w_burst#ex1", "verdict": "doubtful", "problem": "'تمزّق' means 'tore'; 'burst' is better rendered as 'انفجر' or 'انشقّ'. The meaning is acceptable in context.", "fix": "انفجر الكيس وسقط التفاح منه.", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "5134bb235882", "date": "2026-11-09"}
+{"id": "en_w_estimate", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "d03e660cf34c", "date": "2026-11-09"}
+{"id": "en_w_harm#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "5e794edf985b", "date": "2026-11-09"}
+{"id": "en_w_attraction", "verdict": "doubtful", "problem": "Arabic gives only the 'tourist attraction' and 'pull' senses. 'جذب' is a noun of action, and the general sense of liking or attraction (انجذاب) is missing.", "fix": "معلم سياحي، جاذبية", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "00511f5699ef", "date": "2026-11-09"}
+{"id": "en_w_cottage#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "73c429f86ef5", "date": "2026-11-09"}
+{"id": "en_w_defeat", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "fc537eb6bb42", "date": "2026-11-09"}
+{"id": "en_w_gun", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "3db3bb293c74", "date": "2026-11-09"}
+{"id": "en_w_gun#ex1", "verdict": "doubtful", "problem": "Arabic 'سلاحًا' is more general than 'gun'. It is acceptable, but 'سلاحًا ناريًا' or 'بندقية' is more precise.", "fix": "كان الجندي يحمل بندقية.", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "6963bc1fa962", "date": "2026-11-09"}
+{"id": "en_w_household", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "a3322b40b396", "date": "2026-11-09"}
+{"id": "en_w_infection#ex1", "verdict": "doubtful", "problem": "'العدوى' means contagion. For a medical infection, 'الالتهاب' is more natural, and 'للعدوى' is acceptable but not ideal.", "fix": "أعطاني الطبيب دواءً للالتهاب.", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "032b7b98d83f", "date": "2026-11-09"}
+{"id": "en_w_partner#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "a56525631f61", "date": "2026-11-09"}
+{"id": "en_w_prayer#ex1", "verdict": "doubtful", "problem": "'دعاءً' fits, but 'صلاة' is the more common translation of prayer, especially before a meal in a Christian context. Both are acceptable.", "fix": "قالوا صلاة قبل العشاء.", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "64178fa7032d", "date": "2026-11-09"}
+{"id": "en_w_incredible#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "fb9f3cc94872", "date": "2026-11-09"}
+{"id": "en_w_remote", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "c74dc4615fc0", "date": "2026-11-09"}
+{"id": "en_w_analyse#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "4ed9ae1a043c", "date": "2026-11-09"}
+{"id": "en_w_engage", "verdict": "doubtful", "problem": "'يشغل، يجذب، يشارك' is a mix of senses. 'Engage' meaning 'participate' is mainly 'engage in', and 'يشارك' is slightly off.", "fix": "يشغل، يجذب (الانتباه)، يشرك", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "d4ffba0d97b0", "date": "2026-11-09"}
+{"id": "en_w_persist", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "fea8917e29b8", "date": "2026-11-09"}
+{"id": "en_w_recite", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "29983fdc19a1", "date": "2026-11-09"}
+{"id": "en_w_restrict#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "1d06480bac66", "date": "2026-11-09"}
+{"id": "en_w_arena", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "cac36abc3fb9", "date": "2026-11-09"}
+{"id": "en_w_arena#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "8d544dea315d", "date": "2026-11-09"}
+{"id": "en_w_blister", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "ed45adc2d371", "date": "2026-11-09"}
+{"id": "en_w_blister#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "f2428a4daea3", "date": "2026-11-09"}
+{"id": "en_w_counsellor", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "7f820a064e2b", "date": "2026-11-09"}
+{"id": "en_w_counsellor#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "424fa65be060", "date": "2026-11-09"}
+{"id": "en_w_deer", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "c0ac4fe3f55a", "date": "2026-11-09"}
+{"id": "en_w_deer#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "b8ca527d8230", "date": "2026-11-09"}
+{"id": "en_w_idle", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "6dbdf6ab44ee", "date": "2026-11-09"}
+{"id": "en_w_naive#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "127acd227691", "date": "2026-11-09"}
+{"id": "en_w_shallow#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "9de3149b2f94", "date": "2026-11-09"}
+{"id": "en_w_linger", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "d9a240c1d84e", "date": "2026-11-09"}
+{"id": "en_w_accommodate", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "179a8dd402bd", "date": "2026-11-09"}
+{"id": "en_w_advocate", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "740a5342fdc0", "date": "2026-11-09"}
+{"id": "en_w_sprain", "verdict": "doubtful", "problem": "Arabic 'يُصاب بالتواء' is intransitive/passive while 'يلوي' is a generic 'twist'; the sense of spraining a joint is slightly imprecise.", "fix": "يُصاب بالتواء (في)، يلوي (مفصلًا)", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "3d1b63145fc0", "date": "2026-11-09"}
+{"id": "en_w_wobble", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "8088b7fe7848", "date": "2026-11-09"}
+{"id": "en_w_anguish", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "9843bf31f24f", "date": "2026-11-09"}
+{"id": "en_w_anguish#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "285268f398cd", "date": "2026-11-09"}
+{"id": "en_w_erosion", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "b5853d6b0534", "date": "2026-11-09"}
+{"id": "en_w_erosion#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "c875b2697b09", "date": "2026-11-09"}
+{"id": "en_w_hail", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "db009a4acd6b", "date": "2026-11-09"}
+{"id": "en_w_irony", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "2f0235b2b1a2", "date": "2026-11-09"}
+{"id": "en_w_straw#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "a1b480a9f78c", "date": "2026-11-09"}
+{"id": "en_w_tribe#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "2e52b6d72fd0", "date": "2026-11-09"}
+{"id": "en_w_stingy#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "8082dd56bb10", "date": "2026-11-09"}
+{"id": "en_w_cajole", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "e96bdcaa31af", "date": "2026-11-09"}
+{"id": "en_w_cajole#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "45d2aa883a26", "date": "2026-11-09"}
+{"id": "en_w_clench", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "549c8efd3746", "date": "2026-11-09"}
+{"id": "en_w_clench#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "fad441969d2e", "date": "2026-11-09"}
+{"id": "en_w_crumple", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "d931dad15294", "date": "2026-11-09"}
+{"id": "en_w_deter#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "b2a9bca43d28", "date": "2026-11-09"}
+{"id": "en_w_dodge", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "b5a786714112", "date": "2026-11-09"}
+{"id": "en_w_elicit", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "0b30248cc28d", "date": "2026-11-09"}
+{"id": "en_w_elicit#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "9e291d97f2c0", "date": "2026-11-09"}
+{"id": "en_w_flicker#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "16225437c1d0", "date": "2026-11-09"}
+{"id": "en_w_gargle#ex1", "verdict": "doubtful", "problem": "The English is slightly unnatural ('for a bad throat' is better as 'for a sore throat'). The Arabic says 'inflammation of the throat', which is a bit more specific than the English.", "fix": "Gargle with salt water for a sore throat.", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "bdd38a5230eb", "date": "2026-11-09"}
+{"id": "en_w_gnaw#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "215ac1d8c0df", "date": "2026-11-09"}
+{"id": "en_w_huddle", "verdict": "doubtful", "problem": "The Arabic is plural and reflexive ('they gather closely'), which does not match the singular verb 'to huddle'. 'يتكوّم' is also a weak match for the intended sense.", "fix": "يتجمّع متقاربين، يتكوّر من البرد", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "5a37892e917e", "date": "2026-11-09"}
+{"id": "en_w_hush", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "fd5afdfd17ac", "date": "2026-11-09"}
+{"id": "en_w_indulge#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "123b1aee57ad", "date": "2026-11-09"}
+{"id": "en_w_lament", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "09cc1e1de23e", "date": "2026-11-09"}
+{"id": "en_w_maim", "verdict": "doubtful", "problem": "'يشوّه' means to disfigure, which is not the same as maiming (causing a serious injury or disability). Only the second Arabic phrase fits well.", "fix": "يُلحق عاهة دائمة، يُشوّه جسديًا", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "b9fc684f036d", "date": "2026-11-09"}
+{"id": "en_w_muster", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "f4ef92c2bdcd", "date": "2026-11-09"}
+{"id": "en_w_muster#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "dd91110c30ba", "date": "2026-11-09"}
+{"id": "en_w_nestle", "verdict": "doubtful", "problem": "The Arabic gloss covers only the 'snuggle' sense. 'يستقرّ بدفء' is vague, and 'يتكوّر' means 'to curl up into a ball', which is not quite nestle.", "fix": "يتكوّم بدفء، يستقرّ بارتياح", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "da2a5fa2d67a", "date": "2026-11-09"}
+{"id": "en_w_nestle#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "900b9069e118", "date": "2026-11-09"}
+{"id": "en_w_ooze#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "dc03e30895e5", "date": "2026-11-09"}
+{"id": "en_w_poach#ex1", "verdict": "doubtful", "problem": "Poaching eggs is not the same as boiling (اسلق). The Arabic should use a poaching term, and 'دون قشره' is awkward.", "fix": "اطبخ البيض مسلوقًا بدون قشر (بوشيه) لمدة دقيقتين.", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "2d19006d6158", "date": "2026-11-09"}
+{"id": "en_w_prod#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "580ed3cd6245", "date": "2026-11-09"}
+{"id": "en_w_skulk", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "76624d40c1ed", "date": "2026-11-09"}
+{"id": "en_w_snore#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "7a977690fb3e", "date": "2026-11-09"}
+{"id": "en_w_sulk", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "92bbd5f88276", "date": "2026-11-09"}
+{"id": "en_w_sulk#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "931192c7d44e", "date": "2026-11-09"}
+{"id": "en_w_swagger#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "671558592905", "date": "2026-11-09"}
+{"id": "en_w_wiggle", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "2138fc082031", "date": "2026-11-09"}
+{"id": "en_w_strong#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "bf77bda97ed5", "date": "2026-11-09"}

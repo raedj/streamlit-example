@@ -40,9 +40,9 @@ rank	sentence	en	ar	names
 20	This is for you.	This is for you.	هذا لك.
 20	We waited for an hour.	We waited for an hour.	انتظرنا ساعة.
 21	She is a teacher.	She is a teacher.	هي معلّمة.
-21	Her mother is very kind.	Her mother is very kind.	أمها لطيفة جدًا.
+21	She has a very kind mother.	She has a very kind mother.	لديها أم لطيفة جدًا.
 22	They live in the city.	They live in the city.	يعيشون في المدينة.
-22	Their children are at school.	Their children are at school.	أطفالهم في المدرسة.
+22	They are at school now.	They are at school now.	هم في المدرسة الآن.
 23	I know her name.	I know her name.	أعرف اسمها.
 23	Do you know this place?	Do you know this place?	هل تعرف هذا المكان؟
 24	Can I get some water?	Can I get some water?	هل يمكنني الحصول على بعض الماء؟
@@ -90,7 +90,7 @@ rank	sentence	en	ar	names
 45	I can't talk now.	I can't talk now.	لا أستطيع التحدث الآن.
 45	Where are you now?	Where are you now?	أين أنت الآن؟
 46	This bread is very good.	This bread is very good.	هذا الخبز جيد جدًا.
-46	She is a better cook than me.	She is a better cook than me.	هي طبّاخة أفضل مني.
+46	She is a good cook.	She is a good cook.	هي طبّاخة جيدة.
 47	I can see your house from here.	I can see your house from here.	أستطيع رؤية بيتك من هنا.
 47	We saw a good movie.	We saw a good movie.	شاهدنا فيلمًا جيدًا.
 48	Tell me about your family.	Tell me about your family.	حدّثني عن عائلتك.
@@ -170,7 +170,7 @@ rank	sentence	en	ar	names
 85	I'm sorry, I'm late.	I'm sorry, I'm late.	آسف، لقد تأخرت.
 85	Sorry, I don't understand.	Sorry, I don't understand.	عذرًا، لا أفهم.
 86	Thank you for your help.	Thank you for your help.	شكرًا على مساعدتك.
-86	Thanks a lot for dinner.	Thanks a lot for dinner.	شكرًا جزيلًا على العشاء.
+86	I want to thank you for dinner.	I want to thank you for dinner.	أريد أن أشكرك على العشاء.
 87	I love my family.	I love my family.	أحب عائلتي.
 87	She loves her new job.	She loves her new job.	تحب وظيفتها الجديدة.
 88	We have a little house.	We have a little house.	لدينا بيت صغير.
@@ -186,7 +186,7 @@ rank	sentence	en	ar	names
 93	Are you sure about that?	Are you sure about that?	هل أنت متأكد من ذلك؟
 93	Sure, I can help you.	Sure, I can help you.	بالتأكيد، أستطيع مساعدتك.
 94	My mother works at a school.	My mother works at a school.	تعمل أمي في مدرسة.
-94	I work from home today.	I work from home today.	أعمل من البيت اليوم.
+94	I am working from home today.	I am working from home today.	أعمل من البيت اليوم.
 95	I will call you tonight.	I will call you tonight.	سأتصل بك الليلة.
 95	Please call a doctor.	Please call a doctor.	من فضلك اتصل بطبيب.
 96	Can I help you?	Can I help you?	هل أستطيع مساعدتك؟
@@ -457,7 +457,7 @@ rank	sentence	en	ar	names
 228	She works hard every day.	She works hard every day.	تعمل بجد كل يوم.
 229	This is very important.	This is very important.	هذا مهم جدًا.
 229	Family is important to me.	Family is important to me.	العائلة مهمة بالنسبة لي.
-230	We are very different.	We are very different.	نحن مختلفان جدًا.
+230	We are very different.	We are very different.	نحن مختلفون جدًا.
 230	This city is different at night.	This city is different at night.	هذه المدينة مختلفة في الليل.
 231	I live in a small room.	I live in a small room.	أعيش في غرفة صغيرة.
 231	This car is too small for us.	This car is too small for us.	هذه السيارة صغيرة جدًا علينا.
@@ -520,7 +520,7 @@ rank	sentence	en	ar	names
 260	This coffee is very good.	This coffee is very good.	هذه القهوة جيدة جدًا.
 260	Let's meet for coffee tomorrow.	Let's meet for coffee tomorrow.	لنلتقِ لشرب القهوة غدًا.
 261	I make tea for my mother.	I make tea for my mother.	أُعدّ الشاي لأمي.
-261	The tea is too cold now.	The tea is too cold now.	الشاي بارد جدًا الآن.
+261	The tea is too cold now.	The tea is too cold now.	الشاي بارد أكثر من اللازم الآن.
 262	I buy bread every morning.	I buy bread every morning.	أشتري الخبز كل صباح.
 262	This bread is still hot.	This bread is still hot.	هذا الخبز ما زال ساخنًا.
 263	I take the bus to work.	I take the bus to work.	أركب الحافلة إلى العمل.
@@ -597,7 +597,7 @@ rank	sentence	en	ar	names
 298	I need to wash the car.	I need to wash the car.	أحتاج إلى غسل السيارة.
 299	My room is clean now.	My room is clean now.	غرفتي نظيفة الآن.
 299	Please keep the house clean.	Please keep the house clean.	من فضلك حافظ على نظافة البيت.
-300	You're welcome to come any time.	You're welcome to come any time.	مرحبًا بك في أي وقت.
+300	You're welcome to come any time.	You're welcome to come any time.	أنت مرحَّب بك في أي وقت.
 300	Welcome to our house!	Welcome to our house!	أهلًا بك في بيتنا!
 301	Can I use your phone?	Can I use your phone?	هل يمكنني استخدام هاتفك؟
 301	We use this room for meetings.	We use this room for meetings.	نستخدم هذه الغرفة للاجتماعات.
@@ -667,7 +667,7 @@ rank	sentence	en	ar	names
 333	I really enjoy my new job.	I really enjoy my new job.	أستمتع حقًا بعملي الجديد.
 334	I miss my family a lot.	I miss my family a lot.	أفتقد عائلتي كثيرًا.
 334	Let's go, or we will miss the bus!	Let's go, or we will miss the bus!	لنذهب وإلا فاتتنا الحافلة!
-335	I agree with you.	I agree with you.	أنا موافق معك.
+335	I agree with you.	I agree with you.	أنا أتفق معك.
 335	We all agreed on the plan.	We all agreed on the plan.	وافقنا جميعًا على الخطة.
 336	Please answer the question.	Please answer the question.	من فضلك أجب عن السؤال.
 336	She didn't answer my message.	She didn't answer my message.	لم تردّ على رسالتي.
@@ -692,7 +692,7 @@ rank	sentence	en	ar	names
 346	I hate cold weather.	I hate cold weather.	أكره الطقس البارد.
 346	She hates waiting for the bus.	She hates waiting for the bus.	تكره انتظار الحافلة.
 347	My leg hurts a lot today.	My leg hurts a lot today.	ساقي تؤلمني كثيرًا اليوم.
-347	Did you hurt your arm?	Did you hurt your arm?	هل آذيت ذراعك؟
+347	Did you hurt your arm?	Did you hurt your arm?	هل أصبت ذراعك؟
 348	Do you want to join us for lunch?	Do you want to join us for lunch?	هل تريد أن تنضم إلينا على الغداء؟
 348	She joined the team last month.	She joined the team last month.	انضمت إلى الفريق الشهر الماضي.
 349	I hope I pass the test.	I hope I pass the test.	أتمنى أن أنجح في الاختبار.
@@ -751,7 +751,7 @@ rank	sentence	en	ar	names
 375	She left a few minutes ago.	She left a few minutes ago.	غادرت قبل بضع دقائق.
 376	I have lived here since last year.	I have lived here since last year.	أسكن هنا منذ العام الماضي.
 376	We haven't met since the party.	We haven't met since the party.	لم نلتق منذ الحفلة.
-377	Have you eaten yet?	Have you eaten yet?	هل أكلت بعد؟
+377	Have you eaten yet?	Have you eaten yet?	هل أكلت حتى الآن؟
 377	The bus hasn't arrived yet.	The bus hasn't arrived yet.	لم تصل الحافلة بعد.
 378	We walked through the park.	We walked through the park.	مشينا عبر الحديقة.
 378	The train goes through the mountains.	The train goes through the mountains.	يمرّ القطار عبر الجبال.
@@ -814,7 +814,7 @@ rank	sentence	en	ar	names
 407	I'll be there in half an hour.	I'll be there in half an hour.	سأكون هناك بعد نصف ساعة.
 407	She ate half of the cake.	She ate half of the cake.	أكلت نصف الكعكة.
 408	I'll see you this afternoon.	I'll see you this afternoon.	سأراك بعد ظهر اليوم.
-408	We played in the park all afternoon.	We played in the park all afternoon.	لعبنا في الحديقة طوال فترة بعد الظهر.
+408	We played in the park all afternoon.	We played in the park all afternoon.	لعبنا في الحديقة طوال فترة ما بعد الظهر.
 409	What are you doing this evening?	What are you doing this evening?	ماذا ستفعل هذا المساء؟
 409	We usually walk in the evening.	We usually walk in the evening.	عادةً نمشي في المساء.
 410	What did you do at the weekend?	What did you do at the weekend?	ماذا فعلت في عطلة نهاية الأسبوع؟
@@ -1088,7 +1088,7 @@ rank	sentence	en	ar	names
 544	Are you coming to my party?	Are you coming to my party?	هل ستأتي إلى حفلتي؟
 544	We had a party for her birthday.	We had a party for her birthday.	أقمنا حفلة لعيد ميلادها.
 545	The meeting starts at ten.	The meeting starts at ten.	يبدأ الاجتماع في العاشرة.
-545	I have meetings all afternoon.	I have meetings all afternoon.	لديّ اجتماعات طوال فترة بعد الظهر.
+545	I have meetings all afternoon.	I have meetings all afternoon.	لديّ اجتماعات طوال فترة ما بعد الظهر.
 546	There are twenty students in my class.	There are twenty students in my class.	في صفي عشرون طالبًا.
 546	What time is your next class?	What time is your next class?	متى حصتك التالية؟
 547	Today's lesson was very interesting.	Today's lesson was very interesting.	كان درس اليوم مثيرًا للاهتمام جدًا.
@@ -1100,7 +1100,7 @@ rank	sentence	en	ar	names
 550	He works for a big company.	He works for a big company.	يعمل لدى شركة كبيرة.
 550	Our company has twenty people.	Our company has twenty people.	في شركتنا عشرون شخصًا.
 551	My father has a small business.	My father has a small business.	لأبي عمل تجاري صغير.
-551	Business is good this year.	Business is good this year.	العمل جيد هذه السنة.
+551	Business is good this year.	Business is good this year.	الأعمال جيدة هذه السنة.
 552	What is your favourite sport?	What is your favourite sport?	ما رياضتك المفضلة؟
 552	I do sport three times a week.	I do sport three times a week.	أمارس الرياضة ثلاث مرات في الأسبوع.
 553	She has a red car.	She has a red car.	لديها سيارة حمراء.
@@ -1390,7 +1390,7 @@ rank	sentence	en	ar	names
 695	Boil the water for the tea.	Boil the water for the tea.	اغلِ الماء للشاي.
 695	Boil the eggs for ten minutes.	Boil the eggs for ten minutes.	اسلق البيض عشر دقائق.
 696	Mix the eggs with the sugar.	Mix the eggs with the sugar.	اخلط البيض مع السكر.
-696	Don't mix the dirty clothes with the clean ones.	Don't mix the dirty clothes with the clean ones.	لا تخلط الملابس الوسخة مع النظيفة.
+696	Don't mix the dirty clothes with the clean ones.	Don't mix the dirty clothes with the clean ones.	لا تخلط الملابس المتّسخة مع النظيفة.
 697	He married his best friend.	He married his best friend.	تزوّج صديقته المقرّبة.
 697	Will you marry me?	Will you marry me?	هل تتزوجينني؟
 698	Our team beat them three to one.	Our team beat them three to one.	هزم فريقنا فريقهم ثلاثة مقابل واحد.
@@ -1457,7 +1457,7 @@ rank	sentence	en	ar	names
 728	Did you pass the exam?	Did you pass the exam?	هل نجحت في الامتحان؟
 729	What's your favourite subject at school?	What's your favourite subject at school?	ما مادتك المفضّلة في المدرسة؟
 729	Let's change the subject.	Let's change the subject.	لنغيّر الموضوع.
-730	I'm taking an English course.	I'm taking an English course.	أنا أدرس دورة إنجليزية.	English
+730	I'm taking an English course.	I'm taking an English course.	أنا أحضر دورة في اللغة الإنجليزية.	English
 730	The course lasts six weeks.	The course lasts six weeks.	تستمر الدورة ستة أسابيع.
 731	She loves science and maths.	She loves science and maths.	تحب العلوم والرياضيات.
 731	Our science teacher is very funny.	Our science teacher is very funny.	معلم العلوم عندنا مضحك جدًا.
@@ -1532,7 +1532,7 @@ rank	sentence	en	ar	names
 766	They live in a flat near the station.	They live in a flat near the station.	يسكنون في شقة قرب المحطة.
 766	Our flat is small but comfortable.	Our flat is small but comfortable.	شقتنا صغيرة لكنها مريحة.
 767	Take the stairs to the second floor.	Take the stairs to the second floor.	اصعد الدرج إلى الطابق الثاني.
-767	He fell down the stairs.	He fell down the stairs.	سقط على الدرج.
+767	He fell down the stairs.	He fell down the stairs.	سقط من أعلى الدرج.
 768	There's a cat on the roof.	There's a cat on the roof.	هناك قطة على السطح.
 768	The roof is red.	The roof is red.	السقف أحمر.
 769	My father is sleeping on the sofa.	My father is sleeping on the sofa.	أبي نائم على الأريكة.
@@ -1546,7 +1546,7 @@ rank	sentence	en	ar	names
 773	My brother is an engineer.	My brother is an engineer.	أخي مهندس.
 773	She works as an engineer in London.	She works as an engineer in London.	تعمل مهندسة في لندن.	London
 774	The nurse gave me some medicine.	The nurse gave me some medicine.	أعطتني الممرضة بعض الدواء.
-774	My mother was a nurse for thirty years.	My mother was a nurse for thirty years.	كانت أمي ممرضة ثلاثين سنة.
+774	My mother was a nurse for thirty years.	My mother was a nurse for thirty years.	كانت أمي ممرضة لمدة ثلاثين سنة.
 775	The waiter brought us the menu.	The waiter brought us the menu.	أحضر لنا النادل قائمة الطعام.
 775	Let's ask the waiter for the bill.	Let's ask the waiter for the bill.	لنطلب الفاتورة من النادل.
 776	The city is full of tourists in summer.	The city is full of tourists in summer.	المدينة مليئة بالسياح في الصيف.
@@ -1564,7 +1564,7 @@ rank	sentence	en	ar	names
 782	What's on the agenda for the meeting?	What's on the agenda for the meeting?	ما جدول أعمال الاجتماع؟
 782	Please send me the agenda.	Please send me the agenda.	من فضلك أرسل لي جدول الأعمال.
 783	We sent them our proposal.	We sent them our proposal.	أرسلنا لهم اقتراحنا.
-783	The manager liked the proposal.	The manager liked the proposal.	أعجب المدير الاقتراح.
+783	The manager liked the proposal.	The manager liked the proposal.	أُعجب المدير بالاقتراح.
 784	Please read the contract first.	Please read the contract first.	من فضلك اقرأ العقد أولًا.
 784	My contract finishes in June.	My contract finishes in June.	ينتهي عقدي في يونيو.
 785	I opened a bank account.	I opened a bank account.	فتحت حسابًا مصرفيًا.
@@ -1628,7 +1628,7 @@ rank	sentence	en	ar	names
 814	Our flight was very late.	Our flight was very late.	تأخّرت رحلتنا الجوية كثيرًا.
 814	What time is your flight?	What time is your flight?	في أيّ ساعة رحلتك؟
 815	Don't forget your passport.	Don't forget your passport.	لا تنسَ جواز سفرك.
-815	Can I see your passport, please?	Can I see your passport, please?	هل أرى جواز سفرك من فضلك؟
+815	Can I see your passport, please?	Can I see your passport, please?	هل يمكنني رؤية جواز سفرك من فضلك؟
 816	Where can I leave my luggage?	Where can I leave my luggage?	أين أستطيع ترك أمتعتي؟
 816	We have too much luggage.	We have too much luggage.	عندنا أمتعة كثيرة جدًا.
 817	The departure time is six o'clock.	The departure time is six o'clock.	موعد المغادرة الساعة السادسة.
@@ -1699,8 +1699,8 @@ rank	sentence	en	ar	names
 849	She looked surprised and happy.	She looked surprised and happy.	بدت متفاجئة وسعيدة.
 850	Fruit is healthy food.	Fruit is healthy food.	الفاكهة طعام صحي.
 850	My grandfather is still healthy.	My grandfather is still healthy.	ما زال جدي بصحة جيدة.
-851	She was ill for a week.	She was ill for a week.	كانت مريضة أسبوعًا.
-851	I feel ill today.	I feel ill today.	أشعر بالمرض اليوم.
+851	She was ill for a week.	She was ill for a week.	كانت مريضة لمدة أسبوع.
+851	I feel ill today.	I feel ill today.	أشعر أنني مريض اليوم.
 852	This restaurant is very popular.	This restaurant is very popular.	هذا المطعم مشهور جدًا.
 852	Sport is popular all over the world.	Sport is popular all over the world.	الرياضة شائعة في كل أنحاء العالم.
 853	They live in a modern flat.	They live in a modern flat.	يسكنون في شقة حديثة.
@@ -1726,7 +1726,7 @@ rank	sentence	en	ar	names
 863	Are you certain about that?	Are you certain about that?	هل أنت متأكد من ذلك؟
 863	Certain people never say thank you.	Certain people never say thank you.	بعض الناس لا يقولون شكرًا أبدًا.
 864	Will you be able to come?	Will you be able to come?	هل ستتمكّن من المجيء؟
-864	She was able to finish on time.	She was able to finish on time.	تمكّنت من الانتهاء في الوقت.
+864	She was able to finish on time.	She was able to finish on time.	تمكّنت من الانتهاء في الوقت المحدد.
 865	I'm vegetarian, I don't eat meat.	I'm vegetarian, I don't eat meat.	أنا نباتي، لا آكل اللحم.
 865	Do you have any vegetarian food?	Do you have any vegetarian food?	هل عندكم طعام نباتي؟
 866	Although it was raining, we went out.	Although it was raining, we went out.	مع أن المطر كان يهطل، خرجنا.
@@ -1737,7 +1737,7 @@ rank	sentence	en	ar	names
 868	My sister lives abroad.	My sister lives abroad.	أختي تعيش في الخارج.
 869	It's late, but let's go anyway.	It's late, but let's go anyway.	الوقت متأخر، لكن لنذهب على أيّ حال.
 869	Anyway, I have to go now.	Anyway, I have to go now.	على أيّ حال، يجب أن أذهب الآن.
-870	Let's have tea instead of coffee.	Let's have tea instead of coffee.	لنشرب الشاي بدلًا من القهوة.
+870	We had no coffee, so we had tea instead.	We had no coffee, so we had tea instead.	لم تكن لدينا قهوة، فشربنا الشاي بدلًا منها.
 870	I didn't go out. I stayed home instead.	I didn't go out. I stayed home instead.	لم أخرج، بل بقيت في البيت.
 871	Perhaps she missed the bus.	Perhaps she missed the bus.	ربما فاتتها الحافلة.
 871	Perhaps we can meet next week.	Perhaps we can meet next week.	ربما نستطيع أن نلتقي الأسبوع القادم.
@@ -1768,7 +1768,7 @@ rank	sentence	en	ar	names
 884	None of my friends came.	None of my friends came.	لم يأتِ أحد من أصدقائي.
 884	I wanted some cake, but there was none left.	I wanted some cake, but there was none left.	أردت بعض الكعك لكن لم يبقَ شيء.
 885	You can take either bus.	You can take either bus.	يمكنك أن تأخذ أيًّا من الحافلتين.
-885	I don't like it either.	I don't like it either.	ولا أنا أحبه أيضًا.
+885	I don't like it either.	I don't like it either.	أنا لا أحبه أيضًا.
 886	Neither of us can drive.	Neither of us can drive.	لا أحد منا يستطيع القيادة.
 886	Neither answer is correct.	Neither answer is correct.	ليست أيّ من الإجابتين صحيحة.
 887	I don't know whether he is coming.	I don't know whether he is coming.	لا أعرف إن كان سيأتي.
@@ -1799,7 +1799,7 @@ rank	sentence	en	ar	names
 899	How much water do you drink a day?	How much water do you drink a day?	كم من الماء تشرب في اليوم؟
 900	Take an umbrella in case it rains.	Take an umbrella in case it rains.	خذ مظلّة تحسّبًا للمطر.
 900	I wrote down his number in case I forgot it.	I wrote down his number in case I forgot it.	كتبت رقمه تحسّبًا لأن أنساه.
-901	Can you add a little more sugar to my tea?	Can you add a little more sugar to my tea?	هل يمكنك أن تضيف قليلًا من السكّر إلى شايي؟
+901	Can you add a little more sugar to my tea?	Can you add a little more sugar to my tea?	هل يمكنك أن تضيف المزيد من السكّر إلى الشاي؟
 902	My sister wants to apply for a job at the bank.	My sister wants to apply for a job at the bank.	تريد أختي أن تتقدّم لوظيفة في البنك.
 903	My brothers argue about football every weekend.	My brothers argue about football every weekend.	يتجادل إخوتي حول كرة القدم كل عطلة نهاية أسبوع.
 904	The dog didn't attack anyone, it was just afraid.	The dog didn't attack anyone, it was just afraid.	لم يهاجم الكلب أحدًا، كان خائفًا فقط.
@@ -1808,7 +1808,7 @@ rank	sentence	en	ar	names
 907	Don't worry, my dog doesn't bite.	Don't worry, my dog doesn't bite.	لا تقلق، كلبي لا يعضّ.
 908	The wind is going to blow very hard tonight.	The wind is going to blow very hard tonight.	ستهبّ الريح بقوّة كبيرة الليلة.
 909	Close your eyes and breathe slowly.	Close your eyes and breathe slowly.	أغمض عينيك وتنفّس ببطء.
-910	Brush your teeth before you go to bed.	Brush your teeth before you go to bed.	فرّش أسنانك قبل أن تذهب إلى السرير.
+910	Brush your teeth before you go to bed.	Brush your teeth before you go to bed.	نظّف أسنانك بالفرشاة قبل أن تنام.
 911	They had to cancel the flight because of the snow.	They had to cancel the flight because of the snow.	اضطرّوا إلى إلغاء الرحلة بسبب الثلج.
 912	We're going to celebrate my dad's birthday at a restaurant.	We're going to celebrate my dad's birthday at a restaurant.	سنحتفل بعيد ميلاد أبي في مطعم.
 913	The cat likes to chase birds in the garden.	The cat likes to chase birds in the garden.	تحب القطة مطاردة الطيور في الحديقة.
@@ -1818,7 +1818,7 @@ rank	sentence	en	ar	names
 917	You should consider a job in another city.	You should consider a job in another city.	عليك أن تفكّر في وظيفة في مدينة أخرى.
 918	Let's continue the lesson after lunch.	Let's continue the lesson after lunch.	لنكمل الدرس بعد الغداء.
 919	The teacher couldn't control the class today.	The teacher couldn't control the class today.	لم يستطع المعلّم السيطرة على الصف اليوم.
-920	Don't copy your friend's homework.	Don't copy your friend's homework.	لا تنسخ واجب صديقك.
+920	Don't copy your friend's homework.	Don't copy your friend's homework.	لا تنقل واجب صديقك.
 921	Cover the food so it stays warm.	Cover the food so it stays warm.	غطِّ الطعام كي يبقى دافئًا.
 922	A car crashed into a tree near our house.	A car crashed into a tree near our house.	اصطدمت سيارة بشجرة قرب بيتنا.
 923	Be careful when you cross the street.	Be careful when you cross the street.	انتبه عندما تعبر الشارع.
@@ -1895,7 +1895,7 @@ rank	sentence	en	ar	names
 994	We took a boat to the island.	We took a boat to the island.	ركبنا قاربًا إلى الجزيرة.
 995	The dog is eating a big bone.	The dog is eating a big bone.	يأكل الكلب عظمة كبيرة.
 996	The answer is at the bottom of the paper.	The answer is at the bottom of the paper.	الجواب في أسفل الورقة.
-997	I eat a bowl of soup every evening.	I eat a bowl of soup every evening.	آكل وعاءً من الحساء كل مساء.
+997	I eat a bowl of soup every evening.	I eat a bowl of soup every evening.	آكل صحنًا من الحساء كل مساء.
 998	Reading is good for your brain.	Reading is good for your brain.	القراءة مفيدة لدماغك.
 999	We bought a candle because there was no electricity.	We bought a candle because there was no electricity.	اشترينا شمعة لأنه لم تكن هناك كهرباء.
 1000	There's a new red carpet in the living room.	There's a new red carpet in the living room.	هناك سجّادة حمراء جديدة في غرفة الجلوس.
@@ -1938,11 +1938,11 @@ rank	sentence	en	ar	names
 1037	The car is in the garage.	The car is in the garage.	السيارة في المرآب.
 1038	Meet me at the school gate at three.	Meet me at the school gate at three.	قابلني عند بوّابة المدرسة في الثالثة.
 1039	Thank you for the lovely gift!	Thank you for the lovely gift!	شكرًا على الهدية الجميلة!
-1040	He got a goal in the last minute.	He got a goal in the last minute.	سجّل هدفًا في الدقيقة الأخيرة.
+1040	He scored a goal in the last minute.	He scored a goal in the last minute.	سجّل هدفًا في الدقيقة الأخيرة.
 1041	She wears a gold ring.	She wears a gold ring.	تلبس خاتمًا من الذهب.
 1042	Please don't walk on the grass.	Please don't walk on the grass.	من فضلك لا تمشِ على العشب.
 1043	Our guide explained the history of the old town.	Our guide explained the history of the old town.	شرح مرشدنا تاريخ البلدة القديمة.
-1044	My brother plays the guitar very well.	My brother plays the guitar very well.	يعزف أخي الغيتار جيدًا جدًا.
+1044	My brother plays the guitar very well.	My brother plays the guitar very well.	يعزف أخي على الغيتار جيدًا جدًا.
 1045	I can't sleep in this heat.	I can't sleep in this heat.	لا أستطيع النوم في هذه الحرارة.
 1046	What is the height of that building?	What is the height of that building?	ما ارتفاع ذلك المبنى؟
 1047	There's a hole in my sock.	There's a hole in my sock.	هناك ثقب في جوربي.
@@ -1965,7 +1965,7 @@ rank	sentence	en	ar	names
 1064	She looked at herself in the mirror.	She looked at herself in the mirror.	نظرت إلى نفسها في المرآة.
 1065	My boss is in a good mood today.	My boss is in a good mood today.	مديري في مزاج جيد اليوم.
 1066	I saw a mouse in the kitchen!	I saw a mouse in the kitchen!	رأيت فأرًا في المطبخ!
-1067	I left a note for you on the table.	I left a note for you on the table.	تركت لك ملاحظة على الطاولة.
+1067	I left a note for you on the table.	I left a note for you on the table.	تركت لك رسالة قصيرة على الطاولة.
 1068	Cook the onions in a little oil.	Cook the onions in a little oil.	اطبخ البصل في قليل من الزيت.
 1069	Cut the onion into small pieces.	Cut the onion into small pieces.	قطّع البصلة إلى قطع صغيرة.
 1070	The owner of the shop is very friendly.	The owner of the shop is very friendly.	صاحب المتجر ودود جدًا.
@@ -1989,7 +1989,7 @@ rank	sentence	en	ar	names
 1088	He came second in the race.	He came second in the race.	جاء في المركز الثاني في السباق.
 1089	I listen to the radio in the car.	I listen to the radio in the car.	أستمع إلى الراديو في السيارة.
 1090	Can you give me the recipe for this cake?	Can you give me the recipe for this cake?	هل يمكنك أن تعطيني وصفة هذه الكعكة؟
-1091	I have a good relationship with my parents.	I have a good relationship with my parents.	علاقتي جيدة بوالديّ.
+1091	I have a good relationship with my parents.	I have a good relationship with my parents.	لديّ علاقة جيدة بوالديّ.
 1092	Please take the rubbish out.	Please take the rubbish out.	من فضلك أخرج القمامة.
 1093	The shoes were in the sale, so they were cheap.	The shoes were in the sale, so they were cheap.	كان الحذاء في التخفيضات، فكان رخيصًا.
 1094	The children played in the sand all day.	The children played in the sand all day.	لعب الأطفال في الرمل طوال اليوم.
@@ -1998,13 +1998,13 @@ rank	sentence	en	ar	names
 1097	The screen on my phone is broken.	The screen on my phone is broken.	شاشة هاتفي مكسورة.
 1098	Is this seat free?	Is this seat free?	هل هذا المقعد شاغر؟
 1099	Can you keep a secret?	Can you keep a secret?	هل تستطيع أن تحفظ سرًّا؟
-1100	The farmer has more than a hundred sheep.	The farmer has more than a hundred sheep.	لدى المزارع أكثر من مئة خروف.
+1100	The farmer has more than a hundred sheep.	The farmer has more than a hundred sheep.	لدى المزارع أكثر من مئة رأس من الغنم.
 1101	Put the books back on the shelf.	Put the books back on the shelf.	أعد الكتب إلى الرفّ.
 1102	The ship leaves at twelve o'clock.	The ship leaves at twelve o'clock.	تغادر السفينة في الساعة الثانية عشرة.
 1103	I usually have a shower in the morning.	I usually have a shower in the morning.	أستحمّ عادةً في الصباح.
 1104	My grandmother gave me a silver ring.	My grandmother gave me a silver ring.	أعطتني جدتي خاتمًا من الفضّة.
 1105	Cooking is a useful skill.	Cooking is a useful skill.	الطبخ مهارة مفيدة.
-1106	The sun is bad for your skin.	The sun is bad for your skin.	الشمس مضرّة لجلدك.
+1106	The sun is bad for your skin.	The sun is bad for your skin.	الشمس مضرّة لبشرتك.
 1107	I can't find my other sock.	I can't find my other sock.	لا أجد جوربي الآخر.
 1108	Her son is a soldier in the army.	Her son is a soldier in the army.	ابنها جندي في الجيش.
 1109	There isn't enough space in the car for everyone.	There isn't enough space in the car for everyone.	لا توجد مساحة كافية في السيارة للجميع.
@@ -2027,7 +2027,7 @@ rank	sentence	en	ar	names
 1126	There was a lot of traffic this morning.	There was a lot of traffic this morning.	كانت حركة المرور كثيفة هذا الصباح.
 1127	Students must wear a uniform at this school.	Students must wear a uniform at this school.	يجب على الطلاب ارتداء زيّ موحّد في هذه المدرسة.
 1128	He sent me a funny video.	He sent me a funny video.	أرسل لي فيديو مضحكًا.
-1129	The room has a beautiful view of the sea.	The room has a beautiful view of the sea.	للغرفة منظر جميل على البحر.
+1129	The room has a beautiful view of the sea.	The room has a beautiful view of the sea.	تطلّ الغرفة على منظر جميل للبحر.
 1130	The museum has many visitors in summer.	The museum has many visitors in summer.	للمتحف زوّار كثيرون في الصيف.
 1131	The waves are very big today.	The waves are very big today.	الأمواج كبيرة جدًا اليوم.
 1132	What is the weight of this bag?	What is the weight of this bag?	ما وزن هذه الحقيبة؟
@@ -2099,7 +2099,7 @@ rank	sentence	en	ar	names
 1198	Tell me every detail of your trip.	Tell me every detail of your trip.	أخبرني بكل تفصيل عن رحلتك.
 1199	Coffee has a strong effect on me.	Coffee has a strong effect on me.	للقهوة أثر قوي عليّ.
 1200	He made a big effort to learn the language.	He made a big effort to learn the language.	بذل جهدًا كبيرًا لتعلّم اللغة.
-1201	He was caught trying to cheat in the exam.	He was caught trying to cheat in the exam.	قُبض عليه وهو يحاول الغشّ في الامتحان.
+1201	He was caught trying to cheat in the exam.	He was caught trying to cheat in the exam.	ضُبط وهو يحاول الغشّ في الامتحان.
 1202	I can't concentrate when the TV is on.	I can't concentrate when the TV is on.	لا أستطيع التركيز عندما يكون التلفاز مشغّلًا.
 1203	This drink contains a lot of sugar.	This drink contains a lot of sugar.	يحتوي هذا المشروب على سكّر كثير.
 1204	Divide the class into four groups.	Divide the class into four groups.	قسّم الصف إلى أربع مجموعات.
@@ -2123,7 +2123,7 @@ rank	sentence	en	ar	names
 1222	Everyone must follow the law.	Everyone must follow the law.	يجب على الجميع اتّباع القانون.
 1223	She is the leader of the group.	She is the leader of the group.	إنها قائدة المجموعة.
 1224	What material is this jacket made of?	What material is this jacket made of?	من أيّ مادّة صُنعت هذه السترة؟
-1225	I have a very good memory for faces.	I have a very good memory for faces.	ذاكرتي جيدة جدًا في الوجوه.
+1225	I have a very good memory for faces.	I have a very good memory for faces.	ذاكرتي جيدة جدًا في تذكّر الوجوه.
 1226	We love walking in nature at the weekend.	We love walking in nature at the weekend.	نحب المشي في الطبيعة في عطلة نهاية الأسبوع.
 1227	Everyone wants to live in peace.	Everyone wants to live in peace.	الجميع يريد أن يعيش في سلام.
 1228	Pollution in the city is getting worse.	Pollution in the city is getting worse.	التلوّث في المدينة يزداد سوءًا.
@@ -2179,16 +2179,16 @@ rank	sentence	en	ar	names
 1278	Everyone clapped at the end of the concert.	Everyone clapped at the end of the concert.	صفّق الجميع في نهاية الحفلة.
 1279	Combine the eggs and the flour in a bowl.	Combine the eggs and the flour in a bowl.	اخلط البيض والطحين في وعاء.
 1280	Thanks for your nice comment on my photo.	Thanks for your nice comment on my photo.	شكرًا على تعليقك اللطيف على صورتي.
-1281	Ten teams will compete in the last match.	Ten teams will compete in the last match.	ستتنافس عشرة فرق في المباراة الأخيرة.
+1281	Ten teams will compete this year.	Ten teams will compete this year.	ستتنافس عشرة فرق هذا العام.
 1282	You can contact me by email.	You can contact me by email.	يمكنك التواصل معي بالبريد الإلكتروني.
 1283	I couldn't convince him to come with us.	I couldn't convince him to come with us.	لم أستطع إقناعه بالمجيء معنا.
 1284	She is finding it hard to cope with the new job.	She is finding it hard to cope with the new job.	تجد صعوبة في التأقلم مع العمل الجديد.
 1285	There is no cure for the common cold.	There is no cure for the common cold.	لا يوجد علاج لنزلة البرد العادية.
 1286	I didn't dare to tell my father.	I didn't dare to tell my father.	لم أجرؤ على إخبار أبي.
 1287	We decorated the room for her birthday.	We decorated the room for her birthday.	زيّنّا الغرفة لعيد ميلادها.
-1288	The players must defend their team.	The players must defend their team.	يجب على اللاعبين الدفاع عن فريقهم.
+1288	The players must defend their goal.	The players must defend their goal.	يجب على اللاعبين الدفاع عن مرماهم.
 1289	He denied taking the money.	He denied taking the money.	أنكر أنه أخذ المال.
-1290	You worked hard, you deserve a holiday.	You worked hard, you deserve a holiday.	عملت بجدّ، أنت تستحقّ عطلة.
+1290	You worked hard, so you deserve a holiday.	You worked hard, so you deserve a holiday.	عملت بجدّ، لذلك تستحقّ عطلة.
 1291	The children are digging in the sand.	The children are digging in the sand.	يحفر الأطفال في الرمل.
 1292	I'm sorry, but I disagree with you.	I'm sorry, but I disagree with you.	آسف، لكني لا أوافقك الرأي.
 1293	We discovered a small restaurant near the beach.	We discovered a small restaurant near the beach.	اكتشفنا مطعمًا صغيرًا قرب الشاطئ.
@@ -2214,7 +2214,7 @@ rank	sentence	en	ar	names
 1313	Please don't interrupt me when I'm talking.	Please don't interrupt me when I'm talking.	من فضلك لا تقاطعني عندما أتكلّم.
 1314	The job involves a lot of travel.	The job involves a lot of travel.	يتضمّن العمل سفرًا كثيرًا.
 1315	Don't judge people by their clothes.	Don't judge people by their clothes.	لا تحكم على الناس من ملابسهم.
-1316	We loaded the car and left early.	We loaded the car and left early.	حمّلنا السيارة وغادرنا مبكرًا.
+1316	We loaded the car and left early.	We loaded the car and left early.	حمّلنا الأمتعة في السيارة وغادرنا مبكرًا.
 1317	He nodded and smiled at me.	He nodded and smiled at me.	أومأ برأسه وابتسم لي.
 1318	Dogs must learn to obey.	Dogs must learn to obey.	يجب أن تتعلّم الكلاب الطاعة.
 1319	We observed the birds from the window.	We observed the birds from the window.	راقبنا الطيور من النافذة.
@@ -2232,7 +2232,7 @@ rank	sentence	en	ar	names
 1331	You can always rely on me.	You can always rely on me.	يمكنك الاعتماد عليّ دائمًا.
 1332	You can request a window seat.	You can request a window seat.	يمكنك طلب مقعد بجانب النافذة.
 1333	This job requires a lot of time.	This job requires a lot of time.	يتطلّب هذا العمل وقتًا كثيرًا.
-1334	My grandfather retired when he was old.	My grandfather retired when he was old.	تقاعد جدّي عندما كبر في السنّ.
+1334	My grandfather retired last year.	My grandfather retired last year.	تقاعد جدّي العام الماضي.
 1335	She finally revealed her secret.	She finally revealed her secret.	كشفت سرّها أخيرًا.
 1336	Two men robbed the bank yesterday.	Two men robbed the bank yesterday.	سرق رجلان البنك أمس.
 1337	Don't rub your eyes.	Don't rub your eyes.	لا تفرك عينيك.
@@ -2249,7 +2249,7 @@ rank	sentence	en	ar	names
 1348	The rain spoiled our day at the beach.	The rain spoiled our day at the beach.	أفسد المطر يومنا على الشاطئ.
 1349	It's rude to stare at people.	It's rude to stare at people.	من قلّة الأدب أن تحدّق في الناس.
 1350	Stir the soup so it doesn't burn.	Stir the soup so it doesn't burn.	حرّك الحساء كي لا يحترق.
-1351	I always stretch after running.	I always stretch after running.	أتمطّى دائمًا بعد الجري.
+1351	I always stretch after running.	I always stretch after running.	أقوم بتمارين التمدّد دائمًا بعد الجري.
 1352	He struggled to open the heavy door.	He struggled to open the heavy door.	كافح ليفتح الباب الثقيل.
 1353	Can you sweep the kitchen floor?	Can you sweep the kitchen floor?	هل يمكنك كنس أرض المطبخ؟
 1354	Be careful, you'll tear the paper.	Be careful, you'll tear the paper.	انتبه، ستمزّق الورقة.
@@ -2329,7 +2329,7 @@ rank	sentence	en	ar	names
 1428	This device helps you sleep better.	This device helps you sleep better.	يساعدك هذا الجهاز على النوم بشكل أفضل.
 1429	She writes in her diary every night.	She writes in her diary every night.	تكتب في مذكّراتها كل ليلة.
 1430	The storm was a disaster for the village.	The storm was a disaster for the village.	كانت العاصفة كارثة على القرية.
-1431	Students get a discount on tickets.	Students get a discount on tickets.	يحصل الطلاب على تخفيض في التذاكر.
+1431	Students get a discount on tickets.	Students get a discount on tickets.	يحصل الطلاب على تخفيض على التذاكر.
 1432	Please sign this document.	Please sign this document.	من فضلك وقّع هذه الوثيقة.
 1433	My sister is studying drama at college.	My sister is studying drama at college.	تدرس أختي الدراما في الكلية.
 1434	The little boy is playing a drum.	The little boy is playing a drum.	يعزف الولد الصغير على طبل.
@@ -2342,7 +2342,7 @@ rank	sentence	en	ar	names
 1441	The police have no evidence against him.	The police have no evidence against him.	ليس لدى الشرطة دليل ضدّه.
 1442	It's not your fault.	It's not your fault.	إنه ليس خطأك.
 1443	There is no entrance fee for children.	There is no entrance fee for children.	لا توجد رسوم دخول للأطفال.
-1444	What's your favourite flavour of cake?	What's your favourite flavour of cake?	ما نكهة الكعك المفضّلة لديك؟
+1444	What's your favourite flavour of cake?	What's your favourite flavour of cake?	ما نكهة الكعكة المفضّلة لديك؟
 1445	The flood destroyed many homes.	The flood destroyed many homes.	دمّر الفيضان بيوتًا كثيرة.
 1446	We need flour and eggs to make a cake.	We need flour and eggs to make a cake.	نحتاج إلى الطحين والبيض لنصنع كعكة.
 1447	The fog was so bad we couldn't drive.	The fog was so bad we couldn't drive.	كان الضباب سيئًا لدرجة أننا لم نستطع القيادة.
@@ -2361,10 +2361,10 @@ rank	sentence	en	ar	names
 1460	Is the fish still alive?	Is the fish still alive?	هل السمكة ما زالت حيّة؟
 1461	We visited an ancient church.	We visited an ancient church.	زرنا كنيسة قديمة جدًا.
 1462	She was anxious about her exam.	She was anxious about her exam.	كانت قلقة بشأن امتحانها.
-1463	The baby is asleep, please be quiet.	The baby is asleep, please be quiet.	الطفل نائم، من فضلك اهدأ.
+1463	The baby is asleep, please be quiet.	The baby is asleep, please be quiet.	الطفل نائم، من فضلك كن هادئًا.
 1464	I was awake all night.	I was awake all night.	كنت مستيقظًا طوال الليل.
 1465	Are you aware of the problem?	Are you aware of the problem?	هل أنت مدرك للمشكلة؟
-1466	I only know basic Spanish.	I only know basic Spanish.	أعرف الإسبانية الأساسية فقط.	Spanish
+1466	I only know basic Spanish.	I only know basic Spanish.	أعرف أساسيات اللغة الإسبانية فقط.	Spanish
 1467	This coffee tastes bitter.	This coffee tastes bitter.	طعم هذه القهوة مُرّ.
 1468	She is always cheerful in the morning.	She is always cheerful in the morning.	إنها مرحة دائمًا في الصباح.
 1469	Smith is a common name in England.	Smith is a common name in England.	سميث اسم شائع في إنجلترا.	Smith, England
@@ -2372,7 +2372,7 @@ rank	sentence	en	ar	names
 1471	I'm confused, can you explain again?	I'm confused, can you explain again?	أنا مرتبك، هل يمكنك الشرح مرة أخرى؟
 1472	It's cruel to keep a dog in a small cage.	It's cruel to keep a dog in a small cage.	من القسوة إبقاء كلب في قفص صغير.
 1473	Children are curious about everything.	Children are curious about everything.	الأطفال فضوليون تجاه كل شيء.
-1474	My grandfather is a little deaf.	My grandfather is a little deaf.	جدّي أصمّ قليلًا.
+1474	My grandfather is a little deaf.	My grandfather is a little deaf.	جدّي سمعه ثقيل قليلًا.
 1475	The students were eager to start.	The students were eager to start.	كان الطلاب متلهّفين للبدء.
 1476	We help an elderly neighbour with her shopping.	We help an elderly neighbour with her shopping.	نساعد جارة مسنّة في التسوّق.
 1477	Cut the cake into equal pieces.	Cut the cake into equal pieces.	قطّع الكعكة إلى قطع متساوية.
@@ -2447,7 +2447,7 @@ rank	sentence	en	ar	names
 1546	The dog barks at every stranger.	The dog barks at every stranger.	ينبح الكلب على كلّ غريب.
 1547	The children begged their mother for ice cream.	The children begged their mother for ice cream.	توسّل الأطفال إلى أمّهم من أجل البوظة.
 1548	I bet you can't finish this pizza.	I bet you can't finish this pizza.	أراهن أنّك لا تستطيع إنهاء هذه البيتزا.
-1549	The ball bounced over the wall.	The ball bounced over the wall.	ارتدّت الكرة فوق الجدار.
+1549	The ball bounced over the wall.	The ball bounced over the wall.	قفزت الكرة فوق الجدار.
 1550	The actors bowed at the end of the show.	The actors bowed at the end of the show.	انحنى الممثّلون في نهاية العرض.
 1551	I bumped my head on the door.	I bumped my head on the door.	اصطدم رأسي بالباب.
 1552	The police captured the thief last night.	The police captured the thief last night.	أمسكت الشرطة باللصّ الليلة الماضية.
@@ -2507,7 +2507,7 @@ rank	sentence	en	ar	names
 1606	He polishes his shoes every Sunday.	He polishes his shoes every Sunday.	يلمّع حذاءه كل يوم أحد.
 1607	The match was postponed because of the rain.	The match was postponed because of the rain.	أُجّلت المباراة بسبب المطر.
 1608	Nobody can predict the future.	Nobody can predict the future.	لا أحد يستطيع التنبّؤ بالمستقبل.
-1609	Please proceed to the next room.	Please proceed to the next room.	من فضلك تابع إلى الغرفة التالية.
+1609	Please proceed to the next room.	Please proceed to the next room.	من فضلك توجّه إلى الغرفة التالية.
 1610	How do you pronounce your name?	How do you pronounce your name?	كيف تنطق اسمك؟
 1611	Thousands of people protested in the streets.	Thousands of people protested in the streets.	احتجّ الآلاف في الشوارع.
 1612	She wants to pursue a career in medicine.	She wants to pursue a career in medicine.	تريد أن تسعى إلى مهنة في الطبّ.
@@ -2626,14 +2626,14 @@ rank	sentence	en	ar	names
 1725	We left the house at dawn.	We left the house at dawn.	غادرنا البيت عند الفجر.
 1726	We put up decorations for the party.	We put up decorations for the party.	علّقنا الزينة من أجل الحفلة.
 1727	The children shouted with delight.	The children shouted with delight.	صاح الأطفال من البهجة.
-1728	The delivery will arrive tomorrow morning.	The delivery will arrive tomorrow morning.	سيصل التوصيل صباح الغد.
+1728	The delivery will arrive tomorrow morning.	The delivery will arrive tomorrow morning.	ستصل الطلبية صباح الغد.
 1729	I have to see the dentist today.	I have to see the dentist today.	عليّ أن أزور طبيب الأسنان اليوم.	يجب أن أذهب إلى طبيب الأسنان اليوم.
 1730	The police asked for a description of the man.	The police asked for a description of the man.	طلبت الشرطة وصفًا للرجل.
 1731	The development of the city took many years.	The development of the city took many years.	استغرق تطوير المدينة سنوات كثيرة.
 1732	Look at the diagram in your book.	Look at the diagram in your book.	انظر إلى الرسم التوضيحي في كتابك.	انظر إلى الرسم التوضيحي في كتابك.
 1733	She has a beautiful diamond ring.	She has a beautiful diamond ring.	لديها خاتم ألماس جميل.
 1734	My son loves books about dinosaurs.	My son loves books about dinosaurs.	يحبّ ابني الكتب عن الديناصورات.
-1735	His shoes were covered in dirt.	His shoes were covered in dirt.	كان حذاؤه مغطّى بالوسخ.
+1735	His shoes were covered in dirt.	His shoes were covered in dirt.	كان حذاؤه مغطّى بالأوساخ.
 1736	Sport teaches children discipline.	Sport teaches children discipline.	تعلّم الرياضة الأطفال الانضباط.
 1737	It was an important discovery for science.	It was an important discovery for science.	كان اكتشافًا مهمًا للعلم.	كان اكتشافًا مهمًا للعلم.
 1738	They live in a quiet district of the city.	They live in a quiet district of the city.	يعيشون في حيّ هادئ من المدينة.
@@ -2650,7 +2650,7 @@ rank	sentence	en	ar	names
 1749	There is a lot of entertainment for children here.	There is a lot of entertainment for children here.	هناك الكثير من الترفيه للأطفال هنا.
 1750	Entry to the museum is free on Sundays.	Entry to the museum is free on Sundays.	الدخول إلى المتحف مجاني أيام الأحد.
 1751	There is an error in your answer.	There is an error in your answer.	هناك خطأ في إجابتك.
-1752	The trip was a big expense for us.	The trip was a big expense for us.	كانت الرحلة نفقة كبيرة علينا.
+1752	The trip was a big expense for us.	The trip was a big expense for us.	كانت الرحلة مصروفًا كبيرًا علينا.
 1753	Thank you for the clear explanation.	Thank you for the clear explanation.	شكرًا على التفسير الواضح.
 1754	I didn't understand the expression on her face.	I didn't understand the expression on her face.	لم أفهم التعبير على وجهها.
 1755	He raised his eyebrows in surprise.	He raised his eyebrows in surprise.	رفع حاجبيه متفاجئًا.
@@ -2661,7 +2661,7 @@ rank	sentence	en	ar	names
 1760	The family prepared a big feast for the wedding.	The family prepared a big feast for the wedding.	أعدّت العائلة وليمة كبيرة للزفاف.
 1761	The teacher gave us useful feedback.	The teacher gave us useful feedback.	أعطانا المعلّم ملاحظات مفيدة.
 1762	I prefer fiction to history books.	I prefer fiction to history books.	أفضّل القصص الخيالية على كتب التاريخ.
-1763	Save the file before you close the computer.	Save the file before you close the computer.	احفظ الملفّ قبل أن تغلق الحاسوب.
+1763	Save the file before you turn off the computer.	Save the file before you turn off the computer.	احفظ الملفّ قبل أن تطفئ الحاسوب.
 1764	We watched the fireworks from the roof.	We watched the fireworks from the roof.	شاهدنا الألعاب النارية من السطح.
 1765	Half of my class is at home with flu.	Half of my class is at home with flu.	نصف صفّي في البيت مصاب بالإنفلونزا.
 1766	The baby has a small mark on her forehead.	The baby has a small mark on her forehead.	للطفلة علامة صغيرة على جبهتها.
@@ -2672,7 +2672,7 @@ rank	sentence	en	ar	names
 1771	We had a lot of fun at the beach.	We had a lot of fun at the beach.	استمتعنا كثيرًا على الشاطئ.
 1772	The school started a fund for new books.	The school started a fund for new books.	أنشأت المدرسة صندوقًا لكتب جديدة.
 1773	Many people came to his funeral.	Many people came to his funeral.	حضر كثير من الناس جنازته.
-1774	A gang of boys was standing at the corner.	A gang of boys was standing at the corner.	كانت عصابة من الأولاد واقفة عند الزاوية.
+1774	A gang of boys was standing at the corner.	A gang of boys was standing at the corner.	كانت مجموعة من الأولاد واقفة عند الزاوية.
 1775	Please write your name and gender on the form.	Please write your name and gender on the form.	من فضلك اكتب اسمك وجنسك في الاستمارة.
 1776	He is a real gentleman.	He is a real gentleman.	إنّه رجل نبيل حقًا.
 1777	We learn about rivers in geography.	We learn about rivers in geography.	نتعلّم عن الأنهار في الجغرافيا.
@@ -2707,7 +2707,7 @@ rank	sentence	en	ar	names
 1806	I can't bear this hot weather any more.	I can't bear this hot weather any more.	لم أعد أحتمل هذا الطقس الحار.
 1807	The children behaved very well at the wedding.	The children behaved very well at the wedding.	تصرّف الأطفال جيدًا جدًا في الزفاف.
 1808	She didn't even blink when she heard the news.	She didn't even blink when she heard the news.	لم ترمش حتى عندما سمعت الخبر.
-1809	The bag burst and the apples fell out.	The bag burst and the apples fell out.	انفجر الكيس وسقط التفاح منه.	انفجر الكيس وسقط التفاح.
+1809	The bag burst and the apples fell out.	The bag burst and the apples fell out.	تمزّق الكيس وسقط التفاح منه.	انفجر الكيس وسقط التفاح.
 1810	Chop the onions into small pieces.	Chop the onions into small pieces.	قطّع البصل إلى قطع صغيرة.
 1811	The police know who committed the crime.	The police know who committed the crime.	تعرف الشرطة من ارتكب الجريمة.
 1812	The doctor concluded that it was just a cold.	The doctor concluded that it was just a cold.	استنتج الطبيب أنّه مجرّد زكام.
@@ -2730,7 +2730,7 @@ rank	sentence	en	ar	names
 1829	My parents forbid me to stay out late.	My parents forbid me to stay out late.	يمنعني والداي من البقاء خارجًا حتى وقت متأخّر.
 1830	He gained a lot of experience in that job.	He gained a lot of experience in that job.	اكتسب خبرة كبيرة في ذلك العمل.
 1831	The bank granted him a loan.	The bank granted him a loan.	منحه البنك قرضًا.
-1832	Too much sun can harm your skin.	Too much sun can harm your skin.	قد تضرّ الشمس الكثيرة ببشرتك.
+1832	Too much sun can harm your skin.	Too much sun can harm your skin.	قد يضرّ التعرّض الكثير للشمس ببشرتك.
 1833	Our school will host the competition this year.	Our school will host the competition this year.	ستستضيف مدرستنا المسابقة هذا العام.
 1834	The sign indicates the way to the station.	The sign indicates the way to the station.	تشير اللافتة إلى طريق المحطة.
 1835	A man came to inspect the kitchen.	A man came to inspect the kitchen.	جاء رجل لتفتيش المطبخ.
@@ -2812,7 +2812,7 @@ rank	sentence	en	ar	names
 1911	Her health is our main concern.	Her health is our main concern.	صحّتها هي اهتمامنا الأوّل.
 1912	Keep the sugar in a closed container.	Keep the sugar in a closed container.	احفظ السكّر في وعاء مغلق.
 1913	Asia is a huge continent.	Asia is a huge continent.	آسيا قارّة ضخمة.	Asia
-1914	They rented a cottage in the countryside.	They rented a cottage in the countryside.	استأجروا كوخًا ريفيًا في الريف.
+1914	They rented a cottage in the countryside.	They rented a cottage in the countryside.	استأجروا كوخًا في الريف.
 1915	I love walking in the countryside.	I love walking in the countryside.	أحبّ المشي في الريف.
 1916	Can I pay by credit card?	Can I pay by credit card?	هل يمكنني الدفع ببطاقة ائتمان؟
 1917	The rain was good for the crops.	The rain was good for the crops.	كان المطر مفيدًا للمحاصيل.
@@ -2858,7 +2858,7 @@ rank	sentence	en	ar	names
 1957	They have five grandchildren.	They have five grandchildren.	لديهم خمسة أحفاد.
 1958	The graph shows the temperature each month.	The graph shows the temperature each month.	يُظهر الرسم البياني درجة الحرارة كل شهر.
 1959	The TV comes with a two-year guarantee.	The TV comes with a two-year guarantee.	يأتي التلفاز مع ضمان لمدّة عامين.
-1960	The soldier was carrying a gun.	The soldier was carrying a gun.	كان الجندي يحمل مسدّسًا.
+1960	The soldier was carrying a gun.	The soldier was carrying a gun.	كان الجندي يحمل سلاحًا.
 1961	The boats are in the harbour.	The boats are in the harbour.	القوارب في الميناء.
 1962	This beach is like heaven.	This beach is like heaven.	هذا الشاطئ مثل الجنّة.
 1963	Can you give me a hint?	Can you give me a hint?	هل يمكنك أن تعطيني تلميحًا؟
@@ -2871,7 +2871,7 @@ rank	sentence	en	ar	names
 1970	Children have a wonderful imagination.	Children have a wonderful imagination.	للأطفال خيال رائع.
 1971	The new road had a big impact on the village.	The new road had a big impact on the village.	كان للطريق الجديد تأثير كبير على القرية.
 1972	Their income is not very high.	Their income is not very high.	دخلهم ليس مرتفعًا جدًا.
-1973	The doctor gave me medicine for the infection.	The doctor gave me medicine for the infection.	أعطاني الطبيب دواءً للالتهاب.
+1973	The doctor gave me medicine for the infection.	The doctor gave me medicine for the infection.	أعطاني الطبيب دواءً للعدوى.
 1974	What are the ingredients of this cake?	What are the ingredients of this cake?	ما مكوّنات هذه الكعكة؟
 1975	The nurse gave the baby an injection.	The nurse gave the baby an injection.	أعطت الممرّضة الطفل حقنة.
 1976	My pen has run out of ink.	My pen has run out of ink.	نفد الحبر من قلمي.
@@ -2918,7 +2918,7 @@ rank	sentence	en	ar	names
 2017	Bake the cake in the oven for forty minutes.	Bake the cake in the oven for forty minutes.	اخبز الكعكة في الفرن أربعين دقيقة.
 2018	Plants and trees produce oxygen.	Plants and trees produce oxygen.	تنتج النباتات والأشجار الأكسجين.
 2019	A parcel arrived for you this morning.	A parcel arrived for you this morning.	وصل لك طرد هذا الصباح.
-2020	He started the business with a partner.	He started the business with a partner.	بدأ العمل مع شريك.
+2020	He started the business with a partner.	He started the business with a partner.	بدأ مشروعه التجاري مع شريك.
 2021	Teaching small children needs a lot of patience.	Teaching small children needs a lot of patience.	تعليم الأطفال الصغار يحتاج إلى صبر كبير.
 2022	I like the pattern on your shirt.	I like the pattern on your shirt.	يعجبني النقش على قميصك.
 2023	Walk on the pavement, not in the road.	Walk on the pavement, not in the road.	امشِ على الرصيف لا في الطريق.
@@ -2930,7 +2930,7 @@ rank	sentence	en	ar	names
 2029	The company has a clear policy on smoking.	The company has a clear policy on smoking.	لدى الشركة سياسة واضحة بشأن التدخين.	للشركة سياسة واضحة بشأن التدخين.
 2030	There is a portrait of the king on the wall.	There is a portrait of the king on the wall.	هناك صورة للملك على الجدار.
 2031	Many families still live in poverty.	Many families still live in poverty.	ما زالت عائلات كثيرة تعيش في الفقر.
-2032	They said a prayer before dinner.	They said a prayer before dinner.	صلّوا قبل العشاء.
+2032	They said a prayer before dinner.	They said a prayer before dinner.	قالوا دعاءً قبل العشاء.
 2033	There is a lot of pressure on students before exams.	There is a lot of pressure on students before exams.	هناك ضغط كبير على الطلاب قبل الامتحانات.
 2034	It's against my principles to lie.	It's against my principles to lie.	الكذب ضدّ مبادئي.
 2035	Your health is our first priority.	Your health is our first priority.	صحتك هي أولويتنا الأولى.	صحّتك أولويّتنا الأولى.
@@ -2948,7 +2948,7 @@ rank	sentence	en	ar	names
 2047	There is a big sculpture in the park.	There is a big sculpture in the park.	هناك منحوتة كبيرة في الحديقة.	هناك منحوتة كبيرة في الحديقة.
 2048	I need your signature on this form.	I need your signature on this form.	أحتاج إلى توقيعك على هذه الاستمارة.
 2049	Her dress is made of silk.	Her dress is made of silk.	فستانها مصنوع من الحرير.
-2050	The view from the mountain was incredible.	The view from the mountain was incredible.	كان المنظر من الجبل لا يُصدَّق.	كان المنظر من الجبل لا يُصدَّق.
+2050	The view from the mountain was incredible.	The view from the mountain was incredible.	كان المنظر من الجبل مذهلًا.	كان المنظر من الجبل لا يُصدَّق.
 2051	The police now believe he is innocent.	The police now believe he is innocent.	تعتقد الشرطة الآن أنه بريء.	تعتقد الشرطة الآن أنّه بريء.
 2052	He was jealous of his brother's new bike.	He was jealous of his brother's new bike.	كان يغار من درّاجة أخيه الجديدة.
 2053	She is keen to learn a new language.	She is keen to learn a new language.	إنها متحمسة لتعلّم لغة جديدة.	إنّها متحمّسة لتعلّم لغة جديدة.
@@ -3057,7 +3057,7 @@ rank	sentence	en	ar	names
 2156	Dust accumulates quickly in this room.	Dust accumulates quickly in this room.	يتراكم الغبار بسرعة في هذه الغرفة.
 2157	He acknowledged that he had made a mistake.	He acknowledged that he had made a mistake.	اعترف بأنّه ارتكب خطأً.
 2158	We had to alter our plans because of the rain.	We had to alter our plans because of the rain.	اضطررنا إلى تغيير خططنا بسبب المطر.
-2159	The doctors analysed the water from the lake.	The doctors analysed the water from the lake.	حلّل الأطباء مياه البحيرة.	حلّل الأطبّاء ماء البحيرة.
+2159	The scientists analysed the water from the lake.	The scientists analysed the water from the lake.	حلّل العلماء مياه البحيرة.	حلّل الأطبّاء ماء البحيرة.
 2160	We didn't anticipate so many visitors.	We didn't anticipate so many visitors.	لم نتوقّع هذا العدد من الزوّار.
 2161	The police appealed for help from the public.	The police appealed for help from the public.	ناشدت الشرطة الناس المساعدة.
 2162	A problem arose during the meeting.	A problem arose during the meeting.	نشأت مشكلة أثناء الاجتماع.
@@ -3146,7 +3146,7 @@ rank	sentence	en	ar	names
 2245	The shop refunded my money.	The shop refunded my money.	أعاد المتجر لي مالي.
 2246	He slowly regained his strength.	He slowly regained his strength.	استعاد قوّته ببطء.
 2247	They reside in a small town by the sea.	They reside in a small town by the sea.	يقيمون في بلدة صغيرة على البحر.
-2248	The new law restricts parking in the centre.	The new law restricts parking in the centre.	يقيّد القانون الجديد الوقوف في المركز.
+2248	The new law restricts parking in the centre.	The new law restricts parking in the centre.	يقيّد القانون الجديد ركن السيارات في وسط المدينة.
 2249	The match resumed after the rain stopped.	The match resumed after the rain stopped.	استُؤنفت المباراة بعد توقّف المطر.
 2250	This cloth retains water well.	This cloth retains water well.	يحتفظ هذا القماش بالماء جيدًا.	يحتفظ هذا القماش بالماء جيدًا.
 2251	The army had to retreat.	The army had to retreat.	اضطرّ الجيش إلى التراجع.
@@ -3189,7 +3189,7 @@ rank	sentence	en	ar	names
 2288	My ancestors came from the mountains.	My ancestors came from the mountains.	جاء أجدادي من الجبال.
 2289	This angle is small.	This angle is small.	هذه الزاوية صغيرة.
 2290	There was loud applause at the end of the show.	There was loud applause at the end of the show.	كان هناك تصفيق حارّ في نهاية العرض.
-2291	The concert is in a big arena.	The concert is in a big arena.	الحفل في ساحة كبيرة.
+2291	The concert is in a big arena.	The concert is in a big arena.	الحفل في قاعة كبيرة.
 2292	Follow the arrows to the exit.	Follow the arrows to the exit.	اتبع الأسهم إلى المخرج.
 2293	She is a great asset to the team.	She is a great asset to the team.	إنها مكسب كبير للفريق.
 2294	They sold the painting at an auction.	They sold the painting at an auction.	باعوا اللوحة في مزاد.
@@ -3204,7 +3204,7 @@ rank	sentence	en	ar	names
 2303	In the story, a beast lives in a castle.	In the story, a beast lives in a castle.	في القصة، يعيش وحش في قلعة.	في القصّة يعيش وحش في قلعة.
 2304	We sat on a bench in the park.	We sat on a bench in the park.	جلسنا على مقعد في الحديقة.
 2305	I'm reading a biography of a famous writer.	I'm reading a biography of a famous writer.	أقرأ سيرة حياة كاتب مشهور.	أقرأ سيرة ذاتية لكاتب مشهور.
-2306	My new shoes gave me a blister.	My new shoes gave me a blister.	سبّب لي حذائي الجديد بثرة.
+2306	My new shoes gave me a blister.	My new shoes gave me a blister.	سبّب لي حذائي الجديد نفطة في قدمي.
 2307	My brother watches boxing on television.	My brother watches boxing on television.	يشاهد أخي الملاكمة على التلفاز.
 2308	She wore a silver bracelet.	She wore a silver bracelet.	ارتدت سوارًا فضّيًا.
 2309	The driver hit the brake suddenly.	The driver hit the brake suddenly.	ضغط السائق على المكبح فجأة.
@@ -3234,7 +3234,7 @@ rank	sentence	en	ar	names
 2333	The constitution protects our rights.	The constitution protects our rights.	يحمي الدستور حقوقنا.
 2334	Consumers want cheaper prices.	Consumers want cheaper prices.	يريد المستهلكون أسعارًا أرخص.
 2335	The phone cord is too short.	The phone cord is too short.	سلك الهاتف قصير جدًا.
-2336	The school counsellor helped me choose a course.	The school counsellor helped me choose a course.	ساعدني مستشار المدرسة في اختيار دورة.
+2336	The school counsellor helped me choose a course.	The school counsellor helped me choose a course.	ساعدني مرشد المدرسة في اختيار مساق دراسي.
 2337	It's a matter of simple courtesy.	It's a matter of simple courtesy.	إنّها مسألة لباقة بسيطة.
 2338	Only a coward would run away.	Only a coward would run away.	لا يهرب إلّا الجبان.
 2339	We found a crab on the beach.	We found a crab on the beach.	وجدنا سلطعونًا على الشاطئ.
@@ -3245,7 +3245,7 @@ rank	sentence	en	ar	names
 2344	Put the cutlery on the table.	Put the cutlery on the table.	ضع أدوات المائدة على الطاولة.
 2345	They built a dam across the river.	They built a dam across the river.	بنوا سدًّا على النهر.
 2346	We sat on the deck of the ship.	We sat on the deck of the ship.	جلسنا على سطح السفينة.
-2347	We saw a deer in the forest.	We saw a deer in the forest.	رأينا غزالًا في الغابة.
+2347	We saw a deer in the forest.	We saw a deer in the forest.	رأينا أيّلًا في الغابة.
 2348	The team has a strong defence.	The team has a strong defence.	للفريق دفاع قويّ.
 2349	Each country sent a delegate to the meeting.	Each country sent a delegate to the meeting.	أرسل كل بلد مندوبًا إلى الاجتماع.
 2350	The grass was wet with dew.	The grass was wet with dew.	كان العشب مبلّلًا بالندى.
@@ -3282,14 +3282,14 @@ rank	sentence	en	ar	names
 2381	Some mistakes are inevitable.	Some mistakes are inevitable.	بعض الأخطاء حتمية.
 2382	The sky at night seems infinite.	The sky at night seems infinite.	تبدو السماء في الليل لانهائية.	تبدو سماء الليل لانهائية.
 2383	These trousers are a bit loose.	These trousers are a bit loose.	هذا البنطال فضفاض قليلًا.
-2384	I was too naive to understand.	I was too naive to understand.	كنت ساذجًا جدًا لأفهم.
+2384	I was too naive to understand.	I was too naive to understand.	كنت أشدّ سذاجة من أن أفهم.
 2385	It was a noble thing to do.	It was a noble thing to do.	كان ذلك عملًا نبيلًا.
 2386	Our dog is very obedient.	Our dog is very obedient.	كلبنا مطيع جدًا.
 2387	You look pale, are you ill?	You look pale, are you ill?	تبدو شاحبًا، هل أنت مريض؟
 2388	The little cat is very playful.	The little cat is very playful.	القطة الصغيرة مرحة جدًا.	القطّة الصغيرة مرحة جدًا.
 2389	Reckless driving causes accidents.	Reckless driving causes accidents.	القيادة المتهوّرة تسبّب الحوادث.
 2390	This place is sacred to many people.	This place is sacred to many people.	هذا المكان مقدّس لكثير من الناس.
-2391	The water is shallow here, the children can swim.	The water is shallow here, the children can swim.	الماء ضحل هنا، يستطيع الأطفال السباحة.
+2391	The water is shallow here, so the children can swim.	The water is shallow here, so the children can swim.	الماء ضحل هنا، لذلك يستطيع الأطفال السباحة.
 2392	I feel sleepy after lunch.	I feel sleepy after lunch.	أشعر بالنعاس بعد الغداء.
 2393	Be careful, the floor is slippery.	Be careful, the floor is slippery.	انتبه، الأرض زلقة.
 2394	The road up the hill is very steep.	The road up the hill is very steep.	الطريق إلى أعلى التلّ شديد الانحدار.
@@ -3498,7 +3498,7 @@ rank	sentence	en	ar	names
 2597	There is an abundance of fruit this summer.	There is an abundance of fruit this summer.	هناك وفرة من الفاكهة هذا الصيف.
 2598	He is an old acquaintance from school.	He is an old acquaintance from school.	هو أحد معارفي القدامى من المدرسة.
 2599	Adolescence can be a hard time.	Adolescence can be a hard time.	قد تكون المراهقة فترة صعبة.
-2600	She cried out in anguish.	She cried out in anguish.	صرخت من الألم الشديد.
+2600	She cried out in anguish.	She cried out in anguish.	صرخت من شدّة الأسى.
 2601	The rescue team wore breathing apparatus.	The rescue team wore breathing apparatus.	ارتدى فريق الإنقاذ أجهزة التنفّس.
 2602	He works as an apprentice in a furniture shop.	He works as an apprentice in a furniture shop.	يعمل متدرّبًا في محلّ أثاث.
 2603	The library keeps an archive of old newspapers.	The library keeps an archive of old newspapers.	تحتفظ المكتبة بأرشيف للصحف القديمة.
@@ -3524,7 +3524,7 @@ rank	sentence	en	ar	names
 2623	Sugar causes tooth decay.	Sugar causes tooth decay.	يسبّب السكّر تسوّس الأسنان.
 2624	The street lights come on at dusk.	The street lights come on at dusk.	تُضاء أنوار الشارع عند الغسق.
 2625	The epidemic spread quickly through the city.	The epidemic spread quickly through the city.	انتشر الوباء بسرعة في المدينة.
-2626	Trees help to prevent erosion on hills.	Trees help to prevent erosion on hills.	تساعد الأشجار على منع التآكل على التلال.
+2626	Trees help to prevent erosion on hills.	Trees help to prevent erosion on hills.	تساعد الأشجار على منع انجراف التربة على التلال.
 2627	After the long trip he suffered from fatigue.	After the long trip he suffered from fatigue.	عانى من الإرهاق بعد الرحلة الطويلة.
 2628	The farmer spread fertiliser on the field.	The farmer spread fertiliser on the field.	نثر المزارع السماد على الحقل.
 2629	The old fortress stands on a hill.	The old fortress stands on a hill.	يقف الحصن القديم على تلّ.
@@ -3579,14 +3579,14 @@ rank	sentence	en	ar	names
 2678	The city survived a long siege.	The city survived a long siege.	صمدت المدينة أمام حصار طويل.
 2679	She could not hide her sorrow.	She could not hide her sorrow.	لم تستطع إخفاء أساها.
 2680	I got a splinter in my finger from the old table.	I got a splinter in my finger from the old table.	دخلت شظيّة في إصبعي من الطاولة القديمة.
-2681	The horses sleep on fresh straw.	The horses sleep on fresh straw.	تنام الخيول على قشّ طازج.
+2681	The horses sleep on fresh straw.	The horses sleep on fresh straw.	تنام الخيول على قشّ جديد.
 2682	Frogs and fish live in the swamp.	Frogs and fish live in the swamp.	تعيش الضفادع والأسماك في المستنقع.
 2683	Be careful of the thorns on the roses.	Be careful of the thorns on the roses.	احذر من الأشواك على الورود.
 2684	The queen sat on her gold throne.	The queen sat on her gold throne.	جلست الملكة على عرشها الذهبي.
 2685	The tide comes in twice a day.	The tide comes in twice a day.	يرتفع المدّ مرّتين في اليوم.
 2686	Take a torch, it's dark outside.	Take a torch, it's dark outside.	خذ مصباحًا يدويًا، الجوّ مظلم في الخارج.
 2687	He was accused of treason against the king.	He was accused of treason against the king.	اتُّهم بالخيانة العظمى ضدّ الملك.
-2688	The tribe has lived in the forest for centuries.	The tribe has lived in the forest for centuries.	عاشت القبيلة في الغابة قرونًا.
+2688	The tribe has lived in the forest for centuries.	The tribe has lived in the forest for centuries.	تعيش القبيلة في الغابة منذ قرون.
 2689	The two sides agreed to a short truce.	The two sides agreed to a short truce.	اتّفق الطرفان على هدنة قصيرة.
 2690	We visited a vineyard in the hills.	We visited a vineyard in the hills.	زرنا كرم عنب في التلال.
 2691	The volcano exploded last month.	The volcano exploded last month.	انفجر البركان الشهر الماضي.
@@ -3617,7 +3617,7 @@ rank	sentence	en	ar	names
 2716	The lake looked serene in the morning.	The lake looked serene in the morning.	بدت البحيرة هادئة في الصباح.
 2717	He wore a shabby old coat.	He wore a shabby old coat.	كان يرتدي معطفًا قديمًا رثًّا.
 2718	He gave me a sly smile.	He gave me a sly smile.	ابتسم لي ابتسامة ماكرة.
-2719	Our boss is too stingy to buy us coffee.	Our boss is too stingy to buy us coffee.	مديرنا بخيل جدًا ولا يشتري لنا القهوة.
+2719	Our boss is too stingy to buy us coffee.	Our boss is too stingy to buy us coffee.	رئيسنا بخيل لدرجة أنه لا يشتري لنا القهوة.
 2720	The weary passengers finally reached the hotel.	The weary passengers finally reached the hotel.	وصل الركّاب المنهكون أخيرًا إلى الفندق.
 2721	The teacher read the story aloud.	The teacher read the story aloud.	قرأ المعلّم القصّة بصوت عالٍ.
 2722	I could barely see in the fog.	I could barely see in the fog.	بالكاد كنت أرى في الضباب.
@@ -3652,13 +3652,13 @@ rank	sentence	en	ar	names
 2751	The cat's fur bristled when it saw the dog.	The cat's fur bristled when it saw the dog.	انتصب فرو القطّة عندما رأت الكلب.
 2752	Buckle your seat belt, please.	Buckle your seat belt, please.	اربط حزام الأمان من فضلك.
 2753	His pockets were bulging with sweets.	His pockets were bulging with sweets.	كانت جيوبه منتفخة بالحلوى.
-2754	She cajoled her father into buying a dog.	She cajoled her father into buying a dog.	تملّقت أباها حتّى اشترى كلبًا.
+2754	She cajoled her father into buying a dog.	She cajoled her father into buying a dog.	استمالت أباها بالملاطفة حتى اشترى كلبًا.
 2755	The small boat capsized in the storm.	The small boat capsized in the storm.	انقلب القارب الصغير في العاصفة.
 2756	He chuckled at the funny story.	He chuckled at the funny story.	ضحك بخفوت من القصّة المضحكة.
 2757	The children clambered over the rocks.	The children clambered over the rocks.	تسلّق الأطفال الصخور بصعوبة.
 2758	She clasped her mother's hand.	She clasped her mother's hand.	أمسكت يد أمّها بإحكام.
 2759	Cleanse the wound with clean water.	Cleanse the wound with clean water.	طهّر الجرح بماء نظيف.
-2760	He clenched his teeth in pain.	He clenched his teeth in pain.	عضّ على أسنانه من الألم.
+2760	He clenched his teeth in pain.	He clenched his teeth in pain.	صرّ على أسنانه من الألم.
 2761	She coaxed the cat out from under the bed.	She coaxed the cat out from under the bed.	لاطفت القطّة حتّى خرجت من تحت السرير.
 2762	A monument commemorates the brave soldiers.	A monument commemorates the brave soldiers.	يحيي نصب تذكاري ذكرى الجنود الشجعان.
 2763	The rain compelled us to stay inside.	The rain compelled us to stay inside.	أرغمنا المطر على البقاء في الداخل.
@@ -3689,7 +3689,7 @@ rank	sentence	en	ar	names
 2788	They derided his ideas at first.	They derided his ideas at first.	سخروا من أفكاره في البداية.
 2789	Someone desecrated the old cemetery.	Someone desecrated the old cemetery.	دنّس أحدهم المقبرة القديمة.
 2790	The police detained two men.	The police detained two men.	احتجزت الشرطة رجلين.
-2791	High fines deter people from speeding.	High fines deter people from speeding.	تردع الغرامات العالية الناس عن السرعة.
+2791	High fines deter people from speeding.	High fines deter people from speeding.	تردع الغرامات العالية الناس عن تجاوز السرعة المحددة.
 2792	The hungry boy devoured his dinner.	The hungry boy devoured his dinner.	التهم الولد الجائع عشاءه.
 2793	The pain diminished after a few days.	The pain diminished after a few days.	تضاءل الألم بعد بضعة أيّام.
 2794	The band disbanded after ten years.	The band disbanded after ten years.	انحلّت الفرقة بعد عشر سنوات.
@@ -3705,7 +3705,7 @@ rank	sentence	en	ar	names
 2804	I dread going to the dentist.	I dread going to the dentist.	أخشى الذهاب إلى طبيب الأسنان.
 2805	The heavy rain drenched us.	The heavy rain drenched us.	بلّلنا المطر الغزير تمامًا.
 2806	Our money dwindled during the holiday.	Our money dwindled during the holiday.	تضاءل مالنا خلال العطلة.
-2807	The question elicited a strange answer.	The question elicited a strange answer.	استخرج السؤال جوابًا غريبًا.
+2807	The question elicited a strange answer.	The question elicited a strange answer.	أثار السؤال جوابًا غريبًا.
 2808	The thief eluded the police for weeks.	The thief eluded the police for weeks.	أفلت اللصّ من الشرطة أسابيع.
 2809	A sweet smell emanated from the kitchen.	A sweet smell emanated from the kitchen.	انبعثت رائحة حلوة من المطبخ.
 2810	He always embellishes his stories.	He always embellishes his stories.	يزيّن قصصه دائمًا بالمبالغة.
@@ -3729,7 +3729,7 @@ rank	sentence	en	ar	names
 2828	The bored children fidgeted in their seats.	The bored children fidgeted in their seats.	تململ الأطفال الضجرون في مقاعدهم.
 2829	The man flailed his arms in the water.	The man flailed his arms in the water.	لوّح الرجل بذراعيه بعنف في الماء.
 2830	She likes to flaunt her new clothes.	She likes to flaunt her new clothes.	تحبّ أن تستعرض ملابسها الجديدة.
-2831	The candle flickered in the wind.	The candle flickered in the wind.	ومضت الشمعة في الريح.
+2831	The candle flickered in the wind.	The candle flickered in the wind.	ارتعش ضوء الشمعة في الريح.
 2832	He didn't flinch when the nurse gave him the injection.	He didn't flinch when the nurse gave him the injection.	لم يجفل عندما أعطته الممرّضة الحقنة.
 2833	She flung her bag on the bed.	She flung her bag on the bed.	قذفت حقيبتها على السرير.
 2834	The fish floundered on the beach.	The fish floundered on the beach.	تخبّطت السمكة على الشاطئ.
@@ -3740,11 +3740,11 @@ rank	sentence	en	ar	names
 2839	Don't fret, everything will be fine.	Don't fret, everything will be fine.	لا تقلق، سيكون كلّ شيء على ما يرام.
 2840	Young sheep frolicked in the field.	Young sheep frolicked in the field.	مرحت الخراف الصغيرة في الحقل.
 2841	He fumbled for his keys in the dark.	He fumbled for his keys in the dark.	تلمّس مفاتيحه بارتباك في الظلام.
-2842	Gargle with salt water for a bad throat.	Gargle with salt water for a bad throat.	تغرغر بالماء المالح لحلق ملتهب.
+2842	Gargle with salt water for a bad throat.	Gargle with salt water for a bad throat.	تغرغر بالماء المالح لعلاج التهاب الحلق.
 2843	He gesticulated a lot as he talked.	He gesticulated a lot as he talked.	أشار بيديه كثيرًا وهو يتكلّم.
 2844	He gloated over his brother's failure.	He gloated over his brother's failure.	شمت بفشل أخيه.
 2845	The grass glistened with dew.	The grass glistened with dew.	لمع العشب بالندى.
-2846	The dog was gnawing a bone.	The dog was gnawing a bone.	كان الكلب يقرض عظمة.
+2846	The dog was gnawing a bone.	The dog was gnawing a bone.	كان الكلب يقضم عظمة.
 2847	The kids gobbled up all the cake.	The kids gobbled up all the cake.	التهم الأطفال الكعكة كلّها.
 2848	Two men grappled on the ground.	Two men grappled on the ground.	تصارع رجلان على الأرض.
 2849	She grimaced at the bitter medicine.	She grimaced at the bitter medicine.	كشّرت من الدواء المرّ.
@@ -3763,7 +3763,7 @@ rank	sentence	en	ar	names
 2862	Fallen trees impeded our journey.	Fallen trees impeded our journey.	عرقلت الأشجار الساقطة رحلتنا.
 2863	She implored him to stay.	She implored him to stay.	توسّلت إليه أن يبقى.
 2864	He was arrested for inciting the crowd.	He was arrested for inciting the crowd.	اعتُقل بتهمة تحريض الحشد.
-2865	On holiday I indulge in ice cream every day.	On holiday I indulge in ice cream every day.	في العطلة أنغمس في المثلّجات كلّ يوم.
+2865	On holiday I indulge in ice cream every day.	On holiday I indulge in ice cream every day.	في العطلة أدلّل نفسي بالمثلّجات كلّ يوم.
 2866	From his smile, I inferred that he had passed.	From his smile, I inferred that he had passed.	من ابتسامته استنتجت أنّه نجح.
 2867	Mice infested the old barn.	Mice infested the old barn.	غزت الفئران الحظيرة القديمة.
 2868	The storm inflicted damage on many houses.	The storm inflicted damage on many houses.	ألحقت العاصفة أضرارًا بكثير من البيوت.
@@ -3783,14 +3783,14 @@ rank	sentence	en	ar	names
 2882	The host mingled with the guests.	The host mingled with the guests.	اختلط المضيف بالضيوف.
 2883	Trees can mitigate the effects of floods.	Trees can mitigate the effects of floods.	يمكن للأشجار أن تخفّف آثار الفيضانات.
 2884	It's cruel to mock people's accents.	It's cruel to mock people's accents.	من القسوة السخرية من لهجات الناس.
-2885	He mustered the courage to speak.	He mustered the courage to speak.	حشد الشجاعة ليتكلّم.
+2885	He mustered the courage to speak.	He mustered the courage to speak.	استجمع شجاعته ليتكلّم.
 2886	My mother nags me to tidy my room.	My mother nags me to tidy my room.	تلحّ عليّ أمّي أن أرتّب غرفتي.
-2887	The village nestles at the foot of the hills.	The village nestles at the foot of the hills.	تستكين القرية عند سفح التلال.
+2887	The village nestles at the foot of the hills.	The village nestles at the foot of the hills.	تقع القرية بهدوء عند سفح التلال.
 2888	The mouse nibbled the cheese.	The mouse nibbled the cheese.	قضم الفأر الجبن.
 2889	She nudged me to wake me up.	She nudged me to wake me up.	دفعتني برفق لتوقظني.
 2890	Parents nurture their children's gifts.	Parents nurture their children's gifts.	يرعى الآباء مواهب أطفالهم.
 2891	The storm obliterated the old bridge.	The storm obliterated the old bridge.	محت العاصفة الجسر القديم.
-2892	Honey oozed from the broken jar.	Honey oozed from the broken jar.	رشح العسل من المرطبان المكسور.
+2892	Honey oozed from the broken jar.	Honey oozed from the broken jar.	تسرّب العسل ببطء من المرطبان المكسور.
 2893	The clever fox outwitted the hunter.	The clever fox outwitted the hunter.	تفوّق الثعلب الذكي على الصيّاد بدهائه.
 2894	The mother pacified the crying child.	The mother pacified the crying child.	هدّأت الأمّ الطفل الباكي.
 2895	She pampers her cat with special food.	She pampers her cat with special food.	تدلّل قطّتها بطعام خاصّ.
@@ -3802,10 +3802,10 @@ rank	sentence	en	ar	names
 2901	We plodded through the deep snow.	We plodded through the deep snow.	مشينا بتثاقل في الثلج العميق.
 2902	She plucked a flower from the garden.	She plucked a flower from the garden.	قطفت زهرة من الحديقة.
 2903	Prices plummeted after the news.	Prices plummeted after the news.	هوت الأسعار بعد الخبر.
-2904	Poach the eggs for two minutes.	Poach the eggs for two minutes.	اسلق البيض دقيقتين.
+2904	Poach the eggs for two minutes.	Poach the eggs for two minutes.	اسلق البيض دون قشره دقيقتين.
 2905	The cat pounced on the mouse.	The cat pounced on the mouse.	انقضّت القطّة على الفأر.
 2906	The horse pranced around the field.	The horse pranced around the field.	تبختر الحصان حول الحقل.
-2907	He prodded the fire with a stick.	He prodded the fire with a stick.	نخز النار بعصا.
+2907	He prodded the fire with a stick.	He prodded the fire with a stick.	نكش النار بعصا.
 2908	A fox was prowling around the farm.	A fox was prowling around the farm.	كان ثعلب يتربّص حول المزرعة.
 2909	Don't pry into other people's lives.	Don't pry into other people's lives.	لا تتطفّل على حياة الآخرين.
 2910	Water is the best way to quench your thirst.	Water is the best way to quench your thirst.	الماء أفضل طريقة لإرواء العطش.
@@ -3845,7 +3845,7 @@ rank	sentence	en	ar	names
 2944	The dog snarled at the stranger.	The dog snarled at the stranger.	زمجر الكلب في وجه الغريب.
 2945	A thief snatched her bag.	A thief snatched her bag.	خطف لصّ حقيبتها.
 2946	He sneered at my old car.	He sneered at my old car.	تهكّم على سيّارتي القديمة.
-2947	My brother snores very loud.	My brother snores very loud.	أخي يشخر بصوت عالٍ جدًا.
+2947	My brother snores every night.	My brother snores every night.	أخي يشخر كل ليلة.
 2948	The horse snorted and shook its head.	The horse snorted and shook its head.	شخر الحصان وهزّ رأسه.
 2949	Eagles soar high above the mountains.	Eagles soar high above the mountains.	تحلّق النسور عاليًا فوق الجبال.
 2950	She spurned his offer of help.	She spurned his offer of help.	رفضت عرضه للمساعدة بازدراء.
@@ -3862,8 +3862,8 @@ rank	sentence	en	ar	names
 2961	The news stunned everyone.	The news stunned everyone.	أذهل الخبر الجميع.
 2962	The police subdued the angry man.	The police subdued the angry man.	أخضعت الشرطة الرجل الغاضب.
 2963	He finally succumbed to sleep.	He finally succumbed to sleep.	استسلم أخيرًا للنوم.
-2964	She sulked because she couldn't go out.	She sulked because she couldn't go out.	زعلت لأنّها لم تستطع الخروج.
-2965	He swaggered into the room like a king.	He swaggered into the room like a king.	تبختر داخل الغرفة كأنّه ملك.
+2964	She sulked because she couldn't go out.	She sulked because she couldn't go out.	عبست غاضبةً لأنها لم تستطع الخروج.
+2965	He swaggered into the room like a king.	He swaggered into the room like a king.	تبختر إلى داخل الغرفة كأنه ملك.
 2966	Bees swarmed around the flowers.	Bees swarmed around the flowers.	احتشد النحل حول الأزهار.
 2967	He swatted the fly with a newspaper.	He swatted the fly with a newspaper.	ضرب الذبابة بصحيفة.
 2968	The car swerved to avoid the dog.	The car swerved to avoid the dog.	انحرفت السيارة فجأة لتفادي الكلب.
