@@ -184,9 +184,10 @@ internal object EnglishCurriculum {
             v("ev_old_town", "old town", "the historic centre of a city", "المدينة القديمة", NOUN, A2, "sightseeing")
             v("ev_souvenir", "souvenir", "something you buy to remember a trip", "تذكار", NOUN, A2, "sightseeing")
         }
+        UpperLessons.englishVocab(vb)
         val pro = professionalVocabulary()
         val vocabulary = vb.items + pro
-        val grammar = grammarTopics()
+        val grammar = grammarTopics() + UpperLessons.englishGrammar()
         val f = LessonFactory(L, vocabulary)
 
         val lessons = listOf(
@@ -314,7 +315,7 @@ internal object EnglishCurriculum {
             CourseUnit("en_u_next", L, B1, g("Next steps", "الخطوة التالية"), g("Plans, predictions and conditions", "الخطط والتوقّعات والشروط"), listOf("en_l_plans", "en_l_conditionals")),
             CourseUnit("en_u_survival", L, A1, g("Essential phrases", "العبارات الأساسية"), g("Everyday phrases and emergencies", "العبارات اليومية والطوارئ"), listOf("en_l_ev_essentials", "en_l_ev_emergency")),
             CourseUnit("en_u_tourism", L, A2, g("Travel and tourism", "السفر والسياحة"), g("Restaurants, hotels, transport and sightseeing", "المطاعم والفنادق والمواصلات والمعالم"), listOf("en_l_ev_restaurant", "en_l_ev_hotel", "en_l_ev_transport", "en_l_ev_sightseeing")),
-        ) + professionalUnits(f).first
+        ) + UpperLessons.englishUnits() + professionalUnits(f).first
 
         val proLessons = professionalUnits(f).second
 
@@ -323,7 +324,7 @@ internal object EnglishCurriculum {
             vocabulary = vocabulary,
             grammar = grammar,
             units = units,
-            lessons = lessons + proLessons,
+            lessons = lessons + UpperLessons.englishLessons(f) + proLessons,
             readings = readings(),
             scenarios = scenarios() + professionalScenarios(),
             assessment = assessment(),

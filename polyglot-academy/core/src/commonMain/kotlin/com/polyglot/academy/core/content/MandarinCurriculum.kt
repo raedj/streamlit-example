@@ -222,6 +222,7 @@ internal object MandarinCurriculum {
             v("ev_gucheng", "古城", "old town", "المدينة القديمة", NOUN, A2, "sightseeing", "gǔchéng")
             v("ev_jinianpin", "纪念品", "souvenir", "تذكار", NOUN, A2, "sightseeing", "jìniànpǐn", trad = "紀念品")
         }
+        UpperLessons.mandarinVocab(vb)
         val vocabulary = vb.items
         val f = LessonFactory(L, vocabulary)
 
@@ -414,7 +415,7 @@ internal object MandarinCurriculum {
                     ex("我跟我哥哥一样高。", "I am as tall as my older brother.", "أنا بطول أخي الأكبر."),
                     ex("我比他很高。", "No 很 in a 比 sentence", "لا يأتي 很 في جملة 比", wrong = true)),
                 listOf(g("✗ 我高比他 → ✓ 我比他高 (比 B comes before the adjective).", "✗ 我高比他 ← ✓ 我比他高 (يأتي 比 B قبل الصفة)."))),
-        )
+        ) + UpperLessons.mandarinGrammar()
 
         val units = listOf(
             CourseUnit("zh_u_sounds", L, PRE_A1, g("Sounds and greetings", "الأصوات والتحيات"), g("Tones, pinyin and first words", "النغمات والبينيين والكلمات الأولى"), listOf("zh_l_tones_intro", "zh_l_greetings")),
@@ -429,7 +430,7 @@ internal object MandarinCurriculum {
             CourseUnit("zh_u_pro_legal", L, B2, g("Legal Chinese", "الصينية القانونية"), g("Contracts", "العقود"), listOf("zh_l_legal"), trackId = "legal"),
             CourseUnit("zh_u_survival", L, A1, g("Essential phrases", "العبارات الأساسية"), g("Everyday phrases and emergencies", "العبارات اليومية والطوارئ"), listOf("zh_l_ev_essentials", "zh_l_ev_emergency")),
             CourseUnit("zh_u_tourism", L, A2, g("Travel and tourism", "السفر والسياحة"), g("Restaurants, hotels, transport and sightseeing", "المطاعم والفنادق والمواصلات والمعالم"), listOf("zh_l_ev_restaurant", "zh_l_ev_hotel", "zh_l_ev_transport", "zh_l_ev_sightseeing")),
-        )
+        ) + UpperLessons.mandarinUnits()
 
         val readings = listOf(
             ReadingPassage(
@@ -560,7 +561,7 @@ internal object MandarinCurriculum {
         )
 
         return LanguageCurriculum(
-            language = L, vocabulary = vocabulary, grammar = grammar, units = units, lessons = lessons, readings = readings,
+            language = L, vocabulary = vocabulary, grammar = grammar, units = units, lessons = lessons + UpperLessons.mandarinLessons(f), readings = readings,
             scenarios = scenarios, assessment = assessment,
             tracks = listOf(LearningTrack("business", L, g("Chinese for work", "الصينية للعمل"), g("Meetings, formal emails, budgets and deadlines.", "الاجتماعات والرسائل الرسمية والميزانيات والمواعيد النهائية."), A2, null),
                 LearningTrack("finance", L, g("Chinese for banking and finance", "الصينية للبنوك والتمويل"), g("Accounts, loans, interest, collateral and financial statements.", "الحسابات والقروض والفوائد والضمانات والقوائم المالية."), B1,
