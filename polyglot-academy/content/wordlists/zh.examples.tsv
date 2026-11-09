@@ -82,7 +82,7 @@ rank	sentence	en	ar	names
 41	这是谁的书？	Whose book is this?	كتاب من هذا؟
 41	谁想喝茶？	Who wants tea?	من يريد شايًا؟
 42	你是哪里人？	Where are you from?	من أين أنت؟
-42	我的书在哪儿？	Where is my book?	أين كتابي؟
+42	我的书在哪里？	Where is my book?	أين كتابي؟
 43	你怎么不吃饭？	Why aren't you eating?	لماذا لا تأكل؟
 43	这个怎么用？	How do you use this?	كيف يُستعمل هذا؟
 44	你为什么不来？	Why aren't you coming?	لماذا لا تأتي؟
@@ -92,9 +92,9 @@ rank	sentence	en	ar	names
 46	你们学校有多少学生？	How many students does your school have?	كم طالبًا في مدرستكم؟
 46	一杯咖啡多少钱？	How much is a cup of coffee?	بكم فنجان القهوة؟
 47	我在这里等你。	I'll wait for you here.	سأنتظرك هنا.
-47	这儿的菜很好吃。	The food here is delicious.	الطعام هنا لذيذ.
+47	这里的菜很好吃。	The food here is delicious.	الطعام هنا لذيذ.
 48	那里有一个商店。	There is a shop over there.	هناك متجر.
-48	我的书在那儿。	My book is over there.	كتابي هناك.
+48	我的书在那里。	My book is over there.	كتابي هناك.
 49	现在几点了？	What time is it now?	كم الساعة الآن؟
 49	他现在不在家。	He isn't at home now.	هو ليس في البيت الآن.
 50	今天我不想工作。	I don't want to work today.	لا أريد أن أعمل اليوم.
@@ -176,7 +176,7 @@ rank	sentence	en	ar	names
 88	我在北京学习汉语。	I'm studying Chinese in Beijing.	أدرس الصينية في بكين.
 88	他每天晚上学习。	He studies every evening.	يدرس كل مساء.
 89	你在哪儿工作？	Where do you work?	أين تعمل؟
-89	她的工作很忙。	Her job is very busy.	عملها مزدحم جدًا.
+89	她的工作很忙。	She is very busy at work.	هي مشغولة جدًا في عملها.
 90	我晚上十点睡觉。	I go to bed at ten at night.	أنام في العاشرة ليلًا.
 90	孩子在睡觉。	The child is sleeping.	الطفل نائم.
 91	我想回家。	I want to go home.	أريد أن أعود إلى البيت.
@@ -672,7 +672,7 @@ rank	sentence	en	ar	names
 336	你周末打算做什么？	What are you planning to do at the weekend?	ماذا تنوي أن تفعل في عطلة نهاية الأسبوع؟
 336	我打算明天去银行。	I plan to go to the bank tomorrow.	أنوي الذهاب إلى المصرف غدًا.
 337	我认为这个办法很好。	I think this method is good.	أرى أن هذه الطريقة جيدة.
-337	你认为怎么样？	What do you think?	ما رأيك؟
+337	你认为呢？	What do you think?	ما رأيك؟
 338	我发现我的手机不见了。	I found that my phone was gone.	اكتشفت أن هاتفي اختفى.
 338	他发现了一个好地方。	He found a good place.	اكتشف مكانًا جيدًا.
 339	我明天去见他。	I'm going to see him tomorrow.	سأذهب لرؤيته غدًا.
@@ -738,7 +738,7 @@ rank	sentence	en	ar	names
 369	你能帮忙吗？	Can you help?	هل يمكنك المساعدة؟
 369	谢谢你帮忙！	Thanks for your help!	شكرًا على مساعدتك!
 370	祝你生日快乐！	Happy birthday to you!	عيد ميلاد سعيد لك!
-370	祝你考试成绩好！	I hope you get good exam results!	أتمنى لك نتائج جيدة في الامتحان!
+370	祝你们身体好！	I wish you all good health!	أتمنى لكم الصحة الجيدة!
 371	我感冒了，不能去上班。	I've caught a cold and can't go to work.	أُصبت بالزكام ولا أستطيع الذهاب إلى العمل.
 371	冬天很容易感冒。	It's easy to catch a cold in winter.	من السهل الإصابة بالزكام في الشتاء.
 372	周末你做什么？	What do you do at the weekend?	ماذا تفعل في عطلة نهاية الأسبوع؟
@@ -833,9 +833,9 @@ rank	sentence	en	ar	names
 416	这条红裙子很好看。	This red dress looks good.	هذا الفستان الأحمر جميل.
 417	这双鞋很舒服。	These shoes are very comfortable.	هذا الحذاء مريح جدًا.
 417	我要买一双新鞋。	I want to buy a new pair of shoes.	أريد أن أشتري حذاءً جديدًا.
-418	外面很冷，你要带帽子。	It's cold outside, take a hat.	الجو بارد في الخارج، خذ قبعة.
+418	外面很冷，你要戴帽子。	It's cold outside, you should wear a hat.	الجو بارد في الخارج، يجب أن ترتدي قبعة.
 418	这个帽子是谁的？	Whose hat is this?	لمن هذه القبعة؟
-419	我看书的时候要用眼镜。	I need glasses when I read.	أحتاج إلى نظارة عندما أقرأ.
+419	我看书的时候要戴眼镜。	I need glasses when I read.	أحتاج إلى نظارة عندما أقرأ.
 419	你看见我的眼镜了吗？	Have you seen my glasses?	هل رأيت نظارتي؟
 420	我的包很重。	My bag is very heavy.	حقيبتي ثقيلة جدًا.
 420	她买了一个新包。	She bought a new bag.	اشترت حقيبة جديدة.
@@ -988,7 +988,7 @@ rank	sentence	en	ar	names
 494	她穿着一件红衣服。	She's wearing red clothes.	ترتدي ملابس حمراء.
 494	这个苹果很红。	This apple is very red.	هذه التفاحة حمراء جدًا.
 495	我喜欢白颜色。	I like the colour white.	أحب اللون الأبيض.
-495	外面都是白的雪。	Outside everything is white with snow.	كل شيء في الخارج أبيض بالثلج.
+495	外面都是白雪。	There is white snow everywhere outside.	في الخارج ثلج أبيض في كل مكان.
 496	天黑了，我们回家吧。	It's dark, let's go home.	حلّ الظلام، لنعد إلى البيت.
 496	我有一只黑猫。	I have a black cat.	عندي قطة سوداء.
 497	春天树变绿了。	In spring the trees turn green.	في الربيع تخضرّ الأشجار.
@@ -1082,7 +1082,7 @@ rank	sentence	en	ar	names
 541	我正在吃饭。	I'm eating right now.	أنا آكل الآن.
 541	他们正在开会。	They're in a meeting right now.	إنهم في اجتماع الآن.
 542	我刚到家。	I've just got home.	وصلت إلى البيت للتو.
-542	他刚走，你等一下。	He's just left, wait a moment.	غادر للتو، انتظر قليلًا.
+542	他刚走，你来晚了。	He's just left. You're too late.	غادر للتو، لقد تأخرت.
 543	我们终于到了。	We've finally arrived.	وصلنا أخيرًا.
 543	考试终于结束了。	The exam is finally over.	انتهى الامتحان أخيرًا.
 544	天突然黑了。	It suddenly got dark.	حلّ الظلام فجأة.
@@ -1211,7 +1211,7 @@ rank	sentence	en	ar	names
 605	我的包在地铁上被偷了。	My bag was stolen on the metro.	سُرقت حقيبتي في المترو.
 606	请推门进来。	Please push the door and come in.	من فضلك ادفع الباب وادخل.
 606	我们一起推车吧。	Let's push the car together.	لندفع السيارة معًا.
-607	他拉着我的手。	He was holding my hand and pulling.	كان يسحبني من يدي.
+607	他拉着我的手。	He was pulling me by the hand.	كان يسحبني من يدي.
 607	请拉开窗户。	Please pull the window open.	من فضلك اسحب النافذة وافتحها.
 608	别把纸扔在路上。	Don't throw paper on the road.	لا ترمِ الورق في الطريق.
 608	他把足球扔给了狗。	He threw the football to the dog.	رمى كرة القدم للكلب.
@@ -1226,7 +1226,7 @@ rank	sentence	en	ar	names
 613	我建议你早一点儿休息。	I suggest you rest a bit earlier.	أقترح أن ترتاح مبكرًا قليلًا.
 613	谢谢你的建议。	Thank you for your suggestion.	شكرًا على اقتراحك.
 614	你能给我推荐一个饭店吗？	Can you recommend a restaurant to me?	هل تنصحني بمطعم؟
-614	医生推荐我多运动。	The doctor recommended I exercise more.	نصحني الطبيب بممارسة الرياضة أكثر.
+614	老师给我推荐了一本书。	The teacher recommended a book to me.	نصحني المعلّم بكتاب.
 615	他常常抱怨天气。	He often complains about the weather.	كثيرًا ما يشتكي من الطقس.
 615	客人向经理抱怨了。	The guest complained to the manager.	اشتكى الضيف إلى المدير.
 616	她拒绝了我的礼物。	She refused my present.	رفضت هديتي.
@@ -1279,7 +1279,7 @@ rank	sentence	en	ar	names
 639	我感冒了，什么都闻不到。	I have a cold and can't smell anything.	عندي زكام ولا أشمّ أيّ شيء.
 640	把衣服挂在门上。	Hang your clothes on the door.	علّق ملابسك على الباب.
 640	门上挂着一张地图。	A map is hanging on the door.	خريطة معلّقة على الباب.
-641	米饭烧了。	The rice is burnt.	احترق الأرز.
+641	他把纸烧了。	He burned the paper.	أحرق الورقة.
 641	妈妈烧了一条鱼。	Mum cooked a fish.	طبخت أمي سمكة.
 642	鸡蛋要煮十分钟。	The eggs need to boil for ten minutes.	يجب سلق البيض عشر دقائق.
 642	我给你煮面条吧。	Let me cook you some noodles.	دعني أطبخ لك المعكرونة.
@@ -1414,7 +1414,7 @@ rank	sentence	en	ar	names
 707	我把汉字写在笔记本上。	I write the characters in my notebook.	أكتب الحروف الصينية في دفتري.
 707	我的笔记本电脑坏了。	My laptop is broken.	حاسوبي المحمول معطّل.
 708	我的脖子很疼。	My neck hurts a lot.	رقبتي تؤلمني كثيرًا.
-708	天冷了，他的脖子很冷。	It's cold and his neck is cold.	الجو بارد ورقبته باردة.
+708	他没戴围巾，脖子很冷。	He isn't wearing a scarf, so his neck is cold.	لا يرتدي وشاحًا، فرقبته باردة.
 709	他把手放在我的肩膀上。	He put his hand on my shoulder.	وضع يده على كتفي.
 709	我的肩膀有点儿疼。	My shoulder hurts a bit.	كتفي يؤلمني قليلًا.
 710	我切菜的时候切到了手指。	I cut my finger while chopping vegetables.	جرحت إصبعي وأنا أقطّع الخضار.
@@ -1539,7 +1539,7 @@ rank	sentence	en	ar	names
 769	每个人都有自己的能力。	Everyone has their own abilities.	لكل شخص قدراته.
 770	这里的环境很好。	The environment here is very good.	البيئة هنا جيدة جدًا.
 770	我们要保护环境。	We must protect the environment.	يجب أن نحمي البيئة.
-771	我喜欢去农村看自然。	I like going to the countryside to see nature.	أحب الذهاب إلى الريف لرؤية الطبيعة.
+771	我喜欢去农村看自然风景。	I like going to the countryside to see the natural scenery.	أحب الذهاب إلى الريف لرؤية المناظر الطبيعية.
 771	说汉语的时候要自然一点儿。	Be a bit more natural when you speak Chinese.	كن طبيعيًا أكثر عندما تتكلم الصينية.
 772	我很喜欢中国文化。	I really like Chinese culture.	أحب الثقافة الصينية كثيرًا.
 772	每个国家都有自己的文化。	Every country has its own culture.	لكل بلد ثقافته.
@@ -1604,7 +1604,7 @@ rank	sentence	en	ar	names
 802	请写出这个字的拼音。	Please write the pinyin of this character.	من فضلك اكتب البينيين لهذا الحرف.
 802	学汉语要从拼音开始。	Learning Chinese starts with pinyin.	تعلّم الصينية يبدأ بالبينيين.
 803	今天的温度很高。	The temperature is very high today.	درجة الحرارة مرتفعة جدًا اليوم.
-803	护士检查了我的温度。	The nurse checked my temperature.	فحصت الممرّضة حرارتي.
+803	外面的温度是多少？	What's the temperature outside?	كم درجة الحرارة في الخارج؟
 804	火车站在哪个方向？	Which direction is the railway station?	في أيّ اتجاه محطة القطار؟
 804	我们走错方向了。	We went the wrong way.	سرنا في الاتجاه الخاطئ.
 805	请告诉我你的地址。	Please tell me your address.	من فضلك أخبرني بعنوانك.
@@ -1612,7 +1612,7 @@ rank	sentence	en	ar	names
 806	这是一个爱情故事。	This is a love story.	هذه قصة حبّ.
 806	我不喜欢看爱情电影。	I don't like watching romantic films.	لا أحب مشاهدة الأفلام الرومانسية.
 807	我昨天晚上做了一个奇怪的梦。	I had a strange dream last night.	رأيت حلمًا غريبًا ليلة أمس.
-807	我的梦是去世界上很多地方旅游。	My dream is to travel to many places in the world.	حلمي أن أسافر إلى أماكن كثيرة في العالم.
+807	我做了一个好梦。	I had a good dream.	رأيت حلمًا جميلًا.
 808	我们都希望世界和平。	We all hope for world peace.	نتمنى جميعًا السلام في العالم.
 808	这是一个和平的国家。	This is a peaceful country.	هذا بلد مسالم.
 809	今天我的心情很好。	I'm in a very good mood today.	مزاجي جيد جدًا اليوم.
@@ -1667,7 +1667,7 @@ rank	sentence	en	ar	names
 833	在中国的时候我觉得很孤单。	I felt very lonely when I was in China.	شعرت بالوحدة الشديدة عندما كنت في الصين.
 834	我哥哥还是单身。	My older brother is still single.	أخي الأكبر ما زال أعزب.
 834	你结婚了还是单身？	Are you married or single?	هل أنت متزوّج أم أعزب؟
-835	这首音乐现在很流行。	This music is very popular now.	هذه الموسيقى رائجة الآن.
+835	这种音乐现在很流行。	This kind of music is very popular now.	هذا النوع من الموسيقى رائج الآن.
 835	这个颜色现在很流行。	This colour is in fashion now.	هذا اللون رائج الآن.
 836	他们住在一个很现代的房子里。	They live in a very modern house.	يعيشون في بيت حديث جدًا.
 836	我喜欢现代音乐。	I like modern music.	أحب الموسيقى الحديثة.
@@ -1715,7 +1715,7 @@ rank	sentence	en	ar	names
 857	孩子们坐地铁免费。	Children ride the metro for free.	يركب الأطفال المترو مجانًا.
 858	尽管下雨，我们还是去了公园。	Although it rained, we still went to the park.	مع أنها أمطرت ذهبنا إلى الحديقة.
 858	尽管他很累，他还是去上班了。	Although he was tired, he still went to work.	مع أنه كان متعبًا ذهب إلى العمل.
-859	除非下雨，我们明天去爬山。	Unless it rains, we'll go hiking tomorrow.	سنذهب إلى تسلّق الجبل غدًا إلا إذا أمطرت.
+859	除非你帮我，否则我做不完。	Unless you help me, I can't finish.	لن أنتهي إلا إذا ساعدتني.
 859	除非有重要的事，别给我打电话。	Don't call me unless it's important.	لا تتصل بي إلا إذا كان الأمر مهمًا.
 860	反正我没事，我陪你去。	I'm free anyway, I'll go with you.	أنا متفرّغ على أيّ حال، سأرافقك.
 860	反正时间还早，我们走路去吧。	It's still early anyway, let's walk.	ما زال الوقت مبكرًا على أيّ حال، لنمشِ.
@@ -1745,7 +1745,7 @@ rank	sentence	en	ar	names
 872	周末到处都是人。	At weekends there are people everywhere.	في عطلة الأسبوع الناس في كل مكان.
 873	另外，我们还要一些水。	Besides, we also need some water.	إضافة إلى ذلك نحتاج بعض الماء.
 873	我有两个哥哥，另外还有一个妹妹。	I have two older brothers and also a younger sister.	لي أخوان أكبر مني وأيضًا أخت صغرى.
-874	快走吧，否则我们会晚。	Let's go quickly, otherwise we'll be late.	لنذهب بسرعة وإلّا سنتأخر.
+874	快走吧，否则我们会迟到。	Let's go quickly, otherwise we'll be late.	لنذهب بسرعة وإلّا سنتأخر.
 874	多穿一点儿衣服，否则会感冒。	Wear more clothes, otherwise you'll catch a cold.	البس ملابس أكثر وإلّا ستصاب بالزكام.
 875	他不但会说汉语，而且会写汉字。	He can not only speak Chinese but also write characters.	لا يتكلم الصينية فقط بل يكتب حروفها أيضًا.
 875	这里不但便宜，而且好吃。	It's not only cheap here but also tasty.	المكان هنا ليس رخيصًا فقط بل لذيذ أيضًا.
@@ -1781,12 +1781,12 @@ rank	sentence	en	ar	names
 890	这所大学有两万个学生。	This university has twenty thousand students.	في هذه الجامعة عشرون ألف طالب.
 891	我给奶奶写了一封信。	I wrote Grandma a letter.	كتبت رسالة لجدتي.
 891	今天我收到了两封信。	I received two letters today.	استلمت رسالتين اليوم.
-892	这首音乐很好听。	This piece of music is lovely.	هذه المقطوعة الموسيقية جميلة.
-892	我很喜欢这首音乐。	I really like this piece of music.	أحب هذه المقطوعة الموسيقية كثيرًا.
+892	这首歌很好听。	This song sounds lovely.	هذه الأغنية جميلة.
+892	我很喜欢这首歌。	I really like this song.	أحب هذه الأغنية كثيرًا.
 893	我们租了一套房子。	We rented a flat.	استأجرنا شقة.
 893	这套衣服很贵。	This outfit is very expensive.	هذا الطقم غالٍ جدًا.
 894	今天我们有四节课。	We have four lessons today.	عندنا أربع حصص اليوم.
-894	第一节课是汉语。	The first lesson is Chinese.	الحصة الأولى صينية.
+894	第一节课是汉语。	The first lesson is Chinese.	الحصة الأولى هي اللغة الصينية.
 895	祝你一路平安！	Have a safe trip!	رحلة سالمة!
 895	一路平安，到了给我打电话。	Safe journey, call me when you arrive.	رحلة سالمة، اتصل بي عندما تصل.
 896	恭喜你考试成功！	Congratulations on passing your exam!	مبروك نجاحك في الامتحان!
@@ -1874,7 +1874,7 @@ rank	sentence	en	ar	names
 973	你应该向她道歉。	You should apologise to her.	عليك أن تعتذر لها.
 974	他想成为医生。	He wants to become a doctor.	يريد أن يصبح طبيبًا.
 975	恭喜你通过了考试！	Congratulations on passing the exam!	مبروك نجاحك في الامتحان!
-976	我正在减肥，不吃蛋糕。	I'm on a diet, I'm not eating cake.	أنا أخسّس، لا آكل الكعك.
+976	我正在减肥，不吃蛋糕。	I'm on a diet, I'm not eating cake.	أحاول إنقاص وزني، فلا آكل الكعكة.
 977	爷爷每天早上锻炼身体。	Grandpa exercises every morning.	يتمرّن جدّي كل صباح.
 978	奶奶给我们讲了一个故事。	Grandma told us a story.	حكت لنا جدتي قصة.
 979	我想跟你谈谈工作的事。	I'd like to talk to you about work.	أريد أن أتحدّث معك عن العمل.
@@ -2131,7 +2131,7 @@ rank	sentence	en	ar	names
 1230	那个女孩是我妹妹。	That girl is my younger sister.	تلك البنت أختي الصغيرة.
 1231	这个男孩很聪明。	This boy is very clever.	هذا الولد ذكي جدًا.
 1232	你怎么来得这么早？	How come you came so early?	لماذا جئت مبكرًا هكذا؟
-1233	请大家不要说话。	Everyone, please don't talk.	من فضلكم لا تتكلّموا جميعًا.
+1233	请大家不要说话。	Everyone, please don't talk.	من فضلكم، لا يتكلّم أحد.
 1234	你说的话我都记得。	I remember everything you said.	أتذكّر كل ما قلته.
 1235	这家店的东西很便宜。	The things in this shop are very cheap.	بضائع هذا المتجر رخيصة جدًا.
 1236	坐在中间的那个人是我哥哥。	The person sitting in the middle is my older brother.	الشخص الجالس في الوسط أخي الأكبر.
@@ -2205,7 +2205,7 @@ rank	sentence	en	ar	names
 1304	他负责这个项目。	He is responsible for this project.	إنه مسؤول عن هذا المشروع.
 1305	这个问题很复杂。	This problem is very complicated.	هذه المشكلة معقّدة جدًا.
 1306	这个城市改变了很多。	This city has changed a lot.	تغيّرت هذه المدينة كثيرًا.
-1307	他们的感情很好。	They are very close.	علاقتهما العاطفية جيدة جدًا.
+1307	他们的感情很好。	They are very close.	علاقتهم وثيقة جدًا.
 1308	我在学高级汉语。	I'm studying advanced Chinese.	أدرس الصينية المتقدّمة.
 1309	各位同学，请坐好。	Everyone, please sit properly.	أيها الطلاب جميعًا، من فضلكم اجلسوا جيدًا.
 1310	我们有共同的爱好。	We have hobbies in common.	لدينا هوايات مشتركة.
@@ -2324,7 +2324,7 @@ rank	sentence	en	ar	names
 1423	你去超市的时候，顺便买一点儿牛奶。	When you go to the supermarket, pick up some milk.	عندما تذهب إلى السوبرماركت اشترِ قليلًا من الحليب.
 1424	祝你考试顺利！	Good luck in your exam!	أتمنى لك النجاح في امتحانك!
 1425	你需要塑料袋吗？	Do you need a plastic bag?	هل تحتاج إلى كيس بلاستيكي؟
-1426	随着时间，他的汉语越来越好。	Over time his Chinese is getting better and better.	مع الوقت تتحسّن صينيّته أكثر فأكثر.
+1426	随着时间的推移，他的汉语越来越好。	Over time his Chinese is getting better and better.	مع مرور الوقت تتحسّن لغته الصينية أكثر فأكثر.
 1427	所有的学生都来了。	All the students have come.	جاء كل الطلاب.
 1428	他的工作态度很好。	His attitude to work is very good.	موقفه من العمل جيد جدًا.
 1429	这个城市的特点是很干净。	This city's characteristic is that it's very clean.	من سمات هذه المدينة أنها نظيفة جدًا.
@@ -2412,7 +2412,7 @@ rank	sentence	en	ar	names
 1511	这个公园吸引了很多游客。	This park attracts lots of tourists.	تجذب هذه الحديقة سيّاحًا كثيرين.
 1512	你能证明你说的是真的吗？	Can you prove that what you said is true?	هل يمكنك أن تثبت أنّ ما قلته صحيح؟
 1513	狗在院子里吃骨头。	The dog is eating a bone in the yard.	يأكل الكلب عظمة في الفناء.
-1514	故事里的国王住在一个大楼里。	The king in the story lives in a big building.	يعيش الملك في الحكاية في مبنى كبير.
+1514	故事里的国王很有钱。	The king in the story is very rich.	الملك في الحكاية غنيّ جدًا.
 1515	这台机器坏了，需要修理。	This machine is broken and needs repairing.	هذه الآلة معطّلة وتحتاج إلى إصلاح.
 1516	我们家有五个成员。	Our family has five members.	في عائلتنا خمسة أفراد.
 1517	请不要用塑料袋。	Please don't use plastic bags.	من فضلك لا تستخدم الأكياس البلاستيكية.
@@ -2522,7 +2522,7 @@ rank	sentence	en	ar	names
 1621	语言是最大的障碍。	Language is the biggest obstacle.	اللغة هي أكبر عائق.
 1622	旧东西都放在地下室里。	All the old things are kept in the basement.	كلّ الأشياء القديمة موضوعة في القبو.
 1623	船慢慢开进了海湾。	The boat slowly sailed into the bay.	دخل القارب الخليج ببطء.
-1624	我不喜欢吃豆。	I don't like eating beans.	لا أحبّ أكل الفول.
+1624	我不喜欢吃红豆。	I don't like eating red beans.	لا أحبّ أكل الفاصولياء الحمراء.
 1625	这种行为很不礼貌。	This kind of behaviour is very rude.	هذا السلوك قليل الأدب جدًا.
 1626	每个人都有自己的信仰。	Everyone has their own beliefs.	لكلّ إنسان عقيدته.
 1627	我最喜欢的课是生物。	My favourite class is biology.	درسي المفضّل هو علم الأحياء.
@@ -2569,7 +2569,7 @@ rank	sentence	en	ar	names
 1668	我很喜欢吃咖喱鸡肉。	I really like eating chicken curry.	أحبّ أكل دجاج الكاري كثيرًا.
 1669	这家公司遇到了危机。	This company has run into a crisis.	واجهت هذه الشركة أزمة.
 1670	国王戴着皇冠。	The king is wearing a crown.	يضع الملك تاجًا.
-1671	孩子都有很多好奇心。	Children all have lots of curiosity.	لدى الأطفال جميعًا فضول كبير.
+1671	孩子都有很强的好奇心。	Children all have a strong curiosity.	لدى الأطفال جميعًا فضول قوي.
 1672	沙发上有两个垫子。	There are two cushions on the sofa.	على الأريكة وسادتان.
 1673	每个地方的风俗都不一样。	Every place's customs are different.	عادات كلّ مكان مختلفة.
 1674	她从五岁开始学舞蹈。	She started learning dance at five.	بدأت تتعلّم الرقص في الخامسة.
@@ -2840,7 +2840,7 @@ rank	sentence	en	ar	names
 1939	政府有了新的措施。	The government has new measures.	لدى الحكومة إجراءات جديدة.
 1940	冬天要穿大衣。	You need to wear an overcoat in winter.	يجب ارتداء معطف في الشتاء.
 1941	你在哪个单位工作？	Which work unit do you work in?	في أيّ جهة تعمل؟
-1942	他们赢了敌人。	They beat the enemy.	هزموا العدوّ.
+1942	敌人来了！	The enemy is coming!	العدوّ قادم!
 1943	我每天早上听这个电台。	I listen to this radio station every morning.	أستمع إلى هذه الإذاعة كل صباح.
 1944	我喜欢吃豆腐。	I like eating tofu.	أحبّ أكل التوفو.
 1945	法官认真地听了双方的话。	The judge listened carefully to both sides.	استمع القاضي بعناية إلى الطرفين.
@@ -2945,7 +2945,7 @@ rank	sentence	en	ar	names
 2044	这个城市的大楼很独特。	This city's buildings are very unique.	مباني هذه المدينة فريدة جدًا.
 2045	这个国家的经济很发达。	This country's economy is very developed.	اقتصاد هذا البلد متقدّم جدًا.
 2046	他的工作非常繁忙。	His work is extremely busy.	عمله مزدحم جدًا.
-2047	这个问题引起了广泛的关心。	This issue has attracted widespread concern.	أثارت هذه المسألة اهتمامًا واسعًا.
+2047	这个问题引起了广泛的关注。	This issue has attracted widespread concern.	أثارت هذه المسألة اهتمامًا واسعًا.
 2048	你这么说太过分了。	What you said is going too far.	كلامك هذا تجاوز الحدّ.
 2049	这里的人非常好客。	The people here are very hospitable.	الناس هنا مضيافون جدًا.
 2050	老奶奶对人很和蔼。	The old lady is very kind to people.	الجدّة العجوز لطيفة جدًا مع الناس.
@@ -2973,14 +2973,14 @@ rank	sentence	en	ar	names
 2072	请把句子写完整。	Please write the sentence in full.	من فضلك اكتب الجملة كاملة.
 2073	他是一位伟大的作家。	He is a great writer.	إنّه كاتب عظيم.
 2074	她穿了一件颜色鲜艳的裙子。	She wore a brightly coloured skirt.	ارتدت تنّورة زاهية الألوان.
-2075	你周末闲吗？	Are you free at the weekend?	هل أنت فارغ في عطلة نهاية الأسبوع؟
+2075	你周末闲吗？	Are you free at the weekend?	هل أنت متفرّغ في عطلة نهاية الأسبوع؟
 2076	病了以后他很虚弱。	He's very weak after being ill.	هو ضعيف جدًا بعد المرض.
 2077	老师的表情很严肃。	The teacher's expression is very serious.	تعبير المعلّم جادّ جدًا.
 2078	这张照片对我很珍贵。	This photo is very precious to me.	هذه الصورة ثمينة جدًا بالنسبة لي.
 2079	她的房间总是很整洁。	Her room is always neat and tidy.	غرفتها نظيفة ومرتّبة دائمًا.
 2080	这条路又直又宽。	This road is straight and wide.	هذا الطريق مستقيم وواسع.
 2081	我的手表很准。	My watch is very accurate.	ساعتي دقيقة جدًا.
-2082	父母对我感到自豪。	My parents feel proud of me.	والداي فخوران بي.
+2082	我的父母很自豪。	My parents are very proud.	والداي فخوران جدًا.
 2083	他不断地练习说汉语。	He keeps practising speaking Chinese.	يتمرّن على التحدّث بالصينية باستمرار.
 2084	我曾经在北京住过两年。	I once lived in Beijing for two years.	سبق أن عشت في بكين سنتين.
 2085	从此他再也没迟到过。	From then on he was never late again.	منذ ذلك الحين لم يتأخّر أبدًا.
@@ -2992,7 +2992,7 @@ rank	sentence	en	ar	names
 2091	我绝对不会告诉别人。	I absolutely won't tell anyone.	لن أخبر أحدًا مطلقًا.
 2092	听到消息，他立即出发了。	On hearing the news, he set off immediately.	عند سماع الخبر انطلق فورًا.
 2093	他明明知道，却不说。	He obviously knows but won't say.	إنّه يعرف بوضوح لكنّه لا يقول.
-2094	我要出门的时候，偏偏下雨了。	Just as I was going out, it had to rain.	عندما كنت سأخرج، أمطرت بالذات.
+2094	我要出门的时候，偏偏下雨了。	Just as I was going out, it had to rain.	عندما كنت على وشك الخروج، أمطرت لسوء الحظ.
 2095	我们同样很喜欢这个城市。	We like this city just as much.	نحن كذلك نحبّ هذه المدينة كثيرًا.
 2096	带上雨伞，万一下雨呢。	Take an umbrella in case it rains.	خذ مظلّة تحسّبًا للمطر.
 2097	贵的东西未必好。	Expensive things aren't necessarily good.	الأشياء الغالية ليست بالضرورة جيدة.
@@ -3176,7 +3176,7 @@ rank	sentence	en	ar	names
 2275	她在音乐会上演奏钢琴。	She played the piano at the concert.	عزفت على البيانو في الحفل.
 2276	他们全家移民了。	The whole family emigrated.	هاجرت عائلتهم كلّها.
 2277	老师引导学生思考。	The teacher guides the students to think.	يوجّه المعلّم الطلاب إلى التفكير.
-2278	小猫隐藏在床下。	The kitten is hiding under the bed.	تختبئ القطّة الصغيرة تحت السرير.
+2278	他把秘密隐藏在心里。	He hid the secret in his heart.	أخفى السرّ في قلبه.
 2279	你要学会运用新的汉字。	You should learn to use new characters.	يجب أن تتعلّم استخدام الحروف الجديدة.
 2280	人们赞美这个城市的美丽。	People praise the beauty of this city.	يمجّد الناس جمال هذه المدينة.
 2281	他已经掌握了两门外语。	He has already mastered two foreign languages.	أتقن لغتين أجنبيّتين بالفعل.
@@ -3243,7 +3243,7 @@ rank	sentence	en	ar	names
 2342	海洋里有很多鱼。	There are many fish in the ocean.	في المحيط أسماك كثيرة.
 2343	广场上有很多鸽子。	There are lots of pigeons in the square.	في الساحة حمام كثير.
 2344	孩子害怕黑暗。	The child is afraid of the dark.	يخاف الطفل من الظلام.
-2345	我们要给后代保护环境。	We must protect the environment for our descendants.	يجب أن نحمي البيئة لذرّيتنا.
+2345	我们要想想后代。	We must think about future generations.	يجب أن نفكّر في الأجيال القادمة.
 2346	北京的胡同很有意思。	Beijing's hutongs are very interesting.	أزقّة بكين مثيرة للاهتمام جدًا.
 2347	桌子上有一个花瓶。	There's a vase on the table.	على الطاولة مزهرية.
 2348	她买了很多化妆品。	She bought a lot of cosmetics.	اشترت مستحضرات تجميل كثيرة.
@@ -3251,7 +3251,7 @@ rank	sentence	en	ar	names
 2350	他们的婚姻很幸福。	Their marriage is very happy.	زواجهما سعيد جدًا.
 2351	这次火灾很严重。	This fire was very serious.	كان هذا الحريق خطيرًا جدًا.
 2352	跟着音乐的节拍跳舞。	Dance to the beat of the music.	ارقص على إيقاع الموسيقى.
-2353	你最近的近况怎么样？	How have things been with you lately?	كيف أحوالك مؤخرًا؟
+2353	你的近况怎么样？	How have things been with you lately?	كيف أحوالك مؤخرًا؟
 2354	我们住在海边的酒店。	We're staying at a hotel by the sea.	نقيم في فندق على البحر.
 2355	剧场里坐满了观众。	The theatre is full of audience.	المسرح مليء بالجمهور.
 2356	北京烤鸭很有名。	Peking duck is very famous.	البطّ المشوي البكيني مشهور جدًا.
@@ -3325,17 +3325,17 @@ rank	sentence	en	ar	names
 2424	不要吸入太多烟。	Don't inhale too much smoke.	لا تستنشق الكثير من الدخان.
 2425	护士给我注射了一针药。	The nurse gave me an injection.	أعطتني الممرّضة حقنة.
 2426	父母不应该干预太多。	Parents shouldn't interfere too much.	لا ينبغي أن يتدخّل الوالدان كثيرًا.
-2427	辣的东西会刺激肚子。	Spicy food can irritate the stomach.	الطعام الحارّ قد يهيّج المعدة.
+2427	烟会刺激眼睛。	Smoke irritates the eyes.	الدخان يهيّج العينين.
 2428	这两家公司去年合并了。	These two companies merged last year.	اندمجت هاتان الشركتان العام الماضي.
-2429	我用手机导航去机场。	I use my phone to navigate to the airport.	أستخدم هاتفي للوصول إلى المطار.
+2429	我用手机导航去机场。	I use my phone to navigate to the airport.	أستخدم الملاحة في هاتفي للذهاب إلى المطار.
 2430	你遗漏了一个重要的问题。	You left out an important question.	أغفلت سؤالًا مهمًّا.
-2431	那个国王压迫他的国家的人。	That king oppressed the people of his country.	اضطهد ذلك الملك أهل بلده.
+2431	那个国王压迫他的人民。	That king oppressed the people of his country.	اضطهد ذلك الملك أهل بلده.
 2432	雨水穿透了我的外套。	The rain went through my coat.	اخترق المطر معطفي.
 2433	针刺穿了她的手指。	The needle pierced her finger.	ثقبت الإبرة إصبعها.
 2434	他一个人坐在那里沉思。	He sat there alone, deep in thought.	جلس هناك وحده يتأمّل.
-2435	国王宣告明天放假。	The king announced a holiday tomorrow.	أعلن الملك عطلة غدًا.
+2435	这个国家宣告独立了。	This country declared independence.	أعلنت هذه الدولة استقلالها.
 2436	公司起诉了那个人。	The company sued that man.	قاضت الشركة ذلك الرجل.
-2437	别挑衅那只狗。	Don't provoke that dog.	لا تستفزّ ذلك الكلب.
+2437	不要挑衅他。	Don't provoke him.	لا تستفزّه.
 2438	手机辐射对身体不好吗？	Is phone radiation bad for the body?	هل إشعاع الهاتف مضرّ بالجسم؟
 2439	他们两个人终于和解了。	The two of them finally made up.	تصالح الاثنان أخيرًا.
 2440	这个工厂从石头里提炼金属。	This factory extracts metal from stone.	يستخرج هذا المصنع المعدن من الحجر.
@@ -3347,11 +3347,11 @@ rank	sentence	en	ar	names
 2446	老师没有责备他。	The teacher didn't blame him.	لم يلمه المعلّم.
 2447	孩子在墙上乱涂抹。	The child scribbled all over the wall.	خربش الطفل على الجدار.
 2448	警察没收了他的刀。	The police confiscated his knife.	صادرت الشرطة سكّينه.
-2449	大风粉碎了窗户。	The strong wind smashed the window.	حطّمت الريح القويّة النافذة.
+2449	大风把窗户玻璃吹得粉碎。	The strong wind shattered the window glass.	حطّمت الريح القويّة زجاج النافذة.
 2450	他耸肩，没有回答。	He shrugged and didn't answer.	هزّ كتفيه ولم يجب.
 2451	妈妈在厨房里炖鸡汤。	Mum is stewing chicken soup in the kitchen.	أمّي تطهو حساء الدجاج في المطبخ.
 2452	我每天早上浏览新闻。	I browse the news every morning.	أتصفّح الأخبار كلّ صباح.
-2453	农民过节的时候屠宰一只羊。	The farmer slaughters a sheep for the festival.	يذبح المزارع خروفًا في العيد.
+2453	这个工厂每天屠宰很多猪。	This factory slaughters many pigs every day.	يذبح هذا المصنع خنازير كثيرة كل يوم.
 2454	小女孩在房间里抽泣。	The little girl is sobbing in her room.	البنت الصغيرة تنتحب في غرفتها.
 2455	农民春天播种。	Farmers sow seeds in spring.	يبذر المزارعون في الربيع.
 2456	我打篮球的时候扭伤了脚。	I sprained my foot playing basketball.	لويت قدمي وأنا ألعب كرة السلّة.
@@ -3380,7 +3380,7 @@ rank	sentence	en	ar	names
 2479	她在我旁边耳语。	She whispered beside me.	همست بجانبي.
 2480	他喜欢吹牛，别相信他。	He likes to boast, don't believe him.	يحبّ التباهي، لا تصدّقه.
 2481	在市场买东西可以讨价还价。	You can haggle when shopping at the market.	يمكنك المساومة عند الشراء في السوق.
-2482	妈妈在揉面包。	Mum is kneading bread.	أمّي تعجن الخبز.
+2482	她揉了揉眼睛。	She rubbed her eyes.	فركت عينيها.
 2483	请帮我削一个苹果。	Please peel an apple for me.	من فضلك قشّر لي تفّاحة.
 2484	奶奶在厨房里炸鱼。	Grandma is frying fish in the kitchen.	جدّتي تقلي السمك في المطبخ.
 2485	路上有冰，我滑倒了。	There was ice on the road and I slipped.	كان على الطريق جليد فانزلقت ووقعت.
@@ -3400,7 +3400,7 @@ rank	sentence	en	ar	names
 2499	把糖放进这个罐子里。	Put the sugar into this jar.	ضع السكّر في هذا المرطبان.
 2500	游泳对肌肉很好。	Swimming is good for the muscles.	السباحة مفيدة للعضلات.
 2501	警察没有找到证据。	The police didn't find any evidence.	لم تجد الشرطة أيّ دليل.
-2502	爷爷用斧头切木头。	Grandpa cuts wood with an axe.	جدّي يقطع الخشب بالفأس.
+2502	这把斧头很重。	This axe is very heavy.	هذه الفأس ثقيلة جدًا.
 2503	粮食都放在谷仓里。	All the grain is stored in the barn.	كلّ الحبوب في المخزن.
 2504	用扫帚打扫一下地。	Sweep the floor with the broom.	نظّف الأرض بالمكنسة.
 2505	画家在大画布上画画。	The painter paints on a large canvas.	يرسم الرسّام على قماش كبير.
@@ -3417,7 +3417,7 @@ rank	sentence	en	ar	names
 2516	他们正在数选票。	They are counting the ballots.	إنّهم يعدّون أوراق الاقتراع.
 2517	这个地方种大麦和小麦。	They grow barley and wheat here.	يزرعون الشعير والقمح هنا.
 2518	鸟用鸟嘴吃虫子。	The bird eats insects with its beak.	يأكل الطائر الحشرات بمنقاره.
-2519	暴风雪让路都关了。	The blizzard closed all the roads.	أغلقت العاصفة الثلجية كلّ الطرق.
+2519	暴风雪把路都封了。	The blizzard closed all the roads.	أغلقت العاصفة الثلجية كلّ الطرق.
 2520	一块大岩石在路中间。	A big rock is in the middle of the road.	صخرة كبيرة في وسط الطريق.
 2521	这些动物住在洞穴里。	These animals live in caves.	تعيش هذه الحيوانات في الكهوف.
 2522	多吃糖容易有蛀牙。	Eating lots of sugar easily causes tooth decay.	أكل السكّر الكثير يسبّب التسوّس بسهولة.
@@ -3489,7 +3489,7 @@ rank	sentence	en	ar	names
 2588	她打了他一个耳光。	She slapped him across the face.	صفعته على وجهه.
 2589	他拒绝了别人的贿赂。	He refused the bribe.	رفض الرشوة.
 2590	我的腿上有一块淤青。	I have a bruise on my leg.	على ساقي كدمة.
-2591	新鞋让我脚上有了水泡。	The new shoes gave me blisters on my feet.	سبّب لي الحذاء الجديد فقاعات في قدميّ.
+2591	新鞋让我脚上起了水泡。	The new shoes gave me blisters on my feet.	سبّب لي الحذاء الجديد فقاعات جلدية في قدميّ.
 2592	护士给我换了绷带。	The nurse changed my bandage.	غيّرت الممرّضة ضمادتي.
 2593	在手上擦点药膏。	Put some ointment on your hand.	ضع بعض المرهم على يدك.
 2594	孩子今天打了疫苗。	The child got a vaccine today.	تلقّى الطفل لقاحًا اليوم.
@@ -3618,7 +3618,7 @@ rank	sentence	en	ar	names
 2717	父母不应该纵容孩子。	Parents shouldn't indulge their children.	لا ينبغي للوالدين التساهل مع الأطفال.
 2718	我们商议了两个小时才决定。	We discussed it for two hours before deciding.	تشاورنا ساعتين قبل أن نقرّر.
 2719	小猫蜷缩在沙发上。	The kitten is curled up on the sofa.	القطّة الصغيرة متكوّرة على الأريكة.
-2720	他的衣服皱起来了。	His clothes have got wrinkled.	تجعّدت ملابسه.
+2720	他不高兴地皱起了鼻子。	He wrinkled his nose unhappily.	جعّد أنفه بانزعاج.
 2721	大雨以后，那座旧墙崩塌了。	After the heavy rain, the old wall collapsed.	بعد المطر الغزير انهار الجدار القديم.
 2722	政府想遏制空气污染。	The government wants to curb air pollution.	تريد الحكومة كبح تلوّث الهواء.
 2723	一根绳子在树上悬荡。	A rope is dangling from the tree.	حبل يتدلّى من الشجرة.
@@ -3651,7 +3651,7 @@ rank	sentence	en	ar	names
 2750	敌人侵占了这座城市。	The enemy occupied this city.	استولى العدوّ على هذه المدينة.
 2751	法律赋予我们自由。	The law gives us freedom.	يمنحنا القانون الحرّية.
 2752	面包的味道引诱我走进了店。	The smell of bread tempted me into the shop.	أغرتني رائحة الخبز بدخول المحلّ.
-2753	她委托邻居照顾小狗。	She asked her neighbour to look after the puppy.	أوكلت جارتها برعاية الجرو.
+2753	她委托邻居照顾小狗。	She asked her neighbour to look after the puppy.	أوكلت إلى جارتها رعاية الجرو.
 2754	我们要根除这种坏习惯。	We need to get rid of this bad habit completely.	يجب أن نستأصل هذه العادة السيّئة.
 2755	人们赞颂他的勇敢。	People praised his bravery.	مجّد الناس شجاعته.
 2756	他的决定开始动摇了。	His decision began to waver.	بدأ قراره يتزعزع.
@@ -3697,7 +3697,7 @@ rank	sentence	en	ar	names
 2796	手指上渗出了一点血。	A little blood oozed from the finger.	رشح قليل من الدم من الإصبع.
 2797	聪明的狐狸智胜了猎人。	The clever fox outwitted the hunter.	تفوّق الثعلب الذكي على الصيّاد بذكائه.
 2798	风慢慢平息了。	The wind slowly died down.	هدأت الريح ببطء.
-2799	她从小被娇养。	She was pampered from childhood.	دُلّلت منذ صغرها.
+2799	她从小就被家里娇养着。	She has been pampered by her family since childhood.	دلّلتها عائلتها منذ صغرها.
 2800	不要窥探别人的生活。	Don't pry into other people's lives.	لا تتجسّس على حياة الآخرين.
 2801	很多人在地震里丧生。	Many people lost their lives in the earthquake.	فقد كثيرون حياتهم في الزلزال.
 2802	别再纠缠我了。	Stop pestering me.	كفّ عن ملاحقتي.
@@ -3721,12 +3721,12 @@ rank	sentence	en	ar	names
 2820	面包烤焦了。	The bread got burnt.	احترق الخبز.
 2821	她用布擦拭桌子。	She wiped the table with a cloth.	مسحت الطاولة بقطعة قماش.
 2822	两个队在争夺冠军。	The two teams are competing for the title.	يتنافس الفريقان على البطولة.
-2823	老师仔细审查了我的作业。	The teacher examined my homework carefully.	دقّق المعلّم في واجبي بعناية.
+2823	政府仔细审查了这份报告。	The government carefully reviewed this report.	راجعت الحكومة هذا التقرير بدقّة.
 2824	他的脸上都是愤怒。	His face was full of anger.	كان وجهه مليئًا بالغضب.
 2825	有人在地铁里推搡我。	Someone shoved me on the underground.	دفعني أحدهم في المترو.
 2826	听到那个声音，她战栗了一下。	She shuddered when she heard that sound.	ارتعدت عندما سمعت ذلك الصوت.
 2827	他总是回避这个问题。	He always avoids this question.	يتجنّب دائمًا هذا السؤال.
-2828	用筛把米筛一下。	Sift the rice with a sieve.	انخل الأرزّ بالمنخل.
+2828	用筛子把米筛一下。	Sift the rice with a sieve.	انخل الأرزّ بالمنخل.
 2829	他诽谤了他的邻居。	He slandered his neighbour.	افترى على جاره.
 2830	飞机在地上滑行。	The plane is taxiing on the ground.	تنزلق الطائرة على الأرض.
 2831	爷爷老了，有点驼背。	Grandpa is old and a bit hunched.	جدّي عجوز ومحدودب قليلًا.
@@ -3750,7 +3750,7 @@ rank	sentence	en	ar	names
 2849	他骗取了老人的钱。	He swindled the old man out of his money.	احتال على العجوز وأخذ ماله.
 2850	不要辱骂别人。	Don't insult other people.	لا تشتم الآخرين.
 2851	我的心脏跳动得很快。	My heart is beating very fast.	قلبي ينبض بسرعة كبيرة.
-2852	大雪阻挠了我们的计划。	The heavy snow thwarted our plans.	أحبط الثلج الكثيف خططنا.
+2852	他们想阻挠我们的计划。	They want to obstruct our plans.	يريدون عرقلة خططنا.
 2853	工作了一天，他很劳累。	After a day's work he was exhausted.	بعد يوم عمل كان مرهقًا.
 2854	人们推翻了国王。	The people overthrew the king.	أطاح الناس بالملك.
 2855	不要践踏草地。	Don't trample on the grass.	لا تدُس على العشب.
@@ -3779,7 +3779,7 @@ rank	sentence	en	ar	names
 2878	她看起来很柔弱。	She looks very delicate.	تبدو رقيقة جدًا.
 2879	那个商人非常狡诈。	That merchant is very crafty.	ذلك التاجر مخادع جدًا.
 2880	他太抠门了，从来不给别人买东西。	He's too stingy, he never buys things for others.	إنّه بخيل جدًا ولا يشتري للآخرين أبدًا.
-2881	长时间工作让人倦怠。	Working long hours makes people weary.	العمل لساعات طويلة يسبّب الضجر.
+2881	长时间工作让人倦怠。	Working long hours makes people weary.	العمل لساعات طويلة يسبّب الإرهاق.
 2882	请大声读这个句子。	Please read this sentence aloud.	من فضلك اقرأ هذه الجملة بصوت عالٍ.
 2883	天气不好，故而比赛取消了。	The weather was bad, therefore the match was cancelled.	كان الطقس سيّئًا، لذلك أُلغيت المباراة.
 2884	他努力学习，从而进了大学。	He studied hard, thereby getting into university.	درس بجدّ، وبذلك دخل الجامعة.
@@ -3856,14 +3856,14 @@ rank	sentence	en	ar	names
 2955	邮递员每天早上来。	The postman comes every morning.	يأتي ساعي البريد كلّ صباح.
 2956	测量员在测量土地。	The surveyor is measuring the land.	يقيس المسّاح الأرض.
 2957	小贩在街上卖水果。	The vendor is selling fruit in the street.	يبيع البائع المتجوّل الفاكهة في الشارع.
-2958	油漆工把墙变白了。	The painter made the wall white.	جعل الدهّان الجدار أبيض.
+2958	油漆工在我家工作。	The painter is working at my house.	الدهّان يعمل في بيتي.
 2959	电工修好了灯。	The electrician fixed the light.	أصلح الكهربائي المصباح.
 2960	机修工修好了我的车。	The mechanic repaired my car.	أصلح الميكانيكي سيّارتي.
 2961	助产士帮助了那位妈妈。	The midwife helped that mother.	ساعدت القابلة تلك الأمّ.
 2962	保姆每天照顾孩子。	The nanny looks after the children every day.	ترعى المربّية الأطفال كلّ يوم.
 2963	比赛结束了，裁判很满意。	The match ended and the referee was satisfied.	انتهت المباراة وكان الحكم راضيًا.
 2964	我们队赢得了奖杯。	Our team won the trophy.	فاز فريقنا بالكأس.
-2965	他踢进了球门。	He kicked it into the goal.	ركلها إلى المرمى.
+2965	他把球踢进了球门。	He kicked the ball into the goal.	ركل الكرة إلى المرمى.
 2966	网球打到了球网。	The tennis ball hit the net.	أصابت كرة التنس الشبكة.
 2967	我需要一个新球拍。	I need a new racket.	أحتاج إلى مضرب جديد.
 2968	消防员很快来了。	The firefighters came quickly.	جاء رجال الإطفاء بسرعة.

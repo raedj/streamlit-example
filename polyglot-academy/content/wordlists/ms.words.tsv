@@ -19,7 +19,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 18	ms_w_akan	akan	adv	time	will	سوف				
 19	ms_w_sudah	sudah	adv	time	already	قد، بالفعل		dah		
 20	ms_w_sedang	sedang	adv	time	in the middle of (-ing)	يفعل الآن				
-21	ms_w_belum	belum	adv	time	not yet	لم بعد				
+21	ms_w_belum	belum	adv	time	not yet	ليس بعد؛ لم … بعد				
 22	ms_w_boleh	boleh	verb	function	can, may	يستطيع؛ يمكن				
 23	ms_w_mahu	mahu	verb	feelings	to want	يريد		nak, hendak		
 24	ms_w_perlu	perlu	verb	function	to need, must	يحتاج؛ يجب				ms_perlu
@@ -1292,7 +1292,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 1291	ms_w_biskut	biskut	noun	food	biscuit	بسكويت
 1292	ms_w_dahan	dahan	noun	nature	branch	غصن
 1293	ms_w_bata	bata	noun	home	brick	طوبة
-1294	ms_w_semak	semak	noun	nature	bush; to check (menyemak)	شجيرات؛ يراجع
+1294	ms_w_semak	semak	noun	nature	bush, undergrowth (menyemak: to check)	شجيرات، أحراش (menyemak: يراجع)
 1295	ms_w_butang	butang	noun	clothes	button	زرّ
 1296	ms_w_sangkar	sangkar	noun	animals	cage	قفص
 1297	ms_w_kalendar	kalendar	noun	time	calendar	تقويم
@@ -1318,7 +1318,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 1317	ms_w_keyakinan	keyakinan	noun	feelings	confidence	ثقة
 1318	ms_w_kapas	kapas	noun	clothes	cotton	قطن
 1319	ms_w_keberanian	keberanian	noun	feelings	courage	شجاعة
-1320	ms_w_anak_kapal	anak kapal	noun	travel	crew member	طاقم السفينة
+1320	ms_w_anak_kapal	anak kapal	noun	travel	crew member	بحّار، فرد من طاقم السفينة
 1321	ms_w_mata_wang	mata wang	noun	shopping	currency	عملة
 1322	ms_w_data	data	noun	work	data	بيانات
 1323	ms_w_dekad	dekad	noun	time	decade	عقد
@@ -1796,7 +1796,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 1795	ms_w_wayang_kulit	wayang kulit	noun	leisure	shadow puppet play	خيال الظلّ
 1796	ms_w_layang_layang	layang-layang	noun	leisure	kite	طائرة ورقية
 1797	ms_w_anak_patung	anak patung	noun	leisure	doll	دمية
-1798	ms_w_buaian	buaian	noun	leisure	swing, cradle	أرجوحة
+1798	ms_w_buaian	buaian	noun	leisure	swing, cradle	أرجوحة، مهد
 1799	ms_w_seruling	seruling	noun	leisure	flute	ناي
 1800	ms_w_irama	irama	noun	leisure	rhythm, melody	إيقاع
 1801	ms_w_kelip	kelip	verb	body	to blink, to flicker (berkelip)	يرمش، يومض
@@ -1878,7 +1878,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 1877	ms_w_piring	piring	noun	home	saucer, small plate	صحن صغير
 1878	ms_w_tudung_saji	tudung saji	noun	home	food cover	غطاء الطعام
 1879	ms_w_pasu	pasu	noun	home	flowerpot	أصيص
-1880	ms_w_jambangan	jambangan	noun	home	vase	مزهرية
+1880	ms_w_jambangan	jambangan	noun	home	bouquet; flower vase	باقة زهور؛ مزهرية
 1881	ms_w_suis	suis	noun	home	switch	مفتاح كهربائي
 1882	ms_w_soket	soket	noun	home	socket	مقبس
 1883	ms_w_penghawa_dingin	penghawa dingin	noun	home	air conditioner	مكيّف هواء
@@ -1988,7 +1988,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 1987	ms_w_pita	pita	noun	home	tape, ribbon	شريط
 1988	ms_w_kalkulator	kalkulator	noun	school	calculator	آلة حاسبة
 1989	ms_w_cemas	cemas	adj	feelings	anxious	قلق
-1990	ms_w_canggung	canggung	adj	people	awkward	أخرق
+1990	ms_w_canggung	canggung	adj	people	awkward	محرَج، غير مرتاح، أخرق
 1991	ms_w_waspada	waspada	adj	people	alert, wary	يقظ
 1992	ms_w_harian	harian	adj	time	daily	يومي
 1993	ms_w_pelupa	pelupa	adj	people	forgetful	كثير النسيان
@@ -2256,7 +2256,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2255	ms_w_lapik	lapik	noun	clothes	lining, mat	بطانة
 2256	ms_w_apron	apron	noun	clothes	apron	مريلة
 2257	ms_w_but	but	noun	clothes	boot	جزمة
-2258	ms_w_pergelangan	pergelangan	noun	body	wrist, ankle	معصم
+2258	ms_w_pergelangan	pergelangan	noun	body	wrist, ankle	معصم، كاحل
 2259	ms_w_pelipis	pelipis	noun	body	temple	صدغ
 2260	ms_w_tapak_tangan	tapak tangan	noun	body	palm	كفّ
 2261	ms_w_tahi_lalat	tahi lalat	noun	body	mole (skin)	شامة
@@ -2546,7 +2546,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2545	ms_w_air_peluh	air peluh	noun	body	sweat	عرق
 2546	ms_w_sedu_sedan	sedu-sedan	noun	body	sobbing	نحيب
 2547	ms_w_rahang	rahang	noun	body	jaw	فكّ
-2548	ms_w_kerutan	kerutan	noun	body	wrinkle	تجعّد
+2548	ms_w_kerutan	kerutan	noun	body	wrinkle	تجعيدة، تجاعيد
 2549	ms_w_bisul	bisul	noun	health	boil	دمّل
 2550	ms_w_ketiak	ketiak	noun	body	armpit	إبط
 2551	ms_w_pinggang	pinggang	noun	body	waist	خصر
@@ -2579,7 +2579,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2578	ms_w_terus_terang	terus terang	adv	function	frankly	بصراحة
 2579	ms_w_sekadar	sekadar	adv	function	merely	مجرّد
 2580	ms_w_namun	namun	adv	function	however	لكن
-2581	ms_w_manakala	manakala	adv	function	whereas	بينما
+2581	ms_w_manakala	manakala	conj	function	whereas	بينما
 2582	ms_w_perjanjian_damai	perjanjian damai	noun	society	peace treaty	معاهدة سلام
 2583	ms_w_parlimen	parlimen	noun	society	parliament	برلمان
 2584	ms_w_menteri	menteri	noun	society	minister	وزير
@@ -2694,7 +2694,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2693	ms_w_bidan	bidan	noun	people	midwife	قابلة
 2694	ms_w_pengasuh	pengasuh	noun	people	nanny, carer	مربّية
 2695	ms_w_pengakap	pengakap	noun	people	scout	كشّاف
-2696	ms_w_gelanggang	gelanggang	noun	leisure	court, arena	ساحة
+2696	ms_w_gelanggang	gelanggang	noun	leisure	court, arena	ملعب، حلبة
 2697	ms_w_pengadil	pengadil	noun	people	referee	حكم
 2698	ms_w_piala	piala	noun	leisure	cup, trophy	كأس
 2699	ms_w_wisel	wisel	noun	leisure	whistle	صفّارة
@@ -2752,7 +2752,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2751	ms_w_isi_semula	isi semula	verb	actions	to refill	يعيد الملء
 2752	ms_w_selongkar	selongkar	verb	actions	to rummage (menyelongkar)	ينبش
 2753	ms_w_gemersik	gemersik	verb	senses	to rustle	يحفّ
-2754	ms_w_melecur	melecur	verb	health	to be scalded	ينحرق
+2754	ms_w_melecur	melecur	verb	health	to be scalded	يُصاب بحرق (بالماء الساخن)
 2755	ms_w_bergegas	bergegas	verb	movement	to hurry	يسرع
 2756	ms_w_cebik	cebik	verb	people	to sneer (mencebik)	يمطّ شفتيه
 2757	ms_w_hangus	hangus	adj	nature	scorched	محروق
@@ -2761,7 +2761,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2760	ms_w_ayak	ayak	verb	food	to sift (mengayak)	ينخل
 2761	ms_w_fitnah	fitnah	verb	communication	to slander (memfitnah)	يفتري
 2762	ms_w_melayang	melayang	verb	movement	to glide, to float	يحلّق
-2763	ms_w_geram	geram	verb	animals	to growl, to be angry	يزمجر
+2763	ms_w_geram	geram	adj	animals	furious, angry (menggeram: to growl)	غاضب، مغتاظ (menggeram: يزمجر)
 2764	ms_w_bertengkar	bertengkar	verb	people	to squabble	يتشاجر
 2765	ms_w_membazir	membazir	verb	shopping	to waste	يبذّر
 2766	ms_w_kecilkan	kecilkan	verb	senses	to make smaller, to turn down (mengecilkan)	يصغّر
@@ -2809,7 +2809,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2808	ms_w_kawanan	kawanan	noun	animals	herd, flock	قطيع
 2809	ms_w_reban	reban	noun	animals	chicken coop	قنّ دجاج
 2810	ms_w_penyodok	penyodok	noun	work	shovel	مجرفة
-2811	ms_w_pengait	pengait	noun	work	hook, rake	خطّاف
+2811	ms_w_pengait	pengait	noun	work	hook, hooked pole	خطّاف
 2812	ms_w_pahat	pahat	noun	work	chisel	إزميل
 2813	ms_w_engsel	engsel	noun	home	hinge	مفصلة
 2814	ms_w_bilik_bawah_tanah	bilik bawah tanah	noun	home	basement	قبو
@@ -2897,7 +2897,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2896	ms_w_tumis	tumis	verb	food	to sauté (menumis)	يقلّب في الزيت
 2897	ms_w_kukus	kukus	verb	food	to steam (mengukus)	يطهو بالبخار
 2898	ms_w_bercambah	bercambah	verb	nature	to sprout	ينبت
-2899	ms_w_haus	haus	adj	nature	worn out, thirsty	بالٍ
+2899	ms_w_haus	haus	adj	nature	worn out, thirsty	بالٍ؛ عطشان
 2900	ms_w_muatkan	muatkan	verb	travel	to load (memuatkan)	يحمّل
 2901	ms_w_punggah	punggah	verb	travel	to unload (memunggah)	يفرغ الحمولة
 2902	ms_w_berlabuh	berlabuh	verb	travel	to anchor	يرسو
@@ -2951,7 +2951,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2950	ms_w_cerewet	cerewet	adj	people	fussy	صعب الإرضاء
 2951	ms_w_pemarah	pemarah	adj	people	bad-tempered	سريع الغضب
 2952	ms_w_tidak_sabar	tidak sabar	adj	feelings	impatient	نافد الصبر
-2953	ms_w_secara_tetap	secara tetap	adv	time	regularly	بانتظام
+2953	ms_w_secara_tetap	secara tetap	adv	time	permanently, on a fixed basis	بشكل دائم، بصفة ثابتة
 2954	ms_w_buat_sementara	buat sementara	adv	time	for the time being	مؤقّتًا
 2955	ms_w_langsung_tidak	langsung tidak	adv	function	not at all	أبدًا
 2956	ms_w_malah	malah	adv	function	in fact, even	بل

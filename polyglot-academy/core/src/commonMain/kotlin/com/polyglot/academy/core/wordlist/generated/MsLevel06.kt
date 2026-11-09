@@ -300,7 +300,7 @@ internal object MsLevel06 {
         "1795	ms_w_wayang_kulit	wayang kulit	noun	leisure	shadow puppet play	خيال الظلّ				",
         "1796	ms_w_layang_layang	layang-layang	noun	leisure	kite	طائرة ورقية				",
         "1797	ms_w_anak_patung	anak patung	noun	leisure	doll	دمية				",
-        "1798	ms_w_buaian	buaian	noun	leisure	swing, cradle	أرجوحة				",
+        "1798	ms_w_buaian	buaian	noun	leisure	swing, cradle	أرجوحة، مهد				",
         "1799	ms_w_seruling	seruling	noun	leisure	flute	ناي				",
         "1800	ms_w_irama	irama	noun	leisure	rhythm, melody	إيقاع				",
     )
@@ -356,7 +356,7 @@ internal object MsLevel06 {
         "1549	Bola itu berguling ke bawah meja.	The ball rolled under the table.	تدحرجت الكرة تحت الطاولة.	",
         "1550	Ibu bapa banyak berkorban untuk anak-anak.	Parents sacrifice a lot for their children.	يضحّي الآباء كثيرًا من أجل أبنائهم.	",
         "1551	Saya puas dengan kerja saya.	I'm satisfied with my work.	أنا راضٍ عن عملي.	",
-        "1552	Abang menjaringkan dua kali dalam perlawanan.	My brother scored twice in the match.	سجّل أخي مرّتين في المباراة.	",
+        "1552	Ikan itu masuk ke dalam jaring.	The fish went into the net.	دخلت السمكة في الشبكة.	",
         "1553	Budak itu menggigil kerana sejuk.	The child is shivering with cold.	يرتجف الطفل من البرد.	",
         "1554	Rendam kacang dalam air semalaman.	Soak the beans in water overnight.	انقع الفول في الماء طوال الليل.	",
         "1555	Dia menyembur air pada bunga.	She sprayed water on the flowers.	رشّت الماء على الزهور.	",

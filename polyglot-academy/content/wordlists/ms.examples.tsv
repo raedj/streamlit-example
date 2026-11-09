@@ -240,7 +240,7 @@ rank	sentence	en	ar	names
 120	Makanan di rumah sudah habis.	The food at home has run out.	نفد الطعام في البيت.	
 120	Kerja saya sudah habis.	My work is finished.	انتهى عملي.	
 121	Ibu beri saya hadiah.	Mum gave me a present.	أعطتني أمي هدية.	
-121	Tolong bagi saya air.	Please give me some water.	أعطني ماءً من فضلك.	
+121	Tolong beri saya air.	Please give me some water.	أعطني ماءً من فضلك.	
 122	Sila ambil buku ini.	Please take this book.	خذ هذا الكتاب من فضلك.	
 122	Saya mengambil banyak gambar.	I took a lot of photos.	التقطت صورًا كثيرة.	
 123	Tolong bawa beg awak.	Please bring your bag.	أحضر حقيبتك من فضلك.	
@@ -288,7 +288,7 @@ rank	sentence	en	ar	names
 144	Boleh saya guna telefon awak?	May I use your phone?	هل يمكنني استخدام هاتفك؟	
 144	Saya menggunakan komputer di pejabat.	I use a computer at the office.	أستخدم الحاسوب في المكتب.	
 145	Saya dapat hadiah daripada kawan.	I got a present from a friend.	تلقيت هدية من صديق.	
-145	Boleh saya dapat air?	Could I get some water?	هل يمكنني الحصول على ماء؟	
+145	Dia dapat kerja baru.	She got a new job.	حصلت على عمل جديد.	
 146	Cuba makanan ini, sedap!	Try this food, it's tasty!	جرّب هذا الطعام، إنه لذيذ!	
 146	Saya akan cuba datang esok.	I'll try to come tomorrow.	سأحاول أن آتي غدًا.	
 147	Saya membantu ibu di dapur.	I help Mum in the kitchen.	أساعد أمي في المطبخ.	
@@ -374,7 +374,7 @@ rank	sentence	en	ar	names
 187	Ibu saya seorang cikgu.	My mother is a teacher.	أمي معلمة.	
 187	Mak, saya sudah balik!	Mum, I'm home!	ماما، لقد عدت!	
 188	Bapa saya seorang doktor.	My father is a doctor.	أبي طبيب.	
-188	Ayah sedang membaca di bilik.	Dad is reading in his room.	أبي يقرأ في غرفته.	
+188	Bapa sedang membaca di bilik.	Dad is reading in his room.	أبي يقرأ في غرفته.	
 189	Abang saya tinggal di Kuala Lumpur.	My older brother lives in Kuala Lumpur.	أخي الأكبر يسكن في كوالالمبور.	Kuala Lumpur
 189	Abang saya bekerja di hotel.	My older brother works at a hotel.	أخي الأكبر يعمل في فندق.	
 190	Kakak saya pelajar di bandar.	My older sister is a student in the city.	أختي الكبرى طالبة في المدينة.	
@@ -606,7 +606,7 @@ rank	sentence	en	ar	names
 303	Bayi itu menangis sepanjang malam.	The baby cried all night.	بكى الرضيع طوال الليل.
 303	Adik saya menangis kerana dia lapar.	My little brother cried because he was hungry.	بكى أخي الصغير لأنه جائع.
 304	Kakak saya menyanyi dengan sangat baik.	My sister sings very well.	أختي تغنّي جيدًا جدًا.
-304	Kami menyanyi bersama di hari jadi itu.	We sang together at the birthday.	غنّينا معًا في عيد الميلاد.
+304	Kami menyanyi bersama di majlis hari jadi itu.	We sang together at the birthday party.	غنّينا معًا في حفلة عيد الميلاد.
 305	Semua orang menari di parti itu.	Everyone danced at the party.	رقص الجميع في الحفلة.
 305	Anak perempuan saya suka menari.	My daughter likes dancing.	ابنتي تحب الرقص.
 306	Burung-burung terbang di langit.	The birds are flying in the sky.	الطيور تطير في السماء.
@@ -789,7 +789,7 @@ rank	sentence	en	ar	names
 394	Lengan bapa sangat kuat.	Dad's arms are very strong.	ذراعا أبي قويتان جدًا.
 395	Kaki saya sakit selepas berjalan jauh.	My feet hurt after walking a long way.	تؤلمني قدماي بعد المشي طويلًا.
 395	Kasut ini kecil untuk kaki saya.	These shoes are small for my feet.	هذا الحذاء صغير على قدمي.
-396	Saya suka awak sepenuh hati.	I love you with all my heart.	أحبك من كل قلبي.
+396	Hati saya gembira hari ini.	My heart is happy today.	قلبي سعيد اليوم.
 396	Hati saya gembira hari ini.	My heart is happy today.	قلبي فرِح اليوم.
 397	Saya cuci gigi selepas makan.	I clean my teeth after eating.	أنظّف أسناني بعد الأكل.
 397	Gigi pertama bayi sudah keluar.	The baby's first tooth has come through.	ظهرت أول سنّ للرضيع.
@@ -820,7 +820,7 @@ rank	sentence	en	ar	names
 410	Saya letak buku dalam kotak besar.	I put the books in a big box.	وضعت الكتب في صندوق كبير.
 410	Kotak ini sangat berat.	This box is very heavy.	هذا الصندوق ثقيل جدًا.
 411	Tolong tutup lampu bilik.	Please turn off the room light.	من فضلك أطفئ ضوء الغرفة.
-411	Lampu di dapur tidak boleh buka.	The kitchen light won't turn on.	ضوء المطبخ لا يشتغل.
+411	Buka lampu di dapur.	Turn on the light in the kitchen.	أشعل الضوء في المطبخ.
 412	Bilik ini ada banyak cahaya.	This room has a lot of light.	في هذه الغرفة ضوء كثير.
 412	Cahaya matahari masuk dari tingkap.	Sunlight comes in through the window.	يدخل ضوء الشمس من النافذة.
 413	Letak pinggan di atas meja.	Put the plates on the table.	ضع الصحون على الطاولة.
@@ -948,9 +948,9 @@ rank	sentence	en	ar	names
 474	Saya cari seluar biru.	I'm looking for blue trousers.	أبحث عن بنطال أزرق.
 474	Seluar ini terlalu pendek.	These trousers are too short.	هذا البنطال قصير جدًا.
 475	Cuaca sejuk, pakai jaket awak.	It's cold, put on your jacket.	الجو بارد، البس سترتك.
-475	Saya lupa jaket dalam bas.	I left my jacket on the bus.	نسيت سترتي في الحافلة.
+475	Jaket saya tertinggal dalam bas.	I left my jacket on the bus.	نسيت سترتي في الحافلة.
 476	Datuk pakai cermin mata untuk membaca.	Grandad wears glasses for reading.	يلبس جدي نظارة للقراءة.
-476	Saya lupa cermin mata di rumah.	I left my glasses at home.	نسيت نظارتي في البيت.
+476	Cermin mata saya tertinggal di rumah.	I left my glasses at home.	نسيت نظارتي في البيت.
 477	Pakai topi kalau cuaca panas.	Wear a hat if it's hot.	البس قبعة إذا كان الجو حارًا.
 477	Topi ini sangat cantik.	This hat is very pretty.	هذه القبعة جميلة جدًا.
 478	Ada saiz lebih besar?	Is there a bigger size?	هل يوجد مقاس أكبر؟
@@ -1159,12 +1159,12 @@ rank	sentence	en	ar	names
 579	Tidak boleh melancong tanpa pasport.	You can't travel without a passport.	لا يمكن السفر بدون جواز سفر.
 580	Selain bahasa Melayu, saya belajar bahasa Arab.	Besides Malay, I'm learning Arabic.	إضافة إلى الملايوية أتعلّم العربية.	Melayu, Arab
 580	Selain awak, semua orang sudah datang.	Apart from you, everyone has come.	جاء الجميع ما عداك.
-581	Taman itu antara bank dan hotel.	The park is between the bank and the hotel.	الحديقة بين المصرف والفندق.
-581	Duduk antara saya dan abang.	Sit between me and my brother.	اجلس بيني وبين أخي.
+581	Taman itu di antara bank dan hotel.	The park is between the bank and the hotel.	الحديقة بين المصرف والفندق.
+581	Duduk di antara saya dan abang.	Sit between me and my brother.	اجلس بيني وبين أخي.
 582	Saya ada beberapa soalan.	I have a few questions.	عندي بضعة أسئلة.
 582	Saya akan pulang selepas beberapa hari.	I'll come home after a few days.	سأعود بعد بضعة أيام.
 583	Kedua-dua abang saya doktor.	Both my brothers are doctors.	أخواي كلاهما طبيب.
-583	Kedua-dua kami pergi ke sekolah bersama.	Both of us go to school together.	نذهب كلانا إلى المدرسة معًا.
+583	Kedua-dua kakak saya suka membaca.	Both my older sisters like reading.	أختاي الكبيرتان كلتاهما تحبّان القراءة.
 584	Sesiapa boleh datang ke parti.	Anyone can come to the party.	يمكن لأيّ شخص أن يأتي إلى الحفلة.
 584	Ada sesiapa di rumah?	Is anyone at home?	هل يوجد أحد في البيت؟
 585	Tiada orang di rumah sekarang.	There's nobody at home now.	لا يوجد أحد في البيت الآن.
@@ -1182,7 +1182,7 @@ rank	sentence	en	ar	names
 591	Helo, apa khabar awak?	Hello, how are you?	مرحبًا، كيف حالك؟
 591	Helo, boleh saya bercakap dengan Ali?	Hello, may I speak to Ali?	مرحبًا، هل يمكنني التحدث مع علي؟	Ali
 592	Saya mimpi pelik semalam.	I had a strange dream last night.	رأيت حلمًا غريبًا أمس.
-592	Apa mimpi awak untuk masa depan?	What's your dream for the future?	ما حلمك للمستقبل؟
+592	Mimpi itu sangat menakutkan.	That dream was very scary.	كان ذلك الحلم مخيفًا جدًا.
 593	Bawa payung, nanti hujan.	Take an umbrella; it'll rain later.	خذ مظلّة، ستمطر لاحقًا.
 593	Saya lupa payung di pejabat.	I left my umbrella at the office.	نسيت مظلتي في المكتب.
 594	Kami menonton televisyen pada waktu malam.	We watch television at night.	نشاهد التلفاز في الليل.
@@ -1307,7 +1307,7 @@ rank	sentence	en	ar	names
 653	Kami perlu daftar keluar sebelum pukul dua belas.	We need to check out before twelve o'clock.	علينا تسجيل المغادرة قبل الساعة الثانية عشرة.
 654	Bas ke Melaka bertolak pukul lapan pagi.	The bus to Melaka departs at eight in the morning.	تغادر الحافلة إلى ملقا الساعة الثامنة صباحًا.	Melaka
 654	Bila kapal terbang awak bertolak esok?	When does your plane leave tomorrow?	متى تغادر طائرتك غدًا؟
-655	Sekolah baru bermula pada bulan Januari.	The new school year starts in January.	يبدأ العام الدراسي الجديد في يناير.
+655	Tahun baru bermula pada bulan Januari.	The new year starts in January.	تبدأ السنة الجديدة في يناير.
 655	Cuaca di sini sejuk pada bulan Januari.	The weather here is cold in January.	الطقس هنا بارد في يناير.
 656	Hari jadi abang saya dalam bulan Februari.	My brother's birthday is in February.	عيد ميلاد أخي في فبراير.
 656	Bulan Februari hanya ada dua puluh lapan hari.	February only has twenty-eight days.	شهر فبراير فيه ثمانية وعشرون يومًا فقط.
@@ -1430,7 +1430,7 @@ rank	sentence	en	ar	names
 715	Saya bawa sandwic ayam ke sekolah.	I take a chicken sandwich to school.	آخذ شطيرة دجاج إلى المدرسة.
 715	Boleh saya dapat sandwic dan kopi?	Can I have a sandwich and a coffee?	هل يمكنني الحصول على شطيرة وقهوة؟
 716	Saya mahu jus limau dengan sedikit gula.	I want lime juice with a little sugar.	أريد عصير ليمون بقليل من السكّر.
-716	Tambah sedikit limau dalam ikan itu.	Add a little lime to that fish.	أضف قليلًا من الليمون إلى ذلك السمك.
+716	Tambah sedikit limau pada ikan itu.	Add a little lime to that fish.	أضف قليلًا من الليمون إلى ذلك السمك.
 717	Saya bawa sebotol air ke sekolah.	I take a bottle of water to school.	آخذ زجاجة ماء إلى المدرسة.
 717	Botol susu bayi ada di atas meja.	The baby's milk bottle is on the table.	زجاجة حليب الطفل على الطاولة.
 718	Apa hidangan untuk makan malam ini?	What is the dish for dinner tonight?	ما الطبق للعشاء الليلة؟
@@ -1579,7 +1579,7 @@ rank	sentence	en	ar	names
 789	Saya lupa bawa tuala ke kolam renang.	I forgot to bring a towel to the pool.	نسيت أن أحضر منشفة إلى المسبح.
 790	Saya perlu berus gigi yang baru.	I need a new toothbrush.	أحتاج إلى فرشاة أسنان جديدة.
 790	Dia mencuci kasut dengan berus kecil.	He cleaned his shoes with a small brush.	نظّف حذاءه بفرشاة صغيرة.
-791	Di mana sikat rambut saya?	Where is my hairbrush?	أين مشطي؟
+791	Di mana sikat rambut saya?	Where is my comb?	أين مشطي؟
 791	Ibu menyikat rambut adik setiap pagi.	Mum combs my little sister's hair every morning.	تمشّط أمي شعر أختي الصغيرة كل صباح.
 792	Penyapu itu ada di belakang pintu dapur.	The broom is behind the kitchen door.	المكنسة خلف باب المطبخ.
 792	Tolong ambil penyapu dan bersihkan lantai.	Please take the broom and clean the floor.	من فضلك خذ المكنسة ونظّف الأرض.
@@ -1692,7 +1692,7 @@ rank	sentence	en	ar	names
 846	Saya siram bunga di taman setiap pagi.	I water the flowers in the garden every morning.	أسقي الزهور في الحديقة كل صباح.
 846	Tolong siram pokok semasa saya bercuti.	Please water the plants while I'm on holiday.	من فضلك اسقِ النباتات أثناء عطلتي.
 847	Tolong lipat baju dan letak dalam almari.	Please fold the clothes and put them in the wardrobe.	من فضلك اطوِ الملابس وضعها في الخزانة.
-847	Dia melipat surat itu dan masukkan ke beg.	He folded the letter and put it in his bag.	طوى الرسالة ووضعها في حقيبته.
+847	Dia melipat surat itu dan memasukkannya ke dalam beg.	He folded the letter and put it in his bag.	طوى الرسالة ووضعها في حقيبته.
 848	Ibu menjemur baju di luar rumah.	Mum hangs the clothes out to dry outside.	تنشر أمي الملابس خارج البيت.
 848	Ibu tidak menjemur baju kerana hujan.	Mum didn't hang out the washing because of the rain.	لم تنشر أمي الغسيل بسبب المطر.
 849	Saya suka makan ayam goreng dengan nasi.	I like eating fried chicken with rice.	أحب أكل الدجاج المقلي مع الأرز.
@@ -1714,7 +1714,7 @@ rank	sentence	en	ar	names
 857	Budak itu menyentuh gambar yang masih basah.	The child touched the picture that was still wet.	لمس الطفل الصورة التي ما زالت مبلّلة.
 857	Cerita dia sangat menyentuh hati saya.	His story really touched my heart.	لمست قصته قلبي كثيرًا.
 858	Kucing itu bersembunyi di bawah katil.	The cat hid under the bed.	اختبأت القطة تحت السرير.
-858	Budak-budak bermain sembunyi di taman.	The children are playing hide-and-seek in the park.	يلعب الأطفال الغمّيضة في الحديقة.
+858	Budak-budak bermain sembunyi-sembunyi di taman.	The children are playing hide-and-seek in the park.	يلعب الأطفال الغمّيضة في الحديقة.
 859	Mereka membina sekolah baru di kampung kami.	They are building a new school in our village.	يبنون مدرسة جديدة في قريتنا.
 859	Datuk membina rumah ini sendiri.	Grandad built this house himself.	بنى جدّي هذا البيت بنفسه.
 860	Kenapa awak tidak balas mesej saya?	Why didn't you reply to my message?	لماذا لم تردّ على رسالتي؟
@@ -1755,7 +1755,7 @@ rank	sentence	en	ar	names
 877	Kampung itu dekat dengan sempadan negara.	That village is near the country's border.	تلك القرية قريبة من حدود البلد.
 878	Kereta api masuk ke dalam terowong panjang.	The train went into a long tunnel.	دخل القطار في نفق طويل.
 878	Ada terowong baru di bawah sungai itu.	There is a new tunnel under that river.	هناك نفق جديد تحت ذلك النهر.
-879	Syarikat itu ada duit berbilion.	That company has billions of money.	لدى تلك الشركة مليارات من المال.
+879	Syarikat itu ada duit berbilion.	That company has billions.	لدى تلك الشركة المليارات.
 879	Ada kira-kira lapan bilion orang di dunia.	There are about eight billion people in the world.	يوجد في العالم نحو ثمانية مليارات إنسان.
 880	Anjing itu menggali tanah di taman.	The dog is digging in the soil in the garden.	يحفر الكلب التراب في الحديقة.
 880	Pekerja itu menggali tanah di tepi jalan.	The workers dug the ground by the road.	حفر العمال الأرض على جانب الطريق.
@@ -1818,7 +1818,7 @@ rank	sentence	en	ar	names
 917	Cuaca sejuk membunuh semua bunga di taman.	The cold weather killed all the flowers in the garden.	قتل الطقس البارد كل الزهور في الحديقة.
 918	Kapal terbang akan mendarat dalam sepuluh minit.	The plane will land in ten minutes.	ستهبط الطائرة بعد عشر دقائق.
 919	Kapal terbang kami berlepas pukul enam pagi.	Our plane takes off at six in the morning.	تقلع طائرتنا في السادسة صباحًا.
-920	Kakak saya memimpin pasukan bola sekolah.	My sister leads the school ball team.	تقود أختي فريق الكرة في المدرسة.
+920	Kakak saya memimpin pasukan bola sepak sekolah.	My sister leads the school football team.	تقود أختي فريق كرة القدم في المدرسة.
 921	Dia berpura-pura sakit supaya tidak pergi sekolah.	He pretended to be sick so he wouldn't go to school.	تظاهر بالمرض كي لا يذهب إلى المدرسة.
 922	Kilang ini menghasilkan kereta kecil.	This factory produces small cars.	ينتج هذا المصنع سيارات صغيرة.
 923	Saya merakam lagu itu dengan telefon saya.	I recorded that song with my phone.	سجّلت تلك الأغنية بهاتفي.
@@ -1842,7 +1842,7 @@ rank	sentence	en	ar	names
 941	Api memusnahkan tiga buah rumah di kampung itu.	The fire destroyed three houses in that village.	دمّرت النار ثلاثة بيوت في تلك القرية.
 942	Saya perlu cas telefon saya sekarang.	I need to charge my phone now.	أحتاج أن أشحن هاتفي الآن.
 943	Syarikat itu mengupah sepuluh pekerja baru.	The company hired ten new workers.	وظّفت الشركة عشرة عمّال جدد.
-944	Kawan saya mendesak untuk membayar bil itu.	My friend insisted on paying the bill.	أصرّ صديقي على دفع الفاتورة.
+944	Kawan saya mendesak saya membayar bil itu.	My friend pressed me to pay the bill.	ألحّ عليّ صديقي أن أدفع الفاتورة.
 945	Kami mengatur parti besar untuk nenek.	We arranged a big party for Grandma.	رتّبنا حفلة كبيرة لجدتي.
 946	Datuk suka memburu di dalam hutan.	Grandad likes hunting in the forest.	يحب جدّي الصيد في الغابة.
 947	Saya sangat berminat dengan sejarah.	I'm very interested in history.	أنا مهتمّ جدًا بالتاريخ.
@@ -1886,7 +1886,7 @@ rank	sentence	en	ar	names
 985	Berapa jarak dari sini ke lapangan terbang?	How far is it from here to the airport?	ما المسافة من هنا إلى المطار؟
 986	Pisau ada di dalam laci dapur.	The knives are in the kitchen drawer.	السكاكين في درج المطبخ.
 987	Budak-budak memberi roti kepada itik di tasik.	The children give bread to the ducks at the lake.	يعطي الأطفال الخبز للبطّ في البحيرة.
-988	Pelajar itu membuat banyak usaha untuk peperiksaan.	That student made a lot of effort for the exam.	بذل ذلك الطالب جهدًا كبيرًا للامتحان.
+988	Pelajar itu berusaha keras untuk peperiksaan.	That student made a lot of effort for the exam.	بذل ذلك الطالب جهدًا كبيرًا للامتحان.
 989	Kucing dan anjing tidak selalu musuh.	Cats and dogs aren't always enemies.	القطط والكلاب ليست أعداء دائمًا.
 990	Enjin kereta itu tidak hidup pagi ini.	The car's engine didn't start this morning.	لم يشتغل محرّك السيارة هذا الصباح.
 991	Ada pameran gambar di muzium bulan ini.	There's a photo exhibition at the museum this month.	في المتحف معرض صور هذا الشهر.
@@ -1907,13 +1907,13 @@ rank	sentence	en	ar	names
 1006	Berapa ketinggian bangunan itu?	What is the height of that building?	ما ارتفاع ذلك المبنى؟
 1007	Bagi anak saya, bapanya ialah seorang wira.	For my son, his father is a hero.	بالنسبة لابني، أبوه بطل.
 1008	Ada lubang besar dalam stoking saya.	There's a big hole in my sock.	في جوربي ثقب كبير.
-1009	Dia tidak datang ke sekolah kerana penyakit.	He didn't come to school because of illness.	لم يأتِ إلى المدرسة بسبب المرض.
+1009	Penyakit ini tidak berbahaya.	This illness is not dangerous.	هذا المرض ليس خطيرًا.
 1010	Industri kereta penting di negeri ini.	The car industry is important in this state.	صناعة السيارات مهمّة في هذه الولاية.
 1011	Luka di kaki dia tidak serius.	The wound on his leg isn't serious.	الجرح في رجله ليس خطيرًا.
 1012	Ada banyak serangga di taman pada musim panas.	There are many insects in the garden in the hot season.	هناك حشرات كثيرة في الحديقة في الموسم الحار.
 1013	Saya ada temu duga kerja esok pagi.	I have a job interview tomorrow morning.	عندي مقابلة عمل صباح الغد.
 1014	Terima kasih atas jemputan ke parti kahwin awak.	Thank you for the invitation to your wedding party.	شكرًا على الدعوة إلى حفلة زفافك.
-1015	Bapa selalu bercerita jenaka yang lucu.	Dad always tells funny jokes.	يحكي أبي دائمًا نكاتًا مضحكة.
+1015	Bapa selalu membuat jenaka yang lucu.	Dad always tells funny jokes.	يحكي أبي دائمًا نكاتًا مضحكة.
 1016	Permaisuri itu tinggal di istana yang besar.	The queen lives in a big palace.	تعيش الملكة في قصر كبير.
 1017	Dia pemimpin yang baik untuk pasukan kami.	She's a good leader for our team.	إنها قائدة جيدة لفريقنا.
 1018	Apa tahap bahasa awak sekarang?	What's your language level now?	ما مستواك في اللغة الآن؟
@@ -2063,7 +2063,7 @@ rank	sentence	en	ar	names
 1162	Pelajar itu tinggal di asrama universiti.	That student lives in the university hostel.	يسكن ذلك الطالب في سكن الجامعة.
 1163	Kami makan tengah hari di kantin sekolah.	We eat lunch in the school canteen.	نتناول الغداء في مقصف المدرسة.
 1164	Parti itu diadakan di dewan besar.	The party was held in the big hall.	أُقيمت الحفلة في القاعة الكبيرة.
-1165	Pelajar membuat ujian sains di makmal.	The students do science tests in the lab.	يجري الطلاب تجارب العلوم في المختبر.
+1165	Pelajar belajar sains di makmal.	The students study science in the lab.	يدرس الطلاب العلوم في المختبر.
 1166	Saya pergi ke pejabat pos untuk hantar surat.	I went to the post office to send a letter.	ذهبت إلى مكتب البريد لإرسال رسالة.
 1167	Kami pergi ke balai polis selepas kecurian itu.	We went to the police station after the theft.	ذهبنا إلى مركز الشرطة بعد السرقة.
 1168	Kapal besar itu tiba di pelabuhan pagi ini.	That big ship arrived at the port this morning.	وصلت تلك السفينة الكبيرة إلى الميناء هذا الصباح.
@@ -2294,7 +2294,7 @@ rank	sentence	en	ar	names
 1393	Kami bersyukur kerana semua orang selamat.	We're thankful that everyone is safe.	نحن شاكرون لأن الجميع بخير.
 1394	Saya rasa bersalah kerana lupa hari jadinya.	I feel guilty for forgetting her birthday.	أشعر بالذنب لأني نسيت عيد ميلادها.
 1395	Cara cikgu menerangkan sangat jelas.	The way the teacher explains is very clear.	طريقة شرح المعلّم واضحة جدًا.
-1396	Secara umum, saya bangun pukul tujuh.	Generally, I get up at seven.	أستيقظ عمومًا في السابعة.
+1396	Secara umum, cuaca di sini panas.	Generally, the weather here is hot.	الطقس هنا حارّ عمومًا.
 1397	Sejujurnya, saya tidak suka filem itu.	Honestly, I didn't like that film.	بصراحة، لم يعجبني ذلك الفيلم.
 1398	Pada mulanya saya takut, tetapi sekarang tidak.	At first I was afraid, but not now.	في البداية كنت خائفًا، لكن ليس الآن.
 1399	Buat masa ini semuanya baik.	For the time being everything is fine.	كل شيء بخير حاليًا.
@@ -2450,7 +2450,7 @@ rank	sentence	en	ar	names
 1549	Bola itu berguling ke bawah meja.	The ball rolled under the table.	تدحرجت الكرة تحت الطاولة.
 1550	Ibu bapa banyak berkorban untuk anak-anak.	Parents sacrifice a lot for their children.	يضحّي الآباء كثيرًا من أجل أبنائهم.
 1551	Saya puas dengan kerja saya.	I'm satisfied with my work.	أنا راضٍ عن عملي.
-1552	Abang menjaringkan dua kali dalam perlawanan.	My brother scored twice in the match.	سجّل أخي مرّتين في المباراة.
+1552	Ikan itu masuk ke dalam jaring.	The fish went into the net.	دخلت السمكة في الشبكة.
 1553	Budak itu menggigil kerana sejuk.	The child is shivering with cold.	يرتجف الطفل من البرد.
 1554	Rendam kacang dalam air semalaman.	Soak the beans in water overnight.	انقع الفول في الماء طوال الليل.
 1555	Dia menyembur air pada bunga.	She sprayed water on the flowers.	رشّت الماء على الزهور.
@@ -2700,7 +2700,7 @@ rank	sentence	en	ar	names
 1799	Dia pandai bermain seruling.	He is good at playing the flute.	يجيد العزف على الناي.
 1800	Saya suka irama lagu ini.	I like the rhythm of this song.	أحبّ إيقاع هذه الأغنية.
 1801	Lampu di jalan itu berkelip-kelip.	The street light keeps flickering.	يومض مصباح ذلك الشارع.
-1802	Bola itu melantun ke dinding.	The ball bounced off the wall.	ارتدّت الكرة عن الجدار.
+1802	Bola itu melantun dari dinding.	The ball bounced off the wall.	ارتدّت الكرة عن الجدار.
 1803	Raja mengurniakan pingat kepada askar itu.	The king awarded a medal to the soldier.	منح الملك الجندي ميدالية.
 1804	Budak itu tersengih apabila melihat hadiahnya.	The boy grinned when he saw his present.	ابتسم الولد ابتسامة عريضة عندما رأى هديّته.
 1805	Nenek suka mengait baju sejuk.	Grandma likes knitting jumpers.	تحبّ جدّتي حياكة الكنزات.
@@ -2733,7 +2733,7 @@ rank	sentence	en	ar	names
 1832	Ibu bapa mesti mendidik anak dengan baik.	Parents must bring up their children well.	يجب على الآباء تربية أبنائهم جيدًا.
 1833	Keluarganya berhijrah ke Australia.	His family migrated to Australia.	هاجرت عائلته إلى أستراليا.	Australia
 1834	Kesihatan datuk merosot minggu ini.	Grandpa's health declined this week.	تدهورت صحّة جدّي هذا الأسبوع.
-1835	Malaysia mengeksport minyak ke negara lain.	Malaysia exports oil to other countries.	تصدّر ماليزيا الزيت إلى بلدان أخرى.	Malaysia
+1835	Malaysia mengeksport minyak ke negara lain.	Malaysia exports oil to other countries.	تصدّر ماليزيا النفط إلى بلدان أخرى.	Malaysia
 1836	Syarikat melantik pengurus baru.	The company appointed a new manager.	عيّنت الشركة مديرًا جديدًا.
 1837	Kerajaan melaksanakan rancangan itu.	The government carried out the plan.	نفّذت الحكومة الخطّة.
 1838	Kita mesti berjimat dengan air.	We must be economical with water.	يجب أن نقتصد في الماء.
@@ -2778,7 +2778,7 @@ rank	sentence	en	ar	names
 1877	Letak cawan di atas piring.	Put the cup on the saucer.	ضع الفنجان على الصحن الصغير.
 1878	Tutup makanan dengan tudung saji.	Cover the food with the food cover.	غطّ الطعام بغطاء الطعام.
 1879	Ada bunga mawar dalam pasu itu.	There is a rose in that flowerpot.	في ذلك الأصيص وردة.
-1880	Letak bunga dalam jambangan di atas meja.	Put the flowers in the vase on the table.	ضع الزهور في المزهرية على الطاولة.
+1880	Letak jambangan bunga itu di atas meja.	Put the bouquet of flowers on the table.	ضع باقة الزهور على الطاولة.
 1881	Suis lampu di sebelah pintu.	The light switch is next to the door.	مفتاح الضوء بجانب الباب.
 1882	Di mana soket untuk cas telefon?	Where is the socket to charge the phone?	أين المقبس لشحن الهاتف؟
 1883	Penghawa dingin di bilik ini rosak.	The air conditioner in this room is broken.	مكيّف الهواء في هذه الغرفة معطّل.
@@ -2931,7 +2931,7 @@ rank	sentence	en	ar	names
 2030	Kerendahan hati ialah sifat yang baik.	Humility is a good trait.	التواضع صفة حسنة.
 2031	Kenakalan budak itu membuat cikgu marah.	The boy's mischief made the teacher angry.	أغضبت شقاوة الولد المعلّم.
 2032	Kami adakan majlis kesyukuran di rumah.	We held a thanksgiving gathering at home.	أقمنا حفل شكر في البيت.
-2033	Keluarga itu ada nasib malang.	That family has had bad luck.	لتلك العائلة سوء حظّ.
+2033	Keluarga itu bernasib malang.	That family has had bad luck.	لتلك العائلة سوء حظّ.
 2034	Bunyi dengkur ayah sangat kuat.	Dad's snoring is very loud.	صوت شخير أبي عالٍ جدًا.
 2035	Minum air untuk hentikan sedu.	Drink water to stop the hiccups.	اشرب الماء لإيقاف الحازوقة.
 2036	Ada bendera di atas tiang itu.	There is a flag on top of that pole.	على ذلك العمود علم.
@@ -3027,7 +3027,7 @@ rank	sentence	en	ar	names
 2126	Dia bermegah dengan kereta barunya.	He boasts about his new car.	يتباهى بسيّارته الجديدة.
 2127	Kucing itu mencekup seekor tikus.	The cat pounced on a mouse.	انقضّت القطّة على فأر.
 2128	Tolong picit bahu saya sedikit.	Please massage my shoulders a little.	من فضلك دلّك كتفيّ قليلًا.
-2129	Ayah mengikis warna lama dari dinding.	Dad scraped the old colour off the wall.	كشط أبي اللون القديم عن الجدار.
+2129	Ayah mengikis dinding itu.	Dad scraped the wall.	كشط أبي الجدار.
 2130	Datuk mengukir seekor burung daripada kayu.	Grandpa carved a bird out of wood.	نحت جدّي طائرًا من الخشب.
 2131	Bot kecil itu terbalik di sungai.	The small boat overturned in the river.	انقلب القارب الصغير في النهر.
 2132	Gigi adik saya sudah goyang.	My little sibling's tooth is already wobbly.	سنّ أخي الصغير تهتزّ.
@@ -3051,7 +3051,7 @@ rank	sentence	en	ar	names
 2150	Batu di sungai itu ditutupi lumut.	The stones in the river are covered with moss.	الحجارة في النهر مغطّاة بالطحالب.
 2151	Jari saya terkena duri bunga mawar.	My finger caught on a rose thorn.	أصابت شوكة الوردة إصبعي.
 2152	Burung itu membuat sarang daripada ranting.	The bird made a nest from twigs.	بنى الطائر عشًّا من الأغصان الصغيرة.
-2153	Sekuntum bunga mawar kembang pagi ini.	A rose bloomed this morning.	تفتّحت وردة هذا الصباح.
+2153	Kuntum mawar itu belum kembang.	That rosebud hasn't opened yet.	لم يتفتّح برعم الوردة بعد.
 2154	Kelopak bunga itu jatuh ditiup angin.	The flower's petals fell in the wind.	سقطت بتلات الزهرة بفعل الريح.
 2155	Kambing-kambing tidur di dalam kandang.	The goats sleep in the pen.	تنام الماعز في الحظيرة.
 2156	Gembala membawa lembu ke padang ragut.	The herdsman took the cows to the pasture.	أخذ الراعي الأبقار إلى المرعى.
@@ -3364,7 +3364,7 @@ rank	sentence	en	ar	names
 2463	Budak itu menyepak bola ke arah gawang.	The boy kicked the ball towards the goal.	ركل الولد الكرة نحو المرمى.
 2464	Nenek menumbuk cili dalam lesung.	Grandma pounds chillies in the mortar.	جدّتي تدقّ الفلفل في الهاون.
 2465	Gempa bumi menggegarkan seluruh bandar.	The earthquake shook the whole city.	هزّ الزلزال المدينة كلّها.
-2466	Ayah minyakkan rantai basikal saya.	Dad oiled my bicycle chain.	زيّت أبي سلسلة دراجتي.
+2466	Ayah meminyakkan rantai basikal saya.	Dad oiled my bicycle chain.	زيّت أبي سلسلة دراجتي.
 2467	Pegawai itu cop pasport saya.	That officer stamped my passport.	ختم ذلك الضابط جواز سفري.
 2468	Meja makan kami berbentuk bundar.	Our dining table is round.	طاولة طعامنا مستديرة.
 2469	Berenang baik untuk semua otot badan.	Swimming is good for all the body's muscles.	السباحة مفيدة لكلّ عضلات الجسم.
@@ -3432,7 +3432,7 @@ rank	sentence	en	ar	names
 2531	Suku kaum itu tinggal di dalam hutan.	That tribe lives in the forest.	تعيش تلك القبيلة في الغابة.
 2532	Kedua-dua negara bersetuju dengan gencatan senjata.	Both countries agreed to a ceasefire.	وافق البلدان على وقف إطلاق النار.
 2533	Kami melawat ladang anggur di Eropah.	We visited a vineyard in Europe.	زرنا كرم عنب في أوروبا.	Eropah
-2534	Gunung api itu meletup tahun lepas.	That volcano erupted last year.	ثار ذلك البركان العام الماضي.
+2534	Ada gunung api di pulau itu.	There is a volcano on that island.	يوجد بركان في تلك الجزيرة.
 2535	Datuk seorang yang penuh kebijaksanaan.	Grandpa is a person full of wisdom.	جدّي شخص مليء بالحكمة.
 2536	Ibu menjahit kain tampal pada seluar saya.	Mum sewed a patch onto my trousers.	خاطت أمّي رقعة على بنطالي.
 2537	Tamparan itu meninggalkan kesan merah.	That slap left a red mark.	تركت تلك الصفعة أثرًا أحمر.
@@ -3520,7 +3520,7 @@ rank	sentence	en	ar	names
 2619	Kedai itu ada jualan murah minggu ini.	That shop has a sale this week.	في ذلك المحلّ تنزيلات هذا الأسبوع.
 2620	Pembekal menghantar barang pagi ini.	The supplier delivered the goods this morning.	سلّم المورّد البضائع هذا الصباح.
 2621	Negara itu pengeluar minyak yang besar.	That country is a big oil producer.	ذلك البلد منتج كبير للنفط.
-2622	Negara kita import beras dari luar.	Our country imports rice from abroad.	يستورد بلدنا الأرزّ من الخارج.
+2622	Negara kita bergantung pada import beras.	Our country depends on rice imports.	يعتمد بلدنا على استيراد الأرزّ.
 2623	Pelabur asing datang ke negara ini.	Foreign investors are coming to this country.	يأتي المستثمرون الأجانب إلى هذا البلد.
 2624	Ayah membeli saham syarikat itu.	Dad bought shares in that company.	اشترى أبي أسهمًا في تلك الشركة.
 2625	Bank itu ada cawangan di bandar kami.	That bank has a branch in our town.	لذلك البنك فرع في مدينتنا.
@@ -3594,7 +3594,7 @@ rank	sentence	en	ar	names
 2693	Bidan kampung membantu ibu bersalin.	The village midwife helped the mother give birth.	ساعدت قابلة القرية الأمّ على الولادة.
 2694	Pengasuh menjaga bayi semasa ibu bekerja.	The nanny looks after the baby while Mum works.	ترعى المربّية الطفل أثناء عمل الأمّ.
 2695	Adik saya menyertai pengakap di sekolah.	My younger sibling joined the scouts at school.	انضمّ أخي الصغير إلى الكشّافة في المدرسة.
-2696	Mereka bermain badminton di gelanggang.	They play badminton on the court.	يلعبون الريشة في الساحة.
+2696	Mereka bermain badminton di gelanggang.	They play badminton on the court.	يلعبون الريشة في الملعب.
 2697	Pengadil meniup wisel untuk tamat perlawanan.	The referee blew the whistle to end the match.	نفخ الحكم في الصفّارة لإنهاء المباراة.
 2698	Pasukan kami memenangi piala.	Our team won the cup.	فاز فريقنا بالكأس.
 2699	Guru sukan meniup wisel dengan kuat.	The PE teacher blew the whistle loudly.	نفخ معلّم الرياضة في الصفّارة بقوّة.
@@ -3651,8 +3651,8 @@ rank	sentence	en	ar	names
 2750	Dua lelaki merompak kedai emas itu.	Two men robbed the gold shop.	سطا رجلان على محلّ الذهب.
 2751	Tolong isi semula botol air ini.	Please refill this water bottle.	من فضلك أعد ملء زجاجة الماء هذه.
 2752	Adik menyelongkar almari mencari mainannya.	My little brother rummaged in the cupboard for his toy.	نبش أخي الصغير الخزانة بحثًا عن لعبته.
-2753	Daun kering gemersik ditiup angin.	The dry leaves rustled in the wind.	حفّت الأوراق اليابسة في الريح.
-2754	Tangannya melecur terkena air panas.	His hand was scalded by hot water.	انحرقت يده بالماء الساخن.
+2753	Daun kering bergemersik ditiup angin.	The dry leaves rustled in the wind.	حفّت الأوراق اليابسة في الريح.
+2754	Tangannya melecur terkena air panas.	His hand was scalded by hot water.	أصيبت يده بحرق من الماء الساخن.
 2755	Dia bergegas ke stesen kerana sudah lewat.	He hurried to the station because he was late.	أسرع إلى المحطّة لأنّه تأخّر.
 2756	Dia mencebik apabila melihat makanan itu.	She pulled a face when she saw the food.	مطّت شفتيها حين رأت الطعام.
 2757	Nasi di dalam periuk sudah hangus.	The rice in the pot is burnt.	احترق الأرزّ في القدر.
@@ -3660,7 +3660,7 @@ rank	sentence	en	ar	names
 2759	Jauhi kawan yang suka bercakap bohong.	Keep away from friends who like to lie.	ابتعد عن الأصدقاء الذين يحبّون الكذب.
 2760	Ibu mengayak tepung sebelum membuat kek.	Mother sifts the flour before making a cake.	تنخل أمّي الطحين قبل صنع الكعكة.
 2761	Jangan memfitnah orang yang tidak bersalah.	Don't slander innocent people.	لا تفترِ على الأبرياء.
-2762	Daun-daun melayang jatuh ke tanah.	The leaves floated down to the ground.	تساقطت الأوراق محلّقة نحو الأرض.
+2762	Daun-daun melayang jatuh ke tanah.	The leaves floated down to the ground.	تساقطت الأوراق متطايرة نحو الأرض.
 2763	Anjing itu menggeram kepada orang asing.	The dog growled at the stranger.	زمجر الكلب على الغريب.
 2764	Adik-beradik itu selalu bertengkar tentang mainan.	Those siblings always squabble about toys.	يتشاجر هؤلاء الإخوة دائمًا على الألعاب.
 2765	Jangan membazir makanan di atas pinggan.	Don't waste food on your plate.	لا تبذّر الطعام في صحنك.
@@ -3699,7 +3699,7 @@ rank	sentence	en	ar	names
 2798	Kami bertolak awal, dengan itu kami tidak lewat.	We set off early, thus we were not late.	انطلقنا باكرًا، وبذلك لم نتأخّر.
 2799	Kami kerap pergi ke pantai pada hujung minggu.	We often go to the beach at weekends.	نذهب كثيرًا إلى الشاطئ في عطلة الأسبوع.
 2800	Glasier di gunung semakin cair.	The glaciers on the mountains are melting more and more.	الأنهار الجليدية في الجبال تذوب أكثر فأكثر.
-2801	Petir memukul pokok kelapa itu.	Lightning struck that coconut tree.	ضربت الصاعقة شجرة جوز الهند تلك.
+2801	Saya takut bunyi petir.	I'm scared of the sound of thunder.	أخاف من صوت الرعد.
 2802	Kami nampak komet di langit malam.	We saw a comet in the night sky.	رأينا مذنّبًا في سماء الليل.
 2803	Bulan bergerak dalam orbit mengelilingi bumi.	The moon moves in an orbit around the earth.	يتحرّك القمر في مدار حول الأرض.
 2804	Datuk mengajar saya nama buruj di langit.	Grandfather taught me the names of constellations in the sky.	علّمني جدّي أسماء الأبراج في السماء.
@@ -3750,7 +3750,7 @@ rank	sentence	en	ar	names
 2849	Saya terdengar bisikan dari bilik sebelah.	I heard a whisper from the next room.	سمعت همسًا من الغرفة المجاورة.
 2850	Kami memberi ucapan tahniah atas kejayaannya.	We congratulated him on his success.	هنّأناه على نجاحه.
 2851	Jiran datang untuk mengucapkan takziah.	The neighbours came to offer condolences.	جاء الجيران لتقديم التعازي.
-2852	Akad nikah diadakan di masjid pada pagi Jumaat.	The marriage contract was held at the mosque on Friday morning.	عُقد القران في المسجد صباح الجمعة.
+2852	Akad nikah diadakan di masjid pada pagi Jumaat.	The marriage solemnisation was held at the mosque on Friday morning.	عُقد القران في المسجد صباح الجمعة.
 2853	Datuk meninggalkan wasiat untuk cucunya.	Grandfather left a will for his grandchild.	ترك الجدّ وصيّة لحفيده.
 2854	Tertuduh menafikan semua tuduhan di mahkamah.	The defendant denied all the charges in court.	أنكر المتّهم كلّ التهم في المحكمة.
 2855	Lelaki itu dibebaskan dengan jaminan.	The man was released on bail.	أُطلق سراح الرجل بكفالة.
@@ -3758,7 +3758,7 @@ rank	sentence	en	ar	names
 2857	Majlis perbandaran membina taman yang baru.	The municipal council built a new park.	بنت البلدية حديقة جديدة.
 2858	Ketua kampung mendengar masalah orang kampung.	The village head listens to villagers' problems.	يستمع رئيس القرية إلى مشاكل أهل القرية.
 2859	Kapal itu menurunkan sauh di pelabuhan.	The ship lowered its anchor at the harbour.	أنزلت السفينة مرساتها في الميناء.
-2860	Kapten memegang kemudi kapal.	The captain held the ship's rudder.	أمسك القبطان دفّة السفينة.
+2860	Kapten memegang kemudi kapal.	The captain held the ship's helm.	أمسك القبطان دفّة السفينة.
 2861	Belok kiri di persimpangan itu.	Turn left at that junction.	انعطف يسارًا عند ذلك التقاطع.
 2862	Kain tenunan ini dibuat dengan tangan.	This woven cloth is made by hand.	هذا القماش المنسوج مصنوع باليد.
 2863	Kampung ini terkenal dengan tembikar.	This village is famous for pottery.	هذه القرية مشهورة بالفخّار.
@@ -3851,7 +3851,7 @@ rank	sentence	en	ar	names
 2950	Adik saya sangat cerewet tentang makanan.	My little brother is very fussy about food.	أخي الصغير صعب الإرضاء جدًا في الطعام.
 2951	Pemilik kedai itu seorang yang pemarah.	The owner of that shop is a bad-tempered person.	صاحب ذلك المحلّ سريع الغضب.
 2952	Kanak-kanak tidak sabar menunggu hari raya.	Children are impatient waiting for the festival.	الأطفال لا يطيقون انتظار العيد.
-2953	Dia bersukan secara tetap setiap pagi.	He does sport regularly every morning.	يمارس الرياضة بانتظام كلّ صباح.
+2953	Dia bekerja secara tetap di syarikat itu.	He works there on a permanent basis.	يعمل في تلك الشركة بشكل دائم.
 2954	Jalan ini ditutup buat sementara.	This road is closed for the time being.	هذا الطريق مغلق مؤقّتًا.
 2955	Saya langsung tidak faham soalan itu.	I did not understand that question at all.	لم أفهم ذلك السؤال أبدًا.
 2956	Dia tidak marah, malah dia ketawa.	He was not angry, in fact he laughed.	لم يغضب، بل ضحك.
@@ -3868,7 +3868,7 @@ rank	sentence	en	ar	names
 2967	Kemasyhuran penyanyi itu datang dengan cepat.	That singer's fame came quickly.	جاءت شهرة ذلك المغنّي بسرعة.
 2968	Dia naik pangkat dalam tentera.	He rose in rank in the army.	ارتقى في رتبته في الجيش.
 2969	Dia memohon jawatan guru di sekolah itu.	He applied for a teaching post at that school.	تقدّم لوظيفة معلّم في تلك المدرسة.
-2970	Putera raja itu sangat baik hati.	The king's prince is very kind-hearted.	أمير الملك طيّب القلب جدًا.
+2970	Putera raja itu sangat baik hati.	The prince is very kind-hearted.	الأمير طيّب القلب جدًا.
 2971	Puteri itu tinggal di istana besar.	The princess lived in a big palace.	عاشت الأميرة في قصر كبير.
 2972	Peperangan membawa banyak kesusahan.	War brings much hardship.	الحرب تجلب مشقّة كبيرة.
 2973	Pemburu itu melepaskan anak panah.	The hunter released an arrow.	أطلق الصيّاد سهمًا.

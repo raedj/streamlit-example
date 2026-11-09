@@ -1026,7 +1026,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 1025	en_w_employee	employee	noun	work	employee	موظّف	/ɪmˈplɔɪiː/
 1026	en_w_entrance	entrance	noun	places	entrance	مدخل	/ˈentrəns/
 1027	en_w_event	event	noun	leisure	event	حدث، فعالية	/ɪˈvent/
-1028	en_w_exercise	exercise	noun	health	exercise; to exercise	تمرين؛ يتمرّن	/ˈeksəsaɪz/
+1028	en_w_exercise	exercise	noun	health	exercise	تمرين، رياضة	/ˈeksəsaɪz/
 1029	en_w_exit	exit	noun	places	exit	مخرج	/ˈeksɪt/
 1030	en_w_factory	factory	noun	work	factory	مصنع	/ˈfæktri/	factories
 1031	en_w_fan	fan	noun	leisure	fan	مشجّع؛ مروحة	/fæn/
@@ -1278,12 +1278,12 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 1277	en_w_claim	claim	verb	communication	to claim	يدّعي، يطالب	/kleɪm/
 1278	en_w_clap	clap	verb	actions	to clap	يصفّق	/klæp/	clapped, clapping
 1279	en_w_combine	combine	verb	actions	to combine	يجمع بين	/kəmˈbaɪn/
-1280	en_w_comment	comment	verb	communication	to comment; a comment	يعلّق؛ تعليق	/ˈkɒment/
+1280	en_w_comment	comment	noun	communication	comment	تعليق	/ˈkɒment/
 1281	en_w_compete	compete	verb	leisure	to compete	يتنافس	/kəmˈpiːt/
 1282	en_w_contact	contact	verb	communication	to contact	يتواصل مع	/ˈkɒntækt/
 1283	en_w_convince	convince	verb	communication	to convince	يقنع	/kənˈvɪns/
 1284	en_w_cope	cope	verb	feelings	to cope	يتدبّر أمره	/kəʊp/
-1285	en_w_cure	cure	verb	health	to cure; a cure	يشفي؛ علاج	/kjʊə/
+1285	en_w_cure	cure	noun	health	cure (for an illness)	علاج، شفاء	/kjʊə/
 1286	en_w_dare	dare	verb	feelings	to dare	يجرؤ	/deə/
 1287	en_w_decorate	decorate	verb	home	to decorate	يزيّن	/ˈdekəreɪt/
 1288	en_w_defend	defend	verb	actions	to defend	يدافع	/dɪˈfend/
@@ -1339,7 +1339,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 1338	en_w_sail	sail	verb	travel	to sail	يبحر	/seɪl/
 1339	en_w_scratch	scratch	verb	actions	to scratch	يخدش، يحكّ	/skrætʃ/	scratches
 1340	en_w_select	select	verb	actions	to select	يختار	/sɪˈlekt/
-1341	en_w_separate	separate	verb	actions	to separate; separate (adj)	يفصل؛ منفصل	/ˈsepəreɪt/
+1341	en_w_separate	separate	verb	actions	to separate	يفصل	/ˈsepəreɪt/
 1342	en_w_settle	settle	verb	home	to settle	يستقرّ	/ˈsetl/
 1343	en_w_shave	shave	verb	body	to shave	يحلق	/ʃeɪv/
 1344	en_w_sigh	sigh	verb	feelings	to sigh	يتنهّد	/saɪ/
@@ -1373,7 +1373,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 1372	en_w_arrival	arrival	noun	travel	arrival	وصول	/əˈraɪvl/
 1373	en_w_assistant	assistant	noun	work	assistant	مساعد	/əˈsɪstənt/
 1374	en_w_atmosphere	atmosphere	noun	feelings	atmosphere	جوّ	/ˈætməsfɪə/
-1375	en_w_attempt	attempt	noun	actions	attempt; to attempt	محاولة؛ يحاول	/əˈtempt/
+1375	en_w_attempt	attempt	noun	actions	attempt	محاولة	/əˈtempt/
 1376	en_w_audience	audience	noun	leisure	audience	جمهور	/ˈɔːdiəns/
 1377	en_w_author	author	noun	leisure	author	مؤلّف	/ˈɔːθə/
 1378	en_w_average	average	noun	numbers	average	متوسّط	/ˈævərɪdʒ/
@@ -1591,7 +1591,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 1590	en_w_imitate	imitate	verb	actions	to imitate	يقلّد	/ˈɪmɪteɪt/
 1591	en_w_inherit	inherit	verb	family	to inherit	يرث	/ɪnˈherɪt/
 1592	en_w_inspire	inspire	verb	people	to inspire	يلهم	/ɪnˈspaɪə/
-1593	en_w_insult	insult	verb	communication	to insult; an insult	يهين؛ إهانة	/ɪnˈsʌlt/
+1593	en_w_insult	insult	verb	communication	to insult	يهين	/ɪnˈsʌlt/
 1594	en_w_intend	intend	verb	mind	to intend	ينوي	/ɪnˈtend/
 1595	en_w_kneel	kneel	verb	body	to kneel	يركع	/niːl/	knelt	irregular=yes
 1596	en_w_lack	lack	verb	function	to lack; lack	يفتقر؛ نقص	/læk/
@@ -1609,7 +1609,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 1608	en_w_predict	predict	verb	mind	to predict	يتنبّأ	/prɪˈdɪkt/
 1609	en_w_proceed	proceed	verb	movement	to proceed	يتابع	/prəˈsiːd/
 1610	en_w_pronounce	pronounce	verb	communication	to pronounce	ينطق	/prəˈnaʊns/
-1611	en_w_protest	protest	verb	people	to protest; a protest	يحتجّ؛ احتجاج	/prəˈtest/
+1611	en_w_protest	protest	verb	people	to protest	يحتجّ	/prəˈtest/
 1612	en_w_pursue	pursue	verb	movement	to pursue	يلاحق	/pəˈsjuː/
 1613	en_w_quote	quote	verb	communication	to quote; a quote	يقتبس؛ اقتباس	/kwəʊt/
 1614	en_w_recruit	recruit	verb	work	to recruit	يجنّد، يوظّف	/rɪˈkruːt/
@@ -1639,7 +1639,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 1638	en_w_suck	suck	verb	actions	to suck	يمصّ	/sʌk/
 1639	en_w_summarise	summarise	verb	school	to summarise	يلخّص	/ˈsʌməraɪz/
 1640	en_w_supply	supply	verb	work	to supply; supply	يزوّد؛ إمداد	/səˈplaɪ/	supplies, supplied
-1641	en_w_suspect	suspect	verb	mind	to suspect; a suspect	يشتبه؛ مشتبه به	/səˈspekt/
+1641	en_w_suspect	suspect	verb	mind	to suspect	يشتبه في، يظنّ	/səˈspekt/
 1642	en_w_swap	swap	verb	actions	to swap	يبادل	/swɒp/	swapped, swapping
 1643	en_w_swear	swear	verb	communication	to swear	يحلف؛ يشتم	/sweə/	swore, sworn	irregular=yes
 1644	en_w_swing	swing	verb	movement	to swing; a swing	يتأرجح؛ أرجوحة	/swɪŋ/	swung	irregular=yes
@@ -1647,9 +1647,9 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 1646	en_w_tidy	tidy	verb	home	to tidy; tidy (adj)	يرتّب؛ مرتّب	/ˈtaɪdi/	tidies, tidied
 1647	en_w_tolerate	tolerate	verb	people	to tolerate	يتحمّل	/ˈtɒləreɪt/
 1648	en_w_toss	toss	verb	actions	to toss	يرمي	/tɒs/	tosses
-1649	en_w_transfer	transfer	verb	work	to transfer; a transfer	ينقل؛ تحويل	/trænsˈfɜː/	transferred, transferring
+1649	en_w_transfer	transfer	verb	work	to transfer	ينقل، يحوّل	/trænsˈfɜː/	transferred, transferring
 1650	en_w_trap	trap	noun	actions	trap; to trap	فخّ؛ يوقع في فخّ	/træp/	trapped
-1651	en_w_trick	trick	noun	leisure	trick; to trick	خدعة؛ يخدع	/trɪk/
+1651	en_w_trick	trick	noun	leisure	trick	خدعة	/trɪk/
 1652	en_w_twist	twist	verb	actions	to twist	يلوي	/twɪst/
 1653	en_w_unlock	unlock	verb	home	to unlock	يفتح القفل	/ʌnˈlɒk/
 1654	en_w_urge	urge	verb	communication	to urge	يحثّ	/ɜːdʒ/
@@ -1842,7 +1842,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 1841	en_w_occupy	occupy	verb	places	to occupy	يشغل	/ˈɒkjupaɪ/	occupies, occupied
 1842	en_w_oppose	oppose	verb	people	to oppose	يعارض	/əˈpəʊz/
 1843	en_w_participate	participate	verb	leisure	to participate	يشارك	/pɑːˈtɪsɪpeɪt/
-1844	en_w_permit	permit	verb	people	to permit; a permit	يسمح؛ تصريح	/pəˈmɪt/	permitted, permitting
+1844	en_w_permit	permit	verb	people	to permit	يسمح	/pəˈmɪt/	permitted, permitting
 1845	en_w_possess	possess	verb	function	to possess	يمتلك	/pəˈzes/	possesses
 1846	en_w_promote	promote	verb	work	to promote	يرقّي، يروّج	/prəˈməʊt/
 1847	en_w_propose	propose	verb	communication	to propose	يقترح	/prəˈpəʊz/
@@ -1954,7 +1954,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 1953	en_w_genius	genius	noun	people	genius	عبقري	/ˈdʒiːniəs/
 1954	en_w_goat	goat	noun	animals	goat	عنزة	/ɡəʊt/
 1955	en_w_goods	goods	noun	shopping	goods	بضائع	/ɡʊdz/
-1956	en_w_graduate	graduate	noun	school	graduate; to graduate	خرّيج؛ يتخرّج	/ˈɡrædʒuət/
+1956	en_w_graduate	graduate	noun	school	graduate (a person with a degree)	خرّيج	/ˈɡrædʒuət/
 1957	en_w_grandchild	grandchild	noun	family	grandchild	حفيد	/ˈɡræntʃaɪld/	grandchildren
 1958	en_w_graph	graph	noun	school	graph	رسم بياني	/ɡrɑːf/
 1959	en_w_guarantee	guarantee	noun	shopping	guarantee	ضمان	/ˌɡærənˈtiː/
@@ -2185,7 +2185,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2184	en_w_devote	devote	verb	work	to devote	يكرّس	/dɪˈvəʊt/
 2185	en_w_diagnose	diagnose	verb	health	to diagnose	يشخّص	/ˈdaɪəɡnəʊz/
 2186	en_w_differ	differ	verb	function	to differ	يختلف	/ˈdɪfə/
-2187	en_w_disguise	disguise	verb	actions	to disguise	يتنكّر	/dɪsˈɡaɪz/
+2187	en_w_disguise	disguise	verb	actions	to disguise	يُخفي، يموّه (وdisguise oneself: يتنكّر)	/dɪsˈɡaɪz/
 2188	en_w_distract	distract	verb	mind	to distract	يشتّت الانتباه	/dɪˈstrækt/
 2189	en_w_distribute	distribute	verb	work	to distribute	يوزّع	/dɪˈstrɪbjuːt/
 2190	en_w_dominate	dominate	verb	function	to dominate	يسيطر	/ˈdɒmɪneɪt/
@@ -2414,7 +2414,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2413	en_w_summon	summon	verb	people	to summon	يستدعي	/ˈsʌmən/
 2414	en_w_thrive	thrive	verb	nature	to thrive	يزدهر	/θraɪv/
 2415	en_w_violate	violate	verb	people	to violate	ينتهك	/ˈvaɪəleɪt/
-2416	en_w_deposit	deposit	verb	shopping	to deposit; a deposit	يودع؛ عربون	/dɪˈpɒzɪt/
+2416	en_w_deposit	deposit	verb	shopping	to deposit	يودع	/dɪˈpɒzɪt/
 2417	en_w_preserve	preserve	verb	nature	to preserve	يحفظ	/prɪˈzɜːv/
 2418	en_w_unite	unite	verb	people	to unite	يوحّد	/juˈnaɪt/
 2419	en_w_capacity	capacity	noun	numbers	capacity	سعة، قدرة	/kəˈpæsəti/
@@ -2480,7 +2480,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2479	en_w_confine	confine	verb	actions	to confine	يحصر	/kənˈfaɪn/
 2480	en_w_contaminate	contaminate	verb	nature	to contaminate	يلوّث	/kənˈtæmɪneɪt/
 2481	en_w_contemplate	contemplate	verb	mind	to contemplate	يتأمّل	/ˈkɒntəmpleɪt/
-2482	en_w_convict	convict	verb	society	to convict; a convict	يدين؛ مدان	/kənˈvɪkt/
+2482	en_w_convict	convict	verb	society	to convict	يدين	/kənˈvɪkt/
 2483	en_w_cram	cram	verb	school	to cram	يحشو، يذاكر بكثافة	/kræm/	crams, crammed, cramming
 2484	en_w_dazzle	dazzle	verb	senses	to dazzle	يبهر	/ˈdæzl/
 2485	en_w_deceive	deceive	verb	people	to deceive	يخدع	/dɪˈsiːv/
@@ -2498,7 +2498,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2497	en_w_distort	distort	verb	communication	to distort	يشوّه	/dɪˈstɔːt/
 2498	en_w_divert	divert	verb	travel	to divert	يحوّل	/daɪˈvɜːt/
 2499	en_w_drain	drain	verb	home	to drain; a drain	يصفّي؛ بالوعة	/dreɪn/
-2500	en_w_dwell	dwell	verb	home	to dwell	يسكن	/dwel/	dwelt	irregular=yes
+2500	en_w_dwell	dwell	verb	home	to dwell; dwell on (think about at length)	يسكن؛ يطيل التفكير في	/dwel/	dwelt	irregular=yes
 2501	en_w_embark	embark	verb	travel	to embark	يشرع، يركب	/ɪmˈbɑːk/
 2502	en_w_enclose	enclose	verb	communication	to enclose	يرفق	/ɪnˈkləʊz/
 2503	en_w_endorse	endorse	verb	work	to endorse	يؤيّد	/ɪnˈdɔːs/
@@ -2510,7 +2510,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2509	en_w_exploit	exploit	verb	work	to exploit	يستغلّ	/ɪkˈsplɔɪt/
 2510	en_w_fluctuate	fluctuate	verb	function	to fluctuate	يتقلّب	/ˈflʌktʃueɪt/
 2511	en_w_forge	forge	verb	work	to forge	يزوّر، يصوغ	/fɔːdʒ/
-2512	en_w_gasp	gasp	verb	body	to gasp	يلهث	/ɡɑːsp/
+2512	en_w_gasp	gasp	verb	body	to gasp	يشهق، يلهث	/ɡɑːsp/
 2513	en_w_glare	glare	verb	senses	to glare	يحدّق بغضب	/ɡleə/
 2514	en_w_grieve	grieve	verb	feelings	to grieve	يحزن	/ɡriːv/
 2515	en_w_grind	grind	verb	food	to grind	يطحن	/ɡraɪnd/	grinds, grinding
@@ -2759,7 +2759,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2758	en_w_clasp	clasp	verb	actions	to clasp	يمسك بإحكام	/klɑːsp/
 2759	en_w_cleanse	cleanse	verb	home	to cleanse	يطهّر	/klenz/
 2760	en_w_clench	clench	verb	body	to clench	يقبض	/klentʃ/
-2761	en_w_coax	coax	verb	people	to coax	يلاطف	/kəʊks/
+2761	en_w_coax	coax	verb	people	to coax	يستميل، يقنع بلطف	/kəʊks/
 2762	en_w_commemorate	commemorate	verb	society	to commemorate	يحيي ذكرى	/kəˈmeməreɪt/
 2763	en_w_compel	compel	verb	society	to compel	يرغم	/kəmˈpel/	compels, compelled, compelling
 2764	en_w_concoct	concoct	verb	food	to concoct	يختلق، يحضّر	/kənˈkɒkt/
@@ -2895,7 +2895,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2894	en_w_pacify	pacify	verb	feelings	to pacify	يهدّئ	/ˈpæsɪfaɪ/	pacifies, pacified
 2895	en_w_pamper	pamper	verb	people	to pamper	يدلّل	/ˈpæmpə/
 2896	en_w_peck	peck	verb	animals	to peck	ينقر	/pek/
-2897	en_w_peer	peer	verb	senses	to peer; a peer	يحدّق؛ نظير	/pɪə/
+2897	en_w_peer	peer	verb	senses	to peer (look closely)	يُمعن النظر، يحدّق	/pɪə/
 2898	en_w_perish	perish	verb	health	to perish	يهلك	/ˈperɪʃ/
 2899	en_w_pester	pester	verb	people	to pester	يزعج	/ˈpestə/
 2900	en_w_pilfer	pilfer	verb	society	to pilfer	يسرق أشياء صغيرة	/ˈpɪlfə/
@@ -2909,7 +2909,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2908	en_w_prowl	prowl	verb	animals	to prowl	يتربّص	/praʊl/
 2909	en_w_pry	pry	verb	people	to pry	يتطفّل	/praɪ/	pries, pried
 2910	en_w_quench	quench	verb	food	to quench	يروي	/kwentʃ/
-2911	en_w_rake	rake	verb	nature	to rake; a rake	يجرف؛ مدمّة	/reɪk/
+2911	en_w_rake	rake	verb	nature	to rake	يجمع بالمِدَمّة (أداة الحديقة)	/reɪk/
 2912	en_w_ramble	ramble	verb	leisure	to ramble	يتنزّه، يهذر	/ˈræmbl/
 2913	en_w_ransack	ransack	verb	society	to ransack	ينهب	/ˈrænsæk/
 2914	en_w_rebuke	rebuke	verb	people	to rebuke	يوبّخ	/rɪˈbjuːk/
@@ -2928,7 +2928,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2927	en_w_scorch	scorch	verb	nature	to scorch	يلفح	/skɔːtʃ/
 2928	en_w_scour	scour	verb	home	to scour	يفرك، يفتّش	/ˈskaʊə/
 2929	en_w_scowl	scowl	verb	feelings	to scowl	يعبس	/skaʊl/
-2930	en_w_scramble	scramble	verb	movement	to scramble	يتدافع، يخفق	/ˈskræmbl/
+2930	en_w_scramble	scramble	verb	movement	to scramble	يتسلّق بسرعة، يتدافع، يخفق (البيض)	/ˈskræmbl/
 2931	en_w_scrutinise	scrutinise	verb	mind	to scrutinise	يدقّق	/ˈskruːtənaɪz/
 2932	en_w_seethe	seethe	verb	feelings	to seethe	يغلي غضبًا	/siːð/
 2933	en_w_shove	shove	verb	actions	to shove	يدفع بقوّة	/ʃʌv/
@@ -2939,7 +2939,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2938	en_w_skulk	skulk	verb	movement	to skulk	يتسلّل	/skʌlk/
 2939	en_w_slander	slander	verb	communication	to slander; slander	يفتري؛ افتراء	/ˈslɑːndə/
 2940	en_w_slither	slither	verb	movement	to slither	ينزلق	/ˈslɪðə/
-2941	en_w_slouch	slouch	verb	body	to slouch	يتهدّل	/slaʊtʃ/
+2941	en_w_slouch	slouch	verb	body	to slouch	يتراخى في جلسته، يحدودب	/slaʊtʃ/
 2942	en_w_smother	smother	verb	actions	to smother	يخنق	/ˈsmʌðə/
 2943	en_w_smoulder	smoulder	verb	nature	to smoulder	يحترق ببطء	/ˈsməʊldə/
 2944	en_w_snarl	snarl	verb	animals	to snarl	يزمجر	/snɑːl/

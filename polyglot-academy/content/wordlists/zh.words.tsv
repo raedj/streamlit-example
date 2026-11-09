@@ -974,7 +974,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 973	zh_w_daoqian	道歉	verb	communication	to apologise	يعتذر	dàoqiàn		hsk=4
 974	zh_w_chengwei	成为	verb	function	to become	يصبح	chéngwéi		hsk=4; trad=成為
 975	zh_w_tongguo	通过	verb	school	to pass; through	يجتاز؛ عبر	tōngguò		hsk=4; trad=通過
-976	zh_w_jianfei	减肥	verb	health	to lose weight	يخسّس	jiǎnféi		hsk=4; trad=減肥
+976	zh_w_jianfei	减肥	verb	health	to lose weight	يُنقص وزنه، يتّبع حمية	jiǎnféi		hsk=4; trad=減肥
 977	zh_w_duanlian	锻炼	verb	health	to exercise	يتمرّن	duànliàn		hsk=3; trad=鍛煉
 978	zh_w_jiang_speak	讲	verb	communication	to speak, to tell	يتكلّم، يحكي	jiǎng		hsk=3; trad=講
 979	zh_w_tan_talk	谈	verb	communication	to talk, to discuss	يتحدّث	tán		hsk=4; trad=談
@@ -1669,7 +1669,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 1668	zh_w_gali	咖喱	noun	food	curry	كاري	gālí		measure=none; hsk=6
 1669	zh_w_weiji	危机	noun	function	crisis	أزمة	wēijī		measure=场; hsk=6; trad=危機
 1670	zh_w_huangguan	皇冠	noun	people	crown	تاج	huángguān		measure=顶; hsk=6
-1671	zh_w_haoqixin	好奇心	noun	mind	curiosity	فضول	hàoqíxīn		measure=颗; hsk=5
+1671	zh_w_haoqixin	好奇心	noun	mind	curiosity	فضول	hàoqíxīn		measure=种; hsk=5
 1672	zh_w_dianzi	垫子	noun	home	cushion, mat	وسادة، حصيرة	diànzi		measure=个; hsk=6; trad=墊子
 1673	zh_w_fengsu	风俗	noun	people	custom	عادة	fēngsú		measure=个; hsk=6; trad=風俗
 1674	zh_w_wudao	舞蹈	noun	leisure	dance	رقص	wǔdǎo		measure=个; hsk=6
@@ -2496,7 +2496,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2495	zh_w_guangai	灌溉	verb	nature	to irrigate	يروي	guàngài		hsk=6; trad=灌溉
 2496	zh_w_rongliang	容量	noun	function	capacity	سعة	róngliàng		measure=种; hsk=6; trad=容量
 2497	zh_w_juankuan	捐款	noun	people	donation	تبرّع	juānkuǎn		measure=笔; hsk=6; trad=捐款
-2498	zh_w_beitong	悲痛	noun	feelings	grief	حزن عميق	bēitòng		measure=种; hsk=6; trad=悲痛
+2498	zh_w_beitong	悲痛	adj	feelings	grieved, deeply sorrowful	حزين حزنًا شديدًا	bēitòng		hsk=6; trad=悲痛
 2499	zh_w_guanzi	罐子	noun	home	jar, can	مرطبان	guànzi		measure=个; hsk=6; trad=罐子
 2500	zh_w_jirou	肌肉	noun	body	muscle	عضلة	jīròu		measure=块; hsk=5; trad=肌肉
 2501	zh_w_zhengju	证据	noun	function	evidence, proof	دليل	zhèngjù		measure=个; hsk=5; trad=證據
@@ -2544,7 +2544,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2543	zh_w_yaolanqu	摇篮曲	noun	leisure	lullaby	تهويدة	yáolánqǔ		measure=首; hsk=6; trad=搖籃曲
 2544	zh_w_lianmin	怜悯	verb	feelings	to pity; mercy	يشفق	liánmǐn		hsk=6; trad=憐憫
 2545	zh_w_taoqi	淘气	adj	people	naughty	شقيّ	táoqì		hsk=6; trad=淘氣
-2546	zh_w_xiangqian	镶嵌	noun	leisure	inlay, mosaic	ترصيع	xiāngqiàn		measure=种; hsk=6; trad=鑲嵌
+2546	zh_w_xiangqian	镶嵌	verb	leisure	to inlay, to set (with gems)	يرصّع	xiāngqiàn		hsk=6; trad=鑲嵌
 2547	zh_w_xiangchou	乡愁	noun	feelings	homesickness	حنين للوطن	xiāngchóu		measure=种; hsk=6; trad=鄉愁
 2548	zh_w_shiyan_oath	誓言	noun	communication	oath, vow	قسم	shìyán		measure=个; hsk=6; trad=誓言
 2549	zh_w_guoyuan	果园	noun	nature	orchard	بستان	guǒyuán		measure=个; hsk=6; trad=果園
@@ -2576,9 +2576,9 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2575	zh_w_wangwei	王位	noun	society	throne	العرش	wángwèi		measure=个; hsk=6; trad=王位
 2576	zh_w_chaoxi	潮汐	noun	nature	tide	مدّ وجزر	cháoxī		measure=种; hsk=6; trad=潮汐
 2577	zh_w_shoudiantong	手电筒	noun	home	torch	مصباح يدوي	shǒudiàntǒng		measure=个; hsk=6; trad=手電筒
-2578	zh_w_panguo	叛国	noun	society	treason	خيانة الوطن	pànguó		measure=种; hsk=6; trad=叛國
+2578	zh_w_panguo	叛国	verb	society	to commit treason	يخون الوطن	pànguó		hsk=6; trad=叛國
 2579	zh_w_buluo	部落	noun	society	tribe	قبيلة	bùluò		measure=个; hsk=6; trad=部落
-2580	zh_w_tingzhan	停战	noun	society	ceasefire, truce	هدنة	tíngzhàn		measure=种; hsk=6; trad=停戰
+2580	zh_w_tingzhan	停战	verb	society	to cease fire, to agree a truce	يوقف القتال، يعقد هدنة	tíngzhàn		hsk=6; trad=停戰
 2581	zh_w_putaoyuan	葡萄园	noun	nature	vineyard	كرم عنب	pútaoyuán		measure=个; hsk=6; trad=葡萄園
 2582	zh_w_huoshan	火山	noun	nature	volcano	بركان	huǒshān		measure=座; hsk=6; trad=火山
 2583	zh_w_zhihui_wisdom	智慧	noun	mind	wisdom	حكمة	zhìhuì		measure=种; hsk=5; trad=智慧
@@ -2674,7 +2674,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2673	zh_w_zhizhu	蜘蛛	noun	animals	spider	عنكبوت	zhīzhū		measure=只; hsk=6; trad=蜘蛛
 2674	zh_w_woniu	蜗牛	noun	animals	snail	حلزون	wōniú		measure=只; hsk=6; trad=蝸牛
 2675	zh_w_xiyi	蜥蜴	noun	animals	lizard	سحلية	xīyì		measure=只; hsk=6; trad=蜥蜴
-2676	zh_w_lu_deer	鹿	noun	animals	deer	غزال	lù		measure=只; hsk=6; trad=鹿
+2676	zh_w_lu_deer	鹿	noun	animals	deer	أيّل	lù		measure=只; hsk=6; trad=鹿
 2677	zh_w_pubu	瀑布	noun	nature	waterfall	شلّال	pùbù		measure=条; hsk=6; trad=瀑布
 2678	zh_w_shangu	山谷	noun	nature	valley	وادٍ	shāngǔ		measure=个; hsk=6; trad=山谷
 2679	zh_w_shanpo	山坡	noun	nature	hillside, slope	منحدر	shānpō		measure=个; hsk=6; trad=山坡
@@ -2718,7 +2718,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2717	zh_w_zongrong	纵容	verb	society	to condone, to indulge	يتساهل	zòngróng		hsk=6; trad=縱容
 2718	zh_w_shangyi	商议	verb	work	to discuss	يتشاور	shāngyì		hsk=6; trad=商議
 2719	zh_w_quansuo	蜷缩	verb	feelings	to curl up	ينكمش	quánsuō		hsk=6; trad=蜷縮
-2720	zh_w_zhouqi	皱起	verb	clothes	to wrinkle	يجعّد	zhòuqǐ		hsk=6; trad=皺起
+2720	zh_w_zhouqi	皱起	verb	clothes	to knit (one's brows), to wrinkle up	يقطّب (حاجبيه)، يجعّد	zhòuqǐ		hsk=6; trad=皺起
 2721	zh_w_bengta	崩塌	verb	actions	to collapse	ينهار	bēngtā		hsk=6; trad=崩塌
 2722	zh_w_ezhi	遏制	verb	actions	to curb	يكبح	èzhì		hsk=6; trad=遏制
 2723	zh_w_xuandang	悬荡	verb	actions	to dangle	يتدلّى	xuándàng		hsk=6; trad=懸盪
@@ -2773,7 +2773,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2772	zh_w_saorao	骚扰	verb	people	to harass	يضايق	sāorǎo		hsk=6; trad=騷擾
 2773	zh_w_tingcong	听从	verb	communication	to heed	يطيع، يعمل بـ	tīngcóng		hsk=6; trad=聽從
 2774	zh_w_tunji	囤积	verb	actions	to hoard	يكنز	túnjī		hsk=6; trad=囤積
-2775	zh_w_jizaiyiqi	挤在一起	verb	people	to huddle	يتجمّع متلاصقين	jǐ zài yìqǐ		hsk=6; trad=擠在一起
+2775	zh_w_jizaiyiqi	挤在一起	verb	people	to huddle	يتجمّعون متلاصقين	jǐ zài yìqǐ		hsk=6; trad=擠在一起
 2776	zh_w_paozhi	抛掷	verb	actions	to hurl	يقذف	pāozhì		hsk=6; trad=拋擲
 2777	zh_w_kenqiu	恳求	verb	communication	to implore	يتوسّل	kěnqiú		hsk=6; trad=懇求
 2778	zh_w_shandong	煽动	verb	society	to incite	يحرّض	shāndòng		hsk=6; trad=煽動
@@ -2844,7 +2844,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2843	zh_w_zhenjing	震惊	verb	feelings	to shock	يصدم	zhènjīng		hsk=6; trad=震驚
 2844	zh_w_qufu	屈服	verb	health	to yield	يستسلم	qūfú		hsk=6; trad=屈服
 2845	zh_w_shengmenqi	生闷气	verb	feelings	to sulk	يزعل	shēng mènqì		hsk=6; trad=生悶氣
-2846	zh_w_chengqun	成群	verb	animals	to swarm	يتجمهر	chéngqún		hsk=6; trad=成群
+2846	zh_w_chengqun	成群	verb	animals	in groups, in swarms	في جماعات، في أسراب	chéngqún		hsk=6; trad=成群
 2847	zh_w_paida	拍打	verb	actions	to swat, to pat	يضرب برفق	pāidǎ		hsk=6; trad=拍打
 2848	zh_w_jizhuan	急转	verb	travel	to swerve	ينعطف فجأة	jízhuǎn		hsk=6; trad=急轉
 2849	zh_w_pianqu	骗取	verb	society	to swindle	يحتال للحصول	piànqǔ		hsk=6; trad=騙取
@@ -2858,7 +2858,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2857	zh_w_choudong	抽动	verb	body	to twitch	يرتعش	chōudòng		hsk=6; trad=抽動
 2858	zh_w_jiekai	解开	verb	actions	to untie, to solve	يحلّ	jiěkāi		hsk=5; trad=解開
 2859	zh_w_yinling	引领	verb	people	to lead, to usher	يرشد	yǐnlǐng		hsk=6; trad=引領
-2860	zh_w_aonao	懊恼	verb	feelings	to be vexed	يغتاظ	àonǎo		hsk=6; trad=懊惱
+2860	zh_w_aonao	懊恼	verb	feelings	to be upset, annoyed (often with oneself)	يتضايق، يندم	àonǎo		hsk=6; trad=懊惱
 2861	zh_w_tangshui	蹚水	verb	movement	to wade	يخوض الماء	tāng shuǐ		hsk=6; trad=蹚水
 2862	zh_w_piaosan	飘散	verb	senses	to waft	يفوح	piāosàn		hsk=6; trad=飄散
 2863	zh_w_haojiao	嚎叫	verb	feelings	to howl	يعوي	háojiào		hsk=6; trad=嚎叫
@@ -2879,7 +2879,7 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2878	zh_w_rouruo	柔弱	adj	people	weak, delicate	رقيق	róuruò		hsk=6; trad=柔弱
 2879	zh_w_jiaozha	狡诈	adj	people	crafty	مخادع	jiǎozhà		hsk=6; trad=狡詐
 2880	zh_w_koumen	抠门	adj	people	stingy	بخيل	kōumén		hsk=6; trad=摳門
-2881	zh_w_juandai	倦怠	adj	feelings	weary	ضجر	juàndài		hsk=6; trad=倦怠
+2881	zh_w_juandai	倦怠	adj	feelings	weary	مُرهَق، فاتر الهمّة	juàndài		hsk=6; trad=倦怠
 2882	zh_w_dasheng	大声	adv	communication	loudly	بصوت عالٍ	dà shēng		hsk=4; trad=大聲
 2883	zh_w_gu_er_therefore	故而	adv	function	therefore	لذلك	gù'ér		hsk=6; trad=故而
 2884	zh_w_congrer	从而	adv	function	thereby	وبذلك	cóng'ér		hsk=6; trad=從而
@@ -2986,8 +2986,8 @@ rank	id	term	pos	topic	en	ar	pron	forms	extra	vocab_id
 2985	zh_w_qiumi	球迷	noun	people	fan (sports)	مشجّع	qiúmí		measure=个; hsk=6; trad=球迷
 2986	zh_w_guanjun	冠军	noun	people	champion	بطل	guànjūn		measure=个; hsk=5; trad=冠軍
 2987	zh_w_jiangpai	奖牌	noun	leisure	medal	ميدالية	jiǎngpái		measure=块; hsk=6; trad=獎牌
-2988	zh_w_pingju	平局	noun	leisure	draw	تعادل	píngjú		measure=种; hsk=6; trad=平局
-2989	zh_w_bifen	比分	noun	leisure	score	نتيجة	bǐfēn		measure=种; hsk=6; trad=比分
+2988	zh_w_pingju	平局	noun	leisure	draw	تعادل	píngjú		measure=场; hsk=6; trad=平局
+2989	zh_w_bifen	比分	noun	leisure	score	نتيجة	bǐfēn		measure=个; hsk=6; trad=比分
 2990	zh_w_shuishou_sailor	水手	noun	people	sailor	بحّار	shuǐshǒu		measure=个; hsk=6; trad=水手
 2991	zh_w_shuishou_tax	税收	noun	work	tax revenue	ضرائب	shuìshōu		measure=种; hsk=6; trad=稅收
 2992	zh_w_yufu	渔夫	noun	people	fisherman	صيّاد سمك	yúfū		measure=个; hsk=6; trad=漁夫
