@@ -61,6 +61,25 @@ class WordListTest {
         }
     })
 
+    /** Words (English) or Han characters (Mandarin) of an example sentence. */
+    private fun length(lang: LanguageCode, s: String) =
+        if (lang == LanguageCode.MANDARIN) s.count { it in '一'..'鿿' } else s.split(Regex("[\\s-]+")).count { t -> t.any { it.isLetterOrDigit() } }
+
+    // Until 2026-11-10 the examples stopped growing after level 4 (about 7 English words, 8–9 characters in level 10).
+    @Test fun c1WordsHaveALongExampleAndSentencesGrowWithTheLevel() {
+        val longMin = mapOf(LanguageCode.ENGLISH to 13, LanguageCode.MANDARIN to 18)
+        report(lists.filter { it.language in longMin }.flatMap { l ->
+            val min = longMin.getValue(l.language)
+            val avg = (1..10).associateWith { lv -> l.entries.filter { it.level == lv }.flatMap { it.examples }.map { length(l.language, it.sentence) }.average() }
+            buildList {
+                l.entries.filter { it.level >= 9 && it.examples.none { ex -> length(l.language, ex.sentence) >= min } }
+                    .forEach { add("${it.id}: C1 word without an example of at least $min") }
+                if (avg.getValue(9) < avg.getValue(6) + 3) add("${l.language}: level 9 examples average ${avg.getValue(9)}, level 6 ${avg.getValue(6)}")
+                if (avg.getValue(10) < avg.getValue(6) + 3) add("${l.language}: level 10 examples average ${avg.getValue(10)}, level 6 ${avg.getValue(6)}")
+            }
+        })
+    }
+
     @Test fun linkedCurriculumWordsKeepTheirReviewId() = report(lists.flatMap { l ->
         val vocab = Curriculum.of(l.language).vocabularyById
         l.entries.filter { it.vocabularyId != null }.flatMap { e ->

@@ -32,11 +32,13 @@ Language-specific `extra` keys (required ones in bold):
 | Column | Content |
 |---|---|
 | `rank` | Rank of the word the example illustrates |
-| `sentence` | 4–12 words (Mandarin: 4–24 characters), everyday and natural, using the word in its most common sense |
+| `sentence` | 4–12 words (Mandarin: 4–24 characters), everyday and natural, using the word in its most common sense. From level 7 up to 22 words (Mandarin: 40 characters) |
 | `en`, `ar` | Translations (for English the `en` column, for Arabic the `ar` column repeats the sentence) |
 | `names` | Comma-separated proper names in the sentence; they are ignored by the checks |
 
-Levels 1–3 need at least two examples per word, higher levels at least one.
+Levels 1–3 need at least two examples per word, higher levels at least one. In English and
+Mandarin, each word of levels 9–10 (C1) also needs one long example of at least 13 words
+(Mandarin: 18 characters), so that sentences grow with the level; it follows the short one.
 
 ## Checks
 `tools/gen_wordlists.py` rejects a file with the line and reason for: wrong headers or column
