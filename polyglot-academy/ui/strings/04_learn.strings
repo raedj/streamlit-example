@@ -37,6 +37,9 @@ PLAYER_EXIT_TITLE ¦ Leave the lesson? ¦ هل تريد مغادرة الدرس�
 PLAYER_EXIT_BODY ¦ Your progress is saved. You can continue later from this exercise. ¦ تقدّمك محفوظ، ويمكنك المتابعة لاحقًا من هذا التمرين.
 PLAYER_EXIT_CONFIRM ¦ Leave ¦ مغادرة
 PLAYER_STAY ¦ Keep going ¦ تابِع
+PLAYER_PREVIOUS ¦ Previous exercise ¦ التمرين السابق
+PLAYER_NEXT ¦ Next exercise ¦ التمرين التالي
+PLAYER_REVISIT_NOTE ¦ You've done this one. Your first answer already counts, so this try is just practice. ¦ أجبت عن هذا التمرين من قبل. إجابتك الأولى هي المحسوبة، وهذه المحاولة للتدريب فقط.
 FEEDBACK_CORRECT ¦ Correct! ¦ صحيح!
 FEEDBACK_CORRECT_ACCENT ¦ Correct — mind the accents ¦ صحيح — انتبه إلى علامات النطق
 FEEDBACK_ALMOST ¦ Almost there ¦ اقتربت

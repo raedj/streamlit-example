@@ -85,6 +85,12 @@ class LanguageCurriculum(
         is Exercise.Flashcard -> if (e.vocabularyId !in vocabularyById) "flashcard references missing vocab" else null
         is Exercise.ToneChoice -> if (e.correctTone !in 1..5) "invalid tone" else null
         is Exercise.GrammarNote -> if (e.topicId !in grammarById) "grammar note references missing topic" else null
+        is Exercise.WriteCharacter -> when {
+            e.character.length != 1 -> "write exercise needs exactly one character"
+            com.polyglot.academy.core.mandarin.StrokeOrder.of(e.character[0]) == null -> "no stroke data for ${e.character}"
+            e.character !in e.word -> "the word does not contain the character"
+            else -> null
+        }
         is Exercise.SpeakRepeat, is Exercise.FreeWriting -> null
     }
 }

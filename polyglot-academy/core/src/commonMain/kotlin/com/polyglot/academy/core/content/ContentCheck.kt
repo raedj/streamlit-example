@@ -70,6 +70,7 @@ object ContentCheck {
         is Exercise.Matching -> fields("pairs" to e.pairs.joinToString(" / ") { it.first + " = " + gloss(it.second) })
         is Exercise.SpeakRepeat -> fields("sentence" to e.targetText, "reading" to e.pronunciationGuide, "meaning" to gloss(e.translation))
         is Exercise.ToneChoice -> fields("character" to e.character, "syllable" to e.syllable, "tone" to e.correctTone.toString(), "meaning" to gloss(e.meaning))
+        is Exercise.WriteCharacter -> fields("character" to e.character, "word" to e.word, "reading" to e.reading, "meaning" to gloss(e.meaning), "explanation" to e.explanation?.let(::gloss))
         is Exercise.FreeWriting -> fields("prompt" to gloss(e.prompt), "suggested_words" to e.suggestedVocabulary.joinToString(" / "))
         is Exercise.Flashcard, is Exercise.GrammarNote -> null
     }

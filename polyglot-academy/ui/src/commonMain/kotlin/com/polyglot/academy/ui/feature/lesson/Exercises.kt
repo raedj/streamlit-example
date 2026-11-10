@@ -46,6 +46,13 @@ import com.polyglot.academy.core.content.Curriculum
 import com.polyglot.academy.core.learning.AnswerChecker
 import com.polyglot.academy.core.learning.AnswerVerdict
 import com.polyglot.academy.core.mandarin.Pinyin
+import com.polyglot.academy.core.mandarin.ComponentRole
+import com.polyglot.academy.core.mandarin.HandwritingVerdict
+import com.polyglot.academy.core.mandarin.HanziData
+import com.polyglot.academy.core.mandarin.StrokeOrder
+import com.polyglot.academy.ui.feature.practice.WritingPad
+import com.polyglot.academy.ui.designsystem.Pill
+import com.polyglot.academy.ui.designsystem.SwitchRow
 import com.polyglot.academy.core.model.Exercise
 import com.polyglot.academy.core.model.Gloss
 import com.polyglot.academy.core.model.LanguageCode
@@ -138,6 +145,7 @@ fun ExerciseView(exercise: Exercise, ctx: ExerciseContext, answered: Boolean, on
             is Exercise.Matching -> MatchingView(exercise, ctx, answered, onAnswer)
             is Exercise.SpeakRepeat -> SpeakRepeatView(exercise, ctx, answered, onAnswer)
             is Exercise.ToneChoice -> ToneChoiceView(exercise, ctx, answered, onAnswer)
+            is Exercise.WriteCharacter -> WriteCharacterView(exercise, ctx, answered, onAnswer)
             is Exercise.FreeWriting -> FreeWritingView(exercise, ctx, answered, onAnswer)
             is Exercise.GrammarNote -> GrammarNoteView(exercise, ctx, answered, onAnswer)
         }
@@ -486,6 +494,45 @@ private fun ToneChoiceView(e: Exercise.ToneChoice, ctx: ExerciseContext, answere
             selected = t
             onAnswer(Answer(ExerciseOutcome(t == e.correctTone, if (t == e.correctTone) 1.0 else 0.0, Pinyin.applyTone(e.syllable, e.correctTone)), marked, 0, e.character))
         })
+    }
+}
+
+/**
+ * Write a character on a practice grid. The faded guide can be switched off to write from memory. A right
+ * drawing scores 1, a close one half; a wrong one can be tried again.
+ */
+@Composable
+private fun WriteCharacterView(e: Exercise.WriteCharacter, ctx: ExerciseContext, answered: Boolean, onAnswer: (Answer) -> Unit) {
+    val s = LocalStrings.current
+    val c = PolyglotTheme.colors
+    val ch = e.character.first()
+    val entry = HanziData.of(ch)
+    val strokes = entry?.strokes ?: StrokeOrder.of(ch)?.size ?: 0
+    var showGuide by remember(e.id) { mutableStateOf(true) }
+    PolyCard {
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Column(Modifier.weight(1f)) {
+                LearningText(e.character, LanguageCode.MANDARIN, style = PolyglotTheme.learning.hanzi)
+                LearningText(e.word, LanguageCode.MANDARIN, style = MaterialTheme.typography.titleMedium, reading = if (ctx.showReading) e.reading else null)
+                Text(ctx.gloss(e.meaning), style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
+            }
+            AudioButton(s[K.PLAY_AUDIO], { ctx.speaker.toggle(e.word, LanguageCode.MANDARIN) }, playing = ctx.speaker.playingText == e.word)
+        }
+        Text(s.f(K.CHARS_STROKES, strokes), style = MaterialTheme.typography.labelLarge)
+        if (entry != null && entry.components.isNotEmpty()) {
+            Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                entry.components.forEach { part ->
+                    val role = when (part.role) { ComponentRole.SOUND -> s[K.CHARS_ROLE_SOUND]; ComponentRole.MEANING -> s[K.CHARS_ROLE_MEANING]; ComponentRole.OTHER -> s[K.CHARS_ROLE_PART] }
+                    Pill("${part.form} · ${ctx.gloss(part.meaning)} · $role")
+                }
+            }
+        }
+    }
+    PolyCard(contentPadding = 0.dp) { SwitchRow(s[K.CHARS_GUIDE], showGuide, { showGuide = it }, subtitle = s[K.CHARS_GUIDE_SUB]) }
+    WritingPad(ch, strokes, traditional = false, showGuide = showGuide) { check ->
+        if (answered) return@WritingPad
+        val score = when { check.right -> 1.0; check.result.verdict == HandwritingVerdict.CLOSE -> 0.5; else -> 0.0 }
+        onAnswer(Answer(ExerciseOutcome(check.right, score, e.character), e.character, 0, e.character))
     }
 }
 

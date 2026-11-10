@@ -231,6 +231,24 @@ sealed interface Exercise {
         override val explanation: Gloss? = null,
     ) : Exercise
 
+    /**
+     * Write one Chinese character on a practice grid, with its stroke order shown on request. The drawing is
+     * compared with the character's shape and with its stroke-order data.
+     */
+    @Serializable
+    data class WriteCharacter(
+        override val id: String,
+        override val skill: Skill,
+        override val instruction: Gloss,
+        val character: String,
+        /** A word the character appears in, with its reading and meaning, for context. */
+        val word: String,
+        val reading: String?,
+        val meaning: Gloss,
+        override val difficulty: Int = 2,
+        override val explanation: Gloss? = null,
+    ) : Exercise
+
     /** A grammar rule shown right before the exercises that use it. Nothing to answer, so it earns no score. */
     @Serializable
     data class GrammarNote(

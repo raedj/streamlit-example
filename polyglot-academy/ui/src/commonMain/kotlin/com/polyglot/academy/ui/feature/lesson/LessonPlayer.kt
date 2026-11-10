@@ -15,6 +15,8 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Close
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.ArrowForward
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.LinearProgressIndicator
@@ -111,6 +113,9 @@ private fun LessonPlayer(lesson: Lesson, restart: Boolean, onRetry: () -> Unit) 
     val explain = app.profile.explanationLanguage.takeIf { it != lesson.language } ?: if (lesson.language == LanguageCode.ENGLISH) LanguageCode.ARABIC else LanguageCode.ENGLISH
 
     var index by rememberSaveable(lessonId) { mutableIntStateOf(-1) }
+    // The furthest exercise reached. Going back below it revisits exercises: they can be answered again for
+    // practice, but the first answer keeps the score and the review schedule is not touched a second time.
+    var furthest by rememberSaveable(lessonId) { mutableIntStateOf(-1) }
     // Not saveable on purpose: it must reset together with lastAnswer, otherwise the Continue button could disappear.
     var answered by remember(lessonId, index) { mutableStateOf(false) }
     var lastAnswer by remember(lessonId, index) { mutableStateOf<Answer?>(null) }
@@ -134,6 +139,7 @@ private fun LessonPlayer(lesson: Lesson, restart: Boolean, onRetry: () -> Unit) 
     LaunchedEffect(lessonId) {
         val p = services.store.lessonProgress(lesson.language).first()[lesson.id]
         if (index < 0) index = if (restart) 0 else (p?.resumeIndex ?: 0).coerceIn(0, lesson.exercises.lastIndex)
+        if (furthest < index) furthest = index
         // A resumed lesson is scored on the exercises answered before the interruption too.
         if (index > 0) services.study.resumedFirstTries(lesson, index).forEach { (id, score) -> if (id !in firstTry) firstTry[id] = score }
         voiceAvailable = services.platform.synthesizer.isLanguageAvailable(Languages.of(lesson.language).defaultVariant.localeTag)
@@ -167,8 +173,20 @@ private fun LessonPlayer(lesson: Lesson, restart: Boolean, onRetry: () -> Unit) 
     fun advance() {
         adaptMessage = null
         if (index >= lesson.exercises.lastIndex) finish()
-        else { index++; scope.launch { services.study.saveResumePoint(lesson, index) } }
+        else {
+            index++
+            if (index > furthest) { furthest = index; scope.launch { services.study.saveResumePoint(lesson, index) } }
+        }
     }
+
+    fun goBack() {
+        if (index <= 0) return
+        adaptMessage = null
+        index--
+    }
+
+    /** True for an exercise the learner has already passed and came back to. */
+    val revisiting = index in 0 until furthest
 
     fun onAnswer(ex: Exercise, a: Answer) {
         if (answered) return
@@ -176,6 +194,7 @@ private fun LessonPlayer(lesson: Lesson, restart: Boolean, onRetry: () -> Unit) 
         // Nothing was checked, so there is no verdict to show: go straight on.
         if (!a.outcome.counted) { advance(); return }
         lastAnswer = a
+        if (revisiting) return
         // Without a voice a listening exercise is only a guess, so it is neither scored nor recorded.
         if (voiceAvailable == false && ex.needsAudio) return
         if (ex.id !in firstTry) firstTry[ex.id] = StudyService.firstTryScore(a.outcome.correct, a.outcome.score)
@@ -201,6 +220,7 @@ private fun LessonPlayer(lesson: Lesson, restart: Boolean, onRetry: () -> Unit) 
     CompositionLocalProvider(LocalExerciseActions provides actions) { Scaffold(containerColor = c.background, topBar = {
         Row(Modifier.fillMaxWidth().padding(horizontal = 8.dp, vertical = 8.dp).padding(top = 24.dp), verticalAlignment = Alignment.CenterVertically) {
             IconButton(onClick = { if (summary != null) app.nav.pop() else confirmExit = true }) { Icon(Icons.Filled.Close, s[K.CLOSE]) }
+            if (summary == null && index > 0) IconButton(onClick = { goBack() }) { Icon(Icons.AutoMirrored.Filled.ArrowBack, s[K.PLAYER_PREVIOUS]) }
             if (summary == null && index >= 0) {
                 val desc = s.f(K.PLAYER_PROGRESS, index + 1, lesson.exercises.size)
                 LinearProgressIndicator(
@@ -209,6 +229,8 @@ private fun LessonPlayer(lesson: Lesson, restart: Boolean, onRetry: () -> Unit) 
                     color = c.primary, trackColor = c.progressTrack, drawStopIndicator = {},
                 )
                 Text("${index + 1}/${lesson.exercises.size}", style = MaterialTheme.typography.labelLarge, modifier = Modifier.padding(horizontal = 12.dp))
+                // Back at an earlier exercise, the learner can step forward again without answering it.
+                if (revisiting && !answered) IconButton(onClick = { advance() }) { Icon(Icons.AutoMirrored.Filled.ArrowForward, s[K.PLAYER_NEXT]) }
             }
         }
     }, bottomBar = {
@@ -238,6 +260,7 @@ private fun LessonPlayer(lesson: Lesson, restart: Boolean, onRetry: () -> Unit) 
                 else if (index >= 0) {
                     val ex = lesson.exercises[index]
                     adaptMessage?.let { Banner(BannerKind.INFO, s[it]) }
+                    if (revisiting) Banner(BannerKind.INFO, s[K.PLAYER_REVISIT_NOTE])
                     val ctx = ExerciseContext(lesson.language, explain, speaker, hintsOn, enrollment?.showTransliteration != false, enrollment?.useTraditionalCharacters == true, hiddenReadings, tilePool)
                     if (voiceAvailable == false && ex.needsAudio) {
                         Banner(BannerKind.WARNING, s.f(K.LISTEN_NO_VOICE, Labels.language(s, lesson.language)))

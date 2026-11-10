@@ -57,6 +57,7 @@ internal object Instr {
     val translate = g("Translate into the language you are learning.", "ترجم إلى اللغة التي تتعلمها.")
     val dictation = g("Listen and type what you hear.", "استمع واكتب ما تسمعه.")
     val tone = g("Which tone does this syllable have?", "ما نغمة هذا المقطع؟")
+    val writeChar = g("Write this character. Tap \"Show stroke order\" first if you need to.", "اكتب هذا الحرف. اضغط «اعرض ترتيب الضربات» أولًا إن احتجت.")
     val choose = g("Choose the best answer.", "اختر الإجابة الأنسب.")
     val write = g("Write a short text.", "اكتب نصًا قصيرًا.")
 }
@@ -108,6 +109,11 @@ internal class LessonFactory(private val lang: LanguageCode, private val allVoca
                 val syl = Pinyin.parseSyllable(item.pronunciation!!)
                 exercises += Exercise.ToneChoice("${fullId}_tone_${item.id}", Skill.PRONUNCIATION, Instr.tone, syl.base, syl.tone, item.term, item.meaning)
             }
+            // Writing by hand is how characters are remembered, so every lesson has the learner write two of its characters.
+            items.flatMap { item -> item.term.mapIndexed { i, ch -> Triple(ch, item, i) } }.distinctBy { it.first }
+                .filter { (ch, _, _) -> com.polyglot.academy.core.mandarin.StrokeOrder.of(ch) != null }.take(2).forEach { (ch, item, i) ->
+                    exercises += Exercise.WriteCharacter("${fullId}_write_${item.id}_$i", Skill.WRITING, Instr.writeChar, ch.toString(), item.term, item.pronunciation, item.meaning)
+                }
         }
         // Mandarin is written without spaces, so its sentences cannot be split here; its hand-written exercises cover this.
         val sentences = if (lang == LanguageCode.MANDARIN) emptyList() else items.filter { it.example != null && it.exampleTranslation != null && it.example!!.split(' ').size in 3..9 }
