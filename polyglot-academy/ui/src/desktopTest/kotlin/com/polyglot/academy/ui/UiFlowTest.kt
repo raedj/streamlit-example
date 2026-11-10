@@ -500,7 +500,7 @@ class UiFlowTest {
         waitForText("there is no structured course at C1", substring = true)
         onNodeWithText("What each level covers").performScrollTo()
         onNodeWithText("No built-in material at this level").performScrollTo()
-        onNodeWithText("There is no C1 or C2 course", substring = true).performScrollTo()
+        onNodeWithText("no language has a C2 course", substring = true).performScrollTo()
     }
 
     @Test fun arabicLettersAreWrittenAndCheckedWithTheirDots() = runDesktopComposeUiTest(800, 1700) {

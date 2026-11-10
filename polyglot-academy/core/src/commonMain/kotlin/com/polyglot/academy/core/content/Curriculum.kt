@@ -120,7 +120,7 @@ object Curriculum {
             LanguageCode.MALAY -> MalayCurriculum.build()
         }
         check(c.language == code)
-        return LanguageCurriculum(c.language, c.vocabulary, c.grammar, c.units, c.lessons, (c.readings + GradedStories.of(c.language) + ReadingLibrary.of(c.language)).map(ReadingLibrary::withOpenQuestions), c.scenarios,
+        return LanguageCurriculum(c.language, c.vocabulary, c.grammar, c.units, c.lessons, (c.readings + GradedStories.of(c.language) + ReadingLibrary.of(c.language) + AdvancedLessons.readings(c.language)).map(ReadingLibrary::withOpenQuestions), c.scenarios,
             c.assessment, c.tracks, c.dictations, c.writingPrompts)
     }
 

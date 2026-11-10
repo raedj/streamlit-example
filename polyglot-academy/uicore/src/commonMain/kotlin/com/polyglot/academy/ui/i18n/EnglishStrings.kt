@@ -337,7 +337,7 @@ internal object EnglishStrings {
         K.LEVELS_ROW to "Lessons: {0} · Texts: {1} · Grammar: {2} · Speaking missions: {3}",
         K.LEVELS_WORDS to "Word-list levels: {0} (approximate band)",
         K.LEVELS_NONE to "No built-in material at this level",
-        K.LEVELS_NOTE to "There is no C1 or C2 course. Above the built-in lessons you can keep practising with tutor conversations, speaking missions (up to C1), the harder word-list levels and material you import.",
+        K.LEVELS_NOTE to "English and Mandarin have a first C1 unit; the other languages have no C1 course, and no language has a C2 course. Above the built-in lessons you can keep practising with tutor conversations, speaking missions (up to C1), the harder word-list levels and material you import.",
         K.LEVELS_ABOVE_TITLE to "Your level is above the built-in course",
         K.LEVELS_ABOVE to "The built-in {0} course goes up to {1}; there is no structured course at {2}. Lessons below your level stay open for review, and you can practise with tutors, speaking missions, the harder word lists and your own material.",
         K.TRACK_DISCLAIMER_TITLE to "Language practice only",

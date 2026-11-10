@@ -16,7 +16,8 @@ build exists only as a test harness; there is no iOS app.
 - Arabic-speaking learners of the other seven languages (primary), and English-speaking learners
   of Arabic and the others.
 - Built-in content: beginners to intermediate. The general course has most lessons at A1–A2,
-  fewer at B1 and at most one or two at B2; there is **no C1 or C2 course** (PR-26).
+  fewer at B1 and B2. English and Mandarin also have a first C1 unit (four lessons, two long texts);
+  the other languages have **no C1 course**, and no language has a **C2 course** (PR-26).
 - Advanced learners: tutor conversations, speaking missions up to C1, the harder word-list levels
   and their own imported material.
 
@@ -48,7 +49,7 @@ build exists only as a test harness; there is no iOS app.
 | PR-23 | Export and full deletion of user data | Implemented + tested |
 | PR-24 | Non-coercive reminders and achievements; points, quests and streak can be hidden | Implemented; reminder checked on the emulator |
 | PR-25 | Accessibility: semantics, scalable text, high contrast, reduced motion, WCAG AA colours | Implemented; contrast tested; accessibility tree of ten screens and 200 % text checked on the emulator; TalkBack itself not run |
-| PR-26 | Level coverage stated honestly: the Learn tab shows what each level offers, counted from the content; levels above the course are marked in onboarding, and a learner placed above it is told so | Implemented + tested; on the emulator. No C1/C2 course: writing one needs native reviewers per language |
+| PR-26 | Level coverage stated honestly: the Learn tab shows what each level offers, counted from the content; levels above the course are marked in onboarding, and a learner placed above it is told so | Implemented + tested; on the emulator. A first C1 unit for English and Mandarin only (AI-written, not reviewed by native speakers); no C2 course |
 | PR-27 | Photos for import taken with the system camera app (no camera permission), with crop, rotate and retake | Implemented + tested; on the emulator's virtual camera, not a real one |
 | PR-28 | End-to-end encrypted sync through the learner's own WebDAV server; optional background sync (off by default, unmetered network and battery not low, never settles a conflict on its own) | Implemented + tested; on the emulator with a local test server, not a real Nextcloud |
 | PR-29 | Optional home-screen widget (never on the lock screen): today's progress, next step, a word to review that can be hidden | Implemented + tested; on the emulator's launcher |
@@ -56,7 +57,7 @@ build exists only as a test harness; there is no iOS app.
 | PR-30 | Content accuracy: report an error in lessons, reviews and word pages; per-item human review record; no second correct answer in single-answer questions | Implemented + tested; no human review has been done yet (the record is empty) |
 
 ## Not covered
-- C1 and C2 courses (PR-26); graded stories above B1.
+- C1 courses for languages other than English and Mandarin, and C2 courses (PR-26).
 - Arabic and Urdu letters inside words (initial, medial and final forms, joining); Nastaliq letter shapes for Urdu.
 - Interface languages other than Arabic and English (each needs a reviewer).
 - iOS.
