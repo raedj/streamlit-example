@@ -166,13 +166,35 @@ class UiFlowTest {
         waitForText("Ordering at a café", substring = true)
     }
 
-    @Test fun practiceStartsWithFourPlacesAndTheRestUnderMore() = runDesktopComposeUiTest(800, 1700) {
+    @Test fun practiceShowsTheMainPlacesAndSkillDrillsAndTheRestUnderMore() = runDesktopComposeUiTest(800, 1700) {
         val app = TestApp(); app.profile()
         setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.PRACTICE))) }
         waitForText("Review what you learned")
         assertTrue(onAllNodesWithText("Grammar").fetchSemanticsNodes().isEmpty())
-        onNodeWithText("More practice").performClick()
+        listOf("Listen to sentences", "Guided conversation", "Write sentences", "Speed training").forEach { onNodeWithText(it).assertExists() }
+        onNodeWithText("More practice").performScrollTo().performClick()
         waitForText("Grammar")
+    }
+
+    @Test fun sentenceWritingStartsARound() = runDesktopComposeUiTest(800, 1700) {
+        val app = TestApp(); app.profile()
+        setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.PRACTICE), Route.SentenceWriting)) }
+        waitForText("Start")
+        onNodeWithText("Start").performScrollTo().performClick()
+        waitForText("Compare with the model")
+    }
+
+    @Test fun guidedConversationAcceptsTheModelAnswer() = runDesktopComposeUiTest(800, 1700) {
+        val app = TestApp(); app.profile()
+        setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.PRACTICE), Route.GuidedDialogue)) }
+        waitForText("Choose a situation")
+        // Explanations are in Arabic for this learner, so the situations are listed by their Arabic titles.
+        val first = com.polyglot.academy.core.content.Curriculum.of(LanguageCode.ENGLISH).scenarios.minBy { it.level.ordinal }
+        onNodeWithText(first.title.ar).performScrollTo().performClick()
+        waitForText("Or type your answer")
+        onNode(hasSetTextAction()).performTextInput(first.beats.first().modelAnswer)
+        onNodeWithText("Check").performScrollTo().performClick()
+        waitForText("Understood", substring = true)
     }
 
     @Test fun settingsKeepKeysAndModelsUnderAdvanced() = runDesktopComposeUiTest(800, 1700) {

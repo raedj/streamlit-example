@@ -23,6 +23,7 @@ import androidx.compose.material.icons.filled.Luggage
 import androidx.compose.material.icons.filled.Replay
 import androidx.compose.material.icons.filled.ReportProblem
 import androidx.compose.material.icons.filled.SelfImprovement
+import androidx.compose.material.icons.filled.Speed
 import androidx.compose.material.icons.filled.Spellcheck
 import androidx.compose.material.icons.filled.TheaterComedy
 import androidx.compose.material3.Button
@@ -85,12 +86,17 @@ fun PracticeScreen() {
     val isMandarin = app.profile.activeLearningLanguage == LanguageCode.MANDARIN
     ScrollScreen(s[K.PRACTICE_TITLE], showBack = false, tab = Tab.PRACTICE) {
         Text(Labels.language(s, app.profile.activeLearningLanguage), style = MaterialTheme.typography.bodyLarge, color = c.textSecondary)
-        // Four places to start, all working without a key; the rest wait behind "More".
+        // Places to start, all working without a key; the rest wait behind "More".
         val pinned = listOf(
             Triple(K.PRACTICE_REVIEW to K.PRACTICE_REVIEW_SUB, Icons.Filled.Replay, Route.Review),
             Triple(K.PRACTICE_WORDLISTS to K.PRACTICE_WORDLISTS_SUB, Icons.Filled.FormatListNumbered, Route.WordLevels),
             Triple(K.PRACTICE_SCENARIOS to K.PRACTICE_SCENARIOS_SUB, Icons.Filled.TheaterComedy, Route.Scenarios),
             Triple(K.PRACTICE_READING to K.PRACTICE_READING_SUB, Icons.AutoMirrored.Filled.MenuBook, Route.Reading),
+            // The four skills lessons cover least (SkillDrills.kt); they work without a key.
+            Triple(K.PRACTICE_SENT_LISTEN to K.PRACTICE_SENT_LISTEN_SUB, Icons.Filled.Hearing, Route.SentenceListening),
+            Triple(K.PRACTICE_GUIDED to K.PRACTICE_GUIDED_SUB, Icons.Filled.RecordVoiceOver, Route.GuidedDialogue),
+            Triple(K.PRACTICE_SENT_WRITE to K.PRACTICE_SENT_WRITE_SUB, Icons.Filled.Edit, Route.SentenceWriting),
+            Triple(K.PRACTICE_SPEED to K.PRACTICE_SPEED_SUB, Icons.Filled.Speed, Route.SpeedDrill),
         )
         val more = buildList {
             add(Triple(K.PRACTICE_SPEAKING to K.PRACTICE_SPEAKING_SUB, Icons.Filled.RecordVoiceOver, Route.SpeakingPath))

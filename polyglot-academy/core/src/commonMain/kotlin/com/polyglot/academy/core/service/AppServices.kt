@@ -77,6 +77,7 @@ class AppServices(
     val study = StudyService(store, store, achievements, scheduler, clock, ids)
     val reviews = ReviewService(store, store, scheduler, achievements, clock)
     val wordLevels = WordLevelService(store, store, scheduler, clock, ids)
+    val drills = DrillService(store, wordLevels, clock, ids)
     val dashboard = DashboardService(store, store, store, store, reviews, study, clock)
     val widget = WidgetService(dashboard, reviews, store)
     val plans = PlanService(store, store, store, reviews, clock)

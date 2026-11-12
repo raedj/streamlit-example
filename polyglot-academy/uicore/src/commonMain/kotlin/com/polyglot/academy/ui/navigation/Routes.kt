@@ -20,6 +20,11 @@ sealed interface Route {
     data object Reading : Route
     data class ReadingPassage(val passageId: String) : Route
     data object Listening : Route
+    /** Skill drills (SkillDrills.kt): whole-sentence listening, sentence writing, speed, guided conversation. */
+    data object SentenceListening : Route
+    data object SentenceWriting : Route
+    data object SpeedDrill : Route
+    data object GuidedDialogue : Route
     data object Writing : Route
     data object Pronunciation : Route
     data object Tones : Route
@@ -66,6 +71,7 @@ sealed interface Route {
             is GrammarTopic -> "grammarTopic|${r.topicId}"
             Reading -> "reading"
             is ReadingPassage -> "passage|${r.passageId}"
+            SentenceListening -> "sentListen"; SentenceWriting -> "sentWrite"; SpeedDrill -> "speed"; GuidedDialogue -> "guided"
             Listening -> "listening"; Writing -> "writing"; Pronunciation -> "pronunciation"; Tones -> "tones"; Characters -> "characters"; Letters -> "letters"; Relax -> "relax"
             SpeakingPath -> "speaking"; Phrasebook -> "phrasebook"
             Vocabulary -> "vocab"; Library -> "library"; PhotoImport -> "photo"
@@ -98,6 +104,7 @@ sealed interface Route {
                 "grammarTopic" -> GrammarTopic(arg(1))
                 "reading" -> Reading
                 "passage" -> ReadingPassage(arg(1))
+                "sentListen" -> SentenceListening; "sentWrite" -> SentenceWriting; "speed" -> SpeedDrill; "guided" -> GuidedDialogue
                 "listening" -> Listening; "writing" -> Writing; "pronunciation" -> Pronunciation; "tones" -> Tones; "characters" -> Characters; "letters" -> Letters; "relax" -> Relax
                 "speaking" -> SpeakingPath; "phrasebook" -> Phrasebook
                 "vocab" -> Vocabulary; "library" -> Library; "photo" -> PhotoImport

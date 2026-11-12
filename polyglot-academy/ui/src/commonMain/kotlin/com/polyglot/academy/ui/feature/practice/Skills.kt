@@ -259,7 +259,7 @@ fun WritingScreen() {
 }
 
 @Composable
-private fun WritingFeedbackView(fb: WritingFeedback, lang: LanguageCode) {
+internal fun WritingFeedbackView(fb: WritingFeedback, lang: LanguageCode) {
     val s = LocalStrings.current
     val c = PolyglotTheme.colors
     PolyCard {
