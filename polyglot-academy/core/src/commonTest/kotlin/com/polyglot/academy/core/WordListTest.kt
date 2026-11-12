@@ -66,16 +66,27 @@ class WordListTest {
         if (lang == LanguageCode.MANDARIN) s.count { it in '一'..'鿿' } else s.split(Regex("[\\s-]+")).count { t -> t.any { it.isLetterOrDigit() } }
 
     // Until 2026-11-10 the examples stopped growing after level 4 (about 7 English words, 8–9 characters in level 10).
-    @Test fun c1WordsHaveALongExampleAndSentencesGrowWithTheLevel() {
-        val longMin = mapOf(LanguageCode.ENGLISH to 13, LanguageCode.MANDARIN to 18)
+    // From 2026-11-11 every word from level 5 has a long example; the minimum rises at B1 (5–6), B2 (7–8) and C1 (9–10).
+    // Same table as LONG_EXAMPLE in tools/gen_wordlists.py.
+    @Test fun upperWordsHaveALongExampleAndSentencesGrowWithTheLevel() {
+        val longMin = mapOf(
+            LanguageCode.ENGLISH to listOf(10, 12, 13), LanguageCode.MANDARIN to listOf(14, 16, 18),
+            LanguageCode.MALAY to listOf(10, 12, 13), LanguageCode.SPANISH to listOf(10, 12, 13),
+            LanguageCode.FRENCH to listOf(10, 12, 13), LanguageCode.URDU to listOf(10, 12, 13),
+            LanguageCode.TURKISH to listOf(7, 9, 10),
+        )
         report(lists.filter { it.language in longMin }.flatMap { l ->
-            val min = longMin.getValue(l.language)
-            val avg = (1..10).associateWith { lv -> l.entries.filter { it.level == lv }.flatMap { it.examples }.map { length(l.language, it.sentence) }.average() }
+            val bands = longMin.getValue(l.language)
+            fun minFor(level: Int) = bands[if (level <= 6) 0 else if (level <= 8) 1 else 2]
+            fun avg(levels: IntRange) = l.entries.filter { it.level in levels }.flatMap { it.examples }.map { length(l.language, it.sentence) }.average()
             buildList {
-                l.entries.filter { it.level >= 9 && it.examples.none { ex -> length(l.language, ex.sentence) >= min } }
-                    .forEach { add("${it.id}: C1 word without an example of at least $min") }
-                if (avg.getValue(9) < avg.getValue(6) + 3) add("${l.language}: level 9 examples average ${avg.getValue(9)}, level 6 ${avg.getValue(6)}")
-                if (avg.getValue(10) < avg.getValue(6) + 3) add("${l.language}: level 10 examples average ${avg.getValue(10)}, level 6 ${avg.getValue(6)}")
+                l.entries.filter { it.level >= 5 && it.examples.none { ex -> length(l.language, ex.sentence) >= minFor(it.level) } }
+                    .forEach { add("${it.id}: level ${it.level} word without an example of at least ${minFor(it.level)}") }
+                val a12 = avg(1..2)
+                val a56 = avg(5..6)
+                val a910 = avg(9..10)
+                if (a56 < a12 + 2.5) add("${l.language}: levels 5–6 examples average $a56, levels 1–2 $a12")
+                if (a910 < a56) add("${l.language}: levels 9–10 examples average $a910, levels 5–6 $a56")
             }
         })
     }

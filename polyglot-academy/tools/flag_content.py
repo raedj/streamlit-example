@@ -34,7 +34,8 @@ the content in the app; word-list items come from content/wordlists/<lang>.{word
 import argparse, csv, datetime, hashlib, json, os, re, sys, urllib.error, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-LANGS = {'en': 'English', 'zh': 'Mandarin Chinese (simplified characters, pinyin with tone marks)', 'ms': 'Malay (Bahasa Melayu, Malaysia)'}
+LANGS = {'en': 'English', 'zh': 'Mandarin Chinese (simplified characters, pinyin with tone marks)', 'ms': 'Malay (Bahasa Melayu, Malaysia)',
+         'es': 'Spanish (Spain)', 'fr': 'French (France)', 'tr': 'Turkish', 'ur': 'Urdu (Nastaliq script)'}
 VERDICTS = ('ok', 'doubtful', 'wrong')
 DISPUTED = 'ai_disputed'
 KEY_ENV = {'anthropic': 'ANTHROPIC_API_KEY', 'openai': 'OPENAI_API_KEY', 'gemini': 'GEMINI_API_KEY', 'openrouter': 'OPENROUTER_API_KEY'}
@@ -73,7 +74,9 @@ def digest(text):
 def curriculum_items(lang):
     p = path('content', 'review', 'items', f'{lang}.curriculum.tsv')
     if not os.path.exists(p):
-        sys.exit(f'{p} is missing: run the core tests once to write it')
+        # Languages without a lesson course (es, fr, tr, ur) only have word-list items.
+        print(f'note: {p} is missing; using word-list items only (run the core tests to write it)', file=sys.stderr)
+        return []
     return [dict(id=r['id'], kind=r['kind'], level=r['level'], text=r['text'], source='curriculum') for r in read_tsv(p)]
 
 

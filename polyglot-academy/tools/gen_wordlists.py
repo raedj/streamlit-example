@@ -36,8 +36,22 @@ REQUIRED_EXTRA = {
     ('zh', 'noun'): {'measure'}, ('ur', 'noun'): {'gender'},
 }
 PRON_REQUIRED = {'en', 'zh', 'ar', 'ur'}
-# Minimum length of the long example each C1 word (levels 9–10) needs; languages not listed have none yet.
-LONG_EXAMPLE = {'en': 13, 'zh': 18}
+# Minimum length of the long example each word from level 5 needs, for levels 5–6 (B1), 7–8 (B2) and 9–10 (C1),
+# so that sentences grow with the level. Mandarin counts characters; Turkish needs fewer words because its words
+# carry suffixes. Languages not listed have no long examples yet.
+LONG_EXAMPLE = {
+    'en': (10, 12, 13), 'zh': (14, 16, 18), 'ms': (10, 12, 13),
+    'es': (10, 12, 13), 'fr': (10, 12, 13), 'ur': (10, 12, 13),
+    # Turkish is agglutinative: one word carries what takes two or three in English, so its minimums are lower.
+    'tr': (7, 9, 10),
+}
+
+
+def long_min(lang, level):
+    t = LONG_EXAMPLE.get(lang)
+    if not t or level < 5:
+        return None
+    return t[0] if level <= 6 else t[1] if level <= 8 else t[2]
 TONE_MARKS = set('āáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ')
 ARABIC_MARKS = re.compile('[ً-ْ]')
 ARABIC_LETTERS = re.compile('[ء-ي]')
@@ -159,8 +173,8 @@ def check_language(lang):
         if e['ar'] and not ARABIC_LETTERS.search(e['ar']):
             fail(epath, n, f"ar must be an Arabic translation, got {e['ar']!r}")
         c = word_count(lang, e['sentence'])
-        # From level 7 (B2) a word may also have a longer example; levels 9–10 (C1) need one (see below).
-        upper = (int(e['rank']) - 1) // LEVEL_SIZE + 1 >= 7
+        # From level 5 (B1) a word may also have a longer example; languages in LONG_EXAMPLE need one (see below).
+        upper = (int(e['rank']) - 1) // LEVEL_SIZE + 1 >= 5
         lo, hi = ((4, 40) if upper else (4, 24)) if lang == 'zh' else ((4, 22) if upper else (4, 12))
         if not lo <= c <= hi:
             fail(epath, n, f'example length must be {lo}–{hi} {"characters" if lang == "zh" else "words"}, got {c}')
@@ -173,10 +187,10 @@ def check_language(lang):
         have = len(by_rank.get(r, []))
         if have < need:
             fail(epath, 0, f"rank {r} ({w['term']}) needs at least {need} examples, has {have}")
-        # C1 words need one long example so that sentences grow with the level (en and zh so far).
-        long_min = LONG_EXAMPLE.get(lang)
-        if long_min and (r - 1) // LEVEL_SIZE + 1 >= 9 and not any(word_count(lang, e['sentence']) >= long_min for e in by_rank.get(r, [])):
-            fail(epath, 0, f"rank {r} ({w['term']}) is C1 and needs one example of at least {long_min} {'characters' if lang == 'zh' else 'words'}")
+        # From level 5, words need one long example so that sentences grow with the level.
+        lm = long_min(lang, (r - 1) // LEVEL_SIZE + 1)
+        if lm and not any(word_count(lang, e['sentence']) >= lm for e in by_rank.get(r, [])):
+            fail(epath, 0, f"rank {r} ({w['term']}) needs one example of at least {lm} {'characters' if lang == 'zh' else 'words'}")
     return words, examples
 
 
