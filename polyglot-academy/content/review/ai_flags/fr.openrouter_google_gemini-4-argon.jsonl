@@ -5380,3 +5380,24 @@
 {"id": "fr_w_paillasson", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "0f261b965d6e", "date": "2026-11-11"}
 {"id": "fr_w_paillasson#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "782841b99992", "date": "2026-11-11"}
 {"id": "fr_w_paillasson#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "4d53fb041d76", "date": "2026-11-11"}
+{"id": "fr_w_poire#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "f31c7f0766b6", "date": "2026-11-13"}
+{"id": "fr_w_courant#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "422183c50269", "date": "2026-11-13"}
+{"id": "fr_w_insulter#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "16241ee74687", "date": "2026-11-13"}
+{"id": "fr_w_haricot#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "6da1c53809b5", "date": "2026-11-13"}
+{"id": "fr_w_danseur#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "051ed947b4d4", "date": "2026-11-13"}
+{"id": "fr_w_diamant#ex2", "verdict": "doubtful", "problem": "In Arabic, أهداها (feminine pronoun) refers to the diamond (ماسة), whereas in French 'offerte' refers to the ring (خاتم / bague).", "fix": "تلبس جدّتي خاتمًا فيه ماسة صغيرة أهداه إياها زوجها.", "model": "openrouter:google/gemini-4-argon", "hash": "1b1121a2c700", "date": "2026-11-13"}
+{"id": "fr_w_causer#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "c4b847fe9162", "date": "2026-11-13"}
+{"id": "fr_w_parier#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "fb9604cf0124", "date": "2026-11-13"}
+{"id": "fr_w_piloter#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "e91189dc0ba9", "date": "2026-11-13"}
+{"id": "fr_w_perroquet#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "a6f92b21da47", "date": "2026-11-13"}
+{"id": "fr_w_miette#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "94296b2cb356", "date": "2026-11-13"}
+{"id": "fr_w_fasciner#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "fe858886f4cb", "date": "2026-11-13"}
+{"id": "fr_w_sardine#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "e995f7bdb21f", "date": "2026-11-13"}
+{"id": "fr_w_etable#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "dc8b26b28329", "date": "2026-11-13"}
+{"id": "fr_w_inevitable#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "e13f3ed68683", "date": "2026-11-13"}
+{"id": "fr_w_enfreindre#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "988d2e4c6caa", "date": "2026-11-13"}
+{"id": "fr_w_convoiter#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "00141ceef449", "date": "2026-11-13"}
+{"id": "fr_w_tressaillir#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "3f79b61c3157", "date": "2026-11-13"}
+{"id": "fr_w_bondir#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "6cec2c09d717", "date": "2026-11-13"}
+{"id": "fr_w_reapprovisionner#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "fc6c58783af4", "date": "2026-11-13"}
+{"id": "fr_w_stupefier#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:google/gemini-4-argon", "hash": "c674101ea3f0", "date": "2026-11-13"}

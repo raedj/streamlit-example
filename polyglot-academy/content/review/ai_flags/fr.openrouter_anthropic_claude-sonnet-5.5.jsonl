@@ -5376,3 +5376,28 @@
 {"id": "fr_w_paillasson", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "0f261b965d6e", "date": "2026-11-11"}
 {"id": "fr_w_paillasson#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "782841b99992", "date": "2026-11-11"}
 {"id": "fr_w_paillasson#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "4d53fb041d76", "date": "2026-11-11"}
+{"id": "fr_w_plume", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "161b2b934765", "date": "2026-11-13"}
+{"id": "fr_w_plume#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "1c9e961cb369", "date": "2026-11-13"}
+{"id": "fr_w_plume#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "651e0b9e9db5", "date": "2026-11-13"}
+{"id": "fr_w_poire#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "f31c7f0766b6", "date": "2026-11-13"}
+{"id": "fr_w_courant#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "422183c50269", "date": "2026-11-13"}
+{"id": "fr_w_insulter#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "16241ee74687", "date": "2026-11-13"}
+{"id": "fr_w_haricot#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "6da1c53809b5", "date": "2026-11-13"}
+{"id": "fr_w_danseur#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "051ed947b4d4", "date": "2026-11-13"}
+{"id": "fr_w_diamant#ex2", "verdict": "doubtful", "problem": "The relative clause is ambiguous. 'offerte' agrees with 'bague', but the target word is 'diamant', so 'que' could refer to either. The English and Arabic leave the same ambiguity. This is grammatical but unclear for a learner.", "fix": "Ma grand-mère porte une bague ornée d'un petit diamant, que son mari lui a offerte.", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "1b1121a2c700", "date": "2026-11-13"}
+{"id": "fr_w_causer#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "c4b847fe9162", "date": "2026-11-13"}
+{"id": "fr_w_parier#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "fb9604cf0124", "date": "2026-11-13"}
+{"id": "fr_w_piloter#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "e91189dc0ba9", "date": "2026-11-13"}
+{"id": "fr_w_berceau#ex1", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "a04dc70a7d2a", "date": "2026-11-13"}
+{"id": "fr_w_perroquet#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "a6f92b21da47", "date": "2026-11-13"}
+{"id": "fr_w_miette#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "94296b2cb356", "date": "2026-11-13"}
+{"id": "fr_w_fasciner#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "fe858886f4cb", "date": "2026-11-13"}
+{"id": "fr_w_sardine#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "e995f7bdb21f", "date": "2026-11-13"}
+{"id": "fr_w_etable#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "dc8b26b28329", "date": "2026-11-13"}
+{"id": "fr_w_inevitable#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "e13f3ed68683", "date": "2026-11-13"}
+{"id": "fr_w_enfreindre#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "988d2e4c6caa", "date": "2026-11-13"}
+{"id": "fr_w_convoiter#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "00141ceef449", "date": "2026-11-13"}
+{"id": "fr_w_tressaillir#ex2", "verdict": "doubtful", "problem": "French and English are correct. The Arabic 'ارتعدت' means 'trembled' and is a bit strong for a start. 'انصفق' is also unusual. 'انتفضت' would be more natural.", "fix": "حين أُغلق الباب بقوة خلفها، انتفضت جدّتي على كرسيّها.", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "3f79b61c3157", "date": "2026-11-13"}
+{"id": "fr_w_bondir#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "6cec2c09d717", "date": "2026-11-13"}
+{"id": "fr_w_reapprovisionner#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "fc6c58783af4", "date": "2026-11-13"}
+{"id": "fr_w_stupefier#ex2", "verdict": "ok", "problem": "", "fix": "", "model": "openrouter:anthropic/claude-sonnet-5.5", "hash": "c674101ea3f0", "date": "2026-11-13"}

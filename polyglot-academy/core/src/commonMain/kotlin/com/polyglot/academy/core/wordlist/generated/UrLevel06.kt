@@ -901,7 +901,7 @@ internal object UrLevel06 {
         "1798	عید کی رات گھر میں دیے جلائے گئے۔	Oil lamps were lit at home on the night of Eid.	أُضيئت السُّرُج في البيت ليلة العيد.	",
         "1798	پرانے زمانے میں گاؤں کے ہر گھر میں رات کو مٹی کا ایک دیا جلتا تھا۔	In the old days a clay lamp burned at night in every house in the village.	في الماضي كان سراج من الطين يشتعل ليلًا في كل بيت في القرية.	",
         "1799	گاؤں کی عورتیں گھڑے میں پانی لاتی ہیں۔	The village women bring water in pitchers.	تجلب نساء القرية الماء في الجِرار.	",
-        "1799	گاؤں کی عورتیں صبح کنویں سے پانی بھر کر سر پر گھڑا اٹھاتی ہیں۔	In the morning the village women fill their pots with water from the well and carry them on their heads.	في الصباح تملأ نساء القرية الجرار بالماء من البئر وتحملنها على رؤوسهن.	",
+        "1799	گاؤں کی عورتیں صبح کنویں سے پانی بھر کر سر پر گھڑا اٹھاتی ہیں۔	In the morning the village women fill their pots with water from the well and carry them on their heads.	في الصباح تملأ نساء القرية الجرار بالماء من البئر ويحملنها على رؤوسهن.	",
         "1800	دادی چرخے پر دھاگا بناتی تھیں۔	Grandma used to make thread on the spinning wheel.	كانت جدّتي تغزل الخيط على المغزل.	",
         "1800	دادی امی جوانی میں چرخے پر روئی سے دھاگا بناتی تھیں۔	In her youth Grandma used to spin thread from cotton on a spinning wheel.	كانت جدّتي في شبابها تغزل الخيط من القطن على المغزل.	",
     )

@@ -802,7 +802,7 @@ internal object TrLevel09 {
         "2648	Küçük köyde huzur buldum.	I found peace in the small village.	وجدت الراحة في القرية الصغيرة.	",
         "2648	Akşamları göl kenarında oturunca dedem büyük bir huzur hissettiğini söylüyor.	My grandfather says he feels great peace when he sits by the lake in the evenings.	يقول جدّي إنه يشعر بسكينة كبيرة حين يجلس على ضفّة البحيرة في المساء.	",
         "2649	Annem haberi büyük bir şaşkınlıkla dinledi.	My mother listened to the news in great astonishment.	استمعت أمّي إلى الخبر بدهشة كبيرة.	",
-        "2649	Büyük şaşkınlığımızla küçük kardeşim bütün ıspanağı tek kelime etmeden yedi.	To our great astonishment my little brother ate all the spinach without a word.	لدهشتنا الكبيرة أكل أخي الصغير كل السبانخ دون أن ينطق بكلمة.	",
+        "2649	Küçük kardeşim bütün ıspanağı tek kelime etmeden yiyince hepimiz büyük bir şaşkınlık yaşadık.	When my little brother ate all the spinach without a word, we were all greatly astonished.	حين أكل أخي الصغير كل السبانخ دون أن ينطق بكلمة أصابتنا جميعًا دهشة كبيرة.	",
         "2650	Öğretmenimiz çok merhametli bir insan.	Our teacher is a very merciful person.	معلّمنا إنسان رحيم جدًا.	",
         "2650	Yeni doktor çok merhametli biri ve her hastayla uzun uzun konuşuyor.	The new doctor is a very compassionate person and talks to every patient at length.	الطبيب الجديد شخص رحيم جدًا، ويتحدّث مع كل مريض مطوّلًا.	",
         "2651	Yeni komşumuz çok geveze.	Our new neighbour is very talkative.	جارنا الجديد ثرثار جدًا.	",

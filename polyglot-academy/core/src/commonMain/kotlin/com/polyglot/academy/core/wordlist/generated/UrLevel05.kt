@@ -727,7 +727,7 @@ internal object UrLevel05 {
         "1413	امی ہر رات ٹی وی پر ڈرامہ دیکھتی ہیں۔	Mum watches a drama on TV every night.	تشاهد أمي مسلسلًا على التلفاز كل ليلة.	",
         "1413	امی ہر رات کھانے کے بعد ٹی وی پر اپنا پسندیدہ ڈرامہ دیکھتی ہیں۔	Every night after dinner Mum watches her favourite drama on TV.	كل ليلة بعد العشاء تشاهد أمي مسلسلها المفضّل على التلفاز.	",
         "1414	موسیقار اسٹیج پر آ گئے۔	The musicians came on stage.	صعد الموسيقيون إلى المسرح.	",
-        "1414	چچا ایک موسیقار ہیں اور ہر ہفتے کی شام ایک ریستوران میں گٹار بجاتے ہیں۔	My uncle is a musician and plays the guitar at a restaurant one evening every week.	عمّي موسيقيّ، ويعزف الغيتار في مطعم مساء كل أسبوع.	",
+        "1414	چچا ایک موسیقار ہیں اور ہر اتوار کی شام ایک ریستوران میں گٹار بجاتے ہیں۔	My uncle is a musician and plays the guitar at a restaurant every Sunday evening.	عمّي موسيقيّ، ويعزف الغيتار في مطعم مساء كل أحد.	",
         "1415	مصور نے سمندر کی تصویر بنائی۔	The painter painted a picture of the sea.	رسم الرسّام صورة البحر.	",
         "1415	ایک مصور نے سارا گرمیوں کا موسم ہمارے گاؤں میں دریا کی تصویر بنانے میں گزارا۔	A painter spent the whole summer in our village painting a picture of the river.	قضى رسّام الصيف كله في قريتنا يرسم لوحة للنهر.	",
         "1416	چوک کے بیچ میں ایک بڑا مجسمہ ہے۔	There's a big statue in the middle of the square.	في وسط الساحة تمثال كبير.	",
