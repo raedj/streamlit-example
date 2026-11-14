@@ -1,0 +1,6 @@
+whisper.cpp v1.9.5 (MIT, see LICENSE), from https://github.com/ggml-org/whisper.cpp/archive/refs/tags/v1.9.5.tar.gz
+(SHA-256 ff1a9053feb509ff9d7729703355541ae9690073a6b1c40eb692c962e0dc1720), downloaded 2026-11-01 with the owner's approval.
+Only the files a CPU build needs are kept: include/, src/whisper.cpp, src/whisper-arch.h, src/aneforge/ (a stub off Apple),
+Its ggml copy was removed on 2026-11-01: whisper.cpp now builds against the ggml vendored with llama.cpp
+(androidApp/src/main/cpp/llama/ggml), so both engines share one ggml in libpolyglot_ml.so.
+No file was changed.

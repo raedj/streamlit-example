@@ -1,0 +1,901 @@
+item_id	kind	level	text	pron	en	ar	status	correction	reviewer	date	note
+en_w_the	word	1	the	/ðə/	the (definite article)	أداة التعريف (الـ)					
+en_w_the#ex1	example	1	The coffee is hot.		The coffee is hot.	القهوة ساخنة.					
+en_w_the#ex2	example	1	Close the door, please.		Close the door, please.	أغلق الباب من فضلك.					
+en_w_be	word	1	be	/bi/	to be	يكون					
+en_w_be#ex1	example	1	I am tired today.		I am tired today.	أنا متعب اليوم.					
+en_w_be#ex2	example	1	They were at home last night.		They were at home last night.	كانوا في البيت الليلة الماضية.					
+en_w_you	word	1	you	/ju/	you	أنت، أنتم					
+en_w_you#ex1	example	1	You can sit here.		You can sit here.	يمكنك الجلوس هنا.					
+en_w_you#ex2	example	1	I can help you with that.		I can help you with that.	أستطيع مساعدتك في ذلك.					
+en_w_i	word	1	I	/aɪ/	I	أنا					
+en_w_i#ex1	example	1	I want some tea, please.		I want some tea, please.	أريد بعض الشاي من فضلك.					
+en_w_i#ex2	example	1	My name is Sara.		My name is Sara.	اسمي سارة.					
+en_w_to	word	1	to	/tu/	to, toward	إلى					
+en_w_to#ex1	example	1	We go to school every day.		We go to school every day.	نذهب إلى المدرسة كل يوم.					
+en_w_to#ex2	example	1	I need to talk to you.		I need to talk to you.	أحتاج أن أتحدث إليك.					
+en_w_a	word	1	a	/ə/	a, an (indefinite article)	أداة النكرة (واحد)					
+en_w_a#ex1	example	1	She has a new car.		She has a new car.	لديها سيارة جديدة.					
+en_w_a#ex2	example	1	I have an idea.		I have an idea.	لديّ فكرة.					
+en_w_and	word	1	and	/ænd/	and	و					
+en_w_and#ex1	example	1	My mother and father are here.		My mother and father are here.	أمي وأبي هنا.					
+en_w_and#ex2	example	1	We eat bread and drink tea.		We eat bread and drink tea.	نأكل الخبز ونشرب الشاي.					
+en_w_it	word	1	it	/ɪt/	it	هو، هي (لغير العاقل)					
+en_w_it#ex1	example	1	It is cold today.		It is cold today.	الجو بارد اليوم.					
+en_w_it#ex2	example	1	I like this book; it's very good.		I like this book; it's very good.	يعجبني هذا الكتاب؛ إنه جيد جدًا.					
+en_w_not	word	1	not	/nɑt/	not	لا، ليس					
+en_w_not#ex1	example	1	I am not hungry now.		I am not hungry now.	لست جائعًا الآن.					
+en_w_not#ex2	example	1	This is not my phone.		This is not my phone.	هذا ليس هاتفي.					
+en_w_that	word	1	that	/ðæt/	that	ذلك، تلك؛ أنّ					
+en_w_that#ex1	example	1	That car is very old.		That car is very old.	تلك السيارة قديمة جدًا.					
+en_w_that#ex2	example	1	I think that he is right.		I think that he is right.	أعتقد أنه على حق.					
+en_w_do	word	1	do	/du/	to do	يفعل					
+en_w_do#ex1	example	1	What do you do?		What do you do?	ماذا تعمل؟					
+en_w_do#ex2	example	1	I don't know his name.		I don't know his name.	لا أعرف اسمه.					
+en_w_have	word	1	have	/hæv/	to have	يملك، لديه					
+en_w_have#ex1	example	1	I have two brothers.		I have two brothers.	لديّ أخوان.					
+en_w_have#ex2	example	1	We had dinner at home.		We had dinner at home.	تناولنا العشاء في البيت.					
+en_w_what	word	1	what	/wʌt/	what	ماذا، ما					
+en_w_what#ex1	example	1	What is your name?		What is your name?	ما اسمك؟					
+en_w_what#ex2	example	1	What time is it now?		What time is it now?	كم الساعة الآن؟					
+en_w_of	word	1	of	/ʌv/	of	من (للإضافة)					
+en_w_of#ex1	example	1	She is a friend of my sister.		She is a friend of my sister.	هي صديقة أختي.					
+en_w_of#ex2	example	1	Most of the people are here.		Most of the people are here.	معظم الناس هنا.					
+en_w_in	word	1	in	/ɪn/	in	في					
+en_w_in#ex1	example	1	My father is in the car.		My father is in the car.	أبي في السيارة.					
+en_w_in#ex2	example	1	We live in a small house.		We live in a small house.	نعيش في بيت صغير.					
+en_w_we	word	1	we	/wi/	we	نحن					
+en_w_we#ex1	example	1	We are ready to start.		We are ready to start.	نحن مستعدون للبدء.					
+en_w_we#ex2	example	1	Our house is near the school.		Our house is near the school.	بيتنا قريب من المدرسة.					
+en_w_he	word	1	he	/hi/	he	هو					
+en_w_he#ex1	example	1	He is my brother.		He is my brother.	هو أخي.					
+en_w_he#ex2	example	1	His wife is a doctor.		His wife is a doctor.	زوجته طبيبة.					
+en_w_this	word	1	this	/ðɪs/	this	هذا، هذه					
+en_w_this#ex1	example	1	This is my friend Omar.		This is my friend Omar.	هذا صديقي عمر.					
+en_w_this#ex2	example	1	These books are new.		These books are new.	هذه الكتب جديدة.					
+en_w_on	word	1	on	/ɑn/	on	على					
+en_w_on#ex1	example	1	The phone is on the table.		The phone is on the table.	الهاتف على الطاولة.					
+en_w_on#ex2	example	1	I see her on the bus every day.		I see her on the bus every day.	أراها في الحافلة كل يوم.					
+en_w_for	word	1	for	/fɔr/	for	لـ، من أجل					
+en_w_for#ex1	example	1	This is for you.		This is for you.	هذا لك.					
+en_w_for#ex2	example	1	We waited for an hour.		We waited for an hour.	انتظرنا ساعة.					
+en_w_she	word	1	she	/ʃi/	she	هي					
+en_w_she#ex1	example	1	She is a teacher.		She is a teacher.	هي معلّمة.					
+en_w_she#ex2	example	1	Her mother is very kind.		Her mother is very kind.	أمها لطيفة جدًا.					
+en_w_they	word	1	they	/ðeɪ/	they	هم، هنّ					
+en_w_they#ex1	example	1	They live in the city.		They live in the city.	يعيشون في المدينة.					
+en_w_they#ex2	example	1	Their children are at school.		Their children are at school.	أطفالهم في المدرسة.					
+en_w_know	word	1	know	/noʊ/	to know	يعرف					
+en_w_know#ex1	example	1	I know her name.		I know her name.	أعرف اسمها.					
+en_w_know#ex2	example	1	Do you know this place?		Do you know this place?	هل تعرف هذا المكان؟					
+en_w_get	word	1	get	/ɡɛt/	to get	يحصل على					
+en_w_get#ex1	example	1	I get up early every morning.		I get up early every morning.	أستيقظ مبكرًا كل صباح.					
+en_w_get#ex2	example	1	She got a new job.		She got a new job.	حصلت على وظيفة جديدة.					
+en_w_go	word	1	go	/ɡoʊ/	to go	يذهب					
+en_w_go#ex1	example	1	Let's go home now.		Let's go home now.	لنذهب إلى البيت الآن.					
+en_w_go#ex2	example	1	He went to the shop.		He went to the shop.	ذهب إلى المتجر.					
+en_w_can	word	1	can	/kæn/	can, be able to	يستطيع					
+en_w_can#ex1	example	1	Can you help me, please?		Can you help me, please?	هل يمكنك مساعدتي من فضلك؟					
+en_w_can#ex2	example	1	I can't find my phone.		I can't find my phone.	لا أستطيع إيجاد هاتفي.					
+en_w_with	word	1	with	/wɪð/	with	مع					
+en_w_with#ex1	example	1	I live with my family.		I live with my family.	أعيش مع عائلتي.					
+en_w_with#ex2	example	1	Come with me, please.		Come with me, please.	تعال معي من فضلك.					
+en_w_no	word	1	no	/noʊ/	no	لا					
+en_w_no#ex1	example	1	No, I am not ready.		No, I am not ready.	لا، لست مستعدًا.					
+en_w_no#ex2	example	1	There is no water here.		There is no water here.	لا يوجد ماء هنا.					
+en_w_yes	word	1	yes	/jɛs/	yes	نعم					
+en_w_yes#ex1	example	1	Yes, I know him.		Yes, I know him.	نعم، أعرفه.					
+en_w_yes#ex2	example	1	Yeah, that is a good idea.		Yeah, that is a good idea.	نعم، هذه فكرة جيدة.					
+en_w_just	word	1	just	/dʒʌst/	just, only; a moment ago	فقط؛ للتو					
+en_w_just#ex1	example	1	I just want to sleep.		I just want to sleep.	أريد أن أنام فقط.					
+en_w_just#ex2	example	1	He just left the house.		He just left the house.	غادر البيت للتو.					
+en_w_there	word	1	there	/ðɛr/	there	هناك					
+en_w_there#ex1	example	1	There is a dog in the street.		There is a dog in the street.	هناك كلب في الشارع.					
+en_w_there#ex2	example	1	Put the book over there.		Put the book over there.	ضع الكتاب هناك.					
+en_w_here	word	1	here	/hɪr/	here	هنا					
+en_w_here#ex1	example	1	Please come here and sit down.		Please come here and sit down.	تعال إلى هنا من فضلك واجلس.					
+en_w_here#ex2	example	1	My friends are here now.		My friends are here now.	أصدقائي هنا الآن.					
+en_w_all	word	1	all	/ɔl/	all	كل، جميع					
+en_w_all#ex1	example	1	All my friends are here.		All my friends are here.	كل أصدقائي هنا.					
+en_w_all#ex2	example	1	We ate all the bread.		We ate all the bread.	أكلنا كل الخبز.					
+en_w_so	word	1	so	/soʊ/	so; very	لذلك؛ جدًا					
+en_w_so#ex1	example	1	I was tired, so I went to bed.		I was tired, so I went to bed.	كنت متعبًا، لذلك ذهبت إلى النوم.					
+en_w_so#ex2	example	1	The movie was so good.		The movie was so good.	كان الفيلم جيدًا جدًا.					
+en_w_but	word	1	but	/bʌt/	but	لكن					
+en_w_but#ex1	example	1	It is small but nice.		It is small but nice.	إنه صغير لكنه جميل.					
+en_w_but#ex2	example	1	I want to come, but I can't.		I want to come, but I can't.	أريد أن آتي، لكنني لا أستطيع.					
+en_w_like	word	1	like	/laɪk/	to like; like (similar to)	يحب، يعجبه؛ مثل					
+en_w_like#ex1	example	1	I like your new car.		I like your new car.	تعجبني سيارتك الجديدة.					
+en_w_like#ex2	example	1	She likes music and movies.		She likes music and movies.	تحب الموسيقى والأفلام.					
+en_w_will	word	1	will	/wɪl/	will (future)	سوف					
+en_w_will#ex1	example	1	I will call you tomorrow.		I will call you tomorrow.	سأتصل بك غدًا.					
+en_w_will#ex2	example	1	It won't take long.		It won't take long.	لن يستغرق وقتًا طويلًا.					
+en_w_want	word	1	want	/wɑnt/	to want	يريد					
+en_w_want#ex1	example	1	Do you want some coffee?		Do you want some coffee?	هل تريد بعض القهوة؟					
+en_w_want#ex2	example	1	I want to learn something new.		I want to learn something new.	أريد أن أتعلّم شيئًا جديدًا.					
+en_w_out	word	1	out	/aʊt/	out	خارج					
+en_w_out#ex1	example	1	Let's go out tonight.		Let's go out tonight.	لنخرج الليلة.					
+en_w_out#ex2	example	1	He is out with his friends.		He is out with his friends.	هو في الخارج مع أصدقائه.					
+en_w_up	word	1	up	/ʌp/	up	أعلى، فوق					
+en_w_up#ex1	example	1	I get up very early.		I get up very early.	أستيقظ مبكرًا جدًا.					
+en_w_up#ex2	example	1	Turn the music up, please.		Turn the music up, please.	ارفع صوت الموسيقى من فضلك.					
+en_w_at	word	1	at	/æt/	at	في، عند					
+en_w_at#ex1	example	1	I am at home now.		I am at home now.	أنا في البيت الآن.					
+en_w_at#ex2	example	1	Look at the baby.		Look at the baby.	انظر إلى الطفل.					
+en_w_come	word	1	come	/kʌm/	to come	يأتي					
+en_w_come#ex1	example	1	Can you come to my house tonight?		Can you come to my house tonight?	هل يمكنك أن تأتي إلى بيتي الليلة؟					
+en_w_come#ex2	example	1	She came home late.		She came home late.	عادت إلى البيت متأخرة.					
+en_w_think	word	1	think	/θɪŋk/	to think	يفكر، يعتقد					
+en_w_think#ex1	example	1	I think it will rain.		I think it will rain.	أعتقد أنها ستمطر.					
+en_w_think#ex2	example	1	What do you think about it?		What do you think about it?	ما رأيك في ذلك؟					
+en_w_right	word	1	right	/raɪt/	correct; right (side)	صحيح؛ يمين					
+en_w_right#ex1	example	1	You are right about that.		You are right about that.	أنت على حق في ذلك.					
+en_w_right#ex2	example	1	Turn right at the school.		Turn right at the school.	انعطف يمينًا عند المدرسة.					
+en_w_now	word	1	now	/naʊ/	now	الآن					
+en_w_now#ex1	example	1	I can't talk now.		I can't talk now.	لا أستطيع التحدث الآن.					
+en_w_now#ex2	example	1	Where are you now?		Where are you now?	أين أنت الآن؟					
+en_w_good	word	1	good	/ɡʊd/	good	جيد					
+en_w_good#ex1	example	1	This bread is very good.		This bread is very good.	هذا الخبز جيد جدًا.					
+en_w_good#ex2	example	1	She is a better cook than me.		She is a better cook than me.	هي طبّاخة أفضل مني.					
+en_w_see	word	1	see	/si/	to see	يرى					
+en_w_see#ex1	example	1	I can see your house from here.		I can see your house from here.	أستطيع رؤية بيتك من هنا.					
+en_w_see#ex2	example	1	We saw a good movie.		We saw a good movie.	شاهدنا فيلمًا جيدًا.					
+en_w_about	word	1	about	/əˈbaʊt/	about	عن، حول					
+en_w_about#ex1	example	1	Tell me about your family.		Tell me about your family.	حدّثني عن عائلتك.					
+en_w_about#ex2	example	1	The movie is about a dog.		The movie is about a dog.	الفيلم عن كلب.					
+en_w_well	word	1	well	/wɛl/	well	جيدًا؛ حسنًا					
+en_w_well#ex1	example	1	I am very well, thank you.		I am very well, thank you.	أنا بخير جدًا، شكرًا لك.					
+en_w_well#ex2	example	1	Well, I don't know.		Well, I don't know.	حسنًا، لا أعرف.					
+en_w_one	word	1	one	/wʌn/	one	واحد					
+en_w_one#ex1	example	1	I have one sister.		I have one sister.	لديّ أخت واحدة.					
+en_w_one#ex2	example	1	One day I will go there.		One day I will go there.	يومًا ما سأذهب إلى هناك.					
+en_w_how	word	1	how	/haʊ/	how	كيف					
+en_w_how#ex1	example	1	How are you today?		How are you today?	كيف حالك اليوم؟					
+en_w_how#ex2	example	1	How do you make this bread?		How do you make this bread?	كيف تصنع هذا الخبز؟					
+en_w_say	word	1	say	/seɪ/	to say	يقول					
+en_w_say#ex1	example	1	What did she say?		What did she say?	ماذا قالت؟					
+en_w_say#ex2	example	1	He said that he was tired.		He said that he was tired.	قال إنه متعب.					
+en_w_if	word	1	if	/ɪf/	if	إذا					
+en_w_if#ex1	example	1	Call me if you need help.		Call me if you need help.	اتصل بي إذا احتجت إلى مساعدة.					
+en_w_if#ex2	example	1	If it rains, we will not go out.		If it rains, we will not go out.	إذا أمطرت فلن نخرج.					
+en_w_time	word	1	time	/taɪm/	time	وقت، مرة					
+en_w_time#ex1	example	1	What time is the movie?		What time is the movie?	متى موعد الفيلم؟					
+en_w_time#ex2	example	1	I don't have much time.		I don't have much time.	ليس لديّ وقت كثير.					
+en_w_who	word	1	who	/hu/	who	مَن					
+en_w_who#ex1	example	1	Who is that man?		Who is that man?	من ذلك الرجل؟					
+en_w_who#ex2	example	1	Who wants more coffee?		Who wants more coffee?	من يريد المزيد من القهوة؟					
+en_w_tell	word	1	tell	/tɛl/	to tell	يخبر، يحكي					
+en_w_tell#ex1	example	1	Please tell me the story.		Please tell me the story.	من فضلك احكِ لي القصة.					
+en_w_tell#ex2	example	1	She told me her name.		She told me her name.	أخبرتني باسمها.					
+en_w_okay	word	1	okay	/oʊˈkeɪ/	okay, all right	حسنًا					
+en_w_okay#ex1	example	1	Okay, let's go now.		Okay, let's go now.	حسنًا، لنذهب الآن.					
+en_w_okay#ex2	example	1	Is it okay if I sit here?		Is it okay if I sit here?	هل يمكنني أن أجلس هنا؟					
+en_w_make	word	1	make	/meɪk/	to make	يصنع، يُعدّ					
+en_w_make#ex1	example	1	I will make some tea.		I will make some tea.	سأُعدّ بعض الشاي.					
+en_w_make#ex2	example	1	She made dinner for us.		She made dinner for us.	أعدّت لنا العشاء.					
+en_w_oh	word	1	oh	/oʊ/	oh	آه، أوه					
+en_w_oh#ex1	example	1	Oh, I forgot your birthday!		Oh, I forgot your birthday!	آه، نسيت عيد ميلادك!					
+en_w_oh#ex2	example	1	Oh no, it's raining again.		Oh no, it's raining again.	أوه لا، إنها تمطر مرة أخرى.					
+en_w_look	word	1	look	/lʊk/	to look	ينظر؛ يبدو					
+en_w_look#ex1	example	1	Look at that big dog!		Look at that big dog!	انظر إلى ذلك الكلب الكبير!					
+en_w_look#ex2	example	1	You look tired today.		You look tired today.	تبدو متعبًا اليوم.					
+en_w_would	word	1	would	/wʊd/	would	سـ (للتمني والتأدب)					
+en_w_would#ex1	example	1	Would you like some tea?		Would you like some tea?	هل تودّ بعض الشاي؟					
+en_w_would#ex2	example	1	I would like to go home.		I would like to go home.	أودّ أن أذهب إلى البيت.					
+en_w_could	word	1	could	/kʊd/	could	استطاع؛ هل يمكن					
+en_w_could#ex1	example	1	Could you open the door?		Could you open the door?	هل يمكنك فتح الباب؟					
+en_w_could#ex2	example	1	I couldn't sleep last night.		I couldn't sleep last night.	لم أستطع النوم الليلة الماضية.					
+en_w_from	word	1	from	/frʌm/	from	من					
+en_w_from#ex1	example	1	Where are you from?		Where are you from?	من أين أنت؟					
+en_w_from#ex2	example	1	I got a book from my father.		I got a book from my father.	حصلت على كتاب من أبي.					
+en_w_take	word	1	take	/teɪk/	to take	يأخذ					
+en_w_take#ex1	example	1	Take the bus to school.		Take the bus to school.	خذ الحافلة إلى المدرسة.					
+en_w_take#ex2	example	1	It took an hour.		It took an hour.	استغرق ذلك ساعة.					
+en_w_when	word	1	when	/wɛn/	when	متى؛ عندما					
+en_w_when#ex1	example	1	When is your birthday?		When is your birthday?	متى عيد ميلادك؟					
+en_w_when#ex2	example	1	Call me when you get home.		Call me when you get home.	اتصل بي عندما تصل إلى البيت.					
+en_w_back	word	1	back	/bæk/	back	عائدًا، إلى الوراء					
+en_w_back#ex1	example	1	I will be back soon.		I will be back soon.	سأعود قريبًا.					
+en_w_back#ex2	example	1	Give me my phone back.		Give me my phone back.	أعِد إليّ هاتفي.					
+en_w_then	word	1	then	/ðɛn/	then	ثم؛ آنذاك					
+en_w_then#ex1	example	1	We ate, and then we slept.		We ate, and then we slept.	أكلنا ثم نمنا.					
+en_w_then#ex2	example	1	I was young then.		I was young then.	كنت صغيرًا آنذاك.					
+en_w_need	word	1	need	/nid/	to need	يحتاج					
+en_w_need#ex1	example	1	I need some water.		I need some water.	أحتاج إلى بعض الماء.					
+en_w_need#ex2	example	1	Do you need help?		Do you need help?	هل تحتاج إلى مساعدة؟					
+en_w_let	word	1	let	/lɛt/	to let, allow	يدع، يسمح					
+en_w_let#ex1	example	1	Let's eat dinner together.		Let's eat dinner together.	لنتناول العشاء معًا.					
+en_w_let#ex2	example	1	Let me help you with that.		Let me help you with that.	دعني أساعدك في ذلك.					
+en_w_thing	word	1	thing	/θɪŋ/	thing	شيء					
+en_w_thing#ex1	example	1	I have one more thing to say.		I have one more thing to say.	لديّ شيء آخر أقوله.					
+en_w_thing#ex2	example	1	Put your things on the bed.		Put your things on the bed.	ضع أشياءك على السرير.					
+en_w_really	word	1	really	/ˈrɪli/	really	حقًا					
+en_w_really#ex1	example	1	I really like this music.		I really like this music.	تعجبني هذه الموسيقى حقًا.					
+en_w_really#ex2	example	1	Is that really your car?		Is that really your car?	هل هذه سيارتك حقًا؟					
+en_w_some	word	1	some	/sʌm/	some	بعض					
+en_w_some#ex1	example	1	Can I have some bread?		Can I have some bread?	هل يمكنني أن آخذ بعض الخبز؟					
+en_w_some#ex2	example	1	Some people like the rain.		Some people like the rain.	بعض الناس يحبون المطر.					
+en_w_why	word	1	why	/waɪ/	why	لماذا					
+en_w_why#ex1	example	1	Why are you so tired?		Why are you so tired?	لماذا أنت متعب جدًا؟					
+en_w_why#ex2	example	1	Why did you leave early?		Why did you leave early?	لماذا غادرت مبكرًا؟					
+en_w_where	word	1	where	/wɛr/	where	أين					
+en_w_where#ex1	example	1	Where is the bus?		Where is the bus?	أين الحافلة؟					
+en_w_where#ex2	example	1	Where do you live now?		Where do you live now?	أين تعيش الآن؟					
+en_w_man	word	1	man	/mæn/	man	رجل					
+en_w_man#ex1	example	1	That man is a doctor.		That man is a doctor.	ذلك الرجل طبيب.					
+en_w_man#ex2	example	1	Two men are waiting for you.		Two men are waiting for you.	رجلان ينتظرانك.					
+en_w_people	word	1	people	/ˈpipəl/	people	ناس					
+en_w_people#ex1	example	1	Many people live in this city.		Many people live in this city.	يعيش كثير من الناس في هذه المدينة.					
+en_w_people#ex2	example	1	The people here are very nice.		The people here are very nice.	الناس هنا لطفاء جدًا.					
+en_w_day	word	1	day	/deɪ/	day	يوم					
+en_w_day#ex1	example	1	Have a nice day!		Have a nice day!	يومًا سعيدًا!					
+en_w_day#ex2	example	1	I work five days a week.		I work five days a week.	أعمل خمسة أيام في الأسبوع.					
+en_w_give	word	1	give	/ɡɪv/	to give	يعطي					
+en_w_give#ex1	example	1	Give me the book, please.		Give me the book, please.	أعطني الكتاب من فضلك.					
+en_w_give#ex2	example	1	My father gave me some money.		My father gave me some money.	أعطاني أبي بعض المال.					
+en_w_way	word	1	way	/weɪ/	way	طريق؛ طريقة					
+en_w_way#ex1	example	1	Is this the way to the school?		Is this the way to the school?	هل هذا هو الطريق إلى المدرسة؟					
+en_w_way#ex2	example	1	There is no other way.		There is no other way.	لا يوجد طريق آخر.					
+en_w_something	word	1	something	/ˈsʌmθɪŋ/	something	شيء ما					
+en_w_something#ex1	example	1	I want to eat something.		I want to eat something.	أريد أن آكل شيئًا.					
+en_w_something#ex2	example	1	Did you say something?		Did you say something?	هل قلت شيئًا؟					
+en_w_very	word	1	very	/ˈvɛri/	very	جدًا					
+en_w_very#ex1	example	1	The weather is very hot.		The weather is very hot.	الطقس حار جدًا.					
+en_w_very#ex2	example	1	Thank you very much!		Thank you very much!	شكرًا جزيلًا!					
+en_w_or	word	1	or	/ɔr/	or	أو، أم					
+en_w_or#ex1	example	1	Do you want tea or coffee?		Do you want tea or coffee?	هل تريد شايًا أم قهوة؟					
+en_w_or#ex2	example	1	Is it big or small?		Is it big or small?	هل هو كبير أم صغير؟					
+en_w_more	word	1	more	/mɔr/	more	أكثر، المزيد					
+en_w_more#ex1	example	1	Can I have more bread?		Can I have more bread?	هل يمكنني أن آخذ المزيد من الخبز؟					
+en_w_more#ex2	example	1	I need more time.		I need more time.	أحتاج إلى وقت أكثر.					
+en_w_talk	word	1	talk	/tɔk/	to talk	يتحدث					
+en_w_talk#ex1	example	1	Can we talk later?		Can we talk later?	هل يمكننا التحدث لاحقًا؟					
+en_w_talk#ex2	example	1	They talked for an hour.		They talked for an hour.	تحدثوا لمدة ساعة.					
+en_w_sorry	word	1	sorry	/ˈsɑri/	sorry	آسف					
+en_w_sorry#ex1	example	1	I'm sorry, I'm late.		I'm sorry, I'm late.	آسف، لقد تأخرت.					
+en_w_sorry#ex2	example	1	Sorry, I don't understand.		Sorry, I don't understand.	عذرًا، لا أفهم.					
+en_w_thank	word	1	thank	/θæŋk/	to thank	يشكر					
+en_w_thank#ex1	example	1	Thank you for your help.		Thank you for your help.	شكرًا على مساعدتك.					
+en_w_thank#ex2	example	1	Thanks a lot for dinner.		Thanks a lot for dinner.	شكرًا جزيلًا على العشاء.					
+en_w_love	word	1	love	/lʌv/	to love	يحب					
+en_w_love#ex1	example	1	I love my family.		I love my family.	أحب عائلتي.					
+en_w_love#ex2	example	1	She loves her new job.		She loves her new job.	تحب وظيفتها الجديدة.					
+en_w_little	word	1	little	/ˈlɪtəl/	small, little	صغير؛ قليل					
+en_w_little#ex1	example	1	We have a little house.		We have a little house.	لدينا بيت صغير.					
+en_w_little#ex2	example	1	Can I have a little water?		Can I have a little water?	هل يمكنني أن آخذ قليلًا من الماء؟					
+en_w_nothing	word	1	nothing	/ˈnʌθɪŋ/	nothing	لا شيء					
+en_w_nothing#ex1	example	1	There is nothing in the room.		There is nothing in the room.	لا يوجد شيء في الغرفة.					
+en_w_nothing#ex2	example	1	I have nothing to say.		I have nothing to say.	ليس لديّ ما أقوله.					
+en_w_never	word	1	never	/ˈnɛvər/	never	أبدًا					
+en_w_never#ex1	example	1	I never eat breakfast.		I never eat breakfast.	لا أتناول الفطور أبدًا.					
+en_w_never#ex2	example	1	She has never been to this city.		She has never been to this city.	لم تزر هذه المدينة أبدًا.					
+en_w_mean	word	1	mean	/min/	to mean	يعني، يقصد					
+en_w_mean#ex1	example	1	What does this word mean?		What does this word mean?	ماذا تعني هذه الكلمة؟					
+en_w_mean#ex2	example	1	I didn't mean that.		I didn't mean that.	لم أقصد ذلك.					
+en_w_because	word	1	because	/bɪˈkʌz/	because	لأنّ					
+en_w_because#ex1	example	1	I'm hungry because I didn't eat.		I'm hungry because I didn't eat.	أنا جائع لأنني لم آكل.					
+en_w_because#ex2	example	1	We went home because it was late.		We went home because it was late.	ذهبنا إلى البيت لأن الوقت كان متأخرًا.					
+en_w_sure	word	1	sure	/ʃʊr/	sure	متأكد					
+en_w_sure#ex1	example	1	Are you sure about that?		Are you sure about that?	هل أنت متأكد من ذلك؟					
+en_w_sure#ex2	example	1	Sure, I can help you.		Sure, I can help you.	بالتأكيد، أستطيع مساعدتك.					
+en_w_work	word	1	work	/wɜrk/	to work	يعمل					
+en_w_work#ex1	example	1	My mother works at a school.		My mother works at a school.	تعمل أمي في مدرسة.					
+en_w_work#ex2	example	1	I work from home today.		I work from home today.	أعمل من البيت اليوم.					
+en_w_call	word	1	call	/kɔl/	to call	يتصل؛ ينادي					
+en_w_call#ex1	example	1	I will call you tonight.		I will call you tonight.	سأتصل بك الليلة.					
+en_w_call#ex2	example	1	Please call a doctor.		Please call a doctor.	من فضلك اتصل بطبيب.					
+en_w_help	word	1	help	/hɛlp/	to help	يساعد					
+en_w_help#ex1	example	1	Can I help you?		Can I help you?	هل أستطيع مساعدتك؟					
+en_w_help#ex2	example	1	My brother helped me a lot.		My brother helped me a lot.	ساعدني أخي كثيرًا.					
+en_w_home	word	1	home	/hoʊm/	home	البيت، المنزل					
+en_w_home#ex1	example	1	I want to go home.		I want to go home.	أريد أن أذهب إلى البيت.					
+en_w_home#ex2	example	1	She is at home today.		She is at home today.	هي في البيت اليوم.					
+en_w_life	word	1	life	/laɪf/	life	حياة					
+en_w_life#ex1	example	1	Life in the city is hard.		Life in the city is hard.	الحياة في المدينة صعبة.					
+en_w_life#ex2	example	1	I have a good life here.		I have a good life here.	لديّ حياة جيدة هنا.					
+en_w_any	word	1	any	/ˈɛni/	any	أي					
+en_w_any#ex1	example	1	Do you have any money?		Do you have any money?	هل لديك أي مال؟					
+en_w_any#ex2	example	1	I don't have any questions.		I don't have any questions.	ليس لديّ أي أسئلة.					
+en_w_two	word	1	two	/tu/	two	اثنان					
+en_w_two#ex1	example	1	I have two children.		I have two children.	لديّ طفلان.					
+en_w_two#ex2	example	1	We waited two hours.		We waited two hours.	انتظرنا ساعتين.					
+en_w_by	word	1	by	/baɪ/	by, next to	بـ؛ بجانب					
+en_w_by#ex1	example	1	I go to work by bus.		I go to work by bus.	أذهب إلى العمل بالحافلة.					
+en_w_by#ex2	example	1	Sit by the door, please.		Sit by the door, please.	اجلس بجانب الباب من فضلك.					
+en_w_find	word	1	find	/faɪnd/	to find	يجد					
+en_w_find#ex1	example	1	I can't find my book.		I can't find my book.	لا أستطيع إيجاد كتابي.					
+en_w_find#ex2	example	1	She found a good job.		She found a good job.	وجدت وظيفة جيدة.					
+en_w_still	word	1	still	/stɪl/	still	ما زال					
+en_w_still#ex1	example	1	Are you still at work?		Are you still at work?	هل ما زلت في العمل؟					
+en_w_still#ex2	example	1	It is still raining.		It is still raining.	ما زالت تمطر.					
+en_w_feel	word	1	feel	/fil/	to feel	يشعر					
+en_w_feel#ex1	example	1	I feel tired today.		I feel tired today.	أشعر بالتعب اليوم.					
+en_w_feel#ex2	example	1	How do you feel now?		How do you feel now?	كيف تشعر الآن؟					
+en_w_put	word	1	put	/pʊt/	to put	يضع					
+en_w_put#ex1	example	1	Put the food on the table.		Put the food on the table.	ضع الطعام على الطاولة.					
+en_w_put#ex2	example	1	Where did you put my phone?		Where did you put my phone?	أين وضعت هاتفي؟					
+en_w_try	word	1	try	/traɪ/	to try	يحاول؛ يجرّب					
+en_w_try#ex1	example	1	Try this bread, it's good.		Try this bread, it's good.	جرّب هذا الخبز، إنه جيد.					
+en_w_try#ex2	example	1	I tried to call you.		I tried to call you.	حاولت الاتصال بك.					
+en_w_maybe	word	1	maybe	/ˈmeɪbi/	maybe	ربما					
+en_w_maybe#ex1	example	1	Maybe it will rain tomorrow.		Maybe it will rain tomorrow.	ربما تمطر غدًا.					
+en_w_maybe#ex2	example	1	Maybe we can meet tonight.		Maybe we can meet tonight.	ربما نستطيع أن نلتقي الليلة.					
+en_w_other	word	1	other	/ˈʌðər/	other	آخر					
+en_w_other#ex1	example	1	Where are the other children?		Where are the other children?	أين بقية الأطفال؟					
+en_w_other#ex2	example	1	I have no other questions.		I have no other questions.	ليس لديّ أسئلة أخرى.					
+en_w_again	word	1	again	/əˈɡɛn/	again	مرة أخرى					
+en_w_again#ex1	example	1	Can you say that again?		Can you say that again?	هل يمكنك أن تقول ذلك مرة أخرى؟					
+en_w_again#ex2	example	1	I want to see you again.		I want to see you again.	أريد أن أراك مرة أخرى.					
+en_w_much	word	1	much	/mʌtʃ/	much	كثير					
+en_w_much#ex1	example	1	How much is this book?		How much is this book?	بكم هذا الكتاب؟					
+en_w_much#ex2	example	1	Thank you so much.		Thank you so much.	شكرًا جزيلًا.					
+en_w_big	word	1	big	/bɪɡ/	big	كبير					
+en_w_big#ex1	example	1	They live in a big house.		They live in a big house.	يعيشون في بيت كبير.					
+en_w_big#ex2	example	1	This city is bigger than mine.		This city is bigger than mine.	هذه المدينة أكبر من مدينتي.					
+en_w_down	word	1	down	/daʊn/	down	أسفل					
+en_w_down#ex1	example	1	Please sit down here.		Please sit down here.	من فضلك اجلس هنا.					
+en_w_down#ex2	example	1	Turn the music down, please.		Turn the music down, please.	اخفض صوت الموسيقى من فضلك.					
+en_w_too	word	1	too	/tu/	too; also	جدًا (أكثر من اللازم)؛ أيضًا					
+en_w_too#ex1	example	1	This tea is too hot.		This tea is too hot.	هذا الشاي ساخن جدًا.					
+en_w_too#ex2	example	1	I want to come too.		I want to come too.	أريد أن آتي أيضًا.					
+en_w_first	word	1	first	/fɜrst/	first	أول					
+en_w_first#ex1	example	1	This is my first time here.		This is my first time here.	هذه أول مرة لي هنا.					
+en_w_first#ex2	example	1	First, wash your hands.		First, wash your hands.	أولًا، اغسل يديك.					
+en_w_should	word	1	should	/ʃʊd/	should	ينبغي					
+en_w_should#ex1	example	1	You should eat something.		You should eat something.	ينبغي أن تأكل شيئًا.					
+en_w_should#ex2	example	1	We should go home now.		We should go home now.	ينبغي أن نذهب إلى البيت الآن.					
+en_w_hear	word	1	hear	/hɪr/	to hear	يسمع					
+en_w_hear#ex1	example	1	Can you hear me now?		Can you hear me now?	هل تسمعني الآن؟					
+en_w_hear#ex2	example	1	I heard a dog in the night.		I heard a dog in the night.	سمعت كلبًا في الليل.					
+en_w_everything	word	1	everything	/ˈɛvriθɪŋ/	everything	كل شيء					
+en_w_everything#ex1	example	1	Everything is ready for dinner.		Everything is ready for dinner.	كل شيء جاهز للعشاء.					
+en_w_everything#ex2	example	1	Thank you for everything.		Thank you for everything.	شكرًا على كل شيء.					
+en_w_leave	word	1	leave	/liv/	to leave	يغادر؛ يترك					
+en_w_leave#ex1	example	1	What time do you leave work?		What time do you leave work?	متى تغادر العمل؟					
+en_w_leave#ex2	example	1	She left her phone at home.		She left her phone at home.	تركت هاتفها في البيت.					
+en_w_night	word	1	night	/naɪt/	night	ليل، ليلة					
+en_w_night#ex1	example	1	Good night, see you tomorrow.		Good night, see you tomorrow.	تصبح على خير، أراك غدًا.					
+en_w_night#ex2	example	1	I work at night.		I work at night.	أعمل في الليل.					
+en_w_woman	word	1	woman	/ˈwʊmən/	woman	امرأة					
+en_w_woman#ex1	example	1	That woman is my teacher.		That woman is my teacher.	تلك المرأة معلّمتي.					
+en_w_woman#ex2	example	1	Many women work here.		Many women work here.	تعمل هنا نساء كثيرات.					
+en_w_friend	word	1	friend	/frɛnd/	friend	صديق					
+en_w_friend#ex1	example	1	She is my best friend.		She is my best friend.	هي أعزّ صديقاتي.					
+en_w_friend#ex2	example	1	I went out with my friends.		I went out with my friends.	خرجت مع أصدقائي.					
+en_w_new	word	1	new	/nu/	new	جديد					
+en_w_new#ex1	example	1	I have a new phone.		I have a new phone.	لديّ هاتف جديد.					
+en_w_new#ex2	example	1	Is this car new?		Is this car new?	هل هذه السيارة جديدة؟					
+en_w_old	word	1	old	/oʊld/	old	قديم؛ كبير السن					
+en_w_old#ex1	example	1	My car is very old.		My car is very old.	سيارتي قديمة جدًا.					
+en_w_old#ex2	example	1	How old are you?		How old are you?	كم عمرك؟					
+en_w_ask	word	1	ask	/æsk/	to ask	يسأل؛ يطلب					
+en_w_ask#ex1	example	1	Can I ask you a question?		Can I ask you a question?	هل يمكنني أن أسألك سؤالًا؟					
+en_w_ask#ex2	example	1	Ask your teacher for help.		Ask your teacher for help.	اطلب المساعدة من معلّمك.					
+en_w_father	word	1	father	/ˈfɑðər/	father	أب					
+en_w_father#ex1	example	1	My father works in a shop.		My father works in a shop.	يعمل أبي في متجر.					
+en_w_father#ex2	example	1	Dad, can you help me?		Dad, can you help me?	أبي، هل يمكنك مساعدتي؟					
+en_w_mother	word	1	mother	/ˈmʌðər/	mother	أم					
+en_w_mother#ex1	example	1	My mother makes good bread.		My mother makes good bread.	تصنع أمي خبزًا جيدًا.					
+en_w_mother#ex2	example	1	Mom is at home today.		Mom is at home today.	أمي في البيت اليوم.					
+en_w_house	word	1	house	/haʊs/	house	بيت					
+en_w_house#ex1	example	1	Our house has four rooms.		Our house has four rooms.	في بيتنا أربع غرف.					
+en_w_house#ex2	example	1	Come to my house tonight.		Come to my house tonight.	تعال إلى بيتي الليلة.					
+en_w_name	word	1	name	/neɪm/	name	اسم					
+en_w_name#ex1	example	1	Write your name here, please.		Write your name here, please.	اكتب اسمك هنا من فضلك.					
+en_w_name#ex2	example	1	I forgot his name.		I forgot his name.	نسيت اسمه.					
+en_w_money	word	1	money	/ˈmʌni/	money	مال					
+en_w_money#ex1	example	1	I don't have much money.		I don't have much money.	ليس لديّ مال كثير.					
+en_w_money#ex2	example	1	She paid the money yesterday.		She paid the money yesterday.	دفعت المال أمس.					
+en_w_child	word	1	child	/tʃaɪld/	child	طفل					
+en_w_child#ex1	example	1	The child is sleeping now.		The child is sleeping now.	الطفل نائم الآن.					
+en_w_child#ex2	example	1	They have three kids.		They have three kids.	لديهم ثلاثة أطفال.					
+en_w_always	word	1	always	/ˈɔlweɪz/	always	دائمًا					
+en_w_always#ex1	example	1	She is always late.		She is always late.	هي متأخرة دائمًا.					
+en_w_always#ex2	example	1	I always drink coffee in the morning.		I always drink coffee in the morning.	أشرب القهوة دائمًا في الصباح.					
+en_w_only	word	1	only	/ˈoʊnli/	only	فقط؛ الوحيد					
+en_w_only#ex1	example	1	I have only five minutes.		I have only five minutes.	لديّ خمس دقائق فقط.					
+en_w_only#ex2	example	1	She is the only doctor here.		She is the only doctor here.	هي الطبيبة الوحيدة هنا.					
+en_w_even	word	1	even	/ˈivən/	even	حتى					
+en_w_even#ex1	example	1	He works even at night.		He works even at night.	يعمل حتى في الليل.					
+en_w_even#ex2	example	1	It is even colder today.		It is even colder today.	الجو أبرد اليوم.					
+en_w_happen	word	1	happen	/ˈhæpən/	to happen	يحدث					
+en_w_happen#ex1	example	1	What happened to your car?		What happened to your car?	ماذا حدث لسيارتك؟					
+en_w_happen#ex2	example	1	It happens every day.		It happens every day.	يحدث ذلك كل يوم.					
+en_w_than	word	1	than	/ðæn/	than	من (للمقارنة)					
+en_w_than#ex1	example	1	My brother is older than me.		My brother is older than me.	أخي أكبر مني.					
+en_w_than#ex2	example	1	Tea is better than coffee.		Tea is better than coffee.	الشاي أفضل من القهوة.					
+en_w_every	word	1	every	/ˈɛvri/	every	كل					
+en_w_every#ex1	example	1	I see him every day.		I see him every day.	أراه كل يوم.					
+en_w_every#ex2	example	1	Every room has a big bed.		Every room has a big bed.	في كل غرفة سرير كبير.					
+en_w_keep	word	1	keep	/kip/	to keep	يحتفظ؛ يُبقي					
+en_w_keep#ex1	example	1	Keep the door open, please.		Keep the door open, please.	أبقِ الباب مفتوحًا من فضلك.					
+en_w_keep#ex2	example	1	She kept the old books.		She kept the old books.	احتفظت بالكتب القديمة.					
+en_w_stop	word	1	stop	/stɑp/	to stop	يتوقف؛ يوقف					
+en_w_stop#ex1	example	1	Please stop the car here.		Please stop the car here.	من فضلك أوقف السيارة هنا.					
+en_w_stop#ex2	example	1	The rain stopped at night.		The rain stopped at night.	توقف المطر في الليل.					
+en_w_wait	word	1	wait	/weɪt/	to wait	ينتظر					
+en_w_wait#ex1	example	1	Please wait a minute.		Please wait a minute.	انتظر دقيقة من فضلك.					
+en_w_wait#ex2	example	1	We waited for the bus.		We waited for the bus.	انتظرنا الحافلة.					
+en_w_believe	word	1	believe	/bɪˈliv/	to believe	يصدّق					
+en_w_believe#ex1	example	1	I can't believe it!		I can't believe it!	لا أصدق ذلك!					
+en_w_believe#ex2	example	1	Do you believe his story?		Do you believe his story?	هل تصدّق قصته؟					
+en_w_understand	word	1	understand	/ˌʌndərˈstænd/	to understand	يفهم					
+en_w_understand#ex1	example	1	I don't understand this word.		I don't understand this word.	لا أفهم هذه الكلمة.					
+en_w_understand#ex2	example	1	Do you understand me now?		Do you understand me now?	هل تفهمني الآن؟					
+en_w_remember	word	1	remember	/rɪˈmɛmbər/	to remember	يتذكر					
+en_w_remember#ex1	example	1	Do you remember my name?		Do you remember my name?	هل تتذكر اسمي؟					
+en_w_remember#ex2	example	1	I remember that day well.		I remember that day well.	أتذكر ذلك اليوم جيدًا.					
+en_w_eat	word	1	eat	/it/	to eat	يأكل					
+en_w_eat#ex1	example	1	Let's eat something now.		Let's eat something now.	لنأكل شيئًا الآن.					
+en_w_eat#ex2	example	1	We ate dinner very late.		We ate dinner very late.	تناولنا العشاء متأخرين جدًا.					
+en_w_live	word	1	live	/lɪv/	to live	يعيش، يسكن					
+en_w_live#ex1	example	1	Where do you live?		Where do you live?	أين تسكن؟					
+en_w_live#ex2	example	1	My family lives in a small city.		My family lives in a small city.	تعيش عائلتي في مدينة صغيرة.					
+en_w_start	word	1	start	/stɑrt/	to start	يبدأ					
+en_w_start#ex1	example	1	The movie starts at five.		The movie starts at five.	يبدأ الفيلم في الخامسة.					
+en_w_start#ex2	example	1	Let's start the game.		Let's start the game.	لنبدأ اللعبة.					
+en_w_bring	word	1	bring	/brɪŋ/	to bring	يُحضر					
+en_w_bring#ex1	example	1	Bring me some water, please.		Bring me some water, please.	أحضر لي بعض الماء من فضلك.					
+en_w_bring#ex2	example	1	She brought her baby with her.		She brought her baby with her.	أحضرت طفلها معها.					
+en_w_year	word	1	year	/jɪr/	year	سنة، عام					
+en_w_year#ex1	example	1	I have a new job this year.		I have a new job this year.	لديّ وظيفة جديدة هذا العام.					
+en_w_year#ex2	example	1	She is ten years old.		She is ten years old.	عمرها عشر سنوات.					
+en_w_morning	word	1	morning	/ˈmɔrnɪŋ/	morning	صباح					
+en_w_morning#ex1	example	1	Good morning, how are you?		Good morning, how are you?	صباح الخير، كيف حالك؟					
+en_w_morning#ex2	example	1	I drink coffee every morning.		I drink coffee every morning.	أشرب القهوة كل صباح.					
+en_w_today	word	1	today	/təˈdeɪ/	today	اليوم					
+en_w_today#ex1	example	1	What do you want to do today?		What do you want to do today?	ماذا تريد أن تفعل اليوم؟					
+en_w_today#ex2	example	1	Today is my birthday.		Today is my birthday.	اليوم عيد ميلادي.					
+en_w_tomorrow	word	1	tomorrow	/təˈmɑroʊ/	tomorrow	غدًا					
+en_w_tomorrow#ex1	example	1	See you tomorrow morning.		See you tomorrow morning.	أراك صباح الغد.					
+en_w_tomorrow#ex2	example	1	Tomorrow we will go to the city.		Tomorrow we will go to the city.	غدًا سنذهب إلى المدينة.					
+en_w_yesterday	word	1	yesterday	/ˈjɛstərdeɪ/	yesterday	أمس					
+en_w_yesterday#ex1	example	1	I saw your brother yesterday.		I saw your brother yesterday.	رأيت أخاك أمس.					
+en_w_yesterday#ex2	example	1	It rained all day yesterday.		It rained all day yesterday.	أمطرت طوال اليوم أمس.					
+en_w_three	word	1	three	/θri/	three	ثلاثة					
+en_w_three#ex1	example	1	I have three sisters.		I have three sisters.	لديّ ثلاث أخوات.					
+en_w_three#ex2	example	1	We waited for three hours.		We waited for three hours.	انتظرنا ثلاث ساعات.					
+en_w_hello	word	1	hello	/həˈloʊ/	hello	مرحبًا					
+en_w_hello#ex1	example	1	Hello, my name is Adam.		Hello, my name is Adam.	مرحبًا، اسمي آدم.					
+en_w_hello#ex2	example	1	Hi, how are you today?		Hi, how are you today?	مرحبًا، كيف حالك اليوم؟					
+en_w_please	word	1	please	/pliz/	please	من فضلك					
+en_w_please#ex1	example	1	Please close the door.		Please close the door.	من فضلك أغلق الباب.					
+en_w_please#ex2	example	1	Can I have some water, please?		Can I have some water, please?	هل يمكنني أن آخذ بعض الماء من فضلك؟					
+en_w_boy	word	1	boy	/bɔɪ/	boy	ولد					
+en_w_boy#ex1	example	1	The boy is playing with the dog.		The boy is playing with the dog.	الولد يلعب مع الكلب.					
+en_w_boy#ex2	example	1	They have two boys.		They have two boys.	لديهم ولدان.					
+en_w_girl	word	1	girl	/ɡɜrl/	girl	بنت، فتاة					
+en_w_girl#ex1	example	1	That girl is my sister.		That girl is my sister.	تلك الفتاة أختي.					
+en_w_girl#ex2	example	1	The girls are at school today.		The girls are at school today.	البنات في المدرسة اليوم.					
+en_w_great	word	1	great	/ɡreɪt/	great	رائع؛ عظيم					
+en_w_great#ex1	example	1	That is a great idea!		That is a great idea!	هذه فكرة رائعة!					
+en_w_great#ex2	example	1	We had a great time.		We had a great time.	قضينا وقتًا رائعًا.					
+en_w_bad	word	1	bad	/bæd/	bad	سيئ					
+en_w_bad#ex1	example	1	The weather is bad today.		The weather is bad today.	الطقس سيئ اليوم.					
+en_w_bad#ex2	example	1	It was the worst day of my life.		It was the worst day of my life.	كان أسوأ يوم في حياتي.					
+en_w_nice	word	1	nice	/naɪs/	nice	لطيف، جميل					
+en_w_nice#ex1	example	1	Your house is very nice.		Your house is very nice.	بيتك جميل جدًا.					
+en_w_nice#ex2	example	1	It was nice to meet you.		It was nice to meet you.	سُررت بلقائك.					
+en_w_sleep	word	1	sleep	/slip/	to sleep	ينام					
+en_w_sleep#ex1	example	1	I want to sleep now.		I want to sleep now.	أريد أن أنام الآن.					
+en_w_sleep#ex2	example	1	The baby slept all night.		The baby slept all night.	نام الطفل طوال الليل.					
+en_w_play	word	1	play	/pleɪ/	to play	يلعب					
+en_w_play#ex1	example	1	The children play in the street.		The children play in the street.	يلعب الأطفال في الشارع.					
+en_w_play#ex2	example	1	Do you want to play a game?		Do you want to play a game?	هل تريد أن تلعب لعبة؟					
+en_w_run	word	1	run	/rʌn/	to run	يركض					
+en_w_run#ex1	example	1	I run every morning.		I run every morning.	أركض كل صباح.					
+en_w_run#ex2	example	1	The dog ran to the door.		The dog ran to the door.	ركض الكلب نحو الباب.					
+en_w_show	word	1	show	/ʃoʊ/	to show	يُري، يعرض					
+en_w_show#ex1	example	1	Can you show me the way?		Can you show me the way?	هل يمكنك أن تريني الطريق؟					
+en_w_show#ex2	example	1	She showed me her new house.		She showed me her new house.	أرتني بيتها الجديد.					
+en_w_car	word	1	car	/kɑr/	car	سيارة					
+en_w_car#ex1	example	1	My car is in the street.		My car is in the street.	سيارتي في الشارع.					
+en_w_car#ex2	example	1	We went to the city by car.		We went to the city by car.	ذهبنا إلى المدينة بالسيارة.					
+en_w_job	word	1	job	/dʒɑb/	job	وظيفة، عمل					
+en_w_job#ex1	example	1	I love my new job.		I love my new job.	أحب وظيفتي الجديدة.					
+en_w_job#ex2	example	1	What is your job?		What is your job?	ما عملك؟					
+en_w_place	word	1	place	/pleɪs/	place	مكان					
+en_w_place#ex1	example	1	This is a nice place.		This is a nice place.	هذا مكان جميل.					
+en_w_place#ex2	example	1	Is this place free?		Is this place free?	هل هذا المكان شاغر؟					
+en_w_room	word	1	room	/rum/	room	غرفة					
+en_w_room#ex1	example	1	My room is very small.		My room is very small.	غرفتي صغيرة جدًا.					
+en_w_room#ex2	example	1	The children are in their room.		The children are in their room.	الأطفال في غرفتهم.					
+en_w_head	word	1	head	/hɛd/	head	رأس					
+en_w_head#ex1	example	1	Put your hand on your head.		Put your hand on your head.	ضع يدك على رأسك.					
+en_w_head#ex2	example	1	She turned her head to look.		She turned her head to look.	أدارت رأسها لتنظر.					
+en_w_hand	word	1	hand	/hænd/	hand	يد					
+en_w_hand#ex1	example	1	Wash your hands before dinner.		Wash your hands before dinner.	اغسل يديك قبل العشاء.					
+en_w_hand#ex2	example	1	Give me your hand.		Give me your hand.	أعطني يدك.					
+en_w_eye	word	1	eye	/aɪ/	eye	عين					
+en_w_eye#ex1	example	1	Close your eyes, please.		Close your eyes, please.	أغمض عينيك من فضلك.					
+en_w_eye#ex2	example	1	She has beautiful eyes.		She has beautiful eyes.	لديها عينان جميلتان.					
+en_w_water	word	1	water	/ˈwɔtər/	water	ماء					
+en_w_water#ex1	example	1	Can I have some water?		Can I have some water?	هل يمكنني أن آخذ بعض الماء؟					
+en_w_water#ex2	example	1	The water is too cold.		The water is too cold.	الماء بارد جدًا.					
+en_w_food	word	1	food	/fud/	food	طعام					
+en_w_food#ex1	example	1	The food here is very good.		The food here is very good.	الطعام هنا جيد جدًا.					
+en_w_food#ex2	example	1	We need to buy some food.		We need to buy some food.	نحتاج إلى شراء بعض الطعام.					
+en_w_door	word	1	door	/dɔr/	door	باب					
+en_w_door#ex1	example	1	Please open the door.		Please open the door.	من فضلك افتح الباب.					
+en_w_door#ex2	example	1	Someone is at the door.		Someone is at the door.	هناك شخص عند الباب.					
+en_w_phone	word	1	phone	/foʊn/	phone	هاتف					
+en_w_phone#ex1	example	1	Where is my phone?		Where is my phone?	أين هاتفي؟					
+en_w_phone#ex2	example	1	She called me on the phone.		She called me on the phone.	اتصلت بي على الهاتف.					
+en_w_school	word	1	school	/skul/	school	مدرسة					
+en_w_school#ex1	example	1	The children go to school by bus.		The children go to school by bus.	يذهب الأطفال إلى المدرسة بالحافلة.					
+en_w_school#ex2	example	1	My school was very big.		My school was very big.	كانت مدرستي كبيرة جدًا.					
+en_w_world	word	1	world	/wɜrld/	world	عالم					
+en_w_world#ex1	example	1	This is the best food in the world.		This is the best food in the world.	هذا أفضل طعام في العالم.					
+en_w_world#ex2	example	1	I want to see the world.		I want to see the world.	أريد أن أرى العالم.					
+en_w_family	word	1	family	/ˈfæməli/	family	عائلة					
+en_w_family#ex1	example	1	My family is very big.		My family is very big.	عائلتي كبيرة جدًا.					
+en_w_family#ex2	example	1	We eat dinner as a family.		We eat dinner as a family.	نتناول العشاء معًا كعائلة.					
+en_w_problem	word	1	problem	/ˈprɑbləm/	problem	مشكلة					
+en_w_problem#ex1	example	1	There is a problem with my car.		There is a problem with my car.	هناك مشكلة في سيارتي.					
+en_w_problem#ex2	example	1	No problem, I can help.		No problem, I can help.	لا مشكلة، أستطيع المساعدة.					
+en_w_question	word	1	question	/ˈkwɛstʃən/	question	سؤال					
+en_w_question#ex1	example	1	I have a question for you.		I have a question for you.	لديّ سؤال لك.					
+en_w_question#ex2	example	1	That is a good question.		That is a good question.	هذا سؤال جيد.					
+en_w_hour	word	1	hour	/ˈaʊər/	hour	ساعة (60 دقيقة)					
+en_w_hour#ex1	example	1	The movie is two hours long.		The movie is two hours long.	مدة الفيلم ساعتان.					
+en_w_hour#ex2	example	1	I will be back in an hour.		I will be back in an hour.	سأعود بعد ساعة.					
+en_w_minute	word	1	minute	/ˈmɪnɪt/	minute	دقيقة					
+en_w_minute#ex1	example	1	Wait a minute, please.		Wait a minute, please.	انتظر دقيقة من فضلك.					
+en_w_minute#ex2	example	1	The bus comes in five minutes.		The bus comes in five minutes.	تصل الحافلة بعد خمس دقائق.					
+en_w_week	word	1	week	/wik/	week	أسبوع					
+en_w_week#ex1	example	1	I go to the shop every week.		I go to the shop every week.	أذهب إلى المتجر كل أسبوع.					
+en_w_week#ex2	example	1	See you next week.		See you next week.	أراك الأسبوع القادم.					
+en_w_next	word	1	next	/nɛkst/	next	التالي، القادم					
+en_w_next#ex1	example	1	The next bus is at ten.		The next bus is at ten.	الحافلة التالية في العاشرة.					
+en_w_next#ex2	example	1	Next time, call me first.		Next time, call me first.	في المرة القادمة اتصل بي أولًا.					
+en_w_last	word	1	last	/læst/	last	الأخير؛ الماضي					
+en_w_last#ex1	example	1	I saw her last week.		I saw her last week.	رأيتها الأسبوع الماضي.					
+en_w_last#ex2	example	1	This is the last bus tonight.		This is the last bus tonight.	هذه آخر حافلة الليلة.					
+en_w_long	word	1	long	/lɔŋ/	long	طويل					
+en_w_long#ex1	example	1	It was a long day.		It was a long day.	كان يومًا طويلًا.					
+en_w_long#ex2	example	1	How long will you be here?		How long will you be here?	كم من الوقت ستبقى هنا؟					
+en_w_same	word	1	same	/seɪm/	same	نفس، مماثل					
+en_w_same#ex1	example	1	We go to the same school.		We go to the same school.	نذهب إلى المدرسة نفسها.					
+en_w_same#ex2	example	1	Your phone is the same as mine.		Your phone is the same as mine.	هاتفك مثل هاتفي.					
+en_w_another	word	1	another	/əˈnʌðər/	another	آخر					
+en_w_another#ex1	example	1	Can I have another coffee?		Can I have another coffee?	هل يمكنني أن آخذ قهوة أخرى؟					
+en_w_another#ex2	example	1	Let's try another way.		Let's try another way.	لنجرّب طريقة أخرى.					
+en_w_after	word	1	after	/ˈæftər/	after	بعد					
+en_w_after#ex1	example	1	Call me after dinner.		Call me after dinner.	اتصل بي بعد العشاء.					
+en_w_after#ex2	example	1	After work, I go home.		After work, I go home.	بعد العمل أذهب إلى البيت.					
+en_w_before	word	1	before	/bɪˈfɔr/	before	قبل					
+en_w_before#ex1	example	1	Wash your hands before you eat.		Wash your hands before you eat.	اغسل يديك قبل أن تأكل.					
+en_w_before#ex2	example	1	I have seen this movie before.		I have seen this movie before.	شاهدت هذا الفيلم من قبل.					
+en_w_into	word	1	into	/ˈɪntu/	into	إلى داخل					
+en_w_into#ex1	example	1	She went into the house.		She went into the house.	دخلت إلى البيت.					
+en_w_into#ex2	example	1	The dog ran into the room.		The dog ran into the room.	ركض الكلب إلى داخل الغرفة.					
+en_w_over	word	1	over	/ˈoʊvər/	over; finished	فوق؛ منتهٍ					
+en_w_over#ex1	example	1	The game is over.		The game is over.	انتهت اللعبة.					
+en_w_over#ex2	example	1	Come over to my house tonight.		Come over to my house tonight.	تعال إلى بيتي الليلة.					
+en_w_around	word	1	around	/əˈraʊnd/	around	حول					
+en_w_around#ex1	example	1	We walked around the city.		We walked around the city.	تجولنا في أنحاء المدينة.					
+en_w_around#ex2	example	1	There are shops all around here.		There are shops all around here.	توجد متاجر في كل مكان هنا.					
+en_w_off	word	1	off	/ɔf/	off	مُطفأ؛ بعيدًا عن					
+en_w_off#ex1	example	1	Turn off the phone, please.		Turn off the phone, please.	أطفئ الهاتف من فضلك.					
+en_w_off#ex2	example	1	We got off the bus.		We got off the bus.	نزلنا من الحافلة.					
+en_w_away	word	1	away	/əˈweɪ/	away	بعيدًا؛ غائب					
+en_w_away#ex1	example	1	Go away, I want to sleep.		Go away, I want to sleep.	اذهب، أريد أن أنام.					
+en_w_away#ex2	example	1	She is away this week.		She is away this week.	هي غائبة هذا الأسبوع.					
+en_w_together	word	1	together	/təˈɡɛðər/	together	معًا					
+en_w_together#ex1	example	1	Let's eat together tonight.		Let's eat together tonight.	لنأكل معًا الليلة.					
+en_w_together#ex2	example	1	We work together at the shop.		We work together at the shop.	نعمل معًا في المتجر.					
+en_w_many	word	1	many	/ˈmɛni/	many	كثير (للمعدود)					
+en_w_many#ex1	example	1	How many children do you have?		How many children do you have?	كم طفلًا لديك؟					
+en_w_many#ex2	example	1	There are many people here.		There are many people here.	هناك كثير من الناس هنا.					
+en_w_most	word	1	most	/moʊst/	most	معظم؛ الأكثر					
+en_w_most#ex1	example	1	Most of my friends live here.		Most of my friends live here.	يعيش معظم أصدقائي هنا.					
+en_w_most#ex2	example	1	This is the most beautiful place.		This is the most beautiful place.	هذا أجمل مكان.					
+en_w_enough	word	1	enough	/ɪˈnʌf/	enough	كافٍ					
+en_w_enough#ex1	example	1	Do we have enough food?		Do we have enough food?	هل لدينا ما يكفي من الطعام؟					
+en_w_enough#ex2	example	1	I don't have enough time.		I don't have enough time.	ليس لديّ وقت كافٍ.					
+en_w_four	word	1	four	/fɔr/	four	أربعة					
+en_w_four#ex1	example	1	We have four rooms.		We have four rooms.	لدينا أربع غرف.					
+en_w_four#ex2	example	1	The shop opens at four.		The shop opens at four.	يفتح المتجر في الرابعة.					
+en_w_five	word	1	five	/faɪv/	five	خمسة					
+en_w_five#ex1	example	1	I have five minutes.		I have five minutes.	لديّ خمس دقائق.					
+en_w_five#ex2	example	1	She is five years old.		She is five years old.	عمرها خمس سنوات.					
+en_w_open	word	1	open	/ˈoʊpən/	to open; open	يفتح؛ مفتوح					
+en_w_open#ex1	example	1	The shop is open today.		The shop is open today.	المتجر مفتوح اليوم.					
+en_w_open#ex2	example	1	Open your book, please.		Open your book, please.	افتح كتابك من فضلك.					
+en_w_close	word	1	close	/kloʊz/	to close	يُغلق					
+en_w_close#ex1	example	1	Close your book, please.		Close your book, please.	أغلق كتابك من فضلك.					
+en_w_close#ex2	example	1	The shop closes at ten.		The shop closes at ten.	يُغلق المتجر في العاشرة.					
+en_w_buy	word	1	buy	/baɪ/	to buy	يشتري					
+en_w_buy#ex1	example	1	I want to buy a new car.		I want to buy a new car.	أريد أن أشتري سيارة جديدة.					
+en_w_buy#ex2	example	1	She bought some bread.		She bought some bread.	اشترت بعض الخبز.					
+en_w_pay	word	1	pay	/peɪ/	to pay	يدفع					
+en_w_pay#ex1	example	1	Can I pay later?		Can I pay later?	هل يمكنني أن أدفع لاحقًا؟					
+en_w_pay#ex2	example	1	He paid for our dinner.		He paid for our dinner.	دفع ثمن عشائنا.					
+en_w_send	word	1	send	/sɛnd/	to send	يرسل					
+en_w_send#ex1	example	1	Please send me the book.		Please send me the book.	من فضلك أرسل لي الكتاب.					
+en_w_send#ex2	example	1	I sent the money yesterday.		I sent the money yesterday.	أرسلت المال أمس.					
+en_w_read	word	1	read	/rid/	to read	يقرأ					
+en_w_read#ex1	example	1	I read a book every week.		I read a book every week.	أقرأ كتابًا كل أسبوع.					
+en_w_read#ex2	example	1	Can you read this word?		Can you read this word?	هل تستطيع قراءة هذه الكلمة؟					
+en_w_write	word	1	write	/raɪt/	to write	يكتب					
+en_w_write#ex1	example	1	She writes stories for children.		She writes stories for children.	تكتب قصصًا للأطفال.					
+en_w_write#ex2	example	1	I wrote a long story.		I wrote a long story.	كتبت قصة طويلة.					
+en_w_speak	word	1	speak	/spik/	to speak	يتكلم					
+en_w_speak#ex1	example	1	Can you speak to the teacher?		Can you speak to the teacher?	هل يمكنك التحدث إلى المعلّم؟					
+en_w_speak#ex2	example	1	She speaks very well.		She speaks very well.	تتحدث جيدًا جدًا.					
+en_w_learn	word	1	learn	/lɜrn/	to learn	يتعلم					
+en_w_learn#ex1	example	1	I want to learn to cook.		I want to learn to cook.	أريد أن أتعلّم الطبخ.					
+en_w_learn#ex2	example	1	The children learn a lot at school.		The children learn a lot at school.	يتعلّم الأطفال كثيرًا في المدرسة.					
+en_w_change	word	1	change	/tʃeɪndʒ/	to change	يغيّر؛ يتغيّر					
+en_w_change#ex1	example	1	The weather changes every day.		The weather changes every day.	يتغيّر الطقس كل يوم.					
+en_w_change#ex2	example	1	Can I change my room?		Can I change my room?	هل يمكنني تغيير غرفتي؟					
+en_w_meet	word	1	meet	/mit/	to meet	يقابل، يلتقي					
+en_w_meet#ex1	example	1	Nice to meet you.		Nice to meet you.	تشرّفت بمعرفتك.					
+en_w_meet#ex2	example	1	We met at school.		We met at school.	التقينا في المدرسة.					
+en_w_sit	word	1	sit	/sɪt/	to sit	يجلس					
+en_w_sit#ex1	example	1	Can I sit here?		Can I sit here?	هل يمكنني الجلوس هنا؟					
+en_w_sit#ex2	example	1	She sat next to me.		She sat next to me.	جلست بجانبي.					
+en_w_walk	word	1	walk	/wɔk/	to walk	يمشي					
+en_w_walk#ex1	example	1	I walk to work every day.		I walk to work every day.	أمشي إلى العمل كل يوم.					
+en_w_walk#ex2	example	1	We walked home together.		We walked home together.	مشينا إلى البيت معًا.					
+en_w_drink	word	1	drink	/drɪŋk/	to drink; a drink	يشرب؛ مشروب					
+en_w_drink#ex1	example	1	What do you want to drink?		What do you want to drink?	ماذا تريد أن تشرب؟					
+en_w_drink#ex2	example	1	I drank too much coffee.		I drank too much coffee.	شربت قهوة كثيرة جدًا.					
+en_w_turn	word	1	turn	/tɜrn/	to turn; a turn	يدير، ينعطف؛ دور					
+en_w_turn#ex1	example	1	Turn right at the next street.		Turn right at the next street.	انعطف يمينًا عند الشارع التالي.					
+en_w_turn#ex2	example	1	It's your turn to play.		It's your turn to play.	حان دورك في اللعب.					
+en_w_hope	word	1	hope	/hoʊp/	to hope	يأمل					
+en_w_hope#ex1	example	1	I hope you feel better.		I hope you feel better.	أتمنى أن تتحسن.					
+en_w_hope#ex2	example	1	We hope to see you soon.		We hope to see you soon.	نأمل أن نراك قريبًا.					
+en_w_forget	word	1	forget	/fərˈɡɛt/	to forget	ينسى					
+en_w_forget#ex1	example	1	Don't forget your phone.		Don't forget your phone.	لا تنسَ هاتفك.					
+en_w_forget#ex2	example	1	I forgot her birthday.		I forgot her birthday.	نسيت عيد ميلادها.					
+en_w_lose	word	1	lose	/luz/	to lose	يُضيّع؛ يخسر					
+en_w_lose#ex1	example	1	I lost my phone again.		I lost my phone again.	أضعت هاتفي مرة أخرى.					
+en_w_lose#ex2	example	1	We lost the game.		We lost the game.	خسرنا المباراة.					
+en_w_win	word	1	win	/wɪn/	to win	يفوز					
+en_w_win#ex1	example	1	Our school won the game.		Our school won the game.	فازت مدرستنا في المباراة.					
+en_w_win#ex2	example	1	I hope we win tonight.		I hope we win tonight.	أتمنى أن نفوز الليلة.					
+en_w_fine	word	1	fine	/faɪn/	fine, well	بخير؛ جميل					
+en_w_fine#ex1	example	1	I'm fine, thank you.		I'm fine, thank you.	أنا بخير، شكرًا لك.					
+en_w_fine#ex2	example	1	The weather is fine today.		The weather is fine today.	الطقس جميل اليوم.					
+en_w_happy	word	1	happy	/ˈhæpi/	happy	سعيد					
+en_w_happy#ex1	example	1	I am very happy today.		I am very happy today.	أنا سعيد جدًا اليوم.					
+en_w_happy#ex2	example	1	Happy birthday to you!		Happy birthday to you!	عيد ميلاد سعيد!					
+en_w_tired	word	1	tired	/ˈtaɪərd/	tired	متعب					
+en_w_tired#ex1	example	1	I'm too tired to cook.		I'm too tired to cook.	أنا متعب جدًا لأطبخ.					
+en_w_tired#ex2	example	1	The children are tired after school.		The children are tired after school.	الأطفال متعبون بعد المدرسة.					
+en_w_hungry	word	1	hungry	/ˈhʌŋɡri/	hungry	جائع					
+en_w_hungry#ex1	example	1	Are you hungry now?		Are you hungry now?	هل أنت جائع الآن؟					
+en_w_hungry#ex2	example	1	I'm very hungry, let's eat.		I'm very hungry, let's eat.	أنا جائع جدًا، لنأكل.					
+en_w_hot	word	1	hot	/hɑt/	hot	حار، ساخن					
+en_w_hot#ex1	example	1	It is hot in the city.		It is hot in the city.	الجو حار في المدينة.					
+en_w_hot#ex2	example	1	I want a hot drink.		I want a hot drink.	أريد مشروبًا ساخنًا.					
+en_w_cold	word	1	cold	/koʊld/	cold	بارد					
+en_w_cold#ex1	example	1	The water is cold.		The water is cold.	الماء بارد.					
+en_w_cold#ex2	example	1	It is very cold at night.		It is very cold at night.	الجو بارد جدًا في الليل.					
+en_w_beautiful	word	1	beautiful	/ˈbjutəfəl/	beautiful	جميل					
+en_w_beautiful#ex1	example	1	What a beautiful day!		What a beautiful day!	يا له من يوم جميل!					
+en_w_beautiful#ex2	example	1	Your house is beautiful.		Your house is beautiful.	بيتك جميل.					
+en_w_easy	word	1	easy	/ˈizi/	easy	سهل					
+en_w_easy#ex1	example	1	This question is easy.		This question is easy.	هذا السؤال سهل.					
+en_w_easy#ex2	example	1	It is not easy to learn.		It is not easy to learn.	ليس من السهل التعلّم.					
+en_w_hard	word	1	hard	/hɑrd/	hard, difficult	صعب؛ بجد					
+en_w_hard#ex1	example	1	This job is very hard.		This job is very hard.	هذا العمل صعب جدًا.					
+en_w_hard#ex2	example	1	She works hard every day.		She works hard every day.	تعمل بجد كل يوم.					
+en_w_important	word	1	important	/ɪmˈpɔrtənt/	important	مهم					
+en_w_important#ex1	example	1	This is very important.		This is very important.	هذا مهم جدًا.					
+en_w_important#ex2	example	1	Family is important to me.		Family is important to me.	العائلة مهمة بالنسبة لي.					
+en_w_different	word	1	different	/ˈdɪfərənt/	different	مختلف					
+en_w_different#ex1	example	1	We are very different.		We are very different.	نحن مختلفان جدًا.					
+en_w_different#ex2	example	1	This city is different at night.		This city is different at night.	هذه المدينة مختلفة في الليل.					
+en_w_small	word	1	small	/smɔl/	small	صغير					
+en_w_small#ex1	example	1	I live in a small room.		I live in a small room.	أعيش في غرفة صغيرة.					
+en_w_small#ex2	example	1	This car is too small for us.		This car is too small for us.	هذه السيارة صغيرة جدًا علينا.					
+en_w_young	word	1	young	/jʌŋ/	young	صغير السن، شاب					
+en_w_young#ex1	example	1	My mother looks very young.		My mother looks very young.	تبدو أمي صغيرة جدًا في السن.					
+en_w_young#ex2	example	1	When I was young, I played a lot.		When I was young, I played a lot.	عندما كنت صغيرًا، كنت ألعب كثيرًا.					
+en_w_ready	word	1	ready	/ˈrɛdi/	ready	جاهز، مستعد					
+en_w_ready#ex1	example	1	Dinner is ready, come and eat!		Dinner is ready, come and eat!	العشاء جاهز، تعالوا وكلوا!					
+en_w_ready#ex2	example	1	Are you ready to go?		Are you ready to go?	هل أنت مستعد للذهاب؟					
+en_w_late	word	1	late	/leɪt/	late	متأخر					
+en_w_late#ex1	example	1	Sorry, I am late again.		Sorry, I am late again.	آسف، لقد تأخرت مرة أخرى.					
+en_w_late#ex2	example	1	It's late, let's go home.		It's late, let's go home.	الوقت متأخر، لنذهب إلى البيت.					
+en_w_early	word	1	early	/ˈɜrli/	early	مبكرًا					
+en_w_early#ex1	example	1	We went to bed early.		We went to bed early.	ذهبنا إلى النوم مبكرًا.					
+en_w_early#ex2	example	1	The bus came early today.		The bus came early today.	جاءت الحافلة مبكرًا اليوم.					
+en_w_free	word	1	free	/fri/	free (no cost; not busy)	مجاني؛ متفرغ					
+en_w_free#ex1	example	1	Are you free tonight?		Are you free tonight?	هل أنت متفرغ الليلة؟					
+en_w_free#ex2	example	1	The water here is free.		The water here is free.	الماء هنا مجاني.					
+en_w_wrong	word	1	wrong	/rɔŋ/	wrong	خطأ، خاطئ					
+en_w_wrong#ex1	example	1	Sorry, that is the wrong way.		Sorry, that is the wrong way.	عذرًا، هذا هو الطريق الخطأ.					
+en_w_wrong#ex2	example	1	What is wrong with you?		What is wrong with you?	ما بك؟					
+en_w_sister	word	1	sister	/ˈsɪstər/	sister	أخت					
+en_w_sister#ex1	example	1	My sister is a teacher.		My sister is a teacher.	أختي معلّمة.					
+en_w_sister#ex2	example	1	I have two little sisters.		I have two little sisters.	لديّ أختان صغيرتان.					
+en_w_brother	word	1	brother	/ˈbrʌðər/	brother	أخ					
+en_w_brother#ex1	example	1	My brother lives in another city.		My brother lives in another city.	يعيش أخي في مدينة أخرى.					
+en_w_brother#ex2	example	1	Her brothers are at home.		Her brothers are at home.	إخوتها في البيت.					
+en_w_wife	word	1	wife	/waɪf/	wife	زوجة					
+en_w_wife#ex1	example	1	This is my wife, Lina.		This is my wife, Lina.	هذه زوجتي لينا.					
+en_w_wife#ex2	example	1	His wife works at the school.		His wife works at the school.	تعمل زوجته في المدرسة.					
+en_w_husband	word	1	husband	/ˈhʌzbənd/	husband	زوج					
+en_w_husband#ex1	example	1	Her husband is a doctor.		Her husband is a doctor.	زوجها طبيب.					
+en_w_husband#ex2	example	1	My husband cooks dinner every night.		My husband cooks dinner every night.	يطبخ زوجي العشاء كل ليلة.					
+en_w_baby	word	1	baby	/ˈbeɪbi/	baby	طفل رضيع					
+en_w_baby#ex1	example	1	The baby is sleeping.		The baby is sleeping.	الطفل نائم.					
+en_w_baby#ex2	example	1	They have a new baby.		They have a new baby.	رُزقوا بطفل جديد.					
+en_w_doctor	word	1	doctor	/ˈdɑktər/	doctor	طبيب					
+en_w_doctor#ex1	example	1	I need to see a doctor.		I need to see a doctor.	أحتاج إلى رؤية طبيب.					
+en_w_doctor#ex2	example	1	The doctor is very kind.		The doctor is very kind.	الطبيب لطيف جدًا.					
+en_w_teacher	word	1	teacher	/ˈtitʃər/	teacher	معلّم					
+en_w_teacher#ex1	example	1	Our teacher is very nice.		Our teacher is very nice.	معلّمنا لطيف جدًا.					
+en_w_teacher#ex2	example	1	My father was a teacher.		My father was a teacher.	كان أبي معلّمًا.					
+en_w_city	word	1	city	/ˈsɪti/	city	مدينة					
+en_w_city#ex1	example	1	I love this city.		I love this city.	أحب هذه المدينة.					
+en_w_city#ex2	example	1	The city is big and beautiful.		The city is big and beautiful.	المدينة كبيرة وجميلة.					
+en_w_country	word	1	country	/ˈkʌntri/	country	بلد					
+en_w_country#ex1	example	1	This is a beautiful country.		This is a beautiful country.	هذا بلد جميل.					
+en_w_country#ex2	example	1	What country are you from?		What country are you from?	من أي بلد أنت؟					
+en_w_street	word	1	street	/strit/	street	شارع					
+en_w_street#ex1	example	1	The shop is on this street.		The shop is on this street.	المتجر في هذا الشارع.					
+en_w_street#ex2	example	1	Don't play in the street!		Don't play in the street!	لا تلعب في الشارع!					
+en_w_shop	word	1	shop	/ʃɑp/	shop, store	متجر					
+en_w_shop#ex1	example	1	The shop is open until ten.		The shop is open until ten.	المتجر مفتوح حتى العاشرة.					
+en_w_shop#ex2	example	1	I need to go to the shop.		I need to go to the shop.	أحتاج أن أذهب إلى المتجر.					
+en_w_book	word	1	book	/bʊk/	book	كتاب					
+en_w_book#ex1	example	1	This book is very good.		This book is very good.	هذا الكتاب جيد جدًا.					
+en_w_book#ex2	example	1	I read books at night.		I read books at night.	أقرأ الكتب في الليل.					
+en_w_word	word	1	word	/wɜrd/	word	كلمة					
+en_w_word#ex1	example	1	I don't know this word.		I don't know this word.	لا أعرف هذه الكلمة.					
+en_w_word#ex2	example	1	Write the new words in your book.		Write the new words in your book.	اكتب الكلمات الجديدة في كتابك.					
+en_w_story	word	1	story	/ˈstɔri/	story	قصة					
+en_w_story#ex1	example	1	Tell me a story, please.		Tell me a story, please.	احكِ لي قصة من فضلك.					
+en_w_story#ex2	example	1	It's a long story.		It's a long story.	إنها قصة طويلة.					
+en_w_idea	word	1	idea	/aɪˈdiə/	idea	فكرة					
+en_w_idea#ex1	example	1	I have a better idea.		I have a better idea.	لديّ فكرة أفضل.					
+en_w_idea#ex2	example	1	I have no idea where he is.		I have no idea where he is.	ليس لديّ أي فكرة أين هو.					
+en_w_game	word	1	game	/ɡeɪm/	game	لعبة؛ مباراة					
+en_w_game#ex1	example	1	We saw the game together.		We saw the game together.	شاهدنا المباراة معًا.					
+en_w_game#ex2	example	1	This game is very easy.		This game is very easy.	هذه اللعبة سهلة جدًا.					
+en_w_music	word	1	music	/ˈmjuzɪk/	music	موسيقى					
+en_w_music#ex1	example	1	I like music very much.		I like music very much.	أحب الموسيقى كثيرًا.					
+en_w_music#ex2	example	1	Turn off the music, please.		Turn off the music, please.	أطفئ الموسيقى من فضلك.					
+en_w_movie	word	1	movie	/ˈmuvi/	movie, film	فيلم					
+en_w_movie#ex1	example	1	Let's see a movie tonight.		Let's see a movie tonight.	لنشاهد فيلمًا الليلة.					
+en_w_movie#ex2	example	1	The movie was very long.		The movie was very long.	كان الفيلم طويلًا جدًا.					
+en_w_table	word	1	table	/ˈteɪbəl/	table	طاولة					
+en_w_table#ex1	example	1	The children sat at the table.		The children sat at the table.	جلس الأطفال إلى الطاولة.					
+en_w_table#ex2	example	1	We need a bigger table.		We need a bigger table.	نحتاج إلى طاولة أكبر.					
+en_w_bed	word	1	bed	/bɛd/	bed	سرير					
+en_w_bed#ex1	example	1	I go to bed at ten.		I go to bed at ten.	أذهب إلى السرير في العاشرة.					
+en_w_bed#ex2	example	1	The bed in my room is small.		The bed in my room is small.	السرير في غرفتي صغير.					
+en_w_dinner	word	1	dinner	/ˈdɪnər/	dinner	عشاء					
+en_w_dinner#ex1	example	1	What's for dinner tonight?		What's for dinner tonight?	ما العشاء الليلة؟					
+en_w_dinner#ex2	example	1	We had dinner with friends.		We had dinner with friends.	تناولنا العشاء مع الأصدقاء.					
+en_w_breakfast	word	1	breakfast	/ˈbrɛkfəst/	breakfast	فطور					
+en_w_breakfast#ex1	example	1	I eat breakfast at home.		I eat breakfast at home.	أتناول الفطور في البيت.					
+en_w_breakfast#ex2	example	1	We have bread and tea for breakfast.		We have bread and tea for breakfast.	نتناول الخبز والشاي على الفطور.					
+en_w_coffee	word	1	coffee	/ˈkɔfi/	coffee	قهوة					
+en_w_coffee#ex1	example	1	This coffee is very good.		This coffee is very good.	هذه القهوة جيدة جدًا.					
+en_w_coffee#ex2	example	1	Let's meet for coffee tomorrow.		Let's meet for coffee tomorrow.	لنلتقِ لشرب القهوة غدًا.					
+en_w_tea	word	1	tea	/ti/	tea	شاي					
+en_w_tea#ex1	example	1	I make tea for my mother.		I make tea for my mother.	أُعدّ الشاي لأمي.					
+en_w_tea#ex2	example	1	The tea is too cold now.		The tea is too cold now.	الشاي بارد جدًا الآن.					
+en_w_bread	word	1	bread	/brɛd/	bread	خبز					
+en_w_bread#ex1	example	1	I buy bread every morning.		I buy bread every morning.	أشتري الخبز كل صباح.					
+en_w_bread#ex2	example	1	This bread is still hot.		This bread is still hot.	هذا الخبز ما زال ساخنًا.					
+en_w_bus	word	1	bus	/bʌs/	bus	حافلة					
+en_w_bus#ex1	example	1	I take the bus to work.		I take the bus to work.	أركب الحافلة إلى العمل.					
+en_w_bus#ex2	example	1	The bus is late again.		The bus is late again.	الحافلة متأخرة مرة أخرى.					
+en_w_train	word	1	train	/treɪn/	train	قطار					
+en_w_train#ex1	example	1	The train leaves at five.		The train leaves at five.	يغادر القطار في الخامسة.					
+en_w_train#ex2	example	1	I like to read on the train.		I like to read on the train.	أحب القراءة في القطار.					
+en_w_weather	word	1	weather	/ˈwɛðər/	weather	طقس					
+en_w_weather#ex1	example	1	How is the weather today?		How is the weather today?	كيف الطقس اليوم؟					
+en_w_weather#ex2	example	1	The weather was bad all week.		The weather was bad all week.	كان الطقس سيئًا طوال الأسبوع.					
+en_w_rain	word	1	rain	/reɪn/	rain; to rain	مطر؛ تمطر					
+en_w_rain#ex1	example	1	There is a lot of rain this month.		There is a lot of rain this month.	هناك أمطار كثيرة هذا الشهر.					
+en_w_rain#ex2	example	1	Look, it's raining again!		Look, it's raining again!	انظر، إنها تمطر مرة أخرى!					
+en_w_sun	word	1	sun	/sʌn/	sun	شمس					
+en_w_sun#ex1	example	1	The sun is very hot today.		The sun is very hot today.	الشمس حارة جدًا اليوم.					
+en_w_sun#ex2	example	1	Let's sit in the sun.		Let's sit in the sun.	لنجلس في الشمس.					
+en_w_dog	word	1	dog	/dɔɡ/	dog	كلب					
+en_w_dog#ex1	example	1	We have a big dog.		We have a big dog.	لدينا كلب كبير.					
+en_w_dog#ex2	example	1	The dog sleeps by the door.		The dog sleeps by the door.	ينام الكلب بجانب الباب.					
+en_w_birthday	word	1	birthday	/ˈbɜrθdeɪ/	birthday	عيد ميلاد					
+en_w_birthday#ex1	example	1	It's my sister's birthday tomorrow.		It's my sister's birthday tomorrow.	غدًا عيد ميلاد أختي.					
+en_w_birthday#ex2	example	1	What do you want for your birthday?		What do you want for your birthday?	ماذا تريد في عيد ميلادك؟					
+en_w_hundred	word	1	hundred	/ˈhʌndrəd/	hundred	مئة					
+en_w_hundred#ex1	example	1	There are a hundred people here.		There are a hundred people here.	هناك مئة شخص هنا.					
+en_w_hundred#ex2	example	1	I have read this book a hundred times.		I have read this book a hundred times.	قرأت هذا الكتاب مئة مرة.					
+en_w_ten	word	1	ten	/tɛn/	ten	عشرة					
+en_w_ten#ex1	example	1	Ten people came to dinner.		Ten people came to dinner.	جاء عشرة أشخاص إلى العشاء.					
+en_w_ten#ex2	example	1	We waited ten minutes for the bus.		We waited ten minutes for the bus.	انتظرنا الحافلة عشر دقائق.					
+en_w_also	word	1	also	/ˈɔlsoʊ/	also	أيضًا					
+en_w_also#ex1	example	1	I also want some tea.		I also want some tea.	أريد بعض الشاي أيضًا.					
+en_w_also#ex2	example	1	She is a teacher and also a mother.		She is a teacher and also a mother.	هي معلّمة وأم أيضًا.					
+en_w_as	word	1	as	/æz/	as	كـ، مثل					
+en_w_as#ex1	example	1	She works as a doctor.		She works as a doctor.	تعمل طبيبة.					
+en_w_as#ex2	example	1	Come as early as you can.		Come as early as you can.	تعال بأبكر ما تستطيع.					
+en_w_which	word	1	which	/wɪtʃ/	which	أي، الذي					
+en_w_which#ex1	example	1	Which bus goes to the city?		Which bus goes to the city?	أي حافلة تذهب إلى المدينة؟					
+en_w_which#ex2	example	1	Which one do you want?		Which one do you want?	أيها تريد؟					
+en_w_someone	word	1	someone	/ˈsʌmwʌn/	someone	شخص ما					
+en_w_someone#ex1	example	1	Someone called you this morning.		Someone called you this morning.	اتصل بك أحدهم هذا الصباح.					
+en_w_someone#ex2	example	1	I need someone to help me.		I need someone to help me.	أحتاج إلى شخص يساعدني.					
+en_w_anything	word	1	anything	/ˈɛniθɪŋ/	anything	أي شيء					
+en_w_anything#ex1	example	1	Do you need anything from the shop?		Do you need anything from the shop?	هل تحتاج شيئًا من المتجر؟					
+en_w_anything#ex2	example	1	I didn't eat anything today.		I didn't eat anything today.	لم آكل شيئًا اليوم.					
+en_w_everyone	word	1	everyone	/ˈɛvriwʌn/	everyone	الجميع					
+en_w_everyone#ex1	example	1	Everyone is here now.		Everyone is here now.	الجميع هنا الآن.					
+en_w_everyone#ex2	example	1	Good morning, everybody, let's start.		Good morning, everybody, let's start.	صباح الخير جميعًا، لنبدأ.					
+en_w_must	word	1	must	/mʌst/	must	يجب					
+en_w_must#ex1	example	1	You must be tired.		You must be tired.	لا بد أنك متعب.					
+en_w_must#ex2	example	1	We must leave now.		We must leave now.	يجب أن نغادر الآن.					
+en_w_lot	word	1	lot	/lɑt/	a lot	كثير					
+en_w_lot#ex1	example	1	I have a lot of work today.		I have a lot of work today.	لديّ عمل كثير اليوم.					
+en_w_lot#ex2	example	1	She reads a lot of books.		She reads a lot of books.	تقرأ كتبًا كثيرة.					
+en_w_kind	word	1	kind	/kaɪnd/	kind, nice	لطيف، طيب					
+en_w_kind#ex1	example	1	You are very kind.		You are very kind.	أنت لطيف جدًا.					
+en_w_kind#ex2	example	1	She is kind to everyone.		She is kind to everyone.	هي لطيفة مع الجميع.					
+en_w_part	word	1	part	/pɑrt/	part	جزء					
+en_w_part#ex1	example	1	This is the best part of the movie.		This is the best part of the movie.	هذا أفضل جزء في الفيلم.					
+en_w_part#ex2	example	1	I read the first part of the book.		I read the first part of the book.	قرأت الجزء الأول من الكتاب.					
+en_w_end	word	1	end	/ɛnd/	end	نهاية					
+en_w_end#ex1	example	1	I didn't like the end of the movie.		I didn't like the end of the movie.	لم تعجبني نهاية الفيلم.					
+en_w_end#ex2	example	1	See you at the end of the week.		See you at the end of the week.	أراك في نهاية الأسبوع.					
+en_w_month	word	1	month	/mʌnθ/	month	شهر					
+en_w_month#ex1	example	1	I see my family every month.		I see my family every month.	أرى عائلتي كل شهر.					
+en_w_month#ex2	example	1	Next month I start a new job.		Next month I start a new job.	الشهر القادم أبدأ عملًا جديدًا.					
+en_w_tonight	word	1	tonight	/təˈnaɪt/	tonight	الليلة					
+en_w_tonight#ex1	example	1	What are you doing tonight?		What are you doing tonight?	ماذا ستفعل الليلة؟					
+en_w_tonight#ex2	example	1	It will be cold tonight.		It will be cold tonight.	سيكون الجو باردًا الليلة.					
+en_w_soon	word	1	soon	/sun/	soon	قريبًا					
+en_w_soon#ex1	example	1	Dinner will be ready soon.		Dinner will be ready soon.	سيكون العشاء جاهزًا قريبًا.					
+en_w_soon#ex2	example	1	The bus will come soon.		The bus will come soon.	ستصل الحافلة قريبًا.					
+en_w_later	word	1	later	/ˈleɪtər/	later	لاحقًا					
+en_w_later#ex1	example	1	Call me later, please.		Call me later, please.	اتصل بي لاحقًا من فضلك.					
+en_w_later#ex2	example	1	I will do it later.		I will do it later.	سأفعل ذلك لاحقًا.					
+en_w_already	word	1	already	/ɔlˈrɛdi/	already	بالفعل					
+en_w_already#ex1	example	1	I already ate dinner.		I already ate dinner.	تناولت العشاء بالفعل.					
+en_w_already#ex2	example	1	Is it ten already?		Is it ten already?	هل أصبحت الساعة العاشرة بالفعل؟					
+en_w_almost	word	1	almost	/ˈɔlmoʊst/	almost	تقريبًا					
+en_w_almost#ex1	example	1	Dinner is almost ready.		Dinner is almost ready.	العشاء جاهز تقريبًا.					
+en_w_almost#ex2	example	1	I almost forgot your birthday.		I almost forgot your birthday.	كدت أنسى عيد ميلادك.					
+en_w_often	word	1	often	/ˈɔfən/	often	غالبًا					
+en_w_often#ex1	example	1	I often walk to work.		I often walk to work.	كثيرًا ما أمشي إلى العمل.					
+en_w_often#ex2	example	1	How often do you see your family?		How often do you see your family?	كم مرة ترى عائلتك؟					
+en_w_sometimes	word	1	sometimes	/ˈsʌmtaɪmz/	sometimes	أحيانًا					
+en_w_sometimes#ex1	example	1	Sometimes I work at night.		Sometimes I work at night.	أحيانًا أعمل في الليل.					
+en_w_sometimes#ex2	example	1	We sometimes eat breakfast together.		We sometimes eat breakfast together.	نتناول الفطور معًا أحيانًا.					
+en_w_under	word	1	under	/ˈʌndər/	under	تحت					
+en_w_under#ex1	example	1	The dog is under the table.		The dog is under the table.	الكلب تحت الطاولة.					
+en_w_under#ex2	example	1	I found my phone under the bed.		I found my phone under the bed.	وجدت هاتفي تحت السرير.					
+en_w_near	word	1	near	/nɪr/	near	قرب					
+en_w_near#ex1	example	1	I live near the school.		I live near the school.	أسكن قرب المدرسة.					
+en_w_near#ex2	example	1	Is there a shop near here?		Is there a shop near here?	هل يوجد متجر قريب من هنا؟					
+en_w_between	word	1	between	/bɪˈtwin/	between	بين					
+en_w_between#ex1	example	1	Sit between me and your brother.		Sit between me and your brother.	اجلس بيني وبين أخيك.					
+en_w_between#ex2	example	1	The shop is between the school and my house.		The shop is between the school and my house.	المتجر بين المدرسة وبيتي.					
+en_w_without	word	1	without	/wɪˈðaʊt/	without	بدون					
+en_w_without#ex1	example	1	I can't live without coffee.		I can't live without coffee.	لا أستطيع العيش بدون قهوة.					
+en_w_without#ex2	example	1	She left without her phone.		She left without her phone.	غادرت بدون هاتفها.					
+en_w_while	word	1	while	/waɪl/	while; a while	بينما؛ فترة					
+en_w_while#ex1	example	1	I read while I wait for the bus.		I read while I wait for the bus.	أقرأ بينما أنتظر الحافلة.					
+en_w_while#ex2	example	1	Wait here for a while.		Wait here for a while.	انتظر هنا لبعض الوقت.					
+en_w_until	word	1	until	/ənˈtɪl/	until	حتى					
+en_w_until#ex1	example	1	Wait until I come back.		Wait until I come back.	انتظر حتى أعود.					
+en_w_until#ex2	example	1	I slept until ten this morning.		I slept until ten this morning.	نمت حتى العاشرة هذا الصباح.					
+en_w_cook	word	1	cook	/kʊk/	to cook	يطبخ					
+en_w_cook#ex1	example	1	I cook dinner for my family.		I cook dinner for my family.	أطبخ العشاء لعائلتي.					
+en_w_cook#ex2	example	1	Can you cook this for me?		Can you cook this for me?	هل يمكنك أن تطبخ هذا لي؟					
+en_w_wash	word	1	wash	/wɑʃ/	to wash	يغسل					
+en_w_wash#ex1	example	1	Wash your hands, please.		Wash your hands, please.	اغسل يديك من فضلك.					
+en_w_wash#ex2	example	1	I need to wash the car.		I need to wash the car.	أحتاج إلى غسل السيارة.					
+en_w_clean	word	1	clean	/klin/	clean	نظيف					
+en_w_clean#ex1	example	1	My room is clean now.		My room is clean now.	غرفتي نظيفة الآن.					
+en_w_clean#ex2	example	1	Please keep the house clean.		Please keep the house clean.	من فضلك حافظ على نظافة البيت.					
+en_w_welcome	word	1	welcome	/ˈwɛlkəm/	welcome	مُرحَّب به؛ أهلًا					
+en_w_welcome#ex1	example	1	You're welcome to come any time.		You're welcome to come any time.	مرحبًا بك في أي وقت.					
+en_w_welcome#ex2	example	1	Welcome to our house!		Welcome to our house!	أهلًا بك في بيتنا!					

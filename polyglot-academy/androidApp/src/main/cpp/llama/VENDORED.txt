@@ -1,0 +1,4 @@
+llama.cpp v0.7.0 (MIT, see LICENSE), from https://github.com/ggml-org/llama.cpp/archive/refs/tags/v0.7.0.tar.gz
+(SHA-256 55d67acf3ad2ad747a9bbeb75f9f0e173dbcc0d1753a471038a90c819421c5e1), downloaded 2026-11-01 with the owner's approval.
+Only the core library is kept: include/, src/ (with src/models/), and ggml/ without the GPU and accelerator
+backends. Its own CMakeLists for src/ is left out; androidApp/src/main/cpp/CMakeLists.txt builds it. No file was changed.

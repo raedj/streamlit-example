@@ -1,0 +1,901 @@
+item_id	kind	level	text	pron	en	ar	status	correction	reviewer	date	note
+es_w_de	word	1	de		of, from	من، لـ (للإضافة)					
+es_w_de#ex1	example	1	La casa de mi padre es grande.		My father's house is big.	بيت أبي كبير.					
+es_w_de#ex2	example	1	Soy de una ciudad pequeña.		I'm from a small city.	أنا من مدينة صغيرة.					
+es_w_el	word	1	el		the	أداة التعريف (الـ)					
+es_w_el#ex1	example	1	El perro está en la casa.		The dog is in the house.	الكلب في البيت.					
+es_w_el#ex2	example	1	Los niños juegan en la calle.		The children play in the street.	يلعب الأطفال في الشارع.					
+es_w_que	word	1	que		that, which	أنّ؛ الذي					
+es_w_que#ex1	example	1	Creo que él tiene un perro.		I think he has a dog.	أعتقد أن لديه كلبًا.					
+es_w_que#ex2	example	1	El libro que me diste es muy bueno.		The book you gave me is very good.	الكتاب الذي أعطيتني إياه جيد جدًا.					
+es_w_y	word	1	y		and	و					
+es_w_y#ex1	example	1	Tengo un hermano y una hermana.		I have a brother and a sister.	لديّ أخ وأخت.					
+es_w_y#ex2	example	1	Comemos pan y bebemos café.		We eat bread and drink coffee.	نأكل الخبز ونشرب القهوة.					
+es_w_a	word	1	a		to, at	إلى، في					
+es_w_a#ex1	example	1	Voy a la escuela todos los días.		I go to school every day.	أذهب إلى المدرسة كل يوم.					
+es_w_a#ex2	example	1	Mañana vamos al mar.		Tomorrow we're going to the sea.	غدًا سنذهب إلى البحر.					
+es_w_en	word	1	en		in, on, at	في					
+es_w_en#ex1	example	1	Mi madre está en casa.		My mother is at home.	أمي في البيت.					
+es_w_en#ex2	example	1	Vivimos en una ciudad grande.		We live in a big city.	نعيش في مدينة كبيرة.					
+es_w_un	word	1	un		a, an; one	أداة نكرة؛ واحد					
+es_w_un#ex1	example	1	Necesito un libro nuevo.		I need a new book.	أحتاج إلى كتاب جديد.					
+es_w_un#ex2	example	1	Quiero una casa con una ventana grande.		I want a house with a big window.	أريد بيتًا فيه نافذة كبيرة.					
+es_w_ser	word	1	ser		to be (permanent)	يكون (صفة دائمة)					
+es_w_ser#ex1	example	1	Mi padre es médico.		My father is a doctor.	أبي طبيب.					
+es_w_ser#ex2	example	1	Ella era profesora en mi escuela.		She was a teacher at my school.	كانت معلّمة في مدرستي.					
+es_w_se	word	1	se		reflexive pronoun (himself, herself…)	ضمير انعكاسي (نفسه)					
+es_w_se#ex1	example	1	Mi hermana se llama Ana.		My sister's name is Ana.	اسم أختي آنا.					
+es_w_se#ex2	example	1	Él se fue a casa temprano.		He went home early.	ذهب إلى البيت مبكرًا.					
+es_w_no	word	1	no		no, not	لا					
+es_w_no#ex1	example	1	No tengo dinero ahora.		I don't have any money now.	ليس لديّ مال الآن.					
+es_w_no#ex2	example	1	No, no quiero café.		No, I don't want coffee.	لا، لا أريد قهوة.					
+es_w_haber	word	1	haber		to have (auxiliary); hay = there is	فعل مساعد؛ hay = يوجد					
+es_w_haber#ex1	example	1	Hay un perro en la calle.		There is a dog in the street.	هناك كلب في الشارع.					
+es_w_haber#ex2	example	1	Nunca he estado en este país.		I have never been to this country.	لم أزر هذا البلد قط.					
+es_w_por	word	1	por		for, by, through	من أجل، بـ، عبر					
+es_w_por#ex1	example	1	Gracias por tu ayuda.		Thank you for your help.	شكرًا على مساعدتك.					
+es_w_por#ex2	example	1	Camino por la ciudad cada tarde.		I walk around the city every afternoon.	أمشي في المدينة كل مساء.					
+es_w_con	word	1	con		with	مع					
+es_w_con#ex1	example	1	Vivo con mi familia.		I live with my family.	أعيش مع عائلتي.					
+es_w_con#ex2	example	1	¿Quieres venir conmigo a la tienda?		Do you want to come to the shop with me?	هل تريد أن تأتي معي إلى المتجر؟					
+es_w_su	word	1	su		his, her, your (formal), their	ـه، ـها، ـهم					
+es_w_su#ex1	example	1	Su casa es muy bonita.		His house is very pretty.	بيته جميل جدًا.					
+es_w_su#ex2	example	1	Ellos viven con sus hijos.		They live with their children.	يعيشون مع أبنائهم.					
+es_w_para	word	1	para		for, in order to	لـ، من أجل					
+es_w_para#ex1	example	1	Esta comida es para los niños.		This food is for the children.	هذا الطعام للأطفال.					
+es_w_para#ex2	example	1	Necesito dinero para el viaje.		I need money for the trip.	أحتاج مالًا للرحلة.					
+es_w_como	word	1	como		like, as	مثل، كـ					
+es_w_como#ex1	example	1	Él habla como su padre.		He talks like his father.	يتكلم مثل أبيه.					
+es_w_como#ex2	example	1	Trabajo como profesor en una escuela.		I work as a teacher at a school.	أعمل معلّمًا في مدرسة.					
+es_w_estar	word	1	estar		to be (state, place)	يكون (حال أو مكان)					
+es_w_estar#ex1	example	1	Estoy muy cansado hoy.		I'm very tired today.	أنا متعب جدًا اليوم.					
+es_w_estar#ex2	example	1	¿Dónde están mis libros?		Where are my books?	أين كتبي؟					
+es_w_tener	word	1	tener		to have	يملك، لديه					
+es_w_tener#ex1	example	1	Yo tengo dos hermanos.		I have two brothers.	لديّ أخوان.					
+es_w_tener#ex2	example	1	¿Tienes tiempo mañana por la tarde?		Do you have time tomorrow afternoon?	هل لديك وقت غدًا بعد الظهر؟					
+es_w_lo	word	1	lo		it, him (object)	ـه (ضمير مفعول به)					
+es_w_lo#ex1	example	1	No lo sé, lo siento.		I don't know, I'm sorry.	لا أعرف، آسف.					
+es_w_lo#ex2	example	1	Lo vi ayer en la tienda.		I saw him yesterday at the shop.	رأيته أمس في المتجر.					
+es_w_todo	word	1	todo		all, everything	كل					
+es_w_todo#ex1	example	1	Todo está listo para la cena.		Everything is ready for dinner.	كل شيء جاهز للعشاء.					
+es_w_todo#ex2	example	1	Todos mis amigos están aquí.		All my friends are here.	كل أصدقائي هنا.					
+es_w_pero	word	1	pero		but	لكن					
+es_w_pero#ex1	example	1	Es pequeño pero muy bonito.		It's small but very pretty.	إنه صغير لكنه جميل جدًا.					
+es_w_pero#ex2	example	1	Quiero ir, pero no puedo.		I want to go, but I can't.	أريد أن أذهب، لكنني لا أستطيع.					
+es_w_mas	word	1	más		more	أكثر					
+es_w_mas#ex1	example	1	Quiero más pan, por favor.		I'd like more bread, please.	أريد المزيد من الخبز من فضلك.					
+es_w_mas#ex2	example	1	Mi hermano es más alto que yo.		My brother is taller than me.	أخي أطول مني.					
+es_w_hacer	word	1	hacer		to do, to make	يفعل، يصنع					
+es_w_hacer#ex1	example	1	¿Qué haces esta noche?		What are you doing tonight?	ماذا تفعل هذه الليلة؟					
+es_w_hacer#ex2	example	1	Hoy hace mucho calor.		It's very hot today.	الجو حار جدًا اليوم.					
+es_w_o	word	1	o		or	أو					
+es_w_o#ex1	example	1	¿Quieres café o té?		Do you want coffee or tea?	هل تريد قهوة أم شايًا؟					
+es_w_o#ex2	example	1	Podemos ir hoy o mañana.		We can go today or tomorrow.	يمكننا أن نذهب اليوم أو غدًا.					
+es_w_poder	word	1	poder		can, to be able to	يستطيع					
+es_w_poder#ex1	example	1	¿Me puedes ayudar, por favor?		Can you help me, please?	هل يمكنك مساعدتي من فضلك؟					
+es_w_poder#ex2	example	1	No puedo dormir esta noche.		I can't sleep tonight.	لا أستطيع النوم هذه الليلة.					
+es_w_decir	word	1	decir		to say, to tell	يقول					
+es_w_decir#ex1	example	1	¿Qué dice tu madre?		What does your mother say?	ماذا تقول أمك؟					
+es_w_decir#ex2	example	1	Él me dijo su nombre.		He told me his name.	أخبرني باسمه.					
+es_w_este	word	1	este		this	هذا					
+es_w_este#ex1	example	1	Este libro es muy bueno.		This book is very good.	هذا الكتاب جيد جدًا.					
+es_w_este#ex2	example	1	Esta casa es nueva.		This house is new.	هذا البيت جديد.					
+es_w_ir	word	1	ir		to go	يذهب					
+es_w_ir#ex1	example	1	Vamos a casa ahora.		Let's go home now.	لنذهب إلى البيت الآن.					
+es_w_ir#ex2	example	1	Ayer fui a la playa con mis amigos.		Yesterday I went to the beach with my friends.	أمس ذهبت إلى الشاطئ مع أصدقائي.					
+es_w_otro	word	1	otro		other, another	آخر					
+es_w_otro#ex1	example	1	Quiero otro café, por favor.		I'd like another coffee, please.	أريد قهوة أخرى من فضلك.					
+es_w_otro#ex2	example	1	Mi hermano vive en otra ciudad.		My brother lives in another city.	يعيش أخي في مدينة أخرى.					
+es_w_ese	word	1	ese		that	ذلك					
+es_w_ese#ex1	example	1	Ese hombre es mi profesor.		That man is my teacher.	ذلك الرجل معلّمي.					
+es_w_ese#ex2	example	1	Eso es muy importante.		That is very important.	ذلك مهم جدًا.					
+es_w_si	word	1	si		if	إذا					
+es_w_si#ex1	example	1	Si llueve, no vamos a la playa.		If it rains, we won't go to the beach.	إذا أمطرت فلن نذهب إلى الشاطئ.					
+es_w_si#ex2	example	1	Si tienes hambre, hay pan en la mesa.		If you're hungry, there's bread on the table.	إذا كنت جائعًا، يوجد خبز على الطاولة.					
+es_w_ya	word	1	ya		already; now	بالفعل؛ الآن					
+es_w_ya#ex1	example	1	Ya es muy tarde.		It's already very late.	لقد تأخر الوقت كثيرًا.					
+es_w_ya#ex2	example	1	¿Ya terminaste tu trabajo?		Have you finished your work yet?	هل أنهيت عملك؟					
+es_w_yo	word	1	yo		I	أنا					
+es_w_yo#ex1	example	1	Yo vivo aquí con mi familia.		I live here with my family.	أنا أعيش هنا مع عائلتي.					
+es_w_yo#ex2	example	1	Mi nombre es Carlos.		My name is Carlos.	اسمي كارلوس.					
+es_w_tu	word	1	tú		you (informal)	أنت					
+es_w_tu#ex1	example	1	¿Tú eres el nuevo profesor?		Are you the new teacher?	هل أنت المعلّم الجديد؟					
+es_w_tu#ex2	example	1	Tu casa es muy grande.		Your house is very big.	بيتك كبير جدًا.					
+es_w_el_pron	word	1	él		he	هو					
+es_w_el_pron#ex1	example	1	Él trabaja en una tienda.		He works in a shop.	هو يعمل في متجر.					
+es_w_el_pron#ex2	example	1	Le di el libro ayer.		I gave him the book yesterday.	أعطيته الكتاب أمس.					
+es_w_ella	word	1	ella		she	هي					
+es_w_ella#ex1	example	1	Ella es mi hermana.		She is my sister.	هي أختي.					
+es_w_ella#ex2	example	1	Ella siempre llega temprano.		She always arrives early.	هي تصل مبكرًا دائمًا.					
+es_w_nosotros	word	1	nosotros		we	نحن					
+es_w_nosotros#ex1	example	1	Nosotros vivimos cerca de aquí.		We live near here.	نحن نعيش قرب هنا.					
+es_w_nosotros#ex2	example	1	Nuestra casa es pequeña.		Our house is small.	بيتنا صغير.					
+es_w_ellos	word	1	ellos		they	هم					
+es_w_ellos#ex1	example	1	Ellos están en la escuela.		They are at school.	هم في المدرسة.					
+es_w_ellos#ex2	example	1	Ellas son mis amigas.		They are my friends.	هنّ صديقاتي.					
+es_w_usted	word	1	usted		you (formal)	حضرتك					
+es_w_usted#ex1	example	1	¿Usted es el médico?		Are you the doctor?	هل حضرتك الطبيب؟					
+es_w_usted#ex2	example	1	Muchas gracias a ustedes.		Thank you very much, all of you.	شكرًا جزيلًا لكم.					
+es_w_si_yes	word	1	sí		yes	نعم					
+es_w_si_yes#ex1	example	1	Sí, hoy tengo tiempo.		Yes, I have time today.	نعم، لديّ وقت اليوم.					
+es_w_si_yes#ex2	example	1	Sí, me gusta mucho.		Yes, I like it a lot.	نعم، يعجبني كثيرًا.					
+es_w_bien	word	1	bien		well, fine	جيدًا، بخير					
+es_w_bien#ex1	example	1	Estoy muy bien, gracias.		I'm very well, thank you.	أنا بخير جدًا، شكرًا.					
+es_w_bien#ex2	example	1	Ella habla muy bien.		She speaks very well.	هي تتكلم جيدًا جدًا.					
+es_w_muy	word	1	muy		very	جدًا					
+es_w_muy#ex1	example	1	Hace muy buen tiempo hoy.		The weather is very nice today.	الطقس جميل جدًا اليوم.					
+es_w_muy#ex2	example	1	Hoy estoy muy contento.		I'm very happy today.	أنا مسرور جدًا اليوم.					
+es_w_aqui	word	1	aquí		here	هنا					
+es_w_aqui#ex1	example	1	Mis amigos están aquí.		My friends are here.	أصدقائي هنا.					
+es_w_aqui#ex2	example	1	¿Vives aquí con tu familia?		Do you live here with your family?	هل تعيش هنا مع عائلتك؟					
+es_w_ahora	word	1	ahora		now	الآن					
+es_w_ahora#ex1	example	1	No puedo hablar ahora.		I can't talk now.	لا أستطيع التحدث الآن.					
+es_w_ahora#ex2	example	1	¿Dónde estás ahora mismo?		Where are you right now?	أين أنت الآن؟					
+es_w_tambien	word	1	también		also, too	أيضًا					
+es_w_tambien#ex1	example	1	Yo también quiero café.		I want coffee too.	أنا أيضًا أريد قهوة.					
+es_w_tambien#ex2	example	1	Ella también es profesora.		She is a teacher too.	هي أيضًا معلّمة.					
+es_w_cuando	word	1	cuando		when	عندما					
+es_w_cuando#ex1	example	1	Cuando llego a casa, como algo.		When I get home, I eat something.	عندما أصل إلى البيت، آكل شيئًا.					
+es_w_cuando#ex2	example	1	Cuando era niño, jugaba mucho.		When I was a child, I played a lot.	عندما كنت طفلًا، كنت ألعب كثيرًا.					
+es_w_que_q	word	1	qué		what	ماذا، ما					
+es_w_que_q#ex1	example	1	¿Qué tienes en la mano?		What do you have in your hand?	ماذا في يدك؟					
+es_w_que_q#ex2	example	1	¿Qué hora es ahora?		What time is it now?	كم الساعة الآن؟					
+es_w_donde	word	1	dónde		where	أين					
+es_w_donde#ex1	example	1	¿Dónde vive tu familia?		Where does your family live?	أين تعيش عائلتك؟					
+es_w_donde#ex2	example	1	¿De dónde es tu profesor?		Where is your teacher from?	من أين معلّمك؟					
+es_w_quien	word	1	quién		who	مَن					
+es_w_quien#ex1	example	1	¿Quién es ese hombre?		Who is that man?	مَن ذلك الرجل؟					
+es_w_quien#ex2	example	1	¿Quién quiere más café?		Who wants more coffee?	مَن يريد المزيد من القهوة؟					
+es_w_como_q	word	1	cómo		how	كيف					
+es_w_como_q#ex1	example	1	¿Cómo estás hoy, amigo?		How are you today?	كيف حالك اليوم؟					
+es_w_como_q#ex2	example	1	¿Cómo se llama tu perro?		What's your dog's name?	ما اسم كلبك؟					
+es_w_cuanto	word	1	cuánto		how much, how many	كم					
+es_w_cuanto#ex1	example	1	¿Cuánto dinero tienes ahora?		How much money do you have now?	كم من المال لديك؟					
+es_w_cuanto#ex2	example	1	¿Cuántos hijos tienes tú?		How many children do you have?	كم ولدًا لديك؟					
+es_w_nada	word	1	nada		nothing	لا شيء					
+es_w_nada#ex1	example	1	No tengo nada que hacer.		I have nothing to do.	ليس لديّ ما أفعله.					
+es_w_nada#ex2	example	1	No hay nada en la mesa.		There is nothing on the table.	لا يوجد شيء على الطاولة.					
+es_w_algo	word	1	algo		something	شيء ما					
+es_w_algo#ex1	example	1	¿Quieres comer algo ahora?		Do you want to eat something now?	هل تريد أن تأكل شيئًا الآن؟					
+es_w_algo#ex2	example	1	Tengo algo para ti.		I have something for you.	لديّ شيء لك.					
+es_w_nunca	word	1	nunca		never	أبدًا					
+es_w_nunca#ex1	example	1	Nunca bebo café por la noche.		I never drink coffee at night.	لا أشرب القهوة ليلًا أبدًا.					
+es_w_nunca#ex2	example	1	Ella nunca llega tarde.		She is never late.	هي لا تتأخر أبدًا.					
+es_w_siempre	word	1	siempre		always	دائمًا					
+es_w_siempre#ex1	example	1	Siempre como pan en el desayuno.		I always eat bread at breakfast.	آكل الخبز دائمًا في الفطور.					
+es_w_siempre#ex2	example	1	Mi abuela siempre está contenta.		My grandmother is always happy.	جدتي مسرورة دائمًا.					
+es_w_mucho	word	1	mucho		much, many, a lot	كثير					
+es_w_mucho#ex1	example	1	Tengo mucho trabajo hoy.		I have a lot of work today.	لديّ عمل كثير اليوم.					
+es_w_mucho#ex2	example	1	Hay muchas personas en la calle.		There are many people in the street.	هناك أشخاص كثيرون في الشارع.					
+es_w_poco	word	1	poco		little, few; un poco = a bit	قليل					
+es_w_poco#ex1	example	1	Hoy tengo poco tiempo.		I have little time today.	لديّ وقت قليل اليوم.					
+es_w_poco#ex2	example	1	Quiero un poco de agua.		I'd like a little water.	أريد قليلًا من الماء.					
+es_w_bueno	word	1	bueno		good	جيد					
+es_w_bueno#ex1	example	1	Es un buen libro.		It's a good book.	إنه كتاب جيد.					
+es_w_bueno#ex2	example	1	Buenos días, ¿cómo estás?		Good morning, how are you?	صباح الخير، كيف حالك؟					
+es_w_malo	word	1	malo		bad	سيئ					
+es_w_malo#ex1	example	1	Hoy hace mal tiempo.		The weather is bad today.	الطقس سيئ اليوم.					
+es_w_malo#ex2	example	1	No es una mala idea.		It's not a bad idea.	ليست فكرة سيئة.					
+es_w_grande	word	1	grande		big, great	كبير؛ عظيم					
+es_w_grande#ex1	example	1	Tienen una casa muy grande.		They have a very big house.	لديهم بيت كبير جدًا.					
+es_w_grande#ex2	example	1	Es una gran ciudad.		It's a great city.	إنها مدينة عظيمة.					
+es_w_pequeno	word	1	pequeño		small	صغير					
+es_w_pequeno#ex1	example	1	Mi habitación es pequeña.		My room is small.	غرفتي صغيرة.					
+es_w_pequeno#ex2	example	1	Tengo un perro pequeño.		I have a small dog.	لديّ كلب صغير.					
+es_w_nuevo	word	1	nuevo		new	جديد					
+es_w_nuevo#ex1	example	1	Tengo un teléfono nuevo.		I have a new phone.	لديّ هاتف جديد.					
+es_w_nuevo#ex2	example	1	Ella tiene una casa nueva.		She has a new house.	لديها بيت جديد.					
+es_w_viejo	word	1	viejo		old	قديم؛ كبير السن					
+es_w_viejo#ex1	example	1	Mi coche es muy viejo.		My car is very old.	سيارتي قديمة جدًا.					
+es_w_viejo#ex2	example	1	Mi abuelo ya es viejo.		My grandfather is old now.	جدي أصبح كبيرًا في السن.					
+es_w_mismo	word	1	mismo		same	نفس					
+es_w_mismo#ex1	example	1	Vivimos en la misma calle.		We live on the same street.	نعيش في الشارع نفسه.					
+es_w_mismo#ex2	example	1	Siempre comemos lo mismo.		We always eat the same thing.	نأكل الشيء نفسه دائمًا.					
+es_w_ver	word	1	ver		to see, to watch	يرى، يشاهد					
+es_w_ver#ex1	example	1	¿Quieres ver una película?		Do you want to watch a film?	هل تريد أن تشاهد فيلمًا؟					
+es_w_ver#ex2	example	1	Te vi ayer en la calle.		I saw you in the street yesterday.	رأيتك أمس في الشارع.					
+es_w_dar	word	1	dar		to give	يعطي					
+es_w_dar#ex1	example	1	¿Me das el libro, por favor?		Will you give me the book, please?	هل تعطيني الكتاب من فضلك؟					
+es_w_dar#ex2	example	1	Mi padre me dio dinero.		My father gave me money.	أعطاني أبي مالًا.					
+es_w_saber	word	1	saber		to know (facts, how to)	يعرف					
+es_w_saber#ex1	example	1	No sé dónde está.		I don't know where it is.	لا أعرف أين هو.					
+es_w_saber#ex2	example	1	¿Sabes dónde vive Ana?		Do you know where Ana lives?	هل تعرف أين تسكن آنا؟					
+es_w_querer	word	1	querer		to want; to love	يريد؛ يحب					
+es_w_querer#ex1	example	1	Quiero un café, por favor.		I'd like a coffee, please.	أريد قهوة من فضلك.					
+es_w_querer#ex2	example	1	¿Quieres venir a la fiesta?		Do you want to come to the party?	هل تريد أن تأتي إلى الحفلة؟					
+es_w_llegar	word	1	llegar		to arrive	يصل					
+es_w_llegar#ex1	example	1	El tren llega a las cinco.		The train arrives at five.	يصل القطار في الخامسة.					
+es_w_llegar#ex2	example	1	Llegué a casa muy tarde.		I got home very late.	وصلت إلى البيت متأخرًا جدًا.					
+es_w_pasar	word	1	pasar		to pass; to happen; to spend (time)	يمرّ؛ يحدث؛ يقضي					
+es_w_pasar#ex1	example	1	¿Qué te pasa hoy?		What's wrong with you today?	ما بك اليوم؟					
+es_w_pasar#ex2	example	1	Pasamos el día en la playa.		We spent the day at the beach.	قضينا اليوم على الشاطئ.					
+es_w_deber	word	1	deber		must, should	يجب					
+es_w_deber#ex1	example	1	Debes comer algo ahora.		You should eat something now.	يجب أن تأكل شيئًا الآن.					
+es_w_deber#ex2	example	1	Mañana debemos llegar temprano.		Tomorrow we must arrive early.	يجب أن نصل مبكرًا.					
+es_w_poner	word	1	poner		to put	يضع					
+es_w_poner#ex1	example	1	Pon el libro en la mesa.		Put the book on the table.	ضع الكتاب على الطاولة.					
+es_w_poner#ex2	example	1	¿Dónde pusiste mi teléfono?		Where did you put my phone?	أين وضعت هاتفي؟					
+es_w_parecer	word	1	parecer		to seem, to look like	يبدو					
+es_w_parecer#ex1	example	1	Parece una buena idea.		It seems like a good idea.	تبدو فكرة جيدة.					
+es_w_parecer#ex2	example	1	Tu hermano parece cansado.		Your brother looks tired.	يبدو أخوك متعبًا.					
+es_w_quedar	word	1	quedar		to stay; to be left	يبقى					
+es_w_quedar#ex1	example	1	Me quedo en casa hoy.		I'm staying at home today.	سأبقى في البيت اليوم.					
+es_w_quedar#ex2	example	1	No queda pan en casa.		There's no bread left at home.	لم يبقَ خبز في البيت.					
+es_w_creer	word	1	creer		to believe, to think	يعتقد، يصدّق					
+es_w_creer#ex1	example	1	Creo que va a llover.		I think it's going to rain.	أعتقد أنها ستمطر.					
+es_w_creer#ex2	example	1	No creo su historia.		I don't believe his story.	لا أصدّق قصته.					
+es_w_hablar	word	1	hablar		to speak, to talk	يتكلم					
+es_w_hablar#ex1	example	1	¿Puedo hablar con usted?		May I speak with you?	هل يمكنني التحدث مع حضرتك؟					
+es_w_hablar#ex2	example	1	Hablamos mucho por teléfono.		We talk a lot on the phone.	نتحدث كثيرًا بالهاتف.					
+es_w_llevar	word	1	llevar		to carry, to take (someone)	يحمل، يأخذ					
+es_w_llevar#ex1	example	1	Llevo a mis hijos a la escuela.		I take my children to school.	آخذ أطفالي إلى المدرسة.					
+es_w_llevar#ex2	example	1	¿Qué llevas en la mano?		What are you carrying in your hand?	ماذا تحمل في يدك؟					
+es_w_dejar	word	1	dejar		to leave, to let	يترك					
+es_w_dejar#ex1	example	1	Dejé mi teléfono en casa.		I left my phone at home.	تركت هاتفي في البيت.					
+es_w_dejar#ex2	example	1	Deja la puerta abierta, por favor.		Leave the door open, please.	اترك الباب مفتوحًا من فضلك.					
+es_w_seguir	word	1	seguir		to follow; to continue, still be	يتبع؛ يستمر					
+es_w_seguir#ex1	example	1	Sigo en la misma ciudad.		I'm still in the same city.	ما زلت في المدينة نفسها.					
+es_w_seguir#ex2	example	1	Ella sigue en el trabajo.		She is still at work.	ما زالت في العمل.					
+es_w_encontrar	word	1	encontrar		to find	يجد					
+es_w_encontrar#ex1	example	1	No encuentro mis libros.		I can't find my books.	لا أجد كتبي.					
+es_w_encontrar#ex2	example	1	Encontré un buen trabajo.		I found a good job.	وجدت عملًا جيدًا.					
+es_w_llamar	word	1	llamar		to call; llamarse = to be called	يتصل؛ يُسمّى					
+es_w_llamar#ex1	example	1	Hola, me llamo Pedro.		Hello, my name is Pedro.	مرحبًا، اسمي بيدرو.					
+es_w_llamar#ex2	example	1	Te llamo esta noche.		I'll call you tonight.	سأتصل بك هذه الليلة.					
+es_w_venir	word	1	venir		to come	يأتي					
+es_w_venir#ex1	example	1	¿Vienes a mi casa mañana?		Are you coming to my house tomorrow?	هل تأتي إلى بيتي غدًا؟					
+es_w_venir#ex2	example	1	Mi madre vino ayer por la tarde.		My mother came yesterday afternoon.	جاءت أمي أمس بعد الظهر.					
+es_w_pensar	word	1	pensar		to think	يفكر					
+es_w_pensar#ex1	example	1	¿Qué piensas de esta idea?		What do you think of this idea?	ما رأيك في هذه الفكرة؟					
+es_w_pensar#ex2	example	1	Pienso en ti todos los días.		I think of you every day.	أفكر فيك كل يوم.					
+es_w_salir	word	1	salir		to go out, to leave	يخرج					
+es_w_salir#ex1	example	1	Salgo del trabajo a las cinco.		I leave work at five.	أخرج من العمل في الخامسة.					
+es_w_salir#ex2	example	1	Ayer salimos con nuestros amigos.		Yesterday we went out with our friends.	أمس خرجنا مع أصدقائنا.					
+es_w_volver	word	1	volver		to return, to come back	يعود					
+es_w_volver#ex1	example	1	Vuelvo a casa muy tarde.		I come home very late.	أعود إلى البيت متأخرًا جدًا.					
+es_w_volver#ex2	example	1	¿Cuándo vuelves del viaje?		When are you coming back from the trip?	متى تعود من الرحلة؟					
+es_w_tomar	word	1	tomar		to take; to drink	يأخذ؛ يشرب					
+es_w_tomar#ex1	example	1	Tomo el autobús todos los días.		I take the bus every day.	أركب الحافلة كل يوم.					
+es_w_tomar#ex2	example	1	¿Quieres tomar un café?		Do you want to have a coffee?	هل تريد أن تشرب قهوة؟					
+es_w_conocer	word	1	conocer		to know (people, places); to meet	يعرف (شخصًا أو مكانًا)؛ يتعرّف					
+es_w_conocer#ex1	example	1	¿Conoces a mi hermano?		Do you know my brother?	هل تعرف أخي؟					
+es_w_conocer#ex2	example	1	Conocí a mi esposa en la escuela.		I met my wife at school.	تعرّفت على زوجتي في المدرسة.					
+es_w_vivir	word	1	vivir		to live	يعيش، يسكن					
+es_w_vivir#ex1	example	1	¿Y dónde vives ahora?		And where do you live now?	أين تسكن الآن؟					
+es_w_vivir#ex2	example	1	Mis abuelos viven cerca del mar.		My grandparents live near the sea.	يسكن جدّاي قرب البحر.					
+es_w_sentir	word	1	sentir		to feel; lo siento = I'm sorry	يشعر					
+es_w_sentir#ex1	example	1	Lo siento, llego tarde.		I'm sorry, I'm late.	آسف، لقد تأخرت.					
+es_w_sentir#ex2	example	1	Me siento muy cansado hoy.		I feel very tired today.	أشعر بتعب شديد اليوم.					
+es_w_esperar	word	1	esperar		to wait; to hope	ينتظر؛ يأمل					
+es_w_esperar#ex1	example	1	Espero el autobús cada mañana.		I wait for the bus every morning.	أنتظر الحافلة كل صباح.					
+es_w_esperar#ex2	example	1	Te espero en la puerta.		I'll wait for you at the door.	سأنتظرك عند الباب.					
+es_w_buscar	word	1	buscar		to look for	يبحث عن					
+es_w_buscar#ex1	example	1	Busco un trabajo nuevo.		I'm looking for a new job.	أبحث عن عمل جديد.					
+es_w_buscar#ex2	example	1	¿Qué buscas en la tienda?		What are you looking for in the shop?	عمّ تبحث في المتجر؟					
+es_w_entender	word	1	entender		to understand	يفهم					
+es_w_entender#ex1	example	1	No entiendo esta palabra.		I don't understand this word.	لا أفهم هذه الكلمة.					
+es_w_entender#ex2	example	1	¿Me entiendes bien ahora?		Do you understand me well now?	هل تفهمني جيدًا الآن؟					
+es_w_trabajar	word	1	trabajar		to work	يعمل					
+es_w_trabajar#ex1	example	1	Mi padre trabaja en una tienda.		My father works in a shop.	يعمل أبي في متجر.					
+es_w_trabajar#ex2	example	1	Hoy trabajo desde casa.		Today I'm working from home.	أعمل اليوم من البيت.					
+es_w_gustar	word	1	gustar		to like (me gusta = I like)	يُعجب					
+es_w_gustar#ex1	example	1	Me gusta mucho la música.		I really like music.	أحب الموسيقى كثيرًا.					
+es_w_gustar#ex2	example	1	¿Te gustan los perros?		Do you like dogs?	هل تحب الكلاب؟					
+es_w_comer	word	1	comer		to eat	يأكل					
+es_w_comer#ex1	example	1	Comemos juntos a las dos.		We eat together at two.	نأكل معًا في الثانية.					
+es_w_comer#ex2	example	1	Los niños comen mucho.		The children eat a lot.	يأكل الأطفال كثيرًا.					
+es_w_beber	word	1	beber		to drink	يشرب					
+es_w_beber#ex1	example	1	Bebo mucha agua cada día.		I drink a lot of water every day.	أشرب ماءً كثيرًا كل يوم.					
+es_w_beber#ex2	example	1	¿Quieres beber algo frío?		Do you want something cold to drink?	هل تريد أن تشرب شيئًا باردًا؟					
+es_w_dormir	word	1	dormir		to sleep	ينام					
+es_w_dormir#ex1	example	1	El bebé duerme mucho.		The baby sleeps a lot.	ينام الطفل كثيرًا.					
+es_w_dormir#ex2	example	1	No dormí bien ayer por la noche.		I didn't sleep well last night.	لم أنم جيدًا ليلة أمس.					
+es_w_abrir	word	1	abrir		to open	يفتح					
+es_w_abrir#ex1	example	1	Abre el libro, por favor.		Open the book, please.	افتح الكتاب من فضلك.					
+es_w_abrir#ex2	example	1	La tienda abre a las diez.		The shop opens at ten.	يفتح المتجر في العاشرة.					
+es_w_cerrar	word	1	cerrar		to close	يُغلق					
+es_w_cerrar#ex1	example	1	Cierra la puerta, por favor.		Close the door, please.	أغلق الباب من فضلك.					
+es_w_cerrar#ex2	example	1	La tienda está cerrada hoy.		The shop is closed today.	المتجر مغلق اليوم.					
+es_w_comprar	word	1	comprar		to buy	يشتري					
+es_w_comprar#ex1	example	1	Quiero comprar un coche nuevo.		I want to buy a new car.	أريد أن أشتري سيارة جديدة.					
+es_w_comprar#ex2	example	1	Compré pan para la cena.		I bought bread for dinner.	اشتريت خبزًا للعشاء.					
+es_w_pagar	word	1	pagar		to pay	يدفع					
+es_w_pagar#ex1	example	1	¿Puedo pagar la cuenta?		Can I pay the bill?	هل يمكنني دفع الحساب؟					
+es_w_pagar#ex2	example	1	Él pagó la comida.		He paid for the food.	هو دفع ثمن الطعام.					
+es_w_escribir	word	1	escribir		to write	يكتب					
+es_w_escribir#ex1	example	1	Escribe tu nombre aquí.		Write your name here.	اكتب اسمك هنا.					
+es_w_escribir#ex2	example	1	Mi hermana escribe historias.		My sister writes stories.	أختي تكتب قصصًا.					
+es_w_leer	word	1	leer		to read	يقرأ					
+es_w_leer#ex1	example	1	Leo un libro cada semana.		I read a book every week.	أقرأ كتابًا كل أسبوع.					
+es_w_leer#ex2	example	1	¿Puedes leer esta palabra?		Can you read this word?	هل تستطيع قراءة هذه الكلمة؟					
+es_w_estudiar	word	1	estudiar		to study	يدرس					
+es_w_estudiar#ex1	example	1	Estudio todas las noches.		I study every night.	أدرس كل ليلة.					
+es_w_estudiar#ex2	example	1	Ella estudia para el examen.		She is studying for the exam.	هي تذاكر للامتحان.					
+es_w_aprender	word	1	aprender		to learn	يتعلم					
+es_w_aprender#ex1	example	1	Quiero aprender a cocinar.		I want to learn to cook.	أريد أن أتعلّم الطبخ.					
+es_w_aprender#ex2	example	1	Los niños aprenden mucho en la escuela.		Children learn a lot at school.	يتعلّم الأطفال كثيرًا في المدرسة.					
+es_w_ayudar	word	1	ayudar		to help	يساعد					
+es_w_ayudar#ex1	example	1	¿Te ayudo con la cena?		Shall I help you with dinner?	هل أساعدك في العشاء؟					
+es_w_ayudar#ex2	example	1	Mi hermano me ayudó mucho.		My brother helped me a lot.	ساعدني أخي كثيرًا.					
+es_w_jugar	word	1	jugar		to play	يلعب					
+es_w_jugar#ex1	example	1	Los niños juegan con el perro.		The children play with the dog.	يلعب الأطفال مع الكلب.					
+es_w_jugar#ex2	example	1	¿Quieres jugar conmigo un poco?		Do you want to play with me for a bit?	هل تريد أن تلعب معي؟					
+es_w_mirar	word	1	mirar		to look at	ينظر إلى					
+es_w_mirar#ex1	example	1	Mira, está lloviendo otra vez.		Look, it's raining again.	انظر، إنها تمطر مرة أخرى.					
+es_w_mirar#ex2	example	1	Me gusta mirar el mar.		I like looking at the sea.	أحب أن أتأمل البحر.					
+es_w_escuchar	word	1	escuchar		to listen	يستمع					
+es_w_escuchar#ex1	example	1	Escucho música en el coche.		I listen to music in the car.	أستمع إلى الموسيقى في السيارة.					
+es_w_escuchar#ex2	example	1	¿Me escuchas bien ahora?		Can you hear me well now?	هل تسمعني جيدًا الآن؟					
+es_w_preguntar	word	1	preguntar		to ask	يسأل					
+es_w_preguntar#ex1	example	1	¿Puedo preguntar algo, profesor?		May I ask something, teacher?	هل يمكنني أن أسأل شيئًا يا أستاذ؟					
+es_w_preguntar#ex2	example	1	Pregunta al profesor, por favor.		Ask the teacher, please.	اسأل المعلّم من فضلك.					
+es_w_necesitar	word	1	necesitar		to need	يحتاج					
+es_w_necesitar#ex1	example	1	Necesito ver a un médico.		I need to see a doctor.	أحتاج إلى رؤية طبيب.					
+es_w_necesitar#ex2	example	1	¿Necesitas algo de la tienda?		Do you need anything from the shop?	هل تحتاج شيئًا من المتجر؟					
+es_w_empezar	word	1	empezar		to start, to begin	يبدأ					
+es_w_empezar#ex1	example	1	La película empieza a las diez.		The film starts at ten.	يبدأ الفيلم في العاشرة.					
+es_w_empezar#ex2	example	1	Empecé un trabajo nuevo.		I started a new job.	بدأت عملًا جديدًا.					
+es_w_terminar	word	1	terminar		to finish, to end	ينهي، ينتهي					
+es_w_terminar#ex1	example	1	¿Cuándo termina la película?		When does the film end?	متى ينتهي الفيلم؟					
+es_w_terminar#ex2	example	1	Ya terminé mi trabajo.		I've already finished my work.	أنهيت عملي بالفعل.					
+es_w_caminar	word	1	caminar		to walk	يمشي					
+es_w_caminar#ex1	example	1	Camino al trabajo cada día.		I walk to work every day.	أمشي إلى العمل كل يوم.					
+es_w_caminar#ex2	example	1	Caminamos juntos por la playa.		We walked together along the beach.	مشينا معًا على الشاطئ.					
+es_w_cocinar	word	1	cocinar		to cook	يطبخ					
+es_w_cocinar#ex1	example	1	Mi padre cocina muy bien.		My father cooks very well.	يطبخ أبي جيدًا جدًا.					
+es_w_cocinar#ex2	example	1	Hoy voy a cocinar para todos.		Today I'm going to cook for everyone.	سأطبخ اليوم للجميع.					
+es_w_recordar	word	1	recordar		to remember	يتذكر					
+es_w_recordar#ex1	example	1	¿Recuerdas el nombre de la película?		Do you remember the name of the film?	هل تتذكر اسم الفيلم؟					
+es_w_recordar#ex2	example	1	No recuerdo dónde está mi coche.		I don't remember where my car is.	لا أتذكر أين سيارتي.					
+es_w_olvidar	word	1	olvidar		to forget	ينسى					
+es_w_olvidar#ex1	example	1	No olvides tu teléfono.		Don't forget your phone.	لا تنسَ هاتفك.					
+es_w_olvidar#ex2	example	1	Olvidé su cumpleaños otra vez.		I forgot his birthday again.	نسيت عيد ميلاده مرة أخرى.					
+es_w_perder	word	1	perder		to lose; to miss	يُضيّع؛ يفوته					
+es_w_perder#ex1	example	1	Perdí mi teléfono otra vez.		I lost my phone again.	أضعت هاتفي مرة أخرى.					
+es_w_perder#ex2	example	1	No quiero perder el tren.		I don't want to miss the train.	لا أريد أن يفوتني القطار.					
+es_w_ganar	word	1	ganar		to win; to earn	يفوز؛ يكسب					
+es_w_ganar#ex1	example	1	Quiero ganar el juego.		I want to win the game.	أريد أن أفوز باللعبة.					
+es_w_ganar#ex2	example	1	Él gana poco dinero.		He earns little money.	يكسب مالًا قليلًا.					
+es_w_traer	word	1	traer		to bring	يُحضر					
+es_w_traer#ex1	example	1	¿Me traes un poco de agua?		Can you bring me a little water?	هل تحضر لي قليلًا من الماء؟					
+es_w_traer#ex2	example	1	Ella trajo un regalo para mí.		She brought a present for me.	أحضرت هدية لي.					
+es_w_enviar	word	1	enviar		to send	يرسل					
+es_w_enviar#ex1	example	1	Te envío el libro mañana.		I'll send you the book tomorrow.	سأرسل لك الكتاب غدًا.					
+es_w_enviar#ex2	example	1	Envié el dinero ayer.		I sent the money yesterday.	أرسلت المال أمس.					
+es_w_cambiar	word	1	cambiar		to change	يغيّر					
+es_w_cambiar#ex1	example	1	El tiempo cambia mucho aquí.		The weather changes a lot here.	يتغيّر الطقس كثيرًا هنا.					
+es_w_cambiar#ex2	example	1	Quiero cambiar de habitación.		I want to change rooms.	أريد أن أغيّر الغرفة.					
+es_w_correr	word	1	correr		to run	يركض					
+es_w_correr#ex1	example	1	Corro todas las mañanas.		I run every morning.	أركض كل صباح.					
+es_w_correr#ex2	example	1	El perro corre por la casa.		The dog runs around the house.	يركض الكلب في البيت.					
+es_w_lavar	word	1	lavar		to wash	يغسل					
+es_w_lavar#ex1	example	1	Lava el coche con agua fría.		Wash the car with cold water.	اغسل السيارة بماء بارد.					
+es_w_lavar#ex2	example	1	Tengo que lavar el coche.		I have to wash the car.	يجب أن أغسل السيارة.					
+es_w_limpiar	word	1	limpiar		to clean	ينظف					
+es_w_limpiar#ex1	example	1	Limpio mi habitación cada semana.		I clean my room every week.	أنظف غرفتي كل أسبوع.					
+es_w_limpiar#ex2	example	1	La casa está muy limpia.		The house is very clean.	البيت نظيف جدًا.					
+es_w_llover	word	1	llover		to rain	تمطر					
+es_w_llover#ex1	example	1	Mañana va a llover.		It's going to rain tomorrow.	ستمطر غدًا.					
+es_w_llover#ex2	example	1	Llueve mucho en este país.		It rains a lot in this country.	تمطر كثيرًا في هذا البلد.					
+es_w_tiempo	word	1	tiempo		time; weather	وقت؛ طقس					
+es_w_tiempo#ex1	example	1	No tengo tiempo hoy.		I don't have time today.	ليس لديّ وقت اليوم.					
+es_w_tiempo#ex2	example	1	¿Qué tiempo hace hoy?		What's the weather like today?	كيف الطقس اليوم؟					
+es_w_dia	word	1	día		day	يوم					
+es_w_dia#ex1	example	1	Buenos días a todos.		Good morning, everyone.	صباح الخير للجميع.					
+es_w_dia#ex2	example	1	Trabajo cinco días a la semana.		I work five days a week.	أعمل خمسة أيام في الأسبوع.					
+es_w_ano	word	1	año		year	سنة					
+es_w_ano#ex1	example	1	Mi hijo tiene diez años.		My son is ten years old.	عمر ابني عشر سنوات.					
+es_w_ano#ex2	example	1	El año pasado fui a la playa.		Last year I went to the beach.	العام الماضي ذهبت إلى الشاطئ.					
+es_w_vez	word	1	vez		time (occasion)	مرة					
+es_w_vez#ex1	example	1	Te llamo otra vez mañana.		I'll call you again tomorrow.	سأتصل بك مرة أخرى غدًا.					
+es_w_vez#ex2	example	1	Voy a la playa muchas veces.		I go to the beach many times.	أذهب إلى الشاطئ مرات كثيرة.					
+es_w_hora	word	1	hora		hour; time	ساعة					
+es_w_hora#ex1	example	1	¿A qué hora empieza la clase?		What time does the class start?	في أي ساعة يبدأ الدرس؟					
+es_w_hora#ex2	example	1	Esperé una hora en la calle.		I waited an hour in the street.	انتظرت ساعة في الشارع.					
+es_w_minuto	word	1	minuto		minute	دقيقة					
+es_w_minuto#ex1	example	1	Espera un minuto, por favor.		Wait a minute, please.	انتظر دقيقة من فضلك.					
+es_w_minuto#ex2	example	1	El autobús llega en cinco minutos.		The bus arrives in five minutes.	تصل الحافلة بعد خمس دقائق.					
+es_w_semana	word	1	semana		week	أسبوع					
+es_w_semana#ex1	example	1	Te veo la próxima semana.		I'll see you next week.	أراك الأسبوع القادم.					
+es_w_semana#ex2	example	1	Trabajo mucho esta semana.		I'm working a lot this week.	أعمل كثيرًا هذا الأسبوع.					
+es_w_mes	word	1	mes		month	شهر					
+es_w_mes#ex1	example	1	Mi cumpleaños es el próximo mes.		My birthday is next month.	عيد ميلادي الشهر القادم.					
+es_w_mes#ex2	example	1	Vivo aquí desde hace un mes.		I've lived here for a month.	أعيش هنا منذ شهر.					
+es_w_manana	word	1	mañana		morning; tomorrow	صباح؛ غدًا					
+es_w_manana#ex1	example	1	Nos vemos mañana por la mañana.		See you tomorrow morning.	نلتقي غدًا صباحًا.					
+es_w_manana#ex2	example	1	Bebo café cada mañana.		I drink coffee every morning.	أشرب القهوة كل صباح.					
+es_w_tarde	word	1	tarde		afternoon, evening; late	بعد الظهر، مساء؛ متأخر					
+es_w_tarde#ex1	example	1	Buenas tardes, ¿cómo está usted?		Good afternoon, how are you?	مساء الخير، كيف حالك؟					
+es_w_tarde#ex2	example	1	Es muy tarde para salir.		It's too late to go out.	الوقت متأخر جدًا للخروج.					
+es_w_noche	word	1	noche		night	ليل، ليلة					
+es_w_noche#ex1	example	1	Buenas noches, hasta mañana.		Good night, see you tomorrow.	تصبح على خير، إلى الغد.					
+es_w_noche#ex2	example	1	Trabajo por la noche.		I work at night.	أعمل في الليل.					
+es_w_hoy	word	1	hoy		today	اليوم					
+es_w_hoy#ex1	example	1	Hoy es mi cumpleaños.		Today is my birthday.	اليوم عيد ميلادي.					
+es_w_hoy#ex2	example	1	¿Qué hacemos hoy por la tarde?		What shall we do this afternoon?	ماذا نفعل اليوم بعد الظهر؟					
+es_w_ayer	word	1	ayer		yesterday	أمس					
+es_w_ayer#ex1	example	1	Ayer llovió todo el día.		Yesterday it rained all day.	أمطرت طوال اليوم أمس.					
+es_w_ayer#ex2	example	1	Vi a tu hermano ayer.		I saw your brother yesterday.	رأيت أخاك أمس.					
+es_w_casa	word	1	casa		house, home	بيت					
+es_w_casa#ex1	example	1	Vamos a mi casa.		Let's go to my house.	لنذهب إلى بيتي.					
+es_w_casa#ex2	example	1	Su casa tiene tres habitaciones.		Their house has three rooms.	في بيتهم ثلاث غرف.					
+es_w_cosa	word	1	cosa		thing	شيء					
+es_w_cosa#ex1	example	1	Tengo muchas cosas que hacer.		I have a lot of things to do.	لديّ أشياء كثيرة لأفعلها.					
+es_w_cosa#ex2	example	1	Pon tus cosas en la cama.		Put your things on the bed.	ضع أشياءك على السرير.					
+es_w_hombre	word	1	hombre		man	رجل					
+es_w_hombre#ex1	example	1	Ese hombre es muy alto.		That man is very tall.	ذلك الرجل طويل جدًا.					
+es_w_hombre#ex2	example	1	Un hombre te busca en la puerta.		A man is looking for you at the door.	رجل يبحث عنك عند الباب.					
+es_w_mujer	word	1	mujer		woman; wife	امرأة؛ زوجة					
+es_w_mujer#ex1	example	1	Esa mujer es mi profesora.		That woman is my teacher.	تلك المرأة معلّمتي.					
+es_w_mujer#ex2	example	1	Muchas mujeres trabajan aquí.		Many women work here.	تعمل هنا نساء كثيرات.					
+es_w_persona	word	1	persona		person	شخص					
+es_w_persona#ex1	example	1	Es una persona muy buena.		He's a very good person.	إنه شخص طيب جدًا.					
+es_w_persona#ex2	example	1	Hay diez personas en la clase.		There are ten people in the class.	هناك عشرة أشخاص في الصف.					
+es_w_gente	word	1	gente		people	ناس					
+es_w_gente#ex1	example	1	Hay mucha gente en la calle.		There are a lot of people in the street.	هناك ناس كثيرون في الشارع.					
+es_w_gente#ex2	example	1	La gente de esta ciudad es tranquila.		The people in this city are calm.	الناس في هذه المدينة هادئون.					
+es_w_nino	word	1	niño		child, boy (niña = girl)	طفل، ولد (niña = بنت)					
+es_w_nino#ex1	example	1	El niño está en la escuela.		The boy is at school.	الطفل في المدرسة.					
+es_w_nino#ex2	example	1	Las niñas juegan juntas.		The girls play together.	تلعب البنات معًا.					
+es_w_hijo	word	1	hijo		son (hija = daughter); hijos = children	ابن (hija = ابنة)					
+es_w_hijo#ex1	example	1	Tengo dos hijos pequeños.		I have two small children.	لديّ طفلان صغيران.					
+es_w_hijo#ex2	example	1	Su hija es médica.		His daughter is a doctor.	ابنته طبيبة.					
+es_w_padre	word	1	padre		father; padres = parents	أب؛ padres = الوالدان					
+es_w_padre#ex1	example	1	Mi padre es profesor.		My father is a teacher.	أبي معلّم.					
+es_w_padre#ex2	example	1	Papá, ¿me ayudas, por favor?		Dad, will you help me, please?	أبي، هل تساعدني من فضلك؟					
+es_w_madre	word	1	madre		mother	أم					
+es_w_madre#ex1	example	1	Mi madre habla muy bien.		My mother speaks very well.	أمي تتكلم جيدًا جدًا.					
+es_w_madre#ex2	example	1	Mamá, tengo mucha hambre.		Mum, I'm very hungry.	أمي، أنا جائع جدًا.					
+es_w_hermano	word	1	hermano		brother	أخ					
+es_w_hermano#ex1	example	1	Mi hermano es mayor que yo.		My brother is older than me.	أخي أكبر مني.					
+es_w_hermano#ex2	example	1	Tengo tres hermanos mayores.		I have three older brothers.	لديّ ثلاثة إخوة أكبر مني.					
+es_w_hermana	word	1	hermana		sister	أخت					
+es_w_hermana#ex1	example	1	Mi hermana tiene un gato.		My sister has a cat.	لدى أختي قطة.					
+es_w_hermana#ex2	example	1	Voy a la fiesta con mi hermana.		I'm going to the party with my sister.	أذهب إلى الحفلة مع أختي.					
+es_w_amigo	word	1	amigo		friend	صديق					
+es_w_amigo#ex1	example	1	Él es mi mejor amigo.		He is my best friend.	هو أعزّ أصدقائي.					
+es_w_amigo#ex2	example	1	Salgo con mis amigas esta noche.		I'm going out with my friends tonight.	أخرج مع صديقاتي هذه الليلة.					
+es_w_familia	word	1	familia		family	عائلة					
+es_w_familia#ex1	example	1	Mi familia es muy grande.		My family is very big.	عائلتي كبيرة جدًا.					
+es_w_familia#ex2	example	1	Comemos todos en familia.		We all eat together as a family.	نأكل جميعًا معًا كعائلة.					
+es_w_nombre	word	1	nombre		name	اسم					
+es_w_nombre#ex1	example	1	¿Cuál es tu nombre?		What is your name?	ما اسمك؟					
+es_w_nombre#ex2	example	1	Escribe tu nombre en el libro.		Write your name in the book.	اكتب اسمك في الكتاب.					
+es_w_agua	word	1	agua		water	ماء					
+es_w_agua#ex1	example	1	¿Me das un poco de agua?		Can you give me a little water?	هل تعطيني قليلًا من الماء؟					
+es_w_agua#ex2	example	1	El agua está muy fría.		The water is very cold.	الماء بارد جدًا.					
+es_w_comida	word	1	comida		food; meal	طعام؛ وجبة					
+es_w_comida#ex1	example	1	La comida está lista.		The food is ready.	الطعام جاهز.					
+es_w_comida#ex2	example	1	Me gusta la comida de mi madre.		I like my mother's food.	أحب طعام أمي.					
+es_w_cafe	word	1	café		coffee; café	قهوة؛ مقهى					
+es_w_cafe#ex1	example	1	Un café, por favor.		A coffee, please.	قهوة من فضلك.					
+es_w_cafe#ex2	example	1	Bebo café por la mañana.		I drink coffee in the morning.	أشرب القهوة في الصباح.					
+es_w_pan	word	1	pan		bread	خبز					
+es_w_pan#ex1	example	1	Compro pan cada mañana.		I buy bread every morning.	أشتري الخبز كل صباح.					
+es_w_pan#ex2	example	1	Este pan está muy rico.		This bread is very tasty.	هذا الخبز لذيذ جدًا.					
+es_w_te	word	1	té		tea	شاي					
+es_w_te#ex1	example	1	¿Quieres un té caliente?		Would you like a hot tea?	هل تريد شايًا ساخنًا؟					
+es_w_te#ex2	example	1	Mi abuela bebe té cada tarde.		My grandmother drinks tea every afternoon.	تشرب جدتي الشاي كل مساء.					
+es_w_cena	word	1	cena		dinner	عشاء					
+es_w_cena#ex1	example	1	¿Qué hay para la cena?		What's for dinner?	ماذا يوجد للعشاء؟					
+es_w_cena#ex2	example	1	La cena fue muy rica.		The dinner was very tasty.	كان العشاء لذيذًا جدًا.					
+es_w_desayuno	word	1	desayuno		breakfast	فطور					
+es_w_desayuno#ex1	example	1	Tomo el desayuno en casa.		I have breakfast at home.	أتناول الفطور في البيت.					
+es_w_desayuno#ex2	example	1	El desayuno está en la mesa.		Breakfast is on the table.	الفطور على الطاولة.					
+es_w_mesa	word	1	mesa		table	طاولة					
+es_w_mesa#ex1	example	1	Pon el pan en la mesa.		Put the bread on the table.	ضع الخبز على الطاولة.					
+es_w_mesa#ex2	example	1	Necesitamos una mesa más grande.		We need a bigger table.	نحتاج إلى طاولة أكبر.					
+es_w_cama	word	1	cama		bed	سرير					
+es_w_cama#ex1	example	1	El gato duerme en mi cama.		The cat sleeps on my bed.	تنام القطة على سريري.					
+es_w_cama#ex2	example	1	Me voy a la cama.		I'm going to bed.	سأذهب إلى السرير.					
+es_w_puerta	word	1	puerta		door	باب					
+es_w_puerta#ex1	example	1	Abre la puerta, por favor.		Open the door, please.	افتح الباب من فضلك.					
+es_w_puerta#ex2	example	1	Hay alguien en la puerta.		There is someone at the door.	هناك شخص عند الباب.					
+es_w_habitacion	word	1	habitación		room, bedroom	غرفة					
+es_w_habitacion#ex1	example	1	Mi habitación es muy pequeña.		My room is very small.	غرفتي صغيرة جدًا.					
+es_w_habitacion#ex2	example	1	La casa tiene cuatro habitaciones.		The house has four rooms.	في البيت أربع غرف.					
+es_w_ciudad	word	1	ciudad		city	مدينة					
+es_w_ciudad#ex1	example	1	Me gusta mucho esta ciudad.		I really like this city.	تعجبني هذه المدينة كثيرًا.					
+es_w_ciudad#ex2	example	1	La ciudad es muy bonita de noche.		The city is very pretty at night.	المدينة جميلة جدًا في الليل.					
+es_w_pais	word	1	país		country	بلد					
+es_w_pais#ex1	example	1	Es un país muy bonito.		It's a very beautiful country.	إنه بلد جميل جدًا.					
+es_w_pais#ex2	example	1	¿De qué país eres?		What country are you from?	من أي بلد أنت؟					
+es_w_calle	word	1	calle		street	شارع					
+es_w_calle#ex1	example	1	Vivo en esta calle.		I live on this street.	أسكن في هذا الشارع.					
+es_w_calle#ex2	example	1	No juegues en la calle.		Don't play in the street.	لا تلعب في الشارع.					
+es_w_tienda	word	1	tienda		shop	متجر					
+es_w_tienda#ex1	example	1	La tienda está cerca de mi casa.		The shop is near my house.	المتجر قريب من بيتي.					
+es_w_tienda#ex2	example	1	Voy a la tienda a comprar pan.		I'm going to the shop to buy bread.	أذهب إلى المتجر لأشتري الخبز.					
+es_w_escuela	word	1	escuela		school	مدرسة					
+es_w_escuela#ex1	example	1	Mis hijos van a la escuela.		My children go to school.	يذهب أطفالي إلى المدرسة.					
+es_w_escuela#ex2	example	1	Mi escuela era muy grande.		My school was very big.	كانت مدرستي كبيرة جدًا.					
+es_w_trabajo	word	1	trabajo		work, job	عمل، وظيفة					
+es_w_trabajo#ex1	example	1	Tengo un trabajo nuevo.		I have a new job.	لديّ عمل جديد.					
+es_w_trabajo#ex2	example	1	Voy al trabajo en autobús.		I go to work by bus.	أذهب إلى العمل بالحافلة.					
+es_w_dinero	word	1	dinero		money	مال					
+es_w_dinero#ex1	example	1	No tengo mucho dinero.		I don't have much money.	ليس لديّ مال كثير.					
+es_w_dinero#ex2	example	1	Ella gana mucho dinero.		She earns a lot of money.	هي تكسب مالًا كثيرًا.					
+es_w_coche	word	1	coche		car (Spain; carro in Latin America)	سيارة					
+es_w_coche#ex1	example	1	Mi coche está en la calle.		My car is in the street.	سيارتي في الشارع.					
+es_w_coche#ex2	example	1	Vamos a la playa en coche.		Let's go to the beach by car.	لنذهب إلى الشاطئ بالسيارة.					
+es_w_autobus	word	1	autobús		bus	حافلة					
+es_w_autobus#ex1	example	1	El autobús llega tarde otra vez.		The bus is late again.	الحافلة متأخرة مرة أخرى.					
+es_w_autobus#ex2	example	1	Tomo el autobús para ir a clase.		I take the bus to go to class.	أركب الحافلة للذهاب إلى الدرس.					
+es_w_tren	word	1	tren		train	قطار					
+es_w_tren#ex1	example	1	El tren sale a las diez.		The train leaves at ten.	يغادر القطار في العاشرة.					
+es_w_tren#ex2	example	1	Me gusta leer en el tren.		I like reading on the train.	أحب القراءة في القطار.					
+es_w_telefono	word	1	teléfono		phone	هاتف					
+es_w_telefono#ex1	example	1	¿Dónde está mi teléfono?		Where is my phone?	أين هاتفي؟					
+es_w_telefono#ex2	example	1	Hablo con mi madre por teléfono.		I talk to my mother on the phone.	أتحدث مع أمي بالهاتف.					
+es_w_libro	word	1	libro		book	كتاب					
+es_w_libro#ex1	example	1	Este libro es para ti.		This book is for you.	هذا الكتاب لك.					
+es_w_libro#ex2	example	1	Leo libros por la noche.		I read books at night.	أقرأ الكتب في الليل.					
+es_w_palabra	word	1	palabra		word	كلمة					
+es_w_palabra#ex1	example	1	No conozco esta palabra.		I don't know this word.	لا أعرف هذه الكلمة.					
+es_w_palabra#ex2	example	1	Escribe las palabras nuevas.		Write the new words.	اكتب الكلمات الجديدة.					
+es_w_pregunta	word	1	pregunta		question	سؤال					
+es_w_pregunta#ex1	example	1	Tengo una pregunta para usted.		I have a question for you.	لديّ سؤال لحضرتك.					
+es_w_pregunta#ex2	example	1	Es una buena pregunta.		It's a good question.	إنه سؤال جيد.					
+es_w_problema	word	1	problema		problem	مشكلة					
+es_w_problema#ex1	example	1	Tengo un problema con mi coche.		I have a problem with my car.	لديّ مشكلة في سيارتي.					
+es_w_problema#ex2	example	1	No es un problema para mí.		It's not a problem for me.	ليست مشكلة بالنسبة لي.					
+es_w_idea	word	1	idea		idea	فكرة					
+es_w_idea#ex1	example	1	Es una idea muy buena.		It's a very good idea.	إنها فكرة جيدة جدًا.					
+es_w_idea#ex2	example	1	No tengo idea de dónde está.		I have no idea where it is.	ليس لديّ فكرة أين هو.					
+es_w_historia	word	1	historia		story; history	قصة؛ تاريخ					
+es_w_historia#ex1	example	1	Me gusta esta historia.		I like this story.	تعجبني هذه القصة.					
+es_w_historia#ex2	example	1	Es una historia muy larga.		It's a very long story.	إنها قصة طويلة جدًا.					
+es_w_juego	word	1	juego		game	لعبة					
+es_w_juego#ex1	example	1	Este juego es muy fácil.		This game is very easy.	هذه اللعبة سهلة جدًا.					
+es_w_juego#ex2	example	1	Los niños tienen muchos juegos.		The children have lots of games.	لدى الأطفال ألعاب كثيرة.					
+es_w_musica	word	1	música		music	موسيقى					
+es_w_musica#ex1	example	1	Escucho música todos los días.		I listen to music every day.	أستمع إلى الموسيقى كل يوم.					
+es_w_musica#ex2	example	1	La música de esta película es bonita.		The music in this film is beautiful.	موسيقى هذا الفيلم جميلة.					
+es_w_pelicula	word	1	película		film, movie	فيلم					
+es_w_pelicula#ex1	example	1	Vamos a ver una película.		Let's watch a film.	لنشاهد فيلمًا.					
+es_w_pelicula#ex2	example	1	La película fue muy larga.		The film was very long.	كان الفيلم طويلًا جدًا.					
+es_w_mundo	word	1	mundo		world	عالم					
+es_w_mundo#ex1	example	1	Quiero ver el mundo.		I want to see the world.	أريد أن أرى العالم.					
+es_w_mundo#ex2	example	1	Es la mejor comida del mundo.		It's the best food in the world.	إنه أفضل طعام في العالم.					
+es_w_vida	word	1	vida		life	حياة					
+es_w_vida#ex1	example	1	La vida aquí es tranquila.		Life here is calm.	الحياة هنا هادئة.					
+es_w_vida#ex2	example	1	Tengo una buena vida.		I have a good life.	لديّ حياة جيدة.					
+es_w_cabeza	word	1	cabeza		head	رأس					
+es_w_cabeza#ex1	example	1	Pon la mano en la cabeza.		Put your hand on your head.	ضع يدك على رأسك.					
+es_w_cabeza#ex2	example	1	Mi cabeza está muy caliente.		My head is very hot.	رأسي ساخن جدًا.					
+es_w_mano	word	1	mano		hand	يد					
+es_w_mano#ex1	example	1	Tengo algo en la mano.		I have something in my hand.	في يدي شيء.					
+es_w_mano#ex2	example	1	Las manos del bebé son pequeñas.		The baby's hands are small.	يدا الطفل صغيرتان.					
+es_w_ojo	word	1	ojo		eye	عين					
+es_w_ojo#ex1	example	1	Cierra los ojos, por favor.		Close your eyes, please.	أغمض عينيك من فضلك.					
+es_w_ojo#ex2	example	1	Ella tiene los ojos negros.		She has dark eyes.	عيناها سوداوان.					
+es_w_perro	word	1	perro		dog	كلب					
+es_w_perro#ex1	example	1	Mi perro es muy grande.		My dog is very big.	كلبي كبير جدًا.					
+es_w_perro#ex2	example	1	El perro duerme en la puerta.		The dog sleeps by the door.	ينام الكلب عند الباب.					
+es_w_sol	word	1	sol		sun	شمس					
+es_w_sol#ex1	example	1	Hoy hace mucho sol.		It's very sunny today.	الشمس قوية اليوم.					
+es_w_sol#ex2	example	1	Me gusta estar al sol.		I like being in the sun.	أحب الجلوس في الشمس.					
+es_w_lluvia	word	1	lluvia		rain	مطر					
+es_w_lluvia#ex1	example	1	Hay mucha lluvia este mes.		There's a lot of rain this month.	هناك أمطار كثيرة هذا الشهر.					
+es_w_lluvia#ex2	example	1	No me gusta la lluvia.		I don't like the rain.	لا أحب المطر.					
+es_w_medico	word	1	médico		doctor	طبيب					
+es_w_medico#ex1	example	1	Necesito ir al médico.		I need to go to the doctor.	أحتاج إلى الذهاب إلى الطبيب.					
+es_w_medico#ex2	example	1	Mi hermana es médica.		My sister is a doctor.	أختي طبيبة.					
+es_w_profesor	word	1	profesor		teacher	معلّم					
+es_w_profesor#ex1	example	1	Mi profesor es muy bueno.		My teacher is very good.	معلّمي جيد جدًا.					
+es_w_profesor#ex2	example	1	La profesora nos ayuda mucho.		The teacher helps us a lot.	المعلّمة تساعدنا كثيرًا.					
+es_w_cumpleanos	word	1	cumpleaños		birthday	عيد ميلاد					
+es_w_cumpleanos#ex1	example	1	Feliz cumpleaños, mi amigo.		Happy birthday, my friend.	عيد ميلاد سعيد يا صديقي.					
+es_w_cumpleanos#ex2	example	1	Mañana es el cumpleaños de mi madre.		Tomorrow is my mother's birthday.	غدًا عيد ميلاد أمي.					
+es_w_fiesta	word	1	fiesta		party	حفلة					
+es_w_fiesta#ex1	example	1	Hay una fiesta en mi casa.		There's a party at my house.	هناك حفلة في بيتي.					
+es_w_fiesta#ex2	example	1	La fiesta fue muy buena.		The party was very good.	كانت الحفلة جيدة جدًا.					
+es_w_lugar	word	1	lugar		place	مكان					
+es_w_lugar#ex1	example	1	Es un lugar muy bonito.		It's a very pretty place.	إنه مكان جميل جدًا.					
+es_w_lugar#ex2	example	1	¿Hay un lugar para mí?		Is there a place for me?	هل يوجد مكان لي؟					
+es_w_camino	word	1	camino		way, path	طريق					
+es_w_camino#ex1	example	1	¿Es este el camino a la playa?		Is this the way to the beach?	هل هذا هو الطريق إلى الشاطئ؟					
+es_w_camino#ex2	example	1	No hay otro camino.		There is no other way.	لا يوجد طريق آخر.					
+es_w_parte	word	1	parte		part	جزء					
+es_w_parte#ex1	example	1	Esta es la mejor parte.		This is the best part.	هذا أفضل جزء.					
+es_w_parte#ex2	example	1	Una parte del libro es difícil.		Part of the book is difficult.	جزء من الكتاب صعب.					
+es_w_fin	word	1	fin		end; fin de semana = weekend	نهاية؛ fin de semana = عطلة نهاية الأسبوع					
+es_w_fin#ex1	example	1	Nos vemos el fin de semana.		See you at the weekend.	نلتقي في عطلة نهاية الأسبوع.					
+es_w_fin#ex2	example	1	No me gustó el fin de la película.		I didn't like the end of the film.	لم تعجبني نهاية الفيلم.					
+es_w_hambre	word	1	hambre		hunger; tener hambre = to be hungry	جوع					
+es_w_hambre#ex1	example	1	Tengo mucha hambre ahora.		I'm very hungry now.	أنا جائع جدًا الآن.					
+es_w_hambre#ex2	example	1	Los niños tienen hambre.		The children are hungry.	الأطفال جائعون.					
+es_w_frio	word	1	frío		cold; hace frío = it's cold	بارد؛ hace frío = الجو بارد					
+es_w_frio#ex1	example	1	Hoy hace mucho frío.		It's very cold today.	الجو بارد جدًا اليوم.					
+es_w_frio#ex2	example	1	El café está frío.		The coffee is cold.	القهوة باردة.					
+es_w_calor	word	1	calor		heat; hace calor = it's hot	حرارة؛ hace calor = الجو حار					
+es_w_calor#ex1	example	1	En este país hace mucho calor.		It's very hot in this country.	الجو حار جدًا في هذا البلد.					
+es_w_calor#ex2	example	1	Tengo calor, abre la ventana.		I'm hot, open the window.	أشعر بالحر، افتح النافذة.					
+es_w_cansado	word	1	cansado		tired	متعب					
+es_w_cansado#ex1	example	1	Estoy cansado después del trabajo.		I'm tired after work.	أنا متعب بعد العمل.					
+es_w_cansado#ex2	example	1	Mi madre está muy cansada.		My mother is very tired.	أمي متعبة جدًا.					
+es_w_contento	word	1	contento		happy, pleased	مسرور					
+es_w_contento#ex1	example	1	Estoy contento con mi trabajo.		I'm happy with my job.	أنا راضٍ عن عملي.					
+es_w_contento#ex2	example	1	Los niños están muy contentos.		The children are very happy.	الأطفال مسرورون جدًا.					
+es_w_feliz	word	1	feliz		happy	سعيد					
+es_w_feliz#ex1	example	1	Soy muy feliz aquí.		I'm very happy here.	أنا سعيد جدًا هنا.					
+es_w_feliz#ex2	example	1	Son una familia muy feliz.		They are a very happy family.	إنهم عائلة سعيدة جدًا.					
+es_w_triste	word	1	triste		sad	حزين					
+es_w_triste#ex1	example	1	¿Por qué estás triste?		Why are you sad?	لماذا أنت حزين؟					
+es_w_triste#ex2	example	1	Es una película muy triste.		It's a very sad film.	إنه فيلم حزين جدًا.					
+es_w_bonito	word	1	bonito		pretty, nice	جميل					
+es_w_bonito#ex1	example	1	Tu casa es muy bonita.		Your house is very pretty.	بيتك جميل جدًا.					
+es_w_bonito#ex2	example	1	Qué día tan bonito.		What a beautiful day.	يا له من يوم جميل.					
+es_w_facil	word	1	fácil		easy	سهل					
+es_w_facil#ex1	example	1	Esta pregunta es fácil.		This question is easy.	هذا السؤال سهل.					
+es_w_facil#ex2	example	1	No es fácil aprender.		It's not easy to learn.	ليس من السهل التعلّم.					
+es_w_dificil	word	1	difícil		difficult	صعب					
+es_w_dificil#ex1	example	1	El examen fue muy difícil.		The exam was very difficult.	كان الامتحان صعبًا جدًا.					
+es_w_dificil#ex2	example	1	Es difícil vivir sin dinero.		It's hard to live without money.	من الصعب العيش بدون مال.					
+es_w_importante	word	1	importante		important	مهم					
+es_w_importante#ex1	example	1	Es muy importante para mí.		It's very important to me.	إنه مهم جدًا بالنسبة لي.					
+es_w_importante#ex2	example	1	Tengo una pregunta importante.		I have an important question.	لديّ سؤال مهم.					
+es_w_caro	word	1	caro		expensive	غالٍ					
+es_w_caro#ex1	example	1	Este coche es muy caro.		This car is very expensive.	هذه السيارة غالية جدًا.					
+es_w_caro#ex2	example	1	La comida aquí es cara.		The food here is expensive.	الطعام هنا غالٍ.					
+es_w_barato	word	1	barato		cheap	رخيص					
+es_w_barato#ex1	example	1	El pan es barato aquí.		Bread is cheap here.	الخبز رخيص هنا.					
+es_w_barato#ex2	example	1	Busco una habitación barata.		I'm looking for a cheap room.	أبحث عن غرفة رخيصة.					
+es_w_rico	word	1	rico		tasty; rich	لذيذ؛ غني					
+es_w_rico#ex1	example	1	Este café está muy rico.		This coffee is very good.	هذه القهوة لذيذة جدًا.					
+es_w_rico#ex2	example	1	Es un hombre muy rico.		He's a very rich man.	إنه رجل غني جدًا.					
+es_w_listo	word	1	listo		ready; clever	جاهز؛ ذكي					
+es_w_listo#ex1	example	1	La cena está lista.		Dinner is ready.	العشاء جاهز.					
+es_w_listo#ex2	example	1	¿Estás listo para salir?		Are you ready to go out?	هل أنت مستعد للخروج؟					
+es_w_temprano	word	1	temprano		early	مبكرًا					
+es_w_temprano#ex1	example	1	Salgo de casa muy temprano.		I leave home very early.	أخرج من البيت مبكرًا جدًا.					
+es_w_temprano#ex2	example	1	Llegamos temprano a la fiesta.		We arrived early at the party.	وصلنا مبكرًا إلى الحفلة.					
+es_w_libre	word	1	libre		free (not busy, not taken)	حر، متفرغ، شاغر					
+es_w_libre#ex1	example	1	¿Estás libre esta noche?		Are you free tonight?	هل أنت متفرغ هذه الليلة؟					
+es_w_libre#ex2	example	1	¿Está libre este lugar?		Is this seat free?	هل هذا المكان شاغر؟					
+es_w_claro	word	1	claro		of course; clear	طبعًا؛ واضح					
+es_w_claro#ex1	example	1	Claro, te ayudo con eso.		Of course, I'll help you with that.	بالتأكيد، سأساعدك في ذلك.					
+es_w_claro#ex2	example	1	Claro, puedes venir con nosotros.		Of course, you can come with us.	طبعًا، يمكنك أن تأتي معنا.					
+es_w_verdad	word	1	verdad		truth; ¿verdad? = right?	حقيقة؛ أليس كذلك؟					
+es_w_verdad#ex1	example	1	¿Es verdad lo que dices?		Is what you're saying true?	هل ما تقوله صحيح؟					
+es_w_verdad#ex2	example	1	Hoy hace frío, ¿verdad?		It's cold today, isn't it?	الجو بارد اليوم، أليس كذلك؟					
+es_w_primero	word	1	primero		first	أول					
+es_w_primero#ex1	example	1	Es mi primer día aquí.		It's my first day here.	إنه يومي الأول هنا.					
+es_w_primero#ex2	example	1	Primero, lava tus manos.		First, wash your hands.	أولًا، اغسل يديك.					
+es_w_ultimo	word	1	último		last	أخير					
+es_w_ultimo#ex1	example	1	Es el último autobús de la noche.		It's the last bus of the night.	إنها آخر حافلة في الليل.					
+es_w_ultimo#ex2	example	1	La última parte es difícil.		The last part is difficult.	الجزء الأخير صعب.					
+es_w_proximo	word	1	próximo		next	التالي، القادم					
+es_w_proximo#ex1	example	1	El próximo tren sale a las cinco.		The next train leaves at five.	القطار التالي يغادر في الخامسة.					
+es_w_proximo#ex2	example	1	Nos vemos el próximo año.		See you next year.	نلتقي العام القادم.					
+es_w_solo	word	1	solo		only; alone	فقط؛ وحيد					
+es_w_solo#ex1	example	1	Vivo solo en una casa pequeña.		I live alone in a small house.	أعيش وحدي في بيت صغير.					
+es_w_solo#ex2	example	1	Solo tengo cinco minutos.		I only have five minutes.	لديّ خمس دقائق فقط.					
+es_w_cerca	word	1	cerca		near, close	قريب					
+es_w_cerca#ex1	example	1	Vivo cerca de la escuela.		I live near the school.	أسكن قرب المدرسة.					
+es_w_cerca#ex2	example	1	¿Hay una tienda cerca de aquí?		Is there a shop near here?	هل يوجد متجر قريب من هنا؟					
+es_w_lejos	word	1	lejos		far	بعيد					
+es_w_lejos#ex1	example	1	Mi trabajo está muy lejos.		My work is very far away.	عملي بعيد جدًا.					
+es_w_lejos#ex2	example	1	La playa no está lejos de aquí.		The beach isn't far from here.	الشاطئ ليس بعيدًا عن هنا.					
+es_w_antes	word	1	antes		before; earlier	قبل؛ سابقًا					
+es_w_antes#ex1	example	1	Antes vivía en otra ciudad.		I used to live in another city.	كنت أعيش سابقًا في مدينة أخرى.					
+es_w_antes#ex2	example	1	Come algo antes de salir.		Eat something before you go out.	كُل شيئًا قبل أن تخرج.					
+es_w_despues	word	1	después		after, afterwards	بعد ذلك					
+es_w_despues#ex1	example	1	Te llamo después de la cena.		I'll call you after dinner.	سأتصل بك بعد العشاء.					
+es_w_despues#ex2	example	1	Después del trabajo voy a casa.		After work I go home.	بعد العمل أذهب إلى البيت.					
+es_w_luego	word	1	luego		then, later	ثم؛ لاحقًا					
+es_w_luego#ex1	example	1	Bueno, hasta luego, amigo.		Well, see you later, my friend.	حسنًا، إلى اللقاء يا صديقي.					
+es_w_luego#ex2	example	1	Primero comemos y luego salimos.		First we eat and then we go out.	أولًا نأكل ثم نخرج.					
+es_w_entonces	word	1	entonces		then, so	إذن؛ آنذاك					
+es_w_entonces#ex1	example	1	Entonces, ¿vienes o no?		So, are you coming or not?	إذن، هل ستأتي أم لا؟					
+es_w_entonces#ex2	example	1	Yo era muy joven entonces.		I was very young then.	كنت صغيرًا جدًا آنذاك.					
+es_w_todavia	word	1	todavía		still, yet	ما زال					
+es_w_todavia#ex1	example	1	Todavía estoy en el trabajo.		I'm still at work.	ما زلت في العمل.					
+es_w_todavia#ex2	example	1	¿Todavía vives aquí con tus padres?		Do you still live here with your parents?	هل ما زلت تسكن هنا مع والديك؟					
+es_w_casi	word	1	casi		almost	تقريبًا، كاد					
+es_w_casi#ex1	example	1	La cena está casi lista.		Dinner is almost ready.	العشاء جاهز تقريبًا.					
+es_w_casi#ex2	example	1	Casi olvido tu cumpleaños.		I almost forgot your birthday.	كدت أنسى عيد ميلادك.					
+es_w_juntos	word	1	juntos		together	معًا					
+es_w_juntos#ex1	example	1	Vamos juntos a la fiesta.		Let's go to the party together.	لنذهب معًا إلى الحفلة.					
+es_w_juntos#ex2	example	1	Siempre comemos juntos en casa.		We always eat together at home.	نأكل معًا دائمًا في البيت.					
+es_w_hola	word	1	hola		hello	مرحبًا					
+es_w_hola#ex1	example	1	Hola, ¿cómo estás hoy?		Hello, how are you today?	مرحبًا، كيف حالك اليوم؟					
+es_w_hola#ex2	example	1	Hola, me llamo Ana.		Hello, my name is Ana.	مرحبًا، اسمي آنا.					
+es_w_gracias	word	1	gracias		thank you	شكرًا					
+es_w_gracias#ex1	example	1	Muchas gracias por todo.		Thank you very much for everything.	شكرًا جزيلًا على كل شيء.					
+es_w_gracias#ex2	example	1	Gracias por la cena.		Thanks for dinner.	شكرًا على العشاء.					
+es_w_adios	word	1	adiós		goodbye	وداعًا					
+es_w_adios#ex1	example	1	Adiós a todos, hasta mañana.		Goodbye everyone, see you tomorrow.	إلى اللقاء جميعًا، أراكم غدًا.					
+es_w_adios#ex2	example	1	Dijo adiós a su familia.		He said goodbye to his family.	ودّع عائلته.					
+es_w_perdon	word	1	perdón		sorry, excuse me	عذرًا					
+es_w_perdon#ex1	example	1	Perdón, no entiendo la pregunta.		Sorry, I don't understand the question.	عذرًا، لا أفهم السؤال.					
+es_w_perdon#ex2	example	1	Perdón, ¿dónde está la playa?		Excuse me, where is the beach?	عذرًا، أين الشاطئ؟					
+es_w_por_favor	word	1	por favor		please	من فضلك					
+es_w_por_favor#ex1	example	1	Un té, por favor.		A tea, please.	شاي من فضلك.					
+es_w_por_favor#ex2	example	1	Cierra la ventana, por favor.		Close the window, please.	أغلق النافذة من فضلك.					
+es_w_vale	word	1	vale		okay (Spain)	حسنًا					
+es_w_vale#ex1	example	1	Vale, nos vemos mañana.		Okay, see you tomorrow.	حسنًا، نلتقي غدًا.					
+es_w_vale#ex2	example	1	¿Vamos a la playa? Vale.		Shall we go to the beach? Okay.	هل نذهب إلى الشاطئ؟ حسنًا.					
+es_w_dos	word	1	dos		two	اثنان					
+es_w_dos#ex1	example	1	Tengo dos gatos en casa.		I have two cats at home.	لديّ قطتان في البيت.					
+es_w_dos#ex2	example	1	Nos vemos a las dos.		See you at two.	نلتقي في الثانية.					
+es_w_tres	word	1	tres		three	ثلاثة					
+es_w_tres#ex1	example	1	Vivo aquí desde hace tres años.		I've lived here for three years.	أعيش هنا منذ ثلاث سنوات.					
+es_w_tres#ex2	example	1	Ayer compré tres libros.		Yesterday I bought three books.	أمس اشتريت ثلاثة كتب.					
+es_w_cuatro	word	1	cuatro		four	أربعة					
+es_w_cuatro#ex1	example	1	Somos cuatro en mi familia.		There are four of us in my family.	نحن أربعة في عائلتي.					
+es_w_cuatro#ex2	example	1	La clase termina a las cuatro.		The class ends at four.	ينتهي الدرس في الرابعة.					
+es_w_cinco	word	1	cinco		five	خمسة					
+es_w_cinco#ex1	example	1	Tengo cinco minutos para comer.		I have five minutes to eat.	لديّ خمس دقائق لآكل.					
+es_w_cinco#ex2	example	1	Mi hijo tiene cinco años.		My son is five years old.	عمر ابني خمس سنوات.					
+es_w_diez	word	1	diez		ten	عشرة					
+es_w_diez#ex1	example	1	Espero diez minutos más.		I'll wait ten more minutes.	سأنتظر عشر دقائق أخرى.					
+es_w_diez#ex2	example	1	Hay diez personas en la fiesta.		There are ten people at the party.	هناك عشرة أشخاص في الحفلة.					
+es_w_cien	word	1	cien		a hundred	مئة					
+es_w_cien#ex1	example	1	Hay cien personas aquí.		There are a hundred people here.	هناك مئة شخص هنا.					
+es_w_cien#ex2	example	1	Te lo dije cien veces.		I told you a hundred times.	قلت لك ذلك مئة مرة.					
+es_w_entre	word	1	entre		between, among	بين					
+es_w_entre#ex1	example	1	La tienda está entre la escuela y mi casa.		The shop is between the school and my house.	المتجر بين المدرسة وبيتي.					
+es_w_entre#ex2	example	1	Entre semana trabajo mucho.		During the week I work a lot.	أعمل كثيرًا في أيام الأسبوع.					
+es_w_sin	word	1	sin		without	بدون					
+es_w_sin#ex1	example	1	No puedo vivir sin café.		I can't live without coffee.	لا أستطيع العيش بدون قهوة.					
+es_w_sin#ex2	example	1	Salió sin su teléfono.		He went out without his phone.	خرج بدون هاتفه.					
+es_w_sobre	word	1	sobre		on; about	على؛ عن					
+es_w_sobre#ex1	example	1	El libro está sobre la mesa.		The book is on the table.	الكتاب على الطاولة.					
+es_w_sobre#ex2	example	1	Es una película sobre un perro.		It's a film about a dog.	إنه فيلم عن كلب.					
+es_w_hasta	word	1	hasta		until; see you (hasta luego)	حتى؛ إلى (اللقاء)					
+es_w_hasta#ex1	example	1	Hasta mañana, mis amigos.		See you tomorrow, my friends.	إلى الغد يا أصدقائي.					
+es_w_hasta#ex2	example	1	La tienda abre hasta las diez.		The shop is open until ten.	يفتح المتجر حتى العاشرة.					
+es_w_desde	word	1	desde		since, from	منذ؛ من					
+es_w_desde#ex1	example	1	Vivo aquí desde el año pasado.		I've lived here since last year.	أعيش هنا منذ العام الماضي.					
+es_w_desde#ex2	example	1	Te llamo desde el tren.		I'm calling you from the train.	أتصل بك من القطار.					
+es_w_durante	word	1	durante		during	أثناء					
+es_w_durante#ex1	example	1	Dormí durante todo el viaje.		I slept during the whole trip.	نمت طوال الرحلة.					
+es_w_durante#ex2	example	1	No hablamos durante la clase.		We don't talk during class.	لا نتحدث أثناء الدرس.					
+es_w_mientras	word	1	mientras		while	بينما					
+es_w_mientras#ex1	example	1	Leo mientras espero el autobús.		I read while I wait for the bus.	أقرأ بينما أنتظر الحافلة.					
+es_w_mientras#ex2	example	1	Escucho música mientras cocino.		I listen to music while I cook.	أستمع إلى الموسيقى بينما أطبخ.					
+es_w_aunque	word	1	aunque		although, even if	رغم أنّ					
+es_w_aunque#ex1	example	1	Salgo aunque llueve mucho.		I'm going out even though it's raining a lot.	سأخرج رغم أنها تمطر كثيرًا.					
+es_w_aunque#ex2	example	1	Aunque es difícil, me gusta.		Although it's difficult, I like it.	رغم أنه صعب، يعجبني.					
+es_w_porque	word	1	porque		because	لأنّ					
+es_w_porque#ex1	example	1	No vengo porque estoy cansado.		I'm not coming because I'm tired.	لن آتي لأنني متعب.					
+es_w_porque#ex2	example	1	Como mucho porque tengo hambre.		I eat a lot because I'm hungry.	آكل كثيرًا لأنني جائع.					
+es_w_por_que	word	1	por qué		why	لماذا					
+es_w_por_que#ex1	example	1	¿Por qué no vienes?		Why aren't you coming?	لماذا لا تأتي؟					
+es_w_por_que#ex2	example	1	¿Por qué estás tan cansado?		Why are you so tired?	لماذا أنت متعب هكذا؟					
+es_w_cual	word	1	cuál		which, what	أيّ					
+es_w_cual#ex1	example	1	¿Cuál es tu coche?		Which car is yours?	أي سيارة هي سيارتك؟					
+es_w_cual#ex2	example	1	¿Cuál de los dos quieres?		Which of the two do you want?	أيّ الاثنين تريد؟					
+es_w_alguien	word	1	alguien		someone	شخص ما					
+es_w_alguien#ex1	example	1	¿Hay alguien en casa?		Is anyone at home?	هل يوجد أحد في البيت؟					
+es_w_alguien#ex2	example	1	Alguien te llamó esta mañana.		Someone called you this morning.	اتصل بك أحدهم هذا الصباح.					
+es_w_nadie	word	1	nadie		nobody	لا أحد					
+es_w_nadie#ex1	example	1	No hay nadie en la calle.		There's nobody in the street.	لا يوجد أحد في الشارع.					
+es_w_nadie#ex2	example	1	Nadie sabe dónde está.		Nobody knows where he is.	لا أحد يعرف أين هو.					
+es_w_cada	word	1	cada		each, every	كل					
+es_w_cada#ex1	example	1	Llamo a mi madre cada día.		I call my mother every day.	أتصل بأمي كل يوم.					
+es_w_cada#ex2	example	1	Cada niño tiene un libro.		Each child has a book.	لكل طفل كتاب.					
+es_w_tan	word	1	tan		so, as	جدًا، إلى هذا الحد					
+es_w_tan#ex1	example	1	La película es tan larga.		The film is so long.	الفيلم طويل جدًا.					
+es_w_tan#ex2	example	1	No estoy tan cansado.		I'm not that tired.	لست متعبًا إلى هذا الحد.					
+es_w_demasiado	word	1	demasiado		too, too much	أكثر من اللازم					
+es_w_demasiado#ex1	example	1	Hace demasiado calor hoy.		It's too hot today.	الجو حار أكثر من اللازم اليوم.					
+es_w_demasiado#ex2	example	1	Ayer comí demasiado pan.		Yesterday I ate too much bread.	أمس أكلت خبزًا أكثر من اللازم.					
+es_w_bastante	word	1	bastante		quite, enough	بما فيه الكفاية					
+es_w_bastante#ex1	example	1	Hoy tengo bastante tiempo.		I have enough time today.	لديّ وقت كافٍ.					
+es_w_bastante#ex2	example	1	Tú hablas bastante bien.		You speak quite well.	تتكلم جيدًا بما فيه الكفاية.					
+es_w_asi	word	1	así		like this, so	هكذا					
+es_w_asi#ex1	example	1	Se hace así, mira.		It's done like this, look.	يُفعل هكذا، انظر.					
+es_w_asi#ex2	example	1	No me gusta vivir así.		I don't like living like this.	لا أحب أن أعيش هكذا.					
+es_w_alli	word	1	allí		there	هناك					
+es_w_alli#ex1	example	1	Mi casa está allí.		My house is over there.	بيتي هناك.					
+es_w_alli#ex2	example	1	Pon tus cosas ahí.		Put your things there.	ضع أشياءك هناك.					
+es_w_dentro	word	1	dentro		inside	داخل					
+es_w_dentro#ex1	example	1	Los niños están dentro de casa.		The children are inside the house.	الأطفال داخل البيت.					
+es_w_dentro#ex2	example	1	Hace frío, vamos dentro.		It's cold, let's go inside.	الجو بارد، لندخل.					
+es_w_fuera	word	1	fuera		outside	خارج					
+es_w_fuera#ex1	example	1	Hoy hace calor fuera.		It's hot outside today.	الجو حار في الخارج اليوم.					
+es_w_fuera#ex2	example	1	Vamos a comer fuera hoy.		Let's eat out today.	لنأكل خارج البيت اليوم.					
+es_w_pronto	word	1	pronto		soon	قريبًا					
+es_w_pronto#ex1	example	1	Hasta pronto, mis amigos.		See you soon, my friends.	إلى اللقاء قريبًا يا أصدقائي.					
+es_w_pronto#ex2	example	1	Vuelvo pronto a casa.		I'll be back home soon.	سأعود قريبًا إلى البيت.					
+es_w_quizas	word	1	quizás		maybe	ربما					
+es_w_quizas#ex1	example	1	Quizás llueve mañana por la tarde.		Maybe it'll rain tomorrow afternoon.	ربما تمطر غدًا بعد الظهر.					
+es_w_quizas#ex2	example	1	Quizás vamos a la playa.		Maybe we'll go to the beach.	ربما نذهب إلى الشاطئ.					
+es_w_cuenta	word	1	cuenta		bill, check	الحساب					
+es_w_cuenta#ex1	example	1	La cuenta, por favor.		The bill, please.	الحساب من فضلك.					
+es_w_cuenta#ex2	example	1	Yo pago la cuenta hoy.		I'll pay the bill today.	أنا أدفع الحساب اليوم.					
+es_w_esposo	word	1	esposo		husband (esposa = wife)	زوج (esposa = زوجة)					
+es_w_esposo#ex1	example	1	Mi esposo es profesor.		My husband is a teacher.	زوجي معلّم.					
+es_w_esposo#ex2	example	1	Su esposa trabaja en una tienda.		His wife works in a shop.	تعمل زوجته في متجر.					
+es_w_bebe	word	1	bebé		baby	طفل رضيع					
+es_w_bebe#ex1	example	1	El bebé está dormido.		The baby is asleep.	الطفل نائم.					
+es_w_bebe#ex2	example	1	Tienen un bebé nuevo.		They have a new baby.	لديهم طفل جديد.					
+es_w_abuelo	word	1	abuelo		grandfather (abuela = grandmother)	جد (abuela = جدة)					
+es_w_abuelo#ex1	example	1	Mi abuelo tiene un perro.		My grandfather has a dog.	لدى جدي كلب.					
+es_w_abuelo#ex2	example	1	Mis abuelos están en casa.		My grandparents are at home.	جدّاي في البيت.					
+es_w_clase	word	1	clase		class, lesson	صف، درس					
+es_w_clase#ex1	example	1	Mi clase es muy grande.		My class is very big.	صفي كبير جدًا.					
+es_w_clase#ex2	example	1	Llegué tarde a clase.		I was late for class.	وصلت متأخرًا إلى الدرس.					
+es_w_examen	word	1	examen		exam	امتحان					
+es_w_examen#ex1	example	1	Mañana tengo un examen.		I have an exam tomorrow.	غدًا لديّ امتحان.					
+es_w_examen#ex2	example	1	El examen fue fácil.		The exam was easy.	كان الامتحان سهلًا.					
+es_w_viaje	word	1	viaje		trip, journey	رحلة					
+es_w_viaje#ex1	example	1	Que tengas un buen viaje.		Have a good trip.	رحلة سعيدة.					
+es_w_viaje#ex2	example	1	El viaje fue muy largo.		The trip was very long.	كانت الرحلة طويلة جدًا.					
+es_w_playa	word	1	playa		beach	شاطئ					
+es_w_playa#ex1	example	1	Vamos a la playa mañana.		Let's go to the beach tomorrow.	لنذهب إلى الشاطئ غدًا.					
+es_w_playa#ex2	example	1	Me gusta caminar por la playa.		I like walking on the beach.	أحب المشي على الشاطئ.					
+es_w_mar	word	1	mar		sea	بحر					
+es_w_mar#ex1	example	1	El mar está muy frío hoy.		The sea is very cold today.	البحر بارد جدًا اليوم.					
+es_w_mar#ex2	example	1	Vivimos cerca del mar.		We live near the sea.	نعيش قرب البحر.					
+es_w_regalo	word	1	regalo		present, gift	هدية					
+es_w_regalo#ex1	example	1	Gracias por el regalo.		Thank you for the present.	شكرًا على الهدية.					
+es_w_regalo#ex2	example	1	Compré un regalo para mi madre.		I bought a present for my mother.	اشتريت هدية لأمي.					
+es_w_ropa	word	1	ropa		clothes	ملابس					
+es_w_ropa#ex1	example	1	Necesito ropa nueva para la fiesta.		I need new clothes for the party.	أحتاج إلى ملابس جديدة للحفلة.					
+es_w_ropa#ex2	example	1	Pon tu ropa en la cama.		Put your clothes on the bed.	ضع ملابسك على السرير.					
+es_w_gato	word	1	gato		cat	قطة					
+es_w_gato#ex1	example	1	Mi gato duerme mucho.		My cat sleeps a lot.	قطتي تنام كثيرًا.					
+es_w_gato#ex2	example	1	El gato está en la ventana.		The cat is at the window.	القطة عند النافذة.					
+es_w_ventana	word	1	ventana		window	نافذة					
+es_w_ventana#ex1	example	1	Abre la ventana, por favor.		Open the window, please.	افتح النافذة من فضلك.					
+es_w_ventana#ex2	example	1	Mi habitación tiene una ventana grande.		My room has a big window.	في غرفتي نافذة كبيرة.					
+es_w_bano	word	1	baño		bathroom; bath	حمّام					
+es_w_bano#ex1	example	1	¿Dónde está el baño?		Where is the bathroom?	أين الحمّام؟					
+es_w_bano#ex2	example	1	El baño está cerca de mi habitación.		The bathroom is near my room.	الحمّام قرب غرفتي.					
+es_w_cocina	word	1	cocina		kitchen	مطبخ					
+es_w_cocina#ex1	example	1	La cocina es muy pequeña.		The kitchen is very small.	المطبخ صغير جدًا.					
+es_w_cocina#ex2	example	1	Comemos en la cocina.		We eat in the kitchen.	نأكل في المطبخ.					
+es_w_color	word	1	color		colour	لون					
+es_w_color#ex1	example	1	¿De qué color es tu coche?		What colour is your car?	ما لون سيارتك؟					
+es_w_color#ex2	example	1	Me gusta este color.		I like this colour.	يعجبني هذا اللون.					
+es_w_blanco	word	1	blanco		white	أبيض					
+es_w_blanco#ex1	example	1	Tengo un gato blanco.		I have a white cat.	لديّ قطة بيضاء.					
+es_w_blanco#ex2	example	1	La casa es blanca.		The house is white.	البيت أبيض.					
+es_w_negro	word	1	negro		black	أسود					
+es_w_negro#ex1	example	1	Mi perro es negro.		My dog is black.	كلبي أسود.					
+es_w_negro#ex2	example	1	Bebo el café negro.		I drink my coffee black.	أشرب القهوة سوداء.					
+es_w_rojo	word	1	rojo		red	أحمر					
+es_w_rojo#ex1	example	1	Quiero el coche rojo.		I want the red car.	أريد السيارة الحمراء.					
+es_w_rojo#ex2	example	1	Ella tiene una puerta roja.		She has a red door.	لديها باب أحمر.					
+es_w_alto	word	1	alto		tall, high; loud	طويل، مرتفع					
+es_w_alto#ex1	example	1	Mi padre es muy alto.		My father is very tall.	أبي طويل جدًا.					
+es_w_alto#ex2	example	1	Es un hombre alto y joven.		He's a tall young man.	إنه رجل طويل وشاب.					
+es_w_largo	word	1	largo		long	طويل					
+es_w_largo#ex1	example	1	Fue un día muy largo.		It was a very long day.	كان يومًا طويلًا جدًا.					
+es_w_largo#ex2	example	1	El camino es largo.		The way is long.	الطريق طويل.					
+es_w_joven	word	1	joven		young	شاب، صغير السن					
+es_w_joven#ex1	example	1	Mi madre es muy joven.		My mother is very young.	أمي صغيرة جدًا في السن.					
+es_w_joven#ex2	example	1	Hay muchos jóvenes en la ciudad.		There are many young people in the city.	هناك شباب كثيرون في المدينة.					
+es_w_enfermo	word	1	enfermo		ill, sick	مريض					
+es_w_enfermo#ex1	example	1	Hoy estoy enfermo en casa.		Today I'm ill at home.	أنا مريض في البيت اليوم.					
+es_w_enfermo#ex2	example	1	Mi hija está enferma.		My daughter is ill.	ابنتي مريضة.					
+es_w_seguro	word	1	seguro		sure; safe	متأكد؛ آمن					
+es_w_seguro#ex1	example	1	¿Estás seguro de eso?		Are you sure about that?	هل أنت متأكد من ذلك؟					
+es_w_seguro#ex2	example	1	Esta calle es muy segura.		This street is very safe.	هذا الشارع آمن جدًا.					
+es_w_cierto	word	1	cierto		true, certain	صحيح					
+es_w_cierto#ex1	example	1	Es cierto, hace mucho frío.		It's true, it's very cold.	صحيح، الجو بارد جدًا.					
+es_w_cierto#ex2	example	1	No es cierto lo que dice.		What he says isn't true.	ما يقوله ليس صحيحًا.					
+es_w_posible	word	1	posible		possible	ممكن					
+es_w_posible#ex1	example	1	¿Es posible llegar hoy?		Is it possible to arrive today?	هل يمكن الوصول اليوم؟					
+es_w_posible#ex2	example	1	Ven lo antes posible.		Come as soon as possible.	تعال بأسرع ما يمكن.					
+es_w_tranquilo	word	1	tranquilo		calm, quiet	هادئ					
+es_w_tranquilo#ex1	example	1	Es una ciudad muy tranquila.		It's a very quiet city.	إنها مدينة هادئة جدًا.					
+es_w_tranquilo#ex2	example	1	Tranquilo, todo está bien.		Calm down, everything is fine.	اهدأ، كل شيء على ما يرام.					
+es_w_caliente	word	1	caliente		hot (temperature)	ساخن					
+es_w_caliente#ex1	example	1	El café está muy caliente.		The coffee is very hot.	القهوة ساخنة جدًا.					
+es_w_caliente#ex2	example	1	El agua está caliente.		The water is hot.	الماء ساخن.					
+es_w_bienvenido	word	1	bienvenido		welcome	مرحبًا بك					
+es_w_bienvenido#ex1	example	1	¡Bienvenido a mi casa!		Welcome to my house!	أهلًا بك في بيتي!					
+es_w_bienvenido#ex2	example	1	Bienvenidos a nuestra ciudad.		Welcome to our city.	أهلًا بكم في مدينتنا.					
+es_w_momento	word	1	momento		moment	لحظة					
+es_w_momento#ex1	example	1	Espera un momento, por favor.		Wait a moment, please.	انتظر لحظة من فضلك.					
+es_w_momento#ex2	example	1	Ahora no es un buen momento.		Now isn't a good time.	الآن ليس وقتًا مناسبًا.					
+es_w_medio	word	1	medio		half	نصف					
+es_w_medio#ex1	example	1	Espero media hora más.		I'll wait another half hour.	سأنتظر نصف ساعة أخرى.					
+es_w_medio#ex2	example	1	Son las dos y media.		It's half past two.	الساعة الثانية والنصف.					
+es_w_cuidado	word	1	cuidado		care; ¡cuidado! = careful!	انتباه؛ احذر!					
+es_w_cuidado#ex1	example	1	¡Cuidado con el perro!		Watch out for the dog!	احذر من الكلب!					
+es_w_cuidado#ex2	example	1	Ten cuidado en la calle.		Be careful in the street.	انتبه في الشارع.					

@@ -1,0 +1,901 @@
+item_id	kind	level	text	pron	en	ar	status	correction	reviewer	date	note
+fr_w_le	word	1	le		the	أداة التعريف (الـ)					
+fr_w_le#ex1	example	1	Le chien est dans la maison.		The dog is in the house.	الكلب في البيت.					
+fr_w_le#ex2	example	1	Les enfants jouent dans la rue.		The children are playing in the street.	يلعب الأطفال في الشارع.					
+fr_w_de	word	1	de		of, from	من، لـ (للإضافة)					
+fr_w_de#ex1	example	1	C'est la maison de mon père.		It's my father's house.	هذا بيت أبي.					
+fr_w_de#ex2	example	1	Je viens d'une petite ville.		I come from a small town.	أنا من مدينة صغيرة.					
+fr_w_un	word	1	un		a, an; one	أداة نكرة؛ واحد					
+fr_w_un#ex1	example	1	J'ai un chien et un chat.		I have a dog and a cat.	لديّ كلب وقطة.					
+fr_w_un#ex2	example	1	Elle a une nouvelle voiture.		She has a new car.	لديها سيارة جديدة.					
+fr_w_etre	word	1	être		to be	يكون					
+fr_w_etre#ex1	example	1	Je suis très fatigué aujourd'hui.		I'm very tired today.	أنا متعب جدًا اليوم.					
+fr_w_etre#ex2	example	1	Elle était professeur dans mon école.		She was a teacher at my school.	كانت معلّمة في مدرستي.					
+fr_w_et	word	1	et		and	و					
+fr_w_et#ex1	example	1	J'ai un frère et une sœur.		I have a brother and a sister.	لديّ أخ وأخت.					
+fr_w_et#ex2	example	1	Nous mangeons du pain et buvons du thé.		We eat bread and drink tea.	نأكل الخبز ونشرب الشاي.					
+fr_w_a	word	1	à		to, at, in	إلى، في					
+fr_w_a#ex1	example	1	Je vais à l'école tous les jours.		I go to school every day.	أذهب إلى المدرسة كل يوم.					
+fr_w_a#ex2	example	1	Demain, nous allons à la plage.		Tomorrow we're going to the beach.	غدًا سنذهب إلى الشاطئ.					
+fr_w_il	word	1	il		he, it	هو					
+fr_w_il#ex1	example	1	Il est très grand.		He is very tall.	هو طويل جدًا.					
+fr_w_il#ex2	example	1	Ils habitent près d'ici.		They live near here.	يسكنون قرب هنا.					
+fr_w_avoir	word	1	avoir		to have	يملك، لديه					
+fr_w_avoir#ex1	example	1	Moi, j'ai deux frères.		I have two brothers.	أنا لديّ أخوان.					
+fr_w_avoir#ex2	example	1	Est-ce que tu as faim ?		Are you hungry?	هل أنت جائع؟					
+fr_w_ne	word	1	ne		not (ne … pas)	لا (للنفي مع pas)					
+fr_w_ne#ex1	example	1	Je ne sais pas.		I don't know.	لا أعرف.					
+fr_w_ne#ex2	example	1	Il n'aime pas le café.		He doesn't like coffee.	لا يحب القهوة.					
+fr_w_je	word	1	je		I	أنا					
+fr_w_je#ex1	example	1	Bonjour, je m'appelle Karim.		Hello, my name is Karim.	مرحبًا، اسمي كريم.					
+fr_w_je#ex2	example	1	Mon frère habite à Paris.		My brother lives in Paris.	يسكن أخي في باريس.					
+fr_w_pas	word	1	pas		not (ne … pas)	لا، ليس					
+fr_w_pas#ex1	example	1	Ce n'est pas mon livre.		It's not my book.	هذا ليس كتابي.					
+fr_w_pas#ex2	example	1	Je n'ai pas le temps.		I don't have time.	ليس لديّ وقت.					
+fr_w_ce	word	1	ce		this, that; it	هذا، ذلك					
+fr_w_ce#ex1	example	1	Ce sont mes amis.		They are my friends.	هؤلاء أصدقائي.					
+fr_w_ce#ex2	example	1	Cette maison est très belle.		This house is very beautiful.	هذا البيت جميل جدًا.					
+fr_w_que	word	1	que		that, which; than	أنّ؛ الذي؛ من (للمقارنة)					
+fr_w_que#ex1	example	1	Je pense qu'il va pleuvoir.		I think it's going to rain.	أعتقد أنها ستمطر.					
+fr_w_que#ex2	example	1	Le livre que tu m'as donné est bon.		The book you gave me is good.	الكتاب الذي أعطيتني إياه جيد.					
+fr_w_vous	word	1	vous		you (formal or plural)	أنتم، حضرتك					
+fr_w_vous#ex1	example	1	Vous parlez très bien.		You speak very well.	تتكلم جيدًا جدًا.					
+fr_w_vous#ex2	example	1	Où est votre voiture ?		Where is your car?	أين سيارتك؟					
+fr_w_on	word	1	on		we, one, people	نحن؛ المرء					
+fr_w_on#ex1	example	1	On va à la plage demain ?		Shall we go to the beach tomorrow?	هل نذهب إلى الشاطئ غدًا؟					
+fr_w_on#ex2	example	1	On part en voyage demain.		We're leaving on a trip tomorrow.	سنسافر غدًا.					
+fr_w_qui	word	1	qui		who, which	مَن؛ الذي					
+fr_w_qui#ex1	example	1	Qui est cet homme ?		Who is this man?	مَن هذا الرجل؟					
+fr_w_qui#ex2	example	1	C'est mon ami qui habite ici.		It's my friend who lives here.	إنه صديقي الذي يسكن هنا.					
+fr_w_en	word	1	en		in, by; some of it	في، بـ؛ منه					
+fr_w_en#ex1	example	1	Je travaille en ville.		I work in town.	أعمل في المدينة.					
+fr_w_en#ex2	example	1	Nous allons à l'école en bus.		We go to school by bus.	نذهب إلى المدرسة بالحافلة.					
+fr_w_pour	word	1	pour		for, in order to	لـ، من أجل					
+fr_w_pour#ex1	example	1	Ce cadeau est pour toi.		This present is for you.	هذه الهدية لك.					
+fr_w_pour#ex2	example	1	Merci pour ton aide.		Thanks for your help.	شكرًا على مساعدتك.					
+fr_w_dans	word	1	dans		in, inside	في، داخل					
+fr_w_dans#ex1	example	1	Le chat est dans la cuisine.		The cat is in the kitchen.	القطة في المطبخ.					
+fr_w_dans#ex2	example	1	Nous habitons dans une grande ville.		We live in a big city.	نسكن في مدينة كبيرة.					
+fr_w_tu	word	1	tu		you (informal)	أنت					
+fr_w_tu#ex1	example	1	Tu viens avec moi ?		Are you coming with me?	هل تأتي معي؟					
+fr_w_tu#ex2	example	1	Ton frère est très grand.		Your brother is very tall.	أخوك طويل جدًا.					
+fr_w_elle	word	1	elle		she, it	هي					
+fr_w_elle#ex1	example	1	Elle est ma sœur.		She is my sister.	هي أختي.					
+fr_w_elle#ex2	example	1	Elles sont mes amies.		They are my friends.	هنّ صديقاتي.					
+fr_w_nous	word	1	nous		we, us	نحن					
+fr_w_nous#ex1	example	1	Nous sommes prêts à partir.		We're ready to leave.	نحن مستعدون للذهاب.					
+fr_w_nous#ex2	example	1	Notre maison est petite.		Our house is small.	بيتنا صغير.					
+fr_w_faire	word	1	faire		to do, to make	يفعل، يصنع					
+fr_w_faire#ex1	example	1	Qu'est-ce que tu fais ce soir ?		What are you doing this evening?	ماذا تفعل هذا المساء؟					
+fr_w_faire#ex2	example	1	Il fait très chaud aujourd'hui.		It's very hot today.	الجو حار جدًا اليوم.					
+fr_w_aller	word	1	aller		to go	يذهب					
+fr_w_aller#ex1	example	1	Je vais au travail en bus.		I go to work by bus.	أذهب إلى العمل بالحافلة.					
+fr_w_aller#ex2	example	1	Comment ça va aujourd'hui ?		How are things today?	كيف الحال اليوم؟					
+fr_w_pouvoir	word	1	pouvoir		can, to be able to	يستطيع					
+fr_w_pouvoir#ex1	example	1	Tu peux m'aider, s'il te plaît ?		Can you help me, please?	هل يمكنك مساعدتي من فضلك؟					
+fr_w_pouvoir#ex2	example	1	Je ne peux pas dormir.		I can't sleep.	لا أستطيع النوم.					
+fr_w_mais	word	1	mais		but	لكن					
+fr_w_mais#ex1	example	1	C'est petit mais très joli.		It's small but very pretty.	إنه صغير لكنه جميل جدًا.					
+fr_w_mais#ex2	example	1	Je veux venir, mais je ne peux pas.		I want to come, but I can't.	أريد أن آتي، لكنني لا أستطيع.					
+fr_w_sur	word	1	sur		on; about	على؛ عن					
+fr_w_sur#ex1	example	1	Le livre est sur la table.		The book is on the table.	الكتاب على الطاولة.					
+fr_w_sur#ex2	example	1	C'est un film sur un chien.		It's a film about a dog.	إنه فيلم عن كلب.					
+fr_w_avec	word	1	avec		with	مع					
+fr_w_avec#ex1	example	1	J'habite avec ma famille.		I live with my family.	أسكن مع عائلتي.					
+fr_w_avec#ex2	example	1	Tu veux venir avec nous ?		Do you want to come with us?	هل تريد أن تأتي معنا؟					
+fr_w_se	word	1	se		oneself, himself, herself (reflexive)	ضمير انعكاسي (نفسه)					
+fr_w_se#ex1	example	1	Ma sœur s'appelle Léa.		My sister's name is Léa.	اسم أختي ليا.					
+fr_w_se#ex2	example	1	Ton frère s'appelle comment ?		What's your brother's name?	ما اسم أخيك؟					
+fr_w_plus	word	1	plus		more; ne … plus = no longer	أكثر؛ لم يعد					
+fr_w_plus#ex1	example	1	Je voudrais plus de pain.		I'd like more bread.	أودّ المزيد من الخبز.					
+fr_w_plus#ex2	example	1	Mon frère est plus grand que moi.		My brother is taller than me.	أخي أطول مني.					
+fr_w_tout	word	1	tout		all, everything	كل					
+fr_w_tout#ex1	example	1	Tout est prêt pour le dîner.		Everything is ready for dinner.	كل شيء جاهز للعشاء.					
+fr_w_tout#ex2	example	1	Tous mes amis sont là.		All my friends are here.	كل أصدقائي هنا.					
+fr_w_bien	word	1	bien		well, fine	جيدًا، بخير					
+fr_w_bien#ex1	example	1	Je vais bien, merci.		I'm fine, thank you.	أنا بخير، شكرًا.					
+fr_w_bien#ex2	example	1	Elle parle très bien.		She speaks very well.	تتكلم جيدًا جدًا.					
+fr_w_dire	word	1	dire		to say, to tell	يقول					
+fr_w_dire#ex1	example	1	Qu'est-ce qu'il dit ?		What is he saying?	ماذا يقول؟					
+fr_w_dire#ex2	example	1	Il m'a dit son nom.		He told me his name.	أخبرني باسمه.					
+fr_w_vouloir	word	1	vouloir		to want	يريد					
+fr_w_vouloir#ex1	example	1	Je voudrais un café, s'il vous plaît.		I'd like a coffee, please.	أودّ قهوة من فضلك.					
+fr_w_vouloir#ex2	example	1	Tu veux venir à la fête ?		Do you want to come to the party?	هل تريد أن تأتي إلى الحفلة؟					
+fr_w_oui	word	1	oui		yes	نعم					
+fr_w_oui#ex1	example	1	Oui, j'ai le temps.		Yes, I have time.	نعم، لديّ وقت.					
+fr_w_oui#ex2	example	1	Oui, j'aime beaucoup ça.		Yes, I like that a lot.	نعم، يعجبني ذلك كثيرًا.					
+fr_w_non	word	1	non		no	لا					
+fr_w_non#ex1	example	1	Non, je ne veux pas.		No, I don't want to.	لا، لا أريد.					
+fr_w_non#ex2	example	1	Non merci, j'ai déjà mangé.		No thanks, I've already eaten.	لا شكرًا، لقد أكلت بالفعل.					
+fr_w_y	word	1	y		there; il y a = there is	هناك؛ il y a = يوجد					
+fr_w_y#ex1	example	1	Il y a un chien dans la rue.		There's a dog in the street.	هناك كلب في الشارع.					
+fr_w_y#ex2	example	1	Tu vas à la plage ? J'y vais aussi.		Are you going to the beach? I'm going too.	هل تذهب إلى الشاطئ؟ أنا ذاهب أيضًا.					
+fr_w_ou_where	word	1	où		where	أين					
+fr_w_ou_where#ex1	example	1	Où est ton téléphone ?		Where is your phone?	أين هاتفك؟					
+fr_w_ou_where#ex2	example	1	Tu habites où maintenant ?		Where do you live now?	أين تسكن الآن؟					
+fr_w_comme	word	1	comme		like, as	مثل، كـ					
+fr_w_comme#ex1	example	1	Il parle comme son père.		He talks like his father.	يتكلم مثل أبيه.					
+fr_w_comme#ex2	example	1	Je travaille comme professeur.		I work as a teacher.	أعمل معلّمًا.					
+fr_w_tres	word	1	très		very	جدًا					
+fr_w_tres#ex1	example	1	Le repas est très bon.		The meal is very good.	الوجبة جيدة جدًا.					
+fr_w_tres#ex2	example	1	Je suis très content aujourd'hui.		I'm very happy today.	أنا مسرور جدًا اليوم.					
+fr_w_voir	word	1	voir		to see	يرى					
+fr_w_voir#ex1	example	1	Tu veux voir un film ?		Do you want to see a film?	هل تريد أن تشاهد فيلمًا؟					
+fr_w_voir#ex2	example	1	Je t'ai vu hier dans la rue.		I saw you in the street yesterday.	رأيتك أمس في الشارع.					
+fr_w_savoir	word	1	savoir		to know (facts)	يعرف					
+fr_w_savoir#ex1	example	1	Je ne sais pas où il est.		I don't know where he is.	لا أعرف أين هو.					
+fr_w_savoir#ex2	example	1	Tu sais où habite Léa ?		Do you know where Léa lives?	هل تعرف أين تسكن ليا؟					
+fr_w_venir	word	1	venir		to come	يأتي					
+fr_w_venir#ex1	example	1	Tu viens chez moi demain ?		Are you coming to my place tomorrow?	هل تأتي إلى بيتي غدًا؟					
+fr_w_venir#ex2	example	1	Ma mère est venue hier soir.		My mother came yesterday evening.	جاءت أمي أمس مساءً.					
+fr_w_ici	word	1	ici		here	هنا					
+fr_w_ici#ex1	example	1	Mes amis sont ici.		My friends are here.	أصدقائي هنا.					
+fr_w_ici#ex2	example	1	Tu habites ici avec ta famille ?		Do you live here with your family?	هل تسكن هنا مع عائلتك؟					
+fr_w_alors	word	1	alors		so, then	إذن، لذلك					
+fr_w_alors#ex1	example	1	Alors, tu viens ou pas ?		So, are you coming or not?	إذن، هل ستأتي أم لا؟					
+fr_w_alors#ex2	example	1	Il pleut, alors je reste à la maison.		It's raining, so I'm staying at home.	إنها تمطر، لذلك أبقى في البيت.					
+fr_w_quoi	word	1	quoi		what	ماذا					
+fr_w_quoi#ex1	example	1	Tu fais quoi ce soir ?		What are you doing tonight?	ماذا تفعل هذا المساء؟					
+fr_w_quoi#ex2	example	1	Quoi ? Je n'entends rien.		What? I can't hear anything.	ماذا؟ لا أسمع شيئًا.					
+fr_w_comment	word	1	comment		how	كيف					
+fr_w_comment#ex1	example	1	Comment tu t'appelles, toi ?		And what's your name?	وأنت، ما اسمك؟					
+fr_w_comment#ex2	example	1	Comment est ta nouvelle maison ?		What's your new house like?	كيف بيتك الجديد؟					
+fr_w_quand	word	1	quand		when	متى؛ عندما					
+fr_w_quand#ex1	example	1	Quand est ton anniversaire ?		When is your birthday?	متى عيد ميلادك؟					
+fr_w_quand#ex2	example	1	Quand j'étais petit, je jouais beaucoup.		When I was little, I played a lot.	عندما كنت صغيرًا، كنت ألعب كثيرًا.					
+fr_w_bon	word	1	bon		good	جيد					
+fr_w_bon#ex1	example	1	C'est un bon livre.		It's a good book.	إنه كتاب جيد.					
+fr_w_bon#ex2	example	1	C'est un bon repas.		It's a good meal.	إنها وجبة جيدة.					
+fr_w_rien	word	1	rien		nothing	لا شيء					
+fr_w_rien#ex1	example	1	Je n'ai rien à faire.		I have nothing to do.	ليس لديّ ما أفعله.					
+fr_w_rien#ex2	example	1	Il n'y a rien sur la table.		There's nothing on the table.	لا يوجد شيء على الطاولة.					
+fr_w_si	word	1	si		if; so	إذا؛ جدًا					
+fr_w_si#ex1	example	1	S'il pleut, nous restons ici.		If it rains, we'll stay here.	إذا أمطرت، سنبقى هنا.					
+fr_w_si#ex2	example	1	Si tu as faim, il y a du pain.		If you're hungry, there's some bread.	إذا كنت جائعًا، يوجد خبز.					
+fr_w_aussi	word	1	aussi		also, too	أيضًا					
+fr_w_aussi#ex1	example	1	Moi aussi, je veux un café.		Me too, I'd like a coffee.	أنا أيضًا أريد قهوة.					
+fr_w_aussi#ex2	example	1	Elle est aussi professeur.		She is a teacher too.	هي أيضًا معلّمة.					
+fr_w_merci	word	1	merci		thank you	شكرًا					
+fr_w_merci#ex1	example	1	Merci beaucoup pour le cadeau.		Thank you very much for the present.	شكرًا جزيلًا على الهدية.					
+fr_w_merci#ex2	example	1	Merci pour le dîner.		Thanks for dinner.	شكرًا على العشاء.					
+fr_w_bonjour	word	1	bonjour		hello, good morning	مرحبًا، صباح الخير					
+fr_w_bonjour#ex1	example	1	Bonjour, comment allez-vous ?		Hello, how are you?	صباح الخير، كيف حالك؟					
+fr_w_bonjour#ex2	example	1	Bonjour, je m'appelle Hassan.		Hello, my name is Hassan.	مرحبًا، اسمي حسن.					
+fr_w_petit	word	1	petit		small, little	صغير					
+fr_w_petit#ex1	example	1	Ma chambre est petite.		My room is small.	غرفتي صغيرة.					
+fr_w_petit#ex2	example	1	J'ai un petit chien.		I have a little dog.	لديّ كلب صغير.					
+fr_w_grand	word	1	grand		big, tall	كبير، طويل					
+fr_w_grand#ex1	example	1	Ils ont une grande maison.		They have a big house.	لديهم بيت كبير.					
+fr_w_grand#ex2	example	1	Mon père est très grand.		My father is very tall.	أبي طويل جدًا.					
+fr_w_nouveau	word	1	nouveau		new	جديد					
+fr_w_nouveau#ex1	example	1	J'ai un nouveau téléphone.		I have a new phone.	لديّ هاتف جديد.					
+fr_w_nouveau#ex2	example	1	C'est ma nouvelle voiture.		It's my new car.	هذه سيارتي الجديدة.					
+fr_w_vieux	word	1	vieux		old	قديم؛ مسنّ					
+fr_w_vieux#ex1	example	1	Ma voiture est très vieille.		My car is very old.	سيارتي قديمة جدًا.					
+fr_w_vieux#ex2	example	1	C'est un vieux livre.		It's an old book.	إنه كتاب قديم.					
+fr_w_beau	word	1	beau		beautiful; il fait beau = the weather is nice	جميل					
+fr_w_beau#ex1	example	1	Il fait beau aujourd'hui.		The weather is nice today.	الجو جميل اليوم.					
+fr_w_beau#ex2	example	1	C'est une belle ville.		It's a beautiful town.	إنها مدينة جميلة.					
+fr_w_autre	word	1	autre		other, another	آخر					
+fr_w_autre#ex1	example	1	Je voudrais un autre café.		I'd like another coffee.	أودّ قهوة أخرى.					
+fr_w_autre#ex2	example	1	Mon frère habite dans une autre ville.		My brother lives in another town.	يسكن أخي في مدينة أخرى.					
+fr_w_meme	word	1	même		same; even	نفس؛ حتى					
+fr_w_meme#ex1	example	1	Nous habitons dans la même rue.		We live on the same street.	نسكن في الشارع نفسه.					
+fr_w_meme#ex2	example	1	On mange toujours la même chose.		We always eat the same thing.	نأكل الشيء نفسه دائمًا.					
+fr_w_jour	word	1	jour		day	يوم					
+fr_w_jour#ex1	example	1	Quel beau jour aujourd'hui !		What a beautiful day today!	يا له من يوم جميل اليوم!					
+fr_w_jour#ex2	example	1	C'est un jour très important.		It's a very important day.	إنه يوم مهم جدًا.					
+fr_w_temps	word	1	temps		time; weather	وقت؛ طقس					
+fr_w_temps#ex1	example	1	Quel temps fait-il aujourd'hui ?		What's the weather like today?	كيف الطقس اليوم؟					
+fr_w_temps#ex2	example	1	Tu as le temps demain ?		Do you have time tomorrow?	هل لديك وقت غدًا؟					
+fr_w_an	word	1	an		year (counting: dix ans)	سنة (في العدّ والعمر)					
+fr_w_an#ex1	example	1	Mon fils a dix ans.		My son is ten years old.	عمر ابني عشر سنوات.					
+fr_w_an#ex2	example	1	Il y a deux ans, j'étais en France.		Two years ago, I was in France.	قبل سنتين كنت في فرنسا.					
+fr_w_annee	word	1	année		year	سنة					
+fr_w_annee#ex1	example	1	Bonne année à tous !		Happy New Year, everyone!	سنة سعيدة للجميع!					
+fr_w_annee#ex2	example	1	L'année prochaine, je pars en voyage.		Next year I'm going travelling.	في العام القادم سأسافر.					
+fr_w_fois	word	1	fois		time (occasion)	مرة					
+fr_w_fois#ex1	example	1	Je t'appelle encore une fois.		I'll call you once more.	سأتصل بك مرة أخرى.					
+fr_w_fois#ex2	example	1	Je vais à la plage trois fois par semaine.		I go to the beach three times a week.	أذهب إلى الشاطئ ثلاث مرات في الأسبوع.					
+fr_w_heure	word	1	heure		hour; o'clock	ساعة					
+fr_w_heure#ex1	example	1	Quelle heure est-il ?		What time is it?	كم الساعة؟					
+fr_w_heure#ex2	example	1	J'ai attendu une heure.		I waited an hour.	انتظرت ساعة.					
+fr_w_minute	word	1	minute		minute	دقيقة					
+fr_w_minute#ex1	example	1	Attends une minute, s'il te plaît.		Wait a minute, please.	انتظر دقيقة من فضلك.					
+fr_w_minute#ex2	example	1	Le bus arrive dans cinq minutes.		The bus arrives in five minutes.	تصل الحافلة بعد خمس دقائق.					
+fr_w_semaine	word	1	semaine		week	أسبوع					
+fr_w_semaine#ex1	example	1	Je vois ma famille chaque semaine.		I see my family every week.	أرى عائلتي كل أسبوع.					
+fr_w_semaine#ex2	example	1	Je travaille beaucoup cette semaine.		I'm working a lot this week.	أعمل كثيرًا هذا الأسبوع.					
+fr_w_mois	word	1	mois		month	شهر					
+fr_w_mois#ex1	example	1	Mon anniversaire est le mois prochain.		My birthday is next month.	عيد ميلادي الشهر القادم.					
+fr_w_mois#ex2	example	1	J'habite ici depuis un mois.		I've lived here for a month.	أسكن هنا منذ شهر.					
+fr_w_matin	word	1	matin		morning	صباح					
+fr_w_matin#ex1	example	1	Je bois un café le matin.		I drink a coffee in the morning.	أشرب قهوة في الصباح.					
+fr_w_matin#ex2	example	1	On se voit demain matin.		See you tomorrow morning.	نلتقي صباح الغد.					
+fr_w_soir	word	1	soir		evening	مساء					
+fr_w_soir#ex1	example	1	Je rentre tard le soir.		I get home late in the evening.	أعود متأخرًا في المساء.					
+fr_w_soir#ex2	example	1	Qu'est-ce qu'on mange ce soir ?		What are we eating tonight?	ماذا نأكل هذا المساء؟					
+fr_w_nuit	word	1	nuit		night	ليل، ليلة					
+fr_w_nuit#ex1	example	1	Bonne nuit, à demain.		Good night, see you tomorrow.	تصبح على خير، إلى الغد.					
+fr_w_nuit#ex2	example	1	Je travaille la nuit.		I work at night.	أعمل في الليل.					
+fr_w_aujourdhui	word	1	aujourd'hui		today	اليوم					
+fr_w_aujourdhui#ex1	example	1	Aujourd'hui, c'est mon anniversaire.		Today is my birthday.	اليوم عيد ميلادي.					
+fr_w_aujourdhui#ex2	example	1	Qu'est-ce qu'on fait aujourd'hui ?		What shall we do today?	ماذا نفعل اليوم؟					
+fr_w_demain	word	1	demain		tomorrow	غدًا					
+fr_w_demain#ex1	example	1	À demain, mes amis.		See you tomorrow, my friends.	إلى الغد يا أصدقائي.					
+fr_w_demain#ex2	example	1	Demain, c'est mon anniversaire.		Tomorrow is my birthday.	غدًا عيد ميلادي.					
+fr_w_hier	word	1	hier		yesterday	أمس					
+fr_w_hier#ex1	example	1	Hier, j'ai vu ton frère.		Yesterday I saw your brother.	أمس رأيت أخاك.					
+fr_w_hier#ex2	example	1	Hier, il a fait très froid.		Yesterday it was very cold.	أمس كان الجو باردًا جدًا.					
+fr_w_maintenant	word	1	maintenant		now	الآن					
+fr_w_maintenant#ex1	example	1	Je ne peux pas parler maintenant.		I can't talk now.	لا أستطيع التحدث الآن.					
+fr_w_maintenant#ex2	example	1	Où es-tu maintenant ?		Where are you now?	أين أنت الآن؟					
+fr_w_toujours	word	1	toujours		always; still	دائمًا؛ ما زال					
+fr_w_toujours#ex1	example	1	Elle arrive toujours tôt.		She always arrives early.	هي تصل مبكرًا دائمًا.					
+fr_w_toujours#ex2	example	1	Je suis toujours au travail.		I'm still at work.	ما زلت في العمل.					
+fr_w_jamais	word	1	jamais		never	أبدًا					
+fr_w_jamais#ex1	example	1	Je ne bois jamais de café le soir.		I never drink coffee in the evening.	لا أشرب القهوة مساءً أبدًا.					
+fr_w_jamais#ex2	example	1	Il n'est jamais venu ici.		He has never come here.	لم يأتِ إلى هنا أبدًا.					
+fr_w_deja	word	1	déjà		already	بالفعل					
+fr_w_deja#ex1	example	1	J'ai déjà fini mon travail.		I've already finished my work.	أنهيت عملي بالفعل.					
+fr_w_deja#ex2	example	1	Il est déjà tard.		It's already late.	الوقت متأخر بالفعل.					
+fr_w_encore	word	1	encore		again; still; more	مرة أخرى؛ ما زال؛ المزيد					
+fr_w_encore#ex1	example	1	Je voudrais encore du thé.		I'd like some more tea.	أودّ المزيد من الشاي.					
+fr_w_encore#ex2	example	1	Il pleut encore aujourd'hui.		It's raining again today.	ما زالت تمطر اليوم.					
+fr_w_apres	word	1	après		after	بعد					
+fr_w_apres#ex1	example	1	Je t'appelle après le dîner.		I'll call you after dinner.	سأتصل بك بعد العشاء.					
+fr_w_apres#ex2	example	1	Après le travail, je rentre à la maison.		After work, I go home.	بعد العمل أعود إلى البيت.					
+fr_w_avant	word	1	avant		before	قبل					
+fr_w_avant#ex1	example	1	Je mange avant de partir.		I eat before leaving.	آكل قبل أن أغادر.					
+fr_w_avant#ex2	example	1	Avant, j'habitais dans une autre ville.		I used to live in another town.	سابقًا كنت أسكن في مدينة أخرى.					
+fr_w_chez	word	1	chez		at (someone's place)	عند، في بيت					
+fr_w_chez#ex1	example	1	Viens chez moi ce soir.		Come to my place this evening.	تعال إلى بيتي هذا المساء.					
+fr_w_chez#ex2	example	1	Je suis chez le médecin.		I'm at the doctor's.	أنا عند الطبيب.					
+fr_w_sans	word	1	sans		without	بدون					
+fr_w_sans#ex1	example	1	Je ne peux pas vivre sans café.		I can't live without coffee.	لا أستطيع العيش بدون قهوة.					
+fr_w_sans#ex2	example	1	Il est parti sans son téléphone.		He left without his phone.	غادر بدون هاتفه.					
+fr_w_sous	word	1	sous		under	تحت					
+fr_w_sous#ex1	example	1	Le chat est sous la table.		The cat is under the table.	القطة تحت الطاولة.					
+fr_w_sous#ex2	example	1	J'ai trouvé mon livre sous le lit.		I found my book under the bed.	وجدت كتابي تحت السرير.					
+fr_w_entre	word	1	entre		between	بين					
+fr_w_entre#ex1	example	1	Le magasin est entre l'école et ma maison.		The shop is between the school and my house.	المتجر بين المدرسة وبيتي.					
+fr_w_entre#ex2	example	1	Il y a un problème entre eux.		There's a problem between them.	هناك مشكلة بينهم.					
+fr_w_depuis	word	1	depuis		since, for	منذ					
+fr_w_depuis#ex1	example	1	J'habite ici depuis deux ans.		I've lived here for two years.	أسكن هنا منذ سنتين.					
+fr_w_depuis#ex2	example	1	Je t'attends depuis une heure.		I've been waiting for you for an hour.	أنتظرك منذ ساعة.					
+fr_w_parce_que	word	1	parce que		because	لأنّ					
+fr_w_parce_que#ex1	example	1	Je mange parce que j'ai faim.		I'm eating because I'm hungry.	آكل لأنني جائع.					
+fr_w_parce_que#ex2	example	1	Je ne viens pas parce que je suis malade.		I'm not coming because I'm ill.	لن آتي لأنني مريض.					
+fr_w_pourquoi	word	1	pourquoi		why	لماذا					
+fr_w_pourquoi#ex1	example	1	Pourquoi tu es triste ?		Why are you sad?	لماذا أنت حزين؟					
+fr_w_pourquoi#ex2	example	1	Pourquoi il ne vient pas ?		Why isn't he coming?	لماذا لا يأتي؟					
+fr_w_combien	word	1	combien		how much, how many	كم					
+fr_w_combien#ex1	example	1	C'est combien, ce livre ?		How much is this book?	بكم هذا الكتاب؟					
+fr_w_combien#ex2	example	1	Combien d'enfants avez-vous ?		How many children do you have?	كم طفلًا لديك؟					
+fr_w_quel	word	1	quel		which, what	أيّ، ما					
+fr_w_quel#ex1	example	1	Quel est ton nom ?		What is your name?	ما اسمك؟					
+fr_w_quel#ex2	example	1	Quelle couleur est ta voiture ?		What colour is your car?	ما لون سيارتك؟					
+fr_w_beaucoup	word	1	beaucoup		a lot, much	كثيرًا					
+fr_w_beaucoup#ex1	example	1	J'aime beaucoup la musique.		I really like music.	أحب الموسيقى كثيرًا.					
+fr_w_beaucoup#ex2	example	1	Il y a beaucoup de monde ici.		There are a lot of people here.	هناك ناس كثيرون هنا.					
+fr_w_peu	word	1	peu		little, few; un peu = a bit	قليل					
+fr_w_peu#ex1	example	1	J'ai peu de temps.		I have little time.	لديّ وقت قليل.					
+fr_w_peu#ex2	example	1	Je voudrais un peu d'eau.		I'd like a little water.	أودّ قليلًا من الماء.					
+fr_w_trop	word	1	trop		too, too much	أكثر من اللازم					
+fr_w_trop#ex1	example	1	Il fait trop chaud aujourd'hui.		It's too hot today.	الجو حار أكثر من اللازم اليوم.					
+fr_w_trop#ex2	example	1	J'ai trop mangé ce soir.		I ate too much this evening.	أكلت كثيرًا هذا المساء.					
+fr_w_assez	word	1	assez		enough; quite	كافٍ؛ إلى حدّ ما					
+fr_w_assez#ex1	example	1	Nous avons assez de pain.		We have enough bread.	لدينا ما يكفي من الخبز.					
+fr_w_assez#ex2	example	1	Tu parles assez bien.		You speak quite well.	تتكلم جيدًا بما فيه الكفاية.					
+fr_w_chose	word	1	chose		thing	شيء					
+fr_w_chose#ex1	example	1	J'ai beaucoup de choses à faire.		I have a lot of things to do.	لديّ أشياء كثيرة لأفعلها.					
+fr_w_chose#ex2	example	1	Mets tes choses sur le lit.		Put your things on the bed.	ضع أشياءك على السرير.					
+fr_w_homme	word	1	homme		man	رجل					
+fr_w_homme#ex1	example	1	Cet homme est mon professeur.		This man is my teacher.	هذا الرجل معلّمي.					
+fr_w_homme#ex2	example	1	Un homme t'attend à la porte.		A man is waiting for you at the door.	رجل ينتظرك عند الباب.					
+fr_w_femme	word	1	femme		woman; wife	امرأة؛ زوجة					
+fr_w_femme#ex1	example	1	Cette femme est médecin.		This woman is a doctor.	هذه المرأة طبيبة.					
+fr_w_femme#ex2	example	1	Ma femme travaille dans un magasin.		My wife works in a shop.	تعمل زوجتي في متجر.					
+fr_w_enfant	word	1	enfant		child	طفل					
+fr_w_enfant#ex1	example	1	Les enfants sont à l'école.		The children are at school.	الأطفال في المدرسة.					
+fr_w_enfant#ex2	example	1	Ils ont trois enfants.		They have three children.	لديهم ثلاثة أطفال.					
+fr_w_fille	word	1	fille		girl; daughter	بنت؛ ابنة					
+fr_w_fille#ex1	example	1	Ma fille est très grande.		My daughter is very tall.	ابنتي طويلة جدًا.					
+fr_w_fille#ex2	example	1	Les filles jouent ensemble.		The girls are playing together.	تلعب البنات معًا.					
+fr_w_garcon	word	1	garçon		boy	ولد					
+fr_w_garcon#ex1	example	1	Le garçon joue avec le chien.		The boy is playing with the dog.	يلعب الولد مع الكلب.					
+fr_w_garcon#ex2	example	1	Ils ont deux garçons.		They have two boys.	لديهم ولدان.					
+fr_w_pere	word	1	père		father	أب					
+fr_w_pere#ex1	example	1	Mon père est médecin.		My father is a doctor.	أبي طبيب.					
+fr_w_pere#ex2	example	1	Papa, tu peux m'aider ?		Dad, can you help me?	أبي، هل يمكنك مساعدتي؟					
+fr_w_mere	word	1	mère		mother	أم					
+fr_w_mere#ex1	example	1	Ma mère cuisine très bien.		My mother cooks very well.	تطبخ أمي جيدًا جدًا.					
+fr_w_mere#ex2	example	1	Maman, j'ai très faim.		Mum, I'm very hungry.	أمي، أنا جائع جدًا.					
+fr_w_frere	word	1	frère		brother	أخ					
+fr_w_frere#ex1	example	1	Mon petit frère a dix ans.		My little brother is ten.	عمر أخي الصغير عشر سنوات.					
+fr_w_frere#ex2	example	1	Je vais à la plage avec mon frère.		I'm going to the beach with my brother.	أذهب إلى الشاطئ مع أخي.					
+fr_w_soeur	word	1	sœur		sister	أخت					
+fr_w_soeur#ex1	example	1	Ma sœur est professeur.		My sister is a teacher.	أختي معلّمة.					
+fr_w_soeur#ex2	example	1	Ma sœur a un chat.		My sister has a cat.	لدى أختي قطة.					
+fr_w_ami	word	1	ami		friend	صديق					
+fr_w_ami#ex1	example	1	C'est mon meilleur ami.		He's my best friend.	إنه أعزّ أصدقائي.					
+fr_w_ami#ex2	example	1	Je sors avec mes amies ce soir.		I'm going out with my friends tonight.	أخرج مع صديقاتي هذا المساء.					
+fr_w_famille	word	1	famille		family	عائلة					
+fr_w_famille#ex1	example	1	Ma famille est très grande.		My family is very big.	عائلتي كبيرة جدًا.					
+fr_w_famille#ex2	example	1	On mange en famille le soir.		We eat together as a family in the evening.	نأكل مع العائلة في المساء.					
+fr_w_fils	word	1	fils		son	ابن					
+fr_w_fils#ex1	example	1	Mon fils va à l'école.		My son goes to school.	يذهب ابني إلى المدرسة.					
+fr_w_fils#ex2	example	1	Son fils est médecin.		Her son is a doctor.	ابنها طبيب.					
+fr_w_mari	word	1	mari		husband	زوج					
+fr_w_mari#ex1	example	1	Mon mari est professeur.		My husband is a teacher.	زوجي معلّم.					
+fr_w_mari#ex2	example	1	Son mari cuisine le soir.		Her husband cooks in the evening.	زوجها يطبخ في المساء.					
+fr_w_bebe	word	1	bébé		baby	طفل رضيع					
+fr_w_bebe#ex1	example	1	Le bébé dort beaucoup.		The baby sleeps a lot.	ينام الطفل كثيرًا.					
+fr_w_bebe#ex2	example	1	Ils ont un nouveau bébé.		They have a new baby.	لديهم طفل جديد.					
+fr_w_gens	word	1	gens		people	ناس					
+fr_w_gens#ex1	example	1	Il y a beaucoup de gens dans la rue.		There are a lot of people in the street.	هناك ناس كثيرون في الشارع.					
+fr_w_gens#ex2	example	1	Les gens de cette ville sont heureux.		The people in this town are happy.	الناس في هذه المدينة سعداء.					
+fr_w_monsieur	word	1	monsieur		sir, Mr, gentleman	سيد					
+fr_w_monsieur#ex1	example	1	Bonjour monsieur, vous allez bien ?		Hello, sir, are you well?	مرحبًا يا سيدي، هل أنت بخير؟					
+fr_w_monsieur#ex2	example	1	Ce monsieur cherche le magasin.		This gentleman is looking for the shop.	هذا السيد يبحث عن المتجر.					
+fr_w_madame	word	1	madame		madam, Mrs	سيدة					
+fr_w_madame#ex1	example	1	Merci beaucoup, madame, à demain.		Thank you very much, madam, see you tomorrow.	شكرًا جزيلًا يا سيدتي، إلى الغد.					
+fr_w_madame#ex2	example	1	Madame, votre café est prêt.		Madam, your coffee is ready.	سيدتي، قهوتك جاهزة.					
+fr_w_nom	word	1	nom		name	اسم					
+fr_w_nom#ex1	example	1	Mon nom est sur la porte.		My name is on the door.	اسمي على الباب.					
+fr_w_nom#ex2	example	1	Quel est le nom de ton chien ?		What's your dog's name?	ما اسم كلبك؟					
+fr_w_maison	word	1	maison		house, home	بيت					
+fr_w_maison#ex1	example	1	On va à la maison.		Let's go home.	لنذهب إلى البيت.					
+fr_w_maison#ex2	example	1	Sa maison a trois chambres.		His house has three bedrooms.	في بيته ثلاث غرف نوم.					
+fr_w_chambre	word	1	chambre		bedroom, room	غرفة نوم					
+fr_w_chambre#ex1	example	1	Je dors dans ma chambre.		I sleep in my room.	أنام في غرفتي.					
+fr_w_chambre#ex2	example	1	La chambre a une grande fenêtre.		The room has a big window.	في الغرفة نافذة كبيرة.					
+fr_w_cuisine	word	1	cuisine		kitchen; cooking	مطبخ؛ طبخ					
+fr_w_cuisine#ex1	example	1	La cuisine est petite.		The kitchen is small.	المطبخ صغير.					
+fr_w_cuisine#ex2	example	1	On mange dans la cuisine.		We eat in the kitchen.	نأكل في المطبخ.					
+fr_w_porte	word	1	porte		door	باب					
+fr_w_porte#ex1	example	1	Ferme la porte, s'il te plaît.		Close the door, please.	أغلق الباب من فضلك.					
+fr_w_porte#ex2	example	1	Quelqu'un est à la porte.		Someone is at the door.	هناك شخص عند الباب.					
+fr_w_table	word	1	table		table	طاولة					
+fr_w_table#ex1	example	1	Mets le pain sur la table.		Put the bread on the table.	ضع الخبز على الطاولة.					
+fr_w_table#ex2	example	1	Nous voulons une plus grande table.		We want a bigger table.	نريد طاولة أكبر.					
+fr_w_lit	word	1	lit		bed	سرير					
+fr_w_lit#ex1	example	1	Le chat dort sur mon lit.		The cat sleeps on my bed.	تنام القطة على سريري.					
+fr_w_lit#ex2	example	1	Je vais au lit.		I'm going to bed.	سأذهب إلى السرير.					
+fr_w_fenetre	word	1	fenêtre		window	نافذة					
+fr_w_fenetre#ex1	example	1	Ouvre la fenêtre, s'il te plaît.		Open the window, please.	افتح النافذة من فضلك.					
+fr_w_fenetre#ex2	example	1	La fenêtre est ouverte.		The window is open.	النافذة مفتوحة.					
+fr_w_eau	word	1	eau		water	ماء					
+fr_w_eau#ex1	example	1	Je bois beaucoup d'eau.		I drink a lot of water.	أشرب ماءً كثيرًا.					
+fr_w_eau#ex2	example	1	L'eau est très froide.		The water is very cold.	الماء بارد جدًا.					
+fr_w_cafe	word	1	café		coffee; café	قهوة؛ مقهى					
+fr_w_cafe#ex1	example	1	Un café, s'il vous plaît.		A coffee, please.	قهوة من فضلك.					
+fr_w_cafe#ex2	example	1	Je bois mon café sans lait.		I drink my coffee without milk.	أشرب قهوتي بدون حليب.					
+fr_w_pain	word	1	pain		bread	خبز					
+fr_w_pain#ex1	example	1	J'achète du pain le matin.		I buy bread in the morning.	أشتري الخبز في الصباح.					
+fr_w_pain#ex2	example	1	Ce pain est très bon.		This bread is very good.	هذا الخبز جيد جدًا.					
+fr_w_the	word	1	thé		tea	شاي					
+fr_w_the#ex1	example	1	Tu veux un thé ?		Would you like a tea?	هل تريد شايًا؟					
+fr_w_the#ex2	example	1	Ma mère boit du thé le soir.		My mother drinks tea in the evening.	تشرب أمي الشاي في المساء.					
+fr_w_lait	word	1	lait		milk	حليب					
+fr_w_lait#ex1	example	1	Je bois du lait le matin.		I drink milk in the morning.	أشرب الحليب في الصباح.					
+fr_w_lait#ex2	example	1	Il n'y a plus de lait.		There's no more milk.	لم يعد هناك حليب.					
+fr_w_repas	word	1	repas		meal	وجبة					
+fr_w_repas#ex1	example	1	Le repas est prêt.		The meal is ready.	الوجبة جاهزة.					
+fr_w_repas#ex2	example	1	Merci pour ce bon repas.		Thank you for this good meal.	شكرًا على هذه الوجبة الجيدة.					
+fr_w_diner	word	1	dîner		dinner	عشاء					
+fr_w_diner#ex1	example	1	On mange le dîner ensemble ?		Shall we have dinner together?	هل نتناول العشاء معًا؟					
+fr_w_diner#ex2	example	1	Qu'est-ce qu'il y a pour le dîner ?		What's for dinner?	ماذا يوجد للعشاء؟					
+fr_w_petit_dejeuner	word	1	petit-déjeuner		breakfast	فطور					
+fr_w_petit_dejeuner#ex1	example	1	Je prends le petit-déjeuner à la maison.		I have breakfast at home.	أتناول الفطور في البيت.					
+fr_w_petit_dejeuner#ex2	example	1	Le petit-déjeuner est sur la table.		Breakfast is on the table.	الفطور على الطاولة.					
+fr_w_dejeuner	word	1	déjeuner		lunch	غداء					
+fr_w_dejeuner#ex1	example	1	Je prends le déjeuner au travail.		I have lunch at work.	أتناول الغداء في العمل.					
+fr_w_dejeuner#ex2	example	1	Après le déjeuner, je dors un peu.		After lunch I sleep a little.	بعد الغداء أنام قليلًا.					
+fr_w_ville	word	1	ville		town, city	مدينة					
+fr_w_ville#ex1	example	1	J'aime beaucoup cette ville.		I really like this town.	أحب هذه المدينة كثيرًا.					
+fr_w_ville#ex2	example	1	La ville est très belle le soir.		The town is very beautiful in the evening.	المدينة جميلة جدًا في المساء.					
+fr_w_pays	word	1	pays		country	بلد					
+fr_w_pays#ex1	example	1	C'est un très beau pays.		It's a very beautiful country.	إنه بلد جميل جدًا.					
+fr_w_pays#ex2	example	1	Tu viens de quel pays ?		What country are you from?	من أي بلد أنت؟					
+fr_w_rue	word	1	rue		street	شارع					
+fr_w_rue#ex1	example	1	J'habite dans cette rue.		I live on this street.	أسكن في هذا الشارع.					
+fr_w_rue#ex2	example	1	Ne joue pas dans la rue !		Don't play in the street!	لا تلعب في الشارع!					
+fr_w_magasin	word	1	magasin		shop	متجر					
+fr_w_magasin#ex1	example	1	Le magasin est près de chez moi.		The shop is near my place.	المتجر قريب من بيتي.					
+fr_w_magasin#ex2	example	1	Je vais au magasin pour acheter du lait.		I'm going to the shop to buy milk.	أذهب إلى المتجر لشراء الحليب.					
+fr_w_ecole	word	1	école		school	مدرسة					
+fr_w_ecole#ex1	example	1	Mes enfants vont à l'école.		My children go to school.	يذهب أطفالي إلى المدرسة.					
+fr_w_ecole#ex2	example	1	Mon école était très grande.		My school was very big.	كانت مدرستي كبيرة جدًا.					
+fr_w_travail	word	1	travail		work, job	عمل					
+fr_w_travail#ex1	example	1	J'ai beaucoup de travail aujourd'hui.		I have a lot of work today.	لديّ عمل كثير اليوم.					
+fr_w_travail#ex2	example	1	Je rentre tard du travail.		I get home late from work.	أعود متأخرًا من العمل.					
+fr_w_argent	word	1	argent		money	مال					
+fr_w_argent#ex1	example	1	Je n'ai pas beaucoup d'argent.		I don't have much money.	ليس لديّ مال كثير.					
+fr_w_argent#ex2	example	1	Mon père m'a donné de l'argent.		My father gave me some money.	أعطاني أبي مالًا.					
+fr_w_voiture	word	1	voiture		car	سيارة					
+fr_w_voiture#ex1	example	1	Ma voiture est dans la rue.		My car is in the street.	سيارتي في الشارع.					
+fr_w_voiture#ex2	example	1	On va à la plage en voiture.		We're going to the beach by car.	نذهب إلى الشاطئ بالسيارة.					
+fr_w_bus	word	1	bus		bus	حافلة					
+fr_w_bus#ex1	example	1	Je prends le bus tous les jours.		I take the bus every day.	أركب الحافلة كل يوم.					
+fr_w_bus#ex2	example	1	Le bus arrive dans dix minutes.		The bus arrives in ten minutes.	تصل الحافلة بعد عشر دقائق.					
+fr_w_train	word	1	train		train	قطار					
+fr_w_train#ex1	example	1	Le train est très long.		The train is very long.	القطار طويل جدًا.					
+fr_w_train#ex2	example	1	J'aime lire dans le train.		I like reading on the train.	أحب القراءة في القطار.					
+fr_w_telephone	word	1	téléphone		phone	هاتف					
+fr_w_telephone#ex1	example	1	Où est mon téléphone ?		Where is my phone?	أين هاتفي؟					
+fr_w_telephone#ex2	example	1	Je parle à ma mère au téléphone.		I talk to my mother on the phone.	أتحدث مع أمي بالهاتف.					
+fr_w_livre	word	1	livre		book	كتاب					
+fr_w_livre#ex1	example	1	Ce livre est pour toi.		This book is for you.	هذا الكتاب لك.					
+fr_w_livre#ex2	example	1	Je lis beaucoup de livres.		I read a lot of books.	أقرأ كتبًا كثيرة.					
+fr_w_mot	word	1	mot		word	كلمة					
+fr_w_mot#ex1	example	1	Je ne connais pas ce mot.		I don't know this word.	لا أعرف هذه الكلمة.					
+fr_w_mot#ex2	example	1	Écris les nouveaux mots.		Write the new words.	اكتب الكلمات الجديدة.					
+fr_w_question	word	1	question		question	سؤال					
+fr_w_question#ex1	example	1	J'ai une question pour vous.		I have a question for you.	لديّ سؤال لحضرتك.					
+fr_w_question#ex2	example	1	C'est une bonne question.		It's a good question.	إنه سؤال جيد.					
+fr_w_probleme	word	1	problème		problem	مشكلة					
+fr_w_probleme#ex1	example	1	Il n'y a pas de problème.		There's no problem.	لا توجد مشكلة.					
+fr_w_probleme#ex2	example	1	J'ai un problème avec ma voiture.		I have a problem with my car.	لديّ مشكلة في سيارتي.					
+fr_w_idee	word	1	idée		idea	فكرة					
+fr_w_idee#ex1	example	1	C'est une très bonne idée.		It's a very good idea.	إنها فكرة جيدة جدًا.					
+fr_w_idee#ex2	example	1	Tu as une meilleure idée ?		Do you have a better idea?	هل لديك فكرة أفضل؟					
+fr_w_histoire	word	1	histoire		story; history	قصة؛ تاريخ					
+fr_w_histoire#ex1	example	1	J'aime beaucoup cette histoire.		I really like this story.	تعجبني هذه القصة كثيرًا.					
+fr_w_histoire#ex2	example	1	C'est une longue histoire.		It's a long story.	إنها قصة طويلة.					
+fr_w_jeu	word	1	jeu		game	لعبة					
+fr_w_jeu#ex1	example	1	Ce jeu est très facile.		This game is very easy.	هذه اللعبة سهلة جدًا.					
+fr_w_jeu#ex2	example	1	Les enfants ont beaucoup de jeux.		The children have lots of games.	لدى الأطفال ألعاب كثيرة.					
+fr_w_musique	word	1	musique		music	موسيقى					
+fr_w_musique#ex1	example	1	J'écoute de la musique tous les jours.		I listen to music every day.	أستمع إلى الموسيقى كل يوم.					
+fr_w_musique#ex2	example	1	Tu aimes cette musique ?		Do you like this music?	هل تعجبك هذه الموسيقى؟					
+fr_w_film	word	1	film		film	فيلم					
+fr_w_film#ex1	example	1	On va voir un film ce soir ?		Shall we see a film tonight?	هل نشاهد فيلمًا هذا المساء؟					
+fr_w_film#ex2	example	1	C'est un bon film.		It's a good film.	إنه فيلم جيد.					
+fr_w_monde	word	1	monde		world; tout le monde = everyone	عالم؛ tout le monde = الجميع					
+fr_w_monde#ex1	example	1	Je veux voir le monde.		I want to see the world.	أريد أن أرى العالم.					
+fr_w_monde#ex2	example	1	Tout le monde est là.		Everyone is here.	الجميع هنا.					
+fr_w_vie	word	1	vie		life	حياة					
+fr_w_vie#ex1	example	1	La vie ici est belle.		Life here is beautiful.	الحياة هنا جميلة.					
+fr_w_vie#ex2	example	1	J'ai une bonne vie.		I have a good life.	لديّ حياة جيدة.					
+fr_w_tete	word	1	tête		head	رأس					
+fr_w_tete#ex1	example	1	Ma tête est très chaude.		My head is very hot.	رأسي ساخن جدًا.					
+fr_w_tete#ex2	example	1	Mets la main sur ta tête.		Put your hand on your head.	ضع يدك على رأسك.					
+fr_w_main	word	1	main		hand	يد					
+fr_w_main#ex1	example	1	Lave tes mains, s'il te plaît.		Wash your hands, please.	اغسل يديك من فضلك.					
+fr_w_main#ex2	example	1	J'ai quelque chose dans la main.		I have something in my hand.	في يدي شيء.					
+fr_w_oeil	word	1	œil		eye	عين					
+fr_w_oeil#ex1	example	1	Ferme les yeux, s'il te plaît.		Close your eyes, please.	أغمض عينيك من فضلك.					
+fr_w_oeil#ex2	example	1	Elle a les yeux noirs.		She has dark eyes.	عيناها سوداوان.					
+fr_w_chien	word	1	chien		dog	كلب					
+fr_w_chien#ex1	example	1	Mon chien est très grand.		My dog is very big.	كلبي كبير جدًا.					
+fr_w_chien#ex2	example	1	Le chien dort près de la porte.		The dog sleeps near the door.	ينام الكلب قرب الباب.					
+fr_w_chat	word	1	chat		cat	قطة					
+fr_w_chat#ex1	example	1	Mon chat dort beaucoup.		My cat sleeps a lot.	قطتي تنام كثيرًا.					
+fr_w_chat#ex2	example	1	Le chat mange dans la cuisine.		The cat eats in the kitchen.	تأكل القطة في المطبخ.					
+fr_w_soleil	word	1	soleil		sun	شمس					
+fr_w_soleil#ex1	example	1	Il y a du soleil aujourd'hui.		It's sunny today.	الجو مشمس اليوم.					
+fr_w_soleil#ex2	example	1	J'aime être au soleil.		I like being in the sun.	أحب أن أكون في الشمس.					
+fr_w_pluie	word	1	pluie		rain	مطر					
+fr_w_pluie#ex1	example	1	Je n'aime pas la pluie.		I don't like the rain.	لا أحب المطر.					
+fr_w_pluie#ex2	example	1	Après la pluie, il fait beau.		After the rain, the weather is nice.	بعد المطر يصبح الجو جميلًا.					
+fr_w_medecin	word	1	médecin		doctor	طبيب					
+fr_w_medecin#ex1	example	1	Je dois aller chez le médecin.		I have to go to the doctor's.	يجب أن أذهب إلى الطبيب.					
+fr_w_medecin#ex2	example	1	Ma sœur est médecin.		My sister is a doctor.	أختي طبيبة.					
+fr_w_professeur	word	1	professeur		teacher	معلّم					
+fr_w_professeur#ex1	example	1	Mon professeur parle très bien.		My teacher speaks very well.	معلّمي يتكلم جيدًا جدًا.					
+fr_w_professeur#ex2	example	1	La prof nous aide beaucoup.		The teacher helps us a lot.	المعلّمة تساعدنا كثيرًا.					
+fr_w_anniversaire	word	1	anniversaire		birthday	عيد ميلاد					
+fr_w_anniversaire#ex1	example	1	Bon anniversaire, mon ami !		Happy birthday, my friend!	عيد ميلاد سعيد يا صديقي!					
+fr_w_anniversaire#ex2	example	1	C'est l'anniversaire de ma mère demain.		It's my mother's birthday tomorrow.	غدًا عيد ميلاد أمي.					
+fr_w_fete	word	1	fête		party; celebration	حفلة؛ عيد					
+fr_w_fete#ex1	example	1	Il y a une fête chez moi.		There's a party at my place.	هناك حفلة في بيتي.					
+fr_w_fete#ex2	example	1	La fête était très bien.		The party was very good.	كانت الحفلة جيدة جدًا.					
+fr_w_place	word	1	place		seat, room, space; square	مقعد، مكان؛ ساحة					
+fr_w_place#ex1	example	1	Il y a une place pour toi.		There's a seat for you.	هناك مكان لك.					
+fr_w_place#ex2	example	1	Il n'y a pas de place pour moi.		There's no room for me.	لا يوجد مكان لي.					
+fr_w_chemin	word	1	chemin		way, path	طريق					
+fr_w_chemin#ex1	example	1	C'est le bon chemin pour la plage ?		Is this the right way to the beach?	هل هذا هو الطريق الصحيح إلى الشاطئ؟					
+fr_w_chemin#ex2	example	1	Il n'y a pas d'autre chemin.		There's no other way.	لا يوجد طريق آخر.					
+fr_w_fin	word	1	fin		end	نهاية					
+fr_w_fin#ex1	example	1	Je n'ai pas aimé la fin du film.		I didn't like the end of the film.	لم تعجبني نهاية الفيلم.					
+fr_w_fin#ex2	example	1	À la fin de la semaine, je rentre.		At the end of the week, I'm going home.	في نهاية الأسبوع أعود.					
+fr_w_week_end	word	1	week-end		weekend	عطلة نهاية الأسبوع					
+fr_w_week_end#ex1	example	1	Bon week-end à tous !		Have a good weekend, everyone!	عطلة سعيدة للجميع!					
+fr_w_week_end#ex2	example	1	Qu'est-ce que tu fais ce week-end ?		What are you doing this weekend?	ماذا تفعل في عطلة نهاية هذا الأسبوع؟					
+fr_w_mer	word	1	mer		sea	بحر					
+fr_w_mer#ex1	example	1	La mer est très froide aujourd'hui.		The sea is very cold today.	البحر بارد جدًا اليوم.					
+fr_w_mer#ex2	example	1	Nous habitons près de la mer.		We live near the sea.	نسكن قرب البحر.					
+fr_w_plage	word	1	plage		beach	شاطئ					
+fr_w_plage#ex1	example	1	On va à la plage demain.		We're going to the beach tomorrow.	سنذهب إلى الشاطئ غدًا.					
+fr_w_plage#ex2	example	1	J'aime marcher sur la plage.		I like walking on the beach.	أحب المشي على الشاطئ.					
+fr_w_cadeau	word	1	cadeau		present, gift	هدية					
+fr_w_cadeau#ex1	example	1	Merci pour le cadeau.		Thank you for the present.	شكرًا على الهدية.					
+fr_w_cadeau#ex2	example	1	J'ai acheté un cadeau pour ma mère.		I bought a present for my mother.	اشتريت هدية لأمي.					
+fr_w_vetement	word	1	vêtement		piece of clothing; vêtements = clothes	ثوب؛ vêtements = ملابس					
+fr_w_vetement#ex1	example	1	Je veux de nouveaux vêtements.		I want new clothes.	أريد ملابس جديدة.					
+fr_w_vetement#ex2	example	1	Mets tes vêtements sur le lit.		Put your clothes on the bed.	ضع ملابسك على السرير.					
+fr_w_couleur	word	1	couleur		colour	لون					
+fr_w_couleur#ex1	example	1	Tu aimes cette couleur ?		Do you like this colour?	هل يعجبك هذا اللون؟					
+fr_w_couleur#ex2	example	1	La voiture est de quelle couleur ?		What colour is the car?	ما لون السيارة؟					
+fr_w_classe	word	1	classe		class	صف					
+fr_w_classe#ex1	example	1	Il y a dix enfants dans ma classe.		There are ten children in my class.	هناك عشرة أطفال في صفي.					
+fr_w_classe#ex2	example	1	Ma classe est très grande.		My class is very big.	صفي كبير جدًا.					
+fr_w_examen	word	1	examen		exam	امتحان					
+fr_w_examen#ex1	example	1	Demain, j'ai un examen.		I have an exam tomorrow.	غدًا لديّ امتحان.					
+fr_w_examen#ex2	example	1	L'examen était très facile.		The exam was very easy.	كان الامتحان سهلًا جدًا.					
+fr_w_voyage	word	1	voyage		trip, journey	رحلة					
+fr_w_voyage#ex1	example	1	Bon voyage et à bientôt !		Have a good trip and see you soon!	رحلة سعيدة وإلى اللقاء قريبًا!					
+fr_w_voyage#ex2	example	1	Le voyage était très long.		The trip was very long.	كانت الرحلة طويلة جدًا.					
+fr_w_prendre	word	1	prendre		to take; to have (food, drink)	يأخذ؛ يتناول					
+fr_w_prendre#ex1	example	1	Je prends le bus pour aller au travail.		I take the bus to go to work.	أركب الحافلة للذهاب إلى العمل.					
+fr_w_prendre#ex2	example	1	Tu prends un café avec moi ?		Will you have a coffee with me?	هل تشرب قهوة معي؟					
+fr_w_mettre	word	1	mettre		to put	يضع					
+fr_w_mettre#ex1	example	1	Mets le livre sur la table.		Put the book on the table.	ضع الكتاب على الطاولة.					
+fr_w_mettre#ex2	example	1	Où as-tu mis mon téléphone ?		Where did you put my phone?	أين وضعت هاتفي؟					
+fr_w_donner	word	1	donner		to give	يعطي					
+fr_w_donner#ex1	example	1	Tu me donnes le livre, s'il te plaît ?		Will you give me the book, please?	هل تعطيني الكتاب من فضلك؟					
+fr_w_donner#ex2	example	1	Elle m'a donné un cadeau.		She gave me a present.	أعطتني هدية.					
+fr_w_parler	word	1	parler		to speak, to talk	يتكلم					
+fr_w_parler#ex1	example	1	Je peux parler avec vous ?		May I speak with you?	هل يمكنني التحدث معك؟					
+fr_w_parler#ex2	example	1	Nous parlons souvent au téléphone.		We often talk on the phone.	نتحدث كثيرًا بالهاتف.					
+fr_w_aimer	word	1	aimer		to like, to love	يحب					
+fr_w_aimer#ex1	example	1	J'aime beaucoup ce film.		I really like this film.	يعجبني هذا الفيلم كثيرًا.					
+fr_w_aimer#ex2	example	1	Elle aime les chats.		She likes cats.	هي تحب القطط.					
+fr_w_passer	word	1	passer		to pass; to spend (time)	يمرّ؛ يقضي					
+fr_w_passer#ex1	example	1	Nous avons passé le week-end à la plage.		We spent the weekend at the beach.	قضينا عطلة نهاية الأسبوع على الشاطئ.					
+fr_w_passer#ex2	example	1	Le temps passe très vite.		Time goes very fast.	يمر الوقت بسرعة كبيرة.					
+fr_w_trouver	word	1	trouver		to find	يجد					
+fr_w_trouver#ex1	example	1	Je ne trouve pas mes livres.		I can't find my books.	لا أجد كتبي.					
+fr_w_trouver#ex2	example	1	J'ai trouvé un bon travail.		I found a good job.	وجدت عملًا جيدًا.					
+fr_w_penser	word	1	penser		to think	يفكر					
+fr_w_penser#ex1	example	1	Qu'est-ce que tu penses de cette idée ?		What do you think of this idea?	ما رأيك في هذه الفكرة؟					
+fr_w_penser#ex2	example	1	Je pense à toi tous les jours.		I think of you every day.	أفكر فيك كل يوم.					
+fr_w_croire	word	1	croire		to believe, to think	يعتقد، يصدّق					
+fr_w_croire#ex1	example	1	Je crois qu'il est malade.		I think he's ill.	أعتقد أنه مريض.					
+fr_w_croire#ex2	example	1	Je ne crois pas son histoire.		I don't believe his story.	لا أصدّق قصته.					
+fr_w_attendre	word	1	attendre		to wait (for)	ينتظر					
+fr_w_attendre#ex1	example	1	Attends-moi, s'il te plaît.		Wait for me, please.	انتظرني من فضلك.					
+fr_w_attendre#ex2	example	1	J'attends le bus le matin.		I wait for the bus in the morning.	أنتظر الحافلة في الصباح.					
+fr_w_partir	word	1	partir		to leave	يغادر					
+fr_w_partir#ex1	example	1	Je pars en voyage demain.		I'm leaving on a trip tomorrow.	أسافر غدًا.					
+fr_w_partir#ex2	example	1	Elle est partie très tôt.		She left very early.	غادرت مبكرًا جدًا.					
+fr_w_sortir	word	1	sortir		to go out	يخرج					
+fr_w_sortir#ex1	example	1	On sort ce soir ?		Shall we go out tonight?	هل نخرج هذا المساء؟					
+fr_w_sortir#ex2	example	1	Hier, nous sommes sortis avec nos amis.		Yesterday we went out with our friends.	أمس خرجنا مع أصدقائنا.					
+fr_w_manger	word	1	manger		to eat	يأكل					
+fr_w_manger#ex1	example	1	Qu'est-ce que tu veux manger ?		What do you want to eat?	ماذا تريد أن تأكل؟					
+fr_w_manger#ex2	example	1	Les enfants mangent beaucoup.		The children eat a lot.	يأكل الأطفال كثيرًا.					
+fr_w_boire	word	1	boire		to drink	يشرب					
+fr_w_boire#ex1	example	1	Tu veux boire quelque chose ?		Do you want something to drink?	هل تريد أن تشرب شيئًا؟					
+fr_w_boire#ex2	example	1	Je bois du café tous les matins.		I drink coffee every morning.	أشرب القهوة كل صباح.					
+fr_w_dormir	word	1	dormir		to sleep	ينام					
+fr_w_dormir#ex1	example	1	Le bébé dort dans sa chambre.		The baby is sleeping in his room.	ينام الطفل في غرفته.					
+fr_w_dormir#ex2	example	1	J'ai bien dormi, merci.		I slept well, thank you.	نمت جيدًا، شكرًا.					
+fr_w_lire	word	1	lire		to read	يقرأ					
+fr_w_lire#ex1	example	1	J'aime lire le soir.		I like reading in the evening.	أحب القراءة في المساء.					
+fr_w_lire#ex2	example	1	Tu peux lire ce mot ?		Can you read this word?	هل تستطيع قراءة هذه الكلمة؟					
+fr_w_ecrire	word	1	écrire		to write	يكتب					
+fr_w_ecrire#ex1	example	1	Écris ton nom ici, s'il te plaît.		Write your name here, please.	اكتب اسمك هنا من فضلك.					
+fr_w_ecrire#ex2	example	1	Ma sœur écrit des histoires.		My sister writes stories.	تكتب أختي قصصًا.					
+fr_w_travailler	word	1	travailler		to work	يعمل					
+fr_w_travailler#ex1	example	1	Mon père travaille dans un magasin.		My father works in a shop.	يعمل أبي في متجر.					
+fr_w_travailler#ex2	example	1	Aujourd'hui, je travaille à la maison.		Today I'm working at home.	اليوم أعمل في البيت.					
+fr_w_habiter	word	1	habiter		to live (somewhere)	يسكن					
+fr_w_habiter#ex1	example	1	J'habite dans une petite maison.		I live in a small house.	أسكن في بيت صغير.					
+fr_w_habiter#ex2	example	1	Ma sœur habite dans une grande ville.		My sister lives in a big city.	تسكن أختي في مدينة كبيرة.					
+fr_w_vivre	word	1	vivre		to live	يعيش					
+fr_w_vivre#ex1	example	1	On ne peut pas vivre sans eau.		You can't live without water.	لا يمكن العيش بدون ماء.					
+fr_w_vivre#ex2	example	1	Il vit seul avec son chien.		He lives alone with his dog.	يعيش وحده مع كلبه.					
+fr_w_acheter	word	1	acheter		to buy	يشتري					
+fr_w_acheter#ex1	example	1	Je veux acheter une nouvelle voiture.		I want to buy a new car.	أريد أن أشتري سيارة جديدة.					
+fr_w_acheter#ex2	example	1	J'ai acheté du pain pour le dîner.		I bought bread for dinner.	اشتريت خبزًا للعشاء.					
+fr_w_payer	word	1	payer		to pay	يدفع					
+fr_w_payer#ex1	example	1	Je peux payer maintenant ?		Can I pay now?	هل يمكنني الدفع الآن؟					
+fr_w_payer#ex2	example	1	Il a payé le repas.		He paid for the meal.	دفع ثمن الوجبة.					
+fr_w_chercher	word	1	chercher		to look for	يبحث عن					
+fr_w_chercher#ex1	example	1	Je cherche un nouveau travail.		I'm looking for a new job.	أبحث عن عمل جديد.					
+fr_w_chercher#ex2	example	1	Qu'est-ce que tu cherches ?		What are you looking for?	عمّ تبحث؟					
+fr_w_comprendre	word	1	comprendre		to understand	يفهم					
+fr_w_comprendre#ex1	example	1	Je ne comprends pas ce mot.		I don't understand this word.	لا أفهم هذه الكلمة.					
+fr_w_comprendre#ex2	example	1	Tu me comprends maintenant ?		Do you understand me now?	هل تفهمني الآن؟					
+fr_w_apprendre	word	1	apprendre		to learn	يتعلم					
+fr_w_apprendre#ex1	example	1	Je veux apprendre à cuisiner.		I want to learn to cook.	أريد أن أتعلّم الطبخ.					
+fr_w_apprendre#ex2	example	1	Les enfants apprennent beaucoup à l'école.		Children learn a lot at school.	يتعلّم الأطفال كثيرًا في المدرسة.					
+fr_w_connaitre	word	1	connaître		to know (people, places)	يعرف (شخصًا أو مكانًا)					
+fr_w_connaitre#ex1	example	1	Tu connais mon frère ?		Do you know my brother?	هل تعرف أخي؟					
+fr_w_connaitre#ex2	example	1	Je ne connais pas cette ville.		I don't know this town.	لا أعرف هذه المدينة.					
+fr_w_appeler	word	1	appeler		to call; s'appeler = to be called	يتصل؛ يُسمّى					
+fr_w_appeler#ex1	example	1	Je t'appelle ce soir.		I'll call you this evening.	سأتصل بك هذا المساء.					
+fr_w_appeler#ex2	example	1	Comment s'appelle ton chien ?		What's your dog called?	ما اسم كلبك؟					
+fr_w_demander	word	1	demander		to ask	يسأل؛ يطلب					
+fr_w_demander#ex1	example	1	Je peux te demander quelque chose ?		Can I ask you something?	هل يمكنني أن أسألك شيئًا؟					
+fr_w_demander#ex2	example	1	Demande au professeur, s'il te plaît.		Ask the teacher, please.	اسأل المعلّم من فضلك.					
+fr_w_aider	word	1	aider		to help	يساعد					
+fr_w_aider#ex1	example	1	Je peux vous aider ?		Can I help you?	هل يمكنني مساعدتك؟					
+fr_w_aider#ex2	example	1	Mon frère m'a beaucoup aidé.		My brother helped me a lot.	ساعدني أخي كثيرًا.					
+fr_w_jouer	word	1	jouer		to play	يلعب					
+fr_w_jouer#ex1	example	1	Les enfants jouent avec le chien.		The children play with the dog.	يلعب الأطفال مع الكلب.					
+fr_w_jouer#ex2	example	1	Tu veux jouer avec moi ?		Do you want to play with me?	هل تريد أن تلعب معي؟					
+fr_w_regarder	word	1	regarder		to look at, to watch	ينظر إلى، يشاهد					
+fr_w_regarder#ex1	example	1	Regarde, il pleut encore.		Look, it's raining again.	انظر، إنها تمطر مرة أخرى.					
+fr_w_regarder#ex2	example	1	J'aime regarder la mer.		I like looking at the sea.	أحب أن أنظر إلى البحر.					
+fr_w_ecouter	word	1	écouter		to listen	يستمع					
+fr_w_ecouter#ex1	example	1	J'écoute la musique dans la voiture.		I listen to music in the car.	أستمع إلى الموسيقى في السيارة.					
+fr_w_ecouter#ex2	example	1	Tu m'écoutes, s'il te plaît ?		Are you listening to me, please?	هل تستمع إليّ من فضلك؟					
+fr_w_ouvrir	word	1	ouvrir		to open	يفتح					
+fr_w_ouvrir#ex1	example	1	Ouvre la porte, s'il te plaît.		Open the door, please.	افتح الباب من فضلك.					
+fr_w_ouvrir#ex2	example	1	Le magasin est ouvert aujourd'hui.		The shop is open today.	المتجر مفتوح اليوم.					
+fr_w_fermer	word	1	fermer		to close	يُغلق					
+fr_w_fermer#ex1	example	1	Ferme la fenêtre, s'il te plaît.		Close the window, please.	أغلق النافذة من فضلك.					
+fr_w_fermer#ex2	example	1	Le magasin est fermé le soir.		The shop is closed in the evening.	المتجر مغلق في المساء.					
+fr_w_commencer	word	1	commencer		to start	يبدأ					
+fr_w_commencer#ex1	example	1	Le film commence dans dix minutes.		The film starts in ten minutes.	يبدأ الفيلم بعد عشر دقائق.					
+fr_w_commencer#ex2	example	1	J'ai commencé un nouveau travail.		I started a new job.	بدأت عملًا جديدًا.					
+fr_w_finir	word	1	finir		to finish	ينهي، ينتهي					
+fr_w_finir#ex1	example	1	Quand finit le film ?		When does the film end?	متى ينتهي الفيلم؟					
+fr_w_finir#ex2	example	1	J'ai fini mon livre hier.		I finished my book yesterday.	أنهيت كتابي أمس.					
+fr_w_arriver	word	1	arriver		to arrive	يصل					
+fr_w_arriver#ex1	example	1	Le train arrive à cinq heures.		The train arrives at five o'clock.	يصل القطار في الخامسة.					
+fr_w_arriver#ex2	example	1	Je suis arrivé tard à la maison.		I got home late.	وصلت متأخرًا إلى البيت.					
+fr_w_rester	word	1	rester		to stay; to be left	يبقى					
+fr_w_rester#ex1	example	1	Je reste à la maison aujourd'hui.		I'm staying at home today.	أبقى في البيت اليوم.					
+fr_w_rester#ex2	example	1	Il ne reste plus de pain.		There's no bread left.	لم يبقَ خبز.					
+fr_w_rentrer	word	1	rentrer		to go back home	يعود (إلى البيت)					
+fr_w_rentrer#ex1	example	1	Je rentre à la maison très tard.		I come home very late.	أعود إلى البيت متأخرًا جدًا.					
+fr_w_rentrer#ex2	example	1	Quand est-ce que tu rentres ?		When are you coming home?	متى تعود؟					
+fr_w_marcher	word	1	marcher		to walk	يمشي					
+fr_w_marcher#ex1	example	1	Je marche beaucoup tous les jours.		I walk a lot every day.	أمشي كثيرًا كل يوم.					
+fr_w_marcher#ex2	example	1	Nous avons marché sur la plage.		We walked on the beach.	مشينا على الشاطئ.					
+fr_w_courir	word	1	courir		to run	يركض					
+fr_w_courir#ex1	example	1	Je cours tous les matins.		I run every morning.	أركض كل صباح.					
+fr_w_courir#ex2	example	1	Le chien court dans la maison.		The dog runs around the house.	يركض الكلب في البيت.					
+fr_w_oublier	word	1	oublier		to forget	ينسى					
+fr_w_oublier#ex1	example	1	N'oublie pas ton téléphone.		Don't forget your phone.	لا تنسَ هاتفك.					
+fr_w_oublier#ex2	example	1	J'ai oublié son anniversaire.		I forgot his birthday.	نسيت عيد ميلاده.					
+fr_w_perdre	word	1	perdre		to lose	يُضيّع؛ يخسر					
+fr_w_perdre#ex1	example	1	J'ai perdu mon téléphone.		I lost my phone.	أضعت هاتفي.					
+fr_w_perdre#ex2	example	1	Nous avons perdu le jeu.		We lost the game.	خسرنا اللعبة.					
+fr_w_gagner	word	1	gagner		to win; to earn	يفوز؛ يكسب					
+fr_w_gagner#ex1	example	1	Je veux gagner ce jeu.		I want to win this game.	أريد أن أفوز بهذه اللعبة.					
+fr_w_gagner#ex2	example	1	Il gagne beaucoup d'argent.		He earns a lot of money.	يكسب مالًا كثيرًا.					
+fr_w_envoyer	word	1	envoyer		to send	يرسل					
+fr_w_envoyer#ex1	example	1	Je t'envoie le livre demain.		I'll send you the book tomorrow.	سأرسل لك الكتاب غدًا.					
+fr_w_envoyer#ex2	example	1	J'ai envoyé l'argent hier.		I sent the money yesterday.	أرسلت المال أمس.					
+fr_w_changer	word	1	changer		to change	يغيّر					
+fr_w_changer#ex1	example	1	Le temps change très vite.		The weather changes very quickly.	يتغيّر الطقس بسرعة كبيرة.					
+fr_w_changer#ex2	example	1	Je voudrais changer de chambre.		I'd like to change rooms.	أودّ أن أغيّر الغرفة.					
+fr_w_laver	word	1	laver		to wash	يغسل					
+fr_w_laver#ex1	example	1	Je dois laver mes vêtements.		I have to wash my clothes.	يجب أن أغسل ملابسي.					
+fr_w_laver#ex2	example	1	Lave tes mains avant de manger.		Wash your hands before eating.	اغسل يديك قبل الأكل.					
+fr_w_cuisiner	word	1	cuisiner		to cook	يطبخ					
+fr_w_cuisiner#ex1	example	1	Mon père aime cuisiner.		My father likes cooking.	يحب أبي الطبخ.					
+fr_w_cuisiner#ex2	example	1	Ce soir, je cuisine pour tout le monde.		Tonight I'm cooking for everyone.	هذا المساء أطبخ للجميع.					
+fr_w_etudier	word	1	étudier		to study	يدرس					
+fr_w_etudier#ex1	example	1	J'étudie tous les soirs.		I study every evening.	أدرس كل مساء.					
+fr_w_etudier#ex2	example	1	Elle étudie pour l'examen.		She's studying for the exam.	تذاكر للامتحان.					
+fr_w_pleuvoir	word	1	pleuvoir		to rain	تمطر					
+fr_w_pleuvoir#ex1	example	1	Il pleut beaucoup ici.		It rains a lot here.	تمطر كثيرًا هنا.					
+fr_w_pleuvoir#ex2	example	1	Il va pleuvoir demain.		It's going to rain tomorrow.	ستمطر غدًا.					
+fr_w_falloir	word	1	falloir		to be necessary (il faut = one must)	يلزم، يجب					
+fr_w_falloir#ex1	example	1	Il faut partir maintenant.		We have to leave now.	يجب أن نغادر الآن.					
+fr_w_falloir#ex2	example	1	Il faut manger un peu.		You need to eat a little.	يجب أن تأكل قليلًا.					
+fr_w_devoir	word	1	devoir		must, to have to	يجب					
+fr_w_devoir#ex1	example	1	Tu dois manger quelque chose.		You must eat something.	يجب أن تأكل شيئًا.					
+fr_w_devoir#ex2	example	1	Nous devons arriver tôt.		We must arrive early.	يجب أن نصل مبكرًا.					
+fr_w_entendre	word	1	entendre		to hear	يسمع					
+fr_w_entendre#ex1	example	1	Tu m'entends bien maintenant ?		Can you hear me well now?	هل تسمعني جيدًا الآن؟					
+fr_w_entendre#ex2	example	1	J'ai entendu un chien la nuit.		I heard a dog in the night.	سمعت كلبًا في الليل.					
+fr_w_montrer	word	1	montrer		to show	يُري					
+fr_w_montrer#ex1	example	1	Tu peux me montrer le chemin ?		Can you show me the way?	هل يمكنك أن تريني الطريق؟					
+fr_w_montrer#ex2	example	1	Elle m'a montré sa nouvelle maison.		She showed me her new house.	أرتني بيتها الجديد.					
+fr_w_chaud	word	1	chaud		hot, warm	حار، ساخن					
+fr_w_chaud#ex1	example	1	Le café est très chaud.		The coffee is very hot.	القهوة ساخنة جدًا.					
+fr_w_chaud#ex2	example	1	J'ai chaud, ouvre la fenêtre.		I'm hot, open the window.	أشعر بالحر، افتح النافذة.					
+fr_w_froid	word	1	froid		cold	بارد					
+fr_w_froid#ex1	example	1	Il fait très froid aujourd'hui.		It's very cold today.	الجو بارد جدًا اليوم.					
+fr_w_froid#ex2	example	1	Mon café est froid.		My coffee is cold.	قهوتي باردة.					
+fr_w_fatigue	word	1	fatigué		tired	متعب					
+fr_w_fatigue#ex1	example	1	Je suis fatigué après le travail.		I'm tired after work.	أنا متعب بعد العمل.					
+fr_w_fatigue#ex2	example	1	Ma mère est très fatiguée.		My mother is very tired.	أمي متعبة جدًا.					
+fr_w_content	word	1	content		happy, pleased	مسرور					
+fr_w_content#ex1	example	1	Je suis content de mon travail.		I'm happy with my work.	أنا راضٍ عن عملي.					
+fr_w_content#ex2	example	1	Les enfants sont très contents.		The children are very happy.	الأطفال مسرورون جدًا.					
+fr_w_heureux	word	1	heureux		happy	سعيد					
+fr_w_heureux#ex1	example	1	Je suis très heureux ici.		I'm very happy here.	أنا سعيد جدًا هنا.					
+fr_w_heureux#ex2	example	1	C'est une famille très heureuse.		It's a very happy family.	إنها عائلة سعيدة جدًا.					
+fr_w_triste	word	1	triste		sad	حزين					
+fr_w_triste#ex1	example	1	Je suis triste aujourd'hui.		I'm sad today.	أنا حزين اليوم.					
+fr_w_triste#ex2	example	1	C'est un film très triste.		It's a very sad film.	إنه فيلم حزين جدًا.					
+fr_w_joli	word	1	joli		pretty	جميل					
+fr_w_joli#ex1	example	1	Ta maison est très jolie.		Your house is very pretty.	بيتك جميل جدًا.					
+fr_w_joli#ex2	example	1	C'est un joli nom.		It's a pretty name.	إنه اسم جميل.					
+fr_w_facile	word	1	facile		easy	سهل					
+fr_w_facile#ex1	example	1	Cette question est facile.		This question is easy.	هذا السؤال سهل.					
+fr_w_facile#ex2	example	1	Ce n'est pas facile d'apprendre.		It's not easy to learn.	ليس من السهل التعلّم.					
+fr_w_difficile	word	1	difficile		difficult	صعب					
+fr_w_difficile#ex1	example	1	L'examen était très difficile.		The exam was very difficult.	كان الامتحان صعبًا جدًا.					
+fr_w_difficile#ex2	example	1	C'est difficile de vivre sans argent.		It's hard to live without money.	من الصعب العيش بدون مال.					
+fr_w_important	word	1	important		important	مهم					
+fr_w_important#ex1	example	1	C'est très important pour moi.		It's very important to me.	هذا مهم جدًا بالنسبة لي.					
+fr_w_important#ex2	example	1	J'ai une question importante.		I have an important question.	لديّ سؤال مهم.					
+fr_w_cher	word	1	cher		expensive; dear	غالٍ؛ عزيز					
+fr_w_cher#ex1	example	1	Cette voiture est très chère.		This car is very expensive.	هذه السيارة غالية جدًا.					
+fr_w_cher#ex2	example	1	Le pain n'est pas cher ici.		Bread isn't expensive here.	الخبز ليس غاليًا هنا.					
+fr_w_malade	word	1	malade		ill, sick	مريض					
+fr_w_malade#ex1	example	1	Je suis malade aujourd'hui.		I'm ill today.	أنا مريض اليوم.					
+fr_w_malade#ex2	example	1	Ma fille est malade.		My daughter is ill.	ابنتي مريضة.					
+fr_w_pret	word	1	prêt		ready	جاهز، مستعد					
+fr_w_pret#ex1	example	1	Le dîner est prêt.		Dinner is ready.	العشاء جاهز.					
+fr_w_pret#ex2	example	1	Tu es prêt à partir ?		Are you ready to leave?	هل أنت مستعد للذهاب؟					
+fr_w_libre	word	1	libre		free (not busy, not taken)	متفرغ؛ شاغر					
+fr_w_libre#ex1	example	1	Tu es libre ce soir ?		Are you free this evening?	هل أنت متفرغ هذا المساء؟					
+fr_w_libre#ex2	example	1	Cette place est libre ?		Is this seat free?	هل هذا المقعد شاغر؟					
+fr_w_vrai	word	1	vrai		true	صحيح					
+fr_w_vrai#ex1	example	1	C'est vrai, il fait très froid.		It's true, it's very cold.	صحيح، الجو بارد جدًا.					
+fr_w_vrai#ex2	example	1	Ce n'est pas vrai !		That's not true!	هذا غير صحيح!					
+fr_w_sur_sure	word	1	sûr		sure	متأكد					
+fr_w_sur_sure#ex1	example	1	Tu es sûr de ça ?		Are you sure about that?	هل أنت متأكد من ذلك؟					
+fr_w_sur_sure#ex2	example	1	Bien sûr, je peux t'aider.		Of course, I can help you.	بالتأكيد، أستطيع مساعدتك.					
+fr_w_premier	word	1	premier		first	أول					
+fr_w_premier#ex1	example	1	C'est mon premier jour ici.		It's my first day here.	إنه يومي الأول هنا.					
+fr_w_premier#ex2	example	1	C'est la première fois que je viens.		It's the first time I've come.	إنها المرة الأولى التي آتي فيها.					
+fr_w_dernier	word	1	dernier		last	أخير؛ ماضٍ					
+fr_w_dernier#ex1	example	1	C'est le dernier bus de la nuit.		It's the last bus of the night.	إنها آخر حافلة في الليل.					
+fr_w_dernier#ex2	example	1	La semaine dernière, j'étais malade.		Last week I was ill.	الأسبوع الماضي كنت مريضًا.					
+fr_w_prochain	word	1	prochain		next	القادم، التالي					
+fr_w_prochain#ex1	example	1	À la semaine prochaine !		See you next week!	إلى الأسبوع القادم!					
+fr_w_prochain#ex2	example	1	Le prochain train part à cinq heures.		The next train leaves at five o'clock.	القطار التالي يغادر في الخامسة.					
+fr_w_seul	word	1	seul		alone; only	وحيد؛ فقط					
+fr_w_seul#ex1	example	1	J'habite seul dans une petite maison.		I live alone in a small house.	أسكن وحدي في بيت صغير.					
+fr_w_seul#ex2	example	1	Je ne veux pas être seul.		I don't want to be alone.	لا أريد أن أكون وحدي.					
+fr_w_jeune	word	1	jeune		young	شاب، صغير السن					
+fr_w_jeune#ex1	example	1	Ma mère est très jeune.		My mother is very young.	أمي صغيرة جدًا في السن.					
+fr_w_jeune#ex2	example	1	Il y a beaucoup de jeunes ici.		There are a lot of young people here.	هناك شباب كثيرون هنا.					
+fr_w_long	word	1	long		long	طويل					
+fr_w_long#ex1	example	1	Le film était très long.		The film was very long.	كان الفيلم طويلًا جدًا.					
+fr_w_long#ex2	example	1	Le chemin est long.		The way is long.	الطريق طويل.					
+fr_w_blanc	word	1	blanc		white	أبيض					
+fr_w_blanc#ex1	example	1	J'ai un chat blanc.		I have a white cat.	لديّ قطة بيضاء.					
+fr_w_blanc#ex2	example	1	La maison est blanche.		The house is white.	البيت أبيض.					
+fr_w_noir	word	1	noir		black	أسود					
+fr_w_noir#ex1	example	1	Mon chien est noir.		My dog is black.	كلبي أسود.					
+fr_w_noir#ex2	example	1	Je bois mon café noir.		I drink my coffee black.	أشرب قهوتي سوداء.					
+fr_w_rouge	word	1	rouge		red	أحمر					
+fr_w_rouge#ex1	example	1	Je voudrais la voiture rouge.		I'd like the red car.	أودّ السيارة الحمراء.					
+fr_w_rouge#ex2	example	1	Le rouge est une belle couleur.		Red is a beautiful colour.	الأحمر لون جميل.					
+fr_w_pres	word	1	près		near (près de)	قرب					
+fr_w_pres#ex1	example	1	J'habite près de l'école.		I live near the school.	أسكن قرب المدرسة.					
+fr_w_pres#ex2	example	1	Il y a un magasin près d'ici ?		Is there a shop near here?	هل يوجد متجر قريب من هنا؟					
+fr_w_loin	word	1	loin		far	بعيد					
+fr_w_loin#ex1	example	1	Mon travail est très loin.		My work is very far away.	عملي بعيد جدًا.					
+fr_w_loin#ex2	example	1	La plage n'est pas loin d'ici.		The beach isn't far from here.	الشاطئ ليس بعيدًا عن هنا.					
+fr_w_bientot	word	1	bientôt		soon	قريبًا					
+fr_w_bientot#ex1	example	1	À bientôt, mes amis !		See you soon, my friends!	إلى اللقاء قريبًا يا أصدقائي!					
+fr_w_bientot#ex2	example	1	Le dîner sera bientôt prêt.		Dinner will be ready soon.	سيكون العشاء جاهزًا قريبًا.					
+fr_w_tard	word	1	tard		late	متأخرًا					
+fr_w_tard#ex1	example	1	Il est très tard.		It's very late.	الوقت متأخر جدًا.					
+fr_w_tard#ex2	example	1	Je t'appelle plus tard.		I'll call you later.	سأتصل بك لاحقًا.					
+fr_w_tot	word	1	tôt		early	مبكرًا					
+fr_w_tot#ex1	example	1	Je pars tôt le matin.		I leave early in the morning.	أغادر مبكرًا في الصباح.					
+fr_w_tot#ex2	example	1	Nous sommes arrivés tôt à la fête.		We arrived early at the party.	وصلنا مبكرًا إلى الحفلة.					
+fr_w_ensemble	word	1	ensemble		together	معًا					
+fr_w_ensemble#ex1	example	1	On mange ensemble ce soir.		We're eating together tonight.	سنأكل معًا هذا المساء.					
+fr_w_ensemble#ex2	example	1	Nous travaillons ensemble au magasin.		We work together at the shop.	نعمل معًا في المتجر.					
+fr_w_vite	word	1	vite		quickly, fast	بسرعة					
+fr_w_vite#ex1	example	1	Viens vite, s'il te plaît !		Come quickly, please!	تعال بسرعة من فضلك!					
+fr_w_vite#ex2	example	1	Il parle trop vite.		He speaks too fast.	يتكلم بسرعة كبيرة.					
+fr_w_souvent	word	1	souvent		often	غالبًا، كثيرًا					
+fr_w_souvent#ex1	example	1	Je vais souvent à la plage.		I often go to the beach.	أذهب إلى الشاطئ كثيرًا.					
+fr_w_souvent#ex2	example	1	Tu vois souvent ta famille ?		Do you often see your family?	هل ترى عائلتك كثيرًا؟					
+fr_w_parfois	word	1	parfois		sometimes	أحيانًا					
+fr_w_parfois#ex1	example	1	Parfois, je travaille la nuit.		Sometimes I work at night.	أحيانًا أعمل في الليل.					
+fr_w_parfois#ex2	example	1	Nous mangeons parfois ensemble.		We sometimes eat together.	نأكل معًا أحيانًا.					
+fr_w_peut_etre	word	1	peut-être		maybe	ربما					
+fr_w_peut_etre#ex1	example	1	Il va peut-être pleuvoir.		It might rain.	ربما تمطر.					
+fr_w_peut_etre#ex2	example	1	Peut-être demain, je ne sais pas.		Maybe tomorrow, I don't know.	ربما غدًا، لا أعرف.					
+fr_w_daccord	word	1	d'accord		okay, agreed	حسنًا، موافق					
+fr_w_daccord#ex1	example	1	D'accord, à demain matin !		Okay, see you tomorrow morning!	حسنًا، إلى صباح الغد!					
+fr_w_daccord#ex2	example	1	Tu es d'accord avec moi ?		Do you agree with me?	هل توافقني؟					
+fr_w_au_revoir	word	1	au revoir		goodbye	إلى اللقاء					
+fr_w_au_revoir#ex1	example	1	Au revoir et merci !		Goodbye and thank you!	إلى اللقاء وشكرًا!					
+fr_w_au_revoir#ex2	example	1	Il a dit au revoir à sa famille.		He said goodbye to his family.	ودّع عائلته.					
+fr_w_pardon	word	1	pardon		sorry, excuse me	عذرًا					
+fr_w_pardon#ex1	example	1	Pardon, je ne comprends pas.		Sorry, I don't understand.	عذرًا، لا أفهم.					
+fr_w_pardon#ex2	example	1	Pardon, où est la plage ?		Excuse me, where is the beach?	عذرًا، أين الشاطئ؟					
+fr_w_sil_vous_plait	word	1	s'il vous plaît		please (formal; s'il te plaît = informal)	من فضلك					
+fr_w_sil_vous_plait#ex1	example	1	Un thé, s'il vous plaît.		A tea, please.	شاي من فضلك.					
+fr_w_sil_vous_plait#ex2	example	1	Fermez la porte, s'il vous plaît.		Close the door, please.	أغلقوا الباب من فضلكم.					
+fr_w_salut	word	1	salut		hi; bye (informal)	مرحبًا؛ إلى اللقاء (غير رسمي)					
+fr_w_salut#ex1	example	1	Salut, tu vas bien ?		Hi, are you well?	مرحبًا، هل أنت بخير؟					
+fr_w_salut#ex2	example	1	Salut tout le monde !		Hi, everyone!	مرحبًا بالجميع!					
+fr_w_bonsoir	word	1	bonsoir		good evening	مساء الخير					
+fr_w_bonsoir#ex1	example	1	Bonsoir, comment ça va ?		Good evening, how are you?	مساء الخير، كيف الحال؟					
+fr_w_bonsoir#ex2	example	1	Bonsoir, la table est prête.		Good evening, the table is ready.	مساء الخير، الطاولة جاهزة.					
+fr_w_deux	word	1	deux		two	اثنان					
+fr_w_deux#ex1	example	1	J'ai deux chats à la maison.		I have two cats at home.	لديّ قطتان في البيت.					
+fr_w_deux#ex2	example	1	On se voit à deux heures.		See you at two o'clock.	نلتقي في الثانية.					
+fr_w_trois	word	1	trois		three	ثلاثة					
+fr_w_trois#ex1	example	1	J'habite ici depuis trois ans.		I've lived here for three years.	أسكن هنا منذ ثلاث سنوات.					
+fr_w_trois#ex2	example	1	J'ai acheté trois livres.		I bought three books.	اشتريت ثلاثة كتب.					
+fr_w_quatre	word	1	quatre		four	أربعة					
+fr_w_quatre#ex1	example	1	Nous sommes quatre dans ma famille.		There are four of us in my family.	نحن أربعة في عائلتي.					
+fr_w_quatre#ex2	example	1	La classe finit à quatre heures.		The class ends at four o'clock.	ينتهي الدرس في الرابعة.					
+fr_w_cinq	word	1	cinq		five	خمسة					
+fr_w_cinq#ex1	example	1	J'ai cinq minutes pour manger.		I have five minutes to eat.	لديّ خمس دقائق لآكل.					
+fr_w_cinq#ex2	example	1	Elle a cinq ans.		She is five years old.	عمرها خمس سنوات.					
+fr_w_dix	word	1	dix		ten	عشرة					
+fr_w_dix#ex1	example	1	J'attends encore dix minutes.		I'll wait ten more minutes.	سأنتظر عشر دقائق أخرى.					
+fr_w_dix#ex2	example	1	Il y a dix personnes à la fête.		There are ten people at the party.	هناك عشرة أشخاص في الحفلة.					
+fr_w_cent	word	1	cent		a hundred	مئة					
+fr_w_cent#ex1	example	1	Il y a cent personnes ici.		There are a hundred people here.	هناك مئة شخص هنا.					
+fr_w_cent#ex2	example	1	Je te l'ai dit cent fois !		I've told you a hundred times!	قلت لك ذلك مئة مرة!					
+fr_w_personne	word	1	personne		person; ne … personne = nobody	شخص؛ لا أحد					
+fr_w_personne#ex1	example	1	C'est une personne très bien.		He's a very good person.	إنه شخص جيد جدًا.					
+fr_w_personne#ex2	example	1	Il n'y a personne dans la rue.		There's nobody in the street.	لا يوجد أحد في الشارع.					
+fr_w_quelquun	word	1	quelqu'un		someone	شخص ما					
+fr_w_quelquun#ex1	example	1	Il y a quelqu'un à la maison ?		Is anyone at home?	هل يوجد أحد في البيت؟					
+fr_w_quelquun#ex2	example	1	Quelqu'un t'a appelé ce matin.		Someone called you this morning.	اتصل بك أحدهم هذا الصباح.					
+fr_w_chaque	word	1	chaque		each, every	كل					
+fr_w_chaque#ex1	example	1	J'appelle ma mère chaque jour.		I call my mother every day.	أتصل بأمي كل يوم.					
+fr_w_chaque#ex2	example	1	Chaque enfant a un livre.		Each child has a book.	لكل طفل كتاب.					
+fr_w_quelque_chose	word	1	quelque chose		something	شيء ما					
+fr_w_quelque_chose#ex1	example	1	Tu veux manger quelque chose ?		Do you want to eat something?	هل تريد أن تأكل شيئًا؟					
+fr_w_quelque_chose#ex2	example	1	J'ai quelque chose pour toi.		I have something for you.	لديّ شيء لك.					
+fr_w_la_adv	word	1	là		there; here	هناك؛ هنا					
+fr_w_la_adv#ex1	example	1	Mes amis sont là.		My friends are here.	أصدقائي هنا.					
+fr_w_la_adv#ex2	example	1	Mets tes choses là, sur la table.		Put your things there, on the table.	ضع أشياءك هناك، على الطاولة.					
+fr_w_dehors	word	1	dehors		outside	في الخارج					
+fr_w_dehors#ex1	example	1	Il fait chaud dehors.		It's hot outside.	الجو حار في الخارج.					
+fr_w_dehors#ex2	example	1	On mange dehors ce soir ?		Shall we eat outside tonight?	هل نأكل في الخارج هذا المساء؟					
+fr_w_leur	word	1	leur		their	ـهم					
+fr_w_leur#ex1	example	1	Les enfants sont dans leur chambre.		The children are in their room.	الأطفال في غرفتهم.					
+fr_w_leur#ex2	example	1	Ils aiment leur nouvelle maison.		They like their new house.	يحبون بيتهم الجديد.					
+fr_w_pendant	word	1	pendant		during	أثناء					
+fr_w_pendant#ex1	example	1	J'ai dormi pendant le voyage.		I slept during the trip.	نمت أثناء الرحلة.					
+fr_w_pendant#ex2	example	1	On ne parle pas pendant le cours.		We don't talk during the lesson.	لا نتحدث أثناء الدرس.					
+fr_w_donc	word	1	donc		so, therefore	لذلك، إذن					
+fr_w_donc#ex1	example	1	Je suis malade, donc je ne viens pas.		I'm ill, so I'm not coming.	أنا مريض، لذلك لن آتي.					
+fr_w_donc#ex2	example	1	Donc, on part à quelle heure ?		So, what time are we leaving?	إذن، في أي ساعة نغادر؟					
+fr_w_ou	word	1	ou		or	أو، أم					
+fr_w_ou#ex1	example	1	Tu veux du café ou du thé ?		Do you want coffee or tea?	هل تريد قهوة أم شايًا؟					
+fr_w_ou#ex2	example	1	On peut partir aujourd'hui ou demain.		We can leave today or tomorrow.	يمكننا أن نغادر اليوم أو غدًا.					
+fr_w_son	word	1	son		his, her, its	ـه، ـها					
+fr_w_son#ex1	example	1	Elle aime son travail.		She likes her job.	تحب عملها.					
+fr_w_son#ex2	example	1	Il habite avec ses enfants.		He lives with his children.	يسكن مع أطفاله.					
+fr_w_ensuite	word	1	ensuite		then, next	بعد ذلك					
+fr_w_ensuite#ex1	example	1	On mange, ensuite on sort.		We eat, then we go out.	نأكل، ثم نخرج.					
+fr_w_ensuite#ex2	example	1	Ensuite, nous rentrons à la maison.		Then we go back home.	بعد ذلك نعود إلى البيت.					
+fr_w_par	word	1	par		by, through; per	بـ، عبر؛ في (لكل)					
+fr_w_par#ex1	example	1	Je travaille cinq jours par semaine.		I work five days a week.	أعمل خمسة أيام في الأسبوع.					
+fr_w_par#ex2	example	1	Le chat regarde par la fenêtre.		The cat looks out of the window.	تنظر القطة من النافذة.					
+fr_w_vraiment	word	1	vraiment		really	حقًا					
+fr_w_vraiment#ex1	example	1	J'aime vraiment ce livre.		I really like this book.	أحب هذا الكتاب حقًا.					
+fr_w_vraiment#ex2	example	1	C'est vraiment ta voiture ?		Is that really your car?	هل هذه سيارتك حقًا؟					
+fr_w_moins	word	1	moins		less	أقل					
+fr_w_moins#ex1	example	1	Il fait moins froid aujourd'hui.		It's less cold today.	الجو أقل برودة اليوم.					
+fr_w_moins#ex2	example	1	J'ai moins de temps maintenant.		I have less time now.	لديّ وقت أقل الآن.					
+fr_w_mieux	word	1	mieux		better	أفضل					
+fr_w_mieux#ex1	example	1	Je vais mieux, merci.		I'm better, thank you.	أنا أفضل، شكرًا.					
+fr_w_mieux#ex2	example	1	Elle parle mieux que moi.		She speaks better than me.	تتكلم أفضل مني.					
+fr_w_mal	word	1	mal		badly; avoir mal = to hurt	بشكل سيئ؛ ألم					
+fr_w_mal#ex1	example	1	J'ai mal à la tête.		I have a headache.	رأسي يؤلمني.					
+fr_w_mal#ex2	example	1	Il a mal dormi cette nuit.		He slept badly last night.	نام بشكل سيئ هذه الليلة.					
+fr_w_faim	word	1	faim		hunger; avoir faim = to be hungry	جوع					
+fr_w_faim#ex1	example	1	J'ai très faim maintenant.		I'm very hungry now.	أنا جائع جدًا الآن.					
+fr_w_faim#ex2	example	1	Les enfants ont faim.		The children are hungry.	الأطفال جائعون.					
+fr_w_soif	word	1	soif		thirst; avoir soif = to be thirsty	عطش					
+fr_w_soif#ex1	example	1	J'ai soif, je voudrais de l'eau.		I'm thirsty, I'd like some water.	أنا عطشان، أودّ بعض الماء.					
+fr_w_soif#ex2	example	1	Tu as soif après le travail ?		Are you thirsty after work?	هل أنت عطشان بعد العمل؟					
+fr_w_chance	word	1	chance		luck	حظ					
+fr_w_chance#ex1	example	1	Bonne chance pour l'examen !		Good luck with the exam!	حظًا موفقًا في الامتحان!					
+fr_w_chance#ex2	example	1	Tu as de la chance.		You're lucky.	أنت محظوظ.					
+fr_w_bureau	word	1	bureau		office; desk	مكتب					
+fr_w_bureau#ex1	example	1	Je suis au bureau.		I'm at the office.	أنا في المكتب.					
+fr_w_bureau#ex2	example	1	Mon bureau est loin de la maison.		My office is far from home.	مكتبي بعيد عن البيت.					
+fr_w_rendez_vous	word	1	rendez-vous		appointment, meeting	موعد					
+fr_w_rendez_vous#ex1	example	1	J'ai un rendez-vous chez le médecin.		I have an appointment at the doctor's.	لديّ موعد عند الطبيب.					
+fr_w_rendez_vous#ex2	example	1	On a rendez-vous à deux heures.		We're meeting at two o'clock.	لدينا موعد في الثانية.					
+fr_w_bienvenue	word	1	bienvenue		welcome	أهلًا وسهلًا					
+fr_w_bienvenue#ex1	example	1	Bienvenue chez nous, mes amis !		Welcome to our home, my friends!	أهلًا بكم في بيتنا يا أصدقائي!					
+fr_w_bienvenue#ex2	example	1	Bienvenue dans notre ville.		Welcome to our town.	أهلًا بكم في مدينتنا.					

@@ -1,0 +1,109 @@
+package com.polyglot.academy.core.service
+
+import com.polyglot.academy.core.content.Curriculum
+import com.polyglot.academy.core.learning.Recall
+import com.polyglot.academy.core.model.Gloss
+import com.polyglot.academy.core.model.LanguageCode
+import com.polyglot.academy.core.model.RecallRating
+import com.polyglot.academy.core.model.ReviewPhase
+import com.polyglot.academy.core.model.ReviewState
+import com.polyglot.academy.core.model.SavedPhrase
+import com.polyglot.academy.core.model.VocabularyItem
+import com.polyglot.academy.core.repo.ReviewRepository
+import com.polyglot.academy.core.repo.VocabularyRepository
+import com.polyglot.academy.core.srs.SpacedRepetitionScheduler
+import com.polyglot.academy.core.util.MILLIS_PER_DAY
+import com.polyglot.academy.core.util.TimeSource
+import com.polyglot.academy.core.wordlist.WordEntry
+import com.polyglot.academy.core.wordlist.WordLists
+import kotlinx.coroutines.flow.first
+
+/**
+ * A reviewable card: built-in or user vocabulary, a saved phrase, a word from the frequency word lists, or a
+ * sentence or grammar item. Words are recalled from [recallAnswers] and items are answered as [exercise], so
+ * the app checks both; only a learner's own saved phrases are still rated by the learner.
+ */
+data class ReviewCard(
+    val state: ReviewState, val front: String, val back: Gloss, val pronunciation: String?, val example: String?, val vocabulary: VocabularyItem?,
+    val exercise: com.polyglot.academy.core.model.Exercise? = null,
+    val recallAnswers: List<String> = emptyList(),
+)
+
+class ReviewService(
+    private val reviews: ReviewRepository,
+    private val vocabulary: VocabularyRepository,
+    private val scheduler: SpacedRepetitionScheduler,
+    private val achievements: AchievementService,
+    private val clock: TimeSource,
+) {
+    suspend fun resolve(language: LanguageCode): Map<String, VocabularyItem> {
+        val builtIn = Curriculum.of(language).vocabularyById
+        val user = vocabulary.userVocabulary(language).first().associateBy { it.id }
+        return builtIn + user
+    }
+
+    /** Due cards, learning steps first, then overdue reviews (most overdue first), then new cards up to [newLimit]. */
+    suspend fun dueQueue(language: LanguageCode, limit: Int = 30, newLimit: Int = 10): List<ReviewCard> {
+        val now = clock.nowMillis()
+        val items = resolve(language)
+        val phrases = vocabulary.savedPhrases(language).first().associateBy { it.id }
+        val states = reviews.states(language).first().filter { scheduler.isDue(it, now) }
+        val wordList = if (states.any { it.itemId !in items && it.itemId !in phrases && !it.isSentenceCard }) WordLists.load(language).byId else emptyMap()
+        val sentences = if (states.any { it.isSentenceCard }) Curriculum.of(language).lessons.flatMap { it.exercises }.associateBy { it.id } else emptyMap()
+        val learning = states.filter { it.phase == ReviewPhase.LEARNING || it.phase == ReviewPhase.RELEARNING }.sortedBy { it.dueAtMillis }
+        val due = states.filter { it.phase == ReviewPhase.REVIEW }.sortedBy { it.dueAtMillis }
+        val fresh = states.filter { it.phase == ReviewPhase.NEW }.take(newLimit)
+        return (learning + due + fresh).mapNotNull { s -> card(s, items, phrases, wordList, sentences) }.take(limit)
+    }
+
+    suspend fun dueCount(language: LanguageCode): Int {
+        val now = clock.nowMillis()
+        return reviews.states(language).first().count { scheduler.isDue(it, now) }
+    }
+
+    private fun card(
+        s: ReviewState, items: Map<String, VocabularyItem>, phrases: Map<String, SavedPhrase>, wordList: Map<String, WordEntry>,
+        sentences: Map<String, com.polyglot.academy.core.model.Exercise>,
+    ): ReviewCard? {
+        if (s.isSentenceCard) return sentences[s.itemId.removePrefix(ReviewState.SENTENCE_CARD_PREFIX)]?.let { e -> ReviewCard(s, "", Gloss("", ""), null, null, null, exercise = e) }
+        items[s.itemId]?.let { v -> return ReviewCard(s, v.term, v.meaning, v.pronunciation ?: v.transliteration, v.example, v, recallAnswers = Recall.acceptedAnswers(v)) }
+        phrases[s.itemId]?.let { p -> return ReviewCard(s, p.text, Gloss(p.meaning, p.meaning), null, p.note, null) }
+        wordList[s.itemId]?.toVocabularyItem()?.let { v -> return ReviewCard(s, v.term, v.meaning, v.pronunciation ?: v.transliteration, v.example, v, recallAnswers = Recall.acceptedAnswers(v)) }
+        return null
+    }
+
+    suspend fun rate(card: ReviewCard, rating: RecallRating, responseMillis: Long?): Pair<ReviewState, List<String>> {
+        val r = scheduler.review(card.state, rating, clock.nowMillis(), responseMillis)
+        reviews.save(r.state, r.log)
+        return r.state to achievements.evaluateAfterReview(card.state.language)
+    }
+
+    fun preview(card: ReviewCard): Map<RecallRating, Long> = scheduler.preview(card.state, clock.nowMillis())
+
+    /**
+     * Moves an item's next review [days] later, counted from when it is due (or now, if overdue). This
+     * is the learner's choice to wait, so it is not recorded as a review and the schedule is unchanged.
+     */
+    suspend fun postpone(itemId: String, days: Int): ReviewState? {
+        val s = reviews.state(itemId) ?: return null
+        val moved = s.copy(dueAtMillis = maxOf(s.dueAtMillis, clock.nowMillis()) + days * MILLIS_PER_DAY)
+        reviews.save(moved, null)
+        return moved
+    }
+
+    /** Items the learner knows well enough to read without help: in review, next due a week or more later. */
+    suspend fun knownIds(language: LanguageCode): Set<String> =
+        reviews.states(language).first().filter { it.phase == com.polyglot.academy.core.model.ReviewPhase.REVIEW && it.intervalDays >= KNOWN_INTERVAL_DAYS }.map { it.itemId }.toSet()
+
+    /** Takes an item out of the reviews; it can be added again later and starts as new. */
+    suspend fun remove(itemId: String) = reviews.remove(itemId)
+
+    suspend fun addToReview(language: LanguageCode, itemId: String) {
+        if (reviews.state(itemId) == null) reviews.save(scheduler.newState(itemId, language, clock.nowMillis()), null)
+    }
+
+    companion object {
+        /** A word whose review interval reached a week counts as known for hiding its reading. */
+        const val KNOWN_INTERVAL_DAYS = 7.0
+    }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 12 and higher. Only files/backup/ (the secret-free export) is backed up or transferred:
+     with an <include> present nothing else is, so API keys and the raw database never leave the
+     device. See backup_rules.xml. -->
+<data-extraction-rules>
+    <cloud-backup>
+        <include domain="file" path="backup/" />
+    </cloud-backup>
+    <device-transfer>
+        <include domain="file" path="backup/" />
+    </device-transfer>
+</data-extraction-rules>

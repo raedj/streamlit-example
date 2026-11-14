@@ -1,0 +1,159 @@
+CREATE TABLE exercise_attempt (
+    id TEXT NOT NULL PRIMARY KEY,
+    lesson_id TEXT,
+    exercise_id TEXT NOT NULL,
+    language TEXT NOT NULL,
+    skill TEXT NOT NULL,
+    difficulty INTEGER NOT NULL,
+    correct INTEGER NOT NULL,
+    score REAL NOT NULL,
+    response_ms INTEGER NOT NULL,
+    hints_used INTEGER NOT NULL,
+    answered_at INTEGER NOT NULL,
+    user_answer TEXT NOT NULL
+);
+CREATE INDEX exercise_attempt_lang_time ON exercise_attempt(language, answered_at);
+
+CREATE TABLE study_session (
+    id TEXT NOT NULL PRIMARY KEY,
+    language TEXT NOT NULL,
+    kind TEXT NOT NULL,
+    reference_id TEXT,
+    started_at INTEGER NOT NULL,
+    ended_at INTEGER,
+    active_seconds INTEGER NOT NULL,
+    items_completed INTEGER NOT NULL,
+    items_correct INTEGER NOT NULL,
+    completed INTEGER NOT NULL
+);
+CREATE INDEX study_session_lang_time ON study_session(language, started_at);
+
+CREATE TABLE lesson_progress (
+    lesson_id TEXT NOT NULL PRIMARY KEY,
+    language TEXT NOT NULL,
+    best_score REAL NOT NULL,
+    completions INTEGER NOT NULL,
+    last_completed_at INTEGER,
+    resume_index INTEGER NOT NULL DEFAULT 0
+);
+CREATE INDEX lesson_progress_lang ON lesson_progress(language);
+
+CREATE TABLE mistake (
+    id TEXT NOT NULL PRIMARY KEY,
+    language TEXT NOT NULL,
+    skill TEXT NOT NULL,
+    source_id TEXT NOT NULL,
+    prompt TEXT NOT NULL,
+    user_answer TEXT NOT NULL,
+    correct_answer TEXT NOT NULL,
+    explanation TEXT,
+    severity TEXT NOT NULL,
+    category TEXT NOT NULL,
+    occurred_at INTEGER NOT NULL,
+    resolved INTEGER NOT NULL DEFAULT 0,
+    occurrences INTEGER NOT NULL DEFAULT 1
+);
+CREATE INDEX mistake_lang_resolved ON mistake(language, resolved);
+CREATE INDEX mistake_lang_source ON mistake(language, source_id);
+
+CREATE TABLE assessment_result (
+    id TEXT NOT NULL PRIMARY KEY,
+    language TEXT NOT NULL,
+    kind TEXT NOT NULL,
+    taken_at INTEGER NOT NULL,
+    estimated_level TEXT NOT NULL,
+    level_low TEXT NOT NULL,
+    level_high TEXT NOT NULL,
+    skill_scores_json TEXT NOT NULL,
+    questions_answered INTEGER NOT NULL,
+    correct_answers INTEGER NOT NULL
+);
+CREATE INDEX assessment_lang_time ON assessment_result(language, taken_at);
+
+CREATE TABLE achievement (
+    id TEXT NOT NULL PRIMARY KEY,
+    unlocked_at INTEGER NOT NULL
+);
+
+CREATE TABLE daily_plan (
+    language TEXT NOT NULL,
+    date TEXT NOT NULL,
+    plan_json TEXT NOT NULL,
+    PRIMARY KEY (language, date)
+);
+
+insertAttempt:
+INSERT OR REPLACE INTO exercise_attempt VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+
+attemptsForLanguage:
+SELECT * FROM exercise_attempt WHERE language = ? ORDER BY answered_at;
+
+recentAttempts:
+SELECT * FROM exercise_attempt WHERE language = ? ORDER BY answered_at DESC LIMIT ?;
+
+upsertSession:
+INSERT OR REPLACE INTO study_session VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+
+sessionsForLanguage:
+SELECT * FROM study_session WHERE language = ? ORDER BY started_at;
+
+upsertLessonProgress:
+INSERT OR REPLACE INTO lesson_progress VALUES (?, ?, ?, ?, ?, ?);
+
+lessonProgressForLanguage:
+SELECT * FROM lesson_progress WHERE language = ?;
+
+mistakeBySource:
+SELECT * FROM mistake WHERE language = ? AND source_id = ? AND resolved = 0 LIMIT 1;
+
+insertMistake:
+INSERT OR REPLACE INTO mistake VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+
+bumpMistake:
+UPDATE mistake SET occurrences = occurrences + 1, occurred_at = ?, user_answer = ? WHERE id = ?;
+
+resolveMistake:
+UPDATE mistake SET resolved = 1 WHERE id = ?;
+
+mistakesForLanguage:
+SELECT * FROM mistake WHERE language = ? ORDER BY occurred_at DESC;
+
+insertAssessment:
+INSERT OR REPLACE INTO assessment_result VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+
+assessmentsForLanguage:
+SELECT * FROM assessment_result WHERE language = ? ORDER BY taken_at;
+
+insertAchievement:
+INSERT OR IGNORE INTO achievement VALUES (?, ?);
+
+achievementExists:
+SELECT COUNT(*) FROM achievement WHERE id = ?;
+
+allAchievements:
+SELECT * FROM achievement ORDER BY unlocked_at;
+
+upsertPlan:
+INSERT OR REPLACE INTO daily_plan VALUES (?, ?, ?);
+
+planFor:
+SELECT plan_json FROM daily_plan WHERE language = ? AND date = ?;
+
+activeSessionDays:
+SELECT DISTINCT started_at FROM study_session WHERE language = ? AND active_seconds > 0;
+
+deleteAllProgress {
+    DELETE FROM exercise_attempt;
+    DELETE FROM study_session;
+    DELETE FROM lesson_progress;
+    DELETE FROM mistake;
+    DELETE FROM assessment_result;
+    DELETE FROM achievement;
+    DELETE FROM daily_plan;
+}
+
+allAttempts:
+SELECT * FROM exercise_attempt ORDER BY answered_at;
+
+allSessions:
+SELECT * FROM study_session ORDER BY started_at;
