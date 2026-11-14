@@ -111,6 +111,9 @@ import com.polyglot.academy.core.model.CefrLevel
 import com.polyglot.academy.core.model.LanguageCode
 import com.polyglot.academy.core.model.Languages
 
+/** What a screen reader says a banner is (warning, error...), so its kind is not given by the icon alone. Set at the app root. */
+val LocalBannerKindLabel = androidx.compose.runtime.staticCompositionLocalOf<(BannerKind) -> String> { { "" } }
+
 /** Constrains content width on large screens and applies the screen gutter. */
 @Composable
 fun ContentColumn(
@@ -314,6 +317,7 @@ enum class BannerKind { INFO, SUCCESS, WARNING, ERROR }
 @Composable
 fun Banner(kind: BannerKind, text: String, modifier: Modifier = Modifier, title: String? = null, action: String? = null, onAction: (() -> Unit)? = null) {
     val c = PolyglotTheme.colors
+    val kindLabel = LocalBannerKindLabel.current(kind)
     val (bg, fg, icon) = when (kind) {
         BannerKind.INFO -> Triple(c.infoContainer, c.info, Icons.Filled.Info)
         BannerKind.SUCCESS -> Triple(c.successContainer, c.success, Icons.Filled.CheckCircle)
@@ -322,7 +326,7 @@ fun Banner(kind: BannerKind, text: String, modifier: Modifier = Modifier, title:
     }
     Row(
         modifier.fillMaxWidth().clip(RoundedCornerShape(PolyglotTheme.radii.md)).background(bg).padding(PolyglotTheme.spacing.md)
-            .semantics(mergeDescendants = true) { liveRegion = LiveRegionMode.Polite },
+            .semantics(mergeDescendants = true) { liveRegion = LiveRegionMode.Polite; if (kindLabel.isNotEmpty()) stateDescription = kindLabel },
         verticalAlignment = Alignment.Top,
     ) {
         // The icon shape differs per kind, so meaning is not conveyed by colour alone.

@@ -191,7 +191,7 @@ fun WordDetailScreen(entryId: String) {
     }
     val entry = list.byId[entryId]
     if (entry == null) {
-        ScrollScreen(s[K.WORDLEVELS_TITLE]) { StateMessage(s[K.WORDLEVELS_TITLE], s[K.WORD_NOT_FOUND]) }
+        ScrollScreen(s[K.WORDLEVELS_TITLE]) { com.polyglot.academy.ui.app.NotFound(s[K.WORD_NOT_FOUND]) }
         return
     }
     val loader = rememberLoader(entryId) { app.services.store.state(entry.reviewId) }

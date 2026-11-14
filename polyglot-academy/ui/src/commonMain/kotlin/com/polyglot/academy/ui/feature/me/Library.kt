@@ -340,7 +340,7 @@ fun MaterialScreen(materialId: String) {
         if (material != null) IconButton(onClick = { confirmDelete = true }) { Icon(Icons.Filled.Delete, s[K.DELETE]) }
     }) {
         if (materials == null) return@ScrollScreen
-        if (material == null) { StateMessage(s[K.ERROR_TITLE], s[K.LESSON_NOT_FOUND]); return@ScrollScreen }
+        if (material == null) { com.polyglot.academy.ui.app.NotFound(s[K.LESSON_NOT_FOUND]); return@ScrollScreen }
         Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) { Pill(Labels.materialType(s, material.type)); Pill(Labels.materialStatus(s, material.status)) }
         when (material.status) {
             MaterialStatus.UNSUPPORTED, MaterialStatus.FAILED -> {
@@ -429,7 +429,7 @@ fun SearchScreen() {
         val readings = cur.readings.filter { r -> m(r.title) || r.sentences.any(::m) }
         val noteHits = notes.filter { m(it.title) || m(it.body) }
         if (words.isEmpty() && lessons.isEmpty() && grammar.isEmpty() && readings.isEmpty() && noteHits.isEmpty()) {
-            StateMessage(s.f(K.SEARCH_EMPTY, query), ""); return@ScrollScreen
+            StateMessage(s.f(K.SEARCH_EMPTY, query), s[K.SEARCH_EMPTY_BODY]); return@ScrollScreen
         }
         if (words.isNotEmpty()) { SectionHeader(s[K.SEARCH_WORDS]); words.forEach { v -> PolyCard { LearningText(v.term, lang, style = MaterialTheme.typography.titleMedium, reading = v.pronunciation); Text(s.gloss(v.meaning), color = c.textSecondary) } } }
         if (lessons.isNotEmpty()) { SectionHeader(s[K.SEARCH_LESSONS]); lessons.forEach { l -> PolyCard(onClick = { app.nav.push(Route.LessonOverview(l.id)) }) { Text(s.gloss(l.title), style = MaterialTheme.typography.titleSmall) } } }

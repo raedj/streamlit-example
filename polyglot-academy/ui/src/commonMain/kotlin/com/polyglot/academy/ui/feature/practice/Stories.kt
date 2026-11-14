@@ -186,7 +186,7 @@ fun ReadingPassageScreen(passageId: String) {
     }
     ScrollScreen(s[K.READING_TITLE]) {
         LoadContent(loader) { data ->
-            if (data == null) StateMessage(s[K.ERROR_TITLE], s[K.LESSON_NOT_FOUND]) else StoryReader(data)
+            if (data == null) com.polyglot.academy.ui.app.NotFound(s[K.LESSON_NOT_FOUND]) else StoryReader(data)
         }
     }
 }

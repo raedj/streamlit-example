@@ -142,6 +142,23 @@ fun AppBottomBar(current: Tab) {
     }
 }
 
+/** This language has nothing for this screen yet: say so, and point to the lessons. */
+@Composable
+fun NoMaterialYet() {
+    val app = LocalApp.current
+    val s = LocalStrings.current
+    StateMessage(s[K.NOT_ENOUGH_DATA], s[K.EMPTY_NO_MATERIAL_BODY], action = s[K.EMPTY_GO_TO_LESSONS], onAction = { app.nav.switchTab(Tab.LEARN) })
+}
+
+/** A screen whose item is gone (a deleted material, an old link): say so, with a way back. */
+@Composable
+fun NotFound(body: String) {
+    val app = LocalApp.current
+    val s = LocalStrings.current
+    StateMessage(s[K.ERROR_TITLE], body, illustration = { HeroIllustration(HeroKind.ERROR, s[K.ILLUSTRATION], size = 120.dp) },
+        action = s[K.BACK], onAction = { app.nav.pop() })
+}
+
 /** Shows a snackbar from any screen. */
 fun AppScope.toast(scope: CoroutineScope, message: String) {
     scope.launch { snackbar.showSnackbar(message) }

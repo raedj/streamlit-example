@@ -1704,5 +1704,13 @@ internal object EnglishStrings {
         K.LMISTAKE_DONE to "{0} of {1} right this time",
         K.LMISTAKE_BACK to "Back to the summary",
         K.PLAYER_FEEDBACK_HERE to "Answer, and the feedback and its explanation appear here, beside the exercise.",
+        K.EMPTY_NO_MATERIAL_BODY to "This language has no material for this exercise yet. The lessons and the other practice screens have plenty.",
+        K.EMPTY_GO_TO_LESSONS to "Go to the lessons",
+        K.EMPTY_LEVEL_NO_SENTENCES to "There are no sentences at this level yet. Choose another level.",
+        K.SEARCH_EMPTY_BODY to "Check the spelling, or search for part of the word.",
+        K.BANNER_INFO to "Information",
+        K.BANNER_SUCCESS to "Done",
+        K.BANNER_WARNING to "Warning",
+        K.BANNER_ERROR to "Error",
     ) }
 }

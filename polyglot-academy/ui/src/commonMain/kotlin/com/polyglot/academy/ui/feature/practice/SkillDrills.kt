@@ -179,7 +179,7 @@ fun SentenceListeningScreen() {
                     practice = app.services.study.practice(lang, SessionKind.LISTENING, "drill:sentences:$level")
                 }
             }, Modifier.fillMaxWidth())
-            if (set != null && set.isEmpty()) StateMessage(s[K.NOT_ENOUGH_DATA], "")
+            if (set != null && set.isEmpty()) StateMessage(s[K.NOT_ENOUGH_DATA], s[K.EMPTY_LEVEL_NO_SENTENCES])
             return@ScrollScreen
         }
         RoundProgress(index, set.size)
@@ -499,7 +499,7 @@ fun GuidedDialogueScreen() {
             Text(s[K.DRILL_GUIDED_INTRO], style = MaterialTheme.typography.bodyMedium, color = PolyglotTheme.colors.textSecondary)
             SectionHeader(s[K.DRILL_GUIDED_CHOOSE])
             val all = Curriculum.of(lang).scenarios.sortedBy { it.level.ordinal }
-            if (all.isEmpty()) StateMessage(s[K.NOT_ENOUGH_DATA], "")
+            if (all.isEmpty()) com.polyglot.academy.ui.app.NoMaterialYet()
             all.forEach { x ->
                 ChoiceCard(x.title.forLanguage(explain), false, onClick = { scenario = x }, subtitle = x.setting.forLanguage(explain), leading = { LevelBadge(x.level, null) })
             }

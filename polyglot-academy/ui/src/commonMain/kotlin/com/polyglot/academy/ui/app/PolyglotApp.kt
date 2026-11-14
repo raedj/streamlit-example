@@ -58,7 +58,13 @@ fun PolyglotApp(services: AppServices, platformUi: PlatformUi, initialStack: Lis
         val sounds = st?.accessibility?.answerSounds != false
         val cues = remember(platformUi, haptics, sounds) { com.polyglot.academy.ui.designsystem.AnswerCues(haptics, sounds) { pcm, rate -> platformUi.playPcm(pcm, rate) } }
         CompositionLocalProvider(LocalStrings provides strings, com.polyglot.academy.ui.designsystem.LocalScriptFonts provides remember(platformUi) { com.polyglot.academy.ui.designsystem.ScriptFonts(urdu = platformUi.urduFont) },
-            com.polyglot.academy.ui.designsystem.LocalAnswerCues provides cues) {
+            com.polyglot.academy.ui.designsystem.LocalAnswerCues provides cues,
+            com.polyglot.academy.ui.designsystem.LocalBannerKindLabel provides remember(strings) { { kind -> strings[when (kind) {
+                com.polyglot.academy.ui.designsystem.BannerKind.INFO -> com.polyglot.academy.ui.i18n.K.BANNER_INFO
+                com.polyglot.academy.ui.designsystem.BannerKind.SUCCESS -> com.polyglot.academy.ui.i18n.K.BANNER_SUCCESS
+                com.polyglot.academy.ui.designsystem.BannerKind.WARNING -> com.polyglot.academy.ui.i18n.K.BANNER_WARNING
+                com.polyglot.academy.ui.designsystem.BannerKind.ERROR -> com.polyglot.academy.ui.i18n.K.BANNER_ERROR
+            }] } }) {
             androidx.compose.foundation.layout.BoxWithConstraints(Modifier.fillMaxSize().background(PolyglotTheme.colors.background)) {
               CompositionLocalProvider(com.polyglot.academy.ui.designsystem.LocalWidthClass provides com.polyglot.academy.ui.designsystem.WidthClass.of(maxWidth)) {
                 if (p != null && st != null) {
@@ -80,12 +86,22 @@ fun PolyglotApp(services: AppServices, platformUi: PlatformUi, initialStack: Lis
 private fun MainShell(nav: Navigator) {
     val reduced = PolyglotTheme.motion.reduced
     PlatformBackHandler(enabled = nav.canGoBack) { nav.pop() }
+    val rtl = androidx.compose.ui.platform.LocalLayoutDirection.current == androidx.compose.ui.unit.LayoutDirection.Rtl
+    // The whole stack is the state, so the direction is known: deeper slides in from the reading side,
+    // back slides the other way, and a tab switch only fades.
     AnimatedContent(
-        targetState = nav.current,
+        targetState = nav.stack.toList(),
+        contentKey = { it.last() },
         transitionSpec = {
-            if (reduced) ContentTransform(fadeIn(tween(0)), fadeOut(tween(0)))
-            else (fadeIn(tween(180)) + slideInHorizontally(tween(220)) { it / 12 }) togetherWith fadeOut(tween(120))
+            val depth = targetState.size.compareTo(initialState.size)
+            val sign = depth * (if (rtl) -1 else 1)
+            when {
+                reduced -> ContentTransform(fadeIn(tween(0)), fadeOut(tween(0)))
+                depth == 0 -> fadeIn(tween(200)) togetherWith fadeOut(tween(120))
+                else -> (fadeIn(tween(180)) + slideInHorizontally(tween(220)) { sign * it / 12 }) togetherWith
+                    (fadeOut(tween(120)) + androidx.compose.animation.slideOutHorizontally(tween(220)) { -sign * it / 24 })
+            }
         },
         label = "route",
-    ) { route -> RouteContent(route) }
+    ) { stack -> RouteContent(stack.last()) }
 }

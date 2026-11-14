@@ -120,7 +120,7 @@ fun GrammarTopicScreen(topicId: String) {
     val topic = Curriculum.grammar(topicId)
     val speaker = rememberSpeaker(s)
     ScrollScreen(topic?.let { s.gloss(it.title) } ?: s[K.GRAMMAR_TITLE]) {
-        if (topic == null) { StateMessage(s[K.ERROR_TITLE], s[K.LESSON_NOT_FOUND]); return@ScrollScreen }
+        if (topic == null) { com.polyglot.academy.ui.app.NotFound(s[K.LESSON_NOT_FOUND]); return@ScrollScreen }
         LevelBadge(topic.level, null)
         SectionHeader(s[K.GRAMMAR_RULE])
         PolyCard { Text(s.gloss(topic.rule), style = MaterialTheme.typography.bodyLarge) }
@@ -166,7 +166,7 @@ fun ListeningScreen() {
     val practice = remember(lang) { app.services.study.practice(lang, SessionKind.LISTENING, "listening") }
     ScrollScreen(s[K.LISTENING_TITLE]) {
         Text(s[K.LISTENING_INTRO], style = MaterialTheme.typography.bodyMedium, color = PolyglotTheme.colors.textSecondary)
-        if (items.isEmpty()) { StateMessage(s[K.NOT_ENOUGH_DATA], ""); return@ScrollScreen }
+        if (items.isEmpty()) { com.polyglot.academy.ui.app.NoMaterialYet(); return@ScrollScreen }
         Text("${s[K.LISTENING_SPEED]}: ${(rate * 100).toInt()}%", style = MaterialTheme.typography.labelLarge)
         Slider(rate, { rate = it }, valueRange = 0.5f..1.25f, steps = 2, modifier = Modifier.semantics { contentDescription = s[K.LISTENING_SPEED] })
         val item = items[index % items.size]
@@ -217,7 +217,7 @@ fun WritingScreen() {
     var loading by remember { mutableStateOf(false) }
     val drafts = remember(selected) { mutableStateListOf<Pair<Int, String>>() }
     ScrollScreen(s[K.WRITING_TITLE]) {
-        val prompt = selected ?: run { StateMessage(s[K.NOT_ENOUGH_DATA], ""); return@ScrollScreen }
+        val prompt = selected ?: run { com.polyglot.academy.ui.app.NoMaterialYet(); return@ScrollScreen }
         SectionHeader(s[K.WRITING_CHOOSE])
         prompts.distinctBy { it.id }.forEach { p ->
             ChoiceCard(p.prompt.forLanguage(explain), p.id == prompt.id, onClick = { selected = p }, subtitle = s.f(K.WRITING_MIN, p.minWords))

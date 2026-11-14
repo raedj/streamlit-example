@@ -150,7 +150,7 @@ fun TutorDetailScreen(tutorId: String) {
     val scope = rememberCoroutineScope()
     val tutor = TutorRoster.byId(tutorId)
     ScrollScreen(tutor?.name ?: s[K.TUTORS_TITLE]) {
-        if (tutor == null) { StateMessage(s[K.ERROR_TITLE], s[K.ERROR_BODY]); return@ScrollScreen }
+        if (tutor == null) { com.polyglot.academy.ui.app.NotFound(s[K.ERROR_BODY]); return@ScrollScreen }
         val lang = app.profile.activeLearningLanguage
         Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(8.dp)) {
             TutorAvatar(tutor.avatar, s.f(K.TUTOR_AVATAR_DESC, tutor.name), size = 120.dp)

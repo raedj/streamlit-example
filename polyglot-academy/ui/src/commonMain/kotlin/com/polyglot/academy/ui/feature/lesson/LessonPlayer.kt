@@ -247,8 +247,12 @@ private fun LessonPlayer(lesson: Lesson, restart: Boolean, onRetry: () -> Unit) 
             if (summary == null && index > 0) IconButton(onClick = { goBack() }) { Icon(Icons.AutoMirrored.Filled.ArrowBack, s[K.PLAYER_PREVIOUS]) }
             if (summary == null && index >= 0) {
                 val desc = s.f(K.PLAYER_PROGRESS, index + 1, lesson.exercises.size)
+                // The bar grows to the next step instead of jumping; at once with reduced motion.
+                val shown by androidx.compose.animation.core.animateFloatAsState(
+                    (index + 1).toFloat() / lesson.exercises.size,
+                    if (PolyglotTheme.motion.reduced) androidx.compose.animation.core.snap() else androidx.compose.animation.core.tween(350), label = "progress")
                 LinearProgressIndicator(
-                    progress = { (index + 1).toFloat() / lesson.exercises.size },
+                    progress = { shown },
                     modifier = Modifier.weight(1f).height(10.dp).clip(RoundedCornerShape(5.dp)).semantics { contentDescription = desc },
                     color = c.primary, trackColor = c.progressTrack, drawStopIndicator = {},
                 )

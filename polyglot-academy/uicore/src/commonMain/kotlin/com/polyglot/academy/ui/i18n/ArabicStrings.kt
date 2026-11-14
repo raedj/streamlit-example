@@ -1704,5 +1704,13 @@ internal object ArabicStrings {
         K.LMISTAKE_DONE to "{0} من {1} صحيحة هذه المرة",
         K.LMISTAKE_BACK to "العودة إلى الملخّص",
         K.PLAYER_FEEDBACK_HERE to "أجب، وسيظهر هنا التصحيح وشرحه، بجانب التمرين.",
+        K.EMPTY_NO_MATERIAL_BODY to "لا توجد لهذه اللغة مادة لهذا التمرين بعد. في الدروس وشاشات التدريب الأخرى ما يكفي.",
+        K.EMPTY_GO_TO_LESSONS to "اذهب إلى الدروس",
+        K.EMPTY_LEVEL_NO_SENTENCES to "لا توجد جمل في هذا المستوى بعد. اختر مستوى آخر.",
+        K.SEARCH_EMPTY_BODY to "تحقّق من الإملاء، أو ابحث عن جزء من الكلمة.",
+        K.BANNER_INFO to "معلومة",
+        K.BANNER_SUCCESS to "تمّ",
+        K.BANNER_WARNING to "تنبيه",
+        K.BANNER_ERROR to "خطأ",
     ) }
 }

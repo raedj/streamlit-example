@@ -121,7 +121,8 @@ fun HistoryScreen() {
     val sessions by remember(lang) { app.services.store.sessions(lang) }.collectAsState(emptyList())
     ScrollScreen(s[K.ME_HISTORY]) {
         val done = sessions.filter { it.completed }.sortedByDescending { it.startedAtMillis }
-        if (done.isEmpty()) StateMessage(s[K.ME_HISTORY], s[K.HISTORY_EMPTY])
+        if (done.isEmpty()) StateMessage(s[K.ME_HISTORY], s[K.HISTORY_EMPTY], illustration = { com.polyglot.academy.ui.designsystem.HeroIllustration(com.polyglot.academy.ui.designsystem.HeroKind.ANALYTICS_EMPTY, s[K.ILLUSTRATION], size = 120.dp) },
+            action = s[K.EMPTY_GO_TO_LESSONS], onAction = { app.nav.switchTab(com.polyglot.academy.ui.navigation.Tab.LEARN) })
         done.groupBy { it.startedAtMillis.toLocalDate() }.forEach { (date, list) ->
             SectionHeader(date.toString())
             list.forEach { sess ->

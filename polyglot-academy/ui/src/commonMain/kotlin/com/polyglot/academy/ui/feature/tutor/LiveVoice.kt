@@ -65,7 +65,7 @@ fun LiveVoiceScreen(tutorId: String, topic: String?) {
     val lang = app.profile.activeLearningLanguage
     val tutor = TutorRoster.byId(tutorId)
     ScrollScreen(s[K.LIVE_TITLE]) {
-        if (tutor == null) { StateMessage(s[K.ERROR_TITLE], s[K.LESSON_NOT_FOUND]); return@ScrollScreen }
+        if (tutor == null) { com.polyglot.academy.ui.app.NotFound(s[K.LESSON_NOT_FOUND]); return@ScrollScreen }
         val controller = remember(tutorId, topic, lang) { app.services.realtime.session(scope, lang, tutor, topic) }
         DisposableEffect(controller) { onDispose { controller.end() } }
         val st by controller.state.collectAsState()

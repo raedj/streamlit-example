@@ -1,6 +1,8 @@
 package com.polyglot.academy.ui
 
 import kotlinx.coroutines.flow.flowOn
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.test.ExperimentalTestApi
 import androidx.compose.ui.test.hasSetTextAction
 import androidx.compose.ui.test.hasText
@@ -439,6 +441,68 @@ class UiFlowTest {
         val feedback = onNodeWithText("Not quite").fetchSemanticsNode().boundsInRoot
         assertTrue(feedback.left > field.right, "$field $feedback")
         assertTrue(onAllNodesWithText("feedback and its explanation appear here", substring = true).fetchSemanticsNodes().isEmpty())
+    }
+
+    @Test fun anEmptyHistoryLeadsToTheLessons() = runDesktopComposeUiTest(800, 1700) {
+        val app = TestApp(); app.profile()
+        setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.ME), Route.History)) }
+        waitForText("Your completed sessions will be listed here.")
+        onNodeWithText("Go to the lessons").performClick()
+        waitForText("Courses")
+    }
+
+    @Test fun aMissingItemSaysSoAndLeadsBack() = runDesktopComposeUiTest(800, 1700) {
+        val app = TestApp(); app.profile()
+        setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.HOME), Route.Material("no-such-material"))) }
+        waitForText("Something went wrong")
+        onNodeWithText("Back").performClick()
+        waitUntil(timeoutMillis = 10_000) { onAllNodesWithText("Something went wrong").fetchSemanticsNodes().isEmpty() }
+    }
+
+    @Test fun aScreenReaderHearsWhatKindOfNoticeABannerIs() = runDesktopComposeUiTest(800, 400) {
+        setContent {
+            com.polyglot.academy.ui.designsystem.PolyglotTheme {
+                androidx.compose.runtime.CompositionLocalProvider(com.polyglot.academy.ui.designsystem.LocalBannerKindLabel provides { k -> k.name }) {
+                    com.polyglot.academy.ui.designsystem.Banner(com.polyglot.academy.ui.designsystem.BannerKind.WARNING, "Check the microphone")
+                }
+            }
+        }
+        val banner = onNode(hasText("Check the microphone")).fetchSemanticsNode().config
+        assertEquals("WARNING", banner[androidx.compose.ui.semantics.SemanticsProperties.StateDescription])
+    }
+
+    /**
+     * Everything that can be pressed on the main screens has a name a screen reader can say: its own text,
+     * or a content description. One list of the screens, in both interface languages.
+     */
+    @Test fun everyPressableElementOnTheMainScreensHasAName() = runDesktopComposeUiTest(800, 1700) {
+        val app = TestApp(); app.profile(); app.seedActivity()
+        val screens: List<Route> = Tab.entries.map { Route.TabRoot(it) } + listOf(
+            Route.Courses(), Route.Review, Route.Mistakes, Route.Grammar, Route.Reading, Route.Listening, Route.SentenceListening,
+            Route.SentenceWriting, Route.SpeedDrill, Route.GuidedDialogue, Route.Writing, Route.Pronunciation, Route.Letters,
+            Route.SpeakingPath, Route.Phrasebook, Route.Vocabulary, Route.Library, Route.Search, Route.Plan, Route.Progress,
+            Route.Scenarios, Route.Settings, Route.History, Route.PrivacyNotice, Route.WordLevels, Route.WordLevel(1),
+        ) + SettingsSection.entries.map { Route.SettingsPage(it) }
+        var current by androidx.compose.runtime.mutableStateOf(screens.first())
+        setContent { androidx.compose.runtime.key(current) { AppUnderTest(app, listOf(Route.TabRoot(Tab.HOME), current).distinct()) } }
+        val unnamed = mutableListOf<String>()
+        for (route in screens) {
+            current = route
+            waitForIdle()
+            runCatching { waitUntil(timeoutMillis = 5_000) { onAllNodes(androidx.compose.ui.test.hasClickAction()).fetchSemanticsNodes().isNotEmpty() } }
+            val pressable = onAllNodes(androidx.compose.ui.test.hasClickAction()).fetchSemanticsNodes()
+            // Every screen has at least its back button or the tabs: none means the screen was not shown.
+            assertTrue(pressable.isNotEmpty(),"$route showed ${pressable.size} pressable elements")
+            val title = onAllNodes(androidx.compose.ui.test.isHeading()).fetchSemanticsNodes().size
+            assertTrue(title > 0, "$route has no heading")
+            pressable.forEach { n ->
+                val cfg = n.config
+                val named = listOf(androidx.compose.ui.semantics.SemanticsProperties.Text, androidx.compose.ui.semantics.SemanticsProperties.ContentDescription,
+                    androidx.compose.ui.semantics.SemanticsProperties.EditableText).any { k -> cfg.contains(k) && cfg[k].toString().isNotBlank() && cfg[k].toString() != "[]" }
+                if (!named) unnamed += "$route @ ${n.boundsInRoot}: $cfg"
+            }
+        }
+        assertTrue(unnamed.isEmpty(), unnamed.joinToString(" | "))
     }
 
     @Test fun shadowingRecordsOnTheDeviceAndSaysHowLongTheLearnerSpoke() = runDesktopComposeUiTest(800, 1700) {
