@@ -44,6 +44,8 @@ interface PlatformUi {
     fun decodeImage(bytes: ByteArray): androidx.compose.ui.graphics.ImageBitmap? = null
     /** Turns the image [quarterTurns] times clockwise, then keeps [crop] of the turned image; JPEG bytes, or null on failure. */
     suspend fun editImage(bytes: ByteArray, crop: com.polyglot.academy.ui.feature.me.CropRect, quarterTurns: Int): ByteArray? = null
+    /** Plays a short mono 16-bit sound (the answer cues) without waiting for it; silent where unsupported. */
+    fun playPcm(samples: ShortArray, sampleRate: Int) {}
 }
 
 object NoopPlatformUi : PlatformUi {

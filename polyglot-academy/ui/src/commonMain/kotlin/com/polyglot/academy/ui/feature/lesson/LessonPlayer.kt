@@ -217,7 +217,19 @@ private fun LessonPlayer(lesson: Lesson, restart: Boolean, onRetry: () -> Unit) 
     val c = PolyglotTheme.colors
     val actions = remember { ExerciseActionSlot() }
     val tilePool = remember(lessonId) { lesson.exercises.filterIsInstance<Exercise.Translate>().mapNotNull { it.acceptedAnswers.firstOrNull() } }
-    CompositionLocalProvider(LocalExerciseActions provides actions) { Scaffold(containerColor = c.background, topBar = {
+    val keys = remember { com.polyglot.academy.ui.feature.lesson.ExerciseKeySlot() }
+    CompositionLocalProvider(LocalExerciseActions provides actions, com.polyglot.academy.ui.feature.lesson.LocalExerciseKeys provides keys) { com.polyglot.academy.ui.designsystem.KeyShortcuts(
+        focusKey = Triple(index, answered, summary != null),
+        onEnter = {
+            when {
+                summary != null -> false
+                answered && lastAnswer != null -> { advance(); true }
+                !answered -> keys.enter()
+                else -> false
+            }
+        },
+        onNumber = { n -> !answered && summary == null && keys.number(n) },
+    ) { Scaffold(containerColor = c.background, topBar = {
         Row(Modifier.fillMaxWidth().padding(horizontal = 8.dp, vertical = 8.dp).padding(top = 24.dp), verticalAlignment = Alignment.CenterVertically) {
             IconButton(onClick = { if (summary != null) app.nav.pop() else confirmExit = true }) { Icon(Icons.Filled.Close, s[K.CLOSE]) }
             if (summary == null && index > 0) IconButton(onClick = { goBack() }) { Icon(Icons.AutoMirrored.Filled.ArrowBack, s[K.PLAYER_PREVIOUS]) }
@@ -291,7 +303,7 @@ private fun LessonPlayer(lesson: Lesson, restart: Boolean, onRetry: () -> Unit) 
                 }
             }
         }
-    } }
+    } } }
 }
 
 @Composable

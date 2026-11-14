@@ -75,6 +75,14 @@ class DesktopPlatformUi(private val exportDir: File = File(System.getProperty("u
         runCatching { org.jetbrains.skia.Image.makeFromEncoded(bytes).toComposeImageBitmap() }.getOrNull()
     override suspend fun editImage(bytes: ByteArray, crop: CropRect, quarterTurns: Int): ByteArray? =
         withContext(Dispatchers.Default) { runCatching { SkiaImages.edit(bytes, crop, quarterTurns) }.getOrNull() }
+    override fun playPcm(samples: ShortArray, sampleRate: Int) {
+        val bytes = ByteArray(samples.size * 2)
+        samples.forEachIndexed { i, v -> bytes[2 * i] = (v.toInt() and 0xFF).toByte(); bytes[2 * i + 1] = (v.toInt() shr 8).toByte() }
+        // On its own thread: a sound card that is slow to open must not hold up the screen.
+        Thread {
+            runCatching { DesktopAudioOutput.open(sampleRate)?.let { sink -> sink.write(bytes); Thread.sleep(samples.size * 1000L / sampleRate + 80); sink.close() } }
+        }.apply { isDaemon = true }.start()
+    }
 }
 
 /** Turning and cropping with Skia, as the Android build does with Bitmap. */

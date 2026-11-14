@@ -241,11 +241,12 @@ fun WordDetailScreen(entryId: String) {
         }
         if (entry.examples.isNotEmpty()) {
             SectionHeader(s[K.WORD_EXAMPLES])
+            com.polyglot.academy.ui.designsystem.SupportingText(s[K.LOOKUP_HINT])
             entry.examples.forEach { ex ->
                 PolyCard {
                     Row(verticalAlignment = Alignment.CenterVertically) {
                         Column(Modifier.weight(1f)) {
-                            LearningText(ex.sentence, lang, style = MaterialTheme.typography.bodyLarge)
+                            com.polyglot.academy.ui.feature.common.TappableSentence(ex.sentence, lang, speaker, style = MaterialTheme.typography.bodyLarge, names = ex.names)
                             Text(s.gloss(ex.translation), style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
                         }
                         AudioButton(s[K.PLAY_AUDIO], { speaker.toggle(ex.sentence, lang) }, playing = speaker.playingText == ex.sentence)

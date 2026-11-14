@@ -18,19 +18,26 @@ class WordMatcher(private val language: LanguageCode, entries: List<WordEntry>) 
     private val phrases = HashMap<String, List<List<String>>>()
     private val zhDictionary = HashMap<String, Int>()
     private val zhMaxLength: Int
+    /** Most frequent entry (rank, id) for each normalised single-word key, for looking up a tapped word. */
+    private val keyEntry = HashMap<String, Pair<Int, String>>()
+
+    private fun note(key: String, e: WordEntry) {
+        val old = keyEntry[key]
+        if (old == null || e.rank < old.first) keyEntry[key] = e.rank to e.id
+    }
 
     init {
         for (e in entries) {
             val variants = (listOf(e.term) + e.forms + stems(e)).map { normalize(it) }.filter { it.isNotBlank() }
             if (language == LanguageCode.MANDARIN) {
-                variants.forEach { v -> zhDictionary[v] = minOf(zhDictionary[v] ?: Int.MAX_VALUE, e.rank) }
+                variants.forEach { v -> zhDictionary[v] = minOf(zhDictionary[v] ?: Int.MAX_VALUE, e.rank); note(v, e) }
                 continue
             }
             val singles = mutableSetOf<String>()
             val multi = mutableListOf<List<String>>()
             for (v in variants) {
                 val toks = rawTokens(v)
-                if (toks.size == 1) singles += toks[0] else if (toks.size > 1) multi += toks
+                if (toks.size == 1) { singles += toks[0]; note(toks[0], e) } else if (toks.size > 1) multi += toks
                 // Every word of a multi-word term counts as known from this rank on.
                 toks.forEach { t -> keyRank[t] = minOf(keyRank[t] ?: Int.MAX_VALUE, e.rank) }
             }
@@ -72,6 +79,22 @@ class WordMatcher(private val language: LanguageCode, entries: List<WordEntry>) 
     fun rankOf(token: String): Int? {
         if (language == LanguageCode.MANDARIN) return zhDictionary[token]
         return candidates(token).mapNotNull { keyRank[it] }.minOrNull()
+    }
+
+    /**
+     * Id of the list entry a tapped word belongs to, or null. The written form is tried first, then the
+     * forms the inflection rules allow, in their order; a piece such as French "l'aéroport" is looked up
+     * by its longest word. A multi-word term is found only when the whole phrase is tapped ([WordList.lookup]).
+     */
+    fun entryIdFor(word: String): String? {
+        val n = normalize(word).trim()
+        if (n.isEmpty()) return null
+        keyEntry[n]?.let { return it.second }
+        if (language == LanguageCode.MANDARIN) return null
+        for (tok in rawTokens(n).sortedByDescending { it.length }) {
+            for (cand in candidates(tok)) keyEntry[cand]?.let { return it.second }
+        }
+        return null
     }
 
     /** Words of the example that are unknown or less frequent than rank + slack (for messages and checks). */

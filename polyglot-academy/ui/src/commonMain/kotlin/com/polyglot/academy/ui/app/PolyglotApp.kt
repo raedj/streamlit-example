@@ -54,7 +54,11 @@ fun PolyglotApp(services: AppServices, platformUi: PlatformUi, initialStack: Lis
         reducedMotion = st?.accessibility?.reducedMotion == true,
         textScale = if (st?.accessibility?.largerText == true) 1.15f else 1f,
     ) {
-        CompositionLocalProvider(LocalStrings provides strings, com.polyglot.academy.ui.designsystem.LocalScriptFonts provides remember(platformUi) { com.polyglot.academy.ui.designsystem.ScriptFonts(urdu = platformUi.urduFont) }) {
+        val haptics = st?.accessibility?.hapticFeedback != false
+        val sounds = st?.accessibility?.answerSounds != false
+        val cues = remember(platformUi, haptics, sounds) { com.polyglot.academy.ui.designsystem.AnswerCues(haptics, sounds) { pcm, rate -> platformUi.playPcm(pcm, rate) } }
+        CompositionLocalProvider(LocalStrings provides strings, com.polyglot.academy.ui.designsystem.LocalScriptFonts provides remember(platformUi) { com.polyglot.academy.ui.designsystem.ScriptFonts(urdu = platformUi.urduFont) },
+            com.polyglot.academy.ui.designsystem.LocalAnswerCues provides cues) {
             Box(Modifier.fillMaxSize().background(PolyglotTheme.colors.background)) {
                 if (p != null && st != null) {
                     val nav = rememberSaveable(saver = Navigator.saver) { Navigator(initialStack ?: listOf(Route.TabRoot(com.polyglot.academy.ui.navigation.Tab.HOME))) }

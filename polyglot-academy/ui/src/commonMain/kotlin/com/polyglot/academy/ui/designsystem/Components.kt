@@ -79,6 +79,9 @@ import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.ui.graphics.graphicsLayer
+import kotlinx.coroutines.launch
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -468,6 +471,8 @@ fun AppTextField(
     minLines: Int = 1,
     secret: Boolean = false,
     textStyle: TextStyle = MaterialTheme.typography.bodyLarge,
+    /** Called by the keyboard's Done key (the answer is checked); null keeps the keyboard's usual key. */
+    onSubmit: (() -> Unit)? = null,
 ) {
     OutlinedTextField(
         value = value, onValueChange = onValueChange, label = { Text(label) }, modifier = modifier.fillMaxWidth(),
@@ -477,7 +482,9 @@ fun AppTextField(
         // A password field for the keyboard too: no suggestions shown, nothing learned or saved by the keyboard.
         keyboardOptions = if (secret) androidx.compose.foundation.text.KeyboardOptions(
             keyboardType = androidx.compose.ui.text.input.KeyboardType.Password, autoCorrectEnabled = false,
-        ) else androidx.compose.foundation.text.KeyboardOptions.Default,
+        ) else if (onSubmit != null) androidx.compose.foundation.text.KeyboardOptions(imeAction = androidx.compose.ui.text.input.ImeAction.Done)
+        else androidx.compose.foundation.text.KeyboardOptions.Default,
+        keyboardActions = if (onSubmit != null) androidx.compose.foundation.text.KeyboardActions(onDone = { onSubmit() }) else androidx.compose.foundation.text.KeyboardActions.Default,
     )
 }
 
@@ -600,17 +607,40 @@ fun LearningText(
     }
 }
 
+/**
+ * The verdict after an answer is checked. It slides in, the icon pops, and a wrong answer gives a short
+ * shake (none with reduced motion). With [cue], it also vibrates and plays the right/wrong sound once,
+ * as Settings allow; pass false where a panel only shows an earlier answer again.
+ */
 @Composable
-fun FeedbackPanel(correct: Boolean, title: String, detail: String?, modifier: Modifier = Modifier, extra: (@Composable ColumnScope.() -> Unit)? = null) {
+fun FeedbackPanel(correct: Boolean, title: String, detail: String?, modifier: Modifier = Modifier, cue: Boolean = true, extra: (@Composable ColumnScope.() -> Unit)? = null) {
     val c = PolyglotTheme.colors
-    AnimatedVisibility(true, enter = fadeIn(tween(PolyglotTheme.motion.duration(200))), exit = fadeOut()) {
+    val motion = PolyglotTheme.motion
+    val cues = LocalAnswerCues.current
+    val haptic = androidx.compose.ui.platform.LocalHapticFeedback.current
+    val visible = remember { androidx.compose.animation.core.MutableTransitionState(motion.reduced).apply { targetState = true } }
+    val shake = remember { androidx.compose.animation.core.Animatable(0f) }
+    val pop = remember { androidx.compose.animation.core.Animatable(if (motion.reduced) 1f else 0.4f) }
+    LaunchedEffect(Unit) {
+        if (cue) {
+            if (cues.haptics) haptic.performHapticFeedback(
+                if (correct) androidx.compose.ui.hapticfeedback.HapticFeedbackType.Confirm else androidx.compose.ui.hapticfeedback.HapticFeedbackType.Reject)
+            cues.playSound(correct)
+        }
+        if (motion.reduced) return@LaunchedEffect
+        launch { pop.animateTo(1f, androidx.compose.animation.core.spring(dampingRatio = 0.45f, stiffness = 500f)) }
+        if (!correct) for (x in listOf(10f, -8f, 6f, -4f, 0f)) shake.animateTo(x, tween(45))
+    }
+    AnimatedVisibility(visible, enter = fadeIn(tween(motion.duration(200))) + androidx.compose.animation.slideInVertically(tween(motion.duration(260))) { it / 3 }, exit = fadeOut()) {
         Column(
-            modifier.fillMaxWidth().clip(RoundedCornerShape(PolyglotTheme.radii.lg)).background(if (correct) c.successContainer else c.errorContainer)
+            modifier.fillMaxWidth().graphicsLayer { translationX = shake.value * density }
+                .clip(RoundedCornerShape(PolyglotTheme.radii.lg)).background(if (correct) c.successContainer else c.errorContainer)
                 .padding(PolyglotTheme.spacing.lg).semantics(mergeDescendants = true) { liveRegion = LiveRegionMode.Assertive },
             verticalArrangement = Arrangement.spacedBy(6.dp),
         ) {
             Row(verticalAlignment = Alignment.CenterVertically) {
-                Icon(if (correct) Icons.Filled.CheckCircle else Icons.Filled.ErrorOutline, null, tint = if (correct) c.success else c.error)
+                Icon(if (correct) Icons.Filled.CheckCircle else Icons.Filled.ErrorOutline, null, tint = if (correct) c.success else c.error,
+                    modifier = Modifier.graphicsLayer { scaleX = pop.value; scaleY = pop.value })
                 Spacer(Modifier.width(8.dp))
                 Text(title, style = MaterialTheme.typography.titleMedium, color = c.textPrimary, fontWeight = FontWeight.SemiBold)
             }

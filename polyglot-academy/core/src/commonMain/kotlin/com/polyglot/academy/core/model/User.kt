@@ -81,6 +81,8 @@ data class AccessibilitySettings(
     val largerText: Boolean = false,
     val highContrast: Boolean = false,
     val hapticFeedback: Boolean = true,
+    /** A short sound when an answer is checked (right or wrong). */
+    val answerSounds: Boolean = true,
 )
 
 @Serializable

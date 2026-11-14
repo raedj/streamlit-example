@@ -89,6 +89,40 @@ class WordList(val language: LanguageCode, val entries: List<WordEntry>) {
     val matcher: WordMatcher by lazy { WordMatcher(language, entries) }
 
     fun level(level: Int): List<WordEntry> = WordLevels.ranks(level).mapNotNull { byRank[it] }
+
+    /** Normalised multi-word terms and forms ("canı çekmek", "a lot of"), most frequent entry first. */
+    private val phraseEntries: Map<String, WordEntry> by lazy {
+        val m = HashMap<String, WordEntry>()
+        entries.sortedByDescending { it.rank }.forEach { e ->
+            (listOf(e.term) + e.forms).filter { ' ' in it.trim() }.forEach { m[matcher.normalize(it).trim()] = e }
+        }
+        m
+    }
+
+    /** Normalised dictionary forms: "saw" is the noun when the list has it, not only a form of "see". */
+    private val termEntries: Map<String, WordEntry> by lazy {
+        val m = HashMap<String, WordEntry>()
+        entries.sortedByDescending { it.rank }.forEach { e -> m[matcher.normalize(e.term).trim()] = e }
+        m
+    }
+
+    /**
+     * Terms a sentence is split by so they can be tapped as one piece: multi-word terms for spaced
+     * languages, and every term and form for Mandarin, which has no spaces (see [StoryText.tokens]).
+     */
+    val tapTerms: Set<String> by lazy {
+        if (language == LanguageCode.MANDARIN) entries.flatMap { listOf(it.term) + it.forms }.filter { it.isNotBlank() }.toSet()
+        else entries.flatMap { listOf(it.term) + it.forms }.filter { ' ' in it.trim() }.toSet()
+    }
+
+    /** The entry a tapped word or phrase belongs to (by its form or a regular inflection), or null when the list lacks it. */
+    fun lookup(word: String): WordEntry? {
+        val n = matcher.normalize(word).trim()
+        if (n.isEmpty()) return null
+        phraseEntries[n]?.let { return it }
+        termEntries[n]?.let { return it }
+        return matcher.entryIdFor(word)?.let { byId[it] }
+    }
 }
 
 object WordLists {

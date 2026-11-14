@@ -106,6 +106,28 @@ class MainActivity : ComponentActivity(), PlatformUi {
     }
 
     override val appVersion: String get() = packageManager.getPackageInfo(packageName, 0).versionName ?: "?"
+
+    /** The answer cues: a static AudioTrack on the sonification stream, so system sound settings apply and media is not interrupted. */
+    override fun playPcm(samples: ShortArray, sampleRate: Int) {
+        runCatching {
+            val track = android.media.AudioTrack.Builder()
+                .setAudioAttributes(android.media.AudioAttributes.Builder()
+                    .setUsage(android.media.AudioAttributes.USAGE_ASSISTANCE_SONIFICATION)
+                    .setContentType(android.media.AudioAttributes.CONTENT_TYPE_SONIFICATION).build())
+                .setAudioFormat(android.media.AudioFormat.Builder().setEncoding(android.media.AudioFormat.ENCODING_PCM_16BIT)
+                    .setSampleRate(sampleRate).setChannelMask(android.media.AudioFormat.CHANNEL_OUT_MONO).build())
+                .setBufferSizeInBytes(samples.size * 2)
+                .setTransferMode(android.media.AudioTrack.MODE_STATIC)
+                .build()
+            track.write(samples, 0, samples.size)
+            track.setNotificationMarkerPosition(samples.size)
+            track.setPlaybackPositionUpdateListener(object : android.media.AudioTrack.OnPlaybackPositionUpdateListener {
+                override fun onMarkerReached(t: android.media.AudioTrack) { t.release() }
+                override fun onPeriodicNotification(t: android.media.AudioTrack) {}
+            })
+            track.play()
+        }
+    }
     // Noto Nastaliq Urdu, SIL Open Font License 1.1 (docs/licenses/OFL-NotoNastaliqUrdu.txt).
     override fun deleteLocalFile(path: String) { File(path).delete() }
 

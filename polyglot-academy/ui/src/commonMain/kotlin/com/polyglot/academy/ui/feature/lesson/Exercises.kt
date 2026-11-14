@@ -109,6 +109,32 @@ class ExerciseActionSlot {
     var content by mutableStateOf<(@Composable () -> Unit)?>(null)
 }
 
+/** What Enter does in the current exercise (check, continue), and what number keys choose; see [ExerciseKeys]. */
+class ExerciseKeySlot {
+    var onEnter: (() -> Unit)? = null
+    var onNumber: ((Int) -> Unit)? = null
+
+    /** For [com.polyglot.academy.ui.designsystem.KeyShortcuts]: true when the exercise used the key. */
+    fun enter(): Boolean = onEnter?.let { it(); true } ?: false
+    fun number(n: Int): Boolean = onNumber?.let { it(n); true } ?: false
+}
+
+val LocalExerciseKeys = staticCompositionLocalOf<ExerciseKeySlot?> { null }
+
+/** Registers the current exercise's keyboard shortcuts with the screen ([com.polyglot.academy.ui.designsystem.KeyShortcuts]). */
+@Composable
+private fun ExerciseKeys(onEnter: (() -> Unit)? = null, onNumber: ((Int) -> Unit)? = null) {
+    val slot = LocalExerciseKeys.current ?: return
+    val enter by rememberUpdatedState(onEnter)
+    val number by rememberUpdatedState(onNumber)
+    DisposableEffect(slot) {
+        val e: (() -> Unit)? = if (onEnter != null) ({ enter?.invoke() }) else null
+        val n: ((Int) -> Unit)? = if (onNumber != null) ({ k: Int -> number?.invoke(k) }) else null
+        slot.onEnter = e; slot.onNumber = n
+        onDispose { if (slot.onEnter === e) slot.onEnter = null; if (slot.onNumber === n) slot.onNumber = null }
+    }
+}
+
 val LocalExerciseActions = staticCompositionLocalOf<ExerciseActionSlot?> { null }
 
 @Composable
@@ -170,14 +196,16 @@ private fun FlashcardView(e: Exercise.Flashcard, ctx: ExerciseContext, answered:
             Text(ctx.gloss(v.meaning), style = MaterialTheme.typography.titleLarge, textAlign = TextAlign.Center)
             v.example?.let { ex ->
                 Text(s[K.FLASHCARD_EXAMPLE], style = MaterialTheme.typography.labelMedium, color = c.textSecondary)
-                LearningText(ex, ctx.language, style = MaterialTheme.typography.bodyLarge, textAlign = TextAlign.Center)
+                com.polyglot.academy.ui.feature.common.TappableSentence(ex, ctx.language, ctx.speaker, style = MaterialTheme.typography.bodyLarge, center = true)
                 v.exampleTranslation?.let { Text(ctx.gloss(it), style = MaterialTheme.typography.bodyMedium, color = c.textSecondary, textAlign = TextAlign.Center) }
             }
         }
     }
     // A word met for the first time cannot be recalled, so it is presented; the exercises that follow check it.
-    if (!answered) ExerciseActions {
-        PrimaryButton(s[K.CONTINUE], { onAnswer(Answer(ExerciseOutcome(true, 1.0, "", counted = false), "", 0, v.term)) }, Modifier.fillMaxWidth())
+    val present = { onAnswer(Answer(ExerciseOutcome(true, 1.0, "", counted = false), "", 0, v.term)) }
+    if (!answered) {
+        ExerciseKeys(onEnter = present)
+        ExerciseActions { PrimaryButton(s[K.CONTINUE], present, Modifier.fillMaxWidth()) }
     }
 }
 
@@ -201,6 +229,14 @@ private fun MultipleChoiceView(e: Exercise.MultipleChoice, ctx: ExerciseContext,
     }
     // Mixed per question, so the right answer is not usually the first one.
     val order = remember(e.id, e.options.size) { com.polyglot.academy.core.learning.ChoiceOrder.of(e.id, e.options.size) }
+    fun choose(i: Int) {
+        if (answered) return
+        selected = i
+        val correct = i == e.correctIndex
+        val expected = e.optionGlosses?.getOrNull(e.correctIndex)?.let(ctx::gloss) ?: e.options[e.correctIndex]
+        onAnswer(Answer(ExerciseOutcome(correct, if (correct) 1.0 else 0.0, expected), e.options[i], 0, e.prompt))
+    }
+    if (!answered) ExerciseKeys(onNumber = { k -> order.getOrNull(k - 1)?.let(::choose) })
     order.forEach { i ->
         val opt = e.options[i]
         val label = e.optionGlosses?.getOrNull(i)?.let(ctx::gloss) ?: opt
@@ -213,13 +249,7 @@ private fun MultipleChoiceView(e: Exercise.MultipleChoice, ctx: ExerciseContext,
         ChoiceCard(
             title = label, selected = selected == i || (answered && i == e.correctIndex),
             subtitle = state, language = ctx.language.takeIf { e.optionGlosses == null },
-            onClick = {
-                if (answered) return@ChoiceCard
-                selected = i
-                val correct = i == e.correctIndex
-                val expected = e.optionGlosses?.getOrNull(e.correctIndex)?.let(ctx::gloss) ?: e.options[e.correctIndex]
-                onAnswer(Answer(ExerciseOutcome(correct, if (correct) 1.0 else 0.0, expected), opt, 0, e.prompt))
-            },
+            onClick = { choose(i) },
         )
     }
 }
@@ -234,11 +264,19 @@ private fun TypedView(
     var hints by remember(prompt) { mutableIntStateOf(0) }
     var empty by remember(prompt) { mutableStateOf(false) }
     var wrongKeyboard by remember(prompt) { mutableStateOf(false) }
+    fun submit() {
+        if (answered) return
+        val check = AnswerChecker.check(text, accepted)
+        if (check.verdict == AnswerVerdict.EMPTY) { empty = true; return }
+        wrongKeyboard = check.verdict == AnswerVerdict.WRONG_KEYBOARD
+        if (wrongKeyboard) return
+        onAnswer(Answer(ExerciseOutcome(check.isCorrect, check.score, check.closestAccepted, check), text, hints, prompt))
+    }
     if (sentenceInTarget) LearningText(prompt.replace("___", "_____"), ctx.language, style = PolyglotTheme.learning.sentence)
     else Text(prompt, style = MaterialTheme.typography.headlineSmall)
     if (tiles && !answered) RecallInput(text, { text = it; empty = false }, ctx.language, accepted.first(), ctx.tilePool, prompt,
-        supporting = if (empty) s[K.FEEDBACK_EMPTY] else null, isError = empty)
-    else AppTextField(text, { text = it; empty = false }, s[K.TYPE_ANSWER], isError = empty, supporting = if (empty) s[K.FEEDBACK_EMPTY] else null,
+        supporting = if (empty) s[K.FEEDBACK_EMPTY] else null, isError = empty, onSubmit = ::submit)
+    else AppTextField(text, { text = it; empty = false }, s[K.TYPE_ANSWER], isError = empty, supporting = if (empty) s[K.FEEDBACK_EMPTY] else null, onSubmit = ::submit,
         textStyle = com.polyglot.academy.ui.designsystem.styleFor(ctx.language, MaterialTheme.typography.bodyLarge).copy(localeList = com.polyglot.academy.ui.designsystem.localeFor(Languages.of(ctx.language).defaultVariant.localeTag),
             textDirection = com.polyglot.academy.ui.designsystem.textDirectionFor(ctx.language)))
     if (wrongKeyboard) Banner(BannerKind.WARNING, s[K.FEEDBACK_KEYBOARD])
@@ -246,13 +284,10 @@ private fun TypedView(
         if (hints == 0) QuietButton(s[K.HINT_SHOW], { hints = 1 })
         else Banner(BannerKind.INFO, hint?.let(ctx::gloss) ?: s.f(K.HINT_FIRST_LETTERS, accepted.first().take(maxOf(1, accepted.first().length / 3))))
     }
-    if (!answered) ExerciseActions { PrimaryButton(s[K.CHECK], {
-        val check = AnswerChecker.check(text, accepted)
-        if (check.verdict == AnswerVerdict.EMPTY) { empty = true; return@PrimaryButton }
-        wrongKeyboard = check.verdict == AnswerVerdict.WRONG_KEYBOARD
-        if (wrongKeyboard) return@PrimaryButton
-        onAnswer(Answer(ExerciseOutcome(check.isCorrect, check.score, check.closestAccepted, check), text, hints, prompt))
-    }, Modifier.fillMaxWidth()) }
+    if (!answered) {
+        ExerciseKeys(onEnter = ::submit)
+        ExerciseActions { PrimaryButton(s[K.CHECK], ::submit, Modifier.fillMaxWidth()) }
+    }
 }
 
 /** A typed answer with an optional row of tiles, so those who cannot type this script yet can still produce it. */
@@ -260,12 +295,12 @@ private fun TypedView(
 @Composable
 fun RecallInput(
     value: String, onValue: (String) -> Unit, language: LanguageCode, answer: String, others: List<String>, key: String,
-    supporting: String? = null, isError: Boolean = false, allowTiles: Boolean = true,
+    supporting: String? = null, isError: Boolean = false, allowTiles: Boolean = true, onSubmit: (() -> Unit)? = null,
 ) {
     val s = LocalStrings.current
     // Most learners cannot type characters without a pinyin keyboard, so Mandarin opens with the tiles.
     var showTiles by remember(key) { mutableStateOf(allowTiles && language == LanguageCode.MANDARIN) }
-    AppTextField(value, onValue, s[K.TYPE_ANSWER], isError = isError, supporting = supporting,
+    AppTextField(value, onValue, s[K.TYPE_ANSWER], isError = isError, supporting = supporting, onSubmit = onSubmit,
         textStyle = com.polyglot.academy.ui.designsystem.styleFor(language, MaterialTheme.typography.bodyLarge).copy(
             localeList = com.polyglot.academy.ui.designsystem.localeFor(Languages.of(language).defaultVariant.localeTag),
             textDirection = com.polyglot.academy.ui.designsystem.textDirectionFor(language)))
@@ -292,18 +327,23 @@ private fun DictationView(e: Exercise.Dictation, ctx: ExerciseContext, answered:
         AudioButton(s[K.PLAY_AUDIO], { ctx.speaker.toggle(e.audioText, ctx.language) }, playing = ctx.speaker.playingText == e.audioText)
         SecondaryButton(s[K.LISTEN_SLOW], { ctx.speaker.play(e.audioText, ctx.language, 0.65f) })
     }
-    AppTextField(text, { text = it }, s[K.TYPE_ANSWER], singleLine = false, minLines = 2,
+    fun submit() {
+        if (answered) return
+        val check = AnswerChecker.check(text, e.acceptedAnswers)
+        if (check.verdict == AnswerVerdict.EMPTY) return
+        wrongKeyboard = check.verdict == AnswerVerdict.WRONG_KEYBOARD
+        if (wrongKeyboard) return
+        onAnswer(Answer(ExerciseOutcome(check.isCorrect, maxOf(check.score, TextNormalizer.similarity(text, e.audioText) * 0.8), e.audioText, check), text, 0, e.audioText))
+    }
+    AppTextField(text, { text = it }, s[K.TYPE_ANSWER], singleLine = false, minLines = 2, onSubmit = ::submit,
         textStyle = com.polyglot.academy.ui.designsystem.styleFor(ctx.language, MaterialTheme.typography.bodyLarge).copy(
             localeList = com.polyglot.academy.ui.designsystem.localeFor(Languages.of(ctx.language).defaultVariant.localeTag),
             textDirection = com.polyglot.academy.ui.designsystem.textDirectionFor(ctx.language)))
     if (wrongKeyboard) Banner(BannerKind.WARNING, s[K.FEEDBACK_KEYBOARD])
-    if (!answered) ExerciseActions { PrimaryButton(s[K.CHECK], {
-        val check = AnswerChecker.check(text, e.acceptedAnswers)
-        if (check.verdict == AnswerVerdict.EMPTY) return@PrimaryButton
-        wrongKeyboard = check.verdict == AnswerVerdict.WRONG_KEYBOARD
-        if (wrongKeyboard) return@PrimaryButton
-        onAnswer(Answer(ExerciseOutcome(check.isCorrect, maxOf(check.score, TextNormalizer.similarity(text, e.audioText) * 0.8), e.audioText, check), text, 0, e.audioText))
-    }, Modifier.fillMaxWidth()) }
+    if (!answered) {
+        ExerciseKeys(onEnter = ::submit)
+        ExerciseActions { PrimaryButton(s[K.CHECK], ::submit, Modifier.fillMaxWidth()) }
+    }
 }
 
 @OptIn(ExperimentalLayoutApi::class)
@@ -487,13 +527,15 @@ private fun ToneChoiceView(e: Exercise.ToneChoice, ctx: ExerciseContext, answere
             AudioButton(s.f(K.TONE_LISTEN, e.character), { ctx.speaker.toggle(e.character, LanguageCode.MANDARIN) }, playing = ctx.speaker.playingText == e.character)
         }
     }
+    fun choose(t: Int) {
+        if (answered) return
+        selected = t
+        onAnswer(Answer(ExerciseOutcome(t == e.correctTone, if (t == e.correctTone) 1.0 else 0.0, Pinyin.applyTone(e.syllable, e.correctTone)), Pinyin.applyTone(e.syllable, t), 0, e.character))
+    }
+    if (!answered) ExerciseKeys(onNumber = { t -> if (t in 1..5) choose(t) })
     (1..5).forEach { t ->
         val marked = Pinyin.applyTone(e.syllable, t)
-        ChoiceCard("$marked · ${s[K.valueOf("TONE_$t")]}", selected == t || (answered && t == e.correctTone), onClick = {
-            if (answered) return@ChoiceCard
-            selected = t
-            onAnswer(Answer(ExerciseOutcome(t == e.correctTone, if (t == e.correctTone) 1.0 else 0.0, Pinyin.applyTone(e.syllable, e.correctTone)), marked, 0, e.character))
-        })
+        ChoiceCard("$marked · ${s[K.valueOf("TONE_$t")]}", selected == t || (answered && t == e.correctTone), onClick = { choose(t) })
     }
 }
 
@@ -566,8 +608,10 @@ private fun GrammarNoteView(e: Exercise.GrammarNote, ctx: ExerciseContext, answe
             Text(ctx.gloss(ex.translation), style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
         }
     }
-    if (!answered) ExerciseActions {
-        PrimaryButton(s[K.CONTINUE], { onAnswer(Answer(ExerciseOutcome(true, 1.0, "", counted = false), "", 0, e.topicId)) }, Modifier.fillMaxWidth())
+    val next = { onAnswer(Answer(ExerciseOutcome(true, 1.0, "", counted = false), "", 0, e.topicId)) }
+    if (!answered) {
+        ExerciseKeys(onEnter = next)
+        ExerciseActions { PrimaryButton(s[K.CONTINUE], next, Modifier.fillMaxWidth()) }
     }
 }
 

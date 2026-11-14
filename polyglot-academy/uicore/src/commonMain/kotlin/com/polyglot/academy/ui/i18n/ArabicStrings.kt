@@ -1670,5 +1670,15 @@ internal object ArabicStrings {
         K.DRILL_GUIDED_FAIL to "إجابتك لا تحمل ما تحتاجه هذه الخطوة بعد. اسمع النموذج وحاول مرة أخرى.",
         K.DRILL_MODEL_ANSWER to "إجابة نموذجية",
         K.DRILL_GUIDED_DONE to "انتهت المحادثة: فُهمت {0} من {1} إجابات.",
+        K.SET_HAPTICS_SUB to "اهتزاز قصير عند الإجابة الصحيحة أو الخاطئة",
+        K.SET_ANSWER_SOUNDS to "أصوات الإجابة",
+        K.SET_ANSWER_SOUNDS_SUB to "صوت قصير عند التحقّق من الإجابة",
+        K.LOOKUP_HINT to "اضغط على أي كلمة لترى معناها.",
+        K.LOOKUP_NOT_IN_LIST to "هذه الكلمة ليست في قائمة كلمات التطبيق بعد.",
+        K.LOOKUP_LEVEL to "مستوى الكلمات {0}",
+        K.LOOKUP_FORM_OF to "{0} صيغة من {1}",
+        K.LOOKUP_ADD to "أضفها إلى مراجعتي",
+        K.LOOKUP_ADDED to "أُضيفت إلى مراجعتك",
+        K.LOOKUP_ALREADY to "موجودة في مراجعتك من قبل",
     ) }
 }

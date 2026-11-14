@@ -1670,5 +1670,15 @@ internal object EnglishStrings {
         K.DRILL_GUIDED_FAIL to "Your answer does not have what this step needs yet. Hear the model and try again.",
         K.DRILL_MODEL_ANSWER to "A model answer",
         K.DRILL_GUIDED_DONE to "Conversation finished: {0} of {1} answers understood.",
+        K.SET_HAPTICS_SUB to "A short vibration when an answer is right or wrong",
+        K.SET_ANSWER_SOUNDS to "Answer sounds",
+        K.SET_ANSWER_SOUNDS_SUB to "A short sound when an answer is checked",
+        K.LOOKUP_HINT to "Tap a word to see its meaning.",
+        K.LOOKUP_NOT_IN_LIST to "This word is not in the app's word list yet.",
+        K.LOOKUP_LEVEL to "Word level {0}",
+        K.LOOKUP_FORM_OF to "{0} is a form of {1}",
+        K.LOOKUP_ADD to "Add to my review",
+        K.LOOKUP_ADDED to "Added to your review",
+        K.LOOKUP_ALREADY to "Already in your review",
     ) }
 }

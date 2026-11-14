@@ -258,7 +258,8 @@ private fun AccessibilityPage() {
         SwitchRow(s[K.SET_REDUCED_MOTION], a.reducedMotion, { v -> update { it.copy(accessibility = it.accessibility.copy(reducedMotion = v)) } }, subtitle = s[K.SET_REDUCED_MOTION_SUB])
         SwitchRow(s[K.SET_LARGER_TEXT], a.largerText, { v -> update { it.copy(accessibility = it.accessibility.copy(largerText = v)) } }, subtitle = s[K.SET_LARGER_TEXT_SUB])
         SwitchRow(s[K.SET_HIGH_CONTRAST], a.highContrast, { v -> update { it.copy(accessibility = it.accessibility.copy(highContrast = v)) } })
-        SwitchRow(s[K.SET_HAPTICS], a.hapticFeedback, { v -> update { it.copy(accessibility = it.accessibility.copy(hapticFeedback = v)) } })
+        SwitchRow(s[K.SET_HAPTICS], a.hapticFeedback, { v -> update { it.copy(accessibility = it.accessibility.copy(hapticFeedback = v)) } }, subtitle = s[K.SET_HAPTICS_SUB])
+        SwitchRow(s[K.SET_ANSWER_SOUNDS], a.answerSounds, { v -> update { it.copy(accessibility = it.accessibility.copy(answerSounds = v)) } }, subtitle = s[K.SET_ANSWER_SOUNDS_SUB])
         SwitchRow(s[K.SET_TRANSLATIONS_DEFAULT], app.settings.showTranslationsByDefault, { v -> update { it.copy(showTranslationsByDefault = v) } })
         SwitchRow(s[K.SET_HINTS_DEFAULT], app.settings.showHintsByDefault, { v -> update { it.copy(showHintsByDefault = v) } })
     }

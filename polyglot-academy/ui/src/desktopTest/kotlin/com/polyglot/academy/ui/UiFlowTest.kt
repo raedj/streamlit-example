@@ -4,9 +4,13 @@ import androidx.compose.ui.test.ExperimentalTestApi
 import androidx.compose.ui.test.hasSetTextAction
 import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.onAllNodesWithText
+import androidx.compose.ui.test.onFirst
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performKeyInput
+import androidx.compose.ui.test.pressKey
 import androidx.compose.ui.test.performScrollTo
+import androidx.compose.ui.test.performSemanticsAction
 import androidx.compose.ui.test.performTextInput
 import androidx.compose.ui.test.performTouchInput
 import androidx.compose.ui.test.swipe
@@ -342,6 +346,41 @@ class UiFlowTest {
         waitForText("Not quite")
         onNodeWithText("Answer: is").assertExists()
         waitUntil(timeoutMillis = 5_000) { runBlocking { app.store.mistakes(LanguageCode.ENGLISH).first().isNotEmpty() } }
+    }
+
+    @Test fun enterChecksATypedAnswerAndThenGoesOn() = runDesktopComposeUiTest(800, 1700) {
+        val app = TestApp(); app.profile()
+        val lesson = com.polyglot.academy.core.content.Curriculum.of(LanguageCode.ENGLISH).lessonsById.getValue("en_l_greetings")
+        val idx = lesson.exercises.indexOfFirst { it is com.polyglot.academy.core.model.Exercise.FillInBlank }
+        runBlocking { app.services.study.saveResumePoint(lesson, idx) }
+        setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.HOME), Route.LessonPlayer(lesson.id))) }
+        waitUntil(timeoutMillis = 10_000) { onAllNodes(hasSetTextAction()).fetchSemanticsNodes().isNotEmpty() }
+        onNode(hasSetTextAction()).performTextInput("are")
+        onNode(hasSetTextAction()).performKeyInput { pressKey(androidx.compose.ui.input.key.Key.Enter) }
+        waitForText("Not quite")
+        // The verdict takes the focus, so the next Enter continues to the next exercise.
+        onNodeWithText("Not quite").performKeyInput { pressKey(androidx.compose.ui.input.key.Key.Enter) }
+        waitForText("${idx + 2}/${lesson.exercises.size}")
+    }
+
+    @Test fun aWordOfAnExampleCanBeTappedForItsMeaning() = runDesktopComposeUiTest(800, 1700) {
+        val app = TestApp(); app.profile()
+        val list = com.polyglot.academy.core.wordlist.WordLists.of(LanguageCode.ENGLISH)
+        val entry = list.level(1).first { it.examples.isNotEmpty() }
+        val sentence = entry.examples.first().sentence
+        val tapped = com.polyglot.academy.core.stories.StoryText.tokens(sentence, LanguageCode.ENGLISH, list.tapTerms)
+            .first { it.isWord && it.text.length > 2 && !it.text.equals(entry.term, ignoreCase = true) && list.lookup(it.text) != null }.text
+        val target = list.lookup(tapped)!!
+        setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.PRACTICE), Route.WordDetail(entry.id))) }
+        waitForText("Tap a word to see its meaning.")
+        onAllNodesWithText(tapped).onFirst().performScrollTo().performClick()
+        waitForText("Add to my review")
+        onAllNodesWithText(target.meaning.ar).onFirst().assertExists()
+        // By its click action: the "no voice for this language" message of the test machine may cover the button.
+        onNode(hasText("Add to my review") and androidx.compose.ui.test.hasClickAction())
+            .performSemanticsAction(androidx.compose.ui.semantics.SemanticsActions.OnClick)
+        waitUntil(timeoutMillis = 5_000) { onAllNodesWithText("your review", substring = true).fetchSemanticsNodes().isNotEmpty() }
+        waitUntil(timeoutMillis = 5_000) { runBlocking { app.store.state(target.reviewId) != null } }
     }
 
     @Test fun offlineConversationRespondsToTypedReply() = runDesktopComposeUiTest(800, 1700) {

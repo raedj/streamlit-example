@@ -8,6 +8,7 @@ import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
@@ -130,7 +131,7 @@ private fun SentenceReveal(sentence: String, translation: Gloss, lang: LanguageC
         Text(s[K.DRILL_SENTENCE_WAS], style = MaterialTheme.typography.labelMedium, color = PolyglotTheme.colors.textSecondary)
         Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
             AudioButton(s[K.PLAY_AUDIO], { speaker.toggle(sentence, lang) }, playing = speaker.playingText == sentence)
-            LearningText(sentence, lang, style = PolyglotTheme.learning.sentence, modifier = Modifier.weight(1f))
+            com.polyglot.academy.ui.feature.common.TappableSentence(sentence, lang, speaker, Modifier.weight(1f))
         }
         Text(translation.forLanguage(explain), style = MaterialTheme.typography.bodyMedium, color = PolyglotTheme.colors.textSecondary)
     }
@@ -153,12 +154,22 @@ fun SentenceListeningScreen() {
     var correct by remember { mutableIntStateOf(0) }
     var last by remember { mutableStateOf<Answer?>(null) }
     var practice by remember { mutableStateOf(app.services.study.practice(lang, SessionKind.LISTENING, "drill:sentences")) }
+    val keys = remember { com.polyglot.academy.ui.feature.lesson.ExerciseKeySlot() }
+    val inRound = round?.let { index < it.size } == true
+    com.polyglot.academy.ui.designsystem.KeyShortcuts(Triple(round, index, last != null), onEnter = {
+        when {
+            inRound && last != null -> { index++; last = null; true }
+            inRound -> keys.enter()
+            else -> false
+        }
+    }, onNumber = { n -> inRound && last == null && keys.number(n) }) {
+    CompositionLocalProvider(com.polyglot.academy.ui.feature.lesson.LocalExerciseKeys provides keys) {
     ScrollScreen(s[K.PRACTICE_SENT_LISTEN]) {
         if (voice == false) Banner(BannerKind.WARNING, s.f(K.LISTEN_NO_VOICE, Labels.language(s, lang)))
         val set = round
         if (set == null || index >= set.size) {
             Text(s[K.DRILL_LISTEN_INTRO], style = MaterialTheme.typography.bodyMedium, color = PolyglotTheme.colors.textSecondary)
-            if (set != null) FeedbackPanel(correct * 2 >= set.size, s.f(K.DRILL_DONE, correct, set.size), null)
+            if (set != null) FeedbackPanel(correct * 2 >= set.size, s.f(K.DRILL_DONE, correct, set.size), null, cue = false)
             if (level == null) return@ScrollScreen
             LevelPicker(level, pick)
             PrimaryButton(s[if (set == null) K.DRILL_START else K.DRILL_AGAIN], {
@@ -193,6 +204,7 @@ fun SentenceListeningScreen() {
         }
         if (voice == false && last == null) SecondaryButton(s[K.LISTEN_SKIP], { index++ }, Modifier.fillMaxWidth())
     }
+    } }
 }
 
 // ---------------- Writing sentences ----------------
@@ -215,11 +227,31 @@ fun SentenceWritingScreen() {
     var ai by remember(round, index) { mutableStateOf<WritingFeedback?>(null) }
     var aiError by remember(round, index) { mutableStateOf<String?>(null) }
     var loading by remember { mutableStateOf(false) }
+    fun checkWriting(item: SentenceItem) {
+        if (text.isBlank() || compared != null) return
+        val cmp = SentenceCompare.compare(text, item.sentence, lang)
+        compared = cmp
+        if (cmp.exact) {
+            exact++
+            // Only a sentence equal to the model is known to be right, so only that one is recorded.
+            val ex = Exercise.Translate("drill_write_${item.id}", Skill.WRITING, Gloss("Write the sentence.", "اكتب الجملة."), item.translation, listOf(item.sentence))
+            scope.launch { app.services.study.recordExercise(lang, null, ex, ExerciseOutcome(true, 1.0, item.sentence), text, 0, 0, item.translation.en) }
+        }
+    }
+    val current = round?.getOrNull(index)
+    com.polyglot.academy.ui.designsystem.KeyShortcuts(Triple(round, index, compared != null), onEnter = {
+        when {
+            current == null -> false
+            compared != null -> { index++; true }
+            text.isNotBlank() -> { checkWriting(current); true }
+            else -> false
+        }
+    }) {
     ScrollScreen(s[K.PRACTICE_SENT_WRITE]) {
         val set = round
         if (set == null || index >= set.size) {
             Text(s.f(K.DRILL_WRITE_INTRO, Labels.language(s, lang)), style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
-            if (set != null && set.isNotEmpty()) FeedbackPanel(true, s.f(K.DRILL_WRITE_DONE, exact, set.size), null)
+            if (set != null && set.isNotEmpty()) FeedbackPanel(true, s.f(K.DRILL_WRITE_DONE, exact, set.size), null, cue = false)
             if (level == null) return@ScrollScreen
             LevelPicker(level, pick)
             PrimaryButton(s[if (set == null) K.DRILL_START else K.DRILL_AGAIN], {
@@ -233,20 +265,11 @@ fun SentenceWritingScreen() {
             Text(item.translation.forLanguage(explain), style = MaterialTheme.typography.headlineSmall)
             Text(s.f(K.DRILL_WRITE_USE, item.entry.term), style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
         }
-        AppTextField(text, { text = it }, s[K.DRILL_WRITE_PLACEHOLDER], singleLine = false, minLines = 3,
+        AppTextField(text, { text = it }, s[K.DRILL_WRITE_PLACEHOLDER], singleLine = false, minLines = 3, onSubmit = { checkWriting(item) },
             textStyle = com.polyglot.academy.ui.designsystem.styleFor(lang, MaterialTheme.typography.bodyLarge))
         if (compared == null) {
             Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-                PrimaryButton(s[K.DRILL_WRITE_CHECK], {
-                    val cmp = SentenceCompare.compare(text, item.sentence, lang)
-                    compared = cmp
-                    if (cmp.exact) {
-                        exact++
-                        // Only a sentence equal to the model is known to be right, so only that one is recorded.
-                        val ex = Exercise.Translate("drill_write_${item.id}", Skill.WRITING, Gloss("Write the sentence.", "اكتب الجملة."), item.translation, listOf(item.sentence))
-                        scope.launch { app.services.study.recordExercise(lang, null, ex, ExerciseOutcome(true, 1.0, item.sentence), text, 0, 0, item.translation.en) }
-                    }
-                }, Modifier.weight(1f), enabled = text.isNotBlank())
+                PrimaryButton(s[K.DRILL_WRITE_CHECK], { checkWriting(item) }, Modifier.weight(1f), enabled = text.isNotBlank())
             }
         }
         compared?.let { cmp ->
@@ -286,6 +309,7 @@ fun SentenceWritingScreen() {
                 PrimaryButton(s[K.DRILL_NEXT], { index++ }, Modifier.weight(1f))
             }
         }
+    }
     }
 }
 
@@ -344,7 +368,7 @@ private fun WordSprint(lang: LanguageCode, level: Int, onRunning: (Boolean) -> U
         Text(s[K.DRILL_SPRINT_INTRO], style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
         result?.let { (r, before) ->
             FeedbackPanel(true, s.f(K.DRILL_SPRINT_RESULT, r.correct, (r.accuracy * 100).toInt()),
-                if (before == null || r.correct > before) s[K.DRILL_SPRINT_RECORD] else s.f(K.DRILL_SPRINT_BEST, before))
+                if (before == null || r.correct > before) s[K.DRILL_SPRINT_RECORD] else s.f(K.DRILL_SPRINT_BEST, before), cue = false)
             if (missed.isNotEmpty()) PolyCard {
                 Text(s[K.DRILL_SPRINT_MISSED], style = MaterialTheme.typography.labelLarge)
                 missed.distinctBy { it.id }.forEach { e -> Text("${e.term} — ${e.meaning.forLanguage(explain)}", style = MaterialTheme.typography.bodyMedium) }
@@ -368,15 +392,24 @@ private fun WordSprint(lang: LanguageCode, level: Int, onRunning: (Boolean) -> U
     Text(s.f(K.DRILL_SECONDS_LEFT, left), style = MaterialTheme.typography.titleLarge, color = if (left <= 10) c.error else c.textPrimary)
     LinearProgressIndicator(progress = { left.toFloat() / SpeedDrills.SPRINT_SECONDS }, modifier = Modifier.fillMaxWidth())
     val q = qs[index % qs.size]
-    PolyCard {
-        LearningText(q.entry.term, lang, style = if (lang == LanguageCode.MANDARIN) PolyglotTheme.learning.hanzi else PolyglotTheme.learning.term)
+    val cues = com.polyglot.academy.ui.designsystem.LocalAnswerCues.current
+    val haptic = androidx.compose.ui.platform.LocalHapticFeedback.current
+    fun choose(i: Int) {
+        if (left <= 0 || i !in q.options.indices) return
+        val right = i == q.answerIndex
+        if (right) correct++ else missed += q.entry
+        // A wrong answer is felt and heard at once, so the learner notices it without stopping.
+        if (cues.haptics && !right) haptic.performHapticFeedback(androidx.compose.ui.hapticfeedback.HapticFeedbackType.Reject)
+        cues.playSound(right)
+        index++
     }
-    q.options.forEachIndexed { i, o ->
-        ChoiceCard(o.meaning.forLanguage(explain), false, onClick = {
-            if (left <= 0) return@ChoiceCard
-            if (i == q.answerIndex) correct++ else missed += q.entry
-            index++
-        })
+    com.polyglot.academy.ui.designsystem.KeyShortcuts(Unit, onEnter = { false }, onNumber = { n -> choose(n - 1); true }) {
+        Column(verticalArrangement = Arrangement.spacedBy(PolyglotTheme.spacing.lg)) {
+            PolyCard {
+                LearningText(q.entry.term, lang, style = if (lang == LanguageCode.MANDARIN) PolyglotTheme.learning.hanzi else PolyglotTheme.learning.term)
+            }
+            q.options.forEachIndexed { i, o -> ChoiceCard(o.meaning.forLanguage(explain), false, onClick = { choose(i) }) }
+        }
     }
 }
 
@@ -400,7 +433,7 @@ private fun FastListening(lang: LanguageCode, level: Int, onRunning: (Boolean) -
     if (set == null || index >= set.size) {
         Text(s[K.DRILL_FAST_INTRO], style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
         if (set != null && set.isNotEmpty()) FeedbackPanel(correct * 2 >= set.size, s.f(K.DRILL_DONE, correct, set.size),
-            s.f(K.DRILL_FAST_RATE, (pace.rate * 100).toInt(), (pace.best * 100).toInt()))
+            s.f(K.DRILL_FAST_RATE, (pace.rate * 100).toInt(), (pace.best * 100).toInt()), cue = false)
         PrimaryButton(s[if (set == null) K.DRILL_START else K.DRILL_AGAIN], {
             scope.launch {
                 round = SentenceDrills.listening(WordLists.load(lang), level, ROUND, app.services.clock.nowMillis(), dictation = false).filterIsInstance<Exercise.MultipleChoice>()
@@ -417,27 +450,35 @@ private fun FastListening(lang: LanguageCode, level: Int, onRunning: (Boolean) -
     val sentence = q.audioText.orEmpty()
     LaunchedEffect(q.id) { speaker.play(sentence, lang, pace.rate) }
     AudioButton(s[K.PLAY_AUDIO], { speaker.play(sentence, lang, pace.rate) }, playing = speaker.playingText == sentence)
-    q.optionGlosses.orEmpty().forEachIndexed { i, g ->
-        ChoiceCard(g.forLanguage(explain), chosen == i || (chosen >= 0 && i == q.correctIndex),
-            subtitle = when { chosen < 0 -> null; i == q.correctIndex -> s[K.FEEDBACK_CORRECT]; i == chosen -> s[K.FEEDBACK_INCORRECT]; else -> null },
-            onClick = {
-                if (chosen >= 0) return@ChoiceCard
-                chosen = i
-                val right = i == q.correctIndex
-                if (right) correct++
-                pace.answer(right)
-                scope.launch {
-                    app.services.study.recordExercise(lang, null, q, ExerciseOutcome(right, if (right) 1.0 else 0.0, q.optionGlosses!![q.correctIndex].en), q.options[i], 0, 0, sentence)
-                    practice.answer(right)
-                }
-            })
+    val cues = com.polyglot.academy.ui.designsystem.LocalAnswerCues.current
+    fun choose(i: Int) {
+        if (chosen >= 0 || i !in q.options.indices) return
+        chosen = i
+        val right = i == q.correctIndex
+        if (right) correct++
+        pace.answer(right)
+        cues.playSound(right)
+        scope.launch {
+            app.services.study.recordExercise(lang, null, q, ExerciseOutcome(right, if (right) 1.0 else 0.0, q.optionGlosses!![q.correctIndex].en), q.options[i], 0, 0, sentence)
+            practice.answer(right)
+        }
     }
-    if (chosen >= 0) {
-        SentenceReveal(sentence, q.explanation ?: Gloss("", ""), lang, explain, speaker)
-        PrimaryButton(s[K.DRILL_NEXT], {
-            index++
-            if (index >= set.size) onRunning(false)
-        }, Modifier.fillMaxWidth())
+    fun next() {
+        index++
+        if (index >= set.size) onRunning(false)
+    }
+    com.polyglot.academy.ui.designsystem.KeyShortcuts(Pair(index, chosen >= 0), onEnter = { if (chosen >= 0) { next(); true } else false }, onNumber = { n -> if (chosen < 0) { choose(n - 1); true } else false }) {
+        Column(verticalArrangement = Arrangement.spacedBy(PolyglotTheme.spacing.lg)) {
+            q.optionGlosses.orEmpty().forEachIndexed { i, g ->
+                ChoiceCard(g.forLanguage(explain), chosen == i || (chosen >= 0 && i == q.correctIndex),
+                    subtitle = when { chosen < 0 -> null; i == q.correctIndex -> s[K.FEEDBACK_CORRECT]; i == chosen -> s[K.FEEDBACK_INCORRECT]; else -> null },
+                    onClick = { choose(i) })
+            }
+            if (chosen >= 0) {
+                SentenceReveal(sentence, q.explanation ?: Gloss("", ""), lang, explain, speaker)
+                PrimaryButton(s[K.DRILL_NEXT], { next() }, Modifier.fillMaxWidth())
+            }
+        }
     }
 }
 
@@ -489,7 +530,7 @@ private fun GuidedRun(scenario: RolePlayScenario, lang: LanguageCode, explain: L
     Text(scenario.title.forLanguage(explain), style = MaterialTheme.typography.titleLarge)
     if (index >= steps.size) {
         GuidedDialogue.closingLine(scenario)?.let { (line, tr) -> SentenceReveal(line, tr, lang, explain, speaker) }
-        FeedbackPanel(passed * 2 >= steps.size, s.f(K.DRILL_GUIDED_DONE, passed, steps.size), null)
+        FeedbackPanel(passed * 2 >= steps.size, s.f(K.DRILL_GUIDED_DONE, passed, steps.size), null, cue = false)
         PrimaryButton(s[K.DRILL_AGAIN], { index = 0; passed = 0 }, Modifier.fillMaxWidth())
         SecondaryButton(s[K.DRILL_GUIDED_CHOOSE], onExit, Modifier.fillMaxWidth())
         return
@@ -504,7 +545,7 @@ private fun GuidedRun(scenario: RolePlayScenario, lang: LanguageCode, explain: L
             if (!showText) QuietButton(s[K.DRILL_SHOW_TEXT], { showText = true })
         }
         if (showText) {
-            LearningText(step.partnerLine, lang, style = PolyglotTheme.learning.sentence)
+            com.polyglot.academy.ui.feature.common.TappableSentence(step.partnerLine, lang, speaker)
             Text(step.partnerTranslation.forLanguage(explain), style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
         }
     }
@@ -559,7 +600,7 @@ private fun GuidedRun(scenario: RolePlayScenario, lang: LanguageCode, explain: L
         Text(s[K.DRILL_MODEL_ANSWER], style = MaterialTheme.typography.labelMedium, color = c.textSecondary)
         Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
             AudioButton(s[K.PLAY_AUDIO], { speaker.toggle(step.modelAnswer, lang) }, playing = speaker.playingText == step.modelAnswer)
-            LearningText(step.modelAnswer, lang, style = PolyglotTheme.learning.sentence, modifier = Modifier.weight(1f))
+            com.polyglot.academy.ui.feature.common.TappableSentence(step.modelAnswer, lang, speaker, Modifier.weight(1f))
         }
     }
     Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
