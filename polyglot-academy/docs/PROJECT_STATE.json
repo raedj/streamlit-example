@@ -1,0 +1,301 @@
+{
+  "updated": "2026-10-25T20:00:00Z",
+  "branch": "ccr-e06ebaa4-5wjvye",
+  "current_phase": "Word-list programme: level 1 done for English, Spanish and French",
+  "completed_phases": [
+    "0 Environment audit",
+    "1 Requirements",
+    "2 Architecture",
+    "3 Design system",
+    "5 Local data architecture",
+    "9 AI provider abstraction",
+    "11 AI routing",
+    "14 Pedagogical engine",
+    "15 Vocabulary and grammar (content + engine)",
+    "18 Mandarin specialization (logic)",
+    "19 Study planner (logic)",
+    "23 Memory and relaxation (logic)",
+    "24 Assessments and analytics (logic)"
+  ],
+  "implemented_not_verified": [
+    "4 Android foundation (androidApp module written, not compiled)",
+    "6 Onboarding UI",
+    "7 Navigation and dashboard UI",
+    "8 Tutor UI",
+    "12 Speech infrastructure (Android adapters)",
+    "13 Conversational learning UI",
+    "16 Reading and writing UI",
+    "17 Listening and pronunciation UI",
+    "20 Professional tracks UI",
+    "21 Document import UI (text/subtitles only)",
+    "22 Audio/video (not implemented beyond subtitles)",
+    "25 Immersive learning (2D animated avatars)",
+    "26 Notifications (Android code)",
+    "27 Security review (logic level)"
+  ],
+  "remaining_phases": [
+    "10 Local AI runtime",
+    "28 Performance and accessibility on device",
+    "29 Full regression incl. UI",
+    "30 Build and release",
+    "31 Final audit"
+  ],
+  "last_build": {
+    "command": "./gradlew build -x :ui:desktopTest",
+    "result": "SUCCESS",
+    "android_typecheck": {
+      "command": "./gradlew -Ppolyglot.androidTypecheck=<android-all-15.jar> :android-typecheck:compileKotlin",
+      "result": "SUCCESS",
+      "scope": "Android framework API usage only; no AGP, resources or APK"
+    },
+    "android_debug_apk": {
+      "command": "./gradlew -Ppolyglot.android=true :androidApp:assembleDebug",
+      "result": "SUCCESS (Windows 11, JDK 17, Android SDK 35)",
+      "device_test": "Android 15 emulator, manual: onboarding, home, full lesson, tabs, offline tutor (ar UI); tr/ur/ms onboarding + lesson"
+    }
+  },
+  "last_tests": {
+    "total": 227,
+    "failed": 0,
+    "modules": {
+      "core": 171,
+      "data": 44,
+      "uicore": 12
+    },
+    "not_run": [
+      "ui:desktopTest (10 UI flow tests)",
+      "android tests"
+    ]
+  },
+  "critical_defects_open": [],
+  "blockers": [
+    "B-04 no AI API keys",
+    "B-06 no signing keystore",
+    "B-01/B-03 resolved on the owner's Windows machine (Google Maven, SDK and emulator available)"
+  ],
+  "pending_external_credentials": [
+    "AI provider API keys (optional)",
+    "release signing keystore"
+  ],
+  "next_actions": [
+    "Native-speaker review of Turkish, Urdu and Malay content (docs/CONTENT_SOURCES.md)",
+    "Word-list programme phase 1: file format, tools/gen_wordlists.py, validation tests, then level 1 for each language",
+    "Device test: TTS voices and speech recognition on a phone with Google services; TalkBack; reminders",
+    "Release build with R8 and a signing keystore; test the shrunk APK",
+    "Verify Azure pronunciation scoring, OpenAI Realtime calls and WebDAV sync with real accounts (K-17..K-19); check Azure locales for tr/ur/ms"
+  ],
+  "recent_changes": [
+    "French level 1 word list (300 lemmas with gender/article, elided forms and conjugations, 600 examples)",
+    "Spanish level 1 word list (300 lemmas with gender/article and conjugated forms, 600 examples); fixed name removal inside longer words in WordMatcher",
+    "Word lists: TSV format, tools/gen_wordlists.py (validates and generates per-level Kotlin), WordList/WordMatcher in core, WordListTest (ranks, levels, fields, example counts, word in example, 85% of example words within rank+300, linked review ids); English level 1 (300 lemmas, 600 examples) written",
+    "Added Turkish, Urdu and Malay as learning languages: starter course (A1-B2), business and finance tracks, travel phrasebook, 6 role-plays, 3 graded stories and placement bank each; offline tutor greetings; Urdu right-to-left with transliteration",
+    "Pronunciation scoring reports an unsupported language instead of guessing an Azure locale",
+    "Fixed after the first emulator run: Practice again, RTL punctuation in learned text, Arabic plural and preposition strings, 0% best score for started lessons",
+    "AI providers: added Mistral, Groq, xAI Grok, OpenRouter, Qwen and a custom OpenAI-compatible endpoint; suggested models and loading the model list from the learner's account; a provider per feature; OpenAI reasoning-model parameters",
+    "Daily XP loop: XP derived from stored activity, daily XP goal, three daily quests, levels, streak freezes (earned every 7 days, max 2)",
+    "Graded stories: 15 original stories (A1/A2/B1 x 5 languages) with tap-to-translate words and save-to-review; AI-written stories by interest, validated, stored and backed up",
+    "Detailed pronunciation scoring via Azure AI Speech (learner's key): per-word and per-phoneme scores, weak sounds to error log",
+    "Live voice calls via OpenAI Realtime WebSocket with barge-in, transcript corrections (coach format) and error log; Android/desktop PCM capture and playback",
+    "Animated avatars: blinking, breathing, nods, five expressions, loudness-driven mouth in live calls",
+    "End-to-end encrypted sync via the learner's WebDAV server (PBKDF2 + AES-256-GCM), conflict choice, device settings kept per device",
+    "AI language-coach protocol: first-session welcome and track choice (fluency, business, travel, exam prep with language-specific exams), adaptive warm-up from review items, micro-learning and role-play rules, Socratic four-part corrections (error, fix, reason, register + hint for minor errors), hidden error log grouped by error type and fed back for re-tests, frustration handling, ordered encouragement titles; 9 new tests",
+    "Backup restore (export format v2, transactional import, cloud AI forced off) — K-06",
+    "Android type-check module; fixed 3 null-dereference crashes (D-06..D-08)",
+    "Spanish/French/Arabic: +24 words, +3 lessons (home & weather, health, work), +2 role-plays and a 'for work' track each; track integrity validated — K-07 partly addressed",
+    "Restore re-schedules the restored reminder (AppServices.restore)",
+    "Mandarin 'for work' track: 10 words, polite-request grammar, lesson, client role-play",
+    "On-device PDF text extraction (K-04 partly addressed); scanned/encrypted PDFs reported with specific messages",
+    "PDF: glyph-position layout for Arabic lines (correct punctuation, numbers, Latin runs, ActualText), standard-14 font widths",
+    "Mandarin character writing practice: HanziData (79 characters), HandwritingScorer, Characters screen — K-09 partly addressed",
+    "'Next steps' unit in all five languages: future and conditionals (EN), future and subjunctive (ES, FR), past and future (AR), 了 and 比 (ZH); Arabic now reaches B1; HanziData 98 characters",
+    "Speaking path: 30 missions A1–C1, AI mission prompts with completion flag, mission evaluation, fluency report, speaking time per turn (DB v3)",
+    "Vision OCR for photos and scanned PDFs (Android PdfRenderer) with confirmation and privacy gate",
+    "Charts: tap-to-inspect tooltips; avatar mouth shapes driven by TTS word progress",
+    "Banking and finance track (8 words, lesson, disclaimer) for Spanish, French, Arabic, Mandarin",
+    "Android targets aligned to JVM 17; local build guide",
+    "Daily-life and travel pack for all five languages: 6 lessons, 48 phrases and 3 role-plays each; travel phrasebook screen; pinyin punctuation fix",
+    "Free conversation on any topic with the AI tutor (topic card, AI opens on the topic, correction in every reply, honest offline notice)"
+  ],
+  "languages": {
+    "learning": [
+      "en",
+      "zh",
+      "es",
+      "fr",
+      "ar",
+      "tr",
+      "ur",
+      "ms"
+    ],
+    "interface": [
+      "ar",
+      "en"
+    ],
+    "native_review": {
+      "en": "not reviewed",
+      "zh": "not reviewed",
+      "es": "not reviewed",
+      "fr": "not reviewed",
+      "ar": "not reviewed",
+      "tr": "not reviewed (AI-written 2026-10-25)",
+      "ur": "not reviewed (AI-written 2026-10-25)",
+      "ms": "not reviewed (AI-written 2026-10-25)"
+    }
+  },
+  "wordlist_programme": {
+    "status": "complete",
+    "format": "content/wordlists/<lang>.{words,examples}.tsv -> tools/gen_wordlists.py -> core/.../wordlist/generated (see content/wordlists/README.md)",
+    "ranking_source": "approximate (AI, general knowledge of spoken frequency); no licensed list verified yet — docs/CONTENT_SOURCES.md",
+    "completed": {
+      "en": {
+        "levels": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "last_rank": 3000
+      },
+      "es": {
+        "levels": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "last_rank": 3000
+      },
+      "fr": {
+        "levels": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "last_rank": 3000
+      },
+      "zh": {
+        "levels": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "last_rank": 3000
+      },
+      "ar": {
+        "levels": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "last_rank": 3000
+      },
+      "tr": {
+        "levels": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "last_rank": 3000
+      },
+      "ur": {
+        "levels": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "last_rank": 3000
+      },
+      "ms": {
+        "levels": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "last_rank": 3000
+      }
+    },
+    "resume_at": {
+      "note": "All ten levels (3000 words) are done for all eight languages."
+    },
+    "size_per_level": "about 41-59 KB compressed in the APK per level (measured: en 59 KB, es 43 KB, fr 41 KB; zh, ar, tr, ur and ms not measured)",
+    "in_app": {
+      "status": "done",
+      "date": "2026-10-30",
+      "screens": [
+        "WordLevels",
+        "WordLevel",
+        "WordDetail",
+        "WordTest"
+      ],
+      "service": "core/service/WordLevelService.kt",
+      "not_yet": [],
+      "test_modes": [
+        "word to meaning",
+        "meaning to word",
+        "listening (needs a voice)",
+        "mixed"
+      ],
+      "home_card": "first level not yet passed",
+      "lessons": "30 generated lessons of 10 words per level (core/content/WordLessons.kt)"
+    }
+  },
+  "known_issues_fixed": [
+    "K-24",
+    "K-25",
+    "K-26"
+  ]
+}

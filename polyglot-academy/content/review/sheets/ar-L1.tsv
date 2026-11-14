@@ -1,0 +1,901 @@
+item_id	kind	level	text	pron	en	ar	status	correction	reviewer	date	note
+ar_w_fi	word	1	فِي	fī	in	حرف جر يدل على الظرفية					
+ar_w_fi#ex1	example	1	المفتاح في الحقيبة الصغيرة.		The key is in the small bag.	المفتاح في الحقيبة الصغيرة.					
+ar_w_fi#ex2	example	1	نسكن في مدينة كبيرة.		We live in a big city.	نسكن في مدينة كبيرة.					
+ar_w_min	word	1	مِنْ	min	from; of	حرف جر لابتداء الغاية					
+ar_w_min#ex1	example	1	أنا من مصر، وأنت؟		I'm from Egypt, and you?	أنا من مصر، وأنت؟					
+ar_w_min#ex2	example	1	هذه هدية من صديقي.		This is a present from my friend.	هذه هدية من صديقي.					
+ar_w_ala	word	1	عَلَى	ʿalā	on	حرف جر يدل على الاستعلاء					
+ar_w_ala#ex1	example	1	القطة على السرير الآن.		The cat is on the bed now.	القطة على السرير الآن.					
+ar_w_ala#ex2	example	1	تركت المفتاح على الكرسي.		I left the key on the chair.	تركت المفتاح على الكرسي.					
+ar_w_ila	word	1	إِلَى	ilā	to	حرف جر لانتهاء الغاية					
+ar_w_ila#ex1	example	1	سافر أبي إلى القاهرة.		My father travelled to Cairo.	سافر أبي إلى القاهرة.					
+ar_w_ila#ex2	example	1	ذهبنا إلى المطعم في المساء.		We went to the restaurant in the evening.	ذهبنا إلى المطعم في المساء.					
+ar_w_ana	word	1	أَنَا	anā	I	ضمير المتكلم					
+ar_w_ana#ex1	example	1	أنا جائع جدا الآن.		I'm very hungry now.	أنا جائع جدا الآن.					
+ar_w_ana#ex2	example	1	أنا من هذه المدينة.		I'm from this city.	أنا من هذه المدينة.					
+ar_w_huwa	word	1	هُوَ	huwa	he; it	ضمير الغائب					
+ar_w_huwa#ex1	example	1	هو مدرس في مدرستنا.		He is a teacher at our school.	هو مدرس في مدرستنا.					
+ar_w_huwa#ex2	example	1	هو أخي الكبير وهو مدرس.		He is my older brother and he is a teacher.	هو أخي الكبير وهو مدرس.					
+ar_w_hiya	word	1	هِيَ	hiya	she; it	ضمير الغائبة					
+ar_w_hiya#ex1	example	1	هي طبيبة في المستشفى.		She is a doctor at the hospital.	هي طبيبة في المستشفى.					
+ar_w_hiya#ex2	example	1	هي تعمل في شركة كبيرة.		She works at a big company.	هي تعمل في شركة كبيرة.					
+ar_w_anta	word	1	أَنْتَ	anta	you (m.)	ضمير المخاطب					
+ar_w_anta#ex1	example	1	أنت صديق جيد جدا.		You are a very good friend.	أنت صديق جيد جدا.					
+ar_w_anta#ex2	example	1	هل أنت طالب هنا؟		Are you a student here?	هل أنت طالب هنا؟					
+ar_w_anti	word	1	أَنْتِ	anti	you (f.)	ضمير المخاطبة					
+ar_w_anti#ex1	example	1	أين تسكنين أنت الآن؟		Where do you (f.) live now?	أين تسكنين أنت الآن؟					
+ar_w_anti#ex2	example	1	أنت جميلة جدا اليوم.		You (f.) look very beautiful today.	أنت جميلة جدا اليوم.					
+ar_w_nahnu	word	1	نَحْنُ	naḥnu	we	ضمير المتكلمين					
+ar_w_nahnu#ex1	example	1	نحن طلاب في هذه المدرسة.		We are students at this school.	نحن طلاب في هذه المدرسة.					
+ar_w_nahnu#ex2	example	1	نحن نسكن بجانب البحر.		We live next to the sea.	نحن نسكن بجانب البحر.					
+ar_w_antum	word	1	أَنْتُمْ	antum	you (pl.)	ضمير المخاطبين					
+ar_w_antum#ex1	example	1	هل أنتم من هنا؟		Are you (pl.) from here?	هل أنتم من هنا؟					
+ar_w_antum#ex2	example	1	أنتم طلاب جيدون جدا.		You are very good students.	أنتم طلاب جيدون جدا.					
+ar_w_hum	word	1	هُمْ	hum	they	ضمير الغائبين					
+ar_w_hum#ex1	example	1	هم في المطعم الآن.		They are at the restaurant now.	هم في المطعم الآن.					
+ar_w_hum#ex2	example	1	هم يعملون في شركة كبيرة.		They work at a big company.	هم يعملون في شركة كبيرة.					
+ar_w_hadha	word	1	هَذَا	hādhā	this (m.)	اسم إشارة للمذكر القريب					
+ar_w_hadha#ex1	example	1	هذا الكتاب جميل جدا.		This book is very nice.	هذا الكتاب جميل جدا.					
+ar_w_hadha#ex2	example	1	هذا بيتنا الجديد في المدينة.		This is our new home in the city.	هذا بيتنا الجديد في المدينة.					
+ar_w_hadhihi	word	1	هَذِهِ	hādhihi	this (f.)	اسم إشارة للمؤنث القريب					
+ar_w_hadhihi#ex1	example	1	هذه غرفتي وهذه غرفة أختي.		This is my room and this is my sister's room.	هذه غرفتي وهذه غرفة أختي.					
+ar_w_hadhihi#ex2	example	1	هذه هدية صغيرة لك.		This is a small present for you.	هذه هدية صغيرة لك.					
+ar_w_dhalika	word	1	ذَلِكَ	dhālika	that (m.)	اسم إشارة للمذكر البعيد					
+ar_w_dhalika#ex1	example	1	ذلك الرجل مدرس أخي.		That man is my brother's teacher.	ذلك الرجل مدرس أخي.					
+ar_w_dhalika#ex2	example	1	هل ذلك البيت بيتكم؟		Is that house yours?	هل ذلك البيت بيتكم؟					
+ar_w_tilka	word	1	تِلْكَ	tilka	that (f.)	اسم إشارة للمؤنث البعيد					
+ar_w_tilka#ex1	example	1	تلك المرأة طبيبة في المستشفى.		That woman is a doctor at the hospital.	تلك المرأة طبيبة في المستشفى.					
+ar_w_tilka#ex2	example	1	تلك السيارة الحمراء لأبي.		That red car is my father's.	تلك السيارة الحمراء لأبي.					
+ar_w_alladhi	word	1	الَّذِي	alladhī	who, which (relative)	اسم موصول					
+ar_w_alladhi#ex1	example	1	الرجل الذي في المكتب مدرسي.		The man in the office is my teacher.	الرجل الذي في المكتب مدرسي.					
+ar_w_alladhi#ex2	example	1	هذه هي البنت التي تسكن بجانبنا.		This is the girl who lives next to us.	هذه هي البنت التي تسكن بجانبنا.					
+ar_w_la	word	1	لَا	lā	no; not	حرف نفي					
+ar_w_la#ex1	example	1	لا، أنا لا أشرب القهوة.		No, I don't drink coffee.	لا، أنا لا أشرب القهوة.					
+ar_w_la#ex2	example	1	لا أعرف أين المفتاح.		I don't know where the key is.	لا أعرف أين المفتاح.					
+ar_w_naam	word	1	نَعَمْ	naʿam	yes	حرف جواب					
+ar_w_naam#ex1	example	1	نعم، أنا من هنا.		Yes, I'm from here.	نعم، أنا من هنا.					
+ar_w_naam#ex2	example	1	نعم، أريد شايا من فضلك.		Yes, I'd like some tea, please.	نعم، أريد شايا من فضلك.					
+ar_w_ma	word	1	مَا	mā	what; not	اسم استفهام، وحرف نفي					
+ar_w_ma#ex1	example	1	ما اسم هذا الشيء؟		What is this thing called?	ما اسم هذا الشيء؟					
+ar_w_ma#ex2	example	1	ما هذا الطعام اللذيذ؟		What is this delicious food?	ما هذا الطعام اللذيذ؟					
+ar_w_madha	word	1	مَاذَا	mādhā	what (before a verb)	اسم استفهام					
+ar_w_madha#ex1	example	1	ماذا تريد أن تأكل؟		What do you want to eat?	ماذا تريد أن تأكل؟					
+ar_w_madha#ex2	example	1	ماذا فعلت أمس في المساء؟		What did you do yesterday evening?	ماذا فعلت أمس في المساء؟					
+ar_w_man	word	1	مَنْ	man	who	اسم استفهام عن العاقل					
+ar_w_man#ex1	example	1	من ذلك الرجل الذي هناك؟		Who is that man over there?	من ذلك الرجل الذي هناك؟					
+ar_w_man#ex2	example	1	من يريد أن يشرب الشاي؟		Who wants to drink tea?	من يريد أن يشرب الشاي؟					
+ar_w_ayna	word	1	أَيْنَ	ayna	where	اسم استفهام عن المكان					
+ar_w_ayna#ex1	example	1	أين تسكن أنت الآن؟		Where do you live now?	أين تسكن أنت الآن؟					
+ar_w_ayna#ex2	example	1	أين الكتاب الذي اشتريته؟		Where is the book you bought?	أين الكتاب الذي اشتريته؟					
+ar_w_mata	word	1	مَتَى	matā	when	اسم استفهام عن الزمان					
+ar_w_mata#ex1	example	1	متى يبدأ الدرس اليوم؟		When does the lesson start today?	متى يبدأ الدرس اليوم؟					
+ar_w_mata#ex2	example	1	متى ترجع إلى البيت؟		When are you coming back home?	متى ترجع إلى البيت؟					
+ar_w_kayfa	word	1	كَيْفَ	kayfa	how	اسم استفهام عن الحال					
+ar_w_kayfa#ex1	example	1	كيف أذهب إلى المطار؟		How do I get to the airport?	كيف أذهب إلى المطار؟					
+ar_w_kayfa#ex2	example	1	كيف تذهب إلى العمل؟		How do you get to work?	كيف تذهب إلى العمل؟					
+ar_w_limadha	word	1	لِمَاذَا	limādhā	why	اسم استفهام عن السبب					
+ar_w_limadha#ex1	example	1	لماذا لم تذهب إلى المدرسة؟		Why didn't you go to school?	لماذا لم تذهب إلى المدرسة؟					
+ar_w_limadha#ex2	example	1	لماذا أنت حزين اليوم؟		Why are you sad today?	لماذا أنت حزين اليوم؟					
+ar_w_kam	word	1	كَمْ	kam	how many, how much	اسم استفهام عن العدد					
+ar_w_kam#ex1	example	1	كم ساعة تعمل كل يوم؟		How many hours do you work every day?	كم ساعة تعمل كل يوم؟					
+ar_w_kam#ex2	example	1	كم أخا وأختا عندك؟		How many brothers and sisters do you have?	كم أخا وأختا عندك؟					
+ar_w_hal	word	1	هَلْ	hal	question particle (yes/no)	حرف استفهام					
+ar_w_hal#ex1	example	1	هل عندك وقت الآن؟		Do you have time now?	هل عندك وقت الآن؟					
+ar_w_hal#ex2	example	1	هل هذا بيتك الجديد؟		Is this your new home?	هل هذا بيتك الجديد؟					
+ar_w_laysa	word	1	لَيْسَ	laysa	is not	فعل ناقص للنفي					
+ar_w_laysa#ex1	example	1	البيت ليس بعيدا عن هنا.		The house isn't far from here.	البيت ليس بعيدا عن هنا.					
+ar_w_laysa#ex2	example	1	أنا لست مشغولا اليوم.		I'm not busy today.	أنا لست مشغولا اليوم.					
+ar_w_lam	word	1	لَمْ	lam	did not (+ verb)	حرف نفي للماضي					
+ar_w_lam#ex1	example	1	لم يأكل أخي الفطور اليوم.		My brother didn't eat breakfast today.	لم يأكل أخي الفطور اليوم.					
+ar_w_lam#ex2	example	1	لم أذهب إلى العمل أمس.		I didn't go to work yesterday.	لم أذهب إلى العمل أمس.					
+ar_w_an	word	1	أَنْ	an	to, that (+ verb)	حرف مصدري					
+ar_w_an#ex1	example	1	أريد أن أشرب الماء.		I want to drink some water.	أريد أن أشرب الماء.					
+ar_w_an#ex2	example	1	أحب أن أقرأ في المساء.		I like to read in the evening.	أحب أن أقرأ في المساء.					
+ar_w_maa	word	1	مَعَ	maʿa	with	ظرف يدل على المصاحبة					
+ar_w_maa#ex1	example	1	أذهب إلى السوق مع أمي.		I go to the market with my mother.	أذهب إلى السوق مع أمي.					
+ar_w_maa#ex2	example	1	هل تذهب معي إلى السوق؟		Will you go to the market with me?	هل تذهب معي إلى السوق؟					
+ar_w_inda	word	1	عِنْدَ	ʿinda	at; (to) have	ظرف يدل على المكان والملك					
+ar_w_inda#ex1	example	1	عندي أخ واحد وأختان.		I have one brother and two sisters.	عندي أخ واحد وأختان.					
+ar_w_inda#ex2	example	1	الطبيب عند المريض الآن.		The doctor is with the patient now.	الطبيب عند المريض الآن.					
+ar_w_li	word	1	لِ	li	for; belonging to	حرف جر للملك					
+ar_w_li#ex1	example	1	هذا الكتاب لي وليس لك.		This book is mine, not yours.	هذا الكتاب لي وليس لك.					
+ar_w_li#ex2	example	1	هذه الحقيبة لي، وتلك لأختي.		This bag is mine, and that one is my sister's.	هذه الحقيبة لي، وتلك لأختي.					
+ar_w_an_about	word	1	عَنْ	ʿan	about; from	حرف جر للمجاوزة					
+ar_w_an_about#ex1	example	1	أبحث عن مفتاح السيارة.		I'm looking for the car key.	أبحث عن مفتاح السيارة.					
+ar_w_an_about#ex2	example	1	تكلمنا عن العطلة في المساء.		We talked about the holiday in the evening.	تكلمنا عن العطلة في المساء.					
+ar_w_kull	word	1	كُلّ	kull	every; all	لفظ يدل على الشمول					
+ar_w_kull#ex1	example	1	كل الطلاب في المدرسة الآن.		All the students are at school now.	كل الطلاب في المدرسة الآن.					
+ar_w_kull#ex2	example	1	أذهب إلى السوق كل أسبوع.		I go to the market every week.	أذهب إلى السوق كل أسبوع.					
+ar_w_bad	word	1	بَعْض	baʿḍ	some	جزء من الشيء					
+ar_w_bad#ex1	example	1	عندي بعض الأسئلة عن الدرس.		I have some questions about the lesson.	عندي بعض الأسئلة عن الدرس.					
+ar_w_bad#ex2	example	1	بعض الطلاب في المكتبة.		Some of the students are in the library.	بعض الطلاب في المكتبة.					
+ar_w_qabla	word	1	قَبْلَ	qabla	before	ظرف للزمان السابق					
+ar_w_qabla#ex1	example	1	وصلت إلى البيت قبل ساعة.		I got home an hour ago.	وصلت إلى البيت قبل ساعة.					
+ar_w_qabla#ex2	example	1	أشرب القهوة قبل العمل.		I drink coffee before work.	أشرب القهوة قبل العمل.					
+ar_w_bada	word	1	بَعْدَ	baʿda	after	ظرف للزمان اللاحق					
+ar_w_bada#ex1	example	1	نشرب الشاي بعد الغداء.		We drink tea after lunch.	نشرب الشاي بعد الغداء.					
+ar_w_bada#ex2	example	1	سأتصل بأمي بعد الدرس.		I'll call my mother after the lesson.	سأتصل بأمي بعد الدرس.					
+ar_w_amama	word	1	أَمَامَ	amāma	in front of	ظرف مكان					
+ar_w_amama#ex1	example	1	أنتظرك أمام باب المدرسة.		I'll wait for you in front of the school gate.	أنتظرك أمام باب المدرسة.					
+ar_w_amama#ex2	example	1	يوجد مطعم جديد أمام المحطة.		There is a new restaurant in front of the station.	يوجد مطعم جديد أمام المحطة.					
+ar_w_khalfa	word	1	خَلْفَ	khalfa	behind	ظرف مكان					
+ar_w_khalfa#ex1	example	1	يوجد مسجد كبير خلف المدرسة.		There is a big mosque behind the school.	يوجد مسجد كبير خلف المدرسة.					
+ar_w_khalfa#ex2	example	1	جلست خلف أخي في السيارة.		I sat behind my brother in the car.	جلست خلف أخي في السيارة.					
+ar_w_tahta	word	1	تَحْتَ	taḥta	under	ظرف مكان					
+ar_w_tahta#ex1	example	1	القطة تحت الطاولة الآن.		The cat is under the table now.	القطة تحت الطاولة الآن.					
+ar_w_tahta#ex2	example	1	حقيبتي تحت السرير في غرفتي.		My bag is under the bed in my room.	حقيبتي تحت السرير في غرفتي.					
+ar_w_fawqa	word	1	فَوْقَ	fawqa	above, on top of	ظرف مكان					
+ar_w_fawqa#ex1	example	1	كتبي فوق الطاولة في المكتب.		My books are on the desk in the office.	كتبي فوق الطاولة في المكتب.					
+ar_w_fawqa#ex2	example	1	القطة فوق السيارة الآن.		The cat is on top of the car now.	القطة فوق السيارة الآن.					
+ar_w_bayna	word	1	بَيْنَ	bayna	between	ظرف مكان					
+ar_w_bayna#ex1	example	1	البيت بين المسجد والمدرسة.		The house is between the mosque and the school.	البيت بين المسجد والمدرسة.					
+ar_w_bayna#ex2	example	1	جلست بين أبي وأمي.		I sat between my father and my mother.	جلست بين أبي وأمي.					
+ar_w_aw	word	1	أَوْ	aw	or	حرف عطف للتخيير					
+ar_w_aw#ex1	example	1	نذهب بالقطار أو بالحافلة.		We'll go by train or by bus.	نذهب بالقطار أو بالحافلة.					
+ar_w_aw#ex2	example	1	أسافر بالسيارة أو بالقطار.		I travel by car or by train.	أسافر بالسيارة أو بالقطار.					
+ar_w_lakin	word	1	لَكِنْ	lākin	but	حرف استدراك					
+ar_w_lakin#ex1	example	1	البيت صغير لكن جميل.		The house is small but beautiful.	البيت صغير لكن جميل.					
+ar_w_lakin#ex2	example	1	أريد أن أذهب، لكن عندي عمل.		I want to go, but I have work.	أريد أن أذهب، لكن عندي عمل.					
+ar_w_thumma	word	1	ثُمَّ	thumma	then	حرف عطف للترتيب					
+ar_w_thumma#ex1	example	1	أكلت الفطور ثم ذهبت إلى العمل.		I had breakfast and then went to work.	أكلت الفطور ثم ذهبت إلى العمل.					
+ar_w_thumma#ex2	example	1	نشرب القهوة ثم نبدأ العمل.		We drink coffee, then we start work.	نشرب القهوة ثم نبدأ العمل.					
+ar_w_lianna	word	1	لِأَنَّ	li-anna	because	حرف تعليل					
+ar_w_lianna#ex1	example	1	لم أذهب لأنني مريض.		I didn't go because I'm ill.	لم أذهب لأنني مريض.					
+ar_w_lianna#ex2	example	1	أشرب الماء لأن الطقس حار.		I'm drinking water because it's hot.	أشرب الماء لأن الطقس حار.					
+ar_w_idha	word	1	إِذَا	idhā	if; when	أداة شرط					
+ar_w_idha#ex1	example	1	إذا كان الطقس جميلا، نذهب إلى البحر.		If the weather is nice, we'll go to the sea.	إذا كان الطقس جميلا، نذهب إلى البحر.					
+ar_w_idha#ex2	example	1	إذا عندك سؤال، اسألني.		If you have a question, ask me.	إذا عندك سؤال، اسألني.					
+ar_w_indama	word	1	عِنْدَمَا	ʿindamā	when (not a question)	ظرف زمان					
+ar_w_indama#ex1	example	1	عندما أكون مريضا، أنام كثيرا.		When I'm ill, I sleep a lot.	عندما أكون مريضا، أنام كثيرا.					
+ar_w_indama#ex2	example	1	عندما وصلت، كان أبي في البيت.		When I arrived, my father was at home.	عندما وصلت، كان أبي في البيت.					
+ar_w_hatta	word	1	حَتَّى	ḥattā	until; even	حرف غاية					
+ar_w_hatta#ex1	example	1	انتظرتك في المحطة حتى المساء.		I waited for you at the station until the evening.	انتظرتك في المحطة حتى المساء.					
+ar_w_hatta#ex2	example	1	أعمل من الصباح حتى الليل.		I work from morning until night.	أعمل من الصباح حتى الليل.					
+ar_w_aydan	word	1	أَيْضًا	ayḍan	also, too	كذلك					
+ar_w_aydan#ex1	example	1	أنا أيضا طالب في الجامعة.		I'm a university student too.	أنا أيضا طالب في الجامعة.					
+ar_w_aydan#ex2	example	1	أريد شايا أيضا من فضلك.		I'd like some tea too, please.	أريد شايا أيضا من فضلك.					
+ar_w_jiddan	word	1	جِدًّا	jiddan	very	كثيرًا					
+ar_w_jiddan#ex1	example	1	الطقس حار جدا اليوم.		It's very hot today.	الطقس حار جدا اليوم.					
+ar_w_jiddan#ex2	example	1	بيت أخي كبير جدا.		My brother's house is very big.	بيت أخي كبير جدا.					
+ar_w_faqat	word	1	فَقَطْ	faqaṭ	only	لا غير					
+ar_w_faqat#ex1	example	1	عندي أخ واحد فقط.		I have only one brother.	عندي أخ واحد فقط.					
+ar_w_faqat#ex2	example	1	في الصباح أشرب القهوة فقط.		In the morning I only drink coffee.	في الصباح أشرب القهوة فقط.					
+ar_w_alan	word	1	الْآنَ	al-āna	now	في هذا الوقت					
+ar_w_alan#ex1	example	1	يجب أن نذهب الآن.		We have to go now.	يجب أن نذهب الآن.					
+ar_w_alan#ex2	example	1	الآن أفهم الدرس جيدا.		Now I understand the lesson well.	الآن أفهم الدرس جيدا.					
+ar_w_alyawm	word	1	الْيَوْمَ	al-yawma	today	هذا اليوم					
+ar_w_alyawm#ex1	example	1	الطقس جميل جدا اليوم.		The weather is lovely today.	الطقس جميل جدا اليوم.					
+ar_w_alyawm#ex2	example	1	ماذا تفعل اليوم في المساء؟		What are you doing this evening?	ماذا تفعل اليوم في المساء؟					
+ar_w_ghadan	word	1	غَدًا	ghadan	tomorrow	اليوم التالي					
+ar_w_ghadan#ex1	example	1	سأسافر غدا إلى القاهرة.		I'm travelling to Cairo tomorrow.	سأسافر غدا إلى القاهرة.					
+ar_w_ghadan#ex2	example	1	هل عندك درس غدا؟		Do you have a lesson tomorrow?	هل عندك درس غدا؟					
+ar_w_ams	word	1	أَمْسِ	amsi	yesterday	اليوم الذي قبل اليوم					
+ar_w_ams#ex1	example	1	ذهبت إلى السوق أمس.		I went to the market yesterday.	ذهبت إلى السوق أمس.					
+ar_w_ams#ex2	example	1	كان الطقس باردا أمس.		It was cold yesterday.	كان الطقس باردا أمس.					
+ar_w_daiman	word	1	دَائِمًا	dāʾiman	always	في كل وقت					
+ar_w_daiman#ex1	example	1	أبي يشرب القهوة دائما.		My father always drinks coffee.	أبي يشرب القهوة دائما.					
+ar_w_daiman#ex2	example	1	أنت دائما في المكتب.		You're always at the office.	أنت دائما في المكتب.					
+ar_w_ahyanan	word	1	أَحْيَانًا	aḥyānan	sometimes	في بعض الأوقات					
+ar_w_ahyanan#ex1	example	1	أحيانا نأكل في المطعم.		Sometimes we eat at a restaurant.	أحيانا نأكل في المطعم.					
+ar_w_ahyanan#ex2	example	1	أحيانا أمشي إلى العمل.		Sometimes I walk to work.	أحيانا أمشي إلى العمل.					
+ar_w_maan	word	1	مَعًا	maʿan	together	جميعًا					
+ar_w_maan#ex1	example	1	نحن نعمل معا في الشركة.		We work together at the company.	نحن نعمل معا في الشركة.					
+ar_w_maan#ex2	example	1	لنأكل الغداء معا اليوم.		Let's have lunch together today.	لنأكل الغداء معا اليوم.					
+ar_w_sawfa	word	1	سَوْفَ	sawfa	will (future)	حرف استقبال					
+ar_w_sawfa#ex1	example	1	سوف أسافر في الصيف.		I will travel in the summer.	سوف أسافر في الصيف.					
+ar_w_sawfa#ex2	example	1	سوف نذهب إلى البحر غدا.		We will go to the sea tomorrow.	سوف نذهب إلى البحر غدا.					
+ar_w_huna	word	1	هُنَا	hunā	here	في هذا المكان					
+ar_w_huna#ex1	example	1	تعال هنا من فضلك.		Come here, please.	تعال هنا من فضلك.					
+ar_w_huna#ex2	example	1	هل يوجد مطعم هنا؟		Is there a restaurant here?	هل يوجد مطعم هنا؟					
+ar_w_hunaka	word	1	هُنَاكَ	hunāka	there	في ذلك المكان					
+ar_w_hunaka#ex1	example	1	المحطة هناك بجانب المسجد.		The station is over there, next to the mosque.	المحطة هناك بجانب المسجد.					
+ar_w_hunaka#ex2	example	1	هناك قطة تحت السيارة.		There's a cat under the car.	هناك قطة تحت السيارة.					
+ar_w_kana	word	1	كَانَ	kāna	to be (past)	فعل ناقص					
+ar_w_kana#ex1	example	1	كان الطقس جميلا أمس.		The weather was nice yesterday.	كان الطقس جميلا أمس.					
+ar_w_kana#ex2	example	1	كنت في البيت في المساء.		I was at home in the evening.	كنت في البيت في المساء.					
+ar_w_qala	word	1	قَالَ	qāla	to say	تكلّم بكلام					
+ar_w_qala#ex1	example	1	قال المدرس إن الدرس سهل.		The teacher said the lesson is easy.	قال المدرس إن الدرس سهل.					
+ar_w_qala#ex2	example	1	ماذا قال لك الطبيب؟		What did the doctor tell you?	ماذا قال لك الطبيب؟					
+ar_w_dhahaba	word	1	ذَهَبَ	dhahaba	to go	مضى إلى مكان					
+ar_w_dhahaba#ex1	example	1	ذهبنا إلى البحر في الصيف.		We went to the sea in the summer.	ذهبنا إلى البحر في الصيف.					
+ar_w_dhahaba#ex2	example	1	إلى أين ذهب أخوك؟		Where did your brother go?	إلى أين ذهب أخوك؟					
+ar_w_jaa	word	1	جَاءَ	jāʾa	to come	أتى					
+ar_w_jaa#ex1	example	1	جاء صديقي إلى بيتي أمس.		My friend came to my home yesterday.	جاء صديقي إلى بيتي أمس.					
+ar_w_jaa#ex2	example	1	متى جئت إلى هنا؟		When did you come here?	متى جئت إلى هنا؟					
+ar_w_arada	word	1	أَرَادَ	arāda	to want	رغب في					
+ar_w_arada#ex1	example	1	أريد أن أشتري سيارة.		I want to buy a car.	أريد أن أشتري سيارة.					
+ar_w_arada#ex2	example	1	ماذا تريد أن تشتري؟		What do you want to buy?	ماذا تريد أن تشتري؟					
+ar_w_ahabba	word	1	أَحَبَّ	aḥabba	to love, to like	مال إلى الشيء					
+ar_w_ahabba#ex1	example	1	أحب القهوة كثيرا في الصباح.		I really like coffee in the morning.	أحب القهوة كثيرا في الصباح.					
+ar_w_ahabba#ex2	example	1	أختي تحب الرياضة كثيرا.		My sister really likes sport.	أختي تحب الرياضة كثيرا.					
+ar_w_arafa	word	1	عَرَفَ	ʿarafa	to know	عَلِمَ					
+ar_w_arafa#ex1	example	1	لا أعرف هذا الرجل.		I don't know this man.	لا أعرف هذا الرجل.					
+ar_w_arafa#ex2	example	1	هل تعرف أين المحطة؟		Do you know where the station is?	هل تعرف أين المحطة؟					
+ar_w_akala	word	1	أَكَلَ	akala	to eat	تناول الطعام					
+ar_w_akala#ex1	example	1	أكلنا كثيرا في المطعم أمس.		We ate a lot at the restaurant yesterday.	أكلنا كثيرا في المطعم أمس.					
+ar_w_akala#ex2	example	1	أنا لا آكل اللحم.		I don't eat meat.	أنا لا آكل اللحم.					
+ar_w_shariba	word	1	شَرِبَ	shariba	to drink	تناول الماء ونحوه					
+ar_w_shariba#ex1	example	1	شربت كثيرا من الماء اليوم.		I drank a lot of water today.	شربت كثيرا من الماء اليوم.					
+ar_w_shariba#ex2	example	1	أبي لا يشرب القهوة.		My father doesn't drink coffee.	أبي لا يشرب القهوة.					
+ar_w_raa	word	1	رَأَى	raʾā	to see	أبصر					
+ar_w_raa#ex1	example	1	رأيت صديقك في السوق.		I saw your friend at the market.	رأيت صديقك في السوق.					
+ar_w_raa#ex2	example	1	هل ترى تلك السيارة؟		Do you see that car?	هل ترى تلك السيارة؟					
+ar_w_samia	word	1	سَمِعَ	samiʿa	to hear	أدرك بأذنه					
+ar_w_samia#ex1	example	1	هل تسمعني جيدا الآن؟		Can you hear me well now?	هل تسمعني جيدا الآن؟					
+ar_w_samia#ex2	example	1	سمعت أن المطعم الجديد جيد.		I heard the new restaurant is good.	سمعت أن المطعم الجديد جيد.					
+ar_w_qaraa	word	1	قَرَأَ	qaraʾa	to read	نطق بالمكتوب أو تتبّعه					
+ar_w_qaraa#ex1	example	1	قرأت كتابا جميلا في العطلة.		I read a nice book on holiday.	قرأت كتابا جميلا في العطلة.					
+ar_w_qaraa#ex2	example	1	أقرأ كتابا كل أسبوع.		I read a book every week.	أقرأ كتابا كل أسبوع.					
+ar_w_kataba	word	1	كَتَبَ	kataba	to write	خطّ الحروف					
+ar_w_kataba#ex1	example	1	أكتب رسالة إلى صديقي.		I'm writing a letter to my friend.	أكتب رسالة إلى صديقي.					
+ar_w_kataba#ex2	example	1	كتبت اسمي على الورقة.		I wrote my name on the paper.	كتبت اسمي على الورقة.					
+ar_w_darasa	word	1	دَرَسَ	darasa	to study	تعلّم					
+ar_w_darasa#ex1	example	1	أدرس اللغة العربية في الجامعة.		I study Arabic at university.	أدرس اللغة العربية في الجامعة.					
+ar_w_darasa#ex2	example	1	درسنا كثيرا أمس في المكتبة.		We studied a lot in the library yesterday.	درسنا كثيرا أمس في المكتبة.					
+ar_w_amila	word	1	عَمِلَ	ʿamila	to work	اشتغل					
+ar_w_amila#ex1	example	1	أعمل في مستشفى المدينة.		I work at the city hospital.	أعمل في مستشفى المدينة.					
+ar_w_amila#ex2	example	1	أين تعمل أمك الآن؟		Where does your mother work now?	أين تعمل أمك الآن؟					
+ar_w_faala	word	1	فَعَلَ	faʿala	to do	عمل					
+ar_w_faala#ex1	example	1	ماذا تفعل في يوم الجمعة؟		What do you do on Fridays?	ماذا تفعل في يوم الجمعة؟					
+ar_w_faala#ex2	example	1	لا أعرف ماذا أفعل.		I don't know what to do.	لا أعرف ماذا أفعل.					
+ar_w_ata	word	1	أَعْطَى	aʿṭā	to give	منح					
+ar_w_ata#ex1	example	1	أعطني الحقيبة من فضلك.		Give me the bag, please.	أعطني الحقيبة من فضلك.					
+ar_w_ata#ex2	example	1	أعطيت أختي هدية جميلة.		I gave my sister a lovely present.	أعطيت أختي هدية جميلة.					
+ar_w_akhadha	word	1	أَخَذَ	akhadha	to take	تناول					
+ar_w_akhadha#ex1	example	1	خذ هذا المفتاح من فضلك.		Take this key, please.	خذ هذا المفتاح من فضلك.					
+ar_w_akhadha#ex2	example	1	أخذت الحافلة إلى العمل.		I took the bus to work.	أخذت الحافلة إلى العمل.					
+ar_w_fataha	word	1	فَتَحَ	fataḥa	to open	ضدّ أغلق					
+ar_w_fataha#ex1	example	1	يفتح السوق في الصباح.		The market opens in the morning.	يفتح السوق في الصباح.					
+ar_w_fataha#ex2	example	1	فتحت الحقيبة ووجدت المفتاح.		I opened the bag and found the key.	فتحت الحقيبة ووجدت المفتاح.					
+ar_w_aghlaqa	word	1	أَغْلَقَ	aghlaqa	to close	ضدّ فتح					
+ar_w_aghlaqa#ex1	example	1	أغلق الباب من فضلك.		Close the door, please.	أغلق الباب من فضلك.					
+ar_w_aghlaqa#ex2	example	1	أغلقت النافذة لأن الطقس بارد.		I closed the window because it's cold.	أغلقت النافذة لأن الطقس بارد.					
+ar_w_jalasa	word	1	جَلَسَ	jalasa	to sit	قعد					
+ar_w_jalasa#ex1	example	1	جلسنا في المطعم ساعة.		We sat in the restaurant for an hour.	جلسنا في المطعم ساعة.					
+ar_w_jalasa#ex2	example	1	اجلس هنا من فضلك.		Sit here, please.	اجلس هنا من فضلك.					
+ar_w_nama	word	1	نَامَ	nāma	to sleep	رقد					
+ar_w_nama#ex1	example	1	نام الطفل في السرير.		The child fell asleep in bed.	نام الطفل في السرير.					
+ar_w_nama#ex2	example	1	نمت كثيرا يوم الجمعة.		I slept a lot on Friday.	نمت كثيرا يوم الجمعة.					
+ar_w_sakana	word	1	سَكَنَ	sakana	to live (somewhere)	أقام في مكان					
+ar_w_sakana#ex1	example	1	أسكن في بيت صغير.		I live in a small house.	أسكن في بيت صغير.					
+ar_w_sakana#ex2	example	1	هل تسكن أسرتك في المدينة؟		Does your family live in the city?	هل تسكن أسرتك في المدينة؟					
+ar_w_rajaa	word	1	رَجَعَ	rajaʿa	to return, to come back	عاد					
+ar_w_rajaa#ex1	example	1	رجعت إلى البيت في المساء.		I came back home in the evening.	رجعت إلى البيت في المساء.					
+ar_w_rajaa#ex2	example	1	متى ترجع من العمل؟		When do you get back from work?	متى ترجع من العمل؟					
+ar_w_kharaja	word	1	خَرَجَ	kharaja	to go out	ضدّ دخل					
+ar_w_kharaja#ex1	example	1	خرجنا من البيت في الصباح.		We left the house in the morning.	خرجنا من البيت في الصباح.					
+ar_w_kharaja#ex2	example	1	لا أريد أن أخرج اليوم.		I don't want to go out today.	لا أريد أن أخرج اليوم.					
+ar_w_dakhala	word	1	دَخَلَ	dakhala	to enter	ضدّ خرج					
+ar_w_dakhala#ex1	example	1	دخلت الغرفة وأغلقت الباب.		I went into the room and closed the door.	دخلت الغرفة وأغلقت الباب.					
+ar_w_dakhala#ex2	example	1	ادخل البيت من فضلك.		Come into the house, please.	ادخل البيت من فضلك.					
+ar_w_safara	word	1	سَافَرَ	sāfara	to travel	انتقل إلى بلد آخر					
+ar_w_safara#ex1	example	1	سافرنا إلى مصر في الصيف.		We travelled to Egypt in the summer.	سافرنا إلى مصر في الصيف.					
+ar_w_safara#ex2	example	1	أسافر كثيرا في عملي.		I travel a lot for my work.	أسافر كثيرا في عملي.					
+ar_w_ishtara	word	1	اِشْتَرَى	ishtarā	to buy	ضدّ باع					
+ar_w_ishtara#ex1	example	1	اشتريت سيارة جديدة هذا الشهر.		I bought a new car this month.	اشتريت سيارة جديدة هذا الشهر.					
+ar_w_ishtara#ex2	example	1	أريد أن أشتري خبزا.		I want to buy some bread.	أريد أن أشتري خبزا.					
+ar_w_baa	word	1	بَاعَ	bāʿa	to sell	ضدّ اشترى					
+ar_w_baa#ex1	example	1	باع أبي سيارته القديمة.		My father sold his old car.	باع أبي سيارته القديمة.					
+ar_w_baa#ex2	example	1	ماذا يبيعون في هذا السوق؟		What do they sell in this market?	ماذا يبيعون في هذا السوق؟					
+ar_w_dafaa	word	1	دَفَعَ	dafaʿa	to pay; to push	أعطى الثمن					
+ar_w_dafaa#ex1	example	1	دفعت المال في المطعم.		I paid the money at the restaurant.	دفعت المال في المطعم.					
+ar_w_dafaa#ex2	example	1	كم دفعت للسيارة الجديدة؟		How much did you pay for the new car?	كم دفعت للسيارة الجديدة؟					
+ar_w_laiba	word	1	لَعِبَ	laʿiba	to play	لها					
+ar_w_laiba#ex1	example	1	يلعب الأطفال في الشارع.		The children are playing in the street.	يلعب الأطفال في الشارع.					
+ar_w_laiba#ex2	example	1	لعبنا كثيرا في العطلة.		We played a lot during the holiday.	لعبنا كثيرا في العطلة.					
+ar_w_takallama	word	1	تَكَلَّمَ	takallama	to speak	تحدّث					
+ar_w_takallama#ex1	example	1	هل تتكلم اللغة العربية؟		Do you speak Arabic?	هل تتكلم اللغة العربية؟					
+ar_w_takallama#ex2	example	1	أتكلم مع أمي كل يوم.		I talk to my mother every day.	أتكلم مع أمي كل يوم.					
+ar_w_fahima	word	1	فَهِمَ	fahima	to understand	أدرك المعنى					
+ar_w_fahima#ex1	example	1	لم أفهم هذا السؤال جيدا.		I didn't understand this question well.	لم أفهم هذا السؤال جيدا.					
+ar_w_fahima#ex2	example	1	هل فهمت الدرس اليوم؟		Did you understand today's lesson?	هل فهمت الدرس اليوم؟					
+ar_w_saala	word	1	سَأَلَ	saʾala	to ask	طلب الجواب					
+ar_w_saala#ex1	example	1	سألني المدرس عن اسمك.		The teacher asked me your name.	سألني المدرس عن اسمك.					
+ar_w_saala#ex2	example	1	اسأل المدرس إذا لم تفهم.		Ask the teacher if you don't understand.	اسأل المدرس إذا لم تفهم.					
+ar_w_ajaba	word	1	أَجَابَ	ajāba	to answer	ردّ على السؤال					
+ar_w_ajaba#ex1	example	1	أجاب الطالب عن السؤال.		The student answered the question.	أجاب الطالب عن السؤال.					
+ar_w_ajaba#ex2	example	1	أجبت عن كل الأسئلة.		I answered all the questions.	أجبت عن كل الأسئلة.					
+ar_w_intazara	word	1	اِنْتَظَرَ	intaẓara	to wait (for)	بقي حتى يأتي أحد					
+ar_w_intazara#ex1	example	1	انتظرني هنا من فضلك.		Wait for me here, please.	انتظرني هنا من فضلك.					
+ar_w_intazara#ex2	example	1	انتظرت أخي نصف ساعة.		I waited half an hour for my brother.	انتظرت أخي نصف ساعة.					
+ar_w_saada	word	1	سَاعَدَ	sāʿada	to help	عاون					
+ar_w_saada#ex1	example	1	هل تستطيع أن تساعدني؟		Can you help me?	هل تستطيع أن تساعدني؟					
+ar_w_saada#ex2	example	1	ساعدت أمي في المطبخ.		I helped my mother in the kitchen.	ساعدت أمي في المطبخ.					
+ar_w_badaa	word	1	بَدَأَ	badaʾa	to begin	شرع في					
+ar_w_badaa#ex1	example	1	يبدأ العمل في الصباح.		Work starts in the morning.	يبدأ العمل في الصباح.					
+ar_w_badaa#ex2	example	1	بدأت أتعلم العربية هذا الشهر.		I started learning Arabic this month.	بدأت أتعلم العربية هذا الشهر.					
+ar_w_tabakha	word	1	طَبَخَ	ṭabakha	to cook	أعدّ الطعام على النار					
+ar_w_tabakha#ex1	example	1	طبخت العشاء لأسرتي اليوم.		I cooked dinner for my family today.	طبخت العشاء لأسرتي اليوم.					
+ar_w_tabakha#ex2	example	1	أطبخ العشاء كل مساء.		I cook dinner every evening.	أطبخ العشاء كل مساء.					
+ar_w_ghasala	word	1	غَسَلَ	ghasala	to wash	نظّف بالماء					
+ar_w_ghasala#ex1	example	1	أغسل يدي قبل الأكل.		I wash my hands before eating.	أغسل يدي قبل الأكل.					
+ar_w_ghasala#ex2	example	1	غسلت كل ملابسي اليوم.		I washed all my clothes today.	غسلت كل ملابسي اليوم.					
+ar_w_labisa	word	1	لَبِسَ	labisa	to wear, to put on	ارتدى					
+ar_w_labisa#ex1	example	1	البس هذا، الطقس بارد.		Put this on, it's cold.	البس هذا، الطقس بارد.					
+ar_w_labisa#ex2	example	1	ماذا تلبس في الشتاء؟		What do you wear in winter?	ماذا تلبس في الشتاء؟					
+ar_w_masha	word	1	مَشَى	mashā	to walk	سار على قدميه					
+ar_w_masha#ex1	example	1	أمشي إلى المدرسة كل يوم.		I walk to school every day.	أمشي إلى المدرسة كل يوم.					
+ar_w_masha#ex2	example	1	مشينا بجانب البحر في المساء.		We walked by the sea in the evening.	مشينا بجانب البحر في المساء.					
+ar_w_rakiba	word	1	رَكِبَ	rakiba	to ride, to get on	علا على مركوب					
+ar_w_rakiba#ex1	example	1	ركبنا القطار إلى القاهرة.		We took the train to Cairo.	ركبنا القطار إلى القاهرة.					
+ar_w_rakiba#ex2	example	1	ركبت الطائرة لأول مرة.		I flew for the first time.	ركبت الطائرة لأول مرة.					
+ar_w_wasala	word	1	وَصَلَ	waṣala	to arrive	بلغ المكان					
+ar_w_wasala#ex1	example	1	وصل القطار قبل دقيقة.		The train arrived a minute ago.	وصل القطار قبل دقيقة.					
+ar_w_wasala#ex2	example	1	متى تصل الطائرة إلى المطار؟		When does the plane arrive at the airport?	متى تصل الطائرة إلى المطار؟					
+ar_w_istataa	word	1	اِسْتَطَاعَ	istaṭāʿa	to be able to	قدر على					
+ar_w_istataa#ex1	example	1	لا أستطيع أن أنام الليلة.		I can't sleep tonight.	لا أستطيع أن أنام الليلة.					
+ar_w_istataa#ex2	example	1	استطعت أن أفهم الدرس.		I was able to understand the lesson.	استطعت أن أفهم الدرس.					
+ar_w_nasiya	word	1	نَسِيَ	nasiya	to forget	ضدّ تذكّر					
+ar_w_nasiya#ex1	example	1	نسيت مفتاح البيت في المكتب.		I left the house key at the office.	نسيت مفتاح البيت في المكتب.					
+ar_w_nasiya#ex2	example	1	أنا لا أنسى اسمك.		I don't forget your name.	أنا لا أنسى اسمك.					
+ar_w_ittasala	word	1	اِتَّصَلَ	ittaṣala	to call, to contact	هاتف					
+ar_w_ittasala#ex1	example	1	اتصلت بأمي في المساء.		I called my mother in the evening.	اتصلت بأمي في المساء.					
+ar_w_ittasala#ex2	example	1	سأتصل بالطبيب غدا في الصباح.		I'll call the doctor tomorrow morning.	سأتصل بالطبيب غدا في الصباح.					
+ar_w_arsala	word	1	أَرْسَلَ	arsala	to send	بعث					
+ar_w_arsala#ex1	example	1	أرسل لي صورة من فضلك.		Send me a picture, please.	أرسل لي صورة من فضلك.					
+ar_w_arsala#ex2	example	1	أرسلت المال إلى أخي.		I sent the money to my brother.	أرسلت المال إلى أخي.					
+ar_w_wajada	word	1	وَجَدَ	wajada	to find	عثر على					
+ar_w_wajada#ex1	example	1	لم أجد مفتاحي في الحقيبة.		I didn't find my key in the bag.	لم أجد مفتاحي في الحقيبة.					
+ar_w_wajada#ex2	example	1	يوجد مطعم جيد في هذا الشارع.		There's a good restaurant on this street.	يوجد مطعم جيد في هذا الشارع.					
+ar_w_bahatha	word	1	بَحَثَ	baḥatha	to look for	فتّش عن					
+ar_w_bahatha#ex1	example	1	أبحث عن قلمي الأزرق.		I'm looking for my blue pen.	أبحث عن قلمي الأزرق.					
+ar_w_bahatha#ex2	example	1	بحثنا عن القطة في كل مكان.		We looked for the cat everywhere.	بحثنا عن القطة في كل مكان.					
+ar_w_istayqaza	word	1	اِسْتَيْقَظَ	istayqaẓa	to wake up	صحا من النوم					
+ar_w_istayqaza#ex1	example	1	أستيقظ كل يوم في الصباح.		I wake up in the morning every day.	أستيقظ كل يوم في الصباح.					
+ar_w_istayqaza#ex2	example	1	استيقظ الطفل في الليل.		The child woke up in the night.	استيقظ الطفل في الليل.					
+ar_w_shaara	word	1	شَعَرَ	shaʿara	to feel	أحسّ					
+ar_w_shaara#ex1	example	1	أشعر أني مريض اليوم.		I feel ill today.	أشعر أني مريض اليوم.					
+ar_w_shaara#ex2	example	1	هل تشعر بخير الآن؟		Do you feel well now?	هل تشعر بخير الآن؟					
+ar_w_zanna	word	1	ظَنَّ	ẓanna	to think, to believe	حسب					
+ar_w_zanna#ex1	example	1	أظن أن الطقس سيكون حارا.		I think the weather will be hot.	أظن أن الطقس سيكون حارا.					
+ar_w_zanna#ex2	example	1	ظننت أنك في البيت.		I thought you were at home.	ظننت أنك في البيت.					
+ar_w_taallama	word	1	تَعَلَّمَ	taʿallama	to learn	اكتسب العلم					
+ar_w_taallama#ex1	example	1	أتعلم العربية في الجامعة.		I'm learning Arabic at university.	أتعلم العربية في الجامعة.					
+ar_w_taallama#ex2	example	1	تعلمت كلمات جديدة اليوم.		I learned new words today.	تعلمت كلمات جديدة اليوم.					
+ar_w_zara	word	1	زَارَ	zāra	to visit	ذهب لرؤية أحد					
+ar_w_zara#ex1	example	1	زرت صديقي في المستشفى.		I visited my friend in hospital.	زرت صديقي في المستشفى.					
+ar_w_zara#ex2	example	1	سنزور أسرتي في العطلة.		We'll visit my family during the holiday.	سنزور أسرتي في العطلة.					
+ar_w_sabaha	word	1	سَبَحَ	sabaḥa	to swim	عام في الماء					
+ar_w_sabaha#ex1	example	1	أحب أن أسبح في البحر.		I like swimming in the sea.	أحب أن أسبح في البحر.					
+ar_w_sabaha#ex2	example	1	سبحنا كثيرا في الصيف.		We swam a lot in the summer.	سبحنا كثيرا في الصيف.					
+ar_w_istaraha	word	1	اِسْتَرَاحَ	istarāḥa	to rest	أخذ راحة					
+ar_w_istaraha#ex1	example	1	أنت متعب، استرح قليلا الآن.		You're tired, rest a little now.	أنت متعب، استرح قليلا الآن.					
+ar_w_istaraha#ex2	example	1	نستريح قليلا بعد الغداء.		We rest a little after lunch.	نستريح قليلا بعد الغداء.					
+ar_w_asha	word	1	عَاشَ	ʿāsha	to live (be alive; live a life)	حيي					
+ar_w_asha#ex1	example	1	عشت في هذه المدينة سنة.		I lived in this city for a year.	عشت في هذه المدينة سنة.					
+ar_w_asha#ex2	example	1	يعيش أخي في بلد آخر.		My brother lives in another country.	يعيش أخي في بلد آخر.					
+ar_w_taraka	word	1	تَرَكَ	taraka	to leave (something)	خلّى					
+ar_w_taraka#ex1	example	1	تركت حقيبتي في السيارة.		I left my bag in the car.	تركت حقيبتي في السيارة.					
+ar_w_taraka#ex2	example	1	لا تترك الطعام على الطاولة.		Don't leave the food on the table.	لا تترك الطعام على الطاولة.					
+ar_w_hawala	word	1	حَاوَلَ	ḥāwala	to try	سعى إلى					
+ar_w_hawala#ex1	example	1	حاولت أن أفهم الدرس.		I tried to understand the lesson.	حاولت أن أفهم الدرس.					
+ar_w_hawala#ex2	example	1	سأحاول أن أصل قبل المساء.		I'll try to arrive before the evening.	سأحاول أن أصل قبل المساء.					
+ar_w_ihtaja	word	1	اِحْتَاجَ	iḥtāja	to need	افتقر إلى					
+ar_w_ihtaja#ex1	example	1	أحتاج إلى قلم من فضلك.		I need a pen, please.	أحتاج إلى قلم من فضلك.					
+ar_w_ihtaja#ex2	example	1	هل تحتاج إلى شيء؟		Do you need anything?	هل تحتاج إلى شيء؟					
+ar_w_wajaba	word	1	وَجَبَ	wajaba	to be necessary (يجب: must)	لزم					
+ar_w_wajaba#ex1	example	1	يجب أن أذهب الآن.		I have to go now.	يجب أن أذهب الآن.					
+ar_w_wajaba#ex2	example	1	يجب أن تشرب الماء كثيرا.		You should drink a lot of water.	يجب أن تشرب الماء كثيرا.					
+ar_w_rajul	word	1	رَجُل	rajul	man	ذكر بالغ					
+ar_w_rajul#ex1	example	1	من هذا الرجل الطويل؟		Who is this tall man?	من هذا الرجل الطويل؟					
+ar_w_rajul#ex2	example	1	في المكتب ثلاثة رجال.		There are three men in the office.	في المكتب ثلاثة رجال.					
+ar_w_imraa	word	1	اِمْرَأَة	imraʾa	woman	أنثى بالغة					
+ar_w_imraa#ex1	example	1	تلك المرأة أم صديقي.		That woman is my friend's mother.	تلك المرأة أم صديقي.					
+ar_w_imraa#ex2	example	1	امرأة جميلة تسكن بجانبنا.		A beautiful woman lives next to us.	امرأة جميلة تسكن بجانبنا.					
+ar_w_walad	word	1	وَلَد	walad	boy; child	صبي					
+ar_w_walad#ex1	example	1	الولد يلعب في الشارع.		The boy is playing in the street.	الولد يلعب في الشارع.					
+ar_w_walad#ex2	example	1	عندهم ثلاثة أولاد وبنت واحدة.		They have three boys and one girl.	عندهم ثلاثة أولاد وبنت واحدة.					
+ar_w_bint	word	1	بِنْت	bint	girl; daughter	ابنة					
+ar_w_bint#ex1	example	1	عندي بنت واحدة وولدان.		I have one daughter and two sons.	عندي بنت واحدة وولدان.					
+ar_w_bint#ex2	example	1	البنت الصغيرة تقرأ كتابا.		The little girl is reading a book.	البنت الصغيرة تقرأ كتابا.					
+ar_w_tifl	word	1	طِفْل	ṭifl	child	صغير السن					
+ar_w_tifl#ex1	example	1	الطفل الصغير جائع جدا.		The little child is very hungry.	الطفل الصغير جائع جدا.					
+ar_w_tifl#ex2	example	1	كم طفلا عندكم في البيت؟		How many children do you have at home?	كم طفلا عندكم في البيت؟					
+ar_w_ab	word	1	أَب	ab	father	والد					
+ar_w_ab#ex1	example	1	أبي طبيب في المستشفى.		My father is a doctor at the hospital.	أبي طبيب في المستشفى.					
+ar_w_ab#ex2	example	1	أين يعمل أبوك الآن؟		Where does your father work now?	أين يعمل أبوك الآن؟					
+ar_w_umm	word	1	أُمّ	umm	mother	والدة					
+ar_w_umm#ex1	example	1	أمي تعمل في مكتبة المدينة.		My mother works at the city library.	أمي تعمل في مكتبة المدينة.					
+ar_w_umm#ex2	example	1	أمي وأبي في السوق.		My mother and father are at the market.	أمي وأبي في السوق.					
+ar_w_akh	word	1	أَخ	akh	brother	شقيق					
+ar_w_akh#ex1	example	1	أخي أكبر مني بسنتين.		My brother is two years older than me.	أخي أكبر مني بسنتين.					
+ar_w_akh#ex2	example	1	عندي أخ في الجامعة.		I have a brother at university.	عندي أخ في الجامعة.					
+ar_w_ukht	word	1	أُخْت	ukht	sister	شقيقة					
+ar_w_ukht#ex1	example	1	أختي طالبة في الجامعة.		My sister is a university student.	أختي طالبة في الجامعة.					
+ar_w_ukht#ex2	example	1	عندي أختان صغيرتان وأخ كبير.		I have two little sisters and a big brother.	عندي أختان صغيرتان وأخ كبير.					
+ar_w_ibn	word	1	اِبْن	ibn	son	ولد					
+ar_w_ibn#ex1	example	1	ابني يدرس في هذه المدرسة.		My son studies at this school.	ابني يدرس في هذه المدرسة.					
+ar_w_ibn#ex2	example	1	له ابن واحد وبنتان.		He has one son and two daughters.	له ابن واحد وبنتان.					
+ar_w_zawj	word	1	زَوْج	zawj	husband	بعل					
+ar_w_zawj#ex1	example	1	زوجي يعمل في المطار.		My husband works at the airport.	زوجي يعمل في المطار.					
+ar_w_zawj#ex2	example	1	زوج أختي طبيب في المستشفى.		My sister's husband is a doctor at the hospital.	زوج أختي طبيب في المستشفى.					
+ar_w_zawja	word	1	زَوْجَة	zawja	wife	قرينة					
+ar_w_zawja#ex1	example	1	زوجتي تحب الطبخ كثيرا.		My wife really likes cooking.	زوجتي تحب الطبخ كثيرا.					
+ar_w_zawja#ex2	example	1	هذه زوجتي، وهذا ابني.		This is my wife, and this is my son.	هذه زوجتي، وهذا ابني.					
+ar_w_usra	word	1	أُسْرَة	usra	family	عائلة					
+ar_w_usra#ex1	example	1	أسرتي ليست كبيرة جدا.		My family isn't very big.	أسرتي ليست كبيرة جدا.					
+ar_w_usra#ex2	example	1	أسكن مع أسرتي في بيت صغير.		I live with my family in a small house.	أسكن مع أسرتي في بيت صغير.					
+ar_w_sadiq	word	1	صَدِيق	ṣadīq	friend	رفيق					
+ar_w_sadiq#ex1	example	1	هو صديقي من المدرسة.		He's my friend from school.	هو صديقي من المدرسة.					
+ar_w_sadiq#ex2	example	1	عندي أصدقاء كثيرون هنا.		I have a lot of friends here.	عندي أصدقاء كثيرون هنا.					
+ar_w_talib	word	1	طَالِب	ṭālib	student	متعلّم					
+ar_w_talib#ex1	example	1	أنا طالب في الجامعة.		I'm a university student.	أنا طالب في الجامعة.					
+ar_w_talib#ex2	example	1	في مدرستنا طلاب كثيرون.		There are many students at our school.	في مدرستنا طلاب كثيرون.					
+ar_w_mudarris	word	1	مُدَرِّس	mudarris	teacher	معلّم					
+ar_w_mudarris#ex1	example	1	مدرس العربية من مصر.		The Arabic teacher is from Egypt.	مدرس العربية من مصر.					
+ar_w_mudarris#ex2	example	1	المدرسون في المكتب الآن.		The teachers are in the office now.	المدرسون في المكتب الآن.					
+ar_w_tabib	word	1	طَبِيب	ṭabīb	doctor	من يعالج المرضى					
+ar_w_tabib#ex1	example	1	يجب أن تذهب إلى الطبيب.		You should go to the doctor.	يجب أن تذهب إلى الطبيب.					
+ar_w_tabib#ex2	example	1	الطبيب في المستشفى الآن.		The doctor is at the hospital now.	الطبيب في المستشفى الآن.					
+ar_w_ism	word	1	اِسْم	ism	name	ما يُعرف به الشخص					
+ar_w_ism#ex1	example	1	ما اسم هذا الشارع؟		What is the name of this street?	ما اسم هذا الشارع؟					
+ar_w_ism#ex2	example	1	اسمي سارة، وأنا طالبة.		My name is Sara, and I'm a student.	اسمي سارة، وأنا طالبة.					
+ar_w_nas	word	1	نَاس	nās	people	البشر					
+ar_w_nas#ex1	example	1	الناس في هذه المدينة جيدون.		The people in this city are good.	الناس في هذه المدينة جيدون.					
+ar_w_nas#ex2	example	1	الناس في الشارع كثيرون.		There are a lot of people in the street.	الناس في الشارع كثيرون.					
+ar_w_shakhs	word	1	شَخْص	shakhṣ	person	فرد					
+ar_w_shakhs#ex1	example	1	هو شخص جيد جدا.		He is a very good person.	هو شخص جيد جدا.					
+ar_w_shakhs#ex2	example	1	كم شخصا في أسرتك؟		How many people are in your family?	كم شخصا في أسرتك؟					
+ar_w_bayt	word	1	بَيْت	bayt	house, home	منزل					
+ar_w_bayt#ex1	example	1	أنا في البيت الآن.		I'm at home now.	أنا في البيت الآن.					
+ar_w_bayt#ex2	example	1	بيتنا قريب من البحر.		Our house is near the sea.	بيتنا قريب من البحر.					
+ar_w_madrasa	word	1	مَدْرَسَة	madrasa	school	مكان التعليم					
+ar_w_madrasa#ex1	example	1	أذهب إلى المدرسة كل يوم.		I go to school every day.	أذهب إلى المدرسة كل يوم.					
+ar_w_madrasa#ex2	example	1	مدرستي كبيرة وجميلة جدا.		My school is big and very beautiful.	مدرستي كبيرة وجميلة جدا.					
+ar_w_madina	word	1	مَدِينَة	madīna	city	بلدة كبيرة					
+ar_w_madina#ex1	example	1	القاهرة مدينة كبيرة جدا.		Cairo is a very big city.	القاهرة مدينة كبيرة جدا.					
+ar_w_madina#ex2	example	1	أحب هذه المدينة كثيرا.		I really like this city.	أحب هذه المدينة كثيرا.					
+ar_w_balad	word	1	بَلَد	balad	country	وطن					
+ar_w_balad#ex1	example	1	مصر بلد كبير وجميل.		Egypt is a big and beautiful country.	مصر بلد كبير وجميل.					
+ar_w_balad#ex2	example	1	سافرت إلى بلاد كثيرة.		I've travelled to many countries.	سافرت إلى بلاد كثيرة.					
+ar_w_sharia	word	1	شَارِع	shāriʿ	street	طريق في المدينة					
+ar_w_sharia#ex1	example	1	أسكن في هذا الشارع.		I live on this street.	أسكن في هذا الشارع.					
+ar_w_sharia#ex2	example	1	الشارع أمام بيتي كبير.		The street in front of my house is wide.	الشارع أمام بيتي كبير.					
+ar_w_suq	word	1	سُوق	sūq	market	مكان البيع والشراء					
+ar_w_suq#ex1	example	1	اشتريت الفاكهة من السوق.		I bought the fruit at the market.	اشتريت الفاكهة من السوق.					
+ar_w_suq#ex2	example	1	في السوق ناس كثيرون.		There are a lot of people at the market.	في السوق ناس كثيرون.					
+ar_w_matam	word	1	مَطْعَم	maṭʿam	restaurant	مكان تناول الطعام					
+ar_w_matam#ex1	example	1	هذا المطعم جديد وجميل.		This restaurant is new and nice.	هذا المطعم جديد وجميل.					
+ar_w_matam#ex2	example	1	نأكل في المطعم يوم الجمعة.		We eat at the restaurant on Fridays.	نأكل في المطعم يوم الجمعة.					
+ar_w_mustashfa	word	1	مُسْتَشْفَى	mustashfā	hospital	دار علاج المرضى					
+ar_w_mustashfa#ex1	example	1	أبي مريض وهو في المستشفى.		My father is ill and in hospital.	أبي مريض وهو في المستشفى.					
+ar_w_mustashfa#ex2	example	1	ذهبت إلى المستشفى مع أمي.		I went to the hospital with my mother.	ذهبت إلى المستشفى مع أمي.					
+ar_w_maktab	word	1	مَكْتَب	maktab	office; desk	مكان العمل					
+ar_w_maktab#ex1	example	1	أنا في المكتب الآن.		I'm at the office now.	أنا في المكتب الآن.					
+ar_w_maktab#ex2	example	1	مكتب أبي قريب من المحطة.		My father's office is near the station.	مكتب أبي قريب من المحطة.					
+ar_w_mahatta	word	1	مَحَطَّة	maḥaṭṭa	station	موقف القطار أو الحافلة					
+ar_w_mahatta#ex1	example	1	أين المحطة من فضلك؟		Where is the station, please?	أين المحطة من فضلك؟					
+ar_w_mahatta#ex2	example	1	ننتظر الحافلة في المحطة.		We're waiting for the bus at the station.	ننتظر الحافلة في المحطة.					
+ar_w_matar_airport	word	1	مَطَار	maṭār	airport	مكان هبوط الطائرات					
+ar_w_matar_airport#ex1	example	1	المطار بعيد عن المدينة.		The airport is far from the city.	المطار بعيد عن المدينة.					
+ar_w_matar_airport#ex2	example	1	وصلنا إلى المطار في الصباح.		We arrived at the airport in the morning.	وصلنا إلى المطار في الصباح.					
+ar_w_ghurfa	word	1	غُرْفَة	ghurfa	room	حجرة					
+ar_w_ghurfa#ex1	example	1	غرفتي صغيرة لكن جميلة.		My room is small but nice.	غرفتي صغيرة لكن جميلة.					
+ar_w_ghurfa#ex2	example	1	في البيت ثلاث غرف.		There are three rooms in the house.	في البيت ثلاث غرف.					
+ar_w_matbakh	word	1	مَطْبَخ	maṭbakh	kitchen	مكان الطبخ					
+ar_w_matbakh#ex1	example	1	أمي في المطبخ الآن.		My mother is in the kitchen now.	أمي في المطبخ الآن.					
+ar_w_matbakh#ex2	example	1	المطبخ في بيتنا صغير.		The kitchen in our house is small.	المطبخ في بيتنا صغير.					
+ar_w_bab	word	1	بَاب	bāb	door	مدخل البيت أو الغرفة					
+ar_w_bab#ex1	example	1	افتح الباب من فضلك.		Open the door, please.	افتح الباب من فضلك.					
+ar_w_bab#ex2	example	1	باب بيتنا أزرق وجميل.		The door of our house is blue and pretty.	باب بيتنا أزرق وجميل.					
+ar_w_nafidha	word	1	نَافِذَة	nāfidha	window	شبّاك					
+ar_w_nafidha#ex1	example	1	افتح النافذة من فضلك.		Open the window, please.	افتح النافذة من فضلك.					
+ar_w_nafidha#ex2	example	1	في غرفتي نافذة كبيرة.		There's a big window in my room.	في غرفتي نافذة كبيرة.					
+ar_w_makan	word	1	مَكَان	makān	place	موضع					
+ar_w_makan#ex1	example	1	هذا مكان جميل جدا.		This is a very beautiful place.	هذا مكان جميل جدا.					
+ar_w_makan#ex2	example	1	لا يوجد مكان في الحافلة.		There's no room on the bus.	لا يوجد مكان في الحافلة.					
+ar_w_masjid	word	1	مَسْجِد	masjid	mosque	مكان الصلاة					
+ar_w_masjid#ex1	example	1	المسجد قريب من البيت.		The mosque is near the house.	المسجد قريب من البيت.					
+ar_w_masjid#ex2	example	1	في مدينتنا مساجد كثيرة.		There are many mosques in our city.	في مدينتنا مساجد كثيرة.					
+ar_w_maktaba	word	1	مَكْتَبَة	maktaba	library; bookshop	مكان الكتب					
+ar_w_maktaba#ex1	example	1	أقرأ في المكتبة كل يوم.		I read in the library every day.	أقرأ في المكتبة كل يوم.					
+ar_w_maktaba#ex2	example	1	اشتريت كتابا من المكتبة.		I bought a book at the bookshop.	اشتريت كتابا من المكتبة.					
+ar_w_jamia	word	1	جَامِعَة	jāmiʿa	university	مؤسسة للتعليم العالي					
+ar_w_jamia#ex1	example	1	أخي يدرس في الجامعة.		My brother studies at university.	أخي يدرس في الجامعة.					
+ar_w_jamia#ex2	example	1	الجامعة بعيدة عن بيتي.		The university is far from my house.	الجامعة بعيدة عن بيتي.					
+ar_w_amal	word	1	عَمَل	ʿamal	work, job	وظيفة					
+ar_w_amal#ex1	example	1	أبحث عن عمل جديد.		I'm looking for a new job.	أبحث عن عمل جديد.					
+ar_w_amal#ex2	example	1	عندي عمل كثير اليوم.		I have a lot of work today.	عندي عمل كثير اليوم.					
+ar_w_sharika	word	1	شَرِكَة	sharika	company	مؤسسة تجارية					
+ar_w_sharika#ex1	example	1	أعمل في شركة كبيرة.		I work for a big company.	أعمل في شركة كبيرة.					
+ar_w_sharika#ex2	example	1	الشركة قريبة من المحطة.		The company is near the station.	الشركة قريبة من المحطة.					
+ar_w_janib	word	1	جَانِب	jānib	side (بجانب: next to)	ناحية					
+ar_w_janib#ex1	example	1	المطعم الجديد بجانب المسجد.		The new restaurant is next to the mosque.	المطعم الجديد بجانب المسجد.					
+ar_w_janib#ex2	example	1	اجلس بجانبي من فضلك.		Sit next to me, please.	اجلس بجانبي من فضلك.					
+ar_w_kitab	word	1	كِتَاب	kitāb	book	مجموعة صفحات مكتوبة					
+ar_w_kitab#ex1	example	1	قرأت هذا الكتاب أمس.		I read this book yesterday.	قرأت هذا الكتاب أمس.					
+ar_w_kitab#ex2	example	1	عندي كتب كثيرة في غرفتي.		I have a lot of books in my room.	عندي كتب كثيرة في غرفتي.					
+ar_w_qalam	word	1	قَلَم	qalam	pen	أداة الكتابة					
+ar_w_qalam#ex1	example	1	أعطني القلم الأزرق من فضلك.		Give me the blue pen, please.	أعطني القلم الأزرق من فضلك.					
+ar_w_qalam#ex2	example	1	قلمي الجديد على الطاولة.		My new pen is on the table.	قلمي الجديد على الطاولة.					
+ar_w_waraqa	word	1	وَرَقَة	waraqa	sheet of paper	صفحة					
+ar_w_waraqa#ex1	example	1	اكتب اسمك على هذه الورقة.		Write your name on this sheet.	اكتب اسمك على هذه الورقة.					
+ar_w_waraqa#ex2	example	1	أعطني ورقة وقلما من فضلك.		Give me a sheet of paper and a pen, please.	أعطني ورقة وقلما من فضلك.					
+ar_w_tawila	word	1	طَاوِلَة	ṭāwila	table	منضدة					
+ar_w_tawila#ex1	example	1	الكتب على الطاولة الكبيرة.		The books are on the big table.	الكتب على الطاولة الكبيرة.					
+ar_w_tawila#ex2	example	1	في المطبخ طاولة صغيرة.		There's a small table in the kitchen.	في المطبخ طاولة صغيرة.					
+ar_w_kursi	word	1	كُرْسِيّ	kursī	chair	مقعد					
+ar_w_kursi#ex1	example	1	اجلس على الكرسي بجانبي.		Sit on the chair next to me.	اجلس على الكرسي بجانبي.					
+ar_w_kursi#ex2	example	1	في الغرفة أربعة كراسي.		There are four chairs in the room.	في الغرفة أربعة كراسي.					
+ar_w_sarir	word	1	سَرِير	sarīr	bed	مكان النوم					
+ar_w_sarir#ex1	example	1	في غرفتي سرير كبير.		There's a big bed in my room.	في غرفتي سرير كبير.					
+ar_w_sarir#ex2	example	1	الطفل في سريره الآن.		The child is in his bed now.	الطفل في سريره الآن.					
+ar_w_hatif	word	1	هَاتِف	hātif	telephone	جهاز الاتصال					
+ar_w_hatif#ex1	example	1	لا أعرف أين هاتفي.		I don't know where my phone is.	لا أعرف أين هاتفي.					
+ar_w_hatif#ex2	example	1	اشتريت هاتفا جديدا من السوق.		I bought a new phone at the market.	اشتريت هاتفا جديدا من السوق.					
+ar_w_sayyara	word	1	سَيَّارَة	sayyāra	car	مركبة					
+ar_w_sayyara#ex1	example	1	هذه سيارة أبي الجديدة.		This is my father's new car.	هذه سيارة أبي الجديدة.					
+ar_w_sayyara#ex2	example	1	سيارتي بيضاء وسيارة أخي سوداء.		My car is white and my brother's car is black.	سيارتي بيضاء وسيارة أخي سوداء.					
+ar_w_hafila	word	1	حَافِلَة	ḥāfila	bus	باص					
+ar_w_hafila#ex1	example	1	أركب الحافلة كل صباح.		I take the bus every morning.	أركب الحافلة كل صباح.					
+ar_w_hafila#ex2	example	1	متى تصل الحافلة إلى المحطة؟		When does the bus get to the station?	متى تصل الحافلة إلى المحطة؟					
+ar_w_qitar	word	1	قِطَار	qiṭār	train	مركبة على سكة					
+ar_w_qitar#ex1	example	1	القطار أسرع من الحافلة.		The train is faster than the bus.	القطار أسرع من الحافلة.					
+ar_w_qitar#ex2	example	1	القطار يصل في المساء.		The train arrives in the evening.	القطار يصل في المساء.					
+ar_w_taira	word	1	طَائِرَة	ṭāʾira	aeroplane	مركبة تطير					
+ar_w_taira#ex1	example	1	الطائرة في المطار الآن.		The plane is at the airport now.	الطائرة في المطار الآن.					
+ar_w_taira#ex2	example	1	سافرنا بالطائرة إلى مصر.		We flew to Egypt.	سافرنا بالطائرة إلى مصر.					
+ar_w_mal	word	1	مَال	māl	money	نقود					
+ar_w_mal#ex1	example	1	ليس عندي مال الآن.		I don't have any money now.	ليس عندي مال الآن.					
+ar_w_mal#ex2	example	1	كم من المال تحتاج؟		How much money do you need?	كم من المال تحتاج؟					
+ar_w_miftah	word	1	مِفْتَاح	miftāḥ	key	أداة فتح القفل					
+ar_w_miftah#ex1	example	1	هل رأيت مفتاح السيارة؟		Have you seen the car key?	هل رأيت مفتاح السيارة؟					
+ar_w_miftah#ex2	example	1	هذا مفتاح غرفتك الجديدة.		This is the key to your new room.	هذا مفتاح غرفتك الجديدة.					
+ar_w_haqiba	word	1	حَقِيبَة	ḥaqība	bag	شنطة					
+ar_w_haqiba#ex1	example	1	هذه حقيبتي، وتلك حقيبتك.		This is my bag, and that's your bag.	هذه حقيبتي، وتلك حقيبتك.					
+ar_w_haqiba#ex2	example	1	اشتريت حقيبة سوداء جديدة.		I bought a new black bag.	اشتريت حقيبة سوداء جديدة.					
+ar_w_malabis	word	1	مَلَابِس	malābis	clothes	ثياب					
+ar_w_malabis#ex1	example	1	اشتريت ملابس جديدة للعطلة.		I bought new clothes for the holiday.	اشتريت ملابس جديدة للعطلة.					
+ar_w_malabis#ex2	example	1	كل ملابسي في الحقيبة.		All my clothes are in the bag.	كل ملابسي في الحقيبة.					
+ar_w_risala	word	1	رِسَالَة	risāla	letter, message	كلام مكتوب يُرسَل					
+ar_w_risala#ex1	example	1	أرسلت رسالة إلى أخي.		I sent a message to my brother.	أرسلت رسالة إلى أخي.					
+ar_w_risala#ex2	example	1	كتبت رسالة طويلة لصديقي.		I wrote a long letter to my friend.	كتبت رسالة طويلة لصديقي.					
+ar_w_sura	word	1	صُورَة	ṣūra	picture, photo	رسم أو لقطة					
+ar_w_sura#ex1	example	1	هذه صورة أسرتي في العطلة.		This is a photo of my family on holiday.	هذه صورة أسرتي في العطلة.					
+ar_w_sura#ex2	example	1	أرسلت الصور إلى أمي.		I sent the photos to my mother.	أرسلت الصور إلى أمي.					
+ar_w_lawn	word	1	لَوْن	lawn	colour	صفة كالأحمر والأزرق					
+ar_w_lawn#ex1	example	1	ما لون سيارتك الجديدة؟		What colour is your new car?	ما لون سيارتك الجديدة؟					
+ar_w_lawn#ex2	example	1	اللون الأبيض جميل جدا.		White is a very nice colour.	اللون الأبيض جميل جدا.					
+ar_w_hadiyya	word	1	هَدِيَّة	hadiyya	present, gift	ما يُهدى					
+ar_w_hadiyya#ex1	example	1	اشتريت هدية جميلة لأمي.		I bought a lovely present for my mother.	اشتريت هدية جميلة لأمي.					
+ar_w_hadiyya#ex2	example	1	شكرا على هذه الهدية الجميلة.		Thank you for this lovely present.	شكرا على هذه الهدية الجميلة.					
+ar_w_tadhkira	word	1	تَذْكِرَة	tadhkira	ticket	بطاقة دخول أو سفر					
+ar_w_tadhkira#ex1	example	1	اشتريت تذكرة القطار أمس.		I bought the train ticket yesterday.	اشتريت تذكرة القطار أمس.					
+ar_w_tadhkira#ex2	example	1	تذكرة الطائرة غالية جدا.		The plane ticket is very expensive.	تذكرة الطائرة غالية جدا.					
+ar_w_tilfaz	word	1	تِلْفَاز	tilfāz	television	جهاز التلفزيون					
+ar_w_tilfaz#ex1	example	1	لا يوجد تلفاز في غرفتي.		There's no television in my room.	لا يوجد تلفاز في غرفتي.					
+ar_w_tilfaz#ex2	example	1	اشترى أبي تلفازا جديدا.		My father bought a new television.	اشترى أبي تلفازا جديدا.					
+ar_w_hasub	word	1	حَاسُوب	ḥāsūb	computer	جهاز الكمبيوتر					
+ar_w_hasub#ex1	example	1	أعمل على الحاسوب كل يوم.		I work on the computer every day.	أعمل على الحاسوب كل يوم.					
+ar_w_hasub#ex2	example	1	حاسوب أبي قديم جدا.		My father's computer is very old.	حاسوب أبي قديم جدا.					
+ar_w_ahlan	word	1	أَهْلًا	ahlan	welcome; hi	تحية ترحيب					
+ar_w_ahlan#ex1	example	1	أهلا وسهلا في بيتنا.		Welcome to our home.	أهلا وسهلا في بيتنا.					
+ar_w_ahlan#ex2	example	1	أهلا، كيف حالك اليوم؟		Hi, how are you today?	أهلا، كيف حالك اليوم؟					
+ar_w_riyada	word	1	رِيَاضَة	riyāḍa	sport, exercise	نشاط بدني					
+ar_w_riyada#ex1	example	1	أنا أحب الرياضة كثيرا.		I really like sport.	أنا أحب الرياضة كثيرا.					
+ar_w_riyada#ex2	example	1	الرياضة مهمة جدا للجسم.		Exercise is very important for the body.	الرياضة مهمة جدا للجسم.					
+ar_w_shay_thing	word	1	شَيْء	shayʾ	thing	أمر					
+ar_w_shay_thing#ex1	example	1	ما هذا الشيء على الطاولة؟		What is this thing on the table?	ما هذا الشيء على الطاولة؟					
+ar_w_shay_thing#ex2	example	1	هل تريد شيئا من السوق؟		Do you want anything from the market?	هل تريد شيئا من السوق؟					
+ar_w_taam	word	1	طَعَام	ṭaʿām	food	أكل					
+ar_w_taam#ex1	example	1	هذا الطعام لذيذ جدا.		This food is very tasty.	هذا الطعام لذيذ جدا.					
+ar_w_taam#ex2	example	1	أمي تطبخ طعاما لذيذا.		My mother cooks delicious food.	أمي تطبخ طعاما لذيذا.					
+ar_w_maa_water	word	1	مَاء	māʾ	water	سائل الشرب					
+ar_w_maa_water#ex1	example	1	أعطني الماء من فضلك.		Give me the water, please.	أعطني الماء من فضلك.					
+ar_w_maa_water#ex2	example	1	أريد ماء باردا من فضلك.		I'd like cold water, please.	أريد ماء باردا من فضلك.					
+ar_w_qahwa	word	1	قَهْوَة	qahwa	coffee	مشروب البنّ					
+ar_w_qahwa#ex1	example	1	هل تريد قهوة أو شايا؟		Would you like coffee or tea?	هل تريد قهوة أو شايا؟					
+ar_w_qahwa#ex2	example	1	هذه القهوة حارة جدا.		This coffee is very hot.	هذه القهوة حارة جدا.					
+ar_w_shay	word	1	شَاي	shāy	tea	مشروب ساخن					
+ar_w_shay#ex1	example	1	أشرب الشاي كل صباح.		I drink tea every morning.	أشرب الشاي كل صباح.					
+ar_w_shay#ex2	example	1	الشاي في هذا المطعم جيد.		The tea in this restaurant is good.	الشاي في هذا المطعم جيد.					
+ar_w_khubz	word	1	خُبْز	khubz	bread	عيش					
+ar_w_khubz#ex1	example	1	اشترت أمي خبزا من السوق.		My mother bought bread at the market.	اشترت أمي خبزا من السوق.					
+ar_w_khubz#ex2	example	1	الخبز على طاولة المطبخ.		The bread is on the kitchen table.	الخبز على طاولة المطبخ.					
+ar_w_halib	word	1	حَلِيب	ḥalīb	milk	لبن					
+ar_w_halib#ex1	example	1	الطفل يشرب الحليب كل صباح.		The child drinks milk every morning.	الطفل يشرب الحليب كل صباح.					
+ar_w_halib#ex2	example	1	هل تريد حليبا مع القهوة؟		Would you like milk with your coffee?	هل تريد حليبا مع القهوة؟					
+ar_w_lahm	word	1	لَحْم	laḥm	meat	لحم الحيوان					
+ar_w_lahm#ex1	example	1	اللحم غال في هذا السوق.		Meat is expensive at this market.	اللحم غال في هذا السوق.					
+ar_w_lahm#ex2	example	1	طبخت أمي اللحم والأرز.		My mother cooked meat and rice.	طبخت أمي اللحم والأرز.					
+ar_w_dajaj	word	1	دَجَاج	dajāj	chicken	طير يُؤكل					
+ar_w_dajaj#ex1	example	1	أكلنا الدجاج والأرز في المطعم.		We ate chicken and rice at the restaurant.	أكلنا الدجاج والأرز في المطعم.					
+ar_w_dajaj#ex2	example	1	أحب الدجاج أكثر من اللحم.		I like chicken more than meat.	أحب الدجاج أكثر من اللحم.					
+ar_w_aruzz	word	1	أَرُزّ	aruzz	rice	حبوب تُطبخ					
+ar_w_aruzz#ex1	example	1	طبخت أمي الدجاج والأرز.		My mother cooked chicken and rice.	طبخت أمي الدجاج والأرز.					
+ar_w_aruzz#ex2	example	1	الأرز مع اللحم لذيذ.		Rice with meat is delicious.	الأرز مع اللحم لذيذ.					
+ar_w_tuffaha	word	1	تُفَّاحَة	tuffāḥa	apple	ثمرة					
+ar_w_tuffaha#ex1	example	1	أكلت تفاحة كبيرة في الصباح.		I ate a big apple in the morning.	أكلت تفاحة كبيرة في الصباح.					
+ar_w_tuffaha#ex2	example	1	اشتريت التفاح من السوق.		I bought the apples at the market.	اشتريت التفاح من السوق.					
+ar_w_fakiha	word	1	فَاكِهَة	fākiha	fruit	ثمار تؤكل					
+ar_w_fakiha#ex1	example	1	اشتريت بعض الفاكهة من السوق.		I bought some fruit at the market.	اشتريت بعض الفاكهة من السوق.					
+ar_w_fakiha#ex2	example	1	أحب الفاكهة في الصيف.		I like fruit in the summer.	أحب الفاكهة في الصيف.					
+ar_w_bayd	word	1	بَيْض	bayḍ	eggs	ما تضعه الدجاجة					
+ar_w_bayd#ex1	example	1	أكلت الخبز والبيض في الفطور.		I had bread and eggs for breakfast.	أكلت الخبز والبيض في الفطور.					
+ar_w_bayd#ex2	example	1	اشتريت البيض والحليب من السوق.		I bought eggs and milk at the market.	اشتريت البيض والحليب من السوق.					
+ar_w_sukkar	word	1	سُكَّر	sukkar	sugar	مادة حلوة					
+ar_w_sukkar#ex1	example	1	الشاي مع السكر لذيذ.		Tea with sugar is delicious.	الشاي مع السكر لذيذ.					
+ar_w_sukkar#ex2	example	1	هل تريد سكرا في القهوة؟		Do you want sugar in your coffee?	هل تريد سكرا في القهوة؟					
+ar_w_futur	word	1	فُطُور	fuṭūr	breakfast	وجبة الصباح					
+ar_w_futur#ex1	example	1	ماذا أكلت في الفطور؟		What did you have for breakfast?	ماذا أكلت في الفطور؟					
+ar_w_futur#ex2	example	1	نأكل الفطور معا كل صباح.		We have breakfast together every morning.	نأكل الفطور معا كل صباح.					
+ar_w_ghada	word	1	غَدَاء	ghadāʾ	lunch	وجبة الظهر					
+ar_w_ghada#ex1	example	1	ماذا نأكل للغداء اليوم؟		What are we having for lunch today?	ماذا نأكل للغداء اليوم؟					
+ar_w_ghada#ex2	example	1	الغداء في الساعة الواحدة.		Lunch is at one o'clock.	الغداء في الساعة الواحدة.					
+ar_w_asha_dinner	word	1	عَشَاء	ʿashāʾ	dinner	وجبة المساء					
+ar_w_asha_dinner#ex1	example	1	ماذا تريد أن تأكل للعشاء؟		What do you want for dinner?	ماذا تريد أن تأكل للعشاء؟					
+ar_w_asha_dinner#ex2	example	1	أكلنا العشاء في مطعم جديد.		We had dinner at a new restaurant.	أكلنا العشاء في مطعم جديد.					
+ar_w_yawm	word	1	يَوْم	yawm	day	أربع وعشرون ساعة					
+ar_w_yawm#ex1	example	1	هذا يوم جميل جدا.		This is a very nice day.	هذا يوم جميل جدا.					
+ar_w_yawm#ex2	example	1	سأسافر بعد ثلاثة أيام.		I'm travelling in three days.	سأسافر بعد ثلاثة أيام.					
+ar_w_layl	word	1	لَيْل	layl	night	ضدّ النهار					
+ar_w_layl#ex1	example	1	أنام في الليل ثماني ساعات.		I sleep eight hours at night.	أنام في الليل ثماني ساعات.					
+ar_w_layl#ex2	example	1	الطقس بارد في الليل.		It's cold at night.	الطقس بارد في الليل.					
+ar_w_sabah	word	1	صَبَاح	ṣabāḥ	morning	أول النهار					
+ar_w_sabah#ex1	example	1	أشرب القهوة كل صباح.		I drink coffee every morning.	أشرب القهوة كل صباح.					
+ar_w_sabah#ex2	example	1	يفتح المكتب في الصباح.		The office opens in the morning.	يفتح المكتب في الصباح.					
+ar_w_masa	word	1	مَسَاء	masāʾ	evening	آخر النهار					
+ar_w_masa#ex1	example	1	نخرج معا في المساء.		We go out together in the evening.	نخرج معا في المساء.					
+ar_w_masa#ex2	example	1	مساء الخير، كيف حالك؟		Good evening, how are you?	مساء الخير، كيف حالك؟					
+ar_w_saa	word	1	سَاعَة	sāʿa	hour; clock, watch	ستون دقيقة					
+ar_w_saa#ex1	example	1	أدرس ساعتين كل يوم.		I study for two hours every day.	أدرس ساعتين كل يوم.					
+ar_w_saa#ex2	example	1	كم الساعة الآن من فضلك؟		What time is it now, please?	كم الساعة الآن من فضلك؟					
+ar_w_daqiqa	word	1	دَقِيقَة	daqīqa	minute	ستون ثانية					
+ar_w_daqiqa#ex1	example	1	يبدأ الدرس بعد خمس دقائق.		The lesson starts in five minutes.	يبدأ الدرس بعد خمس دقائق.					
+ar_w_daqiqa#ex2	example	1	يصل القطار بعد دقائق قليلة.		The train arrives in a few minutes.	يصل القطار بعد دقائق قليلة.					
+ar_w_usbu	word	1	أُسْبُوع	usbūʿ	week	سبعة أيام					
+ar_w_usbu#ex1	example	1	سأرجع إلى البيت بعد أسبوع.		I'll come back home in a week.	سأرجع إلى البيت بعد أسبوع.					
+ar_w_usbu#ex2	example	1	أدرس العربية ثلاث مرات في الأسبوع.		I study Arabic three times a week.	أدرس العربية ثلاث مرات في الأسبوع.					
+ar_w_shahr	word	1	شَهْر	shahr	month	ثلاثون يومًا تقريبًا					
+ar_w_shahr#ex1	example	1	سأسافر إلى مصر بعد شهر.		I'm travelling to Egypt in a month.	سأسافر إلى مصر بعد شهر.					
+ar_w_shahr#ex2	example	1	أدفع المال كل شهر.		I pay the money every month.	أدفع المال كل شهر.					
+ar_w_sana	word	1	سَنَة	sana	year	اثنا عشر شهرًا					
+ar_w_sana#ex1	example	1	في السنة اثنا عشر شهرا.		There are twelve months in a year.	في السنة اثنا عشر شهرا.					
+ar_w_sana#ex2	example	1	درست العربية ثلاث سنوات.		I studied Arabic for three years.	درست العربية ثلاث سنوات.					
+ar_w_waqt	word	1	وَقْت	waqt	time	زمن					
+ar_w_waqt#ex1	example	1	ليس عندي وقت اليوم.		I don't have time today.	ليس عندي وقت اليوم.					
+ar_w_waqt#ex2	example	1	كم من الوقت تحتاج؟		How much time do you need?	كم من الوقت تحتاج؟					
+ar_w_marra	word	1	مَرَّة	marra	time (occasion)	دفعة					
+ar_w_marra#ex1	example	1	أزور أمي مرة كل أسبوع.		I visit my mother once a week.	أزور أمي مرة كل أسبوع.					
+ar_w_marra#ex2	example	1	قلت لك ثلاث مرات.		I've told you three times.	قلت لك ثلاث مرات.					
+ar_w_utla	word	1	عُطْلَة	ʿuṭla	holiday	وقت الراحة من العمل					
+ar_w_utla#ex1	example	1	ماذا فعلتم في العطلة؟		What did you (pl.) do during the holiday?	ماذا فعلتم في العطلة؟					
+ar_w_utla#ex2	example	1	العطلة تبدأ غدا، أنا سعيد.		The holiday starts tomorrow, I'm happy.	العطلة تبدأ غدا، أنا سعيد.					
+ar_w_jumua	word	1	الْجُمُعَة	al-jumuʿa	Friday	يوم من أيام الأسبوع					
+ar_w_jumua#ex1	example	1	اليوم هو يوم الجمعة.		Today is Friday.	اليوم هو يوم الجمعة.					
+ar_w_jumua#ex2	example	1	يذهب أبي إلى المسجد يوم الجمعة.		My father goes to the mosque on Friday.	يذهب أبي إلى المسجد يوم الجمعة.					
+ar_w_salam	word	1	السَّلَامُ عَلَيْكُمْ	as-salāmu ʿalaykum	peace be upon you (greeting)	تحية الإسلام					
+ar_w_salam#ex1	example	1	السلام عليكم، أنا سارة.		Hello (peace be upon you), I'm Sara.	السلام عليكم، أنا سارة.					
+ar_w_salam#ex2	example	1	السلام عليكم، كيف حالكم؟		Hello (peace be upon you), how are you all?	السلام عليكم، كيف حالكم؟					
+ar_w_ras	word	1	رَأْس	raʾs	head	أعلى الجسم					
+ar_w_ras#ex1	example	1	رأسي حار، أظن أني مريض.		My head is hot, I think I'm ill.	رأسي حار، أظن أني مريض.					
+ar_w_ras#ex2	example	1	لبس الطفل شيئا على رأسه.		The child put something on his head.	لبس الطفل شيئا على رأسه.					
+ar_w_yad	word	1	يَد	yad	hand	عضو للإمساك					
+ar_w_yad#ex1	example	1	يدك باردة جدا اليوم.		Your hand is very cold today.	يدك باردة جدا اليوم.					
+ar_w_yad#ex2	example	1	اغسل يديك قبل الطعام.		Wash your hands before eating.	اغسل يديك قبل الطعام.					
+ar_w_ayn	word	1	عَيْن	ʿayn	eye	عضو النظر					
+ar_w_ayn#ex1	example	1	لأختي عينان جميلتان جدا.		My sister has very beautiful eyes.	لأختي عينان جميلتان جدا.					
+ar_w_ayn#ex2	example	1	عيون القطة زرقاء وجميلة.		The cat's eyes are blue and beautiful.	عيون القطة زرقاء وجميلة.					
+ar_w_jism	word	1	جِسْم	jism	body	بدن					
+ar_w_jism#ex1	example	1	الماء مهم جدا للجسم.		Water is very important for the body.	الماء مهم جدا للجسم.					
+ar_w_jism#ex2	example	1	جسمي متعب جدا اليوم.		My body is very tired today.	جسمي متعب جدا اليوم.					
+ar_w_dawa	word	1	دَوَاء	dawāʾ	medicine	ما يُعالَج به المريض					
+ar_w_dawa#ex1	example	1	أحتاج إلى دواء من الطبيب.		I need medicine from the doctor.	أحتاج إلى دواء من الطبيب.					
+ar_w_dawa#ex2	example	1	خذ هذا الدواء بعد الأكل.		Take this medicine after eating.	خذ هذا الدواء بعد الأكل.					
+ar_w_taqs	word	1	طَقْس	ṭaqs	weather	حالة الجو					
+ar_w_taqs#ex1	example	1	كيف الطقس في مدينتك اليوم؟		What's the weather like in your city today?	كيف الطقس في مدينتك اليوم؟					
+ar_w_taqs#ex2	example	1	الطقس سيئ جدا اليوم.		The weather is very bad today.	الطقس سيئ جدا اليوم.					
+ar_w_matar	word	1	مَطَر	maṭar	rain	ماء ينزل من السحاب					
+ar_w_matar#ex1	example	1	كان المطر كثيرا أمس.		There was a lot of rain yesterday.	كان المطر كثيرا أمس.					
+ar_w_matar#ex2	example	1	أنا لا أحب المطر.		I don't like the rain.	أنا لا أحب المطر.					
+ar_w_shams	word	1	شَمْس	shams	sun	نجم النهار					
+ar_w_shams#ex1	example	1	الشمس فوق البحر في الصباح.		The sun is above the sea in the morning.	الشمس فوق البحر في الصباح.					
+ar_w_shams#ex2	example	1	الشمس حارة جدا اليوم.		The sun is very hot today.	الشمس حارة جدا اليوم.					
+ar_w_bahr	word	1	بَحْر	baḥr	sea	ماء مالح واسع					
+ar_w_bahr#ex1	example	1	نذهب إلى البحر في الصيف.		We go to the sea in the summer.	نذهب إلى البحر في الصيف.					
+ar_w_bahr#ex2	example	1	ماء البحر بارد جدا.		The sea water is very cold.	ماء البحر بارد جدا.					
+ar_w_shita	word	1	شِتَاء	shitāʾ	winter	فصل البرد					
+ar_w_shita#ex1	example	1	المطر كثير في الشتاء.		There's a lot of rain in winter.	المطر كثير في الشتاء.					
+ar_w_shita#ex2	example	1	الشتاء بارد في بلدي.		Winter is cold in my country.	الشتاء بارد في بلدي.					
+ar_w_sayf	word	1	صَيْف	ṣayf	summer	فصل الحرّ					
+ar_w_sayf#ex1	example	1	الصيف حار جدا هنا.		Summer is very hot here.	الصيف حار جدا هنا.					
+ar_w_sayf#ex2	example	1	أحب الصيف أكثر من الشتاء.		I like summer more than winter.	أحب الصيف أكثر من الشتاء.					
+ar_w_qitta	word	1	قِطَّة	qiṭṭa	cat	حيوان أليف					
+ar_w_qitta#ex1	example	1	عندنا قطة بيضاء صغيرة.		We have a little white cat.	عندنا قطة بيضاء صغيرة.					
+ar_w_qitta#ex2	example	1	أختي تحب القطط كثيرا.		My sister loves cats.	أختي تحب القطط كثيرا.					
+ar_w_kalb	word	1	كَلْب	kalb	dog	حيوان يحرس					
+ar_w_kalb#ex1	example	1	أحب أن ألعب مع كلبي.		I like playing with my dog.	أحب أن ألعب مع كلبي.					
+ar_w_kalb#ex2	example	1	عندنا كلب كبير في البيت.		We have a big dog at home.	عندنا كلب كبير في البيت.					
+ar_w_sual	word	1	سُؤَال	suʾāl	question	ما يُسأل عنه					
+ar_w_sual#ex1	example	1	هذا سؤال جيد جدا.		That's a very good question.	هذا سؤال جيد جدا.					
+ar_w_sual#ex2	example	1	هل عندك سؤال عن الدرس؟		Do you have a question about the lesson?	هل عندك سؤال عن الدرس؟					
+ar_w_lugha	word	1	لُغَة	lugha	language	لسان					
+ar_w_lugha#ex1	example	1	أريد أن أتعلم لغة جديدة.		I want to learn a new language.	أريد أن أتعلم لغة جديدة.					
+ar_w_lugha#ex2	example	1	كم لغة تتكلم أنت؟		How many languages do you speak?	كم لغة تتكلم أنت؟					
+ar_w_arabiyya	word	1	الْعَرَبِيَّة	al-ʿarabiyya	Arabic (language)	لغة العرب					
+ar_w_arabiyya#ex1	example	1	اللغة العربية لغة جميلة.		Arabic is a beautiful language.	اللغة العربية لغة جميلة.					
+ar_w_arabiyya#ex2	example	1	هل تتكلم العربية جيدا؟		Do you speak Arabic well?	هل تتكلم العربية جيدا؟					
+ar_w_kalima	word	1	كَلِمَة	kalima	word	لفظ					
+ar_w_kalima#ex1	example	1	لم أفهم هذه الكلمة.		I didn't understand this word.	لم أفهم هذه الكلمة.					
+ar_w_kalima#ex2	example	1	اكتب هذه الكلمة على الورقة.		Write this word on the paper.	اكتب هذه الكلمة على الورقة.					
+ar_w_dars	word	1	دَرْس	dars	lesson	حصة تعليمية					
+ar_w_dars#ex1	example	1	الدرس اليوم طويل جدا.		Today's lesson is very long.	الدرس اليوم طويل جدا.					
+ar_w_dars#ex2	example	1	عندنا درس في الصباح.		We have a lesson in the morning.	عندنا درس في الصباح.					
+ar_w_mushkila	word	1	مُشْكِلَة	mushkila	problem	أمر صعب					
+ar_w_mushkila#ex1	example	1	لا توجد مشكلة، أنا هنا.		No problem, I'm here.	لا توجد مشكلة، أنا هنا.					
+ar_w_mushkila#ex2	example	1	عندي مشكلة في سيارتي.		I have a problem with my car.	عندي مشكلة في سيارتي.					
+ar_w_hal_state	word	1	حَال	ḥāl	state, condition (كيف حالك؟)	وضع					
+ar_w_hal_state#ex1	example	1	كيف حال أسرتك اليوم؟		How is your family today?	كيف حال أسرتك اليوم؟					
+ar_w_hal_state#ex2	example	1	كيف حالك؟ أنا بخير.		How are you? I'm fine.	كيف حالك؟ أنا بخير.					
+ar_w_khayr	word	1	خَيْر	khayr	good; well-being (بخير: well)	ضدّ الشرّ					
+ar_w_khayr#ex1	example	1	أنا بخير، شكرا لك.		I'm fine, thank you.	أنا بخير، شكرا لك.					
+ar_w_khayr#ex2	example	1	أمي بخير الآن، شكرا.		My mother is well now, thanks.	أمي بخير الآن، شكرا.					
+ar_w_kabir	word	1	كَبِير	kabīr	big; old (person)	ضدّ صغير					
+ar_w_kabir#ex1	example	1	هذا بيت كبير وجميل.		This is a big, beautiful house.	هذا بيت كبير وجميل.					
+ar_w_kabir#ex2	example	1	القاهرة أكبر مدينة في مصر.		Cairo is the biggest city in Egypt.	القاهرة أكبر مدينة في مصر.					
+ar_w_saghir	word	1	صَغِير	ṣaghīr	small; young	ضدّ كبير					
+ar_w_saghir#ex1	example	1	عندي سيارة صغيرة وقديمة.		I have a small, old car.	عندي سيارة صغيرة وقديمة.					
+ar_w_saghir#ex2	example	1	أختي أصغر مني بسنة.		My sister is a year younger than me.	أختي أصغر مني بسنة.					
+ar_w_jadid	word	1	جَدِيد	jadīd	new	ضدّ قديم					
+ar_w_jadid#ex1	example	1	هل هذا كتاب جديد؟		Is this a new book?	هل هذا كتاب جديد؟					
+ar_w_jadid#ex2	example	1	عندنا مدرس جديد هذا الشهر.		We have a new teacher this month.	عندنا مدرس جديد هذا الشهر.					
+ar_w_qadim	word	1	قَدِيم	qadīm	old (thing)	ضدّ جديد					
+ar_w_qadim#ex1	example	1	هذا البيت قديم جدا.		This house is very old.	هذا البيت قديم جدا.					
+ar_w_qadim#ex2	example	1	سيارة أبي قديمة لكن جيدة.		My father's car is old but good.	سيارة أبي قديمة لكن جيدة.					
+ar_w_jamil	word	1	جَمِيل	jamīl	beautiful	حسن					
+ar_w_jamil#ex1	example	1	هذه المدينة جميلة جدا.		This city is very beautiful.	هذه المدينة جميلة جدا.					
+ar_w_jamil#ex2	example	1	البحر أجمل في الصباح.		The sea is more beautiful in the morning.	البحر أجمل في الصباح.					
+ar_w_jayyid	word	1	جَيِّد	jayyid	good	حسن					
+ar_w_jayyid#ex1	example	1	هذا مطعم جيد جدا.		This is a very good restaurant.	هذا مطعم جيد جدا.					
+ar_w_jayyid#ex2	example	1	أنت طالب جيد جدا.		You are a very good student.	أنت طالب جيد جدا.					
+ar_w_sayyi	word	1	سَيِّئ	sayyiʾ	bad	ضدّ جيد					
+ar_w_sayyi#ex1	example	1	هذا الطعام سيئ جدا.		This food is very bad.	هذا الطعام سيئ جدا.					
+ar_w_sayyi#ex2	example	1	كان يوما سيئا في العمل.		It was a bad day at work.	كان يوما سيئا في العمل.					
+ar_w_tawil	word	1	طَوِيل	ṭawīl	long; tall	ضدّ قصير					
+ar_w_tawil#ex1	example	1	هذا الشارع طويل جدا.		This street is very long.	هذا الشارع طويل جدا.					
+ar_w_tawil#ex2	example	1	أخي الكبير أطول مني.		My older brother is taller than me.	أخي الكبير أطول مني.					
+ar_w_qasir	word	1	قَصِير	qaṣīr	short	ضدّ طويل					
+ar_w_qasir#ex1	example	1	كان الدرس قصيرا اليوم.		The lesson was short today.	كان الدرس قصيرا اليوم.					
+ar_w_qasir#ex2	example	1	أختي الصغيرة قصيرة جدا.		My little sister is very short.	أختي الصغيرة قصيرة جدا.					
+ar_w_harr	word	1	حَارّ	ḥārr	hot	شديد الحرارة					
+ar_w_harr#ex1	example	1	الصيف حار في مصر.		Summer is hot in Egypt.	الصيف حار في مصر.					
+ar_w_harr#ex2	example	1	هذا الشاي حار جدا.		This tea is very hot.	هذا الشاي حار جدا.					
+ar_w_barid	word	1	بَارِد	bārid	cold	قليل الحرارة					
+ar_w_barid#ex1	example	1	الطقس بارد جدا في الشتاء.		It's very cold in winter.	الطقس بارد جدا في الشتاء.					
+ar_w_barid#ex2	example	1	الغرفة باردة، أغلق النافذة.		The room is cold, close the window.	الغرفة باردة، أغلق النافذة.					
+ar_w_said	word	1	سَعِيد	saʿīd	happy	فرحان					
+ar_w_said#ex1	example	1	أنا سعيد جدا اليوم.		I'm very happy today.	أنا سعيد جدا اليوم.					
+ar_w_said#ex2	example	1	كانت أمي سعيدة بالهدية.		My mother was happy with the present.	كانت أمي سعيدة بالهدية.					
+ar_w_hazin	word	1	حَزِين	ḥazīn	sad	ضدّ سعيد					
+ar_w_hazin#ex1	example	1	كان الطفل حزينا لأن كلبه مريض.		The child was sad because his dog was ill.	كان الطفل حزينا لأن كلبه مريض.					
+ar_w_hazin#ex2	example	1	أختي حزينة جدا اليوم.		My sister is very sad today.	أختي حزينة جدا اليوم.					
+ar_w_mutab	word	1	مُتْعَب	mutʿab	tired	مرهق					
+ar_w_mutab#ex1	example	1	أنا متعب جدا بعد العمل.		I'm very tired after work.	أنا متعب جدا بعد العمل.					
+ar_w_mutab#ex2	example	1	كانت أمي متعبة أمس.		My mother was tired yesterday.	كانت أمي متعبة أمس.					
+ar_w_jai	word	1	جَائِع	jāʾiʿ	hungry	يريد الطعام					
+ar_w_jai#ex1	example	1	هل أنت جائع الآن؟		Are you hungry now?	هل أنت جائع الآن؟					
+ar_w_jai#ex2	example	1	الأطفال جائعون، لنأكل الآن.		The children are hungry, let's eat now.	الأطفال جائعون، لنأكل الآن.					
+ar_w_atshan	word	1	عَطْشَان	ʿaṭshān	thirsty	يريد الماء					
+ar_w_atshan#ex1	example	1	أنا عطشان، أريد الماء.		I'm thirsty, I want some water.	أنا عطشان، أريد الماء.					
+ar_w_atshan#ex2	example	1	هل أنت عطشان بعد الرياضة؟		Are you thirsty after exercising?	هل أنت عطشان بعد الرياضة؟					
+ar_w_sahl	word	1	سَهْل	sahl	easy	ضدّ صعب					
+ar_w_sahl#ex1	example	1	هذا الدرس سهل جدا.		This lesson is very easy.	هذا الدرس سهل جدا.					
+ar_w_sahl#ex2	example	1	اللغة العربية ليست سهلة.		Arabic isn't easy.	اللغة العربية ليست سهلة.					
+ar_w_sab	word	1	صَعْب	ṣaʿb	difficult	ضدّ سهل					
+ar_w_sab#ex1	example	1	هذا سؤال صعب جدا.		This is a very difficult question.	هذا سؤال صعب جدا.					
+ar_w_sab#ex2	example	1	العمل صعب لكن جميل.		The work is hard but nice.	العمل صعب لكن جميل.					
+ar_w_ghali	word	1	غَالٍ	ghālin	expensive	مرتفع الثمن					
+ar_w_ghali#ex1	example	1	هذا المطعم غال جدا.		This restaurant is very expensive.	هذا المطعم غال جدا.					
+ar_w_ghali#ex2	example	1	السيارة الجديدة غالية جدا.		The new car is very expensive.	السيارة الجديدة غالية جدا.					
+ar_w_rakhis	word	1	رَخِيص	rakhīṣ	cheap	قليل الثمن					
+ar_w_rakhis#ex1	example	1	الفاكهة رخيصة في الصيف.		Fruit is cheap in summer.	الفاكهة رخيصة في الصيف.					
+ar_w_rakhis#ex2	example	1	هذا السوق أرخص من ذلك.		This market is cheaper than that one.	هذا السوق أرخص من ذلك.					
+ar_w_qarib	word	1	قَرِيب	qarīb	near	ضدّ بعيد					
+ar_w_qarib#ex1	example	1	السوق قريب من بيتنا.		The market is near our house.	السوق قريب من بيتنا.					
+ar_w_qarib#ex2	example	1	المحطة أقرب من المطار.		The station is closer than the airport.	المحطة أقرب من المطار.					
+ar_w_baid	word	1	بَعِيد	baʿīd	far	ضدّ قريب					
+ar_w_baid#ex1	example	1	المستشفى بعيد عن بيتنا.		The hospital is far from our house.	المستشفى بعيد عن بيتنا.					
+ar_w_baid#ex2	example	1	هل المطار بعيد عن هنا؟		Is the airport far from here?	هل المطار بعيد عن هنا؟					
+ar_w_sari	word	1	سَرِيع	sarīʿ	fast	ضدّ بطيء					
+ar_w_sari#ex1	example	1	هذا القطار سريع جدا.		This train is very fast.	هذا القطار سريع جدا.					
+ar_w_sari#ex2	example	1	أمشي سريعا إلى المحطة.		I walk quickly to the station.	أمشي سريعا إلى المحطة.					
+ar_w_bati	word	1	بَطِيء	baṭīʾ	slow	ضدّ سريع					
+ar_w_bati#ex1	example	1	الحافلة اليوم بطيئة جدا.		The bus is very slow today.	الحافلة اليوم بطيئة جدا.					
+ar_w_bati#ex2	example	1	حاسوبي قديم وبطيء جدا.		My computer is old and very slow.	حاسوبي قديم وبطيء جدا.					
+ar_w_mashghul	word	1	مَشْغُول	mashghūl	busy	ليس عنده وقت					
+ar_w_mashghul#ex1	example	1	أنا مشغول جدا اليوم.		I'm very busy today.	أنا مشغول جدا اليوم.					
+ar_w_mashghul#ex2	example	1	أبي مشغول دائما في العمل.		My father is always busy at work.	أبي مشغول دائما في العمل.					
+ar_w_ladhidh	word	1	لَذِيذ	ladhīdh	delicious	طيّب الطعم					
+ar_w_ladhidh#ex1	example	1	الطعام في هذا المطعم لذيذ.		The food in this restaurant is delicious.	الطعام في هذا المطعم لذيذ.					
+ar_w_ladhidh#ex2	example	1	كانت القهوة لذيذة جدا.		The coffee was very good.	كانت القهوة لذيذة جدا.					
+ar_w_muhimm	word	1	مُهِمّ	muhimm	important	ذو أهمية					
+ar_w_muhimm#ex1	example	1	هذا الدرس مهم جدا.		This lesson is very important.	هذا الدرس مهم جدا.					
+ar_w_muhimm#ex2	example	1	عندي عمل مهم اليوم.		I have important work today.	عندي عمل مهم اليوم.					
+ar_w_awwal	word	1	أَوَّل	awwal	first	ضدّ آخر					
+ar_w_awwal#ex1	example	1	هذه أول مرة أسافر فيها.		This is the first time I've travelled.	هذه أول مرة أسافر فيها.					
+ar_w_awwal#ex2	example	1	أسكن في الشارع الأول.		I live on the first street.	أسكن في الشارع الأول.					
+ar_w_akhar	word	1	آخَر	ākhar	other, another	غير هذا					
+ar_w_akhar#ex1	example	1	هل عندك لون آخر؟		Do you have another colour?	هل عندك لون آخر؟					
+ar_w_akhar#ex2	example	1	أريد غرفة أخرى من فضلك.		I'd like another room, please.	أريد غرفة أخرى من فضلك.					
+ar_w_kathir	word	1	كَثِير	kathīr	many, much	ضدّ قليل					
+ar_w_kathir#ex1	example	1	في المدينة سيارات كثيرة.		There are a lot of cars in the city.	في المدينة سيارات كثيرة.					
+ar_w_kathir#ex2	example	1	أحب الشاي أكثر من القهوة.		I like tea more than coffee.	أحب الشاي أكثر من القهوة.					
+ar_w_qalil	word	1	قَلِيل	qalīl	few, little	ضدّ كثير					
+ar_w_qalil#ex1	example	1	عندي وقت قليل اليوم.		I have little time today.	عندي وقت قليل اليوم.					
+ar_w_qalil#ex2	example	1	أتكلم العربية قليلا فقط.		I only speak a little Arabic.	أتكلم العربية قليلا فقط.					
+ar_w_marid	word	1	مَرِيض	marīḍ	ill, sick	غير صحيح الجسم					
+ar_w_marid#ex1	example	1	أنا مريض ولا أستطيع أن أعمل.		I'm ill and can't work.	أنا مريض ولا أستطيع أن أعمل.					
+ar_w_marid#ex2	example	1	كانت أختي مريضة أمس.		My sister was ill yesterday.	كانت أختي مريضة أمس.					
+ar_w_mumkin	word	1	مُمْكِن	mumkin	possible	يمكن حدوثه					
+ar_w_mumkin#ex1	example	1	هل ممكن أن تساعدني؟		Could you help me?	هل ممكن أن تساعدني؟					
+ar_w_mumkin#ex2	example	1	ممكن أن نذهب غدا.		We could go tomorrow.	ممكن أن نذهب غدا.					
+ar_w_asif	word	1	آسِف	āsif	sorry	نادم					
+ar_w_asif#ex1	example	1	آسف، لا أعرف أين المحطة.		Sorry, I don't know where the station is.	آسف، لا أعرف أين المحطة.					
+ar_w_asif#ex2	example	1	أنا آسفة، لم أفهم.		I'm sorry (f.), I didn't understand.	أنا آسفة، لم أفهم.					
+ar_w_abyad	word	1	أَبْيَض	abyaḍ	white	لون الثلج					
+ar_w_abyad#ex1	example	1	القطة البيضاء الصغيرة لأختي.		The little white cat is my sister's.	القطة البيضاء الصغيرة لأختي.					
+ar_w_abyad#ex2	example	1	لبست ملابس بيضاء اليوم.		I wore white clothes today.	لبست ملابس بيضاء اليوم.					
+ar_w_aswad	word	1	أَسْوَد	aswad	black	لون الليل					
+ar_w_aswad#ex1	example	1	الكلب الأسود كبير جدا.		The black dog is very big.	الكلب الأسود كبير جدا.					
+ar_w_aswad#ex2	example	1	حقيبتي سوداء وجديدة جدا.		My bag is black and brand new.	حقيبتي سوداء وجديدة جدا.					
+ar_w_ahmar	word	1	أَحْمَر	aḥmar	red	لون الدم					
+ar_w_ahmar#ex1	example	1	أكلت تفاحة حمراء كبيرة.		I ate a big red apple.	أكلت تفاحة حمراء كبيرة.					
+ar_w_ahmar#ex2	example	1	عندي قلم أحمر وقلم أزرق.		I have a red pen and a blue pen.	عندي قلم أحمر وقلم أزرق.					
+ar_w_azraq	word	1	أَزْرَق	azraq	blue	لون السماء					
+ar_w_azraq#ex1	example	1	أحب اللون الأزرق كثيرا.		I really like the colour blue.	أحب اللون الأزرق كثيرا.					
+ar_w_azraq#ex2	example	1	البحر أزرق وجميل اليوم.		The sea is blue and beautiful today.	البحر أزرق وجميل اليوم.					
+ar_w_wahid	word	1	وَاحِد	wāḥid	one	العدد ١					
+ar_w_wahid#ex1	example	1	انتظر دقيقة واحدة من فضلك.		Wait one minute, please.	انتظر دقيقة واحدة من فضلك.					
+ar_w_wahid#ex2	example	1	عندنا سيارة واحدة فقط.		We have only one car.	عندنا سيارة واحدة فقط.					
+ar_w_ithnan	word	1	اِثْنَانِ	ithnān	two	العدد ٢					
+ar_w_ithnan#ex1	example	1	واحد واثنان وثلاثة وأربعة.		One, two, three and four.	واحد واثنان وثلاثة وأربعة.					
+ar_w_ithnan#ex2	example	1	كم أخا عندك؟ اثنان.		How many brothers do you have? Two.	كم أخا عندك؟ اثنان.					
+ar_w_thalatha	word	1	ثَلَاثَة	thalātha	three	العدد ٣					
+ar_w_thalatha#ex1	example	1	عندي ثلاثة كتب جديدة.		I have three new books.	عندي ثلاثة كتب جديدة.					
+ar_w_thalatha#ex2	example	1	انتظرت ثلاث ساعات في المطار.		I waited three hours at the airport.	انتظرت ثلاث ساعات في المطار.					
+ar_w_arbaa	word	1	أَرْبَعَة	arbaʿa	four	العدد ٤					
+ar_w_arbaa#ex1	example	1	نحن أربعة أشخاص في الأسرة.		There are four of us in the family.	نحن أربعة أشخاص في الأسرة.					
+ar_w_arbaa#ex2	example	1	أعمل أربع ساعات كل يوم.		I work four hours every day.	أعمل أربع ساعات كل يوم.					
+ar_w_khamsa	word	1	خَمْسَة	khamsa	five	العدد ٥					
+ar_w_khamsa#ex1	example	1	في الغرفة خمسة أشخاص.		There are five people in the room.	في الغرفة خمسة أشخاص.					
+ar_w_khamsa#ex2	example	1	عندي خمسة إخوة وأخت واحدة.		I have five brothers and one sister.	عندي خمسة إخوة وأخت واحدة.					
+ar_w_sitta	word	1	سِتَّة	sitta	six	العدد ٦					
+ar_w_sitta#ex1	example	1	عندي ستة أقلام في حقيبتي.		I have six pens in my bag.	عندي ستة أقلام في حقيبتي.					
+ar_w_sitta#ex2	example	1	اشتريت ست تفاحات من السوق.		I bought six apples at the market.	اشتريت ست تفاحات من السوق.					
+ar_w_saba	word	1	سَبْعَة	sabʿa	seven	العدد ٧					
+ar_w_saba#ex1	example	1	في الأسبوع سبعة أيام.		There are seven days in a week.	في الأسبوع سبعة أيام.					
+ar_w_saba#ex2	example	1	قرأت سبعة كتب في العطلة.		I read seven books during the holiday.	قرأت سبعة كتب في العطلة.					
+ar_w_thamaniya	word	1	ثَمَانِيَة	thamāniya	eight	العدد ٨					
+ar_w_thamaniya#ex1	example	1	في المدرسة ثمانية مدرسين.		There are eight teachers at the school.	في المدرسة ثمانية مدرسين.					
+ar_w_thamaniya#ex2	example	1	عملت ثماني ساعات اليوم.		I worked eight hours today.	عملت ثماني ساعات اليوم.					
+ar_w_tisa	word	1	تِسْعَة	tisʿa	nine	العدد ٩					
+ar_w_tisa#ex1	example	1	اشتريت تسعة أقلام للمدرسة.		I bought nine pens for school.	اشتريت تسعة أقلام للمدرسة.					
+ar_w_tisa#ex2	example	1	بعد تسع دقائق يصل القطار.		The train arrives in nine minutes.	بعد تسع دقائق يصل القطار.					
+ar_w_ashara	word	1	عَشَرَة	ʿashara	ten	العدد ١٠					
+ar_w_ashara#ex1	example	1	عندي عشرة أصدقاء في الجامعة.		I have ten friends at university.	عندي عشرة أصدقاء في الجامعة.					
+ar_w_ashara#ex2	example	1	انتظرت عشر دقائق في المحطة.		I waited ten minutes at the station.	انتظرت عشر دقائق في المحطة.					
+ar_w_mia	word	1	مِئَة	miʾa	hundred	العدد ١٠٠					
+ar_w_mia#ex1	example	1	في مدرستنا مئة طالب.		There are a hundred students at our school.	في مدرستنا مئة طالب.					
+ar_w_mia#ex2	example	1	في هذا الشارع مئة بيت.		There are a hundred houses on this street.	في هذا الشارع مئة بيت.					
+ar_w_nisf	word	1	نِصْف	niṣf	half	أحد جزأين متساويين					
+ar_w_nisf#ex1	example	1	أكلت نصف التفاحة فقط.		I only ate half the apple.	أكلت نصف التفاحة فقط.					
+ar_w_nisf#ex2	example	1	نصف الطلاب في المكتبة.		Half the students are in the library.	نصف الطلاب في المكتبة.					
+ar_w_marhaban	word	1	مَرْحَبًا	marḥaban	hello	تحية					
+ar_w_marhaban#ex1	example	1	مرحبا، اسمي سارة وأنا طالبة.		Hello, my name is Sara and I'm a student.	مرحبا، اسمي سارة وأنا طالبة.					
+ar_w_marhaban#ex2	example	1	مرحبا، هل أنت مشغول الآن؟		Hello, are you busy now?	مرحبا، هل أنت مشغول الآن؟					
+ar_w_shukran	word	1	شُكْرًا	shukran	thank you	كلمة شكر					
+ar_w_shukran#ex1	example	1	شكرا، الطعام لذيذ جدا.		Thank you, the food is delicious.	شكرا، الطعام لذيذ جدا.					
+ar_w_shukran#ex2	example	1	شكرا، لا أريد شيئا.		Thanks, I don't want anything.	شكرا، لا أريد شيئا.					
+ar_w_afwan	word	1	عَفْوًا	ʿafwan	you're welcome; excuse me	ردّ على الشكر					
+ar_w_afwan#ex1	example	1	شكرا لك! عفوا، لا مشكلة.		Thank you! — You're welcome, no problem.	شكرا لك! عفوا، لا مشكلة.					
+ar_w_afwan#ex2	example	1	عفوا، أين محطة القطار؟		Excuse me, where is the train station?	عفوا، أين محطة القطار؟					
+ar_w_maa_salama	word	1	مَعَ السَّلَامَة	maʿa s-salāma	goodbye	تحية الوداع					
+ar_w_maa_salama#ex1	example	1	مع السلامة، أراك غدا.		Goodbye, see you tomorrow.	مع السلامة، أراك غدا.					
+ar_w_maa_salama#ex2	example	1	قلت لأمي مع السلامة.		I said goodbye to my mother.	قلت لأمي مع السلامة.					
+ar_w_min_fadlak	word	1	مِنْ فَضْلِكَ	min faḍlik	please	عبارة طلب مهذبة					
+ar_w_min_fadlak#ex1	example	1	من فضلك، أين المطعم؟		Excuse me, where is the restaurant?	من فضلك، أين المطعم؟					
+ar_w_min_fadlak#ex2	example	1	اكتب اسمك هنا من فضلك.		Write your name here, please.	اكتب اسمك هنا من فضلك.					
+ar_w_sabah_alkhayr	word	1	صَبَاحُ الْخَيْرِ	ṣabāḥu l-khayr	good morning	تحية الصباح					
+ar_w_sabah_alkhayr#ex1	example	1	صباح الخير، كيف حالك؟		Good morning, how are you?	صباح الخير، كيف حالك؟					
+ar_w_sabah_alkhayr#ex2	example	1	صباح الخير، هل تريد قهوة؟		Good morning, would you like some coffee?	صباح الخير، هل تريد قهوة؟					

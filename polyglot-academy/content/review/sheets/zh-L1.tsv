@@ -1,0 +1,901 @@
+item_id	kind	level	text	pron	en	ar	status	correction	reviewer	date	note
+zh_w_de	word	1	的	·de	possessive / modifier particle ('s, of)	أداة الإضافة والوصف					
+zh_w_de#ex1	example	1	这是我的书。		This is my book.	هذا كتابي.					
+zh_w_de#ex2	example	1	她的名字叫什么？		What is her name?	ما اسمها؟					
+zh_w_shi	word	1	是	shì	to be	يكون					
+zh_w_shi#ex1	example	1	他是我的老师。		He is my teacher.	هو أستاذي.					
+zh_w_shi#ex2	example	1	这是我哥哥。		This is my older brother.	هذا أخي الأكبر.					
+zh_w_wo	word	1	我	wǒ	I, me	أنا					
+zh_w_wo#ex1	example	1	我有两个姐姐。		I have two older sisters.	لديّ أختان أكبر مني.					
+zh_w_wo#ex2	example	1	我每天都走路去学校。		I walk to school every day.	أذهب إلى المدرسة مشيًا كل يوم.					
+zh_w_ni	word	1	你	nǐ	you	أنت					
+zh_w_ni#ex1	example	1	你今天去学校吗？		Are you going to school today?	هل تذهب إلى المدرسة اليوم؟					
+zh_w_ni#ex2	example	1	你会做饭吗？		Can you cook?	هل تعرف الطبخ؟					
+zh_w_bu	word	1	不	bù	not, no	لا					
+zh_w_bu#ex1	example	1	我不喝咖啡。		I don't drink coffee.	لا أشرب القهوة.					
+zh_w_bu#ex2	example	1	今天不冷。		It isn't cold today.	الجو ليس باردًا اليوم.					
+zh_w_le	word	1	了	·le	particle for completed action or change	أداة لاكتمال الفعل أو التغيّر					
+zh_w_le#ex1	example	1	我买了一本书。		I bought a book.	اشتريت كتابًا.					
+zh_w_le#ex2	example	1	我吃了饭就走。		I'll leave as soon as I've eaten.	سأذهب بعد أن آكل مباشرة.					
+zh_w_zai	word	1	在	zài	at, in; to be at	في؛ يوجد في					
+zh_w_zai#ex1	example	1	我在家看电视。		I'm at home watching TV.	أنا في البيت أشاهد التلفاز.					
+zh_w_zai#ex2	example	1	我妈妈在商店。		My mother is at the shop.	أمي في المتجر.					
+zh_w_ta_m	word	1	他	tā	he, him	هو					
+zh_w_ta_m#ex1	example	1	他是我哥哥。		He is my older brother.	هو أخي الأكبر.					
+zh_w_ta_m#ex2	example	1	他每天早上喝咖啡。		He drinks coffee every morning.	يشرب القهوة كل صباح.					
+zh_w_ta_f	word	1	她	tā	she, her	هي					
+zh_w_ta_f#ex1	example	1	她是我姐姐。		She is my older sister.	هي أختي الكبرى.					
+zh_w_ta_f#ex2	example	1	她会说汉语。		She can speak Chinese.	تستطيع أن تتكلم الصينية.					
+zh_w_women	word	1	我们	wǒmen	we, us	نحن					
+zh_w_women#ex1	example	1	我们是好朋友。		We are good friends.	نحن صديقان حميمان.					
+zh_w_women#ex2	example	1	我们都喜欢喝茶。		We all like drinking tea.	كلنا نحب شرب الشاي.					
+zh_w_you	word	1	有	yǒu	to have; there is	يملك؛ يوجد					
+zh_w_you#ex1	example	1	我有一个哥哥。		I have an older brother.	لديّ أخ أكبر.					
+zh_w_you#ex2	example	1	你有时间吗？		Do you have time?	هل لديك وقت؟					
+zh_w_zhe	word	1	这	zhè	this	هذا					
+zh_w_zhe#ex1	example	1	这是什么？		What is this?	ما هذا؟					
+zh_w_zhe#ex2	example	1	这是我的房间。		This is my room.	هذه غرفتي.					
+zh_w_na	word	1	那	nà	that	ذلك					
+zh_w_na#ex1	example	1	那是什么？		What is that?	ما ذلك؟					
+zh_w_na#ex2	example	1	那个菜很贵。		That dish is expensive.	ذلك الطبق غالٍ.					
+zh_w_yi	word	1	一	yī	one	واحد					
+zh_w_yi#ex1	example	1	我有一个妹妹。		I have a younger sister.	لديّ أخت صغرى.					
+zh_w_yi#ex2	example	1	一年有十二个月。		A year has twelve months.	في السنة اثنا عشر شهرًا.					
+zh_w_ge	word	1	个	gè	general classifier	مصنِّف عام للعدّ					
+zh_w_ge#ex1	example	1	你要几个苹果？		How many apples do you want?	كم تفاحة تريد؟					
+zh_w_ge#ex2	example	1	他有两个儿子。		He has two sons.	لديه ابنان.					
+zh_w_ren	word	1	人	rén	person, people	إنسان، شخص					
+zh_w_ren#ex1	example	1	这个人是我的朋友。		This person is my friend.	هذا الشخص صديقي.					
+zh_w_ren#ex2	example	1	那儿有三个人。		There are three people over there.	هناك ثلاثة أشخاص.					
+zh_w_ye	word	1	也	yě	also, too	أيضًا					
+zh_w_ye#ex1	example	1	我也是学生。		I'm a student too.	أنا طالب أيضًا.					
+zh_w_ye#ex2	example	1	他也喜欢喝咖啡。		He likes coffee too.	هو أيضًا يحب شرب القهوة.					
+zh_w_dou	word	1	都	dōu	all, both	كلّهم، جميعًا					
+zh_w_dou#ex1	example	1	我们都是中国人。		We are all Chinese.	كلنا صينيون.					
+zh_w_dou#ex2	example	1	他们都去北京了。		They have all gone to Beijing.	ذهبوا كلهم إلى بكين.					
+zh_w_hen	word	1	很	hěn	very	جدًا					
+zh_w_hen#ex1	example	1	他的汉语很好。		His Chinese is very good.	لغته الصينية جيدة جدًا.					
+zh_w_hen#ex2	example	1	我很高兴。		I'm very happy.	أنا سعيد جدًا.					
+zh_w_ma	word	1	吗	·ma	question particle (yes/no)	أداة استفهام					
+zh_w_ma#ex1	example	1	你是老师吗？		Are you a teacher?	هل أنت معلم؟					
+zh_w_ma#ex2	example	1	你有手机吗？		Do you have a mobile phone?	هل عندك هاتف محمول؟					
+zh_w_ne	word	1	呢	·ne	particle: and…?; ongoing action	أداة استفهام وتأكيد					
+zh_w_ne#ex1	example	1	我很好，你呢？		I'm fine, and you?	أنا بخير، وأنت؟					
+zh_w_ne#ex2	example	1	你的哥哥呢？		What about your older brother?	وماذا عن أخيك الأكبر؟					
+zh_w_ba	word	1	吧	·ba	particle: suggestion, let's	أداة اقتراح					
+zh_w_ba#ex1	example	1	你是王先生吧？		You must be Mr Wang?	أنت السيد وانغ، أليس كذلك؟					
+zh_w_ba#ex2	example	1	我们一起去吧。		Let's go together.	لنذهب معًا.					
+zh_w_he_and	word	1	和	hé	and, with	و، مع					
+zh_w_he_and#ex1	example	1	我喜欢茶和咖啡。		I like tea and coffee.	أحب الشاي والقهوة.					
+zh_w_he_and#ex2	example	1	我和他是朋友。		He and I are friends.	أنا وهو صديقان.					
+zh_w_qu	word	1	去	qù	to go	يذهب					
+zh_w_qu#ex1	example	1	你明天去哪儿？		Where are you going tomorrow?	إلى أين تذهب غدًا؟					
+zh_w_qu#ex2	example	1	我想去中国。		I want to go to China.	أريد أن أذهب إلى الصين.					
+zh_w_lai	word	1	来	lái	to come	يأتي					
+zh_w_lai#ex1	example	1	你什么时候来？		When are you coming?	متى ستأتي؟					
+zh_w_lai#ex2	example	1	他明天来我家。		He is coming to my home tomorrow.	سيأتي إلى بيتي غدًا.					
+zh_w_shuo	word	1	说	shuō	to say, to speak	يقول، يتكلم					
+zh_w_shuo#ex1	example	1	他说汉语。		He speaks Chinese.	هو يتكلم الصينية.					
+zh_w_shuo#ex2	example	1	你说什么？		What did you say?	ماذا قلت؟					
+zh_w_kan	word	1	看	kàn	to look, to watch, to read	ينظر، يشاهد، يقرأ					
+zh_w_kan#ex1	example	1	你看，下雨了！		Look, it's raining!	انظر، إنها تمطر!					
+zh_w_kan#ex2	example	1	你在看什么？		What are you looking at?	إلى ماذا تنظر؟					
+zh_w_xiang	word	1	想	xiǎng	to want to; to think; to miss	يريد؛ يفكر؛ يشتاق					
+zh_w_xiang#ex1	example	1	我想喝水。		I want to drink water.	أريد أن أشرب ماءً.					
+zh_w_xiang#ex2	example	1	你想吃什么？		What would you like to eat?	ماذا تريد أن تأكل؟					
+zh_w_yao	word	1	要	yào	to want; will; need	يريد؛ سوف؛ يلزم					
+zh_w_yao#ex1	example	1	我要去北京。		I'm going to Beijing.	سأذهب إلى بكين.					
+zh_w_yao#ex2	example	1	你要什么？		What do you want?	ماذا تريد؟					
+zh_w_hui	word	1	会	huì	can (learned skill); will	يستطيع (مهارة)؛ سوف					
+zh_w_hui#ex1	example	1	明天你会来吗？		Will you come tomorrow?	هل ستأتي غدًا؟					
+zh_w_hui#ex2	example	1	我不会说中文。		I can't speak Chinese.	لا أعرف التكلم بالصينية.					
+zh_w_neng	word	1	能	néng	can, be able to	يستطيع					
+zh_w_neng#ex1	example	1	我今天不能来。		I can't come today.	لا أستطيع أن آتي اليوم.					
+zh_w_neng#ex2	example	1	你能帮我吗？		Can you help me?	هل يمكنك مساعدتي؟					
+zh_w_keyi	word	1	可以	kěyǐ	may, can	يمكن، مسموح					
+zh_w_keyi#ex1	example	1	我可以坐这儿吗？		May I sit here?	هل يمكنني الجلوس هنا؟					
+zh_w_keyi#ex2	example	1	你可以用我的电脑。		You can use my computer.	يمكنك استخدام حاسوبي.					
+zh_w_hao	word	1	好	hǎo	good, well	جيد					
+zh_w_hao#ex1	example	1	天气很好。		The weather is good.	الطقس جميل.					
+zh_w_hao#ex2	example	1	好，我们走吧。		OK, let's go.	حسنًا، لنذهب.					
+zh_w_da	word	1	大	dà	big; old (age)	كبير					
+zh_w_da#ex1	example	1	你多大了？		How old are you?	كم عمرك؟					
+zh_w_da#ex2	example	1	我家很大。		My home is big.	بيتي كبير.					
+zh_w_xiao	word	1	小	xiǎo	small, little; young	صغير					
+zh_w_xiao#ex1	example	1	我弟弟很小。		My younger brother is very little.	أخي الأصغر صغير جدًا.					
+zh_w_xiao#ex2	example	1	这个房间太小了。		This room is too small.	هذه الغرفة صغيرة جدًا.					
+zh_w_duo	word	1	多	duō	many, much	كثير					
+zh_w_duo#ex1	example	1	他有很多朋友。		He has a lot of friends.	لديه أصدقاء كثيرون.					
+zh_w_duo#ex2	example	1	这儿的人太多了。		There are too many people here.	الناس هنا كثيرون جدًا.					
+zh_w_shao	word	1	少	shǎo	few, little	قليل					
+zh_w_shao#ex1	example	1	今天学生很少。		There are few students today.	الطلاب قليلون اليوم.					
+zh_w_shao#ex2	example	1	这儿的人很少。		There are few people here.	الناس هنا قليلون.					
+zh_w_nimen	word	1	你们	nǐmen	you (plural)	أنتم					
+zh_w_nimen#ex1	example	1	你们是学生吗？		Are you (all) students?	هل أنتم طلاب؟					
+zh_w_nimen#ex2	example	1	你们什么时候回家？		When are you going home?	متى تعودون إلى البيت؟					
+zh_w_tamen	word	1	他们	tāmen	they, them	هم					
+zh_w_tamen#ex1	example	1	他们在学校学习。		They study at school.	هم يدرسون في المدرسة.					
+zh_w_tamen#ex2	example	1	她们都很漂亮。		They are all very pretty.	كلهن جميلات جدًا.					
+zh_w_shenme	word	1	什么	shénme	what	ماذا، ما					
+zh_w_shenme#ex1	example	1	你在看什么书？		What book are you reading?	أي كتاب تقرأ؟					
+zh_w_shenme#ex2	example	1	他说什么？		What did he say?	ماذا قال؟					
+zh_w_shei	word	1	谁	shéi	who	مَن					
+zh_w_shei#ex1	example	1	这是谁的书？		Whose book is this?	كتاب من هذا؟					
+zh_w_shei#ex2	example	1	谁想喝茶？		Who wants tea?	من يريد شايًا؟					
+zh_w_nali	word	1	哪里	nǎlǐ	where	أين					
+zh_w_nali#ex1	example	1	你是哪里人？		Where are you from?	من أين أنت؟					
+zh_w_nali#ex2	example	1	我的书在哪儿？		Where is my book?	أين كتابي؟					
+zh_w_zenme	word	1	怎么	zěnme	how	كيف					
+zh_w_zenme#ex1	example	1	你怎么不吃饭？		Why aren't you eating?	لماذا لا تأكل؟					
+zh_w_zenme#ex2	example	1	这个怎么用？		How do you use this?	كيف يُستعمل هذا؟					
+zh_w_weishenme	word	1	为什么	wèishénme	why	لماذا					
+zh_w_weishenme#ex1	example	1	你为什么不来？		Why aren't you coming?	لماذا لا تأتي؟					
+zh_w_weishenme#ex2	example	1	你为什么学习汉语？		Why are you learning Chinese?	لماذا تتعلم الصينية؟					
+zh_w_ji	word	1	几	jǐ	how many (small numbers)	كم (للأعداد الصغيرة)					
+zh_w_ji#ex1	example	1	你家有几个人？		How many people are in your family?	كم شخصًا في عائلتك؟					
+zh_w_ji#ex2	example	1	你几点回家？		What time are you going home?	متى تعود إلى البيت؟					
+zh_w_duoshao	word	1	多少	duōshao	how many, how much	كم					
+zh_w_duoshao#ex1	example	1	你们学校有多少学生？		How many students does your school have?	كم طالبًا في مدرستكم؟					
+zh_w_duoshao#ex2	example	1	一杯咖啡多少钱？		How much is a cup of coffee?	بكم فنجان القهوة؟					
+zh_w_zheli	word	1	这里	zhèlǐ	here	هنا					
+zh_w_zheli#ex1	example	1	我在这里等你。		I'll wait for you here.	سأنتظرك هنا.					
+zh_w_zheli#ex2	example	1	这儿的菜很好吃。		The food here is delicious.	الطعام هنا لذيذ.					
+zh_w_nali_there	word	1	那里	nàlǐ	there	هناك					
+zh_w_nali_there#ex1	example	1	那里有一个商店。		There is a shop over there.	هناك متجر.					
+zh_w_nali_there#ex2	example	1	我的书在那儿。		My book is over there.	كتابي هناك.					
+zh_w_xianzai	word	1	现在	xiànzài	now	الآن					
+zh_w_xianzai#ex1	example	1	现在几点了？		What time is it now?	كم الساعة الآن؟					
+zh_w_xianzai#ex2	example	1	他现在不在家。		He isn't at home now.	هو ليس في البيت الآن.					
+zh_w_jintian	word	1	今天	jīntiān	today	اليوم					
+zh_w_jintian#ex1	example	1	今天我不想工作。		I don't want to work today.	لا أريد أن أعمل اليوم.					
+zh_w_jintian#ex2	example	1	今天很冷。		It's cold today.	الجو بارد اليوم.					
+zh_w_mingtian	word	1	明天	míngtiān	tomorrow	غدًا					
+zh_w_mingtian#ex1	example	1	我们明天去北京。		We are going to Beijing tomorrow.	سنذهب إلى بكين غدًا.					
+zh_w_mingtian#ex2	example	1	明天你有时间吗？		Do you have time tomorrow?	هل لديك وقت غدًا؟					
+zh_w_zuotian	word	1	昨天	zuótiān	yesterday	أمس					
+zh_w_zuotian#ex1	example	1	昨天下雨了。		It rained yesterday.	أمطرت أمس.					
+zh_w_zuotian#ex2	example	1	昨天我很忙。		I was very busy yesterday.	كنت مشغولًا جدًا أمس.					
+zh_w_shihou	word	1	时候	shíhou	time, moment (…的时候 = when)	وقت، حين					
+zh_w_shihou#ex1	example	1	你什么时候回家？		When are you going home?	متى ستعود إلى البيت؟					
+zh_w_shihou#ex2	example	1	我在家的时候常常看书。		When I'm at home I often read.	عندما أكون في البيت أقرأ كثيرًا.					
+zh_w_shijian	word	1	时间	shíjiān	time	وقت					
+zh_w_shijian#ex1	example	1	我今天没有时间。		I don't have time today.	ليس لديّ وقت اليوم.					
+zh_w_shijian#ex2	example	1	时间不早了，我们走吧。		It's getting late, let's go.	تأخر الوقت، لنذهب.					
+zh_w_nian	word	1	年	nián	year	سنة					
+zh_w_nian#ex1	example	1	我在北京住了三年。		I lived in Beijing for three years.	عشت في بكين ثلاث سنوات.					
+zh_w_nian#ex2	example	1	我学习了两年汉语。		I studied Chinese for two years.	درست الصينية سنتين.					
+zh_w_tian	word	1	天	tiān	day; sky	يوم؛ سماء					
+zh_w_tian#ex1	example	1	我们在北京玩了五天。		We spent five days in Beijing.	قضينا خمسة أيام في بكين.					
+zh_w_tian#ex2	example	1	我想休息几天。		I want to rest for a few days.	أريد أن أرتاح بضعة أيام.					
+zh_w_dian	word	1	点	diǎn	o'clock; a little	الساعة (في التوقيت)؛ قليل					
+zh_w_dian#ex1	example	1	现在八点。		It's eight o'clock now.	الساعة الآن الثامنة.					
+zh_w_dian#ex2	example	1	我每天早上七点吃饭。		I eat at seven every morning.	آكل في السابعة كل صباح.					
+zh_w_fenzhong	word	1	分钟	fēnzhōng	minute	دقيقة					
+zh_w_fenzhong#ex1	example	1	请等我五分钟。		Please wait five minutes for me.	انتظرني خمس دقائق من فضلك.					
+zh_w_fenzhong#ex2	example	1	从我家到学校走十分钟。		It's a ten-minute walk from my home to school.	من بيتي إلى المدرسة عشر دقائق مشيًا.					
+zh_w_shangwu	word	1	上午	shàngwǔ	morning (before noon)	قبل الظهر، صباحًا					
+zh_w_shangwu#ex1	example	1	明天上午我们去商店。		Tomorrow morning we're going to the shop.	صباح الغد سنذهب إلى المتجر.					
+zh_w_shangwu#ex2	example	1	我上午不在家。		I'm not at home in the morning.	لست في البيت قبل الظهر.					
+zh_w_xiawu	word	1	下午	xiàwǔ	afternoon	بعد الظهر					
+zh_w_xiawu#ex1	example	1	她下午三点来。		She is coming at three in the afternoon.	ستأتي في الساعة الثالثة بعد الظهر.					
+zh_w_xiawu#ex2	example	1	下午我们去商店吧。		Let's go to the shop in the afternoon.	لنذهب إلى المتجر بعد الظهر.					
+zh_w_wanshang	word	1	晚上	wǎnshang	evening, night	مساءً، ليلًا					
+zh_w_wanshang#ex1	example	1	你今天晚上做什么？		What are you doing this evening?	ماذا ستفعل هذا المساء؟					
+zh_w_wanshang#ex2	example	1	晚上我常常在家。		I'm usually at home in the evening.	أكون في البيت غالبًا في المساء.					
+zh_w_zaoshang	word	1	早上	zǎoshang	early morning	صباحًا باكرًا					
+zh_w_zaoshang#ex1	example	1	早上我不吃东西。		I don't eat anything in the morning.	لا آكل شيئًا في الصباح.					
+zh_w_zaoshang#ex2	example	1	他早上很忙。		He is very busy in the morning.	هو مشغول جدًا في الصباح.					
+zh_w_xingqi	word	1	星期	xīngqī	week; 星期一 = Monday	أسبوع؛ 星期一 = الاثنين					
+zh_w_xingqi#ex1	example	1	今天星期几？		What day of the week is it today?	ما اليوم؟					
+zh_w_xingqi#ex2	example	1	我们下个星期去北京。		We are going to Beijing next week.	سنذهب إلى بكين الأسبوع القادم.					
+zh_w_yue	word	1	月	yuè	month; moon	شهر؛ قمر					
+zh_w_yue#ex1	example	1	这个月我很忙。		I'm very busy this month.	أنا مشغول جدًا هذا الشهر.					
+zh_w_yue#ex2	example	1	北京的一月很冷。		January in Beijing is very cold.	شهر يناير في بكين بارد جدًا.					
+zh_w_jia	word	1	家	jiā	home, family	بيت، عائلة					
+zh_w_jia#ex1	example	1	他不在家。		He isn't at home.	هو ليس في البيت.					
+zh_w_jia#ex2	example	1	我家离这儿不远。		My home isn't far from here.	بيتي ليس بعيدًا عن هنا.					
+zh_w_baba	word	1	爸爸	bàba	dad, father	أبي، الأب					
+zh_w_baba#ex1	example	1	我爸爸是医生。		My father is a doctor.	أبي طبيب.					
+zh_w_baba#ex2	example	1	爸爸在公司工作。		Dad works at a company.	أبي يعمل في شركة.					
+zh_w_mama	word	1	妈妈	māma	mum, mother	أمي، الأم					
+zh_w_mama#ex1	example	1	我给妈妈打电话。		I'm calling my mother.	أتصل بأمي.					
+zh_w_mama#ex2	example	1	我妈妈是老师。		My mother is a teacher.	أمي معلمة.					
+zh_w_gege	word	1	哥哥	gēge	older brother	الأخ الأكبر					
+zh_w_gege#ex1	example	1	哥哥在北京工作。		My older brother works in Beijing.	أخي الأكبر يعمل في بكين.					
+zh_w_gege#ex2	example	1	我哥哥有一个女儿。		My older brother has a daughter.	أخي الأكبر لديه بنت.					
+zh_w_jiejie	word	1	姐姐	jiějie	older sister	الأخت الكبرى					
+zh_w_jiejie#ex1	example	1	我姐姐是医生。		My older sister is a doctor.	أختي الكبرى طبيبة.					
+zh_w_jiejie#ex2	example	1	姐姐喜欢喝咖啡。		My older sister likes coffee.	أختي الكبرى تحب القهوة.					
+zh_w_didi	word	1	弟弟	dìdi	younger brother	الأخ الأصغر					
+zh_w_didi#ex1	example	1	弟弟喜欢玩电脑。		My younger brother likes playing on the computer.	أخي الأصغر يحب اللعب على الحاسوب.					
+zh_w_didi#ex2	example	1	我有一个弟弟。		I have a younger brother.	لديّ أخ أصغر.					
+zh_w_meimei	word	1	妹妹	mèimei	younger sister	الأخت الصغرى					
+zh_w_meimei#ex1	example	1	我妹妹是学生。		My younger sister is a student.	أختي الصغرى طالبة.					
+zh_w_meimei#ex2	example	1	妹妹喜欢小狗。		My younger sister likes puppies.	أختي الصغرى تحب الجراء.					
+zh_w_erzi	word	1	儿子	érzi	son	ابن					
+zh_w_erzi#ex1	example	1	他的儿子是医生。		His son is a doctor.	ابنه طبيب.					
+zh_w_erzi#ex2	example	1	我有两个儿子。		I have two sons.	لديّ ابنان.					
+zh_w_nuer	word	1	女儿	nǚ'ér	daughter	ابنة					
+zh_w_nuer#ex1	example	1	她有一个女儿。		She has a daughter.	لديها بنت.					
+zh_w_nuer#ex2	example	1	我女儿喜欢唱歌。		My daughter likes singing.	ابنتي تحب الغناء.					
+zh_w_haizi	word	1	孩子	háizi	child	طفل					
+zh_w_haizi#ex1	example	1	你有孩子吗？		Do you have children?	هل لديك أطفال؟					
+zh_w_haizi#ex2	example	1	这个孩子很高兴。		This child is very happy.	هذا الطفل سعيد جدًا.					
+zh_w_pengyou	word	1	朋友	péngyou	friend	صديق					
+zh_w_pengyou#ex1	example	1	他是我的好朋友。		He is my good friend.	هو صديقي العزيز.					
+zh_w_pengyou#ex2	example	1	我和朋友一起吃饭。		I eat with my friends.	آكل مع أصدقائي.					
+zh_w_laoshi	word	1	老师	lǎoshī	teacher	معلّم					
+zh_w_laoshi#ex1	example	1	我们的老师很好。		Our teacher is very good.	معلمنا جيد جدًا.					
+zh_w_laoshi#ex2	example	1	老师在问问题。		The teacher is asking questions.	المعلم يطرح أسئلة.					
+zh_w_xuesheng	word	1	学生	xuésheng	student	طالب					
+zh_w_xuesheng#ex1	example	1	我是学生。		I am a student.	أنا طالب.					
+zh_w_xuesheng#ex2	example	1	这个学校有很多学生。		This school has a lot of students.	في هذه المدرسة طلاب كثيرون.					
+zh_w_yisheng	word	1	医生	yīshēng	doctor	طبيب					
+zh_w_yisheng#ex1	example	1	她是医生。		She is a doctor.	هي طبيبة.					
+zh_w_yisheng#ex2	example	1	医生说我要多休息。		The doctor says I need to rest more.	يقول الطبيب إنني أحتاج إلى راحة أكثر.					
+zh_w_xiansheng	word	1	先生	xiānsheng	Mr; sir; husband	السيد؛ زوج					
+zh_w_xiansheng#ex1	example	1	王先生是我的老师。		Mr Wang is my teacher.	السيد وانغ معلمي.					
+zh_w_xiansheng#ex2	example	1	先生，你要买什么？		Sir, what would you like to buy?	ماذا تريد أن تشتري يا سيدي؟					
+zh_w_xiaojie	word	1	小姐	xiǎojiě	Miss; young lady	الآنسة					
+zh_w_xiaojie#ex1	example	1	李小姐在公司工作。		Miss Li works at a company.	الآنسة لي تعمل في شركة.					
+zh_w_xiaojie#ex2	example	1	小姐，你要喝什么？		Miss, what would you like to drink?	ماذا تريدين أن تشربي يا آنسة؟					
+zh_w_mingzi	word	1	名字	míngzi	name	اسم					
+zh_w_mingzi#ex1	example	1	你叫什么名字？		What's your name?	ما اسمك؟					
+zh_w_mingzi#ex2	example	1	我不知道他的名字。		I don't know his name.	لا أعرف اسمه.					
+zh_w_jiao	word	1	叫	jiào	to be called; to call	يُسمّى؛ ينادي					
+zh_w_jiao#ex1	example	1	我叫小明。		My name is Xiaoming.	اسمي شياومينغ.					
+zh_w_jiao#ex2	example	1	他叫什么名字？		What's his name?	ما اسمه؟					
+zh_w_chi	word	1	吃	chī	to eat	يأكل					
+zh_w_chi#ex1	example	1	他吃了很多。		He ate a lot.	أكل كثيرًا.					
+zh_w_chi#ex2	example	1	我们去吃中国菜吧。		Let's go and eat Chinese food.	لنذهب لنأكل طعامًا صينيًا.					
+zh_w_he	word	1	喝	hē	to drink	يشرب					
+zh_w_he#ex1	example	1	你想喝什么？		What would you like to drink?	ماذا تريد أن تشرب؟					
+zh_w_he#ex2	example	1	他喝了很多咖啡。		He drank a lot of coffee.	شرب كثيرًا من القهوة.					
+zh_w_zuo_do	word	1	做	zuò	to do, to make	يفعل، يصنع					
+zh_w_zuo_do#ex1	example	1	你在做什么？		What are you doing?	ماذا تفعل؟					
+zh_w_zuo_do#ex2	example	1	我不会做饭。		I can't cook.	لا أعرف الطبخ.					
+zh_w_mai_buy	word	1	买	mǎi	to buy	يشتري					
+zh_w_mai_buy#ex1	example	1	我想买一本书。		I want to buy a book.	أريد أن أشتري كتابًا.					
+zh_w_mai_buy#ex2	example	1	你在哪儿买的？		Where did you buy it?	من أين اشتريته؟					
+zh_w_mai_sell	word	1	卖	mài	to sell	يبيع					
+zh_w_mai_sell#ex1	example	1	这个商店卖什么？		What does this shop sell?	ماذا يبيع هذا المتجر؟					
+zh_w_mai_sell#ex2	example	1	这儿卖中国茶。		Chinese tea is sold here.	يُباع الشاي الصيني هنا.					
+zh_w_xuexi	word	1	学习	xuéxí	to study, to learn	يدرس، يتعلّم					
+zh_w_xuexi#ex1	example	1	我在北京学习汉语。		I'm studying Chinese in Beijing.	أدرس الصينية في بكين.					
+zh_w_xuexi#ex2	example	1	他每天晚上学习。		He studies every evening.	يدرس كل مساء.					
+zh_w_gongzuo	word	1	工作	gōngzuò	to work; job	يعمل؛ عمل					
+zh_w_gongzuo#ex1	example	1	你在哪儿工作？		Where do you work?	أين تعمل؟					
+zh_w_gongzuo#ex2	example	1	她的工作很忙。		Her job is very busy.	عملها مزدحم جدًا.					
+zh_w_shuijiao	word	1	睡觉	shuìjiào	to sleep	ينام					
+zh_w_shuijiao#ex1	example	1	我晚上十点睡觉。		I go to bed at ten at night.	أنام في العاشرة ليلًا.					
+zh_w_shuijiao#ex2	example	1	孩子在睡觉。		The child is sleeping.	الطفل نائم.					
+zh_w_hui_return	word	1	回	huí	to return, to go back	يعود					
+zh_w_hui_return#ex1	example	1	我想回家。		I want to go home.	أريد أن أعود إلى البيت.					
+zh_w_hui_return#ex2	example	1	他明天回北京。		He goes back to Beijing tomorrow.	سيعود إلى بكين غدًا.					
+zh_w_kai	word	1	开	kāi	to open; to drive	يفتح؛ يقود					
+zh_w_kai#ex1	example	1	商店几点开门？		What time does the shop open?	متى يفتح المتجر؟					
+zh_w_kai#ex2	example	1	请你开门。		Please open the door.	افتح الباب من فضلك.					
+zh_w_zuo_sit	word	1	坐	zuò	to sit; to take (a bus, train)	يجلس؛ يركب					
+zh_w_zuo_sit#ex1	example	1	请坐这儿。		Please sit here.	اجلس هنا من فضلك.					
+zh_w_zuo_sit#ex2	example	1	你坐这个椅子吧。		Sit on this chair.	اجلس على هذا الكرسي.					
+zh_w_zhu	word	1	住	zhù	to live (somewhere)	يسكن					
+zh_w_zhu#ex1	example	1	你住在哪儿？		Where do you live?	أين تسكن؟					
+zh_w_zhu#ex2	example	1	我们住在一起。		We live together.	نحن نسكن معًا.					
+zh_w_ting	word	1	听	tīng	to listen, to hear	يستمع، يسمع					
+zh_w_ting#ex1	example	1	我喜欢听歌。		I like listening to songs.	أحب الاستماع إلى الأغاني.					
+zh_w_ting#ex2	example	1	你听，有人在唱歌。		Listen, someone is singing.	اسمع، هناك من يغني.					
+zh_w_du	word	1	读	dú	to read (aloud), to study	يقرأ					
+zh_w_du#ex1	example	1	请读这个字。		Please read this character.	اقرأ هذا الحرف من فضلك.					
+zh_w_du#ex2	example	1	我每天晚上读书。		I read every evening.	أقرأ كل مساء.					
+zh_w_xie	word	1	写	xiě	to write	يكتب					
+zh_w_xie#ex1	example	1	这个字怎么写？		How do you write this character?	كيف يُكتب هذا الحرف؟					
+zh_w_xie#ex2	example	1	请写你的名字。		Please write your name.	اكتب اسمك من فضلك.					
+zh_w_da_dianhua	word	1	打电话	dǎ diànhuà	to make a phone call	يتصل هاتفيًا					
+zh_w_da_dianhua#ex1	example	1	我晚上给你打电话。		I'll call you this evening.	سأتصل بك في المساء.					
+zh_w_da_dianhua#ex2	example	1	他在打电话。		He is on the phone.	هو يتكلم في الهاتف.					
+zh_w_renshi	word	1	认识	rènshi	to know (a person), to meet	يعرف (شخصًا)					
+zh_w_renshi#ex1	example	1	你认识他吗？		Do you know him?	هل تعرفه؟					
+zh_w_renshi#ex2	example	1	我不认识这个字。		I don't know this character.	لا أعرف هذا الحرف.					
+zh_w_zhidao	word	1	知道	zhīdào	to know (a fact)	يعرف (معلومة)					
+zh_w_zhidao#ex1	example	1	我不知道。		I don't know.	لا أعرف.					
+zh_w_zhidao#ex2	example	1	你知道他的名字吗？		Do you know his name?	هل تعرف اسمه؟					
+zh_w_xihuan	word	1	喜欢	xǐhuan	to like	يحب					
+zh_w_xihuan#ex1	example	1	我喜欢喝茶。		I like drinking tea.	أحب شرب الشاي.					
+zh_w_xihuan#ex2	example	1	你喜欢北京吗？		Do you like Beijing?	هل تحب بكين؟					
+zh_w_ai	word	1	爱	ài	to love	يحب (حبًّا عميقًا)					
+zh_w_ai#ex1	example	1	我爱我的家。		I love my family.	أحب عائلتي.					
+zh_w_ai#ex2	example	1	妈妈很爱我们。		Mum loves us very much.	أمي تحبنا كثيرًا.					
+zh_w_juede	word	1	觉得	juéde	to feel, to think	يشعر، يعتقد					
+zh_w_juede#ex1	example	1	我觉得很累。		I feel very tired.	أشعر بتعب شديد.					
+zh_w_juede#ex2	example	1	你觉得这本书好不好？		Do you think this book is good?	هل تظن أن هذا الكتاب جيد؟					
+zh_w_gei	word	1	给	gěi	to give; for	يعطي؛ لـ					
+zh_w_gei#ex1	example	1	请给我一杯水。		Please give me a glass of water.	أعطني كوب ماء من فضلك.					
+zh_w_gei#ex2	example	1	他给了我一本书。		He gave me a book.	أعطاني كتابًا.					
+zh_w_zhao	word	1	找	zhǎo	to look for; to give change	يبحث عن					
+zh_w_zhao#ex1	example	1	你在找什么？		What are you looking for?	عمّ تبحث؟					
+zh_w_zhao#ex2	example	1	我在找我的书。		I'm looking for my book.	أبحث عن كتابي.					
+zh_w_deng	word	1	等	děng	to wait	ينتظر					
+zh_w_deng#ex1	example	1	我在火车站等你。		I'll wait for you at the train station.	سأنتظرك في محطة القطار.					
+zh_w_deng#ex2	example	1	我等了他一个小时。		I waited for him for an hour.	انتظرته ساعة.					
+zh_w_yong	word	1	用	yòng	to use	يستخدم					
+zh_w_yong#ex1	example	1	我可以用你的手机吗？		May I use your phone?	هل يمكنني استخدام هاتفك؟					
+zh_w_yong#ex2	example	1	我不会用这个。		I don't know how to use this.	لا أعرف كيف أستخدم هذا.					
+zh_w_zou	word	1	走	zǒu	to walk; to leave	يمشي؛ يغادر					
+zh_w_zou#ex1	example	1	我们走吧。		Let's go.	لنذهب.					
+zh_w_zou#ex2	example	1	我们走路去学校。		We walk to school.	نذهب إلى المدرسة مشيًا.					
+zh_w_pao	word	1	跑	pǎo	to run	يركض					
+zh_w_pao#ex1	example	1	小狗跑到我这儿来了。		The puppy ran over to me.	ركض الجرو نحوي.					
+zh_w_pao#ex2	example	1	他跑到学校去了。		He ran to school.	ركض إلى المدرسة.					
+zh_w_wan	word	1	玩	wán	to play, to have fun	يلعب، يستمتع					
+zh_w_wan#ex1	example	1	我们去北京玩吧。		Let's go to Beijing for fun.	لنذهب إلى بكين للنزهة.					
+zh_w_wan#ex2	example	1	星期天我们去哪儿玩？		Where shall we go on Sunday?	إلى أين نذهب للنزهة يوم الأحد؟					
+zh_w_bangzhu	word	1	帮助	bāngzhù	to help	يساعد					
+zh_w_bangzhu#ex1	example	1	我能帮你吗？		Can I help you?	هل يمكنني مساعدتك؟					
+zh_w_bangzhu#ex2	example	1	他帮助我学习汉语。		He helps me learn Chinese.	يساعدني في تعلم الصينية.					
+zh_w_rang	word	1	让	ràng	to let, to make (someone do)	يدع، يجعل					
+zh_w_rang#ex1	example	1	妈妈不让我看电视。		Mum doesn't let me watch TV.	أمي لا تسمح لي بمشاهدة التلفاز.					
+zh_w_rang#ex2	example	1	让我想一想。		Let me think.	دعني أفكر.					
+zh_w_wen	word	1	问	wèn	to ask	يسأل					
+zh_w_wen#ex1	example	1	我可以问你一个问题吗？		May I ask you a question?	هل يمكنني أن أسألك سؤالًا؟					
+zh_w_wen#ex2	example	1	你问老师吧。		Ask the teacher.	اسأل المعلم.					
+zh_w_gaosu	word	1	告诉	gàosu	to tell	يخبر					
+zh_w_gaosu#ex1	example	1	请告诉我你的名字。		Please tell me your name.	أخبرني باسمك من فضلك.					
+zh_w_gaosu#ex2	example	1	他没告诉我。		He didn't tell me.	لم يخبرني.					
+zh_w_huida	word	1	回答	huídá	to answer	يجيب					
+zh_w_huida#ex1	example	1	请回答我的问题。		Please answer my question.	أجب عن سؤالي من فضلك.					
+zh_w_huida#ex2	example	1	他回答得很好。		He answered very well.	أجاب إجابة جيدة جدًا.					
+zh_w_kaishi	word	1	开始	kāishǐ	to begin	يبدأ					
+zh_w_kaishi#ex1	example	1	我们开始上课吧。		Let's start the class.	لنبدأ الدرس.					
+zh_w_kaishi#ex2	example	1	考试八点开始。		The exam starts at eight.	يبدأ الامتحان في الثامنة.					
+zh_w_wan_finish	word	1	完	wán	to finish	ينتهي، ينهي					
+zh_w_wan_finish#ex1	example	1	我吃完了。		I've finished eating.	انتهيت من الأكل.					
+zh_w_wan_finish#ex2	example	1	你看完这本书了吗？		Have you finished reading this book?	هل أنهيت قراءة هذا الكتاب؟					
+zh_w_dao	word	1	到	dào	to arrive; to, until	يصل؛ إلى					
+zh_w_dao#ex1	example	1	我们到北京了。		We've arrived in Beijing.	وصلنا إلى بكين.					
+zh_w_dao#ex2	example	1	你什么时候到？		When will you arrive?	متى ستصل؟					
+zh_w_chu	word	1	出	chū	to go out, to come out	يخرج					
+zh_w_chu#ex1	example	1	他出去了。		He has gone out.	لقد خرج.					
+zh_w_chu#ex2	example	1	我们出去吃饭吧。		Let's go out to eat.	لنخرج لنأكل.					
+zh_w_jin	word	1	进	jìn	to enter	يدخل					
+zh_w_jin#ex1	example	1	他走进了房间。		He walked into the room.	دخل الغرفة.					
+zh_w_jin#ex2	example	1	你进来吧。		Come in.	تفضل بالدخول.					
+zh_w_xiayu	word	1	下雨	xià yǔ	to rain	تمطر					
+zh_w_xiayu#ex1	example	1	明天会下雨吗？		Will it rain tomorrow?	هل ستمطر غدًا؟					
+zh_w_xiayu#ex2	example	1	下雨了，我们回家吧。		It's raining, let's go home.	إنها تمطر، لنعد إلى البيت.					
+zh_w_chuan	word	1	穿	chuān	to wear, to put on	يرتدي					
+zh_w_chuan#ex1	example	1	你今天穿得很漂亮。		You're dressed very nicely today.	ملابسك جميلة جدًا اليوم.					
+zh_w_chuan#ex2	example	1	他穿了一件新衣服。		He put on new clothes.	لبس ثيابًا جديدة.					
+zh_w_xi	word	1	洗	xǐ	to wash	يغسل					
+zh_w_xi#ex1	example	1	吃饭以前要洗手。		Wash your hands before eating.	يجب غسل اليدين قبل الأكل.					
+zh_w_xi#ex2	example	1	我去洗一下手。		I'm going to wash my hands.	سأذهب لأغسل يديّ.					
+zh_w_changge	word	1	唱歌	chàng gē	to sing	يغنّي					
+zh_w_changge#ex1	example	1	她很喜欢唱歌。		She really likes singing.	تحب الغناء كثيرًا.					
+zh_w_changge#ex2	example	1	我们一起去唱歌吧。		Let's go singing together.	لنذهب للغناء معًا.					
+zh_w_tiaowu	word	1	跳舞	tiào wǔ	to dance	يرقص					
+zh_w_tiaowu#ex1	example	1	你会跳舞吗？		Can you dance?	هل تعرف الرقص؟					
+zh_w_tiaowu#ex2	example	1	姐姐喜欢跳舞。		My older sister likes dancing.	أختي الكبرى تحب الرقص.					
+zh_w_youyong	word	1	游泳	yóuyǒng	to swim	يسبح					
+zh_w_youyong#ex1	example	1	我会游泳。		I can swim.	أعرف السباحة.					
+zh_w_youyong#ex2	example	1	我们明天去游泳吧。		Let's go swimming tomorrow.	لنذهب للسباحة غدًا.					
+zh_w_song	word	1	送	sòng	to give (as a gift); to take someone	يُهدي؛ يوصل					
+zh_w_song#ex1	example	1	我送你一个礼物。		I'm giving you a present.	أهديك هدية.					
+zh_w_song#ex2	example	1	我送你回家吧。		Let me take you home.	دعني أوصلك إلى البيت.					
+zh_w_zhunbei	word	1	准备	zhǔnbèi	to prepare, to get ready	يستعد، يُحضّر					
+zh_w_zhunbei#ex1	example	1	晚饭准备好了。		Dinner is ready.	العشاء جاهز.					
+zh_w_zhunbei#ex2	example	1	你准备好了吗？		Are you ready?	هل أنت مستعد؟					
+zh_w_xiuxi	word	1	休息	xiūxi	to rest	يستريح					
+zh_w_xiuxi#ex1	example	1	你累了，休息一下吧。		You're tired, have a rest.	أنت متعب، استرح قليلًا.					
+zh_w_xiuxi#ex2	example	1	星期天我在家休息。		On Sunday I rest at home.	يوم الأحد أرتاح في البيت.					
+zh_w_shengbing	word	1	生病	shēngbìng	to fall ill	يمرض					
+zh_w_shengbing#ex1	example	1	他生病了。		He is ill.	هو مريض.					
+zh_w_shengbing#ex2	example	1	我生病了，今天不能去学校。		I'm ill and can't go to school today.	أنا مريض ولا أستطيع الذهاب إلى المدرسة اليوم.					
+zh_w_dongxi	word	1	东西	dōngxi	thing, stuff	شيء، أغراض					
+zh_w_dongxi#ex1	example	1	我想去商店买东西。		I want to go to the shop to buy some things.	أريد أن أذهب إلى المتجر لأشتري أشياء.					
+zh_w_dongxi#ex2	example	1	这是什么东西？		What is this thing?	ما هذا الشيء؟					
+zh_w_qian	word	1	钱	qián	money	مال					
+zh_w_qian#ex1	example	1	这个多少钱？		How much is this?	بكم هذا؟					
+zh_w_qian#ex2	example	1	我的钱不多了。		I don't have much money left.	لم يبقَ معي مال كثير.					
+zh_w_kuai	word	1	块	kuài	yuan (spoken); piece	يوان (عاميًّا)؛ قطعة					
+zh_w_kuai#ex1	example	1	这本书三十块钱。		This book costs thirty yuan.	هذا الكتاب بثلاثين يوانًا.					
+zh_w_kuai#ex2	example	1	一块钱可以买什么？		What can you buy for one yuan?	ماذا يمكن أن تشتري بيوان واحد؟					
+zh_w_shu	word	1	书	shū	book	كتاب					
+zh_w_shu#ex1	example	1	我喜欢看书。		I like reading.	أحب القراءة.					
+zh_w_shu#ex2	example	1	这本书很好。		This book is very good.	هذا الكتاب جيد جدًا.					
+zh_w_ben	word	1	本	běn	classifier for books	مصنِّف للكتب					
+zh_w_ben#ex1	example	1	这本书是谁的？		Whose book is this?	لمن هذا الكتاب؟					
+zh_w_ben#ex2	example	1	他每个月读三本书。		He reads three books a month.	يقرأ ثلاثة كتب كل شهر.					
+zh_w_bei	word	1	杯	bēi	cup, glass (of)	كوب					
+zh_w_bei#ex1	example	1	我要一杯咖啡。		I'd like a cup of coffee.	أريد فنجان قهوة.					
+zh_w_bei#ex2	example	1	他喝了两杯茶。		He drank two cups of tea.	شرب كوبين من الشاي.					
+zh_w_shui	word	1	水	shuǐ	water	ماء					
+zh_w_shui#ex1	example	1	这儿的水很冷。		The water here is very cold.	الماء هنا بارد جدًا.					
+zh_w_shui#ex2	example	1	天气很热，多喝水。		It's hot, drink plenty of water.	الجو حار، اشرب ماءً كثيرًا.					
+zh_w_cha	word	1	茶	chá	tea	شاي					
+zh_w_cha#ex1	example	1	中国的茶很好喝。		Chinese tea tastes good.	الشاي الصيني لذيذ.					
+zh_w_cha#ex2	example	1	我每天喝茶。		I drink tea every day.	أشرب الشاي كل يوم.					
+zh_w_kafei	word	1	咖啡	kāfēi	coffee	قهوة					
+zh_w_kafei#ex1	example	1	我早上喝一杯咖啡。		I have a cup of coffee in the morning.	أشرب فنجان قهوة في الصباح.					
+zh_w_kafei#ex2	example	1	你喜欢喝咖啡吗？		Do you like coffee?	هل تحب القهوة؟					
+zh_w_mifan	word	1	米饭	mǐfàn	cooked rice	أرز مطبوخ					
+zh_w_mifan#ex1	example	1	你喜欢吃米饭吗？		Do you like rice?	هل تحب الأرز؟					
+zh_w_mifan#ex2	example	1	我要一些米饭。		I'd like some rice.	أريد بعض الأرز.					
+zh_w_fan	word	1	饭	fàn	meal; rice	وجبة؛ أرز					
+zh_w_fan#ex1	example	1	你吃饭了吗？		Have you eaten?	هل أكلت؟					
+zh_w_fan#ex2	example	1	妈妈在做饭。		Mum is cooking.	أمي تطبخ.					
+zh_w_cai	word	1	菜	cài	dish; vegetable	طبق؛ خضار					
+zh_w_cai#ex1	example	1	这个菜很好吃。		This dish is delicious.	هذا الطبق لذيذ.					
+zh_w_cai#ex2	example	1	我们点菜吧。		Let's order.	لنطلب الطعام.					
+zh_w_shuiguo	word	1	水果	shuǐguǒ	fruit	فاكهة					
+zh_w_shuiguo#ex1	example	1	我喜欢吃水果。		I like eating fruit.	أحب أكل الفاكهة.					
+zh_w_shuiguo#ex2	example	1	他在火车站卖水果。		He sells fruit at the train station.	يبيع الفاكهة في محطة القطار.					
+zh_w_pingguo	word	1	苹果	píngguǒ	apple	تفاحة					
+zh_w_pingguo#ex1	example	1	我吃了两个苹果。		I ate two apples.	أكلت تفاحتين.					
+zh_w_pingguo#ex2	example	1	这个苹果很大。		This apple is big.	هذه التفاحة كبيرة.					
+zh_w_jidan	word	1	鸡蛋	jīdàn	egg	بيضة					
+zh_w_jidan#ex1	example	1	我不吃鸡蛋。		I don't eat eggs.	لا آكل البيض.					
+zh_w_jidan#ex2	example	1	早上我吃了两个鸡蛋。		I ate two eggs this morning.	أكلت بيضتين في الصباح.					
+zh_w_miantiao	word	1	面条	miàntiáo	noodles	معكرونة صينية					
+zh_w_miantiao#ex1	example	1	我喜欢吃面条。		I like noodles.	أحب المعكرونة الصينية.					
+zh_w_miantiao#ex2	example	1	我们晚上吃面条吧。		Let's have noodles tonight.	لنأكل المعكرونة في المساء.					
+zh_w_fangzi	word	1	房子	fángzi	house	بيت					
+zh_w_fangzi#ex1	example	1	他的房子很大。		His house is big.	بيته كبير.					
+zh_w_fangzi#ex2	example	1	他们的房子很旧。		Their house is old.	بيتهم قديم.					
+zh_w_fangjian	word	1	房间	fángjiān	room	غرفة					
+zh_w_fangjian#ex1	example	1	我的房间很小。		My room is small.	غرفتي صغيرة.					
+zh_w_fangjian#ex2	example	1	弟弟在房间里睡觉。		My younger brother is sleeping in his room.	أخي الأصغر نائم في الغرفة.					
+zh_w_men	word	1	门	mén	door	باب					
+zh_w_men#ex1	example	1	请开一下门。		Please open the door.	افتح الباب من فضلك.					
+zh_w_men#ex2	example	1	我家的门是新的。		The door of my home is new.	باب بيتي جديد.					
+zh_w_zhuozi	word	1	桌子	zhuōzi	table	طاولة					
+zh_w_zhuozi#ex1	example	1	我们的桌子很大。		Our table is big.	طاولتنا كبيرة.					
+zh_w_zhuozi#ex2	example	1	我想买一张新桌子。		I want to buy a new table.	أريد أن أشتري طاولة جديدة.					
+zh_w_yizi	word	1	椅子	yǐzi	chair	كرسي					
+zh_w_yizi#ex1	example	1	这个椅子很旧。		This chair is old.	هذا الكرسي قديم.					
+zh_w_yizi#ex2	example	1	我们家的椅子都很旧。		All the chairs in our home are old.	كل الكراسي في بيتنا قديمة.					
+zh_w_chuang	word	1	床	chuáng	bed	سرير					
+zh_w_chuang#ex1	example	1	我的床太小了。		My bed is too small.	سريري صغير جدًا.					
+zh_w_chuang#ex2	example	1	我想要一张大床。		I want a big bed.	أريد سريرًا كبيرًا.					
+zh_w_dianshi	word	1	电视	diànshì	television	تلفاز					
+zh_w_dianshi#ex1	example	1	我在看电视。		I'm watching TV.	أشاهد التلفاز.					
+zh_w_dianshi#ex2	example	1	这个电视是新的。		This TV is new.	هذا التلفاز جديد.					
+zh_w_diannao	word	1	电脑	diànnǎo	computer	حاسوب					
+zh_w_diannao#ex1	example	1	你会用电脑吗？		Can you use a computer?	هل تعرف استخدام الحاسوب؟					
+zh_w_diannao#ex2	example	1	我的电脑是新的。		My computer is new.	حاسوبي جديد.					
+zh_w_shouji	word	1	手机	shǒujī	mobile phone	هاتف محمول					
+zh_w_shouji#ex1	example	1	我的手机呢？		Where's my phone?	أين هاتفي؟					
+zh_w_shouji#ex2	example	1	他的手机是新的。		His phone is new.	هاتفه جديد.					
+zh_w_dianying	word	1	电影	diànyǐng	film, movie	فيلم					
+zh_w_dianying#ex1	example	1	电影几点开始？		What time does the film start?	متى يبدأ الفيلم؟					
+zh_w_dianying#ex2	example	1	我们晚上去看电影吧。		Let's go to the cinema tonight.	لنذهب لمشاهدة فيلم في المساء.					
+zh_w_xuexiao	word	1	学校	xuéxiào	school	مدرسة					
+zh_w_xuexiao#ex1	example	1	我们的学校很大。		Our school is big.	مدرستنا كبيرة.					
+zh_w_xuexiao#ex2	example	1	我昨天没去学校。		I didn't go to school yesterday.	لم أذهب إلى المدرسة أمس.					
+zh_w_yiyuan	word	1	医院	yīyuàn	hospital	مستشفى					
+zh_w_yiyuan#ex1	example	1	她在医院工作。		She works at a hospital.	تعمل في مستشفى.					
+zh_w_yiyuan#ex2	example	1	他生病了，在医院。		He is ill and in hospital.	هو مريض وفي المستشفى.					
+zh_w_shangdian	word	1	商店	shāngdiàn	shop	متجر					
+zh_w_shangdian#ex1	example	1	我和妈妈去商店。		I'm going to the shop with Mum.	أذهب مع أمي إلى المتجر.					
+zh_w_shangdian#ex2	example	1	这个商店的东西很便宜。		Things in this shop are cheap.	الأشياء في هذا المتجر رخيصة.					
+zh_w_fandian	word	1	饭店	fàndiàn	restaurant; hotel	مطعم؛ فندق					
+zh_w_fandian#ex1	example	1	我们去饭店吃饭吧。		Let's eat at a restaurant.	لنأكل في مطعم.					
+zh_w_fandian#ex2	example	1	这个饭店的菜很好吃。		The food in this restaurant is delicious.	طعام هذا المطعم لذيذ.					
+zh_w_gongsi	word	1	公司	gōngsī	company	شركة					
+zh_w_gongsi#ex1	example	1	他在公司工作。		He works at a company.	يعمل في شركة.					
+zh_w_gongsi#ex2	example	1	他每天八点到公司。		He gets to the office at eight every day.	يصل إلى الشركة في الثامنة كل يوم.					
+zh_w_zhongguo	word	1	中国	Zhōngguó	China	الصين					
+zh_w_zhongguo#ex1	example	1	我是中国人。		I'm Chinese.	أنا صيني.					
+zh_w_zhongguo#ex2	example	1	中国很大。		China is very big.	الصين كبيرة جدًا.					
+zh_w_beijing	word	1	北京	Běijīng	Beijing	بكين					
+zh_w_beijing#ex1	example	1	我住在北京。		I live in Beijing.	أسكن في بكين.					
+zh_w_beijing#ex2	example	1	北京有很多人。		Beijing has a lot of people.	في بكين ناس كثيرون.					
+zh_w_guojia	word	1	国家	guójiā	country	بلد، دولة					
+zh_w_guojia#ex1	example	1	中国是一个很大的国家。		China is a very big country.	الصين بلد كبير جدًا.					
+zh_w_guojia#ex2	example	1	我想去很多国家。		I want to go to many countries.	أريد أن أذهب إلى بلدان كثيرة.					
+zh_w_chengshi	word	1	城市	chéngshì	city	مدينة					
+zh_w_chengshi#ex1	example	1	这个城市很大。		This city is big.	هذه المدينة كبيرة.					
+zh_w_chengshi#ex2	example	1	北京是一个大城市。		Beijing is a big city.	بكين مدينة كبيرة.					
+zh_w_lu	word	1	路	lù	road, way	طريق					
+zh_w_lu#ex1	example	1	我不认识路。		I don't know the way.	لا أعرف الطريق.					
+zh_w_lu#ex2	example	1	路上车很多。		There are a lot of cars on the road.	في الطريق سيارات كثيرة.					
+zh_w_che	word	1	车	chē	car, vehicle	سيارة، مركبة					
+zh_w_che#ex1	example	1	那是我的车。		That's my car.	تلك سيارتي.					
+zh_w_che#ex2	example	1	你会开车吗？		Can you drive?	هل تعرف القيادة؟					
+zh_w_chuzuche	word	1	出租车	chūzūchē	taxi	سيارة أجرة					
+zh_w_chuzuche#ex1	example	1	我们坐出租车去吧。		Let's take a taxi.	لنذهب بسيارة أجرة.					
+zh_w_chuzuche#ex2	example	1	出租车来了。		The taxi is here.	وصلت سيارة الأجرة.					
+zh_w_feiji	word	1	飞机	fēijī	aeroplane	طائرة					
+zh_w_feiji#ex1	example	1	我坐飞机去北京。		I'm flying to Beijing.	سأسافر إلى بكين بالطائرة.					
+zh_w_feiji#ex2	example	1	飞机几点到？		What time does the plane arrive?	متى تصل الطائرة؟					
+zh_w_huoche	word	1	火车	huǒchē	train	قطار					
+zh_w_huoche#ex1	example	1	我们坐火车去北京。		We're taking the train to Beijing.	سنذهب إلى بكين بالقطار.					
+zh_w_huoche#ex2	example	1	去火车站怎么走？		How do I get to the train station?	كيف أذهب إلى محطة القطار؟					
+zh_w_ditie	word	1	地铁	dìtiě	underground, metro	مترو الأنفاق					
+zh_w_ditie#ex1	example	1	我每天坐地铁去公司。		I take the subway to work every day.	أذهب إلى الشركة بالمترو كل يوم.					
+zh_w_ditie#ex2	example	1	地铁上人很多。		There are a lot of people on the subway.	في المترو ناس كثيرون.					
+zh_w_tianqi	word	1	天气	tiānqì	weather	طقس					
+zh_w_tianqi#ex1	example	1	今天天气很好。		The weather is nice today.	الطقس جميل اليوم.					
+zh_w_tianqi#ex2	example	1	昨天天气不好。		The weather was bad yesterday.	كان الطقس سيئًا أمس.					
+zh_w_yu	word	1	雨	yǔ	rain	مطر					
+zh_w_yu#ex1	example	1	雨太大了。		The rain is too heavy.	المطر غزير جدًا.					
+zh_w_yu#ex2	example	1	昨天的雨很大。		Yesterday's rain was heavy.	كان مطر الأمس غزيرًا.					
+zh_w_taiyang	word	1	太阳	tàiyáng	sun	شمس					
+zh_w_taiyang#ex1	example	1	今天太阳很大。		The sun is strong today.	الشمس قوية اليوم.					
+zh_w_taiyang#ex2	example	1	太阳出来了。		The sun has come out.	طلعت الشمس.					
+zh_w_gou	word	1	狗	gǒu	dog	كلب					
+zh_w_gou#ex1	example	1	我家有一只狗。		We have a dog at home.	عندنا كلب في البيت.					
+zh_w_gou#ex2	example	1	我的狗很喜欢跑。		My dog loves running.	كلبي يحب الركض كثيرًا.					
+zh_w_mao	word	1	猫	māo	cat	قطة					
+zh_w_mao#ex1	example	1	她有一只小猫。		She has a kitten.	لديها قطة صغيرة.					
+zh_w_mao#ex2	example	1	猫在床上睡觉。		The cat is sleeping on the bed.	القطة نائمة على السرير.					
+zh_w_yifu	word	1	衣服	yīfu	clothes	ملابس					
+zh_w_yifu#ex1	example	1	我在洗衣服。		I'm washing clothes.	أغسل الملابس.					
+zh_w_yifu#ex2	example	1	我想买新衣服。		I want to buy new clothes.	أريد أن أشتري ملابس جديدة.					
+zh_w_yanse	word	1	颜色	yánsè	colour	لون					
+zh_w_yanse#ex1	example	1	你喜欢什么颜色？		What colour do you like?	ما اللون الذي تحبه؟					
+zh_w_yanse#ex2	example	1	这个颜色很漂亮。		This colour is very pretty.	هذا اللون جميل جدًا.					
+zh_w_zi	word	1	字	zì	character, written word	حرف (رمز صيني)					
+zh_w_zi#ex1	example	1	这个字怎么读？		How do you read this character?	كيف يُقرأ هذا الحرف؟					
+zh_w_zi#ex2	example	1	他的字很漂亮。		His handwriting is beautiful.	خطه جميل.					
+zh_w_hanyu	word	1	汉语	Hànyǔ	Chinese (language)	اللغة الصينية					
+zh_w_hanyu#ex1	example	1	你会说汉语吗？		Can you speak Chinese?	هل تتكلم الصينية؟					
+zh_w_hanyu#ex2	example	1	我觉得汉语不难。		I don't think Chinese is hard.	لا أظن أن الصينية صعبة.					
+zh_w_wenti	word	1	问题	wèntí	question; problem	سؤال؛ مشكلة					
+zh_w_wenti#ex1	example	1	你有问题吗？		Do you have any questions?	هل لديك أسئلة؟					
+zh_w_wenti#ex2	example	1	这是一个好问题。		That's a good question.	هذا سؤال جيد.					
+zh_w_shi_matter	word	1	事	shì	matter, thing (to do)	أمر، شأن					
+zh_w_shi_matter#ex1	example	1	你有什么事？		What can I do for you?	ماذا تريد؟					
+zh_w_shi_matter#ex2	example	1	我今天有很多事情。		I have a lot to do today.	لديّ أمور كثيرة اليوم.					
+zh_w_shenti	word	1	身体	shēntǐ	body; health	جسم؛ صحة					
+zh_w_shenti#ex1	example	1	你身体好吗？		Are you well?	كيف صحتك؟					
+zh_w_shenti#ex2	example	1	我爸爸身体很好。		My father is in good health.	صحة أبي جيدة.					
+zh_w_yanjing	word	1	眼睛	yǎnjing	eye	عين					
+zh_w_yanjing#ex1	example	1	她的眼睛很大。		She has big eyes.	عيناها كبيرتان.					
+zh_w_yanjing#ex2	example	1	我的眼睛有点儿累。		My eyes are a bit tired.	عيناي متعبتان قليلًا.					
+zh_w_shou	word	1	手	shǒu	hand	يد					
+zh_w_shou#ex1	example	1	你的手很冷。		Your hands are cold.	يداك باردتان.					
+zh_w_shou#ex2	example	1	他的手很大。		He has big hands.	يداه كبيرتان.					
+zh_w_tou	word	1	头	tóu	head	رأس					
+zh_w_tou#ex1	example	1	我觉得头很热，可能生病了。		My head feels hot, I may be ill.	أشعر أن رأسي ساخن، ربما أنا مريض.					
+zh_w_tou#ex2	example	1	他听了以后点了点头。		After listening, he nodded.	بعد أن استمع هزّ رأسه موافقًا.					
+zh_w_shengri	word	1	生日	shēngrì	birthday	عيد ميلاد					
+zh_w_shengri#ex1	example	1	今天是我的生日。		Today is my birthday.	اليوم عيد ميلادي.					
+zh_w_shengri#ex2	example	1	你的生日是几月几号？		When is your birthday?	متى عيد ميلادك؟					
+zh_w_liwu	word	1	礼物	lǐwù	present, gift	هدية					
+zh_w_liwu#ex1	example	1	我给他买了一个礼物。		I bought him a present.	اشتريت له هدية.					
+zh_w_liwu#ex2	example	1	谢谢你的礼物！		Thank you for the present!	شكرًا على هديتك!					
+zh_w_caidan	word	1	菜单	càidān	menu	قائمة الطعام					
+zh_w_caidan#ex1	example	1	请给我菜单。		Please give me the menu.	أعطني قائمة الطعام من فضلك.					
+zh_w_caidan#ex2	example	1	我可以看一下菜单吗？		May I have a look at the menu?	هل يمكنني أن ألقي نظرة على قائمة الطعام؟					
+zh_w_piao	word	1	票	piào	ticket	تذكرة					
+zh_w_piao#ex1	example	1	火车票贵吗？		Are train tickets expensive?	هل تذاكر القطار غالية؟					
+zh_w_piao#ex2	example	1	我们买票吧。		Let's buy tickets.	لنشترِ التذاكر.					
+zh_w_xin	word	1	新	xīn	new	جديد					
+zh_w_xin#ex1	example	1	这是我的新手机。		This is my new phone.	هذا هاتفي الجديد.					
+zh_w_xin#ex2	example	1	我想买一个新房子。		I want to buy a new house.	أريد أن أشتري بيتًا جديدًا.					
+zh_w_jiu_old	word	1	旧	jiù	old (not new)	قديم					
+zh_w_jiu_old#ex1	example	1	这件衣服很旧。		This piece of clothing is old.	هذا الثوب قديم.					
+zh_w_jiu_old#ex2	example	1	我的电脑太旧了。		My computer is too old.	حاسوبي قديم جدًا.					
+zh_w_gui	word	1	贵	guì	expensive	غالٍ					
+zh_w_gui#ex1	example	1	这儿的咖啡很贵。		The coffee here is expensive.	القهوة هنا غالية.					
+zh_w_gui#ex2	example	1	北京的房子很贵。		Houses in Beijing are expensive.	البيوت في بكين غالية.					
+zh_w_pianyi	word	1	便宜	piányi	cheap	رخيص					
+zh_w_pianyi#ex1	example	1	这个手机很便宜。		This phone is cheap.	هذا الهاتف رخيص.					
+zh_w_pianyi#ex2	example	1	便宜一点儿，可以吗？		Could you make it a bit cheaper?	هل يمكن أن تخفّض السعر قليلًا؟					
+zh_w_leng	word	1	冷	lěng	cold	بارد					
+zh_w_leng#ex1	example	1	今天很冷。		It's very cold today.	الجو بارد جدًا اليوم.					
+zh_w_leng#ex2	example	1	你冷不冷？		Are you cold?	هل تشعر بالبرد؟					
+zh_w_re	word	1	热	rè	hot	حار					
+zh_w_re#ex1	example	1	今天很热。		It's very hot today.	الجو حار جدًا اليوم.					
+zh_w_re#ex2	example	1	我要一杯热茶。		I'd like a cup of hot tea.	أريد كوب شاي ساخن.					
+zh_w_gaoxing	word	1	高兴	gāoxìng	happy, glad	مسرور					
+zh_w_gaoxing#ex1	example	1	认识你很高兴。		Nice to meet you.	سعيد بالتعرف إليك.					
+zh_w_gaoxing#ex2	example	1	他今天很高兴。		He is very happy today.	هو سعيد جدًا اليوم.					
+zh_w_kuaile	word	1	快乐	kuàilè	happy, joyful	سعيد					
+zh_w_kuaile#ex1	example	1	生日快乐！		Happy birthday!	عيد ميلاد سعيد!					
+zh_w_kuaile#ex2	example	1	我们玩得很快乐。		We had a lot of fun.	استمتعنا كثيرًا.					
+zh_w_lei	word	1	累	lèi	tired	متعب					
+zh_w_lei#ex1	example	1	我今天很累。		I'm very tired today.	أنا متعب جدًا اليوم.					
+zh_w_lei#ex2	example	1	你累了吧？		You must be tired?	لا بد أنك متعب؟					
+zh_w_mang	word	1	忙	máng	busy	مشغول					
+zh_w_mang#ex1	example	1	我今天很忙。		I'm very busy today.	أنا مشغول جدًا اليوم.					
+zh_w_mang#ex2	example	1	妈妈每天都很忙。		Mum is busy every day.	أمي مشغولة كل يوم.					
+zh_w_e	word	1	饿	è	hungry	جائع					
+zh_w_e#ex1	example	1	我很饿，我们去吃饭吧。		I'm hungry, let's go and eat.	أنا جائع، لنذهب لنأكل.					
+zh_w_e#ex2	example	1	你饿不饿？		Are you hungry?	هل أنت جائع؟					
+zh_w_ke_thirsty	word	1	渴	kě	thirsty	عطشان					
+zh_w_ke_thirsty#ex1	example	1	我很渴，我想喝水。		I'm thirsty, I want some water.	أنا عطشان، أريد أن أشرب ماءً.					
+zh_w_ke_thirsty#ex2	example	1	天气太热，我有点儿渴。		It's too hot, I'm a bit thirsty.	الجو حار جدًا، أنا عطشان قليلًا.					
+zh_w_piaoliang	word	1	漂亮	piàoliang	pretty, beautiful	جميل					
+zh_w_piaoliang#ex1	example	1	我姐姐很漂亮。		My older sister is very pretty.	أختي الكبرى جميلة جدًا.					
+zh_w_piaoliang#ex2	example	1	这件衣服很漂亮。		This piece of clothing is very pretty.	هذا الثوب جميل جدًا.					
+zh_w_haochi	word	1	好吃	hǎochī	tasty, delicious	لذيذ					
+zh_w_haochi#ex1	example	1	妈妈做的菜很好吃。		The food Mum makes is delicious.	الطعام الذي تطبخه أمي لذيذ.					
+zh_w_haochi#ex2	example	1	这儿的面条很好吃。		The noodles here are delicious.	المعكرونة هنا لذيذة.					
+zh_w_gao	word	1	高	gāo	tall, high	طويل، مرتفع					
+zh_w_gao#ex1	example	1	我哥哥很高。		My older brother is tall.	أخي الأكبر طويل.					
+zh_w_gao#ex2	example	1	爸爸比我高。		Dad is taller than me.	أبي أطول مني.					
+zh_w_yuan	word	1	远	yuǎn	far	بعيد					
+zh_w_yuan#ex1	example	1	去火车站远吗？		Is it far to the train station?	هل محطة القطار بعيدة؟					
+zh_w_yuan#ex2	example	1	北京离这儿很远。		Beijing is far from here.	بكين بعيدة عن هنا.					
+zh_w_jin_near	word	1	近	jìn	near	قريب					
+zh_w_jin_near#ex1	example	1	医院离这儿很近。		The hospital is close to here.	المستشفى قريب من هنا.					
+zh_w_jin_near#ex2	example	1	商店很近，我们走路去吧。		The shop is close, let's walk.	المتجر قريب، لنذهب مشيًا.					
+zh_w_kuai_fast	word	1	快	kuài	fast; soon	سريع؛ قريبًا					
+zh_w_kuai_fast#ex1	example	1	他跑得很快。		He runs fast.	يركض بسرعة.					
+zh_w_kuai_fast#ex2	example	1	快走吧，电影开始了。		Hurry up, the film has started.	أسرع، بدأ الفيلم.					
+zh_w_man	word	1	慢	màn	slow	بطيء					
+zh_w_man#ex1	example	1	他走得很慢。		He walks slowly.	يمشي ببطء.					
+zh_w_man#ex2	example	1	你开车开得太慢了。		You drive too slowly.	تقود السيارة ببطء شديد.					
+zh_w_zao	word	1	早	zǎo	early	مبكر					
+zh_w_zao#ex1	example	1	你来得很早。		You've come very early.	جئت مبكرًا جدًا.					
+zh_w_zao#ex2	example	1	现在还早。		It's still early.	ما زال الوقت مبكرًا.					
+zh_w_wan_late	word	1	晚	wǎn	late	متأخر					
+zh_w_wan_late#ex1	example	1	太晚了，我要睡觉了。		It's too late, I'm going to bed.	تأخر الوقت كثيرًا، سأنام.					
+zh_w_wan_late#ex2	example	1	现在太晚了，我们明天再去吧。		It's too late now, let's go tomorrow.	الوقت متأخر الآن، لنذهب غدًا.					
+zh_w_dui	word	1	对	duì	right, correct; to, towards	صحيح؛ تجاه					
+zh_w_dui#ex1	example	1	你说得对。		You're right.	كلامك صحيح.					
+zh_w_dui#ex2	example	1	这个回答是对的。		This answer is correct.	هذه الإجابة صحيحة.					
+zh_w_cuo	word	1	错	cuò	wrong	خطأ					
+zh_w_cuo#ex1	example	1	这个字你写错了。		You wrote this character wrong.	كتبت هذا الحرف خطأً.					
+zh_w_cuo#ex2	example	1	你说错了。		You said it wrong.	أخطأت في كلامك.					
+zh_w_rongyi	word	1	容易	róngyì	easy	سهل					
+zh_w_rongyi#ex1	example	1	这个问题很容易。		This question is easy.	هذا السؤال سهل.					
+zh_w_rongyi#ex2	example	1	学习汉语不容易。		Learning Chinese isn't easy.	تعلم الصينية ليس سهلًا.					
+zh_w_nan	word	1	难	nán	difficult	صعب					
+zh_w_nan#ex1	example	1	这个问题很难。		This question is hard.	هذا السؤال صعب.					
+zh_w_nan#ex2	example	1	考试难不难？		Was the exam hard?	هل كان الامتحان صعبًا؟					
+zh_w_zhongyao	word	1	重要	zhòngyào	important	مهم					
+zh_w_zhongyao#ex1	example	1	身体最重要。		Health comes first.	الصحة أهم شيء.					
+zh_w_zhongyao#ex2	example	1	学习很重要。		Studying is important.	الدراسة مهمة.					
+zh_w_yiyang	word	1	一样	yíyàng	the same	مثل، نفس					
+zh_w_yiyang#ex1	example	1	我们的手机一样。		Our phones are the same.	هاتفانا متشابهان.					
+zh_w_yiyang#ex2	example	1	我和你一样高。		I'm as tall as you.	أنا بطولك.					
+zh_w_biede	word	1	别的	biéde	other, else	آخر، غير ذلك					
+zh_w_biede#ex1	example	1	我们去别的饭店吧。		Let's go to another restaurant.	لنذهب إلى مطعم آخر.					
+zh_w_biede#ex2	example	1	你有别的问题吗？		Do you have any other questions?	هل لديك أسئلة أخرى؟					
+zh_w_tai	word	1	太	tài	too, extremely	جدًا، أكثر من اللازم					
+zh_w_tai#ex1	example	1	这个太贵了！		This is too expensive!	هذا غالٍ جدًا!					
+zh_w_tai#ex2	example	1	今天太热了。		It's too hot today.	الجو حار جدًا اليوم.					
+zh_w_zhen	word	1	真	zhēn	really, truly	حقًا					
+zh_w_zhen#ex1	example	1	你的汉语真好！		Your Chinese is really good!	لغتك الصينية ممتازة حقًا!					
+zh_w_zhen#ex2	example	1	今天真冷。		It's really cold today.	الجو بارد حقًا اليوم.					
+zh_w_feichang	word	1	非常	fēicháng	extremely, very	للغاية					
+zh_w_feichang#ex1	example	1	我非常喜欢这个城市。		I like this city very much.	أحب هذه المدينة كثيرًا.					
+zh_w_feichang#ex2	example	1	今天的考试非常难。		Today's exam was very hard.	كان امتحان اليوم صعبًا جدًا.					
+zh_w_zui	word	1	最	zuì	most	الأكثر					
+zh_w_zui#ex1	example	1	我最喜欢吃面条。		I like noodles best.	أحب المعكرونة أكثر من أي شيء.					
+zh_w_zui#ex2	example	1	他是我们学校最高的学生。		He is the tallest student in our school.	هو أطول طالب في مدرستنا.					
+zh_w_hai	word	1	还	hái	still; also	ما زال؛ أيضًا					
+zh_w_hai#ex1	example	1	他还在睡觉。		He is still sleeping.	ما زال نائمًا.					
+zh_w_hai#ex2	example	1	你还要别的吗？		Would you like anything else?	هل تريد شيئًا آخر؟					
+zh_w_zai_again	word	1	再	zài	again	مرة أخرى					
+zh_w_zai_again#ex1	example	1	请你再说一次。		Please say it again.	قلها مرة أخرى من فضلك.					
+zh_w_zai_again#ex2	example	1	我们明天再来吧。		Let's come again tomorrow.	لنأتِ مرة أخرى غدًا.					
+zh_w_jiu	word	1	就	jiù	right away; just	فورًا؛ بالضبط					
+zh_w_jiu#ex1	example	1	我现在就去。		I'll go right now.	سأذهب الآن حالًا.					
+zh_w_jiu#ex2	example	1	他八点就来了。		He came as early as eight.	جاء منذ الثامنة.					
+zh_w_cai_only	word	1	才	cái	only then, not until	لم … إلا					
+zh_w_cai_only#ex1	example	1	你怎么现在才来？		Why are you only coming now?	لماذا لم تأتِ إلا الآن؟					
+zh_w_cai_only#ex2	example	1	我昨天晚上十二点才睡觉。		I didn't go to bed until midnight last night.	لم أنم أمس إلا في الثانية عشرة ليلًا.					
+zh_w_yijing	word	1	已经	yǐjīng	already	بالفعل					
+zh_w_yijing#ex1	example	1	他已经走了。		He has already left.	لقد غادر بالفعل.					
+zh_w_yijing#ex2	example	1	我已经吃饭了。		I've already eaten.	أكلت بالفعل.					
+zh_w_yiqi	word	1	一起	yìqǐ	together	معًا					
+zh_w_yiqi#ex1	example	1	我们一起去吃饭吧。		Let's go and eat together.	لنذهب لنأكل معًا.					
+zh_w_yiqi#ex2	example	1	你和我一起去吧。		Come with me.	تعالَ معي.					
+zh_w_yidianr	word	1	一点儿	yìdiǎnr	a little	قليلًا					
+zh_w_yidianr#ex1	example	1	请说慢一点儿。		Please speak a little more slowly.	تكلم ببطء أكثر قليلًا من فضلك.					
+zh_w_yidianr#ex2	example	1	今天天气冷，多穿一点儿衣服。		It's cold today, wear a few more clothes.	الجو بارد اليوم، البس ملابس أكثر قليلًا.					
+zh_w_yixia	word	1	一下	yíxià	a bit, briefly (softens a verb)	قليلًا، لحظة					
+zh_w_yixia#ex1	example	1	请等一下。		Please wait a moment.	انتظر لحظة من فضلك.					
+zh_w_yixia#ex2	example	1	让我看一下。		Let me have a look.	دعني ألقي نظرة.					
+zh_w_changchang	word	1	常常	chángcháng	often	غالبًا					
+zh_w_changchang#ex1	example	1	我常常去那儿。		I often go there.	أذهب إلى هناك كثيرًا.					
+zh_w_changchang#ex2	example	1	他常常给我打电话。		He often calls me.	يتصل بي كثيرًا.					
+zh_w_mei	word	1	没	méi	not (past), have not	لم؛ ليس لديه					
+zh_w_mei#ex1	example	1	我没有钱了。		I've run out of money.	نفد مالي.					
+zh_w_mei#ex2	example	1	他昨天没来。		He didn't come yesterday.	لم يأتِ أمس.					
+zh_w_bie	word	1	别	bié	don't	لا (للنهي)					
+zh_w_bie#ex1	example	1	你别跑那么快！		Don't run so fast!	لا تركض بهذه السرعة!					
+zh_w_bie#ex2	example	1	别告诉他。		Don't tell him.	لا تخبره.					
+zh_w_zhi_only	word	1	只	zhǐ	only	فقط					
+zh_w_zhi_only#ex1	example	1	我只有一个哥哥。		I only have one older brother.	ليس لي إلا أخ أكبر واحد.					
+zh_w_zhi_only#ex2	example	1	我们家只有一个孩子。		There is only one child in our family.	في عائلتنا طفل واحد فقط.					
+zh_w_yinwei	word	1	因为	yīnwèi	because	لأنّ					
+zh_w_yinwei#ex1	example	1	因为下雨，我没去。		Because it was raining, I didn't go.	لم أذهب لأنها كانت تمطر.					
+zh_w_yinwei#ex2	example	1	我很累，因为昨天工作到很晚。		I'm tired because I worked late yesterday.	أنا متعب لأنني عملت حتى وقت متأخر أمس.					
+zh_w_suoyi	word	1	所以	suǒyǐ	so, therefore	لذلك					
+zh_w_suoyi#ex1	example	1	他生病了，所以没来。		He is ill, so he didn't come.	هو مريض، لذلك لم يأتِ.					
+zh_w_suoyi#ex2	example	1	我饿了，所以想吃饭。		I'm hungry, so I want to eat.	أنا جائع، لذلك أريد أن آكل.					
+zh_w_danshi	word	1	但是	dànshì	but	لكن					
+zh_w_danshi#ex1	example	1	这个很好，但是太贵了。		This is very good, but too expensive.	هذا جيد جدًا، لكنه غالٍ جدًا.					
+zh_w_danshi#ex2	example	1	我想去，但是没有时间。		I want to go, but I don't have time.	أريد أن أذهب، لكن ليس لديّ وقت.					
+zh_w_ruguo	word	1	如果	rúguǒ	if	إذا					
+zh_w_ruguo#ex1	example	1	如果明天下雨，我们就不去了。		If it rains tomorrow, we won't go.	إذا أمطرت غدًا فلن نذهب.					
+zh_w_ruguo#ex2	example	1	如果你有时间，来我家玩吧。		If you have time, come over to my place.	إذا كان لديك وقت فتعال إلى بيتي.					
+zh_w_haishi	word	1	还是	háishi	or (in questions); still	أم (في السؤال)؛ ما زال					
+zh_w_haishi#ex1	example	1	你要茶还是咖啡？		Would you like tea or coffee?	هل تريد شايًا أم قهوة؟					
+zh_w_haishi#ex2	example	1	你想吃面条还是米饭？		Do you want noodles or rice?	هل تريد المعكرونة أم الأرز؟					
+zh_w_huozhe	word	1	或者	huòzhě	or	أو					
+zh_w_huozhe#ex1	example	1	我们坐地铁或者坐出租车去。		We'll go by subway or by taxi.	سنذهب بالمترو أو بسيارة أجرة.					
+zh_w_huozhe#ex2	example	1	我明天或者后天去北京。		I'm going to Beijing tomorrow or the day after.	سأذهب إلى بكين غدًا أو بعد غد.					
+zh_w_cong	word	1	从	cóng	from	من					
+zh_w_cong#ex1	example	1	他是从北京来的。		He comes from Beijing.	هو قادم من بكين.					
+zh_w_cong#ex2	example	1	你从哪儿来？		Where do you come from?	من أين أتيت؟					
+zh_w_gen	word	1	跟	gēn	with	مع					
+zh_w_gen#ex1	example	1	我跟朋友一起去。		I'm going with a friend.	سأذهب مع صديق.					
+zh_w_gen#ex2	example	1	孩子喜欢跟小狗玩。		The child likes playing with the puppy.	الطفل يحب اللعب مع الجرو.					
+zh_w_bi	word	1	比	bǐ	than (comparison)	من (للمقارنة)					
+zh_w_bi#ex1	example	1	他比我大三岁。		He is three years older than me.	هو أكبر مني بثلاث سنوات.					
+zh_w_bi#ex2	example	1	今天比昨天冷。		Today is colder than yesterday.	اليوم أبرد من أمس.					
+zh_w_wang	word	1	往	wǎng	towards	نحو					
+zh_w_wang#ex1	example	1	请往前走。		Please go straight ahead.	تقدّم إلى الأمام من فضلك.					
+zh_w_wang#ex2	example	1	去火车站往哪儿走？		Which way is the train station?	في أي اتجاه محطة القطار؟					
+zh_w_li_from	word	1	离	lí	away from (distance)	بعيد عن (للمسافة)					
+zh_w_li_from#ex1	example	1	我家离学校很远。		My home is far from school.	بيتي بعيد عن المدرسة.					
+zh_w_li_from#ex2	example	1	商店离这儿远不远？		Is the shop far from here?	هل المتجر بعيد عن هنا؟					
+zh_w_shang	word	1	上	shàng	on, above; last, previous	على، فوق؛ الماضي					
+zh_w_shang#ex1	example	1	书在桌子上。		The book is on the table.	الكتاب على الطاولة.					
+zh_w_shang#ex2	example	1	菜单上有很多菜。		There are many dishes on the menu.	في قائمة الطعام أطباق كثيرة.					
+zh_w_xia	word	1	下	xià	under, below; next	تحت؛ القادم					
+zh_w_xia#ex1	example	1	下个月我去中国。		I'm going to China next month.	سأذهب إلى الصين الشهر القادم.					
+zh_w_xia#ex2	example	1	下课以后我们去吃饭吧。		Let's go and eat after class.	لنذهب لنأكل بعد الدرس.					
+zh_w_li	word	1	里	lǐ	in, inside	في، داخل					
+zh_w_li#ex1	example	1	房间里有一张床。		There is a bed in the room.	في الغرفة سرير.					
+zh_w_li#ex2	example	1	家里没有人。		There's nobody at home.	لا أحد في البيت.					
+zh_w_qian_front	word	1	前	qián	in front; before	أمام؛ قبل					
+zh_w_qian_front#ex1	example	1	学校前面有一个商店。		There is a shop in front of the school.	أمام المدرسة متجر.					
+zh_w_qian_front#ex2	example	1	我在医院前面等你。		I'll wait for you in front of the hospital.	سأنتظرك أمام المستشفى.					
+zh_w_hou	word	1	后	hòu	behind; after	خلف؛ بعد					
+zh_w_hou#ex1	example	1	我坐在你后面。		I'm sitting behind you.	أجلس خلفك.					
+zh_w_hou#ex2	example	1	学校后面有一个饭店。		There is a restaurant behind the school.	خلف المدرسة مطعم.					
+zh_w_pangbian	word	1	旁边	pángbiān	beside, next to	بجانب					
+zh_w_pangbian#ex1	example	1	我住在学校旁边。		I live next to the school.	أسكن بجانب المدرسة.					
+zh_w_pangbian#ex2	example	1	椅子在桌子旁边。		The chair is next to the table.	الكرسي بجانب الطاولة.					
+zh_w_liang	word	1	两	liǎng	two (before a classifier)	اثنان (قبل المصنِّف)					
+zh_w_liang#ex1	example	1	我买了两本书。		I bought two books.	اشتريت كتابين.					
+zh_w_liang#ex2	example	1	他有两个孩子。		He has two children.	لديه طفلان.					
+zh_w_er	word	1	二	èr	two	اثنان					
+zh_w_er#ex1	example	1	我们学校有二十个老师。		Our school has twenty teachers.	في مدرستنا عشرون معلمًا.					
+zh_w_er#ex2	example	1	北京的二月很冷。		February in Beijing is very cold.	شهر فبراير في بكين بارد جدًا.					
+zh_w_san	word	1	三	sān	three	ثلاثة					
+zh_w_san#ex1	example	1	我们三个人一起去吧。		Let's go, the three of us together.	لنذهب نحن الثلاثة معًا.					
+zh_w_san#ex2	example	1	星期三我有课。		I have class on Wednesday.	عندي درس يوم الأربعاء.					
+zh_w_si	word	1	四	sì	four	أربعة					
+zh_w_si#ex1	example	1	我家有四个人。		There are four people in my family.	عائلتي أربعة أشخاص.					
+zh_w_si#ex2	example	1	我四点下课。		My class ends at four.	ينتهي درسي في الرابعة.					
+zh_w_wu	word	1	五	wǔ	five	خمسة					
+zh_w_wu#ex1	example	1	我们家有五个人。		There are five people in our family.	عائلتنا خمسة أشخاص.					
+zh_w_wu#ex2	example	1	五块钱一杯。		Five yuan a cup.	الكوب بخمسة يوانات.					
+zh_w_liu	word	1	六	liù	six	ستة					
+zh_w_liu#ex1	example	1	我六点回家。		I go home at six.	أعود إلى البيت في السادسة.					
+zh_w_liu#ex2	example	1	星期六你有时间吗？		Are you free on Saturday?	هل لديك وقت يوم السبت؟					
+zh_w_qi	word	1	七	qī	seven	سبعة					
+zh_w_qi#ex1	example	1	一个星期有七天。		A week has seven days.	في الأسبوع سبعة أيام.					
+zh_w_qi#ex2	example	1	我早上七点吃饭。		I eat at seven in the morning.	آكل في السابعة صباحًا.					
+zh_w_ba_eight	word	1	八	bā	eight	ثمانية					
+zh_w_ba_eight#ex1	example	1	我弟弟八岁。		My younger brother is eight.	عمر أخي الأصغر ثماني سنوات.					
+zh_w_ba_eight#ex2	example	1	我的生日在八月。		My birthday is in August.	عيد ميلادي في أغسطس.					
+zh_w_jiu_nine	word	1	九	jiǔ	nine	تسعة					
+zh_w_jiu_nine#ex1	example	1	我九点到公司。		I get to the office at nine.	أصل إلى الشركة في التاسعة.					
+zh_w_jiu_nine#ex2	example	1	九月一号开始上课。		Classes start on the first of September.	تبدأ الدروس في الأول من سبتمبر.					
+zh_w_shi_ten	word	1	十	shí	ten	عشرة					
+zh_w_shi_ten#ex1	example	1	我等了你十分钟。		I waited ten minutes for you.	انتظرتك عشر دقائق.					
+zh_w_shi_ten#ex2	example	1	这个苹果十块钱。		This apple costs ten yuan.	هذه التفاحة بعشرة يوانات.					
+zh_w_bai	word	1	百	bǎi	hundred	مئة					
+zh_w_bai#ex1	example	1	这件衣服两百块。		This piece of clothing costs two hundred yuan.	هذا الثوب بمئتي يوان.					
+zh_w_bai#ex2	example	1	我们学校有五百个学生。		Our school has five hundred students.	في مدرستنا خمسمئة طالب.					
+zh_w_diyi	word	1	第一	dì-yī	first	الأول					
+zh_w_diyi#ex1	example	1	他是第一个到的。		He was the first to arrive.	كان أول من وصل.					
+zh_w_diyi#ex2	example	1	第一个问题很容易。		The first question is easy.	السؤال الأول سهل.					
+zh_w_nihao	word	1	你好	nǐ hǎo	hello	مرحبًا					
+zh_w_nihao#ex1	example	1	你好，我叫小明。		Hello, my name is Xiaoming.	مرحبًا، اسمي شياومينغ.					
+zh_w_nihao#ex2	example	1	老师，你好！		Hello, teacher!	مرحبًا يا أستاذ!					
+zh_w_xiexie	word	1	谢谢	xièxie	thank you	شكرًا					
+zh_w_xiexie#ex1	example	1	谢谢你的帮助。		Thank you for your help.	شكرًا على مساعدتك.					
+zh_w_xiexie#ex2	example	1	谢谢，我不喝咖啡。		Thanks, but I don't drink coffee.	شكرًا، لا أشرب القهوة.					
+zh_w_bukeqi	word	1	不客气	bú kèqi	you're welcome	عفوًا					
+zh_w_bukeqi#ex1	example	1	不客气，这是我应该做的。		You're welcome, it was the least I could do.	عفوًا، هذا واجبي.					
+zh_w_bukeqi#ex2	example	1	不客气，欢迎再来！		You're welcome, come again!	عفوًا، أهلًا بك مرة أخرى!					
+zh_w_duibuqi	word	1	对不起	duìbuqǐ	sorry	آسف					
+zh_w_duibuqi#ex1	example	1	对不起，我来晚了。		Sorry I'm late.	آسف، تأخرت.					
+zh_w_duibuqi#ex2	example	1	对不起，我不知道。		Sorry, I don't know.	آسف، لا أعرف.					
+zh_w_meiguanxi	word	1	没关系	méi guānxi	it doesn't matter, no problem	لا بأس					
+zh_w_meiguanxi#ex1	example	1	没关系，我等你。		It doesn't matter, I'll wait for you.	لا بأس، سأنتظرك.					
+zh_w_meiguanxi#ex2	example	1	对不起！没关系。		Sorry! — That's all right.	آسف! — لا بأس.					
+zh_w_zaijian	word	1	再见	zàijiàn	goodbye	إلى اللقاء					
+zh_w_zaijian#ex1	example	1	老师，再见！		Goodbye, teacher!	مع السلامة يا أستاذ!					
+zh_w_zaijian#ex2	example	1	我走了，再见！		I'm off, goodbye!	سأذهب الآن، مع السلامة!					
+zh_w_qing	word	1	请	qǐng	please; to invite	من فضلك؛ يدعو					
+zh_w_qing#ex1	example	1	请你喝茶。		Please have some tea.	تفضل اشرب الشاي.					
+zh_w_qing#ex2	example	1	请问，火车站在哪儿？		Excuse me, where is the train station?	من فضلك، أين محطة القطار؟					
+zh_w_huanying	word	1	欢迎	huānyíng	to welcome	يرحّب					
+zh_w_huanying#ex1	example	1	欢迎你来北京！		Welcome to Beijing!	أهلًا بك في بكين!					
+zh_w_huanying#ex2	example	1	欢迎来我家！		Welcome to my home!	أهلًا بك في بيتي!					
+zh_w_de_complement	word	1	得	·de	particle linking a verb to how it is done	أداة تربط الفعل بكيفية أدائه					
+zh_w_de_complement#ex1	example	1	他汉语说得很好。		He speaks Chinese very well.	يتكلم الصينية جيدًا جدًا.					
+zh_w_de_complement#ex2	example	1	你写得太快了。		You write too fast.	تكتب بسرعة كبيرة.					
+zh_w_shide	word	1	是的	shì ·de	yes, that's right	نعم، صحيح					
+zh_w_shide#ex1	example	1	是的，我是学生。		Yes, I'm a student.	نعم، أنا طالب.					
+zh_w_shide#ex2	example	1	你是老师吗？是的。		Are you a teacher? — Yes.	هل أنت معلم؟ — نعم.					
+zh_w_dangran	word	1	当然	dāngrán	of course	بالطبع					
+zh_w_dangran#ex1	example	1	当然可以。		Of course you can.	بالطبع يمكنك.					
+zh_w_dangran#ex2	example	1	我当然知道。		Of course I know.	بالطبع أعرف.					
+zh_w_keneng	word	1	可能	kěnéng	maybe, possibly	ربما					
+zh_w_keneng#ex1	example	1	明天可能会下雨。		It may rain tomorrow.	قد تمطر غدًا.					
+zh_w_keneng#ex2	example	1	他可能不来了。		He may not come.	ربما لن يأتي.					
+zh_w_yinggai	word	1	应该	yīnggāi	should	ينبغي					
+zh_w_yinggai#ex1	example	1	你应该去看医生。		You should see a doctor.	يجب أن تذهب إلى الطبيب.					
+zh_w_yinggai#ex2	example	1	我们应该早一点儿走。		We should leave a bit earlier.	يجب أن نغادر أبكر قليلًا.					
+zh_w_yiding	word	1	一定	yídìng	certainly, surely	بالتأكيد					
+zh_w_yiding#ex1	example	1	我一定来。		I'll definitely come.	سآتي بالتأكيد.					
+zh_w_yiding#ex2	example	1	你一定很累了。		You must be very tired.	لا بد أنك متعب جدًا.					
+zh_w_mei_each	word	1	每	měi	every, each	كل					
+zh_w_mei_each#ex1	example	1	我每天喝很多水。		I drink a lot of water every day.	أشرب ماءً كثيرًا كل يوم.					
+zh_w_mei_each#ex2	example	1	每个星期我都给妈妈打电话。		I call my mother every week.	أتصل بأمي كل أسبوع.					
+zh_w_xie_some	word	1	些	xiē	some (一些)	بعض					
+zh_w_xie_some#ex1	example	1	这些是我的书。		These are my books.	هذه كتبي.					
+zh_w_xie_some#ex2	example	1	我想买一些水果。		I want to buy some fruit.	أريد أن أشتري بعض الفاكهة.					
+zh_w_zenmeyang	word	1	怎么样	zěnmeyàng	how about, how is it	ما رأيك، كيف هو					
+zh_w_zenmeyang#ex1	example	1	明天天气怎么样？		What will the weather be like tomorrow?	كيف سيكون الطقس غدًا؟					
+zh_w_zenmeyang#ex2	example	1	你觉得这个菜怎么样？		What do you think of this dish?	ما رأيك في هذا الطبق؟					
+zh_w_ci	word	1	次	cì	time (occurrence)	مرة					
+zh_w_ci#ex1	example	1	这是我第一次来北京。		This is my first time in Beijing.	هذه أول مرة آتي فيها إلى بكين.					
+zh_w_ci#ex2	example	1	我一个星期运动三次。		I exercise three times a week.	أمارس الرياضة ثلاث مرات في الأسبوع.					
+zh_w_jian	word	1	件	jiàn	classifier for clothes and matters	مصنِّف للملابس والأمور					
+zh_w_jian#ex1	example	1	我买了两件衣服。		I bought two items of clothing.	اشتريت قطعتين من الملابس.					
+zh_w_jian#ex2	example	1	这件事很重要。		This matter is important.	هذا الأمر مهم.					
+zh_w_zhang	word	1	张	zhāng	classifier for flat things (tickets, tables)	مصنِّف للأشياء المسطحة					
+zh_w_zhang#ex1	example	1	我买了两张电影票。		I bought two cinema tickets.	اشتريت تذكرتين للسينما.					
+zh_w_zhang#ex2	example	1	这张桌子很贵。		This table is expensive.	هذه الطاولة غالية.					
+zh_w_zhi_animal	word	1	只	zhī	classifier for animals	مصنِّف للحيوانات					
+zh_w_zhi_animal#ex1	example	1	这只猫很漂亮。		This cat is very pretty.	هذه القطة جميلة جدًا.					
+zh_w_zhi_animal#ex2	example	1	她有两只小狗。		She has two puppies.	لديها جروان.					
+zh_w_sui	word	1	岁	suì	years old	سنة (من العمر)					
+zh_w_sui#ex1	example	1	你几岁了？		How old are you? (to a child)	كم عمرك؟ (لطفل)					
+zh_w_sui#ex2	example	1	我儿子三岁了。		My son is three.	ابني عمره ثلاث سنوات.					
+zh_w_yuan_money	word	1	元	yuán	yuan (currency unit)	يوان (عملة)					
+zh_w_yuan_money#ex1	example	1	这本书三十元。		This book costs thirty yuan.	هذا الكتاب بثلاثين يوانًا.					
+zh_w_yuan_money#ex2	example	1	一张票五十元。		One ticket costs fifty yuan.	التذكرة الواحدة بخمسين يوانًا.					
+zh_w_hao_number	word	1	号	hào	number; date (day of month)	رقم؛ تاريخ اليوم					
+zh_w_hao_number#ex1	example	1	今天几月几号？		What's the date today?	ما تاريخ اليوم؟					
+zh_w_hao_number#ex2	example	1	我的生日是五月十号。		My birthday is on the tenth of May.	عيد ميلادي في العاشر من مايو.					
+zh_w_xiaoshi	word	1	小时	xiǎoshí	hour	ساعة (60 دقيقة)					
+zh_w_xiaoshi#ex1	example	1	我们等了两个小时。		We waited for two hours.	انتظرنا ساعتين.					
+zh_w_xiaoshi#ex2	example	1	我每天学习一个小时汉语。		I study Chinese for an hour every day.	أدرس الصينية ساعة كل يوم.					
+zh_w_gangcai	word	1	刚才	gāngcái	just now	قبل قليل					
+zh_w_gangcai#ex1	example	1	刚才谁来了？		Who came just now?	من جاء قبل قليل؟					
+zh_w_gangcai#ex2	example	1	他刚才给你打电话了。		He called you just now.	اتصل بك قبل قليل.					
+zh_w_yiqian	word	1	以前	yǐqián	before, previously	سابقًا					
+zh_w_yiqian#ex1	example	1	以前我住在北京。		I used to live in Beijing.	كنت أسكن في بكين سابقًا.					
+zh_w_yiqian#ex2	example	1	我以前不喜欢喝茶。		I didn't use to like tea.	لم أكن أحب الشاي من قبل.					
+zh_w_yihou	word	1	以后	yǐhòu	after, later, in the future	لاحقًا، في المستقبل					
+zh_w_yihou#ex1	example	1	吃饭以后我们去看电影。		After eating we'll go to see a film.	بعد الأكل سنذهب لمشاهدة فيلم.					
+zh_w_yihou#ex2	example	1	以后你常常来玩吧。		Come and visit often from now on.	تعالَ لزيارتنا كثيرًا من الآن فصاعدًا.					
+zh_w_youdianr	word	1	有点儿	yǒudiǎnr	a little, somewhat	قليلًا، نوعًا ما					
+zh_w_youdianr#ex1	example	1	我有点儿累。		I'm a bit tired.	أنا متعب قليلًا.					
+zh_w_youdianr#ex2	example	1	这个菜有点儿贵。		This dish is a bit expensive.	هذا الطبق غالٍ قليلًا.					
+zh_w_dajia	word	1	大家	dàjiā	everyone	الجميع					
+zh_w_dajia#ex1	example	1	大家好，我叫小明。		Hello everyone, my name is Xiaoming.	مرحبًا بالجميع، اسمي شياومينغ.					
+zh_w_dajia#ex2	example	1	大家一起唱歌吧。		Let's all sing together.	لنغنِّ جميعًا معًا.					
+zh_w_ziji	word	1	自己	zìjǐ	oneself	نفسه					
+zh_w_ziji#ex1	example	1	我自己做饭。		I cook for myself.	أطبخ لنفسي.					
+zh_w_ziji#ex2	example	1	你自己去吧。		Go by yourself.	اذهب وحدك.					
+zh_w_name	word	1	那么	nàme	so, that much	هكذا، إلى ذلك الحد					
+zh_w_name#ex1	example	1	你怎么那么高兴？		Why are you so happy?	لماذا أنت سعيد إلى هذا الحد؟					
+zh_w_name#ex2	example	1	这儿没有那么冷。		It isn't that cold here.	الجو هنا ليس باردًا إلى هذا الحد.					
+zh_w_yundong	word	1	运动	yùndòng	sport, exercise	رياضة					
+zh_w_yundong#ex1	example	1	你喜欢什么运动？		What sports do you like?	ما الرياضة التي تحبها؟					
+zh_w_yundong#ex2	example	1	运动对身体很好。		Exercise is good for your health.	الرياضة مفيدة للصحة.					
+zh_w_kaoshi	word	1	考试	kǎoshì	exam	امتحان					
+zh_w_kaoshi#ex1	example	1	我在准备考试。		I'm preparing for an exam.	أستعد للامتحان.					
+zh_w_kaoshi#ex2	example	1	明天的考试难吗？		Is tomorrow's exam hard?	هل امتحان الغد صعب؟					
+zh_w_ke	word	1	课	kè	lesson, class	درس					
+zh_w_ke#ex1	example	1	我上午有课。		I have class in the morning.	عندي درس قبل الظهر.					
+zh_w_ke#ex2	example	1	今天的课很容易。		Today's lesson was easy.	كان درس اليوم سهلًا.					
+zh_w_xiwang	word	1	希望	xīwàng	to hope	يأمل					
+zh_w_xiwang#ex1	example	1	我希望你每天都快乐。		I hope you're happy every day.	أتمنى أن تكون سعيدًا كل يوم.					
+zh_w_xiwang#ex2	example	1	我希望明天不下雨。		I hope it doesn't rain tomorrow.	أتمنى ألا تمطر غدًا.					
+zh_w_shenghuo	word	1	生活	shēnghuó	life (daily living)	حياة (معيشة)					
+zh_w_shenghuo#ex1	example	1	我很喜欢北京的生活。		I really like life in Beijing.	أحب الحياة في بكين كثيرًا.					
+zh_w_shenghuo#ex2	example	1	他的生活很忙。		His life is very busy.	حياته مزدحمة جدًا.					

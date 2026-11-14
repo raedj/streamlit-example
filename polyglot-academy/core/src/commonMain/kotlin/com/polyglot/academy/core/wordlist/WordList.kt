@@ -1,0 +1,182 @@
+package com.polyglot.academy.core.wordlist
+
+import com.polyglot.academy.core.content.ContentDisputes
+import com.polyglot.academy.core.model.CefrLevel
+import com.polyglot.academy.core.model.Gender
+import com.polyglot.academy.core.model.Gloss
+import com.polyglot.academy.core.model.LanguageCode
+import com.polyglot.academy.core.model.PartOfSpeech
+import com.polyglot.academy.core.model.VocabularyItem
+import com.polyglot.academy.core.wordlist.generated.GeneratedWordLists
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
+
+/**
+ * The frequency word lists: up to 3000 lemmas per language in 10 levels of 300, most frequent first.
+ * Data lives in content/wordlists/<lang>.{words,examples}.tsv and is compiled into Kotlin by
+ * tools/gen_wordlists.py; see docs/ARCHITECTURE.md ("Word lists").
+ */
+object WordLevels {
+    const val SIZE = 300
+    const val COUNT = 10
+    const val TARGET = SIZE * COUNT
+
+    /** Example words may be at most this many ranks less frequent than the word they illustrate. */
+    const val EXAMPLE_RANK_SLACK = 300
+    /** Share of an example's words (names and numbers excluded) that must fall within the slack. */
+    const val EXAMPLE_COVERAGE = 0.85
+
+    fun levelOf(rank: Int): Int = (rank - 1) / SIZE + 1
+    fun ranks(level: Int): IntRange = ((level - 1) * SIZE + 1)..(level * SIZE)
+
+    /** Approximate CEFR band, not a certified equivalence: 1–2 A1, 3–4 A2, 5–6 B1, 7–8 B2, 9–10 B2+ to C1. */
+    fun cefr(level: Int): CefrLevel = when (level) {
+        1, 2 -> CefrLevel.A1
+        3, 4 -> CefrLevel.A2
+        5, 6 -> CefrLevel.B1
+        7, 8 -> CefrLevel.B2
+        else -> CefrLevel.C1
+    }
+}
+
+data class WordExample(val sentence: String, val translation: Gloss, val names: List<String> = emptyList())
+
+data class WordEntry(
+    val language: LanguageCode,
+    val rank: Int,
+    val id: String,
+    /** Lemma (dictionary form). Arabic with full vowel marks; Mandarin in simplified characters. */
+    val term: String,
+    val partOfSpeech: PartOfSpeech,
+    val topic: String,
+    val meaning: Gloss,
+    /** IPA, pinyin with tone marks, or (Arabic, Urdu) a Latin transliteration. */
+    val pronunciation: String?,
+    /** Inflected and irregular forms (went, gone; fue; l'), also used to find the word in a sentence. */
+    val forms: List<String>,
+    /** Language-specific fields: gender, article, plural, root, masdar, present, trad, hsk, measure, stem, irregular. */
+    val extra: Map<String, String>,
+    /** Id of the same word in the hand-written curriculum, if it exists there. */
+    val vocabularyId: String?,
+    val examples: List<WordExample>,
+) {
+    val level: Int get() = WordLevels.levelOf(rank)
+
+    /** Key of the review state: the existing curriculum id when linked, so earlier review progress is kept. */
+    val reviewId: String get() = vocabularyId ?: id
+
+    fun toVocabularyItem(): VocabularyItem {
+        val transliterated = language == LanguageCode.ARABIC || language == LanguageCode.URDU
+        val first = examples.firstOrNull()
+        return VocabularyItem(
+            id = reviewId, language = language, term = term, meaning = meaning, partOfSpeech = partOfSpeech,
+            level = WordLevels.cefr(level), topic = topic,
+            pronunciation = pronunciation.takeUnless { transliterated },
+            transliteration = pronunciation.takeIf { transliterated },
+            example = first?.sentence, exampleTranslation = first?.translation,
+            gender = when (extra["gender"]) { "m" -> Gender.MASCULINE; "f" -> Gender.FEMININE; else -> null },
+            traditional = extra["trad"],
+            tags = setOf("wordlist", "wordlevel_$level"),
+        )
+    }
+}
+
+class WordList(val language: LanguageCode, val entries: List<WordEntry>) {
+    val byRank: Map<Int, WordEntry> = entries.associateBy { it.rank }
+    val byId: Map<String, WordEntry> = entries.associateBy { it.id }
+    /** Full levels in the list. By rank, so a word hidden after the content check does not take its level away. */
+    val levelCount: Int get() = (byRank.keys.maxOrNull() ?: 0) / WordLevels.SIZE
+    val matcher: WordMatcher by lazy { WordMatcher(language, entries) }
+
+    fun level(level: Int): List<WordEntry> = WordLevels.ranks(level).mapNotNull { byRank[it] }
+
+    /** Normalised multi-word terms and forms ("canı çekmek", "a lot of"), most frequent entry first. */
+    private val phraseEntries: Map<String, WordEntry> by lazy {
+        val m = HashMap<String, WordEntry>()
+        entries.sortedByDescending { it.rank }.forEach { e ->
+            (listOf(e.term) + e.forms).filter { ' ' in it.trim() }.forEach { m[matcher.normalize(it).trim()] = e }
+        }
+        m
+    }
+
+    /** Normalised dictionary forms: "saw" is the noun when the list has it, not only a form of "see". */
+    private val termEntries: Map<String, WordEntry> by lazy {
+        val m = HashMap<String, WordEntry>()
+        entries.sortedByDescending { it.rank }.forEach { e -> m[matcher.normalize(e.term).trim()] = e }
+        m
+    }
+
+    /**
+     * Terms a sentence is split by so they can be tapped as one piece: multi-word terms for spaced
+     * languages, and every term and form for Mandarin, which has no spaces (see [StoryText.tokens]).
+     */
+    val tapTerms: Set<String> by lazy {
+        if (language == LanguageCode.MANDARIN) entries.flatMap { listOf(it.term) + it.forms }.filter { it.isNotBlank() }.toSet()
+        else entries.flatMap { listOf(it.term) + it.forms }.filter { ' ' in it.trim() }.toSet()
+    }
+
+    /** The entry a tapped word or phrase belongs to (by its form or a regular inflection), or null when the list lacks it. */
+    fun lookup(word: String): WordEntry? {
+        val n = matcher.normalize(word).trim()
+        if (n.isEmpty()) return null
+        phraseEntries[n]?.let { return it }
+        termEntries[n]?.let { return it }
+        return matcher.entryIdFor(word)?.let { byId[it] }
+    }
+}
+
+object WordLists {
+    private val lists: Map<LanguageCode, Lazy<WordList>> = LanguageCode.entries.associateWith { code -> lazy { build(code) } }
+
+    /** The language's list; loaded on first use only, so other languages cost nothing at start-up. */
+    fun of(language: LanguageCode): WordList = lists.getValue(language).value
+
+    /**
+     * Same as [of], but parses the list on a background thread: the first load of a language builds
+     * 3000 entries, which is long enough on a phone to freeze the screen if done on the main thread.
+     */
+    suspend fun load(language: LanguageCode): WordList =
+        if (lists.getValue(language).isInitialized()) of(language) else withContext(Dispatchers.Default) { of(language) }
+
+    private fun build(language: LanguageCode): WordList {
+        val chunks = GeneratedWordLists.levels(language.tag).map { it() }
+        return without(parse(language, chunks.flatMap { it.first }, chunks.flatMap { it.second }), ContentDisputes.of(language))
+    }
+
+    /**
+     * The list without the words and examples hidden after the AI content check. Example ids are the word's
+     * id with "#ex" and the example's place, from 1, as in tools/review_sheets.py. The other words keep their ranks.
+     */
+    fun without(list: WordList, disputed: Set<String>): WordList = if (disputed.isEmpty()) list else WordList(list.language,
+        list.entries.filter { it.id !in disputed }.map { e ->
+            e.copy(examples = e.examples.filterIndexed { i, _ -> "${e.id}#ex${i + 1}" !in disputed })
+        })
+
+    private val posCodes = mapOf(
+        "noun" to PartOfSpeech.NOUN, "verb" to PartOfSpeech.VERB, "adj" to PartOfSpeech.ADJECTIVE, "adv" to PartOfSpeech.ADVERB,
+        "pron" to PartOfSpeech.PRONOUN, "prep" to PartOfSpeech.PREPOSITION, "conj" to PartOfSpeech.CONJUNCTION,
+        "interj" to PartOfSpeech.INTERJECTION, "num" to PartOfSpeech.NUMERAL, "phrase" to PartOfSpeech.PHRASE,
+        "part" to PartOfSpeech.PARTICLE, "measure" to PartOfSpeech.MEASURE_WORD, "det" to PartOfSpeech.DETERMINER,
+    )
+
+    /** Parses the generated rows (same columns as the TSV files, without headers). */
+    fun parse(language: LanguageCode, wordRows: List<String>, exampleRows: List<String>): WordList {
+        val examples = exampleRows.map { it.split('\t') }.groupBy({ it[0].toInt() }) { c ->
+            WordExample(c[1], Gloss(c[2], c[3]), c[4].split(',').map { it.trim() }.filter { it.isNotEmpty() })
+        }
+        val entries = wordRows.map { row ->
+            val c = row.split('\t')
+            val rank = c[0].toInt()
+            WordEntry(
+                language = language, rank = rank, id = c[1], term = c[2],
+                partOfSpeech = posCodes[c[3]] ?: error("unknown part of speech ${c[3]} at ${language.tag} rank $rank"),
+                topic = c[4], meaning = Gloss(c[5], c[6]), pronunciation = c[7].ifEmpty { null },
+                forms = c[8].split(',').map { it.trim() }.filter { it.isNotEmpty() },
+                extra = c[9].split(';').mapNotNull { kv -> kv.split('=', limit = 2).takeIf { it.size == 2 }?.let { it[0].trim() to it[1].trim() } }.toMap(),
+                vocabularyId = c[10].ifEmpty { null },
+                examples = examples[rank].orEmpty(),
+            )
+        }
+        return WordList(language, entries)
+    }
+}

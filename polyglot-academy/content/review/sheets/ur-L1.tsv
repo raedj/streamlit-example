@@ -1,0 +1,901 @@
+item_id	kind	level	text	pron	en	ar	status	correction	reviewer	date	note
+ur_w_hai	word	1	ہے	hai	is	يكون (فعل الكينونة للمفرد)					
+ur_w_hai#ex1	example	1	یہ میرا گھر ہے۔		This is my home.	هذا بيتي.					
+ur_w_hai#ex2	example	1	میرا بھائی ڈاکٹر ہے۔		My brother is a doctor.	أخي طبيب.					
+ur_w_mein_in	word	1	میں	mẽ	in	في					
+ur_w_mein_in#ex1	example	1	کتاب بیگ میں ہے۔		The book is in the bag.	الكتاب في الحقيبة.					
+ur_w_mein_in#ex2	example	1	ہم ایک بڑے شہر میں رہتے ہیں۔		We live in a big city.	نسكن في مدينة كبيرة.					
+ur_w_main	word	1	میں	maĩ	I	أنا					
+ur_w_main#ex1	example	1	میں تمہارا دوست ہوں۔		I'm your friend.	أنا صديقك.					
+ur_w_main#ex2	example	1	مجھ سے بات کرو۔		Talk to me.	تكلّم معي.					
+ur_w_ka	word	1	کا	kā	of ('s)	أداة الإضافة					
+ur_w_ka#ex1	example	1	یہ میرے دوست کا بیگ ہے۔		This is my friend's bag.	هذه حقيبة صديقي.					
+ur_w_ka#ex2	example	1	آپ کی بہن کہاں ہے؟		Where is your sister?	أين أختك؟					
+ur_w_ko	word	1	کو	ko	to (object marker)	إلى؛ علامة المفعول					
+ur_w_ko#ex1	example	1	یہ کتاب احمد کو دو۔		Give this book to Ahmed.	أعطِ هذا الكتاب لأحمد.					
+ur_w_ko#ex2	example	1	میں نے یہ بات امی کو بتائی۔		I told this to my mum.	أخبرت أمي بهذا الأمر.					
+ur_w_se	word	1	سے	se	from; with; than	من؛ بـ					
+ur_w_se#ex1	example	1	میں کراچی سے ہوں۔		I'm from Karachi.	أنا من كراتشي.					
+ur_w_se#ex2	example	1	میں یہ کتاب دوست سے لایا۔		I got this book from a friend.	أحضرت هذا الكتاب من صديق.					
+ur_w_par	word	1	پر	par	on; at	على؛ في					
+ur_w_par#ex1	example	1	قلم کرسی پر ہے۔		The pen is on the chair.	القلم على الكرسي.					
+ur_w_par#ex2	example	1	میری چابی میز پر ہے۔		My key is on the table.	مفتاحي على الطاولة.					
+ur_w_ne	word	1	نے	ne	marker of the subject in the past	علامة الفاعل في الماضي					
+ur_w_ne#ex1	example	1	میں نے کھانا کھایا۔		I ate the food.	أكلت الطعام.					
+ur_w_ne#ex2	example	1	احمد نے مجھے تحفہ دیا۔		Ahmed gave me a present.	أعطاني أحمد هدية.					
+ur_w_aur	word	1	اور	aur	and	و					
+ur_w_aur#ex1	example	1	امی اور ابو گھر پر ہیں۔		Mum and Dad are at home.	أمي وأبي في البيت.					
+ur_w_aur#ex2	example	1	میں اور میرا دوست اسکول جاتے ہیں۔		My friend and I go to school.	أنا وصديقي نذهب إلى المدرسة.					
+ur_w_yeh	word	1	یہ	yeh	this; he, she (near)	هذا، هذه					
+ur_w_yeh#ex1	example	1	یہ میری بہن ہے۔		This is my sister.	هذه أختي.					
+ur_w_yeh#ex2	example	1	یہ کس کا بیگ ہے؟		Whose bag is this?	لمن هذه الحقيبة؟					
+ur_w_woh	word	1	وہ	woh	that; he, she	ذلك؛ هو، هي					
+ur_w_woh#ex1	example	1	وہ میرا دوست ہے۔		He is my friend.	هو صديقي.					
+ur_w_woh#ex2	example	1	میں نے اسے کل دیکھا۔		I saw him yesterday.	رأيته أمس.					
+ur_w_aap	word	1	آپ	āp	you (polite)	حضرتك، أنتم					
+ur_w_aap#ex1	example	1	آپ آج کیسے ہیں؟		How are you today?	كيف حالك اليوم؟					
+ur_w_aap#ex2	example	1	آپ کہاں سے ہیں؟		Where are you from?	من أين أنت؟					
+ur_w_tum	word	1	تم	tum	you (familiar)	أنت					
+ur_w_tum#ex1	example	1	تم کہاں جا رہے ہو؟		Where are you going?	إلى أين أنت ذاهب؟					
+ur_w_tum#ex2	example	1	تمہیں کھانے میں کیا چاہیے؟		What would you like to eat?	ماذا تريد أن تأكل؟					
+ur_w_ham	word	1	ہم	ham	we	نحن					
+ur_w_ham#ex1	example	1	ہم ہر روز اسکول جاتے ہیں۔		We go to school every day.	نذهب إلى المدرسة كل يوم.					
+ur_w_ham#ex2	example	1	ہمیں تمہاری مدد چاہیے۔		We need your help.	نحتاج إلى مساعدتك.					
+ur_w_nahin	word	1	نہیں	nahī̃	no, not	لا					
+ur_w_nahin#ex1	example	1	میں چائے نہیں پیتا۔		I don't drink tea.	لا أشرب الشاي.					
+ur_w_nahin#ex2	example	1	نہیں، یہ میرا بیگ نہیں ہے۔		No, this isn't my bag.	لا، هذه ليست حقيبتي.					
+ur_w_tha	word	1	تھا	thā	was	كان					
+ur_w_tha#ex1	example	1	کل موسم بہت ٹھنڈا تھا۔		The weather was very cold yesterday.	كان الطقس باردًا جدًا أمس.					
+ur_w_tha#ex2	example	1	وہ کل گھر پر نہیں تھی۔		She wasn't at home yesterday.	لم تكن في البيت أمس.					
+ur_w_kya	word	1	کیا	kyā	what; question word	ماذا؛ هل					
+ur_w_kya#ex1	example	1	آپ کیا کر رہے ہیں؟		What are you doing?	ماذا تفعل؟					
+ur_w_kya#ex2	example	1	کیا آپ کل آئیں گے؟		Will you come tomorrow?	هل ستأتي غدًا؟					
+ur_w_bhi	word	1	بھی	bhī	also, too	أيضًا					
+ur_w_bhi#ex1	example	1	میں بھی آپ کے ساتھ جاؤں گا۔		I'll go with you too.	سأذهب معك أنا أيضًا.					
+ur_w_bhi#ex2	example	1	یہ کھانا بھی مزیدار ہے۔		This food is tasty too.	هذا الطعام لذيذ أيضًا.					
+ur_w_to	word	1	تو	to	then, so	إذن، فـ					
+ur_w_to#ex1	example	1	اگر بارش ہوئی تو ہم گھر پر رہیں گے۔		If it rains, we'll stay at home.	إذا أمطرت فسنبقى في البيت.					
+ur_w_to#ex2	example	1	اگر تم آؤ تو مجھے فون کرنا۔		If you come, call me.	إذا جئت فاتصل بي.					
+ur_w_ke	word	1	کہ	ke	that	أنّ					
+ur_w_ke#ex1	example	1	میں چاہتا ہوں کہ تم آؤ۔		I want you to come.	أريد أن تأتي.					
+ur_w_ke#ex2	example	1	اس نے کہا کہ وہ کل آئے گا۔		He said that he'll come tomorrow.	قال إنه سيأتي غدًا.					
+ur_w_kaun	word	1	کون	kaun	who	مَن					
+ur_w_kaun#ex1	example	1	معاف کیجیے، آپ کون ہیں؟		Excuse me, who are you?	عفوًا، من حضرتك؟					
+ur_w_kaun#ex2	example	1	تمہارا دوست کون ہے؟		Who is your friend?	من صديقك؟					
+ur_w_kahan	word	1	کہاں	kahā̃	where	أين					
+ur_w_kahan#ex1	example	1	آپ کہاں رہتے ہیں؟		Where do you live?	أين تسكن؟					
+ur_w_kahan#ex2	example	1	اسٹیشن کہاں ہے، آپ جانتے ہیں؟		Do you know where the station is?	هل تعرف أين المحطة؟					
+ur_w_kab	word	1	کب	kab	when	متى					
+ur_w_kab#ex1	example	1	آپ کب آئیں گے؟		When will you come?	متى ستأتي؟					
+ur_w_kab#ex2	example	1	آپ کا امتحان کب ہے؟		When is your exam?	متى امتحانك؟					
+ur_w_kaise	word	1	کیسے	kaise	how	كيف					
+ur_w_kaise#ex1	example	1	میں ہوائی اڈے کیسے جاؤں؟		How do I get to the airport?	كيف أذهب إلى المطار؟					
+ur_w_kaise#ex2	example	1	یہ کھانا کیسا ہے؟		How is this food?	كيف هذا الطعام؟					
+ur_w_kyon	word	1	کیوں	kyõ	why	لماذا					
+ur_w_kyon#ex1	example	1	تم کل کیوں نہیں آئے؟		Why didn't you come yesterday?	لماذا لم تأتِ أمس؟					
+ur_w_kyon#ex2	example	1	آپ اردو کیوں سیکھ رہے ہیں؟		Why are you learning Urdu?	لماذا تتعلم الأردية؟					
+ur_w_kitna	word	1	کتنا	kitnā	how much, how many	كم					
+ur_w_kitna#ex1	example	1	یہ کتنے کا ہے؟		How much is this?	بكم هذا؟					
+ur_w_kitna#ex2	example	1	تمہیں کتنا پانی چاہیے؟		How much water do you need?	كم من الماء تحتاج؟					
+ur_w_koi	word	1	کوئی	koī	someone; any	أحد؛ أيّ					
+ur_w_koi#ex1	example	1	کیا یہاں کوئی ہوٹل ہے؟		Is there a hotel here?	هل يوجد فندق هنا؟					
+ur_w_koi#ex2	example	1	دروازے پر کوئی ہے۔		There's someone at the door.	هناك أحد عند الباب.					
+ur_w_kuchh	word	1	کچھ	kuchh	something; some	شيء؛ بعض					
+ur_w_kuchh#ex1	example	1	مجھے کچھ پانی چاہیے۔		I need some water.	أحتاج إلى بعض الماء.					
+ur_w_kuchh#ex2	example	1	کیا آپ کچھ کھائیں گے؟		Will you eat something?	هل ستأكل شيئًا؟					
+ur_w_sab	word	1	سب	sab	all, everyone	كل، الجميع					
+ur_w_sab#ex1	example	1	سب کچھ ٹھیک ہے۔		Everything is fine.	كل شيء بخير.					
+ur_w_sab#ex2	example	1	ہم سب دوست ہیں۔		We are all friends.	كلنا أصدقاء.					
+ur_w_har	word	1	ہر	har	every	كل					
+ur_w_har#ex1	example	1	میں ہر صبح چائے پیتا ہوں۔		I drink tea every morning.	أشرب الشاي كل صباح.					
+ur_w_har#ex2	example	1	ہر کمرے میں ایک کھڑکی ہے۔		Every room has a window.	في كل غرفة نافذة.					
+ur_w_apna	word	1	اپنا	apnā	one's own	خاصّته، نفسه					
+ur_w_apna#ex1	example	1	اپنا بیگ یہاں رکھیں۔		Put your bag here.	ضع حقيبتك هنا.					
+ur_w_apna#ex2	example	1	ہر کوئی اپنا کام کرے۔		Everyone should do their own work.	ليقم كل واحد بعمله.					
+ur_w_mera	word	1	میرا	merā	my	لي، ـي					
+ur_w_mera#ex1	example	1	میرا گھر یہاں سے قریب ہے۔		My house is near here.	بيتي قريب من هنا.					
+ur_w_mera#ex2	example	1	میرا فون نیا ہے۔		My phone is new.	هاتفي جديد.					
+ur_w_tumhara	word	1	تمہارا	tumhārā	your (familiar)	لك، ـك					
+ur_w_tumhara#ex1	example	1	تمہارا گھر کہاں ہے؟		Where is your house?	أين بيتك؟					
+ur_w_tumhara#ex2	example	1	تمہاری کتاب میز پر ہے۔		Your book is on the table.	كتابك على الطاولة.					
+ur_w_hamara	word	1	ہمارا	hamārā	our	لنا، ـنا					
+ur_w_hamara#ex1	example	1	ہمارا شہر بہت خوبصورت ہے۔		Our city is very beautiful.	مدينتنا جميلة جدًا.					
+ur_w_hamara#ex2	example	1	ہماری دکان بازار میں ہے۔		Our shop is in the market.	دكاننا في السوق.					
+ur_w_lekin	word	1	لیکن	lekin	but	لكن					
+ur_w_lekin#ex1	example	1	گھر چھوٹا ہے لیکن خوبصورت ہے۔		The house is small but beautiful.	البيت صغير لكنه جميل.					
+ur_w_lekin#ex2	example	1	میں آنا چاہتا ہوں لیکن وقت نہیں ہے۔		I want to come but there's no time.	أريد أن آتي لكن لا يوجد وقت.					
+ur_w_ya	word	1	یا	yā	or	أو					
+ur_w_ya#ex1	example	1	آپ کھانا کھائیں گے یا نہیں؟		Will you eat or not?	هل ستأكل أم لا؟					
+ur_w_ya#ex2	example	1	ہم بس یا ٹرین سے جا سکتے ہیں۔		We can go by bus or by train.	يمكننا أن نذهب بالحافلة أو بالقطار.					
+ur_w_kyonke	word	1	کیونکہ	kyõ-ke	because	لأنّ					
+ur_w_kyonke#ex1	example	1	میں آج نہیں آیا کیونکہ میں بیمار تھا۔		I didn't come today because I was ill.	لم آتِ اليوم لأنني كنت مريضًا.					
+ur_w_kyonke#ex2	example	1	میں پانی پی رہا ہوں کیونکہ بہت گرمی ہے۔		I'm drinking water because it's very hot.	أشرب الماء لأن الجو حار جدًا.					
+ur_w_agar	word	1	اگر	agar	if	إذا، إن					
+ur_w_agar#ex1	example	1	اگر آپ کے پاس وقت ہے تو آئیے۔		If you have time, please come.	إن كان لديك وقت فتفضّل.					
+ur_w_agar#ex2	example	1	اگر تم تھکے ہو تو سو جاؤ۔		If you're tired, go to sleep.	إذا كنت متعبًا فنم.					
+ur_w_jab	word	1	جب	jab	when (not a question)	عندما					
+ur_w_jab#ex1	example	1	جب میں گھر پہنچا تو امی سو رہی تھیں۔		When I got home, Mum was sleeping.	عندما وصلت إلى البيت كانت أمي نائمة.					
+ur_w_jab#ex2	example	1	جب بارش ہوتی ہے تو میں گھر پر رہتا ہوں۔		When it rains, I stay at home.	عندما تمطر أبقى في البيت.					
+ur_w_saath	word	1	ساتھ	sāth	with, together	مع					
+ur_w_saath#ex1	example	1	میں ابو کے ساتھ بازار گیا۔		I went to the market with Dad.	ذهبت إلى السوق مع أبي.					
+ur_w_saath#ex2	example	1	وہ اپنی بہن کے ساتھ رہتی ہے۔		She lives with her sister.	تسكن مع أختها.					
+ur_w_liye	word	1	لیے	liye	for (کے لیے)	من أجل					
+ur_w_liye#ex1	example	1	یہ دودھ بچوں کے لیے ہے۔		This milk is for the children.	هذا الحليب للأطفال.					
+ur_w_liye#ex2	example	1	یہ قلم میرے لیے ہے۔		This pen is for me.	هذا القلم لي.					
+ur_w_tak	word	1	تک	tak	until, up to	حتى، إلى					
+ur_w_tak#ex1	example	1	میں شام تک کام کرتا ہوں۔		I work until the evening.	أعمل حتى المساء.					
+ur_w_tak#ex2	example	1	میں رات تک پڑھتا رہا۔		I kept studying until night.	ظللت أدرس حتى الليل.					
+ur_w_paas	word	1	پاس	pās	near; (to) have	قرب؛ عند					
+ur_w_paas#ex1	example	1	میرے پاس گاڑی نہیں ہے۔		I don't have a car.	ليس عندي سيارة.					
+ur_w_paas#ex2	example	1	ہوٹل اسٹیشن کے پاس ہے۔		The hotel is near the station.	الفندق قرب المحطة.					
+ur_w_baad	word	1	بعد	baad	after	بعد					
+ur_w_baad#ex1	example	1	کھانے کے بعد ہم چائے پیتے ہیں۔		We drink tea after the meal.	نشرب الشاي بعد الأكل.					
+ur_w_baad#ex2	example	1	دو گھنٹے بعد فلم ختم ہوئی۔		The film ended two hours later.	انتهى الفيلم بعد ساعتين.					
+ur_w_pehle	word	1	پہلے	pehle	before; first	قبل؛ أولًا					
+ur_w_pehle#ex1	example	1	میں سونے سے پہلے پڑھتا ہوں۔		I read before sleeping.	أقرأ قبل النوم.					
+ur_w_pehle#ex2	example	1	میں پہلے کبھی کراچی نہیں گیا۔		I've never been to Karachi before.	لم أذهب إلى كراتشي من قبل.					
+ur_w_ab	word	1	اب	ab	now	الآن					
+ur_w_ab#ex1	example	1	اب میں جا رہا ہوں۔		I'm going now.	أنا ذاهب الآن.					
+ur_w_ab#ex2	example	1	اب موسم ٹھیک ہے۔		The weather is fine now.	الطقس جيد الآن.					
+ur_w_abhi	word	1	ابھی	abhī	right now	الآن حالًا					
+ur_w_abhi#ex1	example	1	میں ابھی آتا ہوں۔		I'm coming right now.	أنا قادم حالًا.					
+ur_w_abhi#ex2	example	1	وہ ابھی سو رہا ہے۔		He is sleeping right now.	هو نائم الآن.					
+ur_w_aaj	word	1	آج	āj	today	اليوم					
+ur_w_aaj#ex1	example	1	آج موسم بہت اچھا ہے۔		The weather is very nice today.	الطقس جميل جدًا اليوم.					
+ur_w_aaj#ex2	example	1	آج میں گھر پر ہوں۔		I'm at home today.	أنا في البيت اليوم.					
+ur_w_kal	word	1	کل	kal	tomorrow; yesterday	غدًا؛ أمس					
+ur_w_kal#ex1	example	1	کل ہم لاہور جائیں گے۔		Tomorrow we'll go to Lahore.	سنذهب غدًا إلى لاهور.					
+ur_w_kal#ex2	example	1	کل میں بازار گیا تھا۔		Yesterday I went to the market.	ذهبت أمس إلى السوق.					
+ur_w_hamesha	word	1	ہمیشہ	hamesha	always	دائمًا					
+ur_w_hamesha#ex1	example	1	امی ہمیشہ جلدی اٹھتی ہیں۔		Mum always gets up early.	أمي تستيقظ دائمًا مبكرًا.					
+ur_w_hamesha#ex2	example	1	میں ہمیشہ چائے پیتا ہوں۔		I always drink tea.	أشرب الشاي دائمًا.					
+ur_w_kabhi	word	1	کبھی	kabhī	sometimes; ever	أحيانًا؛ قطّ					
+ur_w_kabhi#ex1	example	1	کبھی کبھی ہم ہوٹل میں کھانا کھاتے ہیں۔		Sometimes we eat at a restaurant.	أحيانًا نأكل في مطعم.					
+ur_w_kabhi#ex2	example	1	کیا آپ کبھی پاکستان گئے ہیں؟		Have you ever been to Pakistan?	هل ذهبت إلى باكستان من قبل؟					
+ur_w_roz	word	1	روز	roz	every day	كل يوم					
+ur_w_roz#ex1	example	1	میں روز صبح دودھ پیتا ہوں۔		I drink milk every morning.	أشرب الحليب كل صباح.					
+ur_w_roz#ex2	example	1	وہ روز دفتر جاتی ہے۔		She goes to the office every day.	تذهب إلى المكتب كل يوم.					
+ur_w_bahut	word	1	بہت	bahut	very; a lot	جدًا؛ كثيرًا					
+ur_w_bahut#ex1	example	1	آج بہت گرمی ہے۔		It's very hot today.	الجو حار جدًا اليوم.					
+ur_w_bahut#ex2	example	1	یہ شہر بہت بڑا ہے۔		This city is very big.	هذه المدينة كبيرة جدًا.					
+ur_w_sirf	word	1	صرف	sirf	only	فقط					
+ur_w_sirf#ex1	example	1	مجھے صرف پانی چاہیے۔		I only need water.	أحتاج إلى الماء فقط.					
+ur_w_sirf#ex2	example	1	میں صرف اردو بولتا ہوں۔		I only speak Urdu.	أتكلم الأردية فقط.					
+ur_w_yahan	word	1	یہاں	yahā̃	here	هنا					
+ur_w_yahan#ex1	example	1	یہاں آئیے اور بیٹھیے۔		Come here and sit down.	تفضّل إلى هنا واجلس.					
+ur_w_yahan#ex2	example	1	یہاں بہت گرمی ہے۔		It's very hot here.	الجو حار جدًا هنا.					
+ur_w_wahan	word	1	وہاں	wahā̃	there	هناك					
+ur_w_wahan#ex1	example	1	وہاں ایک بڑا بازار ہے۔		There's a big market there.	هناك سوق كبير.					
+ur_w_wahan#ex2	example	1	ہم وہاں بس سے جائیں گے۔		We'll go there by bus.	سنذهب إلى هناك بالحافلة.					
+ur_w_bahar	word	1	باہر	bāhar	outside	خارجًا					
+ur_w_bahar#ex1	example	1	میں باہر جا رہا ہوں۔		I'm going out.	أنا خارج.					
+ur_w_bahar#ex2	example	1	وہ باہر انتظار کر رہا ہے۔		He is waiting outside.	هو ينتظر في الخارج.					
+ur_w_jaldi	word	1	جلدی	jaldī	quickly; early	بسرعة؛ مبكرًا					
+ur_w_jaldi#ex1	example	1	جلدی آؤ، ٹرین آ رہی ہے۔		Come quickly, the train is coming.	تعال بسرعة، القطار قادم.					
+ur_w_jaldi#ex2	example	1	مجھے جلدی گھر جانا ہے۔		I have to go home early.	يجب أن أعود إلى البيت مبكرًا.					
+ur_w_shayad	word	1	شاید	shāyad	maybe	ربما					
+ur_w_shayad#ex1	example	1	شاید کل بارش ہو۔		Maybe it will rain tomorrow.	ربما تمطر غدًا.					
+ur_w_shayad#ex2	example	1	شاید وہ گھر پر نہیں ہے۔		Maybe he isn't at home.	ربما ليس في البيت.					
+ur_w_phir	word	1	پھر	phir	then; again	ثم؛ مرة أخرى					
+ur_w_phir#ex1	example	1	خدا حافظ، پھر ملیں گے۔		Goodbye, we'll meet again.	مع السلامة، سنلتقي مرة أخرى.					
+ur_w_phir#ex2	example	1	پہلے کھانا کھاؤ، پھر پڑھو۔		First eat, then study.	كُل أولًا ثم ادرس.					
+ur_w_theek	word	1	ٹھیک	ṭhīk	fine, all right	بخير، حسنًا					
+ur_w_theek#ex1	example	1	کیا سب ٹھیک ہے؟		Is everything all right?	هل كل شيء على ما يرام؟					
+ur_w_theek#ex2	example	1	ٹھیک ہے، کل ملتے ہیں۔		OK, see you tomorrow.	حسنًا، نلتقي غدًا.					
+ur_w_ga	word	1	گا	gā	will (future marker)	علامة المستقبل					
+ur_w_ga#ex1	example	1	میں کل آؤں گا۔		I'll come tomorrow.	سآتي غدًا.					
+ur_w_ga#ex2	example	1	وہ شام کو فون کرے گی۔		She'll call in the evening.	ستتصل في المساء.					
+ur_w_haan	word	1	ہاں	hā̃	yes	نعم					
+ur_w_haan#ex1	example	1	ہاں، میں طالب علم ہوں۔		Yes, I'm a student.	نعم، أنا طالب.					
+ur_w_haan#ex2	example	1	ہاں، مجھے چائے چاہیے۔		Yes, I'd like tea.	نعم، أريد شايًا.					
+ur_w_ji	word	1	جی	jī	yes (polite); respectful particle	نعم (بأدب)					
+ur_w_ji#ex1	example	1	جی، میں سمجھ گیا۔		Yes, I understood.	نعم، فهمت.					
+ur_w_ji#ex2	example	1	جی ہاں، یہ میرا بیگ ہے۔		Yes, this is my bag.	نعم، هذه حقيبتي.					
+ur_w_shukriya	word	1	شکریہ	shukriya	thank you	شكرًا					
+ur_w_shukriya#ex1	example	1	شکریہ، آپ بہت اچھے ہیں۔		Thank you, you're very kind.	شكرًا، أنت لطيف جدًا.					
+ur_w_shukriya#ex2	example	1	شکریہ، میں ٹھیک ہوں۔		Thanks, I'm fine.	شكرًا، أنا بخير.					
+ur_w_salam	word	1	السلام علیکم	as-salām-o-alaikum	peace be upon you (hello)	السلام عليكم					
+ur_w_salam#ex1	example	1	السلام علیکم، آپ کیسے ہیں؟		Peace be upon you, how are you?	السلام عليكم، كيف حالك؟					
+ur_w_salam#ex2	example	1	السلام علیکم، میرا نام احمد ہے۔		Peace be upon you, my name is Ahmed.	السلام عليكم، اسمي أحمد.					
+ur_w_khuda_hafiz	word	1	خدا حافظ	khudā hāfiz	goodbye	مع السلامة					
+ur_w_khuda_hafiz#ex1	example	1	خدا حافظ، کل ملیں گے۔		Goodbye, see you tomorrow.	مع السلامة، نلتقي غدًا.					
+ur_w_khuda_hafiz#ex2	example	1	اس نے خدا حافظ کہا اور چلا گیا۔		He said goodbye and left.	قال مع السلامة وذهب.					
+ur_w_subah_bakhair	word	1	صبح بخیر	subah bakhair	good morning	صباح الخير					
+ur_w_subah_bakhair#ex1	example	1	صبح بخیر، آج موسم اچھا ہے۔		Good morning, the weather is nice today.	صباح الخير، الطقس جميل اليوم.					
+ur_w_subah_bakhair#ex2	example	1	صبح بخیر، کیا آپ نے ناشتہ کیا؟		Good morning, have you had breakfast?	صباح الخير، هل تناولت الفطور؟					
+ur_w_maaf	word	1	معاف	maaf	forgiven (معاف کیجیے: sorry, excuse me)	معفوّ عنه (معذرةً)					
+ur_w_maaf#ex1	example	1	معاف کیجیے، میں سمجھا نہیں۔		Sorry, I didn't understand.	عفوًا، لم أفهم.					
+ur_w_maaf#ex2	example	1	معاف کیجیے، اسٹیشن کہاں ہے؟		Excuse me, where is the station?	عفوًا، أين المحطة؟					
+ur_w_koi_baat	word	1	کوئی بات نہیں	koī bāt nahī̃	never mind, no problem	لا بأس					
+ur_w_koi_baat#ex1	example	1	کوئی بات نہیں، کل ملیں گے۔		Never mind, we'll meet tomorrow.	لا بأس، نلتقي غدًا.					
+ur_w_koi_baat#ex2	example	1	معاف کیجیے! کوئی بات نہیں۔		Sorry! — Never mind.	عفوًا! — لا بأس.					
+ur_w_hona	word	1	ہونا	honā	to be, to happen	يكون، يحدث					
+ur_w_hona#ex1	example	1	کل اسکول میں کیا ہوا؟		What happened at school yesterday?	ماذا حدث في المدرسة أمس؟					
+ur_w_hona#ex2	example	1	یہ سب کیسے ہوا؟		How did all this happen?	كيف حدث كل هذا؟					
+ur_w_karna	word	1	کرنا	karnā	to do	يفعل					
+ur_w_karna#ex1	example	1	تم آج کیا کر رہے ہو؟		What are you doing today?	ماذا تفعل اليوم؟					
+ur_w_karna#ex2	example	1	تم نے کیا کیا؟		What did you do?	ماذا فعلت؟					
+ur_w_jana	word	1	جانا	jānā	to go	يذهب					
+ur_w_jana#ex1	example	1	وہ دفتر جا رہا ہے۔		He is going to the office.	هو ذاهب إلى المكتب.					
+ur_w_jana#ex2	example	1	وہ کل بازار گئی۔		She went to the market yesterday.	ذهبت إلى السوق أمس.					
+ur_w_aana	word	1	آنا	ānā	to come	يأتي					
+ur_w_aana#ex1	example	1	وہ کل ہمارے گھر آیا۔		He came to our house yesterday.	جاء إلى بيتنا أمس.					
+ur_w_aana#ex2	example	1	یہاں آؤ اور بیٹھو۔		Come here and sit.	تعال إلى هنا واجلس.					
+ur_w_dena	word	1	دینا	denā	to give	يعطي					
+ur_w_dena#ex1	example	1	مجھے یہ کتاب دیں۔		Please give me this book.	أعطني هذا الكتاب.					
+ur_w_dena#ex2	example	1	ابو نے مجھے پیسے دیے۔		Dad gave me money.	أعطاني أبي مالًا.					
+ur_w_lena	word	1	لینا	lenā	to take	يأخذ					
+ur_w_lena#ex1	example	1	یہ کتاب لے لو۔		Take this book.	خذ هذا الكتاب.					
+ur_w_lena#ex2	example	1	اس نے میری کتاب لی۔		She took my book.	أخذت كتابي.					
+ur_w_kehna	word	1	کہنا	kehnā	to say	يقول					
+ur_w_kehna#ex1	example	1	آپ نے کیا کہا؟		What did you say?	ماذا قلت؟					
+ur_w_kehna#ex2	example	1	امی کہتی ہیں کہ جلدی سو جاؤ۔		Mum says go to sleep early.	تقول أمي: نم مبكرًا.					
+ur_w_bolna	word	1	بولنا	bolnā	to speak	يتكلم					
+ur_w_bolna#ex1	example	1	ہم گھر پر اردو بولتے ہیں۔		We speak Urdu at home.	نتكلم الأردية في البيت.					
+ur_w_bolna#ex2	example	1	بچہ ابھی نہیں بولتا۔		The child doesn't talk yet.	الطفل لا يتكلم بعد.					
+ur_w_dekhna	word	1	دیکھنا	dekhnā	to see, to look	يرى، ينظر					
+ur_w_dekhna#ex1	example	1	یہ تصویر دیکھو، بہت خوبصورت ہے۔		Look at this picture, it's very beautiful.	انظر إلى هذه الصورة، إنها جميلة جدًا.					
+ur_w_dekhna#ex2	example	1	میں نے اسے بازار میں دیکھا۔		I saw him at the market.	رأيته في السوق.					
+ur_w_sunna	word	1	سننا	sunnā	to hear, to listen	يسمع					
+ur_w_sunna#ex1	example	1	آپ میری بات سن رہے ہیں؟		Are you listening to me?	هل تستمع إليّ؟					
+ur_w_sunna#ex2	example	1	میں نے امی سے سنا۔		I heard it from Mum.	سمعت ذلك من أمي.					
+ur_w_jaanna	word	1	جاننا	jānnā	to know	يعرف					
+ur_w_jaanna#ex1	example	1	میں اسے نہیں جانتا۔		I don't know him.	لا أعرفه.					
+ur_w_jaanna#ex2	example	1	کیا آپ اس جگہ کو جانتے ہیں؟		Do you know this place?	هل تعرف هذا المكان؟					
+ur_w_samajhna	word	1	سمجھنا	samajhnā	to understand	يفهم					
+ur_w_samajhna#ex1	example	1	کیا آپ سمجھ گئے؟		Did you understand?	هل فهمت؟					
+ur_w_samajhna#ex2	example	1	مجھے یہ سوال سمجھ نہیں آیا۔		I didn't understand this question.	لم أفهم هذا السؤال.					
+ur_w_chahna	word	1	چاہنا	chāhnā	to want	يريد					
+ur_w_chahna#ex1	example	1	میں ایک نئی گاڑی خریدنا چاہتا ہوں۔		I want to buy a new car.	أريد أن أشتري سيارة جديدة.					
+ur_w_chahna#ex2	example	1	وہ کیا چاہتی ہے؟		What does she want?	ماذا تريد؟					
+ur_w_chahiye	word	1	چاہیے	chāhiye	should; is needed	ينبغي؛ يلزم					
+ur_w_chahiye#ex1	example	1	تمہیں ڈاکٹر کے پاس جانا چاہیے۔		You should go to the doctor.	ينبغي أن تذهب إلى الطبيب.					
+ur_w_chahiye#ex2	example	1	ہمیں جلدی جانا چاہیے۔		We should go early.	ينبغي أن نذهب مبكرًا.					
+ur_w_khana	word	1	کھانا	khānā	to eat	يأكل					
+ur_w_khana#ex1	example	1	کیا آپ گوشت کھاتے ہیں؟		Do you eat meat?	هل تأكل اللحم؟					
+ur_w_khana#ex2	example	1	میں نے ناشتے میں انڈا کھایا۔		I had an egg for breakfast.	أكلت بيضة في الفطور.					
+ur_w_peena	word	1	پینا	pīnā	to drink	يشرب					
+ur_w_peena#ex1	example	1	کیا آپ کافی پئیں گے؟		Will you have some coffee?	هل ستشرب قهوة؟					
+ur_w_peena#ex2	example	1	ہم نے چائے پی اور باتیں کیں۔		We drank tea and chatted.	شربنا الشاي وتحدثنا.					
+ur_w_parhna	word	1	پڑھنا	paṛhnā	to read; to study	يقرأ؛ يدرس					
+ur_w_parhna#ex1	example	1	میں روز اردو پڑھتا ہوں۔		I study Urdu every day.	أدرس الأردية كل يوم.					
+ur_w_parhna#ex2	example	1	میری بہن اسکول میں پڑھتی ہے۔		My sister studies at school.	أختي تدرس في المدرسة.					
+ur_w_likhna	word	1	لکھنا	likhnā	to write	يكتب					
+ur_w_likhna#ex1	example	1	یہاں اپنا نام لکھیں۔		Write your name here.	اكتب اسمك هنا.					
+ur_w_likhna#ex2	example	1	اس لفظ کو کیسے لکھتے ہیں؟		How do you write this word?	كيف تُكتب هذه الكلمة؟					
+ur_w_baithna	word	1	بیٹھنا	baiṭhnā	to sit	يجلس					
+ur_w_baithna#ex1	example	1	آئیے، اس کرسی پر بیٹھیے۔		Come, sit on this chair.	تفضّل، اجلس على هذا الكرسي.					
+ur_w_baithna#ex2	example	1	ہم ہوٹل میں ایک گھنٹہ بیٹھے۔		We sat in the restaurant for an hour.	جلسنا في المطعم ساعة.					
+ur_w_uthna	word	1	اٹھنا	uṭhnā	to get up	ينهض					
+ur_w_uthna#ex1	example	1	میں صبح جلدی اٹھتا ہوں۔		I get up early in the morning.	أستيقظ مبكرًا في الصباح.					
+ur_w_uthna#ex2	example	1	وہ کرسی سے اٹھا اور چلا گیا۔		He got up from the chair and left.	نهض من الكرسي وذهب.					
+ur_w_sona	word	1	سونا	sonā	to sleep	ينام					
+ur_w_sona#ex1	example	1	بچہ سو رہا ہے۔		The child is sleeping.	الطفل نائم.					
+ur_w_sona#ex2	example	1	تم کتنے بجے سوتے ہو؟		What time do you go to sleep?	في أي ساعة تنام؟					
+ur_w_jaagna	word	1	جاگنا	jāgnā	to wake up, to be awake	يستيقظ					
+ur_w_jaagna#ex1	example	1	بچہ رات کو جاگ گیا۔		The child woke up in the night.	استيقظ الطفل في الليل.					
+ur_w_jaagna#ex2	example	1	تم کتنے بجے جاگتے ہو؟		What time do you wake up?	في أي ساعة تستيقظ؟					
+ur_w_rehna	word	1	رہنا	rehnā	to live, to stay	يسكن، يبقى					
+ur_w_rehna#ex1	example	1	میں لاہور میں رہتا ہوں۔		I live in Lahore.	أسكن في لاهور.					
+ur_w_rehna#ex2	example	1	ہم ہوٹل میں دو دن رہے۔		We stayed at the hotel for two days.	بقينا في الفندق يومين.					
+ur_w_sakna	word	1	سکنا	saknā	can, to be able	يستطيع					
+ur_w_sakna#ex1	example	1	کیا میں یہاں بیٹھ سکتا ہوں؟		May I sit here?	هل يمكنني الجلوس هنا؟					
+ur_w_sakna#ex2	example	1	میں اردو بول سکتی ہوں۔		I can speak Urdu.	أستطيع أن أتكلم الأردية.					
+ur_w_milna	word	1	ملنا	milnā	to meet; to get	يلتقي؛ يحصل على					
+ur_w_milna#ex1	example	1	میں کل اپنے دوست سے ملا۔		I met my friend yesterday.	قابلت صديقي أمس.					
+ur_w_milna#ex2	example	1	آپ سے کل ملیں گے۔		We'll meet you tomorrow.	سنلقاك غدًا.					
+ur_w_rakhna	word	1	رکھنا	rakhnā	to put, to keep	يضع؛ يحتفظ					
+ur_w_rakhna#ex1	example	1	کتاب میز پر رکھ دو۔		Put the book on the table.	ضع الكتاب على الطاولة.					
+ur_w_rakhna#ex2	example	1	اپنی کتابیں یہاں رکھو۔		Put your books here.	ضع كتبك هنا.					
+ur_w_kholna	word	1	کھولنا	kholnā	to open	يفتح					
+ur_w_kholna#ex1	example	1	میں نے کھڑکی کھولی۔		I opened the window.	فتحت النافذة.					
+ur_w_kholna#ex2	example	1	اس نے بیگ کھولا۔		He opened the bag.	فتح الحقيبة.					
+ur_w_kharidna	word	1	خریدنا	kharīdnā	to buy	يشتري					
+ur_w_kharidna#ex1	example	1	میں نے نیا فون خریدا۔		I bought a new phone.	اشتريت هاتفًا جديدًا.					
+ur_w_kharidna#ex2	example	1	آپ کیا خریدنا چاہتے ہیں؟		What do you want to buy?	ماذا تريد أن تشتري؟					
+ur_w_bechna	word	1	بیچنا	bechnā	to sell	يبيع					
+ur_w_bechna#ex1	example	1	وہ اپنا گھر بیچ رہا ہے۔		He is selling his house.	هو يبيع بيته.					
+ur_w_bechna#ex2	example	1	ابو نے اپنی پرانی گاڑی بیچ دی۔		Dad sold his old car.	باع أبي سيارته القديمة.					
+ur_w_chalna	word	1	چلنا	chalnā	to walk, to go	يمشي، يذهب					
+ur_w_chalna#ex1	example	1	کیا آپ میرے ساتھ چلیں گے؟		Will you come with me?	هل ستأتي معي؟					
+ur_w_chalna#ex2	example	1	چلو، اب گھر چلتے ہیں۔		Come on, let's go home now.	هيا، لنذهب إلى البيت الآن.					
+ur_w_daurna	word	1	دوڑنا	dauṛnā	to run	يركض					
+ur_w_daurna#ex1	example	1	وہ بہت تیز دوڑتا ہے۔		He runs very fast.	يركض بسرعة كبيرة.					
+ur_w_daurna#ex2	example	1	وہ دوڑ کر آیا۔		He came running.	جاء راكضًا.					
+ur_w_khelna	word	1	کھیلنا	khelnā	to play	يلعب					
+ur_w_khelna#ex1	example	1	ہم شام کو کھیلتے ہیں۔		We play in the evening.	نلعب في المساء.					
+ur_w_khelna#ex2	example	1	کیا تم میرے ساتھ کھیلو گے؟		Will you play with me?	هل ستلعب معي؟					
+ur_w_pehenna	word	1	پہننا	pehennā	to wear, to put on	يلبس					
+ur_w_pehenna#ex1	example	1	آج تم نے کیا پہنا ہے؟		What are you wearing today?	ماذا تلبس اليوم؟					
+ur_w_pehenna#ex2	example	1	میں نے نئے جوتے پہنے۔		I put on new shoes.	لبست حذاءً جديدًا.					
+ur_w_dhona	word	1	دھونا	dhonā	to wash	يغسل					
+ur_w_dhona#ex1	example	1	کھانے سے پہلے ہاتھ دھو لو۔		Wash your hands before eating.	اغسل يديك قبل الأكل.					
+ur_w_dhona#ex2	example	1	میں نے اپنی گاڑی دھوئی۔		I washed my car.	غسلت سيارتي.					
+ur_w_pakana	word	1	پکانا	pakānā	to cook	يطبخ					
+ur_w_pakana#ex1	example	1	ہماری امی اچھا کھانا پکاتی ہیں۔		Our mum cooks good food.	أمنا تطبخ طعامًا جيدًا.					
+ur_w_pakana#ex2	example	1	آج رات میں چاول پکاؤں گا۔		I'll cook rice tonight.	سأطبخ الأرز الليلة.					
+ur_w_lana	word	1	لانا	lānā	to bring	يُحضر					
+ur_w_lana#ex1	example	1	میرے لیے پانی لاؤ۔		Bring me some water.	أحضر لي ماءً.					
+ur_w_lana#ex2	example	1	کل اپنی کتاب لانا۔		Bring your book tomorrow.	أحضر كتابك غدًا.					
+ur_w_bhejna	word	1	بھیجنا	bhejnā	to send	يرسل					
+ur_w_bhejna#ex1	example	1	میں نے دوست کو پیسے بھیجے۔		I sent money to a friend.	أرسلت مالًا إلى صديق.					
+ur_w_bhejna#ex2	example	1	مجھے پیسے بھیج دو۔		Send me the money.	أرسل لي المال.					
+ur_w_dhoondhna	word	1	ڈھونڈنا	ḍhūnḍhnā	to look for	يبحث عن					
+ur_w_dhoondhna#ex1	example	1	میں اپنی چابی ڈھونڈ رہا ہوں۔		I'm looking for my key.	أبحث عن مفتاحي.					
+ur_w_dhoondhna#ex2	example	1	ہمیں ایک سستا ہوٹل ڈھونڈنا ہے۔		We have to find a cheap hotel.	علينا أن نجد فندقًا رخيصًا.					
+ur_w_bhoolna	word	1	بھولنا	bhūlnā	to forget	ينسى					
+ur_w_bhoolna#ex1	example	1	وہ اپنی کتاب بھول گیا۔		He forgot his book.	نسي كتابه.					
+ur_w_bhoolna#ex2	example	1	میں آپ کا نام بھول گیا۔		I forgot your name.	نسيت اسمك.					
+ur_w_sochna	word	1	سوچنا	sochnā	to think	يفكّر					
+ur_w_sochna#ex1	example	1	آپ کیا سوچ رہے ہیں؟		What are you thinking?	بماذا تفكّر؟					
+ur_w_sochna#ex2	example	1	میں سوچتا ہوں کہ یہ ٹھیک ہے۔		I think this is right.	أظن أن هذا صحيح.					
+ur_w_poochhna	word	1	پوچھنا	pūchhnā	to ask	يسأل					
+ur_w_poochhna#ex1	example	1	اس نے راستہ پوچھا۔		He asked the way.	سأل عن الطريق.					
+ur_w_poochhna#ex2	example	1	اس نے میرا نام پوچھا۔		She asked my name.	سألت عن اسمي.					
+ur_w_batana	word	1	بتانا	batānā	to tell	يخبر					
+ur_w_batana#ex1	example	1	مجھے اپنا نام بتائیے۔		Tell me your name.	أخبرني باسمك.					
+ur_w_batana#ex2	example	1	اس نے مجھے سب کچھ بتایا۔		He told me everything.	أخبرني بكل شيء.					
+ur_w_seekhna	word	1	سیکھنا	sīkhnā	to learn	يتعلّم					
+ur_w_seekhna#ex1	example	1	میں نئی چیزیں سیکھنا چاہتا ہوں۔		I want to learn new things.	أريد أن أتعلم أشياء جديدة.					
+ur_w_seekhna#ex2	example	1	بچے اسکول میں بہت کچھ سیکھتے ہیں۔		Children learn a lot at school.	يتعلم الأطفال الكثير في المدرسة.					
+ur_w_pahunchna	word	1	پہنچنا	pahunchnā	to arrive, to reach	يصل					
+ur_w_pahunchna#ex1	example	1	ٹرین کب پہنچے گی؟		When will the train arrive?	متى سيصل القطار؟					
+ur_w_pahunchna#ex2	example	1	ہم وقت پر پہنچ گئے۔		We arrived on time.	وصلنا في الوقت المحدد.					
+ur_w_nikalna	word	1	نکلنا	nikalnā	to go out, to leave	يخرج					
+ur_w_nikalna#ex1	example	1	میں صبح گھر سے نکلتا ہوں۔		I leave home in the morning.	أخرج من البيت في الصباح.					
+ur_w_nikalna#ex2	example	1	وہ ابھی دفتر سے نکلا ہے۔		He has just left the office.	خرج للتوّ من المكتب.					
+ur_w_utarna	word	1	اترنا	utarnā	to get off, to go down	ينزل					
+ur_w_utarna#ex1	example	1	ہم اس اسٹیشن پر اتریں گے۔		We'll get off at this station.	سننزل في هذه المحطة.					
+ur_w_utarna#ex2	example	1	میں بس سے اترا اور گھر گیا۔		I got off the bus and went home.	نزلت من الحافلة وذهبت إلى البيت.					
+ur_w_rukna	word	1	رکنا	ruknā	to stop	يتوقف					
+ur_w_rukna#ex1	example	1	یہاں رکو، میں ابھی آتا ہوں۔		Stop here, I'll be right back.	توقف هنا، سأعود حالًا.					
+ur_w_rukna#ex2	example	1	بس یہاں نہیں رکتی۔		The bus doesn't stop here.	الحافلة لا تتوقف هنا.					
+ur_w_banana	word	1	بنانا	banānā	to make	يصنع، يُعدّ					
+ur_w_banana#ex1	example	1	امی چائے بنا رہی ہیں۔		Mum is making tea.	أمي تُعدّ الشاي.					
+ur_w_banana#ex2	example	1	ہم نے مل کر کھانا بنایا۔		We made the meal together.	أعددنا الطعام معًا.					
+ur_w_lagna	word	1	لگنا	lagnā	to seem; to take (time)	يبدو؛ يستغرق					
+ur_w_lagna#ex1	example	1	مجھے یہ شہر اچھا لگتا ہے۔		I like this city.	تعجبني هذه المدينة.					
+ur_w_lagna#ex2	example	1	یہاں سے اسٹیشن تک کتنا وقت لگتا ہے؟		How long does it take from here to the station?	كم يستغرق الوصول من هنا إلى المحطة؟					
+ur_w_tairna	word	1	تیرنا	tairnā	to swim	يسبح					
+ur_w_tairna#ex1	example	1	کیا آپ تیرنا جانتے ہیں؟		Do you know how to swim?	هل تعرف السباحة؟					
+ur_w_tairna#ex2	example	1	میں تیرنا سیکھ رہا ہوں۔		I'm learning to swim.	أتعلم السباحة.					
+ur_w_kaam	word	1	کام	kām	work	عمل					
+ur_w_kaam#ex1	example	1	میں دفتر میں کام کرتا ہوں۔		I work in an office.	أعمل في مكتب.					
+ur_w_kaam#ex2	example	1	آج میرے پاس بہت کام ہے۔		I have a lot of work today.	عندي عمل كثير اليوم.					
+ur_w_madad	word	1	مدد	madad	help	مساعدة					
+ur_w_madad#ex1	example	1	کیا آپ میری مدد کر سکتے ہیں؟		Can you help me?	هل يمكنك مساعدتي؟					
+ur_w_madad#ex2	example	1	آپ کی مدد کا بہت شکریہ۔		Thank you very much for your help.	شكرًا جزيلًا على مساعدتك.					
+ur_w_intezar	word	1	انتظار	intezār	waiting (انتظار کرنا: to wait)	انتظار					
+ur_w_intezar#ex1	example	1	میں آپ کا انتظار کر رہا ہوں۔		I'm waiting for you.	أنا أنتظرك.					
+ur_w_intezar#ex2	example	1	میں انتظار کروں گا، جلدی آؤ۔		I'll wait, come quickly.	سأنتظر، تعال بسرعة.					
+ur_w_yaad	word	1	یاد	yād	memory (یاد ہونا: to remember)	ذِكر، تذكّر					
+ur_w_yaad#ex1	example	1	مجھے آپ کا نام یاد ہے۔		I remember your name.	أتذكر اسمك.					
+ur_w_yaad#ex2	example	1	مجھے امی کی بہت یاد آتی ہے۔		I miss Mum a lot.	أشتاق إلى أمي كثيرًا.					
+ur_w_shuru	word	1	شروع	shurū	beginning (شروع کرنا: to start)	بداية					
+ur_w_shuru#ex1	example	1	کھیل شروع ہو گیا ہے۔		The game has started.	بدأت المباراة.					
+ur_w_shuru#ex2	example	1	میں نے نیا کام شروع کیا۔		I started a new job.	بدأت عملًا جديدًا.					
+ur_w_safar	word	1	سفر	safar	journey, travel	سفر					
+ur_w_safar#ex1	example	1	آپ کا سفر کیسا رہا؟		How was your trip?	كيف كانت رحلتك؟					
+ur_w_safar#ex2	example	1	مجھے سفر کرنا پسند ہے۔		I like travelling.	أحب السفر.					
+ur_w_band	word	1	بند	band	closed, shut	مغلق					
+ur_w_band#ex1	example	1	سردی ہے، دروازہ بند کرو۔		It's cold, close the door.	الجو بارد، أغلق الباب.					
+ur_w_band#ex2	example	1	آج دکان بند ہے۔		The shop is closed today.	الدكان مغلق اليوم.					
+ur_w_khatam	word	1	ختم	khatam	finished	منتهٍ					
+ur_w_khatam#ex1	example	1	میرا کام ختم ہو گیا۔		My work is finished.	انتهى عملي.					
+ur_w_khatam#ex2	example	1	کیا کھانا ختم ہو گیا؟		Has the food run out?	هل نفد الطعام؟					
+ur_w_wapas	word	1	واپس	wāpas	back (returning)	عائدًا					
+ur_w_wapas#ex1	example	1	میں دو دن بعد واپس آؤں گا۔		I'll come back in two days.	سأعود بعد يومين.					
+ur_w_wapas#ex2	example	1	وہ کب واپس آئے گا؟		When will he come back?	متى سيعود؟					
+ur_w_meharbani	word	1	مہربانی	mehrbānī	kindness (مہربانی کر کے: please)	لطف (من فضلك)					
+ur_w_meharbani#ex1	example	1	مہربانی کر کے کھڑکی کھولیں۔		Please open the window.	افتح النافذة من فضلك.					
+ur_w_meharbani#ex2	example	1	مہربانی کر کے یہاں بیٹھیے۔		Please sit here.	اجلس هنا من فضلك.					
+ur_w_ghar	word	1	گھر	ghar	house, home	بيت					
+ur_w_ghar#ex1	example	1	ہمارا گھر بہت بڑا ہے۔		Our house is very big.	بيتنا كبير جدًا.					
+ur_w_ghar#ex2	example	1	میں شام کو گھر واپس آیا۔		I came back home in the evening.	عدت إلى البيت في المساء.					
+ur_w_kamra	word	1	کمرہ	kamra	room	غرفة					
+ur_w_kamra#ex1	example	1	یہ میرے بھائی کا کمرہ ہے۔		This is my brother's room.	هذه غرفة أخي.					
+ur_w_kamra#ex2	example	1	میرا کمرہ بہت چھوٹا ہے۔		My room is very small.	غرفتي صغيرة جدًا.					
+ur_w_bawarchi_khana	word	1	باورچی خانہ	bāwarchī-khāna	kitchen	مطبخ					
+ur_w_bawarchi_khana#ex1	example	1	امی باورچی خانے میں ہیں۔		Mum is in the kitchen.	أمي في المطبخ.					
+ur_w_bawarchi_khana#ex2	example	1	باورچی خانے میں کھانا ہے۔		There's food in the kitchen.	في المطبخ طعام.					
+ur_w_darwaza	word	1	دروازہ	darwāza	door	باب					
+ur_w_darwaza#ex1	example	1	دروازہ کھولو، میں ہوں۔		Open the door, it's me.	افتح الباب، هذا أنا.					
+ur_w_darwaza#ex2	example	1	دروازے پر کون ہے؟		Who's at the door?	من عند الباب؟					
+ur_w_khirki	word	1	کھڑکی	khiṛkī	window	نافذة					
+ur_w_khirki#ex1	example	1	میرے کمرے میں دو کھڑکیاں ہیں۔		My room has two windows.	في غرفتي نافذتان.					
+ur_w_khirki#ex2	example	1	یہ کھڑکی بند نہیں ہوتی۔		This window doesn't shut.	هذه النافذة لا تُغلق.					
+ur_w_mez	word	1	میز	mez	table	طاولة					
+ur_w_mez#ex1	example	1	کتاب میز پر ہے۔		The book is on the table.	الكتاب على الطاولة.					
+ur_w_mez#ex2	example	1	دو لوگوں کے لیے میز چاہیے۔		We need a table for two.	نريد طاولة لشخصين.					
+ur_w_kursi	word	1	کرسی	kursī	chair	كرسي					
+ur_w_kursi#ex1	example	1	یہ کرسی بہت اچھی ہے۔		This chair is very good.	هذا الكرسي جيد جدًا.					
+ur_w_kursi#ex2	example	1	اس کرسی پر بیٹھو۔		Sit on this chair.	اجلس على هذا الكرسي.					
+ur_w_bistar	word	1	بستر	bistar	bed	سرير					
+ur_w_bistar#ex1	example	1	فون بستر پر ہے۔		The phone is on the bed.	الهاتف على السرير.					
+ur_w_bistar#ex2	example	1	یہ بستر بہت بڑا ہے۔		This bed is very big.	هذا السرير كبير جدًا.					
+ur_w_school	word	1	اسکول	iskūl	school	مدرسة					
+ur_w_school#ex1	example	1	میں اسکول جا رہا ہوں۔		I'm going to school.	أنا ذاهب إلى المدرسة.					
+ur_w_school#ex2	example	1	ہمارا اسکول گھر کے قریب ہے۔		Our school is near home.	مدرستنا قريبة من البيت.					
+ur_w_daftar	word	1	دفتر	daftar	office	مكتب					
+ur_w_daftar#ex1	example	1	میرا دفتر شہر میں ہے۔		My office is in the city.	مكتبي في المدينة.					
+ur_w_daftar#ex2	example	1	وہ دفتر میں بہت مصروف ہے۔		He is very busy at the office.	هو مشغول جدًا في المكتب.					
+ur_w_haspatal	word	1	ہسپتال	haspatāl	hospital	مستشفى					
+ur_w_haspatal#ex1	example	1	ابو ہسپتال میں کام کرتے ہیں۔		Dad works at a hospital.	أبي يعمل في مستشفى.					
+ur_w_haspatal#ex2	example	1	سب سے قریب ہسپتال کہاں ہے؟		Where is the nearest hospital?	أين أقرب مستشفى؟					
+ur_w_dukan	word	1	دکان	dukān	shop	دكّان					
+ur_w_dukan#ex1	example	1	یہ دکان کس کی ہے؟		Whose shop is this?	لمن هذا الدكان؟					
+ur_w_dukan#ex2	example	1	میں دکان سے دودھ لایا۔		I brought milk from the shop.	أحضرت حليبًا من الدكان.					
+ur_w_bazar	word	1	بازار	bāzār	market	سوق					
+ur_w_bazar#ex1	example	1	یہ بازار بہت پرانا ہے۔		This market is very old.	هذا السوق قديم جدًا.					
+ur_w_bazar#ex2	example	1	میں بازار سے پھل لایا۔		I brought fruit from the market.	أحضرت فاكهة من السوق.					
+ur_w_hotel	word	1	ہوٹل	hoṭal	hotel; restaurant	فندق؛ مطعم					
+ur_w_hotel#ex1	example	1	ہوٹل میں ایک کمرہ چاہیے۔		I need a room at the hotel.	أحتاج إلى غرفة في الفندق.					
+ur_w_hotel#ex2	example	1	ہمارا ہوٹل بازار میں ہے۔		Our hotel is in the market.	فندقنا في السوق.					
+ur_w_shehar	word	1	شہر	shehar	city	مدينة					
+ur_w_shehar#ex1	example	1	کراچی ایک بڑا شہر ہے۔		Karachi is a big city.	كراتشي مدينة كبيرة.					
+ur_w_shehar#ex2	example	1	شہر میں بہت گاڑیاں ہیں۔		There are many cars in the city.	في المدينة سيارات كثيرة.					
+ur_w_mulk	word	1	ملک	mulk	country	بلد					
+ur_w_mulk#ex1	example	1	پاکستان ایک بڑا ملک ہے۔		Pakistan is a big country.	باكستان بلد كبير.					
+ur_w_mulk#ex2	example	1	آپ کس ملک سے ہیں؟		Which country are you from?	من أي بلد أنت؟					
+ur_w_sarak	word	1	سڑک	saṛak	road, street	شارع، طريق					
+ur_w_sarak#ex1	example	1	یہ سڑک بہت پرانی ہے۔		This road is very old.	هذا الشارع قديم جدًا.					
+ur_w_sarak#ex2	example	1	بچے سڑک پر دوڑ رہے ہیں۔		The children are running on the street.	الأطفال يركضون في الشارع.					
+ur_w_raasta	word	1	راستہ	rāsta	way, route	طريق					
+ur_w_raasta#ex1	example	1	اسٹیشن کا راستہ کیا ہے؟		What's the way to the station?	ما الطريق إلى المحطة؟					
+ur_w_raasta#ex2	example	1	میں راستہ بھول گیا۔		I lost my way.	ضللت الطريق.					
+ur_w_station	word	1	اسٹیشن	isṭeshan	station	محطة					
+ur_w_station#ex1	example	1	اسٹیشن پر بہت لوگ ہیں۔		There are a lot of people at the station.	في المحطة ناس كثيرون.					
+ur_w_station#ex2	example	1	ہم کل اسٹیشن پر ملیں گے۔		We'll meet at the station tomorrow.	سنلتقي في المحطة غدًا.					
+ur_w_hawai_adda	word	1	ہوائی اڈہ	havāī aḍḍa	airport	مطار					
+ur_w_hawai_adda#ex1	example	1	ہوائی اڈہ کہاں ہے؟		Where is the airport?	أين المطار؟					
+ur_w_hawai_adda#ex2	example	1	ہم ہوائی اڈے پر پہنچ گئے۔		We arrived at the airport.	وصلنا إلى المطار.					
+ur_w_gaari	word	1	گاڑی	gāṛī	car; vehicle	سيارة					
+ur_w_gaari#ex1	example	1	یہ میرے بھائی کی گاڑی ہے۔		This is my brother's car.	هذه سيارة أخي.					
+ur_w_gaari#ex2	example	1	ابو گاڑی سے دفتر جاتے ہیں۔		Dad goes to the office by car.	أبي يذهب إلى المكتب بالسيارة.					
+ur_w_bas	word	1	بس	bas	bus	حافلة					
+ur_w_bas#ex1	example	1	میں بس سے اسکول جاتا ہوں۔		I go to school by bus.	أذهب إلى المدرسة بالحافلة.					
+ur_w_bas#ex2	example	1	بس کب آئے گی؟		When will the bus come?	متى ستأتي الحافلة؟					
+ur_w_train	word	1	ٹرین	ṭren	train	قطار					
+ur_w_train#ex1	example	1	ٹرین میں بہت لوگ تھے۔		There were a lot of people on the train.	كان في القطار ناس كثيرون.					
+ur_w_train#ex2	example	1	ہم ٹرین سے کراچی گئے۔		We went to Karachi by train.	ذهبنا إلى كراتشي بالقطار.					
+ur_w_jahaz	word	1	جہاز	jahāz	aeroplane; ship	طائرة؛ سفينة					
+ur_w_jahaz#ex1	example	1	جہاز کتنے بجے جائے گا؟		What time will the plane leave?	متى ستقلع الطائرة؟					
+ur_w_jahaz#ex2	example	1	جہاز ہوائی اڈے پر ہے۔		The plane is at the airport.	الطائرة في المطار.					
+ur_w_ticket	word	1	ٹکٹ	ṭikaṭ	ticket	تذكرة					
+ur_w_ticket#ex1	example	1	میں ایک ٹکٹ لوں گا۔		I'll take one ticket.	سآخذ تذكرة واحدة.					
+ur_w_ticket#ex2	example	1	ٹرین کا ٹکٹ کتنے کا ہے؟		How much is the train ticket?	بكم تذكرة القطار؟					
+ur_w_paisa	word	1	پیسہ	paisa	money (usually plural پیسے)	مال، نقود					
+ur_w_paisa#ex1	example	1	میرے پاس پیسے نہیں ہیں۔		I don't have any money.	ليس معي مال.					
+ur_w_paisa#ex2	example	1	مجھے کچھ پیسے چاہئیں۔		I need some money.	أحتاج إلى بعض المال.					
+ur_w_phone	word	1	فون	fon	telephone	هاتف					
+ur_w_phone#ex1	example	1	میں نے امی کو فون کیا۔		I called Mum.	اتصلت بأمي.					
+ur_w_phone#ex2	example	1	میرا فون کہاں ہے؟		Where is my phone?	أين هاتفي؟					
+ur_w_computer	word	1	کمپیوٹر	kampyūṭar	computer	حاسوب					
+ur_w_computer#ex1	example	1	میں کمپیوٹر پر کام کرتا ہوں۔		I work on a computer.	أعمل على الحاسوب.					
+ur_w_computer#ex2	example	1	کمپیوٹر میز پر ہے۔		The computer is on the table.	الحاسوب على الطاولة.					
+ur_w_kitab	word	1	کتاب	kitāb	book	كتاب					
+ur_w_kitab#ex1	example	1	میں روز کتاب پڑھتا ہوں۔		I read a book every day.	أقرأ كتابًا كل يوم.					
+ur_w_kitab#ex2	example	1	میری کتابیں کہاں ہیں؟		Where are my books?	أين كتبي؟					
+ur_w_qalam	word	1	قلم	qalam	pen	قلم					
+ur_w_qalam#ex1	example	1	کیا آپ کے پاس قلم ہے؟		Do you have a pen?	هل عندك قلم؟					
+ur_w_qalam#ex2	example	1	مجھے ایک نیا قلم چاہیے۔		I need a new pen.	أحتاج إلى قلم جديد.					
+ur_w_bag	word	1	بیگ	beg	bag	حقيبة					
+ur_w_bag#ex1	example	1	میرا بیگ بہت پرانا ہے۔		My bag is very old.	حقيبتي قديمة جدًا.					
+ur_w_bag#ex2	example	1	میرا بیگ کہاں ہے؟		Where is my bag?	أين حقيبتي؟					
+ur_w_chabi	word	1	چابی	chābī	key	مفتاح					
+ur_w_chabi#ex1	example	1	گھر کی چابی امی کے پاس ہے۔		Mum has the house key.	مفتاح البيت مع أمي.					
+ur_w_chabi#ex2	example	1	میں نے چابی بیگ میں رکھی۔		I put the key in the bag.	وضعت المفتاح في الحقيبة.					
+ur_w_kapra	word	1	کپڑا	kapṛā	cloth; (plural) clothes	قماش؛ ملابس					
+ur_w_kapra#ex1	example	1	یہ کپڑے بہت مہنگے ہیں۔		These clothes are very expensive.	هذه الملابس غالية جدًا.					
+ur_w_kapra#ex2	example	1	امی کپڑے دھو رہی ہیں۔		Mum is washing clothes.	أمي تغسل الملابس.					
+ur_w_joota	word	1	جوتا	jūtā	shoe	حذاء					
+ur_w_joota#ex1	example	1	میرے جوتے نئے ہیں۔		My shoes are new.	حذائي جديد.					
+ur_w_joota#ex2	example	1	میرے جوتے کہاں ہیں؟		Where are my shoes?	أين حذائي؟					
+ur_w_tohfa	word	1	تحفہ	tohfa	present, gift	هدية					
+ur_w_tohfa#ex1	example	1	یہ تحفہ آپ کے لیے ہے۔		This present is for you.	هذه الهدية لك.					
+ur_w_tohfa#ex2	example	1	وہ میرے لیے تحفہ لایا۔		He brought a present for me.	أحضر لي هدية.					
+ur_w_tasveer	word	1	تصویر	tasvīr	picture, photo	صورة					
+ur_w_tasveer#ex1	example	1	یہ میرے خاندان کی تصویر ہے۔		This is a picture of my family.	هذه صورة عائلتي.					
+ur_w_tasveer#ex2	example	1	میں نے امی کو تصویر بھیجی۔		I sent Mum a photo.	أرسلت صورة إلى أمي.					
+ur_w_film	word	1	فلم	film	film	فيلم					
+ur_w_film#ex1	example	1	ہم نے کل ایک فلم دیکھی۔		We watched a film yesterday.	شاهدنا فيلمًا أمس.					
+ur_w_film#ex2	example	1	فلم کتنے بجے شروع ہو گی؟		What time will the film start?	متى سيبدأ الفيلم؟					
+ur_w_khel	word	1	کھیل	khel	game, sport	لعبة					
+ur_w_khel#ex1	example	1	مجھے یہ کھیل پسند ہے۔		I like this game.	تعجبني هذه اللعبة.					
+ur_w_khel#ex2	example	1	بچوں کو کھیل بہت پسند ہیں۔		Children love games.	الأطفال يحبون الألعاب كثيرًا.					
+ur_w_khandan	word	1	خاندان	khāndān	family	عائلة					
+ur_w_khandan#ex1	example	1	میرا خاندان بہت بڑا ہے۔		My family is very big.	عائلتي كبيرة جدًا.					
+ur_w_khandan#ex2	example	1	میں اپنے خاندان کے ساتھ رہتا ہوں۔		I live with my family.	أسكن مع عائلتي.					
+ur_w_ammi	word	1	امی	ammī	mum	ماما					
+ur_w_ammi#ex1	example	1	امی، میں گھر آ گیا!		Mum, I'm home!	ماما، لقد عدت إلى البيت!					
+ur_w_ammi#ex2	example	1	میری امی ڈاکٹر ہیں۔		My mum is a doctor.	أمي طبيبة.					
+ur_w_abbu	word	1	ابو	abbū	dad	بابا					
+ur_w_abbu#ex1	example	1	ابو دفتر سے واپس آ گئے۔		Dad is back from the office.	عاد أبي من المكتب.					
+ur_w_abbu#ex2	example	1	میرے ابو بہت مصروف ہیں۔		My dad is very busy.	أبي مشغول جدًا.					
+ur_w_maan	word	1	ماں	mā̃	mother	أمّ					
+ur_w_maan#ex1	example	1	ماں بچے کو دودھ دے رہی ہے۔		The mother is giving the child milk.	الأم تعطي الطفل حليبًا.					
+ur_w_maan#ex2	example	1	اس کی ماں بہت اچھی ہے۔		His mother is very kind.	أمه طيبة جدًا.					
+ur_w_baap	word	1	باپ	bāp	father	أب					
+ur_w_baap#ex1	example	1	اس کا باپ ڈاکٹر ہے۔		His father is a doctor.	أبوه طبيب.					
+ur_w_baap#ex2	example	1	باپ اور بیٹا ساتھ کام کرتے ہیں۔		Father and son work together.	الأب والابن يعملان معًا.					
+ur_w_bhai	word	1	بھائی	bhāī	brother	أخ					
+ur_w_bhai#ex1	example	1	میرا بھائی ہسپتال میں ہے۔		My brother is in hospital.	أخي في المستشفى.					
+ur_w_bhai#ex2	example	1	میرا بھائی لاہور میں رہتا ہے۔		My brother lives in Lahore.	أخي يسكن في لاهور.					
+ur_w_behan	word	1	بہن	behan	sister	أخت					
+ur_w_behan#ex1	example	1	میری دو بہنیں ہیں۔		I have two sisters.	لديّ أختان.					
+ur_w_behan#ex2	example	1	میری بہن بھی طالب علم ہے۔		My sister is a student too.	أختي طالبة أيضًا.					
+ur_w_beta	word	1	بیٹا	beṭā	son	ابن					
+ur_w_beta#ex1	example	1	میرا بیٹا اسکول جاتا ہے۔		My son goes to school.	ابني يذهب إلى المدرسة.					
+ur_w_beta#ex2	example	1	آپ کا بیٹا کتنے سال کا ہے؟		How old is your son?	كم عمر ابنك؟					
+ur_w_beti	word	1	بیٹی	beṭī	daughter	ابنة					
+ur_w_beti#ex1	example	1	ان کی ایک بیٹی ہے۔		They have a daughter.	لديهم ابنة.					
+ur_w_beti#ex2	example	1	میری بیٹی اسکول جاتی ہے۔		My daughter goes to school.	ابنتي تذهب إلى المدرسة.					
+ur_w_bachcha	word	1	بچہ	bachcha	child	طفل					
+ur_w_bachcha#ex1	example	1	بچے اسکول میں ہیں۔		The children are at school.	الأطفال في المدرسة.					
+ur_w_bachcha#ex2	example	1	آپ کے کتنے بچے ہیں؟		How many children do you have?	كم طفلًا لديك؟					
+ur_w_shauhar	word	1	شوہر	shauhar	husband	زوج					
+ur_w_shauhar#ex1	example	1	میرے شوہر ڈاکٹر ہیں۔		My husband is a doctor.	زوجي طبيب.					
+ur_w_shauhar#ex2	example	1	اس کا شوہر دفتر میں کام کرتا ہے۔		Her husband works in an office.	زوجها يعمل في مكتب.					
+ur_w_biwi	word	1	بیوی	bīvī	wife	زوجة					
+ur_w_biwi#ex1	example	1	یہ میری بیوی ہے۔		This is my wife.	هذه زوجتي.					
+ur_w_biwi#ex2	example	1	میری بیوی بہت اچھا کھانا پکاتی ہے۔		My wife cooks very good food.	زوجتي تطبخ طعامًا جيدًا جدًا.					
+ur_w_dost	word	1	دوست	dost	friend	صديق					
+ur_w_dost#ex1	example	1	میں اپنے دوست کے ساتھ آیا۔		I came with my friend.	جئت مع صديقي.					
+ur_w_dost#ex2	example	1	اسکول میں میرے بہت دوست ہیں۔		I have a lot of friends at school.	لديّ أصدقاء كثيرون في المدرسة.					
+ur_w_aadmi	word	1	آدمی	ādmī	man	رجل					
+ur_w_aadmi#ex1	example	1	یہ آدمی کون ہے؟		Who is this man?	من هذا الرجل؟					
+ur_w_aadmi#ex2	example	1	وہ آدمی میرا استاد ہے۔		That man is my teacher.	ذلك الرجل معلمي.					
+ur_w_aurat	word	1	عورت	aurat	woman	امرأة					
+ur_w_aurat#ex1	example	1	وہ عورت ڈاکٹر ہے۔		That woman is a doctor.	تلك المرأة طبيبة.					
+ur_w_aurat#ex2	example	1	ایک عورت دکان میں آئی۔		A woman came into the shop.	دخلت امرأة الدكان.					
+ur_w_larka	word	1	لڑکا	laṛkā	boy	ولد					
+ur_w_larka#ex1	example	1	وہ لڑکا میرا بھائی ہے۔		That boy is my brother.	ذلك الولد أخي.					
+ur_w_larka#ex2	example	1	لڑکے باہر کھیل رہے ہیں۔		The boys are playing outside.	الأولاد يلعبون في الخارج.					
+ur_w_larki	word	1	لڑکی	laṛkī	girl	بنت					
+ur_w_larki#ex1	example	1	یہ لڑکی کون ہے؟		Who is this girl?	من هذه البنت؟					
+ur_w_larki#ex2	example	1	وہ لڑکیاں میری بہنیں ہیں۔		Those girls are my sisters.	تلك البنات أخواتي.					
+ur_w_log	word	1	لوگ	log	people	ناس					
+ur_w_log#ex1	example	1	سب لوگ یہاں ہیں۔		Everyone is here.	الجميع هنا.					
+ur_w_log#ex2	example	1	بازار میں بہت لوگ ہیں۔		There are a lot of people in the market.	في السوق ناس كثيرون.					
+ur_w_talib_ilm	word	1	طالب علم	tālib-e-ilm	student	طالب					
+ur_w_talib_ilm#ex1	example	1	میں طالب علم ہوں۔		I'm a student.	أنا طالب.					
+ur_w_talib_ilm#ex2	example	1	وہ ایک اچھا طالب علم ہے۔		He is a good student.	هو طالب جيد.					
+ur_w_ustad	word	1	استاد	ustād	teacher	معلّم					
+ur_w_ustad#ex1	example	1	میرے ابو استاد ہیں۔		My dad is a teacher.	أبي معلّم.					
+ur_w_ustad#ex2	example	1	استاد نے ایک سوال پوچھا۔		The teacher asked a question.	سأل المعلم سؤالًا.					
+ur_w_doctor	word	1	ڈاکٹر	ḍākṭar	doctor	طبيب					
+ur_w_doctor#ex1	example	1	ڈاکٹر ابھی ہسپتال میں ہیں۔		The doctor is at the hospital now.	الطبيب في المستشفى الآن.					
+ur_w_doctor#ex2	example	1	میں ایک ڈاکٹر ہوں۔		I'm a doctor.	أنا طبيب.					
+ur_w_naam	word	1	نام	nām	name	اسم					
+ur_w_naam#ex1	example	1	آپ کا نام کیا ہے؟		What's your name?	ما اسمك؟					
+ur_w_naam#ex2	example	1	میرا نام علی ہے۔		My name is Ali.	اسمي علي.					
+ur_w_umr	word	1	عمر	umr	age	عُمر					
+ur_w_umr#ex1	example	1	تمہاری عمر کتنی ہے؟		How old are you?	كم عمرك؟					
+ur_w_umr#ex2	example	1	آپ کی عمر کیا ہے؟		What is your age?	ما عمرك؟					
+ur_w_pani	word	1	پانی	pānī	water	ماء					
+ur_w_pani#ex1	example	1	مجھے پانی کہاں ملے گا؟		Where can I get water?	أين أجد ماءً؟					
+ur_w_pani#ex2	example	1	میں نے بہت پانی پیا۔		I drank a lot of water.	شربت ماءً كثيرًا.					
+ur_w_chai	word	1	چائے	chāy	tea	شاي					
+ur_w_chai#ex1	example	1	آپ چائے لیں گے یا کافی؟		Will you have tea or coffee?	هل تريد شايًا أم قهوة؟					
+ur_w_chai#ex2	example	1	یہ چائے بہت اچھی ہے۔		This tea is very good.	هذا الشاي جيد جدًا.					
+ur_w_coffee	word	1	کافی	kāfī	coffee	قهوة					
+ur_w_coffee#ex1	example	1	میں صبح کافی پیتا ہوں۔		I drink coffee in the morning.	أشرب القهوة في الصباح.					
+ur_w_coffee#ex2	example	1	مجھے کافی پسند نہیں۔		I don't like coffee.	لا أحب القهوة.					
+ur_w_doodh	word	1	دودھ	dūdh	milk	حليب					
+ur_w_doodh#ex1	example	1	بچوں کو دودھ دے دو۔		Give the children milk.	أعطِ الأطفال حليبًا.					
+ur_w_doodh#ex2	example	1	دکان میں دودھ نہیں ہے۔		There's no milk in the shop.	لا يوجد حليب في الدكان.					
+ur_w_roti	word	1	روٹی	roṭī	bread (flatbread)	خبز					
+ur_w_roti#ex1	example	1	مجھے چائے اور روٹی چاہیے۔		I'd like tea and bread.	أريد شايًا وخبزًا.					
+ur_w_roti#ex2	example	1	امی روٹی بنا رہی ہیں۔		Mum is making bread.	أمي تخبز الخبز.					
+ur_w_khana_food	word	1	کھانا	khānā	food, meal	طعام، وجبة					
+ur_w_khana_food#ex1	example	1	کھانا میز پر ہے۔		The food is on the table.	الطعام على الطاولة.					
+ur_w_khana_food#ex2	example	1	رات کا کھانا کتنے بجے ہے؟		What time is dinner?	متى العشاء؟					
+ur_w_gosht	word	1	گوشت	gosht	meat	لحم					
+ur_w_gosht#ex1	example	1	میں نے کھانے کے لیے گوشت خریدا۔		I bought meat for the meal.	اشتريت لحمًا للطعام.					
+ur_w_gosht#ex2	example	1	بازار میں گوشت بہت مہنگا ہے۔		Meat is very expensive at the market.	اللحم غالٍ جدًا في السوق.					
+ur_w_murghi	word	1	مرغی	murghī	chicken	دجاج					
+ur_w_murghi#ex1	example	1	آج ہم مرغی اور چاول کھائیں گے۔		Today we'll eat chicken and rice.	سنأكل اليوم دجاجًا وأرزًا.					
+ur_w_murghi#ex2	example	1	یہ مرغی بہت مزیدار ہے۔		This chicken is very tasty.	هذا الدجاج لذيذ جدًا.					
+ur_w_chawal	word	1	چاول	chāval	rice	أرز					
+ur_w_chawal#ex1	example	1	مجھے چاول بہت پسند ہیں۔		I really like rice.	أحب الأرز كثيرًا.					
+ur_w_chawal#ex2	example	1	ہم نے رات کو چاول کھائے۔		We ate rice at night.	أكلنا الأرز في الليل.					
+ur_w_phal	word	1	پھل	phal	fruit	فاكهة					
+ur_w_phal#ex1	example	1	میں نے امی کے لیے پھل خریدے۔		I bought fruit for Mum.	اشتريت فاكهة لأمي.					
+ur_w_phal#ex2	example	1	وہ بازار میں پھل بیچتا ہے۔		He sells fruit at the market.	يبيع الفاكهة في السوق.					
+ur_w_seb	word	1	سیب	seb	apple	تفاح					
+ur_w_seb#ex1	example	1	بچے سیب کھا رہے ہیں۔		The children are eating apples.	الأطفال يأكلون التفاح.					
+ur_w_seb#ex2	example	1	یہ سیب بہت مزیدار ہیں۔		These apples are very tasty.	هذا التفاح لذيذ جدًا.					
+ur_w_anda	word	1	انڈا	anḍā	egg	بيضة					
+ur_w_anda#ex1	example	1	مجھے دو انڈے چاہئیں۔		I need two eggs.	أحتاج إلى بيضتين.					
+ur_w_anda#ex2	example	1	میں نے دکان سے انڈے لیے۔		I got eggs from the shop.	أخذت بيضًا من الدكان.					
+ur_w_cheeni	word	1	چینی	chīnī	sugar	سكّر					
+ur_w_cheeni#ex1	example	1	چائے میں چینی نہیں چاہیے۔		No sugar in the tea, please.	لا أريد سكرًا في الشاي.					
+ur_w_cheeni#ex2	example	1	کیا آپ کافی میں چینی لیں گے؟		Do you take sugar in your coffee?	هل تضع سكرًا في قهوتك؟					
+ur_w_nashta	word	1	ناشتہ	nāshta	breakfast	فطور					
+ur_w_nashta#ex1	example	1	ناشتے میں کیا ہے؟		What's for breakfast?	ماذا يوجد في الفطور؟					
+ur_w_nashta#ex2	example	1	میں نے آج ناشتہ نہیں کیا۔		I didn't have breakfast today.	لم أتناول الفطور اليوم.					
+ur_w_din	word	1	دن	din	day	يوم					
+ur_w_din#ex1	example	1	آج کا دن بہت اچھا تھا۔		Today was a very good day.	كان اليوم يومًا جيدًا جدًا.					
+ur_w_din#ex2	example	1	دو دن پہلے بارش ہوئی۔		It rained two days ago.	أمطرت قبل يومين.					
+ur_w_raat	word	1	رات	rāt	night	ليل					
+ur_w_raat#ex1	example	1	رات کو بہت سردی تھی۔		It was very cold at night.	كان الجو باردًا جدًا في الليل.					
+ur_w_raat#ex2	example	1	کل رات میں نے فلم دیکھی۔		I watched a film last night.	شاهدت فيلمًا الليلة الماضية.					
+ur_w_subah	word	1	صبح	subah	morning	صباح					
+ur_w_subah#ex1	example	1	صبح موسم ٹھنڈا ہوتا ہے۔		The weather is cool in the morning.	الطقس بارد في الصباح.					
+ur_w_subah#ex2	example	1	میں کل صبح آؤں گا۔		I'll come tomorrow morning.	سآتي صباح الغد.					
+ur_w_shaam	word	1	شام	shām	evening	مساء					
+ur_w_shaam#ex1	example	1	ہم شام کو بازار جائیں گے۔		We'll go to the market in the evening.	سنذهب إلى السوق في المساء.					
+ur_w_shaam#ex2	example	1	شام کو ہم چائے پیتے ہیں۔		We drink tea in the evening.	نشرب الشاي في المساء.					
+ur_w_dopahar	word	1	دوپہر	dopahar	midday, afternoon	ظهر					
+ur_w_dopahar#ex1	example	1	دوپہر کو دکانیں بند ہوتی ہیں۔		Shops are closed at midday.	الدكاكين مغلقة في الظهيرة.					
+ur_w_dopahar#ex2	example	1	میں دوپہر کو کھانا کھاتا ہوں۔		I eat at midday.	آكل في الظهر.					
+ur_w_hafta	word	1	ہفتہ	hafta	week; Saturday	أسبوع؛ السبت					
+ur_w_hafta#ex1	example	1	ہفتے میں سات دن ہوتے ہیں۔		There are seven days in a week.	في الأسبوع سبعة أيام.					
+ur_w_hafta#ex2	example	1	یہ ہفتہ بہت اچھا تھا۔		This week was very good.	كان هذا الأسبوع جيدًا جدًا.					
+ur_w_mahina	word	1	مہینہ	mahīna	month	شهر					
+ur_w_mahina#ex1	example	1	میں اس مہینے پاکستان جاؤں گا۔		I'll go to Pakistan this month.	سأذهب إلى باكستان هذا الشهر.					
+ur_w_mahina#ex2	example	1	یہ مہینہ بہت گرم ہے۔		This month is very hot.	هذا الشهر حار جدًا.					
+ur_w_saal	word	1	سال	sāl	year	سنة					
+ur_w_saal#ex1	example	1	ایک سال کے بعد وہ واپس آیا۔		He came back after a year.	عاد بعد سنة.					
+ur_w_saal#ex2	example	1	یہ سال بہت اچھا تھا۔		This year was very good.	كانت هذه السنة جيدة جدًا.					
+ur_w_ghanta	word	1	گھنٹہ	ghanṭa	hour	ساعة					
+ur_w_ghanta#ex1	example	1	میں روز دو گھنٹے پڑھتا ہوں۔		I study two hours every day.	أدرس ساعتين كل يوم.					
+ur_w_ghanta#ex2	example	1	ٹرین ایک گھنٹے میں آئے گی۔		The train will come in an hour.	سيأتي القطار بعد ساعة.					
+ur_w_minat	word	1	منٹ	minaṭ	minute	دقيقة					
+ur_w_minat#ex1	example	1	دس منٹ انتظار کیجیے۔		Please wait ten minutes.	انتظر عشر دقائق من فضلك.					
+ur_w_minat#ex2	example	1	ٹرین یہاں دو منٹ رکتی ہے۔		The train stops here for two minutes.	يتوقف القطار هنا دقيقتين.					
+ur_w_waqt	word	1	وقت	waqt	time	وقت					
+ur_w_waqt#ex1	example	1	میرے پاس وقت نہیں ہے۔		I don't have time.	ليس عندي وقت.					
+ur_w_waqt#ex2	example	1	کیا وقت ہوا ہے؟		What time is it?	كم الساعة؟					
+ur_w_baje	word	1	بجے	baje	o'clock	الساعة (في التوقيت)					
+ur_w_baje#ex1	example	1	ابھی کتنے بجے ہیں؟		What time is it now?	كم الساعة الآن؟					
+ur_w_baje#ex2	example	1	سبق نو بجے شروع ہوتا ہے۔		The lesson starts at nine.	يبدأ الدرس في الساعة التاسعة.					
+ur_w_chhutti	word	1	چھٹی	chhuṭṭī	day off, holiday	إجازة					
+ur_w_chhutti#ex1	example	1	کل میری چھٹی ہے۔		Tomorrow is my day off.	غدًا يوم إجازتي.					
+ur_w_chhutti#ex2	example	1	ہم چھٹیوں میں سمندر پر گئے۔		We went to the seaside in the holidays.	ذهبنا إلى البحر في الإجازة.					
+ur_w_juma	word	1	جمعہ	jumma	Friday	الجمعة					
+ur_w_juma#ex1	example	1	جمعہ کو دفتر بند ہوتا ہے۔		The office is closed on Friday.	المكتب مغلق يوم الجمعة.					
+ur_w_juma#ex2	example	1	ہم جمعے کو ملیں گے۔		We'll meet on Friday.	سنلتقي يوم الجمعة.					
+ur_w_mausam	word	1	موسم	mausam	weather; season	طقس؛ فصل					
+ur_w_mausam#ex1	example	1	آج موسم کیسا ہے؟		What's the weather like today?	كيف الطقس اليوم؟					
+ur_w_mausam#ex2	example	1	مجھے یہ موسم پسند ہے۔		I like this weather.	يعجبني هذا الطقس.					
+ur_w_barish	word	1	بارش	bārish	rain	مطر					
+ur_w_barish#ex1	example	1	کل بہت بارش ہوئی۔		It rained a lot yesterday.	أمطرت كثيرًا أمس.					
+ur_w_barish#ex2	example	1	بارش ہو رہی ہے، اندر آ جاؤ۔		It's raining, come inside.	إنها تمطر، ادخل.					
+ur_w_dhoop	word	1	دھوپ	dhūp	sunshine	ضوء الشمس					
+ur_w_dhoop#ex1	example	1	آج بہت دھوپ ہے۔		It's very sunny today.	الشمس ساطعة جدًا اليوم.					
+ur_w_dhoop#ex2	example	1	بچے دھوپ میں کھیل رہے ہیں۔		The children are playing in the sun.	الأطفال يلعبون في الشمس.					
+ur_w_garmi	word	1	گرمی	garmī	heat; summer	حرّ؛ صيف					
+ur_w_garmi#ex1	example	1	گرمی میں ہم سمندر پر جاتے ہیں۔		In summer we go to the seaside.	نذهب إلى البحر في الصيف.					
+ur_w_garmi#ex2	example	1	دوپہر کو بہت گرمی ہوتی ہے۔		It's very hot at midday.	الجو حار جدًا في الظهيرة.					
+ur_w_sardi	word	1	سردی	sardī	cold; winter	برد؛ شتاء					
+ur_w_sardi#ex1	example	1	آج باہر بہت سردی ہے۔		It's very cold outside today.	الجو بارد جدًا في الخارج اليوم.					
+ur_w_sardi#ex2	example	1	سردی میں گرم کپڑے پہنو۔		Wear warm clothes in winter.	البس ملابس دافئة في الشتاء.					
+ur_w_samundar	word	1	سمندر	samundar	sea	بحر					
+ur_w_samundar#ex1	example	1	ہمارا ہوٹل سمندر کے قریب ہے۔		Our hotel is near the sea.	فندقنا قريب من البحر.					
+ur_w_samundar#ex2	example	1	ہم سمندر میں تیرے۔		We swam in the sea.	سبحنا في البحر.					
+ur_w_billi	word	1	بلی	billī	cat	قطة					
+ur_w_billi#ex1	example	1	بلی بستر پر سو رہی ہے۔		The cat is sleeping on the bed.	القطة نائمة على السرير.					
+ur_w_billi#ex2	example	1	ہماری بلی بہت چھوٹی ہے۔		Our cat is very small.	قطتنا صغيرة جدًا.					
+ur_w_kutta	word	1	کتا	kuttā	dog	كلب					
+ur_w_kutta#ex1	example	1	کتا باہر کھیل رہا ہے۔		The dog is playing outside.	الكلب يلعب في الخارج.					
+ur_w_kutta#ex2	example	1	کتا بہت تیز دوڑتا ہے۔		The dog runs very fast.	الكلب يركض بسرعة كبيرة.					
+ur_w_sar	word	1	سر	sar	head	رأس					
+ur_w_sar#ex1	example	1	میرا سر بہت گرم ہے، شاید میں بیمار ہوں۔		My head is very hot, maybe I'm ill.	رأسي ساخن جدًا، ربما أنا مريض.					
+ur_w_sar#ex2	example	1	میں نے سر دھویا۔		I washed my hair.	غسلت رأسي.					
+ur_w_haath	word	1	ہاتھ	hāth	hand	يد					
+ur_w_haath#ex1	example	1	آپ کے ہاتھ میں کیا ہے؟		What's in your hand?	ماذا في يدك؟					
+ur_w_haath#ex2	example	1	اس کے ہاتھ میں ایک کتاب ہے۔		She has a book in her hand.	في يدها كتاب.					
+ur_w_aankh	word	1	آنکھ	ā̃kh	eye	عين					
+ur_w_aankh#ex1	example	1	اس کی آنکھیں بہت خوبصورت ہیں۔		Her eyes are very beautiful.	عيناها جميلتان جدًا.					
+ur_w_aankh#ex2	example	1	اپنی آنکھیں بند کرو۔		Close your eyes.	أغمض عينيك.					
+ur_w_sawal	word	1	سوال	savāl	question	سؤال					
+ur_w_sawal#ex1	example	1	کیا میں ایک سوال پوچھ سکتا ہوں؟		May I ask a question?	هل يمكنني أن أسأل سؤالًا؟					
+ur_w_sawal#ex2	example	1	استاد کا سوال مشکل تھا۔		The teacher's question was hard.	كان سؤال المعلم صعبًا.					
+ur_w_jawab	word	1	جواب	javāb	answer	جواب					
+ur_w_jawab#ex1	example	1	اس سوال کا جواب کیا ہے؟		What's the answer to this question?	ما جواب هذا السؤال؟					
+ur_w_jawab#ex2	example	1	اس نے کوئی جواب نہیں دیا۔		He didn't give any answer.	لم يُجب بشيء.					
+ur_w_sabaq	word	1	سبق	sabaq	lesson	درس					
+ur_w_sabaq#ex1	example	1	آج کا سبق اچھا تھا۔		Today's lesson was good.	كان درس اليوم جيدًا.					
+ur_w_sabaq#ex2	example	1	گھر پر یہ سبق پڑھو۔		Study this lesson at home.	ادرس هذا الدرس في البيت.					
+ur_w_zaban	word	1	زبان	zabān	language; tongue	لغة؛ لسان					
+ur_w_zaban#ex1	example	1	آپ کتنی زبانیں بولتے ہیں؟		How many languages do you speak?	كم لغة تتكلم؟					
+ur_w_zaban#ex2	example	1	اردو ایک خوبصورت زبان ہے۔		Urdu is a beautiful language.	الأردية لغة جميلة.					
+ur_w_urdu	word	1	اردو	urdū	Urdu	اللغة الأردية					
+ur_w_urdu#ex1	example	1	کیا آپ اردو بولتے ہیں؟		Do you speak Urdu?	هل تتكلم الأردية؟					
+ur_w_urdu#ex2	example	1	میں اردو سیکھ رہا ہوں۔		I'm learning Urdu.	أتعلم الأردية.					
+ur_w_lafz	word	1	لفظ	lafz	word	كلمة					
+ur_w_lafz#ex1	example	1	مجھے یہ لفظ یاد نہیں۔		I don't remember this word.	لا أتذكر هذه الكلمة.					
+ur_w_lafz#ex2	example	1	میں روز دس نئے الفاظ سیکھتا ہوں۔		I learn ten new words every day.	أتعلم عشر كلمات جديدة كل يوم.					
+ur_w_imtihan	word	1	امتحان	imtihān	exam	امتحان					
+ur_w_imtihan#ex1	example	1	آج میرا امتحان ہے۔		I have an exam today.	عندي امتحان اليوم.					
+ur_w_imtihan#ex2	example	1	امتحان کتنے بجے ہے؟		What time is the exam?	متى الامتحان؟					
+ur_w_masla	word	1	مسئلہ	masla	problem	مشكلة					
+ur_w_masla#ex1	example	1	کوئی مسئلہ نہیں، میں آ جاؤں گا۔		No problem, I'll come.	لا مشكلة، سآتي.					
+ur_w_masla#ex2	example	1	میری گاڑی میں کوئی مسئلہ ہے۔		There's a problem with my car.	في سيارتي مشكلة.					
+ur_w_cheez	word	1	چیز	chīz	thing	شيء					
+ur_w_cheez#ex1	example	1	یہ کیا چیز ہے؟		What is this thing?	ما هذا الشيء؟					
+ur_w_cheez#ex2	example	1	مجھے بازار سے کچھ چیزیں لینی ہیں۔		I need to get some things from the market.	عليّ أن أشتري بعض الأشياء من السوق.					
+ur_w_jagah	word	1	جگہ	jagah	place	مكان					
+ur_w_jagah#ex1	example	1	یہاں کوئی جگہ نہیں۔		There's no room here.	لا يوجد مكان هنا.					
+ur_w_jagah#ex2	example	1	بس میں کوئی جگہ خالی نہیں۔		There are no free seats on the bus.	لا يوجد مكان فارغ في الحافلة.					
+ur_w_achchha	word	1	اچھا	achchhā	good	جيد					
+ur_w_achchha#ex1	example	1	یہ کتاب بہت اچھی ہے۔		This book is very good.	هذا الكتاب جيد جدًا.					
+ur_w_achchha#ex2	example	1	وہ آدمی بہت اچھا ہے۔		That man is very nice.	ذلك الرجل طيب جدًا.					
+ur_w_bura	word	1	برا	burā	bad	سيئ					
+ur_w_bura#ex1	example	1	آج کا دن برا تھا۔		Today was a bad day.	كان اليوم يومًا سيئًا.					
+ur_w_bura#ex2	example	1	یہ کھانا برا نہیں ہے۔		This food isn't bad.	هذا الطعام ليس سيئًا.					
+ur_w_bara	word	1	بڑا	baṛā	big; older	كبير					
+ur_w_bara#ex1	example	1	یہ کتا بہت بڑا ہے۔		This dog is very big.	هذا الكلب كبير جدًا.					
+ur_w_bara#ex2	example	1	وہ مجھ سے بڑا ہے۔		He is older than me.	هو أكبر مني.					
+ur_w_chhota	word	1	چھوٹا	chhoṭā	small; younger	صغير					
+ur_w_chhota#ex1	example	1	میری بہن مجھ سے چھوٹی ہے۔		My sister is younger than me.	أختي أصغر مني.					
+ur_w_chhota#ex2	example	1	ہمارا باورچی خانہ بہت چھوٹا ہے۔		Our kitchen is very small.	مطبخنا صغير جدًا.					
+ur_w_naya	word	1	نیا	nayā	new	جديد					
+ur_w_naya#ex1	example	1	یہ میرا نیا گھر ہے۔		This is my new home.	هذا بيتي الجديد.					
+ur_w_naya#ex2	example	1	مجھے نئے جوتے چاہئیں۔		I need new shoes.	أحتاج إلى حذاء جديد.					
+ur_w_purana	word	1	پرانا	purānā	old (thing)	قديم					
+ur_w_purana#ex1	example	1	میرا کمپیوٹر بہت پرانا ہے۔		My computer is very old.	حاسوبي قديم جدًا.					
+ur_w_purana#ex2	example	1	یہ کرسی بہت پرانی ہے۔		This chair is very old.	هذا الكرسي قديم جدًا.					
+ur_w_khubsurat	word	1	خوبصورت	khūbsūrat	beautiful	جميل					
+ur_w_khubsurat#ex1	example	1	پاکستان ایک خوبصورت ملک ہے۔		Pakistan is a beautiful country.	باكستان بلد جميل.					
+ur_w_khubsurat#ex2	example	1	یہ جگہ بہت خوبصورت ہے۔		This place is very beautiful.	هذا المكان جميل جدًا.					
+ur_w_garam	word	1	گرم	garam	hot, warm	حارّ، دافئ					
+ur_w_garam#ex1	example	1	یہ کافی بہت گرم ہے۔		This coffee is very hot.	هذه القهوة ساخنة جدًا.					
+ur_w_garam#ex2	example	1	آج دن بہت گرم ہے۔		It's a very hot day today.	اليوم حار جدًا.					
+ur_w_thanda	word	1	ٹھنڈا	ṭhanḍā	cold	بارد					
+ur_w_thanda#ex1	example	1	یہ پانی بہت ٹھنڈا ہے۔		This water is very cold.	هذا الماء بارد جدًا.					
+ur_w_thanda#ex2	example	1	میرے ہاتھ بہت ٹھنڈے ہیں۔		My hands are very cold.	يداي باردتان جدًا.					
+ur_w_lamba	word	1	لمبا	lambā	long; tall	طويل					
+ur_w_lamba#ex1	example	1	یہ سڑک بہت لمبی ہے۔		This road is very long.	هذا الطريق طويل جدًا.					
+ur_w_lamba#ex2	example	1	میرا بھائی بہت لمبا ہے۔		My brother is very tall.	أخي طويل جدًا.					
+ur_w_asan	word	1	آسان	āsān	easy	سهل					
+ur_w_asan#ex1	example	1	یہ سوال بہت آسان ہے۔		This question is very easy.	هذا السؤال سهل جدًا.					
+ur_w_asan#ex2	example	1	اردو سیکھنا آسان نہیں۔		Learning Urdu isn't easy.	تعلم الأردية ليس سهلًا.					
+ur_w_mushkil	word	1	مشکل	mushkil	difficult	صعب					
+ur_w_mushkil#ex1	example	1	آج کا سبق بہت مشکل تھا۔		Today's lesson was very hard.	كان درس اليوم صعبًا جدًا.					
+ur_w_mushkil#ex2	example	1	امتحان بہت مشکل تھا۔		The exam was very hard.	كان الامتحان صعبًا جدًا.					
+ur_w_sasta	word	1	سستا	sastā	cheap	رخيص					
+ur_w_sasta#ex1	example	1	یہ دکان بہت سستی ہے۔		This shop is very cheap.	هذا الدكان رخيص جدًا.					
+ur_w_sasta#ex2	example	1	کیا یہاں کوئی سستا ہوٹل ہے؟		Is there a cheap hotel here?	هل يوجد فندق رخيص هنا؟					
+ur_w_mehnga	word	1	مہنگا	mehngā	expensive	غالٍ					
+ur_w_mehnga#ex1	example	1	یہ جوتے بہت مہنگے ہیں۔		These shoes are very expensive.	هذا الحذاء غالٍ جدًا.					
+ur_w_mehnga#ex2	example	1	یہ ہوٹل بہت مہنگا ہے۔		This hotel is very expensive.	هذا الفندق غالٍ جدًا.					
+ur_w_qareeb	word	1	قریب	qarīb	near	قريب					
+ur_w_qareeb#ex1	example	1	اسٹیشن یہاں سے قریب ہے۔		The station is near here.	المحطة قريبة من هنا.					
+ur_w_qareeb#ex2	example	1	کیا یہاں قریب کوئی دکان ہے؟		Is there a shop near here?	هل يوجد دكان قريب من هنا؟					
+ur_w_door	word	1	دور	dūr	far	بعيد					
+ur_w_door#ex1	example	1	ہسپتال یہاں سے دور ہے۔		The hospital is far from here.	المستشفى بعيد عن هنا.					
+ur_w_door#ex2	example	1	ہوائی اڈہ شہر سے دور ہے۔		The airport is far from the city.	المطار بعيد عن المدينة.					
+ur_w_tez	word	1	تیز	tez	fast	سريع					
+ur_w_tez#ex1	example	1	وہ بہت تیز بولتا ہے۔		He speaks very fast.	يتكلم بسرعة كبيرة.					
+ur_w_tez#ex2	example	1	ٹرین بس سے تیز ہے۔		The train is faster than the bus.	القطار أسرع من الحافلة.					
+ur_w_ahista	word	1	آہستہ	āhista	slowly	ببطء					
+ur_w_ahista#ex1	example	1	آہستہ بولیے، میں سمجھا نہیں۔		Speak slowly, I didn't understand.	تكلم ببطء، لم أفهم.					
+ur_w_ahista#ex2	example	1	مہربانی کر کے آہستہ بولیں۔		Please speak slowly.	تكلم ببطء من فضلك.					
+ur_w_khush	word	1	خوش	khush	happy	سعيد					
+ur_w_khush#ex1	example	1	میں آج بہت خوش ہوں۔		I'm very happy today.	أنا سعيد جدًا اليوم.					
+ur_w_khush#ex2	example	1	امی تحفہ دیکھ کر خوش ہو گئیں۔		Mum was happy when she saw the present.	فرحت أمي عندما رأت الهدية.					
+ur_w_thaka	word	1	تھکا	thakā	tired (تھکا ہوا)	متعب					
+ur_w_thaka#ex1	example	1	میں بہت تھکا ہوا ہوں۔		I'm very tired.	أنا متعب جدًا.					
+ur_w_thaka#ex2	example	1	میری آنکھیں تھکی ہوئی ہیں۔		My eyes are tired.	عيناي متعبتان.					
+ur_w_bhooka	word	1	بھوکا	bhūkā	hungry	جائع					
+ur_w_bhooka#ex1	example	1	میں بہت بھوکا ہوں۔		I'm very hungry.	أنا جائع جدًا.					
+ur_w_bhooka#ex2	example	1	اگر تم بھوکے ہو تو کھانا کھاؤ۔		If you're hungry, eat.	إذا كنت جائعًا فكُل.					
+ur_w_pyasa	word	1	پیاسا	pyāsā	thirsty	عطشان					
+ur_w_pyasa#ex1	example	1	میں بہت پیاسا ہوں، پانی دیں۔		I'm very thirsty, please give me water.	أنا عطشان جدًا، أعطني ماءً.					
+ur_w_pyasa#ex2	example	1	بلی پیاسی ہے، اسے پانی دو۔		The cat is thirsty, give it water.	القطة عطشى، أعطها ماءً.					
+ur_w_mazedar	word	1	مزیدار	mazedār	tasty	لذيذ					
+ur_w_mazedar#ex1	example	1	یہ کھانا بہت مزیدار ہے۔		This food is very tasty.	هذا الطعام لذيذ جدًا.					
+ur_w_mazedar#ex2	example	1	شکریہ، کھانا بہت مزیدار تھا۔		Thank you, the food was delicious.	شكرًا، كان الطعام لذيذًا جدًا.					
+ur_w_zaroori	word	1	ضروری	zarūrī	necessary, important	ضروري					
+ur_w_zaroori#ex1	example	1	یہ کام بہت ضروری ہے۔		This work is very important.	هذا العمل ضروري جدًا.					
+ur_w_zaroori#ex2	example	1	کیا یہ ضروری ہے؟		Is this necessary?	هل هذا ضروري؟					
+ur_w_sahih	word	1	صحیح	sahīh	correct	صحيح					
+ur_w_sahih#ex1	example	1	آپ کا جواب صحیح ہے۔		Your answer is correct.	جوابك صحيح.					
+ur_w_sahih#ex2	example	1	یہ صحیح راستہ ہے؟		Is this the right way?	هل هذا هو الطريق الصحيح؟					
+ur_w_ghalat	word	1	غلط	ghalat	wrong	خطأ					
+ur_w_ghalat#ex1	example	1	یہ جواب غلط ہے۔		This answer is wrong.	هذا الجواب خطأ.					
+ur_w_ghalat#ex2	example	1	میں غلط بس میں بیٹھ گیا۔		I got on the wrong bus.	ركبت الحافلة الخطأ.					
+ur_w_khali	word	1	خالی	khālī	empty, free	فارغ					
+ur_w_khali#ex1	example	1	ہوٹل میں کوئی کمرہ خالی ہے؟		Is there a free room at the hotel?	هل توجد غرفة شاغرة في الفندق؟					
+ur_w_khali#ex2	example	1	یہ کرسی خالی ہے۔		This chair is free.	هذا الكرسي شاغر.					
+ur_w_masroof	word	1	مصروف	masrūf	busy	مشغول					
+ur_w_masroof#ex1	example	1	وہ ہمیشہ مصروف رہتا ہے۔		He is always busy.	هو دائمًا مشغول.					
+ur_w_masroof#ex2	example	1	اس ہفتے میں بہت مصروف ہوں۔		I'm very busy this week.	أنا مشغول جدًا هذا الأسبوع.					
+ur_w_safed	word	1	سفید	safed	white	أبيض					
+ur_w_safed#ex1	example	1	میری گاڑی سفید ہے۔		My car is white.	سيارتي بيضاء.					
+ur_w_safed#ex2	example	1	اس نے سفید کپڑے پہنے ہیں۔		She is wearing white clothes.	هي تلبس ملابس بيضاء.					
+ur_w_kala	word	1	کالا	kālā	black	أسود					
+ur_w_kala#ex1	example	1	میرے پاس ایک کالا کتا ہے۔		I have a black dog.	عندي كلب أسود.					
+ur_w_kala#ex2	example	1	میری آنکھیں کالی ہیں۔		My eyes are black.	عيناي سوداوان.					
+ur_w_laal	word	1	لال	lāl	red	أحمر					
+ur_w_laal#ex1	example	1	یہ لال گاڑی کس کی ہے؟		Whose is this red car?	لمن هذه السيارة الحمراء؟					
+ur_w_laal#ex2	example	1	اس نے لال کپڑے پہنے ہیں۔		He is wearing red clothes.	هو يلبس ملابس حمراء.					
+ur_w_neela	word	1	نیلا	nīlā	blue	أزرق					
+ur_w_neela#ex1	example	1	سمندر بہت نیلا ہے۔		The sea is very blue.	البحر أزرق جدًا.					
+ur_w_neela#ex2	example	1	میرا بیگ نیلا ہے۔		My bag is blue.	حقيبتي زرقاء.					
+ur_w_pehla	word	1	پہلا	pehlā	first	أول					
+ur_w_pehla#ex1	example	1	یہ میرا پہلا سبق ہے۔		This is my first lesson.	هذا درسي الأول.					
+ur_w_pehla#ex2	example	1	پہلا دن بہت مشکل تھا۔		The first day was very hard.	كان اليوم الأول صعبًا جدًا.					
+ur_w_aakhri	word	1	آخری	ākhrī	last	أخير					
+ur_w_aakhri#ex1	example	1	یہ آخری بس ہے۔		This is the last bus.	هذه آخر حافلة.					
+ur_w_aakhri#ex2	example	1	آخری سوال بہت مشکل تھا۔		The last question was very hard.	كان السؤال الأخير صعبًا جدًا.					
+ur_w_doosra	word	1	دوسرا	dūsrā	other; second	آخر؛ ثانٍ					
+ur_w_doosra#ex1	example	1	مجھے دوسرا کمرہ چاہیے۔		I'd like another room.	أريد غرفة أخرى.					
+ur_w_doosra#ex2	example	1	دوسری کتاب کہاں ہے؟		Where is the other book?	أين الكتاب الآخر؟					
+ur_w_bimar	word	1	بیمار	bīmār	ill	مريض					
+ur_w_bimar#ex1	example	1	میرا بھائی بیمار ہے۔		My brother is ill.	أخي مريض.					
+ur_w_bimar#ex2	example	1	وہ کل سے بیمار ہے۔		He has been ill since yesterday.	هو مريض منذ أمس.					
+ur_w_ek	word	1	ایک	ek	one	واحد					
+ur_w_ek#ex1	example	1	مجھے ایک ٹکٹ چاہیے۔		I need one ticket.	أحتاج إلى تذكرة واحدة.					
+ur_w_ek#ex2	example	1	ایک گھنٹے بعد ملتے ہیں۔		Let's meet in an hour.	لنلتقِ بعد ساعة.					
+ur_w_do	word	1	دو	do	two	اثنان					
+ur_w_do#ex1	example	1	میرے دو بھائی ہیں۔		I have two brothers.	لديّ أخوان.					
+ur_w_do#ex2	example	1	دو چائے لائیے، مہربانی کر کے۔		Two teas, please.	أحضر كوبَي شاي من فضلك.					
+ur_w_teen	word	1	تین	tīn	three	ثلاثة					
+ur_w_teen#ex1	example	1	میں نے تین سال اردو پڑھی۔		I studied Urdu for three years.	درست الأردية ثلاث سنوات.					
+ur_w_teen#ex2	example	1	ہمارے گھر میں تین کمرے ہیں۔		Our house has three rooms.	في بيتنا ثلاث غرف.					
+ur_w_char	word	1	چار	chār	four	أربعة					
+ur_w_char#ex1	example	1	کمرے میں چار کرسیاں ہیں۔		There are four chairs in the room.	في الغرفة أربعة كراسٍ.					
+ur_w_char#ex2	example	1	میں چار بجے آؤں گا۔		I'll come at four.	سآتي في الساعة الرابعة.					
+ur_w_paanch	word	1	پانچ	pā̃ch	five	خمسة					
+ur_w_paanch#ex1	example	1	میری بیٹی پانچ سال کی ہے۔		My daughter is five.	ابنتي عمرها خمس سنوات.					
+ur_w_paanch#ex2	example	1	میں پانچ منٹ میں آتا ہوں۔		I'll be there in five minutes.	سآتي بعد خمس دقائق.					
+ur_w_chhe	word	1	چھ	chhe	six	ستة					
+ur_w_chhe#ex1	example	1	ہم چھ لوگ ہیں۔		There are six of us.	نحن ستة أشخاص.					
+ur_w_chhe#ex2	example	1	دکان چھ بجے بند ہوتی ہے۔		The shop closes at six.	يُغلق الدكان في الساعة السادسة.					
+ur_w_saat	word	1	سات	sāt	seven	سبعة					
+ur_w_saat#ex1	example	1	میں سات بجے اٹھتا ہوں۔		I get up at seven.	أستيقظ في الساعة السابعة.					
+ur_w_saat#ex2	example	1	ہمارے خاندان میں سات لوگ ہیں۔		There are seven people in our family.	في عائلتنا سبعة أشخاص.					
+ur_w_aath	word	1	آٹھ	āṭh	eight	ثمانية					
+ur_w_aath#ex1	example	1	میں صبح آٹھ بجے گھر سے نکلتا ہوں۔		I leave home at eight in the morning.	أخرج من البيت في الثامنة صباحًا.					
+ur_w_aath#ex2	example	1	رات کا کھانا آٹھ بجے ہے۔		Dinner is at eight.	العشاء في الساعة الثامنة.					
+ur_w_nau	word	1	نو	nau	nine	تسعة					
+ur_w_nau#ex1	example	1	وہ صبح نو بجے دکان کھولتا ہے۔		He opens the shop at nine in the morning.	يفتح الدكان في التاسعة صباحًا.					
+ur_w_nau#ex2	example	1	میرا بیٹا نو سال کا ہے۔		My son is nine.	ابني عمره تسع سنوات.					
+ur_w_das	word	1	دس	das	ten	عشرة					
+ur_w_das#ex1	example	1	میں رات کو دس بجے سوتا ہوں۔		I go to sleep at ten at night.	أنام في العاشرة ليلًا.					
+ur_w_das#ex2	example	1	میری بہن کی عمر دس سال ہے۔		My sister is ten years old.	عمر أختي عشر سنوات.					
+ur_w_sau	word	1	سو	sau	hundred	مئة					
+ur_w_sau#ex1	example	1	اس اسکول میں سو طالب علم ہیں۔		There are a hundred students at this school.	في هذه المدرسة مئة طالب.					
+ur_w_sau#ex2	example	1	میرے پاس صرف سو روپے ہیں۔		I only have a hundred rupees.	ليس معي إلا مئة روبية.					
+ur_w_hazar	word	1	ہزار	hazār	thousand	ألف					
+ur_w_hazar#ex1	example	1	ٹکٹ ایک ہزار روپے کا ہے۔		The ticket costs a thousand rupees.	التذكرة بألف روبية.					
+ur_w_hazar#ex2	example	1	شہر میں ہزاروں لوگ ہیں۔		There are thousands of people in the city.	في المدينة آلاف الناس.					
+ur_w_aadha	word	1	آدھا	ādhā	half	نصف					
+ur_w_aadha#ex1	example	1	میں ہر صبح آدھا گھنٹہ دوڑتا ہوں۔		I run for half an hour every morning.	أركض نصف ساعة كل صباح.					
+ur_w_aadha#ex2	example	1	مجھے آدھی روٹی دیں۔		Give me half a flatbread.	أعطني نصف رغيف.					
+ur_w_rupaya	word	1	روپیہ	rupaya	rupee	روبية					
+ur_w_rupaya#ex1	example	1	یہ کتاب کتنے روپے کی ہے؟		How many rupees is this book?	بكم روبية هذا الكتاب؟					
+ur_w_rupaya#ex2	example	1	میں نے سو روپے دیے۔		I gave a hundred rupees.	دفعت مئة روبية.					
+ur_w_andar	word	1	اندر	andar	inside	داخل					
+ur_w_andar#ex1	example	1	اندر آئیے اور بیٹھیے۔		Come in and sit down.	ادخل واجلس.					
+ur_w_andar#ex2	example	1	کمرے کے اندر بہت گرمی ہے۔		It's very hot inside the room.	الجو حار جدًا داخل الغرفة.					
+ur_w_behtar	word	1	بہتر	behtar	better	أفضل					
+ur_w_behtar#ex1	example	1	یہ ہوٹل اس سے بہتر ہے۔		This hotel is better than that one.	هذا الفندق أفضل من ذلك.					
+ur_w_behtar#ex2	example	1	ٹرین بس سے بہتر ہے۔		The train is better than the bus.	القطار أفضل من الحافلة.					
+ur_w_zyada	word	1	زیادہ	zyāda	more, much	أكثر، كثير					
+ur_w_zyada#ex1	example	1	مجھے زیادہ چینی نہیں چاہیے۔		I don't want much sugar.	لا أريد سكرًا كثيرًا.					
+ur_w_zyada#ex2	example	1	آج کل سے زیادہ گرمی ہے۔		Today is hotter than yesterday.	اليوم أحرّ من أمس.					
+ur_w_kam	word	1	کم	kam	less, little	أقل، قليل					
+ur_w_kam#ex1	example	1	آج کام کم ہے۔		There's little work today.	العمل قليل اليوم.					
+ur_w_kam#ex2	example	1	ہمارے پاس وقت کم ہے۔		We have little time.	وقتنا قليل.					
+ur_w_thora	word	1	تھوڑا	thoṛā	a little	قليل					
+ur_w_thora#ex1	example	1	مجھے تھوڑا پانی دیں۔		Give me a little water.	أعطني قليلًا من الماء.					
+ur_w_thora#ex2	example	1	میں تھوڑی اردو بولتا ہوں۔		I speak a little Urdu.	أتكلم قليلًا من الأردية.					
+ur_w_ikatthe	word	1	اکٹھے	ikaṭṭhe	together	معًا					
+ur_w_ikatthe#ex1	example	1	ہم اکٹھے کھانا کھاتے ہیں۔		We eat together.	نأكل معًا.					
+ur_w_ikatthe#ex2	example	1	چلو اکٹھے بازار چلتے ہیں۔		Let's go to the market together.	هيا نذهب إلى السوق معًا.					
+ur_w_aam_taur	word	1	عام طور پر	ām taur par	usually	عادةً					
+ur_w_aam_taur#ex1	example	1	میں عام طور پر جلدی سوتا ہوں۔		I usually go to sleep early.	أنام عادةً مبكرًا.					
+ur_w_aam_taur#ex2	example	1	عام طور پر یہاں بہت لوگ ہوتے ہیں۔		There are usually a lot of people here.	عادةً يكون هنا ناس كثيرون.					
+ur_w_mere_khayal	word	1	میرے خیال میں	mere khayāl mẽ	in my opinion	في رأيي					
+ur_w_mere_khayal#ex1	example	1	میرے خیال میں یہ ٹھیک ہے۔		In my opinion this is right.	في رأيي هذا صحيح.					
+ur_w_mere_khayal#ex2	example	1	میرے خیال میں کل بارش ہو گی۔		I think it will rain tomorrow.	في رأيي ستمطر غدًا.					
+ur_w_pasand	word	1	پسند	pasand	liked (مجھے … پسند ہے: I like …)	محبوب، مفضَّل					
+ur_w_pasand#ex1	example	1	مجھے چائے پسند ہے۔		I like tea.	أحب الشاي.					
+ur_w_pasand#ex2	example	1	آپ کو کیا پسند ہے؟		What do you like?	ماذا تحب؟					
+ur_w_khushi	word	1	خوشی	khushī	happiness, pleasure	سعادة، سرور					
+ur_w_khushi#ex1	example	1	آپ سے مل کر خوشی ہوئی۔		Pleased to meet you.	سررت بلقائك.					
+ur_w_khushi#ex2	example	1	مجھے بہت خوشی ہوئی۔		I was very pleased.	سررت كثيرًا.					

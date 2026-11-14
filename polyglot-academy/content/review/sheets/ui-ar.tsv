@@ -1,0 +1,1569 @@
+file	key	english	arabic	status	correction	reviewer	date	note
+01_common.strings	APP_NAME	Polyglot Academy	أكاديمية بوليغلوت					
+01_common.strings	BACK	Back	رجوع					
+01_common.strings	CLOSE	Close	إغلاق					
+01_common.strings	CANCEL	Cancel	إلغاء					
+01_common.strings	CONTINUE	Continue	متابعة					
+01_common.strings	NEXT	Next	التالي					
+01_common.strings	SKIP	Skip	تخطٍّ					
+01_common.strings	SKIP_FOR_NOW	Skip for now	تخطٍّ الآن					
+01_common.strings	DONE	Done	تم					
+01_common.strings	SAVE	Save	حفظ					
+01_common.strings	DELETE	Delete	حذف					
+01_common.strings	RETRY	Try again	حاول مرة أخرى					
+01_common.strings	EDIT	Edit	تعديل					
+01_common.strings	START	Start	ابدأ					
+01_common.strings	CHECK	Check	تحقّق					
+01_common.strings	ADD	Add	إضافة					
+01_common.strings	REMOVE	Remove	إزالة					
+01_common.strings	LOADING	Loading…	جارٍ التحميل…					
+01_common.strings	SEE_ALL	See all	عرض الكل					
+01_common.strings	SEARCH	Search	بحث					
+01_common.strings	OPTIONAL	Optional	اختياري					
+01_common.strings	ON	On	مفعّل					
+01_common.strings	OFF	Off	متوقف					
+01_common.strings	SELECTED	Selected	محدّد					
+01_common.strings	LOCKED	Locked	مقفل					
+01_common.strings	COMPLETED	Completed	مكتمل					
+01_common.strings	NOT_STARTED	Not started	لم يبدأ					
+01_common.strings	ESTIMATE	estimate	تقدير					
+01_common.strings	NOT_ENOUGH_DATA	Not enough data yet	لا توجد بيانات كافية بعد					
+01_common.strings	ERROR_TITLE	Something went wrong	حدث خطأ ما					
+01_common.strings	ERROR_BODY	We couldn't load this. Your data is safe — please try again.	تعذّر تحميل هذا المحتوى. بياناتك محفوظة، يُرجى المحاولة مرة أخرى.					
+01_common.strings	OFFLINE_BANNER	You're offline. Lessons, reviews and the offline practice partner still work.	أنت غير متصل بالإنترنت. ما زالت الدروس والمراجعات وشريك التدريب دون اتصال تعمل.					
+01_common.strings	PERCENT	{0}%	‎{0}٪					
+01_common.strings	MINUTES	{0} min|{0} min	{0} دقيقة|دقيقة واحدة|دقيقتان|{0} دقائق|{0} دقيقة|{0} دقيقة					
+01_common.strings	DAYS	{0} day|{0} days	{0} يوم|يوم واحد|يومان|{0} أيام|{0} يومًا|{0} يوم					
+01_common.strings	WORDS	{0} word|{0} words	{0} كلمة|كلمة واحدة|كلمتان|{0} كلمات|{0} كلمة|{0} كلمة					
+01_common.strings	HOURS	{0} hour|{0} hours	{0} ساعة|ساعة واحدة|ساعتان|{0} ساعات|{0} ساعة|{0} ساعة					
+01_common.strings	MONTHS	{0} month|{0} months	{0} شهر|شهر واحد|شهران|{0} أشهر|{0} شهرًا|{0} شهر					
+01_common.strings	NOW	now	الآن					
+01_common.strings	IN_TIME	in {0}	بعد {0}					
+01_common.strings	PLAY_AUDIO	Play audio	تشغيل الصوت					
+01_common.strings	STOP_AUDIO	Stop audio	إيقاف الصوت					
+01_common.strings	SHOW_TRANSLATION	Show translation	إظهار الترجمة					
+01_common.strings	HIDE_TRANSLATION	Hide translation	إخفاء الترجمة					
+01_common.strings	TRANSLATIONS	Translations	الترجمات					
+01_common.strings	TUTOR_AVATAR_DESC	Portrait of {0}, your tutor	صورة {0}، معلّمك					
+01_common.strings	ILLUSTRATION	Illustration	رسم توضيحي					
+01_common.strings	NAV_HOME	Home	الرئيسية					
+01_common.strings	NAV_LEARN	Learn	تعلّم					
+01_common.strings	NAV_PRACTICE	Practice	تدرّب					
+01_common.strings	NAV_TUTORS	Tutors	المعلّمون					
+01_common.strings	NAV_ME	Me	حسابي					
+01_common.strings	LEVEL_PRE_A1	Complete beginner	مبتدئ تمامًا					
+01_common.strings	LEVEL_A1	Beginner — simple phrases	مبتدئ — عبارات بسيطة					
+01_common.strings	LEVEL_A2	Elementary — everyday situations	أساسي — مواقف يومية					
+01_common.strings	LEVEL_B1	Intermediate — most travel and work basics	متوسط — معظم أساسيات السفر والعمل					
+01_common.strings	LEVEL_B2	Upper intermediate — fluent on familiar topics	فوق المتوسط — طلاقة في المواضيع المألوفة					
+01_common.strings	LEVEL_C1	Advanced — flexible and precise	متقدم — مرونة ودقة					
+01_common.strings	LEVEL_C2	Mastery — near-native	إتقان — قريب من مستوى الناطقين					
+01_common.strings	GOAL_TRAVEL	Travel	السفر					
+01_common.strings	GOAL_WORK	Work and career	العمل والمهنة					
+01_common.strings	GOAL_STUDY	School or university	المدرسة أو الجامعة					
+01_common.strings	GOAL_EXAM	Prepare for an exam	الاستعداد لاختبار					
+01_common.strings	GOAL_CONVERSATION	Everyday conversation	المحادثة اليومية					
+01_common.strings	GOAL_CULTURE	Culture, films and books	الثقافة والأفلام والكتب					
+01_common.strings	GOAL_FAMILY	Family and friends	العائلة والأصدقاء					
+01_common.strings	GOAL_PERSONAL_GROWTH	Personal growth	تطوير الذات					
+01_common.strings	STYLE_VISUAL	Visual	بصري					
+01_common.strings	STYLE_VISUAL_DESC	Images, colours and diagrams help me remember	تساعدني الصور والألوان والرسوم على التذكّر					
+01_common.strings	STYLE_AUDITORY	Listening	سمعي					
+01_common.strings	STYLE_AUDITORY_DESC	I learn best by hearing and repeating	أتعلّم أفضل بالاستماع والتكرار					
+01_common.strings	STYLE_READING_WRITING	Reading and writing	القراءة والكتابة					
+01_common.strings	STYLE_READING_WRITING_DESC	I like texts, notes and written practice	أحب النصوص والملاحظات والتمارين المكتوبة					
+01_common.strings	STYLE_CONVERSATIONAL	Conversation	محادثة					
+01_common.strings	STYLE_CONVERSATIONAL_DESC	I want to speak as much as possible	أريد أن أتحدث قدر الإمكان					
+01_common.strings	STYLE_MIXED	A bit of everything	مزيج من كل شيء					
+01_common.strings	STYLE_MIXED_DESC	Balanced practice across all skills	تدريب متوازن في جميع المهارات					
+01_common.strings	SKILL_SPEAKING	Speaking	التحدث					
+01_common.strings	SKILL_LISTENING	Listening	الاستماع					
+01_common.strings	SKILL_READING	Reading	القراءة					
+01_common.strings	SKILL_WRITING	Writing	الكتابة					
+01_common.strings	SKILL_VOCABULARY	Vocabulary	المفردات					
+01_common.strings	SKILL_GRAMMAR	Grammar	القواعد					
+01_common.strings	SKILL_PRONUNCIATION	Pronunciation	النطق					
+01_common.strings	SKILL_COMPREHENSION	Comprehension	الفهم					
+01_common.strings	SKILL_FLUENCY	Fluency	الطلاقة					
+01_common.strings	SKILL_FUNCTIONAL	Everyday communication	التواصل اليومي					
+01_common.strings	CORRECTION_GENTLE	Gentle	لطيف					
+01_common.strings	CORRECTION_GENTLE_DESC	Only errors that change the meaning	الأخطاء التي تغيّر المعنى فقط					
+01_common.strings	CORRECTION_BALANCED	Balanced	متوازن					
+01_common.strings	CORRECTION_BALANCED_DESC	Important and recurring errors	الأخطاء المهمة والمتكررة					
+01_common.strings	CORRECTION_THOROUGH	Thorough	شامل					
+01_common.strings	CORRECTION_THOROUGH_DESC	Every error, with explanations	كل خطأ مع الشرح					
+01_common.strings	THEME_SYSTEM	Match system	حسب النظام					
+01_common.strings	THEME_LIGHT	Light	فاتح					
+01_common.strings	THEME_DARK	Dark	داكن					
+01_common.strings	SEVERITY_MINOR	Minor	بسيط					
+01_common.strings	SEVERITY_MODERATE	Grammar	قواعدي					
+01_common.strings	SEVERITY_MEANING_CHANGING	Changes meaning	يغيّر المعنى					
+01_common.strings	DAY_1	Mon	الإثنين					
+01_common.strings	DAY_2	Tue	الثلاثاء					
+01_common.strings	DAY_3	Wed	الأربعاء					
+01_common.strings	DAY_4	Thu	الخميس					
+01_common.strings	DAY_5	Fri	الجمعة					
+01_common.strings	DAY_6	Sat	السبت					
+01_common.strings	DAY_7	Sun	الأحد					
+01_common.strings	DAY_INITIAL_1	M	ن					
+01_common.strings	DAY_INITIAL_2	T	ث					
+01_common.strings	DAY_INITIAL_3	W	ر					
+01_common.strings	DAY_INITIAL_4	T	خ					
+01_common.strings	DAY_INITIAL_5	F	ج					
+01_common.strings	DAY_INITIAL_6	S	س					
+01_common.strings	DAY_INITIAL_7	S	ح					
+01_common.strings	SPEECH_ERR_PERMISSION_DENIED	Microphone access is off. You can type instead, or allow the microphone in settings.	الوصول إلى الميكروفون متوقف. يمكنك الكتابة بدلًا من ذلك، أو السماح بالميكروفون من الإعدادات.					
+01_common.strings	SPEECH_ERR_MICROPHONE_UNAVAILABLE	No microphone is available on this device.	لا يتوفر ميكروفون على هذا الجهاز.					
+01_common.strings	SPEECH_ERR_NO_SPEECH_DETECTED	We didn't hear anything. Tap the microphone and try again.	لم نسمع شيئًا. اضغط على الميكروفون وحاول مرة أخرى.					
+01_common.strings	SPEECH_ERR_RECOGNITION_TIMEOUT	Listening timed out. Try again when you're ready.	انتهت مهلة الاستماع. حاول مرة أخرى عندما تكون مستعدًا.					
+01_common.strings	SPEECH_ERR_LANGUAGE_UNSUPPORTED	Your phone's speech recognition does not offer this language. Add it in the phone's voice-input settings (for example Google → Voice → Languages), or type your answer.	لا يوفّر التعرّف على الكلام في هاتفك هذه اللغة. أضِفها من إعدادات الإدخال الصوتي في الهاتف (مثلًا Google ← الصوت ← اللغات)، أو اكتب إجابتك.					
+01_common.strings	SPEECH_ERR_NETWORK	A network problem interrupted the request.	قاطعت مشكلة في الشبكة الطلب.					
+01_common.strings	SPEECH_ERR_RECOGNIZER_BUSY	The speech recognizer is busy. Try again in a moment.	أداة التعرّف على الكلام مشغولة. حاول بعد لحظة.					
+01_common.strings	SPEECH_ERR_AUDIO_FOCUS_LOST	Another app took over audio.	استحوذ تطبيق آخر على الصوت.					
+01_common.strings	SPEECH_ERR_TTS_UNAVAILABLE	Spoken audio isn't available for this language on this device.	الصوت المنطوق غير متاح لهذه اللغة على هذا الجهاز.					
+01_common.strings	SPEECH_ERR_TTS_FAILED	Audio playback failed.	فشل تشغيل الصوت.					
+01_common.strings	SPEECH_ERR_CANCELLED	Cancelled.	أُلغي.					
+01_common.strings	SPEECH_ERR_UNKNOWN	Something went wrong with speech. Please try again.	حدث خطأ في الكلام. يُرجى المحاولة مرة أخرى.					
+01_common.strings	ACH_first_lesson	First lesson completed	أول درس مكتمل					
+01_common.strings	ACH_five_lessons	Five lessons completed	خمسة دروس مكتملة					
+01_common.strings	ACH_perfect_lesson	A perfect lesson	درس بلا أخطاء					
+01_common.strings	ACH_fifty_reviews	50 reviews	‏50 مراجعة					
+01_common.strings	ACH_first_conversation	First real conversation	أول محادثة حقيقية					
+01_common.strings	ACH_streak_3	Three days in a row	ثلاثة أيام متتالية					
+01_common.strings	ACH_streak_7	A full week of practice	أسبوع كامل من التدريب					
+01_common.strings	ACH_placement_done	Found your level	حدّدت مستواك					
+01_common.strings	REPORT_BUTTON	Report an error in this content	أبلغ عن خطأ في هذا المحتوى					
+01_common.strings	REPORT_TITLE	Report a content error	الإبلاغ عن خطأ في المحتوى					
+01_common.strings	REPORT_BODY	The content was written with AI and is still being reviewed. Your report stays on this device until you export it from Settings → Your data.	كُتب المحتوى بالذكاء الاصطناعي وما زال قيد المراجعة. يبقى بلاغك على هذا الجهاز حتى تصدّره من الإعدادات ← بياناتك.					
+01_common.strings	REPORT_NOTE	What is wrong? (optional)	ما الخطأ؟ (اختياري)					
+01_common.strings	REPORT_SAVE	Save report	احفظ البلاغ					
+01_common.strings	REPORT_SAVED	Report saved on this device	حُفظ البلاغ على هذا الجهاز					
+01_common.strings	REPORT_ISSUE_TRANSLATION	Translation or meaning	الترجمة أو المعنى					
+01_common.strings	REPORT_ISSUE_EXAMPLE	Example sentence	جملة المثال					
+01_common.strings	REPORT_ISSUE_PRONUNCIATION	Pronunciation or reading	النطق أو القراءة					
+01_common.strings	REPORT_ISSUE_AMBIGUOUS	More than one right answer	أكثر من إجابة صحيحة					
+01_common.strings	REPORT_ISSUE_LEVEL	Wrong level	المستوى غير مناسب					
+01_common.strings	REPORT_ISSUE_OTHER	Something else	شيء آخر					
+02_onboarding.strings	ONB_STEP	Step {0} of {1}	الخطوة {0} من {1}					
+02_onboarding.strings	ONB_WELCOME_TITLE	Learn a language with a tutor who adapts to you	تعلّم لغة مع معلّم يتكيّف معك					
+02_onboarding.strings	ONB_WELCOME_BODY	Short lessons, real conversations and smart reviews in English, Mandarin, Spanish, French and Arabic.	دروس قصيرة ومحادثات حقيقية ومراجعات ذكية بالإنجليزية والصينية والإسبانية والفرنسية والعربية.					
+02_onboarding.strings	ONB_GET_STARTED	Get started	لنبدأ					
+02_onboarding.strings	ONB_WELCOME_POINT_1	Practise speaking with patient virtual tutors	تدرّب على التحدث مع معلّمين افتراضيين صبورين					
+02_onboarding.strings	ONB_WELCOME_POINT_2	Reviews timed to help you remember	مراجعات في أوقات تساعدك على التذكّر					
+02_onboarding.strings	ONB_WELCOME_POINT_3	Your data stays on your device unless you choose otherwise	تبقى بياناتك على جهازك ما لم تختر غير ذلك					
+02_onboarding.strings	ONB_INTERFACE_TITLE	Choose the app language	اختر لغة التطبيق					
+02_onboarding.strings	ONB_INTERFACE_BODY	Menus and explanations will appear in this language. You can change it later.	ستظهر القوائم والشروح بهذه اللغة، ويمكنك تغييرها لاحقًا.					
+02_onboarding.strings	ONB_NATIVE_TITLE	What is your native language?	ما لغتك الأم؟					
+02_onboarding.strings	ONB_NATIVE_BODY	We use it to explain grammar and compare sounds.	نستخدمها لشرح القواعد ومقارنة الأصوات.					
+02_onboarding.strings	ONB_LEARN_TITLE	Which language do you want to learn?	أي لغة تريد أن تتعلّم؟					
+02_onboarding.strings	ONB_LEARN_BODY	You can add more languages later.	يمكنك إضافة لغات أخرى لاحقًا.					
+02_onboarding.strings	ONB_VARIANT_TITLE	Preferred variety	اللهجة أو النوع المفضّل					
+02_onboarding.strings	ONB_VARIANT_BODY	Other varieties are still accepted and explained.	ما زالت الأنواع الأخرى مقبولة ومشروحة.					
+02_onboarding.strings	ONB_LEVEL_TITLE	How well do you know {0}?	ما مدى معرفتك باللغة {0}؟					
+02_onboarding.strings	ONB_LEVEL_BODY	A short placement test gives a better starting point than a guess.	يعطيك اختبار تحديد المستوى القصير نقطة بداية أفضل من التخمين.					
+02_onboarding.strings	ONB_LEVEL_TEST	Take a placement test	خُض اختبار تحديد المستوى					
+02_onboarding.strings	ONB_LEVEL_TEST_SUB	About 5 minutes · up to 14 questions	نحو 5 دقائق · حتى 14 سؤالًا					
+02_onboarding.strings	ONB_LEVEL_SELF	Choose my level myself	سأختار مستواي بنفسي					
+02_onboarding.strings	ONB_LEVEL_NOTE	You can change your level at any time.	يمكنك تغيير مستواك في أي وقت.					
+02_onboarding.strings	ONB_LEVEL_FEW	Few or no built-in lessons at this level yet	دروس مضمّنة قليلة أو معدومة في هذا المستوى حاليًا					
+02_onboarding.strings	ONB_GOALS_TITLE	Why are you learning?	لماذا تتعلّم؟					
+02_onboarding.strings	ONB_GOALS_BODY	Choose all that apply. We use this to pick topics.	اختر كل ما ينطبق. نستخدم ذلك لاختيار المواضيع.					
+02_onboarding.strings	ONB_TIME_TITLE	How much time per day?	كم من الوقت يوميًا؟					
+02_onboarding.strings	ONB_TIME_BODY	A little every day works better than a lot once a week.	القليل كل يوم أنفع من الكثير مرة في الأسبوع.					
+02_onboarding.strings	ONB_TIME_5	Light	خفيف					
+02_onboarding.strings	ONB_TIME_10	Steady	منتظم					
+02_onboarding.strings	ONB_TIME_15	Regular	معتاد					
+02_onboarding.strings	ONB_TIME_30	Serious	جادّ					
+02_onboarding.strings	ONB_TIME_60	Intensive	مكثّف					
+02_onboarding.strings	ONB_TIME_OPTION	{0} minute a day|{0} minutes a day	{0} دقيقة يوميًا|دقيقة واحدة يوميًا|دقيقتان يوميًا|{0} دقائق يوميًا|{0} دقيقة يوميًا|{0} دقيقة يوميًا					
+02_onboarding.strings	ONB_STYLE_TITLE	How do you like to learn?	كيف تحب أن تتعلّم؟					
+02_onboarding.strings	ONB_STYLE_BODY	This shapes the mix of activities. Every plan still includes all skills.	يحدّد هذا مزيج الأنشطة، وتبقى جميع المهارات ضمن كل خطة.					
+02_onboarding.strings	ONB_CORRECTION_TITLE	How should tutors correct you?	كيف تريد أن يصحّح لك المعلّمون؟					
+02_onboarding.strings	ONB_VOICE_TITLE	Speaking practice	التدرّب على التحدث					
+02_onboarding.strings	ONB_VOICE_BODY	Tutors can listen and reply out loud. Here is how voice works:	يمكن للمعلّمين الاستماع والرد بصوت مسموع. إليك كيف يعمل الصوت:					
+02_onboarding.strings	ONB_VOICE_POINT_1	The microphone is only on while you hold the conversation — a red indicator always shows when it is listening.	لا يعمل الميكروفون إلا أثناء المحادثة، ويظهر مؤشر أحمر دائمًا عند الاستماع.					
+02_onboarding.strings	ONB_VOICE_POINT_2	Speech is converted to text by your device's speech service. This app does not save recordings.	تحوّل خدمة الكلام في جهازك الكلام إلى نص، ولا يحفظ هذا التطبيق التسجيلات.					
+02_onboarding.strings	ONB_VOICE_POINT_3	You can always type instead of speaking.	يمكنك دائمًا الكتابة بدلًا من التحدث.					
+02_onboarding.strings	ONB_VOICE_LATER	We'll ask for microphone access the first time you tap the microphone.	سنطلب إذن الميكروفون في أول مرة تضغط فيها على زر الميكروفون.					
+02_onboarding.strings	ONB_PRIVACY_TITLE	Your privacy and AI	خصوصيتك والذكاء الاصطناعي					
+02_onboarding.strings	ONB_PRIVACY_BODY	Lessons, reviews and the offline practice partner work entirely on this device. Cloud AI tutors are optional.	تعمل الدروس والمراجعات وشريك التدريب دون اتصال بالكامل على هذا الجهاز، أما المعلّمون السحابيون بالذكاء الاصطناعي فهم اختياريون.					
+02_onboarding.strings	ONB_PRIVACY_LOCAL	Keep everything on this device	أبقِ كل شيء على هذا الجهاز					
+02_onboarding.strings	ONB_PRIVACY_LOCAL_SUB	Recommended to start. You can connect an AI provider later.	موصى به للبدء، ويمكنك ربط مزوّد ذكاء اصطناعي لاحقًا.					
+02_onboarding.strings	ONB_PRIVACY_CLOUD	Allow cloud AI for conversations	السماح بالذكاء الاصطناعي السحابي للمحادثات					
+02_onboarding.strings	ONB_PRIVACY_CLOUD_SUB	Only conversation and writing text you send are shared, with the provider you configure. Notes, imported files and recordings stay private.	لا يُشارك إلا نص المحادثة والكتابة الذي ترسله، ومع المزوّد الذي تهيّئه فقط. تبقى الملاحظات والملفات المستوردة والتسجيلات خاصة.					
+02_onboarding.strings	ONB_PRIVACY_NOTE	You need your own API key from a provider such as OpenAI, Google, Anthropic, Microsoft Azure or DeepSeek.	تحتاج إلى مفتاح API خاص بك من مزوّد مثل OpenAI أو Google أو Anthropic أو Microsoft Azure أو DeepSeek.					
+02_onboarding.strings	ONB_NOTIF_TITLE	A gentle daily reminder?	تذكير يومي لطيف؟					
+02_onboarding.strings	ONB_NOTIF_BODY	One reminder at a time you choose. No guilt messages, and you can turn it off at any time.	تذكير واحد في الوقت الذي تختاره، دون رسائل لوم، ويمكنك إيقافه في أي وقت.					
+02_onboarding.strings	ONB_NOTIF_ENABLE	Remind me every day	ذكّرني كل يوم					
+02_onboarding.strings	ONB_NOTIF_TIME	Reminder time	وقت التذكير					
+02_onboarding.strings	ONB_NOTIF_NO	No reminders	بلا تذكيرات					
+02_onboarding.strings	ONB_PLAN_TITLE	Your plan	خطتك					
+02_onboarding.strings	ONB_PLAN_BODY	Here is how we'll start. The plan adapts as you learn.	هكذا سنبدأ، وستتكيّف الخطة مع تقدّمك.					
+02_onboarding.strings	ONB_PLAN_LANGUAGE	Learning {0}	تتعلّم {0}					
+02_onboarding.strings	ONB_PLAN_LEVEL	Starting level: {0}	مستوى البداية: {0}					
+02_onboarding.strings	ONB_PLAN_LEVEL_PENDING	Starting level: after the placement test	مستوى البداية: بعد اختبار تحديد المستوى					
+02_onboarding.strings	ONB_PLAN_DAILY	Daily time: {0}	الوقت اليومي: {0}					
+02_onboarding.strings	ONB_PLAN_TUTOR	Your tutor: {0}	معلّمك: {0}					
+02_onboarding.strings	ONB_PLAN_ESTIMATE	At this pace, moving up one level often takes about {0} weeks. This is a rough guide, not a promise.	بهذه الوتيرة، يستغرق الانتقال إلى المستوى التالي غالبًا نحو {0} أسبوعًا. هذا تقدير تقريبي وليس وعدًا.					
+02_onboarding.strings	ONB_NAME_LABEL	What should we call you? (optional)	بماذا نناديك؟ (اختياري)					
+02_onboarding.strings	ONB_DONE_TITLE	You're all set	كل شيء جاهز					
+02_onboarding.strings	ONB_DONE_BODY	Start with the placement test or jump straight into your first lesson.	ابدأ باختبار تحديد المستوى أو انتقل مباشرة إلى درسك الأول.					
+02_onboarding.strings	ONB_START_TEST	Start placement test	ابدأ اختبار تحديد المستوى					
+02_onboarding.strings	ONB_START_LEARNING	Start learning	ابدأ التعلّم					
+02_onboarding.strings	LANG_PREVIEW_TAG	Preview	معاينة					
+02_onboarding.strings	ONB_LEARN_REVIEW_NOTE	"No language's content has been checked by a native speaker yet. ""Preview"" marks short starter courses written entirely by AI."	لم يراجع متحدّث أصلي محتوى أي لغة بعد. وكلمة «معاينة» تعني مقرّرًا أوليًا قصيرًا كتبه الذكاء الاصطناعي بالكامل.					
+03_home_plan.strings	HOME_GREETING_MORNING	Good morning{0}	صباح الخير{0}					
+03_home_plan.strings	HOME_GREETING_AFTERNOON	Good afternoon{0}	نهارك سعيد{0}					
+03_home_plan.strings	HOME_GREETING_EVENING	Good evening{0}	مساء الخير{0}					
+03_home_plan.strings	HOME_LEARNING	Learning {0}	تتعلّم {0}					
+03_home_plan.strings	HOME_SWITCH_LANGUAGE	Switch language	تبديل اللغة					
+03_home_plan.strings	HOME_LEVEL_ESTIMATE	estimated	تقديري					
+03_home_plan.strings	HOME_LEVEL_SELF	self-selected	اختيار ذاتي					
+03_home_plan.strings	HOME_DAILY_GOAL	Daily goal	الهدف اليومي					
+03_home_plan.strings	HOME_GOAL_PROGRESS	{0} of {1} min today	{0} من {1} دقيقة اليوم					
+03_home_plan.strings	HOME_GOAL_RING_DESC	Daily goal progress: {0} of {1} minutes	التقدّم نحو الهدف اليومي: {0} من {1} دقيقة					
+03_home_plan.strings	HOME_RECOMMENDED	Recommended next	المقترح التالي					
+03_home_plan.strings	HOME_START	Start	ابدأ					
+03_home_plan.strings	HOME_WHY	Why this?	لماذا هذا؟					
+03_home_plan.strings	REC_REVIEW_DUE	Review your words	راجِع كلماتك					
+03_home_plan.strings	REC_MISTAKE_REVIEW	Learn from recent mistakes	تعلّم من أخطائك الأخيرة					
+03_home_plan.strings	REC_CONTINUE_LESSON	Continue: {0}	تابِع: {0}					
+03_home_plan.strings	REC_NEXT_LESSON	Next lesson: {0}	الدرس التالي: {0}					
+03_home_plan.strings	REC_SKILL_PRACTICE	Practise {0}	تدرّب على {0}					
+03_home_plan.strings	REC_CONVERSATION	Have a short conversation	أجرِ محادثة قصيرة					
+03_home_plan.strings	REC_ASSESSMENT	Find your starting level	حدّد مستوى بدايتك					
+03_home_plan.strings	REC_RELAXATION	Two calm minutes before speaking	دقيقتان من الهدوء قبل التحدث					
+03_home_plan.strings	REC_ALL_DONE	Today's goal reached	حقّقت هدف اليوم					
+03_home_plan.strings	REASON_MANY_REVIEWS_DUE	{0} item is ready for review. Reviewing now helps it stick.|{0} items are ready for review. Reviewing now helps them stick.	لا توجد عناصر للمراجعة.|عنصر واحد جاهز للمراجعة، ومراجعته الآن تساعدك على تثبيته.|عنصران جاهزان للمراجعة، ومراجعتهما الآن تساعدك على تثبيتهما.|{0} عناصر جاهزة للمراجعة، ومراجعتها الآن تساعدك على تثبيتها.|{0} عنصرًا جاهزًا للمراجعة، ومراجعتها الآن تساعدك على تثبيتها.|{0} عنصر جاهز للمراجعة، ومراجعتها الآن تساعدك على تثبيتها.					
+03_home_plan.strings	REASON_RECURRING_MISTAKES	A few mistakes keep coming back. A quick review fixes them faster.	هناك أخطاء تتكرر، ومراجعتها السريعة تصحّحها أسرع.					
+03_home_plan.strings	REASON_LESSON_INTERRUPTED	You stopped in the middle — pick up where you left off.	توقفت في المنتصف، فتابِع من حيث توقفت.					
+03_home_plan.strings	REASON_NEXT_IN_PATH	The next step in your course.	الخطوة التالية في دورتك.					
+03_home_plan.strings	REASON_WEAKEST_SKILL	This skill has been the hardest for you lately.	كانت هذه المهارة الأصعب عليك مؤخرًا.					
+03_home_plan.strings	REASON_INTERLEAVE_SKILLS	Mixing skills helps you remember better.	المزج بين المهارات يساعدك على التذكّر أفضل.					
+03_home_plan.strings	REASON_APPLY_IN_CONVERSATION	Use what you just learned in a real exchange.	استخدم ما تعلّمته للتو في حوار حقيقي.					
+03_home_plan.strings	REASON_NO_PLACEMENT_YET	A short test lets us start you at the right level.	يتيح لنا اختبار قصير أن نبدأ معك من المستوى المناسب.					
+03_home_plan.strings	REASON_GOAL_MET_TODAY	Great work. Extra practice is optional — rest is part of learning too.	عمل رائع. التدريب الإضافي اختياري، فالراحة جزء من التعلّم أيضًا.					
+03_home_plan.strings	REASON_PRE_SPEAKING_CALM	Speaking is your focus today; a calm start can make it easier.	التحدث محور يومك، وقد تجعل البداية الهادئة الأمر أسهل.					
+03_home_plan.strings	HOME_QUICK	Quick start	بداية سريعة					
+03_home_plan.strings	QUICK_CONVERSATION	Talk	تحدّث					
+03_home_plan.strings	QUICK_REVIEW	Review	راجِع					
+03_home_plan.strings	QUICK_LESSON	Lesson	درس					
+03_home_plan.strings	QUICK_IMPORT	My material	موادّي					
+03_home_plan.strings	HOME_REVIEWS_DUE	{0} item due|{0} items due	لا عناصر مستحقة|عنصر واحد مستحق|عنصران مستحقان|{0} عناصر مستحقة|{0} عنصرًا مستحقًا|{0} عنصر مستحق					
+03_home_plan.strings	HOME_NO_REVIEWS	Nothing to review right now	لا شيء للمراجعة الآن					
+03_home_plan.strings	WIDGET_TODAY	Today: {1} of {0} min|Today: {1} of {0} min	اليوم: {1} من {0} دقيقة|اليوم: {1} من دقيقة واحدة|اليوم: {1} من دقيقتين|اليوم: {1} من {0} دقائق|اليوم: {1} من {0} دقيقة|اليوم: {1} من {0} دقيقة					
+03_home_plan.strings	WIDGET_GOAL_DONE	Today's goal is done	اكتمل هدف اليوم					
+03_home_plan.strings	WIDGET_DUE	{0} word to review|{0} words to review	لا كلمات للمراجعة|كلمة واحدة للمراجعة|كلمتان للمراجعة|{0} كلمات للمراجعة|{0} كلمة للمراجعة|{0} كلمة للمراجعة					
+03_home_plan.strings	WIDGET_NEXT	Next: {0}	التالي: {0}					
+03_home_plan.strings	WIDGET_START	Open the app to start your first lesson	افتح التطبيق لتبدأ درسك الأول					
+03_home_plan.strings	WIDGET_WORD	Word to review	كلمة للمراجعة					
+03_home_plan.strings	HOME_THIS_WEEK	This week	هذا الأسبوع					
+03_home_plan.strings	HOME_WEEK_CHART_DESC	Minutes studied on each of the last 7 days: {0}	دقائق الدراسة في كل يوم من الأيام السبعة الأخيرة: {0}					
+03_home_plan.strings	HOME_STREAK	{0}-day streak|{0}-day streak	سلسلة {0} يوم|سلسلة يوم واحد|سلسلة يومين|سلسلة {0} أيام|سلسلة {0} يومًا|سلسلة {0} يوم					
+03_home_plan.strings	HOME_SKILLS	Skills	المهارات					
+03_home_plan.strings	HOME_SKILLS_EMPTY	Skill estimates appear after a few exercises.	تظهر تقديرات المهارات بعد بضعة تمارين.					
+03_home_plan.strings	HOME_ACHIEVEMENTS	Recent achievements	إنجازات حديثة					
+03_home_plan.strings	HOME_NEW_TITLE	Welcome! Let's find your starting point	مرحبًا! لنحدّد نقطة بدايتك					
+03_home_plan.strings	HOME_NEW_BODY	Your progress will appear here once you start. We only show numbers based on what you have actually done.	سيظهر تقدّمك هنا بعد أن تبدأ، فنحن لا نعرض إلا أرقامًا مبنية على ما أنجزته فعلًا.					
+03_home_plan.strings	HOME_TUTOR_SHORTCUT	Talk with {0}	تحدّث مع {0}					
+03_home_plan.strings	HOME_TUTOR_SHORTCUT_SUB	{0}	{0}					
+03_home_plan.strings	HOME_TODAY_PLAN	Today's plan	خطة اليوم					
+03_home_plan.strings	HOME_PLAN_PROGRESS	{0} of {1} activities done	أُنجز {0} من {1} أنشطة					
+03_home_plan.strings	PLAN_TITLE	Study plan	خطة الدراسة					
+03_home_plan.strings	PLAN_TODAY	Today	اليوم					
+03_home_plan.strings	PLAN_SUBTITLE	{0} planned · {1} done	المخطّط: {0} · المنجز: {1}					
+03_home_plan.strings	PLAN_ITEM_REVIEW	Review due items	مراجعة العناصر المستحقة					
+03_home_plan.strings	PLAN_ITEM_LESSON	Lesson: {0}	درس: {0}					
+03_home_plan.strings	PLAN_ITEM_SKILL_PRACTICE	Practise {0}	تدرّب على {0}					
+03_home_plan.strings	PLAN_ITEM_CONVERSATION	Conversation practice	تدريب على المحادثة					
+03_home_plan.strings	PLAN_ITEM_MISTAKE_REVIEW	Review mistakes	مراجعة الأخطاء					
+03_home_plan.strings	PLAN_ITEM_RELAXATION	Calm breathing	تنفّس هادئ					
+03_home_plan.strings	PLAN_ITEM_READING	Reading practice	تدريب على القراءة					
+03_home_plan.strings	PLAN_ITEM_LISTENING	Listening practice	تدريب على الاستماع					
+03_home_plan.strings	PLAN_MARK_DONE	Mark as done	وضع علامة كمنجز					
+03_home_plan.strings	PLAN_MARK_UNDONE	Mark as not done	إلغاء علامة الإنجاز					
+03_home_plan.strings	PLAN_OPEN	Open	فتح					
+03_home_plan.strings	PLAN_MISSED_NOTE	Welcome back. We kept today's plan the same size instead of piling on extra work.	مرحبًا بعودتك. أبقينا خطة اليوم بالحجم نفسه بدل تكديس عمل إضافي.					
+03_home_plan.strings	PLAN_WEEK_FOCUS	Skill focus this week	تركيز المهارات هذا الأسبوع					
+03_home_plan.strings	PLAN_DAILY_TIME	Daily time	الوقت اليومي					
+03_home_plan.strings	PLAN_REBUILD	Rebuild today's plan	إعادة بناء خطة اليوم					
+03_home_plan.strings	PLAN_HOW_TITLE	How this plan is built	كيف تُبنى هذه الخطة					
+03_home_plan.strings	PLAN_HOW_BODY	Reviews that are due come first (up to 40% of your time), then the next lesson, a short conversation when you have 15 minutes or more, and practice for your weakest skill. You can mark items done or change your daily time.	تأتي المراجعات المستحقة أولًا (حتى 40٪ من وقتك)، ثم الدرس التالي، ثم محادثة قصيرة إذا كان لديك 15 دقيقة أو أكثر، ثم تدريب على أضعف مهاراتك. يمكنك وضع علامة على ما أنجزته أو تغيير وقتك اليومي.					
+03_home_plan.strings	PLAN_EMPTY	No plan yet. Choose a language to start.	لا توجد خطة بعد. اختر لغة للبدء.					
+03_home_plan.strings	GAME_TODAY_XP	Today's XP	نقاط اليوم					
+03_home_plan.strings	GAME_XP	{0} XP	{0} نقطة					
+03_home_plan.strings	GAME_XP_PROGRESS	{0} of {1} XP	{0} من {1} نقطة					
+03_home_plan.strings	GAME_XP_RING_DESC	Daily XP goal: {0} of {1}	هدف النقاط اليومي: {0} من {1}					
+03_home_plan.strings	GAME_GOAL_REACHED	Daily goal reached. Well done!	حقّقت هدفك اليومي. أحسنت!					
+03_home_plan.strings	GAME_LEVEL	Level {0} · {1}/{2} XP to the next level	المستوى {0} · {1}/{2} نقطة للمستوى التالي					
+03_home_plan.strings	GAME_FREEZES	{0} streak freeze|{0} streak freezes	لا حماية للسلسلة|حماية واحدة للسلسلة|حمايتان للسلسلة|{0} حمايات للسلسلة|{0} حماية للسلسلة|{0} حماية للسلسلة					
+03_home_plan.strings	GAME_FREEZE_USED	A streak freeze kept your streak alive.	حافظت حماية السلسلة على سلسلتك.					
+03_home_plan.strings	GAME_QUESTS	Daily quests	مهام اليوم					
+03_home_plan.strings	GAME_QUEST_BONUS	Each finished quest gives +{0} XP. You earn a streak freeze every 7 days in a row (up to 2).	كل مهمة منجزة تمنحك {0}+ نقطة. وتحصل على حماية للسلسلة كل 7 أيام متتالية (حتى 2).					
+03_home_plan.strings	GAME_SET_GOAL	Daily XP goal	هدف النقاط اليومي					
+03_home_plan.strings	QUEST_EARN_XP	Earn {0} XP	اجمع {0} نقطة					
+03_home_plan.strings	QUEST_COMPLETE_LESSON	Complete a lesson	أكمل درسًا واحدًا					
+03_home_plan.strings	QUEST_REVIEW_WORDS	Review {0} words	راجع {0} كلمة					
+03_home_plan.strings	QUEST_CORRECT_ANSWERS	Get {0} answers right	أجب {0} إجابات صحيحة					
+03_home_plan.strings	QUEST_CONVERSATION_TURNS	Send {0} messages to a tutor	أرسل {0} رسائل إلى مدرّب					
+03_home_plan.strings	QUEST_SPEAK_ALOUD	Speak {0} times in a conversation	تحدّث {0} مرات في محادثة					
+03_home_plan.strings	QUEST_READ_STORY	Read a story	اقرأ قصة واحدة					
+03_home_plan.strings	QUEST_PRONUNCIATION	Do {0} pronunciation checks	أجرِ {0} اختبارات نطق					
+03_home_plan.strings	HOME_OTHER	Something else	نشاط آخر					
+03_home_plan.strings	HOME_OTHER_HIDE	Hide other activities	إخفاء الأنشطة الأخرى					
+03_home_plan.strings	HOME_OTHER_REVIEW	Review {0} word|Review {0} words	لا كلمات للمراجعة|راجِع كلمة واحدة|راجِع كلمتين|راجِع {0} كلمات|راجِع {0} كلمة|راجِع {0} كلمة					
+04_learn.strings	LEARN_TITLE	Courses	الدورات					
+04_learn.strings	LEARN_GENERAL	General course	الدورة العامة					
+04_learn.strings	LEARN_TRACKS	Professional tracks	المسارات المهنية					
+04_learn.strings	LEARN_TRACKS_SUB	Optional specialist vocabulary	مفردات تخصصية اختيارية					
+04_learn.strings	LEARN_UNIT_PROGRESS	{0} of {1} lessons mastered	أتقنت {0} من {1} دروس					
+04_learn.strings	LESSON_LOCKED_HINT	Master the previous lesson to unlock	أتقن الدرس السابق لفتح هذا الدرس					
+04_learn.strings	LESSON_MASTERED	Mastered	مُتقَن					
+04_learn.strings	LESSON_BEST	Best {0}%	أفضل نتيجة {0}٪					
+04_learn.strings	LESSON_BELOW_LEVEL	Review — below your starting level	مراجعة — أقل من مستوى بدايتك					
+04_learn.strings	LESSON_EXERCISES	{0} exercise|{0} exercises	{0} تمارين|تمرين واحد|تمرينان|{0} تمارين|{0} تمرينًا|{0} تمرين					
+04_learn.strings	TRACK_MIN_LEVEL	Recommended from {0}	موصى به ابتداءً من {0}					
+04_learn.strings	LEVELS_TITLE	What each level covers	ما يغطّيه كل مستوى					
+04_learn.strings	LEVELS_INTRO	Counted from the lessons and texts built into this version for {0}.	محسوب من الدروس والنصوص المضمّنة في هذا الإصدار للغة {0}.					
+04_learn.strings	LEVELS_ROW	Lessons: {0} · Texts: {1} · Grammar: {2} · Speaking missions: {3}	الدروس: {0} · النصوص: {1} · القواعد: {2} · مهام المحادثة: {3}					
+04_learn.strings	LEVELS_WORDS	Word-list levels: {0} (approximate band)	مستويات قوائم الكلمات: {0} (تقدير تقريبي)					
+04_learn.strings	LEVELS_NONE	No built-in material at this level	لا مواد مضمّنة في هذا المستوى					
+04_learn.strings	LEVELS_NOTE	There is no C1 or C2 course. Above the built-in lessons you can keep practising with tutor conversations, speaking missions (up to C1), the harder word-list levels and material you import.	لا يوجد مقرّر لمستويَي C1 وC2. فوق الدروس المضمّنة يمكنك مواصلة التدرّب بالمحادثة مع المعلّمين ومهام المحادثة (حتى C1) ومستويات قوائم الكلمات الأصعب والموادّ التي تستوردها.					
+04_learn.strings	LEVELS_ABOVE_TITLE	Your level is above the built-in course	مستواك أعلى من المقرّر المضمّن					
+04_learn.strings	LEVELS_ABOVE	The built-in {0} course goes up to {1}; there is no structured course at {2}. Lessons below your level stay open for review, and you can practise with tutors, speaking missions, the harder word lists and your own material.	يصل مقرّر {0} المضمّن إلى المستوى {1}، ولا يوجد مقرّر منظّم في المستوى {2}. تبقى الدروس الأدنى من مستواك متاحة للمراجعة، ويمكنك التدرّب مع المعلّمين وبمهام المحادثة وقوائم الكلمات الأصعب وموادّك الخاصة.					
+04_learn.strings	TRACK_DISCLAIMER_TITLE	Language practice only	للتدرّب اللغوي فقط					
+04_learn.strings	TRACK_EMPTY	No professional tracks for this language yet.	لا توجد مسارات مهنية لهذه اللغة بعد.					
+04_learn.strings	LESSON_VOCAB	Words in this lesson	كلمات هذا الدرس					
+04_learn.strings	LESSON_GRAMMAR	Grammar focus	محور القواعد					
+04_learn.strings	LESSON_START	Start lesson	ابدأ الدرس					
+04_learn.strings	LESSON_RESUME	Resume at exercise {0}	تابِع من التمرين {0}					
+04_learn.strings	LESSON_RESTART	Start over	ابدأ من جديد					
+04_learn.strings	LESSON_BOOKMARK	Bookmark lesson	حفظ الدرس في المفضلة					
+04_learn.strings	LESSON_UNBOOKMARK	Remove bookmark	إزالة من المفضلة					
+04_learn.strings	LESSON_NOT_FOUND	This lesson is no longer available.	هذا الدرس لم يعد متاحًا.					
+04_learn.strings	PLAYER_PROGRESS	Exercise {0} of {1}	التمرين {0} من {1}					
+04_learn.strings	PLAYER_EXIT_TITLE	Leave the lesson?	هل تريد مغادرة الدرس؟					
+04_learn.strings	PLAYER_EXIT_BODY	Your progress is saved. You can continue later from this exercise.	تقدّمك محفوظ، ويمكنك المتابعة لاحقًا من هذا التمرين.					
+04_learn.strings	PLAYER_EXIT_CONFIRM	Leave	مغادرة					
+04_learn.strings	PLAYER_STAY	Keep going	تابِع					
+04_learn.strings	FEEDBACK_CORRECT	Correct!	صحيح!					
+04_learn.strings	FEEDBACK_CORRECT_ACCENT	Correct — mind the accents	صحيح — انتبه إلى علامات النطق					
+04_learn.strings	FEEDBACK_ALMOST	Almost there	اقتربت					
+04_learn.strings	FEEDBACK_INCORRECT	Not quite	ليس تمامًا					
+04_learn.strings	FEEDBACK_ANSWER_WAS	Answer: {0}	الإجابة: {0}					
+04_learn.strings	FEEDBACK_MISSING_WORDS	Missing: {0}	ناقص: {0}					
+04_learn.strings	FEEDBACK_EMPTY	Type an answer first.	اكتب إجابة أولًا.					
+04_learn.strings	FLASHCARD_REVEAL	Show meaning	إظهار المعنى					
+04_learn.strings	FLASHCARD_KNEW	I knew it	كنت أعرفها					
+04_learn.strings	FLASHCARD_DIDNT	I didn't know	لم أكن أعرفها					
+04_learn.strings	FLASHCARD_EXAMPLE	Example	مثال					
+04_learn.strings	MATCH_INSTRUCTION	Tap a word, then its meaning.	اضغط على كلمة ثم على معناها.					
+04_learn.strings	MATCH_ALL_DONE	All pairs matched	تمت مطابقة كل الأزواج					
+04_learn.strings	MATCH_WRONG	Those don't match — try another pair.	هذان غير متطابقين، جرّب زوجًا آخر.					
+04_learn.strings	ORDER_TAP_WORDS	Tap the words in the right order	اضغط على الكلمات بالترتيب الصحيح					
+04_learn.strings	ORDER_RESET	Reset	إعادة تعيين					
+04_learn.strings	ORDER_MEANING	Meaning: {0}	المعنى: {0}					
+04_learn.strings	TYPE_ANSWER	Your answer	إجابتك					
+04_learn.strings	TRANSLATE_PROMPT	Translate:	ترجم:					
+04_learn.strings	TONE_1	1st · high level (ā)	الأولى · مستوية عالية (ā)					
+04_learn.strings	TONE_2	2nd · rising (á)	الثانية · صاعدة (á)					
+04_learn.strings	TONE_3	3rd · dipping (ǎ)	الثالثة · هابطة ثم صاعدة (ǎ)					
+04_learn.strings	TONE_4	4th · falling (à)	الرابعة · هابطة (à)					
+04_learn.strings	TONE_5	Neutral (a)	محايدة (a)					
+04_learn.strings	TONE_LISTEN	Listen to {0}	استمع إلى {0}					
+04_learn.strings	SPEAK_TAP_MIC	Tap the microphone, then say the sentence.	اضغط على الميكروفون ثم قل الجملة.					
+04_learn.strings	SPEAK_HEARD	"We heard: ""{0}"""	سمعنا: «{0}»					
+04_learn.strings	SPEAK_MATCH	Match with the target: {0}%	مدى التطابق مع الجملة: {0}٪					
+04_learn.strings	SPEAK_DISCLAIMER	This compares what the speech recognizer heard with the sentence. It is not a phonetic measurement of your accent.	تقارن هذه النتيجة ما سمعته أداة التعرّف على الكلام بالجملة، وليست قياسًا صوتيًا للهجتك.					
+04_learn.strings	SPEAK_UNAVAILABLE	Speech recognition isn't available here. Say the sentence aloud, then rate yourself honestly.	التعرّف على الكلام غير متاح هنا. قل الجملة بصوت عالٍ ثم قيّم نفسك بصدق.					
+04_learn.strings	SPEAK_SELF_GOOD	I said it clearly	نطقتها بوضوح					
+04_learn.strings	SPEAK_SELF_RETRY	I need more practice	أحتاج إلى مزيد من التدريب					
+04_learn.strings	SPEAK_TRY_AGAIN	Try again	حاول مجددًا					
+04_learn.strings	WRITE_COUNT	{0} / {1} words	{0} / {1} كلمة					
+04_learn.strings	WRITE_SUGGESTED	Try using: {0}	حاول استخدام: {0}					
+04_learn.strings	WRITE_SUBMIT	Submit	إرسال					
+04_learn.strings	LISTEN_AGAIN	Listen again	استمع مرة أخرى					
+04_learn.strings	LISTEN_SLOW	Slow	بطيء					
+04_learn.strings	TTS_MISSING	Audio isn't available for {0} on this device. You can install a voice for it in the system text-to-speech settings.	الصوت غير متاح للغة {0} على هذا الجهاز. يمكنك تثبيت صوت لها من إعدادات تحويل النص إلى كلام في النظام.					
+04_learn.strings	HINT_SHOW	Show a hint	أظهر تلميحًا					
+04_learn.strings	HINT_FIRST_LETTERS	Starts with: {0}	تبدأ بـ: {0}					
+04_learn.strings	EXPLANATION	Why?	لماذا؟					
+04_learn.strings	SUMMARY_TITLE	Lesson complete	اكتمل الدرس					
+04_learn.strings	SUMMARY_SCORE	{0}%	‎{0}٪					
+04_learn.strings	SUMMARY_SCORE_DESC	Score: {0} percent	النتيجة: {0} بالمئة					
+04_learn.strings	SUMMARY_CORRECT	{0} of {1} correct on the first try	{0} من {1} صحيحة من المحاولة الأولى					
+04_learn.strings	SUMMARY_MASTERED	Lesson mastered — well done!	أتقنت الدرس، أحسنت!					
+04_learn.strings	SUMMARY_NOT_MASTERED	Score 80% or more to master this lesson. Your best score is kept.	احصل على 80٪ أو أكثر لإتقان هذا الدرس، وسنحتفظ بأفضل نتيجة لك.					
+04_learn.strings	SUMMARY_NEW_WORDS	{0} word added to your reviews|{0} words added to your reviews	لم تُضف كلمات إلى مراجعاتك|أُضيفت كلمة واحدة إلى مراجعاتك|أُضيفت كلمتان إلى مراجعاتك|أُضيفت {0} كلمات إلى مراجعاتك|أُضيفت {0} كلمة إلى مراجعاتك|أُضيفت {0} كلمة إلى مراجعاتك					
+04_learn.strings	SUMMARY_UNLOCKED	New achievement: {0}	إنجاز جديد: {0}					
+04_learn.strings	SUMMARY_NEXT	Next lesson	الدرس التالي					
+04_learn.strings	SUMMARY_HOME	Back to home	العودة إلى الرئيسية					
+04_learn.strings	SUMMARY_RETRY	Practise again	تدرّب مرة أخرى					
+04_learn.strings	SUMMARY_TIME	Time: {0}	الوقت: {0}					
+04_learn.strings	ADAPT_HARDER	You're doing well — upcoming questions will be a little harder.	أداؤك جيد، وستصبح الأسئلة القادمة أصعب قليلًا.					
+04_learn.strings	ADAPT_EASIER	Let's slow down: we'll add hints and fuller explanations for a while.	لنبطئ الوتيرة: سنضيف تلميحات وشروحًا أوفى لفترة.					
+04_learn.strings	LISTEN_NO_VOICE	There is no voice for {0} on this device, so this listening exercise is not scored. Skip it, or install a voice in the system text-to-speech settings.	لا يوجد صوت للغة {0} على هذا الجهاز، لذلك لا يُحتسب هذا التمرين السمعي. تخطَّه، أو ثبّت صوتًا من إعدادات تحويل النص إلى كلام في النظام.					
+04_learn.strings	LISTEN_SKIP	Skip this exercise	تخطَّ هذا التمرين					
+04_learn.strings	SHOW_READING	Show pronunciation	اعرض النطق					
+04_learn.strings	LEARN_UNREVIEWED_TITLE	Not reviewed yet	لم يُراجَع بعد					
+04_learn.strings	LEARN_UNREVIEWED	The {0} lessons and words were written with AI help and have not been checked by a native speaker yet, so some may be wrong. If something looks wrong, report it from the lesson.	دروس {0} وكلماتها كُتبت بمساعدة الذكاء الاصطناعي ولم يراجعها متحدّث أصلي بعد، فقد يكون في بعضها خطأ. إن بدا لك شيء خاطئ فأبلِغ عنه من الدرس.					
+04_learn.strings	LEARN_PREVIEW_TITLE	Preview: {0}	معاينة: {0}					
+04_learn.strings	LEARN_PREVIEW	This is a short starter course written entirely by AI. No native speaker has checked it, so treat it as a first taste of the language rather than a reliable course, and check what you learn against another source.	هذا مقرّر أولي قصير كتبه الذكاء الاصطناعي بالكامل، ولم يراجعه أي متحدّث أصلي. عامِله كتعرّف أوّلي على اللغة لا كمقرّر موثوق، وتحقّق مما تتعلّمه من مصدر آخر.					
+05_practice.strings	PRACTICE_TITLE	Practice	التدريب					
+05_practice.strings	PRACTICE_PHRASEBOOK	Travel phrasebook	دليل عبارات السفر					
+05_practice.strings	PRACTICE_PHRASEBOOK_SUB	The most-used phrases for daily life and travel	أكثر العبارات استخدامًا في الحياة اليومية والسفر					
+05_practice.strings	PHRASEBOOK_TITLE	Travel phrasebook	دليل عبارات السفر					
+05_practice.strings	PHRASEBOOK_BODY	The phrases you need most in daily life and when travelling. Tap a phrase to hear it, and add the ones you want to remember to your reviews.	العبارات التي تحتاجها أكثر في الحياة اليومية وفي السفر. اضغط لسماع العبارة، وأضف ما تريد تذكّره إلى مراجعاتك.					
+05_practice.strings	PHRASEBOOK_ADD	Add to reviews	أضف إلى المراجعات					
+05_practice.strings	PHRASEBOOK_ADDED	Added to your reviews	أُضيفت إلى مراجعاتك					
+05_practice.strings	PHRASE_TOPIC_ESSENTIALS	Essentials	الأساسيات					
+05_practice.strings	PHRASE_TOPIC_EMERGENCY	Emergencies	الطوارئ					
+05_practice.strings	PHRASE_TOPIC_RESTAURANT	Restaurant	المطعم					
+05_practice.strings	PHRASE_TOPIC_HOTEL	Hotel	الفندق					
+05_practice.strings	PHRASE_TOPIC_TRANSPORT	Transport	المواصلات					
+05_practice.strings	PHRASE_TOPIC_SIGHTSEEING	Sightseeing	السياحة					
+05_practice.strings	PRACTICE_SPEAKING	Speaking path	مسار المحادثة					
+05_practice.strings	PRACTICE_SPEAKING_SUB	Speaking missions from A1 to C1	مهام محادثة من A1 إلى C1					
+05_practice.strings	SPEAKING_TITLE	Speaking path	مسار المحادثة					
+05_practice.strings	SPEAKING_BODY	Fluency comes from speaking a lot, at the right level. Each mission is a real conversation with your tutor with clear tasks; it counts when you complete the tasks in turns that are long enough for the level.	تأتي الطلاقة من كثرة التحدث في المستوى المناسب. كل مهمة محادثة حقيقية مع معلّمك بمهام واضحة، وتُحتسب عندما تنجز المهام بجمل طويلة بما يكفي للمستوى.					
+05_practice.strings	SPEAKING_NEXT	Your next mission	مهمتك التالية					
+05_practice.strings	SPEAKING_START	Start mission	ابدأ المهمة					
+05_practice.strings	SPEAKING_AGAIN	Practise again	تدرّب مرة أخرى					
+05_practice.strings	SPEAKING_ALL_DONE	You have passed every mission on the path. Keep talking with your tutor about anything you like.	أنجزت كل مهام المسار. واصل الحديث مع معلّمك في أي موضوع تحبه.					
+05_practice.strings	SPEAKING_LEVEL	{0} · {1} of {2} passed	{0} · أُنجز {1} من {2}					
+05_practice.strings	SPEAKING_PASSED	Passed	أُنجزت					
+05_practice.strings	SPEAKING_NEW	New	جديدة					
+05_practice.strings	SPEAKING_ATTEMPTS	{0} attempt|{0} attempts	لا محاولات|محاولة واحدة|محاولتان|{0} محاولات|{0} محاولة|{0} محاولة					
+05_practice.strings	SPEAKING_STATS	Your speaking	محادثتك					
+05_practice.strings	SPEAKING_NO_DATA	No speaking data yet. Your measurements appear after your first conversation.	لا توجد بيانات محادثة بعد. تظهر قياساتك بعد محادثتك الأولى.					
+05_practice.strings	SPEAKING_WORDS_PER_TURN	Words per turn (median)	كلمات في كل دور (الوسيط)					
+05_practice.strings	SPEAKING_LONGEST	Longest turn (words)	أطول دور (كلمات)					
+05_practice.strings	SPEAKING_WPM	Words per minute	كلمة في الدقيقة					
+05_practice.strings	SPEAKING_SPOKEN_SHARE	Turns spoken aloud	الأدوار المنطوقة					
+05_practice.strings	SPEAKING_VARIETY	Vocabulary variety: {0}% different words in each 50-word stretch	تنوّع المفردات: ⁦{0}٪⁩ كلمات مختلفة في كل 50 كلمة					
+05_practice.strings	SPEAKING_VARIETY_LOW	Vocabulary variety appears after about 50 words of speaking.	يظهر تنوّع المفردات بعد نحو 50 كلمة من الحديث.					
+05_practice.strings	SPEAKING_CORRECTIONS	Corrections: {0} per 10 turns	التصحيحات: {0} لكل 10 أدوار					
+05_practice.strings	SPEAKING_WPM_NONE	Words per minute needs at least three spoken turns with the microphone.	يحتاج حساب الكلمات في الدقيقة إلى ثلاثة أدوار منطوقة على الأقل بالميكروفون.					
+05_practice.strings	SPEAKING_STATS_NOTE	Measured only from what you said in this app. Speaking time comes from speech recognition and is approximate; Mandarin word counts are estimated from characters.	تُقاس فقط مما قلته في هذا التطبيق. زمن الحديث مأخوذ من التعرّف على الكلام وهو تقريبي، وعدد الكلمات الصينية مقدَّر من عدد الحروف.					
+05_practice.strings	SPEAKING_WEEKLY	Words per turn, by week	الكلمات في كل دور حسب الأسبوع					
+05_practice.strings	SPEAKING_WEEKLY_DESC	Median words per turn by week: {0}	وسيط الكلمات في كل دور حسب الأسبوع: {0}					
+05_practice.strings	SPEAKING_ABOUT_TITLE	How missions count	كيف تُحتسب المهام					
+05_practice.strings	SPEAKING_ABOUT	A mission passes when you take enough turns, your typical turn is long enough for the level, and the tasks are confirmed: by the AI tutor, or by finishing the built-in role-play when you practise offline. Levels are practice targets, not an official certificate. Missions without a built-in role-play need an AI tutor (cloud or a local model).	تُحتسب المهمة عندما تأخذ أدوارًا كافية، ويكون طول دورك المعتاد مناسبًا للمستوى، وتُؤكَّد المهام: من معلّم الذكاء الاصطناعي، أو بإكمال الموقف المدمج عند التدرّب دون اتصال. المستويات أهداف تدريبية وليست شهادة رسمية. المهام التي لا يقابلها موقف مدمج تحتاج إلى معلّم ذكاء اصطناعي (سحابي أو نموذج محلي).					
+05_practice.strings	PRACTICE_REVIEW	Spaced review	المراجعة المتباعدة					
+05_practice.strings	PRACTICE_REVIEW_SUB	Words and phrases that are due	الكلمات والعبارات المستحقة					
+05_practice.strings	PRACTICE_MISTAKES	Mistake review	مراجعة الأخطاء					
+05_practice.strings	PRACTICE_MISTAKES_SUB	Learn from what went wrong	تعلّم مما أخطأت فيه					
+05_practice.strings	PRACTICE_GRAMMAR	Grammar	القواعد					
+05_practice.strings	PRACTICE_GRAMMAR_SUB	Rules, examples and common mistakes	القواعد والأمثلة والأخطاء الشائعة					
+05_practice.strings	PRACTICE_READING	Reading	القراءة					
+05_practice.strings	PRACTICE_READING_SUB	Graded texts with audio and questions	نصوص متدرجة مع الصوت والأسئلة					
+05_practice.strings	PRACTICE_LISTENING	Listening and dictation	الاستماع والإملاء					
+05_practice.strings	PRACTICE_LISTENING_SUB	Hear it, type it	استمع واكتب					
+05_practice.strings	PRACTICE_WRITING	Writing	الكتابة					
+05_practice.strings	PRACTICE_WRITING_SUB	Guided and free writing with feedback	كتابة موجّهة وحرّة مع ملاحظات					
+05_practice.strings	PRACTICE_PRONUNCIATION	Pronunciation	النطق					
+05_practice.strings	PRACTICE_PRONUNCIATION_SUB	Listen and repeat	استمع وكرّر					
+05_practice.strings	PRACTICE_TONES	Tone trainer	مدرّب النغمات					
+05_practice.strings	PRACTICE_CHARS	Character writing	كتابة الحروف الصينية					
+05_practice.strings	PRACTICE_CHARS_SUB	Trace and write Chinese characters	تتبّع الحروف الصينية واكتبها					
+05_practice.strings	PRACTICE_LETTERS	Letter writing	كتابة الحروف					
+05_practice.strings	PRACTICE_LETTERS_SUB	Write each letter, with its dots, in the right direction	اكتب كل حرف بنقاطه وفي اتجاهه الصحيح					
+05_practice.strings	LETTERS_TITLE	Letter writing	كتابة الحروف					
+05_practice.strings	LETTERS_BODY	Write each {0} letter on its own with your finger, from right to left. Watch how it is written, trace the guide, then turn the guide off.	اكتب كل حرف من حروف {0} منفصلًا بإصبعك، من اليمين إلى اليسار. شاهد طريقة كتابته، وتتبّع الحرف الإرشادي، ثم أخفِه.					
+05_practice.strings	LETTERS_NOT_ACTIVE	Letter writing is for Arabic and Urdu. These are the Arabic letters; switch your active language to practise Urdu.	كتابة الحروف للعربية والأردية. هذه حروف العربية؛ غيّر لغتك النشطة لتتدرّب على الأردية.					
+05_practice.strings	LETTERS_UNREVIEWED	The model letters are drawn for this app in a simple Naskh hand and have not been reviewed by a teacher yet.	نماذج الحروف مرسومة لهذا التطبيق بخط نسخ بسيط، ولم يراجعها معلّم بعد.					
+05_practice.strings	LETTERS_POSITION	Letter {0} of {1}	الحرف {0} من {1}					
+05_practice.strings	LETTERS_PICK	Choose a letter	اختر حرفًا					
+05_practice.strings	LETTERS_SHOW_HOW	Show how it is written	اعرض طريقة الكتابة					
+05_practice.strings	LETTERS_BOX_DESC	Writing box for {0}. {1} strokes drawn.	مربع كتابة الحرف {0}. عدد الضربات المرسومة: {1}.					
+05_practice.strings	LETTERS_DOTS_N	{0} dot|{0} dots	لا نقاط|نقطة واحدة|نقطتان|{0} نقاط|{0} نقطة|{0} نقطة					
+05_practice.strings	LETTERS_ABOVE	above it	فوقه					
+05_practice.strings	LETTERS_BELOW	under it	تحته					
+05_practice.strings	LETTERS_INSIDE	inside it	داخله					
+05_practice.strings	LETTERS_HAS_DOTS	This letter has {0} {1}.	لهذا الحرف {0} {1}.					
+05_practice.strings	LETTERS_HAS_SMALL_TA	This letter has a small ط {0}.	لهذا الحرف طاء صغيرة {0}.					
+05_practice.strings	LETTERS_HAS_MARK	This letter has a small mark {0}.	لهذا الحرف علامة صغيرة {0}.					
+05_practice.strings	LETTERS_NO_DOTS	This letter has no dots.	هذا الحرف بلا نقاط.					
+05_practice.strings	LETTERS_GOOD	Well written: the shape, the dots and the direction match.	أحسنت: الشكل والنقاط والاتجاه مطابقة.					
+05_practice.strings	LETTERS_CLOSE	Close. See the notes below.	قريب. انظر الملاحظات أدناه.					
+05_practice.strings	LETTERS_TRY_AGAIN	Not yet. See the notes below and try again.	ليس بعد. انظر الملاحظات أدناه وحاول مرة أخرى.					
+05_practice.strings	LETTERS_SHAPE_GOOD	Shape: matches the model.	الشكل: مطابق للنموذج.					
+05_practice.strings	LETTERS_SHAPE_CLOSE	Shape: close; compare it with the guide.	الشكل: قريب، فقارنه بالحرف الإرشادي.					
+05_practice.strings	LETTERS_SHAPE_OFF	Shape: different from this letter. Watch how it is written.	الشكل: مختلف عن هذا الحرف. شاهد طريقة كتابته.					
+05_practice.strings	LETTERS_MARKS_RIGHT	Dots: right number, right place.	النقاط: عددها ومكانها صحيحان.					
+05_practice.strings	LETTERS_FOUND	You wrote {0}, or in another place.	كتبتَ {0}، أو في مكان آخر.					
+05_practice.strings	LETTERS_FOUND_NONE	You wrote none.	لم تكتب شيئًا منها.					
+05_practice.strings	LETTERS_SIGN_CHECK	Check that it is there and in its place.	تأكّد من وجودها في مكانها.					
+05_practice.strings	LETTERS_REVERSED	Direction: your main stroke went the other way. Start where the demonstration starts.	الاتجاه: ضربتك الرئيسية في الاتجاه المعاكس. ابدأ من حيث يبدأ العرض.					
+05_practice.strings	LETTERS_MARKS_FIRST	Tip: write the letter's body first, then the dots.	نصيحة: اكتب جسم الحرف أولًا ثم النقاط.					
+05_practice.strings	LETTERS_PREVIOUS	Previous	السابق					
+05_practice.strings	LETTERS_ABOUT	"Three things are checked separately: the letter's shape against a model drawn for this app, the number and place of its dots (two dots written as a short dash, or three as a small caret, count too), and the direction of the main stroke. Handwriting styles vary, so a correct letter is sometimes only ""close"". It does not judge calligraphy."	تُفحص ثلاثة أمور منفصلة: شكل الحرف مقارنةً بنموذج مرسوم لهذا التطبيق، وعدد نقاطه ومكانها (تُحسب النقطتان المكتوبتان شرطةً قصيرة، والثلاث المكتوبة على شكل ^ صغيرة)، واتجاه الضربة الرئيسية. تختلف الخطوط، فقد يُعدّ الحرف الصحيح «قريبًا» أحيانًا. ولا يُقيَّم جمال الخط.					
+05_practice.strings	PRACTICE_TONES_SUB	Hear and tell apart Mandarin tones	استمع وميّز نغمات الصينية					
+05_practice.strings	PRACTICE_RELAX	Relax and focus	استرخِ وركّز					
+05_practice.strings	PRACTICE_RELAX_SUB	Optional breathing before you practise	تنفّس اختياري قبل التدريب					
+05_practice.strings	PRACTICE_VOCAB	My vocabulary	مفرداتي					
+05_practice.strings	PRACTICE_VOCAB_SUB	Saved words and your phrasebook	الكلمات المحفوظة ودفتر عباراتك					
+05_practice.strings	PRACTICE_SCENARIOS	Role-play scenarios	مواقف تمثيل الأدوار					
+05_practice.strings	PRACTICE_SCENARIOS_SUB	Rehearse real situations	تدرّب على مواقف حقيقية					
+05_practice.strings	REVIEW_TITLE	Review	المراجعة					
+05_practice.strings	REVIEW_DUE_COUNT	{0} card to review|{0} cards to review	لا بطاقات للمراجعة|بطاقة واحدة للمراجعة|بطاقتان للمراجعة|{0} بطاقات للمراجعة|{0} بطاقة للمراجعة|{0} بطاقة للمراجعة					
+05_practice.strings	REVIEW_EMPTY_TITLE	All caught up	لا شيء متأخر					
+05_practice.strings	REVIEW_EMPTY_BODY	Nothing is due. Words from your lessons will come back here just before you're likely to forget them.	لا شيء مستحق الآن. ستعود كلمات دروسك إلى هنا قبيل الوقت الذي يُحتمل أن تنساها فيه.					
+05_practice.strings	REVIEW_SHOW	Show answer	إظهار الإجابة					
+05_practice.strings	REVIEW_RATE	How well did you remember?	إلى أي حد تذكّرتها؟					
+05_practice.strings	RATING_AGAIN	Again	مجددًا					
+05_practice.strings	RATING_HARD	Hard	صعب					
+05_practice.strings	RATING_GOOD	Good	جيد					
+05_practice.strings	RATING_EASY	Easy	سهل					
+05_practice.strings	RATING_DESC	{0}, next review {1}	{0}، المراجعة التالية {1}					
+05_practice.strings	REVIEW_DONE_TITLE	Session complete	اكتملت الجلسة					
+05_practice.strings	REVIEW_DONE_BODY	{0} card reviewed|{0} cards reviewed	لم تُراجَع بطاقات|رُوجعت بطاقة واحدة|رُوجعت بطاقتان|رُوجعت {0} بطاقات|رُوجعت {0} بطاقة|رُوجعت {0} بطاقة					
+05_practice.strings	REVIEW_HOW	Spaced repetition brings each item back just before you are likely to forget it, so a few minutes a day goes a long way.	تعيد المراجعة المتباعدة كل عنصر قبيل احتمال نسيانه، لذا تُحدث دقائق قليلة يوميًا فرقًا كبيرًا.					
+05_practice.strings	REVIEW_LEECH	This one keeps slipping away. Try writing your own example sentence for it.	هذه الكلمة تتفلّت منك مرارًا، جرّب أن تكتب لها جملة مثال من عندك.					
+05_practice.strings	MISTAKES_TITLE	Mistake review	مراجعة الأخطاء					
+05_practice.strings	MISTAKES_EMPTY_TITLE	No open mistakes	لا أخطاء مفتوحة					
+05_practice.strings	MISTAKES_EMPTY_BODY	When you get an exercise wrong it appears here, so you can see the pattern and fix it.	عندما تخطئ في تمرين يظهر هنا، لترى النمط وتصحّحه.					
+05_practice.strings	MISTAKE_YOURS	You wrote: {0}	كتبت: {0}					
+05_practice.strings	MISTAKE_CORRECT	Correct: {0}	الصحيح: {0}					
+05_practice.strings	MISTAKE_TIMES	Seen {0} time|Seen {0} times	لم يتكرر|تكرر مرة واحدة|تكرر مرتين|تكرر {0} مرات|تكرر {0} مرة|تكرر {0} مرة					
+05_practice.strings	MISTAKE_RESOLVE	I've got it now	فهمتها الآن					
+05_practice.strings	MISTAKE_RESOLVED	Resolved	تمت المعالجة					
+05_practice.strings	MISTAKES_SHOW_RESOLVED	Show resolved	إظهار ما عولج					
+05_practice.strings	GRAMMAR_TITLE	Grammar	القواعد					
+05_practice.strings	GRAMMAR_RULE	The rule	القاعدة					
+05_practice.strings	GRAMMAR_EXAMPLES	Examples	أمثلة					
+05_practice.strings	GRAMMAR_MISTAKES	Common mistakes	أخطاء شائعة					
+05_practice.strings	GRAMMAR_INCORRECT	Incorrect	غير صحيح					
+05_practice.strings	GRAMMAR_PRACTISE	Practise in a lesson	تدرّب عليها في درس					
+05_practice.strings	READING_TITLE	Reading	القراءة					
+05_practice.strings	READING_TAP_HINT	Tap a sentence to hear it and see its translation. Highlighted words are in your course.	اضغط على جملة لسماعها ورؤية ترجمتها. الكلمات المظلّلة موجودة في دورتك.					
+05_practice.strings	READING_QUESTIONS	Check your understanding	اختبر فهمك					
+05_practice.strings	READING_SAVE_WORDS	Add highlighted words to review	أضف الكلمات المظلّلة إلى المراجعة					
+05_practice.strings	READING_WORDS_ADDED	Words added to your reviews	أُضيفت الكلمات إلى مراجعاتك					
+05_practice.strings	READING_RESULT	{0} of {1} answered correctly	أجبت عن {0} من {1} إجابة صحيحة					
+05_practice.strings	READING_PLAY_ALL	Play whole text	تشغيل النص كاملًا					
+05_practice.strings	LISTENING_TITLE	Listening and dictation	الاستماع والإملاء					
+05_practice.strings	LISTENING_SPEED	Playback speed	سرعة التشغيل					
+05_practice.strings	LISTENING_REVEAL	Show the sentence	إظهار الجملة					
+05_practice.strings	LISTENING_NEXT	Next sentence	الجملة التالية					
+05_practice.strings	LISTENING_INTRO	Listen as many times as you like, then type what you hear. Small spelling slips are pointed out but not penalised heavily.	استمع كما تشاء ثم اكتب ما تسمعه. نشير إلى أخطاء الإملاء البسيطة دون معاقبة شديدة.					
+05_practice.strings	WRITING_TITLE	Writing	الكتابة					
+05_practice.strings	WRITING_CHOOSE	Choose a prompt	اختر موضوعًا					
+05_practice.strings	WRITING_MIN	At least {0} words	{0} كلمة على الأقل					
+05_practice.strings	WRITING_PLACEHOLDER	Write your text here	اكتب نصك هنا					
+05_practice.strings	WRITING_CHECK_BASIC	Check basics	فحص الأساسيات					
+05_practice.strings	WRITING_CHECK_AI	Get AI feedback	احصل على ملاحظات الذكاء الاصطناعي					
+05_practice.strings	WRITING_AI_BLOCKED	AI feedback isn't available: your privacy settings don't allow sending writing to cloud AI, or no provider is set up. Basic checks still work.	ملاحظات الذكاء الاصطناعي غير متاحة: إعدادات الخصوصية لا تسمح بإرسال الكتابة إلى الذكاء الاصطناعي السحابي، أو لم يُهيأ مزوّد. ما زالت الفحوص الأساسية تعمل.					
+05_practice.strings	WRITING_AI_FAILED	AI feedback failed: {0}	تعذّر الحصول على ملاحظات الذكاء الاصطناعي: {0}					
+05_practice.strings	WRITING_SOURCE_OFFLINE	Basic checks done on this device. They don't judge grammar.	فحوص أساسية على هذا الجهاز، ولا تقيّم القواعد.					
+05_practice.strings	WRITING_SOURCE_AI	Feedback from {0}. AI can be wrong — double-check anything surprising.	ملاحظات من {0}. قد يخطئ الذكاء الاصطناعي، فتحقّق من أي شيء يثير الاستغراب.					
+05_practice.strings	WRITING_CORRECTIONS	Corrections	التصحيحات					
+05_practice.strings	WRITING_OPTIONAL_STYLE	Optional style suggestion	اقتراح أسلوبي اختياري					
+05_practice.strings	WRITING_IMPROVED	A polished version	نسخة منقّحة					
+05_practice.strings	WRITING_DRAFTS	Drafts this session	مسودات هذه الجلسة					
+05_practice.strings	WRITING_DRAFT_N	Draft {0} · {1}	المسودة {0} · {1}					
+05_practice.strings	WCHECK_TOO_SHORT	A bit short — aim for the suggested length.	قصير قليلًا، حاول الوصول إلى الطول المقترح.					
+05_practice.strings	WCHECK_GOOD_LENGTH	Good length.	طول مناسب.					
+05_practice.strings	WCHECK_SUGGESTED_WORDS_MISSING	Try to include some of the suggested words.	حاول تضمين بعض الكلمات المقترحة.					
+05_practice.strings	WCHECK_USED_SUGGESTED_WORDS	You used suggested words: {0}	استخدمت كلمات مقترحة: {0}					
+05_practice.strings	WCHECK_REPEATED_WORDS	Repeated words: {0}. Can you vary them?	كلمات مكررة: {0}. هل يمكنك تنويعها؟					
+05_practice.strings	WCHECK_MISSING_CAPITAL	Start the text with a capital letter.	ابدأ النص بحرف كبير.					
+05_practice.strings	WCHECK_MISSING_END_PUNCTUATION	End with punctuation.	اختم بعلامة ترقيم.					
+05_practice.strings	PRON_TITLE	Pronunciation	النطق					
+05_practice.strings	PRON_BODY	Listen to a model sentence, then say it yourself. Slow the audio down if it helps.	استمع إلى الجملة النموذجية ثم قلها بنفسك، وأبطئ الصوت إن كان ذلك يساعدك.					
+05_practice.strings	CHARS_TITLE	Character writing	كتابة الحروف الصينية					
+05_practice.strings	CHARS_BODY	Write each character in the box with your finger. Start by tracing the faded guide, then turn it off and write from memory.	اكتب كل حرف في المربع بإصبعك. ابدأ بتتبّع الحرف الباهت ثم أخفِه واكتب من الذاكرة.					
+05_practice.strings	CHARS_NOT_MANDARIN	Character writing is for Mandarin. Switch your active language to Mandarin to track progress there.	كتابة الحروف مخصّصة للصينية، فبدّل لغتك النشطة إلى الصينية لتتابع تقدّمك فيها.					
+05_practice.strings	CHARS_STROKES	{0} strokes	عدد الضربات: {0}					
+05_practice.strings	CHARS_ROLE_MEANING	meaning	معنى					
+05_practice.strings	CHARS_ROLE_SOUND	sound	صوت					
+05_practice.strings	CHARS_ROLE_PART	part	جزء					
+05_practice.strings	CHARS_GUIDE	Show guide	إظهار الحرف الإرشادي					
+05_practice.strings	CHARS_GUIDE_SUB	Turn off to write from memory	أخفِه لتكتب من الذاكرة					
+05_practice.strings	CHARS_BOX_DESC	Writing box for {0}. {1} strokes drawn.	مربع كتابة الحرف {0}. عدد الضربات المرسومة: {1}.					
+05_practice.strings	CHARS_UNDO	Undo stroke	تراجع عن ضربة					
+05_practice.strings	CHARS_CLEAR	Clear	مسح					
+05_practice.strings	CHARS_CHECK	Check	تحقّق					
+05_practice.strings	CHARS_GOOD	Well written — the shape matches.	أحسنت، الشكل مطابق.					
+05_practice.strings	CHARS_CLOSE	Close. Compare with the guide: a stroke may be missing or out of place.	قريب. قارن بالحرف الإرشادي، فقد تكون هناك ضربة ناقصة أو في غير مكانها.					
+05_practice.strings	CHARS_TRY_AGAIN	Not quite. Turn on the guide and trace it once more.	ليس تمامًا. أظهر الحرف الإرشادي وتتبّعه مرة أخرى.					
+05_practice.strings	CHARS_EMPTY	Draw the character first.	ارسم الحرف أولًا.					
+05_practice.strings	CHARS_SCORES	Shape covered: {0}% · ink on the character: {1}%	نسبة تغطية الشكل: ⁦{0}٪⁩ · الحبر على الحرف: ⁦{1}٪⁩					
+05_practice.strings	CHARS_STROKES_MORE	You drew {0} strokes; this character has {1}.	رسمت {0} ضربات، وهذا الحرف فيه {1}.					
+05_practice.strings	CHARS_STROKES_FEWER	You drew {0} strokes; this character has {1}. Some strokes may be joined.	رسمت {0} ضربات، وهذا الحرف فيه {1}، وربما وصلت بعض الضربات ببعضها.					
+05_practice.strings	CHARS_ABOUT_TITLE	How checking works	كيف يتم التحقق					
+05_practice.strings	CHARS_ABOUT	Your writing is compared with the character's shape on this device, and its stroke order and direction with stroke data from Make Me a Hanzi (Arphic Public License). Both checks are tolerant comparisons, not handwriting recognition. Parts are shown for the course characters, simplified and traditional; for the other characters the stroke count comes from the stroke data.	تُقارن كتابتك بشكل الحرف على هذا الجهاز، ويُقارن ترتيب ضرباتك واتجاهها ببيانات الضربات من مشروع Make Me a Hanzi (رخصة Arphic العامة). المقارنتان تقريبيتان وليستا تعرّفًا على الكتابة اليدوية. الأجزاء مشروحة لحروف الدروس، المبسّطة والتقليدية، ويُؤخذ عدد الضربات لبقية الحروف من بيانات الضربات.					
+05_practice.strings	TONES_TITLE	Tone trainer	مدرّب النغمات					
+05_practice.strings	TONES_BODY	Mandarin has four tones plus a neutral tone. The same syllable with a different tone is a different word.	للصينية أربع نغمات ونغمة محايدة، والمقطع نفسه بنغمة مختلفة كلمة مختلفة.					
+05_practice.strings	TONES_SANDHI	When two 3rd tones meet, the first is said as a 2nd tone: nǐ hǎo sounds like ní hǎo.	عند تتابع نغمتين ثالثتين تُنطق الأولى كنغمة ثانية: nǐ hǎo تُنطق ní hǎo.					
+05_practice.strings	TONES_SCORE	{0} of {1} correct	{0} من {1} صحيحة					
+05_practice.strings	TONES_NOT_MANDARIN	The tone trainer is for Mandarin. Switch your active language to Mandarin to use it.	مدرّب النغمات مخصّص للصينية، فبدّل لغتك النشطة إلى الصينية لاستخدامه.					
+05_practice.strings	TONES_CHARACTERS	Show traditional characters	إظهار الحروف التقليدية					
+05_practice.strings	RELAX_TITLE	Relax and focus	استرخِ وركّز					
+05_practice.strings	RELAX_BODY	A short, optional breathing exercise. Stop whenever you like.	تمرين تنفّس قصير واختياري، يمكنك التوقف متى شئت.					
+05_practice.strings	RELAX_START	Begin	ابدأ					
+05_practice.strings	RELAX_STOP	Stop	توقّف					
+05_practice.strings	RELAX_INHALE	Breathe in	شهيق					
+05_practice.strings	RELAX_HOLD	Hold	احبس					
+05_practice.strings	RELAX_EXHALE	Breathe out	زفير					
+05_practice.strings	RELAX_HOLD_EMPTY	Rest	استرح					
+05_practice.strings	RELAX_CYCLE	Round {0} of {1}	الجولة {0} من {1}					
+05_practice.strings	RELAX_DONE	Nicely done. Ready when you are.	أحسنت. ابدأ متى كنت مستعدًا.					
+05_practice.strings	RELAX_REFLECT	Reflection: what is one thing you learned today?	تأمّل: ما الشيء الذي تعلّمته اليوم؟					
+05_practice.strings	RELAX_ROUNDS	Rounds	الجولات					
+05_practice.strings	RELAX_SECONDS	{0} seconds	{0} ثانية					
+05_practice.strings	STORY_INTRO	Short graded stories with audio. Tap any word to see its meaning and save it to your reviews.	قصص قصيرة متدرّجة مع الصوت. اضغط على أي كلمة لترى معناها وتحفظها في مراجعاتك.					
+05_practice.strings	STORY_CREATE	A story about what you like	قصة عمّا تحبّه					
+05_practice.strings	STORY_CREATE_BODY	Tell the AI tutor a topic and it writes a new story at your level, with translations, a glossary and questions.	اكتب موضوعًا وسيكتب المدرّب الذكي قصة جديدة بمستواك، مع الترجمة ومسرد للكلمات وأسئلة.					
+05_practice.strings	STORY_INTEREST	Topic (e.g. football, cooking)	الموضوع (مثل: كرة القدم، الطبخ)					
+05_practice.strings	STORY_LEVEL	Level	المستوى					
+05_practice.strings	STORY_WRITE	Write my story	اكتب قصتي					
+05_practice.strings	STORY_NEEDS_AI	Writing new stories needs an AI provider. The built-in stories below work offline.	كتابة قصص جديدة تحتاج إلى مزوّد ذكاء اصطناعي. القصص المدمجة أدناه تعمل دون اتصال.					
+05_practice.strings	STORY_FAILED	The story could not be written: {0}	تعذّرت كتابة القصة: {0}					
+05_practice.strings	STORY_AI_NOTE	Only the topic and your level are sent to the AI provider.	يُرسل الموضوع ومستواك فقط إلى مزوّد الذكاء الاصطناعي.					
+05_practice.strings	STORY_MINE	Your stories	قصصك					
+05_practice.strings	STORY_BUILT_IN	Course stories	قصص الدورة					
+05_practice.strings	STORY_AI_WRITTEN	Written by AI	كتبها الذكاء الاصطناعي					
+05_practice.strings	STORY_TAPPABLE	Tap words	كلمات قابلة للضغط					
+05_practice.strings	STORY_DELETE	Delete story?	حذف القصة؟					
+05_practice.strings	STORY_DELETE_BODY	“{0}” will be removed. Words you saved stay in your reviews.	ستُحذف «{0}». الكلمات التي حفظتها تبقى في مراجعاتك.					
+05_practice.strings	STORY_AI_CHECK	This story was written by AI. It is usually correct, but it may contain mistakes.	كتب هذه القصةَ الذكاءُ الاصطناعي. هي صحيحة عادةً لكنها قد تحتوي على أخطاء.					
+05_practice.strings	STORY_TAP_HINT	Tap a word for its meaning. Use the buttons under each sentence to hear it or see its translation.	اضغط على كلمة لمعرفة معناها. استخدم الأزرار تحت كل جملة لسماعها أو رؤية ترجمتها.					
+05_practice.strings	STORY_TRANSLATE	Show translation	أظهر الترجمة					
+05_practice.strings	STORY_NO_MEANING	No meaning is saved for this word yet. Try the sentence translation.	لا يوجد معنى محفوظ لهذه الكلمة بعد. جرّب ترجمة الجملة.					
+05_practice.strings	STORY_SAVE_WORD	Add to my reviews	أضف إلى مراجعاتي					
+05_practice.strings	STORY_WORD_SAVED	Added to your reviews	أُضيفت إلى مراجعاتك					
+05_practice.strings	STORY_MARK_READ	I've read it	قرأتها					
+05_practice.strings	STORY_DONE	Story finished — well done!	أنهيت القصة. أحسنت!					
+05_practice.strings	STORY_TOPIC_FOOTBALL	football	كرة القدم					
+05_practice.strings	STORY_TOPIC_COOKING	cooking	الطبخ					
+05_practice.strings	STORY_TOPIC_TRAVEL	travel	السفر					
+05_practice.strings	STORY_TOPIC_MUSIC	music	الموسيقى					
+05_practice.strings	STORY_TOPIC_TECHNOLOGY	technology	التقنية					
+05_practice.strings	STORY_TOPIC_FAMILY	family	العائلة					
+05_practice.strings	STORY_TOPIC_ANIMALS	animals	الحيوانات					
+05_practice.strings	STORY_TOPIC_HISTORY	history	التاريخ					
+05_practice.strings	PRON_DETAIL_TITLE	Detailed scoring	تقييم مفصّل					
+05_practice.strings	PRON_DETAIL_SETUP	Get a score for every word and sound by connecting a pronunciation service (your own Azure AI Speech key).	احصل على درجة لكل كلمة وكل صوت بربط خدمة تقييم النطق (مفتاح Azure AI Speech الخاص بك).					
+05_practice.strings	PRON_DETAIL_SET_UP	Set up	إعداد					
+05_practice.strings	PRON_DETAIL_BODY	Read this sentence aloud, then tap Stop:	اقرأ هذه الجملة بصوت عالٍ ثم اضغط «إيقاف»:					
+05_practice.strings	PRON_DETAIL_RECORD	Record and score	سجّل وقيّم					
+05_practice.strings	PRON_DETAIL_STOP	Stop	إيقاف					
+05_practice.strings	PRON_DETAIL_LISTENING	Recording…	جارٍ التسجيل…					
+05_practice.strings	PRON_DETAIL_PRIVACY	The recording is sent to Azure AI Speech for scoring and is not saved by the app.	يُرسل التسجيل إلى Azure AI Speech للتقييم ولا يحفظه التطبيق.					
+05_practice.strings	PRON_ERR_PERMISSION	Microphone permission is needed.	يلزم إذن الميكروفون.					
+05_practice.strings	PRON_ERR_MIC	The microphone could not be used.	تعذّر استخدام الميكروفون.					
+05_practice.strings	PRON_ERR_QUOTA	The speech service limit was reached. Try again later.	بلغت حدّ خدمة الصوت. حاول لاحقًا.					
+05_practice.strings	PRON_ERR_NO_SPEECH	No speech was heard. Speak a little louder and closer to the microphone.	لم يُسمع كلام. تحدّث بصوت أعلى قليلًا وأقرب إلى الميكروفون.					
+05_practice.strings	PRON_ERR_TOO_SHORT	The recording was too short.	التسجيل قصير جدًا.					
+05_practice.strings	PRON_ERR_LANGUAGE	Detailed pronunciation scoring isn't available for this language yet. You can still practise by listening and repeating.	التقييم التفصيلي للنطق غير متاح لهذه اللغة بعد. يمكنك مواصلة التدرّب بالاستماع والتكرار.					
+05_practice.strings	PRON_ERR_OTHER	Scoring failed: {0}	فشل التقييم: {0}					
+05_practice.strings	PRON_SCORE_OVERALL	Overall	الإجمالي					
+05_practice.strings	PRON_SCORE_ACCURACY	Accuracy	الدقة					
+05_practice.strings	PRON_SCORE_FLUENCY	Fluency	الطلاقة					
+05_practice.strings	PRON_SCORE_COMPLETENESS	Completeness	الاكتمال					
+05_practice.strings	PRON_SCORE_PROSODY	Rhythm and intonation: {0}	الإيقاع والتنغيم: {0}					
+05_practice.strings	PRON_HEARD	Heard: {0}	ما سُمع: {0}					
+05_practice.strings	PRON_WORDS_TAP	Tap a word to see its sounds	اضغط على كلمة لرؤية أصواتها					
+05_practice.strings	PRON_WORD_DESC	{0}: {1} points, {2}	{0}: {1} نقطة، {2}					
+05_practice.strings	PRON_WORD_SCORE	Score {0} · {1}	الدرجة {0} · {1}					
+05_practice.strings	PRON_NO_PHONEMES	No sound-level scores for this word.	لا توجد درجات للأصوات في هذه الكلمة.					
+05_practice.strings	PRON_WEAK_SOUNDS	Sounds to practise: {0}	أصوات تحتاج إلى تدريب: {0}					
+05_practice.strings	PRON_GREAT	Very clear pronunciation. Well done!	نطق واضح جدًا. أحسنت!					
+05_practice.strings	PRON_SCORED_BY	Scored by {0}. Scores are an automatic estimate.	قيّمته خدمة {0}. الدرجات تقدير آلي.					
+05_practice.strings	PRON_ERR_TYPE_NONE	good	جيد					
+05_practice.strings	PRON_ERR_TYPE_MISPRONUNCIATION	mispronounced	نُطقت بشكل خاطئ					
+05_practice.strings	PRON_ERR_TYPE_OMISSION	missed	لم تُنطق					
+05_practice.strings	PRON_ERR_TYPE_INSERTION	extra word	كلمة زائدة					
+05_practice.strings	PRON_ERR_TYPE_UNEXPECTED_BREAK	unexpected pause	توقف غير متوقع					
+05_practice.strings	PRON_ERR_TYPE_MISSING_BREAK	missing pause	توقف ناقص					
+05_practice.strings	PRON_ERR_TYPE_MONOTONE	flat intonation	تنغيم رتيب					
+05_practice.strings	CHARS_SHOW_ORDER	Show stroke order	اعرض ترتيب الضربات					
+05_practice.strings	CHARS_ORDER_TITLE	Stroke order	ترتيب الضربات					
+05_practice.strings	CHARS_ORDER_OK	All {0} strokes are in the right order and direction.	الضربات الـ{0} كلها بالترتيب والاتجاه الصحيحين.					
+05_practice.strings	CHARS_ORDER_REVERSED	Stroke {0} goes the other way.	الضربة {0} في الاتجاه المعاكس.					
+05_practice.strings	CHARS_ORDER_SWAPPED	Stroke {0} belongs elsewhere in the order.	الضربة {0} مكانها مختلف في الترتيب.					
+05_practice.strings	CHARS_ORDER_DIFFERENT	Stroke {0} does not match the expected stroke.	الضربة {0} لا تطابق الضربة المتوقعة.					
+05_practice.strings	CHARS_ORDER_MISSING	Stroke {0} of {1} is missing.	الضربة {0} من {1} ناقصة.					
+05_practice.strings	CHARS_ORDER_EXTRA	There are more strokes than the {0} expected.	عدد الضربات أكثر من {0}.					
+05_practice.strings	CHARS_ORDER_COUNT	({0} of {1} strokes right)	({0} من {1} ضربات صحيحة)					
+05_practice.strings	CHARS_SET	Characters to practise	الحروف التي تتدرّب عليها					
+05_practice.strings	CHARS_SET_COURSE	Course	حروف الدروس					
+05_practice.strings	CHARS_SET_SUB	The course characters come with a breakdown into parts. Each word-list level adds the characters its words introduce.	حروف الدروس مشروحة بأجزائها. وكل مستوى من قوائم الكلمات يضيف الحروف التي تظهر لأول مرة في كلماته.					
+05_practice.strings	CHARS_POSITION	Character {0} of {1}	الحرف {0} من {1}					
+05_practice.strings	CHARS_SET_MISSED	To practise again ({0})	للتدرّب مجددًا ({0})					
+05_practice.strings	CHARS_MISSED_DONE	No characters left to practise again. Pick another set.	لا حروف متبقّية للتدرّب عليها مجددًا. اختر مجموعة أخرى.					
+05_practice.strings	REVIEW_POSTPONE_DAY	Later: tomorrow	لاحقًا: غدًا					
+05_practice.strings	REVIEW_POSTPONE_WEEK	Later: in a week	لاحقًا: بعد أسبوع					
+05_practice.strings	REVIEW_REMOVE	Remove from reviews	احذف من المراجعة					
+05_practice.strings	REVIEW_REMOVE_TITLE	Remove this item from your reviews?	حذف هذا العنصر من مراجعاتك؟					
+05_practice.strings	REVIEW_REMOVE_BODY	It will no longer be scheduled. Your past results stay in your statistics, and you can add it again later; it then starts as new.	لن يُجدول بعد الآن. تبقى نتائجك السابقة في الإحصاءات، ويمكنك إضافته مجددًا لاحقًا، فيبدأ عنصرًا جديدًا.					
+05_practice.strings	TONES_MODE_TONES	Four tones	النغمات الأربع					
+05_practice.strings	TONES_MODE_SANDHI	Tone changes	تغيّر النغمات					
+05_practice.strings	TONES_MODE_NEUTRAL	Neutral tone	النغمة المحايدة					
+05_practice.strings	TONES_MODE_PAIRS	Hear the difference	ميّز بالسمع					
+05_practice.strings	TONES_DRILL_ASK	How is the highlighted syllable said in this word?	كيف يُنطق المقطع المميّز في هذه الكلمة؟					
+05_practice.strings	TONES_PAIRS_ASK	Listen, then choose the word you heard.	استمع، ثم اختر الكلمة التي سمعتها.					
+05_practice.strings	TONES_RULE_BU	不 is bù, but bú before a fourth tone.	يُنطق 不 بنغمة رابعة (bù)، لكنه يصير bú قبل نغمة رابعة.					
+05_practice.strings	TONES_RULE_YI	一 is yī on its own or at the end, yí before a fourth tone, and yì before the other tones.	يُنطق 一 بنغمة أولى (yī) وحده أو في آخر الكلمة، ويصير yí قبل نغمة رابعة، وyì قبل بقية النغمات.					
+05_practice.strings	TONES_RULE_THIRD	When two third tones meet, the first is said as a second tone. Dictionaries still write both as third tones.	إذا التقت نغمتان ثالثتان نُطقت الأولى بنغمة ثانية، مع أنّ القواميس تكتبهما ثالثتين.					
+05_practice.strings	TONES_RULE_NEUTRAL	This syllable is said lightly and short, without its own tone; its pitch follows the syllable before it.	يُنطق هذا المقطع خفيفًا قصيرًا بلا نغمة خاصة به، ويتبع ارتفاعُه المقطعَ الذي قبله.					
+05_practice.strings	TONES_PAIRS_TONE	Same sounds, different tones.	الأصوات نفسها، والنغمات مختلفة.					
+05_practice.strings	TONES_PAIRS_SOUND	The same tones, one similar sound different.	النغمات نفسها، ويختلف صوت متقارب واحد.					
+05_practice.strings	TONES_DRILL_SOURCE	Questions are built from the 3000-word list (AI-written, not yet reviewed). The tone-change rules are standard Mandarin; real speech varies with speed and region.	الأسئلة مبنية من قائمة الـ3000 كلمة (مكتوبة بالذكاء الاصطناعي ولم تُراجع بعد). قواعد تغيّر النغمات هي قواعد الماندرين المعيارية، والكلام الفعلي يختلف بحسب السرعة والمنطقة.					
+06_tutor.strings	TUTORS_TITLE	Tutors	المعلّمون					
+06_tutor.strings	TUTORS_FOR	Tutors for {0}	معلّمو اللغة {0}					
+06_tutor.strings	TUTORS_ALL_LANGUAGES	Teaches any language	يعلّم أي لغة					
+06_tutor.strings	TUTOR_LEVELS	Levels {0}–{1}	المستويات {0}–{1}					
+06_tutor.strings	TUTOR_STYLE_SUPPORTIVE	Supportive	داعم					
+06_tutor.strings	TUTOR_STYLE_STRUCTURED	Structured	منهجي					
+06_tutor.strings	TUTOR_STYLE_ROLE_PLAY	Role-play	تمثيل أدوار					
+06_tutor.strings	TUTOR_STYLE_SOCRATIC	Guiding questions	أسئلة موجّهة					
+06_tutor.strings	TUTOR_STYLE_STORYTELLING	Storytelling	سرد القصص					
+06_tutor.strings	TUTOR_STYLE_PROFESSIONAL	Professional	مهني					
+06_tutor.strings	TUTOR_STYLE_CONFIDENCE_COACH	Confidence coach	مدرّب ثقة					
+06_tutor.strings	TUTOR_CORR_RECAST	Corrects by rephrasing naturally	يصحّح بإعادة الصياغة بشكل طبيعي					
+06_tutor.strings	TUTOR_CORR_PROMPT_SELF_CORRECTION	Lets you find the error first	يتيح لك اكتشاف الخطأ أولًا					
+06_tutor.strings	TUTOR_CORR_EXPLICIT_WITH_RULE	Explains the rule behind each correction	يشرح القاعدة وراء كل تصحيح					
+06_tutor.strings	TUTOR_FOCUS	Focus	التركيز					
+06_tutor.strings	TUTOR_SELECT	Choose {0}	اختر {0}					
+06_tutor.strings	TUTOR_SELECTED	Your tutor	معلّمك					
+06_tutor.strings	TUTOR_START	Free conversation	محادثة حرّة					
+06_tutor.strings	TUTOR_SCENARIOS	Role-play scenarios	مواقف تمثيل الأدوار					
+06_tutor.strings	TUTOR_SCENARIO_GOAL	Your goal: {0}	هدفك: {0}					
+06_tutor.strings	TUTOR_SETTINGS	Tutor settings	إعدادات المعلّم					
+06_tutor.strings	TUTOR_CORRECTION_LEVEL	Correction intensity	شدة التصحيح					
+06_tutor.strings	TUTOR_SHOW_TRANSLATIONS	Show translations by default	إظهار الترجمات افتراضيًا					
+06_tutor.strings	TUTOR_AVATAR_NOTE	Tutors are original characters with animated 2D portraits.	المعلّمون شخصيات أصلية بصور ثنائية الأبعاد متحركة.					
+06_tutor.strings	CONV_TITLE	Conversation with {0}	محادثة مع {0}					
+06_tutor.strings	CONV_ENGINE_AI	AI tutor via {0}	معلّم ذكاء اصطناعي عبر {0}					
+06_tutor.strings	CONV_ENGINE_AI_CLOUD	Cloud: your messages are sent to {0}.	سحابي: تُرسل رسائلك إلى {0}.					
+06_tutor.strings	CONV_ENGINE_AI_LOCAL	Runs on your own server or device.	يعمل على خادمك أو جهازك.					
+06_tutor.strings	CONV_ENGINE_OFFLINE	Offline practice partner — scripted, not AI	شريك تدريب دون اتصال — نص مُعدّ مسبقًا وليس ذكاءً اصطناعيًا					
+06_tutor.strings	OFFLINE_REASON_NO_PROVIDER_CONFIGURED	No AI provider is set up.	لم يُهيأ أي مزوّد للذكاء الاصطناعي.					
+06_tutor.strings	OFFLINE_REASON_CLOUD_DISABLED_BY_PRIVACY	Cloud AI is off in your privacy settings.	الذكاء الاصطناعي السحابي متوقف في إعدادات خصوصيتك.					
+06_tutor.strings	OFFLINE_REASON_OFFLINE_NETWORK	You're offline.	أنت غير متصل.					
+06_tutor.strings	OFFLINE_REASON_PROVIDER_FAILED	The AI provider didn't respond.	لم يستجب مزوّد الذكاء الاصطناعي.					
+06_tutor.strings	OFFLINE_REASON_USER_CHOSE_OFFLINE	You chose offline practice.	اخترت التدريب دون اتصال.					
+06_tutor.strings	CONV_SET_UP_AI	Set up AI	إعداد الذكاء الاصطناعي					
+06_tutor.strings	CONV_TRY_AI_AGAIN	Try AI again	جرّب الذكاء الاصطناعي مجددًا					
+06_tutor.strings	CONV_STATE_READY	Your turn	دورك					
+06_tutor.strings	CONV_STATE_LISTENING	Listening — microphone on	يستمع — الميكروفون يعمل					
+06_tutor.strings	CONV_STATE_PROCESSING	{0} is thinking…	{0} يفكّر…					
+06_tutor.strings	CONV_STATE_SPEAKING	{0} is speaking	{0} يتحدث					
+06_tutor.strings	CONV_STATE_PAUSED	Paused	متوقف مؤقتًا					
+06_tutor.strings	CONV_STATE_COMPLETED	Conversation ended	انتهت المحادثة					
+06_tutor.strings	CONV_MIC_START	Start speaking	ابدأ التحدث					
+06_tutor.strings	CONV_MIC_STOP	Stop and send	توقف وأرسل					
+06_tutor.strings	CONV_MIC_UNAVAILABLE	Microphone unavailable	الميكروفون غير متاح					
+06_tutor.strings	CONV_CANCEL_RECORDING	Cancel recording	إلغاء التسجيل					
+06_tutor.strings	CONV_STOP_SPEAKING	Stop audio	إيقاف الصوت					
+06_tutor.strings	CONV_TYPE	Type your reply	اكتب ردّك					
+06_tutor.strings	CONV_SEND	Send	إرسال					
+06_tutor.strings	CONV_HINT	Hint: {0}	تلميح: {0}					
+06_tutor.strings	CONV_SHOW_EXAMPLE	Show an example answer	أظهر إجابة نموذجية					
+06_tutor.strings	CONV_EXAMPLE	Example: {0}	مثال: {0}					
+06_tutor.strings	CONV_YOU	You	أنت					
+06_tutor.strings	CONV_CORRECTION	Correction	تصحيح					
+06_tutor.strings	CONV_STYLISTIC	Optional alternative	بديل اختياري					
+06_tutor.strings	CONV_ALTERNATIVE	Another way to say it	طريقة أخرى للقول					
+06_tutor.strings	CONV_VOCAB	Useful words	كلمات مفيدة					
+06_tutor.strings	CONV_REPLAY	Replay	إعادة التشغيل					
+06_tutor.strings	CONV_SAVE	Save phrase	حفظ العبارة					
+06_tutor.strings	CONV_SAVE_TITLE	Save to your phrasebook	احفظ في دفتر عباراتك					
+06_tutor.strings	CONV_SAVE_PHRASE	Phrase	العبارة					
+06_tutor.strings	CONV_SAVE_MEANING	Meaning (in your words)	المعنى (بكلماتك)					
+06_tutor.strings	CONV_SPOKEN	spoken	منطوق					
+06_tutor.strings	CONV_SPEED	Voice speed	سرعة الصوت					
+06_tutor.strings	CONV_END	End	إنهاء					
+06_tutor.strings	CONV_END_TITLE	End this conversation?	هل تريد إنهاء هذه المحادثة؟					
+06_tutor.strings	CONV_END_BODY	You'll see a summary with corrections to review.	سترى ملخصًا يتضمن التصحيحات للمراجعة.					
+06_tutor.strings	CONV_SUMMARY_TITLE	Conversation summary	ملخّص المحادثة					
+06_tutor.strings	CONV_SUMMARY_TURNS	You replied {0} time|You replied {0} times	لم ترد|رددت مرة واحدة|رددت مرتين|رددت {0} مرات|رددت {0} مرة|رددت {0} مرة					
+06_tutor.strings	CONV_SUMMARY_DURATION	Duration: {0}	المدة: {0}					
+06_tutor.strings	CONV_SUMMARY_CORRECTIONS	Corrections to review	تصحيحات للمراجعة					
+06_tutor.strings	CONV_SUMMARY_NO_CORRECTIONS	No corrections this time.	لا تصحيحات هذه المرة.					
+06_tutor.strings	CONV_SUMMARY_SAVED	{0} phrase saved|{0} phrases saved	لم تُحفظ عبارات|حُفظت عبارة واحدة|حُفظت عبارتان|حُفظت {0} عبارات|حُفظت {0} عبارة|حُفظت {0} عبارة					
+06_tutor.strings	CONV_SUMMARY_SCENARIO_DONE	Scenario completed	اكتمل الموقف					
+06_tutor.strings	FREE_TALK_TITLE	Talk about anything	تحدّث في أي موضوع					
+06_tutor.strings	FREE_TALK_BODY	Choose a topic or type your own. Your AI tutor talks with you about it, corrects your mistakes as you go and adapts to your level.	اختر موضوعًا أو اكتب موضوعك. يتحدث معك معلّمك الذكي فيه، ويصحّح أخطاءك أثناء الحديث، ويتكيّف مع مستواك.					
+06_tutor.strings	FREE_TALK_TOPIC_LABEL	Topic (optional)	الموضوع (اختياري)					
+06_tutor.strings	FREE_TALK_START	Start conversation	ابدأ المحادثة					
+06_tutor.strings	FREE_TALK_NOTE	Needs an AI provider (OpenAI, Gemini, Claude, DeepSeek or your own local model) in Settings. Without one, the offline tutor follows a short practice script.	يتطلب مزوّد ذكاء اصطناعي (OpenAI أو Gemini أو Claude أو DeepSeek أو نموذجك المحلي) في الإعدادات. دونه يتبع المعلّم غير المتصل نصًّا تدريبيًا قصيرًا.					
+06_tutor.strings	FREE_TOPIC_1	My weekend	عطلة نهاية الأسبوع					
+06_tutor.strings	FREE_TOPIC_2	Travel plans	خطط السفر					
+06_tutor.strings	FREE_TOPIC_3	Food and cooking	الطعام والطبخ					
+06_tutor.strings	FREE_TOPIC_4	Films and series	الأفلام والمسلسلات					
+06_tutor.strings	FREE_TOPIC_5	Sport	الرياضة					
+06_tutor.strings	FREE_TOPIC_6	My job	عملي					
+06_tutor.strings	FREE_TOPIC_7	Technology	التكنولوجيا					
+06_tutor.strings	FREE_TOPIC_8	Culture and traditions	الثقافة والتقاليد					
+06_tutor.strings	CONV_TOPIC	Topic: {0}	الموضوع: {0}					
+06_tutor.strings	CONV_FREE_NEEDS_AI	Free conversation on any topic needs an AI tutor. Right now you are talking to the offline tutor, which can only follow a short script.	تحتاج المحادثة الحرة في أي موضوع إلى معلّم ذكاء اصطناعي. أنت الآن تتحدث مع المعلّم غير المتصل الذي يتبع نصًّا قصيرًا فقط.					
+06_tutor.strings	CONV_SUMMARY_NEW	New conversation	محادثة جديدة					
+06_tutor.strings	MISSION_TASKS_DONE	Tasks done	أُنجزت المهام					
+06_tutor.strings	MISSION_TARGET	Aim for at least {0} turns of about {1}+ words.	استهدف {0} أدوار على الأقل بنحو {1} كلمات أو أكثر.					
+06_tutor.strings	MISSION_NEEDS_AI	This mission needs an AI tutor. Offline you can still practise freely, but the mission won't be marked as passed.	تحتاج هذه المهمة إلى معلّم ذكاء اصطناعي. يمكنك التدرّب بحرية دون اتصال، لكن المهمة لن تُحتسب منجزة.					
+06_tutor.strings	MISSION_PASSED	Mission passed. Well done!	أُنجزت المهمة. أحسنت!					
+06_tutor.strings	MISSION_NOT_YET	Not passed yet.	لم تُنجز بعد.					
+06_tutor.strings	MISSION_GAP_TURNS	You took {0} turns; this mission needs {1}.	أخذت {0} أدوار، وتحتاج هذه المهمة إلى {1}.					
+06_tutor.strings	MISSION_GAP_WORDS	Your typical turn had {0} words; aim for {1}.	كان في دورك المعتاد {0} كلمات، واستهدف {1}.					
+06_tutor.strings	MISSION_GAP_TASKS	The tasks weren't confirmed yet.	لم تُؤكَّد المهام بعد.					
+06_tutor.strings	CONV_NOTICE_FELL_BACK_TO_OFFLINE	The AI provider didn't answer, so the offline practice partner continues. Nothing was sent to another provider.	لم يجب مزوّد الذكاء الاصطناعي، فيتابع شريك التدريب دون اتصال. لم يُرسل أي شيء إلى مزوّد آخر.					
+06_tutor.strings	CONV_NOTICE_USED_FALLBACK_PROVIDER	Your preferred provider failed; a fallback provider you allowed answered instead.	فشل مزوّدك المفضّل، فأجاب مزوّد احتياطي سمحت به.					
+06_tutor.strings	CONV_NOTICE_SPEECH_UNAVAILABLE	Speech recognition isn't available right now. You can type instead.	التعرّف على الكلام غير متاح الآن، ويمكنك الكتابة بدلًا من ذلك.					
+06_tutor.strings	CONV_NOTICE_TTS_UNAVAILABLE	Spoken replies aren't available for this language on this device.	الردود المنطوقة غير متاحة لهذه اللغة على هذا الجهاز.					
+06_tutor.strings	CONV_NOTICE_PHRASE_SAVED	Saved to your phrasebook and review deck.	حُفظت في دفتر عباراتك ومجموعة المراجعة.					
+06_tutor.strings	CONV_NOTICE_AI_ERROR_RETRYABLE	The AI is having trouble. Please try again.	يواجه الذكاء الاصطناعي مشكلة، يُرجى المحاولة مرة أخرى.					
+06_tutor.strings	CONV_PRIVACY_NOTE	The microphone is on only while the red indicator shows. Recordings are not stored by this app.	لا يعمل الميكروفون إلا أثناء ظهور المؤشر الأحمر، ولا يخزّن هذا التطبيق التسجيلات.					
+06_tutor.strings	CONV_AI_MAY_ERR	"AI tutors can make mistakes. Ask ""why?"" if something looks wrong."	قد يخطئ معلّمو الذكاء الاصطناعي. اسأل «لماذا؟» إذا بدا لك شيء خاطئ.					
+06_tutor.strings	SCENARIOS_TITLE	Role-play scenarios	مواقف تمثيل الأدوار					
+06_tutor.strings	SCENARIO_LEVEL	Level {0}	المستوى {0}					
+06_tutor.strings	SCENARIO_START	Start scenario	ابدأ الموقف					
+06_tutor.strings	SCENARIO_PHRASES	Useful phrases	عبارات مفيدة					
+06_tutor.strings	CORR_ERROR	Your sentence	الخطأ					
+06_tutor.strings	CORR_FIX	Correction	التصحيح					
+06_tutor.strings	CORR_REASON	Why	السبب					
+06_tutor.strings	CORR_CONTEXT	Register	السياق					
+06_tutor.strings	CORR_TRY_YOURSELF	Try to fix it yourself:	حاول أن تصحّحه بنفسك:					
+06_tutor.strings	CORR_SHOW_ANSWER	Show the correction	أظهر التصحيح					
+06_tutor.strings	REGISTER_FORMAL	Formal	رسمي					
+06_tutor.strings	REGISTER_INFORMAL	Informal	عامّي / غير رسمي					
+06_tutor.strings	REGISTER_NEUTRAL	Neutral (fine in most situations)	محايد (مناسب لمعظم المواقف)					
+06_tutor.strings	ERR_CAT_TENSE	tense	الأزمنة					
+06_tutor.strings	ERR_CAT_AGREEMENT	agreement	المطابقة					
+06_tutor.strings	ERR_CAT_WORD_ORDER	word order	ترتيب الكلمات					
+06_tutor.strings	ERR_CAT_SPELLING	spelling	الإملاء					
+06_tutor.strings	ERR_CAT_VOCABULARY	vocabulary	المفردات					
+06_tutor.strings	ERR_CAT_PREPOSITION	preposition	حروف الجر					
+06_tutor.strings	ERR_CAT_ARTICLE	article	أدوات التعريف والتنكير					
+06_tutor.strings	ERR_CAT_REGISTER	register	مستوى اللغة					
+06_tutor.strings	ERR_CAT_OTHER	other	أخرى					
+06_tutor.strings	COACH_TRACK_LABEL	Your coaching track	مسار التدريب					
+06_tutor.strings	COACH_TRACK_FLUENCY	Everyday fluency	المحادثة والطلاقة اليومية					
+06_tutor.strings	COACH_TRACK_BUSINESS	Business and emails	لغة الأعمال والإيميلات					
+06_tutor.strings	COACH_TRACK_TRAVEL	Travel and hospitality	السفر والسياحة والضيافة					
+06_tutor.strings	COACH_TRACK_EXAM	Exam preparation ({0})	التحضير للاختبارات ({0})					
+06_tutor.strings	COACH_EXAM_ARABIC	Arabic proficiency exams	اختبارات الكفاءة في العربية					
+06_tutor.strings	COACH_TITLE_LABEL	Your title	لقبك					
+06_tutor.strings	COACH_TITLE_FIRST_STEPS	First Steps	الخطوات الأولى					
+06_tutor.strings	COACH_TITLE_WORD_EXPLORER	Word Explorer	مستكشف الكلمات					
+06_tutor.strings	COACH_TITLE_CONVERSATION_STARTER	Conversation Starter	مُبادر المحادثة					
+06_tutor.strings	COACH_TITLE_PHRASING_PRO	Phrasing Pro	محترف الصياغة					
+06_tutor.strings	COACH_TITLE_MISSION_MASTER	Mission Master	سيّد المهام					
+06_tutor.strings	COACH_TITLE_FLUENT_VOICE	Fluent Voice	الصوت الطليق					
+06_tutor.strings	COACH_TITLE_NEXT	Next: {0}. {1}	التالي: {0}. {1}					
+06_tutor.strings	COACH_TITLE_TOP	You have earned every title. Keep talking to stay in shape!	حصلت على كل الألقاب. واصل الحديث لتحافظ على مستواك!					
+06_tutor.strings	COACH_NEED_FIRST_STEPS	Start learning.	ابدأ التعلّم.					
+06_tutor.strings	COACH_NEED_WORD_EXPLORER	Have 25 words in your reviews.	أضف 25 كلمة إلى مراجعاتك.					
+06_tutor.strings	COACH_NEED_CONVERSATION_STARTER	Have 5 conversations of at least 4 turns.	أجرِ 5 محادثات من 4 أدوار على الأقل.					
+06_tutor.strings	COACH_NEED_PHRASING_PRO	Have 10 conversations, with at most 3 corrections per 10 of your recent turns.	أجرِ 10 محادثات، بثلاثة تصحيحات على الأكثر لكل 10 من أدوارك الأخيرة.					
+06_tutor.strings	COACH_NEED_MISSION_MASTER	Pass 10 speaking missions.	أنجز 10 مهام محادثة.					
+06_tutor.strings	COACH_NEED_FLUENT_VOICE	Pass 20 speaking missions with about 12+ words per turn.	أنجز 20 مهمة محادثة بنحو 12 كلمة أو أكثر في كل دور.					
+06_tutor.strings	LIVE_TITLE	Live voice call	مكالمة صوتية مباشرة					
+06_tutor.strings	LIVE_OPEN	Live voice call (beta)	مكالمة صوتية مباشرة (تجريبية)					
+06_tutor.strings	LIVE_STATUS_IDLE	Ready to call	جاهز للاتصال					
+06_tutor.strings	LIVE_STATUS_CONNECTING	Connecting…	جارٍ الاتصال…					
+06_tutor.strings	LIVE_STATUS_LIVE	On the call	في المكالمة					
+06_tutor.strings	LIVE_STATUS_ENDED	Call ended	انتهت المكالمة					
+06_tutor.strings	LIVE_STATUS_FAILED	The call could not continue	تعذّر استمرار المكالمة					
+06_tutor.strings	LIVE_MUTED	Your microphone is muted	الميكروفون مكتوم					
+06_tutor.strings	LIVE_TUTOR_SPEAKING	Your tutor is speaking — just talk to interrupt	المدرّب يتحدث. تكلّم لمقاطعته					
+06_tutor.strings	LIVE_YOU_SPEAKING	Listening to you…	يستمع إليك…					
+06_tutor.strings	LIVE_YOUR_TURN	Your turn — speak naturally	دورك. تحدّث بشكل طبيعي					
+06_tutor.strings	LIVE_MIC_LEVEL	Microphone	الميكروفون					
+06_tutor.strings	LIVE_START	Start the call	ابدأ المكالمة					
+06_tutor.strings	LIVE_AGAIN	Call again	اتصل مجددًا					
+06_tutor.strings	LIVE_CONNECTING	Connecting	جارٍ الاتصال					
+06_tutor.strings	LIVE_MUTE	Mute	كتم					
+06_tutor.strings	LIVE_UNMUTE	Unmute	إلغاء الكتم					
+06_tutor.strings	LIVE_INTERRUPT	Stop the tutor	أوقف المدرّب					
+06_tutor.strings	LIVE_END	End the call	أنهِ المكالمة					
+06_tutor.strings	LIVE_HEADPHONES	Tip: headphones prevent the tutor's voice from being picked up by your microphone.	نصيحة: سماعات الرأس تمنع التقاط صوت المدرّب عبر الميكروفون.					
+06_tutor.strings	LIVE_ERR_NO_KEY	Live calls use your OpenAI key. Add it in AI providers.	تستخدم المكالمات المباشرة مفتاح OpenAI الخاص بك. أضفه في مزوّدي الذكاء الاصطناعي.					
+06_tutor.strings	LIVE_ERR_SPEAKER	No audio output is available.	لا يوجد مخرج صوت متاح.					
+06_tutor.strings	LIVE_ERR_CONNECTION	The connection failed or was closed. {0}	فشل الاتصال أو انقطع. {0}					
+06_tutor.strings	LIVE_ERR_SERVER	The service stopped the call: {0}	أوقفت الخدمة المكالمة: {0}					
+06_tutor.strings	LIVE_CHECKING	Checking your sentence…	جارٍ تدقيق جملتك…					
+06_tutor.strings	LIVE_SUMMARY	You spoke {0} times; {1} corrections were noted. They are saved in your history and error log.	تحدّثت {0} مرات، وسُجّل {1} تصحيحًا. حُفظت في السجل وسجل الأخطاء.					
+06_tutor.strings	LIVE_PRIVACY	Your voice goes to OpenAI during the call; the app keeps only the text transcript.	يُرسل صوتك إلى OpenAI أثناء المكالمة، ولا يحفظ التطبيق سوى النص المكتوب.					
+07_progress_library.strings	ASSESS_TITLE	Placement test	اختبار تحديد المستوى					
+07_progress_library.strings	ASSESS_INTRO_TITLE	Let's find your level in {0}	لنحدّد مستواك في {0}					
+07_progress_library.strings	ASSESS_INTRO_BODY	"Questions adapt to your answers: they get harder when you're right and easier when you're not. It's fine to say ""I don't know"" — guessing makes the estimate less accurate."	تتكيّف الأسئلة مع إجاباتك: تصعب عندما تصيب وتسهل عندما تخطئ. لا بأس أن تقول «لا أعرف»، فالتخمين يجعل التقدير أقل دقة.					
+07_progress_library.strings	ASSESS_START	Start test	ابدأ الاختبار					
+07_progress_library.strings	ASSESS_QUESTION	Question {0} · up to {1}	السؤال {0} · حتى {1}					
+07_progress_library.strings	ASSESS_DONT_KNOW	I don't know	لا أعرف					
+07_progress_library.strings	ASSESS_RESULT_TITLE	Your estimated level	مستواك التقديري					
+07_progress_library.strings	ASSESS_RANGE	Most likely between {0} and {1}	على الأرجح بين {0} و{1}					
+07_progress_library.strings	ASSESS_DISCLAIMER	This is an estimate from a short test, not an official CEFR certificate.	هذا تقدير من اختبار قصير، وليس شهادة رسمية وفق الإطار الأوروبي المرجعي.					
+07_progress_library.strings	ASSESS_ACCEPT	Start at {0}	ابدأ من {0}					
+07_progress_library.strings	ASSESS_CHOOSE_OTHER	Choose a different level	اختر مستوى آخر					
+07_progress_library.strings	ASSESS_BY_SKILL	By skill	حسب المهارة					
+07_progress_library.strings	ASSESS_SCORE	{0} of {1} correct	{0} من {1} صحيحة					
+07_progress_library.strings	ASSESS_HISTORY	Previous results	نتائج سابقة					
+07_progress_library.strings	ASSESS_RETAKE	Retake the test	أعد الاختبار					
+07_progress_library.strings	PROGRESS_TITLE	Progress	التقدّم					
+07_progress_library.strings	PROGRESS_RANGE_7	7 days	7 أيام					
+07_progress_library.strings	PROGRESS_RANGE_28	28 days	28 يومًا					
+07_progress_library.strings	PROGRESS_TIME	Study time (minutes)	وقت الدراسة (بالدقائق)					
+07_progress_library.strings	PROGRESS_TIME_DESC	Minutes studied per day: {0}	دقائق الدراسة يوميًا: {0}					
+07_progress_library.strings	PROGRESS_ACCURACY	Exercise accuracy by week	دقة التمارين أسبوعيًا					
+07_progress_library.strings	PROGRESS_ACCURACY_DESC	Weekly share of exercises answered correctly: {0}	نسبة التمارين المُجاب عنها بشكل صحيح أسبوعيًا: {0}					
+07_progress_library.strings	PROGRESS_RETENTION	Vocabulary memory (estimate)	تذكّر المفردات (تقدير)					
+07_progress_library.strings	RETENTION_STRONG	Strong	قوي					
+07_progress_library.strings	RETENTION_FADING	Fading	يضعف					
+07_progress_library.strings	RETENTION_WEAK	Needs review	يحتاج مراجعة					
+07_progress_library.strings	RETENTION_NOT_STARTED	New	جديد					
+07_progress_library.strings	PROGRESS_RETENTION_NOTE	Estimated from your review history with a forgetting-curve model. It is not a test result.	مقدّر من سجل مراجعاتك باستخدام نموذج منحنى النسيان، وليس نتيجة اختبار.					
+07_progress_library.strings	PROGRESS_FORECAST	Reviews in the next 7 days	المراجعات في الأيام السبعة القادمة					
+07_progress_library.strings	PROGRESS_FORECAST_DESC	Reviews due per day: {0}	المراجعات المستحقة يوميًا: {0}					
+07_progress_library.strings	PROGRESS_SKILLS	Accuracy by skill (observed)	الدقة حسب المهارة (ملاحَظة)					
+07_progress_library.strings	PROGRESS_SKILL_VALUE	{0}% · {1} answers	‎{0}٪ · {1} إجابة					
+07_progress_library.strings	PROGRESS_CONSISTENCY	Study days	أيام الدراسة					
+07_progress_library.strings	PROGRESS_CONSISTENCY_DESC	Days with study activity in the last 28 days: {0}	الأيام التي فيها نشاط دراسي خلال آخر 28 يومًا: {0}					
+07_progress_library.strings	PROGRESS_TOTALS	Totals	الإجماليات					
+07_progress_library.strings	TOTAL_LESSONS	Lessons completed	دروس مكتملة					
+07_progress_library.strings	TOTAL_REVIEWS	Reviews done	مراجعات منجزة					
+07_progress_library.strings	TOTAL_SPEAKING	Conversation replies	ردود في المحادثات					
+07_progress_library.strings	TOTAL_STREAK	Longest streak	أطول سلسلة					
+07_progress_library.strings	PROGRESS_EMPTY_TITLE	Your charts will appear here	ستظهر رسومك البيانية هنا					
+07_progress_library.strings	PROGRESS_EMPTY_BODY	Complete a lesson or a review to see real progress. We never show sample numbers as if they were yours.	أكمل درسًا أو مراجعة لترى تقدّمًا حقيقيًا، فنحن لا نعرض أرقامًا تجريبية على أنها أرقامك.					
+07_progress_library.strings	PROGRESS_DEFINITIONS	What these numbers mean	ماذا تعني هذه الأرقام					
+07_progress_library.strings	PROGRESS_DEFINITIONS_BODY	Study time counts active time in lessons, reviews and conversations (capped per item so an idle screen doesn't count). Accuracy is the share of exercises answered correctly. Memory estimates are model predictions. App activity alone doesn't prove fluency.	يحسب وقت الدراسة الوقت النشط في الدروس والمراجعات والمحادثات (بحدّ أقصى لكل عنصر حتى لا تُحتسب الشاشة الخاملة). والدقة هي نسبة التمارين المُجاب عنها بشكل صحيح. أما تقديرات التذكّر فهي تنبؤات نموذج. ونشاط التطبيق وحده لا يثبت الطلاقة.					
+07_progress_library.strings	PROGRESS_ASSESSMENTS	Placement history	سجل تحديد المستوى					
+07_progress_library.strings	VOCAB_TITLE	My vocabulary	مفرداتي					
+07_progress_library.strings	VOCAB_TAB_WORDS	Words	الكلمات					
+07_progress_library.strings	VOCAB_TAB_PHRASES	Phrasebook	دفتر العبارات					
+07_progress_library.strings	VOCAB_SEARCH	Search your words	ابحث في كلماتك					
+07_progress_library.strings	VOCAB_EMPTY_TITLE	No words yet	لا كلمات بعد					
+07_progress_library.strings	VOCAB_EMPTY_BODY	Words from lessons, conversations and your own material appear here.	تظهر هنا الكلمات من الدروس والمحادثات وموادك الخاصة.					
+07_progress_library.strings	PHRASES_EMPTY	Save useful phrases from conversations to build your phrasebook.	احفظ العبارات المفيدة من المحادثات لتبني دفتر عباراتك.					
+07_progress_library.strings	VOCAB_ADD	Add a word	أضف كلمة					
+07_progress_library.strings	VOCAB_TERM	Word or phrase	الكلمة أو العبارة					
+07_progress_library.strings	VOCAB_MEANING	Meaning	المعنى					
+07_progress_library.strings	VOCAB_EXAMPLE	Example sentence (optional)	جملة مثال (اختيارية)					
+07_progress_library.strings	VOCAB_NEXT_REVIEW	Next review {0}	المراجعة التالية {0}					
+07_progress_library.strings	VOCAB_DUE_NOW	Due now	مستحقة الآن					
+07_progress_library.strings	VOCAB_STATUS_NEW	New	جديدة					
+07_progress_library.strings	VOCAB_STATUS_LEARNING	Learning	قيد التعلّم					
+07_progress_library.strings	VOCAB_STATUS_REVIEW	Reviewing	قيد المراجعة					
+07_progress_library.strings	VOCAB_FILTER_ALL	All	الكل					
+07_progress_library.strings	VOCAB_FILTER_DUE	Due	مستحقة					
+07_progress_library.strings	LIBRARY_TITLE	Library	المكتبة					
+07_progress_library.strings	LIBRARY_TAB_MATERIALS	My material	موادّي					
+07_progress_library.strings	LIBRARY_TAB_NOTES	Notes	الملاحظات					
+07_progress_library.strings	LIBRARY_TAB_BOOKMARKS	Bookmarks	المفضلة					
+07_progress_library.strings	LIBRARY_IMPORT_FILE	Import a file	استيراد ملف					
+07_progress_library.strings	LIBRARY_PASTE	Paste text	لصق نص					
+07_progress_library.strings	PHOTO_TAKE	Take a photo	التقاط صورة					
+07_progress_library.strings	PHOTO_TITLE	Crop the photo	قصّ الصورة					
+07_progress_library.strings	PHOTO_CROP_HINT	Drag the corners to keep only the text you want to read, or keep the whole photo. The photo stays on this device.	اسحب الزوايا لتُبقي النصّ الذي تريد قراءته فقط، أو أبقِ الصورة كاملة. تبقى الصورة على هذا الجهاز.					
+07_progress_library.strings	PHOTO_CROP_AREA	Photo with a crop frame. Drag a corner to resize the frame, or its middle to move it.	صورة عليها إطار القصّ. اسحب زاوية لتغيير حجم الإطار، أو وسطه لتحريكه.					
+07_progress_library.strings	PHOTO_ROTATE	Rotate	تدوير					
+07_progress_library.strings	PHOTO_WHOLE	Whole photo	الصورة كاملة					
+07_progress_library.strings	PHOTO_RETAKE	Retake	إعادة الالتقاط					
+07_progress_library.strings	PHOTO_USE	Use this photo	استخدام الصورة					
+07_progress_library.strings	PHOTO_EDIT_FAILED	The photo could not be edited.	تعذّر تعديل الصورة.					
+07_progress_library.strings	PHOTO_LOST_TITLE	No photo	لا توجد صورة					
+07_progress_library.strings	PHOTO_LOST_BODY	The photo was not kept, for example because the app was closed. Take it again.	لم تُحفظ الصورة، ربّما لأنّ التطبيق أُغلق. التقطها مرّة أخرى.					
+07_progress_library.strings	PHOTO_NAME	Photo {0}	صورة {0}					
+07_progress_library.strings	LIBRARY_EMPTY_TITLE	Learn from things you love	تعلّم مما تحب					
+07_progress_library.strings	LIBRARY_EMPTY_BODY	Import an article, subtitles or your own notes. We'll find useful words and turn them into reviews.	استورد مقالًا أو ترجمة أفلام أو ملاحظاتك، وسنستخرج الكلمات المفيدة ونحوّلها إلى مراجعات.					
+07_progress_library.strings	LIBRARY_RIGHTS	Only import material you have the right to use. Imported files are processed on this device and nothing is uploaded unless you allow it.	لا تستورد إلا مواد يحق لك استخدامها. تُعالج الملفات المستوردة على هذا الجهاز ولا يُرفع شيء ما لم تسمح بذلك.					
+07_progress_library.strings	LIBRARY_SUPPORT	What can be processed in this version	ما الذي يمكن معالجته في هذا الإصدار					
+07_progress_library.strings	SUPPORT_SUPPORTED	Supported	مدعوم					
+07_progress_library.strings	SUPPORT_PLATFORM_DEPENDENT	Depends on your device	يعتمد على جهازك					
+07_progress_library.strings	SUPPORT_NOT_IMPLEMENTED	Not yet supported	غير مدعوم بعد					
+07_progress_library.strings	SUPPORT_AI_OCR	With AI, on request	بالذكاء الاصطناعي عند الطلب					
+07_progress_library.strings	SUPPORT_ON_DEVICE_TRANSCRIPTION	Transcribed on this device	يُفرَّغ على هذا الجهاز					
+07_progress_library.strings	MATERIAL_NEEDS_TRANSCRIPTION	This file has no text yet. Its speech can be transcribed on this device below.	لا نصّ لهذا الملف بعد. يمكن تفريغ الكلام فيه على هذا الجهاز أدناه.					
+07_progress_library.strings	TRANSCRIBE_TITLE	Transcribe on this device	التفريغ على هذا الجهاز					
+07_progress_library.strings	TRANSCRIBE_BODY	Speech in {0} is turned into text by a speech model running on your phone; the recording is not sent anywhere. Up to the first {1} minutes are transcribed.	يُحوَّل الكلام بلغة {0} إلى نصّ بنموذج كلام يعمل على هاتفك، ولا يُرسل التسجيل إلى أيّ جهة. يُفرَّغ أوّل {1} دقائق كحدّ أقصى.					
+07_progress_library.strings	TRANSCRIBE_REIMPORT	Import the file again to transcribe it (the copy is not kept after the app closes).	استورد الملف مرة أخرى لتفريغه (لا تُحفظ النسخة بعد إغلاق التطبيق).					
+07_progress_library.strings	TRANSCRIBE_MODEL_NEEDED	The speech model ({0} MB) needs to be downloaded once.	يلزم تنزيل نموذج الكلام ({0} ميغابايت) مرة واحدة.					
+07_progress_library.strings	TRANSCRIBE_DOWNLOAD	Download speech model ({0} MB)	تنزيل نموذج الكلام ({0} ميغابايت)					
+07_progress_library.strings	TRANSCRIBE_DOWNLOADING	Downloading… {0}%	جارٍ التنزيل… {0}٪					
+07_progress_library.strings	TRANSCRIBE_CONFIRM_TITLE	Download the speech model?	تنزيل نموذج الكلام؟					
+07_progress_library.strings	TRANSCRIBE_CONFIRM_BODY	About {0} MB is downloaded from the whisper.cpp model page on Hugging Face and checked before use. Only the model file is requested; nothing about you or your files is sent. Use Wi-Fi if your data plan is limited.	يُنزَّل نحو {0} ميغابايت من صفحة نماذج whisper.cpp على Hugging Face ويُتحقَّق منه قبل الاستخدام. يُطلب ملف النموذج فقط، ولا يُرسل شيء عنك أو عن ملفاتك. استخدم Wi-Fi إن كانت باقتك محدودة.					
+07_progress_library.strings	TRANSCRIBE_DOWNLOAD_FAILED	The model could not be downloaded or did not pass the check. Try again; an interrupted download continues where it stopped.	تعذّر تنزيل النموذج أو لم يجتز التحقّق. حاول مرة أخرى؛ يُستأنف التنزيل المتوقّف من حيث انقطع.					
+07_progress_library.strings	TRANSCRIBE_START	Transcribe	فرّغ النص					
+07_progress_library.strings	TRANSCRIBE_DECODING	Reading the audio…	جارٍ قراءة الصوت…					
+07_progress_library.strings	TRANSCRIBE_RECOGNISING	Recognising speech… This can take a while, on slower phones several times the length of the recording. Keep the app open.	جارٍ التعرّف على الكلام… قد يستغرق ذلك وقتًا، وعلى الهواتف الأبطأ أضعاف مدة التسجيل. أبقِ التطبيق مفتوحًا.					
+07_progress_library.strings	TRANSCRIBE_DONE	Transcribed. Check the text below before using it.	تمّ التفريغ. راجع النص أدناه قبل استخدامه.					
+07_progress_library.strings	TRANSCRIBE_DONE_CUT	The first {0} minutes were transcribed. Check the text before using it.	فُرّغت أوّل {0} دقائق. راجع النص قبل استخدامه.					
+07_progress_library.strings	TRANSCRIBE_NO_SPEECH	No speech was recognised in this file.	لم يُتعرَّف على كلام في هذا الملف.					
+07_progress_library.strings	TRANSCRIBE_UNREADABLE	The audio in this file could not be read on this device.	تعذّرت قراءة الصوت في هذا الملف على هذا الجهاز.					
+07_progress_library.strings	TRANSCRIBE_MODEL_MISSING	The speech model is missing; download it again.	نموذج الكلام غير موجود؛ نزّله مرة أخرى.					
+07_progress_library.strings	TRANSCRIBE_FAILED	Transcription failed on this device.	فشل التفريغ على هذا الجهاز.					
+07_progress_library.strings	TRANSCRIBE_CHECK	This text was transcribed automatically and may contain mistakes, especially names and quiet passages.	فُرّغ هذا النص آليًا وقد يحتوي أخطاء، خاصة في الأسماء والمقاطع الخافتة.					
+07_progress_library.strings	TRANSCRIBE_MODEL_TITLE	Speech model for transcription	نموذج الكلام للتفريغ					
+07_progress_library.strings	TRANSCRIBE_MODEL_READY	Whisper base ({0} MB) is on this device.	نموذج Whisper الأساسي ({0} ميغابايت) موجود على هذا الجهاز.					
+07_progress_library.strings	TRANSCRIBE_MODEL_ABSENT	Not downloaded. It is offered when you transcribe an audio or video file ({0} MB).	لم يُنزَّل. يُعرض تنزيله حين تفرّغ ملف صوت أو فيديو ({0} ميغابايت).					
+07_progress_library.strings	TRANSCRIBE_MODEL_DELETE	Delete the speech model	حذف نموذج الكلام					
+07_progress_library.strings	MTYPE_TEXT	Text (.txt, .md)	نص (.txt و.md)					
+07_progress_library.strings	MTYPE_CAPTIONS	Subtitles (.srt, .vtt)	ترجمات (.srt و.vtt)					
+07_progress_library.strings	MTYPE_PDF	PDF	PDF					
+07_progress_library.strings	MTYPE_IMAGE	Image / camera (text recognition)	صورة / كاميرا (التعرّف على النص)					
+07_progress_library.strings	MTYPE_AUDIO	Audio (transcription)	صوت (تفريغ نصي)					
+07_progress_library.strings	MTYPE_VIDEO	Video (transcription)	فيديو (تفريغ نصي)					
+07_progress_library.strings	MTYPE_DOCUMENT	Word document	مستند Word					
+07_progress_library.strings	MSTATUS_IMPORTED	Imported	مستورد					
+07_progress_library.strings	MSTATUS_EXTRACTING	Extracting text…	جارٍ استخراج النص…					
+07_progress_library.strings	MSTATUS_READY_FOR_REVIEW	Ready to review	جاهز للمراجعة					
+07_progress_library.strings	MSTATUS_PROCESSED	Words added	أُضيفت الكلمات					
+07_progress_library.strings	MSTATUS_FAILED	No text found	لم يُعثر على نص					
+07_progress_library.strings	MSTATUS_UNSUPPORTED	Can't be processed yet	لا يمكن معالجته بعد					
+07_progress_library.strings	MATERIAL_PROCESSING	Processing… {0}%	جارٍ المعالجة… {0}٪					
+07_progress_library.strings	MATERIAL_TEXT_REVIEW	Check the extracted text	راجِع النص المستخرج					
+07_progress_library.strings	MATERIAL_TEXT_EDIT_NOTE	You can correct the text before we look for words.	يمكنك تصحيح النص قبل أن نبحث عن الكلمات.					
+07_progress_library.strings	MATERIAL_CANDIDATES	Suggested words	كلمات مقترحة					
+07_progress_library.strings	MATERIAL_CANDIDATE_INFO	Appears {0} times	تتكرر {0} مرة					
+07_progress_library.strings	MATERIAL_IN_COURSE	In your course	في دورتك					
+07_progress_library.strings	MATERIAL_ADD_MEANING	Meaning (needed for new words)	المعنى (مطلوب للكلمات الجديدة)					
+07_progress_library.strings	MATERIAL_ADD_SELECTED	Add {0} word to reviews|Add {0} words to reviews	لم تُحدّد كلمات|أضف كلمة واحدة إلى المراجعات|أضف كلمتين إلى المراجعات|أضف {0} كلمات إلى المراجعات|أضف {0} كلمة إلى المراجعات|أضف {0} كلمة إلى المراجعات					
+07_progress_library.strings	MATERIAL_ADDED	Added to your reviews	أُضيفت إلى مراجعاتك					
+07_progress_library.strings	MATERIAL_DELETE_TITLE	Delete this material?	حذف هذه المادة؟					
+07_progress_library.strings	MATERIAL_DELETE_BODY	The text and any new words created only from it will be removed.	سيُحذف النص وأي كلمات جديدة أُنشئت منه فقط.					
+07_progress_library.strings	MATERIAL_UNSUPPORTED_BODY	This type of file can be stored but its text can't be extracted in this version. You can paste the text instead.	يمكن تخزين هذا النوع من الملفات لكن لا يمكن استخراج نصه في هذا الإصدار، ويمكنك لصق النص بدلًا من ذلك.					
+07_progress_library.strings	MATERIAL_PDF_ENCRYPTED	This PDF is password-protected, so its text can't be read. Remove the protection or paste the text instead.	ملف PDF هذا محمي بكلمة مرور، لذا لا يمكن قراءة نصه. أزل الحماية أو الصق النص بدلًا من ذلك.					
+07_progress_library.strings	MATERIAL_PDF_NO_TEXT	No text was found in this PDF. It may be a scanned image: you can read it with AI below (if available) or paste the text instead.	لم يُعثر على نص في ملف PDF هذا. قد يكون صورة ممسوحة ضوئيًا: يمكنك قراءته بالذكاء الاصطناعي أدناه (إن توفّر) أو لصق النص بدلًا من ذلك.					
+07_progress_library.strings	MATERIAL_NEEDS_OCR	This is an image. Its text can be read with an AI provider, on your request.	هذه صورة. يمكن قراءة نصها بمزوّد ذكاء اصطناعي بناءً على طلبك.					
+07_progress_library.strings	MATERIAL_OCR_NO_TEXT	No readable text was found in this file.	لم يُعثر على نص مقروء في هذا الملف.					
+07_progress_library.strings	MATERIAL_OCR_TITLE	Read the text with AI	قراءة النص بالذكاء الاصطناعي					
+07_progress_library.strings	MATERIAL_OCR_BODY	The photo or the page images are sent to your chosen AI provider (OpenAI, Gemini or Claude), which returns the text. This needs cloud AI to be allowed in Privacy. Up to 20 pages.	تُرسل الصورة أو صور الصفحات إلى مزوّد الذكاء الاصطناعي الذي اخترته (OpenAI أو Gemini أو Claude) ليعيد النص. يتطلب ذلك السماح بالذكاء الاصطناعي السحابي في الخصوصية، وبحدّ أقصى 20 صفحة.					
+07_progress_library.strings	MATERIAL_OCR_REIMPORT	To read it with AI, import the file again (files are not kept after you leave).	لقراءته بالذكاء الاصطناعي، استورد الملف مرة أخرى (لا تُحفظ الملفات بعد مغادرتك).					
+07_progress_library.strings	MATERIAL_OCR_START	Read text with AI	قراءة النص بالذكاء الاصطناعي					
+07_progress_library.strings	MATERIAL_OCR_CONFIRM_TITLE	Send this file to your AI provider?	إرسال هذا الملف إلى مزوّد الذكاء الاصطناعي؟					
+07_progress_library.strings	MATERIAL_OCR_CONFIRM_BODY	The images will leave your device and be processed by the provider under its own terms. Only do this with material you have the right to use.	ستغادر الصور جهازك وتعالجها الجهة المزوّدة وفق شروطها. افعل ذلك فقط بمواد يحق لك استخدامها.					
+07_progress_library.strings	MATERIAL_OCR_PREPARING	Preparing pages…	جارٍ تجهيز الصفحات…					
+07_progress_library.strings	MATERIAL_OCR_PROGRESS	Reading page {0} of {1}…	جارٍ قراءة الصفحة {0} من {1}…					
+07_progress_library.strings	MATERIAL_OCR_DONE	Text read from {0} of {1} pages. Check it before studying.	قُرئ النص من {0} من أصل {1} صفحات. راجعه قبل الدراسة.					
+07_progress_library.strings	MATERIAL_OCR_NO_RENDER	This device can't turn the PDF into page images. Paste the text instead.	لا يستطيع هذا الجهاز تحويل ملف PDF إلى صور صفحات. الصق النص بدلًا من ذلك.					
+07_progress_library.strings	MATERIAL_OCR_TOO_LARGE	An image is larger than {0} MB. Use a smaller photo.	إحدى الصور أكبر من {0} ميغابايت. استخدم صورة أصغر.					
+07_progress_library.strings	MATERIAL_OCR_PRIVACY	Cloud AI is off in your privacy settings, so the file wasn't sent.	الذكاء الاصطناعي السحابي مُعطّل في إعدادات الخصوصية، لذلك لم يُرسل الملف.					
+07_progress_library.strings	MATERIAL_OCR_NO_PROVIDER	No AI provider that can read images is set up. Add OpenAI, Gemini or Claude in Settings.	لا يوجد مزوّد ذكاء اصطناعي مُعدّ يستطيع قراءة الصور. أضف OpenAI أو Gemini أو Claude في الإعدادات.					
+07_progress_library.strings	MATERIAL_OCR_FAILED	Reading failed: {0}	فشلت القراءة: {0}					
+07_progress_library.strings	MATERIAL_OCR_CHECK	This text was read by an AI provider and may contain mistakes. Check it before studying.	قرأ هذا النص مزوّد ذكاء اصطناعي وقد يحتوي أخطاء، فراجعه قبل الدراسة.					
+07_progress_library.strings	MATERIAL_PDF_INVALID	This file couldn't be read as a PDF. It may be damaged.	تعذّرت قراءة هذا الملف بصيغة PDF، وقد يكون تالفًا.					
+07_progress_library.strings	MATERIAL_NO_TEXT	No text was found in this file.	لم يُعثر على نص في هذا الملف.					
+07_progress_library.strings	MATERIAL_PDF_CHECK	Text was extracted from the PDF on this device. Columns and tables can come out in the wrong order, so check it before studying.	استُخرج النص من ملف PDF على هذا الجهاز. قد تظهر الأعمدة والجداول بترتيب خاطئ، لذا راجعه قبل الدراسة.					
+07_progress_library.strings	MATERIAL_TOO_LARGE	This file is larger than the {0} MB limit.	هذا الملف أكبر من الحد المسموح ({0} ميغابايت).					
+07_progress_library.strings	MATERIAL_UNSUPPORTED_TYPE	This file type isn't supported.	نوع الملف هذا غير مدعوم.					
+07_progress_library.strings	MATERIAL_EMPTY_FILE	The file is empty.	الملف فارغ.					
+07_progress_library.strings	MATERIAL_TITLE_LABEL	Title	العنوان					
+07_progress_library.strings	MATERIAL_TEXT_LABEL	Text	النص					
+07_progress_library.strings	MATERIAL_IMPORT	Import	استيراد					
+07_progress_library.strings	MATERIAL_READ	Read with audio	اقرأ مع الصوت					
+07_progress_library.strings	MATERIAL_PICKER_UNAVAILABLE	File import isn't available on this platform. Paste the text instead.	استيراد الملفات غير متاح على هذه المنصة، فالصق النص بدلًا من ذلك.					
+07_progress_library.strings	NOTES_EMPTY	Keep grammar tips, mnemonics and ideas here. Notes stay on this device.	احتفظ هنا بنصائح القواعد ووسائل التذكّر والأفكار. تبقى الملاحظات على هذا الجهاز.					
+07_progress_library.strings	NOTE_NEW	New note	ملاحظة جديدة					
+07_progress_library.strings	NOTE_TITLE	Title	العنوان					
+07_progress_library.strings	NOTE_BODY	Note	الملاحظة					
+07_progress_library.strings	BOOKMARKS_EMPTY	Bookmark lessons, grammar topics and readings to find them quickly.	احفظ الدروس وموضوعات القواعد والقراءات في المفضلة للوصول إليها بسرعة.					
+07_progress_library.strings	SEARCH_TITLE	Search	بحث					
+07_progress_library.strings	SEARCH_HINT	Search words, lessons, grammar, notes	ابحث في الكلمات والدروس والقواعد والملاحظات					
+07_progress_library.strings	SEARCH_EMPTY	"No results for ""{0}"""	لا نتائج لـ«{0}»					
+07_progress_library.strings	SEARCH_START	Type at least two characters.	اكتب حرفين على الأقل.					
+07_progress_library.strings	SEARCH_WORDS	Words	الكلمات					
+07_progress_library.strings	SEARCH_LESSONS	Lessons	الدروس					
+07_progress_library.strings	SEARCH_GRAMMAR	Grammar	القواعد					
+07_progress_library.strings	SEARCH_READINGS	Readings	القراءات					
+07_progress_library.strings	SEARCH_NOTES	Notes	الملاحظات					
+07_progress_library.strings	ME_TITLE	Me	حسابي					
+07_progress_library.strings	ME_PROGRESS	Progress and charts	التقدّم والرسوم البيانية					
+07_progress_library.strings	ME_VOCAB	My vocabulary	مفرداتي					
+07_progress_library.strings	ME_LIBRARY	Library and notes	المكتبة والملاحظات					
+07_progress_library.strings	ME_ASSESS	Placement test	اختبار تحديد المستوى					
+07_progress_library.strings	ME_PLAN	Study plan	خطة الدراسة					
+07_progress_library.strings	ME_SETTINGS	Settings	الإعدادات					
+07_progress_library.strings	ME_SEARCH	Search	بحث					
+07_progress_library.strings	ME_HISTORY	Learning history	سجل التعلّم					
+07_progress_library.strings	ME_HELP	Help	المساعدة					
+07_progress_library.strings	PROFILE_LANGUAGES	My languages	لغاتي					
+07_progress_library.strings	PROFILE_ACTIVE	Active	نشطة					
+07_progress_library.strings	PROFILE_MAKE_ACTIVE	Switch to {0}	التبديل إلى {0}					
+07_progress_library.strings	PROFILE_ADD_LANGUAGE	Add a language	إضافة لغة					
+07_progress_library.strings	PROFILE_GOALS	Goals	الأهداف					
+07_progress_library.strings	PROFILE_NAME	Name	الاسم					
+07_progress_library.strings	PROFILE_ANONYMOUS	Learner	متعلّم					
+07_progress_library.strings	HISTORY_EMPTY	Your completed sessions will be listed here.	ستظهر هنا جلساتك المكتملة.					
+07_progress_library.strings	SESSION_LESSON	Lesson	درس					
+07_progress_library.strings	SESSION_REVIEW	Review	مراجعة					
+07_progress_library.strings	SESSION_CONVERSATION	Conversation	محادثة					
+07_progress_library.strings	SESSION_READING	Reading	قراءة					
+07_progress_library.strings	SESSION_LISTENING	Listening	استماع					
+07_progress_library.strings	SESSION_WRITING	Writing	كتابة					
+07_progress_library.strings	SESSION_PRONUNCIATION	Pronunciation	نطق					
+07_progress_library.strings	SESSION_ASSESSMENT	Placement test	اختبار تحديد مستوى					
+07_progress_library.strings	SESSION_RELAXATION	Relaxation	استرخاء					
+07_progress_library.strings	SESSION_MEDIA	Own material	مواد خاصة					
+07_progress_library.strings	SESSION_ITEMS	{0} of {1} correct · {2}	{0} من {1} صحيحة · {2}					
+07_progress_library.strings	MATERIAL_CLOUD_ALLOW	Allow cloud AI to explain this material	السماح للذكاء الاصطناعي السحابي بشرح هذه المادة					
+07_progress_library.strings	MATERIAL_OCR_DEVICE_TITLE	Read the text on this device	قراءة النص على هذا الجهاز					
+07_progress_library.strings	MATERIAL_OCR_DEVICE_BODY	{0} text can be recognised on this device. Nothing is sent anywhere. It works best with clear, straight photos of printed text; handwriting is rarely recognised.	يمكن التعرّف على النص {0} على هذا الجهاز، ولا يُرسل شيء إلى أيّ جهة. يعمل أفضل مع صور واضحة ومستقيمة لنص مطبوع، ونادرًا ما يتعرّف على خطّ اليد.					
+07_progress_library.strings	MATERIAL_OCR_DEVICE_START	Read on this device	اقرأ على هذا الجهاز					
+07_progress_library.strings	MATERIAL_OCR_DEVICE_CHECK	This text was recognised on this device and may contain mistakes. Check it before studying.	تُعرّف على هذا النص على هذا الجهاز وقد يحتوي أخطاء، فراجعه قبل الدراسة.					
+07_progress_library.strings	SUPPORT_DEVICE_OCR	On this device, or with AI	على هذا الجهاز، أو بالذكاء الاصطناعي					
+07_progress_library.strings	MATERIAL_NEEDS_OCR_DEVICE	This is an image. Its text can be read on this device, or with an AI provider on your request.	هذه صورة. يمكن قراءة نصها على هذا الجهاز، أو بمزوّد ذكاء اصطناعي بناءً على طلبك.					
+07_progress_library.strings	MATERIAL_OCR_TRADITIONAL	The text is in traditional characters	النص بالحروف التقليدية					
+07_progress_library.strings	MATERIAL_OCR_TRADITIONAL_SUB	Each Chinese model writes what it reads in its own script, so pick the script on the page.	كلّ نموذج صيني يكتب ما يقرؤه بشكله هو، فاختر الشكل المكتوب في الصورة.					
+07_progress_library.strings	PROGRESS_CHANGE_TITLE	Since your first test	منذ اختبارك الأول					
+07_progress_library.strings	PROGRESS_CHANGE	On {0}: {1}, {2}% right. On {3}: {4}, {5}% right.	في {0}: {1}، و{2}٪ إجابات صحيحة. وفي {3}: {4}، و{5}٪ إجابات صحيحة.					
+07_progress_library.strings	PROGRESS_CHANGE_UP	Your estimated level went up.	ارتفع مستواك المقدَّر.					
+07_progress_library.strings	PROGRESS_CHANGE_SAME	The estimate has not changed yet; small gains often stay inside the same level.	لم يتغيّر التقدير بعد؛ التقدّم الصغير يبقى غالبًا داخل المستوى نفسه.					
+07_progress_library.strings	PROGRESS_CHANGE_DOWN	The estimate is lower this time. A single test varies from day to day: take it again in a few days.	التقدير أقلّ هذه المرة. نتيجة الاختبار الواحد تتغيّر من يوم لآخر، فأعِده بعد أيام.					
+07_progress_library.strings	PROGRESS_RETEST	Two weeks have passed since your last placement test. Take it again to see how far you have come.	مرّ أسبوعان على آخر اختبار تحديد مستوى. أعِده لترى كم تقدّمت.					
+07_progress_library.strings	PROGRESS_RETEST_BUTTON	Take the test again	أعِد الاختبار					
+08_settings.strings	SETTINGS_TITLE	Settings	الإعدادات					
+08_settings.strings	SET_APPEARANCE	Appearance	المظهر					
+08_settings.strings	SET_THEME	Theme	السمة					
+08_settings.strings	SET_LANGUAGES	Languages	اللغات					
+08_settings.strings	SET_INTERFACE_LANGUAGE	App language	لغة التطبيق					
+08_settings.strings	SET_EXPLANATION_LANGUAGE	Explanations in	لغة الشروح					
+08_settings.strings	SET_NATIVE_LANGUAGE	Native language	اللغة الأم					
+08_settings.strings	SET_VARIANT	Preferred variety of {0}	النوع المفضّل من {0}					
+08_settings.strings	SET_TRANSLIT	Show pinyin / transliteration	إظهار البينيين / النقحرة					
+08_settings.strings	SET_TRADITIONAL	Use traditional Chinese characters	استخدام الحروف الصينية التقليدية					
+08_settings.strings	SET_LEVEL	Starting level for {0}	مستوى البداية في {0}					
+08_settings.strings	SET_DAILY_MINUTES	Daily study time	وقت الدراسة اليومي					
+08_settings.strings	SET_LEARNING	Learning	التعلّم					
+08_settings.strings	SET_GOALS	Goals	الأهداف					
+08_settings.strings	SET_STYLE	Learning style	أسلوب التعلّم					
+08_settings.strings	SET_RELAX_IN_PLAN	Include relaxation in my plan	تضمين الاسترخاء في خطتي					
+08_settings.strings	SET_SPEECH	Speech	الكلام					
+08_settings.strings	SET_SPEECH_RATE	Tutor voice speed	سرعة صوت المعلّم					
+08_settings.strings	SET_AUTOPLAY	Read tutor replies aloud	قراءة ردود المعلّم بصوت مسموع					
+08_settings.strings	SET_SHOW_TRANSCRIPT	Show live transcript while listening	إظهار النص المباشر أثناء الاستماع					
+08_settings.strings	SET_SPEECH_ENGINE	Speech uses your device's speech recognition and text-to-speech services.	يستخدم الكلام خدمات التعرّف على الكلام وتحويل النص إلى كلام في جهازك.					
+08_settings.strings	SET_SPEECH_ON_DEVICE	Recognition on this device: {0}	التعرّف على هذا الجهاز: {0}					
+08_settings.strings	SET_SPEECH_STATUS_YES	on the device for the languages your phone has downloaded; other languages use its regular speech service, which may work online	على الجهاز للّغات التي نزّلها هاتفك؛ أما غيرها فتستخدم خدمة الكلام المعتادة في الهاتف، وقد تعمل عبر الإنترنت					
+08_settings.strings	SET_SPEECH_STATUS_NO	may be processed by your device's speech provider online	قد يُعالج عبر الإنترنت لدى مزوّد الكلام في جهازك					
+08_settings.strings	SET_SPEECH_STATUS_UNKNOWN	unknown	غير معروف					
+08_settings.strings	SET_ACCESSIBILITY	Accessibility	إمكانية الوصول					
+08_settings.strings	SET_REDUCED_MOTION	Reduce motion	تقليل الحركة					
+08_settings.strings	SET_REDUCED_MOTION_SUB	Turns off decorative animations	يوقف الحركات التزيينية					
+08_settings.strings	SET_LARGER_TEXT	Larger text	نص أكبر					
+08_settings.strings	SET_LARGER_TEXT_SUB	On top of your system font size	إضافة إلى حجم خط النظام					
+08_settings.strings	SET_HIGH_CONTRAST	Higher contrast	تباين أعلى					
+08_settings.strings	SET_HAPTICS	Vibration feedback	الاهتزاز عند الإجابة					
+08_settings.strings	SET_TRANSLATIONS_DEFAULT	Show translations by default	إظهار الترجمات افتراضيًا					
+08_settings.strings	SET_HINTS_DEFAULT	Offer hints	تقديم التلميحات					
+08_settings.strings	SET_PRIVACY	Privacy	الخصوصية					
+08_settings.strings	SET_PRIVACY_SUMMARY_LOCAL	Everything stays on this device	يبقى كل شيء على هذا الجهاز					
+08_settings.strings	SET_PRIVACY_SUMMARY_CLOUD	Cloud AI allowed for selected content	الذكاء الاصطناعي السحابي مسموح لمحتوى محدّد					
+08_settings.strings	SET_PRIVACY_INTRO	What is stored on this device: your profile, progress, reviews, conversations, notes and imported text. What can leave it: only content you allow below, sent only to the AI provider you configured.	ما يُخزّن على هذا الجهاز: ملفك الشخصي وتقدّمك ومراجعاتك ومحادثاتك وملاحظاتك والنصوص المستوردة. وما قد يغادره: المحتوى الذي تسمح به أدناه فقط، ويُرسل إلى مزوّد الذكاء الاصطناعي الذي هيّأته فقط.					
+08_settings.strings	SET_CLOUD_AI	Allow cloud AI	السماح بالذكاء الاصطناعي السحابي					
+08_settings.strings	SET_CLOUD_AI_SUB	Needed for AI tutors and AI writing feedback from cloud providers	مطلوب لمعلّمي الذكاء الاصطناعي وملاحظات الكتابة من المزوّدين السحابيين					
+08_settings.strings	SET_CONSENT_TITLE	Before you turn on cloud AI	قبل تفعيل الذكاء الاصطناعي السحابي					
+08_settings.strings	SET_CONSENT_BODY	Text you choose to share (for example your conversation messages) will be sent to the AI provider you configure, under that provider's terms and privacy policy. Notes, imported files, recordings and learning history stay on this device unless you allow each category separately. You can turn this off at any time.	سيُرسل النص الذي تختار مشاركته (مثل رسائل محادثتك) إلى مزوّد الذكاء الاصطناعي الذي تهيّئه، وفق شروطه وسياسة خصوصيته. تبقى الملاحظات والملفات المستوردة والتسجيلات وسجل التعلّم على هذا الجهاز ما لم تسمح بكل فئة على حدة. ويمكنك إيقاف ذلك في أي وقت.					
+08_settings.strings	SET_CONSENT_ACCEPT	I understand, turn on	فهمت، فعّل					
+08_settings.strings	SET_LOCAL_NETWORK	Allow my own local AI server	السماح بخادم الذكاء الاصطناعي المحلي الخاص بي					
+08_settings.strings	SET_LOCAL_NETWORK_SUB	For a server you run yourself, such as Ollama on your computer	لخادم تشغّله بنفسك مثل Ollama على حاسوبك					
+08_settings.strings	SET_CATEGORIES	What cloud AI may receive	ما يمكن أن يتلقاه الذكاء الاصطناعي السحابي					
+08_settings.strings	CAT_LESSON_CONTENT	Lesson content	محتوى الدروس					
+08_settings.strings	CAT_LESSON_CONTENT_SUB	App-authored exercises and texts	تمارين ونصوص من إعداد التطبيق					
+08_settings.strings	CAT_CONVERSATION_TEXT	Conversation messages	رسائل المحادثة					
+08_settings.strings	CAT_CONVERSATION_TEXT_SUB	What you type or say to a tutor (as text)	ما تكتبه أو تقوله للمعلّم (كنص)					
+08_settings.strings	CAT_VOICE_AUDIO	Voice recordings	التسجيلات الصوتية					
+08_settings.strings	CAT_VOICE_AUDIO_SUB	Needed only for detailed pronunciation scoring and live voice calls. Audio is sent while you use them and is not saved by the app.	مطلوبة فقط لتقييم النطق المفصّل والمكالمات الصوتية المباشرة. يُرسل الصوت أثناء استخدامها فقط ولا يحفظه التطبيق.					
+08_settings.strings	CAT_WRITING_SUBMISSION	Writing exercises	تمارين الكتابة					
+08_settings.strings	CAT_WRITING_SUBMISSION_SUB	Texts you submit for feedback	النصوص التي ترسلها لتلقي الملاحظات					
+08_settings.strings	CAT_PERSONAL_NOTES	Personal notes	الملاحظات الشخصية					
+08_settings.strings	CAT_PERSONAL_NOTES_SUB	Sensitive — off by default	حساس — متوقف افتراضيًا					
+08_settings.strings	CAT_IMPORTED_MATERIAL	Imported material	المواد المستوردة					
+08_settings.strings	CAT_IMPORTED_MATERIAL_SUB	Sensitive — or allow per item when importing	حساس — أو اسمح لكل عنصر عند الاستيراد					
+08_settings.strings	CAT_LEARNING_HISTORY	Learning history	سجل التعلّم					
+08_settings.strings	CAT_LEARNING_HISTORY_SUB	Mistakes, scores and progress	الأخطاء والنتائج والتقدّم					
+08_settings.strings	CAT_PROFESSIONAL_MATERIAL	Work material	مواد العمل					
+08_settings.strings	CAT_PROFESSIONAL_MATERIAL_SUB	Sensitive — off by default	حساس — متوقف افتراضيًا					
+08_settings.strings	SET_FALLBACK	Allow fallback to another cloud provider	السماح بالتحويل إلى مزوّد سحابي آخر					
+08_settings.strings	SET_FALLBACK_SUB	Off: if your preferred provider fails, we use offline practice instead of sending your text elsewhere	عند الإيقاف: إذا فشل مزوّدك المفضّل نستخدم التدريب دون اتصال بدل إرسال نصك إلى جهة أخرى					
+08_settings.strings	SET_BACKUP	Include learning data in device backup	تضمين بيانات التعلّم في نسخ الجهاز الاحتياطي					
+08_settings.strings	SET_BACKUP_SUB	API keys are never backed up	لا تُنسخ مفاتيح API احتياطيًا أبدًا					
+08_settings.strings	SET_AI	AI	الذكاء الاصطناعي					
+08_settings.strings	SET_AI_PROVIDERS	AI providers	مزوّدو الذكاء الاصطناعي					
+08_settings.strings	SET_AI_PROVIDERS_SUB	Connect your own API keys	اربط مفاتيح API الخاصة بك					
+08_settings.strings	SET_LOCAL_MODELS	On-device models	النماذج على الجهاز					
+08_settings.strings	SET_LOCAL_MODELS_SUB	Compatibility and limits	التوافق والقيود					
+08_settings.strings	SET_NOTIFICATIONS	Reminders	التذكيرات					
+08_settings.strings	SET_REMINDER_ENABLE	Daily reminder	تذكير يومي					
+08_settings.strings	SET_REMINDER_TIME	Time	الوقت					
+08_settings.strings	SET_REMINDER_DAYS	Days	الأيام					
+08_settings.strings	SET_QUIET_HOURS	Quiet hours: {0}–{1} (no reminders)	ساعات الهدوء: {0}–{1} (بلا تذكيرات)					
+08_settings.strings	SET_REMINDER_FAILED	Reminders couldn't be scheduled. Check that notifications are allowed for this app.	تعذّرت جدولة التذكيرات. تحقّق من السماح بالإشعارات لهذا التطبيق.					
+08_settings.strings	SET_REMINDER_SAVED	Reminder updated	حُدّث التذكير					
+08_settings.strings	SET_REMINDER_QUIET_CONFLICT	That time is inside quiet hours, so the reminder will wait until quiet hours end.	هذا الوقت ضمن ساعات الهدوء، لذا سينتظر التذكير حتى تنتهي.					
+08_settings.strings	SET_DATA	Your data	بياناتك					
+08_settings.strings	SET_EXPORT	Export my data	تصدير بياناتي					
+08_settings.strings	SET_EXPORT_SUB	A JSON file with your profile, progress and vocabulary. API keys are never included.	ملف JSON يتضمن ملفك الشخصي وتقدّمك ومفرداتك، ولا تُضمّن مفاتيح API أبدًا.					
+08_settings.strings	SET_EXPORT_CONV	Include conversations	تضمين المحادثات					
+08_settings.strings	SET_EXPORT_NOTES	Include notes	تضمين الملاحظات					
+08_settings.strings	SET_EXPORT_DONE	Export ready ({0})	التصدير جاهز ({0})					
+08_settings.strings	SET_EXPORT_SAVED_TO	Saved to {0}	حُفظ في {0}					
+08_settings.strings	SET_RESTORE	Restore from an export	الاستعادة من ملف تصدير					
+08_settings.strings	SET_RESTORE_SUB	Replaces the data on this device with a file exported from Polyglot Academy. Cloud AI is switched off afterwards so you can confirm consent again.	يستبدل البيانات على هذا الجهاز بملف صُدِّر من Polyglot Academy. يُوقَف الذكاء الاصطناعي السحابي بعدها لتؤكّد موافقتك من جديد.					
+08_settings.strings	SET_RESTORE_BODY	Restoring replaces your current profile, progress, reviews, vocabulary, notes and conversations on this device. Saved API keys are not affected.	تستبدل الاستعادة ملفك الشخصي وتقدّمك ومراجعاتك ومفرداتك وملاحظاتك ومحادثاتك الحالية على هذا الجهاز. لا تتأثر مفاتيح API المحفوظة.					
+08_settings.strings	SET_RESTORE_CONFIRM	Choose file and restore	اختيار الملف والاستعادة					
+08_settings.strings	SET_RESTORE_DONE	Restored {0} records	استُعيد {0} من السجلات					
+08_settings.strings	SET_RESTORE_SKIPPED	Restored {0} records; {1} could not be read and were skipped	استُعيد {0} من السجلات، وتُخطّي {1} تعذّرت قراءته					
+08_settings.strings	SET_RESTORE_INVALID	This file isn't a Polyglot Academy export	هذا الملف ليس ملف تصدير من Polyglot Academy					
+08_settings.strings	SET_RESTORE_NEWER	This export comes from a newer version of the app. Update the app and try again.	هذا الملف من إصدار أحدث من التطبيق. حدّث التطبيق ثم أعد المحاولة.					
+08_settings.strings	SET_RESTORE_TOO_LARGE	This file is too large to restore	هذا الملف أكبر من أن يُستعاد					
+08_settings.strings	SET_RESTORE_UNAVAILABLE	Choosing files isn't available on this device	اختيار الملفات غير متاح على هذا الجهاز					
+08_settings.strings	SET_DELETE_CONV	Delete all conversations	حذف كل المحادثات					
+08_settings.strings	SET_DELETE_MATERIALS	Delete all imported material	حذف كل المواد المستوردة					
+08_settings.strings	SET_DELETE_ALL	Delete all my data	حذف كل بياناتي					
+08_settings.strings	SET_DELETE_ALL_BODY	This removes your profile, progress, reviews, conversations, notes, imported material, saved API keys and reminders from this device. It can't be undone.	يحذف هذا ملفك الشخصي وتقدّمك ومراجعاتك ومحادثاتك وملاحظاتك والمواد المستوردة ومفاتيح API المحفوظة والتذكيرات من هذا الجهاز، ولا يمكن التراجع عنه.					
+08_settings.strings	SET_DELETE_CONFIRM	Delete	حذف					
+08_settings.strings	SET_DELETED	Deleted	حُذف					
+08_settings.strings	SET_PERMISSIONS	Permissions explained	شرح الأذونات					
+08_settings.strings	PERM_MIC	Microphone	الميكروفون					
+08_settings.strings	PERM_MIC_BODY	Used only while you speak to a tutor or practise pronunciation. Requested the first time you tap the microphone.	يُستخدم فقط أثناء التحدث مع المعلّم أو التدرّب على النطق، ويُطلب في أول مرة تضغط فيها على الميكروفون.					
+08_settings.strings	PERM_NOTIF	Notifications	الإشعارات					
+08_settings.strings	PERM_NOTIF_BODY	Used only for the daily reminder you set.	تُستخدم فقط للتذكير اليومي الذي تحدّده.					
+08_settings.strings	PERM_FILES	Files	الملفات					
+08_settings.strings	PERM_FILES_BODY	We use the system file picker, so the app only sees the files you choose.	نستخدم منتقي الملفات في النظام، فلا يرى التطبيق إلا الملفات التي تختارها.					
+08_settings.strings	PERM_CAMERA	Camera	الكاميرا					
+08_settings.strings	PERM_CAMERA_BODY	Not used in this version.	غير مستخدمة في هذا الإصدار.					
+08_settings.strings	PERM_INTERNET	Internet	الإنترنت					
+08_settings.strings	PERM_INTERNET_BODY	Used only to reach AI providers you configure. Lessons and reviews work offline.	يُستخدم فقط للوصول إلى مزوّدي الذكاء الاصطناعي الذين تهيّئهم، وتعمل الدروس والمراجعات دون اتصال.					
+08_settings.strings	SET_HELP	Help and troubleshooting	المساعدة وحل المشكلات					
+08_settings.strings	HELP_Q1	"The tutor says it is ""offline / scripted"". Why?"	يقول المعلّم إنه «دون اتصال / نص مُعدّ مسبقًا». لماذا؟					
+08_settings.strings	HELP_A1	No AI provider is set up, cloud AI is off in Privacy, or the provider failed. The scripted partner still lets you practise scenarios. Set up a provider in Settings › AI providers.	لم يُهيأ مزوّد ذكاء اصطناعي، أو الذكاء الاصطناعي السحابي متوقف في الخصوصية، أو فشل المزوّد. ما زال الشريك المُعدّ مسبقًا يتيح لك التدرّب على المواقف. هيّئ مزوّدًا من الإعدادات › مزوّدو الذكاء الاصطناعي.					
+08_settings.strings	HELP_Q2	I have a ChatGPT/Gemini/Copilot subscription. Why do I need an API key?	لديّ اشتراك في ChatGPT أو Gemini أو Copilot. لماذا أحتاج إلى مفتاح API؟					
+08_settings.strings	HELP_A2	Consumer chat subscriptions usually don't include API access. Create an API key on the provider's developer platform and paste it in AI providers.	لا تتضمن اشتراكات المحادثة للمستهلكين عادةً وصولًا إلى واجهة API. أنشئ مفتاح API من منصة المطوّرين لدى المزوّد والصقه في مزوّدي الذكاء الاصطناعي.					
+08_settings.strings	HELP_Q3	The microphone doesn't work.	الميكروفون لا يعمل.					
+08_settings.strings	HELP_A3	Allow microphone access for the app in system settings and check that a speech recognition service is installed for your learning language. You can always type instead.	اسمح للتطبيق بالوصول إلى الميكروفون من إعدادات النظام وتحقّق من تثبيت خدمة تعرّف على الكلام للغة التي تتعلّمها، ويمكنك دائمًا الكتابة بدلًا من ذلك.					
+08_settings.strings	HELP_Q4	There is no audio for Chinese or Arabic.	لا يوجد صوت للصينية أو العربية.					
+08_settings.strings	HELP_A4	Install a voice for that language in your system's text-to-speech settings.	ثبّت صوتًا لتلك اللغة من إعدادات تحويل النص إلى كلام في نظامك.					
+08_settings.strings	HELP_Q5	How is my level estimated?	كيف يُقدَّر مستواي؟					
+08_settings.strings	HELP_A5	The placement test adapts question difficulty and reports a likely range. It is an estimate, not an official certificate, and you can change your level at any time.	يكيّف اختبار تحديد المستوى صعوبة الأسئلة ويعرض نطاقًا مرجّحًا. إنه تقدير وليس شهادة رسمية، ويمكنك تغيير مستواك في أي وقت.					
+08_settings.strings	HELP_Q6	Can I learn while I sleep?	هل يمكنني التعلّم أثناء النوم؟					
+08_settings.strings	HELP_A6	No — there is no good evidence that new vocabulary is learned while asleep. Sleep does help consolidate what you practised while awake, so regular rest and short daily reviews are the reliable approach.	لا، فلا يوجد دليل جيد على تعلّم مفردات جديدة أثناء النوم. لكن النوم يساعد على تثبيت ما تدرّبت عليه وأنت مستيقظ، لذا فالراحة المنتظمة والمراجعات اليومية القصيرة هي النهج الموثوق.					
+08_settings.strings	SET_ABOUT	About and legal	حول التطبيق والشؤون القانونية					
+08_settings.strings	ABOUT_VERSION	Version {0}	الإصدار {0}					
+08_settings.strings	ABOUT_BODY	Polyglot Academy is an original language-learning app. Tutors, illustrations and lesson content were created for this app.	أكاديمية بوليغلوت تطبيق أصلي لتعلّم اللغات، وقد أُعدّ المعلّمون والرسوم ومحتوى الدروس خصيصًا له.					
+08_settings.strings	ABOUT_AI	AI responses can be wrong. Professional tracks teach language, not financial, legal or professional advice.	قد تخطئ ردود الذكاء الاصطناعي. والمسارات المهنية تعلّم اللغة ولا تقدّم استشارات مالية أو قانونية أو مهنية.					
+08_settings.strings	ABOUT_LEVELS	Level labels follow CEFR descriptors. In-app results are estimates, not certified results.	تتبع تسميات المستويات واصفات الإطار الأوروبي المرجعي، ونتائج التطبيق تقديرات وليست نتائج معتمدة.					
+08_settings.strings	ABOUT_LICENSES	Open-source libraries: Kotlin, kotlinx (Apache-2.0), Compose Multiplatform (Apache-2.0), Ktor (Apache-2.0), SQLDelight (Apache-2.0), OkHttp (Apache-2.0).	مكتبات مفتوحة المصدر: Kotlin وkotlinx (Apache-2.0) وCompose Multiplatform (Apache-2.0) وKtor (Apache-2.0) وSQLDelight (Apache-2.0) وOkHttp (Apache-2.0).					
+08_settings.strings	ABOUT_PLATFORM	Running on: {0}	يعمل على: {0}					
+08_settings.strings	PROV_TITLE	AI providers	مزوّدو الذكاء الاصطناعي					
+08_settings.strings	PROV_INTRO	Connect a provider with your own API key to enable AI tutors. Nothing is connected until you add a key and the connection test succeeds.	اربط مزوّدًا بمفتاح API الخاص بك لتفعيل معلّمي الذكاء الاصطناعي. لا يُعدّ أي مزوّد متصلًا حتى تضيف مفتاحًا وينجح اختبار الاتصال.					
+08_settings.strings	PROV_CLOUD_OFF	Cloud AI is turned off in Privacy, so cloud providers won't be used even if configured.	الذكاء الاصطناعي السحابي متوقف في الخصوصية، لذا لن يُستخدم المزوّدون السحابيون حتى لو هُيّئوا.					
+08_settings.strings	PROV_OPEN_PRIVACY	Open privacy settings	فتح إعدادات الخصوصية					
+08_settings.strings	PROV_STATUS_OFF	Off	متوقف					
+08_settings.strings	PROV_STATUS_NEEDS_KEY	Needs an API key	يحتاج إلى مفتاح API					
+08_settings.strings	PROV_STATUS_NEEDS_CONFIG	Needs configuration	يحتاج إلى إعداد					
+08_settings.strings	PROV_STATUS_UNTESTED	Configured — not verified yet	مُهيأ — لم يُتحقّق منه بعد					
+08_settings.strings	PROV_STATUS_VERIFIED	Connection verified	تم التحقّق من الاتصال					
+08_settings.strings	PROV_STATUS_FAILED	Last test failed	فشل آخر اختبار					
+08_settings.strings	PROV_STATUS_NO_RUNTIME	Not available in this build	غير متاح في هذا الإصدار					
+08_settings.strings	PROV_PREFERRED_BADGE	Preferred	مفضّل					
+08_settings.strings	PROV_LOC_CLOUD	Cloud service	خدمة سحابية					
+08_settings.strings	PROV_LOC_LOCAL_NETWORK	Your own server	خادمك الخاص					
+08_settings.strings	PROV_LOC_ON_DEVICE	On this device	على هذا الجهاز					
+08_settings.strings	PROV_ENABLED	Use this provider	استخدام هذا المزوّد					
+08_settings.strings	PROV_API_KEY	API key	مفتاح API					
+08_settings.strings	PROV_KEY_SAVED	A key is saved (hidden). Enter a new one to replace it.	يوجد مفتاح محفوظ (مخفي). أدخل مفتاحًا جديدًا لاستبداله.					
+08_settings.strings	PROV_KEY_SAVE	Save key	حفظ المفتاح					
+08_settings.strings	PROV_KEY_REMOVE	Remove key	إزالة المفتاح					
+08_settings.strings	PROV_KEY_STORAGE	Stored with: {0}	طريقة التخزين: {0}					
+08_settings.strings	PROV_MODEL	Model	النموذج					
+08_settings.strings	PROV_MODEL_DEFAULT	Default: {0}	الافتراضي: {0}					
+08_settings.strings	PROV_BASE_URL	Server address	عنوان الخادم					
+08_settings.strings	PROV_DEPLOYMENT	Deployment name	اسم النشر					
+08_settings.strings	PROV_TEST	Test connection	اختبار الاتصال					
+08_settings.strings	PROV_TESTING	Testing…	جارٍ الاختبار…					
+08_settings.strings	PROV_TEST_OK	Connected — answered in {0} ms	متصل — أجاب خلال {0} مللي ثانية					
+08_settings.strings	PROV_TEST_FAILED	The test did not pass: {0}	لم ينجح الاختبار: {0}					
+08_settings.strings	PROV_LOCAL_404	"the server answered, but not at {0}, or it does not have the model ""{1}"". For Ollama the address is http://<computer>:11434/v1 and the model must be pulled first (ollama pull {1}); for LM Studio http://<computer>:1234/v1."	أجاب الخادم، لكن ليس على العنوان {0}، أو ليس لديه النموذج «{1}». عنوان Ollama هو http://<الحاسوب>:11434/v1 ويجب تنزيل النموذج عليه أولًا (ollama pull {1})؛ وعنوان LM Studio هو http://<الحاسوب>:1234/v1.					
+08_settings.strings	PROV_MAKE_PREFERRED	Make preferred	اجعله المفضّل					
+08_settings.strings	PROV_IS_PREFERRED	This is your preferred provider	هذا مزوّدك المفضّل					
+08_settings.strings	PROV_PRIVACY_CLOUD	Messages you send to the tutor go to {0}'s servers and are handled under their terms.	تُرسل الرسائل التي ترسلها إلى المعلّم إلى خوادم {0} وتُعالج وفق شروطه.					
+08_settings.strings	PROV_PRIVACY_LOCAL	Requests go only to the server address you enter. Use HTTPS, or 127.0.0.1 on the same device.	تُرسل الطلبات إلى عنوان الخادم الذي تدخله فقط. استخدم HTTPS، أو 127.0.0.1 على الجهاز نفسه.					
+08_settings.strings	PROV_FEATURES	Features used here	الميزات المستخدمة هنا					
+08_settings.strings	CAP_CHAT	Conversation	المحادثة					
+08_settings.strings	CAP_STRUCTURED_FEEDBACK	Corrections, writing feedback and stories	التصحيحات وتقييم الكتابة والقصص					
+08_settings.strings	CAP_TRANSLATION	Translation	الترجمة					
+08_settings.strings	CAP_VISION	Reading photos and scans	قراءة الصور والمستندات الممسوحة					
+08_settings.strings	PROV_SPEECH_NOTE	Speech uses your device's speech services, not this provider.	يستخدم الكلام خدمات الكلام في جهازك وليس هذا المزوّد.					
+08_settings.strings	PROV_USAGE	Used {0} times · about {1} tokens (approximate; check the provider dashboard for billing)	استُخدم {0} مرة · نحو {1} رمز (تقريبي؛ راجع لوحة المزوّد للفوترة)					
+08_settings.strings	PROV_DOCS	Provider documentation: {0}	وثائق المزوّد: {0}					
+08_settings.strings	PROV_SUBSCRIPTION	A consumer chat subscription usually does not include API access. Create an API key on the provider's developer platform.	لا يتضمن اشتراك المحادثة للمستهلكين عادةً وصولًا إلى API. أنشئ مفتاح API من منصة المطوّرين لدى المزوّد.					
+08_settings.strings	PROV_AZURE_NOTE	Uses the documented Azure OpenAI REST API (Microsoft). Enter your resource endpoint and deployment name.	يستخدم واجهة Azure OpenAI REST الموثّقة من Microsoft. أدخل عنوان المورد واسم النشر.					
+08_settings.strings	LOCAL_TITLE	On-device models	النماذج على الجهاز					
+08_settings.strings	LOCAL_INTRO	A chat model can run on this phone, with nothing sent anywhere. Download one below (once, after you agree), then choose it for conversations. Small models answer slowly and make more mistakes than cloud AI.	يمكن تشغيل نموذج محادثة على هذا الهاتف دون إرسال أي شيء. نزّل نموذجًا أدناه (مرة واحدة وبعد موافقتك)، ثم اختره للمحادثات. النماذج الصغيرة أبطأ في الرد وأكثر خطأً من الذكاء الاصطناعي السحابي.					
+08_settings.strings	LOCAL_DEVICE	This device	هذا الجهاز					
+08_settings.strings	LOCAL_DEVICE_INFO	{0} MB memory · {1} MB free storage · {2} cores	ذاكرة {0} ميغابايت · تخزين متاح {1} ميغابايت · {2} أنوية					
+08_settings.strings	LOCAL_TIER_LOW	Entry-level device	جهاز بمواصفات أساسية					
+08_settings.strings	LOCAL_TIER_MID	Mid-range device	جهاز متوسط					
+08_settings.strings	LOCAL_TIER_HIGH	High-end device	جهاز عالي الأداء					
+08_settings.strings	LOCAL_MODEL_SIZE	{0} MB download · needs {1} MB memory · licence {2}	تنزيل {0} ميغابايت · يحتاج {1} ميغابايت ذاكرة · الترخيص {2}					
+08_settings.strings	LOCAL_REASON_RUNTIME_NOT_BUNDLED	No on-device runtime in this build	لا توجد بيئة تشغيل على الجهاز في هذا الإصدار					
+08_settings.strings	LOCAL_REASON_NOT_64_BIT	Needs a 64-bit device	يحتاج إلى جهاز 64 بت					
+08_settings.strings	LOCAL_REASON_INSUFFICIENT_RAM	Not enough memory	الذاكرة غير كافية					
+08_settings.strings	LOCAL_REASON_INSUFFICIENT_STORAGE	Not enough free storage	مساحة التخزين المتاحة غير كافية					
+08_settings.strings	LOCAL_REASON_OS_TOO_OLD	Android version too old	إصدار أندرويد قديم جدًا					
+08_settings.strings	LOCAL_DOWNLOAD	Download ({0} MB)	تنزيل ({0} ميغابايت)					
+08_settings.strings	LOCAL_CONFIRM_TITLE	Download this model?	تنزيل هذا النموذج؟					
+08_settings.strings	LOCAL_CONFIRM_BODY	About {0} MB ({1}) is downloaded from the Qwen page on Hugging Face and checked before use. Only the model file is requested; nothing about you is sent. Use Wi-Fi if your data plan is limited.	يُنزَّل نحو {0} ميغابايت ({1}) من صفحة Qwen على Hugging Face ويُتحقَّق منه قبل الاستخدام. يُطلب ملف النموذج فقط، ولا يُرسل شيء عنك. استخدم Wi-Fi إن كانت باقتك محدودة.					
+08_settings.strings	LOCAL_USE	Use for conversations	استخدامه للمحادثات					
+08_settings.strings	LOCAL_IN_USE	In use	قيد الاستخدام					
+08_settings.strings	LOCAL_TRY	Try it	جرّبه					
+08_settings.strings	LOCAL_TRY_OK	Works on this phone: answered in {0} second.|Works on this phone: answered in {0} seconds.	يعمل على هذا الهاتف: أجاب في أقل من ثانية.|يعمل على هذا الهاتف: أجاب خلال ثانية واحدة.|يعمل على هذا الهاتف: أجاب خلال ثانيتين.|يعمل على هذا الهاتف: أجاب خلال {0} ثوانٍ.|يعمل على هذا الهاتف: أجاب خلال {0} ثانية.|يعمل على هذا الهاتف: أجاب خلال {0} ثانية.					
+08_settings.strings	LOCAL_DELETE	Delete from this phone	حذفه من هذا الهاتف					
+08_settings.strings	LOCAL_QUALITY	Answers from an on-device model are not checked by anyone; tutors still correct you, but the explanations can be wrong. Corrections in JSON (writing feedback) still need a cloud or local-server model.	لا يراجع أحد إجابات النموذج على الجهاز؛ يبقى المعلّم يصحّح لك، لكن الشروح قد تخطئ. أما التصحيح المنظّم (ملاحظات الكتابة) فما زال يحتاج نموذجًا سحابيًا أو خادمًا محليًا.					
+08_settings.strings	LOCAL_ALTERNATIVE	"Alternative: run a model on your computer (for example with Ollama) and connect it as ""Local server"" in AI providers."	بديل: شغّل نموذجًا على حاسوبك (مثل Ollama) واربطه بوصفه «خادمًا محليًا» في مزوّدي الذكاء الاصطناعي.					
+08_settings.strings	SET_VOICE	Voice services	خدمات الصوت					
+08_settings.strings	SET_VOICE_SUB	Pronunciation scoring and live voice calls	تقييم النطق والمكالمات الصوتية المباشرة					
+08_settings.strings	VOICE_INTRO	Two optional cloud services use your own API keys. Everything else in the app works without them.	خدمتان سحابيتان اختياريتان تستخدمان مفاتيح API الخاصة بك. كل ما عداهما في التطبيق يعمل بدونهما.					
+08_settings.strings	VOICE_NEEDS_CONSENT	"Both services send your voice. Turn on cloud AI and allow ""Voice recordings"" in Privacy first."	ترسل الخدمتان صوتك. فعّل الذكاء الاصطناعي السحابي واسمح بـ«التسجيلات الصوتية» في الخصوصية أولًا.					
+08_settings.strings	VOICE_PRON_TITLE	Pronunciation scoring (Azure AI Speech)	تقييم النطق (Azure AI Speech)					
+08_settings.strings	VOICE_PRON_BODY	Scores every word and sound you say against the sentence, with accuracy, fluency and completeness.	يقيّم كل كلمة وكل صوت تنطقه مقارنةً بالجملة، مع الدقة والطلاقة والاكتمال.					
+08_settings.strings	VOICE_PRON_HOWTO	"In the Azure portal create a ""Speech"" resource, then copy Key 1 and its region (for example westeurope). A free tier exists; charges are set by Microsoft."	أنشئ موردًا من نوع «Speech» في بوابة Azure، ثم انسخ المفتاح Key 1 والمنطقة (مثل westeurope). توجد فئة مجانية، والأسعار تحدّدها Microsoft.					
+08_settings.strings	VOICE_REGION	Region	المنطقة					
+08_settings.strings	VOICE_REGION_HINT	Lowercase, e.g. westeurope, eastus, uaenorth	بأحرف صغيرة، مثل westeurope أو eastus أو uaenorth					
+08_settings.strings	VOICE_KEY	Speech key	مفتاح الخدمة					
+08_settings.strings	VOICE_KEY_SAVED	Key saved — enter a new one to replace it	المفتاح محفوظ. أدخل مفتاحًا جديدًا لاستبداله					
+08_settings.strings	VOICE_SAVED	Saved. The key is stored encrypted on this device.	تم الحفظ. المفتاح مخزّن مشفّرًا على هذا الجهاز.					
+08_settings.strings	VOICE_BAD_REGION	That region name is not valid.	اسم المنطقة غير صالح.					
+08_settings.strings	VOICE_TEST	Test the key	اختبر المفتاح					
+08_settings.strings	VOICE_TEST_OK	The key works.	المفتاح يعمل.					
+08_settings.strings	VOICE_TEST_BAD_KEY	The service rejected the key or region.	رفضت الخدمة المفتاح أو المنطقة.					
+08_settings.strings	VOICE_TEST_FAILED	Could not reach the service: {0}	تعذّر الوصول إلى الخدمة: {0}					
+08_settings.strings	VOICE_REMOVE_KEY	Remove key	احذف المفتاح					
+08_settings.strings	VOICE_STATE_NOT_CONFIGURED	Not set up	غير مُعدّ					
+08_settings.strings	VOICE_STATE_NO_CONSENT	Voice not allowed in Privacy	الصوت غير مسموح في الخصوصية					
+08_settings.strings	VOICE_STATE_OFFLINE	Offline	دون اتصال					
+08_settings.strings	VOICE_STATE_READY	Ready	جاهز					
+08_settings.strings	VOICE_RT_TITLE	Live voice calls (OpenAI Realtime)	المكالمات الصوتية المباشرة (OpenAI Realtime)					
+08_settings.strings	VOICE_RT_BODY	Talk with your tutor like a phone call: low delay, and you can interrupt. Your sentences are still corrected in the transcript.	تحدّث مع مدرّبك كأنها مكالمة هاتفية: تأخير قليل ويمكنك المقاطعة. وتظهر تصحيحات جملك في نص المحادثة.					
+08_settings.strings	VOICE_RT_ADD_KEY	Add an OpenAI key	أضف مفتاح OpenAI					
+08_settings.strings	VOICE_RT_MODEL	Realtime model	نموذج الصوت المباشر					
+08_settings.strings	VOICE_RT_MODEL_HINT	Default gpt-realtime. Check the provider's current model list.	الافتراضي gpt-realtime. راجع قائمة النماذج الحالية لدى المزوّد.					
+08_settings.strings	VOICE_RT_VOICE	Tutor voice	صوت المدرّب					
+08_settings.strings	VOICE_RT_KEY_NOTE	Uses the {0} key from AI providers. Voice calls cost more than text chat; prices are set by the provider.	يستخدم مفتاح {0} من مزوّدي الذكاء الاصطناعي. المكالمات الصوتية أعلى كلفة من المحادثة النصية، والأسعار يحدّدها المزوّد.					
+08_settings.strings	RT_STATE_NO_KEY	No OpenAI key	لا يوجد مفتاح OpenAI					
+08_settings.strings	RT_STATE_NO_CONSENT	Voice not allowed in Privacy	الصوت غير مسموح في الخصوصية					
+08_settings.strings	RT_STATE_OFFLINE	Offline	دون اتصال					
+08_settings.strings	RT_STATE_READY	Ready	جاهز					
+08_settings.strings	SYNC_TITLE	Sync between devices	المزامنة بين الأجهزة					
+08_settings.strings	SYNC_BODY	Keep your progress on your phone, tablet and computer in step through your own WebDAV storage (for example Nextcloud, ownCloud or a NAS). Everything is encrypted on this device with your passphrase before it is uploaded.	حافظ على تقدّمك متطابقًا بين الهاتف والجهاز اللوحي والحاسوب عبر مساحة تخزين WebDAV خاصة بك (مثل Nextcloud أو ownCloud أو جهاز NAS). يُشفَّر كل شيء على هذا الجهاز بعبارة المرور قبل رفعه.					
+08_settings.strings	SYNC_URL	WebDAV address	عنوان WebDAV					
+08_settings.strings	SYNC_URL_HINT	e.g. https://cloud.example.com/remote.php/dav/files/you	مثال: https://cloud.example.com/remote.php/dav/files/you					
+08_settings.strings	SYNC_USER	User name	اسم المستخدم					
+08_settings.strings	SYNC_PASSWORD	Password or app password	كلمة المرور أو كلمة مرور التطبيق					
+08_settings.strings	SYNC_PASSWORD_SAVED	Password saved — enter a new one to replace it	كلمة المرور محفوظة. أدخل جديدة لاستبدالها					
+08_settings.strings	SYNC_PASSPHRASE	Encryption passphrase	عبارة مرور التشفير					
+08_settings.strings	SYNC_PASSPHRASE_SAVED	Passphrase saved — enter a new one to replace it	عبارة المرور محفوظة. أدخل جديدة لاستبدالها					
+08_settings.strings	SYNC_PASSPHRASE_HINT	At least 10 characters. Use the same one on every device. If you lose it, the server copy cannot be read by anyone, including us.	10 أحرف على الأقل. استخدم العبارة نفسها على كل جهاز. إن فقدتها فلن يستطيع أحد قراءة النسخة المخزّنة، ولا نحن.					
+08_settings.strings	SYNC_SAVED	Saved. Secrets are stored encrypted on this device.	تم الحفظ. البيانات السرية مخزّنة مشفّرة على هذا الجهاز.					
+08_settings.strings	SYNC_NOW	Sync now	زامن الآن					
+08_settings.strings	PRIV_TITLE	How your data is handled	كيف تُعامَل بياناتك					
+08_settings.strings	PRIV_INTRO	A plain description of what version {0} of the app does with your data.	وصف مبسّط لما يفعله الإصدار {0} من التطبيق ببياناتك.					
+08_settings.strings	PRIV_STORED_TITLE	Stored on this device	ما يُحفظ على هذا الجهاز					
+08_settings.strings	PRIV_STORED	Your profile and settings, progress, answers, mistakes and reviews, conversations, notes, saved words, the text of material you import, and error reports you write. They stay in the app's private storage.	ملفك الشخصي وإعداداتك، وتقدّمك وإجاباتك وأخطاؤك ومراجعاتك، ومحادثاتك، وملاحظاتك، والكلمات التي حفظتها، ونصّ المواد التي تستوردها، وبلاغات الأخطاء التي تكتبها. تبقى في مساحة التطبيق الخاصة.					
+08_settings.strings	PRIV_KEYS	API keys, the sync password and passphrase and the speech key are encrypted with the device's secure keystore. They are never exported or backed up.	مفاتيح API وكلمة مرور المزامنة وعبارة مرورها ومفتاح خدمة الكلام مشفّرة بمخزن المفاتيح الآمن في الجهاز، ولا تُصدَّر ولا تُنسخ احتياطيًا أبدًا.					
+08_settings.strings	PRIV_LEAVES_TITLE	What can leave the device, and when	ما قد يغادر الجهاز ومتى					
+08_settings.strings	PRIV_NO_SERVER	The app has no server of its own: no account, no analytics, no ads and no crash reporting. Lessons, reviews, the offline tutor and reading photos on the device work without sending anything.	ليس للتطبيق خادم خاص به: لا حساب ولا تحليلات ولا إعلانات ولا تقارير أعطال. الدروس والمراجعات والمعلّم دون اتصال وقراءة الصور على الجهاز تعمل دون إرسال أي شيء.					
+08_settings.strings	PRIV_AI	AI features (tutors, corrections, stories, reading a photo with AI) send text only when you turn cloud AI on, accept the consent, and allow that kind of data, and only to the provider you set up with your own key.	ميزات الذكاء الاصطناعي (المعلّمون والتصحيح والقصص وقراءة الصور بالذكاء الاصطناعي) لا ترسل نصًّا إلا إذا شغّلت الذكاء الاصطناعي السحابي ووافقت على الإقرار وسمحت بذلك النوع من البيانات، ولا ترسله إلا إلى المزوّد الذي أعددته بمفتاحك.					
+08_settings.strings	PRIV_VOICE	"Your voice leaves the device only for detailed pronunciation scoring and live voice calls, and only when ""Voice recordings"" is allowed (off by default)."	لا يغادر صوتك الجهاز إلا لتقييم النطق المفصّل وللمكالمات الصوتية المباشرة، وحين يُسمح بفئة «التسجيلات الصوتية» فقط (متوقّفة افتراضيًا).					
+08_settings.strings	PRIV_SYNC	Sync, if you set it up, sends one file to your own WebDAV server, encrypted on this device with your passphrase. Background sync is off unless you turn it on.	المزامنة، إن أعددتها، ترسل ملفًّا واحدًا إلى خادم WebDAV الخاص بك، مشفّرًا على هذا الجهاز بعبارة مرورك. والمزامنة التلقائية متوقّفة ما لم تشغّلها.					
+08_settings.strings	PRIV_LOCAL_CHAT	A chat model you download in On-device models answers on the phone, without sending your conversation anywhere.	نموذج المحادثة الذي تنزّله من «النماذج على الجهاز» يجيب على الهاتف دون أن يرسل محادثتك إلى أي جهة.					
+08_settings.strings	PRIV_TRANSCRIBE	Audio and video you import are transcribed on the phone. The speech model is downloaded only when you agree, and that download sends nothing about you.	تُفرَّغ ملفات الصوت والفيديو التي تستوردها على الهاتف. ولا يُنزَّل نموذج الكلام إلا بموافقتك، ولا يُرسل هذا التنزيل شيئًا عنك.					
+08_settings.strings	PRIV_SPEECH	Speech recognition and read-aloud use your phone's speech services, which follow their own settings.	التعرّف على الكلام والقراءة بصوت مسموع يستخدمان خدمات الكلام في هاتفك، وتخضع لإعداداتها الخاصة.					
+08_settings.strings	PRIV_PERMISSIONS_TITLE	Permissions	الأذونات					
+08_settings.strings	PRIV_PERMISSIONS	The microphone is asked for when you first tap it, notifications when you turn on the reminder. The app does not ask for camera, storage, contacts or location: photos are taken by your camera app and files are picked with the system picker.	يُطلب الميكروفون حين تضغطه أول مرة، والإشعارات حين تشغّل التذكير. لا يطلب التطبيق الكاميرا ولا التخزين ولا جهات الاتصال ولا الموقع: تلتقط الصور بتطبيق الكاميرا، وتختار الملفات من منتقي النظام.					
+08_settings.strings	PRIV_KEPT_TITLE	How long things are kept	مدة الاحتفاظ					
+08_settings.strings	PRIV_KEPT_DEVICE	Your learning data stays on this device until you delete it or uninstall the app.	تبقى بيانات تعلّمك على هذا الجهاز حتى تحذفها أو تزيل التطبيق.					
+08_settings.strings	PRIV_KEPT_PHOTOS	For imported files and photos only the extracted text is kept. A photo you take is shrunk at once and the camera's file deleted; the photo itself stays in memory only until you import it or leave.	لا يُحفظ من الملفات والصور المستوردة إلا النصّ المستخرج منها. الصورة التي تلتقطها تُصغَّر فورًا ويُحذف ملف الكاميرا، وتبقى الصورة نفسها في الذاكرة فقط حتى تستوردها أو تغادر.					
+08_settings.strings	PRIV_KEPT_REPORTS	Error reports stay on the device until you export or delete them.	تبقى بلاغات الأخطاء على الجهاز حتى تصدّرها أو تحذفها.					
+08_settings.strings	PRIV_KEPT_SYNC	The sync file stays on your server until you delete it there; disconnecting removes the connection from this device only.	يبقى ملف المزامنة على خادمك حتى تحذفه هناك؛ وفصل الجهاز يزيل الاتصال من هذا الجهاز فقط.					
+08_settings.strings	PRIV_KEPT_PROVIDERS	Anything sent to an AI or speech provider is kept according to that provider's policy, which the app does not control.	ما يُرسل إلى مزوّد ذكاء اصطناعي أو خدمة كلام يُحفظ وفق سياسة ذلك المزوّد، ولا يتحكّم بها التطبيق.					
+08_settings.strings	PRIV_KEPT_BACKUP	The phone's backup includes learning data only if you turn that on, and never keys.	لا يشمل النسخ الاحتياطي للهاتف بيانات التعلّم إلا إن شغّلت ذلك، ولا يشمل المفاتيح أبدًا.					
+08_settings.strings	PRIV_DELETE_TITLE	Deleting your data	حذف بياناتك					
+08_settings.strings	PRIV_DELETE	In Settings → Your data you can delete conversations, imported material, or everything. Deleting everything also removes your keys, the sync connection and the reminder, and switches background sync off.	من الإعدادات ← بياناتك يمكنك حذف المحادثات أو المواد المستوردة أو كل شيء. وحذف كل شيء يزيل أيضًا مفاتيحك واتصال المزامنة والتذكير، ويوقف المزامنة التلقائية.					
+08_settings.strings	PRIV_UNINSTALL	Uninstalling the app removes everything it stored on this device.	إزالة التطبيق تحذف كل ما خزّنه على هذا الجهاز.					
+08_settings.strings	PRIV_OPEN_SETTINGS	Privacy settings	إعدادات الخصوصية					
+08_settings.strings	PRIV_OPEN_DATA	Your data: export and delete	بياناتك: التصدير والحذف					
+08_settings.strings	PRIV_NOT_LEGAL	This page describes how the app works; it is not the legal privacy policy, which is published separately.	تصف هذه الصفحة طريقة عمل التطبيق، وليست سياسة الخصوصية القانونية التي تُنشر منفصلة.					
+08_settings.strings	SET_WIDGET_WORD	Show a word to review on the home-screen widget	إظهار كلمة للمراجعة في أداة الشاشة الرئيسية					
+08_settings.strings	SET_WIDGET_WORD_SUB	The widget is for the home screen only, never the lock screen. Turn this off to show only your progress.	الأداة للشاشة الرئيسية فقط، ولا تظهر على شاشة القفل. أوقف هذا الخيار لتُظهر تقدّمك فقط.					
+08_settings.strings	SYNC_AUTO	Sync automatically	مزامنة تلقائية					
+08_settings.strings	SYNC_AUTO_BODY	About every 6 hours, when the device is online and the battery is not low. Off by default.	كل 6 ساعات تقريبًا، حين يكون الجهاز متصلًا والبطارية غير منخفضة. متوقّفة افتراضيًا.					
+08_settings.strings	SYNC_AUTO_SETUP_FIRST	Save the address, password and passphrase first.	احفظ العنوان وكلمة المرور وعبارة المرور أولًا.					
+08_settings.strings	SYNC_AUTO_WIFI	Only on Wi-Fi	عبر Wi-Fi فقط					
+08_settings.strings	SYNC_AUTO_WIFI_BODY	Not on mobile data or other metered networks.	لا تُستخدم بيانات الجوّال ولا الشبكات المحدودة.					
+08_settings.strings	SYNC_AUTO_LAST	Last automatic sync ({0}): {1}	آخر مزامنة تلقائية ({0}): {1}					
+08_settings.strings	SYNC_AUTO_FAILED	it did not complete and will be tried again later. Tap Sync now to see why.	لم تكتمل، وستُعاد المحاولة لاحقًا. اضغط «زامن الآن» لمعرفة السبب.					
+08_settings.strings	SYNC_AUTO_CONFLICT	This device and the server both changed since the last sync. Automatic sync overwrites nothing: choose which copy to keep.	تغيّر هذا الجهاز والنسخة المخزّنة كلاهما منذ آخر مزامنة. المزامنة التلقائية لا تستبدل شيئًا: اختر النسخة التي تُبقيها.					
+08_settings.strings	SYNC_AUTO_CHOOSE	Choose a copy	اختر نسخة					
+08_settings.strings	SYNC_LAST	Last sync: {0}	آخر مزامنة: {0}					
+08_settings.strings	SYNC_NEVER	Not synced yet	لم تتم المزامنة بعد					
+08_settings.strings	SYNC_DISCONNECT	Disconnect this device	افصل هذا الجهاز					
+08_settings.strings	SYNC_NOTE	Learning data is synced; device settings (theme, privacy, API keys) stay on each device. There is no merge: when both devices changed you choose which copy to keep.	تُزامن بيانات التعلّم فقط، وتبقى إعدادات الجهاز (المظهر والخصوصية ومفاتيح API) على كل جهاز. لا يوجد دمج: إن تغيّر الجهازان معًا تختار النسخة التي تحتفظ بها.					
+08_settings.strings	SYNC_RESULT_UPLOADED	Your progress was uploaded.	رُفع تقدّمك.					
+08_settings.strings	SYNC_RESULT_DOWNLOADED	Progress from your other device was loaded.	حُمّل التقدّم من جهازك الآخر.					
+08_settings.strings	SYNC_RESULT_UP_TO_DATE	Everything is up to date.	كل شيء محدَّث.					
+08_settings.strings	SYNC_RESULT_CONFLICT	Both copies changed.	تغيّرت النسختان.					
+08_settings.strings	SYNC_CONFLICT_TITLE	Both devices have new progress	لدى الجهازين تقدّم جديد					
+08_settings.strings	SYNC_CONFLICT_BODY	This device and the server copy both changed since the last sync. Keep this device (the server copy is replaced) or use the server copy (this device's new progress is replaced)?	تغيّر هذا الجهاز والنسخة المخزّنة منذ آخر مزامنة. هل تحتفظ بهذا الجهاز (تُستبدل النسخة المخزّنة) أم تستخدم النسخة المخزّنة (يُستبدل التقدّم الجديد على هذا الجهاز)؟					
+08_settings.strings	SYNC_KEEP_THIS	Keep this device	احتفظ بهذا الجهاز					
+08_settings.strings	SYNC_USE_SERVER	Use the server copy	استخدم النسخة المخزّنة					
+08_settings.strings	SYNC_ERR_SETUP	Enter the address, user name, password and passphrase first.	أدخل العنوان واسم المستخدم وكلمة المرور وعبارة المرور أولًا.					
+08_settings.strings	SYNC_ERR_INSECURE	Use an https:// address.	استخدم عنوانًا يبدأ بـ https://.					
+08_settings.strings	SYNC_ERR_AUTH	The server rejected the user name or password.	رفض الخادم اسم المستخدم أو كلمة المرور.					
+08_settings.strings	SYNC_ERR_PASSPHRASE	The passphrase does not match the one used on your other device.	عبارة المرور لا تطابق المستخدمة على جهازك الآخر.					
+08_settings.strings	SYNC_ERR_NOT_SYNC	The file on the server is not a sync file from this app.	الملف على الخادم ليس ملف مزامنة من هذا التطبيق.					
+08_settings.strings	SYNC_ERR_NEWER	The server copy was made by a newer version of the app. Update the app first.	النسخة المخزّنة من إصدار أحدث من التطبيق. حدّث التطبيق أولًا.					
+08_settings.strings	SYNC_ERR_CHANGED	Another device synced at the same moment. Tap Sync now again.	زامن جهاز آخر في اللحظة نفسها. اضغط «زامن الآن» مجددًا.					
+08_settings.strings	SYNC_ERR_SHORT_PASSPHRASE	The passphrase must have at least 10 characters.	يجب أن تتكوّن عبارة المرور من 10 أحرف على الأقل.					
+08_settings.strings	SYNC_ERR_OTHER	Sync failed: {0}	فشلت المزامنة: {0}					
+08_settings.strings	PROV_PER_FEATURE	Which AI for each feature	أي ذكاء اصطناعي لكل ميزة					
+08_settings.strings	PROV_PER_FEATURE_BODY	"For example Claude for conversations, Gemini for reading photos and DeepSeek for corrections. ""Preferred"" uses your preferred provider."	مثلًا Claude للمحادثات، وGemini لقراءة الصور، وDeepSeek للتصحيح. «المفضّل» يستخدم مزوّدك المفضّل.					
+08_settings.strings	PROV_PER_FEATURE_NONE	Turn on a provider and save its key to choose it here.	فعّل مزوّدًا واحفظ مفتاحه لتختاره هنا.					
+08_settings.strings	PROV_FEATURE_DEFAULT	Preferred	المفضّل					
+08_settings.strings	PROV_FEATURE_UNSUPPORTED	None of your providers supports this feature yet.	لا يدعم أيٌّ من مزوّديك هذه الميزة بعد.					
+08_settings.strings	PROV_GET_KEY	Get a key: {0}	احصل على مفتاح: {0}					
+08_settings.strings	PROV_MODEL_REQUIRED	Required: the model id from your provider	مطلوب: معرّف النموذج لدى مزوّدك					
+08_settings.strings	PROV_MODEL_SUGGESTED	Common models	نماذج شائعة					
+08_settings.strings	PROV_MODELS_LOAD	Load the models of my account	حمّل نماذج حسابي					
+08_settings.strings	PROV_MODELS_LOADING	Loading models…	جارٍ تحميل النماذج…					
+08_settings.strings	PROV_MODELS_FOUND	{0} model available (showing {1}; type in the model field to filter)|{0} models available (showing {1}; type in the model field to filter)	لا نماذج متاحة (يُعرض {1}؛ اكتب في حقل النموذج للتصفية)|نموذج واحد متاح (يُعرض {1}؛ اكتب في حقل النموذج للتصفية)|نموذجان متاحان (يُعرض {1}؛ اكتب في حقل النموذج للتصفية)|{0} نماذج متاحة (يُعرض {1}؛ اكتب في حقل النموذج للتصفية)|{0} نموذجًا متاحًا (يُعرض {1}؛ اكتب في حقل النموذج للتصفية)|{0} نموذج متاح (يُعرض {1}؛ اكتب في حقل النموذج للتصفية)					
+08_settings.strings	PROV_MODELS_EMPTY	The provider returned no models.	لم يُرجع المزوّد أي نماذج.					
+08_settings.strings	PROV_MODELS_UNSUPPORTED	This provider has no model list; type the model or deployment name.	لا يوفّر هذا المزوّد قائمة نماذج؛ اكتب اسم النموذج أو النشر.					
+08_settings.strings	PROV_MODELS_FAILED	Could not load models: {0}	تعذّر تحميل النماذج: {0}					
+08_settings.strings	PROV_MODEL_SWITCHED	"""{0}"" is not available for this key, so the app chose ""{1}"" from your account. You can pick another below."	النموذج «{0}» غير متاح لهذا المفتاح، فاختار التطبيق «{1}» من نماذج حسابك. يمكنك اختيار غيره من القائمة.					
+08_settings.strings	PROV_ERR_AUTH	{0} rejected the key. Copy the whole key again (no spaces), check that it is a {0} key and still active, then save it.	رفض {0} المفتاح. انسخ المفتاح كاملًا مرة أخرى (دون مسافات)، وتأكد أنه مفتاح {0} وأنه ما زال فعّالًا، ثم احفظه.					
+08_settings.strings	PROV_ERR_NETWORK	Could not reach {0}. Check the internet connection, or a VPN or firewall that blocks it, then try again.	تعذّر الوصول إلى {0}. تحقّق من اتصال الإنترنت، أو من شبكة VPN أو جدار حماية يحجبه، ثم أعد المحاولة.					
+08_settings.strings	PROV_ERR_TIMEOUT	{0} did not answer in time. Try again.	لم يُجب {0} في الوقت المحدد. أعد المحاولة.					
+08_settings.strings	PROV_ERR_QUOTA	This {0} account has no free quota or credit left for this key.	لم يبقَ لحساب {0} رصيد أو حصة مجانية لهذا المفتاح.					
+08_settings.strings	PROV_ERR_RATE	Too many requests to {0} right now. Wait a minute and try again.	طلبات كثيرة إلى {0} الآن. انتظر دقيقة ثم أعد المحاولة.					
+08_settings.strings	PROV_ERR_REGION	{0} does not serve this key in your country or region.	لا يقدّم {0} خدمته لهذا المفتاح في بلدك أو منطقتك.					
+08_settings.strings	PROV_ERR_MODEL	"The model ""{0}"" is not available for this key. Tap ""Load the models of my account"" and choose one."	النموذج «{0}» غير متاح لهذا المفتاح. اضغط «حمّل نماذج حسابي» واختر واحدًا منها.					
+08_settings.strings	PROV_ERR_NOT_CONFIGURED	{0} is not set up yet: check the server address, the model and the key.	لم يكتمل إعداد {0} بعد: تحقّق من عنوان الخادم والنموذج والمفتاح.					
+08_settings.strings	PROV_NEED_BASE_URL	"Enter the server address below, then tap ""Load the models of my account""."	اكتب عنوان الخادم في الأسفل، ثم اضغط «حمّل نماذج حسابي».					
+08_settings.strings	PROV_NEED_DEPLOYMENT	"Enter the deployment name below, then tap ""Test connection""."	اكتب اسم النشر في الأسفل، ثم اضغط «اختبار الاتصال».					
+08_settings.strings	PROV_ERR_DNS	The phone could not find the {0} server ({1}). Check the internet connection; if other sites open, this address may be blocked on your network or in your country: try mobile data instead of Wi-Fi (or the other way round), a VPN, or another provider such as OpenRouter.	لم يتمكّن الهاتف من إيجاد خادم {0} ‏({1}). تحقّق من اتصال الإنترنت؛ وإن كانت المواقع الأخرى تفتح فقد يكون هذا العنوان محجوبًا في شبكتك أو بلدك: جرّب بيانات الجوال بدل Wi-Fi (أو العكس)، أو VPN، أو مزوّدًا آخر مثل OpenRouter.					
+08_settings.strings	PROV_ERR_TLS	A secure connection to {0} ({1}) could not be set up. Check that the phone's date and time are set automatically, and turn off any VPN, proxy or app that inspects traffic.	تعذّر إنشاء اتصال آمن مع {0} ‏({1}). تأكّد أن تاريخ الهاتف ووقته مضبوطان تلقائيًا، وأوقف أي VPN أو وكيل أو تطبيق يفحص الاتصال.					
+08_settings.strings	PROV_ERR_BLOCKED	The phone found {0} ({1}) but could not connect to it; the connection may be blocked on this network. Try mobile data instead of Wi-Fi (or the other way round), or a VPN.	وجد الهاتف {0} ‏({1}) لكنه لم يستطع الاتصال به؛ قد يكون الاتصال محجوبًا في هذه الشبكة. جرّب بيانات الجوال بدل Wi-Fi (أو العكس)، أو VPN.					
+08_settings.strings	PROV_ERR_DETAIL	(Technical detail: {0})	(تفصيل تقني: {0})					
+08_settings.strings	PROV_KEY_FORMAT	"Saved, but this does not look like a {0} API key: they usually start with ""{1}"". Copy the key itself from the provider's key page, not a project number or name."	حُفظ، لكنه لا يبدو مفتاح API من {0}: مفاتيحه تبدأ عادة بـ «{1}». انسخ المفتاح نفسه من صفحة المفاتيح لدى المزوّد، لا رقم المشروع ولا اسمه.					
+08_settings.strings	PROV_BASE_URL_INVALID	The server address must be a web address starting with https:// (it was cleared).	يجب أن يكون عنوان الخادم عنوان ويب يبدأ بـ https:// (مُسح ما كُتب).					
+08_settings.strings	PROV_BASE_URL_INVALID_DEFAULT	What was in the server address field is not a web address, so it was cleared and the provider's own address is used. Leave this field empty unless you use a proxy.	ما كُتب في حقل عنوان الخادم ليس عنوان ويب، فمُسح ويُستخدم عنوان المزوّد نفسه. اترك هذا الحقل فارغًا إلا إن كنت تستخدم وسيطًا.					
+08_settings.strings	PROV_BASE_URL_RESET	Use the provider's own address	استخدم عنوان المزوّد نفسه					
+08_settings.strings	PROV_ERR_SERVER	{0} had a server problem (HTTP {1}). Try again later.	واجه خادم {0} مشكلة (HTTP {1}). أعد المحاولة لاحقًا.					
+08_settings.strings	SET_SHOW_POINTS	Show points, quests and streak	إظهار النقاط والمهام والسلسلة					
+08_settings.strings	SET_SHOW_POINTS_SUB	Your progress is recorded either way; this only hides them from the home screen.	يُسجَّل تقدّمك في كلّ الأحوال، وهذا يخفيها من الشاشة الرئيسية فقط.					
+08_settings.strings	SET_REPORTS	Content error reports	بلاغات أخطاء المحتوى					
+08_settings.strings	SET_REPORTS_NONE	"No reports yet. Use ""Report an error in this content"" in lessons, reviews or word pages."	لا بلاغات بعد. استخدم «أبلغ عن خطأ في هذا المحتوى» في الدروس أو المراجعة أو صفحات الكلمات.					
+08_settings.strings	SET_REPORTS_COUNT	{0} report on this device|{0} reports on this device	لا بلاغات|بلاغ واحد على هذا الجهاز|بلاغان على هذا الجهاز|{0} بلاغات على هذا الجهاز|{0} بلاغًا على هذا الجهاز|{0} بلاغ على هذا الجهاز					
+08_settings.strings	SET_REPORTS_EXPORT	Export reports for reviewers	صدّر البلاغات للمراجعين					
+08_settings.strings	SET_REPORTS_DELETE	Delete all reports	احذف كلّ البلاغات					
+08_settings.strings	SET_REPORTS_DELETE_BODY	The reports on this device will be deleted. Export them first if you want to send them.	ستُحذف البلاغات من هذا الجهاز. صدّرها أولًا إن أردت إرسالها.					
+08_settings.strings	SET_TRANSLIT_KNOWN	Hide it for words I know	أخفِه للكلمات التي أتقنتها					
+08_settings.strings	SET_TRANSLIT_KNOWN_SUB	For words due a week or more later in your reviews; a button still shows it.	للكلمات التي صار موعد مراجعتها بعد أسبوع أو أكثر، ويبقى زرّ لإظهاره.					
+08_settings.strings	LOCAL_EXPERIMENTAL_TITLE	Experimental	تجريبي					
+08_settings.strings	LOCAL_EXPERIMENTAL	Conversation with a model on the phone is experimental: on many phones a reply can take minutes, and small models miss many corrections. For full tutor feedback, use a cloud provider or a computer on your network. Lessons, reviews and the offline conversation partner work without it.	المحادثة مع نموذج على الهاتف ميزة تجريبية: قد يستغرق الردّ دقائق على كثير من الهواتف، والنماذج الصغيرة تفوّت كثيرًا من التصحيحات. للملاحظات الكاملة من المعلّم استخدم مزوّدًا سحابيًا أو حاسوبًا على شبكتك. الدروس والمراجعة وشريك المحادثة دون اتصال تعمل من دونها.					
+08_settings.strings	USAGE_TITLE	Usage log for a trial	سجلّ الاستخدام لتجربة					
+08_settings.strings	USAGE_SUB	Off unless you turn it on. It counts how often each screen is opened, per day, on this device only: no words you write or read, no names. If someone running a trial asked you to, export the file and send it yourself. Turning it off deletes it.	متوقّف ما لم تشغّله. يعدّ كم مرة فُتحت كل شاشة في كل يوم، على هذا الجهاز فقط: لا كلمات كتبتها أو قرأتها، ولا أسماء. إن طلبه منك من يُجري تجربة، صدّر الملف وأرسله بنفسك. إيقافه يحذفه.					
+08_settings.strings	USAGE_SWITCH	Keep a usage log	احتفظ بسجلّ استخدام					
+08_settings.strings	USAGE_STATUS	Recording since {1}: {0} day|Recording since {1}: {0} days	يُسجَّل منذ {1}: لا أيام بعد|يُسجَّل منذ {1}: يوم واحد|يُسجَّل منذ {1}: يومان|يُسجَّل منذ {1}: {0} أيام|يُسجَّل منذ {1}: {0} يومًا|يُسجَّل منذ {1}: {0} يوم					
+08_settings.strings	USAGE_EXPORT	Export the usage log	صدّر سجلّ الاستخدام					
+08_wordlists.strings	PRACTICE_WORDLISTS	3000 most common words	أكثر 3000 كلمة شيوعًا					
+08_wordlists.strings	PRACTICE_WORDLISTS_SUB	Ten levels of 300 words, with examples and a test for each level	عشرة مستويات من 300 كلمة، مع أمثلة واختبار لكل مستوى					
+08_wordlists.strings	WORDLEVELS_TITLE	Most common words	الكلمات الأكثر شيوعًا					
+08_wordlists.strings	WORDLEVELS_BODY	The 3000 most common words of {0} in ten levels of 300, most frequent first. Add words to your reviews a few at a time, then check yourself with the level test.	أكثر 3000 كلمة شيوعًا في {0}، في عشرة مستويات من 300 كلمة، الأكثر تكرارًا أولًا. أضف الكلمات إلى مراجعاتك على دفعات صغيرة، ثم اختبر نفسك باختبار المستوى.					
+08_wordlists.strings	WORDLEVELS_NOTICE	The lists, meanings and examples were written with AI and have not yet been checked by native speakers. The order by frequency is approximate.	كُتبت القوائم والمعاني والأمثلة بمساعدة الذكاء الاصطناعي ولم يراجعها متحدثون أصليون بعد. الترتيب حسب الشيوع تقريبي.					
+08_wordlists.strings	WORDLEVEL_NAME	Level {0}	المستوى {0}					
+08_wordlists.strings	WORDLEVEL_RANKS	Words {0}–{1} · about {2}	الكلمات ⁦{0}–{1}⁩ · تقريبًا {2}					
+08_wordlists.strings	WORDLEVEL_STARTED	In your reviews	في مراجعاتك					
+08_wordlists.strings	WORDLEVEL_KNOWN	Learned	تعلّمتها					
+08_wordlists.strings	WORDLEVEL_COUNT	{0} of {1}	{0} من {1}					
+08_wordlists.strings	WORDLEVEL_BEST	Best test result: {0}%	أفضل نتيجة في الاختبار: ⁦{0}٪⁩					
+08_wordlists.strings	WORDLEVEL_PASSED	Test passed	اجتزت الاختبار					
+08_wordlists.strings	WORDLEVEL_ADD_NEXT	Add the next {0} words to reviews	أضف الكلمات الـ{0} التالية إلى المراجعات					
+08_wordlists.strings	WORDLEVEL_ADDED	{0} word added to your reviews|{0} words added to your reviews	لم تُضف أي كلمة|أُضيفت كلمة واحدة إلى مراجعاتك|أُضيفت كلمتان إلى مراجعاتك|أُضيفت {0} كلمات إلى مراجعاتك|أُضيفت {0} كلمة إلى مراجعاتك|أُضيفت {0} كلمة إلى مراجعاتك					
+08_wordlists.strings	WORDLEVEL_ALL_ADDED	All the words of this level are in your reviews.	كل كلمات هذا المستوى موجودة في مراجعاتك.					
+08_wordlists.strings	WORDLEVEL_TEST	Take the level test	خذ اختبار المستوى					
+08_wordlists.strings	WORDLEVEL_REVIEW	Review now	راجع الآن					
+08_wordlists.strings	WORDLEVEL_SEARCH	Search this level	ابحث في هذا المستوى					
+08_wordlists.strings	WORDLEVEL_NO_MATCH	No word in this level matches your search.	لا توجد كلمة في هذا المستوى تطابق بحثك.					
+08_wordlists.strings	WORDLEVEL_SHOW_MORE	Show more words	اعرض مزيدًا من الكلمات					
+08_wordlists.strings	WORD_STATUS_NOT_ADDED	Not in reviews	ليست في المراجعات					
+08_wordlists.strings	WORD_RANK	No. {0} · level {1}	رقم {0} · المستوى {1}					
+08_wordlists.strings	WORD_MEANING	Meaning	المعنى					
+08_wordlists.strings	WORD_FORMS	Other forms	صيغ أخرى					
+08_wordlists.strings	WORD_EXAMPLES	Examples	أمثلة					
+08_wordlists.strings	WORD_DETAILS	Grammar	القواعد					
+08_wordlists.strings	WORD_ADD	Add to reviews	أضف إلى المراجعات					
+08_wordlists.strings	WORD_ADDED	Added to your reviews	أُضيفت إلى مراجعاتك					
+08_wordlists.strings	WORD_NOT_FOUND	This word is not in the list.	هذه الكلمة غير موجودة في القائمة.					
+08_wordlists.strings	WORD_PREV	Previous word	الكلمة السابقة					
+08_wordlists.strings	WORD_NEXT	Next word	الكلمة التالية					
+08_wordlists.strings	WORD_EXTRA_GENDER	Gender	الجنس					
+08_wordlists.strings	WORD_GENDER_M	masculine	مذكّر					
+08_wordlists.strings	WORD_GENDER_F	feminine	مؤنّث					
+08_wordlists.strings	WORD_GENDER_MF	masculine or feminine	مذكّر أو مؤنّث					
+08_wordlists.strings	WORD_EXTRA_ARTICLE	Article	أداة التعريف					
+08_wordlists.strings	WORD_EXTRA_PLURAL	Plural	الجمع					
+08_wordlists.strings	WORD_EXTRA_ROOT	Root	الجذر					
+08_wordlists.strings	WORD_EXTRA_MASDAR	Verbal noun	المصدر					
+08_wordlists.strings	WORD_EXTRA_PRESENT	Present tense	المضارع					
+08_wordlists.strings	WORD_EXTRA_TRAD	Traditional characters	الحروف التقليدية					
+08_wordlists.strings	WORD_EXTRA_MEASURE	Measure word	المُصنِّف					
+08_wordlists.strings	WORD_EXTRA_HSK	HSK level (not verified)	مستوى HSK (غير متحقَّق منه)					
+08_wordlists.strings	WORD_EXTRA_STEM	Stem	الجذع					
+08_wordlists.strings	WORD_IRREGULAR	Irregular	غير قياسي					
+08_wordlists.strings	WORDTEST_TITLE	Level {0} test	اختبار المستوى {0}					
+08_wordlists.strings	WORDTEST_BODY	{0} words from this level. You pass with {1}% or more, and the words you miss go into your reviews.	{0} كلمة من هذا المستوى. تجتاز الاختبار بنسبة ⁦{1}٪⁩ أو أكثر، وتُضاف الكلمات التي تخطئ فيها إلى مراجعاتك.					
+08_wordlists.strings	WORDTEST_START	Start the test	ابدأ الاختبار					
+08_wordlists.strings	WORDTEST_QUESTION	Question {0} of {1}	السؤال {0} من {1}					
+08_wordlists.strings	WORDTEST_PROMPT	What does this word mean?	ما معنى هذه الكلمة؟					
+08_wordlists.strings	WORDTEST_CORRECT	Correct	صحيح					
+08_wordlists.strings	WORDTEST_WRONG	Not quite	ليس تمامًا					
+08_wordlists.strings	WORDTEST_ANSWER	The answer: {0}	الإجابة: {0}					
+08_wordlists.strings	WORDTEST_NEXT	Next	التالي					
+08_wordlists.strings	WORDTEST_FINISH	See the result	اعرض النتيجة					
+08_wordlists.strings	WORDTEST_RESULT	{0} of {1} correct ({2}%)	{0} من {1} صحيحة (⁦{2}٪⁩)					
+08_wordlists.strings	WORDTEST_PASSED	You passed this level test.	اجتزت اختبار هذا المستوى.					
+08_wordlists.strings	WORDTEST_FAILED	Not passed yet. Review the words you missed and try again.	لم تجتز الاختبار بعد. راجع الكلمات التي أخطأت فيها ثم حاول مرة أخرى.					
+08_wordlists.strings	WORDTEST_MISSED	Words to review	كلمات للمراجعة					
+08_wordlists.strings	WORDTEST_BACK	Back to the level	عودة إلى المستوى					
+08_wordlists.strings	WORDTEST_AGAIN	Try again	حاول مرة أخرى					
+08_wordlists.strings	SESSION_WORD_TEST	Word level test	اختبار مستوى الكلمات					
+08_wordlists.strings	POS_NOUN	noun	اسم					
+08_wordlists.strings	POS_VERB	verb	فعل					
+08_wordlists.strings	POS_ADJECTIVE	adjective	صفة					
+08_wordlists.strings	POS_ADVERB	adverb	ظرف					
+08_wordlists.strings	POS_PRONOUN	pronoun	ضمير					
+08_wordlists.strings	POS_PREPOSITION	preposition	حرف جر					
+08_wordlists.strings	POS_CONJUNCTION	conjunction	أداة ربط					
+08_wordlists.strings	POS_INTERJECTION	interjection	كلمة تعجّب					
+08_wordlists.strings	POS_NUMERAL	number	عدد					
+08_wordlists.strings	POS_PHRASE	phrase	عبارة					
+08_wordlists.strings	POS_PARTICLE	particle	أداة					
+08_wordlists.strings	POS_MEASURE_WORD	measure word	مُصنِّف					
+08_wordlists.strings	POS_DETERMINER	determiner	محدِّد					
+08_wordlists.strings	WORDTEST_MODE	Question type	نوع الأسئلة					
+08_wordlists.strings	WORDTEST_MODE_MIXED	Mixed	منوّعة					
+08_wordlists.strings	WORDTEST_MODE_MEANING	Word to meaning	من الكلمة إلى المعنى					
+08_wordlists.strings	WORDTEST_MODE_WORD	Meaning to word	من المعنى إلى الكلمة					
+08_wordlists.strings	WORDTEST_MODE_LISTENING	Listening	استماع					
+08_wordlists.strings	WORDTEST_PROMPT_WORD	Which word has this meaning?	أيّ كلمة لها هذا المعنى؟					
+08_wordlists.strings	WORDTEST_PROMPT_LISTEN	Listen and choose the meaning	استمع واختر المعنى					
+08_wordlists.strings	WORDTEST_NO_VOICE	There is no voice for {0} on this device, so the test has no listening questions.	لا يوجد صوت للغة {0} على هذا الجهاز، لذلك لا يتضمّن الاختبار أسئلة استماع.					
+08_wordlists.strings	HOME_WORDS_TITLE	Most common words	الكلمات الأكثر شيوعًا					
+08_wordlists.strings	HOME_WORDS_LEVEL	Level {0} · {1} of {2} words in your reviews	المستوى {0} · {1} من {2} كلمة في مراجعاتك					
+08_wordlists.strings	HOME_WORDS_OPEN	Continue the level	تابع المستوى					
+08_wordlists.strings	WORDLEVEL_LESSONS	Lessons	الدروس					
+08_wordlists.strings	WORDLEVEL_LESSONS_BODY	Each lesson teaches 10 words of this level with flashcards, matching, choices, listening and example sentences. When you finish it, the words go into your reviews.	يعلّمك كل درس 10 كلمات من هذا المستوى بالبطاقات والمطابقة والاختيار والاستماع وجمل الأمثلة. عندما تُنهيه تُضاف الكلمات إلى مراجعاتك.					
+08_wordlists.strings	WORDLEVEL_LESSONS_DONE	{0} of {1} lessons done	أنجزت {0} من {1} درسًا					
+08_wordlists.strings	WORDLEVEL_LESSON_NEXT	Lesson {0}: words {1}–{2}	الدرس {0}: الكلمات ⁦{1}–{2}⁩					
+08_wordlists.strings	WORDLEVEL_LESSONS_ALL	You have done all the lessons of this level.	أنجزت كل دروس هذا المستوى.					
+08_wordlists.strings	WORD_STROKES	Stroke order	ترتيب الضربات					
+08_wordlists.strings	WORD_STROKES_REPLAY	Play again	أعد العرض					
+08_wordlists.strings	WORD_STROKES_DESC	Stroke order of {0}, {1} strokes	ترتيب ضربات {0}، عدد الضربات {1}					
+08_wordlists.strings	WORD_STROKES_SOURCE	Stroke data: Make Me a Hanzi, Arphic Public License.	بيانات الضربات: مشروع Make Me a Hanzi، رخصة Arphic العامة.					
+08_wordlists.strings	WORD_REVIEWED	Checked by a qualified speaker on {0}.	راجعها متحدّث مؤهّل في {0}.					
+08_wordlists.strings	WORD_NEEDS_FIX	A reviewer marked this entry for correction; it may contain a mistake.	علّم مراجعٌ هذا المدخل للتصحيح، فقد يحتوي خطأً.					

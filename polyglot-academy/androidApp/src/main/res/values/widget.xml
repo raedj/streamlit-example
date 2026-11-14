@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="widget_background">#FFFFFFFF</color>
+    <color name="widget_text">#FF1B1F24</color>
+    <color name="widget_text_secondary">#FF4A5260</color>
+    <color name="widget_accent">#FF0E6E6A</color>
+
+    <!-- Each line takes the direction of its own text: Arabic right to left, pinyin left to right. -->
+    <style name="WidgetText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textDirection">firstStrong</item>
+        <item name="android:textAlignment">textStart</item>
+    </style>
+</resources>

@@ -1,0 +1,180 @@
+package com.polyglot.academy.core
+
+import com.polyglot.academy.core.mandarin.HandwritingScorer
+import com.polyglot.academy.core.mandarin.HandwritingVerdict
+import com.polyglot.academy.core.mandarin.InkPoint
+import java.awt.Color
+import java.awt.Font
+import java.awt.RenderingHints
+import java.awt.image.BufferedImage
+import java.io.File
+import kotlin.test.Test
+
+/**
+ * Feasibility experiment (not a product test): would the shape scorer used for Chinese characters
+ * work for Arabic and Urdu letters? A "learner" is simulated by thinning a letter drawn in a second
+ * font to a one-pixel line (like a finger stroke) and scoring it against the target font.
+ */
+class ArabicWritingExperiment {
+    private val fontDir = "C:/Windows/Fonts/"
+    private fun load(path: String) = Font.createFont(Font.TRUETYPE_FONT, File(path))
+    private val G = HandwritingScorer.GRID
+
+    private fun bitmap(font: Font, text: String, size: Int = 256): Array<BooleanArray> {
+        val img = BufferedImage(size, size, BufferedImage.TYPE_INT_ARGB)
+        val g = img.createGraphics()
+        g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON)
+        g.font = font.deriveFont(size * 0.55f)
+        g.color = Color.BLACK
+        val gv = g.font.layoutGlyphVector(g.fontRenderContext, text.toCharArray(), 0, text.length, Font.LAYOUT_RIGHT_TO_LEFT)
+        val b = gv.visualBounds
+        g.drawGlyphVector(gv, (size / 2 - b.centerX).toFloat(), (size / 2 - b.centerY).toFloat())
+        g.dispose()
+        return Array(size) { y -> BooleanArray(size) { x -> (img.getRGB(x, y) ushr 24) > 100 } }
+    }
+
+    /** The glyph scaled into the writing box the same way for target and ink (both fill the box). */
+    private fun normalise(px: Array<BooleanArray>): Array<BooleanArray> {
+        val n = px.size
+        var x0 = n; var y0 = n; var x1 = 0; var y1 = 0
+        for (y in 0 until n) for (x in 0 until n) if (px[y][x]) { x0 = minOf(x0, x); x1 = maxOf(x1, x); y0 = minOf(y0, y); y1 = maxOf(y1, y) }
+        val side = maxOf(x1 - x0, y1 - y0) + 1
+        val cx = (x0 + x1) / 2.0; val cy = (y0 + y1) / 2.0
+        val out = Array(n) { BooleanArray(n) }
+        val scale = side / (n * 0.8)
+        for (y in 0 until n) for (x in 0 until n) {
+            val sx = (cx + (x - n / 2.0) * scale).toInt(); val sy = (cy + (y - n / 2.0) * scale).toInt()
+            if (sx in 0 until n && sy in 0 until n) out[y][x] = px[sy][sx]
+        }
+        return out
+    }
+
+    private fun mask(px: Array<BooleanArray>): BooleanArray {
+        val n = px.size
+        val argb = IntArray(n * n) { i -> if (px[i / n][i % n]) 0xFF000000.toInt() else 0 }
+        return HandwritingScorer.maskFromArgb(argb, n)
+    }
+
+    /** Zhang–Suen thinning: the glyph's centre line, as a finger would draw it. */
+    private fun thin(src: Array<BooleanArray>): Array<BooleanArray> {
+        val n = src.size
+        val img = Array(n) { src[it].copyOf() }
+        fun p(y: Int, x: Int) = if (y in 0 until n && x in 0 until n && img[y][x]) 1 else 0
+        var changed = true
+        while (changed) {
+            changed = false
+            for (pass in 0..1) {
+                val remove = mutableListOf<Pair<Int, Int>>()
+                for (y in 1 until n - 1) for (x in 1 until n - 1) {
+                    if (!img[y][x]) continue
+                    val nb = intArrayOf(p(y - 1, x), p(y - 1, x + 1), p(y, x + 1), p(y + 1, x + 1), p(y + 1, x), p(y + 1, x - 1), p(y, x - 1), p(y - 1, x - 1))
+                    val b = nb.sum()
+                    val a = (0 until 8).count { nb[it] == 0 && nb[(it + 1) % 8] == 1 }
+                    val ok = if (pass == 0) nb[0] * nb[2] * nb[4] == 0 && nb[2] * nb[4] * nb[6] == 0 else nb[0] * nb[2] * nb[6] == 0 && nb[0] * nb[4] * nb[6] == 0
+                    if (b in 2..6 && a == 1 && ok) remove += y to x
+                }
+                remove.forEach { (y, x) -> img[y][x] = false }
+                if (remove.isNotEmpty()) changed = true
+            }
+        }
+        return img
+    }
+
+    /** Connected parts of a bitmap (8-neighbour), largest first. */
+    private fun components(px: Array<BooleanArray>): List<List<Pair<Int, Int>>> {
+        val n = px.size
+        val seen = Array(n) { BooleanArray(n) }
+        val out = mutableListOf<List<Pair<Int, Int>>>()
+        for (y in 0 until n) for (x in 0 until n) if (px[y][x] && !seen[y][x]) {
+            val part = mutableListOf<Pair<Int, Int>>()
+            val stack = ArrayDeque(listOf(y to x)); seen[y][x] = true
+            while (stack.isNotEmpty()) {
+                val (cy, cx) = stack.removeLast(); part += cy to cx
+                for (dy in -1..1) for (dx in -1..1) {
+                    val ny = cy + dy; val nx = cx + dx
+                    if (ny in 0 until n && nx in 0 until n && px[ny][nx] && !seen[ny][nx]) { seen[ny][nx] = true; stack.addLast(ny to nx) }
+                }
+            }
+            out += part
+        }
+        return out.sortedByDescending { it.size }
+    }
+
+    /** Ink as one-point strokes along the thinned line (the scorer only uses where the ink is). */
+    private fun ink(px: Array<BooleanArray>, dropDots: Boolean = false): List<List<InkPoint>> {
+        val n = px.size
+        val keep = if (dropDots) components(px).first().toSet() else null
+        return buildList {
+            for (y in 0 until n step 2) for (x in 0 until n step 2) if (px[y][x] && (keep == null || (y to x) in keep)) add(listOf(InkPoint(x / n.toFloat(), y / n.toFloat())))
+        }
+    }
+
+    private data class Row(val label: String, val verdicts: Map<HandwritingVerdict, Int>, val cases: Int)
+
+    @Test fun run() {
+        val naskh = load(fontDir + "arabtype.ttf")      // Arabic Typesetting (Naskh), as the target
+        val writer = load(fontDir + "tahoma.ttf")       // a plainer hand as the "learner"
+        val nastaliq = load("C:/Users/raed/pa-build/androidApp/src/main/res/font/noto_nastaliq_urdu.ttf")
+        val report = StringBuilder()
+        fun verdict(target: Font, written: Font, asked: String, drawn: String, dropDots: Boolean = false): HandwritingVerdict {
+            val t = mask(normalise(bitmap(target, asked)))
+            val strokes = ink(thin(normalise(bitmap(written, drawn))), dropDots)
+            return HandwritingScorer.score(strokes, t, null).verdict
+        }
+        fun tally(label: String, cases: List<Triple<String, String, Boolean>>, target: Font = naskh, written: Font = writer): Row {
+            val v = cases.map { (asked, drawn, drop) -> verdict(target, written, asked, drawn, drop) }
+            val row = Row(label, v.groupingBy { it }.eachCount(), v.size)
+            report.append("$label (${row.cases}): " + HandwritingVerdict.entries.joinToString(" ") { "${it.name}=${row.verdicts[it] ?: 0}" } + "\n")
+            return row
+        }
+        val letters = "ابتثجحخدذرزسشصضطظعغفقكلمنهوي".map { it.toString() }
+        val dotted = "بتثجخذزشضظغفقني".map { it.toString() }
+        // Groups whose isolated forms differ only in dots.
+        val groups = listOf("بتث", "جحخ", "دذ", "رز", "سش", "صض", "طظ", "عغ")
+        val confusable = groups.flatMap { g -> g.flatMap { a -> g.filter { it != a }.map { b -> Triple(a.toString(), b.toString(), false) } } }
+        // Initial forms (letter + tatweel): ب ت ث ن ي share one body.
+        val initials = "بتثني".map { "$it\u0640" }
+        val initialConfusable = initials.flatMap { a -> initials.filter { it != a }.map { b -> Triple(a, b, false) } }
+
+        tally("Arabic isolated, right letter (Tahoma ink on Naskh target)", letters.map { Triple(it, it, false) })
+        tally("Arabic isolated, dots left out", dotted.map { Triple(it, it, true) })
+        tally("Arabic isolated, a letter differing only in dots", confusable)
+        tally("Arabic initial forms ب ت ث ن ي, right letter", initials.map { Triple(it, it, false) })
+        tally("Arabic initial forms ب ت ث ن ي, another of the five", initialConfusable)
+        tally("Arabic isolated, a different letter shape (e.g. م for ب)", letters.zip(letters.drop(7) + letters.take(7)).map { (a, b) -> Triple(a, b, false) })
+
+        val urdu = listOf("پ", "ٹ", "چ", "ڈ", "ڑ", "ژ", "ک", "گ", "ں", "ھ", "ہ", "ی", "ے")
+        tally("Urdu letters, right letter (Tahoma ink on Nastaliq target)", urdu.map { Triple(it, it, false) }, target = nastaliq)
+        tally("Urdu letters, right letter (Tahoma ink on Naskh target)", urdu.map { Triple(it, it, false) })
+        val urduPairs = listOf("ب" to "پ", "ت" to "ٹ", "د" to "ڈ", "ر" to "ڑ", "ج" to "چ", "ز" to "ژ", "ہ" to "ھ", "ی" to "ے")
+        tally("Urdu pairs differing in dots or a small mark (Naskh)", urduPairs.flatMap { (a, b) -> listOf(Triple(a, b, false), Triple(b, a, false)) })
+
+        // Dot check: separate marks beside the main body, counted per letter in two fonts.
+        val expectedDots = mapOf("ب" to 1, "ت" to 2, "ث" to 3, "ج" to 1, "خ" to 1, "ذ" to 1, "ز" to 1, "ش" to 3, "ض" to 1, "ظ" to 1, "غ" to 1, "ف" to 1, "ق" to 2, "ن" to 1, "ي" to 2,
+            "پ" to 3, "چ" to 3, "ژ" to 3)
+        listOf("Tahoma" to writer, "Arabic Typesetting" to naskh, "Majalla" to load(fontDir + "majalla.ttf")).forEach { (name, f) ->
+            var right = 0; var marks = 0
+            val wrong = mutableListOf<String>()
+            expectedDots.forEach { (letter, dots) ->
+                val parts = components(normalise(bitmap(f, letter)))
+                val body = parts.first().size
+                // A dot is a separate mark much smaller than the body; two touching dots count by size.
+                val dotParts = parts.drop(1).filter { it.size < body / 3 }
+                val single = dotParts.minOfOrNull { it.size } ?: 1
+                val counted = dotParts.sumOf { ((it.size + single / 2) / single).coerceAtMost(3) }
+                if (counted == dots) right++ else wrong += "$letter:$counted/$dots"
+                marks += dotParts.size
+            }
+            report.append("Dot count from the separate marks, $name: $right of ${expectedDots.size} right ${wrong}\n")
+        }
+        // Calibration with Chinese, where the scorer is used today (two different CJK fonts).
+        val cjkTarget = Font("Noto Sans CJK SC", Font.PLAIN, 200)
+        val cjkWriter = load(fontDir + "simsun.ttc")
+        if (cjkTarget.canDisplay('人')) {
+            val hanzi = "人口日月山水火木中大小上下天"
+            tally("Chinese, right character (SimSun ink on Noto target)", hanzi.map { Triple(it.toString(), it.toString(), false) }, target = cjkTarget, written = cjkWriter)
+            tally("Chinese, close character (日↔目, 大↔太, 木↔本, 人↔入, 土↔士)", listOf("日" to "目", "大" to "太", "木" to "本", "人" to "入", "土" to "士").flatMap { (a, b) -> listOf(Triple(a, b, false), Triple(b, a, false)) }, target = cjkTarget, written = cjkWriter)
+        }
+        File("C:/Users/raed/AppData/Local/Temp/claude/C--Users-raed-OneDrive-Desktop-polyglot-academy-polyglot-academy/beca4c8e-f9b1-49f1-a014-ee6dc0bb174e/scratchpad/arabic_writing.txt").writeText(report.toString())
+    }
+}

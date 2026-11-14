@@ -1,0 +1,12 @@
+.gradle/
+build/
+.kotlin/
+local.properties
+*.iml
+.idea/
+captures/
+*.keystore
+*.jks
+secrets.properties
+# Report files testers exported: their own words, kept off the repository (tools/flag_content.py)
+content/review/tester_reports/
