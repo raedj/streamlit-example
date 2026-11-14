@@ -60,6 +60,7 @@ import com.polyglot.academy.core.learning.AnswerChecker
 import com.polyglot.academy.ui.app.LocalApp
 import com.polyglot.academy.ui.app.PlatformBackHandler
 import com.polyglot.academy.ui.app.rememberSpeaker
+import com.polyglot.academy.ui.designsystem.TwoPane
 import com.polyglot.academy.ui.designsystem.Banner
 import com.polyglot.academy.ui.designsystem.BannerKind
 import com.polyglot.academy.ui.designsystem.ConfirmDialog
@@ -277,7 +278,7 @@ private fun LessonPlayer(lesson: Lesson, restart: Boolean, onRetry: () -> Unit) 
         }
     }) { padding ->
         Column(Modifier.fillMaxSize().padding(padding).verticalScroll(rememberScrollState())) {
-            ContentColumn(padding = PaddingValues(vertical = 12.dp)) {
+            ContentColumn(padding = PaddingValues(vertical = 12.dp), wide = summary == null && index >= 0) {
                 val sum = summary
                 if (sum != null && practisingMistakes) {
                     val ctx = ExerciseContext(lesson.language, explain, speaker, hintsOn, enrollment?.showTransliteration != false, enrollment?.useTraditionalCharacters == true, hiddenReadings, tilePool)
@@ -286,6 +287,9 @@ private fun LessonPlayer(lesson: Lesson, restart: Boolean, onRetry: () -> Unit) 
                 else if (sum != null) SummaryView(lesson, sum, onRetry = onRetry, onPractiseMistakes = { practisingMistakes = true })
                 else if (index >= 0) {
                     val ex = lesson.exercises[index]
+                    // On a tablet or desktop the feedback and its explanation sit beside the exercise, so the
+                    // learner reads why while the sentence they answered is still in view.
+                    TwoPane(first = {
                     adaptMessage?.let { Banner(BannerKind.INFO, s[it]) }
                     if (revisiting) Banner(BannerKind.INFO, s[K.PLAYER_REVISIT_NOTE])
                     val ctx = ExerciseContext(lesson.language, explain, speaker, hintsOn, enrollment?.showTransliteration != false, enrollment?.useTraditionalCharacters == true, hiddenReadings, tilePool)
@@ -294,7 +298,11 @@ private fun LessonPlayer(lesson: Lesson, restart: Boolean, onRetry: () -> Unit) 
                         if (!answered) SecondaryButton(s[K.LISTEN_SKIP], { advance() }, Modifier.fillMaxWidth())
                     }
                     key(index, attempt) { ExerciseView(ex, ctx, answered) { onAnswer(ex, it) } }
+                    }, second = {
                     val a = lastAnswer
+                    if (!(answered && a != null) && com.polyglot.academy.ui.designsystem.LocalWidthClass.current.twoPanes) {
+                        PolyCard { Text(s[K.PLAYER_FEEDBACK_HERE], style = MaterialTheme.typography.bodyMedium, color = c.textMuted) }
+                    }
                     if (answered && a != null) {
                         val verdict = a.outcome.note?.verdict
                         val title = when {
@@ -315,6 +323,7 @@ private fun LessonPlayer(lesson: Lesson, restart: Boolean, onRetry: () -> Unit) 
                         }
                         com.polyglot.academy.ui.feature.common.ReportContentButton(lesson.language, "${lesson.id}/${ex.id}", a.promptText.ifBlank { ex.id })
                     }
+                    })
                 }
             }
         }

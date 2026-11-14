@@ -18,6 +18,13 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.NavigationBarItemDefaults
+import androidx.compose.material3.NavigationRail
+import androidx.compose.material3.NavigationRailItem
+import androidx.compose.material3.NavigationRailItemDefaults
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.ui.platform.testTag
+import com.polyglot.academy.ui.designsystem.LocalWidthClass
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
@@ -50,24 +57,63 @@ fun <T> LoadContent(loader: Loader<T>, modifier: Modifier = Modifier, content: @
     }
 }
 
-/** Standard scrolling screen: top bar with back, constrained content width, bottom spacing. */
+/**
+ * Standard scrolling screen: top bar with back, constrained content width, bottom spacing.
+ * A tab's main screen carries the navigation: a bottom bar on phones, a side rail on wider windows.
+ * [wide] lets a screen that lays out [com.polyglot.academy.ui.designsystem.TwoPane]s use the extra width.
+ */
 @Composable
 fun ScrollScreen(
     title: String,
     showBack: Boolean = true,
     tab: Tab? = null,
+    wide: Boolean = false,
     actions: @Composable androidx.compose.foundation.layout.RowScope.() -> Unit = {},
     content: @Composable androidx.compose.foundation.layout.ColumnScope.() -> Unit,
 ) {
     val app = LocalApp.current
     val s = LocalStrings.current
-    ScreenScaffold(
-        title = title, onBack = if (showBack) ({ app.nav.pop() }) else null, backLabel = s[K.BACK], actions = actions,
-        bottomBar = { if (tab != null) AppBottomBar(tab) },
-    ) { padding ->
-        Column(Modifier.fillMaxSize().padding(padding).verticalScroll(rememberScrollState())) {
-            ContentColumn(padding = PaddingValues(top = 4.dp, bottom = 24.dp), content = content)
+    val rail = tab != null && LocalWidthClass.current.hasRail
+    Row(Modifier.fillMaxSize()) {
+        if (rail) AppNavRail(tab!!)
+        ScreenScaffold(
+            title = title, onBack = if (showBack) ({ app.nav.pop() }) else null, backLabel = s[K.BACK], actions = actions,
+            bottomBar = { if (tab != null && !rail) AppBottomBar(tab) },
+            modifier = Modifier.weight(1f),
+        ) { padding ->
+            Column(Modifier.fillMaxSize().padding(padding).verticalScroll(rememberScrollState())) {
+                ContentColumn(padding = PaddingValues(top = 4.dp, bottom = 24.dp), wide = wide, content = content)
+            }
         }
+    }
+}
+
+private val tabs = listOf(
+    Triple(Tab.HOME, Icons.Filled.Home, K.NAV_HOME),
+    Triple(Tab.LEARN, Icons.Filled.School, K.NAV_LEARN),
+    Triple(Tab.PRACTICE, Icons.Filled.FitnessCenter, K.NAV_PRACTICE),
+    Triple(Tab.TUTORS, Icons.Filled.RecordVoiceOver, K.NAV_TUTORS),
+    Triple(Tab.ME, Icons.Filled.Person, K.NAV_ME),
+)
+
+/** The same five tabs as [AppBottomBar], down the side of a tablet or desktop window (on the right in Arabic). */
+@Composable
+fun AppNavRail(current: Tab) {
+    val app = LocalApp.current
+    val s = LocalStrings.current
+    val c = PolyglotTheme.colors
+    NavigationRail(Modifier.fillMaxHeight().testTag("nav-rail"), containerColor = c.surface) {
+        Spacer(Modifier.weight(1f))
+        tabs.forEach { (tab, icon, key) ->
+            NavigationRailItem(
+                selected = tab == current, onClick = { if (tab != current) app.nav.switchTab(tab) },
+                icon = { Icon(icon, contentDescription = null) },
+                label = { Text(s[key], maxLines = 2, textAlign = androidx.compose.ui.text.style.TextAlign.Center) },
+                modifier = Modifier.padding(vertical = 4.dp),
+                colors = NavigationRailItemDefaults.colors(selectedIconColor = c.onPrimaryContainer, selectedTextColor = c.textPrimary, indicatorColor = c.primaryContainer),
+            )
+        }
+        Spacer(Modifier.weight(1f))
     }
 }
 
@@ -80,14 +126,8 @@ fun AppBottomBar(current: Tab) {
     // capped here; the rest of the app still follows the system text size in full.
     val density = androidx.compose.ui.platform.LocalDensity.current
     val labelDensity = androidx.compose.ui.unit.Density(density.density, minOf(density.fontScale, 1.3f))
-    NavigationBar(containerColor = c.surface) {
-        listOf(
-            Triple(Tab.HOME, Icons.Filled.Home, K.NAV_HOME),
-            Triple(Tab.LEARN, Icons.Filled.School, K.NAV_LEARN),
-            Triple(Tab.PRACTICE, Icons.Filled.FitnessCenter, K.NAV_PRACTICE),
-            Triple(Tab.TUTORS, Icons.Filled.RecordVoiceOver, K.NAV_TUTORS),
-            Triple(Tab.ME, Icons.Filled.Person, K.NAV_ME),
-        ).forEach { (tab, icon, key) ->
+    NavigationBar(Modifier.testTag("nav-bar"), containerColor = c.surface) {
+        tabs.forEach { (tab, icon, key) ->
             NavigationBarItem(
                 selected = tab == current, onClick = { if (tab != current) app.nav.switchTab(tab) },
                 icon = { Icon(icon, contentDescription = null) },

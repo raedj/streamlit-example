@@ -59,7 +59,8 @@ fun PolyglotApp(services: AppServices, platformUi: PlatformUi, initialStack: Lis
         val cues = remember(platformUi, haptics, sounds) { com.polyglot.academy.ui.designsystem.AnswerCues(haptics, sounds) { pcm, rate -> platformUi.playPcm(pcm, rate) } }
         CompositionLocalProvider(LocalStrings provides strings, com.polyglot.academy.ui.designsystem.LocalScriptFonts provides remember(platformUi) { com.polyglot.academy.ui.designsystem.ScriptFonts(urdu = platformUi.urduFont) },
             com.polyglot.academy.ui.designsystem.LocalAnswerCues provides cues) {
-            Box(Modifier.fillMaxSize().background(PolyglotTheme.colors.background)) {
+            androidx.compose.foundation.layout.BoxWithConstraints(Modifier.fillMaxSize().background(PolyglotTheme.colors.background)) {
+              CompositionLocalProvider(com.polyglot.academy.ui.designsystem.LocalWidthClass provides com.polyglot.academy.ui.designsystem.WidthClass.of(maxWidth)) {
                 if (p != null && st != null) {
                     val nav = rememberSaveable(saver = Navigator.saver) { Navigator(initialStack ?: listOf(Route.TabRoot(com.polyglot.academy.ui.navigation.Tab.HOME))) }
                     val snackbar = remember { SnackbarHostState() }
@@ -69,6 +70,7 @@ fun PolyglotApp(services: AppServices, platformUi: PlatformUi, initialStack: Lis
                         SnackbarHost(snackbar, Modifier.align(Alignment.BottomCenter).navigationBarsPadding().padding(bottom = 80.dp))
                     }
                 }
+              }
             }
         }
     }

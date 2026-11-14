@@ -1703,5 +1703,6 @@ internal object ArabicStrings {
         K.LMISTAKE_NOTE to "للتدريب فقط: لا تتغيّر نتيجة الدرس ولا مواعيد المراجعة.",
         K.LMISTAKE_DONE to "{0} من {1} صحيحة هذه المرة",
         K.LMISTAKE_BACK to "العودة إلى الملخّص",
+        K.PLAYER_FEEDBACK_HERE to "أجب، وسيظهر هنا التصحيح وشرحه، بجانب التمرين.",
     ) }
 }

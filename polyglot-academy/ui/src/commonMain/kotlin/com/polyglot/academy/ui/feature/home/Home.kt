@@ -50,6 +50,7 @@ import com.polyglot.academy.ui.app.LoadContent
 import com.polyglot.academy.ui.app.LocalApp
 import com.polyglot.academy.ui.app.ScrollScreen
 import com.polyglot.academy.ui.app.rememberLoader
+import com.polyglot.academy.ui.designsystem.TwoPane
 import com.polyglot.academy.ui.designsystem.AchievementBadge
 import com.polyglot.academy.ui.designsystem.Banner
 import com.polyglot.academy.ui.designsystem.BannerKind
@@ -95,7 +96,7 @@ fun HomeScreen() {
     LaunchedEffect(Unit) {
         withContext(kotlinx.coroutines.Dispatchers.Default) { while (true) { offline = app.services.platform.network() == NetworkState.OFFLINE; delay(15_000) } }
     }
-    ScrollScreen(title = s[K.APP_NAME], showBack = false, tab = Tab.HOME, actions = {
+    ScrollScreen(title = s[K.APP_NAME], showBack = false, tab = Tab.HOME, wide = true, actions = {
         if (!app.services.edition.singleLanguage) LanguageSwitcher()
         IconButton(onClick = { app.nav.push(Route.Search) }) { Icon(Icons.Filled.Search, s[K.SEARCH]) }
     }) {
@@ -129,7 +130,7 @@ private fun greetingKey(nowMillis: Long): K {
 
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
-private fun HomeContent(data: HomeData) {
+private fun androidx.compose.foundation.layout.ColumnScope.HomeContent(data: HomeData) {
     val app = LocalApp.current
     val s = LocalStrings.current
     val c = PolyglotTheme.colors
@@ -156,51 +157,54 @@ private fun HomeContent(data: HomeData) {
         }
     }
 
-    RecommendationCard(snap.recommendation, snap)
     // A new learner sees one thing to do. Goals, counters and shortcuts would all read zero.
-    if (snap.isNewLearner) return
+    if (snap.isNewLearner) { RecommendationCard(snap.recommendation, snap); return }
 
-    TodayCard(data)
-    WordLevelCard(snap.language)
+    // On a tablet or desktop: what to do today on one side, how the week went on the other.
+    TwoPane(first = {
+        RecommendationCard(snap.recommendation, snap)
+        TodayCard(data)
+        WordLevelCard(snap.language)
 
-    SectionHeader(s[K.HOME_QUICK])
-    FlowRow(horizontalArrangement = Arrangement.spacedBy(12.dp), verticalArrangement = Arrangement.spacedBy(12.dp), maxItemsInEachRow = 4) {
-        QuickAction(s[K.QUICK_CONVERSATION], Icons.AutoMirrored.Filled.Chat, Modifier.weight(1f)) {
-            val tutor = TutorRoster.byId(snap.profile.preferredTutorId)?.takeIf { it.teaches(snap.language) } ?: TutorRoster.defaultFor(snap.language, snap.level ?: com.polyglot.academy.core.model.CefrLevel.A1)
-            app.nav.push(Route.Conversation(tutor.id))
+        SectionHeader(s[K.HOME_QUICK])
+        FlowRow(horizontalArrangement = Arrangement.spacedBy(12.dp), verticalArrangement = Arrangement.spacedBy(12.dp), maxItemsInEachRow = 4) {
+            QuickAction(s[K.QUICK_CONVERSATION], Icons.AutoMirrored.Filled.Chat, Modifier.weight(1f)) {
+                val tutor = TutorRoster.byId(snap.profile.preferredTutorId)?.takeIf { it.teaches(snap.language) } ?: TutorRoster.defaultFor(snap.language, snap.level ?: com.polyglot.academy.core.model.CefrLevel.A1)
+                app.nav.push(Route.Conversation(tutor.id))
+            }
+            QuickAction(s[K.QUICK_REVIEW], Icons.Filled.Replay, Modifier.weight(1f)) { app.nav.push(Route.Review) }
+            QuickAction(s[K.QUICK_LESSON], Icons.Filled.AutoStories, Modifier.weight(1f)) {
+                (snap.interruptedLesson ?: snap.nextLesson)?.let { app.nav.push(Route.LessonOverview(it.id)) } ?: app.nav.switchTab(Tab.LEARN)
+            }
+            QuickAction(s[K.QUICK_IMPORT], Icons.Filled.FolderOpen, Modifier.weight(1f)) { app.nav.push(Route.Library) }
         }
-        QuickAction(s[K.QUICK_REVIEW], Icons.Filled.Replay, Modifier.weight(1f)) { app.nav.push(Route.Review) }
-        QuickAction(s[K.QUICK_LESSON], Icons.Filled.AutoStories, Modifier.weight(1f)) {
-            (snap.interruptedLesson ?: snap.nextLesson)?.let { app.nav.push(Route.LessonOverview(it.id)) } ?: app.nav.switchTab(Tab.LEARN)
+
+        TutorShortcut(snap)
+    }, second = {
+        SectionHeader(s[K.HOME_THIS_WEEK], action = s[K.SEE_ALL], onAction = { app.nav.push(Route.Progress) })
+        PolyCard {
+            val points = snap.summary.observedMinutesByDay.map { ChartPoint(Labels.dayInitial(s, it.date.dayOfWeek.ordinal + 1), it.value) }
+            BarChart(points, s.f(K.HOME_WEEK_CHART_DESC, snap.summary.observedMinutesByDay.joinToString { "${Labels.day(s, it.date.dayOfWeek.ordinal + 1)} ${it.value.toInt()}" }))
         }
-        QuickAction(s[K.QUICK_IMPORT], Icons.Filled.FolderOpen, Modifier.weight(1f)) { app.nav.push(Route.Library) }
-    }
+        SectionHeader(s[K.HOME_SKILLS])
+        PolyCard {
+            val measured = snap.skillEstimates.filter { it.hasEnoughData }
+            if (measured.isEmpty()) Text(s[K.HOME_SKILLS_EMPTY], style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
+            measured.forEach { e -> LabeledProgress(Labels.skill(s, e.skill), s.f(K.PERCENT, (e.mastery * 100).toInt()), e.mastery.toFloat()) }
+        }
 
-    TutorShortcut(snap)
-
-    SectionHeader(s[K.HOME_THIS_WEEK], action = s[K.SEE_ALL], onAction = { app.nav.push(Route.Progress) })
-    PolyCard {
-        val points = snap.summary.observedMinutesByDay.map { ChartPoint(Labels.dayInitial(s, it.date.dayOfWeek.ordinal + 1), it.value) }
-        BarChart(points, s.f(K.HOME_WEEK_CHART_DESC, snap.summary.observedMinutesByDay.joinToString { "${Labels.day(s, it.date.dayOfWeek.ordinal + 1)} ${it.value.toInt()}" }))
-    }
-    SectionHeader(s[K.HOME_SKILLS])
-    PolyCard {
-        val measured = snap.skillEstimates.filter { it.hasEnoughData }
-        if (measured.isEmpty()) Text(s[K.HOME_SKILLS_EMPTY], style = MaterialTheme.typography.bodyMedium, color = c.textSecondary)
-        measured.forEach { e -> LabeledProgress(Labels.skill(s, e.skill), s.f(K.PERCENT, (e.mastery * 100).toInt()), e.mastery.toFloat()) }
-    }
-
-    if (snap.recentAchievements.isNotEmpty()) {
-        SectionHeader(s[K.HOME_ACHIEVEMENTS])
-        Row(horizontalArrangement = Arrangement.spacedBy(16.dp)) {
-            snap.recentAchievements.forEach { a ->
-                Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.weight(1f)) {
-                    AchievementBadge("★", true, Labels.achievement(s, a.id))
-                    Text(Labels.achievement(s, a.id), style = MaterialTheme.typography.labelSmall, color = c.textSecondary, maxLines = 2)
+        if (snap.recentAchievements.isNotEmpty()) {
+            SectionHeader(s[K.HOME_ACHIEVEMENTS])
+            Row(horizontalArrangement = Arrangement.spacedBy(16.dp)) {
+                snap.recentAchievements.forEach { a ->
+                    Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.weight(1f)) {
+                        AchievementBadge("★", true, Labels.achievement(s, a.id))
+                        Text(Labels.achievement(s, a.id), style = MaterialTheme.typography.labelSmall, color = c.textSecondary, maxLines = 2)
+                    }
                 }
             }
         }
-    }
+    })
 }
 
 @Composable

@@ -391,6 +391,56 @@ class UiFlowTest {
         waitForText("Your mistakes (1)")
     }
 
+    private fun androidx.compose.ui.test.ComposeUiTest.tagged(tag: String) =
+        onAllNodes(androidx.compose.ui.test.hasTestTag(tag)).fetchSemanticsNodes().size
+
+    // The test window is drawn at density 2: 800 px is a 400 dp phone, 1400 px a 700 dp small tablet, 2400 px a 1200 dp desktop.
+    @Test fun aPhoneHasTheBottomBarAndOneColumn() = runDesktopComposeUiTest(800, 1700) {
+        val app = TestApp(); app.profile(); app.seedActivity()
+        setContent { AppUnderTest(app) }
+        waitForText("Daily goal")
+        assertEquals(1, tagged("nav-bar")); assertEquals(0, tagged("nav-rail")); assertEquals(0, tagged("two-pane"))
+    }
+
+    @Test fun aSmallTabletHasASideRailAndOneColumn() = runDesktopComposeUiTest(1400, 1700) {
+        val app = TestApp(); app.profile(); app.seedActivity()
+        setContent { AppUnderTest(app) }
+        waitForText("Daily goal")
+        assertEquals(0, tagged("nav-bar")); assertEquals(1, tagged("nav-rail")); assertEquals(0, tagged("two-pane"))
+        // The rail switches tabs like the bottom bar.
+        onNodeWithText("Practice").performClick()
+        waitForText("Review what you learned")
+        assertEquals(1, tagged("nav-rail"))
+    }
+
+    @Test fun aWideWindowSplitsHomeIntoTwoPanes() = runDesktopComposeUiTest(2400, 1600) {
+        val app = TestApp(); app.profile(); app.seedActivity()
+        setContent { AppUnderTest(app) }
+        waitForText("Daily goal")
+        assertEquals(1, tagged("nav-rail")); assertEquals(1, tagged("two-pane"))
+        // Today's plan on one side, the week on the other.
+        val today = onAllNodes(hasText("Daily goal")).onFirst().fetchSemanticsNode().boundsInRoot
+        val week = onNodeWithText("This week").fetchSemanticsNode().boundsInRoot
+        assertTrue(week.left > today.right, "$today $week")
+    }
+
+    @Test fun aWideWindowShowsTheFeedbackBesideTheExercise() = runDesktopComposeUiTest(2400, 1600) {
+        val app = TestApp(); app.profile()
+        val lesson = com.polyglot.academy.core.content.Curriculum.of(LanguageCode.ENGLISH).lessons
+            .first { it.exercises.last() is com.polyglot.academy.core.model.Exercise.FillInBlank }
+        runBlocking { app.services.study.saveResumePoint(lesson, lesson.exercises.lastIndex) }
+        setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.HOME), Route.LessonPlayer(lesson.id))) }
+        waitUntil(timeoutMillis = 10_000) { onAllNodes(hasSetTextAction()).fetchSemanticsNodes().isNotEmpty() }
+        onNodeWithText("feedback and its explanation appear here", substring = true).assertExists()
+        onNode(hasSetTextAction()).performTextInput("zzqx")
+        onNodeWithText("Check").performClick()
+        waitForText("Not quite")
+        val field = onNode(hasSetTextAction()).fetchSemanticsNode().boundsInRoot
+        val feedback = onNodeWithText("Not quite").fetchSemanticsNode().boundsInRoot
+        assertTrue(feedback.left > field.right, "$field $feedback")
+        assertTrue(onAllNodesWithText("feedback and its explanation appear here", substring = true).fetchSemanticsNodes().isEmpty())
+    }
+
     @Test fun shadowingRecordsOnTheDeviceAndSaysHowLongTheLearnerSpoke() = runDesktopComposeUiTest(800, 1700) {
         // A microphone that hears 1.5 s of a tone, then silence until stopped.
         val heard = java.util.concurrent.atomic.AtomicInteger()

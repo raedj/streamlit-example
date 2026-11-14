@@ -1703,5 +1703,6 @@ internal object EnglishStrings {
         K.LMISTAKE_NOTE to "Practice only: your lesson score and review schedule stay as they are.",
         K.LMISTAKE_DONE to "{0} of {1} right this time",
         K.LMISTAKE_BACK to "Back to the summary",
+        K.PLAYER_FEEDBACK_HERE to "Answer, and the feedback and its explanation appear here, beside the exercise.",
     ) }
 }

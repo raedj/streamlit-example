@@ -116,12 +116,15 @@ import com.polyglot.academy.core.model.Languages
 fun ContentColumn(
     modifier: Modifier = Modifier,
     padding: PaddingValues = PaddingValues(0.dp),
+    /** The screen lays out [TwoPane]s: let it grow wider when the window has room for two panes. */
+    wide: Boolean = false,
     content: @Composable ColumnScope.() -> Unit,
 ) {
     val sp = PolyglotTheme.spacing
+    val max = if (wide && LocalWidthClass.current.twoPanes) MaxTwoPaneWidth else sp.maxContentWidth
     Box(modifier.fillMaxWidth().padding(padding), contentAlignment = Alignment.TopCenter) {
         Column(
-            Modifier.widthIn(max = sp.maxContentWidth).fillMaxWidth().padding(horizontal = sp.gutter),
+            Modifier.widthIn(max = max).fillMaxWidth().padding(horizontal = sp.gutter),
             verticalArrangement = Arrangement.spacedBy(sp.lg),
             content = content,
         )
