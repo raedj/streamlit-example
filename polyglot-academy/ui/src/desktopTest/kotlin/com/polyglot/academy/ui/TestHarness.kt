@@ -41,13 +41,15 @@ class TestApp(
     deviceOcr: com.polyglot.academy.core.service.DeviceOcr? = null,
     transcriber: com.polyglot.academy.core.media.DeviceTranscriber? = null,
     edition: com.polyglot.academy.core.service.AppEdition = com.polyglot.academy.core.service.AppEdition.FULL,
+    audioCapture: com.polyglot.academy.core.speech.AudioCapture? = null,
 ) {
     /** The desktop platform, optionally with fake on-device text recognition and transcription (the desktop has neither). */
     val platform: com.polyglot.academy.core.service.PlatformServices =
-        if (deviceOcr == null && transcriber == null) DesktopPlatformServices()
+        if (deviceOcr == null && transcriber == null && audioCapture == null) DesktopPlatformServices()
         else object : com.polyglot.academy.core.service.PlatformServices by DesktopPlatformServices() {
             override val deviceOcr = deviceOcr
             override val transcriber = transcriber
+            override val audioCapture = audioCapture ?: DesktopPlatformServices().audioCapture
         }
     val store = SqlStore(createJvmDriver(), Dispatchers.IO, TimeZone.UTC, clock)
     val services = AppServices(store, platform, HttpClient(), clock, SequentialIdGenerator(), edition = edition)

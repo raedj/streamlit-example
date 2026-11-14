@@ -1,5 +1,6 @@
 package com.polyglot.academy.ui
 
+import kotlinx.coroutines.flow.flowOn
 import androidx.compose.ui.test.ExperimentalTestApi
 import androidx.compose.ui.test.hasSetTextAction
 import androidx.compose.ui.test.hasText
@@ -361,6 +362,66 @@ class UiFlowTest {
         // The verdict takes the focus, so the next Enter continues to the next exercise.
         onNodeWithText("Not quite").performKeyInput { pressKey(androidx.compose.ui.input.key.Key.Enter) }
         waitForText("${idx + 2}/${lesson.exercises.size}")
+    }
+
+    @Test fun theSummaryListsFirstTryMistakesAndPractisesThemAgain() = runDesktopComposeUiTest(800, 1700) {
+        val app = TestApp(); app.profile()
+        // A lesson that ends with a typed gap, so one wrong answer takes it to the summary.
+        val lesson = com.polyglot.academy.core.content.Curriculum.of(LanguageCode.ENGLISH).lessons
+            .first { it.exercises.last() is com.polyglot.academy.core.model.Exercise.FillInBlank }
+        val gap = lesson.exercises.last() as com.polyglot.academy.core.model.Exercise.FillInBlank
+        runBlocking { app.services.study.saveResumePoint(lesson, lesson.exercises.lastIndex) }
+        setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.HOME), Route.LessonPlayer(lesson.id))) }
+        waitUntil(timeoutMillis = 10_000) { onAllNodes(hasSetTextAction()).fetchSemanticsNodes().isNotEmpty() }
+        onNode(hasSetTextAction()).performTextInput("zzqx")
+        onNodeWithText("Check").performClick()
+        waitForText("Not quite")
+        onNodeWithText("Done").performClick()
+        waitForText("Your mistakes (1)")
+        onNodeWithText("Your answer: zzqx").assertExists()
+        onNodeWithText("Practise them now").performScrollTo().performClick()
+        waitForText("Your mistakes again")
+        waitUntil(timeoutMillis = 5_000) { onAllNodes(hasSetTextAction()).fetchSemanticsNodes().isNotEmpty() }
+        onNode(hasSetTextAction()).performTextInput(gap.acceptedAnswers.first())
+        onNodeWithText("Check").performClick()
+        waitUntil(timeoutMillis = 5_000) { onAllNodesWithText("Done").fetchSemanticsNodes().isNotEmpty() }
+        onNodeWithText("Done").performClick()
+        waitForText("1 of 1 right this time")
+        onNodeWithText("Back to the summary").performClick()
+        waitForText("Your mistakes (1)")
+    }
+
+    @Test fun shadowingRecordsOnTheDeviceAndSaysHowLongTheLearnerSpoke() = runDesktopComposeUiTest(800, 1700) {
+        // A microphone that hears 1.5 s of a tone, then silence until stopped.
+        val heard = java.util.concurrent.atomic.AtomicInteger()
+        val mic = object : com.polyglot.academy.core.speech.AudioCapture {
+            override suspend fun availability() = com.polyglot.academy.core.speech.SpeechAvailability.AVAILABLE
+            override fun record(sampleRate: Int) = kotlinx.coroutines.flow.flow {
+                val chunk = sampleRate / 50
+                var n = 0
+                while (true) {
+                    val out = ByteArray(chunk * 2)
+                    if (n < 75) for (i in 0 until chunk) {
+                        val v = (kotlin.math.sin(2 * kotlin.math.PI * 220 * (n * chunk + i) / sampleRate) * 9000).toInt()
+                        out[2 * i] = v.toByte(); out[2 * i + 1] = (v shr 8).toByte()
+                    }
+                    emit(out); n++; heard.set(n)
+                    kotlinx.coroutines.delay(5)
+                }
+            // On a real thread, as a microphone is: the test's own clock must not run the loop.
+            }.flowOn(kotlinx.coroutines.Dispatchers.IO)
+        }
+        val app = TestApp(audioCapture = mic); app.profile()
+        setContent { AppUnderTest(app, listOf(Route.TabRoot(Tab.PRACTICE), Route.Pronunciation)) }
+        waitForText("Shadowing")
+        onNodeWithText("Record").performScrollTo().performClick()
+        waitForText("Stop")
+        // Stop once the whole tone and some silence after it were recorded.
+        waitUntil(timeoutMillis = 10_000) { heard.get() > 100 }
+        onNodeWithText("Stop").performClick()
+        waitUntil(timeoutMillis = 5_000) { onAllNodesWithText("You spoke for 1.5 s", substring = true).fetchSemanticsNodes().isNotEmpty() }
+        onNodeWithText("My recording").assertExists()
+        onNodeWithText("deleted when you leave", substring = true).assertExists()
     }
 
     @Test fun aWordOfAnExampleCanBeTappedForItsMeaning() = runDesktopComposeUiTest(800, 1700) {

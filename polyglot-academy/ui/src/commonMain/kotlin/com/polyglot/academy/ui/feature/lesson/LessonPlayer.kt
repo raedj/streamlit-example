@@ -81,7 +81,11 @@ import com.polyglot.academy.ui.navigation.Route
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 
-private data class Summary(val score: Double, val correct: Int, val total: Int, val newWords: Int, val unlocked: List<String>, val seconds: Int, val next: Lesson?)
+private data class Summary(
+    val score: Double, val correct: Int, val total: Int, val newWords: Int, val unlocked: List<String>, val seconds: Int, val next: Lesson?,
+    /** Exercises answered wrongly on the first try in this sitting, in lesson order, with that first answer. */
+    val mistakes: List<Pair<Exercise, Answer>> = emptyList(),
+)
 
 @Composable
 fun LessonPlayerScreen(lessonId: String, restart: Boolean) {
@@ -122,6 +126,9 @@ private fun LessonPlayer(lesson: Lesson, restart: Boolean, onRetry: () -> Unit) 
     // Bumped by "Try again" after a wrong answer, so the exercise starts fresh; the score keeps the first try.
     var attempt by remember(lessonId, index) { mutableIntStateOf(0) }
     val firstTry = remember(lessonId) { mutableStateMapOf<String, Double>() }
+    // The first wrong answer of each exercise, for the summary and the round that practises them again.
+    val mistakes = remember(lessonId) { mutableStateMapOf<String, Answer>() }
+    var practisingMistakes by remember { mutableStateOf(false) }
     var hintsOn by rememberSaveable { mutableStateOf(app.settings.showHintsByDefault) }
     var adaptMessage by remember { mutableStateOf<K?>(null) }
     val adaptSeen = remember { mutableSetOf<K>() }
@@ -167,7 +174,8 @@ private fun LessonPlayer(lesson: Lesson, restart: Boolean, onRetry: () -> Unit) 
         val next = WordLessons.parse(lesson.id)?.let { (lang, level, number) ->
             if (number < WordLessons.PER_LEVEL) WordLessons.load(WordLessons.id(lang, level, number + 1)) else null
         } ?: Curriculum.of(lesson.language).sequencer.nextLesson(enrollment?.startingLevel ?: lesson.level, progress)?.takeIf { it.id != lesson.id }
-        summary = Summary(score, gradable.count { firstTry.getValue(it.id) >= 0.99 }, gradable.size, newWords, unlocked, seconds, next)
+        summary = Summary(score, gradable.count { firstTry.getValue(it.id) >= 0.99 }, gradable.size, newWords, unlocked, seconds, next,
+            lesson.exercises.mapNotNull { ex -> mistakes[ex.id]?.let { ex to it } })
     }
 
     fun advance() {
@@ -197,7 +205,10 @@ private fun LessonPlayer(lesson: Lesson, restart: Boolean, onRetry: () -> Unit) 
         if (revisiting) return
         // Without a voice a listening exercise is only a guess, so it is neither scored nor recorded.
         if (voiceAvailable == false && ex.needsAudio) return
-        if (ex.id !in firstTry) firstTry[ex.id] = StudyService.firstTryScore(a.outcome.correct, a.outcome.score)
+        if (ex.id !in firstTry) {
+            firstTry[ex.id] = StudyService.firstTryScore(a.outcome.correct, a.outcome.score)
+            if (!a.outcome.correct) mistakes[ex.id] = a
+        }
         scope.launch {
             services.study.recordExercise(lesson.language, lesson.id, ex, a.outcome, a.userAnswer, services.clock.nowMillis() - shownAt, a.hintsUsed, a.promptText)
             // Adapt hints and explanation depth from recent performance in this skill.
@@ -268,7 +279,11 @@ private fun LessonPlayer(lesson: Lesson, restart: Boolean, onRetry: () -> Unit) 
         Column(Modifier.fillMaxSize().padding(padding).verticalScroll(rememberScrollState())) {
             ContentColumn(padding = PaddingValues(vertical = 12.dp)) {
                 val sum = summary
-                if (sum != null) SummaryView(lesson, sum, onRetry = onRetry)
+                if (sum != null && practisingMistakes) {
+                    val ctx = ExerciseContext(lesson.language, explain, speaker, hintsOn, enrollment?.showTransliteration != false, enrollment?.useTraditionalCharacters == true, hiddenReadings, tilePool)
+                    MistakeRound(sum.mistakes, ctx, explain) { practisingMistakes = false }
+                }
+                else if (sum != null) SummaryView(lesson, sum, onRetry = onRetry, onPractiseMistakes = { practisingMistakes = true })
                 else if (index >= 0) {
                     val ex = lesson.exercises[index]
                     adaptMessage?.let { Banner(BannerKind.INFO, s[it]) }
@@ -307,7 +322,7 @@ private fun LessonPlayer(lesson: Lesson, restart: Boolean, onRetry: () -> Unit) 
 }
 
 @Composable
-private fun SummaryView(lesson: Lesson, sum: Summary, onRetry: () -> Unit) {
+private fun SummaryView(lesson: Lesson, sum: Summary, onRetry: () -> Unit, onPractiseMistakes: () -> Unit) {
     val app = LocalApp.current
     val s = LocalStrings.current
     val c = PolyglotTheme.colors
@@ -325,10 +340,92 @@ private fun SummaryView(lesson: Lesson, sum: Summary, onRetry: () -> Unit) {
     Banner(if (passed) BannerKind.SUCCESS else BannerKind.INFO, if (passed) s[K.SUMMARY_PASSED] else s[K.SUMMARY_NOT_PASSED])
     if (sum.newWords > 0) PolyCard { Text(s.plural(K.SUMMARY_NEW_WORDS, sum.newWords), style = MaterialTheme.typography.bodyLarge) }
     sum.unlocked.forEach { Banner(BannerKind.SUCCESS, s.f(K.SUMMARY_UNLOCKED, Labels.achievement(s, it))) }
+    MistakeList(sum, onPractiseMistakes)
     sum.next?.let { next ->
         val route = if (WordLessons.isWordLesson(next.id)) Route.LessonPlayer(next.id, restart = true) else Route.LessonOverview(next.id)
         PrimaryButton("${s[K.SUMMARY_NEXT]}: ${s.gloss(next.title)}", { app.nav.replace(route) }, Modifier.fillMaxWidth())
     }
     SecondaryButton(s[K.SUMMARY_RETRY], onRetry, Modifier.fillMaxWidth())
     SecondaryButton(s[K.SUMMARY_HOME], { app.nav.home() }, Modifier.fillMaxWidth())
+}
+
+/** What went wrong on the first try, each with the learner's answer and the right one, and a button to practise them. */
+@Composable
+private fun MistakeList(sum: Summary, onPractise: () -> Unit) {
+    val s = LocalStrings.current
+    val c = PolyglotTheme.colors
+    if (sum.total == 0) return
+    if (sum.mistakes.isEmpty()) {
+        Banner(BannerKind.SUCCESS, s[K.SUMMARY_NO_MISTAKES])
+        return
+    }
+    com.polyglot.academy.ui.designsystem.SectionHeader(s.f(K.SUMMARY_MISTAKES, sum.mistakes.size))
+    val big = MaterialTheme.typography.bodyLarge.copy(textDirection = androidx.compose.ui.text.style.TextDirection.Content)
+    val small = MaterialTheme.typography.bodyMedium.copy(textDirection = androidx.compose.ui.text.style.TextDirection.Content)
+    sum.mistakes.forEach { (ex, a) ->
+        PolyCard {
+            Text(a.promptText.ifBlank { s.gloss(ex.instruction) }, Modifier.fillMaxWidth(), style = big)
+            val expected = a.outcome.expected
+            if (a.userAnswer.isNotBlank() && a.userAnswer != expected) Text(s.f(K.SUMMARY_YOUR_ANSWER, a.userAnswer), Modifier.fillMaxWidth(), style = small, color = c.error)
+            if (expected.isNotBlank()) Text(s.f(K.FEEDBACK_ANSWER_WAS, expected), Modifier.fillMaxWidth(), style = small, color = c.success)
+        }
+    }
+    PrimaryButton(s[K.SUMMARY_PRACTISE_MISTAKES], onPractise, Modifier.fillMaxWidth())
+}
+
+/**
+ * The exercises missed on the first try, once more, right after the lesson. Practice only: the lesson score
+ * and the review schedule were set by the first answers and are not changed here.
+ */
+@Composable
+private fun MistakeRound(items: List<Pair<Exercise, Answer>>, ctx: ExerciseContext, explain: LanguageCode, onDone: () -> Unit) {
+    val s = LocalStrings.current
+    val c = PolyglotTheme.colors
+    var i by remember { mutableIntStateOf(0) }
+    var attempt by remember { mutableIntStateOf(0) }
+    var last by remember { mutableStateOf<Answer?>(null) }
+    var right by remember { mutableIntStateOf(0) }
+    val scored = remember { mutableSetOf<Int>() }
+    val keys = remember { ExerciseKeySlot() }
+    fun next() { i++; last = null; attempt = 0 }
+    com.polyglot.academy.ui.designsystem.KeyShortcuts(Triple(i, attempt, last != null), onEnter = {
+        when {
+            i >= items.size -> { onDone(); true }
+            last != null -> { next(); true }
+            else -> keys.enter()
+        }
+    }, onNumber = { n -> i < items.size && last == null && keys.number(n) }) {
+        // The buttons of each exercise sit under it here, not in the player's bottom bar.
+        CompositionLocalProvider(LocalExerciseActions provides null, LocalExerciseKeys provides keys) {
+            Column(verticalArrangement = Arrangement.spacedBy(14.dp)) {
+                Text(s[K.LMISTAKE_TITLE], style = MaterialTheme.typography.headlineSmall)
+                Text(s[K.LMISTAKE_NOTE], style = MaterialTheme.typography.bodySmall, color = c.textSecondary)
+                if (i >= items.size) {
+                    FeedbackPanel(right * 2 >= items.size, s.f(K.LMISTAKE_DONE, right, items.size), null, cue = false)
+                    PrimaryButton(s[K.LMISTAKE_BACK], onDone, Modifier.fillMaxWidth())
+                    return@Column
+                }
+                Text("${i + 1}/${items.size}", style = MaterialTheme.typography.labelLarge)
+                val ex = items[i].first
+                key(i, attempt) {
+                    ExerciseView(ex, ctx, last != null) { a ->
+                        if (last != null) return@ExerciseView
+                        if (!a.outcome.counted) { next(); return@ExerciseView }
+                        last = a
+                        if (scored.add(i) && a.outcome.correct) right++
+                    }
+                }
+                last?.let { a ->
+                    val detail = if (!a.outcome.correct && a.outcome.expected.isNotBlank()) s.f(K.FEEDBACK_ANSWER_WAS, a.outcome.expected) else null
+                    FeedbackPanel(a.outcome.correct, s[if (a.outcome.correct) K.FEEDBACK_CORRECT else K.FEEDBACK_INCORRECT], detail) {
+                        ex.explanation?.let { ExplanationRow(it.forLanguage(explain)) }
+                    }
+                    Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                        if (!a.outcome.correct) SecondaryButton(s[K.RETRY], { last = null; attempt++ }, Modifier.weight(1f))
+                        PrimaryButton(if (i >= items.lastIndex) s[K.DONE] else s[K.CONTINUE], { next() }, Modifier.weight(1f))
+                    }
+                }
+            }
+        }
+    }
 }

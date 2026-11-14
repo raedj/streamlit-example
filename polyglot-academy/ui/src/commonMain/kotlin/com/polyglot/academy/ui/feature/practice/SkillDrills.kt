@@ -201,6 +201,8 @@ fun SentenceListeningScreen() {
             if (item is Exercise.Dictation) FeedbackPanel(a.outcome.correct, s[if (a.outcome.correct) K.FEEDBACK_CORRECT else K.FEEDBACK_INCORRECT], null)
             SentenceReveal(sentence, item.explanation ?: Gloss("", ""), lang, explain, speaker)
             PrimaryButton(s[K.DRILL_NEXT], { index++; last = null }, Modifier.fillMaxWidth())
+            // The sentence was just heard and understood: the right moment to say it after the model.
+            if (voice != false) ShadowingCard(sentence, lang, speaker)
         }
         if (voice == false && last == null) SecondaryButton(s[K.LISTEN_SKIP], { index++ }, Modifier.fillMaxWidth())
     }
